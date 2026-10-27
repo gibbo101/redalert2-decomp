@@ -53,17 +53,16 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - Map.cpp Cell tables (0x5441E0, 0x5461A0, 0x55B520, 0x55CBC0, 0x56B330, ~15.7 KB):
   exact with `Cell(short, short) { Set(x, y); }`; TechFoot39 is finishing the
   0x54AB00 and Overlay Read_INI 0x5DB670 refits.
-- `UnknownPoint2D` stand-in duplicates `Point2D` (Tactical 0x6A2900, BuildingType
-  MuzzleFlash/DamageFireOffset); `unknown_84ed10` declared in two Building
-  sources; codex4 owns both.
+- CounterClass: HouseClass::~HouseClass calls the out-of-line ~CounterClass 0x491C20;
+  the stand-in UnknownHouseCounter stays until that destructor is recovered (Clean45).
 - RulesClass Sides 0x64BC10 needs DynamicVectorClass::ID with `Count()`, which makes
   142 explicit-instantiation units emit an unaccounted Count COMDAT.
 - HouseClass::Write_INI 0x4EC230 returns void (rename pending).
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).
-- Manifest `manifests/original_target.json` is 97 MB; sharding is planned
-  (GitHub snapshot refuses at 104 MB).
+- The catalog is sharded per population under `manifests/original_target/` (index.json +
+  populations/); load and write it only through `tools/original_target/catalog_io.py`.
 
 ## Environment
 
