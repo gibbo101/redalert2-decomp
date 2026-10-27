@@ -40,14 +40,23 @@ def trial_options(population):
     return options
 
 
-def aligned_unreferenced_entry(audit, bound, gaps):
+def accepted_region_ends(catalog):
+    """End addresses (entry + full extent: body, switch data and frozen padding,
+    as recorded) of every accepted canonical region."""
+    return {r['entry'] + r['full_extent_bytes'] for r in catalog['regions']}
+
+
+def aligned_unreferenced_entry(audit, bound, gaps, accepted_ends=()):
     """Entry evidence for a function nothing calls directly (inlined everywhere).
 
     Accepted only from original bytes: the entry is 16-byte aligned and is
-    preceded by alignment padding (0x90/0xCC) or directly by the end of the
-    previous function (ret, ret N or jmp); the body decodes completely and its
+    preceded by alignment padding (0x90/0xCC), directly by the end of the
+    previous function (ret, ret N or jmp), or by the recorded full extent of
+    an accepted canonical region (`accepted_ends`: a predecessor ending in
+    switch tables, which are data); the body decodes completely and its
     last instruction is ret or jmp. A body ending in switch tables that its own
-    code indexes is decoded only up to those tables.
+    code indexes is decoded only up to those tables. The candidate's own end
+    is established from its own bytes in every case.
     """
     import capstone
     entry = int(bound['entry'], 16)
@@ -60,21 +69,27 @@ def aligned_unreferenced_entry(audit, bound, gaps):
     after_padding = preceding[4] in (0x90, 0xCC)
     after_return = preceding[4] == 0xC3 or preceding[2] == 0xC2
     after_jump = preceding[0] == 0xE9 or preceding[3] == 0xEB
-    if not (after_padding or after_return or after_jump):
+    after_accepted = entry in accepted_ends
+    if not (after_padding or after_return or after_jump or after_accepted):
         return False
     body = bytes.fromhex(bound['ranges'][0]['bytes_hex'])
     decoder = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_32)
     decoder.detail = True
     data = switch_data_start(decoder, body, entry)
     if data is not None:
-        # The tables are 4-byte aligned after the code; drop the alignment fill.
-        body = body[:data].rstrip(b'\x90\xcc')
+        # The tables are 4-byte aligned after the code; drop the alignment fill:
+        # NOPs/INT3s, or VC6's two-byte `mov edi, edi` (8B FF) when it ends
+        # exactly at a 4-aligned table (HouseClass 0x4EB8C0).
+        body = body[:data]
+        if body.endswith(b'\x8b\xff') and (entry + data) % 4 == 0:
+            body = body[:-2]
+        body = body.rstrip(b'\x90\xcc')
     instructions = list(decoder.disasm(body, entry))
     return (sum(i.size for i in instructions) == len(body) and bool(instructions) and
             instructions[-1].mnemonic in ('ret', 'jmp'))
 
 
-def check_population(audit, population):
+def check_population(audit, population, accepted_ends=()):
     inventory_path = population['inventory']
     inventory = {int(r['entry'], 16): r for r in
                  map(json.loads, audit.read(inventory_path, population['inventory_sha256']).splitlines())}
@@ -89,7 +104,7 @@ def check_population(audit, population):
         va = row['entry']; bound = inventory.get(va)
         require(bound == row['original_inventory_row'] and bound['contiguous'] and
                 len(bound['ranges']) == 1 and (bound['entry_references'] or
-                                               aligned_unreferenced_entry(audit, bound, gaps)),
+                                               aligned_unreferenced_entry(audit, bound, gaps, accepted_ends)),
                 'Unsupported independent bound at 0x%08X' % va)
         span = bound['ranges'][0]
         require(int(span['start'], 16) == va and
@@ -153,9 +168,10 @@ def compile_population(manifest_path, output, config, replacing=()):
     manifest_path = Path(manifest_path).resolve()
     population = json.loads(manifest_path.read_bytes())
     require(population['executable_sha256'] == TARGET_SHA256, 'Wrong population target')
-    audit = Audit(REPOSITORY, config['executable']); check_population(audit, population)
-    selected_options = trial_options(population)
+    audit = Audit(REPOSITORY, config['executable'])
     catalog = catalog_io.load(REPOSITORY / 'manifests/original_target.json')
+    check_population(audit, population, accepted_region_ends(catalog))
+    selected_options = trial_options(population)
     headers = validate_headers(REPOSITORY, catalog)
     for candidate in population['candidates']:
         validate_includes(audit.read(candidate['source']), headers)

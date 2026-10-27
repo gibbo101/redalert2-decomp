@@ -185,6 +185,45 @@ class UnreferencedEntryTests(unittest.TestCase):
         self.assertFalse(cc.aligned_unreferenced_entry(after_ret, bound(0x401014), {}))   # unaligned
         self.assertFalse(cc.aligned_unreferenced_entry(Image({}), bound(0x401010), {}))  # no evidence before
 
+    def test_switch_tables_after_mov_edi_edi_fill(self):
+        import compile_candidates as cc
+        class Image:
+            def __init__(self, data): self.data = data
+            def original(self, va, n): return bytes(self.data.get(va + i, 0) for i in range(n))
+        after_ret = Image({0x40100f: 0xc3})
+        def body(fill):
+            # mov eax,[esp+4]; cmp eax,1; ja ret; jmp [eax*4+table]; ret 4; fill; two-entry table
+            table_offset = 19 + len(fill)
+            code = bytes.fromhex('8b442404' '83f801' '7707' 'ff2485') + \
+                struct.pack('<I', 0x401010 + table_offset) + bytes.fromhex('c20400')
+            table = struct.pack('<II', 0x401010 + 16, 0x401010 + 16)
+            return dict(entry='00401010', ranges=[dict(bytes_hex=(code + fill + table).hex())])
+        self.assertTrue(cc.aligned_unreferenced_entry(after_ret, body(bytes.fromhex('9090908bff')), {}))
+        self.assertTrue(cc.aligned_unreferenced_entry(after_ret, body(bytes.fromhex('9090909090')), {}))
+        # 8B FF that does not end at a 4-aligned table is code, not alignment fill.
+        self.assertFalse(cc.aligned_unreferenced_entry(after_ret, body(bytes.fromhex('8bff')), {}))
+
+    def test_entry_after_an_accepted_regions_switch_tables(self):
+        import compile_candidates as cc
+        class Image:
+            def __init__(self, data): self.data = data
+            def original(self, va, n): return bytes(self.data.get(va + i, 0) for i in range(n))
+        # The predecessor's index table ends right at the entry (no padding, no ret).
+        after_table = Image({0x401010 - 5 + i: b for i, b in enumerate(bytes.fromhex('0404040400'))})
+        body = bytes.fromhex('8b4104c3')                      # mov eax,[ecx+4]; ret
+        bound = dict(entry='00401010', ranges=[dict(bytes_hex=body.hex())])
+        catalog = dict(regions=[dict(entry=0x400f80, full_extent_bytes=0x90)])   # ends at 0x401010
+        ends = cc.accepted_region_ends(catalog)
+        self.assertTrue(cc.aligned_unreferenced_entry(after_table, bound, {}, ends))
+        # Refused: no accepted region ends there (none recorded, or one ending
+        # before unexplained bytes).
+        self.assertFalse(cc.aligned_unreferenced_entry(after_table, bound, {}))
+        short = cc.accepted_region_ends(dict(regions=[dict(entry=0x400f80, full_extent_bytes=0x8c)]))
+        self.assertFalse(cc.aligned_unreferenced_entry(after_table, bound, {}, short))
+        # The candidate's own end still has to be a complete ret/jmp body.
+        open_body = dict(entry='00401010', ranges=[dict(bytes_hex=bytes.fromhex('8b4104').hex())])
+        self.assertFalse(cc.aligned_unreferenced_entry(after_table, open_body, {}, ends))
+
 
 class BodyRepairTests(unittest.TestCase):
     def test_split_after_wrong_noreturn_call_merges_when_gap_is_code(self):
