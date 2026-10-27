@@ -14,7 +14,7 @@ BuildingClass *HouseClass::unknown_func_4e5160()
             int storage = ((UnknownBuildingTypeView *)building->Type)->Storage;
             if (storage > 0) {
                 float capacity = (float)storage;
-                float room = capacity - ((StorageClass *)&building->unknown_294)->Get_Total_Amount();
+                float room = capacity - building->unknown_294.Get_Total_Amount();
                 if (best == 0 || room > best_room) {
                     best_room = room;
                     best = building;

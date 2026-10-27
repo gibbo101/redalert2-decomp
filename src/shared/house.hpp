@@ -50,18 +50,8 @@ extern "C" __declspec(dllimport) BSTR __stdcall SysAllocString(wchar_t const *st
 
 // HouseTypeClass: shared/house_type.hpp.
 
-// Four tiberium amounts (0x10 bytes; hypothesis: StorageClass). Methods are
-// out of line in another unit.
-class StorageClass {
-public:
-    StorageClass();                         // 0x0069ADA0
-    StorageClass(NoInitClass const &noinit) {}
-    int Get_Total_Value() const;            // 0x0069ADC0 (amounts times their values)
-    float Get_Total_Amount() const;         // 0x0069AE10
-    float Add_Amount(float amount, int type);   // 0x0069AE50 (returns the new amount; hypothesis)
-
-    float Amounts[4];
-};
+// StorageClass: shared/storage_class.hpp.
+#include "shared/storage_class.hpp"
 
 // Subobjects whose code lives in other units (sizes from the constructor;
 // names are hypotheses).

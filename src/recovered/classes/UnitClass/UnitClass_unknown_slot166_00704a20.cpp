@@ -4,7 +4,7 @@
 // the techno's answer.
 #include "shared/unit.hpp"
 // @ref ?unknown_slot166@TechnoClass@@UAEHXZ=006d3ed0
-// @ref ?unknown_69ae10@UnknownQuad@@QBEMXZ=0069ae10
+// @ref ?Get_Total_Amount@StorageClass@@QBEMXZ=0069ae10
 // @ref __ftol=0077f110
 
 int UnitClass::unknown_slot166()
@@ -12,7 +12,7 @@ int UnitClass::unknown_slot166()
     switch (Type->PipScale) {
     case 2:
     {
-        double ratio = unknown_294.unknown_69ae10() / Type->Storage;
+        double ratio = unknown_294.Get_Total_Amount() / Type->Storage;
         return (int)(Type->unknown_slot29() * ratio + 0.5);
     }
     }

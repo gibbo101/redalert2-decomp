@@ -9,7 +9,7 @@ extern "C" float const unknown_charge_limit_0079d14c;
 // @ref _unknown_turret_frame_table_007acab0=007acab0
 // @ref _unknown_charge_scale_0079d148=0079d148
 // @ref _unknown_charge_limit_0079d14c=0079d14c
-// @ref ?unknown_69ae10@UnknownQuad@@=0069ae10
+// @ref ?Get_Total_Amount@StorageClass@@=0069ae10
 // @ref ?Normalize_Delay@OptionsClass@@=005d9760
 // @ref ?Options@@=00a40b18
 // @ref ?Health_Ratio@ObjectClass@@=005d4540
@@ -28,9 +28,9 @@ inline void Start_Condition_Animation_0044BD40(BuildingClass *building,int index
 }
 inline int Refinery_Storage_Stage_0044BD40(BuildingClass *building)
 {
-    int stored=(int)building->unknown_294.unknown_69ae10();
+    int stored=(int)building->unknown_294.Get_Total_Amount();
     if(stored!=0) {
-        stored=(int)building->unknown_294.unknown_69ae10();
+        stored=(int)building->unknown_294.Get_Total_Amount();
         stored=(int)((unsigned int)stored<<2)/building->Type->Storage;
     }
     return stored;
@@ -66,7 +66,7 @@ inline int Silo_Storage_Frame_0044BD40(BuildingClass *building)
 {
  int frame=0;
  if(building->Type->Storage>0) {
-  int stored=(int)building->unknown_294.unknown_69ae10();
+  int stored=(int)building->unknown_294.Get_Total_Amount();
   stored=(int)((unsigned int)stored<<2);
   frame=(int)((double)stored/building->Type->Storage+0.5);
   if(frame<0)return 0;

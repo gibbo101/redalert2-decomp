@@ -18,7 +18,7 @@
 //   +0x1E8, +0x21C  CoordStruct (the unit's zero coordinate)
 //   +0x208, +0x230, +0x238  owned objects deleted by the destructor
 //   +0x25C  ObjectClass *unknown_25c[8]   cleared, swizzled
-//   +0x294  UnknownQuad, +0x2A8 UnknownTimed (out-of-line constructors)
+//   +0x294  StorageClass, +0x2A8 UnknownTimed (out-of-line constructors)
 //   +0x2C8, +0x2E0, +0x2F8  FacingClass (the first with rate 3)
 //   +0x320  short: a random value from the scenario when constructed
 //   +0x330, +0x350  UnknownTechnoBlock (constructed by both constructors)
@@ -32,6 +32,7 @@
 #define RA2_SHARED_TECHNO_HPP
 
 #include "shared/rect.hpp"
+#include "shared/storage_class.hpp"
 #include "shared/stage.hpp"
 #include "shared/techno_type.hpp"
 #include "shared/house.hpp"
@@ -66,20 +67,6 @@ public:
 };
 
 // UnknownStage: shared/stage.hpp.
-
-// Four cleared words (constructor 0x0069ADA0 is out of line).
-class UnknownQuad {
-public:
-    UnknownQuad();                      // 0x0069ADA0
-    UnknownQuad(NoInitClass const &noinit) {}
-    float unknown_69ae40(int index) const;   // 0x0069AE40 (the amount of one type; hypothesis)
-    float unknown_69ae50(float amount, int type);   // 0x0069AE50 (adds an amount of one type; hypothesis)
-    float unknown_69ae10() const;       // 0x0069AE10 (the sum of the four values; hypothesis: StorageClass::Get_Total_Amount)
-    int unknown_00;
-    int unknown_04;
-    int unknown_08;
-    int unknown_0c;
-};
 
 // A timer whose NoInitClass constructor is out of line (0x00423F60).
 class UnknownTimer423F60 {
@@ -704,7 +691,7 @@ public:
     float unknown_288;                      // +0x288 (a spin rate set when the unit dies; FootClass slot 224)
     float unknown_28c;                      // +0x28C (a second rate; FootClass slot 224)
     int unknown_290;                        // +0x290 (-1)
-    UnknownQuad unknown_294;                // +0x294
+    StorageClass unknown_294;               // +0x294
     int unknown_2a4;                        // +0x2A4
     UnknownTimed unknown_2a8;               // +0x2A8
     FacingClass unknown_2c8;                // +0x2C8 (rate 3)
