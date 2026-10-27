@@ -1,0 +1,62 @@
+{
+  "schema": "ra2-closed-compiler-output-v1",
+  "original_image_credit": 0,
+  "purpose": "Explicitly omit same independently identified implicit VC6 vector-construction iterator for separate exact11source population; no source/library recognition.",
+  "compiler": {
+    "CL.EXE": "d9220fdfaf355c81f26e7b03c5dc628ec72ff81c99dc38ed98b1ad4bdbbb309c",
+    "C1.DLL": "ee14a2603a1339f95db2e396751f7e51b50e421731229fb2416a01f974689d80",
+    "C1XX.DLL": "4095e9e8de5ac4b13dbfe310abb8de711475b1a92c5f94375919947937f3237e",
+    "C2.DLL": "45187b0b6288240f73272a7c61e6329c50048a76e57db3bb87b6f0229e09e27d",
+    "MSPDB60.DLL": "7c90b80d42914562332e28c253415e72a80c6651003d08a9ffdc4ba6e27fc37c"
+  },
+  "options": [
+    "/O2",
+    "/Ob2",
+    "/G5",
+    "/Gy"
+  ],
+  "sources": [
+    "98af691c37437e6c0223f2a36e0c8d8bcb81f7b88f48ae106197954dea4acbbb",
+    "bc087d6d6616a194bf43c3583183089b23b1bada7b9bbde81b804c552f34c948",
+    "fd6d955de891cfb94eec0c2c900a893525bc369287ea4fa6141d273104040e12",
+    "45b935f1d3e668814ab288a127338875343fe23d70a0ca0a56c1c6721e21fe03",
+    "f6fbb5493f9333b365d797b1c544198b0a374a3793f5cda00061ee8868b118fb",
+    "a2cb71e3cc47d646a8d68ee9117b1bcff6d0194dcbf4b9cad346ff98720239e1",
+    "ac678306c6bab1e66768c29b5d5eea84568a76f5963072ac5542d3fd85f51721",
+    "e0531be8e8cdfddd35cf41c98b3c42e70674505c7d615b67c5ab308f201845ca",
+    "c15b0d0f048337e14e57003a3006153de7e183e0c80e657bd03c79cfcc8c80d3",
+    "6891efe8d288d48697c702d4829606a1894056956013dc35797e92efee468515",
+    "8017f9a5099955d9e82cee5a27b1fb5098acd097c96b96c3be5b712400a27759"
+  ],
+  "headers": [
+    {
+      "path": "src/shared/array_extension_ordinary_views.hpp",
+      "sha256": "34dfaaa2901ed7845aa930fe63ff97992fdcf89e3cee0b7f9b45a4bb48b768b3"
+    }
+  ],
+  "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+  "gaps_sha256": "ec359eab270da70c4dfa8646eda2b3c18b2806927e7f48844c036f4286e6a800",
+  "object_structure_sha256": "d5e45083618268f0ff6a2f41d558881489cb89e51ebf71be8c891a03dbe1f215",
+  "helper": {
+    "symbol": "??_H@YGXPAXIHP6EX0@Z@Z",
+    "bytes": 48,
+    "body_bytes": 42,
+    "sha256": "939c9ff36e77a8015a5dfed0b0aa9e0b09def222bf50f83779e594ac4adbafec",
+    "debug_sha256": "b4b41a619d2b86dac48368b98ac5df0fe53fe69178f1a9031683fdf6b437b844"
+  },
+  "original_identity": {
+    "entry": 4239056,
+    "readiness_path": "manifests/vc6_vector_constructor_original_provenance.json",
+    "readiness_sha256": "00d639bd79b1843ffa6854d17f8d0f2bc3a3cffbc6a6ce3185a9dcda97d64dcf",
+    "body_inventory_row_sha256": "2bddd438641a8bdf9cb46a3e46d41f6c5ea0edbc405a121e945d15b456f9a70a",
+    "gap_row_sha256": "a9d79476b0f1eb8c64d5413fba21d63527242fc537f6441057018c3ffff0a34c",
+    "following_inventory_row_sha256": "be4b0c2821cc5744cd3c5607bcf69c5e90da00885f537cbeb32add1f373fb5f2"
+  },
+  "provenance": {
+    "implicit_generation_sha256": "c63a6b4c24d113e5b87e4b57fcebaf4af47e899d1c730a7d09cde304303aa1b4",
+    "independent_generation_review_sha256": "c1fb02fab8475dce7b779f9a3fd032a8561854307aa18583400a39ef1fdd770e",
+    "first_population_peer_review_sha256": "9d6e761ef0926f7f01d0d0d1e8ee7c5daf287e76f5456b348de79f20e2b2cc87",
+    "fresh_exact11_report_sha256": "5a64cb0d09ea5d0217a9e9163be7e3b235e4021158d4ece3a8b706e152c62f6f"
+  },
+  "normalization": "Only COFF timestamp and sole.file debug pathname auxiliary length/bytes plus consequent physical offsets/symbol indices. Every physical file range accounted; other metadata/strings pinned."
+}

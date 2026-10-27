@@ -1,0 +1,3 @@
+extern "C" unsigned char vtable_654390[]; extern "C" void __cdecl release_buffer_654390(void*); extern "C" void __cdecl release_object_654390(void*);
+class Leaf_654390 { public: void* get(unsigned int flags); };
+void* Leaf_654390::get(unsigned int flags) { unsigned int pointer = *(unsigned int*)((char*)this + 4); *(unsigned int*)this=(unsigned int)vtable_654390; if(pointer && *(unsigned char*)((char*)this + 13)){ release_buffer_654390((void*)pointer); *(unsigned int*)((char*)this + 4)=0; } *(unsigned char*)((char*)this + 13)=0; *(unsigned int*)((char*)this + 8)=0; if(flags & 1) release_object_654390(this); return this; }

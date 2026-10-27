@@ -1,0 +1,14 @@
+// Observed connected message/gadget source model v5. Original class names unknown.
+// Complete original bounds and reference targets remain frozen independently.
+#include "shared/message_gadget_layout.hpp"
+
+
+
+int GadgetState_004cefe0::AdmitDirtyOrForcedDraw_004cf240(unsigned int force)
+{
+    if (force != 0 || dirty != 0) {
+        dirty = 0;
+        return 1;
+    }
+    return 0;
+}

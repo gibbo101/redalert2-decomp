@@ -1,0 +1,361 @@
+{
+  "schema": "ra2-readable-word-storage-plan-v1",
+  "target": {
+    "sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+    "size": 4485392
+  },
+  "template_sha256": "3a42c32709a9fe35ced0a8127a8e1ed8dea07fe2985d744abe632767b27a838b",
+  "evidence_sha256": {
+    "functions": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps": "e08aea40096e7b4e0d74af8d5c3ab9f099c05753e3446c04c6d1346e4878b3c6",
+    "facts": "a42c4bccd378921522300517bd136b2f40ac8db5f5e1fc339198cd09c1dc11eb",
+    "peer_review": "96e706ed2f2c10e7bdf402956eb0ec69e9935a0fcb48bc29764a14ab894215c3"
+  },
+  "held_entries": [
+    7309952
+  ],
+  "regions": [
+    {
+      "entry": 4641264,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "b88ded832827be0442f627c53435c8d6a56d8971f024602a96a81890aab29d3d",
+      "full_extent_sha256": "d7435c75db46ca3cb1ba8adf5f95afbb17c5747d1cd16d48a9c0691c13b70e9c",
+      "source_sha256": "e1817620d7cd2ebb5ed9da8e029ce0771241b6122b7260aa4f0232afb1d4dcfe",
+      "symbol_prefix": "?initialize@WordStorage_0046d1f0@@",
+      "references": {
+        "_allocate_storage_0046d1f0": 7872535,
+        "_base_dispatch_0046d1f0": 7985620,
+        "_derived_dispatch_0046d1f0": 7985812
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 5221008,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "76707bbe938ad79041bc3424f2c3e5903f7943be8f1c0272852def2fea52a9f8",
+      "full_extent_sha256": "5e3f2ecdd7a078dca37103686e9504d48a402ff2d569bb61fcfcc90065cc52cc",
+      "source_sha256": "102f9d93f57dbbe674cbd645755fbf2fbbbb53b05c41620f61f097b3c07932f1",
+      "symbol_prefix": "?initialize@WordStorage_004faa90@@",
+      "references": {
+        "_allocate_storage_004faa90": 7872535,
+        "_base_dispatch_004faa90": 8007960,
+        "_derived_dispatch_004faa90": 8008056
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 5221984,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "b9cfb00caa6cd46c038920cd66475f74e898b288b6159f05744ea2c0643e31c5",
+      "full_extent_sha256": "d403011cead5481fb81e28b51fd430e8c06a57fa54db73703e7026342f4a9978",
+      "source_sha256": "54be2d59f2ca8e5309b207b9053aae69043959c80dc1e55c4743496283045a73",
+      "symbol_prefix": "?initialize@WordStorage_004fae60@@",
+      "references": {
+        "_allocate_storage_004fae60": 7872535,
+        "_base_dispatch_004fae60": 8007992,
+        "_derived_dispatch_004fae60": 8008088
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 5222960,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "194ce3bf9eeafb009c913974c43c2058f2c088646127bff035c28e77eb220b1d",
+      "full_extent_sha256": "0286279670e9a832ac8072ada84c7b751cdf1e634c54d7be34ba8e4b599ad633",
+      "source_sha256": "6fe57a97eefa878dbf4a27b799094a04404767fb2a5499fa31cbbe6e82de1862",
+      "symbol_prefix": "?initialize@WordStorage_004fb230@@",
+      "references": {
+        "_allocate_storage_004fb230": 7872535,
+        "_base_dispatch_004fb230": 8008024,
+        "_derived_dispatch_004fb230": 8008120
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 5289088,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "e8705293cb1624e93a5de5f6167059f379c93b5c6f8e3859e18a083b52a16073",
+      "full_extent_sha256": "1e579cf30c01ccf43f62cf95e1be7ce0d548405bfc3d2d25e12443864337dda8",
+      "source_sha256": "fe4beae2bc8cb9b93c37cbef6874eb74a51a0ae3c216be690a7f89252bbc8625",
+      "symbol_prefix": "?initialize@WordStorage_0050b480@@",
+      "references": {
+        "_allocate_storage_0050b480": 7872535,
+        "_base_dispatch_0050b480": 8010588,
+        "_derived_dispatch_0050b480": 8010620
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 5824880,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "8d13fffc6dfa5a6ebff795d70549b84940d0114956bba5582f79f5c0fffa20b3",
+      "full_extent_sha256": "27628b8251d89e7585606b2b43dc81e15235f5f05e22ac60bb12e18d6fa38ac2",
+      "source_sha256": "89477f511e19199ceb68f54c2c244ecd11b0c62fb80cd9fcd6498a002c63ab25",
+      "symbol_prefix": "?initialize@WordStorage_0058e170@@",
+      "references": {
+        "_allocate_storage_0058e170": 7872535,
+        "_base_dispatch_0058e170": 8007432,
+        "_derived_dispatch_0058e170": 8007464
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 6002112,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "835606a6a4a3aad562b644dfdb944d38837fd294e554195cbb5220f889ae73f4",
+      "full_extent_sha256": "e01e3e6d38e1952eba978b7a36996a645f4f23eff91c2234f54fb92320296865",
+      "source_sha256": "771d735cd790c2630832cc6de24c3639223d584aa17feaefee9b207013623bda",
+      "symbol_prefix": "?initialize@WordStorage_005b95c0@@",
+      "references": {
+        "_allocate_storage_005b95c0": 7872535,
+        "_base_dispatch_005b95c0": 8024472,
+        "_derived_dispatch_005b95c0": 8024440
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 6084464,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "a365795b0f47dfea70491b9986d51cf786426af78cb2974d1f16d74d46a220b1",
+      "full_extent_sha256": "cc28f2b2897b734d7d21da6e4ee5aae45813e152a1e4b57b49057b39270860b7",
+      "source_sha256": "754de651487d7a4f8605e5ef19464ec52ad8bbe73b2f942ee1732f27ada76bbd",
+      "symbol_prefix": "?initialize@WordStorage_005cd770@@",
+      "references": {
+        "_allocate_storage_005cd770": 7872535,
+        "_base_dispatch_005cd770": 8024968,
+        "_derived_dispatch_005cd770": 8025000
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 6401152,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "fb3c9272b4df7bad36de519ea64ff86993a4df597e454ace14653306cec20de0",
+      "full_extent_sha256": "8a890e36347fac880e59b93f43059e57a04ab56f62a6e42044ffd9e99cbc23d7",
+      "source_sha256": "5562fa449583c7cdc2d843b1398d3b430f25e903062acb45c20ceda6b47acc54",
+      "symbol_prefix": "?initialize@WordStorage_0061ac80@@",
+      "references": {
+        "_allocate_storage_0061ac80": 7872535,
+        "_base_dispatch_0061ac80": 8028892,
+        "_derived_dispatch_0061ac80": 8028860
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 6401936,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "43403d9ac0a2939cde71e69da4e6fc26e805fc45250ffde7cb8b2080b9404c65",
+      "full_extent_sha256": "cd254af10976ad894731bf24dc64a7d78a9399ce9a7615bd1e85914dde549e12",
+      "source_sha256": "33c21d20b676c629b9ba9394b84bcfb5232718466aec3a9f2661c59ee34032ea",
+      "symbol_prefix": "?initialize@WordStorage_0061af90@@",
+      "references": {
+        "_allocate_storage_0061af90": 7872535,
+        "_base_dispatch_0061af90": 8028924,
+        "_derived_dispatch_0061af90": 8028828
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 6632256,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "8c1a093ee8d7b7a8e2219e4c96aea8695ecc1ae6763edc2f3441b71377a5b454",
+      "full_extent_sha256": "6c2aa7432acd4815c1c452dac6d65c9abc44075dcd6c5224b3137da26b765266",
+      "source_sha256": "502245020e0310b123b69772f028e61ff441dd51aab4d55306aed453afefd334",
+      "symbol_prefix": "?initialize@WordStorage_00653340@@",
+      "references": {
+        "_allocate_storage_00653340": 7872535,
+        "_base_dispatch_00653340": 8032536,
+        "_derived_dispatch_00653340": 8032644
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 6633264,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "e4aba9b91157de8092c5f56e0cdebf292c2ebfbb9823615c496c6f9057ae93a2",
+      "full_extent_sha256": "a6dae210feea77d6c6f924e27049ccecb30acd41de9a30ea1896d56f55baf893",
+      "source_sha256": "88988f9b3d79f4c08033fc222285e0c255749aad9f783cf2339e456707025e8c",
+      "symbol_prefix": "?initialize@WordStorage_00653730@@",
+      "references": {
+        "_allocate_storage_00653730": 7872535,
+        "_base_dispatch_00653730": 8032568,
+        "_derived_dispatch_00653730": 8032676
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 6634048,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "ec4ee80ce1074c235ff6235c725e2696c651dbe9ed979ad629f2036c2f3a5d3d",
+      "full_extent_sha256": "6d5707d16390b48354e1946a0e50f7aac96dd1f14e7be0e99e83fdf7bdd9cdcb",
+      "source_sha256": "ce3854efb20b65d587f87b33d6e376106a11befe8d874ca94d93401c525af074",
+      "symbol_prefix": "?initialize@WordStorage_00653a40@@",
+      "references": {
+        "_allocate_storage_00653a40": 7872535,
+        "_base_dispatch_00653a40": 8032600,
+        "_derived_dispatch_00653a40": 8032708
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 6698208,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "3ea4df335505adb44e827bb7ecf2ce0298ae585f213ce68c1b166084e6d728f0",
+      "full_extent_sha256": "f98ae9e95abcc5ef918949c91af94732708f39728ecf428f6d8c5026b76903f0",
+      "source_sha256": "cb51d6e42ac36efd860e7468eb2497251e2e0f1974493ed16973888cb5a3accf",
+      "symbol_prefix": "?initialize@WordStorage_006634e0@@",
+      "references": {
+        "_allocate_storage_006634e0": 7872535,
+        "_base_dispatch_006634e0": 7985684,
+        "_derived_dispatch_006634e0": 7998364
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 7078880,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "f226248fcbb784f29adb668e2440367bc8a3e3e85f04573584e2adaecafc9f9a",
+      "full_extent_sha256": "91b002417a8bd20e41938230c71bc8787fcc9647cce31f050d112900bb80a7b5",
+      "source_sha256": "8ff17b097abec2d6b7cbad9ec6b15e7a8345ff85f36a23c6239c0b2667c95bc9",
+      "symbol_prefix": "?initialize@WordStorage_006c03e0@@",
+      "references": {
+        "_allocate_storage_006c03e0": 7872535,
+        "_base_dispatch_006c03e0": 8007396,
+        "_derived_dispatch_006c03e0": 8007660
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 7207216,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "bb40a3adf21818964037b9053a339317c8f5ac3b4cd07286c9197a29c14eb3b4",
+      "full_extent_sha256": "a898c7a23f95ab847a0b1f67106fc0a6056adf3073a6c343f01af7ed88bea575",
+      "source_sha256": "ab5984f6ec8b5d176cd6afb3876f447cb140f5ec985179b6c815af9482a985bd",
+      "symbol_prefix": "?initialize@WordStorage_006df930@@",
+      "references": {
+        "_allocate_storage_006df930": 7872535,
+        "_base_dispatch_006df930": 7983276,
+        "_derived_dispatch_006df930": 7983308
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    },
+    {
+      "entry": 7489232,
+      "body_bytes": 93,
+      "padding_bytes": 3,
+      "body_sha256": "288856dca6257b832727febf36bde46af9c844e7c446fe6e63ddf210e1811d74",
+      "full_extent_sha256": "6a5ae395233684a862bac051a106987cf3f1e599317a7a19d5836ecaff20598a",
+      "source_sha256": "51770110b0542dcb1de0d18f36ff5df783b6d2ab11a6b9772bf7ec831b0d2e87",
+      "symbol_prefix": "?initialize@WordStorage_007246d0@@",
+      "references": {
+        "_allocate_storage_007246d0": 7872535,
+        "_base_dispatch_007246d0": 8018360,
+        "_derived_dispatch_007246d0": 8019708
+      },
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ]
+    }
+  ],
+  "role_caveats": "storage/capacity/owns_storage inferred; unknown0c/10/14 remain unknown; allocator/API/class/table bodies unidentified",
+  "shared_template_sha256": "418ec4838f3ad221cea593c7cb14cef71f0f5cc81dc56543e3511d74cc44c28c"
+}

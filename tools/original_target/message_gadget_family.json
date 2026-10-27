@@ -1,0 +1,94 @@
+{
+  "schema": "ra2-readable-connected-family-plan-v1",
+  "target": {
+    "sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+    "size": 4485392
+  },
+  "shared_headers": [
+    {
+      "path": "src/shared/message_gadget_layout.hpp",
+      "sha256": "401f8d5eb5e8f70b93b8933e4a57ba0eed964aba3b9967707117e95693d9b29d"
+    },
+    {
+      "path": "src/shared/link_prefix_layout.hpp",
+      "sha256": "b5f2dc7ab456e81fd562894557f1387adf7c1740b1657a9d0070554164b94830"
+    }
+  ],
+  "evidence_sha256": {
+    "original_facts": "fccab2b7a6c882d8949e144813a29c119db7b7b1fdf9d43df23c7417d074296d",
+    "peer_source_review": "554feefca860162d041f5a53796789d710df4dc9e9dfa79fd8106bfcaa5a1cad"
+  },
+  "regions": [
+    {
+      "entry": 5042752,
+      "body_bytes": 32,
+      "body_sha256": "9f00b7fe5aa9b6c0b87e3794015d779fcabf3b3e510f3695974d4d47713aedea",
+      "region_bytes": 32,
+      "region_sha256": "9f00b7fe5aa9b6c0b87e3794015d779fcabf3b3e510f3695974d4d47713aedea",
+      "proposed_source": "src/recovered/gadgets/AdmitDirtyOrForcedDraw_004cf240.cpp",
+      "source_sha256": "3744961b3dab0017c973b50407c90f8794a7bec2b57786f568badedfd5d24397",
+      "symbol_prefix": "?AdmitDirtyOrForcedDraw_004cf240@GadgetState_004cefe0@@",
+      "references": {},
+      "template": "AdmitDirtyOrForcedDraw_004cf240.cpp.in"
+    },
+    {
+      "entry": 5043760,
+      "body_bytes": 14,
+      "body_sha256": "b73fb0ce2a642090c63e80753937aae01e4c95d8d08e5bfb4802a42d89f606b5",
+      "region_bytes": 16,
+      "region_sha256": "06d09f02456865da5cf2a468c71c2438163e55c34a81af68069f18e899a09eda",
+      "proposed_source": "src/recovered/messages/IsFocusedMessageNode_004cf630.cpp",
+      "source_sha256": "28e9a083aebae5185fdb86a9f1d994b4056d3f8c0c532099eaac7f43d27ec6e1",
+      "symbol_prefix": "?IsFocusedMessageNode_004cf630@MessageNode_006f15c0@@",
+      "references": {
+        "_focused_message_node_004cf630": 8806392
+      },
+      "template": "IsFocusedMessageNode_004cf630.cpp.in"
+    },
+    {
+      "entry": 5042144,
+      "body_bytes": 79,
+      "body_sha256": "38965a66b46369bc89ec94057a92315f8cf85911d41534ed3a7516809fcee7e8",
+      "region_bytes": 80,
+      "region_sha256": "f8556b02765905ea0717c1412f201ffae453add4a193af2349b94f8a614ce941",
+      "proposed_source": "src/recovered/gadgets/ConstructGadgetState_004cefe0.cpp",
+      "source_sha256": "74765f6e1d265e109371023c8f6960b3c700fadf28ef53ebf4793958ef2ed754",
+      "symbol_prefix": "??0GadgetState_004cefe0@@",
+      "references": {
+        "_gadget_dispatch_004cefe0": 8001580
+      },
+      "template": "ConstructGadgetState_004cefe0.cpp.in"
+    },
+    {
+      "entry": 7280064,
+      "body_bytes": 91,
+      "body_sha256": "913a9e6c6a0ec6234c929d969bb4a347c7f30a5ddac1f2e39c6e62a3e00359b4",
+      "region_bytes": 96,
+      "region_sha256": "fd717a10de81acb3d3594f5ab1b1cb283023bbc8074912a43c7fa071a5f93c8f",
+      "proposed_source": "src/recovered/messages/ConstructMessageNode_006f15c0.cpp",
+      "source_sha256": "3c20b60d348382038e6b895a9becfd61452b14bac590f0bc5ef5145de7285c89",
+      "symbol_prefix": "??0MessageNode_006f15c0@@",
+      "references": {
+        "_message_node_dispatch_006f15c0": 8051916,
+        "??0GadgetState_004cefe0@@QAE@HHHHIE@Z": 5042144
+      },
+      "template": "ConstructMessageNode_006f15c0.cpp.in"
+    },
+    {
+      "entry": 5042720,
+      "body_bytes": 31,
+      "body_sha256": "548e47c57d9dd8ea63df8b4b1d47135b4feaa82b257f8b7e7d90dbb0f9a5b5ba",
+      "region_bytes": 32,
+      "region_sha256": "dc0484270723a93b908789a8135a2ab9b017f9a360dbf1599e9c4b7543f12740",
+      "proposed_source": "src/recovered/gadgets/DispatchNonzeroArgument_004cf220.cpp",
+      "source_sha256": "0aa52206f2081e56841d767e1de7e89ddd5b83aa13930fe04334327bd30cdde8",
+      "symbol_prefix": "?DispatchNonzeroArgument_004cf220@GadgetState_004cefe0@@",
+      "references": {},
+      "template": "DispatchNonzeroArgument_004cf220.cpp.in"
+    }
+  ],
+  "limits": [
+    "Reviewed candidate generation only; canonical manual source remains authoritative.",
+    "All original code/data and private evidence remain ignored; compiled acceptance is separate."
+  ]
+}

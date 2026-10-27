@@ -1,0 +1,193 @@
+{
+  "schema": "ra2-readable-connected-family-plan-v1",
+  "target": {
+    "sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+    "size": 4485392
+  },
+  "shared_headers": [
+    {
+      "path": "src/shared/array_extension_ordinary_views.hpp",
+      "sha256": "34dfaaa2901ed7845aa930fe63ff97992fdcf89e3cee0b7f9b45a4bb48b768b3"
+    }
+  ],
+  "evidence_sha256": {
+    "original_facts": "4821fb7401c8e8a0c939f298f9cff83efdfeaecd79d6f691b4b3dab14ca68dd5",
+    "peer_source_review": "cd2d07c712d1204e9db3e114620a6a14066459ec4316cc38f67518e583fbbf16"
+  },
+  "regions": [
+    {
+      "entry": 4372000,
+      "body_bytes": 73,
+      "body_sha256": "bdfa57012a3e7fceb9e825d53d455fb6b8817224a223340d4007e2b01eada033",
+      "region_bytes": 80,
+      "region_sha256": "bc664bcead61e328840f7118013a3067be1dbfcbc2b38ef49e767efe2d6c92b9",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_0042b620.cpp",
+      "source_sha256": "98af691c37437e6c0223f2a36e0c8d8bcb81f7b88f48ae106197954dea4acbbb",
+      "symbol_prefix": "??0ArrayStorageExtension_0042b620@@",
+      "references": {
+        "_array_extension_dispatch_0042b620": 7980340,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructArrayStorageExtension_0042b620.cpp.in"
+    },
+    {
+      "entry": 4378208,
+      "body_bytes": 117,
+      "body_sha256": "e75af03f8f8861318c0113424a0fe6e8e90f8bf9add872b315d9aeb03bdad90c",
+      "region_bytes": 128,
+      "region_sha256": "7d9dde5afbdd880ccbb3bc7b90b0317500e702ad046b6d85e4fb162ee550731f",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_0042ce60.cpp",
+      "source_sha256": "bc087d6d6616a194bf43c3583183089b23b1bada7b9bbde81b804c552f34c948",
+      "symbol_prefix": "??0ArrayStorageExtension_0042ce60@@",
+      "references": {
+        "_array_extension_dispatch_0042ce60": 7980448,
+        "??_U@YAPAXI@Z": 7872535,
+        "_array_extension_base_dispatch_0042ce60": 7980512
+      },
+      "template": "ConstructArrayStorageExtension_0042ce60.cpp.in"
+    },
+    {
+      "entry": 4379696,
+      "body_bytes": 112,
+      "body_sha256": "cbac07c80ae44cfff586e9f9e2df37a3c19db1a08533b82b43c59c5e8bd50639",
+      "region_bytes": 112,
+      "region_sha256": "cbac07c80ae44cfff586e9f9e2df37a3c19db1a08533b82b43c59c5e8bd50639",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_0042d430.cpp",
+      "source_sha256": "fd6d955de891cfb94eec0c2c900a893525bc369287ea4fa6141d273104040e12",
+      "symbol_prefix": "??0ArrayStorageExtension_0042d430@@",
+      "references": {
+        "_array_extension_dispatch_0042d430": 7980544,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructArrayStorageExtension_0042d430.cpp.in"
+    },
+    {
+      "entry": 4990240,
+      "body_bytes": 144,
+      "body_sha256": "32f15f53f600d0526a7f75d5759c9420cb65fa2bbdd242b4a11da3de1cf81890",
+      "region_bytes": 144,
+      "region_sha256": "32f15f53f600d0526a7f75d5759c9420cb65fa2bbdd242b4a11da3de1cf81890",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_004c2520.cpp",
+      "source_sha256": "45b935f1d3e668814ab288a127338875343fe23d70a0ca0a56c1c6721e21fe03",
+      "symbol_prefix": "??0ArrayStorageExtension_004c2520@@",
+      "references": {
+        "_array_extension_dispatch_004c2520": 7999952,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructArrayStorageExtension_004c2520.cpp.in"
+    },
+    {
+      "entry": 5212896,
+      "body_bytes": 147,
+      "body_sha256": "fdbfba760b421e7027fd85c1cc25a797e2b5dc8a469e57db8a7353e13ad98f32",
+      "region_bytes": 160,
+      "region_sha256": "2af8150151863aea5badde28664dc727fc70b514cdf13f790eccdfe623087c21",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_004f8ae0.cpp",
+      "source_sha256": "f6fbb5493f9333b365d797b1c544198b0a374a3793f5cda00061ee8868b118fb",
+      "symbol_prefix": "??0ArrayStorageExtension_004f8ae0@@",
+      "references": {
+        "_array_extension_dispatch_004f8ae0": 8007300,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructArrayStorageExtension_004f8ae0.cpp.in"
+    },
+    {
+      "entry": 5213472,
+      "body_bytes": 71,
+      "body_sha256": "bfd7c01d27b1309f254969d27bdb416a1d5d72d85f2a63e643ea431fd6e06c1c",
+      "region_bytes": 80,
+      "region_sha256": "6da332cd9ffe6b3c6e356111f99d2fe1af2ec8171b43fd06692b2cb4d336eb23",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_004f8d20.cpp",
+      "source_sha256": "a2cb71e3cc47d646a8d68ee9117b1bcff6d0194dcbf4b9cad346ff98720239e1",
+      "symbol_prefix": "??0ArrayStorageExtension_004f8d20@@",
+      "references": {
+        "_array_extension_dispatch_004f8d20": 8007524,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructArrayStorageExtension_004f8d20.cpp.in"
+    },
+    {
+      "entry": 5829216,
+      "body_bytes": 112,
+      "body_sha256": "062d7741440c1f1afa0656e5f9edd291ed5c0a47c7298c41d79787c840ffa83a",
+      "region_bytes": 112,
+      "region_sha256": "062d7741440c1f1afa0656e5f9edd291ed5c0a47c7298c41d79787c840ffa83a",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_0058f260.cpp",
+      "source_sha256": "ac678306c6bab1e66768c29b5d5eea84568a76f5963072ac5542d3fd85f51721",
+      "symbol_prefix": "??0ArrayStorageExtension_0058f260@@",
+      "references": {
+        "_array_extension_dispatch_0058f260": 8019632,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructArrayStorageExtension_0058f260.cpp.in"
+    },
+    {
+      "entry": 5898208,
+      "body_bytes": 117,
+      "body_sha256": "db8343af0a560f745069b97c39bad8f86c0d2a21d5c1d7597210774ddc3a2e10",
+      "region_bytes": 128,
+      "region_sha256": "b9b4cd52dc4cf3aa963668750619c722be57569c887e85080c1b39802ca22d1b",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_0059ffe0.cpp",
+      "source_sha256": "e0531be8e8cdfddd35cf41c98b3c42e70674505c7d615b67c5ab308f201845ca",
+      "symbol_prefix": "??0ArrayStorageExtension_0059ffe0@@",
+      "references": {
+        "_array_extension_dispatch_0059ffe0": 8018552,
+        "??_U@YAPAXI@Z": 7872535,
+        "_array_extension_base_dispatch_0059ffe0": 8018680
+      },
+      "template": "ConstructArrayStorageExtension_0059ffe0.cpp.in"
+    },
+    {
+      "entry": 6312432,
+      "body_bytes": 148,
+      "body_sha256": "55dd23863d682aed591704258969ef05ff12e9f28f320d24a0b71c2b47116825",
+      "region_bytes": 160,
+      "region_sha256": "93bb8e0e7952c14ce61d99f4d7df1ecdb8967f833df3fc409f38e19190dbc6ea",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_006051f0.cpp",
+      "source_sha256": "c15b0d0f048337e14e57003a3006153de7e183e0c80e657bd03c79cfcc8c80d3",
+      "symbol_prefix": "??0ArrayStorageExtension_006051f0@@",
+      "references": {
+        "_array_extension_dispatch_006051f0": 8026968,
+        "??_U@YAPAXI@Z": 7872535,
+        "_array_extension_base_dispatch_006051f0": 8027128
+      },
+      "template": "ConstructArrayStorageExtension_006051f0.cpp.in"
+    },
+    {
+      "entry": 6430624,
+      "body_bytes": 148,
+      "body_sha256": "83ea54142e5646588ad8412411dacf6a6ce027e849fa460404291f76e27ad574",
+      "region_bytes": 160,
+      "region_sha256": "68eaa738cc39722870d536d2f07f8c659f0205471dbb7377484c26180477d7ec",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_00621fa0.cpp",
+      "source_sha256": "6891efe8d288d48697c702d4829606a1894056956013dc35797e92efee468515",
+      "symbol_prefix": "??0ArrayStorageExtension_00621fa0@@",
+      "references": {
+        "_array_extension_dispatch_00621fa0": 8029700,
+        "??_U@YAPAXI@Z": 7872535,
+        "_array_extension_base_dispatch_00621fa0": 7985748
+      },
+      "template": "ConstructArrayStorageExtension_00621fa0.cpp.in"
+    },
+    {
+      "entry": 6825344,
+      "body_bytes": 117,
+      "body_sha256": "9424bd61bba15bcd6c57075dde97fab77a64abe991f3a566aabceb67bc8b94f0",
+      "region_bytes": 128,
+      "region_sha256": "c4c489e19560affba5a853aa2ad792f3d27c80e9cae334372ab26f931748f32b",
+      "proposed_source": "src/recovered/containers/ConstructArrayStorageExtension_00682580.cpp",
+      "source_sha256": "8017f9a5099955d9e82cee5a27b1fb5098acd097c96b96c3be5b712400a27759",
+      "symbol_prefix": "??0ArrayStorageExtension_00682580@@",
+      "references": {
+        "_array_extension_dispatch_00682580": 8023976,
+        "??_U@YAPAXI@Z": 7872535,
+        "_array_extension_base_dispatch_00682580": 8024008
+      },
+      "template": "ConstructArrayStorageExtension_00682580.cpp.in"
+    }
+  ],
+  "limits": [
+    "Candidate generation only; canonical manual source authoritative.",
+    "Header includes three unaccepted element/view hypotheses that emit no main bodies in this population; no source credit for them."
+  ]
+}

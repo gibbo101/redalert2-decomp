@@ -1,0 +1,22 @@
+#include "shared/word_sequence_views.hpp"
+
+// Original VA @ADDRESS@, target @TARGET_HASH@.
+// Return the first equal 32-bit word's index, or -1 for signed-count exhaustion.
+// The count is at +0x10. Preserve signed tests and reference argument semantics;
+// original scan inputs can reside in registers. Class/element roles unknown.
+class @OWNER@ {
+    WordSequenceCountAt16View32 view;
+
+public:
+    int @FUNCTION_NAME@(const unsigned int& sought_word) const;
+};
+
+int @OWNER@::@FUNCTION_NAME@(const unsigned int& sought_word) const
+{
+    for (int index = 0; index < view.count; ++index) {
+        if (view.items[index] == sought_word) {
+            return index;
+        }
+    }
+    return -1;
+}

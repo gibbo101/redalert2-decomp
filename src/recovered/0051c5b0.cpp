@@ -1,0 +1,27 @@
+// 0x0051c5b0: function not yet identified
+//
+// Body: 22 bytes (frozen inventory bound).
+// Referenced from 1 site (data).
+// Ghidra prototype: void FUN_0051c5b0(void)
+//
+// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
+// rename and retype as the purpose becomes known.
+//
+// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
+// delete this line when editing it by hand.
+#include "shared/ghidra_types.hpp"
+
+namespace seed_0051c5b0 {
+
+extern void  FUN_006f64b0(void);
+extern "C" undefined4 DAT_00a3d298;
+
+void __stdcall FUN_0051c5b0(int unused_0)
+{
+    if ((DAT_00a3d298 != 0) && (DAT_00a3d298 != 5)) {
+        FUN_006f64b0();
+    }
+    return;
+}
+
+}  // namespace seed_0051c5b0

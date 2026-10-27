@@ -1,0 +1,15 @@
+#include "shared/empty_word_vector_views.hpp"
+
+extern "C" unsigned char empty_vector_dispatch_004fa630[];
+
+// ECX receiver, no stack arguments; VC6 constructor EAX self return is hypothesized.
+// Ordered writes from the original; base tail padding is deliberately untouched.
+EmptyWordVector_004fa630::EmptyWordVector_004fa630() {
+    storage = 0;
+    capacity = 0;
+    unknown_0x0c = 1;
+    owns_storage = 0;
+    unknown_0x14 = 10;
+    unknown_0x10 = 0;
+    dispatch_table = empty_vector_dispatch_004fa630;
+}

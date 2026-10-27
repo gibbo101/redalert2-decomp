@@ -1,0 +1,37 @@
+// Original region: 0x004fae60 (93 body bytes, 3 independently frozen NOP bytes).
+// Exact target SHA256: e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f.
+// Purpose: initialize an inferred four-byte-element storage wrapper.
+// Class/API identity and the three unknown field purposes remain unresolved.
+
+extern "C" void* __cdecl allocate_storage_004fae60(unsigned int byte_count);
+extern "C" unsigned char base_dispatch_004fae60[];
+extern "C" unsigned char derived_dispatch_004fae60[];
+
+#include "shared/word_storage_layout.hpp"
+
+WordStorage_004fae60* WordStorage_004fae60::initialize(
+    unsigned int requested_capacity,
+    unsigned int* supplied_storage)
+{
+    storage = 0;
+    capacity = requested_capacity;
+    unknown_0x0c = 1;
+    owns_storage = 0;
+    dispatch_table = base_dispatch_004fae60;
+
+    // A zero capacity ignores even a nonnull supplied pointer.
+    if (requested_capacity != 0) {
+        if (supplied_storage != 0) {
+            storage = supplied_storage;
+        } else {
+            // Preserve 32-bit wrapping and ownership even on a null result.
+            storage = (unsigned int*)allocate_storage_004fae60(requested_capacity << 2);
+            owns_storage = 1;
+        }
+    }
+
+    dispatch_table = derived_dispatch_004fae60;
+    unknown_0x14 = 10;
+    unknown_0x10 = 0;
+    return this;
+}

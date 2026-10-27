@@ -1,0 +1,20 @@
+#include "shared/word_sequence_views.hpp"
+
+// Original VA @ADDRESS@, target @TARGET_HASH@.
+// Return the unsigned wrapped address-minus-base shifted right by @SHIFT@ when
+// the raw gate byte is nonzero; otherwise return zero. No alignment/bounds check.
+// Concrete class, gate purpose and address-space identity remain unknown.
+class @OWNER@ {
+    GuardedAddressOffsetView32 view;
+
+public:
+    unsigned int @FUNCTION_NAME@(unsigned int address_word) const;
+};
+
+unsigned int @OWNER@::@FUNCTION_NAME@(unsigned int address_word) const
+{
+    if (!view.offset_gate) {
+        return 0;
+    }
+    return (address_word - view.base_address_word) >> @SHIFT@;
+}

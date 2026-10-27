@@ -1,0 +1,153 @@
+{
+  "schema": "ra2-readable-connected-family-plan-v1",
+  "target": {
+    "sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+    "size": 4485392
+  },
+  "shared_headers": [
+    {
+      "path": "src/shared/empty_word_vector_views.hpp",
+      "sha256": "99666a0ded233e40fc91cf24a9b00e5a830f8add6a7b3cd77981ca7749224572"
+    },
+    {
+      "path": "src/shared/word_storage_layout.hpp",
+      "sha256": "bce4613e4eefa003a73849ba0963805a989b5499c34dfe53b3fa268392dd2dda"
+    }
+  ],
+  "evidence_sha256": {
+    "original_facts": "e295814c012502cb5b282a3e08ed4cfdde432111167c085402aa4769881c7b3a",
+    "peer_source_review": "098ddd7e44328aec0dc5a707732bf6af081f413abdac5bdc87dee958c69d240c"
+  },
+  "regions": [
+    {
+      "entry": 5219888,
+      "body_bytes": 34,
+      "body_sha256": "750dc2c3070d6c41f89bdb157766407365c20630097334cdf1c4247e22988f4e",
+      "region_bytes": 48,
+      "region_sha256": "a111da240a688a5b88dc12ce6e3805db5fb33800f4de39f4fee5dbde3bb30f29",
+      "proposed_source": "src/recovered/word_storage/EmptyWordVector_004fa630.cpp",
+      "source_sha256": "072e4856e6c7d247054785ad4620b2296be9bc1428ffbbc31f6fb648a589f2f2",
+      "symbol_prefix": "??0EmptyWordVector_004fa630@@",
+      "references": {
+        "_empty_vector_dispatch_004fa630": 8007864
+      },
+      "template": "EmptyWordVector_004fa630.cpp.in"
+    },
+    {
+      "entry": 6630000,
+      "body_bytes": 34,
+      "body_sha256": "b052616f0739efd19d26365ec20437f75ea66286db7703df46c857652abdc769",
+      "region_bytes": 48,
+      "region_sha256": "9cfc9adbaddbb9572dc0b186dce41a964ca1ee42c23d440c433cb7ca711222d1",
+      "proposed_source": "src/recovered/word_storage/EmptyWordVector_00652a70.cpp",
+      "source_sha256": "ebf12097695af89fc53f0e36903416b68fd982061c051437b1cf697956ff85cc",
+      "symbol_prefix": "??0EmptyWordVector_00652a70@@",
+      "references": {
+        "_empty_vector_dispatch_00652a70": 8032504
+      },
+      "template": "EmptyWordVector_00652a70.cpp.in"
+    },
+    {
+      "entry": 6630224,
+      "body_bytes": 34,
+      "body_sha256": "55b001f888372ea32b842db6e7d3030069124a26cb3b3a6fddb2e3656043cece",
+      "region_bytes": 48,
+      "region_sha256": "3cca7194f36db2783a19fdaf7d2d4d03463564240cb138cb520cb8b95c60717f",
+      "proposed_source": "src/recovered/word_storage/EmptyWordVector_00652b50.cpp",
+      "source_sha256": "394ffe146cc6f1b0e85d331ebe26b6702e433d28a41c14c8fc5da6c6418e9793",
+      "symbol_prefix": "??0EmptyWordVector_00652b50@@",
+      "references": {
+        "_empty_vector_dispatch_00652b50": 8010556
+      },
+      "template": "EmptyWordVector_00652b50.cpp.in"
+    },
+    {
+      "entry": 6630352,
+      "body_bytes": 34,
+      "body_sha256": "41c4403a820c42e13a716d389087072e978a0f8fbfbde5b3b2522bdbb713c57a",
+      "region_bytes": 48,
+      "region_sha256": "a3adea7c51165aff3d901f38e62ed8ec939d02defee370bc33b310503e011460",
+      "proposed_source": "src/recovered/word_storage/EmptyWordVector_00652bd0.cpp",
+      "source_sha256": "ba1fb9107e56f8efd5f670fc363fb09574fb48f37e9d5ec323c762ecf6bfba7a",
+      "symbol_prefix": "??0EmptyWordVector_00652bd0@@",
+      "references": {
+        "_empty_vector_dispatch_00652bd0": 7985652
+      },
+      "template": "EmptyWordVector_00652bd0.cpp.in"
+    },
+    {
+      "entry": 6630480,
+      "body_bytes": 34,
+      "body_sha256": "6a6317cb775a0bfcda9e32ef772bce93e50ba234dafeea024067f9bd1ae22d88",
+      "region_bytes": 48,
+      "region_sha256": "68a90d035ed339aa7b03c35d9b235d4e856ac34a7b7227e1c1572dd27f9bfe48",
+      "proposed_source": "src/recovered/word_storage/EmptyWordVector_00652c50.cpp",
+      "source_sha256": "8a4779ff589cf1c8db9b92614b1f4893541cd2843093ec4ee245a7f1e6289186",
+      "symbol_prefix": "??0EmptyWordVector_00652c50@@",
+      "references": {
+        "_empty_vector_dispatch_00652c50": 8032472
+      },
+      "template": "EmptyWordVector_00652c50.cpp.in"
+    },
+    {
+      "entry": 6630848,
+      "body_bytes": 34,
+      "body_sha256": "c256624c0ec17b9bb57c2772a514e8a3d6aad4a2d9c8b6d1e241addb2a235573",
+      "region_bytes": 48,
+      "region_sha256": "2814f153f881f9820812ea55332e0ed25860ec081177c0451fda8ae92fa5dc8a",
+      "proposed_source": "src/recovered/word_storage/EmptyWordVector_00652dc0.cpp",
+      "source_sha256": "aacfac140ba7c0bf83942ab6d92764fc5368962a68c46adfd883998794480b90",
+      "symbol_prefix": "??0EmptyWordVector_00652dc0@@",
+      "references": {
+        "_empty_vector_dispatch_00652dc0": 8007896
+      },
+      "template": "EmptyWordVector_00652dc0.cpp.in"
+    },
+    {
+      "entry": 6631056,
+      "body_bytes": 34,
+      "body_sha256": "c90dcee3bd187423b02ffa513cd03a260afee2d317fd0b9d89628b8812b6346a",
+      "region_bytes": 48,
+      "region_sha256": "7c769b5af3d05572ccd27d5210208a0b67e0ed015a3ba164eeacc168b6cba277",
+      "proposed_source": "src/recovered/word_storage/EmptyWordVector_00652e90.cpp",
+      "source_sha256": "4e6781d52aa2d6367e60a1015cc92d108807f946f51c526f585e577bb367219b",
+      "symbol_prefix": "??0EmptyWordVector_00652e90@@",
+      "references": {
+        "_empty_vector_dispatch_00652e90": 8007928
+      },
+      "template": "EmptyWordVector_00652e90.cpp.in"
+    },
+    {
+      "entry": 6631184,
+      "body_bytes": 34,
+      "body_sha256": "21bd3166772b104c3c920443374c708e52815d262d9f7ceace96e31d1844be35",
+      "region_bytes": 48,
+      "region_sha256": "ff5436011181d84fd73cdb71093eb08683e119104ff6c64cd49d93591519095d",
+      "proposed_source": "src/recovered/word_storage/EmptyWordVector_00652f10.cpp",
+      "source_sha256": "2e6b8d746b919424726774f1915d26a1426bcd831940a01e947c72f52ce065cf",
+      "symbol_prefix": "??0EmptyWordVector_00652f10@@",
+      "references": {
+        "_empty_vector_dispatch_00652f10": 8032440
+      },
+      "template": "EmptyWordVector_00652f10.cpp.in"
+    },
+    {
+      "entry": 7206848,
+      "body_bytes": 34,
+      "body_sha256": "92b6d56817d1333af25d40bcfa90acd13183670db0475c14d8035ee60181566f",
+      "region_bytes": 48,
+      "region_sha256": "63dedf7d5b4c516b2ea554b16223aa0a6847e989850bfb853ee09c2cf6b31183",
+      "proposed_source": "src/recovered/word_storage/EmptyWordVector_006df7c0.cpp",
+      "source_sha256": "65dac94875301759b73d7c3bd76d3dff676ad070832a26e5bf6977f1d98b93f4",
+      "symbol_prefix": "??0EmptyWordVector_006df7c0@@",
+      "references": {
+        "_empty_vector_dispatch_006df7c0": 8048964
+      },
+      "template": "EmptyWordVector_006df7c0.cpp.in"
+    }
+  ],
+  "limits": [
+    "Accepted9 only, held58dc70 entirely excluded.",
+    "Existing generic generator; manual canonical sources remain authoritative; original facts retain private evidence."
+  ]
+}

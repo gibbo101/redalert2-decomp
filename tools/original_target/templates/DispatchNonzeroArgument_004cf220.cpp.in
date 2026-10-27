@@ -1,0 +1,18 @@
+// Original 0x004cf220: DispatchNonzeroArgument; concrete class and flag identity remain unknown.
+// Preserve observed writes and dynamic dispatch; target implementations remain separate.
+#include "shared/message_gadget_layout.hpp"
+
+int GadgetState_004cefe0::DispatchNonzeroArgument_004cf220(
+    unsigned int argument, unsigned int unused)
+{
+    if (argument != 0) {
+        unsigned char* saved_dispatch = dispatch_table;
+        dirty = 1;
+        typedef void (GadgetState_004cefe0::*DispatchArgument)(unsigned int);
+        typedef char DispatchArgument_size_check[(sizeof(DispatchArgument) == 4) ? 1 : -1];
+        DispatchArgument dispatch_argument = *reinterpret_cast<DispatchArgument*>(saved_dispatch + 0x78);
+        (this->*dispatch_argument)(argument);
+        return 1;
+    }
+    return 0;
+}

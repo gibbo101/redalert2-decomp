@@ -1,0 +1,178 @@
+{
+  "schema": "bounded-com-collection-quality-plan-v1",
+  "baseline_commit": "d190902d63446ff9ba2d5b06daf8b31ea67c45f4",
+  "target_sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+  "catalog_sha256": "e43e0692b2eef17f401892a5ae6868a40abd36dd2208e48a16c809af887d3de8",
+  "regions": [
+    {
+      "entry": 6652096,
+      "source": "src/recovered/persistence/SavePersistableCollection_006580c0.cpp",
+      "source_sha256": "0f602c30ec0050db7cce9985e56f8be8e0035d4a4f3df6fd28f5b01ca87f10d1"
+    },
+    {
+      "entry": 6652224,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658140.cpp",
+      "source_sha256": "f362e4c6acfba094740ccc855eee4bcd375db9a6ef702a8e17ac66359d0de1b1"
+    },
+    {
+      "entry": 6652352,
+      "source": "src/recovered/persistence/SavePersistableCollection_006581c0.cpp",
+      "source_sha256": "b69966207eb73bccb206e013a9b5aa28e17eeedb73e4173fa505f5763a1fc975"
+    },
+    {
+      "entry": 6652480,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658240.cpp",
+      "source_sha256": "fb48c196d1090810b7f812ec2368a1a1921d537d5f29cb37df52f6bd3ab395b1"
+    },
+    {
+      "entry": 6652608,
+      "source": "src/recovered/persistence/SavePersistableCollection_006582c0.cpp",
+      "source_sha256": "63c47bdd9217088bf0ee1c9361a48f15953e23e45e76d396985404b4c855c15c"
+    },
+    {
+      "entry": 6652736,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658340.cpp",
+      "source_sha256": "d7db4c9aaaa969524d240872fcb98e8109742a79e5ac026d5e98d8e2ccabbcf7"
+    },
+    {
+      "entry": 6652864,
+      "source": "src/recovered/persistence/SavePersistableCollection_006583c0.cpp",
+      "source_sha256": "235cb3cea623405279d70b6f1cbea8df8d22acbca376457a0501c7688a1c0835"
+    },
+    {
+      "entry": 6652992,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658440.cpp",
+      "source_sha256": "834f3ef711ff8d12f4630acb609768f77dbd7c0a211087cfbe116893a5de98cc"
+    },
+    {
+      "entry": 6653120,
+      "source": "src/recovered/persistence/SavePersistableCollection_006584c0.cpp",
+      "source_sha256": "07a7a67dc6e9f8ffc7a8c23ecd997969a4efb6e60d9460958604b8991df2b3ad"
+    },
+    {
+      "entry": 6653248,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658540.cpp",
+      "source_sha256": "a298de5cea9523fd354e2038358fe5be044578e4c5bb505bfde5d91e14015bc6"
+    },
+    {
+      "entry": 6653376,
+      "source": "src/recovered/persistence/SavePersistableCollection_006585c0.cpp",
+      "source_sha256": "52d1e33d1c84bd811c81f1653e03d6eb7fe5ad220382bdb8a80fb63b7b4641c7"
+    },
+    {
+      "entry": 6653504,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658640.cpp",
+      "source_sha256": "e6f168530e9cb5677091e521ddabc2fe7788b84a587ceab2faef3e9c21c2ff8b"
+    },
+    {
+      "entry": 6653632,
+      "source": "src/recovered/persistence/SavePersistableCollection_006586c0.cpp",
+      "source_sha256": "2f5e1fba8c5186490d4fdcd7ba52e37b4ab62ed98fee79cabefeb43d1e878d2a"
+    },
+    {
+      "entry": 6653760,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658740.cpp",
+      "source_sha256": "04bc9bf14dd6e20ef738c222b0c43b267883a5b46b5df7c0a51c06e3a2e46399"
+    },
+    {
+      "entry": 6653888,
+      "source": "src/recovered/persistence/SavePersistableCollection_006587c0.cpp",
+      "source_sha256": "ea5d225881df0d85affa668106051a439ad1daf91768840c8ab09477430416c9"
+    },
+    {
+      "entry": 6654016,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658840.cpp",
+      "source_sha256": "4d43701cd91b17d5bf2dbd388822328be88a4fb8f4b6dc3580640348d54df97a"
+    },
+    {
+      "entry": 6654144,
+      "source": "src/recovered/persistence/SavePersistableCollection_006588c0.cpp",
+      "source_sha256": "b3cf1e286aabdd23a0af940d4041e06860b35df91cb6f042ecefea20de4cfe15"
+    },
+    {
+      "entry": 6654272,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658940.cpp",
+      "source_sha256": "e422059522990adf41c387fd9c9577fa014e0e4e3189de67a82ca7dcf10629aa"
+    },
+    {
+      "entry": 6654400,
+      "source": "src/recovered/persistence/SavePersistableCollection_006589c0.cpp",
+      "source_sha256": "d4ed1b8f0e4c9765d9df471a962892e0bac1cd8fb3336d4852296df1305cd76e"
+    },
+    {
+      "entry": 6654528,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658a40.cpp",
+      "source_sha256": "52f26c6103def56cd6f500e64ec20a5426ef98f9dcec4e41b030439b671a8117"
+    },
+    {
+      "entry": 6654656,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658ac0.cpp",
+      "source_sha256": "c8dad3f26dd10e9b4aa6c853e0beadbb35ca5bd17fe4f1a47220ff33c35bc058"
+    },
+    {
+      "entry": 6654784,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658b40.cpp",
+      "source_sha256": "278a83bca6f0e0f15b3f0e1bbbf8f3303d6808acd83c5ff646bbf8ca4f2e61de"
+    },
+    {
+      "entry": 6654912,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658bc0.cpp",
+      "source_sha256": "84c56ec116a1260ade5734ad41ce58547222dbc08cd89d25d2d4c6a322b3cc3a"
+    },
+    {
+      "entry": 6655040,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658c40.cpp",
+      "source_sha256": "433459c415bb097b8684cc706e055286bc3f158b4c37735b743c38f7a701cefe"
+    },
+    {
+      "entry": 6655168,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658cc0.cpp",
+      "source_sha256": "10666a2689e5c71ca8a294cff4e3b87c214df1f9027269a206c6a5565c031ea0"
+    },
+    {
+      "entry": 6655296,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658d40.cpp",
+      "source_sha256": "9deff3b1f7e6ef7bbbf652d93083903c32d166ff666d785483e1a8c732278172"
+    },
+    {
+      "entry": 6655424,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658dc0.cpp",
+      "source_sha256": "8c9fb47c60283d363b266cf2dfbf7c8aa47cd6f826da515c0ce7c818896e56e2"
+    },
+    {
+      "entry": 6655552,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658e40.cpp",
+      "source_sha256": "331b0b3bdf4b28a6aedb88a454282686272cbf78e058e40ee808e532595a5e40"
+    },
+    {
+      "entry": 6655680,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658ec0.cpp",
+      "source_sha256": "54fdb8ee51de7965541d950fcba5d5f28e6135c82abd7620679bce4bd96e6b7a"
+    },
+    {
+      "entry": 6655808,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658f40.cpp",
+      "source_sha256": "d5a0f51416464d32981e089a931f6ff5f4df78d47429eb4a66330cfcda32dcb5"
+    },
+    {
+      "entry": 6655936,
+      "source": "src/recovered/persistence/SavePersistableCollection_00658fc0.cpp",
+      "source_sha256": "f8f9a30e41757689211823b113933d67885298afb3649e332d5ba36f2b2e8ef5"
+    },
+    {
+      "entry": 6656064,
+      "source": "src/recovered/persistence/SavePersistableCollection_00659040.cpp",
+      "source_sha256": "a396e95f76e3abce63e15e2100785be472ecb15eee607749694f1aabc0cc5ccf"
+    },
+    {
+      "entry": 6656192,
+      "source": "src/recovered/persistence/SavePersistableCollection_006590c0.cpp",
+      "source_sha256": "bdc70749565212e0ad35c72c11f1b0f1580f387c0ed67a2c84163d4c9383d0e2"
+    },
+    {
+      "entry": 6656320,
+      "source": "src/recovered/persistence/SavePersistableCollection_00659140.cpp",
+      "source_sha256": "7a265a1a4395d4b129b37129644bc3614e0c9554707fe856e2cdc8a9ef94afe2"
+    }
+  ]
+}

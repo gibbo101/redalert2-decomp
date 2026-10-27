@@ -1,0 +1,122 @@
+{
+  "executable": "/path/to/game.exe",
+  "compiler_directory": "/path/to/compiler",
+  "linker": "/path/to/linker/LINK.EXE",
+  "wine": "/path/to/CrossOver/bin/wine",
+  "bottle": "/path/to/existing/bottle",
+  "lock": "/path/to/shared/compiler.lock",
+  "populations": {
+    "population-01": {
+      "inventory": "/path/to/population-01/functions.jsonl",
+      "gaps": "/path/to/population-01/unassigned-executable.jsonl"
+    },
+    "population-02": {
+      "inventory": "/path/to/population-02/functions.jsonl",
+      "gaps": "/path/to/population-02/unassigned-executable.jsonl"
+    },
+    "population-03": {
+      "inventory": "/path/to/population-03/functions.jsonl",
+      "gaps": "/path/to/population-03/unassigned-executable.jsonl"
+    },
+    "population-04": {
+      "inventory": "/path/to/population-04/functions.jsonl",
+      "gaps": "/path/to/population-04/unassigned-executable.jsonl"
+    },
+    "population-05": {
+      "inventory": "/path/to/population-05/functions.jsonl",
+      "gaps": "/path/to/population-05/unassigned-executable.jsonl"
+    },
+    "population-06": {
+      "inventory": "/path/to/population-06/functions.jsonl",
+      "gaps": "/path/to/population-06/unassigned-executable.jsonl"
+    },
+    "population-07": {
+      "inventory": "/path/to/population-07/functions.jsonl",
+      "gaps": "/path/to/population-07/unassigned-executable.jsonl"
+    },
+    "population-08": {
+      "inventory": "/path/to/population-08/functions.jsonl",
+      "gaps": "/path/to/population-08/unassigned-executable.jsonl"
+    },
+    "population-09": {
+      "inventory": "/path/to/population-09/functions.jsonl",
+      "gaps": "/path/to/population-09/unassigned-executable.jsonl"
+    },
+    "population-10": {
+      "inventory": "/path/to/population-10/functions.jsonl",
+      "gaps": "/path/to/population-10/unassigned-executable.jsonl"
+    },
+    "population-11": {
+      "inventory": "/path/to/population-11/functions.jsonl",
+      "gaps": "/path/to/population-11/unassigned-executable.jsonl"
+    },
+    "population-12": {
+      "inventory": "/path/to/population-12/functions.jsonl",
+      "gaps": "/path/to/population-12/unassigned-executable.jsonl"
+    },
+    "population-13": {
+      "inventory": "/path/to/population-13/functions.jsonl",
+      "gaps": "/path/to/population-13/unassigned-executable.jsonl"
+    },
+    "population-14": {
+      "inventory": "/path/to/population-14/functions.jsonl",
+      "gaps": "/path/to/population-14/unassigned-executable.jsonl"
+    },
+    "population-15": {
+      "inventory": "/path/to/population-15/functions.jsonl",
+      "gaps": "/path/to/population-15/unassigned-executable.jsonl"
+    },
+    "population-16": {
+      "inventory": "/path/to/population-16/functions.jsonl",
+      "gaps": "/path/to/population-16/unassigned-executable.jsonl"
+    },
+    "population-17": {
+      "inventory": "/path/to/population-17/functions.jsonl",
+      "gaps": "/path/to/population-17/unassigned-executable.jsonl"
+    },
+    "population-18": {
+      "inventory": "/path/to/population-18/functions.jsonl",
+      "gaps": "/path/to/population-18/unassigned-executable.jsonl"
+    },
+    "population-19": {
+      "inventory": "/path/to/population-19/functions.jsonl",
+      "gaps": "/path/to/population-19/unassigned-executable.jsonl"
+    },
+    "population-20": {
+      "inventory": "/path/to/population-20/functions.jsonl",
+      "gaps": "/path/to/population-20/unassigned-executable.jsonl"
+    },
+    "population-21": {
+      "inventory": "/path/to/population-21/functions.jsonl",
+      "gaps": "/path/to/population-21/unassigned-executable.jsonl"
+    },
+    "population-22": {
+      "inventory": "/path/to/population-22/functions.jsonl",
+      "gaps": "/path/to/population-22/unassigned-executable.jsonl"
+    },
+    "population-23": {
+      "inventory": "/path/to/population-23/functions.jsonl",
+      "gaps": "/path/to/population-23/unassigned-executable.jsonl"
+    },
+    "population-24": {
+      "inventory": "/path/to/population-24/functions.jsonl",
+      "gaps": "/path/to/population-24/unassigned-executable.jsonl"
+    },
+    "population-25": {
+      "inventory": "/path/to/population-25/functions.jsonl",
+      "gaps": "/path/to/population-25/unassigned-executable.jsonl"
+    },
+    "population-26": {
+      "inventory": "/path/to/population-26/functions.jsonl",
+      "gaps": "/path/to/population-26/unassigned-executable.jsonl"
+    },
+    "population-27": {
+      "inventory": "/path/to/population-27/functions.jsonl",
+      "gaps": "/path/to/population-27/unassigned-executable.jsonl"
+    },
+    "population-28": {
+      "inventory": "/path/to/population-28/functions.jsonl",
+      "gaps": "/path/to/population-28/unassigned-executable.jsonl"
+    }
+  }
+}

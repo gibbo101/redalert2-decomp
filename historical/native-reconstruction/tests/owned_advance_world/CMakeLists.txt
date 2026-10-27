@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.20)
+project(owned_advance_world_checks LANGUAGES CXX)
+find_package(OpenSSL REQUIRED COMPONENTS Crypto)
+set(RA2_BUILD_SDL OFF CACHE BOOL "Build SDL" FORCE)
+set(BUILD_TESTING OFF CACHE BOOL "Build legacy tests" FORCE)
+add_subdirectory(../.. engine EXCLUDE_FROM_ALL)
+enable_testing()
+# Reuse the authored ownership/drawing fixture; the new policy is an explicit
+# command-line opt-in. Application and legacy callers retain guarded inputs.
+add_executable(owned-advance-world-vectors ../owned_command_world_vectors.cpp)
+target_link_libraries(owned-advance-world-vectors PRIVATE ra2_scenarios OpenSSL::Crypto)
+target_compile_features(owned-advance-world-vectors PRIVATE cxx_std_20)
+if(RA2_SANITIZE AND CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+  target_compile_options(owned-advance-world-vectors PRIVATE -fsanitize=address,undefined -fno-omit-frame-pointer)
+  target_link_options(owned-advance-world-vectors PRIVATE -fsanitize=address,undefined)
+endif()

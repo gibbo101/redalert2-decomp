@@ -1,0 +1,34 @@
+// Header-static dynamic initializers of the unit at 0x006873D0:  the
+// shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
+// (0x006873D0-0x006875B6); the other
+// drafts of this plan are emitted by these includes.
+#include "shared/unknown_geometry.hpp"
+#include "shared/unknown_static_rect.hpp"
+// @ref ?unknown_math_4ba520@@YANN@Z=004ba520
+// @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
+// @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410
+// @ref __CIpow=007821b0
+// @ref __ftol=0077f110
+// @ref __real@8@3ff78000000000000000=0079a730
+// @ref __real@8@3ffe8000000000000000=0079a728
+// @ref __real@8@3fff8000000000000000=0079a708
+// @ref __real@8@40008000000000000000=0079a6f8
+// @ref __real@8@4004b400000000000000=0079a710
+// @ref __real@8@4004f000000000000000=0079a718
+// @ref __real@8@4005b400000000000000=0079a720
+// @ref __real@8@40078000000000000000=0079a700
+// @ref _unknown_geometry_angle45=00abcf00
+// @ref _unknown_geometry_angle60=00abced8
+// @ref _unknown_geometry_angle90=00abceb0
+// @ref _unknown_geometry_b=00abcf18
+// @ref _unknown_geometry_c=00abcf08
+// @ref _unknown_geometry_deg_to_rad=007ab550
+// @ref _unknown_geometry_diagonal=00abced0
+// @ref _unknown_geometry_g=00abcf20
+// @ref _unknown_geometry_h=00abcee0
+// @ref _unknown_geometry_i=00abcef8
+// @ref _unknown_geometry_j=00abcf10
+// @ref _unknown_geometry_k=00abcec8
+// @ref _unknown_geometry_l=00abcee8
+// @ref _unknown_geometry_sixty=007ab548
+// @ref _unknown_static_rect=00abceb8

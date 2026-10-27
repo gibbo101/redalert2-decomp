@@ -1,0 +1,10 @@
+// Observed connected message/gadget source model v5. Original class names unknown.
+// Complete original bounds and reference targets remain frozen independently.
+#include "shared/message_gadget_layout.hpp"
+
+extern "C" const void* focused_message_node_004cf630;
+
+bool MessageNode_006f15c0::IsFocusedMessageNode_004cf630() const
+{
+    return this == focused_message_node_004cf630;
+}

@@ -1,0 +1,26 @@
+{
+  "status": "independently-ready-original-helper",
+  "entry": 4239056,
+  "body_bytes": 42,
+  "padding_bytes": 6,
+  "region_sha256": "939c9ff36e77a8015a5dfed0b0aa9e0b09def222bf50f83779e594ac4adbafec",
+  "target_sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+  "readiness_sha256": "7d29dc2b3980947083a2bad3718de64a9da242f4ab3a8907225253acc61dae4f",
+  "facts_sha256": "140ba367477971c6cab1fad06d21dca27155eff87d47100c51bb16e250b85516",
+  "input_sha256": {
+    "private/original-target-20261020/inputs/game.exe": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+    "private/original-target-20261020/inventory/functions.jsonl": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "private/original-target-20261020/inventory/seeded-pass2/functions.jsonl": "a6e83d732959f1475aeb0c48bcfb990e9e75a3c13374eabebd19ad7f943521f1",
+    "private/original-target-20261020/inventory/unassigned-executable.jsonl": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
+    "private/original-target-20261020/inventory/symbols.jsonl": "c973a2545ea4bd7747817d1228cffb7892bd0bc5d03adecfbcfe2ed9bbc98d28",
+    "private/original-target-20261020/inventory/defined-data.jsonl": "6560299f8c90b6e27b4ca2a0371189cc0236b636bfa7ffc39ad672f5cb1eccc8",
+    "private/original-target-20261020/inventory/instructions.jsonl": "c6ed94e8a7118da64d0880f67800bb2022338a8f88ba79269585c04d4634541b",
+    "private/original-target-20261020/inventory/seeded-pass2/symbols.jsonl": "ade80ee01c4658b320da6b07437162dbb3caf159041a1e4bf796a26104779650",
+    "private/original-target-20261020/inventory/seeded-pass2/defined-data.jsonl": "7d178455f2943006c62e4a8fcac98093daf73d82bf9174f93818048d0c042b1f",
+    "private/original-target-20261020/inventory/seeded-pass2/instructions.jsonl": "c6fe63710f876c85bc9f3aa10d57947b08450dd2fa5d1fb856b4d3a29872300d"
+  },
+  "entryrefs_baseline": 82,
+  "followingrefs_baseline": 10,
+  "scope": "Independent original-only42body/full6NOP proof, both-pass known and whole-file raw reference exclusions; unknown computed references remain uncertain. Zero original source/library credit; independently peer reviewed.",
+  "peer_review_sha256": "0741b12faf7cc50367c8fac9b95efa593a960e844d9f1b7d7d90c1d641cdd341"
+}

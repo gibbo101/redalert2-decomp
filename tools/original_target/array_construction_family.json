@@ -1,0 +1,113 @@
+{
+  "schema": "ra2-readable-connected-family-plan-v1",
+  "target": {
+    "sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+    "size": 4485392
+  },
+  "shared_headers": [
+    {
+      "path": "src/shared/array_element_storage_views.hpp",
+      "sha256": "92e56de8462c60553a69ed28ef6459755efcca08e4630dd66ff1dfb9631d06a1"
+    }
+  ],
+  "evidence_sha256": {
+    "original_facts": "f86151ad567b72a8ebae9f0fd0d3a6a7379677b2a3a7714ed4cf3d745cafb69e",
+    "peer_source_review": "c16161469112f06c8da20bd6d3d3ee39cc5217e065ae7bd14783241655685ad4"
+  },
+  "regions": [
+    {
+      "entry": 4379808,
+      "body_bytes": 114,
+      "body_sha256": "51168101a38c3a7ce5708fe67bd5ebfcae9c3823082950ce43600b34b7c64ee8",
+      "region_bytes": 128,
+      "region_sha256": "33ecee64afa8c0e9b24cafdce17b09f64edc22036308afb4f6c869e164853676",
+      "proposed_source": "src/recovered/containers/ConstructElementStorage_0042d4a0.cpp",
+      "source_sha256": "24b7430b0a16f63f71b80764e7c3da684a1c05b6d98760fb44369368197c33ba",
+      "symbol_prefix": "??0ElementStorage_0042d4a0@@",
+      "references": {
+        "_array_storage_dispatch_0042d4a0": 7980512,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructElementStorage_0042d4a0.cpp.in"
+    },
+    {
+      "entry": 5688784,
+      "body_bytes": 114,
+      "body_sha256": "88895735daaa1e6a0600371cea06098509650a0fbbfde6fcdfdd539e8f5e2df1",
+      "region_bytes": 128,
+      "region_sha256": "efda921ea699c7cd76c677f2d0777b24b138f0877d985ddb82addffb2b4dcedc",
+      "proposed_source": "src/recovered/containers/ConstructElementStorage_0056cdd0.cpp",
+      "source_sha256": "a387118c23eee9efdb4b335f253b173897b6a08f3c1f4239423e99114c9cf792",
+      "symbol_prefix": "??0ElementStorage_0056cdd0@@",
+      "references": {
+        "_array_storage_dispatch_0056cdd0": 8018680,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructElementStorage_0056cdd0.cpp.in"
+    },
+    {
+      "entry": 6508688,
+      "body_bytes": 114,
+      "body_sha256": "5990f398b453564191cd70089c72640d969ff43fcf00fb67ba8a4314fee11029",
+      "region_bytes": 128,
+      "region_sha256": "e9f6d81681571ed1641707b19903075ec59766f4eecf682c84192f5aa3241ced",
+      "proposed_source": "src/recovered/containers/ConstructElementStorage_00635090.cpp",
+      "source_sha256": "ac378c3ac6775eaca2ff57058a2f74fe3b694e9fb25225e02d583a796a2962eb",
+      "symbol_prefix": "??0ElementStorage_00635090@@",
+      "references": {
+        "_array_storage_dispatch_00635090": 8024008,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructElementStorage_00635090.cpp.in"
+    },
+    {
+      "entry": 5213056,
+      "body_bytes": 147,
+      "body_sha256": "3c20dd5a34fce95bcbac5861b90e28db5e75c0f43f63acaf50c36c81f11a3437",
+      "region_bytes": 160,
+      "region_sha256": "0609c42167df3682409064144e6f95994969720778f766b93f133a8d761782fd",
+      "proposed_source": "src/recovered/containers/ConstructElementStorage_004f8b80.cpp",
+      "source_sha256": "678a3573bf483c98a9e1f042536af2fc56d9a6ef6eaf5109919aa42b7f8795d1",
+      "symbol_prefix": "??0ElementStorage_004f8b80@@",
+      "references": {
+        "_array_storage_dispatch_004f8b80": 8007332,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructElementStorage_004f8b80.cpp.in"
+    },
+    {
+      "entry": 4643984,
+      "body_bytes": 136,
+      "body_sha256": "3c561531c93784e5f981a19d439c3100eb206631d334b97042888f725df961ec",
+      "region_bytes": 144,
+      "region_sha256": "26e6eea73553a909b45d0b1864a2d027d5d20ef427985abf33ebb7f87cd4d889",
+      "proposed_source": "src/recovered/containers/ConstructElementStorage_0046dc90.cpp",
+      "source_sha256": "f66cf802f3e5234d2a79d623c843beb409a524cec4c28441ba2dc22fb5f96c1e",
+      "symbol_prefix": "??0ElementStorage_0046dc90@@",
+      "references": {
+        "_array_storage_dispatch_0046dc90": 7985748,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructElementStorage_0046dc90.cpp.in"
+    },
+    {
+      "entry": 6315424,
+      "body_bytes": 136,
+      "body_sha256": "9468b0c246e9e340690cd3f525d07d4eaf3d59f6f87cdb6628136fb7e76fbaf9",
+      "region_bytes": 144,
+      "region_sha256": "800c83fbd8195bb069f7856a34a3d89cd7e7f7dc214161c714b272dceeb5b345",
+      "proposed_source": "src/recovered/containers/ConstructElementStorage_00605da0.cpp",
+      "source_sha256": "c4ef5e7a7aa08a62bf215a985999e437f476b7c25693432b22a71fd9e60babc4",
+      "symbol_prefix": "??0ElementStorage_00605da0@@",
+      "references": {
+        "_array_storage_dispatch_00605da0": 8027128,
+        "??_U@YAPAXI@Z": 7872535
+      },
+      "template": "ConstructElementStorage_00605da0.cpp.in"
+    }
+  ],
+  "limits": [
+    "Candidate generation only; exact source matching and implicit compiler output accounting are separate.",
+    "Six distinct element/owner identities retained; shared observed prefix is not concrete game class identification."
+  ]
+}

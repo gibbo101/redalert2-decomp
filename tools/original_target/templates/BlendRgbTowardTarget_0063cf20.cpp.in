@@ -1,0 +1,14 @@
+// Original 0x0063cf20: complete134-byte body and10 independently frozen NOP bytes.
+// Exact target e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f.
+// FONT_TEXT_1006/FontText establishes roles for its actual text color caller.
+// This source additionally follows original sequential accesses for aliasing.
+#include "shared/font_message_views.hpp"
+
+void RgbTriplet::BlendRgbTowardTarget_0063cf20(
+    unsigned int factor, const RgbTriplet& target)
+{
+    int weight = (int)(factor & 255u);
+    red = (unsigned char)(red + ((int)target.red - (int)red) * weight / 256);
+    green = (unsigned char)(green + ((int)target.green - (int)green) * weight / 256);
+    blue = (unsigned char)(blue + ((int)target.blue - (int)blue) * weight / 256);
+}

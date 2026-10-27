@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.20)
+project(unit_destination_checks LANGUAGES CXX)
+option(RA2_SANITIZE "Enable address and undefined behavior sanitizers" OFF)
+add_executable(unit-destination-vectors ../unit_destination_vectors.cpp
+ ../../src/sim/UnitDiscovery.cpp ../../src/assets/MapFloorHeight.cpp
+ ../../src/assets/MapCoordinateCell.cpp)
+target_include_directories(unit-destination-vectors PRIVATE ../../src)
+target_compile_features(unit-destination-vectors PRIVATE cxx_std_20)
+set_target_properties(unit-destination-vectors PROPERTIES CXX_EXTENSIONS OFF)
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+ target_compile_options(unit-destination-vectors PRIVATE -Wall -Wextra -Wpedantic -ffp-contract=off -frounding-math)
+ if(RA2_SANITIZE)
+  target_compile_options(unit-destination-vectors PRIVATE -fsanitize=address,undefined -fno-omit-frame-pointer)
+  target_link_options(unit-destination-vectors PRIVATE -fsanitize=address,undefined)
+ endif()
+elseif(MSVC)
+ target_compile_options(unit-destination-vectors PRIVATE /W4 /fp:strict)
+endif()

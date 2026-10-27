@@ -1,0 +1,641 @@
+{
+  "schema": "bounded-copy-word-storage-shared-v3",
+  "target": {
+    "size": 4485392,
+    "sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f"
+  },
+  "regions": [
+    {
+      "entry": 4639728,
+      "method": "0046cbf0",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_0046cbf0",
+      "source_sha256": "4568c14075b934c495622f997f26e0cbea8e09111cc4697190a833d9bc65a86b",
+      "symbol_prefix": "?CopyWordStorage_0046cbf0@WordStorageCopy_0046cbf0@@",
+      "references": {
+        "_base_dispatch_0046cbf0": 7985620,
+        "_derived_dispatch_0046cbf0": 7985652,
+        "_clear_storage_slot_0046cbf0": 7985632,
+        "_allocate_words_0046cbf0": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "3d89e819de3c70e6e6e2ec50bcbd07347a8a359a5c783121be6bd9b00d8142d5",
+      "region_bytes": 144,
+      "region_sha256": "27943994b214701bd9b4574c9276974a95d281a8e9839fdddfb911e73eafb86e",
+      "source": "src/recovered/word_storage/CopyWordStorage_0046cbf0.cpp",
+      "owner_class": "WordStorageCopy_0046cbf0"
+    },
+    {
+      "entry": 4640288,
+      "method": "0046ce20",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_0046ce20",
+      "source_sha256": "5528ec451078615c3c1cd9a793a5ed4bb213f7aa53bc1426f96aa5c29d2ebaa7",
+      "symbol_prefix": "?CopyWordStorage_0046ce20@WordStorage_0046d1f0@@",
+      "references": {
+        "_base_dispatch_0046ce20": 7985620,
+        "_derived_dispatch_0046ce20": 7985812,
+        "_clear_storage_slot_0046ce20": 7985632,
+        "_allocate_words_0046ce20": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "3523c1b8c4534461fe26431bb75af776dfad008fe244da866f727fcffc7dc0d6",
+      "region_bytes": 144,
+      "region_sha256": "fa0aeeadee807ae5bd9ef0243d3853387eeae958ac7135347a2a5f700e3155dd",
+      "source": "src/recovered/word_storage/CopyWordStorage_0046ce20.cpp",
+      "owner_class": "WordStorage_0046d1f0"
+    },
+    {
+      "entry": 5205808,
+      "method": "004f6f30",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_004f6f30",
+      "source_sha256": "7485597252af12225993c674132eb71ec961293688560a08ccb0e22dc8be2112",
+      "symbol_prefix": "?CopyWordStorage_004f6f30@WordStorage_006c03e0@@",
+      "references": {
+        "_base_dispatch_004f6f30": 8007396,
+        "_derived_dispatch_004f6f30": 8007660,
+        "_clear_storage_slot_004f6f30": 8007408,
+        "_allocate_words_004f6f30": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "8ec536a26b75087aac88725bedb78d72a32fa296a5ad14ea6869719f5873d4ae",
+      "region_bytes": 144,
+      "region_sha256": "2666044c8a2749ba9431a538a9a127a31a4582580bd45b6beb3c8af2569165c2",
+      "source": "src/recovered/word_storage/CopyWordStorage_004f6f30.cpp",
+      "owner_class": "WordStorage_006c03e0"
+    },
+    {
+      "entry": 5223440,
+      "method": "004fb410",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_004fb410",
+      "source_sha256": "3ac937655059aefb811851eac6d04200f2e9bcf06ef75f99a6d5ae78368413a4",
+      "symbol_prefix": "?CopyWordStorage_004fb410@WordStorageCopy_004fb410@@",
+      "references": {
+        "_base_dispatch_004fb410": 8008024,
+        "_derived_dispatch_004fb410": 8007864,
+        "_clear_storage_slot_004fb410": 8008036,
+        "_allocate_words_004fb410": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "da4e5aac40f307055fdda9a78ade15b1284623ca38e1dbb9ce86e1b2295d0011",
+      "region_bytes": 144,
+      "region_sha256": "dfe476fcba78d34e63a915562e4692eac01de26e83cf5209094581c222b078ed",
+      "source": "src/recovered/word_storage/CopyWordStorage_004fb410.cpp",
+      "owner_class": "WordStorageCopy_004fb410"
+    },
+    {
+      "entry": 5223584,
+      "method": "004fb4a0",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_004fb4a0",
+      "source_sha256": "bee21b03c8ffbc0b06081a34cc0f9af408c554f44245bef7ea4d1def61a77b7e",
+      "symbol_prefix": "?CopyWordStorage_004fb4a0@WordStorage_004faa90@@",
+      "references": {
+        "_base_dispatch_004fb4a0": 8007960,
+        "_derived_dispatch_004fb4a0": 8008056,
+        "_clear_storage_slot_004fb4a0": 8007972,
+        "_allocate_words_004fb4a0": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "1109eedaf3d6288f0ba99d44b59760c3c568ff288ac7bbc8cddebc73cc1fc2c7",
+      "region_bytes": 144,
+      "region_sha256": "13a8a0ae63f1cea33d0930fcfbb46d0bb80dd72c2e03c379898d98a0095da77d",
+      "source": "src/recovered/word_storage/CopyWordStorage_004fb4a0.cpp",
+      "owner_class": "WordStorage_004faa90"
+    },
+    {
+      "entry": 5223728,
+      "method": "004fb530",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_004fb530",
+      "source_sha256": "08248f62399b2f773a8d25001c79dd6f9e074c84d081420e2025ba86238d5ad9",
+      "symbol_prefix": "?CopyWordStorage_004fb530@WordStorage_004fae60@@",
+      "references": {
+        "_base_dispatch_004fb530": 8007992,
+        "_derived_dispatch_004fb530": 8008088,
+        "_clear_storage_slot_004fb530": 8008004,
+        "_allocate_words_004fb530": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "3ed1cf27c7a157be7bc1bdfdef2c50f8c78853cc8c482a4daa205db1b0163d3d",
+      "region_bytes": 144,
+      "region_sha256": "258afabfb60ce91d0b411731a5435d4d16b1d9f148af36238213c265b0ea59ad",
+      "source": "src/recovered/word_storage/CopyWordStorage_004fb530.cpp",
+      "owner_class": "WordStorage_004fae60"
+    },
+    {
+      "entry": 5289936,
+      "method": "0050b7d0",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_0050b7d0",
+      "source_sha256": "a81b7c93828be9ed56ad3c9790bcab53d24f3f8b30d1ea2c05e32469b793db25",
+      "symbol_prefix": "?CopyWordStorage_0050b7d0@WordStorageCopy_0050b7d0@@",
+      "references": {
+        "_base_dispatch_0050b7d0": 8010588,
+        "_derived_dispatch_0050b7d0": 8010556,
+        "_clear_storage_slot_0050b7d0": 8010600,
+        "_allocate_words_0050b7d0": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "8f5ccf4cca7b60a43efb3b3200796a5c73ebfee3be031f8673a43d5885b6cfae",
+      "region_bytes": 144,
+      "region_sha256": "46842876732976f1c553528f6892c7e197030a1b1cece61f39d9cf0ad3b705bf",
+      "source": "src/recovered/word_storage/CopyWordStorage_0050b7d0.cpp",
+      "owner_class": "WordStorageCopy_0050b7d0"
+    },
+    {
+      "entry": 5828304,
+      "method": "0058eed0",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_0058eed0",
+      "source_sha256": "a2d138fb5ea061c504a77011bd8c67685070630391ae05bc5366d7565ad08bda",
+      "symbol_prefix": "?CopyWordStorage_0058eed0@WordStorageCopy_0058eed0@@",
+      "references": {
+        "_base_dispatch_0058eed0": 8007432,
+        "_derived_dispatch_0058eed0": 8019532,
+        "_clear_storage_slot_0058eed0": 8007444,
+        "_allocate_words_0058eed0": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "20f9b85c85897453bb782be17260356b752a9df4967148e980e0ac11b2f05cee",
+      "region_bytes": 144,
+      "region_sha256": "7e95de12698dc0a195d611c6bba53724d8a5f428b21a66a14f825c40180c81ea",
+      "source": "src/recovered/word_storage/CopyWordStorage_0058eed0.cpp",
+      "owner_class": "WordStorageCopy_0058eed0"
+    },
+    {
+      "entry": 5923536,
+      "method": "005a62d0",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_005a62d0",
+      "source_sha256": "c64c415d7c3127e9837d69578dd673b403ab6948c84c02d22c9f297db28bf185",
+      "symbol_prefix": "?CopyWordStorage_005a62d0@WordStorageCopy_005a62d0@@",
+      "references": {
+        "_base_dispatch_005a62d0": 8022212,
+        "_derived_dispatch_005a62d0": 8022244,
+        "_clear_storage_slot_005a62d0": 8022224,
+        "_allocate_words_005a62d0": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "e833669222b4eec6036efc4e6d0c5361bb37b54cac0e5e333a25c3bd07a2a366",
+      "region_bytes": 144,
+      "region_sha256": "705dea84094420344eae3be16744ba982dad372f13378a1f9eaa3731de197362",
+      "source": "src/recovered/word_storage/CopyWordStorage_005a62d0.cpp",
+      "owner_class": "WordStorageCopy_005a62d0"
+    },
+    {
+      "entry": 6636912,
+      "method": "00654570",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_00654570",
+      "source_sha256": "16e537cfed5f749beab36f88a8eece388037d2de9771c2c7d4c7bbb669bce81c",
+      "symbol_prefix": "?CopyWordStorage_00654570@WordStorageCopy_00654570@@",
+      "references": {
+        "_base_dispatch_00654570": 8032536,
+        "_derived_dispatch_00654570": 8032504,
+        "_clear_storage_slot_00654570": 8032548,
+        "_allocate_words_00654570": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "39e544d34f3a85209496d946327ae08599fdcd3e2f2689270db34f9c8cfbfddf",
+      "region_bytes": 144,
+      "region_sha256": "3bb4a3154378e2fb103d2a730e4a9fd6c28e981b8ace5f45a34a00141992a2da",
+      "source": "src/recovered/word_storage/CopyWordStorage_00654570.cpp",
+      "owner_class": "WordStorageCopy_00654570"
+    },
+    {
+      "entry": 6637056,
+      "method": "00654600",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_00654600",
+      "source_sha256": "4aa5d900d4738cc8f80c6698a7df48f62383a931aa0fd19cae2b1d45e98e73ce",
+      "symbol_prefix": "?CopyWordStorage_00654600@WordStorageCopy_00654600@@",
+      "references": {
+        "_base_dispatch_00654600": 8032568,
+        "_derived_dispatch_00654600": 8032472,
+        "_clear_storage_slot_00654600": 8032580,
+        "_allocate_words_00654600": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "b9c64b02fba61e64eb9022c484cdc6f5418729a1c81e7320a9b6a80c2331655f",
+      "region_bytes": 144,
+      "region_sha256": "b1b5e2752398eb5a8b6cb432cf56d631e226133b16d8a963bf16d2bad856172e",
+      "source": "src/recovered/word_storage/CopyWordStorage_00654600.cpp",
+      "owner_class": "WordStorageCopy_00654600"
+    },
+    {
+      "entry": 6637200,
+      "method": "00654690",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_00654690",
+      "source_sha256": "a23678fc9feb7659ce507a4e50179a965f563907eb1ea1f82d1a7f84e5353aa9",
+      "symbol_prefix": "?CopyWordStorage_00654690@WordStorageCopy_00654690@@",
+      "references": {
+        "_base_dispatch_00654690": 8007992,
+        "_derived_dispatch_00654690": 8007896,
+        "_clear_storage_slot_00654690": 8008004,
+        "_allocate_words_00654690": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "39018c26240faa1f50d096312b8a9a7d4619eff96cf3bd42fd4e2cc1a60a0535",
+      "region_bytes": 144,
+      "region_sha256": "0ee069b08ae8af798995a95ecfc6727f94bd1b6b54137c4aa09bb350f279a78c",
+      "source": "src/recovered/word_storage/CopyWordStorage_00654690.cpp",
+      "owner_class": "WordStorageCopy_00654690"
+    },
+    {
+      "entry": 6637344,
+      "method": "00654720",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_00654720",
+      "source_sha256": "aa70f3efffcaadf153bf3ffe9b673b1562f1a0f1bed5af50ac283aa03416666b",
+      "symbol_prefix": "?CopyWordStorage_00654720@WordStorageCopy_00654720@@",
+      "references": {
+        "_base_dispatch_00654720": 8007960,
+        "_derived_dispatch_00654720": 8007928,
+        "_clear_storage_slot_00654720": 8007972,
+        "_allocate_words_00654720": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "33337fa7138ac62b530ca0d69ebb045cddb9f4cd39f0ed1ed2b9e2722823481a",
+      "region_bytes": 144,
+      "region_sha256": "e97de73062deaf169c94640df5e8be2ed680e2c31f93191b3704501e4920f0ab",
+      "source": "src/recovered/word_storage/CopyWordStorage_00654720.cpp",
+      "owner_class": "WordStorageCopy_00654720"
+    },
+    {
+      "entry": 6637488,
+      "method": "006547b0",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_006547b0",
+      "source_sha256": "ffa04af4c7d8ebd9ed7bd819a7b4c9e886538114482689b245fc4a2f41cef7f8",
+      "symbol_prefix": "?CopyWordStorage_006547b0@WordStorage_0058e170@@",
+      "references": {
+        "_base_dispatch_006547b0": 8007432,
+        "_derived_dispatch_006547b0": 8007464,
+        "_clear_storage_slot_006547b0": 8007444,
+        "_allocate_words_006547b0": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "ab3783778bf4394c35a814eeeb55003275fcfb334a601ea5968cd295bac7f0de",
+      "region_bytes": 144,
+      "region_sha256": "f01adcd5769e22ca36c1fea4f65b240e95e550835f7131769805bfee69902fff",
+      "source": "src/recovered/word_storage/CopyWordStorage_006547b0.cpp",
+      "owner_class": "WordStorage_0058e170"
+    },
+    {
+      "entry": 6637632,
+      "method": "00654840",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_00654840",
+      "source_sha256": "899917a1c92f07093650b7e3cf06d906f09f6d6659cfcd0835549b4ff319275c",
+      "symbol_prefix": "?CopyWordStorage_00654840@WordStorage_00653340@@",
+      "references": {
+        "_base_dispatch_00654840": 8032536,
+        "_derived_dispatch_00654840": 8032644,
+        "_clear_storage_slot_00654840": 8032548,
+        "_allocate_words_00654840": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "99f24fb27cf6cb051395ea2f7dc1c079e1248d33b83804587c6f32e55b04f43e",
+      "region_bytes": 144,
+      "region_sha256": "f500989820a40e958d7f8b29ef57280ec45199c95c7837bddbdecf46d308ec0e",
+      "source": "src/recovered/word_storage/CopyWordStorage_00654840.cpp",
+      "owner_class": "WordStorage_00653340"
+    },
+    {
+      "entry": 6637776,
+      "method": "006548d0",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_006548d0",
+      "source_sha256": "9f9068f04fd82f7b11e34b99a118496a36941ae5f4c932d0cdfee4b73393f14a",
+      "symbol_prefix": "?CopyWordStorage_006548d0@WordStorage_004fb230@@",
+      "references": {
+        "_base_dispatch_006548d0": 8008024,
+        "_derived_dispatch_006548d0": 8008120,
+        "_clear_storage_slot_006548d0": 8008036,
+        "_allocate_words_006548d0": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "410355e704ad22c9268cd4423748675dad6f123dee69fe0063a3a5a720800229",
+      "region_bytes": 144,
+      "region_sha256": "2304d75bc20429d173bc4f2f7a979b7afda6da2f3e6983a73345e208af04dd6b",
+      "source": "src/recovered/word_storage/CopyWordStorage_006548d0.cpp",
+      "owner_class": "WordStorage_004fb230"
+    },
+    {
+      "entry": 7207392,
+      "method": "006df9e0",
+      "kind": "copy-word-storage",
+      "semantic_name": "CopyWordStorage_006df9e0",
+      "source_sha256": "f79969614f81de952b606e35510f6061c8e93e694d38cd0584be75a98e111bab",
+      "symbol_prefix": "?CopyWordStorage_006df9e0@WordStorageCopy_006df9e0@@",
+      "references": {
+        "_base_dispatch_006df9e0": 7983276,
+        "_derived_dispatch_006df9e0": 8048964,
+        "_clear_storage_slot_006df9e0": 7983288,
+        "_allocate_words_006df9e0": 7872535
+      },
+      "body_bytes": 136,
+      "body_sha256": "6f48e6de76ac7574f4cba32f1c85d2cfbd0731d69278f866769429f34a49fbaa",
+      "region_bytes": 144,
+      "region_sha256": "9f9f0921072c9adfb152f4bd4f37827fa76b88da56689a770c94998a82b03fee",
+      "source": "src/recovered/word_storage/CopyWordStorage_006df9e0.cpp",
+      "owner_class": "WordStorageCopy_006df9e0"
+    }
+  ],
+  "evidence_sha256": {
+    "functions": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
+    "facts": "25635b3bb3dbb739f19e3c7f51112f8cccaa184546f815299648fa68b9fa3f46",
+    "peer_review": "97954f0aa34eb8e2e016dd960baddb4ebe65ea03cf55425da6dcb0fcd8ab1157"
+  },
+  "peer_review_status": "independent-original-copy17-readiness-approved",
+  "source_template_sha256": "52b7716eaa43ce3e03672dff6da2137658395d09e7a31a725fa0f9c9bf59368e",
+  "purpose": "Copy a24-byte four-byte-element storage wrapper with static base-slot cleanup and allocation; original concrete classes unknown",
+  "limits": [
+    "Signed loop bounds;32-bit wrapping allocation size; self-copy clears pointer/count before comparison.",
+    "No RAII/null normalization or assumed error cleanup. Fields0c/10/14 remain unknown.",
+    "One-register fastcall slot is observedECX/RET0-compatible, original C++ prototype unknown."
+  ],
+  "connected_operations": {
+    "status": "observed-connection-map-not-class-unification",
+    "connections": [
+      {
+        "copy_entry": 4639728,
+        "base_dispatch": 7985620,
+        "derived_dispatch": 7985652,
+        "clear_slot": 7985632,
+        "clear_entry": 4641120,
+        "clear_accepted_source": "src/recovered/0046d160.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          4641264
+        ],
+        "same_base_and_derived_initializer_entries": []
+      },
+      {
+        "copy_entry": 4640288,
+        "base_dispatch": 7985620,
+        "derived_dispatch": 7985812,
+        "clear_slot": 7985632,
+        "clear_entry": 4641120,
+        "clear_accepted_source": "src/recovered/0046d160.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          4641264
+        ],
+        "same_base_and_derived_initializer_entries": [
+          4641264
+        ]
+      },
+      {
+        "copy_entry": 5205808,
+        "base_dispatch": 8007396,
+        "derived_dispatch": 8007660,
+        "clear_slot": 8007408,
+        "clear_entry": 5209296,
+        "clear_accepted_source": "src/recovered/004f7cd0.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          7078880
+        ],
+        "same_base_and_derived_initializer_entries": [
+          7078880
+        ]
+      },
+      {
+        "copy_entry": 5223440,
+        "base_dispatch": 8008024,
+        "derived_dispatch": 8007864,
+        "clear_slot": 8008036,
+        "clear_entry": 5222816,
+        "clear_accepted_source": "src/recovered/004fb1a0.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          5222960
+        ],
+        "same_base_and_derived_initializer_entries": []
+      },
+      {
+        "copy_entry": 5223584,
+        "base_dispatch": 8007960,
+        "derived_dispatch": 8008056,
+        "clear_slot": 8007972,
+        "clear_entry": 5220864,
+        "clear_accepted_source": "src/recovered/004faa00.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          5221008
+        ],
+        "same_base_and_derived_initializer_entries": [
+          5221008
+        ]
+      },
+      {
+        "copy_entry": 5223728,
+        "base_dispatch": 8007992,
+        "derived_dispatch": 8008088,
+        "clear_slot": 8008004,
+        "clear_entry": 5221840,
+        "clear_accepted_source": "src/recovered/004fadd0.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          5221984
+        ],
+        "same_base_and_derived_initializer_entries": [
+          5221984
+        ]
+      },
+      {
+        "copy_entry": 5289936,
+        "base_dispatch": 8010588,
+        "derived_dispatch": 8010556,
+        "clear_slot": 8010600,
+        "clear_entry": 5288944,
+        "clear_accepted_source": "src/recovered/0050b3f0.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          5289088
+        ],
+        "same_base_and_derived_initializer_entries": []
+      },
+      {
+        "copy_entry": 5828304,
+        "base_dispatch": 8007432,
+        "derived_dispatch": 8019532,
+        "clear_slot": 8007444,
+        "clear_entry": 5206272,
+        "clear_accepted_source": "src/recovered/004f7100.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          5824880
+        ],
+        "same_base_and_derived_initializer_entries": []
+      },
+      {
+        "copy_entry": 5923536,
+        "base_dispatch": 8022212,
+        "derived_dispatch": 8022244,
+        "clear_slot": 8022224,
+        "clear_entry": 5924288,
+        "clear_accepted_source": null,
+        "clear_prior_refusal": {
+          "entry": 5924288,
+          "refusals": [],
+          "conflicts": [
+            {
+              "kind": "raw_pointerword_candidate",
+              "file_offset": 1215478,
+              "target": 5924328
+            }
+          ]
+        },
+        "same_base_initializer_entries": [],
+        "same_base_and_derived_initializer_entries": []
+      },
+      {
+        "copy_entry": 6636912,
+        "base_dispatch": 8032536,
+        "derived_dispatch": 8032504,
+        "clear_slot": 8032548,
+        "clear_entry": 6632112,
+        "clear_accepted_source": null,
+        "clear_prior_refusal": {
+          "entry": 6632112,
+          "refusals": [
+            "noindependent_nextentry_reference"
+          ],
+          "conflicts": []
+        },
+        "same_base_initializer_entries": [
+          6632256
+        ],
+        "same_base_and_derived_initializer_entries": []
+      },
+      {
+        "copy_entry": 6637056,
+        "base_dispatch": 8032568,
+        "derived_dispatch": 8032472,
+        "clear_slot": 8032580,
+        "clear_entry": 6633120,
+        "clear_accepted_source": "src/recovered/006536a0.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          6633264
+        ],
+        "same_base_and_derived_initializer_entries": []
+      },
+      {
+        "copy_entry": 6637200,
+        "base_dispatch": 8007992,
+        "derived_dispatch": 8007896,
+        "clear_slot": 8008004,
+        "clear_entry": 5221840,
+        "clear_accepted_source": "src/recovered/004fadd0.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          5221984
+        ],
+        "same_base_and_derived_initializer_entries": []
+      },
+      {
+        "copy_entry": 6637344,
+        "base_dispatch": 8007960,
+        "derived_dispatch": 8007928,
+        "clear_slot": 8007972,
+        "clear_entry": 5220864,
+        "clear_accepted_source": "src/recovered/004faa00.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          5221008
+        ],
+        "same_base_and_derived_initializer_entries": []
+      },
+      {
+        "copy_entry": 6637488,
+        "base_dispatch": 8007432,
+        "derived_dispatch": 8007464,
+        "clear_slot": 8007444,
+        "clear_entry": 5206272,
+        "clear_accepted_source": "src/recovered/004f7100.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          5824880
+        ],
+        "same_base_and_derived_initializer_entries": [
+          5824880
+        ]
+      },
+      {
+        "copy_entry": 6637632,
+        "base_dispatch": 8032536,
+        "derived_dispatch": 8032644,
+        "clear_slot": 8032548,
+        "clear_entry": 6632112,
+        "clear_accepted_source": null,
+        "clear_prior_refusal": {
+          "entry": 6632112,
+          "refusals": [
+            "noindependent_nextentry_reference"
+          ],
+          "conflicts": []
+        },
+        "same_base_initializer_entries": [
+          6632256
+        ],
+        "same_base_and_derived_initializer_entries": [
+          6632256
+        ]
+      },
+      {
+        "copy_entry": 6637776,
+        "base_dispatch": 8008024,
+        "derived_dispatch": 8008120,
+        "clear_slot": 8008036,
+        "clear_entry": 5222816,
+        "clear_accepted_source": "src/recovered/004fb1a0.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          5222960
+        ],
+        "same_base_and_derived_initializer_entries": [
+          5222960
+        ]
+      },
+      {
+        "copy_entry": 7207392,
+        "base_dispatch": 7983276,
+        "derived_dispatch": 8048964,
+        "clear_slot": 7983288,
+        "clear_entry": 4538304,
+        "clear_accepted_source": "src/recovered/00453fc0.cpp",
+        "clear_prior_refusal": null,
+        "same_base_initializer_entries": [
+          7207216
+        ],
+        "same_base_and_derived_initializer_entries": []
+      }
+    ],
+    "historical_sources": [
+      "historical/native-reconstruction/docs/TERRAIN_LIFECYCLE_1006.md",
+      "historical/native-reconstruction/docs/LIFECYCLE.md",
+      "historical/native-reconstruction/docs/ALPHA_LIFECYCLE_1006.md",
+      "historical/native-reconstruction/src/sim/MissionTag.hpp"
+    ],
+    "supported_common_prefix": "16bytes:dispatch0/storage4/capacity8/unknown0c/owns0d/padding0e-0f",
+    "limits": [
+      "Historicalexact-targetnativeprojection gives capacity/count/growth vocabulary but no automatic concretecopyclass mapping.",
+      "Thetwo unacceptedactualclear targets remain closedA6 exclusions; nineexistingclears require no newrecoverymatrix.",
+      "A11capacityfield unsigned vs copy/clearsigned is raw32 compatibility; any shared signedfield adoption must be freshly exactchecked.",
+      "Copytail10/14 are observedcopies, likelycount/growth only as qualifiedhypothesis."
+    ]
+  },
+  "shared_header": {
+    "path": "src/shared/word_storage_layout.hpp",
+    "sha256": "bce4613e4eefa003a73849ba0963805a989b5499c34dfe53b3fa268392dd2dda"
+  },
+  "class_association": "Seven table-paired copy/initializer interfaces; ten distinct copy owners, common observed layouts only"
+}

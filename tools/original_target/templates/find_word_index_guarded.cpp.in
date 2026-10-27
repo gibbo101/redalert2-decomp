@@ -1,0 +1,27 @@
+#include "shared/word_sequence_views.hpp"
+
+// Original VA @ADDRESS@, target @TARGET_HASH@.
+// If the raw search gate is zero, return zero (not the exhausted-search -1).
+// Otherwise return the first equal 32-bit word's index, or -1 when exhausted.
+// Preserve signed count tests and the reference-valued search argument; original
+// code holds scan inputs in registers after the gate/count checks. The argument
+// can alias sequence storage. Concrete class and gate meaning remain unknown.
+class @OWNER@ {
+    GuardedWordSequenceView32 view;
+
+public:
+    int @FUNCTION_NAME@(const unsigned int& sought_word) const;
+};
+
+int @OWNER@::@FUNCTION_NAME@(const unsigned int& sought_word) const
+{
+    if (!view.search_gate) {
+        return 0;
+    }
+    for (int index = 0; index < view.count; ++index) {
+        if (view.items[index] == sought_word) {
+            return index;
+        }
+    }
+    return -1;
+}

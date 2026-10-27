@@ -1,0 +1,2945 @@
+{
+ "source": "Original-name database: address -> recovered qualified name. Class names come from RTTI; method names are evidence-backed identifications recorded in the class headers. mangled_prefix binds references during acceptance.",
+ "symbols": [
+  {
+   "address": "0078d816",
+   "name": "_strdup",
+   "mangled_prefix": "__strdup",
+   "kind": "crt",
+   "evidence": "copies a string into a fresh heap block; Set_Name uses it for the file name"
+  },
+  {
+   "address": "007825e8",
+   "name": "free",
+   "mangled_prefix": "_free",
+   "kind": "crt",
+   "evidence": "releases heap blocks allocated by _strdup/malloc"
+  },
+  {
+   "address": "007a8cc4",
+   "name": "RawFileClass::`vftable'",
+   "mangled_prefix": "??_7RawFileClass@@6B@",
+   "kind": "vtable",
+   "evidence": "RTTI"
+  },
+  {
+   "address": "007a8c7c",
+   "name": "FileClass::`vftable'",
+   "mangled_prefix": "??_7FileClass@@6B@",
+   "kind": "vtable",
+   "evidence": "RTTI"
+  },
+  {
+   "address": "00638b70",
+   "name": "RawFileClass::Set_Name",
+   "mangled_prefix": "?Set_Name@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 2; frees owned name, strdups new name, resets bias"
+  },
+  {
+   "address": "00639200",
+   "name": "RawFileClass::Create",
+   "mangled_prefix": "?Create@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 3; opens for write then closes"
+  },
+  {
+   "address": "00639240",
+   "name": "RawFileClass::Delete",
+   "mangled_prefix": "?Delete@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 4; DeleteFileA on the name"
+  },
+  {
+   "address": "00638ca0",
+   "name": "RawFileClass::Is_Available",
+   "mangled_prefix": "?Is_Available@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 5; probes existence with CreateFileA"
+  },
+  {
+   "address": "006394d0",
+   "name": "RawFileClass::Is_Open",
+   "mangled_prefix": "?Is_Open@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 6; Handle != INVALID_HANDLE_VALUE"
+  },
+  {
+   "address": "00638c00",
+   "name": "RawFileClass::Open(int)",
+   "mangled_prefix": "?Open@RawFileClass@@UAEHH@Z",
+   "kind": "method",
+   "evidence": "slot 7; CreateFileA with per-rights flags"
+  },
+  {
+   "address": "00638be0",
+   "name": "RawFileClass::Open(char const *, int)",
+   "mangled_prefix": "?Open@RawFileClass@@UAEHPBDH@Z",
+   "kind": "method",
+   "evidence": "slot 8; Set_Name then Open(rights)"
+  },
+  {
+   "address": "00638d90",
+   "name": "RawFileClass::Read",
+   "mangled_prefix": "?Read@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 9; ReadFile loop within the bias window"
+  },
+  {
+   "address": "00638fb0",
+   "name": "RawFileClass::Seek",
+   "mangled_prefix": "?Seek@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 10; SetFilePointer clamped to the bias window"
+  },
+  {
+   "address": "00639180",
+   "name": "RawFileClass::Size",
+   "mangled_prefix": "?Size@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 11; GetFileSize or bias length"
+  },
+  {
+   "address": "00638e80",
+   "name": "RawFileClass::Write",
+   "mangled_prefix": "?Write@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 12; WriteFile and bias window growth"
+  },
+  {
+   "address": "00638d50",
+   "name": "RawFileClass::Close",
+   "mangled_prefix": "?Close@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 13; CloseHandle"
+  },
+  {
+   "address": "006392a0",
+   "name": "RawFileClass::Get_Date_Time",
+   "mangled_prefix": "?Get_Date_Time@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 14; last-write time as DOS date/time"
+  },
+  {
+   "address": "006392f0",
+   "name": "RawFileClass::Set_Date_Time",
+   "mangled_prefix": "?Set_Date_Time@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 15; SetFileTime from DOS date/time"
+  },
+  {
+   "address": "00638b30",
+   "name": "RawFileClass::Error",
+   "mangled_prefix": "?Error@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 16; empty"
+  },
+  {
+   "address": "00ab663c",
+   "name": "RawFileReadStopOnError",
+   "mangled_prefix": "_RawFileReadStopOnError",
+   "kind": "data",
+   "evidence": "bool read by RawFileClass::Read after a failed ReadFile (stop instead of Error) and cleared on return"
+  },
+  {
+   "address": "0042f390",
+   "name": "BufferIOFileClass::Cache",
+   "mangled_prefix": "?Cache@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "attaches or allocates the cache and fills it"
+  },
+  {
+   "address": "0042f560",
+   "name": "BufferIOFileClass::Free",
+   "mangled_prefix": "?Free@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "releases the cache"
+  },
+  {
+   "address": "0042f5a0",
+   "name": "BufferIOFileClass::Commit",
+   "mangled_prefix": "?Commit@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "writes the changed buffer range back"
+  },
+  {
+   "address": "0042f650",
+   "name": "BufferIOFileClass::Set_Name",
+   "mangled_prefix": "?Set_Name@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "slot 2"
+  },
+  {
+   "address": "0042f6e0",
+   "name": "BufferIOFileClass::Is_Available",
+   "mangled_prefix": "?Is_Available@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "slot 5"
+  },
+  {
+   "address": "0042f700",
+   "name": "BufferIOFileClass::Is_Open",
+   "mangled_prefix": "?Is_Open@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "slot 6"
+  },
+  {
+   "address": "0042f740",
+   "name": "BufferIOFileClass::Open(int)",
+   "mangled_prefix": "?Open@BufferIOFileClass@@UAEHH@Z",
+   "kind": "method",
+   "evidence": "slot 7"
+  },
+  {
+   "address": "0042f720",
+   "name": "BufferIOFileClass::Open(char const *, int)",
+   "mangled_prefix": "?Open@BufferIOFileClass@@UAEHPBDH@Z",
+   "kind": "method",
+   "evidence": "slot 8"
+  },
+  {
+   "address": "0042fa80",
+   "name": "BufferIOFileClass::Read",
+   "mangled_prefix": "?Read@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "slot 9"
+  },
+  {
+   "address": "0042fc90",
+   "name": "BufferIOFileClass::Seek",
+   "mangled_prefix": "?Seek@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "slot 10"
+  },
+  {
+   "address": "0042fd80",
+   "name": "BufferIOFileClass::Size",
+   "mangled_prefix": "?Size@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "slot 11"
+  },
+  {
+   "address": "0042f830",
+   "name": "BufferIOFileClass::Write",
+   "mangled_prefix": "?Write@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "slot 12"
+  },
+  {
+   "address": "0042fda0",
+   "name": "BufferIOFileClass::Close",
+   "mangled_prefix": "?Close@BufferIOFileClass@@",
+   "kind": "method",
+   "evidence": "slot 13"
+  },
+  {
+   "address": "00781d3b",
+   "name": "operator delete",
+   "mangled_prefix": "??3@YAXPAX@Z",
+   "kind": "crt",
+   "evidence": "CRT; frees blocks from operator new"
+  },
+  {
+   "address": "00782017",
+   "name": "operator new",
+   "mangled_prefix": "??2@YAPAXI@Z",
+   "kind": "crt",
+   "evidence": "CRT; allocates blocks"
+  },
+  {
+   "address": "00783290",
+   "name": "memmove",
+   "mangled_prefix": "_memmove",
+   "kind": "crt",
+   "evidence": "copies between buffers; BufferIOFileClass::Read/Write"
+  },
+  {
+   "address": "004b8960",
+   "name": "_purecall",
+   "mangled_prefix": "__purecall",
+   "kind": "crt",
+   "evidence": "pure virtual slot target; returns 0"
+  },
+  {
+   "address": "00401940",
+   "name": "RawFileClass::File_Name",
+   "mangled_prefix": "?File_Name@RawFileClass@@",
+   "kind": "method",
+   "evidence": "slot 1; returns Filename (code shared by identical accessors)"
+  },
+  {
+   "address": "006386b0",
+   "name": "FileClass::Get_Date_Time",
+   "mangled_prefix": "?Get_Date_Time@FileClass@@",
+   "kind": "method",
+   "evidence": "slot 14 default; returns 0"
+  },
+  {
+   "address": "006386c0",
+   "name": "FileClass::Set_Date_Time",
+   "mangled_prefix": "?Set_Date_Time@FileClass@@",
+   "kind": "method",
+   "evidence": "slot 15 default; returns false"
+  },
+  {
+   "address": "006386d0",
+   "name": "FileClass::`scalar deleting destructor'",
+   "mangled_prefix": "??_GFileClass@@",
+   "kind": "destructor",
+   "evidence": "slot 0; compiler generated"
+  },
+  {
+   "address": "00639450",
+   "name": "RawFileClass::`scalar deleting destructor'",
+   "mangled_prefix": "??_GRawFileClass@@",
+   "kind": "destructor",
+   "evidence": "slot 0; compiler generated"
+  },
+  {
+   "address": "00638ac0",
+   "name": "RawFileClass::~RawFileClass",
+   "mangled_prefix": "??1RawFileClass@@",
+   "kind": "destructor",
+   "evidence": "closes and frees the owned name"
+  },
+  {
+   "address": "00638b40",
+   "name": "RawFileClass::RawFileClass(char const *)",
+   "mangled_prefix": "??0RawFileClass@@QAE@PBD@Z",
+   "kind": "constructor",
+   "evidence": "stores the name without copying"
+  },
+  {
+   "address": "0042f200",
+   "name": "BufferIOFileClass::BufferIOFileClass(char const *)",
+   "mangled_prefix": "??0BufferIOFileClass@@QAE@PBD@Z",
+   "kind": "constructor",
+   "evidence": "unbuffered file with a name"
+  },
+  {
+   "address": "0042f2f0",
+   "name": "BufferIOFileClass::BufferIOFileClass()",
+   "mangled_prefix": "??0BufferIOFileClass@@QAE@XZ",
+   "kind": "constructor",
+   "evidence": "unbuffered unnamed file"
+  },
+  {
+   "address": "0042f350",
+   "name": "BufferIOFileClass::~BufferIOFileClass",
+   "mangled_prefix": "??1BufferIOFileClass@@",
+   "kind": "destructor",
+   "evidence": "Free() then ~RawFileClass"
+  },
+  {
+   "address": "0042fdf0",
+   "name": "BufferIOFileClass::`scalar deleting destructor'",
+   "mangled_prefix": "??_GBufferIOFileClass@@",
+   "kind": "destructor",
+   "evidence": "compiler generated"
+  },
+  {
+   "address": "00850898",
+   "name": "CDFileClass::First",
+   "mangled_prefix": "?First@CDFileClass@@2PAUCDSearchDrive@@A",
+   "kind": "data",
+   "evidence": "search list head read by Set_Name"
+  },
+  {
+   "address": "00470150",
+   "name": "CDFileClass::Set_Name",
+   "mangled_prefix": "?Set_Name@CDFileClass@@",
+   "kind": "method",
+   "evidence": "slot 2; tries each search directory"
+  },
+  {
+   "address": "00470250",
+   "name": "CDFileClass::Open(char const *, int)",
+   "mangled_prefix": "?Open@CDFileClass@@UAEHPBDH@Z",
+   "kind": "method",
+   "evidence": "slot 8"
+  },
+  {
+   "address": "0046fe10",
+   "name": "CDFileClass::Open(int)",
+   "mangled_prefix": "?Open@CDFileClass@@UAEHH@Z",
+   "kind": "method",
+   "evidence": "slot 7; BufferIOFileClass::Open"
+  },
+  {
+   "address": "0046fd30",
+   "name": "CDFileClass::CDFileClass(char const *)",
+   "mangled_prefix": "??0CDFileClass@@QAE@PBD@Z",
+   "kind": "constructor",
+   "evidence": "named"
+  },
+  {
+   "address": "0046fd90",
+   "name": "CDFileClass::CDFileClass()",
+   "mangled_prefix": "??0CDFileClass@@QAE@XZ",
+   "kind": "constructor",
+   "evidence": "unnamed"
+  },
+  {
+   "address": "00401950",
+   "name": "CDFileClass::`scalar deleting destructor'",
+   "mangled_prefix": "??_GCDFileClass@@",
+   "kind": "destructor",
+   "evidence": "slot 0; compiler generated"
+  },
+  {
+   "address": "006393d0",
+   "name": "RawFileClass::Raw_Seek",
+   "mangled_prefix": "?Raw_Seek@RawFileClass@@",
+   "kind": "method",
+   "evidence": "SetFilePointer without bias"
+  },
+  {
+   "address": "00639360",
+   "name": "RawFileClass::Bias",
+   "mangled_prefix": "?Bias@RawFileClass@@",
+   "kind": "method",
+   "evidence": "sets the bias window"
+  },
+  {
+   "address": "004382c0",
+   "name": "Buffer::Buffer(void *, long)",
+   "mangled_prefix": "??0Buffer@@QAE@PAXJ@Z",
+   "kind": "method",
+   "evidence": "Buffer pointer/size/ownership constructors"
+  },
+  {
+   "address": "00438300",
+   "name": "Buffer::Buffer(char *, long)",
+   "mangled_prefix": "??0Buffer@@QAE@PADJ@Z",
+   "kind": "method",
+   "evidence": "Buffer pointer/size/ownership constructors"
+  },
+  {
+   "address": "00438340",
+   "name": "Buffer::Buffer(void const *, long)",
+   "mangled_prefix": "??0Buffer@@QAE@PBXJ@Z",
+   "kind": "method",
+   "evidence": "Buffer pointer/size/ownership constructors"
+  },
+  {
+   "address": "00438380",
+   "name": "Buffer::Buffer(long)",
+   "mangled_prefix": "??0Buffer@@QAE@J@Z",
+   "kind": "method",
+   "evidence": "Buffer pointer/size/ownership constructors"
+  },
+  {
+   "address": "004383b0",
+   "name": "Buffer::Buffer(Buffer const &)",
+   "mangled_prefix": "??0Buffer@@QAE@ABV0@@Z",
+   "kind": "method",
+   "evidence": "Buffer pointer/size/ownership constructors"
+  },
+  {
+   "address": "004383d0",
+   "name": "Buffer::operator=",
+   "mangled_prefix": "??4Buffer@@QAEAAV0@ABV0@@Z",
+   "kind": "method",
+   "evidence": "Buffer pointer/size/ownership constructors"
+  },
+  {
+   "address": "00438410",
+   "name": "Buffer::~Buffer",
+   "mangled_prefix": "??1Buffer@@QAE@XZ",
+   "kind": "method",
+   "evidence": "releases an owned block"
+  },
+  {
+   "address": "00438440",
+   "name": "Buffer::Reset",
+   "mangled_prefix": "?Reset@Buffer@@QAEXXZ",
+   "kind": "method",
+   "evidence": "releases an owned block"
+  },
+  {
+   "address": "00595aa0",
+   "name": "MixFileClass<CCFileClass>::Offset",
+   "mangled_prefix": "?Offset@?$MixFileClass@VCCFileClass@@@@",
+   "kind": "method",
+   "evidence": "static fastcall mixfile member lookup used by CCFileClass"
+  },
+  {
+   "address": "00469000",
+   "name": "CCFileClass::Error",
+   "mangled_prefix": "?Error@CCFileClass@@",
+   "kind": "method",
+   "evidence": "slot 16; asks the CD class to make the required disc available"
+  },
+  {
+   "address": "004019a0",
+   "name": "CCFileClass::`scalar deleting destructor'",
+   "mangled_prefix": "??_GCCFileClass@@",
+   "kind": "destructor",
+   "evidence": "compiler generated"
+  },
+  {
+   "address": "00468f50",
+   "name": "CCFileClass::CCFileClass(char const *)",
+   "mangled_prefix": "??0CCFileClass@@QAE@PBD@Z",
+   "kind": "constructor",
+   "evidence": "named"
+  },
+  {
+   "address": "00468fd0",
+   "name": "CCFileClass::CCFileClass()",
+   "mangled_prefix": "??0CCFileClass@@QAE@XZ",
+   "kind": "constructor",
+   "evidence": "unnamed"
+  },
+  {
+   "address": "00469030",
+   "name": "CCFileClass::Write",
+   "mangled_prefix": "?Write@CCFileClass@@",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "00469060",
+   "name": "CCFileClass::Read",
+   "mangled_prefix": "?Read@CCFileClass@@",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "004690f0",
+   "name": "CCFileClass::Seek",
+   "mangled_prefix": "?Seek@CCFileClass@@",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "00469150",
+   "name": "CCFileClass::Size",
+   "mangled_prefix": "?Size@CCFileClass@@",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "004691a0",
+   "name": "CCFileClass::Is_Available",
+   "mangled_prefix": "?Is_Available@CCFileClass@@",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "004691e0",
+   "name": "CCFileClass::Is_Open",
+   "mangled_prefix": "?Is_Open@CCFileClass@@",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "004691f0",
+   "name": "CCFileClass::Close",
+   "mangled_prefix": "?Close@CCFileClass@@",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "00469220",
+   "name": "CCFileClass::Open",
+   "mangled_prefix": "?Open@CCFileClass@@UAEHH@Z",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "00469350",
+   "name": "CCFileClass::Get_Date_Time",
+   "mangled_prefix": "?Get_Date_Time@CCFileClass@@",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "00469400",
+   "name": "CCFileClass::Set_Date_Time",
+   "mangled_prefix": "?Set_Date_Time@CCFileClass@@",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "00401980",
+   "name": "CCFileClass::Open",
+   "mangled_prefix": "?Open@CCFileClass@@UAEHPBDH@Z",
+   "kind": "method",
+   "evidence": "CCFileClass virtual"
+  },
+  {
+   "address": "0069b010",
+   "name": "Straw::~Straw",
+   "mangled_prefix": "??1Straw@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "0069b050",
+   "name": "Straw::Get_From",
+   "mangled_prefix": "?Get_From@Straw@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "0069b0a0",
+   "name": "Straw::Get",
+   "mangled_prefix": "?Get@Straw@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "0049ed40",
+   "name": "Straw::`scalar deleting destructor'",
+   "mangled_prefix": "??_GStraw@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "0060ea60",
+   "name": "Pipe::~Pipe",
+   "mangled_prefix": "??1Pipe@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "0060eaa0",
+   "name": "Pipe::Put_To",
+   "mangled_prefix": "?Put_To@Pipe@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "0060eaf0",
+   "name": "Pipe::Put",
+   "mangled_prefix": "?Put@Pipe@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "0060eb10",
+   "name": "Pipe::Flush",
+   "mangled_prefix": "?Flush@Pipe@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "0049edb0",
+   "name": "Pipe::`scalar deleting destructor'",
+   "mangled_prefix": "??_GPipe@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "0046cb80",
+   "name": "Pipe::End",
+   "mangled_prefix": "?End@Pipe@@",
+   "kind": "method",
+   "evidence": "Straw/Pipe stream chain"
+  },
+  {
+   "address": "00773900",
+   "name": "FileStraw::~FileStraw",
+   "mangled_prefix": "??1FileStraw@@",
+   "kind": "method",
+   "evidence": "file stream"
+  },
+  {
+   "address": "007738a0",
+   "name": "FileStraw::Get",
+   "mangled_prefix": "?Get@FileStraw@@",
+   "kind": "method",
+   "evidence": "file stream"
+  },
+  {
+   "address": "0046cbb0",
+   "name": "FileStraw::`scalar deleting destructor'",
+   "mangled_prefix": "??_GFileStraw@@",
+   "kind": "method",
+   "evidence": "file stream"
+  },
+  {
+   "address": "00773790",
+   "name": "FilePipe::~FilePipe",
+   "mangled_prefix": "??1FilePipe@@",
+   "kind": "method",
+   "evidence": "file stream"
+  },
+  {
+   "address": "007737c0",
+   "name": "FilePipe::End",
+   "mangled_prefix": "?End@FilePipe@@",
+   "kind": "method",
+   "evidence": "file stream"
+  },
+  {
+   "address": "007737f0",
+   "name": "FilePipe::Put",
+   "mangled_prefix": "?Put@FilePipe@@",
+   "kind": "method",
+   "evidence": "file stream"
+  },
+  {
+   "address": "0046cbd0",
+   "name": "FilePipe::`scalar deleting destructor'",
+   "mangled_prefix": "??_GFilePipe@@",
+   "kind": "method",
+   "evidence": "file stream"
+  },
+  {
+   "address": "00510ce0",
+   "name": "??0?$IndexClass@HPAUINIEntry@INIClass@@@@QAE@XZ",
+   "mangled_prefix": "??0?$IndexClass@HPAUINIEntry@INIClass@@@@QAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00510bb0",
+   "name": "??0?$List@PAUINIEntry@INIClass@@@@QAE@XZ",
+   "mangled_prefix": "??0?$List@PAUINIEntry@INIClass@@@@QAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00510b20",
+   "name": "??0CRCEngine@@QAE@J@Z",
+   "mangled_prefix": "??0CRCEngine@@QAE@J@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00490e80",
+   "name": "??0GenericList@@QAE@XZ",
+   "mangled_prefix": "??0GenericList@@QAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0040e160",
+   "name": "??0GenericNode@@QAE@XZ",
+   "mangled_prefix": "??0GenericNode@@QAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00510b60",
+   "name": "??0INIEntry@INIClass@@QAE@PAD0PAUINIComment@1@0HHH@Z",
+   "mangled_prefix": "??0INIEntry@INIClass@@QAE@PAD0PAUINIComment@1@0HHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0076d920",
+   "name": "??0Wstring@@QAE@PBD@Z",
+   "mangled_prefix": "??0Wstring@@QAE@PBD@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00773790",
+   "name": "??1FilePipe@@UAE@XZ",
+   "mangled_prefix": "??1FilePipe@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00773900",
+   "name": "??1FileStraw@@UAE@XZ",
+   "mangled_prefix": "??1FileStraw@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050b8d0",
+   "name": "??1INIClass@@UAE@XZ",
+   "mangled_prefix": "??1INIClass@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "005107c0",
+   "name": "??1INIEntry@INIClass@@UAE@XZ",
+   "mangled_prefix": "??1INIEntry@INIClass@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00510850",
+   "name": "??1INISection@INIClass@@UAE@XZ",
+   "mangled_prefix": "??1INISection@INIClass@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0076dbc0",
+   "name": "??4Wstring@@QAEAAV0@PBD@Z",
+   "mangled_prefix": "??4Wstring@@QAEAAV0@PBD@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00510e70",
+   "name": "??A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z",
+   "mangled_prefix": "??A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00511090",
+   "name": "??A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z",
+   "mangled_prefix": "??A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0076e730",
+   "name": "?Peek_Buffer@Wstring@@QBEPBDXZ",
+   "mangled_prefix": "?Peek_Buffer@Wstring@@QBEPBDXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00493fc0",
+   "name": "??RCRCEngine@@QAEJPBXH@Z",
+   "mangled_prefix": "??RCRCEngine@@QAEJPBXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007a3bac",
+   "name": "??_7?$List@PAUINIEntry@INIClass@@@@6B@",
+   "mangled_prefix": "??_7?$List@PAUINIEntry@INIClass@@@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0079aaec",
+   "name": "??_7?$List@PAUINISection@INIClass@@@@6B@",
+   "mangled_prefix": "??_7?$List@PAUINISection@INIClass@@@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007a6470",
+   "name": "??_7?$MixFileClass@VCCFileClass@@@@6B@",
+   "mangled_prefix": "??_7?$MixFileClass@VCCFileClass@@@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007a3bb4",
+   "name": "??_7?$Node@PAUINISection@INIClass@@@@6B@",
+   "mangled_prefix": "??_7?$Node@PAUINISection@INIClass@@@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007a3bbc",
+   "name": "??_7CacheStraw@@6B@",
+   "mangled_prefix": "??_7CacheStraw@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0079d9bc",
+   "name": "??_7FilePipe@@6B@",
+   "mangled_prefix": "??_7FilePipe@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0079d9ac",
+   "name": "??_7FileStraw@@6B@",
+   "mangled_prefix": "??_7FileStraw@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0079aaf4",
+   "name": "??_7GenericList@@6B@",
+   "mangled_prefix": "??_7GenericList@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0079aafc",
+   "name": "??_7GenericNode@@6B@",
+   "mangled_prefix": "??_7GenericNode@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007a2b34",
+   "name": "??_7INIClass@@6B@",
+   "mangled_prefix": "??_7INIClass@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007a3b9c",
+   "name": "??_7INIEntry@INIClass@@6B@",
+   "mangled_prefix": "??_7INIEntry@INIClass@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007a3ba4",
+   "name": "??_7INISection@INIClass@@6B@",
+   "mangled_prefix": "??_7INISection@INIClass@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db4a8",
+   "name": "??_C@_00A@?$AA@",
+   "mangled_prefix": "??_C@_00A@?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007d27e4",
+   "name": "??_C@_01FAJB@?$DL?$AA@",
+   "mangled_prefix": "??_C@_01FAJB@?$DL?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db444",
+   "name": "??_C@_01FIMD@?$FN?$AA@",
+   "mangled_prefix": "??_C@_01FIMD@?$FN?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db448",
+   "name": "??_C@_01KHLB@?$FL?$AA@",
+   "mangled_prefix": "??_C@_01KHLB@?$FL?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007cf3bc",
+   "name": "??_C@_01KPOD@?$DN?$AA@",
+   "mangled_prefix": "??_C@_01KPOD@?$DN?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db4cc",
+   "name": "??_C@_02ELCB@no?$AA@",
+   "mangled_prefix": "??_C@_02ELCB@no?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db4b8",
+   "name": "??_C@_02JBAA@?$CFf?$AA@",
+   "mangled_prefix": "??_C@_02JBAA@?$CFf?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db4b4",
+   "name": "??_C@_02JDLK@?$CFx?$AA@",
+   "mangled_prefix": "??_C@_02JDLK@?$CFx?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db4b0",
+   "name": "??_C@_02MBFK@?$CFX?$AA@",
+   "mangled_prefix": "??_C@_02MBFK@?$CFX?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007ce9bc",
+   "name": "??_C@_02MECO@?$CFd?$AA@",
+   "mangled_prefix": "??_C@_02MECO@?$CFd?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007d7cec",
+   "name": "??_C@_02PIMC@?$AN?6?$AA@",
+   "mangled_prefix": "??_C@_02PIMC@?$AN?6?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db494",
+   "name": "??_C@_03FLAL@?$CFxh?$AA@",
+   "mangled_prefix": "??_C@_03FLAL@?$CFxh?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db48c",
+   "name": "??_C@_03IOFJ@?$CFXh?$AA@",
+   "mangled_prefix": "??_C@_03IOFJ@?$CFXh?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db498",
+   "name": "??_C@_03JJDF@$?$CFx?$AA@",
+   "mangled_prefix": "??_C@_03JJDF@$?$CFx?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db4d0",
+   "name": "??_C@_03LGKI@yes?$AA@",
+   "mangled_prefix": "??_C@_03LGKI@yes?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db490",
+   "name": "??_C@_03MLNF@$?$CFX?$AA@",
+   "mangled_prefix": "??_C@_03MLNF@$?$CFX?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007d1f10",
+   "name": "??_C@_05BBIB@?$CFd?0?$CFd?$AA@",
+   "mangled_prefix": "??_C@_05BBIB@?$CFd?0?$CFd?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db4d4",
+   "name": "??_C@_08LMGJ@?$CFf?0?$CFf?0?$CFf?$AA@",
+   "mangled_prefix": "??_C@_08LMGJ@?$CFf?0?$CFf?0?$CFf?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007cf360",
+   "name": "??_C@_08POMI@?$CFd?0?$CFd?0?$CFd?$AA@",
+   "mangled_prefix": "??_C@_08POMI@?$CFd?0?$CFd?0?$CFd?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007db49c",
+   "name": "??_C@_0M@IKDG@?$CFd?0?$CFd?0?$CFd?0?$CFd?$AA@",
+   "mangled_prefix": "??_C@_0M@IKDG@?$CFd?0?$CFd?0?$CFd?0?$CFd?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007d4ef8",
+   "name": "??_C@_0P@INAO@?$CF02d?3?$CF02d?3?$CF02d?$AA@",
+   "mangled_prefix": "??_C@_0P@INAO@?$CF02d?3?$CF02d?3?$CF02d?$AA@",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00595c60",
+   "name": "??_G?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z",
+   "mangled_prefix": "??_G?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0040e1d0",
+   "name": "??_GGenericNode@@UAEPAXI@Z",
+   "mangled_prefix": "??_GGenericNode@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00510d00",
+   "name": "?Add_Index@?$IndexClass@HPAUINIEntry@INIClass@@@@QAE_NABHABQAUINIEntry@INIClass@@@Z",
+   "mangled_prefix": "?Add_Index@?$IndexClass@HPAUINIEntry@INIClass@@@@QAE_NABHABQAUINIEntry@INIClass@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00511330",
+   "name": "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINIEntry@INIClass@@@@PAU12@HABU12@@Z",
+   "mangled_prefix": "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINIEntry@INIClass@@@@PAU12@HABU12@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "005113b0",
+   "name": "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINISection@INIClass@@@@PAU12@HABU12@@Z",
+   "mangled_prefix": "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINISection@INIClass@@@@PAU12@HABU12@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00595810",
+   "name": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+   "mangled_prefix": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050b9a0",
+   "name": "?Clear@INIClass@@QAE_NPBD0@Z",
+   "mangled_prefix": "?Clear@INIClass@@QAE_NPBD0@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050cb00",
+   "name": "?Entry_Count@INIClass@@QBEHPBD@Z",
+   "mangled_prefix": "?Entry_Count@INIClass@@QBEHPBD@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050cca0",
+   "name": "?Find_Entry@INIClass@@QBEPAUINIEntry@1@PBD0@Z",
+   "mangled_prefix": "?Find_Entry@INIClass@@QBEPAUINIEntry@1@PBD0@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050c9b0",
+   "name": "?Find_Section@INIClass@@QBEPAUINISection@1@PBD@Z",
+   "mangled_prefix": "?Find_Section@INIClass@@QBEPAUINISection@1@PBD@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00494760",
+   "name": "?Get@CacheStraw@@UAEHPAXH@Z",
+   "mangled_prefix": "?Get@CacheStraw@@UAEHPAXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050ce00",
+   "name": "?Get_Entry@INIClass@@QBEPBDPBDH@Z",
+   "mangled_prefix": "?Get_Entry@INIClass@@QBEPBDPBDH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050d7f0",
+   "name": "?Get_Int@INIClass@@QBEHPBD0H@Z",
+   "mangled_prefix": "?Get_Int@INIClass@@QBEHPBD0H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050e9a0",
+   "name": "?Get_String@INIClass@@QBEHPBD00PADH@Z",
+   "mangled_prefix": "?Get_String@INIClass@@QBEHPBD00PADH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "005111d0",
+   "name": "?Increase_Table_Size@?$IndexClass@HPAUINISection@INIClass@@@@QAE_NH@Z",
+   "mangled_prefix": "?Increase_Table_Size@?$IndexClass@HPAUINISection@INIClass@@@@QAE_NH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00511130",
+   "name": "?Is_Archive_Same@?$IndexClass@HPAUINIEntry@INIClass@@@@ABE_NABH@Z",
+   "mangled_prefix": "?Is_Archive_Same@?$IndexClass@HPAUINIEntry@INIClass@@@@ABE_NABH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00511260",
+   "name": "?Is_Archive_Same@?$IndexClass@HPAUINISection@INIClass@@@@ABE_NABH@Z",
+   "mangled_prefix": "?Is_Archive_Same@?$IndexClass@HPAUINISection@INIClass@@@@ABE_NABH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00510dd0",
+   "name": "?Is_Present@?$IndexClass@HPAUINIEntry@INIClass@@@@QBE_NABH@Z",
+   "mangled_prefix": "?Is_Present@?$IndexClass@HPAUINIEntry@INIClass@@@@QBE_NABH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00510ff0",
+   "name": "?Is_Present@?$IndexClass@HPAUINISection@INIClass@@@@QBE_NABH@Z",
+   "mangled_prefix": "?Is_Present@?$IndexClass@HPAUINISection@INIClass@@@@QBE_NABH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0040e180",
+   "name": "?Link@GenericNode@@QAEXPAV1@@Z",
+   "mangled_prefix": "?Link@GenericNode@@QAEXPAV1@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050bc30",
+   "name": "?Load@INIClass@@QAEHAAVStraw@@_N@Z",
+   "mangled_prefix": "?Load@INIClass@@QAEHAAVStraw@@_N@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "005106b0",
+   "name": "?Locate_Line_Comment@INIClass@@SIPADPADAAH11@Z",
+   "mangled_prefix": "?Locate_Line_Comment@INIClass@@SIPADPADAAH11@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00a70cc0",
+   "name": "?MixList@?$MixFileClass@VCCFileClass@@@@2V?$List@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+   "mangled_prefix": "?MixList@?$MixFileClass@VCCFileClass@@@@2V?$List@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00595aa0",
+   "name": "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z",
+   "mangled_prefix": "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050e5f0",
+   "name": "?Put_String@INIClass@@QAE_NPBD00@Z",
+   "mangled_prefix": "?Put_String@INIClass@@QAE_NPBD00@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00639670",
+   "name": "?Read_Line@@YIHAAVStraw@@PADHAA_N@Z",
+   "mangled_prefix": "?Read_Line@@YIHAAVStraw@@PADHAA_N@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00510f10",
+   "name": "?Remove_Index@?$IndexClass@HPAUINISection@INIClass@@@@QAE_NABH@Z",
+   "mangled_prefix": "?Remove_Index@?$IndexClass@HPAUINISection@INIClass@@@@QAE_NABH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0050c620",
+   "name": "?Save@INIClass@@QBEHAAVPipe@@@Z",
+   "mangled_prefix": "?Save@INIClass@@QBEHAAVPipe@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00511150",
+   "name": "?Search_For_Node@?$IndexClass@HPAUINIEntry@INIClass@@@@ABEPBUNodeElement@1@ABH@Z",
+   "mangled_prefix": "?Search_For_Node@?$IndexClass@HPAUINIEntry@INIClass@@@@ABEPBUNodeElement@1@ABH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00511280",
+   "name": "?Search_For_Node@?$IndexClass@HPAUINISection@INIClass@@@@ABEPBUNodeElement@1@ABH@Z",
+   "mangled_prefix": "?Search_For_Node@?$IndexClass@HPAUINISection@INIClass@@@@ABEPBUNodeElement@1@ABH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00511300",
+   "name": "?search_compfunc@?$IndexClass@HPAUINIEntry@INIClass@@@@CAHPBX0@Z",
+   "mangled_prefix": "?search_compfunc@?$IndexClass@HPAUINIEntry@INIClass@@@@CAHPBX0@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00511380",
+   "name": "?search_compfunc@?$IndexClass@HPAUINISection@INIClass@@@@CAHPBX0@Z",
+   "mangled_prefix": "?search_compfunc@?$IndexClass@HPAUINISection@INIClass@@@@CAHPBX0@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "006eef10",
+   "name": "?strtrim@@YIPADPAD@Z",
+   "mangled_prefix": "?strtrim@@YIPADPAD@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00b2b630",
+   "name": "?x@?1???A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z@4PAU23@A",
+   "mangled_prefix": "?x@?1???A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z@4PAU23@A",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00b2b62c",
+   "name": "?x@?1???A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z@4PAU23@A",
+   "mangled_prefix": "?x@?1???A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z@4PAU23@A",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007831f0",
+   "name": "__makepath",
+   "mangled_prefix": "__makepath",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "0079c518",
+   "name": "__real@8@3ff8a3d70a3d70a3d800",
+   "mangled_prefix": "__real@8@3ff8a3d70a3d70a3d800",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00784873",
+   "name": "__splitpath",
+   "mangled_prefix": "__splitpath",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00781f20",
+   "name": "__stricmp",
+   "mangled_prefix": "__stricmp",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007961e4",
+   "name": "__strupr",
+   "mangled_prefix": "__strupr",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00782dfd",
+   "name": "_atoi",
+   "mangled_prefix": "_atoi",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00781d46",
+   "name": "_qsort",
+   "mangled_prefix": "_qsort",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007820f4",
+   "name": "_sprintf",
+   "mangled_prefix": "_sprintf",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00783730",
+   "name": "_sscanf",
+   "mangled_prefix": "_sscanf",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00784130",
+   "name": "_strchr",
+   "mangled_prefix": "_strchr",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007823d0",
+   "name": "_strncpy",
+   "mangled_prefix": "_strncpy",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007841f4",
+   "name": "_tolower",
+   "mangled_prefix": "_tolower",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "007829d3",
+   "name": "_toupper",
+   "mangled_prefix": "_toupper",
+   "kind": "reference",
+   "evidence": "binding used by an exact INIClass/MixFileClass unit"
+  },
+  {
+   "address": "00435580",
+   "name": "??0BlowfishEngine@@QAE@XZ",
+   "mangled_prefix": "??0BlowfishEngine@@QAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00534ee0",
+   "name": "??0LCWPipe@@QAE@W4CompControl@0@H@Z",
+   "mangled_prefix": "??0LCWPipe@@QAE@W4CompControl@0@H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "005352d0",
+   "name": "??0LCWStraw@@QAE@W4CompControl@0@H@Z",
+   "mangled_prefix": "??0LCWStraw@@QAE@W4CompControl@0@H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053eb40",
+   "name": "??0LZOPipe@@QAE@W4CompControl@0@H@Z",
+   "mangled_prefix": "??0LZOPipe@@QAE@W4CompControl@0@H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053efb0",
+   "name": "??0LZOStraw@@QAE@W4CompControl@0@H@Z",
+   "mangled_prefix": "??0LZOStraw@@QAE@W4CompControl@0@H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fa90",
+   "name": "??0PKPipe@@QAE@W4CryptControl@0@AAVRandomStraw@@@Z",
+   "mangled_prefix": "??0PKPipe@@QAE@W4CryptControl@0@AAVRandomStraw@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fe30",
+   "name": "??0PKStraw@@QAE@W4CryptControl@0@AAVRandomStraw@@@Z",
+   "mangled_prefix": "??0PKStraw@@QAE@W4CryptControl@0@AAVRandomStraw@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00638950",
+   "name": "??0Random3Class@@QAE@II@Z",
+   "mangled_prefix": "??0Random3Class@@QAE@II@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d2d0",
+   "name": "??0RandomStraw@@QAE@XZ",
+   "mangled_prefix": "??0RandomStraw@@QAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "004355f0",
+   "name": "??1BlowfishEngine@@QAE@XZ",
+   "mangled_prefix": "??1BlowfishEngine@@QAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00534f50",
+   "name": "??1LCWPipe@@UAE@XZ",
+   "mangled_prefix": "??1LCWPipe@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00535340",
+   "name": "??1LCWStraw@@UAE@XZ",
+   "mangled_prefix": "??1LCWStraw@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053eba0",
+   "name": "??1LZOPipe@@UAE@XZ",
+   "mangled_prefix": "??1LZOPipe@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053f010",
+   "name": "??1LZOStraw@@UAE@XZ",
+   "mangled_prefix": "??1LZOStraw@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d320",
+   "name": "??1RandomStraw@@UAE@XZ",
+   "mangled_prefix": "??1RandomStraw@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00638970",
+   "name": "??RRandom3Class@@QAEHXZ",
+   "mangled_prefix": "??RRandom3Class@@QAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fd70",
+   "name": "??_GBlowPipe@@UAEPAXI@Z",
+   "mangled_prefix": "??_GBlowPipe@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00535280",
+   "name": "??_GLCWPipe@@UAEPAXI@Z",
+   "mangled_prefix": "??_GLCWPipe@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "005354e0",
+   "name": "??_GLCWStraw@@UAEPAXI@Z",
+   "mangled_prefix": "??_GLCWStraw@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053ef60",
+   "name": "??_GLZOPipe@@UAEPAXI@Z",
+   "mangled_prefix": "??_GLZOPipe@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053f220",
+   "name": "??_GLZOStraw@@UAEPAXI@Z",
+   "mangled_prefix": "??_GLZOStraw@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fdd0",
+   "name": "??_GPKPipe@@UAEPAXI@Z",
+   "mangled_prefix": "??_GPKPipe@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00610150",
+   "name": "??_GPKStraw@@UAEPAXI@Z",
+   "mangled_prefix": "??_GPKStraw@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d890",
+   "name": "??_GRandomStraw@@UAEPAXI@Z",
+   "mangled_prefix": "??_GRandomStraw@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00435660",
+   "name": "?Decrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+   "mangled_prefix": "?Decrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060f650",
+   "name": "?Decrypt@PKey@@QBEHPBXHPAX@Z",
+   "mangled_prefix": "?Decrypt@PKey@@QBEHPBXHPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00435630",
+   "name": "?Encrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+   "mangled_prefix": "?Encrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060f520",
+   "name": "?Encrypt@PKey@@QBEHPBXHPAX@Z",
+   "mangled_prefix": "?Encrypt@PKey@@QBEHPBXHPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fd10",
+   "name": "?Encrypted_Key_Length@PKPipe@@ABEHXZ",
+   "mangled_prefix": "?Encrypted_Key_Length@PKPipe@@ABEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "006100e0",
+   "name": "?Encrypted_Key_Length@PKStraw@@ABEHXZ",
+   "mangled_prefix": "?Encrypted_Key_Length@PKStraw@@ABEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00435690",
+   "name": "?Flush@BlowPipe@@UAEHXZ",
+   "mangled_prefix": "?Flush@BlowPipe@@UAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "005351c0",
+   "name": "?Flush@LCWPipe@@UAEHXZ",
+   "mangled_prefix": "?Flush@LCWPipe@@UAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053ee70",
+   "name": "?Flush@LZOPipe@@UAEHXZ",
+   "mangled_prefix": "?Flush@LZOPipe@@UAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00435840",
+   "name": "?Get@BlowStraw@@UAEHPAXH@Z",
+   "mangled_prefix": "?Get@BlowStraw@@UAEHPAXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00535380",
+   "name": "?Get@LCWStraw@@UAEHPAXH@Z",
+   "mangled_prefix": "?Get@LCWStraw@@UAEHPAXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053f050",
+   "name": "?Get@LZOStraw@@UAEHPAXH@Z",
+   "mangled_prefix": "?Get@LZOStraw@@UAEHPAXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060ff10",
+   "name": "?Get@PKStraw@@UAEHPAXH@Z",
+   "mangled_prefix": "?Get@PKStraw@@UAEHPAXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d830",
+   "name": "?Get@RandomStraw@@UAEHPAXH@Z",
+   "mangled_prefix": "?Get@RandomStraw@@UAEHPAXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00610140",
+   "name": "?Get_From@PKStraw@@UAEXAAVStraw@@@Z",
+   "mangled_prefix": "?Get_From@PKStraw@@UAEXAAVStraw@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fea0",
+   "name": "?Get_From@PKStraw@@UAEXPAVStraw@@@Z",
+   "mangled_prefix": "?Get_From@PKStraw@@UAEXPAVStraw@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00674c90",
+   "name": "?Hash@SHAEngine@@QAEXPBXJ@Z",
+   "mangled_prefix": "?Hash@SHAEngine@@QAEXPBXJ@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00435800",
+   "name": "?Key@BlowPipe@@QAEXPBXH@Z",
+   "mangled_prefix": "?Key@BlowPipe@@QAEXPBXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00435930",
+   "name": "?Key@BlowStraw@@QAEXPBXH@Z",
+   "mangled_prefix": "?Key@BlowStraw@@QAEXPBXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fb40",
+   "name": "?Key@PKPipe@@QAEXPBVPKey@@@Z",
+   "mangled_prefix": "?Key@PKPipe@@QAEXPBVPKey@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fef0",
+   "name": "?Key@PKStraw@@QAEXPBVPKey@@@Z",
+   "mangled_prefix": "?Key@PKStraw@@QAEXPBVPKey@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00534d40",
+   "name": "?LCW_Comp@@YIHPBXPAXH@Z",
+   "mangled_prefix": "?LCW_Comp@@YIHPBXPAXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00534b50",
+   "name": "?LCW_Uncomp@@YIHPBXPAXK@Z",
+   "mangled_prefix": "?LCW_Uncomp@@YIHPBXPAXK@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fd40",
+   "name": "?Plain_Key_Length@PKPipe@@ABEHXZ",
+   "mangled_prefix": "?Plain_Key_Length@PKPipe@@ABEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00610110",
+   "name": "?Plain_Key_Length@PKStraw@@ABEHXZ",
+   "mangled_prefix": "?Plain_Key_Length@PKStraw@@ABEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "004356d0",
+   "name": "?Put@BlowPipe@@UAEHPBXH@Z",
+   "mangled_prefix": "?Put@BlowPipe@@UAEHPBXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00534f90",
+   "name": "?Put@LCWPipe@@UAEHPBXH@Z",
+   "mangled_prefix": "?Put@LCWPipe@@UAEHPBXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053ebe0",
+   "name": "?Put@LZOPipe@@UAEHPBXH@Z",
+   "mangled_prefix": "?Put@LZOPipe@@UAEHPBXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fba0",
+   "name": "?Put@PKPipe@@UAEHPBXH@Z",
+   "mangled_prefix": "?Put@PKPipe@@UAEHPBXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060fdc0",
+   "name": "?Put_To@PKPipe@@UAEXAAVPipe@@@Z",
+   "mangled_prefix": "?Put_To@PKPipe@@UAEXAAVPipe@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060faf0",
+   "name": "?Put_To@PKPipe@@UAEXPAVPipe@@@Z",
+   "mangled_prefix": "?Put_To@PKPipe@@UAEXPAVPipe@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d350",
+   "name": "?Reset@RandomStraw@@QAEXXZ",
+   "mangled_prefix": "?Reset@RandomStraw@@QAEXXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00674d10",
+   "name": "?Result@SHAEngine@@QBEHPAX@Z",
+   "mangled_prefix": "?Result@SHAEngine@@QBEHPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d790",
+   "name": "?Scramble_Seed@RandomStraw@@AAEXXZ",
+   "mangled_prefix": "?Scramble_Seed@RandomStraw@@AAEXXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d390",
+   "name": "?Seed_Bit@RandomStraw@@QAEXH@Z",
+   "mangled_prefix": "?Seed_Bit@RandomStraw@@QAEXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d370",
+   "name": "?Seed_Bits_Needed@RandomStraw@@QBEHXZ",
+   "mangled_prefix": "?Seed_Bits_Needed@RandomStraw@@QBEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d470",
+   "name": "?Seed_Byte@RandomStraw@@QAEXD@Z",
+   "mangled_prefix": "?Seed_Byte@RandomStraw@@QAEXD@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d680",
+   "name": "?Seed_Long@RandomStraw@@QAEXJ@Z",
+   "mangled_prefix": "?Seed_Long@RandomStraw@@QAEXJ@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0063d580",
+   "name": "?Seed_Short@RandomStraw@@QAEXF@Z",
+   "mangled_prefix": "?Seed_Short@RandomStraw@@QAEXF@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00435600",
+   "name": "?Submit_Key@BlowfishEngine@@QAEXPBXH@Z",
+   "mangled_prefix": "?Submit_Key@BlowfishEngine@@QAEXPBXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "00795940",
+   "name": "?_com_issue_error@@YGXJ@Z",
+   "mangled_prefix": "?_com_issue_error@@YGXJ@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053e490",
+   "name": "?do_compress@@YIHPBEIPAEPAIPAX@Z",
+   "mangled_prefix": "?do_compress@@YIHPBEIPAEPAIPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053e420",
+   "name": "?lzo1x_1_compress@@YIHPBEIPAEPAIPAX@Z",
+   "mangled_prefix": "?lzo1x_1_compress@@YIHPBEIPAEPAIPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0053e970",
+   "name": "?lzo1x_decompress@@YIHPBEIPAEPAIPAX@Z",
+   "mangled_prefix": "?lzo1x_decompress@@YIHPBEIPAEPAIPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "007a1a70",
+   "name": "_CLSID_Blowfish",
+   "mangled_prefix": "_CLSID_Blowfish",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "007cf5b0",
+   "name": "_IID_IBlowfish",
+   "mangled_prefix": "_IID_IBlowfish",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "007ce610",
+   "name": "_IID_IUnknown",
+   "mangled_prefix": "_IID_IUnknown",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0079a5f0",
+   "name": "__imp__CoCreateInstance@20",
+   "mangled_prefix": "__imp__CoCreateInstance@20",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0079a5f4",
+   "name": "__imp__OleRun@4",
+   "mangled_prefix": "__imp__OleRun@4",
+   "kind": "reference",
+   "evidence": "binding used by an exact stream-class unit (compression/encryption worker)"
+  },
+  {
+   "address": "0060f9c0",
+   "name": "??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z",
+   "mangled_prefix": "??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aa4a0",
+   "name": "??0DSurface@@QAE@HH_N@Z",
+   "mangled_prefix": "??0DSurface@@QAE@HH_N@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aab60",
+   "name": "??0DSurface@@QAE@PAUIDirectDrawSurface@@@Z",
+   "mangled_prefix": "??0DSurface@@QAE@PAUIDirectDrawSurface@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aa610",
+   "name": "??0DSurface@@QAE@XZ",
+   "mangled_prefix": "??0DSurface@@QAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060ed40",
+   "name": "??0PKey@@QAE@PBX0@Z",
+   "mangled_prefix": "??0PKey@@QAE@PBX0@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00638790",
+   "name": "??0Random2Class@@QAE@I@Z",
+   "mangled_prefix": "??0Random2Class@@QAE@I@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aa5a0",
+   "name": "??1DSurface@@UAE@XZ",
+   "mangled_prefix": "??1DSurface@@UAE@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060f950",
+   "name": "??6?$Int@$0EA@@@QBE?AV0@H@Z",
+   "mangled_prefix": "??6?$Int@$0EA@@@QBE?AV0@H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060f900",
+   "name": "??D?$Int@$0EA@@@QBE?AV0@G@Z",
+   "mangled_prefix": "??D?$Int@$0EA@@@QBE?AV0@G@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060f7a0",
+   "name": "??G?$Int@$0EA@@@QBE?AV0@G@Z",
+   "mangled_prefix": "??G?$Int@$0EA@@@QBE?AV0@G@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060f8a0",
+   "name": "??H?$Int@$0EA@@@QBE?AV0@G@Z",
+   "mangled_prefix": "??H?$Int@$0EA@@@QBE?AV0@G@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060f9a0",
+   "name": "??O?$Int@$0EA@@@QBE_NABV0@@Z",
+   "mangled_prefix": "??O?$Int@$0EA@@@QBE_NABV0@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "006388a0",
+   "name": "??RRandom2Class@@QAEHHH@Z",
+   "mangled_prefix": "??RRandom2Class@@QAEHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00638840",
+   "name": "??RRandom2Class@@QAEHXZ",
+   "mangled_prefix": "??RRandom2Class@@QAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "006389d0",
+   "name": "??RRandom3Class@@QAEHHH@Z",
+   "mangled_prefix": "??RRandom3Class@@QAEHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00638720",
+   "name": "??RRandomClass@@QAEHHH@Z",
+   "mangled_prefix": "??RRandomClass@@QAEHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00638700",
+   "name": "??RRandomClass@@QAEHXZ",
+   "mangled_prefix": "??RRandomClass@@QAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060f880",
+   "name": "??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z",
+   "mangled_prefix": "??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007afc94",
+   "name": "??_7?$BlitPlain@E@@6B@",
+   "mangled_prefix": "??_7?$BlitPlain@E@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007afc84",
+   "name": "??_7?$BlitPlain@G@@6B@",
+   "mangled_prefix": "??_7?$BlitPlain@G@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007afcb4",
+   "name": "??_7?$BlitTrans@E@@6B@",
+   "mangled_prefix": "??_7?$BlitTrans@E@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007afca4",
+   "name": "??_7?$BlitTrans@G@@6B@",
+   "mangled_prefix": "??_7?$BlitTrans@G@@6B@",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007759b0",
+   "name": "??_G?$BlitPlain@E@@UAEPAXI@Z",
+   "mangled_prefix": "??_G?$BlitPlain@E@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007759d0",
+   "name": "??_G?$BlitPlain@G@@UAEPAXI@Z",
+   "mangled_prefix": "??_G?$BlitPlain@G@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007759f0",
+   "name": "??_G?$BlitTrans@E@@UAEPAXI@Z",
+   "mangled_prefix": "??_G?$BlitTrans@E@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775a10",
+   "name": "??_G?$BlitTrans@G@@UAEPAXI@Z",
+   "mangled_prefix": "??_G?$BlitTrans@G@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004113d0",
+   "name": "??_GBSurface@@UAEPAXI@Z",
+   "mangled_prefix": "??_GBSurface@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0048c7b0",
+   "name": "??_GBlitter@@UAEPAXI@Z",
+   "mangled_prefix": "??_GBlitter@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004b14f0",
+   "name": "??_GDSurface@@UAEPAXI@Z",
+   "mangled_prefix": "??_GDSurface@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00411350",
+   "name": "??_GSurface@@UAEPAXI@Z",
+   "mangled_prefix": "??_GSurface@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00411320",
+   "name": "??_GXSurface@@UAEPAXI@Z",
+   "mangled_prefix": "??_GXSurface@@UAEPAXI@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00470090",
+   "name": "?Add_Search_Drive@CDFileClass@@SIXPAD@Z",
+   "mangled_prefix": "?Add_Search_Drive@CDFileClass@@SIXPAD@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00434ae0",
+   "name": "?Bit_Blit@@YI_NAAVSurface@@ABVRect@@01ABVBlitter@@HHHH@Z",
+   "mangled_prefix": "?Bit_Blit@@YI_NAAVSurface@@ABVRect@@01ABVBlitter@@HHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00434b40",
+   "name": "?Bit_Blit@@YI_NAAVSurface@@ABVRect@@1011ABVBlitter@@HHHH@Z",
+   "mangled_prefix": "?Bit_Blit@@YI_NAAVSurface@@ABVRect@@1011ABVBlitter@@HHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775a90",
+   "name": "?BlitBackward@?$BlitPlain@E@@UBEXPAXPBXHHHHH@Z",
+   "mangled_prefix": "?BlitBackward@?$BlitPlain@E@@UBEXPAXPBXHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775ae0",
+   "name": "?BlitBackward@?$BlitPlain@G@@UBEXPAXPBXHHHHH@Z",
+   "mangled_prefix": "?BlitBackward@?$BlitPlain@G@@UBEXPAXPBXHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775a30",
+   "name": "?BlitBackward@?$BlitTrans@E@@UBEXPAXPBXHHHHH@Z",
+   "mangled_prefix": "?BlitBackward@?$BlitTrans@E@@UBEXPAXPBXHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775b30",
+   "name": "?BlitBackward@?$BlitTrans@G@@UBEXPAXPBXHHHHH@Z",
+   "mangled_prefix": "?BlitBackward@?$BlitTrans@G@@UBEXPAXPBXHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775a60",
+   "name": "?BlitForward@?$BlitPlain@E@@UBEXPAXPBXHHHHHH@Z",
+   "mangled_prefix": "?BlitForward@?$BlitPlain@E@@UBEXPAXPBXHHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775ab0",
+   "name": "?BlitForward@?$BlitPlain@G@@UBEXPAXPBXHHHHHH@Z",
+   "mangled_prefix": "?BlitForward@?$BlitPlain@G@@UBEXPAXPBXHHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775980",
+   "name": "?BlitForward@?$BlitTrans@E@@UBEXPAXPBXHHHHHH@Z",
+   "mangled_prefix": "?BlitForward@?$BlitTrans@E@@UBEXPAXPBXHHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775b00",
+   "name": "?BlitForward@?$BlitTrans@G@@UBEXPAXPBXHHHHHH@Z",
+   "mangled_prefix": "?BlitForward@?$BlitTrans@G@@UBEXPAXPBXHHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00a417c5",
+   "name": "?Borrow@?$Int@$0EA@@@2_NA",
+   "mangled_prefix": "?Borrow@?$Int@$0EA@@@2_NA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00434940",
+   "name": "?Buffer_Size@@YIHAAVSurface@@HH@Z",
+   "mangled_prefix": "?Buffer_Size@@YIHAAVSurface@@HH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004113b0",
+   "name": "?Bytes_Per_Pixel@BSurface@@UAEHXZ",
+   "mangled_prefix": "?Bytes_Per_Pixel@BSurface@@UAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aac60",
+   "name": "?Bytes_Per_Pixel@DSurface@@UAEHXZ",
+   "mangled_prefix": "?Bytes_Per_Pixel@DSurface@@UAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aae20",
+   "name": "?Can_Blit@DSurface@@UAE_NXZ",
+   "mangled_prefix": "?Can_Blit@DSurface@@UAE_NXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aadc0",
+   "name": "?Can_Lock@DSurface@@UAE_NHH@Z",
+   "mangled_prefix": "?Can_Lock@DSurface@@UAE_NHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00411270",
+   "name": "?Can_Lock@Surface@@UAE_NHH@Z",
+   "mangled_prefix": "?Can_Lock@Surface@@UAE_NHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00a417c4",
+   "name": "?Carry@?$Int@$0EA@@@2_NA",
+   "mangled_prefix": "?Carry@?$Int@$0EA@@@2_NA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00470100",
+   "name": "?Clear_Search_Drives@CDFileClass@@SIXXZ",
+   "mangled_prefix": "?Clear_Search_Drives@CDFileClass@@SIXXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00775190",
+   "name": "?Clip_Blit_Rects@@YI_NAAVRect@@ABV1@01@Z",
+   "mangled_prefix": "?Clip_Blit_Rects@@YI_NAAVRect@@ABV1@01@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004b14c0",
+   "name": "?Copy_From@DSurface@@UAE_NAAVSurface@@_N1@Z",
+   "mangled_prefix": "?Copy_From@DSurface@@UAE_NAAVSurface@@_N1@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aaf80",
+   "name": "?Copy_From@DSurface@@UAE_NABVRect@@AAVSurface@@0_N2@Z",
+   "mangled_prefix": "?Copy_From@DSurface@@UAE_NABVRect@@AAVSurface@@0_N2@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00774e60",
+   "name": "?Copy_From@XSurface@@UAE_NAAVSurface@@_N1@Z",
+   "mangled_prefix": "?Copy_From@XSurface@@UAE_NAAVSurface@@_N1@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00774f00",
+   "name": "?Copy_From@XSurface@@UAE_NABVRect@@AAVSurface@@0_N2@Z",
+   "mangled_prefix": "?Copy_From@XSurface@@UAE_NABVRect@@AAVSurface@@0_N2@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0085089c",
+   "name": "?CurrentCDDrive@CDFileClass@@2HA",
+   "mangled_prefix": "?CurrentCDDrive@CDFileClass@@2HA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060ee10",
+   "name": "?Decode_Exponent@PKey@@QAEXPAX@Z",
+   "mangled_prefix": "?Decode_Exponent@PKey@@QAEXPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060ede0",
+   "name": "?Decode_Modulus@PKey@@QAEXPAX@Z",
+   "mangled_prefix": "?Decode_Modulus@PKey@@QAEXPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "008523cc",
+   "name": "?DirectDrawObject@@3PAUIDirectDraw@@A",
+   "mangled_prefix": "?DirectDrawObject@@3PAUIDirectDraw@@A",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00773950",
+   "name": "?Draw_Line@XSurface@@UAE_NABUPoint2D@@0H@Z",
+   "mangled_prefix": "?Draw_Line@XSurface@@UAE_NABUPoint2D@@0H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00773980",
+   "name": "?Draw_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1H@Z",
+   "mangled_prefix": "?Draw_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00774130",
+   "name": "?Draw_Rect@XSurface@@UAE_NABVRect@@0H@Z",
+   "mangled_prefix": "?Draw_Rect@XSurface@@UAE_NABVRect@@0H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00774100",
+   "name": "?Draw_Rect@XSurface@@UAE_NABVRect@@H@Z",
+   "mangled_prefix": "?Draw_Rect@XSurface@@UAE_NABVRect@@H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060edc0",
+   "name": "?Encode_Exponent@PKey@@QBEHPAX@Z",
+   "mangled_prefix": "?Encode_Exponent@PKey@@QBEHPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060eda0",
+   "name": "?Encode_Modulus@PKey@@QBEHPAX@Z",
+   "mangled_prefix": "?Encode_Modulus@PKey@@QBEHPAX@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00a417c0",
+   "name": "?Error@?$Int@$0EA@@@2HA",
+   "mangled_prefix": "?Error@?$Int@$0EA@@@2HA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00774e20",
+   "name": "?Fill@XSurface@@UAE_NH@Z",
+   "mangled_prefix": "?Fill@XSurface@@UAE_NH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004ab520",
+   "name": "?Fill_Rect@DSurface@@UAE_NABVRect@@0H@Z",
+   "mangled_prefix": "?Fill_Rect@DSurface@@UAE_NABVRect@@0H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004ab4f0",
+   "name": "?Fill_Rect@DSurface@@UAE_NABVRect@@H@Z",
+   "mangled_prefix": "?Fill_Rect@DSurface@@UAE_NABVRect@@H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007743c0",
+   "name": "?Fill_Rect@XSurface@@UAE_NABVRect@@0H@Z",
+   "mangled_prefix": "?Fill_Rect@XSurface@@UAE_NABVRect@@0H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00774390",
+   "name": "?Fill_Rect@XSurface@@UAE_NABVRect@@H@Z",
+   "mangled_prefix": "?Fill_Rect@XSurface@@UAE_NABVRect@@H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007d27d4",
+   "name": "?FindHandle@CDFileClass@@2PAXA",
+   "mangled_prefix": "?FindHandle@CDFileClass@@2PAXA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004702b0",
+   "name": "?Find_File@CDFileClass@@SI_NPAD@Z",
+   "mangled_prefix": "?Find_File@CDFileClass@@SI_NPAD@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00434a20",
+   "name": "?From_Buffer@@YI_NAAVSurface@@ABVRect@@AAVBuffer@@@Z",
+   "mangled_prefix": "?From_Buffer@@YI_NAAVSurface@@ABVRect@@AAVBuffer@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060ee30",
+   "name": "?Generate@PKey@@SIXAAVStraw@@HAAV1@1@Z",
+   "mangled_prefix": "?Generate@PKey@@SIXAAVStraw@@HAAV1@1@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004983e0",
+   "name": "?Get_CD_Index@@YIHHH@Z",
+   "mangled_prefix": "?Get_CD_Index@@YIHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aabf0",
+   "name": "?Get_DC@DSurface@@QAEPAUHDC__@@XZ",
+   "mangled_prefix": "?Get_DC@DSurface@@QAEPAUHDC__@@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004112d0",
+   "name": "?Get_Height@Surface@@UAEHXZ",
+   "mangled_prefix": "?Get_Height@Surface@@UAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007741d0",
+   "name": "?Get_Pixel@XSurface@@UAEHABUPoint2D@@@Z",
+   "mangled_prefix": "?Get_Pixel@XSurface@@UAEHABUPoint2D@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00411290",
+   "name": "?Get_Rect@Surface@@UAE?AVRect@@XZ",
+   "mangled_prefix": "?Get_Rect@Surface@@UAE?AVRect@@XZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004112c0",
+   "name": "?Get_Width@Surface@@UAEHXZ",
+   "mangled_prefix": "?Get_Width@Surface@@UAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060fa20",
+   "name": "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z",
+   "mangled_prefix": "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060f800",
+   "name": "?Inverse@?$Int@$0EA@@@QBE?AV1@ABV1@@Z",
+   "mangled_prefix": "?Inverse@?$Int@$0EA@@@QBE?AV1@ABV1@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004b14e0",
+   "name": "?Is_Direct_Draw@DSurface@@UAE_NXZ",
+   "mangled_prefix": "?Is_Direct_Draw@DSurface@@UAE_NXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00411340",
+   "name": "?Is_Direct_Draw@Surface@@UAE_NXZ",
+   "mangled_prefix": "?Is_Direct_Draw@Surface@@UAE_NXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00411310",
+   "name": "?Is_Direct_Draw@XSurface@@UAE_NXZ",
+   "mangled_prefix": "?Is_Direct_Draw@XSurface@@UAE_NXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0046fdb0",
+   "name": "?Is_Disk_Inserted@CDFileClass@@SIHH@Z",
+   "mangled_prefix": "?Is_Disk_Inserted@CDFileClass@@SIHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00411300",
+   "name": "?Is_Locked@XSurface@@UAE_NXZ",
+   "mangled_prefix": "?Is_Locked@XSurface@@UAE_NXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aaee0",
+   "name": "?Is_Surface_Lost@DSurface@@QAEHXZ",
+   "mangled_prefix": "?Is_Surface_Lost@DSurface@@QAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "008508a0",
+   "name": "?LastCDDrive@CDFileClass@@2HA",
+   "mangled_prefix": "?LastCDDrive@CDFileClass@@2HA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00411370",
+   "name": "?Lock@BSurface@@UAEPAXHH@Z",
+   "mangled_prefix": "?Lock@BSurface@@UAEPAXHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004112e0",
+   "name": "?Lock@XSurface@@UAEPAXHH@Z",
+   "mangled_prefix": "?Lock@XSurface@@UAEPAXHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007ee4ac",
+   "name": "?Mix1@Random3Class@@0PAKA",
+   "mangled_prefix": "?Mix1@Random3Class@@0PAKA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007ee4fc",
+   "name": "?Mix2@Random3Class@@0PAKA",
+   "mangled_prefix": "?Mix2@Random3Class@@0PAKA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00674e60",
+   "name": "?Process_Block@SHAEngine@@ABEXPBXAATSHADigest@1@@Z",
+   "mangled_prefix": "?Process_Block@SHAEngine@@ABEXPBXAATSHADigest@1@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00674bf0",
+   "name": "?Process_Partial@SHAEngine@@AAEXAAPBXAAJ@Z",
+   "mangled_prefix": "?Process_Partial@SHAEngine@@AAEXAAPBXAAJ@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00774220",
+   "name": "?Put_Pixel@XSurface@@UAE_NABUPoint2D@@H@Z",
+   "mangled_prefix": "?Put_Pixel@XSurface@@UAE_NABUPoint2D@@H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00435060",
+   "name": "?RLE_Blit@@YI_NAAVSurface@@ABVRect@@01ABVRLEBlitter@@HHHH@Z",
+   "mangled_prefix": "?RLE_Blit@@YI_NAAVSurface@@ABVRect@@01ABVRLEBlitter@@HHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004350c0",
+   "name": "?RLE_Blit@@YI_NAAVSurface@@ABVRect@@1011ABVRLEBlitter@@HHHHHUBlitPair@@@Z",
+   "mangled_prefix": "?RLE_Blit@@YI_NAAVSurface@@ABVRect@@1011ABVRLEBlitter@@HHHHHUBlitPair@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0060f850",
+   "name": "?Randomize@?$Int@$0EA@@@QAEXAAVStraw@@ABV1@1@Z",
+   "mangled_prefix": "?Randomize@?$Int@$0EA@@@QAEXAAVStraw@@ABV1@1@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "008508a4",
+   "name": "?RawPath@CDFileClass@@2PADA",
+   "mangled_prefix": "?RawPath@CDFileClass@@2PADA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0046fe20",
+   "name": "?Refresh_Search_Drives@CDFileClass@@SIXXZ",
+   "mangled_prefix": "?Refresh_Search_Drives@CDFileClass@@SIXXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aac30",
+   "name": "?Release_DC@DSurface@@QAEHPAUHDC__@@@Z",
+   "mangled_prefix": "?Release_DC@DSurface@@QAEHPAUHDC__@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00a416c0",
+   "name": "?Remainder@?$Int@$0EA@@@2V1@A",
+   "mangled_prefix": "?Remainder@?$Int@$0EA@@@2V1@A",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004700e0",
+   "name": "?Set_CD_Drive@CDFileClass@@SIXH@Z",
+   "mangled_prefix": "?Set_CD_Drive@CDFileClass@@SIXH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0046fe70",
+   "name": "?Set_Search_Drives@CDFileClass@@SIHPAD@Z",
+   "mangled_prefix": "?Set_Search_Drives@CDFileClass@@SIHPAD@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004113c0",
+   "name": "?Stride@BSurface@@UAEHXZ",
+   "mangled_prefix": "?Stride@BSurface@@UAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004aac70",
+   "name": "?Stride@DSurface@@UAEHXZ",
+   "mangled_prefix": "?Stride@DSurface@@UAEHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00434960",
+   "name": "?To_Buffer@@YI_NAAVSurface@@ABVRect@@AAVBuffer@@@Z",
+   "mangled_prefix": "?To_Buffer@@YI_NAAVSurface@@ABVRect@@AAVBuffer@@@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00773ec0",
+   "name": "?Unknown_Slot13@XSurface@@UAE_NHHHHHHH@Z",
+   "mangled_prefix": "?Unknown_Slot13@XSurface@@UAE_NHHHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00773ed0",
+   "name": "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z",
+   "mangled_prefix": "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00773ee0",
+   "name": "?Unknown_Slot15@XSurface@@UAE_NHHHHHHHHHHH@Z",
+   "mangled_prefix": "?Unknown_Slot15@XSurface@@UAE_NHHHHHHHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00773ef0",
+   "name": "?Unknown_Slot16@XSurface@@UAE_NHHHHHHH@Z",
+   "mangled_prefix": "?Unknown_Slot16@XSurface@@UAE_NHHHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00773ea0",
+   "name": "?Unknown_Slot19@XSurface@@UAEHHHHHHH@Z",
+   "mangled_prefix": "?Unknown_Slot19@XSurface@@UAEHHHHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00773eb0",
+   "name": "?Unknown_Slot20@XSurface@@UAE_NHHHH@Z",
+   "mangled_prefix": "?Unknown_Slot20@XSurface@@UAE_NHHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00411280",
+   "name": "?Unknown_Slot26@Surface@@UAE_NHH@Z",
+   "mangled_prefix": "?Unknown_Slot26@Surface@@UAE_NHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007746b0",
+   "name": "?Unknown_Slot7@XSurface@@UAE_NHHH@Z",
+   "mangled_prefix": "?Unknown_Slot7@XSurface@@UAE_NHHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "004112f0",
+   "name": "?Unlock@XSurface@@UAE_NXZ",
+   "mangled_prefix": "?Unlock@XSurface@@UAE_NXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7d90",
+   "name": "?XMP_Add@@YI_NPAKPBK1_NH@Z",
+   "mangled_prefix": "?XMP_Add@@YI_NPAKPBK1_NH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7e00",
+   "name": "?XMP_Add_Int@@YI_NPAKPBKK_NH@Z",
+   "mangled_prefix": "?XMP_Add_Int@@YI_NPAKPBKK_NH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7d40",
+   "name": "?XMP_Compare@@YIHPBK0H@Z",
+   "mangled_prefix": "?XMP_Compare@@YIHPBK0H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7cc0",
+   "name": "?XMP_Count_Bits@@YIHPBKH@Z",
+   "mangled_prefix": "?XMP_Count_Bits@@YIHPBKH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a76d0",
+   "name": "?XMP_DER_Decode@@YIXPAKPBEH@Z",
+   "mangled_prefix": "?XMP_DER_Decode@@YIXPAKPBEH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7610",
+   "name": "?XMP_DER_Encode@@YIHPBKPAEH@Z",
+   "mangled_prefix": "?XMP_DER_Encode@@YIHPBKPAEH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a9860",
+   "name": "?XMP_Exponent_Mod@@YIHPAKPBK11H@Z",
+   "mangled_prefix": "?XMP_Exponent_Mod@@YIHPAKPBK11H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7540",
+   "name": "?XMP_Fetch_Prime_Size@@YIHXZ",
+   "mangled_prefix": "?XMP_Fetch_Prime_Size@@YIHXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7530",
+   "name": "?XMP_Fetch_Prime_Table@@YIPBGXZ",
+   "mangled_prefix": "?XMP_Fetch_Prime_Table@@YIPBGXZ",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7ca0",
+   "name": "?XMP_Init@@YIXPAKKH@Z",
+   "mangled_prefix": "?XMP_Init@@YIXPAKKH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a8aa0",
+   "name": "?XMP_Inverse_A_Mod_B@@YIXPAKPBK1H@Z",
+   "mangled_prefix": "?XMP_Inverse_A_Mod_B@@YIXPAKPBK1H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005aa380",
+   "name": "?XMP_Is_Prime@@YI_NPBKH@Z",
+   "mangled_prefix": "?XMP_Is_Prime@@YI_NPBKH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005aa1a0",
+   "name": "?XMP_Randomize@@YIXPAKAAVStraw@@PBK2H@Z",
+   "mangled_prefix": "?XMP_Randomize@@YIXPAKAAVStraw@@PBK2H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7b00",
+   "name": "?XMP_Shift_Left_Bits@@YIXPAKHH@Z",
+   "mangled_prefix": "?XMP_Shift_Left_Bits@@YIXPAKHH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a7ec0",
+   "name": "?XMP_Sub_Int@@YI_NPAKPBKG_NH@Z",
+   "mangled_prefix": "?XMP_Sub_Int@@YI_NPAKPBKG_NH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a8540",
+   "name": "?XMP_Unsigned_Div_Int@@YIGPAKPBKGH@Z",
+   "mangled_prefix": "?XMP_Unsigned_Div_Int@@YIGPAKPBKGH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a8340",
+   "name": "?XMP_Unsigned_Mult@@YIHPAKPBK1H@Z",
+   "mangled_prefix": "?XMP_Unsigned_Mult@@YIHPAKPBK1H@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "005a80f0",
+   "name": "?XMP_Unsigned_Mult_Int@@YIHPAKPBKFH@Z",
+   "mangled_prefix": "?XMP_Unsigned_Mult_Int@@YIHPAKPBKFH@Z",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00ad0a70",
+   "name": "?unknown_buffer_ad0a70@@3PAEA",
+   "mangled_prefix": "?unknown_buffer_ad0a70@@3PAEA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00ae3408",
+   "name": "?unknown_buffer_ae3408@@3PAEA",
+   "mangled_prefix": "?unknown_buffer_ae3408@@3PAEA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00852fb4",
+   "name": "?unknown_clipper_852fb4@@3PAUIDirectDrawClipper@@A",
+   "mangled_prefix": "?unknown_clipper_852fb4@@3PAUIDirectDrawClipper@@A",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00851cb0",
+   "name": "?unknown_flag_851cb0@@3_NA",
+   "mangled_prefix": "?unknown_flag_851cb0@@3_NA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00852fd7",
+   "name": "?unknown_flag_852fd7@@3_NA",
+   "mangled_prefix": "?unknown_flag_852fd7@@3_NA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00a40d28",
+   "name": "?unknown_flag_a40d28@@3_NA",
+   "mangled_prefix": "?unknown_flag_a40d28@@3_NA",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00ae0c80",
+   "name": "?unknown_surface_ae0c80@@3VBSurface@@A",
+   "mangled_prefix": "?unknown_surface_ae0c80@@3VBSurface@@A",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00ae0db8",
+   "name": "?unknown_surface_ae0db8@@3VBSurface@@A",
+   "mangled_prefix": "?unknown_surface_ae0db8@@3VBSurface@@A",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00783850",
+   "name": "__chkstk",
+   "mangled_prefix": "__chkstk",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00783810",
+   "name": "__strnicmp",
+   "mangled_prefix": "__strnicmp",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0078298a",
+   "name": "_atexit",
+   "mangled_prefix": "_atexit",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "007846aa",
+   "name": "_rand",
+   "mangled_prefix": "_rand",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "00782ec2",
+   "name": "_strtok",
+   "mangled_prefix": "_strtok",
+   "kind": "reference",
+   "evidence": "binding used by an exact class unit (worker delivery)"
+  },
+  {
+   "address": "0042c9f0",
+   "name": "BaseClass::`scalar deleting destructor'",
+   "mangled_prefix": "??_GBaseClass@@",
+   "kind": "method",
+   "evidence": "BaseClass vtable slot 2; slot 0 (0x42C6A0) is BaseClass::Load, called by HouseClass::Load"
+  }
+ ]
+}

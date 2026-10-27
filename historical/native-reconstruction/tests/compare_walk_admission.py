@@ -1,0 +1,112 @@
+#!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
+"""Compare complete queued Walk Process with actual Infantry admission."""
+import argparse,itertools,json,re,subprocess,time
+from pathlib import Path
+import compare_infantry_subcell as parent
+from compare_original import PATCHED_EXPECTED,write_report
+from presentation_evidence import ROOT,private_path,hash_file,validate_receipt,check_replay_destination
+from verify_walk_admission import verify
+import compare_walk_arrival as movement
+NATIVE=tuple(p for p in set((*parent.NATIVE,*movement.parent.NATIVE,'src/sim/WalkHead.cpp','src/sim/UnitDiscovery.cpp','src/sim/FootCoordinates.cpp')) if not p.startswith('tests/'))+('tests/walk_queued_vectors.cpp',)
+import compare_walk_queued as queued
+ORIGINAL=tuple(sorted(set((*queued.ORIGINAL,'tests/original_walk_admission.py','tools/verify_walk_admission.py',
+ 'tools/verify_infantry_admission.py','tools/verify_unit_admission.py','tests/compare_walk_admission.py'))))
+def source_closure():
+ pending=list(NATIVE);seen=set()
+ while pending:
+  path=pending.pop()
+  if path in seen:continue
+  seen.add(path)
+  for name in re.findall(r'^#include "([^\"]+)"',(ROOT/path).read_text(),re.M):
+   local=(ROOT/path).parent/name;pending.append(str(local.relative_to(ROOT)) if local.exists() else 'src/'+name)
+ return tuple(sorted(seen))
+SOURCES=(*source_closure(),*ORIGINAL,'tests/test_walk_admission.py','tools/run_evidence.py','CMakeLists.txt')
+FLAGS=dict(complete_queued_Walk_actual_Infantry_admission=True,actual_head_subcells_level_and_Foot=True,
+ borrowed_same_actor_Cell_occupation_flags_level_and_House=True,selected_ordered_stores_and_full_rng=True,
+ parity_map_floor_speed_Mark_notification_destination_reset_initial_records_supplied=True,
+ nonzero_admission_continuation=False,production_world_join=False,runtime_enabled=False)
+def require(ok):
+ if not ok:raise ValueError('Joined Walk admission evidence/input differs')
+def command(flag32d=0,flag370=0,speedType=1,loading=1,bits=0x3f800000,lands=(0,0),heads=(-1,-1),ramps=(0,0),**kw):
+ if 'cells' not in kw:kw['cells']=((0x12340000,0x56780000,0,3,3),(0x98760000,0xabcd0000,0,3,3))
+ return 'A'+queued.command(**kw)[1:]+' '+' '.join(map(str,(flag32d,flag370,speedType,loading,bits,*lands,*heads,*ramps)))
+def parse(cmd):
+ t=cmd.split();require(len(t)==47 and t[0]=='A');v=queued.parse('Q '+' '.join(t[1:36]));o=list(map(int,t[36:]))
+ require(all(0<=o[i]<=255 for i in (0,1,9,10)) and 0<=o[2]<=8 and -2147483648<=o[3]<=2147483647 and 0<=o[4]<=0xffffffff)
+ require(all(0<=o[i]<=11 for i in (5,6)) and all(-1<=o[i]<=0 for i in (7,8)))
+ return v,o
+def scenarios():
+ for d,p,speed in itertools.product(range(8),((128,128,0),(-255,-1,17),(-257,-511,-17)),(16,64)):
+  yield 'actual_admission_then_head_interpolation_arrival_Stop',command(position=p,direction=d,speed=speed,calls=40)
+ for d,level in itertools.product(range(8),(-128,-1,0,1,127)):
+  yield 'live_signed_Cell_levels',command(direction=d,levels=(level,level))
+ for d,head in itertools.product(range(8),(-1,0)):
+  cells=((0x12340000,0x56780000,0x300,3,3),(0x98760000,0xabcd0000,0x300,3,3))
+  yield 'late_elevated_occupation_and_self_list',command(direction=d,bridge=1,cells=cells,heads=(head,head))
+ for mask,owner in itertools.product((0,1,2,4,8,16,3,5,9,17,27),(-1,3)):
+  cells=((0x12340000|mask,0x56780000|mask,0,owner,owner),(0x98760000|mask,0xabcd0000|mask,0,owner,owner))
+  yield 'same_occupation_and_House_as_head',command(cells=cells,calls=2,heads=(0,0))
+ for bits,land,speedType in itertools.product((0x3f800000,0xbf800000,0x7f800000,0xff800000),(0,11),(0,1,8)):
+  yield 'actual_speed_load_before_movement',command(bits=bits,lands=(land,land),speedType=speedType)
+ for bits in (0,0x80000000,0x7f800001,0xffc12345):
+  yield 'actual_flag370_speed_bypass',command(bits=bits,flag370=255)
+ for flag,loading in itertools.product((0,1,128,255),(-1,1)):
+  yield 'loading_bypasses_guarded_permission',command(flag32d=flag,loading=loading)
+ for m,trigger in itertools.product((1,2,4,8,16,32,128,256),(1,2,3,4)):
+  yield 'late_lookup_changes_shared_fields',command(mutation=m,trigger=trigger)
+ for d in (-2147483648,-17,-1,9,25,2147483647):
+  if d!=-1:yield 'raw_direction_reaches_actual_admission',command(direction=d)
+
+def identities(a):
+ return dict(original=dict(inspection=verify(a.exe.read_bytes()),sources={p:hash_file(ROOT/p) for p in ORIGINAL},
+  data={k:hash_file(getattr(a,k)) for k in ('render_data','raster_data','direction_data','subcell_data')}),native_sources={p:hash_file(ROOT/p) for p in source_closure()})
+def validate(e,r,f,current):
+ validate_receipt(e,r,f);require(e['executable_sha256']==PATCHED_EXPECTED and e['profile']=='supplied-ra2-1006')
+ require(e['evidence']['identities']['original']==current['original'])
+ for k,v in FLAGS.items():require(e['evidence'].get(k) is v)
+ require(e['commands'] and len(e['commands'])==len(e['expected'])==len(e['labels']))
+ require(e['evidence']['audited_original_calls']==3+sum(parse(cmd)[0][7] for cmd in e['commands']))
+ for cmd,row in zip(e['commands'],e['expected']):
+  count=parse(cmd)[0][7];require(isinstance(row,list) and all(isinstance(t,str) for t in row) and row.count('Z')==1 and row.count('rng')==1 and row.count('R')==count)
+ require(list(zip(e['labels'],e['commands']))==list(scenarios()))
+def main():
+ p=argparse.ArgumentParser(description=__doc__)
+ for k in ('exe','native','render-data','raster-data','direction-data','subcell-data'):p.add_argument('--'+k,type=Path,required=True)
+ for k in ('output','expectations','report'):p.add_argument('--'+k,type=Path)
+ a=p.parse_args();start=time.monotonic();current=identities(a);runner=hash_file(a.native)
+ if a.expectations:
+  require(not a.output and a.report is not None);source=private_path(a.expectations,a.exe);fingerprint=hash_file(source)
+  e=json.loads(source.read_text());validate(e,json.loads((source.parent/'report.json').read_text()),fingerprint,current)
+  commands,expected,labels=[e[k] for k in ('commands','expected','labels')];meta=e['evidence'];generation=0
+  report=private_path(a.report,a.exe);check_replay_destination(report,source,source.parent/'report.json')
+ else:
+  require(a.output is not None and not a.report);folder=private_path(a.output,a.exe);require(not folder.exists());report=folder/'report.json'
+  from original_walk_admission import WalkAdmissionOracle
+  o=WalkAdmissionOracle(a.exe);commands=[];expected=[];labels=[];now=time.monotonic()
+  for label,cmd in scenarios():
+   try:row=o.run_joined(*parse(cmd))
+   except BaseException:print('Failed queued Walk scenario',label,cmd,flush=True);raise
+   commands.append(cmd);expected.append(row);labels.append(label)
+  generation=time.monotonic()-now;meta=dict(FLAGS,cases=len(commands),audited_original_calls=o.audit_calls,counts=dict(o.counts))
+  require(all(o.counts.get(hex(k),0)>0 for k in (0x71dff0,0x71e220,0x5d47d0,0x5d51e0,0x71f590,0x4764b0,0x508410,0x5084a0,0x483390,0x4916d0,0x6388a0,0x6c7420,0x594770,0x476cc0,0x503190,0x4c8730,0x47a130,0x476ac0,0x4e5500,0x491620)))
+  require(o.counts['0x71dff0']==o.audit_calls-3 and current==identities(a) and runner==hash_file(a.native))
+  origin=dict(meta,identities=current,evidence_mode='fresh-original',original_instructions_executed=True,
+   original_instructions_modified=False,original_generation_seconds=generation,receipt_contains_original_results_only=True)
+  source=folder/'expected.json';write_report(a.exe,source,dict(executable_sha256=PATCHED_EXPECTED,profile='supplied-ra2-1006',commands=commands,expected=expected,labels=labels,evidence=origin))
+  fingerprint=hash_file(source);write_report(a.exe,report,dict(origin,expectations_sha256=fingerprint));report=folder/'native-comparison.json'
+ now=time.monotonic();proc=subprocess.run([str(a.native),str(a.render_data),str(a.raster_data),str(a.direction_data),str(a.subcell_data),'--admission'],input='\n'.join(commands)+'\n',capture_output=True,text=True)
+ report.parent.mkdir(parents=True,exist_ok=True);report.with_suffix('.stdout').write_text(proc.stdout);report.with_suffix('.stderr').write_text(proc.stderr)
+ require(proc.returncode==0);actual=[r.split() for r in proc.stdout.splitlines()];require(len(actual)==len(expected))
+ for i,(got,want) in enumerate(zip(actual,expected)):
+  if got!=want:
+   j=next((j for j,(x,y) in enumerate(zip(got,want)) if x!=y),min(len(got),len(want)))
+   raise AssertionError((i,labels[i],commands[i],j,got[max(0,j-6):j+15],want[max(0,j-6):j+15]))
+ comparison=time.monotonic()-now;guards=subprocess.run([str(a.native),'--guards'],capture_output=True,text=True,check=True)
+ require('guards PASS' in guards.stdout and current==identities(a) and runner==hash_file(a.native))
+ hits=len(commands) if a.expectations else 0;misses=0 if a.expectations else len(commands)
+ result=dict(meta,identities=current,native_sha256=runner,evidence_mode='cached-original-replay' if a.expectations else 'fresh-original',
+  original_instructions_executed=not bool(a.expectations),original_instructions_modified=False,original_sequence_reuse_hits=hits,original_sequence_reuse_misses=misses,
+  original_generation_seconds=generation,native_comparison_seconds=comparison,elapsed_seconds=time.monotonic()-start,expectations_sha256=fingerprint)
+ write_report(a.exe,report,result);print(len(commands),'joined Walk admission sequences PASS;',meta['audited_original_calls'],'audited original calls; reuse hits/misses',hits,misses)
+if __name__=='__main__':main()

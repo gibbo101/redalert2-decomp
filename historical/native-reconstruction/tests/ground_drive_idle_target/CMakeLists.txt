@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.20)
+project(ground_drive_idle_target_checks LANGUAGES CXX)
+option(RA2_SANITIZE "Enable address and undefined behavior sanitizers" OFF)
+add_executable(ground-drive-idle-target-vectors ../ground_drive_idle_target_vectors.cpp
+ ../../src/sim/UnitDiscovery.cpp ../../src/assets/MapFloorHeight.cpp
+ ../../src/assets/MapCoordinateCell.cpp)
+target_include_directories(ground-drive-idle-target-vectors PRIVATE ../../src)
+target_compile_features(ground-drive-idle-target-vectors PRIVATE cxx_std_20)
+set_target_properties(ground-drive-idle-target-vectors PROPERTIES CXX_EXTENSIONS OFF)
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+ target_compile_options(ground-drive-idle-target-vectors PRIVATE -Wall -Wextra -Wpedantic -ffp-contract=off -frounding-math)
+ if(RA2_SANITIZE)
+  target_compile_options(ground-drive-idle-target-vectors PRIVATE -fsanitize=address,undefined -fno-omit-frame-pointer)
+  target_link_options(ground-drive-idle-target-vectors PRIVATE -fsanitize=address,undefined)
+ endif()
+elseif(MSVC)
+ target_compile_options(ground-drive-idle-target-vectors PRIVATE /W4 /fp:strict)
+endif()
+
+enable_testing()
+add_test(NAME ground-drive-idle-target-guards COMMAND ground-drive-idle-target-vectors --guards)

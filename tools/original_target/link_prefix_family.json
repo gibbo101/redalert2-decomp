@@ -1,0 +1,35 @@
+{
+  "schema": "ra2-readable-connected-family-plan-v1",
+  "target": {
+    "sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+    "size": 4485392
+  },
+  "shared_headers": [
+    {
+      "path": "src/shared/link_prefix_layout.hpp",
+      "sha256": "b5f2dc7ab456e81fd562894557f1387adf7c1740b1657a9d0070554164b94830"
+    }
+  ],
+  "evidence_sha256": {
+    "original_facts": "459c7ba5925dca14214fb320956fec5a7b8548d478964dc76642845694b6a2b1",
+    "peer_source_review": "554feefca860162d041f5a53796789d710df4dc9e9dfa79fd8106bfcaa5a1cad"
+  },
+  "regions": [
+    {
+      "entry": 5476512,
+      "body_bytes": 31,
+      "body_sha256": "6fb868a4e35f382b730cc25d25b11b002d8060c4cf77ee3f0da06663ad546969",
+      "region_bytes": 32,
+      "region_sha256": "8347d450481602155c7a3534d793ef7882fdff5d95495a9dc26c4bff5132d57f",
+      "proposed_source": "src/recovered/links/InsertAfterAndFindFirst_005390a0.cpp",
+      "source_sha256": "a08c7e37a530f919a57545b24fab3361859de237889c47f77e6c397090568542",
+      "symbol_prefix": "?InsertAfterAndFindFirst_005390a0@LinkPrefix_00539040@@",
+      "references": {},
+      "template": "InsertAfterAndFindFirst_005390a0.cpp.in"
+    }
+  ],
+  "limits": [
+    "Reviewed candidate generation only; canonical manual source remains authoritative.",
+    "All original code/data and private evidence remain ignored; compiled acceptance is separate."
+  ]
+}

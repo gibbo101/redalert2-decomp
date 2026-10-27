@@ -1,0 +1,4 @@
+# Local test/recovery environment only. Never a game/runtime dependency.
+unicorn==2.1.4
+capstone==5.0.9
+pefile==2024.8.26

@@ -1,0 +1,72 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+"""Explicit research-only indexed staging and successful shadow-index mappings."""
+from shadow_color_profiles import PATCHED_ADDRESSES as SHADOW, shadow_color_profile
+
+STAGING_ADDRESSES = {
+    0x483430: 0x483650,
+    0x483D44: 0x483F64,
+    0x4860F0: 0x486310,
+    0x4AB5C0: 0x4ABA00,
+    0x5D0430: 0x5D7EF0,
+    0x5FAC40: 0x6031B0,
+    0x634250: 0x63CFB0,
+    0x6342A0: 0x63D000,
+    0x68F720: 0x69A1D0,
+    0x6C7329: 0x6D1F09,
+    0x6C7430: 0x6D2010,
+    0x6C7600: 0x6D21E0,
+    0x6C7C30: 0x6D2810,
+    0x6C7DF0: 0x6D29D0,
+    0x6CEBE0: 0x6D97C0,
+    0x6CECF0: 0x6D98D0,
+    0x6CED20: 0x6D9900,
+    0x70BAA0: 0x717040,
+    0x76D2E0: 0x781D46,
+    0x76D434: 0x781E9A,
+    0x76D482: 0x781EE8,
+    0x788F70: 0x79DF70,
+    0x78944C: 0x79E44C,
+    0x789458: 0x79E458,
+    0x789464: 0x79E464,
+    0x789470: 0x79E470,
+    0x78947C: 0x79E47C,
+    0x789488: 0x79E488,
+    0x789494: 0x79E494,
+    0x7894A0: 0x79E4A0,
+    0x7894AC: 0x79E4AC,
+    0x7894B8: 0x79E4B8,
+    0x7894C4: 0x79E4C4,
+    0x7894D0: 0x79E4D0,
+    0x7894DC: 0x79E4DC,
+    0x7894EC: 0x79E4EC,
+    0x7894FC: 0x79E4FC,
+    0x78950C: 0x79E50C,
+    0x78951C: 0x79E51C,
+    0x821DC0: 0x839AA0,
+    0x839460: 0x851150,
+    0x839464: 0x851154,
+    0x839468: 0x851158,
+    0x83946D: 0x85115D,
+    0x839470: 0x851160,
+    0x839474: 0x851164,
+    0x83B2E2: 0x852FD2,
+    0xAB7EF0: 0xAD0490,
+    0xAB7EF4: 0xAD0494,
+    0xAB7EF8: 0xAD0498,
+    0xAB7EFC: 0xAD049C,
+    0xB10C84: 0xB2B624,
+}
+PATCHED_ADDRESSES = {**SHADOW, **STAGING_ADDRESSES}
+
+def staging_profile(data, *, allow_patched=False):
+    return shadow_color_profile(data, allow_patched=allow_patched)
+
+def address(profile, disc_va):
+    if profile == "allied-disc":
+        return disc_va
+    if profile == "supplied-ra2-1006":
+        try:
+            return PATCHED_ADDRESSES[disc_va]
+        except KeyError as error:
+            raise ValueError(f"Unmapped 1.006 staging address {disc_va:#x}") from error
+    raise ValueError("Unknown staging profile")

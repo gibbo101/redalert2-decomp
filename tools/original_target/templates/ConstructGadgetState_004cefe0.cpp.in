@@ -1,0 +1,24 @@
+// Original 0x004cefe0: 79 body bytes plus 1 independently frozen NOP byte.
+// Exact target e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f.
+// A13 first real-constructor recipe; not a reopening of generic Initialize tuning.
+#include "shared/message_gadget_layout.hpp"
+
+extern "C" unsigned char gadget_dispatch_004cefe0[];
+
+// Existing VC6 supports this source pragma; keep the observed direct base call.
+#pragma auto_inline(off)
+GadgetState_004cefe0::GadgetState_004cefe0(
+    int initial_x, int initial_y, int initial_width, int initial_height,
+    unsigned int flags, unsigned char sticky_byte)
+    : next(0), previous(0), x(initial_x), y(initial_y),
+      width(initial_width), height(initial_height), dirty(0),
+      sticky(sticky_byte), unknown_0x1e(0), gadget_flags(flags)
+{
+    // unknown_0x1f is deliberately uninitialized, as in the original stores.
+    dispatch_table = gadget_dispatch_004cefe0;
+    if (sticky_byte != 0) {
+        gadget_flags = flags | 5u;
+    }
+    // Constructor ABI supplies the observed receiver return in EAX.
+}
+#pragma auto_inline(on)

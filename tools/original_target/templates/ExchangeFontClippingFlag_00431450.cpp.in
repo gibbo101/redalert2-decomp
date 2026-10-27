@@ -1,0 +1,11 @@
+// Original 0x00431450: complete13-byte body and3 independently frozen NOP bytes.
+// Exact target e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f.
+// Preserve the raw byte and low-AL return; the original does not normalize truth.
+#include "shared/font_message_views.hpp"
+
+unsigned char FontDrawState::ExchangeFontClippingFlag_00431450(unsigned char replacement)
+{
+    unsigned char previous = clipping;
+    clipping = replacement;
+    return previous;
+}

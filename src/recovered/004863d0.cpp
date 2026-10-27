@@ -1,0 +1,3 @@
+class Target_4863d0 { public: virtual void v0(); virtual unsigned int target(unsigned int p0, unsigned int p1, unsigned int p2, unsigned int p3, unsigned int p4, unsigned int p5, unsigned int p6, unsigned int p7); };
+class Leaf_4863d0 { public: unsigned int get(unsigned int a1, unsigned int a2, unsigned int a3, unsigned int a4, unsigned int a5, unsigned int a6, unsigned int a7); };
+unsigned int Leaf_4863d0::get(unsigned int a1, unsigned int a2, unsigned int a3, unsigned int a4, unsigned int a5, unsigned int a6, unsigned int a7) { return ((Target_4863d0*)(this))->target((unsigned int)(a1), (unsigned int)(a2), (unsigned int)(a3), (unsigned int)(a4), (unsigned int)(a5), (unsigned int)(a6), (unsigned int)(a7), (unsigned int)(0)); }

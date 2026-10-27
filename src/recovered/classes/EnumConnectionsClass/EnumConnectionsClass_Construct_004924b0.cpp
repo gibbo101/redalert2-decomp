@@ -1,0 +1,1 @@
+EnumConnectionsClass::EnumConnectionsClass(DynamicVectorClass<tagCONNECTDATA> const &data):Connections(data),Position(0),RefCount(0) { for (int i=0;i<Connections.Count();++i) Connections[i].pUnk->AddRef(); }

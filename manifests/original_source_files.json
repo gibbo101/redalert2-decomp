@@ -1,0 +1,984 @@
+{
+ "source": "source-path strings in the supplied executable and the functions that reference them",
+ "rule": "anchors only; a file's functions lie around its anchors (VC6 keeps an object file's code together)",
+ "files": [
+  {
+   "path": "D:\\Ra2\\AbsType.cpp",
+   "file": "AbsType.cpp",
+   "anchors": [
+    "004106e0",
+    "004107e0"
+   ],
+   "first_anchor": "004106e0",
+   "last_anchor": "004107e0"
+  },
+  {
+   "path": "D:\\Ra2\\Beacon.CPP",
+   "file": "Beacon.CPP",
+   "anchors": [
+    "0042e370"
+   ],
+   "first_anchor": "0042e370",
+   "last_anchor": "0042e370"
+  },
+  {
+   "path": "D:\\Ra2\\CampScor.cpp",
+   "file": "CampScor.cpp",
+   "anchors": [
+    "00465c20",
+    "00465fc0",
+    "0046622a",
+    "00466a50",
+    "00467290",
+    "00467330",
+    "0046743a"
+   ],
+   "first_anchor": "00465c20",
+   "last_anchor": "0046743a"
+  },
+  {
+   "path": "D:\\Ra2\\CD.CPP",
+   "file": "CD.CPP",
+   "anchors": [
+    "0046e520"
+   ],
+   "first_anchor": "0046e520",
+   "last_anchor": "0046e520"
+  },
+  {
+   "path": "D:\\Ra2\\Connect.CPP",
+   "file": "Connect.CPP",
+   "anchors": [
+    "00481000"
+   ],
+   "first_anchor": "00481000",
+   "last_anchor": "00481000"
+  },
+  {
+   "path": "D:\\Ra2\\Conquer.CPP",
+   "file": "Conquer.CPP",
+   "anchors": [
+    "00481850",
+    "00481bf0"
+   ],
+   "first_anchor": "00481850",
+   "last_anchor": "00481bf0"
+  },
+  {
+   "path": "D:\\Ra2\\coopcamp.cpp",
+   "file": "coopcamp.cpp",
+   "anchors": [
+    "00490510"
+   ],
+   "first_anchor": "00490510",
+   "last_anchor": "00490510"
+  },
+  {
+   "path": "D:\\Ra2\\Display.CPP",
+   "file": "Display.CPP",
+   "anchors": [
+    "0049e610"
+   ],
+   "first_anchor": "0049e610",
+   "last_anchor": "0049e610"
+  },
+  {
+   "path": "D:\\Ra2\\Egos.CPP",
+   "file": "Egos.CPP",
+   "anchors": [
+    "004b37c0"
+   ],
+   "first_anchor": "004b37c0",
+   "last_anchor": "004b37c0"
+  },
+  {
+   "path": "D:\\Ra2\\Event.CPP",
+   "file": "Event.CPP",
+   "anchors": [
+    "004b65c0"
+   ],
+   "first_anchor": "004b65c0",
+   "last_anchor": "004b65c0"
+  },
+  {
+   "path": "D:\\Ra2\\GameDlg.CPP",
+   "file": "GameDlg.CPP",
+   "anchors": [
+    "004cfc00"
+   ],
+   "first_anchor": "004cfc00",
+   "last_anchor": "004cfc00"
+  },
+  {
+   "path": "D:\\Ra2\\GDlgSupp.cpp",
+   "file": "GDlgSupp.cpp",
+   "anchors": [
+    "004d1420",
+    "004d1d80",
+    "004d1ea0"
+   ],
+   "first_anchor": "004d1420",
+   "last_anchor": "004d1ea0"
+  },
+  {
+   "path": "D:\\Ra2\\GOptions.CPP",
+   "file": "GOptions.CPP",
+   "anchors": [
+    "004dd8a0",
+    "004ddf90"
+   ],
+   "first_anchor": "004dd8a0",
+   "last_anchor": "004ddf90"
+  },
+  {
+   "path": "D:\\Ra2\\House.CPP",
+   "file": "House.CPP",
+   "anchors": [
+    "004e414c",
+    "004e5660",
+    "004e5a70",
+    "004e77f0",
+    "004e7ee0",
+    "004e80d0",
+    "004ebbb0",
+    "004f4070"
+   ],
+   "first_anchor": "004e414c",
+   "last_anchor": "004f4070"
+  },
+  {
+   "path": "D:\\Ra2\\Infantry.CPP",
+   "file": "Infantry.CPP",
+   "anchors": [
+    "00506160"
+   ],
+   "first_anchor": "00506160",
+   "last_anchor": "00506160"
+  },
+  {
+   "path": "D:\\Ra2\\Ini.CPP",
+   "file": "Ini.CPP",
+   "anchors": [
+    "0050f010",
+    "0050f323"
+   ],
+   "first_anchor": "0050f010",
+   "last_anchor": "0050f323"
+  },
+  {
+   "path": "D:\\Ra2\\Init.CPP",
+   "file": "Init.CPP",
+   "anchors": [
+    "005135f0",
+    "005147a0",
+    "00515110",
+    "00516560",
+    "00516c40",
+    "005171d0",
+    "0051aee0",
+    "0051af10",
+    "0051af30",
+    "0051afd0",
+    "0051aff0",
+    "0051b010",
+    "0051b090",
+    "0051b0b0",
+    "0051b0d0",
+    "0051b150",
+    "0051b170",
+    "0051b190",
+    "0051b1e0",
+    "0051b200",
+    "0051b220",
+    "0051b2a0",
+    "0051b2d0",
+    "0051b2f0",
+    "0051b390",
+    "0051b3c0",
+    "0051b3e0",
+    "0051b480",
+    "0051b4b0",
+    "0051b4d0",
+    "0051b570",
+    "0051b5a0",
+    "0051b5c0",
+    "0051b850",
+    "0051b870",
+    "0051b890",
+    "0051b950",
+    "0051b970",
+    "0051b990",
+    "0051ba20",
+    "0051ba40",
+    "0051ba60",
+    "0051bac0",
+    "0051bae0",
+    "0051bb00",
+    "0051bb80",
+    "0051bba0",
+    "0051bbc0",
+    "0051bc20",
+    "0051bc40",
+    "0051bc60",
+    "0051bcc0",
+    "0051bce0",
+    "0051bd00",
+    "0051bdc0",
+    "0051bde0",
+    "0051be00",
+    "0051be40",
+    "0051be60",
+    "0051be80",
+    "0051bec0",
+    "0051bee0",
+    "0051bf00",
+    "0051bf40",
+    "0051bf60",
+    "0051bf80",
+    "0051bfc0",
+    "0051bfe0",
+    "0051c000",
+    "0051c040",
+    "0051c060",
+    "0051c080",
+    "0051c0e0",
+    "0051c100",
+    "0051c120",
+    "0051c3d0",
+    "0051c3f0",
+    "0051c410",
+    "0051c450",
+    "0051c470",
+    "0051c490",
+    "0051c4d0",
+    "0051c4f0",
+    "0051c510",
+    "0051c550",
+    "0051c570",
+    "0051c590",
+    "0051c5e0",
+    "0051c600",
+    "0051c620",
+    "0051c660",
+    "0051c680",
+    "0051c6a0",
+    "0051c6f0",
+    "0051c710",
+    "0051c730",
+    "0051c780",
+    "0051c7a0",
+    "0051c7c0",
+    "0051c810",
+    "0051c830",
+    "0051c850",
+    "0051c8a0",
+    "0051c8c0",
+    "0051c8e0",
+    "0051c930",
+    "0051c950",
+    "0051c970",
+    "0051c9c0",
+    "0051c9e0",
+    "0051ca00",
+    "0051ca50",
+    "0051ca70",
+    "0051ca90",
+    "0051cae0",
+    "0051cb00",
+    "0051cb20",
+    "0051cb70",
+    "0051cb90",
+    "0051cbb0",
+    "0051cc00",
+    "0051cc20",
+    "0051cc40",
+    "0051cc90",
+    "0051ccb0",
+    "0051ccd0",
+    "0051cd20",
+    "0051cd40",
+    "0051cd60",
+    "0051cda0",
+    "0051cdc0",
+    "0051cde0",
+    "0051ce90",
+    "0051ceb0",
+    "0051ced0",
+    "0051cf80",
+    "0051cfa0",
+    "0051cfc0",
+    "0051d070",
+    "0051d090",
+    "0051d0b0",
+    "0051d160",
+    "0051d180",
+    "0051d1a0",
+    "0051d220",
+    "0051d240",
+    "0051d260",
+    "0051d2e0",
+    "0051d300",
+    "0051d320",
+    "0051d3a0",
+    "0051d3c0",
+    "0051d3e0",
+    "0051d460",
+    "0051d480",
+    "0051d4a0",
+    "0051d510",
+    "0051d530",
+    "0051d550",
+    "0051d890",
+    "0051d8b0",
+    "0051d8d0",
+    "0051d930",
+    "0051d950",
+    "0051d970",
+    "0051d9d0",
+    "0051d9f0",
+    "0051da10"
+   ],
+   "first_anchor": "005135f0",
+   "last_anchor": "0051da10"
+  },
+  {
+   "path": "D:\\Ra2\\Ion.cpp",
+   "file": "Ion.cpp",
+   "anchors": [
+    "0051f930",
+    "00520200",
+    "00520bf0"
+   ],
+   "first_anchor": "0051f930",
+   "last_anchor": "00520bf0"
+  },
+  {
+   "path": "D:\\Ra2\\LdPrgMgr.cpp",
+   "file": "LdPrgMgr.cpp",
+   "anchors": [
+    "005361e0"
+   ],
+   "first_anchor": "005361e0",
+   "last_anchor": "005361e0"
+  },
+  {
+   "path": "D:\\Ra2\\LoadDlg.CPP",
+   "file": "LoadDlg.CPP",
+   "anchors": [
+    "0053b770",
+    "0053c680",
+    "0053c760",
+    "0053c970",
+    "0053c990",
+    "0053c9b0",
+    "0053c9d0"
+   ],
+   "first_anchor": "0053b770",
+   "last_anchor": "0053c9d0"
+  },
+  {
+   "path": "D:\\Ra2\\MainLoop.CPP",
+   "file": "MainLoop.CPP",
+   "anchors": [
+    "00540c20"
+   ],
+   "first_anchor": "00540c20",
+   "last_anchor": "00540c20"
+  },
+  {
+   "path": "D:\\Ra2\\MainOpt.cpp",
+   "file": "MainOpt.cpp",
+   "anchors": [
+    "00542160",
+    "00542590",
+    "00543c40"
+   ],
+   "first_anchor": "00542160",
+   "last_anchor": "00543c40"
+  },
+  {
+   "path": "D:\\Ra2\\MapGen.cpp",
+   "file": "MapGen.cpp",
+   "anchors": [
+    "00576f50",
+    "00576fe0",
+    "00577bd0",
+    "00578b10",
+    "005791c0",
+    "005796f0",
+    "00579710",
+    "00579730",
+    "00579750",
+    "0057bdc0"
+   ],
+   "first_anchor": "00576f50",
+   "last_anchor": "0057bdc0"
+  },
+  {
+   "path": "D:\\Ra2\\MapSel.CPP",
+   "file": "MapSel.CPP",
+   "anchors": [
+    "0058f510"
+   ],
+   "first_anchor": "0058f510",
+   "last_anchor": "0058f510"
+  },
+  {
+   "path": "D:\\Ra2\\ModemGst.cpp",
+   "file": "ModemGst.cpp",
+   "anchors": [
+    "00597680",
+    "00598590"
+   ],
+   "first_anchor": "00597680",
+   "last_anchor": "00598590"
+  },
+  {
+   "path": "D:\\Ra2\\ModemHst.cpp",
+   "file": "ModemHst.cpp",
+   "anchors": [
+    "0059a310",
+    "0059b690",
+    "0059c130",
+    "0059c450"
+   ],
+   "first_anchor": "0059a310",
+   "last_anchor": "0059c450"
+  },
+  {
+   "path": "D:\\Ra2\\MPCoop.cpp",
+   "file": "MPCoop.cpp",
+   "anchors": [
+    "005a2ef0",
+    "005a3760",
+    "005a3ee0",
+    "005a46c0",
+    "005a5190"
+   ],
+   "first_anchor": "005a2ef0",
+   "last_anchor": "005a5190"
+  },
+  {
+   "path": "D:\\Ra2\\MPLayer.CPP",
+   "file": "MPLayer.CPP",
+   "anchors": [
+    "005a7430"
+   ],
+   "first_anchor": "005a7430",
+   "last_anchor": "005a7430"
+  },
+  {
+   "path": "D:\\Ra2\\MPObserver.cpp",
+   "file": "MPObserver.cpp",
+   "anchors": [
+    "005aa7b0"
+   ],
+   "first_anchor": "005aa7b0",
+   "last_anchor": "005aa7b0"
+  },
+  {
+   "path": "D:\\Ra2\\MPScore.cpp",
+   "file": "MPScore.cpp",
+   "anchors": [
+    "005aaae0",
+    "005aae40"
+   ],
+   "first_anchor": "005aaae0",
+   "last_anchor": "005aae40"
+  },
+  {
+   "path": "D:\\Ra2\\MPSiege.cpp",
+   "file": "MPSiege.cpp",
+   "anchors": [
+    "005ab640"
+   ],
+   "first_anchor": "005ab640",
+   "last_anchor": "005ab640"
+  },
+  {
+   "path": "D:\\Ra2\\MPSiegeTeam.cpp",
+   "file": "MPSiegeTeam.cpp",
+   "anchors": [
+    "005abdc0",
+    "005abe60"
+   ],
+   "first_anchor": "005abdc0",
+   "last_anchor": "005abe60"
+  },
+  {
+   "path": "D:\\Ra2\\Multiplayer.cpp",
+   "file": "Multiplayer.cpp",
+   "anchors": [
+    "005b8490"
+   ],
+   "first_anchor": "005b8490",
+   "last_anchor": "005b8490"
+  },
+  {
+   "path": "D:\\Ra2\\NetDlg.CPP",
+   "file": "NetDlg.CPP",
+   "anchors": [
+    "005bb5d0"
+   ],
+   "first_anchor": "005bb5d0",
+   "last_anchor": "005bb5d0"
+  },
+  {
+   "path": "D:\\Ra2\\netdlg2.cpp",
+   "file": "netdlg2.cpp",
+   "anchors": [
+    "005bd070",
+    "005be3b0",
+    "005be6b0",
+    "005befe0",
+    "005bfc40",
+    "005c08a0",
+    "005c2330"
+   ],
+   "first_anchor": "005bd070",
+   "last_anchor": "005c2330"
+  },
+  {
+   "path": "D:\\Ra2\\netshare.cpp",
+   "file": "netshare.cpp",
+   "anchors": [
+    "005c3f00",
+    "005c3ff0",
+    "005c71f0",
+    "005c7c30",
+    "005c86e0",
+    "005c9870",
+    "005ca6c0",
+    "005cbf20",
+    "005cd3f0"
+   ],
+   "first_anchor": "005c3f00",
+   "last_anchor": "005cd3f0"
+  },
+  {
+   "path": "D:\\Ra2\\NullDlg.CPP",
+   "file": "NullDlg.CPP",
+   "anchors": [
+    "005cdefa",
+    "005ceba0",
+    "005cedd0",
+    "005cf0b0",
+    "005cf780"
+   ],
+   "first_anchor": "005cdefa",
+   "last_anchor": "005cf780"
+  },
+  {
+   "path": "D:\\Ra2\\NullMgr.CPP",
+   "file": "NullMgr.CPP",
+   "anchors": [
+    "005d09a0",
+    "005d1350",
+    "005d16e0"
+   ],
+   "first_anchor": "005d09a0",
+   "last_anchor": "005d16e0"
+  },
+  {
+   "path": "D:\\Ra2\\Options.CPP",
+   "file": "Options.CPP",
+   "anchors": [
+    "005da470"
+   ],
+   "first_anchor": "005da470",
+   "last_anchor": "005da470"
+  },
+  {
+   "path": "D:\\Ra2\\ownrdraw.cpp",
+   "file": "ownrdraw.cpp",
+   "anchors": [
+    "005e2260",
+    "005ed180",
+    "005edfd0"
+   ],
+   "first_anchor": "005e2260",
+   "last_anchor": "005edfd0"
+  },
+  {
+   "path": "D:\\Ra2\\PhoneEd.cpp",
+   "file": "PhoneEd.cpp",
+   "anchors": [
+    "0060e7a0"
+   ],
+   "first_anchor": "0060e7a0",
+   "last_anchor": "0060e7a0"
+  },
+  {
+   "path": "D:\\Ra2\\PlanMgr.cpp",
+   "file": "PlanMgr.cpp",
+   "anchors": [
+    "00614010",
+    "00614ec0",
+    "00615de0",
+    "00615ed0",
+    "00616d70",
+    "00616e70",
+    "00616ec0",
+    "00616f50",
+    "00616fb0",
+    "00616fd0",
+    "00617020",
+    "00617100",
+    "00617119",
+    "00617250",
+    "00617340",
+    "00617af0"
+   ],
+   "first_anchor": "00614010",
+   "last_anchor": "00617af0"
+  },
+  {
+   "path": "D:\\Ra2\\Power.CPP",
+   "file": "Power.CPP",
+   "anchors": [
+    "0061d1c0"
+   ],
+   "first_anchor": "0061d1c0",
+   "last_anchor": "0061d1c0"
+  },
+  {
+   "path": "D:\\Ra2\\Queue.CPP",
+   "file": "Queue.CPP",
+   "anchors": [
+    "00623b00",
+    "00624c10",
+    "00626fe0",
+    "00627210",
+    "00628880",
+    "0062e6e0"
+   ],
+   "first_anchor": "00623b00",
+   "last_anchor": "0062e6e0"
+  },
+  {
+   "path": "D:\\Ra2\\Radar.CPP",
+   "file": "Radar.CPP",
+   "anchors": [
+    "00630350"
+   ],
+   "first_anchor": "00630350",
+   "last_anchor": "00630350"
+  },
+  {
+   "path": "D:\\Ra2\\Restate.cpp",
+   "file": "Restate.cpp",
+   "anchors": [
+    "0063b090"
+   ],
+   "first_anchor": "0063b090",
+   "last_anchor": "0063b090"
+  },
+  {
+   "path": "D:\\Ra2\\Scenario.CPP",
+   "file": "Scenario.CPP",
+   "anchors": [
+    "0065b780",
+    "0065b830",
+    "0065c7d0",
+    "0065dec0",
+    "0065eb40",
+    "0065fbb0",
+    "006610c0"
+   ],
+   "first_anchor": "0065b780",
+   "last_anchor": "006610c0"
+  },
+  {
+   "path": "D:\\Ra2\\SendFile.CPP",
+   "file": "SendFile.CPP",
+   "anchors": [
+    "0066bb20"
+   ],
+   "first_anchor": "0066bb20",
+   "last_anchor": "0066bb20"
+  },
+  {
+   "path": "D:\\Ra2\\SerialEd.cpp",
+   "file": "SerialEd.cpp",
+   "anchors": [
+    "0066cf60",
+    "0066dd60"
+   ],
+   "first_anchor": "0066cf60",
+   "last_anchor": "0066dd60"
+  },
+  {
+   "path": "D:\\Ra2\\Session.CPP",
+   "file": "Session.CPP",
+   "anchors": [
+    "0066eaa0",
+    "0066f3a0",
+    "00670c50",
+    "00671c50",
+    "00671fa0"
+   ],
+   "first_anchor": "0066eaa0",
+   "last_anchor": "00671fa0"
+  },
+  {
+   "path": "D:\\Ra2\\Sidebar.CPP",
+   "file": "Sidebar.CPP",
+   "anchors": [
+    "0067f580",
+    "0067f800",
+    "00681ed0"
+   ],
+   "first_anchor": "0067f580",
+   "last_anchor": "00681ed0"
+  },
+  {
+   "path": "D:\\Ra2\\Skirmish.cpp",
+   "file": "Skirmish.cpp",
+   "anchors": [
+    "006828b0",
+    "006829f0"
+   ],
+   "first_anchor": "006828b0",
+   "last_anchor": "006829f0"
+  },
+  {
+   "path": "D:\\Ra2\\Startup.CPP",
+   "file": "Startup.CPP",
+   "anchors": [
+    "0068fee0"
+   ],
+   "first_anchor": "0068fee0",
+   "last_anchor": "0068fee0"
+  },
+  {
+   "path": "D:\\Ra2\\Super.CPP",
+   "file": "Super.CPP",
+   "anchors": [
+    "0069d770"
+   ],
+   "first_anchor": "0069d770",
+   "last_anchor": "0069d770"
+  },
+  {
+   "path": "D:\\Ra2\\Tactical.CPP",
+   "file": "Tactical.CPP",
+   "anchors": [
+    "006a45a0"
+   ],
+   "first_anchor": "006a45a0",
+   "last_anchor": "006a45a0"
+  },
+  {
+   "path": "D:\\Ra2\\TAction.CPP",
+   "file": "TAction.CPP",
+   "anchors": [
+    "006adae0",
+    "006b0440",
+    "006b0c50"
+   ],
+   "first_anchor": "006adae0",
+   "last_anchor": "006b0c50"
+  },
+  {
+   "path": "D:\\Ra2\\Techno.CPP",
+   "file": "Techno.CPP",
+   "anchors": [
+    "006d5510"
+   ],
+   "first_anchor": "006d5510",
+   "last_anchor": "006d5510"
+  },
+  {
+   "path": "D:\\Ra2\\ToolTip.cpp",
+   "file": "ToolTip.cpp",
+   "anchors": [
+    "006ebdb0"
+   ],
+   "first_anchor": "006ebdb0",
+   "last_anchor": "006ebdb0"
+  },
+  {
+   "path": "D:\\Ra2\\UICmnds.cpp",
+   "file": "UICmnds.cpp",
+   "anchors": [
+    "006f6570",
+    "006f6790",
+    "006f6810",
+    "006f7b80",
+    "006f7e40",
+    "006f7ec0",
+    "006f8130"
+   ],
+   "first_anchor": "006f6570",
+   "last_anchor": "006f8130"
+  },
+  {
+   "path": "D:\\Ra2\\Unit.CPP",
+   "file": "Unit.CPP",
+   "anchors": [
+    "0070a0e0"
+   ],
+   "first_anchor": "0070a0e0",
+   "last_anchor": "0070a0e0"
+  },
+  {
+   "path": "D:\\Ra2\\wdtgameoptions.h",
+   "file": "wdtgameoptions.h",
+   "anchors": [
+    "00727e30"
+   ],
+   "first_anchor": "00727e30",
+   "last_anchor": "00727e30"
+  },
+  {
+   "path": "D:\\Ra2\\WDTGameOptions.cpp",
+   "file": "WDTGameOptions.cpp",
+   "anchors": [
+    "00728690",
+    "00728870",
+    "00728ab0"
+   ],
+   "first_anchor": "00728690",
+   "last_anchor": "00728ab0"
+  },
+  {
+   "path": "D:\\Ra2\\WDTProps.cpp",
+   "file": "WDTProps.cpp",
+   "anchors": [
+    "0072d1f0"
+   ],
+   "first_anchor": "0072d1f0",
+   "last_anchor": "0072d1f0"
+  },
+  {
+   "path": "D:\\Ra2\\WDTSel.cpp",
+   "file": "WDTSel.cpp",
+   "anchors": [
+    "0072e050",
+    "0072ed80",
+    "0072f540",
+    "0072f7a0",
+    "0072ff30",
+    "0072ffc0"
+   ],
+   "first_anchor": "0072e050",
+   "last_anchor": "0072ffc0"
+  },
+  {
+   "path": "D:\\Ra2\\WDTTerr.cpp",
+   "file": "WDTTerr.cpp",
+   "anchors": [
+    "00730be0"
+   ],
+   "first_anchor": "00730be0",
+   "last_anchor": "00730be0"
+  },
+  {
+   "path": "D:\\Ra2\\wonline.cpp",
+   "file": "wonline.cpp",
+   "anchors": [
+    "0073c580",
+    "0073d8f0",
+    "0073e100",
+    "0073e8d0",
+    "0073f1c0",
+    "0073f5f0",
+    "0073f850",
+    "007404c0",
+    "00741300",
+    "00741750",
+    "00741ea0",
+    "007424c0",
+    "00742fd0",
+    "00743720",
+    "00744610",
+    "00744700",
+    "00744a00",
+    "00745780",
+    "007459a0",
+    "00746240",
+    "00746480",
+    "007466c0",
+    "007469c0",
+    "00746e61",
+    "007485d0",
+    "00748cd0",
+    "0074a120",
+    "0074a4e0",
+    "0074a9bc",
+    "0074c5f0",
+    "0074c660",
+    "0074cb35",
+    "0074cd4d",
+    "0074dd50",
+    "0074f300",
+    "00751bd0",
+    "00751c30",
+    "00751df0",
+    "00753f70",
+    "007555f0",
+    "00755810",
+    "00755cd0",
+    "007562b0",
+    "00759370",
+    "00759e20",
+    "0075b910",
+    "0075bc40",
+    "0075be10",
+    "0075cc10",
+    "0075e000",
+    "0075ea50",
+    "0075eed0",
+    "0075ef30",
+    "0075f330",
+    "0075f530",
+    "00762e00",
+    "00762f70",
+    "00763190",
+    "00763ae0",
+    "007646b9",
+    "00764730",
+    "00764b30",
+    "00766910",
+    "00766a0e"
+   ],
+   "first_anchor": "0073c580",
+   "last_anchor": "00766a0e"
+  },
+  {
+   "path": "D:\\Ra2\\WorldDom.cpp",
+   "file": "WorldDom.cpp",
+   "anchors": [
+    "007689c0",
+    "00768e90"
+   ],
+   "first_anchor": "007689c0",
+   "last_anchor": "00768e90"
+  },
+  {
+   "path": "D:\\Ra2\\wwmous.cpp",
+   "file": "wwmous.cpp",
+   "anchors": [
+    "00771900",
+    "00771bc0",
+    "00771cf0",
+    "00772170",
+    "00772250",
+    "00772410",
+    "00772620",
+    "007728a0",
+    "007728ed",
+    "00772a00",
+    "00772ac0",
+    "00772ca0",
+    "00772dd0",
+    "00772fa0",
+    "007731a0",
+    "00773400",
+    "00773630"
+   ],
+   "first_anchor": "00771900",
+   "last_anchor": "00773630"
+  }
+ ]
+}

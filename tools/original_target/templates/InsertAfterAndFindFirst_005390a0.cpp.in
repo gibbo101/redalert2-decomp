@@ -1,0 +1,18 @@
+// Original 0x005390a0: InsertAfterAndFindFirst; full concrete owner identity remains unknown.
+// Insert this receiver after the argument, then return the dynamic slot18 result.
+#include "shared/link_prefix_layout.hpp"
+
+LinkPrefix_00539040* LinkPrefix_00539040::InsertAfterAndFindFirst_005390a0(
+    LinkPrefix_00539040* preceding)
+{
+    LinkPrefix_00539040* following = preceding->next;
+    preceding->next = this;
+    previous = preceding;
+    next = following;
+    if (following) {
+        following->previous = this;
+    }
+    // No stack arguments: this explicit ECX projection has the observed call ABI.
+    typedef LinkPrefix_00539040* (__fastcall *FindFirst)(LinkPrefix_00539040*);
+    return (*reinterpret_cast<FindFirst*>(dispatch_table + 0x18))(this);
+}

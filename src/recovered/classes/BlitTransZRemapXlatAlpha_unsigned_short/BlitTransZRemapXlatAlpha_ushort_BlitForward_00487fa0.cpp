@@ -1,0 +1,30 @@
+// Translate nonzero source indices through the selected alpha row and palette.
+#include "shared/trans_remap_xlat_alpha_blitter.hpp"
+#include "shared/blit.hpp"
+// @ref ?ZBufferPtr@@3PAVZBuffer@@A=008315b4
+template <>
+void BlitTransZRemapXlatAlpha<unsigned short>::BlitForward(void *target, void const *source, int length,
+                                                        int, int, int buffer, int level, int) const
+{
+    unsigned short *alpha = (unsigned short *)buffer;
+    unsigned char const *remap = *Remap;
+    int row = level > 0 ? level : 0;
+    row = (row * 261) >> 11;
+    if (row > 254) row = 254;
+    unsigned short const *table = AlphaTable[row];
+    if (length > 0) {
+        int count = length;
+        unsigned short *dest = (unsigned short *)target;
+        do {
+            unsigned char color = *(unsigned char const *)source;
+            source = (unsigned char const *)source + 1;
+            if (color) {
+                unsigned int translated = table[*alpha];
+                *dest = Palette[translated | remap[color]];
+            }
+            alpha++;
+            dest++;
+            alpha = ZBufferPtr->Wrap_Pointer(alpha);
+        } while (--count);
+    }
+}

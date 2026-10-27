@@ -1,0 +1,2 @@
+// Dynamic initializer (0x005DC580, _$E) of l from the header(s) included
+// by HeaderStatics_empty_rect_init_005dc3b0.cpp; no source of its own.

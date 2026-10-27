@@ -1,0 +1,56 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+"""Explicit research profiles for Drive/curves/timing; runtime gates stay separate.
+
+Other Oracle users keep the disc-only default. Addresses are metadata independently
+inspected in each exact engine, never a general offset or PE relocation policy.
+"""
+import hashlib
+from compare_original import EXPECTED, PATCHED_EXPECTED
+
+# Only addresses used by these fixtures. Internal original calls run unchanged.
+PATCHED_ADDRESSES = {
+    0x453B30: 0x453EB0, 0x4766C0: 0x476AC0, 0x4768C0: 0x476CC0,
+    0x491400: 0x491620, 0x4914B0: 0x4916D0, 0x495E60: 0x4961D0,
+    0x49FA00: 0x49FE30, 0x49FAC0: 0x49FEF0, 0x4A01C0: 0x4A05F0,
+    0x4A0BD0: 0x4A1000, 0x4A2240: 0x4A2670, 0x4A4310: 0x4A4740,
+    0x4A3BCB: 0x4A3FFB, 0x4A415C: 0x4A458C, 0x4A4187: 0x4A45B7,
+    0x4A187F: 0x4A1CAF, 0x4A189D: 0x4A1CCD, 0x4A18A3: 0x4A1CD3,
+    0x4B8550: 0x4B8A30, 0x4B8630: 0x4B8B10, 0x4B8700: 0x4B8BE0,
+    0x4B87B0: 0x4B8C90, 0x4B89B0: 0x4B8E90, 0x4B9F30: 0x4BA410,
+    0x4BA120: 0x4BA600, 0x4C2910: 0x4C2DF0, 0x4C2B20: 0x4C3000,
+    0x4C95C0: 0x4C9B10, 0x4CF4C4: 0x4CFA34, 0x4CF4CB: 0x4CFA3B,
+    0x53DEF2: 0x54000E, 0x53DF16: 0x540032,
+    0x53E660: 0x540960, 0x53E697: 0x540997,
+    0x545340: 0x548000, 0x5453B0: 0x548070,
+    0x556F20: 0x55A280, 0x557970: 0x55ACD0, 0x5CAC70: 0x5D2730,
+    0x68F980: 0x69A430, 0x6CCD30: 0x6D7910, 0x6CDA60: 0x6D8640,
+    0x6CE2B0: 0x6D8E90, 0x6D2021: 0x6DCC01, 0x6D2061: 0x6DCC41,
+    0x6F03D0: 0x6FB890, 0x716B20: 0x7220C0, 0x76A6B0: 0x77F110,
+    0x78B0A8: 0x7A00A0, 0x78B188: 0x7A0180,
+    0x78B4D4: 0x7A04CC, 0x78B59C: 0x7A0594,
+    0x785520: 0x79A524, 0x7851E0: 0x79A1E4,
+    0x821B68: 0x839848, 0x821CB0: 0x839990, 0x821CB8: 0x839998,
+    0x8391B0: 0x850EA0, 0x839D80: 0x851A70, 0x839DD0: 0x851AC0,
+    0xA255A8: 0xA3D298, 0xA28738: 0xA40B18, 0xA2894C: 0xA40D2C,
+    0xA56741: 0xA6EB81, 0xA56770: 0xA6EB60, 0xA56778: 0xA6EB68,
+}
+
+
+def movement_profile(data, *, allow_patched=False):
+    digest = hashlib.sha256(data).hexdigest()
+    if digest == EXPECTED:
+        return digest, 'allied-disc'
+    if allow_patched and digest == PATCHED_EXPECTED:
+        return digest, 'supplied-ra2-1006'
+    raise ValueError('Unsupported executable hash for this oracle boundary')
+
+
+def address(profile, disc_va):
+    if profile == 'allied-disc':
+        return disc_va
+    if profile == 'supplied-ra2-1006':
+        try:
+            return PATCHED_ADDRESSES[disc_va]
+        except KeyError as error:
+            raise ValueError(f'Unmapped 1.006 fixture address {disc_va:#x}') from error
+    raise ValueError('Unknown movement profile')

@@ -1,0 +1,13 @@
+// void TeamClass::TMission_unknown_6bc190(ScriptMissionClass const &mission, int unknown) (0x006BC190)
+// Calls FootClass slot 297 with the line's data on every member, then completes the step.
+#include "shared/unit.hpp"
+#include "shared/foot.hpp"
+#include "shared/team.hpp"
+
+void TeamClass::TMission_unknown_6bc190(ScriptMissionClass const &mission, int unknown)
+{
+    for (FootClass *member = Member; member != 0; member = (FootClass *)member->unknown_4c8) {
+        member->unknown_slot297(mission.Data);
+    }
+    StepCompleted = true;
+}

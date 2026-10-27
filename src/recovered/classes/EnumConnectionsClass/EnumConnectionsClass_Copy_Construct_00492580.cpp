@@ -1,0 +1,1 @@
+EnumConnectionsClass::EnumConnectionsClass(EnumConnectionsClass const &other):Connections(other.Connections),Position(other.Position),RefCount(0) { for (int i=0;i<Connections.Count();++i) Connections[i].pUnk->AddRef(); }

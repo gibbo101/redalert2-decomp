@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.20)
+project(foot_layer_checks LANGUAGES CXX)
+option(RA2_SANITIZE "Enable address and undefined behavior sanitizers" OFF)
+add_executable(foot-layer-vectors ../foot_layer_vectors.cpp
+ ../../src/sim/FootCoordinates.cpp ../../src/assets/MapFloorHeight.cpp
+ ../../src/assets/MapCoordinateCell.cpp)
+target_include_directories(foot-layer-vectors PRIVATE ../../src)
+target_compile_features(foot-layer-vectors PRIVATE cxx_std_20)
+set_target_properties(foot-layer-vectors PROPERTIES CXX_EXTENSIONS OFF)
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+ target_compile_options(foot-layer-vectors PRIVATE -Wall -Wextra -Wpedantic -ffp-contract=off -frounding-math)
+ if(RA2_SANITIZE)
+  target_compile_options(foot-layer-vectors PRIVATE -fsanitize=address,undefined -fno-omit-frame-pointer)
+  target_link_options(foot-layer-vectors PRIVATE -fsanitize=address,undefined)
+ endif()
+elseif(MSVC)
+ target_compile_options(foot-layer-vectors PRIVATE /W4 /fp:strict)
+endif()

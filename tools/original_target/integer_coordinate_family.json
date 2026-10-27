@@ -1,0 +1,49 @@
+{
+  "schema": "ra2-readable-connected-family-plan-v1",
+  "target": {
+    "sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+    "size": 4485392
+  },
+  "shared_headers": [
+    {
+      "path": "src/shared/integer_coordinate_views.hpp",
+      "sha256": "2e001c18038c8e08d5310c4b8c6ccb94c7499053072a8038fd12b650b12ed2df"
+    }
+  ],
+  "evidence_sha256": {
+    "original_facts": "a9c50e88ceeaddcb9355e84ad03f55ca7404dafb304f908ceeb7a42a872de518",
+    "peer_source_review": "a8f6c2956488257cc4415899388856e77f5ddf74d4468855d59831732c4761d2"
+  },
+  "regions": [
+    {
+      "entry": 4274032,
+      "body_bytes": 54,
+      "body_sha256": "89b7b7c1ec3f1121af5a589d8ececf44acfe2daf10536c266f0dd451f66a86c8",
+      "region_bytes": 64,
+      "region_sha256": "aa9b8edd7aae0a5fad9c9f6cf1b2fbecd365f28dbf5ebe2d76d9bfa78614717d",
+      "proposed_source": "src/recovered/coordinates/CopyDiv256PairAsSignedWords_00413770.cpp",
+      "source_sha256": "4e1dae3a74a8c029b3908d23a706ce3f94bbab7a922f880a7f3371b69a822643",
+      "symbol_prefix": "?CopyDiv256PairAsSignedWords_00413770@Div256PairSource_00413770@@",
+      "references": {},
+      "template": "CopyDiv256PairAsSignedWords_00413770.cpp.in"
+    },
+    {
+      "entry": 4988992,
+      "body_bytes": 55,
+      "body_sha256": "a9f915581df4bdd2b128e7b33161d09a90fee5d1197942a865b2b6821e4fe9f7",
+      "region_bytes": 64,
+      "region_sha256": "a0f11447d4bee047b989fc7bdfd0d493847c0094978509a0b8fef585bbe7e024",
+      "proposed_source": "src/recovered/coordinates/CopyDiv256PairAsSignedWords_004c2040.cpp",
+      "source_sha256": "05c824d87a16f1c994cb47e5bbe547e99c335285ca0797490967c01cbcc0a794",
+      "symbol_prefix": "?CopyDiv256PairAsSignedWords_004c2040@Div256PairSource_004c2040@@",
+      "references": {},
+      "template": "CopyDiv256PairAsSignedWords_004c2040.cpp.in"
+    }
+  ],
+  "limits": [
+    "Accepted two signed32 /256 then low16 coordinate pair projections only;221body projection misses are excluded.",
+    "Reviewed candidate regeneration only; canonical manually edited sources are authoritative and never templates.",
+    "Reuse existing generate_message_gadget.py unchanged; source/header bounds and evidence pins required, output newignoredchild only.",
+    "Original facts/private compiler evidence stay ignored and supplied via explicit bindings; no proprietary instructions/bytes in tracked plan."
+  ]
+}

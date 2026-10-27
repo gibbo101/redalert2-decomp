@@ -1,0 +1,11 @@
+// Original 0x00431430: complete16-byte body only. Following16-byte gap is code.
+// Exact target e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f.
+// Actual aligned-font callers save the prior packed color through this method.
+#include "shared/font_message_views.hpp"
+
+unsigned short FontDrawState::ExchangeFontColor_00431430(unsigned short replacement)
+{
+    unsigned short previous = color;
+    color = replacement;
+    return previous;
+}

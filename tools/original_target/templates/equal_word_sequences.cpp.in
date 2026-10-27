@@ -1,0 +1,27 @@
+#include "shared/word_sequence_views.hpp"
+
+// Original VA @ADDRESS@, target @TARGET_HASH@.
+// Compare signed counts, then corresponding 32-bit words in original load order.
+// Equal nonpositive counts succeed without element reads. The accepted member
+// expression pattern is retained; this does not imply per-iteration reloads.
+// No snapshot, memcmp or new alias assumption is introduced.
+// Concrete class, element meanings and original developer names remain unknown.
+class @OWNER@ {
+    CountedWordSequenceView32 view;
+
+public:
+    bool @FUNCTION_NAME@(const @OWNER@& other) const;
+};
+
+bool @OWNER@::@FUNCTION_NAME@(const @OWNER@& other) const
+{
+    if (view.count == other.view.count) {
+        for (int index = 0; index < view.count; ++index) {
+            if (view.items[index] != other.view.items[index]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    return false;
+}

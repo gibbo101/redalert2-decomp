@@ -1,0 +1,2834 @@
+{
+ "source": "PE import directory of the supplied executable; Ghidra import signatures",
+ "imports": [
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetTickCount",
+   "iat": "0079a0cc",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "DWORD __stdcall GetTickCount(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetSystemTime",
+   "iat": "0079a0d0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall GetSystemTime(LPSYSTEMTIME lpSystemTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GlobalMemoryStatus",
+   "iat": "0079a0d4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall GlobalMemoryStatus(LPMEMORYSTATUS lpBuffer)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "VirtualQuery",
+   "iat": "0079a0d8",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "SIZE_T __stdcall VirtualQuery(LPCVOID lpAddress, PMEMORY_BASIC_INFORMATION lpBuffer, SIZE_T dwLength)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetTimeFormatA",
+   "iat": "0079a0dc",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "int __stdcall GetTimeFormatA(LCID Locale, DWORD dwFlags, SYSTEMTIME * lpTime, LPCSTR lpFormat, LPSTR lpTimeStr, int cchTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetDateFormatA",
+   "iat": "0079a0e0",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "int __stdcall GetDateFormatA(LCID Locale, DWORD dwFlags, SYSTEMTIME * lpDate, LPCSTR lpFormat, LPSTR lpDateStr, int cchDate)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FileTimeToSystemTime",
+   "iat": "0079a0e4",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall FileTimeToSystemTime(FILETIME * lpFileTime, LPSYSTEMTIME lpSystemTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FileTimeToLocalFileTime",
+   "iat": "0079a0e8",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall FileTimeToLocalFileTime(FILETIME * lpFileTime, LPFILETIME lpLocalFileTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SystemTimeToFileTime",
+   "iat": "0079a0ec",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall SystemTimeToFileTime(SYSTEMTIME * lpSystemTime, LPFILETIME lpFileTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CompareFileTime",
+   "iat": "0079a0f0",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "LONG __stdcall CompareFileTime(FILETIME * lpFileTime1, FILETIME * lpFileTime2)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FlushInstructionCache",
+   "iat": "0079a0f4",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall FlushInstructionCache(HANDLE hProcess, LPCVOID lpBaseAddress, SIZE_T dwSize)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "VirtualProtect",
+   "iat": "0079a0f8",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall VirtualProtect(LPVOID lpAddress, SIZE_T dwSize, DWORD flNewProtect, PDWORD lpflOldProtect)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CreateDirectoryA",
+   "iat": "0079a0fc",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall CreateDirectoryA(LPCSTR lpPathName, LPSECURITY_ATTRIBUTES lpSecurityAttributes)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "MulDiv",
+   "iat": "0079a100",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "int __stdcall MulDiv(int nNumber, int nNumerator, int nDenominator)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "EscapeCommFunction",
+   "iat": "0079a104",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall EscapeCommFunction(HANDLE hFile, DWORD dwFunc)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "ClearCommBreak",
+   "iat": "0079a108",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall ClearCommBreak(HANDLE hFile)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetCommBreak",
+   "iat": "0079a10c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall SetCommBreak(HANDLE hFile)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "ReadFile",
+   "iat": "0079a110",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "BOOL __stdcall ReadFile(HANDLE hFile, LPVOID lpBuffer, DWORD nNumberOfBytesToRead, LPDWORD lpNumberOfBytesRead, LPOVERLAPPED lpOverlapped)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetFileSize",
+   "iat": "0079a114",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "DWORD __stdcall GetFileSize(HANDLE hFile, LPDWORD lpFileSizeHigh)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FileTimeToDosDateTime",
+   "iat": "0079a118",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall FileTimeToDosDateTime(FILETIME * lpFileTime, LPWORD lpFatDate, LPWORD lpFatTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetFileInformationByHandle",
+   "iat": "0079a11c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetFileInformationByHandle(HANDLE hFile, LPBY_HANDLE_FILE_INFORMATION lpFileInformation)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetFileTime",
+   "iat": "0079a120",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall SetFileTime(HANDLE hFile, FILETIME * lpCreationTime, FILETIME * lpLastAccessTime, FILETIME * lpLastWriteTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CopyFileA",
+   "iat": "0079a124",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall CopyFileA(LPCSTR lpExistingFileName, LPCSTR lpNewFileName, BOOL bFailIfExists)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "DeleteFileA",
+   "iat": "0079a128",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall DeleteFileA(LPCSTR lpFileName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "WriteFile",
+   "iat": "0079a12c",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "BOOL __stdcall WriteFile(HANDLE hFile, LPCVOID lpBuffer, DWORD nNumberOfBytesToWrite, LPDWORD lpNumberOfBytesWritten, LPOVERLAPPED lpOverlapped)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "lstrcatA",
+   "iat": "0079a130",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "LPSTR __stdcall lstrcatA(LPSTR lpString1, LPCSTR lpString2)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "WaitForMultipleObjects",
+   "iat": "0079a134",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "DWORD __stdcall WaitForMultipleObjects(DWORD nCount, HANDLE * lpHandles, BOOL bWaitAll, DWORD dwMilliseconds)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "lstrcpyA",
+   "iat": "0079a138",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "LPSTR __stdcall lstrcpyA(LPSTR lpString1, LPCSTR lpString2)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetUnhandledExceptionFilter",
+   "iat": "0079a13c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "LPTOP_LEVEL_EXCEPTION_FILTER __stdcall SetUnhandledExceptionFilter(LPTOP_LEVEL_EXCEPTION_FILTER lpTopLevelExceptionFilter)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetCurrentDirectoryA",
+   "iat": "0079a140",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall SetCurrentDirectoryA(LPCSTR lpPathName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "OpenMutexA",
+   "iat": "0079a144",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HANDLE __stdcall OpenMutexA(DWORD dwDesiredAccess, BOOL bInheritHandle, LPCSTR lpName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetFileTime",
+   "iat": "0079a148",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall GetFileTime(HANDLE hFile, LPFILETIME lpCreationTime, LPFILETIME lpLastAccessTime, LPFILETIME lpLastWriteTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetLogicalDriveStringsA",
+   "iat": "0079a14c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "DWORD __stdcall GetLogicalDriveStringsA(DWORD nBufferLength, LPSTR lpBuffer)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "ClearCommError",
+   "iat": "0079a150",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall ClearCommError(HANDLE hFile, LPDWORD lpErrors, LPCOMSTAT lpStat)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "IsBadCodePtr",
+   "iat": "0079a154",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall IsBadCodePtr(FARPROC lpfn)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "IsBadReadPtr",
+   "iat": "0079a158",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall IsBadReadPtr(void * lp, UINT_PTR ucb)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCommState",
+   "iat": "0079a15c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetCommState(HANDLE hFile, LPDCB lpDCB)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CreateEventA",
+   "iat": "0079a160",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "HANDLE __stdcall CreateEventA(LPSECURITY_ATTRIBUTES lpEventAttributes, BOOL bManualReset, BOOL bInitialState, LPCSTR lpName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "PurgeComm",
+   "iat": "0079a164",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall PurgeComm(HANDLE hFile, DWORD dwFlags)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetupComm",
+   "iat": "0079a168",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall SetupComm(HANDLE hFile, DWORD dwInQueue, DWORD dwOutQueue)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCommMask",
+   "iat": "0079a16c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetCommMask(HANDLE hFile, LPDWORD lpEvtMask)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "ResetEvent",
+   "iat": "0079a170",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall ResetEvent(HANDLE hEvent)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCommModemStatus",
+   "iat": "0079a174",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetCommModemStatus(HANDLE hFile, LPDWORD lpModemStat)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetOverlappedResult",
+   "iat": "0079a178",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall GetOverlappedResult(HANDLE hFile, LPOVERLAPPED lpOverlapped, LPDWORD lpNumberOfBytesTransferred, BOOL bWait)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetVersionExA",
+   "iat": "0079a17c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall GetVersionExA(LPOSVERSIONINFOA lpVersionInformation)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetExitCodeProcess",
+   "iat": "0079a180",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetExitCodeProcess(HANDLE hProcess, LPDWORD lpExitCode)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCurrentDirectoryA",
+   "iat": "0079a184",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "DWORD __stdcall GetCurrentDirectoryA(DWORD nBufferLength, LPSTR lpBuffer)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "HeapDestroy",
+   "iat": "0079a188",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall HeapDestroy(HANDLE hHeap)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetComputerNameA",
+   "iat": "0079a18c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetComputerNameA(LPSTR lpBuffer, LPDWORD nSize)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "ReleaseMutex",
+   "iat": "0079a190",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall ReleaseMutex(HANDLE hMutex)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCurrentProcess",
+   "iat": "0079a194",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "HANDLE __stdcall GetCurrentProcess(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetModuleFileNameA",
+   "iat": "0079a198",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "DWORD __stdcall GetModuleFileNameA(HMODULE hModule, LPSTR lpFilename, DWORD nSize)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "lstrlenA",
+   "iat": "0079a19c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "int __stdcall lstrlenA(LPCSTR lpString)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "DosDateTimeToFileTime",
+   "iat": "0079a1a0",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall DosDateTimeToFileTime(WORD wFatDate, WORD wFatTime, LPFILETIME lpFileTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CreateProcessA",
+   "iat": "0079a1a4",
+   "convention": "__stdcall",
+   "parameters": 10,
+   "signature": "BOOL __stdcall CreateProcessA(LPCSTR lpApplicationName, LPSTR lpCommandLine, LPSECURITY_ATTRIBUTES lpProcessAttributes, LPSECURITY_ATTRIBUTES lpThreadAttributes, BOOL bInheritHandles, DWORD dwCreationFlags, LPVOID lpEnvironment, LPCSTR lpCurrentDirectory, LPSTARTUPINFOA lpStartupInfo, LPPROCESS_INFORMATION lpProcessInformation)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FreeConsole",
+   "iat": "0079a1a8",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "BOOL __stdcall FreeConsole(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "DeviceIoControl",
+   "iat": "0079a1ac",
+   "convention": "__stdcall",
+   "parameters": 8,
+   "signature": "BOOL __stdcall DeviceIoControl(HANDLE hDevice, DWORD dwIoControlCode, LPVOID lpInBuffer, DWORD nInBufferSize, LPVOID lpOutBuffer, DWORD nOutBufferSize, LPDWORD lpBytesReturned, LPOVERLAPPED lpOverlapped)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CreateFileA",
+   "iat": "0079a1b0",
+   "convention": "__stdcall",
+   "parameters": 7,
+   "signature": "HANDLE __stdcall CreateFileA(LPCSTR lpFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetFilePointer",
+   "iat": "0079a1b4",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "DWORD __stdcall SetFilePointer(HANDLE hFile, LONG lDistanceToMove, PLONG lpDistanceToMoveHigh, DWORD dwMoveMethod)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "MultiByteToWideChar",
+   "iat": "0079a1b8",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "int __stdcall MultiByteToWideChar(UINT CodePage, DWORD dwFlags, LPCSTR lpMultiByteStr, int cbMultiByte, LPWSTR lpWideCharStr, int cchWideChar)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "InterlockedIncrement",
+   "iat": "0079a1bc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "LONG __stdcall InterlockedIncrement(LONG * lpAddend)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "InterlockedDecrement",
+   "iat": "0079a1c0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "LONG __stdcall InterlockedDecrement(LONG * lpAddend)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCurrentThreadId",
+   "iat": "0079a1c4",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "DWORD __stdcall GetCurrentThreadId(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "QueryPerformanceCounter",
+   "iat": "0079a1c8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall QueryPerformanceCounter(LARGE_INTEGER * lpPerformanceCount)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "QueryPerformanceFrequency",
+   "iat": "0079a1cc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall QueryPerformanceFrequency(LARGE_INTEGER * lpFrequency)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "WaitForSingleObject",
+   "iat": "0079a1d0",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "DWORD __stdcall WaitForSingleObject(HANDLE hHandle, DWORD dwMilliseconds)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CloseHandle",
+   "iat": "0079a1d4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall CloseHandle(HANDLE hObject)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "DeleteCriticalSection",
+   "iat": "0079a1d8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall DeleteCriticalSection(LPCRITICAL_SECTION lpCriticalSection)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "EnterCriticalSection",
+   "iat": "0079a1dc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall EnterCriticalSection(LPCRITICAL_SECTION lpCriticalSection)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "LeaveCriticalSection",
+   "iat": "0079a1e0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall LeaveCriticalSection(LPCRITICAL_SECTION lpCriticalSection)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "Sleep",
+   "iat": "0079a1e4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall Sleep(DWORD dwMilliseconds)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "InitializeCriticalSection",
+   "iat": "0079a1e8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall InitializeCriticalSection(LPCRITICAL_SECTION lpCriticalSection)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CreateThread",
+   "iat": "0079a1ec",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "HANDLE __stdcall CreateThread(LPSECURITY_ATTRIBUTES lpThreadAttributes, SIZE_T dwStackSize, LPTHREAD_START_ROUTINE lpStartAddress, LPVOID lpParameter, DWORD dwCreationFlags, LPDWORD lpThreadId)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetThreadPriority",
+   "iat": "0079a1f0",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall SetThreadPriority(HANDLE hThread, int nPriority)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetLastError",
+   "iat": "0079a1f4",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "DWORD __stdcall GetLastError(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FormatMessageA",
+   "iat": "0079a1f8",
+   "convention": "__stdcall",
+   "parameters": 7,
+   "signature": "DWORD __stdcall FormatMessageA(DWORD dwFlags, LPCVOID lpSource, DWORD dwMessageId, DWORD dwLanguageId, LPSTR lpBuffer, DWORD nSize, va_list * Arguments)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FindFirstFileA",
+   "iat": "0079a1fc",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HANDLE __stdcall FindFirstFileA(LPCSTR lpFileName, LPWIN32_FIND_DATAA lpFindFileData)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FindNextFileA",
+   "iat": "0079a200",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall FindNextFileA(HANDLE hFindFile, LPWIN32_FIND_DATAA lpFindFileData)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "ExitProcess",
+   "iat": "0079a204",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "noreturn void __stdcall ExitProcess(UINT uExitCode)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "AllocConsole",
+   "iat": "0079a208",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "BOOL __stdcall AllocConsole(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetVolumeInformationA",
+   "iat": "0079a20c",
+   "convention": "__stdcall",
+   "parameters": 8,
+   "signature": "BOOL __stdcall GetVolumeInformationA(LPCSTR lpRootPathName, LPSTR lpVolumeNameBuffer, DWORD nVolumeNameSize, LPDWORD lpVolumeSerialNumber, LPDWORD lpMaximumComponentLength, LPDWORD lpFileSystemFlags, LPSTR lpFileSystemNameBuffer, DWORD nFileSystemNameSize)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "LoadLibraryA",
+   "iat": "0079a210",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HMODULE __stdcall LoadLibraryA(LPCSTR lpLibFileName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FreeLibrary",
+   "iat": "0079a214",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall FreeLibrary(HMODULE hLibModule)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "LockResource",
+   "iat": "0079a218",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "LPVOID __stdcall LockResource(HGLOBAL hResData)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FindResourceA",
+   "iat": "0079a21c",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HRSRC __stdcall FindResourceA(HMODULE hModule, LPCSTR lpName, LPCSTR lpType)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "LoadResource",
+   "iat": "0079a220",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HGLOBAL __stdcall LoadResource(HMODULE hModule, HRSRC hResInfo)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "OpenEventA",
+   "iat": "0079a224",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HANDLE __stdcall OpenEventA(DWORD dwDesiredAccess, BOOL bInheritHandle, LPCSTR lpName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "UnmapViewOfFile",
+   "iat": "0079a228",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall UnmapViewOfFile(LPCVOID lpBaseAddress)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "MapViewOfFileEx",
+   "iat": "0079a22c",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "LPVOID __stdcall MapViewOfFileEx(HANDLE hFileMappingObject, DWORD dwDesiredAccess, DWORD dwFileOffsetHigh, DWORD dwFileOffsetLow, SIZE_T dwNumberOfBytesToMap, LPVOID lpBaseAddress)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetModuleHandleA",
+   "iat": "0079a230",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HMODULE __stdcall GetModuleHandleA(LPCSTR lpModuleName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetEvent",
+   "iat": "0079a234",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall SetEvent(HANDLE hEvent)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CreateMutexA",
+   "iat": "0079a238",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HANDLE __stdcall CreateMutexA(LPSECURITY_ATTRIBUTES lpMutexAttributes, BOOL bInitialOwner, LPCSTR lpName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "WideCharToMultiByte",
+   "iat": "0079a23c",
+   "convention": "__stdcall",
+   "parameters": 8,
+   "signature": "int __stdcall WideCharToMultiByte(UINT CodePage, DWORD dwFlags, LPCWSTR lpWideCharStr, int cchWideChar, LPSTR lpMultiByteStr, int cbMultiByte, LPCSTR lpDefaultChar, LPBOOL lpUsedDefaultChar)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetProcAddress",
+   "iat": "0079a240",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "FARPROC __stdcall GetProcAddress(HMODULE hModule, LPCSTR lpProcName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetDiskFreeSpaceA",
+   "iat": "0079a244",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "BOOL __stdcall GetDiskFreeSpaceA(LPCSTR lpRootPathName, LPDWORD lpSectorsPerCluster, LPDWORD lpBytesPerSector, LPDWORD lpNumberOfFreeClusters, LPDWORD lpTotalNumberOfClusters)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetCommTimeouts",
+   "iat": "0079a248",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall SetCommTimeouts(HANDLE hFile, LPCOMMTIMEOUTS lpCommTimeouts)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetDriveTypeA",
+   "iat": "0079a24c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "UINT __stdcall GetDriveTypeA(LPCSTR lpRootPathName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetCommState",
+   "iat": "0079a250",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall SetCommState(HANDLE hFile, LPDCB lpDCB)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetStartupInfoA",
+   "iat": "0079a254",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall GetStartupInfoA(LPSTARTUPINFOA lpStartupInfo)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "TerminateProcess",
+   "iat": "0079a258",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall TerminateProcess(HANDLE hProcess, UINT uExitCode)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetLocalTime",
+   "iat": "0079a25c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall GetLocalTime(LPSYSTEMTIME lpSystemTime)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "PeekConsoleInputA",
+   "iat": "0079a260",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall PeekConsoleInputA(HANDLE hConsoleInput, PINPUT_RECORD lpBuffer, DWORD nLength, LPDWORD lpNumberOfEventsRead)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetConsoleMode",
+   "iat": "0079a264",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetConsoleMode(HANDLE hConsoleHandle, LPDWORD lpMode)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "HeapFree",
+   "iat": "0079a268",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall HeapFree(HANDLE hHeap, DWORD dwFlags, LPVOID lpMem)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCommandLineA",
+   "iat": "0079a26c",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "LPSTR __stdcall GetCommandLineA(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "HeapAlloc",
+   "iat": "0079a270",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "LPVOID __stdcall HeapAlloc(HANDLE hHeap, DWORD dwFlags, SIZE_T dwBytes)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FatalAppExitA",
+   "iat": "0079a274",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "void __stdcall FatalAppExitA(UINT uAction, LPCSTR lpMessageText)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "HeapCreate",
+   "iat": "0079a278",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HANDLE __stdcall HeapCreate(DWORD flOptions, SIZE_T dwInitialSize, SIZE_T dwMaximumSize)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetTimeZoneInformation",
+   "iat": "0079a27c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "DWORD __stdcall GetTimeZoneInformation(LPTIME_ZONE_INFORMATION lpTimeZoneInformation)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "RtlUnwind",
+   "iat": "0079a280",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "void __stdcall RtlUnwind(PVOID TargetFrame, PVOID TargetIp, PEXCEPTION_RECORD ExceptionRecord, PVOID ReturnValue)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetConsoleMode",
+   "iat": "0079a284",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall SetConsoleMode(HANDLE hConsoleHandle, DWORD dwMode)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetVersion",
+   "iat": "0079a288",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "DWORD __stdcall GetVersion(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "VirtualFree",
+   "iat": "0079a28c",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall VirtualFree(LPVOID lpAddress, SIZE_T dwSize, DWORD dwFreeType)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "VirtualAlloc",
+   "iat": "0079a290",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "LPVOID __stdcall VirtualAlloc(LPVOID lpAddress, SIZE_T dwSize, DWORD flAllocationType, DWORD flProtect)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "HeapReAlloc",
+   "iat": "0079a294",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "LPVOID __stdcall HeapReAlloc(HANDLE hHeap, DWORD dwFlags, LPVOID lpMem, SIZE_T dwBytes)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "IsBadWritePtr",
+   "iat": "0079a298",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall IsBadWritePtr(LPVOID lp, UINT_PTR ucb)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "HeapSize",
+   "iat": "0079a29c",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "SIZE_T __stdcall HeapSize(HANDLE hHeap, DWORD dwFlags, LPCVOID lpMem)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "LCMapStringA",
+   "iat": "0079a2a0",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "int __stdcall LCMapStringA(LCID Locale, DWORD dwMapFlags, LPCSTR lpSrcStr, int cchSrc, LPSTR lpDestStr, int cchDest)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "LCMapStringW",
+   "iat": "0079a2a4",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "int __stdcall LCMapStringW(LCID Locale, DWORD dwMapFlags, LPCWSTR lpSrcStr, int cchSrc, LPWSTR lpDestStr, int cchDest)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "TlsSetValue",
+   "iat": "0079a2a8",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall TlsSetValue(DWORD dwTlsIndex, LPVOID lpTlsValue)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "TlsAlloc",
+   "iat": "0079a2ac",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "DWORD __stdcall TlsAlloc(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "TlsGetValue",
+   "iat": "0079a2b0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "LPVOID __stdcall TlsGetValue(DWORD dwTlsIndex)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCurrentThread",
+   "iat": "0079a2b4",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "HANDLE __stdcall GetCurrentThread(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetLastError",
+   "iat": "0079a2b8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall SetLastError(DWORD dwErrCode)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FlushFileBuffers",
+   "iat": "0079a2bc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall FlushFileBuffers(HANDLE hFile)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetHandleCount",
+   "iat": "0079a2c0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "UINT __stdcall SetHandleCount(UINT uNumber)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetStdHandle",
+   "iat": "0079a2c4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HANDLE __stdcall GetStdHandle(DWORD nStdHandle)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetFileType",
+   "iat": "0079a2c8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "DWORD __stdcall GetFileType(HANDLE hFile)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCPInfo",
+   "iat": "0079a2cc",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetCPInfo(UINT CodePage, LPCPINFO lpCPInfo)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetACP",
+   "iat": "0079a2d0"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetOEMCP",
+   "iat": "0079a2d4"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetConsoleCtrlHandler",
+   "iat": "0079a2d8",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall SetConsoleCtrlHandler(PHANDLER_ROUTINE HandlerRoutine, BOOL Add)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetFileAttributesA",
+   "iat": "0079a2dc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "DWORD __stdcall GetFileAttributesA(LPCSTR lpFileName)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetCurrentProcessId",
+   "iat": "0079a2e0",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "DWORD __stdcall GetCurrentProcessId(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "UnhandledExceptionFilter",
+   "iat": "0079a2e4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "LONG __stdcall UnhandledExceptionFilter(_EXCEPTION_POINTERS * ExceptionInfo)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FreeEnvironmentStringsA",
+   "iat": "0079a2e8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall FreeEnvironmentStringsA(LPCH param_1)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FreeEnvironmentStringsW",
+   "iat": "0079a2ec",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall FreeEnvironmentStringsW(LPWCH param_1)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetEnvironmentStrings",
+   "iat": "0079a2f0",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "LPCH __stdcall GetEnvironmentStrings(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetEnvironmentStringsW",
+   "iat": "0079a2f4",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "LPWCH __stdcall GetEnvironmentStringsW(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "FindClose",
+   "iat": "0079a2f8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall FindClose(HANDLE hFindFile)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "IsValidLocale",
+   "iat": "0079a2fc",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall IsValidLocale(LCID Locale, DWORD dwFlags)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "IsValidCodePage",
+   "iat": "0079a300",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall IsValidCodePage(UINT CodePage)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetLocaleInfoA",
+   "iat": "0079a304",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "int __stdcall GetLocaleInfoA(LCID Locale, LCTYPE LCType, LPSTR lpLCData, int cchData)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "EnumSystemLocalesA",
+   "iat": "0079a308",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall EnumSystemLocalesA(LOCALE_ENUMPROCA lpLocaleEnumProc, DWORD dwFlags)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetUserDefaultLCID",
+   "iat": "0079a30c",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "LCID __stdcall GetUserDefaultLCID(void)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetStdHandle",
+   "iat": "0079a310",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall SetStdHandle(DWORD nStdHandle, HANDLE hHandle)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetStringTypeA",
+   "iat": "0079a314",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "BOOL __stdcall GetStringTypeA(LCID Locale, DWORD dwInfoType, LPCSTR lpSrcStr, int cchSrc, LPWORD lpCharType)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetStringTypeW",
+   "iat": "0079a318",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall GetStringTypeW(DWORD dwInfoType, LPCWSTR lpSrcStr, int cchSrc, LPWORD lpCharType)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CompareStringA",
+   "iat": "0079a31c",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "int __stdcall CompareStringA(LCID Locale, DWORD dwCmpFlags, PCNZCH lpString1, int cchCount1, PCNZCH lpString2, int cchCount2)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "CompareStringW",
+   "iat": "0079a320",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "int __stdcall CompareStringW(LCID Locale, DWORD dwCmpFlags, PCNZWCH lpString1, int cchCount1, PCNZWCH lpString2, int cchCount2)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetEnvironmentVariableA",
+   "iat": "0079a324",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall SetEnvironmentVariableA(LPCSTR lpName, LPCSTR lpValue)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "LocalFree",
+   "iat": "0079a328",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HLOCAL __stdcall LocalFree(HLOCAL hMem)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "SetEndOfFile",
+   "iat": "0079a32c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall SetEndOfFile(HANDLE hFile)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetLocaleInfoW",
+   "iat": "0079a330",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "int __stdcall GetLocaleInfoW(LCID Locale, LCTYPE LCType, LPWSTR lpLCData, int cchData)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "lstrlenW",
+   "iat": "0079a334",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "int __stdcall lstrlenW(LPCWSTR lpString)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "RaiseException",
+   "iat": "0079a338",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "void __stdcall RaiseException(DWORD dwExceptionCode, DWORD dwExceptionFlags, DWORD nNumberOfArguments, ULONG_PTR * lpArguments)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "ReadConsoleInputA",
+   "iat": "0079a33c",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall ReadConsoleInputA(HANDLE hConsoleInput, PINPUT_RECORD lpBuffer, DWORD nLength, LPDWORD lpNumberOfEventsRead)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "TlsFree",
+   "iat": "0079a340",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall TlsFree(DWORD dwTlsIndex)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "GetNumberOfConsoleInputEvents",
+   "iat": "0079a344",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetNumberOfConsoleInputEvents(HANDLE hConsoleInput, LPDWORD lpNumberOfEvents)"
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "name": "WriteConsoleA",
+   "iat": "0079a348",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "BOOL __stdcall WriteConsoleA(HANDLE hConsoleOutput, void * lpBuffer, DWORD nNumberOfCharsToWrite, LPDWORD lpNumberOfCharsWritten, LPVOID lpReserved)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "DefWindowProcA",
+   "iat": "0079a388",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "LRESULT __stdcall DefWindowProcA(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetFocus",
+   "iat": "0079a38c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HWND __stdcall SetFocus(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetMenu",
+   "iat": "0079a390",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HMENU __stdcall GetMenu(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "WindowFromPoint",
+   "iat": "0079a394",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HWND __stdcall WindowFromPoint(POINT Point)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetWindowRect",
+   "iat": "0079a398",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetWindowRect(HWND hWnd, LPRECT lpRect)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetActiveWindow",
+   "iat": "0079a39c",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "HWND __stdcall GetActiveWindow(void)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ToAscii",
+   "iat": "0079a3a0",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "int __stdcall ToAscii(UINT uVirtKey, UINT uScanCode, BYTE * lpKeyState, LPWORD lpChar, UINT uFlags)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ChildWindowFromPointEx",
+   "iat": "0079a3a4",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HWND __stdcall ChildWindowFromPointEx(HWND hwnd, POINT pt, UINT flags)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetCursorPos",
+   "iat": "0079a3a8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall GetCursorPos(LPPOINT lpPoint)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetKeyState",
+   "iat": "0079a3ac",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "SHORT __stdcall GetKeyState(int nVirtKey)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "IsWindowEnabled",
+   "iat": "0079a3b0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall IsWindowEnabled(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetAsyncKeyState",
+   "iat": "0079a3b4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "SHORT __stdcall GetAsyncKeyState(int vKey)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "IntersectRect",
+   "iat": "0079a3b8",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall IntersectRect(LPRECT lprcDst, RECT * lprcSrc1, RECT * lprcSrc2)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "EndDialog",
+   "iat": "0079a3bc",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall EndDialog(HWND hDlg, INT_PTR nResult)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetDlgItemTextA",
+   "iat": "0079a3c0",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall SetDlgItemTextA(HWND hDlg, int nIDDlgItem, LPCSTR lpString)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "DialogBoxParamA",
+   "iat": "0079a3c4",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "INT_PTR __stdcall DialogBoxParamA(HINSTANCE hInstance, LPCSTR lpTemplateName, HWND hWndParent, DLGPROC lpDialogFunc, LPARAM dwInitParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "DialogBoxIndirectParamA",
+   "iat": "0079a3c8",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "INT_PTR __stdcall DialogBoxIndirectParamA(HINSTANCE hInstance, LPCDLGTEMPLATEA hDialogTemplate, HWND hWndParent, DLGPROC lpDialogFunc, LPARAM dwInitParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ShowCursor",
+   "iat": "0079a3cc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "int __stdcall ShowCursor(BOOL bShow)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetWindowPos",
+   "iat": "0079a3d0",
+   "convention": "__stdcall",
+   "parameters": 7,
+   "signature": "BOOL __stdcall SetWindowPos(HWND hWnd, HWND hWndInsertAfter, int X, int Y, int cx, int cy, UINT uFlags)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "DestroyWindow",
+   "iat": "0079a3d4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall DestroyWindow(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "MapVirtualKeyA",
+   "iat": "0079a3d8",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "UINT __stdcall MapVirtualKeyA(UINT uCode, UINT uMapType)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetSystemMetrics",
+   "iat": "0079a3dc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "int __stdcall GetSystemMetrics(int nIndex)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "MoveWindow",
+   "iat": "0079a3e0",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "BOOL __stdcall MoveWindow(HWND hWnd, int X, int Y, int nWidth, int nHeight, BOOL bRepaint)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "AdjustWindowRectEx",
+   "iat": "0079a3e4",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall AdjustWindowRectEx(LPRECT lpRect, DWORD dwStyle, BOOL bMenu, DWORD dwExStyle)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ReleaseCapture",
+   "iat": "0079a3e8",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "BOOL __stdcall ReleaseCapture(void)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetCapture",
+   "iat": "0079a3ec",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "HWND __stdcall GetCapture(void)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetCapture",
+   "iat": "0079a3f0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HWND __stdcall SetCapture(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetDlgCtrlID",
+   "iat": "0079a3f4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "int __stdcall GetDlgCtrlID(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ValidateRect",
+   "iat": "0079a3f8",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall ValidateRect(HWND hWnd, RECT * lpRect)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "AdjustWindowRect",
+   "iat": "0079a3fc",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall AdjustWindowRect(LPRECT lpRect, DWORD dwStyle, BOOL bMenu)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetSysColor",
+   "iat": "0079a400",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "DWORD __stdcall GetSysColor(int nIndex)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "CreateDialogParamA",
+   "iat": "0079a404",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "HWND __stdcall CreateDialogParamA(HINSTANCE hInstance, LPCSTR lpTemplateName, HWND hWndParent, DLGPROC lpDialogFunc, LPARAM dwInitParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "IsDlgButtonChecked",
+   "iat": "0079a408",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "UINT __stdcall IsDlgButtonChecked(HWND hDlg, int nIDButton)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "CheckDlgButton",
+   "iat": "0079a40c",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall CheckDlgButton(HWND hDlg, int nIDButton, UINT uCheck)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "WaitForInputIdle",
+   "iat": "0079a410",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "DWORD __stdcall WaitForInputIdle(HANDLE hProcess, DWORD dwMilliseconds)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetTopWindow",
+   "iat": "0079a414",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HWND __stdcall GetTopWindow(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetForegroundWindow",
+   "iat": "0079a418",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "HWND __stdcall GetForegroundWindow(void)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "LoadIconA",
+   "iat": "0079a41c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HICON __stdcall LoadIconA(HINSTANCE hInstance, LPCSTR lpIconName)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetActiveWindow",
+   "iat": "0079a420",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HWND __stdcall SetActiveWindow(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "RedrawWindow",
+   "iat": "0079a424",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall RedrawWindow(HWND hWnd, RECT * lprcUpdate, HRGN hrgnUpdate, UINT flags)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetWindowContextHelpId",
+   "iat": "0079a428",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "DWORD __stdcall GetWindowContextHelpId(HWND param_1)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "WinHelpA",
+   "iat": "0079a42c",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall WinHelpA(HWND hWndMain, LPCSTR lpszHelp, UINT uCommand, ULONG_PTR dwData)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ChildWindowFromPoint",
+   "iat": "0079a430",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HWND __stdcall ChildWindowFromPoint(HWND hWndParent, POINT Point)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "LoadCursorA",
+   "iat": "0079a434",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HCURSOR __stdcall LoadCursorA(HINSTANCE hInstance, LPCSTR lpCursorName)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetCursor",
+   "iat": "0079a438",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HCURSOR __stdcall SetCursor(HCURSOR hCursor)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "PostQuitMessage",
+   "iat": "0079a43c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "void __stdcall PostQuitMessage(int nExitCode)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "FindWindowA",
+   "iat": "0079a440",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HWND __stdcall FindWindowA(LPCSTR lpClassName, LPCSTR lpWindowName)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetCursorPos",
+   "iat": "0079a444",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall SetCursorPos(int X, int Y)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "CreateDialogIndirectParamA",
+   "iat": "0079a448",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "HWND __stdcall CreateDialogIndirectParamA(HINSTANCE hInstance, LPCDLGTEMPLATEA lpTemplate, HWND hWndParent, DLGPROC lpDialogFunc, LPARAM dwInitParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetKeyNameTextA",
+   "iat": "0079a44c",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "int __stdcall GetKeyNameTextA(LONG lParam, LPSTR lpString, int cchSize)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ScreenToClient",
+   "iat": "0079a450",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall ScreenToClient(HWND hWnd, LPPOINT lpPoint)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "LockWindowUpdate",
+   "iat": "0079a454",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall LockWindowUpdate(HWND hWndLock)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetDC",
+   "iat": "0079a458",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HDC __stdcall GetDC(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "CloseWindow",
+   "iat": "0079a45c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall CloseWindow(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetFocus",
+   "iat": "0079a460",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "HWND __stdcall GetFocus(void)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "PeekMessageA",
+   "iat": "0079a464",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "BOOL __stdcall PeekMessageA(LPMSG lpMsg, HWND hWnd, UINT wMsgFilterMin, UINT wMsgFilterMax, UINT wRemoveMsg)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "MessageBoxIndirectA",
+   "iat": "0079a468",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "int __stdcall MessageBoxIndirectA(MSGBOXPARAMSA * lpmbp)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "UpdateWindow",
+   "iat": "0079a46c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall UpdateWindow(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "PostMessageA",
+   "iat": "0079a470",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall PostMessageA(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetUpdateRect",
+   "iat": "0079a474",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall GetUpdateRect(HWND hWnd, LPRECT lpRect, BOOL bErase)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ReleaseDC",
+   "iat": "0079a478",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "int __stdcall ReleaseDC(HWND hWnd, HDC hDC)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "MessageBoxA",
+   "iat": "0079a47c",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "int __stdcall MessageBoxA(HWND hWnd, LPCSTR lpText, LPCSTR lpCaption, UINT uType)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetWindow",
+   "iat": "0079a480",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HWND __stdcall GetWindow(HWND hWnd, UINT uCmd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SendDlgItemMessageA",
+   "iat": "0079a484",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "LRESULT __stdcall SendDlgItemMessageA(HWND hDlg, int nIDDlgItem, UINT Msg, WPARAM wParam, LPARAM lParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetWindowLongA",
+   "iat": "0079a488",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "LONG __stdcall SetWindowLongA(HWND hWnd, int nIndex, LONG dwNewLong)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetWindowLongA",
+   "iat": "0079a48c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "LONG __stdcall GetWindowLongA(HWND hWnd, int nIndex)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "EnableWindow",
+   "iat": "0079a490",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall EnableWindow(HWND hWnd, BOOL bEnable)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "InvalidateRect",
+   "iat": "0079a494",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall InvalidateRect(HWND hWnd, RECT * lpRect, BOOL bErase)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ShowWindow",
+   "iat": "0079a498",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall ShowWindow(HWND hWnd, int nCmdShow)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetDlgItem",
+   "iat": "0079a49c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HWND __stdcall GetDlgItem(HWND hDlg, int nIDDlgItem)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SendMessageA",
+   "iat": "0079a4a0",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "LRESULT __stdcall SendMessageA(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "wsprintfA",
+   "iat": "0079a4a4",
+   "convention": "__cdecl",
+   "parameters": 3,
+   "signature": "int __cdecl wsprintfA(LPSTR param_1, LPCSTR param_2, ...)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetRect",
+   "iat": "0079a4a8",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "BOOL __stdcall SetRect(LPRECT lprc, int xLeft, int yTop, int xRight, int yBottom)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "ClientToScreen",
+   "iat": "0079a4ac",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall ClientToScreen(HWND hWnd, LPPOINT lpPoint)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "TranslateMessage",
+   "iat": "0079a4b0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall TranslateMessage(MSG * lpMsg)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "DispatchMessageA",
+   "iat": "0079a4b4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "LRESULT __stdcall DispatchMessageA(MSG * lpMsg)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetClientRect",
+   "iat": "0079a4b8",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetClientRect(HWND hWnd, LPRECT lpRect)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "BringWindowToTop",
+   "iat": "0079a4bc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall BringWindowToTop(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "CallWindowProcA",
+   "iat": "0079a4c0",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "LRESULT __stdcall CallWindowProcA(WNDPROC lpPrevWndFunc, HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "KillTimer",
+   "iat": "0079a4c4",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall KillTimer(HWND hWnd, UINT_PTR uIDEvent)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "CreateWindowExA",
+   "iat": "0079a4c8",
+   "convention": "__stdcall",
+   "parameters": 12,
+   "signature": "HWND __stdcall CreateWindowExA(DWORD dwExStyle, LPCSTR lpClassName, LPCSTR lpWindowName, DWORD dwStyle, int X, int Y, int nWidth, int nHeight, HWND hWndParent, HMENU hMenu, HINSTANCE hInstance, LPVOID lpParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "RegisterClassA",
+   "iat": "0079a4cc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "ATOM __stdcall RegisterClassA(WNDCLASSA * lpWndClass)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetForegroundWindow",
+   "iat": "0079a4d0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall SetForegroundWindow(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "SetTimer",
+   "iat": "0079a4d4",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "UINT_PTR __stdcall SetTimer(HWND hWnd, UINT_PTR nIDEvent, UINT uElapse, TIMERPROC lpTimerFunc)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "IsWindowVisible",
+   "iat": "0079a4d8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall IsWindowVisible(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "EnumChildWindows",
+   "iat": "0079a4dc",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall EnumChildWindows(HWND hWndParent, WNDENUMPROC lpEnumFunc, LPARAM lParam)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetClassNameA",
+   "iat": "0079a4e0",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "int __stdcall GetClassNameA(HWND hWnd, LPSTR lpClassName, int nMaxCount)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "TranslateAcceleratorA",
+   "iat": "0079a4e4",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "int __stdcall TranslateAcceleratorA(HWND hWnd, HACCEL hAccTable, LPMSG lpMsg)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetWindowTextA",
+   "iat": "0079a4e8",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "int __stdcall GetWindowTextA(HWND hWnd, LPSTR lpString, int nMaxCount)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "IsDialogMessageA",
+   "iat": "0079a4ec",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall IsDialogMessageA(HWND hDlg, LPMSG lpMsg)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "EndPaint",
+   "iat": "0079a4f0",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall EndPaint(HWND hWnd, PAINTSTRUCT * lpPaint)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "CharToOemBuffA",
+   "iat": "0079a4f4",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall CharToOemBuffA(LPCSTR lpszSrc, LPSTR lpszDst, DWORD cchDstLength)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "BeginPaint",
+   "iat": "0079a4f8",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HDC __stdcall BeginPaint(HWND hWnd, LPPAINTSTRUCT lpPaint)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetNextDlgTabItem",
+   "iat": "0079a4fc",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HWND __stdcall GetNextDlgTabItem(HWND hDlg, HWND hCtl, BOOL bPrevious)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "GetParent",
+   "iat": "0079a500",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HWND __stdcall GetParent(HWND hWnd)"
+  },
+  {
+   "dll": "USER32.dll",
+   "name": "RegisterHotKey",
+   "iat": "0079a504",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall RegisterHotKey(HWND hWnd, int id, UINT fsModifiers, UINT vk)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "DeleteObject",
+   "iat": "0079a058",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall DeleteObject(HGDIOBJ ho)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "CreateFontIndirectA",
+   "iat": "0079a05c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HFONT __stdcall CreateFontIndirectA(LOGFONTA * lplf)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "GetDeviceCaps",
+   "iat": "0079a060",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "int __stdcall GetDeviceCaps(HDC hdc, int index)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "SelectObject",
+   "iat": "0079a064",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HGDIOBJ __stdcall SelectObject(HDC hdc, HGDIOBJ h)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "SetTextColor",
+   "iat": "0079a068",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "COLORREF __stdcall SetTextColor(HDC hdc, COLORREF color)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "SetBkColor",
+   "iat": "0079a06c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "COLORREF __stdcall SetBkColor(HDC hdc, COLORREF color)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "TextOutA",
+   "iat": "0079a070",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "BOOL __stdcall TextOutA(HDC hdc, int x, int y, LPCSTR lpString, int c)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "CreateSolidBrush",
+   "iat": "0079a074",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HBRUSH __stdcall CreateSolidBrush(COLORREF color)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "GetTextColor",
+   "iat": "0079a078",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "COLORREF __stdcall GetTextColor(HDC hdc)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "SetBkMode",
+   "iat": "0079a07c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "int __stdcall SetBkMode(HDC hdc, int mode)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "GetBkMode",
+   "iat": "0079a080",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "int __stdcall GetBkMode(HDC hdc)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "GetStockObject",
+   "iat": "0079a084",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HGDIOBJ __stdcall GetStockObject(int i)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "GetBkColor",
+   "iat": "0079a088",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "COLORREF __stdcall GetBkColor(HDC hdc)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "DPtoLP",
+   "iat": "0079a08c",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall DPtoLP(HDC hdc, LPPOINT lppt, int c)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "SetWindowOrgEx",
+   "iat": "0079a090",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall SetWindowOrgEx(HDC hdc, int x, int y, LPPOINT lppt)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "RestoreDC",
+   "iat": "0079a094",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall RestoreDC(HDC hdc, int nSavedDC)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "ModifyWorldTransform",
+   "iat": "0079a098",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall ModifyWorldTransform(HDC hdc, XFORM * lpxf, DWORD mode)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "SetGraphicsMode",
+   "iat": "0079a09c",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "int __stdcall SetGraphicsMode(HDC hdc, int iMode)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "SetViewportOrgEx",
+   "iat": "0079a0a0",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall SetViewportOrgEx(HDC hdc, int x, int y, LPPOINT lppt)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "SaveDC",
+   "iat": "0079a0a4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "int __stdcall SaveDC(HDC hdc)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "CreateDIBSection",
+   "iat": "0079a0a8",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "HBITMAP __stdcall CreateDIBSection(HDC hdc, BITMAPINFO * lpbmi, UINT usage, void * * ppvBits, HANDLE hSection, DWORD offset)"
+  },
+  {
+   "dll": "GDI32.dll",
+   "name": "GetTextMetricsA",
+   "iat": "0079a0ac",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall GetTextMetricsA(HDC hdc, LPTEXTMETRICA lptm)"
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "name": "RegQueryInfoKeyA",
+   "iat": "0079a000",
+   "convention": "__stdcall",
+   "parameters": 12,
+   "signature": "LSTATUS __stdcall RegQueryInfoKeyA(HKEY hKey, LPSTR lpClass, LPDWORD lpcchClass, LPDWORD lpReserved, LPDWORD lpcSubKeys, LPDWORD lpcbMaxSubKeyLen, LPDWORD lpcbMaxClassLen, LPDWORD lpcValues, LPDWORD lpcbMaxValueNameLen, LPDWORD lpcbMaxValueLen, LPDWORD lpcbSecurityDescriptor, PFILETIME lpftLastWriteTime)"
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "name": "RegCloseKey",
+   "iat": "0079a004",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "LSTATUS __stdcall RegCloseKey(HKEY hKey)"
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "name": "RegQueryValueExA",
+   "iat": "0079a008",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "LSTATUS __stdcall RegQueryValueExA(HKEY hKey, LPCSTR lpValueName, LPDWORD lpReserved, LPDWORD lpType, LPBYTE lpData, LPDWORD lpcbData)"
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "name": "RegOpenKeyExA",
+   "iat": "0079a00c",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "LSTATUS __stdcall RegOpenKeyExA(HKEY hKey, LPCSTR lpSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult)"
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "name": "RegDeleteValueA",
+   "iat": "0079a010",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "LSTATUS __stdcall RegDeleteValueA(HKEY hKey, LPCSTR lpValueName)"
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "name": "RegSetValueExA",
+   "iat": "0079a014",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "LSTATUS __stdcall RegSetValueExA(HKEY hKey, LPCSTR lpValueName, DWORD Reserved, DWORD dwType, BYTE * lpData, DWORD cbData)"
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "name": "RegCreateKeyExA",
+   "iat": "0079a018",
+   "convention": "__stdcall",
+   "parameters": 9,
+   "signature": "LSTATUS __stdcall RegCreateKeyExA(HKEY hKey, LPCSTR lpSubKey, DWORD Reserved, LPSTR lpClass, DWORD dwOptions, REGSAM samDesired, LPSECURITY_ATTRIBUTES lpSecurityAttributes, PHKEY phkResult, LPDWORD lpdwDisposition)"
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "name": "RegEnumKeyExA",
+   "iat": "0079a01c",
+   "convention": "__stdcall",
+   "parameters": 8,
+   "signature": "LSTATUS __stdcall RegEnumKeyExA(HKEY hKey, DWORD dwIndex, LPSTR lpName, LPDWORD lpcchName, LPDWORD lpReserved, LPSTR lpClass, LPDWORD lpcchClass, PFILETIME lpftLastWriteTime)"
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "name": "RegDeleteKeyA",
+   "iat": "0079a020",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "LSTATUS __stdcall RegDeleteKeyA(HKEY hKey, LPCSTR lpSubKey)"
+  },
+  {
+   "dll": "SHELL32.dll",
+   "name": "FindExecutableA",
+   "iat": "0079a380",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HINSTANCE __stdcall FindExecutableA(LPCSTR lpFile, LPCSTR lpDirectory, LPSTR lpResult)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "StgCreateDocfile",
+   "iat": "0079a5bc",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "HRESULT __stdcall StgCreateDocfile(WCHAR * pwcsName, DWORD grfMode, DWORD reserved, IStorage * * ppstgOpen)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "CoRevokeClassObject",
+   "iat": "0079a5c0",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HRESULT __stdcall CoRevokeClassObject(DWORD dwRegister)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "OleUninitialize",
+   "iat": "0079a5c4",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "void __stdcall OleUninitialize(void)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "OleInitialize",
+   "iat": "0079a5c8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HRESULT __stdcall OleInitialize(LPVOID pvReserved)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "CoRegisterClassObject",
+   "iat": "0079a5cc",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "HRESULT __stdcall CoRegisterClassObject(IID * rclsid, LPUNKNOWN pUnk, DWORD dwClsContext, DWORD flags, LPDWORD lpdwRegister)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "CoDisconnectObject",
+   "iat": "0079a5d0",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HRESULT __stdcall CoDisconnectObject(LPUNKNOWN pUnk, DWORD dwReserved)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "StringFromGUID2",
+   "iat": "0079a5d4",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "int __stdcall StringFromGUID2(GUID * rguid, LPOLESTR lpsz, int cchMax)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "StgOpenStorage",
+   "iat": "0079a5d8",
+   "convention": "__stdcall",
+   "parameters": 6,
+   "signature": "HRESULT __stdcall StgOpenStorage(WCHAR * pwcsName, IStorage * pstgPriority, DWORD grfMode, SNB snbExclude, DWORD reserved, IStorage * * ppstgOpen)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "CoFileTimeNow",
+   "iat": "0079a5dc",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HRESULT __stdcall CoFileTimeNow(FILETIME * lpFileTime)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "StringFromCLSID",
+   "iat": "0079a5e0",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HRESULT __stdcall StringFromCLSID(IID * rclsid, LPOLESTR * lplpsz)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "CLSIDFromString",
+   "iat": "0079a5e4",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HRESULT __stdcall CLSIDFromString(LPCOLESTR lpsz, LPCLSID pclsid)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "OleSaveToStream",
+   "iat": "0079a5e8",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "HRESULT __stdcall OleSaveToStream(LPPERSISTSTREAM pPStm, LPSTREAM pStm)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "OleLoadFromStream",
+   "iat": "0079a5ec",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HRESULT __stdcall OleLoadFromStream(LPSTREAM pStm, IID * iidInterface, LPVOID * ppvObj)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "CoCreateInstance",
+   "iat": "0079a5f0",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "HRESULT __stdcall CoCreateInstance(IID * rclsid, LPUNKNOWN pUnkOuter, DWORD dwClsContext, IID * riid, LPVOID * ppv)"
+  },
+  {
+   "dll": "ole32.dll",
+   "name": "OleRun",
+   "iat": "0079a5f4",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HRESULT __stdcall OleRun(LPUNKNOWN pUnknown)"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "GetErrorInfo",
+   "iat": "0079a350"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "RevokeActiveObject",
+   "iat": "0079a354"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "LoadTypeLib",
+   "iat": "0079a358"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "SysFreeString",
+   "iat": "0079a35c"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "SysAllocString",
+   "iat": "0079a360"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "RegisterActiveObject",
+   "iat": "0079a364"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "SetErrorInfo",
+   "iat": "0079a368"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "VariantChangeType",
+   "iat": "0079a36c"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "CreateErrorInfo",
+   "iat": "0079a370"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "VariantClear",
+   "iat": "0079a374"
+  },
+  {
+   "dll": "OLEAUT32.dll",
+   "name": "VariantInit",
+   "iat": "0079a378"
+  },
+  {
+   "dll": "WINMM.dll",
+   "name": "timeKillEvent",
+   "iat": "0079a51c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "MMRESULT __stdcall timeKillEvent(UINT uTimerID)"
+  },
+  {
+   "dll": "WINMM.dll",
+   "name": "timeEndPeriod",
+   "iat": "0079a520",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "MMRESULT __stdcall timeEndPeriod(UINT uPeriod)"
+  },
+  {
+   "dll": "WINMM.dll",
+   "name": "timeGetTime",
+   "iat": "0079a524",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "DWORD __stdcall timeGetTime(void)"
+  },
+  {
+   "dll": "WINMM.dll",
+   "name": "timeSetEvent",
+   "iat": "0079a528",
+   "convention": "__stdcall",
+   "parameters": 5,
+   "signature": "MMRESULT __stdcall timeSetEvent(UINT uDelay, UINT uResolution, LPTIMECALLBACK fptc, DWORD_PTR dwUser, UINT fuEvent)"
+  },
+  {
+   "dll": "WINMM.dll",
+   "name": "timeBeginPeriod",
+   "iat": "0079a52c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "MMRESULT __stdcall timeBeginPeriod(UINT uPeriod)"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "getsockopt",
+   "iat": "0079a534"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "ntohl",
+   "iat": "0079a538"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "htons",
+   "iat": "0079a53c"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "recvfrom",
+   "iat": "0079a540"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "htonl",
+   "iat": "0079a544"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "setsockopt",
+   "iat": "0079a548"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "sendto",
+   "iat": "0079a54c"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "ntohs",
+   "iat": "0079a550"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "gethostname",
+   "iat": "0079a554"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "WSAStartup",
+   "iat": "0079a558"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "EnumProtocolsA",
+   "iat": "0079a55c"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "WSAAsyncSelect",
+   "iat": "0079a560"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "WSACleanup",
+   "iat": "0079a564"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "WSAGetLastError",
+   "iat": "0079a568"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "inet_ntoa",
+   "iat": "0079a56c"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "socket",
+   "iat": "0079a570"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "bind",
+   "iat": "0079a574"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "closesocket",
+   "iat": "0079a578"
+  },
+  {
+   "dll": "WSOCK32.dll",
+   "name": "gethostbyname",
+   "iat": "0079a57c"
+  },
+  {
+   "dll": "DDRAW.dll",
+   "name": "DirectDrawCreate",
+   "iat": "0079a048",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined DirectDrawCreate(void)"
+  },
+  {
+   "dll": "VERSION.dll",
+   "name": "VerQueryValueA",
+   "iat": "0079a50c",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall VerQueryValueA(LPCVOID pBlock, LPCSTR lpSubBlock, LPVOID * lplpBuffer, PUINT puLen)"
+  },
+  {
+   "dll": "VERSION.dll",
+   "name": "GetFileVersionInfoSizeA",
+   "iat": "0079a510",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "DWORD __stdcall GetFileVersionInfoSizeA(LPCSTR lptstrFilename, LPDWORD lpdwHandle)"
+  },
+  {
+   "dll": "VERSION.dll",
+   "name": "GetFileVersionInfoA",
+   "iat": "0079a514",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall GetFileVersionInfoA(LPCSTR lptstrFilename, DWORD dwHandle, DWORD dwLen, LPVOID lpData)"
+  },
+  {
+   "dll": "COMCTL32.dll",
+   "name": "ImageList_DragShowNolock",
+   "iat": "0079a028",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall ImageList_DragShowNolock(BOOL fShow)"
+  },
+  {
+   "dll": "COMCTL32.dll",
+   "name": "ImageList_DragMove",
+   "iat": "0079a030",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall ImageList_DragMove(int x, int y)"
+  },
+  {
+   "dll": "COMCTL32.dll",
+   "name": "ImageList_DragEnter",
+   "iat": "0079a034",
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "BOOL __stdcall ImageList_DragEnter(HWND hwndLock, int x, int y)"
+  },
+  {
+   "dll": "COMCTL32.dll",
+   "name": "ImageList_BeginDrag",
+   "iat": "0079a038",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall ImageList_BeginDrag(HIMAGELIST himlTrack, int iTrack, int dxHotspot, int dyHotspot)"
+  },
+  {
+   "dll": "COMCTL32.dll",
+   "name": "ImageList_Destroy",
+   "iat": "0079a03c",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "BOOL __stdcall ImageList_Destroy(HIMAGELIST himl)"
+  },
+  {
+   "dll": "COMCTL32.dll",
+   "name": "ImageList_EndDrag",
+   "iat": "0079a040",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "void __stdcall ImageList_EndDrag(void)"
+  },
+  {
+   "dll": "IMM32.dll",
+   "name": "ImmNotifyIME",
+   "iat": "0079a0b4",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "BOOL __stdcall ImmNotifyIME(HIMC param_1, DWORD dwAction, DWORD dwIndex, DWORD dwValue)"
+  },
+  {
+   "dll": "IMM32.dll",
+   "name": "ImmGetContext",
+   "iat": "0079a0b8",
+   "convention": "__stdcall",
+   "parameters": 1,
+   "signature": "HIMC __stdcall ImmGetContext(HWND param_1)"
+  },
+  {
+   "dll": "IMM32.dll",
+   "name": "ImmGetCompositionStringA",
+   "iat": "0079a0bc",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "LONG __stdcall ImmGetCompositionStringA(HIMC param_1, DWORD param_2, LPVOID lpBuf, DWORD dwBufLen)"
+  },
+  {
+   "dll": "IMM32.dll",
+   "name": "ImmSetOpenStatus",
+   "iat": "0079a0c0",
+   "convention": "__stdcall",
+   "parameters": 2,
+   "signature": "BOOL __stdcall ImmSetOpenStatus(HIMC param_1, BOOL param_2)"
+  },
+  {
+   "dll": "IMM32.dll",
+   "name": "ImmGetCandidateListA",
+   "iat": "0079a0c4",
+   "convention": "__stdcall",
+   "parameters": 4,
+   "signature": "DWORD __stdcall ImmGetCandidateListA(HIMC param_1, DWORD deIndex, LPCANDIDATELIST lpCandList, DWORD dwBufLen)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkSetSoundSystem@8",
+   "iat": "0079a584",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkSetSoundSystem@8(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkOpenDirectSound@4",
+   "iat": "0079a588"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkGetError@0",
+   "iat": "0079a58c",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkGetError@0(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkOpen@8",
+   "iat": "0079a590",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkOpen@8(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkSetVolume@8",
+   "iat": "0079a594",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkSetVolume@8(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkClose@4",
+   "iat": "0079a598",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkClose@4(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkDDSurfaceType@4",
+   "iat": "0079a59c",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkDDSurfaceType@4(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkGoto@12",
+   "iat": "0079a5a0",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkGoto@12(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkPause@8",
+   "iat": "0079a5a4",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkPause@8(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkNextFrame@4",
+   "iat": "0079a5a8",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkNextFrame@4(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkCopyToBuffer@28",
+   "iat": "0079a5ac",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkCopyToBuffer@28(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkDoFrame@4",
+   "iat": "0079a5b0",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkDoFrame@4(void)"
+  },
+  {
+   "dll": "binkw32.dll",
+   "name": "_BinkWait@4",
+   "iat": "0079a5b4",
+   "convention": "unknown",
+   "parameters": 0,
+   "signature": "undefined _BinkWait@4(void)"
+  }
+ ]
+}

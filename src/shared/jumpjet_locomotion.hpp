@@ -1,0 +1,56 @@
+// JumpjetLocomotionClass (Jumpjet.cpp, 0x0052EF70-0x0053135F; RTTI vtables
+// 0x007A536C IPersistStream, 0x007A52A4 ILocomotion at +4). Size 0x90.
+// Layout from the constructor 0x0052F160 (names are hypotheses):
+//   +0x18..+0x3B  not constructed
+//   +0x3C  CoordStruct (from 0x00A6E3E0), +0x48 bool (Is_Moving), +0x4C int
+//   +0x50  FacingClass (rate: rules +0x368; desired and current 0x4000)
+//   +0x68..+0x84 ints, +0x88 bool
+#ifndef RA2_SHARED_JUMPJET_LOCOMOTION_HPP
+#define RA2_SHARED_JUMPJET_LOCOMOTION_HPP
+
+#include "shared/locomotion.hpp"
+
+extern CoordStruct unknown_coord_a6e3e0;            // 0x00A6E3E0
+extern "C" GUID const CLSID_JumpjetLocomotionClass; // 0x007A2000
+
+class JumpjetLocomotionClass : public LocomotionClass {
+public:
+    JumpjetLocomotionClass();                                                   // 0x0052F160
+    JumpjetLocomotionClass(NoInitClass const &noinit) :                         // inline (Load)
+        LocomotionClass(noinit), unknown_50(noinit) {}
+    virtual ~JumpjetLocomotionClass();                                          // 0x0052F210
+
+    virtual HRESULT __stdcall GetClassID(GUID *clsid);                          // 0x0052FBA0
+    virtual HRESULT __stdcall Load(IStream *stream);                            // 0x0052FBE0
+    virtual int Size() { return sizeof(JumpjetLocomotionClass); }               // 0x00531320 (inline)
+
+    virtual HRESULT __stdcall Link_To_Object(void *object);                     // 0x0052F230
+    virtual bool __stdcall Is_Moving();                                         // 0x0052F350
+    virtual CoordStruct __stdcall Destination();                                // 0x0052F360
+    virtual CoordStruct __stdcall Head_To_Coord();                              // 0x005312D0
+    virtual bool __stdcall Process();                                           // 0x0052F3C0
+    virtual void __stdcall Move_To(CoordStruct to);                             // 0x0052F600
+    virtual void __stdcall Stop_Moving();                                       // 0x0052F960
+    virtual void __stdcall Do_Turn(UnknownFacingDir dir);                       // 0x0052FB70
+    virtual int __stdcall Layer();                                              // 0x0052FC10
+    virtual bool __stdcall Is_Moving_Now();                                     // 0x00530AE0
+    virtual void __stdcall Mark_All_Occupation_Bits(int mark);                  // 0x00531250
+
+    int unknown_18[9];                  // +0x18
+    CoordStruct unknown_3c;             // +0x3C
+    bool unknown_48;                    // +0x48
+    int unknown_4c;                     // +0x4C
+    FacingClass unknown_50;             // +0x50
+    int unknown_68;                     // +0x68
+    int unknown_6c;                     // +0x6C
+    int unknown_70;                     // +0x70
+    int unknown_74;                     // +0x74
+    int unknown_78;                     // +0x78
+    int unknown_7c;                     // +0x7C
+    int unknown_80;                     // +0x80
+    int unknown_84;                     // +0x84
+    bool unknown_88;                    // +0x88
+    int unknown_8c;                     // +0x8C
+};
+
+#endif

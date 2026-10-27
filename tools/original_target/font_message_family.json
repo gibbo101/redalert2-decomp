@@ -1,0 +1,59 @@
+{
+  "schema": "ra2-readable-connected-family-plan-v1",
+  "target": {
+    "sha256": "e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f",
+    "size": 4485392
+  },
+  "shared_headers": [
+    {
+      "path": "src/shared/font_message_views.hpp",
+      "sha256": "5616650d92344b3a8fea6736d6e70573f684e441325e2bcffbd176f298e331fd"
+    }
+  ],
+  "evidence_sha256": {
+    "original_facts": "272709504c50cc3f9b3638fc7f7a951094b7fc30e44107a4836a7f0e46a4e04d",
+    "peer_source_review": "554feefca860162d041f5a53796789d710df4dc9e9dfa79fd8106bfcaa5a1cad"
+  },
+  "regions": [
+    {
+      "entry": 4396080,
+      "body_bytes": 16,
+      "body_sha256": "32695094b0eb6bbad07a664b575bd82cfaf7eadefa4739f763a731e6d011d9fe",
+      "region_bytes": 16,
+      "region_sha256": "32695094b0eb6bbad07a664b575bd82cfaf7eadefa4739f763a731e6d011d9fe",
+      "proposed_source": "src/recovered/fonts/ExchangeFontColor_00431430.cpp",
+      "source_sha256": "fc4990fa8dee02cdb5a9dbb39343de63842493ab2cb9d6cd0347463b5bfba588",
+      "symbol_prefix": "?ExchangeFontColor_00431430@FontDrawState@@",
+      "references": {},
+      "template": "ExchangeFontColor_00431430.cpp.in"
+    },
+    {
+      "entry": 4396112,
+      "body_bytes": 13,
+      "body_sha256": "bfac795e905f307cc346e0c2e82d68f626b244ee3e75bf3119b9b7956a07503d",
+      "region_bytes": 16,
+      "region_sha256": "5f4368c83a0022647de0d744e43fe55d65b5b2c2ee899d6be7dbc7daffda3503",
+      "proposed_source": "src/recovered/fonts/ExchangeFontClippingFlag_00431450.cpp",
+      "source_sha256": "e7cd1a54f7ac1258ad6390802e428fd51b8d18fb57e7775c14af55831d2653ba",
+      "symbol_prefix": "?ExchangeFontClippingFlag_00431450@FontDrawState@@",
+      "references": {},
+      "template": "ExchangeFontClippingFlag_00431450.cpp.in"
+    },
+    {
+      "entry": 6541088,
+      "body_bytes": 134,
+      "body_sha256": "199397992e8d7108294b23ee61ade39d10c7aed3d18eee04921185f901488864",
+      "region_bytes": 144,
+      "region_sha256": "3b0b61240ac7f51c4366ceb374fe390aa557bde77522a477e0e70545b5bcf535",
+      "proposed_source": "src/recovered/colors/BlendRgbTowardTarget_0063cf20.cpp",
+      "source_sha256": "cf1cceaaf58ff9d73a76fbe0e983e6175627080d154e2a83a18db4d364cb5693",
+      "symbol_prefix": "?BlendRgbTowardTarget_0063cf20@RgbTriplet@@",
+      "references": {},
+      "template": "BlendRgbTowardTarget_0063cf20.cpp.in"
+    }
+  ],
+  "limits": [
+    "Reviewed candidate generation only; canonical manual source remains authoritative.",
+    "All original code/data and private evidence remain ignored; compiled acceptance is separate."
+  ]
+}

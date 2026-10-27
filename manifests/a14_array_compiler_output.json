@@ -1,0 +1,55 @@
+{
+  "schema": "ra2-closed-compiler-output-v1",
+  "original_image_credit": 0,
+  "purpose": "Explicitly omit unreferenced implicit VC6 vector-construction helper; no source or library recognition.",
+  "compiler": {
+    "CL.EXE": "d9220fdfaf355c81f26e7b03c5dc628ec72ff81c99dc38ed98b1ad4bdbbb309c",
+    "C1.DLL": "ee14a2603a1339f95db2e396751f7e51b50e421731229fb2416a01f974689d80",
+    "C1XX.DLL": "4095e9e8de5ac4b13dbfe310abb8de711475b1a92c5f94375919947937f3237e",
+    "C2.DLL": "45187b0b6288240f73272a7c61e6329c50048a76e57db3bb87b6f0229e09e27d",
+    "MSPDB60.DLL": "7c90b80d42914562332e28c253415e72a80c6651003d08a9ffdc4ba6e27fc37c"
+  },
+  "options": [
+    "/O2",
+    "/Ob2",
+    "/G5",
+    "/Gy"
+  ],
+  "sources": [
+    "24b7430b0a16f63f71b80764e7c3da684a1c05b6d98760fb44369368197c33ba",
+    "a387118c23eee9efdb4b335f253b173897b6a08f3c1f4239423e99114c9cf792",
+    "ac378c3ac6775eaca2ff57058a2f74fe3b694e9fb25225e02d583a796a2962eb",
+    "678a3573bf483c98a9e1f042536af2fc56d9a6ef6eaf5109919aa42b7f8795d1",
+    "f66cf802f3e5234d2a79d623c843beb409a524cec4c28441ba2dc22fb5f96c1e",
+    "c4ef5e7a7aa08a62bf215a985999e437f476b7c25693432b22a71fd9e60babc4"
+  ],
+  "headers": [
+    {
+      "path": "src/shared/array_element_storage_views.hpp",
+      "sha256": "92e56de8462c60553a69ed28ef6459755efcca08e4630dd66ff1dfb9631d06a1"
+    }
+  ],
+  "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+  "gaps_sha256": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
+  "object_structure_sha256": "a619eac3170a6be09245d2ce376dca9df319a0c66c4b3716da7492bb69b6562c",
+  "helper": {
+    "symbol": "??_H@YGXPAXIHP6EX0@Z@Z",
+    "bytes": 48,
+    "body_bytes": 42,
+    "sha256": "939c9ff36e77a8015a5dfed0b0aa9e0b09def222bf50f83779e594ac4adbafec",
+    "debug_sha256": "b4b41a619d2b86dac48368b98ac5df0fe53fe69178f1a9031683fdf6b437b844"
+  },
+  "original_identity": {
+    "entry": 4239056,
+    "readiness_path": "manifests/vc6_vector_constructor_original_provenance.json",
+    "readiness_sha256": "00d639bd79b1843ffa6854d17f8d0f2bc3a3cffbc6a6ce3185a9dcda97d64dcf",
+    "body_inventory_row_sha256": "2bddd438641a8bdf9cb46a3e46d41f6c5ea0edbc405a121e945d15b456f9a70a",
+    "gap_row_sha256": "a9d79476b0f1eb8c64d5413fba21d63527242fc537f6441057018c3ffff0a34c",
+    "following_inventory_row_sha256": "be4b0c2821cc5744cd3c5607bcf69c5e90da00885f537cbeb32add1f373fb5f2"
+  },
+  "provenance": {
+    "implicit_generation_sha256": "c63a6b4c24d113e5b87e4b57fcebaf4af47e899d1c730a7d09cde304303aa1b4",
+    "independent_generation_review_sha256": "c1fb02fab8475dce7b779f9a3fd032a8561854307aa18583400a39ef1fdd770e"
+  },
+  "normalization": "Only COFF timestamp and sole.file debug pathname auxiliary length/bytes plus consequent physical offsets/symbol indices. Every physical file range accounted; other metadata/strings pinned."
+}

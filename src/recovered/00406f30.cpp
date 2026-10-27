@@ -1,0 +1,23 @@
+// 0x00406f30: function not yet identified
+//
+// Body: 14 bytes (frozen inventory bound).
+// Referenced from 23 sites (unconditional call).
+// Ghidra prototype: bool FUN_00406f30(void)
+//
+// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
+// rename and retype as the purpose becomes known.
+//
+// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
+// delete this line when editing it by hand.
+#include "shared/ghidra_types.hpp"
+
+namespace seed_00406f30 {
+
+extern "C" undefined4 DAT_00831438;
+
+bool  FUN_00406f30(void)
+{
+    return DAT_00831438 != 0;
+}
+
+}  // namespace seed_00406f30

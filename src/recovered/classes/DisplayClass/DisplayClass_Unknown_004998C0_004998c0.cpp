@@ -1,0 +1,27 @@
+// void DisplayClass::Unknown_004998C0(Cell const &cell, bool set) (0x004998C0)
+// Sets (or clears) flag 2 of every cell of the list at +0x1178 placed at
+// the given cell, for the cells on the map.
+#include "shared/display.hpp"
+#include "shared/map_cell.hpp"
+// @ref ?unknown_cell_852610@@3VCell@@A=00852610
+// @ref ?Unknown_0054AAB0@MapClass@@QAE_NABVCell@@@Z=0054aab0
+// @ref ??AMapClass@@QAEAAVCellClass@@ABVCell@@@Z=00548070
+
+void DisplayClass::Unknown_004998C0(Cell const &cell, bool set)
+{
+    if (cell.X == unknown_cell_852610.X && cell.Y == unknown_cell_852610.Y) {
+        return;
+    }
+    Cell const *offset = unknown_1178;
+    while (offset->X != 0x7FFF || offset->Y != 0x7FFF) {
+        Cell target = cell + *offset++;
+        if (Unknown_0054AAB0(target)) {
+            CellClass &target_cell = (*this)[target];
+            if (set) {
+                target_cell.unknown_12c |= 2;
+            } else {
+                target_cell.unknown_12c &= ~2;
+            }
+        }
+    }
+}

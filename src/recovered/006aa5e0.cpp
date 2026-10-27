@@ -1,0 +1,3 @@
+
+class Leaf_6aa5e0 { public: unsigned int get(unsigned int a1); };
+unsigned int Leaf_6aa5e0::get(unsigned int a1) { unsigned int ecx=(unsigned int)this, eax=0, edx=0; unsigned char al=0; eax = *(unsigned int*)(ecx + 0xd90); if ((eax & eax) != 0) goto L6aa5f4; eax = *(unsigned int*)(ecx + 0xd94); if ((eax & eax) == 0) goto L6aa609; L6aa5f4:; eax = a1; edx = *(unsigned int*)(eax); *(unsigned int*)(ecx + 0xd98) = edx; eax = *(unsigned int*)(eax + 4); *(unsigned int*)(ecx + 0xd9c) = eax; L6aa609:; return eax; }

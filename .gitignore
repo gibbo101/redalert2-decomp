@@ -1,0 +1,7 @@
+/build/
+/private/
+*.app/
+.DS_Store
+__pycache__/
+*.pyc
+CMakeUserPresets.json
