@@ -605,6 +605,7 @@ public:
     void unknown_6d4400();                                      // 0x006D4400 (DistributedFire target spreading; TechnoClass slot 209)
     bool unknown_6d7d20(int weapon);                            // 0x006D7D20 (TechnoClass slot 170)
     void unknown_6155e0();                                      // 0x006155E0 (out of this unit; TechnoClass slot 222)
+    int unknown_6cd6f0();                                       // 0x006CD6F0 (the height bonus above the map's lowest level; never called)
     int unknown_6c6350(Cell const *cell);                       // 0x006C6350 (the threat of a wall cell to break; TechnoClass slot 219)
     bool unknown_6c5570(int method, int arg2, int arg3, ObjectClass *object, int *value, int arg6, CoordStruct const *coord);   // 0x006C5570 (rates an object as a target; TechnoClass slot 219)
     bool unknown_6c6130(int method, int arg2, Cell const *cell, int arg4, ObjectClass **object, int *value, int zone);   // 0x006C6130 (the best target in a cell; TechnoClass slot 219)

@@ -4,6 +4,7 @@
 #ifndef RA2_SHARED_TACTICAL_HPP
 #define RA2_SHARED_TACTICAL_HPP
 
+#include "shared/abstract_class.hpp"
 #include "shared/coord.hpp"
 #include "shared/rect.hpp"
 
@@ -11,11 +12,18 @@ class CellClass;
 
 class Surface;
 
-// The tactical view (0x0083996C; RTTI class Tactical, an AbstractClass).
-// Stand-in: only the members the screen code uses, layout padding otherwise.
+// The tactical view (0x0083996C; RTTI class Tactical, an AbstractClass:
+// primary vtable 0x007AC570 with 25 slots, stored by 0x006A24B0, 0x006A26C0,
+// 0x006A2710 and 0x006AC800). Stand-in: only the members the screen code uses,
+// layout padding otherwise; the AbstractClass overrides (slots 3, 5, 6, 8,
+// 10-12, 23) are not declared yet.
 struct UnknownPoint2D;
-class Tactical {
+class Tactical : public AbstractClass {
 public:
+    // Draws a line between two coordinates in a color (0x006AC160, slot 24;
+    // TechnoClass 0x006C3950/0x006C3A90; true when drawn; hypothesis).
+    virtual bool unknown_slot24(CoordStruct const &from, CoordStruct const &to, int color, int arg4);
+
     // Draws one pass (0, 1, 2) of the tactical view into surface (0x006A45A0).
     void Unknown_006A45A0(Surface *surface, bool redraw, int pass);
     // A screen point converted for the techno types' smoke offsets (0x006A2900).
@@ -47,7 +55,7 @@ public:
     // Sets the view rectangle (0x006A65A0; DisplayClass slot 42).
     void Unknown_006A65A0(Rect const &rect);
 
-    char unknown_00[0xB0];
+    char unknown_24[0xB0 - 0x24];
     Point2D unknown_b0;             // +0xB0 the view position (BuildingClass slot 73 caches it)
     char unknown_b8[0xC0 - 0xB8];
     double unknown_c0;              // +0xC0 zoom factor (Blit_Display divides by it; 1.0 = none)

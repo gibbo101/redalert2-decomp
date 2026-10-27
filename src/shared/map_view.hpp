@@ -71,6 +71,7 @@ public:
     void Sight_From(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, int arg6, bool arg7, int arg8);   // 0x0054A110
     void Unknown_00549C50(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, bool arg6, bool arg7, bool arg8);   // 0x00549C50 (reveals around coord; TechnoClass slot 70)
     void Unknown_00559F10();                                              // 0x00559F10
+    int Unknown_0056A8A0();                                               // 0x0056A8A0 (the lowest cell level, +0x144; TechnoClass 0x006CD6F0)
     bool Unknown_0054AAB0(Cell const &cell);                              // 0x0054AAB0
     bool Unknown_0054AB00(CoordStruct const &coord);                            // 0x0054AB00
     void Unknown_0054AB70(Cell const &cell, ObjectClass *object);         // 0x0054AB70
