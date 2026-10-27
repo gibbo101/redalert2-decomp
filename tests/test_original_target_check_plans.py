@@ -59,7 +59,7 @@ class CheckPlansTests(unittest.TestCase):
             def link_copy(source, destination):
                 shutil.copytree(source, destination) if source.is_dir() else shutil.copy2(source, destination)
 
-            arguments = ['check_plans.py', '--build']
+            arguments = ['check_plans.py', '--build', '--with-tools']
             arguments += ['--rename', str(spec)] if rename else []
             arguments += ['fixture', str(root / 'headers')]
             if not rename:
