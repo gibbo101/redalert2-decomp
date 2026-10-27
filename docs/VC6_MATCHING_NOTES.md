@@ -327,3 +327,38 @@ the ignored build/class-work/Sched29/).
 - `return 0` right after a `test eax,eax` branch reuses eax instead of `xor eax,eax` unless the
   return block is shared: identical return blocks are tail-merged, and the shared copy keeps
   the xor.
+
+## Stack frame layout (Study42)
+
+Derived from controlled experiments with the real compiler (Study42, 2026-10-27; lab in
+the ignored build/class-work/Study42/, `f.sh` prints a function's frame map).
+
+- Frame variables (address-taken locals, objects, temporaries, spilled webs) are sorted by
+  size ascending, then by the number of instructions referencing them in the final code (a
+  loop does not weigh more), then (usually, not always) by whose last reference comes
+  first. Each takes the first
+  compatible slot: dead argument slots in the order the arguments died (objects of at most
+  4 bytes; an 8-byte object only a dead double argument), then existing local slots newest
+  first, else a new slot. 1-byte objects never share a local slot with wider ones. Local
+  slots are laid out from the top of the frame down in reverse creation order; the frame
+  is rounded to 4 with the padding at the bottom.
+- An argument slot dies at its last read (a load into a register frees it; a copy
+  `int t = a;` is forwarded to its use); a never-read argument's slot is never reused.
+  No argument slot is reused at all when the local frame would be 112 bytes or more
+  (corpus: 161 such functions, none reuses one).
+- A variable whose address reaches a real call is live from the first call in its block (a
+  temporary: in its statement) to the last one; every call counts as a use and a
+  definition. So `g(a); g(b); int x, y; use2(&x, &y);` reuses only a's slot (b is read
+  after the function's first call) while `g(a); g(b); { int x, y; ... }` reuses both.
+  Other frame variables use exact liveness.
+- Empty-class temporaries (`NoInitClass()`) are 1 byte: they are placed first and take the
+  first-dead argument slot. HouseClass::Load matches only with BuildingClass::Load's
+  `if (SUCCEEDED(result)) { int count; new (this) HouseClass(NoInitClass()); ... } return
+  result;`: count's block then contains the temporary and count takes the stream slot.
+- Fix a frame-only miss with block placement of declarations, statement boundaries and
+  statement order (which argument dies first, which variable is referenced last), not with
+  dummy references.
+- Open: an original slot that is allocated but never referenced (0x712300's top slot;
+  MapSizeGameOption::Describe leaving the dead territory slot unused and putting its
+  operator+ temporary in a new slot) is a variable that existed at layout time and lost its
+  references afterwards; no source form found yet.

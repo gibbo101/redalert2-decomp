@@ -66,7 +66,18 @@ class Cell {
 public:
     void unknown_47e2b0(); // 0047E2B0 empty RET; nonconst/nonvirtual coordinate operation hypothesis
     Cell() {}
-    Cell(short x, short y) : X(x), Y(y) {}
+    // Stores the coordinates through Set. 0x0042AD30 is the out-of-line copy
+    // (two word stores, returns this). The discarded reference Set returns
+    // makes the constructor one IL node larger than two plain stores, so /Ob2
+    // charges each expansion against the caller's budget instead of expanding
+    // it for free: the Map spread tables (0x005441E0 288 of 369, 0x005461A0
+    // 241 of 309, 0x0055B520 8 of 40, 0x0055CBC0 7 of 42) and
+    // DynamicVectorClass<ZoneConnectionClass>::Resize (0x0056B330, To out of
+    // line) run out exactly as the original does (Study37, Screen40). The
+    // parameters are short like the members: with int parameters FootClass
+    // 0x004CB8F0 loads one operand in the other order (TechFoot39).
+    Cell(short x, short y) { Set(x, y); }
+    Cell &Set(short x, short y) { X = x; Y = y; return *this; }
     short X;
     short Y;
 };

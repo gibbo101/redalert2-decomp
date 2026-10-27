@@ -5,5 +5,7 @@
 
 bool MapClass::Unknown_0054AB00(CoordStruct const &coord)
 {
-    return Unknown_0054AAB0(Cell(coord.X / 256, coord.Y / 256));
+    short x = coord.X / 256;
+    short y = coord.Y / 256;
+    return Unknown_0054AAB0(Cell(x, y));
 }

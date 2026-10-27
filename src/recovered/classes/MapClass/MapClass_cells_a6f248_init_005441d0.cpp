@@ -1,0 +1,75 @@
+// Cell unknown_cells_a6f248[369] (0x00A6F248) and its dynamic initializer
+// (0x005441D0, a jump to the construction at 0x005441E0): cell offsets in
+// rings of growing radius around (0, 0) (read by MapClass 0x00549C50 and
+// 0x0054A110, CellClass, HouseClass and BulletClass; a spread table).
+// /Ob2 expands the first 288 Cell constructors and calls the kept copy
+// (0x0042AD30) for the rest: the budget of the initializer is proportional
+// to its size, and Cell(int, int) is a charged callee (see shared/coord.hpp).
+// @ref ??0Cell@@QAE@FF@Z=0042ad30
+// @ref ?unknown_cells_a6f248@@3PAVCell@@A=00a6f248
+#include "shared/coord.hpp"
+
+Cell unknown_cells_a6f248[369] = {
+    Cell(0, 0), Cell(1, -1), Cell(0, -1), Cell(-1, -1), Cell(-1, 0), Cell(1, 0),
+    Cell(-1, 1), Cell(0, 1), Cell(1, 1), Cell(-1, -2), Cell(0, -2), Cell(1, -2),
+    Cell(-2, -1), Cell(2, -1), Cell(-2, 0), Cell(2, 0), Cell(-2, 1), Cell(2, 1),
+    Cell(-1, 2), Cell(0, 2), Cell(1, 2), Cell(-1, -3), Cell(0, -3), Cell(1, -3),
+    Cell(-2, -2), Cell(2, -2), Cell(-3, -1), Cell(3, -1), Cell(-3, 0), Cell(3, 0),
+    Cell(-3, 1), Cell(3, 1), Cell(-2, 2), Cell(2, 2), Cell(-1, 3), Cell(0, 3),
+    Cell(1, 3), Cell(-1, -4), Cell(0, -4), Cell(1, -4), Cell(-3, -3), Cell(-2, -3),
+    Cell(2, -3), Cell(3, -3), Cell(-3, -2), Cell(3, -2), Cell(-4, -1), Cell(4, -1),
+    Cell(-4, 0), Cell(4, 0), Cell(-4, 1), Cell(4, 1), Cell(-3, 2), Cell(3, 2),
+    Cell(-3, 3), Cell(-2, 3), Cell(2, 3), Cell(3, 3), Cell(-1, 4), Cell(0, 4),
+    Cell(1, 4), Cell(-1, -5), Cell(0, -5), Cell(1, -5), Cell(-3, -4), Cell(-2, -4),
+    Cell(2, -4), Cell(3, -4), Cell(-4, -3), Cell(4, -3), Cell(-4, -2), Cell(4, -2),
+    Cell(-5, -1), Cell(5, -1), Cell(-5, 0), Cell(5, 0), Cell(-5, 1), Cell(5, 1),
+    Cell(-4, 2), Cell(4, 2), Cell(-4, 3), Cell(4, 3), Cell(-3, 4), Cell(-2, 4),
+    Cell(2, 4), Cell(3, 4), Cell(-1, 5), Cell(0, 5), Cell(1, 5), Cell(-1, -6),
+    Cell(0, -6), Cell(1, -6), Cell(-3, -5), Cell(-2, -5), Cell(2, -5), Cell(3, -5),
+    Cell(-4, -4), Cell(4, -4), Cell(-5, -3), Cell(5, -3), Cell(-5, -2), Cell(5, -2),
+    Cell(-6, -1), Cell(6, -1), Cell(-6, 0), Cell(6, 0), Cell(-6, 1), Cell(6, 1),
+    Cell(-5, 2), Cell(5, 2), Cell(-5, 3), Cell(5, 3), Cell(-4, 4), Cell(4, 4),
+    Cell(-3, 5), Cell(-2, 5), Cell(2, 5), Cell(3, 5), Cell(-1, 6), Cell(0, 6),
+    Cell(1, 6), Cell(-1, -7), Cell(0, -7), Cell(1, -7), Cell(-3, -6), Cell(-2, -6),
+    Cell(2, -6), Cell(3, -6), Cell(-5, -5), Cell(-4, -5), Cell(4, -5), Cell(5, -5),
+    Cell(-5, -4), Cell(5, -4), Cell(-6, -3), Cell(6, -3), Cell(-6, -2), Cell(6, -2),
+    Cell(-7, -1), Cell(7, -1), Cell(-7, 0), Cell(7, 0), Cell(-7, 1), Cell(7, 1),
+    Cell(-6, 2), Cell(6, 2), Cell(-6, 3), Cell(6, 3), Cell(-5, 4), Cell(5, 4),
+    Cell(-5, 5), Cell(-4, 5), Cell(4, 5), Cell(5, 5), Cell(-3, 6), Cell(-2, 6),
+    Cell(2, 6), Cell(3, 6), Cell(-1, 7), Cell(0, 7), Cell(1, 7), Cell(-1, -8),
+    Cell(0, -8), Cell(1, -8), Cell(-3, -7), Cell(-2, -7), Cell(2, -7), Cell(3, -7),
+    Cell(-5, -6), Cell(-4, -6), Cell(4, -6), Cell(5, -6), Cell(-6, -5), Cell(6, -5),
+    Cell(-6, -4), Cell(6, -4), Cell(-7, -3), Cell(7, -3), Cell(-7, -2), Cell(7, -2),
+    Cell(-8, -1), Cell(8, -1), Cell(-8, 0), Cell(8, 0), Cell(-8, 1), Cell(8, 1),
+    Cell(-7, 2), Cell(7, 2), Cell(-7, 3), Cell(7, 3), Cell(-6, 4), Cell(6, 4),
+    Cell(-6, 5), Cell(6, 5), Cell(-5, 6), Cell(-4, 6), Cell(4, 6), Cell(5, 6),
+    Cell(-3, 7), Cell(-2, 7), Cell(2, 7), Cell(3, 7), Cell(-1, 8), Cell(0, 8),
+    Cell(1, 8), Cell(-1, -9), Cell(0, -9), Cell(1, -9), Cell(-3, -8), Cell(-2, -8),
+    Cell(2, -8), Cell(3, -8), Cell(-5, -7), Cell(-4, -7), Cell(4, -7), Cell(5, -7),
+    Cell(-6, -6), Cell(6, -6), Cell(-7, -5), Cell(7, -5), Cell(-7, -4), Cell(7, -4),
+    Cell(-8, -3), Cell(8, -3), Cell(-8, -2), Cell(8, -2), Cell(-9, -1), Cell(9, -1),
+    Cell(-9, 0), Cell(9, 0), Cell(-9, 1), Cell(9, 1), Cell(-8, 2), Cell(8, 2),
+    Cell(-8, 3), Cell(8, 3), Cell(-7, 4), Cell(7, 4), Cell(-7, 5), Cell(7, 5),
+    Cell(-6, 6), Cell(6, 6), Cell(-5, 7), Cell(-4, 7), Cell(4, 7), Cell(5, 7),
+    Cell(-3, 8), Cell(-2, 8), Cell(2, 8), Cell(3, 8), Cell(-1, 9), Cell(0, 9),
+    Cell(1, 9), Cell(-1, -10), Cell(0, -10), Cell(1, -10), Cell(-3, -9), Cell(-2, -9),
+    Cell(2, -9), Cell(3, -9), Cell(-5, -8), Cell(-4, -8), Cell(4, -8), Cell(5, -8),
+    Cell(-7, -7), Cell(-6, -7), Cell(6, -7), Cell(7, -7), Cell(-7, -6), Cell(7, -6),
+    Cell(-8, -5), Cell(8, -5), Cell(-8, -4), Cell(8, -4), Cell(-9, -3), Cell(9, -3),
+    Cell(-9, -2), Cell(9, -2), Cell(-10, -1), Cell(10, -1), Cell(-10, 0), Cell(10, 0),
+    Cell(-10, 1), Cell(10, 1), Cell(-9, 2), Cell(9, 2), Cell(-9, 3), Cell(9, 3),
+    Cell(-8, 4), Cell(8, 4), Cell(-8, 5), Cell(8, 5), Cell(-7, 6), Cell(7, 6),
+    Cell(-7, 7), Cell(-6, 7), Cell(6, 7), Cell(7, 7), Cell(-5, 8), Cell(-4, 8),
+    Cell(4, 8), Cell(5, 8), Cell(-3, 9), Cell(-2, 9), Cell(2, 9), Cell(3, 9),
+    Cell(-1, 10), Cell(0, 10), Cell(1, 10), Cell(0, 11), Cell(0, -11), Cell(-1, 11),
+    Cell(1, 11), Cell(-1, -11), Cell(1, -11), Cell(-2, 11), Cell(2, 11), Cell(-2, -11),
+    Cell(2, -11), Cell(-3, 11), Cell(3, 11), Cell(-3, -11), Cell(-3, 11), Cell(-4, 9),
+    Cell(4, 9), Cell(-4, -9), Cell(4, -9), Cell(-5, 9), Cell(5, 9), Cell(-5, -9),
+    Cell(5, -9), Cell(-6, 8), Cell(6, 8), Cell(-6, -8), Cell(6, -8), Cell(-7, 8),
+    Cell(7, 8), Cell(-7, -8), Cell(7, -8), Cell(-8, 7), Cell(8, 7), Cell(-8, -7),
+    Cell(8, -7), Cell(-8, 6), Cell(8, 6), Cell(-8, -6), Cell(8, -6), Cell(-9, 5),
+    Cell(9, 5), Cell(-9, -5), Cell(9, -5), Cell(-9, 4), Cell(9, 4), Cell(-9, -4),
+    Cell(9, -4), Cell(-10, 3), Cell(10, 3), Cell(-10, -3), Cell(10, -3), Cell(-10, 2),
+    Cell(10, 2), Cell(-10, -2), Cell(10, -2), Cell(-11, 1), Cell(11, 1), Cell(-11, -1),
+    Cell(11, -1), Cell(11, 0), Cell(-11, 0)
+};

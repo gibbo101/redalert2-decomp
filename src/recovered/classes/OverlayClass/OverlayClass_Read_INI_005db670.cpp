@@ -48,7 +48,9 @@ void __fastcall OverlayClass::Read_INI(CCINIClass &ini)
             lcw_straw.Straw::Get_From(&buffer_straw);
             for (int y = 0; y < 512; y++) {
                 for (int x = 0; x < 512; x++) {
-                    Cell cell((short)x, (short)y);
+                    Cell cell;
+                    cell.X = x;
+                    cell.Y = y;
                     unsigned int overlay = 0xFFFFFFFF;
                     lcw_straw.Get(&overlay, 1);
                     if (overlay != 0xFFFFFFFF) {
