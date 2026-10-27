@@ -4,7 +4,7 @@
 //   +0x24  int ArrayIndex (-1), +0x28 TActionClass *Next, +0x2C int Type,
 //   +0x30  AbstractTypeClass *unknown_30 (swizzled), +0x34..+0x48 ints,
 //   +0x4C  AbstractClass *unknown_4c, +0x50 AbstractClass *unknown_50
-//          (both swizzled), +0x54 char Text[32], +0x74 int Data
+//          (both swizzled), +0x54 char Text[32], +0x74 int Data (or bool)
 //   size 0x78 (slot 12)
 #ifndef RA2_SHARED_TACTION_HPP
 #define RA2_SHARED_TACTION_HPP
@@ -96,7 +96,12 @@ public:
     AbstractClass *unknown_4c;              // +0x4C
     AbstractClass *unknown_50;              // +0x50
     char Text[32];                          // +0x54
-    int Data;                               // +0x74
+    union {
+        int Data;                           // +0x74
+        // The same word read as a flag: the session flag actions 0x006AFB40,
+        // 0x006AFB60 and 0x006AFB80 store its low byte unnormalised.
+        bool DataBool;                      // +0x74
+    };
 };
 
 // Every action (0x00ABFD88; defined in this unit).

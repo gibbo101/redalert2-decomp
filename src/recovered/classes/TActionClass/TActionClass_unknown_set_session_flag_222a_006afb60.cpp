@@ -5,6 +5,6 @@
 
 bool TActionClass::unknown_set_session_flag_222a(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
-    unknown_id_source_a3d290->unknown_222a = (char)Data;
+    unknown_id_source_a3d290->unknown_222a = DataBool;
     return true;
 }

@@ -53,10 +53,10 @@ public:
     char unknown_120c[4];
     UnknownScenarioVariable_004B5AB0 Variables[50]; // +1210,value bytes+1238 atstride41
     char unknown_1a12[0x2229 - 0x1A12];
-    char unknown_2229;                          // +0x2229 (toggled by a trigger action 0x006ADB18)
-    char unknown_222a;                          // +0x222A (set from a trigger action's data, 0x006AFB60)
-    char unknown_222b;                          // +0x222B (set from a trigger action's data, 0x006AFB40)
-    char unknown_222c;                          // +0x222C (set from a trigger action's data, 0x006AFB80)
+    bool unknown_2229;                          // +0x2229 (toggled by a trigger action 0x006ADB18)
+    bool unknown_222a;                          // +0x222A (set from a trigger action's data, 0x006AFB60)
+    bool unknown_222b;                          // +0x222B (set from a trigger action's data, 0x006AFB40)
+    bool unknown_222c;                          // +0x222C (set from a trigger action's data, 0x006AFB80)
     char unknown_222d[0x2231 - 0x222D];
     bool unknown_2231;
     char unknown_2232[6];
