@@ -160,7 +160,7 @@ def main():
                 rows[entry] = row
                 for index in range(len(variants)):
                     directory = output / str(index); directory.mkdir(exist_ok=True)
-                    (directory / ('%08x.cpp' % entry)).write_text(text)
+                    (directory / ('%08x.cpp' % entry)).write_text(text, encoding='utf-8', newline='\n')
             compiled = [e for e in rows if 'status' not in rows[e]]
             for index, options in enumerate(variants):
                 if compiled:
@@ -172,14 +172,15 @@ def main():
                         continue
                     try:
                         scored = score_object(audit, decoder, references, obj, entry, rows[entry]['length'],
-                                              (output / str(index) / ('%08x.cpp' % entry)).read_text())
+                                              (output / str(index) / ('%08x.cpp' % entry)).read_text(encoding='utf-8'))
                     except ValueError as error:
                         rows[entry].setdefault('status', 'score-refused'); rows[entry]['reason'] = str(error)
                         continue
                     best = rows[entry]
                     if (scored['byte_exact'], scored['score']) > (best.get('byte_exact', False), best.get('score', -1)):
                         best.pop('status', None); best.pop('reason', None)
-                        best.update(scored, options=' '.join(options))
+                        best.update(scored, options=' '.join(options), object=str(obj),
+                                    source=str(output / str(index) / ('%08x.cpp' % entry)))
             for entry, row in rows.items():
                 if 'score' not in row:
                     row.setdefault('status', 'compile-failed')

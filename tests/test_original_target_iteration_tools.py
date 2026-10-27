@@ -28,6 +28,12 @@ class DiffScoringTests(unittest.TestCase):
         # An owner suffix names the caller, not the callee: never guess from it.
         self.assertIsNone(diff.address_from_name('?target@Call_402190_0@@QAEIXZ'))
 
+    def test_pointer_labels_bind_the_slot_not_an_embedded_target_address(self):
+        for name in ('_PTR_FUN_00401230_00801000', '_PTR_DAT_00809999_00801000',
+                     '_PTR_LAB_00409999_00801000', '_PTR_s_text_00801000'):
+            self.assertEqual(diff.address_from_name(name), 0x801000)
+        self.assertEqual(diff.address_from_name('_PTR_FUN_00801000'), 0x801000)
+
     def test_relocations_resolve_absolute_and_relative_and_leave_unknowns_wild(self):
         raw = bytes.fromhex('e800000000') + bytes.fromhex('a100000000')
         symbols = {0: dict(name='?FUN_00401100@@YAXXZ'), 1: dict(name='_mystery')}
@@ -62,6 +68,14 @@ class SeedTests(unittest.TestCase):
         for entry, text in exports.items():
             (root / 'decompiled' / ('%08x.c' % entry)).write_text(text)
         return Inventory([root])
+
+    def test_ghidra_exports_are_utf8_independent_of_windows_locale(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / 'decompiled').mkdir()
+            text = '// synthetic caf\u00e9 \u03a9\nvoid FUN_00401000(void)\n{ return; }\n'
+            (root / 'decompiled/00401000.c').write_bytes(text.encode('utf-8'))
+            self.assertEqual(Inventory([root]).decompiled(0x401000), text)
 
     def test_thiscall_owner_and_callees_become_members_with_casts(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -111,6 +125,84 @@ class SeedTests(unittest.TestCase):
         body = seed.cast_assignments(body, [])
         self.assertIn('uVar1 = (uint)((int *)0x10);', body)
         self.assertIn('sVar2 = (short)((*(ushort*)((char*)&local_14 + 2)));', body)
+
+    def test_goto_labels_are_local_and_dead_label_definitions_are_removed(self):
+        body = '{\n  goto LAB_00401010;\nLAB_00401010:\n  return;\nLAB_00401020:\n}\n'
+        result, labels = seed.local_labels(body)
+        self.assertEqual(labels, {'LAB_00401010', 'LAB_00401020'})
+        self.assertIn('LAB_00401010:;', result)
+        self.assertNotIn('LAB_00401020:', result)
+        with self.assertRaisesRegex(ValueError, 'Missing Ghidra goto label'):
+            seed.local_labels('{ goto LAB_00401030; }')
+        # Comments and strings never introduce jumps or data declarations.
+        result, labels = seed.local_labels('{ /* goto LAB_00401030; */ return; }')
+        self.assertFalse(labels)
+
+    def test_seed_does_not_declare_goto_labels_as_external_data(self):
+        with tempfile.TemporaryDirectory() as temp:
+            inventory = self.inventory(Path(temp), {
+                0x401000: 'void __cdecl FUN_00401000(void)\n{\n'
+                          '  goto LAB_00401010;\nLAB_00401010:\n  return;\n}\n'})
+            text = seed.seed(0x401000, inventory, {})
+        self.assertIn('LAB_00401010:;', text)
+        self.assertNotIn('extern "C" char LAB_00401010', text)
+
+    def test_pointer_globals_keep_unambiguous_pointer_types(self):
+        self.assertEqual(seed.pointer_global_type('{\n  short *p;\n  p = PTR_DAT_00801000;\n}',
+                                                  'PTR_DAT_00801000'), 'short *')
+        self.assertEqual(seed.pointer_global_type('{}', 'PTR_FUN_00801000'), 'code *')
+        self.assertEqual(seed.pointer_global_type('{}', 'PTR_LAB_00801000'), 'code *')
+        self.assertEqual(seed.pointer_global_type('{}', 'PTR_DAT_00801000'), 'void *')
+
+    def test_stack_artifacts_reuse_known_storage_and_name_unknown_storage(self):
+        body = '{\n  int local_10;\n  use(&stack0xfffffff0, &stack0xfffffffc, &stack0x00000004);\n}'
+        text = seed.stack_artifacts(body, ['void *this_', 'int value'], '__thiscall')
+        self.assertIn('use(&local_10, &unknown_stack_fffffffc, &value);', text)
+        self.assertIn('undefined4 unknown_stack_fffffffc;', text)
+        self.assertIn('unknown stack storage width/aliasing', text)
+        self.assertNotIn('&stack0x', text)
+
+    def test_concat_widths_and_nested_operands_are_preserved(self):
+        text = seed.concat_artifacts('return CONCAT12(high(), CONCAT11(mid(), low()));')
+        for name in ('high()', 'mid()', 'low()'):
+            self.assertEqual(text.count(name), 1)
+        self.assertNotIn('CONCAT', text)
+        self.assertIn('<< 16', text)
+        self.assertIn('<< 8', text)
+        text = seed.concat_artifacts('return CONCAT26(a, b);')
+        self.assertIn('<< 48', text)
+        self.assertIn('0xffffffffffffui64', text)
+        with self.assertRaisesRegex(ValueError, 'wider than 64'):
+            seed.concat_artifacts('CONCAT88(a,b)')
+
+    def test_import_signature_keeps_return_type_pointer_arguments_and_iat(self):
+        text, declaration = seed.declare_import('GetSystemTime(&value);', 'GetSystemTime', {
+            'convention': '__stdcall', 'signature': 'void __stdcall GetSystemTime(LPSYSTEMTIME lpSystemTime)',
+            'iat': '0079a0d0'})
+        self.assertEqual(text, 'GetSystemTime((LPSYSTEMTIME)(&value));')
+        self.assertIn('__declspec(dllimport) void __stdcall GetSystemTime(LPSYSTEMTIME lpSystemTime)', declaration)
+        self.assertIn('@ref __imp__GetSystemTime@4=0079a0d0', declaration)
+
+    def test_variadic_imports_and_non_dword_stack_parameters(self):
+        text, declaration = seed.declare_import('Print(out, format, value);', 'Print', {
+            'convention': '__cdecl', 'signature': 'int __cdecl Print(LPSTR out, LPCSTR format, ...)',
+            'iat': '00790000'})
+        self.assertIn('Print((LPSTR)(out), (LPCSTR)(format), value)', text)
+        self.assertIn('@ref __imp__Print=00790000', declaration)
+        _, declaration = seed.declare_import('Wide(1);', 'Wide', {
+            'convention': '__stdcall', 'signature': 'void __stdcall Wide(double value)', 'iat': '00790004'})
+        self.assertIn('@ref __imp__Wide@8=', declaration)
+        with self.assertRaisesRegex(ValueError, 'unavailable'):
+            seed.declare_import('Unknown();', 'Unknown', {'convention': None, 'iat': '00790008'})
+        with self.assertRaisesRegex(ValueError, 'argument count'):
+            seed.declare_import('Wide();', 'Wide', {
+                'convention': '__stdcall', 'signature': 'void __stdcall Wide(double value)', 'iat': '00790004'})
+
+    def test_argument_scanning_ignores_literals_and_comments(self):
+        self.assertEqual(seed.split_args('"a,b", f(1,2), "x)y"'), ['"a,b"', 'f(1,2)', '"x)y"'])
+        sites = list(seed.call_sites('/* Api(99); */ Api("x)y", 2);', 'Api'))
+        self.assertEqual(len(sites), 1)
+        self.assertEqual(sites[0][2], ['"x)y"', '2'])
 
 
 class ClassInventoryTests(unittest.TestCase):

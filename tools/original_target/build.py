@@ -338,7 +338,7 @@ def integrate(config, audit, manifest, destination):
     write_json(destination/'discarded-output-receipt.json', discard_receipt)
     cursor=base+text.VirtualAddress; limit=cursor+min(text.Misc_VirtualSize,text.SizeOfRawData)
     asm=['# Explicit unrecovered original-byte scaffold.','.section .text,"xr"']
-    text_path=scaffold/'.text.bin'
+    text_path=(scaffold/'.text.bin').as_posix()
     for row in sorted(manifest['accepted'],key=lambda r:r['entry']):
         require(cursor<=row['entry'] and row['entry']+row['full_extent_bytes']<=limit,'Extent outside text')
         if cursor<row['entry']:
@@ -351,7 +351,7 @@ def integrate(config, audit, manifest, destination):
     for section in pe.sections[1:]:
         name=section.Name.rstrip(b'\0').decode(); emitted='.rawres' if name=='.rsrc' else name
         flags='dw' if name=='.data' else 'dr'
-        asm += ['.section %s,"%s"'%(emitted,flags), '.incbin "%s"'%(scaffold/(name+'.bin'))]
+        asm += ['.section %s,"%s"'%(emitted,flags), '.incbin "%s"'%((scaffold/(name+'.bin')).as_posix())]
         if section.Misc_VirtualSize>section.SizeOfRawData:
             asm += ['.zero %d'%(section.Misc_VirtualSize-section.SizeOfRawData)]
     asm += ['.section .text,"xr"','.globl _original_entry',

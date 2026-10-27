@@ -58,7 +58,7 @@ class Inventory:
         for directory in self.passes:
             path = directory / 'decompiled' / ('%08x.c' % entry)
             if path.exists():
-                return path.read_text(errors='replace')
+                return path.read_text(encoding='utf-8', errors='replace')
         return None
 
     def all_functions(self):

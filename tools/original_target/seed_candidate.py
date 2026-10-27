@@ -42,6 +42,170 @@ RAM_TYPES = {'i': 'int', 'u': 'uint', 'c': 'char', 'b': 'byte', 's': 'short', 'u
              'f': 'float', 'd': 'double', 'p': 'void *', 'pi': 'int *', 'pu': 'uint *', 'pc': 'char *',
              'pp': 'void **', 'pb': 'byte *', 'ps': 'short *'}
 
+# Only scratch declarations. Opaque SDK objects stay incomplete; do not invent
+# their layout just to make a field access compile. No platform SDK is included.
+SDK_PREAMBLE = r'''
+typedef long HRESULT, LSTATUS, INT_PTR, LPARAM, LRESULT;
+typedef unsigned int SIZE_T, ULONG_PTR, UINT_PTR, DWORD_PTR, REGSAM, COLORREF, MMRESULT;
+typedef short SHORT;
+typedef unsigned short ATOM, WCHAR;
+typedef int *LPBOOL;
+typedef byte *LPBYTE;
+typedef WORD *LPWORD;
+typedef DWORD *PDWORD;
+typedef UINT *PUINT;
+typedef LONG *PLONG;
+typedef void *PVOID;
+typedef const void *LPCVOID;
+typedef char *LPCH;
+typedef const char *PCNZCH;
+typedef wchar16 *LPWCH, *LPOLESTR;
+typedef const wchar16 *PCNZWCH, *LPCOLESTR;
+typedef wchar16 **SNB;
+typedef void *HACCEL, *HBITMAP, *HBRUSH, *HCURSOR, *HFONT, *HGDIOBJ, *HGLOBAL;
+typedef void *HICON, *HIMAGELIST, *HIMC, *HLOCAL, *HMENU, *HRGN, *HRSRC;
+typedef HKEY *PHKEY;
+typedef GUID CLSID;
+typedef CLSID *LPCLSID;
+typedef RECT *LPRECT;
+struct POINT { LONG x, y; };
+typedef POINT *LPPOINT;
+struct FILETIME { DWORD dwLowDateTime, dwHighDateTime; };
+typedef FILETIME *LPFILETIME, *PFILETIME;
+struct SYSTEMTIME { WORD wYear, wMonth, wDayOfWeek, wDay, wHour, wMinute, wSecond, wMilliseconds; };
+typedef SYSTEMTIME *LPSYSTEMTIME;
+union LARGE_INTEGER { struct { DWORD LowPart; LONG HighPart; }; __int64 QuadPart; };
+struct MEMORYSTATUS { DWORD dwLength, dwMemoryLoad, dwTotalPhys, dwAvailPhys, dwTotalPageFile, dwAvailPageFile, dwTotalVirtual, dwAvailVirtual; };
+typedef MEMORYSTATUS *LPMEMORYSTATUS;
+struct MEMORY_BASIC_INFORMATION { void *BaseAddress, *AllocationBase; DWORD AllocationProtect; SIZE_T RegionSize; DWORD State, Protect, Type; };
+typedef MEMORY_BASIC_INFORMATION *PMEMORY_BASIC_INFORMATION;
+struct MSG { HWND hwnd; UINT message; WPARAM wParam; LPARAM lParam; DWORD time; POINT pt; };
+typedef MSG *LPMSG;
+struct PAINTSTRUCT { HDC hdc; BOOL fErase; RECT rcPaint; BOOL fRestore, fIncUpdate; BYTE rgbReserved[32]; };
+typedef PAINTSTRUCT *LPPAINTSTRUCT;
+struct XFORM { float eM11, eM12, eM21, eM22, eDx, eDy; };
+typedef int (__stdcall *FARPROC)();
+typedef LRESULT (__stdcall *WNDPROC)(HWND, UINT, WPARAM, LPARAM);
+typedef INT_PTR (__stdcall *DLGPROC)(HWND, UINT, WPARAM, LPARAM);
+typedef BOOL (__stdcall *WNDENUMPROC)(HWND, LPARAM);
+typedef BOOL (__stdcall *LOCALE_ENUMPROCA)(LPSTR);
+typedef DWORD (__stdcall *LPTHREAD_START_ROUTINE)(LPVOID);
+typedef void (__stdcall *TIMERPROC)(HWND, UINT, UINT_PTR, DWORD);
+typedef void (__stdcall *LPTIMECALLBACK)(UINT, UINT, DWORD_PTR, DWORD_PTR, DWORD_PTR);
+typedef BOOL (__stdcall *PHANDLER_ROUTINE)(DWORD);
+struct EXCEPTION_POINTERS;
+typedef LONG (__stdcall *LPTOP_LEVEL_EXCEPTION_FILTER)(EXCEPTION_POINTERS *);
+struct IUnknown; typedef IUnknown *LPUNKNOWN;
+struct IStream; typedef IStream *LPSTREAM;
+struct IPersistStream; typedef IPersistStream *LPPERSISTSTREAM;
+struct IStorage;
+'''.strip()
+SDK_OPAQUE = {
+    'CANDIDATELIST': 'LPCANDIDATELIST', 'DLGTEMPLATE': 'LPCDLGTEMPLATEA',
+    'COMMTIMEOUTS': 'LPCOMMTIMEOUTS', 'COMSTAT': 'LPCOMSTAT', 'CPINFO': 'LPCPINFO',
+    'DCB': 'LPDCB', 'OSVERSIONINFOA': 'LPOSVERSIONINFOA',
+    'PROCESS_INFORMATION': 'LPPROCESS_INFORMATION', 'STARTUPINFOA': 'LPSTARTUPINFOA',
+    'TEXTMETRICA': 'LPTEXTMETRICA', 'TIME_ZONE_INFORMATION': 'LPTIME_ZONE_INFORMATION',
+    'BY_HANDLE_FILE_INFORMATION': 'LPBY_HANDLE_FILE_INFORMATION',
+    'WIN32_FIND_DATAA': 'LPWIN32_FIND_DATAA', 'EXCEPTION_RECORD': 'PEXCEPTION_RECORD',
+    'INPUT_RECORD': 'PINPUT_RECORD',
+}
+SDK_PREAMBLE += '\n' + '\n'.join('struct %s; typedef %s *%s;' % (kind, kind, alias)
+                                for kind, alias in sorted(SDK_OPAQUE.items()))
+SDK_PREAMBLE += '\nstruct BITMAPINFO; struct LOGFONTA; struct MSGBOXPARAMSA; struct WNDCLASSA;'
+
+
+def code_view(text):
+    """Mask comments and literals, preserving positions and line breaks."""
+    pattern = r'//[^\n]*|/\*[\s\S]*?\*/|"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\''
+    return re.sub(pattern, lambda m: ''.join('\n' if c == '\n' else ' ' for c in m[0]), text)
+
+
+def local_labels(body):
+    """Keep real goto labels local, drop unused label declarations, refuse gaps."""
+    view = code_view(body)
+    definitions = set(re.findall(r'^\s*(LAB_[0-9a-f]{8})\s*:', view, re.M))
+    targets = set(re.findall(r'\bgoto\s+(LAB_[0-9a-f]{8})\s*;', view))
+    missing = targets - definitions
+    if missing:
+        raise ValueError('Missing Ghidra goto label(s): ' + ', '.join(sorted(missing)))
+    # The label and its following statement have independent indentation.
+    body = re.sub(r'^(\s*)(LAB_[0-9a-f]{8})\s*:',
+                  lambda m: m[1] + (m[2] + ':;' if m[2] in targets else ''), body, flags=re.M)
+    return body, definitions
+
+
+def concat_artifacts(body):
+    """Expand width-exact CONCAT operations, evaluating each operand once."""
+    pattern = re.compile(r'\bCONCAT([1-8])([1-8])\s*\(')
+    while True:
+        sites = list(pattern.finditer(code_view(body)))
+        if not sites:
+            return body
+        match = sites[-1]  # innermost/rightmost first
+        high, low = int(match[1]), int(match[2])
+        if high + low > 8:
+            raise ValueError('CONCAT wider than 64 bits')
+        end = matching_paren(body, match.end() - 1)
+        args = split_args(body[match.end():end])
+        if len(args) != 2:
+            raise ValueError('CONCAT requires two operands')
+        result = 'uint' if high + low <= 4 else 'ulonglong'
+        def operand(text, width):
+            kind = {1: 'uchar', 2: 'ushort', 4: 'uint', 8: 'ulonglong'}.get(width)
+            if kind:
+                return '(%s)(%s)' % (kind, text)
+            return '((%s)(%s) & 0x%x%s)' % (result, text, (1 << (8 * width)) - 1,
+                                             'ui64' if width > 4 else '')
+        expression = '(((%s)(%s) << %d) | (%s)(%s))' % (
+            result, operand(args[0], high), low * 8, result, operand(args[1], low))
+        body = body[:match.start()] + expression + body[end + 1:]
+
+
+def stack_artifacts(body, params, convention):
+    """Name stack storage honestly, reusing a known local/argument when possible.
+
+    Ghidra stack offsets are hypotheses. An otherwise absent slot gets a
+    width-only unknown local and a review note, never an absolute pointer.
+    """
+    slots = {}
+    for kind, name, array in LOCAL.findall(body):
+        offset = re.fullmatch(r'(?:\w*Stack|local)_([0-9a-f]+)', name)
+        if offset:
+            slots.setdefault(-int(offset[1], 16), []).append(name)
+    offset = 4
+    skip = {'__thiscall': 1, '__fastcall': 2}.get(convention, 0)
+    for param in params[skip:]:
+        kind, name = param_parts(param)
+        if name:
+            slots.setdefault(offset, []).append(name)
+        offset += stack_bytes(param)
+    declarations = []
+    for token in sorted(set(re.findall(r'\bstack0x[0-9a-f]{8}\b', code_view(body)))):
+        raw = int(token[7:], 16)
+        signed = raw - (1 << 32) if raw & (1 << 31) else raw
+        known = slots.get(signed, [])
+        if len(known) == 1:
+            replacement = known[0]
+        else:
+            replacement = 'unknown_stack_%08x' % raw
+            declarations.append('    undefined4 %s; // TODO: unknown stack storage width/aliasing (%s).' %
+                                (replacement, token))
+        body = re.sub(r'\b' + token + r'\b', replacement, body)
+    if declarations:
+        body = body.replace('{', '{\n' + '\n'.join(declarations), 1)
+    return body
+
+
+def pointer_global_type(body, symbol):
+    """Reuse an unambiguous local pointer type; prefixes alone do not fix layout."""
+    types = {name: kind.strip() for kind, name, array in LOCAL.findall(body) if not array}
+    assigned = {types[m[1]] for m in re.finditer(r'\b(\w+)\s*=\s*' + re.escape(symbol) + r'\s*;', body)
+                if m[1] in types and '*' in types[m[1]]}
+    if len(assigned) == 1:
+        return assigned.pop()
+    return 'code *' if re.match(r'_?PTR_(?:FUN|LAB)_', symbol) else 'void *'
+
 
 def reindent(body):
     """Ghidra indents two spaces per level; the project uses four."""
@@ -123,11 +287,11 @@ def matching_paren(text, start):
 
 def split_args(text):
     args, depth, current = [], 0, ''
-    for char in text:
+    for index, char in enumerate(code_view(text)):
         if char == ',' and depth == 0:
             args.append(current); current = ''; continue
         depth += char in '([' ; depth -= char in ')]'
-        current += char
+        current += text[index]
     if current.strip():
         args.append(current)
     return [a.strip() for a in args]
@@ -135,9 +299,10 @@ def split_args(text):
 
 def call_sites(body, name):
     """Yield (start, end, args, value_used) for each call of name."""
-    for match in re.finditer(r'\b' + name + r'\s*\(', body):
-        open_at = match.end() - 1; close_at = matching_paren(body, open_at)
-        before = body[:match.start()].rstrip()
+    view = code_view(body)
+    for match in re.finditer(r'\b' + name + r'\s*\(', view):
+        open_at = match.end() - 1; close_at = matching_paren(view, open_at)
+        before = view[:match.start()].rstrip()
         used = bool(before) and before[-1] in '=(),!&|+-*<>?:' or before.endswith('return')
         yield match.start(), close_at + 1, split_args(body[open_at + 1:close_at]), used
 
@@ -268,8 +433,38 @@ def imported_calls(body):
     if not _IMPORTS:
         path = Path(__file__).resolve().parents[2] / 'manifests/imports.json'
         _IMPORTS.append({i['name']: i for i in json.loads(path.read_text())['imports']} if path.exists() else {})
-    names = set(re.findall(r'\b([A-Za-z_]\w*)\s*\(', body))
+    names = set(re.findall(r'\b([A-Za-z_]\w*)\s*\(', code_view(body)))
     return {n: _IMPORTS[0][n] for n in names if n in _IMPORTS[0]}
+
+
+def declare_import(body, name, fact):
+    """Use the recorded SDK signature and bind the actual IAT slot.
+
+    A missing/unknown convention or inconsistent arity stays a seed refusal;
+    counting source arguments cannot establish a callee's stack convention.
+    """
+    if fact.get('convention') not in ('__stdcall', '__cdecl') or not fact.get('signature'):
+        raise ValueError('Import signature/convention unavailable: ' + name)
+    ret, conv, parsed_name, params, _ = parse_header(fact['signature'])
+    if conv != fact['convention'] or parsed_name != name:
+        raise ValueError('Inconsistent import signature: ' + name)
+    variadic = bool(params and params[-1] == '...')
+    fixed = params[:-1] if variadic else params
+    output, cursor = '', 0
+    for start, end, args, used in call_sites(body, name):
+        if start < cursor:
+            continue
+        if len(args) < len(fixed) or not variadic and len(args) != len(fixed):
+            raise ValueError('Import argument count disagrees with manifest: ' + name)
+        arguments = ['(%s)(%s)' % (param_parts(p)[0] or p, a) for p, a in zip(fixed, args)]
+        arguments += args[len(fixed):]
+        output += body[cursor:start] + name + '(' + ', '.join(arguments) + ')'
+        cursor = end
+    stack = sum(stack_bytes(p) for p in fixed)
+    binding = '__imp__%s@%d' % (name, stack) if conv == '__stdcall' else '__imp__' + name
+    declaration = 'extern "C" __declspec(dllimport) %s %s %s(%s); // @ref %s=%s' % (
+        ret, conv, name, ', '.join(params) or 'void', binding, fact['iat'])
+    return output + body[cursor:], declaration
 
 
 KEYWORDS = {'if', 'while', 'for', 'switch', 'return', 'sizeof', 'do'}
@@ -277,12 +472,15 @@ KEYWORDS = {'if', 'while', 'for', 'switch', 'return', 'sizeof', 'do'}
 
 def named_calls(body, inventory):
     """Non-FUN_ callees Ghidra named (operator_new, _strcmp...) -> address."""
-    names = {}
-    for directory in inventory.passes:
-        for entry, row in inventory.rows(directory).items():
-            if not row['name'].startswith('FUN_') and re.match(r'^[A-Za-z_]\w*$', row['name']):
-                names.setdefault(row['name'], entry)
-    return {n: names[n] for n in set(re.findall(r'\b([A-Za-z_]\w*)\s*\(', body))
+    names = getattr(inventory, '_seed_named_calls', None)
+    if names is None:
+        names = {}
+        for directory in inventory.passes:
+            for entry, row in inventory.rows(directory).items():
+                if not row['name'].startswith('FUN_') and re.match(r'^[A-Za-z_]\w*$', row['name']):
+                    names.setdefault(row['name'], entry)
+        inventory._seed_named_calls = names
+    return {n: names[n] for n in set(re.findall(r'\b([A-Za-z_]\w*)\s*\(', code_view(body)))
             if n in names and n not in KEYWORDS}
 
 
@@ -358,6 +556,8 @@ def seed(entry, inventory, accepted):
     conv, params = fit_convention(conv, params, stack_cleanup(inventory.function(entry)[1]),
                                   conv == '__thiscall')
     body = nonnegative_tests(reindent(text[end:].strip()))
+    body, labels = local_labels(body)
+    body = stack_artifacts(concat_artifacts(body), params, conv)
     body = LABEL.sub(lambda m: m.group(1) + re.sub(r'\W', '_', m.group(2)) + m.group(3), body)
     body = RAM.sub(lambda m: '(*(%s *)0x%s)' % (RAM_TYPES.get(m.group(1), 'int'), m.group(2)), body)
     body = PARTIAL.sub(lambda m: '(*(%s*)((char*)&%s + %s))' % (PARTIAL_TYPES.get(m.group(3), 'uint'),
@@ -365,7 +565,7 @@ def seed(entry, inventory, accepted):
     declarations, notes = [], []
     owners = ecx_owners(inventory.function(entry)[1])
     this_name = param_parts(params[0])[1] if conv == '__thiscall' and params else None
-    for callee in sorted(set(CALLEE.findall(body)) - {name}):
+    for callee in sorted(set(CALLEE.findall(code_view(body))) - {name}):
         address = int(callee[4:], 16)
         if address in accepted:
             notes.append('//   %s -> %s' % (callee, accepted[address]))
@@ -394,23 +594,21 @@ def seed(entry, inventory, accepted):
                 hint = this_name
         body, lines = declare_callee(body, callee, (c_ret, c_conv, c_params), hint)
         declarations.extend(lines)
-    for api, fact in sorted(imported_calls(body).items()):
-        arity = len(next(call_sites(body, api))[2]) if fact.get('convention') == '__stdcall' else None
-        if arity is None:
-            continue
-        body, lines = declare_callee(body, api, ('undefined4', '__stdcall', ['int'] * arity))
-        for line in lines:
-            declarations.append(line.replace('extern ', 'extern "C" __declspec(dllimport) ', 1) +
-                                '  // @ref __imp__%s@%d=%s' % (api, 4 * arity, fact['iat']))
+    imports = imported_calls(body)
+    for api, fact in sorted(imports.items()):
+        body, declaration = declare_import(body, api, fact)
+        declarations.append(declaration)
     for library, address in sorted(named_calls(body, inventory).items()):
+        if library in imports:
+            continue
         declarations.append('extern "C" undefined4 __cdecl %s(...);  // @ref _%s=%08x' % (library, library, address))
-    for symbol in sorted(set(DATA.findall(body))):
-        kind = 'void*' if 'PTR_' in symbol else 'char' if symbol.startswith('LAB_') else 'undefined4'
+    for symbol in sorted(set(DATA.findall(code_view(body))) - labels):
+        kind = pointer_global_type(body, symbol) if 'PTR_' in symbol else 'char' if symbol.startswith('LAB_') else 'undefined4'
         if kind == 'undefined4' and byte_global(body, symbol):
             # Ghidra compares or assigns it as a character: a byte global.
             declarations.append('extern "C" char %s;' % symbol); continue
         declarations.append('extern "C" %s %s%s;' % (kind, symbol, '[]' if kind == 'char' else ''))
-    for symbol in sorted(set(STRING.findall(body))):
+    for symbol in sorted(set(STRING.findall(code_view(body)))):
         declarations.append('extern "C" %s %s[];' % ('wchar16' if symbol.startswith('u_') else 'char', symbol))
     body = address_stores(cast_assignments(body, params))
     if conv == '__thiscall' and params:
@@ -426,7 +624,7 @@ def seed(entry, inventory, accepted):
     # translation unit without clashing declarations or cross-seed inlining;
     # every mangled name still carries the FUN_ address.
     return '\n'.join(documentation(entry, inventory, text[start:end].strip(), notes) +
-                     [MARKER, INCLUDE, '', 'namespace seed_%08x {' % entry, ''] +
+                     [MARKER, INCLUDE, '', 'namespace seed_%08x {' % entry, '', SDK_PREAMBLE, ''] +
                      (declarations + [''] if declarations else []) +
                      [definition.rstrip(), '', '}  // namespace seed_%08x' % entry, ''])
 
@@ -479,7 +677,7 @@ def main():
         if path.exists() and not args.force:
             print('%08x exists: %s (use --force)' % (entry, path)); continue
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(seed(entry, inventory, accepted))
+        path.write_text(seed(entry, inventory, accepted), encoding='utf-8', newline='\n')
         print(path)
 
 

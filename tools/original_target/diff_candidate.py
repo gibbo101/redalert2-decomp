@@ -38,13 +38,14 @@ def compiler_args(options):
 ADDRESS = re.compile(r'0x[0-9a-f]+')
 SOURCE_REF = re.compile(r'@ref\s+([^\s=]+)=(?:0x)?([0-9a-fA-F]+)')
 GHIDRA_NAME = re.compile(r'(?:FUN|DAT|PTR|SUB|LAB|thunk_FUN|switchD)_([0-9a-fA-F]{8})')
+POINTER_NAME = re.compile(r'(?:^|[^A-Za-z0-9])_?PTR_(?:[A-Za-z0-9_]+_)?([0-9a-fA-F]{8})(?=$|@)')
 STRING_NAME = re.compile(r'(?:^|_)[su]_\w*_([0-9a-f]{8})$')
 OWNED_NAME = re.compile(r'_(?:data|global|import|vtable|string)_[0-9a-f]+_([0-9a-f]{6,8})')
 
 
 def address_from_name(name):
     """Return the address a symbol name declares, or None."""
-    for pattern in (GHIDRA_NAME, OWNED_NAME, STRING_NAME):
+    for pattern in (POINTER_NAME, GHIDRA_NAME, OWNED_NAME, STRING_NAME):
         found = pattern.findall(name)
         if found:
             return int(found[-1], 16)
