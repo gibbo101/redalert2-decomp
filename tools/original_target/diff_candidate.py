@@ -14,6 +14,7 @@ otherwise-correct code generation.
 """
 import argparse
 import difflib
+import catalog_io
 import json
 from pathlib import Path
 import re
@@ -319,7 +320,7 @@ def main():
     config = json.loads(args.config.read_bytes())
     audit = Audit(REPOSITORY, config['executable'])
     decoder = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_32)
-    references = known_references(json.loads((REPOSITORY / 'manifests/original_target.json').read_bytes()))
+    references = known_references(catalog_io.load(catalog_io.locate(REPOSITORY), references=False))
     # RTTI type descriptors (??_R0) and the type_info vtable, read from the
     # original's RTTI, for dynamic_cast/typeid under the /GR variant.
     for name, value in audit.original_type_descriptors().items():

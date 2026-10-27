@@ -1,0 +1,547 @@
+{
+  "id": "population-102",
+  "population": {
+    "id": "population-102",
+    "inventory_sha256": "03d08d6614fd9ce563ff1e4c1074e908b50db7c569ab6a1c13389e98d42f172b",
+    "gaps_sha256": "5d632202668ee18fc451a5fc39ac0d4b67799fc0d9df738d7765fdcf9fd83e22",
+    "historical_population_sha256": "1a0bf4dbb5ba091f7c05cd3bb103e6cabaf7d417d4d040a2700a542210da6dad",
+    "historical_acceptance_sha256": "4c088ff6ef4a5a705ece7d034a94212d4f3eb28a2a23df3c685871f89805586f"
+  },
+  "references": {
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "?Reset@Buffer@@QAEXXZ": 4424768,
+    "?base@Init_498a50@@": 5536096,
+    "??_GStraw@@UAEPAXI@Z": 4844864,
+    "??_7Straw@@6B@": 7989752,
+    "??1Straw@@UAE@XZ": 6926352,
+    "?Get_From@Straw@@UAEXPAV1@@Z": 6926416,
+    "?Get@Straw@@UAEHPAXH@Z": 6926496,
+    "?Get@FileStraw@@UAEHPAXH@Z": 7813280,
+    "??_EStraw@@UAEPAXI@Z": 4844864,
+    "?Get@CacheStraw@@UAEHPAXH@Z": 4802400,
+    "?Get@Wstring@@QBEPBDXZ": 7792368,
+    "?Get@BlowStraw@@UAEHPAXH@Z": 4413504,
+    "?Get@LCWStraw@@UAEHPAXH@Z": 5460864,
+    "?Get@LZOStraw@@UAEHPAXH@Z": 5501008,
+    "?Get@PKStraw@@UAEHPAXH@Z": 6356752,
+    "?Get@RandomStraw@@UAEHPAXH@Z": 6543408,
+    "?Get_From@PKStraw@@UAEXAAVStraw@@@Z": 6357312,
+    "?Get_From@PKStraw@@UAEXPAVStraw@@@Z": 6356640,
+    "??_7RandomStraw@@6B@": 8031932,
+    "??0Random3Class@@QAE@II@Z": 6523216,
+    "??0RandomStraw@@QAE@XZ": 6542032,
+    "??1RandomStraw@@UAE@XZ": 6542112,
+    "??_GRandomStraw@@UAEPAXI@Z": 6543504,
+    "??_ERandomStraw@@UAEPAXI@Z": 6543504,
+    "?Reset@RandomStraw@@QAEXXZ": 6542160,
+    "?Scramble_Seed@RandomStraw@@AAEXXZ": 6543248,
+    "?Seed_Bit@RandomStraw@@QAEXH@Z": 6542224,
+    "?Seed_Bits_Needed@RandomStraw@@QBEHXZ": 6542192,
+    "?Seed_Byte@RandomStraw@@QAEXD@Z": 6542448,
+    "?Seed_Long@RandomStraw@@QAEXJ@Z": 6542976,
+    "?Seed_Short@RandomStraw@@QAEXF@Z": 6542720,
+    "??RRandom3Class@@QAEHXZ": 6523248,
+    "?Hash@SHAEngine@@QAEXPBXJ@Z": 6769808,
+    "?Result@SHAEngine@@QBEHPAX@Z": 6769936,
+    "_memmove": 7877264,
+    "?Length@Wstring@@QBEIXZ": 7792544
+  },
+  "regions": [
+    {
+      "entry": 6542192,
+      "method": "0063d370",
+      "symbol": "?Seed_Bits_Needed@RandomStraw@@QBEHXZ",
+      "symbol_prefix": "?Seed_Bits_Needed@RandomStraw@@QBEHXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 22,
+      "body_sha256": "ac2565537bbcbf25fd52cdcf2608ea14cb2cd61c0aae7c911b1cff39cacc0031",
+      "padding_bytes": 10,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "2b299dbfbd8506e522a4808757d64f0d61f2d5e34f1be21e8e17d2d1612ba029",
+      "relocations": [],
+      "source_sha256": "b40df85abf654da2d50cd4df792b03f672fd05e24bb0b0b78a2f4bfcc0f71a6b",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_Seed_Bits_Needed_0063d370.cpp",
+      "population": "population-102",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_Seed_Bits_Needed_0063d370",
+      "source_order": 10634
+    },
+    {
+      "entry": 6542032,
+      "method": "0063d2d0",
+      "symbol": "??0RandomStraw@@QAE@XZ",
+      "symbol_prefix": "??0RandomStraw@@QAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 80,
+      "body_sha256": "e7ffbe8714bebd1737a1a33a0f4dc8c372867af2bc7b3fe778ecb3a90e7af0e1",
+      "padding_bytes": 0,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "e7ffbe8714bebd1737a1a33a0f4dc8c372867af2bc7b3fe778ecb3a90e7af0e1",
+      "relocations": [
+        {
+          "offset": 21,
+          "kind": 6,
+          "symbol": "??_7Straw@@6B@",
+          "target": 7989752,
+          "addend": 0,
+          "resolved": 7989752
+        },
+        {
+          "offset": 39,
+          "kind": 20,
+          "symbol": "??0Random3Class@@QAE@II@Z",
+          "target": 6523216,
+          "addend": 0,
+          "resolved": 4294948437
+        },
+        {
+          "offset": 67,
+          "kind": 6,
+          "symbol": "??_7RandomStraw@@6B@",
+          "target": 8031932,
+          "addend": 0,
+          "resolved": 8031932
+        }
+      ],
+      "source_sha256": "f58074783c94cfac9c31a5f874c0a1e2b3d0b8cba995f1de4ba12019a7fa499e",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_constructor_0063d2d0.cpp",
+      "population": "population-102",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_constructor_0063d2d0",
+      "source_order": 10631
+    },
+    {
+      "entry": 6542112,
+      "method": "0063d320",
+      "symbol": "??1RandomStraw@@UAE@XZ",
+      "symbol_prefix": "??1RandomStraw@@UAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 36,
+      "body_sha256": "c14b2173f18c7d4f4a3a94f312ebb4375543f3c825b2bb78ede80f89e9272d3d",
+      "padding_bytes": 12,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "d5d396726f21713f6671a271d3e09cb64201d07c21c5c7f2da4c55529a91b7c7",
+      "relocations": [
+        {
+          "offset": 15,
+          "kind": 6,
+          "symbol": "??_7RandomStraw@@6B@",
+          "target": 8031932,
+          "addend": 0,
+          "resolved": 8031932
+        },
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "??1Straw@@UAE@XZ",
+          "target": 6926352,
+          "addend": 0,
+          "resolved": 384206
+        }
+      ],
+      "source_sha256": "dfdcad4c8cd75869e43cc243b741b13fb209bd52eda0df955c5d17d21a6af3c3",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_destructor_0063d320.cpp",
+      "population": "population-102",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_destructor_0063d320",
+      "source_order": 10632
+    },
+    {
+      "entry": 6542160,
+      "method": "0063d350",
+      "symbol": "?Reset@RandomStraw@@QAEXXZ",
+      "symbol_prefix": "?Reset@RandomStraw@@QAEXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 23,
+      "body_sha256": "3ff5fafbdc2dc80503ddda8d40b9f79e23077a6f0babad3aeec5433bc3aee822",
+      "padding_bytes": 9,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "00c9b26fd77afc749802c4e7a502d0e87ce324854f14ff7b57ed55bb998ea8a5",
+      "relocations": [],
+      "source_sha256": "63f97aa090633cf001709199268263e10c9e93da4ca4ce9a3b6e5497d1a08fb9",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_Reset_0063d350.cpp",
+      "population": "population-102",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_Reset_0063d350",
+      "source_order": 10633
+    },
+    {
+      "entry": 6542224,
+      "method": "0063d390",
+      "symbol": "?Seed_Bit@RandomStraw@@QAEXH@Z",
+      "symbol_prefix": "?Seed_Bit@RandomStraw@@QAEXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 219,
+      "body_sha256": "848248aba14e5e0b567306e9f289b6f1d029f35b7457f8fe842900847a14fe30",
+      "padding_bytes": 5,
+      "full_extent_bytes": 224,
+      "full_extent_sha256": "6e07824a717be8b45dcc0880725259265cdc7c6a84679c49a8dec3de2a06451d",
+      "relocations": [
+        {
+          "offset": 147,
+          "kind": 20,
+          "symbol": "?Hash@SHAEngine@@QAEXPBXJ@Z",
+          "target": 6769808,
+          "addend": 0,
+          "resolved": 227433
+        },
+        {
+          "offset": 161,
+          "kind": 20,
+          "symbol": "?Result@SHAEngine@@QBEHPAX@Z",
+          "target": 6769936,
+          "addend": 0,
+          "resolved": 227547
+        },
+        {
+          "offset": 190,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 1334846
+        }
+      ],
+      "source_sha256": "cfaea57bdf8145d12c365d036cc580162755fe45e42be3478e1235f5f849e1db",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_Seed_Bit_0063d390.cpp",
+      "population": "population-102",
+      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_Seed_Bit_0063d390",
+      "source_order": 10635
+    },
+    {
+      "entry": 6542448,
+      "method": "0063d470",
+      "symbol": "?Seed_Byte@RandomStraw@@QAEXD@Z",
+      "symbol_prefix": "?Seed_Byte@RandomStraw@@QAEXD@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 259,
+      "body_sha256": "a6e3f30291e49655d27f72b244143c8ba47b96c78e0593a3a9305151e125e42d",
+      "padding_bytes": 13,
+      "full_extent_bytes": 272,
+      "full_extent_sha256": "99e553180da55002430dcbf7cbe0c01507bf97f6d3bbcfe9be3b523a28597234",
+      "relocations": [
+        {
+          "offset": 155,
+          "kind": 20,
+          "symbol": "?Hash@SHAEngine@@QAEXPBXJ@Z",
+          "target": 6769808,
+          "addend": 0,
+          "resolved": 227201
+        },
+        {
+          "offset": 169,
+          "kind": 20,
+          "symbol": "?Result@SHAEngine@@QBEHPAX@Z",
+          "target": 6769936,
+          "addend": 0,
+          "resolved": 227315
+        },
+        {
+          "offset": 198,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 1334614
+        }
+      ],
+      "source_sha256": "1a4f901bf2be9ce2a56c9ce7715cdc77ccce904177d30d476bc1c5da0a34ad91",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_Seed_Byte_0063d470.cpp",
+      "population": "population-102",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_Seed_Byte_0063d470",
+      "source_order": 10636
+    },
+    {
+      "entry": 6542720,
+      "method": "0063d580",
+      "symbol": "?Seed_Short@RandomStraw@@QAEXF@Z",
+      "symbol_prefix": "?Seed_Short@RandomStraw@@QAEXF@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 251,
+      "body_sha256": "5a66a8f3d06897399629d2b1712450a22f1a68371fa386a897934fd575270245",
+      "padding_bytes": 5,
+      "full_extent_bytes": 256,
+      "full_extent_sha256": "8afae78566538a5663af54d015a83e3f8e08794da3d155ad8f16b1b6199b7e9d",
+      "relocations": [
+        {
+          "offset": 155,
+          "kind": 20,
+          "symbol": "?Hash@SHAEngine@@QAEXPBXJ@Z",
+          "target": 6769808,
+          "addend": 0,
+          "resolved": 226929
+        },
+        {
+          "offset": 169,
+          "kind": 20,
+          "symbol": "?Result@SHAEngine@@QBEHPAX@Z",
+          "target": 6769936,
+          "addend": 0,
+          "resolved": 227043
+        },
+        {
+          "offset": 198,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 1334342
+        }
+      ],
+      "source_sha256": "65773dcaf6ff569f5fe3bcb15b3808a61f940ff3ad38b31643f90fa8a6767f79",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_Seed_Short_0063d580.cpp",
+      "population": "population-102",
+      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_Seed_Short_0063d580",
+      "source_order": 10637
+    },
+    {
+      "entry": 6542976,
+      "method": "0063d680",
+      "symbol": "?Seed_Long@RandomStraw@@QAEXJ@Z",
+      "symbol_prefix": "?Seed_Long@RandomStraw@@QAEXJ@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 259,
+      "body_sha256": "70fd196cae840acc72e8405934c991ae12eaf3d178d62a3c07450b7a40b7e946",
+      "padding_bytes": 13,
+      "full_extent_bytes": 272,
+      "full_extent_sha256": "4eba7d040c19813121a51842c358b6b236da78ab1eb54de551d17e5f9c4ba93e",
+      "relocations": [
+        {
+          "offset": 155,
+          "kind": 20,
+          "symbol": "?Hash@SHAEngine@@QAEXPBXJ@Z",
+          "target": 6769808,
+          "addend": 0,
+          "resolved": 226673
+        },
+        {
+          "offset": 169,
+          "kind": 20,
+          "symbol": "?Result@SHAEngine@@QBEHPAX@Z",
+          "target": 6769936,
+          "addend": 0,
+          "resolved": 226787
+        },
+        {
+          "offset": 198,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 1334086
+        }
+      ],
+      "source_sha256": "522676bbe4d34a5e6f73e76b59bd44771241742505d6d0b001bc88155a53a195",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_Seed_Long_0063d680.cpp",
+      "population": "population-102",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_Seed_Long_0063d680",
+      "source_order": 10638
+    },
+    {
+      "entry": 6543248,
+      "method": "0063d790",
+      "symbol": "?Scramble_Seed@RandomStraw@@AAEXXZ",
+      "symbol_prefix": "?Scramble_Seed@RandomStraw@@AAEXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 151,
+      "body_sha256": "afd16ea341abe42dfda3d2adc445448c565dfc53500458109211e1ef9a481ade",
+      "padding_bytes": 9,
+      "full_extent_bytes": 160,
+      "full_extent_sha256": "cbb5180f8713105d2a83c0795f2548d4b18c90c0612d4a445ec528a48316b79c",
+      "relocations": [
+        {
+          "offset": 81,
+          "kind": 20,
+          "symbol": "?Hash@SHAEngine@@QAEXPBXJ@Z",
+          "target": 6769808,
+          "addend": 0,
+          "resolved": 226475
+        },
+        {
+          "offset": 95,
+          "kind": 20,
+          "symbol": "?Result@SHAEngine@@QBEHPAX@Z",
+          "target": 6769936,
+          "addend": 0,
+          "resolved": 226589
+        },
+        {
+          "offset": 124,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 1333888
+        }
+      ],
+      "source_sha256": "afa0ead771adbc13a258aea4e2f7364cf1a709ddb55ff4176b2a8aae1f0259d9",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_Scramble_Seed_0063d790.cpp",
+      "population": "population-102",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_Scramble_Seed_0063d790",
+      "source_order": 10639
+    },
+    {
+      "entry": 6543408,
+      "method": "0063d830",
+      "symbol": "?Get@RandomStraw@@UAEHPAXH@Z",
+      "symbol_prefix": "?Get@RandomStraw@@UAEHPAXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 88,
+      "body_sha256": "66a427aa786d174693664b223fb0097e7a9909173e4487596c005d54964082cd",
+      "padding_bytes": 8,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "b7aa923deea049e50dca4e64dcc80786822b57a2795e277c1a0ec0cc96772f86",
+      "relocations": [
+        {
+          "offset": 44,
+          "kind": 20,
+          "symbol": "??RRandom3Class@@QAEHXZ",
+          "target": 6523248,
+          "addend": 0,
+          "resolved": 4294947088
+        },
+        {
+          "offset": 78,
+          "kind": 20,
+          "symbol": "?Get@Straw@@UAEHPAXH@Z",
+          "target": 6926496,
+          "addend": 0,
+          "resolved": 383006
+        }
+      ],
+      "source_sha256": "ea731adb53ce12df51bb610d64a149dd35043eaeaa1df969380e8638f49cf237",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_Get_0063d830.cpp",
+      "population": "population-102",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_Get_0063d830",
+      "source_order": 10640
+    },
+    {
+      "entry": 6543504,
+      "method": "0063d890",
+      "symbol": "??_GRandomStraw@@UAEPAXI@Z",
+      "symbol_prefix": "??_GRandomStraw@@UAEPAXI@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 58,
+      "body_sha256": "67973f2e53fe388de283e5be2d4481e767943f2c834d3ab0cde11665659e02b9",
+      "padding_bytes": 6,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "10065f8b9524217eccad618994826275f92abf9b42f38f8a900ec4704e7457e7",
+      "relocations": [
+        {
+          "offset": 16,
+          "kind": 6,
+          "symbol": "??_7RandomStraw@@6B@",
+          "target": 8031932,
+          "addend": 0,
+          "resolved": 8031932
+        },
+        {
+          "offset": 31,
+          "kind": 20,
+          "symbol": "??1Straw@@UAE@XZ",
+          "target": 6926352,
+          "addend": 0,
+          "resolved": 382813
+        },
+        {
+          "offset": 44,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1328251
+        }
+      ],
+      "source_sha256": "900bdab50eff312224bd2d4aeb9418e22a9bc6e798577cea628fa95bf6894c5f",
+      "source": "src/recovered/classes/RandomStraw/RandomStraw_scalar_deleting_destructor_0063d890.cpp",
+      "population": "population-102",
+      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RandomStraw_scalar_deleting_destructor_0063d890",
+      "source_order": 10641
+    }
+  ]
+}

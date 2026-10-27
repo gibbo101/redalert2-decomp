@@ -10,6 +10,7 @@ filename, and the address range. Only the text between the
 authority for every path, symbol and hash.
 """
 from collections import defaultdict
+import catalog_io
 import json
 from pathlib import Path
 import re
@@ -21,7 +22,7 @@ ADDRESS_ONLY = re.compile(r'^[0-9a-f]{8}\.cpp$')
 
 
 def main():
-    catalog = json.loads((REPOSITORY / 'manifests/original_target.json').read_text())
+    catalog = catalog_io.load(catalog_io.locate(REPOSITORY), references=False)
     groups = defaultdict(list)
     for row in catalog['regions']:
         path = Path(row['source'])

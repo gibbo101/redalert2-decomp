@@ -1,0 +1,2458 @@
+{
+  "id": "population-12",
+  "population": {
+    "id": "population-12",
+    "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps_sha256": "21f64252f3fcb8274a774e959238f0f224727b0f9c98bca222ac927a23e841e4",
+    "historical_population_sha256": "055f9f969e6f8f4e0e8e713e7ae7958eec0f597344c79e13db1b54e8ca3210af",
+    "historical_acceptance_sha256": "f52dba5616e794ef9026c00280b0e7874f5ce11dadcf36d6eeb0ce89a84045b3"
+  },
+  "references": {
+    "_vtable_40b230": 7972716,
+    "_release_buffer_40b230": 7871803,
+    "_release_object_40b230": 7871803,
+    "_vtable_40c070": 7972924,
+    "_release_buffer_40c070": 7871803,
+    "_release_object_40c070": 7871803,
+    "_vtable_40c450": 7972988,
+    "_release_buffer_40c450": 7871803,
+    "_release_object_40c450": 7871803,
+    "_vtable_40ca20": 7973068,
+    "_release_buffer_40ca20": 7871803,
+    "_release_object_40ca20": 7871803,
+    "_vtable_40ce20": 7973148,
+    "_release_buffer_40ce20": 7871803,
+    "_release_object_40ce20": 7871803,
+    "_vtable_40d720": 7973460,
+    "_release_buffer_40d720": 7871803,
+    "_release_object_40d720": 7871803,
+    "_vtable_40e920": 7973684,
+    "_release_buffer_40e920": 7871803,
+    "_release_object_40e920": 7871803,
+    "_vtable_40efd0": 7974100,
+    "_release_buffer_40efd0": 7871803,
+    "_release_object_40efd0": 7871803,
+    "_vtable_40f6d0": 7974188,
+    "_release_buffer_40f6d0": 7871803,
+    "_release_object_40f6d0": 7871803,
+    "_vtable_40fc80": 7974268,
+    "_release_buffer_40fc80": 7871803,
+    "_release_object_40fc80": 7871803,
+    "_vtable_41e920": 7976992,
+    "_release_buffer_41e920": 7871803,
+    "_release_object_41e920": 7871803,
+    "_vtable_42d160": 7980544,
+    "_release_buffer_42d160": 7871803,
+    "_release_object_42d160": 7871803,
+    "_vtable_454850": 7983516,
+    "_release_buffer_454850": 7871803,
+    "_release_object_454850": 7871803,
+    "_vtable_468720": 7985004,
+    "_release_buffer_468720": 7871803,
+    "_release_object_468720": 7871803,
+    "_vtable_48dc20": 7987024,
+    "_release_buffer_48dc20": 7871803,
+    "_release_object_48dc20": 7871803,
+    "_vtable_4b2900": 7998652,
+    "_release_buffer_4b2900": 7871803,
+    "_release_object_4b2900": 7871803,
+    "_vtable_4b4640": 7998732,
+    "_release_buffer_4b4640": 7871803,
+    "_release_object_4b4640": 7871803,
+    "_vtable_4cdf90": 8001436,
+    "_release_buffer_4cdf90": 7871803,
+    "_release_object_4cdf90": 7871803,
+    "_vtable_4dd590": 8006276,
+    "_release_buffer_4dd590": 7871803,
+    "_release_object_4dd590": 7871803,
+    "_vtable_50b2b0": 8010588,
+    "_release_buffer_50b2b0": 7871803,
+    "_release_object_50b2b0": 7871803,
+    "_vtable_520f50": 8013172,
+    "_release_buffer_520f50": 7871803,
+    "_release_object_520f50": 7871803,
+    "_vtable_534660": 8016948,
+    "_release_buffer_534660": 7871803,
+    "_release_object_534660": 7871803,
+    "_vtable_538350": 8017172,
+    "_release_buffer_538350": 7871803,
+    "_release_object_538350": 7871803,
+    "_vtable_539b80": 8017444,
+    "_release_buffer_539b80": 7871803,
+    "_release_object_539b80": 7871803,
+    "_vtable_53cd80": 8018020,
+    "_release_buffer_53cd80": 7871803,
+    "_release_object_53cd80": 7871803,
+    "_vtable_56c200": 8018456,
+    "_release_buffer_56c200": 7871803,
+    "_release_object_56c200": 7871803,
+    "_vtable_5de610": 8026852,
+    "_release_buffer_5de610": 7871803,
+    "_release_object_5de610": 7871803,
+    "_vtable_6055f0": 8027064,
+    "_release_buffer_6055f0": 7871803,
+    "_release_object_6055f0": 7871803,
+    "_vtable_608200": 8027212,
+    "_release_buffer_608200": 7871803,
+    "_release_object_608200": 7871803,
+    "_vtable_6365f0": 8030332,
+    "_release_buffer_6365f0": 7871803,
+    "_release_object_6365f0": 7871803,
+    "_vtable_63cb10": 8031884,
+    "_release_buffer_63cb10": 7871803,
+    "_release_object_63cb10": 7871803,
+    "_vtable_640220": 8032268,
+    "_release_buffer_640220": 7871803,
+    "_release_object_640220": 7871803,
+    "_vtable_6739f0": 8033828,
+    "_release_buffer_6739f0": 7871803,
+    "_release_object_6739f0": 7871803,
+    "_vtable_674790": 8033828,
+    "_release_buffer_674790": 7871803,
+    "_release_object_674790": 7871803,
+    "_vtable_687380": 8041772,
+    "_release_buffer_687380": 7871803,
+    "_release_object_687380": 7871803,
+    "_vtable_6986f0": 8042944,
+    "_release_buffer_6986f0": 7871803,
+    "_release_object_6986f0": 7871803,
+    "_vtable_69c180": 8044980,
+    "_release_buffer_69c180": 7871803,
+    "_release_object_69c180": 7871803,
+    "_vtable_6ad0b0": 8045860,
+    "_release_buffer_6ad0b0": 7871803,
+    "_release_object_6ad0b0": 7871803,
+    "_vtable_6b35b0": 8046096,
+    "_release_buffer_6b35b0": 7871803,
+    "_release_object_6b35b0": 7871803,
+    "_vtable_6b5200": 8046488,
+    "_release_buffer_6b5200": 7871803,
+    "_release_object_6b5200": 7871803,
+    "_vtable_6e2dc0": 8049364,
+    "_release_buffer_6e2dc0": 7871803,
+    "_release_object_6e2dc0": 7871803,
+    "_vtable_6e71d0": 8050356,
+    "_release_buffer_6e71d0": 7871803,
+    "_release_object_6e71d0": 7871803,
+    "_vtable_6e86e0": 8006340,
+    "_release_buffer_6e86e0": 7871803,
+    "_release_object_6e86e0": 7871803,
+    "_vtable_6ead20": 8050788,
+    "_release_buffer_6ead20": 7871803,
+    "_release_object_6ead20": 7871803,
+    "_vtable_70f3c0": 8054508,
+    "_release_buffer_70f3c0": 7871803,
+    "_release_object_70f3c0": 7871803,
+    "_vtable_716d30": 8055300,
+    "_release_buffer_716d30": 7871803,
+    "_release_object_716d30": 7871803,
+    "_vtable_76be10": 8059644,
+    "_release_buffer_76be10": 7871803,
+    "_release_object_76be10": 7871803
+  },
+  "regions": [
+    {
+      "entry": 4239920,
+      "method": "40b230",
+      "symbol": "?get@Leaf_40b230@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40b230@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "427f8b240874762a10ea51ae108e55ac2eb781bda1d22168a7233685cce2b6d7",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "505b270dbce2eebafe7cdd6034a72159e9cd72c441f042b029a943b23aa514fd",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40b230",
+          "target": 7972716,
+          "addend": 0,
+          "resolved": 7972716
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40b230",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3631854
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40b230",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3631819
+        }
+      ],
+      "source": "src/recovered/classes/VectorClass_SubzoneConnectionStruct/0040b230.cpp",
+      "source_sha256": "40028f4d75c11f3aa0da5fc20fcdd7784af015612443285225fa11a87c42157d",
+      "source_order": 74,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4243568,
+      "method": "40c070",
+      "symbol": "?get@Leaf_40c070@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40c070@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "a82ae71fd72d41672b5c670d11b512274a50cc2bfbf1d41179d7549508391ce1",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "fe0bd014cd9a369b5d24963f8074df61d3f92817891c7ae7fcf2c373209af60a",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40c070",
+          "target": 7972924,
+          "addend": 0,
+          "resolved": 7972924
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40c070",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3628206
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40c070",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3628171
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_CommandClass_ptr/0040c070.cpp",
+      "source_sha256": "f5607b064c80e069247c293f68a798493ba5acb09a1e4cf3c8eb633433466a0b",
+      "source_order": 120,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4244560,
+      "method": "40c450",
+      "symbol": "?get@Leaf_40c450@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40c450@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "544e280f83854a634b385fa9b4923eae45e9e1fc4629fbabbdb7c91211fd9456",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "07b451630cae5176b41ca7a835223701e71b25c3a725d93431ca85c5a9ac1a61",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40c450",
+          "target": 7972988,
+          "addend": 0,
+          "resolved": 7972988
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40c450",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3627214
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40c450",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3627179
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_LightConvertClass_ptr/0040c450.cpp",
+      "source_sha256": "0c4fc45c36675fc70754f2274a5a512788c1c47f0ae02ae3c4f19243ce26efe6",
+      "source_order": 131,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4246048,
+      "method": "40ca20",
+      "symbol": "?get@Leaf_40ca20@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40ca20@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "0df553ca7eca87492205942b5e5dccc926bf6aa0ea6d5296ddd3bf28be7b2584",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "1a56be8cd23a8e1811840f7137e38840e1aac7a20c58d6268df20bb8dc1aeff3",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40ca20",
+          "target": 7973068,
+          "addend": 0,
+          "resolved": 7973068
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40ca20",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3625726
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40ca20",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3625691
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_IsometricTileClass_ptr/0040ca20.cpp",
+      "source_sha256": "709fd40d430ba1043ce65744138d55bd15cf2fa37fb07ee63a833462c51a6e6f",
+      "source_order": 155,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4247072,
+      "method": "40ce20",
+      "symbol": "?get@Leaf_40ce20@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40ce20@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "74f42083087fd718400087e136f28d360bf7fd7d1945c3982dbfe7ee234ce5c2",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "0bcc08544a471a09ab11f2930e3d2473746bbb70f5d277e903f17a9c62b15571",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40ce20",
+          "target": 7973148,
+          "addend": 0,
+          "resolved": 7973148
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40ce20",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3624702
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40ce20",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3624667
+        }
+      ],
+      "source": "src/recovered/classes/VectorClass_ObjectClass_ptr/0040ce20.cpp",
+      "source_sha256": "f2be7b7f67fdbcdf75483ded07553233f005b011d46dc866e7d56568b2c8eb5d",
+      "source_order": 167,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4249376,
+      "method": "40d720",
+      "symbol": "?get@Leaf_40d720@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40d720@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "726d240078ef00cd9726248e6acc6e746cc45e80a656cefd10889a1ab823ea9c",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "f991faba0037c07752490cee0da072a3cb31e0eebe0422054ce915e95f9229e3",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40d720",
+          "target": 7973460,
+          "addend": 0,
+          "resolved": 7973460
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40d720",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3622398
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40d720",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3622363
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_MixFileClass_ptr/0040d720.cpp",
+      "source_sha256": "64034a48aa88381ebeefe4a171d790e14f58e4fc1428578e817121caeccf3caf",
+      "source_order": 199,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4253984,
+      "method": "40e920",
+      "symbol": "?get@Leaf_40e920@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40e920@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "bd8f8d56e3cacd97b3d09288a31fe11c96e0e45c067500f5cffb8eb82ce3d89a",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "1feb6ede279cfa0b877bcfcacd8f900d31ec982c5c3b62ff7b93768995a9c6e3",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40e920",
+          "target": 7973684,
+          "addend": 0,
+          "resolved": 7973684
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40e920",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3617790
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40e920",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3617755
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ScriptClass_ptr/0040e920.cpp",
+      "source_sha256": "7ccb0ea9d5bfa48f2db2ebc6291211808382c5c20e724296b5cbec1917b2d777",
+      "source_order": 251,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4255696,
+      "method": "40efd0",
+      "symbol": "?get@Leaf_40efd0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40efd0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "39aef96e70ffa26c9eace75588e0463de7016ca516ee26202bde8a64bf1099c4",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "1c4ebda0d39a04d6c3789e5ff9e8e4c35fdeeab95ac4e025bd98c05ff236c867",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40efd0",
+          "target": 7974100,
+          "addend": 0,
+          "resolved": 7974100
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40efd0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3616078
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40efd0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3616043
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_VoxelAnimClass_ptr/0040efd0.cpp",
+      "source_sha256": "3519f19eb401ab2e0dba2010df67710c078b78a09c6dc54d444900781636f355",
+      "source_order": 276,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4257488,
+      "method": "40f6d0",
+      "symbol": "?get@Leaf_40f6d0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40f6d0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "79c821b0655d3faa6c3c69452bf593017a0900435d748ea2a8ec72272da4f6fc",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "f5424376e2ddff066cb63185553e17bd1177c525a3144facc54ba357e1a8a5e3",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40f6d0",
+          "target": 7974188,
+          "addend": 0,
+          "resolved": 7974188
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40f6d0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3614286
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40f6d0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3614251
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_WarheadTypeClass_ptr/0040f6d0.cpp",
+      "source_sha256": "ea3694d441d8d25f80e8b9ce219729e707692e23a59775ecc029f0ab59ffec97",
+      "source_order": 303,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4258944,
+      "method": "40fc80",
+      "symbol": "?get@Leaf_40fc80@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_40fc80@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "7e6b451af27a356de8b5a0f4ba70ef0782b46561a18040b4e84427a9fbeb65a7",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "ca2d754cb7fa52a73fb18dc8366e3a826c90bc951db8d54a49df198efd9473dc",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_40fc80",
+          "target": 7974268,
+          "addend": 0,
+          "resolved": 7974268
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_40fc80",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3612830
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_40fc80",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3612795
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_WeaponTypeClass_ptr/0040fc80.cpp",
+      "source_sha256": "a19c82db4f883b85f45fda3d5ca91347050fd9177d917e159493e373bc9a7371",
+      "source_order": 326,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4319520,
+      "method": "41e920",
+      "symbol": "?get@Leaf_41e920@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_41e920@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "263266cc3da16b7728c2a249c9645a1c0276d421e05cda8750feda1feb4c8d0f",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "ebd46423362acf10887ac05640b01957128470fb51981358ec3b1b1547f6f18a",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_41e920",
+          "target": 7976992,
+          "addend": 0,
+          "resolved": 7976992
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_41e920",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3552254
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_41e920",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3552219
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AlphaLightingRemapClass_ptr/0041e920.cpp",
+      "source_sha256": "adaff602c4c08bca48e78aea7de205d25babe13e1a9691824c86e96d9a7f4de4",
+      "source_order": 490,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4378976,
+      "method": "42d160",
+      "symbol": "?get@Leaf_42d160@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_42d160@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "2c6969156462b7cf0c86c778dd4dc1231bf2dd055a796515102ba6660e15d3ea",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "b8fa600f7c4333d3abc4de05e6a29101ff3dfd2e530bc95fa1903345ccce75f1",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_42d160",
+          "target": 7980544,
+          "addend": 0,
+          "resolved": 7980544
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_42d160",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3492798
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_42d160",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3492763
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_BaseNodeClass/0042d160.cpp",
+      "source_sha256": "ee8b5350d99e8832d97b50844d41d6304764fec769ce0bde2fd9b70f8eb7b234",
+      "source_order": 646,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4540496,
+      "method": "454850",
+      "symbol": "?get@Leaf_454850@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_454850@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "f32e461a6bb3c0529e0ea13e139efa630cfc3f878b0355e653af015b0d17ce96",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "d533403b26d4e516938ff0ef7b5aff6816b6e37e3118a4d3deb34bfc95b80468",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_454850",
+          "target": 7983516,
+          "addend": 0,
+          "resolved": 7983516
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_454850",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3331278
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_454850",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3331243
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_FoggedObjectClass_ptr/00454850.cpp",
+      "source_sha256": "f076bf7e42427a26885e8494e4e1eb11f7317050a980c9c868343401374166b2",
+      "source_order": 806,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4622112,
+      "method": "468720",
+      "symbol": "?get@Leaf_468720@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_468720@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "d548030b3459ef8e872024d2570ebe65d27f18d5ec812db2735c5e76dd027029",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "e986f34c5b116e3836fad5221968ee53b52a0129fd275ebc34713c7cddd682e8",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_468720",
+          "target": 7985004,
+          "addend": 0,
+          "resolved": 7985004
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_468720",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3249662
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_468720",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3249627
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_CaptureManagerClass_ptr/00468720.cpp",
+      "source_sha256": "d2f851714c46c7d3fbed2982b6a58e5403587f9dfc3e9cec9b6567a507bbdfd3",
+      "source_order": 942,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4774944,
+      "method": "48dc20",
+      "symbol": "?get@Leaf_48dc20@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_48dc20@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "7d4f3de1b08360d8e577a8c4aeb0e10aaa8ad3dee3a3341e7d9a5d10ca58422a",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "5232c79fbfeae6b71f1367cd010aacc472a8a004f8631731cb6c354dbdc4d2ee",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_48dc20",
+          "target": 7987024,
+          "addend": 0,
+          "resolved": 7987024
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_48dc20",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3096830
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_48dc20",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3096795
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ConvertClass_ptr/0048dc20.cpp",
+      "source_sha256": "b458d2f2e1f47ed879a0e989d3c52c4be3b61bd5c32d8a1b8d9f44fb54f775d7",
+      "source_order": 1216,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4925696,
+      "method": "4b2900",
+      "symbol": "?get@Leaf_4b2900@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_4b2900@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "918d498983eeeb4d1ea4834bc52b656ee4b550235c1d6b07974bf8081cdc05ad",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "706bd874a7d42bdaf8b361d5f6e2fba56fbd6e39db3ed9eaa8e3e41ff30bacdb",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_4b2900",
+          "target": 7998652,
+          "addend": 0,
+          "resolved": 7998652
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_4b2900",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2946078
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_4b2900",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2946043
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_EBolt_ptr/004b2900.cpp",
+      "source_sha256": "a94929a9b16f1472287c9ca62ae6494a2f9b71b52796e1c3642d89387009ca3a",
+      "source_order": 1498,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4933184,
+      "method": "4b4640",
+      "symbol": "?get@Leaf_4b4640@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_4b4640@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "a2664b49cf60a4edb1e96e2dfb183cf78b958ce62202927949e2b82805a0832d",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "ce7b347fa7ae6f1a3c527f41a172f03e2115af2ad9202b60511d8c99428bdb28",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_4b4640",
+          "target": 7998732,
+          "addend": 0,
+          "resolved": 7998732
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_4b4640",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2938590
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_4b4640",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2938555
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_EgoClass_ptr/004b4640.cpp",
+      "source_sha256": "a5da8fb7b3971d7af9bcc79b0e5369fdf5566f9636f0f6e92e77aa11fff65dff",
+      "source_order": 1525,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5037968,
+      "method": "4cdf90",
+      "symbol": "?get@Leaf_4cdf90@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_4cdf90@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "5a5c35e23b231060c58967dcb75343d8105399199a3a5241b55dffe9455efe59",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "6ff21164943d91c390bc83aab8de31c9954d2abceb3f7c1e2e0f7f4aeeb01847",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_4cdf90",
+          "target": 8001436,
+          "addend": 0,
+          "resolved": 8001436
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_4cdf90",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2833806
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_4cdf90",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2833771
+        }
+      ],
+      "source": "src/recovered/classes/VectorClass_AbstractClass_ptr/004cdf90.cpp",
+      "source_sha256": "f6045b779ea64e068bd62db5cfd599191e919a6e76df88a73aa13099b6429ec9",
+      "source_order": 1732,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5100944,
+      "method": "4dd590",
+      "symbol": "?get@Leaf_4dd590@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_4dd590@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "f1d61f4d48d4c5a7f446116810f2907d95950704119348568f2730a890c26945",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "343252b193707344a447f6f595f32d627944971536436ca9633355e5524411c4",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_4dd590",
+          "target": 8006276,
+          "addend": 0,
+          "resolved": 8006276
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_4dd590",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2770830
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_4dd590",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2770795
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractTypeClass_ptr/004dd590.cpp",
+      "source_sha256": "3fd27ec2384e777e29c63659180127301abe1bf3f2b723d74e18f8df9931d396",
+      "source_order": 2263,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5288624,
+      "method": "50b2b0",
+      "symbol": "?get@Leaf_50b2b0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_50b2b0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "7dfde3588f181861f579e3d0ebd1a4649cfcd5369509bbf12953ad525c129c7c",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "269cd2a84102042370e4352b010c3a40e42dbd60752f22b1d0d6092ba3af1edc",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_50b2b0",
+          "target": 8010588,
+          "addend": 0,
+          "resolved": 8010588
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_50b2b0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2583150
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_50b2b0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2583115
+        }
+      ],
+      "source": "src/recovered/classes/VectorClass_AnimTypeClass_ptr/0050b2b0.cpp",
+      "source_sha256": "53b1d9b3c4260f75165d0b821cf915f248b91da6337f0b0926bfb59f720d3f85",
+      "source_order": 2531,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5377872,
+      "method": "520f50",
+      "symbol": "?get@Leaf_520f50@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_520f50@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "9fa4da9d771393a4d92a8a630727867c6c0127040a7f957429dbbb68b470361a",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "00919984e0285e5f719bbda93b439f01c192cd21d652ad5e555ba0febc5e05c8",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_520f50",
+          "target": 8013172,
+          "addend": 0,
+          "resolved": 8013172
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_520f50",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2493902
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_520f50",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2493867
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AnimClass_ptr/00520f50.cpp",
+      "source_sha256": "14798c6dee57ed8fa8e43bcf937a84aa945b64e91afbf290201880db78c8555b",
+      "source_order": 2864,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5457504,
+      "method": "534660",
+      "symbol": "?get@Leaf_534660@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_534660@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "0f6920c3a00c1485f977293a9902b42483e976a38b9063a3b005ef30bf31482f",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "7e7bf4813fba8b449b4dd4c46487d06b83a98dfd0bed56b1deb9ce503a3e69f3",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_534660",
+          "target": 8016948,
+          "addend": 0,
+          "resolved": 8016948
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_534660",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2414270
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_534660",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2414235
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_LaserDrawClass_ptr/00534660.cpp",
+      "source_sha256": "4d74875b6b287745c372f9ee926e75fd4642b4c23ad40c8b67696683686ff23c",
+      "source_order": 3073,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5473104,
+      "method": "538350",
+      "symbol": "?get@Leaf_538350@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_538350@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "5f9ec674b1c5c577d7184ecf193faaa861bf9e9ed2299e79635ef2ee5b028ef2",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "39a93380c5223b99806e70e068a6a348ea47e4e83c201cdfb3a33be91b6c17e9",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_538350",
+          "target": 8017172,
+          "addend": 0,
+          "resolved": 8017172
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_538350",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2398670
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_538350",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2398635
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_LightSourceClass__PendingCellClass_ptr/00538350.cpp",
+      "source_sha256": "16b2596fa09000b3bbc635edb13105ca416b60648d5db7c942bfbf56f2440278",
+      "source_order": 3136,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5479296,
+      "method": "539b80",
+      "symbol": "?get@Leaf_539b80@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_539b80@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "1268ad6b08f8b6b2f6321141656b9edb23760a799e70241d69749c978b129840",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "0b40d027e27f5b5fbcb08b6a2b32e13f4ba8c42fee7f87f36f2c68a757fc5edb",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_539b80",
+          "target": 8017444,
+          "addend": 0,
+          "resolved": 8017444
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_539b80",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2392478
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_539b80",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2392443
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_LineTrail_ptr/00539b80.cpp",
+      "source_sha256": "144a8759b0949b0a94b5a0280b855d8fcff08a01d5cb7d8c9eec64a11dac859f",
+      "source_order": 3175,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5492096,
+      "method": "53cd80",
+      "symbol": "?get@Leaf_53cd80@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_53cd80@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "6e72a534df0f2b118cfb4ccf61f907c30cbbf86c0a96972a0229a97a02543c0f",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "dc00a74e22164f9b7631202589dfa5931081f373ba9c5cbd2be38fd028951a68",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_53cd80",
+          "target": 8018020,
+          "addend": 0,
+          "resolved": 8018020
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_53cd80",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2379678
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_53cd80",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2379643
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_FileEntryClass_ptr/0053cd80.cpp",
+      "source_sha256": "0739d0d253588ee1d0c9c2090b79000f6d27519c8f013711c3b8c505c1173941",
+      "source_order": 3215,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5685760,
+      "method": "56c200",
+      "symbol": "?get@Leaf_56c200@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_56c200@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "eb5f56594ab391123297fbc899e93db11197069a9471e2af47b0df47a493b7b5",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "64915c1ed0a0fca8ab34cf51aabc11d1ab455b2821863ec80dd117cfd9b49b81",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_56c200",
+          "target": 8018456,
+          "addend": 0,
+          "resolved": 8018456
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_56c200",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2186014
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_56c200",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2185979
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ZoneConnectionClass/0056c200.cpp",
+      "source_sha256": "75a7c801d575403378a3895bd19ad5de7d5765c787e52ad9b34ccfc2d22cf1f7",
+      "source_order": 3330,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6153744,
+      "method": "5de610",
+      "symbol": "?get@Leaf_5de610@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_5de610@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "a66544a448cb09728b8efe52a8a2020edc1faf7af5892a8da7d4a4a0c4386173",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "97384d1f18454d360071fd063c56367e54b3190e28adfe90f8ae66c6c5b3cd58",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_5de610",
+          "target": 8026852,
+          "addend": 0,
+          "resolved": 8026852
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_5de610",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1718030
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_5de610",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1717995
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_SpotLightClass_ptr/005de610.cpp",
+      "source_sha256": "112a059c241cb5cfe3b1c8c4c8f4899b147f03b5c1e6e2811012e8886e35708d",
+      "source_order": 4197,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6313456,
+      "method": "6055f0",
+      "symbol": "?get@Leaf_6055f0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6055f0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "8e9c69e5a4847810a8eacd0c7494bcfe249e0b062156bbba8cc1ebef52d4dddf",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "bd297f27ebe5106f05b40b46277c6cd038329b87b3e5fa35ab920f1a253457e1",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6055f0",
+          "target": 8027064,
+          "addend": 0,
+          "resolved": 8027064
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6055f0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1558318
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6055f0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1558283
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ColorScheme_ptr/006055f0.cpp",
+      "source_sha256": "78a7d4da8e3b47a0555d483022adae8945ec28bd7cbdb973855bbdd4f003075c",
+      "source_order": 4230,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6324736,
+      "method": "608200",
+      "symbol": "?get@Leaf_608200@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_608200@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "f67875374bf039081a47b87fb273f1b70450b6c8c45ba2873909f7a0e3d101c2",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "79e2a9cc6fa4ed186bda3754a14778cbbef0087e967d95f1e8b721598368a4af",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_608200",
+          "target": 8027212,
+          "addend": 0,
+          "resolved": 8027212
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_608200",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1547038
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_608200",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1547003
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ParasiteClass_ptr/00608200.cpp",
+      "source_sha256": "ac0ab45c425d8aee2a50246dd64a1982d2961b5b72911e73f7b50da2f2d7bfa2",
+      "source_order": 4263,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6514160,
+      "method": "6365f0",
+      "symbol": "?get@Leaf_6365f0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6365f0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "c8993dad70879321f6b0f632c10780919001270b89f63cd05f8d1bf97c6f2066",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "ea27077ff151dd3bf9713e31bc9353ccbb3cb092ff558aeb50f88fad3b81c941",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6365f0",
+          "target": 8030332,
+          "addend": 0,
+          "resolved": 8030332
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6365f0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1357614
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6365f0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1357579
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_RadBeam_ptr/006365f0.cpp",
+      "source_sha256": "54e93e862b90d55678f55a04b123284ffe2e08cccad2ff49f51dbc719bf5b604",
+      "source_order": 4535,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6540048,
+      "method": "63cb10",
+      "symbol": "?get@Leaf_63cb10@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_63cb10@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "4315e31dc4784779909e13dc8e4c8daeff71fb6223f601b0e0056faec899d44e",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "4f54f1a449dfd3ee2b361f23aff4d529f1271eca188fb05544628c53a22515de",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_63cb10",
+          "target": 8031884,
+          "addend": 0,
+          "resolved": 8031884
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_63cb10",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1331726
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_63cb10",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1331691
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_RadarEventClass_ptr/0063cb10.cpp",
+      "source_sha256": "f80a1d2d8f9e7d5d0b12fde5ec4bd50beed87a72316ce8c1f66c4d5c8b4e9895",
+      "source_order": 4644,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6554144,
+      "method": "640220",
+      "symbol": "?get@Leaf_640220@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_640220@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "1981d521eb29e7d36796e1a44314e2a1390b0a45227a7a486a2e7ea0c98887ae",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "58979da26222ba211e0f3475a85e6a60fdca4e5afcc1205b85269821273719d5",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_640220",
+          "target": 8032268,
+          "addend": 0,
+          "resolved": 8032268
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_640220",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1317630
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_640220",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1317595
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_OwnerTalkClass__ConnectionListStruct_ptr/00640220.cpp",
+      "source_sha256": "b9c6e00dba77d3f6ee9d7fd5b23c650ea967bdf60eb46b2b2a4becf4c9375b6f",
+      "source_order": 4685,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6765040,
+      "method": "6739f0",
+      "symbol": "?get@Leaf_6739f0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6739f0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "1b734d0ffc92d0856d320b1216ac915ef34e19bb9c26089add1b965c69f0398b",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "8b5875a42be43e39f6ccc8a3bd790ad3604dcf7ca7b79904e4943f068c011005",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6739f0",
+          "target": 8033828,
+          "addend": 0,
+          "resolved": 8033828
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6739f0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1106734
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6739f0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1106699
+        }
+      ],
+      "source": "src/recovered/classes/TypeList_DiskID/006739f0.cpp",
+      "source_sha256": "93823e25afef4c46383dfbcf650dcd5a1e678944e4f2ef78ff36f1d54a3fce5c",
+      "source_order": 4918,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6768528,
+      "method": "674790",
+      "symbol": "?get@Leaf_674790@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_674790@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "de62b253057ac7dcbb370a1a5f5a0a311a4240f574ea51e1c73014d80ce25228",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "81df49173727d68138eeb93d004411dd1a3d7b27dd1e497227b2fb724f748c31",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_674790",
+          "target": 8033828,
+          "addend": 0,
+          "resolved": 8033828
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_674790",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1103246
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_674790",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1103211
+        }
+      ],
+      "source": "src/recovered/classes/VectorClass_DiskID/00674790.cpp",
+      "source_sha256": "834be95ef2381048d4d6c4ef31d33e15a5915ff9979b8f0fb67933f13948602b",
+      "source_order": 4937,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6845312,
+      "method": "687380",
+      "symbol": "?get@Leaf_687380@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_687380@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "054233516109ac046ac054999f65abefd19fe7e561cf7b3298369f9cca9a99a9",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "3e71dade4f25c37ced682eec8e07a8d6ba60f6e69a69554c05d9442456ab277d",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_687380",
+          "target": 8041772,
+          "addend": 0,
+          "resolved": 8041772
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_687380",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1026462
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_687380",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1026427
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_UndoInfoStruct/00687380.cpp",
+      "source_sha256": "e8697722aea706e1d80b0347a8183b11d1791c000c3bac625cf7f92fdd3de9d7",
+      "source_order": 5041,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6915824,
+      "method": "6986f0",
+      "symbol": "?get@Leaf_6986f0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6986f0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "55f498ff0bb4e188fcceb4f34ef36d19ab6164bf84353dbb174f55b7b324c7a8",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "bcc325ac7042d0a0264b79d19b3f9c935f35fceceb880a29c7dee8b4daa8aa57",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6986f0",
+          "target": 8042944,
+          "addend": 0,
+          "resolved": 8042944
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6986f0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 955950
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6986f0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 955915
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_unsigned_long/006986f0.cpp",
+      "source_sha256": "1bd05451c63d7abea8ff3678a965210eaf4f91f6056e4ef2dc69b1f2fc0b473b",
+      "source_order": 5288,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6930816,
+      "method": "69c180",
+      "symbol": "?get@Leaf_69c180@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_69c180@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "fe9650902b88cb7bc9d711c02a22c03474839941dd17ea19f98703a1625c71b4",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "462c3414ad4bf5b11c7fbe62ae906f78dadf411cffcdcaf94e7de6f7b7568d35",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_69c180",
+          "target": 8044980,
+          "addend": 0,
+          "resolved": 8044980
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_69c180",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 940958
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_69c180",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 940923
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_SubTitle_ptr/0069c180.cpp",
+      "source_sha256": "c4d8fbff3cfcbf3416a9df84755c52dd10e85c28d93b57eb16ce6f82ebd11fb0",
+      "source_order": 5336,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7000240,
+      "method": "6ad0b0",
+      "symbol": "?get@Leaf_6ad0b0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6ad0b0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "079224c7bf322773a4a87e2f86a4fa3378252cac55bfdced2c534618e789d7a6",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "f1bcb663a18a750ac508cfd7a1a1fa6cc9337982f87e474d9aaebcd4bba8c215",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6ad0b0",
+          "target": 8045860,
+          "addend": 0,
+          "resolved": 8045860
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6ad0b0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 871534
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6ad0b0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 871499
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ShadowControlClass_ptr/006ad0b0.cpp",
+      "source_sha256": "c7d236d329cfea241df5251e9c5cc724a481046a40b2ca53e329fe2c5f29413e",
+      "source_order": 5440,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7026096,
+      "method": "6b35b0",
+      "symbol": "?get@Leaf_6b35b0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6b35b0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "f8b6e5724a16500f9c4077a0222e1701f263a6e81f66bf106b71c92b46acb10c",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "26aa0124e7d1a1b10d6cc8bc5bd4904267abbffb2dd194b1a817d6ae310a4b10",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6b35b0",
+          "target": 8046096,
+          "addend": 0,
+          "resolved": 8046096
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6b35b0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 845678
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6b35b0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 845643
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_TActionClass_ptr/006b35b0.cpp",
+      "source_sha256": "7cfd34faeaf448ee7cd72fb77fd0e516673a6581fe7500c5175b83ab82122f33",
+      "source_order": 5471,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7033344,
+      "method": "6b5200",
+      "symbol": "?get@Leaf_6b5200@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6b5200@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "a773d18d2714b096e20ea576c590c9eef219d080dd2f5cb32f5d42537d97a446",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "ff0f61a3a1c716644a1002385621b8bf04068a158eb911c8d164cc9ecd694860",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6b5200",
+          "target": 8046488,
+          "addend": 0,
+          "resolved": 8046488
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6b5200",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 838430
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6b5200",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 838395
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_TagTypeClass_ptr/006b5200.cpp",
+      "source_sha256": "7482aa4d239be0159b26c252745447ba2d6e6fb0a966bf43ad61c11b9efeb53a",
+      "source_order": 5520,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7220672,
+      "method": "6e2dc0",
+      "symbol": "?get@Leaf_6e2dc0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6e2dc0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "35ca728288ae1444af8f44ec8533f0461b0eec67203623940ced59fe48beac06",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "1cbdda6eb0406c0f014fbd07701428d96abe0532b1b71b517a4e35ab3f8f5218",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6e2dc0",
+          "target": 8049364,
+          "addend": 0,
+          "resolved": 8049364
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6e2dc0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 651102
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6e2dc0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 651067
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_TemporalClass_ptr/006e2dc0.cpp",
+      "source_sha256": "bc5ed4bb039e436fc185af611d8a761c74d2128a045cb148041d44a094479316",
+      "source_order": 5703,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7238096,
+      "method": "6e71d0",
+      "symbol": "?get@Leaf_6e71d0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6e71d0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "7ce84d5fa54d29ec4c068c42e67ad6e3dacab2184c60707766f60148ec0d3fa8",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "699d53eca155001c190b9bb008c70d2c4ec1ffb6bd83b326a28b0356c37e482c",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6e71d0",
+          "target": 8050356,
+          "addend": 0,
+          "resolved": 8050356
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6e71d0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 633678
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6e71d0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 633643
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_TEventClass_ptr/006e71d0.cpp",
+      "source_sha256": "e97a4e984d13aca1575ba5ecf545b68a85e09426c959935b90a2493bc4fd1719",
+      "source_order": 5764,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7243488,
+      "method": "6e86e0",
+      "symbol": "?get@Leaf_6e86e0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6e86e0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "b72f1239cf44f01e441384669176316c9fca08ae5a2cf033c801167210242d0e",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "641f311742c48bd1468c64ca4bf7ed5fc7e4e79d9aecef8b47d28905ac08d739",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6e86e0",
+          "target": 8006340,
+          "addend": 0,
+          "resolved": 8006340
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6e86e0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 628286
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6e86e0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 628251
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ThemeControl_ptr/006e86e0.cpp",
+      "source_sha256": "a856ee9828eda9d77863fe356ee4437de8594ecee5ba87a737779b3f24bb921e",
+      "source_order": 5784,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7253280,
+      "method": "6ead20",
+      "symbol": "?get@Leaf_6ead20@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_6ead20@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "7b80ed94f7baf0cb617de3007b946f1eeff67e9295b3e76277e1fed1d46ded34",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "c0212e70e31cd4998481bf590dbba372e99c999e431f01895bac997419f39fbb",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_6ead20",
+          "target": 8050788,
+          "addend": 0,
+          "resolved": 8050788
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_6ead20",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 618494
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_6ead20",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 618459
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_TiberiumClass_ptr/006ead20.cpp",
+      "source_sha256": "b8480280e0ca6f07b7a638a0884577f3845a66c46393efda8246eb14e98f1cf2",
+      "source_order": 5814,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7402432,
+      "method": "70f3c0",
+      "symbol": "?get@Leaf_70f3c0@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_70f3c0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "32a6ff0a07593558b8209b2388655e7f1dbe5482bcd185babb2b9573ed1778ee",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "8fe9350c9a037aae934707aa91dcc56e0221b1696e73e20314acd9923f36f5a1",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_70f3c0",
+          "target": 8054508,
+          "addend": 0,
+          "resolved": 8054508
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_70f3c0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 469342
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_70f3c0",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 469307
+        }
+      ],
+      "source": "src/recovered/classes/VectorClass_unsigned_char/0070f3c0.cpp",
+      "source_sha256": "3779f1c99706cf14d944cef2e9824d923a262122cc68b147a3e53c7b6e6632d7",
+      "source_order": 6096,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7433520,
+      "method": "716d30",
+      "symbol": "?get@Leaf_716d30@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_716d30@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "81c81a44310f1edfd15ad8eb8a3728355aa4a66ac6704354ca55afe58407b446",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "d5af31b3a98b690656e44f7d35fb60542c350542bca7f89107d239550402135c",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_716d30",
+          "target": 8055300,
+          "addend": 0,
+          "resolved": 8055300
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_716d30",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 438254
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_716d30",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 438219
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_VoxClass_ptr/00716d30.cpp",
+      "source_sha256": "894316f3464707f7d2afed8105d29c652001cc75b64701ed650e55237f56d755",
+      "source_order": 6182,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7781904,
+      "method": "76be10",
+      "symbol": "?get@Leaf_76be10@@QAEPAXI@Z",
+      "symbol_prefix": "?get@Leaf_76be10@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "52a05736a3de22edb9cf843d94b69aeaf622a1cdd561f3180e429868dfae1c70",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "1ad90d35999c29de01fb19ae21631c44a779924415d7088ace53fdeef185910e",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_vtable_76be10",
+          "target": 8059644,
+          "addend": 0,
+          "resolved": 8059644
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_release_buffer_76be10",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 89870
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "_release_object_76be10",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 89835
+        }
+      ],
+      "source": "src/recovered/classes/VectorClass_WinsockInterfaceClass__WinsockBufferType_ptr/0076be10.cpp",
+      "source_sha256": "7fb700c18c7b4171138aa0ae2385ef2c9c024493886d5396fc415dfb34df23dd",
+      "source_order": 6701,
+      "population": "population-12",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "population-37",
+  "population": {
+    "id": "population-37",
+    "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps_sha256": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
+    "historical_population_sha256": "839b7d743cc62e08ad2e0d1a1fc9ddf4aa7b0662021dd2703b36a16610ddc538",
+    "historical_acceptance_sha256": "6bca8facf106b369627a19f69f9c356526c13057be8e14fa195b7e3c1b3d4b47"
+  },
+  "regions": [
+    {
+      "entry": 4274032,
+      "method": "00413770",
+      "symbol": "?CopyDiv256PairAsSignedWords_00413770@Div256PairSource_00413770@@QBEPAUSignedWordPair@@PAU2@@Z",
+      "symbol_prefix": "?CopyDiv256PairAsSignedWords_00413770@Div256PairSource_00413770@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 54,
+      "body_sha256": "89b7b7c1ec3f1121af5a589d8ececf44acfe2daf10536c266f0dd451f66a86c8",
+      "padding_bytes": 10,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "aa9b8edd7aae0a5fad9c9f6cf1b2fbecd365f28dbf5ebe2d76d9bfa78614717d",
+      "relocations": [],
+      "source_sha256": "4e1dae3a74a8c029b3908d23a706ce3f94bbab7a922f880a7f3371b69a822643",
+      "source": "src/recovered/coordinates/CopyDiv256PairAsSignedWords_00413770.cpp",
+      "source_order": 6823,
+      "population": "population-37",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyDiv256PairAsSignedWords_00413770",
+      "source_quality_family": "integer-coordinate-conversion",
+      "shared_declaration_header": "src/shared/integer_coordinate_views.hpp"
+    },
+    {
+      "entry": 4988992,
+      "method": "004c2040",
+      "symbol": "?CopyDiv256PairAsSignedWords_004c2040@Div256PairSource_004c2040@@QBEPAUSignedWordPair@@PAU2@@Z",
+      "symbol_prefix": "?CopyDiv256PairAsSignedWords_004c2040@Div256PairSource_004c2040@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 55,
+      "body_sha256": "a9f915581df4bdd2b128e7b33161d09a90fee5d1197942a865b2b6821e4fe9f7",
+      "padding_bytes": 9,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "a0f11447d4bee047b989fc7bdfd0d493847c0094978509a0b8fef585bbe7e024",
+      "relocations": [],
+      "source_sha256": "05c824d87a16f1c994cb47e5bbe547e99c335285ca0797490967c01cbcc0a794",
+      "source": "src/recovered/coordinates/CopyDiv256PairAsSignedWords_004c2040.cpp",
+      "source_order": 6824,
+      "population": "population-37",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyDiv256PairAsSignedWords_004c2040",
+      "source_quality_family": "integer-coordinate-conversion",
+      "shared_declaration_header": "src/shared/integer_coordinate_views.hpp"
+    }
+  ]
+}

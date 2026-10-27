@@ -435,7 +435,8 @@ def remove_intermediates(destination, groups):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--config',type=Path,default=REPOSITORY/'private/original-target.local.json')
-    parser.add_argument('--manifest',type=Path,default=REPOSITORY/'manifests/original_target.json')
+    parser.add_argument('--manifest',type=Path,default=catalog_io.locate(REPOSITORY),
+                        help='catalog directory (or a legacy .json file)')
     parser.add_argument('--output',type=Path,default=None)
     parser.add_argument('--verify-inputs',action='store_true')
     parser.add_argument('--keep-intermediates',action='store_true',
@@ -447,7 +448,7 @@ def main():
     def phase(name):
         # Elapsed time per build phase, on stderr (the receipt keeps the total).
         now=time.monotonic(); print('phase %s: %.1fs'%(name,now-marks[-1]),file=sys.stderr,flush=True); marks.append(now)
-    config=json.loads(args.config.read_text());catalog=catalog_io.loads(args.manifest.read_bytes())
+    config=json.loads(args.config.read_text());catalog_blobs={};catalog=catalog_io.load(args.manifest,blobs=catalog_blobs)
     audit=CanonicalAudit(REPOSITORY,catalog,config)
     tools=check_toolchain(config,json.loads((REPOSITORY/'manifests/toolchain.json').read_text()))
     phase('load and audit setup')
@@ -459,9 +460,8 @@ def main():
     require('"' not in str(destination) and '\n' not in str(destination),'Unsupported assembler path')
     destination.mkdir(parents=True,exist_ok=False)
     # Pin authored tools and source catalog at build start. Verify again at end.
-    inputs=[args.manifest,REPOSITORY/'manifests/toolchain.json',
+    inputs=[REPOSITORY/'manifests/toolchain.json',
             *[Path(__file__).with_name(name) for name in ['build.py','remote_compile.py','canonical.py','catalog_io.py','source_paths.py','verify_manifest.py','coff.py','compiler_output.py']]]
-    fingerprints={str(p.relative_to(REPOSITORY)):sha(p.read_bytes()) for p in inputs}
     for population in catalog['populations']:
         reference = population.get('compiler_output_policy')
         if reference:
@@ -469,6 +469,9 @@ def main():
             policy = audit.document(policy_path, reference['sha256'])
             inputs.extend([policy_path, REPOSITORY/policy['original_identity']['readiness_path']])
     fingerprints={str(p.relative_to(REPOSITORY)):sha(p.read_bytes()) for p in inputs}
+    # The catalog is pinned by its digest (a sharded index pins every shard).
+    catalog_key=str(args.manifest.resolve().relative_to(REPOSITORY))
+    fingerprints[catalog_key]=catalog_io.digest(args.manifest,catalog_blobs)
     compiled=compile_sources(config,catalog,destination); phase('compile')
     manifest=audit.verify_fresh(destination,compiled,jobs=args.verify_jobs); phase('verify fresh objects')
     integrate(config,audit,manifest,destination); phase('integrate and link')
@@ -477,6 +480,7 @@ def main():
     # 1. Authored tools, toolchain manifest, catalog and policies: the code and
     #    plan that ran are the ones fingerprinted at build start.
     for p in inputs: require(sha(p.read_bytes())==fingerprints[str(p.relative_to(REPOSITORY))],'Build tool/catalog changed during run')
+    require(catalog_io.digest(args.manifest)==fingerprints[catalog_key],'Build tool/catalog changed during run')
     # 2. The tree as it is now still matches the catalog (every source and
     #    header hash, no uncatalogued file, includes): source drift during the
     #    build cannot hide behind the snapshots the audit read.
@@ -490,7 +494,7 @@ def main():
     resolved={p: p.resolve() for p in [*audit.blobs, *getattr(audit,'blob_digests',{})]}
     audit.verify_inputs_unchanged({p: current[r] for p, r in resolved.items() if r in current})
     phase('final input checks')
-    report.update(canonical_manifest_sha256=sha(args.manifest.read_bytes()),tracked_sources=len(catalog['regions']),
+    report.update(canonical_manifest_sha256=fingerprints[catalog_key],tracked_sources=len(catalog['regions']),
                   tracked_headers=catalog.get('headers', []),
                   discarded_output_receipt_sha256=sha((destination/'discarded-output-receipt.json').read_bytes()),
                   body_bytes=manifest['body_bytes'],padding_bytes=manifest['frozen_padding_bytes'],

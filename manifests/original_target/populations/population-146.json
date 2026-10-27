@@ -1,0 +1,2739 @@
+{
+  "id": "population-146",
+  "population": {
+    "id": "population-146",
+    "inventory_sha256": "af6a0c674b96296c8e584bebfc295c190a69afbff2b13d00a3cd23483a9c94df",
+    "gaps_sha256": "6bd1112e27321f498ac64226c5804b5721026f3a3ec93d2f9444af2c90db6ec1",
+    "historical_population_sha256": "c403e337685ad487adfe884dce3173c744ed833cb67c44ac9d1e61a99b950c6d",
+    "historical_acceptance_sha256": "27284a0aef8e018299ae3ca641d3fc1e06d165413ab086cac7c18645d221c696"
+  },
+  "references": {
+    "?CDControl@@3VCDControlClass@@A": 8718384,
+    "_atexit": 7874954,
+    "_$E2": 4647520,
+    "__imp__CloseHandle@4": 7971284,
+    "__imp__CloseHandle": 7971284,
+    "__imp__GetLastError@0": 7971316,
+    "__imp__GetLastError": 7971316,
+    "__imp__DeleteFileA@4": 7971112,
+    "__imp__DeleteFileA": 7971112,
+    "__imp__FileTimeToDosDateTime@12": 7971096,
+    "__imp__FileTimeToDosDateTime": 7971096,
+    "__imp__GetFileInformationByHandle@8": 7971100,
+    "__imp__GetFileInformationByHandle": 7971100,
+    "__imp__GetFileSize@8": 7971092,
+    "__imp__GetFileSize": 7971092,
+    "__imp__CreateFileA@28": 7971248,
+    "__imp__CreateFileA": 7971248,
+    "__imp__ReadFile@20": 7971088,
+    "__imp__ReadFile": 7971088,
+    "__imp__SetFileTime@16": 7971104,
+    "__imp__SetFileTime": 7971104,
+    "__imp__DosDateTimeToFileTime@12": 7971232,
+    "__imp__DosDateTimeToFileTime": 7971232,
+    "__imp__WriteFile@20": 7971116,
+    "__imp__WriteFile": 7971116,
+    "__imp__SetFilePointer@16": 7971252,
+    "__imp__SetFilePointer": 7971252,
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "_memmove": 7877264,
+    "?x@?1???A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z@4PAU23@A": 11712048,
+    "?x@?1???A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z@4PAU23@A": 11712044,
+    "?Debug_Printf@@YAXPBDZZ": 4221168,
+    "_sprintf": 7872756,
+    "__imp__GetClientRect@8": 7972024,
+    "__imp__ClientToScreen@8": 7972012,
+    "__imp__WaitForSingleObject@8": 7971280,
+    "__imp__ReleaseMutex@4": 7971216,
+    "__imp__ReleaseMutex": 7971216,
+    "__imp__WaitForSingleObject": 7971280,
+    "__imp__Sleep@4": 7971300,
+    "__imp__Sleep": 7971300,
+    "__imp__CreateThread@24": 7971308,
+    "__imp__CreateThread": 7971308,
+    "__imp__SetThreadPriority@8": 7971312,
+    "__imp__SetThreadPriority": 7971312,
+    "__imp__FormatMessageA@28": 7971320,
+    "__imp__FormatMessageA": 7971320,
+    "__imp__CreateMutexA@12": 7971384,
+    "__imp__CreateMutexA": 7971384,
+    "__imp__GetCursorPos@4": 7971752,
+    "__imp__GetCursorPos": 7971752,
+    "__imp__ShowCursor@4": 7971788,
+    "__imp__ShowCursor": 7971788,
+    "__imp__ClientToScreen": 7972012,
+    "__imp__GetClientRect": 7972024,
+    "__imp__GetDlgItem@8": 7971996,
+    "__imp__SendMessageA@16": 7972000,
+    "??_7CD@@6B@": 7985256,
+    "__imp__SetWindowLongA@12": 7971976,
+    "__imp__SetWindowLongA": 7971976,
+    "__imp__GetWindowLongA@8": 7971980,
+    "__imp__GetWindowLongA": 7971980,
+    "__imp__GetDlgItem": 7971996,
+    "__imp__SendMessageA": 7972000,
+    "?Open_VWin32@CDControlClass@@QAGPAXXZ": 4651536,
+    "__imp__DeviceIoControl@32": 7971244,
+    "__imp__DeviceIoControl": 7971244,
+    "?Unlock_Media@CDControlClass@@QAE_NPAXD@Z": 4650832,
+    "?Lock_Media@CDControlClass@@QAE_NPAXD@Z": 4651200,
+    "?Eject_Media@CDControlClass@@QAE_NPAXD@Z": 4651392,
+    "?Close_VWin32@CDControlClass@@QAG_NPAX@Z": 4651568,
+    "?Lock_Logical_Volume@CDControlClass@@QAG_NPAXDDF@Z": 4651600,
+    "?Unlock_Logical_Volume@CDControlClass@@QAG_NPAXD@Z": 4652160,
+    "__imp__GetDriveTypeA@4": 7971404,
+    "__imp__GetDriveTypeA": 7971404,
+    "??_C@_04NCCD@true?$AA@": 8201432,
+    "??_C@_04POLC@?$CFc?3?2?$AA@": 8201116,
+    "??_C@_05NAGO@false?$AA@": 8201424,
+    "??_C@_07NGPH@?2?2?4?2?$CFc?3?$AA@": 8201044,
+    "??_C@_0BC@HCID@Volume?5locked?5OK?6?$AA@": 8201548,
+    "??_C@_0BK@OOHG@LOCK?5return?5eax?5error?5?$CFd?6?$AA@": 8201972,
+    "??_C@_0BL@ODLI@Unable?5to?5lock?5volume?5?$CFc?3?6?$AA@": 8201336,
+    "??_C@_0BN@PHBM@CD?5tray?5ejection?5enabled?5OK?6?$AA@": 8201752,
+    "??_C@_0BO@GFCK@CD?5tray?5ejection?5disabled?5OK?6?$AA@": 8201440,
+    "??_C@_0CB@EEFN@About?5to?5allow?5CD?5tray?5ejection?6@": 8201824,
+    "??_C@_0CC@JIOF@CDControlClass?3?3Lock_CD_Drive_95@": 8201664,
+    "??_C@_0CC@OBIH@Allowing?5ejection?5on?5CD?5drive?5?$CFc@": 8201860,
+    "??_C@_0CD@FBEC@About?5to?5prevent?5CD?5tray?5ejectio@": 8201512,
+    "??_C@_0CE@HDOM@CDControlClass?3?3Unlock_CD_Drive_@": 8201896,
+    "??_C@_0CE@MJIJ@Preventing?5ejection?5on?5CD?5drive?5@": 8201628,
+    "??_C@_0CF@PPJC@Could?5not?5lock?5CD?5tray?5in?5drive?5@": 8201472,
+    "??_C@_0CG@DPDE@Could?5not?5eject?5media?5from?5drive@": 8201180,
+    "??_C@_0CH@DMNE@Could?5not?5unlock?5media?5from?5driv@": 8201296,
+    "??_C@_0CH@FJCD@Could?5not?5unlock?5CD?5tray?5in?5driv@": 8201784,
+    "??_C@_0CH@MJPG@Unable?5to?5open?5drive?5?$CFc?3?5for?5eje@": 8201004,
+    "??_C@_0CN@JINE@LOCK?5return?5eax?5error?5?8Lock?5coun@": 8202000,
+    "??_C@_0CO@JKHI@LOCK?5return?5eax?5error?5?8Volume?5no@": 8202048,
+    "??_C@_0CP@FBAI@CDControlClass?3?3Lock_CD_Drive_95@": 8201376,
+    "??_C@_0DA@CJFK@LOCK?5return?5eax?5error?5?8Function?5@": 8202148,
+    "??_C@_0DB@OLOL@CDControlClass?3?3Unlock_CD_Drive_@": 8201700,
+    "??_C@_0DE@DPHM@LOCK?5return?5eax?5error?5?8Volume?5no@": 8202096,
+    "??_C@_0DG@DBKA@DeviceIoControl?5failed?5to?5lock?5v@": 8200948,
+    "??_C@_0DG@EMCF@DeviceIoControl?5failed?5to?5eject?5@": 8200768,
+    "??_C@_0DI@JELN@DeviceIoControl?5failed?5to?5unlock@": 8201124,
+    "??_C@_0DJ@FFJH@About?5to?5lock?5logical?5volume?5to?5@": 8201568,
+    "??_C@_0DK@IIHK@DeviceIoControl?5failed?5to?5dismou@": 8200888,
+    "??_C@_0DO@BGPA@Attempt?5to?5open?5non?9removable?5vo@": 8201052,
+    "??_C@_0EA@DMGK@DeviceIoControl?5failed?5to?5preven@": 8200824,
+    "??_C@_0EK@PBAE@DeviceIoControl?5failed?5to?5perfor@": 8201220,
+    "??_C@_0L@GCFB@?2?2?4?2vwin32?$AA@": 8201364,
+    "?Eject_CD_Win95@CDControlClass@@QAEXD@Z": 4649952,
+    "?unknown_flag_839c4c@@3_NA": 8625228,
+    "_$E4": 4647488,
+    "??0CDControlClass@@QAE@XZ": 4647536,
+    "??1CDControlClass@@QAE@XZ": 4647568,
+    "?Force_CD_Eject@CDControlClass@@": 4647584,
+    "?Open_Removable_Volume@CDControlClass@@": 4648032,
+    "?Close_Removable_Volume@CDControlClass@@": 4648208,
+    "?Lock_Volume@CDControlClass@@": 4648240,
+    "?Unlock_Volume@CDControlClass@@": 4648352,
+    "?Dismount_Volume@CDControlClass@@": 4648464,
+    "?Prevent_Removal_Of_Volume@CDControlClass@@": 4648544,
+    "?Auto_Eject_Volume@CDControlClass@@": 4648624,
+    "?Eject_CD@CDControlClass@@": 4648704,
+    "?Lock_CD_Tray_NT@CDControlClass@@": 4649152,
+    "?Unlock_CD_Tray_NT@CDControlClass@@": 4649552,
+    "?Eject_CD_Win95@CDControlClass@@": 4649952,
+    "?Lock_CD_Drive_95@CDControlClass@@": 4650256,
+    "?Unlock_CD_Drive_95@CDControlClass@@": 4650544,
+    "?Lock_Media@CDControlClass@@": 4651200,
+    "?Eject_Media@CDControlClass@@": 4651392,
+    "?Open_VWin32@CDControlClass@@": 4651536,
+    "?Close_VWin32@CDControlClass@@": 4651568,
+    "?Lock_Logical_Volume@CDControlClass@@": 4651600,
+    "?Unlock_Logical_Volume@CDControlClass@@": 4652160,
+    "??_C@_08DAIP@MAIN?4MIX?$AA@": 8200700,
+    "??_C@_09MIH@MULTI?4MIX?$AA@": 8200576,
+    "??_C@_09OKCB@THEME?4MIX?$AA@": 8200532,
+    "??_C@_0BD@MGDA@?5?5?5?5?5Releasing?5?$CFs?6?$AA@": 8200712,
+    "??_C@_0BF@OLAF@?5?5?5?5?5Initialized?5?$CFs?6?$AA@": 8200676,
+    "??_C@_0BG@HMGE@?5?5?5?5?5Initializing?5?$CFs?6?$AA@": 8200636,
+    "??_C@_0BN@MGOF@?5?5?5?5?5Initializing?5Multi?4Mix?6?$AA@": 8200588,
+    "??_C@_0BO@IFKA@?5?5?5?5?5Initializing?5Themes?4MIX?6?$AA@": 8200544,
+    "??_C@_0CB@GBBB@?$CK?$CK?$CK?$CK?$CK?5Swapping?5to?5disk?5?$CFd?5?$CK?$CK?$CK?$CK?$CK?6@": 8200732,
+    "??_C@_0N@GFJE@MAPS?$CF02d?4MIX?$AA@": 8200660,
+    "??_C@_0O@HDKF@?5?5?5?5?5FAILED?$CB?6?$AA@": 8200620,
+    "??_C@_0P@CLBG@MOVIES?$CF02d?4MIX?$AA@": 8200516,
+    "??_C@_06GAEG@?$DP?3?2?$CK?4?$CK?$AA@": 8202200,
+    "??_C@_01PCFE@?2?$AA@": 8177988,
+    "??_C@_02JBPM@?$DP?3?$AA@": 8202208,
+    "??_C@_02MECO@?$CFd?$AA@": 8186300,
+    "??_C@_03IOFJ@?$CFXh?$AA@": 8238220,
+    "??_C@_03MLNF@$?$CFX?$AA@": 8238224,
+    "??_C@_03FLAL@?$CFxh?$AA@": 8238228,
+    "??_C@_03JJDF@$?$CFx?$AA@": 8238232,
+    "??_C@_02PIMC@?$AN?6?$AA@": 8223980,
+    "??_C@_01FAJB@?$DL?$AA@": 8202212,
+    "??_C@_01FIMD@?$FN?$AA@": 8238148,
+    "??_C@_01KHLB@?$FL?$AA@": 8238152,
+    "??_C@_01KPOD@?$DN?$AA@": 8188860,
+    "??_C@_0M@IKDG@?$CFd?0?$CFd?0?$CFd?0?$CFd?$AA@": 8238236,
+    "??_C@_02MBFK@?$CFX?$AA@": 8238256,
+    "??_C@_02JBAA@?$CFf?$AA@": 8238264,
+    "??_C@_02ELCB@no?$AA@": 8238284,
+    "??_C@_03LGKI@yes?$AA@": 8238288,
+    "??_C@_05BBIB@?$CFd?0?$CFd?$AA@": 8199952,
+    "??_C@_08POMI@?$CFd?0?$CFd?0?$CFd?$AA@": 8188768,
+    "??_C@_08LMGJ@?$CFf?0?$CFf?0?$CFf?$AA@": 8238292,
+    "??_C@_0P@INAO@?$CF02d?3?$CF02d?3?$CF02d?$AA@": 8212216,
+    "??_C@_02JDLK@?$CFx?$AA@": 8238260,
+    "??_C@_00A@?$AA@": 8238248,
+    "??_C@_04HJCD@?4BIK?$AA@": 8232308,
+    "??_C@_04LMEE@?4bik?$AA@": 8270492,
+    "??_C@_04MOHI@?4VQA?$AA@": 8232316,
+    "??_C@_0BH@CNON@Play_Movie?$CI?$CJ?5as?5Bink?$CB?6?$AA@": 8270468,
+    "??_C@_01KMAE@?0?$AA@": 8186304,
+    "??_C@_13JKDK@?$AA?0?$AA?$AA@": 8281188,
+    "??_C@_0BF@OABI@MSEngine?5?9?5Sleeping?6?$AA@": 8281400,
+    "??_C@_0BP@KHHC@MSEngine?5?9?5Pausing?5animations?6?$AA@": 8281424,
+    "??_C@_0CA@GOJB@MSEngine?5?9?5Resuming?5animations?6?$AA@": 8281368,
+    "??_C@_0CC@ELIN@MSFont?3?5AllocLoaded?5FULLFNT3?4SHP@": 8281512,
+    "??_C@_0N@HEOG@FULLFNT3?4SHP?$AA@": 8281548,
+    "??_C@_0N@HGLH@FULLFNT3?4PAL?$AA@": 8281480,
+    "??_C@_0N@IKPJ@SIDEFNT3?4PAL?$AA@": 8281496,
+    "??_C@_0BB@KEPO@Capture_Mouse?$CI?$CJ?6?$AA@": 8393672,
+    "??_C@_0BB@NBHB@Release_Mouse?$CI?$CJ?6?$AA@": 8393692,
+    "??_C@_0BC@JOPK@D?3?2Ra2?2wwmous?4cpp?$AA@": 8393560,
+    "??_C@_0CC@EGPP@Calc_Confining_Rect?$CI?$CFd?0?$CFd?0?$CFd?0?$CFd?$CJ@": 8393636,
+    "??_C@_0DI@MILH@Unable?5to?5change?5the?5priority?5of@": 8393440,
+    "??_C@_0EA@PAMP@Warning?3?5Probable?5deadlock?5occur@": 8393496,
+    "?Error@RawFileClass@@UAEXHHPBD@Z": 6523696,
+    "?Error@?$Int@$0EA@@@2HA": 10753984,
+    "?Error@CCFileClass@@UAEXHHPBD@Z": 4624384,
+    "?Lock@XSurface@@UAEPAXHH@Z": 4264672,
+    "?Lock@BSurface@@UAEPAXHH@Z": 4264816,
+    "?Lock@XSurface@@UAEPAXUPoint2D@@@Z": 4264672,
+    "?Lock@BSurface@@UAEPAXUPoint2D@@@Z": 4264816,
+    "?Lock@DSurface@@UAEPAXUPoint2D@@@Z": 4893824
+  },
+  "regions": [
+    {
+      "entry": 4647488,
+      "method": "0046ea40",
+      "symbol": "_$E4",
+      "symbol_prefix": "_$E4",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 30,
+      "body_sha256": "3f8af1a7023df77ba0c15ed4ef8c2b717a5e30196b5b944eaf2afc90800d6ed9",
+      "padding_bytes": 2,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "1e16023d367f6445a3afb2becd9900e1470b967157abdb592da3799cf68f9a98",
+      "relocations": [
+        {
+          "offset": 9,
+          "kind": 6,
+          "symbol": "?CDControl@@3VCDControlClass@@A",
+          "target": 8718384,
+          "addend": 0,
+          "resolved": 8718384
+        },
+        {
+          "offset": 16,
+          "kind": 6,
+          "symbol": "_$E2",
+          "target": 4647520,
+          "addend": 0,
+          "resolved": 4647520
+        },
+        {
+          "offset": 21,
+          "kind": 20,
+          "symbol": "_atexit",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3227441
+        }
+      ],
+      "source_sha256": "d72c42cf9e87870926999c88c7178da4c240f7ab0c86b73d1029286b70216de7",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_globals_init_0046ea40.cpp",
+      "population": "population-146",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_globals_init_0046ea40",
+      "source_order": 11583
+    },
+    {
+      "entry": 4647520,
+      "method": "0046ea60",
+      "symbol": "_$E2",
+      "symbol_prefix": "_$E2",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 1,
+      "body_sha256": "ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e",
+      "padding_bytes": 15,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "499f1f307c1cb989f968a6b7fcaec591e1828877223d0b0e7e8e8b76cde8c9ca",
+      "relocations": [],
+      "source_sha256": "9f1239e8783a6164ce6eff66354de89c1771a7bc6757537c11ae1b94e1e16b8e",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_atexit_destructor_0046ea60.cpp",
+      "population": "population-146",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_atexit_destructor_0046ea60",
+      "source_order": 11584
+    },
+    {
+      "entry": 4647536,
+      "method": "0046ea70",
+      "symbol": "??0CDControlClass@@QAE@XZ",
+      "symbol_prefix": "??0CDControlClass@@QAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 18,
+      "body_sha256": "3d1cf3c705c89ca0a3e300067539d74177f27b864f3c4dee46d47ac26e1caad2",
+      "padding_bytes": 14,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "3df941d2ddd4e09d3ed180b694b47e1312a61b9215af78b4967f9b74aba3e7c6",
+      "relocations": [],
+      "source_sha256": "bb550b1ceb28d2ca26f3922da55abc64125f1d53ca366e96844c752a151bd533",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_CDControlClass_0046ea70.cpp",
+      "population": "population-146",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_CDControlClass_0046ea70",
+      "source_order": 11585
+    },
+    {
+      "entry": 4647568,
+      "method": "0046ea90",
+      "symbol": "??1CDControlClass@@QAE@XZ",
+      "symbol_prefix": "??1CDControlClass@@QAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 1,
+      "body_sha256": "ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e",
+      "padding_bytes": 15,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "499f1f307c1cb989f968a6b7fcaec591e1828877223d0b0e7e8e8b76cde8c9ca",
+      "relocations": [],
+      "source_sha256": "03ef210dbd6a6d2e3c0bc53126727b83f431bd52ffe53b8fa243bef2be3635d3",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_destructor_0046ea90.cpp",
+      "population": "population-146",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_destructor_0046ea90",
+      "source_order": 11586
+    },
+    {
+      "entry": 4651536,
+      "method": "0046fa10",
+      "symbol": "?Open_VWin32@CDControlClass@@QAGPAXXZ",
+      "symbol_prefix": "?Open_VWin32@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "a65df688793d66cb3939b46a7e0f1670575e7ed18b023a8887e682fbb50b07e2",
+      "padding_bytes": 3,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "e3e31b2d9c09b0e809c04b33c4571710f01fec923162b75f226bf6356a709738",
+      "relocations": [
+        {
+          "offset": 16,
+          "kind": 6,
+          "symbol": "??_C@_0L@GCFB@?2?2?4?2vwin32?$AA@",
+          "target": 8201364,
+          "addend": 0,
+          "resolved": 8201364
+        },
+        {
+          "offset": 22,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        }
+      ],
+      "source_sha256": "5973aa4f4a86fc636cb4e4024fb44103a85566e33e6ac07fe4b170455634c1ab",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Open_VWin32_0046fa10.cpp",
+      "population": "population-146",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Open_VWin32_0046fa10",
+      "source_order": 11603
+    },
+    {
+      "entry": 4651200,
+      "method": "0046f8c0",
+      "symbol": "?Lock_Media@CDControlClass@@QAE_NPAXD@Z",
+      "symbol_prefix": "?Lock_Media@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 177,
+      "body_sha256": "5ff2f957e69f791c5ac5edfae61039e6d9ec591fcfac16bff9b31e87845ffd59",
+      "padding_bytes": 15,
+      "full_extent_bytes": 192,
+      "full_extent_sha256": "b8c05af20d1af6a6c10dcf40324b6dc9d9156460b818fbf2d3d01f3996fe125e",
+      "relocations": [
+        {
+          "offset": 50,
+          "kind": 20,
+          "symbol": "?Unlock_Media@CDControlClass@@QAE_NPAXD@Z",
+          "target": 4650832,
+          "addend": 0,
+          "resolved": 4294966874
+        },
+        {
+          "offset": 116,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 136,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 142,
+          "kind": 6,
+          "symbol": "??_C@_0EK@PBAE@DeviceIoControl?5failed?5to?5perfor@",
+          "target": 8201220,
+          "addend": 0,
+          "resolved": 8201220
+        },
+        {
+          "offset": 147,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537113
+        }
+      ],
+      "source_sha256": "fc2c6ee68a3ad223e8afe2f1e07bde4a64e07038244fda68fcc826000bd6c061",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Lock_Media_0046f8c0.cpp",
+      "population": "population-146",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Lock_Media_0046f8c0",
+      "source_order": 11601
+    },
+    {
+      "entry": 4651392,
+      "method": "0046f980",
+      "symbol": "?Eject_Media@CDControlClass@@QAE_NPAXD@Z",
+      "symbol_prefix": "?Eject_Media@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 131,
+      "body_sha256": "f3fe28eed8cfa7fc51ff3036a0384047a2cf03a71fce2de8594a46f359f54421",
+      "padding_bytes": 13,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "8a70e759ad5a587fc97f1b871f90e1e551f7e387fc14fb6bb11dddfb426d0a3a",
+      "relocations": [
+        {
+          "offset": 72,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 90,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 96,
+          "kind": 6,
+          "symbol": "??_C@_0EK@PBAE@DeviceIoControl?5failed?5to?5perfor@",
+          "target": 8201220,
+          "addend": 0,
+          "resolved": 8201220
+        },
+        {
+          "offset": 101,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294536967
+        }
+      ],
+      "source_sha256": "7c543dd340d3013884c6f9e76a42e66805abf3b7858cc17c95e9d8b38754f6cd",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Eject_Media_0046f980.cpp",
+      "population": "population-146",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Eject_Media_0046f980",
+      "source_order": 11602
+    },
+    {
+      "entry": 4651568,
+      "method": "0046fa30",
+      "symbol": "?Close_VWin32@CDControlClass@@QAG_NPAX@Z",
+      "symbol_prefix": "?Close_VWin32@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 19,
+      "body_sha256": "e3a51166d103bd9a4f7b3009528a38870fe0bdbbabb52d414695d1c781bf69f8",
+      "padding_bytes": 13,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "1c5d95e455afd06c67e1cafdff128f9d9e027480b0aa228fbe05c5a5c4c00a4a",
+      "relocations": [
+        {
+          "offset": 7,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        }
+      ],
+      "source_sha256": "3b9538735903353f7f6fa2575c1c5df59903436ecb3c721532aedbace73c4d75",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Close_VWin32_0046fa30.cpp",
+      "population": "population-146",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Close_VWin32_0046fa30",
+      "source_order": 11604
+    },
+    {
+      "entry": 4651600,
+      "method": "0046fa50",
+      "symbol": "?Lock_Logical_Volume@CDControlClass@@QAG_NPAXDDF@Z",
+      "symbol_prefix": "?Lock_Logical_Volume@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 548,
+      "body_sha256": "8cc01a74856f19b8a658d3fc7cf2f6dd1e881a613cb5575faf58b210b39f6af5",
+      "padding_bytes": 12,
+      "full_extent_bytes": 560,
+      "full_extent_sha256": "1d863e7f72711be7144d78f4578644b612629ae0f5953c908a0ae4cf41728fe9",
+      "relocations": [
+        {
+          "offset": 34,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 150,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 156,
+          "kind": 6,
+          "symbol": "??_C@_0EK@PBAE@DeviceIoControl?5failed?5to?5perfor@",
+          "target": 8201220,
+          "addend": 0,
+          "resolved": 8201220
+        },
+        {
+          "offset": 161,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294536699
+        },
+        {
+          "offset": 213,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4651968,
+          "addend": 0,
+          "resolved": 4651968
+        },
+        {
+          "offset": 220,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4651948,
+          "addend": 0,
+          "resolved": 4651948
+        },
+        {
+          "offset": 225,
+          "kind": 6,
+          "symbol": "??_C@_0DA@CJFK@LOCK?5return?5eax?5error?5?8Function?5@",
+          "target": 8202148,
+          "addend": 0,
+          "resolved": 8202148
+        },
+        {
+          "offset": 230,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294536630
+        },
+        {
+          "offset": 240,
+          "kind": 6,
+          "symbol": "??_C@_0DE@DPHM@LOCK?5return?5eax?5error?5?8Volume?5no@",
+          "target": 8202096,
+          "addend": 0,
+          "resolved": 8202096
+        },
+        {
+          "offset": 245,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294536615
+        },
+        {
+          "offset": 255,
+          "kind": 6,
+          "symbol": "??_C@_0CO@JKHI@LOCK?5return?5eax?5error?5?8Volume?5no@",
+          "target": 8202048,
+          "addend": 0,
+          "resolved": 8202048
+        },
+        {
+          "offset": 260,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294536600
+        },
+        {
+          "offset": 270,
+          "kind": 6,
+          "symbol": "??_C@_0CN@JINE@LOCK?5return?5eax?5error?5?8Lock?5coun@",
+          "target": 8202000,
+          "addend": 0,
+          "resolved": 8202000
+        },
+        {
+          "offset": 275,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294536585
+        },
+        {
+          "offset": 286,
+          "kind": 6,
+          "symbol": "??_C@_0BK@OOHG@LOCK?5return?5eax?5error?5?$CFd?6?$AA@",
+          "target": 8201972,
+          "addend": 0,
+          "resolved": 8201972
+        },
+        {
+          "offset": 291,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294536569
+        },
+        {
+          "offset": 305,
+          "kind": 6,
+          "symbol": "__imp__Sleep@4",
+          "target": 7971300,
+          "addend": 0,
+          "resolved": 7971300
+        },
+        {
+          "offset": 348,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4651824,
+          "addend": 0,
+          "resolved": 4651824
+        },
+        {
+          "offset": 352,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4651839,
+          "addend": 0,
+          "resolved": 4651839
+        },
+        {
+          "offset": 356,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4651854,
+          "addend": 0,
+          "resolved": 4651854
+        },
+        {
+          "offset": 360,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4651869,
+          "addend": 0,
+          "resolved": 4651869
+        },
+        {
+          "offset": 364,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4651884,
+          "addend": 0,
+          "resolved": 4651884
+        }
+      ],
+      "source_sha256": "d9da0d4ed20776b126af35a135aa8f18922d65c7f8199d08e16ec1d201a29228",
+      "switch_data_bytes": 200,
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Lock_Logical_Volume_0046fa50.cpp",
+      "population": "population-146",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Lock_Logical_Volume_0046fa50",
+      "source_order": 11605
+    },
+    {
+      "entry": 4652160,
+      "method": "0046fc80",
+      "symbol": "?Unlock_Logical_Volume@CDControlClass@@QAG_NPAXD@Z",
+      "symbol_prefix": "?Unlock_Logical_Volume@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 161,
+      "body_sha256": "dfa4f13cfa204f27641064eea6fc117a52e39490dd9b3eb5e111db3ccb0d3d1b",
+      "padding_bytes": 15,
+      "full_extent_bytes": 176,
+      "full_extent_sha256": "22f58075bd751a7854e51b3b26c12a0654ccd4694aab3227c249e092e3b7de5c",
+      "relocations": [
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 113,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 119,
+          "kind": 6,
+          "symbol": "??_C@_0EK@PBAE@DeviceIoControl?5failed?5to?5perfor@",
+          "target": 8201220,
+          "addend": 0,
+          "resolved": 8201220
+        },
+        {
+          "offset": 124,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294536176
+        }
+      ],
+      "source_sha256": "fd0739c2e11a5e168c09e7921998daa4b0a4043cc940315f77141f66289319dd",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Unlock_Logical_Volume_0046fc80.cpp",
+      "population": "population-146",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Unlock_Logical_Volume_0046fc80",
+      "source_order": 11606
+    },
+    {
+      "entry": 4647584,
+      "method": "0046eaa0",
+      "symbol": "?Force_CD_Eject@CDControlClass@@QAEXD@Z",
+      "symbol_prefix": "?Force_CD_Eject@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 437,
+      "body_sha256": "e4a128260c8d7a96ab0ebbffe65ebd2e6dba258bef89ee8ab4681cc15b182b5a",
+      "padding_bytes": 11,
+      "full_extent_bytes": 448,
+      "full_extent_sha256": "7941aabaa7167289aefbea718ac0674b3bae0f98c7c1cf73698ee7ffd4a0ff8a",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_flag_839c4c@@3_NA",
+          "target": 8625228,
+          "addend": 0,
+          "resolved": 8625228
+        },
+        {
+          "offset": 20,
+          "kind": 20,
+          "symbol": "?Eject_CD_Win95@CDControlClass@@QAEXD@Z",
+          "target": 4649952,
+          "addend": 0,
+          "resolved": 2344
+        },
+        {
+          "offset": 46,
+          "kind": 6,
+          "symbol": "??_C@_04POLC@?$CFc?3?2?$AA@",
+          "target": 8201116,
+          "addend": 0,
+          "resolved": 8201116
+        },
+        {
+          "offset": 52,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3225116
+        },
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "__imp__GetDriveTypeA@4",
+          "target": 7971404,
+          "addend": 0,
+          "resolved": 7971404
+        },
+        {
+          "offset": 81,
+          "kind": 6,
+          "symbol": "??_C@_0DO@BGPA@Attempt?5to?5open?5non?9removable?5vo@",
+          "target": 8201052,
+          "addend": 0,
+          "resolved": 8201052
+        },
+        {
+          "offset": 86,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294540790
+        },
+        {
+          "offset": 119,
+          "kind": 6,
+          "symbol": "??_C@_07NGPH@?2?2?4?2?$CFc?3?$AA@",
+          "target": 8201044,
+          "addend": 0,
+          "resolved": 8201044
+        },
+        {
+          "offset": 125,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3225043
+        },
+        {
+          "offset": 150,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        },
+        {
+          "offset": 163,
+          "kind": 6,
+          "symbol": "??_C@_0CH@MJPG@Unable?5to?5open?5drive?5?$CFc?3?5for?5eje@",
+          "target": 8201004,
+          "addend": 0,
+          "resolved": 8201004
+        },
+        {
+          "offset": 168,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294540708
+        },
+        {
+          "offset": 186,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 193,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 232,
+          "kind": 6,
+          "symbol": "??_C@_0DG@DBKA@DeviceIoControl?5failed?5to?5lock?5v@",
+          "target": 8200948,
+          "addend": 0,
+          "resolved": 8200948
+        },
+        {
+          "offset": 237,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294540639
+        },
+        {
+          "offset": 251,
+          "kind": 6,
+          "symbol": "__imp__Sleep@4",
+          "target": 7971300,
+          "addend": 0,
+          "resolved": 7971300
+        },
+        {
+          "offset": 264,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        },
+        {
+          "offset": 314,
+          "kind": 6,
+          "symbol": "??_C@_0DK@IIHK@DeviceIoControl?5failed?5to?5dismou@",
+          "target": 8200888,
+          "addend": 0,
+          "resolved": 8200888
+        },
+        {
+          "offset": 366,
+          "kind": 6,
+          "symbol": "??_C@_0EA@DMGK@DeviceIoControl?5failed?5to?5preven@",
+          "target": 8200824,
+          "addend": 0,
+          "resolved": 8200824
+        },
+        {
+          "offset": 408,
+          "kind": 6,
+          "symbol": "??_C@_0DG@EMCF@DeviceIoControl?5failed?5to?5eject?5@",
+          "target": 8200768,
+          "addend": 0,
+          "resolved": 8200768
+        },
+        {
+          "offset": 413,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294540463
+        },
+        {
+          "offset": 423,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        }
+      ],
+      "source_sha256": "423942fb6c2eff950578a3a6e0b21fdecaf8f3923632f621ff1248ac2ef07eee",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Force_CD_Eject_0046eaa0.cpp",
+      "population": "population-146",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Force_CD_Eject_0046eaa0",
+      "source_order": 11587
+    },
+    {
+      "entry": 4648032,
+      "method": "0046ec60",
+      "symbol": "?Open_Removable_Volume@CDControlClass@@QAEPAXD@Z",
+      "symbol_prefix": "?Open_Removable_Volume@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 161,
+      "body_sha256": "0c5f119f4d4052a8dd4578361a5f491622ffed2b25abffdbef4f8684929fb2ac",
+      "padding_bytes": 15,
+      "full_extent_bytes": 176,
+      "full_extent_sha256": "2d7c2b70a453db9bc4ba53df3ddec3051c16a4da8991076538abd1c0d6d6c539",
+      "relocations": [
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "??_C@_04POLC@?$CFc?3?2?$AA@",
+          "target": 8201116,
+          "addend": 0,
+          "resolved": 8201116
+        },
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3224695
+        },
+        {
+          "offset": 39,
+          "kind": 6,
+          "symbol": "__imp__GetDriveTypeA@4",
+          "target": 7971404,
+          "addend": 0,
+          "resolved": 7971404
+        },
+        {
+          "offset": 54,
+          "kind": 6,
+          "symbol": "??_C@_0DO@BGPA@Attempt?5to?5open?5non?9removable?5vo@",
+          "target": 8201052,
+          "addend": 0,
+          "resolved": 8201052
+        },
+        {
+          "offset": 59,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294540369
+        },
+        {
+          "offset": 95,
+          "kind": 6,
+          "symbol": "??_C@_07NGPH@?2?2?4?2?$CFc?3?$AA@",
+          "target": 8201044,
+          "addend": 0,
+          "resolved": 8201044
+        },
+        {
+          "offset": 101,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3224619
+        },
+        {
+          "offset": 126,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        },
+        {
+          "offset": 139,
+          "kind": 6,
+          "symbol": "??_C@_0CH@MJPG@Unable?5to?5open?5drive?5?$CFc?3?5for?5eje@",
+          "target": 8201004,
+          "addend": 0,
+          "resolved": 8201004
+        },
+        {
+          "offset": 144,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294540284
+        }
+      ],
+      "source_sha256": "7abc5e052ad1b9daf21e60d271a2956d192efc162d2dd67ad1283b74865410b6",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Open_Removable_Volume_0046ec60.cpp",
+      "population": "population-146",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Open_Removable_Volume_0046ec60",
+      "source_order": 11588
+    },
+    {
+      "entry": 4648208,
+      "method": "0046ed10",
+      "symbol": "?Close_Removable_Volume@CDControlClass@@QAE_NPAX@Z",
+      "symbol_prefix": "?Close_Removable_Volume@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 19,
+      "body_sha256": "49e7b0cbd9550a0c9c73b77bf8a953ad5d1b30ffe4d3061d9ac7e869658f365a",
+      "padding_bytes": 13,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "ebdae46b494825236843ce1e1ff2e6b8bda735094370ffe1b4702ee1b358b274",
+      "relocations": [
+        {
+          "offset": 7,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        }
+      ],
+      "source_sha256": "64ee162c230e6d136fd6544119fba8cc8accca9e1a7f5dda92961bf3d2166a84",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Close_Removable_Volume_0046ed10.cpp",
+      "population": "population-146",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Close_Removable_Volume_0046ed10",
+      "source_order": 11589
+    },
+    {
+      "entry": 4648240,
+      "method": "0046ed30",
+      "symbol": "?Lock_Volume@CDControlClass@@QAE_NPAX@Z",
+      "symbol_prefix": "?Lock_Volume@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 101,
+      "body_sha256": "19760bf15458d6160c326e446f589fb965d67505c5e4579c4e0ea89306be08ed",
+      "padding_bytes": 11,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "d9fd8dad6b811b995a07a8e3b09a3f8bb0a466dd1992e5c02c8ac020d4b2bb96",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "__imp__Sleep@4",
+          "target": 7971300,
+          "addend": 0,
+          "resolved": 7971300
+        },
+        {
+          "offset": 16,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 45,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 58,
+          "kind": 6,
+          "symbol": "??_C@_0DG@DBKA@DeviceIoControl?5failed?5to?5lock?5v@",
+          "target": 8200948,
+          "addend": 0,
+          "resolved": 8200948
+        },
+        {
+          "offset": 63,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294540157
+        }
+      ],
+      "source_sha256": "640577660bba282167c83365dc127a8807802adcd83b0c3a322a4b5109c3d20c",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Lock_Volume_0046ed30.cpp",
+      "population": "population-146",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Lock_Volume_0046ed30",
+      "source_order": 11590
+    },
+    {
+      "entry": 4648352,
+      "method": "0046eda0",
+      "symbol": "?Unlock_Volume@CDControlClass@@QAE_NPAX@Z",
+      "symbol_prefix": "?Unlock_Volume@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 101,
+      "body_sha256": "a293b3af02a1b9278c1e59b2df1a735aa256e08d96cc9f3e54fc19e857ea5976",
+      "padding_bytes": 11,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "708e96e215fbcee387deb1df852d8948a715ff16be860d12257c9826efe1938f",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "__imp__Sleep@4",
+          "target": 7971300,
+          "addend": 0,
+          "resolved": 7971300
+        },
+        {
+          "offset": 16,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 45,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 58,
+          "kind": 6,
+          "symbol": "??_C@_0DI@JELN@DeviceIoControl?5failed?5to?5unlock@",
+          "target": 8201124,
+          "addend": 0,
+          "resolved": 8201124
+        },
+        {
+          "offset": 63,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294540045
+        }
+      ],
+      "source_sha256": "8f5d57c5306e4b6db730f1bba59c8f4c93b8ef1ca71bb1700f17f9777de78140",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Unlock_Volume_0046eda0.cpp",
+      "population": "population-146",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Unlock_Volume_0046eda0",
+      "source_order": 11591
+    },
+    {
+      "entry": 4648464,
+      "method": "0046ee10",
+      "symbol": "?Dismount_Volume@CDControlClass@@QAE_NPAX@Z",
+      "symbol_prefix": "?Dismount_Volume@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 69,
+      "body_sha256": "cb48193524cd9bcd83710662b173f6e80a488a5602720946badecf56cd2b0b02",
+      "padding_bytes": 11,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "c5246dcc5713e8e1ad10c93ac3be5377821e99cd95691f05ae4f6ebf7497e44d",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 45,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 51,
+          "kind": 6,
+          "symbol": "??_C@_0DK@IIHK@DeviceIoControl?5failed?5to?5dismou@",
+          "target": 8200888,
+          "addend": 0,
+          "resolved": 8200888
+        },
+        {
+          "offset": 56,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539940
+        }
+      ],
+      "source_sha256": "a5e8904583d3a9238ef24896953285df4f41f4e6c289d458f7cfb402a2d09ccb",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Dismount_Volume_0046ee10.cpp",
+      "population": "population-146",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Dismount_Volume_0046ee10",
+      "source_order": 11592
+    },
+    {
+      "entry": 4648544,
+      "method": "0046ee60",
+      "symbol": "?Prevent_Removal_Of_Volume@CDControlClass@@QAE_NPAX_N@Z",
+      "symbol_prefix": "?Prevent_Removal_Of_Volume@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 80,
+      "body_sha256": "ab93b64a3cbff677817ff473a55c282893c02d91a00afeb4acfda10abc59d0c5",
+      "padding_bytes": 0,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "ab93b64a3cbff677817ff473a55c282893c02d91a00afeb4acfda10abc59d0c5",
+      "relocations": [
+        {
+          "offset": 39,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 56,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 62,
+          "kind": 6,
+          "symbol": "??_C@_0EA@DMGK@DeviceIoControl?5failed?5to?5preven@",
+          "target": 8200824,
+          "addend": 0,
+          "resolved": 8200824
+        },
+        {
+          "offset": 67,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539849
+        }
+      ],
+      "source_sha256": "a67de63bcc4f22a91991f4ccaa3900cf2f68fe6c6327b04782e68266e9e38948",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Prevent_Removal_Of_Volume_0046ee60.cpp",
+      "population": "population-146",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Prevent_Removal_Of_Volume_0046ee60",
+      "source_order": 11593
+    },
+    {
+      "entry": 4648624,
+      "method": "0046eeb0",
+      "symbol": "?Auto_Eject_Volume@CDControlClass@@QAE_NPAX@Z",
+      "symbol_prefix": "?Auto_Eject_Volume@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 69,
+      "body_sha256": "d3b723bb329543cac5cc190215af4dcfbf084986e4906754a295eb5c1f27b420",
+      "padding_bytes": 11,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "c5f68bf9f893e3a18428b4ee112d9b0770156b67c9460d844da795e864660940",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 45,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 51,
+          "kind": 6,
+          "symbol": "??_C@_0DG@EMCF@DeviceIoControl?5failed?5to?5eject?5@",
+          "target": 8200768,
+          "addend": 0,
+          "resolved": 8200768
+        },
+        {
+          "offset": 56,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539780
+        }
+      ],
+      "source_sha256": "24c3f9672a0f51f149ace72188e3501d398c76c95ba0124ea5f25c74432ce7fa",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Auto_Eject_Volume_0046eeb0.cpp",
+      "population": "population-146",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Auto_Eject_Volume_0046eeb0",
+      "source_order": 11594
+    },
+    {
+      "entry": 4648704,
+      "method": "0046ef00",
+      "symbol": "?Eject_CD@CDControlClass@@QAE_ND@Z",
+      "symbol_prefix": "?Eject_CD@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 446,
+      "body_sha256": "c840bfc8cdb12b8d497952f0885f25defd297b4626a6ebf67e24d99ddf7e73bd",
+      "padding_bytes": 2,
+      "full_extent_bytes": 448,
+      "full_extent_sha256": "6117aea1fdac03899874447c1fbf38ec4f3d140356d5306c6e3bca17c029b5d1",
+      "relocations": [
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "??_C@_04POLC@?$CFc?3?2?$AA@",
+          "target": 8201116,
+          "addend": 0,
+          "resolved": 8201116
+        },
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3224018
+        },
+        {
+          "offset": 44,
+          "kind": 6,
+          "symbol": "__imp__GetDriveTypeA@4",
+          "target": 7971404,
+          "addend": 0,
+          "resolved": 7971404
+        },
+        {
+          "offset": 59,
+          "kind": 6,
+          "symbol": "??_C@_0DO@BGPA@Attempt?5to?5open?5non?9removable?5vo@",
+          "target": 8201052,
+          "addend": 0,
+          "resolved": 8201052
+        },
+        {
+          "offset": 64,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539692
+        },
+        {
+          "offset": 99,
+          "kind": 6,
+          "symbol": "??_C@_07NGPH@?2?2?4?2?$CFc?3?$AA@",
+          "target": 8201044,
+          "addend": 0,
+          "resolved": 8201044
+        },
+        {
+          "offset": 105,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3223943
+        },
+        {
+          "offset": 130,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        },
+        {
+          "offset": 143,
+          "kind": 6,
+          "symbol": "??_C@_0CH@MJPG@Unable?5to?5open?5drive?5?$CFc?3?5for?5eje@",
+          "target": 8201004,
+          "addend": 0,
+          "resolved": 8201004
+        },
+        {
+          "offset": 148,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539608
+        },
+        {
+          "offset": 168,
+          "kind": 6,
+          "symbol": "__imp__Sleep@4",
+          "target": 7971300,
+          "addend": 0,
+          "resolved": 7971300
+        },
+        {
+          "offset": 175,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 212,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 218,
+          "kind": 6,
+          "symbol": "??_C@_0DG@DBKA@DeviceIoControl?5failed?5to?5lock?5v@",
+          "target": 8200948,
+          "addend": 0,
+          "resolved": 8200948
+        },
+        {
+          "offset": 223,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539533
+        },
+        {
+          "offset": 282,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 288,
+          "kind": 6,
+          "symbol": "??_C@_0DK@IIHK@DeviceIoControl?5failed?5to?5dismou@",
+          "target": 8200888,
+          "addend": 0,
+          "resolved": 8200888
+        },
+        {
+          "offset": 293,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539463
+        },
+        {
+          "offset": 346,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 352,
+          "kind": 6,
+          "symbol": "??_C@_0EA@DMGK@DeviceIoControl?5failed?5to?5preven@",
+          "target": 8200824,
+          "addend": 0,
+          "resolved": 8200824
+        },
+        {
+          "offset": 357,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539399
+        },
+        {
+          "offset": 400,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 406,
+          "kind": 6,
+          "symbol": "??_C@_0DG@EMCF@DeviceIoControl?5failed?5to?5eject?5@",
+          "target": 8200768,
+          "addend": 0,
+          "resolved": 8200768
+        },
+        {
+          "offset": 411,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539345
+        },
+        {
+          "offset": 428,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        }
+      ],
+      "source_sha256": "28e63f24c295d95255429c3e8c58943bc2ab1b9c7e3843a0a5c1ed9bb54d1f12",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Eject_CD_0046ef00.cpp",
+      "population": "population-146",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Eject_CD_0046ef00",
+      "source_order": 11595
+    },
+    {
+      "entry": 4649152,
+      "method": "0046f0c0",
+      "symbol": "?Lock_CD_Tray_NT@CDControlClass@@QAE_ND@Z",
+      "symbol_prefix": "?Lock_CD_Tray_NT@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 385,
+      "body_sha256": "175dfe30406a57dbd995bf7983a37ac310f8887c6a09b008d313be830a5577ea",
+      "padding_bytes": 15,
+      "full_extent_bytes": 400,
+      "full_extent_sha256": "97a068c858f2c13df53cdba05e353b6aad303f61ac96af2ed73b91918397d01b",
+      "relocations": [
+        {
+          "offset": 20,
+          "kind": 6,
+          "symbol": "??_C@_04POLC@?$CFc?3?2?$AA@",
+          "target": 8201116,
+          "addend": 0,
+          "resolved": 8201116
+        },
+        {
+          "offset": 26,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3223574
+        },
+        {
+          "offset": 40,
+          "kind": 6,
+          "symbol": "__imp__GetDriveTypeA@4",
+          "target": 7971404,
+          "addend": 0,
+          "resolved": 7971404
+        },
+        {
+          "offset": 55,
+          "kind": 6,
+          "symbol": "??_C@_0DO@BGPA@Attempt?5to?5open?5non?9removable?5vo@",
+          "target": 8201052,
+          "addend": 0,
+          "resolved": 8201052
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539248
+        },
+        {
+          "offset": 96,
+          "kind": 6,
+          "symbol": "??_C@_07NGPH@?2?2?4?2?$CFc?3?$AA@",
+          "target": 8201044,
+          "addend": 0,
+          "resolved": 8201044
+        },
+        {
+          "offset": 102,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3223498
+        },
+        {
+          "offset": 127,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        },
+        {
+          "offset": 140,
+          "kind": 6,
+          "symbol": "??_C@_0CH@MJPG@Unable?5to?5open?5drive?5?$CFc?3?5for?5eje@",
+          "target": 8201004,
+          "addend": 0,
+          "resolved": 8201004
+        },
+        {
+          "offset": 145,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539163
+        },
+        {
+          "offset": 165,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 172,
+          "kind": 6,
+          "symbol": "__imp__Sleep@4",
+          "target": 7971300,
+          "addend": 0,
+          "resolved": 7971300
+        },
+        {
+          "offset": 201,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 214,
+          "kind": 6,
+          "symbol": "??_C@_0DG@DBKA@DeviceIoControl?5failed?5to?5lock?5v@",
+          "target": 8200948,
+          "addend": 0,
+          "resolved": 8200948
+        },
+        {
+          "offset": 219,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539089
+        },
+        {
+          "offset": 272,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 291,
+          "kind": 6,
+          "symbol": "??_C@_0EA@DMGK@DeviceIoControl?5failed?5to?5preven@",
+          "target": 8200824,
+          "addend": 0,
+          "resolved": 8200824
+        },
+        {
+          "offset": 296,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294539012
+        },
+        {
+          "offset": 328,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 341,
+          "kind": 6,
+          "symbol": "??_C@_0DI@JELN@DeviceIoControl?5failed?5to?5unlock@",
+          "target": 8201124,
+          "addend": 0,
+          "resolved": 8201124
+        },
+        {
+          "offset": 346,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538962
+        },
+        {
+          "offset": 369,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        }
+      ],
+      "source_sha256": "250d31d0b5d45b26305099e259ca1fa35744a3720e1a519f0b122862279b37a1",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Lock_CD_Tray_NT_0046f0c0.cpp",
+      "population": "population-146",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Lock_CD_Tray_NT_0046f0c0",
+      "source_order": 11596
+    },
+    {
+      "entry": 4649552,
+      "method": "0046f250",
+      "symbol": "?Unlock_CD_Tray_NT@CDControlClass@@QAE_ND@Z",
+      "symbol_prefix": "?Unlock_CD_Tray_NT@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 385,
+      "body_sha256": "75dbeccb2bcf0cdbc26dce75f3f63ac0594db95dc26dbd0cbb47e23ee3c97731",
+      "padding_bytes": 15,
+      "full_extent_bytes": 400,
+      "full_extent_sha256": "ae1c5f52721fa4afb8a318e05fe1bf5f1dad4671e161249bedcd53977a504a50",
+      "relocations": [
+        {
+          "offset": 20,
+          "kind": 6,
+          "symbol": "??_C@_04POLC@?$CFc?3?2?$AA@",
+          "target": 8201116,
+          "addend": 0,
+          "resolved": 8201116
+        },
+        {
+          "offset": 26,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3223174
+        },
+        {
+          "offset": 40,
+          "kind": 6,
+          "symbol": "__imp__GetDriveTypeA@4",
+          "target": 7971404,
+          "addend": 0,
+          "resolved": 7971404
+        },
+        {
+          "offset": 55,
+          "kind": 6,
+          "symbol": "??_C@_0DO@BGPA@Attempt?5to?5open?5non?9removable?5vo@",
+          "target": 8201052,
+          "addend": 0,
+          "resolved": 8201052
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538848
+        },
+        {
+          "offset": 96,
+          "kind": 6,
+          "symbol": "??_C@_07NGPH@?2?2?4?2?$CFc?3?$AA@",
+          "target": 8201044,
+          "addend": 0,
+          "resolved": 8201044
+        },
+        {
+          "offset": 102,
+          "kind": 20,
+          "symbol": "_sprintf",
+          "target": 7872756,
+          "addend": 0,
+          "resolved": 3223098
+        },
+        {
+          "offset": 127,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        },
+        {
+          "offset": 140,
+          "kind": 6,
+          "symbol": "??_C@_0CH@MJPG@Unable?5to?5open?5drive?5?$CFc?3?5for?5eje@",
+          "target": 8201004,
+          "addend": 0,
+          "resolved": 8201004
+        },
+        {
+          "offset": 145,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538763
+        },
+        {
+          "offset": 165,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 172,
+          "kind": 6,
+          "symbol": "__imp__Sleep@4",
+          "target": 7971300,
+          "addend": 0,
+          "resolved": 7971300
+        },
+        {
+          "offset": 201,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 214,
+          "kind": 6,
+          "symbol": "??_C@_0DG@DBKA@DeviceIoControl?5failed?5to?5lock?5v@",
+          "target": 8200948,
+          "addend": 0,
+          "resolved": 8200948
+        },
+        {
+          "offset": 219,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538689
+        },
+        {
+          "offset": 272,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 291,
+          "kind": 6,
+          "symbol": "??_C@_0EA@DMGK@DeviceIoControl?5failed?5to?5preven@",
+          "target": 8200824,
+          "addend": 0,
+          "resolved": 8200824
+        },
+        {
+          "offset": 296,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538612
+        },
+        {
+          "offset": 328,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 341,
+          "kind": 6,
+          "symbol": "??_C@_0DI@JELN@DeviceIoControl?5failed?5to?5unlock@",
+          "target": 8201124,
+          "addend": 0,
+          "resolved": 8201124
+        },
+        {
+          "offset": 346,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538562
+        },
+        {
+          "offset": 369,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        }
+      ],
+      "source_sha256": "312b9b6725afe71540ee0879407e0b280ac8b9d90213366f0332fb01182091b6",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Unlock_CD_Tray_NT_0046f250.cpp",
+      "population": "population-146",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Unlock_CD_Tray_NT_0046f250",
+      "source_order": 11597
+    },
+    {
+      "entry": 4649952,
+      "method": "0046f3e0",
+      "symbol": "?Eject_CD_Win95@CDControlClass@@QAEXD@Z",
+      "symbol_prefix": "?Eject_CD_Win95@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 299,
+      "body_sha256": "b5f9738211eaa6d05ce0ac8e2de3e2e903fc8d412bcb78f08a4471652c77c49a",
+      "padding_bytes": 5,
+      "full_extent_bytes": 304,
+      "full_extent_sha256": "5b9d21f3a5eac9b61a0d243bed914f129e06a1c92972fd5a7a95135dcd1655c8",
+      "relocations": [
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "??_C@_0L@GCFB@?2?2?4?2vwin32?$AA@",
+          "target": 8201364,
+          "addend": 0,
+          "resolved": 8201364
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        },
+        {
+          "offset": 59,
+          "kind": 20,
+          "symbol": "?Lock_Logical_Volume@CDControlClass@@QAG_NPAXDDF@Z",
+          "target": 4651600,
+          "addend": 0,
+          "resolved": 1585
+        },
+        {
+          "offset": 75,
+          "kind": 6,
+          "symbol": "??_C@_0BL@ODLI@Unable?5to?5lock?5volume?5?$CFc?3?6?$AA@",
+          "target": 8201336,
+          "addend": 0,
+          "resolved": 8201336
+        },
+        {
+          "offset": 80,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538428
+        },
+        {
+          "offset": 102,
+          "kind": 20,
+          "symbol": "?Unlock_Media@CDControlClass@@QAE_NPAXD@Z",
+          "target": 4650832,
+          "addend": 0,
+          "resolved": 774
+        },
+        {
+          "offset": 118,
+          "kind": 6,
+          "symbol": "??_C@_0CH@DMNE@Could?5not?5unlock?5media?5from?5driv@",
+          "target": 8201296,
+          "addend": 0,
+          "resolved": 8201296
+        },
+        {
+          "offset": 123,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538385
+        },
+        {
+          "offset": 134,
+          "kind": 20,
+          "symbol": "?Unlock_Logical_Volume@CDControlClass@@QAG_NPAXD@Z",
+          "target": 4652160,
+          "addend": 0,
+          "resolved": 2070
+        },
+        {
+          "offset": 209,
+          "kind": 6,
+          "symbol": "__imp__DeviceIoControl@32",
+          "target": 7971244,
+          "addend": 0,
+          "resolved": 7971244
+        },
+        {
+          "offset": 226,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 232,
+          "kind": 6,
+          "symbol": "??_C@_0EK@PBAE@DeviceIoControl?5failed?5to?5perfor@",
+          "target": 8201220,
+          "addend": 0,
+          "resolved": 8201220
+        },
+        {
+          "offset": 237,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538271
+        },
+        {
+          "offset": 258,
+          "kind": 6,
+          "symbol": "??_C@_0CG@DPDE@Could?5not?5eject?5media?5from?5drive@",
+          "target": 8201180,
+          "addend": 0,
+          "resolved": 8201180
+        },
+        {
+          "offset": 263,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538245
+        },
+        {
+          "offset": 278,
+          "kind": 20,
+          "symbol": "?Unlock_Logical_Volume@CDControlClass@@QAG_NPAXD@Z",
+          "target": 4652160,
+          "addend": 0,
+          "resolved": 1926
+        },
+        {
+          "offset": 285,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        }
+      ],
+      "source_sha256": "f4f29b75f20e88617b7c91250ae3f63e636cd5782da46d2b388fd9d1e731670c",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Eject_CD_Win95_0046f3e0.cpp",
+      "population": "population-146",
+      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Eject_CD_Win95_0046f3e0",
+      "source_order": 11598
+    },
+    {
+      "entry": 4650256,
+      "method": "0046f510",
+      "symbol": "?Lock_CD_Drive_95@CDControlClass@@QAE_ND@Z",
+      "symbol_prefix": "?Lock_CD_Drive_95@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 273,
+      "body_sha256": "f90d6574e4377ccd2375deb5b69740ef01e1e81b9afc5d5610debcf20910e4a9",
+      "padding_bytes": 15,
+      "full_extent_bytes": 288,
+      "full_extent_sha256": "a64df7b74399cb0408901ef98befa6295d75122cffd853fbd01e8ba860fa6100",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "??_C@_0CC@JIOF@CDControlClass?3?3Lock_CD_Drive_95@",
+          "target": 8201664,
+          "addend": 0,
+          "resolved": 8201664
+        },
+        {
+          "offset": 13,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538191
+        },
+        {
+          "offset": 34,
+          "kind": 6,
+          "symbol": "??_C@_0CE@MJIJ@Preventing?5ejection?5on?5CD?5drive?5@",
+          "target": 8201628,
+          "addend": 0,
+          "resolved": 8201628
+        },
+        {
+          "offset": 39,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538165
+        },
+        {
+          "offset": 68,
+          "kind": 6,
+          "symbol": "??_C@_0L@GCFB@?2?2?4?2vwin32?$AA@",
+          "target": 8201364,
+          "addend": 0,
+          "resolved": 8201364
+        },
+        {
+          "offset": 74,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        },
+        {
+          "offset": 79,
+          "kind": 6,
+          "symbol": "??_C@_0DJ@FFJH@About?5to?5lock?5logical?5volume?5to?5@",
+          "target": 8201568,
+          "addend": 0,
+          "resolved": 8201568
+        },
+        {
+          "offset": 86,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538118
+        },
+        {
+          "offset": 105,
+          "kind": 20,
+          "symbol": "?Lock_Logical_Volume@CDControlClass@@QAG_NPAXDDF@Z",
+          "target": 4651600,
+          "addend": 0,
+          "resolved": 1235
+        },
+        {
+          "offset": 121,
+          "kind": 6,
+          "symbol": "??_C@_0BL@ODLI@Unable?5to?5lock?5volume?5?$CFc?3?6?$AA@",
+          "target": 8201336,
+          "addend": 0,
+          "resolved": 8201336
+        },
+        {
+          "offset": 126,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538078
+        },
+        {
+          "offset": 144,
+          "kind": 6,
+          "symbol": "??_C@_0BC@HCID@Volume?5locked?5OK?6?$AA@",
+          "target": 8201548,
+          "addend": 0,
+          "resolved": 8201548
+        },
+        {
+          "offset": 149,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538055
+        },
+        {
+          "offset": 154,
+          "kind": 6,
+          "symbol": "??_C@_0CD@FBEC@About?5to?5prevent?5CD?5tray?5ejectio@",
+          "target": 8201512,
+          "addend": 0,
+          "resolved": 8201512
+        },
+        {
+          "offset": 159,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538045
+        },
+        {
+          "offset": 171,
+          "kind": 20,
+          "symbol": "?Lock_Media@CDControlClass@@QAE_NPAXD@Z",
+          "target": 4651200,
+          "addend": 0,
+          "resolved": 769
+        },
+        {
+          "offset": 187,
+          "kind": 6,
+          "symbol": "??_C@_0CF@PPJC@Could?5not?5lock?5CD?5tray?5in?5drive?5@",
+          "target": 8201472,
+          "addend": 0,
+          "resolved": 8201472
+        },
+        {
+          "offset": 192,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294538012
+        },
+        {
+          "offset": 204,
+          "kind": 6,
+          "symbol": "??_C@_0BO@GFCK@CD?5tray?5ejection?5disabled?5OK?6?$AA@",
+          "target": 8201440,
+          "addend": 0,
+          "resolved": 8201440
+        },
+        {
+          "offset": 209,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537995
+        },
+        {
+          "offset": 224,
+          "kind": 20,
+          "symbol": "?Unlock_Logical_Volume@CDControlClass@@QAG_NPAXD@Z",
+          "target": 4652160,
+          "addend": 0,
+          "resolved": 1676
+        },
+        {
+          "offset": 231,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        },
+        {
+          "offset": 238,
+          "kind": 6,
+          "symbol": "??_C@_04NCCD@true?$AA@",
+          "target": 8201432,
+          "addend": 0,
+          "resolved": 8201432
+        },
+        {
+          "offset": 245,
+          "kind": 6,
+          "symbol": "??_C@_05NAGO@false?$AA@",
+          "target": 8201424,
+          "addend": 0,
+          "resolved": 8201424
+        },
+        {
+          "offset": 251,
+          "kind": 6,
+          "symbol": "??_C@_0CP@FBAI@CDControlClass?3?3Lock_CD_Drive_95@",
+          "target": 8201376,
+          "addend": 0,
+          "resolved": 8201376
+        },
+        {
+          "offset": 256,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537948
+        }
+      ],
+      "source_sha256": "d833e77cb2fad3910036899c195505ee949cce89d274eb03facde738c170059c",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Lock_CD_Drive_95_0046f510.cpp",
+      "population": "population-146",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Lock_CD_Drive_95_0046f510",
+      "source_order": 11599
+    },
+    {
+      "entry": 4650544,
+      "method": "0046f630",
+      "symbol": "?Unlock_CD_Drive_95@CDControlClass@@QAE_ND@Z",
+      "symbol_prefix": "?Unlock_CD_Drive_95@CDControlClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 273,
+      "body_sha256": "fcbd1fbdb51029cb32ac19acebb1c01527016b1835870a8261c88a3e7611c1ec",
+      "padding_bytes": 15,
+      "full_extent_bytes": 288,
+      "full_extent_sha256": "b1e9f731f2c871bd73408bfc879d023d6ce276fc2fc7153df6b4323032fabed9",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "??_C@_0CE@HDOM@CDControlClass?3?3Unlock_CD_Drive_@",
+          "target": 8201896,
+          "addend": 0,
+          "resolved": 8201896
+        },
+        {
+          "offset": 13,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537903
+        },
+        {
+          "offset": 34,
+          "kind": 6,
+          "symbol": "??_C@_0CC@OBIH@Allowing?5ejection?5on?5CD?5drive?5?$CFc@",
+          "target": 8201860,
+          "addend": 0,
+          "resolved": 8201860
+        },
+        {
+          "offset": 39,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537877
+        },
+        {
+          "offset": 68,
+          "kind": 6,
+          "symbol": "??_C@_0L@GCFB@?2?2?4?2vwin32?$AA@",
+          "target": 8201364,
+          "addend": 0,
+          "resolved": 8201364
+        },
+        {
+          "offset": 74,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        },
+        {
+          "offset": 79,
+          "kind": 6,
+          "symbol": "??_C@_0DJ@FFJH@About?5to?5lock?5logical?5volume?5to?5@",
+          "target": 8201568,
+          "addend": 0,
+          "resolved": 8201568
+        },
+        {
+          "offset": 86,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537830
+        },
+        {
+          "offset": 105,
+          "kind": 20,
+          "symbol": "?Lock_Logical_Volume@CDControlClass@@QAG_NPAXDDF@Z",
+          "target": 4651600,
+          "addend": 0,
+          "resolved": 947
+        },
+        {
+          "offset": 121,
+          "kind": 6,
+          "symbol": "??_C@_0BL@ODLI@Unable?5to?5lock?5volume?5?$CFc?3?6?$AA@",
+          "target": 8201336,
+          "addend": 0,
+          "resolved": 8201336
+        },
+        {
+          "offset": 126,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537790
+        },
+        {
+          "offset": 144,
+          "kind": 6,
+          "symbol": "??_C@_0BC@HCID@Volume?5locked?5OK?6?$AA@",
+          "target": 8201548,
+          "addend": 0,
+          "resolved": 8201548
+        },
+        {
+          "offset": 149,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537767
+        },
+        {
+          "offset": 154,
+          "kind": 6,
+          "symbol": "??_C@_0CB@EEFN@About?5to?5allow?5CD?5tray?5ejection?6@",
+          "target": 8201824,
+          "addend": 0,
+          "resolved": 8201824
+        },
+        {
+          "offset": 159,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537757
+        },
+        {
+          "offset": 171,
+          "kind": 20,
+          "symbol": "?Unlock_Media@CDControlClass@@QAE_NPAXD@Z",
+          "target": 4650832,
+          "addend": 0,
+          "resolved": 113
+        },
+        {
+          "offset": 187,
+          "kind": 6,
+          "symbol": "??_C@_0CH@FJCD@Could?5not?5unlock?5CD?5tray?5in?5driv@",
+          "target": 8201784,
+          "addend": 0,
+          "resolved": 8201784
+        },
+        {
+          "offset": 192,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537724
+        },
+        {
+          "offset": 204,
+          "kind": 6,
+          "symbol": "??_C@_0BN@PHBM@CD?5tray?5ejection?5enabled?5OK?6?$AA@",
+          "target": 8201752,
+          "addend": 0,
+          "resolved": 8201752
+        },
+        {
+          "offset": 209,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537707
+        },
+        {
+          "offset": 224,
+          "kind": 20,
+          "symbol": "?Unlock_Logical_Volume@CDControlClass@@QAG_NPAXD@Z",
+          "target": 4652160,
+          "addend": 0,
+          "resolved": 1388
+        },
+        {
+          "offset": 231,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        },
+        {
+          "offset": 238,
+          "kind": 6,
+          "symbol": "??_C@_04NCCD@true?$AA@",
+          "target": 8201432,
+          "addend": 0,
+          "resolved": 8201432
+        },
+        {
+          "offset": 245,
+          "kind": 6,
+          "symbol": "??_C@_05NAGO@false?$AA@",
+          "target": 8201424,
+          "addend": 0,
+          "resolved": 8201424
+        },
+        {
+          "offset": 251,
+          "kind": 6,
+          "symbol": "??_C@_0DB@OLOL@CDControlClass?3?3Unlock_CD_Drive_@",
+          "target": 8201700,
+          "addend": 0,
+          "resolved": 8201700
+        },
+        {
+          "offset": 256,
+          "kind": 20,
+          "symbol": "?Debug_Printf@@YAXPBDZZ",
+          "target": 4221168,
+          "addend": 0,
+          "resolved": 4294537660
+        }
+      ],
+      "source_sha256": "478b92f810e70db93a7956193f80d05ac31f1944c252b4bf8d177f41764c2a15",
+      "source": "src/recovered/classes/CDControlClass/CDControlClass_Unlock_CD_Drive_95_0046f630.cpp",
+      "population": "population-146",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "CDControlClass_Unlock_CD_Drive_95_0046f630",
+      "source_order": 11600
+    }
+  ]
+}

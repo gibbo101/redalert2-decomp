@@ -1,0 +1,254 @@
+{
+  "id": "population-23",
+  "population": {
+    "id": "population-23",
+    "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps_sha256": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
+    "historical_population_sha256": "732e0fa427c1ce690692faf039d76f2636662a81ab0240efd455315b2afcda0e",
+    "historical_acceptance_sha256": "e294adb3cd5253bab2af8ecc0eae987a431d2d87a2c73fbae84d9c61c7deb001"
+  },
+  "references": {
+    "_fixedA_005dcf70": 8183500,
+    "_fixedB_005dcf70": 8184044,
+    "_compare_005dcf70": 7872288,
+    "_count_005dcf70": 10706424,
+    "_items_005dcf70": 10706412,
+    "_storage_005dcf70": 7872535,
+    "?finish@Entry_005dcf70@@": 6145440,
+    "_fixedA_006883d0": 8183500,
+    "_fixedB_006883d0": 8184044,
+    "_compare_006883d0": 7872288,
+    "_count_006883d0": 10750936,
+    "_items_006883d0": 10750924,
+    "_storage_006883d0": 7872535,
+    "?finish@Entry_006883d0@@": 6847904
+  },
+  "regions": [
+    {
+      "entry": 6147952,
+      "method": "005dcf70",
+      "symbol": "@recover_005dcf70@4",
+      "symbol_prefix": "@recover_005dcf70@4",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 131,
+      "body_sha256": "185166ef149da2cdecf125c75b6962ceba0ed6b99a7ffaeb90c421b198721a3e",
+      "padding_bytes": 13,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "89a20f6076b30d7c389447ee5489d934fd305d05812ecec70be48b6203778334",
+      "relocations": [
+        {
+          "offset": 6,
+          "kind": 6,
+          "symbol": "_fixedA_005dcf70",
+          "target": 8183500,
+          "addend": 0,
+          "resolved": 8183500
+        },
+        {
+          "offset": 11,
+          "kind": 20,
+          "symbol": "_compare_005dcf70",
+          "target": 7872288,
+          "addend": 0,
+          "resolved": 1724321
+        },
+        {
+          "offset": 24,
+          "kind": 6,
+          "symbol": "_fixedB_005dcf70",
+          "target": 8184044,
+          "addend": 0,
+          "resolved": 8184044
+        },
+        {
+          "offset": 29,
+          "kind": 20,
+          "symbol": "_compare_005dcf70",
+          "target": 7872288,
+          "addend": 0,
+          "resolved": 1724303
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_count_005dcf70",
+          "target": 10706424,
+          "addend": 0,
+          "resolved": 10706424
+        },
+        {
+          "offset": 52,
+          "kind": 6,
+          "symbol": "_items_005dcf70",
+          "target": 10706412,
+          "addend": 0,
+          "resolved": 10706412
+        },
+        {
+          "offset": 65,
+          "kind": 20,
+          "symbol": "_compare_005dcf70",
+          "target": 7872288,
+          "addend": 0,
+          "resolved": 1724267
+        },
+        {
+          "offset": 77,
+          "kind": 6,
+          "symbol": "_count_005dcf70",
+          "target": 10706424,
+          "addend": 0,
+          "resolved": 10706424
+        },
+        {
+          "offset": 92,
+          "kind": 20,
+          "symbol": "_storage_005dcf70",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1724487
+        },
+        {
+          "offset": 107,
+          "kind": 20,
+          "symbol": "?finish@Entry_005dcf70@@QAEPAXPBD@Z",
+          "target": 6145440,
+          "addend": 0,
+          "resolved": 4294964673
+        },
+        {
+          "offset": 116,
+          "kind": 6,
+          "symbol": "_items_005dcf70",
+          "target": 10706412,
+          "addend": 0,
+          "resolved": 10706412
+        }
+      ],
+      "source": "src/recovered/005dcf70.cpp",
+      "source_sha256": "4e0fd52aa58d7d864ca28417d011fad531bae4b439756868d92edc6ef0537345",
+      "source_order": 4172,
+      "population": "population-23",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6849488,
+      "method": "006883d0",
+      "symbol": "@recover_006883d0@4",
+      "symbol_prefix": "@recover_006883d0@4",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 131,
+      "body_sha256": "8edab87d9e7af38351d8f0d55004ad3562d55edda85fed832b16d99135adfeb4",
+      "padding_bytes": 13,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "6fabe36a277976b32f6ae1c2f2469ecfd1208134acee0015d8776a61b1d9eddf",
+      "relocations": [
+        {
+          "offset": 6,
+          "kind": 6,
+          "symbol": "_fixedA_006883d0",
+          "target": 8183500,
+          "addend": 0,
+          "resolved": 8183500
+        },
+        {
+          "offset": 11,
+          "kind": 20,
+          "symbol": "_compare_006883d0",
+          "target": 7872288,
+          "addend": 0,
+          "resolved": 1022785
+        },
+        {
+          "offset": 24,
+          "kind": 6,
+          "symbol": "_fixedB_006883d0",
+          "target": 8184044,
+          "addend": 0,
+          "resolved": 8184044
+        },
+        {
+          "offset": 29,
+          "kind": 20,
+          "symbol": "_compare_006883d0",
+          "target": 7872288,
+          "addend": 0,
+          "resolved": 1022767
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_count_006883d0",
+          "target": 10750936,
+          "addend": 0,
+          "resolved": 10750936
+        },
+        {
+          "offset": 52,
+          "kind": 6,
+          "symbol": "_items_006883d0",
+          "target": 10750924,
+          "addend": 0,
+          "resolved": 10750924
+        },
+        {
+          "offset": 65,
+          "kind": 20,
+          "symbol": "_compare_006883d0",
+          "target": 7872288,
+          "addend": 0,
+          "resolved": 1022731
+        },
+        {
+          "offset": 77,
+          "kind": 6,
+          "symbol": "_count_006883d0",
+          "target": 10750936,
+          "addend": 0,
+          "resolved": 10750936
+        },
+        {
+          "offset": 92,
+          "kind": 20,
+          "symbol": "_storage_006883d0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1022951
+        },
+        {
+          "offset": 107,
+          "kind": 20,
+          "symbol": "?finish@Entry_006883d0@@QAEPAXPBD@Z",
+          "target": 6847904,
+          "addend": 0,
+          "resolved": 4294965601
+        },
+        {
+          "offset": 116,
+          "kind": 6,
+          "symbol": "_items_006883d0",
+          "target": 10750924,
+          "addend": 0,
+          "resolved": 10750924
+        }
+      ],
+      "source": "src/recovered/006883d0.cpp",
+      "source_sha256": "db20de2dd8e9234f0abf67fb07124a716f3b0cc231d7de3b755eb3de4d5cbfbe",
+      "source_order": 5073,
+      "population": "population-23",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    }
+  ]
+}

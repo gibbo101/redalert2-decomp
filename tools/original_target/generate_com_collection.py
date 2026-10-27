@@ -2,6 +2,7 @@
 """Generate review candidates only. Never update canonical source or manifests."""
 import argparse
 import hashlib
+import catalog_io
 import json
 from pathlib import Path
 import time
@@ -29,7 +30,7 @@ def main():
     plan = json.loads(plan_path.read_text())
     if len(plan['regions']) != 34 or len({r['entry'] for r in plan['regions']}) != 34:
         raise SystemExit('Incomplete bounded family plan')
-    catalog = json.loads((repository / 'manifests/original_target.json').read_text())
+    catalog = catalog_io.load(catalog_io.locate(repository), references=False)
     if catalog['target']['sha256'] != plan['target_sha256']:
         raise SystemExit('Wrong target catalog')
     current = {row['entry']:row for row in catalog['regions']}

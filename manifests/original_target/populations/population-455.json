@@ -1,0 +1,884 @@
+{
+  "id": "population-455",
+  "population": {
+    "id": "population-455",
+    "inventory_sha256": "1dee5f9a63a494ca5292da0741750d84d7c6e7f4c884e687d980591ce571d1ef",
+    "gaps_sha256": "37f1456786edd9aacf5af7be1ac19ac9b00c185ba5e23fdba439064645571e55",
+    "historical_population_sha256": "34015048eb5cebbd65925ac5e2993c746eeaed058f8343bb2503fe75df6fa1ca",
+    "historical_acceptance_sha256": "2c0d9c0ebf7c3d62e99efda7d8536f164cf19cc1df1835f34ccbdae02d6f0f08"
+  },
+  "references": {
+    "?unknown_math_4ba520@@YANN@Z": 4957472,
+    "?unknown_math_4ba5b0@@YANN@Z": 4957616,
+    "?unknown_sqrt_4ba410@@YANN@Z": 4957200,
+    "__CIpow": 7872944,
+    "__ftol": 7860496,
+    "__real@8@3ff78000000000000000": 7972656,
+    "__real@8@3ffe8000000000000000": 7972648,
+    "__real@8@3fff8000000000000000": 7972616,
+    "__real@8@40008000000000000000": 7972600,
+    "__real@8@4004b400000000000000": 7972624,
+    "__real@8@4004f000000000000000": 7972632,
+    "__real@8@4005b400000000000000": 7972640,
+    "__real@8@40078000000000000000": 7972608,
+    "_unknown_geometry_angle45": 10948872,
+    "_unknown_geometry_angle60": 10948832,
+    "_unknown_geometry_angle90": 10948792,
+    "_unknown_geometry_b": 10948928,
+    "_unknown_geometry_c": 10948880,
+    "_unknown_geometry_deg_to_rad": 8021888,
+    "_unknown_geometry_diagonal": 10948824,
+    "_unknown_geometry_g": 10948936,
+    "_unknown_geometry_h": 10948840,
+    "_unknown_geometry_i": 10948864,
+    "_unknown_geometry_j": 10948920,
+    "_unknown_geometry_k": 10948816,
+    "_unknown_geometry_l": 10948848,
+    "_unknown_geometry_sixty": 8021880,
+    "_unknown_static_rect": 10948800,
+    "??3@YAXPAX@Z": 7871803,
+    "??1AbstractClass@@UAE@XZ": 4259728,
+    "??_7AbstractClass@@6BIPersistStream@@@": 7974360,
+    "??_7AbstractClass@@6BIRTTITypeInfo@@@": 7974332,
+    "??_7AbstractClass@@6BINoticeSink@@@": 7974324,
+    "??_7AbstractClass@@6BINoticeSource@@@": 7974316,
+    "??0ObjectClass@@QAE@ABVNoInitClass@@@Z": 6104320,
+    "??0AbstractClass@@QAE@ABVNoInitClass@@@Z": 4259680,
+    "??_7ObjectClass@@6BIPersistStream@@@": 8025240,
+    "??_7ObjectClass@@6BIRTTITypeInfo@@@": 8025212,
+    "??_7ObjectClass@@6BINoticeSink@@@": 8025204,
+    "??_7ObjectClass@@6BINoticeSource@@@": 8025196,
+    "_atexit": 7874954,
+    "__stricmp": 7872288,
+    "__DAT_00a523b0": 10822576,
+    "__DAT_00a523c4": 10822596,
+    "__DAT_00a523e0": 10822624,
+    "__DAT_00a52398": 10822552,
+    "__DAT_00a52370": 10822512,
+    "__DAT_00a523d4": 10822612,
+    "__strncpy": 7873488,
+    "__DAT_00ab6e88": 11234952,
+    "__strcmp": 7888160,
+    "__strlen": 7903280,
+    "__malloc": 7874096,
+    "___amsg_exit": 7887784,
+    "__DAT_0084ed10": 8711440,
+    "__DAT_00ac0148": 11272520,
+    "_free": 7874024,
+    "__strdup": 7919638,
+    "??2@YAPAXI@Z": 7872535,
+    "??_GAbstractClass@@UAEPAXI@Z": 4260672,
+    "??1ObjectClass@@UAE@XZ": 6104368,
+    "??_GMSShapeAnim@@UAEPAXI@Z": 5962944,
+    "??_7MSShapeAnim@@6B@": 8023396,
+    "??_GObjectClass@@UAEPAXI@Z": 6116672,
+    "?x@?1???A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z@4PAU23@A": 11712044,
+    "?x@?1???A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z@4PAU23@A": 11712048,
+    "__real@8@3ff8a3d70a3d70a3d800": 7980312,
+    "__splitpath": 7882867,
+    "__makepath": 7877104,
+    "__strupr": 7954916,
+    "??1MSShapeAnim@@UAE@XZ": 5949216,
+    "?Get_Rect@Surface@@UAE?AVRect@@XZ": 4264592,
+    "__DAT_00a40c88": 10751112,
+    "__DAT_00a40c80": 10751104,
+    "__DAT_00a40c84": 10751108,
+    "__DAT_00a70cc4": 10947780,
+    "__DAT_00a70cd0": 10947792,
+    "__DAT_00a70cc0": 10947776,
+    "__chkstk": 7878736,
+    "__strnicmp": 7878672,
+    "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
+    "??HPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "?Top_Left@Rect@@QBE?AUPoint2D@@XZ": 4412768,
+    "__DAT_00ab6ea8": 11234984,
+    "__DAT_00ab6eb0": 11234992,
+    "__DAT_00ac0168": 11272552,
+    "__DAT_00ac0170": 11272560,
+    "??0Rect@@QAE@HHHH@Z": 4373712,
+    "?Blit@VQMovieHandle@@UAEXXZ": 5904704,
+    "?Blit@BinkMovieHandle@@UAEXXZ": 5905248,
+    "__DAT_00af7370": 11498352,
+    "__DAT_00af7374": 11498356,
+    "__DAT_00af7378": 11498360,
+    "__DAT_00af737c": 11498364,
+    "??0MSShapeAnim@@QAE@PBDHHPAVConvertClass@@H_NH@Z": 5949088,
+    "?Set_Frame@MSShapeAnim@@QAEXH@Z": 5949280,
+    "?Get_Rect@MSShapeAnim@@UAE?AVRect@@XZ": 5950720,
+    "__DAT_00852910": 8726800,
+    "__DAT_00a769e8": 10971624,
+    "__DAT_00ab6478": 11232376,
+    "__DAT_00ab9718": 11245336,
+    "?Get_Rect@MSBitPrintAnim@@UAE?AVRect@@XZ": 5956896,
+    "?Get_Rect@MSBinkAnim@@UAE?AVRect@@XZ": 5954000,
+    "__real@8@4006ff00000000000000": 8007504,
+    "?Get_Rect@MSVQAnim@@UAE?AVRect@@XZ": 5956576,
+    "?Get_Rect@MSPCXAnim@@UAE?AVRect@@XZ": 5962688,
+    "??0AbstractClass@@QAE@XZ": 4259600,
+    "?Center_Coord@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260448,
+    "??0ObjectClass@@QAE@XZ": 6103776,
+    "__real@8@00000000000000000000": 7976464,
+    "??MObjectClass@@QBE_NABV0@@Z": 6113968,
+    "??OObjectClass@@QBE_NABV0@@Z": 6114016,
+    "?Center_Coord@ObjectClass@@UBE?AUCoordStruct@@XZ": 6114880,
+    "??_7AbstractClass@@6B@": 7974360,
+    "??_7ObjectClass@@6B@": 8025240,
+    "??_7Map@WorldDominationTour@@6B@": 8057324,
+    "??_EMap@WorldDominationTour@@": 7515952,
+    "??_GMap@WorldDominationTour@@": 7515952,
+    "__purecall": 4950368,
+    "??_EAbstractClass@@UAEPAXI@Z": 4260672,
+    "??_EMSShapeAnim@@UAEPAXI@Z": 5962944,
+    "??_EObjectClass@@UAEPAXI@Z": 6116672,
+    "_$E2": 5907984,
+    "_$E5": 5908032,
+    "_$E8": 5908064,
+    "_$E11": 5908096,
+    "_$E14": 5908128,
+    "_$E17": 5908160,
+    "_$E20": 5908192,
+    "_$E23": 5908256,
+    "_$E26": 5908304,
+    "_$E29": 5908352,
+    "_$E32": 5908400,
+    "_$E35": 5908416,
+    "_$E38": 5908448
+  },
+  "regions": [
+    {
+      "entry": 5907984,
+      "method": "005a2610",
+      "symbol": "_$E2",
+      "symbol_prefix": "_$E2",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 40,
+      "body_sha256": "a161aebfc2abe0b94dbcca34e7084847f069e94c856e3e0fdda322d5b4cbe9f2",
+      "padding_bytes": 8,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "e0466590c8c119e2ea9444690e7a3d3cbbff6129ba67ec7d06984888a14a4c4a",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "__real@8@40078000000000000000",
+          "target": 7972608,
+          "addend": 0,
+          "resolved": 7972608
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "__real@8@40008000000000000000",
+          "target": 7972600,
+          "addend": 0,
+          "resolved": 7972600
+        },
+        {
+          "offset": 13,
+          "kind": 20,
+          "symbol": "__CIpow",
+          "target": 7872944,
+          "addend": 0,
+          "resolved": 1964943
+        },
+        {
+          "offset": 26,
+          "kind": 20,
+          "symbol": "?unknown_sqrt_4ba410@@YANN@Z",
+          "target": 4957200,
+          "addend": 0,
+          "resolved": 4294016482
+        },
+        {
+          "offset": 32,
+          "kind": 6,
+          "symbol": "_unknown_geometry_diagonal",
+          "target": 10948824,
+          "addend": 0,
+          "resolved": 10948824
+        }
+      ],
+      "source_sha256": "3dd071c2c7efcd39492b3366f8e4c56c21c40db78ebffbbc877cbede4485fb8e",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_diagonal_init_005a2610.cpp",
+      "population": "population-455",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_diagonal_init_005a2610",
+      "source_order": 15967
+    },
+    {
+      "entry": 5908032,
+      "method": "005a2640",
+      "symbol": "_$E5",
+      "symbol_prefix": "_$E5",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 19,
+      "body_sha256": "cfdfdc0404a8b158cf1e31bcf8f41ff1ec34615aa8e2ddb105225b7631290df2",
+      "padding_bytes": 13,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "47b0039a9e76a1ffe4e6f99c707704a124f84dffdb6b51b075f416b7074e2d1c",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "_unknown_geometry_diagonal",
+          "target": 10948824,
+          "addend": 0,
+          "resolved": 10948824
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_unknown_geometry_sixty",
+          "target": 8021880,
+          "addend": 0,
+          "resolved": 8021880
+        },
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "_unknown_geometry_b",
+          "target": 10948928,
+          "addend": 0,
+          "resolved": 10948928
+        }
+      ],
+      "source_sha256": "ffe3dabeeccff694b3c5805dd6fa0ec4289b6e847d75ed3c3cdcd0b937ca1eeb",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_b_init_005a2640.cpp",
+      "population": "population-455",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_b_init_005a2640",
+      "source_order": 15968
+    },
+    {
+      "entry": 5908064,
+      "method": "005a2660",
+      "symbol": "_$E8",
+      "symbol_prefix": "_$E8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 19,
+      "body_sha256": "00f1ae8e7a76a6509a07f6f76342e8a94356e8de7899bfe8e44719b02ac80bc5",
+      "padding_bytes": 13,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "9beee8698a9948525c2985336f55e825dc6b992b1170e1bd568eb038003b1ff5",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "__real@8@3fff8000000000000000",
+          "target": 7972616,
+          "addend": 0,
+          "resolved": 7972616
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_unknown_geometry_b",
+          "target": 10948928,
+          "addend": 0,
+          "resolved": 10948928
+        },
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "_unknown_geometry_c",
+          "target": 10948880,
+          "addend": 0,
+          "resolved": 10948880
+        }
+      ],
+      "source_sha256": "e1965f6a331bac6c47cda8f38991c9237d208e2c7c56338fb6658d595670d313",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_c_init_005a2660.cpp",
+      "population": "population-455",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_c_init_005a2660",
+      "source_order": 15969
+    },
+    {
+      "entry": 5908096,
+      "method": "005a2680",
+      "symbol": "_$E11",
+      "symbol_prefix": "_$E11",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 19,
+      "body_sha256": "37fc2ef047a4d9427b7e8c705701b20dc5c1bde3d1e779b2115d9066bb220a24",
+      "padding_bytes": 13,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "773465c57583658004ab108e127b012ee57d94a4173580dfdb3d038397e5e8f0",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "_unknown_geometry_deg_to_rad",
+          "target": 8021888,
+          "addend": 0,
+          "resolved": 8021888
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "__real@8@4004b400000000000000",
+          "target": 7972624,
+          "addend": 0,
+          "resolved": 7972624
+        },
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "_unknown_geometry_angle45",
+          "target": 10948872,
+          "addend": 0,
+          "resolved": 10948872
+        }
+      ],
+      "source_sha256": "e90eab90593993db6c7823fb119d6a311e613599d2e8dd8e9b3aa11deadc9abf",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_angle45_init_005a2680.cpp",
+      "population": "population-455",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_angle45_init_005a2680",
+      "source_order": 15970
+    },
+    {
+      "entry": 5908128,
+      "method": "005a26a0",
+      "symbol": "_$E14",
+      "symbol_prefix": "_$E14",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 19,
+      "body_sha256": "359dfa99ed28d6fee25e02c01ef9b2af07b7df5a25b28c95685f60e009a7e913",
+      "padding_bytes": 13,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "24992e5e96c8f5533b59b2e3fc080314817385df2423f68a75c902527a46492b",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "_unknown_geometry_deg_to_rad",
+          "target": 8021888,
+          "addend": 0,
+          "resolved": 8021888
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "__real@8@4004f000000000000000",
+          "target": 7972632,
+          "addend": 0,
+          "resolved": 7972632
+        },
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "_unknown_geometry_angle60",
+          "target": 10948832,
+          "addend": 0,
+          "resolved": 10948832
+        }
+      ],
+      "source_sha256": "1177e627a4c4f82eac03e276c00f790f5ab31c20dffe42e58b8e3520a8d7db2d",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_angle60_init_005a26a0.cpp",
+      "population": "population-455",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_angle60_init_005a26a0",
+      "source_order": 15971
+    },
+    {
+      "entry": 5908160,
+      "method": "005a26c0",
+      "symbol": "_$E17",
+      "symbol_prefix": "_$E17",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 19,
+      "body_sha256": "7a940fa67a33fc5813a832738edf2eb100091da35de6d4df795a73f8399796d2",
+      "padding_bytes": 13,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "5c5909fbcab666d6ba33ee216617abd4e4c2306ba2c016103cdcc9dbd0b4b017",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "_unknown_geometry_deg_to_rad",
+          "target": 8021888,
+          "addend": 0,
+          "resolved": 8021888
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "__real@8@4005b400000000000000",
+          "target": 7972640,
+          "addend": 0,
+          "resolved": 7972640
+        },
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "_unknown_geometry_angle90",
+          "target": 10948792,
+          "addend": 0,
+          "resolved": 10948792
+        }
+      ],
+      "source_sha256": "c191cdccea1f09cc4ef1c3ec2aad09eba17b29c5156103e8e919be2df4f80e74",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_angle90_init_005a26c0.cpp",
+      "population": "population-455",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_angle90_init_005a26c0",
+      "source_order": 15972
+    },
+    {
+      "entry": 5908192,
+      "method": "005a26e0",
+      "symbol": "_$E20",
+      "symbol_prefix": "_$E20",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 49,
+      "body_sha256": "f0b53f14272f5e644c8a5d9194755e29cae02aa54f42eb2ca6329b612386c183",
+      "padding_bytes": 15,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "06fc6745328d99cfe75c49013d5768a227b5725aae56f71c3a36f2741619375c",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "_unknown_geometry_angle90",
+          "target": 10948792,
+          "addend": 0,
+          "resolved": 10948792
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_unknown_geometry_angle60",
+          "target": 10948832,
+          "addend": 0,
+          "resolved": 10948832
+        },
+        {
+          "offset": 19,
+          "kind": 20,
+          "symbol": "?unknown_math_4ba520@@YANN@Z",
+          "target": 4957472,
+          "addend": 0,
+          "resolved": 4294016553
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_unknown_geometry_diagonal",
+          "target": 10948824,
+          "addend": 0,
+          "resolved": 10948824
+        },
+        {
+          "offset": 34,
+          "kind": 6,
+          "symbol": "__real@8@3ffe8000000000000000",
+          "target": 7972648,
+          "addend": 0,
+          "resolved": 7972648
+        },
+        {
+          "offset": 39,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 1952261
+        },
+        {
+          "offset": 44,
+          "kind": 6,
+          "symbol": "_unknown_geometry_g",
+          "target": 10948936,
+          "addend": 0,
+          "resolved": 10948936
+        }
+      ],
+      "source_sha256": "5822b72d06b5f055d0a284db0233697b978ca1974afd783e78e23742356a34e2",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_g_init_005a26e0.cpp",
+      "population": "population-455",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_g_init_005a26e0",
+      "source_order": 15973
+    },
+    {
+      "entry": 5908256,
+      "method": "005a2720",
+      "symbol": "_$E23",
+      "symbol_prefix": "_$E23",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 33,
+      "body_sha256": "f6bf56e2ea55a411e0efafce312cf1cc2771537510c2f7ba1135a03f43e4dc49",
+      "padding_bytes": 15,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "e73088739d4dc30297e72d79107e965c33dbadb7d93eabb970043c0590e7fb3f",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "_unknown_geometry_g",
+          "target": 10948936,
+          "addend": 0,
+          "resolved": 10948936
+        },
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "__real@8@3ff78000000000000000",
+          "target": 7972656,
+          "addend": 0,
+          "resolved": 7972656
+        },
+        {
+          "offset": 19,
+          "kind": 20,
+          "symbol": "?unknown_math_4ba5b0@@YANN@Z",
+          "target": 4957616,
+          "addend": 0,
+          "resolved": 4294016633
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_unknown_geometry_h",
+          "target": 10948840,
+          "addend": 0,
+          "resolved": 10948840
+        }
+      ],
+      "source_sha256": "9094de014264cbe2a587ce1bdc911d52680f44740333e2c21d50e2a428f5146b",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_h_init_005a2720.cpp",
+      "population": "population-455",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_h_init_005a2720",
+      "source_order": 15974
+    },
+    {
+      "entry": 5908304,
+      "method": "005a2750",
+      "symbol": "_$E26",
+      "symbol_prefix": "_$E26",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 44,
+      "body_sha256": "9601e6c69299827bdfb569ed0474c0c7028e465531864e639a580a7fe4cb5813",
+      "padding_bytes": 4,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "8661e4d71ac6dbe7731df367a32ff70036d7f838085b6c180a396c1230a15259",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "_unknown_geometry_g",
+          "target": 10948936,
+          "addend": 0,
+          "resolved": 10948936
+        },
+        {
+          "offset": 22,
+          "kind": 6,
+          "symbol": "_unknown_geometry_diagonal",
+          "target": 10948824,
+          "addend": 0,
+          "resolved": 10948824
+        },
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "?unknown_math_4ba5b0@@YANN@Z",
+          "target": 4957616,
+          "addend": 0,
+          "resolved": 4294016574
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "_unknown_geometry_i",
+          "target": 10948864,
+          "addend": 0,
+          "resolved": 10948864
+        }
+      ],
+      "source_sha256": "e78e86bc17d0ea8f5cc179823e934e2c02863c34133c4205d984aef15393ab19",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_i_init_005a2750.cpp",
+      "population": "population-455",
+      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_i_init_005a2750",
+      "source_order": 15975
+    },
+    {
+      "entry": 5908352,
+      "method": "005a2780",
+      "symbol": "_$E29",
+      "symbol_prefix": "_$E29",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 39,
+      "body_sha256": "ced876a972c40a80b171fc2537c8719f71165a6bc2deed65b1bb117a48fa9ca0",
+      "padding_bytes": 9,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "b48b030275b63e46d64cfcf676432fd871b75ef34ffeff8739d09f23ca766c36",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "_unknown_geometry_g",
+          "target": 10948936,
+          "addend": 0,
+          "resolved": 10948936
+        },
+        {
+          "offset": 23,
+          "kind": 6,
+          "symbol": "__real@8@3ffe8000000000000000",
+          "target": 7972648,
+          "addend": 0,
+          "resolved": 7972648
+        },
+        {
+          "offset": 28,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 1952112
+        },
+        {
+          "offset": 33,
+          "kind": 6,
+          "symbol": "_unknown_geometry_j",
+          "target": 10948920,
+          "addend": 0,
+          "resolved": 10948920
+        }
+      ],
+      "source_sha256": "d7f5937aa4d79d50a09b7efc6b3fbd1530663c31baf0767c1404cf6883ac506b",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_j_init_005a2780.cpp",
+      "population": "population-455",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_j_init_005a2780",
+      "source_order": 15976
+    },
+    {
+      "entry": 5908400,
+      "method": "005a27b0",
+      "symbol": "_$E32",
+      "symbol_prefix": "_$E32",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 15,
+      "body_sha256": "9a871c95d08993346dab14c68b91fc598a06cb538c0ce474267f17ff25466d06",
+      "padding_bytes": 1,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "5544ed559919b763ceb444415935bfcd0d28bb36a2693b5b3b7426ac2908cabe",
+      "relocations": [
+        {
+          "offset": 4,
+          "kind": 6,
+          "symbol": "_unknown_geometry_k",
+          "target": 10948816,
+          "addend": 0,
+          "resolved": 10948816
+        },
+        {
+          "offset": 10,
+          "kind": 6,
+          "symbol": "_unknown_geometry_k",
+          "target": 10948816,
+          "addend": 2,
+          "resolved": 10948818
+        }
+      ],
+      "source_sha256": "65a29e3626d88eebcfcb0e790c9cedcc8d78e69941a1857d45e586fa122b586b",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_k_init_005a27b0.cpp",
+      "population": "population-455",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_k_init_005a27b0",
+      "source_order": 15977
+    },
+    {
+      "entry": 5908416,
+      "method": "005a27c0",
+      "symbol": "_$E35",
+      "symbol_prefix": "_$E35",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 18,
+      "body_sha256": "dde908fc6a9f60ec4e17848285d3172e1854b89ac6e30a700d8310d728783bab",
+      "padding_bytes": 14,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "ade5bf7eb9f7c83075b0cb3e95665f3f159921c1ea6bb69c04a0406b7a8ac6cd",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_unknown_geometry_l",
+          "target": 10948848,
+          "addend": 0,
+          "resolved": 10948848
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_unknown_geometry_l",
+          "target": 10948848,
+          "addend": 4,
+          "resolved": 10948852
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_unknown_geometry_l",
+          "target": 10948848,
+          "addend": 8,
+          "resolved": 10948856
+        }
+      ],
+      "source_sha256": "bdb2aa2ef47e3176c07cc8aa9b2fba5574badbd99e99a6112ee2f0413b272f71",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_l_init_005a27c0.cpp",
+      "population": "population-455",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_l_init_005a27c0",
+      "source_order": 15978
+    },
+    {
+      "entry": 5908448,
+      "method": "005a27e0",
+      "symbol": "_$E38",
+      "symbol_prefix": "_$E38",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 23,
+      "body_sha256": "f8ad8eaefb8aa5267201c52eaeb8ff91e364137349ab383c3f7756fc3f86d140",
+      "padding_bytes": 9,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "81d089c4c4925612cab2e81f1910852236f48980845e1d9117a4e665b68ee830",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_unknown_static_rect",
+          "target": 10948800,
+          "addend": 0,
+          "resolved": 10948800
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_unknown_static_rect",
+          "target": 10948800,
+          "addend": 4,
+          "resolved": 10948804
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_unknown_static_rect",
+          "target": 10948800,
+          "addend": 8,
+          "resolved": 10948808
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_unknown_static_rect",
+          "target": 10948800,
+          "addend": 12,
+          "resolved": 10948812
+        }
+      ],
+      "source_sha256": "71bed1cd461e1ca3ae46be2d9fe9694c010b923503891ade4f6f4eac0c556e9a",
+      "source": "src/recovered/header_statics/005a2610/HeaderStatics_static_rect_init_005a27e0.cpp",
+      "population": "population-455",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "HeaderStatics_static_rect_init_005a27e0",
+      "source_order": 15979
+    }
+  ]
+}

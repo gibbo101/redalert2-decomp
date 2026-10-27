@@ -1,0 +1,1117 @@
+{
+  "id": "population-60",
+  "population": {
+    "id": "population-60",
+    "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
+    "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
+    "historical_population_sha256": "70eabc76ad73972e9668cde549bd252528d384a7eea81472ed780fc89c4d7fba",
+    "historical_acceptance_sha256": "6054eb4cfa7912ebac95b1022ebffec8330dc4faa3fece15bd3b62c9641194c3"
+  },
+  "references": {
+    "?Open@BufferIOFileClass@@UAEHPBDH@Z": 4388640,
+    "?Error@RawFileClass@@UAEXHHPBD@Z": 6523696,
+    "?Open@RawFileClass@@UAEHPBDH@Z": 6523872,
+    "?Open@RawFileClass@@UAEHH@Z": 6523904,
+    "?Set_Name@RawFileClass@@UAEPBDPBD@Z": 6523760,
+    "?Is_Open@RawFileClass@@UBE_NXZ": 6526160,
+    "?Close@RawFileClass@@UAEXXZ": 6524240,
+    "__imp__CloseHandle@4": 7971284,
+    "__imp__CloseHandle": 7971284,
+    "__imp__GetLastError@0": 7971316,
+    "__imp__GetLastError": 7971316,
+    "?Create@RawFileClass@@UAEHXZ": 6525440,
+    "?Delete@RawFileClass@@UAEHXZ": 6525504,
+    "__imp__DeleteFileA@4": 7971112,
+    "__imp__DeleteFileA": 7971112,
+    "?Get_Date_Time@RawFileClass@@UAEKXZ": 6525600,
+    "__imp__FileTimeToDosDateTime@12": 7971096,
+    "__imp__FileTimeToDosDateTime": 7971096,
+    "__imp__GetFileInformationByHandle@8": 7971100,
+    "__imp__GetFileInformationByHandle": 7971100,
+    "__strdup": 7919638,
+    "_free": 7874024,
+    "?Size@RawFileClass@@UAEJXZ": 6525312,
+    "__imp__GetFileSize@8": 7971092,
+    "__imp__GetFileSize": 7971092,
+    "__imp__CreateFileA@28": 7971248,
+    "__imp__CreateFileA": 7971248,
+    "?Is_Available@RawFileClass@@UAE_NH@Z": 6524064,
+    "?Read@RawFileClass@@UAEJPAXJ@Z": 6524304,
+    "__imp__ReadFile@20": 7971088,
+    "__imp__ReadFile": 7971088,
+    "_RawFileReadStopOnError": 11232828,
+    "?Set_Date_Time@RawFileClass@@UAE_NK@Z": 6525680,
+    "__imp__SetFileTime@16": 7971104,
+    "__imp__SetFileTime": 7971104,
+    "__imp__DosDateTimeToFileTime@12": 7971232,
+    "__imp__DosDateTimeToFileTime": 7971232,
+    "__imp__WriteFile@20": 7971116,
+    "__imp__WriteFile": 7971116,
+    "__imp__SetFilePointer@16": 7971252,
+    "__imp__SetFilePointer": 7971252,
+    "?Seek@RawFileClass@@UAEJJH@Z": 6524848,
+    "?Write@RawFileClass@@UAEJPBXJ@Z": 6524544,
+    "?Open@BufferIOFileClass@@UAEHH@Z": 4388672,
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "?Is_Open@BufferIOFileClass@@UBE_NXZ": 4388608,
+    "?Get_Date_Time@FileClass@@UAEKXZ": 6522544,
+    "?Size@BufferIOFileClass@@UAEJXZ": 4390272,
+    "?Set_Name@BufferIOFileClass@@UAEPBDPBD@Z": 4388432,
+    "?Is_Available@BufferIOFileClass@@UAE_NH@Z": 4388576,
+    "?Write@BufferIOFileClass@@UAEJPBXJ@Z": 4388912,
+    "?Read@BufferIOFileClass@@UAEJPAXJ@Z": 4389504,
+    "?Seek@BufferIOFileClass@@UAEJJH@Z": 4390032,
+    "?Close@BufferIOFileClass@@UAEXXZ": 4390304,
+    "??_7FileClass@@6B@": 8031356,
+    "??_7RawFileClass@@6B@": 8031428,
+    "__purecall": 4950368,
+    "?File_Name@RawFileClass@@": 4200768,
+    "??_EFileClass@@": 6522576,
+    "??_ERawFileClass@@": 6526032,
+    "?Set_Date_Time@FileClass@@UAE_NK@Z": 6522560,
+    "??_GFileClass@@UAEPAXI@Z": 6522576,
+    "??_GRawFileClass@@UAEPAXI@Z": 6526032,
+    "??1RawFileClass@@UAE@XZ": 6523584,
+    "??0RawFileClass@@QAE@PBD@Z": 6523712,
+    "?Open@CDFileClass@@UAEHPBDH@Z": 4653648,
+    "?Open@CDFileClass@@UAEHH@Z": 4652560,
+    "?Set_Name@CDFileClass@@UAEPBDPBD@Z": 4653392,
+    "?Raw_Seek@RawFileClass@@": 6525904,
+    "?Bias@RawFileClass@@": 6525792,
+    "??_7CCFileClass@@6B@": 7972512
+  },
+  "regions": [
+    {
+      "entry": 6522544,
+      "method": "006386b0",
+      "symbol": "?Get_Date_Time@FileClass@@UAEKXZ",
+      "symbol_prefix": "?Get_Date_Time@FileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 3,
+      "body_sha256": "4bc724f3b1d0caf4fe369c18cba3102e6c4ea057f63fe1587e3973134a7f755e",
+      "padding_bytes": 13,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "33cb7c6b5695e070548b4e7f33d43173b10670c306067b684edf21470a662ef2",
+      "relocations": [],
+      "source_sha256": "9dd1a52d7e37248fb0fab7dbd9f4a11b2d20b81ef8a6c45689f353f3da9934c1",
+      "source": "src/recovered/classes/FileClass/FileClass_Get_Date_Time_006386b0.cpp",
+      "population": "population-60",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "FileClass_Get_Date_Time_006386b0",
+      "source_order": 7521
+    },
+    {
+      "entry": 6523696,
+      "method": "00638b30",
+      "symbol": "?Error@RawFileClass@@UAEXHHPBD@Z",
+      "symbol_prefix": "?Error@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 3,
+      "body_sha256": "dbd1a662565b07272069f88faadf4327acaf51b7d14f236c84c0a9679d07cef3",
+      "padding_bytes": 13,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "d26f751f58b065f1f8fb1e14ebfcf604de770fc3fc93ed889d234252f4668006",
+      "relocations": [],
+      "source_sha256": "e4aceac2eeecefd5daa3f0a7c9e355b613100b1fdcfe2a0af06e39858e00c09b",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Error_00638b30.cpp",
+      "population": "population-60",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Error_00638b30",
+      "source_order": 7525
+    },
+    {
+      "entry": 6523872,
+      "method": "00638be0",
+      "symbol": "?Open@RawFileClass@@UAEHPBDH@Z",
+      "symbol_prefix": "?Open@RawFileClass@@UAEHPBDH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 31,
+      "body_sha256": "f45305cea33ab353b459c35a817ba63f8969451fcce14d93ae058cd6451ea8c7",
+      "padding_bytes": 1,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "2c3aedddc038cc8cd00bb0a88b07eed1662155b4b18a88614b23503f75585155",
+      "relocations": [],
+      "source_sha256": "2d7edb3ef0db12643b6b082d7d1e738dfe668309fece08cf008f3ef8909de26e",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Open_00638be0.cpp",
+      "population": "population-60",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Open_00638be0",
+      "source_order": 7528
+    },
+    {
+      "entry": 6526160,
+      "method": "006394d0",
+      "symbol": "?Is_Open@RawFileClass@@UBE_NXZ",
+      "symbol_prefix": "?Is_Open@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 12,
+      "body_sha256": "2609cca8d26d7e3a64850ce31548ebcab35f1d539738bb9413599fc6fbdc9eed",
+      "padding_bytes": 4,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "ef6330443fb6ea8570e1b313719f133b4529128687ae3023dd5bf4c01f50026a",
+      "relocations": [],
+      "source_sha256": "f5a55749922778c13cc2a39fd344de668c550c32aa5db339a2efad07cd513b98",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Is_Open_006394d0.cpp",
+      "population": "population-60",
+      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Is_Open_006394d0",
+      "source_order": 7543
+    },
+    {
+      "entry": 6524240,
+      "method": "00638d50",
+      "symbol": "?Close@RawFileClass@@UAEXXZ",
+      "symbol_prefix": "?Close@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 56,
+      "body_sha256": "6bc55ba4c01915301261ae6b90cce7bb01190a1ef9ae8eef87d5f8bb00440377",
+      "padding_bytes": 8,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "666a1440f8b65fcced4d90c278d081399fe4de5213aa9a1dbb2774257b7acc28",
+      "relocations": [
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        }
+      ],
+      "source_sha256": "1acabbeaf6371b7d9ffad9613c539efcdd4b254788fbbd20ab480931ae630fcb",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Close_00638d50.cpp",
+      "population": "population-60",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Close_00638d50",
+      "source_order": 7531
+    },
+    {
+      "entry": 6525440,
+      "method": "00639200",
+      "symbol": "?Create@RawFileClass@@UAEHXZ",
+      "symbol_prefix": "?Create@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 56,
+      "body_sha256": "f88f76362e07f65a08428d7566ecc170a14479771ba14154c2e7f50171ec7c7c",
+      "padding_bytes": 8,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "c0898b63cbafc46473557b53472922daf13af8d3e85aa9c692e83d4bc3c4d79d",
+      "relocations": [],
+      "source_sha256": "0d4fcd182626c2158e4636433b1404a0b6a0d0eebea3c6c763a6625893c09faa",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Create_00639200.cpp",
+      "population": "population-60",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Create_00639200",
+      "source_order": 7536
+    },
+    {
+      "entry": 6525504,
+      "method": "00639240",
+      "symbol": "?Delete@RawFileClass@@UAEHXZ",
+      "symbol_prefix": "?Delete@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 95,
+      "body_sha256": "2fe212e5546d75f76359e967df0918c57cad2e508aa062ec2e612c0ea9204bf7",
+      "padding_bytes": 1,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "dc900204096cdf67e03e540895a14c70fcb98e50066e273191919e2b5b88cd44",
+      "relocations": [
+        {
+          "offset": 55,
+          "kind": 6,
+          "symbol": "__imp__DeleteFileA@4",
+          "target": 7971112,
+          "addend": 0,
+          "resolved": 7971112
+        },
+        {
+          "offset": 73,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        }
+      ],
+      "source_sha256": "c2c67ce6ab180f055761c23e7e1676ad2dd1b9265e31cf0a352689509e7fa9e9",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Delete_00639240.cpp",
+      "population": "population-60",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Delete_00639240",
+      "source_order": 7537
+    },
+    {
+      "entry": 6525600,
+      "method": "006392a0",
+      "symbol": "?Get_Date_Time@RawFileClass@@UAEKXZ",
+      "symbol_prefix": "?Get_Date_Time@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 77,
+      "body_sha256": "4523ca0be1f2354427fe1f7a9be1bcf4638e49374adb98a79d87ab869b83a4df",
+      "padding_bytes": 3,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "a2067caa85b5eb0ab38503c80fa07a6e4aa54e1790e88701b5794f438083db19",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "__imp__GetFileInformationByHandle@8",
+          "target": 7971100,
+          "addend": 0,
+          "resolved": 7971100
+        },
+        {
+          "offset": 39,
+          "kind": 6,
+          "symbol": "__imp__FileTimeToDosDateTime@12",
+          "target": 7971096,
+          "addend": 0,
+          "resolved": 7971096
+        }
+      ],
+      "source_sha256": "e7d9b9bd54c5243a0e303395b05f7a3a80522dc3523d7b90fe282c08312900a6",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Get_Date_Time_006392a0.cpp",
+      "population": "population-60",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Get_Date_Time_006392a0",
+      "source_order": 7538
+    },
+    {
+      "entry": 6523760,
+      "method": "00638b70",
+      "symbol": "?Set_Name@RawFileClass@@UAEPBDPBD@Z",
+      "symbol_prefix": "?Set_Name@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 111,
+      "body_sha256": "bf800735e062ad839cf98e550dbf06a0843203e33c77609e041393eed541b16a",
+      "padding_bytes": 1,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "5434d2ee086bfb8ff1623ff462add6eee51b313cb090f981d09cabb7164eab73",
+      "relocations": [
+        {
+          "offset": 20,
+          "kind": 20,
+          "symbol": "_free",
+          "target": 7874024,
+          "addend": 0,
+          "resolved": 1350240
+        },
+        {
+          "offset": 69,
+          "kind": 20,
+          "symbol": "__strdup",
+          "target": 7919638,
+          "addend": 0,
+          "resolved": 1395805
+        }
+      ],
+      "source_sha256": "e525e395ce4893c2412e64e95f16ccc16f9d39c3efa1f2c6bd65c4e86547ef07",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Set_Name_00638b70.cpp",
+      "population": "population-60",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Set_Name_00638b70",
+      "source_order": 7527
+    },
+    {
+      "entry": 6525312,
+      "method": "00639180",
+      "symbol": "?Size@RawFileClass@@UAEJXZ",
+      "symbol_prefix": "?Size@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 118,
+      "body_sha256": "d57501ea4e02ccb1e26ff8081aafaeb60f7c8a1cdad4d6c53148ef0a02e0f87e",
+      "padding_bytes": 10,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "5f2e7b04f66ba654c8c940ed543fb216288e793edd9366e4bc531d67882f0e05",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 6,
+          "symbol": "__imp__GetFileSize@8",
+          "target": 7971092,
+          "addend": 0,
+          "resolved": 7971092
+        },
+        {
+          "offset": 52,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        }
+      ],
+      "source_sha256": "a1289ad93a96ca98ee84f6a53054b33f60c16685337821862e45933bb96efc5f",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Size_00639180.cpp",
+      "population": "population-60",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Size_00639180",
+      "source_order": 7535
+    },
+    {
+      "entry": 6523904,
+      "method": "00638c00",
+      "symbol": "?Open@RawFileClass@@UAEHH@Z",
+      "symbol_prefix": "?Open@RawFileClass@@UAEHH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 155,
+      "body_sha256": "0adb38dd0dc5292aec0a9dbea593647063c45228258fc161d9dc9539804e0b25",
+      "padding_bytes": 5,
+      "full_extent_bytes": 160,
+      "full_extent_sha256": "8be450a4246e9ab85f67423c3c6446124c45145d4d75f167342848ab1d651910",
+      "relocations": [
+        {
+          "offset": 109,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        }
+      ],
+      "source_sha256": "31a64d0cd2835f258386a3a79ac8d119952249cbf64a4f43fd30cb05b7068828",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Open_00638c00.cpp",
+      "population": "population-60",
+      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Open_00638c00",
+      "source_order": 7529
+    },
+    {
+      "entry": 6524064,
+      "method": "00638ca0",
+      "symbol": "?Is_Available@RawFileClass@@UAE_NH@Z",
+      "symbol_prefix": "?Is_Available@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 171,
+      "body_sha256": "615e00db4971efa84dd2a30f8f2686732868c1831d059ad3af9351587e49aae2",
+      "padding_bytes": 5,
+      "full_extent_bytes": 176,
+      "full_extent_sha256": "a4cc5a4b30a5cc823f4a2e592a272a4cffc90f69e94dee83103ca59dc87dd1f3",
+      "relocations": [
+        {
+          "offset": 46,
+          "kind": 20,
+          "symbol": "?Open@RawFileClass@@UAEHH@Z",
+          "target": 6523904,
+          "addend": 0,
+          "resolved": 4294967086
+        },
+        {
+          "offset": 67,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        },
+        {
+          "offset": 107,
+          "kind": 6,
+          "symbol": "__imp__CreateFileA@28",
+          "target": 7971248,
+          "addend": 0,
+          "resolved": 7971248
+        },
+        {
+          "offset": 129,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        },
+        {
+          "offset": 147,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        }
+      ],
+      "source_sha256": "4b5839407b685874498d85c908f4c4011a666680628f6e6de4faac87c43329b0",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Is_Available_00638ca0.cpp",
+      "population": "population-60",
+      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Is_Available_00638ca0",
+      "source_order": 7530
+    },
+    {
+      "entry": 6524304,
+      "method": "00638d90",
+      "symbol": "?Read@RawFileClass@@UAEJPAXJ@Z",
+      "symbol_prefix": "?Read@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 238,
+      "body_sha256": "026aebbcadcd898a0f10653c30726e79b69f4e84644d08de5b3388f1ceb57aa4",
+      "padding_bytes": 2,
+      "full_extent_bytes": 240,
+      "full_extent_sha256": "80ad3eb5fec96d7d4a83388d6968ca1b6b6bbe3182dc2985639d52b628c65a67",
+      "relocations": [
+        {
+          "offset": 127,
+          "kind": 6,
+          "symbol": "__imp__ReadFile@20",
+          "target": 7971088,
+          "addend": 0,
+          "resolved": 7971088
+        },
+        {
+          "offset": 146,
+          "kind": 6,
+          "symbol": "_RawFileReadStopOnError",
+          "target": 11232828,
+          "addend": 0,
+          "resolved": 11232828
+        },
+        {
+          "offset": 168,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 211,
+          "kind": 6,
+          "symbol": "_RawFileReadStopOnError",
+          "target": 11232828,
+          "addend": 0,
+          "resolved": 11232828
+        }
+      ],
+      "source_sha256": "6e602930ec4698bec369ab6a9cc6fbeaa2a8c5a67de294b11f380792a9d034f3",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Read_00638d90.cpp",
+      "population": "population-60",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Read_00638d90",
+      "source_order": 7532
+    },
+    {
+      "entry": 6525680,
+      "method": "006392f0",
+      "symbol": "?Set_Date_Time@RawFileClass@@UAE_NK@Z",
+      "symbol_prefix": "?Set_Date_Time@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 101,
+      "body_sha256": "0462f1dc6216b6ab74316a10990b73edf641cc1f0bfe981cef69a69fa892f429",
+      "padding_bytes": 11,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "c066193c065c1bf4887a82a5071b81296d026d892150dd2471cba993708e2225",
+      "relocations": [
+        {
+          "offset": 22,
+          "kind": 6,
+          "symbol": "__imp__GetFileInformationByHandle@8",
+          "target": 7971100,
+          "addend": 0,
+          "resolved": 7971100
+        },
+        {
+          "offset": 46,
+          "kind": 6,
+          "symbol": "__imp__DosDateTimeToFileTime@12",
+          "target": 7971232,
+          "addend": 0,
+          "resolved": 7971232
+        },
+        {
+          "offset": 75,
+          "kind": 6,
+          "symbol": "__imp__SetFileTime@16",
+          "target": 7971104,
+          "addend": 0,
+          "resolved": 7971104
+        }
+      ],
+      "source_sha256": "89ae904c345007d5d0493e5ab9ab74bbfb413eada3ef900b9312a8aa17a50da1",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Set_Date_Time_006392f0.cpp",
+      "population": "population-60",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Set_Date_Time_006392f0",
+      "source_order": 7539
+    },
+    {
+      "entry": 6524848,
+      "method": "00638fb0",
+      "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+      "symbol_prefix": "?Seek@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 459,
+      "body_sha256": "2b06430e42753841d14943be9173a86f83419ffbfde22851c3f420a607e62df5",
+      "padding_bytes": 5,
+      "full_extent_bytes": 464,
+      "full_extent_sha256": "24755de9fe6da8d20946245f667695d9f041a067dc2daa9ffb5d8f0326bddc75",
+      "relocations": [
+        {
+          "offset": 77,
+          "kind": 6,
+          "symbol": "__imp__SetFilePointer@16",
+          "target": 7971252,
+          "addend": 0,
+          "resolved": 7971252
+        },
+        {
+          "offset": 156,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 229,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 321,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 423,
+          "kind": 6,
+          "symbol": "__imp__SetFilePointer@16",
+          "target": 7971252,
+          "addend": 0,
+          "resolved": 7971252
+        },
+        {
+          "offset": 442,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        }
+      ],
+      "source_sha256": "01fcc8b0069d54feec354d9627c881b13e68c52d818cc953d04f43b0a6cfae89",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Seek_00638fb0.cpp",
+      "population": "population-60",
+      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Seek_00638fb0",
+      "source_order": 7534
+    },
+    {
+      "entry": 6524544,
+      "method": "00638e80",
+      "symbol": "?Write@RawFileClass@@UAEJPBXJ@Z",
+      "symbol_prefix": "?Write@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 304,
+      "body_sha256": "b88771f431661033abdca779686742a0f31e8545d1e2301361f65b6a0e592e70",
+      "padding_bytes": 0,
+      "full_extent_bytes": 304,
+      "full_extent_sha256": "b88771f431661033abdca779686742a0f31e8545d1e2301361f65b6a0e592e70",
+      "relocations": [
+        {
+          "offset": 84,
+          "kind": 6,
+          "symbol": "__imp__WriteFile@20",
+          "target": 7971116,
+          "addend": 0,
+          "resolved": 7971116
+        },
+        {
+          "offset": 90,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 134,
+          "kind": 6,
+          "symbol": "__imp__SetFilePointer@16",
+          "target": 7971252,
+          "addend": 0,
+          "resolved": 7971252
+        }
+      ],
+      "source_sha256": "9aac144daef1dd1431c8551e61d40f89ab96e79f7406d6ca24e1772b0c911b72",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Write_00638e80.cpp",
+      "population": "population-60",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Write_00638e80",
+      "source_order": 7533
+    },
+    {
+      "entry": 6522560,
+      "method": "006386c0",
+      "symbol": "?Set_Date_Time@FileClass@@UAE_NK@Z",
+      "symbol_prefix": "?Set_Date_Time@FileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 5,
+      "body_sha256": "cc0e3cb106eb0fdec984d44a563d98c3da80700bbb8d2be4e66ebd54a9919626",
+      "padding_bytes": 11,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "9fa697955e6e50ca514c5e17cfc025b33f6dcb749299caabf3bb95c6a10fda65",
+      "relocations": [],
+      "source_sha256": "80f15873e8701513caa0c39d69f87726833bac89893ae4b4f3e41b5f0db70a67",
+      "source": "src/recovered/classes/FileClass/FileClass_Set_Date_Time_006386c0.cpp",
+      "population": "population-60",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "FileClass_Set_Date_Time_006386c0",
+      "source_order": 7522
+    },
+    {
+      "entry": 6523584,
+      "method": "00638ac0",
+      "symbol": "??1RawFileClass@@UAE@XZ",
+      "symbol_prefix": "??1RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 103,
+      "body_sha256": "fc98fbeae83ba33c05fa16dcde831a51f20998c032549709a949a49f866059de",
+      "padding_bytes": 9,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "2775eef7d333d0b052153c573a38088c5a4d1f9bf5a9df9a8c432dedf7ce7fcf",
+      "relocations": [
+        {
+          "offset": 5,
+          "kind": 6,
+          "symbol": "??_7RawFileClass@@6B@",
+          "target": 8031428,
+          "addend": 0,
+          "resolved": 8031428
+        },
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "??_7RawFileClass@@6B@",
+          "target": 8031428,
+          "addend": 24,
+          "resolved": 8031452
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        },
+        {
+          "offset": 43,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 77,
+          "kind": 20,
+          "symbol": "_free",
+          "target": 7874024,
+          "addend": 0,
+          "resolved": 1350359
+        },
+        {
+          "offset": 97,
+          "kind": 6,
+          "symbol": "??_7FileClass@@6B@",
+          "target": 8031356,
+          "addend": 0,
+          "resolved": 8031356
+        }
+      ],
+      "source_sha256": "27bbce9b598f483eeba2d5bbc823c22f327e9c63453687ef98fd16744e669039",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_destructor_00638ac0.cpp",
+      "population": "population-60",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_destructor_00638ac0",
+      "source_order": 7524
+    },
+    {
+      "entry": 6523712,
+      "method": "00638b40",
+      "symbol": "??0RawFileClass@@QAE@PBD@Z",
+      "symbol_prefix": "??0RawFileClass@@QAE@PBD@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 46,
+      "body_sha256": "a517db5eb5066a9f4a1c02aa2022da6a7fe3fbce0237eb44ebea52c247460afd",
+      "padding_bytes": 2,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "0033cac60127853411147d88c768d676163f3dcd8a91ac9577b9753f5d25d4c8",
+      "relocations": [
+        {
+          "offset": 39,
+          "kind": 6,
+          "symbol": "??_7RawFileClass@@6B@",
+          "target": 8031428,
+          "addend": 0,
+          "resolved": 8031428
+        }
+      ],
+      "source_sha256": "46f34b6287db84cb59c37cbbb233c08abbb5b6544438d9783a3618b6f6263ba8",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_RawFileClass_00638b40.cpp",
+      "population": "population-60",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_RawFileClass_00638b40",
+      "source_order": 7526
+    },
+    {
+      "entry": 6522576,
+      "method": "006386d0",
+      "symbol": "??_GFileClass@@UAEPAXI@Z",
+      "symbol_prefix": "??_GFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 32,
+      "body_sha256": "00ae89234c924b9a24d22ce00ded6e5efa92585ab182c67fc758db2677804e6f",
+      "padding_bytes": 0,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "00ae89234c924b9a24d22ce00ded6e5efa92585ab182c67fc758db2677804e6f",
+      "relocations": [
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "??_7FileClass@@6B@",
+          "target": 8031356,
+          "addend": 0,
+          "resolved": 8031356
+        },
+        {
+          "offset": 19,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1349204
+        }
+      ],
+      "source_sha256": "24ec61dd664ae3c563761988db036eb6eeb3b8932b72c72a7999b137324b177c",
+      "source": "src/recovered/classes/FileClass/FileClass_scalar_deleting_destructor_006386d0.cpp",
+      "population": "population-60",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "FileClass_scalar_deleting_destructor_006386d0",
+      "source_order": 7523
+    },
+    {
+      "entry": 6526032,
+      "method": "00639450",
+      "symbol": "??_GRawFileClass@@UAEPAXI@Z",
+      "symbol_prefix": "??_GRawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 124,
+      "body_sha256": "7cbb9372ab7dcfe7989976f3c37ab58c25c94a4d28a12235d278758508d88a7e",
+      "padding_bytes": 4,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "367ed939ca8950f7b34500b982fe5b84e3ab802bcf6ea1ea207548076f52bf48",
+      "relocations": [
+        {
+          "offset": 5,
+          "kind": 6,
+          "symbol": "??_7RawFileClass@@6B@",
+          "target": 8031428,
+          "addend": 0,
+          "resolved": 8031428
+        },
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "??_7RawFileClass@@6B@",
+          "target": 8031428,
+          "addend": 24,
+          "resolved": 8031452
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "__imp__CloseHandle@4",
+          "target": 7971284,
+          "addend": 0,
+          "resolved": 7971284
+        },
+        {
+          "offset": 43,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        },
+        {
+          "offset": 77,
+          "kind": 20,
+          "symbol": "_free",
+          "target": 7874024,
+          "addend": 0,
+          "resolved": 1347911
+        },
+        {
+          "offset": 101,
+          "kind": 6,
+          "symbol": "??_7FileClass@@6B@",
+          "target": 8031356,
+          "addend": 0,
+          "resolved": 8031356
+        },
+        {
+          "offset": 111,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1345656
+        }
+      ],
+      "source_sha256": "eba285663b8263c011325bed05309129ed9da4ba2cc17b79e5b1322bf8e14c73",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_scalar_deleting_destructor_00639450.cpp",
+      "population": "population-60",
+      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_scalar_deleting_destructor_00639450",
+      "source_order": 7542
+    },
+    {
+      "entry": 6525792,
+      "method": "00639360",
+      "symbol": "?Bias@RawFileClass@@QAEXHH@Z",
+      "symbol_prefix": "?Bias@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 106,
+      "body_sha256": "1145f7ccc36f126ab94f16d02fbd722311a1566087f306b3db8b0fefa20b4f9a",
+      "padding_bytes": 6,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "e3dcbf013fbe2c4921c13fc18d5dfa0553c13872f08171419bbbaec32802c6ee",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "?Size@RawFileClass@@UAEJXZ",
+          "target": 6525312,
+          "addend": 0,
+          "resolved": 4294966782
+        },
+        {
+          "offset": 97,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 4294966251
+        }
+      ],
+      "source_sha256": "1079bc722c7b8ba1976d207319a629277a4f4fd6b75a7308b78976b78684b65c",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Bias_00639360.cpp",
+      "population": "population-60",
+      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Bias_00639360",
+      "source_order": 7540
+    },
+    {
+      "entry": 6525904,
+      "method": "006393d0",
+      "symbol": "?Raw_Seek@RawFileClass@@IAEJJH@Z",
+      "symbol_prefix": "?Raw_Seek@RawFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 117,
+      "body_sha256": "2c3585f91ab2b6b6b3b7a72fc74a5b6b28ed4acd694187188c49bd0e02c06c76",
+      "padding_bytes": 11,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "5a0492bbac17c6c84240d1677b8397bd64450172703a7e7b2d6da9f58a61b7a3",
+      "relocations": [
+        {
+          "offset": 80,
+          "kind": 6,
+          "symbol": "__imp__SetFilePointer@16",
+          "target": 7971252,
+          "addend": 0,
+          "resolved": 7971252
+        },
+        {
+          "offset": 100,
+          "kind": 6,
+          "symbol": "__imp__GetLastError@0",
+          "target": 7971316,
+          "addend": 0,
+          "resolved": 7971316
+        }
+      ],
+      "source_sha256": "1b086a9ecbed51d3e55efbcfb13cc7ba9f98ea73040c49f1990d4c31a145a99a",
+      "source": "src/recovered/classes/RawFileClass/RawFileClass_Raw_Seek_006393d0.cpp",
+      "population": "population-60",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RawFileClass_Raw_Seek_006393d0",
+      "source_order": 7541
+    }
+  ]
+}

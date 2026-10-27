@@ -1,0 +1,67 @@
+{
+  "id": "population-39",
+  "population": {
+    "id": "population-39",
+    "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps_sha256": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
+    "historical_population_sha256": "da5d42af98f4493c144d3d0297fce3cc4420feba64909e6e32cafa72620dc1de",
+    "historical_acceptance_sha256": "dab56c14b8cbe629177a099d1a66d31fe1acc10759d92c63461b5ed15c63cc1e"
+  },
+  "references": {
+    "_DAT_00831440": 8590400,
+    "?FUN_00406f50@": 4222800,
+    "?FUN_0040a860@": 4237408
+  },
+  "regions": [
+    {
+      "entry": 4222800,
+      "method": "00406f50",
+      "symbol": "?FUN_00406f50@seed_00406f50@@YAXXZ",
+      "symbol_prefix": "?FUN_00406f50@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 21,
+      "body_sha256": "abd7b0fce0b979ed3335193c4c1d1f6f57f8eb804e3eaf9582a24b2025074de9",
+      "padding_bytes": 11,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "741bcaf9ff6e7911600840d448266ed3f0f57862fa7052ab3901dbcac0d534ce",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "_DAT_00831440",
+          "target": 8590400,
+          "addend": 0,
+          "resolved": 8590400
+        },
+        {
+          "offset": 10,
+          "kind": 20,
+          "symbol": "?FUN_0040a860@seed_00406f50@@YAXXZ",
+          "target": 4237408,
+          "addend": 0,
+          "resolved": 14594
+        },
+        {
+          "offset": 16,
+          "kind": 6,
+          "symbol": "_DAT_00831440",
+          "target": 8590400,
+          "addend": 0,
+          "resolved": 8590400
+        }
+      ],
+      "source_sha256": "9349daae871bcc8fec4ff45794a9f2811726c67079f15a7966800a9c2a3010bb",
+      "source": "src/recovered/00406f50.cpp",
+      "source_order": 6834,
+      "population": "population-39",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "ghidra-seed-sweep"
+    }
+  ]
+}

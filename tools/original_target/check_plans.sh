@@ -28,7 +28,7 @@ rsync -a --delete $REPO/src/ $WT/src/
 # Acceptance rewrites the manifest in place; retry until a complete copy parses.
 for i in 1 2 3 4 5 6 7 8 9 10; do
   rsync -a --delete $REPO/manifests/ $WT/manifests/
-  $PY -c "import json,sys; json.load(open(sys.argv[1]))" $WT/manifests/original_target.json 2>/dev/null && break
+  $PY -c "import sys; sys.path.insert(0, sys.argv[1]+'/tools/original_target'); import catalog_io; catalog_io.load(catalog_io.locate(sys.argv[1]), references=False)" $WT 2>/dev/null && break
   sleep 3
 done
 # Acceptance writes population mappings into private/original-target.*.json

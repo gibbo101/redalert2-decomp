@@ -2,6 +2,7 @@
 """Render reviewed connected-family models to NEW ignored candidates only."""
 import argparse
 import hashlib
+import catalog_io
 import json
 from pathlib import Path
 from source_paths import source_path
@@ -26,7 +27,7 @@ def render_family(repository, plan_path, template_dir, executable, evidence_path
     for name, expected in plan['evidence_sha256'].items():
         data=Path(evidence_paths[name]).read_bytes();require(digest(data)==expected,'Evidence drift: '+name);evidence[name]=data
     facts={r['entry']:r for r in json.loads(evidence['original_facts'])}
-    catalog=json.loads((repository/'manifests/original_target.json').read_bytes());require(catalog['target']==plan['target'],'Canonical target differs')
+    catalog=catalog_io.load(catalog_io.locate(repository), references=False);require(catalog['target']==plan['target'],'Canonical target differs')
     current={r['entry']:r for r in catalog['regions']};observed={};sources=[]
     require(len(current)==len(catalog['regions']) and plan['regions'] and
             len({r['entry'] for r in plan['regions']})==len(plan['regions']), 'Empty/duplicate mappings')

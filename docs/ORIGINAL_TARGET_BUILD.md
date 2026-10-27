@@ -1,10 +1,16 @@
 # Canonical original-target build
 
 The source of truth is tracked `src/recovered/`, selected by
-`manifests/original_target.json`. The active build executes tracked Python under
+the catalog `manifests/original_target/`. The active build executes tracked Python under
 `tools/original_target/`. Frozen old private source, manifests and receipts stay
 unchanged as provenance; they are not the source implementation consumed by this
-build. [Prior setup/evidence](history/ORIGINAL_TARGET_BUILD_HISTORY_20261020.md) and
+build. The catalog is sharded by population (`index.json` holds the global keys,
+the populations and region order and every shard's SHA-256;
+`populations/<id>.json` holds a population's entry, reference table and
+regions). Tools load and dump it only through `tools/original_target/catalog_io.py`,
+which presents the same dictionary the former monolithic
+`manifests/original_target.json` did and rewrites only changed shards; the build
+receipt's `canonical_manifest_sha256` is the index's hash. [Prior setup/evidence](history/ORIGINAL_TARGET_BUILD_HISTORY_20261020.md) and
 [A10](history/ORIGINAL_TARGET_BATCH_20261020_A10.md) retain the historical commands.
 
 ## Local inputs

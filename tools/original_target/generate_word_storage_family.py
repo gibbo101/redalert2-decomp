@@ -7,6 +7,7 @@ No compiler, original-code execution or historical ignored Python is invoked.
 """
 import argparse
 import hashlib
+import catalog_io
 import json
 from pathlib import Path
 from source_paths import source_path
@@ -57,7 +58,7 @@ def render_family(repository, plan_path, template_path, executable, evidence_pat
             'Held entries differ; do not generate refused source')
     require(set(ready) == {row['entry'] for row in plan['regions']}, 'Planned source entries differ')
     require(len({row['entry'] for row in plan['regions']}) == len(plan['regions']), 'Duplicate source entries')
-    catalog = json.loads((repository / 'manifests/original_target.json').read_bytes())
+    catalog = catalog_io.load(catalog_io.locate(repository), references=False)
     require(catalog['target'] == plan['target'], 'Wrong canonical target')
     current = {row['entry']: row for row in catalog['regions']}
     sources = []

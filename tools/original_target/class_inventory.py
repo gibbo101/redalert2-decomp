@@ -23,6 +23,7 @@ miss slots that point at unanalysed code.
 import argparse
 from bisect import bisect_right
 from collections import Counter
+import catalog_io
 import json
 import re
 from pathlib import Path
@@ -331,7 +332,7 @@ def main():
     from verify_manifest import Audit
     config = json.loads(args.config.read_bytes())
     audit = Audit(REPOSITORY, config['executable'])
-    catalog = json.loads((REPOSITORY / 'manifests/original_target.json').read_bytes())
+    catalog = catalog_io.load(catalog_io.locate(REPOSITORY), references=False)
     accepted = {r['entry']: r['body_bytes'] for r in catalog['regions']}
     decoder = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_32)
     tables = analyse(audit.pe, Inventory().all_functions(), accepted, decoder, audit.original)

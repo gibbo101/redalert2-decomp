@@ -1,0 +1,67 @@
+{
+  "id": "population-132",
+  "population": {
+    "id": "population-132",
+    "inventory_sha256": "64e505f02b99657a96c22ff4602564a6c06cd555a4184ca7ac4abfafd9d6984c",
+    "gaps_sha256": "6abb8d09762db7f619a598014d7439646978802686f684d9ca741062e2d74b95",
+    "historical_population_sha256": "8c20b0449e2a6d094d7a90ade2fa8fd7838fcac4d91211c02511bad799f72848",
+    "historical_acceptance_sha256": "2e965707ab3081964b0d1a53c24eba60198ec1d971370f7e73232ab496a883ed"
+  },
+  "references": {
+    "_DAT_00a40cd4": 10751188,
+    "_DAT_00a40ce0": 10751200,
+    "?FUN_0052b650@": 5420624
+  },
+  "regions": [
+    {
+      "entry": 5420624,
+      "method": "0052b650",
+      "symbol": "?FUN_0052b650@seed_0052b650@@YAXXZ",
+      "symbol_prefix": "?FUN_0052b650@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 52,
+      "body_sha256": "018d0c74f71eed68e3158eb6ac4bd1004c61656a962e0a2735de6546e20298ff",
+      "padding_bytes": 12,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "fafddff9923bb253e23c579ad29d9410480f8ca01d9574204d8f6fb8ed6fcf12",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "_DAT_00a40ce0",
+          "target": 10751200,
+          "addend": 0,
+          "resolved": 10751200
+        },
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "_DAT_00a40cd4",
+          "target": 10751188,
+          "addend": 0,
+          "resolved": 10751188
+        },
+        {
+          "offset": 42,
+          "kind": 6,
+          "symbol": "_DAT_00a40ce0",
+          "target": 10751200,
+          "addend": 0,
+          "resolved": 10751200
+        }
+      ],
+      "source_sha256": "ffb1da08ff5335adc6d018b71bfd3e5cc85b9cf0da1237196375008183dc11f2",
+      "source": "src/recovered/0052b650.cpp",
+      "source_order": 11327,
+      "population": "population-132",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "ghidra-seed-adjusted"
+    }
+  ]
+}

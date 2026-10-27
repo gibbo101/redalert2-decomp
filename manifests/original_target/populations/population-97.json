@@ -1,0 +1,241 @@
+{
+  "id": "population-97",
+  "population": {
+    "id": "population-97",
+    "inventory_sha256": "51aef29728068080e83d57cd7828e53d360656c0da3117662ccffc6880d04bf0",
+    "gaps_sha256": "493c3e23e66ceb14e20e67a635b39ea6c225c44f00b30230179431b8f066a369",
+    "historical_population_sha256": "fa6c036c09a283e303f6cb7dc4ef5f79d5f59ad3b50d508d4895feae97b5df8b",
+    "historical_acceptance_sha256": "d98c36cea26a660712a23ac33f518fb771afca7be40b7fb1c4b56e696745b588"
+  },
+  "references": {
+    "_CLSID_Blowfish": 8002160,
+    "_IID_IUnknown": 8185360,
+    "_IID_IBlowfish": 8189360,
+    "__imp__CoCreateInstance@20": 7972336,
+    "__imp__OleRun@4": 7972340,
+    "?_com_issue_error@@YGXJ@Z": 7952704,
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "?Release@Wstring@@QAEXXZ": 7792176,
+    "__imp__CoCreateInstance": 7972336,
+    "__imp__OleRun": 7972340,
+    "??_7BlowPipe@@6B@": 8028576,
+    "??0BlowfishEngine@@QAE@XZ": 4412800,
+    "??1BlowfishEngine@@QAE@XZ": 4412912,
+    "??_GBlowPipe@@UAEPAXI@Z": 6356336,
+    "??_EBlowPipe@@UAEPAXI@Z": 6356336,
+    "?Decrypt@BlowfishEngine@@QAEHPBXHPAX@Z": 4413024,
+    "?Decrypt@PKey@@QBEHPBXHPAX@Z": 6354512,
+    "?Encrypt@BlowfishEngine@@QAEHPBXHPAX@Z": 4412976,
+    "?Encrypt@PKey@@QBEHPBXHPAX@Z": 6354208,
+    "?Submit_Key@BlowfishEngine@@QAEXPBXH@Z": 4412928
+  },
+  "regions": [
+    {
+      "entry": 4412800,
+      "method": "00435580",
+      "symbol": "??0BlowfishEngine@@QAE@XZ",
+      "symbol_prefix": "??0BlowfishEngine@@QAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 110,
+      "body_sha256": "cf94b51955fc016b446c25de605cd7545e2b75c7afb5c0d5d47d50e761f9aa2f",
+      "padding_bytes": 2,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "6cf64aa369454263b5553555147e9e53681b0115b6edb576338048d36b27bfa6",
+      "relocations": [
+        {
+          "offset": 9,
+          "kind": 6,
+          "symbol": "_IID_IUnknown",
+          "target": 8185360,
+          "addend": 0,
+          "resolved": 8185360
+        },
+        {
+          "offset": 20,
+          "kind": 6,
+          "symbol": "_CLSID_Blowfish",
+          "target": 8002160,
+          "addend": 0,
+          "resolved": 8002160
+        },
+        {
+          "offset": 32,
+          "kind": 6,
+          "symbol": "__imp__CoCreateInstance@20",
+          "target": 7972336,
+          "addend": 0,
+          "resolved": 7972336
+        },
+        {
+          "offset": 49,
+          "kind": 6,
+          "symbol": "__imp__OleRun@4",
+          "target": 7972340,
+          "addend": 0,
+          "resolved": 7972340
+        },
+        {
+          "offset": 65,
+          "kind": 6,
+          "symbol": "_IID_IBlowfish",
+          "target": 8189360,
+          "addend": 0,
+          "resolved": 8189360
+        },
+        {
+          "offset": 100,
+          "kind": 20,
+          "symbol": "?_com_issue_error@@YGXJ@Z",
+          "target": 7952704,
+          "addend": 0,
+          "resolved": 3539800
+        }
+      ],
+      "source_sha256": "4a5868ee457cb68519ea54d2cf52352cf0acc00f531e83bf861db355ac1849bc",
+      "source": "src/recovered/classes/BlowfishEngine/BlowfishEngine_constructor_00435580.cpp",
+      "population": "population-97",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BlowfishEngine_constructor_00435580",
+      "source_order": 10604
+    },
+    {
+      "entry": 4412912,
+      "method": "004355f0",
+      "symbol": "??1BlowfishEngine@@QAE@XZ",
+      "symbol_prefix": "??1BlowfishEngine@@QAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 13,
+      "body_sha256": "75d77bd0a3a4afb5d4a2bf6084d52171f3e5b72dcc4a78108c73cb70fde0c354",
+      "padding_bytes": 3,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "2d8680bfffcf74534c3ad8b2508de5c0eaf9cd2fbe557725e7d4d6e4d2abbbf1",
+      "relocations": [],
+      "source_sha256": "5de5591ad265c0c3b48c8a377f9eb7acde18f2aad6c127facba916ae15aa3ef2",
+      "source": "src/recovered/classes/BlowfishEngine/BlowfishEngine_destructor_004355f0.cpp",
+      "population": "population-97",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BlowfishEngine_destructor_004355f0",
+      "source_order": 10605
+    },
+    {
+      "entry": 4412928,
+      "method": "00435600",
+      "symbol": "?Submit_Key@BlowfishEngine@@QAEXPBXH@Z",
+      "symbol_prefix": "?Submit_Key@BlowfishEngine@@QAEXPBXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 40,
+      "body_sha256": "ec3b11ba327a11d3f29d6e03f22f099b8d784262d1e5731e4f23bd7e291f7279",
+      "padding_bytes": 8,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "a4d7374c6d3fa02970586a4136fc2c210651f5729761d49711a138f5f30f265b",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "?_com_issue_error@@YGXJ@Z",
+          "target": 7952704,
+          "addend": 0,
+          "resolved": 3539758
+        }
+      ],
+      "source_sha256": "5e19f1a69f66a081e7c1e34d87848c3906803f26c59ac8cd854e2c6f32d6d52b",
+      "source": "src/recovered/classes/BlowfishEngine/BlowfishEngine_Submit_Key_00435600.cpp",
+      "population": "population-97",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BlowfishEngine_Submit_Key_00435600",
+      "source_order": 10606
+    },
+    {
+      "entry": 4412976,
+      "method": "00435630",
+      "symbol": "?Encrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+      "symbol_prefix": "?Encrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 47,
+      "body_sha256": "2e4381401f6e3eac9e36f7bfe94e50fb81e08024fe8deba79471f3e7ef561c03",
+      "padding_bytes": 1,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "cd12f51d12fd15117dca6b554a4be5fed51f76c5e45ac7a9b71433c0de1c5c17",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "?_com_issue_error@@YGXJ@Z",
+          "target": 7952704,
+          "addend": 0,
+          "resolved": 3539710
+        }
+      ],
+      "source_sha256": "36ec4d61730be227f87b5c5ed119275732966913e49db2a133b3a49630dbe305",
+      "source": "src/recovered/classes/BlowfishEngine/BlowfishEngine_Encrypt_00435630.cpp",
+      "population": "population-97",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BlowfishEngine_Encrypt_00435630",
+      "source_order": 10607
+    },
+    {
+      "entry": 4413024,
+      "method": "00435660",
+      "symbol": "?Decrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+      "symbol_prefix": "?Decrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 47,
+      "body_sha256": "1f62887a9d471c499dbf275f5172d58209447da442b523fbe027a9da3e124185",
+      "padding_bytes": 1,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "385b81efe408dfdac2e677f63cd42ca9437d6903848310ad7b0099f2ab3671a9",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "?_com_issue_error@@YGXJ@Z",
+          "target": 7952704,
+          "addend": 0,
+          "resolved": 3539662
+        }
+      ],
+      "source_sha256": "5c32b24de161b905bace9ea982b141609b1f59844d209f4e7b482766196012f9",
+      "source": "src/recovered/classes/BlowfishEngine/BlowfishEngine_Decrypt_00435660.cpp",
+      "population": "population-97",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BlowfishEngine_Decrypt_00435660",
+      "source_order": 10608
+    }
+  ]
+}

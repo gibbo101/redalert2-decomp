@@ -1137,7 +1137,7 @@ game classes. The completed catch-up changed **823 already-accepted sources**
 without changing matching coverage. Later A12 adds19 regions and A13 adds7 connected regions, described below. Those original823have descriptive actual filenames
 with stable address suffixes under `address_offsets/`, `word_sequences/` and
 `persistence/`. This index and the [family map](../manifests/source_families.json)
-supplement the purpose directories in the actual source tree. The [canonical manifest](../manifests/original_target.json)
+supplement the purpose directories in the actual source tree. The [canonical catalog](../manifests/original_target/)
 is authoritative for every entry's source, symbol, population/options and hashes.
 
 | Supported purpose | Sources | Representative named entry and source | Existing evidence |
@@ -1152,9 +1152,10 @@ current descriptive names, decorated symbols and source paths. To list a family:
 
 ```sh
 python3 - <<'PY'
-import json
-from pathlib import Path
-catalog = json.loads(Path('manifests/original_target.json').read_text())
+import sys
+sys.path.insert(0, 'tools/original_target')
+import catalog_io
+catalog = catalog_io.load(catalog_io.locate('.'))
 for row in catalog['regions']:
     if row.get('source_quality_family') == 'word-sequence-search':
         print(hex(row['entry']), row['semantic_name'], row['source'])

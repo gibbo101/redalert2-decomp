@@ -1,0 +1,40 @@
+{
+  "id": "population-147",
+  "population": {
+    "id": "population-147",
+    "inventory_sha256": "8c79250f04edc643d99f0a7d4a2b6ebb2de3e020887c2014d64858c94b181933",
+    "gaps_sha256": "ed07c398992fdbeb45ec9460c1597b895e0364c878fcb51fc2ec8f4e042e2590",
+    "historical_population_sha256": "ef021d016977d82a8f6b53db5ae90c7b920d6d8f122a0b9a1e46f4a5905524be",
+    "historical_acceptance_sha256": "36a1cc0ebd8166896964bda98d1e1f1a363afdd16eb913f9ac0118526f63ceec"
+  },
+  "references": {
+    "?FUN_00406fc0@": 4222912
+  },
+  "regions": [
+    {
+      "entry": 4222912,
+      "method": "00406fc0",
+      "symbol": "?FUN_00406fc0@seed_00406fc0@@YIHH@Z",
+      "symbol_prefix": "?FUN_00406fc0@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 18,
+      "body_sha256": "4275025b0e15f1fad768cf8e4f6d114b3c1660f9eae3959a3aec40f85875e336",
+      "padding_bytes": 14,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "4dadaee8af5eef88b8ebaab779c26ac3653b9011fb84c3fef06eea78ca157bf9",
+      "relocations": [],
+      "source_sha256": "ace20d19456a8a8bbb1603e69cb40c72e6a07e12fc61e0fc5b9aa5568fe7e547",
+      "source": "src/recovered/00406fc0.cpp",
+      "source_order": 11607,
+      "population": "population-147",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "ghidra-seed-adjusted"
+    }
+  ]
+}

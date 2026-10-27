@@ -1,0 +1,1580 @@
+{
+  "id": "population-26",
+  "population": {
+    "id": "population-26",
+    "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps_sha256": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
+    "historical_population_sha256": "e0583adc766c440261eff72cdcf3f70c291c84ef9e0e5f42ddacb88bd68064bb",
+    "historical_acceptance_sha256": "d180a97181ae0353d05f5488f91df960ccd9e67bbc32862495861974dcf40c9c"
+  },
+  "references": {
+    "_ra2_iid_ipersist_stream": 8060112,
+    "_ra2_ole_save_to_stream": 7972328
+  },
+  "regions": [
+    {
+      "entry": 6652096,
+      "method": "6580c0",
+      "symbol": "@SavePersistableCollection_006580c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006580c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006580c0.cpp",
+      "source_sha256": "46bcebd68abfee436c5022cf1c3c9a26d24d910921e24e0f4b97dc6d14dc6385",
+      "source_order": 4749,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "0f602c30ec0050db7cce9985e56f8be8e0035d4a4f3df6fd28f5b01ca87f10d1",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006580c0",
+      "catchup_previous_symbol": "@recover_6580c0@8",
+      "catchup_previous_source_sha256": "2d597ebd36f0cf2b48103d396adc7669f82955cb3373bedb8264005aafa56cc0"
+    },
+    {
+      "entry": 6652224,
+      "method": "658140",
+      "symbol": "@SavePersistableCollection_00658140@8",
+      "symbol_prefix": "@SavePersistableCollection_00658140@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658140.cpp",
+      "source_sha256": "515991e747a2169363ee33733ea1230dcd925c9d6770521d410ccaa595401dba",
+      "source_order": 4750,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "f362e4c6acfba094740ccc855eee4bcd375db9a6ef702a8e17ac66359d0de1b1",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658140",
+      "catchup_previous_symbol": "@recover_658140@8",
+      "catchup_previous_source_sha256": "0ac2318df89e80545ba881837a0f49372cbf6ddbd64b19596936492a251bb753"
+    },
+    {
+      "entry": 6652352,
+      "method": "6581c0",
+      "symbol": "@SavePersistableCollection_006581c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006581c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006581c0.cpp",
+      "source_sha256": "f21c01f498b2dfc83255a06bb56b77a12392960a5659c98478dd20d5ade770bd",
+      "source_order": 4751,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "b69966207eb73bccb206e013a9b5aa28e17eeedb73e4173fa505f5763a1fc975",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006581c0",
+      "catchup_previous_symbol": "@recover_6581c0@8",
+      "catchup_previous_source_sha256": "b472efb99c8a13b1af325f3efda20701f441707ce2ca40a2eca7ce6f15a6f0ee"
+    },
+    {
+      "entry": 6652480,
+      "method": "658240",
+      "symbol": "@SavePersistableCollection_00658240@8",
+      "symbol_prefix": "@SavePersistableCollection_00658240@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658240.cpp",
+      "source_sha256": "9ffaba2d015f366fc77d0c72158e3fef8aa6d432f1632c97afd276d453d0795b",
+      "source_order": 4752,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "fb48c196d1090810b7f812ec2368a1a1921d537d5f29cb37df52f6bd3ab395b1",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658240",
+      "catchup_previous_symbol": "@recover_658240@8",
+      "catchup_previous_source_sha256": "fc0d91fc821a5e6f9bb4d9e8b0ced2049d06c9229b1533bf75a1a8c2ccbbc9bf"
+    },
+    {
+      "entry": 6652608,
+      "method": "6582c0",
+      "symbol": "@SavePersistableCollection_006582c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006582c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006582c0.cpp",
+      "source_sha256": "099d04e955d6f12b4a9b375b7c24428116d128cfa1b81d474feff0228168c617",
+      "source_order": 4753,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "63c47bdd9217088bf0ee1c9361a48f15953e23e45e76d396985404b4c855c15c",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006582c0",
+      "catchup_previous_symbol": "@recover_6582c0@8",
+      "catchup_previous_source_sha256": "93087d6a36d51fee8d101414754ac4e5123bcaab95973bcc46b8d74b268a3394"
+    },
+    {
+      "entry": 6652736,
+      "method": "658340",
+      "symbol": "@SavePersistableCollection_00658340@8",
+      "symbol_prefix": "@SavePersistableCollection_00658340@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658340.cpp",
+      "source_sha256": "494cd4bfb326cdda13c0e392179657ce6ab2e7d23908e293ba129ca20694e1c2",
+      "source_order": 4754,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "d7db4c9aaaa969524d240872fcb98e8109742a79e5ac026d5e98d8e2ccabbcf7",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658340",
+      "catchup_previous_symbol": "@recover_658340@8",
+      "catchup_previous_source_sha256": "8604b0d96c4851f8efebe894d71aac98845f08f17edc084dbe3029ed54cc50d7"
+    },
+    {
+      "entry": 6652864,
+      "method": "6583c0",
+      "symbol": "@SavePersistableCollection_006583c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006583c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006583c0.cpp",
+      "source_sha256": "80118cbd331b009f7c4a3ed02feac6ccc02fef093142cbeea6ed74825812c5d8",
+      "source_order": 4755,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "235cb3cea623405279d70b6f1cbea8df8d22acbca376457a0501c7688a1c0835",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006583c0",
+      "catchup_previous_symbol": "@recover_6583c0@8",
+      "catchup_previous_source_sha256": "e0f9b015b97f61a0bfa4187fb3cf3dace4f9226a7888a7c65e492f678266f009"
+    },
+    {
+      "entry": 6652992,
+      "method": "658440",
+      "symbol": "@SavePersistableCollection_00658440@8",
+      "symbol_prefix": "@SavePersistableCollection_00658440@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658440.cpp",
+      "source_sha256": "ff464a41d95bd4af7994eb933342dc6faa46f0bbca8cd7cd977ac8bbda830788",
+      "source_order": 4756,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "834f3ef711ff8d12f4630acb609768f77dbd7c0a211087cfbe116893a5de98cc",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658440",
+      "catchup_previous_symbol": "@recover_658440@8",
+      "catchup_previous_source_sha256": "6541384f9dff8a08f19f2d89785a4ff3da0c5d3340b4dc3906ca108030540765"
+    },
+    {
+      "entry": 6653120,
+      "method": "6584c0",
+      "symbol": "@SavePersistableCollection_006584c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006584c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006584c0.cpp",
+      "source_sha256": "be0aa405f996f87261eb7170105c033f38f11b80320970fa933592f6c352db2e",
+      "source_order": 4757,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "07a7a67dc6e9f8ffc7a8c23ecd997969a4efb6e60d9460958604b8991df2b3ad",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006584c0",
+      "catchup_previous_symbol": "@recover_6584c0@8",
+      "catchup_previous_source_sha256": "a9d341ccc566d8f6e3b6ba06d9fd4155f5c175d185f4f379feefc6332f6e79eb"
+    },
+    {
+      "entry": 6653248,
+      "method": "658540",
+      "symbol": "@SavePersistableCollection_00658540@8",
+      "symbol_prefix": "@SavePersistableCollection_00658540@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658540.cpp",
+      "source_sha256": "1a736fc34000fe4871d547a4798e4faaff7777bd0a3caa1753dec9c16b153ec8",
+      "source_order": 4758,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "a298de5cea9523fd354e2038358fe5be044578e4c5bb505bfde5d91e14015bc6",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658540",
+      "catchup_previous_symbol": "@recover_658540@8",
+      "catchup_previous_source_sha256": "18f283d931ae7153198d370c65db9df900a50d8f66efa1d981a901a2e90a36b7"
+    },
+    {
+      "entry": 6653376,
+      "method": "6585c0",
+      "symbol": "@SavePersistableCollection_006585c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006585c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006585c0.cpp",
+      "source_sha256": "4b70bbb60011188635d7d72ad35ccdcce238755e52fffb8ee6a927642a618dd8",
+      "source_order": 4759,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "52d1e33d1c84bd811c81f1653e03d6eb7fe5ad220382bdb8a80fb63b7b4641c7",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006585c0",
+      "catchup_previous_symbol": "@recover_6585c0@8",
+      "catchup_previous_source_sha256": "4033cd7d31da9bc2252fc5201e6eb8029061546df3d793afefcf4d4eee52866c"
+    },
+    {
+      "entry": 6653504,
+      "method": "658640",
+      "symbol": "@SavePersistableCollection_00658640@8",
+      "symbol_prefix": "@SavePersistableCollection_00658640@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658640.cpp",
+      "source_sha256": "a2bafab08696de8ff6b95b9d8d40dff3797a9ac1a1fc344c19fcbe202d8fb1b6",
+      "source_order": 4760,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "e6f168530e9cb5677091e521ddabc2fe7788b84a587ceab2faef3e9c21c2ff8b",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658640",
+      "catchup_previous_symbol": "@recover_658640@8",
+      "catchup_previous_source_sha256": "bb8cb49eefb4485ef08f2726b4c5c3ff357c1779706952d94cf9fc7003714ccc"
+    },
+    {
+      "entry": 6653632,
+      "method": "6586c0",
+      "symbol": "@SavePersistableCollection_006586c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006586c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006586c0.cpp",
+      "source_sha256": "4ede806f21cbd0edfac43fb76fa8cf481b6017f97495f6c845c8bbbfaacb8a08",
+      "source_order": 4761,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "2f5e1fba8c5186490d4fdcd7ba52e37b4ab62ed98fee79cabefeb43d1e878d2a",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006586c0",
+      "catchup_previous_symbol": "@recover_6586c0@8",
+      "catchup_previous_source_sha256": "75661233abfc69ce2343896d1c0f0835aabee4b4c0a69a2d5633fdd7442c9954"
+    },
+    {
+      "entry": 6653760,
+      "method": "658740",
+      "symbol": "@SavePersistableCollection_00658740@8",
+      "symbol_prefix": "@SavePersistableCollection_00658740@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658740.cpp",
+      "source_sha256": "ba4ed2c0a646e5b330e68433e38b142bc6f13624f5f0547e9375a79ce5a1eda1",
+      "source_order": 4762,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "04bc9bf14dd6e20ef738c222b0c43b267883a5b46b5df7c0a51c06e3a2e46399",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658740",
+      "catchup_previous_symbol": "@recover_658740@8",
+      "catchup_previous_source_sha256": "0dd1b26b9317376dcea310e818b884ba0c0562dc0e08174fd136a213c050b82d"
+    },
+    {
+      "entry": 6653888,
+      "method": "6587c0",
+      "symbol": "@SavePersistableCollection_006587c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006587c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006587c0.cpp",
+      "source_sha256": "3342b3c3efc9f131b65121ed90fede961031ef6d131c6ad45c78a38f0900f01f",
+      "source_order": 4763,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "ea5d225881df0d85affa668106051a439ad1daf91768840c8ab09477430416c9",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006587c0",
+      "catchup_previous_symbol": "@recover_6587c0@8",
+      "catchup_previous_source_sha256": "fa737649bbaaafe4836f9d005fa7c42360de8fa14363c8ea3beb36971f51019f"
+    },
+    {
+      "entry": 6654016,
+      "method": "658840",
+      "symbol": "@SavePersistableCollection_00658840@8",
+      "symbol_prefix": "@SavePersistableCollection_00658840@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658840.cpp",
+      "source_sha256": "e1487536da4e06ad2d816e62450ed294d3fbdf6a909172b8a0ab09611e4f4d76",
+      "source_order": 4764,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "4d43701cd91b17d5bf2dbd388822328be88a4fb8f4b6dc3580640348d54df97a",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658840",
+      "catchup_previous_symbol": "@recover_658840@8",
+      "catchup_previous_source_sha256": "2679d16c17b088059f7262a5b0af830090a7c9cb17be3556dc0f437536609c2d"
+    },
+    {
+      "entry": 6654144,
+      "method": "6588c0",
+      "symbol": "@SavePersistableCollection_006588c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006588c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006588c0.cpp",
+      "source_sha256": "195755872adaed4be91e85c067014123a7d80f00acb382dbdc174607e45cf897",
+      "source_order": 4765,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "b3cf1e286aabdd23a0af940d4041e06860b35df91cb6f042ecefea20de4cfe15",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006588c0",
+      "catchup_previous_symbol": "@recover_6588c0@8",
+      "catchup_previous_source_sha256": "9fac91aea1abeebf86f79b2f4466eee614c64622f88020577cc77597faa48b84"
+    },
+    {
+      "entry": 6654272,
+      "method": "658940",
+      "symbol": "@SavePersistableCollection_00658940@8",
+      "symbol_prefix": "@SavePersistableCollection_00658940@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658940.cpp",
+      "source_sha256": "0d8514174706935731d2df55a4b778525092398d231b225952496793290d013e",
+      "source_order": 4766,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "e422059522990adf41c387fd9c9577fa014e0e4e3189de67a82ca7dcf10629aa",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658940",
+      "catchup_previous_symbol": "@recover_658940@8",
+      "catchup_previous_source_sha256": "9a091f2fce9f4710b38882fe766a13450761c4dcfb17c0aae83be5e310cb353c"
+    },
+    {
+      "entry": 6654400,
+      "method": "6589c0",
+      "symbol": "@SavePersistableCollection_006589c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006589c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006589c0.cpp",
+      "source_sha256": "efca6979bca1f0c00f70603b7ac0d371969a040bbd8cbdb2444fb904434a043a",
+      "source_order": 4767,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "d4ed1b8f0e4c9765d9df471a962892e0bac1cd8fb3336d4852296df1305cd76e",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006589c0",
+      "catchup_previous_symbol": "@recover_6589c0@8",
+      "catchup_previous_source_sha256": "5f307ae21b19b44a82114eefd0ec1be5db5f57011a4463f8d881a061231a1127"
+    },
+    {
+      "entry": 6654528,
+      "method": "658a40",
+      "symbol": "@SavePersistableCollection_00658a40@8",
+      "symbol_prefix": "@SavePersistableCollection_00658a40@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658a40.cpp",
+      "source_sha256": "5d597122b0e73f620ae417d348e5e4c5a227f051227518934c54a3f17d5e7ddf",
+      "source_order": 4768,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "52f26c6103def56cd6f500e64ec20a5426ef98f9dcec4e41b030439b671a8117",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658a40",
+      "catchup_previous_symbol": "@recover_658a40@8",
+      "catchup_previous_source_sha256": "cd5b04297e13f19cd3408289f4d6884f5728c263cf766083a5870781eb7188ad"
+    },
+    {
+      "entry": 6654656,
+      "method": "658ac0",
+      "symbol": "@SavePersistableCollection_00658ac0@8",
+      "symbol_prefix": "@SavePersistableCollection_00658ac0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658ac0.cpp",
+      "source_sha256": "23540d6eaba09ff0a33bcfa1fbb21988e487a8aa3e9b4f28fb90cf232ac390a5",
+      "source_order": 4769,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "c8dad3f26dd10e9b4aa6c853e0beadbb35ca5bd17fe4f1a47220ff33c35bc058",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658ac0",
+      "catchup_previous_symbol": "@recover_658ac0@8",
+      "catchup_previous_source_sha256": "ecee0367afdeb8406235eb59ae6a16ffe4b91e904f7d723d19be8da326bddf33"
+    },
+    {
+      "entry": 6654784,
+      "method": "658b40",
+      "symbol": "@SavePersistableCollection_00658b40@8",
+      "symbol_prefix": "@SavePersistableCollection_00658b40@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658b40.cpp",
+      "source_sha256": "35fe4a49d0b269d57edee3c98065157080a3eb8bbd55511953b5ad97dc63ae8f",
+      "source_order": 4770,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "278a83bca6f0e0f15b3f0e1bbbf8f3303d6808acd83c5ff646bbf8ca4f2e61de",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658b40",
+      "catchup_previous_symbol": "@recover_658b40@8",
+      "catchup_previous_source_sha256": "13a6080b2adda27f23f7fcf1e64cbe7bffcaa75b1f728c649e55cfdd857a31a7"
+    },
+    {
+      "entry": 6654912,
+      "method": "658bc0",
+      "symbol": "@SavePersistableCollection_00658bc0@8",
+      "symbol_prefix": "@SavePersistableCollection_00658bc0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658bc0.cpp",
+      "source_sha256": "8846bbdb63855b52ff1c7a2419e1865cdab4b731b9a56dc2d7e1fbacbea154bc",
+      "source_order": 4771,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "84c56ec116a1260ade5734ad41ce58547222dbc08cd89d25d2d4c6a322b3cc3a",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658bc0",
+      "catchup_previous_symbol": "@recover_658bc0@8",
+      "catchup_previous_source_sha256": "19fd5521ac5feea2656a865dc7af0c1ee0592712bfb5990447683429fce80ad9"
+    },
+    {
+      "entry": 6655040,
+      "method": "658c40",
+      "symbol": "@SavePersistableCollection_00658c40@8",
+      "symbol_prefix": "@SavePersistableCollection_00658c40@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658c40.cpp",
+      "source_sha256": "533df2803e23765f4076a51fe40967f6dc1397de26de908898a0b79afba69ea4",
+      "source_order": 4772,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "433459c415bb097b8684cc706e055286bc3f158b4c37735b743c38f7a701cefe",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658c40",
+      "catchup_previous_symbol": "@recover_658c40@8",
+      "catchup_previous_source_sha256": "f34420c23a3559d90f8ed95fd708c9a590d662b3a87a2ff137b8ec3847bdfff5"
+    },
+    {
+      "entry": 6655168,
+      "method": "658cc0",
+      "symbol": "@SavePersistableCollection_00658cc0@8",
+      "symbol_prefix": "@SavePersistableCollection_00658cc0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658cc0.cpp",
+      "source_sha256": "c486e0b652b24ed3d5102d7a332cb0b05d9a645ce3fe3c882eb27e50b453deb9",
+      "source_order": 4773,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "10666a2689e5c71ca8a294cff4e3b87c214df1f9027269a206c6a5565c031ea0",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658cc0",
+      "catchup_previous_symbol": "@recover_658cc0@8",
+      "catchup_previous_source_sha256": "fb3e83b72e656612ce9a570e5b2e521688ca9af2270bfef138577181c65409ec"
+    },
+    {
+      "entry": 6655296,
+      "method": "658d40",
+      "symbol": "@SavePersistableCollection_00658d40@8",
+      "symbol_prefix": "@SavePersistableCollection_00658d40@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658d40.cpp",
+      "source_sha256": "e84f5ad99fa6f641c58c4189b3e898ef79cfe134bb75f717e38a692f61e98426",
+      "source_order": 4774,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "9deff3b1f7e6ef7bbbf652d93083903c32d166ff666d785483e1a8c732278172",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658d40",
+      "catchup_previous_symbol": "@recover_658d40@8",
+      "catchup_previous_source_sha256": "4b4e1f1a2642c8701beacc70a572772e3156f96e0f4a41f5bc212998a01762ec"
+    },
+    {
+      "entry": 6655424,
+      "method": "658dc0",
+      "symbol": "@SavePersistableCollection_00658dc0@8",
+      "symbol_prefix": "@SavePersistableCollection_00658dc0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658dc0.cpp",
+      "source_sha256": "b7770be9353af018cb9a4260b95df4df4e69731d0d3c13129f31fca132db8470",
+      "source_order": 4775,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "8c9fb47c60283d363b266cf2dfbf7c8aa47cd6f826da515c0ce7c818896e56e2",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658dc0",
+      "catchup_previous_symbol": "@recover_658dc0@8",
+      "catchup_previous_source_sha256": "75ce46be6cb02cbbba6f596f0c033b773733810e86bed55fcb02b736ede26ef8"
+    },
+    {
+      "entry": 6655552,
+      "method": "658e40",
+      "symbol": "@SavePersistableCollection_00658e40@8",
+      "symbol_prefix": "@SavePersistableCollection_00658e40@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658e40.cpp",
+      "source_sha256": "103896457985d11088fce89d60dc7a93b8aedc0ea3789c54c97d271ab006fd28",
+      "source_order": 4776,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "331b0b3bdf4b28a6aedb88a454282686272cbf78e058e40ee808e532595a5e40",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658e40",
+      "catchup_previous_symbol": "@recover_658e40@8",
+      "catchup_previous_source_sha256": "bf670f723776a45e949613bd333fdf038179775a7e0a628951ade1431848c468"
+    },
+    {
+      "entry": 6655680,
+      "method": "658ec0",
+      "symbol": "@SavePersistableCollection_00658ec0@8",
+      "symbol_prefix": "@SavePersistableCollection_00658ec0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658ec0.cpp",
+      "source_sha256": "d81db6e79b6d60aad3d7f4fcb05c7572619c5bd93fdeb5f252cc3c3c4e89980e",
+      "source_order": 4777,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "54fdb8ee51de7965541d950fcba5d5f28e6135c82abd7620679bce4bd96e6b7a",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658ec0",
+      "catchup_previous_symbol": "@recover_658ec0@8",
+      "catchup_previous_source_sha256": "792294bb635bfc72ba610ed5c298dea5da3fb47bb3b939c0ccfface9c495184d"
+    },
+    {
+      "entry": 6655808,
+      "method": "658f40",
+      "symbol": "@SavePersistableCollection_00658f40@8",
+      "symbol_prefix": "@SavePersistableCollection_00658f40@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658f40.cpp",
+      "source_sha256": "a4c8205e08675d373f32a6975f80df7b323eb2495731f290f13cd278ebcf7bbc",
+      "source_order": 4778,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "d5a0f51416464d32981e089a931f6ff5f4df78d47429eb4a66330cfcda32dcb5",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658f40",
+      "catchup_previous_symbol": "@recover_658f40@8",
+      "catchup_previous_source_sha256": "cefcaff8a73d5a0b8b70d47e798888aae43eba0b4c216d870cd5e309359bf075"
+    },
+    {
+      "entry": 6655936,
+      "method": "658fc0",
+      "symbol": "@SavePersistableCollection_00658fc0@8",
+      "symbol_prefix": "@SavePersistableCollection_00658fc0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00658fc0.cpp",
+      "source_sha256": "cc7e6264b1b84bec2386b25e1d56054b51ec15d1d05e4d8742821e4cd490b7c1",
+      "source_order": 4779,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "f8f9a30e41757689211823b113933d67885298afb3649e332d5ba36f2b2e8ef5",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00658fc0",
+      "catchup_previous_symbol": "@recover_658fc0@8",
+      "catchup_previous_source_sha256": "54090dcff9ee3ba98aa45047b8868963bae284a79bea7b0c6ae5a053db2f7d4c"
+    },
+    {
+      "entry": 6656064,
+      "method": "659040",
+      "symbol": "@SavePersistableCollection_00659040@8",
+      "symbol_prefix": "@SavePersistableCollection_00659040@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00659040.cpp",
+      "source_sha256": "a6150629b2d5bbebd57aa49cf8e319ac99f87c1f9fcd09dd0ce0d5d714e4bc09",
+      "source_order": 4780,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "a396e95f76e3abce63e15e2100785be472ecb15eee607749694f1aabc0cc5ccf",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00659040",
+      "catchup_previous_symbol": "@recover_659040@8",
+      "catchup_previous_source_sha256": "3efacc8db4c436e04abf7e5f580b6dda0396990a58bc7a7d17140589915204fb"
+    },
+    {
+      "entry": 6656192,
+      "method": "6590c0",
+      "symbol": "@SavePersistableCollection_006590c0@8",
+      "symbol_prefix": "@SavePersistableCollection_006590c0@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_006590c0.cpp",
+      "source_sha256": "1306b0c7518ea4344f2aec26ccb5bcb44b2770487e9099fe4af42715c50dd5ab",
+      "source_order": 4781,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "bdc70749565212e0ad35c72c11f1b0f1580f387c0ed67a2c84163d4c9383d0e2",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_006590c0",
+      "catchup_previous_symbol": "@recover_6590c0@8",
+      "catchup_previous_source_sha256": "c0dd34700e08c6d2cdd93dd3833e10284a848be260d9b9fc27ae2b8081cede9d"
+    },
+    {
+      "entry": 6656320,
+      "method": "659140",
+      "symbol": "@SavePersistableCollection_00659140@8",
+      "symbol_prefix": "@SavePersistableCollection_00659140@8",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 127,
+      "body_sha256": "d048837af6e5a13dcdef517c789941b1a20b0f55ec9a934003739cf9f3a33ce1",
+      "padding_bytes": 1,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "72d85388b6b037ad9bf837dee8e92bbf1ed58b853bac27457cf8875917b7b4ec",
+      "relocations": [
+        {
+          "offset": 66,
+          "kind": 6,
+          "symbol": "_ra2_iid_ipersist_stream",
+          "target": 8060112,
+          "addend": 0,
+          "resolved": 8060112
+        },
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "_ra2_ole_save_to_stream",
+          "target": 7972328,
+          "addend": 0,
+          "resolved": 7972328
+        }
+      ],
+      "source": "src/recovered/persistence/SavePersistableCollection_00659140.cpp",
+      "source_sha256": "27e66ed7a12e0daeeb05a42737550b3fd6dd0bf409fd3551983600fa4d39a442",
+      "source_order": 4782,
+      "population": "population-26",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "previous_source_sha256": "7a265a1a4395d4b129b37129644bc3614e0c9554707fe856e2cdc8a9ef94afe2",
+      "source_quality_family": "com-collection-serialization",
+      "semantic_name": "SavePersistableCollection_00659140",
+      "catchup_previous_symbol": "@recover_659140@8",
+      "catchup_previous_source_sha256": "5812dcd8a9dbbea5e0ab610a0871d3437a8fa0a2b7114b7f4bfcf2b492493492"
+    }
+  ]
+}

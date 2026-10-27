@@ -1,0 +1,510 @@
+{
+  "id": "population-95",
+  "population": {
+    "id": "population-95",
+    "inventory_sha256": "1f968da96796565cc2b46169ebebc8154b62dc6d5197e850bbc646c438cfe908",
+    "gaps_sha256": "a892e45dc95e69d7520bf0ff27be858eb8dde8c69b282f545d94c9186c0a1a88",
+    "historical_population_sha256": "8298f8a625382b8f06adcd7493d734b32c786f2339034dd6fc6482a996e3fa57",
+    "historical_acceptance_sha256": "62f94b69c3ea6a130f579d0d64a307635d920806df95706a34c64a626db05a35"
+  },
+  "references": {
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "??0Buffer@@QAE@PAXJ@Z": 4424384,
+    "??0Buffer@@QAE@PADJ@Z": 4424384,
+    "??0Buffer@@QAE@PBXJ@Z": 4424512,
+    "??0Buffer@@QAE@J@Z": 4424576,
+    "??0Buffer@@QAE@ABV0@@Z": 4424624,
+    "??1Buffer@@QAE@XZ": 4424720,
+    "?base@Init_498a50@@": 5536096,
+    "??_GPipe@@UAEPAXI@Z": 4844976,
+    "??_7Pipe@@6B@": 7989792,
+    "?End@Pipe@@": 4639616,
+    "??1Pipe@@UAE@XZ": 6351456,
+    "?Put_To@Pipe@@UAEXPAV1@@Z": 6351520,
+    "?Put@Pipe@@UAEHPBXH@Z": 6351600,
+    "?Flush@Pipe@@UAEHXZ": 6351632,
+    "?End@FilePipe@@UAEHXZ": 7813056,
+    "?Put@FilePipe@@UAEHPBXH@Z": 7813104,
+    "??_EPipe@@UAEPAXI@Z": 4844976,
+    "??0LCWPipe@@QAE@W4CompControl@0@H@Z": 5459680,
+    "??_7LCWPipe@@6B@": 8016996,
+    "??1LCWPipe@@UAE@XZ": 5459792,
+    "??_GLCWPipe@@UAEPAXI@Z": 5460608,
+    "??_ELCWPipe@@UAEPAXI@Z": 5460608,
+    "?Flush@BlowPipe@@UAEHXZ": 4413072,
+    "?Flush@LCWPipe@@UAEHXZ": 5460416,
+    "?Flush@LZOPipe@@UAEHXZ": 5500528,
+    "?Put@BlowPipe@@UAEHPBXH@Z": 4413136,
+    "?Put@LCWPipe@@UAEHPBXH@Z": 5459856,
+    "?Put@LZOPipe@@UAEHPBXH@Z": 5499872,
+    "?Put@PKPipe@@UAEHPBXH@Z": 6355872,
+    "?Put_To@PKPipe@@UAEXAAVPipe@@@Z": 6356416,
+    "?Put_To@PKPipe@@UAEXPAVPipe@@@Z": 6355696,
+    "?lzo1x_1_compress@@YIHPBEIPAEPAIPAX@Z": 5497888,
+    "?lzo1x_decompress@@YIHPBEIPAEPAIPAX@Z": 5499248,
+    "??_7LZOPipe@@6B@": 8018100,
+    "??0LZOPipe@@QAE@W4CompControl@0@H@Z": 5499712,
+    "??1LZOPipe@@UAE@XZ": 5499808,
+    "??_GLZOPipe@@UAEPAXI@Z": 5500768,
+    "??_ELZOPipe@@UAEPAXI@Z": 5500768,
+    "_memmove": 7877264
+  },
+  "regions": [
+    {
+      "entry": 5499712,
+      "method": "0053eb40",
+      "symbol": "??0LZOPipe@@QAE@W4CompControl@0@H@Z",
+      "symbol_prefix": "??0LZOPipe@@QAE@W4CompControl@0@H@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 87,
+      "body_sha256": "486aba7034202486bd45b4668ea853d9ea427d1700d5ae51e016e125915efa2b",
+      "padding_bytes": 9,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "d6d7aa4c5963e4082aceb42309ebbc705954c4aad8487f2fbe0dd21b42343cbc",
+      "relocations": [
+        {
+          "offset": 39,
+          "kind": 6,
+          "symbol": "??_7LZOPipe@@6B@",
+          "target": 8018100,
+          "addend": 0,
+          "resolved": 8018100
+        },
+        {
+          "offset": 48,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2372771
+        },
+        {
+          "offset": 65,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2372754
+        }
+      ],
+      "source_sha256": "8e6891c0ebdeb9b969e3ff4e00d60ec07fb3b4d1bc587d63342fd88716dff04b",
+      "source": "src/recovered/classes/LZOPipe/LZOPipe_constructor_0053eb40.cpp",
+      "population": "population-95",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LZOPipe_constructor_0053eb40",
+      "source_order": 10595
+    },
+    {
+      "entry": 5499808,
+      "method": "0053eba0",
+      "symbol": "??1LZOPipe@@UAE@XZ",
+      "symbol_prefix": "??1LZOPipe@@UAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 53,
+      "body_sha256": "fd15e2f528af16e97e51df1fc590d34de682278b1e7af1f87fd3397afac50a29",
+      "padding_bytes": 11,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "a38ad2bde1a36d9077b6edca44dbc1d076d76599011ceaa0de044f4b6f43e8de",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "??_7LZOPipe@@6B@",
+          "target": 8018100,
+          "addend": 0,
+          "resolved": 8018100
+        },
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2371977
+        },
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2371961
+        },
+        {
+          "offset": 47,
+          "kind": 20,
+          "symbol": "??1Pipe@@UAE@XZ",
+          "target": 6351456,
+          "addend": 0,
+          "resolved": 851597
+        }
+      ],
+      "source_sha256": "ebadd0193ab576f040ecf4f885db41611f9ac8207f06bffa42fcbc5eec7d3576",
+      "source": "src/recovered/classes/LZOPipe/LZOPipe_destructor_0053eba0.cpp",
+      "population": "population-95",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LZOPipe_destructor_0053eba0",
+      "source_order": 10596
+    },
+    {
+      "entry": 5499872,
+      "method": "0053ebe0",
+      "symbol": "?Put@LZOPipe@@UAEHPBXH@Z",
+      "symbol_prefix": "?Put@LZOPipe@@UAEHPBXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 651,
+      "body_sha256": "eb43f7b4d63ca3ac6d58dd4f205da72baaa1499437e92d7a8cbf9fabe60ddccc",
+      "padding_bytes": 5,
+      "full_extent_bytes": 656,
+      "full_extent_sha256": "a1d1222dc7e06f1f4f2b0d64e70456279dc41d11aa40e296b56a6029efdc94b0",
+      "relocations": [
+        {
+          "offset": 95,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2377293
+        },
+        {
+          "offset": 132,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2377256
+        },
+        {
+          "offset": 183,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2377205
+        },
+        {
+          "offset": 237,
+          "kind": 20,
+          "symbol": "?lzo1x_decompress@@YIHPBEIPAEPAIPAX@Z",
+          "target": 5499248,
+          "addend": 0,
+          "resolved": 4294966431
+        },
+        {
+          "offset": 255,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 851469
+        },
+        {
+          "offset": 335,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2377053
+        },
+        {
+          "offset": 377,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2372282
+        },
+        {
+          "offset": 403,
+          "kind": 20,
+          "symbol": "?lzo1x_1_compress@@YIHPBEIPAEPAIPAX@Z",
+          "target": 5497888,
+          "addend": 0,
+          "resolved": 4294964905
+        },
+        {
+          "offset": 409,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2371518
+        },
+        {
+          "offset": 441,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 851283
+        },
+        {
+          "offset": 459,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 851265
+        },
+        {
+          "offset": 495,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2372164
+        },
+        {
+          "offset": 520,
+          "kind": 20,
+          "symbol": "?lzo1x_1_compress@@YIHPBEIPAEPAIPAX@Z",
+          "target": 5497888,
+          "addend": 0,
+          "resolved": 4294964788
+        },
+        {
+          "offset": 526,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2371401
+        },
+        {
+          "offset": 565,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 851159
+        },
+        {
+          "offset": 587,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 851137
+        },
+        {
+          "offset": 615,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2376773
+        },
+        {
+          "offset": 641,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 851083
+        }
+      ],
+      "source_sha256": "fc4e5d7e13c5728372aff6ce6de64286c7cd3cb36bdf33ee395724d37a2ab4f4",
+      "source": "src/recovered/classes/LZOPipe/LZOPipe_Put_0053ebe0.cpp",
+      "population": "population-95",
+      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LZOPipe_Put_0053ebe0",
+      "source_order": 10597
+    },
+    {
+      "entry": 5500528,
+      "method": "0053ee70",
+      "symbol": "?Flush@LZOPipe@@UAEHXZ",
+      "symbol_prefix": "?Flush@LZOPipe@@UAEHXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 233,
+      "body_sha256": "026769f5fd6f351099a919ca57a610dd4720eac2b5e9017925df522c98cf268a",
+      "padding_bytes": 7,
+      "full_extent_bytes": 240,
+      "full_extent_sha256": "e95b50f79e442c58e5c05157d68716cc1ef2f4cf9fa0d6b3ea1944074e8510a6",
+      "relocations": [
+        {
+          "offset": 47,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 851021
+        },
+        {
+          "offset": 71,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 850997
+        },
+        {
+          "offset": 88,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 850980
+        },
+        {
+          "offset": 105,
+          "kind": 20,
+          "symbol": "?Flush@Pipe@@UAEHXZ",
+          "target": 6351632,
+          "addend": 0,
+          "resolved": 850995
+        },
+        {
+          "offset": 127,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2371876
+        },
+        {
+          "offset": 153,
+          "kind": 20,
+          "symbol": "?lzo1x_1_compress@@YIHPBEIPAEPAIPAX@Z",
+          "target": 5497888,
+          "addend": 0,
+          "resolved": 4294964499
+        },
+        {
+          "offset": 159,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2371112
+        },
+        {
+          "offset": 191,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 850877
+        },
+        {
+          "offset": 209,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 850859
+        },
+        {
+          "offset": 221,
+          "kind": 20,
+          "symbol": "?Flush@Pipe@@UAEHXZ",
+          "target": 6351632,
+          "addend": 0,
+          "resolved": 850879
+        }
+      ],
+      "source_sha256": "5b88ff238022e94aaf25e939fba4bc73eb4967f83c8f2d89af6a6b397a832a12",
+      "source": "src/recovered/classes/LZOPipe/LZOPipe_Flush_0053ee70.cpp",
+      "population": "population-95",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LZOPipe_Flush_0053ee70",
+      "source_order": 10598
+    },
+    {
+      "entry": 5500768,
+      "method": "0053ef60",
+      "symbol": "??_GLZOPipe@@UAEPAXI@Z",
+      "symbol_prefix": "??_GLZOPipe@@UAEPAXI@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "c191aba8f43e2207bbe054722a7ba8b1a2094e1d509a325545686090d4a7443b",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "b465bef05f8c917321e15b3b352c54bcdd1e4c97cbd5702cb061b7b8d2851f4c",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "??_7LZOPipe@@6B@",
+          "target": 8018100,
+          "addend": 0,
+          "resolved": 8018100
+        },
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2371017
+        },
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2371001
+        },
+        {
+          "offset": 47,
+          "kind": 20,
+          "symbol": "??1Pipe@@UAE@XZ",
+          "target": 6351456,
+          "addend": 0,
+          "resolved": 850637
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2370971
+        }
+      ],
+      "source_sha256": "7dcff331ed77735cbf15af5defabc08288a52ee4f01ec5ab8543b521f8a96c65",
+      "source": "src/recovered/classes/LZOPipe/LZOPipe_scalar_deleting_destructor_0053ef60.cpp",
+      "population": "population-95",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LZOPipe_scalar_deleting_destructor_0053ef60",
+      "source_order": 10599
+    }
+  ]
+}

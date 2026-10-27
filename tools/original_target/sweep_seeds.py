@@ -13,6 +13,7 @@ Nothing is accepted here. Byte-exact seeds still need a population manifest
 and compile_candidates.py strict acceptance, plus naming/typing on promotion.
 """
 import argparse
+import catalog_io
 import json
 from pathlib import Path
 import sys
@@ -126,7 +127,7 @@ def main():
     config = json.loads(args.config.read_bytes())
     audit = Audit(REPOSITORY, config['executable'])
     decoder = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_32)
-    catalog = json.loads((REPOSITORY / 'manifests/original_target.json').read_bytes())
+    catalog = catalog_io.load(catalog_io.locate(REPOSITORY), references=False)
     references = diff.canonical_references(catalog)
     inventory = Inventory(); accepted = accepted_sources(catalog)
     output = args.output.resolve(); output.mkdir(parents=True, exist_ok=True)

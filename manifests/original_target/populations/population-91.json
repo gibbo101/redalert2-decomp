@@ -1,0 +1,457 @@
+{
+  "id": "population-91",
+  "population": {
+    "id": "population-91",
+    "inventory_sha256": "527fa34dd3a412a85817b812448b795207021407e347624359f7b0450d35a839",
+    "gaps_sha256": "a363b34db50f15da196a6e7478fb24e6dbe74e5a649254a19d0dd2ba8ad05ef4",
+    "historical_population_sha256": "ad600f3fd69689340a77c7249b5bb66ec925198591bd403cf49fc4585925f94b",
+    "historical_acceptance_sha256": "5ae9f612b0bf3c34008648c4d47863593e26ebcb8251e3db01ad6f046765a6e4"
+  },
+  "references": {
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "??0Buffer@@QAE@PAXJ@Z": 4424384,
+    "??0Buffer@@QAE@PADJ@Z": 4424384,
+    "??0Buffer@@QAE@PBXJ@Z": 4424512,
+    "??0Buffer@@QAE@J@Z": 4424576,
+    "??0Buffer@@QAE@ABV0@@Z": 4424624,
+    "??1Buffer@@QAE@XZ": 4424720,
+    "?base@Init_498a50@@": 5536096,
+    "??_GPipe@@UAEPAXI@Z": 4844976,
+    "??_7Pipe@@6B@": 7989792,
+    "?End@Pipe@@": 4639616,
+    "??1Pipe@@UAE@XZ": 6351456,
+    "?Put_To@Pipe@@UAEXPAV1@@Z": 6351520,
+    "?Put@Pipe@@UAEHPBXH@Z": 6351600,
+    "?Flush@Pipe@@UAEHXZ": 6351632,
+    "?End@FilePipe@@UAEHXZ": 7813056,
+    "?Put@FilePipe@@UAEHPBXH@Z": 7813104,
+    "??_EPipe@@UAEPAXI@Z": 4844976,
+    "??_7LCWPipe@@6B@": 8016996,
+    "??0LCWPipe@@QAE@W4CompControl@0@H@Z": 5459680,
+    "??1LCWPipe@@UAE@XZ": 5459792,
+    "??_GLCWPipe@@UAEPAXI@Z": 5460608,
+    "??_ELCWPipe@@UAEPAXI@Z": 5460608,
+    "?Flush@BlowPipe@@UAEHXZ": 4413072,
+    "?Flush@LCWPipe@@UAEHXZ": 5460416,
+    "?Flush@LZOPipe@@UAEHXZ": 5500528,
+    "?LCW_Comp@@YIHPBXPAXH@Z": 5459264,
+    "?LCW_Uncomp@@YIHPBXPAXK@Z": 5458768,
+    "?Put@BlowPipe@@UAEHPBXH@Z": 4413136,
+    "?Put@LCWPipe@@UAEHPBXH@Z": 5459856,
+    "?Put@LZOPipe@@UAEHPBXH@Z": 5499872,
+    "?Put@PKPipe@@UAEHPBXH@Z": 6355872,
+    "?Put_To@PKPipe@@UAEXAAVPipe@@@Z": 6356416,
+    "?Put_To@PKPipe@@UAEXPAVPipe@@@Z": 6355696,
+    "_memmove": 7877264
+  },
+  "regions": [
+    {
+      "entry": 5459680,
+      "method": "00534ee0",
+      "symbol": "??0LCWPipe@@QAE@W4CompControl@0@H@Z",
+      "symbol_prefix": "??0LCWPipe@@QAE@W4CompControl@0@H@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 110,
+      "body_sha256": "a43539d7d97c0681e688ccb3770584492c4251d35579dcbd94a9212aad731ea3",
+      "padding_bytes": 2,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "73ecfb4a088818613d61a0026fcf79e8b39f6b81093aa09fc0a917877b0a3dd3",
+      "relocations": [
+        {
+          "offset": 44,
+          "kind": 6,
+          "symbol": "??_7LCWPipe@@6B@",
+          "target": 8016996,
+          "addend": 0,
+          "resolved": 8016996
+        },
+        {
+          "offset": 71,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2412780
+        },
+        {
+          "offset": 88,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2412763
+        }
+      ],
+      "source_sha256": "a1ae95108e0f841515fc1bb85907eee9a8f34f4534f274cdba8851cc6b0fc08d",
+      "source": "src/recovered/classes/LCWPipe/LCWPipe_constructor_00534ee0.cpp",
+      "population": "population-91",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LCWPipe_constructor_00534ee0",
+      "source_order": 10584
+    },
+    {
+      "entry": 5459792,
+      "method": "00534f50",
+      "symbol": "??1LCWPipe@@UAE@XZ",
+      "symbol_prefix": "??1LCWPipe@@UAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 53,
+      "body_sha256": "f9359226d7854ef2f8332cc309f87a08606166729113e5ce4d10f4f452ac260e",
+      "padding_bytes": 11,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "8173d97e49a80c4489f85d6ca7440e96156f5378b5f4f336c00bcf1ececfe509",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "??_7LCWPipe@@6B@",
+          "target": 8016996,
+          "addend": 0,
+          "resolved": 8016996
+        },
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2411993
+        },
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2411977
+        },
+        {
+          "offset": 47,
+          "kind": 20,
+          "symbol": "??1Pipe@@UAE@XZ",
+          "target": 6351456,
+          "addend": 0,
+          "resolved": 891613
+        }
+      ],
+      "source_sha256": "eacc732a920a221fca3be671b594292d780f706fe9c776a644af57ee9f8fbd97",
+      "source": "src/recovered/classes/LCWPipe/LCWPipe_destructor_00534f50.cpp",
+      "population": "population-91",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LCWPipe_destructor_00534f50",
+      "source_order": 10585
+    },
+    {
+      "entry": 5459856,
+      "method": "00534f90",
+      "symbol": "?Put@LCWPipe@@UAEHPBXH@Z",
+      "symbol_prefix": "?Put@LCWPipe@@UAEHPBXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 551,
+      "body_sha256": "8b11a8d3d94f59e9121eaa0f1a14d226298c397d1bcf3d8fae4c4a4b7eeb873e",
+      "padding_bytes": 9,
+      "full_extent_bytes": 560,
+      "full_extent_sha256": "e8f3a9d1293dad1dac2b52f2a82c179857cebc20e82ded59dfa54926008ce492",
+      "relocations": [
+        {
+          "offset": 95,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2417309
+        },
+        {
+          "offset": 132,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2417272
+        },
+        {
+          "offset": 183,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2417221
+        },
+        {
+          "offset": 221,
+          "kind": 20,
+          "symbol": "?LCW_Uncomp@@YIHPBXPAXK@Z",
+          "target": 5458768,
+          "addend": 0,
+          "resolved": 4294965983
+        },
+        {
+          "offset": 239,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891501
+        },
+        {
+          "offset": 315,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2417089
+        },
+        {
+          "offset": 351,
+          "kind": 20,
+          "symbol": "?LCW_Comp@@YIHPBXPAXH@Z",
+          "target": 5459264,
+          "addend": 0,
+          "resolved": 4294966349
+        },
+        {
+          "offset": 377,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891363
+        },
+        {
+          "offset": 393,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891347
+        },
+        {
+          "offset": 428,
+          "kind": 20,
+          "symbol": "?LCW_Comp@@YIHPBXPAXH@Z",
+          "target": 5459264,
+          "addend": 0,
+          "resolved": 4294966272
+        },
+        {
+          "offset": 461,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891279
+        },
+        {
+          "offset": 483,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891257
+        },
+        {
+          "offset": 515,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2416889
+        },
+        {
+          "offset": 541,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891199
+        }
+      ],
+      "source_sha256": "977877bc539bc21256ca565bc0654d45cb4d1cf04c1b38a9e585a612a64b8b7f",
+      "source": "src/recovered/classes/LCWPipe/LCWPipe_Put_00534f90.cpp",
+      "population": "population-91",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LCWPipe_Put_00534f90",
+      "source_order": 10586
+    },
+    {
+      "entry": 5460416,
+      "method": "005351c0",
+      "symbol": "?Flush@LCWPipe@@UAEHXZ",
+      "symbol_prefix": "?Flush@LCWPipe@@UAEHXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 191,
+      "body_sha256": "d0fc2935ea3ebe5d5ef678f44172c592ab9f6c4c5fc1d6d6e4a665dc4c88197a",
+      "padding_bytes": 1,
+      "full_extent_bytes": 192,
+      "full_extent_sha256": "167c04ed437e87c58a154ea39e597dea1a1c6cbc36132f54c913e10a636f71cb",
+      "relocations": [
+        {
+          "offset": 43,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891137
+        },
+        {
+          "offset": 69,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891111
+        },
+        {
+          "offset": 86,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891094
+        },
+        {
+          "offset": 107,
+          "kind": 20,
+          "symbol": "?Flush@Pipe@@UAEHXZ",
+          "target": 6351632,
+          "addend": 0,
+          "resolved": 891105
+        },
+        {
+          "offset": 125,
+          "kind": 20,
+          "symbol": "?LCW_Comp@@YIHPBXPAXH@Z",
+          "target": 5459264,
+          "addend": 0,
+          "resolved": 4294966015
+        },
+        {
+          "offset": 151,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891029
+        },
+        {
+          "offset": 165,
+          "kind": 20,
+          "symbol": "?Put@Pipe@@UAEHPBXH@Z",
+          "target": 6351600,
+          "addend": 0,
+          "resolved": 891015
+        },
+        {
+          "offset": 181,
+          "kind": 20,
+          "symbol": "?Flush@Pipe@@UAEHXZ",
+          "target": 6351632,
+          "addend": 0,
+          "resolved": 891031
+        }
+      ],
+      "source_sha256": "fd5555558b88d4204c807af107d02435b4f0a8f5b75e27ce1841d57dc877f76e",
+      "source": "src/recovered/classes/LCWPipe/LCWPipe_Flush_005351c0.cpp",
+      "population": "population-91",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LCWPipe_Flush_005351c0",
+      "source_order": 10587
+    },
+    {
+      "entry": 5460608,
+      "method": "00535280",
+      "symbol": "??_GLCWPipe@@UAEPAXI@Z",
+      "symbol_prefix": "??_GLCWPipe@@UAEPAXI@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "e2a7fccc2fb91b639d80e97bf4abe44ad27cac326f2059bc6c7261b69893c85f",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "fea386d7c82d9fff4ba96569db299ceb6b362390a37855c0e6d444681ab6cda3",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "??_7LCWPipe@@6B@",
+          "target": 8016996,
+          "addend": 0,
+          "resolved": 8016996
+        },
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2411177
+        },
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2411161
+        },
+        {
+          "offset": 47,
+          "kind": 20,
+          "symbol": "??1Pipe@@UAE@XZ",
+          "target": 6351456,
+          "addend": 0,
+          "resolved": 890797
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2411131
+        }
+      ],
+      "source_sha256": "4a3c56b75c46b94a8ef59bdf61381534c3eced64effe40bf74cc28224ce4a506",
+      "source": "src/recovered/classes/LCWPipe/LCWPipe_scalar_deleting_destructor_00535280.cpp",
+      "population": "population-91",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LCWPipe_scalar_deleting_destructor_00535280",
+      "source_order": 10588
+    }
+  ]
+}

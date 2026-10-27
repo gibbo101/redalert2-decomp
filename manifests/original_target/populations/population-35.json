@@ -1,0 +1,289 @@
+{
+  "id": "population-35",
+  "population": {
+    "id": "population-35",
+    "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps_sha256": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
+    "historical_population_sha256": "f191dc0fc9682cb2eb5c32f1aec192f4e6969e4f971f7786d4892451821d5f55",
+    "historical_acceptance_sha256": "2f472bc68ab8431acaa7a88d0a0b02cde7fb01a50fc49fe828e299628d184df5",
+    "compiler_output_policy": {
+      "path": "manifests/a14_array_compiler_output.json",
+      "sha256": "67ce4e866eba65c217124072f4f47647880a0630a908c2914e2fdddcc500d52b"
+    }
+  },
+  "references": {
+    "_array_storage_dispatch_0042d4a0": 7980512,
+    "??_U@YAPAXI@Z": 7872535,
+    "_array_storage_dispatch_0056cdd0": 8018680,
+    "_array_storage_dispatch_00635090": 8024008,
+    "_array_storage_dispatch_004f8b80": 8007332,
+    "_array_storage_dispatch_0046dc90": 7985748,
+    "_array_storage_dispatch_00605da0": 8027128
+  },
+  "regions": [
+    {
+      "entry": 4379808,
+      "method": "0042d4a0",
+      "symbol": "??0ElementStorage_0042d4a0@@QAE@HPAUElement_0042d4a0@@@Z",
+      "symbol_prefix": "??0ElementStorage_0042d4a0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 114,
+      "body_sha256": "51168101a38c3a7ce5708fe67bd5ebfcae9c3823082950ce43600b34b7c64ee8",
+      "padding_bytes": 14,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "33ecee64afa8c0e9b24cafdce17b09f64edc22036308afb4f6c869e164853676",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 6,
+          "symbol": "_array_storage_dispatch_0042d4a0",
+          "target": 7980512,
+          "addend": 0,
+          "resolved": 7980512
+        },
+        {
+          "offset": 68,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 3492655
+        }
+      ],
+      "source_sha256": "24b7430b0a16f63f71b80764e7c3da684a1c05b6d98760fb44369368197c33ba",
+      "source": "src/recovered/containers/ConstructElementStorage_0042d4a0.cpp",
+      "source_order": 6806,
+      "population": "population-35",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructElementStorage_0042d4a0",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_element_storage_views.hpp"
+    },
+    {
+      "entry": 5688784,
+      "method": "0056cdd0",
+      "symbol": "??0ElementStorage_0056cdd0@@QAE@HPAUElement_0056cdd0@@@Z",
+      "symbol_prefix": "??0ElementStorage_0056cdd0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 114,
+      "body_sha256": "88895735daaa1e6a0600371cea06098509650a0fbbfde6fcdfdd539e8f5e2df1",
+      "padding_bytes": 14,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "efda921ea699c7cd76c677f2d0777b24b138f0877d985ddb82addffb2b4dcedc",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 6,
+          "symbol": "_array_storage_dispatch_0056cdd0",
+          "target": 8018680,
+          "addend": 0,
+          "resolved": 8018680
+        },
+        {
+          "offset": 68,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2183679
+        }
+      ],
+      "source_sha256": "a387118c23eee9efdb4b335f253b173897b6a08f3c1f4239423e99114c9cf792",
+      "source": "src/recovered/containers/ConstructElementStorage_0056cdd0.cpp",
+      "source_order": 6807,
+      "population": "population-35",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructElementStorage_0056cdd0",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_element_storage_views.hpp"
+    },
+    {
+      "entry": 6508688,
+      "method": "00635090",
+      "symbol": "??0ElementStorage_00635090@@QAE@HPAUElement_00635090@@@Z",
+      "symbol_prefix": "??0ElementStorage_00635090@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 114,
+      "body_sha256": "5990f398b453564191cd70089c72640d969ff43fcf00fb67ba8a4314fee11029",
+      "padding_bytes": 14,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "e9f6d81681571ed1641707b19903075ec59766f4eecf682c84192f5aa3241ced",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 6,
+          "symbol": "_array_storage_dispatch_00635090",
+          "target": 8024008,
+          "addend": 0,
+          "resolved": 8024008
+        },
+        {
+          "offset": 68,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1363775
+        }
+      ],
+      "source_sha256": "ac378c3ac6775eaca2ff57058a2f74fe3b694e9fb25225e02d583a796a2962eb",
+      "source": "src/recovered/containers/ConstructElementStorage_00635090.cpp",
+      "source_order": 6808,
+      "population": "population-35",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructElementStorage_00635090",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_element_storage_views.hpp"
+    },
+    {
+      "entry": 5213056,
+      "method": "004f8b80",
+      "symbol": "??0ElementStorage_004f8b80@@QAE@HPAUElement_004f8b80@@@Z",
+      "symbol_prefix": "??0ElementStorage_004f8b80@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 147,
+      "body_sha256": "3c20dd5a34fce95bcbac5861b90e28db5e75c0f43f63acaf50c36c81f11a3437",
+      "padding_bytes": 13,
+      "full_extent_bytes": 160,
+      "full_extent_sha256": "0609c42167df3682409064144e6f95994969720778f766b93f133a8d761782fd",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_array_storage_dispatch_004f8b80",
+          "target": 8007332,
+          "addend": 0,
+          "resolved": 8007332
+        },
+        {
+          "offset": 83,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2659392
+        }
+      ],
+      "source_sha256": "678a3573bf483c98a9e1f042536af2fc56d9a6ef6eaf5109919aa42b7f8795d1",
+      "source": "src/recovered/containers/ConstructElementStorage_004f8b80.cpp",
+      "source_order": 6809,
+      "population": "population-35",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructElementStorage_004f8b80",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_element_storage_views.hpp"
+    },
+    {
+      "entry": 4643984,
+      "method": "0046dc90",
+      "symbol": "??0ElementStorage_0046dc90@@QAE@HPAUElement_0046dc90@@@Z",
+      "symbol_prefix": "??0ElementStorage_0046dc90@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "3c561531c93784e5f981a19d439c3100eb206631d334b97042888f725df961ec",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "26e6eea73553a909b45d0b1864a2d027d5d20ef427985abf33ebb7f87cd4d889",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_array_storage_dispatch_0046dc90",
+          "target": 7985748,
+          "addend": 0,
+          "resolved": 7985748
+        },
+        {
+          "offset": 83,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 3228464
+        }
+      ],
+      "source_sha256": "f66cf802f3e5234d2a79d623c843beb409a524cec4c28441ba2dc22fb5f96c1e",
+      "source": "src/recovered/containers/ConstructElementStorage_0046dc90.cpp",
+      "source_order": 6810,
+      "population": "population-35",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructElementStorage_0046dc90",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_element_storage_views.hpp"
+    },
+    {
+      "entry": 6315424,
+      "method": "00605da0",
+      "symbol": "??0ElementStorage_00605da0@@QAE@HPAUElement_00605da0@@@Z",
+      "symbol_prefix": "??0ElementStorage_00605da0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "9468b0c246e9e340690cd3f525d07d4eaf3d59f6f87cdb6628136fb7e76fbaf9",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "800c83fbd8195bb069f7856a34a3d89cd7e7f7dc214161c714b272dceeb5b345",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_array_storage_dispatch_00605da0",
+          "target": 8027128,
+          "addend": 0,
+          "resolved": 8027128
+        },
+        {
+          "offset": 83,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1557024
+        }
+      ],
+      "source_sha256": "c4ef5e7a7aa08a62bf215a985999e437f476b7c25693432b22a71fd9e60babc4",
+      "source": "src/recovered/containers/ConstructElementStorage_00605da0.cpp",
+      "source_order": 6811,
+      "population": "population-35",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructElementStorage_00605da0",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_element_storage_views.hpp"
+    }
+  ]
+}

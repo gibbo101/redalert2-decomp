@@ -55,7 +55,7 @@ from canonical import CanonicalAudit, compile_group_key, separate_unit_populatio
 from source_paths import source_path
 import catalog_io
 
-CATALOG = REPOSITORY / 'manifests/original_target.json'
+CATALOG = catalog_io.locate(REPOSITORY)
 SYMBOLS = REPOSITORY / 'manifests/symbols.json'
 
 
@@ -304,8 +304,9 @@ def main():
         now = time.monotonic(); timings[name] = round(now - marks[-1], 1); marks.append(now)
         print('phase %s: %.1fs' % (name, timings[name]), file=sys.stderr, flush=True)
     config = json.loads(args.config.read_bytes())
-    catalog_bytes = CATALOG.read_bytes()
-    catalog = catalog_io.loads(catalog_bytes)
+    catalog_blobs = {}
+    catalog = catalog_io.load(CATALOG, blobs=catalog_blobs)
+    catalog_digest = catalog_io.digest(CATALOG, catalog_blobs)
     spec = load_spec(args.spec, catalog)
     phase('load')
     files, removed = planned_files(spec)
@@ -388,9 +389,9 @@ def main():
         for path, data in files.items():
             if (REPOSITORY / path).read_bytes() != data:
                 raise SystemExit('refused: %s changed during verification (tree restored)' % path)
-        if CATALOG.read_bytes() != catalog_bytes:
+        if catalog_io.digest(CATALOG) != catalog_digest:
             raise SystemExit('refused: the catalog changed while the batch ran (tree restored)')
-        CATALOG.write_text(text)
+        catalog_io.dump(catalog, CATALOG)
     except BaseException:
         restore(backup, written, removed)
         raise
@@ -401,7 +402,7 @@ def main():
     shutil.rmtree(backup, ignore_errors=True)
     summary.update(regions_verified=manifest['matched_source_regions'], body_bytes=manifest['body_bytes'],
                    seconds=round(time.monotonic() - started, 1), timings=timings,
-                   spec_sha256=sha(args.spec.read_bytes()), catalog_sha256=sha(CATALOG.read_bytes()))
+                   spec_sha256=sha(args.spec.read_bytes()), catalog_sha256=catalog_io.digest(CATALOG))
     (output / 'receipt.json').write_text(json.dumps(summary, indent=1) + '\n')
     print(json.dumps(dict({k: v for k, v in summary.items() if k not in ('renames', 'changed_sources', 'affected_populations')},
                           renames=len(spec['renames']), changed_sources=len(sources),

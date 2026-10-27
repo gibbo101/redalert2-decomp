@@ -23,6 +23,7 @@ acceptance. Repaired sources drop the seed-generated marker: regeneration
 would lose the repairs.
 """
 import argparse
+import catalog_io
 import json
 from pathlib import Path
 import re
@@ -195,7 +196,7 @@ def main():
     config = json.loads(args.config.read_bytes())
     audit = Audit(REPOSITORY, config['executable'])
     decoder = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_32)
-    catalog = json.loads((REPOSITORY / 'manifests/original_target.json').read_bytes())
+    catalog = catalog_io.load(catalog_io.locate(REPOSITORY), references=False)
     references = diff.canonical_references(catalog)
     inventory = Inventory(); accepted = accepted_sources(catalog)
     if args.entries:

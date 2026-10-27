@@ -10,6 +10,7 @@ the correct ECX ABI, and notes callees that already have accepted canonical
 source.
 """
 import argparse
+import catalog_io
 import json
 from pathlib import Path
 import re
@@ -469,7 +470,7 @@ def main():
     args = parser.parse_args()
     from inventory import Inventory
     inventory = Inventory()
-    accepted = accepted_sources(json.loads((REPOSITORY / 'manifests/original_target.json').read_bytes()))
+    accepted = accepted_sources(catalog_io.load(catalog_io.locate(REPOSITORY), references=False))
     for item in args.entries:
         entry = int(item, 16)
         if entry in accepted:

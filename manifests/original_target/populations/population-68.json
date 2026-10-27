@@ -1,0 +1,152 @@
+{
+  "id": "population-68",
+  "population": {
+    "id": "population-68",
+    "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
+    "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
+    "historical_population_sha256": "edad78550b6bb364bf953650b37e902e0da596840988a15a806264ae779bd677",
+    "historical_acceptance_sha256": "2bd5c2a3a33308490c002b1af79b73d10989d4208b21026e6118646720004615"
+  },
+  "references": {
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "??_7Straw@@6B@": 7989752,
+    "??1Straw@@": 6926352,
+    "?Get_From@Straw@@": 6926416,
+    "?Get@Straw@@": 6926496,
+    "??_GStraw@@": 4844864,
+    "??_EStraw@@": 4844864
+  },
+  "regions": [
+    {
+      "entry": 4844864,
+      "method": "0049ed40",
+      "symbol": "??_GStraw@@UAEPAXI@Z",
+      "symbol_prefix": "??_GStraw@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 30,
+      "body_sha256": "969b8ac4a0d9edb31c5e8220c595951a9398ccbf0a3af842715563659012625f",
+      "padding_bytes": 2,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "b7db22f5962fa9bf308f839f06851d2770265c71a872ece6bbd1dcefa3ba1d68",
+      "relocations": [
+        {
+          "offset": 4,
+          "kind": 20,
+          "symbol": "??1Straw@@UAE@XZ",
+          "target": 6926352,
+          "addend": 0,
+          "resolved": 2081480
+        },
+        {
+          "offset": 17,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3026918
+        }
+      ],
+      "source_sha256": "519385a3c912413ec6b26d39e284051d41a9646e6a106be621b28eaddf1f43d3",
+      "source": "src/recovered/classes/Straw/Straw_scalar_deleting_destructor_0049ed40.cpp",
+      "population": "population-68",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Straw_scalar_deleting_destructor_0049ed40",
+      "source_order": 8078
+    },
+    {
+      "entry": 6926352,
+      "method": "0069b010",
+      "symbol": "??1Straw@@UAE@XZ",
+      "symbol_prefix": "??1Straw@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 50,
+      "body_sha256": "62e2afcfd2a2a4235d93a959cdb3757007566a269356e2e4d2118db2229395de",
+      "padding_bytes": 14,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "795c139e885928fa2018b6548ab5608f22b38c0fcfb7643d6e7306e515b9ff9c",
+      "relocations": [
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "??_7Straw@@6B@",
+          "target": 7989752,
+          "addend": 0,
+          "resolved": 7989752
+        }
+      ],
+      "source_sha256": "f9983af176a3ee08433bd6ef9f64bef41e1688eb02db14d61cc62120a7581071",
+      "source": "src/recovered/classes/Straw/Straw_destructor_0069b010.cpp",
+      "population": "population-68",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Straw_destructor_0069b010",
+      "source_order": 8079
+    },
+    {
+      "entry": 6926416,
+      "method": "0069b050",
+      "symbol": "?Get_From@Straw@@UAEXPAV1@@Z",
+      "symbol_prefix": "?Get_From@Straw@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 67,
+      "body_sha256": "20f9ca753ece2a2e94d4931d65f5b1aa6d4ca704a3866532b5abe737ac18c2a4",
+      "padding_bytes": 13,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "f95b5b1309a98e2a439e07109acf8ac0e9befeadbd09e26f1c6d2f9f0f5279a4",
+      "relocations": [],
+      "source_sha256": "7cd96f9cb4c3805a55bb618f59aaed36d4f67991609767105d0b9dfe60b8db52",
+      "source": "src/recovered/classes/Straw/Straw_Get_From_0069b050.cpp",
+      "population": "population-68",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Straw_Get_From_0069b050",
+      "source_order": 8080
+    },
+    {
+      "entry": 6926496,
+      "method": "0069b0a0",
+      "symbol": "?Get@Straw@@UAEHPAXH@Z",
+      "symbol_prefix": "?Get@Straw@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 30,
+      "body_sha256": "5bf143545676ce6bf0d3b4b77efbd2fc07b3f2e1d9ae045d47d8b53202b63b4e",
+      "padding_bytes": 2,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "d9cf972f99a4168cb47ffd80ae3a76e458e4781dc431402272d7e9ac8140db91",
+      "relocations": [],
+      "source_sha256": "aa1b4d9b34b89aad6918c3f6ba6bb0919410970133a0c7488f6ba05b86804c1a",
+      "source": "src/recovered/classes/Straw/Straw_Get_0069b0a0.cpp",
+      "population": "population-68",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Straw_Get_0069b0a0",
+      "source_order": 8081
+    }
+  ]
+}

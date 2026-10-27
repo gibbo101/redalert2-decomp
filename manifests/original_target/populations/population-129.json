@@ -1,0 +1,104 @@
+{
+  "id": "population-129",
+  "population": {
+    "id": "population-129",
+    "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
+    "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
+    "historical_population_sha256": "43c302d0d058532c4a6b05d19a412ffdbfc9226e2fc61eeecc944008a783bca8",
+    "historical_acceptance_sha256": "e3b099c116e7e745b74819bd4426790e456e365b65528c65719762625bc4c4f9"
+  },
+  "references": {
+    "?FUN_004384e0@": 4424928,
+    "?FUN_00781d3b@": 7871803,
+    "_DAT_008324e0": 8594656,
+    "_DAT_00a3d548": 10736968,
+    "?FUN_0049cac0@": 4836032,
+    "?FUN_006f64b0@": 7300272
+  },
+  "regions": [
+    {
+      "entry": 4424928,
+      "method": "004384e0",
+      "symbol": "?FUN_004384e0@seed_004384e0@@YIXPAI@Z",
+      "symbol_prefix": "?FUN_004384e0@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 17,
+      "body_sha256": "09b620679473a4f54cddd541936923035a36241f3330c239052cd75cfb20e732",
+      "padding_bytes": 15,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "3a3b02737729afc3b1699a73fdc52d0cd3770670f9381883ab63e499b1707386",
+      "relocations": [
+        {
+          "offset": 11,
+          "kind": 20,
+          "symbol": "?FUN_00781d3b@seed_004384e0@@YAXI@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3446860
+        }
+      ],
+      "source_sha256": "31f15a5be464a7ca9244e21998a1820dea0eb0ba47ca3578d95eb3b868697706",
+      "source": "src/recovered/004384e0.cpp",
+      "source_order": 11267,
+      "population": "population-129",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "ghidra-seed-sweep"
+    },
+    {
+      "entry": 7300272,
+      "method": "006f64b0",
+      "symbol": "?FUN_006f64b0@seed_006f64b0@@YAXXZ",
+      "symbol_prefix": "?FUN_006f64b0@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 22,
+      "body_sha256": "eae04d79dd7fb2d90f7302250b2335f5cc0540049240229a712834efffc8f8ce",
+      "padding_bytes": 10,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "16136766e4ff7a070e816c517b2f142a97417b41d8defca05090b4916192348a",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "_DAT_00a3d548",
+          "target": 10736968,
+          "addend": 0,
+          "resolved": 10736968
+        },
+        {
+          "offset": 12,
+          "kind": 6,
+          "symbol": "_DAT_008324e0",
+          "target": 8594656,
+          "addend": 0,
+          "resolved": 8594656
+        },
+        {
+          "offset": 17,
+          "kind": 20,
+          "symbol": "?FUN_0049cac0@Callee_0049cac0@seed_006f64b0@@QAEXH@Z",
+          "target": 4836032,
+          "addend": 0,
+          "resolved": 4292503035
+        }
+      ],
+      "source_sha256": "ac20ba448ba7c785981b78b97ed61a31b0aaee2859fb0a79963b63a39d155910",
+      "source": "src/recovered/006f64b0.cpp",
+      "source_order": 11273,
+      "population": "population-129",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "ghidra-seed-sweep"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ No original-code execution, compiler or ignored authored script is invoked.
 import argparse
 from collections import Counter
 import hashlib
+import catalog_io
 import json
 from pathlib import Path
 import re
@@ -59,7 +60,7 @@ def generate(repository, output):
         raise ValueError('Changed bounded family membership')
     if len({r['entry'] for r in plan['regions']}) != sum(COUNTS.values()):
         raise ValueError('Duplicate planned entry')
-    catalog = json.loads((repository/'manifests/original_target.json').read_bytes())
+    catalog = catalog_io.load(catalog_io.locate(repository), references=False)
     if catalog['target'] != plan['target']:
         raise ValueError('Wrong target catalog')
     current = {r['entry']:r for r in catalog['regions']}

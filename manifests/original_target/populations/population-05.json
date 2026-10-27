@@ -1,0 +1,84 @@
+{
+  "id": "population-05",
+  "population": {
+    "id": "population-05",
+    "inventory_sha256": "a6e83d732959f1475aeb0c48bcfb990e9e75a3c13374eabebd19ad7f943521f1",
+    "gaps_sha256": "d61d0da403b90e2409ab0cfa93e9dac80f1c06f0588399193bd138173c322f82",
+    "historical_population_sha256": "c01175061743e76794fe4f3087d81271f1dd0666e211392c5d89467e0f6a8c17",
+    "historical_acceptance_sha256": "4f8eef512dbdfe5216f62a4274d88e05fe56e1610b39b9713c99607c07b75167"
+  },
+  "references": {
+    "_g_521190_79a700_double": 7972608,
+    "_g_521190_7a45a0_double": 8013216,
+    "_g_521190_7a45a8_double": 8013224,
+    "_g_521190_7a45c8_double": 8013256,
+    "_g_521190_a51df0_double": 10821104
+  },
+  "regions": [
+    {
+      "entry": 5378448,
+      "method": "521190",
+      "symbol": "_recover_521190",
+      "symbol_prefix": "_recover_521190",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 31,
+      "body_sha256": "85dc13992a48528d11ae753801e29c459dc45865e552f51a33fb527e1f749e27",
+      "padding_bytes": 1,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "1748d2d14ab5a482f882cb43346da93d4a7f0a736827ccde42e90cff8012f33b",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "_g_521190_79a700_double",
+          "target": 7972608,
+          "addend": 0,
+          "resolved": 7972608
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g_521190_7a45a0_double",
+          "target": 8013216,
+          "addend": 0,
+          "resolved": 8013216
+        },
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "_g_521190_7a45a8_double",
+          "target": 8013224,
+          "addend": 0,
+          "resolved": 8013224
+        },
+        {
+          "offset": 20,
+          "kind": 6,
+          "symbol": "_g_521190_7a45c8_double",
+          "target": 8013256,
+          "addend": 0,
+          "resolved": 8013256
+        },
+        {
+          "offset": 26,
+          "kind": 6,
+          "symbol": "_g_521190_a51df0_double",
+          "target": 10821104,
+          "addend": 0,
+          "resolved": 10821104
+        }
+      ],
+      "source": "src/recovered/00521190.cpp",
+      "source_sha256": "830a0781f182358324a0d49555a94a91ce0ac1977e60cb0a0a070ee759434fde",
+      "source_order": 2878,
+      "population": "population-05",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    }
+  ]
+}

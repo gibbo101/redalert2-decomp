@@ -1,0 +1,68 @@
+{
+  "id": "population-13",
+  "population": {
+    "id": "population-13",
+    "inventory_sha256": "a6e83d732959f1475aeb0c48bcfb990e9e75a3c13374eabebd19ad7f943521f1",
+    "gaps_sha256": "d61d0da403b90e2409ab0cfa93e9dac80f1c06f0588399193bd138173c322f82",
+    "historical_population_sha256": "5f86a85554296b6e48d01e20448bd1951df3d612b183b595906272bf178b1f0c",
+    "historical_acceptance_sha256": "4d9d5b324c16019b41b8e58eafe75be2ba7f4e9a3ccf8910666454fa475ef30e"
+  },
+  "regions": [
+    {
+      "entry": 5684368,
+      "method": "56bc90",
+      "symbol": "?EqualWordSequences_0056bc90@Loop_56bc90@@QBE_NABV1@@Z",
+      "symbol_prefix": "?EqualWordSequences_0056bc90@Loop_56bc90@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 62,
+      "body_sha256": "99fe6bd84f8a1f0d9572ae92ea81f06a015346609cbad0891ad8ecc2749ac66d",
+      "padding_bytes": 2,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "0eef8d7862a022f5ef32d9410122878a63096e608afd76a915433c41963b522d",
+      "relocations": [],
+      "source": "src/recovered/word_sequences/EqualWordSequences_0056bc90.cpp",
+      "source_sha256": "671f53e524699abc01371f1be0eb2bbc9dcf2d063d39ab461c131bea7749ebc0",
+      "source_order": 3324,
+      "population": "population-13",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "EqualWordSequences_0056bc90",
+      "source_quality_family": "word-sequence-equality",
+      "catchup_previous_symbol": "?get@Loop_56bc90@@QBE_NABV1@@Z",
+      "catchup_previous_source_sha256": "f865195250ad04dd0ca332c7628d89fa754e511025d9a50860d1961ff35c5959"
+    },
+    {
+      "entry": 6765120,
+      "method": "673a40",
+      "symbol": "?EqualWordSequences_00673a40@Loop_673a40@@QBE_NABV1@@Z",
+      "symbol_prefix": "?EqualWordSequences_00673a40@Loop_673a40@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 62,
+      "body_sha256": "99fe6bd84f8a1f0d9572ae92ea81f06a015346609cbad0891ad8ecc2749ac66d",
+      "padding_bytes": 2,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "0eef8d7862a022f5ef32d9410122878a63096e608afd76a915433c41963b522d",
+      "relocations": [],
+      "source": "src/recovered/word_sequences/EqualWordSequences_00673a40.cpp",
+      "source_sha256": "9e12620c0a471608969f8f05c666124160b114b8d2be0776d59e7ebad090c0a9",
+      "source_order": 4919,
+      "population": "population-13",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "EqualWordSequences_00673a40",
+      "source_quality_family": "word-sequence-equality",
+      "catchup_previous_symbol": "?get@Loop_673a40@@QBE_NABV1@@Z",
+      "catchup_previous_source_sha256": "7fd96ab6a9b6ca9599d2db0128cd732ba24ebd4459167a71263b9e98ca5ecf00"
+    }
+  ]
+}

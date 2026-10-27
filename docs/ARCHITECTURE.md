@@ -30,8 +30,10 @@ scaffolding with exact compiler-output C/C++ in bulk.
 
 [ORIGINAL_TARGET_BUILD.md](ORIGINAL_TARGET_BUILD.md) records exact existing paths,
 commands, hashes, section boundaries and limitations. Keep canonical accepted C/C++ under tracked root `src/recovered/`, with
-`manifests/original_target.json` recording source hashes, options, references and
-frozen boundary identities. `tools/original_target/build.py` compiles these files
+the catalog `manifests/original_target/` (sharded per population: `index.json`
+plus `populations/<id>.json`, read and written only through
+`tools/original_target/catalog_io.py`) recording source hashes, options,
+references and frozen boundary identities. `tools/original_target/build.py` compiles these files
 fresh; its acceptance adapter reuses the tracked V4 verifier. Private input paths
 come from local configuration. Compiler files, original data/byte scaffolding,
 experiments and all binaries remain under ignored private/build paths.

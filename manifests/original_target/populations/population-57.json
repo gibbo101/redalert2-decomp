@@ -1,0 +1,1004 @@
+{
+  "id": "population-57",
+  "population": {
+    "id": "population-57",
+    "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
+    "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
+    "historical_population_sha256": "19564454984998d3207548f20404cfc22cf2324b2730b646622b97c4268dea6f",
+    "historical_acceptance_sha256": "caa838f855e3b961f3a785f300e20980369bcd836edfa87cb0390628705e270c"
+  },
+  "references": {
+    "?Open@BufferIOFileClass@@UAEHPBDH@Z": 4388640,
+    "?Error@RawFileClass@@UAEXHHPBD@Z": 6523696,
+    "?Open@RawFileClass@@UAEHPBDH@Z": 6523872,
+    "?Open@RawFileClass@@UAEHH@Z": 6523904,
+    "?Set_Name@RawFileClass@@UAEPBDPBD@Z": 6523760,
+    "?Is_Open@RawFileClass@@UBE_NXZ": 6526160,
+    "?Close@RawFileClass@@UAEXXZ": 6524240,
+    "__imp__CloseHandle@4": 7971284,
+    "__imp__CloseHandle": 7971284,
+    "__imp__GetLastError@0": 7971316,
+    "__imp__GetLastError": 7971316,
+    "?Create@RawFileClass@@UAEHXZ": 6525440,
+    "?Delete@RawFileClass@@UAEHXZ": 6525504,
+    "__imp__DeleteFileA@4": 7971112,
+    "__imp__DeleteFileA": 7971112,
+    "?Get_Date_Time@RawFileClass@@UAEKXZ": 6525600,
+    "__imp__FileTimeToDosDateTime@12": 7971096,
+    "__imp__FileTimeToDosDateTime": 7971096,
+    "__imp__GetFileInformationByHandle@8": 7971100,
+    "__imp__GetFileInformationByHandle": 7971100,
+    "__strdup": 7919638,
+    "_free": 7874024,
+    "?Size@RawFileClass@@UAEJXZ": 6525312,
+    "__imp__GetFileSize@8": 7971092,
+    "__imp__GetFileSize": 7971092,
+    "__imp__CreateFileA@28": 7971248,
+    "__imp__CreateFileA": 7971248,
+    "?Is_Available@RawFileClass@@UAE_NH@Z": 6524064,
+    "?Read@RawFileClass@@UAEJPAXJ@Z": 6524304,
+    "__imp__ReadFile@20": 7971088,
+    "__imp__ReadFile": 7971088,
+    "_RawFileReadStopOnError": 11232828,
+    "?Set_Date_Time@RawFileClass@@UAE_NK@Z": 6525680,
+    "__imp__SetFileTime@16": 7971104,
+    "__imp__SetFileTime": 7971104,
+    "__imp__DosDateTimeToFileTime@12": 7971232,
+    "__imp__DosDateTimeToFileTime": 7971232,
+    "__imp__WriteFile@20": 7971116,
+    "__imp__WriteFile": 7971116,
+    "__imp__SetFilePointer@16": 7971252,
+    "__imp__SetFilePointer": 7971252,
+    "?Seek@RawFileClass@@UAEJJH@Z": 6524848,
+    "?Write@RawFileClass@@UAEJPBXJ@Z": 6524544,
+    "?Open@BufferIOFileClass@@UAEHH@Z": 4388672,
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "?Is_Open@BufferIOFileClass@@UBE_NXZ": 4388608,
+    "?Free@BufferIOFileClass@@QAEXXZ": 4388192,
+    "?Get_Date_Time@FileClass@@UAEKXZ": 6522544,
+    "?Size@BufferIOFileClass@@UAEJXZ": 4390272,
+    "?Set_Name@BufferIOFileClass@@UAEPBDPBD@Z": 4388432,
+    "?Is_Available@BufferIOFileClass@@UAE_NH@Z": 4388576,
+    "?Write@BufferIOFileClass@@UAEJPBXJ@Z": 4388912,
+    "?Read@BufferIOFileClass@@UAEJPAXJ@Z": 4389504,
+    "?Seek@BufferIOFileClass@@UAEJJH@Z": 4390032,
+    "?Close@BufferIOFileClass@@UAEXXZ": 4390304,
+    "??_7FileClass@@6B@": 8031356,
+    "??_7RawFileClass@@6B@": 8031428,
+    "__purecall": 4950368,
+    "?File_Name@RawFileClass@@": 4200768,
+    "??_EFileClass@@": 6522576,
+    "??_ERawFileClass@@": 6526032,
+    "?Set_Date_Time@FileClass@@UAE_NK@Z": 6522560,
+    "?Cache@BufferIOFileClass@@QAE_NJPAX@Z": 4387728,
+    "?Commit@BufferIOFileClass@@QAE_NXZ": 4388256,
+    "??_GFileClass@@UAEPAXI@Z": 6522576,
+    "??_GRawFileClass@@UAEPAXI@Z": 6526032,
+    "??_7BufferIOFileClass@@6B@": 7980860,
+    "??_GBufferIOFileClass@@": 4390384,
+    "??_EBufferIOFileClass@@": 4390384,
+    "??1RawFileClass@@UAE@XZ": 6523584,
+    "??0RawFileClass@@QAE@PBD@Z": 6523712,
+    "??0BufferIOFileClass@@QAE@PBD@Z": 4387328,
+    "??0BufferIOFileClass@@QAE@XZ": 4387568,
+    "??1BufferIOFileClass@@": 4387664,
+    "_memmove": 7877264
+  },
+  "regions": [
+    {
+      "entry": 4388640,
+      "method": "0042f720",
+      "symbol": "?Open@BufferIOFileClass@@UAEHPBDH@Z",
+      "symbol_prefix": "?Open@BufferIOFileClass@@UAEHPBDH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 31,
+      "body_sha256": "91db4b1faf71907cc01214bb33b9fe15f4a25f769145ab29d0dfe4665e01651c",
+      "padding_bytes": 1,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "debee65734e92d520e9fb85fcc95e4b64933f84898cdc56c17c7e621a7db1544",
+      "relocations": [
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "?Open@BufferIOFileClass@@UAEHH@Z",
+          "target": 4388672,
+          "addend": 0,
+          "resolved": 5
+        }
+      ],
+      "source_sha256": "a882f9730ef93a4e4479034b8f95ee71f5df4a6352dec75f1af56547cccc8e90",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Open_0042f720.cpp",
+      "population": "population-57",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Open_0042f720",
+      "source_order": 7507
+    },
+    {
+      "entry": 4388608,
+      "method": "0042f700",
+      "symbol": "?Is_Open@BufferIOFileClass@@UBE_NXZ",
+      "symbol_prefix": "?Is_Open@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "575d3992cc48bf84cd45b24435bc4c7a831e4ea0c5b6e8b591b26a66863d9a9a",
+      "padding_bytes": 3,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "5bee9f057144ebe8dd72aebd72764fc9e57813cfae19f577b881c9b9f1054654",
+      "relocations": [],
+      "source_sha256": "21cf007fa3be89b0d9a40ec8e7001d2338c77d50411b376f1998e07df62a41f7",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Is_Open_0042f700.cpp",
+      "population": "population-57",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Is_Open_0042f700",
+      "source_order": 7506
+    },
+    {
+      "entry": 4390272,
+      "method": "0042fd80",
+      "symbol": "?Size@BufferIOFileClass@@UAEJXZ",
+      "symbol_prefix": "?Size@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 23,
+      "body_sha256": "c8e905dd7c6b0f0f845b2f7d58a630d1099ccbbd26215c103750e41a9eeab082",
+      "padding_bytes": 9,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "5d564f34fcf76f178a056daf16077b77d9f35e334ce9d0dc8e2d83b5c2512f79",
+      "relocations": [
+        {
+          "offset": 19,
+          "kind": 20,
+          "symbol": "?Size@RawFileClass@@UAEJXZ",
+          "target": 6525312,
+          "addend": 0,
+          "resolved": 2135017
+        }
+      ],
+      "source_sha256": "797de123cdbce62a8fc9cb787587a980a75ea8acdfcb8e6b1a05f36d6ac6adcd",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Size_0042fd80.cpp",
+      "population": "population-57",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Size_0042fd80",
+      "source_order": 7512
+    },
+    {
+      "entry": 4388192,
+      "method": "0042f560",
+      "symbol": "?Free@BufferIOFileClass@@QAEXXZ",
+      "symbol_prefix": "?Free@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 51,
+      "body_sha256": "405e69d1a971bfcead70dd3325f45e5a04ce546f47c8b11b13153700823b68bb",
+      "padding_bytes": 13,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "dbb08ad65e046f6dab1d89a35222f146a2f417ceb99b22937ff956a38f899b4d",
+      "relocations": [
+        {
+          "offset": 20,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3483587
+        }
+      ],
+      "source_sha256": "668ce63465bb8d9401883b63f205726542dfedea67a449764d61421a8b29fb12",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Free_0042f560.cpp",
+      "population": "population-57",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Free_0042f560",
+      "source_order": 7502
+    },
+    {
+      "entry": 4387728,
+      "method": "0042f390",
+      "symbol": "?Cache@BufferIOFileClass@@QAE_NJPAX@Z",
+      "symbol_prefix": "?Cache@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 457,
+      "body_sha256": "cf2384ff0cc3a6084c66c582ff99cb46bcd0cd2ac94220a1310f6d3f79eb7cee",
+      "padding_bytes": 7,
+      "full_extent_bytes": 464,
+      "full_extent_sha256": "02a76dc56d7080e476d1468083bca4464d944a3e35973f9a2590764267e45908",
+      "relocations": [
+        {
+          "offset": 154,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 3484649
+        },
+        {
+          "offset": 269,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2136847
+        },
+        {
+          "offset": 335,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2136781
+        }
+      ],
+      "source_sha256": "c00a68e324e1b15d7f1d7db5bb5ae50dc58efc6409ff3cb83f71d0da4083d4a3",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Cache_0042f390.cpp",
+      "population": "population-57",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Cache_0042f390",
+      "source_order": 7501
+    },
+    {
+      "entry": 4388256,
+      "method": "0042f5a0",
+      "symbol": "?Commit@BufferIOFileClass@@QAE_NXZ",
+      "symbol_prefix": "?Commit@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 164,
+      "body_sha256": "8b6d8fa67108f420b8e91d6748ad145da0b8001ff4197fb961b84a8f4e6e3f89",
+      "padding_bytes": 12,
+      "full_extent_bytes": 176,
+      "full_extent_sha256": "de6c6666028c68e7964a3a96514c339e8bbea169b906c7b185fec7596534327e",
+      "relocations": [
+        {
+          "offset": 57,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2136531
+        },
+        {
+          "offset": 69,
+          "kind": 20,
+          "symbol": "?Write@RawFileClass@@UAEJPBXJ@Z",
+          "target": 6524544,
+          "addend": 0,
+          "resolved": 2136215
+        },
+        {
+          "offset": 87,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2136501
+        },
+        {
+          "offset": 105,
+          "kind": 20,
+          "symbol": "?Open@RawFileClass@@UAEHH@Z",
+          "target": 6523904,
+          "addend": 0,
+          "resolved": 2135539
+        },
+        {
+          "offset": 128,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2136460
+        },
+        {
+          "offset": 140,
+          "kind": 20,
+          "symbol": "?Write@RawFileClass@@UAEJPBXJ@Z",
+          "target": 6524544,
+          "addend": 0,
+          "resolved": 2136144
+        },
+        {
+          "offset": 147,
+          "kind": 20,
+          "symbol": "?Close@RawFileClass@@UAEXXZ",
+          "target": 6524240,
+          "addend": 0,
+          "resolved": 2135833
+        }
+      ],
+      "source_sha256": "ff95398855021e4951a2cccd2889a40b9f6b756d9cc4072454f7ebd188cd862b",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Commit_0042f5a0.cpp",
+      "population": "population-57",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Commit_0042f5a0",
+      "source_order": 7503
+    },
+    {
+      "entry": 4388432,
+      "method": "0042f650",
+      "symbol": "?Set_Name@BufferIOFileClass@@UAEPBDPBD@Z",
+      "symbol_prefix": "?Set_Name@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 131,
+      "body_sha256": "ef8ec8309829d08bd7e3db4bb99b99e7d54de611eab73a301bb28cb5be8bd704",
+      "padding_bytes": 13,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "49d360038e0bddafa74f2992f90142db3e077f2d00f95d3657e1dfc4f07e37d8",
+      "relocations": [
+        {
+          "offset": 103,
+          "kind": 20,
+          "symbol": "?Commit@BufferIOFileClass@@QAE_NXZ",
+          "target": 4388256,
+          "addend": 0,
+          "resolved": 4294967013
+        },
+        {
+          "offset": 115,
+          "kind": 20,
+          "symbol": "?Set_Name@RawFileClass@@UAEPBDPBD@Z",
+          "target": 6523760,
+          "addend": 0,
+          "resolved": 2135209
+        }
+      ],
+      "source_sha256": "cb512b849be35fcf5752ae24d38ac8d65548c64b155db6af65dfa3e3e50c4aad",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Set_Name_0042f650.cpp",
+      "population": "population-57",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Set_Name_0042f650",
+      "source_order": 7504
+    },
+    {
+      "entry": 4388576,
+      "method": "0042f6e0",
+      "symbol": "?Is_Available@BufferIOFileClass@@UAE_NH@Z",
+      "symbol_prefix": "?Is_Available@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 22,
+      "body_sha256": "436f53d3f71a6243f62c2d2eac347f41fc811e3067814f869dd93247bf418fa5",
+      "padding_bytes": 10,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "02262a29837f35c1283367a6b120584eff6742fe444310d4551c762085e6ea1c",
+      "relocations": [
+        {
+          "offset": 15,
+          "kind": 20,
+          "symbol": "?Is_Available@RawFileClass@@UAE_NH@Z",
+          "target": 6524064,
+          "addend": 0,
+          "resolved": 2135469
+        }
+      ],
+      "source_sha256": "9467556c487f3b353ea174a45ee04d76919980cffb26960165a75f0cde45cb10",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Is_Available_0042f6e0.cpp",
+      "population": "population-57",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Is_Available_0042f6e0",
+      "source_order": 7505
+    },
+    {
+      "entry": 4388672,
+      "method": "0042f740",
+      "symbol": "?Open@BufferIOFileClass@@UAEHH@Z",
+      "symbol_prefix": "?Open@BufferIOFileClass@@UAEHH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 229,
+      "body_sha256": "55e3cadca1717c5000debdc6da1035ee1be17f763659fd30db0234f6647b301f",
+      "padding_bytes": 11,
+      "full_extent_bytes": 240,
+      "full_extent_sha256": "8d5a929346e12f55555692eb9754167e5d55b858fc110dbc256be348719795aa",
+      "relocations": [
+        {
+          "offset": 12,
+          "kind": 20,
+          "symbol": "?Commit@BufferIOFileClass@@QAE_NXZ",
+          "target": 4388256,
+          "addend": 0,
+          "resolved": 4294966864
+        },
+        {
+          "offset": 51,
+          "kind": 20,
+          "symbol": "?Close@RawFileClass@@UAEXXZ",
+          "target": 6524240,
+          "addend": 0,
+          "resolved": 2135513
+        },
+        {
+          "offset": 64,
+          "kind": 20,
+          "symbol": "?Close@RawFileClass@@UAEXXZ",
+          "target": 6524240,
+          "addend": 0,
+          "resolved": 2135500
+        },
+        {
+          "offset": 115,
+          "kind": 20,
+          "symbol": "?Open@RawFileClass@@UAEHH@Z",
+          "target": 6523904,
+          "addend": 0,
+          "resolved": 2135113
+        },
+        {
+          "offset": 122,
+          "kind": 20,
+          "symbol": "?Close@RawFileClass@@UAEXXZ",
+          "target": 6524240,
+          "addend": 0,
+          "resolved": 2135442
+        },
+        {
+          "offset": 160,
+          "kind": 20,
+          "symbol": "?Open@RawFileClass@@UAEHH@Z",
+          "target": 6523904,
+          "addend": 0,
+          "resolved": 2135068
+        },
+        {
+          "offset": 215,
+          "kind": 20,
+          "symbol": "?Open@RawFileClass@@UAEHH@Z",
+          "target": 6523904,
+          "addend": 0,
+          "resolved": 2135013
+        }
+      ],
+      "source_sha256": "078f6c21e0ce7badc47c2ef772e6204fea274d685feaac14ac525bba96cad8c8",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Open_0042f740.cpp",
+      "population": "population-57",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Open_0042f740",
+      "source_order": 7508
+    },
+    {
+      "entry": 4388912,
+      "method": "0042f830",
+      "symbol": "?Write@BufferIOFileClass@@UAEJPBXJ@Z",
+      "symbol_prefix": "?Write@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 584,
+      "body_sha256": "3b44fc28eadcdc817f619bf60961e682ef90a7f86c1f3a4533778f8d0fa945d2",
+      "padding_bytes": 8,
+      "full_extent_bytes": 592,
+      "full_extent_sha256": "495e079fe7cafe1c36fa3f6bd493573696a466f9f78f584ed1a4103a962102f4",
+      "relocations": [
+        {
+          "offset": 49,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2135883
+        },
+        {
+          "offset": 233,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2135699
+        },
+        {
+          "offset": 245,
+          "kind": 20,
+          "symbol": "?Read@RawFileClass@@UAEJPAXJ@Z",
+          "target": 6524304,
+          "addend": 0,
+          "resolved": 2135143
+        },
+        {
+          "offset": 294,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 3488054
+        },
+        {
+          "offset": 384,
+          "kind": 20,
+          "symbol": "?Commit@BufferIOFileClass@@QAE_NXZ",
+          "target": 4388256,
+          "addend": 0,
+          "resolved": 4294966252
+        },
+        {
+          "offset": 481,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2135451
+        },
+        {
+          "offset": 496,
+          "kind": 20,
+          "symbol": "?Read@RawFileClass@@UAEJPAXJ@Z",
+          "target": 6524304,
+          "addend": 0,
+          "resolved": 2134892
+        },
+        {
+          "offset": 553,
+          "kind": 20,
+          "symbol": "?Write@RawFileClass@@UAEJPBXJ@Z",
+          "target": 6524544,
+          "addend": 0,
+          "resolved": 2135075
+        }
+      ],
+      "source_sha256": "ab7163169af14e46859196226d8dca3cfd421b078bf41bad9a4ef87a05a25d6e",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Write_0042f830.cpp",
+      "population": "population-57",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Write_0042f830",
+      "source_order": 7509
+    },
+    {
+      "entry": 4389504,
+      "method": "0042fa80",
+      "symbol": "?Read@BufferIOFileClass@@UAEJPAXJ@Z",
+      "symbol_prefix": "?Read@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 525,
+      "body_sha256": "b5644533bad68d28e560fdd94f3eadc50c976e99853bea6d5ee9c4b556a2ff5f",
+      "padding_bytes": 3,
+      "full_extent_bytes": 528,
+      "full_extent_sha256": "bb2a74f23c9cd37bca96d0b4e401ca2962dd9c7acef47b347914d106ed0feeff",
+      "relocations": [
+        {
+          "offset": 41,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2135299
+        },
+        {
+          "offset": 219,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2135121
+        },
+        {
+          "offset": 231,
+          "kind": 20,
+          "symbol": "?Read@RawFileClass@@UAEJPAXJ@Z",
+          "target": 6524304,
+          "addend": 0,
+          "resolved": 2134565
+        },
+        {
+          "offset": 282,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 3487474
+        },
+        {
+          "offset": 329,
+          "kind": 20,
+          "symbol": "?Commit@BufferIOFileClass@@QAE_NXZ",
+          "target": 4388256,
+          "addend": 0,
+          "resolved": 4294965715
+        },
+        {
+          "offset": 422,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2134918
+        },
+        {
+          "offset": 437,
+          "kind": 20,
+          "symbol": "?Read@RawFileClass@@UAEJPAXJ@Z",
+          "target": 6524304,
+          "addend": 0,
+          "resolved": 2134359
+        },
+        {
+          "offset": 494,
+          "kind": 20,
+          "symbol": "?Read@RawFileClass@@UAEJPAXJ@Z",
+          "target": 6524304,
+          "addend": 0,
+          "resolved": 2134302
+        }
+      ],
+      "source_sha256": "ad9426059ee6fdd866a6e75518e4fa1436b7008c0f92d6da2722b921af6b6f99",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Read_0042fa80.cpp",
+      "population": "population-57",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Read_0042fa80",
+      "source_order": 7510
+    },
+    {
+      "entry": 4390032,
+      "method": "0042fc90",
+      "symbol": "?Seek@BufferIOFileClass@@UAEJJH@Z",
+      "symbol_prefix": "?Seek@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 234,
+      "body_sha256": "4c008c5c4a1a7dc7235922707b54055e5091f0a2c326e5d8e55f1ae6487d2342",
+      "padding_bytes": 6,
+      "full_extent_bytes": 240,
+      "full_extent_sha256": "bbe24826ea8c7be75571f1a806cbbc970dbc5cb9c2b15d7a7246961ad7f5fd11",
+      "relocations": [
+        {
+          "offset": 133,
+          "kind": 20,
+          "symbol": "?Commit@BufferIOFileClass@@QAE_NXZ",
+          "target": 4388256,
+          "addend": 0,
+          "resolved": 4294965383
+        },
+        {
+          "offset": 171,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2134641
+        },
+        {
+          "offset": 224,
+          "kind": 20,
+          "symbol": "?Seek@RawFileClass@@UAEJJH@Z",
+          "target": 6524848,
+          "addend": 0,
+          "resolved": 2134588
+        }
+      ],
+      "source_sha256": "7de364e47af4dec418ce2a015a68e85abeedb5797d73243989a74971624c23f1",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Seek_0042fc90.cpp",
+      "population": "population-57",
+      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Seek_0042fc90",
+      "source_order": 7511
+    },
+    {
+      "entry": 4390304,
+      "method": "0042fda0",
+      "symbol": "?Close@BufferIOFileClass@@UAEXXZ",
+      "symbol_prefix": "?Close@BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 78,
+      "body_sha256": "795fdedbe0b27a7d07b5b5d866b5de84e743d825f4e7c3985efba2e1816f73c3",
+      "padding_bytes": 2,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "801b84aca35ad17b1ddb40ebb7ff0e542a495b6815f845ec82e3d3e289b812a6",
+      "relocations": [
+        {
+          "offset": 11,
+          "kind": 20,
+          "symbol": "?Commit@BufferIOFileClass@@QAE_NXZ",
+          "target": 4388256,
+          "addend": 0,
+          "resolved": 4294965233
+        },
+        {
+          "offset": 57,
+          "kind": 20,
+          "symbol": "?Close@RawFileClass@@UAEXXZ",
+          "target": 6524240,
+          "addend": 0,
+          "resolved": 2133875
+        },
+        {
+          "offset": 72,
+          "kind": 20,
+          "symbol": "?Close@RawFileClass@@UAEXXZ",
+          "target": 6524240,
+          "addend": 0,
+          "resolved": 2133860
+        }
+      ],
+      "source_sha256": "c2c1d2f87054fd2136d8de4bf4126112a2f511c07e6ee7dda9d23462890fa7f7",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_Close_0042fda0.cpp",
+      "population": "population-57",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_Close_0042fda0",
+      "source_order": 7513
+    },
+    {
+      "entry": 4387328,
+      "method": "0042f200",
+      "symbol": "??0BufferIOFileClass@@QAE@PBD@Z",
+      "symbol_prefix": "??0BufferIOFileClass@@QAE@PBD@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 225,
+      "body_sha256": "c023aff7fcb09be88f4fd8bc2d6a266a04296b5c0888270708ef1c62c19b43d1",
+      "padding_bytes": 15,
+      "full_extent_bytes": 240,
+      "full_extent_sha256": "1c7b3477fa41be2bd4f54e33a526f339d5cdd6ea4f2a562ca4b2f5c407c4b0eb",
+      "relocations": [
+        {
+          "offset": 89,
+          "kind": 6,
+          "symbol": "??_7BufferIOFileClass@@6B@",
+          "target": 7980860,
+          "addend": 0,
+          "resolved": 7980860
+        },
+        {
+          "offset": 95,
+          "kind": 6,
+          "symbol": "??_7BufferIOFileClass@@6B@",
+          "target": 7980860,
+          "addend": 4,
+          "resolved": 7980864
+        },
+        {
+          "offset": 192,
+          "kind": 20,
+          "symbol": "?Commit@BufferIOFileClass@@QAE_NXZ",
+          "target": 4388256,
+          "addend": 0,
+          "resolved": 732
+        },
+        {
+          "offset": 207,
+          "kind": 20,
+          "symbol": "?Set_Name@RawFileClass@@UAEPBDPBD@Z",
+          "target": 6523760,
+          "addend": 0,
+          "resolved": 2136221
+        }
+      ],
+      "source_sha256": "af45e7dc67662741f2f0dbe4217a3a0f284757aad2dceb366cd13380d1c8e256",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_BufferIOFileClass_0042f200.cpp",
+      "population": "population-57",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_BufferIOFileClass_0042f200",
+      "source_order": 7498
+    },
+    {
+      "entry": 4387568,
+      "method": "0042f2f0",
+      "symbol": "??0BufferIOFileClass@@QAE@XZ",
+      "symbol_prefix": "??0BufferIOFileClass@@QAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 92,
+      "body_sha256": "c3b020640062cc75d0dbe8ca144f34cd202771c6742f55ffcdbeed8c9a153ea1",
+      "padding_bytes": 4,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "fed3a138190ce757c5af4b5cb686b12c14722b469cec62fbdc27638f6bab0f41",
+      "relocations": [
+        {
+          "offset": 87,
+          "kind": 6,
+          "symbol": "??_7BufferIOFileClass@@6B@",
+          "target": 7980860,
+          "addend": 0,
+          "resolved": 7980860
+        }
+      ],
+      "source_sha256": "3b00a535bf48832687147b0affc84a8c9d41b472ead9b4586b796e7d5f26c2ac",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_BufferIOFileClass_0042f2f0.cpp",
+      "population": "population-57",
+      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_BufferIOFileClass_0042f2f0",
+      "source_order": 7499
+    },
+    {
+      "entry": 4387664,
+      "method": "0042f350",
+      "symbol": "??1BufferIOFileClass@@UAE@XZ",
+      "symbol_prefix": "??1BufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 64,
+      "body_sha256": "af0804911e461657be6de905cdd79b3c8ee98af244eb8c099d3bc0d55995022c",
+      "padding_bytes": 0,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "af0804911e461657be6de905cdd79b3c8ee98af244eb8c099d3bc0d55995022c",
+      "relocations": [
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "??_7BufferIOFileClass@@6B@",
+          "target": 7980860,
+          "addend": 0,
+          "resolved": 7980860
+        },
+        {
+          "offset": 26,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3484109
+        },
+        {
+          "offset": 57,
+          "kind": 20,
+          "symbol": "??1RawFileClass@@UAE@XZ",
+          "target": 6523584,
+          "addend": 0,
+          "resolved": 2135859
+        }
+      ],
+      "source_sha256": "337164839fa660d031b0cabb9e60aed5ebd729226e60c7c76346fdcbf5e99304",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_destructor_0042f350.cpp",
+      "population": "population-57",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_destructor_0042f350",
+      "source_order": 7500
+    },
+    {
+      "entry": 4390384,
+      "method": "0042fdf0",
+      "symbol": "??_GBufferIOFileClass@@UAEPAXI@Z",
+      "symbol_prefix": "??_GBufferIOFileClass@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 84,
+      "body_sha256": "e27774af2aa1f175dd2ea959f80e68efaa0ecc31fbb84a087959ff7c22d216ca",
+      "padding_bytes": 12,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "a454e5d34a570114dd5fd2df692ecdd8c9bb57a1c98508edf2696f0ddf273142",
+      "relocations": [
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "??_7BufferIOFileClass@@6B@",
+          "target": 7980860,
+          "addend": 0,
+          "resolved": 7980860
+        },
+        {
+          "offset": 26,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3481389
+        },
+        {
+          "offset": 57,
+          "kind": 20,
+          "symbol": "??1RawFileClass@@UAE@XZ",
+          "target": 6523584,
+          "addend": 0,
+          "resolved": 2133139
+        },
+        {
+          "offset": 70,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 3481345
+        }
+      ],
+      "source_sha256": "76670e8fe588817da03eab943ec56126ad8ddb941b7207c0aba062d724b09795",
+      "source": "src/recovered/classes/BufferIOFileClass/BufferIOFileClass_scalar_deleting_destructor_0042fdf0.cpp",
+      "population": "population-57",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BufferIOFileClass_scalar_deleting_destructor_0042fdf0",
+      "source_order": 7514
+    }
+  ]
+}

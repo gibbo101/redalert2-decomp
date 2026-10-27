@@ -1,0 +1,102 @@
+{
+  "id": "population-135",
+  "population": {
+    "id": "population-135",
+    "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
+    "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
+    "historical_population_sha256": "4fc9e03c88bdf437749a9878a5a219c51df73740fc21a9cbcd7cf8566bb6651c",
+    "historical_acceptance_sha256": "186133cc0f49010694bfbfc41313899130a910504c1274697bc749270f77d428"
+  },
+  "references": {
+    "_DAT_00a76a3c": 10971708,
+    "_DAT_00a76a40": 10971712,
+    "?FUN_0061ecc0@": 6417600,
+    "?FUN_00781d3b@": 7871803,
+    "_PTR_FUN_007a843c": 8029244,
+    "__DAT_00a769e8": 10971624
+  },
+  "regions": [
+    {
+      "entry": 6417600,
+      "method": "0061ecc0",
+      "symbol": "?FUN_0061ecc0@seed_0061ecc0@@YAXXZ",
+      "symbol_prefix": "?FUN_0061ecc0@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 51,
+      "body_sha256": "45d3fc7c758f1d660caf709f654113f9f55a1d85220487fdaaa2812c99ce6ec5",
+      "padding_bytes": 13,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "e93b42629c5e015c84dd1add5b6dd5c89d3ca1b570e525c029a2a0c49a7d2c76",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "_DAT_00a76a40",
+          "target": 10971712,
+          "addend": 0,
+          "resolved": 10971712
+        },
+        {
+          "offset": 7,
+          "kind": 6,
+          "symbol": "__DAT_00a769e8",
+          "target": 10971624,
+          "addend": 0,
+          "resolved": 10971624
+        },
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "_PTR_FUN_007a843c",
+          "target": 8029244,
+          "addend": 0,
+          "resolved": 8029244
+        },
+        {
+          "offset": 20,
+          "kind": 6,
+          "symbol": "_DAT_00a76a3c",
+          "target": 10971708,
+          "addend": 0,
+          "resolved": 10971708
+        },
+        {
+          "offset": 26,
+          "kind": 20,
+          "symbol": "?FUN_00781d3b@seed_0061ecc0@@YAXI@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 1454173
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_DAT_00a76a40",
+          "target": 10971712,
+          "addend": 0,
+          "resolved": 10971712
+        },
+        {
+          "offset": 42,
+          "kind": 6,
+          "symbol": "_DAT_00a76a3c",
+          "target": 10971708,
+          "addend": 0,
+          "resolved": 10971708
+        }
+      ],
+      "source_sha256": "266a9cabdc9c61a07371b980f8e43202ea9dc7d97d7a72540df815537fca5f52",
+      "source": "src/recovered/0061ecc0.cpp",
+      "source_order": 11355,
+      "population": "population-135",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "ghidra-seed-adjusted"
+    }
+  ]
+}

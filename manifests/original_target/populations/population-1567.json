@@ -1,0 +1,706 @@
+{
+  "id": "population-1567",
+  "population": {
+    "id": "population-1567",
+    "inventory_sha256": "ac8cfedd2aa63096913a622e9c387aa310707af382b4fbef0d9cd346a8852e03",
+    "gaps_sha256": "769678c2ca5b207dd06b815a3e319ea3207c6a81ed78dea461a044e7f0325634",
+    "historical_population_sha256": "b2b6e7d59bb1729e2f187b041bed80df9f0c51701ddcca74fd465dec7c01d48c",
+    "historical_acceptance_sha256": "9f71e11160823b17ae90a9b433152c1deeb01968f01e68984c880a0b5d3f891d"
+  },
+  "references": {
+    "_htonl@4": 7871334,
+    "_htons@4": 7871340,
+    "_ntohl@4": 7871346,
+    "_ntohs@4": 7871352,
+    "__real@8@40078000000000000000": 7972608,
+    "__real@8@40008000000000000000": 7972600,
+    "__CIpow": 7872944,
+    "__real@8@4004f000000000000000": 7972632,
+    "__real@8@4005b400000000000000": 7972640,
+    "__real@8@3ffe8000000000000000": 7972648,
+    "__ftol": 7860496,
+    "__real@8@3ff78000000000000000": 7972656,
+    "__real@8@3fff8000000000000000": 7972616,
+    "__real@8@4004b400000000000000": 7972624,
+    "??3@YAXPAX@Z": 7871803,
+    "_atexit": 7874954,
+    "__stricmp": 7872288,
+    "??2@YAPAXI@Z": 7872535,
+    "__strncpy": 7873488,
+    "__DAT_00ab6e88": 11234952,
+    "__strcmp": 7888160,
+    "__strlen": 7903280,
+    "__malloc": 7874096,
+    "___amsg_exit": 7887784,
+    "__DAT_0084ed10": 8711440,
+    "_memmove": 7877264,
+    "__strdup": 7919638,
+    "_strncpy": 7873488,
+    "__real@8@3ff8a3d70a3d70a3d800": 7980312,
+    "__splitpath": 7882867,
+    "__makepath": 7877104,
+    "__strupr": 7954916,
+    "?Length@Wstring@@QBEIXZ": 7792544,
+    "__DAT_00a40c88": 10751112,
+    "__DAT_00a40c80": 10751104,
+    "__DAT_00a40c84": 10751108,
+    "?Name@MissionControlClass@@QBEPBDXZ": 5852688,
+    "__DAT_00a70cc4": 10947780,
+    "__DAT_00a70cd0": 10947792,
+    "__DAT_00a70cc0": 10947776,
+    "__chkstk": 7878736,
+    "__strnicmp": 7878672,
+    "__DAT_00ab6ea8": 11234984,
+    "__DAT_00ab6eb0": 11234992,
+    "__DAT_00ac0168": 11272552,
+    "__DAT_00ac0170": 11272560,
+    "__DAT_00a769e8": 10971624,
+    "?Length@WideString@@QBEIXZ": 7799968,
+    "__real@8@4006ff00000000000000": 8007504,
+    "__real@8@00000000000000000000": 7976464,
+    "__real@8@3ffee666666666666800": 8048680,
+    "__real@8@3fffc90fdaa22168c000": 7976496,
+    "__real@8@c00ca2f83d7b47677800": 7976488,
+    "__real@8@bfff8000000000000000": 7984504,
+    "__real@8@4001a000000000000000": 7979640,
+    "__real@4@00000000000000000000": 7972664,
+    "__wcsicmp": 7955224,
+    "__real@4@3fffc90fdb0000000000": 7999372,
+    "__real@4@bfffc90fdb0000000000": 7999376,
+    "__real@8@4000c90fdaa22168c000": 7983448,
+    "__real@4@4008e100000000000000": 8045352,
+    "__real@4@3ffe8000000000000000": 7986560,
+    "__real@4@3ff78000000000000000": 8030204,
+    "__real@8@4008e100000000000000": 7976456,
+    "?Name@HouseClass@@UAGPAGXZ": 5122800,
+    "__real@4@4001a000000000000000": 8007424,
+    "__real@8@40018000000000000000": 7981504,
+    "?Next@UnknownGaussianSource_005798d0@@QAENXZ": 5740592,
+    "__real@8@4005c800000000000000": 7976944,
+    "__real@4@3fffc000000000000000": 7983336,
+    "__alldiv": 7873744,
+    "__allmul": 7872704,
+    "?Name@UnknownSound_405150@@QAEPBDXZ": 4215120,
+    "__real@4@3fff8000000000000000": 7976952,
+    "__real@8@3fe08000000200000000": 7979648,
+    "__real@8@3ffc9999999999999800": 8001520,
+    "__real@8@3ffbccccccccccccd000": 7980400,
+    "__real@8@3ff98ef920b8f5082800": 8054496,
+    "__aulldiv": 7873920,
+    "__real@8@3fffc000000000000000": 7984488,
+    "?Length@UnknownVector3@@QBEHXZ": 4306816,
+    "?Next@PlanningNodeClass@@QAEPAV1@PAVTechnoClass@@@Z": 6360288,
+    "__wcsupr": 7958262,
+    "__real@8@40058000000000000000": 8051872,
+    "__real@8@3ffdccccccccccccd000": 7979624,
+    "?Next@AudioListIterator@@QAEPAUAudioListNode@@XZ": 4208080,
+    "?Next@EnumConnectionsClass@@UAGJKPAUtagCONNECTDATA@@PAK@Z": 4793008,
+    "?Next@EnumConnectionPointsClass@@UAGJKPAPAUIConnectionPoint@@PAK@Z": 4795472,
+    "__real@4@c00a8000000000000000": 7999368,
+    "__real@8@4000c000000000000000": 7981704,
+    "__real@4@3ff38000000000000000": 7999408,
+    "__imp__ntohl": 7972152,
+    "__imp__htons": 7972156,
+    "__imp__htonl": 7972164,
+    "__imp__ntohs": 7972176,
+    "__purecall": 4950368,
+    "??0PacketField_004BAD50@@QAE@PBDD@Z": 4959568,
+    "??0PacketField_004BAD50@@QAE@PBDE@Z": 4959664,
+    "??0PacketField_004BAD50@@QAE@PBDF@Z": 4959760,
+    "??0PacketField_004BAD50@@QAE@PBDG@Z": 4959856,
+    "??0PacketField_004BAD50@@QAE@PBDH@Z": 4959952,
+    "??0PacketField_004BAD50@@QAE@PBDI@Z": 4960048,
+    "??0PacketField_004BAD50@@QAE@PBD0@Z": 4960144,
+    "??0PacketField_004BAD50@@QAE@PBDPBXG@Z": 4960256,
+    "??1PacketField_004BAD50@@QAE@XZ": 4960352,
+    "?Host_To_Network_004BB080@PacketField_004BAD50@@QAEXXZ": 4960384,
+    "?Network_To_Host_004BB0F0@PacketField_004BAD50@@QAEXXZ": 4960496,
+    "$L429": 4960476,
+    "$L369": 4960408,
+    "$L372": 4960428,
+    "$L432": 4960588,
+    "$L382": 4960547,
+    "$L385": 4960567
+  },
+  "regions": [
+    {
+      "entry": 4959568,
+      "method": "004bad50",
+      "symbol": "??0PacketField_004BAD50@@QAE@PBDD@Z",
+      "symbol_prefix": "??0PacketField_004BAD50@@QAE@PBDD@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 84,
+      "body_sha256": "8bde5c9136284831e9c6dce46638b4e1ab5029ce237b001476d002d145f6e0fa",
+      "padding_bytes": 12,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "ee795450493b466890a2fcc5ebcf52540746ac3ee26ae88354919ac8a3a58c11",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "_strncpy",
+          "target": 7873488,
+          "addend": 0,
+          "resolved": 2913902
+        },
+        {
+          "offset": 33,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2912930
+        }
+      ],
+      "source_sha256": "e42ce53b25fd424f6cc4ddb3358abadee410beaa9735d5390a5c38c188ac344d",
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_construct_char_004bad50.cpp",
+      "population": "population-1567",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_construct_char_004bad50",
+      "source_order": 53012
+    },
+    {
+      "entry": 4959664,
+      "method": "004badb0",
+      "symbol": "??0PacketField_004BAD50@@QAE@PBDE@Z",
+      "symbol_prefix": "??0PacketField_004BAD50@@QAE@PBDE@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 84,
+      "body_sha256": "03454896142f37552ee9c250b9b87d4fe12d2f43506ccedc6232555977dc1baf",
+      "padding_bytes": 12,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "3213b6f6958b769932209be51d0288c07c6713b908b7c0e024a89a884e663bde",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "_strncpy",
+          "target": 7873488,
+          "addend": 0,
+          "resolved": 2913806
+        },
+        {
+          "offset": 33,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2912834
+        }
+      ],
+      "source_sha256": "4ce447cf9b9bee1a0ec7380f7b0acdcdfc5e3314f5e710028b104478e021f7d5",
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_construct_unsigned_char_004badb0.cpp",
+      "population": "population-1567",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_construct_unsigned_char_004badb0",
+      "source_order": 53013
+    },
+    {
+      "entry": 4959760,
+      "method": "004bae10",
+      "symbol": "??0PacketField_004BAD50@@QAE@PBDF@Z",
+      "symbol_prefix": "??0PacketField_004BAD50@@QAE@PBDF@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 84,
+      "body_sha256": "6274ee473a26b6909f12805d5aa7058b2bb3c55db70f8744d6636bcb14a615cd",
+      "padding_bytes": 12,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "4b10ca42c3c3d1ef765a896226838996c00fa3c2734f6fc98463aeede4b0cdbc",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "_strncpy",
+          "target": 7873488,
+          "addend": 0,
+          "resolved": 2913710
+        },
+        {
+          "offset": 33,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2912738
+        }
+      ],
+      "source_sha256": "276f4688f9e0b910d2921c4b9abe1a87152752a07a99afec2282cd06bbdfe3eb",
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_construct_short_004bae10.cpp",
+      "population": "population-1567",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_construct_short_004bae10",
+      "source_order": 53014
+    },
+    {
+      "entry": 4959856,
+      "method": "004bae70",
+      "symbol": "??0PacketField_004BAD50@@QAE@PBDG@Z",
+      "symbol_prefix": "??0PacketField_004BAD50@@QAE@PBDG@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 84,
+      "body_sha256": "ca543ed1898fc225455c6fdce815f2b41cede818869d4dc179af39e6bc0144e2",
+      "padding_bytes": 12,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "885b168cc96f1ccb178a7b9cd15697710ebd8d96d84c883b66d704dfe2dac03f",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "_strncpy",
+          "target": 7873488,
+          "addend": 0,
+          "resolved": 2913614
+        },
+        {
+          "offset": 33,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2912642
+        }
+      ],
+      "source_sha256": "6329b0db9a4641e9630835f72c348125ff4d6194733eb250a73f9c091baea7f1",
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_construct_unsigned_short_004bae70.cpp",
+      "population": "population-1567",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_construct_unsigned_short_004bae70",
+      "source_order": 53015
+    },
+    {
+      "entry": 4959952,
+      "method": "004baed0",
+      "symbol": "??0PacketField_004BAD50@@QAE@PBDH@Z",
+      "symbol_prefix": "??0PacketField_004BAD50@@QAE@PBDH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 84,
+      "body_sha256": "5352d2d27b9b079d9bca6865951c5805e8af3bf0794bcbff279b1570da638c3e",
+      "padding_bytes": 12,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "47a8b2a720f0474da576cd14d7f62bc8efd5868c70476dc1e8597fea16e050ef",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "_strncpy",
+          "target": 7873488,
+          "addend": 0,
+          "resolved": 2913518
+        },
+        {
+          "offset": 33,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2912546
+        }
+      ],
+      "source_sha256": "43414e9439e5646bdd5bcda00078948eb936e18dd59909c5750454bbc962883a",
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_construct_int_004baed0.cpp",
+      "population": "population-1567",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_construct_int_004baed0",
+      "source_order": 53016
+    },
+    {
+      "entry": 4960048,
+      "method": "004baf30",
+      "symbol": "??0PacketField_004BAD50@@QAE@PBDI@Z",
+      "symbol_prefix": "??0PacketField_004BAD50@@QAE@PBDI@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 84,
+      "body_sha256": "88ccefe16a01157394164ef0ea1cad90df9f10999f22d3c6c397cc7b060fa34e",
+      "padding_bytes": 12,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "0859933de5c46b275d812961a86fad2e9595a2f6c207dac0c2d98f2136f71bad",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "_strncpy",
+          "target": 7873488,
+          "addend": 0,
+          "resolved": 2913422
+        },
+        {
+          "offset": 33,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2912450
+        }
+      ],
+      "source_sha256": "70b8913a44b12571b33399b9468a6d95d90a02bc7030c09512f8458fbd089e4b",
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_construct_unsigned_int_004baf30.cpp",
+      "population": "population-1567",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_construct_unsigned_int_004baf30",
+      "source_order": 53017
+    },
+    {
+      "entry": 4960144,
+      "method": "004baf90",
+      "symbol": "??0PacketField_004BAD50@@QAE@PBD0@Z",
+      "symbol_prefix": "??0PacketField_004BAD50@@QAE@PBD0@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 99,
+      "body_sha256": "174a410cd1153416a6cffbe55c1f9a6fabbea58abe9ec98c59d52febf88d0804",
+      "padding_bytes": 13,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "e94cbceea2c11e0d27e8a2ff8cfd9c8021d087f91313e593bdae5e5d5a42287d",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "_strncpy",
+          "target": 7873488,
+          "addend": 0,
+          "resolved": 2913326
+        },
+        {
+          "offset": 52,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2912335
+        }
+      ],
+      "source_sha256": "8ac33c4d0541741f3ae9d0e53e86f834a5a66d1c6bade5950908ca5ff0acfa6e",
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_construct_string_004baf90.cpp",
+      "population": "population-1567",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_construct_string_004baf90",
+      "source_order": 53018
+    },
+    {
+      "entry": 4960256,
+      "method": "004bb000",
+      "symbol": "??0PacketField_004BAD50@@QAE@PBDPBXG@Z",
+      "symbol_prefix": "??0PacketField_004BAD50@@QAE@PBDPBXG@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 90,
+      "body_sha256": "c13b22078eced0c56db29cf20bbda0db33139a88c25a9c181509daea22112c8f",
+      "padding_bytes": 6,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "af2077e7eef2c3fdd246ed1c5e923611a05120673c7d0d2e038df281f6efb3c3",
+      "relocations": [
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "_strncpy",
+          "target": 7873488,
+          "addend": 0,
+          "resolved": 2913214
+        },
+        {
+          "offset": 39,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2912236
+        }
+      ],
+      "source_sha256": "8962ed40e7600c29dae92ac45e541e0686bd18b25022c92df5e73f1c9df7d8a5",
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_construct_bytes_004bb000.cpp",
+      "population": "population-1567",
+      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_construct_bytes_004bb000",
+      "source_order": 53019
+    },
+    {
+      "entry": 4960352,
+      "method": "004bb060",
+      "symbol": "??1PacketField_004BAD50@@QAE@XZ",
+      "symbol_prefix": "??1PacketField_004BAD50@@QAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 24,
+      "body_sha256": "4343b0ab4d4c78ee73e4c3a9f2a974800f9efccfd1b820a2ea21065090e48c25",
+      "padding_bytes": 8,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "581e39a01d6e5d06bddea81d813bae802f2a0df81a0eda05b81cd9689d356625",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2911439
+        }
+      ],
+      "source_sha256": "82501b4daf72d684784cabb6990263d4a4fa99326eb76c7efa8d74b4df9d42c4",
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_destroy_004bb060.cpp",
+      "population": "population-1567",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_destroy_004bb060",
+      "source_order": 53020
+    },
+    {
+      "entry": 4960384,
+      "method": "004bb080",
+      "symbol": "?Host_To_Network_004BB080@PacketField_004BAD50@@QAEXXZ",
+      "symbol_prefix": "?Host_To_Network_004BB080@PacketField_004BAD50@@QAEXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 108,
+      "body_sha256": "99e307d07f2e9f7d5cfc9b31a3a57be94b82d9b5da9878fa0120462a289e4d5d",
+      "padding_bytes": 4,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "06f99d6af20a5eeab261139caa49d96f5d478b6f8b3420b0d689f509fb8ad3d1",
+      "relocations": [
+        {
+          "offset": 20,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960476,
+          "addend": 0,
+          "resolved": 4960476
+        },
+        {
+          "offset": 32,
+          "kind": 20,
+          "symbol": "_htons@4",
+          "target": 7871340,
+          "addend": 0,
+          "resolved": 2910920
+        },
+        {
+          "offset": 51,
+          "kind": 20,
+          "symbol": "_htonl@4",
+          "target": 7871334,
+          "addend": 0,
+          "resolved": 2910895
+        },
+        {
+          "offset": 66,
+          "kind": 20,
+          "symbol": "_htons@4",
+          "target": 7871340,
+          "addend": 0,
+          "resolved": 2910886
+        },
+        {
+          "offset": 80,
+          "kind": 20,
+          "symbol": "_htons@4",
+          "target": 7871340,
+          "addend": 0,
+          "resolved": 2910872
+        },
+        {
+          "offset": 92,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960408,
+          "addend": 0,
+          "resolved": 4960408
+        },
+        {
+          "offset": 96,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960408,
+          "addend": 0,
+          "resolved": 4960408
+        },
+        {
+          "offset": 100,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960428,
+          "addend": 0,
+          "resolved": 4960428
+        },
+        {
+          "offset": 104,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960428,
+          "addend": 0,
+          "resolved": 4960428
+        }
+      ],
+      "source_sha256": "738337a0b31d5e2c78000eda477dc70817acecb1dfe62dada6d0849c7cd8cb8d",
+      "switch_data_bytes": 16,
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_host_to_network_004bb080.cpp",
+      "population": "population-1567",
+      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_host_to_network_004bb080",
+      "source_order": 53021
+    },
+    {
+      "entry": 4960496,
+      "method": "004bb0f0",
+      "symbol": "?Network_To_Host_004BB0F0@PacketField_004BAD50@@QAEXXZ",
+      "symbol_prefix": "?Network_To_Host_004BB0F0@PacketField_004BAD50@@QAEXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 108,
+      "body_sha256": "f7227bda02b124c3f2574940d9bdb7b0e8afcd1da1246ffbc6aa5e055a8d0c2d",
+      "padding_bytes": 4,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "6a1412561a8d4468ffa8f32103e85955f3f42d3e1bd450d01838ef1b4db2e236",
+      "relocations": [
+        {
+          "offset": 9,
+          "kind": 20,
+          "symbol": "_ntohs@4",
+          "target": 7871352,
+          "addend": 0,
+          "resolved": 2910843
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_ntohs@4",
+          "target": 7871352,
+          "addend": 0,
+          "resolved": 2910829
+        },
+        {
+          "offset": 47,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960588,
+          "addend": 0,
+          "resolved": 4960588
+        },
+        {
+          "offset": 59,
+          "kind": 20,
+          "symbol": "_ntohs@4",
+          "target": 7871352,
+          "addend": 0,
+          "resolved": 2910793
+        },
+        {
+          "offset": 78,
+          "kind": 20,
+          "symbol": "_ntohl@4",
+          "target": 7871346,
+          "addend": 0,
+          "resolved": 2910768
+        },
+        {
+          "offset": 92,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960547,
+          "addend": 0,
+          "resolved": 4960547
+        },
+        {
+          "offset": 96,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960547,
+          "addend": 0,
+          "resolved": 4960547
+        },
+        {
+          "offset": 100,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960567,
+          "addend": 0,
+          "resolved": 4960567
+        },
+        {
+          "offset": 104,
+          "kind": 6,
+          "symbol": "$local",
+          "target": 4960567,
+          "addend": 0,
+          "resolved": 4960567
+        }
+      ],
+      "source_sha256": "ee13c3179a610054e0965417739bb1e72f1a689b15a217bcd4a35541010023f5",
+      "switch_data_bytes": 16,
+      "source": "src/recovered/classes/PacketField_004BAD50/PacketField_network_to_host_004bb0f0.cpp",
+      "population": "population-1567",
+      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PacketField_network_to_host_004bb0f0",
+      "source_order": 53022
+    }
+  ]
+}

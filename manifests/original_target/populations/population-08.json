@@ -1,0 +1,5935 @@
+{
+  "id": "population-08",
+  "population": {
+    "id": "population-08",
+    "inventory_sha256": "a6e83d732959f1475aeb0c48bcfb990e9e75a3c13374eabebd19ad7f943521f1",
+    "gaps_sha256": "d61d0da403b90e2409ab0cfa93e9dac80f1c06f0588399193bd138173c322f82",
+    "historical_population_sha256": "b719ec0bed75da1a94ab507fa4e0e9dec8842d8b40aa21ace51c336a2ab1b39e",
+    "historical_acceptance_sha256": "fe88bb62faca682322da9b6cf16b327cc384d4e39843f522eae83859909d32a4"
+  },
+  "references": {
+    "_opaque_code_address_40bc80_40bcb0": 4242608,
+    "_g4_40bc80_832380": 8594304,
+    "_g4_40bc80_832384": 8594308,
+    "_g4_40bc80_832388": 8594312,
+    "_g1_40bc80_83238c": 8594316,
+    "_g4_40bc80_832390": 8594320,
+    "_call_40bc80_0": 7874954,
+    "_opaque_code_address_40bce0_40bd20": 4242720,
+    "_g4_40bce0_83235c": 8594268,
+    "_g4_40bce0_832360": 8594272,
+    "_g1_40bce0_832364": 8594276,
+    "_g1_40bce0_832365": 8594277,
+    "_address_40bce0_79a81c": 7972892,
+    "_g4_40bce0_832358": 8594264,
+    "_g4_40bce0_83236c": 8594284,
+    "_g4_40bce0_832368": 8594280,
+    "_call_40bce0_0": 7874954,
+    "_opaque_code_address_40c0c0_40c100": 4243712,
+    "_g4_40c0c0_83239c": 8594332,
+    "_g4_40c0c0_8323a0": 8594336,
+    "_g1_40c0c0_8323a4": 8594340,
+    "_g1_40c0c0_8323a5": 8594341,
+    "_address_40c0c0_79a85c": 7972956,
+    "_g4_40c0c0_832398": 8594328,
+    "_g4_40c0c0_8323ac": 8594348,
+    "_g4_40c0c0_8323a8": 8594344,
+    "_call_40c0c0_0": 7874954,
+    "_opaque_code_address_40ca70_40cab0": 4246192,
+    "_g4_40ca70_832474": 8594548,
+    "_g4_40ca70_832478": 8594552,
+    "_g1_40ca70_83247c": 8594556,
+    "_g1_40ca70_83247d": 8594557,
+    "_g4_40ca70_832484": 8594564,
+    "_g4_40ca70_832480": 8594560,
+    "_address_40ca70_79a8ec": 7973100,
+    "_g4_40ca70_832470": 8594544,
+    "_call_40ca70_0": 7874954,
+    "_opaque_code_address_40d210_40d250": 4248144,
+    "_g4_40d210_837454": 8614996,
+    "_g4_40d210_837458": 8615000,
+    "_g1_40d210_83745c": 8615004,
+    "_g1_40d210_83745d": 8615005,
+    "_address_40d210_79aa34": 7973428,
+    "_g4_40d210_837450": 8614992,
+    "_g4_40d210_837464": 8615012,
+    "_g4_40d210_837460": 8615008,
+    "_call_40d210_0": 7874954,
+    "_opaque_code_address_40d290_40d2d0": 4248272,
+    "_g4_40d290_837484": 8615044,
+    "_g4_40d290_837488": 8615048,
+    "_g1_40d290_83748c": 8615052,
+    "_g1_40d290_83748d": 8615053,
+    "_address_40d290_79aa34": 7973428,
+    "_g4_40d290_837480": 8615040,
+    "_g4_40d290_837494": 8615060,
+    "_g4_40d290_837490": 8615056,
+    "_call_40d290_0": 7874954,
+    "_opaque_code_address_40d310_40d350": 4248400,
+    "_g4_40d310_83746c": 8615020,
+    "_g4_40d310_837470": 8615024,
+    "_g1_40d310_837474": 8615028,
+    "_g1_40d310_837475": 8615029,
+    "_address_40d310_79aa34": 7973428,
+    "_g4_40d310_837468": 8615016,
+    "_g4_40d310_83747c": 8615036,
+    "_g4_40d310_837478": 8615032,
+    "_call_40d310_0": 7874954,
+    "_opaque_code_address_40d390_40d3d0": 4248528,
+    "_g4_40d390_8374a4": 8615076,
+    "_g4_40d390_8374a8": 8615080,
+    "_g1_40d390_8374ac": 8615084,
+    "_g1_40d390_8374ad": 8615085,
+    "_address_40d390_79aa34": 7973428,
+    "_g4_40d390_8374a0": 8615072,
+    "_g4_40d390_8374b4": 8615092,
+    "_g4_40d390_8374b0": 8615088,
+    "_call_40d390_0": 7874954,
+    "_opaque_code_address_41e320_41e360": 4318048,
+    "_g4_41e320_83c5dc": 8635868,
+    "_g4_41e320_83c5e0": 8635872,
+    "_g1_41e320_83c5e4": 8635876,
+    "_g1_41e320_83c5e5": 8635877,
+    "_address_41e320_79b800": 7976960,
+    "_g4_41e320_83c5d8": 8635864,
+    "_g4_41e320_83c5ec": 8635884,
+    "_g4_41e320_83c5e8": 8635880,
+    "_call_41e320_0": 7874954,
+    "_opaque_code_address_4835b0_4835f0": 4732400,
+    "_g4_4835b0_851154": 8720724,
+    "_g4_4835b0_851158": 8720728,
+    "_g1_4835b0_85115c": 8720732,
+    "_g1_4835b0_85115d": 8720733,
+    "_address_4835b0_79df30": 7986992,
+    "_g4_4835b0_851150": 8720720,
+    "_g4_4835b0_851164": 8720740,
+    "_g4_4835b0_851160": 8720736,
+    "_call_4835b0_0": 7874954,
+    "_opaque_code_address_4b35a0_4b35e0": 4928992,
+    "_g4_4b35a0_855934": 8739124,
+    "_g4_4b35a0_855938": 8739128,
+    "_g1_4b35a0_85593c": 8739132,
+    "_g1_4b35a0_85593d": 8739133,
+    "_address_4b35a0_7a0cec": 7998700,
+    "_g4_4b35a0_855930": 8739120,
+    "_g4_4b35a0_855944": 8739140,
+    "_g4_4b35a0_855940": 8739136,
+    "_call_4b35a0_0": 7874954,
+    "_opaque_code_address_4bff60_4bff90": 4980624,
+    "_g4_4bff60_865e40": 8805952,
+    "_g4_4bff60_865e44": 8805956,
+    "_g4_4bff60_865e48": 8805960,
+    "_g1_4bff60_865e4c": 8805964,
+    "_g4_4bff60_865e50": 8805968,
+    "_call_4bff60_0": 7874954,
+    "_opaque_code_address_4d4570_4d45b0": 5064112,
+    "_g4_4d4570_a40c64": 10751076,
+    "_g4_4d4570_a40c68": 10751080,
+    "_g1_4d4570_a40c6c": 10751084,
+    "_g1_4d4570_a40c6d": 10751085,
+    "_address_4d4570_79db7c": 7986044,
+    "_g4_4d4570_a40c60": 10751072,
+    "_g4_4d4570_a40c74": 10751092,
+    "_g4_4d4570_a40c70": 10751088,
+    "_call_4d4570_0": 7874954,
+    "_opaque_code_address_4d4760_4d47a0": 5064608,
+    "_g4_4d4760_86623c": 8806972,
+    "_g4_4d4760_866240": 8806976,
+    "_g1_4d4760_866244": 8806980,
+    "_g1_4d4760_866245": 8806981,
+    "_address_4d4760_7a2ae4": 8006372,
+    "_g4_4d4760_866238": 8806968,
+    "_g4_4d4760_86624c": 8806988,
+    "_g4_4d4760_866248": 8806984,
+    "_call_4d4760_0": 7874954,
+    "_opaque_code_address_4d47e0_4d4820": 5064736,
+    "_g4_4d47e0_866164": 8806756,
+    "_g4_4d47e0_866168": 8806760,
+    "_g1_4d47e0_86616c": 8806764,
+    "_g1_4d47e0_86616d": 8806765,
+    "_address_4d47e0_7a2ae4": 8006372,
+    "_g4_4d47e0_866160": 8806752,
+    "_g4_4d47e0_866174": 8806772,
+    "_g4_4d47e0_866170": 8806768,
+    "_call_4d47e0_0": 7874954,
+    "_opaque_code_address_51f110_51f150": 5370192,
+    "_g4_51f110_a5190c": 10819852,
+    "_g4_51f110_a51910": 10819856,
+    "_g1_51f110_a51914": 10819860,
+    "_g1_51f110_a51915": 10819861,
+    "_address_51f110_7a4554": 8013140,
+    "_g4_51f110_a51908": 10819848,
+    "_g4_51f110_a5191c": 10819868,
+    "_g4_51f110_a51918": 10819864,
+    "_call_51f110_0": 7874954,
+    "_opaque_code_address_51f1b0_51f1f0": 5370352,
+    "_g4_51f1b0_a51884": 10819716,
+    "_g4_51f1b0_a51888": 10819720,
+    "_g1_51f1b0_a5188c": 10819724,
+    "_g1_51f1b0_a5188d": 10819725,
+    "_address_51f1b0_7a4554": 8013140,
+    "_g4_51f1b0_a51880": 10819712,
+    "_g4_51f1b0_a51894": 10819732,
+    "_g4_51f1b0_a51890": 10819728,
+    "_call_51f1b0_0": 7874954,
+    "_opaque_code_address_51f250_51f290": 5370512,
+    "_g4_51f250_a518cc": 10819788,
+    "_g4_51f250_a518d0": 10819792,
+    "_g1_51f250_a518d4": 10819796,
+    "_g1_51f250_a518d5": 10819797,
+    "_address_51f250_7a4554": 8013140,
+    "_g4_51f250_a518c8": 10819784,
+    "_g4_51f250_a518dc": 10819804,
+    "_g4_51f250_a518d8": 10819800,
+    "_call_51f250_0": 7874954,
+    "_g4_5211b0_a51df0": 10821104,
+    "_g4_5211b0_a51df4": 10821108,
+    "_g4_5211b0_a51e18": 10821144,
+    "_g4_5211b0_a51e1c": 10821148,
+    "_opaque_code_address_5211d0_521210": 5378576,
+    "_g4_5211d0_a51f8c": 10821516,
+    "_g4_5211d0_a51f90": 10821520,
+    "_g1_5211d0_a51f94": 10821524,
+    "_g1_5211d0_a51f95": 10821525,
+    "_address_5211d0_7a45d4": 8013268,
+    "_g4_5211d0_a51f88": 10821512,
+    "_g4_5211d0_a51f9c": 10821532,
+    "_g4_5211d0_a51f98": 10821528,
+    "_call_5211d0_0": 7874954,
+    "_opaque_code_address_528590_5285d0": 5408208,
+    "_g4_528590_a52ecc": 10825420,
+    "_g4_528590_a52ed0": 10825424,
+    "_g1_528590_a52ed4": 10825428,
+    "_g1_528590_a52ed5": 10825429,
+    "_address_528590_7a513c": 8016188,
+    "_g4_528590_a52ec8": 10825416,
+    "_g4_528590_a52edc": 10825436,
+    "_g4_528590_a52ed8": 10825432,
+    "_call_528590_0": 7874954,
+    "_opaque_code_address_56d530_56d570": 5690736,
+    "_g4_56d530_a6fd2c": 10943788,
+    "_g4_56d530_a6fd30": 10943792,
+    "_g1_56d530_a6fd34": 10943796,
+    "_g1_56d530_a6fd35": 10943797,
+    "_address_56d530_7a5d90": 8019344,
+    "_g4_56d530_a6fd28": 10943784,
+    "_g4_56d530_a6fd3c": 10943804,
+    "_g4_56d530_a6fd38": 10943800,
+    "_call_56d530_0": 7874954,
+    "_opaque_code_address_5b5de0_5b5e20": 5987872,
+    "_g4_5b5de0_a71904": 10950916,
+    "_g4_5b5de0_a71908": 10950920,
+    "_g1_5b5de0_a7190c": 10950924,
+    "_g1_5b5de0_a7190d": 10950925,
+    "_address_5b5de0_7a70e4": 8024292,
+    "_g4_5b5de0_a71900": 10950912,
+    "_g4_5b5de0_a71914": 10950932,
+    "_g4_5b5de0_a71910": 10950928,
+    "_call_5b5de0_0": 7874954,
+    "_opaque_code_address_5b5e60_5b5ea0": 5988000,
+    "_g4_5b5e60_a7192c": 10950956,
+    "_g4_5b5e60_a71930": 10950960,
+    "_g1_5b5e60_a71934": 10950964,
+    "_g1_5b5e60_a71935": 10950965,
+    "_address_5b5e60_7a7124": 8024356,
+    "_g4_5b5e60_a71928": 10950952,
+    "_g4_5b5e60_a7193c": 10950972,
+    "_g4_5b5e60_a71938": 10950968,
+    "_call_5b5e60_0": 7874954,
+    "_opaque_code_address_5d5750_5d5790": 6117264,
+    "_g4_5d5750_a72f94": 10956692,
+    "_g4_5d5750_a72f98": 10956696,
+    "_g1_5d5750_a72f9c": 10956700,
+    "_g1_5d5750_a72f9d": 10956701,
+    "_address_5d5750_7a768c": 8025740,
+    "_g4_5d5750_a72f90": 10956688,
+    "_g4_5d5750_a72fa4": 10956708,
+    "_g4_5d5750_a72fa0": 10956704,
+    "_call_5d5750_0": 7874954,
+    "_g4_5edf60_a737f0": 10958832,
+    "_g4_5edf60_a737f4": 10958836,
+    "_g4_5edf60_a737f8": 10958840,
+    "_g4_5edf60_a737fc": 10958844,
+    "_g4_5edf60_a73800": 10958848,
+    "_g2_5edf60_a73804": 10958852,
+    "_g4_5edf60_a73904": 10959108,
+    "_g4_5edf60_a73908": 10959112,
+    "_g4_5edf60_a7390c": 10959116,
+    "_g2_63b590_ab67b8": 11233208,
+    "_g2_63b590_ab67ba": 11233210,
+    "_opaque_code_address_663610_663650": 6698576,
+    "_g4_663610_ab6efc": 11235068,
+    "_g4_663610_ab6f00": 11235072,
+    "_g1_663610_ab6f04": 11235076,
+    "_g1_663610_ab6f05": 11235077,
+    "_address_663610_7a7b98": 8027032,
+    "_g4_663610_ab6ef8": 11235064,
+    "_g4_663610_ab6f0c": 11235084,
+    "_g4_663610_ab6f08": 11235080,
+    "_call_663610_0": 7874954,
+    "_opaque_code_address_6a22f0_6a2330": 6955824,
+    "_g4_6a22f0_abe5b4": 11265460,
+    "_g4_6a22f0_abe5b8": 11265464,
+    "_g1_6a22f0_abe5bc": 11265468,
+    "_g1_6a22f0_abe5bd": 11265469,
+    "_address_6a22f0_7ac4c4": 8045764,
+    "_g4_6a22f0_abe5b0": 11265456,
+    "_g4_6a22f0_abe5c4": 11265476,
+    "_g4_6a22f0_abe5c0": 11265472,
+    "_call_6a22f0_0": 7874954,
+    "_opaque_code_address_6a23a0_6a23e0": 6956000,
+    "_g4_6a23a0_abe52c": 11265324,
+    "_g4_6a23a0_abe530": 11265328,
+    "_g1_6a23a0_abe534": 11265332,
+    "_g1_6a23a0_abe535": 11265333,
+    "_address_6a23a0_7ac504": 8045828,
+    "_g4_6a23a0_abe528": 11265320,
+    "_g4_6a23a0_abe53c": 11265340,
+    "_g4_6a23a0_abe538": 11265336,
+    "_call_6a23a0_0": 7874954,
+    "_opaque_code_address_6b5440_6b5470": 7033968,
+    "_g4_6b5440_abff58": 11272024,
+    "_g4_6b5440_abff5c": 11272028,
+    "_g4_6b5440_abff60": 11272032,
+    "_g1_6b5440_abff64": 11272036,
+    "_g4_6b5440_abff68": 11272040,
+    "_call_6b5440_0": 7874954,
+    "_g4_6c0c40_a40d2c": 10751276,
+    "_opaque_code_address_6c0c40_6c0c60": 7081056,
+    "_g4_6c0c40_ac0178": 11272568,
+    "_g4_6c0c40_ac0180": 11272576,
+    "_call_6c0c40_0": 7874954,
+    "_opaque_code_address_6ec610_6ec650": 7259728,
+    "_g4_6ec610_ac0cb4": 11275444,
+    "_g4_6ec610_ac0cb8": 11275448,
+    "_g1_6ec610_ac0cbc": 11275452,
+    "_g1_6ec610_ac0cbd": 11275453,
+    "_address_6ec610_7a177c": 8001404,
+    "_g4_6ec610_ac0cb0": 11275440,
+    "_g4_6ec610_ac0cc4": 11275460,
+    "_g4_6ec610_ac0cc0": 11275456,
+    "_call_6ec610_0": 7874954,
+    "_opaque_code_address_6ec690_6ec6d0": 7259856,
+    "_g4_6ec690_ac0c5c": 11275356,
+    "_g4_6ec690_ac0c60": 11275360,
+    "_g1_6ec690_ac0c64": 11275364,
+    "_g1_6ec690_ac0c65": 11275365,
+    "_address_6ec690_7a177c": 8001404,
+    "_g4_6ec690_ac0c58": 11275352,
+    "_g4_6ec690_ac0c6c": 11275372,
+    "_g4_6ec690_ac0c68": 11275368,
+    "_call_6ec690_0": 7874954,
+    "_opaque_code_address_6ec710_6ec750": 7259984,
+    "_g4_6ec710_ac0d4c": 11275596,
+    "_g4_6ec710_ac0d50": 11275600,
+    "_g1_6ec710_ac0d54": 11275604,
+    "_g1_6ec710_ac0d55": 11275605,
+    "_address_6ec710_7a177c": 8001404,
+    "_g4_6ec710_ac0d48": 11275592,
+    "_g4_6ec710_ac0d5c": 11275612,
+    "_g4_6ec710_ac0d58": 11275608,
+    "_call_6ec710_0": 7874954,
+    "_opaque_code_address_6ec790_6ec7d0": 7260112,
+    "_g4_6ec790_ac0bfc": 11275260,
+    "_g4_6ec790_ac0c00": 11275264,
+    "_g1_6ec790_ac0c04": 11275268,
+    "_g1_6ec790_ac0c05": 11275269,
+    "_address_6ec790_7a177c": 8001404,
+    "_g4_6ec790_ac0bf8": 11275256,
+    "_g4_6ec790_ac0c0c": 11275276,
+    "_g4_6ec790_ac0c08": 11275272,
+    "_call_6ec790_0": 7874954,
+    "_opaque_code_address_6ec810_6ec850": 7260240,
+    "_g4_6ec810_ac0c84": 11275396,
+    "_g4_6ec810_ac0c88": 11275400,
+    "_g1_6ec810_ac0c8c": 11275404,
+    "_g1_6ec810_ac0c8d": 11275405,
+    "_address_6ec810_7a177c": 8001404,
+    "_g4_6ec810_ac0c80": 11275392,
+    "_g4_6ec810_ac0c94": 11275412,
+    "_g4_6ec810_ac0c90": 11275408,
+    "_call_6ec810_0": 7874954,
+    "_opaque_code_address_6ec890_6ec8d0": 7260368,
+    "_g4_6ec890_ac0c9c": 11275420,
+    "_g4_6ec890_ac0ca0": 11275424,
+    "_g1_6ec890_ac0ca4": 11275428,
+    "_g1_6ec890_ac0ca5": 11275429,
+    "_address_6ec890_7a177c": 8001404,
+    "_g4_6ec890_ac0c98": 11275416,
+    "_g4_6ec890_ac0cac": 11275436,
+    "_g4_6ec890_ac0ca8": 11275432,
+    "_call_6ec890_0": 7874954,
+    "_opaque_code_address_6ec910_6ec950": 7260496,
+    "_g4_6ec910_ac0c34": 11275316,
+    "_g4_6ec910_ac0c38": 11275320,
+    "_g1_6ec910_ac0c3c": 11275324,
+    "_g1_6ec910_ac0c3d": 11275325,
+    "_address_6ec910_7a177c": 8001404,
+    "_g4_6ec910_ac0c30": 11275312,
+    "_g4_6ec910_ac0c44": 11275332,
+    "_g4_6ec910_ac0c40": 11275328,
+    "_call_6ec910_0": 7874954,
+    "_opaque_code_address_6ec990_6ec9d0": 7260624,
+    "_g4_6ec990_ac0c1c": 11275292,
+    "_g4_6ec990_ac0c20": 11275296,
+    "_g1_6ec990_ac0c24": 11275300,
+    "_g1_6ec990_ac0c25": 11275301,
+    "_address_6ec990_7a177c": 8001404,
+    "_g4_6ec990_ac0c18": 11275288,
+    "_g4_6ec990_ac0c2c": 11275308,
+    "_g4_6ec990_ac0c28": 11275304,
+    "_call_6ec990_0": 7874954,
+    "_opaque_code_address_6eca10_6eca50": 7260752,
+    "_g4_6eca10_ac0d0c": 11275532,
+    "_g4_6eca10_ac0d10": 11275536,
+    "_g1_6eca10_ac0d14": 11275540,
+    "_g1_6eca10_ac0d15": 11275541,
+    "_address_6eca10_7a177c": 8001404,
+    "_g4_6eca10_ac0d08": 11275528,
+    "_g4_6eca10_ac0d1c": 11275548,
+    "_g4_6eca10_ac0d18": 11275544,
+    "_call_6eca10_0": 7874954,
+    "_opaque_code_address_6eca90_6ecad0": 7260880,
+    "_g4_6eca90_ac0d34": 11275572,
+    "_g4_6eca90_ac0d38": 11275576,
+    "_g1_6eca90_ac0d3c": 11275580,
+    "_g1_6eca90_ac0d3d": 11275581,
+    "_address_6eca90_7a177c": 8001404,
+    "_g4_6eca90_ac0d30": 11275568,
+    "_g4_6eca90_ac0d44": 11275588,
+    "_g4_6eca90_ac0d40": 11275584,
+    "_call_6eca90_0": 7874954,
+    "_opaque_code_address_6ecb10_6ecb50": 7261008,
+    "_g4_6ecb10_ac0cdc": 11275484,
+    "_g4_6ecb10_ac0ce0": 11275488,
+    "_g1_6ecb10_ac0ce4": 11275492,
+    "_g1_6ecb10_ac0ce5": 11275493,
+    "_address_6ecb10_7a177c": 8001404,
+    "_g4_6ecb10_ac0cd8": 11275480,
+    "_g4_6ecb10_ac0cec": 11275500,
+    "_g4_6ecb10_ac0ce8": 11275496,
+    "_call_6ecb10_0": 7874954,
+    "_opaque_code_address_727400_727440": 7500864,
+    "_g4_727400_b256c4": 11687620,
+    "_g4_727400_b256c8": 11687624,
+    "_g1_727400_b256cc": 11687628,
+    "_g1_727400_b256cd": 11687629,
+    "_address_727400_7af08c": 8056972,
+    "_g4_727400_b256c0": 11687616,
+    "_g4_727400_b256d4": 11687636,
+    "_g4_727400_b256d0": 11687632,
+    "_call_727400_0": 7874954,
+    "_opaque_code_address_735d70_735d90": 7560592,
+    "_g4_735d70_b25dc8": 11689416,
+    "_g4_735d70_b25dcc": 11689420,
+    "_g4_735d70_b25dd0": 11689424,
+    "_call_735d70_0": 7874954,
+    "_opaque_code_address_73a940_73a960": 7580000,
+    "_g4_73a940_b2a700": 11708160,
+    "_g4_73a940_b2a704": 11708164,
+    "_g4_73a940_b2a708": 11708168,
+    "_call_73a940_0": 7874954,
+    "_opaque_code_address_73a980_73a9a0": 7580064,
+    "_g4_73a980_b26c88": 11693192,
+    "_g4_73a980_b26c8c": 11693196,
+    "_g4_73a980_b26c90": 11693200,
+    "_call_73a980_0": 7874954,
+    "_opaque_code_address_73a9c0_73a9e0": 7580128,
+    "_g4_73a9c0_b29990": 11704720,
+    "_g4_73a9c0_b29994": 11704724,
+    "_g4_73a9c0_b29998": 11704728,
+    "_call_73a9c0_0": 7874954,
+    "_opaque_code_address_73aa00_73aa20": 7580192,
+    "_g4_73aa00_b2a728": 11708200,
+    "_g4_73aa00_b2a72c": 11708204,
+    "_g4_73aa00_b2a730": 11708208,
+    "_call_73aa00_0": 7874954,
+    "_opaque_code_address_73aa40_73aa60": 7580256,
+    "_g4_73aa40_b29390": 11703184,
+    "_g4_73aa40_b29394": 11703188,
+    "_g4_73aa40_b29398": 11703192,
+    "_call_73aa40_0": 7874954,
+    "_opaque_code_address_73b1c0_73b1e0": 7582176,
+    "_g4_73b1c0_b2a648": 11707976,
+    "_g4_73b1c0_b2a64c": 11707980,
+    "_g4_73b1c0_b2a650": 11707984,
+    "_call_73b1c0_0": 7874954,
+    "_opaque_code_address_73b3f0_73b410": 7582736,
+    "_g4_73b3f0_b29468": 11703400,
+    "_g4_73b3f0_b2946c": 11703404,
+    "_g4_73b3f0_b29470": 11703408,
+    "_call_73b3f0_0": 7874954,
+    "_opaque_code_address_73b450_73b470": 7582832,
+    "_g4_73b450_b26a50": 11692624,
+    "_g4_73b450_b26a54": 11692628,
+    "_g4_73b450_b26a58": 11692632,
+    "_call_73b450_0": 7874954,
+    "_opaque_code_address_73b4b0_73b4d0": 7582928,
+    "_g4_73b4b0_b26570": 11691376,
+    "_g4_73b4b0_b26574": 11691380,
+    "_g4_73b4b0_b26578": 11691384,
+    "_call_73b4b0_0": 7874954,
+    "_opaque_code_address_73b510_73b530": 7583024,
+    "_g4_73b510_b299b0": 11704752,
+    "_g4_73b510_b299b4": 11704756,
+    "_g4_73b510_b299b8": 11704760,
+    "_call_73b510_0": 7874954,
+    "_opaque_code_address_73b570_73b590": 7583120,
+    "_g4_73b570_b29380": 11703168,
+    "_g4_73b570_b29384": 11703172,
+    "_g4_73b570_b29388": 11703176,
+    "_call_73b570_0": 7874954,
+    "_opaque_code_address_73b5d0_73b5f0": 7583216,
+    "_g4_73b5d0_b26960": 11692384,
+    "_g4_73b5d0_b26964": 11692388,
+    "_g4_73b5d0_b26968": 11692392,
+    "_call_73b5d0_0": 7874954,
+    "_opaque_code_address_73b630_73b650": 7583312,
+    "_g4_73b630_b2a6c8": 11708104,
+    "_g4_73b630_b2a6cc": 11708108,
+    "_g4_73b630_b2a6d0": 11708112,
+    "_call_73b630_0": 7874954,
+    "_opaque_code_address_73b690_73b6b0": 7583408,
+    "_g4_73b690_b26580": 11691392,
+    "_g4_73b690_b26584": 11691396,
+    "_g4_73b690_b26588": 11691400,
+    "_call_73b690_0": 7874954,
+    "_opaque_code_address_73b6f0_73b710": 7583504,
+    "_g4_73b6f0_b29000": 11702272,
+    "_g4_73b6f0_b29004": 11702276,
+    "_g4_73b6f0_b29008": 11702280,
+    "_call_73b6f0_0": 7874954,
+    "_opaque_code_address_73b750_73b770": 7583600,
+    "_g4_73b750_b26920": 11692320,
+    "_g4_73b750_b26924": 11692324,
+    "_g4_73b750_b26928": 11692328,
+    "_call_73b750_0": 7874954,
+    "_opaque_code_address_73b7b0_73b7d0": 7583696,
+    "_g4_73b7b0_b29838": 11704376,
+    "_g4_73b7b0_b2983c": 11704380,
+    "_g4_73b7b0_b29840": 11704384,
+    "_call_73b7b0_0": 7874954,
+    "_opaque_code_address_73b810_73b830": 7583792,
+    "_g4_73b810_b2a7d8": 11708376,
+    "_g4_73b810_b2a7dc": 11708380,
+    "_g4_73b810_b2a7e0": 11708384,
+    "_call_73b810_0": 7874954,
+    "_opaque_code_address_73bcc0_73bce0": 7584992,
+    "_g4_73bcc0_b29980": 11704704,
+    "_g4_73bcc0_b29984": 11704708,
+    "_g4_73bcc0_b29988": 11704712,
+    "_call_73bcc0_0": 7874954,
+    "_opaque_code_address_73bd20_73bd40": 7585088,
+    "_g4_73bd20_b29828": 11704360,
+    "_g4_73bd20_b2982c": 11704364,
+    "_g4_73bd20_b29830": 11704368,
+    "_call_73bd20_0": 7874954
+  },
+  "regions": [
+    {
+      "entry": 4242656,
+      "method": "40bce0",
+      "symbol": "_recover_40bce0",
+      "symbol_prefix": "_recover_40bce0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "80a79978f9fa432c57c85d3f1bb7e1082f3e18f6f121a4e8c32543e1fabf31fb",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "80a79978f9fa432c57c85d3f1bb7e1082f3e18f6f121a4e8c32543e1fabf31fb",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_40bce0_40bd20",
+          "target": 4242720,
+          "addend": 0,
+          "resolved": 4242720
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_40bce0_83235c",
+          "target": 8594268,
+          "addend": 0,
+          "resolved": 8594268
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_40bce0_832360",
+          "target": 8594272,
+          "addend": 0,
+          "resolved": 8594272
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_40bce0_832364",
+          "target": 8594276,
+          "addend": 0,
+          "resolved": 8594276
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_40bce0_832365",
+          "target": 8594277,
+          "addend": 0,
+          "resolved": 8594277
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_40bce0_832358",
+          "target": 8594264,
+          "addend": 0,
+          "resolved": 8594264
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_40bce0_79a81c",
+          "target": 7972892,
+          "addend": 0,
+          "resolved": 7972892
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_40bce0_83236c",
+          "target": 8594284,
+          "addend": 0,
+          "resolved": 8594284
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_40bce0_832368",
+          "target": 8594280,
+          "addend": 0,
+          "resolved": 8594280
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_40bce0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3632239
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_CommandClass_ptr/0040bce0.cpp",
+      "source_sha256": "4f6a1978b83149f7457b66d540cc8bf39f00546df221c0aa6120dd729d076581",
+      "source_order": 110,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4243648,
+      "method": "40c0c0",
+      "symbol": "_recover_40c0c0",
+      "symbol_prefix": "_recover_40c0c0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "49a3ca83708669665d36c9d3577e7fc95fd182c0a14b087893366612b4085e03",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "49a3ca83708669665d36c9d3577e7fc95fd182c0a14b087893366612b4085e03",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_40c0c0_40c100",
+          "target": 4243712,
+          "addend": 0,
+          "resolved": 4243712
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_40c0c0_83239c",
+          "target": 8594332,
+          "addend": 0,
+          "resolved": 8594332
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_40c0c0_8323a0",
+          "target": 8594336,
+          "addend": 0,
+          "resolved": 8594336
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_40c0c0_8323a4",
+          "target": 8594340,
+          "addend": 0,
+          "resolved": 8594340
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_40c0c0_8323a5",
+          "target": 8594341,
+          "addend": 0,
+          "resolved": 8594341
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_40c0c0_832398",
+          "target": 8594328,
+          "addend": 0,
+          "resolved": 8594328
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_40c0c0_79a85c",
+          "target": 7972956,
+          "addend": 0,
+          "resolved": 7972956
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_40c0c0_8323ac",
+          "target": 8594348,
+          "addend": 0,
+          "resolved": 8594348
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_40c0c0_8323a8",
+          "target": 8594344,
+          "addend": 0,
+          "resolved": 8594344
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_40c0c0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3631247
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_LightConvertClass_ptr/0040c0c0.cpp",
+      "source_sha256": "0a4c1e9dd8a124adce649bf6c29f8082b527f111a756d8c06b1f02bacab0f906",
+      "source_order": 121,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4246128,
+      "method": "40ca70",
+      "symbol": "_recover_40ca70",
+      "symbol_prefix": "_recover_40ca70",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "748d5d2133693e65a5d747a2d60a685f1587890edc893cd1900d44dbc3017ed0",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "748d5d2133693e65a5d747a2d60a685f1587890edc893cd1900d44dbc3017ed0",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_40ca70_40cab0",
+          "target": 4246192,
+          "addend": 0,
+          "resolved": 4246192
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_40ca70_832474",
+          "target": 8594548,
+          "addend": 0,
+          "resolved": 8594548
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_40ca70_832478",
+          "target": 8594552,
+          "addend": 0,
+          "resolved": 8594552
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_40ca70_83247c",
+          "target": 8594556,
+          "addend": 0,
+          "resolved": 8594556
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_40ca70_83247d",
+          "target": 8594557,
+          "addend": 0,
+          "resolved": 8594557
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_40ca70_832484",
+          "target": 8594564,
+          "addend": 0,
+          "resolved": 8594564
+        },
+        {
+          "offset": 40,
+          "kind": 6,
+          "symbol": "_g4_40ca70_832480",
+          "target": 8594560,
+          "addend": 0,
+          "resolved": 8594560
+        },
+        {
+          "offset": 46,
+          "kind": 6,
+          "symbol": "_g4_40ca70_832470",
+          "target": 8594544,
+          "addend": 0,
+          "resolved": 8594544
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_address_40ca70_79a8ec",
+          "target": 7973100,
+          "addend": 0,
+          "resolved": 7973100
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_40ca70_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3628767
+        }
+      ],
+      "source": "src/recovered/classes/LogicClass/0040ca70.cpp",
+      "source_sha256": "75df98168d2410c8ba36d28acc588b45918179094b7f326c2f468a5b4f632aee",
+      "source_order": 156,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4248080,
+      "method": "40d210",
+      "symbol": "_recover_40d210",
+      "symbol_prefix": "_recover_40d210",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "68e1e8b2eab03f7d1e71391063adf522e2adfeedccd96b76284ec16b430dc87e",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "68e1e8b2eab03f7d1e71391063adf522e2adfeedccd96b76284ec16b430dc87e",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_40d210_40d250",
+          "target": 4248144,
+          "addend": 0,
+          "resolved": 4248144
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_40d210_837454",
+          "target": 8614996,
+          "addend": 0,
+          "resolved": 8614996
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_40d210_837458",
+          "target": 8615000,
+          "addend": 0,
+          "resolved": 8615000
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_40d210_83745c",
+          "target": 8615004,
+          "addend": 0,
+          "resolved": 8615004
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_40d210_83745d",
+          "target": 8615005,
+          "addend": 0,
+          "resolved": 8615005
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_40d210_837450",
+          "target": 8614992,
+          "addend": 0,
+          "resolved": 8614992
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_40d210_79aa34",
+          "target": 7973428,
+          "addend": 0,
+          "resolved": 7973428
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_40d210_837464",
+          "target": 8615012,
+          "addend": 0,
+          "resolved": 8615012
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_40d210_837460",
+          "target": 8615008,
+          "addend": 0,
+          "resolved": 8615008
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_40d210_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3626815
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_MixFileClass_ptr/0040d210.cpp",
+      "source_sha256": "df7fe0decc9fdb832c68801b5bab701aa647827f28545ea1c8ade0694dafa3f6",
+      "source_order": 186,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4248208,
+      "method": "40d290",
+      "symbol": "_recover_40d290",
+      "symbol_prefix": "_recover_40d290",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "b177df60224852b6182e64a0fa8501db58ef6448c83e76889f62ed27f3e1b27f",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "b177df60224852b6182e64a0fa8501db58ef6448c83e76889f62ed27f3e1b27f",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_40d290_40d2d0",
+          "target": 4248272,
+          "addend": 0,
+          "resolved": 4248272
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_40d290_837484",
+          "target": 8615044,
+          "addend": 0,
+          "resolved": 8615044
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_40d290_837488",
+          "target": 8615048,
+          "addend": 0,
+          "resolved": 8615048
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_40d290_83748c",
+          "target": 8615052,
+          "addend": 0,
+          "resolved": 8615052
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_40d290_83748d",
+          "target": 8615053,
+          "addend": 0,
+          "resolved": 8615053
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_40d290_837480",
+          "target": 8615040,
+          "addend": 0,
+          "resolved": 8615040
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_40d290_79aa34",
+          "target": 7973428,
+          "addend": 0,
+          "resolved": 7973428
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_40d290_837494",
+          "target": 8615060,
+          "addend": 0,
+          "resolved": 8615060
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_40d290_837490",
+          "target": 8615056,
+          "addend": 0,
+          "resolved": 8615056
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_40d290_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3626687
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_MixFileClass_ptr/0040d290.cpp",
+      "source_sha256": "6ed509ea11b241a4d8138bc42a44fe98a87ef5b5e83d25ac108ee0957edd4ddd",
+      "source_order": 187,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4248336,
+      "method": "40d310",
+      "symbol": "_recover_40d310",
+      "symbol_prefix": "_recover_40d310",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "8f30c914107e99b4e269f58c69c2198bb45857c04e2f2a4da05f8a9ac2b9b9a8",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "8f30c914107e99b4e269f58c69c2198bb45857c04e2f2a4da05f8a9ac2b9b9a8",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_40d310_40d350",
+          "target": 4248400,
+          "addend": 0,
+          "resolved": 4248400
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_40d310_83746c",
+          "target": 8615020,
+          "addend": 0,
+          "resolved": 8615020
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_40d310_837470",
+          "target": 8615024,
+          "addend": 0,
+          "resolved": 8615024
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_40d310_837474",
+          "target": 8615028,
+          "addend": 0,
+          "resolved": 8615028
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_40d310_837475",
+          "target": 8615029,
+          "addend": 0,
+          "resolved": 8615029
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_40d310_837468",
+          "target": 8615016,
+          "addend": 0,
+          "resolved": 8615016
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_40d310_79aa34",
+          "target": 7973428,
+          "addend": 0,
+          "resolved": 7973428
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_40d310_83747c",
+          "target": 8615036,
+          "addend": 0,
+          "resolved": 8615036
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_40d310_837478",
+          "target": 8615032,
+          "addend": 0,
+          "resolved": 8615032
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_40d310_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3626559
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_MixFileClass_ptr/0040d310.cpp",
+      "source_sha256": "242d3de54dc7cf8c0bb6de1c4e1d7c45aa2a790eefa34fb180d77b5ae881514e",
+      "source_order": 188,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4248464,
+      "method": "40d390",
+      "symbol": "_recover_40d390",
+      "symbol_prefix": "_recover_40d390",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "7a0fc1abf56f6e6109b5e2bfcc92085af4327078a8172fddb3a0f1a5b1e02f12",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "7a0fc1abf56f6e6109b5e2bfcc92085af4327078a8172fddb3a0f1a5b1e02f12",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_40d390_40d3d0",
+          "target": 4248528,
+          "addend": 0,
+          "resolved": 4248528
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_40d390_8374a4",
+          "target": 8615076,
+          "addend": 0,
+          "resolved": 8615076
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_40d390_8374a8",
+          "target": 8615080,
+          "addend": 0,
+          "resolved": 8615080
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_40d390_8374ac",
+          "target": 8615084,
+          "addend": 0,
+          "resolved": 8615084
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_40d390_8374ad",
+          "target": 8615085,
+          "addend": 0,
+          "resolved": 8615085
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_40d390_8374a0",
+          "target": 8615072,
+          "addend": 0,
+          "resolved": 8615072
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_40d390_79aa34",
+          "target": 7973428,
+          "addend": 0,
+          "resolved": 7973428
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_40d390_8374b4",
+          "target": 8615092,
+          "addend": 0,
+          "resolved": 8615092
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_40d390_8374b0",
+          "target": 8615088,
+          "addend": 0,
+          "resolved": 8615088
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_40d390_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3626431
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_MixFileClass_ptr/0040d390.cpp",
+      "source_sha256": "3c37cf9f2cfe8a62d9360c9d93e3c5daffc95a9233706d012a06ea87bbd83299",
+      "source_order": 189,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4317984,
+      "method": "41e320",
+      "symbol": "_recover_41e320",
+      "symbol_prefix": "_recover_41e320",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "71b7ff2b362e40ba331bb741dc02ff9e1b9da7445fb51e23ed70521b0bc80d63",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "71b7ff2b362e40ba331bb741dc02ff9e1b9da7445fb51e23ed70521b0bc80d63",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_41e320_41e360",
+          "target": 4318048,
+          "addend": 0,
+          "resolved": 4318048
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_41e320_83c5dc",
+          "target": 8635868,
+          "addend": 0,
+          "resolved": 8635868
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_41e320_83c5e0",
+          "target": 8635872,
+          "addend": 0,
+          "resolved": 8635872
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_41e320_83c5e4",
+          "target": 8635876,
+          "addend": 0,
+          "resolved": 8635876
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_41e320_83c5e5",
+          "target": 8635877,
+          "addend": 0,
+          "resolved": 8635877
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_41e320_83c5d8",
+          "target": 8635864,
+          "addend": 0,
+          "resolved": 8635864
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_41e320_79b800",
+          "target": 7976960,
+          "addend": 0,
+          "resolved": 7976960
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_41e320_83c5ec",
+          "target": 8635884,
+          "addend": 0,
+          "resolved": 8635884
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_41e320_83c5e8",
+          "target": 8635880,
+          "addend": 0,
+          "resolved": 8635880
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_41e320_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3556911
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AlphaLightingRemapClass_ptr/0041e320.cpp",
+      "source_sha256": "815dad5cfd1f193341b016d7dcfda89f8f2623f44d932a94f4357bcdbb4dfe23",
+      "source_order": 479,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 4732336,
+      "method": "4835b0",
+      "symbol": "_recover_4835b0",
+      "symbol_prefix": "_recover_4835b0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "911c6dc5b6f3b6721caf4fafdc389e6e7add34289c1af9888bf98d73babc4051",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "911c6dc5b6f3b6721caf4fafdc389e6e7add34289c1af9888bf98d73babc4051",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_4835b0_4835f0",
+          "target": 4732400,
+          "addend": 0,
+          "resolved": 4732400
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_4835b0_851154",
+          "target": 8720724,
+          "addend": 0,
+          "resolved": 8720724
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_4835b0_851158",
+          "target": 8720728,
+          "addend": 0,
+          "resolved": 8720728
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_4835b0_85115c",
+          "target": 8720732,
+          "addend": 0,
+          "resolved": 8720732
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_4835b0_85115d",
+          "target": 8720733,
+          "addend": 0,
+          "resolved": 8720733
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_4835b0_851150",
+          "target": 8720720,
+          "addend": 0,
+          "resolved": 8720720
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_4835b0_79df30",
+          "target": 7986992,
+          "addend": 0,
+          "resolved": 7986992
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_4835b0_851164",
+          "target": 8720740,
+          "addend": 0,
+          "resolved": 8720740
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_4835b0_851160",
+          "target": 8720736,
+          "addend": 0,
+          "resolved": 8720736
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_4835b0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 3142559
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ConvertClass_ptr/004835b0.cpp",
+      "source_sha256": "0626dcf233cf30c0dd75865f1ef7711a0921e0f8e9ebb8de23de16f2020a3ea1",
+      "source_order": 1154,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5064048,
+      "method": "4d4570",
+      "symbol": "_recover_4d4570",
+      "symbol_prefix": "_recover_4d4570",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "ece66ffacd1274dbbf59bbe73a5e3ff6dd728ee7c7efc6d9c051f672c43e2639",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "ece66ffacd1274dbbf59bbe73a5e3ff6dd728ee7c7efc6d9c051f672c43e2639",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_4d4570_4d45b0",
+          "target": 5064112,
+          "addend": 0,
+          "resolved": 5064112
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_4d4570_a40c64",
+          "target": 10751076,
+          "addend": 0,
+          "resolved": 10751076
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_4d4570_a40c68",
+          "target": 10751080,
+          "addend": 0,
+          "resolved": 10751080
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_4d4570_a40c6c",
+          "target": 10751084,
+          "addend": 0,
+          "resolved": 10751084
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_4d4570_a40c6d",
+          "target": 10751085,
+          "addend": 0,
+          "resolved": 10751085
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_4d4570_a40c60",
+          "target": 10751072,
+          "addend": 0,
+          "resolved": 10751072
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_4d4570_79db7c",
+          "target": 7986044,
+          "addend": 0,
+          "resolved": 7986044
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_4d4570_a40c74",
+          "target": 10751092,
+          "addend": 0,
+          "resolved": 10751092
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_4d4570_a40c70",
+          "target": 10751088,
+          "addend": 0,
+          "resolved": 10751088
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_4d4570_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 2810847
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ObjectClass_ptr/004d4570.cpp",
+      "source_sha256": "a30becf3ad752720b02f1792bcf7203004bef6ca40c0f46b3ed0409d461237ea",
+      "source_order": 1857,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5064544,
+      "method": "4d4760",
+      "symbol": "_recover_4d4760",
+      "symbol_prefix": "_recover_4d4760",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "ed41802e0738d61e45e3c1c45971aa13e4df343c73a8689b52743aedfdee7d74",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "ed41802e0738d61e45e3c1c45971aa13e4df343c73a8689b52743aedfdee7d74",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_4d4760_4d47a0",
+          "target": 5064608,
+          "addend": 0,
+          "resolved": 5064608
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_4d4760_86623c",
+          "target": 8806972,
+          "addend": 0,
+          "resolved": 8806972
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_4d4760_866240",
+          "target": 8806976,
+          "addend": 0,
+          "resolved": 8806976
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_4d4760_866244",
+          "target": 8806980,
+          "addend": 0,
+          "resolved": 8806980
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_4d4760_866245",
+          "target": 8806981,
+          "addend": 0,
+          "resolved": 8806981
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_4d4760_866238",
+          "target": 8806968,
+          "addend": 0,
+          "resolved": 8806968
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_4d4760_7a2ae4",
+          "target": 8006372,
+          "addend": 0,
+          "resolved": 8006372
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_4d4760_86624c",
+          "target": 8806988,
+          "addend": 0,
+          "resolved": 8806988
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_4d4760_866248",
+          "target": 8806984,
+          "addend": 0,
+          "resolved": 8806984
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_4d4760_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 2810351
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_TagClass_ptr/004d4760.cpp",
+      "source_sha256": "da25068f4e2321c4154e9836f56f16e8fb964ffb873f6f17214103b059bcfeb7",
+      "source_order": 1858,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5064672,
+      "method": "4d47e0",
+      "symbol": "_recover_4d47e0",
+      "symbol_prefix": "_recover_4d47e0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "8dfd5546013e880debe462e0d51763391d97c958e256f4309348ae82aa00029c",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "8dfd5546013e880debe462e0d51763391d97c958e256f4309348ae82aa00029c",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_4d47e0_4d4820",
+          "target": 5064736,
+          "addend": 0,
+          "resolved": 5064736
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_4d47e0_866164",
+          "target": 8806756,
+          "addend": 0,
+          "resolved": 8806756
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_4d47e0_866168",
+          "target": 8806760,
+          "addend": 0,
+          "resolved": 8806760
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_4d47e0_86616c",
+          "target": 8806764,
+          "addend": 0,
+          "resolved": 8806764
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_4d47e0_86616d",
+          "target": 8806765,
+          "addend": 0,
+          "resolved": 8806765
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_4d47e0_866160",
+          "target": 8806752,
+          "addend": 0,
+          "resolved": 8806752
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_4d47e0_7a2ae4",
+          "target": 8006372,
+          "addend": 0,
+          "resolved": 8006372
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_4d47e0_866174",
+          "target": 8806772,
+          "addend": 0,
+          "resolved": 8806772
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_4d47e0_866170",
+          "target": 8806768,
+          "addend": 0,
+          "resolved": 8806768
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_4d47e0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 2810223
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_TagClass_ptr/004d47e0.cpp",
+      "source_sha256": "1027bfb696cb74c35937f8252e2e91b51e2bf6b2fb08588b87ad03023865fbc7",
+      "source_order": 1859,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5370128,
+      "method": "51f110",
+      "symbol": "_recover_51f110",
+      "symbol_prefix": "_recover_51f110",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "c2da53a94af7f77ee460c221e86a13386e5a4a8388d7e4c3baadb16b769f6790",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "c2da53a94af7f77ee460c221e86a13386e5a4a8388d7e4c3baadb16b769f6790",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_51f110_51f150",
+          "target": 5370192,
+          "addend": 0,
+          "resolved": 5370192
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_51f110_a5190c",
+          "target": 10819852,
+          "addend": 0,
+          "resolved": 10819852
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_51f110_a51910",
+          "target": 10819856,
+          "addend": 0,
+          "resolved": 10819856
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_51f110_a51914",
+          "target": 10819860,
+          "addend": 0,
+          "resolved": 10819860
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_51f110_a51915",
+          "target": 10819861,
+          "addend": 0,
+          "resolved": 10819861
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_51f110_a51908",
+          "target": 10819848,
+          "addend": 0,
+          "resolved": 10819848
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_51f110_7a4554",
+          "target": 8013140,
+          "addend": 0,
+          "resolved": 8013140
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_51f110_a5191c",
+          "target": 10819868,
+          "addend": 0,
+          "resolved": 10819868
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_51f110_a51918",
+          "target": 10819864,
+          "addend": 0,
+          "resolved": 10819864
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_51f110_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 2504767
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AnimClass_ptr/0051f110.cpp",
+      "source_sha256": "49aa61551bef4473bc08a128895c105d6d7dfcbcbaae62b2a29a552a960928e3",
+      "source_order": 2850,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5370288,
+      "method": "51f1b0",
+      "symbol": "_recover_51f1b0",
+      "symbol_prefix": "_recover_51f1b0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "63ed9af6d6dab462b5ee32fd321ff84d219b3da79d7fec19e7b1315582b81a20",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "63ed9af6d6dab462b5ee32fd321ff84d219b3da79d7fec19e7b1315582b81a20",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_51f1b0_51f1f0",
+          "target": 5370352,
+          "addend": 0,
+          "resolved": 5370352
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_51f1b0_a51884",
+          "target": 10819716,
+          "addend": 0,
+          "resolved": 10819716
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_51f1b0_a51888",
+          "target": 10819720,
+          "addend": 0,
+          "resolved": 10819720
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_51f1b0_a5188c",
+          "target": 10819724,
+          "addend": 0,
+          "resolved": 10819724
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_51f1b0_a5188d",
+          "target": 10819725,
+          "addend": 0,
+          "resolved": 10819725
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_51f1b0_a51880",
+          "target": 10819712,
+          "addend": 0,
+          "resolved": 10819712
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_51f1b0_7a4554",
+          "target": 8013140,
+          "addend": 0,
+          "resolved": 8013140
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_51f1b0_a51894",
+          "target": 10819732,
+          "addend": 0,
+          "resolved": 10819732
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_51f1b0_a51890",
+          "target": 10819728,
+          "addend": 0,
+          "resolved": 10819728
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_51f1b0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 2504607
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AnimClass_ptr/0051f1b0.cpp",
+      "source_sha256": "7511e60b39864af8ab44f85fe8dccba6f364d4e1302a84b5922f8758c65ea05f",
+      "source_order": 2851,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5370448,
+      "method": "51f250",
+      "symbol": "_recover_51f250",
+      "symbol_prefix": "_recover_51f250",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "70d8a6d5a8f2f3597c1bfcebd6eb716ff310f699d9f479614085812609b80595",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "70d8a6d5a8f2f3597c1bfcebd6eb716ff310f699d9f479614085812609b80595",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_51f250_51f290",
+          "target": 5370512,
+          "addend": 0,
+          "resolved": 5370512
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_51f250_a518cc",
+          "target": 10819788,
+          "addend": 0,
+          "resolved": 10819788
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_51f250_a518d0",
+          "target": 10819792,
+          "addend": 0,
+          "resolved": 10819792
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_51f250_a518d4",
+          "target": 10819796,
+          "addend": 0,
+          "resolved": 10819796
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_51f250_a518d5",
+          "target": 10819797,
+          "addend": 0,
+          "resolved": 10819797
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_51f250_a518c8",
+          "target": 10819784,
+          "addend": 0,
+          "resolved": 10819784
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_51f250_7a4554",
+          "target": 8013140,
+          "addend": 0,
+          "resolved": 8013140
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_51f250_a518dc",
+          "target": 10819804,
+          "addend": 0,
+          "resolved": 10819804
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_51f250_a518d8",
+          "target": 10819800,
+          "addend": 0,
+          "resolved": 10819800
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_51f250_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 2504447
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AnimClass_ptr/0051f250.cpp",
+      "source_sha256": "aac6301fdda48459cec0ee3b249ba88ae3a2b08a3734b69fd1237d714a11cb98",
+      "source_order": 2852,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5378480,
+      "method": "5211b0",
+      "symbol": "_recover_5211b0",
+      "symbol_prefix": "_recover_5211b0",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 23,
+      "body_sha256": "37a2d1546a63680e176c1af9a33dd02b7795131c6894de855f836b0d9480e731",
+      "padding_bytes": 9,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "74ce3cf95cb01fc70f7b94b996d24fa9d2da28de317c02e512f8dd3d0107a491",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "_g4_5211b0_a51df0",
+          "target": 10821104,
+          "addend": 0,
+          "resolved": 10821104
+        },
+        {
+          "offset": 7,
+          "kind": 6,
+          "symbol": "_g4_5211b0_a51df4",
+          "target": 10821108,
+          "addend": 0,
+          "resolved": 10821108
+        },
+        {
+          "offset": 12,
+          "kind": 6,
+          "symbol": "_g4_5211b0_a51e18",
+          "target": 10821144,
+          "addend": 0,
+          "resolved": 10821144
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_5211b0_a51e1c",
+          "target": 10821148,
+          "addend": 0,
+          "resolved": 10821148
+        }
+      ],
+      "source": "src/recovered/005211b0.cpp",
+      "source_sha256": "9b3a7bba1a72d00bf6100255155a4a6a2cdf89b840bece4c0a8626bda9cd5e46",
+      "source_order": 2879,
+      "population": "population-08",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5378512,
+      "method": "5211d0",
+      "symbol": "_recover_5211d0",
+      "symbol_prefix": "_recover_5211d0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "c30c0d26f66d33ebb22f45530a3763290d93a75e83bc1efe45e14a6c94801009",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "c30c0d26f66d33ebb22f45530a3763290d93a75e83bc1efe45e14a6c94801009",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_5211d0_521210",
+          "target": 5378576,
+          "addend": 0,
+          "resolved": 5378576
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_5211d0_a51f8c",
+          "target": 10821516,
+          "addend": 0,
+          "resolved": 10821516
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_5211d0_a51f90",
+          "target": 10821520,
+          "addend": 0,
+          "resolved": 10821520
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_5211d0_a51f94",
+          "target": 10821524,
+          "addend": 0,
+          "resolved": 10821524
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_5211d0_a51f95",
+          "target": 10821525,
+          "addend": 0,
+          "resolved": 10821525
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_5211d0_a51f88",
+          "target": 10821512,
+          "addend": 0,
+          "resolved": 10821512
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_5211d0_7a45d4",
+          "target": 8013268,
+          "addend": 0,
+          "resolved": 8013268
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_5211d0_a51f9c",
+          "target": 10821532,
+          "addend": 0,
+          "resolved": 10821532
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_5211d0_a51f98",
+          "target": 10821528,
+          "addend": 0,
+          "resolved": 10821528
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_5211d0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 2496383
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_IonBlastClass_ptr/005211d0.cpp",
+      "source_sha256": "88d24d6ad09e3f04a11b55373c8adbb4f6d44d634160286407b54cbe1db16d54",
+      "source_order": 2880,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5408144,
+      "method": "528590",
+      "symbol": "_recover_528590",
+      "symbol_prefix": "_recover_528590",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "929728103fb2877129599929ffa38f1c317bb5f81ebb989ebd57389648594557",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "929728103fb2877129599929ffa38f1c317bb5f81ebb989ebd57389648594557",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_528590_5285d0",
+          "target": 5408208,
+          "addend": 0,
+          "resolved": 5408208
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_528590_a52ecc",
+          "target": 10825420,
+          "addend": 0,
+          "resolved": 10825420
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_528590_a52ed0",
+          "target": 10825424,
+          "addend": 0,
+          "resolved": 10825424
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_528590_a52ed4",
+          "target": 10825428,
+          "addend": 0,
+          "resolved": 10825428
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_528590_a52ed5",
+          "target": 10825429,
+          "addend": 0,
+          "resolved": 10825429
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_528590_a52ec8",
+          "target": 10825416,
+          "addend": 0,
+          "resolved": 10825416
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_528590_7a513c",
+          "target": 8016188,
+          "addend": 0,
+          "resolved": 8016188
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_528590_a52edc",
+          "target": 10825436,
+          "addend": 0,
+          "resolved": 10825436
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_528590_a52ed8",
+          "target": 10825432,
+          "addend": 0,
+          "resolved": 10825432
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_528590_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 2466751
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_IsometricTileTypeClass__TileInsertType_ptr/00528590.cpp",
+      "source_sha256": "919b3686371703193a2603c84cc6439b33b2fe7c2edfbad3c4c2ff58146f1c4c",
+      "source_order": 2972,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5690672,
+      "method": "56d530",
+      "symbol": "_recover_56d530",
+      "symbol_prefix": "_recover_56d530",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "0a7c371c29cc1a4d62e85eb7fc1ed3e3323eba4b1982d7dfb8a7b24562716c79",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "0a7c371c29cc1a4d62e85eb7fc1ed3e3323eba4b1982d7dfb8a7b24562716c79",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_56d530_56d570",
+          "target": 5690736,
+          "addend": 0,
+          "resolved": 5690736
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_56d530_a6fd2c",
+          "target": 10943788,
+          "addend": 0,
+          "resolved": 10943788
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_56d530_a6fd30",
+          "target": 10943792,
+          "addend": 0,
+          "resolved": 10943792
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_56d530_a6fd34",
+          "target": 10943796,
+          "addend": 0,
+          "resolved": 10943796
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_56d530_a6fd35",
+          "target": 10943797,
+          "addend": 0,
+          "resolved": 10943797
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_56d530_a6fd28",
+          "target": 10943784,
+          "addend": 0,
+          "resolved": 10943784
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_56d530_7a5d90",
+          "target": 8019344,
+          "addend": 0,
+          "resolved": 8019344
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_56d530_a6fd3c",
+          "target": 10943804,
+          "addend": 0,
+          "resolved": 10943804
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_56d530_a6fd38",
+          "target": 10943800,
+          "addend": 0,
+          "resolved": 10943800
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_56d530_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 2184223
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_MapRegionClass_ptr/0056d530.cpp",
+      "source_sha256": "94c23f179392aeb8da391e9935efd98f315111300a5afb79016b0e3d424ca2ca",
+      "source_order": 3377,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5987808,
+      "method": "5b5de0",
+      "symbol": "_recover_5b5de0",
+      "symbol_prefix": "_recover_5b5de0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "88f80216acd2a43c440ef67fcdabe9674bb23dc919bc7eef152575c88cefb05d",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "88f80216acd2a43c440ef67fcdabe9674bb23dc919bc7eef152575c88cefb05d",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_5b5de0_5b5e20",
+          "target": 5987872,
+          "addend": 0,
+          "resolved": 5987872
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_5b5de0_a71904",
+          "target": 10950916,
+          "addend": 0,
+          "resolved": 10950916
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_5b5de0_a71908",
+          "target": 10950920,
+          "addend": 0,
+          "resolved": 10950920
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_5b5de0_a7190c",
+          "target": 10950924,
+          "addend": 0,
+          "resolved": 10950924
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_5b5de0_a7190d",
+          "target": 10950925,
+          "addend": 0,
+          "resolved": 10950925
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_5b5de0_a71900",
+          "target": 10950912,
+          "addend": 0,
+          "resolved": 10950912
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_5b5de0_7a70e4",
+          "target": 8024292,
+          "addend": 0,
+          "resolved": 8024292
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_5b5de0_a71914",
+          "target": 10950932,
+          "addend": 0,
+          "resolved": 10950932
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_5b5de0_a71910",
+          "target": 10950928,
+          "addend": 0,
+          "resolved": 10950928
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_5b5de0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 1887087
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_HWND___ptr/005b5de0.cpp",
+      "source_sha256": "9a6de83b9e550b904415ee97c0c6d0600c4a9366d8bd0058e17dc152c3289ebf",
+      "source_order": 3884,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 5987936,
+      "method": "5b5e60",
+      "symbol": "_recover_5b5e60",
+      "symbol_prefix": "_recover_5b5e60",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "aef2b6c455bda848fa721b4f03fb36e7e016f85234bc83b70c0fb1e0f3ed6e75",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "aef2b6c455bda848fa721b4f03fb36e7e016f85234bc83b70c0fb1e0f3ed6e75",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_5b5e60_5b5ea0",
+          "target": 5988000,
+          "addend": 0,
+          "resolved": 5988000
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_5b5e60_a7192c",
+          "target": 10950956,
+          "addend": 0,
+          "resolved": 10950956
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_5b5e60_a71930",
+          "target": 10950960,
+          "addend": 0,
+          "resolved": 10950960
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_5b5e60_a71934",
+          "target": 10950964,
+          "addend": 0,
+          "resolved": 10950964
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_5b5e60_a71935",
+          "target": 10950965,
+          "addend": 0,
+          "resolved": 10950965
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_5b5e60_a71928",
+          "target": 10950952,
+          "addend": 0,
+          "resolved": 10950952
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_5b5e60_7a7124",
+          "target": 8024356,
+          "addend": 0,
+          "resolved": 8024356
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_5b5e60_a7193c",
+          "target": 10950972,
+          "addend": 0,
+          "resolved": 10950972
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_5b5e60_a71938",
+          "target": 10950968,
+          "addend": 0,
+          "resolved": 10950968
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_5b5e60_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 1886959
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AcceleratorTracker/005b5e60.cpp",
+      "source_sha256": "4676478416b74dbf52d34195bf7d8d136066d0148fcb2f1e8b7ec20196db5700",
+      "source_order": 3885,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6117200,
+      "method": "5d5750",
+      "symbol": "_recover_5d5750",
+      "symbol_prefix": "_recover_5d5750",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "6fda717969db22616ef139a5cf2ac2f6a3d40b6a65dc5b2210d59e700998892f",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "6fda717969db22616ef139a5cf2ac2f6a3d40b6a65dc5b2210d59e700998892f",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_5d5750_5d5790",
+          "target": 6117264,
+          "addend": 0,
+          "resolved": 6117264
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_5d5750_a72f94",
+          "target": 10956692,
+          "addend": 0,
+          "resolved": 10956692
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_5d5750_a72f98",
+          "target": 10956696,
+          "addend": 0,
+          "resolved": 10956696
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_5d5750_a72f9c",
+          "target": 10956700,
+          "addend": 0,
+          "resolved": 10956700
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_5d5750_a72f9d",
+          "target": 10956701,
+          "addend": 0,
+          "resolved": 10956701
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_5d5750_a72f90",
+          "target": 10956688,
+          "addend": 0,
+          "resolved": 10956688
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_5d5750_7a768c",
+          "target": 8025740,
+          "addend": 0,
+          "resolved": 8025740
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_5d5750_a72fa4",
+          "target": 10956708,
+          "addend": 0,
+          "resolved": 10956708
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_5d5750_a72fa0",
+          "target": 10956704,
+          "addend": 0,
+          "resolved": 10956704
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_5d5750_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 1757695
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ObjectTypeClass_ptr/005d5750.cpp",
+      "source_sha256": "c15c9625a5f75fa96b2eb0c9cc8135de9c6ee863b5d7b3308bf703d5fac64ad5",
+      "source_order": 4107,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6217568,
+      "method": "5edf60",
+      "symbol": "_recover_5edf60",
+      "symbol_prefix": "_recover_5edf60",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 49,
+      "body_sha256": "20c9cc51926e3cb51b3e5a561d4d7d3bd74e7ec77888c29d8917e77307dfa55f",
+      "padding_bytes": 0,
+      "full_extent_bytes": 49,
+      "full_extent_sha256": "20c9cc51926e3cb51b3e5a561d4d7d3bd74e7ec77888c29d8917e77307dfa55f",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_g4_5edf60_a737f0",
+          "target": 10958832,
+          "addend": 0,
+          "resolved": 10958832
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_5edf60_a737f4",
+          "target": 10958836,
+          "addend": 0,
+          "resolved": 10958836
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_5edf60_a737f8",
+          "target": 10958840,
+          "addend": 0,
+          "resolved": 10958840
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_5edf60_a737fc",
+          "target": 10958844,
+          "addend": 0,
+          "resolved": 10958844
+        },
+        {
+          "offset": 23,
+          "kind": 6,
+          "symbol": "_g4_5edf60_a73800",
+          "target": 10958848,
+          "addend": 0,
+          "resolved": 10958848
+        },
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_g2_5edf60_a73804",
+          "target": 10958852,
+          "addend": 0,
+          "resolved": 10958852
+        },
+        {
+          "offset": 34,
+          "kind": 6,
+          "symbol": "_g4_5edf60_a73904",
+          "target": 10959108,
+          "addend": 0,
+          "resolved": 10959108
+        },
+        {
+          "offset": 39,
+          "kind": 6,
+          "symbol": "_g4_5edf60_a73908",
+          "target": 10959112,
+          "addend": 0,
+          "resolved": 10959112
+        },
+        {
+          "offset": 44,
+          "kind": 6,
+          "symbol": "_g4_5edf60_a7390c",
+          "target": 10959116,
+          "addend": 0,
+          "resolved": 10959116
+        }
+      ],
+      "source": "src/recovered/005edf60.cpp",
+      "source_sha256": "d93c3cf7318f133fcbe6627d3cb67b780e879ce1d843a9e20551fb4995b2a330",
+      "source_order": 4213,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6534544,
+      "method": "63b590",
+      "symbol": "_recover_63b590",
+      "symbol_prefix": "_recover_63b590",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 15,
+      "body_sha256": "8eddd89fa05d4148ffa9ee1b684b6f0f052e25497a1beef6d7a97e87a4428d04",
+      "padding_bytes": 1,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "1b5258eff26f5957abf12083a18d1b0bfdfe9055edb394025fc19628c69507f4",
+      "relocations": [
+        {
+          "offset": 4,
+          "kind": 6,
+          "symbol": "_g2_63b590_ab67b8",
+          "target": 11233208,
+          "addend": 0,
+          "resolved": 11233208
+        },
+        {
+          "offset": 10,
+          "kind": 6,
+          "symbol": "_g2_63b590_ab67ba",
+          "target": 11233210,
+          "addend": 0,
+          "resolved": 11233210
+        }
+      ],
+      "source": "src/recovered/0063b590.cpp",
+      "source_sha256": "b4a0a2055d73e610999c0338dbbad78021a4df53e79e5744a5669ccd7129f42f",
+      "source_order": 4633,
+      "population": "population-08",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6698512,
+      "method": "663610",
+      "symbol": "_recover_663610",
+      "symbol_prefix": "_recover_663610",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "acffdbcb6c245cd0a8268568a25d069d9b2f62d7d0936dc8b57500df752d442e",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "acffdbcb6c245cd0a8268568a25d069d9b2f62d7d0936dc8b57500df752d442e",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_663610_663650",
+          "target": 6698576,
+          "addend": 0,
+          "resolved": 6698576
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_663610_ab6efc",
+          "target": 11235068,
+          "addend": 0,
+          "resolved": 11235068
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_663610_ab6f00",
+          "target": 11235072,
+          "addend": 0,
+          "resolved": 11235072
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_663610_ab6f04",
+          "target": 11235076,
+          "addend": 0,
+          "resolved": 11235076
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_663610_ab6f05",
+          "target": 11235077,
+          "addend": 0,
+          "resolved": 11235077
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_663610_ab6ef8",
+          "target": 11235064,
+          "addend": 0,
+          "resolved": 11235064
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_663610_7a7b98",
+          "target": 8027032,
+          "addend": 0,
+          "resolved": 8027032
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_663610_ab6f0c",
+          "target": 11235084,
+          "addend": 0,
+          "resolved": 11235084
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_663610_ab6f08",
+          "target": 11235080,
+          "addend": 0,
+          "resolved": 11235080
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_663610_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 1176383
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ColorScheme_ptr/00663610.cpp",
+      "source_sha256": "df23666939e6fca97e1c3fc5ebeb9ad3bea246f78ca2928191761aa59b64525b",
+      "source_order": 4813,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6955760,
+      "method": "6a22f0",
+      "symbol": "_recover_6a22f0",
+      "symbol_prefix": "_recover_6a22f0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "2803141245431962b5bbf4c95341bded96f223bac9b2c0a8fec986f9a7b2f1ec",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "2803141245431962b5bbf4c95341bded96f223bac9b2c0a8fec986f9a7b2f1ec",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6a22f0_6a2330",
+          "target": 6955824,
+          "addend": 0,
+          "resolved": 6955824
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6a22f0_abe5b4",
+          "target": 11265460,
+          "addend": 0,
+          "resolved": 11265460
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6a22f0_abe5b8",
+          "target": 11265464,
+          "addend": 0,
+          "resolved": 11265464
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6a22f0_abe5bc",
+          "target": 11265468,
+          "addend": 0,
+          "resolved": 11265468
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6a22f0_abe5bd",
+          "target": 11265469,
+          "addend": 0,
+          "resolved": 11265469
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6a22f0_abe5b0",
+          "target": 11265456,
+          "addend": 0,
+          "resolved": 11265456
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6a22f0_7ac4c4",
+          "target": 8045764,
+          "addend": 0,
+          "resolved": 8045764
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6a22f0_abe5c4",
+          "target": 11265476,
+          "addend": 0,
+          "resolved": 11265476
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6a22f0_abe5c0",
+          "target": 11265472,
+          "addend": 0,
+          "resolved": 11265472
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6a22f0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 919135
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_DirtyAreaStruct/006a22f0.cpp",
+      "source_sha256": "8a05f747a9f82293d2dd107827e226d78d8edd70637e4f6e50546b56149af0bd",
+      "source_order": 5417,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 6955936,
+      "method": "6a23a0",
+      "symbol": "_recover_6a23a0",
+      "symbol_prefix": "_recover_6a23a0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "138e0c9d62139724613dd06832203a9028358f0bfbb98bec8b0c01ad8fcf9f6b",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "138e0c9d62139724613dd06832203a9028358f0bfbb98bec8b0c01ad8fcf9f6b",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6a23a0_6a23e0",
+          "target": 6956000,
+          "addend": 0,
+          "resolved": 6956000
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6a23a0_abe52c",
+          "target": 11265324,
+          "addend": 0,
+          "resolved": 11265324
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6a23a0_abe530",
+          "target": 11265328,
+          "addend": 0,
+          "resolved": 11265328
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6a23a0_abe534",
+          "target": 11265332,
+          "addend": 0,
+          "resolved": 11265332
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6a23a0_abe535",
+          "target": 11265333,
+          "addend": 0,
+          "resolved": 11265333
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6a23a0_abe528",
+          "target": 11265320,
+          "addend": 0,
+          "resolved": 11265320
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6a23a0_7ac504",
+          "target": 8045828,
+          "addend": 0,
+          "resolved": 8045828
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6a23a0_abe53c",
+          "target": 11265340,
+          "addend": 0,
+          "resolved": 11265340
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6a23a0_abe538",
+          "target": 11265336,
+          "addend": 0,
+          "resolved": 11265336
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6a23a0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 918959
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_ShadowControlClass_ptr/006a23a0.cpp",
+      "source_sha256": "f024a2ff6fb224775f82aa5dbd1e897c394addfd7bd726aa4e3ceb693046fe28",
+      "source_order": 5419,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7081024,
+      "method": "6c0c40",
+      "symbol": "_recover_6c0c40",
+      "symbol_prefix": "_recover_6c0c40",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 32,
+      "body_sha256": "c803a861055f6b1e24ea1d4d4eefa311803d0baba2d922731af56b89ad06e3d9",
+      "padding_bytes": 0,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "c803a861055f6b1e24ea1d4d4eefa311803d0baba2d922731af56b89ad06e3d9",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "_g4_6c0c40_a40d2c",
+          "target": 10751276,
+          "addend": 0,
+          "resolved": 10751276
+        },
+        {
+          "offset": 6,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6c0c40_6c0c60",
+          "target": 7081056,
+          "addend": 0,
+          "resolved": 7081056
+        },
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "_g4_6c0c40_ac0178",
+          "target": 11272568,
+          "addend": 0,
+          "resolved": 11272568
+        },
+        {
+          "offset": 17,
+          "kind": 6,
+          "symbol": "_g4_6c0c40_ac0180",
+          "target": 11272576,
+          "addend": 0,
+          "resolved": 11272576
+        },
+        {
+          "offset": 26,
+          "kind": 20,
+          "symbol": "_call_6c0c40_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 793900
+        }
+      ],
+      "source": "src/recovered/006c0c40.cpp",
+      "source_sha256": "c29c12904a14fb4c43751c3ebc2697f3cf5c7c8dbc8221374314d057d39797b7",
+      "source_order": 5601,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7259664,
+      "method": "6ec610",
+      "symbol": "_recover_6ec610",
+      "symbol_prefix": "_recover_6ec610",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "5fa8c19fd5a997dbfc2fe874757e234b46014140881eb5b776fb0cf9df95ac61",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "5fa8c19fd5a997dbfc2fe874757e234b46014140881eb5b776fb0cf9df95ac61",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6ec610_6ec650",
+          "target": 7259728,
+          "addend": 0,
+          "resolved": 7259728
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6ec610_ac0cb4",
+          "target": 11275444,
+          "addend": 0,
+          "resolved": 11275444
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6ec610_ac0cb8",
+          "target": 11275448,
+          "addend": 0,
+          "resolved": 11275448
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6ec610_ac0cbc",
+          "target": 11275452,
+          "addend": 0,
+          "resolved": 11275452
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6ec610_ac0cbd",
+          "target": 11275453,
+          "addend": 0,
+          "resolved": 11275453
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6ec610_ac0cb0",
+          "target": 11275440,
+          "addend": 0,
+          "resolved": 11275440
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6ec610_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6ec610_ac0cc4",
+          "target": 11275460,
+          "addend": 0,
+          "resolved": 11275460
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6ec610_ac0cc0",
+          "target": 11275456,
+          "addend": 0,
+          "resolved": 11275456
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6ec610_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 615231
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006ec610.cpp",
+      "source_sha256": "056636fbead8094c4aecdac4e92067cd12510640931822b7922964e7c2e4662f",
+      "source_order": 5859,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7259792,
+      "method": "6ec690",
+      "symbol": "_recover_6ec690",
+      "symbol_prefix": "_recover_6ec690",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "14ed0f1d788ecbb3b70f1125844621e910437a7f55fc1ac85c7605aa92ca0bed",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "14ed0f1d788ecbb3b70f1125844621e910437a7f55fc1ac85c7605aa92ca0bed",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6ec690_6ec6d0",
+          "target": 7259856,
+          "addend": 0,
+          "resolved": 7259856
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6ec690_ac0c5c",
+          "target": 11275356,
+          "addend": 0,
+          "resolved": 11275356
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6ec690_ac0c60",
+          "target": 11275360,
+          "addend": 0,
+          "resolved": 11275360
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6ec690_ac0c64",
+          "target": 11275364,
+          "addend": 0,
+          "resolved": 11275364
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6ec690_ac0c65",
+          "target": 11275365,
+          "addend": 0,
+          "resolved": 11275365
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6ec690_ac0c58",
+          "target": 11275352,
+          "addend": 0,
+          "resolved": 11275352
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6ec690_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6ec690_ac0c6c",
+          "target": 11275372,
+          "addend": 0,
+          "resolved": 11275372
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6ec690_ac0c68",
+          "target": 11275368,
+          "addend": 0,
+          "resolved": 11275368
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6ec690_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 615103
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006ec690.cpp",
+      "source_sha256": "b59ec01ac85167596898f2d3a4eb619cff8ad9f06613fa3d40cad47a9bde90a9",
+      "source_order": 5860,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7259920,
+      "method": "6ec710",
+      "symbol": "_recover_6ec710",
+      "symbol_prefix": "_recover_6ec710",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "a4a1f4a99f937500af24be579e09763c74f5fc9d6550e2090e5c5b8d7ffc9d7e",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "a4a1f4a99f937500af24be579e09763c74f5fc9d6550e2090e5c5b8d7ffc9d7e",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6ec710_6ec750",
+          "target": 7259984,
+          "addend": 0,
+          "resolved": 7259984
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6ec710_ac0d4c",
+          "target": 11275596,
+          "addend": 0,
+          "resolved": 11275596
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6ec710_ac0d50",
+          "target": 11275600,
+          "addend": 0,
+          "resolved": 11275600
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6ec710_ac0d54",
+          "target": 11275604,
+          "addend": 0,
+          "resolved": 11275604
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6ec710_ac0d55",
+          "target": 11275605,
+          "addend": 0,
+          "resolved": 11275605
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6ec710_ac0d48",
+          "target": 11275592,
+          "addend": 0,
+          "resolved": 11275592
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6ec710_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6ec710_ac0d5c",
+          "target": 11275612,
+          "addend": 0,
+          "resolved": 11275612
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6ec710_ac0d58",
+          "target": 11275608,
+          "addend": 0,
+          "resolved": 11275608
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6ec710_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 614975
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006ec710.cpp",
+      "source_sha256": "7037b7686e6a4b5adfa69b70a7ac2e5528b26e84b3f0aa5ec150a22c56aef858",
+      "source_order": 5861,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7260048,
+      "method": "6ec790",
+      "symbol": "_recover_6ec790",
+      "symbol_prefix": "_recover_6ec790",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "30ca0f522087a5b97704f67def963019388edd33a1b81818a6dbc9d78e40f999",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "30ca0f522087a5b97704f67def963019388edd33a1b81818a6dbc9d78e40f999",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6ec790_6ec7d0",
+          "target": 7260112,
+          "addend": 0,
+          "resolved": 7260112
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6ec790_ac0bfc",
+          "target": 11275260,
+          "addend": 0,
+          "resolved": 11275260
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6ec790_ac0c00",
+          "target": 11275264,
+          "addend": 0,
+          "resolved": 11275264
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6ec790_ac0c04",
+          "target": 11275268,
+          "addend": 0,
+          "resolved": 11275268
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6ec790_ac0c05",
+          "target": 11275269,
+          "addend": 0,
+          "resolved": 11275269
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6ec790_ac0bf8",
+          "target": 11275256,
+          "addend": 0,
+          "resolved": 11275256
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6ec790_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6ec790_ac0c0c",
+          "target": 11275276,
+          "addend": 0,
+          "resolved": 11275276
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6ec790_ac0c08",
+          "target": 11275272,
+          "addend": 0,
+          "resolved": 11275272
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6ec790_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 614847
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006ec790.cpp",
+      "source_sha256": "12bdbfa02e2299ef73f483ebbc80b68cfda931e08043d21c034f3acf7aba678a",
+      "source_order": 5862,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7260176,
+      "method": "6ec810",
+      "symbol": "_recover_6ec810",
+      "symbol_prefix": "_recover_6ec810",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "887dd17ad23c0edef4885b277fc32f6e4a09bd9675650258867285cd81174b20",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "887dd17ad23c0edef4885b277fc32f6e4a09bd9675650258867285cd81174b20",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6ec810_6ec850",
+          "target": 7260240,
+          "addend": 0,
+          "resolved": 7260240
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6ec810_ac0c84",
+          "target": 11275396,
+          "addend": 0,
+          "resolved": 11275396
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6ec810_ac0c88",
+          "target": 11275400,
+          "addend": 0,
+          "resolved": 11275400
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6ec810_ac0c8c",
+          "target": 11275404,
+          "addend": 0,
+          "resolved": 11275404
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6ec810_ac0c8d",
+          "target": 11275405,
+          "addend": 0,
+          "resolved": 11275405
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6ec810_ac0c80",
+          "target": 11275392,
+          "addend": 0,
+          "resolved": 11275392
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6ec810_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6ec810_ac0c94",
+          "target": 11275412,
+          "addend": 0,
+          "resolved": 11275412
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6ec810_ac0c90",
+          "target": 11275408,
+          "addend": 0,
+          "resolved": 11275408
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6ec810_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 614719
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006ec810.cpp",
+      "source_sha256": "9bfbf3b9faf2db7b3c58a61f4461af42dd00af63e503313d934bfb3c90fe0256",
+      "source_order": 5863,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7260304,
+      "method": "6ec890",
+      "symbol": "_recover_6ec890",
+      "symbol_prefix": "_recover_6ec890",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "0b731551e99ca87f49eade759984f50c752afe89f904dc8a29c1e9ea5e2906b8",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "0b731551e99ca87f49eade759984f50c752afe89f904dc8a29c1e9ea5e2906b8",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6ec890_6ec8d0",
+          "target": 7260368,
+          "addend": 0,
+          "resolved": 7260368
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6ec890_ac0c9c",
+          "target": 11275420,
+          "addend": 0,
+          "resolved": 11275420
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6ec890_ac0ca0",
+          "target": 11275424,
+          "addend": 0,
+          "resolved": 11275424
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6ec890_ac0ca4",
+          "target": 11275428,
+          "addend": 0,
+          "resolved": 11275428
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6ec890_ac0ca5",
+          "target": 11275429,
+          "addend": 0,
+          "resolved": 11275429
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6ec890_ac0c98",
+          "target": 11275416,
+          "addend": 0,
+          "resolved": 11275416
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6ec890_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6ec890_ac0cac",
+          "target": 11275436,
+          "addend": 0,
+          "resolved": 11275436
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6ec890_ac0ca8",
+          "target": 11275432,
+          "addend": 0,
+          "resolved": 11275432
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6ec890_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 614591
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006ec890.cpp",
+      "source_sha256": "d51ed16450d0135cccfcd7d86b481ada02828021c1fc5233b37e604a5eb6cbc9",
+      "source_order": 5864,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7260432,
+      "method": "6ec910",
+      "symbol": "_recover_6ec910",
+      "symbol_prefix": "_recover_6ec910",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "ebc4db7a6087ac9fe659d65223086214c112692b9c87489ee76a0885b57b98f5",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "ebc4db7a6087ac9fe659d65223086214c112692b9c87489ee76a0885b57b98f5",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6ec910_6ec950",
+          "target": 7260496,
+          "addend": 0,
+          "resolved": 7260496
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6ec910_ac0c34",
+          "target": 11275316,
+          "addend": 0,
+          "resolved": 11275316
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6ec910_ac0c38",
+          "target": 11275320,
+          "addend": 0,
+          "resolved": 11275320
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6ec910_ac0c3c",
+          "target": 11275324,
+          "addend": 0,
+          "resolved": 11275324
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6ec910_ac0c3d",
+          "target": 11275325,
+          "addend": 0,
+          "resolved": 11275325
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6ec910_ac0c30",
+          "target": 11275312,
+          "addend": 0,
+          "resolved": 11275312
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6ec910_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6ec910_ac0c44",
+          "target": 11275332,
+          "addend": 0,
+          "resolved": 11275332
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6ec910_ac0c40",
+          "target": 11275328,
+          "addend": 0,
+          "resolved": 11275328
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6ec910_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 614463
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006ec910.cpp",
+      "source_sha256": "b61892976433b3d83728f003c1cef42acb595e81ebe7165ce4ddeb3865fe2976",
+      "source_order": 5865,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7260560,
+      "method": "6ec990",
+      "symbol": "_recover_6ec990",
+      "symbol_prefix": "_recover_6ec990",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "655938ad3937da43d82fc692658b28054249d6d8f582d54699ebbddb12bd258e",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "655938ad3937da43d82fc692658b28054249d6d8f582d54699ebbddb12bd258e",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6ec990_6ec9d0",
+          "target": 7260624,
+          "addend": 0,
+          "resolved": 7260624
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6ec990_ac0c1c",
+          "target": 11275292,
+          "addend": 0,
+          "resolved": 11275292
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6ec990_ac0c20",
+          "target": 11275296,
+          "addend": 0,
+          "resolved": 11275296
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6ec990_ac0c24",
+          "target": 11275300,
+          "addend": 0,
+          "resolved": 11275300
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6ec990_ac0c25",
+          "target": 11275301,
+          "addend": 0,
+          "resolved": 11275301
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6ec990_ac0c18",
+          "target": 11275288,
+          "addend": 0,
+          "resolved": 11275288
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6ec990_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6ec990_ac0c2c",
+          "target": 11275308,
+          "addend": 0,
+          "resolved": 11275308
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6ec990_ac0c28",
+          "target": 11275304,
+          "addend": 0,
+          "resolved": 11275304
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6ec990_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 614335
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006ec990.cpp",
+      "source_sha256": "23ed8a7383a52ddc5e48d8094135465aa64b475408c80085207463f5e433fa68",
+      "source_order": 5866,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7260688,
+      "method": "6eca10",
+      "symbol": "_recover_6eca10",
+      "symbol_prefix": "_recover_6eca10",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "4ea23bde900697cbfe9bb0b0bbb1ce1ba6b6ede0bff27a49e3f16f22ab6f3738",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "4ea23bde900697cbfe9bb0b0bbb1ce1ba6b6ede0bff27a49e3f16f22ab6f3738",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6eca10_6eca50",
+          "target": 7260752,
+          "addend": 0,
+          "resolved": 7260752
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6eca10_ac0d0c",
+          "target": 11275532,
+          "addend": 0,
+          "resolved": 11275532
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6eca10_ac0d10",
+          "target": 11275536,
+          "addend": 0,
+          "resolved": 11275536
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6eca10_ac0d14",
+          "target": 11275540,
+          "addend": 0,
+          "resolved": 11275540
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6eca10_ac0d15",
+          "target": 11275541,
+          "addend": 0,
+          "resolved": 11275541
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6eca10_ac0d08",
+          "target": 11275528,
+          "addend": 0,
+          "resolved": 11275528
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6eca10_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6eca10_ac0d1c",
+          "target": 11275548,
+          "addend": 0,
+          "resolved": 11275548
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6eca10_ac0d18",
+          "target": 11275544,
+          "addend": 0,
+          "resolved": 11275544
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6eca10_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 614207
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006eca10.cpp",
+      "source_sha256": "93b6ba485fd23260e28682e8dd2554357a1ab254a1dcfdb3311e2a4203935d34",
+      "source_order": 5867,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7260816,
+      "method": "6eca90",
+      "symbol": "_recover_6eca90",
+      "symbol_prefix": "_recover_6eca90",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "e55bc4656dda29f6be081dfb8f67868f6838698c13b1cd6c7b8b3a14b4132cbc",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "e55bc4656dda29f6be081dfb8f67868f6838698c13b1cd6c7b8b3a14b4132cbc",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6eca90_6ecad0",
+          "target": 7260880,
+          "addend": 0,
+          "resolved": 7260880
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6eca90_ac0d34",
+          "target": 11275572,
+          "addend": 0,
+          "resolved": 11275572
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6eca90_ac0d38",
+          "target": 11275576,
+          "addend": 0,
+          "resolved": 11275576
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6eca90_ac0d3c",
+          "target": 11275580,
+          "addend": 0,
+          "resolved": 11275580
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6eca90_ac0d3d",
+          "target": 11275581,
+          "addend": 0,
+          "resolved": 11275581
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6eca90_ac0d30",
+          "target": 11275568,
+          "addend": 0,
+          "resolved": 11275568
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6eca90_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6eca90_ac0d44",
+          "target": 11275588,
+          "addend": 0,
+          "resolved": 11275588
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6eca90_ac0d40",
+          "target": 11275584,
+          "addend": 0,
+          "resolved": 11275584
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6eca90_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 614079
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006eca90.cpp",
+      "source_sha256": "1de90d99784513a4d7fc1204f8a718aaf3b24ed8e248e2438b19757eed49cbc4",
+      "source_order": 5868,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7260944,
+      "method": "6ecb10",
+      "symbol": "_recover_6ecb10",
+      "symbol_prefix": "_recover_6ecb10",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "ee5f1e7b53ae7769b14d18d228b00245348c43c53b4ff8a0ac24fce13b71478c",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "ee5f1e7b53ae7769b14d18d228b00245348c43c53b4ff8a0ac24fce13b71478c",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_6ecb10_6ecb50",
+          "target": 7261008,
+          "addend": 0,
+          "resolved": 7261008
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_6ecb10_ac0cdc",
+          "target": 11275484,
+          "addend": 0,
+          "resolved": 11275484
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_6ecb10_ac0ce0",
+          "target": 11275488,
+          "addend": 0,
+          "resolved": 11275488
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_6ecb10_ac0ce4",
+          "target": 11275492,
+          "addend": 0,
+          "resolved": 11275492
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_6ecb10_ac0ce5",
+          "target": 11275493,
+          "addend": 0,
+          "resolved": 11275493
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_6ecb10_ac0cd8",
+          "target": 11275480,
+          "addend": 0,
+          "resolved": 11275480
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_6ecb10_7a177c",
+          "target": 8001404,
+          "addend": 0,
+          "resolved": 8001404
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_6ecb10_ac0cec",
+          "target": 11275500,
+          "addend": 0,
+          "resolved": 11275500
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_6ecb10_ac0ce8",
+          "target": 11275496,
+          "addend": 0,
+          "resolved": 11275496
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_6ecb10_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 613951
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/006ecb10.cpp",
+      "source_sha256": "9543a2f2df7309713eff2b0591e924eef208135606647bb62958486a41a26e3e",
+      "source_order": 5869,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7500800,
+      "method": "727400",
+      "symbol": "_recover_727400",
+      "symbol_prefix": "_recover_727400",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 61,
+      "body_sha256": "a5eff8e1d9befc8c8e6c98edae88b989fda4ccec3f3853cf369b842fc37b3ada",
+      "padding_bytes": 0,
+      "full_extent_bytes": 61,
+      "full_extent_sha256": "a5eff8e1d9befc8c8e6c98edae88b989fda4ccec3f3853cf369b842fc37b3ada",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_727400_727440",
+          "target": 7500864,
+          "addend": 0,
+          "resolved": 7500864
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_727400_b256c4",
+          "target": 11687620,
+          "addend": 0,
+          "resolved": 11687620
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_727400_b256c8",
+          "target": 11687624,
+          "addend": 0,
+          "resolved": 11687624
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "_g1_727400_b256cc",
+          "target": 11687628,
+          "addend": 0,
+          "resolved": 11687628
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "_g1_727400_b256cd",
+          "target": 11687629,
+          "addend": 0,
+          "resolved": 11687629
+        },
+        {
+          "offset": 31,
+          "kind": 6,
+          "symbol": "_g4_727400_b256c0",
+          "target": 11687616,
+          "addend": 0,
+          "resolved": 11687616
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "_address_727400_7af08c",
+          "target": 8056972,
+          "addend": 0,
+          "resolved": 8056972
+        },
+        {
+          "offset": 41,
+          "kind": 6,
+          "symbol": "_g4_727400_b256d4",
+          "target": 11687636,
+          "addend": 0,
+          "resolved": 11687636
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "_g4_727400_b256d0",
+          "target": 11687632,
+          "addend": 0,
+          "resolved": 11687632
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_call_727400_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 374095
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_rc_ptr_WorldDominationTour__GameOption/00727400.cpp",
+      "source_sha256": "ea1897050988402f616cfb88e4aa9bbee40c93b907f21505041348b6947d92bd",
+      "source_order": 6347,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7560560,
+      "method": "735d70",
+      "symbol": "_recover_735d70",
+      "symbol_prefix": "_recover_735d70",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "c4b3623b79e0f7bb3e9b1046a38f3e64eeaa0bc40eb1bc7a8c7eee4b590c632d",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "c4b3623b79e0f7bb3e9b1046a38f3e64eeaa0bc40eb1bc7a8c7eee4b590c632d",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_735d70_735d90",
+          "target": 7560592,
+          "addend": 0,
+          "resolved": 7560592
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_735d70_b25dc8",
+          "target": 11689416,
+          "addend": 0,
+          "resolved": 11689416
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_735d70_b25dcc",
+          "target": 11689420,
+          "addend": 0,
+          "resolved": 11689420
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_735d70_b25dd0",
+          "target": 11689424,
+          "addend": 0,
+          "resolved": 11689424
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_735d70_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 314367
+        }
+      ],
+      "source": "src/recovered/00735d70.cpp",
+      "source_sha256": "30d1bc5b5ca9b73fc2132efb304b8a78b98c1f9995e0041f8d7cfdcf49b8b4f8",
+      "source_order": 6536,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7579968,
+      "method": "73a940",
+      "symbol": "_recover_73a940",
+      "symbol_prefix": "_recover_73a940",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "e34225d1998e2985cb2983285e293578a8fba11cc13a2ae91c99390de0df76ac",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "e34225d1998e2985cb2983285e293578a8fba11cc13a2ae91c99390de0df76ac",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73a940_73a960",
+          "target": 7580000,
+          "addend": 0,
+          "resolved": 7580000
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73a940_b2a700",
+          "target": 11708160,
+          "addend": 0,
+          "resolved": 11708160
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73a940_b2a704",
+          "target": 11708164,
+          "addend": 0,
+          "resolved": 11708164
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73a940_b2a708",
+          "target": 11708168,
+          "addend": 0,
+          "resolved": 11708168
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73a940_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 294959
+        }
+      ],
+      "source": "src/recovered/0073a940.cpp",
+      "source_sha256": "954a0640fd942183297accbe3197b58c7847bcedf9338c7c3645de618aaf1fb9",
+      "source_order": 6596,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7580032,
+      "method": "73a980",
+      "symbol": "_recover_73a980",
+      "symbol_prefix": "_recover_73a980",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "a8205de4e8950c2beabcf43d479499173fa39425436741e50938c78d95e9ee62",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "a8205de4e8950c2beabcf43d479499173fa39425436741e50938c78d95e9ee62",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73a980_73a9a0",
+          "target": 7580064,
+          "addend": 0,
+          "resolved": 7580064
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73a980_b26c88",
+          "target": 11693192,
+          "addend": 0,
+          "resolved": 11693192
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73a980_b26c8c",
+          "target": 11693196,
+          "addend": 0,
+          "resolved": 11693196
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73a980_b26c90",
+          "target": 11693200,
+          "addend": 0,
+          "resolved": 11693200
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73a980_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 294895
+        }
+      ],
+      "source": "src/recovered/0073a980.cpp",
+      "source_sha256": "cf5bfedc9377b975adfe921c81518f6a46e63d3063141ad6ee84b7dddd8b1b76",
+      "source_order": 6597,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7580096,
+      "method": "73a9c0",
+      "symbol": "_recover_73a9c0",
+      "symbol_prefix": "_recover_73a9c0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "1f62424a22138dc07e81563e58b0b379d8f75b15979035604f224a054555ad25",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "1f62424a22138dc07e81563e58b0b379d8f75b15979035604f224a054555ad25",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73a9c0_73a9e0",
+          "target": 7580128,
+          "addend": 0,
+          "resolved": 7580128
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73a9c0_b29990",
+          "target": 11704720,
+          "addend": 0,
+          "resolved": 11704720
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73a9c0_b29994",
+          "target": 11704724,
+          "addend": 0,
+          "resolved": 11704724
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73a9c0_b29998",
+          "target": 11704728,
+          "addend": 0,
+          "resolved": 11704728
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73a9c0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 294831
+        }
+      ],
+      "source": "src/recovered/0073a9c0.cpp",
+      "source_sha256": "474cec4741991cac5ebb0747398cdd340d590a863f48788a3defd6394d9384b7",
+      "source_order": 6598,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7580160,
+      "method": "73aa00",
+      "symbol": "_recover_73aa00",
+      "symbol_prefix": "_recover_73aa00",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "3e52d853d490784b5ef71d022f4c059d7704a2fd571a5fc0562eb9d6b6bca4fb",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "3e52d853d490784b5ef71d022f4c059d7704a2fd571a5fc0562eb9d6b6bca4fb",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73aa00_73aa20",
+          "target": 7580192,
+          "addend": 0,
+          "resolved": 7580192
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73aa00_b2a728",
+          "target": 11708200,
+          "addend": 0,
+          "resolved": 11708200
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73aa00_b2a72c",
+          "target": 11708204,
+          "addend": 0,
+          "resolved": 11708204
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73aa00_b2a730",
+          "target": 11708208,
+          "addend": 0,
+          "resolved": 11708208
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73aa00_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 294767
+        }
+      ],
+      "source": "src/recovered/0073aa00.cpp",
+      "source_sha256": "14f1e4763e3980d529e2ee91e0642abd50219bbca86cd528f5c3bd54f5163514",
+      "source_order": 6599,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7580224,
+      "method": "73aa40",
+      "symbol": "_recover_73aa40",
+      "symbol_prefix": "_recover_73aa40",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "ecbd9315ca72d33d40fcda2067ce1bec8e1e777d4ecb05fc87973d4ca4748842",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "ecbd9315ca72d33d40fcda2067ce1bec8e1e777d4ecb05fc87973d4ca4748842",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73aa40_73aa60",
+          "target": 7580256,
+          "addend": 0,
+          "resolved": 7580256
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73aa40_b29390",
+          "target": 11703184,
+          "addend": 0,
+          "resolved": 11703184
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73aa40_b29394",
+          "target": 11703188,
+          "addend": 0,
+          "resolved": 11703188
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73aa40_b29398",
+          "target": 11703192,
+          "addend": 0,
+          "resolved": 11703192
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73aa40_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 294703
+        }
+      ],
+      "source": "src/recovered/0073aa40.cpp",
+      "source_sha256": "d22f2e0efdafd11b77d34d180305be8a5e5f077251a1d33f77eb8435e4a779b6",
+      "source_order": 6600,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7582144,
+      "method": "73b1c0",
+      "symbol": "_recover_73b1c0",
+      "symbol_prefix": "_recover_73b1c0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "34fd20dd5d409fca01c470113c3f66f6ccb9ccbec13d9b9e533501a299e372c5",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "34fd20dd5d409fca01c470113c3f66f6ccb9ccbec13d9b9e533501a299e372c5",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b1c0_73b1e0",
+          "target": 7582176,
+          "addend": 0,
+          "resolved": 7582176
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b1c0_b2a648",
+          "target": 11707976,
+          "addend": 0,
+          "resolved": 11707976
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b1c0_b2a64c",
+          "target": 11707980,
+          "addend": 0,
+          "resolved": 11707980
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b1c0_b2a650",
+          "target": 11707984,
+          "addend": 0,
+          "resolved": 11707984
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b1c0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 292783
+        }
+      ],
+      "source": "src/recovered/0073b1c0.cpp",
+      "source_sha256": "c8b80167cb772c55c53e40e8bc5f7410c7931b5e07bedab15b6303e01868db4d",
+      "source_order": 6601,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7582704,
+      "method": "73b3f0",
+      "symbol": "_recover_73b3f0",
+      "symbol_prefix": "_recover_73b3f0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "6f62e72ac1902317f66300410486147c64de4921b31e038f13c55b445c846570",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "6f62e72ac1902317f66300410486147c64de4921b31e038f13c55b445c846570",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b3f0_73b410",
+          "target": 7582736,
+          "addend": 0,
+          "resolved": 7582736
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b3f0_b29468",
+          "target": 11703400,
+          "addend": 0,
+          "resolved": 11703400
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b3f0_b2946c",
+          "target": 11703404,
+          "addend": 0,
+          "resolved": 11703404
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b3f0_b29470",
+          "target": 11703408,
+          "addend": 0,
+          "resolved": 11703408
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b3f0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 292223
+        }
+      ],
+      "source": "src/recovered/0073b3f0.cpp",
+      "source_sha256": "5aac16f766fe6f4012fa77ce0b1ffd5e27a7fca92c1f47d86bceb031be15f418",
+      "source_order": 6602,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7582800,
+      "method": "73b450",
+      "symbol": "_recover_73b450",
+      "symbol_prefix": "_recover_73b450",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "7dd1ff4d7eb2739eec554c398c59e2c9a60d3b9dbc7621161b1d00a9b2053aee",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "7dd1ff4d7eb2739eec554c398c59e2c9a60d3b9dbc7621161b1d00a9b2053aee",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b450_73b470",
+          "target": 7582832,
+          "addend": 0,
+          "resolved": 7582832
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b450_b26a50",
+          "target": 11692624,
+          "addend": 0,
+          "resolved": 11692624
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b450_b26a54",
+          "target": 11692628,
+          "addend": 0,
+          "resolved": 11692628
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b450_b26a58",
+          "target": 11692632,
+          "addend": 0,
+          "resolved": 11692632
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b450_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 292127
+        }
+      ],
+      "source": "src/recovered/0073b450.cpp",
+      "source_sha256": "fbbe996b542b7c01fa015ecd5378fc92482864130e92b50fc687510f68397b37",
+      "source_order": 6603,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7582896,
+      "method": "73b4b0",
+      "symbol": "_recover_73b4b0",
+      "symbol_prefix": "_recover_73b4b0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "e8acc1756366adb43890670fb575a01ea885819103efb13640bb5f558f29bc12",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "e8acc1756366adb43890670fb575a01ea885819103efb13640bb5f558f29bc12",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b4b0_73b4d0",
+          "target": 7582928,
+          "addend": 0,
+          "resolved": 7582928
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b4b0_b26570",
+          "target": 11691376,
+          "addend": 0,
+          "resolved": 11691376
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b4b0_b26574",
+          "target": 11691380,
+          "addend": 0,
+          "resolved": 11691380
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b4b0_b26578",
+          "target": 11691384,
+          "addend": 0,
+          "resolved": 11691384
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b4b0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 292031
+        }
+      ],
+      "source": "src/recovered/0073b4b0.cpp",
+      "source_sha256": "b046aebb2cc2fea0eb6e36db34a79750fcd18dfca5a479e1e5ccdb926247038f",
+      "source_order": 6604,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7582992,
+      "method": "73b510",
+      "symbol": "_recover_73b510",
+      "symbol_prefix": "_recover_73b510",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "b27fef41afa4419d36249686394456719cb4036a599eaf66481b953feafdf3ed",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "b27fef41afa4419d36249686394456719cb4036a599eaf66481b953feafdf3ed",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b510_73b530",
+          "target": 7583024,
+          "addend": 0,
+          "resolved": 7583024
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b510_b299b0",
+          "target": 11704752,
+          "addend": 0,
+          "resolved": 11704752
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b510_b299b4",
+          "target": 11704756,
+          "addend": 0,
+          "resolved": 11704756
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b510_b299b8",
+          "target": 11704760,
+          "addend": 0,
+          "resolved": 11704760
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b510_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 291935
+        }
+      ],
+      "source": "src/recovered/0073b510.cpp",
+      "source_sha256": "5d48026b6925376fa09e4a24b59c8e8b9f71e7b037d7d3d520269c50ae4d893c",
+      "source_order": 6605,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7583088,
+      "method": "73b570",
+      "symbol": "_recover_73b570",
+      "symbol_prefix": "_recover_73b570",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "8c386be3123acaefe0790cf85add73f8139e09878fcf4f29b3a74c2f1cfe5597",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "8c386be3123acaefe0790cf85add73f8139e09878fcf4f29b3a74c2f1cfe5597",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b570_73b590",
+          "target": 7583120,
+          "addend": 0,
+          "resolved": 7583120
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b570_b29380",
+          "target": 11703168,
+          "addend": 0,
+          "resolved": 11703168
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b570_b29384",
+          "target": 11703172,
+          "addend": 0,
+          "resolved": 11703172
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b570_b29388",
+          "target": 11703176,
+          "addend": 0,
+          "resolved": 11703176
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b570_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 291839
+        }
+      ],
+      "source": "src/recovered/0073b570.cpp",
+      "source_sha256": "1717624f93b6da7ba04dd84e801eca4b0c897a7675d63755f4a76cac98f91ff8",
+      "source_order": 6606,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7583184,
+      "method": "73b5d0",
+      "symbol": "_recover_73b5d0",
+      "symbol_prefix": "_recover_73b5d0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "8d6ba57594af0ffb2f9f2cbff55fcec278a97acb3bbb890dbbf7661b6cf0f795",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "8d6ba57594af0ffb2f9f2cbff55fcec278a97acb3bbb890dbbf7661b6cf0f795",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b5d0_73b5f0",
+          "target": 7583216,
+          "addend": 0,
+          "resolved": 7583216
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b5d0_b26960",
+          "target": 11692384,
+          "addend": 0,
+          "resolved": 11692384
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b5d0_b26964",
+          "target": 11692388,
+          "addend": 0,
+          "resolved": 11692388
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b5d0_b26968",
+          "target": 11692392,
+          "addend": 0,
+          "resolved": 11692392
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b5d0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 291743
+        }
+      ],
+      "source": "src/recovered/0073b5d0.cpp",
+      "source_sha256": "2f9835fccb3313db44e8c59a65075d6be98f9ea25521880f91868875a184ce77",
+      "source_order": 6607,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7583280,
+      "method": "73b630",
+      "symbol": "_recover_73b630",
+      "symbol_prefix": "_recover_73b630",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "69909496218728a010ebf04ac42a48feec0823eb3b5d1dbf48f6cba5c4ba3a0e",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "69909496218728a010ebf04ac42a48feec0823eb3b5d1dbf48f6cba5c4ba3a0e",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b630_73b650",
+          "target": 7583312,
+          "addend": 0,
+          "resolved": 7583312
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b630_b2a6c8",
+          "target": 11708104,
+          "addend": 0,
+          "resolved": 11708104
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b630_b2a6cc",
+          "target": 11708108,
+          "addend": 0,
+          "resolved": 11708108
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b630_b2a6d0",
+          "target": 11708112,
+          "addend": 0,
+          "resolved": 11708112
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b630_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 291647
+        }
+      ],
+      "source": "src/recovered/0073b630.cpp",
+      "source_sha256": "f4fdfb0b521dd18c756a9b67f1c39e69632540c9f3e9f34d7c6417bb1d7e855f",
+      "source_order": 6608,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7583376,
+      "method": "73b690",
+      "symbol": "_recover_73b690",
+      "symbol_prefix": "_recover_73b690",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "ee72c6f84415006274f33fcd20b194390e8520435b0dd11ebd2c86934d717756",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "ee72c6f84415006274f33fcd20b194390e8520435b0dd11ebd2c86934d717756",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b690_73b6b0",
+          "target": 7583408,
+          "addend": 0,
+          "resolved": 7583408
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b690_b26580",
+          "target": 11691392,
+          "addend": 0,
+          "resolved": 11691392
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b690_b26584",
+          "target": 11691396,
+          "addend": 0,
+          "resolved": 11691396
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b690_b26588",
+          "target": 11691400,
+          "addend": 0,
+          "resolved": 11691400
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b690_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 291551
+        }
+      ],
+      "source": "src/recovered/0073b690.cpp",
+      "source_sha256": "ca1c50967ee9d7eaf0a0d2d6a4515acaba19fb49d2485189213038af1ae0dcd3",
+      "source_order": 6609,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7583472,
+      "method": "73b6f0",
+      "symbol": "_recover_73b6f0",
+      "symbol_prefix": "_recover_73b6f0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "cac6b2959a6918137ea9d49487df4f1a6eaba616beab6128358273eb62174ee6",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "cac6b2959a6918137ea9d49487df4f1a6eaba616beab6128358273eb62174ee6",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b6f0_73b710",
+          "target": 7583504,
+          "addend": 0,
+          "resolved": 7583504
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b6f0_b29000",
+          "target": 11702272,
+          "addend": 0,
+          "resolved": 11702272
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b6f0_b29004",
+          "target": 11702276,
+          "addend": 0,
+          "resolved": 11702276
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b6f0_b29008",
+          "target": 11702280,
+          "addend": 0,
+          "resolved": 11702280
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b6f0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 291455
+        }
+      ],
+      "source": "src/recovered/0073b6f0.cpp",
+      "source_sha256": "760a60fce18204c1a44be293eab424129e4c8030bb5215bf09309b5a5435cab3",
+      "source_order": 6610,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7583568,
+      "method": "73b750",
+      "symbol": "_recover_73b750",
+      "symbol_prefix": "_recover_73b750",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "9a33844f11d59c5dc8417aa917a72a7dca2771f02f52256b4601a03af75cde0e",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "9a33844f11d59c5dc8417aa917a72a7dca2771f02f52256b4601a03af75cde0e",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b750_73b770",
+          "target": 7583600,
+          "addend": 0,
+          "resolved": 7583600
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b750_b26920",
+          "target": 11692320,
+          "addend": 0,
+          "resolved": 11692320
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b750_b26924",
+          "target": 11692324,
+          "addend": 0,
+          "resolved": 11692324
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b750_b26928",
+          "target": 11692328,
+          "addend": 0,
+          "resolved": 11692328
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b750_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 291359
+        }
+      ],
+      "source": "src/recovered/0073b750.cpp",
+      "source_sha256": "e66e9c20a32647e0b411c29fa8bb2927984ffc9498d711af73283ed1764b1bd0",
+      "source_order": 6611,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7583664,
+      "method": "73b7b0",
+      "symbol": "_recover_73b7b0",
+      "symbol_prefix": "_recover_73b7b0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "e58cb3eb9015fe4fd9fea299e7e7a3b6b4fca6ee5962a4779653aeb640b94091",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "e58cb3eb9015fe4fd9fea299e7e7a3b6b4fca6ee5962a4779653aeb640b94091",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b7b0_73b7d0",
+          "target": 7583696,
+          "addend": 0,
+          "resolved": 7583696
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b7b0_b29838",
+          "target": 11704376,
+          "addend": 0,
+          "resolved": 11704376
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b7b0_b2983c",
+          "target": 11704380,
+          "addend": 0,
+          "resolved": 11704380
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b7b0_b29840",
+          "target": 11704384,
+          "addend": 0,
+          "resolved": 11704384
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b7b0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 291263
+        }
+      ],
+      "source": "src/recovered/0073b7b0.cpp",
+      "source_sha256": "ec356479c132005b6b4fbc224ff4df056110215f91ffe09ceb4cc6c53b86222a",
+      "source_order": 6612,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7583760,
+      "method": "73b810",
+      "symbol": "_recover_73b810",
+      "symbol_prefix": "_recover_73b810",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "3ee8627a6c07cd8146a21034edb34c7b221cace993ca7891962746911f0d712b",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "3ee8627a6c07cd8146a21034edb34c7b221cace993ca7891962746911f0d712b",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73b810_73b830",
+          "target": 7583792,
+          "addend": 0,
+          "resolved": 7583792
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73b810_b2a7d8",
+          "target": 11708376,
+          "addend": 0,
+          "resolved": 11708376
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73b810_b2a7dc",
+          "target": 11708380,
+          "addend": 0,
+          "resolved": 11708380
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73b810_b2a7e0",
+          "target": 11708384,
+          "addend": 0,
+          "resolved": 11708384
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73b810_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 291167
+        }
+      ],
+      "source": "src/recovered/0073b810.cpp",
+      "source_sha256": "33555532d03739178ff72c05ced5f66ee656b1fe52163feba2e60d8e966ac9f8",
+      "source_order": 6613,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7584960,
+      "method": "73bcc0",
+      "symbol": "_recover_73bcc0",
+      "symbol_prefix": "_recover_73bcc0",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "82b4602489da89803eb97ce4f698064494bad4b853c27a22f856faeeaf10f90e",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "82b4602489da89803eb97ce4f698064494bad4b853c27a22f856faeeaf10f90e",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73bcc0_73bce0",
+          "target": 7584992,
+          "addend": 0,
+          "resolved": 7584992
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73bcc0_b29980",
+          "target": 11704704,
+          "addend": 0,
+          "resolved": 11704704
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73bcc0_b29984",
+          "target": 11704708,
+          "addend": 0,
+          "resolved": 11704708
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73bcc0_b29988",
+          "target": 11704712,
+          "addend": 0,
+          "resolved": 11704712
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73bcc0_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 289967
+        }
+      ],
+      "source": "src/recovered/0073bcc0.cpp",
+      "source_sha256": "a7244ef66960ac2a9a63ff5d27c090e1c3dc8fe9a96c1b6f10b4623466bac18a",
+      "source_order": 6616,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    },
+    {
+      "entry": 7585056,
+      "method": "73bd20",
+      "symbol": "_recover_73bd20",
+      "symbol_prefix": "_recover_73bd20",
+      "options": [
+        "/O1",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "cfacfe8b0e43041bf857dc97448bbd947bb23e5198fc8ed7f772c675e375f8ef",
+      "padding_bytes": 0,
+      "full_extent_bytes": 29,
+      "full_extent_sha256": "cfacfe8b0e43041bf857dc97448bbd947bb23e5198fc8ed7f772c675e375f8ef",
+      "relocations": [
+        {
+          "offset": 3,
+          "kind": 6,
+          "symbol": "_opaque_code_address_73bd20_73bd40",
+          "target": 7585088,
+          "addend": 0,
+          "resolved": 7585088
+        },
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "_g4_73bd20_b29828",
+          "target": 11704360,
+          "addend": 0,
+          "resolved": 11704360
+        },
+        {
+          "offset": 13,
+          "kind": 6,
+          "symbol": "_g4_73bd20_b2982c",
+          "target": 11704364,
+          "addend": 0,
+          "resolved": 11704364
+        },
+        {
+          "offset": 18,
+          "kind": 6,
+          "symbol": "_g4_73bd20_b29830",
+          "target": 11704368,
+          "addend": 0,
+          "resolved": 11704368
+        },
+        {
+          "offset": 23,
+          "kind": 20,
+          "symbol": "_call_73bd20_0",
+          "target": 7874954,
+          "addend": 0,
+          "resolved": 289871
+        }
+      ],
+      "source": "src/recovered/0073bd20.cpp",
+      "source_sha256": "6c7a1e775b503353f88f7d3ac9f3324419134a4cd40c00080e20624e354f71fa",
+      "source_order": 6617,
+      "population": "population-08",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
+    }
+  ]
+}

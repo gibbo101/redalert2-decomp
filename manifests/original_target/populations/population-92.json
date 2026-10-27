@@ -1,0 +1,312 @@
+{
+  "id": "population-92",
+  "population": {
+    "id": "population-92",
+    "inventory_sha256": "b1242a1c86e14d02a746d47db0dce68000d4e6a2fd83d5a701dfefd38d5b56e8",
+    "gaps_sha256": "77405ac63716da17f854111cee2c8f54f0efcac38f29544c1582e8d38d90f926",
+    "historical_population_sha256": "9075a027eae632d328969316a483a33c6d5cfc9212158e1de9fc12a47edd6d88",
+    "historical_acceptance_sha256": "ced41634c0eb4eda1dc6565c226572900b1144d88e327495d84e068bd1adccbe"
+  },
+  "references": {
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "??0Buffer@@QAE@PAXJ@Z": 4424384,
+    "??0Buffer@@QAE@PADJ@Z": 4424384,
+    "??0Buffer@@QAE@PBXJ@Z": 4424512,
+    "??0Buffer@@QAE@J@Z": 4424576,
+    "??0Buffer@@QAE@ABV0@@Z": 4424624,
+    "??1Buffer@@QAE@XZ": 4424720,
+    "?base@Init_498a50@@": 5536096,
+    "??_GStraw@@UAEPAXI@Z": 4844864,
+    "??_7Straw@@6B@": 7989752,
+    "??1Straw@@UAE@XZ": 6926352,
+    "?Get_From@Straw@@UAEXPAV1@@Z": 6926416,
+    "?Get@Straw@@UAEHPAXH@Z": 6926496,
+    "?Get@FileStraw@@UAEHPAXH@Z": 7813280,
+    "??_EStraw@@UAEPAXI@Z": 4844864,
+    "?Get@CacheStraw@@UAEHPAXH@Z": 4802400,
+    "?Get@Wstring@@QBEPBDXZ": 7792368,
+    "??0LCWPipe@@QAE@W4CompControl@0@H@Z": 5459680,
+    "??_7LCWPipe@@6B@": 8016996,
+    "??1LCWPipe@@UAE@XZ": 5459792,
+    "??_GLCWPipe@@UAEPAXI@Z": 5460608,
+    "??_ELCWPipe@@UAEPAXI@Z": 5460608,
+    "?LCW_Comp@@YIHPBXPAXH@Z": 5459264,
+    "?LCW_Uncomp@@YIHPBXPAXK@Z": 5458768,
+    "??_7LCWStraw@@6B@": 8017020,
+    "??0LCWStraw@@QAE@W4CompControl@0@H@Z": 5460688,
+    "??1LCWStraw@@UAE@XZ": 5460800,
+    "??_GLCWStraw@@UAEPAXI@Z": 5461216,
+    "??_ELCWStraw@@UAEPAXI@Z": 5461216,
+    "?Get@BlowStraw@@UAEHPAXH@Z": 4413504,
+    "?Get@LCWStraw@@UAEHPAXH@Z": 5460864,
+    "?Get@LZOStraw@@UAEHPAXH@Z": 5501008,
+    "?Get@PKStraw@@UAEHPAXH@Z": 6356752,
+    "?Get@RandomStraw@@UAEHPAXH@Z": 6543408,
+    "?Get_From@PKStraw@@UAEXAAVStraw@@@Z": 6357312,
+    "?Get_From@PKStraw@@UAEXPAVStraw@@@Z": 6356640,
+    "_memmove": 7877264
+  },
+  "regions": [
+    {
+      "entry": 5460688,
+      "method": "005352d0",
+      "symbol": "??0LCWStraw@@QAE@W4CompControl@0@H@Z",
+      "symbol_prefix": "??0LCWStraw@@QAE@W4CompControl@0@H@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 103,
+      "body_sha256": "deeec5c723fbed850e553ef1a8345d247d58280c73010047ba3a0d30591d476c",
+      "padding_bytes": 9,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "7913340c1c64239f6c8c767f210be2cac123c6fd83bcc2391dc5ee3f68ee22ce",
+      "relocations": [
+        {
+          "offset": 56,
+          "kind": 6,
+          "symbol": "??_7LCWStraw@@6B@",
+          "target": 8017020,
+          "addend": 0,
+          "resolved": 8017020
+        },
+        {
+          "offset": 61,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2411782
+        },
+        {
+          "offset": 85,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2411758
+        }
+      ],
+      "source_sha256": "ea4cf8d253565963dc0f64a995bedb7f45cfe5671a4f3463b9bf6767e140b33b",
+      "source": "src/recovered/classes/LCWStraw/LCWStraw_constructor_005352d0.cpp",
+      "population": "population-92",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LCWStraw_constructor_005352d0",
+      "source_order": 10589
+    },
+    {
+      "entry": 5460800,
+      "method": "00535340",
+      "symbol": "??1LCWStraw@@UAE@XZ",
+      "symbol_prefix": "??1LCWStraw@@UAE@XZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 53,
+      "body_sha256": "1d64488c77c33088b18f6da21760959e4128e69110748f16c3dbb37caa34adaf",
+      "padding_bytes": 11,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "f46a2cdd0f11105ce9249d9330115c1ffd463edfd37b274145be04d20312a4cd",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "??_7LCWStraw@@6B@",
+          "target": 8017020,
+          "addend": 0,
+          "resolved": 8017020
+        },
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2410985
+        },
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2410969
+        },
+        {
+          "offset": 47,
+          "kind": 20,
+          "symbol": "??1Straw@@UAE@XZ",
+          "target": 6926352,
+          "addend": 0,
+          "resolved": 1465501
+        }
+      ],
+      "source_sha256": "f58eef7f1c074aa8add8109e9fc8ddc59457482bb20de145484059173cf8d17e",
+      "source": "src/recovered/classes/LCWStraw/LCWStraw_destructor_00535340.cpp",
+      "population": "population-92",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LCWStraw_destructor_00535340",
+      "source_order": 10590
+    },
+    {
+      "entry": 5460864,
+      "method": "00535380",
+      "symbol": "?Get@LCWStraw@@UAEHPAXH@Z",
+      "symbol_prefix": "?Get@LCWStraw@@UAEHPAXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 346,
+      "body_sha256": "64c2df0dbfb7b3d07ffed8525f90564a3b6b0d4aafaf225882ee1b584905269f",
+      "padding_bytes": 6,
+      "full_extent_bytes": 352,
+      "full_extent_sha256": "91638944ac3f9dc2ba443c2736f455cd2d226d05b3f57a0015e65f615224d98c",
+      "relocations": [
+        {
+          "offset": 107,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2416289
+        },
+        {
+          "offset": 163,
+          "kind": 20,
+          "symbol": "?Get@Straw@@UAEHPAXH@Z",
+          "target": 6926496,
+          "addend": 0,
+          "resolved": 1465465
+        },
+        {
+          "offset": 201,
+          "kind": 20,
+          "symbol": "?Get@Straw@@UAEHPAXH@Z",
+          "target": 6926496,
+          "addend": 0,
+          "resolved": 1465427
+        },
+        {
+          "offset": 222,
+          "kind": 20,
+          "symbol": "?LCW_Uncomp@@YIHPBXPAXK@Z",
+          "target": 5458768,
+          "addend": 0,
+          "resolved": 4294964974
+        },
+        {
+          "offset": 252,
+          "kind": 20,
+          "symbol": "?Get@Straw@@UAEHPAXH@Z",
+          "target": 6926496,
+          "addend": 0,
+          "resolved": 1465376
+        },
+        {
+          "offset": 284,
+          "kind": 20,
+          "symbol": "?LCW_Comp@@YIHPBXPAXH@Z",
+          "target": 5459264,
+          "addend": 0,
+          "resolved": 4294965408
+        },
+        {
+          "offset": 299,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 2416097
+        }
+      ],
+      "source_sha256": "69d70961200ec20809704c33ce2b17775e1dc0c35fb6c2296d6e1c4e5458e990",
+      "source": "src/recovered/classes/LCWStraw/LCWStraw_Get_00535380.cpp",
+      "population": "population-92",
+      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LCWStraw_Get_00535380",
+      "source_order": 10591
+    },
+    {
+      "entry": 5461216,
+      "method": "005354e0",
+      "symbol": "??_GLCWStraw@@UAEPAXI@Z",
+      "symbol_prefix": "??_GLCWStraw@@UAEPAXI@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "12bc6bb2e6bc2058119c9a7488155c50e399ecd37e9d49d50b0cd94dc4b231a3",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "243585cf2291ea7f19e4f95fe095692335eea459b74bee8257d977c887af684a",
+      "relocations": [
+        {
+          "offset": 8,
+          "kind": 6,
+          "symbol": "??_7LCWStraw@@6B@",
+          "target": 8017020,
+          "addend": 0,
+          "resolved": 8017020
+        },
+        {
+          "offset": 14,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2410569
+        },
+        {
+          "offset": 30,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2410553
+        },
+        {
+          "offset": 47,
+          "kind": 20,
+          "symbol": "??1Straw@@UAE@XZ",
+          "target": 6926352,
+          "addend": 0,
+          "resolved": 1465085
+        },
+        {
+          "offset": 60,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 2410523
+        }
+      ],
+      "source_sha256": "123b7919f77e5042a8de7622b14746a13448886df4480a452f6e2f5a73e9f053",
+      "source": "src/recovered/classes/LCWStraw/LCWStraw_scalar_deleting_destructor_005354e0.cpp",
+      "population": "population-92",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "LCWStraw_scalar_deleting_destructor_005354e0",
+      "source_order": 10592
+    }
+  ]
+}

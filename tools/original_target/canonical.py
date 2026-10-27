@@ -8,6 +8,7 @@ import json
 import re
 from pathlib import Path
 
+import catalog_io
 from coff import Coff
 from compiler_output import classify
 from source_paths import source_path
@@ -88,8 +89,9 @@ def validate_includes(data, headers):
 
 
 def dependency_headers(audit, sources):
-    catalog = audit.document('manifests/original_target.json')
-    headers = validate_headers(audit.repository, catalog)
+    location = catalog_io.locate(audit.repository)
+    stored = audit.document(location / catalog_io.INDEX if catalog_io.is_sharded(location) else location)
+    headers = validate_headers(audit.repository, catalog_io.header_document(stored))
     pending = set()
     for source in sources:
         pending.update(validate_includes(audit.read(source['source'], source['source_sha256']), headers))

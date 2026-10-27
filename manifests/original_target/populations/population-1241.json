@@ -1,0 +1,1703 @@
+{
+  "id": "population-1241",
+  "population": {
+    "id": "population-1241",
+    "inventory_sha256": "d14705b3f09caceedec30f5fe8d7b1370bab56fda38e2d452714db1c60fa63f9",
+    "gaps_sha256": "dbd9173def77db2ea7163b3b2a655c228082febf353b287ea7e8fac0e631419f",
+    "historical_population_sha256": "1c59b3aa479c97b09f3dfbb4c9608518d2b0a3cbe2bd8dd63cedd31e387ada33",
+    "historical_acceptance_sha256": "426e62fecccf0586ad81be0e1e9f099661feef2660837e68cb099df2c90dbc0f",
+    "separate_units": true
+  },
+  "references": {
+    "?unknown_art_ac1134@@3PAXA": 11276596,
+    "__real@8@40078000000000000000": 7972608,
+    "__real@8@40008000000000000000": 7972600,
+    "__CIpow": 7872944,
+    "__real@8@4004f000000000000000": 7972632,
+    "__real@8@4005b400000000000000": 7972640,
+    "__real@8@3ffe8000000000000000": 7972648,
+    "__ftol": 7860496,
+    "__real@8@3ff78000000000000000": 7972656,
+    "__real@8@3fff8000000000000000": 7972616,
+    "__real@8@4004b400000000000000": 7972624,
+    "??3@YAXPAX@Z": 7871803,
+    "_atexit": 7874954,
+    "__stricmp": 7872288,
+    "??2@YAPAXI@Z": 7872535,
+    "__strncpy": 7873488,
+    "__DAT_00ab6e88": 11234952,
+    "__strcmp": 7888160,
+    "__strlen": 7903280,
+    "__malloc": 7874096,
+    "___amsg_exit": 7887784,
+    "__DAT_0084ed10": 8711440,
+    "__strdup": 7919638,
+    "__real@8@3ff8a3d70a3d70a3d800": 7980312,
+    "__splitpath": 7882867,
+    "__makepath": 7877104,
+    "__strupr": 7954916,
+    "__DAT_00a40c88": 10751112,
+    "__DAT_00a40c80": 10751104,
+    "__DAT_00a40c84": 10751108,
+    "__DAT_00a70cc4": 10947780,
+    "__DAT_00a70cd0": 10947792,
+    "__DAT_00a70cc0": 10947776,
+    "__chkstk": 7878736,
+    "__strnicmp": 7878672,
+    "__DAT_00ab6ea8": 11234984,
+    "__DAT_00ab6eb0": 11234992,
+    "__DAT_00ac0168": 11272552,
+    "__DAT_00ac0170": 11272560,
+    "__DAT_00a769e8": 10971624,
+    "__real@8@4006ff00000000000000": 8007504,
+    "__real@8@00000000000000000000": 7976464,
+    "__real@8@3ffee666666666666800": 8048680,
+    "__real@8@3fffc90fdaa22168c000": 7976496,
+    "__real@8@c00ca2f83d7b47677800": 7976488,
+    "__real@8@bfff8000000000000000": 7984504,
+    "__real@8@4001a000000000000000": 7979640,
+    "__real@4@00000000000000000000": 7972664,
+    "__wcsicmp": 7955224,
+    "__real@4@3fffc90fdb0000000000": 7999372,
+    "__real@4@bfffc90fdb0000000000": 7999376,
+    "__real@8@4000c90fdaa22168c000": 7983448,
+    "__real@4@4008e100000000000000": 8045352,
+    "__real@4@3ffe8000000000000000": 7986560,
+    "__real@4@3ff78000000000000000": 8030204,
+    "__real@8@4008e100000000000000": 7976456,
+    "__real@4@4001a000000000000000": 8007424,
+    "__real@8@40018000000000000000": 7981504,
+    "__real@8@4005c800000000000000": 7976944,
+    "__real@4@3fffc000000000000000": 7983336,
+    "?unknown_art_ac1134@@3PAVUnknownArtData_006f2390@@A": 11276596,
+    "__alldiv": 7873744,
+    "__allmul": 7872704,
+    "__real@4@3fff8000000000000000": 7976952,
+    "__real@8@3fe08000000200000000": 7979648,
+    "__real@8@3ffc9999999999999800": 8001520,
+    "__real@8@3ffbccccccccccccd000": 7980400,
+    "__real@8@3ff98ef920b8f5082800": 8054496,
+    "__aulldiv": 7873920,
+    "__real@8@3fffc000000000000000": 7984488,
+    "__wcsupr": 7958262,
+    "__real@8@40058000000000000000": 8051872,
+    "__real@8@3ffdccccccccccccd000": 7979624,
+    "__purecall": 4950368,
+    "?Unknown_006F4160@@YAXXZ": 7291232,
+    "?Unknown_6F42D0@@YAXXZ": 7291600,
+    "?Unknown_0051A270@@YAXXZ": 5350000,
+    "?Unknown_006F5150@@YAXXZ": 7295312,
+    "?Unknown_6F5400@@YAXXZ": 7296000,
+    "?unknown_art_ac1218@@3PAXA": 11276824,
+    "?unknown_art_ac121c@@3PAXA": 11276828,
+    "?unknown_art_ac1220@@3PAXA": 11276832,
+    "?unknown_art_ac10c0@@3PAXA": 11276480,
+    "?unknown_flag_ac1224@@3_NA": 11276836,
+    "?unknown_flag_ac1225@@3_NA": 11276837,
+    "?unknown_flag_ac1226@@3_NA": 11276838,
+    "?unknown_flag_ac1227@@3_NA": 11276839,
+    "?unknown_art_ac1130@@3PAXA": 11276592,
+    "?unknown_art_ac1138@@3PAXA": 11276600,
+    "?unknown_art_ac113c@@3PAVUnknownArtData_006f2390@@A": 11276604,
+    "?unknown_flag_ac119c@@3_NA": 11276700,
+    "?unknown_art_ac11b4@@3PAXA": 11276724,
+    "?unknown_art_ac11b8@@3PAXA": 11276728,
+    "?unknown_art_ac11bc@@3PAXA": 11276732,
+    "?unknown_art_ac11c0@@3PAXA": 11276736,
+    "?unknown_art_ac11c4@@3PAXA": 11276740,
+    "?unknown_art_ac11c8@@3PAXA": 11276744,
+    "?unknown_art_ac11cc@@3PAXA": 11276748,
+    "?unknown_art_ac11d0@@3PAXA": 11276752,
+    "?unknown_art_ac11a0@@3PAXA": 11276704,
+    "?unknown_art_ac11a4@@3PAVUnknownArtData_006f2390@@A": 11276708,
+    "?unknown_art_ac11a8@@3PAXA": 11276712,
+    "?unknown_art_ac11ac@@3PAVUnknownArtData_006f2390@@A": 11276716,
+    "?unknown_flag_ac11b0@@3_NA": 11276720,
+    "?Unknown_00495270@@YIPAXPBDPA_N@Z": 4805232,
+    "?unknown_load_art_6f1fa0@@YIXUUnknownArtOut@@PBDPAPAX@Z": 7282592,
+    "?unknown_art_ac113c@@3PAXA": 11276604,
+    "?unknown_name_7f8740@@3QBDB": 8357696,
+    "?unknown_name_7f8744@@3QBDB": 8357700,
+    "?unknown_name_7f8748@@3QBDB": 8357704,
+    "?unknown_name_7f874c@@3QBDB": 8357708,
+    "?unknown_name_7f86e8@@3QBDB": 8357608,
+    "?unknown_name_7f86ec@@3QBDB": 8357612,
+    "?unknown_art_7f8730@@3PAXA": 8357680,
+    "?unknown_art_7f8734@@3PAXA": 8357684,
+    "?unknown_art_7f8738@@3PAXA": 8357688,
+    "?unknown_art_7f873c@@3PAXA": 8357692,
+    "?unknown_art_ac1140@@3PAXA": 11276608,
+    "?unknown_art_ac1144@@3PAXA": 11276612,
+    "?unknown_art_ac1148@@3PAXA": 11276616,
+    "?unknown_art_ac114c@@3PAXA": 11276620,
+    "?unknown_art_ac1150@@3PAXA": 11276624,
+    "?unknown_art_ac1154@@3PAXA": 11276628,
+    "?unknown_art_ac1144@@3PAVUnknownArtData_006f2390@@A": 11276612,
+    "?unknown_art_ac114c@@3PAVUnknownArtData_006f2390@@A": 11276620,
+    "?unknown_art_ac1154@@3PAVUnknownArtData_006f2390@@A": 11276628,
+    "?unknown_art_ac1158@@3PAXA": 11276632,
+    "?unknown_art_ac115c@@3PAXA": 11276636,
+    "?unknown_art_ac115c@@3PAVUnknownArtData_006f2390@@A": 11276636,
+    "?unknown_load_art_6f1fa0@@YIXPBDPAPAX1@Z": 7282592,
+    "?Unknown_Load_Art_Flagged_006F2840@@YIXH@Z": 7284800,
+    "?unknown_flag_ac1168@@3_NA": 11276648,
+    "?unknown_art_ac1160@@3PAXA": 11276640,
+    "?unknown_art_ac1164@@3PAVUnknownArtData_006f2390@@A": 11276644,
+    "?unknown_name_7f8708@@3QBDB": 8357640,
+    "?unknown_name_7f870c@@3QBDB": 8357644,
+    "?Unknown_Load_Art_Flagged_006F2840@@YIX_N@Z": 7284800,
+    "?unknown_flag_ac1214@@3_NA": 11276820,
+    "?unknown_flag_ac1215@@3_NA": 11276821,
+    "?unknown_flag_ac1216@@3_NA": 11276822,
+    "?unknown_art_ac110c@@3PAXA": 11276556,
+    "?unknown_art_ac10f0@@3PAXA": 11276528,
+    "?unknown_art_ac1108@@3PAXA": 11276552,
+    "?unknown_art_ac1168@@3_NA": 11276648,
+    "?unknown_art_ac1164@@3PAXA": 11276644,
+    "?unknown_value_8523e0@@3HA": 8725472,
+    "?unknown_name_7f8750@@3QBDB": 8357712,
+    "?unknown_name_7f8754@@3QBDB": 8357716,
+    "?unknown_name_7f8758@@3QBDB": 8357720,
+    "?unknown_name_7f875c@@3QBDB": 8357724,
+    "?unknown_name_7f8760@@3QBDB": 8357728,
+    "?unknown_name_7f8764@@3QBDB": 8357732,
+    "?unknown_name_7f8768@@3QBDB": 8357736,
+    "?unknown_name_7f876c@@3QBDB": 8357740,
+    "?unknown_name_7f8770@@3QBDB": 8357744,
+    "?unknown_name_7f8774@@3QBDB": 8357748,
+    "?unknown_name_7f8778@@3QBDB": 8357752,
+    "?unknown_name_7f877c@@3QBDB": 8357756,
+    "?unknown_art_ac1174@@3_NA": 11276660,
+    "?unknown_art_ac116c@@3PAXA": 11276652,
+    "?unknown_art_ac1170@@3PAXA": 11276656,
+    "?unknown_art_ac1178@@3PAXA": 11276664,
+    "?unknown_art_ac117c@@3PAXA": 11276668,
+    "?unknown_flag_ac1228@@3_NA": 11276840,
+    "?unknown_flag_ac1229@@3_NA": 11276841,
+    "?unknown_flag_ac122a@@3_NA": 11276842,
+    "?unknown_flag_ac122b@@3_NA": 11276843,
+    "?unknown_art_ac1120@@3PAXA": 11276576,
+    "?unknown_art_ac1040@@3PAXA": 11276352,
+    "?unknown_art_ac10fc@@3PAXA": 11276540,
+    "?unknown_art_ac1074@@3PAXA": 11276404,
+    "?Unknown_Free_All_Art_006F1D20@@YAXXZ": 7281952,
+    "?Unknown_Load_Art_Sets_006F20B0@@YAXXZ": 7282864,
+    "?Unknown_Free_Art_Sets_006F2130@@YAXXZ": 7282992,
+    "?Unknown_Get_Art_6f2220@@YAPAXXZ": 7283232,
+    "?Unknown_Get_Art_6f2230@@YAPAXXZ": 7283248,
+    "?Unknown_Get_Art_6f2240@@YAPAXXZ": 7283264,
+    "?Unknown_Get_Art_6f2250@@YAPAXXZ": 7283280,
+    "?Unknown_Load_Art_Buffers_006F2260@@YAXXZ": 7283296,
+    "?Unknown_Free_Art_Buffers_006F22F0@@YAXXZ": 7283440,
+    "?Unknown_Select_Art_6f2400@@YIPAXHHH@Z": 7283712,
+    "?Unknown_Select_Art_6f2420@@YIPAXHHH@Z": 7283744,
+    "?Unknown_Get_Art_6f2440@@YAPAXXZ": 7283776,
+    "?Unknown_Get_Art_6f2450@@YAPAXXZ": 7283792,
+    "?Unknown_Get_Art_6f2460@@YAPAXXZ": 7283808,
+    "?Unknown_Get_Art_6f2470@@YAPAXXZ": 7283824,
+    "?Unknown_Get_Art_6f2480@@YAPAXXZ": 7283840,
+    "?Unknown_Get_Art_6f2490@@YAPAXXZ": 7283856,
+    "?Unknown_Free_Art_Sets_006F2510@@YAXXZ": 7283984,
+    "?Unknown_Get_Art_6f25a0@@YAPAXXZ": 7284128,
+    "?Unknown_Get_Art_6f25b0@@YAPAXXZ": 7284144,
+    "?Unknown_Free_Art_Pair_006F26D0@@YAXXZ": 7284432,
+    "?Unknown_Load_Art_Once_006F2710@@YIXH@Z": 7284496,
+    "?Unknown_Free_Art_Flagged_006F2750@@YAXXZ": 7284560,
+    "?Unknown_Get_Art_6f2810@@YA_NXZ": 7284752,
+    "?Unknown_Get_Art_6f2820@@YAPAXXZ": 7284768,
+    "?Unknown_Get_Art_6f2830@@YAPAXXZ": 7284784,
+    "?Unknown_Get_Art_6f2b20@@YA_NXZ": 7285536,
+    "?Unknown_Get_Art_6f2b30@@YAPAXXZ": 7285552,
+    "?Unknown_Get_Art_6f2b40@@YAPAXXZ": 7285568,
+    "?Unknown_Get_Art_6f2dd0@@YAPAXXZ": 7286224,
+    "?Unknown_Get_Art_6f2de0@@YAPAXXZ": 7286240,
+    "?Unknown_Free_Art_Buffers_006F2ED0@@YAXXZ": 7286480,
+    "?unknown_art_ac1170@@3PAVUnknownArtData_006f2390@@A": 11276656,
+    "?unknown_art_ac117c@@3PAVUnknownArtData_006f2390@@A": 11276668
+  },
+  "regions": [
+    {
+      "entry": 7283248,
+      "method": "006f2230",
+      "symbol": "?Unknown_Get_Art_6f2230@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2230@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "3cda852beee4bbd50e1dcc52bdb3a2133d32b8827b266fab09b90a86a5b3f451",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "4819eb7233841f46ec69a6a71124d554e4d618b6f7e8bd1699e5710602e6be3f",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1134@@3PAXA",
+          "target": 11276596,
+          "addend": 0,
+          "resolved": 11276596
+        }
+      ],
+      "source_sha256": "868cc4103afa61e6d453e7c986386e307e5d73f4e506c042670070d8d2ec56dd",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2230.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2230",
+      "source_order": 40035
+    },
+    {
+      "entry": 7283280,
+      "method": "006f2250",
+      "symbol": "?Unknown_Get_Art_6f2250@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2250@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "20b2be3c65e4ead6f8f7438abe8b7766e1ff6d74f4dfcb556166ee8871ffa61a",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "ce83474ad2d8d6d1402b9a7a7ce3b792d348f12cd2689cc2b921d3ded8f08106",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac113c@@3PAXA",
+          "target": 11276604,
+          "addend": 0,
+          "resolved": 11276604
+        }
+      ],
+      "source_sha256": "44943ce2936d85ada93073838e6a914333639aff7ab94c96d119c4f9cdb3862f",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2250.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2250",
+      "source_order": 40037
+    },
+    {
+      "entry": 7283712,
+      "method": "006f2400",
+      "symbol": "?Unknown_Select_Art_6f2400@@YIPAXHHH@Z",
+      "symbol_prefix": "?Unknown_Select_Art_6f2400@@YIPAXHHH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 21,
+      "body_sha256": "8cacefe7f77b6f1ded39fe60a3f17dd7b31a141527abadee081eea3f2ab8cce4",
+      "padding_bytes": 11,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "5dc2a0abd6a219804801eb9b913ad31e5aa25146371347ca9a4c4508c2549606",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_7f8730@@3PAXA",
+          "target": 8357680,
+          "addend": 0,
+          "resolved": 8357680
+        },
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "?unknown_art_7f8734@@3PAXA",
+          "target": 8357684,
+          "addend": 0,
+          "resolved": 8357684
+        }
+      ],
+      "source_sha256": "15cfd5809c7e755a9af963f15ebcea61044e0e49b4146a2f81b78a6502281975",
+      "source": "src/recovered/unowned/Unknown_Select_Art_006f2400.cpp",
+      "population": "population-1241",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Select_Art_006f2400",
+      "source_order": 40040
+    },
+    {
+      "entry": 7283744,
+      "method": "006f2420",
+      "symbol": "?Unknown_Select_Art_6f2420@@YIPAXHHH@Z",
+      "symbol_prefix": "?Unknown_Select_Art_6f2420@@YIPAXHHH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 21,
+      "body_sha256": "71cb400a8f23adedebd3475df7b68796e0a91a3bc1f212251395013a6e26d6f7",
+      "padding_bytes": 11,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "cf1219947770013fdea13c9602c20fee8cf916a4683475dca62c8270d4d67048",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_7f8738@@3PAXA",
+          "target": 8357688,
+          "addend": 0,
+          "resolved": 8357688
+        },
+        {
+          "offset": 14,
+          "kind": 6,
+          "symbol": "?unknown_art_7f873c@@3PAXA",
+          "target": 8357692,
+          "addend": 0,
+          "resolved": 8357692
+        }
+      ],
+      "source_sha256": "8460d7044190d384e53b8a241fcb9051f59c533c4b327852939f16713796152a",
+      "source": "src/recovered/unowned/Unknown_Select_Art_006f2420.cpp",
+      "population": "population-1241",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Select_Art_006f2420",
+      "source_order": 40041
+    },
+    {
+      "entry": 7283792,
+      "method": "006f2450",
+      "symbol": "?Unknown_Get_Art_6f2450@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2450@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "55aa5fd0b8825329964e9e412ec26d76cdc67d3cc3c3d19b015a519137ef992a",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "e6032f909dc7b660146e4cfb8317acaef7ddcba44950c91720c0202c5f4f946c",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1144@@3PAXA",
+          "target": 11276612,
+          "addend": 0,
+          "resolved": 11276612
+        }
+      ],
+      "source_sha256": "279715a8081fd73b2a1c9b5c0dbf88bd53d5cfa1c2cbf1631741c0af07f8dee5",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2450.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2450",
+      "source_order": 40043
+    },
+    {
+      "entry": 7283824,
+      "method": "006f2470",
+      "symbol": "?Unknown_Get_Art_6f2470@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2470@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "d9b567fe00218833280466df70ea4020cb7c078cdc04ddb1ad1c12b5fce283e7",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "347ecea805672b9a1198eab9bf8a5c2d6fde44802ca18331d8ac1bfa1c3c1a27",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac114c@@3PAXA",
+          "target": 11276620,
+          "addend": 0,
+          "resolved": 11276620
+        }
+      ],
+      "source_sha256": "d865208c9f6cc09832f2bae698362a42e4c7ca9d5bf77de91a03bad8b3aacc65",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2470.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2470",
+      "source_order": 40045
+    },
+    {
+      "entry": 7283856,
+      "method": "006f2490",
+      "symbol": "?Unknown_Get_Art_6f2490@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2490@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "ad8231a1f7a048337de6ac6b8bbcdfbd1aecb777b8f08d281a7588bc92feb6b5",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "b049bd7609b673dad686a732b4b26ac4c936ee428e284293f6fce3844aa17695",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1154@@3PAXA",
+          "target": 11276628,
+          "addend": 0,
+          "resolved": 11276628
+        }
+      ],
+      "source_sha256": "e64f7dbbda864f2d5a5b06796d6d9d023491667c71f22bf2bec056f6b5a9efff",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2490.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2490",
+      "source_order": 40047
+    },
+    {
+      "entry": 7284144,
+      "method": "006f25b0",
+      "symbol": "?Unknown_Get_Art_6f25b0@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f25b0@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "49fe092f2f0e88cd886a8b50194f48431faa7bddb2e9b0a71e1ace777f5e1abe",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "49d2d2d0e89c75bd687c690ead0bffa8d799943cb99c541d27620a849e29fe42",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac115c@@3PAXA",
+          "target": 11276636,
+          "addend": 0,
+          "resolved": 11276636
+        }
+      ],
+      "source_sha256": "c7ef79127c717fd4cc7455952bb6d8142954b43f9a23a064626308f7ffdcf1a9",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f25b0.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f25b0",
+      "source_order": 40050
+    },
+    {
+      "entry": 7284784,
+      "method": "006f2830",
+      "symbol": "?Unknown_Get_Art_6f2830@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2830@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "8a95bcd174411ddd4c2fa2e9207f9fea4ee19cad14e18f3ea2931b71d727404f",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "d77c4f8dc0aaa7806b3e698e69ba5d3d26de641ef51e0e041ab2d71f84938656",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1164@@3PAXA",
+          "target": 11276644,
+          "addend": 0,
+          "resolved": 11276644
+        }
+      ],
+      "source_sha256": "be1a93f9eed1192cfb148722b0678c2f250e956aa39d25c40776b64a1661a483",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2830.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2830",
+      "source_order": 40056
+    },
+    {
+      "entry": 7285568,
+      "method": "006f2b40",
+      "symbol": "?Unknown_Get_Art_6f2b40@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2b40@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "d82c1be55da7623dcd04fd50dffd794c6635f9884ece349c3d5577f12dd76b15",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "71df56e97b485400e4728754b8ed389d254fcea1d60222deff3a7cd4901daea6",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1170@@3PAXA",
+          "target": 11276656,
+          "addend": 0,
+          "resolved": 11276656
+        }
+      ],
+      "source_sha256": "01bf5785f6351594833eaefc2423a70650bc378e8c607b3a91793d31e81a00c1",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2b40.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2b40",
+      "source_order": 40060
+    },
+    {
+      "entry": 7286240,
+      "method": "006f2de0",
+      "symbol": "?Unknown_Get_Art_6f2de0@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2de0@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "e81347a20f215c149dc9018593677f3b5916ed219f23f9d3d88c611e9a1b37a3",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "d51a02a5611088c032d59dc28f6ea5b27534e99d0911167dc98dbd28c1cf0970",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac117c@@3PAXA",
+          "target": 11276668,
+          "addend": 0,
+          "resolved": 11276668
+        }
+      ],
+      "source_sha256": "bf58dbd2d7e7a8b3e351fc1d6b7680322a5f918ace058b4ee42837dcbeebb826",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2de0.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2de0",
+      "source_order": 40062
+    },
+    {
+      "entry": 7283232,
+      "method": "006f2220",
+      "symbol": "?Unknown_Get_Art_6f2220@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2220@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "cbd56eccfb6c3679018eac4d1985df248012b0c526df2ce753c205edb75b4f53",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "f285b2f418ee3365bd0f080e10933b3ae39a32cfad9a0996debe4a26098e1d75",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1130@@3PAXA",
+          "target": 11276592,
+          "addend": 0,
+          "resolved": 11276592
+        }
+      ],
+      "source_sha256": "0f878e82b0e2caa84f98039cb5e1b1d8fa7bb648e1cb8df46cf4888455f752b1",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2220.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2220",
+      "source_order": 40034
+    },
+    {
+      "entry": 7283264,
+      "method": "006f2240",
+      "symbol": "?Unknown_Get_Art_6f2240@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2240@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "c9803571ade08806432a42cc8394cec30fe9b56a5bac8ed7467a26145495d56e",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "f0e92fadbcf661f4e8bc450f898ace6617c0d4d00877c48ede906288f68f8c9c",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1138@@3PAXA",
+          "target": 11276600,
+          "addend": 0,
+          "resolved": 11276600
+        }
+      ],
+      "source_sha256": "794d048d66bc2452dfcb46ae4c3a4fd7b49fe8c111536cbb98e016fb81afb04e",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2240.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2240",
+      "source_order": 40036
+    },
+    {
+      "entry": 7283776,
+      "method": "006f2440",
+      "symbol": "?Unknown_Get_Art_6f2440@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2440@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "8cc28b601d72ca8b9112d3ad1bf57c8607ced2480f36a551ef5c9afb6cf8004f",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "dd05653ab517ae9f104fafc65d2aa7e20177771397b0309f252e7812b0b8a9d6",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1140@@3PAXA",
+          "target": 11276608,
+          "addend": 0,
+          "resolved": 11276608
+        }
+      ],
+      "source_sha256": "d492c7e86349714d98d83bc09631f1922a7b2a7846bf6f77f76cbd954e101dbf",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2440.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2440",
+      "source_order": 40042
+    },
+    {
+      "entry": 7283808,
+      "method": "006f2460",
+      "symbol": "?Unknown_Get_Art_6f2460@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2460@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "6abf5da06f853ce747e0d921eac65789cade95c65b6ad46539caa4bf3703c93d",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "625442ce4f59c9ea7bf7124d2ae626878f8f1ca33f1bc69a820a43edb499f71c",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1148@@3PAXA",
+          "target": 11276616,
+          "addend": 0,
+          "resolved": 11276616
+        }
+      ],
+      "source_sha256": "c18d3dbe8a7f9e1ba059f5574916c304d9eccd3c08b8cf9705416744c63cc8bc",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2460.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2460",
+      "source_order": 40044
+    },
+    {
+      "entry": 7283840,
+      "method": "006f2480",
+      "symbol": "?Unknown_Get_Art_6f2480@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2480@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "567a7c6064dfe9e87d41cbc6945286415dfc054626bdbfd59443d91002785c30",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "5788151fb1f1b088f92ce701657b15caaea697923fd3977329424ae1cc82805d",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1150@@3PAXA",
+          "target": 11276624,
+          "addend": 0,
+          "resolved": 11276624
+        }
+      ],
+      "source_sha256": "8f060369c85046b73c2105c0a4367fe6b453dfac3aa78949e1687ca03bed3bca",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2480.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2480",
+      "source_order": 40046
+    },
+    {
+      "entry": 7284128,
+      "method": "006f25a0",
+      "symbol": "?Unknown_Get_Art_6f25a0@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f25a0@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "8d87b25a204fe956ed4d80f54f0e3974425382837cd1234adf5f879afe4b5eda",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "6bbde36e70a53c7317f9f8ac37b55903acdaf248c21aaa60a80cab0ef6869b09",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1158@@3PAXA",
+          "target": 11276632,
+          "addend": 0,
+          "resolved": 11276632
+        }
+      ],
+      "source_sha256": "6dc1dfb28cb2e6e7f502566188541828f2b0b6ff8bb533971c31023c538b9d0e",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f25a0.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f25a0",
+      "source_order": 40049
+    },
+    {
+      "entry": 7284752,
+      "method": "006f2810",
+      "symbol": "?Unknown_Get_Art_6f2810@@YA_NXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2810@@YA_NXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "e8922f7aa631e074be569efe45d694f8fc010bccb4a0042d76f219bfd0a50340",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "8f7d027931f7983609c22b6003bb796f9badb2e05163373223b066f2dc611566",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1168@@3_NA",
+          "target": 11276648,
+          "addend": 0,
+          "resolved": 11276648
+        }
+      ],
+      "source_sha256": "a493859dc5f44163e72fb4e2319576702eb8d229bdf760af0d40deaa03e35ff6",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2810.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2810",
+      "source_order": 40054
+    },
+    {
+      "entry": 7285536,
+      "method": "006f2b20",
+      "symbol": "?Unknown_Get_Art_6f2b20@@YA_NXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2b20@@YA_NXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "8539d8521cf7a0d97324ab14d7b1fab8b922f9c5038efe9c25e2a75564c1041b",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "782c1767b9c834f53580d0a667ba8149973946ed19f4e10bda72df88941ccb0d",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1174@@3_NA",
+          "target": 11276660,
+          "addend": 0,
+          "resolved": 11276660
+        }
+      ],
+      "source_sha256": "cdf7c6796a789058c70a95db482de28cfcf801ea83e1082551881ec7750a2c3e",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2b20.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2b20",
+      "source_order": 40058
+    },
+    {
+      "entry": 7285552,
+      "method": "006f2b30",
+      "symbol": "?Unknown_Get_Art_6f2b30@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2b30@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "e75134b20c0167678125700b4edc177cdc3b1653ffd454c55d3be1718cf2cec2",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "1158cd0d1e0c801918753782fab72c97dc6225e765f97e00a21af08613f70950",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac116c@@3PAXA",
+          "target": 11276652,
+          "addend": 0,
+          "resolved": 11276652
+        }
+      ],
+      "source_sha256": "fed25b931bc1c477ad9cf2b504551d02df10d95035f574bdda849bfe62f08e07",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2b30.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2b30",
+      "source_order": 40059
+    },
+    {
+      "entry": 7286224,
+      "method": "006f2dd0",
+      "symbol": "?Unknown_Get_Art_6f2dd0@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2dd0@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "c84f3b215a870ae9bc23758847fd10a4e02d85a71064a08927839f642b9f0b81",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "43c0a7bdeb40ed9ba74c79dcd8651802ad47b5e2e1f8f33ace93a3ec5ee701a8",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1178@@3PAXA",
+          "target": 11276664,
+          "addend": 0,
+          "resolved": 11276664
+        }
+      ],
+      "source_sha256": "e322f2fcfe0ef53fdd699aa806395d47e73f37824003e4db5245d0340fe26989",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2dd0.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2dd0",
+      "source_order": 40061
+    },
+    {
+      "entry": 7284768,
+      "method": "006f2820",
+      "symbol": "?Unknown_Get_Art_6f2820@@YAPAXXZ",
+      "symbol_prefix": "?Unknown_Get_Art_6f2820@@YAPAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 6,
+      "body_sha256": "490a21b5136340f68d6d59ff8c3be952d70ee33703d4a00e1a8e47a3bdd3e033",
+      "padding_bytes": 10,
+      "full_extent_bytes": 16,
+      "full_extent_sha256": "d535c2cb6d9067f88cd86395bfc9632c47639f331053034dbacd868e6978430b",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1160@@3PAXA",
+          "target": 11276640,
+          "addend": 0,
+          "resolved": 11276640
+        }
+      ],
+      "source_sha256": "477b639237e475f673509b81f8392361dd61e4447dda3c2564f20f15e1181f3e",
+      "source": "src/recovered/unowned/Unknown_Get_Art_006f2820.cpp",
+      "population": "population-1241",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Get_Art_006f2820",
+      "source_order": 40055
+    },
+    {
+      "entry": 7284496,
+      "method": "006f2710",
+      "symbol": "?Unknown_Load_Art_Once_006F2710@@YIXH@Z",
+      "symbol_prefix": "?Unknown_Load_Art_Once_006F2710@@YIXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 57,
+      "body_sha256": "fed3c1b6f84974d65875a46046a4b9a1a82818edb0f6fccb098d33d01c1b6ba8",
+      "padding_bytes": 7,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "4b3e5975dd31cbb2f139a91e78910b0dfbb24a29667e137533dde9b430de993e",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1168@@3_NA",
+          "target": 11276648,
+          "addend": 0,
+          "resolved": 11276648
+        },
+        {
+          "offset": 13,
+          "kind": 20,
+          "symbol": "?Unknown_Load_Art_Flagged_006F2840@@YIXH@Z",
+          "target": 7284800,
+          "addend": 0,
+          "resolved": 287
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8708@@3QBDB",
+          "target": 8357640,
+          "addend": 0,
+          "resolved": 8357640
+        },
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "?unknown_name_7f870c@@3QBDB",
+          "target": 8357644,
+          "addend": 0,
+          "resolved": 8357644
+        },
+        {
+          "offset": 34,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1164@@3PAVUnknownArtData_006f2390@@A",
+          "target": 11276644,
+          "addend": 0,
+          "resolved": 11276644
+        },
+        {
+          "offset": 39,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1160@@3PAXA",
+          "target": 11276640,
+          "addend": 0,
+          "resolved": 11276640
+        },
+        {
+          "offset": 44,
+          "kind": 20,
+          "symbol": "?unknown_load_art_6f1fa0@@YIXPBDPAPAX1@Z",
+          "target": 7282592,
+          "addend": 0,
+          "resolved": 4294965344
+        },
+        {
+          "offset": 50,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1168@@3_NA",
+          "target": 11276648,
+          "addend": 0,
+          "resolved": 11276648
+        }
+      ],
+      "source_sha256": "72c9fa1776336d9fdd33c4fed438295a8e217491ebe58b04d3f8ef42275e8351",
+      "source": "src/recovered/unowned/Unknown_Load_Art_Once_006f2710.cpp",
+      "population": "population-1241",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Load_Art_Once_006f2710",
+      "source_order": 40052
+    },
+    {
+      "entry": 7284560,
+      "method": "006f2750",
+      "symbol": "?Unknown_Free_Art_Flagged_006F2750@@YAXXZ",
+      "symbol_prefix": "?Unknown_Free_Art_Flagged_006F2750@@YAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 177,
+      "body_sha256": "4fcf6c1d6278a1ac7c8f5b9c19c502d7378585ebf5037a4debc20469eaf7bda8",
+      "padding_bytes": 15,
+      "full_extent_bytes": 192,
+      "full_extent_sha256": "28d06bff0e4c6831254c871229decd92fd75f5efc327c9be13b88c786c133c6a",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1168@@3_NA",
+          "target": 11276648,
+          "addend": 0,
+          "resolved": 11276648
+        },
+        {
+          "offset": 17,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1214@@3_NA",
+          "target": 11276820,
+          "addend": 0,
+          "resolved": 11276820
+        },
+        {
+          "offset": 23,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1168@@3_NA",
+          "target": 11276648,
+          "addend": 0,
+          "resolved": 11276648
+        },
+        {
+          "offset": 32,
+          "kind": 6,
+          "symbol": "?unknown_art_ac110c@@3PAXA",
+          "target": 11276556,
+          "addend": 0,
+          "resolved": 11276556
+        },
+        {
+          "offset": 38,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 587201
+        },
+        {
+          "offset": 47,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1214@@3_NA",
+          "target": 11276820,
+          "addend": 0,
+          "resolved": 11276820
+        },
+        {
+          "offset": 52,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1215@@3_NA",
+          "target": 11276821,
+          "addend": 0,
+          "resolved": 11276821
+        },
+        {
+          "offset": 58,
+          "kind": 6,
+          "symbol": "?unknown_art_ac110c@@3PAXA",
+          "target": 11276556,
+          "addend": 0,
+          "resolved": 11276556
+        },
+        {
+          "offset": 68,
+          "kind": 6,
+          "symbol": "?unknown_art_ac10f0@@3PAXA",
+          "target": 11276528,
+          "addend": 0,
+          "resolved": 11276528
+        },
+        {
+          "offset": 74,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 587165
+        },
+        {
+          "offset": 83,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1215@@3_NA",
+          "target": 11276821,
+          "addend": 0,
+          "resolved": 11276821
+        },
+        {
+          "offset": 88,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1216@@3_NA",
+          "target": 11276822,
+          "addend": 0,
+          "resolved": 11276822
+        },
+        {
+          "offset": 94,
+          "kind": 6,
+          "symbol": "?unknown_art_ac10f0@@3PAXA",
+          "target": 11276528,
+          "addend": 0,
+          "resolved": 11276528
+        },
+        {
+          "offset": 104,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1108@@3PAXA",
+          "target": 11276552,
+          "addend": 0,
+          "resolved": 11276552
+        },
+        {
+          "offset": 110,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 587129
+        },
+        {
+          "offset": 119,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1216@@3_NA",
+          "target": 11276822,
+          "addend": 0,
+          "resolved": 11276822
+        },
+        {
+          "offset": 124,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1160@@3PAXA",
+          "target": 11276640,
+          "addend": 0,
+          "resolved": 11276640
+        },
+        {
+          "offset": 130,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1108@@3PAXA",
+          "target": 11276552,
+          "addend": 0,
+          "resolved": 11276552
+        },
+        {
+          "offset": 140,
+          "kind": 20,
+          "symbol": "??3@YAXPAX@Z",
+          "target": 7871803,
+          "addend": 0,
+          "resolved": 587099
+        },
+        {
+          "offset": 149,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1160@@3PAXA",
+          "target": 11276640,
+          "addend": 0,
+          "resolved": 11276640
+        },
+        {
+          "offset": 155,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1164@@3PAVUnknownArtData_006f2390@@A",
+          "target": 11276644,
+          "addend": 0,
+          "resolved": 11276644
+        },
+        {
+          "offset": 171,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1164@@3PAVUnknownArtData_006f2390@@A",
+          "target": 11276644,
+          "addend": 0,
+          "resolved": 11276644
+        }
+      ],
+      "source_sha256": "c090401d1a8e7aa990242facad5ee5557593fab6cfe1a5d74199c80db780a901",
+      "source": "src/recovered/unowned/Unknown_Free_Art_Flagged_006f2750.cpp",
+      "population": "population-1241",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Free_Art_Flagged_006f2750",
+      "source_order": 40053
+    },
+    {
+      "entry": 7284800,
+      "method": "006f2840",
+      "symbol": "?Unknown_Load_Art_Flagged_006F2840@@YIXH@Z",
+      "symbol_prefix": "?Unknown_Load_Art_Flagged_006F2840@@YIXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 273,
+      "body_sha256": "3775d0707fd688df946f3d8b1397f391dc27a31c947c48cc6e88d563f9364ce3",
+      "padding_bytes": 15,
+      "full_extent_bytes": 288,
+      "full_extent_sha256": "5a09a21c4dab9ff8187c134020951340111af7bec690299b63625dcf9eae6104",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?unknown_value_8523e0@@3HA",
+          "target": 8725472,
+          "addend": 0,
+          "resolved": 8725472
+        },
+        {
+          "offset": 19,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1214@@3_NA",
+          "target": 11276820,
+          "addend": 0,
+          "resolved": 11276820
+        },
+        {
+          "offset": 27,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8750@@3QBDB",
+          "target": 8357712,
+          "addend": 0,
+          "resolved": 8357712
+        },
+        {
+          "offset": 32,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487692
+        },
+        {
+          "offset": 38,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8758@@3QBDB",
+          "target": 8357720,
+          "addend": 0,
+          "resolved": 8357720
+        },
+        {
+          "offset": 43,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1215@@3_NA",
+          "target": 11276821,
+          "addend": 0,
+          "resolved": 11276821
+        },
+        {
+          "offset": 48,
+          "kind": 6,
+          "symbol": "?unknown_art_ac110c@@3PAXA",
+          "target": 11276556,
+          "addend": 0,
+          "resolved": 11276556
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487671
+        },
+        {
+          "offset": 59,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8760@@3QBDB",
+          "target": 8357728,
+          "addend": 0,
+          "resolved": 8357728
+        },
+        {
+          "offset": 64,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1216@@3_NA",
+          "target": 11276822,
+          "addend": 0,
+          "resolved": 11276822
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "?unknown_art_ac10f0@@3PAXA",
+          "target": 11276528,
+          "addend": 0,
+          "resolved": 11276528
+        },
+        {
+          "offset": 74,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487650
+        },
+        {
+          "offset": 79,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1108@@3PAXA",
+          "target": 11276552,
+          "addend": 0,
+          "resolved": 11276552
+        },
+        {
+          "offset": 86,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8754@@3QBDB",
+          "target": 8357716,
+          "addend": 0,
+          "resolved": 8357716
+        },
+        {
+          "offset": 91,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487633
+        },
+        {
+          "offset": 97,
+          "kind": 6,
+          "symbol": "?unknown_name_7f875c@@3QBDB",
+          "target": 8357724,
+          "addend": 0,
+          "resolved": 8357724
+        },
+        {
+          "offset": 102,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1215@@3_NA",
+          "target": 11276821,
+          "addend": 0,
+          "resolved": 11276821
+        },
+        {
+          "offset": 107,
+          "kind": 6,
+          "symbol": "?unknown_art_ac110c@@3PAXA",
+          "target": 11276556,
+          "addend": 0,
+          "resolved": 11276556
+        },
+        {
+          "offset": 112,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487612
+        },
+        {
+          "offset": 118,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8764@@3QBDB",
+          "target": 8357732,
+          "addend": 0,
+          "resolved": 8357732
+        },
+        {
+          "offset": 123,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1216@@3_NA",
+          "target": 11276822,
+          "addend": 0,
+          "resolved": 11276822
+        },
+        {
+          "offset": 128,
+          "kind": 6,
+          "symbol": "?unknown_art_ac10f0@@3PAXA",
+          "target": 11276528,
+          "addend": 0,
+          "resolved": 11276528
+        },
+        {
+          "offset": 133,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487591
+        },
+        {
+          "offset": 138,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1108@@3PAXA",
+          "target": 11276552,
+          "addend": 0,
+          "resolved": 11276552
+        },
+        {
+          "offset": 149,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1214@@3_NA",
+          "target": 11276820,
+          "addend": 0,
+          "resolved": 11276820
+        },
+        {
+          "offset": 157,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8768@@3QBDB",
+          "target": 8357736,
+          "addend": 0,
+          "resolved": 8357736
+        },
+        {
+          "offset": 162,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487562
+        },
+        {
+          "offset": 168,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8770@@3QBDB",
+          "target": 8357744,
+          "addend": 0,
+          "resolved": 8357744
+        },
+        {
+          "offset": 173,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1215@@3_NA",
+          "target": 11276821,
+          "addend": 0,
+          "resolved": 11276821
+        },
+        {
+          "offset": 178,
+          "kind": 6,
+          "symbol": "?unknown_art_ac110c@@3PAXA",
+          "target": 11276556,
+          "addend": 0,
+          "resolved": 11276556
+        },
+        {
+          "offset": 183,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487541
+        },
+        {
+          "offset": 189,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8778@@3QBDB",
+          "target": 8357752,
+          "addend": 0,
+          "resolved": 8357752
+        },
+        {
+          "offset": 194,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1216@@3_NA",
+          "target": 11276822,
+          "addend": 0,
+          "resolved": 11276822
+        },
+        {
+          "offset": 199,
+          "kind": 6,
+          "symbol": "?unknown_art_ac10f0@@3PAXA",
+          "target": 11276528,
+          "addend": 0,
+          "resolved": 11276528
+        },
+        {
+          "offset": 204,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487520
+        },
+        {
+          "offset": 209,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1108@@3PAXA",
+          "target": 11276552,
+          "addend": 0,
+          "resolved": 11276552
+        },
+        {
+          "offset": 216,
+          "kind": 6,
+          "symbol": "?unknown_name_7f876c@@3QBDB",
+          "target": 8357740,
+          "addend": 0,
+          "resolved": 8357740
+        },
+        {
+          "offset": 221,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487503
+        },
+        {
+          "offset": 227,
+          "kind": 6,
+          "symbol": "?unknown_name_7f8774@@3QBDB",
+          "target": 8357748,
+          "addend": 0,
+          "resolved": 8357748
+        },
+        {
+          "offset": 232,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1215@@3_NA",
+          "target": 11276821,
+          "addend": 0,
+          "resolved": 11276821
+        },
+        {
+          "offset": 237,
+          "kind": 6,
+          "symbol": "?unknown_art_ac110c@@3PAXA",
+          "target": 11276556,
+          "addend": 0,
+          "resolved": 11276556
+        },
+        {
+          "offset": 242,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487482
+        },
+        {
+          "offset": 248,
+          "kind": 6,
+          "symbol": "?unknown_name_7f877c@@3QBDB",
+          "target": 8357756,
+          "addend": 0,
+          "resolved": 8357756
+        },
+        {
+          "offset": 253,
+          "kind": 6,
+          "symbol": "?unknown_flag_ac1216@@3_NA",
+          "target": 11276822,
+          "addend": 0,
+          "resolved": 11276822
+        },
+        {
+          "offset": 258,
+          "kind": 6,
+          "symbol": "?unknown_art_ac10f0@@3PAXA",
+          "target": 11276528,
+          "addend": 0,
+          "resolved": 11276528
+        },
+        {
+          "offset": 263,
+          "kind": 20,
+          "symbol": "?Unknown_00495270@@YIPAXPBDPA_N@Z",
+          "target": 4805232,
+          "addend": 0,
+          "resolved": 4292487461
+        },
+        {
+          "offset": 268,
+          "kind": 6,
+          "symbol": "?unknown_art_ac1108@@3PAXA",
+          "target": 11276552,
+          "addend": 0,
+          "resolved": 11276552
+        }
+      ],
+      "source_sha256": "e1507bd733a8b2a9bc6222aee07dc990d055c6bcee7aa5c4fcae3e9962724e39",
+      "source": "src/recovered/unowned/Unknown_Load_Art_Flagged_006f2840.cpp",
+      "population": "population-1241",
+      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Unknown_Load_Art_Flagged_006f2840",
+      "source_order": 40057
+    }
+  ]
+}

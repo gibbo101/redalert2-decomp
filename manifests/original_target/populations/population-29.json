@@ -1,0 +1,526 @@
+{
+  "id": "population-29",
+  "population": {
+    "id": "population-29",
+    "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps_sha256": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
+    "historical_population_sha256": "b50302f70f0f200e2a38d62621f9a30d7eb5ef5f8a5e0aaaf9c22f4202979990",
+    "historical_acceptance_sha256": "e7087e7b58fdb230228881d359649ee617b0ab77eb7e1b1618462ee28da6a444"
+  },
+  "references": {
+    "_base_dispatch_0046ce20": 7985620,
+    "_derived_dispatch_0046ce20": 7985812,
+    "_clear_storage_slot_0046ce20": 7985632,
+    "_allocate_words_0046ce20": 7872535,
+    "_base_dispatch_004f6f30": 8007396,
+    "_derived_dispatch_004f6f30": 8007660,
+    "_clear_storage_slot_004f6f30": 8007408,
+    "_allocate_words_004f6f30": 7872535,
+    "_base_dispatch_004fb4a0": 8007960,
+    "_derived_dispatch_004fb4a0": 8008056,
+    "_clear_storage_slot_004fb4a0": 8007972,
+    "_allocate_words_004fb4a0": 7872535,
+    "_base_dispatch_004fb530": 8007992,
+    "_derived_dispatch_004fb530": 8008088,
+    "_clear_storage_slot_004fb530": 8008004,
+    "_allocate_words_004fb530": 7872535,
+    "_base_dispatch_005a62d0": 8022212,
+    "_derived_dispatch_005a62d0": 8022244,
+    "_clear_storage_slot_005a62d0": 8022224,
+    "_allocate_words_005a62d0": 7872535,
+    "_base_dispatch_006547b0": 8007432,
+    "_derived_dispatch_006547b0": 8007464,
+    "_clear_storage_slot_006547b0": 8007444,
+    "_allocate_words_006547b0": 7872535,
+    "_base_dispatch_00654840": 8032536,
+    "_derived_dispatch_00654840": 8032644,
+    "_clear_storage_slot_00654840": 8032548,
+    "_allocate_words_00654840": 7872535,
+    "_base_dispatch_006548d0": 8008024,
+    "_derived_dispatch_006548d0": 8008120,
+    "_clear_storage_slot_006548d0": 8008036,
+    "_allocate_words_006548d0": 7872535
+  },
+  "regions": [
+    {
+      "entry": 4640288,
+      "method": "0046ce20",
+      "symbol": "?CopyWordStorage_0046ce20@WordStorage_0046d1f0@@QAEPAV1@ABV1@@Z",
+      "symbol_prefix": "?CopyWordStorage_0046ce20@WordStorage_0046d1f0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "3523c1b8c4534461fe26431bb75af776dfad008fe244da866f727fcffc7dc0d6",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "fa0aeeadee807ae5bd9ef0243d3853387eeae958ac7135347a2a5f700e3155dd",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_base_dispatch_0046ce20",
+          "target": 7985620,
+          "addend": 0,
+          "resolved": 7985620
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "_clear_storage_slot_0046ce20",
+          "target": 7985632,
+          "addend": 0,
+          "resolved": 7985632
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_allocate_words_0046ce20",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 3232188
+        },
+        {
+          "offset": 124,
+          "kind": 6,
+          "symbol": "_derived_dispatch_0046ce20",
+          "target": 7985812,
+          "addend": 0,
+          "resolved": 7985812
+        }
+      ],
+      "source_sha256": "5528ec451078615c3c1cd9a793a5ed4bb213f7aa53bc1426f96aa5c29d2ebaa7",
+      "source": "src/recovered/word_storage/CopyWordStorage_0046ce20.cpp",
+      "source_order": 6781,
+      "population": "population-29",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyWordStorage_0046ce20",
+      "source_quality_family": "word-storage-copy",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 5205808,
+      "method": "004f6f30",
+      "symbol": "?CopyWordStorage_004f6f30@WordStorage_006c03e0@@QAEPAV1@ABV1@@Z",
+      "symbol_prefix": "?CopyWordStorage_004f6f30@WordStorage_006c03e0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "8ec536a26b75087aac88725bedb78d72a32fa296a5ad14ea6869719f5873d4ae",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "2666044c8a2749ba9431a538a9a127a31a4582580bd45b6beb3c8af2569165c2",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_base_dispatch_004f6f30",
+          "target": 8007396,
+          "addend": 0,
+          "resolved": 8007396
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "_clear_storage_slot_004f6f30",
+          "target": 8007408,
+          "addend": 0,
+          "resolved": 8007408
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_allocate_words_004f6f30",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2666668
+        },
+        {
+          "offset": 124,
+          "kind": 6,
+          "symbol": "_derived_dispatch_004f6f30",
+          "target": 8007660,
+          "addend": 0,
+          "resolved": 8007660
+        }
+      ],
+      "source_sha256": "7485597252af12225993c674132eb71ec961293688560a08ccb0e22dc8be2112",
+      "source": "src/recovered/word_storage/CopyWordStorage_004f6f30.cpp",
+      "source_order": 6782,
+      "population": "population-29",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyWordStorage_004f6f30",
+      "source_quality_family": "word-storage-copy",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 5223584,
+      "method": "004fb4a0",
+      "symbol": "?CopyWordStorage_004fb4a0@WordStorage_004faa90@@QAEPAV1@ABV1@@Z",
+      "symbol_prefix": "?CopyWordStorage_004fb4a0@WordStorage_004faa90@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "1109eedaf3d6288f0ba99d44b59760c3c568ff288ac7bbc8cddebc73cc1fc2c7",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "13a8a0ae63f1cea33d0930fcfbb46d0bb80dd72c2e03c379898d98a0095da77d",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_base_dispatch_004fb4a0",
+          "target": 8007960,
+          "addend": 0,
+          "resolved": 8007960
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "_clear_storage_slot_004fb4a0",
+          "target": 8007972,
+          "addend": 0,
+          "resolved": 8007972
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_allocate_words_004fb4a0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2648892
+        },
+        {
+          "offset": 124,
+          "kind": 6,
+          "symbol": "_derived_dispatch_004fb4a0",
+          "target": 8008056,
+          "addend": 0,
+          "resolved": 8008056
+        }
+      ],
+      "source_sha256": "bee21b03c8ffbc0b06081a34cc0f9af408c554f44245bef7ea4d1def61a77b7e",
+      "source": "src/recovered/word_storage/CopyWordStorage_004fb4a0.cpp",
+      "source_order": 6784,
+      "population": "population-29",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyWordStorage_004fb4a0",
+      "source_quality_family": "word-storage-copy",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 5223728,
+      "method": "004fb530",
+      "symbol": "?CopyWordStorage_004fb530@WordStorage_004fae60@@QAEPAV1@ABV1@@Z",
+      "symbol_prefix": "?CopyWordStorage_004fb530@WordStorage_004fae60@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "3ed1cf27c7a157be7bc1bdfdef2c50f8c78853cc8c482a4daa205db1b0163d3d",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "258afabfb60ce91d0b411731a5435d4d16b1d9f148af36238213c265b0ea59ad",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_base_dispatch_004fb530",
+          "target": 8007992,
+          "addend": 0,
+          "resolved": 8007992
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "_clear_storage_slot_004fb530",
+          "target": 8008004,
+          "addend": 0,
+          "resolved": 8008004
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_allocate_words_004fb530",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2648748
+        },
+        {
+          "offset": 124,
+          "kind": 6,
+          "symbol": "_derived_dispatch_004fb530",
+          "target": 8008088,
+          "addend": 0,
+          "resolved": 8008088
+        }
+      ],
+      "source_sha256": "08248f62399b2f773a8d25001c79dd6f9e074c84d081420e2025ba86238d5ad9",
+      "source": "src/recovered/word_storage/CopyWordStorage_004fb530.cpp",
+      "source_order": 6785,
+      "population": "population-29",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyWordStorage_004fb530",
+      "source_quality_family": "word-storage-copy",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 5923536,
+      "method": "005a62d0",
+      "symbol": "?CopyWordStorage_005a62d0@WordStorageCopy_005a62d0@@QAEPAV1@ABV1@@Z",
+      "symbol_prefix": "?CopyWordStorage_005a62d0@WordStorageCopy_005a62d0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "e833669222b4eec6036efc4e6d0c5361bb37b54cac0e5e333a25c3bd07a2a366",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "705dea84094420344eae3be16744ba982dad372f13378a1f9eaa3731de197362",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_base_dispatch_005a62d0",
+          "target": 8022212,
+          "addend": 0,
+          "resolved": 8022212
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "_clear_storage_slot_005a62d0",
+          "target": 8022224,
+          "addend": 0,
+          "resolved": 8022224
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_allocate_words_005a62d0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1948940
+        },
+        {
+          "offset": 124,
+          "kind": 6,
+          "symbol": "_derived_dispatch_005a62d0",
+          "target": 8022244,
+          "addend": 0,
+          "resolved": 8022244
+        }
+      ],
+      "source_sha256": "c64c415d7c3127e9837d69578dd673b403ab6948c84c02d22c9f297db28bf185",
+      "source": "src/recovered/word_storage/CopyWordStorage_005a62d0.cpp",
+      "source_order": 6788,
+      "population": "population-29",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyWordStorage_005a62d0",
+      "source_quality_family": "word-storage-copy",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 6637488,
+      "method": "006547b0",
+      "symbol": "?CopyWordStorage_006547b0@WordStorage_0058e170@@QAEPAV1@ABV1@@Z",
+      "symbol_prefix": "?CopyWordStorage_006547b0@WordStorage_0058e170@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "ab3783778bf4394c35a814eeeb55003275fcfb334a601ea5968cd295bac7f0de",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "f01adcd5769e22ca36c1fea4f65b240e95e550835f7131769805bfee69902fff",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_base_dispatch_006547b0",
+          "target": 8007432,
+          "addend": 0,
+          "resolved": 8007432
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "_clear_storage_slot_006547b0",
+          "target": 8007444,
+          "addend": 0,
+          "resolved": 8007444
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_allocate_words_006547b0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1234988
+        },
+        {
+          "offset": 124,
+          "kind": 6,
+          "symbol": "_derived_dispatch_006547b0",
+          "target": 8007464,
+          "addend": 0,
+          "resolved": 8007464
+        }
+      ],
+      "source_sha256": "ffa04af4c7d8ebd9ed7bd819a7b4c9e886538114482689b245fc4a2f41cef7f8",
+      "source": "src/recovered/word_storage/CopyWordStorage_006547b0.cpp",
+      "source_order": 6793,
+      "population": "population-29",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyWordStorage_006547b0",
+      "source_quality_family": "word-storage-copy",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 6637632,
+      "method": "00654840",
+      "symbol": "?CopyWordStorage_00654840@WordStorage_00653340@@QAEPAV1@ABV1@@Z",
+      "symbol_prefix": "?CopyWordStorage_00654840@WordStorage_00653340@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "99f24fb27cf6cb051395ea2f7dc1c079e1248d33b83804587c6f32e55b04f43e",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "f500989820a40e958d7f8b29ef57280ec45199c95c7837bddbdecf46d308ec0e",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_base_dispatch_00654840",
+          "target": 8032536,
+          "addend": 0,
+          "resolved": 8032536
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "_clear_storage_slot_00654840",
+          "target": 8032548,
+          "addend": 0,
+          "resolved": 8032548
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_allocate_words_00654840",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1234844
+        },
+        {
+          "offset": 124,
+          "kind": 6,
+          "symbol": "_derived_dispatch_00654840",
+          "target": 8032644,
+          "addend": 0,
+          "resolved": 8032644
+        }
+      ],
+      "source_sha256": "899917a1c92f07093650b7e3cf06d906f09f6d6659cfcd0835549b4ff319275c",
+      "source": "src/recovered/word_storage/CopyWordStorage_00654840.cpp",
+      "source_order": 6794,
+      "population": "population-29",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyWordStorage_00654840",
+      "source_quality_family": "word-storage-copy",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 6637776,
+      "method": "006548d0",
+      "symbol": "?CopyWordStorage_006548d0@WordStorage_004fb230@@QAEPAV1@ABV1@@Z",
+      "symbol_prefix": "?CopyWordStorage_006548d0@WordStorage_004fb230@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 136,
+      "body_sha256": "410355e704ad22c9268cd4423748675dad6f123dee69fe0063a3a5a720800229",
+      "padding_bytes": 8,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "2304d75bc20429d173bc4f2f7a979b7afda6da2f3e6983a73345e208af04dd6b",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_base_dispatch_006548d0",
+          "target": 8008024,
+          "addend": 0,
+          "resolved": 8008024
+        },
+        {
+          "offset": 36,
+          "kind": 6,
+          "symbol": "_clear_storage_slot_006548d0",
+          "target": 8008036,
+          "addend": 0,
+          "resolved": 8008036
+        },
+        {
+          "offset": 55,
+          "kind": 20,
+          "symbol": "_allocate_words_006548d0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1234700
+        },
+        {
+          "offset": 124,
+          "kind": 6,
+          "symbol": "_derived_dispatch_006548d0",
+          "target": 8008120,
+          "addend": 0,
+          "resolved": 8008120
+        }
+      ],
+      "source_sha256": "9f9068f04fd82f7b11e34b99a118496a36941ae5f4c932d0cdfee4b73393f14a",
+      "source": "src/recovered/word_storage/CopyWordStorage_006548d0.cpp",
+      "source_order": 6795,
+      "population": "population-29",
+      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "CopyWordStorage_006548d0",
+      "source_quality_family": "word-storage-copy",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    }
+  ]
+}

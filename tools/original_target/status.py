@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Generate the numeric part of docs/STATUS.md from the canonical manifest.
 
-Coverage comes from manifests/original_target.json; the .text size from the
+Coverage comes from the catalog (manifests/original_target/); the .text size from the
 supplied executable's section header. Throughput history comes from every
-commit that changed the manifest, so the matched-bytes-per-hour trend is
+commit that changed the catalog (or the former monolithic
+manifests/original_target.json), so the matched-bytes-per-hour trend is
 measured, not narrated. The block between the generated markers in
 docs/STATUS.md is replaced; everything else in that file is hand-written.
 """
@@ -15,8 +16,9 @@ from pathlib import Path
 import subprocess
 import sys
 
+import catalog_io
+
 REPOSITORY = Path(__file__).resolve().parents[2]
-MANIFEST = 'manifests/original_target.json'
 BEGIN, END = '<!-- generated:status -->', '<!-- /generated:status -->'
 
 
@@ -27,15 +29,16 @@ def coverage(catalog):
 
 
 def history(repository=REPOSITORY):
-    log = subprocess.run(['git', 'log', '--reverse', '--format=%h %cI %s', '--', MANIFEST],
+    log = subprocess.run(['git', 'log', '--reverse', '--format=%h %cI %s', '--', catalog_io.LEGACY, catalog_io.SHARDED],
                          cwd=repository, capture_output=True, text=True, check=True).stdout
     rows = []
     for line in log.splitlines():
         commit, stamp, subject = line.split(' ', 2)
-        blob = subprocess.run(['git', 'show', '%s:%s' % (commit, MANIFEST)], cwd=repository,
-                              capture_output=True, check=True).stdout
+        catalog = catalog_io.load_git(repository, commit, references=False)
+        if catalog is None:    # the commit removed the catalog
+            continue
         rows.append(dict(commit=commit, time=datetime.fromisoformat(stamp), subject=subject,
-                         **coverage(json.loads(blob))))
+                         **coverage(catalog)))
     return rows
 
 
@@ -81,7 +84,7 @@ def main():
     parser.add_argument('--text-bytes', type=int, help='override instead of reading the executable')
     parser.add_argument('--write', action='store_true', help='replace the generated block in docs/STATUS.md')
     args = parser.parse_args()
-    catalog = json.loads((REPOSITORY / MANIFEST).read_bytes())
+    catalog = catalog_io.load(catalog_io.locate(REPOSITORY), references=False)
     text = args.text_bytes or text_bytes(json.loads(args.config.read_bytes())['executable'])
     block = render(catalog, text, history())
     if not args.write:

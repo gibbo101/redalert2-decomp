@@ -2,6 +2,7 @@
 """Render bounded review candidates; never modify accepted source or catalogs."""
 import argparse
 import hashlib
+import catalog_io
 import json
 from pathlib import Path
 import time
@@ -49,7 +50,7 @@ def generate(repository, plan_path, template_path, executable, evidence_inputs, 
     require(plan['shared_header']['path'] == 'src/shared/word_storage_layout.hpp', 'Unsupported shared header path')
     header_bytes = header_path.read_bytes()
     require(digest(header_bytes) == plan['shared_header']['sha256'], 'Shared declaration drift')
-    catalog = json.loads((repository / 'manifests/original_target.json').read_bytes())
+    catalog = catalog_io.load(catalog_io.locate(repository), references=False)
     require(catalog['target'] == plan['target'], 'Wrong canonical target')
     current = {r['entry']: r for r in catalog['regions']}
     require(len(current) == len(catalog['regions']), 'Duplicate canonical entries')

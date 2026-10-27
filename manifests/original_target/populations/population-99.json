@@ -1,0 +1,192 @@
+{
+  "id": "population-99",
+  "population": {
+    "id": "population-99",
+    "inventory_sha256": "86391290ff7ef8f2bc2e67fbf16771ef64a347dffc829d414f74a4c672c7c641",
+    "gaps_sha256": "c0072eea1904f77b24439f4ddf9a2f114157635adf80c6ce94612be334897dbf",
+    "historical_population_sha256": "fed2ebfd9c493497ae6e26b8254fb7db856a4546d876add7286dc94ed5f895ef",
+    "historical_acceptance_sha256": "71789186106a677339dfc7dc2269435309cda3e55af2b8f412842d0fbd05ca0c"
+  },
+  "references": {
+    "?Encrypt@BlowfishEngine@@QAEHPBXHPAX@Z": 4412976,
+    "?Decrypt@BlowfishEngine@@QAEHPBXHPAX@Z": 4413024,
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "??0Buffer@@QAE@PAXJ@Z": 4424384,
+    "??0Buffer@@QAE@PADJ@Z": 4424384,
+    "??0Buffer@@QAE@PBXJ@Z": 4424512,
+    "??0Buffer@@QAE@J@Z": 4424576,
+    "??0Buffer@@QAE@ABV0@@Z": 4424624,
+    "??1Buffer@@QAE@XZ": 4424720,
+    "?base@Init_498a50@@": 5536096,
+    "_memmove": 7877264,
+    "??_GStraw@@UAEPAXI@Z": 4844864,
+    "??_7Straw@@6B@": 7989752,
+    "??1Straw@@UAE@XZ": 6926352,
+    "?Get_From@Straw@@UAEXPAV1@@Z": 6926416,
+    "?Get@Straw@@UAEHPAXH@Z": 6926496,
+    "?Get@FileStraw@@UAEHPAXH@Z": 7813280,
+    "??_EStraw@@UAEPAXI@Z": 4844864,
+    "?Get@CacheStraw@@UAEHPAXH@Z": 4802400,
+    "?Get@Wstring@@QBEPBDXZ": 7792368,
+    "?Release@Wstring@@QAEXXZ": 7792176,
+    "?Get@BlowStraw@@UAEHPAXH@Z": 4413504,
+    "?Get@LCWStraw@@UAEHPAXH@Z": 5460864,
+    "?Get@LZOStraw@@UAEHPAXH@Z": 5501008,
+    "?Get@PKStraw@@UAEHPAXH@Z": 6356752,
+    "?Get@RandomStraw@@UAEHPAXH@Z": 6543408,
+    "?Get_From@PKStraw@@UAEXAAVStraw@@@Z": 6357312,
+    "?Get_From@PKStraw@@UAEXPAVStraw@@@Z": 6356640,
+    "??0BlowfishEngine@@QAE@XZ": 4412800,
+    "_CLSID_Blowfish": 8002160,
+    "_IID_IUnknown": 8185360,
+    "_IID_IBlowfish": 8189360,
+    "__imp__CoCreateInstance@20": 7972336,
+    "__imp__OleRun@4": 7972340,
+    "?_com_issue_error@@YGXJ@Z": 7952704,
+    "__imp__CoCreateInstance": 7972336,
+    "__imp__OleRun": 7972340,
+    "??_7BlowPipe@@6B@": 8028576,
+    "??1BlowfishEngine@@QAE@XZ": 4412912,
+    "??_GBlowPipe@@UAEPAXI@Z": 6356336,
+    "??_EBlowPipe@@UAEPAXI@Z": 6356336,
+    "?Decrypt@PKey@@QBEHPBXHPAX@Z": 6354512,
+    "?Encrypt@PKey@@QBEHPBXHPAX@Z": 6354208,
+    "?Submit_Key@BlowfishEngine@@QAEXPBXH@Z": 4412928,
+    "?Key@BlowPipe@@QAEXPBXH@Z": 4413440,
+    "?Key@BlowStraw@@QAEXPBXH@Z": 4413744,
+    "?Key@PKPipe@@QAEXPBVPKey@@@Z": 6355776,
+    "?Key@PKStraw@@QAEXPBVPKey@@@Z": 6356720,
+    "??_7BlowStraw@@6B@": 8021088,
+    "??_EBlowStraw@@": 5856240,
+    "??_GBlowStraw@@": 5856240
+  },
+  "regions": [
+    {
+      "entry": 4413504,
+      "method": "00435840",
+      "symbol": "?Get@BlowStraw@@UAEHPAXH@Z",
+      "symbol_prefix": "?Get@BlowStraw@@UAEHPAXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 227,
+      "body_sha256": "960b07332a3c820504f57ddc464ddf36325810daed5ed99a90290da9fd3005c0",
+      "padding_bytes": 13,
+      "full_extent_bytes": 240,
+      "full_extent_sha256": "eeea6d11ca0679690f2faa102aace48fb5215f7130562384f7fe438498dd5203",
+      "relocations": [
+        {
+          "offset": 39,
+          "kind": 20,
+          "symbol": "?Get@Straw@@UAEHPAXH@Z",
+          "target": 6926496,
+          "addend": 0,
+          "resolved": 2512949
+        },
+        {
+          "offset": 90,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 3463666
+        },
+        {
+          "offset": 136,
+          "kind": 20,
+          "symbol": "?Get@Straw@@UAEHPAXH@Z",
+          "target": 6926496,
+          "addend": 0,
+          "resolved": 2512852
+        },
+        {
+          "offset": 166,
+          "kind": 20,
+          "symbol": "?Decrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+          "target": 4413024,
+          "addend": 0,
+          "resolved": 4294966646
+        },
+        {
+          "offset": 173,
+          "kind": 20,
+          "symbol": "?Encrypt@BlowfishEngine@@QAEHPBXHPAX@Z",
+          "target": 4412976,
+          "addend": 0,
+          "resolved": 4294966591
+        },
+        {
+          "offset": 190,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 3463566
+        }
+      ],
+      "source_sha256": "1f87d52fe5e36f499e5f970beb51de59884d0cb0d6a7b8002375ff8b87f6ccb6",
+      "source": "src/recovered/classes/BlowStraw/BlowStraw_Get_00435840.cpp",
+      "population": "population-99",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BlowStraw_Get_00435840",
+      "source_order": 10612
+    },
+    {
+      "entry": 4413744,
+      "method": "00435930",
+      "symbol": "?Key@BlowStraw@@QAEXPBXH@Z",
+      "symbol_prefix": "?Key@BlowStraw@@QAEXPBXH@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 64,
+      "body_sha256": "69a558edfbf3af0e5e73927d9b8cd706603bc60ebbac4615d9a9b154dc5e10f3",
+      "padding_bytes": 0,
+      "full_extent_bytes": 64,
+      "full_extent_sha256": "69a558edfbf3af0e5e73927d9b8cd706603bc60ebbac4615d9a9b154dc5e10f3",
+      "relocations": [
+        {
+          "offset": 13,
+          "kind": 20,
+          "symbol": "??2@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 3458774
+        },
+        {
+          "offset": 27,
+          "kind": 20,
+          "symbol": "??0BlowfishEngine@@QAE@XZ",
+          "target": 4412800,
+          "addend": 0,
+          "resolved": 4294966321
+        },
+        {
+          "offset": 57,
+          "kind": 20,
+          "symbol": "?Submit_Key@BlowfishEngine@@QAEXPBXH@Z",
+          "target": 4412928,
+          "addend": 0,
+          "resolved": 4294966419
+        }
+      ],
+      "source_sha256": "dfa232fd7ad06b37307f255c33141301d4e2cd5c5f9c8dde54b5a113a5200f1a",
+      "source": "src/recovered/classes/BlowStraw/BlowStraw_Key_00435930.cpp",
+      "population": "population-99",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BlowStraw_Key_00435930",
+      "source_order": 10613
+    }
+  ]
+}

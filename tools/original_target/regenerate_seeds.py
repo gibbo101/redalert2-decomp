@@ -84,8 +84,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--dry-run', action='store_true')
     args = parser.parse_args()
-    catalog_path = REPOSITORY / 'manifests/original_target.json'
-    catalog = catalog_io.loads(catalog_path.read_bytes())
+    catalog_path = catalog_io.locate(REPOSITORY)
+    catalog = catalog_io.load(catalog_path)
     accepted = accepted_sources(catalog)
     # Regenerate each seed from the inventory pass its population was accepted
     # under (matched by functions.jsonl hash), so bounds and exports never drift.

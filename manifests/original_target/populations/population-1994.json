@@ -1,0 +1,708 @@
+{
+  "id": "population-1994",
+  "population": {
+    "id": "population-1994",
+    "inventory_sha256": "7366f56550082f415b7c6e8fe6b702ad4edb7bc120f7941695839f53c9feb111",
+    "gaps_sha256": "acb3b845037eb518afd01d3c211608acf469f2367d5be31cba19136ba8397000",
+    "historical_population_sha256": "b340493e33b5aa84239efbbdfdd5eba3e93f127e8379dde1c29397f05b123e9e",
+    "historical_acceptance_sha256": "44d7464adf355d2e98030c43e3f0996e1d6c32f82b8df6940ed217211b3adf98"
+  },
+  "references": {
+    "__real@8@40078000000000000000": 7972608,
+    "__real@8@40008000000000000000": 7972600,
+    "__CIpow": 7872944,
+    "?unknown_sqrt_4ba410@@YANN@Z": 4957200,
+    "__real@8@4004f000000000000000": 7972632,
+    "__real@8@4005b400000000000000": 7972640,
+    "?unknown_math_4ba520@@YANN@Z": 4957472,
+    "__real@8@3ffe8000000000000000": 7972648,
+    "__ftol": 7860496,
+    "__real@8@3ff78000000000000000": 7972656,
+    "?unknown_math_4ba5b0@@YANN@Z": 4957616,
+    "__real@8@3fff8000000000000000": 7972616,
+    "__real@8@4004b400000000000000": 7972624,
+    "??3@YAXPAX@Z": 7871803,
+    "_atexit": 7874954,
+    "__stricmp": 7872288,
+    "??2@YAPAXI@Z": 7872535,
+    "__strncpy": 7873488,
+    "__DAT_00ab6e88": 11234952,
+    "__strcmp": 7888160,
+    "__strlen": 7903280,
+    "__malloc": 7874096,
+    "___amsg_exit": 7887784,
+    "__DAT_0084ed10": 8711440,
+    "__strdup": 7919638,
+    "?x@?1???A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z@4PAU23@A": 11712044,
+    "?x@?1???A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z@4PAU23@A": 11712048,
+    "__real@8@3ff8a3d70a3d70a3d800": 7980312,
+    "__splitpath": 7882867,
+    "__makepath": 7877104,
+    "__strupr": 7954916,
+    "__DAT_00a40c88": 10751112,
+    "__DAT_00a40c80": 10751104,
+    "__DAT_00a40c84": 10751108,
+    "__DAT_00a70cc4": 10947780,
+    "__DAT_00a70cd0": 10947792,
+    "__DAT_00a70cc0": 10947776,
+    "__chkstk": 7878736,
+    "__strnicmp": 7878672,
+    "__DAT_00ab6ea8": 11234984,
+    "__DAT_00ab6eb0": 11234992,
+    "__DAT_00ac0168": 11272552,
+    "__DAT_00ac0170": 11272560,
+    "__DAT_00a769e8": 10971624,
+    "__real@8@4006ff00000000000000": 8007504,
+    "__real@8@00000000000000000000": 7976464,
+    "__real@8@3ffee666666666666800": 8048680,
+    "__real@8@3fffc90fdaa22168c000": 7976496,
+    "__real@8@c00ca2f83d7b47677800": 7976488,
+    "__real@8@bfff8000000000000000": 7984504,
+    "__real@8@4001a000000000000000": 7979640,
+    "__real@4@00000000000000000000": 7972664,
+    "__wcsicmp": 7955224,
+    "?Fast_Sin@@YAMN@Z": 4957312,
+    "?Fast_Cos@@YAMN@Z": 4957392,
+    "?Fast_Atan2@@YAMNN@Z": 4957696,
+    "?Fast_Atan@@YAMN@Z": 4957616,
+    "?unknown_atan_step_817df8@@3MA": 8486392,
+    "?unknown_atan_table_813df4@@3PAMA": 8470004,
+    "__real@4@3fffc90fdb0000000000": 7999372,
+    "__real@4@bfffc90fdb0000000000": 7999376,
+    "__real@8@4000c90fdaa22168c000": 7983448,
+    "__real@4@4008e100000000000000": 8045352,
+    "__real@4@3ffe8000000000000000": 7986560,
+    "__real@4@3ff78000000000000000": 8030204,
+    "__real@8@4008e100000000000000": 7976456,
+    "__real@4@4001a000000000000000": 8007424,
+    "__real@8@40018000000000000000": 7981504,
+    "__real@8@4005c800000000000000": 7976944,
+    "__real@4@3fffc000000000000000": 7983336,
+    "__alldiv": 7873744,
+    "__allmul": 7872704,
+    "__real@4@3fff8000000000000000": 7976952,
+    "__real@8@3fe08000000200000000": 7979648,
+    "__real@8@3ffc9999999999999800": 8001520,
+    "__real@8@3ffbccccccccccccd000": 7980400,
+    "__real@8@3ff98ef920b8f5082800": 8054496,
+    "__aulldiv": 7873920,
+    "__real@8@3fffc000000000000000": 7984488,
+    "?Fast_Sqrt@@YAMN@Z": 4957200,
+    "__wcsupr": 7958262,
+    "__real@8@40058000000000000000": 8051872,
+    "__real@8@3ffdccccccccccccd000": 7979624,
+    "_?startup@?1??Override_Mouse_Shape@MouseClass@@UAE_NH_N@Z@4_NA": 10948517,
+    "?unknown_sqrt_table_817dfc@@3PAIA": 8486396,
+    "?Fast_Acos@@YAMN@Z": 4957520,
+    "__real@4@c00a8000000000000000": 7999368,
+    "?unknown_acos_table_80bdd4@@3PAMA": 8437204,
+    "?Fast_Asin@@YAMN@Z": 4957568,
+    "__real@8@4000c000000000000000": 7981704,
+    "?Remap_Sine_Table_004ba8b0@@YAXXZ": 4958384,
+    "?unknown_sin_table_801dc4@@3PAMA": 8396228,
+    "?unknown_sine_step_007a0f98@@3NB": 7999384,
+    "?unknown_sin_scale_7d8048@@3MA": 8224840,
+    "?Fast_Sin_Float_004ba920@@YIMM@Z": 4958496,
+    "?unknown_cos_scale_7d804c@@3MA": 8224844,
+    "?unknown_acos_step_007a0fa0@@3NB": 7999392,
+    "?Fast_Acos_Float_004baa30@@YIMM@Z": 4958768,
+    "?unknown_sin_table_80fde4@@3PAMA": 8453604,
+    "__real@4@3ff38000000000000000": 7999408,
+    "__real@8@3ff08001000200040000": 8059176,
+    "__real@8@3ffeccccccccccccd000": 8010288,
+    "___RTDynamicCast": 7879908,
+    "__real@8@3ff9a3d70a3d70a3d800": 8027952,
+    "__real@8@4000a000000000000000": 8027960,
+    "__real@4@4006ff00000000000000": 7975080,
+    "__real@8@4009e100000000000000": 7983424,
+    "__real@8@4007e100000000000000": 7988944,
+    "?x@?1???A?$IndexClass@HPAVCommandClass@@@@QBEABQAVCommandClass@@ABH@Z@4PAV2@A": 11712060,
+    "__real@8@3ffc8000000000000000": 8055960,
+    "__real@8@4002c000000000000000": 8019480,
+    "__real@8@3ffdfae147ae147ae000": 8020048,
+    "__real@8@4001c000000000000000": 8007584,
+    "__real@8@3ffefae147ae147ae000": 8056480,
+    "__real@8@bffcc90fdaa22168c000": 7983248,
+    "__purecall": 4950368,
+    "?unknown_sine_step_007a0f98@@": 7999384,
+    "?unknown_acos_step_007a0fa0@@": 7999392,
+    "?Fast_Cos_Float_004ba970@@YIMM@Z": 4958576,
+    "?Fast_Asin_Float_004baa60@@YIMM@Z": 4958816,
+    "?Remap_Acos_Table_004ba9d0@@YAXXZ": 4958672,
+    "?unknown_sin_scale_7d8048@@": 8224840,
+    "?unknown_cos_scale_7d804c@@": 8224844,
+    "?unknown_sin_table_801dc4@@": 8396228,
+    "?unknown_sin_table_80fde4@@": 8453604,
+    "?unknown_acos_table_80bdd4@@": 8437204,
+    "?Fast_Sin@@": 4957312,
+    "?Fast_Cos@@": 4957392,
+    "__real@8@4008a2f9836e4e441800": 7999360,
+    "?Fast_Sin_4096@@YAMN@Z": 4957472,
+    "?Fast_Sin_4096@@": 4957472
+  },
+  "regions": [
+    {
+      "entry": 4958384,
+      "method": "004ba8b0",
+      "symbol": "?Remap_Sine_Table_004ba8b0@@YAXXZ",
+      "symbol_prefix": "?Remap_Sine_Table_004ba8b0@@YAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 112,
+      "body_sha256": "b53376ff956996c62c87629eaa58aa8f42e3bae18891abe560ca8a41a9f52022",
+      "padding_bytes": 0,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "b53376ff956996c62c87629eaa58aa8f42e3bae18891abe560ca8a41a9f52022",
+      "relocations": [
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_801dc4@@3PAMA",
+          "target": 8396228,
+          "addend": 0,
+          "resolved": 8396228
+        },
+        {
+          "offset": 21,
+          "kind": 6,
+          "symbol": "?unknown_sine_step_007a0f98@@3NB",
+          "target": 7999384,
+          "addend": 0,
+          "resolved": 7999384
+        },
+        {
+          "offset": 27,
+          "kind": 6,
+          "symbol": "?unknown_sin_scale_7d8048@@3MA",
+          "target": 8224840,
+          "addend": 0,
+          "resolved": 8224840
+        },
+        {
+          "offset": 32,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 2902076
+        },
+        {
+          "offset": 82,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_801dc4@@3PAMA",
+          "target": 8396228,
+          "addend": 0,
+          "resolved": 8396228
+        },
+        {
+          "offset": 99,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_801dc4@@3PAMA",
+          "target": 8396228,
+          "addend": 40964,
+          "resolved": 8437192
+        }
+      ],
+      "source_sha256": "144bb64f9c6fe80796d1d6a27fb34e526602d6fdce87c79ce76aa6240d6e0312",
+      "source": "src/recovered/unowned/Remap_Sine_Table_004ba8b0.cpp",
+      "population": "population-1994",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Remap_Sine_Table_004ba8b0",
+      "source_order": 69099
+    },
+    {
+      "entry": 4958496,
+      "method": "004ba920",
+      "symbol": "?Fast_Sin_Float_004ba920@@YIMM@Z",
+      "symbol_prefix": "?Fast_Sin_Float_004ba920@@YIMM@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 77,
+      "body_sha256": "a1bf07d3ada5b2a86e336b5df1996f3dc7cbd91f3d4d6a11319d07225d8e694e",
+      "padding_bytes": 3,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "fe089dc2e45f1bcaf24873be2fdef56d021852c600ee7a31e194fbc6a94476b1",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "?unknown_sin_scale_7d8048@@3MA",
+          "target": 8224840,
+          "addend": 0,
+          "resolved": 8224840
+        },
+        {
+          "offset": 11,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 2901985
+        },
+        {
+          "offset": 60,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_801dc4@@3PAMA",
+          "target": 8396228,
+          "addend": 4,
+          "resolved": 8396232
+        },
+        {
+          "offset": 70,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_801dc4@@3PAMA",
+          "target": 8396228,
+          "addend": 0,
+          "resolved": 8396228
+        }
+      ],
+      "source_sha256": "bc5d7f814d762704c45f973c206f32633d44d4e729db9acccb504fb3dc1c20e8",
+      "source": "src/recovered/unowned/Fast_Sin_Float_004ba920.cpp",
+      "population": "population-1994",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Fast_Sin_Float_004ba920",
+      "source_order": 69100
+    },
+    {
+      "entry": 4958576,
+      "method": "004ba970",
+      "symbol": "?Fast_Cos_Float_004ba970@@YIMM@Z",
+      "symbol_prefix": "?Fast_Cos_Float_004ba970@@YIMM@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 84,
+      "body_sha256": "81aeb6c34531d1bf062745865d26c902934db22c58cc81572f1d357b01981534",
+      "padding_bytes": 12,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "00eedf15230d929f6cea2f9a0ed96a46401345ffe02ca9db4ec31ecc3ed82e30",
+      "relocations": [
+        {
+          "offset": 2,
+          "kind": 6,
+          "symbol": "?unknown_cos_scale_7d804c@@3MA",
+          "target": 8224844,
+          "addend": 0,
+          "resolved": 8224844
+        },
+        {
+          "offset": 11,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 2901905
+        },
+        {
+          "offset": 67,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_801dc4@@3PAMA",
+          "target": 8396228,
+          "addend": 4,
+          "resolved": 8396232
+        },
+        {
+          "offset": 77,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_801dc4@@3PAMA",
+          "target": 8396228,
+          "addend": 0,
+          "resolved": 8396228
+        }
+      ],
+      "source_sha256": "03254d0b39bb49fa28ce751d39f3d3c21ef671c7193b71998292064e903ada86",
+      "source": "src/recovered/unowned/Fast_Cos_Float_004ba970.cpp",
+      "population": "population-1994",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Fast_Cos_Float_004ba970",
+      "source_order": 69101
+    },
+    {
+      "entry": 4958672,
+      "method": "004ba9d0",
+      "symbol": "?Remap_Acos_Table_004ba9d0@@YAXXZ",
+      "symbol_prefix": "?Remap_Acos_Table_004ba9d0@@YAXXZ",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 86,
+      "body_sha256": "c30925aeb18271a24b8c66fda346781e50beea736c149da44500895cc4c6fbbb",
+      "padding_bytes": 10,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "44ddd437d83a64b389b583be0df7435a46a54a354972e5a3b49d8c7dd6501287",
+      "relocations": [
+        {
+          "offset": 11,
+          "kind": 6,
+          "symbol": "?unknown_acos_table_80bdd4@@3PAMA",
+          "target": 8437204,
+          "addend": 0,
+          "resolved": 8437204
+        },
+        {
+          "offset": 21,
+          "kind": 6,
+          "symbol": "?unknown_acos_step_007a0fa0@@3NB",
+          "target": 7999392,
+          "addend": 0,
+          "resolved": 7999392
+        },
+        {
+          "offset": 27,
+          "kind": 6,
+          "symbol": "__real@8@3fff8000000000000000",
+          "target": 7972616,
+          "addend": 0,
+          "resolved": 7972616
+        },
+        {
+          "offset": 33,
+          "kind": 6,
+          "symbol": "__real@4@3fff8000000000000000",
+          "target": 7976952,
+          "addend": 0,
+          "resolved": 7976952
+        },
+        {
+          "offset": 39,
+          "kind": 6,
+          "symbol": "__real@4@c00a8000000000000000",
+          "target": 7999368,
+          "addend": 0,
+          "resolved": 7999368
+        },
+        {
+          "offset": 44,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 2901776
+        },
+        {
+          "offset": 52,
+          "kind": 6,
+          "symbol": "?unknown_acos_table_80bdd4@@3PAMA",
+          "target": 8437204,
+          "addend": 0,
+          "resolved": 8437204
+        },
+        {
+          "offset": 68,
+          "kind": 6,
+          "symbol": "?unknown_acos_table_80bdd4@@3PAMA",
+          "target": 8437204,
+          "addend": 16388,
+          "resolved": 8453592
+        }
+      ],
+      "source_sha256": "c5c3125a25a2c5b18646eaa192db30f99b3928df853485079435dadbc5db275b",
+      "source": "src/recovered/unowned/Remap_Acos_Table_004ba9d0.cpp",
+      "population": "population-1994",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Remap_Acos_Table_004ba9d0",
+      "source_order": 69102
+    },
+    {
+      "entry": 4958768,
+      "method": "004baa30",
+      "symbol": "?Fast_Acos_Float_004baa30@@YIMM@Z",
+      "symbol_prefix": "?Fast_Acos_Float_004baa30@@YIMM@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 36,
+      "body_sha256": "e8fefe5c9ef5ec03a81a1d454df699fcad238cfe167a089f8471b7d58d9331df",
+      "padding_bytes": 12,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "cc6dfe6b69f476ebd5b7f7096d7eb2045a1580eb0d219d77cd15ed7677cfb9d1",
+      "relocations": [
+        {
+          "offset": 6,
+          "kind": 6,
+          "symbol": "__real@4@3fff8000000000000000",
+          "target": 7976952,
+          "addend": 0,
+          "resolved": 7976952
+        },
+        {
+          "offset": 12,
+          "kind": 6,
+          "symbol": "__real@4@c00a8000000000000000",
+          "target": 7999368,
+          "addend": 0,
+          "resolved": 7999368
+        },
+        {
+          "offset": 17,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 2901707
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "?unknown_acos_table_80bdd4@@3PAMA",
+          "target": 8437204,
+          "addend": 0,
+          "resolved": 8437204
+        }
+      ],
+      "source_sha256": "d0d065f6548126d475271250864e50b402b608848717ee95a3b6089afc902be0",
+      "source": "src/recovered/unowned/Fast_Acos_Float_004baa30.cpp",
+      "population": "population-1994",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Fast_Acos_Float_004baa30",
+      "source_order": 69103
+    },
+    {
+      "entry": 4958816,
+      "method": "004baa60",
+      "symbol": "?Fast_Asin_Float_004baa60@@YIMM@Z",
+      "symbol_prefix": "?Fast_Asin_Float_004baa60@@YIMM@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 42,
+      "body_sha256": "e1c7f36755222ccc92cbeea1db5ca7478eabc00f63603af53283f620bfb5eb3e",
+      "padding_bytes": 6,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "de819cd9982c4522bfa494949db4beee5253d3a15e2cc62e02f0700318b4874a",
+      "relocations": [
+        {
+          "offset": 6,
+          "kind": 6,
+          "symbol": "__real@4@3fff8000000000000000",
+          "target": 7976952,
+          "addend": 0,
+          "resolved": 7976952
+        },
+        {
+          "offset": 12,
+          "kind": 6,
+          "symbol": "__real@4@c00a8000000000000000",
+          "target": 7999368,
+          "addend": 0,
+          "resolved": 7999368
+        },
+        {
+          "offset": 17,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 2901659
+        },
+        {
+          "offset": 25,
+          "kind": 6,
+          "symbol": "?unknown_acos_table_80bdd4@@3PAMA",
+          "target": 8437204,
+          "addend": 0,
+          "resolved": 8437204
+        },
+        {
+          "offset": 35,
+          "kind": 6,
+          "symbol": "__real@8@3fffc90fdaa22168c000",
+          "target": 7976496,
+          "addend": 0,
+          "resolved": 7976496
+        }
+      ],
+      "source_sha256": "9a787f4f7ec087b4b8f6465454d00786dd2197b3812d7737e68dd5b4599e80dd",
+      "source": "src/recovered/unowned/Fast_Asin_Float_004baa60.cpp",
+      "population": "population-1994",
+      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Fast_Asin_Float_004baa60",
+      "source_order": 69104
+    },
+    {
+      "entry": 4957312,
+      "method": "004ba480",
+      "symbol": "?Fast_Sin@@YAMN@Z",
+      "symbol_prefix": "?Fast_Sin@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 66,
+      "body_sha256": "489f269a2b2c42c3bc75801a63b32b02ad4385f215237420739ff2302eeb1f3e",
+      "padding_bytes": 14,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "7ea5e8ea01b30e0fd8e9c9bf94c581c13de895b66d64791e978d6aaae4f44e80",
+      "relocations": [
+        {
+          "offset": 6,
+          "kind": 6,
+          "symbol": "?unknown_sin_scale_7d8048@@3MA",
+          "target": 8224840,
+          "addend": 0,
+          "resolved": 8224840
+        },
+        {
+          "offset": 11,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 2903169
+        },
+        {
+          "offset": 61,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_801dc4@@3PAMA",
+          "target": 8396228,
+          "addend": 0,
+          "resolved": 8396228
+        }
+      ],
+      "source_sha256": "bdb64d897af405cbf693cf6eefbdb6b7771e3e6ae5ae69f867a8f10197ae6a1b",
+      "source": "src/recovered/unowned/Fast_Sin_004ba480.cpp",
+      "population": "population-1994",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Fast_Sin_004ba480",
+      "source_order": 69096
+    },
+    {
+      "entry": 4957392,
+      "method": "004ba4d0",
+      "symbol": "?Fast_Cos@@YAMN@Z",
+      "symbol_prefix": "?Fast_Cos@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "4576a28c6539218777ec38d30cecd1dd7f89f8ddf707bcc83243d4865f8ef1d0",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "06e0bfae974730baef953b79dc4562fd0e3d8cd3da45866228295a6787637a32",
+      "relocations": [
+        {
+          "offset": 6,
+          "kind": 6,
+          "symbol": "?unknown_cos_scale_7d804c@@3MA",
+          "target": 8224844,
+          "addend": 0,
+          "resolved": 8224844
+        },
+        {
+          "offset": 11,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 2903089
+        },
+        {
+          "offset": 68,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_801dc4@@3PAMA",
+          "target": 8396228,
+          "addend": 0,
+          "resolved": 8396228
+        }
+      ],
+      "source_sha256": "2151fa8a3bfe8a6d6579a317f7ddb241db5605db0b2b7892c3c07ac826f63770",
+      "source": "src/recovered/unowned/Fast_Cos_004ba4d0.cpp",
+      "population": "population-1994",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Fast_Cos_004ba4d0",
+      "source_order": 69097
+    },
+    {
+      "entry": 4957472,
+      "method": "004ba520",
+      "symbol": "?Fast_Sin_4096@@YAMN@Z",
+      "symbol_prefix": "?Fast_Sin_4096@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 44,
+      "body_sha256": "7d0b17994d192abb8ad1b88aa2f607d3455d201ff6b94fd338fbfbd559290a17",
+      "padding_bytes": 4,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "530c6caee116ae62f468d5f071abebcac8f60a73f569e86921ec06c7f964ad57",
+      "relocations": [
+        {
+          "offset": 6,
+          "kind": 6,
+          "symbol": "__real@8@4008a2f9836e4e441800",
+          "target": 7999360,
+          "addend": 0,
+          "resolved": 7999360
+        },
+        {
+          "offset": 11,
+          "kind": 20,
+          "symbol": "__ftol",
+          "target": 7860496,
+          "addend": 0,
+          "resolved": 2903009
+        },
+        {
+          "offset": 39,
+          "kind": 6,
+          "symbol": "?unknown_sin_table_80fde4@@3PAMA",
+          "target": 8453604,
+          "addend": 0,
+          "resolved": 8453604
+        }
+      ],
+      "source_sha256": "7c4bcab219f194bd02301a4d592f23d831b808d036da9b661b32922ddb175df8",
+      "source": "src/recovered/unowned/Fast_Sin_4096_004ba520.cpp",
+      "population": "population-1994",
+      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "Fast_Sin_4096_004ba520",
+      "source_order": 69098
+    }
+  ]
+}

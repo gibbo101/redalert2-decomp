@@ -169,7 +169,7 @@ def compile_population(manifest_path, output, config, replacing=()):
     population = json.loads(manifest_path.read_bytes())
     require(population['executable_sha256'] == TARGET_SHA256, 'Wrong population target')
     audit = Audit(REPOSITORY, config['executable'])
-    catalog = catalog_io.load(REPOSITORY / 'manifests/original_target.json')
+    catalog = catalog_io.load(catalog_io.locate(REPOSITORY))
     check_population(audit, population, accepted_region_ends(catalog))
     selected_options = trial_options(population)
     headers = validate_headers(REPOSITORY, catalog)

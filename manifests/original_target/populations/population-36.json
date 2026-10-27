@@ -1,0 +1,559 @@
+{
+  "id": "population-36",
+  "population": {
+    "id": "population-36",
+    "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps_sha256": "ec359eab270da70c4dfa8646eda2b3c18b2806927e7f48844c036f4286e6a800",
+    "historical_population_sha256": "80d25da2e7b6e410bde46c26373f63dc808d93a50752775099ea7c9adebe7333",
+    "historical_acceptance_sha256": "8c727b0d1caec12c9704e4a763f38fcfc5aa3f4b4be6c363d4e15de988fe0ffa",
+    "compiler_output_policy": {
+      "path": "manifests/a14_array_extension_compiler_output.json",
+      "sha256": "cd19c946b297fd3ae6e5d468578ee431c5b388d6da90c8399107440ef429b5d1"
+    }
+  },
+  "references": {
+    "_array_extension_dispatch_0042b620": 7980340,
+    "??_U@YAPAXI@Z": 7872535,
+    "_array_extension_dispatch_0042ce60": 7980448,
+    "_array_extension_base_dispatch_0042ce60": 7980512,
+    "_array_extension_dispatch_0042d430": 7980544,
+    "_array_extension_dispatch_004c2520": 7999952,
+    "_array_extension_dispatch_004f8ae0": 8007300,
+    "_array_extension_dispatch_004f8d20": 8007524,
+    "_array_extension_dispatch_0058f260": 8019632,
+    "_array_extension_dispatch_0059ffe0": 8018552,
+    "_array_extension_base_dispatch_0059ffe0": 8018680,
+    "_array_extension_dispatch_006051f0": 8026968,
+    "_array_extension_base_dispatch_006051f0": 8027128,
+    "_array_extension_dispatch_00621fa0": 8029700,
+    "_array_extension_base_dispatch_00621fa0": 7985748,
+    "_array_extension_dispatch_00682580": 8023976,
+    "_array_extension_base_dispatch_00682580": 8024008
+  },
+  "regions": [
+    {
+      "entry": 4372000,
+      "method": "0042b620",
+      "symbol": "??0ArrayStorageExtension_0042b620@@QAE@HPAG@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_0042b620@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 73,
+      "body_sha256": "bdfa57012a3e7fceb9e825d53d455fb6b8817224a223340d4007e2b01eada033",
+      "padding_bytes": 7,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "bc664bcead61e328840f7118013a3067be1dbfcbc2b38ef49e767efe2d6c92b9",
+      "relocations": [
+        {
+          "offset": 26,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_0042b620",
+          "target": 7980340,
+          "addend": 0,
+          "resolved": 7980340
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 3500478
+        }
+      ],
+      "source_sha256": "98af691c37437e6c0223f2a36e0c8d8bcb81f7b88f48ae106197954dea4acbbb",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_0042b620.cpp",
+      "source_order": 6812,
+      "population": "population-36",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_0042b620",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 4378208,
+      "method": "0042ce60",
+      "symbol": "??0ArrayStorageExtension_0042ce60@@QAE@HPAUArrayElementExtension_0042ce60@@@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_0042ce60@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 117,
+      "body_sha256": "e75af03f8f8861318c0113424a0fe6e8e90f8bf9add872b315d9aeb03bdad90c",
+      "padding_bytes": 11,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "7d9dde5afbdd880ccbb3bc7b90b0317500e702ad046b6d85e4fb162ee550731f",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 6,
+          "symbol": "_array_extension_base_dispatch_0042ce60",
+          "target": 7980512,
+          "addend": 0,
+          "resolved": 7980512
+        },
+        {
+          "offset": 63,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 3494260
+        },
+        {
+          "offset": 92,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_0042ce60",
+          "target": 7980448,
+          "addend": 0,
+          "resolved": 7980448
+        }
+      ],
+      "source_sha256": "bc087d6d6616a194bf43c3583183089b23b1bada7b9bbde81b804c552f34c948",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_0042ce60.cpp",
+      "source_order": 6813,
+      "population": "population-36",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_0042ce60",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 4379696,
+      "method": "0042d430",
+      "symbol": "??0ArrayStorageExtension_0042d430@@QAE@HPAUArrayElementExtension_0042d430@@@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_0042d430@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 112,
+      "body_sha256": "cbac07c80ae44cfff586e9f9e2df37a3c19db1a08533b82b43c59c5e8bd50639",
+      "padding_bytes": 0,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "cbac07c80ae44cfff586e9f9e2df37a3c19db1a08533b82b43c59c5e8bd50639",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_0042d430",
+          "target": 7980544,
+          "addend": 0,
+          "resolved": 7980544
+        },
+        {
+          "offset": 66,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 3492769
+        }
+      ],
+      "source_sha256": "fd6d955de891cfb94eec0c2c900a893525bc369287ea4fa6141d273104040e12",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_0042d430.cpp",
+      "source_order": 6814,
+      "population": "population-36",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_0042d430",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 4990240,
+      "method": "004c2520",
+      "symbol": "??0ArrayStorageExtension_004c2520@@QAE@HPAUArrayElementExtension_004c2520@@@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_004c2520@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 144,
+      "body_sha256": "32f15f53f600d0526a7f75d5759c9420cb65fa2bbdd242b4a11da3de1cf81890",
+      "padding_bytes": 0,
+      "full_extent_bytes": 144,
+      "full_extent_sha256": "32f15f53f600d0526a7f75d5759c9420cb65fa2bbdd242b4a11da3de1cf81890",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_004c2520",
+          "target": 7999952,
+          "addend": 0,
+          "resolved": 7999952
+        },
+        {
+          "offset": 88,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2882203
+        }
+      ],
+      "source_sha256": "45b935f1d3e668814ab288a127338875343fe23d70a0ca0a56c1c6721e21fe03",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_004c2520.cpp",
+      "source_order": 6815,
+      "population": "population-36",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_004c2520",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 5212896,
+      "method": "004f8ae0",
+      "symbol": "??0ArrayStorageExtension_004f8ae0@@QAE@HPAUArrayElementExtension_004f8ae0@@@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_004f8ae0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 147,
+      "body_sha256": "fdbfba760b421e7027fd85c1cc25a797e2b5dc8a469e57db8a7353e13ad98f32",
+      "padding_bytes": 13,
+      "full_extent_bytes": 160,
+      "full_extent_sha256": "2af8150151863aea5badde28664dc727fc70b514cdf13f790eccdfe623087c21",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_004f8ae0",
+          "target": 8007300,
+          "addend": 0,
+          "resolved": 8007300
+        },
+        {
+          "offset": 83,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2659552
+        }
+      ],
+      "source_sha256": "f6fbb5493f9333b365d797b1c544198b0a374a3793f5cda00061ee8868b118fb",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_004f8ae0.cpp",
+      "source_order": 6816,
+      "population": "population-36",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_004f8ae0",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 5213472,
+      "method": "004f8d20",
+      "symbol": "??0ArrayStorageExtension_004f8d20@@QAE@HPAE@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_004f8d20@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 71,
+      "body_sha256": "bfd7c01d27b1309f254969d27bdb416a1d5d72d85f2a63e643ea431fd6e06c1c",
+      "padding_bytes": 9,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "6da332cd9ffe6b3c6e356111f99d2fe1af2ec8171b43fd06692b2cb4d336eb23",
+      "relocations": [
+        {
+          "offset": 26,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_004f8d20",
+          "target": 8007524,
+          "addend": 0,
+          "resolved": 8007524
+        },
+        {
+          "offset": 51,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2659008
+        }
+      ],
+      "source_sha256": "a2cb71e3cc47d646a8d68ee9117b1bcff6d0194dcbf4b9cad346ff98720239e1",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_004f8d20.cpp",
+      "source_order": 6817,
+      "population": "population-36",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_004f8d20",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 5829216,
+      "method": "0058f260",
+      "symbol": "??0ArrayStorageExtension_0058f260@@QAE@HPAUArrayElementExtension_0058f260@@@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_0058f260@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 112,
+      "body_sha256": "062d7741440c1f1afa0656e5f9edd291ed5c0a47c7298c41d79787c840ffa83a",
+      "padding_bytes": 0,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "062d7741440c1f1afa0656e5f9edd291ed5c0a47c7298c41d79787c840ffa83a",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_0058f260",
+          "target": 8019632,
+          "addend": 0,
+          "resolved": 8019632
+        },
+        {
+          "offset": 66,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2043249
+        }
+      ],
+      "source_sha256": "ac678306c6bab1e66768c29b5d5eea84568a76f5963072ac5542d3fd85f51721",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_0058f260.cpp",
+      "source_order": 6818,
+      "population": "population-36",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_0058f260",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 5898208,
+      "method": "0059ffe0",
+      "symbol": "??0ArrayStorageExtension_0059ffe0@@QAE@HPAUArrayElementExtension_0059ffe0@@@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_0059ffe0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 117,
+      "body_sha256": "db8343af0a560f745069b97c39bad8f86c0d2a21d5c1d7597210774ddc3a2e10",
+      "padding_bytes": 11,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "b9b4cd52dc4cf3aa963668750619c722be57569c887e85080c1b39802ca22d1b",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 6,
+          "symbol": "_array_extension_base_dispatch_0059ffe0",
+          "target": 8018680,
+          "addend": 0,
+          "resolved": 8018680
+        },
+        {
+          "offset": 63,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1974260
+        },
+        {
+          "offset": 92,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_0059ffe0",
+          "target": 8018552,
+          "addend": 0,
+          "resolved": 8018552
+        }
+      ],
+      "source_sha256": "e0531be8e8cdfddd35cf41c98b3c42e70674505c7d615b67c5ab308f201845ca",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_0059ffe0.cpp",
+      "source_order": 6819,
+      "population": "population-36",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_0059ffe0",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 6312432,
+      "method": "006051f0",
+      "symbol": "??0ArrayStorageExtension_006051f0@@QAE@HPAUArrayElementExtension_006051f0@@@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_006051f0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 148,
+      "body_sha256": "55dd23863d682aed591704258969ef05ff12e9f28f320d24a0b71c2b47116825",
+      "padding_bytes": 12,
+      "full_extent_bytes": 160,
+      "full_extent_sha256": "93bb8e0e7952c14ce61d99f4d7df1ecdb8967f833df3fc409f38e19190dbc6ea",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_array_extension_base_dispatch_006051f0",
+          "target": 8027128,
+          "addend": 0,
+          "resolved": 8027128
+        },
+        {
+          "offset": 77,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1560022
+        },
+        {
+          "offset": 126,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_006051f0",
+          "target": 8026968,
+          "addend": 0,
+          "resolved": 8026968
+        }
+      ],
+      "source_sha256": "c15b0d0f048337e14e57003a3006153de7e183e0c80e657bd03c79cfcc8c80d3",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_006051f0.cpp",
+      "source_order": 6820,
+      "population": "population-36",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_006051f0",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 6430624,
+      "method": "00621fa0",
+      "symbol": "??0ArrayStorageExtension_00621fa0@@QAE@HPAUArrayElementExtension_00621fa0@@@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_00621fa0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 148,
+      "body_sha256": "83ea54142e5646588ad8412411dacf6a6ce027e849fa460404291f76e27ad574",
+      "padding_bytes": 12,
+      "full_extent_bytes": 160,
+      "full_extent_sha256": "68eaa738cc39722870d536d2f07f8c659f0205471dbb7377484c26180477d7ec",
+      "relocations": [
+        {
+          "offset": 28,
+          "kind": 6,
+          "symbol": "_array_extension_base_dispatch_00621fa0",
+          "target": 7985748,
+          "addend": 0,
+          "resolved": 7985748
+        },
+        {
+          "offset": 77,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1441830
+        },
+        {
+          "offset": 126,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_00621fa0",
+          "target": 8029700,
+          "addend": 0,
+          "resolved": 8029700
+        }
+      ],
+      "source_sha256": "6891efe8d288d48697c702d4829606a1894056956013dc35797e92efee468515",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_00621fa0.cpp",
+      "source_order": 6821,
+      "population": "population-36",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_00621fa0",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    },
+    {
+      "entry": 6825344,
+      "method": "00682580",
+      "symbol": "??0ArrayStorageExtension_00682580@@QAE@HPAUArrayElementExtension_00682580@@@Z",
+      "symbol_prefix": "??0ArrayStorageExtension_00682580@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 117,
+      "body_sha256": "9424bd61bba15bcd6c57075dde97fab77a64abe991f3a566aabceb67bc8b94f0",
+      "padding_bytes": 11,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "c4c489e19560affba5a853aa2ad792f3d27c80e9cae334372ab26f931748f32b",
+      "relocations": [
+        {
+          "offset": 30,
+          "kind": 6,
+          "symbol": "_array_extension_base_dispatch_00682580",
+          "target": 8024008,
+          "addend": 0,
+          "resolved": 8024008
+        },
+        {
+          "offset": 63,
+          "kind": 20,
+          "symbol": "??_U@YAPAXI@Z",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1047124
+        },
+        {
+          "offset": 92,
+          "kind": 6,
+          "symbol": "_array_extension_dispatch_00682580",
+          "target": 8023976,
+          "addend": 0,
+          "resolved": 8023976
+        }
+      ],
+      "source_sha256": "8017f9a5099955d9e82cee5a27b1fb5098acd097c96b96c3be5b712400a27759",
+      "source": "src/recovered/containers/ConstructArrayStorageExtension_00682580.cpp",
+      "source_order": 6822,
+      "population": "population-36",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "semantic_name": "ConstructArrayStorageExtension_00682580",
+      "source_quality_family": "element-array-construction",
+      "shared_declaration_header": "src/shared/array_extension_ordinary_views.hpp"
+    }
+  ]
+}

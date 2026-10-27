@@ -87,8 +87,8 @@ def main():
     from verify_manifest import Audit, TARGET_SHA256
     config = json.loads(args.config.read_bytes())
     audit = Audit(REPOSITORY, config['executable'])
-    catalog_path = REPOSITORY / 'manifests/original_target.json'
-    catalog = catalog_io.loads(catalog_path.read_bytes())
+    catalog_path = catalog_io.locate(REPOSITORY)
+    catalog = catalog_io.load(catalog_path)
     accepted = accepted_sources(catalog)
     inventory = Inventory()
     output = args.output.resolve()

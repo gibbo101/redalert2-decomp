@@ -1,0 +1,82 @@
+{
+  "id": "population-110",
+  "population": {
+    "id": "population-110",
+    "inventory_sha256": "15b16dc96b62f50da8f831bdaede8c65f35b236325680578adec9f157bd02dc3",
+    "gaps_sha256": "3b41acf7c78e4b7d4756f71cc15c3e92432cb110987be66b408c30f1193754ee",
+    "historical_population_sha256": "d3cf6f68225e54f268cf6ea576895756c9ef58176a0858acfd74122351c8af81",
+    "historical_acceptance_sha256": "c0a880b54d11bcc0d4c84f3177b54360d0f980b5c613e2b0db47130c1d978fbc"
+  },
+  "references": {
+    "?do_compress@@YIHPBEIPAEPAIPAX@Z": 5498000,
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "?x@?1???A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z@4PAU23@A": 11712048,
+    "?x@?1???A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z@4PAU23@A": 11712044,
+    "?lzo1x_1_compress@@YIHPBEIPAEPAIPAX@Z": 5497888,
+    "?lzo1x_decompress@@YIHPBEIPAEPAIPAX@Z": 5499248
+  },
+  "regions": [
+    {
+      "entry": 5497888,
+      "method": "0053e420",
+      "symbol": "?lzo1x_1_compress@@YIHPBEIPAEPAIPAX@Z",
+      "symbol_prefix": "?lzo1x_1_compress@@YIHPBEIPAEPAIPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 103,
+      "body_sha256": "07eb522b72d82b9cb54f3ff848b6509f890c96eaa57fc216b5ffd2f886365b53",
+      "padding_bytes": 9,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "b169a8dd8e0bd8b0859345dd9efda182d2faea79ae3116cf083c5a1f7e6d881a",
+      "relocations": [
+        {
+          "offset": 71,
+          "kind": 20,
+          "symbol": "?do_compress@@YIHPBEIPAEPAIPAX@Z",
+          "target": 5498000,
+          "addend": 0,
+          "resolved": 37
+        }
+      ],
+      "source_sha256": "ac6228cc8ece8742138f30221340b7fed7e2db01c5e0ddb836a5b97421304237",
+      "source": "src/recovered/library/LZO/lzo1x_1_compress_0053e420.cpp",
+      "population": "population-110",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "lzo1x_1_compress_0053e420",
+      "source_order": 10819
+    },
+    {
+      "entry": 5498000,
+      "method": "0053e490",
+      "symbol": "?do_compress@@YIHPBEIPAEPAIPAX@Z",
+      "symbol_prefix": "?do_compress@@YIHPBEIPAEPAIPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 1237,
+      "body_sha256": "ce98c4178e419b1159c71bf9abf36881501be35989ebeb93981cf80662fc0755",
+      "padding_bytes": 11,
+      "full_extent_bytes": 1248,
+      "full_extent_sha256": "2a53c1677e7a5a96a60711f3ad283297f89752f6eb02d0ec77cb05c179c3d880",
+      "relocations": [],
+      "source_sha256": "53e31a6a9918459f7f963495c26a5e62bb9fb2fd3c58d6435f17e426860392aa",
+      "source": "src/recovered/library/LZO/do_compress_0053e490.cpp",
+      "population": "population-110",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "do_compress_0053e490",
+      "source_order": 10820
+    }
+  ]
+}

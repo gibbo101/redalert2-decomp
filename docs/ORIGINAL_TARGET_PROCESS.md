@@ -56,7 +56,7 @@ and move on. Misses are never closed permanently; anyone may resume one.
 padding from the gap inventory, references bound by name) and run
 `compile_candidates.py`. Its strict audit is the acceptance test. Install exact
 sources under a descriptive path in `src/recovered/` and add the regions to
-`manifests/original_target.json`. No separate reviewer is required for
+the catalog `manifests/original_target/`. No separate reviewer is required for
 source, tool or build changes: the strict audit and the exact whole-file build
 are the checks.
 

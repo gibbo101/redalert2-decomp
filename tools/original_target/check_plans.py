@@ -17,6 +17,7 @@ change that breaks a unit outside the plans is caught before delivery (about
 five minutes more). RA2_CHECK_ROOT, if set, holds the throwaway worktree instead (a short path such as
 C:\ra2\c keeps Windows paths under 260 characters).
 """
+import catalog_io
 import json
 import os
 from pathlib import Path
@@ -96,7 +97,7 @@ def main():
         for _ in range(10):
             copy_tree(REPOSITORY / 'manifests', worktree / 'manifests')
             try:
-                json.loads((worktree / 'manifests/original_target.json').read_bytes())
+                catalog_io.load(catalog_io.locate(worktree), references=False)
                 break
             except ValueError:
                 time.sleep(3)

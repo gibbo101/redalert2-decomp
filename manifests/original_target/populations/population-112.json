@@ -1,0 +1,199 @@
+{
+  "id": "population-112",
+  "population": {
+    "id": "population-112",
+    "inventory_sha256": "7421f2a3f2aa4a66ff9f0015bf009ec97b70038aae54a50d4f59fd257fa66a24",
+    "gaps_sha256": "67d9d4406718bf3c533d557cceade2353d0123126ac228aa4f142bc869e6a8e1",
+    "historical_population_sha256": "9d5bd4d1d893a4a89c11ccb3f935bf9ad3c5a0ba89ba40084ea93e5dd76a6426",
+    "historical_acceptance_sha256": "5f5f8ad30751193ec723b19ada6f4607286d8df6d6ea6f62e7cb3ede5522a328"
+  },
+  "references": {
+    "?Process_Block@SHAEngine@@ABEXPBXAATSHADigest@1@@Z": 6770272,
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "_memmove": 7877264,
+    "?Length@Wstring@@QBEIXZ": 7792544,
+    "?Hash@SHAEngine@@QAEXPBXJ@Z": 6769808,
+    "?Result@SHAEngine@@QBEHPAX@Z": 6769936,
+    "?Process_Partial@SHAEngine@@AAEXAAPBXAAJ@Z": 6769648,
+    "?finish@Entry_0041c250@@": 4308112,
+    "?finish@Entry_004264a0@@": 4345392,
+    "?finish@Entry_0045e0e0@@": 4553408,
+    "?finish@Entry_004650a0@@": 4605152,
+    "?End@Pipe@@": 4639616,
+    "?finish@Entry_004fa350@@": 5214448,
+    "?finish@Entry_0050aed0@@": 5282592,
+    "?End@FilePipe@@UAEHXZ": 7813056,
+    "?finish@Entry_005dcf70@@": 6145440,
+    "?finish@Entry_00620df0@@": 6424064,
+    "?finish@Entry_00621d50@@": 6426912,
+    "?finish@Entry_006883d0@@": 6847904,
+    "?finish@Entry_0069f820@@": 6942720,
+    "?finish@Entry_006b4d20@@": 7030128,
+    "?finish@Entry_006b6fb0@@": 7039056,
+    "?finish@Entry_006bfb10@@": 7072176,
+    "?finish@Entry_006e5a20@@": 7230048,
+    "?finish@Entry_006eecc0@@": 7265968,
+    "?finish@Entry_0070b540@@": 7382528,
+    "?finish@Entry_0070ed80@@": 7397792,
+    "?finish@Entry_00720f30@@": 7471360,
+    "?finish@Entry_00733ea0@@": 7548576
+  },
+  "regions": [
+    {
+      "entry": 6769648,
+      "method": "00674bf0",
+      "symbol": "?Process_Partial@SHAEngine@@AAEXAAPBXAAJ@Z",
+      "symbol_prefix": "?Process_Partial@SHAEngine@@AAEXAAPBXAAJ@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 147,
+      "body_sha256": "2e665fe2694b67b12a3ad5b537b2b2b3da870cefe2f39730823d1f2233e89b2b",
+      "padding_bytes": 13,
+      "full_extent_bytes": 160,
+      "full_extent_sha256": "aaa63508010e0c135ab84a87fd5819d2a63b93e46fc7e96c94562a41ee0f3480",
+      "relocations": [
+        {
+          "offset": 122,
+          "kind": 20,
+          "symbol": "?Process_Block@SHAEngine@@ABEXPBXAATSHADigest@1@@Z",
+          "target": 6770272,
+          "addend": 0,
+          "resolved": 498
+        }
+      ],
+      "source_sha256": "688c2a5442eef3b71ea51da08b12218994c8fdcf699f64517b4ab074dc5b11be",
+      "source": "src/recovered/classes/SHAEngine/SHAEngine_Process_Partial_00674bf0.cpp",
+      "population": "population-112",
+      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "SHAEngine_Process_Partial_00674bf0",
+      "source_order": 10829
+    },
+    {
+      "entry": 6769808,
+      "method": "00674c90",
+      "symbol": "?Hash@SHAEngine@@QAEXPBXJ@Z",
+      "symbol_prefix": "?Hash@SHAEngine@@QAEXPBXJ@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 121,
+      "body_sha256": "be2c2f214077fbaed3be1e87acd26be7163d3da985deae33927035da2227feec",
+      "padding_bytes": 7,
+      "full_extent_bytes": 128,
+      "full_extent_sha256": "75e53e5668bed4f3363df071b0b2624ec88fbc60c240b6ab0845878f3adb8f77",
+      "relocations": [
+        {
+          "offset": 19,
+          "kind": 20,
+          "symbol": "?Process_Partial@SHAEngine@@AAEXAAPBXAAJ@Z",
+          "target": 6769648,
+          "addend": 0,
+          "resolved": 4294967113
+        },
+        {
+          "offset": 61,
+          "kind": 20,
+          "symbol": "?Process_Block@SHAEngine@@ABEXPBXAATSHADigest@1@@Z",
+          "target": 6770272,
+          "addend": 0,
+          "resolved": 399
+        },
+        {
+          "offset": 112,
+          "kind": 20,
+          "symbol": "?Process_Partial@SHAEngine@@AAEXAAPBXAAJ@Z",
+          "target": 6769648,
+          "addend": 0,
+          "resolved": 4294967020
+        }
+      ],
+      "source_sha256": "c945110e326d124d63aef16e882b0159e53b25497e10237a29b983e5142c85fc",
+      "source": "src/recovered/classes/SHAEngine/SHAEngine_Hash_00674c90.cpp",
+      "population": "population-112",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "SHAEngine_Hash_00674c90",
+      "source_order": 10830
+    },
+    {
+      "entry": 6769936,
+      "method": "00674d10",
+      "symbol": "?Result@SHAEngine@@QBEHPAX@Z",
+      "symbol_prefix": "?Result@SHAEngine@@QBEHPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 333,
+      "body_sha256": "8f3db68c59d3136c4db4625fd1813a2ec86a59dac857f6b2aeec72d17bdfb251",
+      "padding_bytes": 3,
+      "full_extent_bytes": 336,
+      "full_extent_sha256": "ac3d56f23635a8c5f0d3c4064f283460ef166b562157794d7107adfb5c3f1c9b",
+      "relocations": [
+        {
+          "offset": 130,
+          "kind": 20,
+          "symbol": "?Process_Block@SHAEngine@@ABEXPBXAATSHADigest@1@@Z",
+          "target": 6770272,
+          "addend": 0,
+          "resolved": 202
+        },
+        {
+          "offset": 228,
+          "kind": 20,
+          "symbol": "?Process_Block@SHAEngine@@ABEXPBXAATSHADigest@1@@Z",
+          "target": 6770272,
+          "addend": 0,
+          "resolved": 104
+        }
+      ],
+      "source_sha256": "a72d9556d762a3a4574ee113d768c3b7935bbbf83fa84604ab864d18ae3397ac",
+      "source": "src/recovered/classes/SHAEngine/SHAEngine_Result_00674d10.cpp",
+      "population": "population-112",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "SHAEngine_Result_00674d10",
+      "source_order": 10831
+    },
+    {
+      "entry": 6770272,
+      "method": "00674e60",
+      "symbol": "?Process_Block@SHAEngine@@ABEXPBXAATSHADigest@1@@Z",
+      "symbol_prefix": "?Process_Block@SHAEngine@@ABEXPBXAATSHADigest@1@@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 405,
+      "body_sha256": "360e6efb6953b68b3fb1235db1b5ba1a349c4648e446378890701283b3a7b733",
+      "padding_bytes": 11,
+      "full_extent_bytes": 416,
+      "full_extent_sha256": "d78beaab498262ccec53281ede255d643160da9cdb330ed44c383d88f5e95bf6",
+      "relocations": [],
+      "source_sha256": "f453c55d8178080480bb30e1938fef7b1c6a617853ba209e506abe51f7272559",
+      "source": "src/recovered/classes/SHAEngine/SHAEngine_Process_Block_00674e60.cpp",
+      "population": "population-112",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "SHAEngine_Process_Block_00674e60",
+      "source_order": 10832
+    }
+  ]
+}

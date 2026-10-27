@@ -1,0 +1,877 @@
+{
+  "id": "population-28",
+  "population": {
+    "id": "population-28",
+    "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
+    "gaps_sha256": "e08aea40096e7b4e0d74af8d5c3ab9f099c05753e3446c04c6d1346e4878b3c6",
+    "historical_population_sha256": "2486aeb4e2cf68914ee0a7c112af3b354501dba2315b83c45d932591c5db6369",
+    "historical_acceptance_sha256": "b9f05b5ba7123f822d4aa85dc9b92a0994a6df8ebbbad55f2ded72c87ca20395"
+  },
+  "references": {
+    "_allocate_storage_0046d1f0": 7872535,
+    "_base_dispatch_0046d1f0": 7985620,
+    "_derived_dispatch_0046d1f0": 7985812,
+    "_allocate_storage_004faa90": 7872535,
+    "_base_dispatch_004faa90": 8007960,
+    "_derived_dispatch_004faa90": 8008056,
+    "_allocate_storage_004fae60": 7872535,
+    "_base_dispatch_004fae60": 8007992,
+    "_derived_dispatch_004fae60": 8008088,
+    "_allocate_storage_004fb230": 7872535,
+    "_base_dispatch_004fb230": 8008024,
+    "_derived_dispatch_004fb230": 8008120,
+    "_allocate_storage_0050b480": 7872535,
+    "_base_dispatch_0050b480": 8010588,
+    "_derived_dispatch_0050b480": 8010620,
+    "_allocate_storage_0058e170": 7872535,
+    "_base_dispatch_0058e170": 8007432,
+    "_derived_dispatch_0058e170": 8007464,
+    "_allocate_storage_005b95c0": 7872535,
+    "_base_dispatch_005b95c0": 8024472,
+    "_derived_dispatch_005b95c0": 8024440,
+    "_allocate_storage_005cd770": 7872535,
+    "_base_dispatch_005cd770": 8024968,
+    "_derived_dispatch_005cd770": 8025000,
+    "_allocate_storage_0061ac80": 7872535,
+    "_base_dispatch_0061ac80": 8028892,
+    "_derived_dispatch_0061ac80": 8028860,
+    "_allocate_storage_0061af90": 7872535,
+    "_base_dispatch_0061af90": 8028924,
+    "_derived_dispatch_0061af90": 8028828,
+    "_allocate_storage_00653340": 7872535,
+    "_base_dispatch_00653340": 8032536,
+    "_derived_dispatch_00653340": 8032644,
+    "_allocate_storage_00653730": 7872535,
+    "_base_dispatch_00653730": 8032568,
+    "_derived_dispatch_00653730": 8032676,
+    "_allocate_storage_00653a40": 7872535,
+    "_base_dispatch_00653a40": 8032600,
+    "_derived_dispatch_00653a40": 8032708,
+    "_allocate_storage_006634e0": 7872535,
+    "_base_dispatch_006634e0": 7985684,
+    "_derived_dispatch_006634e0": 7998364,
+    "_allocate_storage_006c03e0": 7872535,
+    "_base_dispatch_006c03e0": 8007396,
+    "_derived_dispatch_006c03e0": 8007660,
+    "_allocate_storage_007246d0": 7872535,
+    "_base_dispatch_007246d0": 8018360,
+    "_derived_dispatch_007246d0": 8019708
+  },
+  "regions": [
+    {
+      "entry": 4641264,
+      "method": "46d1f0",
+      "symbol": "?initialize@WordStorage_0046d1f0@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_0046d1f0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "b88ded832827be0442f627c53435c8d6a56d8971f024602a96a81890aab29d3d",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "d7435c75db46ca3cb1ba8adf5f95afbb17c5747d1cd16d48a9c0691c13b70e9c",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_0046d1f0",
+          "target": 7985620,
+          "addend": 0,
+          "resolved": 7985620
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_0046d1f0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 3231214
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_0046d1f0",
+          "target": 7985812,
+          "addend": 0,
+          "resolved": 7985812
+        }
+      ],
+      "source": "src/recovered/word_storage/InitializeWordStorage_0046d1f0.cpp",
+      "source_sha256": "aead415de609e67d3f6d45ea4a6ff9af9becd1ec5e2d5ff0611f7f7f4d2a9294",
+      "source_order": 6763,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization",
+      "previous_source_sha256": "e1817620d7cd2ebb5ed9da8e029ce0771241b6122b7260aa4f0232afb1d4dcfe",
+      "semantic_name": "InitializeWordStorage_0046d1f0",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 5221008,
+      "method": "4faa90",
+      "symbol": "?initialize@WordStorage_004faa90@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_004faa90@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "76707bbe938ad79041bc3424f2c3e5903f7943be8f1c0272852def2fea52a9f8",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "5e3f2ecdd7a078dca37103686e9504d48a402ff2d569bb61fcfcc90065cc52cc",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_004faa90",
+          "target": 8007960,
+          "addend": 0,
+          "resolved": 8007960
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_004faa90",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2651470
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_004faa90",
+          "target": 8008056,
+          "addend": 0,
+          "resolved": 8008056
+        }
+      ],
+      "source": "src/recovered/word_storage/InitializeWordStorage_004faa90.cpp",
+      "source_sha256": "e4a9cd8e41ffa3e68725bb5d4f6dfbc8f88f49ce8cab22025a467b9cbab9bb29",
+      "source_order": 6764,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization",
+      "semantic_name": "InitializeWordStorage_004faa90",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 5221984,
+      "method": "4fae60",
+      "symbol": "?initialize@WordStorage_004fae60@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_004fae60@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "b9cfb00caa6cd46c038920cd66475f74e898b288b6159f05744ea2c0643e31c5",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "d403011cead5481fb81e28b51fd430e8c06a57fa54db73703e7026342f4a9978",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_004fae60",
+          "target": 8007992,
+          "addend": 0,
+          "resolved": 8007992
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_004fae60",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2650494
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_004fae60",
+          "target": 8008088,
+          "addend": 0,
+          "resolved": 8008088
+        }
+      ],
+      "source": "src/recovered/word_storage/InitializeWordStorage_004fae60.cpp",
+      "source_sha256": "7e0e61697d402f11cdcfc3872399aaad33f355aefec0dad41e94e0b88735cdc4",
+      "source_order": 6765,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization",
+      "semantic_name": "InitializeWordStorage_004fae60",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 5222960,
+      "method": "4fb230",
+      "symbol": "?initialize@WordStorage_004fb230@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_004fb230@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "194ce3bf9eeafb009c913974c43c2058f2c088646127bff035c28e77eb220b1d",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "0286279670e9a832ac8072ada84c7b751cdf1e634c54d7be34ba8e4b599ad633",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_004fb230",
+          "target": 8008024,
+          "addend": 0,
+          "resolved": 8008024
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_004fb230",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2649518
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_004fb230",
+          "target": 8008120,
+          "addend": 0,
+          "resolved": 8008120
+        }
+      ],
+      "source": "src/recovered/word_storage/InitializeWordStorage_004fb230.cpp",
+      "source_sha256": "e632bf80c515708b0132f7d128d0f93d61c1b17d1c9fb4f2c5de0c29e94b022d",
+      "source_order": 6766,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization",
+      "semantic_name": "InitializeWordStorage_004fb230",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 5289088,
+      "method": "50b480",
+      "symbol": "?initialize@WordStorage_0050b480@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_0050b480@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "e8705293cb1624e93a5de5f6167059f379c93b5c6f8e3859e18a083b52a16073",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "1e579cf30c01ccf43f62cf95e1be7ce0d548405bfc3d2d25e12443864337dda8",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_0050b480",
+          "target": 8010588,
+          "addend": 0,
+          "resolved": 8010588
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_0050b480",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2583390
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_0050b480",
+          "target": 8010620,
+          "addend": 0,
+          "resolved": 8010620
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_AnimTypeClass_ptr/0050b480.cpp",
+      "source_sha256": "fe4beae2bc8cb9b93c37cbef6874eb74a51a0ae3c216be690a7f89252bbc8625",
+      "source_order": 6767,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization"
+    },
+    {
+      "entry": 5824880,
+      "method": "58e170",
+      "symbol": "?initialize@WordStorage_0058e170@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_0058e170@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "8d13fffc6dfa5a6ebff795d70549b84940d0114956bba5582f79f5c0fffa20b3",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "27628b8251d89e7585606b2b43dc81e15235f5f05e22ac60bb12e18d6fa38ac2",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_0058e170",
+          "target": 8007432,
+          "addend": 0,
+          "resolved": 8007432
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_0058e170",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 2047598
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_0058e170",
+          "target": 8007464,
+          "addend": 0,
+          "resolved": 8007464
+        }
+      ],
+      "source": "src/recovered/word_storage/InitializeWordStorage_0058e170.cpp",
+      "source_sha256": "8d0efb0f6113bfaa09799280b0e8b1298b7348a16fcf22abe9866c396d15136b",
+      "source_order": 6768,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization",
+      "semantic_name": "InitializeWordStorage_0058e170",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 6002112,
+      "method": "5b95c0",
+      "symbol": "?initialize@WordStorage_005b95c0@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_005b95c0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "835606a6a4a3aad562b644dfdb944d38837fd294e554195cbb5220f889ae73f4",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "e01e3e6d38e1952eba978b7a36996a645f4f23eff91c2234f54fb92320296865",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_005b95c0",
+          "target": 8024472,
+          "addend": 0,
+          "resolved": 8024472
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_005b95c0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1870366
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_005b95c0",
+          "target": 8024440,
+          "addend": 0,
+          "resolved": 8024440
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_MultiplayerGameMode_ptr/005b95c0.cpp",
+      "source_sha256": "771d735cd790c2630832cc6de24c3639223d584aa17feaefee9b207013623bda",
+      "source_order": 6769,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization"
+    },
+    {
+      "entry": 6084464,
+      "method": "5cd770",
+      "symbol": "?initialize@WordStorage_005cd770@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_005cd770@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "a365795b0f47dfea70491b9986d51cf786426af78cb2974d1f16d74d46a220b1",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "cc28f2b2897b734d7d21da6e4ee5aae45813e152a1e4b57b49057b39270860b7",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_005cd770",
+          "target": 8024968,
+          "addend": 0,
+          "resolved": 8024968
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_005cd770",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1788014
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_005cd770",
+          "target": 8025000,
+          "addend": 0,
+          "resolved": 8025000
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_MultiMission_ptr/005cd770.cpp",
+      "source_sha256": "754de651487d7a4f8605e5ef19464ec52ad8bbe73b2f942ee1732f27ada76bbd",
+      "source_order": 6770,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization"
+    },
+    {
+      "entry": 6401152,
+      "method": "61ac80",
+      "symbol": "?initialize@WordStorage_0061ac80@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_0061ac80@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "fb3c9272b4df7bad36de519ea64ff86993a4df597e454ace14653306cec20de0",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "8a890e36347fac880e59b93f43059e57a04ab56f62a6e42044ffd9e99cbc23d7",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_0061ac80",
+          "target": 8028892,
+          "addend": 0,
+          "resolved": 8028892
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_0061ac80",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1471326
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_0061ac80",
+          "target": 8028860,
+          "addend": 0,
+          "resolved": 8028860
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_PlanningMemberClass_ptr/0061ac80.cpp",
+      "source_sha256": "5562fa449583c7cdc2d843b1398d3b430f25e903062acb45c20ceda6b47acc54",
+      "source_order": 6771,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization"
+    },
+    {
+      "entry": 6401936,
+      "method": "61af90",
+      "symbol": "?initialize@WordStorage_0061af90@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_0061af90@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "43403d9ac0a2939cde71e69da4e6fc26e805fc45250ffde7cb8b2080b9404c65",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "cd254af10976ad894731bf24dc64a7d78a9399ce9a7615bd1e85914dde549e12",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_0061af90",
+          "target": 8028924,
+          "addend": 0,
+          "resolved": 8028924
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_0061af90",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1470542
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_0061af90",
+          "target": 8028828,
+          "addend": 0,
+          "resolved": 8028828
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_PlanningBranchClass_ptr/0061af90.cpp",
+      "source_sha256": "33c21d20b676c629b9ba9394b84bcfb5232718466aec3a9f2661c59ee34032ea",
+      "source_order": 6772,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization"
+    },
+    {
+      "entry": 6632256,
+      "method": "653340",
+      "symbol": "?initialize@WordStorage_00653340@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_00653340@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "8c1a093ee8d7b7a8e2219e4c96aea8695ecc1ae6763edc2f3441b71377a5b454",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "6c2aa7432acd4815c1c452dac6d65c9abc44075dcd6c5224b3137da26b765266",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_00653340",
+          "target": 8032536,
+          "addend": 0,
+          "resolved": 8032536
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_00653340",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1240222
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_00653340",
+          "target": 8032644,
+          "addend": 0,
+          "resolved": 8032644
+        }
+      ],
+      "source": "src/recovered/word_storage/InitializeWordStorage_00653340.cpp",
+      "source_sha256": "27840a45144c205fa1da6d9b22b6909fa61a53ddc3fa4ff7e180927fc7de0237",
+      "source_order": 6773,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization",
+      "semantic_name": "InitializeWordStorage_00653340",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 6633264,
+      "method": "653730",
+      "symbol": "?initialize@WordStorage_00653730@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_00653730@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "e4aba9b91157de8092c5f56e0cdebf292c2ebfbb9823615c496c6f9057ae93a2",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "a6dae210feea77d6c6f924e27049ccecb30acd41de9a30ea1896d56f55baf893",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_00653730",
+          "target": 8032568,
+          "addend": 0,
+          "resolved": 8032568
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_00653730",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1239214
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_00653730",
+          "target": 8032676,
+          "addend": 0,
+          "resolved": 8032676
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_SmudgeTypeClass_ptr/00653730.cpp",
+      "source_sha256": "88988f9b3d79f4c08033fc222285e0c255749aad9f783cf2339e456707025e8c",
+      "source_order": 6774,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization"
+    },
+    {
+      "entry": 6634048,
+      "method": "653a40",
+      "symbol": "?initialize@WordStorage_00653a40@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_00653a40@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "ec4ee80ce1074c235ff6235c725e2696c651dbe9ed979ad629f2036c2f3a5d3d",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "6d5707d16390b48354e1946a0e50f7aac96dd1f14e7be0e99e83fdf7bdd9cdcb",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_00653a40",
+          "target": 8032600,
+          "addend": 0,
+          "resolved": 8032600
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_00653a40",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1238430
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_00653a40",
+          "target": 8032708,
+          "addend": 0,
+          "resolved": 8032708
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_TerrainTypeClass_ptr/00653a40.cpp",
+      "source_sha256": "ce3854efb20b65d587f87b33d6e376106a11befe8d874ca94d93401c525af074",
+      "source_order": 6775,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization"
+    },
+    {
+      "entry": 6698208,
+      "method": "6634e0",
+      "symbol": "?initialize@WordStorage_006634e0@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_006634e0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "3ea4df335505adb44e827bb7ecf2ce0298ae585f213ce68c1b166084e6d728f0",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "f98ae9e95abcc5ef918949c91af94732708f39728ecf428f6d8c5026b76903f0",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_006634e0",
+          "target": 7985684,
+          "addend": 0,
+          "resolved": 7985684
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_006634e0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 1174270
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_006634e0",
+          "target": 7998364,
+          "addend": 0,
+          "resolved": 7998364
+        }
+      ],
+      "source": "src/recovered/006634e0.cpp",
+      "source_sha256": "cb51d6e42ac36efd860e7468eb2497251e2e0f1974493ed16973888cb5a3accf",
+      "source_order": 6776,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization"
+    },
+    {
+      "entry": 7078880,
+      "method": "6c03e0",
+      "symbol": "?initialize@WordStorage_006c03e0@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_006c03e0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "f226248fcbb784f29adb668e2440367bc8a3e3e85f04573584e2adaecafc9f9a",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "91b002417a8bd20e41938230c71bc8787fcc9647cce31f050d112900bb80a7b5",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_006c03e0",
+          "target": 8007396,
+          "addend": 0,
+          "resolved": 8007396
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_006c03e0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 793598
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_006c03e0",
+          "target": 8007660,
+          "addend": 0,
+          "resolved": 8007660
+        }
+      ],
+      "source": "src/recovered/word_storage/InitializeWordStorage_006c03e0.cpp",
+      "source_sha256": "611e2cbd2f68ae07ced04cd50167a6f98959d9d76cf716aac70707219bd2be49",
+      "source_order": 6777,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization",
+      "semantic_name": "InitializeWordStorage_006c03e0",
+      "shared_declaration_header": "src/shared/word_storage_layout.hpp"
+    },
+    {
+      "entry": 7489232,
+      "method": "7246d0",
+      "symbol": "?initialize@WordStorage_007246d0@@QAEPAV1@IPAI@Z",
+      "symbol_prefix": "?initialize@WordStorage_007246d0@@",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 93,
+      "body_sha256": "288856dca6257b832727febf36bde46af9c844e7c446fe6e63ddf210e1811d74",
+      "padding_bytes": 3,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "6a5ae395233684a862bac051a106987cf3f1e599317a7a19d5836ecaff20598a",
+      "relocations": [
+        {
+          "offset": 29,
+          "kind": 6,
+          "symbol": "_base_dispatch_007246d0",
+          "target": 8018360,
+          "addend": 0,
+          "resolved": 8018360
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "_allocate_storage_007246d0",
+          "target": 7872535,
+          "addend": 0,
+          "resolved": 383246
+        },
+        {
+          "offset": 69,
+          "kind": 6,
+          "symbol": "_derived_dispatch_007246d0",
+          "target": 8019708,
+          "addend": 0,
+          "resolved": 8019708
+        }
+      ],
+      "source": "src/recovered/classes/DynamicVectorClass_CellClass_ptr/007246d0.cpp",
+      "source_sha256": "51770110b0542dcb1de0d18f36ff5df783b6d2ab11a6b9772bf7ec831b0d2e87",
+      "source_order": 6779,
+      "population": "population-28",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "derived-word-storage-initialization"
+    }
+  ]
+}

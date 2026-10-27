@@ -1,0 +1,1419 @@
+{
+  "id": "population-121",
+  "population": {
+    "id": "population-121",
+    "inventory_sha256": "f88e6749d8c445fee42bc6a32b737aa5b9881b9708648835f6d21b736b60fdc8",
+    "gaps_sha256": "ed332d4ff4ed786e75a5f321a6eacb942df4ec293929a29e37b2b2c201506850",
+    "historical_population_sha256": "d386c2f4455d6be25a8fb208e29fff952bf1c9bc44e7dc9f3ce3e033482e521f",
+    "historical_acceptance_sha256": "103c448537d7a9fbeef67aff25fdfceb30d8e3ca9c34ac99b4ca660afb29ad89"
+  },
+  "references": {
+    "?XMP_Count_Bits@@YIHPBKH@Z": 5930176,
+    "?XMP_DER_Decode@@YIXPAKPBEH@Z": 5928656,
+    "?XMP_Init@@YIXPAKKH@Z": 5930144,
+    "?Error@RawFileClass@@UAEXHHPBD@Z": 6523696,
+    "??3@YAXPAX@Z": 7871803,
+    "??2@YAPAXI@Z": 7872535,
+    "?Error@CCFileClass@@": 4624384,
+    "?base@Init_498a50@@": 5536096,
+    "??_GStraw@@UAEPAXI@Z": 4844864,
+    "??_7Straw@@6B@": 7989752,
+    "??1Straw@@UAE@XZ": 6926352,
+    "?Error@?$Int@$0EA@@@2HA": 10753984,
+    "??_EStraw@@UAEPAXI@Z": 4844864,
+    "?Decrypt@BlowfishEngine@@QAEHPBXHPAX@Z": 4413024,
+    "?Decrypt@PKey@@QBEHPBXHPAX@Z": 6354512,
+    "?Encrypt@BlowfishEngine@@QAEHPBXHPAX@Z": 4412976,
+    "?Encrypt@PKey@@QBEHPBXHPAX@Z": 6354208,
+    "??0PKey@@QAE@PBX0@Z": 6352192,
+    "?Carry@?$Int@$0EA@@@2_NA": 10753988,
+    "?Borrow@?$Int@$0EA@@@2_NA": 10753989,
+    "?Remainder@?$Int@$0EA@@@2V1@A": 10753728,
+    "?XMP_Fetch_Prime_Table@@YIPBGXZ": 5928240,
+    "?XMP_Fetch_Prime_Size@@YIHXZ": 5928256,
+    "?XMP_DER_Encode@@YIHPBKPAEH@Z": 5928464,
+    "?XMP_Shift_Left_Bits@@YIXPAKHH@Z": 5929728,
+    "?XMP_Compare@@YIHPBK0H@Z": 5930304,
+    "?XMP_Add@@YI_NPAKPBK1_NH@Z": 5930384,
+    "?XMP_Add_Int@@YI_NPAKPBKK_NH@Z": 5930496,
+    "?XMP_Sub_Int@@YI_NPAKPBKG_NH@Z": 5930688,
+    "?XMP_Unsigned_Mult_Int@@YIHPAKPBKFH@Z": 5931248,
+    "?XMP_Unsigned_Mult@@YIHPAKPBK1H@Z": 5931840,
+    "?XMP_Unsigned_Div_Int@@YIGPAKPBKGH@Z": 5932352,
+    "?XMP_Inverse_A_Mod_B@@YIXPAKPBK1H@Z": 5933728,
+    "?XMP_Exponent_Mod@@YIHPAKPBK11H@Z": 5937248,
+    "?XMP_Randomize@@YIXPAKAAVStraw@@PBK2H@Z": 5939616,
+    "?XMP_Is_Prime@@YI_NPBKH@Z": 5940096,
+    "?Encode_Modulus@PKey@@QBEHPAX@Z": 6352288,
+    "?Encode_Exponent@PKey@@QBEHPAX@Z": 6352320,
+    "?Decode_Modulus@PKey@@QAEXPAX@Z": 6352352,
+    "?Decode_Exponent@PKey@@QAEXPAX@Z": 6352400,
+    "?Generate@PKey@@SIXAAVStraw@@HAAV1@1@Z": 6352432,
+    "?Inverse@?$Int@$0EA@@@QBE?AV1@ABV1@@Z": 6354944,
+    "?Randomize@?$Int@$0EA@@@QAEXAAVStraw@@ABV1@1@Z": 6355024,
+    "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z": 6355488,
+    "_rand": 7882410,
+    "__chkstk": 7878736,
+    "?XMP_Unsigned_Mult_Int@@YIHPAKPBKGH@Z": 5931248,
+    "??G?$Int@$0EA@@@QBE?AV0@G@Z": 6354848,
+    "??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z": 6355072,
+    "??H?$Int@$0EA@@@QBE?AV0@G@Z": 6355104,
+    "??D?$Int@$0EA@@@QBE?AV0@G@Z": 6355200,
+    "??6?$Int@$0EA@@@QBE?AV0@H@Z": 6355280,
+    "??O?$Int@$0EA@@@QBE_NABV0@@Z": 6355360,
+    "??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z": 6355392,
+    "_memmove": 7877264
+  },
+  "regions": [
+    {
+      "entry": 6352192,
+      "method": "0060ed40",
+      "symbol": "??0PKey@@QAE@PBX0@Z",
+      "symbol_prefix": "??0PKey@@QAE@PBX0@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 82,
+      "body_sha256": "a8a10a171e38dbacc7bb792510ee0653de00318d4ea2568d8978c353f3cf2cbd",
+      "padding_bytes": 14,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "b0c76016daf58116a20653178af091f42bce4fbec140ac3d9c68eee4fb7c2f39",
+      "relocations": [
+        {
+          "offset": 9,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294545235
+        },
+        {
+          "offset": 26,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294545218
+        },
+        {
+          "offset": 39,
+          "kind": 20,
+          "symbol": "?XMP_DER_Decode@@YIXPAKPBEH@Z",
+          "target": 5928656,
+          "addend": 0,
+          "resolved": 4294543717
+        },
+        {
+          "offset": 52,
+          "kind": 20,
+          "symbol": "?XMP_DER_Decode@@YIXPAKPBEH@Z",
+          "target": 5928656,
+          "addend": 0,
+          "resolved": 4294543704
+        },
+        {
+          "offset": 64,
+          "kind": 20,
+          "symbol": "?XMP_Count_Bits@@YIHPBKH@Z",
+          "target": 5930176,
+          "addend": 0,
+          "resolved": 4294545212
+        }
+      ],
+      "source_sha256": "89edee8b8fb1e3b5717938a570300570c34aa65faf31c5ea4bbae6f23f55b193",
+      "source": "src/recovered/classes/PKey/PKey_constructor_0060ed40.cpp",
+      "population": "population-121",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PKey_constructor_0060ed40",
+      "source_order": 10972
+    },
+    {
+      "entry": 6352288,
+      "method": "0060eda0",
+      "symbol": "?Encode_Modulus@PKey@@QBEHPAX@Z",
+      "symbol_prefix": "?Encode_Modulus@PKey@@QBEHPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 23,
+      "body_sha256": "015163f60883b3f364a054853ece488c78bb4899d6985b01533f12f1ab8f8873",
+      "padding_bytes": 9,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "5ac0c28dcb48e037a07488ddbb73b3b8e385210e5559cd78219d2b6e48c83204",
+      "relocations": [
+        {
+          "offset": 16,
+          "kind": 20,
+          "symbol": "?XMP_DER_Encode@@YIHPBKPAEH@Z",
+          "target": 5928464,
+          "addend": 0,
+          "resolved": 4294543452
+        }
+      ],
+      "source_sha256": "8d4920a6ec5e09a3b8b58b86424e8753f4d20e147f5b7de95f8dc19e701afd31",
+      "source": "src/recovered/classes/PKey/PKey_Encode_Modulus_0060eda0.cpp",
+      "population": "population-121",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PKey_Encode_Modulus_0060eda0",
+      "source_order": 10973
+    },
+    {
+      "entry": 6352320,
+      "method": "0060edc0",
+      "symbol": "?Encode_Exponent@PKey@@QBEHPAX@Z",
+      "symbol_prefix": "?Encode_Exponent@PKey@@QBEHPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 29,
+      "body_sha256": "2ead27c9daa4e695cf08c479662c63f50ce82492945bc6667bddf680b89f1e13",
+      "padding_bytes": 3,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "6f1cd1509fbb81c6cf681598a78f025b59f6105b68b9144d6b1a0e18cdc2871d",
+      "relocations": [
+        {
+          "offset": 22,
+          "kind": 20,
+          "symbol": "?XMP_DER_Encode@@YIHPBKPAEH@Z",
+          "target": 5928464,
+          "addend": 0,
+          "resolved": 4294543414
+        }
+      ],
+      "source_sha256": "89ff1b07c06e481f3557a151433f34fd59feab2e89e8db2855ccd2fa46da465d",
+      "source": "src/recovered/classes/PKey/PKey_Encode_Exponent_0060edc0.cpp",
+      "population": "population-121",
+      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PKey_Encode_Exponent_0060edc0",
+      "source_order": 10974
+    },
+    {
+      "entry": 6352352,
+      "method": "0060ede0",
+      "symbol": "?Decode_Modulus@PKey@@QAEXPAX@Z",
+      "symbol_prefix": "?Decode_Modulus@PKey@@QAEXPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 37,
+      "body_sha256": "5a85b2675512127522bd155591744a6b31c04db31f88d8321c92e9c8c55f5416",
+      "padding_bytes": 11,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "736a47d04a26bf9c4896ecb9ec2b30802a1a89d016b80dfcdcc7b05ba2e0ef97",
+      "relocations": [
+        {
+          "offset": 10,
+          "kind": 20,
+          "symbol": "?XMP_DER_Decode@@YIXPAKPBEH@Z",
+          "target": 5928656,
+          "addend": 0,
+          "resolved": 4294543586
+        },
+        {
+          "offset": 22,
+          "kind": 20,
+          "symbol": "?XMP_Count_Bits@@YIHPBKH@Z",
+          "target": 5930176,
+          "addend": 0,
+          "resolved": 4294545094
+        }
+      ],
+      "source_sha256": "8168646a56e6ff84efad1a34ab4d898764a236be3211319767a774815b9b1e8b",
+      "source": "src/recovered/classes/PKey/PKey_Decode_Modulus_0060ede0.cpp",
+      "population": "population-121",
+      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PKey_Decode_Modulus_0060ede0",
+      "source_order": 10975
+    },
+    {
+      "entry": 6352400,
+      "method": "0060ee10",
+      "symbol": "?Decode_Exponent@PKey@@QAEXPAX@Z",
+      "symbol_prefix": "?Decode_Exponent@PKey@@QAEXPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 20,
+      "body_sha256": "93f915e5771e6c14f746f747ca0dbad03c32228ced67eeff7c84db89c76af1fb",
+      "padding_bytes": 12,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "bb995bf894d318175230e0c65dfda65d19ee1c51925c9eb2cb1160119519cbfe",
+      "relocations": [
+        {
+          "offset": 13,
+          "kind": 20,
+          "symbol": "?XMP_DER_Decode@@YIXPAKPBEH@Z",
+          "target": 5928656,
+          "addend": 0,
+          "resolved": 4294543535
+        }
+      ],
+      "source_sha256": "751ff9e964a52e4188c38cce2c9193686694795fd79b1e343f294f83984edafe",
+      "source": "src/recovered/classes/PKey/PKey_Decode_Exponent_0060ee10.cpp",
+      "population": "population-121",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PKey_Decode_Exponent_0060ee10",
+      "source_order": 10976
+    },
+    {
+      "entry": 6352432,
+      "method": "0060ee30",
+      "symbol": "?Generate@PKey@@SIXAAVStraw@@HAAV1@1@Z",
+      "symbol_prefix": "?Generate@PKey@@SIXAAVStraw@@HAAV1@1@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 1771,
+      "body_sha256": "2e2e8e7a9dd952e456d9765bee09b803e5ebc4973a5e37a3c484b3e4b5c5ca3a",
+      "padding_bytes": 5,
+      "full_extent_bytes": 1776,
+      "full_extent_sha256": "13b7f821e082531e434d4bed11c1101868e81a8335081a02c07dcbc20525ae08",
+      "relocations": [
+        {
+          "offset": 6,
+          "kind": 20,
+          "symbol": "__chkstk",
+          "target": 7878736,
+          "addend": 0,
+          "resolved": 1526294
+        },
+        {
+          "offset": 77,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544927
+        },
+        {
+          "offset": 98,
+          "kind": 20,
+          "symbol": "??6?$Int@$0EA@@@QBE?AV0@H@Z",
+          "target": 6355280,
+          "addend": 0,
+          "resolved": 2746
+        },
+        {
+          "offset": 133,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544871
+        },
+        {
+          "offset": 168,
+          "kind": 20,
+          "symbol": "??6?$Int@$0EA@@@QBE?AV0@H@Z",
+          "target": 6355280,
+          "addend": 0,
+          "resolved": 2676
+        },
+        {
+          "offset": 175,
+          "kind": 20,
+          "symbol": "??G?$Int@$0EA@@@QBE?AV0@G@Z",
+          "target": 6354848,
+          "addend": 0,
+          "resolved": 2237
+        },
+        {
+          "offset": 204,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544800
+        },
+        {
+          "offset": 220,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544784
+        },
+        {
+          "offset": 250,
+          "kind": 20,
+          "symbol": "?Randomize@?$Int@$0EA@@@QAEXAAVStraw@@ABV1@1@Z",
+          "target": 6355024,
+          "addend": 0,
+          "resolved": 2338
+        },
+        {
+          "offset": 279,
+          "kind": 20,
+          "symbol": "??D?$Int@$0EA@@@QBE?AV0@G@Z",
+          "target": 6355200,
+          "addend": 0,
+          "resolved": 2485
+        },
+        {
+          "offset": 286,
+          "kind": 20,
+          "symbol": "??H?$Int@$0EA@@@QBE?AV0@G@Z",
+          "target": 6355104,
+          "addend": 0,
+          "resolved": 2382
+        },
+        {
+          "offset": 319,
+          "kind": 20,
+          "symbol": "??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z",
+          "target": 6355392,
+          "addend": 0,
+          "resolved": 2637
+        },
+        {
+          "offset": 339,
+          "kind": 20,
+          "symbol": "??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z",
+          "target": 6355392,
+          "addend": 0,
+          "resolved": 2617
+        },
+        {
+          "offset": 375,
+          "kind": 20,
+          "symbol": "?XMP_Is_Prime@@YI_NPBKH@Z",
+          "target": 5940096,
+          "addend": 0,
+          "resolved": 4294554581
+        },
+        {
+          "offset": 396,
+          "kind": 20,
+          "symbol": "?XMP_Is_Prime@@YI_NPBKH@Z",
+          "target": 5940096,
+          "addend": 0,
+          "resolved": 4294554560
+        },
+        {
+          "offset": 423,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544581
+        },
+        {
+          "offset": 440,
+          "kind": 20,
+          "symbol": "??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z",
+          "target": 6355072,
+          "addend": 0,
+          "resolved": 2196
+        },
+        {
+          "offset": 459,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544545
+        },
+        {
+          "offset": 479,
+          "kind": 20,
+          "symbol": "??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z",
+          "target": 6355072,
+          "addend": 0,
+          "resolved": 2157
+        },
+        {
+          "offset": 497,
+          "kind": 20,
+          "symbol": "?XMP_Compare@@YIHPBK0H@Z",
+          "target": 5930304,
+          "addend": 0,
+          "resolved": 4294544667
+        },
+        {
+          "offset": 515,
+          "kind": 20,
+          "symbol": "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z",
+          "target": 6355488,
+          "addend": 0,
+          "resolved": 2537
+        },
+        {
+          "offset": 529,
+          "kind": 20,
+          "symbol": "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z",
+          "target": 6355488,
+          "addend": 0,
+          "resolved": 2523
+        },
+        {
+          "offset": 551,
+          "kind": 20,
+          "symbol": "??O?$Int@$0EA@@@QBE_NABV0@@Z",
+          "target": 6355360,
+          "addend": 0,
+          "resolved": 2373
+        },
+        {
+          "offset": 599,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544405
+        },
+        {
+          "offset": 624,
+          "kind": 20,
+          "symbol": "??6?$Int@$0EA@@@QBE?AV0@H@Z",
+          "target": 6355280,
+          "addend": 0,
+          "resolved": 2220
+        },
+        {
+          "offset": 659,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544345
+        },
+        {
+          "offset": 694,
+          "kind": 20,
+          "symbol": "??6?$Int@$0EA@@@QBE?AV0@H@Z",
+          "target": 6355280,
+          "addend": 0,
+          "resolved": 2150
+        },
+        {
+          "offset": 701,
+          "kind": 20,
+          "symbol": "??G?$Int@$0EA@@@QBE?AV0@G@Z",
+          "target": 6354848,
+          "addend": 0,
+          "resolved": 1711
+        },
+        {
+          "offset": 733,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544271
+        },
+        {
+          "offset": 749,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544255
+        },
+        {
+          "offset": 782,
+          "kind": 20,
+          "symbol": "?Randomize@?$Int@$0EA@@@QAEXAAVStraw@@ABV1@1@Z",
+          "target": 6355024,
+          "addend": 0,
+          "resolved": 1806
+        },
+        {
+          "offset": 814,
+          "kind": 20,
+          "symbol": "??D?$Int@$0EA@@@QBE?AV0@G@Z",
+          "target": 6355200,
+          "addend": 0,
+          "resolved": 1950
+        },
+        {
+          "offset": 821,
+          "kind": 20,
+          "symbol": "??H?$Int@$0EA@@@QBE?AV0@G@Z",
+          "target": 6355104,
+          "addend": 0,
+          "resolved": 1847
+        },
+        {
+          "offset": 857,
+          "kind": 20,
+          "symbol": "??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z",
+          "target": 6355392,
+          "addend": 0,
+          "resolved": 2099
+        },
+        {
+          "offset": 877,
+          "kind": 20,
+          "symbol": "??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z",
+          "target": 6355392,
+          "addend": 0,
+          "resolved": 2079
+        },
+        {
+          "offset": 916,
+          "kind": 20,
+          "symbol": "?XMP_Is_Prime@@YI_NPBKH@Z",
+          "target": 5940096,
+          "addend": 0,
+          "resolved": 4294554040
+        },
+        {
+          "offset": 937,
+          "kind": 20,
+          "symbol": "?XMP_Is_Prime@@YI_NPBKH@Z",
+          "target": 5940096,
+          "addend": 0,
+          "resolved": 4294554019
+        },
+        {
+          "offset": 964,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544040
+        },
+        {
+          "offset": 984,
+          "kind": 20,
+          "symbol": "??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z",
+          "target": 6355072,
+          "addend": 0,
+          "resolved": 1652
+        },
+        {
+          "offset": 1003,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294544001
+        },
+        {
+          "offset": 1023,
+          "kind": 20,
+          "symbol": "??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z",
+          "target": 6355072,
+          "addend": 0,
+          "resolved": 1613
+        },
+        {
+          "offset": 1043,
+          "kind": 20,
+          "symbol": "??O?$Int@$0EA@@@QBE_NABV0@@Z",
+          "target": 6355360,
+          "addend": 0,
+          "resolved": 1881
+        },
+        {
+          "offset": 1061,
+          "kind": 20,
+          "symbol": "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z",
+          "target": 6355488,
+          "addend": 0,
+          "resolved": 1991
+        },
+        {
+          "offset": 1075,
+          "kind": 20,
+          "symbol": "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z",
+          "target": 6355488,
+          "addend": 0,
+          "resolved": 1977
+        },
+        {
+          "offset": 1100,
+          "kind": 20,
+          "symbol": "??O?$Int@$0EA@@@QBE_NABV0@@Z",
+          "target": 6355360,
+          "addend": 0,
+          "resolved": 1824
+        },
+        {
+          "offset": 1148,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294543856
+        },
+        {
+          "offset": 1164,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294543840
+        },
+        {
+          "offset": 1193,
+          "kind": 20,
+          "symbol": "?XMP_Unsigned_Mult@@YIHPAKPBK1H@Z",
+          "target": 5931840,
+          "addend": 0,
+          "resolved": 4294545507
+        },
+        {
+          "offset": 1230,
+          "kind": 6,
+          "symbol": "?Error@?$Int@$0EA@@@2HA",
+          "target": 10753984,
+          "addend": 0,
+          "resolved": 10753984
+        },
+        {
+          "offset": 1235,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294543769
+        },
+        {
+          "offset": 1260,
+          "kind": 20,
+          "symbol": "?XMP_Sub_Int@@YI_NPAKPBKG_NH@Z",
+          "target": 5930688,
+          "addend": 0,
+          "resolved": 4294544288
+        },
+        {
+          "offset": 1297,
+          "kind": 6,
+          "symbol": "?Borrow@?$Int@$0EA@@@2_NA",
+          "target": 10753989,
+          "addend": 0,
+          "resolved": 10753989
+        },
+        {
+          "offset": 1302,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294543702
+        },
+        {
+          "offset": 1327,
+          "kind": 20,
+          "symbol": "?XMP_Sub_Int@@YI_NPAKPBKG_NH@Z",
+          "target": 5930688,
+          "addend": 0,
+          "resolved": 4294544221
+        },
+        {
+          "offset": 1364,
+          "kind": 6,
+          "symbol": "?Borrow@?$Int@$0EA@@@2_NA",
+          "target": 10753989,
+          "addend": 0,
+          "resolved": 10753989
+        },
+        {
+          "offset": 1369,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294543635
+        },
+        {
+          "offset": 1398,
+          "kind": 20,
+          "symbol": "?XMP_Unsigned_Mult@@YIHPAKPBK1H@Z",
+          "target": 5931840,
+          "addend": 0,
+          "resolved": 4294545302
+        },
+        {
+          "offset": 1422,
+          "kind": 6,
+          "symbol": "?Error@?$Int@$0EA@@@2HA",
+          "target": 10753984,
+          "addend": 0,
+          "resolved": 10753984
+        },
+        {
+          "offset": 1452,
+          "kind": 20,
+          "symbol": "?Inverse@?$Int@$0EA@@@QBE?AV1@ABV1@@Z",
+          "target": 6354944,
+          "addend": 0,
+          "resolved": 1056
+        },
+        {
+          "offset": 1521,
+          "kind": 20,
+          "symbol": "?XMP_Count_Bits@@YIHPBKH@Z",
+          "target": 5930176,
+          "addend": 0,
+          "resolved": 4294543515
+        },
+        {
+          "offset": 1603,
+          "kind": 20,
+          "symbol": "_rand",
+          "target": 7882410,
+          "addend": 0,
+          "resolved": 1528371
+        },
+        {
+          "offset": 1671,
+          "kind": 20,
+          "symbol": "?Encrypt@PKey@@QBEHPBXHPAX@Z",
+          "target": 6354208,
+          "addend": 0,
+          "resolved": 101
+        },
+        {
+          "offset": 1712,
+          "kind": 20,
+          "symbol": "?Decrypt@PKey@@QBEHPBXHPAX@Z",
+          "target": 6354512,
+          "addend": 0,
+          "resolved": 364
+        }
+      ],
+      "source_sha256": "bc6347575d256713acb234df64e319e6980302943b107df17a680fb829f0ced0",
+      "source": "src/recovered/classes/PKey/PKey_Generate_0060ee30.cpp",
+      "population": "population-121",
+      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PKey_Generate_0060ee30",
+      "source_order": 10977
+    },
+    {
+      "entry": 6354208,
+      "method": "0060f520",
+      "symbol": "?Encrypt@PKey@@QBEHPBXHPAX@Z",
+      "symbol_prefix": "?Encrypt@PKey@@QBEHPBXHPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 303,
+      "body_sha256": "a7565ae4c94b199f732a4c9a91e366320baaa145d97c558f3ce29c8962aedefe",
+      "padding_bytes": 1,
+      "full_extent_bytes": 304,
+      "full_extent_sha256": "4ce27229a22d0e76e2956caab49b1be29cb2a008fdbe5f866c4368f84bfe618c",
+      "relocations": [
+        {
+          "offset": 65,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294543163
+        },
+        {
+          "offset": 100,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 1522952
+        },
+        {
+          "offset": 119,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294543109
+        },
+        {
+          "offset": 145,
+          "kind": 20,
+          "symbol": "?XMP_Exponent_Mod@@YIHPAKPBK11H@Z",
+          "target": 5937248,
+          "addend": 0,
+          "resolved": 4294550187
+        },
+        {
+          "offset": 150,
+          "kind": 6,
+          "symbol": "?Error@?$Int@$0EA@@@2HA",
+          "target": 10753984,
+          "addend": 0,
+          "resolved": 10753984
+        },
+        {
+          "offset": 197,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 1522855
+        }
+      ],
+      "source_sha256": "517b762999590858362022bb21c786d7b53af9333d9f77cfd70298cc6519ad43",
+      "source": "src/recovered/classes/PKey/PKey_Encrypt_0060f520.cpp",
+      "population": "population-121",
+      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PKey_Encrypt_0060f520",
+      "source_order": 10978
+    },
+    {
+      "entry": 6354512,
+      "method": "0060f650",
+      "symbol": "?Decrypt@PKey@@QBEHPBXHPAX@Z",
+      "symbol_prefix": "?Decrypt@PKey@@QBEHPBXHPAX@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 336,
+      "body_sha256": "e30ee0e308bf1f56d3eb93546097a665d85acbaa30b6b67b01573b15fecb6d43",
+      "padding_bytes": 0,
+      "full_extent_bytes": 336,
+      "full_extent_sha256": "e30ee0e308bf1f56d3eb93546097a665d85acbaa30b6b67b01573b15fecb6d43",
+      "relocations": [
+        {
+          "offset": 25,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294542899
+        },
+        {
+          "offset": 82,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294542842
+        },
+        {
+          "offset": 129,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 1522619
+        },
+        {
+          "offset": 148,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294542776
+        },
+        {
+          "offset": 174,
+          "kind": 20,
+          "symbol": "?XMP_Exponent_Mod@@YIHPAKPBK11H@Z",
+          "target": 5937248,
+          "addend": 0,
+          "resolved": 4294549854
+        },
+        {
+          "offset": 179,
+          "kind": 6,
+          "symbol": "?Error@?$Int@$0EA@@@2HA",
+          "target": 10753984,
+          "addend": 0,
+          "resolved": 10753984
+        },
+        {
+          "offset": 232,
+          "kind": 20,
+          "symbol": "_memmove",
+          "target": 7877264,
+          "addend": 0,
+          "resolved": 1522516
+        }
+      ],
+      "source_sha256": "2e9d86ba39dc00bf7872b84e5409de152c11b357aa67b8fdc297a55ff8ca82bf",
+      "source": "src/recovered/classes/PKey/PKey_Decrypt_0060f650.cpp",
+      "population": "population-121",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "PKey_Decrypt_0060f650",
+      "source_order": 10979
+    },
+    {
+      "entry": 6354848,
+      "method": "0060f7a0",
+      "symbol": "??G?$Int@$0EA@@@QBE?AV0@G@Z",
+      "symbol_prefix": "??G?$Int@$0EA@@@QBE?AV0@G@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 82,
+      "body_sha256": "571365587565419b856b1662387f10aae03dc1ffba1ece5c2878dd01f3426cd7",
+      "padding_bytes": 14,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "93124ccddb451d13d3db10a4aa4475f30fbb169b27b190e0fed9283c087a2679",
+      "relocations": [
+        {
+          "offset": 19,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294542569
+        },
+        {
+          "offset": 42,
+          "kind": 20,
+          "symbol": "?XMP_Sub_Int@@YI_NPAKPBKG_NH@Z",
+          "target": 5930688,
+          "addend": 0,
+          "resolved": 4294543090
+        },
+        {
+          "offset": 47,
+          "kind": 6,
+          "symbol": "?Borrow@?$Int@$0EA@@@2_NA",
+          "target": 10753989,
+          "addend": 0,
+          "resolved": 10753989
+        }
+      ],
+      "source_sha256": "0d73ca438c2092ea02e834191893a39116534428f88230055c10b6476e477115",
+      "source": "src/recovered/classes/PKey/BigInt_operator_minus_0060f7a0.cpp",
+      "population": "population-121",
+      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BigInt_operator_minus_0060f7a0",
+      "source_order": 10980
+    },
+    {
+      "entry": 6354944,
+      "method": "0060f800",
+      "symbol": "?Inverse@?$Int@$0EA@@@QBE?AV1@ABV1@@Z",
+      "symbol_prefix": "?Inverse@?$Int@$0EA@@@QBE?AV1@ABV1@@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 75,
+      "body_sha256": "e1a654a9d1635bcb6edbbd9fe89940952357ff07190ad1a9f5cd9bb0ca9ff3ec",
+      "padding_bytes": 5,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "a48d157704024888e14fa7646fce319a788271a2f9d3ab113c2237136a2cb964",
+      "relocations": [
+        {
+          "offset": 19,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294542473
+        },
+        {
+          "offset": 40,
+          "kind": 20,
+          "symbol": "?XMP_Inverse_A_Mod_B@@YIXPAKPBK1H@Z",
+          "target": 5933728,
+          "addend": 0,
+          "resolved": 4294546036
+        }
+      ],
+      "source_sha256": "4a2d99f83fae79c36a44be1164dbf1797098ce5af38fded10f1d8607ae300d0a",
+      "source": "src/recovered/classes/PKey/BigInt_Inverse_0060f800.cpp",
+      "population": "population-121",
+      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BigInt_Inverse_0060f800",
+      "source_order": 10981
+    },
+    {
+      "entry": 6355024,
+      "method": "0060f850",
+      "symbol": "?Randomize@?$Int@$0EA@@@QAEXAAVStraw@@ABV1@1@Z",
+      "symbol_prefix": "?Randomize@?$Int@$0EA@@@QAEXAAVStraw@@ABV1@1@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 36,
+      "body_sha256": "c4f3c41813f9d972b4c5ead414dbb4ddbc86d2ca08bc69e092217bf7cf79466e",
+      "padding_bytes": 12,
+      "full_extent_bytes": 48,
+      "full_extent_sha256": "a03da6b20d69e6021aec4fa7be764c856b63327f20fafbfb717a57b2c8060ba3",
+      "relocations": [
+        {
+          "offset": 22,
+          "kind": 20,
+          "symbol": "?XMP_Randomize@@YIXPAKAAVStraw@@PBK2H@Z",
+          "target": 5939616,
+          "addend": 0,
+          "resolved": 4294551862
+        }
+      ],
+      "source_sha256": "0c66c7c262b5a3ca74341eadf12fe24a6f72074275e9d8fda278120aaddf241e",
+      "source": "src/recovered/classes/PKey/BigInt_Randomize_0060f850.cpp",
+      "population": "population-121",
+      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BigInt_Randomize_0060f850",
+      "source_order": 10982
+    },
+    {
+      "entry": 6355072,
+      "method": "0060f880",
+      "symbol": "??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z",
+      "symbol_prefix": "??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 30,
+      "body_sha256": "cb982da242352eeea28e88b7f1318fd5ba5bd8ff4499ec25d99a24c5eb843d64",
+      "padding_bytes": 2,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "79d9bf5d92793f3f1f0bb5b926992a303edfbd2487055fdd44084a07c4f0e822",
+      "relocations": [
+        {
+          "offset": 15,
+          "kind": 20,
+          "symbol": "?XMP_Add@@YI_NPAKPBK1_NH@Z",
+          "target": 5930384,
+          "addend": 0,
+          "resolved": 4294542589
+        },
+        {
+          "offset": 20,
+          "kind": 6,
+          "symbol": "?Carry@?$Int@$0EA@@@2_NA",
+          "target": 10753988,
+          "addend": 0,
+          "resolved": 10753988
+        }
+      ],
+      "source_sha256": "a19d0aec06ad86aa579c8f7e3fdfba780f40da885693da37112b9f6500530a16",
+      "source": "src/recovered/classes/PKey/BigInt_operator_add_assign_0060f880.cpp",
+      "population": "population-121",
+      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BigInt_operator_add_assign_0060f880",
+      "source_order": 10983
+    },
+    {
+      "entry": 6355104,
+      "method": "0060f8a0",
+      "symbol": "??H?$Int@$0EA@@@QBE?AV0@G@Z",
+      "symbol_prefix": "??H?$Int@$0EA@@@QBE?AV0@G@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 87,
+      "body_sha256": "5a1267c724a7165acf022e562d86f8b01e706f49819ff2c9a7144cc3a3f79ed3",
+      "padding_bytes": 9,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "33eeea116ffa5831022c1be664ae909188dbfdf203c4ae59df635594802cca66",
+      "relocations": [
+        {
+          "offset": 19,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294542313
+        },
+        {
+          "offset": 47,
+          "kind": 20,
+          "symbol": "?XMP_Add_Int@@YI_NPAKPBKK_NH@Z",
+          "target": 5930496,
+          "addend": 0,
+          "resolved": 4294542637
+        },
+        {
+          "offset": 52,
+          "kind": 6,
+          "symbol": "?Carry@?$Int@$0EA@@@2_NA",
+          "target": 10753988,
+          "addend": 0,
+          "resolved": 10753988
+        }
+      ],
+      "source_sha256": "e3a2344d547a80c250de0cd8ad21d447f9960a9563905a589a572db6e689cb0a",
+      "source": "src/recovered/classes/PKey/BigInt_operator_plus_0060f8a0.cpp",
+      "population": "population-121",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BigInt_operator_plus_0060f8a0",
+      "source_order": 10984
+    },
+    {
+      "entry": 6355200,
+      "method": "0060f900",
+      "symbol": "??D?$Int@$0EA@@@QBE?AV0@G@Z",
+      "symbol_prefix": "??D?$Int@$0EA@@@QBE?AV0@G@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 80,
+      "body_sha256": "c0d7ede9bb726b89ab5adc1bb06953592e0a7e9bc81dcdfea5ce501bde143e28",
+      "padding_bytes": 0,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "c0d7ede9bb726b89ab5adc1bb06953592e0a7e9bc81dcdfea5ce501bde143e28",
+      "relocations": [
+        {
+          "offset": 19,
+          "kind": 20,
+          "symbol": "?XMP_Init@@YIXPAKKH@Z",
+          "target": 5930144,
+          "addend": 0,
+          "resolved": 4294542217
+        },
+        {
+          "offset": 40,
+          "kind": 20,
+          "symbol": "?XMP_Unsigned_Mult_Int@@YIHPAKPBKFH@Z",
+          "target": 5931248,
+          "addend": 0,
+          "resolved": 4294543300
+        },
+        {
+          "offset": 45,
+          "kind": 6,
+          "symbol": "?Error@?$Int@$0EA@@@2HA",
+          "target": 10753984,
+          "addend": 0,
+          "resolved": 10753984
+        }
+      ],
+      "source_sha256": "89b34ba541074cb5f2612d91dbb37167c766aac79f399260be97bd47814cc86f",
+      "source": "src/recovered/classes/PKey/BigInt_operator_multiply_0060f900.cpp",
+      "population": "population-121",
+      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BigInt_operator_multiply_0060f900",
+      "source_order": 10985
+    },
+    {
+      "entry": 6355280,
+      "method": "0060f950",
+      "symbol": "??6?$Int@$0EA@@@QBE?AV0@H@Z",
+      "symbol_prefix": "??6?$Int@$0EA@@@QBE?AV0@H@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 70,
+      "body_sha256": "16327ad8ce4b0587635a90f4890458abddf917485c72fbec594d18e791cd0095",
+      "padding_bytes": 10,
+      "full_extent_bytes": 80,
+      "full_extent_sha256": "1aa7772e38fe364d3cb559ffaff667d8d7f33390d570ec1f2b0451def40fcb5c",
+      "relocations": [
+        {
+          "offset": 35,
+          "kind": 20,
+          "symbol": "?XMP_Shift_Left_Bits@@YIXPAKHH@Z",
+          "target": 5929728,
+          "addend": 0,
+          "resolved": 4294541705
+        }
+      ],
+      "source_sha256": "9b1fe2f597a9e85707f09931caeda61859665244e49d9de8554eb38c40cbd482",
+      "source": "src/recovered/classes/PKey/BigInt_operator_shift_left_0060f950.cpp",
+      "population": "population-121",
+      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BigInt_operator_shift_left_0060f950",
+      "source_order": 10986
+    },
+    {
+      "entry": 6355360,
+      "method": "0060f9a0",
+      "symbol": "??O?$Int@$0EA@@@QBE_NABV0@@Z",
+      "symbol_prefix": "??O?$Int@$0EA@@@QBE_NABV0@@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 23,
+      "body_sha256": "38ffa36b2988fea2e1df5b79808c806a5f53a764dbbd8124c3661ec1ffd74b07",
+      "padding_bytes": 9,
+      "full_extent_bytes": 32,
+      "full_extent_sha256": "428fc38814b9aa41a89bdcc9fb9d9d989b365e870ed5fdf168a991e70d4823dd",
+      "relocations": [
+        {
+          "offset": 7,
+          "kind": 20,
+          "symbol": "?XMP_Compare@@YIHPBK0H@Z",
+          "target": 5930304,
+          "addend": 0,
+          "resolved": 4294542229
+        }
+      ],
+      "source_sha256": "7b82bb923c386e56007e9254bdb5414eb4af605c7978f208c05af2bbfa2bca79",
+      "source": "src/recovered/classes/PKey/BigInt_operator_greater_0060f9a0.cpp",
+      "population": "population-121",
+      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "BigInt_operator_greater_0060f9a0",
+      "source_order": 10987
+    },
+    {
+      "entry": 6355392,
+      "method": "0060f9c0",
+      "symbol": "??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z",
+      "symbol_prefix": "??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 89,
+      "body_sha256": "f0f9ae3e35afbd0623204d1a104965746fbcca07da3d00d0b319073594230279",
+      "padding_bytes": 7,
+      "full_extent_bytes": 96,
+      "full_extent_sha256": "bdf3c6ffdbb1858e0764ac6f792af522abf8109aec7f24d7a27e5b0f38bc7446",
+      "relocations": [
+        {
+          "offset": 13,
+          "kind": 20,
+          "symbol": "?XMP_Fetch_Prime_Size@@YIHXZ",
+          "target": 5928256,
+          "addend": 0,
+          "resolved": 4294540143
+        },
+        {
+          "offset": 20,
+          "kind": 20,
+          "symbol": "?XMP_Fetch_Prime_Table@@YIPBGXZ",
+          "target": 5928240,
+          "addend": 0,
+          "resolved": 4294540120
+        },
+        {
+          "offset": 48,
+          "kind": 6,
+          "symbol": "?Remainder@?$Int@$0EA@@@2V1@A",
+          "target": 10753728,
+          "addend": 0,
+          "resolved": 10753728
+        },
+        {
+          "offset": 53,
+          "kind": 20,
+          "symbol": "?XMP_Unsigned_Div_Int@@YIGPAKPBKGH@Z",
+          "target": 5932352,
+          "addend": 0,
+          "resolved": 4294544199
+        }
+      ],
+      "source_sha256": "cdccc24cd2b677b9d95e6c4fcf4ff070efe19401c55304f73226e93b0f1d6448",
+      "source": "src/recovered/classes/PKey/RemainderTable_constructor_0060f9c0.cpp",
+      "population": "population-121",
+      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RemainderTable_constructor_0060f9c0",
+      "source_order": 10988
+    },
+    {
+      "entry": 6355488,
+      "method": "0060fa20",
+      "symbol": "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z",
+      "symbol_prefix": "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z",
+      "options": [
+        "/O2",
+        "/Ob2",
+        "/G5",
+        "/Gy"
+      ],
+      "body_bytes": 108,
+      "body_sha256": "41a58651c47c89f08c1978f16da178b3bfe9bc6bc81563d51228be21d69019db",
+      "padding_bytes": 4,
+      "full_extent_bytes": 112,
+      "full_extent_sha256": "207b29d36a27f1c0a8d8e77b9b5ff9b5aa6503f41d9dd8eb6e84393e39cba554",
+      "relocations": [
+        {
+          "offset": 5,
+          "kind": 20,
+          "symbol": "?XMP_Fetch_Prime_Size@@YIHXZ",
+          "target": 5928256,
+          "addend": 0,
+          "resolved": 4294540055
+        },
+        {
+          "offset": 12,
+          "kind": 20,
+          "symbol": "?XMP_Fetch_Prime_Table@@YIPBGXZ",
+          "target": 5928240,
+          "addend": 0,
+          "resolved": 4294540032
+        }
+      ],
+      "source_sha256": "86bef2616497e255711b00712821cb87f2936fef33108f111ec99b723cee70f7",
+      "source": "src/recovered/classes/PKey/RemainderTable_Increment_0060fa20.cpp",
+      "population": "population-121",
+      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
+      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
+      "source_quality_family": "hand-written",
+      "semantic_name": "RemainderTable_Increment_0060fa20",
+      "source_order": 10989
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 import time
 
+import catalog_io
 from canonical import sha
 from verify_manifest import require, TARGET_BYTES, TARGET_SHA256
 
@@ -71,10 +72,12 @@ def main():
     prior = [json.loads(line) for line in prior_bytes.splitlines()]
     receipt = json.loads(read(args.build/'build-receipt.json'))
     manifest = json.loads(read(args.build/'fresh-accepted.json'))
-    catalog_bytes = read(ROOT/'manifests/original_target.json'); catalog = json.loads(catalog_bytes)
+    catalog_path = catalog_io.locate(ROOT); catalog_blobs = {}
+    catalog = catalog_io.load(catalog_path, references=False, blobs=catalog_blobs)
+    for path, data in catalog_blobs.items(): inputs[str(path)] = sha(data)
     require(receipt['whole_file_exact'] and receipt['output_sha256'] == TARGET_SHA256 and
             receipt['output_bytes'] == TARGET_BYTES and manifest['executable_sha256'] == TARGET_SHA256 and
-            receipt['canonical_manifest_sha256'] == sha(catalog_bytes), 'Wrong/stale fresh build')
+            receipt['canonical_manifest_sha256'] == catalog_io.digest(catalog_path, catalog_blobs), 'Wrong/stale fresh build')
     require(sha(read(args.build/'reference.exe')) == TARGET_SHA256, 'Packaged output drift')
     current = {r['entry']: r for r in catalog['regions']}
     require(len(current) == len(catalog['regions']) == len(manifest['accepted']) == receipt['tracked_sources'],

@@ -320,8 +320,8 @@ def main():
         plan['references'].setdefault(item['symbol_prefix'], item['entry'])
     config = json.loads(args.config.read_bytes())
     audit = Audit(REPOSITORY, config['executable'])
-    catalog_path = REPOSITORY / 'manifests/original_target.json'
-    catalog = catalog_io.loads(catalog_path.read_bytes())
+    catalog_path = catalog_io.locate(REPOSITORY)
+    catalog = catalog_io.load(catalog_path)
     sync_headers(catalog); catalog_io.dump(catalog, catalog_path)
     existing = {r['entry']: r for r in catalog['regions']}
     # A replaced region keeps the bindings it was accepted with (its
