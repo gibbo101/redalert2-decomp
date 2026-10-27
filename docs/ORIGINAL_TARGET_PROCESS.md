@@ -49,7 +49,7 @@ High shape with low score means control flow is right and register allocation
 or scheduling differs. Change statement order, temporaries, types, signedness,
 expression grouping, loop form, inlining or the option variant. Replace Ghidra
 type names with shared types as the layout becomes clear. Time-box each function
-(default ~30 minutes of attempts); record the best score in the handoff or queue
+(about 30 minutes per KB of body, capped at four hours; big functions get the controlled-study method: lab experiments that yield a rule, then the rule applied); record the best score in the handoff or queue
 and move on. Misses are never closed permanently; anyone may resume one.
 
 **Promote.** Build a candidate population (bounds from the frozen inventory,

@@ -50,7 +50,7 @@ external material. `docs/history/` holds per-batch records: consult, don't reloa
    near misses (statement order, temporaries, types, expression shape, inline
    splits, option variant) is the normal work, not a forbidden "steering". A
    miss is never "closed": record its best score and move on when the time box
-   (default ~30 minutes of attempts per function) runs out; anyone may resume it.
+   (about 30 minutes per KB of body, capped at four hours) runs out; anyone may resume it.
 3. **Accept in bulk.** Promote exact candidates through `compile_candidates.py`
    (strict audit) into `src/recovered/` and the canonical manifest. No
    separate reviewer is required for source, tools or build changes; the
