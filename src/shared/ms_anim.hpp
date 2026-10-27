@@ -12,6 +12,7 @@
 #ifndef RA2_SHARED_MS_ANIM_HPP
 #define RA2_SHARED_MS_ANIM_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/rect.hpp"
 #include "shared/surface.hpp"
 #include "shared/shape_file.hpp"
@@ -227,16 +228,12 @@ public:
 // Opens a VQA movie (0x005A1010, as declared in Movie_Create_Movie_Handle).
 VQAMovie *__fastcall VQA_Unknown_005A1010(char const *filename, Surface *surface, Rect unknown1, Rect area,
                                           int unknown2, int unknown3);
-extern int unknown_8523e0;              // 0x008523E0 VQA frame width (hypothesis)
-extern int unknown_8523e4;              // 0x008523E4 VQA frame height (hypothesis)
-extern float unknown_volume_a40b44;     // 0x00A40B44 sound effect volume scale
 
 // Loads a palette file into 0x00838710 (6-bit components scaled by 4) and
 // returns a new drawer for it, or null (0x005AC560, __fastcall; name is a
 // hypothesis).
 ConvertClass *__fastcall unknown_load_drawer_5ac560(Wstring const &filename);
 extern PaletteClass unknown_palette_838710;     // 0x00838710
-extern Surface *unknown_surface_839950;         // 0x00839950 screen
 
 // A PCX picture copied into the background surface, then every other
 // animation redrawn over it (RTTI vtable 0x007A6E80). Name of the loader and
@@ -274,7 +271,5 @@ ShapeFileStruct *__fastcall unknown_load_shape_495310(Wstring const &filename, b
 
 // Surfaces: an animation whose rectangle changes restores the old area of
 // 0x00839954 from 0x00839958 (Surface::Copy_From, slot 2).
-extern Surface *unknown_surface_839954;                 // 0x00839954
-extern Surface *unknown_surface_839958;                 // 0x00839958
 
 #endif

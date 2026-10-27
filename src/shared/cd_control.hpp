@@ -24,6 +24,7 @@
 #ifndef RA2_SHARED_CD_CONTROL_HPP
 #define RA2_SHARED_CD_CONTROL_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/win32_api.hpp"
 #include "shared/crt_memory.hpp"
 
@@ -115,7 +116,6 @@ public:
 extern CDControlClass CDControl;    // 0x00850830
 
 // Set when the Windows 95 (VWIN32) path is used (hypothesis; set elsewhere).
-extern bool unknown_flag_839c4c;    // 0x00839C4C
 
 #include "shared/debug_printf.hpp"
 

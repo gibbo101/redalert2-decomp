@@ -12,6 +12,7 @@
 #ifndef RA2_SHARED_WAVE_HPP
 #define RA2_SHARED_WAVE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/object.hpp"
 #include "shared/unknown_list_832470.hpp"
 #include "shared/map_view.hpp"
@@ -21,10 +22,8 @@ class WaveClass;
 class CellClass;
 
 extern "C" GUID const CLSID_WaveClass;            // 0x007A1C90
-extern bool unknown_flag_a40958;                  // 0x00A40958 (shared with bullet.hpp)
 extern DynamicVectorClass<WaveClass *> Waves;     // 0x00A40BE8
 class Surface;
-extern Surface *unknown_surface_83995c;           // 0x0083995C current drawing surface (gscreen.hpp)
 extern bool Wave_Tables_Initialized_00b25554;
 extern unsigned short Wave_Distance_Table_00af9620[300][300];
 extern short Wave_Sine_Table_00af91e4[500];

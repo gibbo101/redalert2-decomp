@@ -160,7 +160,7 @@
       },
       {
         "path": "src/shared/dsurface.hpp",
-        "sha256": "28d7c468dbccd20953045bf05c86fb1757cc3703b39693e834515be148eb3923"
+        "sha256": "c8beb850646f8839ce8c3624c9e4dd518e0916ff2a0ae16e0e73fc9e6d7ebad4"
       },
       {
         "path": "src/shared/lcw.hpp",
@@ -244,11 +244,11 @@
       },
       {
         "path": "src/shared/movie.hpp",
-        "sha256": "ae79b621e99b43ba7201576f59595cd0ce54a4c6cb5d9b1b3ce30e3db3fc3e62"
+        "sha256": "896d8fe6fe1e27cde2b2fa7700251bb494f2478989c8ec0d4cbe465b6f36c545"
       },
       {
         "path": "src/shared/movie_globals.hpp",
-        "sha256": "4b90d5f43a1003fed27f79448c50143919dca1c66a1db2d2340e99e379034fb4"
+        "sha256": "de125d25064acb5b02cd2d16ec5162db96d99b1104b8323b99a210e141ed39ca"
       },
       {
         "path": "src/shared/pixel_fx.hpp",
@@ -260,15 +260,15 @@
       },
       {
         "path": "src/shared/wwmouse.hpp",
-        "sha256": "573e8c01d3a5a719d0c836958f41735062549db3739cae5f5a1a230041a702e5"
+        "sha256": "82349408ce0f6067c0713a89796eed3f39085c99816ad6a0c0d1c13e9aabfb49"
       },
       {
         "path": "src/shared/ms_anim.hpp",
-        "sha256": "995f86da282bb2a630b3ebad47c378f0c0f025a9b6655a6fc2c2c09c773199bc"
+        "sha256": "74c025893511d0df55afd363dfac1cce715d9787f3b846165b642ec153189426"
       },
       {
         "path": "src/shared/msfont.hpp",
-        "sha256": "a5c84336b40e1589848266c366cd16d71f86bdd06738eb0533f108964c66674f"
+        "sha256": "827283a2cb85739febb74f6fe610da03de9aa11fa45f2454277315d4f456c7bc"
       },
       {
         "path": "src/shared/palette.hpp",
@@ -280,7 +280,7 @@
       },
       {
         "path": "src/shared/ms_engine.hpp",
-        "sha256": "883c8a19260cbb930e62cfe2537ee59fa60ad8a2fb83746ae8f158acc850d28e"
+        "sha256": "310671c6fa83f6c6630163e73516e4c03cf67a25e07df70436e12b68ff5b40b2"
       },
       {
         "path": "src/shared/cd.hpp",
@@ -288,11 +288,11 @@
       },
       {
         "path": "src/shared/cd_control.hpp",
-        "sha256": "ba67b782d2d0fe050f7e004983b14f5b9e2f985881d48b29eb3d57b781dff384"
+        "sha256": "f0b9e0cc590257ff2f435768959faedd98471d0d4c8dc99c4fb4563fad0dd2ad"
       },
       {
         "path": "src/shared/keyboard.hpp",
-        "sha256": "b0e60f20c8a39a24e40f77cc12b1d8151a3e5e5b81f7680927b22db9afd1f80e"
+        "sha256": "c3af4d0ff8cafcd9ad1151e8a30b49dcbb574469fcd97f4174dc5f42e7bb3e7c"
       },
       {
         "path": "src/shared/mouse.hpp",
@@ -312,7 +312,7 @@
       },
       {
         "path": "src/shared/ms_message_box.hpp",
-        "sha256": "a4174dacc67bbadcb237e401e7d44dd80a3c0a86abf2e75cf8f3b72c8709eb18"
+        "sha256": "ca47c669b273f956aac31d0b6db8f707fc5175d183e34e047b5b2201fe25f91c"
       },
       {
         "path": "src/shared/wide_string.hpp",
@@ -352,7 +352,7 @@
       },
       {
         "path": "src/shared/object.hpp",
-        "sha256": "74eb95fbaeeaa3c8dbd8afd0c55f7b529908ec1f9ce7015a163adf0a451bbb03"
+        "sha256": "6e9ed6de5ff30a687d7571aa03747058d81d2fa7501cba4aa22313f88b46b1c6"
       },
       {
         "path": "src/shared/object_type.hpp",
@@ -372,11 +372,11 @@
       },
       {
         "path": "src/shared/gscreen.hpp",
-        "sha256": "ce25b85c47b19e40b8f661566c95bf5eeca1590ff4ac5033a8e208aaccc2adb5"
+        "sha256": "0d8fa8527304b94b87522658c01d87c821a1b0ec6ee82d1f8e58c34c1bd1e59a"
       },
       {
         "path": "src/shared/map.hpp",
-        "sha256": "b0c6ac2e31e21f0b7d2f0a1cccb97a9529e3b9b4b5ecdb86ba9e10ab8127593c"
+        "sha256": "865cec09d01a4e420148f2cb742174fe92fc3c73be39f881d67b2372550ab222"
       },
       {
         "path": "src/shared/ccini_class.hpp",
@@ -392,23 +392,23 @@
       },
       {
         "path": "src/shared/anim.hpp",
-        "sha256": "b5f40774c901fbab734a2a39d6e20eee7106c21cc9e4ee7c09955a81a7f0e6cd"
+        "sha256": "0413f808d803cbc8e1bc58b7d75f3326f4a16f28e7c8fd944481e55e4d48b74d"
       },
       {
         "path": "src/shared/anim_type.hpp",
-        "sha256": "d3f6da2f2a619fec197cf7e69344e0d1e6000bca637cf1b3713f9d03970035f2"
+        "sha256": "c9630f77a4c8c253b944f9ee408bd5ce81712ec288f54d675a9184826caf660b"
       },
       {
         "path": "src/shared/bullet.hpp",
-        "sha256": "be3b97c9fbb72b7399ebb9c752a5e42ed5ad4a127eb7c808fa5bd5221a25b1e6"
+        "sha256": "601bafa9ba052a48467479c3ca9650fb438118e674b5b7138f2f4f73de4fbc51"
       },
       {
         "path": "src/shared/display.hpp",
-        "sha256": "4aff3cef1931d67ed02c53ff059dbbb27c36a02bd1e2f31d7cc8d8183658c8b8"
+        "sha256": "804d713dab1efa880a4b996c00b38e0133885cd058f6931dd1e37d1794417a8b"
       },
       {
         "path": "src/shared/techno.hpp",
-        "sha256": "1e530d229f356ef674725f5c07977d341b81c7356b28aacb97d01b905c2d85da"
+        "sha256": "80ae4fb398773cdc3564775771f658e5cce2eb8ac1900b33da24975794a188b6"
       },
       {
         "path": "src/shared/techno_type.hpp",
@@ -432,7 +432,7 @@
       },
       {
         "path": "src/shared/house.hpp",
-        "sha256": "1bd453091f55a2a89b40db080a6d2ca44e2355a56871e63a3b8a3f60eb204b07"
+        "sha256": "8bf659e0f14b95df6f59a99fdd96a830b23818f306a521c1926a6fce263766ae"
       },
       {
         "path": "src/shared/infantry_type.hpp",
@@ -460,11 +460,11 @@
       },
       {
         "path": "src/shared/radar.hpp",
-        "sha256": "100de023d6b92e98a9d9af44bb634556d4d6fda6edd4d9ae70e5cc5ac506b4f6"
+        "sha256": "1785cb55c14d241711a3959a89d389b89a4210682dea98a15178c1909cbb7a6c"
       },
       {
         "path": "src/shared/scroll.hpp",
-        "sha256": "093f4502184766d7f60e75eda7566689aa5fd2fb58d3f88fe65f9d0588a91ef8"
+        "sha256": "5196fcccf43551b1cff8f62e7be38cf8edd2bc4b40f1f5dfd7299cc790b57953"
       },
       {
         "path": "src/shared/sha_pipe.hpp",
@@ -476,7 +476,7 @@
       },
       {
         "path": "src/shared/sidebar.hpp",
-        "sha256": "98204fdee3c5c538edfa8ea444bc6d48d97795ac6137d49d848a82e3726d1d7e"
+        "sha256": "af1d6a82fe37e491438d2cff340075e7ef5e9521acfc22d1ed6c448b6439491b"
       },
       {
         "path": "src/shared/stage.hpp",
@@ -496,7 +496,7 @@
       },
       {
         "path": "src/shared/voxel_anim.hpp",
-        "sha256": "60e948e1167fb08ab4a9beaf772ca921547158a03a17c38c6c8f242d889d7b7e"
+        "sha256": "0329e46aa37afadefcc436dd2a66df754a56e6dd2ed1175e8926220396e2a95e"
       },
       {
         "path": "src/shared/voxel_anim_type.hpp",
@@ -528,7 +528,7 @@
       },
       {
         "path": "src/shared/connection.hpp",
-        "sha256": "ae0e655401cdfe63782352f25d249f24af22e0ce378ae20fc874c80b4a219c0c"
+        "sha256": "25778f6062467b2cb63e7a25f23a9ee81cf037545626f11ea53101a88f745f59"
       },
       {
         "path": "src/shared/fast_math.hpp",
@@ -548,7 +548,7 @@
       },
       {
         "path": "src/shared/ipx_interface.hpp",
-        "sha256": "faebce45d56dbe5bf1483aa88da4779b61353f2a28edd4993b5048e20d1e1c0d"
+        "sha256": "bbbadd71307921c38b4f23d9bea1259d4d3b9e627a4f03e2cac3bd671f241dfc"
       },
       {
         "path": "src/shared/ipx_manager.hpp",
@@ -588,11 +588,11 @@
       },
       {
         "path": "src/shared/task_force.hpp",
-        "sha256": "20350cad49c8e2601611c74c950da86224a8825114c03d5925cf7689a36a569c"
+        "sha256": "d3e0411c5a4e1aa7145ca6cd3b14794d0c1b2f6df9e1a90d7ff86fa2f518941f"
       },
       {
         "path": "src/shared/team.hpp",
-        "sha256": "52b3c3168afffed0eb87a948a4fc41fe555dd5d0ea848bd93804768207c603d6"
+        "sha256": "68cb4b07d98bab152f026b7c95c8e85bd089dff4b3ffa5493afc6e1b3df0d03e"
       },
       {
         "path": "src/shared/team_type.hpp",
@@ -616,11 +616,11 @@
       },
       {
         "path": "src/shared/wol_sink.hpp",
-        "sha256": "24a81b11179a7e3f90a0553e2c87e05b1db9687751e1ce02482493e8541dbd60"
+        "sha256": "90861a8a4d218a8cbc36ded4ab1fb84c5096129620d678dfc07e2185ad1ea88e"
       },
       {
         "path": "src/shared/house_screen.hpp",
-        "sha256": "4f7ef5e4906cbcf901d8adb0925d7e3eadec8f4459b32603b945093dc9d55976"
+        "sha256": "8646f0677ee9bfb4c66e33278df31a29b35916e621254182fff8f8cf94b2a050"
       },
       {
         "path": "src/shared/house_type.hpp",
@@ -668,7 +668,7 @@
       },
       {
         "path": "src/shared/direct3d.hpp",
-        "sha256": "8b1146fe9da45d398543d46b58f53e322e5d814a3409db4678ff2bb364a323a9"
+        "sha256": "1868d3d499125903bc285d4a357ba71884b203fe6af165500ce4e9f1db11bfa7"
       },
       {
         "path": "src/shared/hicolor.hpp",
@@ -680,7 +680,7 @@
       },
       {
         "path": "src/shared/text_print.hpp",
-        "sha256": "c9bef591800168a885e39fd39544155a5ff840615f67d9a58f9a2323609ffdae"
+        "sha256": "33d2541d8681286a81e71ffc82d4cfbf7f538210d5461e3e7e41ba0c4609f99c"
       },
       {
         "path": "src/shared/event.hpp",
@@ -692,7 +692,7 @@
       },
       {
         "path": "src/shared/aircraft.hpp",
-        "sha256": "7e786c63a2c31036f1a42a320fcdb3b0839aa27fb6c2f3eaaa588997f2cedc3d"
+        "sha256": "88d259ca7deb05ae1820002f669345e216a9b531331e66289671e08754b6d44d"
       },
       {
         "path": "src/shared/com_ptr.hpp",
@@ -712,7 +712,7 @@
       },
       {
         "path": "src/shared/foot.hpp",
-        "sha256": "8b8e35eee727a4841437aea10249a2af5d9323f8543bbd400a55f00d066bcbe7"
+        "sha256": "3fa73e1a58368248564a99b63ff07c63f7bb0034b69cacf868352b3848dfb01d"
       },
       {
         "path": "src/shared/hover_locomotion.hpp",
@@ -728,7 +728,7 @@
       },
       {
         "path": "src/shared/locomotion.hpp",
-        "sha256": "cec6d7c56a80a1d271fe7f046d0b047e0b6f09cad78bddfeac82eee6020bc919"
+        "sha256": "9d775c3d89f92887eb3401715931721a0735c886b9f2a57cec6f34adc435db8e"
       },
       {
         "path": "src/shared/mech_locomotion.hpp",
@@ -760,7 +760,7 @@
       },
       {
         "path": "src/shared/building.hpp",
-        "sha256": "07fe113ee77f66a9ec7b38229535febc2400e34350888c26ed738a9904bf071c"
+        "sha256": "fb60e6f69982291de0c354a3cb43443ee89186e62e396b71b6b89aa274c5ee96"
       },
       {
         "path": "src/shared/building_type.hpp",
@@ -776,7 +776,7 @@
       },
       {
         "path": "src/shared/map_cell_view.hpp",
-        "sha256": "e62c715bf42e049d781f02e56c171b0184931130d85833ea4e22f1f664cdeaf8"
+        "sha256": "96033b347ccc2e8a0d5d9a0eeb2b31d7e596aa9b28ed4c310310eebbb1da0ad5"
       },
       {
         "path": "src/shared/unit.hpp",
@@ -804,11 +804,11 @@
       },
       {
         "path": "src/shared/infantry.hpp",
-        "sha256": "769a1fdd12bace3a6e50b2d21ac2e8dde923ba469ac8c6667693e0016330aef5"
+        "sha256": "c91d2d59c0e108d1fd562c21d869cce1787e5b192ba7a99d41b54a78f07c1e8c"
       },
       {
         "path": "src/shared/isometric_tile.hpp",
-        "sha256": "d311dbb1718ad7b6a6dd12b79d78f6039763ed14f93982c61c5b37f7815deba2"
+        "sha256": "d01acd89e045085360a5157d89cf166920edf1742e5d0015d9a1eb7590965eb8"
       },
       {
         "path": "src/shared/isometric_tile_type.hpp",
@@ -852,7 +852,7 @@
       },
       {
         "path": "src/shared/cstream.hpp",
-        "sha256": "ffd79da4fb6304f26269ec115ec2fcdd470c64706d35cfcc721c8d4fd7d32bfb"
+        "sha256": "cd5502e26273de6d91234349ff2163a9c37a0794d46b14a7929783304173db19"
       },
       {
         "path": "src/shared/discrete_distribution.hpp",
@@ -860,7 +860,7 @@
       },
       {
         "path": "src/shared/planning.hpp",
-        "sha256": "7894b1c07ba0684c1b746d34af8dde4d6680be28590d92fd02f64393d7b63031"
+        "sha256": "9ba12327f0756878e4935abf6035c90fc0a92cebefcc1c26137aaacb1f62bae7"
       },
       {
         "path": "src/shared/target.hpp",
@@ -940,7 +940,7 @@
       },
       {
         "path": "src/shared/tool_tip.hpp",
-        "sha256": "7b4ecf4f691a13d8609caa4ce4cbad21d2919c5977a3a59d39ea46a4e7a76c9c"
+        "sha256": "bd9d70d59916a26103f9754c4be29b4bf5f3aad10a635748f5e4f52444d6d6c0"
       },
       {
         "path": "src/shared/rules.hpp",
@@ -968,7 +968,7 @@
       },
       {
         "path": "src/shared/smudge.hpp",
-        "sha256": "e0da72fa610d956c18637c95d5a992d97925c8b740efa3d78b7f73094033ed9c"
+        "sha256": "b4e78ea13cdf00e9d1fca17f4c41cb322aeb93e86022f165b2306b1df99985e7"
       },
       {
         "path": "src/shared/smudge_type.hpp",
@@ -976,7 +976,7 @@
       },
       {
         "path": "src/shared/terrain.hpp",
-        "sha256": "118d8354b504122fb473f85cd5b39982af3b95ec884230c811136f7cfb58a2ac"
+        "sha256": "04e036b66d6d045538e0631520ec4042b75597bef7739dc381a829b4660970b6"
       },
       {
         "path": "src/shared/terrain_type.hpp",
@@ -988,7 +988,7 @@
       },
       {
         "path": "src/shared/wave.hpp",
-        "sha256": "c0c267fcbb73005852adc1d32b42201d7bcca586686aec3f447f68c793477647"
+        "sha256": "cd6ea28ec63ef8cf2238f6e471a41202bc3ce26d1812a1bcc65b6ade90c29436"
       },
       {
         "path": "src/shared/plain_xlat_alpha_blitter.hpp",
@@ -1004,7 +1004,7 @@
       },
       {
         "path": "src/shared/overlay.hpp",
-        "sha256": "d68edf504995c28e7e2e6a95ab837e4d18f439313ac5f25d54f9672834957523"
+        "sha256": "5fab86f116cfb816de294902f10145a0111010335eb35628ba0cf04fd8a8cedd"
       },
       {
         "path": "src/shared/overlay_type.hpp",
@@ -1056,7 +1056,7 @@
       },
       {
         "path": "src/shared/empulse_class.hpp",
-        "sha256": "3e32f1f5c367d5d9246760824f774bdfb7c68c1e07a5a3dd0e4aef9101c78b53"
+        "sha256": "7a80d96ae626e4ed16f01b000a8ddaaa717a599d33e439dc27d6177fbacd75fc"
       },
       {
         "path": "src/shared/ipx_address.hpp",
@@ -1220,7 +1220,7 @@
       },
       {
         "path": "src/shared/serial_progress.hpp",
-        "sha256": "efd893d4c4a7f7d532fc16592b631bb5d1116e48f651da7d45c4a91a66a7da72"
+        "sha256": "2da8f4d70fe9663145134d4f59eb6495ec68b0828816514745e76217f654b5a0"
       },
       {
         "path": "src/shared/translucent_write_alpha_blitter.hpp",
@@ -1413,6 +1413,10 @@
       {
         "path": "src/shared/storage_class.hpp",
         "sha256": "0d54812ddd24c89f7f88778a37d8e3283e2d79ae530059cc9972f4fc4476143f"
+      },
+      {
+        "path": "src/shared/unknown_globals.hpp",
+        "sha256": "7e6e3262cf4a3e02c0238d0f58c45b2e91f0eaaaa614da11153afb1ee27f0040"
       }
     ],
     "source_quality_checkpoint": {

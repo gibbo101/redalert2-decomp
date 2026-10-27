@@ -14,6 +14,7 @@
 #ifndef RA2_SHARED_KEYBOARD_HPP
 #define RA2_SHARED_KEYBOARD_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/rect.hpp"
 #include "shared/crt_memory.hpp"
 #include "shared/win32_api.hpp"
@@ -74,7 +75,6 @@ private:
 extern WWKeyboardClass *WWKeyboard;    // 0x00832468
 
 // Set while the keyboard is ignored (hypothesis; set elsewhere).
-extern bool unknown_flag_a40d44;       // 0x00A40D44
 // Whether WM_CHAR characters are queued (hypothesis; set elsewhere).
 extern bool unknown_flag_a3dc89;       // 0x00A3DC89
 

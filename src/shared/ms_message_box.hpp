@@ -10,6 +10,7 @@
 #ifndef RA2_SHARED_MS_MESSAGE_BOX_HPP
 #define RA2_SHARED_MS_MESSAGE_BOX_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/mouse.hpp"
 #include "shared/rect.hpp"
 #include "shared/shape_file.hpp"
@@ -23,7 +24,6 @@ int __stdcall Message_Box(unsigned short const *text, unsigned short const *butt
 int __stdcall Message_Box_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);           // 0x005B48C0
 void __fastcall Message_Box_Command(HWND window, int id, HWND control, unsigned code);                             // 0x005B4980
 
-extern bool unknown_flag_a40958;                // 0x00A40958
 
 void __fastcall unknown_5159b0(int unknown1, bool unknown2);                         // 0x005159B0
 HWND __fastcall unknown_create_dialog_5ff610(int resource, DialogProc proc, int unknown3);  // 0x005FF610

@@ -27,6 +27,7 @@
 #ifndef RA2_SHARED_FOOT_HPP
 #define RA2_SHARED_FOOT_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/techno.hpp"
 #include "shared/com_ptr.hpp"
 #include "shared/ilocomotion.hpp"
@@ -35,7 +36,6 @@ class FootClass;
 class ParasiteClass;
 class TeamTypeClass;
 
-extern bool unknown_flag_a40958;            // 0x00A40958
 // An object at 0x00839EA0 told when a unit leaves a cell (FootClass slot 52;
 // hypothesis).
 struct UnknownTracker839EA0 {
@@ -43,7 +43,6 @@ struct UnknownTracker839EA0 {
     void Unknown_004131E0(FootClass *foot);    // 0x004131E0 (a unit arrives; FootClass slot 53)
 };
 extern UnknownTracker839EA0 unknown_tracker_839ea0;
-extern bool unknown_flag_a40d04;            // 0x00A40D04 (also shared/sidebar.hpp; FootClass::Detach keeps a live parasite while it is set)
 // An object found by cell (0x00710160 searches the list at 0x00AD074C for
 // one whose cell, +0xE0, matches; FootClass slot 77; hypothesis).
 struct UnknownCellObject710160 {
@@ -53,7 +52,6 @@ struct UnknownCellObject710160 {
     bool unknown_e8;                    // +0xE8
 };
 UnknownCellObject710160 *__fastcall Unknown_00710160(Cell const &cell);  // 0x00710160
-extern int unknown_a40774;                  // 0x00A40774 (also shared/bullet.hpp)
 
 // Objects with a cell at +0x28, indexed by FootClass +0x574 (hypothesis:
 // the tunnels, TubeClass; the list is at 0x008661C8).

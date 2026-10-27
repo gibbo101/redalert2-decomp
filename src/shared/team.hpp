@@ -21,6 +21,7 @@
 #ifndef RA2_SHARED_TEAM_HPP
 #define RA2_SHARED_TEAM_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/abstract_type.hpp"
 #include "shared/cd_timer.hpp"
 #include "shared/techno.hpp"   // UnknownTimer423F60
@@ -44,7 +45,6 @@ class BuildingTypeClass;
 // hypothesis).
 AbstractClass *__fastcall Unknown_006BCF70(BuildingTypeClass *type, HouseClass *enemy, FootClass *member, int arg4, bool arg5);
 
-extern int unknown_a40774;                                          // 0x00A40774
 
 class CellClass;
 // The cell a target is (kind 0x0B), or 0.

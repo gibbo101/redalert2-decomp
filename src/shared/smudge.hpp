@@ -14,6 +14,7 @@
 #ifndef RA2_SHARED_SMUDGE_HPP
 #define RA2_SHARED_SMUDGE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/smudge_type.hpp"
 #include "shared/map_cell_view.hpp"
 
@@ -24,9 +25,7 @@ extern "C" GUID const CLSID_SmudgeClass;        // 0x007A1C00
 extern int unknown_placing_house_7f4230;
 // Smudges are always placed when this is positive (0x00A40774; hypothesis:
 // a scenario-loading or editor flag).
-extern int unknown_a40774;
 // Forces image reloads (0x00A40D13; also declared by shared/anim_type.hpp).
-extern bool unknown_a40d13;
 // The INI section name "Smudge" (a pointer variable at 0x007AB558).
 extern char const *unknown_smudge_section_7ab558;
 

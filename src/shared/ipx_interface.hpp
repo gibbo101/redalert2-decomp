@@ -8,6 +8,7 @@
 #ifndef RA2_SHARED_IPX_INTERFACE_HPP
 #define RA2_SHARED_IPX_INTERFACE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/winsock_interface.hpp"
 #include "shared/crt_string.hpp"
 extern "C" unsigned int __cdecl strlen(char const *string);
@@ -19,7 +20,6 @@ extern "C" int __cdecl sprintf(char *buffer, char const *format, ...);          
 
 // Windows version facts (0x00839C4C: a Windows 9x flag; 0x00839BC0 and
 // 0x00839BC4: hypothesis, the major and minor version).
-extern bool unknown_flag_839c4c;
 extern int unknown_839bc0;
 extern int unknown_839bc4;
 

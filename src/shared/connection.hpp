@@ -14,6 +14,7 @@
 #ifndef RA2_SHARED_CONNECTION_HPP
 #define RA2_SHARED_CONNECTION_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/comm_buffer.hpp"
 
 // Packet codes (CommHeaderType::Code).
@@ -25,7 +26,6 @@ enum {
 };
 
 // A game-mode value (0x00A3D298; shared/object.hpp names it too).
-extern int unknown_game_mode_a3d298;
 // Forwarding flag (0x00A3FBA8): the header's fourth byte carries a target.
 extern bool unknown_flag_a3fba8;
 

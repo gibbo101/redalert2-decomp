@@ -12,6 +12,7 @@
 // Draw_It and Blit_Display, the button list is the static Buttons).
 #ifndef RA2_SHARED_GSCREEN_HPP
 #define RA2_SHARED_GSCREEN_HPP
+#include "shared/unknown_globals.hpp"
 #ifdef RA2_SHARED_MAP_VIEW_HPP
 #error "shared/map_view.hpp declares light screen layers: include the full layer headers before it"
 #endif
@@ -89,7 +90,6 @@ public:
 // 3D device used when unknown_flag_852fd7 is set (0x00852FE0; Blit_Display runs
 // an empty scene on it): shared/direct3d.hpp's unknown_device_852fe0.
 #include "shared/direct3d.hpp"
-extern bool unknown_flag_852fd7;                // shared/dsurface.hpp
 
 // Drawn by Render after the buttons (0x00A3DC70, method 0x005B5B30).
 class UnknownObjectA3DC70 {
@@ -122,18 +122,10 @@ extern UnknownStruct_AC11FC *unknown_ac11fc;
 void __fastcall Unknown_005419E0(bool unknown);              // 0x005419E0 Render, when unknown_flag_a3d8c4
 extern bool unknown_flag_a3d8c4;
 extern bool unknown_flag_abcd85;                // Render erases the mouse from the sidebar once
-extern bool unknown_flag_a40d13;
-extern bool unknown_flag_a40b30;                // shared/wwmouse.hpp
 extern bool unknown_flag_a40380;
 extern bool unknown_flag_8373f6;
-extern int unknown_int_839648;                  // shared/wwmouse.hpp (screen width)
 extern int unknown_int_a40d34;                  // Blit copies with the last Copy_From flag when zero
 
 extern HWND MainWindow;                     // 0x00B263D8
-extern Surface *unknown_surface_839948;     // 0x00839948 (sidebar surface; shared/wwmouse.hpp)
-extern Surface *unknown_surface_839950;     // 0x00839950 screen (shared/movie.hpp)
-extern Surface *unknown_surface_839954;     // 0x00839954 (Get_Input draws the buttons on it)
-extern Surface *unknown_surface_83995c;     // 0x0083995C current drawing surface
-extern Surface *unknown_surface_839964;     // 0x00839964 the surface Render composes
 
 #endif

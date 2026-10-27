@@ -9,6 +9,7 @@
 // or unknown_.
 #ifndef RA2_SHARED_SIDEBAR_HPP
 #define RA2_SHARED_SIDEBAR_HPP
+#include "shared/unknown_globals.hpp"
 #ifdef RA2_SHARED_MAP_VIEW_HPP
 #error "shared/map_view.hpp declares light screen layers: include the full layer headers before it"
 #endif
@@ -19,7 +20,6 @@
 
 // Shape file retrieval by name: MixFileClass<CCFileClass>::Retrieve, shared/mix_file_class.hpp.
 // Unidentified input flag (0x00A40D44; shared/keyboard.hpp, shared/scroll.hpp).
-extern bool unknown_flag_a40d44;
 
 // More of the sidebar geometry (0x00839628/0x0083962C: width and height;
 // 0x00839630/0x00839638: the tactical area's X and width;
@@ -27,16 +27,12 @@ extern bool unknown_flag_a40d44;
 extern int unknown_int_83962c;
 // The sidebar rectangle the origin and height belong to (0x00839620; hypothesis).
 extern Rect unknown_rect_839620;
-extern int unknown_int_839630;
-extern int unknown_int_839638;
 extern int unknown_abcd48;
 // The screen size (0x007ADD80 width, 0x007ADD84 height; hypothesis) and the
 // rest of the sidebar/tactical rectangles (0x00839628 sidebar width,
 // 0x00839634 tactical Y, 0x0083963C tactical height).
-extern int unknown_int_7add80;
 extern int unknown_int_7add84;
 extern int unknown_int_839628;
-extern int unknown_int_839634;
 extern int unknown_int_83963c;
 extern int unknown_abcd78;
 extern int unknown_abcd7c;
@@ -46,7 +42,6 @@ extern int unknown_abcd50;
 extern int unknown_abcd58;
 extern int unknown_abcd5c;
 // The shape drawer the sidebar buttons draw with (0x008323CC).
-extern ConvertClass *unknown_drawer_8323cc;
 extern "C" int __cdecl sprintf(char *buffer, char const *format, ...);   // 0x007820F4
 // The current game palette (0x006F45E0 returns the pointer at 0x00AC11A0).
 PaletteClass *Unknown_006F45E0();
@@ -83,7 +78,6 @@ class ObjectTypeClass;
 ObjectTypeClass *__fastcall Unknown_00482C00(int kind, int id);
 // Help-text state: tooltips on (0x00A40958), cost-only format (0x008373C0)
 // and the text buffer (0x00AB9484).
-extern bool unknown_flag_a40958;
 extern bool unknown_flag_8373c0;
 extern wchar_t unknown_text_ab9484[];
 extern "C" unsigned int __cdecl wcslen(wchar_t const *string);     // 0x00783605
@@ -111,17 +105,13 @@ void __fastcall CC_Draw_Shape(Surface *surface, ConvertClass *drawer, ShapeFileS
 // A window rectangle the sidebar resets (0x008336E8).
 extern Rect unknown_rect_8336e8;
 // Whether the sidebar is shown on the screen (0x00A40D04; hypothesis).
-extern bool unknown_flag_a40d04;
 // Set when a sidebar button repainted (0x00ABCD84).
-extern bool unknown_flag_abcd84;
 
 // The strip icon size factors (0x00ABCD68, 0x00ABCD6C).
 extern int unknown_abcd68;
 extern int unknown_abcd6c;
 // Set once the new-construction speech is suppressed (0x00A40774).
-extern int unknown_a40774;
 // A redraw request flag (0x008373C3).
-extern bool unknown_flag_8373c3;
 // Speech by name (0x00715B40; hypothesis: VoxClass::Speak).
 int __fastcall Unknown_00715B40(char const *name, int arg2, int arg3);
 // A factory: its completion (0x004B98F0).

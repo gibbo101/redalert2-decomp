@@ -28,11 +28,11 @@
 #ifndef RA2_SHARED_OBJECT_HPP
 #define RA2_SHARED_OBJECT_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/abstract_type.hpp"
 #include "shared/rgb_class.hpp"
 class HouseClass;
 class BuildingClass;
-extern HouseClass *unknown_player_a35db4;                 // 0x00A35DB4 the player's house (shared/house.hpp)
 
 class ObjectClass;
 class ObjectTypeClass;
@@ -115,7 +115,6 @@ typedef char UnknownObject5394F0_size_210[(sizeof(UnknownObject5394F0) == 0x210)
 #include "shared/rules.hpp"
 
 // A game-mode value (0x00A3D298); Compute_CRC adds two flags for 0 and 5.
-extern int unknown_game_mode_a3d298;
 // Slot 76 passes the player's house (unknown_player_a35db4, shared/house.hpp)
 // to slot 49.
 

@@ -7,6 +7,7 @@
 #ifndef RA2_SHARED_DSURFACE_HPP
 #define RA2_SHARED_DSURFACE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/directdraw.hpp"
 #include "shared/surface.hpp"
 
@@ -18,11 +19,9 @@ extern IDirectDraw *DirectDrawObject;
 extern IDirectDrawClipper *unknown_clipper_852fb4;
 // When set, new surfaces are created as plain offscreen 3D-device
 // surfaces (0x00852FD7).
-extern bool unknown_flag_852fd7;
 // Either flag enables lost-surface restoration before locking
 // (0x00851CB0, 0x00A40D28); with both clear Lock fails.
 extern bool unknown_flag_851cb0;
-extern bool unknown_flag_a40d28;
 // Allows DirectDraw colour-fill blits in Fill_Rect (0x007D6294).
 extern bool unknown_flag_7d6294;
 

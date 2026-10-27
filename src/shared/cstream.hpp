@@ -5,6 +5,7 @@
 #ifndef RA2_SHARED_CSTREAM_HPP
 #define RA2_SHARED_CSTREAM_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/com_persist.hpp"
 #include "shared/win32_api.hpp"
 
@@ -17,7 +18,6 @@
 
 
 // Count of live COM objects (shared with LocomotionClass AddRef/Release).
-extern long unknown_com_objects_a6eb14;
 
 // Westwood's link interface (slots 3 and 4 of the 0x0079E6EC vtable:
 // 0x00494A00, 0x00494A90). Method names follow the public YR headers and

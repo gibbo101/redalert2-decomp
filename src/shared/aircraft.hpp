@@ -20,6 +20,7 @@
 #ifndef RA2_SHARED_AIRCRAFT_HPP
 #define RA2_SHARED_AIRCRAFT_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/foot.hpp"
 #include "shared/aircraft_type.hpp"
 #include "shared/techno_index.hpp"
@@ -64,7 +65,6 @@ public:
     TechnoClass *Occupier;              // +0xE4 (hypothesis)
 };
 #endif
-extern int unknown_a40774;              // 0x00A40774 (AircraftClass slot 101)
 
 // BuildingClass: the stand-in in shared/techno.hpp.
 

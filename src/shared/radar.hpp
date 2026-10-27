@@ -9,6 +9,7 @@
 // 43..49).
 #ifndef RA2_SHARED_RADAR_HPP
 #define RA2_SHARED_RADAR_HPP
+#include "shared/unknown_globals.hpp"
 #ifdef RA2_SHARED_MAP_VIEW_HPP
 #error "shared/map_view.hpp declares light screen layers: include the full layer headers before it"
 #endif
@@ -76,7 +77,6 @@ void RadarEventClass_unknown_all_63b910();
 
 // Positions of the two radar shape buttons (set by slot 53, used by Init_IO).
 class ConvertClass;
-extern ConvertClass *unknown_drawer_8323cc;   // 0x008323CC (shared/sidebar.hpp)
 extern int unknown_int_ab6470;      // 0x00AB6470 width of the 0xF2 shape
 extern int unknown_int_ab6474;      // 0x00AB6474 its height
 extern int unknown_int_ab6340;      // 0x00AB6340 width of the 0xF3 shape
@@ -85,7 +85,6 @@ extern int unknown_int_ab6344;      // 0x00AB6344 its height
 extern char const *unknown_name_7ee064;
 extern char const *unknown_name_7ee068;
 // The screen width (0x007ADD80; shared/sidebar.hpp).
-extern int unknown_int_7add80;
 // The radar's colour and a value for the radar button (0x00AC1028, 0x00AC1070;
 // rules or scenario data; hypothesis).
 class RGBClass;
@@ -115,11 +114,8 @@ public:
     CCINIClass *unknown_ini_005b7840();                 // 0x005B7840 (the session INI)
 };
 extern UnknownSessionA3D29C *unknown_session_a3d29c;     // 0x00A3D29C
-extern int unknown_game_mode_a3d298;                    // 0x00A3D298
 extern int unknown_int_a40d48;                          // 0x00A40D48 the mode the radar buttons select (1, 8, 9)
 extern int unknown_int_af8fe8;                          // 0x00AF8FE8
-extern int unknown_int_839638;                          // 0x00839638 sidebar x offset (shared/wwmouse.hpp)
-extern bool unknown_flag_a40b30;                        // 0x00A40B30 (shared/wwmouse.hpp)
 // Runs after the radar's update unless it is in mode 4 (0x00716950).
 void Unknown_00716950();
 // The radar's transmission sequence (mode 4) helpers (meanings not recovered).
@@ -154,7 +150,6 @@ int __fastcall Unknown_00713DB0(int sound, float volume, int flags, int arg4);
 
 // A flag at 0x00A3D548 (radar: with the player's +0x13D, forces mode 1).
 extern int unknown_int_a3d548;
-extern HouseClass *unknown_player_a35db4;      // 0x00A35DB4
 
 // The objects of the list at 0x00A40C20 whose +0x37B flag the radar clears
 // when it is rebuilt (view; type not identified).

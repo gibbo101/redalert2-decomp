@@ -17,6 +17,7 @@
 #ifndef RA2_SHARED_TASK_FORCE_HPP
 #define RA2_SHARED_TASK_FORCE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/abstract_type.hpp"
 #include "shared/techno_type.hpp"
 
@@ -29,7 +30,6 @@ class ObjectClass;
 // (name hypothesis).
 long __fastcall unknown_hex_to_long_412390(char const *string);      // 0x00412390
 
-extern int unknown_game_mode_a3d298;                                  // 0x00A3D298
 
 extern "C" GUID const CLSID_TaskForceClass;                           // 0x007A1CE0
 

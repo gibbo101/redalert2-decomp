@@ -13,6 +13,7 @@
 #ifndef RA2_SHARED_OVERLAY_HPP
 #define RA2_SHARED_OVERLAY_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/overlay_type.hpp"
 #include "shared/map_cell_view.hpp"
 #include "shared/rect.hpp"
@@ -24,7 +25,6 @@ extern "C" GUID const CLSID_OverlayClass;       // 0x007A1C20
 extern int unknown_placing_house_7e8a8c;
 
 // The scenario INI format (0x00A40D24; terrain and overlay read their packs when above 1; hypothesis).
-extern int unknown_ini_format_a40d24;
 // The INI section name "OVERLAY" (a pointer variable at 0x007A77C0).
 extern char const *unknown_overlay_section_7a77c0;
 

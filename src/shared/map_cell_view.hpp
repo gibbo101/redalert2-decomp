@@ -5,6 +5,7 @@
 #ifndef RA2_SHARED_MAP_CELL_VIEW_HPP
 #define RA2_SHARED_MAP_CELL_VIEW_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/object.hpp"
 #include "shared/cell.hpp"
 #include "shared/map_view.hpp"
@@ -25,6 +26,5 @@ extern DynamicVectorClass<IsometricTileTypeClass *> IsoTileTypes;
 
 // A game flag the destructors test before ObjectClass slot 52 (0x00A40958;
 // also declared by shared/bullet.hpp and shared/ms_message_box.hpp).
-extern bool unknown_flag_a40958;
 
 #endif

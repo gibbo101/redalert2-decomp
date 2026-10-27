@@ -19,6 +19,7 @@
 #ifndef RA2_SHARED_WWMOUSE_HPP
 #define RA2_SHARED_WWMOUSE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/rect.hpp"
 #include "shared/mouse.hpp"
 #include "shared/shape_file.hpp"
@@ -124,10 +125,5 @@ void __fastcall unknown_blit_49f3a0(Surface &dest, void *convert, Surface &sourc
                                     Point2D const &destpoint, Rect const &destclip, int unknown1, int unknown2,
                                     int unknown3, int unknown4, int unknown5, int unknown6);
 extern void *unknown_convert_8323c8;            // drawer passed to unknown_blit_49f3a0; no cursor without it
-extern int unknown_int_839638;                  // sidebar x offset
-extern int unknown_int_839648;
-extern Surface *unknown_surface_839948;
-extern bool unknown_flag_a40b30;
-extern bool unknown_flag_a40d28;                // see shared/dsurface.hpp
 
 #endif

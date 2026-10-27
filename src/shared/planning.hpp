@@ -14,6 +14,7 @@
 #ifndef RA2_SHARED_PLANNING_HPP
 #define RA2_SHARED_PLANNING_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/event.hpp"
 #include "shared/techno.hpp"
 #include "shared/house.hpp"
@@ -35,8 +36,6 @@ struct PlanningLists {
 #include "shared/debug_printf.hpp"
 
 // The tactical area origin (shared/sidebar.hpp).
-extern int unknown_int_839630;
-extern int unknown_int_839634;
 
 class PlanningNodeClass;
 class PlanningBranchClass;

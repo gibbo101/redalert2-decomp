@@ -31,6 +31,7 @@
 #ifndef RA2_SHARED_BULLET_HPP
 #define RA2_SHARED_BULLET_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/object.hpp"
 #include "shared/cd_timer.hpp"
 #include "shared/win32_api.hpp"
@@ -137,9 +138,6 @@ inline int Dir_Facing32(UnknownDirStruct dir)
 extern int unknown_facing_frames_7acab0[32];
 
 extern "C" GUID const CLSID_BulletClass;    // 0x007A1C50
-extern long unknown_com_objects_a6eb14;
-extern bool unknown_flag_a40958;            // 0x00A40958 (the destructor then calls ObjectClass slot 52)
-extern int unknown_a40774;                  // 0x00A40774     // 0x00A6EB14 (live COM object count; hypothesis)
 
 class BulletClass : public ObjectClass {
 public:

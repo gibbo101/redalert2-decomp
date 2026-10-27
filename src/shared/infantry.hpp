@@ -17,6 +17,7 @@
 #ifndef RA2_SHARED_INFANTRY_HPP
 #define RA2_SHARED_INFANTRY_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/foot.hpp"
 #define RA2_INFANTRY_FULL
 #include "shared/infantry_type.hpp"
@@ -231,7 +232,6 @@ extern DoStruct unknown_do_controls_7a3474[];
 
 // The coordinate returned when no spot is free (0x00A410F8).
 extern CoordStruct unknown_invalid_coord_a410f8;
-extern int unknown_a40774;              // 0x00A40774 (as in Foot2 foot.hpp)
 
 // Sequences that block firing (an inline helper: InfantryClass slot 218 returns 6 for them; hypothesis).
 inline bool Is_Busy_Sequence(int sequence)

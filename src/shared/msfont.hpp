@@ -16,6 +16,7 @@
 #ifndef RA2_SHARED_MSFONT_HPP
 #define RA2_SHARED_MSFONT_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/rect.hpp"
 #include "shared/surface.hpp"
 #include "shared/shape_file.hpp"
@@ -53,7 +54,6 @@ extern int unknown_font_count_a71858;           // 0x00A71858 constructed fonts
 extern MSFontSlot unknown_font_slots_a71860[3]; // 0x00A71860
 
 extern PaletteClass unknown_palette_838710;     // 0x00838710
-extern Surface *unknown_surface_839950;         // 0x00839950
 
 // Screen pixel format shifts (0x00852FB8-0x00852FCC): shared/hicolor.hpp.
 #include "shared/hicolor.hpp"

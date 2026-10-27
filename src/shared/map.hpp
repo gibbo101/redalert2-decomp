@@ -17,6 +17,7 @@
 // Unrecovered members stay unknown_.
 #ifndef RA2_SHARED_MAP_HPP
 #define RA2_SHARED_MAP_HPP
+#include "shared/unknown_globals.hpp"
 #ifdef RA2_SHARED_MAP_VIEW_HPP
 #error "shared/map_view.hpp declares light screen layers: include the full layer headers before it"
 #endif
@@ -105,7 +106,6 @@ extern Unknown8315B4 *unknown_8315b4;                   // 0x008315B4
 extern Cell unknown_cell_a6f238;                  // 0x00A6F238 copied into every +0x154 entry
 // The game mode (0 for the campaign) and a game option byte that enables the
 // +0x154 entries (crates; hypothesis) (0x00A3D298, 0x00A3D2C1).
-extern int unknown_game_mode_a3d298;
 extern bool unknown_flag_a3d2c1;
 
 // A 4-byte element of the array at MapClass +0x64 (unknown_68 elements;

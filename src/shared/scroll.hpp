@@ -7,6 +7,7 @@
 // hypotheses or unknown_.
 #ifndef RA2_SHARED_SCROLL_HPP
 #define RA2_SHARED_SCROLL_HPP
+#include "shared/unknown_globals.hpp"
 #ifdef RA2_SHARED_MAP_VIEW_HPP
 #error "shared/map_view.hpp declares light screen layers: include the full layer headers before it"
 #endif
@@ -46,8 +47,6 @@ WIN32_IMPORT HWND WINAPI GetCapture();
 WIN32_IMPORT BOOL WINAPI ReleaseCapture();
 
 // Unidentified flag tested by the scroll slots (0x00A40D44).
-extern bool unknown_flag_a40d44;
 // Mouse shape size flag passed to Set_Default_Mouse (0x0083740C).
-extern bool unknown_flag_83740c;
 
 #endif

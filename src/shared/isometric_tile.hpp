@@ -9,13 +9,13 @@
 #ifndef RA2_SHARED_ISOMETRIC_TILE_HPP
 #define RA2_SHARED_ISOMETRIC_TILE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/object.hpp"
 
 class IsometricTileClass;
 class IsometricTileTypeClass;
 
 extern "C" GUID const CLSID_IsometricTileClass;       // 0x007A1BB0
-extern bool unknown_flag_a40958;                      // 0x00A40958 (shared with bullet.hpp)
 extern Cell const unknown_cell_a52520;           // 0x00A52520 (the "no cell" value; hypothesis)
 
 extern DynamicVectorClass<IsometricTileClass *> IsoTiles;               // 0x00832448

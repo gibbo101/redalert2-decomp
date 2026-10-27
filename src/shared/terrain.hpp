@@ -18,6 +18,7 @@
 #ifndef RA2_SHARED_TERRAIN_HPP
 #define RA2_SHARED_TERRAIN_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/terrain_type.hpp"
 #include "shared/stage.hpp"
 #include "shared/rect.hpp"
@@ -109,18 +110,14 @@ public:
 
 // Set while the map is loaded or edited (0x00A40774; hypothesis; also shared/smudge.hpp):
 // cell refreshes are skipped while it is positive.
-extern int unknown_a40774;
 // The tactical area X, Y, width, height (0x00839630; shared/display.hpp), a
 // counter the draw tests (0x00B263D8; shared/techno.hpp) and the flag that
 // forces image reloads (0x00A40D13; shared/anim_type.hpp).
 extern Rect unknown_rect_839630;
-extern int unknown_b263d8;
-extern bool unknown_a40d13;
 // The [Terrain] section name (a pointer variable at 0x007AD390).
 extern char const *unknown_terrain_section_7ad390;
 // The scenario INI format (0x00A40D24; below 4 cells are numbered x + y *
 // 128, else x + y * 1000; hypothesis).
-extern int unknown_ini_format_a40d24;
 
 // The object index keyed by Fetch_ID (0x00ABFF58; buildings and terrain
 // objects join it; the Building worker's header calls it

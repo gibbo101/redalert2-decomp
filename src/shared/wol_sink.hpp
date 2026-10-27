@@ -15,6 +15,7 @@
 #ifndef RA2_WOL_SINK_HPP
 #define RA2_WOL_SINK_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/wdt_state.hpp"
 #include "shared/com_persist.hpp"
 #include "shared/com_api.hpp"
@@ -212,7 +213,6 @@ extern "C" long __cdecl time(long *timer);
 WIN32_IMPORT LRESULT WINAPI SendDlgItemMessageA(HWND dialog, int id, UINT message, WPARAM wparam, LPARAM lparam);
 
 // WOnline.cpp globals (names unknown; addresses evidenced).
-extern int unknown_game_mode_a3d298;    // 0x00A3D298
 extern int unknown_a3d2a4;              // 0x00A3D2A4 (1 or 2: an online session state)
 extern int unknown_b2a7ec;              // 0x00B2A7EC
 extern int unknown_b2ac0c;              // 0x00B2AC0C (the age-check result)

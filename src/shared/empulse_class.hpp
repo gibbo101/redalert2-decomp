@@ -1,5 +1,6 @@
 #ifndef RA2_SHARED_EMPULSE_CLASS_HPP
 #define RA2_SHARED_EMPULSE_CLASS_HPP
+#include "shared/unknown_globals.hpp"
 #include "shared/vector_class.hpp"
 #include "shared/abstract.hpp"
 #include "shared/coord.hpp"
@@ -28,5 +29,4 @@ public:
     int CreatedFrame; // +2c
     int Duration; // +30
 };
-extern bool unknown_flag_a40958;
 #endif

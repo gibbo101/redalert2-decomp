@@ -5,6 +5,7 @@
 #ifndef RA2_SHARED_HOUSE_HPP
 #define RA2_SHARED_HOUSE_HPP
 
+#include "shared/unknown_globals.hpp"
 #ifndef VECTOR_IMPLEMENT_ALL
 #define VECTOR_IMPLEMENT_ALL
 #endif
@@ -60,6 +61,5 @@ public:
 extern DynamicVectorClass<HouseClass *> Houses;             // 0x00A32298
 
 // The player's house (0x00A35DB4).
-extern HouseClass *unknown_player_a35db4;
 
 #endif

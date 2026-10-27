@@ -16,6 +16,7 @@
 #ifndef RA2_SHARED_TEXT_PRINT_HPP
 #define RA2_SHARED_TEXT_PRINT_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/rect.hpp"
 #include "shared/rgb_class.hpp"
 #include "shared/convert.hpp"
@@ -78,7 +79,6 @@ extern BitTextClass *BitText;               // 0x0084E9D0
 // Screen pixel format shifts: shared/hicolor.hpp.
 
 // The surface the GUI draws on (as shared/gscreen.hpp).
-extern Surface *unknown_surface_83995c;    // 0x0083995C
 
 // The index of the colour scheme boxes are drawn in (0x004CEFC0, outside this unit).
 int unknown_scheme_index_4cefc0();

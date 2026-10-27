@@ -7,6 +7,7 @@
 #ifndef RA2_SHARED_DIRECT3D_HPP
 #define RA2_SHARED_DIRECT3D_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/directdraw.hpp"
 
 typedef float D3DVALUE;
@@ -97,8 +98,5 @@ extern IDirect3DDevice2 *unknown_device_852fe0;     // 0x00852FE0 (gscreen.hpp: 
 extern IDirect3DViewport2 *unknown_viewport_852fe4; // 0x00852FE4
 // The surface GScreenClass::Render composes (gscreen.hpp; a DSurface here).
 class Surface;
-extern Surface *unknown_surface_839964;             // 0x00839964
-extern int unknown_8523e0;                          // 0x008523E0 (ms_anim.hpp)
-extern int unknown_8523e4;                          // 0x008523E4 (ms_anim.hpp)
 
 #endif

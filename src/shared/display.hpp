@@ -9,6 +9,7 @@
 // (initializer 0x00498A00). Member names are unknown_ unless evidenced.
 #ifndef RA2_SHARED_DISPLAY_HPP
 #define RA2_SHARED_DISPLAY_HPP
+#include "shared/unknown_globals.hpp"
 #ifdef RA2_SHARED_MAP_VIEW_HPP
 #error "shared/map_view.hpp declares light screen layers: include the full layer headers before it"
 #endif
@@ -55,7 +56,6 @@ struct UnknownPendingObjectView {
     unsigned char unknown_14;
 };
 // The small-cursor flag passed to Set_Default_Mouse (0x0083740C).
-extern bool unknown_flag_83740c;
 
 // The layer orders Next_Object (0x007D5CDC: 2, 3, 4) and Prev_Object
 // (0x007D5CE8: 4, 3, 2) walk.

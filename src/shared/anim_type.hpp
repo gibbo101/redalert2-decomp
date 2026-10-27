@@ -37,6 +37,7 @@
 #ifndef RA2_SHARED_ANIM_TYPE_HPP
 #define RA2_SHARED_ANIM_TYPE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/warhead_type.hpp"
 #include "shared/object_type.hpp"
 #include "shared/type_list.hpp"
@@ -66,7 +67,6 @@ extern TheaterTypeStruct Theaters[];          // 0x0079AB68
 // The theater whose images are loaded (0x007D88DC) and a flag that forces
 // a reload (0x00A40D13); names hypotheses.
 extern int unknown_loaded_theater_7d88dc;
-extern bool unknown_a40d13;
 
 extern "C" GUID const CLSID_AnimTypeClass;    // 0x007A1B90
 

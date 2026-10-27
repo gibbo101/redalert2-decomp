@@ -14,6 +14,7 @@
 #ifndef RA2_SHARED_LOCOMOTION_HPP
 #define RA2_SHARED_LOCOMOTION_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/foot.hpp"
 #include "shared/ilocomotion.hpp"
 #include "shared/rect.hpp"
@@ -25,7 +26,6 @@
 class Matrix3D;
 
 // The live COM object count (0x00A6EB14).
-extern long unknown_com_objects_a6eb14;
 // A zero coordinate (0x00A6EA60; Destination's default).
 extern CoordStruct unknown_coord_a6ea60;
 
@@ -49,7 +49,6 @@ inline UnknownLocoCellObject *Loco_Cell_At(Cell const &cell)
 {
     return (UnknownLocoCellObject *)&Map[cell];
 }
-extern bool unknown_flag_a40d13;        // 0x00A40D13
 // TacticalClass::Unknown_006A29B0 (Screen/shared/tactical.hpp): pixels to height.
 int __fastcall Unknown_006A29B0(int pixels);
 // ILocomotion: shared/ilocomotion.hpp.

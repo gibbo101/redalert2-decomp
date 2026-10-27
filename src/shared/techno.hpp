@@ -31,6 +31,7 @@
 #ifndef RA2_SHARED_TECHNO_HPP
 #define RA2_SHARED_TECHNO_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/rect.hpp"
 #include "shared/storage_class.hpp"
 #include "shared/stage.hpp"
@@ -321,7 +322,6 @@ void __fastcall Unknown_006D7C80(AbstractClass *target);
 extern bool unknown_sound_enabled_7d88d6;
 extern Random2Class unknown_random_839218;
 int __fastcall Unknown_00713DB0(int sound, float volume, int priority, int object);   // fastcall: sound in ECX, priority in EDX
-extern int unknown_b263d8;              // 0x00B263D8
 
 // A double constant 0.0 (0x0079B610; slot 165 returns it).
 extern double const unknown_double_79b610;
@@ -787,7 +787,6 @@ class BuildingClass;
 // may join (0x00AC0BF8, while unknown_108 is set).
 extern DynamicVectorClass<TechnoClass *> Technos;                       // 0x00A40C20
 
-extern int unknown_a40774;              // 0x00A40774
 
 // The tactical view's member TechnoClass slot 164 calls (proposal: declare
 // it on shared/gscreen.hpp's Tactical).

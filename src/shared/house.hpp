@@ -26,6 +26,7 @@
 #ifndef RA2_SHARED_HOUSE_HPP
 #define RA2_SHARED_HOUSE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/abstract_type.hpp"
 #include "shared/cd_timer.hpp"
 #include "shared/house_type.hpp"
@@ -572,6 +573,5 @@ extern Cell unknown_cell_a40f10;
 extern DynamicVectorClass<HouseClass *> Houses;   // (the globals unit defines it as unknown_HouseClass_list_00a32298)
 
 // The player's house (0x00A35DB4).
-extern HouseClass *unknown_player_a35db4;
 
 #endif

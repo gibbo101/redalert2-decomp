@@ -21,6 +21,7 @@
 #ifndef RA2_SHARED_VOXEL_ANIM_HPP
 #define RA2_SHARED_VOXEL_ANIM_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/object_type.hpp"
 #include "shared/bounce.hpp"
 #include "shared/voxel_anim_type.hpp"
@@ -31,7 +32,6 @@ extern "C" GUID const CLSID_VoxelAnimClass;   // 0x007A1BC0
 
 // A flag (0x00A40958; also shared/ms_message_box.hpp): only while it is set
 // does the destructor take the object off the map (slot 52).
-extern bool unknown_flag_a40958;
 
 class VoxelAnimClass : public ObjectClass {
 public:

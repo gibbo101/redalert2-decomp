@@ -29,6 +29,7 @@
 #ifndef RA2_SHARED_ANIM_HPP
 #define RA2_SHARED_ANIM_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/bounce.hpp"
 #include "shared/anim_type.hpp"
 #include "shared/cd_timer.hpp"
@@ -258,7 +259,6 @@ void Unknown_00423C70();
 void __fastcall Unknown_004955D0(void *object, int value, void (*callback)());   // 0x004955D0
 extern char unknown_object_837e10[];                // 0x00837E10 (0x004955D0's object; type unknown)
 void unknown_481fb0();                              // 0x00481FB0 (shared/ms_engine.hpp)
-extern int unknown_game_mode_a3d298;                // 0x00A3D298
 
 // The cell offsets of the eight facings (0x00851A70; shared/aircraft.hpp
 // declares the same table as AdjacentCell).
@@ -289,7 +289,6 @@ extern DynamicVectorClass<AnimClass *> Anims;     // 0x00A40960
 // A second animation list (0x00A35E60): the destructor removes an
 // animation whose ID is -2 from it instead of Anims (hypothesis).
 extern DynamicVectorClass<AnimClass *> unknown_anims_a35e60;
-extern bool unknown_flag_a40958;                  // 0x00A40958
 
 // The index of the animation type with this ID; -1 for none or "<none>"
 // (0x00420CD0; name hypothesis).

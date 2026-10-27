@@ -18,6 +18,7 @@
 #ifndef RA2_SHARED_TOOL_TIP_HPP
 #define RA2_SHARED_TOOL_TIP_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/win32_api.hpp"
 #include "shared/rect.hpp"
 #include "shared/vector_class.hpp"
@@ -210,10 +211,7 @@ public:
 // same objects field by field but drags in the radar headers).
 extern Rect unknown_rect_839620;        // 0x00839620 sidebar X, Y, width, height
 extern Rect unknown_rect_839630;        // 0x00839630 tactical X, Y, width, height
-extern bool unknown_flag_a40b30;        // 0x00A40B30 the sidebar is on the left
 extern bool unknown_flag_8373c2;        // 0x008373C2
-extern bool unknown_flag_8373c3;        // 0x008373C3
-extern bool unknown_flag_abcd84;        // 0x00ABCD84
 
 class CCToolTip : public ToolTipManager {
 public:

@@ -1,5 +1,6 @@
 #ifndef RA2_SHARED_SERIAL_PROGRESS_HPP
 #define RA2_SHARED_SERIAL_PROGRESS_HPP
+#include "shared/unknown_globals.hpp"
 #include "shared/abstract.hpp"
 #include "shared/rect.hpp"
 
@@ -20,5 +21,4 @@ extern NullModemClass serial_manager_00a40a28;
 extern UnknownProgressIndicator progress_indicator_00a769e8;
 extern unsigned int serial_session_flags_00a3fac0;
 extern int serial_local_player_00a3fb38;
-extern int unknown_game_mode_a3d298;
 #endif

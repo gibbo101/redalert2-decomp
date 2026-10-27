@@ -9,6 +9,7 @@
 #ifndef RA2_SHARED_MOVIE_HPP
 #define RA2_SHARED_MOVIE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/rect.hpp"
 #include "shared/surface.hpp"
 #include "shared/win32_api.hpp"
@@ -239,8 +240,6 @@ void *unknown_directsound_40a6c0();             // 0x0040A6C0 the DirectSound ob
 #include "shared/debug_printf.hpp"
 extern float unknown_volume_a40b48;             // 0x00A40B48 movie volume scale
 extern float unknown_volume_84e9a8;             // 0x0084E9A8
-extern Surface *unknown_surface_839950;         // 0x00839950 screen
-extern Surface *unknown_surface_839954;         // 0x00839954
 extern HWND MainWindow;                         // 0x00B263D8
 VQAMovieCompanion *__fastcall unknown_create_companion_69b190(char const *filename);   // 0x0069B190
 

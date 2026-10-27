@@ -18,6 +18,7 @@
 #ifndef RA2_SHARED_MS_ENGINE_HPP
 #define RA2_SHARED_MS_ENGINE_HPP
 
+#include "shared/unknown_globals.hpp"
 #include "shared/mouse.hpp"
 #include "shared/rect.hpp"
 #include "shared/surface.hpp"
@@ -72,10 +73,6 @@ public:
 };
 
 extern bool unknown_redraw_8523dc;              // 0x008523DC set by Redraw: Draw clears and repaints everything
-extern bool unknown_flag_a40d28;                // 0x00A40D28 application active (focus)
-extern float unknown_volume_a40b44;             // 0x00A40B44 sound effect volume scale
-extern Surface *unknown_surface_839950;         // 0x00839950 screen
-extern Surface *unknown_surface_839958;         // 0x00839958 background
 extern HWND MainWindow;                         // 0x00B263D8
 
 void unknown_481fb0();                          // 0x00481FB0 once per frame
