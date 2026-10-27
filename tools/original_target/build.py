@@ -422,12 +422,26 @@ def package(original, linked, destination):
     return report
 
 
+def remove_intermediates(destination, groups):
+    """Delete a verified build's bulky intermediates (several GB), keeping
+    every receipt, log and the packaged output."""
+    for index in range(groups):
+        shutil.rmtree(destination/('compile-%03d'%index))
+    (destination/'fresh-accepted.json').unlink()
+    for temporary in destination.glob('tmp*'):
+        shutil.rmtree(temporary,ignore_errors=True)
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--config',type=Path,default=REPOSITORY/'private/original-target.local.json')
     parser.add_argument('--manifest',type=Path,default=REPOSITORY/'manifests/original_target.json')
     parser.add_argument('--output',type=Path,default=None)
     parser.add_argument('--verify-inputs',action='store_true')
+    parser.add_argument('--keep-intermediates',action='store_true',
+                        help='keep compile-NNN folders (sources, objects, logs) and fresh-accepted.json')
+    parser.add_argument('--verify-jobs',type=int,default=None,
+                        help='verification processes (default RA2_VERIFY_JOBS or min(4, CPUs))')
     args=parser.parse_args(); started=time.monotonic()
     marks=[started]
     def phase(name):
@@ -456,15 +470,25 @@ def main():
             inputs.extend([policy_path, REPOSITORY/policy['original_identity']['readiness_path']])
     fingerprints={str(p.relative_to(REPOSITORY)):sha(p.read_bytes()) for p in inputs}
     compiled=compile_sources(config,catalog,destination); phase('compile')
-    manifest=audit.verify_fresh(destination,compiled); phase('verify fresh objects')
+    manifest=audit.verify_fresh(destination,compiled,jobs=args.verify_jobs); phase('verify fresh objects')
     integrate(config,audit,manifest,destination); phase('integrate and link')
     original=audit.read(config['executable']);report=package(original,(destination/'linked.exe').read_bytes(),destination); phase('package')
+    # Final input checks; each file is read once.
+    # 1. Authored tools, toolchain manifest, catalog and policies: the code and
+    #    plan that ran are the ones fingerprinted at build start.
     for p in inputs: require(sha(p.read_bytes())==fingerprints[str(p.relative_to(REPOSITORY))],'Build tool/catalog changed during run')
-    # Current source hash drift must not be hidden by the cached input snapshots.
+    # 2. The tree as it is now still matches the catalog (every source and
+    #    header hash, no uncatalogued file, includes): source drift during the
+    #    build cannot hide behind the snapshots the audit read.
     from canonical import validate_catalog
-    validate_catalog(REPOSITORY,catalog)
-    for path, data in audit.blobs.items():
-        require(path.read_bytes() == data, 'Proof input changed during build: '+str(path))
+    current=validate_catalog(REPOSITORY,catalog)
+    # 3. Every proof input the audit read (executable, inventories, policies,
+    #    sources, headers, objects, group manifests) and the streamed fresh
+    #    manifest still hold the bytes verified, compared by content or by
+    #    SHA-256 for those read in verification workers; files step 2 just
+    #    read are compared from those bytes instead of being read again.
+    resolved={p: p.resolve() for p in [*audit.blobs, *getattr(audit,'blob_digests',{})]}
+    audit.verify_inputs_unchanged({p: current[r] for p, r in resolved.items() if r in current})
     phase('final input checks')
     report.update(canonical_manifest_sha256=sha(args.manifest.read_bytes()),tracked_sources=len(catalog['regions']),
                   tracked_headers=catalog.get('headers', []),
@@ -472,7 +496,15 @@ def main():
                   body_bytes=manifest['body_bytes'],padding_bytes=manifest['frozen_padding_bytes'],
                   toolchain=tools,authored_dependencies=fingerprints,seconds=time.monotonic()-started,
                   compile_policy='Fresh accepted-only sources; historical population/option groups, no candidate-search matrices')
+    if not args.keep_intermediates:
+        report.update(removed_after_verification=dict(
+            paths=['compile-NNN/ (%d folders: accepted.cpp, accepted.obj, compile.log, returncode.txt)'%len(compiled),
+                   'fresh-accepted.json'],
+            reason='Intermediates of a verified build; hashes stay in compile-receipt.json, fresh-verification.json '
+                   'and integration-receipt.json. Rebuild with --keep-intermediates to keep them.'))
     write_json(destination/'build-receipt.json',report)
+    if not args.keep_intermediates:
+        remove_intermediates(destination,len(compiled))
     print(json.dumps(dict(receipt=str(destination/'build-receipt.json'),**{k:report[k] for k in ['whole_file_exact','output_sha256','tracked_sources','seconds']})))
 
 

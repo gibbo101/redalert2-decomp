@@ -122,6 +122,32 @@ class Audit:
         require(expected is None or self.sha(data) == expected, 'Hash drift: ' + str(path))
         return data
 
+    @staticmethod
+    def file_sha256(path):
+        """SHA-256 of a file read in chunks (for inputs too large to keep)."""
+        digest = hashlib.sha256()
+        with Path(path).open('rb') as handle:
+            for chunk in iter(lambda: handle.read(1 << 24), b''):
+                digest.update(chunk)
+        return digest.hexdigest()
+
+    def verify_inputs_unchanged(self, current=None):
+        """Require every proof input this run read to be unchanged on disk.
+
+        `blobs` holds the bytes read here; `blob_digests` the SHA-256 of
+        inputs read by verification worker processes or streamed (the fresh
+        manifest), which are compared by hash. `current` may supply bytes
+        just read from disk by another final check, so no file is read twice.
+        """
+        current = current or {}
+        for path, data in self.blobs.items():
+            now = current.get(path)
+            require((now if now is not None else path.read_bytes()) == data, 'Proof input changed during build: '+str(path))
+        for path, digest in getattr(self, 'blob_digests', {}).items():
+            now = current.get(path)
+            require((self.sha(now) if now is not None else self.file_sha256(path)) == digest,
+                    'Proof input changed during build: '+str(path))
+
     def document(self, path, expected=None):
         raw = self.read(path, expected)
         key = self.path(path)
@@ -596,162 +622,174 @@ class Audit:
         populations = {}
         cursor = 0
         for row in sorted(manifest['accepted'], key=lambda r: r['entry']):
-            va = row['entry']
-            require(va >= cursor, 'Overlapping accepted extents')
-            owner = row.get('accepted_batch_manifest', str(manifest_path))
-            if owner not in populations:
-                populations[owner] = self.population(self.document(owner))
-            candidates, inventory, gaps, cases, population_hash = populations[owner]
-            candidate = candidates.get(row['method'])
-            require(candidate is not None, 'Accepted interval absent from frozen candidate population')
-            require(row['symbol_prefix'] == candidate['symbol_prefix'] and row.get('references', {}) == candidate.get('references', {}), 'Accepted symbol selector/reference bindings differ from frozen candidate')
-            require(row['padding_provenance'] == candidate['padding_provenance'], 'Accepted padding provenance differs')
-            case = cases.get((row['method'], row['variant']))
-            require(case is not None and case['status'] == 'extent-exact', 'Missing exact compiler case')
-            require(case['source_sha256'] == row['source_sha256'] and case['object_sha256'] == row['object_sha256'] and case['options'] == row['options'], 'Compiler case provenance differs')
-            require(candidate['entry'] == va and row['original_bound'] == candidate['original_inventory_row'] == inventory.get(va), 'Independent bound provenance differs')
-            bound = inventory[va]
-            require(len(bound['ranges']) == 1 and int(bound['ranges'][0]['start'], 16) == va, 'Noncontiguous/nonentry accepted bound')
-            body_size = int(bound['ranges'][0]['end_inclusive'], 16) + 1 - va
-            require(body_size == row['body_bytes'] == candidate['body_bytes'], 'Source-body accounting differs from frozen inventory')
-            body = self.original(va, body_size)
-            require(self.sha(body) == row['body_sha256'] == candidate['body_sha256'], 'Original body fingerprint differs')
-            require(bytes.fromhex(bound['ranges'][0]['bytes_hex']) == body, 'Inventory body bytes differ')
-            code_size = body_size
-            instructions = list(self.decoder.disasm(body, va))
-            if sum(i.size for i in instructions) != body_size or row.get('switch_data_bytes'):
-                code_size = switch_data_start(self.decoder, body, va)
-                require(code_size is not None and body_size - code_size == row.get('switch_data_bytes'),
-                        'Incomplete original body decoding')
-                instructions = list(self.decoder.disasm(body[:code_size], va))
-                require(sum(i.size for i in instructions) == code_size, 'Incomplete original body decoding')
-            padding = bytes.fromhex(row['padding_hex'])
-            require(padding == bytes.fromhex(candidate['padding_hex']) and len(padding) == row['padding_bytes'], 'Padding accounting differs')
-            if padding:
-                require(len(padding) <= 15 and padding == b'\x90' * len(padding), 'Unsupported frozen padding')
-                require(candidate['padding_provenance'] == gaps.get(va + body_size), 'Padding not from independent gap inventory')
-                require(gaps[va + body_size]['length'] == len(padding), 'Partial inferred gap padding')
-            expected = self.original(va, body_size + len(padding))
-            require(expected == body + padding and self.sha(expected) == candidate['region_sha256'], 'Original full region differs')
-            require(len(expected) == row['full_extent_bytes'] == candidate['region_bytes'], 'Full extent accounting differs')
-            self.read(row['source'], row['source_sha256'])
-            require(row['source_sha256'] == candidate['source_sha256'], 'Source outside frozen population')
-            obj_path = self.path(row['object'])
-            obj = self.read(obj_path, row['object_sha256'])
-            if obj_path not in self.coffs:
-                self.coffs[obj_path] = Coff(obj)
-            validation_key = (obj_path, population_hash)
-            if validation_key not in self.validated_objects:
-                coff = self.coffs[obj_path]
-                mapped = {}
-                for c in candidates.values():
-                    try:
-                        symbol, section, first, last = coff.function(c['symbol_prefix'])
-                    except ValueError:
-                        continue    # compiled in another unit of this population
-                    mapped.setdefault(symbol['section'], []).append((first, last))
-                discarded = self.compiler_output(owner, candidates, case, coff, inventory, gaps)
-                if not hasattr(self, 'discarded_outputs'): self.discarded_outputs = {}
-                self.discarded_outputs[str(obj_path)] = discarded
-                for component in discarded:
-                    mapped.setdefault(component['section_index'], []).append((component['first'], component['last']))
-                for index, section in enumerate(coff.sections, 1):
-                    if not section['size']:
-                        continue
-                    if section['name'] == '.drectve':
-                        require(not section['flags'] & 0xe00000e0 and section['flags'] & 0xa00 == 0xa00, 'Invalid directive metadata flags')
-                        continue
-                    if section['name'] in ('.debug$F', '.debug$S', '.debug$T'):
-                        require(not section['flags'] & 0xa00000a0 and section['flags'] & 0x42000040 == 0x42000040, 'Invalid debug metadata flags')
-                        continue
-                    if section['flags'] & 0xc0:
-                        require(self.original_duplicate(coff, index, section, candidates),
-                                'Unsupported allocatable data section %s #%d in %s (%s)' % (
-                                    section['name'], index, obj_path,
-                                    [s['name'] for s in coff.symbols.values() if s['section'] == index][:4]))
-                        continue
-                    require(section['flags'] & 0x20, 'Unsupported nonmetadata section classification')
-                    if section['flags'] & 0x20:
-                        if index not in mapped and self.original_duplicate(coff, index, section, candidates):
-                            continue
-                        if index not in mapped and self.kept_elsewhere(coff, index, section, candidates):
-                            continue
-                        # Identical intervals are one function claimed by two
-                        # candidates with the same symbol (duplicate instantiations).
-                        intervals = sorted(set(mapped.get(index, [])))
-                        covered = 0
-                        for first, last in intervals:
-                            require(first == covered, 'Unaccounted/overlapping emitted code bytes')
-                            covered = last
-                        require(covered == len(section['data']), 'Unaccounted emitted code section bytes')
-                self.validated_objects.add(validation_key)
+            require(row['entry'] >= cursor, 'Overlapping accepted extents')
+            result.append(self.audit_row(row, manifest_path, populations))
+            cursor = row['entry'] + result[-1]['full_extent_bytes']
+        return self.audit_result(manifest_path, manifest, result, self.sha(self.read(manifest_path)))
+
+    def audit_row(self, row, manifest_path, populations):
+        """Verify one accepted interval completely; return its result row.
+
+        `populations` caches each owner's frozen population for the caller's
+        run. Rows are independent apart from the extent-overlap check, which
+        the caller makes over all rows in entry order."""
+        va = row['entry']
+        owner = row.get('accepted_batch_manifest', str(manifest_path))
+        if owner not in populations:
+            populations[owner] = self.population(self.document(owner))
+        candidates, inventory, gaps, cases, population_hash = populations[owner]
+        candidate = candidates.get(row['method'])
+        require(candidate is not None, 'Accepted interval absent from frozen candidate population')
+        require(row['symbol_prefix'] == candidate['symbol_prefix'] and row.get('references', {}) == candidate.get('references', {}), 'Accepted symbol selector/reference bindings differ from frozen candidate')
+        require(row['padding_provenance'] == candidate['padding_provenance'], 'Accepted padding provenance differs')
+        case = cases.get((row['method'], row['variant']))
+        require(case is not None and case['status'] == 'extent-exact', 'Missing exact compiler case')
+        require(case['source_sha256'] == row['source_sha256'] and case['object_sha256'] == row['object_sha256'] and case['options'] == row['options'], 'Compiler case provenance differs')
+        require(candidate['entry'] == va and row['original_bound'] == candidate['original_inventory_row'] == inventory.get(va), 'Independent bound provenance differs')
+        bound = inventory[va]
+        require(len(bound['ranges']) == 1 and int(bound['ranges'][0]['start'], 16) == va, 'Noncontiguous/nonentry accepted bound')
+        body_size = int(bound['ranges'][0]['end_inclusive'], 16) + 1 - va
+        require(body_size == row['body_bytes'] == candidate['body_bytes'], 'Source-body accounting differs from frozen inventory')
+        body = self.original(va, body_size)
+        require(self.sha(body) == row['body_sha256'] == candidate['body_sha256'], 'Original body fingerprint differs')
+        require(bytes.fromhex(bound['ranges'][0]['bytes_hex']) == body, 'Inventory body bytes differ')
+        code_size = body_size
+        instructions = list(self.decoder.disasm(body, va))
+        if sum(i.size for i in instructions) != body_size or row.get('switch_data_bytes'):
+            code_size = switch_data_start(self.decoder, body, va)
+            require(code_size is not None and body_size - code_size == row.get('switch_data_bytes'),
+                    'Incomplete original body decoding')
+            instructions = list(self.decoder.disasm(body[:code_size], va))
+            require(sum(i.size for i in instructions) == code_size, 'Incomplete original body decoding')
+        padding = bytes.fromhex(row['padding_hex'])
+        require(padding == bytes.fromhex(candidate['padding_hex']) and len(padding) == row['padding_bytes'], 'Padding accounting differs')
+        if padding:
+            require(len(padding) <= 15 and padding == b'\x90' * len(padding), 'Unsupported frozen padding')
+            require(candidate['padding_provenance'] == gaps.get(va + body_size), 'Padding not from independent gap inventory')
+            require(gaps[va + body_size]['length'] == len(padding), 'Partial inferred gap padding')
+        expected = self.original(va, body_size + len(padding))
+        require(expected == body + padding and self.sha(expected) == candidate['region_sha256'], 'Original full region differs')
+        require(len(expected) == row['full_extent_bytes'] == candidate['region_bytes'], 'Full extent accounting differs')
+        self.read(row['source'], row['source_sha256'])
+        require(row['source_sha256'] == candidate['source_sha256'], 'Source outside frozen population')
+        obj_path = self.path(row['object'])
+        obj = self.read(obj_path, row['object_sha256'])
+        if obj_path not in self.coffs:
+            self.coffs[obj_path] = Coff(obj)
+        validation_key = (obj_path, population_hash)
+        if validation_key not in self.validated_objects:
             coff = self.coffs[obj_path]
-            symbol, section, start, end = coff.function(row['symbol_prefix'])
-            require(row['symbol'] == symbol['name'] and row['section_index'] == symbol['section'] and row['section_start'] == start and row['section_end'] == end, 'Recorded compiler section selector differs')
-            raw = section['data'][start:end]
-            if row.get('raw_section_sha256'):
-                require(self.sha(raw) == row['raw_section_sha256'], 'Raw compiler-section fingerprint differs')
-            actual = bytearray(raw)
-            bindings = []
-            for offset, symbol_index, kind in section['relocs']:
-                if not start <= offset < end:
+            mapped = {}
+            for c in candidates.values():
+                try:
+                    symbol, section, first, last = coff.function(c['symbol_prefix'])
+                except ValueError:
+                    continue    # compiled in another unit of this population
+                mapped.setdefault(symbol['section'], []).append((first, last))
+            discarded = self.compiler_output(owner, candidates, case, coff, inventory, gaps)
+            if not hasattr(self, 'discarded_outputs'): self.discarded_outputs = {}
+            self.discarded_outputs[str(obj_path)] = discarded
+            for component in discarded:
+                mapped.setdefault(component['section_index'], []).append((component['first'], component['last']))
+            for index, section in enumerate(coff.sections, 1):
+                if not section['size']:
                     continue
-                offset -= start
-                require(offset + 4 <= len(actual) and kind in (6, 20), 'Unsupported/cross-extent relocation')
-                target_symbol = coff.symbols[symbol_index]
-                local = local_label_target(coff, target_symbol, symbol['section'], start, end, va)
-                if offset >= code_size:
-                    # Switch data: only table entries pointing into this function.
-                    require(kind == 6 and local is not None and va <= local < va + body_size,
-                            'Unsupported switch-data relocation at 0x%08X' % va)
-                # A common symbol (uninitialized data such as a function-local
-                # static) is allowed only when it is bound to an original address.
-                require(target_symbol['section'] != 0 or target_symbol['value'] == 0 or
-                        target_symbol['name'] in row.get('references', {}), 'Unsupported common symbol')
-                matches = [local] if local is not None else sorted(prefix_bound_values(row.get('references', {}), target_symbol['name']))
-                require(len(matches) == 1, 'Unbound/ambiguous original reference')
-                target = matches[0]
-                if local is not None:
-                    pass
-                elif target_symbol['section'] == -1:
-                    require(target_symbol['value'] == target, 'Absolute symbol was rebound')
-                elif target_symbol['section'] > 0:
-                    peers = [c for c in candidates.values() if target_symbol['name'].startswith(c['symbol_prefix']) and c['entry'] == target]
-                    # A reference into a verified duplicate of original data or
-                    # code (an emitted vtable) binds to its original address.
-                    duplicate = self.original_duplicate(coff, target_symbol['section'],
-                                                        coff.sections[target_symbol['section'] - 1], candidates)
-                    # Or a compiler copy the original linker kept from another
-                    # object (bound to that kept copy's address).
-                    kept = not peers and not duplicate and self.kept_elsewhere(
-                        coff, target_symbol['section'], coff.sections[target_symbol['section'] - 1], candidates)
-                    require(len(peers) == 1 or duplicate or kept, 'Unsupported local symbol binding')
-                else:
-                    require(target_symbol['section'] == 0, 'Unsupported symbol section kind')
-                addend = struct.unpack_from('<I', actual, offset)[0]
-                value = (target + addend - (va + offset + 4 if kind == 20 else 0)) & 0xffffffff
-                if offset >= code_size:
-                    pass        # table entry: the byte comparison below verifies it
-                elif kind == 20:
-                    sites = [i for i in instructions if i.address + i.imm_offset == va + offset and i.imm_size == 4 and i.mnemonic in ('call', 'jmp')]
-                    require(len(sites) == 1 and sites[0].operands[0].type == capstone.x86_const.X86_OP_IMM and sites[0].operands[0].imm == target, 'Original direct call/jump reference differs at %08x+%x (%s)' % (va, offset, target_symbol['name']))
-                else:
-                    sites = [i for i in instructions if (i.address + i.imm_offset == va + offset and i.imm_size == 4) or (i.address + i.disp_offset == va + offset and i.disp_size == 4)]
-                    require(len(sites) == 1, 'DIR32 not at original operand boundary')
-                    operand_values = [o.imm & 0xffffffff for o in sites[0].operands if o.type == capstone.x86_const.X86_OP_IMM]
-                    operand_values += [o.mem.disp & 0xffffffff for o in sites[0].operands if o.type == capstone.x86_const.X86_OP_MEM]
-                    require(value in operand_values and self.pe.get_section_by_rva(target - self.base) is not None, 'Original DIR32 operand/section binding differs')
-                struct.pack_into('<I', actual, offset, value)
-                bindings.append(dict(offset=offset, kind=kind, symbol='$local' if local is not None else target_symbol['name'], target=target, addend=addend, resolved=value))
-            require(bindings == row.get('relocations', []), 'Relocation receipt differs at %08x: %s' % (va, [(a, b) for a, b in zip(bindings, row.get('relocations', [])) if a != b][:2] or (len(bindings), len(row.get('relocations', [])))))
-            require(bytes(actual) == expected and self.sha(actual) == row['full_extent_sha256'], 'Complete compiler extent differs')
-            cursor = va + len(actual)
-            result.append(dict(entry=va, body_bytes=body_size, padding_bytes=len(padding), full_extent_bytes=len(actual), boundary_confidence='Frozen independent analysis hypothesis; byte equality verified'))
+                if section['name'] == '.drectve':
+                    require(not section['flags'] & 0xe00000e0 and section['flags'] & 0xa00 == 0xa00, 'Invalid directive metadata flags')
+                    continue
+                if section['name'] in ('.debug$F', '.debug$S', '.debug$T'):
+                    require(not section['flags'] & 0xa00000a0 and section['flags'] & 0x42000040 == 0x42000040, 'Invalid debug metadata flags')
+                    continue
+                if section['flags'] & 0xc0:
+                    require(self.original_duplicate(coff, index, section, candidates),
+                            'Unsupported allocatable data section %s #%d in %s (%s)' % (
+                                section['name'], index, obj_path,
+                                [s['name'] for s in coff.symbols.values() if s['section'] == index][:4]))
+                    continue
+                require(section['flags'] & 0x20, 'Unsupported nonmetadata section classification')
+                if section['flags'] & 0x20:
+                    if index not in mapped and self.original_duplicate(coff, index, section, candidates):
+                        continue
+                    if index not in mapped and self.kept_elsewhere(coff, index, section, candidates):
+                        continue
+                    # Identical intervals are one function claimed by two
+                    # candidates with the same symbol (duplicate instantiations).
+                    intervals = sorted(set(mapped.get(index, [])))
+                    covered = 0
+                    for first, last in intervals:
+                        require(first == covered, 'Unaccounted/overlapping emitted code bytes')
+                        covered = last
+                    require(covered == len(section['data']), 'Unaccounted emitted code section bytes')
+            self.validated_objects.add(validation_key)
+        coff = self.coffs[obj_path]
+        symbol, section, start, end = coff.function(row['symbol_prefix'])
+        require(row['symbol'] == symbol['name'] and row['section_index'] == symbol['section'] and row['section_start'] == start and row['section_end'] == end, 'Recorded compiler section selector differs')
+        raw = section['data'][start:end]
+        if row.get('raw_section_sha256'):
+            require(self.sha(raw) == row['raw_section_sha256'], 'Raw compiler-section fingerprint differs')
+        actual = bytearray(raw)
+        bindings = []
+        for offset, symbol_index, kind in section['relocs']:
+            if not start <= offset < end:
+                continue
+            offset -= start
+            require(offset + 4 <= len(actual) and kind in (6, 20), 'Unsupported/cross-extent relocation')
+            target_symbol = coff.symbols[symbol_index]
+            local = local_label_target(coff, target_symbol, symbol['section'], start, end, va)
+            if offset >= code_size:
+                # Switch data: only table entries pointing into this function.
+                require(kind == 6 and local is not None and va <= local < va + body_size,
+                        'Unsupported switch-data relocation at 0x%08X' % va)
+            # A common symbol (uninitialized data such as a function-local
+            # static) is allowed only when it is bound to an original address.
+            require(target_symbol['section'] != 0 or target_symbol['value'] == 0 or
+                    target_symbol['name'] in row.get('references', {}), 'Unsupported common symbol')
+            matches = [local] if local is not None else sorted(prefix_bound_values(row.get('references', {}), target_symbol['name']))
+            require(len(matches) == 1, 'Unbound/ambiguous original reference')
+            target = matches[0]
+            if local is not None:
+                pass
+            elif target_symbol['section'] == -1:
+                require(target_symbol['value'] == target, 'Absolute symbol was rebound')
+            elif target_symbol['section'] > 0:
+                peers = [c for c in candidates.values() if target_symbol['name'].startswith(c['symbol_prefix']) and c['entry'] == target]
+                # A reference into a verified duplicate of original data or
+                # code (an emitted vtable) binds to its original address.
+                duplicate = self.original_duplicate(coff, target_symbol['section'],
+                                                    coff.sections[target_symbol['section'] - 1], candidates)
+                # Or a compiler copy the original linker kept from another
+                # object (bound to that kept copy's address).
+                kept = not peers and not duplicate and self.kept_elsewhere(
+                    coff, target_symbol['section'], coff.sections[target_symbol['section'] - 1], candidates)
+                require(len(peers) == 1 or duplicate or kept, 'Unsupported local symbol binding')
+            else:
+                require(target_symbol['section'] == 0, 'Unsupported symbol section kind')
+            addend = struct.unpack_from('<I', actual, offset)[0]
+            value = (target + addend - (va + offset + 4 if kind == 20 else 0)) & 0xffffffff
+            if offset >= code_size:
+                pass        # table entry: the byte comparison below verifies it
+            elif kind == 20:
+                sites = [i for i in instructions if i.address + i.imm_offset == va + offset and i.imm_size == 4 and i.mnemonic in ('call', 'jmp')]
+                require(len(sites) == 1 and sites[0].operands[0].type == capstone.x86_const.X86_OP_IMM and sites[0].operands[0].imm == target, 'Original direct call/jump reference differs at %08x+%x (%s)' % (va, offset, target_symbol['name']))
+            else:
+                sites = [i for i in instructions if (i.address + i.imm_offset == va + offset and i.imm_size == 4) or (i.address + i.disp_offset == va + offset and i.disp_size == 4)]
+                require(len(sites) == 1, 'DIR32 not at original operand boundary')
+                operand_values = [o.imm & 0xffffffff for o in sites[0].operands if o.type == capstone.x86_const.X86_OP_IMM]
+                operand_values += [o.mem.disp & 0xffffffff for o in sites[0].operands if o.type == capstone.x86_const.X86_OP_MEM]
+                require(value in operand_values and self.pe.get_section_by_rva(target - self.base) is not None, 'Original DIR32 operand/section binding differs')
+            struct.pack_into('<I', actual, offset, value)
+            bindings.append(dict(offset=offset, kind=kind, symbol='$local' if local is not None else target_symbol['name'], target=target, addend=addend, resolved=value))
+        require(bindings == row.get('relocations', []), 'Relocation receipt differs at %08x: %s' % (va, [(a, b) for a, b in zip(bindings, row.get('relocations', [])) if a != b][:2] or (len(bindings), len(row.get('relocations', [])))))
+        require(bytes(actual) == expected and self.sha(actual) == row['full_extent_sha256'], 'Complete compiler extent differs')
+        return dict(entry=va, body_bytes=body_size, padding_bytes=len(padding), full_extent_bytes=len(actual), boundary_confidence='Frozen independent analysis hypothesis; byte equality verified')
+
+    def audit_result(self, manifest_path, manifest, result, manifest_sha256):
+        """The audit report for verified result rows (in entry order)."""
         require(len(result) == manifest.get('matched_source_regions', manifest.get('unique_functions', len(result))), 'Manifest source-region count differs')
         totals = dict(matched_source_regions=len(result), body_bytes=sum(r['body_bytes'] for r in result), padding_bytes=sum(r['padding_bytes'] for r in result), full_extent_bytes=sum(r['full_extent_bytes'] for r in result))
         for field, reported in [('body_bytes', 'body_bytes'), ('padding_bytes', 'frozen_padding_bytes'), ('full_extent_bytes', 'full_extent_bytes')]:
             require(totals[field] == manifest[reported], 'Manifest total differs: ' + field)
-        return dict(status='verified-exact-intervals-and-provenance', manifest=str(self.path(manifest_path)), manifest_sha256=self.sha(self.read(manifest_path)), executable_sha256=TARGET_SHA256, **totals, source_function_boundaries_certified=False, regions=result,
+        return dict(status='verified-exact-intervals-and-provenance', manifest=str(self.path(manifest_path)), manifest_sha256=manifest_sha256, executable_sha256=TARGET_SHA256, **totals, source_function_boundaries_certified=False, regions=result,
                     discarded_compiler_output=getattr(self, 'discarded_outputs', {}),
                     compiler_generated_kept_elsewhere=sorted(set(getattr(self, 'kept_elsewhere_omitted', []))),
                     **({'rtti_original_copies': {n: '%08x' % a for n, a in sorted(self.rtti_original_copies.items())}}

@@ -77,6 +77,34 @@ The integrator transfers verified fresh compiler byte snapshots, creates remaini
 scaffold directly from the pinned executable, assembles i386 COFF and invokes VC6
 LINK. No previous accepted object is reused.
 
+The audit runs per compile group in a pool of forked processes
+(`RA2_VERIFY_JOBS` or `--verify-jobs`, default min(4, CPUs); 1, or a host
+without fork, audits in-process through the same code). The build first writes
+`fresh-accepted.json` streamed (each population's reference table is encoded
+once and spliced into its rows; the bytes equal `json.dumps` of the manifest)
+and records each row's byte span. Every task reads its group's rows back from
+that file, re-reads and re-parses its object and audits every row completely
+(`Audit.audit_row`); nothing is cached across builds or reused from earlier
+objects. The parent replays what the tasks recorded (discarded output, RTTI and
+data copies, kept-elsewhere names) in the serial audit's row order and checks
+extent overlap over all rows, so `fresh-verification.json` and every receipt are
+byte-identical to the serial `Audit.audit` path. The former path held the 2.4 GB
+manifest and its parsed copy in one process (about 10 GB at peak); the parent
+now peaks near 1.6 GB and each worker near 0.7 GB.
+
+Final input checks read each file once: (1) authored tools, toolchain manifest,
+catalog and policies equal their build-start fingerprints; (2) `validate_catalog`
+again over the tree as it is now (every source and header hash, no uncatalogued
+file, includes), so source drift cannot hide behind the audit's snapshots; (3)
+every proof input the audit read is unchanged: by content for files read in the
+build process (compared with the bytes step 2 just read where they overlap), by
+SHA-256 for inputs read in workers and for the streamed manifest
+(`Audit.verify_inputs_unchanged`). After a successful build the compile-NNN
+folders and `fresh-accepted.json` are deleted (hashes stay in
+`compile-receipt.json`, `fresh-verification.json` and `integration-receipt.json`;
+the build receipt lists the removal), leaving about 50 MB. `--keep-intermediates`
+keeps them, e.g. for `source_ledger.py`, which reads `fresh-accepted.json`.
+
 Packaging checks all four logical payloads/RVAs/virtual sizes and complete zero
 tails, then retains original headers/file padding/overlay. Every packaged byte
 must match the supplied target. Raw linker equality is reported separately.

@@ -282,9 +282,10 @@ def verify(catalog, populations, config, output, phase):
     if misses:
         return misses, None
     manifest = audit.verify_fresh(output / 'compile', compiled, complete=False)
-    for path, data in audit.blobs.items():
-        if path.read_bytes() != data:
-            raise SystemExit('refused: proof input changed during verification: %s' % path)
+    try:
+        audit.verify_inputs_unchanged()
+    except ValueError as error:
+        raise SystemExit('refused: %s' % error)
     phase('strict audit')
     return [], manifest
 
