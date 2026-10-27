@@ -19,6 +19,8 @@ struct Point2D {
 
     // Not inlined by the original (out-of-line copy 0x00435540, Blit.cpp).
     Point2D operator+(Point2D const &point) const;
+    // Member-wise difference in place (DisplayClass::TacticalClass::Action 0x0049AE70).
+    Point2D &operator-=(Point2D const &point) { X -= point.X; Y -= point.Y; return *this; }
     int Length() const; // 0047D060, integer table-sqrt vector length
     // Member-wise comparison (the Point2D vectors of MSChoice.cpp,
     // 0x005B1930/0x005B1A90).

@@ -30,6 +30,9 @@ public:
 
     // Scrolls by the mouse and keyboard (0x0066A290, called first by AI).
     void Unknown_0066A290();
+    // The cell, coordinate and object under a tactical point (0x00669650;
+    // false when the point is off the map; hypothesis).
+    bool Unknown_00669650(Point2D const &xy, Cell &cell, CoordStruct &coord, ObjectClass *&object, bool &arg5, bool &arg6);
 
     // Scroll rate timer (0x00AB7048; TS ScrollClass::Counter).
     static CDTimerClass<SystemTimerClass> Counter;

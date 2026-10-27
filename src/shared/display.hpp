@@ -166,7 +166,8 @@ public:
     Cell Unknown_0049A700(int edge, Cell const &cell1, Cell const &cell2, int arg4, int arg5, int arg6);   // 0x0049A700 (a cell on map edge `edge` near two cells; AircraftClass slot 134 passes 4, 1, 0)
     ObjectClass *Unknown_0049EC40();                    // 0x0049EC40
     void Unknown_0049EC60(ObjectClass *object);         // 0x0049EC60
-    void Unknown_004994D0(Cell *from, Cell *to);   // 0x004994D0 (the command code's group selection)
+    // Moves the cursor cell (+0x1170) to a cell and returns the old one (0x004994D0).
+    Cell Unknown_004994D0(Cell const &cell);
     ObjectClass *Prev_Object(ObjectClass *object);                     // 0x0049E5E0 runs 0x004798F0 on every cell
     void Unknown_0049C980(int control);
     void Unknown_0049CAC0(int control);                 // 0x0049CAC0 the mode switch for +0x11B0
