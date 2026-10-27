@@ -362,3 +362,12 @@ the ignored build/class-work/Study42/, `f.sh` prints a function's frame map).
   MapSizeGameOption::Describe leaving the dead territory slot unused and putting its
   operator+ temporary in a new slot) is a variable that existed at layout time and lost its
   references afterwards; no source form found yet.
+
+## Block-wide scheduler state (Big49)
+
+  placement miss late in a long block (a `mov ecx, reg` before or after the pushes, an `fstp`
+  around them) can come from earlier statements whose code already matches. A value passed
+  through a named local (`double v = x * 0.01; f(v);`) emits the same code as the inline
+  argument but shifts that state; try locals for a run of similar statements (Write_Basic
+  0x6625B0: all twelve [Lighting] values). Dummy statements that move it are steering.
+

@@ -35,7 +35,8 @@ class ScriptMissionClass {
 public:
     ScriptMissionClass() {}
     ScriptMissionClass(int mission, int data) : Mission(mission), Data(data) {}
-    ScriptMissionClass(char const *text);       // 0x006EAF60 ("%d,%d")
+    // Reads "action,argument"; not a constructor (it does not return this).
+    void Read_INI_Entry(char const *text);      // 0x006EAF60 ("%d,%d"; nothing for no text)
     int Build_INI_Entry(char *buffer) const;    // 0x006EAFA0 ("%d,%d"; returns the length)
 
     int Mission;    // +0x00

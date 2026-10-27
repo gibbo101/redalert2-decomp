@@ -4,8 +4,8 @@
     "id": "population-2456",
     "inventory_sha256": "a6081b88eed93c02df903b7776bea9052ad9fcbf97fb595f92a10b3df425e2bf",
     "gaps_sha256": "fc6825dd0e92ca041dd0c624c0cf515e70ac478011357b1d397bbd0ca2ec0d11",
-    "historical_population_sha256": "6329d3b546d2445f46643d37f9789f12bac5c0034d5c205d35c6aa88846012ea",
-    "historical_acceptance_sha256": "c79e8572f00dd93ed1f22d2d73bd18e188f66ecf6f83565834abab9a5f63a37b"
+    "historical_population_sha256": "6213300b9c71353431cccd74943af76df380f0953e2dd986345c31a5a6c8eca0",
+    "historical_acceptance_sha256": "1f875b4b867218b87445a1b4a020cdb9108755820f9fbc0a72d6ff1598a76603"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -959,7 +959,7 @@
     "??0Random3Class@@QAE@II@Z": 6523216,
     "??0RawFileClass@@QAE@PBD@Z": 6523712,
     "??0ScriptClass@@QAE@PAVScriptTypeClass@@@Z": 6719280,
-    "??0ScriptMissionClass@@QAE@PBD@Z": 7253856,
+    "?Read_INI_Entry@ScriptMissionClass@@QAEXPBD@Z": 7253856,
     "??0ScriptTypeClass@@QAE@PBD@Z": 6720032,
     "??0ScrollClass@@QAE@XZ": 6723040,
     "??0SideClass@@QAE@PBD@Z": 6794768,

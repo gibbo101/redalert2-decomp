@@ -4,8 +4,8 @@
     "id": "population-2507",
     "inventory_sha256": "1f266d6a1fa72955f891cf06a7858a2e70ce547bbd4c72eb71ddc117a03514e8",
     "gaps_sha256": "129efb8d8e0b6c491692c9fa0a0b38f438b46256157b893b2c51b50e716aa5c3",
-    "historical_population_sha256": "157a776175920b8d166606b41affdc47c8bd5129b6f476bb6cd25c8cb86632f0",
-    "historical_acceptance_sha256": "cc08c4c5e5370ea6e571698937a8633440edb10ba70de91fd32987a5b12a3143"
+    "historical_population_sha256": "0f47fd66577f2859cee314f13328a053a3385812cf6c752c2c0a3916c0438392",
+    "historical_acceptance_sha256": "3eba2b83d314695901a0dd0d4ccae92fa080ba7a7d521d7c3badcf8d301d3a9f"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5503,7 +5503,7 @@
     "??_7ScriptTypeClass@@6BINoticeSink@@@": 8033172,
     "??_7ScriptTypeClass@@6BINoticeSource@@@": 8033164,
     "??1ScriptTypeClass@@UAE@XZ": 6720224,
-    "??0ScriptMissionClass@@QAE@PBD@Z": 7253856,
+    "?Read_INI_Entry@ScriptMissionClass@@QAEXPBD@Z": 7253856,
     "?Find_By_ID_Or_Name@ScriptTypeClass@@SIPAV1@PBD@Z": 6721200,
     "?Find_By_Name@ScriptTypeClass@@SIPAV1@PBD@Z": 6721312,
     "??_GScriptClass@@UAEPAXI@Z": 6722128,

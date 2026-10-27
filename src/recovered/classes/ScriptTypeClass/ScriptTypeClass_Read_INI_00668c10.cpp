@@ -2,7 +2,7 @@
 // Reads the lines "0=" .. "49=" ("%d,%d"), keeping at most 50.
 #include "shared/script.hpp"
 // @ref ?Read_INI@AbstractTypeClass@@UAE_NAAVCCINIClass@@@Z=004107e0
-// @ref ??0ScriptMissionClass@@QAE@PBD@Z=006eaf60
+// @ref ?Read_INI_Entry@ScriptMissionClass@@QAEXPBD@Z=006eaf60
 // @ref ??_C@_02MECO@?$CFd?$AA@=007ce9bc
 // @ref ??_C@_00A@?$AA@=0083c55c
 
@@ -17,7 +17,8 @@ bool ScriptTypeClass::Read_INI(CCINIClass &ini)
             sprintf(entry, "%d", index);
             strtrim(entry);
             if (ini.Get_String(ID, entry, "", buffer, sizeof(buffer)) > 0) {
-                ScriptMissionClass mission(buffer);
+                ScriptMissionClass mission;
+                mission.Read_INI_Entry(buffer);
                 if (MissionCount < 50) {
                     MissionList[MissionCount] = mission;
                     MissionCount++;

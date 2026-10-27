@@ -4,8 +4,8 @@
     "id": "population-2481",
     "inventory_sha256": "990b915cbcebb6ea1bc8809e2be8057cec1b1c65811c2ab133b1c8153b6fe969",
     "gaps_sha256": "5d249e4f83e6f85c19b88b6718ed7aa0695fc29ad67e649b5e4896e47240e52a",
-    "historical_population_sha256": "3a38b7ec75509b60f200c5001163ddbca568598e7b00c3b7ae23f3f601c990ad",
-    "historical_acceptance_sha256": "31e7d2eac43446d6bc8fe7be9e4ad7c858714530094c4e949afa2672bae0b049"
+    "historical_population_sha256": "b690b0027e95b751916f2180a392553bf9efef34764b5fdfc0ab2ea53088b668",
+    "historical_acceptance_sha256": "e24574993350651ba4d3b9beaa038f25376ffbb20e066d9384b666066f17a417"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -12405,7 +12405,7 @@
     "?Write_INI@ScriptTypeClass@@UBE_NAAVCCINIClass@@@Z": 6720352,
     "?Build_INI_Entry@ScriptMissionClass@@QBEHPAD@Z": 7253920,
     "?Read_INI@ScriptTypeClass@@UAE_NAAVCCINIClass@@@Z": 6720528,
-    "??0ScriptMissionClass@@QAE@PBD@Z": 7253856,
+    "?Read_INI_Entry@ScriptMissionClass@@QAEXPBD@Z": 7253856,
     "?Read_Scenario_INI@ScriptTypeClass@@SIXAAVCCINIClass@@H@Z": 6720736,
     "??_C@_0M@MFIC@ScriptTypes?$AA@": 8334280,
     "?Find_By_ID_Or_Name@ScriptTypeClass@@SIPAV1@PBD@Z": 6721200,
