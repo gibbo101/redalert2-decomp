@@ -14,7 +14,8 @@ public:
     LaserDrawClass(CoordStruct source, CoordStruct target, int z_adjust, bool unknown, RGBClass inner, RGBClass outer,
                    RGBClass outer_spread, int duration, bool blinks, bool fades, float start_intensity,
                    float end_intensity);       // 0x00533110
-    char unknown_00[0x1C];
+    char unknown_00[0x18];
+    int unknown_18;                            // +0x18 (0x4468DD stores 3)
     bool IsHouseColor;                          // +0x1C (drawn in the owner's colour)
     char unknown_1d[0x58 - 0x1D];
 };

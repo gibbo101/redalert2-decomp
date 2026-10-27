@@ -16,6 +16,7 @@ typedef unsigned short wchar_t;
 
 class StringTable {
 public:
+    static int Is_Loaded_006fa030(); // original DWORD query at006FA030
     static wchar_t const *__fastcall Load_String(char const *label, char *speech, char const *file,
                                                  int line);   // 0x006F9EC0
 };
