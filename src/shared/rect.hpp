@@ -79,6 +79,37 @@ inline Rect Rect::Intersect(Rect const &rect, int *x, int *y) const
     return ::Intersect(*this, rect, x, y);
 }
 
+// The smallest rectangle holding both (Westwood's wwlib Union, a function
+// template); an invalid rectangle contributes nothing. RadarClass::Draw_It
+// 0x0062F580 expands it inline; the BuildingType unit's instance 0x0045EFE0
+// is the out-of-line copy the cell and building code call (__fastcall).
+template<class T>
+T __fastcall Union(T const &rect1, T const &rect2)
+{
+    if (rect1.Is_Valid()) {
+        if (rect2.Is_Valid()) {
+            T result = rect1;
+            if (result.X > rect2.X) {
+                result.Width += result.X - rect2.X;
+                result.X = rect2.X;
+            }
+            if (result.Y > rect2.Y) {
+                result.Height += result.Y - rect2.Y;
+                result.Y = rect2.Y;
+            }
+            if (result.X + result.Width < rect2.X + rect2.Width) {
+                result.Width = ((rect2.X + rect2.Width) - result.X) + 1;
+            }
+            if (result.Y + result.Height < rect2.Y + rect2.Height) {
+                result.Height = ((rect2.Y + rect2.Height) - result.Y) + 1;
+            }
+            return result;
+        }
+        return rect1;
+    }
+    return rect2;
+}
+
 // Clips a line to a rectangle; false when nothing of it is inside
 // (0x00775620, hypothesis from the surface line drawers).
 bool __fastcall Clip_Line(Point2D &start, Point2D &end, Rect const &rect);

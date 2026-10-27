@@ -4,6 +4,8 @@
 #include "shared/techno.hpp"
 #include "shared/house_views.hpp"
 
+// Never expanded inline: Adjust_Power and Adjust_Drain, its only callers, call it.
+#pragma auto_inline(off)
 void HouseClass::unknown_func_4ec9b0()
 {
     int count = unknown_objects_a40c60.Count();
@@ -18,3 +20,4 @@ void HouseClass::unknown_func_4ec9b0()
         }
     }
 }
+#pragma auto_inline(on)

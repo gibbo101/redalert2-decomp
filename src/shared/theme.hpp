@@ -23,10 +23,15 @@ public:
     int From_Name(char const *name) const;
     char const *Base_Name(int theme) const;
     char const *Name(int theme) const;      // 0x006E8570 (the theme's INI name; "none" out of range)
+    void Set_Volume(int volume);            // 0x006E8590 (at most 255)
 
     ThemeType Current;      // +0x00 playing theme
     ThemeType Score;        // +0x04 theme that should be playing
     ThemeType Pending;      // +0x08 queued theme
+    int Volume;             // +0x0C 0-255 (Set_Volume clamps it)
+    bool IsRepeat;          // +0x10 (OptionsClass IsScoreRepeat)
+    bool unknown_11;        // +0x11
+    bool IsShuffle;         // +0x12 (OptionsClass IsScoreShuffle)
 };
 
 extern ThemeClass Theme;    // 0x00A35D78

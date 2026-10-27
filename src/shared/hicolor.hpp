@@ -19,6 +19,9 @@ extern int unknown_shift_852fc4;    // blue right
 extern int unknown_shift_852fc8;    // green left
 extern int unknown_shift_852fcc;    // green right
 
+// Set when the display can stretch blits (0x00852FD6; DSurface::Create_Primary).
+extern bool AllowStretchBlits_852fd6;      // 0x00852FD6
+
 // Packs 0-255 channel values into a screen pixel (always expanded inline).
 inline int Build_Hicolor_Pixel(int red, int green, int blue)
 {

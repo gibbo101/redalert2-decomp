@@ -91,6 +91,7 @@ public:
     void unknown_func_4a6b10();             // 0x004A6B10 (after loading)
     char unknown_00[0x2C];
 };
+class HouseClass;
 // A base plan (RTTI BaseClass, vtable 0x0079C590; 0x78 bytes; Base.cpp).
 // Layout from its constructor 0x0042BF70; the destructor is inline.
 // BaseNodeClass: shared/house_nodes.hpp.
@@ -102,13 +103,16 @@ public:
     virtual HRESULT __stdcall Save(IStream *stream);  // slot 1 0x0042C8E0
     ~BaseClass() { Nodes.Clear(); }
     virtual void Compute_CRC(WWCRCEngine &crc) const;   // slot 2 0x0042C9F0
+    void Read_INI(CCINIClass &ini, char const *section);    // 0x0042C460 (the house's section)
+    void Write_INI(CCINIClass &ini, char const *section);   // 0x0042C5D0
 
     DynamicVectorClass<BaseNodeClass> Nodes;    // +0x04 (vtable 0x0079C5C0)
     int unknown_1c;                         // +0x1C
     DynamicVectorClass<Cell> unknown_20;  // +0x20 (vtable 0x0079C5A0)
     DynamicVectorClass<Cell> unknown_38;  // +0x38 (vtable 0x0079C5A0)
     Cell unknown_50;                  // +0x50
-    int unknown_54[(0x78 - 0x54) / 4];      // +0x54
+    int unknown_54[(0x74 - 0x54) / 4];      // +0x54
+    HouseClass *House;                      // +0x74 (set by HouseClass::Read_INI)
 };
 
 // Members of other classes read here, as views until their headers exist.
@@ -306,6 +310,21 @@ public:
     // are none) and reads each house's section (0x004EBA20; name hypothesis).
     static void __fastcall Read_Scenario_INI(CCINIClass &ini);
     void Read_INI(CCINIClass &ini);                        // 0x004EBBB0 (the house's own section)
+    // Derives the laser colour (+0x55EC) from the house colour (+0x55E9): scaled to length
+    // 240, channels under 96 dropped, scaled again (0x004F5570; name hypothesis).
+    void Update_Laser_Color();
+    void unknown_func_4f33e0(HouseClass *house);           // 0x004F33E0 (forgets the anger at a house)
+    void Cheer();                                          // 0x004F62B0 (every techno cheers; name hypothesis)
+    void unknown_func_4f3b70(SuperClass *super);          // 0x004F3B70 (fires a super weapon at unknown_cell_a40f10)
+    void unknown_func_4f3ae0(SuperClass *super);          // 0x004F3AE0 (fires a super weapon at a picked cell)
+    void unknown_func_4f3bb0(SuperClass *super);          // 0x004F3BB0 (the same code as 0x004F3AE0)
+    Cell unknown_func_4f65a0();                            // 0x004F65A0 (a target cell; +0x541C == 1)
+    Cell unknown_func_4f6a80(int mode);                    // 0x004F6A80 (a target cell by +0x541C)
+    void unknown_func_4f3d70(SuperClass *super);          // 0x004F3D70 (0x004F3AE0 unless 0x0051FC50's flag)
+    void unknown_func_4f3320(HouseClass *house);          // 0x004F3320 (marks a country seen; reveals to the player)
+    void Update_Color();                                   // 0x004F5400 (+0x55E9 from the colour scheme; name hypothesis)
+    void unknown_func_4f5800(long delay);                  // 0x004F5800 (sets +0x5668, restarts +0x1EC)
+    void unknown_func_4f5840(long delay);                  // 0x004F5840 (sets +0x5669, restarts +0x1F8)
     int Assign_Handicap(int difficulty);                   // 0x004E2E40 (sets +0xC8; returns the old value; name after TS)
     static void __fastcall Write_Scenario_INI(CCINIClass &ini);   // 0x004EC180
     BuildingClass *unknown_func_4e5160();                  // 0x004E5160 (the storage building with most free room)
@@ -318,6 +337,10 @@ public:
     // missing): 0 on success, 3 when refused (0x004E5E30; name after TS, from
     // its "Request to Begin_Production" messages).
     int Begin_Production(int kind, int index, bool naval, bool resume);
+    // Adds to the power output / drain; when the house turns under- or
+    // re-powered, every sink of its outgoing interface is told (names after TS).
+    void Adjust_Power(int amount);                         // 0x004EC6E0
+    void Adjust_Drain(int amount);                         // 0x004EC850
     void unknown_func_4e64f0(int kind, int index, int arg3);   // 0x004E64F0 (abandons production of a type; BuildingClass slot 54)
     void unknown_func_4eb620(int kind, bool naval, int arg3); // 0x004EB620
     void unknown_func_4eb6d0(int kind, bool naval, int arg3); // 0x004EB6D0
@@ -538,6 +561,21 @@ public:
     int unknown_15f88;                                    // +0x15F88
     int unknown_15f8c;                                    // +0x15F8C
 };
+
+// Scales a colour to length 240, clamping each channel at 255; black becomes
+// white (0x004F5490, House.cpp; name hypothesis).
+void __fastcall Normalize_Color(double &red, double &green, double &blue);
+
+// The house's outgoing interface (unknown_iid_7a1ac0) as Adjust_Power and
+// Adjust_Drain call it: slot 4 when the house becomes under-powered, slot 3
+// when it is powered again (names are hypotheses).
+struct __declspec(novtable) IUnknownHouseSink : public IUnknown {
+    virtual HRESULT __stdcall Power_Restored() = 0;     // slot 3
+    virtual HRESULT __stdcall Power_Low() = 0;          // slot 4
+};
+
+// A cell value meaning none (0x00A40F10; compared against picked target cells).
+extern Cell unknown_cell_a40f10;
 
 // Every house (0x00A32298; defined in the globals unit).
 extern DynamicVectorClass<HouseClass *> Houses;   // (the globals unit defines it as unknown_HouseClass_list_00a32298)

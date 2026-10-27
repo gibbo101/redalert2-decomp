@@ -172,4 +172,11 @@ public:
     int unknown_a8;                     // +0xA8
 };
 
+// The game's IPX manager (0x00A40978; defined in the IPXManagerClass unit).
+extern IPXManagerClass unknown_ipx_manager_a40978;
+// The destination network address set from [Network] DestNet (0x00A3F608) and
+// the flag that it is set (0x00A3F604; OptionsClass, name hypotheses).
+extern int unknown_dest_net_set_a3f604;
+extern IPXAddressClass unknown_dest_net_a3f608;
+
 #endif

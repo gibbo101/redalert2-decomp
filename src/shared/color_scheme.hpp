@@ -27,6 +27,7 @@ public:
     int unknown_color_0x324;                // +0x324
     int unknown_color_0x328;                // +0x328
     int unknown_color_0x32c;                // +0x32C
+    int unknown_color_0x330;                // +0x330 (the palette index of a house's colour; HouseClass::Read_INI)
 };
 extern DynamicVectorClass<ColorScheme *> ColorSchemes;      // 0x00AB6EF8 (Vector at 0x00AB6EFC)
 

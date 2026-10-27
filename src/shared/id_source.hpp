@@ -45,7 +45,8 @@ public:
     int unknown_610;                            // +0x610 (the difficulty of computer houses; hypothesis)
     char unknown_614[0x7C8 - 0x614];
     CDTimerClass<FrameTimerClass> MissionTimer; // +7c8,original countdown
-    char unknown_7d4[0x838 - 0x7D4];
+    char unknown_7d4[0x834 - 0x7D4];
+    int TechLevel;                              // +0x834 (the houses' default TechLevel; hypothesis)
     int Theater;                                // +0x838 (theater index; hypothesis)
     char unknown_83c[0x1208 - 0x83C]; // scenario name remains at+83c
     int unknown_1208;

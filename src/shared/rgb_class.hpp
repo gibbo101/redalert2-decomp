@@ -36,6 +36,14 @@ public:
 
     int Difference(RGBClass const &other) const; // 0x0063CFB0 weighted absolute difference
 
+    // Sets the three channels (an out-of-line copy at 0x004F6BC0, after House.cpp).
+    void Set(unsigned char red, unsigned char green, unsigned char blue)
+    {
+        Red = red;
+        Green = green;
+        Blue = blue;
+    }
+
     unsigned char Red;      // +0x00
     unsigned char Green;    // +0x01
     unsigned char Blue;     // +0x02

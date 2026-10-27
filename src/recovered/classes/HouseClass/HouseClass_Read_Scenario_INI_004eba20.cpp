@@ -5,11 +5,12 @@
 // computer difficulty to houses that are neither human nor player
 // controlled). Without [Houses], one house per house type is made and read.
 // @ref ??0HouseClass@@QAE@PAVHouseTypeClass@@@Z=004e18c0
-// @ref ?Assign_Handicap@HouseClass@@QAEHH@Z=004e2e40
-// @ref ?Read_INI@HouseClass@@QAEXAAVCCINIClass@@@Z=004ebbb0
 // @ref ??_C@_00A@?$AA@=0083c55c
 // @ref ??_C@_06DAOK@Houses?$AA@=007da83c
 // @ref ??_C@_07FNCB@Country?$AA@=007da834
+// @ref ?Assign_Handicap@HouseClass@@QAEHH@Z=004e2e40
+// @ref ?Read_INI@HouseClass@@QAEXAAVCCINIClass@@@Z=004ebbb0
+// @ref _strncpy=007823d0
 #include "shared/techno.hpp"
 #include "shared/house_views.hpp"
 

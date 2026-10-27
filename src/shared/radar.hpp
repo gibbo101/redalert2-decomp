@@ -25,7 +25,7 @@ public:
     RTacticalClass() : GadgetClass(0, 0, 0, 0, 0x9F, true) {}
     virtual int Action(unsigned flags, unsigned &key);  // slot 31 0x0062FE30
     int unknown_24;                                     // +0x24
-    int unknown_28;                                     // +0x28 (Init_For_House: 0x00AC1070)
+    void *unknown_28;                                   // +0x28 its shape (Init_For_House: the art buffer 0x00AC1070; Draw_It draws frame 0..32)
 };
 
 // ShapeButtonClass: shared/gadget.hpp.
@@ -67,6 +67,12 @@ inline bool operator==(HashObject<RadarTrackingStruct, TechnoClass *> const &a, 
 // (0x00631C60): x + y * 251.
 unsigned __fastcall Unknown_00631C40(Point2D const &point);
 unsigned __fastcall Unknown_00631C60(RadarTrackingStruct const &key);
+
+// The radar's background art (0x00AC0FF0; a shell art buffer, as the art
+// loaders name it), drawn by Draw_It at the radar origin.
+extern void *unknown_buffer_ac0ff0;
+// Updates every radar event (RadarEvent.cpp 0x0063B910; name hypothesis).
+void RadarEventClass_unknown_all_63b910();
 
 // Positions of the two radar shape buttons (set by slot 53, used by Init_IO).
 class ConvertClass;
@@ -247,6 +253,9 @@ public:
     void Unknown_00634970(int arg1);                    // 0x00634970 runs 0x00634670 for each house                            // 0x00631C80 builds a new tracking table
     void Unknown_00633000(int mode, bool sound);        // 0x00633000 switches the radar mode (+0x14AC)
     void Unknown_00633C40();                            // 0x00633C40 the mode-4 (transmission) update
+    void Unknown_00633210();                            // 0x00633210 (Draw_It, every frame)
+    void Unknown_00630350();                            // 0x00630350 (Draw_It, mode 2)
+    void Unknown_00633D30();                            // 0x00633D30 (Draw_It, mode 3)
 
     // Statics of Radar.CPP (guarded atexit destructors: static members).
     static RTacticalClass RadarButton;                  // 0x00AB6478

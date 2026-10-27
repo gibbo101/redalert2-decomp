@@ -584,6 +584,9 @@ public:
     INIVector3 Get_Vector(Wstring const &section, Wstring const &entry, INIVector3 const &defvalue) const;
     int Get_String(char const *section, char const *entry, char const *defvalue, char *buffer, int size) const;
     int Get_String(Wstring const &section, Wstring const &entry, Wstring const &defvalue, Wstring &result) const;
+    // A wide string with a wide default (0x0050EDF0; name hypothesis).
+    int Get_Unicode(char const *section, char const *entry, unsigned short const *defvalue, unsigned short *buffer, int size) const;
+    bool Put_Unicode(char const *section, char const *entry, unsigned short const *string);   // 0x0050ECF0 (name hypothesis)
     // A binary block stored uuencoded across the entries of a section;
     // returns the decoded length (0x0050D0F0 / 0x0050CFC0).
     int Get_UUBlock(char const *section, void *block, int length) const;

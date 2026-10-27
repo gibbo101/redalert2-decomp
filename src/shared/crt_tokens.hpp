@@ -13,6 +13,9 @@
 extern "C" unsigned int __cdecl strlen(char const *string);
 extern "C" char *__cdecl strtok(char *string, char const *delimiters);
 extern "C" int __cdecl _strnicmp(char const *left, char const *right, unsigned int count);
+// Wide forms (OptionsClass::Load_Settings reads [Network] NetID with them).
+extern "C" unsigned short *__cdecl wcstok(unsigned short *string, unsigned short const *delimiters);   // 0x00784B11
+extern "C" long __cdecl wcstol(unsigned short const *string, unsigned short **end, int base);           // 0x00784BB8
 #pragma intrinsic(strlen)
 
 #endif

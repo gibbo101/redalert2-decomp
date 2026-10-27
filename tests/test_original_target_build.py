@@ -11,7 +11,7 @@ from types import SimpleNamespace
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools/original_target'))
 import capstone
-from canonical import CanonicalAudit, sha, source_path, validate_catalog, validate_includes
+from canonical import CanonicalAudit, sha, source_path, validate_catalog, validate_includes, write_manifest
 from build import check_tail, write_coff, wine_command, win
 from coff import Coff
 from verify_manifest import TARGET_SHA256, TARGET_BYTES
@@ -129,6 +129,51 @@ class CanonicalBuildTests(unittest.TestCase):
     def test_complete_fresh_extent_passes(self):
         result=self.verify(self.row(),b'\xc3',synthetic_object(b'\xc3'))
         self.assertEqual(result['matched_source_regions'],1)
+
+    def test_streamed_manifest_equals_compact_json(self):
+        shared={'_a':1,'?b@@':0x402000,'\u00fc':3}
+        rows=[dict(entry=1,references=shared,name='x\u00e9\0'),dict(entry=2,references={}),dict(entry=3),
+              dict(entry=4,references=shared,relocations=[dict(symbol='_a')]),dict(entry=5,references=dict(shared))]
+        manifest=dict(executable_sha256=TARGET_SHA256,accepted=rows,matched_source_regions=len(rows))
+        digest,spans=write_manifest(self.root/'m.json',manifest)
+        data=(self.root/'m.json').read_bytes()
+        self.assertEqual(data,(json.dumps(manifest)+'\n').encode());self.assertEqual(digest,sha(data))
+        for (index,start,length),row in zip(spans,rows):self.assertEqual(json.loads(data[start:start+length]),row)
+
+    def test_worker_and_inline_audits_write_identical_reports(self):
+        # Two compile groups audited in forked worker processes and in-process.
+        second=self.root/'src/recovered/00401001.cpp';second.write_text('void other() {}\n')
+        rows=[self.row(),dict(self.row(),entry=0x401001,method='401001',source='src/recovered/00401001.cpp',
+                              source_sha256=sha(second.read_bytes()),source_order=1,options=['/O2','/Ob2','/G6','/Gy'])]
+        original=b'\xc3\xc3';outputs=[]
+        for jobs in (2,1):
+            audit=CanonicalAudit.__new__(CanonicalAudit)
+            audit.repository=self.root;audit.base=0x400000;audit.catalog={'regions':rows}
+            audit.blobs={};audit.documents={};audit.coffs={};audit.validated_objects=set();audit.groups={}
+            audit.decoder=capstone.Cs(capstone.CS_ARCH_X86,capstone.CS_MODE_32);audit.decoder.detail=True
+            audit.original=lambda address,size: original[address-0x401000:address-0x401000+size]
+            audit.pe=SimpleNamespace(get_section_by_rva=lambda rva: object() if 0x1000<=rva<0x100000 else None)
+            bounds={}
+            for row in rows:
+                body=original[row['entry']-0x401000:][:1]
+                bounds[row['entry']]=dict(entry='%08x'%row['entry'],ranges=[dict(start='%08x'%row['entry'],end_inclusive='%08x'%row['entry'],bytes_hex=body.hex())])
+            audit.bounds={'p':(bounds,{})}
+            out=self.root/'out';out.mkdir()
+            groups=[]
+            for index,row in enumerate(rows):
+                path=out/('g%d.obj'%index);path.write_bytes(synthetic_object(b'\xc3'));groups.append(([row],path))
+            manifest=audit.verify_fresh(out,groups,jobs=jobs)
+            self.assertEqual(manifest['matched_source_regions'],2)
+            audit.verify_inputs_unchanged()
+            # A source read only by a worker is still checked (by hash) at the end.
+            saved=second.read_bytes();second.write_text('changed')
+            with self.assertRaisesRegex(ValueError,'Proof input changed'):audit.verify_inputs_unchanged()
+            second.write_bytes(saved)
+            self.assertEqual(set(audit.coffs),{out/'g0.obj',out/'g1.obj'})
+            outputs.append({p.name:p.read_bytes() for p in out.iterdir()})
+            import shutil;shutil.rmtree(out)
+        self.assertEqual(outputs[0],outputs[1])
+        self.assertIn('fresh-verification.json',outputs[0])
 
     def test_wrong_extent_and_unaccounted_sections_refuse(self):
         for obj in [synthetic_object(b'\xc3\x90'),synthetic_object(b'\xc3',extra=('.text',b'\xc3',0x60100020)),
