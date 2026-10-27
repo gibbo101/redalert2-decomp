@@ -69,4 +69,8 @@ extern "C" GUID const IID_IUnknown_7afce0;     // 0x007AFCE0 {00000000-0000-0000
 extern "C" GUID const IID_IPersistStream;      // 0x007AFCD0 {00000109-0000-0000-C000-000000000046}
 extern "C" GUID const IID_IPersist;            // 0x007AFCC0 {0000010C-0000-0000-C000-000000000046}
 
+// ole32.dll stream persistence of a COM object (IAT 0x0079A5EC; the save
+// counterpart OleSaveToStream is 0x0079A5E8).
+WIN32_IMPORT HRESULT __stdcall OleLoadFromStream(IStream *stream, GUID const &iid, void **object);
+
 #endif
