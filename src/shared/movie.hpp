@@ -258,7 +258,8 @@ public:
     virtual void Blit() = 0;                               // slot 10 (+0x28)
 
     // +0x00 vtable
-    int unknown_04;          // +0x04
+    bool unknown_04;         // +0x04 (read as a byte by RadarClass 0x00633D30: the radar follows it at +0x14B8)
+    char unknown_05[3];
     int Width;               // +0x08
     int Height;              // +0x0C
 };
