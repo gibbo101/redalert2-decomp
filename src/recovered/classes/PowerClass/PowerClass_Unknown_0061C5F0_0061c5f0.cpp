@@ -1,4 +1,4 @@
-// int PowerClass::Unknown_0061C5F0() (0x0061C5F0, static)
+// int PowerClass::Unknown_0061C5F0() (0x0061C5F0)
 // The bar segments left unlit for the player's buildings: the share of the
 // bar the output (less the drain) leaves, 400 / (power + 400) of the
 // segments, clamped to the bar.

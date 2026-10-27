@@ -2,7 +2,7 @@
 // Steps one of the power bar's counters down toward the target 0x0061C700
 // gives it: +0x1528 first, then +0x1530, then +0x152C.
 #include "shared/power.hpp"
-// @ref ?Unknown_0061C700@PowerClass@@QAEXAAH00@Z=0061c700
+// @ref ?Unknown_0061C700@PowerClass@@QAEHAAH00@Z=0061c700
 
 void PowerClass::Unknown_0061CB50()
 {

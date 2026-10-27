@@ -14,4 +14,4 @@ int PowerClass::Unknown_0061C690()
     }
     return (int)((double)total / value * 5.0);
 }
-// @ref ?Unknown_0061C5F0@PowerClass@@SAHXZ=0061c5f0
+// @ref ?Unknown_0061C5F0@PowerClass@@QAEHXZ=0061c5f0

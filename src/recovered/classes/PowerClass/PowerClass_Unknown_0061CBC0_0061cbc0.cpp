@@ -3,7 +3,7 @@
 // gives it: +0x1530 first, then +0x1528, then +0x152C (the counterpart of
 // 0x0061CB50; no direct callers).
 #include "shared/power.hpp"
-// @ref ?Unknown_0061C700@PowerClass@@QAEXAAH00@Z=0061c700
+// @ref ?Unknown_0061C700@PowerClass@@QAEHAAH00@Z=0061c700
 
 void PowerClass::Unknown_0061CBC0()
 {

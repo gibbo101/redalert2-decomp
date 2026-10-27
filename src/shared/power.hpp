@@ -60,14 +60,14 @@ public:
     // callers, inlined elsewhere).
     static int Unknown_0061C6E0();
     // Segments left unlit for the player's building power (0x0061C5F0).
-    static int Unknown_0061C5F0();
+    int Unknown_0061C5F0();
     // The counters' share of the unlit segments, times 5 (0x0061C690; no
     // direct callers).
     int Unknown_0061C690();
 
     // The three counters' targets (0x0061C700; meaning not recovered; the
     // arguments receive the targets of +0x1528, +0x152C and +0x1530).
-    void Unknown_0061C700(int &target_1528, int &target_152c, int &target_1530);
+    int Unknown_0061C700(int &target_1528, int &target_152c, int &target_1530);
     // Steps one counter down toward its target: +0x1528 first, then
     // +0x1530, then +0x152C (0x0061CB50).
     void Unknown_0061CB50();
