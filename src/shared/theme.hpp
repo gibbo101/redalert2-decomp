@@ -22,6 +22,7 @@ public:
     // base name (0x006E7C40); CCINIClass reads and writes themes by name.
     int From_Name(char const *name) const;
     char const *Base_Name(int theme) const;
+    char const *Name(int theme) const;      // 0x006E8570 (the theme's INI name; "none" out of range)
 
     ThemeType Current;      // +0x00 playing theme
     ThemeType Score;        // +0x04 theme that should be playing

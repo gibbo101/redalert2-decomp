@@ -110,11 +110,8 @@ int __fastcall Owner_From_Name(char const *name);          // 0x00482DE0
 // Super weapon types: shared/super_weapon_type.hpp.
 #include "shared/super_weapon_type.hpp"
 
-// EVA voices: Find_Index 0x00716640 (-1 for a null name).
-class VoxClass {
-public:
-    static int __fastcall Find_Index(char const *name);
-};
+// EVA voices: shared/vox_class.hpp.
+#include "shared/vox_class.hpp"
 
 // The music player (ThemeClass, Theme): shared/theme.hpp.
 #include "shared/theme.hpp"
@@ -124,8 +121,8 @@ public:
 extern DynamicVectorClass<char const *> unknown_names_a71050;
 int __fastcall unknown_name_index_482e60(char const *name);
 
-// Sound effects: the name of a VocType (0x00714A00; "<none>" when out of range).
-char const *__fastcall Voc_Name(int voc);
+// Sound effects: Voc_Name (0x00714A00) is in shared/voc_class.hpp.
+#include "shared/voc_class.hpp"
 
 // Colour schemes (ColorScheme, ColorSchemes 0x00AB6EF8): shared/color_scheme.hpp.
 

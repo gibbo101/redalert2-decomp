@@ -79,6 +79,9 @@ public:
     bool unknown_63b5b0_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1FD0
     bool unknown_set_session_22a8(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2260
     static int __fastcall Action_Flags(int type);                       // 0x006B2DF0 (hypothesis)
+    // What the value of an action type names (0x006B2AB0; 0x2B, 0x28, 0x0C, 0x22, 0x0B,
+    // 0x1A, 0x27, 4, 3, 0x26, 1 are the kinds Build_INI_Entry writes; name hypothesis).
+    static int __fastcall Value_Kind(int type);
 
     int unknown_24;                         // +0x24
     TActionClass *Next;                     // +0x28
