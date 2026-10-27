@@ -40,8 +40,6 @@
 // @ref ?unknown_func_4f3160@HouseClass@@QAEXXZ=004f3160
 // @ref ?unknown_func_4f3170@HouseClass@@QAEXH_NH@Z=004f3170
 
-// The sensor value slots 289 and 291 receive (0x0084ED10; meaning unknown).
-extern int unknown_84ed10;
 // Set when the player loses a building (0x008339E8; hypothesis).
 extern bool unknown_flag_8339e8;
 

@@ -76,15 +76,6 @@ struct RecoilControl {
     bool unknown_10;
 };
 
-// A screen point (hypothesis; returned through a hidden pointer, so it has
-// a constructor).
-struct UnknownPoint2D {
-    UnknownPoint2D() {}
-    UnknownPoint2D(int x, int y) : X(x), Y(y) {}
-    int X;
-    int Y;
-};
-
 // The tactical view (pointer at 0x0083996C): see shared/gscreen.hpp
 // (Sidebar proposal: the UnknownTactical83996c view collided with
 // gscreen.hpp's `Tactical *unknown_tactical_83996c`; units that need

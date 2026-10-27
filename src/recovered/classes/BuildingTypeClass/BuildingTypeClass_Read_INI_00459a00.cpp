@@ -349,7 +349,7 @@ extern "C" char *__cdecl _itoa(int value, char *buffer, int radix);
     }
 
 
-static bool Same_Point(UnknownPoint2D const &first, Point2D const &second) { return first.X == second.X && first.Y == second.Y; }
+static bool Same_Point(Point2D const &first, Point2D const &second) { return first.X == second.X && first.Y == second.Y; }
 bool BuildingTypeClass::Read_INI(CCINIClass &ini)
 {
     char key[128];
@@ -402,18 +402,18 @@ bool BuildingTypeClass::Read_INI(CCINIClass &ini)
             strcpy(key, "MuzzleFlash");
             _itoa(index, number, 10);
             Point2D point = ArtINI.Get_Point(unknown_1c8, strcat(key, number), Point2D(0xFFFF, 0xFFFF));
-            MuzzleFlash[index] = UnknownPoint2D(point.X, point.Y);
+            MuzzleFlash[index] = Point2D(point.X, point.Y);
             if (Same_Point(MuzzleFlash[index], Point2D(0xFFFF, 0xFFFF))) {
-                MuzzleFlash[index] = UnknownPoint2D(0, 0);
+                MuzzleFlash[index] = Point2D(0, 0);
             }
         }
         for (index = 0; index < 8; index++) {
             strcpy(key, "DamageFireOffset");
             _itoa(index, number, 10);
             Point2D point = ArtINI.Get_Point(unknown_1c8, strcat(key, number), Point2D(0xFFFF, 0xFFFF));
-            DamageFireOffset[index] = UnknownPoint2D(point.X, point.Y);
+            DamageFireOffset[index] = Point2D(point.X, point.Y);
             if (Same_Point(DamageFireOffset[index], Point2D(0xFFFF, 0xFFFF))) {
-                DamageFireOffset[index] = UnknownPoint2D(unknown_geometry_l.X, unknown_geometry_l.Y);
+                DamageFireOffset[index] = Point2D(unknown_geometry_l.X, unknown_geometry_l.Y);
                 break;
             }
         }

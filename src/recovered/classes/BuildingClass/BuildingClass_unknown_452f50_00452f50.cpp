@@ -7,7 +7,6 @@
 #include "shared/team.hpp"
 #include "shared/crt_memory.hpp"
 
-extern int unknown_84ed10; // original packed default Cell at 0x0084ED10
 // @ref ?unknown_84ed10@@3HA=0084ed10
 // @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
 // @ref ?Unknown_006D9610@TechnoClass@@=006d9610

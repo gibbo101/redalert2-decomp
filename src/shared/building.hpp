@@ -40,6 +40,9 @@ class BulletClass;
 extern bool unknown_flag_a40958;        // 0x00A40958
 extern bool unknown_flag_a3d340;        // 0x00A3D340 (slot 39)
 extern int unknown_a40774;              // 0x00A40774 (shared/bullet.hpp, shared/sidebar.hpp)
+// The original packed default Cell (0x0084ED10): BuildingClass slot 52 hands it to slots 289 and
+// 291, 0x00452F50 copies it into a Cell; meaning unknown.
+extern int unknown_84ed10;
 
 // UnknownIndexClass: shared/techno_index.hpp (Foot6 copy: the duplicate definition removed).
 #include "shared/techno_index.hpp"

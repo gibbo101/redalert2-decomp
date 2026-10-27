@@ -268,8 +268,8 @@ public:
     bool CanBeOccupied;                              // +0x121E
     int MaxNumberOccupants;                          // +0x1220
     bool ShowOccupantPips;                           // +0x1224
-    UnknownPoint2D MuzzleFlash[10];                         // +0x1228 MuzzleFlash%d= (art; zero)
-    UnknownPoint2D DamageFireOffset[8];                     // +0x1278 DamageFireOffset%d= (art; zero)
+    Point2D MuzzleFlash[10];                         // +0x1228 MuzzleFlash%d= (art; zero)
+    Point2D DamageFireOffset[8];                     // +0x1278 DamageFireOffset%d= (art; zero)
     Point2D QueueingCell;                            // +0x12B8 QueueingCell= (art)
     int NumberImpassableRows;                        // +0x12C0 -1
     Point2D AddOccupy[8];                            // +0x12C4 AddOccupy%d= (art; not constructed)

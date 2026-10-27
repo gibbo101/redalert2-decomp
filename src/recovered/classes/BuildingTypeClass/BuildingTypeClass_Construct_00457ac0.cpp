@@ -183,8 +183,8 @@ BuildingTypeClass::BuildingTypeClass(char const *ini_name) :
     unknown_11ac=false;
     unknown_11b4=false;
     unknown_11bc=false;
-    for(int first=0;first<10;++first) MuzzleFlash[first]=UnknownPoint2D(unknown_geometry_l.X,unknown_geometry_l.Y);
-    for(int second=0;second<8;++second) DamageFireOffset[second]=UnknownPoint2D(unknown_geometry_l.X,unknown_geometry_l.Y);
+    for(int first=0;first<10;++first) MuzzleFlash[first]=Point2D(unknown_geometry_l.X,unknown_geometry_l.Y);
+    for(int second=0;second<8;++second) DamageFireOffset[second]=Point2D(unknown_geometry_l.X,unknown_geometry_l.Y);
     DockingOffsets[0]=TPoint3D<int>(0,0,0);
     ImmuneToPsionics=true;
     Parasiteable=false;

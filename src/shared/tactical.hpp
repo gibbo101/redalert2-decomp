@@ -17,7 +17,6 @@ class Surface;
 // 0x006A2710 and 0x006AC800). Stand-in: only the members the screen code uses,
 // layout padding otherwise; the AbstractClass overrides (slots 3, 5, 6, 8,
 // 10-12, 23) are not declared yet.
-struct UnknownPoint2D;
 class Tactical : public AbstractClass {
 public:
     // Draws a line between two coordinates in a color (0x006AC160, slot 24;
@@ -27,7 +26,7 @@ public:
     // Draws one pass (0, 1, 2) of the tactical view into surface (0x006A45A0).
     void Unknown_006A45A0(Surface *surface, bool redraw, int pass);
     // A screen point converted for the techno types' smoke offsets (0x006A2900).
-    UnknownPoint2D Unknown_006A2900(UnknownPoint2D const &point);
+    Point2D Unknown_006A2900(Point2D const &point);
     // Moves the view to a point (0x006A66B0; radar slot 52).
     void Unknown_006A66B0(Point2D const &point);
     void Unknown_006A66B0(CoordStruct const &coord);    // the same entry, given a coordinate

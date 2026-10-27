@@ -7,7 +7,7 @@
 // @ref ?Unknown_006A2900@Tactical@@=006a2900
 // @ref ??0AnimClass@@=00420110
 // @ref ?Unknown_006D9610@TechnoClass@@=006d9610
-static inline void Occupant_Offset_To_Coord(CoordStruct &coordinate,UnknownPoint2D const &point)
+static inline void Occupant_Offset_To_Coord(CoordStruct &coordinate,Point2D const &point)
 {
     int y=point.Y;
     int x=point.X;

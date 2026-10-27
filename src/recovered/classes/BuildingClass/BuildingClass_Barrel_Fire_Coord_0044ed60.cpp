@@ -5,7 +5,7 @@
 // @ref ?unknown_453900@BuildingClass@@=00453900
 // @ref ??D@YI?AUVector3@@ABVMatrix3D@@ABU0@@Z=00591380
 // @ref ?Unknown_006A2900@Tactical@@=006a2900
-static inline CoordStruct Add_Pixel_Offset(CoordStruct &coord,UnknownPoint2D const &point)
+static inline CoordStruct Add_Pixel_Offset(CoordStruct &coord,Point2D const &point)
 { coord.X+=point.X; coord.Y+=point.Y; return coord; }
 CoordStruct BuildingClass::unknown_44ed60(int weapon, bool previous)
 {
@@ -27,6 +27,6 @@ CoordStruct BuildingClass::unknown_44ed60(int weapon, bool previous)
     delta.Y=(int)-point.Y;
     delta.Z=(int)point.Z;
     CoordStruct result=unknown_slot42()+delta;
-    UnknownPoint2D pixel(Type->Anims[9].Offset.X,Type->Anims[9].Offset.Y);
+    Point2D pixel(Type->Anims[9].Offset.X,Type->Anims[9].Offset.Y);
     return Add_Pixel_Offset(result,unknown_tactical_83996c->Unknown_006A2900(pixel));
 }
