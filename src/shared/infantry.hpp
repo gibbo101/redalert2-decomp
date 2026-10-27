@@ -185,7 +185,7 @@ public:
     bool unknown_5090a0() const;                // 0x005090A0 (the type's Deployer flag)
     bool unknown_5090b0() const;                // 0x005090B0 (the type's UndeployDelay is set)
     bool unknown_509100() const;                // 0x00509100 (the type's DeployFire flag)
-    int unknown_5090d0() const;                 // 0x005090D0 (deploying: sequence 27-30)
+    bool unknown_5090d0() const;                // 0x005090D0 (deploying: sequence 27-30; TechnoClass slot 186 and UnitClass test al)
     bool unknown_508d00();                      // 0x00508D00 (JumpJet type flying with the jumpjet locomotor)
     bool unknown_508dd0(Cell const *from, Cell const *to);   // 0x00508DD0 (a move worth path-finding)
     int unknown_500350();                       // 0x00500350 (the shape frame of the current sequence; Westwood's Shape_Number)

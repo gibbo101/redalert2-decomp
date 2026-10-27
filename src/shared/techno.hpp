@@ -470,7 +470,7 @@ public:
     virtual UnknownFacingDir unknown_slot183();                   // slot 183 (+0x2DC) 0x006D3F80
     virtual InfantryTypeClass *unknown_slot184();                   // slot 184 (+0x2E0) 0x006D30B0 the crew type a crewed techno leaves
     virtual bool unknown_slot185();                                  // slot 185 (+0x2E4) 0x006CD300
-    virtual int unknown_slot186();                                  // slot 186 (+0x2E8) 0x006CD340
+    virtual bool unknown_slot186();                                 // slot 186 (+0x2E8) 0x006CD340 (returns al: xor al,al / sete al / mov al,1)
     virtual int unknown_slot187(int arg1);                          // slot 187 (+0x2EC) 0x006C9C00
     virtual int unknown_slot188(int arg1);                          // slot 188 (+0x2F0) 0x006D31E0
     virtual bool unknown_slot189();                                 // slot 189 (+0x2F4) 0x00453BA0 (kept copy elsewhere)
