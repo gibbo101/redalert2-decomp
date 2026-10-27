@@ -30,7 +30,6 @@
 
 extern "C" int __cdecl sprintf(char *buffer, char const *format, ...);
 
-typedef unsigned char BYTE;
 
 // Register block of VWIN32_DIOC_DOS_IOCTL (as in the Windows 95 DDK).
 struct DIOC_REGISTERS {

@@ -29,8 +29,8 @@
 //   +0x0DC  int, +0x0E0 void * (swizzled; Set_unknown_e0)
 //   +0x0E4  ObjectClass *OccupierPtr, +0x0E8 ObjectClass *AltOccupierPtr
 //           (swizzled; chained through ObjectClass +0x30)
-//   +0x0EC  int unknown_ec            index into the 0x24-byte table at
-//           0x00850EC0
+//   +0x0EC  int unknown_ec            the land type (index into Ground,
+//           0x00850EA0)
 //   +0x0F0  double unknown_f0         (Reduce_f0 0x0047CEC0)
 //   +0x0F8  void * (swizzled), +0x0FC owned object (deleted by the destructor)
 //   +0x100  int, +0x104 int (0x10000)
@@ -63,13 +63,8 @@ extern "C" GUID const CLSID_CellClass;          // 0x007A1E70
 // The offsets of the eight neighbouring cells by facing (0x00851A70).
 #include "shared/adjacent_cell.hpp"
 
-// A 0x24-byte table indexed by CellClass +0xEC (0x00850EC0; hypothesis:
-// the land types); only its first flag is read here.
-struct UnknownCellLand {
-    bool unknown_00;
-    char unknown_01[0x24 - 1];
-};
-extern UnknownCellLand unknown_lands_850ec0[];
+// The land types (Ground, 0x00850EA0) that CellClass +0xEC indexes.
+#include "shared/ground_type.hpp"
 
 // The map's list of tagged cells (MapClass +0x1158,
 // DynamicVectorClass<Cell> at 0x00833638).
@@ -190,6 +185,11 @@ public:
     void unknown_47a4e0();                      // 0x0047A4E0 (redraws the cell's 60x30 screen area; BuildingClass 0x0043C1F0)
     int unknown_47a5a0();                       // 0x0047A5A0 (bit per cardinal neighbour holding veins: an IsVeins overlay, or overlay 0x7E with data from 48)
     bool unknown_475840(int overlay, int facing) const;   // 0x00475840 (whether a wall of overlay type joins this cell toward facing: the same wall, or a gate or wall tower; hypothesis)
+    bool unknown_478ba0();                      // 0x00478BA0 (whether tiberium may grow here; hypothesis)
+    void unknown_473d20(ObjectClass *object, bool alt);   // 0x00473D20 (unlinks object from the occupier list; MapClass 0x0054B04D)
+    Rect unknown_4752b0() const;                // 0x004752B0 (a screen rectangle of the cell's contents; hypothesis)
+    Rect unknown_474eb0() const;                // 0x00474EB0 (another; hypothesis)
+    Rect unknown_475100() const;                // 0x00475100 (another; hypothesis)
     bool unknown_47c200();                      // 0x0047C200 (the map allows the cell, its tile type does not refuse it, it is not blocked and holds no building or terrain object)
     void unknown_47be00();                      // 0x0047BE00 (diagonal pass over the cells ahead)
     void unknown_47be60();                      // 0x0047BE60
@@ -217,6 +217,8 @@ public:
 
     static Cell __fastcall Adjacent_Cell(Cell const &cell, int facing);   // 0x0047CFC0
     CellClass &Adjacent_Cell(unsigned facing);  // 0x00476AC0 (this cell for facings past 7)
+    // The const form (as in Westwood's CELL.H: casts away const and calls the above).
+    CellClass const &Adjacent_Cell(unsigned facing) const { return ((CellClass *)this)->Adjacent_Cell(facing); }
     CoordStruct unknown_475d60() const;         // 0x00475D60 (centre at the middle's height)
     bool unknown_476460(int facing, bool alt) const;   // 0x00476460 (+0x124/+0x128 bit clear)
     ObjectClass *unknown_476750() const;        // 0x00476750 (the building, if its type's +0x1351 flag is set)

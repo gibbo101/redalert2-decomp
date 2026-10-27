@@ -17,14 +17,15 @@ inline CellClass &Map_Cell(Cell const &cell)
 }
 
 // The isometric tile types (a view of shared/isometric_tile_type.hpp, which
-// these units cannot include beside it); only the flags at +0x2B0 and +0x2D5
-// are known.
+// these units cannot include beside it); only the flags at +0x2B0, +0x2D5
+// and +0x2D6 are known.
 class IsometricTileTypeClass {
 public:
     char unknown_000[0x2B0];
     bool unknown_2b0;                       // +0x2B0 (smudges allowed; hypothesis)
     char unknown_2b1[0x2D5 - 0x2B1];
     bool unknown_2d5;                       // +0x2D5 (CellClass::unknown_47c200: false refuses the cell)
+    bool unknown_2d6;                       // +0x2D6 (CellClass::unknown_478ba0: tiberium may grow on the tile)
 };
 extern DynamicVectorClass<IsometricTileTypeClass *> IsoTileTypes;
 

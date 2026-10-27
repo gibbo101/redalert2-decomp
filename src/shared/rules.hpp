@@ -785,16 +785,8 @@ public:
     char unknown_14bc[0x14C0 - 0x14BC];
 };
 
-// A land type's movement costs (Westwood's GroundType; the RA2 values are floats): the
-// speed factor of each SpeedType (Foot, Track, Wheel, Hover, Winged, Float, Amphibious,
-// FloatBeach) and whether buildings may be placed. RulesClass::Land_Types reads one per
-// land type.
-struct GroundType {
-    float Cost[8];   // +0x00
-    bool  Build;     // +0x20
-};
-
-extern GroundType Ground[12];                   // 0x00850EA0
+// Ground (the land types' movement costs): shared/ground_type.hpp.
+#include "shared/ground_type.hpp"
 
 // The crate kinds' [Powerups] values (RulesClass::Powerups; Westwood's names):
 // the relative chance, the animation, whether the crate may appear on water

@@ -150,6 +150,21 @@ WIN32_IMPORT BOOL WINAPI KillTimer(HWND window, UINT id);
 WIN32_IMPORT UINT WINAPI SetTimer(HWND window, UINT id, UINT elapse, TIMERPROC callback);
 WIN32_IMPORT BOOL WINAPI ScreenToClient(HWND window, POINT *point);
 
+// Registry keys (ADVAPI32) and KERNEL32 string helpers.
+typedef struct HKEY__ *HKEY;
+typedef unsigned char BYTE;
+#define HKEY_CLASSES_ROOT ((HKEY)0x80000000)
+#define KEY_ALL_ACCESS 0xF003F
+#define REG_SZ 1
+WIN32_IMPORT LONG WINAPI RegCreateKeyExA(HKEY key, LPCSTR subkey, DWORD reserved, char *keyclass, DWORD options,
+                                         DWORD access, void *security, HKEY *result, DWORD *disposition);
+WIN32_IMPORT LONG WINAPI RegSetValueExA(HKEY key, LPCSTR name, DWORD reserved, DWORD type, BYTE const *data,
+                                        DWORD size);
+WIN32_IMPORT LONG WINAPI RegCloseKey(HKEY key);
+WIN32_IMPORT char *WINAPI lstrcpyA(char *destination, LPCSTR source);
+WIN32_IMPORT char *WINAPI lstrcatA(char *destination, LPCSTR source);
+WIN32_IMPORT int WINAPI lstrlenA(LPCSTR string);
+
 // USER32 printf into a buffer (cdecl, variable arguments).
 WIN32_IMPORT int __cdecl wsprintfA(char *buffer, char const *format, ...);
 

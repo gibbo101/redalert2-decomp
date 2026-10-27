@@ -39,6 +39,9 @@ public:
     FoggedObjectClass(NoInitClass const &noinit);                // 0x004BFFD0
     FoggedObjectClass();                                        // 0x004C0020
     virtual ~FoggedObjectClass();                               // 0x004C0DD0
+    // The cells a fogged building covers (its type's slot 36 list, ending
+    // at 0x7FFF,0x7FFF); null for other kinds (0x004C1F00).
+    Cell const *unknown_4c1f00() const;
 
     virtual HRESULT __stdcall GetClassID(GUID *classid);        // 0x004C1F40
     virtual HRESULT __stdcall Load(IStream *stream);             // 0x004C1C80; body unrecovered
@@ -54,9 +57,7 @@ public:
     int unknown_28;                                 // +0x28
     int unknown_2c;                                 // +0x2C
     int unknown_30;                                 // +0x30
-    int unknown_34;                                 // +0x34
-    int unknown_38;                                 // +0x38
-    int unknown_3c;                                 // +0x3C
+    CoordStruct Coord;                              // +0x34 where the object stood (CellClass 0x0047BE60 copies it whole)
     int unknown_40;                                 // +0x40
     int unknown_44;                                 // +0x44
     int unknown_48;                                 // +0x48

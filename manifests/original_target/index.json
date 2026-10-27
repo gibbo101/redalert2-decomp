@@ -68,7 +68,7 @@
       },
       {
         "path": "src/shared/win32_api.hpp",
-        "sha256": "180c894b31d424f9e08d2de0e51082aac632cff731d184f4f1108b3ec44e7ce6"
+        "sha256": "9978437a270740c40a41dc766a0b581bf1a1e453829c7c554205e715b89c4d02"
       },
       {
         "path": "src/shared/buffer_io_file_class.hpp",
@@ -288,7 +288,7 @@
       },
       {
         "path": "src/shared/cd_control.hpp",
-        "sha256": "f0b9e0cc590257ff2f435768959faedd98471d0d4c8dc99c4fb4563fad0dd2ad"
+        "sha256": "3885958af4931e357c54f1b3f1a04fd255e20f710361e2c478926c4a2336942d"
       },
       {
         "path": "src/shared/keyboard.hpp",
@@ -536,7 +536,7 @@
       },
       {
         "path": "src/shared/fogged_object.hpp",
-        "sha256": "5d6a7b7f870a53dfdb994201b288586f961f2cac0ccfb1261f6a6ce902fc5af8"
+        "sha256": "93fdc218d8d49ad1492fb5e9a714c1c4ebacd13fb4f1254e0036822778ec40b4"
       },
       {
         "path": "src/shared/ipx_conn.hpp",
@@ -772,11 +772,11 @@
       },
       {
         "path": "src/shared/cell.hpp",
-        "sha256": "8e1c910b94d1b4994985ddeb602784b832102511decfd40361ff0a2346f1d78f"
+        "sha256": "8ea3e1410622489624769f6f09d9be55451aede5389e700c50d9d8c9207616f7"
       },
       {
         "path": "src/shared/map_cell_view.hpp",
-        "sha256": "7ffbf82edc7dafe27df73b9a5b4c963210dabe668e29e08dbbc47f6692229a91"
+        "sha256": "b993da92c0df0e122c573940f4c4886282951034487546d8a6421b0fb72a4770"
       },
       {
         "path": "src/shared/unit.hpp",
@@ -944,7 +944,7 @@
       },
       {
         "path": "src/shared/rules.hpp",
-        "sha256": "6e74a6259b89f58795970fb1451d0c1a07886a5421be8974b833e03691bf8a85"
+        "sha256": "62aa6b690251b3da9af17d904aa48314826893c2c6cc40f0c10c7f420e289b40"
       },
       {
         "path": "src/shared/counter_class.hpp",
@@ -1160,7 +1160,7 @@
       },
       {
         "path": "src/shared/launcher_validation.hpp",
-        "sha256": "c88f85e7931938ca734767cede065291e9776133604ef0d5cb092e69767576d7"
+        "sha256": "226ff926d270f4e3d9eb2db1bcc58177e6c3b302798283a0cb0987d8737b3273"
       },
       {
         "path": "src/shared/mplayer_score_type.hpp",
@@ -1449,6 +1449,14 @@
       {
         "path": "src/shared/unknown_timed_slots.hpp",
         "sha256": "58986725e5e82796671cf18c94bc0aba33de4e6f31bef7d578a1128f5825355f"
+      },
+      {
+        "path": "src/shared/com_registration.hpp",
+        "sha256": "769ebdf2fe2eb8c5303e42db67b324919c7338eec6e17acea6e2b46a44c9909a"
+      },
+      {
+        "path": "src/shared/ground_type.hpp",
+        "sha256": "59a108daada0bc68001ddb7da9b0d259162a4520770d2fe486c8be324e5c1399"
       }
     ],
     "source_quality_checkpoint": {
@@ -4014,7 +4022,9 @@
     "population-2552",
     "population-2553",
     "population-2554",
-    "population-2555"
+    "population-2555",
+    "population-2556",
+    "population-2557"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -4227,7 +4237,7 @@
     ["population-116", 1],
     ["population-02", 1],
     ["population-116", 2],
-    ["population-2555", 13],
+    ["population-2556", 13],
     ["population-20", 1],
     ["population-01", 8],
     ["population-09", 3],
@@ -4998,7 +5008,7 @@
     ["population-01", 2],
     ["population-09", 2],
     ["population-18", 1],
-    ["population-1620", 12],
+    ["population-2557", 12],
     ["population-1622", 3],
     ["population-01", 3],
     ["population-27", 1],
@@ -6106,7 +6116,7 @@
     ["population-2483", 2],
     ["population-328", 2],
     ["population-2469", 2],
-    ["population-1620", 2],
+    ["population-2557", 2],
     ["population-477", 2],
     ["population-2421", 2],
     ["population-2525", 2],
@@ -6173,7 +6183,7 @@
     ["population-1617", 1],
     ["population-1618", 1],
     ["population-1619", 1],
-    ["population-1620", 1],
+    ["population-2557", 1],
     ["population-2552", 1],
     ["population-1621", 1],
     ["population-2438", 11],
@@ -6803,12 +6813,13 @@
     ["population-2547", 1],
     ["population-2548", 1],
     ["population-2549", 2],
-    ["population-2555", 46],
+    ["population-2556", 46],
     ["population-2551", 1],
     ["population-2552", 1],
     ["population-2553", 3],
     ["population-2554", 3],
-    ["population-2555", 16]
+    ["population-2556", 19],
+    ["population-2557", 1]
   ],
   "shards": {
     "population-01": "b0fcc4a7380b952649b4966cd96655569a29b7a4206710da4d6d2f7a144e7d84",
@@ -7510,7 +7521,7 @@
     "population-1618": "2b3f79687c2927ba47c37b2784b1eee96ca74bee32f6ef3b97280f8b5d64d665",
     "population-1619": "6e446efc74b8f386224b2311dc679547d9240022152ee437e57d2ff74a54d678",
     "population-162": "f46f1543dbf3083712aee2bf2fe50036f9c005455f5329bd37940bad7f401a01",
-    "population-1620": "6f15b79bf6f4ff2d91ded76c864c23bfda89bb90532d79802b64b7175c194bef",
+    "population-1620": "e738bf015c040e6e4b1fc784a4eb653c53271a904b1f6d2c52ff3b9a2e57bfe2",
     "population-1621": "f8a644e4d71bb7d0b97b57bf4d14ae64e3730e7419f9e99cfb7efc1db4cf5195",
     "population-1622": "43dd342513dfd842943ca238e1ea4b016ef658f11174931d683df5fa4ea3a81c",
     "population-1623": "d55b28b043e7a38b477fe708526e871d66ee360f0c794c4232cb9d3d9002168e",
@@ -8547,7 +8558,9 @@
     "population-2552": "b16f35fe1f937491347c390aed98a99d914bc5bb80360fb5eb2bd0d06a7f950e",
     "population-2553": "eacbda16050b65c6ea4c9f7cc5d29fe73735322b25485be86d83d12f2d49daef",
     "population-2554": "affb4afb73e07b89eb16650d6c466752ccb1b8ec6e1ddf87969f22cff0197fb3",
-    "population-2555": "0350898108a762a3c45aba8472b7a27f4ce64c85658fbfdfcc044f885c61320f",
+    "population-2555": "6d1d35daa8e8c9039ae52cfa5b96abc4574cfcda590d6f5720bd5b67a2c34fc7",
+    "population-2556": "f1ed374105d693c4343e5da812e4440f4d363760ee8ac61b114ad3d528867167",
+    "population-2557": "0970531bc3f712a54025e42c6175c596c72e2d45dd41ddd901565a6bf9ac080c",
     "population-256": "b06590d81f9036773322dc5bb16487c2041e14b6d23e50cb812dd92aacf0719d",
     "population-257": "17e2afa140f10b61ab3bab2a388b1ec926681dbf04f486cb850f2f40dddf1597",
     "population-258": "3dc0371ef6650f04963f73166e826b2bdb71afdb0641f2910cd617f6b8dcc4b5",
