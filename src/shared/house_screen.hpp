@@ -53,9 +53,16 @@ public:
     char unknown_234[0x52D0 - 0x234];
     int PowerOutput;                    // +0x52D0 (power bar help text; hypothesis)
     int PowerDrain;                     // +0x52D4
-    char unknown_52d8[0x56D0 - 0x52D8];
+    char unknown_52d8[0x5310 - 0x52D8];
+    int unknown_5310[20];               // +0x5310 per house index: units, infantry, aircraft killed (as shared/house.hpp)
+    int unknown_5360;                   // +0x5360
+    int unknown_5364[20];               // +0x5364 per house index: buildings killed
+    char unknown_53b4[0x56D0 - 0x53B4];
     int unknown_56d0[0x4204];           // +0x56D0 a value per 4 x 4 cell block (MapClass 0x0054E3A0)
     char IniName[0x15];                 // +0x15EE0 the [Houses] entry value
+    char unknown_15ef5[0x15F16 - 0x15EF5];
+    wchar_t UIName[21];                 // +0x15F16 the type's UIName (radar player list)
+    int ColorSchemeIndex;               // +0x15F40 (as shared/house.hpp)
 };
 
 extern DynamicVectorClass<HouseClass *> Houses;             // 0x00A32298

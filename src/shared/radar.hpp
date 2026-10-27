@@ -72,6 +72,8 @@ unsigned __fastcall Unknown_00631C60(RadarTrackingStruct const &key);
 // The radar's background art (0x00AC0FF0; a shell art buffer, as the art
 // loaders name it), drawn by Draw_It at the radar origin.
 extern void *unknown_buffer_ac0ff0;
+// The frame art of the multiplayer player list (0x00AB64A0; frame 32 drawn by 0x00630350).
+extern void *unknown_shape_ab64a0;
 // Updates every radar event (RadarEvent.cpp 0x0063B910; name hypothesis).
 void RadarEventClass_unknown_all_63b910();
 
