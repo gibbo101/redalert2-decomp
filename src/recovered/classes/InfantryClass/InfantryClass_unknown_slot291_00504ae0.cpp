@@ -20,7 +20,7 @@ bool InfantryClass::unknown_slot291()
     }
     int facing = Dir_To_8(unknown_2e0.Current());
     CoordStruct coord = Coord;
-    if (unknown_slot101((int)&Map[coord], facing, Unknown_005D47D0(), 0, 1) == 0) {
+    if (unknown_slot101(&Map[coord], facing, Unknown_005D47D0(), 0, 1) == 0) {
         unknown_5c4 = false;
     } else {
         unknown_5c4 = true;

@@ -10,7 +10,7 @@
 bool WaveClass::unknown_slot53(CoordStruct const *coord, int dir)
 {
     if (unknown_flag_a40958 && unknown_76 && !unknown_74) {
-        if (unknown_a40774 == 0 && unknown_slot101((int)&Map[*coord], -1, coord->Z, 0, 1) != 0) {
+        if (unknown_a40774 == 0 && unknown_slot101(&Map[*coord], -1, coord->Z, 0, 1) != 0) {
             return false;
         }
         unknown_76 = false;

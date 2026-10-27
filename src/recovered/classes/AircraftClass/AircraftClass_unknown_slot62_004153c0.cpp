@@ -16,7 +16,7 @@ int AircraftClass::unknown_slot62(TechnoClass *techno)
     int index;
     for (index = 0; index < 8; index++) {
         cell = Adjacent_Cell(unknown_slot104(), unknown_facings_7ce4a8[index]);
-        if (techno->unknown_slot101((int)&Map[cell], -1, -1, 0, 1) == 0) {
+        if (techno->unknown_slot101(&Map[cell], -1, -1, 0, 1) == 0) {
             break;
         }
     }

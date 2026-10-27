@@ -32,8 +32,9 @@ int AircraftClass::unknown_415510()
         int sample_y = (int)(center_y - unknown_sin_4ba480(angle) * 128.0);
         int sample_x = (int)(unknown_cos_4ba4d0(angle) * 128.0 + landing.X);
         landing = CoordStruct(sample_x, sample_y, altitude);
-        UnknownCellClass *cell = reinterpret_cast<UnknownCellClass *>(&Map[landing]);
-        if (passenger->unknown_slot101((int)cell, -1, 0, 0, 1) == 0) {
+        CellClass *map_cell = &Map[landing];
+        UnknownCellClass *cell = reinterpret_cast<UnknownCellClass *>(map_cell);
+        if (passenger->unknown_slot101(map_cell, -1, 0, 0, 1) == 0) {
             CoordStruct spot = cell->Unknown_004764B0(landing, 0, false);
             if (spot != unknown_geometry_l) {
                 // The original tests spot.Z, but retains the aircraft altitude.

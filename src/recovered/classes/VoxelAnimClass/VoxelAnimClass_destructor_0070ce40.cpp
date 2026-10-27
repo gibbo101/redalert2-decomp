@@ -42,13 +42,13 @@
 // @ref ?unknown_VoxelAnimClass_list_008399d0@@3V?$DynamicVectorClass@PAVVoxelAnimClass@@@@A=008399d0
 // @ref ?What_Am_I@AbstractClass@@UAGHXZ=0040ffb0
 // @ref ?unknown_slot100@ObjectClass@@UAEXH@Z=005d2d60
-// @ref ?unknown_slot101@ObjectClass@@UAEHHHHHH@Z=00423e00
+// @ref ?unknown_slot101@ObjectClass@@UAEHPAVCellClass@@HHHH@Z=00423e00
 // @ref ?unknown_slot102@ObjectClass@@UAEHHHHHH@Z=00423e10
 // @ref ?unknown_slot103@ObjectClass@@UAEXABUCoordStruct@@@Z=005d51c0
 // @ref ?unknown_slot104@ObjectClass@@UAEHH@Z=0041b320
 // @ref ?unknown_slot105@ObjectClass@@UAEPAVAbstractClass@@XZ=005d51e0
 // @ref ?unknown_slot106@ObjectClass@@UBE?AVCell@@XZ=005d5240
-// @ref ?unknown_slot107@ObjectClass@@UBEHXZ=005d5290
+// @ref ?unknown_slot107@ObjectClass@@UBEPAVCellClass@@XZ=005d5290
 // @ref ?unknown_slot108@ObjectClass@@UBEHXZ=005d4810
 // @ref ?unknown_slot109@ObjectClass@@UAEXH@Z=005d4860
 // @ref ?unknown_slot110@ObjectClass@@UBEHXZ=005d4800

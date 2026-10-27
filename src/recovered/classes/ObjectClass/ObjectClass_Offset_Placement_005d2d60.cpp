@@ -12,6 +12,6 @@ void ObjectClass::unknown_slot100(int facing)
 {
     unknown_slot71(0);
     CoordStruct destination = Object_Translation_005D2D60(unknown_facing_offsets_851ac0[facing & 7], Coord);
-    if (unknown_slot101((int)&Map[destination], facing, -1, 0, 1) == 0) unknown_slot103(destination);
+    if (unknown_slot101(&Map[destination], facing, -1, 0, 1) == 0) unknown_slot103(destination);
     unknown_slot71(1);
 }

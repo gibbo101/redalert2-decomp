@@ -121,11 +121,11 @@ int TechnoClass::unknown_slot27(Cell const *cell, bool arg2, bool arg3)
                 return 1;
             }
             if (unknown_slot39()) {
-                if (unknown_slot101((int)Map_Cell_At(*cell), -1, -1, 0, 1) <= 1 || arg2) {
+                if (unknown_slot101(&Map[*cell], -1, -1, 0, 1) <= 1 || arg2) {
                     return 1;
                 }
                 if (unknown_slot32()->unknown_af5
-                    && unknown_slot101((int)Map_Cell_At(*cell), -1, -1, 0, 0) <= 1) {
+                    && unknown_slot101(&Map[*cell], -1, -1, 0, 0) <= 1) {
                     return 1;
                 }
             }

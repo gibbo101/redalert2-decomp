@@ -31,7 +31,7 @@ static inline void Object_Placement_Add_Point(Point2D &point, Point2D const &off
 bool ObjectClass::unknown_slot53(CoordStruct const *coord, int direction)
 {
     if (!unknown_flag_a40958 || !unknown_76 || unknown_74) return false;
-    if (!unknown_a40774 && unknown_slot101(reinterpret_cast<int>(&Map[*coord]), -1, -1, 0, 0))
+    if (!unknown_a40774 && unknown_slot101(&Map[*coord], -1, -1, 0, 0))
         return false;
     unknown_76 = false;
     unknown_75 = false;

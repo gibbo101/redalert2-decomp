@@ -26,8 +26,9 @@ bool FootClass::unknown_4cc260(Cell &cell, int dx, int dy)
         }
         Cell here = Coord_Cell(unknown_slot19(0));
         if (Map.Unknown_0054F7C0(here, cell, unknown_slot32()->MovementZone, unknown_slot46(0), 0, 0)) {
-            UnknownCellClass *object = (UnknownCellClass *)&Map[cell];
-            if (unknown_slot101((int)object, -1, -1, 0, 1) == 0 && object->unknown_ec == 11 && object->unknown_11e >= 0x30) {
+            CellClass *map_cell = &Map[cell];
+            UnknownCellClass *object = (UnknownCellClass *)map_cell;
+            if (unknown_slot101(map_cell, -1, -1, 0, 1) == 0 && object->unknown_ec == 11 && object->unknown_11e >= 0x30) {
                 return true;
             }
         }

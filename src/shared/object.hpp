@@ -253,13 +253,13 @@ public:
     virtual void unknown_slot98(int arg1);                                 // slot 98 (+0x188) 0x5d2d50
     virtual void unknown_slot99(int path, char waypoint);                       // slot 99 (+0x18C) 0x5d53d0
     virtual void unknown_slot100(int facing);                              // slot 100 (+0x190) 0x5d2d60
-    virtual int unknown_slot101(int arg1, int arg2, int arg3, int arg4, int arg5); // slot 101 (+0x194) 0x423e00
+    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5); // slot 101 (+0x194) 0x423e00
     virtual int unknown_slot102(UnknownCellClass *from, int facing, int *level, bool *ramp, UnknownCellClass *to); // slot 102 (+0x198) 0x423e10
     virtual void unknown_slot103(CoordStruct const &coord);                // slot 103 (+0x19C) 0x5d51c0
     virtual Cell unknown_slot104() const;                                 // slot 104 (+0x1A0) 0x41b320
     virtual AbstractClass *unknown_slot105();                                        // slot 105 (+0x1A4) 0x5d51e0
     virtual Cell unknown_slot106() const;                                 // slot 106 (+0x1A8) 0x5d5240
-    virtual int unknown_slot107() const;                                   // slot 107 (+0x1AC) 0x5d5290
+    virtual CellClass *unknown_slot107() const;                                   // slot 107 (+0x1AC) 0x5d5290
     virtual int unknown_slot108() const;                                   // slot 108 (+0x1B0) 0x5d4810
     virtual void unknown_slot109(int arg1);                                // slot 109 (+0x1B4) 0x5d4860
     virtual int unknown_slot110() const;                                   // slot 110 (+0x1B8) 0x5d4800

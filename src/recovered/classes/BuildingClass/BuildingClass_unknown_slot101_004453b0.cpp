@@ -16,7 +16,7 @@ struct UnknownBuildingCellArg {
     Cell MapCoords;                   // +0x24
 };
 
-int BuildingClass::unknown_slot101(int arg1, int arg2, int arg3, int arg4, int arg5)
+int BuildingClass::unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5)
 {
     Cell cell = ((UnknownBuildingCellArg *)arg1)->MapCoords;
     if (Type->UndeploysInto != 0 && unknown_74) {

@@ -1,4 +1,4 @@
-// int AircraftClass::unknown_slot101(int arg1, int arg2, int arg3, int arg4, int arg5) (0x00418E00, slot 101)
+// int AircraftClass::unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5) (0x00418E00, slot 101)
 // Whether the aircraft may enter cell arg1 (0 yes, 7 no): a team member
 // stays within its area (0x0055A740); a cell held by an active non-allied
 // object (other than a building with Invisible types, or in some modes)
@@ -15,9 +15,9 @@
 // @ref ?Unknown_00478760@CellClass@@QAE_NHHHHHHH@Z=00478760
 // @ref ?unknown_game_mode_a3d298@@3HA=00a3d298
 
-int AircraftClass::unknown_slot101(int arg1, int arg2, int arg3, int arg4, int arg5)
+int AircraftClass::unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5)
 {
-    CellClass *cell = (CellClass *)arg1;
+    CellClass *cell = arg1;
     if (Team != 0 && Team->Unknown_006BA990() && !Map.Unknown_0055A740(cell, 1)) {
         return 0;
     }

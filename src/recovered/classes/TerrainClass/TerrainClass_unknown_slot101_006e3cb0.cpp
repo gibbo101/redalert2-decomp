@@ -17,7 +17,7 @@ static inline bool Is_List_End(Cell const *offset)
     return offset->X == 0x7FFF && offset->Y == 0x7FFF;
 }
 
-int TerrainClass::unknown_slot101(int arg1, int arg2, int arg3, int arg4, int arg5)
+int TerrainClass::unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5)
 {
     Cell const *offset = unknown_slot64(0);
     Cell cell = ((UnknownTerrainCellArg *)arg1)->MapCoords;

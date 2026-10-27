@@ -192,7 +192,7 @@ public:
     virtual bool unknown_slot96(HouseClass *house);                   // slot 96 0x00448FE0
     virtual void unknown_slot97(int arg1);                            // slot 97 0x00443680
     virtual void unknown_slot98(int arg1);                            // slot 98 0x004437A0
-    virtual int unknown_slot101(int arg1, int arg2, int arg3, int arg4, int arg5);   // slot 101 0x004453B0
+    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5);   // slot 101 0x004453B0
     virtual bool unknown_slot122();                                   // slot 122 0x0044F3B0
     virtual int unknown_slot126();                                    // slot 126 0x00446920
     virtual int unknown_slot127();                                    // slot 127 0x00447240
