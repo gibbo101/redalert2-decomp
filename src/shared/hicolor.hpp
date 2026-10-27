@@ -8,8 +8,9 @@
 #ifndef RA2_SHARED_HICOLOR_HPP
 #define RA2_SHARED_HICOLOR_HPP
 
+#include "shared/rgb_class.hpp"
+
 class PaletteClass;
-class RGBClass;
 
 extern int unknown_shift_852fb8;    // red left
 extern int unknown_shift_852fbc;    // red right
@@ -24,6 +25,17 @@ inline int Build_Hicolor_Pixel(int red, int green, int blue)
     return ((red >> unknown_shift_852fbc) << unknown_shift_852fb8)
          | ((green >> unknown_shift_852fcc) << unknown_shift_852fc8)
          | ((blue >> unknown_shift_852fc4) << unknown_shift_852fc0);
+}
+
+// A screen pixel back to 8-bit channels, the inverse of Build_Hicolor_Pixel
+// (always expanded inline; FootClass slot 243, HouseClass::Read_INI).
+inline RGBClass Unpack_Hicolor_Pixel(unsigned short pixel)
+{
+    RGBClass color;
+    color.Red = (pixel >> unknown_shift_852fb8) << unknown_shift_852fbc;
+    color.Green = (pixel >> unknown_shift_852fc8) << unknown_shift_852fcc;
+    color.Blue = (pixel >> unknown_shift_852fc0) << unknown_shift_852fc4;
+    return color;
 }
 
 // Fills count consecutive 256-entry pixel tables with palette scaled from

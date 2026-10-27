@@ -17,16 +17,6 @@
 // @ref ?Unknown_0055A280@MapClass@@QAEHABUCoordStruct@@@Z=0055a280
 // @ref _unknown_geometry_j=00865f60
 
-// A screen pixel back to the 8-bit channels it was packed from.
-inline RGBClass Unpack_Hicolor_Pixel(unsigned short pixel)
-{
-    RGBClass color;
-    color.Red = (pixel >> unknown_shift_852fb8) << unknown_shift_852fbc;
-    color.Green = (pixel >> unknown_shift_852fc8) << unknown_shift_852fcc;
-    color.Blue = (pixel >> unknown_shift_852fc0) << unknown_shift_852fc4;
-    return color;
-}
-
 void FootClass::unknown_slot243(bool force, int arg2)
 {
     CoordStruct from;

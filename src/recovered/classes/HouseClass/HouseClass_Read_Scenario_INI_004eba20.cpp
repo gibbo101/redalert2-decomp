@@ -6,7 +6,7 @@
 // controlled). Without [Houses], one house per house type is made and read.
 // @ref ??0HouseClass@@QAE@PAVHouseTypeClass@@@Z=004e18c0
 // @ref ?Assign_Handicap@HouseClass@@QAEHH@Z=004e2e40
-// @ref ?Read_INI@HouseClass@@QAE_NAAVCCINIClass@@@Z=004ebbb0
+// @ref ?Read_INI@HouseClass@@QAEXAAVCCINIClass@@@Z=004ebbb0
 // @ref ??_C@_00A@?$AA@=0083c55c
 // @ref ??_C@_06DAOK@Houses?$AA@=007da83c
 // @ref ??_C@_07FNCB@Country?$AA@=007da834

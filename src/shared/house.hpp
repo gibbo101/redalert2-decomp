@@ -282,7 +282,7 @@ public:
     int *unknown_func_4eab10(int kind, bool naval);         // 0x004EAB10
     int unknown_func_4eb980(int kind, bool naval);          // 0x004EB980
     bool unknown_func_4e68d0(int index, Cell const *cell);        // 0x004E68D0
-    static void unknown_func_4ec9b0();                     // 0x004EC9B0
+    void unknown_func_4ec9b0();                            // 0x004EC9B0 (a member: its callers pass this)
     bool unknown_func_4ed2b0(WaypointClass *waypoint, int *path, char *position);   // 0x004ED2B0
     void unknown_func_4ecfb0(CoordStruct const &coord);    // 0x004ECFB0
     void unknown_func_4eeba0(int amount, HouseClass *house);   // 0x004EEBA0 (anger)
@@ -301,11 +301,11 @@ public:
     static int __fastcall unknown_func_4eb550(int kind, int index);   // 0x004EB550 (a building type's +0xBA0)
     int unknown_func_4e63f0(int kind, int index, bool naval);   // 0x004E63F0
     bool unknown_func_4e7070(TechnoClass *builder, BuildingClass *building);   // 0x004E7070
-    bool Write_INI(CCINIClass &ini);                       // 0x004EC230
+    void Write_INI(CCINIClass &ini);                       // 0x004EC230
     // Makes the houses listed in [Houses] (or one per house type when there
     // are none) and reads each house's section (0x004EBA20; name hypothesis).
     static void __fastcall Read_Scenario_INI(CCINIClass &ini);
-    bool Read_INI(CCINIClass &ini);                        // 0x004EBBB0 (the house's own section)
+    void Read_INI(CCINIClass &ini);                        // 0x004EBBB0 (the house's own section)
     int Assign_Handicap(int difficulty);                   // 0x004E2E40 (sets +0xC8; returns the old value; name after TS)
     static void __fastcall Write_Scenario_INI(CCINIClass &ini);   // 0x004EC180
     BuildingClass *unknown_func_4e5160();                  // 0x004E5160 (the storage building with most free room)
@@ -314,9 +314,10 @@ public:
     void unknown_func_4e7ee0(int arg1);                    // 0x004E7EE0
     void unknown_func_4e82c0();                            // 0x004E82C0
     FactoryClass *unknown_func_4eb580(int kind, bool naval, int arg3); // 0x004EB580 (the factory per kind)
-    // Original full callee returns32-bit status (including3), RET16.
-    // Arg4 is tested as a byte and forwarded as DWORD; exact type/name provisional.
-    int Unknown_004E5E30(int kind, int index, bool naval, int unknown);
+    // Starts producing a type in the house's factory for its kind (made when
+    // missing): 0 on success, 3 when refused (0x004E5E30; name after TS, from
+    // its "Request to Begin_Production" messages).
+    int Begin_Production(int kind, int index, bool naval, bool resume);
     void unknown_func_4e64f0(int kind, int index, int arg3);   // 0x004E64F0 (abandons production of a type; BuildingClass slot 54)
     void unknown_func_4eb620(int kind, bool naval, int arg3); // 0x004EB620
     void unknown_func_4eb6d0(int kind, bool naval, int arg3); // 0x004EB6D0

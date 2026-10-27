@@ -1,4 +1,4 @@
-// @ref ?Unknown_004E5E30@HouseClass@@=004e5e30
+// @ref ?Begin_Production@HouseClass@@=004e5e30
 #define VECTOR_IMPLEMENT_DYNAMIC_DELETE_INDEX
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
@@ -16,7 +16,7 @@ void FactoryClass::Start_Next_Queued_004B9D70()
         Queue.Delete(0);
         int index = type->unknown_slot16();
         if (index >= 0) {
-            Owner->Unknown_004E5E30(type->Kind_Of(), index, type->Naval, 1);
+            Owner->Begin_Production(type->Kind_Of(), index, type->Naval, true);
         }
     }
 }
