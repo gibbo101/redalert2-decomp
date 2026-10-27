@@ -150,10 +150,10 @@ Host ID: `remote-control:env_e_6acf7d2c9818832583c3e661f3c977a3`.
 | C3 | AircraftClass and approved dependencies | `01a16b9d-110a-7f70-94fb-91d0be7fc660` |
 | C4 | UnitClass and approved dependencies | `01a16b9e-406f-7551-9882-a5572b3122d0` |
 
-Existing SSH: `ssh -i ~/.ssh/mike-gaming mike@192.168.4.38`.
+Existing SSH: `ssh -i <private key> <windows-host>`.
 Windows mirror `C:\ra2\repo`; worktrees `C:\ra2\w\codex1..4`;
 coordination `C:\ra2\coordination\ra2-recovery-w1`.
-The usual SMB mount `/Volumes/mike-gaming/ra2/` is currently absent.
+The usual SMB mount `<windows-mount>/ra2/` is currently absent.
 `private/tools/sync_windows.sh` already selects its SSH fallback; do not add a new
 transport or rely on removed `codex mcp-server`. SFTP paths use forward slashes.
 

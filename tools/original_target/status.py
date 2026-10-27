@@ -28,17 +28,30 @@ def coverage(catalog):
                 padding=sum(r['padding_bytes'] for r in regions))
 
 
-def history(repository=REPOSITORY):
-    log = subprocess.run(['git', 'log', '--reverse', '--format=%h %cI %s', '--', catalog_io.LEGACY, catalog_io.SHARDED],
+def history(repository=REPOSITORY, cache_path=None):
+    """Coverage of every commit that changed the catalog. Each commit's coverage is
+    computed once and kept in an ignored cache keyed by the full commit hash (commits
+    are immutable, so the cache is append-only); only new commits are parsed."""
+    cache_path = cache_path or repository / 'build/status-history-cache.json'
+    try:
+        cache = json.loads(cache_path.read_text())
+    except (OSError, ValueError):
+        cache = {}
+    log = subprocess.run(['git', 'log', '--reverse', '--format=%H %h %cI %s', '--', catalog_io.LEGACY, catalog_io.SHARDED],
                          cwd=repository, capture_output=True, text=True, check=True).stdout
-    rows = []
+    rows, changed = [], False
     for line in log.splitlines():
-        commit, stamp, subject = line.split(' ', 2)
-        catalog = catalog_io.load_git(repository, commit, references=False)
-        if catalog is None:    # the commit removed the catalog
+        full, commit, stamp, subject = line.split(' ', 3)
+        if full not in cache:
+            catalog = catalog_io.load_git(repository, full, references=False)
+            cache[full] = None if catalog is None else coverage(catalog)   # None: the commit removed the catalog
+            changed = True
+        if cache[full] is None:
             continue
-        rows.append(dict(commit=commit, time=datetime.fromisoformat(stamp), subject=subject,
-                         **coverage(catalog)))
+        rows.append(dict(commit=commit, time=datetime.fromisoformat(stamp), subject=subject, **cache[full]))
+    if changed:
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        cache_path.write_text(json.dumps(cache, sort_keys=True))
     return rows
 
 

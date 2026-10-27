@@ -231,7 +231,7 @@ copies from their own folders. Four Codex workers run on the user's Windows PC
 (below); no Claude workers are running.
 
 **Tooling since 2026-10-27.** Remote compilation (15066627): set
-`RA2_REMOTE_COMPILE='ssh://mike@192.168.4.38/C:/ra2/remote?identity=~/.ssh/mike-gaming&jobs=6'`
+`RA2_REMOTE_COMPILE='ssh://<windows-host>/C:/ra2/remote?identity=<private key>&jobs=6'`
 (ssh needs the sandbox off; the user approved that for these commands only); a full
 build takes ~200 s instead of ~370 s, local Wine is the automatic fallback. Rename
 batches (523dd767): workers deliver an `apply_rename.py` spec (mangling_rewrite +
@@ -278,8 +278,8 @@ Signature-rename batches (they rewrite manglings in the manifest) land alone:
 freeze other acceptance, apply the batch's headers, run its manifest rewrite,
 accept its plans, build, commit, and only then integrate anything else.
 
-**Windows Codex workers.** `ssh -i ~/.ssh/mike-gaming mike@192.168.4.38`
-(the usual SMB mount `/Volumes/mike-gaming/ra2/` is currently absent; the existing
+**Windows Codex workers.** `ssh -i <private key> <windows-host>`
+(the usual SMB mount `<windows-mount>/ra2/` is currently absent; the existing
 SSH fallback was used and verified at `cec6c563`). Mirror `C:\ra2\repo`
 (fed by git bundle; repo-local `core.autocrlf false`); worktrees
 `C:\ra2\w\codex1..4`; coordination `C:\ra2\coordination\ra2-recovery-w1`
@@ -361,7 +361,7 @@ with tools/original_target/check_plans.py (with --build when shared headers
 change), accept with accept_sources.py, run ./build.command and commit only on
 an exact whole-file build, then sync the Windows mirror with
 private/tools/sync_windows.sh and message the Codex workers through
-C:\ra2\coordination\ra2-recovery-w1 (mounted at /Volumes/mike-gaming/ra2/).
+C:\ra2\coordination\ra2-recovery-w1 (mounted at <windows-mount>/ra2/).
 Integrate the workers' deliveries continuously, reassign lanes as they finish
 (class layers, one cumulative plan per unit), and recover functions yourself
 when the queue is empty. Never stage private/ or build/, never weaken

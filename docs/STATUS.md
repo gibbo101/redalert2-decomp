@@ -10,12 +10,12 @@ original code is still scaffold. Per-batch evidence through A15 is in
 
 | Measure | Value |
 | --- | ---: |
-| Accepted regions | 13,601 |
-| Matched C/C++ body bytes | 1,181,348 (31.34% of .text) |
-| Frozen padding bytes | 110,077 |
-| Original .text scaffold bytes | 2,478,380 |
+| Accepted regions | 13,649 |
+| Matched C/C++ body bytes | 1,191,802 (31.61% of .text) |
+| Frozen padding bytes | 110,378 |
+| Original .text scaffold bytes | 2,467,625 |
 | Logical .text bytes | 3,769,805 |
-| Compiler populations | 552 |
+| Compiler populations | 555 |
 
 Manifest history (body bytes added per commit, and per hour since the previous commit):
 
@@ -246,6 +246,17 @@ Manifest history (body bytes added per commit, and per hour since the previous c
 | `8e1c1e1c` | 2026-10-27 16:07 -0500 | 13,565 | 1,169,662 | +0 | 0 |
 | `d7d8b95c` | 2026-10-27 16:16 -0500 | 13,601 | 1,181,348 | +11,686 | 77,907 |
 | `831ac01e` | 2026-10-27 16:18 -0500 | 13,601 | 1,181,348 | +0 | 0 |
+| `9df19d0a` | 2026-10-27 16:25 -0500 | 13,602 | 1,181,528 | +180 | 1,525 |
+| `cb948b55` | 2026-10-27 16:36 -0500 | 13,602 | 1,181,528 | +0 | 0 |
+| `1721ac6d` | 2026-10-27 16:46 -0500 | 13,602 | 1,181,528 | +0 | 0 |
+| `3bdd6c59` | 2026-10-27 16:50 -0500 | 13,602 | 1,181,528 | +0 | 0 |
+| `2afa62f7` | 2026-10-27 16:55 -0500 | 13,620 | 1,184,384 | +2,856 | 36,203 |
+| `db713c50` | 2026-10-27 17:04 -0500 | 13,620 | 1,184,384 | +0 | 0 |
+| `df3f91a5` | 2026-10-27 17:11 -0500 | 13,622 | 1,186,109 | +1,725 | 15,258 |
+| `6f1930f1` | 2026-10-27 17:22 -0500 | 13,623 | 1,186,994 | +885 | 5,065 |
+| `70f46f00` | 2026-10-27 17:27 -0500 | 13,624 | 1,187,754 | +760 | 9,151 |
+| `afa0224c` | 2026-10-27 17:33 -0500 | 13,640 | 1,191,425 | +3,671 | 34,326 |
+| `e6cb31fb` | 2026-10-27 17:50 -0500 | 13,649 | 1,191,802 | +377 | 1,289 |
 
 <!-- /generated:status -->
 

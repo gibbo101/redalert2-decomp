@@ -45,7 +45,7 @@ RAM_TYPES = {'i': 'int', 'u': 'uint', 'c': 'char', 'b': 'byte', 's': 'short', 'u
 # Only scratch declarations. Opaque SDK objects stay incomplete; do not invent
 # their layout just to make a field access compile. No platform SDK is included.
 SDK_PREAMBLE = r'''
-typedef long HRESULT, LSTATUS, INT_PTR, LPARAM, LRESULT;
+typedef long HRESULT, LSTATUS, INT_PTR;   // LPARAM, LRESULT come from ghidra_types.hpp (unsigned)
 typedef unsigned int SIZE_T, ULONG_PTR, UINT_PTR, DWORD_PTR, REGSAM, COLORREF, MMRESULT;
 typedef short SHORT;
 typedef unsigned short ATOM, WCHAR;

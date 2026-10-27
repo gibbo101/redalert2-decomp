@@ -100,7 +100,7 @@ compiler/linker command. Serialize sessions on research `shared/compiler.lock`;
 do not stop a global wineserver or change a running job's inputs.
 
 Already supplied media, read-only if re-extraction is genuinely required:
-`/Volumes/mike-gaming/Users/Mike/en_vs6_ent/en_vs6_ent_cd1.iso`, 643,276,800 bytes,
+`<windows-mount>/Users/Mike/en_vs6_ent/en_vs6_ent_cd1.iso`, 643,276,800 bytes,
 SHA256 `d38250b86c3bef0d8123cade40abd1728a776e22e9633683c3e311a913ae0347`.
 `scripts/extract_toolchain.py` records extraction; normal rebuild uses local frozen
 inputs/extracted tools and does not require a mounted ISO or the Windows machine.

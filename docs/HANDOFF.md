@@ -9,13 +9,12 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): TechFoot39 (Techno/Foot, Map.cpp Cell tables), Big41 (largest
-functions outside class lanes), Study42 (stack-slot study), Verify43 (parallel
-build verifier). Windows Codex workers (coordination
-`C:\ra2\coordination\ra2-recovery-w1`, board `BOARD.md`): codex1 (Sol)
-pathfinding 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra)
-bound evidence, codex4 (Terra) rename-spec cleanup. Each lane's resume notes
-are in `build/class-work/<Lane>/NOTES*` (ignored).
+has 16 GB): Tact47 (display-chain action/drawing family), Near48 (sweep
+near misses and promotions), Big49 (closest big misses). Windows: one Codex lead
+(LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
+0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
+the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
+Each lane's resume notes are in `build/class-work/<Lane>/NOTES*` (ignored).
 
 ## Integration loop
 
@@ -33,10 +32,11 @@ are in `build/class-work/<Lane>/NOTES*` (ignored).
    `tools/original_target/apply_rename.py SPEC --dry-run`, then with
    `--config private/original-target.interactive.json`, then `land.sh`.
 
-Cadence: batch several accepted plans per build (one `land.sh` every two to
-three hours, not per plan); rename batches still land alone. Set
-`RA2_REMOTE_COMPILE='ssh://mike@192.168.4.38/C:/ra2/remote?identity=~/.ssh/mike-gaming&jobs=6'`
-(ssh needs the sandbox off; the user approved that for remote-compile
+Cadence: build after every accept (a land takes about a minute: tests, full
+build, status and source index, commit, sync, publish), so a header change that
+breaks another unit is isolated at once; rename batches land alone. Remote
+compilation is configured by `RA2_REMOTE_COMPILE` (value in the owner's private
+notes) (ssh needs the sandbox off; the user approved that for remote-compile
 commands only). A worker check without `--build` can miss header impact on
 other units; the full build is the gate.
 
@@ -75,10 +75,9 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
   (`RA2_PYTHON` for `build.command`/`test.command`).
 - Working copy `/Users/ivalice/Code/redalert2-native`. On the Mac `cp`/`mv`/`rm`
   are interactive aliases: use `/bin/cp -f` etc.; zsh noclobber is on (`>|`).
-- Windows PC `ssh -i ~/.ssh/mike-gaming mike@192.168.4.38`, C: mounted at
-  `/Volumes/mike-gaming/`; mirror `C:\ra2\repo`, worktrees `C:\ra2\w\codex1..4`,
-  remote-compile jobs `C:\ra2\remote`. Windows full builds stop at scaffold
-  assembly (no i386 assembler there).
-- Cold storage: `/Volumes/Lesalia/Code/redalert2-native-cold`
-  (`private/tools/move_cold.sh`). Private repo snapshot:
-  `git@github.com:meastes/redalert2-decomp.git` (`private/tools/publish_github.sh`).
+- Windows PC: host, key and mount are in the owner's private notes and
+  `private/tools/sync_windows.sh`. Mirror `C:\ra2\repo`, worktrees `C:\ra2\w\codex1..4`,
+  remote-compile jobs `C:\ra2\remote`. Windows full builds work with LLVM's
+  clang as the scaffold assembler (`assembler` in the worker configs).
+- Cold storage and the private GitHub snapshot: `private/tools/move_cold.sh`,
+  `private/tools/publish_github.sh`.
