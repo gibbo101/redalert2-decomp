@@ -17,7 +17,7 @@
 // coordinates; the one at 0x00839958 is cleared first.
 void __fastcall Unknown_004E0C90(bool unknown1, Surface *surface, int unknown2);  // 0x004E0C90
 
-extern HWND MainWindow;               // 0x00B263D8
+// The game window MainWindow is declared in shared/win32_window.hpp.
 
 // The object at 0x00A40B18 is Options (shared/options.hpp; Unlock_Movie 0x005DA3F0).
 

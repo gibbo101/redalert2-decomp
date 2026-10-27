@@ -7,7 +7,7 @@
 #include "shared/win32_api.hpp"
 
 extern HINSTANCE ProgramInstance;     // 0x00B26180 the module instance (dialog templates)
-extern HWND MainWindow;               // 0x00B263D8 (also declared in gscreen.hpp, movie.hpp, ms_engine.hpp)
+extern HWND MainWindow;               // 0x00B263D8 the game window (the one shared declaration)
 
 // A window's screen rectangle made relative to the main window's client
 // area; 0 (rect untouched) when GetWindowRect fails (0x00735690).

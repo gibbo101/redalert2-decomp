@@ -30,7 +30,7 @@
 #include "shared/vector_class.hpp"
 #include "shared/ms_anim.hpp"
 #include "shared/wwmouse.hpp"
-#include "shared/win32_api.hpp"
+#include "shared/win32_window.hpp"
 
 // A named sound effect (0x0C bytes; MSSfx.cpp at 0x005B69B0).
 class MSSfx {
@@ -73,7 +73,6 @@ public:
 };
 
 extern bool unknown_redraw_8523dc;              // 0x008523DC set by Redraw: Draw clears and repaints everything
-extern HWND MainWindow;                         // 0x00B263D8
 
 void unknown_481fb0();                          // 0x00481FB0 once per frame
 void unknown_4961d0();                          // 0x004961D0 once per frame

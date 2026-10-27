@@ -21,7 +21,7 @@
 #include "shared/coord.hpp"
 #include "shared/rect.hpp"
 #include "shared/gadget.hpp"
-#include "shared/win32_api.hpp"
+#include "shared/win32_window.hpp"
 
 class Surface;
 class NoInitClass;
@@ -126,6 +126,5 @@ extern bool unknown_flag_a40380;
 extern bool unknown_flag_8373f6;
 extern int unknown_int_a40d34;                  // Blit copies with the last Copy_From flag when zero
 
-extern HWND MainWindow;                     // 0x00B263D8
 
 #endif
