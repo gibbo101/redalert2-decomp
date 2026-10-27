@@ -289,3 +289,41 @@ the ignored build/class-work/Sched29/).
   (`Add(x)`). The implicit form also enlarges the caller (more inline budget).
 - Independent global stores are sunk towards the next call (between `mov ecx` and `call`);
   their source position before a call does not show in the order.
+
+## Free and charged inline callees, block placement (Study37)
+
+- Free and charged callees (Study37). A callee whose body is at most two plain stores, or a
+  single call statement whose result is unused, is expanded at every site and costs no
+  budget (it goes out of line only at the caller's absolute size cap). Anything larger is
+  charged its whole size, not the excess: one more node (a discarded read, a discarded
+  returned reference such as `{ Set(x, y); }` with `Cell &Set`) turns a free two-store
+  constructor into one that runs out after 78% of a table. Three stores (CoordStruct, Rect)
+  are always charged. An original out-of-line call to a tiny constructor means the original
+  constructor was charged (Cell 0x0042AD30: Map tables 288/369, 241/309, 8/40, 7/42, and
+  DynamicVectorClass<ZoneConnectionClass>::Resize 0x0056B330 calling it for To).
+- The budget is proportional to the caller's size (a fixed fraction of equal sites inlines for
+  any table length) up to an absolute cap past which the inlined count falls as the caller
+  grows. A callee's cost is its own unexpanded IL; nested sites are decided after all direct
+  ones and get only what is left, except free callees, which always expand.
+- A dynamic initializer is `_$E(n+1): jmp _$E(n)` for large objects; small ones are expanded
+  into the .CRT$XCU entry itself, which makes their constructor calls depth-2 sites with only
+  the entry's floor budget (Map 0x0055B520: 8 of 40 constructions inline).
+- Commutative operand order (an addition's operands, two virtual calls in an inlined
+  `a * f() + b * g()`) and some schedules are tie-breaks that move when an earlier inline
+  expansion in the same function creates more or fewer temporaries (a nested call's
+  parameters). A shared inline-header change can therefore alter accepted functions that
+  never use the changed path; check it with a whole-tree compile (Study37 w/impact.py).
+- In an additive chain every if/else spelling of a conditional term gives the same canonical
+  order `(a - c) - extra`; a ternary gives `(a - extra) - c`, and a ternary in a `for`
+  condition makes VC6 rotate the loop (condition copied to the bottom).
+
+
+- An early return guarded by one test stays inline (`jne cont; epilogue`); one guarded by a
+  short-circuit chain (`if (p == 0 || !p->flag) return x;`) is laid out after the following
+  code. The original's single inline return block reached by both tests (`test p; je R;
+  ...; jne cont; R: epilogue`) comes from evaluating the condition into a bool first:
+  `bool ok = p != 0 && p->flag; if (!ok) return x;` or `ok = false; if (p) ok = p->flag;
+  if (!ok) return x;` (jump threading). TechnoClass 0x6D4180, slot 175 0x6C15D0.
+- `return 0` right after a `test eax,eax` branch reuses eax instead of `xor eax,eax` unless the
+  return block is shared: identical return blocks are tail-merged, and the shared copy keeps
+  the xor.
