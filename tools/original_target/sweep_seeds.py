@@ -160,7 +160,8 @@ def main():
                 rows[entry] = row
                 for index in range(len(variants)):
                     directory = output / str(index); directory.mkdir(exist_ok=True)
-                    (directory / ('%08x.cpp' % entry)).write_text(text, encoding='utf-8', newline='\n')
+                    with open(directory / ('%08x.cpp' % entry), 'w', encoding='utf-8', newline='\n') as stream:
+                        stream.write(text)
             compiled = [e for e in rows if 'status' not in rows[e]]
             for index, options in enumerate(variants):
                 if compiled:

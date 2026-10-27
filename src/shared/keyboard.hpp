@@ -83,6 +83,10 @@ extern bool unknown_flag_a3dc89;       // 0x00A3DC89
 void __fastcall Unknown_005233A0(int key, bool release);   // 0x005233A0
 short __fastcall Unknown_005233D0(int key);                 // 0x005233D0
 short __fastcall Unknown_005233F0(int key);                 // 0x005233F0
+// While unknown_key_state_override_a522ac is nonzero both read the recorded
+// state word of the key's low byte instead of asking Windows.
+extern int unknown_key_state_override_a522ac;     // 0x00A522AC (also read by 0x00522E80)
+extern short unknown_key_states_a51fd0[256];      // 0x00A51FD0
 
 // Pumps the window messages that fill the queue (hypothesis; it reads the
 // main window handle 0x00B263D8).

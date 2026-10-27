@@ -677,7 +677,8 @@ def main():
         if path.exists() and not args.force:
             print('%08x exists: %s (use --force)' % (entry, path)); continue
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(seed(entry, inventory, accepted), encoding='utf-8', newline='\n')
+        with open(path, 'w', encoding='utf-8', newline='\n') as stream:
+            stream.write(seed(entry, inventory, accepted))
         print(path)
 
 

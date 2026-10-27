@@ -6,7 +6,14 @@
 
 class SystemTimerClass {
 public:
-    operator long() const;
+    operator long() const;                  // 0x0069A430
+};
+
+// A second time source with the same body and no callers (0x0069A440); its
+// class is not identified.
+class UnknownTimeSource_0069a440 {
+public:
+    operator long() const;                  // 0x0069A440
 };
 
 #endif

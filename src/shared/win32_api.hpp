@@ -113,6 +113,12 @@ WIN32_IMPORT int WINAPI ShowCursor(BOOL show);
 WIN32_IMPORT BOOL WINAPI GetCursorPos(POINT *point);
 WIN32_IMPORT BOOL WINAPI GetClientRect(HWND window, RECT *rect);
 WIN32_IMPORT BOOL WINAPI ClientToScreen(HWND window, POINT *point);
+WIN32_IMPORT BOOL WINAPI GetWindowRect(HWND window, RECT *rect);
+WIN32_IMPORT BOOL WINAPI SetRect(RECT *rect, int left, int top, int right, int bottom);
+
+// Key state (USER32).
+WIN32_IMPORT short WINAPI GetKeyState(int key);
+WIN32_IMPORT short WINAPI GetAsyncKeyState(int key);
 
 // Dialog boxes (the main-screen message box, 0x005B46B0/0x005B48C0).
 typedef unsigned int UINT;
@@ -123,6 +129,12 @@ WIN32_IMPORT LONG WINAPI SetWindowLongA(HWND window, int index, LONG value);
 WIN32_IMPORT LONG WINAPI GetWindowLongA(HWND window, int index);
 WIN32_IMPORT HWND WINAPI GetDlgItem(HWND dialog, int id);
 WIN32_IMPORT LRESULT WINAPI SendMessageA(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+typedef HANDLE HINSTANCE;
+typedef BOOL (WINAPI *DLGPROC)(HWND dialog, UINT message, WPARAM wparam, LPARAM lparam);
+#define MAKEINTRESOURCEA(id) ((LPCSTR)(unsigned long)(unsigned short)(id))
+WIN32_IMPORT HWND WINAPI CreateDialogParamA(HINSTANCE instance, LPCSTR name, HWND parent, DLGPROC procedure,
+                                            LPARAM parameter);
+WIN32_IMPORT BOOL WINAPI DestroyWindow(HWND window);
 
 // Timers and message records (USER32; the tooltip manager, 0x006EB4E0).
 typedef struct tagMSG {
