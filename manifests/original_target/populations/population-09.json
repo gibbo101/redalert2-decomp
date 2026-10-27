@@ -6201,54 +6201,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 7504688,
-      "method": "728330",
-      "symbol": "?get@Leaf_728330@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_728330@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "14db3be74843d875a82d78d97382ed667f85eecbb309b4584b94beaa27676d12",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "2b52fe92ab420b3b64fe68bc7ae3b694023146ceb9e26b177681ea7bc1f8d734",
-      "relocations": [],
-      "source": "src/recovered/classes/VectorCursor_rc_ptr_WorldDominationTour__GameOption_DynamicVectorClass_rc_ptr_WorldDominationTour__GameOption/00728330.cpp",
-      "source_sha256": "2b758c839f05c5df117a3edb3149947104773e3c4cf617d8bbeff1220bc8c794",
-      "source_order": 6351,
-      "population": "population-09",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
-      "entry": 7504704,
-      "method": "728340",
-      "symbol": "?get@Leaf_728340@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_728340@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "f5d6ab61265ab17ba1aa24eec1dd3f880a3da42d1b1c807d32deaafa992aaa82",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "91a91676eb37e28fb88f9f6d0da9088cf2b2c06f7e1a18de246ed2f4e5ca1a27",
-      "relocations": [],
-      "source": "src/recovered/classes/VectorCursor_rc_ptr_WorldDominationTour__GameOption_DynamicVectorClass_rc_ptr_WorldDominationTour__GameOption/00728340.cpp",
-      "source_sha256": "deef89fcf126749c6413570f6876169e6564bc0b6021db1db00916e43f7b1d98",
-      "source_order": 6352,
-      "population": "population-09",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 7518416,
       "method": "72b8d0",
       "symbol": "?get@Leaf_72b8d0@@QAEIXZ",

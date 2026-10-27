@@ -47,8 +47,9 @@ public:
     rc_ptr(T *pointer) { Set(pointer); }
     rc_ptr(rc_ptr<T> const &other) { Set(other.Pointer); }
     // From an rc_ptr of another type (a derived class: rc_ptr<GameOption> from
-    // rc_ptr<FlagGameOption>; out of line at 0x00728300).
-    explicit rc_ptr(rc_ptr_base const &other) { Set(other.Pointer); }
+    // rc_ptr<FlagGameOption>; out of line at 0x00728300). Not explicit: the last Add of
+    // Conflict::Init_Options 0x00727480 converts implicitly (lea of the temporary).
+    rc_ptr(rc_ptr_base const &other) { Set(other.Pointer); }
     virtual ~rc_ptr() {}
 
     rc_ptr<T> &operator=(rc_ptr<T> const &other)

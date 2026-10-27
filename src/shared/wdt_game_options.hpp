@@ -63,7 +63,7 @@ public:
     virtual WideString Describe(rc_ptr<WDTTerritory> const &territory, WideString const &prefix) const
     {
         Wstring number = Wstring_From_Integer(Getter(territory.Get()));
-        WideString format(StringTable::Load_String(Name, 0, "D:\\Ra2\\wdtgameoptions.h", 161));
+        WideString format(StringTable::Load_String(Name.Peek_Buffer(), 0, "D:\\Ra2\\wdtgameoptions.h", 161));
         wchar_t buffer[64];
         swprintf(buffer, format.Get(), number);
         if (prefix.Length()) {
@@ -125,5 +125,9 @@ extern char const *const MapSize_Labels[4];
 extern int MapSize_Values[4][4];
 
 }
+
+// The option list Conflict::Init_Options fills (0x00B256C0; defined in Conflict.cpp,
+// initializer 0x00727400, destructor 0x00727440).
+extern DynamicVectorClass<rc_ptr<WorldDominationTour::GameOption> > unknown_game_options_b256c0;
 
 #endif

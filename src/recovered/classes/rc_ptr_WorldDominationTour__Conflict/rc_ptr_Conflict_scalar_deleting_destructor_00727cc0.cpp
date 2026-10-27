@@ -1,0 +1,1 @@
+// rc_ptr<WorldDominationTour::Conflict> scalar deleting destructor (this unit's unreferenced copy; the vtable 0x007AEFEC holds 0x00726F60) (0x00727CC0): emitted by Conflict.cpp's use of the class; no source of its own.

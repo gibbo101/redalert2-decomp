@@ -78,7 +78,7 @@ public:
     bool operator==(Conflict const &other) const;                   // 0x007273A0
     bool Is_Valid() const;                                          // 0x007273E0
     int unknown_7273f0() const;                                     // 0x007273F0 (the territory's +0x08, 0 without one)
-    static void Init_Options();                                     // 0x00727480
+    static void __fastcall Init_Options();                          // 0x00727480
     static void Clear_Options();                                    // 0x00727920
     WideString Describe_Options() const;                            // 0x00727960
 

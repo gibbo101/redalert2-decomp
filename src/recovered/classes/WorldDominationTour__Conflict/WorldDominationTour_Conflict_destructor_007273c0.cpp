@@ -1,0 +1,4 @@
+
+Conflict::~Conflict()
+{
+}

@@ -29,6 +29,13 @@ public:
 
     T &Current() const { return (*Vector)[Index]; }
 
+    // Iterator spelling; the slots stay virtual calls through these (Conflict::
+    // Describe_Options 0x00727960 calls Valid/Next through the vtable).
+    operator bool() const { return Valid(); }
+    VectorCursor<T, V> &operator++() { return Next(); }
+    VectorCursor<T, V> &operator--() { return Prev(); }
+    T &operator*() const { return Current(); }
+
     V *Vector;          // +0x04
     unsigned Index;     // +0x08
 };
