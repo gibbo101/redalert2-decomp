@@ -8,7 +8,6 @@ WIN32_IMPORT HWND WINAPI GetActiveWindow();
 void __cdecl Debug_Print_004068f0(char const *format, ...);
 unsigned int Get_Device_Caps_00495fc0();
 void __fastcall unknown_00495770(HRESULT result, int show_success);
-extern bool AllowStretchBlits_852fd6;
 extern IDirectDrawSurface *PrimarySurface_8523d8;
 extern DDPIXELFORMAT PrimaryPixelFormat_852b38;
 extern unsigned short unknown_eighth_mask_852fd4;

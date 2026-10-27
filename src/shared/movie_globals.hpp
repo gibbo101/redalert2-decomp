@@ -20,11 +20,6 @@ void __fastcall Unknown_004E0C90(bool unknown1, Surface *surface, int unknown2);
 
 extern HWND MainWindow;               // 0x00B263D8
 
-// The object at 0x00A40B18 rewrites a movie base name in place.
-class UnknownClassA40B18 {
-public:
-    void Unknown_005DA3F0(char *name);   // 0x005DA3F0
-};
-extern UnknownClassA40B18 unknown_object_a40b18;   // 0x00A40B18
+// The object at 0x00A40B18 is Options (shared/options.hpp; Unlock_Movie 0x005DA3F0).
 
 #endif

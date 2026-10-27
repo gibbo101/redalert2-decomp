@@ -14,7 +14,6 @@
 // @ref ??_C@_0BB@DHMB@FirewallSettings?$AA@=007e63ec
 // @ref ??_C@_0O@OMOI@FirewallDelta?$AA@=007e63dc
 
-extern CCINIClass unknown_ini_839740;
 
 void FirewallSettings::Detect_And_Save_005b9e80()
 {

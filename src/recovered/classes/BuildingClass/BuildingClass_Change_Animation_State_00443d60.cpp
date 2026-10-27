@@ -1,8 +1,8 @@
 // Change the building animation state and restart its frame countdown.
 #include "shared/building.hpp"
-#include "shared/frame_rate_control.hpp"
-// @ref ?Adjust_005d9760@UnknownFrameRateControl@@=005d9760
-// @ref ?unknown_frame_rate_a40b18@@=00a40b18
+#include "shared/options.hpp"
+// @ref ?Normalize_Delay@OptionsClass@@=005d9760
+// @ref ?Options@@=00a40b18
 // @ref _unknown_a40774=00a40774
 // @ref ?Health_Ratio@ObjectClass@@=005d4540
 void BuildingClass::unknown_443d60(int state)
@@ -29,7 +29,7 @@ void BuildingClass::unknown_443d60(int state)
         }
         int rate=control->unknown_08;
         if(Type->Normalized && state!=0)
-            rate=unknown_frame_rate_a40b18.Adjust_005d9760(rate);
+            rate=Options.Normalize_Delay(rate);
         AnimationStage.Set_Rate(rate);
         AnimationStage.Value=control->unknown_00;
     }

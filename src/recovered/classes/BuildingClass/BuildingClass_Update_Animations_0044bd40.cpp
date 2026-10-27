@@ -2,7 +2,7 @@
 #include "shared/building.hpp"
 #include "shared/cell.hpp"
 #include "shared/rules.hpp"
-#include "shared/frame_rate_control.hpp"
+#include "shared/options.hpp"
 extern "C" int const unknown_turret_frame_table_007acab0[32];
 extern "C" float const unknown_charge_scale_0079d148;
 extern "C" float const unknown_charge_limit_0079d14c;
@@ -10,8 +10,8 @@ extern "C" float const unknown_charge_limit_0079d14c;
 // @ref _unknown_charge_scale_0079d148=0079d148
 // @ref _unknown_charge_limit_0079d14c=0079d14c
 // @ref ?unknown_69ae10@UnknownQuad@@=0069ae10
-// @ref ?Adjust_005d9760@UnknownFrameRateControl@@=005d9760
-// @ref ?unknown_frame_rate_a40b18@@=00a40b18
+// @ref ?Normalize_Delay@OptionsClass@@=005d9760
+// @ref ?Options@@=00a40b18
 // @ref ?Health_Ratio@ObjectClass@@=005d4540
 // @ref ?unknown_6d86f0@TechnoClass@@=006d86f0
 // @ref ?unknown_44d0f0@BuildingClass@@=0044d0f0
@@ -149,7 +149,7 @@ void BuildingClass::Update_Animations_0044BD40()
     if(finished) {
         BuildingTriple *state=&Type->AnimFrames[unknown_42c];
         if(unknown_42c==0 || unknown_42c==1) {
-            AnimationStage.Set_Rate(unknown_frame_rate_a40b18.Adjust_005d9760(state->unknown_08));
+            AnimationStage.Set_Rate(Options.Normalize_Delay(state->unknown_08));
         }else {
             AnimationStage.Set_Rate(state->unknown_08);
         }

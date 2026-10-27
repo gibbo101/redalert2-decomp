@@ -4,8 +4,8 @@
 // @ref ?Map@@3VMouseClass@@A=008324e0
 // @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
 // @ref ?unknown_do_controls_7a3474@@3PAUDoStruct@@A=007a3474
-// @ref ?unknown_frame_rate_a40b18@@3VUnknownFrameRateControl@@A=00a40b18
-// @ref ?Adjust_005d9760@UnknownFrameRateControl@@QBEHH@Z=005d9760
+// @ref ?Options@@3VOptionsClass@@A=00a40b18
+// @ref ?Normalize_Delay@OptionsClass@@QBEHH@Z=005d9760
 // @ref ?Frame@@3HA=00a40d2c
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ??RRandom2Class@@QAEHHH@Z=006388a0
@@ -58,7 +58,7 @@ bool InfantryClass::unknown_slot311(int sequence, bool force, bool random_start)
     }
     Sequence = sequence;
     if (Is_Prone_Sequence_005096e0(sequence)) {
-        int rate = unknown_frame_rate_a40b18.Adjust_005d9760(unknown_do_controls_7a3474[sequence].Rate);
+        int rate = Options.Normalize_Delay(unknown_do_controls_7a3474[sequence].Rate);
         AnimationStage.Set_Rate(rate);
     } else {
         int rate = unknown_do_controls_7a3474[sequence].Rate;

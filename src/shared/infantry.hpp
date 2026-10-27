@@ -79,7 +79,7 @@ public:
 
 class CCINIClass;
 
-#include "shared/frame_rate_control.hpp"
+#include "shared/options.hpp"
 
 class InfantryClass : public FootClass {
 public:

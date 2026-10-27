@@ -18,7 +18,6 @@
 // @ref ??_C@_0O@NDBO@WOLScrollText?$AA@=007f3628
 // @ref ??_C@_0O@GLCN@LANScrollText?$AA@=007f3618
 
-extern CCINIClass unknown_ini_839740;
 
 struct UnknownOptions_00670730 {
     char unknown_0000[0x1E88];

@@ -1,6 +1,6 @@
 #include "shared/winsock_interface.hpp"
 #include "shared/ipx_address.hpp"
-#include "shared/frame_rate_control.hpp" // existing receiver declaration and +0 value
+#include "shared/options.hpp" // Options.GameSpeed
 struct _iobuf;
 extern "C" _iobuf *__cdecl fopen(char const *name, char const *mode);
 extern "C" int __cdecl fprintf(_iobuf *file, char const *format, ...);
@@ -11,7 +11,7 @@ extern "C" int __cdecl fclose(_iobuf *file);
 // @ref ?As_String_00523840@IPXAddressClass@@=00523840
 // @ref ?PacketTransport@@=00839c50
 // @ref ?Frame@@=00a40d2c
-// @ref ?unknown_frame_rate_a40b18@@=00a40b18
+// @ref ?Options@@=00a40b18
 extern int unknown_game_mode_a3d298;
 extern unsigned int accumulated_fps_00a6eb20;
 extern unsigned int fps_sample_count_00a6eb24;
@@ -70,7 +70,7 @@ void __cdecl Write_Multiplayer_Statistics_00482fe0()
             fprintf(file, stats_average_fps, average);
             fprintf(file, stats_max_ahead, max_max_ahead_00a3d578);
             fprintf(file, stats_latency, latency_setting_00a3fba4);
-            fprintf(file, stats_speed, unknown_frame_rate_a40b18.unknown_00);
+            fprintf(file, stats_speed, Options.GameSpeed);
             if (PacketTransport) {
                 for (int index=0; index<PacketTransport->unknown_slot18(); ++index) {
                     unsigned int *address=(unsigned int *)PacketTransport->unknown_slot19(index);
