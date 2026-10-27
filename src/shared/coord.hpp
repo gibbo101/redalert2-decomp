@@ -92,6 +92,13 @@ inline Cell XY_Cell(int x, int y)
     return cell;
 }
 
+// The coordinate moved to the corner of its cell (each of X and Y rounded
+// toward zero to a multiple of 256; CellClass 0x0047A4E0).
+inline CoordStruct Coord_Snap(CoordStruct const &coord)
+{
+    return CoordStruct(coord.X / 256 * 256, coord.Y / 256 * 256, coord.Z);
+}
+
 // Member-wise cell equality (VectorClass<Cell> ID lookups; formerly
 // duplicated in shared/map.hpp and shared/house.hpp).
 #ifndef RA2_CELLSTRUCT_COMPARE

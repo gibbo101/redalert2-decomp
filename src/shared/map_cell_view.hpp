@@ -16,11 +16,15 @@ inline CellClass &Map_Cell(Cell const &cell)
     return Map[cell];
 }
 
-// The isometric tile types; only the flag that allows smudges is known.
+// The isometric tile types (a view of shared/isometric_tile_type.hpp, which
+// these units cannot include beside it); only the flags at +0x2B0 and +0x2D5
+// are known.
 class IsometricTileTypeClass {
 public:
     char unknown_000[0x2B0];
     bool unknown_2b0;                       // +0x2B0 (smudges allowed; hypothesis)
+    char unknown_2b1[0x2D5 - 0x2B1];
+    bool unknown_2d5;                       // +0x2D5 (CellClass::unknown_47c200: false refuses the cell)
 };
 extern DynamicVectorClass<IsometricTileTypeClass *> IsoTileTypes;
 

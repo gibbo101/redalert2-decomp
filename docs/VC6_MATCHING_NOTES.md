@@ -371,3 +371,15 @@ the ignored build/class-work/Study42/, `f.sh` prints a function's frame map).
   argument but shifts that state; try locals for a run of similar statements (Write_Basic
   0x6625B0: all twelve [Lighting] values). Dummy statements that move it are steering.
 
+
+## Named locals and the inline budget (Big49)
+
+- Named locals count in the caller's inline budget though they emit nothing:
+  `int value = ini.Get_Int(...); Field = value;` and `Field = ini.Get_Int(...);` compile to the
+  same statement, but the first enlarges the caller. When a long reader (RulesClass::AI,
+  Combat_Damage) inlines slightly fewer helpers than the original, put one kind of read
+  (ints and leptons there) through locals; the band is narrow, so try per-kind sets, not
+  arbitrary subsets. Apply one rule per function (every read of a kind), never individual
+  statements picked to hit a count (owner ruling 2026-10-27, landed 5ccf5f93).
+- VC6 numbers a unit's header-static initializers (`_$E`n) in order of first inclusion,
+  so include order inside a unit with header statics is part of the match.

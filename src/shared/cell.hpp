@@ -13,8 +13,8 @@
 //           saved as a count and pointers, swizzled)
 //   +0x02C  CellClass *unknown_2c     (swizzled; bridge owner cell)
 //   +0x030  void *unknown_30          (swizzled)
-//   +0x034  TagClass *unknown_34      (cleared by the NoInit constructor;
-//           the destructor drops a count at +0x194)
+//   +0x034  UnknownCellCounted *unknown_34 (cleared by the NoInit
+//           constructor; the destructor drops a count at its +0x194)
 //   +0x038  int IsoTileIndex          0xFFFF when constructed
 //   +0x03C  TagClass *unknown_3c (swizzled; the cell tag: counted at +0x2C,
 //           cells with one are listed in the map at 0x00833638)
@@ -117,6 +117,13 @@ struct UnknownCell68 {
     int unknown_0c;
 };
 
+// The object at +0x34: while unknown_flag_a40958 is set the destructor drops
+// a count at its +0x194 (type unknown; not a TagClass, which is 0x38 bytes).
+struct UnknownCellCounted {
+    char unknown_000[0x194];
+    int unknown_194;                // +0x194
+};
+
 class CellClass : public AbstractClass {
 public:
     int unknown_475fe0(int damage); // 00475FE0: wall mutation, full EAX/RET4; hypothesis
@@ -175,6 +182,15 @@ public:
 
     bool unknown_47ba10(int house) const;      // 0x0047BA10 (visible to the player's house; hypothesis)
     bool unknown_47cdd0() const;                // 0x0047CDD0 (land allows ...; no building, not blocked)
+    Point2D unknown_475440() const;             // 0x00475440 (the overlay image offset in the cell; hypothesis)
+    void unknown_4724a0();                      // 0x004724A0 (a wall overlay: +0x50 = owner of the nearest building of a WallOwner house)
+    int unknown_47a290() const;                 // 0x0047A290 (the height of the top of the cell: ground plus a building's height or 0x55 for an object at the spot)
+    void unknown_47a160();                      // 0x0047A160 (slot 109 on up to ten occupants; units and aircraft get Force_New_Slope(+0x11C))
+    void unknown_476b20(int house, int value);  // 0x00476B20 (every other house that is not an ally (or fails 0x004F52F0) gets unknown_func_4e5dc0(the cell's map block, value); TechnoClass 0x006D95A0/0x006D95D0)
+    void unknown_47a4e0();                      // 0x0047A4E0 (redraws the cell's 60x30 screen area; BuildingClass 0x0043C1F0)
+    int unknown_47a5a0();                       // 0x0047A5A0 (bit per cardinal neighbour holding veins: an IsVeins overlay, or overlay 0x7E with data from 48)
+    bool unknown_475840(int overlay, int facing) const;   // 0x00475840 (whether a wall of overlay type joins this cell toward facing: the same wall, or a gate or wall tower; hypothesis)
+    bool unknown_47c200();                      // 0x0047C200 (the map allows the cell, its tile type does not refuse it, it is not blocked and holds no building or terrain object)
     void unknown_47be00();                      // 0x0047BE00 (diagonal pass over the cells ahead)
     void unknown_47be60();                      // 0x0047BE60
 
@@ -226,7 +242,7 @@ public:
     DynamicVectorClass<FoggedObjectClass *> *FoggedObjects;   // +0x028
     CellClass *unknown_2c;                      // +0x02C
     void *unknown_30;                           // +0x030
-    TagClass *unknown_34;                       // +0x034
+    UnknownCellCounted *unknown_34;             // +0x034
     int IsoTileIndex;                           // +0x038
     TagClass *unknown_3c;                       // +0x03C
     void *unknown_40;                           // +0x040

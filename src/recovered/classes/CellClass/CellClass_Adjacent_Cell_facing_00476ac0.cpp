@@ -5,9 +5,9 @@
 
 CellClass &CellClass::Adjacent_Cell(unsigned facing)
 {
-    if (facing < 8) {
-        Cell cell = MapCoords;
-        return Map[Adjacent_Cell(cell, facing)];
+    if (facing >= 8) {
+        return *this;
     }
-    return *this;
+    Cell cell = MapCoords;
+    return Map[Adjacent_Cell(cell, facing)];
 }
