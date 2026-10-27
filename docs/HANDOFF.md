@@ -53,8 +53,13 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - Map.cpp Cell tables (0x5441E0, 0x5461A0, 0x55B520, 0x55CBC0, 0x56B330, ~15.7 KB):
   exact with `Cell(short, short) { Set(x, y); }`; TechFoot39 is finishing the
   0x54AB00 and Overlay Read_INI 0x5DB670 refits.
-- CounterClass: HouseClass::~HouseClass calls the out-of-line ~CounterClass 0x491C20;
-  the stand-in UnknownHouseCounter stays until that destructor is recovered (Clean45).
+- CounterClass: HouseClass::~HouseClass calls 0x491C20, which is accepted as the
+  `template class VectorClass<int>` destructor; an out-of-line ~CounterClass matches House
+  but makes the VectorClass<int> unit emit an extra destructor (Clean45 spec/counter2.json).
+- Duplicates left (Clean45 d/globals/README.md): unknown_a40d13 vs unknown_flag_a40d13 (same
+  bool), class-typed globals declared in several headers (MainWindow, Houses, Infantry,
+  TeamTypes, IsoTileTypes, ...), unknown_object_index_abff58 typed UnknownIndexClass in
+  building.hpp but IndexClass elsewhere.
 - RulesClass Sides 0x64BC10 needs DynamicVectorClass::ID with `Count()`, which makes
   142 explicit-instantiation units emit an unaccounted Count COMDAT.
 - HouseClass::Write_INI 0x4EC230 returns void (rename pending).

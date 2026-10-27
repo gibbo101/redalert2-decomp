@@ -3,6 +3,8 @@
 // bar the output (less the drain) leaves, 400 / (power + 400) of the
 // segments, clamped to the bar.
 #include "shared/power.hpp"
+#include "shared/building_class.hpp"
+#include "shared/building_type_class.hpp"
 // @ref ?unknown_player_a35db4@@3PAVHouseClass@@A=00a35db4
 // @ref ?unknown_int_abcd70@@3HA=00abcd70
 // @ref __real@8@4007c800000000000000=007a5e08
@@ -15,9 +17,9 @@ int PowerClass::Unknown_0061C5F0()
     int drain = 0;
     int output = 0;
     for (int index = 0; index < house->Buildings.Count(); index++) {
-        UnknownBuilding *building = house->Buildings[index];
+        BuildingClass *building = house->Buildings[index];
         drain += building->Type->PowerDrain_c6c;
-        output += building->Type->unknown_c68;
+        output += building->Type->Power;
     }
     int total = output + drain;
     double bar = 400.0 / ((double)total + 400.0);

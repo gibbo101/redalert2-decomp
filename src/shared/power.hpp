@@ -65,8 +65,10 @@ public:
     // direct callers).
     int Unknown_0061C690();
 
-    // The three counters' targets (0x0061C700; meaning not recovered; the
-    // arguments receive the targets of +0x1528, +0x152C and +0x1530).
+    // The three counters' targets (0x0061C700): the unlit segments split by
+    // the player's drain (+0x1530), the surplus output up to 100 (+0x152C)
+    // and the rest of the surplus (+0x1528), the rounding
+    // remainder added to +0x1530. Returns the bar's segment count.
     int Unknown_0061C700(int &target_1528, int &target_152c, int &target_1530);
     // Steps one counter down toward its target: +0x1528 first, then
     // +0x1530, then +0x152C (0x0061CB50).
