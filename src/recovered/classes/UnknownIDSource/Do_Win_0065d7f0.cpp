@@ -203,5 +203,5 @@ void __fastcall Do_Win_0065d7f0()
         ToolTips->Enable(unknown_tooltips_enabled_a40b34);
     }
     Map.Render();
-    Unknown_004955D0(unknown_object_837e10, 7, unknown_481fb0);
+    Unknown_004955D0(&unknown_palette_837e10, 7, unknown_481fb0);
 }

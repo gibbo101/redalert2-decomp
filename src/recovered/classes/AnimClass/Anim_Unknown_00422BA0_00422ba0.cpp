@@ -6,7 +6,7 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Unknown_0047E2C0@@YIXABUCoordStruct@@HHPAVWarheadTypeClass@@H@Z=0047e2c0
 // @ref ?Unknown_004955D0@@YIXPAXHP6AXXZ@Z=004955d0
-// @ref ?unknown_object_837e10@@3PADA=00837e10
+// @ref ?unknown_palette_837e10@@3VPaletteClass@@A=00837e10
 // @ref ?unknown_481fb0@@YAXXZ=00481fb0
 // @ref ?unknown_game_mode_a3d298@@3HA=00a3d298
 
@@ -18,6 +18,6 @@ void __fastcall Unknown_00422BA0(int arg1, Cell const &cell)
     coord.Y = cell.Y * 256 + 128;
     Unknown_0047E2C0(coord, Rules->unknown_1190, 0, Rules->unknown_c60, 0);
     if (unknown_game_mode_a3d298 == 0) {
-        Unknown_004955D0(unknown_object_837e10, 30, unknown_481fb0);
+        Unknown_004955D0(&unknown_palette_837e10, 30, unknown_481fb0);
     }
 }

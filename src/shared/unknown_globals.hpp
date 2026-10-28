@@ -164,11 +164,13 @@ public:
     UnknownScore_005AAA20();
     void Presentation_005AAA40();
 };
-// Takes the object at 0x00837E10 (a palette, hypothesis) through value steps,
-// calling the callback each step (0x004955D0; Do_Win: 7, the per-frame service;
-// moved from shared/anim.hpp).
+// Takes the palette at 0x00837E10 through value steps, calling the callback each
+// step (0x004955D0; Do_Win: 7, the per-frame service; moved from shared/anim.hpp).
 void __fastcall Unknown_004955D0(void *object, int value, void (*callback)());   // 0x004955D0
-extern char unknown_object_837e10[];                // 0x00837E10 (0x004955D0's object; type unknown)
+// A palette (0x00837E10): UnitTypeClass::One_Time converts through it (ConvertClass's art and
+// screen palette), Rules' [Colors] schemes are made from it, 0x004955D0 fades it.
+class PaletteClass;
+extern PaletteClass unknown_palette_837e10;         // 0x00837E10
 // Do_Win's campaign steps (meanings not recovered): 0x00491A10 decides whether the
 // campaign goes on, 0x004B37C0 is the end of the campaign, 0x0058F510 the map
 // selection and 0x0058F620 picks the named next scenario.

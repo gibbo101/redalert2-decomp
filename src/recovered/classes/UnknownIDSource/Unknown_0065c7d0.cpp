@@ -148,7 +148,7 @@ bool __fastcall Unknown_0065c7d0(char const *name)
     }
     if (!ok) {
         Debug_Printf("Error - Unable to read scenario: %s\n", filename);
-        Unknown_004955D0(unknown_object_837e10, 7, unknown_481fb0);
+        Unknown_004955D0(&unknown_palette_837e10, 7, unknown_481fb0);
         WWMessageBox(L" ").Process(
             StringTable::Load_String("TXT_UNABLE_READ_SCENARIO", 0, "D:\\Ra2\\Scenario.CPP", 1394),
             StringTable::Load_String("TXT_OK", 0, "D:\\Ra2\\Scenario.CPP", 1394), 0, 0, false);

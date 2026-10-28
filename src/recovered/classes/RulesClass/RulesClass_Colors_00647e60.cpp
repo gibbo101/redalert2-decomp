@@ -26,8 +26,8 @@ bool RulesClass::Colors(CCINIClass &ini)
             char const *entry = ini.Get_Entry(RulesSection_Colors, index);
             HSVClass color = ini.Get_HSV(RulesSection_Colors, entry, HSVClass(0, 0, 0));
             unknown_add_color_603a60(entry, color);
-            unknown_find_or_make_palette(entry, color, unknown_object_838a10, unknown_object_837e10, 1);
-            unknown_find_or_make_palette(entry, color, unknown_object_838a10, unknown_object_837e10, 0x35);
+            unknown_find_or_make_palette(entry, color, unknown_object_838a10, &unknown_palette_837e10, 1);
+            unknown_find_or_make_palette(entry, color, unknown_object_838a10, &unknown_palette_837e10, 0x35);
         }
         return true;
     }
