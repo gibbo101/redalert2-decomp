@@ -54,6 +54,10 @@ public:
     virtual int __stdcall Get_Status();                                         // 0x004BF5D0
     virtual void __stdcall Acquire_Hunter_Seeker_Target();                      // 0x004BF600
 
+    // Helpers Fly.cpp defines and expands (names hypotheses).
+    bool unknown_4bf3c0();                                                      // 0x004BF3C0 (not +0x51, and not +0x50 or at least half +0x38 high)
+    void Start_Drift();                                                         // 0x004BF550 (a drift of 20..30 either way; Power_Off)
+
     bool unknown_18;                    // +0x18
     CoordStruct unknown_1c;             // +0x1C
     CoordStruct unknown_28;             // +0x28

@@ -1,7 +1,7 @@
 // JumpjetLocomotionClass (Jumpjet.cpp, 0x0052EF70-0x0053135F; RTTI vtables
 // 0x007A536C IPersistStream, 0x007A52A4 ILocomotion at +4). Size 0x90.
 // Layout from the constructor 0x0052F160 (names are hypotheses):
-//   +0x18..+0x3B  not constructed
+//   +0x18..+0x3B  not constructed (the type's jumpjet values, set by Link_To_Object)
 //   +0x3C  CoordStruct (from 0x00A6E3E0), +0x48 bool (Is_Moving), +0x4C int
 //   +0x50  FacingClass (rate: rules +0x368; desired and current 0x4000)
 //   +0x68..+0x84 ints, +0x88 bool
@@ -36,7 +36,17 @@ public:
     virtual bool __stdcall Is_Moving_Now();                                     // 0x00530AE0
     virtual void __stdcall Mark_All_Occupation_Bits(int mark);                  // 0x00531250
 
-    int unknown_18[9];                  // +0x18
+    // The linked type's [Jumpjet*] values (Link_To_Object copies them; the
+    // height is at least twice the unit's geometry constant).
+    int TurnRate;                       // +0x18 (JumpjetTurnRate)
+    int Speed;                          // +0x1C (JumpjetSpeed)
+    float Climb;                        // +0x20 (JumpjetClimb)
+    float Crash;                        // +0x24 (JumpjetCrash)
+    int Height;                         // +0x28 (JumpjetHeight)
+    float Accel;                        // +0x2C (JumpjetAccel)
+    float Wobbles;                      // +0x30 (JumpjetWobbles)
+    int Deviation;                      // +0x34 (JumpjetDeviation)
+    bool NoWobbles;                     // +0x38 (JumpjetNoWobbles)
     CoordStruct unknown_3c;             // +0x3C
     bool unknown_48;                    // +0x48
     int unknown_4c;                     // +0x4C

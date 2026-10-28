@@ -46,6 +46,11 @@ public:
     virtual void __stdcall Mark_All_Occupation_Bits(int mark);                  // 0x004FEDD0
     virtual bool __stdcall Is_Moving_Here(CoordStruct to);                      // 0x004FEE20
 
+    // Starts a drift of 20..30 either way (Power_Off and Shove expand it;
+    // name hypothesis).
+    bool unknown_4fdfc0();                                                      // 0x004FDFC0 (moving; never called out of line)
+    void Start_Drift();                                                         // 0x004FEC30
+
     CoordStruct unknown_18;             // +0x18 destination
     CoordStruct unknown_24;             // +0x24 head-to coordinate
     FacingClass unknown_30;             // +0x30
