@@ -57,6 +57,8 @@ public:
     virtual void unknown_slot60();              // slot 60 (+0xF0)
 };
 
+class FootClass;
+
 extern "C" GUID const CLSID_ParasiteClass;     // 0x007A1DF0
 // Objects updated every frame (0x00AC0BF8; name hypothesis, see BulletClass).
 extern DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0bf8;
@@ -77,10 +79,12 @@ public:
     virtual void Compute_CRC(WWCRCEngine &crc) const;           // 0x00606460
     virtual void AI();                                          // 0x00606F50
     void Unknown_006064C0();                                    // 0x006064C0 (the destructor's release steps)
+    CoordStruct Unknown_00607C30();                             // 0x00607C30
+    void Unknown_00606780();                                    // 0x00606780
     void Unknown_00607440();                                    // 0x00607440 (FootClass slot 82 after restarting the +0x2C timer)
 
-    AbstractClass *Owner;                           // +0x24
-    AbstractClass *unknown_28;                      // +0x28
+    FootClass *Owner;                               // +0x24 (the parasite unit; its +0x588 holds this)
+    FootClass *unknown_28;                          // +0x28 (the unit attacked; its +0x580 is Owner)
     CDTimerClass<FrameTimerClass> unknown_2c;       // +0x2C
     CDTimerClass<FrameTimerClass> unknown_38;       // +0x38
     ParasiteVictim *Victim;                         // +0x44

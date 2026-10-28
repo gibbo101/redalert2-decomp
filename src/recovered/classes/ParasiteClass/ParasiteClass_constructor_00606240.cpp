@@ -4,7 +4,7 @@
 
 ParasiteClass::ParasiteClass(AbstractClass *owner)
 {
-    Owner = owner;
+    Owner = (FootClass *)owner;
     unknown_28 = 0;
     unknown_38 = CDTimerClass<FrameTimerClass>();
     unknown_2c = CDTimerClass<FrameTimerClass>();
