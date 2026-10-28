@@ -4,8 +4,8 @@
     "id": "population-2871",
     "inventory_sha256": "459c19ec16cf6840724d5abff7c4a3268c4c73a927e253c4d3230c8c2dd56e35",
     "gaps_sha256": "7c1db4b3019827ea1c2bc8d7c192655491e30ce2b956ef93050f483d4666d530",
-    "historical_population_sha256": "8ac93893fe08a9af28e30c3582ae99ee63380b82db3936619cf2ee019aae049b",
-    "historical_acceptance_sha256": "61d42187ab1617bbeef6df0ef7a12dcfd8a8e8cd3eef46c483e8ae5546715672"
+    "historical_population_sha256": "4e3aec0ec0fa6b5b8fc5bcb9e42167371c79fdac766576f41873ed6984c6a38c",
+    "historical_acceptance_sha256": "3c8a2756d454259b482cd910e8c46ab1c2ee0d4a97aa975ad6d1b35a4920803b"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2491,7 +2491,7 @@
     "??_E?$VectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5685840,
     "??_E?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5686160,
     "?unknown_vox_list_ad0868@@3UAudioListNode@@A": 11339880,
-    "?unknown_vox_ad0878@@3HA": 11339896,
+    "?unknown_vox_ad0878@@3HC": 11339896,
     "?unknown_vox_list_ad0890@@3UAudioListNode@@A": 11339920,
     "?unknown_countdown_ad08c8@@3HC": 11339976,
     "?unknown_vox_lists_ad08e0@@3PAUAudioListNode@@A": 11340000,
@@ -5940,7 +5940,7 @@
         {
           "offset": 3,
           "kind": 6,
-          "symbol": "?unknown_vox_ad0878@@3HA",
+          "symbol": "?unknown_vox_ad0878@@3HC",
           "target": 11339896,
           "addend": 0,
           "resolved": 11339896
@@ -6122,7 +6122,7 @@
           "resolved": 4291765000
         }
       ],
-      "source_sha256": "6c01b0eae49db0de01ec7e958e67e96c30ce9ee20c7328440ebb0e28c091e1fe",
+      "source_sha256": "1fe5faa9b2d4caa0c66b91a74408fd5c00375afd645bb7432f99df7be3139365",
       "source": "src/recovered/classes/VoxClass/Speech_Init_007156d0.cpp",
       "population": "population-2871",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
@@ -6504,7 +6504,7 @@
         {
           "offset": 38,
           "kind": 6,
-          "symbol": "?unknown_vox_ad0878@@3HA",
+          "symbol": "?unknown_vox_ad0878@@3HC",
           "target": 11339896,
           "addend": 0,
           "resolved": 11339896
@@ -6654,7 +6654,7 @@
           "resolved": 481
         }
       ],
-      "source_sha256": "1be112a991fe566d3541f901d812bab8d175b2097f584943c7e26c3022e96b7a",
+      "source_sha256": "608a0181c3dd985b8e90021d5fff6265ee4a73f007aea8565c96844755635785",
       "source": "src/recovered/classes/VoxClass/Speech_Play_007158c0.cpp",
       "population": "population-2871",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",

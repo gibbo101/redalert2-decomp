@@ -4,7 +4,7 @@
 #include "shared/vox_speech.hpp"
 // @ref ?unknown_VoxClass_list_00ad0930@@3V?$DynamicVectorClass@PAVVoxClass@@@@A=00ad0930
 // @ref ?unknown_vox_list_ad0868@@3UAudioListNode@@A=00ad0868
-// @ref ?unknown_vox_ad0878@@3HA=00ad0878
+// @ref ?unknown_vox_ad0878@@3HC=00ad0878
 // @ref ?unknown_vox_playing_ad0954@@3PAVVoxClass@@A=00ad0954
 // @ref ?unknown_vox_stream_ad095c@@3PAUAudioStreamPlayer@@A=00ad095c
 // @ref ?unknown_vox_delay_ad0960@@3_KA=00ad0960

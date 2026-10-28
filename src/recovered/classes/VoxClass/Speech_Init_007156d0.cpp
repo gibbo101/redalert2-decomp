@@ -3,7 +3,7 @@
 // stream; name hypothesis).
 #include "shared/vox_speech.hpp"
 // @ref ?unknown_vox_list_ad0868@@3UAudioListNode@@A=00ad0868
-// @ref ?unknown_vox_ad0878@@3HA=00ad0878
+// @ref ?unknown_vox_ad0878@@3HC=00ad0878
 // @ref ?unknown_vox_list_ad0890@@3UAudioListNode@@A=00ad0890
 // @ref ?unknown_countdown_ad08c8@@3HC=00ad08c8
 // @ref ?unknown_vox_lists_ad08e0@@3PAUAudioListNode@@A=00ad08e0

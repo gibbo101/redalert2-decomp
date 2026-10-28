@@ -30,7 +30,7 @@ struct VoxSpeech : AudioListNode {
 
 extern int unknown_vox_type_ad0858;                 // the type of the speech playing
 extern AudioListNode unknown_vox_list_ad0868;       // type 3 speeches
-extern int unknown_vox_ad0878;                      // nonzero: no speech is queued
+extern int volatile unknown_vox_ad0878;             // nonzero: no speech is queued (counted down by 0x00716950)
 extern int unknown_vox_priority_ad0880;             // the priority of the speech playing
 extern AudioListNode unknown_vox_list_ad0890;       // priority 3 speeches
 extern int volatile unknown_countdown_ad08c8;       // nonzero: no speech starts
