@@ -155,6 +155,9 @@ def composite_pass(plan, inventory, existing, catalog, audit=None):
                 continue
             chosen = (directory, row); break
         if chosen is None:
+            print('composite pass: no frozen contiguous row starts at %s with the accepted extent; the plan '
+                  'is compiled per pass instead (state body_bytes to keep it one unit)' % item['entry'],
+                  file=sys.stderr)
             return None
         directory, row = chosen
         borrowed = None
@@ -200,17 +203,61 @@ def composite_pass(plan, inventory, existing, catalog, audit=None):
         provenance.append(dict(entry=item['entry'], row_from=str(directory.relative_to(REPOSITORY)),
                                gaps_from=str(gap_file.relative_to(REPOSITORY)),
                                **({'entry_references_from': borrowed} if borrowed else {})))
+    files = {'functions.jsonl': ''.join(json.dumps(r) + '\n' for r in rows),
+             'unassigned-executable.jsonl': ''.join(json.dumps(gaps[k]) + '\n' for k in sorted(gaps))}
     if target.exists():
-        return target
+        # A frozen pass is never rewritten; an earlier plan of the same name
+        # with other entries or bounds must not lend this one its rows.
+        if all((target / name).read_text() == text for name, text in files.items()):
+            return target
+        raise SystemExit("%s holds another plan's rows (same plan name); rename the plan" % target)
     target.mkdir(parents=True)
-    (target / 'functions.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in rows))
-    (target / 'unassigned-executable.jsonl').write_text(
-        ''.join(json.dumps(gaps[k]) + '\n' for k in sorted(gaps)))
+    for name, text in files.items():
+        (target / name).write_text(text)
     (target / 'composite.json').write_text(json.dumps(dict(
         rule='per-entry rows copied from the first frozen pass with a contiguous body (entry references from another '
              'frozen pass where that row has none); gap rows at body ends',
         entries=provenance), indent=1))
     return target
+
+
+def restate_canonical_bounds(plan, existing):
+    """Give each plan item that replaces an accepted region ending in switch
+    tables, and states no body_bytes, that region's recorded body extent.
+
+    The recorded extent (code plus the tables its own code indexes) is the
+    independent evidence the region was accepted with; frozen inventory rows
+    often end where the code ends, so without it the tables would be decoded
+    as code ("DIR32 not at original operand boundary", "Incomplete original
+    body decoding"). Nothing comes from the candidate. Each restated item
+    keeps the recorded table length, which the split recomputed from the
+    original bytes must equal. Returns the restated entries."""
+    restated = []
+    for item in plan['sources']:
+        old = existing.get(int(item['entry'], 16))
+        if old and old.get('switch_data_bytes') and not item.get('body_bytes'):
+            item['body_bytes'] = old['body_bytes']
+            item['bound_evidence'] = 'accepted canonical extent of %s (code and %d switch-table bytes)' % (
+                old['population'], old['switch_data_bytes'])
+            item['canonical_switch_data_bytes'] = old['switch_data_bytes']
+            restated.append(item['entry'])
+    return restated
+
+
+def contradicted_vtables(stated, audit):
+    """Plan or @ref bindings of a vtable name that the original's RTTI places
+    elsewhere, each with what the RTTI says is at the stated address.
+    Reported only: a source may model an original instance under another type
+    (a `T *` list for the original's `T const *` one), and the audit's full
+    byte comparison of the emitted vtable decides."""
+    notes = []
+    for name, value in sorted(stated.items()):
+        own = audit.rtti_binding(name) if name.startswith('??_7') else None
+        if own is not None and own != int(value, 16):
+            there = audit.vtable_name_at(int(value, 16))
+            notes.append('%s=%s: the original RTTI places it at %08x%s' % (
+                name, value, own, '; %s is %s' % (value, there) if there else ''))
+    return notes
 
 
 def with_headers(text, seen=None):
@@ -315,15 +362,19 @@ def main():
         # function emitted by one definition (an atexit thunk, an inline
         # copy) needs its own comment-only draft.
         raise SystemExit('plan items share a draft: %s' % sorted({d for d in drafts if drafts.count(d) > 1}))
+    stated = dict(plan['references'])
     # Calls between members of the unit bind to the members' own entries.
     for item in plan['sources']:
         plan['references'].setdefault(item['symbol_prefix'], item['entry'])
     config = json.loads(args.config.read_bytes())
     audit = Audit(REPOSITORY, config['executable'])
+    for note in contradicted_vtables(stated, audit):
+        print('warning: ' + note, file=sys.stderr)
     catalog_path = catalog_io.locate(REPOSITORY)
     catalog = catalog_io.load(catalog_path)
     sync_headers(catalog); catalog_io.dump(catalog, catalog_path)
     existing = {r['entry']: r for r in catalog['regions']}
+    restate_canonical_bounds(plan, existing)
     # A replaced region keeps the bindings it was accepted with (its
     # population's table); the plan's own references take precedence.
     for item in plan['sources']:
@@ -407,6 +458,9 @@ def main():
             # A plan-stated bound may end in the switch tables the code indexes.
             code_size = switch_data_start(audit.decoder, body, entry) if item.get('body_bytes') else None
             switch = {'switch_data_bytes': len(body) - code_size} if code_size else {}
+            if item.get('canonical_switch_data_bytes') and \
+                    switch.get('switch_data_bytes') != item['canonical_switch_data_bytes']:
+                raise SystemExit("%s: switch tables differ from the accepted region's record" % item['entry'])
             rtti = rtti_references(with_headers(text), audit.original_type_descriptors()) if \
                 any('/GR' in options for options in plan.get('options') or []) else {}
             candidates.append(dict(entry=entry, method='%08x' % entry, source=str(path), **switch,

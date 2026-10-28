@@ -242,6 +242,69 @@ class Audit:
         self._type_descriptors = found
         return found
 
+    def original_vtables(self):
+        """Primary vtables of the original by their decorated names, from its RTTI.
+
+        For every vtable recorded in manifests/rtti_classes.json whose
+        complete object locator (the word before it) has offset 0, the
+        locator's type descriptor holds the class's decorated name
+        `.?AV<name>`; the vtable symbol is `??_7<name>6B@`. Each template
+        instance has its own decorated name (DynamicVectorClass<T *> and
+        DynamicVectorClass<T const *> differ; VectorClass<T *> is another
+        class), so each binds to its own original copy. A name found twice
+        binds nothing. Returns name -> (vtable, slot 0, COM-derived).
+        """
+        if hasattr(self, '_original_vtables'):
+            return self._original_vtables
+        word = lambda va: struct.unpack('<I', self.original(va, 4))[0]
+        found, repeated = {}, set()
+        for table in self.document('manifests/rtti_classes.json')['vtables']:
+            vtable = int(table['vtable'], 16)
+            try:
+                locator = word(vtable - 4)
+                if word(locator + 4):
+                    continue        # a secondary vtable (its name carries the base)
+                raw = self.original(word(locator + 12) + 8, 256)
+            except ValueError:
+                continue
+            name = raw[:raw.find(b'\0')]
+            if not name.startswith((b'.?AV', b'.?AU')) or not name.endswith(b'@@'):
+                continue
+            symbol = '??_7' + name[4:].decode('ascii', 'replace') + '6B@'
+            if symbol in found:
+                repeated.add(symbol)
+            com = any(b['name'] in ('IUnknown', 'IPersist', 'IPersistStream') for b in table.get('bases', []))
+            found[symbol] = (vtable, word(vtable), com)
+        for symbol in repeated:
+            del found[symbol]
+        self._original_vtables = found
+        return found
+
+    def rtti_binding(self, name):
+        """Original address of a class's primary vtable (`??_7X6B@`) or of
+        its deleting destructor (`??_EX`/`??_GX`: slot 0 of that vtable, except
+        in COM-derived classes, whose slot 0 is QueryInterface), else None.
+
+        Used only for compiler-emitted COMDAT copies a population's
+        references leave unbound; the audit still compares every emitted
+        vtable with the original bytes at the bound address."""
+        tables = self.original_vtables()
+        if name.startswith('??_7') and name.endswith('6B@'):
+            row = tables.get(name)
+            return row[0] if row else None
+        if name.startswith(('??_E', '??_G')) and name.endswith('@@UAEPAXI@Z'):
+            row = tables.get('??_7' + name[4:-len('UAEPAXI@Z')] + '6B@')
+            return row[1] if row and not row[2] else None
+        return None
+
+    def vtable_name_at(self, address):
+        """The decorated primary vtable name the original's RTTI gives the
+        vtable at `address`, else None (for diagnostics)."""
+        for name, row in self.original_vtables().items():
+            if row[0] == address:
+                return name
+        return None
+
     def merged_references(self, candidates):
         """All reference bindings of a population (one dict per population)."""
         cache = self.__dict__.setdefault('_merged_references', {})
@@ -397,6 +460,10 @@ class Audit:
             address = references.get(names[0])
             if address is None:
                 address = longest_prefix_binding(references, names[0])
+            if address is None:
+                # A vtable no source binds: its own original copy, by the
+                # decorated name in the original's RTTI.
+                address = self.rtti_binding(names[0]) if names[0].startswith('??_7') else None
         if address is None:
             return False
         address -= start
@@ -407,6 +474,8 @@ class Audit:
                 matches = [layout[name]] if name in layout else []
             else:
                 matches = sorted(prefix_bound_values(references, name))
+                if not matches and names[0].startswith('??_7') and self.rtti_binding(name) is not None:
+                    matches = [self.rtti_binding(name)]     # a deleting destructor slot
             if not matches and names[0].startswith('??_7') and kind == 6 and target['section'] == 0 \
                     and offset + 4 <= len(data) and not struct.unpack_from('<I', data, offset)[0]:
                 # A vtable slot naming a virtual function not recovered yet:
@@ -427,11 +496,33 @@ class Audit:
             same = bytes(data) == self.original(address, len(data))
         except ValueError:
             return False
+        if not same and names[0].startswith('??_7'):
+            self.record_vtable_mismatch(names[0], address, start, bytes(data), section, coff)
         if same and (names[0] in rtti or vtable is not None):
             # Recorded in the audit result: each RTTI structure and /GR
             # vtable with the original copy its bytes equal.
             self.__dict__.setdefault('rtti_original_copies', {})[names[0]] = address + start
         return same
+
+    def record_vtable_mismatch(self, name, address, start, data, section, coff):
+        """Diagnostic text for an emitted vtable that differs from the
+        original at its bound address: which class the original's RTTI says
+        is there, where the name's own original copy is, and each differing
+        slot with the name the unit binds it to. Only explains a refusal."""
+        notes = []
+        there = self.vtable_name_at(address + start)
+        if there and there != name:
+            notes.append('the original RTTI names the vtable at %08x %s' % (address + start, there))
+        own = self.rtti_binding(name)
+        if own is not None and own != address + start:
+            notes.append('%s is %08x in the original RTTI' % (name, own))
+        original = self.original(address, len(data))
+        slots = {offset: coff.symbols[target]['name'] for offset, target, _ in section['relocs']}
+        for offset in range(start, len(data) - 3, 4):
+            emitted, kept = (struct.unpack_from('<I', d, offset)[0] for d in (data, original))
+            if emitted != kept:
+                notes.append('+%02x %s bound %08x, original %08x' % (offset - start, slots.get(offset, '?'), emitted, kept))
+        self.__dict__.setdefault('vtable_mismatches', {})[name] = '; '.join(notes[:8])
 
     def defined_data_duplicate(self, coff, index, section, candidates):
         """Initialized data a unit defines (a table written out in source).
@@ -608,7 +699,10 @@ class Audit:
         if names[0].startswith(('??_G', '??_E')):
             references = self.merged_references(candidates)
             aliases = {names[0], '??_E' + names[0][4:], '??_G' + names[0][4:]}
-            if not any(prefix_bound_values(references, n) for n in aliases):
+            # Bound by the population, or else slot 0 of its class's own
+            # original vtable (by decorated name, from the original's RTTI).
+            if not any(prefix_bound_values(references, n) for n in aliases) and \
+                    self.rtti_binding(names[0]) is None:
                 return False
         if not hasattr(self, 'kept_elsewhere_omitted'):
             self.kept_elsewhere_omitted = []
@@ -701,10 +795,13 @@ class Audit:
                     require(not section['flags'] & 0xa00000a0 and section['flags'] & 0x42000040 == 0x42000040, 'Invalid debug metadata flags')
                     continue
                 if section['flags'] & 0xc0:
+                    names = [s['name'] for s in coff.symbols.values() if s['section'] == index][:4]
+                    # The condition runs first, so a vtable's mismatch note exists.
                     require(self.original_duplicate(coff, index, section, candidates),
-                            'Unsupported allocatable data section %s #%d in %s (%s)' % (
-                                section['name'], index, obj_path,
-                                [s['name'] for s in coff.symbols.values() if s['section'] == index][:4]))
+                            'Unsupported allocatable data section %s #%d in %s (%s)%s' % (
+                                section['name'], index, obj_path, names,
+                                ''.join(': ' + m for m in
+                                        [getattr(self, 'vtable_mismatches', {}).get(n) for n in names] if m)))
                     continue
                 require(section['flags'] & 0x20, 'Unsupported nonmetadata section classification')
                 if section['flags'] & 0x20:

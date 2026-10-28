@@ -351,6 +351,27 @@ file and leaves the catalog untouched. The full build remains the final gate;
 the batch still lands alone. New regions in the same round go through
 `accept_sources.py` afterwards as usual.
 
+## Plan bounds and template-instance bindings
+
+A plan item that replaces an accepted region ending in switch tables and
+states no `body_bytes` takes that region's recorded extent (code plus tables,
+the evidence it was accepted with); the table length recomputed from the
+original bytes must equal the recorded `switch_data_bytes`. Copied populations
+no longer restate it by hand. A composite pass is frozen: rerunning a plan
+name whose `composite-NAME` pass holds other rows refuses (rename the plan).
+
+Each primary vtable of the original carries its class's decorated name in its
+RTTI type descriptor, so every template instance has its own original copy:
+`DynamicVectorClass<T *>`, `DynamicVectorClass<T const *>` and
+`VectorClass<T *>` are three vtables with distinct slot functions. When a
+population leaves an emitted vtable (`??_7X6B@`) or its deleting destructor
+(`??_E`/`??_G`, slot 0 unless COM-derived) unbound, the audit binds it there
+(`Audit.rtti_binding`) and still compares every slot. A plan or `@ref`
+binding of a vtable name that the RTTI places elsewhere is printed as a
+warning (a source may model a `T const *` instance as `T *`), and a vtable
+that differs from the original names the RTTI class at the bound address and
+each differing slot.
+
 ## Iteration tools
 
 All write only to ignored `build/` directories and never touch the canonical
