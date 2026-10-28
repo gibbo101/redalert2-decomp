@@ -50,6 +50,9 @@ public:
     virtual int Kind_Of() const;                                // 0x004C1F20
     virtual int Size_Of() const;                                // 0x004C1F30
     virtual void Compute_CRC(WWCRCEngine &crc) const;             // 0x004C1F80; body unrecovered
+    virtual Cell unknown_slot24() const;                        // slot 24 (+0x60): the cell the object stands on; body unrecovered
+    // Marks (+0x140 bit 22) the cells of every listed fogged object (0x004C1AE0).
+    static void unknown_4c1ae0();
 
     static DynamicVectorClass<FoggedObjectClass *> Array;       // 0x00865E90
     static IndexClass<int, FoggedObjectClass *> Index; // original865E40; static-member ownership hypothesis

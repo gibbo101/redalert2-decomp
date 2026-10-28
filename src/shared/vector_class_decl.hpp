@@ -61,6 +61,7 @@ public:
 
     bool Add(T const &object);
     bool Add_Head(T const &object);
+    bool Insert_After(T const &object, int index);   // inserts after the element at index (0x004F7270 for BaseNodeClass)
     bool Add_After(T const &object, T const &after);
     bool Delete(T const &object);
     bool Delete(int index);

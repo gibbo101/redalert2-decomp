@@ -488,6 +488,30 @@ bool DynamicVectorClass<T>::Add_After(T const &object, T const &after)
     return true;
 }
 #endif
+#ifdef VECTOR_IMPLEMENT_DYNAMIC_INSERT_AFTER
+// Inserts `object` after the element at `index`, shifting the later active
+// elements up; grows like Add. Name is a hypothesis; the out-of-line copy
+// for BaseNodeClass is 0x004F7270.
+template <class T>
+bool DynamicVectorClass<T>::Insert_After(T const &object, int index)
+{
+    if (ActiveCount >= VectorMax) {
+        if ((IsAllocated || !VectorMax) && GrowthStep > 0) {
+            if (!Resize(VectorMax + GrowthStep)) {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+    if (index < ActiveCount - 1) {
+        memmove(&Vector[index + 2], &Vector[index + 1], (ActiveCount - (index + 1)) * sizeof(T));
+    }
+    Vector[index + 1] = object;
+    ActiveCount++;
+    return true;
+}
+#endif
 #ifdef VECTOR_IMPLEMENT_DYNAMIC_ADD_HEAD
 // Inserts `object` at index 0, shifting the active elements up; grows like
 // Add.
