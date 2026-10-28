@@ -1,9 +1,9 @@
-// void ProgressScreenClass::Load_Shape(char const *filename, void const *image, int unknown) (0x0061EF40)
+// void ProgressScreenClass::Load_Shape(char const *filename, void const *image, ConvertClass *drawer) (0x0061EF40)
 // Replaces the background shape; draws the image when there is one.
 #include "shared/progress_screen.hpp"
 // @ref ?Unknown_00515A80@@YIXPBX_N@Z=00515a80
 
-void ProgressScreenClass::Load_Shape(char const *filename, void const *image, int unknown)
+void ProgressScreenClass::Load_Shape(char const *filename, void const *image, ConvertClass *drawer)
 {
     if (filename != 0) {
         if (Shape != 0) {
@@ -15,7 +15,7 @@ void ProgressScreenClass::Load_Shape(char const *filename, void const *image, in
                 Image = image;
                 Unknown_00515A80(image, false);
             }
-            unknown_74 = unknown;
+            Drawer = drawer;
         }
     }
 }

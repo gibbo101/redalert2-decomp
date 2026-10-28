@@ -224,8 +224,11 @@ void __fastcall Unknown_006ef5c0(CCINIClass &ini);          // 0x006EF5C0 ([Tube
 void Unknown_006e9fe0();                                    // 0x006E9FE0 (walks the TiberiumClass list)
 void __fastcall Unknown_006e9520();                         // 0x006E9520 (walks the TiberiumClass list)
 void Unknown_006ecf10();                                    // 0x006ECF10 (walks the objects at 0x00AC0CD8)
-// A lazily made object (0x00A6E7C4; 0x00535910 makes it, 0x00535BF0 runs it).
+// A lazily made object (0x00A6E7C4; 0x00535910 makes it, 0x00535BF0 runs it;
+// vtable 0x007A549C with one slot). The progress screen sends it its percent
+// before and after each change (message 0x11AE).
 struct Unknown535910 {
+    virtual bool Message_00536ea0(int message, void *data);      // slot 0
     void Unknown_00535BF0();
 };
 Unknown535910 *Unknown_00535910();

@@ -11,7 +11,7 @@ ColorScheme *ProgressScreenClass::Text_Color_Scheme()
     if ((unknown_game_mode_a3d298 == 3 || unknown_game_mode_a3d298 == 4) && unknown_players_a3fa7c[0]->Team == -1) {
         return unknown_color_scheme_663d30("LightGrey", 1);
     }
-    if (unknown_80 == 0) {
+    if (Side == 0) {
         return unknown_color_scheme_663d30("AlliedLoad", 1);
     }
     return unknown_color_scheme_663d30("SovietLoad", 1);
