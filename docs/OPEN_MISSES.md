@@ -133,3 +133,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   misses/): one shared blocker, the char-index clamp's first test is `add eax,-0x21; test eax,eax; ja` (unsigned)
   where every draft gives `jg`; unsigned casts break the reuse of `ch - '!'`. Untried: OEM output char types, an
   inline helper taking unsigned, option variants. Windows near-miss work.
+- IPXGlobalConnClass slot 17 0x524870 98.50 (IPX135 drafts/IPXGlobalConnClass_unknown_slot17_00524870.miss.cpp
+  with drafts/ipx_global_conn.slot17.hpp): really `void unknown_slot17(unsigned long age)` (rename spec needed),
+  one swapped load pair at +0x95 (original reads rec->ReceiveTime before age). Windows near-miss work. The
+  `memset(&header->unknown_08, ...)` rule that fixed Send_To may lift IPXConnClass::Send_To 0x523D90 (52.7).
