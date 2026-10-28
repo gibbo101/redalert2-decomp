@@ -506,7 +506,7 @@ public:
     virtual WeaponStruct *unknown_slot231(int index);      // slot 231 (+0x39C) 0x006D8540
     virtual bool unknown_slot232();                                 // slot 232 (+0x3A0) 0x0041B3F0 (kept copy elsewhere)
     virtual void unknown_slot233();                                 // slot 233 (+0x3A4) 0x006CD8B0
-    virtual int unknown_slot234(int arg1);                          // slot 234 (+0x3A8) 0x006C89C0
+    virtual void unknown_slot234(int arg1);                         // slot 234 (+0x3A8) 0x006C89C0
     virtual int unknown_slot235();                                  // slot 235 (+0x3AC) 0x006C83F0
     virtual int unknown_slot236();                                  // slot 236 (+0x3B0) 0x006C86F0
     virtual int unknown_slot237();                                  // slot 237 (+0x3B4) 0x006D6230

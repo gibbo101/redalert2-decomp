@@ -17,7 +17,7 @@
 // @ref ?unknown_slot52@BuildingClass@@UAE_NXZ=00442060
 // @ref ?unknown_44cfd0@BuildingClass@@QAEXH@Z=0044cfd0
 // @ref ?Free_Buildup@BuildingTypeClass@@QAEXXZ=0045e920
-// @ref ?unknown_slot234@BuildingClass@@UAEHH@Z=0044fb50
+// @ref ?unknown_slot234@BuildingClass@@UAEXH@Z=0044fb50
 // @ref ?unknown_func_491d10@UnknownHouseCounter@@QAEHH@Z=00491d10
 // @ref ?unknown_func_4f4b20@HouseClass@@QAEXXZ=004f4b20
 // @ref ?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z=004ea800

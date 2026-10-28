@@ -230,7 +230,7 @@ public:
     virtual bool unknown_slot222(HouseClass *house, int arg2);                  // slot 222 0x00444660
     virtual WeaponStruct *unknown_slot231(int index);                 // slot 231 0x0044D980
     virtual bool unknown_slot232();                                   // slot 232 0x0044D9D0
-    virtual int unknown_slot234(int arg1);                            // slot 234 0x0044FB50
+    virtual void unknown_slot234(int arg1);                           // slot 234 0x0044FB50
     virtual int unknown_slot254(int arg1);                            // slot 254 0x004521B0
     virtual void unknown_slot260(AbstractClass *target, int arg2);     // slot 260 0x00450F00
     virtual bool unknown_slot261(bool arg1, bool arg2);     // slot 261 0x004490B0
