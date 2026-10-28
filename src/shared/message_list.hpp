@@ -79,6 +79,27 @@ public:
     UnknownMessageNode *Add_Edit(int color, unsigned style, unsigned short const *text, char cursor, int width);
     // Closes the edit line and gives its row back to the list (0x005B5580).
     void Remove_Edit();
+    // Puts the messages one under the other from the top of the list, below the edit line when it is open
+    // (an inline helper with no out-of-line copy; name hypothesis; Add_Edit, Remove_Edit).
+    void Restack_Messages()
+    {
+        int y;
+        if (IsEdit) {
+            y = Height + Y;
+        } else {
+            y = Y;
+        }
+        UnknownMessageNode *node = First;
+        while (node != 0) {
+            node->Y = y;
+            node = node->Next();
+            y += Height;
+        }
+    }
+    // Edit-line keyboard and mouse input: input is the key number (cleared when used), key the character
+    // when the caller has it (0: from the keyboard). 0: not used, 1: a character went in, 2: changed or closed,
+    // 3: sent (Return), 4: a character went in and the start of the line went to OverflowBuf (0x005B56F0).
+    int Input(int &input, unsigned short key);
     // The number of messages, with the edit line when it is a row of the list (0x005B5C30).
     int Num_Messages();
     // Sets the pixel width of the list (TextWidth is 8 less) and of every message and the edit line (0x005B5C60).

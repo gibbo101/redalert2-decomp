@@ -59,18 +59,7 @@ UnknownMessageNode *MessageListClass::Add_Edit(int color, unsigned style, unsign
         IsEdit = false;
     }
     if (AdjustEdit) {
-        int y;
-        if (IsEdit) {
-            y = Height + Y;
-        } else {
-            y = Y;
-        }
-        UnknownMessageNode *node = First;
-        while (node != 0) {
-            node->Y = y;
-            node = node->Next();
-            y += Height;
-        }
+        Restack_Messages();
         MaxMessages--;
     }
     return EditLabel;
