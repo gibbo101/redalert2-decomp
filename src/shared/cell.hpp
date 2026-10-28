@@ -78,12 +78,6 @@ public:
 };
 UnknownCellLookup *__fastcall Unknown_007101B0(Cell const &cell);
 
-// The centre of a cell at ground level (hypothesis: Westwood's Cell_Coord;
-// the cell is taken by value).
-inline CoordStruct Cell_Center(Cell cell)
-{
-    return CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0);
-}
 
 // The map's cell table (MapClass +0x134 VectorClass<CellClass *>; this is
 // its element storage pointer at 0x00832618, x + y * 512).

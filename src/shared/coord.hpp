@@ -99,6 +99,13 @@ public:
     short Y;
 };
 
+// The centre of a cell at ground level (hypothesis: Westwood's Cell_Coord;
+// the cell is taken by value).
+inline CoordStruct Cell_Center(Cell cell)
+{
+    return CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0);
+}
+
 // The cell at X, Y (Westwood's XY_Cell; the original passes int
 // coordinates, narrowed only when stored).
 inline Cell XY_Cell(int x, int y)

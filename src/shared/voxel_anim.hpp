@@ -36,6 +36,7 @@ extern "C" GUID const CLSID_VoxelAnimClass;   // 0x007A1BC0
 class VoxelAnimClass : public ObjectClass {
 public:
     VoxelAnimClass();                                                   // 0x0070CD20
+    VoxelAnimClass(VoxelAnimTypeClass *type, CoordStruct const &coord, HouseClass *house);   // 0x0070C800
     VoxelAnimClass(NoInitClass const &noinit) : ObjectClass(noinit), Bounce(noinit) {}   // inline (Load)
     virtual ~VoxelAnimClass();                                          // 0x0070CE40
 

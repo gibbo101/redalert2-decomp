@@ -45,6 +45,11 @@ public:
     bool unknown_func_6af980(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006AF980
     // BuildingClass::unknown_452f50(0) on the first living, active building whose tag has the trigger attached; true when found.
     bool unknown_func_6b2fa0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2FA0
+    bool unknown_look_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1B00
+    bool unknown_func_6b25e0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B25E0
+    bool unknown_func_6b1710(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1710
+    bool unknown_func_6b19a0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B19A0
+    bool unknown_func_6b1270(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1270
     bool unknown_func_6b1f90(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1F90
     // Springs the triggers of the type at +0x50 (forced, no object); always true (name hypothesis).
     bool unknown_func_6b1ec0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1EC0
