@@ -930,6 +930,7 @@ void Audio_Events_Update();                                                     
 void Audio_Events_Shutdown();                                                                // 0x00403F80
 int __fastcall Audio_Events_Init(AudioDevice *device, AudioBag *bag);                         // 0x00403EB0
 AudioSource *__fastcall Audio_Event_Next_Sample(AudioEvent *event);                         // 0x00404790
+AudioSource *__fastcall Audio_Event_Start_Pass(AudioEvent *event);                          // 0x004046E0
 AudioSource *__fastcall Audio_Event_Start_Samples(AudioEvent *event);                       // 0x004046E0
 
 AudioChannel *__fastcall Audio_Event_Start_Channel(int priority, unsigned int flags);        // 0x00405B60

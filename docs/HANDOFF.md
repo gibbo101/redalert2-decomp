@@ -9,9 +9,9 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Until the Nov 1 usage reset, Mac lanes run mostly on Sonnet (user
-direction 2026-10-28: use the week's capacity, Sonnet first): Seed97 (100-1500 B below 0x480000), Seed98
-(0x480000-0x4FFFFF), Seed103 (0x500000-0x67FFFF), Seed101 (0x680000 up), Tools102 (plans taking over
-vtable/data rows owned by other populations), all Sonnet, Sonnet lanes tend to stop after a round: resume them with SendMessage. Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
+direction 2026-10-28: use the week's capacity, Sonnet first): Seed110 (100-1500 B below 0x500000),
+Index109 (IndexClass<int, T> template and the FoggedObjectClass functions it blocks), Coop108 (Opus:
+MPCooperative slots and 0x5A3760, register-allocation plateaus), Seed107 (0x680000 up). Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
