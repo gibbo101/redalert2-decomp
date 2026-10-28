@@ -4,10 +4,6 @@
 // entries (4 and 8) take +0x294.
 #include "shared/savegame_info.hpp"
 // @ref _IID_IPropertySetStorage=007afd50
-// @ref ?Write_Stream_String@SavegameInformation@@QAEJPAUIStorage@@HPBD@Z=0065a890
-// @ref ?Write_Stream_Wide@SavegameInformation@@QAEJPAUIStorage@@HPBG@Z=0065a9d0
-// @ref ?Write_Property_String@SavegameInformation@@QAEJPAUIPropertySetStorage@@HPBD@Z=0065aad0
-// @ref ?Write_Property_Wide@SavegameInformation@@QAEJPAUIPropertySetStorage@@HPBG@Z=0065abf0
 #include "shared/com_ptr.hpp"
 
 
