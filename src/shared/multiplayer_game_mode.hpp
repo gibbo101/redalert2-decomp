@@ -21,6 +21,7 @@
 
 class CCINIClass;
 class CoopCampaignClass;
+class HouseClass;
 class UnknownDescriptionList_00490E00;
 class MultiMission;
 class MPlayerScoreType;
@@ -114,8 +115,10 @@ public:
     virtual bool unknown_slot40() { return true; }               // 40 0x005A24F0
     virtual void unknown_slot41(DynamicVectorClass<MultiplayerTeam *> *teams);                               // 41 0x005B7720
     virtual Cell unknown_slot42(int house, DynamicVectorClass<Cell> &cells, bool *taken); // 42 0x005B7920
-    virtual void unknown_slot43();                                 // 43 0x005B7F90
-    virtual void unknown_slot44();                                 // 44 0x005B8060
+    // Slots 43 and 44 (ret 8): place a house's starting objects (0x005B7CE0 calls both with the house and its
+    // remaining starting money); false when one cannot be placed.
+    virtual bool unknown_slot43(HouseClass *house, int *money);    // 43 0x005B7F90 (the base unit at BaseCenter)
+    virtual bool unknown_slot44(HouseClass *house, int *money);    // 44 0x005B8060
 
     MultiplayerTeam *unknown_find_team_5b76b0(int number);   // 0x005B76B0
     void unknown_clear_teams_5b77e0();                       // 0x005B77E0
@@ -202,7 +205,7 @@ public:
     virtual bool unknown_slot26();                                 // 26 0x005AB760
     virtual bool unknown_slot27(bool official);                    // 27 0x005AB770
     virtual void unknown_slot41(DynamicVectorClass<MultiplayerTeam *> *teams);                               // 41 0x005AB970
-    virtual void unknown_slot43();                                 // 43 0x005ABA80
+    virtual bool unknown_slot43(HouseClass *house, int *money);    // 43 0x005ABA80
 };
 
 // vtable 0x007A6914 (scalar deleting destructor 0x005A71C0)
@@ -236,7 +239,7 @@ public:
     virtual bool unknown_slot4();                                  // 4 0x005AC380
     virtual bool unknown_slot5(WideString *message);                                // 5 0x005AC390
     virtual bool unknown_slot6();                                  // 6 0x005AC3C0
-    virtual void unknown_slot43();                                 // 43 0x005AC3D0
+    virtual bool unknown_slot43(HouseClass *house, int *money);    // 43 0x005AC3D0
 };
 
 // vtable 0x007A678C (scalar deleting destructor 0x005A62B0)
