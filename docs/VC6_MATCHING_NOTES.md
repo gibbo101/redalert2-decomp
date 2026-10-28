@@ -29,6 +29,17 @@ starting points for the next class, not guarantees.
 - `if (c) { A } else { B }` lays out A first. When the original jumps far
   for the common case, the source tested the opposite condition first
   (`if (UseBuffer) { ... } return RawFileClass::Seek(...)`).
+- A loop whose condition contains a ternary (directly or through an inline
+  helper) is rotated: VC6 copies the condition to the bottom. An original that
+  re-evaluates such a condition at the top with a `jmp` back was
+  `while (true) { if (!cond) break; ... }`; `for`, `while (cond)` and
+  `for (;; i++)` with an if-break all rotate (SidebarClass::Draw_It 0x0067CF80
+  with the inline ternary StripClass::Max_Visible_Rows; the out-of-line
+  0x006820A0 is an if/else).
+- Two branch blocks ending in the same virtual call, with its vptr temporary in
+  the same register where the eax/edx source-order rotation would alternate,
+  were one shared trailing statement that VC6 tail-duplicated into each branch,
+  not two calls (AircraftClass Enter 0x004193D0).
 
 ## Inlining and translation units
 

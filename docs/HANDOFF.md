@@ -9,8 +9,8 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Units60 (progress screen, SaveLoad), Air63 (AircraftClass, then
-InfantryClass), Close64 (near misses scoring 96 or more from finished lanes; queue in
+has 16 GB): Units60 (progress screen, SaveLoad, WinModemClass), Inf65 (inline virtual COMDATs that accepted
+units emit but no region binds, then InfantryClass; Air63's NOTES and tools), Close64 (near misses scoring 96 or more from finished lanes; queue in
 `build/class-work/Close64/queue.md`). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
