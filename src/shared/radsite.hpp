@@ -14,13 +14,8 @@
 
 #include "shared/coord.hpp"
 
-// The light source a site owns (+0x24); only what RadSite uses.
-class LightSourceClass : public AbstractClass {
-public:
-    void Change(int intensity, int red, int green, int blue, int unknown5);   // 0x00537580 (hypothesis)
-
-    int Intensity;      // +0x24
-};
+// The light source a site owns (+0x24): shared/light_source.hpp.
+#include "shared/light_source.hpp"
 
 // The map's cell lookup and the one cell call RadSite makes.
 class RadSiteClass;

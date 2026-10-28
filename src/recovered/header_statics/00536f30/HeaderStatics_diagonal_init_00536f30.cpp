@@ -9,11 +9,8 @@
 #endif
 #include "shared/vector_class.hpp"
 
-// Only the members this unit defines; the layout is not recovered here.
-class LightSourceClass {
-public:
-    class PendingCellClass;
-};
+#include "shared/light_source.hpp"
+
 class LightSourceClass::PendingCellClass {
 public:
     static DynamicVectorClass<PendingCellClass *> Array;   // 0x00A6E848
