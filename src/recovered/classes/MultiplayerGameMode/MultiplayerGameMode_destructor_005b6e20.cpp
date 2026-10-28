@@ -1,5 +1,6 @@
 // MultiplayerGameMode::~MultiplayerGameMode() -- 0x005B6E20
-// Deletes the teams (virtually) and the INI object, then the members.
+// Deletes the teams (virtually, unknown_clear_teams_5b77e0 expanded) and the
+// INI object, then the members.
 // @ref ??1WideString@@QAE@XZ=0076fa50
 // @ref ??1Wstring@@QAE@XZ=0076d9e0
 // @ref ??_7MultiplayerGameMode@@6B@=007a71b8
@@ -7,9 +8,6 @@
 
 MultiplayerGameMode::~MultiplayerGameMode()
 {
-    for (int index = 0; index < Teams.Count(); index++) {
-        delete Teams[index];
-    }
-    Teams.Clear();
+    unknown_clear_teams_5b77e0();
     delete unknown_ini_38;
 }

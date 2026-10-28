@@ -4,6 +4,11 @@
 #ifndef VECTOR_IMPLEMENT_ALL
 #define VECTOR_IMPLEMENT_ALL
 #endif
+// The unit calls the List<INIClass::INISection *> (0x00490FF0) and
+// IndexClass<int, INIClass::INISection *> (0x004910C0) constructors out of
+// line (the CCINIClass construction in the constructor 0x005B6CD0).
+#define LIST_DECLARE_CONSTRUCTOR
+#define INDEX_DECLARE_CONSTRUCTOR
 #include "shared/multiplayer_game_mode.hpp"
 #include "shared/ccini_class.hpp"
 // @ref ??_7?$DynamicVectorClass@PAVMultiplayerGameMode@@@@6B@=007a7178
