@@ -4,8 +4,8 @@
     "id": "population-2098",
     "inventory_sha256": "8634bf94660f5457333bccd4335f01c93fa2fb8c14562f5724b6f90e492625b3",
     "gaps_sha256": "ea19f1b5be29359a9f4da3df804044409fd70a090fbfab3a8921ae49b537af26",
-    "historical_population_sha256": "bfa52bb3637fcd67e1812df322c73aaf58faea66abf8088906e81df653d2dfb7",
-    "historical_acceptance_sha256": "e447f7ce40cf4ac1d08376900d726b90a108e8849c0ccbc7048191f9b72aa7d7"
+    "historical_population_sha256": "66bb708ce138c41de711b5bcceed185a60313970b714e93e158d5acd723e547d",
+    "historical_acceptance_sha256": "c95236b523184ffef3a2c4f6d2b844c51beab063537d3f7f81273af160ebbffc"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3400,7 +3400,7 @@
     "?Resize@?$DynamicVectorClass@UScoutStruct@@@@UAE_NHPBUScoutStruct@@@Z": 5208128,
     "?unknown_func_4f30d0@HouseClass@@QAEHXZ": 5189840,
     "??0WaypointPathClass@@QAE@XZ": 7490320,
-    "?unknown_func_4f52b0@HouseClass@@QAEHXZ": 5198512,
+    "?unknown_func_4f52b0@HouseClass@@QAE_NXZ": 5198512,
     "?unknown_func_4f5880@HouseClass@@QAEXXZ": 5200000,
     "__imp__ReadFile": 7971088,
     "__imp__GetFileSize": 7971092,

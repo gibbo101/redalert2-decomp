@@ -19,9 +19,10 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - The owner session restarts from this file when its context passes about 200K tokens.
 
 Running Mac lanes (Opus, class_inventory picks): Obj126 ObjectClass 0x5D2E70/0x5D3060/0x5D31C0 (inherited by
-8+ classes); Techno127 TechnoClass slot 43 0x6C1830; Iso128 IsometricTileClass slot 71 0x527A80; Map129 MapClass
-0x549AE0/0x559D80. Register-tie near misses (Voc_Static_Save, Find_Disk_Drive, 0x6AAFD0, 0x5B8490) go to the
-Windows lead. Closed 2026-10-28 (resume folders `build/class-work/<Lane>/`): Seed118 (callee-pops
+8+ classes); Iso128 IsometricTileClass slot 71 0x527A80; Tip130 CCToolTip 0x46DFC0/0x46E250; Para131
+ParasiteClass 0x606F50/0x607200. Map129 landed 0x549AE0/0x559D80; Techno127 0x6C1830 98.30 is a scheduling-tie
+miss. Register/scheduling-tie near misses (Voc_Static_Save, Find_Disk_Drive, 0x6AAFD0, 0x5B8490, 0x6C1830) go
+to the Windows lead. Lanes use tools/original_target/lane_tools.py. Closed 2026-10-28 (resume folders `build/class-work/<Lane>/`): Seed118 (callee-pops
 `lea` rule; Speech_Load, Voc_Static_Load), Seed119 (Speech_Update), Coop120 (MessageListClass::Input), Cd121
 (0x715230), Cd124 (0x715300), Coop122 (fill combo 0x5B70B0, fill list 0x5B71E0; 0x5B8490 open), Seed123 and
 Seed125 (zero bytes; Tactical family parked; 0x6AAFD0 is a register-tie near miss for Windows). Their misses
