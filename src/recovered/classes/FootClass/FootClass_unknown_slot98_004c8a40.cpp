@@ -6,7 +6,7 @@
 #include "shared/house.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
-// @ref ?Unknown_00715B40@@YIXPBDHH@Z=00715b40
+// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
 // @ref ?Unknown_00713DB0@@YIHHMHH@Z=00713db0
 // @ref ?Refund_Money@HouseClass@@QAEXH@Z=004e5440
 // @ref ??_C@_0N@GEGF@EVA_UnitSold?$AA@=007cf9c4

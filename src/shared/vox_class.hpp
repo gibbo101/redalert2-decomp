@@ -11,4 +11,17 @@ public:
     static void __fastcall Set_Volume(int volume);         // 0x00715EF0 (at most 255; OptionsClass voice volume)
 };
 
+// Speech by name (0x00715B40; hypothesis: VoxClass::Speak; returns what the
+// play call 0x007158C0 returns). Was void in shared/foot.hpp.
+int __fastcall Unknown_00715B40(char const *name, int arg2, int arg3);
+// Stops the voice (EVA) speech (0x00715DE0; argument meaning unknown) and
+// whether a voice is playing (0x00715E20). Names are hypotheses.
+void __fastcall Speech_Stop(bool unknown);
+bool Speech_Is_Playing();
+// Speech queue helpers (0x00714410 releases the queued entries of the list at
+// 0x00AD07D0; 0x007160D0 calls 0x00407E60 on the object at 0x00AD0968; Do_Restart
+// and Clear_Scenario call them); meanings not recovered.
+void Unknown_00714410();
+void __fastcall Unknown_007160D0();
+
 #endif

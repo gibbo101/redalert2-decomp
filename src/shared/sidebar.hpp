@@ -10,6 +10,7 @@
 #ifndef RA2_SHARED_SIDEBAR_HPP
 #define RA2_SHARED_SIDEBAR_HPP
 #include "shared/unknown_globals.hpp"
+#include "shared/vox_class.hpp"
 #ifdef RA2_SHARED_MAP_VIEW_HPP
 #error "shared/map_view.hpp declares light screen layers: include the full layer headers before it"
 #endif
@@ -84,8 +85,7 @@ extern "C" unsigned int __cdecl wcslen(wchar_t const *string);     // 0x00783605
 
 // Game options bits (0x00A3F600; bit 1 restricts the sidebar toggle).
 extern unsigned char unknown_flags_a3f600;
-// Called when the sidebar is hidden (0x005A09E0).
-void Unknown_005A09E0();
+// Unknown_005A09E0 (called when the sidebar is hidden) is in shared/unknown_globals.hpp.
 
 // The shape drawer (0x0049EEA0; shared/palette.hpp's declaration, which
 // this unit cannot include).
@@ -112,8 +112,7 @@ extern int unknown_abcd68;
 extern int unknown_abcd6c;
 // Set once the new-construction speech is suppressed (0x00A40774).
 // A redraw request flag (0x008373C3).
-// Speech by name (0x00715B40; hypothesis: VoxClass::Speak).
-int __fastcall Unknown_00715B40(char const *name, int arg2, int arg3);
+// Speech by name: Unknown_00715B40 is in shared/vox_class.hpp.
 // A factory: its completion (0x004B98F0).
 class ObjectClass;
 class UnknownFactory {

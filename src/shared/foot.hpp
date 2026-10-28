@@ -28,6 +28,7 @@
 #define RA2_SHARED_FOOT_HPP
 
 #include "shared/unknown_globals.hpp"
+#include "shared/vox_class.hpp"
 #include "shared/techno.hpp"
 #include "shared/com_ptr.hpp"
 #include "shared/ilocomotion.hpp"
@@ -56,9 +57,8 @@ UnknownCellObject710160 *__fastcall Unknown_00710160(Cell const &cell);  // 0x00
 // The tunnels FootClass +0x574 indexes (TubeClass, 0x008661C8).
 #include "shared/tube.hpp"
 
-// An announcement by name ("EVA_UnitSold", "EVA_UnitLost"; hypothesis: the
-// EVA speech queue, VoxClass::Speak).
-void __fastcall Unknown_00715B40(char const *name, int arg2, int arg3);    // 0x00715B40
+// Announcements by name ("EVA_UnitSold", "EVA_UnitLost") go through
+// Unknown_00715B40 (shared/vox_class.hpp).
 // Raises an event of a kind at a cell (FootClass slot 216 uses kind 7;
 // hypothesis: a radar event).
 bool __fastcall Unknown_0063B5B0(int kind, Cell cell);              // 0x0063B5B0

@@ -941,6 +941,9 @@ void __fastcall Audio_Event_Pause(AudioEvent *event);                           
 void __fastcall Audio_Event_Resume(AudioEvent *event);                                      // 0x00405440
 void __fastcall Audio_Event_Finish(AudioEvent *event);                                      // 0x00405590
 AudioEvent *__fastcall Audio_Event_Create(AudioEventType *type);                          // 0x00405170
+void __fastcall Audio_Level_Fade_To_Zero(AudioLevel *level);                               // 0x00406FA0 ramps a level to 0
+void __fastcall Audio_Wait_Drain(AudioLevel *level);                                       // 0x00406FE0 waits until it reaches its target (or MaxElapsed passes)
+void Audio_Stop();                                                                          // 0x00406DC0 (stops the main device channels, clears the events)
 void Audio_Events_Clear();                                                                  // 0x00404E50
 void Audio_Events_Pause();                                                                  // 0x00404FB0
 void Audio_Events_Resume();                                                                 // 0x00405020

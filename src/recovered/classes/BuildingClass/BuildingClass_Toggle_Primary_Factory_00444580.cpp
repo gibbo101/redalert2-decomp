@@ -4,7 +4,7 @@
 #include "shared/foot.hpp"
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
 // @ref ??_C@_0BM@POLG@EVA_PrimaryBuildingSelected?$AA@=007cf8a4
-// @ref ?Unknown_00715B40@@YIXPBDHH@Z=00715b40
+// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
 bool BuildingClass::unknown_slot287()
 {
     if(Type->Factory) {

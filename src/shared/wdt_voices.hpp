@@ -12,6 +12,7 @@
 
 #include "shared/world_domination_tour.hpp"
 #include "shared/random.hpp"
+#include "shared/vox_class.hpp"
 
 struct AudioDevice;
 struct AudioStreamPlayer;
@@ -19,10 +20,6 @@ AudioDevice *Audio_Get_Device();                                    // 0x00406F4
 void __fastcall Audio_Stream_Destroy(AudioStreamPlayer *stream);    // 0x004079C0
 void __fastcall Unknown_007158C0(int voice, int arg2, int arg3);   // 0x007158C0 (plays a voice)
 int __fastcall Unknown_00716640(char const *name);                 // 0x00716640 (voice index by name)
-// Stops the voice (EVA) speech (0x00715DE0; argument meaning unknown) and
-// whether a voice is playing (0x00715E20). Names are hypotheses.
-void __fastcall Speech_Stop(bool unknown);
-bool Speech_Is_Playing();
 extern Random2Class unknown_random_839218;                          // 0x00839218
 // The faction name of a faction number (0x007685A0; function statics, the
 // counterpart of Faction_Code 0x007686D0). Name is a hypothesis.

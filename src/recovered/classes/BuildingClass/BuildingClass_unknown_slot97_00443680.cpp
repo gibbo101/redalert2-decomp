@@ -9,11 +9,9 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
 // @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
-// @ref ?Unknown_00715B40@@YIXPBDHH@Z=00715b40
+// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
 // @ref ??_C@_0O@MHGH@EVA_Repairing?$AA@=007cf894
 
-// EVA speech by name (0x00715B40; hypothesis: VoxClass::Speak).
-void __fastcall Unknown_00715B40(char const *name, int arg2, int arg3);
 
 void BuildingClass::unknown_slot97(int mode)
 {

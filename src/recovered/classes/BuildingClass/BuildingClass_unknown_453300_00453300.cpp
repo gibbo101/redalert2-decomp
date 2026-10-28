@@ -16,7 +16,7 @@ extern "C" char const unknown_eva_structure_garrisoned_007cfbfc[];
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
 // @ref ?Unknown_00713DB0@@YIHHMHH@Z=00713db0
 // @ref ?Unknown_0063B5B0@@YI_NHVCell@@@Z=0063b5b0
-// @ref ?Unknown_00715B40@@YIXPBDHH@Z=00715b40
+// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
 // @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
 // @ref ?Houses@@3V?$DynamicVectorClass@PAVHouseClass@@@@A=00a32298
 void BuildingClass::unknown_453300()
