@@ -30,7 +30,10 @@ public:
 // A separate0x50-byte map-generation grid record; formal original name unknown.
 struct UnknownMapGenerationCell {
     ::Cell Position;
-    unsigned char unknown_04[0x34];
+    unsigned char unknown_04[0x1c];
+    double unknown_20; // original585240 initializes,5852C0 compares as x87qword
+    double unknown_28; // same; operational names remain unknown
+    unsigned char unknown_30[8];
     int RegionIndex;
     int unknown_3c;
     int unknown_40;

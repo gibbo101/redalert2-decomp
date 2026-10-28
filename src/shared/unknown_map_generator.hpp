@@ -1,0 +1,36 @@
+// Research layout of the nonpolymorphic owner constructed at00577010.
+// The original name and composition spelling are hypotheses. TypeList fields
+// have original RTTI identities; MapSeedClass occupies the first0x178 bytes.
+#ifndef RA2_UNKNOWN_MAP_GENERATOR_HPP
+#define RA2_UNKNOWN_MAP_GENERATOR_HPP
+#include "shared/type_list.hpp"
+#include "shared/coord.hpp"
+#include "shared/map_seed.hpp"
+class BuildingTypeClass;
+class UnknownMapGenerator {
+public:
+    UnknownMapGenerator(); //00577010 remains parked, no body promoted
+    void Run_Region_Attempts_0057dd60();
+    bool unknown_0057ecf0(Cell const &point,double value,bool flag); //actualcallee, sourceintentqualified
+    bool unknown_0057e100(Cell const &point); //actualcallee, sourceintentqualified
+    int Compute_Water_Cell_Count_0057ec20() const; //name/constness hypotheses
+    void Remap_Region_Tiles_0057e060(int source_index,int target_index,int level,int tile);
+    MapSeedClass SeedOptions;
+    int unknown_178,unknown_17c,unknown_180,unknown_184;
+    TypeList<int> unknown_188,unknown_1a4,unknown_1c0,unknown_1dc,unknown_1f8;
+    TypeList<int> unknown_214,unknown_230,unknown_24c,unknown_268,unknown_284,unknown_2a0;
+    int unknown_2bc,unknown_2c0;
+    TypeList<BuildingTypeClass const *> unknown_2c4,unknown_2e0;
+    int unknown_2fc;
+    bool unknown_300;
+    int unknown_304;
+    unsigned int unknown_308; //32-bit increment counter; signedness unknown, unsignedpreserveswrap
+    int unknown_30c;
+    bool unknown_310;
+};
+typedef char UnknownMapGenerator_dim180[(((unsigned int)&(((UnknownMapGenerator*)0)->unknown_180))==0x180)?1:-1];
+typedef char UnknownMapGenerator_dim184[(((unsigned int)&(((UnknownMapGenerator*)0)->unknown_184))==0x184)?1:-1];
+typedef char UnknownMapGenerator_counter308[(((unsigned int)&(((UnknownMapGenerator*)0)->unknown_308))==0x308)?1:-1];
+typedef char UnknownMapGenerator_level30c[(((unsigned int)&(((UnknownMapGenerator*)0)->unknown_30c))==0x30c)?1:-1];
+typedef char UnknownMapGenerator_size[(sizeof(UnknownMapGenerator)==0x314)?1:-1];
+#endif
