@@ -8,9 +8,9 @@ VoxClass::VoxClass(char const *name)
 {
     Volume = 1.0f;
     strcpy(Name, name);
-    Priority = 1;
     Russian[0] = '\0';
     Allied[0] = '\0';
+    Priority = 1;
     Type = 0;
     State = 2;
     unknown_VoxClass_list_00ad0930.Add(this);
