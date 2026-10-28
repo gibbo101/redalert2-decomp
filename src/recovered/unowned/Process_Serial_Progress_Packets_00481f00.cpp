@@ -1,6 +1,6 @@
 #include "shared/serial_progress.hpp"
 // @ref ?Service@NullModemClass@@=005d0660
-// @ref ?Receive_Serial_Packet_005d0630@NullModemClass@@=005d0630
+// @ref ?Get_Message@NullModemClass@@=005d0630
 // @ref ?Set_Progress_006201c0@ProgressScreenClass@@=006201c0
 // @ref ?serial_manager_00a40a28@@=00a40a28
 // @ref ?ProgressScreen@@=00a769e8
@@ -16,7 +16,7 @@ void __cdecl Process_Serial_Progress_Packets_00481f00()
     if (unknown_game_mode_a3d298 == 2 || (serial_session_flags_00a3fac0 & 1)) {
         serial_manager_00a40a28.Service();
         if (unknown_id_source_a3d290->unknown_22fc) {
-            while (serial_manager_00a40a28.Receive_Serial_Packet_005d0630(packet, &length) > 0) {
+            while (serial_manager_00a40a28.Get_Message(packet, &length) > 0) {
                 // Preserve the original DWORD sender read and overlapping unaligned
                 // signed progress read. Complete packet format remains unknown.
                 if (*(int *)packet == 108 &&

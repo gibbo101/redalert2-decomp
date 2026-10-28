@@ -5,14 +5,14 @@
 // 0x00B25BB0, WinModemClass; Write 0x00734C70). Nothing is sent without an
 // open port. The extra buffer and flags are unused here.
 #include "shared/crt_memory.hpp"
-// @ref ?unknown_serial_port_b25bb0@@3PAVWinModemClass@@A=00b25bb0
+// @ref ?SerialPort@@3PAVWinModemClass@@A=00b25bb0
 // @ref ?Write@WinModemClass@@QAEXPAXH@Z=00734c70
 
 class WinModemClass {
 public:
     void Write(void *buffer, int length);       // 0x00734C70 (name hypothesis)
 };
-extern WinModemClass *unknown_serial_port_b25bb0;
+extern WinModemClass *SerialPort;
 
 // The serial frame header (6 bytes).
 struct SerialHeaderType {
@@ -56,6 +56,6 @@ int NullModemConnClass::Send(char *buf, int buflen, void *extrabuf, int extralen
     sendlen += sizeof(int);
     *(SendBuf + sendlen) = '\r';
     sendlen += 1;
-    unknown_serial_port_b25bb0->Write(SendBuf, sendlen);
+    SerialPort->Write(SendBuf, sendlen);
     return 1;
 }

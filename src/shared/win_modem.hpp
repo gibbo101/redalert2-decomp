@@ -65,4 +65,7 @@ public:
     DCB SerialSettings;                 // +0x206C
 };
 
+// The open serial port (0x00B25BB0; Westwood's SerialPort).
+extern WinModemClass *SerialPort;
+
 #endif
