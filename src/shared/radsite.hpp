@@ -43,6 +43,8 @@ public:
 
     RadSiteClass *Unknown_0047CE40();           // 0x0047CE40 the cell's radiation site, or 0
     void Unknown_0047CE30(RadSiteClass *site);  // 0x0047CE30 sets it
+    void Unknown_0047CEA0(double level);        // 0x0047CEA0 sets its radiation level (hypothesis)
+    void Unknown_0047CEC0(double level);        // 0x0047CEC0 lowers its radiation level (hypothesis)
 };
 
 // The rules (0x00839848) are `Rules`: shared/rules.hpp.
@@ -78,9 +80,13 @@ public:
     int Get_Current_Level() const;                              // 0x006375D0
     void Increase_Radiation(int amount);                        // 0x006375F0
     void Unknown_00637640();                                    // 0x00637640
+    // Takes the remaining effect off the cells (Get_Rad_Level_At scaled by the decay steps left).
     void Unknown_00637C10();                                    // 0x00637C10
+    // One decay step on the cells (AI, every RadLevelDelay frames).
     void Unknown_00637DC0();                                    // 0x00637DC0
     double Get_Rad_Level_At(Cell const &cell);            // 0x006379B0
+    // Gives every cell in the spread square its level (Get_Rad_Level_At).
+    void Unknown_00637A80();                                    // 0x00637A80
     void Update_Light();                                        // 0x00637F50
 
     LightSourceClass *LightSource;                  // +0x24

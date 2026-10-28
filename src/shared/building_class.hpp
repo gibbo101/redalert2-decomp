@@ -58,14 +58,8 @@ inline Point2D Point_Sum(Point2D const &a, Point2D const &b)
 // Cell_At (the cell at a cell position, by value): shared/building_map.hpp
 // (it needs Map; the Building unit includes gscreen.hpp after this header).
 
-// The distance between two coordinates (an inline helper; hypothesis:
-// Westwood's Distance(); slot 281 and Receive_Message expand it).
-double __cdecl unknown_sqrt_4ba410(double value);     // 0x004BA410 (shared/unknown_geometry.hpp)
-inline int Coord_Distance(CoordStruct const &a, CoordStruct const &b)
-{
-    CoordStruct d(a.X - b.X, a.Y - b.Y, a.Z - b.Z);
-    return (int)unknown_sqrt_4ba410((double)d.X * d.X + (double)d.Z * d.Z + (double)d.Y * d.Y);
-}
+// The distance between two coordinates: shared/coord_distance.hpp.
+#include "shared/coord_distance.hpp"
 
 // A foot object's member BuildingClass reads (a view until shared/foot.hpp
 // is installed): +0x494, a destination (cell or object; hypothesis).
