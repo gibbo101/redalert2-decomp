@@ -518,9 +518,9 @@ bool DynamicVectorClass<T>::Insert_After(T const &object, int index)
 template <class T>
 bool DynamicVectorClass<T>::Add_Head(T const &object)
 {
-    if (ActiveCount >= VectorMax) {
+    if (ActiveCount >= Length()) {
         if ((IsAllocated || !VectorMax) && GrowthStep > 0) {
-            if (!Resize(VectorMax + GrowthStep)) {
+            if (!Resize(Length() + GrowthStep)) {
                 return false;
             }
         } else {
