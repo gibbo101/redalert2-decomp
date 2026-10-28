@@ -236,12 +236,6 @@ public:
         static Rect unknown_rect_ab9688;                // 0x00AB9688
     };
 
-    // A strip tab's number and its gadget id (0x006827F0 and the inverse
-    // 0x00682850; tabs 0-6 are ids 0x50B, 0x50E, 0x516, 0x51A, 0x51B, 0x51C,
-    // 0x51D; -1 otherwise).
-    static int __fastcall Unknown_006827F0(int tab);
-    static int __fastcall Unknown_00682850(int id);
-
     SidebarClass();                                     // 0x0067B700
     SidebarClass(NoInitClass const &noinit);            // 0x0067B7B0
 

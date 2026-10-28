@@ -15368,56 +15368,6 @@
       "source_order": 101271
     },
     {
-      "entry": 6825968,
-      "method": "006827f0",
-      "symbol": "?Unknown_006827F0@SidebarClass@@SIHH@Z",
-      "symbol_prefix": "?Unknown_006827F0@SidebarClass@@SIHH@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 85,
-      "body_sha256": "9ff129e48bda2b433c12dc0d3826c099f58f7cb17fb65f577cc289a37b3d7a71",
-      "padding_bytes": 11,
-      "full_extent_bytes": 96,
-      "full_extent_sha256": "8308abd8e4673d9b62278702954d6149d13548ce2255871bebcad1fd408f7784",
-      "relocations": [],
-      "source_sha256": "3def49f40ec38da14585366c0e7e95126b9fa44bb07f6a7b9c8927461cfd610c",
-      "source": "src/recovered/classes/SidebarClass/SidebarClass_Unknown_006827F0_006827f0.cpp",
-      "population": "population-2627",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 101276
-    },
-    {
-      "entry": 6826064,
-      "method": "00682850",
-      "symbol": "?Unknown_00682850@SidebarClass@@SIHH@Z",
-      "symbol_prefix": "?Unknown_00682850@SidebarClass@@SIHH@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 92,
-      "body_sha256": "428fa348076861735cafe252fc43a89448f4122ee67246f33a779fd2a6c2753c",
-      "padding_bytes": 4,
-      "full_extent_bytes": 96,
-      "full_extent_sha256": "c6ca7fa37db58951a9b25531511681bee3cac6092799a6fbc87abbe6a87398d6",
-      "relocations": [],
-      "source_sha256": "15b378c6f969f70bc2c4851ce041eb70264825389fed264b5d2117fd0e9bea4b",
-      "source": "src/recovered/classes/SidebarClass/SidebarClass_Unknown_00682850_00682850.cpp",
-      "population": "population-2627",
-      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 101277
-    },
-    {
       "entry": 6809456,
       "method": "0067e770",
       "symbol": "?Unknown_0067E770@StripClass@SidebarClass@@QAEXXZ",

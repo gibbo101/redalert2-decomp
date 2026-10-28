@@ -1,8 +1,8 @@
-// int __fastcall SidebarClass::Unknown_00682850(int id) (0x00682850)
-// The strip tab (0-6) of a gadget id, or -1 (the inverse of 0x006827F0).
-#include "shared/sidebar.hpp"
+// int __fastcall Skirmish_Player_Index(int id) (0x00682850)
+// The index (player - 1) of a player-type combo box, or -1.
+#include "shared/skirmish.hpp"
 
-int __fastcall SidebarClass::Unknown_00682850(int id)
+int __fastcall Skirmish_Player_Index(int id)
 {
     if (id == 0x50B) {
         return 0;

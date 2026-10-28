@@ -75,6 +75,8 @@ struct UnknownSessionState {
     void Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)
 };
 extern UnknownSessionState unknown_session_a3d298;
+// Saves the session settings (0x00670380; after the skirmish dialog and WOL games).
+void __fastcall Save_Session_00670380(UnknownSessionState *session);
 // The session's game mode object (+0x04, a MultiplayerGameMode; moved from
 // shared/radar.hpp).
 class CCINIClass;

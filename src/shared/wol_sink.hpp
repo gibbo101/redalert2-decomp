@@ -343,7 +343,6 @@ extern int unknown_b2ac58;
 extern int unknown_b2abe8;
 void __fastcall Format_User_Options_0073cff0(char *text);
 wchar_t *__fastcall Unknown_006FA180(char const *text);
-WIN32_IMPORT HWND WINAPI GetDlgItem(HWND dialog, int id);
 
 class PlayerProfile : public ReferenceCounted {
 public:
@@ -367,14 +366,12 @@ struct WolRegistryOptions {
     unsigned int Options;
     bool HasOptions;
 };
-void __fastcall Save_Session_00670380(UnknownSessionState *session);
 int __fastcall Save_Nickname_00745320(char const *nick, char const *password, bool arg, int arg2);
 extern Wstring unknown_password_b2a63c;
 extern int unknown_newnick_result_b2ac08;
 extern bool unknown_7fd374;
 extern void Unknown_0073c120();
 int __fastcall Popup_005c3230(wchar_t const *text, int unknown, void (*callback)(), int flags);
-WIN32_IMPORT BOOL WINAPI EnableWindow(HWND window, BOOL enable);
 
 #include "shared/random.hpp"
 extern "C" void __cdecl srand(unsigned int seed);

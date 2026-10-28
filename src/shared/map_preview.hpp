@@ -18,5 +18,7 @@ public:
 };
 // The loaded scenario's preview (0x00A6FEE4).
 extern UnknownPreview_0061D430 *unknown_preview_a6fee4;
+// The map preview the skirmish and multiplayer setup dialogs draw (0x00A72CE8).
+extern UnknownPreview_0061D430 *unknown_dialog_preview_a72ce8;
 
 #endif
