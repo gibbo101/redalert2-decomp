@@ -1254,56 +1254,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 5993376,
-      "method": "005b73a0",
-      "symbol": "?FUN_005b73a0@seed_005b73a0@@YGEH@Z",
-      "symbol_prefix": "?FUN_005b73a0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 5,
-      "body_sha256": "f4c6d7ae520f88aecb3ea65952e885437fa4a6ce4b5c3439a161d1c5d8e42863",
-      "padding_bytes": 11,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "379d09f1f223152c4910467bafdec001cd9a948b0d5d8362212da7a5dccd9ce1",
-      "relocations": [],
-      "source_sha256": "a3f5059754d5d89a6dfb854aa70b02ebccc987c5d85b62fb5a0d95ecaddd92d4",
-      "source": "src/recovered/classes/MultiplayerGameMode/005b73a0.cpp",
-      "source_order": 8056,
-      "population": "population-67",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
-      "entry": 5994544,
-      "method": "005b7830",
-      "symbol": "?FUN_005b7830@seed_005b7830@@YGEH@Z",
-      "symbol_prefix": "?FUN_005b7830@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 5,
-      "body_sha256": "f4c6d7ae520f88aecb3ea65952e885437fa4a6ce4b5c3439a161d1c5d8e42863",
-      "padding_bytes": 11,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "379d09f1f223152c4910467bafdec001cd9a948b0d5d8362212da7a5dccd9ce1",
-      "relocations": [],
-      "source_sha256": "3bd42d137459a799c0ba53d573b762031e532bc38b4da860c6674e4d608f24cb",
-      "source": "src/recovered/classes/MultiplayerGameMode/005b7830.cpp",
-      "source_order": 8057,
-      "population": "population-67",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 6012176,
       "method": "005bbd10",
       "symbol": "?FUN_005bbd10@seed_005bbd10@@YAEXZ",

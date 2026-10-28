@@ -2572,31 +2572,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 5993680,
-      "method": "005b74d0",
-      "symbol": "?FUN_005b74d0@seed_005b74d0@@YIXPAH@Z",
-      "symbol_prefix": "?FUN_005b74d0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 5,
-      "body_sha256": "c606ab7bab6daeaf6abf29e2fa60fc46a15fbc69354a5458163f6ccc69e51669",
-      "padding_bytes": 11,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "ab05fdf56e1fd8ad6c1d02c5824207ed67ec6744b3afe8369639c6b881dc3603",
-      "relocations": [],
-      "source_sha256": "d0fcab20c632d8dddcf08a70cf5487007d27816adb8c710ecb6b2bbb1735ae8a",
-      "source": "src/recovered/classes/MultiplayerGameMode/005b74d0.cpp",
-      "source_order": 7011,
-      "population": "population-42",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 6066976,
       "method": "005c9320",
       "symbol": "?FUN_005c9320@seed_005c9320@@YIIH@Z",

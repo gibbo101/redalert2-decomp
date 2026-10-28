@@ -6,6 +6,8 @@
 
 #include "shared/vector_class.hpp"
 
+class Wstring;
+
 class MultiMission {
 public:
     // Whether the map is on the disk (-2: its file is present; else the disk is
@@ -13,6 +15,13 @@ public:
     bool Unknown_00671F00(int cd);
     // The first disk of its list (0x00671F90).
     int Unknown_00671F90();
+    // Whether the text at +0x58 is a fixed string (0x006720C0).
+    bool Unknown_006720C0();
+    // Whether the map allows the game mode named (0x006720E0).
+    bool Unknown_006720E0(Wstring &mode);
+
+    char unknown_00[0x17C];
+    bool unknown_17c;                       // +0x17C (a game mode test is skipped when false and 0x0073C370 agrees)
 };
 
 extern DynamicVectorClass<MultiMission *> unknown_multi_missions_a3d8d8;

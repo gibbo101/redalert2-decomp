@@ -72,6 +72,7 @@ struct UnknownSessionState {
     // else by name, in game mode 4 (0x0066F150; YR's Am_I_Master, hypothesis).
     bool Am_I_Master(HouseClass *house);
     void Unknown_0066EE50();                // 0x0066EE50 (Do_Lose after a networked replay restarts)
+    void Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)
 };
 extern UnknownSessionState unknown_session_a3d298;
 // The session's game mode object (+0x04, a MultiplayerGameMode; moved from

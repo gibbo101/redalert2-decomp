@@ -2512,30 +2512,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 5993424,
-      "method": "5b73d0",
-      "symbol": "?get@Leaf_5b73d0@@QAEEXZ",
-      "symbol_prefix": "?get@Leaf_5b73d0@@",
-      "options": [
-        "/O1",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 3,
-      "body_sha256": "e18aacce29affcdddaa5f641ac1ec12552e0fe9d066e6408941b1792818b8619",
-      "padding_bytes": 0,
-      "full_extent_bytes": 3,
-      "full_extent_sha256": "e18aacce29affcdddaa5f641ac1ec12552e0fe9d066e6408941b1792818b8619",
-      "relocations": [],
-      "source": "src/recovered/classes/MultiplayerGameMode/005b73d0.cpp",
-      "source_sha256": "b5199ad5160ee85fa1c68abe4a6e165532a15f95a5399b92887ba01e863e66f5",
-      "source_order": 3918,
-      "population": "population-01",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 6004336,
       "method": "5b9e70",
       "symbol": "?get@Leaf_5b9e70@@QAEXXZ",

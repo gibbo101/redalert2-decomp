@@ -5,7 +5,6 @@
 // @ref ?unknown_reset_combo_6007f0@@YIXPAUHWND__@@@Z=006007f0
 // @ref __imp__SendMessageA@16=0079a4a0
 
-void __fastcall unknown_reset_combo_6007f0(HWND combo);
 
 void MultiplayerGameMode::unknown_slot14(HWND combo, DynamicVectorClass<int> const *items, int selected)
 {
