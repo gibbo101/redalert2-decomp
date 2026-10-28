@@ -9,9 +9,8 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Until the Nov 1 usage reset, Mac lanes run on Opus with fewer lanes
-(user direction 2026-10-28: Sonnet lanes stopped early and stalled on register allocation): Coop108
-(MPCooperative) and Seed111 (100-1500 B from 0x680000), both Opus; the Sonnet lanes Index109
-(IndexClass<int, T>, FoggedObjectClass) and Seed110 (below 0x500000) finish and are not replaced. Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
+(user direction 2026-10-28): Coop112 (MPCooperative, session layout, MessageListClass) and Seed113
+(100-1500 B from 0x680000: Tactical projection family, VocClass). Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -143,6 +142,10 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
   close 0x411A60 92.41, 0x4763D0 94.0, Fly 0x4BCA00 86.96, BulletClass::Detach 0x461520 75.21 (Cell ctor
   0x42AD30 stays out of line in the original); not started: CCToolTip 0x46DFC0/0x46E250, 0x467A20,
   COM QueryInterface 0x49F710/0x4A6460, Aircraft 0x4141C0/0x418840.
+- Symbol debt: manifests/symbols.json names 0x783810 `__strnicmp`, but it is strncmp; the real
+  _strnicmp is 0x7858D0 (Coop108 evidence). Fixing it needs CDFileClass Set_Search_Drives 0x46FE70 to call
+  strncmp and its population re-accepted with the new binding (a symbols-only edit fails the reference
+  audit). FoggedObjectClass(BuildingClass *, bool) 0x4C0670 90.66 (Index109 w/f4c0670c.cpp).
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

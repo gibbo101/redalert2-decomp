@@ -37,4 +37,8 @@ public:
     unsigned char unknown_0a[2];        // +0x0A (copied with the address: 12 bytes)
 };
 
+// The local player's address (0x00A3DB2C, session +0x894): MPCooperative slot 34 finds the saved
+// player row with it, slot 37 sets it from that row.
+extern IPXAddressClass unknown_address_a3db2c;
+
 #endif

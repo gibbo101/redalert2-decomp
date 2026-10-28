@@ -28,6 +28,7 @@ class Cell;
 class CampaignScoreClass;
 
 #include "shared/unknown_player_entry.hpp"
+#include "shared/session_blocks.hpp"
 // The multiplayer lobby dialog window, 0 when none (0x005C2C40; hypothesis).
 HWND Get_Lobby_Dialog_005c2c40();
 // Text buffer of the lobby description box (0x00839D4C; bss).
@@ -296,7 +297,34 @@ public:
     int unknown_58;                                                // +0x58 (slot 34: the session row whose address is the local one)
     DynamicVectorClass<NodeNameType *> unknown_players_5c;   // +0x5C the players saved by slot 34 (copied back by slot 38); the destructor 0x5A2B50
                                                                    // stores the VectorClass<NodeNameType *> vptr: NodeNameType is probably NodeNameType
-    char unknown_74[0x1A8 - 0x74];
+    // +0x74..+0x1A8: the session settings slot 34 saves and slot 37 restores (session offsets in brackets).
+    int unknown_74;                                                // +0x74 [+0x124]
+    unsigned short unknown_host_name_78[20];                       // +0x78 [+0x2380] the host's name
+    int unknown_a0;                                                // +0xA0 [+0x3AA4]
+    int unknown_a4;                                                // +0xA4 (unknown_house_setting_7d88d8)
+    int unknown_units_a8;                                          // +0xA8 [+0x38] the start units
+    int unknown_credits_ac;                                        // +0xAC [+0x24]
+    bool unknown_fog_b0;                                           // +0xB0 [+0xA7]
+    bool unknown_b1;                                               // +0xB1 [+0x28]
+    bool unknown_crates_b2;                                        // +0xB2 [+0x29]
+    bool unknown_b3;                                               // +0xB3 [+0xA8]
+    bool unknown_b4;                                               // +0xB4 [+0xA4]
+    bool unknown_b5;                                               // +0xB5 [+0xA5]
+    bool unknown_bases_b6;                                         // +0xB6 [+0x20]
+    bool unknown_b7;                                               // +0xB7 [+0xA6]
+    int unknown_ai_count_b8;                                       // +0xB8 [+0x3C]
+    int unknown_difficulty_bc;                                     // +0xBC [+0x40]
+    bool unknown_c0;                                               // +0xC0 [+0x2A]
+    bool unknown_c1;                                               // +0xC1 [+0x2B]
+    bool unknown_c2;                                               // +0xC2 [+0x2C]
+    bool unknown_c3;                                               // +0xC3 [+0x34]
+    int unknown_game_speed_c4;                                     // +0xC4 [+0x30]
+    UnknownSessionBlock_293C unknown_c8;                           // +0xC8 [+0x293C]
+    UnknownSessionBlock_299C unknown_128;                          // +0x128 [+0x299C]
+    UnknownSessionBlock_299C unknown_148;                          // +0x148 [+0x2FA0]
+    unsigned short unknown_master_name_168[21];                    // +0x168 [+0x2FC8] MasterPlayerName
+    int unknown_master_id_194;                                     // +0x194 [+0x301C] MasterPlayerID
+    UnknownSessionBlock_3022 unknown_198;                          // +0x198 [+0x3022]
     DynamicVectorClass<int> unknown_1a8[8];                        // +0x1A8 (slot 25: one list per player, read from the campaign AI settings)
     DynamicVectorClass<int> unknown_268[8];                        // +0x268 (slot 25: a second list per player)
     DynamicVectorClass<CoopCampaignClass *> unknown_campaigns_328; // +0x328 one CoopCampaignClass per campaign record

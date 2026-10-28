@@ -12,6 +12,7 @@ struct NodeNameType;
 
 #include "shared/coord.hpp"
 #include "shared/vector_class_decl.hpp"
+#include "shared/session_blocks.hpp"
 
 extern int unknown_int_7add80;
 extern ConvertClass *unknown_drawer_8323b8;  // 0x008323B8 (OverlayTypeClass slot 40; also CellClass 0x474C6B)
@@ -66,36 +67,66 @@ struct UnknownSessionState {
     // +0x40/+0x28/+0xA7 are declared separately in this header for now).
     char unknown_00[0x1C];
     int ScenarioIndex;                      // +0x1C the multiplayer map (unknown_multi_missions_a3d8d8 index; -1: none)
-    char unknown_20[0x24 - 0x20];
+    bool unknown_bases_20;                  // +0x20 multiplayer bases (also unknown_flag_a3d2b8)
     int unknown_24;                         // +0x24 every multiplayer house's third setup value (Assign_Houses)
-    char unknown_28[0x38 - 0x28];
+    bool unknown_28;                        // +0x28 (false clears the global DestroyableBridges; unknown_session_a3d2c0)
+    bool unknown_crates_29;                 // +0x29 crates (also unknown_flag_a3d2c1)
+    bool unknown_2a;                        // +0x2A
+    bool unknown_2b;                        // +0x2B
+    bool unknown_2c;                        // +0x2C
+    int GameSpeed_30;                       // +0x30 the game speed (0..5 pick the frame-ahead values; Options +0x0 copies it)
+    bool unknown_34;                        // +0x34
     int UnitCount;                          // +0x38 the multiplayer start units (Create_Units)
     int AICount;                            // +0x3C the computer players
-    char unknown_40[0x44 - 0x40];
+    int unknown_difficulty_40;              // +0x40 the multiplayer difficulty (also unknown_session_difficulty_a3d2d8)
     int AIDifficulty[8];                    // +0x44
     int AICountry[8];                       // +0x64 (-1 none, -3 random)
     int AIColor[8];                         // +0x84
-    char unknown_a4[0x12C - 0xA4];
+    bool unknown_a4;                        // +0xA4
+    bool unknown_a5;                        // +0xA5 (HarvesterImmune of the global options; unknown_session_a3d33d)
+    bool unknown_a6;                        // +0xA6
+    bool unknown_fog_a7;                    // +0xA7 fog of war (also unknown_session_fog_a3d33f)
+    bool unknown_a8;                        // +0xA8 (unknown_session_a3d340)
+    char unknown_a9[0x124 - 0xA9];
+    int unknown_124;                        // +0x124 (also unknown_a3d3bc)
+    char unknown_128[0x12C - 0x128];
     int unknown_12c;                        // +0x12C the player's colour (GDlgSupp 0x004D23C0)
     int unknown_130;                        // +0x130 (-2: the colour shows as random; 0x004D23C0)
     int unknown_134;                        // +0x134 the player's country (GDlgSupp 0x004D1820)
     int unknown_138;                        // +0x138 (-2 random, -3 observer: the country shows as that; 0x004D1820)
-    char unknown_13c[0x638 - 0x13C];
+    char unknown_13c[0x2B0 - 0x13C];
+    int unknown_2b0;                        // +0x2B0 (also unknown_int_a3d548)
+    char unknown_2b4[0x638 - 0x2B4];
     bool unknown_638;                       // +0x638 (cleared by 0x00672440)
     bool unknown_639;                       // +0x639 (cleared before the load wait, 0x0065C7D0)
     bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)
-    char unknown_63b[0x27E4 - 0x63B];
+    char unknown_63b[0x1FB4 - 0x63B];
+    int unknown_1fb4[4][28];                // +0x1FB4 four rows indexed by the +0x2300 counter (MPCooperative slot 34 sets -1)
+    char unknown_2174[0x2300 - 0x2174];
+    int unknown_2300;                       // +0x2300 (capped at 3; also unknown_a3f598)
+    char unknown_2304[0x2380 - 0x2304];
+    unsigned short HostName_2380[20];       // +0x2380 the host's name (wide; also unknown_host_name_a3f618)
+    char unknown_23a8[0x27E4 - 0x23A8];
     // The player list (the object at 0x00A3FA7C, shared/unknown_player_entry.hpp unknown_players_a3fa7c).
     DynamicVectorClass<NodeNameType *> Players;   // +0x27E4
-    char unknown_27fc[0x2FC8 - 0x27FC];
+    char unknown_27fc[0x293C - 0x27FC];
+    UnknownSessionBlock_293C unknown_293c;  // +0x293C (MPCooperative slot 34 saves it, slot 37 restores it)
+    UnknownSessionBlock_299C unknown_299c;  // +0x299C (the same)
+    char unknown_29bc[0x2FA0 - 0x29BC];
+    UnknownSessionBlock_299C unknown_2fa0;  // +0x2FA0 (the same)
+    char unknown_2fc0[0x2FC8 - 0x2FC0];
     // The game master (host): name and house index (-1: none). The load wait
     // 0x0065C520 clears both when it drops the master (names after TS/YR's
     // SessionClass MasterPlayerName/MasterPlayerID, hypothesis).
     unsigned short MasterPlayerName[21];    // +0x2FC8 (wide)
     char unknown_2ff2[0x301C - 0x2FF2];
     int MasterPlayerID;                     // +0x301C
-    char unknown_3020[0x3080 - 0x3020];
+    char unknown_3020[0x3022 - 0x3020];
+    UnknownSessionBlock_3022 unknown_3022;  // +0x3022 (MPCooperative slot 34 saves it, slot 37 restores it)
+    char unknown_3032[0x3080 - 0x3032];
     unsigned char unknown_3080;             // +0x3080 (0x00672F10 returns it; the dialog control test 0x005E0760)
+    char unknown_3081[0x3AA4 - 0x3081];
+    int unknown_3aa4;                       // +0x3AA4 (MPCooperative slot 34 saves it, slot 37 restores it)
 
     // Whether the house (null: the player's) is the game master: by MasterPlayerID,
     // else by name, in game mode 4 (0x0066F150; YR's Am_I_Master, hypothesis).
