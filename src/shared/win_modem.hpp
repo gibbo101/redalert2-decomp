@@ -25,7 +25,7 @@ public:
     virtual unsigned Get_Modem_Status();                                // 0x007348B0 slot 3
     virtual void Set_Serial_DTR(bool state);                            // 0x00734900 slot 4
     virtual int Get_Modem_Result(int delay, char *buffer, int buffer_len, int timeout);   // 0x00734CD0 slot 5
-    virtual void unknown_slot6();                                       // 0x00734F50
+    virtual void Dial_Modem(char const *dial_number);                  // 0x00734F50 slot 6 ("ATDT"/"ATDP")
     virtual void unknown_slot7();                                       // 0x00735110
     virtual void Set_Echo_Function(void (__fastcall *func)(char c));             // 0x007354A0 slot 8
     virtual void Set_Abort_Function(int (*func)());                     // 0x007354B0 slot 9
