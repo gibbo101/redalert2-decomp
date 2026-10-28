@@ -47,9 +47,9 @@ public:
     virtual void Compute_CRC(WWCRCEngine &crc) const;                   // 0x006882B0 slot 13
     virtual int unknown_slot16() const { return ArrayIndex; }           // 0x00688C10 (inline)
     virtual bool Read_INI(CCINIClass &ini);                             // 0x006881B0 slot 25
-    virtual bool unknown_slot32(Cell const *cell, HouseClass *house);   // 0x00688030 (creates a smudge at the cell)
-    virtual ObjectClass *unknown_slot35(HouseClass *house);             // 0x006880A0 (creates a smudge)
-    virtual void unknown_slot40(int const *point, int arg2, int frame, int arg4, Cell const *cell);   // 0x006880D0 (draws the image; new slot)
+    virtual bool unknown_slot32(Cell const &cell, HouseClass *house) const;   // 0x00688030 (creates a smudge at the cell)
+    virtual ObjectClass *unknown_slot35(HouseClass *house) const;       // 0x006880A0 (creates a smudge)
+    virtual void unknown_slot40(Point2D const *point, Rect const *window, int piece, int height, Cell const *cell);   // 0x006880D0 (draws one piece of the image; new slot)
 
     bool Can_Place(Cell const &cell, bool arg2) const;            // 0x00688A40 (name hypothesis)
     void Place(Cell const &cell) const;                           // 0x00688B40 (name hypothesis)

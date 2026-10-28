@@ -435,3 +435,12 @@ reaching each block).
   unrelated temporaries move (0x62FE30's step-4 sum flips only when the slot-48
   `CoordStruct(cell.X * 256 + 128, ...)` temporary is removed); spelling, casts and local copies
   do not change it.
+- A virtual call on a member of a named global object (`Map.List.Clear()`) is bound statically and
+  inlined; through `this` or a reference it stays virtual. An original virtual call on a global's member
+  comes from an inline member of the owner (`Map.Clear_Cells()` with `{ List.Clear(); }`), which also
+  spends the caller's budget like the original (Read_Scenario_INI 0x0065EB40) (Big51).
+- A no-argument function's convention shows only in its callers: in a `__fastcall` caller, the call
+  after it loads ecx before the pushes only if it is callee-pops (`__fastcall`/thiscall) (Big51 ren2).
+- Assignment through an inline `operator=(char const *)` evaluates the destination first; the original's
+  temporary-first order comes from `x = FixedString<21>("...")`. Parallel arrays indexed from one base
+  pointer (`[ebx-0x20]`, `[ebx]`, `[ebx+0x20]`) are members of one object (Assign_Houses 0x0065FBB0) (Big51).

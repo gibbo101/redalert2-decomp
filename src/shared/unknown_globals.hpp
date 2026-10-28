@@ -8,6 +8,7 @@ class HouseClass;
 class ConvertClass;
 
 extern int unknown_int_7add80;
+extern ConvertClass *unknown_drawer_8323b8;  // 0x008323B8 (OverlayTypeClass slot 40; also CellClass 0x474C6B)
 extern ConvertClass *unknown_drawer_8323cc;  // 0x008323CC
 extern bool unknown_flag_8373c1;  // 0x008373C1 the power bar is shown (Power AI/Draw_It, Radar 0x00630350)
 extern bool unknown_flag_8373c3;  // 0x008373C3

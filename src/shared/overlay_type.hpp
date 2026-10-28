@@ -54,11 +54,11 @@ public:
     virtual int unknown_slot16() const { return ArrayIndex; }           // 0x005DD280 (inline)
     virtual bool Read_INI(CCINIClass &ini);                             // 0x005DCAA0 slot 25
     virtual CoordStruct unknown_slot27(CoordStruct const &coord) const; // 0x005DCD50 (the coordinate unchanged)
-    virtual bool unknown_slot32(Cell const *cell, HouseClass *house);   // 0x005DC870 (creates an overlay)
-    virtual ObjectClass *unknown_slot35(HouseClass *house);             // 0x005DC8B0
+    virtual bool unknown_slot32(Cell const &cell, HouseClass *house) const;   // 0x005DC870 (places an overlay at the cell)
+    virtual ObjectClass *unknown_slot35(HouseClass *house) const;       // 0x005DC8B0 (an unplaced overlay)
     virtual Cell const *unknown_slot36(int arg1) const;           // 0x005DC800 (one cell)
     virtual void *unknown_slot39() const;                               // 0x005DD150 (demand-loads the image)
-    virtual void unknown_slot40(int const *point, int const *window, int frame);   // 0x005DC8E0 (draws; new slot)
+    virtual void unknown_slot40(Point2D const *point, Rect const *window, int frame);   // 0x005DC8E0 (draws a frame at a tactical point; new slot)
 
     int ArrayIndex;                         // +0x264
     int Land;                               // +0x268
