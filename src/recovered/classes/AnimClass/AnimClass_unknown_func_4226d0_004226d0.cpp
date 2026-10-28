@@ -10,7 +10,7 @@
 #include "shared/crt_memory.hpp"
 #include "shared/map_view.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@PAVUnknownAudioController@@@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 // @ref ?Unknown_00405D50@UnknownAudioController@@QAEXXZ=00405d50
 // @ref ?Unknown_0047A220@UnknownAnimCell@@QAEHXZ=0047a220
 // @ref ?Unknown_00472540@UnknownAnimCell@@QAEXH@Z=00472540

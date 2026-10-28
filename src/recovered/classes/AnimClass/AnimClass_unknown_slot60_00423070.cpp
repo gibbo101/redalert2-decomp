@@ -6,7 +6,7 @@
 #include "shared/anim.hpp"
 // @ref ?unknown_slot60@ObjectClass@@UAEXXZ=005d4e90
 // @ref ?Unknown_00406070@UnknownAudioController@@QAEXXZ=00406070
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@PAVUnknownAudioController@@@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 
 void AnimClass::unknown_slot60()
 {

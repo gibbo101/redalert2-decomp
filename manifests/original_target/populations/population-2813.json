@@ -4,8 +4,8 @@
     "id": "population-2813",
     "inventory_sha256": "91168b29a70ea729e2464d754f1f0f7cd68aaade68f2d8a55c78afdfb986f5c6",
     "gaps_sha256": "f2d02e1473b86c975fdb005a947983c47d8382fa5129db6c30de192a7f32b772",
-    "historical_population_sha256": "42d966611e84bfbc23fbdab00a32773ae683842daa183e667c61000f9c4ef300",
-    "historical_acceptance_sha256": "0b1074deba2fc759907711b356dcce8e1a72da24a45527544cd189dd958c8812"
+    "historical_population_sha256": "ba163484a30735e940a24960717aee39e11f1241c76cf2a27e38016ff296e6c4",
+    "historical_acceptance_sha256": "385089327229eca64bfe1e2977a4961f5ce3cc5fc7a1a1c35edbb84bfbaf6314"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -5381,7 +5381,6 @@
     "?unknown_slot64@AnimClass@@UAEPBVCell@@H@Z": 4330784,
     "?unknown_slot116@AnimClass@@UAEHXZ": 4330880,
     "?Unknown_006A2970@@YIHH@Z": 6957424,
-    "?Unknown_00713E60@@YIXHABUCoordStruct@@PAVUnknownAudioController@@@Z": 7421536,
     "?unknown_palette_837e10@@3VPaletteClass@@A": 8617488,
     "?Unknown_004955D0@@YIXPAXHP6AXXZ@Z": 4806096,
     "?Load@AnimClass@@UAGJPAUIStream@@@Z": 4336688,
@@ -7334,7 +7333,7 @@
     "?Unknown_006BFA90@TeamTypeClass@@QBE?AVCell@@XZ": 7076496,
     "?Unknown_0054A550@MapClass@@QAEXABUCoordStruct@@HHH@Z": 5547344,
     "?Unknown_0055A740@MapClass@@QAE_NPAVCellClass@@_N@Z": 5613376,
-    "?Unknown_007141B0@@YIXABUCoordStruct@@PAVUnknownAudioController@@@Z": 7422384,
+    "?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z": 7422384,
     "_CLSID_DropPodLocomotionClass": 8003504,
     "?unknown_TubeClass_list_008661c8@@3V?$DynamicVectorClass@PAUUnknownTube@@@@A": 8806856,
     "?unknown_drawer_8323c4@@3PAVConvertClass@@A": 8594372,
@@ -8158,7 +8157,6 @@
     "?unknown_func_45eaa0@BuildingTypeClass@@QAEXXZ": 4582048,
     "?Draw_Line_Depth_Masked@DSurface@@UAE_NABUPoint2D@@0H_N@Z": 4918576,
     "?Draw_Me@ShapeButtonClass@@UAEHH@Z": 6771168,
-    "?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z": 7422384,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABU2@_N@Z": 6495136,
     "?Unknown_0056A8A0@MapClass@@QAEHXZ": 5679264,
     "?Set_Color@RadBeam@@QAEXABVRGBClass@@@Z": 6510352,
