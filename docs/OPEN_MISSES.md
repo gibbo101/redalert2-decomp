@@ -129,3 +129,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   expanding sites likely use a different inline). Symbol ?Draw@MSPrintAnim@@UAEXPAVSurface@@PBVRect@@@Z.
 - Name debt: 0x4F52B0 is declared twice in house.hpp, `bool Unknown_004F52B0()` (Para131 and earlier callers)
   and `bool unknown_func_4f52b0()` (Obj126, the defining source). Merge with an apply_rename spec.
+- ScoreFontClass Print_Char 0x667B60 98.89, Print 0x667C70 99.11, Char_Pixel_Width 0x667AA0 98.28 (Score132
+  misses/): one shared blocker, the char-index clamp's first test is `add eax,-0x21; test eax,eax; ja` (unsigned)
+  where every draft gives `jg`; unsigned casts break the reuse of `ch - '!'`. Untried: OEM output char types, an
+  inline helper taking unsigned, option variants. Windows near-miss work.

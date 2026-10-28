@@ -18,9 +18,9 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes (Opus): Score132 ScoreFontClass 0x667B60/0x667C70 and ScorePrintClass 0x6680F0; Base134
+Running Mac lanes (Opus): Base134
 BaseClass 0x42BF70/0x42CA50/0x42C6A0; IPX135 IPXGlobalConnClass 0x524B50/0x524870. Landed this period: Map129,
-Obj126, Para131, Iso128 (0x527A80), MSAnim133 (MSPrintAnim slot 4 0x5AEDA0). Register/scheduling-tie near
+Obj126, Para131, Iso128 (0x527A80), MSAnim133 (MSPrintAnim slot 4 0x5AEDA0), Score132 (ScorePrintClass::Update 0x6680F0). Register/scheduling-tie near
 misses (see OPEN_MISSES.md) go to the Windows lead. Lanes use tools/original_target/lane_tools.py.
 Windows lead backlog in landing: r17 and r19 landed (8f8247fe, 9d6af74f); next r20 (region-helpers-r53-r55,
 drafts being copied from the Windows worktrees), then r22, r24, r27, r29, r32, r36 source rounds, then the

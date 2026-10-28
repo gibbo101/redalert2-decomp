@@ -1,3 +1,5 @@
+#define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 // Header-static dynamic initializers of the unit at 0x0056D2D0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x0056D2D0-0x0056D4B6); the other
