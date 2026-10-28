@@ -9,8 +9,7 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Surf66 (Surface, XSurface, BSurface, DSurface), Inf65 (inline virtual COMDATs that accepted
-units emit but no region binds, then InfantryClass; Air63's NOTES and tools), Leaf67 (ObjectClass leaf classes: Bullet, VoxelAnim,
+has 16 GB): Surf66 (Surface, XSurface, BSurface, DSurface), Foot68 (FootClass, then TechnoClass), Leaf67 (ObjectClass leaf classes: Bullet, VoxelAnim,
 BuildingLight, Anim, Overlay, Veinhole, Particle, Terrain). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
@@ -80,6 +79,9 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - Units60 (NOTES): progress Draw_Player 0x61FC20 41.06 (the original keeps Draw_Name out of
   line), Shape/Flag/Text_Offset ~89.9, WinModem Read_From_Serial_Port 0x734B30 77.97,
   Wait_For_Serial_Write 71.07; Get_Modem_Result 0x734CD0 and 0x735110 not drafted.
+- InfantryClass (Inf65 NOTES): 0x507170 99.37, 0x504BC0 98.41, 0x4FFB70 82.95; FootClass slot 54
+  0x4C8220 86.96. Uncovered template members: DynamicVectorClass<PlanningNodeClass*> Delete
+  0x61B350/0x61B390, DynamicVectorClass<TechnoTypeClass*>::Delete 0x6DFA70.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

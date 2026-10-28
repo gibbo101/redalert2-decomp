@@ -217,6 +217,7 @@ public:
     // Counters and scalars.
     void unknown_47c840();                      // 0x0047C840 (decrements +0x130)
     void unknown_47c8a0();                      // 0x0047C8A0 (increments +0x130 up to +0x134)
+    void Unknown_004790F0(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6);   // 0x004790F0 (sets up the cell's light drawer at +0x34; TerrainClass slots 67/68, DisplayClass 0x0049E570)
     int unknown_47ce50() const;                 // 0x0047CE50 (+0xF0 above 1.0)
     void Reduce_f0(double amount);              // 0x0047CEC0
     bool Set_unknown_e0(void *value);           // 0x0047CF30
