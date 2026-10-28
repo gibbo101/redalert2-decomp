@@ -345,13 +345,20 @@ public:
     static rc_ptr<PlayerProfile> __fastcall Load_Default();                          // 0x00738670
     static rc_ptr<PlayerProfile> __fastcall Load_00738880(Wstring const &name);
     void Populate_Dialog_00739b70(HWND dialog, Wstring const &name, bool update);
-    char unknown_08[0x10 - 8];
-    int unknown_10;
+    bool unknown_08;                // +0x08 cleared by the constructor
+    Wstring Server;                 // +0x0C
+    int unknown_10;                 // +0x10 the locale
+    bool Verified;                  // +0x14
+    int unknown_18;                 // +0x18
+    int Country;                    // +0x1C
+    int Color;                      // +0x20
+    int Rank;                       // +0x24
+    int Points;                     // +0x28
+    int Wins;                       // +0x2C
+    int Losses;                     // +0x30
+    int Disconnects;                // +0x34
     int Unknown_Value_10() const { return unknown_10; }
-    char unknown_14[8];
-    int unknown_1c;
-    int unknown_20;
-    char unknown_24[0x38 - 0x24];   // size 0x38 (operator new in Load_Default 0x00738670)
+    // size 0x38 (operator new in Load_Default 0x00738670)
 };
 struct WolRegistryOptions {
     WolRegistryOptions() : Options(0), HasOptions(false) {}
