@@ -1177,48 +1177,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 6718320,
-      "method": "00668370",
-      "symbol": "?FUN_00668370@Owner_00668370@seed_00668370@@QAEPAIE@Z",
-      "symbol_prefix": "?FUN_00668370@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 32,
-      "body_sha256": "74607f6b822ea846ed848bcc58d621c4ad543c0e03215b615bfeb1a3133c2d96",
-      "padding_bytes": 0,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "74607f6b822ea846ed848bcc58d621c4ad543c0e03215b615bfeb1a3133c2d96",
-      "relocations": [
-        {
-          "offset": 11,
-          "kind": 6,
-          "symbol": "_PTR_FUN_007a928c",
-          "target": 8032908,
-          "addend": 0,
-          "resolved": 8032908
-        },
-        {
-          "offset": 19,
-          "kind": 20,
-          "symbol": "?FUN_00781d3b@seed_00668370@@YAXI@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 1153460
-        }
-      ],
-      "source_sha256": "3ccf6f926be5e14fb496a7ac1ab435c6f73f3e0c7cc1baff651e2c1c6d30bf37",
-      "source": "src/recovered/classes/ScoreAnimClass/00668370.cpp",
-      "source_order": 7826,
-      "population": "population-66",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 6718352,
       "method": "00668390",
       "symbol": "?FUN_00668390@Owner_00668390@seed_00668390@@QAEPAIE@Z",
@@ -1255,48 +1213,6 @@
       "source_sha256": "ff263d7de7e7d14804b7a813d658a43bb12b40965828b5472f0150c681227613",
       "source": "src/recovered/classes/ScoreTimeClass/00668390.cpp",
       "source_order": 7827,
-      "population": "population-66",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
-      "entry": 6718384,
-      "method": "006683b0",
-      "symbol": "?FUN_006683b0@Owner_006683b0@seed_006683b0@@QAEPAIE@Z",
-      "symbol_prefix": "?FUN_006683b0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 32,
-      "body_sha256": "0ce453e6dd8e4b97fbcdb0e430a873107d78ca6841900e443e32082d0a742570",
-      "padding_bytes": 0,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "0ce453e6dd8e4b97fbcdb0e430a873107d78ca6841900e443e32082d0a742570",
-      "relocations": [
-        {
-          "offset": 11,
-          "kind": 6,
-          "symbol": "_PTR_FUN_007a928c",
-          "target": 8032908,
-          "addend": 0,
-          "resolved": 8032908
-        },
-        {
-          "offset": 19,
-          "kind": 20,
-          "symbol": "?FUN_00781d3b@seed_006683b0@@YAXI@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 1153396
-        }
-      ],
-      "source_sha256": "b29350278536b4aeaa30ccea0255431aa3caee4daed4ec9bfc60c577ddd8c62d",
-      "source": "src/recovered/classes/ScorePrintClass/006683b0.cpp",
-      "source_order": 7828,
       "population": "population-66",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
