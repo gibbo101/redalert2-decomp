@@ -5265,54 +5265,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 7272624,
-      "method": "6ef8b0",
-      "symbol": "?get@Leaf_6ef8b0@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_6ef8b0@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "68b4a119fc57146cf42e957ec1f3a6726204e6b7a791978120576204f78d8a1d",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "c14c9c03cd73189913a91dc6322c0e53ea2e22114555eaf74e905181c9861bda",
-      "relocations": [],
-      "source": "src/recovered/006ef8b0.cpp",
-      "source_sha256": "655ca2cf5c87856f66ff68ceb608078dd1dc591290bd81b7d19dab0daaf7af03",
-      "source_order": 5917,
-      "population": "population-09",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
-      "entry": 7272640,
-      "method": "6ef8c0",
-      "symbol": "?get@Leaf_6ef8c0@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_6ef8c0@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "6513a15cd7ff9a54d42f2075047c28cc56143922da58304838b59efe44802bc6",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "8e40aad684571dd7854e028592b79651d7d0cc31e87fc71bd389b3d8a25f4a75",
-      "relocations": [],
-      "source": "src/recovered/006ef8c0.cpp",
-      "source_sha256": "bd44ace0b8102c9b5933c0021735032dd775bb7e00c6b987f29ccaed32dfec5c",
-      "source_order": 5918,
-      "population": "population-09",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 7280608,
       "method": "6f17e0",
       "symbol": "?get@Leaf_6f17e0@@QAEXI@Z",

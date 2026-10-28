@@ -39,7 +39,11 @@ public:
     int unknown_dc;                 // +0xDC per-house bits (as shared/cell.hpp)
     char unknown_e0[0xE4 - 0xE0];
     class ObjectClass *OccupierPtr; // +0xE4 (as shared/cell.hpp)
-    char unknown_e8[0x119 - 0xE8];
+    char unknown_e8[0xEC - 0xE8];
+    int unknown_ec;                 // +0xEC the land type (as shared/cell.hpp)
+    char unknown_f0[0x116 - 0xF0];
+    short unknown_116;              // +0x116 the index of the tube that enters here, -1 for none (as shared/cell.hpp)
+    char unknown_118;               // +0x118
     char unknown_119;               // +0x119
     char unknown_11a;               // +0x11A
     char unknown_11b;               // +0x11B signed; the bridge height in levels (view of cell.hpp's unknown_11b)
@@ -55,6 +59,7 @@ public:
     int unknown_134;                // +0x134 (0 after MapClass 0x00559F10)
     char unknown_138[0x140 - 0x138];
     unsigned int unknown_140;       // +0x140 flags (bit 1: mapped, bit 0 set when layer 1 is fully shrouded)
+    bool unknown_479cc0() const;    // 0x00479CC0 (as shared/cell.hpp)
     void Unknown_00472540(int value);   // 0x00472540 (as shared/cell.hpp)
     void unknown_47bc80();          // 0x0047BC80 (DisplayClass 0x0049CDB0, for a cell that was mapped)
     void unknown_47be00();          // 0x0047BE00 (as shared/cell.hpp)
