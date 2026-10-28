@@ -210,6 +210,8 @@ public:
     bool Unknown_006752D0(int start, int length, bool flag);        // 0x006752D0 starts the +0x38/+0x3C span (Sidebar)
     bool Unknown_00675300();                                        // 0x00675300 clears it (Sidebar)
     bool Unknown_00675320();                                        // 0x00675320 advances it; true when it needs a redraw (Sidebar)
+    bool Unknown_00675360() const;                                  // 0x00675360 whether the span runs (+0x38 set)
+    bool Unknown_00675370() const;                                  // 0x00675370 returns +0x34
     void Free_Shape();                                              // 0x006751A0 frees an allocated shape (Sidebar slot 50; name hypothesis)
     void Set_Allocated(bool allocated);                             // 0x006751D0 sets IsShapeAllocated (Sidebar slot 53)
 

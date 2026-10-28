@@ -4,6 +4,7 @@
 #define RA2_SHARED_UNKNOWN_GLOBALS_HPP
 
 class Surface;
+class Rect;
 class HouseClass;
 class ConvertClass;
 class BuildingClass;
@@ -23,6 +24,8 @@ extern int unknown_int_839648;  // 0x00839648 screen width
 extern int unknown_int_83964c;  // 0x0083964C screen height
 extern Surface *unknown_radar_surface_8336f8;  // 0x008336F8 (the radar view: TechnoClass slot 267 tests its Get_Rect)
 extern Surface *unknown_surface_839948;  // 0x00839948 (sidebar surface)
+// A screen-sized clipping window (0x00839640; 0, 0, 640, 400 at startup, 0x0040D920).
+extern Rect unknown_window_839640;
 extern Surface *unknown_surface_839950;  // 0x00839950 screen
 class DSurface;
 extern DSurface *unknown_surface_839954; // 0x00839954 (Get_Input draws the buttons on it; shared/dsurface.hpp)
