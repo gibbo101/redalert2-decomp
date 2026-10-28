@@ -9,9 +9,9 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Foot68 (FootClass, then TechnoClass), Seed70 (sweep_seeds breadth, 100-1500 B), Surf71
-(DSurface slots 13-16 and the Surf66 misses), Study72 (DynamicVectorClass<WaypointClass>::Resize
-0x7256C0, which blocks seven exact WaypointPathClass drafts). Windows: one Codex lead
+has 16 GB): Seed70 (sweep_seeds breadth, 100-1500 B), Surf71 (DSurface slots 13-16
+and the Surf66 misses), Debt73 (evidenced signature renames and the misses they unblock), Tiny74
+(sweep under 100 B, including inline COMDATs accepted units already emit). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -93,6 +93,11 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
   VectorClass ctor 0x727040 (needs the WDTState ctor 0x725F40 emitted).
 - Plans with `separate_units` are accepted with a local compile (`private/tools/accept.sh` does
   this): remote compilation does not stage their out-of-tree draft paths.
+- TechnoClass/FootClass (Foot68 NOTES): ctor 0x6C0CD0 99.66, 0x6C16F0 97.41, slot 220 0x6C9AF0
+  97.65, 0x6C5270 96.38, slot 234 0x6C89C0 90.31 (int -> void with BuildingClass 0x44FB50),
+  Foot slot 77 0x4C69F0 65.32 (body 1312 with jump and byte tables).
+- Coord stand-ins (Study72 FINDINGS): UnknownVector3 0x41B630 is CoordStruct(int,int,int);
+  CoordStruct::Set_00434820 is the UnknownCoord434820 forwarding constructor.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

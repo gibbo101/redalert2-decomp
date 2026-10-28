@@ -4,8 +4,8 @@
     "id": "population-1933",
     "inventory_sha256": "a5faa1575c07aa1ed57646615933e149d287f45b93631b4e4f17340aa771f853",
     "gaps_sha256": "560361b06750d59324c698e20f06fe1cb888a98c348e524f4d022453d6a2a0e4",
-    "historical_population_sha256": "5e90867b225a7358e009732a01748d8b392120f510e3f91627d6769503c5710c",
-    "historical_acceptance_sha256": "1af86753cbf19a583bc6510dc6b0ca8c12f4613cf473a920e43b1b715be229e6"
+    "historical_population_sha256": "2769d547bb7cb152c843dae5bdbd1f67d6a5e5fdbc0b3b29e24691c1e3485cff",
+    "historical_acceptance_sha256": "09fa07312f5940053ef1c373eec653dba995a6659758388a58d8109648c06519"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1061,7 +1061,7 @@
     "?Load@MechLocomotionClass@@UAGJPAUIStream@@@Z": 5845344,
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
     "??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z": 4732496,
-    "?Load@MapSelect@@QAE_NABVWstring@@@Z": 5963824,
+    "?Load@MapSelectData@@QAE_NABVWstring@@@Z": 5963824,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
     "?Set@PaletteClass@@QAEXXZ": 4808992,
     "?Load@ObjectClass@@UAGJPAUIStream@@@Z": 6113120,

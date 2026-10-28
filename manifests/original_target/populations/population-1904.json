@@ -4,8 +4,8 @@
     "id": "population-1904",
     "inventory_sha256": "a94579f380e86bd909b1dc30730ec3ddc8c111aa3d55a2da00b9445550ab684a",
     "gaps_sha256": "9bf2cf2e7e4b44f46337b568deee365172565bb7e11d3097f1731c501723470d",
-    "historical_population_sha256": "a7abdbb41982a25280ce75ca3b381854f9dccca5a497a9aea3a261d42fcacc9f",
-    "historical_acceptance_sha256": "ca93db441a1a543e32d557887dd362b94ab9e144532152dd133ae9ee1a2e2cdc"
+    "historical_population_sha256": "4bc7af1c77939186115cad1c6df2fdfdf902c94f353446fc2b8ce8e4631e949b",
+    "historical_acceptance_sha256": "8f2ead91ee35afbdde8b961007adecb8613ddfb52608a7ba4ffe5c9cac8df57c"
   },
   "references": {
     "?ABufferPtr@@3PAVABuffer@@A": 8625260,
@@ -657,7 +657,7 @@
     "?Set_Frame@MSShapeAnim@@QAEXH@Z": 5949280,
     "?Get_Rect@MSShapeAnim@@UAE?AVRect@@XZ": 5950720,
     "__DAT_00a769e8": 10971624,
-    "?Clear@MapSelect@@QAEXXZ": 5965616,
+    "?Clear@MapSelectData@@QAEXXZ": 5965616,
     "?Length@WideString@@QBEIXZ": 7799968,
     "?Clear@WWKeyboardClass@@QAEXXZ": 5450224,
     "?Get_Rect@MSBitPrintAnim@@UAE?AVRect@@XZ": 5956896,

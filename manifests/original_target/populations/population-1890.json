@@ -4,8 +4,8 @@
     "id": "population-1890",
     "inventory_sha256": "eb14be0af60202b076096295482c1cac1a4304ebca6f812a3570c03f03163560",
     "gaps_sha256": "258e13ddd80b39e409b3a5916343d3d1439246f13b9fd9d5fefc3b3f1d82fcbb",
-    "historical_population_sha256": "3b9b2c42430d91938bcf53a6ace910d29c0f146057d897be8ccc0f5d7fa7f6c7",
-    "historical_acceptance_sha256": "c9b554e7bfab984e3ba49c66fb35f14aa5d784a36527325c09300ba643e968b8"
+    "historical_population_sha256": "5a8a9e654ef2043de641749aeddd077fd662c0e44623f94df17ba8aa772c6cae",
+    "historical_acceptance_sha256": "2c54685712adf6967bfcc40e468d495db9ec91fe020375e5a97253d7ad3362d6"
   },
   "references": {
     "?unknown_palette_00851cc8@@3VPaletteClass@@A": 8723656,
@@ -851,7 +851,7 @@
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
     "??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z": 4732496,
     "__DAT_00a769e8": 10971624,
-    "?Load@MapSelect@@QAE_NABVWstring@@@Z": 5963824,
+    "?Load@MapSelectData@@QAE_NABVWstring@@@Z": 5963824,
     "__real@8@4006ff00000000000000": 8007504,
     "?QueryInterface@AbstractClass@@UAGJABUGUID@@PAPAX@Z": 4259840,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,

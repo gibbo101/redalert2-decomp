@@ -1,10 +1,10 @@
-// MSSfxEntry *MapSelect::Find_Sound(Wstring const &name) const (0x005B0980)
+// MSSfxEntry *MapSelectData::Find_Sound(Wstring const &name) const (0x005B0980)
 // Sound entry of that name, ignoring case; null without sound.
 #include "shared/ms_choice.hpp"
 // @ref ?unknown_check_406f30@@YAHXZ=00406f30
 // @ref ?To_Lower@Wstring@@QAEXXZ=0076ee20
 
-MSSfxEntry *MapSelect::Find_Sound(Wstring const &name) const
+MSSfxEntry *MapSelectData::Find_Sound(Wstring const &name) const
 {
     if (unknown_check_406f30()) {
         for (int index = 0; index < Sounds.Count(); index++) {

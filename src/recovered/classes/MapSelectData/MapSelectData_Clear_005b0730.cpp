@@ -1,10 +1,10 @@
-// void MapSelect::Clear() (0x005B0730)
+// void MapSelectData::Clear() (0x005B0730)
 // Deletes the sound effects, animations and stages; resets the text
 // rectangle to 640x400.
 #include "shared/ms_choice.hpp"
 // @ref ??1MapStage@@QAE@XZ=005b11b0
 
-void MapSelect::Clear()
+void MapSelectData::Clear()
 {
     int index;
     for (index = 0; index < Sounds.Count(); index++) {

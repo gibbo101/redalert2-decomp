@@ -1,4 +1,4 @@
-// bool MapSelect::Load(Wstring const &section) (0x005B0030)
+// bool MapSelectData::Load(Wstring const &section) (0x005B0030)
 // Reads MAPSEL.INI: the stages listed as 1..100 under the section, then
 // the section's Anims list (with TextRect and Palette), then its Sounds.
 // Assumption: CCFileClass::Open(char const *, int) is an inline member of
@@ -46,7 +46,7 @@ inline int CCFileClass::Open(char const *filename, int rights)
     return Open(rights);
 }
 
-bool MapSelect::Load(Wstring const &section)
+bool MapSelectData::Load(Wstring const &section)
 {
     CCFileClass file;
     INIClass ini;

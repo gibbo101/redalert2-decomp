@@ -4,8 +4,8 @@
     "id": "population-2603",
     "inventory_sha256": "23b2d9164780256774f50d76995f2db1648e6c100c12359c33082082c26a4840",
     "gaps_sha256": "05a3200114caf6b160fcf12c799bc1b4b2c0b15f9cb52bbe2cac39fd79510c2f",
-    "historical_population_sha256": "753c7a507a3aea66eda02ee20819fe688ff04eabccdfb9c65a60347fe1c2b12b",
-    "historical_acceptance_sha256": "356527aba61376dbab98ef8b76fdea224baee66bc2bf52b8e4d0ab5d18135299"
+    "historical_population_sha256": "5e6b47fdabc2d92ae35f918f8eb91033b9dfd9405f3c3707c42b061c2df00da2",
+    "historical_acceptance_sha256": "2c57b5ada7ffc62a8c429e0cc285bbb5ba1030c9ebd64f8434663e1e7c7c3b46"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2667,7 +2667,7 @@
     "?GetClassID@WeaponTypeClass@@UAGJPAUGUID@@@Z": 7552080,
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
     "__imp__GetWindowLongA@8": 7971980,
-    "?Load@MapSelect@@QAE_NABVWstring@@@Z": 5963824,
+    "?Load@MapSelectData@@QAE_NABVWstring@@@Z": 5963824,
     "?QueryInterface@AbstractClass@@UAGJABUGUID@@PAPAX@Z": 4259840,
     "_IID_IUnknown_7afce0": 8060128,
     "_IID_IPersistStream": 8060112,
@@ -6075,9 +6075,9 @@
     "?Stop@ThemeClass@@QAEX_N@Z": 7242144,
     "?Error@CCFileClass@@UAEXHHPBD@Z": 4624384,
     "??_7CD@@6B@": 7985256,
-    "??0MapSelect@@QAE@XZ": 5963536,
-    "??1MapSelect@@QAE@XZ": 5963680,
-    "?Clear@MapSelect@@QAEXXZ": 5965616,
+    "??0MapSelectData@@QAE@XZ": 5963536,
+    "??1MapSelectData@@QAE@XZ": 5963680,
+    "?Clear@MapSelectData@@QAEXXZ": 5965616,
     "?To_Lower@Wstring@@QAEXXZ": 7794208,
     "?Get_Token@WideString@@QBEHHPBGAAV1@@Z": 7802192,
     "?Get_Token@Wstring@@QBEHHPBDAAV1@@Z": 7795200,

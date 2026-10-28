@@ -4,8 +4,8 @@
     "id": "population-1674",
     "inventory_sha256": "145e075a0a05bf073d6d60d333a26b4c742ee79e6dbc5c653b8d4805b0d6ced3",
     "gaps_sha256": "42a2f15835be44faf3803158e75ea1fce57cb1f995c80f75a0bc763b4ae22cdc",
-    "historical_population_sha256": "9425ba98b82c87211f1714d03960e3f7a7049befbc87fc76a2db71dcbf3b76e4",
-    "historical_acceptance_sha256": "7daa5c43ed0ba82c8a3e9a3db0f418597b029e0d8447bbed86fb8cfc86df9c7e",
+    "historical_population_sha256": "397895a3be285ee4944db50021018a946307dce5287ba6d30939a77069eadb98",
+    "historical_acceptance_sha256": "399bbc2dd21f4d5a242e16db8422c6842eb382e14a268c03c273fd7108936a8e",
     "separate_units": true
   },
   "references": {
@@ -309,7 +309,7 @@
     "?GetClassID@WeaponTypeClass@@UAGJPAUGUID@@@Z": 7552080,
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
     "__imp__GetWindowLongA@8": 7971980,
-    "?Load@MapSelect@@QAE_NABVWstring@@@Z": 5963824,
+    "?Load@MapSelectData@@QAE_NABVWstring@@@Z": 5963824,
     "??0AbstractClass@@QAE@XZ": 4259600,
     "?QueryInterface@AbstractClass@@UAGJABUGUID@@PAPAX@Z": 4259840,
     "_IID_IUnknown_7afce0": 8060128,

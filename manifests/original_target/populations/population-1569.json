@@ -4,8 +4,8 @@
     "id": "population-1569",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "8912e0a39f37aa795418efe0d89d37ef3cc4cdbf5f5ba2bf6d52e48f2dff19cc",
-    "historical_acceptance_sha256": "31160402fc3aa429c08ce5a3010abeaeeb2ecfbf6ee85ad6b4ca2a314f5d7019"
+    "historical_population_sha256": "4880a035c55b81b8a324e585082c10057b2439150b1a70ed88af172b13112553",
+    "historical_acceptance_sha256": "c11fe75d9f5c35be86a53afd2a22ec51c939385c4912ee813cd5ea47b0a0d356"
   },
   "references": {
     "?Get@Straw@@UAEHPAXH@Z": 6926496,
@@ -104,7 +104,7 @@
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
     "__DAT_00a769e8": 10971624,
     "?Length@WideString@@QBEIXZ": 7799968,
-    "?Load@MapSelect@@QAE_NABVWstring@@@Z": 5963824,
+    "?Load@MapSelectData@@QAE_NABVWstring@@@Z": 5963824,
     "?Get@WWKeyboardClass@@QAEGXZ": 5448480,
     "__real@8@4006ff00000000000000": 8007504,
     "_?empty@?1??Get_Rect@MSVQAnim@@UAE?AVRect@@XZ@4V3@A": 10950680,

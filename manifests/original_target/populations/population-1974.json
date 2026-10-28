@@ -4,8 +4,8 @@
     "id": "population-1974",
     "inventory_sha256": "05b8636cbafaea9f5c7c39b1a3a4490abea3415b0a1e0158291722e3d02725ef",
     "gaps_sha256": "1483ab260e98d0a0f9bdcaa41b2e59e985f8fb5f586e40c15b1b601be6139f8c",
-    "historical_population_sha256": "41e01ed78c7a7ac1f18af47ae9914620bf6a1a6cc87d19e893d5541e1ffd5eff",
-    "historical_acceptance_sha256": "50dc8df5274e488f20e2126b04149215926e16a52e9a82d4911f7ad85b37fbe8"
+    "historical_population_sha256": "7d6cae3db5c95335e2be307bffbcfb664538e0a1cc334529d4b5c011edee2ace",
+    "historical_acceptance_sha256": "37d43f4491a3c93ba5194e13a2c13de4c4198316c1340374ef17b10711b29ec5"
   },
   "references": {
     "??8UnknownStreamPtr@@": 4805072,
@@ -257,7 +257,7 @@
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
     "__DAT_00a769e8": 10971624,
     "__imp__GetWindowLongA@8": 7971980,
-    "?Load@MapSelect@@QAE_NABVWstring@@@Z": 5963824,
+    "?Load@MapSelectData@@QAE_NABVWstring@@@Z": 5963824,
     "__real@8@4006ff00000000000000": 8007504,
     "_?empty@?1??Get_Rect@MSVQAnim@@UAE?AVRect@@XZ@4V3@A": 10950680,
     "??0AbstractClass@@QAE@XZ": 4259600,

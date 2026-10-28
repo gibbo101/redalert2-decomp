@@ -4,8 +4,8 @@
     "id": "population-2180",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "664c0154b3b6e068360de868ff28516d964f1c6b4bb2ce13b061ea645b26394d",
-    "historical_acceptance_sha256": "e2fc1ff1d7b4a83bcaa340a18332bbd590f8a362765a93f9eccaedc16cb213c0"
+    "historical_population_sha256": "c803fae958dc75ec1cc963eadb85c68092b6408a8873292109f4374dd2643ac2",
+    "historical_acceptance_sha256": "3ef1b4294f19da8aff42633330c2dd05cf27c314761dd5a0091d0f971f7639ef"
   },
   "references": {
     "?unknown_ipx_manager_a40978@@3VIPXManagerClass@@A": 10750328,
@@ -1751,7 +1751,7 @@
     "??_7MSEngine@@6B@": 8024104,
     "?Replace_Anim@MSEngine@@QAEXPAVMSAnim@@0@Z": 5975504,
     "?Broadcast@MSEngine@@QAEXH@Z": 5978112,
-    "?Clear@MapSelect@@QAEXXZ": 5965616,
+    "?Clear@MapSelectData@@QAEXXZ": 5965616,
     "?Length@WideString@@QBEIXZ": 7799968,
     "?Resize@?$VectorClass@UPoint2D@@@@UAE_NHPBUPoint2D@@@Z": 5970320,
     "__imp__GetWindowLongA@8": 7971980,

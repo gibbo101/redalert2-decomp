@@ -4,8 +4,8 @@
     "id": "population-1806",
     "inventory_sha256": "aa1c322bd4fe1360cf03b06e904e1cf81a94cf91608d63b94f5894925f169964",
     "gaps_sha256": "831decf4df3c9f6d9f71e480308a3016a0ba68cc60910bbc0cc55ade5ce89b41",
-    "historical_population_sha256": "2ab3a8eba8e56868ce8cfb38b882ffb40b556a357a5aa7504a5f615fae2ecf97",
-    "historical_acceptance_sha256": "3d6695e6ba82dc98e804152678399d1d0bb3893449b6019417d28a992a043174"
+    "historical_population_sha256": "c7dd0bbc244110625c81cee0f2719d3f024677eb755a6a7092cc5946d549ac59",
+    "historical_acceptance_sha256": "d3253feaa26006336c1391824efd5b8c74bef344a134df1733ed02628634f6a3"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -1394,7 +1394,7 @@
     "??0MSEngine@@QAE@XZ": 5975008,
     "??_7MSEngine@@6B@": 8024104,
     "?Replace_Anim@MSEngine@@QAEXPAVMSAnim@@0@Z": 5975504,
-    "?Clear@MapSelect@@QAEXXZ": 5965616,
+    "?Clear@MapSelectData@@QAEXXZ": 5965616,
     "?Length@WideString@@QBEIXZ": 7799968,
     "?Resize@?$VectorClass@UPoint2D@@@@UAE_NHPBUPoint2D@@@Z": 5970320,
     "?Clear@WWKeyboardClass@@QAEXXZ": 5450224,

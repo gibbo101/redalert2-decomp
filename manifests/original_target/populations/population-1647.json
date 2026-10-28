@@ -4,8 +4,8 @@
     "id": "population-1647",
     "inventory_sha256": "54303d0ac59d8bdcd7f9a2761275563bd72396f93478d880ea2872e53c31574d",
     "gaps_sha256": "7d721b28bed83c66670ccf7c5781542b3bb48cdb55a1ffe02152fe2ac15ad694",
-    "historical_population_sha256": "1d54a3fa50865a466752ba3cfe437a027b9977dbe4efc6a924f14888a78236b2",
-    "historical_acceptance_sha256": "3d56a7009d63312598ec452f4f89a9e9d6fed38dcf115c49f5042009a7093966",
+    "historical_population_sha256": "bc568dead11986c45074f5fbc74f85a2f510f526c5b6d366998d7df27832eed1",
+    "historical_acceptance_sha256": "a5ddc6f1c074154fc2483445c3c2c4ab57622a5474ca16523a1263f687293a90",
     "separate_units": true
   },
   "references": {
@@ -1507,7 +1507,7 @@
     "??_7?$DynamicVectorClass@PAVMapStage@@@@6B@": 8023784,
     "??_7?$DynamicVectorClass@PAVMSAnimEntry@@@@6B@": 8023752,
     "??_7?$DynamicVectorClass@PAVMSSfxEntry@@@@6B@": 8023720,
-    "?Clear@MapSelect@@QAEXXZ": 5965616,
+    "?Clear@MapSelectData@@QAEXXZ": 5965616,
     "?Length@WideString@@QBEIXZ": 7799968,
     "?Resize@?$VectorClass@UPoint2D@@@@UAE_NHPBUPoint2D@@@Z": 5970320,
     "?Clear@WWKeyboardClass@@QAEXXZ": 5450224,

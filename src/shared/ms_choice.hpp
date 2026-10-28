@@ -3,8 +3,9 @@
 // clickable selections, the screen's animations and sound effects.
 //
 // Names: MapStage, MapSelection, MSTextEntry, MSAnimEntry and MSSfxEntry come
-// from the RTTI of their DynamicVectorClass instances; MapSelect from the
-// "MapSelect:" debug strings (hypothesis; the class has no vtable). Layouts
+// from the RTTI of their DynamicVectorClass instances. MapSelectData is a
+// hypothesis for the nonpolymorphic helper (the "MapSelect:" debug strings);
+// original RTTI names its MSEngine-derived owner MapSelect. Layouts
 // from the constructors 0x005AFF10, 0x005B13D0, 0x005B14C0, 0x005B15B0 and
 // the destructors 0x005AFFA0, 0x005B11B0. Method and member names other than
 // the INI keys are hypotheses.
@@ -92,10 +93,10 @@ public:
 };
 
 // The map selection screen (0x5C bytes).
-class MapSelect {
+class MapSelectData {
 public:
-    MapSelect();                                        // 0x005AFF10
-    ~MapSelect();                                       // 0x005AFFA0
+    MapSelectData();                                        // 0x005AFF10
+    ~MapSelectData();                                       // 0x005AFFA0
 
     bool Load(Wstring const &section);                  // 0x005B0030 (MAPSEL.INI)
     void Clear();                                       // 0x005B0730

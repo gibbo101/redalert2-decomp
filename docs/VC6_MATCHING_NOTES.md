@@ -43,6 +43,20 @@ starting points for the next class, not guarantees.
 
 ## Inlining and translation units
 
+- Two out-of-line functions with identical bodies called from one inline
+  expansion (or from the two element loops of one template) are two levels of
+  one constructor chain: a wrapper and the constructor it forwards to
+  (`D(x, y, z) : Base(x, y, z) {}`). Call sites that read the returned `this`
+  to copy a temporary call the inner constructor directly; an inline-expanded
+  constructor leaves an inner call whose result is ignored.
+- In DynamicVectorClass<T>::Resize the placement `new (array) T[n]` loop
+  expands one constructor level more than the heap `new T[n]` loop, whatever
+  their source order. A one-level element constructor is called by the heap
+  loop and expanded by the placement loop (ZoneConnectionClass 0x0056B330); a
+  two-level chain gives an outer call in the heap loop and an inner call in the
+  placement loop (WaypointClass 0x007256C0: 0x00434820, then 0x0041B630).
+  VectorClass<T>::Resize compiled alone (0x007254F0) expands both levels.
+
 - `/Ob2` inlines across functions of one translation unit, including
   functions defined later in it (`RawFileClass::Close` into `Is_Available`)
   and `inline` helpers with no out-of-line copy (`Raw_Seek`). Accept a class's

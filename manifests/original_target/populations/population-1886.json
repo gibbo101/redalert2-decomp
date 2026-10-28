@@ -4,8 +4,8 @@
     "id": "population-1886",
     "inventory_sha256": "481c0a5d3bb8312204e906f1987c3260a3cdbe840c5c715b9e2dc49a0df76f2c",
     "gaps_sha256": "82b45117a2fe70c78ec83081a058887aa64d19777e11d604be503aac15ebf8c2",
-    "historical_population_sha256": "c599395f8651ac8fa35ffad515a1ef9831c3836cecd39989088faf5c01a168d9",
-    "historical_acceptance_sha256": "1302beb9dd34d8c62ebb9ba7d92c2c31d425787c00209980a1e9e3f48b996dba"
+    "historical_population_sha256": "f39c5b2f46ba9fc4e79820d7d8683dad1309249218fabdd91219ffa9beb642f0",
+    "historical_acceptance_sha256": "71b6c18d4a0c986410cd7f37707fbbcb06d3d2f6eb50feb07e1ad4166fbaea5c"
   },
   "references": {
     "_unknown_empty_rect": 8728704,
@@ -821,7 +821,7 @@
     "?Clear@?$VectorClass@_N@@UAEXXZ": 5209904,
     "?Clear@CounterClass@@UAEXXZ": 4791664,
     "?Clear@INIClass@@QAE_NPBD0@Z": 5290400,
-    "?Clear@MapSelect@@QAEXXZ": 5965616,
+    "?Clear@MapSelectData@@QAEXXZ": 5965616,
     "?Clear@UnknownTable_70c540@@QAEXXZ": 7390528,
     "?Clear@WWKeyboardClass@@QAEXXZ": 5450224,
     "?Clear_Focus@DropListClass@@UAEXXZ": 4870224,
@@ -1755,7 +1755,7 @@
     "?Load@LayerClass@@QAEJPAUIStream@@@Z": 5458560,
     "?Load@LocomotionClass@@UAGJPAUIStream@@@Z": 5493696,
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
-    "?Load@MapSelect@@QAE_NABVWstring@@@Z": 5963824,
+    "?Load@MapSelectData@@QAE_NABVWstring@@@Z": 5963824,
     "?Load@MechLocomotionClass@@UAGJPAUIStream@@@Z": 5845344,
     "?Load@ObjectClass@@UAGJPAUIStream@@@Z": 6113120,
     "?Load@ObjectTypeClass@@UAGJPAUIStream@@@Z": 6126640,

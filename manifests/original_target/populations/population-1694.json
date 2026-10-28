@@ -4,8 +4,8 @@
     "id": "population-1694",
     "inventory_sha256": "9e2cd973910f0ed6e2fb8298c3a5ad8212dd4286bcbedec15dc0282757007aca",
     "gaps_sha256": "fe6df666ecfeabc59ac0c96c3ef4814604ed83e019eaa0b84c394eb053b9756c",
-    "historical_population_sha256": "4b79a93c046b0a5eee456721e86b2c381a03f7255014b51218e73b1a70c1a976",
-    "historical_acceptance_sha256": "141b1b1f4b6e318eaf4d195c9142cf70eaac82655b451b1a209e85b63d366b0f"
+    "historical_population_sha256": "482b3e70a682fa7d3f0ef6bacd4f07f388dc96a4e1b03044442a36ce0178d98a",
+    "historical_acceptance_sha256": "936720ab5ce11912c3c167c6fa64efe1a89e204c3c1e286b2b708e7f1f749ba1"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1395,7 +1395,7 @@
     "?GetClassID@WeaponTypeClass@@UAGJPAUGUID@@@Z": 7552080,
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
     "__imp__GetWindowLongA@8": 7971980,
-    "?Load@MapSelect@@QAE_NABVWstring@@@Z": 5963824,
+    "?Load@MapSelectData@@QAE_NABVWstring@@@Z": 5963824,
     "??0AbstractTypeClass@@QAE@ABVNoInitClass@@@Z": 4261600,
     "??_7AbstractTypeClass@@6BIPersistStream@@@": 7974536,
     "??_7AbstractTypeClass@@6BIRTTITypeInfo@@@": 7974508,
@@ -2481,7 +2481,7 @@
     "??0MSEngine@@QAE@XZ": 5975008,
     "??_7MSEngine@@6B@": 8024104,
     "?Replace_Anim@MSEngine@@QAEXPAVMSAnim@@0@Z": 5975504,
-    "?Clear@MapSelect@@QAEXXZ": 5965616,
+    "?Clear@MapSelectData@@QAEXXZ": 5965616,
     "?Length@WideString@@QBEIXZ": 7799968,
     "?Resize@?$VectorClass@UPoint2D@@@@UAE_NHPBUPoint2D@@@Z": 5970320,
     "?Clear@WWKeyboardClass@@QAEXXZ": 5450224,
