@@ -114,7 +114,7 @@ extern int unknown_abcd68;
 extern int unknown_abcd6c;
 // Set once the new-construction speech is suppressed (0x00A40774).
 // A redraw request flag (0x008373C3).
-// Speech by name: Unknown_00715B40 is in shared/vox_class.hpp.
+// Speech by name: Speech_Play_Name is in shared/vox_class.hpp.
 // A factory: its completion (0x004B98F0).
 class ObjectClass;
 class UnknownFactory {

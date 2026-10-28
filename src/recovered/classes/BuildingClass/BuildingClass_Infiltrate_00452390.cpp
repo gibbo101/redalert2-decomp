@@ -43,21 +43,21 @@ void BuildingClass::Unknown_00452390(HouseClass *house)
     if(type->Radar) {
         House->unknown_func_4f5880();
         if(House->Unknown_004F52B0() && !House->unknown_566a && visible)
-            Unknown_00715B40(unknown_eva_007cfb74,-1,-1);
+            Speech_Play_Name(unknown_eva_007cfb74,-1,-1);
         if(house->Unknown_004F52B0() && !House->unknown_566a && visible)
-            Unknown_00715B40(unknown_eva_007cfb54,-1,-1);
+            Speech_Play_Name(unknown_eva_007cfb54,-1,-1);
     } else if(type->Power > 0) {
         House->unknown_func_4f5800(Rules->SpyPowerBlackout);
         if(House->Unknown_004F52B0() && visible) {
-            Unknown_00715B40(unknown_eva_007cfb40,-1,-1);
+            Speech_Play_Name(unknown_eva_007cfb40,-1,-1);
         } else if(house->Unknown_004F52B0() && visible) {
-            Unknown_00715B40(unknown_eva_007cfb28,-1,-1);
-            Unknown_00715B40(unknown_eva_007cfb0c,-1,-1);
+            Speech_Play_Name(unknown_eva_007cfb28,-1,-1);
+            Speech_Play_Name(unknown_eva_007cfb0c,-1,-1);
         }
     } else if(type->SuperWeapon != -1) {
         House->Supers[type->SuperWeapon]->unknown_69ebb0();
         if(House->Unknown_004F52B0() || (house->Unknown_004F52B0() && visible))
-            Unknown_00715B40(unknown_eva_007cfb28,-1,-1);
+            Speech_Play_Name(unknown_eva_007cfb28,-1,-1);
     } else {
         for(int index=0;index<Rules->BuildTech.Count();++index) {
             if(Rules->BuildTech[index] == type) {
@@ -65,10 +65,10 @@ void BuildingClass::Unknown_00452390(HouseClass *house)
                 else house->unknown_204 = true;
                 house->unknown_144 = true;
                 if(House->Unknown_004F52B0() && visible)
-                    Unknown_00715B40(unknown_eva_007cfac8,-1,-1);
+                    Speech_Play_Name(unknown_eva_007cfac8,-1,-1);
                 if(house->Unknown_004F52B0() && visible) {
-                    Unknown_00715B40(unknown_eva_007cfb28,-1,-1);
-                    Unknown_00715B40(unknown_eva_007cfaac,-1,-1);
+                    Speech_Play_Name(unknown_eva_007cfb28,-1,-1);
+                    Speech_Play_Name(unknown_eva_007cfaac,-1,-1);
                 }
                 goto finished;
             }
@@ -78,18 +78,18 @@ void BuildingClass::Unknown_00452390(HouseClass *house)
             House->Unknown_004E5280(stolen);
             house->Refund_Money(stolen);
             if(House->Unknown_004F52B0() && visible)
-                Unknown_00715B40(unknown_eva_007cfafc,-1,-1);
+                Speech_Play_Name(unknown_eva_007cfafc,-1,-1);
             if(house->Unknown_004F52B0() && visible)
-                Unknown_00715B40(unknown_eva_007cfae0,-1,-1);
+                Speech_Play_Name(unknown_eva_007cfae0,-1,-1);
         } else if(type->Factory == 40) {
             house->unknown_207 = true;
             house->unknown_144 = true;
             if(house->Unknown_004F52B0()) unknown_flag_8373c2 = true;
             if(House->Unknown_004F52B0() && visible)
-                Unknown_00715B40(unknown_eva_007cfac8,-1,-1);
+                Speech_Play_Name(unknown_eva_007cfac8,-1,-1);
             if(house->Unknown_004F52B0() && visible) {
-                Unknown_00715B40(unknown_eva_007cfb28,-1,-1);
-                Unknown_00715B40(unknown_eva_007cfaac,-1,-1);
+                Speech_Play_Name(unknown_eva_007cfb28,-1,-1);
+                Speech_Play_Name(unknown_eva_007cfaac,-1,-1);
             }
 
         } else if(type->Factory == 16) {
@@ -97,10 +97,10 @@ void BuildingClass::Unknown_00452390(HouseClass *house)
             house->unknown_144 = true;
             if(house->Unknown_004F52B0()) unknown_flag_8373c2 = true;
             if(House->Unknown_004F52B0() && visible)
-                Unknown_00715B40(unknown_eva_007cfac8,-1,-1);
+                Speech_Play_Name(unknown_eva_007cfac8,-1,-1);
             if(house->Unknown_004F52B0() && visible) {
-                Unknown_00715B40(unknown_eva_007cfb28,-1,-1);
-                Unknown_00715B40(unknown_eva_007cfaac,-1,-1);
+                Speech_Play_Name(unknown_eva_007cfb28,-1,-1);
+                Speech_Play_Name(unknown_eva_007cfaac,-1,-1);
             }
         }
     }

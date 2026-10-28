@@ -35,7 +35,7 @@ void __fastcall Unknown_0065e590()
     Map.Set_Default_Mouse(0, false);
     Theme.Stop(true);
     Audio_Level_Fade_To_Zero(&Audio_Global_Levels[7]->Volume);
-    Unknown_00715B40("EVA_BattleControlTerminated", 2, -1);
+    Speech_Play_Name("EVA_BattleControlTerminated", 2, -1);
     Audio_Wait_Drain(&Audio_Global_Levels[7]->Volume);
     long end = TickCount.Time() + 300;
     while (Speech_Is_Playing() && end > TickCount.Time()) {

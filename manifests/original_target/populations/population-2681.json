@@ -4,8 +4,8 @@
     "id": "population-2681",
     "inventory_sha256": "88707110680051360eb08f798a22706ad5f358a7ff031a3a275a52aedcf6cbbd",
     "gaps_sha256": "bbe03305dce035c3a0d3281eed3fcea4b9d042a193b89afb63ce31ffb5d6dd30",
-    "historical_population_sha256": "ea634dac2123516ff7b159d78a32562237c6492a6612e93bc264624074337594",
-    "historical_acceptance_sha256": "5299cf22691492f99a147c2a0e2d485a6729e94ecbf91806acb87df3af9ac095"
+    "historical_population_sha256": "9abc15133c7b19c8625a9b242c80ae266a99763dd496bc15dda50e62614bd4c5",
+    "historical_acceptance_sha256": "688b045cbf4fbef713d6be24442632af3d7db68a4a93e2fab48623a57d51021a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1461,7 +1461,7 @@
     "?unknown_slot219@TechnoClass@@UAEPAVAbstractClass@@HPBUCoordStruct@@_N@Z": 7103792,
     "?Unknown_004F52B0@HouseClass@@QAE_NXZ": 5198512,
     "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z": 7421536,
-    "?Unknown_00715B40@@YIHPBDHH@Z": 7428928,
+    "?Speech_Play_Name@@YIXPBDHH@Z": 7428928,
     "??_C@_0O@MHGH@EVA_Repairing?$AA@": 8190100,
     "?Voc_Play@@YIPAUAudioEvent@@HMHPAUAudioEventHandle@@@Z": 7421360,
     "?unknown_slot27@TechnoClass@@": 7130336,
@@ -10941,7 +10941,29 @@
     "?Audio_Event_Handle_Finish@@YIXPAUAudioEventHandle@@@Z": 4218848,
     "?Process@VocClass@@SIXAAVCCINIClass@@@Z": 7423296,
     "?Find@VocClass@@SIPAV1@PBD@Z": 7424400,
-    "?unknown_slot43@MultiplayerGameMode@@UAE_NPAVHouseClass@@PAH@Z": 5996432
+    "?unknown_slot43@MultiplayerGameMode@@UAE_NPAVHouseClass@@PAH@Z": 5996432,
+    "?unknown_slot5@FreeForAll@@UAE_NPAVWideString@@@Z": 5927104,
+    "?unknown_slot43@MultiplayerSiege@@UAE_NPAVHouseClass@@PAH@Z": 5945984,
+    "?unknown_slot27@MultiplayerSiege@@UAE_N_N@Z": 5945200,
+    "?unknown_slot43@UnholyAlliance@@UAE_NPAVHouseClass@@PAH@Z": 5948368,
+    "?unknown_slot44@MultiplayerGameMode@@UAE_NPAVHouseClass@@PAH@Z": 5996640,
+    "?Read_INI@VoxClass@@QAE_NAAVCCINIClass@@@Z": 7430624,
+    "?Find@VoxClass@@SIPAV1@PBD@Z": 7431872,
+    "?Index_Of@VoxClass@@SIHPAV1@@Z": 7432000,
+    "?Index_Of@VocClass@@SIHPAV1@@Z": 7424560,
+    "?Draw@MessageListClass@@QAEXXZ": 5987120,
+    "?Create@?$Initializer@VMultiplayerBattle@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000736,
+    "?Create@?$Initializer@VMultiplayerManBattle@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000800,
+    "?Create@?$Initializer@VMultiplayerSiege@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000864,
+    "?Create@?$Initializer@VUnholyAlliance@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000928,
+    "?Create@?$Initializer@VFreeForAll@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000992,
+    "?Create@?$Initializer@VMPCooperative@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6001056,
+    "?Speech_Clear@@YAXXZ": 7428016,
+    "?Speech_Play@@YIXHHH@Z": 7428288,
+    "?Speech_Shutdown@@YAXXZ": 7427968,
+    "??0VoxClass@@QAE@PBD@Z": 7430368,
+    "??1VoxClass@@QAE@XZ": 7430544,
+    "??0?$DynamicVectorClass@PAVMultiplayerGameMode@@@@QAE@IPBQAVMultiplayerGameMode@@@Z": 6002112
   },
   "regions": [
     {
@@ -16089,7 +16111,7 @@
         {
           "offset": 200,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2958324
@@ -16119,7 +16141,7 @@
           "resolved": 2950865
         }
       ],
-      "source_sha256": "21f7a5840c5588fe4b60c8aeebc128bc93bccab0d574ccda7f64b73fcda4b67b",
+      "source_sha256": "a458f447d11664d0a3eb9c2606add44caa4cdf8177cae7586a15c54660d3391d",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_unknown_slot97_00443680.cpp",
       "population": "population-2681",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
@@ -17618,7 +17640,7 @@
         {
           "offset": 128,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2917772
@@ -17648,7 +17670,7 @@
           "resolved": 660888
         }
       ],
-      "source_sha256": "39ba6cb785136c5e99ffca9c9513e87e75351c0df12e1eb5e2cc6213a3d6fe06",
+      "source_sha256": "c3287e87c78b8dd45c770afc920e0c0347accb704d0eabdcd614dedf01b1c741",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_unknown_44d530_0044d530.cpp",
       "population": "population-2681",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
@@ -19449,13 +19471,13 @@
         {
           "offset": 196,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2954488
         }
       ],
-      "source_sha256": "80592522b497984481dbe07996d94255d532b96e1f095a4f76f071828eb90fcf",
+      "source_sha256": "8d81c8e2397180f098d1da24fbd699156b7d0d5221935c2233a72c1a2038a448",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Toggle_Primary_Factory_00444580.cpp",
       "population": "population-2681",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
@@ -19782,13 +19804,13 @@
         {
           "offset": 326,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2917910
         }
       ],
-      "source_sha256": "5db745cf1d300e92d86d96b7599e3a893b0383bc271a5a4bc9ad4eac02a8dcf9",
+      "source_sha256": "f94dc57e81f75146087c952d2445bf202b52610896724ea2defae9cf58ef1205",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Power_On_0044d3e0.cpp",
       "population": "population-2681",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
@@ -23718,7 +23740,7 @@
         {
           "offset": 177,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2893707
@@ -23758,7 +23780,7 @@
         {
           "offset": 287,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2893597
@@ -23780,7 +23802,7 @@
           "resolved": 2886172
         }
       ],
-      "source_sha256": "a752738619d7d5605ac558c4abc45b6473cbd1ba4dfbfc4453b1ef277fc9398f",
+      "source_sha256": "701bdd0d54bec8974bcd92de2e0c9574d878e0d06b898d45dba4539b8832a19d",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_unknown_453300_00453300.cpp",
       "population": "population-2681",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
@@ -24256,7 +24278,7 @@
         {
           "offset": 145,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2897691
@@ -24328,7 +24350,7 @@
         {
           "offset": 309,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2897527
@@ -24432,7 +24454,7 @@
         {
           "offset": 558,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2897278
@@ -24496,7 +24518,7 @@
         {
           "offset": 733,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2897103
@@ -24544,7 +24566,7 @@
         {
           "offset": 821,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2897015
@@ -24568,7 +24590,7 @@
         {
           "offset": 851,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2896985
@@ -24584,13 +24606,13 @@
         {
           "offset": 866,
           "kind": 20,
-          "symbol": "?Unknown_00715B40@@YIHPBDHH@Z",
+          "symbol": "?Speech_Play_Name@@YIXPBDHH@Z",
           "target": 7428928,
           "addend": 0,
           "resolved": 2896970
         }
       ],
-      "source_sha256": "a37394827b7caf361f81242b2d2cac6ff2bec750f464593f47fb9a2ec382c10b",
+      "source_sha256": "6e6f2445d3b9e8f6e533d699f32faaec0bcec5943534fd9946df754d8f86adf3",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Infiltrate_00452390.cpp",
       "population": "population-2681",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",

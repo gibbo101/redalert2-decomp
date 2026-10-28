@@ -30,9 +30,9 @@ public:
     int State;                      // +0x48 0 playing, 1 queued, 2 neither
 };
 
-// Speech by name (0x00715B40; hypothesis: VoxClass::Speak; returns what the
-// play call 0x007158C0 returns). Was void in shared/foot.hpp.
-int __fastcall Unknown_00715B40(char const *name, int arg2, int arg3);
+// Plays the VoxClass of a name (nothing for a null name; 0x00715B40; name
+// hypothesis): Speech_Play(VoxClass::Find_Index(name), type, priority).
+void __fastcall Speech_Play_Name(char const *name, int type, int priority);
 // Stops the voice (EVA) speech (0x00715DE0; argument meaning unknown) and
 // whether a voice is playing (0x00715E20). Names are hypotheses.
 void __fastcall Speech_Stop(bool clear);

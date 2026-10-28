@@ -19,7 +19,6 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - The owner session restarts from this file when its context passes about 200K tokens.
 
 Running Mac lanes (resume folders `build/class-work/<Lane>/`, NOTES.md and `d/rN/`):
-- Coop115 (Opus): finishing its current MultiplayerGameMode/MessageListClass round, then stops.
 - Seed117 (Opus): VoxClass::Find_Index 0x716640 and the two functions it unblocks (0x715B40,
   0x7163F0), then stops.
 Next-lane candidates: the MultiplayerGameMode fill-combo family 0x5B70B0/0x5B71E0/0x5B8490 (inline

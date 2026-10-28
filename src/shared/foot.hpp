@@ -58,7 +58,7 @@ UnknownCellObject710160 *__fastcall Unknown_00710160(Cell const &cell);  // 0x00
 #include "shared/tube.hpp"
 
 // Announcements by name ("EVA_UnitSold", "EVA_UnitLost") go through
-// Unknown_00715B40 (shared/vox_class.hpp).
+// Speech_Play_Name (shared/vox_class.hpp).
 // Raises an event of a kind at a cell: shared/radar_event.hpp.
 #include "shared/radar_event.hpp"
 

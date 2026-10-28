@@ -14,7 +14,7 @@
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
 // @ref ?unknown_func_4f3170@HouseClass@@QAEXH_NH@Z=004f3170
 // @ref ?unknown_func_4eeb90@HouseClass@@QAEXXZ=004eeb90
-// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
+// @ref ?Speech_Play_Name@@YIXPBDHH@Z=00715b40
 // @ref ??_C@_0BE@MBKF@EVA_BuildingOffLine?$AA@=007cfa98
 
 void BuildingClass::unknown_44d530()
@@ -27,7 +27,7 @@ void BuildingClass::unknown_44d530()
         House->unknown_144 = true;
         unknown_44d6c0();
         if (House->Unknown_004F52B0()) {
-            Unknown_00715B40("EVA_BuildingOffLine", -1, -1);
+            Speech_Play_Name("EVA_BuildingOffLine", -1, -1);
         }
         if (Type->Factory) {
             House->unknown_func_4f3170(Type->Factory, Type->Naval, 0);

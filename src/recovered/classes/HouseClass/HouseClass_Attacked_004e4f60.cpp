@@ -10,7 +10,7 @@
 #include "shared/tag.hpp"
 #include "shared/vox_class.hpp"
 // @ref ?Unknown_0063B5B0@@YI_NHVCell@@@Z=0063b5b0
-// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
+// @ref ?Speech_Play_Name@@YIXPBDHH@Z=00715b40
 // @ref ??_C@_0BJ@GFMD@EVA_OurBaseIsUnderAttack?$AA@=007da2b0
 // @ref ??_C@_0BJ@CFMC@EVA_OurAllyIsUnderAttack?$AA@=007da294
 
@@ -24,12 +24,12 @@ void HouseClass::Attacked(TechnoClass *source)
         && (unknown_game_mode_a3d298 == 0 || !source->House->Type->MultiplayPassive);
     if (is_player) {
         if (Unknown_0063B5B0(3, Coord_Cell(source->Center_Coord()))) {
-            Unknown_00715B40("EVA_OurBaseIsUnderAttack", -1, -1);
+            Speech_Play_Name("EVA_OurBaseIsUnderAttack", -1, -1);
             Voc_Play(Rules->BaseUnderAttackSound, 1.0f, 0x2000, 0);
         }
     } else if (is_ally) {
         if (Unknown_0063B5B0(16, Coord_Cell(source->Center_Coord()))) {
-            Unknown_00715B40("EVA_OurAllyIsUnderAttack", -1, -1);
+            Speech_Play_Name("EVA_OurAllyIsUnderAttack", -1, -1);
             Voc_Play(Rules->BaseUnderAttackSound, 1.0f, 0x2000, 0);
         }
     }

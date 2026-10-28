@@ -13,7 +13,7 @@
 #include "shared/vox_class.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
 // @ref ?unknown_func_4f3420@HouseClass@@QAEXXZ=004f3420
-// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
+// @ref ?Speech_Play_Name@@YIXPBDHH@Z=00715b40
 // @ref __real@8@4008e100000000000000=0079b608
 // @ref ??_C@_0L@JHHB@TXT_AT_WAR?$AA@=007da34c
 // @ref ??_C@_0BD@IDCM@EVA_AllianceBroken?$AA@=007da338
@@ -47,7 +47,7 @@ void HouseClass::Make_Enemy(HouseClass *house, bool announce)
             unknown_messages_a3dc70.Add_Message(0, 0, buffer, Type->Color, 0x4046, (int)(Rules->MessageDelay * 900.0), 0);
             Map.Flag_To_Redraw(false);
             if (announce && broken && (Is_Player_Control() || house->Is_Player_Control())) {
-                Unknown_00715B40("EVA_AllianceBroken", -1, -1);
+                Speech_Play_Name("EVA_AllianceBroken", -1, -1);
             }
         }
     }

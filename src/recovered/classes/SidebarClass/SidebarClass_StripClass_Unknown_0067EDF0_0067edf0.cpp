@@ -3,7 +3,7 @@
 // options (except type 31).
 #include "shared/sidebar.hpp"
 // @ref ?unknown_a40774@@3HA=00a40774
-// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
+// @ref ?Speech_Play_Name@@YIXPBDHH@Z=00715b40
 // @ref ?unknown_flag_8373c3@@3_NA=008373c3
 // @ref ?Unknown_0067ED10@StripClass@SidebarClass@@QAEXHH@Z=0067ed10
 // @ref ??_C@_0BL@JFKB@EVA_NewConstructionOptions?$AA@=007f3e40
@@ -17,7 +17,7 @@ bool SidebarClass::StripClass::Unknown_0067EDF0(int type, int id)
             }
         }
         if (!unknown_a40774 && type != 31) {
-            Unknown_00715B40("EVA_NewConstructionOptions", -1, -1);
+            Speech_Play_Name("EVA_NewConstructionOptions", -1, -1);
         }
         Unknown_0067ED10(type, id);
         unknown_38 = true;

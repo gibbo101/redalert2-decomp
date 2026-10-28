@@ -10,7 +10,7 @@
 // @ref ?unknown_func_4f3170@HouseClass@@QAEXH_NH@Z=004f3170
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
 // @ref ??_C@_0BD@BHPD@EVA_BuildingOnLine?$AA@=007cfa58
-// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
+// @ref ?Speech_Play_Name@@YIXPBDHH@Z=00715b40
 void BuildingClass::unknown_44d3e0()
 {
     if(!unknown_530 && unknown_3fc==0) {
@@ -36,6 +36,6 @@ void BuildingClass::unknown_44d3e0()
                 ((AnimClass *)unknown_454[anim])->unknown_func_422c20();
         }
         if(Type->Factory) House->unknown_func_4f3170(Type->Factory,Type->Naval,0);
-        if(House->Unknown_004F52B0()) Unknown_00715B40("EVA_BuildingOnLine",-1,-1);
+        if(House->Unknown_004F52B0()) Speech_Play_Name("EVA_BuildingOnLine",-1,-1);
     }
 }

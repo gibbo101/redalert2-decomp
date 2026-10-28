@@ -5,7 +5,7 @@
 #include "shared/map_cell.hpp"
 #include "shared/building_class.hpp"
 #include "shared/vox_class.hpp"
-// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
+// @ref ?Speech_Play_Name@@YIXPBDHH@Z=00715b40
 // @ref ??_C@_0BJ@MALN@EVA_NewTerrainDiscovered?$AA@=007f6be4
 
 bool TActionClass::unknown_func_6b1650(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
@@ -24,6 +24,6 @@ bool TActionClass::unknown_func_6b1650(HouseClass *house, ObjectClass *object, T
     for (int index = unknown_BuildingClass_list_00a40af8.Count() - 1; index >= 0; index--) {
         unknown_BuildingClass_list_00a40af8[index]->unknown_slot267(true);
     }
-    Unknown_00715B40("EVA_NewTerrainDiscovered", -1, -1);
+    Speech_Play_Name("EVA_NewTerrainDiscovered", -1, -1);
     return true;
 }

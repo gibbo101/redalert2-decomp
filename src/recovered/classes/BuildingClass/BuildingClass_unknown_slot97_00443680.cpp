@@ -9,7 +9,7 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
 // @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
-// @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
+// @ref ?Speech_Play_Name@@YIXPBDHH@Z=00715b40
 // @ref ??_C@_0O@MHGH@EVA_Repairing?$AA@=007cf894
 
 
@@ -43,7 +43,7 @@ void BuildingClass::unknown_slot97(int mode)
             }
             unknown_5ae = true;
             if (House->Unknown_004F52B0()) {
-                Unknown_00715B40("EVA_Repairing", -1, -1);
+                Speech_Play_Name("EVA_Repairing", -1, -1);
             }
         }
     } else {
