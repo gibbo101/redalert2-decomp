@@ -26,7 +26,6 @@
 
 #include "shared/debug_printf.hpp"
 #include "shared/pcx_cache.hpp"
-WIN32_IMPORT HWND WINAPI SetFocus(HWND window);
 
 namespace WOL {
 struct Server {

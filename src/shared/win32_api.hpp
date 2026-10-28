@@ -153,6 +153,60 @@ WIN32_IMPORT BOOL WINAPI EnableWindow(HWND window, BOOL enable);
 #define CB_SETCURSEL 0x14E
 #define CB_GETITEMDATA 0x150
 
+// Window classes and the main window (USER32; COMCTL32 ordinal 17 is
+// InitCommonControls; the game window, shared/win_stub.hpp).
+typedef HANDLE HICON;
+typedef HANDLE HCURSOR;
+typedef HANDLE HBRUSH;
+typedef struct HMENU__ *HMENU;
+typedef LRESULT (WINAPI *WNDPROC)(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+struct WNDCLASSA {
+    UINT style;
+    WNDPROC lpfnWndProc;
+    int cbClsExtra;
+    int cbWndExtra;
+    HINSTANCE hInstance;
+    HICON hIcon;
+    HCURSOR hCursor;
+    HBRUSH hbrBackground;
+    LPCSTR lpszMenuName;
+    LPCSTR lpszClassName;
+};
+WIN32_IMPORT void WINAPI InitCommonControls();
+WIN32_IMPORT HICON WINAPI LoadIconA(HINSTANCE instance, LPCSTR name);
+WIN32_IMPORT HCURSOR WINAPI LoadCursorA(HINSTANCE instance, LPCSTR name);
+WIN32_IMPORT WORD WINAPI RegisterClassA(WNDCLASSA const *window_class);
+WIN32_IMPORT HWND WINAPI CreateWindowExA(DWORD exstyle, LPCSTR class_name, LPCSTR window_name, DWORD style, int x, int y,
+                                         int width, int height, HWND parent, HMENU menu, HINSTANCE instance, void *param);
+WIN32_IMPORT LRESULT WINAPI DefWindowProcA(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+WIN32_IMPORT HMENU WINAPI GetMenu(HWND window);
+WIN32_IMPORT BOOL WINAPI AdjustWindowRectEx(RECT *rect, DWORD style, BOOL menu, DWORD exstyle);
+WIN32_IMPORT BOOL WINAPI MoveWindow(HWND window, int x, int y, int width, int height, BOOL repaint);
+WIN32_IMPORT int WINAPI GetSystemMetrics(int index);
+WIN32_IMPORT BOOL WINAPI UpdateWindow(HWND window);
+WIN32_IMPORT HWND WINAPI SetFocus(HWND window);
+WIN32_IMPORT BOOL WINAPI RegisterHotKey(HWND window, int id, UINT modifiers, UINT key);
+WIN32_IMPORT HCURSOR WINAPI SetCursor(HCURSOR cursor);
+
+// File times (KERNEL32).
+struct SYSTEMTIME {
+    WORD wYear;
+    WORD wMonth;
+    WORD wDayOfWeek;
+    WORD wDay;
+    WORD wHour;
+    WORD wMinute;
+    WORD wSecond;
+    WORD wMilliseconds;
+};
+WIN32_IMPORT BOOL WINAPI FileTimeToSystemTime(FILETIME const *file_time, SYSTEMTIME *system_time);
+
+// Input method editor (IMM32, called through the import thunks 0x00781C20-0x00781C32).
+typedef struct HIMC__ *HIMC;
+extern "C" HIMC __stdcall ImmGetContext(HWND window);                                             // 0x00781C20
+extern "C" BOOL __stdcall ImmNotifyIME(HIMC context, DWORD action, DWORD index, DWORD value);     // 0x00781C26
+extern "C" LONG __stdcall ImmGetCompositionStringA(HIMC context, DWORD index, void *buffer, DWORD length);   // 0x00781C32
+
 // Timers and message records (USER32; the tooltip manager, 0x006EB4E0).
 typedef struct tagMSG {
     HWND hwnd;
