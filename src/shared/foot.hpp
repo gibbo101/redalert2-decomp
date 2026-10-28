@@ -323,11 +323,9 @@ public:
 };
 
 // The unit's list of FootClass objects (0x00865F38; defined by the
-// header-static draft of this unit) and the list at 0x00AC0C18.
+// header-static draft of this unit). The list at 0x00AC0C18 is in
+// shared/object_lists.hpp.
 extern DynamicVectorClass<FootClass *> unknown_FootClass_list_00865f38;
-// Element type of 0x00AC0C18 unknown (TechnoClass * is a placeholder; its
-// Delete(int) copy is 0x00454B20, kept from another unit).
-extern DynamicVectorClass<TechnoClass *> unknown_list_ac0c18;
 
 // Member-wise cell sum: shared/coord.hpp.
 

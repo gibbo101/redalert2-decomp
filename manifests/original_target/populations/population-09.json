@@ -1545,54 +1545,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 4423520,
-      "method": "437f60",
-      "symbol": "?get@Leaf_437f60@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_437f60@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "5950c81e5bc5ffdb7c747f59fda2d27f61e9db7aa61c7d12c0d33b6366cee794",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "42601c1d26d3611c6675a28058a47fa61785aa2df2b02a40e15c89edf2aa34f0",
-      "relocations": [],
-      "source": "src/recovered/classes/NeuronClass/00437f60.cpp",
-      "source_sha256": "d477425c589b31a5368c48e13bb803a4f57a18e77a0242bd152fc4643ee6128d",
-      "source_order": 737,
-      "population": "population-09",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
-      "entry": 4423536,
-      "method": "437f70",
-      "symbol": "?get@Leaf_437f70@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_437f70@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "ec98abb27e45150addcd26549b7971b312b0098e9d9fc3131750bf704f4ab071",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "0781ef9da7876896a61cc4f7db55ee00b6d2a460bcd4c78bf90fa81981f371ab",
-      "relocations": [],
-      "source": "src/recovered/classes/NeuronClass/00437f70.cpp",
-      "source_sha256": "8bcca01919de7e2b196fd78d9f96e5235573a1e14f8692e688b854c962918863",
-      "source_order": 738,
-      "population": "population-09",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 4537168,
       "method": "453b50",
       "symbol": "?get@Leaf_453b50@@QAE_NXZ",

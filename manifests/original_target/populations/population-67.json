@@ -290,40 +290,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 4422512,
-      "method": "00437b70",
-      "symbol": "?FUN_00437b70@seed_00437b70@@YGHIII@Z",
-      "symbol_prefix": "?FUN_00437b70@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 29,
-      "body_sha256": "cae465ea971b594621a63921f9018f02f446367c98aa8e3d34df72df72db0a45",
-      "padding_bytes": 3,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "63b2ae5e5dc7e0b1aac2342fad17c11f4ff8a315c355a314c8c3c5a5ec67ae9a",
-      "relocations": [
-        {
-          "offset": 16,
-          "kind": 20,
-          "symbol": "?FUN_004100c0@seed_00437b70@@YGIHHH@Z",
-          "target": 4260032,
-          "addend": 0,
-          "resolved": 4294804796
-        }
-      ],
-      "source_sha256": "151ade83e2fadf5d00990255f413ea090ea33de61d5c0f13c546c69a3feaa5f4",
-      "source": "src/recovered/classes/NeuronClass/00437b70.cpp",
-      "source_order": 7981,
-      "population": "population-67",
-      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 4537184,
       "method": "00453b60",
       "symbol": "?FUN_00453b60@seed_00453b60@@YGEH@Z",

@@ -268,55 +268,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 4422544,
-      "method": "437b90",
-      "symbol": "?get@Leaf_437b90@@QAEII@Z",
-      "symbol_prefix": "?get@Leaf_437b90@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 37,
-      "body_sha256": "5520e310711328444995de361813ec22c9e3b7b6c1b3d496eefe3fae201eb42e",
-      "padding_bytes": 11,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "1c1dde8fce3a130ee014217de7253d587170067e391e427dea83431fb89b303e",
-      "relocations": [
-        {
-          "offset": 10,
-          "kind": 20,
-          "symbol": "?target@Call_437b90_0@@QAEII@Z",
-          "target": 4260272,
-          "addend": 0,
-          "resolved": 4294805010
-        },
-        {
-          "offset": 15,
-          "kind": 6,
-          "symbol": "_global_437b90_a40d2c",
-          "target": 10751276,
-          "addend": 0,
-          "resolved": 10751276
-        },
-        {
-          "offset": 28,
-          "kind": 20,
-          "symbol": "?target@Call_437b90_1@@QAEII@Z",
-          "target": 4800304,
-          "addend": 0,
-          "resolved": 377728
-        }
-      ],
-      "source": "src/recovered/classes/NeuronClass/00437b90.cpp",
-      "source_sha256": "5660687c679ae6382f495350ad414f2b76f8e3b34a679be32687f8f3f61675e5",
-      "source_order": 736,
-      "population": "population-02",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 4624272,
       "method": "468f90",
       "symbol": "?get@Leaf_468f90@@QAEII@Z",
