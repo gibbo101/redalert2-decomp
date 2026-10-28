@@ -1709,6 +1709,10 @@
       {
         "path": "src/shared/game_options_dialog.hpp",
         "sha256": "0f423e84fa65ea3450f1f03b46e865aeab01c81d152217e1270985d9ad0b7723"
+      },
+      {
+        "path": "src/shared/audio_file.hpp",
+        "sha256": "ae2c2d54d33642a03bbbef2f7f5fc9c8c1eb881d610d8524783eb583169628b2"
       }
     ],
     "source_quality_checkpoint": {
@@ -4513,7 +4517,8 @@
     "population-2791",
     "population-2792",
     "population-2793",
-    "population-2794"
+    "population-2794",
+    "population-2795"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -7544,7 +7549,8 @@
     ["population-2791", 3],
     ["population-2792", 1],
     ["population-2793", 1],
-    ["population-2794", 1]
+    ["population-2794", 1],
+    ["population-2795", 2]
   ],
   "shards": {
     "population-01": "0142c66dfa137e5010b46c1457127cb5277c4095ef75a6def3f382d923335dfa",
@@ -9549,6 +9555,7 @@
     "population-2792": "5ed55affcc46cfe4e4dfd7b9332050b0fe8b5e41e14c9faaca27adf984697793",
     "population-2793": "e39f2d72c9e11789cd8c2ab5efce10dcb90babc448036dd8638830333e3378f4",
     "population-2794": "ff17664732c0907356b543605e9be432291b513ff3a0060c2531f882920cbdde",
+    "population-2795": "f87c2cdbbd2e3a22cc53c70cad56a3dd0ee127e4a5d5ac3a5c5d66f3c45911de",
     "population-28": "7959b510196b47fbd2a8664095e6a7d55c0cb242f8fd24177ec52fc2b11b6998",
     "population-280": "137e8f9da2e56ae16c03434fb88bace5258c0ae4bf020dc45d9b98aaed463efc",
     "population-281": "89a68dbb2bd3487bcae896d17453988ae86d62127907302090c0597dcabc9f2e",
