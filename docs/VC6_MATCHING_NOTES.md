@@ -383,3 +383,55 @@ the ignored build/class-work/Study42/, `f.sh` prints a function's frame map).
   statements picked to hit a count (owner ruling 2026-10-27, landed 5ccf5f93).
 - VC6 numbers a unit's header-static initializers (`_$E`n) in order of first inclusion,
   so include order inside a unit with header statics is part of the match.
+
+## Macro clamps and member accessors (Big51)
+
+- VC6 compiles a parenthesized member `(x)` in a ternary differently from bare `x`: `x = (x) < c ?
+  (x) : c` keeps a copy of the stored value (`fld st(0); fcomp`) and a `je/jmp` pair over the false arm,
+  where `x = x < c ? x : c` gives `fcom` and an inverted branch. Westwood clamps are macros
+  (`#define Min(a, b) ((a) < (b) ? (a) : (b))`); write them as the macro (Read_Basic 0x00661980,
+  RulesClass::General DropPodAngle).
+- An accessor that stands in for a member (`T &List() { return *(T *)((char *)this + 0x2270); }`) is
+  a direct inline site at every use and spends the caller's budget; the original had a member. Declare
+  container members with their real types (shared/vector_class_decl.hpp, shared/type_list_decl.hpp
+  give the class declarations without the member definitions) (UnknownIDSource::Read_Basic).
+
+## Switch layout and cross-jumping (Study50)
+
+Derived from controlled experiments with the real compiler (Study50, 2026-10-27; lab in the
+ignored build/class-work/Study50/, `lay.py` prints a listing's block layout with the cases
+reaching each block).
+
+- Dispatch: up to 3 case labels compile to an ascending compare chain (`dec eax; je`,
+  `sub eax, delta; je`) with the default inline after it and the case blocks in descending value
+  order whatever the source order. From 4 labels a jump table; it is two-level (byte index table
+  plus target table) exactly when 3R > 4n + 12 (R = value range, n = case labels without
+  default). Very sparse switches split at the median value. The target table of a two-level
+  switch lists targets by smallest case value, default last.
+- Jump-table case blocks follow source order; the default block goes after all of them wherever
+  it stands; the code after the switch follows the last case (in source order) that breaks to it,
+  and cases that return come after it. Partial common tails (`add esp, 4`, `call f`) are sunk into
+  the block that falls into the join.
+- Identical blocks (identical final code: a different scratch register prevents it, and scratch
+  registers rotate after a block with fewer temporaries) are merged into one copy; the copy
+  entered by fall-through stays (the first case after a dispatch counts as entered by
+  fall-through); otherwise the later copy stays within one switch, and across two switches the
+  later copy stays only when the block's tail matches the tail of the block that falls into the
+  exit (else the earlier copy stays). Runs of identical consecutive blocks move together. The
+  surviving block keeps the deleted copy's label.
+- Which identical return a duplicate merges into depends on the other paths: TechnoClass slot
+  175 0x6C15D0 sends case 6's `return -1` to the guard's return only with
+  `case 0: if (c) return -1; return 0;` (with `break` to the shared `return 0` it joins case 0's).
+- Two tests of the same values fold when they read the same variables (`if (s == 3 && t == 1)
+  return; if (s != 1 ...)` loses `cmp t, 1`); through inline accessors (`Map.Closing() ||
+  !Map.Active()`) both compares stay and the known constant is reused as a register
+  (`cmp ecx, eax`). Rereading members folds too and leaves a dead load. (RTacticalClass::Action
+  0x62FE30 with RadarClass 0x6331C0 and 0x633110 inline.)
+- `d = d - limit + 1` becomes `mov r, 1; sub r, limit; add d, r` in every spelling; recomputing
+  from the operands (`d = x - y - limit + 1` after `d = x - y`) gives `sub d, limit; inc d`. A
+  named sum (`d = x + y; if (d > h) d -= h;`) gives `add; cmp; sub`; the recomputed
+  `if (x + y > h) d = x + y - h;` can become `lea t, [y + x]; ...; sub y, h; add y, x`.
+- Commutative operand order (which register an `add` writes) is a function-wide tie-break that
+  unrelated temporaries move (0x62FE30's step-4 sum flips only when the slot-48
+  `CoordStruct(cell.X * 256 + 128, ...)` temporary is removed); spelling, casts and local copies
+  do not change it.
