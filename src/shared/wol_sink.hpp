@@ -364,6 +364,7 @@ struct WolRegistryOptions {
     WolRegistryOptions() : Options(0), HasOptions(false) {}
     bool Read_004ff200();
     bool unknown_004ff2c0() const;
+    bool Write_004ff2e0(unsigned int options);
     unsigned int Options;
     bool HasOptions;
 };
