@@ -4,8 +4,8 @@
     "id": "population-1640",
     "inventory_sha256": "9bed87e5f705a4f5ad352b6b1b6452a031913b93078619c6ccf0a5153f2cf9a6",
     "gaps_sha256": "f04d061a8912454e93d3440ea485e4f4c385d8ae623bceee55f5a790077fc14c",
-    "historical_population_sha256": "0d347244cdc7c5377723975244ad696e31abbb9546a2455c67e3cb03e327a979",
-    "historical_acceptance_sha256": "0c1db3985373eceb283d71e2eed80208a8c0e8a826f06725349d08869a03c328",
+    "historical_population_sha256": "60737617ec4e121e4ff4c43235c76b8cc55eb4dc329e7d66556b8fec6c001ad7",
+    "historical_acceptance_sha256": "6e8295c01f4b627309c37efe170f0983b93f9a7fa2919b3fee3033629067d02f",
     "separate_units": true
   },
   "references": {
@@ -3715,7 +3715,7 @@
     "?AI@SpawnManagerClass@@UAEXXZ": 6855824,
     "__mbsnbcnt": 7884173,
     "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
-    "??0ScorePrintClass@@QAE@PBXHH0_N@Z": 6717600,
+    "??0ScorePrintClass@@QAE@PBXHHPAVScoreFontClass@@_N@Z": 6717600,
     "??_7ScorePrintClass@@6B@": 8032868,
     "??0ScoreAnimClass@@QAE@HHPBX@Z": 6718144,
     "__real@8@3ffd9999999999999800": 7986512,

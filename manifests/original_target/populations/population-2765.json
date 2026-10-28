@@ -4,8 +4,8 @@
     "id": "population-2765",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "c578365344c52842fcf8c7713fe39a7bb8074f6b9135456920f19af75f264707",
-    "historical_acceptance_sha256": "2d35d57d215be3ee8fc9435ae986290f20c5e62770a735571a2aec58cdb27f33"
+    "historical_population_sha256": "023ce84d7fe7e29b6a2f727458b8fc96b571f8eab6b656faf431707e95f9c3f0",
+    "historical_acceptance_sha256": "d69030be146b9cb6de2c9d1c9d3057e65094022cdcc03562e02121803fbb896d"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -135,7 +135,7 @@
     "?unknown_surface_839958@@3PAVSurface@@A": 8624472,
     "??_7ScorePrintClass@@6B@": 8032868,
     "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
-    "??0ScorePrintClass@@QAE@PBXHH0_N@Z": 6717600,
+    "??0ScorePrintClass@@QAE@PBXHHPAVScoreFontClass@@_N@Z": 6717600,
     "?Pause@ScoreAnimClass@@UAEXXZ": 6718208,
     "??_GScorePrintClass@@UAEPAXI@Z": 6718384,
     "??_EScoreAnimClass@@": 6718320,
@@ -2633,7 +2633,14 @@
     "?unknown_a40b18@@3HA": 10750744,
     "?unknown_session_a3d2ac@@3HA": 10736300,
     "??_ECCFileClass@@UAEPAXI@Z": 4200864,
-    "??_EMultiplayerGameMode@@UAEPAXI@Z": 6000144
+    "??_EMultiplayerGameMode@@UAEPAXI@Z": 6000144,
+    "?Pause@VocStaticSound@@QAEXXZ": 7423072,
+    "__real@8@3ffda0d97bb4e7870000": 7999744,
+    "?AI@Tactical@@UAEXXZ": 6958544,
+    "?AI@ThemeClass@@QAEXXZ": 7240912,
+    "__real@8@3ffaccccccccccccd000": 7999736,
+    "__real@4@400c8000000000000000": 8055240,
+    "?Resume@VocStaticSound@@QAEXXZ": 7423104
   },
   "regions": [
     {
@@ -2816,8 +2823,8 @@
     {
       "entry": 6717600,
       "method": "006680a0",
-      "symbol": "??0ScorePrintClass@@QAE@PBXHH0_N@Z",
-      "symbol_prefix": "??0ScorePrintClass@@QAE@PBXHH0_N@Z",
+      "symbol": "??0ScorePrintClass@@QAE@PBXHHPAVScoreFontClass@@_N@Z",
+      "symbol_prefix": "??0ScorePrintClass@@QAE@PBXHHPAVScoreFontClass@@_N@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -2847,7 +2854,7 @@
           "resolved": 8032868
         }
       ],
-      "source_sha256": "1dd367e3fee2e4c85de5a57d7c3bcb84dc91c02070ec5ae56489e52c00d37ff8",
+      "source_sha256": "2b7580a8bf9e7350666fbc51bb1e215787c02b1621aa5fa9a93a0f22a838283f",
       "source": "src/recovered/classes/ScorePrintClass/ScorePrintClass_constructor_006680a0.cpp",
       "population": "population-2765",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",

@@ -21,7 +21,7 @@ public:
     virtual ~ScoreFontClass();                                          // 0x006678B0 (deleting 0x006683D0)
     virtual int Char_Pixel_Width(unsigned short character);             // slot 1 0x00667AA0 (a space is 8)
     virtual int String_Pixel_Width(unsigned short const *string);       // slot 2 0x00667A60
-    virtual void Print(unsigned short const *string, Surface *surface, int x, int y, int frame);    // slot 3 0x00667C70
+    virtual void Print(Surface *surface, unsigned short const *string, int x, int y, int frame);    // slot 3 0x00667C70
     virtual void Print_Char(Surface *surface, unsigned short character, int x, int y, int frame, int unused);   // slot 4 0x00667B60
 
     // Loads the typing sounds the first time (0x00667900).

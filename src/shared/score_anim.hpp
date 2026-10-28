@@ -12,6 +12,7 @@
 
 struct ShapeFileStruct;
 class ConvertClass;
+class ScoreFontClass;
 
 class ScoreAnimClass {
 public:
@@ -40,14 +41,17 @@ public:
 
 class ScorePrintClass : public ScoreAnimClass {
 public:
-    ScorePrintClass(void const *string, int x, int y, void const *palette, bool background);   // 0x006680A0
+    ScorePrintClass(void const *string, int x, int y, ScoreFontClass *font, bool background);  // 0x006680A0
     virtual ~ScorePrintClass() {}                               // deleting 0x006683B0
     virtual bool Update(int unknown);                           // slot 3 0x006680F0
 
     int Stage;                                      // +0x1C characters typed
     int unknown_20;                                 // +0x20
     bool Background;                                // +0x24
-    void const *PrimaryPalette;                     // +0x28
+    ScoreFontClass *Font;                           // +0x28 draws the string
 };
+
+// Set by every ScorePrintClass::Update (0x00AB6F9C; purpose unknown).
+extern bool unknown_score_print_ab6f9c;
 
 #endif

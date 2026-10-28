@@ -122,3 +122,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - ParasiteClass::AI 0x606F50 98.10 (Para131 drafts/ParasiteClass_AI_00606f50.miss.cpp, inc/shared): needs the
   TechnoClass slot 223 rename to `int (CoordStruct const *, float)` (5 populations) first, then one scheduling
   tie (`add ebx,-0x3FFF` before the Random2Class call). Windows near-miss work.
+- MSPrintAnim::Draw 0x5AF030 (MSAnim133 drafts/MSPrintAnim_Draw_005af030.cpp): byte-exact alone, but in
+  population-2658 it expands Intersect inline because MSBinkAnim::Draw includes rect_intersect.hpp earlier in
+  the unit; the original calls 0x41FDF0 out of line at 0x5ACC73, 0x5AD2D3, 0x5AD777, 0x5AF04D, 0x5AF50D while
+  other sites expand an inline (Rect ctor 0x42BCD0 calls). Needs a rect.hpp/rect_intersect.hpp design (the
+  expanding sites likely use a different inline). Symbol ?Draw@MSPrintAnim@@UAEXPAVSurface@@PBVRect@@@Z.
+- Name debt: 0x4F52B0 is declared twice in house.hpp, `bool Unknown_004F52B0()` (Para131 and earlier callers)
+  and `bool unknown_func_4f52b0()` (Obj126, the defining source). Merge with an apply_rename spec.

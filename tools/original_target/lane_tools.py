@@ -7,7 +7,7 @@
   freeze PLAN DELIVERY NAME [ENTRY=classes/<Class>/<file>.cpp]...
       Copy every draft of PLAN into DELIVERY/unit/ and write DELIVERY/NAME.json (LF endings). Each
       ENTRY=PATH sets that row's canonical source under src/recovered/ and its semantic name.
-  scores --entry HEX [--length N] [--symbol S] [--config C] [--output-dir DIR] FILE...
+  scores --entry HEX [--length N] [--symbol S] [--config C] [--include DIR]... [--output-dir DIR] FILE...
       Run diff_candidate.py on each candidate and print one line per file, best first:
       score, status, shape, instruction counts and the first compiler error of a failed build.
 
@@ -114,6 +114,7 @@ def run_scores(args):
         if args.length: command += ['--length', str(args.length)]
         if args.symbol: command += ['--symbol', args.symbol]
         if args.config: command += ['--config', args.config]
+        for include in args.include or []: command += ['--include', include]
         result = subprocess.run(command, cwd=REPOSITORY, capture_output=True, text=True)
         diff_path = output / 'diff.json'
         diff = json.loads(diff_path.read_text()) if diff_path.exists() else None
@@ -139,6 +140,7 @@ def main(argv=None):
     scores.add_argument('--length', type=int)
     scores.add_argument('--symbol')
     scores.add_argument('--config')
+    scores.add_argument('--include', action='append', help='header overlay directory (repeatable)')
     scores.add_argument('--output-dir', default=str(REPOSITORY / 'build/diff/lane'))
     args = parser.parse_args(argv)
     # Plans carry repository-relative paths; resolve arguments first, then work from the repository root.

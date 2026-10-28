@@ -18,12 +18,15 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes (Opus, class_inventory picks): Iso128 IsometricTileClass slot 71 0x527A80; Score132
-ScoreFontClass 0x667B60/0x667C70 and ScorePrintClass 0x6680F0; MSAnim133 MSPrintAnim 0x5AEDA0/0x5AF030.
-Landed this period: Map129 (0x549AE0, 0x559D80), Obj126 (0x5D2E70 with HouseClass 0x4F52B0 bool), Para131
-(ParasiteClass::Detach 0x607200). Register/scheduling-tie near misses (Voc_Static_Save, Find_Disk_Drive,
-0x6AAFD0, 0x5B8490, 0x6C1830, 0x5D3060, CCToolTip::Show 0x46DFC0, ParasiteClass::AI 0x606F50) go to the
-Windows lead. Lanes use tools/original_target/lane_tools.py. Closed 2026-10-28 (resume folders `build/class-work/<Lane>/`): Seed118 (callee-pops
+Running Mac lanes (Opus): Score132 ScoreFontClass 0x667B60/0x667C70 and ScorePrintClass 0x6680F0; Base134
+BaseClass 0x42BF70/0x42CA50/0x42C6A0; IPX135 IPXGlobalConnClass 0x524B50/0x524870. Landed this period: Map129,
+Obj126, Para131, Iso128 (0x527A80), MSAnim133 (MSPrintAnim slot 4 0x5AEDA0). Register/scheduling-tie near
+misses (see OPEN_MISSES.md) go to the Windows lead. Lanes use tools/original_target/lane_tools.py.
+Windows lead backlog in landing: r17 and r19 landed (8f8247fe, 9d6af74f); next r20 (region-helpers-r53-r55,
+drafts being copied from the Windows worktrees), then r22, r24, r27, r29, r32, r36 source rounds, then the
+seed-tool patches r21-r40 and the bounds rounds (zero source credit). Packets copied to
+build/class-work/lead/d/; plans point at C:/ paths, so missing drafts come from the mount
+(/Volumes/mike-gaming/Users/Mike/.codex/worktrees/ra2-seed-lead/repo and /Volumes/mike-gaming/ra2/w/codexN). Closed 2026-10-28 (resume folders `build/class-work/<Lane>/`): Seed118 (callee-pops
 `lea` rule; Speech_Load, Voc_Static_Load), Seed119 (Speech_Update), Coop120 (MessageListClass::Input), Cd121
 (0x715230), Cd124 (0x715300), Coop122 (fill combo 0x5B70B0, fill list 0x5B71E0; 0x5B8490 open), Seed123 and
 Seed125 (zero bytes; Tactical family parked; 0x6AAFD0 is a register-tie near miss for Windows). Their misses
