@@ -10,4 +10,12 @@
 
 extern IndexClass<long, ObjectClass *> unknown_object_index_abff58;
 
+// Adds an object to the index (TerrainClass::Load 0x006E4570). The extra
+// inline expansion over Add_Index is what keeps Increase_Table_Size out of
+// line there (VC6_MATCHING_NOTES.md, Swizzle_Pointer).
+inline bool Add_Object_Index(long id, ObjectClass *object)
+{
+    return unknown_object_index_abff58.Add_Index(id, object);
+}
+
 #endif
