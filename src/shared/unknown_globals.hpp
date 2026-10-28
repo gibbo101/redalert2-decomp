@@ -37,6 +37,9 @@ extern int unknown_8523e0;  // 0x008523E0 VQA frame width (hypothesis)
 extern int unknown_8523e4;  // 0x008523E4 VQA frame height (hypothesis)
 extern bool unknown_flag_852fd7;  // 0x00852FD7
 extern HouseClass *unknown_player_a35db4;  // 0x00A35DB4 the player's house
+// A flag at 0x00A3D548 (radar: with the player's +0x13D, forces mode 1; no cheering while set;
+// moved from shared/radar.hpp).
+extern int unknown_int_a3d548;
 extern int unknown_game_mode_a3d298;  // 0x00A3D298
 extern bool unknown_flag_a3d2b8;       // 0x00A3D2B8 (session +0x20: multiplayer bases)
 // The session object at 0x00A3D298 (its first word is unknown_game_mode_a3d298;

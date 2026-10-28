@@ -14,6 +14,7 @@
 #include "shared/object.hpp"
 #include "shared/techno.hpp"
 #include "shared/house.hpp"
+#include "shared/event.hpp"
 
 // Whether a techno's house is the player's side (hypothesis): its flag +0x135 in a
 // single-player game, else the house's slot 0x004F52B0 answer.
@@ -72,6 +73,10 @@ struct UnknownSelection {
     ObjectClass *Get(int index);        // 0x006AC7C0
 };
 extern UnknownSelection *unknown_selected_83996c;
+// Whether the player-side technos in group (1-based) are exactly the selected ones (0x006F5E80).
+bool __fastcall Unknown_006F5E80(int group);
+// The frame before which the player may not cheer again (0x00AC134C).
+extern int unknown_cheer_frame_ac134c;
 // Whether a player-side techno in play has the type name (0x006F7190).
 int __fastcall Unknown_006F7190(TechnoClass *techno, char const *name);
 

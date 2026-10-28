@@ -149,8 +149,7 @@ struct UnknownRadar1244 {
 // Plays a sound (0x00713DB0; shared/techno.hpp's declaration).
 int __fastcall Unknown_00713DB0(int sound, float volume, int flags, int arg4);
 
-// A flag at 0x00A3D548 (radar: with the player's +0x13D, forces mode 1).
-extern int unknown_int_a3d548;
+// unknown_int_a3d548 (0x00A3D548): shared/unknown_globals.hpp.
 
 // The objects of the list at 0x00A40C20 whose +0x37B flag the radar clears
 // when it is rebuilt (view; type not identified).
