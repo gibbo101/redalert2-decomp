@@ -190,6 +190,11 @@ public:
     Rect unknown_4752b0() const;                // 0x004752B0 (a screen rectangle of the cell's contents; hypothesis)
     Rect unknown_474eb0() const;                // 0x00474EB0 (another; hypothesis)
     Rect unknown_475100() const;                // 0x00475100 (another; hypothesis)
+    bool unknown_4788e0() const;                // 0x004788E0 (the ore may grow here: scenario +0x222A, ore below its last stage; hypothesis)
+    bool unknown_478950() const;                // 0x00478950 (the ore may spread from here; hypothesis)
+    bool unknown_4789d0();                      // 0x004789D0 (grows the ore through unknown_47c3a0; hypothesis)
+    bool unknown_47c3a0(int tiberium, bool arg2);   // 0x0047C3A0 (not recovered)
+    int unknown_47ce70() const;                 // 0x0047CE70 (+0xF0 limited to Rules RadLevelMax, as an int)
     bool unknown_47c200();                      // 0x0047C200 (the map allows the cell, its tile type does not refuse it, it is not blocked and holds no building or terrain object)
     void unknown_47be00();                      // 0x0047BE00 (diagonal pass over the cells ahead)
     void unknown_47be60();                      // 0x0047BE60
