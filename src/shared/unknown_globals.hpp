@@ -207,6 +207,10 @@ void __fastcall Unknown_0063C790();
 void __fastcall Unknown_006F8A20(BuildingClass *building);
 // Pending placement of a completed building (0x006F8A00; seed FUN_006f8a00).
 void __fastcall Unknown_006F8A00(BuildingClass *building);
+// An empty scenario writer (0x00668EA0; Write_Scenario_INI calls it like the task
+// force and team type writers, with the INI and 0).
+class CCINIClass;
+void __fastcall Unknown_00668EA0(CCINIClass &ini, int is_global);
 // Called when the sidebar is hidden (0x005A09E0).
 void Unknown_005A09E0();
 

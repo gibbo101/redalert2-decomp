@@ -16,6 +16,7 @@ class CellClass;
 class SpecialClass;
 class CCINIClass;
 class WWCRCEngine;
+struct IStream;
 // Only the41-byte stride and final value byte are observed by the checkpoint.
 struct UnknownScenarioVariable_004B5AB0 { char unknown_00[40]; bool Value; };
 typedef char ScenarioVariable_stride_check[(sizeof(UnknownScenarioVariable_004B5AB0)==41)?1:-1];
@@ -57,6 +58,10 @@ public:
     void Write_Waypoints(CCINIClass &ini);
     // The name of the first unset waypoint, or "" (0x00663440).
     char const *Free_Waypoint_Name() const;
+    // Writes the scenario to a saved game (0x00660F60).
+    void Save(IStream *stream);
+    // Reads it back and rebuilds it in place (0x006610C0).
+    void Load(IStream *stream);
     Random2Class &Random() { return RandomNumber; }
     // The elapsed game-time timer (ApplicationClass slot 7, 0x00426E00).
     TTimerClass<SystemTimerClass> &Elapsed_Time() { return ElapsedTime; }
@@ -246,6 +251,9 @@ void __fastcall Do_Restart_0065e440();
 void __fastcall Unknown_0065e590();
 // Makes the multiplayer units (0x00660320; Westwood's Create_Units, hypothesis).
 void __fastcall Create_Units_00660320(bool official);
+// Writes the scenario INI file (0x0065F980; Westwood's Write_Scenario_INI; flag:
+// the map editor's full save with the preview; meaning hypothesis).
+void __fastcall Write_Scenario_INI_0065f980(char const *filename, bool flag);
 // Multiplayer setup after an unofficial map is read (0x0065E8C0; meaning not recovered).
 void __fastcall Unknown_0065e8c0(bool official);
 // Reads a scenario INI: MISSION.INI texts, rules, houses, [Basic] and every

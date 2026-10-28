@@ -7,8 +7,11 @@
 #include "shared/abstract_class.hpp"
 #include "shared/vector_class_decl.hpp"
 
+class CCINIClass;
 class TubeClass : public AbstractClass {
 public:
+    // Writes the tunnels (0x006EF480; "%d,%d,%d,%d,%d" entries; Write_Scenario_INI).
+    static void __fastcall Write_INI(CCINIClass &ini);
     char unknown_24[0x28 - 0x24];
     Cell unknown_28;              // +0x28
 };

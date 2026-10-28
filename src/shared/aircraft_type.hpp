@@ -46,6 +46,7 @@ class AircraftClass {
 public:
     AircraftClass(AircraftTypeClass *type, HouseClass *house);         // 0x00413A40
     static void __fastcall Read_INI_0041A840(CCINIClass &ini);        // 0x0041A840 (as shared/aircraft.hpp)
+    static void __fastcall Write_INI_0041A6C0(CCINIClass &ini);       // 0x0041A6C0 (as shared/aircraft.hpp)
 
     char unknown_000[0x5C0];
 };

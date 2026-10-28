@@ -139,6 +139,7 @@ public:
     void Unknown_0049E000(bool skip_buildings, bool arg2);                      // 0x0049E000
     void Unknown_0049DE00(bool skip_buildings, bool arg2);                      // 0x0049DE00
     void Unknown_0049C670();                                                    // 0x0049C670 (multiplayer setup 0x0065E8C0)
+    void Write_INI_0049D910(CCINIClass &ini);                                   // 0x0049D910 (Theater, Size, LocalSize; Write_Scenario_INI)
     void Read_INI_0049CFD0(CCINIClass &ini);                                    // 0x0049CFD0 (the map's sections of a scenario; Read_Scenario_INI)
 };
 #endif
