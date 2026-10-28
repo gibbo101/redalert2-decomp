@@ -333,6 +333,9 @@ public:
     bool unknown_344;                                              // +0x344
 };
 
+// The colours taken while MPCooperative slot 21 picks a map's computer colours (0x00A71118).
+extern int unknown_colors_a71118[8];
+
 // vtable 0x007A676C (scalar deleting destructor 0x005A25F0)
 class MultiplayerBattleTeam : public MultiplayerTeam {
 public:
