@@ -116,11 +116,12 @@ struct UnknownLocomotionPtr {
 WIN32_IMPORT HRESULT __stdcall OleLoadFromStream(IStream *stream, GUID const &iid, void **object);
 WIN32_IMPORT HRESULT __stdcall OleSaveToStream(IPersistStream *object, IStream *stream);
 
-// A frame timer with a fourth word (16 bytes; Drive/Ship Force_New_Slope assign a
-// fresh one).
+// A frame timer with a fourth word, the duration it was set to (16 bytes;
+// Drive/Ship Force_New_Slope assign a fresh one, Set_Slope a 3-frame one).
 struct UnknownSlopeTimer {
     UnknownSlopeTimer() : unknown_0c(0) {}
     UnknownSlopeTimer(NoInitClass const &noinit) : Timer(noinit) {}
+    UnknownSlopeTimer(int duration) : Timer(duration), unknown_0c(duration) {}
     CDTimerClass<FrameTimerClass> Timer;    // +0x00
     int unknown_0c;                         // +0x0C
 };

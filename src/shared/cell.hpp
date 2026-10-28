@@ -147,6 +147,7 @@ public:
     ObjectClass *Cell_Infantry(bool alt = false) const;                 // 0x00473ED0 (kind 0x0F)
 
     // Tile kinds (IsoTileIndex ranges).
+    bool unknown_476cc0(ObjectClass *object);   // 0x00476CC0 (the object may stand here; MechLocomotionClass 0x00592F70)
     bool unknown_47b590() const;                // 0x0047B590 (no tile: 0 or 0xFFFF)
     bool unknown_47b5b0() const;                // 0x0047B5B0
     bool unknown_47b7c0() const;                // 0x0047B7C0

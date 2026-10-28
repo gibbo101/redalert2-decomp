@@ -68,6 +68,10 @@ public:
     virtual HRESULT __stdcall Piggyback_CLSID(GUID *classid);                   // 0x0049F710
     virtual bool __stdcall Is_Piggybacking();                                   // 0x004A4C80
 
+    double Slope_Ratio();                                                       // 0x0049FB90 (how far the slope change has run; 1.0 with none)
+    void Set_Slope(int ramp);                                                   // 0x0049FBF0 (a new ramp: the old one kept, a 3-frame change)
+    bool Stop_Driver();                                                         // 0x004A0E90 (clears the head-to coordinate; never called out of line)
+    bool Start_Driver(CoordStruct const &headto);                               // 0x004A0EE0 (heads for a coordinate whose cell can be entered, marking the track; never called out of line)
     void unknown_4a0bc0(CoordStruct const &coord, int mark);                    // 0x004A0BC0 (marks the track cells)
     Point2D Smooth_Turn(Point2D const &offset, int &facing);                    // 0x004A4740 (a track point and facing mirrored by the track's flags, from the head-to coordinate)
 
@@ -77,8 +81,7 @@ public:
     CoordStruct unknown_34;             // +0x34 destination
     CoordStruct unknown_40;             // +0x40 head-to coordinate
     int unknown_4c;                     // +0x4C speed accumulator
-    int unknown_50;                     // +0x50
-    int unknown_54;                     // +0x54
+    double unknown_50;                  // +0x50 (a speed fraction; Stop_Moving caps it at 0.3)
     int unknown_58;                     // +0x58 track number
     int unknown_5c;                     // +0x5C track index
     bool unknown_60;                    // +0x60
