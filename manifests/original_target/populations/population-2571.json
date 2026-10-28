@@ -4,8 +4,8 @@
     "id": "population-2571",
     "inventory_sha256": "5f5f42012d3bcaf1deeff94c8562867e3b68844df0479efd8328521b34e5a44e",
     "gaps_sha256": "8630cf01132b22018cbf8cd043bfaa5e0ab0516ed1e9a9ac1b08ae72e94a8d8b",
-    "historical_population_sha256": "09b1f8d779f06c824e5f345159d2848e18c68c3fbce35464e2cd437616a05477",
-    "historical_acceptance_sha256": "ef3ad1164418761dfc94a41ebe8b3317c7e4b432a8dd7767be2a3cefdfe65c63"
+    "historical_population_sha256": "d3c71f768ca2b7bec7775df208dfb0dd0e91b75841fae3dd8283027338e55928",
+    "historical_acceptance_sha256": "519060a4e2129890d1d7c08b141e5a79d71d33abfc4ac2e8a08cc1586f99a590"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4737,7 +4737,7 @@
     "?Unknown_006752D0@ShapeButtonClass@@QAE_NHH_N@Z": 6771408,
     "?Unknown_00675300@ShapeButtonClass@@QAE_NXZ": 6771456,
     "?Unknown_0067C2D0@SidebarClass@@QAEXH@Z": 6800080,
-    "?Unknown_0068A560@UnknownTechno238@@QAEXPAVAbstractClass@@@Z": 6858080,
+    "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "?Unknown_006A2B10@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6957840,
     "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
@@ -6213,8 +6213,8 @@
     "?unknown_6612c0@UnknownIDSource@@QAE_NI_N@Z": 6689472,
     "?unknown_661560@UnknownIDSource@@QAE_NI_N@Z": 6690144,
     "?unknown_6631a0@UnknownIDSource@@QAEPAVCellClass@@H@Z": 6697376,
-    "?unknown_689b70@UnknownTechno238@@QAEXXZ": 6855536,
-    "?unknown_68a4b0@UnknownTechno238@@QAEXXZ": 6857904,
+    "?Kill_Nodes@SpawnManagerClass@@QAEXXZ": 6855536,
+    "?Abandon_Target@SpawnManagerClass@@QAEXXZ": 6857904,
     "?unknown_6b8fb0@UnknownPassengerTeam@@QAEXPAVObjectClass@@H_N@Z": 7049136,
     "?unknown_6c16f0@TechnoClass@@QAEHH@Z": 7083760,
     "?unknown_6c8300@TechnoClass@@QAEXXZ": 7111424,

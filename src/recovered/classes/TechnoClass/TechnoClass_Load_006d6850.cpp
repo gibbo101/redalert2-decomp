@@ -24,7 +24,7 @@ HRESULT __stdcall TechnoClass::Load(IStream *stream)
     SwizzleManager.Swizzle((void **)&unknown_22c);
     SwizzleManager.Swizzle((void **)&unknown_230);
     SwizzleManager.Swizzle((void **)&unknown_384);
-    SwizzleManager.Swizzle((void **)&unknown_238);
+    SwizzleManager.Swizzle((void **)&SpawnManager);
     SwizzleManager.Swizzle((void **)&unknown_234);
     SwizzleManager.Swizzle((void **)&unknown_23c);
     SwizzleManager.Swizzle((void **)&unknown_40c);

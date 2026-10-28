@@ -9,8 +9,8 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Until the Nov 1 usage reset, Mac lanes run mostly on Sonnet (user
-direction 2026-10-28: use the week's capacity, Sonnet first): Seed83 (100-1500 B below 0x500000),
-Seed84 (0x500000-0x67FFFF), Seed85 (0x680000 up), all Sonnet, and Debt87 (Sonnet: recorded naming and
+direction 2026-10-28: use the week's capacity, Sonnet first): Seed88 (100-1500 B below 0x500000),
+Seed89 (0x500000-0x67FFFF), Seed90 (0x680000 up), all Sonnet, and Debt87 (Sonnet: recorded naming and
 declaration debt). Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
@@ -130,6 +130,11 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - MapClass 0x55CEF0-0x562450 (Big86 NOTES/FINDINGS): 0x55DEF0 78.69 and its X/Y twin 0x55E410 76.67;
   two operator+ Cell constructors stay out of line on budget, and `else return changed;` folds to a
   constant where the original reloads the local. The other 11 family members wait for that rule.
+- Game Controls WM_COMMAND handler 0x4CFFB0 is exact (build/class-work/Seed83/d/r2/pending) but
+  its trailing `ret 8` 0x4D0020 is catalogued as its own 3-byte region (src/recovered/004d0020.cpp);
+  retiring that region needs a population replacement before the handler can land.
+- Debt87 r4 (Unknown_00713DB0 in sound_play.hpp) failed apply_rename on HEAD ("Fresh compile groups
+  are not whole canonical units"); being redone.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

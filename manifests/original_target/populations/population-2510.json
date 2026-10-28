@@ -4,8 +4,8 @@
     "id": "population-2510",
     "inventory_sha256": "8a536c9cc53032689bfbdc360989e838a8af75fb3d01b0bf2f16652bb2d6f896",
     "gaps_sha256": "d2d4cbbdcdac7a79607b11e8bb89c9aa3564d572e1a8a49d99151fcd0c2d79ab",
-    "historical_population_sha256": "045298c0bb44b7687729e254edc417b003d8581cd138f41f8488b6179b35179f",
-    "historical_acceptance_sha256": "27f571ea941678530789193c79e812514a12e154bfa4e3607711f3a44930872a"
+    "historical_population_sha256": "828e9bc657aaa6ade40e2189f1f70416d1f5589cca8edc153593e8da76beb56f",
+    "historical_acceptance_sha256": "314cc4e84150221281a7a385ff49e7a4f9673bb44ce3475ea928168a16e5ee14"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3151,8 +3151,8 @@
     "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z": 7028208,
     "?unknown_sound_enabled_7d88d6@@3_NA": 8227030,
     "?unknown_6145e0@TechnoClass@@QAEXXZ": 6374880,
-    "?unknown_689b70@UnknownTechno238@@QAEXXZ": 6855536,
-    "?unknown_68a4b0@UnknownTechno238@@QAEXXZ": 6857904,
+    "?Kill_Nodes@SpawnManagerClass@@QAEXXZ": 6855536,
+    "?Abandon_Target@SpawnManagerClass@@QAEXXZ": 6857904,
     "?unknown_slot39@TechnoClass@@UAE_NXZ": 7131792,
     "?unknown_slot38@TechnoClass@@UAE_NXZ": 7132720,
     "?unknown_slot36@TechnoClass@@UAE_NXZ": 7132816,
@@ -4510,7 +4510,7 @@
     "?Unknown_0070C490@UnknownHouseTracker@@QAEXH@Z": 7390352,
     "?Detach@RadioClass@@UAEXPAVAbstractClass@@_N@Z": 6515616,
     "?Unknown_00468120@UnknownTechno230@@QAEXPAVAbstractClass@@@Z": 4620576,
-    "?Unknown_0068A560@UnknownTechno238@@QAEXPAVAbstractClass@@@Z": 6858080,
+    "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Unknown_006E24C0@UnknownTechno208@@QAEXPAVAbstractClass@@@Z": 7218368,
     "?unknown_slot90@TechnoClass@@UAEHXZ": 7156048,
     "?Compute_CRC@RadioClass@@UBEXAAVWWCRCEngine@@@Z": 6515696,

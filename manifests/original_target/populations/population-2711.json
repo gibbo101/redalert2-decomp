@@ -4,8 +4,8 @@
     "id": "population-2711",
     "inventory_sha256": "ae03b6305fec8fe353734827ab9492ea8b7b0956fc357f5c94e739f8d7667eaf",
     "gaps_sha256": "26492183dcaf0dd391deb962532e3c7a51aa810897ab41617a67eed1ac6a6ddd",
-    "historical_population_sha256": "c0e5d2ecd0e3d18aa9ae1109488b0a3496667ef690709bdfba9a4d1ba20f1a90",
-    "historical_acceptance_sha256": "0cd20b6099d74c2977605701a8e5b95108452396e76458e41b4cd7b38ee647ea"
+    "historical_population_sha256": "1fd3e9e5d704cdffc2d7bdde1273dbbfe1206ce7e84866612774ef1a3631610f",
+    "historical_acceptance_sha256": "d0580ab7a4063f3d9bb0e366d05aa9789575a6209db1c45ebe925ae0a0d472bb"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -3725,8 +3725,8 @@
     "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z": 7028208,
     "?unknown_sound_enabled_7d88d6@@3_NA": 8227030,
     "?unknown_6145e0@TechnoClass@@QAEXXZ": 6374880,
-    "?unknown_689b70@UnknownTechno238@@QAEXXZ": 6855536,
-    "?unknown_68a4b0@UnknownTechno238@@QAEXXZ": 6857904,
+    "?Kill_Nodes@SpawnManagerClass@@QAEXXZ": 6855536,
+    "?Abandon_Target@SpawnManagerClass@@QAEXXZ": 6857904,
     "?unknown_slot39@TechnoClass@@UAE_NXZ": 7131792,
     "?unknown_slot38@TechnoClass@@UAE_NXZ": 7132720,
     "?unknown_slot36@TechnoClass@@UAE_NXZ": 7132816,
@@ -5470,7 +5470,7 @@
     "?Unknown_0070C490@UnknownHouseTracker@@QAEXH@Z": 7390352,
     "?Detach@RadioClass@@UAEXPAVAbstractClass@@_N@Z": 6515616,
     "?Unknown_00468120@UnknownTechno230@@QAEXPAVAbstractClass@@@Z": 4620576,
-    "?Unknown_0068A560@UnknownTechno238@@QAEXPAVAbstractClass@@@Z": 6858080,
+    "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Unknown_006E24C0@UnknownTechno208@@QAEXPAVAbstractClass@@@Z": 7218368,
     "?unknown_slot90@TechnoClass@@UAEHXZ": 7156048,
     "?Compute_CRC@RadioClass@@UBEXAAVWWCRCEngine@@@Z": 6515696,
@@ -6971,7 +6971,6 @@
     "??_7?$VectorClass@PAUSpawnControl@@@@6B@": 8042828,
     "?Detach@KamikazeTrackerClass@@QAEXPAVAbstractClass@@@Z": 5445760,
     "?Add@KamikazeTrackerClass@@QAEXPAVAircraftClass@@PAVAbstractClass@@@Z": 5445280,
-    "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Load@SpawnManagerClass@@UAGJPAUIStream@@@Z": 6858704,
     "?Save@SpawnManagerClass@@UAGJPAUIStream@@H@Z": 6859120,
     "??0?$VectorClass@PAVMultiplayerGameMode@@@@QAE@IPBQAVMultiplayerGameMode@@@Z": 6002912,

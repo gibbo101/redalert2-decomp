@@ -345,14 +345,7 @@ public:
     int unknown_24;                     // +0x24
 };
 
-// The owned object at +0x238.
-class UnknownTechno238 : public AbstractClass {
-public:
-    void unknown_689b70();              // 0x00689B70
-    void Unknown_0068A560(AbstractClass *target);   // 0x0068A560 (TechnoClass::Detach)
-    void unknown_68a4b0();              // 0x0068A4B0
-    int unknown_68a680();               // 0x0068A680 (UnitClass slot 218: nonzero refuses to fire)
-};
+class SpawnManagerClass;               // the owned spawn manager at +0x238 (shared/spawn_manager.hpp)
 
 // The object at +0x408 (released by 0x006130B0).
 class UnknownTechno408 {
@@ -685,7 +678,7 @@ public:
     AbstractClass *unknown_22c;             // +0x22C (swizzled)
     AbstractClass *unknown_230;             // +0x230 (owned; swizzled)
     AbstractClass *unknown_234;             // +0x234 (swizzled)
-    UnknownTechno238 *unknown_238;          // +0x238 (owned; swizzled)
+    SpawnManagerClass *SpawnManager;          // +0x238 (owned; swizzled)
     AbstractClass *unknown_23c;             // +0x23C (swizzled)
     float unknown_240;                      // +0x240 (float: TechnoClass::Compute_CRC hashes it as one)
     CDTimerClass<FrameTimerClass> unknown_244;  // +0x244

@@ -1,11 +1,12 @@
 // Responds to the action for the current target; field/action names provisional.
 #include "shared/unit.hpp"
+#include "shared/spawn_manager.hpp"
 #include "shared/rules.hpp"
 extern "C" int const Unit_Attack_Frames_007F8F2C[8];
 // @ref _Unit_Attack_Frames_007F8F2C=007f8f2c
 // @ref ?unknown_6c16f0@TechnoClass@@QAEHH@Z=006c16f0
 // @ref ?Health_Ratio@ObjectClass@@QBENXZ=005d4540
-// @ref ?unknown_68a4b0@UnknownTechno238@@QAEXXZ=0068a4b0
+// @ref ?Abandon_Target@SpawnManagerClass@@QAEXXZ=0068a4b0
 void UnitClass::unknown_6fbc90()
 {
     if (!unknown_228) return;
@@ -58,7 +59,7 @@ void UnitClass::unknown_6fbc90()
         unknown_57d = false;
         return;
     case 6:
-        if (unknown_238) unknown_238->unknown_68a4b0();
+        if (SpawnManager) SpawnManager->Abandon_Target();
         break;
     }
 }

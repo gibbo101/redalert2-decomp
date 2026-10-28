@@ -32,7 +32,7 @@ bool TechnoClass::unknown_6d3b60(TechnoClass *source, int arg2)
     if (unknown_230 != 0 && ((UnknownTechno230 *)unknown_230)->unknown_24 != 0) {
         return false;
     }
-    if (unknown_238 != 0) {
+    if (SpawnManager != 0) {
         return false;
     }
     if (House->Unknown_004F52F0() && unknown_228 != 0) {

@@ -50,7 +50,7 @@ void TechnoClass::Init()
         return;
     }
     if (unknown_slot32()->Spawns != 0) {
-        unknown_238 = (UnknownTechno238 *)new SpawnManagerClass(this, unknown_slot32()->Spawns, unknown_slot32()->SpawnsNumber,
+        SpawnManager = new SpawnManagerClass(this, unknown_slot32()->Spawns, unknown_slot32()->SpawnsNumber,
             unknown_slot32()->SpawnRegenRate, unknown_slot32()->SpawnReloadRate);
     }
     if (unknown_slot231(0)->WeaponType != 0 && unknown_slot231(0)->WeaponType->Warhead->MindControl) {

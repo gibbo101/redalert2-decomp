@@ -10,6 +10,7 @@
 // temporal helpers; +0x384, +0x108; and the target's entries in the +0x390 /
 // +0x3A8 / +0x3C0 lists.
 #include "shared/techno.hpp"
+#include "shared/spawn_manager.hpp"
 #include "shared/house.hpp"
 #include "shared/aircraft.hpp"
 #include "shared/gscreen.hpp"
@@ -21,7 +22,7 @@
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ??RRandom2Class@@QAEHHH@Z=006388a0
 // @ref ?Unknown_00468120@UnknownTechno230@@QAEXPAVAbstractClass@@@Z=00468120
-// @ref ?Unknown_0068A560@UnknownTechno238@@QAEXPAVAbstractClass@@@Z=0068a560
+// @ref ?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z=0068a560
 // @ref ?Unknown_006E24C0@UnknownTechno208@@QAEXPAVAbstractClass@@@Z=006e24c0
 
 void TechnoClass::Detach(AbstractClass *target, bool all)
@@ -88,8 +89,8 @@ void TechnoClass::Detach(AbstractClass *target, bool all)
             ((UnknownTechno230 *)unknown_230)->Unknown_00468120(target);
         }
     }
-    if (unknown_238 != 0) {
-        unknown_238->Unknown_0068A560(target);
+    if (SpawnManager != 0) {
+        SpawnManager->Unlink(target);
     }
     if (unknown_208 != 0) {
         unknown_208->Unknown_006E24C0(target);

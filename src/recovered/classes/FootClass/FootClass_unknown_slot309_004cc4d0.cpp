@@ -27,7 +27,7 @@ bool FootClass::unknown_slot309(AbstractClass *target)
     TechnoClass *techno = ((UnknownCellClass *)&Map[cell])->Unknown_00471660(Point2D(0, 0), 0, 0);
     if (techno != 0) {
         if (this != techno && Contact_With_Whom(0) != techno) {
-            if (!unknown_slot32()->Spawned || (techno->unknown_238 == 0 && !techno->unknown_slot32()->Spawned)) {
+            if (!unknown_slot32()->Spawned || (techno->SpawnManager == 0 && !techno->unknown_slot32()->Spawned)) {
                 return false;
             }
         }

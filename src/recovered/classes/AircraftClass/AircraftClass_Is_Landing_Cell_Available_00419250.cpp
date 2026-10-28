@@ -11,7 +11,7 @@ bool AircraftClass::Is_Landing_Cell_Available_00419250(Cell const &cell, bool al
         Point2D offset(0, 0);
         TechnoClass *occupant = (TechnoClass *)Map[cell].unknown_471660(offset, false, 0);
         if (occupant) {
-            if (occupant->unknown_238) return true;
+            if (occupant->SpawnManager) return true;
             if (occupant->unknown_slot32()->Spawned) return true;
         }
     }

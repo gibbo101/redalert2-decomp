@@ -8,6 +8,7 @@
 // projectile, book the expected damage on its +0x70. Whether it has a
 // target now.
 #include "shared/techno.hpp"
+#include "shared/spawn_manager.hpp"
 #include "shared/rules.hpp"
 #include "shared/weapon_type.hpp"
 #include "shared/bullet_type.hpp"
@@ -33,8 +34,8 @@ bool TechnoClass::unknown_slot209(CoordStruct const *coord, int arg2)
     if (unknown_228 != 0 && unknown_404) {
         int weapon = unknown_slot174(unknown_228);
         int result = unknown_slot218(unknown_228, weapon, 1);
-        if (result == 6 && unknown_238 != 0) {
-            unknown_238->unknown_68a4b0();
+        if (result == 6 && SpawnManager != 0) {
+            SpawnManager->Abandon_Target();
         } else if (result == 6 || result == 5 || result == 8) {
             unknown_slot220(0);
         }

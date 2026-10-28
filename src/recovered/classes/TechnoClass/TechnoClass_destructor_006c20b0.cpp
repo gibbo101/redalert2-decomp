@@ -5,6 +5,7 @@
 // +0x108 object (slot 60) and leaves the 0x00AC0BF8 list; then the members
 // and RadioClass/MissionClass/ObjectClass are destroyed.
 #include "shared/techno.hpp"
+#include "shared/spawn_manager.hpp"
 // @ref ??_7TechnoClass@@6BIPersistStream@@@=007acb80
 // @ref ??_7TechnoClass@@6BIRTTITypeInfo@@@=007acb64
 // @ref ??_7TechnoClass@@6BINoticeSink@@@=007acb5c
@@ -28,9 +29,9 @@ TechnoClass::~TechnoClass()
         delete unknown_230;
         unknown_230 = 0;
     }
-    if (unknown_238 != 0) {
-        delete unknown_238;
-        unknown_238 = 0;
+    if (SpawnManager != 0) {
+        delete SpawnManager;
+        SpawnManager = 0;
     }
     if (unknown_208 != 0) {
         delete unknown_208;

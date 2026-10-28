@@ -4,8 +4,8 @@
     "id": "population-2445",
     "inventory_sha256": "623e0c89c416dee72a85602d868644e92696feb79ff07ba87c077058eb237a47",
     "gaps_sha256": "008e748e45869fdf9b5cab5a83c7163ef2943a34e9608c5b1919a24137fdcf9c",
-    "historical_population_sha256": "7e68df221368d62ee64c90a08cff0a701e32c2f8422df041bc43520187a2d05c",
-    "historical_acceptance_sha256": "b2398eb85237a0a6af3b93f71ea8b81e082bad1277990090e62e1ff1703990bf"
+    "historical_population_sha256": "9958d7315067815a5d5280a5eae597710f6fdf0cac963e2f9421482252772c43",
+    "historical_acceptance_sha256": "fb663ba2cf2dc05ebe4f6b222c2496e5e5267a8b9975ac4dc6c27d84a01b90b3"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3546,7 +3546,7 @@
     "?Unknown_005D47D0@ObjectClass@@QBEHXZ": 6113232,
     "?Unknown_00636EA0@RadioClass@@QBE_NXZ": 6516384,
     "?Unknown_00636ED0@RadioClass@@QBE_NPAVTechnoClass@@@Z": 6516432,
-    "?Unknown_0068A560@UnknownTechno238@@QAEXPAVAbstractClass@@@Z": 6858080,
+    "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Unknown_006A6A50@UnknownTacticalView@@QAE?AVCell@@ABUCoordStruct@@@Z": 6974032,
     "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z": 7028208,
     "?Unknown_006B5810@UnknownTarget@@QBEPAVAbstractClass@@XZ": 7034896,
@@ -3832,8 +3832,8 @@
     "?unknown_6612c0@UnknownIDSource@@QAE_NI_N@Z": 6689472,
     "?unknown_661560@UnknownIDSource@@QAE_NI_N@Z": 6690144,
     "?unknown_6631a0@UnknownIDSource@@QAEPAVCellClass@@H@Z": 6697376,
-    "?unknown_689b70@UnknownTechno238@@QAEXXZ": 6855536,
-    "?unknown_68a4b0@UnknownTechno238@@QAEXXZ": 6857904,
+    "?Kill_Nodes@SpawnManagerClass@@QAEXXZ": 6855536,
+    "?Abandon_Target@SpawnManagerClass@@QAEXXZ": 6857904,
     "?unknown_6b8fb0@UnknownPassengerTeam@@QAEXPAVObjectClass@@H_N@Z": 7049136,
     "?unknown_6c16f0@TechnoClass@@QAEHH@Z": 7083760,
     "?unknown_6c8300@TechnoClass@@QAEXXZ": 7111424,
@@ -8614,7 +8614,6 @@
     "??_7?$DynamicVectorClass@PAUSpawnControl@@@@6B@": 8042796,
     "?Detach@KamikazeTrackerClass@@QAEXPAVAbstractClass@@@Z": 5445760,
     "?Add@KamikazeTrackerClass@@QAEXPAVAircraftClass@@PAVAbstractClass@@@Z": 5445280,
-    "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Load@SpawnManagerClass@@UAGJPAUIStream@@@Z": 6858704,
     "?Save@SpawnManagerClass@@UAGJPAUIStream@@H@Z": 6859120,
     "__imp__EscapeCommFunction": 7971076,
