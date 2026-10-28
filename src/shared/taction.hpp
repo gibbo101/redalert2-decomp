@@ -41,6 +41,10 @@ public:
     // Disables every trigger of the type at +0x50; always true (an action handler; name hypothesis).
     // Performs the action (a switch over its type; 0x006ADAE0; TS's operator(), name hypothesis).
     bool Execute(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006ADAE0
+    // Calls slot 60 on every active particle system standing on the cell of waypoint +0x44; always true.
+    bool unknown_func_6af980(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006AF980
+    // BuildingClass::unknown_452f50(0) on the first living, active building whose tag has the trigger attached; true when found.
+    bool unknown_func_6b2fa0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2FA0
     bool unknown_func_6b1f90(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1F90
     // Springs the triggers of the type at +0x50 (forced, no object); always true (name hypothesis).
     bool unknown_func_6b1ec0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1EC0

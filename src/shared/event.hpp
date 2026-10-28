@@ -65,6 +65,8 @@ public:
     EventClass(int house, TargetClass whom, unsigned char mission, TargetClass target, TargetClass destination, long a, long b);
     // Type 0x18 (0x004B5EB0): one long.
     EventClass(int house, long a);
+    // Type and a four-byte payload (0x004B6030; the type is a byte).
+    EventClass(int house, int type, unsigned long a);
     // Type 4 (0x004B6170): a target, a mission byte and three more targets.
     EventClass(int house, TargetClass whom, unsigned char mission, TargetClass target, TargetClass destination, TargetClass follow);
     // The same with two longs (0x004B6370; +0x0F is 0).
