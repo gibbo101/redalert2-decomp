@@ -18,12 +18,12 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes (resume folders `build/class-work/<Lane>/`, NOTES.md and `d/rN/`):
-- Seed117 (Opus): VoxClass::Find_Index 0x716640 and the two functions it unblocks (0x715B40,
-  0x7163F0), then stops.
+Running Mac lanes (started 2026-10-28; resume folders `build/class-work/<Lane>/`): Seed118 (Opus)
+first-IStream::Read `lea` rule, Speech_Load 0x7167D0 98.70 and Voc_Static_Load 0x714B80 95.04 (Voc_Static_Save
+0x714A90 if the rule covers it); Seed119 (Opus) Speech_Update 0x715BA0 90.70; Coop120 (Opus) MessageListClass
+Input 0x5B56F0 81.55; Cd121 (Sonnet) CD-drive detection unit 0x715090-0x715463.
 Next-lane candidates: the MultiplayerGameMode fill-combo family 0x5B70B0/0x5B71E0/0x5B8490 (inline
-budget), MessageListClass Input 0x5B56F0 (81.55), the CD-drive detection unit 0x715090-0x715463,
-Seed116's fresh.json (613 functions in 0x680000-0x770000; sweep work, so Windows), the Tactical
+budget), Seed116's fresh.json (613 functions in 0x680000-0x770000; sweep work, so Windows), the Tactical
 projection family (Seed113/Seed114 NOTES).
 
 Windows: one Codex lead (LEAD.md in the coordination folder) staffing codex1 pathfinding
