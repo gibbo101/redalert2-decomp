@@ -14,6 +14,15 @@ double __cdecl unknown_sqrt_4ba410(double value);     // 0x004BA410
 double __cdecl unknown_math_4ba520(double value);     // 0x004BA520 (table lookup)
 double __cdecl unknown_math_4ba5b0(double value);     // 0x004BA5B0
 
+// The length of a cell offset in cells, Y converted first (Create_Units
+// 0x00660320 sums these between start positions; name hypothesis).
+inline short Cell_Length(Cell const &cell)
+{
+    double dy = cell.Y;
+    double dx = cell.X;
+    return (short)unknown_sqrt_4ba410(dx * dx + dy * dy);
+}
+
 static double const unknown_geometry_sixty = 60.0;
 static double const unknown_geometry_deg_to_rad = 0.017453292519943295;
 static double unknown_geometry_diagonal = unknown_sqrt_4ba410(pow(256.0, 2.0) * 2);

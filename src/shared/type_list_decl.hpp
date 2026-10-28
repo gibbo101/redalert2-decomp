@@ -31,6 +31,19 @@ public:
     // field, so the copy constructor is user-declared.
     int unknown_0x18;
 
+    // Whether object is one of the active elements: a non-virtual scan, unlike
+    // the virtual ID (Create_Units 0x00660320 expands it for Rules BaseUnit;
+    // name hypothesis).
+    bool Is_Present(T const &object) const
+    {
+        for (int index = 0; index < this->ActiveCount; index++) {
+            if (this->Vector[index] == object) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     // The implicit assignment, written out so a recovery source can define
     // one instance as an explicit specialization (the Rules unit keeps
     // out-of-line copies, e.g. 0x006528A0): DynamicVectorClass's assignment

@@ -134,4 +134,14 @@ inline Cell operator+(Cell const &left, Cell const &right)
 }
 #endif
 
+// Member-wise difference of two cells (Create_Units 0x00660320: the X and Y
+// differences are computed together, Y first, as a constructor's arguments).
+#ifndef RA2_CELLSTRUCT_MINUS
+#define RA2_CELLSTRUCT_MINUS
+inline Cell operator-(Cell const &left, Cell const &right)
+{
+    return Cell(left.X - right.X, left.Y - right.Y);
+}
+#endif
+
 #endif

@@ -38,6 +38,7 @@ extern int unknown_8523e4;  // 0x008523E4 VQA frame height (hypothesis)
 extern bool unknown_flag_852fd7;  // 0x00852FD7
 extern HouseClass *unknown_player_a35db4;  // 0x00A35DB4 the player's house
 extern int unknown_game_mode_a3d298;  // 0x00A3D298
+extern bool unknown_flag_a3d2b8;       // 0x00A3D2B8 (session +0x20: multiplayer bases)
 // The session object at 0x00A3D298 (its first word is unknown_game_mode_a3d298;
 // SessionClass in TS, hypothesis).
 struct UnknownSessionState {
@@ -57,7 +58,8 @@ struct UnknownSessionState {
     int ScenarioIndex;                      // +0x1C the multiplayer map (unknown_multi_missions_a3d8d8 index; -1: none)
     char unknown_20[0x24 - 0x20];
     int unknown_24;                         // +0x24 every multiplayer house's third setup value (Assign_Houses)
-    char unknown_28[0x3C - 0x28];
+    char unknown_28[0x38 - 0x28];
+    int UnitCount;                          // +0x38 the multiplayer start units (Create_Units)
     int AICount;                            // +0x3C the computer players
     char unknown_40[0x44 - 0x40];
     int AIDifficulty[8];                    // +0x44

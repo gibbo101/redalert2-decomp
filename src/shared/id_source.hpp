@@ -267,6 +267,14 @@ void __fastcall Do_Restart_0065e440();
 void __fastcall Unknown_0065e590();
 // Makes the multiplayer units (0x00660320; Westwood's Create_Units, hypothesis).
 void __fastcall Create_Units_00660320(bool official);
+// The multiplayer start cells: the set start waypoints, then random reachable
+// cells until there is one per player (0x0065FFF0; returned through ecx,
+// official in dl; name hypothesis).
+DynamicVectorClass<Cell> __fastcall Multiplayer_Start_Waypoints_0065fff0(bool official);
+// Places an object on or near a cell within a distance (0x00660B60; nonzero
+// when it was placed; name not recovered).
+class ObjectClass;
+int __fastcall Unknown_00660b60(ObjectClass *object, Cell &cell, int distance);
 // Writes the scenario INI file (0x0065F980; Westwood's Write_Scenario_INI; flag:
 // the map editor's full save with the preview; meaning hypothesis).
 void __fastcall Write_Scenario_INI_0065f980(char const *filename, bool flag);

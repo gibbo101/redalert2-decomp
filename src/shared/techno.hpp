@@ -58,6 +58,9 @@ public:
     UnknownTechnoPair(NoInitClass const &noinit) {}
     ~UnknownTechnoPair();               // 0x00713350
     int unknown_713580() const;         // 0x00713580 (hypothesis: written to the [Units] line)
+    // Sets the first word to 0 and the second to 2.0f with the flag, else 0
+    // (0x00713550; Create_Units with InitialVeteran).
+    void Unknown_00713550(bool flag);
     void Unknown_00713590(int value);    // 0x00713590: signed int * 0.01 stored as an 8-byte FP value
     bool unknown_713420() const;        // 0x00713420
     void Unknown_00713360(int cost, int points);   // 0x00713360 (gains experience; TechnoClass slot 55)
