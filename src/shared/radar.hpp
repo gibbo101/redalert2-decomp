@@ -125,8 +125,7 @@ void Unknown_005A0AC0();                                // 0x005A0AC0 (radar mod
 void Unknown_0065C310();                                // 0x0065C310
 bool Speech_Is_Playing();                               // 0x00715E20 (as shared/wdt_voices.hpp)
 // The movies queued for the radar (0x00AF8FD8; mode 3 plays the first; shared/movie.hpp).
-class MovieHandle;
-extern DynamicVectorClass<MovieHandle *> queued_movies_00af8fd8;
+#include "shared/movie_queue.hpp"
 
 // Values at RadarClass +0x1238 (a buffer and two values) and +0x1244 (four), cleared by their
 // constructors (meaning not recovered).

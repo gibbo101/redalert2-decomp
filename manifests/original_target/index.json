@@ -460,7 +460,7 @@
       },
       {
         "path": "src/shared/radar.hpp",
-        "sha256": "82cda24ff33b607cb76db9a4670db26db7993b7280d5494b46c24ef66b317c80"
+        "sha256": "316b7cc8e0850b1ba87c22cb7bfd6dc892fc224ed034a7d5fbc2a7d8dbad1791"
       },
       {
         "path": "src/shared/scroll.hpp",
@@ -1644,7 +1644,7 @@
       },
       {
         "path": "src/shared/lobby.hpp",
-        "sha256": "d8005f11155174503f1da941f38e094dd378aee263412d3e3da932e62770ba66"
+        "sha256": "63e8bb4f984e0608827096721eb564b24ae7e9e295182135c7043ecac2520f9e"
       },
       {
         "path": "src/shared/network_tests.hpp",
@@ -1672,7 +1672,7 @@
       },
       {
         "path": "src/shared/message_list.hpp",
-        "sha256": "fa50c56606276c538ba5c37bd9d4e190a8d8032a71f6b3a2525fb93a90b2cb01"
+        "sha256": "1f5416b2199fcb1a233ad5390871be71e42dde76f385e7d5aabebb2a53378a47"
       },
       {
         "path": "src/shared/tube_data.hpp",
@@ -1717,6 +1717,10 @@
       {
         "path": "src/shared/base64.hpp",
         "sha256": "233d4c5c060deb757e5a0e71765aeaa754aa49500012c10ee9f043b93054162d"
+      },
+      {
+        "path": "src/shared/movie_queue.hpp",
+        "sha256": "123e254d2d87ae90603755b9046c95f78be46fa64c6bfc147da58c7fee553fe6"
       }
     ],
     "source_quality_checkpoint": {
@@ -4524,7 +4528,8 @@
     "population-2794",
     "population-2795",
     "population-2796",
-    "population-2797"
+    "population-2797",
+    "population-2798"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -7558,7 +7563,8 @@
     ["population-2794", 1],
     ["population-2795", 2],
     ["population-2796", 2],
-    ["population-2797", 1]
+    ["population-2797", 1],
+    ["population-2798", 3]
   ],
   "shards": {
     "population-01": "0142c66dfa137e5010b46c1457127cb5277c4095ef75a6def3f382d923335dfa",
@@ -9566,6 +9572,7 @@
     "population-2795": "f87c2cdbbd2e3a22cc53c70cad56a3dd0ee127e4a5d5ac3a5c5d66f3c45911de",
     "population-2796": "d0d754fce75a8aa22defbee80c8e8f020f4251ec7118512bfc875f21ae2cb399",
     "population-2797": "8e0f92f5446f63152429beac84046a8071e03d2ad175096681c404127a897c56",
+    "population-2798": "f61739c2424cbeeaf43849f5c96ad96334f544469fd5b3d23509af0d56d340b3",
     "population-28": "7959b510196b47fbd2a8664095e6a7d55c0cb242f8fd24177ec52fc2b11b6998",
     "population-280": "137e8f9da2e56ae16c03434fb88bace5258c0ae4bf020dc45d9b98aaed463efc",
     "population-281": "89a68dbb2bd3487bcae896d17453988ae86d62127907302090c0597dcabc9f2e",

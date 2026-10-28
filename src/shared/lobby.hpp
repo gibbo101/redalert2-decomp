@@ -50,12 +50,17 @@ extern int unknown_lobby_flag_7e6d90;
 int Compare_Wide_007837d3(wchar_t const *first, wchar_t const *second);
 // Narrows a wide string into a rotating buffer (0x006FA120).
 char *__fastcall Unknown_006FA120(unsigned short const *string);
+// Widens a narrow string into a rotating buffer (0x006FA180).
+wchar_t *__fastcall Unknown_006FA180(char const *text);
 // Case-insensitive comparison, 0 when equal (0x00781F20; the CRT's _stricmp).
 int Compare_Narrow_00781f20(char const *first, char const *second);
 // Frees a block (0x00781D3B; the CRT's free).
 void Free_Memory_00781d3b(void *block);
 // Frees every element of the list and clears it (0x005A7480).
 void __fastcall Free_Pointers_005a7480(DynamicVectorClass<UnknownPlayerEntry *> *list);
+
+// The index-matched player's value (+0x67) for a nick name, 1 for the host's own name, -1 when unknown (0x005BCC60).
+int __fastcall Unknown_Find_Player_By_Name_005bcc60(char const *name);
 
 // The name of a fixed lobby entry ("Waiting" for any other entry; 0x005CD0E0).
 Wstring __fastcall Unknown_Lobby_Entry_Name_005cd0e0(UnknownPlayerEntry *entry);
