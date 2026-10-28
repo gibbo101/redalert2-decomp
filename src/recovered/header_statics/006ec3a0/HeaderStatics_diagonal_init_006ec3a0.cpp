@@ -1,5 +1,5 @@
 // Header-static dynamic initializers of the unit at 0x006EC3A0 and the
-// unit's AbstractClass list; the other drafts of this plan are emitted by this file.
+// unit's twelve AbstractClass lists; the other drafts of this plan are emitted by this file.
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
 #ifndef VECTOR_IMPLEMENT_ALL
@@ -11,6 +11,20 @@ class AbstractClass;
 
 // The unit's list of AbstractClass objects (0x00AC0D60; name is a hypothesis).
 DynamicVectorClass<AbstractClass *> unknown_AbstractClass_list_00ac0d60;
+// The unit's other eleven object lists, in initializer order (0x006EC610-
+// 0x006ECB50: each an initializer and an atexit destructor; every vtable
+// store is DynamicVectorClass<AbstractClass *> 0x007A177C). Names are hypotheses.
+DynamicVectorClass<AbstractClass *> unknown_objects_ac0cb0; // 0x00AC0CB0 (objects and types)
+DynamicVectorClass<AbstractClass *> unknown_objects_ac0c58; // 0x00AC0C58
+DynamicVectorClass<AbstractClass *> unknown_AbstractClass_list_00ac0d48; // 0x00AC0D48 (tags and triggers)
+DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0bf8; // 0x00AC0BF8 (TechnoClass +0x108 holders, bullets)
+DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0c80; // 0x00AC0C80 (buildings and houses)
+DynamicVectorClass<AbstractClass *> unknown_AbstractClass_list_00ac0c98; // 0x00AC0C98 (triggers, tags, events, actions)
+DynamicVectorClass<AbstractClass *> unknown_objects_ac0c30; // 0x00AC0C30
+DynamicVectorClass<AbstractClass *> unknown_list_ac0c18; // 0x00AC0C18 (foot objects and neurons)
+DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0d08; // 0x00AC0D08 (technos, supers)
+DynamicVectorClass<AbstractClass *> unknown_objects_ac0d30; // 0x00AC0D30
+DynamicVectorClass<AbstractClass *> unknown_objects_ac0cd8; // 0x00AC0CD8
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??8?$VectorClass@PAVAbstractClass@@@@UBE_NABV0@@Z=004cdfe0
 // @ref ??_7?$DynamicVectorClass@PAVAbstractClass@@@@6B@=007a177c
@@ -31,6 +45,17 @@ DynamicVectorClass<AbstractClass *> unknown_AbstractClass_list_00ac0d60;
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410
 // @ref _$E41=006ec5d0
+// @ref ?unknown_objects_ac0cb0@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0cb0
+// @ref ?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0c58
+// @ref ?unknown_AbstractClass_list_00ac0d48@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0d48
+// @ref ?unknown_abstracts_ac0bf8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0bf8
+// @ref ?unknown_abstracts_ac0c80@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0c80
+// @ref ?unknown_AbstractClass_list_00ac0c98@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0c98
+// @ref ?unknown_objects_ac0c30@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0c30
+// @ref ?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0c18
+// @ref ?unknown_abstracts_ac0d08@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0d08
+// @ref ?unknown_objects_ac0d30@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0d30
+// @ref ?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0cd8
 // @ref __CIpow=007821b0
 // @ref __ftol=0077f110
 // @ref __real@8@3ff78000000000000000=0079a730
