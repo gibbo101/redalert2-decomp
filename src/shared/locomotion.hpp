@@ -125,6 +125,32 @@ struct UnknownSlopeTimer {
     int unknown_0c;                         // +0x0C
 };
 
+// A track's control entry (Westwood's TrackControlStruct, 12 bytes): the
+// track to follow, the track to start from, the final facing and the
+// mirroring flags (1 swap X/Y, 2 negate X, 4 negate Y). Drive.cpp and
+// Ship.cpp each have a table.
+struct TrackControlStruct {
+    char Track;                         // +0x00
+    char StartTrack;                    // +0x01
+    int Facing;                         // +0x04
+    int Flag;                           // +0x08
+};
+
+// One point of a track (Westwood's TrackType, 12 bytes) and a track
+// (RawTrackStruct, 16 bytes): its points, the point to jump to the next
+// track at (-1 none), the entry point, and the point whose cell is marked
+// ahead (-1 none). Drive.cpp and Ship.cpp each have a table.
+struct TrackType {
+    Point2D Offset;                     // +0x00
+    int Facing;                         // +0x08
+};
+struct RawTrackStruct {
+    TrackType const *Track;             // +0x00
+    int Jump;                           // +0x04
+    int Entry;                          // +0x08
+    int Cell;                           // +0x0C
+};
+
 class LocomotionClass : public IPersistStream, public ILocomotion {
 public:
     // IUnknown

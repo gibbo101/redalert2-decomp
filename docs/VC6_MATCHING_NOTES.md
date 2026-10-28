@@ -444,3 +444,12 @@ reaching each block).
 - Assignment through an inline `operator=(char const *)` evaluates the destination first; the original's
   temporary-first order comes from `x = FixedString<21>("...")`. Parallel arrays indexed from one base
   pointer (`[ebx-0x20]`, `[ebx]`, `[ebx+0x20]`) are members of one object (Assign_Houses 0x0065FBB0) (Big51).
+
+## Small observations (Near48)
+
+- A call that leaves ECX holding the caller's `this` (no `mov ecx` before it) is a free function, not a
+  member: a stale ECX is not an argument (0x0051FC50).
+- Repeating a member expression through a global pointer (`MissionTimer.Value()` twice) re-reads the
+  fields; a reference local lets VC6 reuse them (0x006B0B20).
+- Compares on a local int are jump-threaded (a passed test jumps straight to the call); the same member
+  read repeated in each test is CSE'd but not threaded (0x006B1F10).

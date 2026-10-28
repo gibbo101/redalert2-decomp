@@ -18,6 +18,9 @@
 extern CoordStruct unknown_coord_ab91c8;            // 0x00ab91c8
 extern "C" GUID const CLSID_ShipLocomotionClass;   // 0x007A1FF0
 
+extern TrackControlStruct const ShipTrackControl[];    // 0x007AADF0 (Ship.cpp's table)
+extern RawTrackStruct const ShipRawTracks[];         // 0x007AAD20 (Ship.cpp's table; indexed by track - 1)
+
 class ShipLocomotionClass : public LocomotionClass, public IPiggyback {
 public:
     ShipLocomotionClass();                                                     // 0x00675600
@@ -66,6 +69,7 @@ public:
     virtual bool __stdcall Is_Piggybacking();                                   // 0x0067AB60
 
     void unknown_676b20(CoordStruct const &coord, int mark);                    // 0x00676B20 (marks the track cells)
+    Point2D Smooth_Turn(Point2D const &offset, int &facing);                    // 0x0067A690 (a track point and facing mirrored by the track's flags, from the head-to coordinate)
 
     int unknown_1c;                     // +0x1C ramp
     int unknown_20;                     // +0x20 ramp

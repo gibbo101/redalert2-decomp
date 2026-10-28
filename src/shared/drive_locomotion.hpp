@@ -18,6 +18,9 @@
 extern CoordStruct unknown_coord_852998;            // 0x00852998
 extern "C" GUID const CLSID_DriveLocomotionClass;   // 0x007A1F70
 
+extern TrackControlStruct const DriveTrackControl[];   // 0x007A0180 (Drive.cpp's table)
+extern RawTrackStruct const DriveRawTracks[];        // 0x007A00B0 (Drive.cpp's table; indexed by track - 1)
+
 class DriveLocomotionClass : public LocomotionClass, public IPiggyback {
 public:
     DriveLocomotionClass();                                                     // 0x0049F640
@@ -66,6 +69,7 @@ public:
     virtual bool __stdcall Is_Piggybacking();                                   // 0x004A4C80
 
     void unknown_4a0bc0(CoordStruct const &coord, int mark);                    // 0x004A0BC0 (marks the track cells)
+    Point2D Smooth_Turn(Point2D const &offset, int &facing);                    // 0x004A4740 (a track point and facing mirrored by the track's flags, from the head-to coordinate)
 
     int unknown_1c;                     // +0x1C ramp
     int unknown_20;                     // +0x20 ramp
