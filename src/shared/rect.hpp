@@ -74,6 +74,8 @@ public:
 
     // The rectangle moved back by point (out of line, 0x0047D000 in Cell.cpp).
     Rect operator-(TPoint2D const &point) const;
+    // Moves the origin back by a point (FoggedObjectClass 0x004C00F0).
+    Rect &operator-=(Point2D const &point) { X -= point.X; Y -= point.Y; return *this; }
 
     // Overlap with another rectangle (the free Intersect below).
     Rect Intersect(Rect const &rect, int *x = 0, int *y = 0) const;
