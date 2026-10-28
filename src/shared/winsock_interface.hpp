@@ -39,6 +39,38 @@ extern "C" int __stdcall setsockopt(SOCKET s, int level, int name, char const *v
 extern "C" int __stdcall gethostname(char *name, int length);                       // 0x00781BD2
 extern "C" int __stdcall WSAStartup(unsigned short version, void *data);            // 0x00781BCC
 extern "C" int __stdcall EnumProtocolsA(int *protocols, void *buffer, unsigned long *length);   // 0x00781BC6
+extern "C" SOCKET __stdcall socket(int family, int type, int protocol);              // 0x00781BA2
+extern "C" unsigned short __stdcall htons(unsigned short value);                    // 0x00781B6C
+extern "C" unsigned long __stdcall htonl(unsigned long value);                      // 0x00781B66
+// gethostbyname's result (Winsock 1.1 HOSTENT).
+struct hostent {
+    char *h_name;                       // +0x00
+    char **h_aliases;                   // +0x04
+    short h_addrtype;                   // +0x08
+    short h_length;                     // +0x0A
+    char **h_addr_list;                 // +0x0C
+};
+extern "C" hostent * __stdcall gethostbyname(char const *name);                     // 0x00781B84
+extern "C" int __stdcall bind(SOCKET s, void const *address, int length);           // 0x00781B9C
+#define AF_INET 2
+#define SOCK_DGRAM 2
+#define INADDR_ANY ((unsigned long)0)
+#define SOL_SOCKET 0xFFFF
+#define SO_LINGER 0x0080
+
+// Winsock 1.1 socket address for AF_INET (16 bytes).
+struct sockaddr_in {
+    short sin_family;                   // +0x00
+    unsigned short sin_port;            // +0x02 (network order)
+    unsigned long sin_addr;             // +0x04 (network order)
+    char sin_zero[8];                   // +0x08
+};
+
+// SO_LINGER option value.
+struct linger {
+    unsigned short l_onoff;
+    unsigned short l_linger;
+};
 WIN32_IMPORT int WINAPI MessageBoxA(void *window, char const *text, char const *caption, unsigned int type);   // 0x0079A47C
 
 // The start-up data block handed to WSAStartup (0x590 bytes allocated;

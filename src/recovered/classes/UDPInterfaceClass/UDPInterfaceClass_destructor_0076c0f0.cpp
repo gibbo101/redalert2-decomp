@@ -8,10 +8,7 @@
 
 UDPInterfaceClass::~UDPInterfaceClass()
 {
-    while (BroadcastAddresses.Count()) {
-        delete BroadcastAddresses[0];
-        BroadcastAddresses.Delete(0);
-    }
+    unknown_slot12();
     while (LocalAddresses.Count()) {
         delete LocalAddresses[0];
         LocalAddresses.Delete(0);

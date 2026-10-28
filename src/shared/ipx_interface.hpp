@@ -14,8 +14,6 @@
 extern "C" unsigned int __cdecl strlen(char const *string);
 #pragma intrinsic(strlen)
 
-extern "C" SOCKET __stdcall socket(int family, int type, int protocol);            // 0x00781BA2
-extern "C" int __stdcall bind(SOCKET s, void const *address, int length);           // 0x00781B9C
 extern "C" int __cdecl sprintf(char *buffer, char const *format, ...);              // 0x007820F4
 
 // Windows version facts (0x00839C4C: a Windows 9x flag; 0x00839BC0 and

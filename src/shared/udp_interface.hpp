@@ -22,6 +22,8 @@ extern "C" int __cdecl sscanf(char const *string, char const *format, ...);     
 
 // The default game port (0x007F60D0).
 extern int unknown_default_port_7f60d0;
+// The alternate socket's port (0x007F60D8).
+extern int unknown_alternate_port_7f60d8;
 
 class UDPInterfaceClass : public WinsockInterfaceClass {
 public:
@@ -35,15 +37,15 @@ public:
     virtual void unknown_slot12();                                      // slot 12 0x0076C230 (clears the broadcast addresses)
     virtual int unknown_slot13() { return 2; }                          // slot 13 0x0076D3E0 (inline)
     virtual unsigned int unknown_slot14(int socket);                    // slot 14 0x0076D3F0 (the notification message)
-    virtual bool unknown_slot15(int socket);                            // slot 15 0x0076C6F0
+    virtual bool unknown_slot15(int socket);                            // slot 15 0x0076C6F0 (local addresses, then the alternate socket)
     virtual int unknown_slot16(int arg1, int arg2, int arg3, int arg4); // slot 16 0x0076CD40
     virtual int unknown_slot18() { return LocalAddresses.Count(); }     // slot 18 0x0076D430 (inline)
     virtual int unknown_slot19(int index) { return (int)LocalAddresses[index]; }   // slot 19 0x0076D440 (inline)
-    virtual void unknown_slot23(int arg1);                              // slot 23 0x0076C350
+    virtual bool Open_Socket(unsigned short port);                      // slot 23 0x0076C350 (opens and binds the primary socket)
     virtual unsigned short unknown_slot24() { return unknown_3f2fc; }   // slot 24 0x0076D450 (inline)
     virtual bool unknown_slot25();                                      // slot 25 0x0076C6D0 (Init, then no sockets)
-    virtual void unknown_slot26(int arg1);                              // slot 26 0x0076C480
-    virtual void unknown_slot27(int arg1);                              // slot 27 0x0076C5B0
+    virtual bool Open_Spare_Socket(unsigned short port);                // slot 26 0x0076C480
+    virtual void Close_Spare_Socket(unsigned short port);               // slot 27 0x0076C5B0
     virtual void unknown_slot28();                                      // slot 28 0x0076CCC0
     virtual void unknown_slot29(unsigned short port);                   // slot 29 0x0076C670 (selects the socket for a port)
     virtual void unknown_slot30(unsigned long *address, unsigned short port);   // slot 30 0x0076CBC0 (marks an address unreachable)
