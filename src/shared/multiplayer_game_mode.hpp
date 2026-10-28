@@ -25,6 +25,10 @@ class UnknownDescriptionList_00490E00;
 class MultiMission;
 
 #include "shared/unknown_player_entry.hpp"
+// The multiplayer lobby dialog window, 0 when none (0x005C2C40; hypothesis).
+HWND Get_Lobby_Dialog_005c2c40();
+// Text buffer of the lobby description box (0x00839D4C; bss).
+extern char unknown_text_839d4c[];
 
 // A team of a game mode: a vptr, the team name and its number.
 class MultiplayerTeam {
