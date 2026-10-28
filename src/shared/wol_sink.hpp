@@ -621,7 +621,6 @@ extern int unknown_query_count_b2abf4;
 extern int unknown_a72d08;
 extern int unknown_a72c68;
 extern int unknown_a40230;
-extern wchar_t unknown_host_name_a3f618[];
 extern IPXAddressClass unknown_address_a3fbc8;
 extern PlayerProfile *unknown_profile_b28cc4;
 void __fastcall Unknown_005cd030(HWND dialog, bool value);

@@ -83,8 +83,7 @@ extern bool unknown_flag_8373c0;
 extern wchar_t unknown_text_ab9484[];
 extern "C" unsigned int __cdecl wcslen(wchar_t const *string);     // 0x00783605
 
-// Game options bits (0x00A3F600; bit 1 restricts the sidebar toggle).
-extern unsigned char unknown_flags_a3f600;
+// The game option bits unknown_flags_a3f600 are in shared/unknown_globals.hpp.
 // Unknown_005A09E0 (called when the sidebar is hidden) is in shared/unknown_globals.hpp.
 
 // The shape drawer (0x0049EEA0; shared/palette.hpp's declaration, which

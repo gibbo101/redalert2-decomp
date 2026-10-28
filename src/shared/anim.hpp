@@ -256,8 +256,7 @@ void __fastcall Unknown_00422BA0(int arg1, Cell const &cell);
 // Gives every animated-tiberium animation the palette entry of its cell's
 // tiberium (0x00423C70; name hypothesis).
 void __fastcall Unknown_00423C70();
-void __fastcall Unknown_004955D0(void *object, int value, void (*callback)());   // 0x004955D0
-extern char unknown_object_837e10[];                // 0x00837E10 (0x004955D0's object; type unknown)
+// Unknown_004955D0 and unknown_object_837e10 are in shared/unknown_globals.hpp.
 void unknown_481fb0();                              // 0x00481FB0 (shared/ms_engine.hpp)
 
 // The cell offsets of the eight facings (0x00851A70; shared/aircraft.hpp

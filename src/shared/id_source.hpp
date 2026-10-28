@@ -242,6 +242,14 @@ void __fastcall Toggle_Display_Mode_0065c480(bool preferred);
 // drops the players who made no progress for 3600 ticks, fails when the serial
 // carrier is lost; true when all are in (name hypothesis).
 bool __fastcall Wait_For_Players_0065c520();
+// The player won (0x0065D7F0; Westwood's Do_Win): as Do_Lose, then the Win,
+// PostScore and PreMapSelect movies, the score, the campaign's end or next
+// scenario, and the restart of the next scenario (name hypothesis).
+void __fastcall Do_Win_0065d7f0();
+// The player lost (0x0065DEC0; Westwood's Do_Lose): stops the game, the sounds and
+// music, shows the score (networked) and the Lose movie, offers the replay and
+// restarts the scenario when it is accepted (name hypothesis).
+void __fastcall Do_Lose_0065dec0();
 // Reads and sets up the named scenario (0x0065C7D0; Start_Scenario's worker;
 // false on failure; meaning partly recovered).
 bool __fastcall Unknown_0065c7d0(char const *name);

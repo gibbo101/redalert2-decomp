@@ -67,6 +67,7 @@ struct UnknownSessionState {
     // Whether the house (null: the player's) is the game master: by MasterPlayerID,
     // else by name, in game mode 4 (0x0066F150; YR's Am_I_Master, hypothesis).
     bool Am_I_Master(HouseClass *house);
+    void Unknown_0066EE50();                // 0x0066EE50 (Do_Lose after a networked replay restarts)
 };
 extern UnknownSessionState unknown_session_a3d298;
 // The session's game mode object (+0x04, a MultiplayerGameMode; moved from
@@ -104,6 +105,14 @@ public:
     virtual void unknown_slot27(bool official);          // slot 27 (multiplayer setup 0x0065E8C0: makes the units)
     virtual void unknown_slot28();                       // slot 28 (0x0065E8C0, at the end)
     virtual void unknown_slot29();                       // slot 29 (0x0065E8C0, after slot 28)
+    virtual void unknown_slot30();
+    virtual void unknown_slot31();
+    virtual void unknown_slot32();
+    virtual void unknown_slot33();
+    virtual void unknown_slot34();
+    virtual void unknown_slot35(int arg);                // slot 35 (Do_Lose 0x0065DEC0 with 0 when there is no replay)
+    virtual bool unknown_slot36();                       // slot 36 (Do_Lose: true replays)
+    virtual void unknown_slot37();                       // slot 37 (Do_Lose, before the replay)
     void Unknown_005B7CE0();                             // 0x005B7CE0 (after slot 27)
     CCINIClass *unknown_ini_005b7840();                 // 0x005B7840 (the session INI)
 };
@@ -115,6 +124,51 @@ void __fastcall Service_Game_IO_00481fb0();
 // "connection lost" (error 1) message and removes the player (0x005BB5D0; YR's
 // SessionClass::Destroy_Connection, hypothesis).
 void __fastcall Destroy_Connection_005bb5d0(int id, int error);
+// Game option bits (0x00A3F600, session +0x2368; bit 1 restricts the sidebar toggle
+// and skips Do_Lose's score and replay; moved from shared/sidebar.hpp).
+extern unsigned char unknown_flags_a3f600;
+// The host's name (0x00A3F618, session +0x2380, wide; Do_Lose clears it in a
+// multiplayer game; moved from shared/wol_sink.hpp).
+extern unsigned short unknown_host_name_a3f618[];
+// Session counters Do_Lose raises: games lost (0x00A3F58C, +0x22F4) and one capped at
+// 3 (0x00A3F598, +0x2300); a mode-4 flag that keeps the IPX timing (0x00A3D580, +0x2E8).
+// Meanings not recovered.
+extern int unknown_a3f58c;
+extern int unknown_a3f598;
+extern int unknown_a3d580;
+// Called before Do_Lose in a networked game without bit 1 (0x00624850, 0x0053F780;
+// meanings not recovered).
+void __fastcall Unknown_00624850();
+void __fastcall Unknown_0053F780();
+// The score screen (0x005AAA20 constructor clears the score statics; 0x005AAA40 shows
+// it; an empty class built as a temporary; names hypotheses).
+class UnknownScore_005AAA20 {
+public:
+    UnknownScore_005AAA20();
+    void Presentation_005AAA40();
+};
+// Takes the object at 0x00837E10 (a palette, hypothesis) through value steps,
+// calling the callback each step (0x004955D0; Do_Win: 7, the per-frame service;
+// moved from shared/anim.hpp).
+void __fastcall Unknown_004955D0(void *object, int value, void (*callback)());   // 0x004955D0
+extern char unknown_object_837e10[];                // 0x00837E10 (0x004955D0's object; type unknown)
+// Do_Win's campaign steps (meanings not recovered): 0x00491A10 decides whether the
+// campaign goes on, 0x004B37C0 is the end of the campaign, 0x0058F510 the map
+// selection and 0x0058F620 picks the named next scenario.
+class UnknownIDSource;
+bool __fastcall Unknown_00491A10();
+void __fastcall Unknown_004B37C0();
+void __fastcall Unknown_0058F510(UnknownIDSource *scenario);
+void __fastcall Unknown_0058F620(UnknownIDSource *scenario, char const *name);
+// Do_Win's score screen (0x0069A640 empty constructor, 0x0069A650 shows it;
+// built as a temporary unless the scenario's SkipScore; names hypotheses).
+class UnknownScore_0069A640 {
+public:
+    UnknownScore_0069A640();
+    void Presentation_0069A650();
+};
+// Sets up the network game for a replay (0x005BC460; false: failed).
+bool __fastcall Unknown_005BC460();
 // A counter Start_Scenario raises around its disk check (0x00A3FABC; meaning not
 // recovered).
 extern int unknown_counter_a3fabc;

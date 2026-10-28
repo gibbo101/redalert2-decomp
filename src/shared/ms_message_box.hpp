@@ -19,8 +19,15 @@
 
 typedef int (WINAPI *DialogProc)(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 
-int __stdcall Message_Box(unsigned short const *text, unsigned short const *button1,
-                          unsigned short const *button2, unsigned short const *button3, int unknown5);  // 0x005B46B0
+// The message box object holds only its caption (Do_Lose builds it as a temporary with
+// L" "); Process ignores this (YR's WWMessageBox, name hypothesis).
+class WWMessageBox {
+public:
+    WWMessageBox(unsigned short const *caption) : Caption(caption) {}
+    int Process(unsigned short const *text, unsigned short const *button1,
+                unsigned short const *button2, unsigned short const *button3, bool unknown5);  // 0x005B46B0
+    unsigned short const *Caption;
+};
 int __stdcall Message_Box_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);           // 0x005B48C0
 void __fastcall Message_Box_Command(HWND window, int id, HWND control, unsigned code);                             // 0x005B4980
 
