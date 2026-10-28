@@ -3,6 +3,8 @@
 // CRC accumulator (hypothesis: Westwood's WWCRCEngine).
 class WWCRCEngine {
 public:
+    // Zeroed when constructed (Game_CRC 0x00654C90 builds one on its frame).
+    WWCRCEngine() : CRC(0), Index(0), StagingBuffer(0) {}
     void operator()(char datum);                // 0x00493DF0
     void operator()(bool datum);                // 0x00493E80 (stores datum != 0)
     void operator()(short datum);               // 0x00493F10 (FootClass::Compute_CRC)
@@ -11,6 +13,10 @@ public:
     long operator()(void const *buffer, int length);   // 0x00493FC0
     void operator()(float datum);               // 0x00493F50 (ParticleSystemClass::Compute_CRC; hypothesis)
     void operator()(double datum);              // 0x00493F70 (AnimTypeClass, VoxelAnimTypeClass Compute_CRC; hypothesis)
+
+    long CRC;                   // +0x00
+    int Index;                  // +0x04
+    long StagingBuffer;         // +0x08
 };
 
 #endif

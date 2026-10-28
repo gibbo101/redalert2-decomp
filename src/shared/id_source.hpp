@@ -15,6 +15,7 @@ class TechnoTypeClass;
 class CellClass;
 class SpecialClass;
 class CCINIClass;
+class WWCRCEngine;
 // Only the41-byte stride and final value byte are observed by the checkpoint.
 struct UnknownScenarioVariable_004B5AB0 { char unknown_00[40]; bool Value; };
 typedef char ScenarioVariable_stride_check[(sizeof(UnknownScenarioVariable_004B5AB0)==41)?1:-1];
@@ -28,6 +29,8 @@ public:
     // label (0x0065B780).
     UnknownIDSource(NoInitClass const &noinit);
     // 0x0051FC50 is a free function (shared/team.hpp): it reads the byte at 0x00A51934.
+    // Adds the scenario's state to a CRC (0x00662E00; Game_CRC).
+    void Compute_CRC(WWCRCEngine &crc) const;
     long Next_ID();                             // 0x00663170 (name hypothesis)
     CellClass *unknown_6631a0(int waypoint);            // 0x006631A0 (the map cell of a waypoint; hypothesis)
     bool unknown_6612c0(unsigned index, bool value);    // 0x006612C0 (sets one of the 50 local variables; returns the old value; hypothesis)
