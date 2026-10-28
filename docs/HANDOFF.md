@@ -11,7 +11,7 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
 has 16 GB): Seed78 (seed sweep 100-1500 B, 0x500000-0x67FFFF), Seed79 (the same below
 0x500000), Seed76 (the same sweep
-from 0x680000), Big75 (1-4 KB functions, controlled-study method). Windows: one Codex lead
+from 0x680000), Big80 (1-4 KB functions, continuing Big75: OwnerDraw family, MapClass 0x55CEF0-0x562450). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -120,6 +120,8 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
   ScoreAnimClass::Resume; 0xA3FA7C declared twice (UnknownPlayerEntry, UnknownNodeName);
   Unknown_00713DB0 declared in radar.hpp and techno.hpp; MultiplayerGameMode ctor 0x5B6CD0 needs a
   signature rename across the mode classes. Misses in Seed70 NOTES (Get_Input 82.8, Planning 30-95).
+- Big75 plateaus (NOTES): Set_Video_Mode 0x5434E0 93.32 (Set_Cursor zero stores), Allocate_Surfaces
+  0x519500 68.2, TeamClass 0x6BA1A0 78.32, OwnerDraw 0x5DEFB0 66.4; Create_Units' callee 0x660B60 32.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

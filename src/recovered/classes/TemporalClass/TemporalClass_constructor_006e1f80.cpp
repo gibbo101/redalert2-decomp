@@ -1,8 +1,8 @@
-// ??0TemporalClass@@QAE@PAVAbstractClass@@@Z (0x006E1F80)
+// ??0TemporalClass@@QAE@PAVTechnoClass@@@Z (0x006E1F80)
 // Link for owner, listed in the unit list.
 #include "shared/temporal.hpp"
 
-TemporalClass::TemporalClass(AbstractClass *owner)
+TemporalClass::TemporalClass(TechnoClass *owner)
 {
     Owner = owner;
     Target = 0;

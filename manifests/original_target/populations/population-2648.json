@@ -4,8 +4,8 @@
     "id": "population-2648",
     "inventory_sha256": "b0964bdc2a1df06d942ca00ca3edd9a51d58a3b5053a0e2b3eccdd47ebdcb2f2",
     "gaps_sha256": "d5a04aaf68a3fdac5d644813755e1bfdf0a09fa1ccd13a7bc8fbbe78f852ef6c",
-    "historical_population_sha256": "847fac2579f72689ec7a1367d2eaaeffa97b53a3454d9763c4c49b166d89e888",
-    "historical_acceptance_sha256": "e902ae7122fa2c5cddab3ebae7c047278153388ea711f6389179873d2c894d88"
+    "historical_population_sha256": "e739169a0b3ecdf051edf55a5a133234e3ea43158285c282adc049f68f690a8f",
+    "historical_acceptance_sha256": "28a09399fc21baa61ea1e841db89b149938c2826e6e818507a7b741ef697256c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1350,7 +1350,7 @@
     "??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z": 6854416,
     "??0CaptureManagerClass@@QAE@PAVAbstractClass@@@Z": 4619696,
     "??0ParasiteClass@@QAE@PAVAbstractClass@@@Z": 6316608,
-    "??0TemporalClass@@QAE@PAVAbstractClass@@@Z": 7217024,
+    "??0TemporalClass@@QAE@PAVTechnoClass@@@Z": 7217024,
     "??_7TechnoClass@@6BIPersistStream@@@": 8047488,
     "??_7TechnoClass@@6BIRTTITypeInfo@@@": 8047460,
     "??_7TechnoClass@@6BINoticeSink@@@": 8047452,
@@ -9614,7 +9614,11 @@
     "?Draw_Me@TriColorGaugeClass@@UAEHH@Z": 5048112,
     "?Unknown_00675320@ShapeButtonClass@@QAE_NXZ": 6771488,
     "?Unknown_00406F50@@YAXXZ": 4222800,
-    "?Draw_Me@SliderClass@@UAEHH@Z": 6835360
+    "?Draw_Me@SliderClass@@UAEHH@Z": 6835360,
+    "?Spring@TriggerClass@@QAE_NHPAVObjectClass@@_N1H@Z": 7264064,
+    "?unknown_func_6e6050@TEventClass@@QAE_NHPAVHouseClass@@PAVObjectClass@@PAV?$CDTimerClass@VFrameTimerClass@@@@PA_NH@Z": 7233616,
+    "?unknown_func_6e6cf0@TEventClass@@QBE_NXZ": 7236848,
+    "__real@8@3ffd9999999999999800": 7986512
   },
   "regions": [
     {
@@ -14925,7 +14929,7 @@
         {
           "offset": 414,
           "kind": 20,
-          "symbol": "??0TemporalClass@@QAE@PAVAbstractClass@@@Z",
+          "symbol": "??0TemporalClass@@QAE@PAVTechnoClass@@@Z",
           "target": 7217024,
           "addend": 0,
           "resolved": 131470
@@ -14947,7 +14951,7 @@
           "resolved": 8624200
         }
       ],
-      "source_sha256": "1e1c71d1fcc1f4b998b5e50f65a9f843d1c72113dd5a67940a5777ad86851d80",
+      "source_sha256": "ee093e4de52867eb410c466006a3bbec46354ef5cfd33fd2e080e3214ce10dbd",
       "source": "src/recovered/classes/TechnoClass/TechnoClass_Init_006c1c50.cpp",
       "population": "population-2648",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",

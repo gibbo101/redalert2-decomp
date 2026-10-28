@@ -26,7 +26,7 @@
 // @ref ??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z=00689710
 // @ref ??0CaptureManagerClass@@QAE@PAVAbstractClass@@@Z=00467db0
 // @ref ??0ParasiteClass@@QAE@PAVAbstractClass@@@Z=00606240
-// @ref ??0TemporalClass@@QAE@PAVAbstractClass@@@Z=006e1f80
+// @ref ??0TemporalClass@@QAE@PAVTechnoClass@@@Z=006e1f80
 
 // Takes a type's recoil timing (travel and the three frame counts).
 inline void Copy_Recoil(UnknownTechnoBlock &block, RecoilControl const &data)

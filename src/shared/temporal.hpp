@@ -20,7 +20,7 @@ extern "C" GUID const CLSID_TemporalClass;     // 0x007A1E20
 class TemporalClass : public AbstractClass {
 public:
     TemporalClass();                                            // 0x006E1EF0
-    TemporalClass(AbstractClass *owner);                        // 0x006E1F80
+    TemporalClass(TechnoClass *owner);                          // 0x006E1F80
     TemporalClass(NoInitClass const &noinit);                   // 0x006E2040
     virtual ~TemporalClass();                                   // 0x006E2080
 
@@ -32,15 +32,24 @@ public:
     virtual void Compute_CRC(WWCRCEngine &crc) const;           // 0x006E2100
     virtual void AI();                                          // 0x006E2230
 
-    AbstractClass *Owner;                           // +0x24
-    AbstractClass *Target;                          // +0x28
+    // Names after YRpp's TemporalClass (hypotheses). The warp per step is the owner's current
+    // weapon damage; each helper chained at +0x44 adds its own (at most 50 deep).
+    int Get_Warp_Per_Step(int step);                            // 0x006E2470
+    void Detach_Techno(TechnoClass *target);                    // 0x006E24C0 (the owner or the target died)
+    void Let_Go_Of_Target();                                    // 0x006E2500
+    void Let_Go();                                              // 0x006E2680 (and the helpers chained to it)
+    void Just_Let_Go();                                         // 0x006E2710
+    bool Can_Warp_Target(TechnoClass *target) const;            // 0x006E2770
+
+    TechnoClass *Owner;                             // +0x24 the firer
+    TechnoClass *Target;                            // +0x28 the techno being erased
     CDTimerClass<FrameTimerClass> unknown_2c;       // +0x2C
     AbstractClass *unknown_38;                      // +0x38
     AbstractClass *unknown_3c;                      // +0x3C
-    AbstractClass *unknown_40;                      // +0x40
-    AbstractClass *unknown_44;                      // +0x44
+    TemporalClass *unknown_40;                      // +0x40 the previous link on the same target
+    TemporalClass *unknown_44;                      // +0x44 the next link (a helper)
     int unknown_48;                                 // +0x48
-    int unknown_4c;                                 // +0x4C
+    int unknown_4c;                                 // +0x4C the warp per step (Get_Warp_Per_Step)
 };
 
 extern DynamicVectorClass<TemporalClass *> unknown_TemporalClass_list_00ac02e0;   // 0x00AC02E0

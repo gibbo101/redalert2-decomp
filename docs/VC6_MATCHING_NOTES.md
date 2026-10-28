@@ -523,3 +523,12 @@ reaching each block).
   performs the memory accesses only volatile semantics keep: `volatile int zero = 0; zero = 1 / zero;`
   stores the zero, reloads it, divides and stores the quotient (a deliberate fault,
   SwizzleManagerClass::Process_Tables 0x0069FC30; owner ruling 2026-10-28).
+- A container method called through a pointer to its owner (`Rules->BaseUnit.ID(x)`) stays a virtual
+  call (only a named global's member is devirtualised). An original that scans the container inline
+  there used a non-virtual inline helper (`TypeList::Is_Present`).
+- A CDTimerClass test through `operator long` leaves `Value()` out of line; `.Value()` inlines it
+  (SpawnManagerClass::AI 0x00689C90, with the tail-duplicated trailing-call rule: 84.5 to exact).
+- In a long compare-list function, the last `if (list) return X;` of each group stays inline in the
+  original only when written `bool b = list; if (b) return X;` (applied to every group); otherwise VC6
+  lays the return after the following code and cross-jumps equal returns. Equal single-value returns
+  were one `||` list (OwnerDraw 0x005E0010, 0x005E0760).
