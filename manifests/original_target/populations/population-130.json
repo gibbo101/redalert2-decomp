@@ -528,31 +528,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 6946240,
-      "method": "0069fdc0",
-      "symbol": "?FUN_0069fdc0@seed_0069fdc0@@YGIHHHH@Z",
-      "symbol_prefix": "?FUN_0069fdc0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 8,
-      "body_sha256": "5a23e00a4334d4bab66c1e327427d4644fb2f81e975088628ebda3491616b9df",
-      "padding_bytes": 8,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "ef0c1560865a8fd9fb9cea1975f72dae25ce6980f589efa45c23b70310775eac",
-      "relocations": [],
-      "source_sha256": "065d93d63a46fc782cfece4da184402509cef11829aa2bd510aeb9f1519f5911",
-      "source": "src/recovered/classes/SwizzleManagerClass/0069fdc0.cpp",
-      "source_order": 11309,
-      "population": "population-130",
-      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 7272656,
       "method": "006ef8d0",
       "symbol": "?FUN_006ef8d0@seed_006ef8d0@@YGIIPAI@Z",

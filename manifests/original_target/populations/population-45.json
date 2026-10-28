@@ -408,56 +408,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 6946032,
-      "method": "0069fcf0",
-      "symbol": "?FUN_0069fcf0@seed_0069fcf0@@YGIIPAI@Z",
-      "symbol_prefix": "?FUN_0069fcf0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 27,
-      "body_sha256": "c4a57be0bb1693b068a3eeebf534fdfc838530342aa652e03bbe0e721766fe24",
-      "padding_bytes": 5,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "7df4fe6c56fc6943f6b43d1f52d19afd769df7c298aac89666e4414aa434f5ef",
-      "relocations": [],
-      "source_sha256": "9ae08a9f7d9f16952e129191ec1907c6476f0a5731f2671f49a4e0c7483093d7",
-      "source": "src/recovered/classes/SwizzleManagerClass/0069fcf0.cpp",
-      "source_order": 7360,
-      "population": "population-45",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
-      "entry": 6946160,
-      "method": "0069fd70",
-      "symbol": "?FUN_0069fd70@seed_0069fd70@@YGIIHPAH@Z",
-      "symbol_prefix": "?FUN_0069fd70@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 31,
-      "body_sha256": "4f334f1c2d3498a979bf70ee16a9005a51755345edf25ed4f2f8d31bd2b03a0c",
-      "padding_bytes": 1,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "dd0be7c07027e1e821a0778e1e71337d30fe7e1b67ec06e5b4acf9a72b404e73",
-      "relocations": [],
-      "source_sha256": "1ae635aa4944bb321f137aa1d0d8acbe8d0d0e1956224c4b23c991d98518592d",
-      "source": "src/recovered/classes/SwizzleManagerClass/0069fd70.cpp",
-      "source_order": 7361,
-      "population": "population-45",
-      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 6997952,
       "method": "006ac7c0",
       "symbol": "?FUN_006ac7c0@seed_006ac7c0@@YGIH@Z",

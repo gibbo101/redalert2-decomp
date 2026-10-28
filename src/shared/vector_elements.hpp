@@ -22,14 +22,16 @@ inline bool operator==(AcceleratorTracker const &a, AcceleratorTracker const &b)
 }
 inline bool operator!=(AcceleratorTracker const &a, AcceleratorTracker const &b) { return !(a == b); }
 
-// 8 bytes (the swizzle manager's pointer table, SwizzleManager); the lookups compare the
-// first word only (VectorClass<SwizzlePointerClass>::operator== 0x0069FE40).
+// 8 bytes: an entry of the swizzle manager's tables (shared/swizzle.hpp): an object's
+// address when it was saved and the field to fix or the object's new address. The lookups
+// compare the first word only (VectorClass<SwizzlePointerClass>::operator== 0x0069FE40).
 struct SwizzlePointerClass {
-    SwizzlePointerClass() : unknown_00(0), unknown_04(0) {}
-    int unknown_00;
-    int unknown_04;
+    SwizzlePointerClass() : ID(0), Pointer(0) {}
+    SwizzlePointerClass(long id, void *pointer) : ID(id), Pointer(pointer) {}
+    long ID;
+    void *Pointer;
 };
-inline bool operator==(SwizzlePointerClass const &a, SwizzlePointerClass const &b) { return a.unknown_00 == b.unknown_00; }
+inline bool operator==(SwizzlePointerClass const &a, SwizzlePointerClass const &b) { return a.ID == b.ID; }
 inline bool operator!=(SwizzlePointerClass const &a, SwizzlePointerClass const &b) { return !(a == b); }
 
 // 12 bytes: a coordinate (VectorClass<UndoInfoStruct>::operator== 0x00686FD0 compares all

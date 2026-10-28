@@ -17,6 +17,7 @@ struct GUID {
 
 #define SUCCEEDED(result) ((HRESULT)(result) >= 0)
 #define FAILED(result) ((HRESULT)(result) < 0)
+#define E_NOTIMPL ((HRESULT)0x80004001L)
 #define E_NOINTERFACE ((HRESULT)0x80004002L)
 #define E_POINTER ((HRESULT)0x80004003L)
 #define CLSCTX_INPROC_SERVER 0x1

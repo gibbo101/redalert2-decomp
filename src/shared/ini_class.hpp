@@ -49,8 +49,6 @@ extern "C" char *__cdecl strchr(char const *string, int character);
 extern "C" char *__cdecl strncpy(char *destination, char const *source, unsigned int count);
 extern "C" char *__cdecl _strdup(char const *string);
 extern "C" void __cdecl free(void *block);
-extern "C" void __cdecl qsort(void *base, unsigned int count, unsigned int width,
-                              int(__cdecl *compare)(void const *, void const *));
 extern "C" int __cdecl sprintf(char *buffer, char const *format, ...);
 extern "C" int __cdecl sscanf(char const *buffer, char const *format, ...);
 extern "C" int __cdecl atoi(char const *string);
