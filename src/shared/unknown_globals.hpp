@@ -98,7 +98,7 @@ struct UnknownSessionState {
     void Unknown_0066EE50();                // 0x0066EE50 (Do_Lose after a networked replay restarts)
     void Unknown_00672440();                // 0x00672440 (game mode 4, after the load wait of 0x0065C7D0)
     unsigned char Unknown_00672F10();       // 0x00672F10 (+0x3080)
-    void Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)
+    int Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)
 };
 extern UnknownSessionState unknown_session_a3d298;
 // Saves the session settings (0x00670380; after the skirmish dialog and WOL games).

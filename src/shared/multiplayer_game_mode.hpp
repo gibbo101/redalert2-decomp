@@ -80,8 +80,8 @@ public:
     virtual bool unknown_slot20();                                 // 20 0x005B73B0 (true)
     virtual bool unknown_slot21();                                 // 21 0x005B73C0 (true)
     virtual bool unknown_slot22() { return true; }               // 22 0x005A2420
-    virtual void unknown_slot23();                                 // 23 0x005B74C0 (the session's 0x00672940)
-    virtual void unknown_slot24();                                 // 24 0x005B74D0 (slot 23)
+    virtual int unknown_slot23();                                 // 23 0x005B74C0 (the session's 0x00672940)
+    virtual int unknown_slot24();                                 // 24 0x005B74D0 (slot 23)
     virtual void unknown_slot25(int unknown_1, int unknown_2) {} // 25 0x005A2430
     virtual bool unknown_slot26();                                 // 26 0x005B7820
     virtual void unknown_slot27();                                 // 27 0x005B7C00
@@ -249,8 +249,8 @@ public:
     virtual bool unknown_slot20();                                 // 20 0x005A38D0
     virtual bool unknown_slot21();                                 // 21 0x005A3960
     virtual bool unknown_slot22();                                 // 22 0x005A4250
-    virtual void unknown_slot23();                                 // 23 0x005A4540
-    virtual void unknown_slot24();                                 // 24 0x005A45F0
+    virtual int unknown_slot23();                                 // 23 0x005A4540
+    virtual int unknown_slot24();                                 // 24 0x005A45F0
     virtual void unknown_slot25(int unknown_1, int unknown_2);     // 25 0x005A3CA0
     virtual bool unknown_slot26();                                 // 26 0x005A3EE0
     virtual void unknown_slot27();                                 // 27 0x005A4170

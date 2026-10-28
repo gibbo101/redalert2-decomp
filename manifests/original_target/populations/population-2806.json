@@ -4,8 +4,8 @@
     "id": "population-2806",
     "inventory_sha256": "c4cc9dff10e4b353545a8bb3134fe0b201d008ac476628db86eb25a29aba4bd0",
     "gaps_sha256": "35bf6983b3f4de5b8253d07b1740440acbb3c5ef97154977c44f0b9b4f4289ce",
-    "historical_population_sha256": "f0363dd1a414832f1b98fe6b7c12715a0acab435c144997afb3ddb49750a9cb8",
-    "historical_acceptance_sha256": "050a092a855b53f87a98c238bae6547a2da1d0eeaac3551daa18ebbc41f9461b"
+    "historical_population_sha256": "abb679dbbe17a675ad6d7fd4470c7c7c2e6ccf2e184788ac5c21e13cc4034e49",
+    "historical_acceptance_sha256": "9a052ffdcb220b3140d0dcc84163cf6a7138400db30eb15ca61da1377006af16"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -6020,7 +6020,7 @@
     "?Unknown_Rect_Shrink_006F1B00@@YIXPAVRect@@H@Z": 7281408,
     "?Unknown_Get_Art_6f2490@@YAPAXXZ": 7283856,
     "??1WaypointClass@@QAE@XZ": 7490304,
-    "?unknown_slot24@MultiplayerGameMode@@UAEXXZ": 5993680,
+    "?unknown_slot24@MultiplayerGameMode@@UAEHXZ": 5993680,
     "?ID@?$DynamicVectorClass@UWaypointClass@@@@UAEHABUWaypointClass@@@Z": 7493632,
     "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "??_GTerrainClass@@UAEPAXI@Z": 7228240,
@@ -6261,8 +6261,8 @@
     "?Save@SpawnManagerClass@@UAGJPAUIStream@@H@Z": 6859120,
     "??0?$VectorClass@PAVMultiplayerGameMode@@@@QAE@IPBQAVMultiplayerGameMode@@@Z": 6002912,
     "?unknown_slot13@MultiplayerGameMode@@UAEHXZ": 5993472,
-    "?unknown_slot23@MultiplayerGameMode@@UAEXXZ": 5993664,
-    "?Unknown_00672940@UnknownSessionState@@QAEXXZ": 6760768,
+    "?unknown_slot23@MultiplayerGameMode@@UAEHXZ": 5993664,
+    "?Unknown_00672940@UnknownSessionState@@QAEHXZ": 6760768,
     "?Action@GaugeClass@@UAEHIAAI@Z": 5047328,
     "?unknown_b2a7fc@@3HA": 11708412,
     "?Unknown_005359E0@Unknown535910@@QAEXXZ": 5462496,

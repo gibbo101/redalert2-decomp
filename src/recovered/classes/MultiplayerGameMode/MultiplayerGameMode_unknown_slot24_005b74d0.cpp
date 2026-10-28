@@ -1,6 +1,6 @@
-// void MultiplayerGameMode::unknown_slot24() -- 0x005B74D0
+// int MultiplayerGameMode::unknown_slot24() -- 0x005B74D0
 
-void MultiplayerGameMode::unknown_slot24()
+int MultiplayerGameMode::unknown_slot24()
 {
-    unknown_slot23();
+    return unknown_slot23();
 }

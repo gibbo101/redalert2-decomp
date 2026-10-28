@@ -4,8 +4,8 @@
     "id": "population-2751",
     "inventory_sha256": "7baa9408d720350b5f59caa7dd751887cf4293460e0f8d36e40b327115299eb9",
     "gaps_sha256": "8b4f6264798eb29f9920dd3ad071afd52ac0526ed4075e6e5d06ecb082645c67",
-    "historical_population_sha256": "1047df2eb5d7cbe98dfcabf82989e9d085e967ab897539e59e74cef51a874137",
-    "historical_acceptance_sha256": "3aeb2b5e38176f8670faca2cc490759bf58195c0edcdf68cde7a71c0415e833b"
+    "historical_population_sha256": "18674829325e76ba9d1a2f57ab6e54b8788960818f0525b42c27a55e0d7c2e32",
+    "historical_acceptance_sha256": "da6633de74a78d8ede94c20c8de09c6c57820c37fe7225ce893daf91bc8feee0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1392,7 +1392,7 @@
     "?Unknown_006720E0@MultiMission@@QAE_NAAVWstring@@@Z": 6758624,
     "?unknown_73c370@@YA_NXZ": 7586672,
     "?unknown_session_a3d298@@3UUnknownSessionState@@A": 10736280,
-    "?Unknown_00672940@UnknownSessionState@@QAEXXZ": 6760768,
+    "?Unknown_00672940@UnknownSessionState@@QAEHXZ": 6760768,
     "?unknown_reset_combo_6007f0@@YIXPAUHWND__@@@Z": 6293488,
     "__imp__SendMessageA@16": 7972000,
     "?unknown_text_770430@WideString@@QBEPBGXZ": 7799856,
@@ -1429,8 +1429,8 @@
     "?unknown_slot12@MultiplayerGameMode@@UAE_NXZ": 5993456,
     "?unknown_slot13@MultiplayerGameMode@@UAEHXZ": 5993472,
     "?unknown_5b7470@MultiplayerGameMode@@QAE_NPAVMultiMission@@@Z": 5993584,
-    "?unknown_slot23@MultiplayerGameMode@@UAEXXZ": 5993664,
-    "?unknown_slot24@MultiplayerGameMode@@UAEXXZ": 5993680,
+    "?unknown_slot23@MultiplayerGameMode@@UAEHXZ": 5993664,
+    "?unknown_slot24@MultiplayerGameMode@@UAEHXZ": 5993680,
     "?unknown_slot14@MultiplayerGameMode@@UAEXPAUHWND__@@PBV?$DynamicVectorClass@H@@H@Z": 5993696,
     "?unknown_slot15@MultiplayerGameMode@@UAEXPAUHWND__@@PBV?$DynamicVectorClass@H@@H@Z": 5993808,
     "?unknown_slot16@MultiplayerGameMode@@UAEXPAUHWND__@@H@Z": 5993936,
@@ -5997,7 +5997,27 @@
     "??_EBufferIOFileClass@@UAEPAXI@Z": 4390384,
     "??_E?$List@PAUINIEntry@INIClass@@@@UAEPAXI@Z": 5311520,
     "??_EMSPCXAnim@@UAEPAXI@Z": 5963440,
-    "??_E?$List@PAUINISection@INIClass@@@@UAEPAXI@Z": 4252416
+    "??_E?$List@PAUINISection@INIClass@@@@UAEPAXI@Z": 4252416,
+    "__real@8@3ffda0d97bb4e7870000": 7999744,
+    "?unknown_name_a3d3a0@@3PADA": 10736544,
+    "?unknown_a3d3bc@@3HA": 10736572,
+    "?unknown_a3d3b4@@3HA": 10736564,
+    "?unknown_int_a40d48@@3HA": 10751304,
+    "?Unknown_0042E150@Unknown84E8D0@@QAEXXZ": 4383056,
+    "?x@?1???A?$IndexClass@JPAVAbstractClass@@@@QBEABQAVAbstractClass@@ABJ@Z@4PAV2@A": 11712040,
+    "?unknown_session_a3d2b4@@3HA": 10736308,
+    "?unknown_session_a3d33d@@3_NA": 10736445,
+    "?unknown_session_a3d2c8@@3HA": 10736328,
+    "?unknown_a40b18@@3HA": 10750744,
+    "?unknown_session_a3d2ac@@3HA": 10736300,
+    "?unknown_flag_a40d84@@3_NA": 10751364,
+    "?Unknown_00493C80@Cell@@QAE_NXZ": 4799616,
+    "?unknown_session_a3d2c3@@3EA": 10736323,
+    "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
+    "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
+    "?Unknown_0042EFD0@Unknown84E8D0@@QAE_NXZ": 4386768,
+    "?AI@Tactical@@UAEXXZ": 6958544,
+    "??0LightConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@HHH_NPBEH@Z": 5474400
   },
   "regions": [
     {
@@ -6946,8 +6966,8 @@
     {
       "entry": 5993680,
       "method": "005b74d0",
-      "symbol": "?unknown_slot24@MultiplayerGameMode@@UAEXXZ",
-      "symbol_prefix": "?unknown_slot24@MultiplayerGameMode@@UAEXXZ",
+      "symbol": "?unknown_slot24@MultiplayerGameMode@@UAEHXZ",
+      "symbol_prefix": "?unknown_slot24@MultiplayerGameMode@@UAEHXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -6960,7 +6980,7 @@
       "full_extent_bytes": 16,
       "full_extent_sha256": "ab05fdf56e1fd8ad6c1d02c5824207ed67ec6744b3afe8369639c6b881dc3603",
       "relocations": [],
-      "source_sha256": "b25bf563e095be16ef1535725183a8643ccdafb2d9dbcc46b35d23c0cf25b462",
+      "source_sha256": "52624e69962d8c0d95eb2d231ede01c63a63f01a960b64cae6bf1f8afedb4b9b",
       "source": "src/recovered/classes/MultiplayerGameMode/MultiplayerGameMode_unknown_slot24_005b74d0.cpp",
       "population": "population-2751",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -8726,8 +8746,8 @@
     {
       "entry": 5993664,
       "method": "005b74c0",
-      "symbol": "?unknown_slot23@MultiplayerGameMode@@UAEXXZ",
-      "symbol_prefix": "?unknown_slot23@MultiplayerGameMode@@UAEXXZ",
+      "symbol": "?unknown_slot23@MultiplayerGameMode@@UAEHXZ",
+      "symbol_prefix": "?unknown_slot23@MultiplayerGameMode@@UAEHXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -8751,13 +8771,13 @@
         {
           "offset": 6,
           "kind": 20,
-          "symbol": "?Unknown_00672940@UnknownSessionState@@QAEXXZ",
+          "symbol": "?Unknown_00672940@UnknownSessionState@@QAEHXZ",
           "target": 6760768,
           "addend": 0,
           "resolved": 767094
         }
       ],
-      "source_sha256": "c532e167a84e4da7b6418cc7dc84b99532563171377803165279a7d39f3536db",
+      "source_sha256": "69fddef79e732348bf4c9a003452df886de6b8d51a2c57ae127640984524108b",
       "source": "src/recovered/classes/MultiplayerGameMode/MultiplayerGameMode_unknown_slot23_005b74c0.cpp",
       "population": "population-2751",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
