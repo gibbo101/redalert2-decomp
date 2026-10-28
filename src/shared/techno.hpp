@@ -430,7 +430,7 @@ public:
     virtual bool unknown_slot156();                                 // slot 156 (+0x270) 0x00453B50 (kept copy elsewhere)
     virtual bool unknown_slot157();                                 // slot 157 (+0x274) 0x006D6780
     virtual bool unknown_slot158();                                 // slot 158 (+0x278) 0x006C7480
-    virtual bool unknown_slot159();                                 // slot 159 (+0x27C) 0x0041B370 (kept copy elsewhere)
+    virtual bool unknown_slot159() { return true; }                 // slot 159 (+0x27C) kept copy 0x0041B370
     virtual bool unknown_slot160();                                  // slot 160 (+0x280) 0x006C9020
     virtual bool unknown_slot161();                                  // slot 161 (+0x284) 0x006C8EF0
     virtual UnknownFacingDir unknown_slot162();                       // slot 162 (+0x288) 0x004CDDF0 (kept copy elsewhere)
@@ -474,7 +474,7 @@ public:
     virtual bool unknown_slot200(int arg1, int arg2, int arg3, int arg4); // slot 200 (+0x320) 0x006CC2A0
     virtual bool unknown_slot201() { return unknown_3fc > 0; } // slot 201 (+0x324) 0x006D8E80
     virtual bool unknown_slot202();                             // slot 202 (+0x328) 0x00453BC0 (kept copy elsewhere)
-    virtual bool unknown_slot203();                                 // slot 203 (+0x32C) 0x0041B390 (kept copy elsewhere)
+    virtual bool unknown_slot203() { return unknown_154.Value() > 0; }  // slot 203 (+0x32C) kept copy 0x0041B390 (the +0x154 timer still runs)
     virtual bool unknown_slot204();                                 // slot 204 (+0x330) 0x0041B3D0 (kept copy elsewhere)
     virtual void unknown_slot205();                                 // slot 205 (+0x334) 0x0041B3E0 (kept copy elsewhere)
     virtual int unknown_slot206() { TechnoTypeClass *type = unknown_slot32(); if (type) { return type->Speed; } return 0; } // slot 206 (+0x338) 0x006D8E90
