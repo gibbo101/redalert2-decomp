@@ -182,6 +182,7 @@ public:
     bool unknown_5070e0();
     bool unknown_507170();
     void Advance_Animation_005078b0();
+    AnimTypeClass *Pick_Dead_Body(bool use_type) const;        // inline (a dead-body animation, one scenario draw)
     int Update_Deployed_Attack_00507f70();                       // 0x00507F70 (-1 when it does not apply)
     bool unknown_5090a0() const;                // 0x005090A0 (the type's Deployer flag)
     bool unknown_5090b0() const;                // 0x005090B0 (the type's UndeployDelay is set)

@@ -9,9 +9,9 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Units60 (progress screen, SaveLoad, WinModemClass), Inf65 (inline virtual COMDATs that accepted
-units emit but no region binds, then InfantryClass; Air63's NOTES and tools), Close64 (near misses scoring 96 or more from finished lanes; queue in
-`build/class-work/Close64/queue.md`). Windows: one Codex lead
+has 16 GB): Surf66 (Surface, XSurface, BSurface, DSurface), Inf65 (inline virtual COMDATs that accepted
+units emit but no region binds, then InfantryClass; Air63's NOTES and tools), Leaf67 (ObjectClass leaf classes: Bullet, VoxelAnim,
+BuildingLight, Anim, Overlay, Veinhole, Particle, Terrain). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -70,8 +70,16 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - Write_Scenario_INI 0x65F980 uses an inline accessor on PreviewClass (YRpp name; its member is
   `DSurface *ImageSurface`); no plain member form comes close (21-43), so the accessor stays as an
   inline split (AGENTS.md lists inline splits as normal iteration).
+- Near misses of 96 or more, ranked with drafts and the remaining difference:
+  `build/class-work/Close64/queue.md` (Close64 closed only Sidebar Draw_It; the rest are
+  register/scheduling tie-breaks, negative results in its FINDINGS.md). Bound fixes found there:
+  Clear_Scenario 0x65D370 body 1140, WideString Trim_Trailing 0x770230 body 246 (inventory 103).
+  RulesClass::Process 0x6433A0 returns void (rename pending; HEAD says bool).
 - UnitClass (Unit62 NOTES): Read_INI 0x706AE0 99.44, death 0x6FD3A0 99.33, damage 98.08;
-  the 0x704A80 leaf replacement is approved. Close64 is working these.
+  the 0x704A80 leaf replacement is approved.
+- Units60 (NOTES): progress Draw_Player 0x61FC20 41.06 (the original keeps Draw_Name out of
+  line), Shape/Flag/Text_Offset ~89.9, WinModem Read_From_Serial_Port 0x734B30 77.97,
+  Wait_For_Serial_Write 71.07; Get_Modem_Result 0x734CD0 and 0x735110 not drafted.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).
