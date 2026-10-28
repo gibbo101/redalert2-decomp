@@ -1372,7 +1372,7 @@
       },
       {
         "path": "src/shared/path_estimator.hpp",
-        "sha256": "584b63f67587e83ecfe8fe4ebd76353e932fbed79293942acf08e26d906c0762"
+        "sha256": "42f1d81bbace28b6126665f3d9f901dc95cb3aaa2f9ccbd621d150da52740797"
       },
       {
         "path": "src/shared/tileset_index.hpp",
@@ -4438,7 +4438,8 @@
     "population-2768",
     "population-2769",
     "population-2770",
-    "population-2771"
+    "population-2771",
+    "population-2772"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -7447,7 +7448,8 @@
     ["population-2768", 3],
     ["population-2769", 3],
     ["population-2770", 1],
-    ["population-2771", 1]
+    ["population-2771", 1],
+    ["population-2772", 1]
   ],
   "shards": {
     "population-01": "fbe2b213e6dbb886c9706b6744670c802980d5b290fb62adefd4dd27fab64930",
@@ -9427,6 +9429,7 @@
     "population-277": "a21e4ce185e2040b56f1155d84c0588f30a51f3d9025a5649d00f7b3ddd68a5c",
     "population-2770": "9183ef7858ddb4cc56406fea47ac5c1dd9f121234a3b47c006389499dcac0b50",
     "population-2771": "eeaba3c2a195b7e123a61c45356eb32ca36382f0d152b7192177edf568714056",
+    "population-2772": "000e6bc3d05717f295b9293742eb865477822444646dc86536ca3ddbf15d7e88",
     "population-278": "e9f0dd226fc82bfb6ac3f7fdbbbacad3f08d2249bf96e7f5c8e42dacce71041a",
     "population-279": "bab3475455498d497f5429a3b9cdcdb601467847db944d856af8c45f5d41b3c4",
     "population-28": "7959b510196b47fbd2a8664095e6a7d55c0cb242f8fd24177ec52fc2b11b6998",
