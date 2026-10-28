@@ -220,6 +220,7 @@ void RadarEventClass_unknown_delete_all_63c640();
 // The object at 0x0084E8D0 (moved from shared/display.hpp).
 class Unknown84E8D0 {
 public:
+    void Unknown_0042E150();                    // 0x0042E150 (frees the per-house blocks; last call of 0x00519960)
     void Unknown_0042E1A0();                    // 0x0042E1A0 (Read_Scenario_INI)
     bool Unknown_0042E700(int house);           // 0x0042E700 true when one of the house's three slots is empty
     // +0x00 three owned blocks per house (8 houses): the static initializer 0x0042D960

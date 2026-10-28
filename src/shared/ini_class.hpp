@@ -243,6 +243,17 @@ public:
     bool Is_Present(INDEX const &id) const;
     int Count() const { return IndexCount; }
     T const &operator[](INDEX const &id) const;
+    // The record at a position of the table in ID order (sorts it first; 0x00519960
+    // deletes every indexed object through the first one).
+    T Fetch_By_Position(int position)
+    {
+        if (!IsSorted) {
+            qsort(&IndexTable[0], IndexCount, sizeof(IndexTable[0]), search_compfunc);
+            Invalidate_Archive();
+            IsSorted = true;
+        }
+        return IndexTable[position].Data;
+    }
     void Clear()
     {
         delete[] IndexTable;
