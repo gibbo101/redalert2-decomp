@@ -5,7 +5,7 @@
 // Layout (from the constructor 0x006EDEB0; names are hypotheses):
 //   +0x00  AbstractTypeClass (0x98)
 //   +0x98  int ArrayIndex (-1), +0x9C..+0x9F bools (true), +0xA0 bool
-//   +0xA4  AbstractTypeClass *unknown_a4 (swizzled; CRC'd by ID)
+//   +0xA4  HouseTypeClass *unknown_a4 (swizzled; CRC'd by ID)
 //   +0xA8  TriggerTypeClass *Next (the tag type's chain)
 //   +0xAC  TEventClass *Events, +0xB0 TActionClass *Actions (chained)
 // Every type is added to the abstract lists 0x00AC0C98 and 0x00AC0CB0.
@@ -13,6 +13,7 @@
 #define RA2_SHARED_TRIGGER_TYPE_HPP
 
 #include "shared/abstract_type.hpp"
+#include "shared/house_type.hpp"
 #include "shared/tevent.hpp"
 #include "shared/taction.hpp"
 
@@ -67,7 +68,8 @@ public:
     bool IsHard;                            // +0x9E enabled on hard
     bool IsEnabled;                         // +0x9F
     bool unknown_a0;                        // +0xA0
-    AbstractTypeClass *unknown_a4;          // +0xA4
+    HouseTypeClass *unknown_a4;             // +0xA4 the house (Read_INI: HouseTypes; TriggerClass::Spring
+                                            // passes its house to the events)
     TriggerTypeClass *Next;                 // +0xA8
     TEventClass *Events;                    // +0xAC
     TActionClass *Actions;                  // +0xB0

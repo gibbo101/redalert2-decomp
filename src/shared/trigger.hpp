@@ -57,7 +57,9 @@ public:
     void Enable();                                                      // 0x006EDB60
     void Disable();                                                     // 0x006EDB70
     static TriggerClass *__fastcall Find_Or_Make(TriggerTypeClass *type);   // 0x006ED8A0
-    bool unknown_func_6ed740(int event, ObjectClass *object, Cell cell, bool forced, int arg5);   // 0x006ED740 (spring; hypothesis)
+    // Springs on event unless already sprung or disabled; forced skips the event tests (0x006ED740;
+    // TS's TriggerClass::Spring; persistent comes from the tag type, source is passed to the events).
+    bool Spring(int event, ObjectClass *object, bool forced, bool persistent, int source);
     void unknown_func_6ed830(ObjectClass *object, Cell cell);    // 0x006ED830
 
     TriggerTypeClass *Class;                // +0x24
