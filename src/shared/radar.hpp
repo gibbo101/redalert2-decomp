@@ -108,7 +108,6 @@ extern Rect unknown_rect_ab6338;
 // The session (0x00A3D29C) whose slots 1 and 2 the radar's diplomacy button
 // asks before choosing its mode (meaning not recovered).
 class CCINIClass;
-extern int unknown_int_a40d48;                          // 0x00A40D48 the mode the radar buttons select (1, 8, 9)
 extern int unknown_int_af8fe8;                          // 0x00AF8FE8
 // Runs after the radar's update unless it is in mode 4 (0x00716950).
 void Unknown_00716950();
