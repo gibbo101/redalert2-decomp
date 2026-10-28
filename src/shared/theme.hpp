@@ -10,6 +10,13 @@
 #ifndef RA2_SHARED_THEME_HPP
 #define RA2_SHARED_THEME_HPP
 
+// A theme record (0x290 bytes?); only the flags the player tests.
+struct ThemeControl {
+    char unknown_000[0x288];
+    bool unknown_288;
+    bool unknown_289;           // +0x289 (Pick_Next_Song skips repeating a theme with it set)
+};
+
 typedef int ThemeType;
 #define THEME_NONE (-1)
 
@@ -19,6 +26,9 @@ public:
     void Queue_Song(ThemeType theme);       // 0x006E7E20
     int Play_Song(ThemeType theme);         // 0x006E7EB0 (name hypothesis after TS)
     void Scan();                            // 0x006E7AF0 (name hypothesis)
+    void AI();                              // 0x006E7CD0 (name hypothesis: chooses and starts the next song)
+    ThemeType Pick_Next_Song(ThemeType current);    // 0x006E7D80 (name hypothesis)
+    bool unknown_6e8440(unsigned theme);            // 0x006E8440 (the theme may be played; hypothesis)
     // The theme whose file name is `name` (0x006E8510) and a theme's file
     // base name (0x006E7C40); CCINIClass reads and writes themes by name.
     int From_Name(char const *name) const;
@@ -33,7 +43,12 @@ public:
     bool IsRepeat;          // +0x10 (OptionsClass IsScoreRepeat)
     bool unknown_11;        // +0x11
     bool IsShuffle;         // +0x12 (OptionsClass IsScoreShuffle)
-    char unknown_13[0x2C - 0x13];
+    char unknown_13[0x18 - 0x13];
+    ThemeControl **Themes;  // +0x18 the theme records (vector storage)
+    int unknown_1c;
+    int unknown_20;
+    int ThemeCount;         // +0x24 (active count)
+    char unknown_28[0x2C - 0x28];
     void *Sample;           // +0x2C the playing audio stream (0 when none)
 };
 
