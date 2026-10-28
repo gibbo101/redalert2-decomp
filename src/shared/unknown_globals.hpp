@@ -8,8 +8,10 @@ class Rect;
 class HouseClass;
 class ConvertClass;
 class BuildingClass;
+struct UnknownPlayerEntry;
 
 #include "shared/coord.hpp"
+#include "shared/vector_class_decl.hpp"
 
 extern int unknown_int_7add80;
 extern ConvertClass *unknown_drawer_8323b8;  // 0x008323B8 (OverlayTypeClass slot 40; also CellClass 0x474C6B)
@@ -82,7 +84,10 @@ struct UnknownSessionState {
     bool unknown_638;                       // +0x638 (cleared by 0x00672440)
     bool unknown_639;                       // +0x639 (cleared before the load wait, 0x0065C7D0)
     bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)
-    char unknown_63b[0x2FC8 - 0x63B];
+    char unknown_63b[0x27E4 - 0x63B];
+    // The player list (the object at 0x00A3FA7C, shared/unknown_player_entry.hpp unknown_players_a3fa7c).
+    DynamicVectorClass<UnknownPlayerEntry *> Players;   // +0x27E4
+    char unknown_27fc[0x2FC8 - 0x27FC];
     // The game master (host): name and house index (-1: none). The load wait
     // 0x0065C520 clears both when it drops the master (names after TS/YR's
     // SessionClass MasterPlayerName/MasterPlayerID, hypothesis).
@@ -99,8 +104,12 @@ struct UnknownSessionState {
     void Unknown_00672440();                // 0x00672440 (game mode 4, after the load wait of 0x0065C7D0)
     unsigned char Unknown_00672F10();       // 0x00672F10 (+0x3080)
     int Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)
+    bool Unknown_006728D0(int color);       // 0x006728D0 (whether a player or computer slot already has the colour; -2 never)
+    void Unknown_00672980();                // 0x00672980 (a random colour not in use)
 };
 extern UnknownSessionState unknown_session_a3d298;
+// The player count of a multiplayer map (0x005C6600; hypothesis).
+int __fastcall Unknown_005c6600(int scenario);
 // Saves the session settings (0x00670380; after the skirmish dialog and WOL games).
 void __fastcall Save_Session_00670380(UnknownSessionState *session);
 // The session's game mode object (+0x04, a MultiplayerGameMode; moved from

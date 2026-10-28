@@ -271,8 +271,14 @@ public:
     virtual bool unknown_slot40();                                 // 40 0x005A62A0
     virtual void unknown_slot42();                                 // 42 0x005A3F90
 
+    bool Unknown_005A4F20();                                       // 0x005A4F20 (replaces the campaign with a fresh one, named after two players)
+
     UnknownDescriptionList_00490E00 *unknown_campaigns_40;         // +0x40 the cooperative campaign records
     CoopCampaignClass *unknown_campaign_44;                        // +0x44 the selected campaign
+    char unknown_48[0x328 - 0x48];
+    DynamicVectorClass<CoopCampaignClass *> unknown_campaigns_328; // +0x328 one CoopCampaignClass per campaign record
+    int unknown_340;                                               // +0x340 the selected campaign's record index
+    bool unknown_344;                                              // +0x344
 };
 
 // vtable 0x007A676C (scalar deleting destructor 0x005A25F0)

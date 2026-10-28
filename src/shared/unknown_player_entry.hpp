@@ -15,7 +15,7 @@ struct UnknownPlayerEntry {
     int unknown_4b;                 // +0x4B the country (HouseTypes index; -3: random, read as 0 by Read_Scenario_INI)
     char unknown_4f[0x53 - 0x4f];
     int unknown_53;                 // +0x53 the colour (lowest first gets the first house; Assign_Houses)
-    char unknown_57[0x5b - 0x57];
+    int unknown_57;                 // +0x57 (-2 with +0x53 -1: the colour reads as random)
     int Team;
     int ID;                         // +0x5F (IPXManagerClass compares it with a node id; Assign_Houses stores the house index)
     char unknown_63[0x67 - 0x63];
