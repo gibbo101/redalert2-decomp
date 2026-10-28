@@ -146,6 +146,24 @@ public:
     // 0x004A4D00 for IPersist in Drive.cpp, 0x004CDF80 for ILocomotion in
     // Foot.cpp).
     void Release_Held();
+    // The converting query as comip.h expands it where Release_Held stays out of
+    // line (Fly.cpp 0x004BEFB0): the held pointer is released through Release_Held on
+    // both outcomes.
+    template <class Other>
+    HRESULT Query_Held(Other other)
+    {
+        Interface *pointer;
+        HRESULT result = other->QueryInterface(*iid, (void **)&pointer);
+        if (FAILED(result)) {
+            Release_Held();
+            Pointer = 0;
+        } else {
+            Interface *attached = pointer;
+            Release_Held();
+            Pointer = attached;
+        }
+        return result;
+    }
     // Gives up the held pointer without releasing it.
     Interface *Detach()
     {

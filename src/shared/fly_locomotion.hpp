@@ -9,6 +9,7 @@
 #define RA2_SHARED_FLY_LOCOMOTION_HPP
 
 #include "shared/locomotion.hpp"
+#include "shared/com_ptr.hpp"
 
 extern CoordStruct unknown_coord_865df8;            // 0x00865DF8
 extern "C" GUID const CLSID_FlyLocomotionClass;     // 0x007A1FC0
@@ -22,6 +23,29 @@ struct UnknownFlyAircraftType {
 struct UnknownFlyAircraft {
     char unknown_000[0x5AC];
     UnknownFlyAircraftType *Type;       // +0x5AC
+};
+
+// The interface with IID 0x007D80A8 the aircraft answers (slot 3 returns an int: the
+// aircraft's current height, hypothesis). Fly.cpp holds it in a smart pointer whose
+// Release_Held is out of line (0x004BFBC0).
+extern "C" GUID const unknown_uuid_7d80a8;          // 0x007D80A8
+struct UnknownFlyInterface : IUnknown {
+    virtual int __stdcall unknown_slot3() = 0;
+};
+typedef UnknownComPtr<UnknownFlyInterface, &unknown_uuid_7d80a8> UnknownFlyPtrBase;
+class FootClass;
+// The converting constructor as Fly.cpp expands it (Release_Held out of line on both outcomes).
+struct UnknownFlyPtr : UnknownFlyPtrBase {
+    template <class Other>
+    UnknownFlyPtr(Other const &other)
+    {
+        if (other) {
+            HRESULT result = Query_Held(other);
+            if (FAILED(result) && result != E_NOINTERFACE) {
+                _com_issue_error(result);
+            }
+        }
+    }
 };
 
 class FlyLocomotionClass : public LocomotionClass {
