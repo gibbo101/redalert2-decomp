@@ -290,7 +290,9 @@ public:
     char unknown_48[0x4C - 0x48];
     bool unknown_4c;                                               // +0x4C (set when the saved campaign is chosen)
     int unknown_50;                                                // +0x50 the campaign list row last loaded
-    char unknown_54[0x328 - 0x54];
+    char unknown_54[0x1A8 - 0x54];
+    DynamicVectorClass<int> unknown_1a8[8];                        // +0x1A8 (slot 25: one list per player, read from the campaign AI settings)
+    DynamicVectorClass<int> unknown_268[8];                        // +0x268 (slot 25: a second list per player)
     DynamicVectorClass<CoopCampaignClass *> unknown_campaigns_328; // +0x328 one CoopCampaignClass per campaign record
     int unknown_340;                                               // +0x340 the selected campaign's record index
     bool unknown_344;                                              // +0x344

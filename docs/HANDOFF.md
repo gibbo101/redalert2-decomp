@@ -139,6 +139,10 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - Vtable ownership blocks (Tools102 working): IsometricTileTypeClass dtor 0x529190 (exact body),
   LightConvertClass ctor 0x538860, DistributionObject vector ctor 0x6C09A0, WDTState ctor 0x72BEF0,
   House AI picker 0x6BED50. MessageListClass::Add_Message 0x5B4DA0 98.18 (body 952 B).
+- Below 0x500000 (Seed110/Seed105/Seed104 NOTES): EventClass type-5 ctor 0x4B61F0 97.67, VQ audio
+  close 0x411A60 92.41, 0x4763D0 94.0, Fly 0x4BCA00 86.96, BulletClass::Detach 0x461520 75.21 (Cell ctor
+  0x42AD30 stays out of line in the original); not started: CCToolTip 0x46DFC0/0x46E250, 0x467A20,
+  COM QueryInterface 0x49F710/0x4A6460, Aircraft 0x4141C0/0x418840.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).
