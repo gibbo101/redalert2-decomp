@@ -4,5 +4,6 @@
 #include "shared/vector_class.hpp"
 
 class MPlayerScoreType;
+class Cell;
 
 template class VectorClass<MPlayerScoreType *>;

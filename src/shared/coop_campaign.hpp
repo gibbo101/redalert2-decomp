@@ -5,6 +5,7 @@
 template<class T> class DynamicVectorClass;
 class UnknownDescriptionList_00490E00;
 class MPlayerScoreType;
+class Cell;
 class CoopCampaignClass {
 public:
     CoopCampaignClass();

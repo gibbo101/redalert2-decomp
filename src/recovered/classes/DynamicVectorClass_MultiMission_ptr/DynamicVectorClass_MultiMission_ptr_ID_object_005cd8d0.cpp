@@ -4,5 +4,7 @@
 #include "shared/vector_class.hpp"
 
 class MultiMission;
+class MPlayerScoreType;
+class Cell;
 
 template class DynamicVectorClass<MultiMission *>;
