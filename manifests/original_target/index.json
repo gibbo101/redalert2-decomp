@@ -68,7 +68,7 @@
       },
       {
         "path": "src/shared/win32_api.hpp",
-        "sha256": "0c94034799ff53c3cad5d9521e52d825d68499f41cc2942801ea367e96044aba"
+        "sha256": "bed5477a0284c2409e470bbd719db5c096316756c20e45f991209d86f8f899dd"
       },
       {
         "path": "src/shared/buffer_io_file_class.hpp",
@@ -76,7 +76,7 @@
       },
       {
         "path": "src/shared/crt_string.hpp",
-        "sha256": "b771fabc17debb497dab4631b97b23a87c665dce066178fe187280556811884c"
+        "sha256": "59aba2c505033e2644a383a79f6e2200b45eabf9a51ac3d4660c4dcd2a6680f1"
       },
       {
         "path": "src/shared/cd_file_class.hpp",
@@ -1529,6 +1529,10 @@
       {
         "path": "src/shared/pcx_cache.hpp",
         "sha256": "15b21f4af443e02e20e662be3be585f55c4889cebd7ea7a85e240a6f2390d626"
+      },
+      {
+        "path": "src/shared/win_modem.hpp",
+        "sha256": "935ad9dc7e61bbd1c4e07595d5f59b37156280fee618c1c10112ea3ea7367a8e"
       }
     ],
     "source_quality_checkpoint": {
@@ -4164,7 +4168,8 @@
     "population-2622",
     "population-2623",
     "population-2624",
-    "population-2625"
+    "population-2625",
+    "population-2626"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -7031,7 +7036,8 @@
     ["population-2622", 12],
     ["population-2621", 2],
     ["population-2622", 1],
-    ["population-2625", 6]
+    ["population-2625", 6],
+    ["population-2626", 7]
   ],
   "shards": {
     "population-01": "03e6c89313c3dad548538d89f04a60344629bd4674edb5fc346a4bd40da53b78",
@@ -8849,6 +8855,7 @@
     "population-2623": "762c06310155f7ad5be858230b91a554451e9ace8590e24bef10435c6a02f514",
     "population-2624": "4ce99a3d0d505d9e847a206070e1489b97ac07877cbdd72f072ed9afba9df5bd",
     "population-2625": "ad26f0902fcb7696f77829374b0814cc18f02f23919a20a481be1d60fbd1c8b9",
+    "population-2626": "b28250d01812e6eec3522de27b4d5f882307c5af58670562e72121cb04c958a8",
     "population-263": "25924aef6968fce7df47ed26b976b01047c5e93ddcab1255d9fe3a5302275cd6",
     "population-264": "044ef198530c78ea49f5ea5a6ed51edb1385c70421daafcf15670f6d1a14378a",
     "population-265": "a841c2f4aa9ec89b4f3f31d2e0ac7e520c085e037501b03d4ac986fc182736e2",

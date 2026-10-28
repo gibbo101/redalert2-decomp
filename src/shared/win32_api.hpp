@@ -166,6 +166,89 @@ WIN32_IMPORT LONG WINAPI RegCreateKeyExA(HKEY key, LPCSTR subkey, DWORD reserved
 WIN32_IMPORT LONG WINAPI RegSetValueExA(HKEY key, LPCSTR name, DWORD reserved, DWORD type, BYTE const *data,
                                         DWORD size);
 WIN32_IMPORT LONG WINAPI RegCloseKey(HKEY key);
+// Serial ports (KERNEL32; WinModemClass, shared/win_modem.hpp).
+struct OVERLAPPED {
+    DWORD Internal;
+    DWORD InternalHigh;
+    DWORD Offset;
+    DWORD OffsetHigh;
+    HANDLE hEvent;
+};
+struct COMSTAT {
+    DWORD fCtsHold : 1;
+    DWORD fDsrHold : 1;
+    DWORD fRlsdHold : 1;
+    DWORD fXoffHold : 1;
+    DWORD fXoffSent : 1;
+    DWORD fEof : 1;
+    DWORD fTxim : 1;
+    DWORD fReserved : 25;
+    DWORD cbInQue;
+    DWORD cbOutQue;
+};
+struct DCB {
+    DWORD DCBlength;
+    DWORD BaudRate;
+    DWORD fBinary : 1;
+    DWORD fParity : 1;
+    DWORD fOutxCtsFlow : 1;
+    DWORD fOutxDsrFlow : 1;
+    DWORD fDtrControl : 2;
+    DWORD fDsrSensitivity : 1;
+    DWORD fTXContinueOnXoff : 1;
+    DWORD fOutX : 1;
+    DWORD fInX : 1;
+    DWORD fErrorChar : 1;
+    DWORD fNull : 1;
+    DWORD fRtsControl : 2;
+    DWORD fAbortOnError : 1;
+    DWORD fDummy2 : 17;
+    WORD wReserved;
+    WORD XonLim;
+    WORD XoffLim;
+    BYTE ByteSize;
+    BYTE Parity;
+    BYTE StopBits;
+    char XonChar;
+    char XoffChar;
+    char ErrorChar;
+    char EofChar;
+    char EvtChar;
+    WORD wReserved1;
+};
+struct COMMTIMEOUTS {
+    DWORD ReadIntervalTimeout;
+    DWORD ReadTotalTimeoutMultiplier;
+    DWORD ReadTotalTimeoutConstant;
+    DWORD WriteTotalTimeoutMultiplier;
+    DWORD WriteTotalTimeoutConstant;
+};
+#define ERROR_IO_INCOMPLETE 996
+#define ERROR_IO_PENDING 997
+#define FILE_FLAG_OVERLAPPED 0x40000000
+WIN32_IMPORT HANDLE WINAPI CreateEventA(void *security, BOOL manualreset, BOOL initialstate, LPCSTR name);
+WIN32_IMPORT BOOL WINAPI ResetEvent(HANDLE event);
+WIN32_IMPORT BOOL WINAPI GetOverlappedResult(HANDLE file, OVERLAPPED *overlapped, DWORD *transferred, BOOL wait);
+WIN32_IMPORT BOOL WINAPI SetupComm(HANDLE file, DWORD inqueue, DWORD outqueue);
+WIN32_IMPORT BOOL WINAPI PurgeComm(HANDLE file, DWORD flags);
+WIN32_IMPORT BOOL WINAPI GetCommState(HANDLE file, DCB *dcb);
+WIN32_IMPORT BOOL WINAPI SetCommState(HANDLE file, DCB *dcb);
+WIN32_IMPORT BOOL WINAPI SetCommTimeouts(HANDLE file, COMMTIMEOUTS *timeouts);
+WIN32_IMPORT BOOL WINAPI ClearCommError(HANDLE file, DWORD *errors, COMSTAT *status);
+WIN32_IMPORT BOOL WINAPI GetCommModemStatus(HANDLE file, DWORD *status);
+WIN32_IMPORT BOOL WINAPI GetCommMask(HANDLE file, DWORD *mask);
+WIN32_IMPORT BOOL WINAPI EscapeCommFunction(HANDLE file, DWORD function);
+#define HKEY_LOCAL_MACHINE ((HKEY)0x80000002)
+#define KEY_READ 0x20019
+WIN32_IMPORT LONG WINAPI RegQueryInfoKeyA(HKEY key, char *keyclass, DWORD *class_size, DWORD *reserved,
+                                          DWORD *subkeys, DWORD *max_subkey, DWORD *max_class, DWORD *values,
+                                          DWORD *max_value_name, DWORD *max_value, DWORD *security,
+                                          FILETIME *last_write);
+WIN32_IMPORT LONG WINAPI RegEnumKeyExA(HKEY key, DWORD index, char *name, DWORD *name_size, DWORD *reserved,
+                                       char *keyclass, DWORD *class_size, FILETIME *last_write);
+WIN32_IMPORT LONG WINAPI RegOpenKeyExA(HKEY key, LPCSTR subkey, DWORD options, DWORD access, HKEY *result);
+WIN32_IMPORT LONG WINAPI RegQueryValueExA(HKEY key, LPCSTR name, DWORD *reserved, DWORD *type, BYTE *data,
+                                          DWORD *size);
 WIN32_IMPORT char *WINAPI lstrcpyA(char *destination, LPCSTR source);
 WIN32_IMPORT char *WINAPI lstrcatA(char *destination, LPCSTR source);
 WIN32_IMPORT int WINAPI lstrlenA(LPCSTR string);
