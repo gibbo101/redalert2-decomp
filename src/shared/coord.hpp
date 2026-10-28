@@ -95,6 +95,7 @@ public:
     // 0x004CB8F0 loads one operand in the other order (TechFoot39).
     Cell(short x, short y) { Set(x, y); }
     Cell &Set(short x, short y) { X = x; Y = y; return *this; }
+    bool Unknown_00493C80();   // 0x00493C80 (removes the cell's crate overlay and redraws it; CrateClass)
     short X;
     short Y;
 };
