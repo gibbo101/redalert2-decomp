@@ -34,7 +34,7 @@ enum {
     CONNECT_MAX = 7
 };
 
-// The session players: 0x00A3FA7C is the list of UnknownPlayerEntry (shared/unknown_player_entry.hpp).
+// The session players: 0x00A3FA7C is the list of NodeNameType (shared/unknown_player_entry.hpp).
 // A per-node unsigned short, by node index (0x00A402BA).
 extern unsigned short unknown_node_ids_a402ba[];
 

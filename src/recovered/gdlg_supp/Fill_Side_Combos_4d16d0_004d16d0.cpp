@@ -7,7 +7,7 @@
 // @ref __imp__GetDlgItem@8=0079a49c
 // @ref __imp__ShowWindow@8=0079a498
 // @ref __imp__SendMessageA@16=0079a4a0
-// @ref ?unknown_player_a72d44@@3PAUUnknownPlayerEntry@@A=00a72d44
+// @ref ?unknown_player_a72d44@@3PAUNodeNameType@@A=00a72d44
 // @ref ?unknown_combo_selected_data_005c99d0@@YIHPAUHWND__@@HH@Z=005c99d0
 // @ref ?Fill_Side_Combo_4d1560@@YIXPAUHWND__@@H@Z=004d1560
 

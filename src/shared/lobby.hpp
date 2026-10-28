@@ -1,6 +1,6 @@
 // The multiplayer lobby's slot tables (Lobby code around 0x005C8950-0x005CF000;
 // names are hypotheses from the slot logic). Seven fixed lobby entries (open,
-// closed, computer, ...: UnknownPlayerEntry-shaped records) and eight player slots,
+// closed, computer, ...: NodeNameType-shaped records) and eight player slots,
 // each pointing at one of those entries or at a session node.
 #ifndef RA2_SHARED_LOBBY_HPP
 #define RA2_SHARED_LOBBY_HPP
@@ -17,7 +17,7 @@
 
 // The first six fixed entries (0x00A72D2C..0x00A72D40); the seventh is unknown_player_a72d44.
 // The eight player slots are unknown_player_slots_a3fa98 and the session list unknown_players_a3fa7c.
-extern UnknownPlayerEntry *unknown_lobby_entries_a72d2c[6];
+extern NodeNameType *unknown_lobby_entries_a72d2c[6];
 // The slot before the table (0x00A3FA94; -1 after a reset).
 extern int unknown_lobby_a3fa94;
 // Two lobby words cleared by a reset (0x00A728E4, 0x00A72734).
@@ -63,12 +63,12 @@ int Compare_Narrow_00781f20(char const *first, char const *second);
 // Frees a block (0x00781D3B; the CRT's free).
 void Free_Memory_00781d3b(void *block);
 // Frees every element of the list and clears it (0x005A7480).
-void __fastcall Free_Pointers_005a7480(DynamicVectorClass<UnknownPlayerEntry *> *list);
+void __fastcall Free_Pointers_005a7480(DynamicVectorClass<NodeNameType *> *list);
 
 // The index-matched player's value (+0x67) for a nick name, 1 for the host's own name, -1 when unknown (0x005BCC60).
 int __fastcall Unknown_Find_Player_By_Name_005bcc60(char const *name);
 
 // The name of a fixed lobby entry ("Waiting" for any other entry; 0x005CD0E0).
-Wstring __fastcall Unknown_Lobby_Entry_Name_005cd0e0(UnknownPlayerEntry *entry);
+Wstring __fastcall Unknown_Lobby_Entry_Name_005cd0e0(NodeNameType *entry);
 
 #endif

@@ -294,8 +294,8 @@ public:
     int unknown_50;                                                // +0x50 the campaign list row last loaded
     CampaignScoreClass *unknown_score_54;                          // +0x54 the score screen (made by slot 36)
     int unknown_58;                                                // +0x58 (slot 34: the session row whose address is the local one)
-    DynamicVectorClass<UnknownPlayerEntry *> unknown_players_5c;   // +0x5C the players saved by slot 34 (copied back by slot 38); the destructor 0x5A2B50
-                                                                   // stores the VectorClass<NodeNameType *> vptr: UnknownPlayerEntry is probably NodeNameType
+    DynamicVectorClass<NodeNameType *> unknown_players_5c;   // +0x5C the players saved by slot 34 (copied back by slot 38); the destructor 0x5A2B50
+                                                                   // stores the VectorClass<NodeNameType *> vptr: NodeNameType is probably NodeNameType
     char unknown_74[0x1A8 - 0x74];
     DynamicVectorClass<int> unknown_1a8[8];                        // +0x1A8 (slot 25: one list per player, read from the campaign AI settings)
     DynamicVectorClass<int> unknown_268[8];                        // +0x268 (slot 25: a second list per player)

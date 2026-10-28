@@ -4,9 +4,9 @@
 #include "shared/wide_string.hpp"
 // @ref ?Wstring_To_Wide@@YI?AVWideString@@ABVWstring@@@Z=007711c0
 // @ref ??_C@_13JKDK@?$AA?0?$AA?$AA@=007e5c64
-// @ref ?unknown_player_slots_a3fa98@@3PAPAUUnknownPlayerEntry@@A=00a3fa98
-// @ref ?unknown_player_a72d44@@3PAUUnknownPlayerEntry@@A=00a72d44
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUUnknownPlayerEntry@@A=00a72d2c
+// @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98
+// @ref ?unknown_player_a72d44@@3PAUNodeNameType@@A=00a72d44
+// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
 // @ref ??0WideString@@QAE@XZ=0076f9b0
 // @ref ??1WideString@@QAE@XZ=0076fa50
 // @ref ??1Wstring@@QAE@XZ=0076d9e0
@@ -21,7 +21,7 @@ void __fastcall Unknown_Slot_Names_005c8cf0(wchar_t *list)
 {
     *list = 0;
     for (int i = 0; i < 8; i++) {
-        UnknownPlayerEntry *entry = unknown_player_slots_a3fa98[i];
+        NodeNameType *entry = unknown_player_slots_a3fa98[i];
         WideString name;
         if (entry == 0 || entry == unknown_lobby_entries_a72d2c[0] || entry == unknown_lobby_entries_a72d2c[1] ||
             entry == unknown_lobby_entries_a72d2c[5] || entry == unknown_player_a72d44 ||

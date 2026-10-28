@@ -3,8 +3,8 @@
 // network tests) get the first fixed entry, the rest the second; the slot
 // before the table is set to -1, the lobby state is told and two words clear.
 #include "shared/lobby.hpp"
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUUnknownPlayerEntry@@A=00a72d2c
-// @ref ?unknown_player_slots_a3fa98@@3PAPAUUnknownPlayerEntry@@A=00a3fa98
+// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98
 // @ref ?unknown_lobby_a3fa94@@3HA=00a3fa94
 // @ref ?unknown_lobby_a728e4@@3GA=00a728e4
 // @ref ?unknown_lobby_a72734@@3GA=00a72734

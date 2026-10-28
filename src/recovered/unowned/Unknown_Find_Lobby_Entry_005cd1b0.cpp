@@ -1,13 +1,13 @@
-// UnknownPlayerEntry *__fastcall Unknown_Find_Lobby_Entry_005cd1b0(WideString const &name) (0x005CD1B0)
+// NodeNameType *__fastcall Unknown_Find_Lobby_Entry_005cd1b0(WideString const &name) (0x005CD1B0)
 // The fixed lobby entry whose name equals the narrowed name; null when name is not narrow or matches none.
 #include "shared/lobby.hpp"
 #include "shared/wide_string.hpp"
-// @ref ?unknown_player_a72d44@@3PAUUnknownPlayerEntry@@A=00a72d44
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUUnknownPlayerEntry@@A=00a72d2c
+// @ref ?unknown_player_a72d44@@3PAUNodeNameType@@A=00a72d44
+// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
 // @ref ?unknown_lobby_names_7e6de8@@3PAPBDA=007e6de8
 // @ref ??8Wstring@@QBE_NPBD@Z=0076da00
 
-UnknownPlayerEntry *__fastcall Unknown_Find_Lobby_Entry_005cd1b0(WideString const &name)
+NodeNameType *__fastcall Unknown_Find_Lobby_Entry_005cd1b0(WideString const &name)
 {
     if (name.Is_Narrow()) {
         Wstring narrow = Narrow_Copy_00771280(name);

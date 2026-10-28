@@ -2,7 +2,7 @@
 // Sends a global message to another session node chosen by name (never the
 // first node, this player).
 #include "shared/ipx_manager.hpp"
-// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@A=00a3fa7c
+// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUNodeNameType@@@@A=00a3fa7c
 // @ref ?unknown_node_ids_a402ba@@3PAGA=00a402ba
 // @ref __wcsicmp=00796318
 

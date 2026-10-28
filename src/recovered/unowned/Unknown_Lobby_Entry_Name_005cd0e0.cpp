@@ -1,12 +1,12 @@
-// Wstring __fastcall Unknown_Lobby_Entry_Name_005cd0e0(UnknownPlayerEntry *entry) (0x005CD0E0)
+// Wstring __fastcall Unknown_Lobby_Entry_Name_005cd0e0(NodeNameType *entry) (0x005CD0E0)
 // The name of a fixed lobby entry (Open, Closed, EasyAI, MediumAI, HardAI, OpenObserver);
 // "Waiting" for the waiting entry and for every other entry.
 #include "shared/lobby.hpp"
-// @ref ?unknown_player_a72d44@@3PAUUnknownPlayerEntry@@A=00a72d44
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUUnknownPlayerEntry@@A=00a72d2c
+// @ref ?unknown_player_a72d44@@3PAUNodeNameType@@A=00a72d44
+// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
 // @ref ?unknown_lobby_names_7e6de8@@3PAPBDA=007e6de8
 
-Wstring __fastcall Unknown_Lobby_Entry_Name_005cd0e0(UnknownPlayerEntry *entry)
+Wstring __fastcall Unknown_Lobby_Entry_Name_005cd0e0(NodeNameType *entry)
 {
     if (entry == unknown_lobby_entries_a72d2c[0]) {
         return Wstring(unknown_lobby_names_7e6de8[0]);

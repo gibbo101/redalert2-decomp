@@ -4,8 +4,8 @@
 #include "shared/gdlg_supp.hpp"
 #include "shared/unknown_globals.hpp"
 #include "shared/unknown_player_entry.hpp"
-// @ref ?unknown_player_slots_a3fa98@@3PAPAUUnknownPlayerEntry@@A=00a3fa98
-// @ref ?unknown_player_a72d44@@3PAUUnknownPlayerEntry@@A=00a72d44
+// @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98
+// @ref ?unknown_player_a72d44@@3PAUNodeNameType@@A=00a72d44
 // @ref ?Fill_Color_Combo_4d2080@@YIXPAUHWND__@@H@Z=004d2080
 
 void __fastcall Fill_Color_Combos_4d2300(HWND dialog)

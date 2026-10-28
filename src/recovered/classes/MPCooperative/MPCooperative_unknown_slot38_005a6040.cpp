@@ -22,7 +22,7 @@ void MPCooperative::unknown_slot38()
         for (int h = 0; h < Houses.Count(); h++) {
             if (_wcsicmp(Houses[h]->UIName, unknown_players_5c[i]->Name) == 0) {
                 unknown_players_5c[i]->ID = h;
-                UnknownPlayerEntry *entry = new UnknownPlayerEntry;
+                NodeNameType *entry = new NodeNameType;
                 wcscpy(entry->Name, unknown_players_5c[i]->Name);
                 entry->unknown_6b = unknown_players_5c[i]->unknown_6b;
                 entry->unknown_4b = unknown_players_5c[i]->unknown_4b;

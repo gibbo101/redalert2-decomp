@@ -6,8 +6,8 @@
 #include "shared/lobby.hpp"
 #include "shared/win32_api.hpp"
 // @ref __imp__SendDlgItemMessageA@20=0079a484
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUUnknownPlayerEntry@@A=00a72d2c
-// @ref ?unknown_player_slots_a3fa98@@3PAPAUUnknownPlayerEntry@@A=00a3fa98
+// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98
 // @ref ?unknown_lobby_a3d2dc@@3PAHA=00a3d2dc
 // @ref ?unknown_lobby_a3d2fc@@3PAHA=00a3d2fc
 // @ref ?unknown_lobby_a3d31c@@3PAHA=00a3d31c

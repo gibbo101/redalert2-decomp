@@ -5,7 +5,7 @@
 #include "shared/unknown_globals.hpp"
 #include "shared/unknown_player_entry.hpp"
 #include "shared/color_scheme.hpp"
-// @ref ?Get_Color_0066e2a0@UnknownPlayerEntry@@QAEHXZ=0066e2a0
+// @ref ?Get_Color_0066e2a0@NodeNameType@@QAEHXZ=0066e2a0
 
 ColorScheme *ProgressScreenClass::Player_Color_Scheme(int player)
 {

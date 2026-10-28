@@ -10,7 +10,7 @@
 // @ref ?Find_Dialog_00735940@@YIPAUHWND__@@H@Z=00735940
 // @ref ?Compare_Wide_007837d3@@YAHPBG0@Z=007837d3
 // @ref ?unknown_host_name_a3f618@@3PAGA=00a3f618
-// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@A=00a3fa7c
+// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUNodeNameType@@@@A=00a3fa7c
 
 void Unknown_Enable_Start_005c9700()
 {

@@ -7,7 +7,7 @@
 #endif
 #include "shared/multiplayer_game_mode.hpp"
 // @ref ?unknown_slot4@MultiplayerGameMode@@UAE_NXZ=005b7350
-// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@A=00a3fa7c
+// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUNodeNameType@@@@A=00a3fa7c
 
 bool MultiplayerSiege::unknown_slot4()
 {

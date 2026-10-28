@@ -10,7 +10,7 @@ bool UnknownSessionState::Unknown_006728D0(int color)
     if (color != -2) {
         int i;
         for (i = 0; i < Players.Count(); i++) {
-            UnknownPlayerEntry *entry = Players[i];
+            NodeNameType *entry = Players[i];
             int value;
             if (entry->unknown_57 == -2 && entry->unknown_53 == -1) {
                 value = -2;

@@ -4,8 +4,8 @@
     "id": "population-1743",
     "inventory_sha256": "0ec5f72ceb8e673f5b769150440da553f38632becadfadfafa42a4b36f6c43bb",
     "gaps_sha256": "95f15531449b34e40dff50aaddb66cab43db071d656efb5edbd5cd5a17d6f5ce",
-    "historical_population_sha256": "7c8be47e0e0b08d373edda212f5749b155b00a9eeccc58e0d5dda8b319a78aea",
-    "historical_acceptance_sha256": "a261ef2a7e344e22437d5afcb62049647f581094af75cadaa45b7d925b85c8fd"
+    "historical_population_sha256": "7d0673514a0470aaa8042ee5cfdc92594e62d01256b7f45fe3a0d9d960c5319e",
+    "historical_acceptance_sha256": "ff6a8f598e537f030fe63581f2b349b6d6009e5c0824d86cd48768f8f2345b0a"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -314,11 +314,11 @@
     "?Clear@?$VectorClass@N@@UAEXXZ": 5827168,
     "?Clear@?$DynamicVectorClass@PAVMPlayerScoreType@@@@UAEXXZ": 5923760,
     "?Fetch@?$VectorClass@PAVMPlayerScoreType@@@@UBEPAVMPlayerScoreType@@H@Z": 5923840,
-    "?Clear@?$DynamicVectorClass@PAVNodeNameType@@@@UAEXXZ": 5923856,
-    "?Fetch@?$VectorClass@PAVNodeNameType@@@@UBEPAVNodeNameType@@H@Z": 5923936,
+    "?Clear@?$DynamicVectorClass@PAUNodeNameType@@@@UAEXXZ": 5923856,
+    "?Fetch@?$VectorClass@PAUNodeNameType@@@@UBEPAUNodeNameType@@H@Z": 5923936,
     "?Clear@?$DynamicVectorClass@PAVCoopCampaignClass@@@@UAEXXZ": 5923952,
     "?Fetch@?$VectorClass@PAVCoopCampaignClass@@@@UBEPAVCoopCampaignClass@@H@Z": 5924032,
-    "?Clear@?$VectorClass@PAVNodeNameType@@@@UAEXXZ": 5924896,
+    "?Clear@?$VectorClass@PAUNodeNameType@@@@UAEXXZ": 5924896,
     "?Clear@?$VectorClass@PAVCoopCampaignClass@@@@UAEXXZ": 5925504,
     "?Clear@?$DynamicVectorClass@UPoint2D@@@@UAEXXZ": 5969632,
     "?Clear@?$DynamicVectorClass@PAVMSTextEntry@@@@UAEXXZ": 5969744,

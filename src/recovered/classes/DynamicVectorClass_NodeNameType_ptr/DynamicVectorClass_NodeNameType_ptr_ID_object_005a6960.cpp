@@ -3,6 +3,6 @@
 #define VECTOR_IMPLEMENT_DYNAMIC_ID_OBJECT
 #include "shared/vector_class.hpp"
 
-class NodeNameType;
+struct NodeNameType;
 
 template class DynamicVectorClass<NodeNameType *>;

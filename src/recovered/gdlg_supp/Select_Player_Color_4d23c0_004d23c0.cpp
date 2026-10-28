@@ -6,8 +6,8 @@
 #include "shared/unknown_globals.hpp"
 #include "shared/unknown_player_entry.hpp"
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
-// @ref ?unknown_player_slots_a3fa98@@3PAPAUUnknownPlayerEntry@@A=00a3fa98
-// @ref ?unknown_player_a72d44@@3PAUUnknownPlayerEntry@@A=00a72d44
+// @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98
+// @ref ?unknown_player_a72d44@@3PAUNodeNameType@@A=00a72d44
 
 
 void __fastcall Select_Player_Color_4d23c0(HWND dialog, int player)

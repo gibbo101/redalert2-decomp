@@ -65,10 +65,10 @@ extern char const campaign_key_Map_default_007d4f58[];
 #include "shared/multiplayer_game_mode.hpp"
 extern int unknown_player_slot_types_00a3d300[];
 void Prepare_Campaign_Save_File(FileClass &file);
-// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@A=00a3fa7c
+// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUNodeNameType@@@@A=00a3fa7c
 // @ref ?unknown_player_slot_types_00a3d300@@3PAHA=00a3d300
-// @ref ?unknown_66e290@UnknownPlayerEntry@@QAEHXZ=0066e290
-// @ref ?Get_Color_0066e2a0@UnknownPlayerEntry@@QAEHXZ=0066e2a0
+// @ref ?unknown_66e290@NodeNameType@@QAEHXZ=0066e290
+// @ref ?Get_Color_0066e2a0@NodeNameType@@QAEHXZ=0066e2a0
 // @ref ?Put_HousesType@CCINIClass@@QAE_NPBD0H@Z=0046aab0
 // @ref ?Put_Int@INIClass@@QAE_NPBD0HH@Z=0050d6e0
 // @ref ?Put_String@INIClass@@QAE_NPBD00@Z=0050e5f0

@@ -3,9 +3,9 @@
 // and every session node, then clears the node list (0x005A7480, which frees
 // each element again through the list's virtual Clear).
 #include "shared/lobby.hpp"
-// @ref ?unknown_player_a72d44@@3PAUUnknownPlayerEntry@@A=00a72d44
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUUnknownPlayerEntry@@A=00a72d2c
-// @ref ?Free_Pointers_005a7480@@YIXPAV?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@@Z=005a7480
+// @ref ?unknown_player_a72d44@@3PAUNodeNameType@@A=00a72d44
+// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
+// @ref ?Free_Pointers_005a7480@@YIXPAV?$DynamicVectorClass@PAUNodeNameType@@@@@Z=005a7480
 // @ref ?Free_Memory_00781d3b@@YAXPAX@Z=00781d3b
 
 void Unknown_Free_Lobby_Entries_005c8950()

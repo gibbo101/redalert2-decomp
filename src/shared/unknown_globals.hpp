@@ -8,7 +8,7 @@ class Rect;
 class HouseClass;
 class ConvertClass;
 class BuildingClass;
-struct UnknownPlayerEntry;
+struct NodeNameType;
 
 #include "shared/coord.hpp"
 #include "shared/vector_class_decl.hpp"
@@ -86,7 +86,7 @@ struct UnknownSessionState {
     bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)
     char unknown_63b[0x27E4 - 0x63B];
     // The player list (the object at 0x00A3FA7C, shared/unknown_player_entry.hpp unknown_players_a3fa7c).
-    DynamicVectorClass<UnknownPlayerEntry *> Players;   // +0x27E4
+    DynamicVectorClass<NodeNameType *> Players;   // +0x27E4
     char unknown_27fc[0x2FC8 - 0x27FC];
     // The game master (host): name and house index (-1: none). The load wait
     // 0x0065C520 clears both when it drops the master (names after TS/YR's

@@ -20,7 +20,7 @@
 // @ref ?unknown_game_mode_a3d298@@3HA=00a3d298
 // @ref ?unknown_flag_a3fba8@@3_NA=00a3fba8
 // @ref ?unknown_host_name_a3f618@@3PAGA=00a3f618
-// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@A=00a3fa7c
+// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUNodeNameType@@@@A=00a3fa7c
 // @ref ?Houses@@3V?$DynamicVectorClass@PAVHouseClass@@@@A=00a32298
 // @ref ?unknown_ipx_manager_a40978@@3VIPXManagerClass@@A=00a40978
 // @ref ?unknown_OwnerTalkClass_00ab6d18@@3VOwnerTalkClass@@A=00ab6d18

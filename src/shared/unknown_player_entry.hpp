@@ -7,8 +7,10 @@
 typedef unsigned short wchar_t;
 #endif
 #pragma pack(push, 1)
-// Packed 0x75-byte player entry: original name has not been identified.
-struct UnknownPlayerEntry {
+// Packed 0x75-byte player entry. The name is from RTTI: MPCooperative's saved player list (+0x5C) is a
+// DynamicVectorClass<NodeNameType *> (VectorClass vtable 0x007A6884, RTTI .?AV?$VectorClass@PAUNodeNameType@@@@)
+// whose elements are copied field by field into the session list (0x005A6040).
+struct NodeNameType {
     wchar_t Name[20];
     IPXAddressClass Address;
     char unknown_34[0x4b - 0x34];   // +0x34 a narrow string (copied with strcpy)
@@ -29,9 +31,9 @@ struct UnknownPlayerEntry {
     void unknown_66e300(int value);
 };
 #pragma pack(pop)
-extern DynamicVectorClass<UnknownPlayerEntry *> unknown_players_a3fa7c;
+extern DynamicVectorClass<NodeNameType *> unknown_players_a3fa7c;
 // The entry of each player row of the setup dialogs (0x00A3FA98, eight), and the
 // entry the dialogs compare a row against (0x00A72D44; meaning not recovered).
-extern UnknownPlayerEntry *unknown_player_slots_a3fa98[8];
-extern UnknownPlayerEntry *unknown_player_a72d44;
+extern NodeNameType *unknown_player_slots_a3fa98[8];
+extern NodeNameType *unknown_player_a72d44;
 #endif

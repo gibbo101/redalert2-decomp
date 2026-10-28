@@ -13,7 +13,7 @@
 // @ref ??_C@_0P@JHCC@?$DMhuman?5player?$DO?$AA@=007f2200
 // @ref ?Narrow_Copy_00771280@@YI?AVWstring@@ABVWideString@@@Z=00771280
 // @ref ?Unknown_006715D0@UnknownSessionState@@QAEHH@Z=006715d0
-// @ref ?unknown_66e2d0@UnknownPlayerEntry@@QAEXH@Z=0066e2d0
+// @ref ?unknown_66e2d0@NodeNameType@@QAEXH@Z=0066e2d0
 // @ref ?unknown_house_a72d28@@3PAVHouseClass@@A=00a72d28
 // @ref ?unknown_house_setting_7d88d8@@3HA=007d88d8
 // @ref _strncpy=007823d0
@@ -48,7 +48,7 @@ void __fastcall Assign_Houses_0065fbb0()
                 lowest = unknown_players_a3fa7c[other]->unknown_53;
             }
         }
-        UnknownPlayerEntry *player = unknown_players_a3fa7c[pick];
+        NodeNameType *player = unknown_players_a3fa7c[pick];
         taken[pick] = true;
         HouseClass *house = new HouseClass(HouseTypes[player->unknown_4b]);
         if (unknown_game_mode_a3d298 == 4) {

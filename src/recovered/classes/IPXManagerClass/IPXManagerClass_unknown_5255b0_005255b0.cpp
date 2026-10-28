@@ -3,7 +3,7 @@
 #include "shared/ipx_manager.hpp"
 // @ref ??0IPXConnClass@@QAE@HHHGPAVIPXAddressClass@@HPBGH@Z=00523b70
 // @ref ??2@YAPAXI@Z=00782017
-// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@A=00a3fa7c
+// @ref ?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUNodeNameType@@@@A=00a3fa7c
 // @ref ?Unknown_006FA180@@YIPAGPBD@Z=006fa180
 // @ref ??_C@_09LEIE@Multicast?$AA@=007ddfa0
 

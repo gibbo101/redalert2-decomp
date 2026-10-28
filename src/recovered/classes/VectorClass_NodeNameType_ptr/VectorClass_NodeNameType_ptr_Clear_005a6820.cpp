@@ -3,6 +3,6 @@
 #define VECTOR_IMPLEMENT_VECTOR_CLEAR
 #include "shared/vector_class.hpp"
 
-class NodeNameType;
+struct NodeNameType;
 
 template class VectorClass<NodeNameType *>;
