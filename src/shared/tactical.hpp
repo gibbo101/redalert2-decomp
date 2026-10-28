@@ -33,12 +33,17 @@ public:
     virtual HRESULT __stdcall GetClassID(GUID *clsid);
     virtual HRESULT __stdcall Load(IStream *stream);
     virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);
+    virtual ~Tactical();                            // 0x006A2710 (clears 0x0083996C; scalar deleting 0x006AC800)
+    virtual void Detach(AbstractClass *target, bool all = true);   // 0x006AAB60 slot 10
     virtual int Kind_Of() const;
     virtual int Size_Of() const;
     virtual void AI();                              // 0x006A2DD0 (slot 23: the scroll animation and the view position)
 
     bool Unknown_006A8C80(Point2D *point);          // 0x006A8C80 (clamps a view position; false when unchanged)
     void Unknown_006A9170();                        // 0x006A9170 (after the view position changed)
+    void Unknown_006AA610(void *callback);          // 0x006AA610 (ends the selection band: the rectangle of its two corners to 0x006AABC0; hypothesis)
+    void Unknown_006AA790();                        // 0x006AA790 (draws the selection band rectangle; hypothesis)
+    void Unknown_006AABC0(Rect const *rect, void *callback);   // 0x006AABC0 (hypothesis)
 
     // Draws a line between two coordinates in a color (0x006AC160, slot 24;
     // TechnoClass 0x006C3950/0x006C3A90; true when drawn; hypothesis).
