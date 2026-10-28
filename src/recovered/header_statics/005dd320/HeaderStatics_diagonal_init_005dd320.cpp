@@ -6,8 +6,7 @@
 #define VECTOR_IMPLEMENT_ALL
 #endif
 #include "shared/vector_class.hpp"
-
-class SpotLightClass;
+#include "shared/spot_light.hpp"
 
 // The unit's list of SpotLightClass objects (0x00A731C0; name is a hypothesis).
 DynamicVectorClass<SpotLightClass *> unknown_SpotLightClass_list_00a731c0;
