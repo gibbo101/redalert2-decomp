@@ -4,8 +4,8 @@
     "id": "population-1623",
     "inventory_sha256": "c64f4607a587156d31a252fe56ce9b6a37b362b7ae58b29bf2cc761aa62b2fc7",
     "gaps_sha256": "64bed4af9dbb66019f28c2795c2fc8c87026bd4758faeb7503cf4fce83a7b60f",
-    "historical_population_sha256": "2ca6fc8e63bc62393cc88e2f6bf53d8834327fa48da88c96e0934ff945d1dc38",
-    "historical_acceptance_sha256": "78ae8c32dce4602a2cd3724a5b24e2981a4a13075a29ccf70ff4d06f838f0e8f"
+    "historical_population_sha256": "c7381d65a4d041f0387441a120bf29bc3e5aed6adb88a0fa673dceb4d6b454f1",
+    "historical_acceptance_sha256": "934f5a4e11626682c6c18d420e7ccd91f82c11ef429426e9ec49a80d5c4edc79"
   },
   "references": {
     "_unknown_empty_rect": 8725648,
@@ -2467,10 +2467,10 @@
     "?unknown_flag_8373c3@@3_NA": 8614851,
     "?unknown_flag_abcd84@@3_NA": 11259268,
     "?Unknown_006F8A20@@YIXPAVBuildingClass@@@Z": 7309856,
-    "?unknown_slot36@RadarClass@@UAE_NABVCell@@H@Z": 6487168,
-    "?unknown_slot36@DisplayClass@@UAE_NABVCell@@H@Z": 4823984,
-    "?unknown_slot37@RadarClass@@UAE_NABVCell@@H_N@Z": 6487200,
-    "?unknown_slot37@DisplayClass@@UAE_NABVCell@@H_N@Z": 4825024,
+    "?unknown_slot36@RadarClass@@UAE_NABVCell@@PAVHouseClass@@@Z": 6487168,
+    "?unknown_slot36@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@@Z": 4823984,
+    "?unknown_slot37@RadarClass@@UAE_NABVCell@@PAVHouseClass@@_N@Z": 6487200,
+    "?unknown_slot37@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@_N@Z": 4825024,
     "??_GRadarClass@@UAEPAXI@Z": 6507216,
     "?unknown_slot34@RadarClass@@UAEXXZ": 6489808,
     "?unknown_slot34@DisplayClass@@UAEXXZ": 4843472,

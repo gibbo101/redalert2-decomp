@@ -141,14 +141,14 @@ public:
     void Unknown_0049C670();                                                    // 0x0049C670 (multiplayer setup 0x0065E8C0)
     void Write_INI_0049D910(CCINIClass &ini);                                   // 0x0049D910 (Theater, Size, LocalSize; Write_Scenario_INI)
     void Read_INI_0049CFD0(CCINIClass &ini);                                    // 0x0049CFD0 (the map's sections of a scenario; Read_Scenario_INI)
-    virtual bool unknown_slot39(Cell const &cell, int arg2);                    // slot 39 0x0049A370
+    virtual bool unknown_slot39(Cell const &cell, HouseClass *house);                    // slot 39 0x0049A370
 };
 #endif
 
 #ifndef RA2_SHARED_RADAR_HPP
 class RadarClass : public DisplayClass {
 public:
-    virtual bool unknown_slot36(Cell const &cell, int arg2);              // slot 36 0x0062FC80
+    virtual bool unknown_slot36(Cell const &cell, HouseClass *house);              // slot 36 0x0062FC80
     void Unknown_00631570(Cell const &cell);                              // 0x00631570
     void Unknown_00631910(TechnoClass *techno, Point2D point);                  // 0x00631910
     void Unknown_00631AF0(TechnoClass *techno, Point2D point);                  // 0x00631AF0

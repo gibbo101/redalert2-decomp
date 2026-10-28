@@ -201,8 +201,8 @@ public:
     virtual void unknown_slot29(Rect const &rect);              // slot 29 0x00630840 (MapClass's slot) fits the radar to the map
     virtual HRESULT unknown_slot30(IStream *stream);    // slot 30 0x00632BF0 load
     virtual HRESULT unknown_slot31(IStream *stream);    // slot 31 0x00632E10 save
-    virtual bool unknown_slot36(Cell const &cell, int arg2);              // slot 36 0x0062FC80
-    virtual bool unknown_slot37(Cell const &cell, int arg2, bool arg3);   // slot 37 0x0062FCA0
+    virtual bool unknown_slot36(Cell const &cell, HouseClass *house);              // slot 36 0x0062FC80
+    virtual bool unknown_slot37(Cell const &cell, HouseClass *house, bool arg3);   // slot 37 0x0062FCA0
 
     virtual void unknown_slot50();                      // slot 50 0x0062F210 (frees shapes)
     virtual Cell unknown_slot51(Point2D const &xy);   // slot 51 0x0062FBD0 the cell under a screen point

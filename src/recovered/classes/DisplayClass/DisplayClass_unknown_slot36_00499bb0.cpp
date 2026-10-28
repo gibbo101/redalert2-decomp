@@ -1,4 +1,4 @@
-// bool DisplayClass::unknown_slot36(Cell const &cell, int arg2) (0x00499BB0, slot 36)
+// bool DisplayClass::unknown_slot36(Cell const &cell, HouseClass *house) (0x00499BB0, slot 36)
 // Maps a cell and spreads the reveal (hypothesis: Westwood's Map_Cell): marks
 // it mapped and visible (+0x140 bit 1, +0x12C bit 3), takes the tactical
 // view's shroud frames of both layers and has the view redraw it when they
@@ -18,12 +18,12 @@
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
 // @ref ?Unknown_006A8D40@Tactical@@QAEHABVCell@@H@Z=006a8d40
 // @ref ?Unknown_006AADD0@Tactical@@QAEXPAVCellClass@@@Z=006aadd0
-// @ref ?Unknown_00568520@MapClass@@QAEXPAVCellClass@@H_N@Z=00568520
+// @ref ?Unknown_00568520@MapClass@@QAEXPAVCellClass@@PAVHouseClass@@_N@Z=00568520
 // @ref ?unknown_47be00@CellClass@@QAEXXZ=0047be00
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ?AdjacentCell@@3QBVCell@@B=00851a70
 
-bool DisplayClass::unknown_slot36(Cell const &cell, int arg2)
+bool DisplayClass::unknown_slot36(Cell const &cell, HouseClass *house)
 {
     CellClass &target = (*this)[cell];
     bool unmapped = !(target.unknown_140 & 2);
@@ -59,7 +59,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, int arg2)
             int shade = unknown_tactical_83996c->Unknown_006A8D40(adjacent, 0);
             if (shade == -1) {
                 if (!(near_cell.unknown_12c & 8)) {
-                    unknown_slot36(adjacent, arg2);
+                    unknown_slot36(adjacent, house);
                 } else {
                     near_cell.unknown_12c |= 0x10;
                     unknown_tactical_83996c->Unknown_006AADD0(&near_cell);
@@ -74,7 +74,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, int arg2)
                     }
                 }
             } else if (shade != -2 && !(near_cell.unknown_12c & 8)) {
-                unknown_slot36(adjacent, arg2);
+                unknown_slot36(adjacent, house);
             } else if (shade >= 0 && shade != (char)near_cell.unknown_120) {
                 near_cell.unknown_120 = shade;
                 unknown_tactical_83996c->Unknown_006AADD0(&near_cell);
@@ -85,7 +85,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, int arg2)
             int shade = unknown_tactical_83996c->Unknown_006A8D40(adjacent, 1);
             if (shade == -1) {
                 if (!(near_cell.unknown_140 & 2)) {
-                    unknown_slot36(adjacent, arg2);
+                    unknown_slot36(adjacent, house);
                 } else {
                     near_cell.unknown_140 |= 1;
                     unknown_tactical_83996c->Unknown_006AADD0(&near_cell);
@@ -100,7 +100,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, int arg2)
                     }
                 }
             } else if (shade != -2 && !(near_cell.unknown_140 & 2)) {
-                unknown_slot36(adjacent, arg2);
+                unknown_slot36(adjacent, house);
             } else if (shade >= 0 && shade != (char)near_cell.unknown_121) {
                 near_cell.unknown_121 = shade;
                 unknown_tactical_83996c->Unknown_006AADD0(&near_cell);
@@ -109,7 +109,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, int arg2)
     }
 
     if (changed) {
-        Map.Unknown_00568520(&target, arg2, mapped);
+        Map.Unknown_00568520(&target, house, mapped);
     }
     if ((target.unknown_140 & 2) && unmapped && (unknown_id_source_a3d290->unknown_000 & 0x1000)) {
         target.unknown_47be00();

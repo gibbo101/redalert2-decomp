@@ -165,7 +165,7 @@ public:
     int Unknown_0054E3A0(Cell const &cell, HouseClass *house);
     // Redraws a cell whose shroud changed (0x00568520; DisplayClass slot 37 passes the
     // cell, its second argument and whether the cell was already mapped; hypothesis).
-    void Unknown_00568520(CellClass *cell, int arg2, bool arg3);
+    void Unknown_00568520(CellClass *cell, HouseClass *house, bool arg3);
     // Reveals the map around coord for house (0x0054A110; hypothesis:
     // Westwood's Sight_From; the meaning of the last five arguments is
     // unknown).

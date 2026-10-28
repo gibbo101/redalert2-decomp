@@ -173,10 +173,10 @@ public:
     virtual void unknown_slot34();                                    // slot 34 0x0049E7D0 places the controls
     virtual void unknown_slot35();                                    // slot 35
     // Cell tests (0x00499BB0, 0x00499FC0; meaning not recovered).
-    virtual bool unknown_slot36(Cell const &cell, int arg2);    // slot 36
-    virtual bool unknown_slot37(Cell const &cell, int arg2, bool arg3);  // slot 37 0x00499FC0 (maps a cell; arg3 counts a viewer in or out)
-    virtual bool unknown_slot38(Cell const &cell, int arg2);    // slot 38 0x0049A0F0 (maps a cell for layer 1 and spreads to the neighbours)
-    virtual bool unknown_slot39(Cell const &cell, int arg2);    // slot 39 0x0049A370 (the layer-0 form of slot 38)
+    virtual bool unknown_slot36(Cell const &cell, HouseClass *house);    // slot 36
+    virtual bool unknown_slot37(Cell const &cell, HouseClass *house, bool arg3);  // slot 37 0x00499FC0 (maps a cell; arg3 counts a viewer in or out)
+    virtual bool unknown_slot38(Cell const &cell, HouseClass *house);    // slot 38 0x0049A0F0 (maps a cell for layer 1 and spreads to the neighbours)
+    virtual bool unknown_slot39(Cell const &cell, HouseClass *house);    // slot 39 0x0049A370 (the layer-0 form of slot 38)
     virtual int unknown_slot40() = 0;                                 // slot 40 (pure; MouseClass 0x0040D150 returns its shape)
     virtual bool unknown_slot41(int arg1, int *arg2, bool arg3);       // slot 41 0x00499B60
     // Slot 42 (0x00498C80): One_Time passes it the tactical view rectangle.

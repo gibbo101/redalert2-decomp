@@ -4,9 +4,9 @@
 // @ref ??0TabClass@@QAE@XZ=006a06e0
 // @ref ??_7ScrollClass@@6BSidebarClass@@@=007a9444
 // @ref ??_7ScrollClass@@6BINoticeSink@@@=007a943c
-// @ref ?unknown_slot37@RadarClass@@UAE_NABVCell@@H_N@Z=0062fca0
-// @ref ?unknown_slot38@DisplayClass@@UAE_NABVCell@@H@Z=0049a0f0
-// @ref ?unknown_slot39@DisplayClass@@UAE_NABVCell@@H@Z=0049a370
+// @ref ?unknown_slot37@RadarClass@@UAE_NABVCell@@PAVHouseClass@@_N@Z=0062fca0
+// @ref ?unknown_slot38@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@@Z=0049a0f0
+// @ref ?unknown_slot39@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@@Z=0049a370
 // @ref ?unknown_slot47@DisplayClass@@UAEXABUPoint2D@@@Z=0049c500
 // @ref ?INoticeSink_Unknown@TabClass@@UAE_NHH@Z=006a2020
 // @ref ?AddRef@GScreenClass@@UAGKXZ=0040d100

@@ -1,4 +1,4 @@
-// bool DisplayClass::unknown_slot37(Cell const &cell, int arg2, bool arg3) (0x00499FC0, slot 37)
+// bool DisplayClass::unknown_slot37(Cell const &cell, HouseClass *house, bool arg3) (0x00499FC0, slot 37)
 // Maps a cell (hypothesis: Westwood's Map_Cell): marks it mapped (+0x140 bit
 // 1, bit 6 cleared), counts the viewer in or out (arg3), takes the tactical
 // view's shroud frames of both layers, and when anything changed has the
@@ -13,13 +13,13 @@
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
 // @ref ?Unknown_006A8D40@Tactical@@QAEHABVCell@@H@Z=006a8d40
 // @ref ?Unknown_006AADD0@Tactical@@QAEXPAVCellClass@@@Z=006aadd0
-// @ref ?Unknown_00568520@MapClass@@QAEXPAVCellClass@@H_N@Z=00568520
+// @ref ?Unknown_00568520@MapClass@@QAEXPAVCellClass@@PAVHouseClass@@_N@Z=00568520
 // @ref ?unknown_47be00@CellClass@@QAEXXZ=0047be00
 // @ref ?unknown_47c840@CellClass@@QAEXXZ=0047c840
 // @ref ?unknown_47c8a0@CellClass@@QAEXXZ=0047c8a0
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 
-bool DisplayClass::unknown_slot37(Cell const &cell, int arg2, bool arg3)
+bool DisplayClass::unknown_slot37(Cell const &cell, HouseClass *house, bool arg3)
 {
     CellClass &target = (*this)[cell];
     bool unmapped = !(target.unknown_140 & 2);
@@ -49,7 +49,7 @@ bool DisplayClass::unknown_slot37(Cell const &cell, int arg2, bool arg3)
     }
     if (changed) {
         unknown_tactical_83996c->Unknown_006AADD0(&target);
-        Map.Unknown_00568520(&target, arg2, mapped);
+        Map.Unknown_00568520(&target, house, mapped);
     }
     if ((target.unknown_140 & 2) && unmapped && (unknown_id_source_a3d290->unknown_000 & 0x1000)) {
         target.unknown_47be00();
