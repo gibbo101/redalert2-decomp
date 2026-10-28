@@ -23,6 +23,7 @@ bool __fastcall OwnerDraw_Control_Test_005e0760(unsigned int key, HWND window)
     OwnerDraw::UnknownControlRecord *record = OwnerDraw::unknown_registry_a73640.Find(key);
     int kind = record != 0 ? record->unknown_6c : 0;
     int id = GetDlgCtrlID(window);
+    // FUN_005e0da0 is defined returning int 0/1, but this caller saw a char/bool return (it tests only al).
     bool general = ((((((((kind == 0x10c) || (kind == 0x94)) || (kind == 0xa3)) ||
                     ((kind == 0x73 || (kind == 0xd8)))) || (kind == 0xbbb)) ||
                 (((kind == 0xf5 || (kind == 0x105)) ||
