@@ -30,6 +30,9 @@ public:
     // up (false) or, with force, terminates it (0x0063FD70).
     bool Wait_For_Router_Shutdown(unsigned long timeout, bool force);
 
+    // Whether a connection with this ID is flagged (0x0063F4C0; hypothesis).
+    unsigned char Unknown_0063F4C0(int id);
+
     DynamicVectorClass<ConnectionListStruct *> Connections;   // +0x00
     bool unknown_18;                                          // +0x18
     void *RouterProcess;                                      // +0x1C (a process HANDLE)

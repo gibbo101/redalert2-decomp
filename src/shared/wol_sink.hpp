@@ -335,7 +335,6 @@ extern WOL::Channel unknown_channel_b299c0;
 extern WOL::IChat *unknown_chat_a72cfc;
 extern Wstring unknown_wstring_b26cb8;
 extern int unknown_a3d3bc;
-extern int unknown_a3d3b4;
 extern int unknown_b2ac58;
 extern int unknown_b2abe8;
 void __fastcall Format_User_Options_0073cff0(char *text);

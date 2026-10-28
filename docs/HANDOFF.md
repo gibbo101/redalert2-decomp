@@ -9,9 +9,9 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Until the Nov 1 usage reset, Mac lanes run mostly on Sonnet (user
-direction 2026-10-28: use the week's capacity, Sonnet first): Seed88 (100-1500 B below 0x500000),
-Seed89 (0x500000-0x67FFFF), Seed90 (0x680000 up), all Sonnet, and Leaf92 (Sonnet: ObjectClass leaf classes from
-Leaf67's misses). Sonnet lanes tend to stop after a round: resume them with SendMessage. Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
+direction 2026-10-28: use the week's capacity, Sonnet first): Seed88 (100-1500 B below 0x480000), Seed94
+(0x480000-0x4FFFFF),
+Seed89 (0x500000-0x67FFFF), Seed93 (0x680000 up), all Sonnet, Sonnet lanes tend to stop after a round: resume them with SendMessage. Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -133,6 +133,9 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - Plans can retire accepted regions they fully cover (`"retire": ["004d0020"]`, Tools91; used
   for 0x4CFFB0). 0xA3FA98 has two names (unknown_lobby_slots_a3fa98, unknown_player_slots_a3fa98).
   UICmnds 0x6F5B10 stays 98.55 after the slot 200 retype.
+- Leaf92 (Leaf67 NOTES): VoxelAnim slot67 0x70CFC0 91.57 (draft Leaf67/w/va67k3.cpp, overlay hv/);
+  BuildingLight slot67 0x433380 is 1510 B (ret 8 at 0x433963), AI 0x433970 is 1818 B; Trigger action
+  0x6B2040 99.31 (one lea operand order, Seed90 w/t2/j1.cpp).
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).
