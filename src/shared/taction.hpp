@@ -39,6 +39,8 @@ public:
     void Set_Text(char const *text);                                    // 0x006B2EC0 (trimmed)
     char const *Get_Text() const;                                       // 0x006B2F20 (0 when empty)
     // Disables every trigger of the type at +0x50; always true (an action handler; name hypothesis).
+    // Performs the action (a switch over its type; 0x006ADAE0; TS's operator(), name hypothesis).
+    bool Execute(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006ADAE0
     bool unknown_func_6b1f90(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1F90
     // Springs the triggers of the type at +0x50 (forced, no object); always true (name hypothesis).
     bool unknown_func_6b1ec0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1EC0
