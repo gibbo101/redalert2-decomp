@@ -150,4 +150,22 @@ extern long unknown_com_objects_a6eb14;  // 0x00A6EB14 (live COM object count; h
 extern bool unknown_flag_abcd84;  // 0x00ABCD84
 extern int unknown_b263d8;  // 0x00B263D8
 
+// Called with 0 by RadarClass 0x00633D30 when the radar movie's flag (+0x04)
+// sets +0x14B8, and with a trigger action's Data by TActionClass 0x006B2F90
+// (meanings not recovered).
+void __fastcall Unknown_0065C1F0(int arg);              // 0x0065C1F0
+
+// Takes an index into the list at 0x00A71054 (count 0x00A71060) and a flag;
+// does nothing in a multiplayer game (TActionClass 0x006B0D50/0x006B0D60
+// pass a trigger action's Data with false/true; meaning not recovered).
+void __fastcall Unknown_005A0920(int index, bool arg2);          // 0x005A0920
+// Brings in a team of the type as reinforcements, at a waypoint or (-1) its
+// own (TActionClass 0x006B1470/0x006B1490; Westwood's Do_Reinforcements,
+// name hypothesis).
+class TeamTypeClass;
+bool __fastcall Do_Reinforcements(TeamTypeClass *team, int waypoint);   // 0x00639970
+// Another reinforcement of a team type at a waypoint, in the same unit
+// (TActionClass 0x006B2810; meaning not recovered).
+bool __fastcall Unknown_0063A880(TeamTypeClass *team, int waypoint);    // 0x0063A880
+
 #endif

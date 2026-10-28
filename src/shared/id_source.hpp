@@ -22,7 +22,7 @@ struct UnknownScenarioVariable_004B5AB0 { char unknown_00[40]; bool Value; };
 typedef char ScenarioVariable_stride_check[(sizeof(UnknownScenarioVariable_004B5AB0)==41)?1:-1];
 class UnknownIDSource {
 public:
-    bool Unknown_0051FC50();                    // 0x0051FC50
+    // 0x0051FC50 is a free function (shared/team.hpp): it reads the byte at 0x00A51934.
     long Next_ID();                             // 0x00663170 (name hypothesis)
     CellClass *unknown_6631a0(int waypoint);            // 0x006631A0 (the map cell of a waypoint; hypothesis)
     bool unknown_6612c0(unsigned index, bool value);    // 0x006612C0 (sets one of the 50 local variables; returns the old value; hypothesis)
@@ -154,7 +154,7 @@ public:
     TypeList<int> AllowableUnitCounts;          // +0x228C the number taken of each type (Unknown4A6AE0Owner; name hypothesis)
     int unknown_22a8;                           // +0x22A8 [Lighting] Ambient, hundredths (set from a trigger action's data, 0x006B2260)
     int unknown_22ac;                           // +0x22AC (receives the [Lighting] Ambient level too)
-    int unknown_22b0;                           // +0x22B0 (receives +0x22A8 unless 0x0051FC50 holds)
+    int unknown_22b0;                           // +0x22B0 (receives +0x22A8 unless Unknown_0051FC50 holds)
     int AmbientRed;                             // +0x22B4 [Lighting] Red, hundredths
     int AmbientGreen;                           // +0x22B8 [Lighting] Green
     int AmbientBlue;                            // +0x22BC [Lighting] Blue

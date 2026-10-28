@@ -17,6 +17,7 @@
 // Unrecovered members stay unknown_.
 #ifndef RA2_SHARED_MAP_HPP
 #define RA2_SHARED_MAP_HPP
+#include "shared/zone_table.hpp"
 #include "shared/unknown_globals.hpp"
 #ifdef RA2_SHARED_MAP_VIEW_HPP
 #error "shared/map_view.hpp declares light screen layers: include the full layer headers before it"
@@ -117,11 +118,7 @@ struct UnknownMapElem4 {
     unsigned short unknown_02;      // +0x02 (read by 0x0054FA60)
 };
 
-// The 12 x 8 table at 0x007E00C4 and the row of it that best matches two
-// rows: no 2 of either row where it has a 1, the most shared 1s; -1 when no
-// row qualifies (0x0056A900; TechnoClass 0x006C0180 passes two row numbers).
-extern int unknown_table_7e00c4[12][8];
-int __fastcall Unknown_0056A900(int row1, int row2);
+// The zone table 0x007E00C4 and Unknown_0056A900: shared/zone_table.hpp.
 
 // Whether a cell's overlay is in 0x4A..0x65 (0x00562930) or in 0xCD..0xE8
 // (0x00562980); the cell of the global Map (two overlay ranges; hypothesis).

@@ -69,6 +69,7 @@ public:
     Cell Transport_Waypoint_Location() const;                     // 0x006BFAD0 (the transport waypoint's cell; hypothesis)
     void unknown_func_6c0110(int value) const;                      // 0x006C0110 (each team of this type)
     TeamClass *Find_Team() const;                                   // 0x006C0150 (first team of this type)
+    void unknown_func_6c0180();                                     // 0x006C0180 (+0xE4/+0xE8/+0xE9 from the task force: movement zones, naval transports)
 
     virtual HRESULT __stdcall GetClassID(GUID *clsid);              // 0x006BFE30 slot 3
     virtual HRESULT __stdcall Load(IStream *stream);                // 0x006BFDA0 slot 5

@@ -57,6 +57,24 @@ public:
     bool unknown_set_house_137(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1400
     bool unknown_set_global_variable(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2000
     bool unknown_clear_global_variable(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2020
+    bool unknown_func_6b2f90(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2F90 (Unknown_0065C1F0(Data); always true)
+    bool unknown_func_6b0d30(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0D30 (Unknown_005A07F0(Data, -1, 1, 1, 1))
+    bool unknown_func_6b0d50(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0D50 (Unknown_005A0920(Data, false))
+    bool unknown_func_6b0d60(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0D60 (Unknown_005A0920(Data, true))
+    bool unknown_func_6b0d70(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0D70 (plays sound Data at full volume)
+    bool unknown_func_6b1470(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1470 (reinforcements of team type +0x30 at its own waypoint)
+    bool unknown_func_6b1490(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1490 (reinforcements of team type +0x30 at waypoint +0x44)
+    bool unknown_func_6b14b0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B14B0 (the house of type Data: IHouse::All_To_Hunt)
+    bool unknown_func_6b2220(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2220 (Rules AmbientChangeStep = DataFloat)
+    bool unknown_func_6b2240(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2240 (Rules AmbientChangeRate = DataFloat)
+    bool unknown_func_6b2290(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2290 (the house of type Data (unless -1): +0x13A set)
+    bool unknown_func_6b22b0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B22B0 (the house of type Data (unless -1): +0x13A cleared)
+    bool unknown_func_6b22d0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B22D0 (the house of type Data (unless -1) cheers)
+    bool unknown_func_6b2f30(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2F30 (the team type at +0x30: unknown_func_6c0110(Data))
+    bool unknown_func_6b2f50(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2F50 (the first member of the team type's team talks (TechnoClass 0x006D8FD0))
+    bool unknown_func_6b2810(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2810 (Unknown_0063A880(team type +0x30, waypoint +0x44))
+    bool unknown_func_6b1a80(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1A80 (Unknown_0051F930(Data, Rules LightningDeferment, zero cell) unless Unknown_0051FC50)
+    CoordStruct unknown_6b2e80() const;     // 0x006B2E80 (the coordinate of waypoint Data)
     bool unknown_toggle_session_flag_2229(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2A90
     bool unknown_create_team(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1420
     bool unknown_destroy_teams(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1450
@@ -101,6 +119,8 @@ public:
         // The same word read as a flag: the session flag actions 0x006AFB40,
         // 0x006AFB60 and 0x006AFB80 store its low byte unnormalised.
         bool DataBool;                      // +0x74
+        // The ambient rate actions (0x006B2220, 0x006B2240) read it as a float.
+        float DataFloat;                    // +0x74
     };
 };
 

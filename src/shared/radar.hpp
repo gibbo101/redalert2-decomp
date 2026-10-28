@@ -121,9 +121,7 @@ void Unknown_004082B0();                                // 0x004082B0
 int Unknown_00408330();                                 // 0x00408330
 void Unknown_005A0B10();                                // 0x005A0B10
 void Unknown_005A0AC0();                                // 0x005A0AC0 (radar mode 3: after the last movie)
-// Called with 0 when the radar movie's flag (+0x04) sets +0x14B8, and when it clears
-// (meanings not recovered).
-void __fastcall Unknown_0065C1F0(int arg);              // 0x0065C1F0
+// Unknown_0065C1F0 (0x0065C1F0): shared/unknown_globals.hpp.
 void Unknown_0065C310();                                // 0x0065C310
 bool Speech_Is_Playing();                               // 0x00715E20 (as shared/wdt_voices.hpp)
 // The movies queued for the radar (0x00AF8FD8; mode 3 plays the first; shared/movie.hpp).
