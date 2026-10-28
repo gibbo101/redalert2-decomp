@@ -33,44 +33,8 @@
 
 class Wstring;
 
-// Westwood's countdown timer: Started is -1 while stopped.
-template <class T>
-class CDTimerClass {
-public:
-    CDTimerClass() : Started(Timer), DelayTime(0) {}
-    CDTimerClass(long set) : Started(Timer), DelayTime(set) {}
-
-    long Value() const
-    {
-        long remain = DelayTime;
-        if (Started != -1) {
-            long value = Timer - Started;
-            if (value < remain) {
-                return remain - value;
-            } else {
-                return 0;
-            }
-        }
-        return remain;
-    }
-    void Stop()
-    {
-        if (Started != -1) {
-            DelayTime = Value();
-            Started = -1;
-        }
-    }
-    void Start()
-    {
-        if (Started == -1) {
-            Started = Timer;
-        }
-    }
-
-    long Started;           // +0x00
-    T Timer;                // +0x04
-    long DelayTime;         // +0x08
-};
+// Shared countdown timer type; the full object headers use this provider too.
+#include "shared/cd_timer.hpp"
 
 class MSAnim {
 public:

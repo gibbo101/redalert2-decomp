@@ -41,6 +41,7 @@ public:
     MapSeedClass(); // 00576F50
     void Set_Default_Description_00576fe0();
     void Populate_Dialog_Parameters_00578600(HWND dialog); // operation name is a hypothesis
+    void Apply_WDT_Territory_00578bc0(); // inferred operation name
     void Clamp_Parameters_00578d80();
     void Read_Dialog_Parameters_00578420(HWND dialog); // original receiver+HWND/RET4; new nonvirtual declaration
     void Randomize_00578b10();
