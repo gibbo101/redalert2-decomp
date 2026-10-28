@@ -13,6 +13,7 @@
 #ifndef RA2_SHARED_MULTIPLAYER_GAME_MODE_HPP
 #define RA2_SHARED_MULTIPLAYER_GAME_MODE_HPP
 
+#include "shared/network_tests.hpp"
 #include "shared/vector_class.hpp"
 #include "shared/wide_string.hpp"
 #include "shared/win32_api.hpp"
@@ -42,8 +43,6 @@ public:
     int Number;                                               // +0x08
 };
 
-// A network-session test (0x0073C370; false unless game mode 4).
-bool unknown_73c370();
 
 // Empties a combo box (0x006007F0).
 void __fastcall unknown_reset_combo_6007f0(HWND combo);

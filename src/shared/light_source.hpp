@@ -28,7 +28,7 @@ class LightSourceClass : public AbstractClass {
 public:
     class PendingCellClass;
 
-    LightSourceClass(CoordStruct coord, int visibility, int intensity, TintStruct tint);   // 0x00537240
+    LightSourceClass(CoordStruct coord, int visibility, int intensity, int red, int green, int blue);   // 0x00537240
     LightSourceClass();                                         // 0x00537310
     LightSourceClass(NoInitClass const &noinit) : AbstractClass(noinit) {}  // 0x005373C0 (out-of-line copy)
     virtual ~LightSourceClass();                                // 0x005373F0

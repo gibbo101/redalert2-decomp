@@ -50,6 +50,9 @@ public:
 // The rules (0x00839848) are `Rules`: shared/rules.hpp.
 #include "shared/rules.hpp"
 
+// The 2000.0 limit of the light intensity and tint (0x007A6020).
+extern double const unknown_double_7a6020;
+
 // Removes every reference to object (0x006ECB90, __fastcall; name hypothesis).
 void __fastcall Detach_This_From_All(AbstractClass *object, bool all);
 
@@ -79,6 +82,8 @@ public:
     void Set_Rad_Level(int level);                              // 0x006375B0
     int Get_Current_Level() const;                              // 0x006375D0
     void Increase_Radiation(int amount);                        // 0x006375F0
+    // Starts the decay timers, derives the steps and the light colour from the rules,
+    // creates or retints the light and fills the cells.
     void Unknown_00637640();                                    // 0x00637640
     // Takes the remaining effect off the cells (Get_Rad_Level_At scaled by the decay steps left).
     void Unknown_00637C10();                                    // 0x00637C10

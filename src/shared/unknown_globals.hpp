@@ -244,6 +244,11 @@ extern bool unknown_flag_a3d2c1;
 // The session's starting crate count (0x00A3D55C, session +0x2C4; bounded by Rules
 // CrateMinimum/CrateMaximum; hypothesis).
 extern int unknown_session_a3d55c;
+extern int unknown_session_a3d2b4;              // 0x00A3D2B4 (session +0x1C; the scenario's TechLevel is set from it)
+extern int unknown_session_a3d2c8;              // 0x00A3D2C8 (session +0x30)
+extern int unknown_session_a3d2ac;              // 0x00A3D2AC (session +0x14; set to 2 by the pregame setup)
+extern bool unknown_session_a3d33d;             // 0x00A3D33D (session +0xA5; HarvesterImmune of the global options)
+extern int unknown_a40b18;                      // 0x00A40B18
 // Eight per-house flags all set at the end of the multiplayer setup 0x0065E8C0
 // (0x00A3F118; meaning not recovered).
 extern bool unknown_flags_a3f118[8];

@@ -39,7 +39,8 @@ enum {
 struct UnknownNodeName {
     wchar_t Name[20];                   // +0x00
     IPXAddressClass Address;            // +0x28
-    char unknown_34[0x5F - 0x34];
+    char unknown_34[0x5B - 0x34];
+    int unknown_5b;                     // +0x5B (-1: none)
     int ID;                             // +0x5F (packed)
 };
 #pragma pack(pop)
