@@ -415,7 +415,7 @@ struct UnknownBuildingInfantryView : TechnoClass {
 
 // Every building (0x00A40AF8).
 extern DynamicVectorClass<BuildingClass *> unknown_BuildingClass_list_00a40af8;
-extern DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0c80;    // 0x00AC0C80
+// unknown_abstracts_ac0c80 (0x00AC0C80): shared/object_lists.hpp.
 
 // Writes [Structures] (0x0044B200; takes the INI by pointer; Write_Scenario_INI
 // 0x0065F980 passes its CCINIClass).

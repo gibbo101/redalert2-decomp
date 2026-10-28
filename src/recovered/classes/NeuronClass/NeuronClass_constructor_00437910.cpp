@@ -13,7 +13,7 @@
 // @ref ??_7NeuronClass@@6BINoticeSource@@@=0079cac4
 // @ref ??0AbstractClass@@QAE@XZ=0040ff10
 // @ref ?Frame@@3HA=00a40d2c
-// @ref ?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVTechnoClass@@@@A=00ac0c18
+// @ref ?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0c18
 // @ref ?unknown_objects_ac0cb0@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0cb0
 
 NeuronClass::NeuronClass() :
@@ -22,6 +22,6 @@ NeuronClass::NeuronClass() :
     Brain(0),
     CreationFrame(Frame)
 {
-    unknown_list_ac0c18.Add((TechnoClass *)this);
+    unknown_list_ac0c18.Add(this);
     unknown_objects_ac0cb0.Add(this);
 }

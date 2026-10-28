@@ -4,8 +4,8 @@
     "id": "population-2663",
     "inventory_sha256": "95de86b949ffd51dd5fae982a23f6dcb8c5e14712e4601f8dc6ce931952c9651",
     "gaps_sha256": "90de061bf0c9608efaf56ec8d3673f70dd103c95a82e316376697a3433984ebb",
-    "historical_population_sha256": "12ad9ac26a676247c3cf2ddc274ae55a9f851988807e6b077c96f83be63485ee",
-    "historical_acceptance_sha256": "3023eea770e3a2a1d5c0148413784e239411e53041cc7f7aa992897a06254d2a"
+    "historical_population_sha256": "ec6c79061382c877d636be6754e16a0d5134017a20db56ca8fad6453df2d2a8d",
+    "historical_acceptance_sha256": "5f311f7ae4c37215c992123a3ad5d1ebfc93503902960266dea61d2a56e46f64"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -7830,7 +7830,7 @@
     "?unknown_objects_a40c60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 10751072,
     "?unknown_objects_ac0c30@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275312,
     "?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275352,
-    "?unknown_objects_ac0c80@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275392,
+    "?unknown_abstracts_ac0c80@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275392,
     "?unknown_objects_ac0cb0@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275440,
     "?unknown_objects_ac0cb0@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275440,
     "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275480,
@@ -8513,7 +8513,7 @@
     "?Draw_Point@LocomotionClass@@UAG?AUPoint2D@@XZ": 5493968,
     "?Destination@LocomotionClass@@UAG?AUCoordStruct@@XZ": 5494128,
     "?Head_To_Coord@LocomotionClass@@UAG?AUCoordStruct@@XZ": 5494176,
-    "?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVTechnoClass@@@@A": 11275288,
+    "?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275288,
     "?unknown_slot306@FootClass@@UAEXN@Z": 4992496,
     "?unknown_slot291@FootClass@@UAE_NXZ": 5000032,
     "?unknown_slot290@FootClass@@UAEHABUCoordStruct@@@Z": 5000080,
@@ -9529,7 +9529,26 @@
     "??_7AlphaShapeClass@@6B@": 7978964,
     "??_EGenericList@@UAEPAXI@Z": 4252192,
     "??_ETEventClass@@UAEPAXI@Z": 7237024,
-    "??_EAlphaShapeClass@@UAEPAXI@Z": 4323776
+    "??_EAlphaShapeClass@@UAEPAXI@Z": 4323776,
+    "?unknown_slot10@MultiplayerGameMode@@UAEHXZ": 5992112,
+    "?unknown_slot20@MultiplayerGameMode@@UAE_NXZ": 5993392,
+    "?unknown_slot21@MultiplayerGameMode@@UAE_NXZ": 5993408,
+    "?unknown_slot11@MultiplayerGameMode@@UAE_NXZ": 5993440,
+    "?unknown_slot12@MultiplayerGameMode@@UAE_NXZ": 5993456,
+    "?unknown_slot28@MultiplayerGameMode@@UAE_NXZ": 5997600,
+    "?unknown_slot29@MultiplayerGameMode@@UAE_NXZ": 5997680,
+    "?unknown_slot24@MultiplayerGameMode@@UAEXXZ": 5993680,
+    "__imp__SendDlgItemMessageA@20": 7971972,
+    "?unknown_slot7@MultiplayerGameMode@@UAE_NH@Z": 5994544,
+    "__imp__EnableWindow@8": 7971984,
+    "__imp__ShowWindow@8": 7971992,
+    "?Save_Session_00670380@@YIXPAUUnknownSessionState@@@Z": 6751104,
+    "?unknown_slot13@MultiplayerGameMode@@UAEHXZ": 5993472,
+    "?unknown_slot23@MultiplayerGameMode@@UAEXXZ": 5993664,
+    "?Unknown_00672940@UnknownSessionState@@QAEXXZ": 6760768,
+    "__imp__SendDlgItemMessageA": 7971972,
+    "__imp__EnableWindow": 7971984,
+    "__imp__ShowWindow": 7971992
   },
   "regions": [
     {
@@ -12038,7 +12057,7 @@
         {
           "offset": 348,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0c80@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_abstracts_ac0c80@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275392,
           "addend": 0,
           "resolved": 11275392
@@ -12046,7 +12065,7 @@
         {
           "offset": 358,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0c80@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_abstracts_ac0c80@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275392,
           "addend": 0,
           "resolved": 11275392
@@ -12054,7 +12073,7 @@
         {
           "offset": 376,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0c80@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_abstracts_ac0c80@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275392,
           "addend": 0,
           "resolved": 11275392
@@ -12062,7 +12081,7 @@
         {
           "offset": 381,
           "kind": 20,
-          "symbol": "?Delete@?$DynamicVectorClass@PAVObjectClass@@@@QAE_NH@Z",
+          "symbol": "?Delete@?$DynamicVectorClass@PAVAbstractClass@@@@QAE_NH@Z",
           "target": 4541216,
           "addend": 0,
           "resolved": 4294383839
@@ -12588,7 +12607,7 @@
           "resolved": 4294101349
         }
       ],
-      "source_sha256": "f8624fa2aa4556b4a07898c9ff3a77df540d80dedb37b1b67e0c6036fba6b561",
+      "source_sha256": "2d28c7b3770bf6f9ce6f38554cbcd3fed6853d703d60e7e827c48f0dbeb291df",
       "source": "src/recovered/classes/HouseClass/HouseClass_dtor_004e30c0.cpp",
       "population": "population-2663",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",

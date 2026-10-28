@@ -4,8 +4,8 @@
     "id": "population-2621",
     "inventory_sha256": "280e79d14c622b4c6426514989820b78920d2f2eeae0860bb72292bdeca0b60a",
     "gaps_sha256": "5d249e4f83e6f85c19b88b6718ed7aa0695fc29ad67e649b5e4896e47240e52a",
-    "historical_population_sha256": "466b0fc02400828cd6f1c572404520252f1254982925a34ce404b5f71bf90651",
-    "historical_acceptance_sha256": "13ff1c559836c6a99ce938e45e2f24572873a19a3c4cf33e34a05ffcb94fce49"
+    "historical_population_sha256": "139a24c8a7db52b2747ef049c108006ccfed537e576649c192b2f226e3b83b26",
+    "historical_acceptance_sha256": "54e5a5af39a70be56c1abc6649b6e1d65316fc1997501530b53fce1e498263e4"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -13101,7 +13101,7 @@
     "?unknown_coord_a6ea60@@3UCoordStruct@@A": 10938976,
     "?Head_To_Coord@LocomotionClass@@UAG?AUCoordStruct@@XZ": 5494176,
     "?Delete@?$DynamicVectorClass@PAVFootClass@@@@QAE_NH@Z": 5041120,
-    "?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVTechnoClass@@@@A": 11275288,
+    "?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275288,
     "?Delete@?$DynamicVectorClass@PAVTechnoClass@@@@QAE_NH@Z": 4541216,
     "?Unknown_00406070@UnknownAudioController@@QAEXXZ": 4218992,
     "??1TechnoClass@@UAE@XZ": 7086256,
@@ -13348,7 +13348,7 @@
     "?Base_Center@HouseClass@@UAG?AVCell@@XZ": 5123424,
     "?Public_Base_Center@HouseClass@@UAG?AVCell@@XZ": 5123488,
     "?Tiberium_Fraction@HouseClass@@QBENXZ": 5123568,
-    "?unknown_objects_ac0c80@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275392,
+    "?unknown_abstracts_ac0c80@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275392,
     "?Delete@?$DynamicVectorClass@PAVObjectClass@@@@QAE_NH@Z": 4541216,
     "?unknown_objects_ac0c30@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275312,
     "?unknown_house_84e894@@3PAVHouseClass@@A": 8710292,
@@ -13485,7 +13485,6 @@
     "??0BuildingClass@@QAE@PAVBuildingTypeClass@@PAVHouseClass@@@Z": 4426976,
     "??0TechnoClass@@QAE@PAVHouseClass@@@Z": 7081168,
     "?Init@BuildingClass@@UAEXXZ": 4454464,
-    "?unknown_abstracts_ac0c80@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275392,
     "?Set_Radio_Count@RadioClass@@QAEXH@Z": 6516544,
     "?unknown_537560@UnknownBuilding4E8@@QAEXH@Z": 5469536,
     "?unknown_slot52@BuildingClass@@UAE_NXZ": 4464736,

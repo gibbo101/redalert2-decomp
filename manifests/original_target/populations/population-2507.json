@@ -4,8 +4,8 @@
     "id": "population-2507",
     "inventory_sha256": "1f266d6a1fa72955f891cf06a7858a2e70ce547bbd4c72eb71ddc117a03514e8",
     "gaps_sha256": "129efb8d8e0b6c491692c9fa0a0b38f438b46256157b893b2c51b50e716aa5c3",
-    "historical_population_sha256": "9cf46d3aa8adab699e772a07975e65985aef79f5732be1ae2f59c7f8a3e49374",
-    "historical_acceptance_sha256": "857a47f2ff96609851fba108f5a441081f8d51748e27a69a6af5a0f5b1b43252"
+    "historical_population_sha256": "a6d0cc5be75236a03e80849b0bdb66cf9d4af2f902141f45206c069755313967",
+    "historical_acceptance_sha256": "18f8db7556d942a0d93fb8b64b217f4e4c79a54bebc70b143dde8137670ee399"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5528,7 +5528,7 @@
     "?Draw_Point@LocomotionClass@@UAG?AUPoint2D@@XZ": 5493968,
     "?Destination@LocomotionClass@@UAG?AUCoordStruct@@XZ": 5494128,
     "?Head_To_Coord@LocomotionClass@@UAG?AUCoordStruct@@XZ": 5494176,
-    "?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVTechnoClass@@@@A": 11275288,
+    "?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275288,
     "?unknown_slot306@FootClass@@UAEXN@Z": 4992496,
     "?unknown_slot291@FootClass@@UAE_NXZ": 5000032,
     "?unknown_slot290@FootClass@@UAEHABUCoordStruct@@@Z": 5000080,

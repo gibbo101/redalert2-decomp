@@ -11,5 +11,5 @@
 NeuronClass::~NeuronClass()
 {
     unknown_objects_ac0cb0.Delete(this);
-    unknown_list_ac0c18.Delete((TechnoClass *)this);
+    unknown_list_ac0c18.Delete(this);
 }
