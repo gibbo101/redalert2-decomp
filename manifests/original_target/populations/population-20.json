@@ -8790,63 +8790,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 7231968,
-      "method": "6e59e0",
-      "symbol": "_recover_6e59e0@8",
-      "symbol_prefix": "_recover_6e59e0",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 56,
-      "body_sha256": "0416c3808be0c53a5b4e2063cdf03190633e90d1747c238a3607d15773ede9f2",
-      "padding_bytes": 8,
-      "full_extent_bytes": 64,
-      "full_extent_sha256": "c44b8d61ef3070c8df33145a5d71b6226a6e18119f407535473cbf2bee61580c",
-      "relocations": [
-        {
-          "offset": 18,
-          "kind": 6,
-          "symbol": "_source_6e59e0_0",
-          "target": 8002384,
-          "addend": 0,
-          "resolved": 8002384
-        },
-        {
-          "offset": 26,
-          "kind": 6,
-          "symbol": "_source_6e59e0_1",
-          "target": 8002388,
-          "addend": 0,
-          "resolved": 8002388
-        },
-        {
-          "offset": 35,
-          "kind": 6,
-          "symbol": "_source_6e59e0_2",
-          "target": 8002392,
-          "addend": 0,
-          "resolved": 8002392
-        },
-        {
-          "offset": 44,
-          "kind": 6,
-          "symbol": "_source_6e59e0_3",
-          "target": 8002396,
-          "addend": 0,
-          "resolved": 8002396
-        }
-      ],
-      "source": "src/recovered/classes/TerrainTypeClass/006e59e0.cpp",
-      "source_sha256": "ab10a1a968da289c5b42a3e409a62aabab8f9d13a757ec61d30cdf3f0d9d0d6a",
-      "source_order": 5733,
-      "population": "population-20",
-      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 7246112,
       "method": "6e9120",
       "symbol": "_recover_6e9120@8",

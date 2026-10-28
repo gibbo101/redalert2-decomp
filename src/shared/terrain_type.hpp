@@ -57,8 +57,8 @@ public:
     virtual int unknown_slot16() const { return ArrayIndex; }           // 0x006E5AD0 (inline)
     virtual bool Read_INI(CCINIClass &ini);                             // 0x006E5630 slot 25
     virtual CoordStruct unknown_slot27(CoordStruct const &coord) const; // 0x006E5850 (not below the ground)
-    virtual bool unknown_slot32(Cell const *cell, HouseClass *house);   // 0x006E5560 (creates a terrain object)
-    virtual ObjectClass *unknown_slot35(HouseClass *house);             // 0x006E55A0
+    virtual bool unknown_slot32(Cell const &cell, HouseClass *house) const;   // 0x006E5560 (creates a terrain object)
+    virtual ObjectClass *unknown_slot35(HouseClass *house) const;       // 0x006E55A0 (an unplaced terrain object)
     virtual Cell const *unknown_slot36(int arg1) const;           // 0x006E55D0 (the occupation list)
 
     int ArrayIndex;                         // +0x264
