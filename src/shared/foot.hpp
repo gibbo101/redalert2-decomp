@@ -59,9 +59,8 @@ UnknownCellObject710160 *__fastcall Unknown_00710160(Cell const &cell);  // 0x00
 
 // Announcements by name ("EVA_UnitSold", "EVA_UnitLost") go through
 // Unknown_00715B40 (shared/vox_class.hpp).
-// Raises an event of a kind at a cell (FootClass slot 216 uses kind 7;
-// hypothesis: a radar event).
-bool __fastcall Unknown_0063B5B0(int kind, Cell cell);              // 0x0063B5B0
+// Raises an event of a kind at a cell: shared/radar_event.hpp.
+#include "shared/radar_event.hpp"
 
 // The team a unit belongs to: shared/team.hpp.
 #include "shared/team.hpp"

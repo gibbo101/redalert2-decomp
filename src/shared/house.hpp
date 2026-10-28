@@ -37,6 +37,7 @@ class TechnoTypeClass;
 class TechnoClass;
 class ObjectClass;
 class BuildingClass;
+class BuildingTypeClass;
 class SuperClass;
 class TagClass;
 class ConnectionPointClass;
@@ -283,6 +284,19 @@ public:
     bool unknown_func_4ed2b0(WaypointClass *waypoint, int *path, char *position);   // 0x004ED2B0
     void unknown_func_4ecfb0(CoordStruct const &coord);    // 0x004ECFB0
     void unknown_func_4eeba0(int amount, HouseClass *house);   // 0x004EEBA0 (anger)
+    bool unknown_func_4f5320(BuildingTypeClass *type, Cell const &cell);   // 0x004F5320 (the widened foundation touches a cell with this house's bit)
+    void Attacked(TechnoClass *source);                    // 0x004E4F60 (TS name; an object of the house was attacked)
+    void unknown_func_4f3420();                            // 0x004F3420 (after an alliance changes; Make_Enemy)
+    // Whether the player controls the house: in the campaign a human or
+    // player-controlled house, otherwise the player's own house (inline; YRpp
+    // calls it ControlledByPlayer).
+    bool Is_Player_Control() const
+    {
+        if (unknown_game_mode_a3d298 == 0) {
+            return unknown_134 || unknown_135;
+        }
+        return this == unknown_player_a35db4;
+    }
     bool unknown_func_4ed140(Cell const &cell);      // 0x004ED140 (no other path has a waypoint there)
     WaypointClass *unknown_func_4ed200(Cell const &cell);   // 0x004ED200 (a waypoint in the cell, else 0)
     void unknown_func_4eaba0(TechnoClass *techno);         // 0x004EABA0
