@@ -33,6 +33,8 @@ public:
     bool IsRepeat;          // +0x10 (OptionsClass IsScoreRepeat)
     bool unknown_11;        // +0x11
     bool IsShuffle;         // +0x12 (OptionsClass IsScoreShuffle)
+    char unknown_13[0x2C - 0x13];
+    void *Sample;           // +0x2C the playing audio stream (0 when none)
 };
 
 extern ThemeClass Theme;    // 0x00A35D78
