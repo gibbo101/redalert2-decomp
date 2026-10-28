@@ -18,8 +18,8 @@ extern int unknown_a40774;
 // @ref ?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
 // @ref ?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z=006a3020
 // @ref ??0AlphaShapeClass@@=0041ebe0
-// @ref ??0UnknownObject5394F0@@=005393e0
-// @ref ?Unknown_00539510@UnknownObject5394F0@@=00539510
+// @ref ??0LineTrail@@=005393e0
+// @ref ?Set_Decrement@LineTrail@@=00539510
 // @ref _unknown_static_rect=00a72ed0
 static inline void Object_Placement_Add_Point(Point2D &point, Point2D const &offset)
 {
@@ -69,7 +69,7 @@ bool ObjectClass::unknown_slot53(CoordStruct const *coord, int direction)
                 }
             }
             if (Class_Of()->unknown_20a) {
-                unknown_94 = new UnknownObject5394F0();
+                unknown_94 = new LineTrail();
                 if (unknown_94) {
                     RGBClass override_color = Rules->LineTrailColorOverride;
                     if (override_color == RGBClass(0, 0, 0)) {
@@ -79,7 +79,7 @@ bool ObjectClass::unknown_slot53(CoordStruct const *coord, int direction)
                         RGBClass color = Rules->LineTrailColorOverride;
                         unknown_94->Color = color;
                     }
-                    unknown_94->Unknown_00539510(Class_Of()->unknown_210);
+                    unknown_94->Set_Decrement(Class_Of()->unknown_210);
                     unknown_94->Owner = this;
                 }
             }

@@ -4,8 +4,8 @@
     "id": "population-2519",
     "inventory_sha256": "c5af56432329dde200240815ab625dc0ef715b547405c649d7ed2628915a0f94",
     "gaps_sha256": "105b20b6b85bd7a60ca2f756cbf9021ef1bcfdb2c94392b7382ac67f1c13ccd4",
-    "historical_population_sha256": "888dba588fa052767101e5a6c5abda01fb07be0cf2272ee9f686ab7fd5d26ff6",
-    "historical_acceptance_sha256": "67786257ef93ff99631171d9da56ca65a0dbac03efd0dd6a65bc8957485bd2db"
+    "historical_population_sha256": "363d8e747e12ecf28eb8e5b1bdd8e6786cab3222a122941ce636d72fecbe2399",
+    "historical_acceptance_sha256": "d88081ad57235ddaabd7dcccc219fe021a0e8f47440bba6e97686818082303be"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2670,7 +2670,7 @@
     "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275480,
     "?Unknown_00405D50@UnknownAudioController@@QAEXXZ": 4218192,
     "?Unknown_00405C10@UnknownAudioController@@QAEXXZ": 4217872,
-    "?Unknown_005394F0@UnknownObject5394F0@@QAEXXZ": 5477616,
+    "?Clear_Owner@LineTrail@@QAEXXZ": 5477616,
     "?unknown_func_5d2710@ObjectClass@@QAEXXZ": 6104848,
     "?unknown_slot26@ObjectClass@@UAEPAXXZ": 6105008,
     "?unknown_slot29@ObjectClass@@UBEHXZ": 6106048,
@@ -4770,8 +4770,8 @@
     "?unknown_slot77@InfantryClass@@UAE_NHHH_N@Z": 5267712,
     "?unknown_slot43@ObjectClass@@UAE?AUCoordStruct@@H@Z": 4341072,
     "?unknown_slot100@ObjectClass@@UAEXH@Z": 6106464,
-    "??0UnknownObject5394F0@@QAE@XZ": 5477344,
-    "?Unknown_00539510@UnknownObject5394F0@@QAEXH@Z": 5477648,
+    "??0LineTrail@@QAE@XZ": 5477344,
+    "?Set_Decrement@LineTrail@@QAEXH@Z": 5477648,
     "?unknown_slot133@AircraftClass@@UAEHXZ": 4284400,
     "?unknown_slot139@BuildingClass@@UAEHXZ": 4479312,
     "?unknown_slot43@BuildingClass@@UAE?AUCoordStruct@@H@Z": 4516400,

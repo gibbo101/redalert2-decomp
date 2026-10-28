@@ -4,8 +4,8 @@
     "id": "population-2465",
     "inventory_sha256": "7b50464a5df646c1c3e45fb5611c2933e7adc607c87654f6678fd1916377b45b",
     "gaps_sha256": "f56ce2bf65f22675f3be45e88fbe60a530ffa9bebaf5d442b3dc614ebad6c064",
-    "historical_population_sha256": "72c9868381fdaa3c6e32a3055616bf00729b8e8de6cccba32c892be826287ba0",
-    "historical_acceptance_sha256": "d96b7b8bcc98e9de311b7a52091a79a4b1b6dd8f90987773f28b911834e79847"
+    "historical_population_sha256": "7d0ff3126c60fbd868341baf58a9cab3331d8054c92c300c48307c54896a31d7",
+    "historical_acceptance_sha256": "8320614ca4780b1fa29005fd15ef33017c243c6281614c8d96e9100e577f0edf"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4119,7 +4119,7 @@
     "?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275352,
     "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275480,
     "?Unknown_00405D50@UnknownAudioController@@QAEXXZ": 4218192,
-    "?Unknown_005394F0@UnknownObject5394F0@@QAEXXZ": 5477616,
+    "?Clear_Owner@LineTrail@@QAEXXZ": 5477616,
     "?unknown_func_5d2710@ObjectClass@@QAEXXZ": 6104848,
     "?unknown_slot29@ObjectClass@@UBEHXZ": 6106048,
     "?unknown_objects_a40c60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 10751072,
@@ -6556,8 +6556,8 @@
     "?unknown_pips2_shapes_a72fe8@@3PBXB": 10956776,
     "?unknown_talkbubl_shapes_a72fec@@3PBXB": 10956780,
     "?unknown_slot77@InfantryClass@@UAE_NHHH_N@Z": 5267712,
-    "??0UnknownObject5394F0@@QAE@XZ": 5477344,
-    "?Unknown_00539510@UnknownObject5394F0@@QAEXH@Z": 5477648,
+    "??0LineTrail@@QAE@XZ": 5477344,
+    "?Set_Decrement@LineTrail@@QAEXH@Z": 5477648,
     "__real@8@40068000000000000000": 7976472,
     "?unknown_slot43@BuildingClass@@UAE?AUCoordStruct@@H@Z": 4516400,
     "?unknown_slot43@TechnoClass@@UAE?AUCoordStruct@@H@Z": 7084080,

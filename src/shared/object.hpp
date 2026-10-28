@@ -20,7 +20,7 @@
 //   +0x80  int unknown_80      -1
 //   +0x84  bool unknown_84, +0x85 bool unknown_85 (true)
 //   +0x88  CoordStruct Coord   slot 18 (Center_Coord) returns it
-//   +0x94  UnknownObject5394F0 *unknown_94   released by the destructor
+//   +0x94  LineTrail *unknown_94   released by the destructor
 //   size 0x98
 // Every object is added to four global object lists (0x00A40368, 0x00AC0D60,
 // 0x00AC0CB0, 0x00AC0C58) and removed from those and 0x00AC0CD8 when
@@ -134,24 +134,8 @@ public:
     int unknown_30;                                             // +0x30 (45 when cleared, 1 when a bomb is planted)
 };
 
-// Original non-polymorphic trail layout; name/field meanings remain hypotheses.
-struct UnknownTrailPoint_005393E0 {
-    CoordStruct Coord;                       // +0x00 constructor copies three words
-    int unknown_0c;                          // +0x0C constructor clears it
-};
-class UnknownObject5394F0 {
-public:
-    UnknownObject5394F0();                   // 0x005393E0, ECX receiver,RET0,EAX=this
-    void Unknown_005394F0();                 // 0x005394F0
-    void Unknown_00539510(int value);        // 0x00539510, RET4; stores configured size
-    RGBClass Color;                          // +0x00, default128/128/128
-    char unknown_003;
-    ObjectClass *Owner;                      // +0x04
-    int unknown_008;                         // +0x08,default16
-    int unknown_00c;                         // +0x0C,default0
-    UnknownTrailPoint_005393E0 unknown_010[32]; // +0x10..20F
-};
-typedef char UnknownObject5394F0_size_210[(sizeof(UnknownObject5394F0) == 0x210) ? 1 : -1];
+// The trail at +0x94: shared/line_trail.hpp.
+#include "shared/line_trail.hpp"
 
 // Object.cpp's copies of the geometry header statics: the zero coordinate
 // unknown_geometry_l (0x00A72F00), unknown_geometry_g (0x00A72F40) and
@@ -359,7 +343,7 @@ public:
     bool unknown_84;                        // +0x84
     bool unknown_85;                        // +0x85
     CoordStruct Coord;                      // +0x88
-    UnknownObject5394F0 *unknown_94;        // +0x94
+    LineTrail *unknown_94;                  // +0x94
 };
 
 // Global object lists: shared/object_lists.hpp.
