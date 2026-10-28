@@ -240,6 +240,8 @@ extern CCINIClass unknown_ini_839740;   // 0x00839740
 extern CCINIClass *unknown_ini_8396d0;  // 0x008396D0
 extern CCINIClass unknown_ini_8397a0;   // 0x008397A0
 extern CCINIClass unknown_ini_839860;   // 0x00839860
+// A fifth INI object of the INI globals unit (0x008396E0; use unknown).
+extern CCINIClass unknown_ini_8396e0;   // 0x008396E0
 
 // 0x0046C520 (not a member: __fastcall, result pointer in ECX, the INI in
 // EDX): building prerequisites, 128-byte buffer. The group names POWER,
