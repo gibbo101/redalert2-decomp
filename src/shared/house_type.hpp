@@ -111,4 +111,7 @@ public:
 
 extern DynamicVectorClass<HouseTypeClass *> HouseTypes;         // 0x00A35D08
 
+// Index in HouseTypes of the country with this name or ID; -2 for "<random>", -1 when unknown (0x004904A0).
+int __fastcall Find_Country_Index_004904A0(char const *name);
+
 #endif

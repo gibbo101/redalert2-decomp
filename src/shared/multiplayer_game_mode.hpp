@@ -20,6 +20,8 @@
 #include "shared/wstring.hpp"
 
 class CCINIClass;
+class CoopCampaignClass;
+class UnknownDescriptionList_00490E00;
 class MultiMission;
 
 #include "shared/unknown_player_entry.hpp"
@@ -268,6 +270,9 @@ public:
     virtual bool unknown_slot39(VectorClass<int> unknown_list, int unknown_1, int unknown_2, int unknown_3); // 39 0x005A6230
     virtual bool unknown_slot40();                                 // 40 0x005A62A0
     virtual void unknown_slot42();                                 // 42 0x005A3F90
+
+    UnknownDescriptionList_00490E00 *unknown_campaigns_40;         // +0x40 the cooperative campaign records
+    CoopCampaignClass *unknown_campaign_44;                        // +0x44 the selected campaign
 };
 
 // vtable 0x007A676C (scalar deleting destructor 0x005A25F0)
