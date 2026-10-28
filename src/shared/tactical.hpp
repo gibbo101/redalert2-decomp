@@ -6,6 +6,8 @@
 
 #include "shared/abstract_class.hpp"
 #include "shared/coord.hpp"
+#include "shared/cd_timer.hpp"
+#include "shared/system_timer.hpp"
 #include "shared/rect.hpp"
 
 class CellClass;
@@ -25,6 +27,10 @@ public:
     virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);
     virtual int Kind_Of() const;
     virtual int Size_Of() const;
+    virtual void AI();                              // 0x006A2DD0 (slot 23: the scroll animation and the view position)
+
+    bool Unknown_006A8C80(Point2D *point);          // 0x006A8C80 (clamps a view position; false when unchanged)
+    void Unknown_006A9170();                        // 0x006A9170 (after the view position changed)
 
     // Draws a line between two coordinates in a color (0x006AC160, slot 24;
     // TechnoClass 0x006C3950/0x006C3A90; true when drawn; hypothesis).
@@ -61,15 +67,26 @@ public:
     // Sets the view rectangle (0x006A65A0; DisplayClass slot 42).
     void Unknown_006A65A0(Rect const &rect);
 
-    char unknown_24[0xB0 - 0x24];
+    char unknown_24[0xA8 - 0x24];
+    int unknown_a8;                 // +0xA8 the frame of the last update (-1 after construction)
+    char unknown_ac[0xB0 - 0xAC];
     Point2D unknown_b0;             // +0xB0 the view position (BuildingClass slot 73 caches it)
     char unknown_b8[0xC0 - 0xB8];
     double unknown_c0;              // +0xC0 zoom factor (Blit_Display divides by it; 1.0 = none)
-    char unknown_c8[0xD8 - 0xC8];
-    float unknown_d8;               // +0xD8 ScrollClass slot 26 tests it against 0
-    char unknown_dc[0xD7D - 0xDC];
+    Point2D unknown_c8;             // +0xC8 the scroll start (AI 0x006A2DD0 interpolates it to unknown_d0)
+    Point2D unknown_d0;             // +0xD0 the scroll target
+    float unknown_d8;               // +0xD8 the scroll step per frame (ScrollClass slot 26 tests it against 0)
+    float unknown_dc;               // +0xDC the scroll progress, 0..1
+    char unknown_e0[0xD64 - 0xE0];
+    Point2D unknown_d64;            // +0xD64 the view position
+    char unknown_d6c[0xD74 - 0xD6C];
+    Point2D unknown_d74;            // +0xD74 the requested view position
+    char unknown_d7c;
     bool unknown_d7d;               // +0xD7D set by Flag_To_Redraw
-    char unknown_d7e[0xE18 - 0xD7E];    // (0xE18 bytes: Read_Scenario_INI's new)
+    char unknown_d7e[0xDA0 - 0xD7E];
+    int unknown_da0;                // +0xDA0 counts the timer expiries
+    CDTimerClass<SystemTimerClass> unknown_da4;     // +0xDA4 restarted at Rules->WaypointAnimationSpeed
+    char unknown_db0[0xE18 - 0xDB0];    // (0xE18 bytes: Read_Scenario_INI's new)
 };
 extern Tactical *unknown_tactical_83996c;
 
