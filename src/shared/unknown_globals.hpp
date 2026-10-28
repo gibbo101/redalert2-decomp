@@ -42,6 +42,8 @@ extern HouseClass *unknown_player_a35db4;  // 0x00A35DB4 the player's house
 extern int unknown_int_a3d548;
 extern int unknown_game_mode_a3d298;  // 0x00A3D298
 extern int unknown_a3d3b4;            // 0x00A3D3B4 (session +0x11C)
+extern char unknown_name_a3d3a0[];    // 0x00A3D3A0 (the local nick name)
+extern int unknown_a3d3bc;            // 0x00A3D3BC (session +0x124; the modem guest's colour list choice)
 extern bool unknown_flag_a3d2b8;       // 0x00A3D2B8 (session +0x20: multiplayer bases)
 // The session object at 0x00A3D298 (its first word is unknown_game_mode_a3d298;
 // SessionClass in TS, hypothesis).

@@ -245,7 +245,6 @@ extern int unknown_color_7a7364;        // 0x007A7364 (public message colour)
 extern int unknown_color_7a7374;        // 0x007A7374 (public message colour for users with flag bit 0)
 void __fastcall Unknown_0075B910(char const *message, bool arg2);   // 0x0075B910 (in-game message)
 extern int unknown_b2a7e8;              // 0x00B2A7E8
-extern char unknown_name_a3d3a0[];      // 0x00A3D3A0 (the local nick name)
 extern "C" int __cdecl _stricmp(char const *left, char const *right);
 
 
@@ -334,7 +333,6 @@ extern WolPlayerData unknown_player_b29cf0[16];
 extern WOL::Channel unknown_channel_b299c0;
 extern WOL::IChat *unknown_chat_a72cfc;
 extern Wstring unknown_wstring_b26cb8;
-extern int unknown_a3d3bc;
 extern int unknown_b2ac58;
 extern int unknown_b2abe8;
 void __fastcall Format_User_Options_0073cff0(char *text);
