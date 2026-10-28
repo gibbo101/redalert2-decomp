@@ -119,10 +119,8 @@ extern char const *unknown_terrain_section_7ad390;
 // The scenario INI format (0x00A40D24; below 4 cells are numbered x + y *
 // 128, else x + y * 1000; hypothesis).
 
-// The object index keyed by Fetch_ID (0x00ABFF58; buildings and terrain
-// objects join it; the Building worker's header calls it
-// unknown_object_index_abff58 with its own index template).
-extern IndexClass<long, ObjectClass *> unknown_object_index_abff58;
+// The object index keyed by Fetch_ID (0x00ABFF58) is in
+// shared/terrain_object_index.hpp (only the Terrain unit's view of it).
 
 // The list of terrain objects (0x00A40940; defined by the unit at 0x004D2BA0).
 extern DynamicVectorClass<TerrainClass *> Terrains;

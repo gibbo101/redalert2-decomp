@@ -10,7 +10,7 @@ HRESULT __stdcall ApplicationClass::unknown_slot6_scenario_name(BSTR *name)
         return E_POINTER;
     }
     wchar_t text[32];
-    MultiByteToWideChar(0, 1, unknown_id_source_a3d290->unknown_83c, -1, text, 32);
+    MultiByteToWideChar(0, 1, unknown_id_source_a3d290->FileName, -1, text, 32);
     *name = SysAllocString(text);
     return S_OK;
 }

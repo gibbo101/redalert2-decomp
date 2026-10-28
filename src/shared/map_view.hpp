@@ -48,6 +48,7 @@ class ObjectClass;
 class TechnoClass;
 class HouseClass;
 class BuildingTypeClass;
+class CCINIClass;
 
 #ifndef RA2_SHARED_GSCREEN_HPP
 class GScreenClass {
@@ -83,6 +84,8 @@ public:
     CellClass *Unknown_0055A490();
     bool Unknown_0054E580(Cell cell, int arg2);                             // 0x0054E580
     void Unknown_00559FD0();                                              // 0x00559FD0                                              // 0x0055A490
+    void Unknown_0054B2E0();                                                    // 0x0054B2E0
+    void Unknown_005685F0();                                                    // 0x005685F0
     void Unknown_0055A550();                                                    // 0x0055A550
     void Unknown_0055D990(Cell const &cell);                              // 0x0055D990
     void Unknown_00562F50(CellClass *cell); // 00562F50: observed thiscall/RET4; unused return hypothesis
@@ -131,6 +134,7 @@ public:
     void Unknown_0049E110(bool skip_buildings, bool arg2);                      // 0x0049E110
     void Unknown_0049E000(bool skip_buildings, bool arg2);                      // 0x0049E000
     void Unknown_0049DE00(bool skip_buildings, bool arg2);                      // 0x0049DE00
+    void Read_INI_0049CFD0(CCINIClass &ini);                                    // 0x0049CFD0 (the map's sections of a scenario; Read_Scenario_INI)
 };
 #endif
 
@@ -147,6 +151,15 @@ public:
     bool Unknown_006331A0();                                                    // 0x006331A0
     void Unknown_006331E0(bool flag);                                           // 0x006331E0
     void Unknown_00634030();                                                    // 0x00634030
+    void Unknown_00630A00();                                                    // 0x00630A00
+
+    // The radar's data the other units read, at shared/radar.hpp's offset.
+    char unknown_130[0x1220 - 0x130];
+    DynamicVectorClass<Cell> unknown_1220;                                      // +0x1220 the cells to redraw
+
+    // Forgets the cells waiting for a radar redraw (inline in Read_Scenario_INI;
+    // as shared/radar.hpp).
+    void Clear_Redraw_Cells() { unknown_1220.Clear(); }
 };
 #endif
 

@@ -33,7 +33,6 @@
 class Buffer;
 class PKey;
 
-extern "C" void __cdecl _splitpath(char const *path, char *drive, char *dir, char *fname, char *ext);
 extern "C" void __cdecl _makepath(char *path, char const *drive, char const *dir, char const *fname,
                                   char const *ext);
 extern "C" int __cdecl _stricmp(char const *left, char const *right);

@@ -108,14 +108,6 @@ extern Rect unknown_rect_ab6338;
 // The session (0x00A3D29C) whose slots 1 and 2 the radar's diplomacy button
 // asks before choosing its mode (meaning not recovered).
 class CCINIClass;
-class UnknownSessionA3D29C {
-public:
-    virtual void unknown_slot0();
-    virtual bool unknown_slot1();
-    virtual bool unknown_slot2();
-    CCINIClass *unknown_ini_005b7840();                 // 0x005B7840 (the session INI)
-};
-extern UnknownSessionA3D29C *unknown_session_a3d29c;     // 0x00A3D29C
 extern int unknown_int_a40d48;                          // 0x00A40D48 the mode the radar buttons select (1, 8, 9)
 extern int unknown_int_af8fe8;                          // 0x00AF8FE8
 // Runs after the radar's update unless it is in mode 4 (0x00716950).
@@ -291,6 +283,8 @@ public:
     Surface *unknown_1218;                              // +0x1218 (deleted by 0x00631E40; a surface: hypothesis)
     Surface *unknown_121c;                              // +0x121C
     DynamicVectorClass<Cell> unknown_1220;        // +0x1220
+    // Forgets the cells waiting for a radar redraw (inline in Read_Scenario_INI).
+    void Clear_Redraw_Cells() { unknown_1220.Clear(); }
     UnknownRadar1238 unknown_1238;                      // +0x1238 (three values)
     UnknownRadar1244 unknown_1244;                      // +0x1244 (four values)
     HashTableClass<RadarTrackingStruct, TechnoClass *> *unknown_1254;  // +0x1254 tracking table

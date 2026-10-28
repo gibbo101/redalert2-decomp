@@ -64,7 +64,7 @@ public:
     char unknown_7d4[0x834 - 0x7D4];
     int TechLevel;                              // +0x834 (the houses' default TechLevel; hypothesis)
     int Theater;                                // +0x838 (theater index; hypothesis)
-    char unknown_83c[0x940 - 0x83C]; // scenario name remains at+83c
+    char FileName[0x104];                       // +0x83C the scenario's name (its MISSION.INI section; Read_Scenario_INI)
     unsigned short Name[45];                         // +0x940 [Basic] Name
     char UIName[34];                            // +0x99A [Basic] UIName
     int IntroMovie;                             // +0x9BC [Basic] Intro (movie index)
@@ -74,7 +74,7 @@ public:
     int ActionMovie;                            // +0x9CC [Basic] Action
     int PostScoreMovie;                         // +0x9D0 [Basic] PostScore
     int PreMapSelectMovie;                      // +0x9D4 [Basic] PreMapSelect
-    char unknown_9d8[0x11D8 - 0x9D8];
+    unsigned short BriefingText[0x400];         // +0x9D8 the briefing (MISSION.INI Briefing through the string table)
     char Briefing[32];                          // +0x11D8 [Basic] Briefing
     int Theme;                                  // +0x11F8 [Basic] Theme
     int unknown_11fc;                           // +0x11FC (the player's HouseType index, set by Read_Basic)
@@ -101,7 +101,8 @@ public:
     bool unknown_2238;                          // +0x2238 (AITriggerType 0x0041C990: global AI triggers off)
     bool unknown_2239;                          // +0x2239 (PowerClass: shifts the help region5 pixels down)
     bool MultiplayerOnly;                       // +0x223A [Basic] MultiplayerOnly (written as a number)
-    char unknown_223b[0x2250 - 0x223B];
+    char unknown_223b[0x224C - 0x223B];
+    int unknown_224c;                           // +0x224C the campaign (Campaigns index; -1: none)
     int StartingDropships;                      // +0x2250 [Basic] StartingDropships
     // The loadout lists (TypeList vptrs and the 28-byte stride at 0x0066112F,
     // 0x00661187, 0x006611DF; padded by Read_Basic to one limit and one count
@@ -137,11 +138,27 @@ public:
     char UnderParMessage[31];                   // +0x2333 [Ranking] UnderParMessage
     char OverParTitle[31];                      // +0x2352 [Ranking] OverParTitle
     char OverParMessage[31];                    // +0x2371 [Ranking] OverParMessage
+    char LSLoadMessage[31];                     // +0x2390 MISSION.INI LSLoadMessage (loading screen)
+    char LSLoadBriefing[31];                    // +0x23AF MISSION.INI LSLoadBriefing
+    char unknown_23ce[2];
+    int LS640BriefLocX;                         // +0x23D0 MISSION.INI LS640BriefLocX
+    int LS640BriefLocY;                         // +0x23D4
+    int LS800BriefLocX;                         // +0x23D8
+    int LS800BriefLocY;                         // +0x23DC
+    char LS640BkgdName[64];                     // +0x23E0 MISSION.INI LS640BkgdName
+    char LS800BkgdName[64];                     // +0x2420 MISSION.INI LS800BkgdName
 };
 extern UnknownIDSource *unknown_id_source_a3d290;    // 0x00A3D290
 // Assigns the houses of a multiplayer game to the players (0x0065FBB0; Read_Basic
 // calls it instead of reading [Basic] Player; name hypothesis).
 void Assign_Houses_0065fbb0();
+// Resets the scenario before a new one is read (0x0065D370; name hypothesis).
+void Clear_Scenario_0065d370();
+// Multiplayer setup after an unofficial map is read (0x0065E8C0; meaning not recovered).
+void __fastcall Unknown_0065e8c0(bool official);
+// Reads a scenario INI: MISSION.INI texts, rules, houses, [Basic] and every
+// object list (0x0065EB40; false when the player side or [Basic] fails).
+bool __fastcall Read_Scenario_INI(CCINIClass &ini, bool official);
 // The scenario INI section names (pointers at 0x007A9204 "Basic" and
 // 0x007A9200 "VariableNames").
 extern char const *unknown_basic_section_7a9204;

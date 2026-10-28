@@ -86,11 +86,6 @@ inline Cell Adjacent_Cell(Cell const &cell, int facing)
 
 // The object at 0x0084E8D0 (class not identified; 0x0042D960 and 0x0042D990
 // also use it): whether a house may enter the mode +0x11B0 (0x0042E700).
-class Unknown84E8D0 {
-public:
-    bool Unknown_0042E700(int house);
-};
-extern Unknown84E8D0 unknown_object_84e8d0;
 
 // The cell value DisplayClass starts its cursor cells with (0x00852610).
 extern Cell unknown_cell_852610;

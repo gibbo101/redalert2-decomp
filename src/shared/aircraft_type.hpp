@@ -45,6 +45,7 @@ inline AnimTypeClass *Get_Anim_Type(CCINIClass &ini, char const *section, char c
 class AircraftClass {
 public:
     AircraftClass(AircraftTypeClass *type, HouseClass *house);         // 0x00413A40
+    static void __fastcall Read_INI_0041A840(CCINIClass &ini);        // 0x0041A840 (as shared/aircraft.hpp)
 
     char unknown_000[0x5C0];
 };

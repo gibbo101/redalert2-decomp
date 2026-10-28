@@ -46,6 +46,7 @@ class InfantryClass;
 class InfantryClass : public ObjectClass {
 public:
     InfantryClass(InfantryTypeClass *type, HouseClass *house);         // 0x004FF640
+    static void __fastcall Read_INI(CCINIClass &ini);                 // 0x00506960 (as shared/infantry.hpp)
 
     virtual HRESULT __stdcall GetClassID(GUID *clsid);
     virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);

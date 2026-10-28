@@ -19,6 +19,13 @@ class Surface;
 // 10-12, 23) are not declared yet.
 class Tactical : public AbstractClass {
 public:
+    Tactical();                                     // 0x006A24B0 (Read_Scenario_INI makes a new view)
+    virtual HRESULT __stdcall GetClassID(GUID *clsid);
+    virtual HRESULT __stdcall Load(IStream *stream);
+    virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);
+    virtual int Kind_Of() const;
+    virtual int Size_Of() const;
+
     // Draws a line between two coordinates in a color (0x006AC160, slot 24;
     // TechnoClass 0x006C3950/0x006C3A90; true when drawn; hypothesis).
     virtual bool unknown_slot24(CoordStruct const &from, CoordStruct const &to, int color, int arg4);
@@ -62,6 +69,7 @@ public:
     float unknown_d8;               // +0xD8 ScrollClass slot 26 tests it against 0
     char unknown_dc[0xD7D - 0xDC];
     bool unknown_d7d;               // +0xD7D set by Flag_To_Redraw
+    char unknown_d7e[0xE18 - 0xD7E];    // (0xE18 bytes: Read_Scenario_INI's new)
 };
 extern Tactical *unknown_tactical_83996c;
 

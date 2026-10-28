@@ -17,7 +17,7 @@ extern "C" long __cdecl time(long *result);
 // @ref ?unknown_ladder_client_a72d00@@=00a72d00
 // @ref _time=0078387f
 
-void __cdecl Service_Game_IO_00481fb0()
+void __fastcall Service_Game_IO_00481fb0()
 {
     Audio_Update();
     if (queued_movies_00af8fd8.Count()>0) {

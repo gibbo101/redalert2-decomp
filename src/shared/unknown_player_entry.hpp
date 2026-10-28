@@ -11,7 +11,9 @@ typedef unsigned short wchar_t;
 struct UnknownPlayerEntry {
     wchar_t Name[20];
     IPXAddressClass Address;
-    char unknown_34[0x5b - 0x34];
+    char unknown_34[0x4b - 0x34];
+    int unknown_4b;                 // +0x4B the country (HouseTypes index; -3: random, read as 0 by Read_Scenario_INI)
+    char unknown_4f[0x5b - 0x4f];
     int Team;
     int unknown_5f;
     char unknown_63[0x75 - 0x63];

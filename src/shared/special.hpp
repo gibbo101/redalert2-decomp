@@ -13,6 +13,7 @@ public:
     bool Equals_Options(SpecialClass const &other) const;   // 0x0068B3F0 (name hypothesis)
     void Write_INI(INIClass &ini) const;        // 0x0068B430 (name hypothesis)
     void Read_INI(INIClass &ini);               // 0x0068B5A0 (name hypothesis)
+    void Unknown_0068B410();                    // 0x0068B410 (Read_Scenario_INI, on the global options)
 
     unsigned unknown_bits_0 : 3;                // bits 0-2
     unsigned EscapeMovies : 1;                  // bit 3 (registry value)
@@ -33,5 +34,9 @@ public:
     unsigned Visceroids : 1;                    // bit 18
     unsigned unknown_bits_19 : 13;              // bits 19-31
 };
+
+// The game options outside a scenario (0x00A40920; copied into the scenario's
+// own by Read_Scenario_INI in a multiplayer game).
+extern SpecialClass unknown_special_a40920;
 
 #endif

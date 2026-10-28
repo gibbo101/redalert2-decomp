@@ -32,6 +32,7 @@
 class UnitClass {
 public:
     UnitClass(UnitTypeClass *type, HouseClass *house);                 // 0x006FA400
+    static void __fastcall Read_INI(CCINIClass &ini);                 // 0x00706AE0 ([Units] entries; as shared/unit.hpp)
 
     char unknown_000[0x7D0];
 };

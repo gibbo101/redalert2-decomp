@@ -160,7 +160,7 @@ public:
     void Free_unknown_11b8();                                           // 0x0045EA60
     // Prepares the cloak surface and resolves each type's ToTile= (0x0045E170).
     static void unknown_func_45e170();
-    static void unknown_func_45ebd0();                                  // 0x0045EBD0 (each type's "ToTile" isometric tile type)
+    static void __fastcall unknown_func_45ebd0();                                // 0x0045EBD0 (each type's "ToTile" isometric tile type)
     // Loads the type images and buildups for a theater (0x00458600).
     static void __fastcall Init(int theater);
     static void unknown_func_458510();                                  // 0x00458510 (BUILDNGZ.SHP)

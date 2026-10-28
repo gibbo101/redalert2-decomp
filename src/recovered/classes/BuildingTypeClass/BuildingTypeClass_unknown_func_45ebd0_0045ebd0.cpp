@@ -1,4 +1,4 @@
-// static void BuildingTypeClass::unknown_func_45ebd0() (0x0045EBD0)
+// static void __fastcall BuildingTypeClass::unknown_func_45ebd0() (0x0045EBD0)
 // Gives each type the isometric tile type its "ToTile" key (in the INI
 // pointed to by 0x008396D0) names (unknown_bf0).
 #include "shared/building_type.hpp"
@@ -14,7 +14,7 @@ extern CCINIClass *unknown_ini_8396d0;                       // 0x008396D0
 extern DynamicVectorClass<IsometricTileTypeClass *> IsoTileTypes;
 int __fastcall Unknown_00529400(char const *name);           // 0x00529400 (IsometricTileTypeClass: the index by ID)
 
-void BuildingTypeClass::unknown_func_45ebd0()
+void __fastcall BuildingTypeClass::unknown_func_45ebd0()
 {
     for (int index = 0; index < BuildingTypes.Count(); index++) {
         BuildingTypeClass *type = BuildingTypes[index];

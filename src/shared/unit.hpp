@@ -152,6 +152,7 @@ public:
     virtual int unknown_slot310(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6);    // slot 310 0x006FF690
     virtual int unknown_slot311(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6);    // slot 311 0x007005B0
     virtual int unknown_slot312(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7);  // slot 312 0x006FF3E0
+    static void __fastcall Read_INI(CCINIClass &ini);                 // 0x00706AE0 (the [Units] section; hypothesis)
     static void __fastcall Write_INI(CCINIClass &ini);                // 0x00706F60 (the [Units] section; hypothesis)
     void unknown_709c30(ObjectTypeClass *type);                       // 0x00709C30 (sets the disguise; hypothesis)
     bool Clear_Unknown5B4_007049F0();                 // 0x007049F0

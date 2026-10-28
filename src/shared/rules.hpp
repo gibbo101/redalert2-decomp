@@ -80,6 +80,7 @@ public:
     RulesClass();                            // 0x00640B80
     ~RulesClass();                           // 0x006429E0
     bool Addition(CCINIClass &ini);          // 0x006437F0 every section, in order
+    bool Process(CCINIClass &ini);           // 0x006433A0 the rules INI's sections (Read_Scenario_INI; name hypothesis)
     bool Special_Weapons(CCINIClass &ini);   // 0x00643B80 [SpecialWeapons]
     bool Audio_Visual(CCINIClass &ini);      // 0x00643E10 [AudioVisual]
     bool Crate_Rules(CCINIClass &ini);       // 0x006469B0 [CrateRules]

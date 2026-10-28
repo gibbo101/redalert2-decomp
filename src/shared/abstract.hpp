@@ -38,6 +38,7 @@ class TechnoClass;
 // The save-game pointer fixup service (hypothesis: SwizzleManagerClass).
 class SwizzleManagerClass {
 public:
+    HRESULT __stdcall Reset();                               // 0x0069FB10 (Read_Scenario_INI)
     HRESULT __stdcall Swizzle(void **pointer);              // 0x0069FB20
     HRESULT __stdcall Here_I_Am(long id, void *pointer);   // 0x0069FBA0
 };

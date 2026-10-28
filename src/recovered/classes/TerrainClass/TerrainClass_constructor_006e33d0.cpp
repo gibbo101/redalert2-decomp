@@ -4,6 +4,7 @@
 // the animation timer and registers the object in the terrain list and the
 // object index.
 #include "shared/terrain.hpp"
+#include "shared/terrain_object_index.hpp"
 // @ref ??0ObjectClass@@QAE@XZ=005d22e0
 // @ref ?Create_ID@AbstractClass@@UAGXXZ=0040ffd0
 // @ref ?Fetch_ID@AbstractClass@@UAGJXZ=0040ffc0

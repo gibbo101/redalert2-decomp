@@ -230,6 +230,12 @@ extern CCINIClass ArtINI;
 // The game settings INI (RA2.INI; 0x00839740): OptionsClass and the
 // firewall settings read and write it.
 extern CCINIClass unknown_ini_839740;   // 0x00839740
+// The rules INI (pointer 0x008396D0), the AI INI (0x008397A0; its teams,
+// scripts, task forces and AI triggers are the global ones) and the INI
+// Read_Scenario_INI hands to RulesClass::Advanced_Command_Bar (0x00839860).
+extern CCINIClass *unknown_ini_8396d0;  // 0x008396D0
+extern CCINIClass unknown_ini_8397a0;   // 0x008397A0
+extern CCINIClass unknown_ini_839860;   // 0x00839860
 
 // 0x0046C520 (not a member: __fastcall, result pointer in ECX, the INI in
 // EDX): building prerequisites, 128-byte buffer. The group names POWER,

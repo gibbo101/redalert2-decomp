@@ -40,13 +40,77 @@ struct UnknownSessionState {
     void Loading_Progress_00672160(int percent);
 };
 extern UnknownSessionState unknown_session_a3d298;
+// The session's game mode object (+0x04, a MultiplayerGameMode; moved from
+// shared/radar.hpp).
+class CCINIClass;
+class UnknownSessionA3D29C {
+public:
+    virtual void unknown_slot0();
+    virtual bool unknown_slot1();
+    virtual bool unknown_slot2();
+    virtual void unknown_slot3();
+    virtual void unknown_slot4();
+    virtual void unknown_slot5();
+    virtual void unknown_slot6();
+    virtual void unknown_slot7();
+    virtual void unknown_slot8();
+    virtual void unknown_slot9();
+    virtual void unknown_slot10();
+    virtual void unknown_slot11();
+    virtual void unknown_slot12();
+    virtual void unknown_slot13();
+    virtual void unknown_slot14();
+    virtual void unknown_slot15();
+    virtual void unknown_slot16();
+    virtual void unknown_slot17();
+    virtual void unknown_slot18();
+    virtual void unknown_slot19();
+    virtual void unknown_slot20();
+    virtual void unknown_slot21();
+    virtual void unknown_slot22();
+    virtual void unknown_slot23();
+    virtual void unknown_slot24();
+    virtual void unknown_slot25();
+    virtual bool unknown_slot26();                       // slot 26 (Read_Scenario_INI)
+    CCINIClass *unknown_ini_005b7840();                 // 0x005B7840 (the session INI)
+};
+extern UnknownSessionA3D29C *unknown_session_a3d29c;     // 0x00A3D29C
 // Services audio, queued movies and the network while a long operation runs
 // (0x00481FB0).
-void __cdecl Service_Game_IO_00481fb0();
+void __fastcall Service_Game_IO_00481fb0();
 // Deletes every LightConvertClass in the global list (0x00832398) and makes a
 // new default one (tint 1000, 1000, 1000) (0x00529720; DisplayClass 0x0049E570
 // and UnknownIDSource::Read_Basic call it; name hypothesis).
 void __cdecl Reset_Light_Converts_00529720();
+// Deletes every radar event (0x0063C640).
+void RadarEventClass_unknown_delete_all_63c640();
+// The object at 0x0084E8D0 (moved from shared/display.hpp).
+class Unknown84E8D0 {
+public:
+    void Unknown_0042E1A0();                    // 0x0042E1A0 (Read_Scenario_INI)
+    bool Unknown_0042E700(int house);
+};
+extern Unknown84E8D0 unknown_object_84e8d0;
+// Read_Scenario_INI's settings and helpers (0x0065EB40; meanings mostly not recovered).
+extern int unknown_difficulty_a40b1c;           // 0x00A40B1C the campaign difficulty (the scenario's Difficulty)
+extern int unknown_session_difficulty_a3d2d8;   // 0x00A3D2D8 (session +0x40) the multiplayer difficulty
+extern bool unknown_session_fog_a3d33f;         // 0x00A3D33F (session +0xA7) fog of war
+extern bool unknown_session_a3d2c0;             // 0x00A3D2C0 (session +0x28) false clears the global DestroyableBridges
+extern int unknown_a40770;                      // 0x00A40770 (cleared before the houses are read)
+extern bool unknown_a40d39;                     // 0x00A40D39 (game mode 5 reads TMCJ4F.INI)
+extern bool unknown_7df630;                     // 0x007DF630 (false while the buildings are read)
+void __fastcall Init_Theater_00519e70(int theater);         // 0x00519E70
+bool __fastcall Unknown_0051a330(int side);                 // 0x0051A330 (side 0 allied, 1 soviet; false fails the scenario)
+void __fastcall Unknown_006c0220();                         // 0x006C0220 (walks TeamTypes)
+void __fastcall Unknown_006ef5c0(CCINIClass &ini);          // 0x006EF5C0 ([Tubes])
+void Unknown_006e9fe0();                                    // 0x006E9FE0 (walks the TiberiumClass list)
+void __fastcall Unknown_006e9520();                         // 0x006E9520 (walks the TiberiumClass list)
+void Unknown_006ecf10();                                    // 0x006ECF10 (walks the objects at 0x00AC0CD8)
+// A lazily made object (0x00A6E7C4; 0x00535910 makes it, 0x00535BF0 runs it).
+struct Unknown535910 {
+    void Unknown_00535BF0();
+};
+Unknown535910 *Unknown_00535910();
 // An empty string used as an INI default (0x0083C55C).
 extern char unknown_string_83c55c[];
 extern int unknown_a40774;  // 0x00A40774 (a live-object count; BuildingClass, FactoryClass, ...)
