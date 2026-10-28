@@ -7,14 +7,15 @@
 //   +0x04 BuildBuf, +0x08 MaxLen, +0x0C ReceiveBuf, +0x10 ReceiveLen (500),
 //   +0x14 ReceiveIndex, +0x18..+0x30 modem settings, +0x34 the modem
 //   registry entry, +0x38 Connection, +0x3C NumConnections, +0x40 PortHandle,
-//   +0x44 NumSend, +0x48 NumReceive, +0x4C MagicNum, +0x50 SendBuf,
-//   +0x54 SendLen, +0x58 unknown, +0x5C..+0x64 timing, +0x68..+0x70 counters.
+//   +0x44 NumSend, +0x48 NumReceive, +0x4C MagicNum, +0x50 RXBuf,
+//   +0x54 RXSize, +0x58 RXCount, +0x5C..+0x64 timing, +0x68..+0x70 counters.
 #ifndef RA2_SHARED_NULL_MODEM_HPP
 #define RA2_SHARED_NULL_MODEM_HPP
 
 #include "shared/connection.hpp"
 #include "shared/conn_man.hpp"
 #include "shared/win_modem.hpp"
+#include "shared/keyboard.hpp"
 
 // A modem found in the registry (0x1C bytes; constructor 0x0059CD00,
 // destructor 0x0059D4F0; Westwood's ModemRegistryEntryClass).
@@ -28,6 +29,14 @@ public:
     char unknown_08[0x1C - 0x08];
 };
 
+// The serial frame header (6 bytes): then the data, an int CRC of the data
+// (NullModemConnClass::Compute_CRC) and a carriage return.
+struct SerialHeaderType {
+    unsigned short MagicNumber;     // 0xDABD
+    unsigned short Length;
+    unsigned short MagicNumber2;    // 0xDEAF
+};
+
 class NullModemConnClass : public ConnectionClass {
 public:
     NullModemConnClass(int numsend, int numreceive, int maxlen, unsigned short magicnum);   // 0x005CDB40
@@ -35,10 +44,24 @@ public:
     void Init(int port);                                                // 0x005CDBB0
     virtual void Init();                                                // slot 1 0x005CDCC0
     virtual int Send(char *buf, int buflen, void *extrabuf, int extralen, bool flagged, unsigned short id);   // slot 9 0x005CDBD0
+    static int __fastcall Compute_CRC(char *buf, int buflen);           // 0x005CDC80 (rotating sum of the bytes)
 
     int PortHandle;                     // +0x4C
     char *SendBuf;                      // +0x50
 };
+
+// The serial settings the dialogs edit (Westwood's SerialSettingsType;
+// only the fields used here).
+struct SerialSettingsType {
+    int Port;                           // +0x00 the port address, or 1 for a registry modem
+    int IRQ;                            // +0x04
+    int Baud;                           // +0x08
+    char unknown_0c[0x30 - 0x0C];
+    char ModemName[64];                 // +0x30 (length a hypothesis)
+};
+
+// ESC aborted the modem operation (0x00A72EC4).
+extern bool unknown_modem_aborted_a72ec4;
 
 class NullModemClass : public ConnManClass {
 public:
@@ -61,6 +84,7 @@ public:
     virtual void Configure_Debug(int index, int offset, int size, int names, int namestart, int namecount);   // 15 0x005D0970
 
     int Delete_Connection();                                            // 0x005D0360
+    int Detect_Port(SerialSettingsType *settings);                      // 0x005D03E0 (0 when the port opens)
     int Init_Send_Queue();                                              // 0x005D03C0
     void Shutdown();                                                    // 0x005D0570
     int Send_Message(void *buf, int buflen, int ack_req);               // 0x005D05F0
@@ -68,6 +92,15 @@ public:
     int Num_Send();                                                     // 0x005D08A0
     int Num_Receive();                                                  // 0x005D08C0
     void *Oldest_Send();                                                // 0x005D0920
+    void Setup_Modem_Echo(void (__fastcall *func)(char c));            // 0x005D1D20
+    void unknown_5d1d40();                                              // 0x005D1D40 (empty)
+    void Translate_Line_Ends();                                         // 0x005D1D50 (CR -> 1, LF -> 2 in the receive buffer)
+    void Clear_Receive_Buffer();                                        // 0x005D1DA0
+    static int Abort_Modem();                                           // 0x005D1DB0 (-1000 once ESC was pressed)
+    void Setup_Abort_Modem();                                           // 0x005D1E00
+    void Remove_Abort_Modem();                                          // 0x005D1E20
+    int Change_IRQ_Priority(int irq);                                   // 0x005D1E40 (nothing to do under Windows: 0)
+    int Number_Of(char *text);                                          // 0x005D1ED0 (atoi of an all-digit string, else -1)
 
     char *BuildBuf;                     // +0x04
     int MaxLen;                         // +0x08
@@ -88,9 +121,9 @@ public:
     int NumSend;                        // +0x44
     int NumReceive;                     // +0x48
     unsigned short MagicNum;            // +0x4C
-    char *SendBuf;                      // +0x50
-    int SendLen;                        // +0x54
-    int unknown_58;                     // +0x58
+    char *RXBuf;                        // +0x50 bytes read from the port
+    int RXSize;                         // +0x54
+    int RXCount;                        // +0x58
     unsigned long RetryDelta;           // +0x5C (60)
     unsigned long MaxRetries;           // +0x60 (-1)
     unsigned long Timeout;              // +0x64 (1200)

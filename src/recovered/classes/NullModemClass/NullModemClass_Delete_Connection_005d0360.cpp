@@ -8,9 +8,9 @@ int NullModemClass::Delete_Connection()
         delete Connection;
         Connection = 0;
     }
-    if (SendBuf) {
-        delete SendBuf;
-        SendBuf = 0;
+    if (RXBuf) {
+        delete RXBuf;
+        RXBuf = 0;
     }
     if (BuildBuf) {
         delete BuildBuf;
