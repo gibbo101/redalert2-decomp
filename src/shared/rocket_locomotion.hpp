@@ -41,7 +41,7 @@ public:
     int unknown_44;                             // +0x44
     int unknown_48;                             // +0x48
     int unknown_4c;                             // +0x4C
-    int unknown_50;                             // +0x50
+    float unknown_50;                           // +0x50 (the pitch; Draw_Matrix tilts by it)
     int unknown_54;                             // +0x54
 };
 
