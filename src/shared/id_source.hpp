@@ -230,6 +230,22 @@ void __fastcall Focus_Loss_0065c040();
 void Focus_Restore_0065c140();
 // Whether the game was already paused when the pause count rose from zero (0x00AB6EF4).
 extern bool unknown_was_paused_ab6ef4;
+// With [Video] AllowModeToggle, switches to the RA2.INI screen size or back to
+// 640 x 480 (0x0065C480).
+void __fastcall Toggle_Display_Mode_0065c480(bool preferred);
+// Reads the named scenario file into an INI and through Read_Scenario_INI
+// (0x0065E760; Westwood's Read_Scenario; false on failure).
+bool __fastcall Read_Scenario_0065e760(char const *name);
+// Starts a scenario by name (0x0065BC70; reads it, optionally plays the
+// briefing movie, sets the campaign; false on failure; Westwood's Start_Scenario).
+bool __fastcall Start_Scenario_0065bc70(char const *name, bool briefing, int campaign);
+// Restarts the current scenario (0x0065E440; Westwood's Do_Restart, hypothesis).
+void __fastcall Do_Restart_0065e440();
+// Ends the scenario with "battle control terminated" (0x0065E590; reached
+// through a function pointer; name not recovered).
+void __fastcall Unknown_0065e590();
+// Makes the multiplayer units (0x00660320; Westwood's Create_Units, hypothesis).
+void __fastcall Create_Units_00660320(bool official);
 // Multiplayer setup after an unofficial map is read (0x0065E8C0; meaning not recovered).
 void __fastcall Unknown_0065e8c0(bool official);
 // Reads a scenario INI: MISSION.INI texts, rules, houses, [Basic] and every

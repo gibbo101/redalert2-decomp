@@ -105,9 +105,7 @@ public:
 };
 extern Unknown8315B4 *unknown_8315b4;                   // 0x008315B4
 extern Cell unknown_cell_a6f238;                  // 0x00A6F238 copied into every +0x154 entry
-// The game mode (0 for the campaign) and a game option byte that enables the
-// +0x154 entries (crates; hypothesis) (0x00A3D298, 0x00A3D2C1).
-extern bool unknown_flag_a3d2c1;
+// The crates option byte (unknown_flag_a3d2c1, 0x00A3D2C1) is in shared/unknown_globals.hpp.
 
 // A 4-byte element of the array at MapClass +0x64 (unknown_68 elements;
 // the load fills it with the constructor's values before reading).

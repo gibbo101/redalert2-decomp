@@ -88,6 +88,10 @@ public:
     virtual void unknown_slot24();
     virtual void unknown_slot25();
     virtual bool unknown_slot26();                       // slot 26 (Read_Scenario_INI)
+    virtual void unknown_slot27(bool official);          // slot 27 (multiplayer setup 0x0065E8C0: makes the units)
+    virtual void unknown_slot28();                       // slot 28 (0x0065E8C0, at the end)
+    virtual void unknown_slot29();                       // slot 29 (0x0065E8C0, after slot 28)
+    void Unknown_005B7CE0();                             // 0x005B7CE0 (after slot 27)
     CCINIClass *unknown_ini_005b7840();                 // 0x005B7840 (the session INI)
 };
 extern UnknownSessionA3D29C *unknown_session_a3d29c;     // 0x00A3D29C
@@ -112,6 +116,15 @@ extern int unknown_difficulty_a40b1c;           // 0x00A40B1C the campaign diffi
 extern int unknown_session_difficulty_a3d2d8;   // 0x00A3D2D8 (session +0x40) the multiplayer difficulty
 extern bool unknown_session_fog_a3d33f;         // 0x00A3D33F (session +0xA7) fog of war
 extern bool unknown_session_a3d2c0;             // 0x00A3D2C0 (session +0x28) false clears the global DestroyableBridges
+// The game option byte that enables the map's +0x154 entries (crates; hypothesis)
+// (0x00A3D2C1, session +0x29).
+extern bool unknown_flag_a3d2c1;
+// The session's starting crate count (0x00A3D55C, session +0x2C4; bounded by Rules
+// CrateMinimum/CrateMaximum; hypothesis).
+extern int unknown_session_a3d55c;
+// Eight per-house flags all set at the end of the multiplayer setup 0x0065E8C0
+// (0x00A3F118; meaning not recovered).
+extern bool unknown_flags_a3f118[8];
 extern int unknown_a40770;                      // 0x00A40770 (cleared before the houses are read)
 extern bool unknown_a40d39;                     // 0x00A40D39 (game mode 5 reads TMCJ4F.INI)
 extern bool unknown_7df630;                     // 0x007DF630 (false while the buildings are read)
@@ -194,5 +207,7 @@ void __fastcall Unknown_0063C790();
 void __fastcall Unknown_006F8A20(BuildingClass *building);
 // Pending placement of a completed building (0x006F8A00; seed FUN_006f8a00).
 void __fastcall Unknown_006F8A00(BuildingClass *building);
+// Called when the sidebar is hidden (0x005A09E0).
+void Unknown_005A09E0();
 
 #endif

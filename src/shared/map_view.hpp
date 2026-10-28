@@ -88,6 +88,7 @@ public:
     void Unknown_0054B2E0();                                                    // 0x0054B2E0
     void Unknown_005685F0();                                                    // 0x005685F0
     void Unknown_0055A550();                                                    // 0x0055A550
+    bool Unknown_0054E410();                                                    // 0x0054E410 (places a crate on a random cell)
     void Unknown_0055D990(Cell const &cell);                              // 0x0055D990
     void Unknown_00562F50(CellClass *cell); // 00562F50: observed thiscall/RET4; unused return hypothesis
     CellClass *Unknown_005629D0(AbstractClass *object);                         // 0x005629D0 (the cell under an object; hypothesis)
@@ -137,6 +138,7 @@ public:
     void Unknown_0049E110(bool skip_buildings, bool arg2);                      // 0x0049E110
     void Unknown_0049E000(bool skip_buildings, bool arg2);                      // 0x0049E000
     void Unknown_0049DE00(bool skip_buildings, bool arg2);                      // 0x0049DE00
+    void Unknown_0049C670();                                                    // 0x0049C670 (multiplayer setup 0x0065E8C0)
     void Read_INI_0049CFD0(CCINIClass &ini);                                    // 0x0049CFD0 (the map's sections of a scenario; Read_Scenario_INI)
 };
 #endif
