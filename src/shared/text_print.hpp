@@ -38,8 +38,61 @@ typedef unsigned short wchar_t;
 #include "shared/tag_rect.hpp"
 
 // The bitmap font text is drawn with (the object at 0x0084E9E8 points to).
+// The glyph data of a font file (0x24 bytes; Load_Font_Data 0x00431150).
+// "fonT" files store the header directly, "FoNt" files a header, a table
+// of character ranges and the glyphs.
+struct FontDataType {
+    int unknown_00;                     // +0x00
+    int Width;                          // +0x04 (BitFontClass::Width)
+    int unknown_08;                     // +0x08
+    int Height;                         // +0x0C (BitFontClass::Height)
+    int GlyphCount;                     // +0x10
+    int GlyphSize;                      // +0x14 bytes per glyph
+    unsigned short *Map;                // +0x18 character -> glyph number + 1 (0x10000 entries)
+    unsigned char *Glyphs;              // +0x1C GlyphCount * GlyphSize bytes
+    int MappedCount;                    // +0x20 characters with a glyph
+};
+
+// One character range of a "FoNt" file (12 bytes).
+struct FontRangeType {
+    unsigned short First;               // +0x00 glyph number before the range's first glyph
+    unsigned short unknown_02;
+    int Low;                            // +0x04 first character
+    int High;                           // +0x08 last character
+};
+
+// "FoNt" file header (0x24 bytes).
+struct FontFileHeaderType {
+    int Magic;                          // +0x00 'FoNt'
+    int unknown_04;
+    int Width;                          // +0x08
+    int unknown_0c;
+    int Height;                         // +0x10
+    int RangeCount;                     // +0x14
+    int GlyphSize;                      // +0x18
+    int RangeOffset;                    // +0x1C
+    int GlyphOffset;                    // +0x20
+};
+
+// RTTI class name BitFont (vtable 0x0079C788: the deleting destructor).
 class BitFontClass {
 public:
+    BitFontClass(char const *filename);                                             // 0x00431040
+    virtual ~BitFontClass();                                                        // 0x00431100
+    static FontDataType *__fastcall Load_Font_Data(char const *filename);           // 0x00431150
+    static void __fastcall Free_Font_Data(FontDataType *data);                      // 0x004313C0
+    void Reset();                                                                   // (inline in the constructor's unit)
+    bool Load_Font(char const *filename);                                           // 0x004313F0
+    unsigned char *Glyph_Data(wchar_t character) const;                             // 0x00431E80 (width byte, then the bitmap)
+    void unknown_431ec0();                                                          // 0x00431EC0 (inverted copy of 'X' in unknown_08)
+    void unknown_431f70();                                                          // 0x00431F70 (one pixel taller, space one wider)
+    void unknown_431fa0();                                                          // 0x00431FA0 (one pixel taller, U+3000 twice the space)
+    bool Intersect_Rect(tagRECT *result, tagRECT const *a, tagRECT const *b);      // 0x00432000 (empty 0,0,-1,-1 when they do not meet)
+    void Set_Surface(Surface *surface);                                             // 0x004320B0 (locks it; clip box defaults to it)
+    void Release_Surface(Surface *surface);                                         // 0x00432150 (unlocks it)
+    void Set_unknown_20(int value);                                                 // 0x004318D0
+    int Draw_Char(wchar_t character, int x, int y, int arg4);                       // 0x004318E0
+    int Draw_String(wchar_t const *text, int x, int y, int arg4, int arg5);         // 0x00431CC0
     unsigned short Set_Color(unsigned short color);                                 // 0x00431430 (returns the old one)
     unsigned char Set_Clipping(unsigned char clip);                                 // 0x00431450 (returns the old one)
     void Set_Clip_Box(tagRECT const *box);                                          // 0x00431460
@@ -47,14 +100,19 @@ public:
     int String_Pixel_Width(wchar_t const *string, int arg2) const;                  // 0x00431690
     int Char_Pixel_Width(wchar_t character) const;                                  // 0x00432170
 
-    char unknown_00[0x1C];
+    FontDataType *Data;     // +0x04
+    void *unknown_08;       // +0x08 (released with free)
+    void *Buffer;           // +0x0C the locked surface (Set_Surface)
+    unsigned Pitch;         // +0x10 in pixels
+    int unknown_14;
+    int Width;              // +0x18
     int Height;             // +0x1C line height
-    char unknown_20[4];
+    int unknown_20;         // +0x20
     unsigned short Color;   // +0x24 packed text colour (Set_Color)
     unsigned short unknown_26;
     int unknown_28;         // +0x28 tab width (shared/font_message_views.hpp; hypothesis)
     int unknown_2c;         // +0x2C spacing (hypothesis)
-    int ClipBox[4];         // +0x30 left, top, right, bottom (Set_Clip_Box)
+    tagRECT ClipBox;        // +0x30 (Set_Clip_Box)
     unsigned char unknown_40;
     unsigned char Clipping; // +0x41 raw clipping flag (Set_Clipping)
     unsigned char unknown_42[2];
@@ -63,10 +121,14 @@ public:
 extern BitFontClass *BitFont;               // 0x0084E9E8
 
 // The bitmap text printer (the object at 0x0084E9D0 points to).
+// RTTI class name BitText (vtable 0x0079C790): owns the game font.
 class BitTextClass {
 public:
+    BitTextClass();                                                                 // 0x00432290 (loads GAME.FNT into BitFont)
+    virtual ~BitTextClass();                                                        // 0x004322D0
+    int Print_Char(BitFontClass *font, Surface *surface, wchar_t character, int x, int y);   // 0x00432300
     int Print(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y,
-               int arg6, int arg7);                                                 // 0x00432350
+              int arg6, int arg7);                                                  // 0x00432350
 };
 extern BitTextClass *BitText;               // 0x0084E9D0
 
