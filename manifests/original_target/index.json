@@ -1697,6 +1697,14 @@
       {
         "path": "src/shared/beacon.hpp",
         "sha256": "e460df8794a286d123ab584628405fc3ed0c4fa35c99f95a66ccb1fad1b13dcc"
+      },
+      {
+        "path": "src/shared/wol_list_text.hpp",
+        "sha256": "9101efc01484d0d29a99ba1a1a53ec6a6df136e188f96ed03abe39b7561ff8c0"
+      },
+      {
+        "path": "src/shared/wol_settings.hpp",
+        "sha256": "e1e5a39f94bd0c46efbdf8453630eb3ba95363d3abed675e4280625cd512b13e"
       }
     ],
     "source_quality_checkpoint": {
@@ -4497,7 +4505,8 @@
     "population-2787",
     "population-2788",
     "population-2789",
-    "population-2790"
+    "population-2790",
+    "population-2791"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -7524,7 +7533,8 @@
     ["population-2787", 1],
     ["population-2788", 1],
     ["population-2789", 5],
-    ["population-2790", 1]
+    ["population-2790", 1],
+    ["population-2791", 3]
   ],
   "shards": {
     "population-01": "0142c66dfa137e5010b46c1457127cb5277c4095ef75a6def3f382d923335dfa",
@@ -9525,6 +9535,7 @@
     "population-2789": "492d28f7ae1982d7e5ae710bc785d33f6d2fb9ae17bd47b6486ec45fea089d70",
     "population-279": "bab3475455498d497f5429a3b9cdcdb601467847db944d856af8c45f5d41b3c4",
     "population-2790": "7fc8fe50bf519f1b8c2c18740fb589330bb25c509b25846378e783227088b9e3",
+    "population-2791": "6837d5b5e18ca17f38e61e52b6256f94db3506521cb55c5ab58a45707fe6fe8f",
     "population-28": "7959b510196b47fbd2a8664095e6a7d55c0cb242f8fd24177ec52fc2b11b6998",
     "population-280": "137e8f9da2e56ae16c03434fb88bace5258c0ae4bf020dc45d9b98aaed463efc",
     "population-281": "89a68dbb2bd3487bcae896d17453988ae86d62127907302090c0597dcabc9f2e",
