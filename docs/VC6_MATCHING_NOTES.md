@@ -465,3 +465,13 @@ reaching each block).
 - Calling an inline timer member directly on a global (`FrameTimer.Value()`) lets VC6 drop the redundant
   -1 test inside it; a reference local (`CDTimerClass<..> &timer = FrameTimer; ...`) keeps it, as the
   original does (Post_Load_Game 0x0065D2C0).
+
+## Members and temporaries (Loco56, Scen57)
+
+- A zero-initialised `double` member is stored as two dword stores, which the scheduler reorders
+  independently; a constructor whose init-list store order is off often has a member that is really a
+  double (Fly +0x40, Rocket +0x48, Jumpjet +0x68/+0x70/+0x80 constructors).
+- A `float` local holding a function result (`float ratio = Slope_Ratio();`) keeps the unfolded
+  `fld 1.0; jmp; fcomp` comparison the original has (Drive Is_Level 0x0049FFC0).
+- A virtual call on a temporary (`CD().Force_Available(...)`) is emitted as `call [vtable]`, not bound
+  statically (Scen57).

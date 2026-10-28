@@ -24,9 +24,6 @@ struct UnknownTunnelTimer {
 };
 extern "C" GUID const CLSID_TunnelLocomotionClass;  // 0x007A1F90
 
-// The product of two matrices (the slope matrix: shared/locomotion.hpp).
-Matrix3D __fastcall operator*(Matrix3D const &left, Matrix3D const &right);   // 0x00591180
-
 class TunnelLocomotionClass : public LocomotionClass {
 public:
     TunnelLocomotionClass();                                                    // 0x006EFBE0

@@ -8,7 +8,6 @@ struct BulletVoxelBounds {
     Point2D offset; // first8, original463B0C/463B10
     Rect rectangle; // +08, original463B6C LEA passes this field
 };
-Matrix3D __fastcall operator*(Matrix3D const &left, Matrix3D const &right);
 void __fastcall Prepare_Voxel_Lighting_00717050(UnknownPairFirst *voxel, int section, int arg3, Matrix3D const &matrix, Vector3 const &light);
 void __cdecl Reset_Voxel_Renderer_007171d0();
 void __fastcall Add_Voxel_Section_007174c0(UnknownPairFirst *voxel, unsigned section, int arg3, Matrix3D const &matrix);

@@ -65,8 +65,7 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - HouseClass::Write_INI 0x4EC230 returns void (rename pending).
 - Display chain parked on register tie-breaks (Disp52 NOTES): RTacticalClass::Action 0x62FE30
   97.18, DisplayClass slot 48 0x49BB20 78.29 (needs a slot 46/48 + 0x6D8F60 rename and header
-  moves listed there), 0x4991D0 49.4; Unknown_00715B40 is declared void in foot.hpp, int in
-  sidebar.hpp.
+  moves listed there), 0x4991D0 49.4.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

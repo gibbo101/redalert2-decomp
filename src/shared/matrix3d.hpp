@@ -58,6 +58,9 @@ public:
     float Row[3][4];    // +0x00
 };
 
+// The matrix product (Tunnel and Hover Draw_Matrix, BulletClass::Draw_Voxel).
+Matrix3D __fastcall operator*(Matrix3D const &left, Matrix3D const &right);   // 0x00591180
+
 // The transformed point (rotation and translation). Defined last in
 // matrix3d.cpp and called, not expanded, by the Get_* members.
 Vector3 __fastcall operator*(Matrix3D const &matrix, Vector3 const &vector);   // 0x00591380

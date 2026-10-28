@@ -57,6 +57,7 @@ public:
     // Helpers Fly.cpp defines and expands (names hypotheses).
     bool unknown_4bf3c0();                                                      // 0x004BF3C0 (not +0x51, and not +0x50 or at least half +0x38 high)
     void Start_Drift();                                                         // 0x004BF550 (a drift of 20..30 either way; Power_Off)
+    void unknown_4bf1f0();                                                      // 0x004BF1F0 (unless on mission 7 or the techno check 0x006D1470 holds: an airport-bound aircraft out of radio contact with the building in its cell calls slot 261, else the flight state resets)
 
     bool unknown_18;                    // +0x18
     CoordStruct unknown_1c;             // +0x1C
