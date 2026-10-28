@@ -54,6 +54,7 @@ class CCINIClass;
 class GScreenClass {
 public:
     virtual void Flag_To_Redraw(int complete = false);                          // slot 14 0x004E09A0
+    virtual void Render();                                                      // slot 15 0x004E0B30
 
     // The data the light layers place after it (shared/gscreen.hpp's layout).
     int ShakeX;                                 // +0x04
@@ -192,6 +193,7 @@ public:
 #ifndef RA2_SHARED_SCROLL_HPP
 class ScrollClass : public TabClass {
 public:
+    virtual void unknown_slot35();                              // slot 35 0x0066AC20 (aborts a drag select)
     bool Unknown_00669650(Point2D const &xy, Cell &cell, CoordStruct &coord, ObjectClass *&object, bool &arg5, bool &arg6);   // 0x00669650
 };
 #endif

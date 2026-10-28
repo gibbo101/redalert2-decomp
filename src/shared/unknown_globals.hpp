@@ -146,6 +146,13 @@ extern bool unknown_flag_a40d13;  // 0x00A40D13
 extern int unknown_ini_format_a40d24;
 extern bool unknown_flag_a40d28;  // 0x00A40D28 application active (focus)
 extern bool unknown_flag_a40d44;  // 0x00A40D44
+extern int unknown_ab9174;        // 0x00AB9174 (cleared when the game pauses or resumes)
+// The global sound volume kept while the game window has no focus (0x007F1DEC;
+// 0x4000 otherwise) and the tooltip state restored with the focus (0x00A40B34).
+extern int unknown_saved_volume_7f1dec;
+extern bool unknown_tooltips_enabled_a40b34;
+// Pauses or resumes the first queued radar movie (0x005A0A90; its slot 3).
+void __fastcall Pause_Radar_Movie_005a0a90(bool pause);
 extern long unknown_com_objects_a6eb14;  // 0x00A6EB14 (live COM object count; hypothesis)
 extern bool unknown_flag_abcd84;  // 0x00ABCD84
 extern int unknown_b263d8;  // 0x00B263D8

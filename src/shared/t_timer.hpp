@@ -19,6 +19,12 @@ public:
         }
         return value;
     }
+    void Start()
+    {
+        if (Started == -1) {
+            Started = Timer;
+        }
+    }
     void Stop()
     {
         if (Started != -1) {

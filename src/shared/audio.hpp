@@ -166,6 +166,7 @@ struct AudioLevel {
     void __fastcall Set_Target(int value);              // 0x004070A0 ramp to value
     void __fastcall Set_Rate(int step, __int64 period); // 0x004070D0 step per period (ms)
     int __fastcall Update();                            // 0x004070F0 1 when the level changed
+    int __fastcall Get_Target();                        // 0x004071E0 the target, whole part
 
     unsigned int volatile Flags;    // +0x00 AUDIO_LEVEL_*
     unsigned int Current;           // +0x04
@@ -1046,6 +1047,10 @@ extern AudioLevelSet Audio_Level_Set_831290;            // 0x00831290
 extern AudioLevelSet Audio_Level_Set_831310;            // 0x00831310
 extern AudioLevelSet Audio_Level_Set_8313b0;            // 0x008313B0
 extern AudioLevelSet *Audio_Global_Levels[8];           // 0x0083144C
+// Pause and resume every playing channel (0x00406E40, 0x00406E70; the game's pause
+// counter 0x0065C1F0 / 0x0065C310 brackets them).
+void Audio_Pause_All();
+void Audio_Resume_All();
 extern AudioThreadBlock Audio_Thread;                   // 0x00831560
 extern int volatile Audio_Thread_Users;                 // 0x00831588
 extern int Audio_Thread_Running;                        // 0x008315A8

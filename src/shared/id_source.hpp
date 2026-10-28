@@ -177,7 +177,7 @@ public:
     char unknown_22fd[0x2300 - 0x22FD];
     int InitTime;                               // +0x2300 [Basic] InitTime
     unsigned short unknown_2304;
-    bool unknown_2306;                          // +0x2306
+    bool unknown_2306;                          // +0x2306 the game is paused (Pause_Game_0065c3d0)
     char unknown_2307;
     int ParTimeEasy;                            // +0x2308 [Ranking] ParTimeEasy
     int ParTimeMedium;                          // +0x230C [Ranking] ParTimeMedium
@@ -205,6 +205,23 @@ void Clear_Scenario_0065d370();
 // Completes a freshly read scenario: view, tags, silos, map overlays and zones,
 // the gas cloud system and ore twinkles (0x0065CDD0; Westwood's Fill_In_Data).
 void Fill_In_Data_0065cdd0();
+// Pauses and resumes the game: drag select aborted, mouse hidden or shown,
+// keyboard cleared (0x0065C3D0, 0x0065C420; names hypotheses).
+void Pause_Game_0065c3d0();
+void Resume_Game_0065c420();
+// Counted pauses (scripted and dialog pauses): the first pauses the sound, the
+// elapsed time (campaign and skirmish) and, unless already paused, the game;
+// a positive seconds also (re)starts the +0x620 timer, once (0x0065C1F0). The
+// last release undoes them (0x0065C310). Names hypotheses.
+void __fastcall Pause_Count_0065c1f0(int seconds);
+void Release_Pause_0065c310();
+// The game window lost or regained the focus: sound, elapsed time (campaign and
+// skirmish), radar movie, tooltips and the mouse (0x0065C040, 0x0065C140; Westwood's
+// Focus_Loss and Focus_Restore).
+void __fastcall Focus_Loss_0065c040();
+void Focus_Restore_0065c140();
+// Whether the game was already paused when the pause count rose from zero (0x00AB6EF4).
+extern bool unknown_was_paused_ab6ef4;
 // Multiplayer setup after an unofficial map is read (0x0065E8C0; meaning not recovered).
 void __fastcall Unknown_0065e8c0(bool official);
 // Reads a scenario INI: MISSION.INI texts, rules, houses, [Basic] and every
