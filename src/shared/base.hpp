@@ -9,6 +9,7 @@
 #include "shared/com_persist.hpp"
 #include "shared/vector_class.hpp"
 #include "shared/house_nodes.hpp"
+#include "shared/rect.hpp"
 
 class HouseClass;
 class BuildingClass;
@@ -39,14 +40,10 @@ public:
     DynamicVectorClass<Cell> unknown_20;  // +0x20 (vtable 0x0079C5A0)
     DynamicVectorClass<Cell> unknown_38;  // +0x38 (vtable 0x0079C5A0)
     Cell unknown_50;                  // +0x50
-    int unknown_54;                         // +0x54
-    int unknown_58;                         // +0x58
-    int unknown_5c;                         // +0x5C
-    int unknown_60;                         // +0x60
-    int unknown_64;                         // +0x64
-    int unknown_68;                         // +0x68
-    int unknown_6c;                         // +0x6C
-    int unknown_70;                         // +0x70
+    // Two zeroed 16-byte members (layout hypothesis: their inline constructors
+    // are what keeps the list constructors out of line in 0x0042BF70/0x0042CA50).
+    Rect unknown_54;                        // +0x54
+    Rect unknown_64;                        // +0x64
     HouseClass *House;                      // +0x74 (set by HouseClass::Read_INI)
 };
 
