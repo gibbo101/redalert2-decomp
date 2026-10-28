@@ -39,8 +39,7 @@ public:
     CDTimerClass<FrameTimerClass> unknown_34;   // +0x34
     int unknown_40;                             // +0x40 (state)
     int unknown_44;                             // +0x44
-    int unknown_48;                             // +0x48
-    int unknown_4c;                             // +0x4C
+    double unknown_48;                          // +0x48
     float unknown_50;                           // +0x50 (the pitch; Draw_Matrix tilts by it)
     int unknown_54;                             // +0x54
 };

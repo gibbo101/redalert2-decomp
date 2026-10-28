@@ -72,6 +72,7 @@ public:
     void Set_Slope(int ramp);                                                   // 0x0049FBF0 (a new ramp: the old one kept, a 3-frame change)
     bool Stop_Driver();                                                         // 0x004A0E90 (clears the head-to coordinate; never called out of line)
     bool Start_Driver(CoordStruct const &headto);                               // 0x004A0EE0 (heads for a coordinate whose cell can be entered, marking the track; never called out of line)
+    int Is_Level();                                                             // 0x0049FFC0 (slope settled and the hull within 0.005 of level)
     void unknown_4a0bc0(CoordStruct const &coord, int mark);                    // 0x004A0BC0 (marks the track cells)
     Point2D Smooth_Turn(Point2D const &offset, int &facing);                    // 0x004A4740 (a track point and facing mirrored by the track's flags, from the head-to coordinate)
 

@@ -64,8 +64,7 @@ public:
     bool unknown_34;                    // +0x34
     int unknown_38;                     // +0x38
     int unknown_3c;                     // +0x3C
-    int unknown_40;                     // +0x40
-    int unknown_44;                     // +0x44
+    double unknown_40;                  // +0x40
     double unknown_48;                  // +0x48
     bool unknown_50;                    // +0x50
     bool unknown_51;                    // +0x51

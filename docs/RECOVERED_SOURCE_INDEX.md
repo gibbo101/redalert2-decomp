@@ -62,6 +62,7 @@
 | [classes/XSurface](../src/recovered/classes/XSurface/) | 31 | 3,802 | 31 | 0x004112E0–0x007758F0 |
 | [classes/SmudgeTypeClass](../src/recovered/classes/SmudgeTypeClass/) | 24 | 3,798 | 24 | 0x004D3B10–0x00688C20 |
 | [classes/ParticleTypeClass](../src/recovered/classes/ParticleTypeClass/) | 20 | 3,655 | 20 | 0x004D4010–0x00621E80 |
+| [classes/TunnelLocomotionClass](../src/recovered/classes/TunnelLocomotionClass/) | 25 | 3,629 | 25 | 0x006EFBE0–0x006F13B0 |
 | [classes/TerrainClass](../src/recovered/classes/TerrainClass/) | 23 | 3,628 | 23 | 0x004D3310–0x006E4B50 |
 | [classes/ListClass](../src/recovered/classes/ListClass/) | 29 | 3,612 | 28 | 0x00539BF0–0x0053AA20 |
 | [classes/VoxelAnimTypeClass](../src/recovered/classes/VoxelAnimTypeClass/) | 18 | 3,560 | 18 | 0x004D3F10–0x0070EF40 |
@@ -74,16 +75,15 @@
 | [classes/PKey](../src/recovered/classes/PKey/) | 18 | 3,281 | 18 | 0x0060ED40–0x0060FA20 |
 | [classes/Matrix3D](../src/recovered/classes/Matrix3D/) | 34 | 3,254 | 34 | 0x0058FDE0–0x00591420 |
 | [classes/OverlayClass](../src/recovered/classes/OverlayClass/) | 17 | 3,207 | 16 | 0x004D3190–0x005DC300 |
+| [classes/DriveLocomotionClass](../src/recovered/classes/DriveLocomotionClass/) | 45 | 3,195 | 45 | 0x0049F6E0–0x004A4D90 |
+| [classes/ShipLocomotionClass](../src/recovered/classes/ShipLocomotionClass/) | 45 | 3,195 | 45 | 0x006756A0–0x0067AC30 |
 | [classes/MapSeedClass](../src/recovered/classes/MapSeedClass/) | 16 | 3,136 | 10 | 0x00576F50–0x0058DA50 |
 | [classes/OverlayTypeClass](../src/recovered/classes/OverlayTypeClass/) | 24 | 3,063 | 24 | 0x004D3A90–0x005DD290 |
 | [classes/WinsockInterfaceClass](../src/recovered/classes/WinsockInterfaceClass/) | 30 | 3,024 | 30 | 0x0076AA00–0x0076BA40 |
 | [classes/BufferIOFileClass](../src/recovered/classes/BufferIOFileClass/) | 17 | 3,023 | 17 | 0x0042F200–0x0042FDF0 |
 | [classes/SavegameInformation](../src/recovered/classes/SavegameInformation/) | 31 | 2,972 | 31 | 0x00659240–0x0065ABF0 |
-| [classes/DriveLocomotionClass](../src/recovered/classes/DriveLocomotionClass/) | 43 | 2,875 | 43 | 0x0049F6E0–0x004A4D90 |
-| [classes/TunnelLocomotionClass](../src/recovered/classes/TunnelLocomotionClass/) | 24 | 2,849 | 24 | 0x006EFBE0–0x006F13B0 |
 | [classes/PowerClass](../src/recovered/classes/PowerClass/) | 16 | 2,801 | 16 | 0x0061C450–0x0061D220 |
 | [classes/MapSelect](../src/recovered/classes/MapSelect/) | 10 | 2,781 | 10 | 0x005AFEF0–0x005B0980 |
-| [classes/ShipLocomotionClass](../src/recovered/classes/ShipLocomotionClass/) | 42 | 2,675 | 42 | 0x006756A0–0x0067AC30 |
 | [classes/WarheadTypeClass](../src/recovered/classes/WarheadTypeClass/) | 16 | 2,535 | 16 | 0x0040F270–0x00721090 |
 | [classes/PlayerProfile](../src/recovered/classes/PlayerProfile/) | 7 | 2,512 | 6 | 0x00738670–0x007395B0 |
 | [classes/CommBufferClass](../src/recovered/classes/CommBufferClass/) | 16 | 2,488 | 16 | 0x004800C0–0x00480AE0 |
@@ -114,6 +114,7 @@
 | [classes/DropListClass](../src/recovered/classes/DropListClass/) | 21 | 1,919 | 21 | 0x004A4DC0–0x004A55A0 |
 | [classes/TriggerClass](../src/recovered/classes/TriggerClass/) | 26 | 1,816 | 26 | 0x004D2E90–0x006EDBA0 |
 | [library/LZO](../src/recovered/library/LZO/) | 3 | 1,797 | 3 | 0x0053E420–0x0053E970 |
+| [classes/FlyLocomotionClass](../src/recovered/classes/FlyLocomotionClass/) | 22 | 1,751 | 22 | 0x004BC110–0x004BFB00 |
 | [classes/AircraftTypeClass](../src/recovered/classes/AircraftTypeClass/) | 24 | 1,745 | 24 | 0x0041BC90–0x004D3CD0 |
 | [word_storage](../src/recovered/word_storage/) | 15 | 1,739 | 15 | 0x0046CE20–0x006C03E0 |
 | [classes/RadioClass](../src/recovered/classes/RadioClass/) | 19 | 1,737 | 19 | 0x006368C0–0x00636F90 |
@@ -122,7 +123,6 @@
 | [classes/CD](../src/recovered/classes/CD/) | 7 | 1,646 | 7 | 0x0046E4A0–0x004985C0 |
 | [classes/CNetUtilEventSink](../src/recovered/classes/CNetUtilEventSink/) | 8 | 1,645 | 7 | 0x0075D1F0–0x00765D00 |
 | [classes/AnimFile](../src/recovered/classes/AnimFile/) | 16 | 1,636 | 16 | 0x00423F90–0x00424BC0 |
-| [classes/FlyLocomotionClass](../src/recovered/classes/FlyLocomotionClass/) | 21 | 1,623 | 21 | 0x004BC190–0x004BFB00 |
 | [classes/TEventClass](../src/recovered/classes/TEventClass/) | 16 | 1,615 | 16 | 0x006E5D60–0x006E6D90 |
 | [classes/MonoClass](../src/recovered/classes/MonoClass/) | 10 | 1,605 | 10 | 0x0059E160–0x0059EA90 |
 | [classes/MultiplayerGameMode](../src/recovered/classes/MultiplayerGameMode/) | 45 | 1,604 | 34 | 0x005A2380–0x005B8D40 |
@@ -219,7 +219,9 @@
 | [classes/VQMovieHandle](../src/recovered/classes/VQMovieHandle/) | 13 | 725 | 13 | 0x005A17B0–0x005A1F00 |
 | [classes/CRCEngine](../src/recovered/classes/CRCEngine/) | 3 | 720 | 3 | 0x00493DF0–0x00493FC0 |
 | [classes/PlanningTokenClass](../src/recovered/classes/PlanningTokenClass/) | 13 | 715 | 13 | 0x006106C0–0x006144F0 |
+| [classes/RocketLocomotionClass](../src/recovered/classes/RocketLocomotionClass/) | 12 | 711 | 12 | 0x0063DAC0–0x0063ED40 |
 | [classes/MSBinkAnim](../src/recovered/classes/MSBinkAnim/) | 8 | 705 | 8 | 0x005AD8E0–0x005AFDB0 |
+| [classes/JumpjetLocomotionClass](../src/recovered/classes/JumpjetLocomotionClass/) | 9 | 704 | 9 | 0x0052F160–0x00531330 |
 | [classes/VectorClass_DirtyAreaStruct](../src/recovered/classes/VectorClass_DirtyAreaStruct/) | 7 | 703 | 5 | 0x006AC8D0–0x006ACFC0 |
 | [classes/MultiplayerSiege](../src/recovered/classes/MultiplayerSiege/) | 9 | 702 | 5 | 0x005AB5A0–0x005ABBA0 |
 | [classes/CounterClass](../src/recovered/classes/CounterClass/) | 9 | 696 | 8 | 0x00491C00–0x00491F00 |
@@ -237,7 +239,6 @@
 | [classes/Blit](../src/recovered/classes/Blit/) | 7 | 612 | 7 | 0x00434940–0x00435560 |
 | [classes/DynamicVectorClass_TechnoTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TechnoTypeClass_ptr/) | 8 | 612 | 6 | 0x0046CCE0–0x004BA370 |
 | [classes/DynamicVectorClass_unsigned_short_ptr](../src/recovered/classes/DynamicVectorClass_unsigned_short_ptr/) | 8 | 612 | 7 | 0x0052E6D0–0x0053AE30 |
-| [classes/RocketLocomotionClass](../src/recovered/classes/RocketLocomotionClass/) | 11 | 612 | 11 | 0x0063DB30–0x0063ED40 |
 | [classes/RadarEventClass](../src/recovered/classes/RadarEventClass/) | 11 | 609 | 11 | 0x0063B4F0–0x0063C6C0 |
 | [classes/VectorClass_WorldDominationTour__Centroid](../src/recovered/classes/VectorClass_WorldDominationTour__Centroid/) | 7 | 609 | 5 | 0x0072B060–0x0072BAA0 |
 | [classes/VectorClass_double](../src/recovered/classes/VectorClass_double/) | 9 | 609 | 6 | 0x0058DEB0–0x0058F2D0 |
@@ -272,7 +273,6 @@
 | [classes/WorldDominationTour__FlagGameOption](../src/recovered/classes/WorldDominationTour__FlagGameOption/) | 5 | 550 | 5 | 0x007287D0–0x00728BF0 |
 | [classes/VectorClass_OwnerTalkClass__ConnectionListStruct_ptr](../src/recovered/classes/VectorClass_OwnerTalkClass__ConnectionListStruct_ptr/) | 8 | 545 | 6 | 0x0063F0C0–0x006401D0 |
 | [classes/RLEBlitTransLucent50AlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransLucent50AlphaZReadWrite_unsigned_short/) | 2 | 544 | 1 | 0x0048C3D0–0x0048D8F0 |
-| [classes/JumpjetLocomotionClass](../src/recovered/classes/JumpjetLocomotionClass/) | 8 | 541 | 8 | 0x0052F210–0x00531330 |
 | [classes/GdiBitmapSurface_004981C0](../src/recovered/classes/GdiBitmapSurface_004981C0/) | 3 | 536 | 3 | 0x004981C0–0x004983A0 |
 | [classes/BlitTranslucentWriteAlpha_unsigned_short](../src/recovered/classes/BlitTranslucentWriteAlpha_unsigned_short/) | 2 | 533 | 2 | 0x004884C0–0x0048CEB0 |
 | [classes/RLEBlitTransZRemapXlatAlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransZRemapXlatAlphaZReadWrite_unsigned_short/) | 2 | 527 | 1 | 0x0048C020–0x0048D870 |
@@ -1200,7 +1200,7 @@
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 
-1193 directories, 13939 regions. Generated by `tools/original_target/source_index.py`.
+1193 directories, 13948 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

@@ -51,14 +51,11 @@ public:
     bool unknown_48;                    // +0x48
     int unknown_4c;                     // +0x4C
     FacingClass unknown_50;             // +0x50
-    int unknown_68;                     // +0x68
-    int unknown_6c;                     // +0x6C
-    int unknown_70;                     // +0x70
-    int unknown_74;                     // +0x74
+    double unknown_68;                  // +0x68
+    double unknown_70;                  // +0x70
     int unknown_78;                     // +0x78
     int unknown_7c;                     // +0x7C
-    int unknown_80;                     // +0x80
-    int unknown_84;                     // +0x84
+    double unknown_80;                  // +0x80
     bool unknown_88;                    // +0x88
     int unknown_8c;                     // +0x8C
 };
