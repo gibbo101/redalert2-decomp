@@ -42,7 +42,8 @@ public:
     bool unknown_134a;                  // +0x134A (UnitReload; AircraftClass slot 129)
     char unknown_134b[0x1357 - 0x134B];
     bool unknown_1357;                  // +0x1357 (WeaponsFactory; AircraftClass slot 28)
-    char unknown_1358[0x1365 - 0x1358];
+    char unknown_1358[0x1364 - 0x1358];
+    bool Artillary;                     // +0x1364 (TechnoClass 0x006D3B60)
     bool unknown_1365;                  // +0x1365 (Helipad)
 };
 #endif

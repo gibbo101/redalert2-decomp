@@ -21,6 +21,7 @@ extern int unknown_int_839634;
 extern int unknown_int_839638;  // 0x00839638 sidebar x offset
 extern int unknown_int_839648;  // 0x00839648 screen width
 extern int unknown_int_83964c;  // 0x0083964C screen height
+extern Surface *unknown_radar_surface_8336f8;  // 0x008336F8 (the radar view: TechnoClass slot 267 tests its Get_Rect)
 extern Surface *unknown_surface_839948;  // 0x00839948 (sidebar surface)
 extern Surface *unknown_surface_839950;  // 0x00839950 screen
 class DSurface;
