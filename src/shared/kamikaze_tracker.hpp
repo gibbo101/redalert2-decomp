@@ -28,7 +28,7 @@ public:
     ~KamikazeTrackerClass();                                    // 0x00531980
     void Add(AircraftClass *missile, AbstractClass *target);   // 0x005316A0
     void AI();                                                  // 0x005317C0
-    void Detach(AircraftClass *missile);                       // 0x00531880
+    void Detach(AbstractClass *target);                         // 0x00531880
     // Deletes every record and restarts the timer at 1.
     void Clear();                                               // 0x005319E0
     // The record count, then each record's eight bytes.

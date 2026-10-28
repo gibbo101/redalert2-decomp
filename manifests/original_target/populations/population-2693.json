@@ -4,8 +4,8 @@
     "id": "population-2693",
     "inventory_sha256": "d5d5d2ed8796fa9de511ee9eb099d38e579d9d7e284707e18a74c8181359f6ab",
     "gaps_sha256": "cc1e2fa2e42a3268e92ef551cf99e2a3ad25ccafe26d7d4555d3ac9e422f43b0",
-    "historical_population_sha256": "90a3130ea317087b1a0068d83b700f3b05c0c1f09d4dae4b83e398927795b623",
-    "historical_acceptance_sha256": "28abf971d8b434119f840333875579ad7348c6482fd96edcee776c42d3cf6959"
+    "historical_population_sha256": "957058e206775ee3011ef7a8b8541e4727a133f1e92577dcb421a9eafce9c2b1",
+    "historical_acceptance_sha256": "68a10b1f61bc2117172a29d143e9d2a1804cb70b63d82b619022cfe57d712755"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4868,7 +4868,7 @@
     "??4?$DynamicVectorClass@USubzoneConnectionStruct@@@@QAEAAV0@ABV0@@Z": 5687728,
     "??_G?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5686160,
     "??_7?$DynamicVectorClass@PAUSpawnControl@@@@6B@": 8042796,
-    "?Detach@KamikazeTrackerClass@@QAEXPAVAircraftClass@@@Z": 5445760,
+    "?Detach@KamikazeTrackerClass@@QAEXPAVAbstractClass@@@Z": 5445760,
     "?Add@KamikazeTrackerClass@@QAEXPAVAircraftClass@@PAVAbstractClass@@@Z": 5445280,
     "?Load@SpawnManagerClass@@UAGJPAUIStream@@@Z": 6858704,
     "?Save@SpawnManagerClass@@UAGJPAUIStream@@H@Z": 6859120,

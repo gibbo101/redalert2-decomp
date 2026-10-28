@@ -4,8 +4,8 @@
     "id": "population-2731",
     "inventory_sha256": "0353acb7dc0f9805039b6a7db60fd44a7538a149404b1e25c49cf37590680cb0",
     "gaps_sha256": "12f2c02ea775eecfe7bf3597ff79796cd5098a4439a2ccae9a392b0a257e175c",
-    "historical_population_sha256": "ebfc8f1da1e929f86f087b2c44f2f27dccc2949739757e23dabf20a715e28d5b",
-    "historical_acceptance_sha256": "c94b3b123c6eae251e27b33b33c8466186e835f2d543136ffab2302642544d84"
+    "historical_population_sha256": "ee0c9eea4a2511805fc7b368779f6ace1f5550b44a2ed619493b6936a2c7652b",
+    "historical_acceptance_sha256": "bb1b873a489534f280bd523a45814a7b302b659a3b8f338b249b7684142ef381"
   },
   "references": {
     "_unknown_empty_rect": 10950728,
@@ -1946,7 +1946,7 @@
     "?ID@?$DynamicVectorClass@N@@UAEHABN@Z": 5827520,
     "?Load@NeuronClass@@UAGJPAUIStream@@@Z": 4422400,
     "?Load@BrainClass@@QAEJPAUIStream@@@Z": 4423072,
-    "?Detach@KamikazeTrackerClass@@QAEXPAVAircraftClass@@@Z": 5445760,
+    "?Detach@KamikazeTrackerClass@@QAEXPAVAbstractClass@@@Z": 5445760,
     "?Load@SpawnManagerClass@@UAGJPAUIStream@@@Z": 6858704,
     "?unknown_slot13@MultiplayerGameMode@@UAEHXZ": 5993472,
     "?unknown_slot23@MultiplayerGameMode@@UAEXXZ": 5993664,

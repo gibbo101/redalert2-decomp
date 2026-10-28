@@ -8,7 +8,7 @@
 // @ref ?Frame@@3HA=00a40d2c
 // @ref ?KamikazeTracker@@3VKamikazeTrackerClass@@A=00a6e428
 // @ref ?Add@KamikazeTrackerClass@@QAEXPAVAircraftClass@@PAVAbstractClass@@@Z=005316a0
-// @ref ?Detach@KamikazeTrackerClass@@QAEXPAVAircraftClass@@@Z=00531880
+// @ref ?Detach@KamikazeTrackerClass@@QAEXPAVAbstractClass@@@Z=00531880
 
 void SpawnManagerClass::Kill_Nodes()
 {
