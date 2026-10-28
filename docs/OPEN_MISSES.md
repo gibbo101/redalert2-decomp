@@ -83,3 +83,14 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x5B4DA0 98.18, Input 0x5B56F0 81.55 (needs an inline Restack_Messages), INI getter 0x5B7840 43, fill
   combo 0x5B70B0/0x5B71E0 58.89 and register 0x5B8490 (inline budget keeps VectorClass ctor 0x5B98E0
   out of line in the original); 0x5B7CE0 blocked on CounterClass.
+- Tactical projection family parked (Seed113, Seed114, Seed123 NOTES): 0x6A2870 82.14 and 0x6A27A0 73.24
+  hinge on a dead store of the projected X at the lowest frame slot that no `int[2]`/struct layout reproduces
+  (VC6 keeps only the highest element's store). The same shape blocks 0x6A29D0, 0x6A66B0, 0x6AA180, 0x6AA300,
+  0x6AADD0, 0x6A92A0. Untried: a references signature for 0x6A6800, an in-place TacticalProjection/Point2D member.
+- Voc_Static_Save 0x714A90 74.12 (Seed118 w/voc2/save.cpp): register allocation only (-1 index in esi, node
+  and result registers swapped); the callee-pops `lea` rule that fixed the loads does not apply.
+- CD unit (Cd121): Find_Disk_Drive 0x715090 85.61 (dr/w_0_1.cpp; ebx/ebp hold the GetDriveTypeA and
+  GetDiskFreeSpaceA pointers, `test al,al; setne al` tail, failure paths cross-jumped to one print tail);
+  0x715300 recursive directory walk seeded only. 0x715463 is padding, not a function. Inventory debt: the
+  function list splits 0x715230 at the internal branch target 0x715244 (accepted with body_bytes=201); the
+  sweep/seed lists should drop 0x715244.
