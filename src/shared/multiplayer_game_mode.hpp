@@ -282,6 +282,7 @@ public:
     virtual bool unknown_slot40();                                 // 40 0x005A62A0
     virtual Cell unknown_slot42(int house, DynamicVectorClass<Cell> &cells, bool *taken); // 42 0x005A3F90
 
+    int Unknown_005A2E50();                                       // 0x005A2E50
     void Unknown_005A3650(HWND dialog, int id);                   // 0x005A3650
     void Unknown_005A3760(HWND dialog);                           // 0x005A3760
     bool Unknown_005A4F20();                                       // 0x005A4F20 (replaces the campaign with a fresh one, named after two players)
@@ -292,7 +293,10 @@ public:
     bool unknown_4c;                                               // +0x4C (set when the saved campaign is chosen)
     int unknown_50;                                                // +0x50 the campaign list row last loaded
     CampaignScoreClass *unknown_score_54;                          // +0x54 the score screen (made by slot 36)
-    char unknown_58[0x1A8 - 0x58];
+    int unknown_58;                                                // +0x58 (slot 34: the session row whose address is the local one)
+    DynamicVectorClass<UnknownPlayerEntry *> unknown_players_5c;   // +0x5C the players saved by slot 34 (copied back by slot 38); the destructor 0x5A2B50
+                                                                   // stores the VectorClass<NodeNameType *> vptr: UnknownPlayerEntry is probably NodeNameType
+    char unknown_74[0x1A8 - 0x74];
     DynamicVectorClass<int> unknown_1a8[8];                        // +0x1A8 (slot 25: one list per player, read from the campaign AI settings)
     DynamicVectorClass<int> unknown_268[8];                        // +0x268 (slot 25: a second list per player)
     DynamicVectorClass<CoopCampaignClass *> unknown_campaigns_328; // +0x328 one CoopCampaignClass per campaign record

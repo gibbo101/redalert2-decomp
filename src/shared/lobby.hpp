@@ -47,6 +47,10 @@ int Selected_Campaign_005c67a0();
 HWND __fastcall Find_Dialog_00735940(int id);
 // 0 until the lobby is set up (0x007E6D90, initialised -1; hypothesis).
 extern int unknown_lobby_flag_7e6d90;
+// Sends a game options text to the other players (0x005C3C60).
+void __fastcall Send_Game_Options_005c3c60(char const *text);
+// Selects the multiplayer map with this unknown_multi_missions_a3d8d8 index (-1: none) (0x005C7C30).
+void __fastcall Select_Scenario_005c7c30(int index);
 
 // Wide-string comparison, 0 when equal (0x007837D3; the CRT's _wcsicmp).
 int Compare_Wide_007837d3(wchar_t const *first, wchar_t const *second);
