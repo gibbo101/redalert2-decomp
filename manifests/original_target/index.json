@@ -840,7 +840,7 @@
       },
       {
         "path": "src/shared/world_domination_tour.hpp",
-        "sha256": "f71cff8735b6c416aaf23a2924d9f23c638d14336a9eccb7ffd80773f179e31b"
+        "sha256": "005933f30c78f26cea43d128b585b013164ec72123cfc13d0fa72a21404cf7e6"
       },
       {
         "path": "src/shared/application.hpp",
@@ -1677,6 +1677,14 @@
       {
         "path": "src/shared/tube_data.hpp",
         "sha256": "03f0456efe632f8b459065a53296b1f7444e1754cd1fb390747b19bfb69dff5b"
+      },
+      {
+        "path": "src/shared/options_dialog.hpp",
+        "sha256": "0d10609c0ccc96ff123783c1b5bca602d92d07e7025c1d00616c9706fe94c954"
+      },
+      {
+        "path": "src/shared/wdt_territory.hpp",
+        "sha256": "7ae007c152f95084a36a7e53de7e677560512ef2089a5ba1427e15a35b6bbd83"
       }
     ],
     "source_quality_checkpoint": {
@@ -4468,7 +4476,8 @@
     "population-2778",
     "population-2779",
     "population-2780",
-    "population-2781"
+    "population-2781",
+    "population-2782"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -7484,7 +7493,8 @@
     ["population-2777", 1],
     ["population-2779", 1],
     ["population-2780", 1],
-    ["population-2781", 8]
+    ["population-2781", 8],
+    ["population-2782", 2]
   ],
   "shards": {
     "population-01": "0142c66dfa137e5010b46c1457127cb5277c4095ef75a6def3f382d923335dfa",
@@ -9475,6 +9485,7 @@
     "population-278": "e9f0dd226fc82bfb6ac3f7fdbbbacad3f08d2249bf96e7f5c8e42dacce71041a",
     "population-2780": "bf41d7645fa6dd790d115962134087611a155fb940ade5f254529e84541e20ec",
     "population-2781": "73bb172bf59b2a613925b14ff7ea8dfaa7730e58024a6b06855a38895e61267c",
+    "population-2782": "ea3148c547efac033302d01dc339c4038f4ea7d0ee9f4cb2befec2099bac6bc4",
     "population-279": "bab3475455498d497f5429a3b9cdcdb601467847db944d856af8c45f5d41b3c4",
     "population-28": "7959b510196b47fbd2a8664095e6a7d55c0cb242f8fd24177ec52fc2b11b6998",
     "population-280": "137e8f9da2e56ae16c03434fb88bace5258c0ae4bf020dc45d9b98aaed463efc",
