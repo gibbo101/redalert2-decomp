@@ -243,6 +243,8 @@ public:
     Cell Unknown_00632AA0(Point2D const &pixel, TechnoClass **found);
     void Unknown_00631C80();
     bool Unknown_006331A0();                            // 0x006331A0 (TechnoClass slot 55: the radar is up)
+    bool Unknown_00633130();                            // 0x00633130 returns +0x14D4 (the radar is on)
+    void Unknown_00633140(bool on);                     // 0x00633140 turns the radar on or off (+0x14D4; HouseClass 0x004F2E50)
     void Unknown_006331E0(bool flag);                   // 0x006331E0 asks for a radar redraw (+0x14D6 complete)
     void Unknown_00632F30(bool on, bool sound);         // 0x00632F30 activates (3) or deactivates (2) the radar
     void Unknown_00634670(int arg1, int index, HouseClass *house);  // 0x00634670

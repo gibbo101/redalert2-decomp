@@ -560,6 +560,7 @@ public:
     void unknown_6d9670(long delay);                            // 0x006D9670 (restarts the +0x148 timer)
     UnknownTechno408 *unknown_6d1430() const;                   // 0x006D1430
     void unknown_6d6e50(AbstractClass *value);                  // 0x006D6E50
+    void unknown_6d0990(CoordStruct from, CoordStruct to, RGBClass color);   // 0x006D0990 (draws a line; CaptureManagerClass 0x00468150)
     void Unknown_006D9610(AbstractClass *cell);                 // 0x006D9610 (InfantryClass slot 93: an occupied building, its cell)
     bool unknown_6d7f70();                                      // 0x006D7F70 (FootClass::AI, after the movement; the result is unused there)
     int unknown_6d7e20(int extra);                              // 0x006D7E20 (fires the death weapon at itself; returns the damage)
@@ -781,7 +782,8 @@ public:
     int unknown_434;                    // +0x434 (TechnoClass slot 55; the full class names it in shared/building.hpp)
     char unknown_438[0x4EC - 0x438];
     int unknown_4ec;                    // +0x4EC (a laser fence's state; FootClass slot 93: below 8 it hurts)
-    char unknown_4f0[0x531 - 0x4F0];
+    char unknown_4f0[0x530 - 0x4F0];
+    bool unknown_530;                   // +0x530 (HouseClass 0x004F2E50: a radar building counts only with it)
     bool unknown_531;                   // +0x531 (TechnoClass slot 174: always the secondary weapon)
     char unknown_532[0x554 - 0x532];
     DynamicVectorClass<InfantryClass *> unknown_554;    // +0x554 (the occupants; InfantryClass 0x005094B0)

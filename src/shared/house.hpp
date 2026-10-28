@@ -297,6 +297,8 @@ public:
         }
         return this == unknown_player_a35db4;
     }
+    void unknown_func_4f2fc0();                            // 0x004F2FC0 (HouseClass::AI: the player's spy satellite view)
+    void unknown_func_4f2e50();                            // 0x004F2E50 (HouseClass::AI: the player's radar)
     bool unknown_func_4ed140(Cell const &cell);      // 0x004ED140 (no other path has a waypoint there)
     WaypointClass *unknown_func_4ed200(Cell const &cell);   // 0x004ED200 (a waypoint in the cell, else 0)
     void unknown_func_4eaba0(TechnoClass *techno);         // 0x004EABA0

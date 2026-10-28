@@ -73,6 +73,7 @@ public:
     void Sight_From(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, int arg6, bool arg7, int arg8);   // 0x0054A110
     void Unknown_00549C50(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, bool arg6, bool arg7, bool arg8);   // 0x00549C50 (reveals around coord; TechnoClass slot 70)
     void Unknown_00559F10();                                              // 0x00559F10
+    void Unknown_0055A120();                                              // 0x0055A120 (shared/map.hpp)
     void Unknown_0055A1F0();                                              // 0x0055A1F0 (shared/map.hpp)
     int Unknown_0056A8A0();                                               // 0x0056A8A0 (the lowest cell level, +0x144; TechnoClass 0x006CD6F0)
     bool Unknown_0054AAB0(Cell const &cell);                              // 0x0054AAB0
@@ -157,6 +158,8 @@ public:
     void Unknown_00632620(Point2D const &point);                                // 0x00632620
     DynamicVectorClass<Point2D> *Unknown_006328D0(BuildingTypeClass *type);     // 0x006328D0
     bool Unknown_006331A0();                                                    // 0x006331A0
+    bool Unknown_00633130();                                                    // 0x00633130 (+0x14D4: the radar is on; as shared/radar.hpp)
+    void Unknown_00633140(bool on);                                             // 0x00633140 (turns the radar on or off; as shared/radar.hpp)
     void Unknown_006331E0(bool flag);                                           // 0x006331E0
     void Unknown_00634030();                                                    // 0x00634030
     void Unknown_00630A00();                                                    // 0x00630A00
