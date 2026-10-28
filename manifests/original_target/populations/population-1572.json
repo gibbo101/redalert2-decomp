@@ -4,8 +4,8 @@
     "id": "population-1572",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "09de521e0a0c7a90e8f053b1768a62da5f7c35531c32bfe6cae33bc6f0fde185",
-    "historical_acceptance_sha256": "1482df1cc816ff17cbb47116604b0b3535181e25d28964101a97388d4c51aef6"
+    "historical_population_sha256": "1675f3b0691ca0023f76fbdfe2e35a12c702e70f68ea6f0c58494aeaae4b4e82",
+    "historical_acceptance_sha256": "0ef3c0cf69d418bb866ee29a4cf46ee1e56d9fdd2f01d3b9fa55c889d76bf2cb"
   },
   "references": {
     "?ZBufferPtr@@3PAVZBuffer@@A": 8590772,
@@ -258,7 +258,7 @@
     "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z": 7814864,
     "?Unknown_Slot15@XSurface@@UAE_NHHHHHHHHHHH@Z": 7814880,
     "?Unknown_Slot16@XSurface@@UAE_NHHHHHHH@Z": 7814896,
-    "?Unknown_Slot7@XSurface@@UAE_NHHH@Z": 7816880,
+    "?Fill_Rect_Trans@XSurface@@UAE_NABVRect@@ABVRGBClass@@I@Z": 7816880,
     "??1MSShapeAnim@@UAE@XZ": 5949216,
     "?Reset@RandomStraw@@QAEXXZ": 6542160,
     "?Get_Rect@Surface@@UAE?AVRect@@XZ": 4264592,

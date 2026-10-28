@@ -4,8 +4,8 @@
     "id": "population-1633",
     "inventory_sha256": "ee077244015032f4db1be15cc9b613dcd8480d5ed6bd4b1abd52eea7dac66d3c",
     "gaps_sha256": "746d460e6aed79fd6e2150d0f6750dff50844295b328a8be79fdc0f34da5f584",
-    "historical_population_sha256": "91f315915d914f9fa5069b10dff2e51f5dd645a1a9e99066f3c8fa5fc4990842",
-    "historical_acceptance_sha256": "9869c3ff263adf5a7fc306d159a990354abbaf7bed893add65737f978b59e046"
+    "historical_population_sha256": "0e6dd80c7042d2d8f97a43ac9ec09387b15b49eba987b9d1614f10eb339b780f",
+    "historical_acceptance_sha256": "8f9f10aa422bb7de1bf70b49e7a1ccac5eb2c304ed612b436a0fafd28bcc6807"
   },
   "references": {
     "_unknown_empty_rect": 8806520,
@@ -1631,7 +1631,7 @@
     "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z": 7814864,
     "?Unknown_Slot15@XSurface@@UAE_NHHHHHHHHHHH@Z": 7814880,
     "?Unknown_Slot16@XSurface@@UAE_NHHHHHHH@Z": 7814896,
-    "?Unknown_Slot7@XSurface@@UAE_NHHH@Z": 7816880,
+    "?Fill_Rect_Trans@XSurface@@UAE_NABVRect@@ABVRGBClass@@I@Z": 7816880,
     "?Key@BlowPipe@@QAEXPBXH@Z": 4413440,
     "?Key@BlowStraw@@QAEXPBXH@Z": 4413744,
     "?Key@PKPipe@@QAEXPBVPKey@@@Z": 6355776,

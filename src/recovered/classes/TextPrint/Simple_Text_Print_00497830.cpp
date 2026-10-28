@@ -36,7 +36,7 @@ Point2D __fastcall Simple_Text_Print(wchar_t const *text, Surface *surface, Rect
     if (flags & 0x8000) {
         RGBClass shadow(0, 0, 0);
         Rect box(x - 1, y - 1, width + 2, height + 2);
-        surface->Unknown_Slot7((int)&box, (int)&shadow, 0x3C);
+        surface->Fill_Rect_Trans(box, shadow, 60);
     } else if (flags & 0x400) {
         surface->Fill_Rect(Rect(x - 1, y - 1, width + 2, height + 2), 0);
     }

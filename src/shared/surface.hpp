@@ -20,6 +20,8 @@
 #include "shared/buffer.hpp"
 #include "shared/rect.hpp"
 
+class RGBClass;
+
 class Surface {
 public:
     Surface(int width = 0, int height = 0) : Width(width), Height(height) {}
@@ -38,7 +40,9 @@ public:
     virtual bool Fill_Rect(Rect const &fillrect, int color) = 0;               // slot 5  (+0x14)
     virtual bool Fill_Rect(Rect const &cliprect, Rect const &fillrect, int color) = 0;   // slot 4 (+0x10)
     virtual bool Fill(int color) = 0;                                          // slot 6  (+0x18)
-    virtual bool Unknown_Slot7(int unknown1, int unknown2, int unknown3) = 0;  // slot 7  (+0x1C)
+    // Blends color over rect, percent (0-100) of the way (16-bit surfaces;
+    // Simple_Text_Print's shadow box passes black at 60).
+    virtual bool Fill_Rect_Trans(Rect const &rect, RGBClass const &color, unsigned int percent) = 0;  // slot 7 (+0x1C)
     virtual bool Draw_Ellipse(Point2D center, int radiusx, int radiusy, Rect cliprect, int color) = 0;  // slot 8 (+0x20)
     virtual bool Put_Pixel(Point2D const &point, int color) = 0;               // slot 9  (+0x24)
     virtual int Get_Pixel(Point2D const &point) = 0;                           // slot 10 (+0x28)
@@ -96,7 +100,7 @@ public:
     virtual bool Fill_Rect(Rect const &cliprect, Rect const &fillrect, int color);
     virtual bool Fill_Rect(Rect const &fillrect, int color);
     virtual bool Fill(int color);
-    virtual bool Unknown_Slot7(int unknown1, int unknown2, int unknown3);
+    virtual bool Fill_Rect_Trans(Rect const &rect, RGBClass const &color, unsigned int percent);
     virtual bool Draw_Ellipse(Point2D center, int radiusx, int radiusy, Rect cliprect, int color);
     virtual bool Put_Pixel(Point2D const &point, int color);
     virtual int Get_Pixel(Point2D const &point);

@@ -44,7 +44,7 @@ public:
     }
     virtual bool Fill_Rect(Rect const &fillrect, int color);               // slot 5, 0x004AB4F0
     virtual bool Fill_Rect(Rect const &cliprect, Rect const &fillrect, int color);   // slot 4, 0x004AB520
-    virtual bool Unknown_Slot7(int unknown1, int unknown2, int unknown3);  // slot 7, 0x004AB730
+    virtual bool Fill_Rect_Trans(Rect const &rect, RGBClass const &color, unsigned int percent);  // slot 7, 0x004AB730
     virtual bool Unknown_Slot13(int, int, int, int, int, int, int);        // slot 13, 0x004AFC30
     virtual bool Unknown_Slot14(int, int, int, int, int, int, int);        // slot 14, 0x004ABBA0
     virtual bool Unknown_Slot15(int, int, int, int, int, int, int, int, int, int, int);  // slot 15, 0x004AC650
