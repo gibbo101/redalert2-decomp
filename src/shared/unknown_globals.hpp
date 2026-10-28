@@ -28,6 +28,27 @@ extern int unknown_8523e4;  // 0x008523E4 VQA frame height (hypothesis)
 extern bool unknown_flag_852fd7;  // 0x00852FD7
 extern HouseClass *unknown_player_a35db4;  // 0x00A35DB4 the player's house
 extern int unknown_game_mode_a3d298;  // 0x00A3D298
+// The session object at 0x00A3D298 (its first word is unknown_game_mode_a3d298;
+// SessionClass in TS, hypothesis).
+struct UnknownSessionState {
+    int Value_0124_006729f0();
+    int Value_011c_00672a10();
+    void Set_Value_00672a30(int value, bool update);
+    void Set_Value_00672ae0(int value, bool update);
+    // Reports scenario-loading progress in percent (redraws the loading
+    // screen and sends it to the other players; 0x00672160, name hypothesis).
+    void Loading_Progress_00672160(int percent);
+};
+extern UnknownSessionState unknown_session_a3d298;
+// Services audio, queued movies and the network while a long operation runs
+// (0x00481FB0).
+void __cdecl Service_Game_IO_00481fb0();
+// Deletes every LightConvertClass in the global list (0x00832398) and makes a
+// new default one (tint 1000, 1000, 1000) (0x00529720; DisplayClass 0x0049E570
+// and UnknownIDSource::Read_Basic call it; name hypothesis).
+void __cdecl Reset_Light_Converts_00529720();
+// An empty string used as an INI default (0x0083C55C).
+extern char unknown_string_83c55c[];
 extern int unknown_a40774;  // 0x00A40774 (a live-object count; BuildingClass, FactoryClass, ...)
 extern bool unknown_flag_a40958;  // 0x00A40958 (the destructor then calls ObjectClass slot 52)
 extern bool unknown_flag_a40b30;  // 0x00A40B30 the sidebar is on the left

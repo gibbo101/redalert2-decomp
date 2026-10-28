@@ -7,7 +7,7 @@
 // @ref ?Map@@3VMouseClass@@A=008324e0
 // @ref ?Unknown_0055A490@MapClass@@QAEPAVCellClass@@XZ=0055a490
 // @ref ?Unknown_0055A550@MapClass@@QAEXXZ=0055a550
-// @ref ?Unknown_00529720@MapClass@@QAEXXZ=00529720
+// @ref ?Reset_Light_Converts_00529720@@YAXXZ=00529720
 // @ref ?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z=004790f0
 // @ref ?unknown_int_a6fa2c@@3HA=00a6fa2c
 
@@ -15,7 +15,7 @@ extern int unknown_int_a6fa2c;      // 0x00A6FA2C
 
 void DisplayClass::Unknown_0049E570()
 {
-    Unknown_00529720();
+    Reset_Light_Converts_00529720();
     Map.Unknown_0055A550();
     CellClass *cell = Map.Unknown_0055A490();
     unknown_int_a6fa2c = 0;

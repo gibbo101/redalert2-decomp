@@ -203,7 +203,6 @@ public:
     void Unknown_00555A60(Cell const &cell);      // 0x00555A60 (the other bridge kind)
     Cell Unknown_00568ED0(Cell const &cell, Cell const &from);   // 0x00568ED0 (FootClass 0x004C4C30)
     bool Unknown_00569320(Cell const &cell);      // 0x00569320 (a bridge hut's bridge is intact; InfantryClass slot 28; hypothesis)
-    void Unknown_00529720();        // 0x00529720 (DisplayClass 0x0049E570)
     // A walk over the map's cells: restart (0x0055A550) and next cell, or
     // null at the end (0x0055A490).
     void Unknown_0055A550();

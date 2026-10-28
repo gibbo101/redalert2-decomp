@@ -24,12 +24,4 @@ public:
     int Cost;
 };
 typedef char Unknown4A6AE0Owner_size_check[(sizeof(Unknown4A6AE0Owner)==44)?1:-1];
-// Definitions are local to collection consumers, preserving implementation
-// guards and compiler-local labels in unrelated users of id_source.hpp.
-inline TypeList<TechnoTypeClass *> &UnknownIDSource::Loadout_Types_2254()
-{ return *(TypeList<TechnoTypeClass *> *)((char *)this + 0x2254); }
-inline TypeList<int> &UnknownIDSource::Loadout_Limits_2270()
-{ return *(TypeList<int> *)((char *)this + 0x2270); }
-inline TypeList<int> &UnknownIDSource::Loadout_Counts_228c()
-{ return *(TypeList<int> *)((char *)this + 0x228C); }
 #endif

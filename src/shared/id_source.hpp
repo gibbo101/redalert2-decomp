@@ -1,13 +1,13 @@
 #ifndef RA2_SHARED_ID_SOURCE_HPP
 #define RA2_SHARED_ID_SOURCE_HPP
 #include "shared/cd_timer.hpp"
+#include "shared/type_list_decl.hpp"
 // The source of new object IDs (hypothesis; the pointer at 0x00A3D290).
 // Hypothesis: the scenario (ScenarioClass): its random generator is at +0x218
 // (shared/random.hpp's Random2Class; declared by accessor because including
 // random.hpp here renumbers every unit's static initializers: Random3Class's
 // static members take compiler counter values), the difficulty at +0x60C
 // (Trigger.cpp), the theater at +0x838 (AnimType.cpp).
-template <class T> class TypeList;
 class TechnoTypeClass;
 class Random2Class;
 class Cell;
@@ -34,18 +34,22 @@ public:
     // accessor like Random(): the template lives in shared/comm_buffer.hpp).
     TTimerClass<SystemTimerClass> &Elapsed_Time() { return *(TTimerClass<SystemTimerClass> *)((char *)this + 0x614); }   // +0x614
 
-    // Original TypeList vptrs/28-byte stride verified at0066112F/1187/11DF.
-    // Complete types and inline definitions stay in the collection unit;
-    // this widely included header keeps the original opaque physical storage.
-    TypeList<TechnoTypeClass *> &Loadout_Types_2254();
-    TypeList<int> &Loadout_Limits_2270();
-    TypeList<int> &Loadout_Counts_228c();
     // The scenario's SpecialClass options are its first word (+0x000; declared by
     // accessor like Random()).
     SpecialClass &Special() { return *(SpecialClass *)this; }
     // Writes [Basic] (the player and campaign settings unless skip_player),
     // [VariableNames], [Ranking] and [Lighting] (0x006625B0; always true).
     bool Write_Basic(CCINIClass &ini, bool skip_player);
+    // Reads [VariableNames] into the 50 local variables ("name,value" by
+    // index; 0x00661770, always true).
+    bool Read_Variables(CCINIClass &ini);
+    // Rewrites [VariableNames] from the named local variables (0x006618B0,
+    // always true).
+    bool Write_Variables(CCINIClass &ini);
+    // Reads [Basic] (movies, flags, loadout lists), the local variables,
+    // [Ranking] and [Lighting], then picks the player's house (0x00661980;
+    // always true).
+    bool Read_Basic(CCINIClass &ini);
 
     int unknown_000;                            // +0x000 flags (0x1000: AircraftClass slot 70)
     char NextScenario[0x104];                   // +0x004 [Basic] NextScenario
@@ -73,7 +77,7 @@ public:
     char unknown_9d8[0x11D8 - 0x9D8];
     char Briefing[32];                          // +0x11D8 [Basic] Briefing
     int Theme;                                  // +0x11F8 [Basic] Theme
-    char unknown_11fc[0x1200 - 0x11FC];
+    int unknown_11fc;                           // +0x11FC (the player's HouseType index, set by Read_Basic)
     double CarryOverMoney;                      // +0x1200 [Basic] CarryOverMoney
     int unknown_1208;                           // +0x1208 [Basic] CarryOverCap (percent; stored times 100)
     int Percent;                                // +0x120C [Basic] Percent
@@ -99,9 +103,14 @@ public:
     bool MultiplayerOnly;                       // +0x223A [Basic] MultiplayerOnly (written as a number)
     char unknown_223b[0x2250 - 0x223B];
     int StartingDropships;                      // +0x2250 [Basic] StartingDropships
-    char unknown_2254[0x22A8 - 0x2254];         // +0x2254 TypeLists (Loadout_Types_2254, ...)
+    // The loadout lists (TypeList vptrs and the 28-byte stride at 0x0066112F,
+    // 0x00661187, 0x006611DF; padded by Read_Basic to one limit and one count
+    // per type).
+    TypeList<TechnoTypeClass *> AllowableUnits; // +0x2254 [Basic] AllowableUnits
+    TypeList<int> AllowableUnitMaximums;        // +0x2270 [Basic] AllowableUnitMaximums (-1: no limit)
+    TypeList<int> AllowableUnitCounts;          // +0x228C the number taken of each type (Unknown4A6AE0Owner; name hypothesis)
     int unknown_22a8;                           // +0x22A8 [Lighting] Ambient, hundredths (set from a trigger action's data, 0x006B2260)
-    char unknown_22ac[4];
+    int unknown_22ac;                           // +0x22AC (receives the [Lighting] Ambient level too)
     int unknown_22b0;                           // +0x22B0 (receives +0x22A8 unless 0x0051FC50 holds)
     int AmbientRed;                             // +0x22B4 [Lighting] Red, hundredths
     int AmbientGreen;                           // +0x22B8 [Lighting] Green
@@ -114,7 +123,8 @@ public:
     int IonBlue;                                // +0x22D4 [Lighting] IonBlue
     int IonGround;                              // +0x22D8 [Lighting] IonGround, thousandths
     int IonLevel;                               // +0x22DC [Lighting] IonLevel, thousandths
-    char unknown_22e0[0x22FC - 0x22E0];
+    char unknown_22e0[0x22F8 - 0x22E0];
+    int NukeAmbientChangeRate;                  // +0x22F8 [Lighting] NukeAmbientChangeRate
     bool unknown_22fc; // observed byte read by serial progress poll00481F00
     char unknown_22fd[0x2300 - 0x22FD];
     int InitTime;                               // +0x2300 [Basic] InitTime
@@ -129,6 +139,9 @@ public:
     char OverParMessage[31];                    // +0x2371 [Ranking] OverParMessage
 };
 extern UnknownIDSource *unknown_id_source_a3d290;    // 0x00A3D290
+// Assigns the houses of a multiplayer game to the players (0x0065FBB0; Read_Basic
+// calls it instead of reading [Basic] Player; name hypothesis).
+void Assign_Houses_0065fbb0();
 // The scenario INI section names (pointers at 0x007A9204 "Basic" and
 // 0x007A9200 "VariableNames").
 extern char const *unknown_basic_section_7a9204;

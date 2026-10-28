@@ -366,8 +366,6 @@ struct WolRegistryOptions {
     unsigned int Options;
     bool HasOptions;
 };
-struct UnknownSessionState;
-extern UnknownSessionState unknown_session_a3d298;
 void __fastcall Save_Session_00670380(UnknownSessionState *session);
 int __fastcall Save_Nickname_00745320(char const *nick, char const *password, bool arg, int arg2);
 extern Wstring unknown_password_b2a63c;
@@ -614,12 +612,6 @@ public:
         }
         return -1;
     }
-};
-struct UnknownSessionState {
-    int Value_0124_006729f0();
-    int Value_011c_00672a10();
-    void Set_Value_00672a30(int value, bool update);
-    void Set_Value_00672ae0(int value, bool update);
 };
 extern WolUserArray unknown_users_b2a728;
 extern WolChannelNameSet unknown_known_names_b294b8;

@@ -567,6 +567,9 @@ public:
     bool Put_Vector(char const *section, char const *entry, INIVector3 const &value);
     bool Put_Vector(Wstring const &section, Wstring const &entry, INIVector3 const &value);
     bool Put_Time(char const *section, char const *entry, int ticks);
+    // A time in ticks read as minutes or "h:mm" text (0x00510460; name hypothesis, the
+    // reader of Put_Time's format: Read_Basic's [Ranking] ParTime*).
+    int Get_Time(char const *section, char const *entry, int defvalue = 0) const;
     int Get_Hex(char const *section, char const *entry, int defvalue = 0) const;
     double Get_Double(char const *section, char const *entry, double defvalue = 0.0) const;
     // A class ID written as text (0x0050DA00).

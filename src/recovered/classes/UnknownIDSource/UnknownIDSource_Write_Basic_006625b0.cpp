@@ -108,8 +108,8 @@ bool UnknownIDSource::Write_Basic(CCINIClass &ini, bool skip_player)
     ini.Put_Bool(unknown_basic_section_7a9204, "TruckCrate", TruckCrate);
     ini.Put_Bool(unknown_basic_section_7a9204, "TrainCrate", unknown_2229);
     ini.Put_Int(unknown_basic_section_7a9204, "Percent", Percent);
-    ini.Put_Techno_List(unknown_basic_section_7a9204, "AllowableUnits", Loadout_Types_2254());
-    ini.Put_Integer_List(unknown_basic_section_7a9204, "AllowableUnitMaximums", Loadout_Limits_2270());
+    ini.Put_Techno_List(unknown_basic_section_7a9204, "AllowableUnits", AllowableUnits);
+    ini.Put_Integer_List(unknown_basic_section_7a9204, "AllowableUnitMaximums", AllowableUnitMaximums);
     ini.Put_ThemeType(unknown_basic_section_7a9204, "Theme", Theme);
 
     if (!skip_player) {
