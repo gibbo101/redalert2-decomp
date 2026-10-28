@@ -3380,64 +3380,6 @@
       "source_quality_family": "ghidra-seed-adjusted"
     },
     {
-      "entry": 6715456,
-      "method": "00667840",
-      "symbol": "?FUN_00667840@seed_00667840@@YIPAIPAI@Z",
-      "symbol_prefix": "?FUN_00667840@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 43,
-      "body_sha256": "d009895f5ca9390c9f0043300b3e7f8e5d4023c20d9d42ebf6e4486560eb993f",
-      "padding_bytes": 5,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "12f4dc9504249c334c932d9af653fc23bb1b1e2c395fe028216e9563cb420c28",
-      "relocations": [
-        {
-          "offset": 19,
-          "kind": 6,
-          "symbol": "_PTR_FUN_007a92a0",
-          "target": 8032928,
-          "addend": 0,
-          "resolved": 8032928
-        },
-        {
-          "offset": 24,
-          "kind": 20,
-          "symbol": "?FUN_00667900@seed_00667840@@YAXXZ",
-          "target": 6715648,
-          "addend": 0,
-          "resolved": 164
-        },
-        {
-          "offset": 29,
-          "kind": 6,
-          "symbol": "_DAT_00ab6fa4",
-          "target": 11235236,
-          "addend": 0,
-          "resolved": 11235236
-        },
-        {
-          "offset": 35,
-          "kind": 6,
-          "symbol": "_DAT_00ab6fa4",
-          "target": 11235236,
-          "addend": 0,
-          "resolved": 11235236
-        }
-      ],
-      "source_sha256": "331e6f865bfe553a12886c499be0e496490846acf50164f3d7b9950f24a7f532",
-      "source": "src/recovered/classes/ScoreFontClass/00667840.cpp",
-      "source_order": 10769,
-      "population": "population-107",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 6956816,
       "method": "006a2710",
       "symbol": "?FUN_006a2710@seed_006a2710@@YIXPAI@Z",
