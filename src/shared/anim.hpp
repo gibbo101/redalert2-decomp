@@ -278,9 +278,6 @@ inline int Cell_Distance(int dx, int dy)
 void __fastcall Unknown_00688460(CoordStruct const &coord, int width, int height, bool force);
 void __fastcall Unknown_00688750(CoordStruct const &coord, int width, int height, bool force);
 
-// Damage falloff for a distance (0x006A2970, __fastcall; hypothesis).
-int __fastcall Unknown_006A2970(int distance);
-
 // Plays a sound at a coordinate through an audio controller (0x00713E60;
 // hypothesis: the controller tracks the playing sound).
 void __fastcall Unknown_00713E60(int sound, CoordStruct const &coord, UnknownAudioController *controller);

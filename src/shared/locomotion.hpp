@@ -51,6 +51,9 @@ inline UnknownLocoCellObject *Loco_Cell_At(Cell const &cell)
 }
 // TacticalClass::Unknown_006A29B0 (Screen/shared/tactical.hpp): pixels to height.
 int __fastcall Unknown_006A29B0(int pixels);
+// The slope tilt matrix for a cell ramp type (a copy of the table entry at
+// 0x00AF8608 + 48 * ramp; LocomotionClass::Shadow_Matrix and the locomotors).
+Matrix3D __fastcall Unknown_00718D60(int ramp);                 // 0x00718D60
 // ILocomotion: shared/ilocomotion.hpp.
 
 #ifndef E_FAIL

@@ -115,6 +115,9 @@ extern bool unknown_a40d39;                     // 0x00A40D39 (game mode 5 reads
 extern bool unknown_7df630;                     // 0x007DF630 (false while the buildings are read)
 void __fastcall Init_Theater_00519e70(int theater);         // 0x00519E70
 bool __fastcall Unknown_0051a330(int side);                 // 0x0051A330 (side 0 allied, 1 soviet; false fails the scenario)
+// TacticalClass: a height (leptons) as screen pixels (0x006A2970, __fastcall;
+// hypothesis, the inverse of 0x006A29B0; the locomotors' Shadow_Point).
+int __fastcall Unknown_006A2970(int height);
 void __fastcall Unknown_006c0220();                         // 0x006C0220 (walks TeamTypes)
 void __fastcall Unknown_006ef5c0(CCINIClass &ini);          // 0x006EF5C0 ([Tubes])
 void Unknown_006e9fe0();                                    // 0x006E9FE0 (walks the TiberiumClass list)
