@@ -19,6 +19,7 @@
 #include "shared/wstring.hpp"
 
 class CCINIClass;
+class MultiMission;
 
 #include "shared/unknown_player_entry.hpp"
 
@@ -41,6 +42,12 @@ public:
     int Number;                                               // +0x08
 };
 
+// A network-session test (0x0073C370; false unless game mode 4).
+bool unknown_73c370();
+
+// Empties a combo box (0x006007F0).
+void __fastcall unknown_reset_combo_6007f0(HWND combo);
+
 // The team number as wide text (0x007710C0; swprintf "%d").
 WideString __fastcall unknown_number_text_7710c0(int number);
 
@@ -56,29 +63,31 @@ public:
     virtual bool unknown_slot4();                                  // 4 0x005B7350
     virtual bool unknown_slot5(WideString *message);                                // 5 0x005B73A0
     virtual bool unknown_slot6();                                  // 6 0x005B73D0
-    virtual void unknown_slot7();                                  // 7 0x005B7830
+    virtual bool unknown_slot7(int unknown);                       // 7 0x005B7830 (true)
     virtual void unknown_slot8() {}                              // 8 0x005A23B0
     virtual void unknown_slot9() {}                              // 9 0x005A23C0
-    virtual void unknown_slot10();                                 // 10 0x005B6EB0
-    virtual void unknown_slot11();                                 // 11 0x005B73E0
+    virtual int unknown_slot10();                                  // 10 0x005B6EB0 (-2)
+    virtual bool unknown_slot11();                                 // 11 0x005B73E0 (unknown_34)
     virtual bool unknown_slot12();                                 // 12 0x005B73F0
-    virtual void unknown_slot13();                                 // 13 0x005B7400
+    // Slot 13: the index of the first multiplayer map this mode can play
+    // (unknown_5b7470), or -1.
+    virtual int unknown_slot13();                                  // 13 0x005B7400
     virtual void unknown_slot14(HWND combo, DynamicVectorClass<int> const *items, int selected);                               // 14 0x005B74E0
     virtual void unknown_slot15(HWND list, DynamicVectorClass<int> const *items, int selected);                               // 15 0x005B7550
     virtual void unknown_slot16(HWND combo, int team);                                // 16 0x005B75D0
     virtual bool unknown_slot17(int unknown_1, VectorClass<int> unknown_list, int unknown_2, int unknown_3) { return false; } // 17 0x005A23F0
     virtual bool unknown_slot18(int unknown_1, VectorClass<int> unknown_list, int unknown_2, int unknown_3, int unknown_4, int unknown_5) { return false; } // 18 0x005A23D0
     virtual bool unknown_slot19(int unknown_1, int unknown_2, int unknown_3) { return true; } // 19 0x005A2410
-    virtual void unknown_slot20();                                 // 20 0x005B73B0
-    virtual void unknown_slot21();                                 // 21 0x005B73C0
+    virtual bool unknown_slot20();                                 // 20 0x005B73B0 (true)
+    virtual bool unknown_slot21();                                 // 21 0x005B73C0 (true)
     virtual bool unknown_slot22() { return true; }               // 22 0x005A2420
-    virtual void unknown_slot23();                                 // 23 0x005B74C0
-    virtual void unknown_slot24();                                 // 24 0x005B74D0
+    virtual void unknown_slot23();                                 // 23 0x005B74C0 (the session's 0x00672940)
+    virtual void unknown_slot24();                                 // 24 0x005B74D0 (slot 23)
     virtual void unknown_slot25(int unknown_1, int unknown_2) {} // 25 0x005A2430
     virtual bool unknown_slot26();                                 // 26 0x005B7820
     virtual void unknown_slot27();                                 // 27 0x005B7C00
-    virtual void unknown_slot28();                                 // 28 0x005B8420
-    virtual void unknown_slot29();                                 // 29 0x005B8470
+    virtual bool unknown_slot28();                                 // 28 0x005B8420 (true)
+    virtual bool unknown_slot29();                                 // 29 0x005B8470 (true)
     virtual void unknown_slot30() {}                             // 30 0x005A2440
     virtual void unknown_slot31() {}                             // 31 0x005A2450
     virtual int unknown_slot32() { return -1; }                  // 32 0x005A2460
@@ -98,8 +107,20 @@ public:
     MultiplayerTeam *unknown_find_team_5b76b0(int number);   // 0x005B76B0
     void unknown_clear_teams_5b77e0();                       // 0x005B77E0
     int unknown_team_of_5b8430(int id);                      // 0x005B8430
+    // Whether this mode can play the multiplayer map (0x005B7470).
+    bool unknown_5b7470(MultiMission *map);
     // The registered game modes (a function-local static, 0x005B6C30).
     static DynamicVectorClass<MultiplayerGameMode *> &unknown_modes_5b6c30();
+    // The first registered mode, or none (0x005B6EC0).
+    static MultiplayerGameMode *unknown_first_mode_5b6ec0();
+    // The number of registered modes (0x005B6F80).
+    static int unknown_mode_count_5b6f80();
+    // The registered mode whose unknown_28 is the id, or none (0x005B6FE0).
+    static MultiplayerGameMode *__fastcall unknown_find_mode_5b6fe0(int id);
+    // Fills a combo box (reset by 0x006007F0) with the modes' names, each
+    // mode as item data, and selects the mode with the id; in game mode 5 only
+    // modes whose slot 12 agrees are listed (0x005B70B0).
+    static void __fastcall unknown_fill_combo_5b70b0(HWND combo, int id);
 
     // Creates a game mode of one class (RTTI MultiplayerGameMode::
     // InitializerBase, vtable 0x007A72B0, and Initializer<T>).
@@ -161,7 +182,7 @@ public:
     virtual bool unknown_slot4();                                  // 4 0x005AB5F0
     virtual bool unknown_slot5(WideString *message);                                // 5 0x005AB640
     virtual bool unknown_slot6();                                  // 6 0x005AB740
-    virtual void unknown_slot11();                                 // 11 0x005AB750
+    virtual bool unknown_slot11();                                 // 11 0x005AB750 (false)
     virtual bool unknown_slot26();                                 // 26 0x005AB760
     virtual void unknown_slot27();                                 // 27 0x005AB770
     virtual void unknown_slot41(DynamicVectorClass<MultiplayerTeam *> *teams);                               // 41 0x005AB970
@@ -185,7 +206,7 @@ class Megawealth : public MultiplayerGameMode {
 public:
     Megawealth(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4, int unknown_5, int unknown_6);
     virtual ~Megawealth();
-    virtual void unknown_slot29();                                 // 29 0x005AA770
+    virtual bool unknown_slot29();                                 // 29 0x005AA770
 };
 
 // vtable 0x007A6C84 (scalar deleting destructor 0x005AC510)
@@ -209,26 +230,26 @@ public:
     virtual bool unknown_slot4();                                  // 4 0x005A2D70
     virtual bool unknown_slot5(WideString *message);                                // 5 0x005A32E0
     virtual bool unknown_slot6();                                  // 6 0x005A3320
-    virtual void unknown_slot7();                                  // 7 0x005A2CD0
+    virtual bool unknown_slot7(int unknown);                       // 7 0x005A2CD0
     virtual void unknown_slot8();                                  // 8 0x005A2EF0
     virtual void unknown_slot9();                                  // 9 0x005A31F0
-    virtual void unknown_slot10();                                 // 10 0x005A34B0
-    virtual void unknown_slot11();                                 // 11 0x005A46B0
-    virtual void unknown_slot13();                                 // 13 0x005A3200
+    virtual int unknown_slot10();                                  // 10 0x005A34B0
+    virtual bool unknown_slot11();                                 // 11 0x005A46B0
+    virtual int unknown_slot13();                                  // 13 0x005A3200
     virtual void unknown_slot15(HWND list, DynamicVectorClass<int> const *items, int selected);                               // 15 0x005A4B70
     virtual void unknown_slot16(HWND combo, int team);                                // 16 0x005A3F70
     virtual bool unknown_slot18(int unknown_1, VectorClass<int> unknown_list, int unknown_2, int unknown_3, int unknown_4, int unknown_5); // 18 0x005A3500
     virtual bool unknown_slot19(int unknown_1, int unknown_2, int unknown_3); // 19 0x005A35D0
-    virtual void unknown_slot20();                                 // 20 0x005A38D0
-    virtual void unknown_slot21();                                 // 21 0x005A3960
+    virtual bool unknown_slot20();                                 // 20 0x005A38D0
+    virtual bool unknown_slot21();                                 // 21 0x005A3960
     virtual bool unknown_slot22();                                 // 22 0x005A4250
     virtual void unknown_slot23();                                 // 23 0x005A4540
     virtual void unknown_slot24();                                 // 24 0x005A45F0
     virtual void unknown_slot25(int unknown_1, int unknown_2);     // 25 0x005A3CA0
     virtual bool unknown_slot26();                                 // 26 0x005A3EE0
     virtual void unknown_slot27();                                 // 27 0x005A4170
-    virtual void unknown_slot28();                                 // 28 0x005A43C0
-    virtual void unknown_slot29();                                 // 29 0x005A46A0
+    virtual bool unknown_slot28();                                 // 28 0x005A43C0
+    virtual bool unknown_slot29();                                 // 29 0x005A46A0
     virtual void unknown_slot30();                                 // 30 0x005A5000
     virtual void unknown_slot31();                                 // 31 0x005A5190
     virtual int unknown_slot32();                                  // 32 0x005A5340
