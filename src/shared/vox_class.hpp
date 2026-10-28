@@ -13,6 +13,8 @@ public:
 
     static int __fastcall Find_Index(char const *name);    // 0x00716640
     static char const *__fastcall Name_From(int index);    // 0x007158A0 ("none" out of range; name hypothesis)
+    static VoxClass *__fastcall Find(char const *name);    // 0x007166C0 (0 for none or "<none>"; name hypothesis)
+    static int __fastcall Index_Of(VoxClass *vox);         // 0x00716740 (-1 for none; name hypothesis)
     static void __fastcall Set_Volume(int volume);         // 0x00715EF0 (at most 255; OptionsClass voice volume)
 
     // Reads the VoxClass's EVA.ini section: volume, type, priority and the two

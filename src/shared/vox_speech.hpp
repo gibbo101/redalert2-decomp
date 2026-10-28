@@ -64,5 +64,19 @@ void Taunt_Shutdown();
 int __fastcall Taunt_Play(int taunt);
 // Stops the speech and deletes every VoxClass (0x00716590; name hypothesis).
 void Speech_Free_All();
+// Reads the waiting speeches of a saved game (0x007167D0).
+struct IStream;
+long __fastcall Speech_Load(IStream *stream);
+// The taunt stream paused (0x007168D0) and resumed (0x007168E0); a taunt
+// block counted down (0x00716910).
+void Taunt_Pause();
+void Taunt_Resume();
+void Taunt_Unblock();
+// The speech block (unknown_vox_ad0878) counted down (0x00716950); the
+// stream paused and speech starts blocked (0x00716980); everything stopped
+// and both blocks cleared (0x007169A0).
+void Unknown_00716950();
+void Speech_Hold();
+void Speech_Reset();
 
 #endif
