@@ -4,8 +4,8 @@
     "id": "population-2425",
     "inventory_sha256": "3d77f280a07a245e019590d41b291dae0b314791d5736fae64ac06574e8bbc50",
     "gaps_sha256": "b769c210eb4a4137de2172b6d1526c0a4d22f808fd8e790888381a2dd1afc22b",
-    "historical_population_sha256": "8bd1f8750e8c1fe33a9e4223860f4eed51e589b77010ab82ebc1d4422ec5437b",
-    "historical_acceptance_sha256": "c42240b1f2c6012a70adcf6c4c38803dfcf7a9b0baeeb35da026200c73be450a"
+    "historical_population_sha256": "1e8c4b33124630aac9051fc0b74f77e0af6dd7a20f4766ee34d0ec9d67d275dc",
+    "historical_acceptance_sha256": "7debeec8c5d91fc9d2a6ac913625d3fcedec0d5f7c296c64432f5cac462094f9"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3868,7 +3868,7 @@
     "?Put_To@PKPipe@@UAEXPAVPipe@@@Z": 6355696,
     "?Put@PKPipe@@UAEHPBXH@Z": 6355872,
     "?Get_From@PKStraw@@UAEXPAVStraw@@@Z": 6356640,
-    "?search_compfunc@?$UnknownIndexClass@JPAVObjectClass@@@@SAHPBX0@Z": 4307472,
+    "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z": 4307472,
     "?search_compfunc@ToolTipIndex@@SAHPBX0@Z": 7258912,
     "??0MapSelectData@@QAE@XZ": 5963536,
     "??1MapSelectData@@QAE@XZ": 5963680,
@@ -3979,9 +3979,9 @@
     "??0ParticleClass@@QAE@PAVParticleTypeClass@@ABUCoordStruct@@1PAVParticleSystemClass@@@Z": 6325312,
     "?Add_Tail@ListClass@@UAEAAVLinkClass@@AAV2@@Z": 5482608,
     "?Add_Tail@DropListClass@@UAEAAVLinkClass@@AAV2@@Z": 4869872,
-    "?Search_For_Node@?$UnknownIndexClass@JPAVObjectClass@@@@QAEPBUNodeElement@1@ABJ@Z": 4307344,
-    "?Increase_Table_Size@?$UnknownIndexClass@JPAVObjectClass@@@@QAE_NH@Z": 4307200,
-    "?Binary_Search@@YIPAUNodeElement@?$UnknownIndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
+    "?Search_For_Node@?$IndexClass@JPAVAbstractClass@@@@ABEPBUNodeElement@1@ABJ@Z": 4307344,
+    "?Increase_Table_Size@?$IndexClass@JPAVAbstractClass@@@@QAE_NH@Z": 4307200,
+    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVAbstractClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Is_Archive_Same@ToolTipIndex@@QBE_NABI@Z": 7258752,
     "?Search_For_Node@ToolTipIndex@@QBEPBUToolTipIndexNode@@ABI@Z": 7258784,
     "?Binary_Search@@YIPAUToolTipIndexNode@@PAU1@HABU1@@Z": 7258960,

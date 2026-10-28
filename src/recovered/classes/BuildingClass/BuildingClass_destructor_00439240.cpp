@@ -26,11 +26,11 @@
 // @ref ?Delete@?$DynamicVectorClass@PAVBuildingClass@@@@QAE_NH@Z=00454b60
 // @ref ?Delete@?$DynamicVectorClass@PAVAbstractClass@@@@QAE_NH@Z=00454b20
 // @ref ?Fetch_ID@AbstractClass@@UAGJXZ=0040ffc0
-// @ref ?Search_For_Node@?$UnknownIndexClass@JPAVObjectClass@@@@QAEPBUNodeElement@1@ABJ@Z=0041b990
+// @ref ?Search_For_Node@?$IndexClass@JPAVAbstractClass@@@@ABEPBUNodeElement@1@ABJ@Z=0041b990
 // @ref ?unknown_BuildingClass_list_00a40af8@@3V?$DynamicVectorClass@PAVBuildingClass@@@@A=00a40af8
 // @ref ?unknown_abstracts_ac0c80@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0c80
 // @ref ?unknown_abstracts_ac0bf8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0bf8
-// @ref ?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A=00abff58
+// @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A=00abff58
 
 // Removes an object from one of the object lists (an inline wrapper).
 static inline bool Remove_From(DynamicVectorClass<AbstractClass *> &list, AbstractClass *object)

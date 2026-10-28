@@ -3,7 +3,7 @@
 // @ref ?From_Name@InfantryTypeClass@@SIHPBD@Z=0050a070
 // @ref ?From_Name@UnitTypeClass@@SIHPBD@Z=0070a890
 // @ref ??0TargetClass@@QAE@PAVAbstractClass@@@Z=006b54a0
-// @ref ?As_Type@TargetClass@@QBEPAVAbstractTypeClass@@XZ=006b5d20
+// @ref ?As_TechnoType@TargetClass@@QBEPAVTechnoTypeClass@@XZ=006b5d20
 // @ref ?InfantryTypes@@3V?$DynamicVectorClass@PAVInfantryTypeClass@@@@A=00a40350
 // @ref ?UnitTypes@@3V?$DynamicVectorClass@PAVUnitTypeClass@@@@A=00a35d48
 #include "shared/ccini_extra.hpp"

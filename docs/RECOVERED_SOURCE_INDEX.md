@@ -519,7 +519,7 @@
 | [classes/RLEBlitTransLucent75Alpha_unsigned_short](../src/recovered/classes/RLEBlitTransLucent75Alpha_unsigned_short/) | 2 | 360 | 1 | 0x0048AD30–0x0048D570 |
 | [classes/VectorClass_UndoInfoStruct](../src/recovered/classes/VectorClass_UndoInfoStruct/) | 6 | 360 | 4 | 0x00686FA0–0x00687330 |
 | [classes/RLEBlitTransLucent50Alpha_unsigned_short](../src/recovered/classes/RLEBlitTransLucent50Alpha_unsigned_short/) | 2 | 358 | 1 | 0x0048AE60–0x0048D5B0 |
-| [classes/UnknownIndexClass](../src/recovered/classes/UnknownIndexClass/) | 4 | 357 | 4 | 0x0041B900–0x005098E0 |
+| [classes/IndexClass_long_AbstractClass_ptr](../src/recovered/classes/IndexClass_long_AbstractClass_ptr/) | 4 | 357 | 4 | 0x0041B900–0x005098E0 |
 | [classes/DynamicVectorClass_AITriggerTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_AITriggerTypeClass_ptr/) | 5 | 356 | 4 | 0x004D4AC0–0x004DBE20 |
 | [classes/DynamicVectorClass_AbstractTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_AbstractTypeClass_ptr/) | 5 | 356 | 4 | 0x004D58B0–0x004DD590 |
 | [classes/DynamicVectorClass_AircraftClass_ptr](../src/recovered/classes/DynamicVectorClass_AircraftClass_ptr/) | 5 | 356 | 4 | 0x004D4F50–0x004DC5F0 |

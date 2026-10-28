@@ -3,7 +3,7 @@
 
 bool CCINIClass::Put_Target_Type(char const *section, char const *entry, TargetClass const &target)
 {
-    AbstractTypeClass *type = target.As_Type();
+    AbstractTypeClass *type = target.As_TechnoType();
     if (type != 0) {
         return Put_String(section, entry, type->ID);
     }

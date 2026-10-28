@@ -8,7 +8,7 @@
 // @ref ?Fetch_ID@AbstractClass@@UAGJXZ=0040ffc0
 // @ref ?Frame@@3HA=00a40d2c
 // @ref ?Infantry@@3V?$DynamicVectorClass@PAVInfantryClass@@@@A=00a35e48
-// @ref ?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A=00abff58
+// @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A=00abff58
 // @ref _unknown_uuid_IUnknown_7ce610=007ce610
 // @ref _unknown_uuid_ILocomotion_7ce600=007ce600
 // @ref __imp__CoCreateInstance@20=0079a5f0

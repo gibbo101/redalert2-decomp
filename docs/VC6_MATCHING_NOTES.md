@@ -532,3 +532,16 @@ reaching each block).
   original only when written `bool b = list; if (b) return X;` (applied to every group); otherwise VC6
   lays the return after the following code and cross-jumps equal returns. Equal single-value returns
   were one `||` list (OwnerDraw 0x005E0010, 0x005E0760).
+- The bool-first rule extends to if/else: an if/else whose condition is a `||` list lays the else
+  first unless the condition is a bool local. A bool `return a || b || ...` shares one `mov eax, 1`
+  block across all lists (Big80).
+- VC6 delays a callee-saved push until the register's first use, and saves it only around an if-body
+  when that is its only use.
+- A return the original sends to the function's final return block was an else-part return:
+  `if (id != X) { ... } else return V;` (OwnerDraw 0x005DEFB0).
+- For a parameterless function, `__fastcall` versus cdecl moves where the epilogue's `pop` is
+  scheduled (Delete_All_Objects 0x00519960 is `__fastcall`).
+- Separate stack slots for several temporaries mean they belong to one statement (MapClass 0x0055DEF0's
+  redraw is one statement with an inline `Rect - TPoint2D`).
+- A separate-unit plan cannot include headers that carry header statics; such functions go in their
+  real unit.

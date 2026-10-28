@@ -6,7 +6,7 @@
 // @ref ?Unknown_006ECB90@@YIXPAVObjectClass@@_N@Z=006ecb90
 // @ref ?unknown_flag_a40958@@3_NA=00a40958
 // @ref ?Fetch_ID@AbstractClass@@UAGJXZ=0040ffc0
-// @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A=00abff58
+// @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A=00abff58
 // @ref _qsort=00781d46
 // @ref ??1ObjectClass@@UAE@XZ=005d2530
 

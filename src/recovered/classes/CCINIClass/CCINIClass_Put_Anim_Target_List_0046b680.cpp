@@ -11,7 +11,7 @@ bool CCINIClass::Put_Anim_Target_List(char const *section, char const *entry, Ty
         }
         TargetClass target;
         target = TargetClass(list[index]);
-        AbstractTypeClass *type = target.As_Type();
+        AbstractTypeClass *type = target.As_TechnoType();
         strcat(buffer, type->ID);
     }
     return Put_String(section, entry, buffer);

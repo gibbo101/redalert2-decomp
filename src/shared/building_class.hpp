@@ -45,7 +45,7 @@ extern bool unknown_flag_a3d340;        // 0x00A3D340 (slot 39)
 // 291, 0x00452F50 copies it into a Cell; meaning unknown.
 extern int unknown_84ed10;
 
-// UnknownIndexClass: shared/techno_index.hpp (Foot6 copy: the duplicate definition removed).
+// The object index (0x00ABFF58): shared/techno_index.hpp, shared/object_index.hpp.
 #include "shared/techno_index.hpp"
 
 // The sum of two cell offsets (an inline helper slots 264-266 expand;
@@ -73,10 +73,6 @@ struct UnknownBuildingUnitView : TechnoClass {
     char unknown_418[0x5AC - 0x418];
     UnitTypeClass *Type;                    // +0x5AC
 };
-
-// The techno index keyed by Fetch_ID (0x00ABFF58; its constructor runs at
-// 0x006B5440).
-extern UnknownIndexClass<long, ObjectClass *> unknown_object_index_abff58;
 
 // The owned object at +0x4E8 (detached by 0x00537560, then deleted).
 class UnknownBuilding4E8 : public AbstractClass {

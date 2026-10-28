@@ -10,7 +10,7 @@
 // @ref ?Fetch_ID@AbstractClass@@UAGJXZ=0040ffc0
 // @ref ?unknown_slot60@ObjectClass@@UAEXXZ=005d4e90
 // @ref ?Terrains@@3V?$DynamicVectorClass@PAVTerrainClass@@@@A=00a40940
-// @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A=00abff58
+// @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A=00abff58
 // @ref ?Frame@@3HA=00a40d2c
 // @ref ??_7TerrainClass@@6BIPersistStream@@@=007ad3cc
 // @ref ??_7TerrainClass@@6BIRTTITypeInfo@@@=007ad3a0

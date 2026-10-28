@@ -23,8 +23,8 @@
 // @ref ?unknown_veinhole_tiles_7f9508@@3QAY02$$CBEA=007f9508
 // @ref ?unknown_a40774@@3HA=00a40774
 // @ref ?unknown_tileset_a6e018@@3HA=00a6e018
-// @ref ?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A=00abff58
-// @ref ?Increase_Table_Size@?$UnknownIndexClass@JPAVObjectClass@@@@QAE_NH@Z=0041b900
+// @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A=00abff58
+// @ref ?Increase_Table_Size@?$IndexClass@JPAVAbstractClass@@@@QAE_NH@Z=0041b900
 
 // The tile offsets (within the veinhole tile set; 0: none) of the 3x3 cells
 // under a new monster (0x007F9508).

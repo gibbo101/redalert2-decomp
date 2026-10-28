@@ -14,7 +14,7 @@
 // @ref ?Infantry@@3V?$DynamicVectorClass@PAVInfantryClass@@@@A=00a35e48
 // @ref ?Fetch_ID@AbstractClass@@UAGJXZ=0040ffc0
 // @ref _qsort=00781d46
-// @ref ?search_compfunc@?$UnknownIndexClass@JPAVObjectClass@@@@SAHPBX0@Z=0041ba10
+// @ref ?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z=0041ba10
 // @ref ??1FootClass@@UAE@XZ=004c2cb0
 
 InfantryClass::~InfantryClass()

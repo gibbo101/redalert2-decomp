@@ -14,7 +14,7 @@
 //           offset; hypothesis)
 //   size 0xC8
 // Every terrain object is in the list at 0x00A40940 and in the ID index at
-// 0x00ABFF58 (IndexClass<int, TerrainClass *>).
+// 0x00ABFF58 (shared/object_index.hpp).
 #ifndef RA2_SHARED_TERRAIN_HPP
 #define RA2_SHARED_TERRAIN_HPP
 
@@ -119,8 +119,8 @@ extern char const *unknown_terrain_section_7ad390;
 // The scenario INI format (0x00A40D24; below 4 cells are numbered x + y *
 // 128, else x + y * 1000; hypothesis).
 
-// The object index keyed by Fetch_ID (0x00ABFF58) is in
-// shared/terrain_object_index.hpp (only the Terrain unit's view of it).
+// The object index keyed by Fetch_ID (0x00ABFF58): shared/object_index.hpp
+// (the Terrain unit's helper over it: shared/terrain_object_index.hpp).
 
 // The list of terrain objects (0x00A40940; defined by the unit at 0x004D2BA0).
 extern DynamicVectorClass<TerrainClass *> Terrains;

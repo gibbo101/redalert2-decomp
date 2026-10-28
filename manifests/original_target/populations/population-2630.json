@@ -4,8 +4,8 @@
     "id": "population-2630",
     "inventory_sha256": "4130e9a247616979ba8562309900879a02a0ee75867541b5da482df7929c2ca7",
     "gaps_sha256": "7389b37ceaa382531b33460dc0c8508ce01f2fb298de43b0f3c5d9ad9455bb3f",
-    "historical_population_sha256": "d1d9a1b9c4757b4b0685c4b3dde397d07e4ede3438748231278b190d06fef2aa",
-    "historical_acceptance_sha256": "817f693894c71a8e98b30f3159d5fd1cf144889dc9b4f4d70440e5e30ddc3162"
+    "historical_population_sha256": "c8919ad2dfe682b1ea6f29205e6e19069283a96c00b381e77eceec0a24ed42c9",
+    "historical_acceptance_sha256": "c8511393c767de927d3ca81517d7399bc767127a5382be7c4969501c60ba83b8"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4111,7 +4111,7 @@
     "?Unlock@DSurface@@UAE_NXZ": 4894272,
     "??HTPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AUTPoint2D@@XZ": 4412768,
-    "?search_compfunc@?$UnknownIndexClass@JPAVObjectClass@@@@SAHPBX0@Z": 4307472,
+    "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z": 4307472,
     "?Unknown_00420D30@@YIXPAVObjectClass@@@Z": 4328752,
     "?search_compfunc@ToolTipIndex@@SAHPBX0@Z": 7258912,
     "?unknown_slot52@BuildingLightClass@@UAE_NXZ": 4409280,
@@ -5053,7 +5053,7 @@
     "_unknown_uuid_IUnknown_7ce610": 8185360,
     "_unknown_uuid_ILocomotion_7ce600": 8185344,
     "?Init@AircraftClass@@UAEXXZ": 4275360,
-    "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A": 11272024,
+    "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A": 11272024,
     "?Init@TechnoClass@@UAEXXZ": 7085136,
     "?unknown_713520@UnknownTechnoPair@@QAEX_N@Z": 7419168,
     "?Set_ROT@FacingClass@@QAEXH@Z": 4951696,
@@ -5428,7 +5428,7 @@
     "?unknown_44cfd0@BuildingClass@@QAEXH@Z": 4509648,
     "?unknown_slot234@BuildingClass@@UAEXH@Z": 4520784,
     "?unknown_func_4f4b20@HouseClass@@QAEXXZ": 5196576,
-    "?Search_For_Node@?$UnknownIndexClass@JPAVObjectClass@@@@QAEPBUNodeElement@1@ABJ@Z": 4307344,
+    "?Search_For_Node@?$IndexClass@JPAVAbstractClass@@@@ABEPBUNodeElement@1@ABJ@Z": 4307344,
     "?unknown_4397c0@BuildingClass@@QAEXXZ": 4429760,
     "?unknown_slot162@BuildingClass@@UAE?AUUnknownFacingDir@@XZ": 4466080,
     "?unknown_slot219@BuildingClass@@UAEPAVAbstractClass@@HPBUCoordStruct@@_N@Z": 4466256,
@@ -5456,7 +5456,7 @@
     "?unknown_slot231@BuildingClass@@UAEPAUWeaponStruct@@H@Z": 4512128,
     "?unknown_slot232@BuildingClass@@UAE_NXZ": 4512208,
     "?Load@BuildingClass@@UAGJPAUIStream@@@Z": 4517776,
-    "?Increase_Table_Size@?$UnknownIndexClass@JPAVObjectClass@@@@QAE_NH@Z": 4307200,
+    "?Increase_Table_Size@?$IndexClass@JPAVAbstractClass@@@@QAE_NH@Z": 4307200,
     "?Save@BuildingClass@@UAGJPAUIStream@@H@Z": 4518640,
     "?unknown_slot122@BuildingClass@@UAE_NXZ": 4518832,
     "?Compute_CRC@BuildingClass@@UBEXAAVWWCRCEngine@@@Z": 4518848,
@@ -5891,7 +5891,7 @@
     "??_7InfantryClass@@6BINoticeSink@@@": 8008988,
     "??_7InfantryClass@@6BINoticeSource@@@": 8008980,
     "?Init@InfantryClass@@UAEXXZ": 5241008,
-    "?Binary_Search@@YIPAUNodeElement@?$UnknownIndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
+    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVAbstractClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Detach@InfantryClass@@UAEXPAVAbstractClass@@_N@Z": 5250224,
     "?unknown_slot220@InfantryClass@@UAEXPAVAbstractClass@@@Z": 5252208,
     "?unknown_slot220@TechnoClass@@UAEXPAVAbstractClass@@@Z": 7117552,
@@ -9654,7 +9654,165 @@
     "??_7AlphaShapeClass@@6B@": 7978964,
     "??_EGenericList@@UAEPAXI@Z": 4252192,
     "??_ETEventClass@@UAEPAXI@Z": 7237024,
-    "??_EAlphaShapeClass@@UAEPAXI@Z": 4323776
+    "??_EAlphaShapeClass@@UAEPAXI@Z": 4323776,
+    "??_7?$DynamicVectorClass@PBVCommandClass@@@@6B@": 7972892,
+    "??_G?$DynamicVectorClass@PBVCommandClass@@@@UAEPAXI@Z": 4243568,
+    "??_7?$DynamicVectorClass@PAVLightConvertClass@@@@6B@": 7972956,
+    "??_G?$DynamicVectorClass@PAVLightConvertClass@@@@UAEPAXI@Z": 4244560,
+    "?Array@LaserDrawList@@2V?$DynamicVectorClass@PAVLaserDrawClass@@@@A": 10938008,
+    "?unknown_LineTrail_list_00a6e970@@3V?$DynamicVectorClass@PAVLineTrail@@@@A": 10938736,
+    "?Array@RadBeamList@@2V?$DynamicVectorClass@PAVRadBeam@@@@A": 11232480,
+    "??_7?$DynamicVectorClass@PAVColorScheme@@@@6B@": 8027032,
+    "?AddRef@SwizzleManagerClass@@UAGKXZ": 6946192,
+    "?Release@SwizzleManagerClass@@UAGKXZ": 6946208,
+    "?Save_Interface@SwizzleManagerClass@@UAGJPAUIStream@@PAUIUnknown@@@Z": 6946224,
+    "??_G?$DynamicVectorClass@USwizzlePointerClass@@@@UAEPAXI@Z": 6947200,
+    "?unknown_a40b2c@@3HA": 10750764,
+    "?Get_Save_Size@SwizzleManagerClass@@UAGJPAH@Z": 6946032,
+    "?Fetch_Swizzle_ID@SwizzleManagerClass@@UAGJPAXPAJ@Z": 6946160,
+    "??A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z": 5312656,
+    "??0?$IndexClass@HPAUINIEntry@INIClass@@@@QAE@XZ": 5311712,
+    "??A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z": 5312112,
+    "?Is_Dead@LineTrail@@QBEHXZ": 5478112,
+    "__imp__MoveWindow@24": 7971808,
+    "__imp__UpdateWindow@4": 7971948,
+    "?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z": 6355488,
+    "?Load_Interface@SwizzleManagerClass@@UAGJPAUIStream@@PAUGUID@@PAPAX@Z": 6946240,
+    "?Draw@MSEngine@@QAEXPAVSurface@@@Z": 5975984,
+    "__imp__GetSystemMetrics@4": 7971804,
+    "?Draw@MSBinkAnim@@UAEXPAVSurface@@PBVRect@@@Z": 5954288,
+    "?Draw@MSVQAnim@@UAEXPAVSurface@@PBVRect@@@Z": 5956144,
+    "?Draw@MSPCXAnim@@UAEXPAVSurface@@PBVRect@@@Z": 5962240,
+    "??0CaptureManagerClass@@QAE@PAVTechnoClass@@@Z": 4619696,
+    "??_7CaptureManagerClass@@6BIPersistStream@@@": 7985080,
+    "??_7CaptureManagerClass@@6BIRTTITypeInfo@@@": 7985052,
+    "??_7CaptureManagerClass@@6BINoticeSink@@@": 7985044,
+    "??_7CaptureManagerClass@@6BINoticeSource@@@": 7985036,
+    "??0CaptureManagerClass@@QAE@XZ": 4619840,
+    "??0CaptureManagerClass@@QAE@ABVNoInitClass@@@Z": 4619984,
+    "??1CaptureManagerClass@@UAE@XZ": 4620032,
+    "??_GCaptureManagerClass@@UAEPAXI@Z": 4621184,
+    "?unknown_int_a3d548@@3HA": 10736968,
+    "?Unknown_Free_Art_Sets_006F2510@@YIXXZ": 7283984,
+    "?Unknown_Free_Art_Pair_006F26D0@@YIXXZ": 7284432,
+    "?Increment@CounterClass@@QAEHH@Z": 4791376,
+    "?Decrement@CounterClass@@QAEHH@Z": 4791472,
+    "??0?$IndexClass@HPAUINISection@INIClass@@@@QAE@XZ": 4788416,
+    "?Draw@EgoClass@@QAEX_N@Z": 4929168,
+    "?Place@SmudgeTypeClass@@QBEXABVCell@@@Z": 6851392,
+    "??0?$DynamicVectorClass@PAVTechnoClass@@@@QAE@IPBQAVTechnoClass@@@Z": 7309952,
+    "??0?$DynamicVectorClass@PBD@@QAE@IPBQBD@Z": 7310048,
+    "??_7?$DynamicVectorClass@UWaypointClass@@@@6B@": 8056716,
+    "??_G?$DynamicVectorClass@UWaypointClass@@@@UAEPAXI@Z": 7492560,
+    "?Get_Node@IPXAddressClass@@QAEXQAE@Z": 5387552,
+    "??_E?$DynamicVectorClass@U?$HashObject@II@@@@UAEPAXI@Z": 5686288,
+    "??_E?$DynamicVectorClass@U?$HashObject@IUSubzoneConnectionStruct@@@@@@UAEPAXI@Z": 5686816,
+    "??_7?$DynamicVectorClass@USubzoneConnectionStruct@@@@6B@": 8018648,
+    "??4?$DynamicVectorClass@USubzoneConnectionStruct@@@@QAEAAV0@ABV0@@Z": 5687728,
+    "??_G?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5686160,
+    "??_7?$DynamicVectorClass@PAUSpawnControl@@@@6B@": 8042796,
+    "??_7?$DynamicVectorClass@USwizzlePointerClass@@@@6B@": 8045404,
+    "?Process_Tables@SwizzleManagerClass@@AAEXXZ": 6945840,
+    "??0SwizzleManagerClass@@QAE@XZ": 6945376,
+    "??1SwizzleManagerClass@@QAE@XZ": 6945456,
+    "?QueryInterface@SwizzleManagerClass@@UAGJABUGUID@@PAPAX@Z": 6946064,
+    "_IID_ISwizzle": 8003680,
+    "?unknown_slot67@ParticleSystemClass@@UAEXHH@Z": 6336656,
+    "?AI@SpawnManagerClass@@UAEXXZ": 6855824,
+    "?Focus_Loss@@YAXXZ": 7566240,
+    "__imp__FileTimeToSystemTime@8": 7971044,
+    "__imp__InitCommonControls@0": 7970860,
+    "__imp__LoadIconA@8": 7971868,
+    "__imp__LoadCursorA@8": 7971892,
+    "__imp__RegisterClassA@4": 7972044,
+    "__imp__CreateWindowExA@48": 7972040,
+    "__imp__GetMenu@4": 7971728,
+    "__imp__AdjustWindowRectEx@16": 7971812,
+    "_ImmGetContext@4": 7871520,
+    "__imp__RegisterHotKey@16": 7972100,
+    "__imp__SetCursor@4": 7971896,
+    "_ImmNotifyIME@16": 7871526,
+    "_ImmGetCompositionStringA@16": 7871538,
+    "__mbsnbcnt": 7884173,
+    "__imp__GetDlgCtrlID@4": 7971828,
+    "?One_Time@UnitTypeClass@@SAXXZ": 7383296,
+    "?Insert@WideString@@QAE_NGI@Z": 7800288,
+    "?Spring@TriggerClass@@QAE_NHPAVObjectClass@@_N1H@Z": 7264064,
+    "?unknown_func_6e6050@TEventClass@@QAE_NHPAVHouseClass@@PAVObjectClass@@PAV?$CDTimerClass@VFrameTimerClass@@@@PA_NH@Z": 7233616,
+    "?unknown_func_6e6cf0@TEventClass@@QBE_NXZ": 7236848,
+    "__real@8@3ffd9999999999999800": 7986512,
+    "??1LaserDrawClass@@QAE@XZ": 5452384,
+    "?Clear_All@LaserDrawClass@@SAXXZ": 5452464,
+    "?Update_All@LaserDrawClass@@SAXXZ": 5452784,
+    "?Attacked@HouseClass@@QAEXPAVTechnoClass@@@Z": 5132128,
+    "?unknown_func_4f3420@HouseClass@@QAEXXZ": 5190688,
+    "?unknown_func_4f5320@HouseClass@@QAE_NPAVBuildingTypeClass@@ABVCell@@@Z": 5198624,
+    "__imp__ValidateRect@8": 7971832,
+    "?unknown_func_4f2e50@HouseClass@@QAEXXZ": 5189200,
+    "?unknown_func_4f2fc0@HouseClass@@QAEXXZ": 5189568,
+    "?unknown_6d0990@TechnoClass@@QAEXUCoordStruct@@0VRGBClass@@@Z": 7145872,
+    "?Execute@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7002848,
+    "??1LineTrail@@QAE@XZ": 5477520,
+    "?Update_All@LineTrail@@SAXXZ": 5478144,
+    "?AI@LineTrail@@QAEXXZ": 5477680,
+    "?Draw@LineTrail@@QAEXXZ": 5477824,
+    "?Delete_All@LineTrail@@SAXXZ": 5478320,
+    "?AI@SpotLightClass@@QAEXXZ": 6149728,
+    "?Update_All@SpotLightClass@@SAXXZ": 6149840,
+    "??_7?$DynamicVectorClass@PAVKamikazeControl@@@@6B@": 8016820,
+    "?Clear@KamikazeTrackerClass@@QAEXXZ": 5446112,
+    "?Save@KamikazeTrackerClass@@QAEJPAUIStream@@@Z": 5446208,
+    "?Load@KamikazeTrackerClass@@QAEJPAUIStream@@@Z": 5446304,
+    "?Is_Built@BaseClass@@QBE_NH@Z": 4374528,
+    "?Get_Building@BaseClass@@QBEPAVBuildingClass@@H@Z": 4374688,
+    "?unknown_42c080@BaseClass@@QBE_NH@Z": 4374656,
+    "?Get_Node@BaseClass@@QAEPAVBaseNodeClass@@PAVBuildingClass@@@Z": 4375216,
+    "?Next_Buildable@BaseClass@@QAEPAVBaseNodeClass@@H@Z": 4375456,
+    "?Next_Buildable_Index@BaseClass@@QAEHH@Z": 4375504,
+    "?unknown_func_4f64c0@HouseClass@@QAE_NABVBaseNodeClass@@@Z": 5203136,
+    "?Save@BaseClass@@UAGJPAUIStream@@@Z": 4376800,
+    "?Compute_CRC@BaseClass@@UBEXAAVWWCRCEngine@@@Z": 4377072,
+    "?unknown_42cad0@BaseClass@@QAEXPAVBuildingClass@@@Z": 4377296,
+    "?unknown_42cb70@BaseClass@@QAEHPAVBaseNodeClass@@@Z": 4377456,
+    "?Just_Built@HouseClass@@QAEXPAVTechnoClass@@@Z": 5140240,
+    "?Increment@UnknownHouseCounter@@QAEXH@Z": 4791376,
+    "?Decrement@UnknownHouseCounter@@QAEXH@Z": 4791472,
+    "?First_Used_Slot@StorageClass@@QBEHXZ": 6926304,
+    "?Remove_Amount@StorageClass@@QAEMMH@Z": 6925936,
+    "??ZStorageClass@@QAE?AV0@ABV0@@Z": 6926240,
+    "??YStorageClass@@QAE?AV0@ABV0@@Z": 6926080,
+    "??_7?$DynamicVectorClass@PAVMultiplayerTeam@@@@6B@": 8024688,
+    "??_GMultiplayerGameMode@@UAEPAXI@Z": 6000144,
+    "?Unknown_0042E150@Unknown84E8D0@@QAEXXZ": 4383056,
+    "__imp__FileTimeToSystemTime": 7971044,
+    "__imp__SetFocus": 7971724,
+    "__imp__GetMenu": 7971728,
+    "__imp__GetSystemMetrics": 7971804,
+    "__imp__MoveWindow": 7971808,
+    "__imp__AdjustWindowRectEx": 7971812,
+    "__imp__GetDlgCtrlID": 7971828,
+    "__imp__ValidateRect": 7971832,
+    "__imp__LoadIconA": 7971868,
+    "__imp__LoadCursorA": 7971892,
+    "__imp__SetCursor": 7971896,
+    "__imp__UpdateWindow": 7971948,
+    "__imp__CreateWindowExA": 7972040,
+    "__imp__RegisterClassA": 7972044,
+    "__imp__RegisterHotKey": 7972100,
+    "__imp__ImmNotifyIME@16": 7970996,
+    "__imp__ImmNotifyIME": 7970996,
+    "__imp__ImmGetContext@4": 7971000,
+    "__imp__ImmGetContext": 7971000,
+    "__imp__ImmGetCompositionStringA@16": 7971004,
+    "__imp__ImmGetCompositionStringA": 7971004,
+    "??_7CaptureManagerClass@@6B@": 7985080,
+    "??_E?$DynamicVectorClass@PBVCommandClass@@@@UAEPAXI@Z": 4243568,
+    "??_E?$DynamicVectorClass@PAVLightConvertClass@@@@UAEPAXI@Z": 4244560,
+    "??_E?$DynamicVectorClass@USwizzlePointerClass@@@@UAEPAXI@Z": 6947200,
+    "??_ECaptureManagerClass@@UAEPAXI@Z": 4621184,
+    "??_E?$DynamicVectorClass@UWaypointClass@@@@UAEPAXI@Z": 7492560,
+    "??_E?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5686160,
+    "??_EMultiplayerGameMode@@UAEPAXI@Z": 6000144
   },
   "regions": [
     {
@@ -11024,7 +11182,7 @@
         {
           "offset": 392,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11032,7 +11190,7 @@
         {
           "offset": 400,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 8,
           "resolved": 11272032
@@ -11048,7 +11206,7 @@
         {
           "offset": 471,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11056,7 +11214,7 @@
         {
           "offset": 488,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11064,7 +11222,7 @@
         {
           "offset": 511,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11072,7 +11230,7 @@
         {
           "offset": 520,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11088,7 +11246,7 @@
         {
           "offset": 531,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 8,
           "resolved": 11272032
@@ -11096,7 +11254,7 @@
         {
           "offset": 542,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11104,7 +11262,7 @@
         {
           "offset": 547,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 8,
           "resolved": 11272032
@@ -11112,7 +11270,7 @@
         {
           "offset": 553,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 16,
           "resolved": 11272040
@@ -11120,7 +11278,7 @@
         {
           "offset": 559,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11128,7 +11286,7 @@
         {
           "offset": 564,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11136,7 +11294,7 @@
         {
           "offset": 577,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11144,7 +11302,7 @@
         {
           "offset": 583,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11152,7 +11310,7 @@
         {
           "offset": 592,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11160,7 +11318,7 @@
         {
           "offset": 599,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 12,
           "resolved": 11272036
@@ -11168,13 +11326,13 @@
         {
           "offset": 604,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
         }
       ],
-      "source_sha256": "512e6af01ca02b4a139606d32477ce2dae7a82461eb858e40bfac82c879455d3",
+      "source_sha256": "363573bbd50f174cfea42241ed410b2f019e39b64946b6fccce05229e367def4",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_constructor_004ff640.cpp",
       "population": "population-2630",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
@@ -11406,7 +11564,7 @@
         {
           "offset": 286,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11414,7 +11572,7 @@
         {
           "offset": 302,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 12,
           "resolved": 11272036
@@ -11422,7 +11580,7 @@
         {
           "offset": 309,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11430,7 +11588,7 @@
         {
           "offset": 314,
           "kind": 6,
-          "symbol": "?search_compfunc@?$UnknownIndexClass@JPAVObjectClass@@@@SAHPBX0@Z",
+          "symbol": "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z",
           "target": 4307472,
           "addend": 0,
           "resolved": 4307472
@@ -11446,7 +11604,7 @@
         {
           "offset": 329,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11454,7 +11612,7 @@
         {
           "offset": 338,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 16,
           "resolved": 11272040
@@ -11462,7 +11620,7 @@
         {
           "offset": 344,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 12,
           "resolved": 11272036
@@ -11470,7 +11628,7 @@
         {
           "offset": 360,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11478,7 +11636,7 @@
         {
           "offset": 365,
           "kind": 20,
-          "symbol": "?Binary_Search@@YIPAUNodeElement@?$UnknownIndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z",
+          "symbol": "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVAbstractClass@@@@PAU12@HABU12@@Z",
           "target": 5282016,
           "addend": 0,
           "resolved": 40431
@@ -11486,7 +11644,7 @@
         {
           "offset": 375,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11494,7 +11652,7 @@
         {
           "offset": 391,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11502,7 +11660,7 @@
         {
           "offset": 401,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11510,7 +11668,7 @@
         {
           "offset": 421,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11518,7 +11676,7 @@
         {
           "offset": 431,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11526,7 +11684,7 @@
         {
           "offset": 439,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11534,7 +11692,7 @@
         {
           "offset": 447,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -11542,7 +11700,7 @@
         {
           "offset": 453,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -11550,7 +11708,7 @@
         {
           "offset": 465,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 16,
           "resolved": 11272040
@@ -11564,7 +11722,7 @@
           "resolved": 4294717777
         }
       ],
-      "source_sha256": "a682e06829d6deed738f9e87ac590b5e17e7c1e68c7026f30dea07a0b8dadf42",
+      "source_sha256": "000f6a2c9e8d98c2c8942fe8a5ea4288617386d7601515e83984fbe484d45830",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_destructor_004ff980.cpp",
       "population": "population-2630",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -14046,8 +14204,8 @@
     {
       "entry": 5282016,
       "method": "005098e0",
-      "symbol": "?Binary_Search@@YIPAUNodeElement@?$UnknownIndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z",
-      "symbol_prefix": "?Binary_Search@@YIPAUNodeElement@?$UnknownIndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z",
+      "symbol": "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVAbstractClass@@@@PAU12@HABU12@@Z",
+      "symbol_prefix": "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVAbstractClass@@@@PAU12@HABU12@@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -14060,13 +14218,13 @@
       "full_extent_bytes": 80,
       "full_extent_sha256": "c5d34184ac2440d309df21fa2d16dcf7c6a38cd73adf1ad06205173bca7cc650",
       "relocations": [],
-      "source_sha256": "71b70d84a4449679adc4a566ddd02fc78c2a38c72bac1b0a591be0f1650d8282",
-      "source": "src/recovered/classes/UnknownIndexClass/UnknownIndexClass_Binary_Search_005098e0.cpp",
+      "source_sha256": "148ae27a9e5507d7d4b64e781e3b4564135aff5009f209f76679181c588cf18d",
+      "source": "src/recovered/classes/IndexClass_long_AbstractClass_ptr/IndexClass_long_AbstractClass_ptr_Binary_Search_005098e0.cpp",
       "population": "population-2630",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownIndexClass_Binary_Search_005098e0",
+      "semantic_name": "IndexClass_long_AbstractClass_ptr_Binary_Search_005098e0",
       "source_order": 101389
     },
     {
@@ -14509,7 +14667,7 @@
         {
           "offset": 23,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -14517,7 +14675,7 @@
         {
           "offset": 32,
           "kind": 20,
-          "symbol": "?Search_For_Node@?$UnknownIndexClass@JPAVObjectClass@@@@QAEPBUNodeElement@1@ABJ@Z",
+          "symbol": "?Search_For_Node@?$IndexClass@JPAVAbstractClass@@@@ABEPBUNodeElement@1@ABJ@Z",
           "target": 4307344,
           "addend": 0,
           "resolved": 4293997564
@@ -14525,7 +14683,7 @@
         {
           "offset": 42,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -14533,7 +14691,7 @@
         {
           "offset": 58,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -14541,7 +14699,7 @@
         {
           "offset": 68,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -14549,7 +14707,7 @@
         {
           "offset": 88,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -14557,7 +14715,7 @@
         {
           "offset": 98,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -14565,7 +14723,7 @@
         {
           "offset": 106,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -14573,7 +14731,7 @@
         {
           "offset": 114,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -14581,7 +14739,7 @@
         {
           "offset": 120,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -14589,7 +14747,7 @@
         {
           "offset": 132,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 16,
           "resolved": 11272040
@@ -14645,7 +14803,7 @@
         {
           "offset": 255,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -14653,7 +14811,7 @@
         {
           "offset": 262,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 8,
           "resolved": 11272032
@@ -14661,7 +14819,7 @@
         {
           "offset": 283,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -14669,7 +14827,7 @@
         {
           "offset": 288,
           "kind": 20,
-          "symbol": "?Increase_Table_Size@?$UnknownIndexClass@JPAVObjectClass@@@@QAE_NH@Z",
+          "symbol": "?Increase_Table_Size@?$IndexClass@JPAVAbstractClass@@@@QAE_NH@Z",
           "target": 4307200,
           "addend": 0,
           "resolved": 4293997164
@@ -14677,7 +14835,7 @@
         {
           "offset": 297,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -14685,7 +14843,7 @@
         {
           "offset": 303,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -14693,7 +14851,7 @@
         {
           "offset": 312,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -14701,7 +14859,7 @@
         {
           "offset": 317,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -14709,7 +14867,7 @@
         {
           "offset": 326,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -14717,7 +14875,7 @@
         {
           "offset": 333,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 12,
           "resolved": 11272036
@@ -14725,7 +14883,7 @@
         {
           "offset": 339,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -14779,7 +14937,7 @@
           "resolved": 1668134
         }
       ],
-      "source_sha256": "f13ab5a3c2496a97f12f3ebc7761031cf2dd7e43eb139242066ec69fd51d05a2",
+      "source_sha256": "d79bdc52de9e336e116d985a8f845a7aab785a2560e2d86df617b25bf3a3dee9",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_Load_00508570.cpp",
       "population": "population-2630",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",

@@ -23,7 +23,7 @@
 // @ref ?Init@TechnoClass@@UAEXXZ=006c1c50
 // @ref ?unknown_713520@UnknownTechnoPair@@QAEX_N@Z=00713520
 // @ref ?unknown_6d83f0@TechnoClass@@QAEXH@Z=006d83f0
-// @ref ?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A=00abff58
+// @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A=00abff58
 
 UnitClass::UnitClass(UnitTypeClass *type, HouseClass *house) :
     FootClass(house),

@@ -12,7 +12,7 @@
 // @ref __imp__OleRun@4=0079a5f4
 // @ref ?_com_issue_error@@YGXJ@Z=00795940
 // @ref ?Aircraft@@3V?$DynamicVectorClass@PAVAircraftClass@@@@A=00a40398
-// @ref ?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A=00abff58
+// @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A=00abff58
 // @ref ??_U@YAPAXI@Z=00782017
 // @ref ??_7AircraftClass@@6BIPersistStream@@@=0079b12c
 // @ref ??_7AircraftClass@@6BIRTTITypeInfo@@@=0079b110

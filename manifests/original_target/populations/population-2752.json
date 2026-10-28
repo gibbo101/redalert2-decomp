@@ -4,8 +4,8 @@
     "id": "population-2752",
     "inventory_sha256": "28e9fa397503adfce58488a8d7b17e7fb9e6de3fb03f54aa645cfaec64ec2bf3",
     "gaps_sha256": "615f5e6a920a487233d3ac955d40c7a490f62103cb54a72a51e397644b61cbe8",
-    "historical_population_sha256": "050ff3b01b2ac81ceeda057293e4948d96bb9335c79005f12e4b2c5fb3990aab",
-    "historical_acceptance_sha256": "81444a71c8c73dc0051a98f5025c721c0fd0cca3f29ae4f35d0b47f97ad8d59a"
+    "historical_population_sha256": "03b5bbf493c3323bdbf2927132911b3e65928dd3fdde4a820932c862b3c32203",
+    "historical_acceptance_sha256": "1838797105f41494ff1030c969515bd3f4960b690a7d1650e1bed40131c5b898"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2830,7 +2830,7 @@
     "?Name@MissionControlClass@@QBEPBDXZ": 5852688,
     "__imp__InitializeCriticalSection@4": 7971304,
     "?Error@?$Int@$0EA@@@2HA": 10753984,
-    "?search_compfunc@?$UnknownIndexClass@JPAVObjectClass@@@@SAHPBX0@Z": 4307472,
+    "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z": 4307472,
     "?Time@ConnectionClass@@SAKXZ": 4724160,
     "?One_Time@SidebarClass@@UAEXXZ": 6797456,
     "?One_Time@PowerClass@@UAEXXZ": 6407504,
@@ -2989,9 +2989,9 @@
     "?Save@UnknownHouseCounter@@QAEXPAUIStream@@@Z": 4791728,
     "?Init@BuildingClass@@UAEXXZ": 4454464,
     "?Delete@?$DynamicVectorClass@PAVBuildingClass@@@@QAE_NH@Z": 4541280,
-    "?Search_For_Node@?$UnknownIndexClass@JPAVObjectClass@@@@QAEPBUNodeElement@1@ABJ@Z": 4307344,
+    "?Search_For_Node@?$IndexClass@JPAVAbstractClass@@@@ABEPBUNodeElement@1@ABJ@Z": 4307344,
     "?Load@BuildingClass@@UAGJPAUIStream@@@Z": 4517776,
-    "?Increase_Table_Size@?$UnknownIndexClass@JPAVObjectClass@@@@QAE_NH@Z": 4307200,
+    "?Increase_Table_Size@?$IndexClass@JPAVAbstractClass@@@@QAE_NH@Z": 4307200,
     "?Save@BuildingClass@@UAGJPAUIStream@@H@Z": 4518640,
     "?Load@BuildingTypeClass@@UAGJPAUIStream@@@Z": 4578704,
     "?Save@BuildingTypeClass@@UAGJPAUIStream@@H@Z": 4579360,
@@ -3080,7 +3080,7 @@
     "?Init@BuildingTypeClass@@SIXH@Z": 4556288,
     "?Load@AircraftClass@@UAGJPAUIStream@@@Z": 4303744,
     "?Init@InfantryClass@@UAEXXZ": 5241008,
-    "?Binary_Search@@YIPAUNodeElement@?$UnknownIndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
+    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVAbstractClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Fetch@?$VectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UBE?AV?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@H@Z": 5037840,
     "?Clear@?$VectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEXXZ": 5039712,
     "?Clear@?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEXXZ": 5040064,
@@ -8429,7 +8429,7 @@
     "?unknown_func_60c050@ParticleSystemClass@@QAEXXZ": 6340688,
     "_unknown_uuid_IUnknown_7ce610": 8185360,
     "_unknown_uuid_ILocomotion_7ce600": 8185344,
-    "?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A": 11272024,
+    "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A": 11272024,
     "?unknown_713520@UnknownTechnoPair@@QAEX_N@Z": 7419168,
     "?Set_ROT@FacingClass@@QAEXH@Z": 4951696,
     "?Set_Current@FacingClass@@QAE_NABUUnknownFacingDir@@@Z": 4950800,
@@ -12404,7 +12404,7 @@
         {
           "offset": 33,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
@@ -12412,7 +12412,7 @@
         {
           "offset": 43,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 12,
           "resolved": 11272036
@@ -12420,7 +12420,7 @@
         {
           "offset": 50,
           "kind": 6,
-          "symbol": "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z",
+          "symbol": "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z",
           "target": 4307472,
           "addend": 0,
           "resolved": 4307472
@@ -12428,7 +12428,7 @@
         {
           "offset": 58,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -12444,7 +12444,7 @@
         {
           "offset": 73,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 16,
           "resolved": 11272040
@@ -12452,7 +12452,7 @@
         {
           "offset": 79,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 12,
           "resolved": 11272036
@@ -12460,7 +12460,7 @@
         {
           "offset": 86,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 0,
           "resolved": 11272024
@@ -12468,7 +12468,7 @@
         {
           "offset": 105,
           "kind": 6,
-          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A",
+          "symbol": "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A",
           "target": 11272024,
           "addend": 4,
           "resolved": 11272028
