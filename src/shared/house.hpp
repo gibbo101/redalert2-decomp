@@ -219,6 +219,7 @@ public:
     float Cost_Multiplier(TechnoTypeClass const *type);    // 0x004F5960
     bool Unknown_004F52B0();                               // 0x004F52B0 (TechnoClass slots 24, 38, 39, 80)
     bool Unknown_004F52F0();                               // 0x004F52F0
+    float Unknown_004F5B30();                              // 0x004F5B30 (a float of the owner type, +0x148; UnitClass 0x00707130 scales the load value by it)
     void Unknown_004E5280(int amount);                      // 0x004E5280 (spends credits; TechnoClass slot 95 repair)
     void unknown_4e76a0(Cell const &cell, int arg2);          // 0x004E76A0 (UnitClass slot 52: a unit leaving a cell; hypothesis)
     void Unknown_004ED610(TechnoClass *techno, bool arg2);   // 0x004ED610 (TechnoClass slot 53: the object enters the map)

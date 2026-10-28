@@ -147,6 +147,7 @@ public:
     virtual bool unknown_slot284();                                   // slot 284 0x006FBBF0
     virtual void unknown_slot302(Cell const *cell, bool arg2);  // slot 302 0x00705160
     virtual void unknown_slot304();                                   // slot 304 0x00705070
+    virtual bool INoticeSink_Unknown(int code, int arg);              // INoticeSink (+8) slot 0 0x00709890 (vtable 0x007ADDD4)
 
     // New virtuals (slots 310-312); placeholders from ret N.
     virtual int unknown_slot310(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6);    // slot 310 0x006FF690
@@ -170,6 +171,7 @@ public:
     bool unknown_7013a0();                                            // 0x007013A0 (hypothesis: one step of harvesting)
     bool unknown_6fd930();                                            // 0x006FD930 (slot 132: may start deploying)
     bool unknown_6fdfc0();                                            // 0x006FDFC0 (slot 132: deploy check)
+    int unknown_707130();                                             // 0x00707130 (the value of the stored load scaled by the owner; inlined everywhere)
 
     int unknown_5a8;                        // +0x5A8 (-1)
     UnitTypeClass *Type;                    // +0x5AC
