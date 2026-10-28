@@ -566,7 +566,7 @@ public:
     bool unknown_6d8460() const;                                // 0x006D8460
     int unknown_6d8470() const;                                 // 0x006D8470
     int unknown_6d84a0();                                       // 0x006D84A0
-    void unknown_615360();                                      // 0x00615360 (out of this unit)
+    bool unknown_615360();                                      // 0x00615360 (out of this unit; returns al)
     static void __fastcall unknown_6d79c0(bool value);          // 0x006D79C0
     static void unknown_6d7990();                               // 0x006D7990 (restarts unknown_timer_ac0178 at 25)
     static void __fastcall unknown_6d8fd0(TechnoClass *techno, int value);   // 0x006D8FD0 (sets the talk-bubble techno and restarts its timer)
@@ -602,7 +602,7 @@ public:
     void unknown_6d0510(CoordStruct from, CoordStruct to, RGBClass color, int arg8, int arg9);   // 0x006D0510 (draws a line between two points)
     bool unknown_6d1440();                                      // 0x006D1440 (+0x408 set and its 0x00613B60 positive)
     int unknown_6d8480();                                       // 0x006D8480 (copies +0x100 into +0x104; whether it changed)
-    void unknown_6d1470();                                      // 0x006D1470 (0x00615360)
+    bool unknown_6d1470();                                      // 0x006D1470 (0x00615360's result; Fly 0x004BF1F0 tests al)
     void unknown_6d96a0();                                      // 0x006D96A0 (restarts the +0x148 timer at 4-8 when over 10)
     int unknown_6d85e0(int index);                              // 0x006D85E0 (a valid weapon index)
     int unknown_6cf9d0();                                       // 0x006CF9D0 (FootClass slot 176: times ZFudgeColumn)
