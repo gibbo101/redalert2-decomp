@@ -6,8 +6,7 @@
 #define VECTOR_IMPLEMENT_ALL
 #endif
 #include "shared/vector_class.hpp"
-
-class LineTrail;
+#include "shared/line_trail.hpp"
 
 // The unit's list of LineTrail objects (0x00A6E970; name is a hypothesis).
 DynamicVectorClass<LineTrail *> unknown_LineTrail_list_00a6e970;

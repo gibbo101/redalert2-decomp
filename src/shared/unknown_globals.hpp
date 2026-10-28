@@ -300,6 +300,7 @@ extern int unknown_b2a7ec;              // 0x00B2A7EC
 extern int unknown_b2a7fc;              // 0x00B2A7FC (the game ID the loading screen shows)
 extern int unknown_a40774;  // 0x00A40774 (a live-object count; BuildingClass, FactoryClass, ...)
 extern bool unknown_flag_a40958;  // 0x00A40958 (the destructor then calls ObjectClass slot 52)
+extern int unknown_a40b2c;          // 0x00A40B2C (LineTrail::Set_Decrement keeps the decrement when set, doubles it otherwise)
 extern bool unknown_flag_a40b30;  // 0x00A40B30 the sidebar is on the left
 extern float unknown_volume_a40b44;  // 0x00A40B44 sound effect volume scale
 extern bool unknown_flag_a40d04;  // 0x00A40D04 (FootClass::Detach keeps a live parasite while it is set)
