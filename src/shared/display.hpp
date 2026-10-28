@@ -20,16 +20,8 @@
 class ObjectClass;
 class BuildingTypeClass;
 
-// A display layer: a list of objects (RTTI vtable 0x0079E868, 10 slots).
-class LayerClass : public DynamicVectorClass<ObjectClass *> {
-public:
-    // Adds an object (sorted when asked) (0x005348A0, slot 7).
-    virtual bool Submit(ObjectClass *object, bool sort = false);
-    HRESULT Load(IStream *stream);                  // 0x00534A80
-    HRESULT Save(IStream *stream);                  // 0x00534A10
-    virtual void unknown_slot8();
-    virtual void unknown_slot9();
-};
+// A display layer (LayerClass): shared/layer.hpp.
+#include "shared/layer.hpp"
 
 // A three-component offset with an out-of-line constructor (0x0041B630)
 // and length (0x0041B780) (hypothesis: a coordinate difference class).
