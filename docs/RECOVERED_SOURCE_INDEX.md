@@ -46,13 +46,13 @@
 | [classes/TerrainClass](../src/recovered/classes/TerrainClass/) | 27 | 5,297 | 27 | 0x004D3310–0x006E4B50 |
 | [classes/WaveClass](../src/recovered/classes/WaveClass/) | 27 | 5,184 | 27 | 0x004D3090–0x00724600 |
 | [classes/PlanningNodeClass](../src/recovered/classes/PlanningNodeClass/) | 53 | 5,093 | 53 | 0x00610440–0x0061A060 |
+| [classes/WideString](../src/recovered/classes/WideString/) | 42 | 5,012 | 42 | 0x0076F9B0–0x00771580 |
 | [classes/XSurface](../src/recovered/classes/XSurface/) | 34 | 4,975 | 34 | 0x004112E0–0x007758F0 |
 | [classes/TeamTypeClass](../src/recovered/classes/TeamTypeClass/) | 28 | 4,960 | 28 | 0x004D3990–0x006C0280 |
 | [classes/VeinholeMonsterClass](../src/recovered/classes/VeinholeMonsterClass/) | 23 | 4,941 | 23 | 0x0070F780–0x00712730 |
 | [classes/MSChoice](../src/recovered/classes/MSChoice/) | 72 | 4,912 | 72 | 0x005B16E0–0x005B2B70 |
 | [classes/SaveLoad](../src/recovered/classes/SaveLoad/) | 15 | 4,853 | 15 | 0x00654C40–0x0065B150 |
 | [classes/SpawnManagerClass](../src/recovered/classes/SpawnManagerClass/) | 22 | 4,831 | 22 | 0x00689690–0x0068AA00 |
-| [classes/WideString](../src/recovered/classes/WideString/) | 41 | 4,768 | 41 | 0x0076F9B0–0x00771580 |
 | [classes/WeaponTypeClass](../src/recovered/classes/WeaponTypeClass/) | 20 | 4,679 | 20 | 0x0040F8F0–0x00733FF0 |
 | [classes/MapSeedClass](../src/recovered/classes/MapSeedClass/) | 18 | 4,612 | 12 | 0x00576F50–0x0058DA50 |
 | [classes/HouseTypeClass](../src/recovered/classes/HouseTypeClass/) | 23 | 4,609 | 23 | 0x004D3890–0x004FB6D0 |
@@ -140,6 +140,7 @@
 | [classes/TeleportLocomotionClass](../src/recovered/classes/TeleportLocomotionClass/) | 27 | 1,528 | 27 | 0x006DFCA0–0x006E1C70 |
 | [classes/Dial8Class](../src/recovered/classes/Dial8Class/) | 5 | 1,504 | 4 | 0x00496D30–0x00497320 |
 | [classes/CampaignClass](../src/recovered/classes/CampaignClass/) | 14 | 1,503 | 14 | 0x00465450–0x004D37D0 |
+| [classes/UnitTypeClass](../src/recovered/classes/UnitTypeClass/) | 22 | 1,501 | 22 | 0x004D3D10–0x0070B600 |
 | [classes/VectorClass](../src/recovered/classes/VectorClass/) | 15 | 1,500 | 15 | 0x0045EDF0–0x00634E20 |
 | [classes/GadgetClass](../src/recovered/classes/GadgetClass/) | 28 | 1,479 | 28 | 0x00483560–0x004CF6A0 |
 | [classes/VectorClass_SubzoneTrackingStruct](../src/recovered/classes/VectorClass_SubzoneTrackingStruct/) | 8 | 1,468 | 7 | 0x0056ABF0–0x0056CC40 |
@@ -154,7 +155,6 @@
 | [classes/LocomotionClass](../src/recovered/classes/LocomotionClass/) | 55 | 1,394 | 54 | 0x004A4BF0–0x0053D610 |
 | [classes/SmudgeClass](../src/recovered/classes/SmudgeClass/) | 14 | 1,381 | 14 | 0x004D3290–0x00687B00 |
 | [win_stub](../src/recovered/win_stub/) | 7 | 1,319 | 7 | 0x007373A0–0x00737FC0 |
-| [classes/UnitTypeClass](../src/recovered/classes/UnitTypeClass/) | 21 | 1,301 | 21 | 0x004D3D10–0x0070B600 |
 | [classes/EnumConnectionsClass](../src/recovered/classes/EnumConnectionsClass/) | 10 | 1,265 | 7 | 0x00492180–0x00492650 |
 | [classes/RadSiteClass](../src/recovered/classes/RadSiteClass/) | 20 | 1,252 | 20 | 0x00637220–0x00637F90 |
 | [classes/AbstractTypeClass](../src/recovered/classes/AbstractTypeClass/) | 11 | 1,237 | 11 | 0x00410580–0x004D4450 |
@@ -198,6 +198,7 @@
 | [classes/VectorClass_VoxelAnimTypeClass_ptr](../src/recovered/classes/VectorClass_VoxelAnimTypeClass_ptr/) | 14 | 960 | 11 | 0x004D5720–0x00654960 |
 | [classes/IsometricTileTypeClass](../src/recovered/classes/IsometricTileTypeClass/) | 17 | 958 | 16 | 0x004D3F90–0x0052E6B0 |
 | [classes/BombListClass](../src/recovered/classes/BombListClass/) | 7 | 952 | 7 | 0x00436470–0x004367C0 |
+| [classes/SliderClass](../src/recovered/classes/SliderClass/) | 12 | 943 | 12 | 0x0053AAE0–0x00684D10 |
 | [classes/VectorClass_RGBClass](../src/recovered/classes/VectorClass_RGBClass/) | 9 | 937 | 7 | 0x0046CDA0–0x0046DD20 |
 | [classes/SpecialClass](../src/recovered/classes/SpecialClass/) | 2 | 935 | 2 | 0x0068B430–0x0068B5A0 |
 | [classes/PacketField_004BAD50](../src/recovered/classes/PacketField_004BAD50/) | 11 | 933 | 11 | 0x004BAD50–0x004BB0F0 |
@@ -219,7 +220,6 @@
 | [classes/StaticButtonClass](../src/recovered/classes/StaticButtonClass/) | 8 | 840 | 8 | 0x00698760–0x00698AA0 |
 | [classes/AlphaShapeClass](../src/recovered/classes/AlphaShapeClass/) | 12 | 836 | 12 | 0x0041EB60–0x0041F9C0 |
 | [classes/PKStraw](../src/recovered/classes/PKStraw/) | 8 | 835 | 8 | 0x0060FE30–0x00610150 |
-| [classes/SliderClass](../src/recovered/classes/SliderClass/) | 11 | 835 | 11 | 0x0053AAE0–0x00684D10 |
 | [classes/VectorClass_int](../src/recovered/classes/VectorClass_int/) | 12 | 835 | 8 | 0x0046CCD0–0x00652810 |
 | [classes/DynamicVectorClass_AnimClass_ptr](../src/recovered/classes/DynamicVectorClass_AnimClass_ptr/) | 12 | 822 | 8 | 0x004D5070–0x00520F50 |
 | [classes/GraphicMenuAnimItem](../src/recovered/classes/GraphicMenuAnimItem/) | 4 | 817 | 3 | 0x004DF350–0x004DF7B0 |
@@ -1233,7 +1233,7 @@
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 
-1226 directories, 14294 regions. Generated by `tools/original_target/source_index.py`.
+1226 directories, 14297 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
