@@ -1,5 +1,5 @@
 // int __stdcall Game_Controls_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam) (0x004CFC00)
-// Dialog procedure of the Game Controls dialog (the WM_COMMAND handler is a static function inlined here): the shared handler first, then
+// Dialog procedure of the Game Controls dialog (the WM_COMMAND handler Game_Controls_Command, 0x004CFFB0, is defined here and inlined here): the shared handler first, then
 // 0x497 (initialisation: the speed, scroll rate, detail and difficulty sliders
 // get their range 0-6 / 0-2 and position, the check boxes their state, the
 // hotkey button is enabled when sound is available), WM_COMMAND
@@ -28,10 +28,11 @@
 // @ref ?Difficulty_Labels@@3PAPBDA=007d8404
 // @ref ??_C@_0BD@HMDA@D?3?2Ra2?2GameDlg?4CPP?$AA@=007d84d8
 
-// WM_COMMAND of the dialog (0x004CFFB0 holds an out-of-line copy with no callers; it ends in the
-// shared ret 8 that the inventory has as its own region 0x004D0020): stores the result through the
-// DWL_USER pointer; 0x52C and 0x52D (notification 0, in a game) also set the radar mode 4 / 6; 0x686: 1.
-static void __fastcall Game_Controls_Command(HWND window, int id, HWND control, unsigned code)
+// void __fastcall Game_Controls_Command(HWND window, int id, HWND control, unsigned code) (0x004CFFB0)
+// WM_COMMAND of the dialog: stores the result through the DWL_USER pointer; 0x52C and 0x52D
+// (notification 0, in a game) also set the radar mode 4 / 6; 0x686: 1. Proc inlines it; the
+// out-of-line copy at 0x004CFFB0 has no callers and its final `ret 8` is the former region 0x004D0020.
+void __fastcall Game_Controls_Command(HWND window, int id, HWND control, unsigned code)
 {
     int *result = (int *)GetWindowLongA(window, 8);
     switch (id) {

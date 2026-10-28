@@ -21,6 +21,9 @@ public:
 // The dialog procedure (0x004CFC00).
 int __stdcall Game_Controls_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 
+// WM_COMMAND handler of the dialog (0x004CFFB0, inlined into Game_Controls_Proc; defined in its file).
+void __fastcall Game_Controls_Command(HWND window, int id, HWND control, unsigned code);
+
 // Label keys by slider position (the slider text at 0x671 / 0x672 / 0x673 / 0x670 shows the label).
 extern char const *Game_Speed_Labels[7];        // 0x007D83C0 TXT_SLOWEST .. TXT_FASTEST
 extern char const *Scroll_Rate_Labels[7];       // 0x007D83DC the same seven labels

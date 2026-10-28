@@ -8,7 +8,7 @@
 | --- | ---: | ---: | ---: | --- |
 | [unowned](../src/recovered/unowned/) | 741 | 80,768 | 741 | 0x004011C0–0x0077CB70 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
-| (discovery: address-named) | 1530 | 46,127 | 0 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1529 | 46,124 | 0 | 0x004010A0–0x00797198 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 157 | 38,753 | 157 | 0x00438A60–0x004D3450 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 183 | 31,628 | 180 | 0x0041B370–0x006D9750 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 57 | 28,013 | 57 | 0x00457A50–0x004D3C50 |
@@ -187,6 +187,7 @@
 | [classes/VQAClass](../src/recovered/classes/VQAClass/) | 26 | 1,066 | 26 | 0x0071C8A0–0x0071D7B0 |
 | [classes/ConnectionPointClass](../src/recovered/classes/ConnectionPointClass/) | 10 | 1,062 | 9 | 0x004926B0–0x00492AD0 |
 | [classes/SideClass](../src/recovered/classes/SideClass/) | 11 | 1,051 | 11 | 0x004D3810–0x0067B1F0 |
+| [game_controls](../src/recovered/game_controls/) | 2 | 1,050 | 2 | 0x004CFC00–0x004CFFB0 |
 | [classes/BombClass](../src/recovered/classes/BombClass/) | 14 | 1,045 | 10 | 0x00435B60–0x004369F0 |
 | [classes/SwizzleManagerClass](../src/recovered/classes/SwizzleManagerClass/) | 16 | 1,034 | 16 | 0x0069F950–0x0069FDC0 |
 | [classes/VectorClass_TerrainTypeClass_ptr](../src/recovered/classes/VectorClass_TerrainTypeClass_ptr/) | 16 | 1,032 | 13 | 0x004D5480–0x00654A00 |
@@ -207,7 +208,6 @@
 | [classes/SliderClass](../src/recovered/classes/SliderClass/) | 12 | 943 | 12 | 0x0053AAE0–0x00684D10 |
 | [classes/VectorClass_RGBClass](../src/recovered/classes/VectorClass_RGBClass/) | 9 | 937 | 7 | 0x0046CDA0–0x0046DD20 |
 | [classes/SpecialClass](../src/recovered/classes/SpecialClass/) | 2 | 935 | 2 | 0x0068B430–0x0068B5A0 |
-| [game_controls](../src/recovered/game_controls/) | 1 | 935 | 1 | 0x004CFC00–0x004CFC00 |
 | [classes/PacketField_004BAD50](../src/recovered/classes/PacketField_004BAD50/) | 11 | 933 | 11 | 0x004BAD50–0x004BB0F0 |
 | [classes/ShapeButtonClass](../src/recovered/classes/ShapeButtonClass/) | 12 | 922 | 11 | 0x004A55E0–0x00675370 |
 | [classes/ScriptClass](../src/recovered/classes/ScriptClass/) | 17 | 920 | 17 | 0x0040E590–0x00669250 |
