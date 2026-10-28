@@ -8,7 +8,7 @@
 | --- | ---: | ---: | ---: | --- |
 | [unowned](../src/recovered/unowned/) | 743 | 81,078 | 743 | 0x004011C0–0x0077CB70 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
-| (discovery: address-named) | 1528 | 46,121 | 0 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1526 | 45,980 | 0 | 0x004010A0–0x00797198 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 157 | 38,753 | 157 | 0x00438A60–0x004D3450 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 183 | 31,628 | 180 | 0x0041B370–0x006D9750 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 57 | 28,013 | 57 | 0x00457A50–0x004D3C50 |
@@ -381,6 +381,7 @@
 | [classes/DynamicVectorClass_MultiplayerGameMode_ptr](../src/recovered/classes/DynamicVectorClass_MultiplayerGameMode_ptr/) | 6 | 449 | 3 | 0x005B9000–0x005B97F0 |
 | [classes/DynamicVectorClass_PlanningBranchClass_ptr](../src/recovered/classes/DynamicVectorClass_PlanningBranchClass_ptr/) | 6 | 449 | 4 | 0x0061A980–0x0061BB00 |
 | [classes/DynamicVectorClass_PlanningMemberClass_ptr](../src/recovered/classes/DynamicVectorClass_PlanningMemberClass_ptr/) | 6 | 449 | 4 | 0x0061A920–0x0061BA60 |
+| [classes/MessageListClass](../src/recovered/classes/MessageListClass/) | 3 | 447 | 3 | 0x005B4BD0–0x005B4C60 |
 | [classes/DynamicVectorClass_AngerStruct](../src/recovered/classes/DynamicVectorClass_AngerStruct/) | 5 | 446 | 3 | 0x004F6C60–0x004F8580 |
 | [classes/DynamicVectorClass_ScoutStruct](../src/recovered/classes/DynamicVectorClass_ScoutStruct/) | 5 | 446 | 3 | 0x004F6CD0–0x004F8620 |
 | [classes/ApplicationClass](../src/recovered/classes/ApplicationClass/) | 12 | 444 | 10 | 0x00426B00–0x00426E50 |
@@ -875,7 +876,6 @@
 | [classes/TClassFactory_SuperWeaponTypeClass](../src/recovered/classes/TClassFactory_SuperWeaponTypeClass/) | 5 | 308 | 5 | 0x00691AF0–0x00691C30 |
 | [classes/TClassFactory_VoxelAnimTypeClass](../src/recovered/classes/TClassFactory_VoxelAnimTypeClass/) | 5 | 308 | 5 | 0x00693770–0x006938B0 |
 | [classes/TClassFactory_WarheadTypeClass](../src/recovered/classes/TClassFactory_WarheadTypeClass/) | 5 | 308 | 5 | 0x006974F0–0x00697630 |
-| [classes/MessageListClass](../src/recovered/classes/MessageListClass/) | 1 | 306 | 1 | 0x005B4C60–0x005B4C60 |
 | [classes/TClassFactory_CellClass](../src/recovered/classes/TClassFactory_CellClass/) | 5 | 306 | 5 | 0x00691F70–0x006920B0 |
 | [classes/TClassFactory_WaveClass](../src/recovered/classes/TClassFactory_WaveClass/) | 5 | 306 | 5 | 0x00691670–0x006917B0 |
 | [classes/RLEBlitTransZRemapXlatZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransZRemapXlatZReadWrite_unsigned_short/) | 2 | 305 | 2 | 0x0048A5A0–0x0048D450 |

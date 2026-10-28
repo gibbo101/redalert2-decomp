@@ -4,17 +4,34 @@
 #ifndef RA2_SHARED_MESSAGE_LIST_HPP
 #define RA2_SHARED_MESSAGE_LIST_HPP
 
-#include "shared/gadget.hpp"
 #include "shared/debug_printf.hpp"
+
+// A message node (the list is linked through the LinkClass-style slots: slot 9 removes the node and returns the next one).
+class UnknownMessageNode {
+public:
+    virtual ~UnknownMessageNode();                              // slot 0
+    virtual void unknown_slot1();
+    virtual void unknown_slot2();
+    virtual void unknown_slot3();
+    virtual void unknown_slot4();
+    virtual void unknown_slot5();
+    virtual void unknown_slot6();
+    virtual void unknown_slot7();
+    virtual void unknown_slot8();
+    virtual UnknownMessageNode *Remove();                       // slot 9
+};
 
 class MessageListClass {
 public:
+    MessageListClass();                                                             // 0x005B4BD0
+    // Init with the default width of 640 (0x005B4C40).
+    void Reset();
     // Resets the list and its geometry: position, maximum messages (at most 14) and characters (at most 112),
     // an optional second position (-1: the same), and the selection range; width is the pixel width.
     void Init(int x, int y, int max_messages, int max_chars, int unknown_arg5, int x2, int y2,
         bool unknown_flag, int first, int last, int width);                         // 0x005B4C60
 
-    LinkClass *First;               // +0x000 the message nodes
+    UnknownMessageNode *First;               // +0x000 the message nodes
     int X;                          // +0x004
     int Y;                          // +0x008
     int MaxMessages;                // +0x00C
@@ -25,7 +42,7 @@ public:
     bool unknown_1a;                // +0x01A (set when no second position)
     int unknown_1c;                 // +0x01C
     int unknown_20;                 // +0x020
-    LinkClass *unknown_24;          // +0x024
+    UnknownMessageNode *unknown_24;          // +0x024
     short unknown_28;               // +0x028
     char unknown_2a[0x16C - 0x2A];
     short unknown_16c;              // +0x16C

@@ -11,7 +11,7 @@ void MessageListClass::Init(int x, int y, int max_messages, int max_chars, int u
 {
     TextWidth = width - 8;
     Debug_Printf("MessageListClass::Init(Width: %d)\n", width - 8);
-    LinkClass *node = First;
+    UnknownMessageNode *node = First;
     while (node) {
         First = node->Remove();
         if (node) {
