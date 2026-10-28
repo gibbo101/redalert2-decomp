@@ -80,7 +80,7 @@
 // @ref ??_G?$TypeList@PAVTechnoTypeClass@@@@UAEPAXI@Z=0046ceb0
 // @ref ??_G?$VectorClass@H@@UAEPAXI@Z=0046da70
 // @ref ??_G?$VectorClass@PAVTechnoTypeClass@@@@UAEPAXI@Z=0046dac0
-// @ref ?Assign_Houses_0065fbb0@@YIXXZ=0065fbb0
+// @ref ?Assign_Houses_0065fbb0@@YAXXZ=0065fbb0
 // @ref ?Clear@?$DynamicVectorClass@H@@UAEXXZ=0046cc80
 // @ref ?Clear@?$DynamicVectorClass@PAVTechnoTypeClass@@@@UAEXXZ=0046cce0
 // @ref ?Clear@?$VectorClass@H@@UAEXXZ=0046d160
