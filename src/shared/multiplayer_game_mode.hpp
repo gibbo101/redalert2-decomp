@@ -103,8 +103,8 @@ public:
     virtual void unknown_slot31() {}                             // 31 0x005A2450
     virtual int unknown_slot32() { return -1; }                  // 32 0x005A2460
     virtual void unknown_slot33() {}                             // 33 0x005A2470
-    virtual void unknown_slot34(int unknown) {}                  // 34 0x005A2480
-    virtual void unknown_slot35(int unknown) {}                  // 35 0x005A2490
+    virtual void unknown_slot34(bool unknown) {}                 // 34 0x005A2480
+    virtual void unknown_slot35(bool unknown) {}                 // 35 0x005A2490
     virtual bool unknown_slot36() { return false; }              // 36 0x005A24A0
     virtual void unknown_slot37() {}                             // 37 0x005A24B0
     virtual void unknown_slot38() {}                             // 38 0x005A24C0
@@ -272,8 +272,8 @@ public:
     virtual void unknown_slot31();                                 // 31 0x005A5190
     virtual int unknown_slot32();                                  // 32 0x005A5340
     virtual void unknown_slot33();                                 // 33 0x005A4F90
-    virtual void unknown_slot34(int unknown);                      // 34 0x005A46C0
-    virtual void unknown_slot35(int unknown);                      // 35 0x005A5570
+    virtual void unknown_slot34(bool unknown);                     // 34 0x005A46C0
+    virtual void unknown_slot35(bool unknown);                     // 35 0x005A5570
     virtual bool unknown_slot36();                                 // 36 0x005A5350
     virtual void unknown_slot37();                                 // 37 0x005A5720
     virtual void unknown_slot38();                                 // 38 0x005A6040

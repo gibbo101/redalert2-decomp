@@ -4,8 +4,8 @@
     "id": "population-2541",
     "inventory_sha256": "b3b9e1baf904bdb20187007c7bf7a0ac30fe8046f869afbb5873280ba55b4eb6",
     "gaps_sha256": "d78b260202eb60609c9d577a2d3339d2762a4d5f43c06c47dcfb803eeae9722b",
-    "historical_population_sha256": "ffae45eb464aaa7ffc9bdf077f0d11614d21cbad20810cf668eb9f0996cd7f58",
-    "historical_acceptance_sha256": "32ca2410554fae9588f35a58df1335c1cefcb777ddd49a0232cb21e9bed1c2dc"
+    "historical_population_sha256": "84b5d2b4eb0c2d1567f4be46eeb3eca1e5e2c15997cd3f522ac12f1719444260",
+    "historical_acceptance_sha256": "815a0e34bd14995535799950abd99e4a00e50eb7c9c7a4e7c8aefe4206d8e8ef"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5681,7 +5681,7 @@
     "?unknown_slot33@PowerClass@@UAEPBGH@Z": 6410688,
     "?unknown_slot33@TabClass@@UAEPBGH@Z": 6955184,
     "?unknown_slot33@TechnoTypeClass@@UBEHH@Z": 7187760,
-    "?unknown_slot34@MultiplayerGameMode@@UAEXH@Z": 5907584,
+    "?unknown_slot34@MultiplayerGameMode@@UAEX_N@Z": 5907584,
     "?unknown_slot34@ObjectClass@@UAEHXZ": 6106112,
     "?unknown_slot34@ObjectTypeClass@@UBEHXZ": 6118768,
     "?unknown_slot34@PowerClass@@UAEXXZ": 6410544,
@@ -5697,7 +5697,7 @@
     "?unknown_slot35@InfantryClass@@UAEPBGXZ": 5267808,
     "?unknown_slot35@InfantryTypeClass@@UBEPAVObjectClass@@PAVHouseClass@@@Z": 5283568,
     "?unknown_slot35@IsometricTileTypeClass@@UBEPAVObjectClass@@PAVHouseClass@@@Z": 5431328,
-    "?unknown_slot35@MultiplayerGameMode@@UAEXH@Z": 5907600,
+    "?unknown_slot35@MultiplayerGameMode@@UAEX_N@Z": 5907600,
     "?unknown_slot35@ParticleSystemTypeClass@@UBEPAVObjectClass@@PAVHouseClass@@@Z": 6426288,
     "?unknown_slot35@ParticleTypeClass@@UBEPAVObjectClass@@PAVHouseClass@@@Z": 6430320,
     "?unknown_slot35@ScrollClass@@UAEXXZ": 6728736,
