@@ -129,11 +129,7 @@ public:
     bool unknown_6c;                                    // +0x6C (on hold; hypothesis)
     ObjectClass *Get_Object();                          // 0x004B9930 the object being built (a TechnoClass)
 };
-// Forgets a building pending placement (0x006F8A20; seed name FUN_006f8a20).
-class BuildingClass;
-void __fastcall Unknown_006F8A20(BuildingClass *building);
-// Pending placement of a completed building (0x006F8A00; seed FUN_006f8a00).
-void __fastcall Unknown_006F8A00(BuildingClass *building);
+// Unknown_006F8A20/Unknown_006F8A00 (building placement): shared/unknown_globals.hpp.
 // The placement cell the sidebar passes with a place event (0x00AB9698).
 extern Cell unknown_cell_ab9698;
 

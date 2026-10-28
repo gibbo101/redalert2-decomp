@@ -6,14 +6,12 @@
 #include "shared/t_timer.hpp"
 #include "shared/fixed_string.hpp"
 #include "shared/type_list_decl.hpp"
+#include "shared/random2.hpp"
 // The source of new object IDs (hypothesis; the pointer at 0x00A3D290).
 // Hypothesis: the scenario (ScenarioClass): its random generator is at +0x218
-// (shared/random.hpp's Random2Class; declared by accessor because including
-// random.hpp here renumbers every unit's static initializers: Random3Class's
-// static members take compiler counter values), the difficulty at +0x60C
+// (shared/random2.hpp's Random2Class), the difficulty at +0x60C
 // (Trigger.cpp), the theater at +0x838 (AnimType.cpp).
 class TechnoTypeClass;
-class Random2Class;
 class CellClass;
 class SpecialClass;
 class CCINIClass;
@@ -22,6 +20,13 @@ struct UnknownScenarioVariable_004B5AB0 { char unknown_00[40]; bool Value; };
 typedef char ScenarioVariable_stride_check[(sizeof(UnknownScenarioVariable_004B5AB0)==41)?1:-1];
 class UnknownIDSource {
 public:
+    // Builds the scenario with its defaults (0x0065B4F0; Set_Defaults, the
+    // special options, no waypoints, names or variables).
+    UnknownIDSource();
+    // Restores a saved scenario in place: the generator and the +0x620 timer
+    // and loadout lists are rebuilt, the mission timer text reloaded from its
+    // label (0x0065B780).
+    UnknownIDSource(NoInitClass const &noinit);
     // 0x0051FC50 is a free function (shared/team.hpp): it reads the byte at 0x00A51934.
     long Next_ID();                             // 0x00663170 (name hypothesis)
     CellClass *unknown_6631a0(int waypoint);            // 0x006631A0 (the map cell of a waypoint; hypothesis)
@@ -49,7 +54,7 @@ public:
     void Write_Waypoints(CCINIClass &ini);
     // The name of the first unset waypoint, or "" (0x00663440).
     char const *Free_Waypoint_Name() const;
-    Random2Class &Random() { return *(Random2Class *)((char *)this + 0x218); }   // +0x218
+    Random2Class &Random() { return RandomNumber; }
     // The elapsed game-time timer (ApplicationClass slot 7, 0x00426E00).
     TTimerClass<SystemTimerClass> &Elapsed_Time() { return ElapsedTime; }
 
@@ -82,7 +87,7 @@ public:
     int HomeCell;                               // +0x20C [Basic] HomeCell
     int AltHomeCell;                            // +0x210 [Basic] AltHomeCell
     long UniqueID;                              // +0x214 the last object ID given out (Next_ID; 1000000 by default; name hypothesis)
-    char unknown_218[0x60C - 0x218];            // +0x218 Random2Class (see Random())
+    Random2Class RandomNumber;                  // +0x218 the scenario's generator (Random())
     int Difficulty;                             // +0x60C (0 easy, 1 normal, 2 hard; hypothesis)
     int unknown_610;                            // +0x610 (the difficulty of computer houses; hypothesis)
     TTimerClass<SystemTimerClass> ElapsedTime;  // +0x614 the elapsed game time

@@ -11,6 +11,8 @@
 #ifndef RA2_SHARED_RANDOM_HPP
 #define RA2_SHARED_RANDOM_HPP
 
+#include "shared/random2.hpp"
+
 // A random number in [minval, maxval] drawn with rejection sampling from the
 // generator's low bits.
 template<class T>
@@ -82,25 +84,5 @@ private:
     static unsigned long Mix1[20];      // 0x007EE4AC
     static unsigned long Mix2[20];      // 0x007EE4FC
 };
-
-class Random2Class {
-public:
-    Random2Class(unsigned seed = 0);                // 0x00638790
-
-    operator int() { return operator()(); }
-    int operator()();                               // 0x00638840
-    int operator()(int minval, int maxval);         // 0x006388A0
-
-    enum {
-        SIGNIFICANT_BITS = 32
-    };
-
-    bool unknown_0x00;      // +0x00 while set, the generator returns 0
-    int Index1;             // +0x04 table entry updated next
-    int Index2;             // +0x08 table entry mixed in (103 ahead)
-    int Table[250];         // +0x0C
-};
-
-extern Random2Class unknown_random_839218;      // 0x00839218 the generator audio and techno use
 
 #endif

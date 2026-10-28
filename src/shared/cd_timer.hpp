@@ -56,4 +56,9 @@ public:
     long DelayTime;         // +0x08
 };
 
+// A frame timer that TechnoClass 0x006D7990 restarts at 25 and Scenario.cpp's
+// post-load refresh 0x0065D2C0 restarts from the current frame (0x00AC0178;
+// declared here so units without the TechnoClass layout can use it).
+extern CDTimerClass<FrameTimerClass> unknown_timer_ac0178;  // 0x00AC0178
+
 #endif

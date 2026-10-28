@@ -6,6 +6,7 @@
 class Surface;
 class HouseClass;
 class ConvertClass;
+class BuildingClass;
 
 extern int unknown_int_7add80;
 extern ConvertClass *unknown_drawer_8323b8;  // 0x008323B8 (OverlayTypeClass slot 40; also CellClass 0x474C6B)
@@ -17,6 +18,7 @@ extern int unknown_int_839630;
 extern int unknown_int_839634;
 extern int unknown_int_839638;  // 0x00839638 sidebar x offset
 extern int unknown_int_839648;  // 0x00839648 screen width
+extern int unknown_int_83964c;  // 0x0083964C screen height
 extern Surface *unknown_surface_839948;  // 0x00839948 (sidebar surface)
 extern Surface *unknown_surface_839950;  // 0x00839950 screen
 extern Surface *unknown_surface_839954;  // 0x00839954 (Get_Input draws the buttons on it)
@@ -174,5 +176,23 @@ bool __fastcall Do_Reinforcements(TeamTypeClass *team, int waypoint);   // 0x006
 // Another reinforcement of a team type at a waypoint, in the same unit
 // (TActionClass 0x006B2810; meaning not recovered).
 bool __fastcall Unknown_0063A880(TeamTypeClass *team, int waypoint);    // 0x0063A880
+
+// Switches the display to width x height; false when the mode cannot be set
+// (0x005434E0; logs "About to set video mode").
+bool __fastcall Set_Video_Mode_005434e0(int width, int height);
+
+// Scenario.cpp's post-load refresh (0x0065D2C0) calls these in turn (meanings
+// not recovered): 0x006EA9B0 is empty, 0x006F89E0 sets 0x007F8BCC/0x007F8BD4 to
+// -100 and 0x007F8BD0 to -1, 0x0063C790 clears 0x00AB6788 (eight dwords) and
+// sets 0x00AB67C8/0x00AB6818 to -1.
+void Unknown_006EA9B0();
+void Unknown_00520770();
+void Unknown_006F89E0();
+void __fastcall Unknown_0063C790();
+
+// Forgets a building pending placement (0x006F8A20; seed name FUN_006f8a20).
+void __fastcall Unknown_006F8A20(BuildingClass *building);
+// Pending placement of a completed building (0x006F8A00; seed FUN_006f8a00).
+void __fastcall Unknown_006F8A00(BuildingClass *building);
 
 #endif

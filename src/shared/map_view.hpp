@@ -109,7 +109,9 @@ public:
 
     // The map's data the other units read, at its shared/map.hpp offsets
     // (the light class has no other members, so the gap is padding).
-    char unknown_010[0x120 - 0x10];
+    char unknown_010[0xE8 - 0x10];
+    Rect MapSize;                               // +0xE8 (shared/map.hpp)
+    char unknown_0f8[0x120 - 0xF8];
     int unknown_120;                            // +0x120 the map's first cell X (hypothesis: MapCellX)
     int unknown_124;                            // +0x124 the first cell Y
     int unknown_128;                            // +0x128 the width in cells
@@ -153,6 +155,7 @@ public:
     void Unknown_006331E0(bool flag);                                           // 0x006331E0
     void Unknown_00634030();                                                    // 0x00634030
     void Unknown_00630A00();                                                    // 0x00630A00
+    void Unknown_00631ED0();                                                    // 0x00631ED0 builds the radar's table and surfaces (load path)
 
     // The radar's data the other units read, at shared/radar.hpp's offset.
     char unknown_130[0x1220 - 0x130];
