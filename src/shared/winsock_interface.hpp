@@ -51,6 +51,14 @@ struct hostent {
     char **h_addr_list;                 // +0x0C
 };
 extern "C" hostent * __stdcall gethostbyname(char const *name);                     // 0x00781B84
+extern "C" unsigned short __stdcall ntohs(unsigned short value);                    // 0x00781B78
+extern "C" int __stdcall recvfrom(SOCKET s, char *buffer, int length, int flags, void *from, int *fromlength);   // 0x00781BAE
+extern "C" int __stdcall sendto(SOCKET s, char const *buffer, int length, int flags, void const *to, int tolength);   // 0x00781BB4
+#define WSAEWOULDBLOCK 10035
+#define FD_READ 0x01
+#define WSAGETSELECTEVENT(lparam) ((unsigned short)((unsigned long)(lparam) & 0xFFFF))
+#define WSAGETSELECTERROR(lparam) ((unsigned short)(((unsigned long)(lparam) >> 16) & 0xFFFF))
+#define FD_WRITE 0x02
 extern "C" int __stdcall bind(SOCKET s, void const *address, int length);           // 0x00781B9C
 #define AF_INET 2
 #define SOCK_DGRAM 2
@@ -169,7 +177,8 @@ public:
     bool WinsockInitialised;                            // +0x3F068
     SOCKET Socket;                                      // +0x3F06C
     SOCKET Socket2;                                     // +0x3F070
-    char unknown_3f074[0x3F2F8 - 0x3F074];
+    char ReceiveBuffer[0x280];                          // +0x3F074 (UDP: the packet CRC, then the data)
+    int unknown_3f2f4;                                  // +0x3F2F4
     int unknown_3f2f8;                                  // +0x3F2F8
 };
 

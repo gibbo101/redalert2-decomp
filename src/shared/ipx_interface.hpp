@@ -42,13 +42,16 @@ struct UnknownIPXAddressData {
     unsigned long linkspeed;            // +0x14
 };
 
+// A malformed IPX packet was seen (0x00B2AE24).
+extern bool unknown_malformed_seen_b2ae24;
+
 class IPXInterfaceClass : public WinsockInterfaceClass {
 public:
     IPXInterfaceClass();                                                // 0x0076A070
     virtual int unknown_slot13() { return 1; }                          // slot 13 0x0076AA50 (inline)
     virtual unsigned int unknown_slot14(int socket) { return 0x473; }   // slot 14 0x0076AA60 (inline; the notification message)
-    virtual bool unknown_slot15(int socket);                            // slot 15 0x0076A3A0 (opens the socket)
-    virtual int unknown_slot16(int arg1, int arg2, int arg3, int arg4); // slot 16 0x0076A6B0 (the notification handler)
+    virtual bool unknown_slot15(int socket_number);                     // slot 15 0x0076A3A0 (opens the socket)
+    virtual int unknown_slot16(int window, int message, int wparam, int lparam);   // slot 16 0x0076A6B0 (the notification handler)
 
     int Get_Network_Card_Address(int card_number, UnknownIPXSocketAddress *address);   // 0x0076A0B0
     int unknown_76a230(int card_number, char *buffer, int length);      // 0x0076A230 (the card address as text)
@@ -56,7 +59,7 @@ public:
     unsigned char Network[4];           // +0x3F2FC
     unsigned char Node[6];              // +0x3F300
     unsigned char unknown_3f306[6];     // +0x3F306
-    char unknown_3f30c[4];              // +0x3F30C (size 0x3F310)
+    int SocketNumber;                   // +0x3F30C the IPX socket number (size 0x3F310)
 };
 
 #endif

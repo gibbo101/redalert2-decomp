@@ -141,6 +141,7 @@ public:
     void Unknown_0049C670();                                                    // 0x0049C670 (multiplayer setup 0x0065E8C0)
     void Write_INI_0049D910(CCINIClass &ini);                                   // 0x0049D910 (Theater, Size, LocalSize; Write_Scenario_INI)
     void Read_INI_0049CFD0(CCINIClass &ini);                                    // 0x0049CFD0 (the map's sections of a scenario; Read_Scenario_INI)
+    virtual bool unknown_slot39(Cell const &cell, int arg2);                    // slot 39 0x0049A370
 };
 #endif
 

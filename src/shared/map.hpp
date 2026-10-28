@@ -211,6 +211,9 @@ public:
     // Map (visibility bits set, +0x130/+0x134 cleared) between DisplayClass
     // 0x0049E000 and 0x0049DE00, and redraws (0x0055A120).
     void Unknown_0055A120();
+    // Once per game (player +0x188 clear): passes every cell of the global Map
+    // with the player to DisplayClass slot 39, then redraws (0x0055A1F0).
+    void Unknown_0055A1F0();
     // Whether all four corner cells of a cell rectangle pass 0x0055A660
     // (0x0055A590).
     bool Unknown_0055A590(Rect const &rect, bool flag);
