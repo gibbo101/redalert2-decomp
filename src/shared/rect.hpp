@@ -99,6 +99,21 @@ inline Point2D Offset_Point(Point2D const &point, Rect const &window)
     return Point2D(point.X + window.X, point.Y + window.Y);
 }
 
+// The rectangle moved by (x, y) (Tactical's layer redraws 0x006A9E10,
+// 0x006A9F60 move a drawn area onto the screen with it; name hypothesis).
+inline Rect Offset_Rect(Rect const &rect, int x, int y)
+{
+    return Rect(rect.X + x, rect.Y + y, rect.Width, rect.Height);
+}
+
+// The two rectangles overlap (shared edges excluded; Tactical 0x006A9E10,
+// 0x006A9F60; name hypothesis).
+inline bool Rects_Overlap(Rect const &rect1, Rect const &rect2)
+{
+    return rect1.X < rect2.X + rect2.Width && rect1.Y < rect2.Y + rect2.Height
+        && rect1.X + rect1.Width > rect2.X && rect1.Y + rect1.Height > rect2.Y;
+}
+
 // Overlap of two rectangles; x/y (optional) receive the offset adjustments.
 // Hypothesis from the callers (0x0041FDF0): rect1 in EDX, rect2 and the two
 // optional pointers on the stack, the result through the hidden pointer.

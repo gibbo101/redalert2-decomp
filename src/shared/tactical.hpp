@@ -20,6 +20,19 @@ class Surface;
 int __fastcall Unknown_006A2970(int z);
 int __fastcall Unknown_006A29B0(int pixel);
 
+// A lepton offset (x, y) to its screen offset before the division by 256:
+// (x - y) * 30 across, (x + y) * 15 down (0x006A6800; never called, expanded
+// by its users; hypothesis).
+void __fastcall Unknown_006A6800(int x, int y, int *pixel_x, int *pixel_y);
+
+// The screen offset of a lepton offset, built through 0x006A6800 (0x006A2740;
+// the Tactical slot-24 line drawer 0x006AC160 builds two; name hypothesis).
+struct TacticalProjection {
+    TacticalProjection(int x, int y);               // 0x006A2740
+    int X;
+    int Y;
+};
+
 
 // The tactical view (0x0083996C; RTTI class Tactical, an AbstractClass:
 // primary vtable 0x007AC570 with 25 slots, stored by 0x006A24B0, 0x006A26C0,
@@ -42,6 +55,11 @@ public:
     bool Unknown_006A8C80(Point2D *point);          // 0x006A8C80 (clamps a view position; false when unchanged)
     void Unknown_006A9170();                        // 0x006A9170 (after the view position changed)
     void Unknown_006AA610(void *callback);          // 0x006AA610 (ends the selection band: the rectangle of its two corners to 0x006AABC0; hypothesis)
+    // Redraw the terrain objects (0x006A9E10, last first) and the buildings
+    // (0x006A9F60) of display layer 2 whose drawn area overlaps the
+    // intersection of the two rectangles (hypothesis).
+    void Unknown_006A9E10(bool arg1, Rect const &rect1, Rect const &rect2);
+    void Unknown_006A9F60(bool arg1, Rect const &rect1, Rect const &rect2);
     void Unknown_006AA790();                        // 0x006AA790 (draws the selection band rectangle; hypothesis)
     void Unknown_006AABC0(Rect const *rect, void *callback);   // 0x006AABC0 (hypothesis)
 
