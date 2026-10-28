@@ -42,6 +42,10 @@ extern VoxClass *unknown_vox_playing_ad0954;
 extern int unknown_flag_ad0958;                     // nonzero: the Russian speech files
 extern AudioStreamPlayer *unknown_vox_stream_ad095c;
 extern unsigned __int64 unknown_vox_delay_ad0960;   // the gap after the last speech
+extern int unknown_vox_volume_7f9bd4;               // the speech volume (0..255)
+// The taunt stream (0x00AD0968) and a count that keeps taunts from starting.
+extern AudioStreamPlayer *unknown_taunt_stream_ad0968;
+extern int volatile unknown_count_ad0910;
 
 // Empties the lists and makes the stream (0 without one; 0x007156D0).
 int Speech_Init();
@@ -51,5 +55,12 @@ void __fastcall Speech_Queue(VoxClass *vox, int type, int priority);
 VoxSpeech *__fastcall Speech_Find(VoxClass *vox);
 // Starts the next waiting speech once the stream is free (0x00715BA0).
 void Speech_Update();
+// Drops every waiting speech of the VoxClass at an index (0x00715E80).
+void __fastcall Speech_Cancel(int index);
+// The taunt stream: made (0 without one; 0x00715F10), destroyed (0x00715F80),
+// playing taunt 1..8 of a side (0x00715FB0); 0x007160D0 stops it.
+int Taunt_Init();
+void Taunt_Shutdown();
+int __fastcall Taunt_Play(int taunt);
 
 #endif

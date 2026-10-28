@@ -384,7 +384,7 @@ AudioChannel *__fastcall Audio_Device_Create_Channel(AudioDevice *device, int fl
 int Audio_Streamer_Init();                                                                  // 0x00407480
 DWORD __stdcall Audio_Streamer_Proc(void *parameter);                                       // 0x004075B0
 void Audio_Streamer_Shutdown();                                                             // 0x004076B0
-AudioStreamPlayer *__fastcall Audio_Stream_Create(int unknown, AudioDevice *device, __int64 buffer_time);   // 0x00407790
+AudioStreamPlayer *__fastcall Audio_Stream_Create(AudioDevice *device, __int64 buffer_time);              // 0x00407790
 int __fastcall Audio_Stream_Next_Block(AudioChannel *channel);                              // 0x004078F0
 int __fastcall Audio_Stream_Channel_Done(AudioChannel *channel);                            // 0x00407960
 int __fastcall Audio_Stream_Channel_End(AudioChannel *channel);                             // 0x00407990

@@ -6,6 +6,9 @@
 
 class VoxClass {
 public:
+    VoxClass(char const *name);                            // 0x007160E0 (added to the unit's VoxClass list)
+    ~VoxClass();                                           // 0x00716190
+
     static int __fastcall Find_Index(char const *name);    // 0x00716640
     static char const *__fastcall Name_From(int index);    // 0x007158A0 ("none" out of range; name hypothesis)
     static void __fastcall Set_Volume(int volume);         // 0x00715EF0 (at most 255; OptionsClass voice volume)
