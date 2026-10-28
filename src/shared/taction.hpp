@@ -74,6 +74,12 @@ public:
     bool unknown_func_6b2f50(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2F50 (the first member of the team type's team talks (TechnoClass 0x006D8FD0))
     bool unknown_func_6b2810(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2810 (Unknown_0063A880(team type +0x30, waypoint +0x44))
     bool unknown_func_6b1a80(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1A80 (Unknown_0051F930(Data, Rules LightningDeferment, zero cell) unless Unknown_0051FC50)
+    bool unknown_func_6b0ac0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0AC0 (adds Data quarter minutes to the mission timer)
+    bool unknown_func_6b0b20(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0B20 (takes Data quarter minutes from the mission timer, not below zero)
+    bool unknown_func_6b0ba0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0BA0 (sets the mission timer to Data quarter minutes, starts it, clears its label)
+    bool unknown_func_6b1e20(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1E20 (deletes every trigger of the trigger type at +0x50)
+    bool unknown_func_6b1e70(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1E70 (deletes every tag of the tag type at +0x4C)
+    bool unknown_func_6b1f10(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1F10 (enables every trigger of the type at +0x50 that the difficulty allows)
     CoordStruct unknown_6b2e80() const;     // 0x006B2E80 (the coordinate of waypoint Data)
     bool unknown_toggle_session_flag_2229(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2A90
     bool unknown_create_team(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1420
