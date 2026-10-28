@@ -5,6 +5,6 @@
 
 // @ref ?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A=00abff58
 // @ref _atexit=0078298a
-// @ref _$E2=006b5470
+// @ref _$E41=006b5470
 
 IndexClass<long, AbstractClass *> unknown_object_index_abff58;
