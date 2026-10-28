@@ -52,6 +52,9 @@ extern int unknown_abcd64;
 extern int unknown_abcd74;
 // A buildable's kind for type 7 (0x004EB550).
 int __fastcall Unknown_004EB550(int type, int id);
+// The production column of an object type (0x006818D0; callers in HouseClass and TActionClass; name hypothesis): 2 for
+// types 0xF and 0x10, 3 for 1, 2, 3 and 0x28, 1 for 0x1F, 0x20 and 0x39, whether the kind is 5 for 6 and 7, else -1.
+int __fastcall Unknown_006818D0(int type, int id, int arg3);
 
 class TechnoClass;
 class TechnoTypeClass;
