@@ -10,7 +10,7 @@
 CoordStruct FootClass::unknown_slot19(TechnoClass *techno) const
 {
     if (unknown_574 >= 0) {
-        Cell cell = unknown_TubeClass_list_008661c8[unknown_574]->unknown_28;
+        Cell cell = unknown_TubeClass_list_008661c8[unknown_574]->ExitCell;
         return CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0);
     }
     CoordStruct coord = Locomotor.Checked()->Head_To_Coord();

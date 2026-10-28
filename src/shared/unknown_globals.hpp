@@ -264,7 +264,6 @@ bool __fastcall Unknown_0051a330(int side);                 // 0x0051A330 (side 
 // hypothesis, the inverse of 0x006A29B0; the locomotors' Shadow_Point).
 int __fastcall Unknown_006A2970(int height);
 void __fastcall Unknown_006c0220();                         // 0x006C0220 (walks TeamTypes)
-void __fastcall Unknown_006ef5c0(CCINIClass &ini);          // 0x006EF5C0 ([Tubes])
 void Unknown_006e9fe0();                                    // 0x006E9FE0 (walks the TiberiumClass list)
 void __fastcall Unknown_006e9520();                         // 0x006E9520 (walks the TiberiumClass list)
 void Unknown_006ecf10();                                    // 0x006ECF10 (walks the objects at 0x00AC0CD8)

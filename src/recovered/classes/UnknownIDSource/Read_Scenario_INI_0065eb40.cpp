@@ -64,7 +64,7 @@
 // @ref ?Unknown_006e9520@@YIXXZ=006e9520
 // @ref ?Unknown_006e9fe0@@YAXXZ=006e9fe0
 // @ref ?Unknown_006ecf10@@YAXXZ=006ecf10
-// @ref ?Unknown_006ef5c0@@YIXAAVCCINIClass@@@Z=006ef5c0
+// @ref ?Read_INI@TubeClass@@SIXAAVCCINIClass@@@Z=006ef5c0
 // @ref ?unknown_7df630@@3_NA=007df630
 // @ref ?unknown_a40770@@3HA=00a40770
 // @ref ?unknown_a40d39@@3_NA=00a40d39
@@ -97,6 +97,7 @@
 #include "shared/task_force.hpp"
 #include "shared/trigger_type.hpp"
 #include "shared/tag_type.hpp"
+#include "shared/tube.hpp"
 #include "shared/ai_trigger_type.hpp"
 #include "shared/map_view.hpp"
 #include "shared/terrain.hpp"
@@ -306,7 +307,7 @@ bool __fastcall Read_Scenario_INI(CCINIClass &ini, bool official)
     unknown_session_a3d298.Loading_Progress_00672160(60);
     Map.Read_INI_0049CFD0(ini);
     Service_Game_IO_00481fb0();
-    Unknown_006ef5c0(ini);
+    TubeClass::Read_INI(ini);
     BuildingTypeClass::unknown_func_45ebd0();
     Map.Flag_To_Redraw(2);
     unknown_session_a3d298.Loading_Progress_00672160(70);

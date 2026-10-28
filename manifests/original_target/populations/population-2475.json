@@ -4,8 +4,8 @@
     "id": "population-2475",
     "inventory_sha256": "fb0727f44736303216b2531b0c81906aff8cff8293589eab848a4d2accd4c5cd",
     "gaps_sha256": "f2d02e1473b86c975fdb005a947983c47d8382fa5129db6c30de192a7f32b772",
-    "historical_population_sha256": "a321c07e3afd971e10afc1655c873592c8afb25ed89bb56153ad6aa7cd69e9f9",
-    "historical_acceptance_sha256": "e0c6c301bdf7ec1bfca1a51893fe56530d0148167e331eabd7d9b4560ec723f7"
+    "historical_population_sha256": "91483b73ba3738df24ee2e4faeafaea38b8e7998efce42871b672803bbdcf3a7",
+    "historical_acceptance_sha256": "edd17a5e4e4038f16a867ffd40cbaa36ba82c3142d2db32ccf0f6d2a33e5bca3"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -7424,7 +7424,7 @@
     "?unknown_session_a3d2c0@@3_NA": 10736320,
     "?Unknown_006c0220@@YIXXZ": 7078432,
     "?Read_INI_0049CFD0@DisplayClass@@QAEXAAVCCINIClass@@@Z": 4837328,
-    "?Unknown_006ef5c0@@YIXAAVCCINIClass@@@Z": 7271872,
+    "?Read_INI@TubeClass@@SIXAAVCCINIClass@@@Z": 7271872,
     "?Read_INI@TerrainClass@@SIXAAVCCINIClass@@@Z": 7225952,
     "?Unknown_006e9fe0@@YAXXZ": 7249888,
     "?Unknown_006e9520@@YIXXZ": 7247136,
@@ -8130,7 +8130,28 @@
     "??_7SpawnManagerClass@@6B@": 8042696,
     "??_ESpawnManagerClass@@UAEPAXI@Z": 6859264,
     "??_ECaptureManagerClass@@UAEPAXI@Z": 4621184,
-    "??_EMultiplayerGameMode@@UAEPAXI@Z": 6000144
+    "??_EMultiplayerGameMode@@UAEPAXI@Z": 6000144,
+    "?Array@AlphaLightingRemapClass@@2V?$DynamicVectorClass@PAVAlphaLightingRemapClass@@@@A": 8635864,
+    "??_7?$DynamicVectorClass@PAVAlphaLightingRemapClass@@@@6B@": 7976960,
+    "?Reset@MessageListClass@@QAEXXZ": 5983296,
+    "?Init@MessageListClass@@QAEXHHHHHHH_NHHH@Z": 5983328,
+    "??_G?$DynamicVectorClass@USwizzlePointerClass@@@@UAEPAXI@Z": 6947200,
+    "?unknown_name_a3d3a0@@3PADA": 10736544,
+    "?Unknown_00631D40@RadarClass@@QAEXXZ": 6495552,
+    "?unknown_a3d3bc@@3HA": 10736572,
+    "?unknown_a3d3b4@@3HA": 10736564,
+    "?Unknown_00563D40@MapClass@@QAEXXZ": 5651776,
+    "?Unknown_0054EBD0@MapClass@@QAEXXZ": 5565392,
+    "??_7?$DynamicVectorClass@USwizzlePointerClass@@@@6B@": 8045404,
+    "??_7?$DynamicVectorClass@PAVKamikazeControl@@@@6B@": 8016820,
+    "??_7?$DynamicVectorClass@PAVMultiplayerTeam@@@@6B@": 8024688,
+    "?unknown_func_6b14d0@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7017680,
+    "?Unknown_00569090@MapClass@@QAE_NPAVCell@@@Z": 5673104,
+    "?unknown_func_6b1650@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7018064,
+    "?unknown_func_6b1c80@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7019648,
+    "?Unknown_00493C80@Cell@@QAE_NXZ": 4799616,
+    "?Execute@TauntCommandClass@@UBEXH@Z": 5354992,
+    "??_E?$DynamicVectorClass@USwizzlePointerClass@@@@UAEPAXI@Z": 6947200
   },
   "regions": [
     {
@@ -10614,7 +10635,7 @@
           "resolved": 8806184
         }
       ],
-      "source_sha256": "763f3221c08227f26f6ddbbc32898a17691f41c0a73a5ca4a4b63a619c916a5e",
+      "source_sha256": "3354141739facb83b4142edc83e204002454c657cdaf0c1aee670a8dd5c78f8f",
       "source": "src/recovered/classes/FootClass/FootClass_unknown_slot19_004ca6f0.cpp",
       "population": "population-2475",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
