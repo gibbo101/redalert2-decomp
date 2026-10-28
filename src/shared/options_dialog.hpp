@@ -8,7 +8,6 @@ extern int unknown_a3d2a4;                     // 0x00A3D2A4 (1 or 2: an online 
 extern int unknown_session_a3d2bc;              // 0x00A3D2BC (session +0x24; the starting money)
 extern int unknown_session_a3d2d0;              // 0x00A3D2D0 (session +0x38; the start units)
 extern unsigned char unknown_session_a3d2c2;    // 0x00A3D2C2 (session +0x2A)
-extern unsigned char unknown_session_a3d2c3;    // 0x00A3D2C3 (session +0x2B)
 extern int unknown_session_a3d2c4;              // 0x00A3D2C4 (session +0x2C; the low byte is used)
 extern int unknown_session_a3d340;              // 0x00A3D340 (session +0xA8; the low byte is used)
 // The territory of a WDT slot (0x00769690; name hypothesis).

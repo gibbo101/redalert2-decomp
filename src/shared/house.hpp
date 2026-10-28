@@ -312,6 +312,7 @@ public:
     void unknown_func_4f3ae0(SuperClass *super);          // 0x004F3AE0 (fires a super weapon at a picked cell)
     void unknown_func_4f3bb0(SuperClass *super);          // 0x004F3BB0 (the same code as 0x004F3AE0)
     Cell unknown_func_4f65a0();                            // 0x004F65A0 (a target cell; +0x541C == 1)
+    BuildingTypeClass *unknown_func_4ef600(DynamicVectorClass<BuildingTypeClass *> const &types);   // 0x004EF600 (the first building type of the list this house may build)
     Cell unknown_func_4f6a80(int mode);                    // 0x004F6A80 (a target cell by +0x541C)
     void unknown_func_4f3d70(SuperClass *super);          // 0x004F3D70 (0x004F3AE0 unless 0x0051FC50's flag)
     void unknown_func_4f3320(HouseClass *house);          // 0x004F3320 (marks a country seen; reveals to the player)

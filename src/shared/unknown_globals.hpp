@@ -244,6 +244,7 @@ extern bool unknown_session_a3d2c0;             // 0x00A3D2C0 (session +0x28) fa
 // The game option byte that enables the map's +0x154 entries (crates; hypothesis)
 // (0x00A3D2C1, session +0x29).
 extern bool unknown_flag_a3d2c1;
+extern unsigned char unknown_session_a3d2c3;   // 0x00A3D2C3 (session +0x2B; tested as a flag, indexes a 0/1 table)
 // The session's starting crate count (0x00A3D55C, session +0x2C4; bounded by Rules
 // CrateMinimum/CrateMaximum; hypothesis).
 extern int unknown_session_a3d55c;

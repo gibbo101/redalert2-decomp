@@ -12,8 +12,8 @@
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 157 | 38,753 | 157 | 0x00438A60–0x004D3450 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 183 | 31,628 | 180 | 0x0041B370–0x006D9750 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 57 | 28,013 | 57 | 0x00457A50–0x004D3C50 |
+| [classes/HouseClass](../src/recovered/classes/HouseClass/) | 145 | 26,532 | 145 | 0x004D3590–0x004F8EF0 |
 | [classes/UnknownIDSource](../src/recovered/classes/UnknownIDSource/) | 47 | 25,851 | 47 | 0x0065B4F0–0x00663440 |
-| [classes/HouseClass](../src/recovered/classes/HouseClass/) | 142 | 25,713 | 142 | 0x004D3590–0x004F8EF0 |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 73 | 24,963 | 73 | 0x0049ED10–0x0056A9D0 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 106 | 22,875 | 102 | 0x0041B470–0x004CDE10 |
 | [classes/InfantryClass](../src/recovered/classes/InfantryClass/) | 84 | 22,742 | 84 | 0x004D3390–0x00509810 |
@@ -106,6 +106,7 @@
 | [classes/SuperWeaponTypeClass](../src/recovered/classes/SuperWeaponTypeClass/) | 19 | 2,405 | 19 | 0x004D4110–0x0069F8C0 |
 | [classes/CStreamClass](../src/recovered/classes/CStreamClass/) | 24 | 2,390 | 24 | 0x00494800–0x00495220 |
 | [classes/ParticleSystemTypeClass](../src/recovered/classes/ParticleSystemTypeClass/) | 19 | 2,360 | 19 | 0x004D4090–0x00620EC0 |
+| [containers](../src/recovered/containers/) | 19 | 2,335 | 19 | 0x0042B620–0x00682580 |
 | [classes/TagTypeClass](../src/recovered/classes/TagTypeClass/) | 27 | 2,325 | 27 | 0x006B44F0–0x006B4ED0 |
 | [classes/TaskForceClass](../src/recovered/classes/TaskForceClass/) | 23 | 2,275 | 23 | 0x004D3910–0x006B71B0 |
 | [classes/MSVQAnim](../src/recovered/classes/MSVQAnim/) | 10 | 2,268 | 10 | 0x005ADBA0–0x005AFDF0 |
@@ -117,7 +118,6 @@
 | [classes/WorldDominationTour__Conflict](../src/recovered/classes/WorldDominationTour__Conflict/) | 12 | 2,104 | 12 | 0x007272F0–0x00727B30 |
 | [classes/BuildingLightClass](../src/recovered/classes/BuildingLightClass/) | 18 | 2,094 | 18 | 0x00434090–0x004D2F50 |
 | [classes/WWKeyboardClass](../src/recovered/classes/WWKeyboardClass/) | 20 | 2,081 | 20 | 0x00532130–0x00532E60 |
-| [containers](../src/recovered/containers/) | 17 | 2,067 | 17 | 0x0042B620–0x00682580 |
 | [classes/WaypointPathClass](../src/recovered/classes/WaypointPathClass/) | 21 | 2,055 | 21 | 0x00724970–0x00725200 |
 | [classes/WorldDominationTour__Campaign](../src/recovered/classes/WorldDominationTour__Campaign/) | 11 | 2,011 | 11 | 0x00725DE0–0x007269B0 |
 | [classes/ZBuffer](../src/recovered/classes/ZBuffer/) | 10 | 2,009 | 10 | 0x00410A40–0x00411230 |
@@ -267,6 +267,7 @@
 | [classes/WorldDominationTour__Territory](../src/recovered/classes/WorldDominationTour__Territory/) | 8 | 666 | 8 | 0x00730B80–0x00731290 |
 | [classes/CDownloadEventSink](../src/recovered/classes/CDownloadEventSink/) | 7 | 664 | 7 | 0x007668A0–0x00766B20 |
 | [classes/DynamicVectorClass_TechnoTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TechnoTypeClass_ptr/) | 9 | 661 | 7 | 0x0046CCE0–0x006DFA70 |
+| [classes/RGBClass](../src/recovered/classes/RGBClass/) | 5 | 659 | 5 | 0x004A9AF0–0x0063CF20 |
 | [classes/DynamicVectorClass_VoxelAnimTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_VoxelAnimTypeClass_ptr/) | 10 | 650 | 9 | 0x004D56D0–0x006DF890 |
 | [classes/DynamicVectorClass_SubzoneConnectionStruct](../src/recovered/classes/DynamicVectorClass_SubzoneConnectionStruct/) | 7 | 639 | 5 | 0x0056AA70–0x0056C9B0 |
 | [classes/DynamicVectorClass_TeamTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TeamTypeClass_ptr/) | 9 | 639 | 8 | 0x004D52B0–0x004F7E10 |
@@ -314,7 +315,6 @@
 | [classes/GdiBitmapSurface_004981C0](../src/recovered/classes/GdiBitmapSurface_004981C0/) | 3 | 536 | 3 | 0x004981C0–0x004983A0 |
 | [classes/BlitTranslucentWriteAlpha_unsigned_short](../src/recovered/classes/BlitTranslucentWriteAlpha_unsigned_short/) | 2 | 533 | 2 | 0x004884C0–0x0048CEB0 |
 | [classes/RLEBlitTransZRemapXlatAlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransZRemapXlatAlphaZReadWrite_unsigned_short/) | 2 | 527 | 1 | 0x0048C020–0x0048D870 |
-| [classes/RGBClass](../src/recovered/classes/RGBClass/) | 4 | 525 | 4 | 0x004A9AF0–0x0063CF20 |
 | [classes/VectorClass_rc_ptr_WDTTerritory](../src/recovered/classes/VectorClass_rc_ptr_WDTTerritory/) | 6 | 521 | 6 | 0x0072CA70–0x0072CD60 |
 | [classes/VectorClass_rc_ptr_WorldDominationTour__Territory](../src/recovered/classes/VectorClass_rc_ptr_WorldDominationTour__Territory/) | 6 | 521 | 6 | 0x0072AFD0–0x0072B2F0 |
 | [classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr](../src/recovered/classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr/) | 5 | 519 | 4 | 0x006056F0–0x00605D30 |
@@ -1243,7 +1243,7 @@
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 | [classes/UnknownAlphaTableCache_008315B8](../src/recovered/classes/UnknownAlphaTableCache_008315B8/) | 2 | 4 | 2 | 0x0041E3C0–0x0041E3D0 |
 
-1236 directories, 14495 regions. Generated by `tools/original_target/source_index.py`.
+1236 directories, 14501 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
