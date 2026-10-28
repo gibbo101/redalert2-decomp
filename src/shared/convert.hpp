@@ -47,6 +47,7 @@ public:
 
     void Initialize_Blitters_00483B00();
     Blitter *Select_Blitter_00485AA0(unsigned flags);
+    void Delete_Blitters_004853A0();                                 // 0x004853A0
 
     int BytesPerPixel;              // +0x004
     Blitter *Blitters[50];          // +0x008 through +0x0CC
