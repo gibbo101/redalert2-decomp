@@ -4,8 +4,8 @@
     "id": "population-2621",
     "inventory_sha256": "280e79d14c622b4c6426514989820b78920d2f2eeae0860bb72292bdeca0b60a",
     "gaps_sha256": "5d249e4f83e6f85c19b88b6718ed7aa0695fc29ad67e649b5e4896e47240e52a",
-    "historical_population_sha256": "65c511fb74c657969cf91ab76e936315a79414b0dbab48d26545cc89a45fa207",
-    "historical_acceptance_sha256": "b979ac473aac60bf7f4770ccdbcd7cc820e56781b6143b008509c130330e8b1b"
+    "historical_population_sha256": "faa791fac0ce5089b639ff0fbff09138352a393391c88c8beb9b00fe58a6f817",
+    "historical_acceptance_sha256": "5da1b8ad06dda82e0a4cee4df2f61ff5387064c521281c6e0b97333ce9950245"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2784,7 +2784,7 @@
     "?Make_Enemy@HouseClass@@QAEXH_N@Z": 5134928,
     "?Make_Enemy@HouseClass@@QAEXPAV1@_N@Z": 5134960,
     "?unknown_func_4e8300@HouseClass@@QAEXHHH@Z": 5145344,
-    "?get@Leaf_4ea7f0@@QAEXI@Z": 5154800,
+    "?unknown_4ea7f0@HouseClass@@QAEXPAVTechnoClass@@@Z": 5154800,
     "?GetClassID@HouseClass@@UAGJPAUGUID@@@Z": 5171280,
     "_CLSID_HouseClass": 8002256,
     "?Size_Of@HouseClass@@UBEHXZ": 5171344,

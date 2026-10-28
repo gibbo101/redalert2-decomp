@@ -12,6 +12,7 @@
 #include "shared/vector_class.hpp"
 
 class TechnoTypeClass;
+class TechnoClass;
 class SuperClass;
 class HouseTypeClass;
 struct UnknownBuilding;                 // shared/power.hpp (BuildingClass stand-in)
@@ -20,6 +21,7 @@ struct UnknownBuilding;                 // shared/power.hpp (BuildingClass stand
 // the screen units can use it without shared/abstract.hpp).
 class HouseClass {
 public:
+    void unknown_4ea7f0(TechnoClass *object); // proposedmirrorofsamefullHousecallback
     bool Is_Ally(HouseClass const *house) const;           // 0x004E5540 (as shared/house.hpp)
     // Index in Houses of the house with this name, or -1 (0x004F5B40).
     static int __fastcall Find_Index(char const *name);

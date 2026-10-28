@@ -227,6 +227,7 @@ public:
     // Index in Houses of the house with this name, or -1 (0x004F5B40).
     static int __fastcall Find_Index(char const *name);
     int unknown_4e3660(TechnoTypeClass const *type, int arg2, int arg3);// 0x004E3660 (-1: none left; hypothesis; AircraftClass destructor)
+    void unknown_4ea7f0(TechnoClass *object); // proposedacceptedLeafownership/typecorrection,0x004EA7F0
     void unknown_4ea800(TechnoClass *techno);              // 0x004EA800 (AircraftClass/InfantryClass destructors)
     void unknown_4ea970(TechnoClass *techno);              // 0x004EA970 (AircraftClass::Init)
     void unknown_func_4f4b20();                            // 0x004F4B20 (BuildingClass destructor, for a building with a usable super weapon)
