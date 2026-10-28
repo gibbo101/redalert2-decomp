@@ -25,6 +25,7 @@ class UnknownDescriptionList_00490E00;
 class MultiMission;
 class MPlayerScoreType;
 class Cell;
+class CampaignScoreClass;
 
 #include "shared/unknown_player_entry.hpp"
 // The multiplayer lobby dialog window, 0 when none (0x005C2C40; hypothesis).
@@ -290,7 +291,8 @@ public:
     char unknown_48[0x4C - 0x48];
     bool unknown_4c;                                               // +0x4C (set when the saved campaign is chosen)
     int unknown_50;                                                // +0x50 the campaign list row last loaded
-    char unknown_54[0x1A8 - 0x54];
+    CampaignScoreClass *unknown_score_54;                          // +0x54 the score screen (made by slot 36)
+    char unknown_58[0x1A8 - 0x58];
     DynamicVectorClass<int> unknown_1a8[8];                        // +0x1A8 (slot 25: one list per player, read from the campaign AI settings)
     DynamicVectorClass<int> unknown_268[8];                        // +0x268 (slot 25: a second list per player)
     DynamicVectorClass<CoopCampaignClass *> unknown_campaigns_328; // +0x328 one CoopCampaignClass per campaign record
