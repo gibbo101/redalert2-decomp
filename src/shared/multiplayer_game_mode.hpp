@@ -265,6 +265,9 @@ public:
     virtual bool unknown_slot19(int index, int time, MPlayerScoreType *scores); // 19 0x005A35D0
     virtual bool unknown_slot20();                                 // 20 0x005A38D0
     virtual bool unknown_slot21();                                 // 21 0x005A3960
+    // Fills the session colours (0x00A71118): -2, then each session player's colour (0x005A3920;
+    // expanded in slot 21, no callers).
+    static void unknown_player_colors_5a3920();
     virtual bool unknown_slot22();                                 // 22 0x005A4250
     virtual int unknown_slot23();                                 // 23 0x005A4540
     virtual int unknown_slot24();                                 // 24 0x005A45F0

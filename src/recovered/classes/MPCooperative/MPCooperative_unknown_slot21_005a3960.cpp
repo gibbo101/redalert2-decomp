@@ -1,4 +1,4 @@
-// bool MPCooperative::unknown_slot21() -- 0x005A3960
+// bool MPCooperative::unknown_slot21() -- 0x005A3960 (expands unknown_player_colors_5a3920)
 // Picks the computer players' houses and colours for every map of the selected campaign record
 // (slot 23/24 houses; the players' colours first, random free colours for the rest) into
 // unknown_1a8/unknown_268 and sends them as a "C1,<maps>,<house>,<colour>..." game options text.
@@ -35,14 +35,7 @@ bool MPCooperative::unknown_slot21()
     }
     int players = unknown_players_a3fa7c.Count();
     for (int map = 0; map < record->MapCount; map++) {
-        int i;
-        for (i = 0; i < 8; i++) {
-            unknown_colors_a71118[i] = -2;
-        }
-        int count = unknown_players_a3fa7c.Count();
-        for (i = 0; i < count; i++) {
-            unknown_colors_a71118[i] = unknown_players_a3fa7c[i]->Get_Color_0066e2b0();
-        }
+        unknown_player_colors_5a3920();
         for (int slot = 0; slot < 8; slot++) {
             if (slot < players) {
                 unknown_1a8[slot].Add(unknown_slot23());
@@ -55,7 +48,7 @@ bool MPCooperative::unknown_slot21()
                     color = unknown_id_source_a3d290->RandomNumber(0, 7);
                     taken = false;
                     if (color != -2) {
-                        for (i = 0; i < 8; i++) {
+                        for (int i = 0; i < 8; i++) {
                             if (unknown_colors_a71118[i] == color) {
                                 taken = true;
                                 break;
