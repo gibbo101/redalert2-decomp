@@ -204,16 +204,13 @@ public:
         bool Step(bool up);                             // 0x0067EEF0 scrolls by a row
         bool Page(bool up);                             // 0x0067EF70 scrolls by a page
         bool Unknown_0067EA20(int type, int id, int other_type, int other_id);   // 0x0067EA20 (sort order)
-        // Rows of icons that fit (inline).
+        // Rows of icons that fit (inline). The ternary is the original's: its inlined
+        // copies subtract the 18/26 term before unknown_abcd64 (Draw_It 0x0067CF80),
+        // unlike the if/else in the out-of-line SidebarClass::Unknown_006820A0.
         static int Max_Visible_Rows()
         {
-            int extra;
-            if (unknown_id_source_a3d290->unknown_2239) {
-                extra = 26;
-            } else {
-                extra = 18;
-            }
-            return (unknown_int_839624 + unknown_int_83962c - unknown_abcd64 - extra - 7) / 50;
+            return (unknown_int_839624 + unknown_int_83962c - unknown_abcd64
+                - (unknown_id_source_a3d290->unknown_2239 ? 26 : 18) - 7) / 50;
         }
         bool Unknown_006816D0(int value, int type, int id);  // 0x006816D0 sets a buildable's +0x0C by type and id
 
