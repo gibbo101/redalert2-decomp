@@ -7,32 +7,9 @@
 #endif
 #include "shared/vector_class.hpp"
 
-// The unit's OwnerTalkClass object (0x00AB6D18; 0x20 bytes from its
-// initializer 0x0063EF60 and atexit destructor 0x0063EFB0). The list of
-// connections is its first member (vtable 0x007A8FEC is
-// DynamicVectorClass<OwnerTalkClass::ConnectionListStruct *>); the
-// destructor deletes every connection. Names and the two trailing fields
-// are hypotheses.
-class OwnerTalkClass {
-public:
-    struct ConnectionListStruct {
-        int unknown_00;
-    };
+#include "shared/owner_talk.hpp"
 
-    OwnerTalkClass() : unknown_18(false), unknown_1c(0) {}
-    ~OwnerTalkClass()
-    {
-        while (Connections.Count()) {
-            delete Connections[0];
-            Connections.Delete(0);
-        }
-    }
-
-    DynamicVectorClass<ConnectionListStruct *> Connections;   // +0x00
-    bool unknown_18;                                          // +0x18
-    int unknown_1c;                                           // +0x1C
-};
-
+// The unit's OwnerTalkClass object (0x00AB6D18; shared/owner_talk.hpp).
 OwnerTalkClass unknown_OwnerTalkClass_00ab6d18;
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??8?$VectorClass@PAUConnectionListStruct@OwnerTalkClass@@@@UBE_NABV0@@Z=0063ff70

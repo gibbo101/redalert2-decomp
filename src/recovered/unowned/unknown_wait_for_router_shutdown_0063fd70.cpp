@@ -1,13 +1,13 @@
-// bool UnknownRouterOwner_63fd70::Wait_For_Router_Shutdown(DWORD timeout, bool force) -- 0x0063FD70
+// bool OwnerTalkClass::Wait_For_Router_Shutdown(unsigned long timeout, bool force) -- 0x0063FD70
 // Purpose: waits up to timeout for the router process (+0x1C) to end; on a
 // timeout either gives up (false) or, with force, terminates it (false and
 // an error print when that fails). The handle is cleared once the process
 // is gone; true when there was no process. Name from its debug text.
-// Assumptions: the owner class is unidentified (callers 0x0053F810,
-// 0x0053FB90, 0x0065CCC2, 0x0074F8C1); the error print's last argument is
-// the failed result (0), as in the original.
+// Assumptions: callers 0x0053F810, 0x0053FB90, 0x0065CCC2, 0x0074F8C1;
+// the error print's last argument is the failed result (0), as in the original.
 #include "shared/win32_api.hpp"
 #include "shared/debug_printf.hpp"
+#include "shared/owner_talk.hpp"
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
 // @ref __imp__WaitForMultipleObjects@16=0079a134
 // @ref __imp__TerminateProcess@8=0079a258
@@ -20,15 +20,7 @@
 WIN32_IMPORT DWORD WINAPI WaitForMultipleObjects(DWORD count, HANDLE const *handles, BOOL all, DWORD timeout);
 WIN32_IMPORT BOOL WINAPI TerminateProcess(HANDLE process, unsigned int code);
 
-class UnknownRouterOwner_63fd70 {
-public:
-    bool Wait_For_Router_Shutdown(DWORD timeout, bool force);
-
-    char unknown_00[0x1C];
-    HANDLE RouterProcess;           // +0x1C
-};
-
-bool UnknownRouterOwner_63fd70::Wait_For_Router_Shutdown(DWORD timeout, bool force)
+bool OwnerTalkClass::Wait_For_Router_Shutdown(unsigned long timeout, bool force)
 {
     Debug_Printf("Wait_For_Router_Shutdown - hRouterProcess = %d\n", RouterProcess);
     if (RouterProcess != 0) {

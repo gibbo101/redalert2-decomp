@@ -254,8 +254,9 @@ void __fastcall Do_Lose_0065dec0();
 // false on failure; meaning partly recovered).
 bool __fastcall Unknown_0065c7d0(char const *name);
 // Reads the named scenario file into an INI and through Read_Scenario_INI
-// (0x0065E760; Westwood's Read_Scenario; false on failure).
-bool __fastcall Read_Scenario_0065e760(char const *name);
+// (0x0065E760; Westwood's Read_Scenario; false on failure). fresh is not
+// read; its only caller, 0x0065C7D0, passes true.
+bool __fastcall Read_Scenario_0065e760(char const *name, bool fresh);
 // Starts a scenario by name (0x0065BC70; reads it, optionally plays the
 // briefing movie, sets the campaign; false on failure; Westwood's Start_Scenario).
 bool __fastcall Start_Scenario_0065bc70(char const *name, bool briefing, int campaign);

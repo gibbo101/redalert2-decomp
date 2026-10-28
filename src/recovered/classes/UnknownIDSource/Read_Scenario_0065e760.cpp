@@ -1,4 +1,4 @@
-// bool __fastcall Read_Scenario_0065e760(char const *name) (0x0065E760)
+// bool __fastcall Read_Scenario_0065e760(char const *name, bool fresh) (0x0065E760)
 // Reads the named scenario file (Westwood's Read_Scenario): makes the
 // required disk available, resets the frame counter, loads the file into an
 // INI, records the name as the scenario's file name and reads it with
@@ -14,7 +14,7 @@
 #include "shared/debug_printf.hpp"
 #include "shared/crt_string.hpp"
 
-bool __fastcall Read_Scenario_0065e760(char const *name)
+bool __fastcall Read_Scenario_0065e760(char const *name, bool fresh)
 {
     if (!CD().Force_Available(CD::RequiredCD)) {
         return false;

@@ -4,8 +4,8 @@
     "id": "population-2621",
     "inventory_sha256": "280e79d14c622b4c6426514989820b78920d2f2eeae0860bb72292bdeca0b60a",
     "gaps_sha256": "5d249e4f83e6f85c19b88b6718ed7aa0695fc29ad67e649b5e4896e47240e52a",
-    "historical_population_sha256": "139a24c8a7db52b2747ef049c108006ccfed537e576649c192b2f226e3b83b26",
-    "historical_acceptance_sha256": "54e5a5af39a70be56c1abc6649b6e1d65316fc1997501530b53fce1e498263e4"
+    "historical_population_sha256": "dc8f113444383a35e1b7d9f82b6b3cb0cb00b1d3761c2a81e14c6bd921852dac",
+    "historical_acceptance_sha256": "de28150f0f168c30fad458b26f80a4b4608dbaa9836711b2029e5014bedc87aa"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -14032,7 +14032,7 @@
     "?unknown_611e20@PlanningNodeClass@@QAEXPAVPlanningMemberClass@@@Z": 6364704,
     "?Update_Radio@UnknownDialog_66da70@@QAEXXZ": 6740592,
     "?unknown_previous_key@@YIHH@Z": 7559600,
-    "?Wait_For_Router_Shutdown@UnknownRouterOwner_63fd70@@QAE_NK_N@Z": 6552944,
+    "?Wait_For_Router_Shutdown@OwnerTalkClass@@QAE_NK_N@Z": 6552944,
     "??_C@_0DA@EGFP@Wait_For_Router_Shutdown?5?9?5hRout@": 8317672,
     "__imp__WaitForMultipleObjects@16": 7971124,
     "??_C@_0DH@BCOA@?$CK?$CK?$CKRouter?5process?5still?5running?5@": 8317616,
@@ -20146,7 +20146,7 @@
     "?Unknown_007160D0@@YIXXZ": 7430352,
     "?Start_Scenario_0065bc70@@YI_NPBD_NH@Z": 6667376,
     "?Unknown_0065e590@@YIXXZ": 6677904,
-    "?Read_Scenario_0065e760@@YI_NPBD@Z": 6678368,
+    "?Read_Scenario_0065e760@@YI_NPBD_N@Z": 6678368,
     "?Unknown_005B7CE0@UnknownSessionA3D29C@@QAEXXZ": 5995744,
     "?Create_Units_00660320@@YIX_N@Z": 6685472,
     "?unknown_session_a3d55c@@3HA": 10736988,
