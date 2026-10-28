@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 710 | 66,547 | 710 | 0x004011C0–0x0077CB70 |
+| [unowned](../src/recovered/unowned/) | 711 | 66,583 | 711 | 0x004011C0–0x0077CB70 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 46 | 61,186 | 46 | 0x00640460–0x00654100 |
 | (discovery: address-named) | 1563 | 46,955 | 0 | 0x004010A0–0x00797198 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 155 | 37,589 | 155 | 0x00438A60–0x004D3450 |
@@ -193,7 +193,6 @@
 | [classes/VQA](../src/recovered/classes/VQA/) | 21 | 905 | 21 | 0x0071C320–0x0071D6E0 |
 | [classes/Random](../src/recovered/classes/Random/) | 8 | 896 | 8 | 0x00638700–0x006389D0 |
 | [word_sequences](../src/recovered/word_sequences/) | 21 | 885 | 21 | 0x004546E0–0x0076D840 |
-| [classes/VectorClass_char_ptr](../src/recovered/classes/VectorClass_char_ptr/) | 14 | 879 | 12 | 0x004910B0–0x006F8B90 |
 | [classes/VectorClass_MultiMission_ptr](../src/recovered/classes/VectorClass_MultiMission_ptr/) | 14 | 878 | 12 | 0x005CD5E0–0x00674910 |
 | [classes/DynamicVectorClass_SmudgeTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_SmudgeTypeClass_ptr/) | 11 | 864 | 9 | 0x004D53D0–0x00654480 |
 | [classes/PKPipe](../src/recovered/classes/PKPipe/) | 9 | 857 | 9 | 0x0060FA90–0x0060FDD0 |
@@ -238,7 +237,6 @@
 | [classes/DynamicVectorClass_TechnoTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TechnoTypeClass_ptr/) | 9 | 661 | 7 | 0x0046CCE0–0x006DFA70 |
 | [classes/DynamicVectorClass_VoxelAnimTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_VoxelAnimTypeClass_ptr/) | 10 | 650 | 9 | 0x004D56D0–0x006DF890 |
 | [classes/DynamicVectorClass_TeamTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TeamTypeClass_ptr/) | 9 | 639 | 8 | 0x004D52B0–0x004F7E10 |
-| [classes/DynamicVectorClass_char_ptr](../src/recovered/classes/DynamicVectorClass_char_ptr/) | 9 | 639 | 8 | 0x00491060–0x005A22D0 |
 | [classes/Blit](../src/recovered/classes/Blit/) | 7 | 612 | 7 | 0x00434940–0x00435560 |
 | [classes/DynamicVectorClass_unsigned_short_ptr](../src/recovered/classes/DynamicVectorClass_unsigned_short_ptr/) | 8 | 612 | 7 | 0x0052E6D0–0x0053AE30 |
 | [classes/RadarEventClass](../src/recovered/classes/RadarEventClass/) | 11 | 609 | 11 | 0x0063B4F0–0x0063C6C0 |
@@ -309,6 +307,7 @@
 | [classes/VectorClass_TagClass_ptr](../src/recovered/classes/VectorClass_TagClass_ptr/) | 8 | 513 | 6 | 0x004D49F0–0x004F8A40 |
 | [classes/VectorClass_TeamClass_ptr](../src/recovered/classes/VectorClass_TeamClass_ptr/) | 8 | 513 | 6 | 0x004D4C30–0x0053E3D0 |
 | [classes/VectorClass_TechnoClass_ptr](../src/recovered/classes/VectorClass_TechnoClass_ptr/) | 8 | 513 | 6 | 0x0040B600–0x0040BC10 |
+| [classes/VectorClass_char_ptr](../src/recovered/classes/VectorClass_char_ptr/) | 8 | 513 | 6 | 0x004910B0–0x006F8B90 |
 | [classes/VectorClass_GlobalPacketType_ptr](../src/recovered/classes/VectorClass_GlobalPacketType_ptr/) | 8 | 512 | 6 | 0x00673980–0x006749B0 |
 | [classes/VectorClass_PhoneEntryClass_ptr](../src/recovered/classes/VectorClass_PhoneEntryClass_ptr/) | 8 | 512 | 6 | 0x006739E0–0x00674A50 |
 | [classes/VectorClass_WinsockInterfaceClass__WinsockBufferType_ptr](../src/recovered/classes/VectorClass_WinsockInterfaceClass__WinsockBufferType_ptr/) | 8 | 512 | 6 | 0x0076BB50–0x0076BE10 |
@@ -475,6 +474,7 @@
 | [header_statics/0056cef0](../src/recovered/header_statics/0056cef0/) | 14 | 379 | 14 | 0x0056CEF0–0x0056D0E0 |
 | [classes/BlitTransLucent25AlphaZReadWarp_unsigned_short](../src/recovered/classes/BlitTransLucent25AlphaZReadWarp_unsigned_short/) | 3 | 376 | 1 | 0x004890E0–0x0048D0D0 |
 | [classes/BlitTransLucent75AlphaZReadWarp_unsigned_short](../src/recovered/classes/BlitTransLucent75AlphaZReadWarp_unsigned_short/) | 3 | 376 | 1 | 0x00488E60–0x0048D050 |
+| [classes/DynamicVectorClass_char_const_ptr](../src/recovered/classes/DynamicVectorClass_char_const_ptr/) | 5 | 376 | 5 | 0x005A1FC0–0x006F8AE0 |
 | [classes/BlitTransLucent25AlphaZReadWrite_unsigned_short](../src/recovered/classes/BlitTransLucent25AlphaZReadWrite_unsigned_short/) | 3 | 372 | 1 | 0x004896D0–0x0048D210 |
 | [classes/BlitTransLucent75AlphaZReadWrite_unsigned_short](../src/recovered/classes/BlitTransLucent75AlphaZReadWrite_unsigned_short/) | 3 | 372 | 1 | 0x00489450–0x0048D190 |
 | [classes/BlitTransLucent25AlphaZRead_unsigned_short](../src/recovered/classes/BlitTransLucent25AlphaZRead_unsigned_short/) | 3 | 371 | 1 | 0x00488D20–0x0048D010 |
@@ -482,6 +482,7 @@
 | [classes/BlitTransLucent50AlphaZReadWrite_unsigned_short](../src/recovered/classes/BlitTransLucent50AlphaZReadWrite_unsigned_short/) | 3 | 368 | 1 | 0x00489590–0x0048D1D0 |
 | [classes/BlitTransLucent50AlphaZReadWarp_unsigned_short](../src/recovered/classes/BlitTransLucent50AlphaZReadWarp_unsigned_short/) | 3 | 366 | 1 | 0x00488FA0–0x0048D090 |
 | [classes/VectorClass_WaypointPathClass_ptr](../src/recovered/classes/VectorClass_WaypointPathClass_ptr/) | 6 | 366 | 6 | 0x007253C0–0x007259A0 |
+| [classes/VectorClass_char_const_ptr](../src/recovered/classes/VectorClass_char_const_ptr/) | 6 | 366 | 6 | 0x005A2010–0x005A2180 |
 | [classes/MSOverlayAnim](../src/recovered/classes/MSOverlayAnim/) | 4 | 363 | 3 | 0x005AD370–0x005AFD60 |
 | [classes/VectorClass_PlanningMemberClass_ptr](../src/recovered/classes/VectorClass_PlanningMemberClass_ptr/) | 5 | 361 | 3 | 0x0061A970–0x0061BA10 |
 | [classes/BlitTransLucent50AlphaZRead_unsigned_short](../src/recovered/classes/BlitTransLucent50AlphaZRead_unsigned_short/) | 3 | 360 | 1 | 0x00488BF0–0x0048CFD0 |
@@ -562,6 +563,7 @@
 | [classes/DynamicVectorClass_WarheadTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_WarheadTypeClass_ptr/) | 5 | 356 | 4 | 0x0040F3C0–0x0040F6D0 |
 | [classes/DynamicVectorClass_WaveClass_ptr](../src/recovered/classes/DynamicVectorClass_WaveClass_ptr/) | 5 | 356 | 4 | 0x004D4DD0–0x004DC370 |
 | [classes/DynamicVectorClass_WeaponTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_WeaponTypeClass_ptr/) | 5 | 356 | 4 | 0x0040F970–0x0040FC80 |
+| [classes/DynamicVectorClass_char_ptr](../src/recovered/classes/DynamicVectorClass_char_ptr/) | 5 | 356 | 4 | 0x00491060–0x005A22D0 |
 | [classes/DynamicVectorClass_unsigned_long](../src/recovered/classes/DynamicVectorClass_unsigned_long/) | 5 | 356 | 4 | 0x006913F0–0x006986F0 |
 | [header_statics/0040acb0](../src/recovered/header_statics/0040acb0/) | 13 | 356 | 13 | 0x0040ACB0–0x0040AE80 |
 | [header_statics/0040c4a0](../src/recovered/header_statics/0040c4a0/) | 13 | 356 | 13 | 0x0040C4A0–0x0040C670 |
@@ -1075,7 +1077,6 @@
 | [classes/ScoreFullFontClass](../src/recovered/classes/ScoreFullFontClass/) | 1 | 96 | 0 | 0x00668430–0x00668430 |
 | [classes/Vector3](../src/recovered/classes/Vector3/) | 4 | 94 | 4 | 0x00437690–0x00717CD0 |
 | [classes/BlitPlainXlat_unsigned_short](../src/recovered/classes/BlitPlainXlat_unsigned_short/) | 2 | 93 | 2 | 0x00486E90–0x0048CA10 |
-| [classes/DynamicVectorClass_char_const_ptr](../src/recovered/classes/DynamicVectorClass_char_const_ptr/) | 1 | 93 | 1 | 0x006F8AE0–0x006F8AE0 |
 | [classes/LoadOptionsClass](../src/recovered/classes/LoadOptionsClass/) | 4 | 92 | 0 | 0x0053C970–0x0053C9D0 |
 | [classes/BlitTransXlat_unsigned_char](../src/recovered/classes/BlitTransXlat_unsigned_char/) | 2 | 91 | 2 | 0x00486310–0x0048C7F0 |
 | [messages](../src/recovered/messages/) | 1 | 91 | 1 | 0x006F15C0–0x006F15C0 |
@@ -1203,7 +1204,7 @@
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 
-1196 directories, 14027 regions. Generated by `tools/original_target/source_index.py`.
+1197 directories, 14028 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

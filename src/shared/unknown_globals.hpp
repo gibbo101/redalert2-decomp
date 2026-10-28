@@ -198,7 +198,10 @@ void RadarEventClass_unknown_delete_all_63c640();
 class Unknown84E8D0 {
 public:
     void Unknown_0042E1A0();                    // 0x0042E1A0 (Read_Scenario_INI)
-    bool Unknown_0042E700(int house);
+    bool Unknown_0042E700(int house);           // 0x0042E700 true when one of the house's three slots is empty
+    // +0x00 three owned blocks per house (8 houses): the static initializer 0x0042D960
+    // clears the 0x18 words, its atexit 0x0042D990 deletes each non-null one.
+    void *unknown_00[8][3];
 };
 extern Unknown84E8D0 unknown_object_84e8d0;
 // Read_Scenario_INI's settings and helpers (0x0065EB40; meanings mostly not recovered).
