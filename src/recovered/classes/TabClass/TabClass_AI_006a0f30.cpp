@@ -13,7 +13,7 @@
 // @ref ?AI@SidebarClass@@UAEXAAHABUPoint2D@@@Z=0067dc90
 // @ref ?Override_Mouse_Shape@MouseClass@@UAE_NH_N@Z=0059f250
 // @ref ?Unknown_00494650@UnknownTab4EEC@@QAEXH@Z=00494650
-// @ref ?Unknown_00713DB0@@YIHHMHH@Z=00713db0
+// @ref ?Voc_Play@@YIPAUAudioEvent@@HMHPAUAudioEventHandle@@@Z=00713db0
 // @ref ?Unknown_006A0D80@TabClass@@QAEXXZ=006a0d80
 // @ref ?Unknown_006A1AB0@TabClass@@QAEXXZ=006a1ab0
 // @ref ?Unknown_006F6570@@YAXXZ=006f6570

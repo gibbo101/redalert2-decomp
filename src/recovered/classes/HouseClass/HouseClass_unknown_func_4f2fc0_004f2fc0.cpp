@@ -22,7 +22,7 @@ void HouseClass::unknown_func_4f2fc0()
                     || unknown_game_mode_a3d298 != 0)
                 && building->Mission != 0x13 && building->MissionQueue != 0x13) {
                 if (!unknown_566a) {
-                    Unknown_00713DB0(Rules->SpySatActivationSound, 1.0f, 0x2000, 0);
+                    Voc_Play(Rules->SpySatActivationSound, 1.0f, 0x2000, 0);
                     Map.Unknown_0055A120();
                     unknown_566a = true;
                 }
@@ -31,7 +31,7 @@ void HouseClass::unknown_func_4f2fc0()
         }
         if (unknown_566a) {
             Map.Unknown_00559F10();
-            Unknown_00713DB0(Rules->SpySatDeactivationSound, 1.0f, 0x2000, 0);
+            Voc_Play(Rules->SpySatDeactivationSound, 1.0f, 0x2000, 0);
             unknown_566a = false;
         }
     }

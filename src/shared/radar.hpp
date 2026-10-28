@@ -34,11 +34,12 @@ public:
 
 // A 16-byte list header at RadarClass +0x14BC: the constructor body calls
 // 0x00405BF0 (clears it, +0x0C = 0x00830FAC), the destructor 0x00405C10.
+struct AudioEventType;
 struct UnknownList14BC {
     void Unknown_00405BF0();
     void Unknown_00405C10();
     void Unknown_00406070();                            // 0x00406070 (clears it)
-    void __fastcall Unknown_00406100(int handle, int arg2);   // 0x00406100 (adds a playing sound; hypothesis)
+    void __fastcall Unknown_00406100(AudioEvent *event, AudioEventType *type);   // 0x00406100 (keeps a playing event and its type; hypothesis)
     int unknown_00;
     int unknown_04;
     int unknown_08;

@@ -3,7 +3,7 @@
 #include "shared/uicmnds.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?unknown_objects_a40c60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A=00a40c60
-// @ref ?Unknown_00713DB0@@YIHHMHH@Z=00713db0
+// @ref ?Voc_Play@@YIPAUAudioEvent@@HMHPAUAudioEventHandle@@@Z=00713db0
 
 
 void Unknown_006F5BC0()
@@ -21,7 +21,7 @@ void Unknown_006F5BC0()
             }
         }
         if (agreed) {
-            Unknown_00713DB0(Rules->unknown_640, 1.0f, 0x2000, 0);
+            Voc_Play(Rules->unknown_640, 1.0f, 0x2000, 0);
         }
     }
 }

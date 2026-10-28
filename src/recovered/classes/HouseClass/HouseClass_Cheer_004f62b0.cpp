@@ -13,5 +13,5 @@ void HouseClass::Cheer()
             techno->unknown_slot205();
         }
     }
-    Unknown_00713DB0(Rules->CheerSound, 1.0f, 0x2000, 0);
+    Voc_Play(Rules->CheerSound, 1.0f, 0x2000, 0);
 }

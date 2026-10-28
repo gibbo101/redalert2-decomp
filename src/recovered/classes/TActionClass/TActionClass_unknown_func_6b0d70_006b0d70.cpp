@@ -5,6 +5,6 @@
 
 bool TActionClass::unknown_func_6b0d70(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
-    Unknown_00713DB0(Data, 1.0f, 0x2000, 0);
+    Voc_Play(Data, 1.0f, 0x2000, 0);
     return true;
 }

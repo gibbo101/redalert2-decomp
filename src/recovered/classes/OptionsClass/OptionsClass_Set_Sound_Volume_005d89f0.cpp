@@ -16,7 +16,7 @@ void OptionsClass::Set_Sound_Volume(float volume, bool feedback)
     SoundVolume = volume < 1.0 ? volume : 1.0;
     Audio_Global_Levels[3]->Volume.Set((int)(SoundVolume * 16384.0f));
     if (feedback) {
-        Unknown_00713DB0(Rules->GenericBeep, 1.0f, 0x2000, 0);
+        Voc_Play(Rules->GenericBeep, 1.0f, 0x2000, 0);
     }
     Debug_Printf("SoundVolume = %f\n", SoundVolume);
 }

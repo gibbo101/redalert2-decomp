@@ -11,6 +11,6 @@ void __fastcall Planning_Refuse(char const *label)
     if (!unknown_flag_a766c8) {
         unknown_flag_a766c8 = true;
         Planning_Message(label);
-        Unknown_00713DB0(Rules->unknown_620, 1.0f, 0x2000, 0);
+        Voc_Play(Rules->unknown_620, 1.0f, 0x2000, 0);
     }
 }

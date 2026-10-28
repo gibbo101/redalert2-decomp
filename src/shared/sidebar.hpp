@@ -98,7 +98,7 @@ struct ShapeFileStruct;
 // and 0x006A0D80 are inlined, as they are not in the original).
 inline void Unknown_Play_Sound(int sound)
 {
-    Unknown_00713DB0(sound, 1.0f, 0x2000, 0);
+    Voc_Play(sound, 1.0f, 0x2000, 0);
 }
 void __fastcall CC_Draw_Shape(Surface *surface, ConvertClass *drawer, ShapeFileStruct const *shape, int frame,
                               Point2D const &point, Rect const &window, int flags, int unknown8,

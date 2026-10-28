@@ -7,7 +7,7 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
 // @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
-// @ref ?Unknown_00713DB0@@YIHHMHH@Z=00713db0
+// @ref ?Voc_Play@@YIPAUAudioEvent@@HMHPAUAudioEventHandle@@@Z=00713db0
 // @ref ?Refund_Money@HouseClass@@QAEXH@Z=004e5440
 // @ref ??_C@_0N@GEGF@EVA_UnitSold?$AA@=007cf9c4
 
@@ -16,7 +16,7 @@ void FootClass::unknown_slot98(int arg1)
     if (arg1) {
         if (House->Unknown_004F52B0()) {
             Unknown_00715B40("EVA_UnitSold", -1, -1);
-            Unknown_00713DB0(Rules->unknown_5c4, 1.0f, 0x2000, 0);
+            Voc_Play(Rules->unknown_5c4, 1.0f, 0x2000, 0);
         }
         House->Refund_Money(unknown_slot167());
         unknown_slot210();

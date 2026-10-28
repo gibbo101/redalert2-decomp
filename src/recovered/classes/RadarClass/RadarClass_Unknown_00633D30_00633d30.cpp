@@ -53,7 +53,7 @@ void RadarClass::Unknown_00633D30()
         if (playing) {
             Debug_Printf("Radar: Next movie.\n");
             unknown_14bc.Unknown_00406070();
-            unknown_14bc.Unknown_00406100(Unknown_00713DB0(Rules->unknown_618, 1.0f, 0x2000, 0), 0);
+            unknown_14bc.Unknown_00406100(Voc_Play(Rules->unknown_618, 1.0f, 0x2000, 0), 0);
             unknown_14a8 = 4;
             unknown_14f8 = 25;
         }
@@ -66,7 +66,7 @@ void RadarClass::Unknown_00633D30()
         Unknown_005A0AC0();
         flag = playing;
         unknown_14bc.Unknown_00406070();
-        unknown_14bc.Unknown_00406100(Unknown_00713DB0(Rules->MovieOff, 1.0f, 0x2000, 0), 0);
+        unknown_14bc.Unknown_00406100(Voc_Play(Rules->MovieOff, 1.0f, 0x2000, 0), 0);
         unknown_set_frame_rate_0053d820(Rules->DetailMinFrameRateNormal);
         unknown_14d5 = true;
     }

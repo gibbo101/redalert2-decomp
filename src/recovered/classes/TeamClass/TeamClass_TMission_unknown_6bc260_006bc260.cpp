@@ -6,6 +6,6 @@
 
 void TeamClass::TMission_unknown_6bc260(ScriptMissionClass const &mission, int unknown)
 {
-    Unknown_00713DB0(mission.Data, 1.0f, 0x2000, 0);
+    Voc_Play(mission.Data, 1.0f, 0x2000, 0);
     StepCompleted = true;
 }

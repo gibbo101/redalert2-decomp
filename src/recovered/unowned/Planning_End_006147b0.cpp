@@ -19,7 +19,7 @@ void Planning_End()
         unknown_node_a766f8 = 0;
         unknown_node_a766b0 = 0;
         unknown_flag_a767a4 = false;
-        Unknown_00713DB0(Rules->unknown_1d8, 1.0f, 0x2000, 0);
+        Voc_Play(Rules->unknown_1d8, 1.0f, 0x2000, 0);
         if (unknown_sink_a76680) {
             unknown_sink_a76680->Unknown_Slot0(0x11C8, 0);
         }

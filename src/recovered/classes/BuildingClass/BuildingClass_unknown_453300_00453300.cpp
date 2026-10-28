@@ -14,7 +14,7 @@ extern "C" char const unknown_eva_structure_garrisoned_007cfbfc[];
 // @ref ?unknown_452f50@BuildingClass@@QAEXH@Z=00452f50
 // @ref ?Find_Index@SideClass@@SIHPBD@Z=0067af90
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
-// @ref ?Unknown_00713DB0@@YIHHMHH@Z=00713db0
+// @ref ?Voc_Play@@YIPAUAudioEvent@@HMHPAUAudioEventHandle@@@Z=00713db0
 // @ref ?Unknown_0063B5B0@@YI_NHVCell@@@Z=0063b5b0
 // @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
 // @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
@@ -36,7 +36,7 @@ void BuildingClass::unknown_453300()
     if(unknown_554.Count()==0) {
         if(House!=civilian) {
             if(House->Unknown_004F52B0()) {
-                Unknown_00713DB0(Rules->BuildingAbandonedSound,1.0f,0x2000,0);
+                Voc_Play(Rules->BuildingAbandonedSound,1.0f,0x2000,0);
                 if(Unknown_0063B5B0(15,unknown_slot104()))
                     Unknown_00715B40(unknown_eva_structure_abandoned_007cfc14,-1,-1);
             }

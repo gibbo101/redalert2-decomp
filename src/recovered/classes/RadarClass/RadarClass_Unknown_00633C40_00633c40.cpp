@@ -5,7 +5,7 @@
 #include "shared/radar.hpp"
 #include "shared/rules.hpp"
 // @ref ?Unknown_00633000@RadarClass@@QAEXH_N@Z=00633000
-// @ref ?Unknown_00406100@UnknownList14BC@@QAIXHH@Z=00406100
+// @ref ?Unknown_00406100@UnknownList14BC@@QAIXPAUAudioEvent@@PAUAudioEventType@@@Z=00406100
 // @ref ?Unknown_004082B0@@YAXXZ=004082b0
 // @ref ?Unknown_00408330@@YAHXZ=00408330
 // @ref ?Unknown_005A0B10@@YAXXZ=005a0b10
@@ -44,7 +44,7 @@ void RadarClass::Unknown_00633C40()
         }
         Unknown_00633000(3, false);
         unknown_14bc.Unknown_00406070();
-        unknown_14bc.Unknown_00406100(Unknown_00713DB0(Rules->unknown_618, 1.0f, 0x2000, 0), 0);
+        unknown_14bc.Unknown_00406100(Voc_Play(Rules->unknown_618, 1.0f, 0x2000, 0), 0);
         unknown_set_frame_rate_0053d820(Rules->DetailMinFrameRateMovie);
         break;
     }

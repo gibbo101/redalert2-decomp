@@ -25,12 +25,12 @@ void HouseClass::Attacked(TechnoClass *source)
     if (is_player) {
         if (Unknown_0063B5B0(3, Coord_Cell(source->Center_Coord()))) {
             Unknown_00715B40("EVA_OurBaseIsUnderAttack", -1, -1);
-            Unknown_00713DB0(Rules->BaseUnderAttackSound, 1.0f, 0x2000, 0);
+            Voc_Play(Rules->BaseUnderAttackSound, 1.0f, 0x2000, 0);
         }
     } else if (is_ally) {
         if (Unknown_0063B5B0(16, Coord_Cell(source->Center_Coord()))) {
             Unknown_00715B40("EVA_OurAllyIsUnderAttack", -1, -1);
-            Unknown_00713DB0(Rules->BaseUnderAttackSound, 1.0f, 0x2000, 0);
+            Voc_Play(Rules->BaseUnderAttackSound, 1.0f, 0x2000, 0);
         }
     }
     for (int index = 0; index < unknown_38.Count(); index++) {

@@ -10,7 +10,7 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
 // @ref ?Unknown_004F52F0@HouseClass@@QAE_NXZ=004f52f0
-// @ref ?Unknown_00713DB0@@YIHHMHH@Z=00713db0
+// @ref ?Voc_Play@@YIPAUAudioEvent@@HMHPAUAudioEventHandle@@@Z=00713db0
 
 void BuildingClass::unknown_slot98(int mode)
 {
@@ -40,7 +40,7 @@ void BuildingClass::unknown_slot98(int mode)
             unknown_slot117();
         }
         if (House->Unknown_004F52B0()) {
-            Unknown_00713DB0(Rules->unknown_62c, 1.0f, 0x2000, 0);
+            Voc_Play(Rules->unknown_62c, 1.0f, 0x2000, 0);
         }
     } else if (Type->FirestormWall) {
         Type->unknown_slot33((int)House);
