@@ -62,6 +62,23 @@ inline bool operator!=(CoordStruct const &left, CoordStruct const &right)
 }
 #endif
 
+// A coordinate type derived from CoordStruct whose (x, y, z) constructor only
+// forwards to CoordStruct's (name and base are hypotheses). Evidence: two
+// out-of-line copies with identical code (three stores, returns this, ret 12):
+// 0x0041B630 (190 calls, 108 of them read the returned this to copy a
+// temporary: the out-of-line CoordStruct(int, int, int); accepted elsewhere
+// as UnknownVector3) and 0x00434820 (17 calls in 9 units, first emitted by
+// the BuildingLight unit; accepted alone as CoordStruct::Set_00434820). In
+// DynamicVectorClass<WaypointClass>::Resize (0x007256C0) the heap new[]
+// loop calls 0x00434820 and the placement new[] loop calls 0x0041B630: the
+// placement loop expands one more constructor level, so 0x00434820 wraps
+// 0x0041B630 (Study72). WaypointClass (shared/waypoint_path.hpp) holds one.
+struct UnknownCoord434820 : CoordStruct {
+    UnknownCoord434820() {}
+    UnknownCoord434820(int x, int y, int z) : CoordStruct(x, y, z) {}
+    UnknownCoord434820(CoordStruct const &coord) : CoordStruct(coord) {}
+};
+
 class Cell {
 public:
     void unknown_47e2b0(); // 0047E2B0 empty RET; nonconst/nonvirtual coordinate operation hypothesis

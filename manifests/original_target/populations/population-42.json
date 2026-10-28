@@ -4193,31 +4193,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 7493632,
-      "method": "00725800",
-      "symbol": "?FUN_00725800@Owner_00725800@seed_00725800@@QAEHPAH@Z",
-      "symbol_prefix": "?FUN_00725800@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 64,
-      "body_sha256": "1ad91110d3e1316a78594bfa7522d2620215b24e678d7a4ee725d11b58a81bb7",
-      "padding_bytes": 0,
-      "full_extent_bytes": 64,
-      "full_extent_sha256": "1ad91110d3e1316a78594bfa7522d2620215b24e678d7a4ee725d11b58a81bb7",
-      "relocations": [],
-      "source_sha256": "94f0effd3986cc9a44780b87d8107606c60351b11810d9be77ba52394f85457e",
-      "source": "src/recovered/classes/DynamicVectorClass_WaypointClass/00725800.cpp",
-      "source_order": 7107,
-      "population": "population-42",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 7498416,
       "method": "00726ab0",
       "symbol": "?FUN_00726ab0@seed_00726ab0@@YI_NH@Z",

@@ -9765,32 +9765,6 @@
       "source_order": 55149
     },
     {
-      "entry": 7492368,
-      "method": "00725310",
-      "symbol": "?ID@?$DynamicVectorClass@UWaypointClass@@@@UAEHPBUWaypointClass@@@Z",
-      "symbol_prefix": "?ID@?$DynamicVectorClass@UWaypointClass@@@@UAEHPBUWaypointClass@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 36,
-      "body_sha256": "9dcefccc4d67c0cb9c6f89fd70c7f511db358042a092bd600df3de62832feb54",
-      "padding_bytes": 12,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "68ffc8ce258c8e5594dacacb26abcaff55e8620a198e68d48fba0c8b750352fd",
-      "relocations": [],
-      "source_sha256": "878c852b27c4bf0ae9aae98e028794e032f1819fa54364cabc56f5887e63d072",
-      "source": "src/recovered/classes/DynamicVectorClass_WaypointClass/DynamicVectorClass_WaypointClass_ID_pointer_00725310.cpp",
-      "population": "population-1622",
-      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "DynamicVectorClass_WaypointClass_ID_pointer_00725310",
-      "source_order": 55180
-    },
-    {
       "entry": 7518368,
       "method": "0072b8a0",
       "symbol": "?ID@?$VectorClass@UCentroid@WorldDominationTour@@@@UAEHPBUCentroid@WorldDominationTour@@@Z",

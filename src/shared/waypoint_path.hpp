@@ -35,7 +35,9 @@ struct WaypointClass {
         return Coord.X == waypoint.Coord.X && Coord.Y == waypoint.Coord.Y && Coord.Z == waypoint.Coord.Z;
     }
     bool operator!=(WaypointClass const &waypoint) const { return !(*this == waypoint); }
-    CoordStruct Coord;
+    // Its (x, y, z) constructor wraps CoordStruct's (0x00434820 around
+    // 0x0041B630; shared/coord.hpp).
+    UnknownCoord434820 Coord;
 };
 
 class WaypointPathClass : public AbstractClass {

@@ -109,6 +109,7 @@
 | [classes/WWKeyboardClass](../src/recovered/classes/WWKeyboardClass/) | 20 | 2,081 | 20 | 0x00532130–0x00532E60 |
 | [containers](../src/recovered/containers/) | 17 | 2,067 | 17 | 0x0042B620–0x00682580 |
 | [classes/TagClass](../src/recovered/classes/TagClass/) | 27 | 2,064 | 27 | 0x006B37F0–0x006B42E0 |
+| [classes/WaypointPathClass](../src/recovered/classes/WaypointPathClass/) | 21 | 2,055 | 21 | 0x00724970–0x00725200 |
 | [classes/WorldDominationTour__Campaign](../src/recovered/classes/WorldDominationTour__Campaign/) | 11 | 2,011 | 11 | 0x00725DE0–0x007269B0 |
 | [classes/ZBuffer](../src/recovered/classes/ZBuffer/) | 10 | 2,009 | 10 | 0x00410A40–0x00411230 |
 | [classes/ABuffer](../src/recovered/classes/ABuffer/) | 9 | 1,972 | 9 | 0x00775B80–0x00776340 |
@@ -143,7 +144,6 @@
 | [classes/CCFileClass](../src/recovered/classes/CCFileClass/) | 17 | 1,442 | 15 | 0x00401980–0x0051AD20 |
 | [classes/EBolt](../src/recovered/classes/EBolt/) | 10 | 1,396 | 10 | 0x004B1770–0x004B2580 |
 | [classes/LocomotionClass](../src/recovered/classes/LocomotionClass/) | 55 | 1,394 | 54 | 0x004A4BF0–0x0053D610 |
-| [classes/WaypointPathClass](../src/recovered/classes/WaypointPathClass/) | 17 | 1,392 | 17 | 0x00724970–0x00725200 |
 | [classes/SmudgeClass](../src/recovered/classes/SmudgeClass/) | 14 | 1,381 | 14 | 0x004D3290–0x00687B00 |
 | [classes/UnitTypeClass](../src/recovered/classes/UnitTypeClass/) | 21 | 1,301 | 21 | 0x004D3D10–0x0070B600 |
 | [classes/EnumConnectionsClass](../src/recovered/classes/EnumConnectionsClass/) | 10 | 1,265 | 7 | 0x00492180–0x00492650 |
@@ -183,6 +183,7 @@
 | [classes/EventClass](../src/recovered/classes/EventClass/) | 10 | 978 | 10 | 0x004B5E80–0x006103E0 |
 | [classes/LCWPipe](../src/recovered/classes/LCWPipe/) | 5 | 978 | 5 | 0x00534EE0–0x00535280 |
 | [classes/ToolTipManager](../src/recovered/classes/ToolTipManager/) | 23 | 968 | 23 | 0x006EB2E0–0x006EC350 |
+| [classes/VectorClass_WaypointClass](../src/recovered/classes/VectorClass_WaypointClass/) | 10 | 964 | 10 | 0x00725340–0x00725B40 |
 | [classes/IsometricTileTypeClass](../src/recovered/classes/IsometricTileTypeClass/) | 17 | 958 | 16 | 0x004D3F90–0x0052E6B0 |
 | [classes/BombListClass](../src/recovered/classes/BombListClass/) | 7 | 952 | 7 | 0x00436470–0x004367C0 |
 | [classes/VectorClass_RGBClass](../src/recovered/classes/VectorClass_RGBClass/) | 9 | 937 | 7 | 0x0046CDA0–0x0046DD20 |
@@ -209,7 +210,6 @@
 | [classes/VectorClass_UnitTypeClass_ptr](../src/recovered/classes/VectorClass_UnitTypeClass_ptr/) | 13 | 806 | 12 | 0x004D55A0–0x004FB610 |
 | [classes/VectorClass_AnimClass_ptr](../src/recovered/classes/VectorClass_AnimClass_ptr/) | 13 | 805 | 12 | 0x004D50C0–0x00520F00 |
 | [classes/VectorClass_TeamTypeClass_ptr](../src/recovered/classes/VectorClass_TeamTypeClass_ptr/) | 13 | 805 | 12 | 0x004D5300–0x004F8710 |
-| [classes/VectorClass_WaypointClass](../src/recovered/classes/VectorClass_WaypointClass/) | 9 | 798 | 9 | 0x00725340–0x00725AF0 |
 | [classes/VectorClass_unsigned_short_ptr](../src/recovered/classes/VectorClass_unsigned_short_ptr/) | 12 | 792 | 11 | 0x0052E790–0x0053AE60 |
 | [classes/GScreenClass](../src/recovered/classes/GScreenClass/) | 17 | 786 | 14 | 0x0040D100–0x004E1110 |
 | [classes/DynamicVectorClass_BuildingTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_BuildingTypeClass_ptr/) | 11 | 782 | 10 | 0x004D5490–0x006DF8B0 |
@@ -275,6 +275,7 @@
 | [classes/WorldDominationTour__FlagGameOption](../src/recovered/classes/WorldDominationTour__FlagGameOption/) | 5 | 550 | 5 | 0x007287D0–0x00728BF0 |
 | [classes/VectorClass_OwnerTalkClass__ConnectionListStruct_ptr](../src/recovered/classes/VectorClass_OwnerTalkClass__ConnectionListStruct_ptr/) | 8 | 545 | 6 | 0x0063F0C0–0x006401D0 |
 | [classes/RLEBlitTransLucent50AlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransLucent50AlphaZReadWrite_unsigned_short/) | 2 | 544 | 1 | 0x0048C3D0–0x0048D8F0 |
+| [classes/DynamicVectorClass_WaypointClass](../src/recovered/classes/DynamicVectorClass_WaypointClass/) | 5 | 543 | 5 | 0x007252D0–0x00725800 |
 | [classes/GdiBitmapSurface_004981C0](../src/recovered/classes/GdiBitmapSurface_004981C0/) | 3 | 536 | 3 | 0x004981C0–0x004983A0 |
 | [classes/BlitTranslucentWriteAlpha_unsigned_short](../src/recovered/classes/BlitTranslucentWriteAlpha_unsigned_short/) | 2 | 533 | 2 | 0x004884C0–0x0048CEB0 |
 | [classes/RLEBlitTransZRemapXlatAlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransZRemapXlatAlphaZReadWrite_unsigned_short/) | 2 | 527 | 1 | 0x0048C020–0x0048D870 |
@@ -1072,7 +1073,6 @@
 | [classes/BlitTransZRemapXlat_unsigned_char](../src/recovered/classes/BlitTransZRemapXlat_unsigned_char/) | 2 | 103 | 2 | 0x00486380–0x0048C810 |
 | [classes/BlitTransRemapXlat_unsigned_char](../src/recovered/classes/BlitTransRemapXlat_unsigned_char/) | 2 | 102 | 2 | 0x00486470–0x0048C850 |
 | [classes/MultiplayerBattle](../src/recovered/classes/MultiplayerBattle/) | 4 | 102 | 4 | 0x005A2320–0x005A2500 |
-| [classes/DynamicVectorClass_WaypointClass](../src/recovered/classes/DynamicVectorClass_WaypointClass/) | 2 | 100 | 1 | 0x00725310–0x00725800 |
 | [classes/MultiplayerManBattle](../src/recovered/classes/MultiplayerManBattle/) | 3 | 99 | 0 | 0x005A74B0–0x005A7500 |
 | [classes/DynamicVectorClass_SubzoneTrackingStruct](../src/recovered/classes/DynamicVectorClass_SubzoneTrackingStruct/) | 2 | 96 | 1 | 0x0056ABC0–0x0056B9F0 |
 | [classes/ScoreBigFontClass](../src/recovered/classes/ScoreBigFontClass/) | 1 | 96 | 0 | 0x00668490–0x00668490 |
@@ -1205,7 +1205,7 @@
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 
-1198 directories, 14048 regions. Generated by `tools/original_target/source_index.py`.
+1198 directories, 14056 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
