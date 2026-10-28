@@ -408,7 +408,7 @@
       },
       {
         "path": "src/shared/techno.hpp",
-        "sha256": "c20d38c0888f49ccb02d2a57adc4bd7791670b6bc1584016960529ba398fc34d"
+        "sha256": "8388e92d3fb40746052db54ec5724b50737d24e2ee049f7bd8cd0c40dd32b0b9"
       },
       {
         "path": "src/shared/techno_type.hpp",
@@ -460,7 +460,7 @@
       },
       {
         "path": "src/shared/radar.hpp",
-        "sha256": "2fb5a5cd58839ce3a5055786abb9527a757564085d223bba221c476695093d74"
+        "sha256": "82cda24ff33b607cb76db9a4670db26db7993b7280d5494b46c24ef66b317c80"
       },
       {
         "path": "src/shared/scroll.hpp",
@@ -1653,6 +1653,10 @@
       {
         "path": "src/shared/game_controls_dialog.hpp",
         "sha256": "8d12e32b6b0c3e3f433651c5c1e5391f4e4fe3ddf810742970d7bf0e677f2228"
+      },
+      {
+        "path": "src/shared/sound_play.hpp",
+        "sha256": "ec8bb49a59a0cba0968df811e084aa72f87f6418d8071085dfc7b9a5f4f61b28"
       }
     ],
     "source_quality_checkpoint": {

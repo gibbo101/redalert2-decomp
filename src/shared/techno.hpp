@@ -34,6 +34,7 @@
 #include "shared/unknown_globals.hpp"
 #include "shared/rect.hpp"
 #include "shared/storage_class.hpp"
+#include "shared/sound_play.hpp"
 #include "shared/stage.hpp"
 #include "shared/techno_type.hpp"
 #include "shared/house.hpp"
@@ -322,10 +323,9 @@ int __fastcall Unknown_006D8F60(int kind, int unused_edx, int unused_stack);
 void __fastcall Unknown_006D7C80(AbstractClass *target);
 
 // Sound effects: enabled flag (0x007D88D6), the effect generator
-// (0x00839218) and the play call (0x00713DB0; argument names hypotheses).
+// (0x00839218); the play call 0x00713DB0 is shared/sound_play.hpp.
 extern bool unknown_sound_enabled_7d88d6;
 extern Random2Class unknown_random_839218;
-int __fastcall Unknown_00713DB0(int sound, float volume, int priority, int object);   // fastcall: sound in ECX, priority in EDX
 
 // A double constant 0.0 (0x0079B610; slot 165 returns it).
 extern double const unknown_double_79b610;

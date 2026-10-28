@@ -18,6 +18,7 @@
 #include "shared/gadget.hpp"
 #include "shared/system_timer.hpp"
 #include "shared/string_table.hpp"
+#include "shared/sound_play.hpp"
 
 // The radar's own gadget (RTTI RadarClass::RTacticalClass, vtable
 // 0x007A8694; GadgetClass constructor 0x004CEFE0 inlined with flags 0x9F).
@@ -144,9 +145,6 @@ struct UnknownRadar1244 {
     int unknown_08;
     int unknown_0c;
 };
-
-// Plays a sound (0x00713DB0; shared/techno.hpp's declaration).
-int __fastcall Unknown_00713DB0(int sound, float volume, int flags, int arg4);
 
 // unknown_int_a3d548 (0x00A3D548): shared/unknown_globals.hpp.
 
