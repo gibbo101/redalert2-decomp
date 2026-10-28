@@ -5,6 +5,10 @@
 typedef unsigned short const (*AlphaTableRows)[256];
 class UnknownAlphaTableCache_008315B8 {
 public:
+    UnknownAlphaTableCache_008315B8(); // 0x0041E3C0 (empty)
+    ~UnknownAlphaTableCache_008315B8(); // 0x0041E3D0 (empty)
+    // Finds the shared AlphaLightingRemapClass for a level (or builds and
+    // registers it) and takes a reference; the table is its first member.
     AlphaTableRows Get(int count); // 0x0041E3E0
     void Release(AlphaTableRows table); // 0x0041E510
 };
