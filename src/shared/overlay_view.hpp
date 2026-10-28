@@ -7,13 +7,15 @@
 
 // An overlay type (stand-in for OverlayTypeClass: the fields TechnoClass,
 // InfantryClass and AnimClass read).
+class AnimTypeClass;
 class UnknownOverlayType {
 public:
     char unknown_000[0x9C];
     int unknown_9c;                         // +0x09C (TechnoClass slot 27: 6 allows a Parasite warhead's attack; hypothesis)
     char unknown_0a0[0x201 - 0xA0];
     bool unknown_201;                       // +0x201 (TechnoClass slot 27: attackable)
-    char unknown_202[0x270 - 0x202];
+    char unknown_202[0x26C - 0x202];
+    AnimTypeClass *unknown_26c;             // +0x26C CellAnim (IsometricTileClass slot 71)
     int unknown_270;                        // +0x270 (a house index; InfantryClass slot 101: compared with the cell's +0x11E >> 4)
     char unknown_274[0x278 - 0x274];
     bool unknown_278;                       // +0x278 (InfantryClass slot 101: a wall)

@@ -18,11 +18,12 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes (Opus, class_inventory picks): Obj126 ObjectClass 0x5D2E70/0x5D3060/0x5D31C0 (inherited by
-8+ classes); Iso128 IsometricTileClass slot 71 0x527A80; Tip130 CCToolTip 0x46DFC0/0x46E250; Para131
-ParasiteClass 0x606F50/0x607200. Map129 landed 0x549AE0/0x559D80; Techno127 0x6C1830 98.30 is a scheduling-tie
-miss. Register/scheduling-tie near misses (Voc_Static_Save, Find_Disk_Drive, 0x6AAFD0, 0x5B8490, 0x6C1830) go
-to the Windows lead. Lanes use tools/original_target/lane_tools.py. Closed 2026-10-28 (resume folders `build/class-work/<Lane>/`): Seed118 (callee-pops
+Running Mac lanes (Opus, class_inventory picks): Iso128 IsometricTileClass slot 71 0x527A80; Score132
+ScoreFontClass 0x667B60/0x667C70 and ScorePrintClass 0x6680F0; MSAnim133 MSPrintAnim 0x5AEDA0/0x5AF030.
+Landed this period: Map129 (0x549AE0, 0x559D80), Obj126 (0x5D2E70 with HouseClass 0x4F52B0 bool), Para131
+(ParasiteClass::Detach 0x607200). Register/scheduling-tie near misses (Voc_Static_Save, Find_Disk_Drive,
+0x6AAFD0, 0x5B8490, 0x6C1830, 0x5D3060, CCToolTip::Show 0x46DFC0, ParasiteClass::AI 0x606F50) go to the
+Windows lead. Lanes use tools/original_target/lane_tools.py. Closed 2026-10-28 (resume folders `build/class-work/<Lane>/`): Seed118 (callee-pops
 `lea` rule; Speech_Load, Voc_Static_Load), Seed119 (Speech_Update), Coop120 (MessageListClass::Input), Cd121
 (0x715230), Cd124 (0x715300), Coop122 (fill combo 0x5B70B0, fill list 0x5B71E0; 0x5B8490 open), Seed123 and
 Seed125 (zero bytes; Tactical family parked; 0x6AAFD0 is a register-tie near miss for Windows). Their misses

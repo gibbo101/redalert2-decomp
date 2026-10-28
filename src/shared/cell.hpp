@@ -243,6 +243,7 @@ public:
     bool unknown_4718b0(int arg1, int arg2, int arg3);                   // 0x004718B0 (whether a wall may be placed; hypothesis)
     void unknown_475960(bool arg1);                                      // 0x00475960
     void unknown_476ba0(bool arg1);                                      // 0x00476BA0
+    void unknown_471d10();                      // 0x00471D10 (IsometricTileClass slot 71: after the tile changes; hypothesis)
     void Unknown_00472540(int value);           // 0x00472540 (clears an overlay with -1: AnimClass 0x004226D0, TerrainClass slot 52)
     int unknown_4706c0(Point2D const &point) const;       // 0x004706C0 (height at a lepton position in the cell; hypothesis)
 

@@ -111,3 +111,14 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   population-2648): fire coordinate through Matrix3D. One scheduling tie: the original stores/fild's the turret
   int after `shr ecx,1; and ecx,0x1F` with its fmul after the second store. Untried: an inline TechnoClass member
   for the turret angle, another FacingClass accessor for +0x2E0. Windows near-miss work.
+- ObjectClass slot 72 0x5D3060 98.29 (Obj126 misses/slot72_005d3060_98.29.cpp; signature `Rect unknown_slot72()`
+  already right): register tie in the last overlap test (`add edi, edx` vs `add edx, edi`). Windows near-miss work.
+- ObjectClass slot 73 0x5D31C0 32.41 (Obj126 misses/slot73_005d31c0_32.41.cpp): logic recovered; inline budget,
+  the original calls Rect ctor 0x42BCD0 out of line inside all three Get_Frame_Rect expansions while Get_Frame,
+  Is_Valid and the return Rect stay inline. Next: build the frame rects through a deeper header helper.
+- CCToolTip::Show 0x46DFC0 98.95 (Tip130 best_show_0046dfc0.cpp, --symbol '?Show@CCToolTip'): two loads swapped
+  (area X before Width in the no-tip branch). Windows near-miss work. CCToolTip::Debug_Print 0x46E250 60.92
+  (best_debug_print_0046e250.cpp): register/stack-slot allocation in the text-box section.
+- ParasiteClass::AI 0x606F50 98.10 (Para131 drafts/ParasiteClass_AI_00606f50.miss.cpp, inc/shared): needs the
+  TechnoClass slot 223 rename to `int (CoordStruct const *, float)` (5 populations) first, then one scheduling
+  tie (`add ebx,-0x3FFF` before the Random2Class call). Windows near-miss work.

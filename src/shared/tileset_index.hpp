@@ -13,6 +13,9 @@ extern int unknown_tileset_a52c70;
 extern int unknown_tileset_a52c74;
 extern int unknown_tileset_a52c80;
 extern int unknown_tileset_a52e68;
+extern int unknown_tileset_a52ee8;
+extern int unknown_tileset_a52eec;
+extern int unknown_tileset_a52f00;
 extern int unknown_tileset_a52e70;
 extern int unknown_tileset_a52ea0;
 extern int unknown_tileset_a52ea8;
@@ -33,6 +36,7 @@ extern int unknown_tileset_a6e010;
 extern int unknown_tileset_a6e014;
 extern int unknown_tileset_a6e018;
 extern int unknown_tileset_a6e028;
+extern int unknown_tileset_a6e038;
 extern int unknown_tileset_a6e0e0;
 extern int unknown_tileset_a6e0f8;
 

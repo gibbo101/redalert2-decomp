@@ -43,6 +43,14 @@ struct IsoTileImageStruct {
     int Tiles[1];                                       // +0x10 per-cell tile offsets
 };
 
+// One cell's tile in the image (the Tiles entries point at it; hypothesis).
+struct IsoTileCellStruct {
+    char unknown_00[0x28];
+    char unknown_28;                                    // +0x28 height (IsometricTileClass slot 71)
+    char unknown_29;
+    char unknown_2a;                                    // +0x2A (0x0052B6F0)
+};
+
 class IsometricTileTypeClass : public ObjectTypeClass {
 public:
     class TileInsertType;
@@ -66,6 +74,7 @@ public:
 
     void unknown_func_52b560();                                         // 0x0052B560 (loads the image)
     void unknown_func_52e3d0();                                         // 0x0052E3D0 (rebuilds unknown_274)
+    char unknown_func_52b6f0(int index);                               // 0x0052B6F0 (a cell's +0x2A byte of the image; hypothesis)
     unsigned short unknown_func_52e360(int index, int value, bool second) const;    // 0x0052E360
 
     int ArrayIndex;                                     // +0x264
