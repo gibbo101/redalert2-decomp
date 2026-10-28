@@ -140,6 +140,28 @@ public:
     bool unknown_31;            // +0x31
 };
 
+// Unicode text typed out character by character into a rectangle, one
+// character every CharDelay ticks, optionally centring each line
+// (RTTI vtable 0x007A6E54). Layout from the constructor 0x005AE6C0.
+class MSFont;
+class MSPrintAnim : public MSAnim {
+public:
+    virtual bool Unknown_Slot4(Surface *surface, Rect *dirty);     // 0x005AEDA0
+    virtual void Draw(Surface *surface, Rect const *clip);          // 0x005AF030
+
+    WideString Text;            // +0x1C
+    unsigned LineStart;         // +0x20 first character of the line shown at the top
+    unsigned Position;          // +0x24 characters typed so far
+    unsigned unknown_28;        // +0x28 slot 4 calls after the end of the text
+    int CharDelay;              // +0x2C ticks per character
+    bool unknown_30;            // +0x30 restore the background and fade in the newest characters
+    MSFont *Font;               // +0x34
+    Rect TextRect;              // +0x38
+    bool unknown_48;            // +0x48 (slot 4 returns its negation once finished)
+    bool Centered;              // +0x49 lines centred in TextRect
+    int unknown_4C;             // +0x4C the last line's centring offset
+};
+
 class Wstring;
 class FileClass;
 

@@ -49,6 +49,8 @@ public:
     void Set_Size(int size);                                // 0x00770350 (name hypothesis)
     void Copy_Padded(unsigned short *buffer, unsigned size) const;   // 0x007703A0
     unsigned short Get_Char(unsigned index) const;          // 0x00770470
+    // The same (a second copy, 0x00770400; MSPrintAnim's slot 4 reads its text through it).
+    unsigned short unknown_char_770400(unsigned index) const;
     bool Remove_Character(unsigned short character);        // 0x00770110 (name hypothesis)
     short Remove(int position, int count);                  // 0x00770080 (name hypothesis; returns a 16-bit flag)
     WideString &operator+=(unsigned short const *string);   // 0x0076FDD0
