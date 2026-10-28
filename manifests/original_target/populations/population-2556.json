@@ -4,8 +4,8 @@
     "id": "population-2556",
     "inventory_sha256": "c0a4369088d5c9899be20b8a64befbf6d7d6e6e6d3c5a32ec3f8ded0828a309b",
     "gaps_sha256": "edd271f252a43216ae83bf25f4899fdf907d3fd733b3a24359b4ae32272fe239",
-    "historical_population_sha256": "5124379391abf1dd6d7fd42b5f0e59d05bb6e244b1f64e843c643edaff0a0b4f",
-    "historical_acceptance_sha256": "ca418f2d2d6b37b54b798ea12dcc37b6c2808b324517218458e12b0a5d6c3205"
+    "historical_population_sha256": "dcdd34d176154072a9175e56df1a6be8b1a7870cf953bc1c6ed3dac5d443ebf6",
+    "historical_acceptance_sha256": "792c207a02997b4d5f1d0bbc7f7f0a0cc81393028467ee54ba943d9b7880681e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3836,7 +3836,7 @@
     "?Load_Default@PlayerProfile@@SI?AV?$rc_ptr@VPlayerProfile@@@@XZ": 7571056,
     "??0PlayerProfile@@QAE@ABVWstring@@H_NHHHHHHHH@Z": 7572544,
     "?AI@SidebarClass@@UAEXAAHABUPoint2D@@@Z": 6806672,
-    "?unknown_478760@CellClass@@QAE_NHHHHHHH@Z": 4687712,
+    "?unknown_478760@CellClass@@QAE_NH_N0HHH0@Z": 4687712,
     "?Read_INI@AnimTypeClass@@UAE_NAAVCCINIClass@@@Z": 4347536,
     "?Read_INI@TiberiumClass@@UAE_NAAVCCINIClass@@@Z": 7245104,
     "??0HouseClass@@QAE@PAVHouseTypeClass@@@Z": 5118144,
@@ -8988,7 +8988,7 @@
         {
           "offset": 27,
           "kind": 20,
-          "symbol": "?unknown_478760@CellClass@@QAE_NHHHHHHH@Z",
+          "symbol": "?unknown_478760@CellClass@@QAE_NH_N0HHH0@Z",
           "target": 4687712,
           "addend": 0,
           "resolved": 113

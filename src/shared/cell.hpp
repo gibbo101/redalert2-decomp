@@ -225,7 +225,9 @@ public:
     bool unknown_4786d0(int value);             // 0x004786D0
     bool unknown_478720();                      // 0x00478720
     void unknown_478740();                      // 0x00478740 (occupants' ObjectClass slot 61)
-    bool unknown_478760(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7);   // 0x00478760
+    // Whether an object of speed type speed may enter (zone and level -1: any;
+    // arg2/arg3 ignore some blocked directions; hypothesis).
+    bool unknown_478760(int speed, bool arg2, bool arg3, int zone, int zone_type, int level, bool alt);   // 0x00478760
 
     // Members other units call (not recovered yet).
     void unknown_47c080();                      // 0x0047C080 (after the smudge changes; redraw hypothesis)

@@ -15,7 +15,7 @@
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 inline BuildingTypeClass *Fogged_Building_Type(FoggedObjectClass const *object)
 {
-    return object->unknown_30 == 6 ? (BuildingTypeClass *)object->DrawRecords[0].unknown_00 : 0;
+    return object->unknown_30 == 6 ? (BuildingTypeClass *)object->DrawRecords[0].Type : 0;
 }
 int InfantryClass::unknown_slot27(Cell const *cell, bool arg2, bool arg3)
 {

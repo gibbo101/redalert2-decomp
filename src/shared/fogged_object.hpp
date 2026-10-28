@@ -16,21 +16,22 @@
 extern "C" GUID const CLSID_FoggedObjectClass;     // 0x007A1ED0
 
 template<class INDEX, class T> class IndexClass;
+class ObjectTypeClass;
 
 class FoggedObjectClass : public AbstractClass {
 public:
     // One drawn piece (16 bytes; fields not recovered).
     struct DrawRecord {
-        DrawRecord() : unknown_00(0), unknown_04(0), unknown_08(0), unknown_0c(0) {}
+        DrawRecord() : Type(0), unknown_04(0), unknown_08(0), unknown_0c(0) {}
         DrawRecord(DrawRecord const &that)
-            : unknown_00(that.unknown_00), unknown_04(that.unknown_04),
+            : Type(that.Type), unknown_04(that.unknown_04),
               unknown_08(that.unknown_08), unknown_0c(that.unknown_0c) {}
         bool operator==(DrawRecord const &that) const
         {
-            return unknown_00 == that.unknown_00 && unknown_04 == that.unknown_04;
+            return Type == that.Type && unknown_04 == that.unknown_04;
         }
         bool operator!=(DrawRecord const &that) const { return !(*this == that); }
-        int unknown_00;
+        ObjectTypeClass *Type;    // +0x00 the drawn object's type (a fogged building's first record: its cells, slot 36)
         int unknown_04;
         unsigned char unknown_08; // original byte copy; semantic meaning unknown
         int unknown_0c;           // copy construction skips padding +09..0B; implicit assignment copies DWORD8 including padding
