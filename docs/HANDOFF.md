@@ -8,10 +8,10 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 
 ## Owner and lanes
 
-Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Seed79 (seed sweep 100-1500 B below 0x500000), Seed82 (0x500000-0x67FFFF,
-continuing Seed78), Seed81 (0x680000 up, continuing Seed76; first the 0xABFF58 index unification and
-the TargetClass As_* family), Big80 (1-4 KB: OwnerDraw family, MapClass 0x55CEF0-0x562450). Windows: one Codex lead
+Claude (Mac) owns integration. Usage is constrained until the Nov 1 reset (the weekly limit was hit
+on 2026-10-28): Mac lanes Seed79, Seed81, Big80 are finishing their in-flight rounds and stopping;
+no new Mac lanes until then. Resume points for each lane are in `build/class-work/<Lane>/NOTES*`
+(Seed79 below 0x500000, Seed82 0x500000-0x67FFFF, Seed81 0x680000 up, Big80 1-4 KB). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
