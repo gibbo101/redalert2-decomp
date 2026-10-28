@@ -43,14 +43,14 @@
 bool TiberiumClass::Read_INI(CCINIClass &ini)
 {
     if (AbstractTypeClass::Read_INI(ini)) {
-        unknown_9c = ini.Get_Int(ID, "Spread", unknown_9c);
+        Spread = ini.Get_Int(ID, "Spread", Spread);
         unknown_a0 = ini.Get_Double(ID, "SpreadPercentage", unknown_a0);
-        unknown_a8 = ini.Get_Int(ID, "Growth", unknown_a8);
+        Growth = ini.Get_Int(ID, "Growth", Growth);
         unknown_b0 = ini.Get_Double(ID, "GrowthPercentage", unknown_b0);
         Value = ini.Get_Int(ID, "Value", Value);
-        unknown_bc = ini.Get_Int(ID, "Power", unknown_bc);
+        Power = ini.Get_Int(ID, "Power", Power);
         unknown_c0 = ini.Get_ColorScheme(ID, "Color", unknown_c0);
-        unknown_c4 = TypeListReader<AnimTypeClass>::Get(ini, ID, "Debris", unknown_c4);
+        Debris = TypeListReader<AnimTypeClass>::Get(ini, ID, "Debris", Debris);
         switch (ini.Get_Int(ID, "Image", -1)) {
             case -1:
                 break;

@@ -8,6 +8,6 @@ HRESULT __stdcall TiberiumClass::Save(IStream *stream, BOOL clear_dirty)
     if (FAILED(result)) {
         return result;
     }
-    unknown_c4.Save(stream);
+    Debris.Save(stream);
     return S_OK;
 }

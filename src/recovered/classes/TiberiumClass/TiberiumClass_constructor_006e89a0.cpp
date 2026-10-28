@@ -31,28 +31,28 @@
 TiberiumClass::TiberiumClass(char const *ini_name)
     : AbstractTypeClass(ini_name),
       ArrayIndex(-1),
-      unknown_9c(0),
+      Spread(0),
       unknown_a0(0.1),
-      unknown_a8(0),
+      Growth(0),
       unknown_b0(0.1),
       Value(0),
-      unknown_bc(0),
+      Power(0),
       unknown_c0(0),
       Image(0),
       unknown_e4(0),
       NumFrames(0),
       NumImages(0),
-      unknown_f0(0),
-      unknown_f4(0),
-      unknown_f8(0),
-      unknown_fc(0),
-      unknown_10c(0),
-      unknown_110(0),
-      unknown_114(0),
-      unknown_118(0)
+      SpreadCount(0),
+      SpreadQueue(0),
+      SpreadMap(0),
+      SpreadData(0),
+      GrowthCount(0),
+      GrowthQueue(0),
+      GrowthMap(0),
+      GrowthData(0)
 {
     ArrayIndex = unknown_TiberiumClass_list_00ac0b30.Count();
     unknown_TiberiumClass_list_00ac0b30.Add(this);
-    unknown_c4.Clear();
+    Debris.Clear();
     unknown_objects_ac0cb0.Add(this);
 }

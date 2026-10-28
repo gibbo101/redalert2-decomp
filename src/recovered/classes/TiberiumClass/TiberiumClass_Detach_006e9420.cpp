@@ -3,9 +3,9 @@
 
 void TiberiumClass::Detach(AbstractClass *target, bool all)
 {
-    for (int index = unknown_c4.Count() - 1; index >= 0; index--) {
-        if (unknown_c4[index] == (AnimTypeClass *)target) {
-            unknown_c4.Delete(index);
+    for (int index = Debris.Count() - 1; index >= 0; index--) {
+        if (Debris[index] == (AnimTypeClass *)target) {
+            Debris.Delete(index);
         }
     }
     if (Image == (OverlayTypeClass *)target) {

@@ -9,24 +9,24 @@ TiberiumClass::~TiberiumClass()
     Detach_This_From_All(this, true);
     unknown_objects_ac0cb0.Delete(this);
     unknown_TiberiumClass_list_00ac0b30.Delete(this);
-    delete unknown_fc;
-    unknown_fc = 0;
-    delete unknown_f8;
-    unknown_f8 = 0;
-    delete unknown_f4;
-    unknown_f4 = 0;
-    if (unknown_110) {
-        unknown_110->Clear();
-        delete unknown_110;
-        unknown_110 = 0;
+    delete SpreadData;
+    SpreadData = 0;
+    delete SpreadMap;
+    SpreadMap = 0;
+    delete SpreadQueue;
+    SpreadQueue = 0;
+    if (GrowthQueue) {
+        GrowthQueue->Clear();
+        delete GrowthQueue;
+        GrowthQueue = 0;
     }
-    if (unknown_118) {
-        delete unknown_118;
-        unknown_118 = 0;
+    if (GrowthData) {
+        delete GrowthData;
+        GrowthData = 0;
     }
-    if (unknown_114) {
-        delete unknown_114;
-        unknown_114 = 0;
+    if (GrowthMap) {
+        delete GrowthMap;
+        GrowthMap = 0;
     }
-    unknown_10c = 0;
+    GrowthCount = 0;
 }
