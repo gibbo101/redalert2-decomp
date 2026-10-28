@@ -16,6 +16,12 @@ class CellClass;
 class Surface;
 class ObjectClass;
 
+// A flag at 0x00AC133D (0x006F76B0) and the handler 0x006F71E0 that the
+// selection band gives each object type's ID while the flag is set
+// (hypotheses).
+bool Unknown_006F76B0();
+void __fastcall Unknown_006F71E0(char const *id);
+
 // The screen rise of a height in leptons (0x006A2970; rounded, plus one from
 // 728 up) and its inverse (0x006A29B0); hypotheses.
 int __fastcall Unknown_006A2970(int z);
@@ -61,6 +67,8 @@ public:
     // intersection of the two rectangles (hypothesis).
     void Unknown_006A9E10(bool arg1, Rect const &rect1, Rect const &rect2);
     void Unknown_006A9F60(bool arg1, Rect const &rect1, Rect const &rect2);
+    bool Unknown_006AA510(ObjectClass *object, int x, int y);   // 0x006AA510 (lists an object's pixel when it is near the tactical area; 0x006AA300 expands it)
+    int Unknown_006AA6A0();                         // 0x006AA6A0 (1 when an object pixel lies inside the selection band; hypothesis)
     void Unknown_006AA790();                        // 0x006AA790 (draws the selection band rectangle; hypothesis)
     void Unknown_006AABC0(Rect const *rect, void (__fastcall *callback)(ObjectClass *object));   // 0x006AABC0 (hypothesis)
 
@@ -134,5 +142,13 @@ public:
     // (0xE18 bytes: Read_Scenario_INI's new)
 };
 extern Tactical *unknown_tactical_83996c;
+
+// An object and the screen pixel it was drawn at (the table at 0x00ABE5F8,
+// filled by 0x006AA300; Tactical +0xDB0 counts the entries, at most 500).
+struct TacticalObjectPixel {
+    ObjectClass *Object;
+    Point2D Pixel;
+};
+extern TacticalObjectPixel unknown_tactical_pixels_abe5f8[500];
 
 #endif

@@ -928,7 +928,7 @@
       },
       {
         "path": "src/shared/tactical.hpp",
-        "sha256": "dc18701b74a736c651c30d859c3aa735d304d7a4f81212b13c5b074440c6189c"
+        "sha256": "c431970a116a31d427db8672d76359c9519ca38c8141be8285056c0bb7e123ec"
       },
       {
         "path": "src/shared/techno_map.hpp",
@@ -4602,7 +4602,8 @@
     "population-2848",
     "population-2849",
     "population-2850",
-    "population-2851"
+    "population-2851",
+    "population-2852"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -5702,7 +5703,7 @@
     ["population-2498", 14],
     ["population-02", 1],
     ["population-18", 1],
-    ["population-2849", 13],
+    ["population-2852", 13],
     ["population-09", 1],
     ["population-08", 1],
     ["population-09", 1],
@@ -7689,15 +7690,16 @@
     ["population-2843", 2],
     ["population-2840", 3],
     ["population-2841", 1],
-    ["population-2849", 1],
+    ["population-2852", 1],
     ["population-2843", 1],
     ["population-2844", 1],
     ["population-2845", 1],
     ["population-2846", 1],
     ["population-2848", 3],
-    ["population-2849", 2],
+    ["population-2852", 2],
     ["population-2850", 1],
-    ["population-2851", 2]
+    ["population-2851", 2],
+    ["population-2852", 3]
   ],
   "shards": {
     "population-01": "927f701f572f3a84aec8268f0eec6f400e89ef70bbaffb40ddbf66e3298bc624",
@@ -9762,10 +9764,11 @@
     "population-2846": "63959b88f433321e920d84bf5df3a68232ffc46e5346c879e3c7355f7d8bb2f7",
     "population-2847": "40385c27206a644f68734b135af0b64fc039a2e49b35b1c20285df009ac4e82f",
     "population-2848": "80a55d5e82c9099dd195d0485f38262a14760d211f905f941f9ef321c01c05a3",
-    "population-2849": "e54e1112c456f2a836a0c791fb715b327701584fcc5c452a5c57638c09db88ca",
+    "population-2849": "762aa805655a3ae418bd4939949191e44a4765aba2167a15c9b578cd51869aae",
     "population-285": "70c148788181f15ffebd4204a9831fe2f054c0655e3a1b0183e2b8787907cd1b",
     "population-2850": "104cc54eef7341ea8179cbc41de9787325c20f365caffba00e79beb3a9d29112",
     "population-2851": "17c965427f713083ffaa80f26900823bf03642f69e71e68497fef1433f5d5d3e",
+    "population-2852": "ddb9837ffbce593d229809c0ea0b0ecdeaf1a0b2edba8d67ff016a1c709b4642",
     "population-286": "7216024cb30c4848a6acdba1d6256733fbc54c100dec64e0f6e89175a2b39636",
     "population-287": "258e996586cec4837375f26b4fdb121a3d6b7ecb3110b3339e7a8ef2fff6e918",
     "population-288": "ee1c050d738cca1adc657027d0c5411d88086dbb73c7e29358e42962d3ef9bb2",
