@@ -40,7 +40,9 @@ class MapSeedClass : public LoadOptionsClass {
 public:
     MapSeedClass(); // 00576F50
     void Set_Default_Description_00576fe0();
+    void Populate_Dialog_Parameters_00578600(HWND dialog); // operation name is a hypothesis
     void Clamp_Parameters_00578d80();
+    void Read_Dialog_Parameters_00578420(HWND dialog); // original receiver+HWND/RET4; new nonvirtual declaration
     void Randomize_00578b10();
     void Randomize_Parameters_005789f0(int map_type);
     bool Save_Or_Prompt_00578ed0(char const *filename);
