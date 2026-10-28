@@ -133,7 +133,7 @@ public:
     virtual bool unknown_slot201();                                   // slot 201 0x0070A240 (inline in the original: unknown_5c0 != -1 or the TechnoClass copy, called out of line; ours inlines it)
     virtual int unknown_slot218(AbstractClass *target, int weapon, int arg3);        // slot 218 0x00704C00
     virtual AbstractClass *unknown_slot219(int arg1, CoordStruct const *coord, bool arg3);        // slot 219 0x00706A10
-    virtual int unknown_slot221(int arg1, int arg2);                  // slot 221 0x00704ED0
+    virtual BulletClass *unknown_slot221(AbstractClass *target, int arg2);                  // slot 221 0x00704ED0
     virtual bool unknown_slot222(HouseClass *house, int arg2);                  // slot 222 0x007099A0
     virtual void unknown_slot239();                                    // slot 239 0x006FBB40
     virtual void unknown_slot255(TechnoClass *techno);                           // slot 255 0x00709C70

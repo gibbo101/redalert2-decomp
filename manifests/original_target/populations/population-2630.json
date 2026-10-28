@@ -4,8 +4,8 @@
     "id": "population-2630",
     "inventory_sha256": "4130e9a247616979ba8562309900879a02a0ee75867541b5da482df7929c2ca7",
     "gaps_sha256": "7389b37ceaa382531b33460dc0c8508ce01f2fb298de43b0f3c5d9ad9455bb3f",
-    "historical_population_sha256": "b23a4f1271dbfcb98245e2090a1985c4a8fbe46c1129bd3f2714353d8f09f954",
-    "historical_acceptance_sha256": "38f7f670f59442cd3623eb75b8d6053ab5ee5d9bfa6ecbe1b9dc35312f28c5b6"
+    "historical_population_sha256": "e3cfda43cf54b77bb5f92abdec59c6ac80038f4860b69c9c77be26f9aabe30a3",
+    "historical_acceptance_sha256": "e52c2ff4cd07ae5a1cb714ac652225d9bc0b95ff73b6dbde45bf65b1c7c6a218"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5541,8 +5541,8 @@
     "?unknown_slot184@UnitClass@@UAEPAVInfantryTypeClass@@XZ": 7359232,
     "?unknown_slot141@UnitClass@@UAEHXZ": 7359248,
     "?unknown_slot183@UnitClass@@UAE?AUUnknownFacingDir@@XZ": 7359408,
-    "?unknown_slot221@UnitClass@@UAEHHH@Z": 7360208,
-    "?unknown_slot221@TechnoClass@@UAEHHH@Z": 7121040,
+    "?unknown_slot221@UnitClass@@UAEPAVBulletClass@@PAVAbstractClass@@H@Z": 7360208,
+    "?unknown_slot221@TechnoClass@@UAEPAVBulletClass@@PAVAbstractClass@@H@Z": 7121040,
     "?unknown_slot165@UnitClass@@UAENXZ": 7360560,
     "?unknown_5d4c00@ObjectClass@@QAEHPAVAbstractClass@@@Z": 6114304,
     "?unknown_slot219@UnitClass@@UAEPAVAbstractClass@@HPBUCoordStruct@@_N@Z": 7367184,
@@ -5901,7 +5901,7 @@
     "?unknown_slot291@InfantryClass@@UAE_NXZ": 5262048,
     "?Unknown_005D47D0@ObjectClass@@QBEHXZ": 6113232,
     "?unknown_slot52@InfantryClass@@UAE_NXZ": 5263104,
-    "?unknown_slot221@InfantryClass@@UAEHHH@Z": 5263184,
+    "?unknown_slot221@InfantryClass@@UAEPAVBulletClass@@PAVAbstractClass@@H@Z": 5263184,
     "?unknown_slot53@InfantryClass@@UAE_NPBUCoordStruct@@H@Z": 5263312,
     "?Unknown_004764B0@UnknownCellClass@@QAE?AUCoordStruct@@ABU2@H_N@Z": 4678832,
     "?unknown_slot219@InfantryClass@@UAEPAVAbstractClass@@HPBUCoordStruct@@_N@Z": 5263648,
@@ -9481,7 +9481,42 @@
     "?unknown_slot68@TerrainClass@@UAEXHH@Z": 7224128,
     "?unknown_drawer_8323bc@@3PAVConvertClass@@A": 8594364,
     "?unknown_flag_7d88d5@@3_NA": 8227029,
-    "?AI@TerrainClass@@UAEXXZ": 7225104
+    "?AI@TerrainClass@@UAEXXZ": 7225104,
+    "?Clear@?$DynamicVectorClass@PBD@@UAEXXZ": 5906368,
+    "?ID@?$DynamicVectorClass@PBD@@UAEHPBQBD@Z": 5906416,
+    "?Fetch@?$VectorClass@PBD@@UBEPBDH@Z": 5906448,
+    "?Clear@?$VectorClass@PBD@@UAEXXZ": 5906704,
+    "?ID@?$VectorClass@PBD@@UAEHABQBD@Z": 5906752,
+    "?ID@?$VectorClass@PBD@@UAEHPBQBD@Z": 5906816,
+    "?ID@?$DynamicVectorClass@PBD@@UAEHABQBD@Z": 5907024,
+    "?ID@?$DynamicVectorClass@UWaypointClass@@@@UAEHABUWaypointClass@@@Z": 7493632,
+    "?Resize@?$VectorClass@PBD@@UAE_NHPBQBD@Z": 5906528,
+    "?Resize@?$DynamicVectorClass@PBD@@UAE_NHPBQBD@Z": 5906848,
+    "_malloc": 7874096,
+    "??0UnknownVector3@@QAE@HHH@Z": 4306480,
+    "?unknown_6d3b60@TechnoClass@@QAE_NPAV1@H@Z": 7158624,
+    "?unknown_6d7550@TechnoClass@@QAENPAVObjectClass@@ABUCoordStruct@@@Z": 7173456,
+    "__real@8@400fc350000000000000": 8048696,
+    "?unknown_radar_surface_8336f8@@3PAVSurface@@A": 8599288,
+    "?Delete@?$DynamicVectorClass@PAVPlanningNodeClass@@@@QAE_NABQAVPlanningNodeClass@@@Z": 6402960,
+    "_socket@12": 7871394,
+    "_bind@12": 7871388,
+    "?unknown_slot15@UDPInterfaceClass@@UAE_NH@Z": 7784176,
+    "?unknown_slot4@UDPInterfaceClass@@UAEXPAXH_N@Z": 7784896,
+    "?unknown_slot190@TechnoClass@@UAE_NPAH@Z": 7174672,
+    "?unknown_6d8820@TechnoClass@@QAEXXZ": 7178272,
+    "?unknown_slot209@TechnoClass@@UAE_NPBUCoordStruct@@H@Z": 7161552,
+    "?unknown_6d4400@TechnoClass@@QAEXXZ": 7160832,
+    "??0WaypointPathClass@@QAE@ABVNoInitClass@@@Z": 7490480,
+    "?Load@WaypointPathClass@@UAGJPAUIStream@@@Z": 7491664,
+    "?Clear@?$DynamicVectorClass@UWaypointClass@@@@UAEXXZ": 7492304,
+    "?Resize@?$DynamicVectorClass@UWaypointClass@@@@UAE_NHPBUWaypointClass@@@Z": 7493312,
+    "??0UnknownCoord434820@@QAE@HHH@Z": 4409376,
+    "??0CoordStruct@@QAE@HHH@Z": 4306480,
+    "??_EWaypointClass@@QAEPAXI@Z": 4307088,
+    "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABUCoordStruct@@_N@Z": 6495136,
+    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448
   },
   "regions": [
     {
@@ -11757,7 +11792,7 @@
     {
       "entry": 5263184,
       "method": "00504f50",
-      "symbol": "?unknown_slot221@InfantryClass@@UAEHHH@Z",
+      "symbol": "?unknown_slot221@InfantryClass@@UAEPAVBulletClass@@PAVAbstractClass@@H@Z",
       "symbol_prefix": "?unknown_slot221@InfantryClass@@",
       "options": [
         "/O2",
@@ -11774,13 +11809,13 @@
         {
           "offset": 24,
           "kind": 20,
-          "symbol": "?unknown_slot221@TechnoClass@@UAEHHH@Z",
+          "symbol": "?unknown_slot221@TechnoClass@@UAEPAVBulletClass@@PAVAbstractClass@@H@Z",
           "target": 7121040,
           "addend": 0,
           "resolved": 1857828
         }
       ],
-      "source_sha256": "72bab50f5eb9159cf13f7ac1e38a415a9e3b4d12fdeba41d0d27d74f8f1dcb05",
+      "source_sha256": "10ef19bea30fd5cac46a620fbb6b9c23c36de7c8e8c8b3f402b0c456d6d9e51d",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_unknown_slot221_00504f50.cpp",
       "population": "population-2630",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -14994,7 +15029,7 @@
           "resolved": 4294373518
         }
       ],
-      "source_sha256": "a9bf756329a1d097fd78cf8bee44ed7d03601b40c2c02a17c4171a41a1843050",
+      "source_sha256": "371d88b96d447e13d70f32ace83b53c3cd48e2f6e730a7187bb7f90cb35cadb6",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_Update_Fire_00507530.cpp",
       "population": "population-2630",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -17297,7 +17332,7 @@
           "resolved": 1246627
         }
       ],
-      "source_sha256": "9f4ab3bdc57d734e6262f3245ada110678be1727dcd33eb678be6984eabdea72",
+      "source_sha256": "32f9712463fb2de5a753eff2868d43e1526b382af0043abfd93259f6dbb593a0",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_Update_Deployed_Attack_00507f70.cpp",
       "population": "population-2630",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

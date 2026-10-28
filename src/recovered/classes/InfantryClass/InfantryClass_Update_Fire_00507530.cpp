@@ -76,8 +76,7 @@ void InfantryClass::Update_Fire_00507530()
     if (unknown_57d && AnimationStage.Value == fire_frame) {
         weapon = unknown_slot174(unknown_228);
         if (unknown_slot218(unknown_228, weapon, 1) == 0) {
-            // Slot221 still has its placeholder integer target parameter in the base header.
-            unknown_slot221((int)unknown_228, weapon);
+            unknown_slot221(unknown_228, weapon);
         } else {
             unknown_57d = false;
             if (unknown_5c3) {

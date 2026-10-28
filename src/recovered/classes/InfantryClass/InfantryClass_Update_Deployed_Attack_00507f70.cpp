@@ -32,7 +32,7 @@ int InfantryClass::Update_Deployed_Attack_00507f70()
                     unknown_slot220(&Map[unknown_slot104()]);
                     if (unknown_slot218(unknown_228, 1, 1) == 0) {
                         // Slot221's existing int argument carries the same 32-bit target pointer.
-                        unknown_slot221(reinterpret_cast<int>(unknown_228), 1);
+                        unknown_slot221(unknown_228, 1);
                         unknown_slot220(0);
                         unknown_slot311(29, false, false);
                         return Type->DoControls[29].Count;

@@ -1,5 +1,5 @@
-// int UnitClass::unknown_slot221(int arg1, int arg2) (0x00704ED0, slot 221: Fire)
-// arg1 is the target, arg2 the weapon index; answers the bullet. Without a
+// BulletClass *UnitClass::unknown_slot221(AbstractClass *target, int arg2) (0x00704ED0, slot 221: Fire)
+// target is the target, arg2 the weapon index; answers the bullet. Without a
 // weapon nothing. For the primary weapon, notes whether the burst's firing
 // sync frame is pending. Unless slot 218 refuses, fires through the techno;
 // then reloads when ammunition ran short (not for ManualReload), starts
@@ -9,11 +9,11 @@
 #include "shared/unit.hpp"
 #include "shared/bullet.hpp"
 #include "shared/bullet_type.hpp"
-// @ref ?unknown_slot221@TechnoClass@@UAEHHH@Z=006ca890
+// @ref ?unknown_slot221@TechnoClass@@UAEPAVBulletClass@@PAVAbstractClass@@H@Z=006ca890
 // @ref ?unknown_6c8300@TechnoClass@@QAEXXZ=006c8300
 // @ref ?unknown_func_463bc0@BulletClass@@QAEXXZ=00463bc0
 
-int UnitClass::unknown_slot221(int arg1, int arg2)
+BulletClass *UnitClass::unknown_slot221(AbstractClass *target, int arg2)
 {
     BulletClass *bullet = 0;
     WeaponTypeClass *weapon = unknown_slot231(arg2)->WeaponType;
@@ -35,8 +35,8 @@ int UnitClass::unknown_slot221(int arg1, int arg2)
             synchronized = false;
         }
     }
-    if (!unknown_slot218((AbstractClass *)arg1, arg2, 1)) {
-        bullet = (BulletClass *)TechnoClass::unknown_slot221(arg1, arg2);
+    if (!unknown_slot218(target, arg2, 1)) {
+        bullet = TechnoClass::unknown_slot221(target, arg2);
         if (bullet) {
             if (Type->Ammo > 0 && unknown_254 < Type->Ammo && !Type->ManualReload) {
                 unknown_6c8300();
@@ -52,5 +52,5 @@ int UnitClass::unknown_slot221(int arg1, int arg2)
             }
         }
     }
-    return (int)bullet;
+    return bullet;
 }

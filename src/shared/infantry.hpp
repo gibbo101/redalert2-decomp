@@ -140,7 +140,7 @@ public:
     virtual int unknown_slot218(AbstractClass *target, int weapon, int arg3);   // slot 218 0x00503A60 ret 0xc
     virtual AbstractClass *unknown_slot219(int arg1, CoordStruct const *coord, bool arg3);   // slot 219 0x00505120 ret 0xc
     virtual void unknown_slot220(AbstractClass *target);   // slot 220 0x00502470 ret 4
-    virtual int unknown_slot221(int arg1, int arg2);   // slot 221 0x00504F50 ret 8
+    virtual BulletClass *unknown_slot221(AbstractClass *target, int arg2);   // slot 221 0x00504F50 ret 8
     virtual void unknown_slot240();   // slot 240 0x005061D0 ret 0
     virtual void unknown_slot255(TechnoClass *techno);   // slot 255 0x005092B0 ret 4
     virtual void unknown_slot256();   // slot 256 0x00509330 ret 0

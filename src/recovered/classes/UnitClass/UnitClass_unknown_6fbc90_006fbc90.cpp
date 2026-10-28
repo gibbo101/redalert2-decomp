@@ -37,7 +37,7 @@ void UnitClass::unknown_6fbc90()
             AnimationStage.Value = Unit_Attack_Frames_007F8F2C[Dir_To_8(Direction_To(unknown_228))];
             AnimationStage.Set_Rate(5);
         }
-        unknown_slot221((int)unknown_228, weapon);
+        unknown_slot221(unknown_228, weapon);
         return;
     case 2:
         if (!Type->unknown_ba9 && Type->Turret) {

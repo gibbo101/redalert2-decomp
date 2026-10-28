@@ -44,6 +44,7 @@
 #include "shared/system_timer.hpp"
 
 class LaserDrawClass;
+class BulletClass;
 class EBolt;
 class TechnoClass;
 class FootClass;
@@ -492,7 +493,7 @@ public:
     virtual int unknown_slot218(AbstractClass *target, int weapon, int arg3);      // slot 218 (+0x368) 0x006C9260
     virtual AbstractClass *unknown_slot219(int arg1, CoordStruct const *coord, bool arg3);      // slot 219 (+0x36C) 0x006C6530
     virtual void unknown_slot220(AbstractClass *target);                     // slot 220 (+0x370) 0x006C9AF0
-    virtual int unknown_slot221(int arg1, int arg2);                // slot 221 (+0x374) 0x006CA890
+    virtual BulletClass *unknown_slot221(AbstractClass *target, int arg2);                // slot 221 (+0x374) 0x006CA890
     virtual bool unknown_slot222(HouseClass *house, int arg2);                // slot 222 (+0x378) 0x006CD940
     virtual int unknown_slot223(int arg1, int arg2);                // slot 223 (+0x37C) 0x006D5F40
     virtual bool unknown_slot224(int arg1);                         // slot 224 (+0x380) 0x00453BD0 (kept copy elsewhere)
