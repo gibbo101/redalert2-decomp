@@ -169,6 +169,8 @@ typedef char UnknownObject5394F0_size_210[(sizeof(UnknownObject5394F0) == 0x210)
 // 0x005D44F0, which the geometry header's Cell statics do not; name
 // hypothesis).
 struct UnknownStaticCell {
+    // Uninitialized lists (IsometricTileTypeClass slot 36's 129 cells).
+    UnknownStaticCell() {}
     UnknownStaticCell(Cell const &cell) : Cell(cell) {}
     ~UnknownStaticCell() {}
     ::Cell Cell;

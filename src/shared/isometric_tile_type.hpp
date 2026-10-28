@@ -41,6 +41,13 @@ inline DynamicVectorClass<unsigned short *>::DynamicVectorClass(unsigned size, u
     ActiveCount = 0;
 }
 
+// The image of an isometric tile type (a TMP file): a 16-byte header, then
+// one offset per cell of the grid, 0 where the cell has no tile (slot 36).
+struct IsoTileImageStruct {
+    int unknown_00[4];                                  // +0x00 header (hypothesis: sizes)
+    int Tiles[1];                                       // +0x10 per-cell tile offsets
+};
+
 class IsometricTileTypeClass : public ObjectTypeClass {
 public:
     class TileInsertType;
@@ -74,7 +81,10 @@ public:
     int unknown_298;                                    // +0x298 AnimTypes index (-1: none)
     char unknown_29c[0x2B0 - 0x29C];                    // +0x29C
     bool unknown_2b0;                                   // +0x2B0 (smudges allowed; map_cell_view.hpp)
-    char unknown_2b1[0x2C4 - 0x2B1];                    // +0x2B1
+    char unknown_2b1[0x2B4 - 0x2B1];                    // +0x2B1
+    int unknown_2b4;                                    // +0x2B4 cells across (the image's tile grid; slot 36)
+    int unknown_2b8;                                    // +0x2B8 cells down
+    char unknown_2bc[0x2C4 - 0x2BC];                    // +0x2BC
     bool unknown_2c4;                                   // +0x2C4 (image loads on demand; hypothesis)
     char unknown_2c5[0x2DC - 0x2C5];                    // +0x2C5
 };
