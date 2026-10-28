@@ -153,6 +153,31 @@ public:
         Pointer = 0;
         return old;
     }
+    // A query from another smart pointer (comip.h _QueryInterface; out of
+    // line in SaveLoad.cpp: 0x006591C0).
+    template <class OtherInterface, GUID const *other_iid>
+    HRESULT Query_From(UnknownComPtr<OtherInterface, other_iid> const &other)
+    {
+        HRESULT result;
+        if (other.Pointer != 0) {
+            Interface *pointer;
+            result = other.Pointer->QueryInterface(*iid, (void **)&pointer);
+            if (FAILED(result)) {
+                Release_Held();
+                Pointer = 0;
+                return result;
+            }
+            Release_Held();
+            Pointer = pointer;
+            return result;
+        }
+        Interface *old = Pointer;
+        if (old != 0) {
+            Pointer = 0;
+            old->Release();
+        }
+        return E_NOINTERFACE;
+    }
     // The address of the pointer, for an out parameter (releases what is held).
     Interface **operator&()
     {
@@ -177,5 +202,18 @@ public:
     Interface *Pointer;
 };
 
+
+// Units that expand Release_Held inline (SaveLoad.cpp's stream and property
+// helpers; comip's _Release) define COM_PTR_IMPLEMENT_RELEASE before the
+// first include; elsewhere it stays out of line (0x004A4D10 in Drive.cpp).
+#ifdef COM_PTR_IMPLEMENT_RELEASE
+template <class Interface, GUID const *iid>
+inline void UnknownComPtr<Interface, iid>::Release_Held()
+{
+    if (Pointer != 0) {
+        Pointer->Release();
+    }
+}
+#endif
 
 #endif

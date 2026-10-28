@@ -453,3 +453,15 @@ reaching each block).
   fields; a reference local lets VC6 reuse them (0x006B0B20).
 - Compares on a local int are jump-threaded (a passed test jumps straight to the call); the same member
   read repeated in each test is CSE'd but not threaded (0x006B1F10).
+
+## Out-of-line helpers and global timers (Loco54, Scen55)
+
+- Helpers the original keeps out of line but never calls (DriveClass Start_Driver, Stop_Driver, Hover/Fly
+  Start_Drift, ...) are ordinary non-inline members defined in the unit: /Ob2 expands them at every use,
+  and the standalone copy is emitted at its own address (Loco54).
+- Functions returning a Matrix3D through a pointer keep the pointer form: `*matrix = transform; return
+  matrix;`. Taking a base result as `Matrix3D m(*Base(&t, key))` reproduces the original's call of the
+  copy constructor 0x0058FE10 (Locomotion Draw_Matrix family).
+- Calling an inline timer member directly on a global (`FrameTimer.Value()`) lets VC6 drop the redundant
+  -1 test inside it; a reference local (`CDTimerClass<..> &timer = FrameTimer; ...`) keeps it, as the
+  original does (Post_Load_Game 0x0065D2C0).

@@ -55,6 +55,10 @@ struct BY_HANDLE_FILE_INFORMATION {
 WIN32_IMPORT HANDLE WINAPI CreateFileA(LPCSTR name, DWORD access, DWORD share, void *security,
                                        DWORD disposition, DWORD flags, HANDLE templateFile);
 WIN32_IMPORT BOOL WINAPI CloseHandle(HANDLE handle);
+// Code page conversion (KERNEL32; Get_Savefile_Info 0x00657FA0, the house
+// names, the application's BSTRs).
+WIN32_IMPORT int WINAPI MultiByteToWideChar(unsigned int code_page, unsigned long flags, char const *text, int length,
+                                            unsigned short *wide, int wide_length);
 WIN32_IMPORT long WINAPI InterlockedIncrement(long *addend);
 WIN32_IMPORT long WINAPI InterlockedDecrement(long *addend);
 WIN32_IMPORT BOOL WINAPI DeleteFileA(LPCSTR name);

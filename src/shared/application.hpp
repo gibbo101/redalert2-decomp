@@ -24,9 +24,6 @@ typedef wchar_t *BSTR;
 #endif
 
 extern "C" __declspec(dllimport) BSTR __stdcall SysAllocString(wchar_t const *text);
-extern "C" __declspec(dllimport) int __stdcall MultiByteToWideChar(unsigned int code_page, unsigned long flags,
-                                                                  char const *text, int length,
-                                                                  wchar_t *wide, int wide_length);
 
 
 extern "C" GUID const IID_IApplication_79c3d0;   // 0x0079C3D0 (hypothesis)

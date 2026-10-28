@@ -27,6 +27,7 @@
 #define RA2_SHARED_HOUSE_HPP
 
 #include "shared/unknown_globals.hpp"
+#include "shared/win32_api.hpp"   // MultiByteToWideChar
 #include "shared/abstract_type.hpp"
 #include "shared/cd_timer.hpp"
 #include "shared/house_type.hpp"
@@ -42,9 +43,6 @@ class ConnectionPointClass;
 class FactoryClass;
 typedef wchar_t *BSTR;
 
-extern "C" __declspec(dllimport) int __stdcall MultiByteToWideChar(unsigned int code_page, unsigned long flags,
-                                                                   char const *string, int length,
-                                                                   wchar_t *wide, int wide_length);
 extern "C" char *__cdecl strcpy(char *destination, char const *source);
 #pragma intrinsic(strcpy)
 extern "C" __declspec(dllimport) BSTR __stdcall SysAllocString(wchar_t const *string);
