@@ -143,6 +143,11 @@ public:
 };
 extern Tactical *unknown_tactical_83996c;
 
+// A rectangle of the Tactical unit (0x00ABE560): 0x006A2B10 accepts points
+// left of its Width and above its Y + Height, 0x006A29D0 and 0x006A92A0 test
+// pixels against Width + 360 and Height + 180 (hypothesis: the view area).
+extern Rect unknown_rect_abe560;
+
 // An object and the screen pixel it was drawn at (the table at 0x00ABE5F8,
 // filled by 0x006AA300; Tactical +0xDB0 counts the entries, at most 500).
 struct TacticalObjectPixel {
