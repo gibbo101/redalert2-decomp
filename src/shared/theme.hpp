@@ -10,6 +10,8 @@
 #ifndef RA2_SHARED_THEME_HPP
 #define RA2_SHARED_THEME_HPP
 
+#include "shared/vector_class_decl.hpp"
+
 // A theme record (0x290 bytes?); only the flags the player tests.
 struct ThemeControl {
     char unknown_000[0x288];
@@ -43,12 +45,9 @@ public:
     bool IsRepeat;          // +0x10 (OptionsClass IsScoreRepeat)
     bool unknown_11;        // +0x11
     bool IsShuffle;         // +0x12 (OptionsClass IsScoreShuffle)
-    char unknown_13[0x18 - 0x13];
-    ThemeControl **Themes;  // +0x18 the theme records (vector storage)
-    int unknown_1c;
-    int unknown_20;
-    int ThemeCount;         // +0x24 (active count)
-    char unknown_28[0x2C - 0x28];
+    char unknown_13;
+    DynamicVectorClass<ThemeControl *> Themes;  // +0x14 the theme records (vector storage +0x18, count +0x24;
+                                                // Pick_Next_Song only matches through Count() and operator[])
     void *Sample;           // +0x2C the playing audio stream (0 when none)
 };
 
