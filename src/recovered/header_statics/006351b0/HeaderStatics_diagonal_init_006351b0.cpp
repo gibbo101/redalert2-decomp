@@ -1,5 +1,5 @@
 // Header-static dynamic initializers of the unit at 0x006351B0 and its
-// list globals (RadBeam); the other drafts of this plan are emitted by this file.
+// list globals (RadBeamList::Array); the other drafts of this plan are emitted by this file.
 // A list whose atexit thunk tests and sets a guard bit is a static data
 // member (VC6 guards their destruction); its owner class is a hypothesis.
 #include "shared/unknown_geometry.hpp"
@@ -8,21 +8,16 @@
 #define VECTOR_IMPLEMENT_ALL
 #endif
 #include "shared/vector_class.hpp"
+#include "shared/rad_beam_list.hpp"
 
-// Only the members this unit defines; the layout is not recovered here.
-class RadBeam {
-public:
-    static DynamicVectorClass<RadBeam *> Array;   // 0x00AB64E0
-};
-
-DynamicVectorClass<RadBeam *> RadBeam::Array;
+DynamicVectorClass<RadBeam *> RadBeamList::Array;
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??8?$VectorClass@PAVRadBeam@@@@UBE_NABV0@@Z=00636340
 // @ref ??_7?$DynamicVectorClass@PAVRadBeam@@@@6B@=007a885c
 // @ref ??_7?$VectorClass@PAVRadBeam@@@@6B@=007a887c
 // @ref ??_G?$DynamicVectorClass@PAVRadBeam@@@@UAEPAXI@Z=006365f0
 // @ref ??_G?$VectorClass@PAVRadBeam@@@@UAEPAXI@Z=006365a0
-// @ref ?Array@RadBeam@@2V?$DynamicVectorClass@PAVRadBeam@@@@A=00ab64e0
+// @ref ?Array@RadBeamList@@2V?$DynamicVectorClass@PAVRadBeam@@@@A=00ab64e0
 // @ref ?Clear@?$DynamicVectorClass@PAVRadBeam@@@@UAEXXZ=006362e0
 // @ref ?Clear@?$VectorClass@PAVRadBeam@@@@UAEXXZ=00636430
 // @ref ?Fetch@?$VectorClass@PAVRadBeam@@@@UBEPAVRadBeam@@H@Z=00636330
