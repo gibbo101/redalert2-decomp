@@ -18,28 +18,44 @@
 
 extern "C" GUID const CLSID_SpawnManagerClass;     // 0x007A1DD0
 
-// One spawned unit's record (0x18 bytes, allocated by the constructor).
+class AircraftClass;
+class AircraftTypeClass;
+
+// One spawned unit's record (0x18 bytes; read and written whole by Load/Save).
+// Status 7 is a dead slot waiting for its timer (Kill_Nodes 0x00689B70);
+// 6 and 0 are docked states, 1 is launching and 2 flying (hypotheses).
 struct SpawnControl {
-    AbstractClass *Unit;                        // +0x00
+    AircraftClass *Unit;                        // +0x00
     int Status;                                 // +0x04
     CDTimerClass<FrameTimerClass> Timer;        // +0x08
-    int unknown_14;                             // +0x14
+    int IsMissile;                              // +0x14 (the type is Rules' V3 or Dread missile)
 };
-
-class AircraftTypeClass;
 
 class SpawnManagerClass : public AbstractClass {
 public:
     SpawnManagerClass(AbstractClass *owner, AircraftTypeClass *type, int count, int regen, int reload);   // 0x00689710 (TechnoClass::Init)
+    SpawnManagerClass();                                        // 0x00689910 (class factory)
+    SpawnManagerClass(NoInitClass const &noinit);               // 0x00689A10
+    virtual ~SpawnManagerClass();                               // 0x00689A80 (deleting 0x0068AA00)
     virtual HRESULT __stdcall GetClassID(GUID *classid);        // 0x0068A790
-    virtual HRESULT __stdcall Load(IStream *stream);            // (overridden; address not looked up)
-    virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);  // (overridden; address not looked up)
+    virtual HRESULT __stdcall Load(IStream *stream);            // 0x0068A7D0
+    virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);  // 0x0068A970
     virtual int Kind_Of() const;                                // 0x0068A9F0
     virtual int Size_Of() const;                                // 0x0068A9E0
     virtual void Compute_CRC(WWCRCEngine &crc) const;           // 0x0068A6A0
+    virtual void AI();                                          // slot 23 0x00689C90 (not recovered)
+
+    void Kill_Nodes();                                          // 0x00689B70
+    void Set_Target(AbstractClass *target);                     // 0x0068A490 (unless it is the destination)
+    void Abandon_Target();                                      // 0x0068A4B0
+    bool Next_Target();                                         // 0x0068A540 (the queued target becomes the destination)
+    void Unlink(AbstractClass *object);                         // 0x0068A560 (TechnoClass::Detach)
+    int Alive_Count() const;                                    // 0x0068A630 (records not in status 7)
+    int Docked_Count() const;                                   // 0x0068A650 (status 6 or 0)
+    int Launching_Count() const;                                // 0x0068A680 (status 1)
 
     AbstractClass *Owner;                           // +0x24
-    AbstractClass *SpawnType;                       // +0x28
+    AircraftTypeClass *SpawnType;                   // +0x28
     int SpawnCount;                                 // +0x2C
     int RegenRate;                                  // +0x30
     int ReloadRate;                                 // +0x34

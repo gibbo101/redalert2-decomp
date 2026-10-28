@@ -1,6 +1,7 @@
 // ?Compute_CRC@SpawnManagerClass@@UBEXAAVWWCRCEngine@@@Z (0x0068A6A0)
 // AbstractClass part, state, linked object IDs and timer values.
 #include "shared/spawn_manager.hpp"
+#include "shared/aircraft_type.hpp"
 // @ref ?Compute_CRC@AbstractClass@@UBEXAAVWWCRCEngine@@@Z=004101b0
 // @ref ??RWWCRCEngine@@QAEXJ@Z=00493f30
 // @ref ?Frame@@3HA=00a40d2c
