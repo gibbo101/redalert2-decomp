@@ -60,7 +60,9 @@ public:
     // Springs on event unless already sprung or disabled; forced skips the event tests (0x006ED740;
     // TS's TriggerClass::Spring; persistent comes from the tag type, source is passed to the events).
     bool Spring(int event, ObjectClass *object, bool forced, bool persistent, int source);
-    void unknown_func_6ed830(ObjectClass *object, Cell cell);    // 0x006ED830
+    // Runs every action of the type for object at cell in the type's house; true when any acted
+    // (0x006ED830; YRpp's FireActions, name hypothesis).
+    bool Fire_Actions(ObjectClass *object, Cell cell);
 
     TriggerTypeClass *Class;                // +0x24
     TriggerClass *Next;                     // +0x28

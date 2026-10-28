@@ -20,7 +20,7 @@ bool TagClass::Spring(int event, ObjectClass *object, Cell cell, bool forced, in
         if (trigger->Spring(event, object, forced, Class->Persistence == 2, source)) {
             switch (Class->Persistence) {
             case 0:
-                trigger->unknown_func_6ed830(object, cell);
+                trigger->Fire_Actions(object, cell);
                 trigger->unknown_func_6ed990();
                 sprung = true;
                 remove = true;
@@ -28,7 +28,7 @@ bool TagClass::Spring(int event, ObjectClass *object, Cell cell, bool forced, in
                 break;
             case 1:
                 if (unknown_2c == 1) {
-                    trigger->unknown_func_6ed830(object, cell);
+                    trigger->Fire_Actions(object, cell);
                     trigger->unknown_func_6ed990();
                     remove = true;
                     sprung = true;
@@ -37,7 +37,7 @@ bool TagClass::Spring(int event, ObjectClass *object, Cell cell, bool forced, in
                 }
                 break;
             case 2:
-                trigger->unknown_func_6ed830(object, cell);
+                trigger->Fire_Actions(object, cell);
                 sprung = true;
                 break;
             }

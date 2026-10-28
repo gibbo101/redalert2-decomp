@@ -4,8 +4,8 @@
     "id": "population-2720",
     "inventory_sha256": "aa0edaa304f1391c3308446841b300cfa502ac88f3cc6be4afaa9ee34329bfdc",
     "gaps_sha256": "1ba107a1cde7e0af103ed394aec204dff4acd3bba08782396419482c58811d73",
-    "historical_population_sha256": "1dc61793bb1d652712a230c752a61ce88ea5501c3a4d3d6fddacbc9a5971bb8c",
-    "historical_acceptance_sha256": "6401c26f812b09713a9ce48241ed8370a7f21e86bb29b89907ca3caedc61708f"
+    "historical_population_sha256": "4be397cdeb7387d76f170708976e915276aa4a25edb1e557f61e961e7eba7574",
+    "historical_acceptance_sha256": "07844d98eb3226adc381438528cc27503730a642bd3c54d8f825b01fb2b003e0"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -4214,7 +4214,7 @@
     "?unknown_slot34@PowerClass@@UAEXXZ": 6410544,
     "?unknown_func_6b1f90@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7020432,
     "?unknown_func_6b1ec0@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7020224,
-    "?unknown_func_6ed830@TriggerClass@@QAEXPAVObjectClass@@VCell@@@Z": 7264304,
+    "?Fire_Actions@TriggerClass@@QAE_NPAVObjectClass@@VCell@@@Z": 7264304,
     "?Get_Text@CCToolTip@@UAEPBGH@Z": 4646000,
     "?unknown_slot33@TabClass@@UAEPBGH@Z": 6955184,
     "?unknown_slot40@ObjectClass@@UAE?AUCoordStruct@@XZ": 4305472,
