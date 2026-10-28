@@ -28,50 +28,5 @@
 // @ref __imp__BinkCopyToBuffer@28=0079a5ac
 // @ref __imp__BinkDoFrame@4=0079a5b0
 // @ref __imp__BinkWait@4=0079a5b4
-
-// Intersect (kept copy 0x0041FDF0) is an inline header function in the
-// original; defined here for this unit until shared/rect.hpp carries it
-// (as in MSAnim.cpp).
-inline Rect __fastcall Intersect(Rect const &rect1, Rect const &rect2, int *x, int *y)
-{
-    Rect empty(0, 0, 0, 0);
-    Rect result = rect2;
-    if (!rect1.Is_Valid() || !rect2.Is_Valid()) {
-        return empty;
-    }
-    if (result.X < rect1.X) {
-        result.Width += result.X - rect1.X;
-        result.X = rect1.X;
-    }
-    if (result.Width < 1) {
-        return empty;
-    }
-    if (result.Y < rect1.Y) {
-        result.Height += result.Y - rect1.Y;
-        result.Y = rect1.Y;
-    }
-    if (result.Height < 1) {
-        return empty;
-    }
-    if (result.X + result.Width > rect1.X + rect1.Width) {
-        result.Width = rect1.X - result.X + rect1.Width;
-    }
-    if (result.Width < 1) {
-        return empty;
-    }
-    if (result.Y + result.Height > rect1.Y + rect1.Height) {
-        result.Height = rect1.Y + rect1.Height - result.Y;
-    }
-    if (result.Height < 1) {
-        return empty;
-    }
-    if (x != 0) {
-        *x += rect2.X - result.X;
-    }
-    if (y != 0) {
-        *y += rect2.Y - result.Y;
-    }
-    return result;
-}
-
+#include "shared/rect_intersect.hpp"
 

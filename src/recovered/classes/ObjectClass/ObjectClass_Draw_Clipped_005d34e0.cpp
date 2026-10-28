@@ -7,48 +7,7 @@ extern Rect unknown_rect_839630;
 // @ref ?unknown_b263d8@@3HA=00b263d8
 // @ref ?unknown_flag_a40d13@@3_NA=00a40d13
 // @ref ?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
-inline Rect __fastcall Intersect(Rect const &rect1, Rect const &rect2, int *x, int *y)
-{
-    Rect empty(0, 0, 0, 0);
-    Rect result = rect2;
-    if (!rect1.Is_Valid() || !rect2.Is_Valid()) {
-        return empty;
-    }
-    if (result.X < rect1.X) {
-        result.Width += result.X - rect1.X;
-        result.X = rect1.X;
-    }
-    if (result.Width < 1) {
-        return empty;
-    }
-    if (result.Y < rect1.Y) {
-        result.Height += result.Y - rect1.Y;
-        result.Y = rect1.Y;
-    }
-    if (result.Height < 1) {
-        return empty;
-    }
-    if (result.X + result.Width > rect1.X + rect1.Width) {
-        result.Width = rect1.X - result.X + rect1.Width;
-    }
-    if (result.Width < 1) {
-        return empty;
-    }
-    if (result.Y + result.Height > rect1.Y + rect1.Height) {
-        result.Height = rect1.Y + rect1.Height - result.Y;
-    }
-    if (result.Height < 1) {
-        return empty;
-    }
-    if (x != 0) {
-        *x += rect2.X - result.X;
-    }
-    if (y != 0) {
-        *y += rect2.Y - result.Y;
-    }
-    return result;
-}
-
+#include "shared/rect_intersect.hpp"
 
 bool ObjectClass::unknown_slot63(Rect *bounds, bool redraw, bool arg3)
 {
