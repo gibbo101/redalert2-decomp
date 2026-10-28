@@ -15,7 +15,7 @@
 // @ref ?unknown_random_839218@@3VRandom2Class@@A=00839218
 // @ref ??RRandom2Class@@QAEHHH@Z=006388a0
 // @ref ?Get_Address@IPXAddressClass@@QAEXQAE0@Z=00523500
-// @ref ?Set_Address@IPXAddressClass@@QAEXQAE0H@Z=00523480
+// @ref ?Set_Address@IPXAddressClass@@QAEXQAE0G@Z=00523480
 // @ref ?unknown_malformed_seen_b2ae24@@3_NA=00b2ae24
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
 // @ref ??_C@_0CA@CMFA@Throwing?5away?5malformed?5packet?6?$AA@=00800a90

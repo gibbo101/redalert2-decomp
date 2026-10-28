@@ -17,7 +17,7 @@ public:
     void Get_Address(NetNumType net, NetNodeType node, unsigned short *socket); // 0x005234c0
     IPXAddressClass();                                              // 0x00523410
     void Get_Address(NetNumType net, NetNodeType node);             // 0x00523500
-    void Set_Address(NetNumType net, NetNodeType node, int arg3);   // 0x00523480
+    void Set_Address(NetNumType net, NetNodeType node, unsigned short socket);   // 0x00523480
     int Is_Broadcast();                                             // 0x00523560
     bool operator==(IPXAddressClass &address);                      // 0x005235D0 (network and node; UDP: IP and port)
     bool unknown_523690(IPXAddressClass &address);                  // 0x00523690 (the node only: 4 bytes for UDP, else 6)
