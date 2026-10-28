@@ -41,13 +41,7 @@ struct UnknownVector3 {
     int Y;
     int Z;
 };
-// The selected objects (0x00A40C60) as the display reads them: the
-// coordinate at +0x88.
-struct UnknownSelectedView {
-    char unknown_00[0x88];
-    CoordStruct unknown_88;
-};
-extern DynamicVectorClass<UnknownSelectedView *> unknown_selected_a40c60;   // 0x00A40C60
+// The selected objects (0x00A40C60) are unknown_objects_a40c60 (shared/object.hpp).
 
 // The object a display action is pending for (+0x11A0): only the flag at
 // +0x14 bit 0 is read (view).

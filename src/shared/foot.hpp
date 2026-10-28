@@ -53,13 +53,8 @@ struct UnknownCellObject710160 {
 };
 UnknownCellObject710160 *__fastcall Unknown_00710160(Cell const &cell);  // 0x00710160
 
-// Objects with a cell at +0x28, indexed by FootClass +0x574 (hypothesis:
-// the tunnels, TubeClass; the list is at 0x008661C8).
-struct UnknownTube {
-    char unknown_00[0x28];
-    Cell unknown_28;              // +0x28
-};
-extern DynamicVectorClass<UnknownTube *> unknown_tubes_8661c8;
+// The tunnels FootClass +0x574 indexes (TubeClass, 0x008661C8).
+#include "shared/tube.hpp"
 
 // An announcement by name ("EVA_UnitSold", "EVA_UnitLost"; hypothesis: the
 // EVA speech queue, VoxClass::Speak).

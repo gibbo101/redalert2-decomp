@@ -4,8 +4,8 @@
     "id": "population-2600",
     "inventory_sha256": "d2a87230a8fd456a95442d6317e79628cf0ed3097d5a57780f097028a30a7fea",
     "gaps_sha256": "dcf7f14fb0144d9c6757a9b95eb315e0df14b09a712cab7ebcfb6dc53f92ff46",
-    "historical_population_sha256": "ec183172a8fefc91d7d55eea4e3f8e12e895b22483b575dae0b52b3b85186ebd",
-    "historical_acceptance_sha256": "f3ad62a53cdc544d66503d5241173f2642524b6797cbe7e8837d84beea9baa74"
+    "historical_population_sha256": "960eb5e1b60b89149c40fab547ef2b9641a955dad1ee2f6dc0b426c2c1e98d29",
+    "historical_acceptance_sha256": "8d159c8649f7da0ff386cefb8b93cfb81ce5306d47790abba7e74db6bfb07f63"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5181,7 +5181,7 @@
     "?unknown_timer_ac0178@@3V?$CDTimerClass@VFrameTimerClass@@@@A": 11272568,
     "?unknown_tracker_839ea0@@3UUnknownTracker839EA0@@A": 8625824,
     "?unknown_triggers_section_7ada50@@3PBDB": 8051280,
-    "?unknown_tubes_8661c8@@3V?$DynamicVectorClass@PAUUnknownTube@@@@A": 8806856,
+    "?unknown_TubeClass_list_008661c8@@3V?$DynamicVectorClass@PAVTubeClass@@@@A": 8806856,
     "?wcstrim@@YIPAGPAG@Z": 7270272,
     "_$E24": 7433952,
     "_$E51": 5058256,

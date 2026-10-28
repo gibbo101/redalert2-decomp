@@ -4,8 +4,8 @@
     "id": "population-2592",
     "inventory_sha256": "1fbab20c14a0c4df6913cdc944ddc50e34454c246ae2e627b58cb08a83508e55",
     "gaps_sha256": "e092f190040c2835ca10d2e3a926288684813af41041bb071e98dcdcc5253b33",
-    "historical_population_sha256": "c0b893bb87ada1d53d90bc77037af8ab27d3dc7f5e5779a5345dbaf59c3af18c",
-    "historical_acceptance_sha256": "2e19071add5f2cec839d08a838690d4d7fc9e48cbfb075846894660d42fdc5ae"
+    "historical_population_sha256": "307fc5effb966b0e5f50ca73f8339f74a82aa69b68561ad2b3307f629f0c9f36",
+    "historical_acceptance_sha256": "49ec0cbc68f30ce747050f5695dea9ab9f3f36046653a4883d8567db1ed10188"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5170,7 +5170,7 @@
     "?unknown_timer_ac0178@@3V?$CDTimerClass@VFrameTimerClass@@@@A": 11272568,
     "?unknown_tracker_839ea0@@3UUnknownTracker839EA0@@A": 8625824,
     "?unknown_triggers_section_7ada50@@3PBDB": 8051280,
-    "?unknown_tubes_8661c8@@3V?$DynamicVectorClass@PAUUnknownTube@@@@A": 8806856,
+    "?unknown_TubeClass_list_008661c8@@3V?$DynamicVectorClass@PAVTubeClass@@@@A": 8806856,
     "?wcstrim@@YIPAGPAG@Z": 7270272,
     "_$E24": 7433952,
     "_$E51": 5058256,
