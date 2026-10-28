@@ -24,7 +24,7 @@
 bool BuildingClass::unknown_slot77(int action, int arg2, int arg3, bool arg4)
 {
     if (action == 5) {
-        unknown_slot200(1, (int)&Map[*(Cell const *)arg2], 0, 0);
+        unknown_slot200(1, &Map[*(Cell const *)arg2], 0, 0);
         return true;
     }
     if (action == 1) {

@@ -4,8 +4,8 @@
     "id": "population-2552",
     "inventory_sha256": "82cbc802b224c60671a1f2a2d357c5a900e873f7baf45a2d662f0bb94613486c",
     "gaps_sha256": "c1f46b03a6669e05f07dd8984067eb261e784ff2b3743ed7f669f2667c24f02a",
-    "historical_population_sha256": "de41fd94c0355c426c243dcf194d7107bc4546fd9b3387f9d49039a6f103fa52",
-    "historical_acceptance_sha256": "53200a50bcaed6d053ecb9eb5d26c5af48a17c38ef9111cca5ec215c2926c0b9"
+    "historical_population_sha256": "5be4dc13f9d965ce847d2421d9dee1f59c72d39a97cc78fc0e75d925b89f077b",
+    "historical_acceptance_sha256": "78a84033df4dff5a53bfa4fee80cc203e562403e7e36cf695660043eba98a5fb"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -5850,8 +5850,8 @@
     "?unknown_tileset_a6dd00@@3HA": 10935552,
     "?Unknown_00549C50@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z": 5545040,
     "?unknown_WeaponTypeClass_list_00839b90@@3V?$DynamicVectorClass@PAVWeaponTypeClass@@@@A": 8625040,
-    "?unknown_slot200@AircraftClass@@UAE_NHHHH@Z": 4289920,
-    "?unknown_slot200@TechnoClass@@UAE_NHHHH@Z": 7127712,
+    "?unknown_slot200@AircraftClass@@UAE_NHPAVAbstractClass@@HH@Z": 4289920,
+    "?unknown_slot200@TechnoClass@@UAE_NHPAVAbstractClass@@HH@Z": 7127712,
     "?unknown_slot207@AircraftClass@@UAEXXZ": 4304944,
     "?unknown_slot242@AircraftClass@@UAE_NXZ": 4305168,
     "?unknown_slot117@AnimClass@@UBEHXZ": 4337328,

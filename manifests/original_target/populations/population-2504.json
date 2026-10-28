@@ -4,8 +4,8 @@
     "id": "population-2504",
     "inventory_sha256": "cb80cb55e1e8e9b51f47cf6abda2a6e473e7808c033f94b7770e555305147fe0",
     "gaps_sha256": "34e10dd515b8c9970f08c378cda6176f0a12f0ddcc27b7b427ce5bf5c2f552d8",
-    "historical_population_sha256": "c575003063707e98ea9a6869f389a5ab83d7cbf0a856b766ad3e11da0285622f",
-    "historical_acceptance_sha256": "da297209db8d1d48340f6ece0b4b5710ed8f196c3dd5c752412805a55557338f"
+    "historical_population_sha256": "e84660548ccb22677b54adc7eab15b55bd643f9ff8a93813cc9aca4b670c6642",
+    "historical_acceptance_sha256": "5231b3071c67d2b21d556455ea8a970b0342051c447b2dc545e428b96a0f8ebc"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4477,8 +4477,8 @@
     "?unknown_slot19@MultiplayerGameMode@@UAE_NHHH@Z": 5907472,
     "?unknown_slot19@UDPInterfaceClass@@UAEHH@Z": 7787584,
     "?unknown_slot19@WinsockInterfaceClass@@UAEHH@Z": 7776816,
-    "?unknown_slot200@AircraftClass@@UAE_NHHHH@Z": 4289920,
-    "?unknown_slot200@TechnoClass@@UAE_NHHHH@Z": 7127712,
+    "?unknown_slot200@AircraftClass@@UAE_NHPAVAbstractClass@@HH@Z": 4289920,
+    "?unknown_slot200@TechnoClass@@UAE_NHPAVAbstractClass@@HH@Z": 7127712,
     "?unknown_slot202@FootClass@@UAE_NXZ": 5034112,
     "?unknown_slot204@InfantryClass@@UAE_NXZ": 5281392,
     "?unknown_slot205@InfantryClass@@UAEXXZ": 5281456,

@@ -13,12 +13,12 @@ bool BuildingClass::unknown_slot78(int action,int target_address,bool arg3)
 {
     ObjectClass *target=(ObjectClass *)target_address;
     if(action==5) {
-        if(target) unknown_slot200(1,target_address,0,0);
+        if(target) unknown_slot200(1,target,0,0);
     } else if(action==4) {
         if(Type->Factory!=0) OutList.Add(EventClass(Owner(),0x11,TargetClass(this)));
-        if(Type->GapGenerator) unknown_slot200(0x10,target_address,0,0);
+        if(Type->GapGenerator) unknown_slot200(0x10,target,0,0);
         if(unknown_554.Count()>0) {
-            unknown_slot200(0x10,target_address,0,0);
+            unknown_slot200(0x10,target,0,0);
             return true;
         }
     } else {

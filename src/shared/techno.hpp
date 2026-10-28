@@ -468,7 +468,7 @@ public:
     virtual void unknown_slot197();                             // slot 197 (+0x314) 0x006D4000
     virtual void unknown_slot198();                             // slot 198 (+0x318) 0x006D4060
     virtual bool unknown_slot199(int type);                         // slot 199 (+0x31C) 0x006CC510
-    virtual bool unknown_slot200(int arg1, int arg2, int arg3, int arg4); // slot 200 (+0x320) 0x006CC2A0
+    virtual bool unknown_slot200(int arg1, AbstractClass *arg2, int arg3, int arg4); // slot 200 (+0x320) 0x006CC2A0
     virtual bool unknown_slot201() { return unknown_3fc > 0; } // slot 201 (+0x324) 0x006D8E80
     virtual bool unknown_slot202();                             // slot 202 (+0x328) 0x00453BC0 (kept copy elsewhere)
     virtual bool unknown_slot203() { return unknown_154.Value() > 0; }  // slot 203 (+0x32C) kept copy 0x0041B390 (the +0x154 timer still runs)
