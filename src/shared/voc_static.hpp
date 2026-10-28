@@ -12,8 +12,7 @@ struct VocStaticSound : AudioListNode {
     void Pause();                   // 0x00714460 (counts a pause, pauses the event)
     void Resume();                  // 0x00714480 (counts it down, resumes the event)
 
-    AudioEventHandle Handle;        // +0x0C
-    int unknown_1c;                 // +0x1C (the 0x14-byte game-side handle, UnknownAudioController, ends here)
+    UnknownAudioController Handle;  // +0x0C (the 0x14-byte game-side handle)
     CoordStruct Coord;              // +0x20
     unsigned int Flags;             // +0x2C
     volatile int PauseCount;        // +0x30
