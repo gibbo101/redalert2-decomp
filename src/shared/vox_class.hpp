@@ -4,6 +4,8 @@
 #ifndef RA2_SHARED_VOX_CLASS_HPP
 #define RA2_SHARED_VOX_CLASS_HPP
 
+class CCINIClass;
+
 class VoxClass {
 public:
     VoxClass(char const *name);                            // 0x007160E0 (added to the unit's VoxClass list)
@@ -12,6 +14,10 @@ public:
     static int __fastcall Find_Index(char const *name);    // 0x00716640
     static char const *__fastcall Name_From(int index);    // 0x007158A0 ("none" out of range; name hypothesis)
     static void __fastcall Set_Volume(int volume);         // 0x00715EF0 (at most 255; OptionsClass voice volume)
+
+    // Reads the VoxClass's EVA.ini section: volume, type, priority and the two
+    // file names; false without the section (0x007161E0).
+    bool Read_INI(CCINIClass &ini);
 
     char Name[0x28];                // +0x00 the EVA.ini section
     float Volume;                   // +0x28

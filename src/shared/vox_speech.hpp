@@ -62,5 +62,7 @@ void __fastcall Speech_Cancel(int index);
 int Taunt_Init();
 void Taunt_Shutdown();
 int __fastcall Taunt_Play(int taunt);
+// Stops the speech and deletes every VoxClass (0x00716590; name hypothesis).
+void Speech_Free_All();
 
 #endif
