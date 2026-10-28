@@ -151,7 +151,7 @@ public:
 extern UnknownIDSource *unknown_id_source_a3d290;    // 0x00A3D290
 // Assigns the houses of a multiplayer game to the players (0x0065FBB0; Read_Basic
 // calls it instead of reading [Basic] Player; name hypothesis).
-void Assign_Houses_0065fbb0();
+void __fastcall Assign_Houses_0065fbb0();
 // Resets the scenario before a new one is read (0x0065D370; name hypothesis).
 void Clear_Scenario_0065d370();
 // Multiplayer setup after an unofficial map is read (0x0065E8C0; meaning not recovered).

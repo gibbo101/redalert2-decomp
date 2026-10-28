@@ -4,8 +4,8 @@
     "id": "population-1684",
     "inventory_sha256": "479d7d95a66f428c15c4835d561e78bc0eabee78abe2d73e8eed12cd77b4d43b",
     "gaps_sha256": "3c8e6ac2493097f3fb764dfa8aee5103768eee3c889e1d39113bb990ce7aa03d",
-    "historical_population_sha256": "dea315c81fbf3656c51012832abc50c69d9a3304aa2f3168b52897168e8cd3cd",
-    "historical_acceptance_sha256": "8b74237e1eb13abbb73c88c2b6a292edef11d2acd25dd64a6e7cbe0b676d856b"
+    "historical_population_sha256": "84edeee8943603f49080595a877240a22dc168e68b597913cfd109c4e5aca1b0",
+    "historical_acceptance_sha256": "2a525686ddcb04394611e2d2313fbbe005bb5cc240166c9c27025890e07569e5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3267,7 +3267,7 @@
     "?Read_Variables@UnknownIDSource@@QAE_NAAVCCINIClass@@@Z": 6690672,
     "?Write_Variables@UnknownIDSource@@QAE_NAAVCCINIClass@@@Z": 6690992,
     "?Read_Basic@UnknownIDSource@@QAE_NAAVCCINIClass@@@Z": 6691200,
-    "?Assign_Houses_0065fbb0@@YAXXZ": 6683568,
+    "?Assign_Houses_0065fbb0@@YIXXZ": 6683568,
     "?Load@LightSourceClass@@UAGJPAUIStream@@@Z": 5471136,
     "__real@8@3feea7c5ac471b478800": 7980320,
     "__imp__lstrcatA": 7971120,

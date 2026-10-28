@@ -85,4 +85,9 @@ private:
 // left followed by right (0x00771460; result through ECX, left in EDX).
 WideString __fastcall operator+(WideString const &left, WideString const &right);
 
+// The narrow (ANSI) copy of a wide string (0x00771280; Assign_Houses uses it
+// for a WOL player's name; name hypothesis).
+class Wstring;
+Wstring __fastcall Narrow_Copy_00771280(WideString const &wide);
+
 #endif

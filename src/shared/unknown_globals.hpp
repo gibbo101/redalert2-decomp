@@ -38,6 +38,19 @@ struct UnknownSessionState {
     // Reports scenario-loading progress in percent (redraws the loading
     // screen and sends it to the other players; 0x00672160, name hypothesis).
     void Loading_Progress_00672160(int percent);
+    // The colour scheme of a player colour (0x006715D0; -2 reads as 8).
+    int Unknown_006715D0(int color);
+
+    // Data (offsets from 0x00A3D298; the first word is unknown_game_mode_a3d298,
+    // +0x40/+0x28/+0xA7 are declared separately in this header for now).
+    char unknown_00[0x24];
+    int unknown_24;                         // +0x24 every multiplayer house's third setup value (Assign_Houses)
+    char unknown_28[0x3C - 0x28];
+    int AICount;                            // +0x3C the computer players
+    char unknown_40[0x44 - 0x40];
+    int AIDifficulty[8];                    // +0x44
+    int AICountry[8];                       // +0x64 (-1 none, -3 random)
+    int AIColor[8];                         // +0x84
 };
 extern UnknownSessionState unknown_session_a3d298;
 // The session's game mode object (+0x04, a MultiplayerGameMode; moved from
@@ -111,6 +124,12 @@ struct Unknown535910 {
     void Unknown_00535BF0();
 };
 Unknown535910 *Unknown_00535910();
+// Assign_Houses' session data and globals (0x0065FBB0).
+extern int unknown_house_setting_7d88d8;            // 0x007D88D8 (every new house's +0x11C)
+class HouseClass;
+extern HouseClass *unknown_house_a72d28;            // 0x00A72D28 (the player without a team)
+// The index of a colour scheme by name (0x00663D90).
+int __fastcall unknown_color_scheme_index_663d90(char const *name, int kind);
 // An empty string used as an INI default (0x0083C55C).
 extern char unknown_string_83c55c[];
 extern int unknown_a40774;  // 0x00A40774 (a live-object count; BuildingClass, FactoryClass, ...)

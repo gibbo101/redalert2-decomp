@@ -4,8 +4,8 @@
     "id": "population-2567",
     "inventory_sha256": "f535be833197f6d6c9692c9404c8ebb503698d8bd829bca0c14faaa181f90f9a",
     "gaps_sha256": "6427074d9c5d0e69fcfde602b6306daff7c9b6f2abfcbffa044e7cf56180bf8e",
-    "historical_population_sha256": "2f07a81dd97303accc3dfce14c4553a645fede3c77fa8c1b7702519a9be81660",
-    "historical_acceptance_sha256": "0d2cc13567e9f554dd59ce182b7a880624ca6c40685f5509b0367fec435a89c5"
+    "historical_population_sha256": "59b92d0d22acecbf120b1fea3dedd1c14ccb82bef6b654629acec8d13c5465d0",
+    "historical_acceptance_sha256": "e8a34021dbc78ff9cdd35a4c45e0f61bcba1f6f89c49e441d17f04dec390e551"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1457,7 +1457,7 @@
     "??_G?$TypeList@PAVTechnoTypeClass@@@@UAEPAXI@Z": 4640432,
     "??_G?$VectorClass@H@@UAEPAXI@Z": 4643440,
     "??_G?$VectorClass@PAVTechnoTypeClass@@@@UAEPAXI@Z": 4643520,
-    "?Assign_Houses_0065fbb0@@YAXXZ": 6683568,
+    "?Assign_Houses_0065fbb0@@YIXXZ": 6683568,
     "?Clear@?$DynamicVectorClass@H@@UAEXXZ": 4639872,
     "?Clear@?$DynamicVectorClass@PAVTechnoTypeClass@@@@UAEXXZ": 4639968,
     "?Clear@?$VectorClass@H@@UAEXXZ": 4641120,
@@ -8150,7 +8150,9 @@
     "??_EParticleTypeClass@@UAEPAXI@Z": 6430336,
     "??_ERadioClass@@UAEPAXI@Z": 6516624,
     "??_EBombClass@@UAEPAXI@Z": 4418032,
-    "??_ETActionClass@@UAEPAXI@Z": 7024848
+    "??_ETActionClass@@UAEPAXI@Z": 7024848,
+    "?unknown_color_scheme_index_663d90@@YIHPBDH@Z": 6700432,
+    "?Read_Scenario_INI@@YI_NAAVCCINIClass@@_N@Z": 6679360
   },
   "regions": [
     {
@@ -12685,7 +12687,7 @@
         {
           "offset": 3013,
           "kind": 20,
-          "symbol": "?Assign_Houses_0065fbb0@@YAXXZ",
+          "symbol": "?Assign_Houses_0065fbb0@@YIXXZ",
           "target": 6683568,
           "addend": 0,
           "resolved": 4294956647
@@ -12779,7 +12781,7 @@
           "resolved": 4292999694
         }
       ],
-      "source_sha256": "42d5e16c7f0e25b3784a4da724005bf765e2a375f9eec3654b147bdb2753f9c4",
+      "source_sha256": "a6500c7db32c680148b1e1df6cfb96be301180fe77583fe7399168715be7f131",
       "source": "src/recovered/classes/UnknownIDSource/UnknownIDSource_Read_Basic_00661980.cpp",
       "population": "population-2567",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
