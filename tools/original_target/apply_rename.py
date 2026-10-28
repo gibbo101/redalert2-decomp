@@ -33,7 +33,8 @@ options (the build's own grouping), every region must reproduce its complete
 original extent, and the result goes through the canonical V4 audit used by
 build.py (bounds, padding, emitted-section coverage, reference and operand
 checks). With --header-users, units that include a changed header are also
-recompiled and must verify with their manifest rows unchanged.
+recompiled and must verify with their manifest rows unchanged. A header-only
+spec (no affected population) implies --header-users.
 
 Any miss, unbound reference or old name left anywhere refuses: every written
 file is restored and the catalog is untouched. On success the catalog is
@@ -226,6 +227,13 @@ def bind_changed(catalog, populations, files, config):
                     table.setdefault(name, value)
 
 
+def use_header_users(requested, headers, populations):
+    """A batch that changes headers but no accepted source, name or binding (a
+    header-only spec) has no affected population, so the header users are its
+    only verification: they are always recompiled then."""
+    return bool(requested or (headers and not populations))
+
+
 def write_files(files, removed, backup):
     """Write the batch; every overwritten or removed file is copied to `backup` first."""
     written = []
@@ -317,7 +325,10 @@ def main():
     unknown = [p for p in sources if p not in {r['source'] for r in catalog['regions']}]
     if unknown:
         raise SystemExit('changed files are not accepted sources: %s' % unknown[:5])
-    users = header_users(catalog, headers, populations) if args.header_users else set()
+    users = header_users(catalog, headers, populations) if use_header_users(args.header_users, headers, populations) else set()
+    if not populations and not users:
+        raise SystemExit('refused: the batch changes no accepted source, name or reference and no header user was '
+                         'selected, so nothing would be verified')
     phase('plan')
     summary = dict(name=spec['name'], renames=spec['renames'], changed_sources=sorted(sources),
                    changed_headers=headers, moved=moves, affected_populations=sorted(populations),

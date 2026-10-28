@@ -89,6 +89,9 @@ public:
     void Unknown_00559FD0();                                              // 0x00559FD0                                              // 0x0055A490
     void Unknown_0054B2E0();                                                    // 0x0054B2E0
     void Unknown_005685F0();                                                    // 0x005685F0
+    bool Unknown_00569090(Cell *cell);                                          // 0x00569090
+    void Unknown_00563D40();                                                    // 0x00563D40
+    void Unknown_0054EBD0();                                                    // 0x0054EBD0
     void Unknown_0055A550();                                                    // 0x0055A550
     bool Unknown_0054E410();                                                    // 0x0054E410 (places a crate on a random cell)
     void Unknown_0055D990(Cell const &cell);                              // 0x0055D990
@@ -114,7 +117,8 @@ public:
     // (the light class has no other members, so the gap is padding).
     char unknown_010[0xE8 - 0x10];
     Rect MapSize;                               // +0xE8 (shared/map.hpp)
-    char unknown_0f8[0x120 - 0xF8];
+    Rect MapLocalSize;                          // +0xF8 (shared/map.hpp)
+    char unknown_108[0x120 - 0x108];
     int unknown_120;                            // +0x120 the map's first cell X (hypothesis: MapCellX)
     int unknown_124;                            // +0x124 the first cell Y
     int unknown_128;                            // +0x128 the width in cells
@@ -161,6 +165,7 @@ public:
     bool Unknown_00633130();                                                    // 0x00633130 (+0x14D4: the radar is on; as shared/radar.hpp)
     void Unknown_00633140(bool on);                                             // 0x00633140 (turns the radar on or off; as shared/radar.hpp)
     void Unknown_006331E0(bool flag);                                           // 0x006331E0
+    void Unknown_00631D40();                                                    // 0x00631D40 (as shared/radar.hpp)
     void Unknown_00634030();                                                    // 0x00634030
     void Unknown_00630A00();                                                    // 0x00630A00
     void Unknown_00631ED0();                                                    // 0x00631ED0 builds the radar's table and surfaces (load path)

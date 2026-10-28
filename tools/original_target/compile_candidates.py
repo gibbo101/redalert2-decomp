@@ -154,13 +154,22 @@ def compare_candidate(audit, coff, candidate, obj, options, variant):
     return row
 
 
-def compile_population(manifest_path, output, config, replacing=()):
+def covered_retired(region, candidate, retiring):
+    """True when `region` is a retired accepted region lying wholly inside the candidate's extent."""
+    return (region['entry'] in retiring and candidate['entry'] < region['entry'] and
+            region['entry'] + region['full_extent_bytes'] <= candidate['entry'] + candidate['region_bytes'])
+
+
+def compile_population(manifest_path, output, config, replacing=(), retiring=()):
     """Compile and strictly audit a frozen population.
 
     `replacing` lists accepted entries this population may supersede (an
     identical original body rewritten as more readable source, which may also
-    claim the complete inventoried padding gap after it); every other
-    overlap with accepted source is still refused.
+    claim the complete inventoried padding gap after it). `retiring` lists
+    accepted entries a candidate may swallow: a retired region is excused only
+    when its entire extent (body and frozen padding) lies inside the
+    candidate's own region; every other overlap with accepted source is still
+    refused.
     """
     started = time.monotonic(); output = Path(output).resolve()
     require(not output.exists() and any(output.is_relative_to(REPOSITORY / name) and
@@ -179,7 +188,8 @@ def compile_population(manifest_path, output, config, replacing=()):
                         candidate['entry'] < r['entry'] + r['full_extent_bytes']
                         for r in catalog['regions'] if not (r['entry'] in replacing and
                                                             r['entry'] == candidate['entry'] and
-                                                            r['body_bytes'] == candidate['body_bytes'])),
+                                                            r['body_bytes'] == candidate['body_bytes']) and
+                        not covered_retired(r, candidate, retiring)),
                 'Candidate overlaps accepted source')
     tools = check_toolchain(config, json.loads((REPOSITORY/'manifests/toolchain.json').read_bytes()))
     dependencies = {str(p.relative_to(REPOSITORY)): sha(p.read_bytes()) for p in

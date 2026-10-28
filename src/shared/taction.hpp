@@ -50,6 +50,9 @@ public:
     bool unknown_func_6b1710(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1710
     bool unknown_func_6b19a0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B19A0
     bool unknown_func_6b1270(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1270
+    bool unknown_func_6b1c80(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1C80 (resets the tactical zoom to the rules ZoomInFactor, clears keyboard input, hides the mouse, redraws and sleeps a second)
+    bool unknown_func_6b1650(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1650 (sets the map local size from +0x34, refits the radar, clears the cell overlays, shows the buildings and announces the terrain)
+    bool unknown_func_6b14d0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B14D0 (kills the technos with the trigger attached and scrolls to the cell)
     bool unknown_func_6b1f90(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1F90
     // Springs the triggers of the type at +0x50 (forced, no object); always true (name hypothesis).
     bool unknown_func_6b1ec0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1EC0

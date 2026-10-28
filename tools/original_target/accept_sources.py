@@ -17,7 +17,10 @@ an exact draft is copied to its `source` destination on acceptance. References a
 and `// @ref NAME=ADDRESS` comments. The population is frozen against the
 frozen inventory bounds (the region's current extent when replacing) and goes
 through compile_candidates.py's strict audit. Only exact sources are
-installed; a replaced region's old file is removed. If nothing matches, the
+installed; a replaced region's old file is removed. A plan may also list
+"retire": ["004d0020", ...], accepted regions at other entries that an item
+covers entirely (body and frozen padding), e.g. a 3-byte tail region of a function
+that the plan accepts whole; see retired_regions. If nothing matches, the
 catalog is untouched and the new files are left for further iteration.
 
 Run ./build.command afterwards; it must reproduce the complete file.
@@ -244,6 +247,41 @@ def restate_canonical_bounds(plan, existing):
     return restated
 
 
+def retired_regions(plan, existing, catalog):
+    """Accepted regions the plan retires: {entry: region}.
+
+    Each must be an accepted region at an entry no plan item uses, whose body
+    starts inside and ends within the stated body_bytes of one plan item.
+    compile_population then requires the whole accepted extent (the frozen
+    padding too) to lie inside that item's candidate region, and the strict
+    audit compares the item's complete original body, retired bytes included.
+    No other region may relocate against a retired symbol (a call would be
+    left unbound); a population's shared reference table may still list it."""
+    retired = {}
+    items = {int(i['entry'], 16): i for i in plan['sources']}
+    names = {r['symbol'] for r in map(existing.get, [int(e, 16) for e in plan.get('retire', [])]) if r}
+    for text in plan.get('retire', []):
+        entry = int(text, 16)
+        row = existing.get(entry)
+        if row is None:
+            raise SystemExit('retire %s: no accepted region starts there' % text)
+        if entry in items:
+            raise SystemExit('retire %s: a plan item has that entry (it replaces the region)' % text)
+        covering = [i for e, i in items.items() if i.get('body_bytes') and
+                    e < entry and entry + row['body_bytes'] <= e + int(i['body_bytes'])]
+        if not covering:
+            raise SystemExit('retire %s: no plan item with a stated body_bytes covers its body (%d bytes)'
+                             % (text, row['body_bytes']))
+        retired[entry] = row
+    for region in catalog['regions']:
+        if region['entry'] in retired:
+            continue
+        used = {rel['symbol'] for rel in region.get('relocations') or []}
+        if used & names:
+            raise SystemExit('retire: %s still names a retired symbol: %s' % (region['source'], sorted(used & names)[:3]))
+    return retired
+
+
 def contradicted_vtables(stated, audit):
     """Plan or @ref bindings of a vtable name that the original's RTTI places
     elsewhere, each with what the RTTI says is at the stated address.
@@ -387,15 +425,16 @@ def main():
         raise SystemExit('output exists: %s' % output)
     inventory = Inventory()
     replacing = {int(i['entry'], 16) for i in plan['sources'] if int(i['entry'], 16) in existing}
+    retiring = retired_regions(plan, existing, catalog)
     # A hand-written unit compiles as one translation unit: replacing only
     # part of it would leave the rest compiling without the definitions (and
     # initializers) it was matched with.
     from canonical import separate_unit_populations
     separate = separate_unit_populations(catalog)
-    for population in {existing[e]['population'] for e in replacing} - set(separate):
+    for population in {existing[e]['population'] for e in replacing | set(retiring)} - set(separate):
         members = [r for r in catalog['regions'] if r['population'] == population]
         if any(r.get('source_quality_family') == 'hand-written' for r in members):
-            left = sorted(r['entry'] for r in members if r['entry'] not in replacing)
+            left = sorted(r['entry'] for r in members if r['entry'] not in replacing | set(retiring))
             if left and not plan.get('allow_split'):
                 raise SystemExit('plan replaces part of hand-written %s; also include %s (or set allow_split)'
                                  % (population, ', '.join('%08x' % e for e in left[:8])))
@@ -482,7 +521,7 @@ def main():
         label = directory.name; manifest_path = output / (label + '.json')
         manifest_path.write_text(json.dumps(population, indent=1))
         try:
-            receipt = compile_population(manifest_path, output / label, config, replacing=replacing)
+            receipt = compile_population(manifest_path, output / label, config, replacing=replacing, retiring=set(retiring))
         except ValueError as error:
             results.append(dict(pass_=label, error=str(error))); continue
         accepted = json.loads(Path(receipt['accepted_manifest']).read_bytes())
@@ -503,6 +542,15 @@ def main():
                                            historical_acceptance_sha256=sha(Path(receipt['accepted_manifest']).read_bytes()),
                                            **({'separate_units': True} if population.get('separate_units') else {})))
         items = {e: item for e, _, item in entries}
+        # compile_population refused any overlap that the accepted candidate
+        # did not cover entirely, so every retired region inside an accepted
+        # item's extent is now superseded by it.
+        spans = [(row['entry'], row['entry'] + row['full_extent_bytes']) for row in accepted['accepted']]
+        for e, row in retiring.items():
+            if any(start < e and e + row['full_extent_bytes'] <= end for start, end in spans):
+                catalog['regions'].remove(row)
+                if not any(r['source'] == row['source'] for r in catalog['regions']):
+                    (REPOSITORY / row['source']).unlink()
         keys = ['entry', 'method', 'symbol', 'symbol_prefix', 'options', 'body_bytes', 'body_sha256', 'padding_bytes',
                 'full_extent_bytes', 'full_extent_sha256', 'references', 'relocations', 'source_sha256']
         for row in accepted['accepted']:

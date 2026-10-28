@@ -202,6 +202,7 @@ public:
     // null at the end (0x0055A490).
     void Unknown_0055A550();
     CellClass *Unknown_0055A490();
+    bool Unknown_00569090(Cell *cell);              // 0x00569090 (whether a cell can be scrolled to; hypothesis)
     bool Unknown_0054E580(Cell cell, int arg2);     // 0x0054E580
     void Unknown_00559FD0();                        // 0x00559FD0
     // Lets every cell refresh (0x0047C8A0) and clears the visibility bits of

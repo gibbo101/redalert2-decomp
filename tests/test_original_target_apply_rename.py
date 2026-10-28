@@ -59,6 +59,13 @@ class ApplyRenameTests(unittest.TestCase):
         self.assertEqual(apply_rename.rename_catalog(catalog, {}, {new: b''}, {old: new}), {'population-3'})
         self.assertEqual((row['source'], row['semantic_name']), (new, 'New_00401000'))
 
+    def test_header_only_batches_always_verify_their_header_users(self):
+        headers = ['src/shared/a.hpp']
+        self.assertTrue(apply_rename.use_header_users(False, headers, set()))
+        self.assertFalse(apply_rename.use_header_users(False, headers, {'population-1'}))
+        self.assertTrue(apply_rename.use_header_users(True, headers, {'population-1'}))
+        self.assertFalse(apply_rename.use_header_users(False, [], set()))
+
     def test_prefix_lookup_equals_the_full_table_scan(self):
         generator = random.Random(7)
         alphabet = '?@AB_'

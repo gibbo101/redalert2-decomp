@@ -55,6 +55,7 @@ public:
     int unknown_134;                // +0x134 (0 after MapClass 0x00559F10)
     char unknown_138[0x140 - 0x138];
     unsigned int unknown_140;       // +0x140 flags (bit 1: mapped, bit 0 set when layer 1 is fully shrouded)
+    void Unknown_00472540(int value);   // 0x00472540 (as shared/cell.hpp)
     void unknown_47bc80();          // 0x0047BC80 (DisplayClass 0x0049CDB0, for a cell that was mapped)
     void unknown_47be00();          // 0x0047BE00 (as shared/cell.hpp)
     void unknown_47c840();          // 0x0047C840 (as shared/cell.hpp)
