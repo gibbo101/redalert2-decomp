@@ -186,6 +186,7 @@ public:
     void Unknown_0067C150(ObjectClass *object);                                 // 0x0067C150 (as shared/sidebar.hpp)
     virtual void unknown_slot34();                                              // slot 34 0x006819A0
     void Unknown_0067C2D0(int column);                                          // 0x0067C2D0 redraws a strip if active
+    static int __fastcall Which_Column(int kind, int arg3, bool naval);           // 0x00681940 (as shared/sidebar.hpp)
     void Unknown_0067B880(bool cameo_text);                                     // 0x0067B880 (empty; OptionsClass SidebarCameoText)
 };
 #endif

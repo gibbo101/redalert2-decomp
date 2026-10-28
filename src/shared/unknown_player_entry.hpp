@@ -27,4 +27,8 @@ struct UnknownPlayerEntry {
 };
 #pragma pack(pop)
 extern DynamicVectorClass<UnknownPlayerEntry *> unknown_players_a3fa7c;
+// The entry of each player row of the setup dialogs (0x00A3FA98, eight), and the
+// entry the dialogs compare a row against (0x00A72D44; meaning not recovered).
+extern UnknownPlayerEntry *unknown_player_slots_a3fa98[8];
+extern UnknownPlayerEntry *unknown_player_a72d44;
 #endif

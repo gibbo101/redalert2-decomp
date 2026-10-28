@@ -250,6 +250,8 @@ public:
     void Unknown_0067DC00(int index);                   // 0x0067DC00 starts a tab button's flash
     void Unknown_0067C100();                            // 0x0067C100 redraws the active strip (soon)
     void Unknown_0067C2D0(int column);                  // 0x0067C2D0 redraws a strip if active
+    // The strip of a type kind (0x00681940; TS name; buildings with arg3 5 take strip 1; naval is unused).
+    static int __fastcall Which_Column(int kind, int arg3, bool naval);
     void Unknown_0067C310(int column);                  // 0x0067C310 and soon
     void Unknown_0067E1C0();                            // 0x0067E1C0 strip AI
     static void Unknown_0067BA60();                     // 0x0067BA60 places the sidebar and its controls

@@ -68,7 +68,12 @@ struct UnknownSessionState {
     int AIDifficulty[8];                    // +0x44
     int AICountry[8];                       // +0x64 (-1 none, -3 random)
     int AIColor[8];                         // +0x84
-    char unknown_a4[0x638 - 0xA4];
+    char unknown_a4[0x12C - 0xA4];
+    int unknown_12c;                        // +0x12C the player's colour (GDlgSupp 0x004D23C0)
+    int unknown_130;                        // +0x130 (-2: the colour shows as random; 0x004D23C0)
+    int unknown_134;                        // +0x134 the player's country (GDlgSupp 0x004D1820)
+    int unknown_138;                        // +0x138 (-2 random, -3 observer: the country shows as that; 0x004D1820)
+    char unknown_13c[0x638 - 0x13C];
     bool unknown_638;                       // +0x638 (cleared by 0x00672440)
     bool unknown_639;                       // +0x639 (cleared before the load wait, 0x0065C7D0)
     bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)

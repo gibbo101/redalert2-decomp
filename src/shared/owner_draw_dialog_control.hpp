@@ -5,6 +5,7 @@
 // The fields are placed in SimpleDialogControl as an ownership hypothesis;
 // no base-field ownership claim is made from constructor omission alone.
 // Slot1 stores the second argument at +4, then looks up the first as a registry key.
+class Surface;
 namespace OwnerDraw {
 class DialogControl {
 public:
@@ -55,6 +56,8 @@ public:
 extern UnknownControlIndex unknown_registry_a73640;
 // Whether the control is in the registry (0x005E4720; the skirmish preview paint skips one that is).
 bool __fastcall unknown_5e4720(HWND control);
+// Gives a registered control an image to draw (0x005E1F30; GDlgSupp.cpp ping and flag controls).
+void __fastcall unknown_5e1f30(HWND control, Surface *image);
 
 }
 #endif

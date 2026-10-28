@@ -154,6 +154,8 @@ WIN32_IMPORT BOOL WINAPI EnableWindow(HWND window, BOOL enable);
 #define CB_GETCURSEL 0x147
 #define CB_SETCURSEL 0x14E
 #define CB_GETITEMDATA 0x150
+#define CB_RESETCONTENT 0x14B
+#define CB_SETITEMDATA 0x151
 
 // Window classes and the main window (USER32; COMCTL32 ordinal 17 is
 // InitCommonControls; the game window, shared/win_stub.hpp).
