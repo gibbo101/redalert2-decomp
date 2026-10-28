@@ -60,7 +60,11 @@ struct UnknownSessionState {
     int AIDifficulty[8];                    // +0x44
     int AICountry[8];                       // +0x64 (-1 none, -3 random)
     int AIColor[8];                         // +0x84
-    char unknown_a4[0x2FC8 - 0xA4];
+    char unknown_a4[0x638 - 0xA4];
+    bool unknown_638;                       // +0x638 (cleared by 0x00672440)
+    bool unknown_639;                       // +0x639 (cleared before the load wait, 0x0065C7D0)
+    bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)
+    char unknown_63b[0x2FC8 - 0x63B];
     // The game master (host): name and house index (-1: none). The load wait
     // 0x0065C520 clears both when it drops the master (names after TS/YR's
     // SessionClass MasterPlayerName/MasterPlayerID, hypothesis).
@@ -72,6 +76,7 @@ struct UnknownSessionState {
     // else by name, in game mode 4 (0x0066F150; YR's Am_I_Master, hypothesis).
     bool Am_I_Master(HouseClass *house);
     void Unknown_0066EE50();                // 0x0066EE50 (Do_Lose after a networked replay restarts)
+    void Unknown_00672440();                // 0x00672440 (game mode 4, after the load wait of 0x0065C7D0)
     void Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)
 };
 extern UnknownSessionState unknown_session_a3d298;
@@ -237,11 +242,19 @@ void Unknown_006ecf10();                                    // 0x006ECF10 (walks
 // A lazily made object (0x00A6E7C4; 0x00535910 makes it, 0x00535BF0 runs it;
 // vtable 0x007A549C with one slot). The progress screen sends it its percent
 // before and after each change (message 0x11AE).
+struct Point2D;
 struct Unknown535910 {
     virtual bool Message_00536ea0(int message, void *data);      // slot 0
     void Unknown_00535BF0();
+    void Unknown_005359E0();                // 0x005359E0 (places itself by the screen size)
+    Point2D Unknown_00535AB0();             // 0x00535AB0 (the loading screen's text position)
+    int Unknown_00535B60();                 // 0x00535B60 (the name width: -1 in a campaign)
+    void Unknown_00535B90();                // 0x00535B90
+    void Unknown_00536E20();                // 0x00536E20 (frees its buffers and surfaces)
 };
 Unknown535910 *Unknown_00535910();
+// The art data at 0x00AC1154 (0x006F2490; the campaign loading screen's bar drawer).
+void *Unknown_Get_Art_6f2490();
 // Assign_Houses' session data and globals (0x0065FBB0).
 extern int unknown_house_setting_7d88d8;            // 0x007D88D8 (every new house's +0x11C)
 class HouseClass;
@@ -250,6 +263,9 @@ extern HouseClass *unknown_house_a72d28;            // 0x00A72D28 (the player wi
 int __fastcall unknown_color_scheme_index_663d90(char const *name, int kind);
 // An empty string used as an INI default (0x0083C55C).
 extern char unknown_string_83c55c[];
+// WOnline.cpp globals (moved from shared/wol_sink.hpp, which includes this header).
+extern int unknown_b2a7ec;              // 0x00B2A7EC
+extern int unknown_b2a7fc;              // 0x00B2A7FC (the game ID the loading screen shows)
 extern int unknown_a40774;  // 0x00A40774 (a live-object count; BuildingClass, FactoryClass, ...)
 extern bool unknown_flag_a40958;  // 0x00A40958 (the destructor then calls ObjectClass slot 52)
 extern bool unknown_flag_a40b30;  // 0x00A40B30 the sidebar is on the left

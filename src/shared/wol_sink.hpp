@@ -215,7 +215,6 @@ WIN32_IMPORT LRESULT WINAPI SendDlgItemMessageA(HWND dialog, int id, UINT messag
 
 // WOnline.cpp globals (names unknown; addresses evidenced).
 extern int unknown_a3d2a4;              // 0x00A3D2A4 (1 or 2: an online session state)
-extern int unknown_b2a7ec;              // 0x00B2A7EC
 extern int unknown_b2ac0c;              // 0x00B2AC0C (the age-check result)
 extern int unknown_b2ac6c;              // 0x00B2AC6C (years)
 extern int unknown_b2ac70;              // 0x00B2AC70 (consent)

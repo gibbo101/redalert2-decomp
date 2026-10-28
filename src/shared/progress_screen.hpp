@@ -80,6 +80,9 @@ public:
     // window, else every player's row from xy (Position when xy is -1,-1).
     void Draw_It(Point2D xy);                                   // 0x00620050
     void Set_Name_Width(int width);                             // 0x0061F150
+    // Sets the text position (-1,-1 centres it), the game ID text and two flags
+    // (0x0061EFA0; 0x0065C7D0 passes "not a campaign" for both).
+    void Unknown_0061EFA0(Point2D xy, wchar_t const *text, bool flag1, bool flag2);
     bool Has_Window();                                          // 0x006203C0
     void Clear_Window();                                        // 0x006203D0
     double Get_Progress(int player);                            // 0x006203F0
