@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 739 | 80,058 | 739 | 0x004011C0–0x0077CB70 |
+| [unowned](../src/recovered/unowned/) | 738 | 80,036 | 738 | 0x004011C0–0x0077CB70 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | (discovery: address-named) | 1530 | 46,127 | 0 | 0x004010A0–0x00797198 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 157 | 38,753 | 157 | 0x00438A60–0x004D3450 |
@@ -1102,6 +1102,7 @@
 | [classes/Megawealth](../src/recovered/classes/Megawealth/) | 4 | 112 | 0 | 0x005AA720–0x005AA780 |
 | [classes/MultiplayerObserverTeam](../src/recovered/classes/MultiplayerObserverTeam/) | 3 | 110 | 1 | 0x005AA7B0–0x005AA810 |
 | [coordinates](../src/recovered/coordinates/) | 2 | 109 | 2 | 0x00413770–0x004C2040 |
+| [classes/ScoreAnimClass](../src/recovered/classes/ScoreAnimClass/) | 3 | 108 | 3 | 0x006682C0–0x00668370 |
 | [classes/VectorClass_wchar_ptr](../src/recovered/classes/VectorClass_wchar_ptr/) | 1 | 108 | 1 | 0x004A57E0–0x004A57E0 |
 | [classes/BlitTransZRemapXlat_unsigned_short](../src/recovered/classes/BlitTransZRemapXlat_unsigned_short/) | 2 | 107 | 2 | 0x00486F00–0x0048CA30 |
 | [classes/ScriptMissionClass](../src/recovered/classes/ScriptMissionClass/) | 2 | 106 | 2 | 0x006EAF60–0x006EAFA0 |
@@ -1123,7 +1124,6 @@
 | [classes/BlitPlainXlat_unsigned_char](../src/recovered/classes/BlitPlainXlat_unsigned_char/) | 2 | 89 | 2 | 0x004862A0–0x0048C7D0 |
 | [classes/Surface](../src/recovered/classes/Surface/) | 7 | 89 | 7 | 0x00411270–0x00411350 |
 | [classes/BufferPipe](../src/recovered/classes/BufferPipe/) | 1 | 88 | 1 | 0x00773730–0x00773730 |
-| [classes/ScoreAnimClass](../src/recovered/classes/ScoreAnimClass/) | 2 | 86 | 2 | 0x006682C0–0x00668370 |
 | [classes/Rect](../src/recovered/classes/Rect/) | 2 | 84 | 2 | 0x0042BCD0–0x0047D000 |
 | [classes/BlitTransDarken_unsigned_short](../src/recovered/classes/BlitTransDarken_unsigned_short/) | 2 | 83 | 2 | 0x00486F80–0x0048CA50 |
 | [classes/MultiplayerDebugCommandClass](../src/recovered/classes/MultiplayerDebugCommandClass/) | 6 | 83 | 1 | 0x0051D780–0x0051DA40 |
