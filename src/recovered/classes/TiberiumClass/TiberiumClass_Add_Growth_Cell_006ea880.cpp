@@ -17,7 +17,7 @@ void TiberiumClass::Add_Growth_Cell(Cell const &cell)
             Rebuild_Growth();
         }
         GrowthData[GrowthCount].Position = cell;
-        GrowthData[GrowthCount].Score = abs(unknown_id_source_a3d290->Random()()) % 50 + Frame;
+        GrowthData[GrowthCount].Key = abs(unknown_id_source_a3d290->Random()()) % 50 + Frame;
         GrowthQueue->Insert(&GrowthData[GrowthCount++]);
         GrowthMap[index] = true;
     }

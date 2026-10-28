@@ -22,8 +22,8 @@ void TiberiumClass::Init_Spread_Queue()
         SpreadMap = 0;
     }
     SpreadCount = 0;
-    SpreadData = new MapSurfaceData[unknown_cells_428ac0()];
+    SpreadData = new UnknownVeinNode[unknown_cells_428ac0()];
     SpreadMap = new bool[unknown_cells_428ac0()];
-    SpreadQueue = new PriorityQueueClass<MapSurfaceData>(unknown_cells_428ac0());
+    SpreadQueue = new UnknownVeinHeap(unknown_cells_428ac0());
     Rebuild_Spread();
 }

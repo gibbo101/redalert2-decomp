@@ -22,8 +22,8 @@ void TiberiumClass::Init_Growth_Queue()
         GrowthMap = 0;
     }
     GrowthCount = 0;
-    GrowthData = new MapSurfaceData[unknown_cells_428ac0()];
+    GrowthData = new UnknownVeinNode[unknown_cells_428ac0()];
     GrowthMap = new bool[unknown_cells_428ac0()];
-    GrowthQueue = new PriorityQueueClass<MapSurfaceData>(unknown_cells_428ac0());
+    GrowthQueue = new UnknownVeinHeap(unknown_cells_428ac0());
     Rebuild_Growth();
 }

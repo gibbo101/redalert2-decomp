@@ -24,9 +24,9 @@ void TiberiumClass::Init_Spread()
             tiberium->SpreadMap = 0;
         }
         tiberium->SpreadCount = 0;
-        tiberium->SpreadData = new MapSurfaceData[unknown_cells_428ac0()];
+        tiberium->SpreadData = new UnknownVeinNode[unknown_cells_428ac0()];
         tiberium->SpreadMap = new bool[unknown_cells_428ac0()];
-        tiberium->SpreadQueue = new PriorityQueueClass<MapSurfaceData>(unknown_cells_428ac0());
+        tiberium->SpreadQueue = new UnknownVeinHeap(unknown_cells_428ac0());
         tiberium->Rebuild_Spread();
     }
 }

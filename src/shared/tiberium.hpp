@@ -15,67 +15,7 @@
 
 class AnimTypeClass;
 
-// A spread or growth candidate: a cell and its priority (8 bytes; TS's MapSurfaceData).
-struct MapSurfaceData {
-    MapSurfaceData() {}
-    Cell Position;      // +0x00
-    float Score;        // +0x04
-};
-
-// A binary heap of entry pointers ordered by Score, lowest first (TS/YR's
-// PriorityQueueClass): Nodes[1..Count]; LMost and RMost are the highest and
-// lowest entry addresses inserted (bounds of the entry array in use).
-template <class T>
-class PriorityQueueClass {
-public:
-    PriorityQueueClass(int size) : LMost(0), RMost((T *)-1)
-    {
-        Count = 0;
-        Size = size;
-        Nodes = new T *[size + 1];
-        for (int index = 0; index <= Size; index++) {
-            Nodes[index] = 0;
-        }
-    }
-    ~PriorityQueueClass() { delete[] Nodes; }
-    // Adds node, sifting it up past the entries with a higher score; false when full.
-    bool Insert(T *node)
-    {
-        unsigned index = Count + 1;
-        unsigned parent = index >> 1;
-        float score = node->Score;
-        if (index >= (unsigned)Size) {
-            return false;
-        }
-        while (index > 1 && Nodes[parent]->Score > score) {
-            Nodes[index] = Nodes[parent];
-            index = parent;
-            parent >>= 1;
-        }
-        Nodes[index] = node;
-        Count++;
-        if (node > LMost) {
-            LMost = node;
-        }
-        if (node < RMost) {
-            RMost = node;
-        }
-        return true;
-    }
-    void Clear()
-    {
-        for (int index = 0; index <= Count; index++) {
-            Nodes[index] = 0;
-        }
-        Count = 0;
-    }
-
-    int Count;          // +0x00
-    int Size;           // +0x04
-    T **Nodes;          // +0x08
-    T *LMost;           // +0x0C
-    T *RMost;           // +0x10
-};
+#include "shared/vein_heap.hpp"
 
 class TiberiumClass;
 extern DynamicVectorClass<TiberiumClass *> unknown_TiberiumClass_list_00ac0b30;   // 0x00AC0B30
@@ -144,14 +84,14 @@ public:
     int NumFrames;                                  // +0x0E8
     int NumImages;                                  // +0x0EC
     int SpreadCount;                                // +0x0F0 SpreadData entries in use
-    PriorityQueueClass<MapSurfaceData> *SpreadQueue;   // +0x0F4
+    UnknownVeinHeap *SpreadQueue;                   // +0x0F4
     bool *SpreadMap;                                // +0x0F8 per cell: queued for spread
-    MapSurfaceData *SpreadData;                     // +0x0FC
+    UnknownVeinNode *SpreadData;                    // +0x0FC
     CDTimerClass<FrameTimerClass> SpreadTimer;      // +0x100
     int GrowthCount;                                // +0x10C GrowthData entries in use
-    PriorityQueueClass<MapSurfaceData> *GrowthQueue;   // +0x110
+    UnknownVeinHeap *GrowthQueue;                   // +0x110
     bool *GrowthMap;                                // +0x114 per cell: queued for growth
-    MapSurfaceData *GrowthData;                     // +0x118
+    UnknownVeinNode *GrowthData;                    // +0x118
     CDTimerClass<FrameTimerClass> GrowthTimer;      // +0x11C
 };
 

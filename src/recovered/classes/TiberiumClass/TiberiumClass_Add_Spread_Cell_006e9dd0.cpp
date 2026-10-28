@@ -17,7 +17,7 @@ void TiberiumClass::Add_Spread_Cell(Cell const &cell)
             Rebuild_Spread();
         }
         SpreadData[SpreadCount].Position = cell;
-        SpreadData[SpreadCount].Score = abs(unknown_id_source_a3d290->Random()()) % 50 + Frame;
+        SpreadData[SpreadCount].Key = abs(unknown_id_source_a3d290->Random()()) % 50 + Frame;
         SpreadQueue->Insert(&SpreadData[SpreadCount++]);
         SpreadMap[unknown_cell_index_428a90(cell)] = true;
     }

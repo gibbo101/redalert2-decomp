@@ -816,7 +816,7 @@
       },
       {
         "path": "src/shared/tiberium.hpp",
-        "sha256": "95515722fa16d65b8173f06b021cfe769b3ad0f5507150a9beb1d1a0a2e6057b"
+        "sha256": "3a1c112d7e0abefaca689b8f87ff6113fdaa627c0e9e074a49aaad90358562af"
       },
       {
         "path": "src/shared/reference_counted.hpp",
@@ -880,7 +880,7 @@
       },
       {
         "path": "src/shared/veinhole.hpp",
-        "sha256": "9811e547c731de3380005549f17d2dced7d35e780fdc7de49cbb2dc68aa32589"
+        "sha256": "c8d35cbb55a0a6a2df5fbe683315d9783c58f0d7fe52291be6f91d07e87c32b1"
       },
       {
         "path": "src/shared/building_light.hpp",
@@ -1601,6 +1601,10 @@
       {
         "path": "src/shared/score_anim.hpp",
         "sha256": "5ad3d002d896a25fb236ddfa2d7872dbeb211b91cb4c6037a97ebbd5860af810"
+      },
+      {
+        "path": "src/shared/vein_heap.hpp",
+        "sha256": "d8c140d8c397afb8b972be0f342f0f82ec07bbea6344388cd57282ee20fe1a37"
       }
     ],
     "source_quality_checkpoint": {
@@ -4338,7 +4342,8 @@
     "population-2724",
     "population-2725",
     "population-2726",
-    "population-2727"
+    "population-2727",
+    "population-2728"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -5499,7 +5504,7 @@
     ["population-01", 1],
     ["population-1622", 3],
     ["population-12", 1],
-    ["population-2726", 14],
+    ["population-2728", 14],
     ["population-02", 1],
     ["population-20", 1],
     ["population-01", 1],
@@ -6495,7 +6500,7 @@
     ["population-2419", 1],
     ["population-1698", 1],
     ["population-2673", 1],
-    ["population-2726", 1],
+    ["population-2728", 1],
     ["population-2701", 1],
     ["population-1609", 1],
     ["population-1610", 1],
@@ -7052,7 +7057,7 @@
     ["population-2186", 31],
     ["population-2187", 70],
     ["population-2672", 3],
-    ["population-2726", 5],
+    ["population-2728", 5],
     ["population-2437", 4],
     ["population-2650", 14],
     ["population-2637", 2],
@@ -7118,7 +7123,7 @@
     ["population-2571", 1],
     ["population-2515", 1],
     ["population-2648", 15],
-    ["population-2726", 1],
+    ["population-2728", 1],
     ["population-2663", 1],
     ["population-2519", 1],
     ["population-2520", 3],
@@ -7306,7 +7311,7 @@
     ["population-2723", 1],
     ["population-2724", 1],
     ["population-2727", 2],
-    ["population-2726", 11]
+    ["population-2728", 11]
   ],
   "shards": {
     "population-01": "fff4a929e519ffd24af8f227c99d9bb98e69301588e2ee47ec42c8ba7e952d94",
@@ -9235,8 +9240,9 @@
     "population-2723": "691d3df5caebf407716d679c5080f2657fe04b75157f01a19da77aed38792906",
     "population-2724": "f7bfbb2e1c09882514f81c3582d2e87d61ad7b041234e6d7536e006370057d34",
     "population-2725": "2f75afa0beafbc143cfb33ce05c73013ecd4e4c365740ec6c128faa902a301fb",
-    "population-2726": "e59b6eaecc381e0e2baab78df1928a9cafe81f0495405a361241460b47cd2f72",
+    "population-2726": "6ab19606de52466a0fb7789123d1c2a69d71b216fabaec4588f31a750ea9638f",
     "population-2727": "f4f7b030da5e547fed791c167ec14a0181257d01a8f26bd09292c2a803f36785",
+    "population-2728": "106f94bba9099990c94c4a5a1921b58b077be5a20e9352359f205ed05e2d081b",
     "population-273": "bf9ecc30da9e96560038384e2da3fd1b662e94e541cf378f7727e934dfea28cb",
     "population-274": "f0e5a283f0513780d995e3e6ecc90c78588dae4fd21a24e49338886e48c76722",
     "population-275": "c20546fcd21f756feba7adf8da9d0e78e0413c16109afcc8b7e45a5b32359cb2",
