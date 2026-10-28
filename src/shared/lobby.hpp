@@ -42,6 +42,8 @@ extern char const *unknown_lobby_names_7e6de8[7];
 // The dialog manager's current dialog ID (0x00735B20) and the dialog window with an ID, or 0
 // (0x00735940); hypotheses from the one lobby caller.
 int Current_Dialog_Id_00735b20();
+// The selected row of the lobby campaign list (0x553 in the dialog 0x00A728E0; LB_GETCURSEL) (0x005C67A0).
+int Selected_Campaign_005c67a0();
 HWND __fastcall Find_Dialog_00735940(int id);
 // 0 until the lobby is set up (0x007E6D90, initialised -1; hypothesis).
 extern int unknown_lobby_flag_7e6d90;

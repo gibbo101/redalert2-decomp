@@ -29,6 +29,10 @@ class MultiMission;
 HWND Get_Lobby_Dialog_005c2c40();
 // Text buffer of the lobby description box (0x00839D4C; bss).
 extern char unknown_text_839d4c[];
+// The number of player rows of the setup dialogs (0x00A3DB1C; hypothesis).
+extern int unknown_int_a3db1c;   // 0x00A3DB1C
+// Refreshes the first count player rows of a setup dialog (0x005CB170).
+void __fastcall Unknown_005cb170(HWND dialog, int count);   // 0x005CB170
 
 // A team of a game mode: a vptr, the team name and its number.
 class MultiplayerTeam {
@@ -275,11 +279,16 @@ public:
     virtual bool unknown_slot40();                                 // 40 0x005A62A0
     virtual void unknown_slot42();                                 // 42 0x005A3F90
 
+    void Unknown_005A3650(HWND dialog, int id);                   // 0x005A3650
+    void Unknown_005A3760(HWND dialog);                           // 0x005A3760
     bool Unknown_005A4F20();                                       // 0x005A4F20 (replaces the campaign with a fresh one, named after two players)
 
     UnknownDescriptionList_00490E00 *unknown_campaigns_40;         // +0x40 the cooperative campaign records
     CoopCampaignClass *unknown_campaign_44;                        // +0x44 the selected campaign
-    char unknown_48[0x328 - 0x48];
+    char unknown_48[0x4C - 0x48];
+    bool unknown_4c;                                               // +0x4C (set when the saved campaign is chosen)
+    int unknown_50;                                                // +0x50 the campaign list row last loaded
+    char unknown_54[0x328 - 0x54];
     DynamicVectorClass<CoopCampaignClass *> unknown_campaigns_328; // +0x328 one CoopCampaignClass per campaign record
     int unknown_340;                                               // +0x340 the selected campaign's record index
     bool unknown_344;                                              // +0x344
