@@ -15,6 +15,8 @@ class ConvertClass;
 
 class ColorScheme {
 public:
+    ~ColorScheme();                         // 0x00663BB0 (frees the name and converter, leaves ColorSchemes)
+
     unsigned char unknown_000[0x304];
     char const *Name;                       // +0x304
     HSVClass BaseColor;                     // +0x308 (name hypothesis)

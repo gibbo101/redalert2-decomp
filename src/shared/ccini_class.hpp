@@ -210,6 +210,10 @@ public:
     bool Put_Voc_List(char const *section, char const *entry, TypeList<int> list);
     // 0x004696B0
     int Load(FileClass &file, bool withdigest, bool keep_comments);
+    // Without comments (an inline split: RulesClass::Process 0x006433A0 spends inline budget
+    // on it inside the LANGRULE.INI scope, which keeps INIClass's second list constructor
+    // 0x0040E160 out of line as in the original).
+    int Load(FileClass &file, bool withdigest) { return Load(file, withdigest, false); }
     // 0x004697E0
     int Load(Straw &file, bool withdigest, bool keep_comments);
     // 0x004698F0
