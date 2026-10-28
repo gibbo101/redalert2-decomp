@@ -4,6 +4,9 @@
 // drafts of this plan are emitted by these includes.
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
+// The unit's shape helpers fall back to this rectangle (shared/shape_file.hpp):
+// the unit has no empty-rect initializer of its own.
+#define SHAPE_FILE_EMPTY_RECT unknown_static_rect
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410

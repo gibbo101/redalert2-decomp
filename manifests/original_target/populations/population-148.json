@@ -642,56 +642,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 6689712,
-      "method": "006613b0",
-      "symbol": "?FUN_006613b0@Owner_006613b0@seed_006613b0@@QAE_NHPAE@Z",
-      "symbol_prefix": "?FUN_006613b0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 41,
-      "body_sha256": "223c106cd16157bddce382b854172a65abc06aaaea76bb4d6da000ccf72a3556",
-      "padding_bytes": 7,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "68f418aba99368d40e0a1dfbe5be4f28cfa04d8b8b2e56d416093357776c7591",
-      "relocations": [],
-      "source_sha256": "6dcf8ccb0f8f31399fd572d273f220cf4af62cc6e9694c2929936e7864cf29e0",
-      "source": "src/recovered/006613b0.cpp",
-      "source_order": 11626,
-      "population": "population-148",
-      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-adjusted"
-    },
-    {
-      "entry": 6690384,
-      "method": "00661650",
-      "symbol": "?FUN_00661650@Owner_00661650@seed_00661650@@QAE_NHPAE@Z",
-      "symbol_prefix": "?FUN_00661650@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 41,
-      "body_sha256": "ad67985c7bcc15eb877a256045aaaa9cd9c0c25165b6ed8f80b34aef5617675a",
-      "padding_bytes": 7,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "a466dd93d10b5459804661c2a3f0ff337819bb80b6179a05a38c811ff02a4f53",
-      "relocations": [],
-      "source_sha256": "37512af35103bed69f91261fcf3256a478ecfb18acf456c96b052b292786530f",
-      "source": "src/recovered/00661650.cpp",
-      "source_order": 11627,
-      "population": "population-148",
-      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-adjusted"
-    },
-    {
       "entry": 6771456,
       "method": "00675300",
       "symbol": "?FUN_00675300@seed_00675300@@YI_NH@Z",

@@ -74,9 +74,6 @@ extern DynamicVectorClass<WaypointPathClass *> unknown_WaypointPathClass_list_00
 extern "C" int __cdecl isalpha(int character);
 extern "C" int __cdecl toupper(int character);
 
-// A waypoint number as letters: 0..25 "A".."Z", then "AA", "AB", ...; -1
-// the empty string (static buffer 0x00B255D0; names hypotheses).
-char const *__fastcall Waypoint_As_String(int index);  // 0x007249F0
-int __fastcall Waypoint_From_String(char const *string);   // 0x00724A70 (inverse; -1 when not a letter)
+#include "shared/waypoint_string.hpp"
 
 #endif

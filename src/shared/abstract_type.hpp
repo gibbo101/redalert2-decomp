@@ -26,34 +26,7 @@
 extern "C" int __cdecl sprintf(char *buffer, char const *format, ...);
 extern "C" int __cdecl _stricmp(char const *left, char const *right);
 
-// A fixed-capacity, always terminated string (N bytes including the
-// terminator); assignment from a C string truncates through a temporary.
-template <int N>
-class FixedString {
-public:
-    FixedString() { Buffer[0] = 0; }
-    FixedString(NoInitClass const &noinit) {}
-    FixedString(char const *string)
-    {
-        if (string == 0) {
-            Buffer[0] = 0;
-        } else {
-            strncpy(Buffer, string, N - 1);
-            Buffer[N - 1] = 0;
-        }
-    }
-    FixedString &operator=(FixedString const &other)
-    {
-        if (&other != this) {
-            memcpy(Buffer, other.Buffer, N);
-        }
-        return *this;
-    }
-    FixedString &operator=(char const *string) { return *this = FixedString(string); }
-    operator char const *() const { return Buffer; }
-
-    char Buffer[N];
-};
+#include "shared/fixed_string.hpp"
 
 // The rules INI and its list readers.
 #include "shared/ccini_class.hpp"

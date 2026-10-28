@@ -21,23 +21,7 @@
 
 #include "shared/debug_printf.hpp"
 
-// A count-up timer (hypothesis: Westwood's TTimerClass): the accumulated
-// time plus the running time since Started (-1 while stopped).
-template <class T>
-class TTimerClass {
-public:
-    long Time() const
-    {
-        long value = Accumulated;
-        if (Started != -1) {
-            value += Timer - Started;
-        }
-        return value;
-    }
-    long Started;           // +0x00
-    T Timer;                // +0x04
-    long Accumulated;       // +0x08
-};
+#include "shared/t_timer.hpp"
 
 // The network tick timer (0x00839980; hypothesis: TickCount).
 extern TTimerClass<SystemTimerClass> TickCount;
