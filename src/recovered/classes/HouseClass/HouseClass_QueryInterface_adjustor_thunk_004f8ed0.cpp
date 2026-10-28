@@ -1,0 +1,3 @@
+// HouseClass::QueryInterface adjustor thunk for IConnectionPointContainer (0x004F8ED0)
+// Compiler generated with the HouseClass vtables (this - 0x2C, then jump to the member).
+// No source of its own: emitted by this unit (population-2537).
