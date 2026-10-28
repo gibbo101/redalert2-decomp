@@ -71,6 +71,8 @@ public:
     // in the scheme's colours (DarkRed without one), outlined when
     // unknown_71 is set.
     void Draw_Bar(Point2D xy, double fraction, Surface *surface, ColorScheme *scheme);     // 0x0061F8F0
+    // Copies a flag image to xy, magenta transparent.
+    void Draw_Flag(Point2D xy, Surface *flag);                  // 0x0061FAB0
     void Draw_Name(Point2D xy, wchar_t const *name, ColorScheme *scheme, int width);       // 0x0061FB70
     // Draws one player's row: bar, name and (with flags) the country flag.
     void Draw_Player(ColorScheme *scheme, wchar_t const *name, Point2D &xy, int player, bool flag);   // 0x0061FC20

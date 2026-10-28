@@ -1,7 +1,7 @@
 #include "shared/text_print.hpp"
 #include "shared/string_table.hpp"
 #include "shared/techno_type.hpp"
-extern Surface *unknown_surface_839954;
+#include "shared/dsurface.hpp"
 extern wchar_t const type_name_format_007d627c[];
 extern wchar_t const type_cost_format_007d6268[];
 extern wchar_t const type_cost_unavailable_007d6254[];

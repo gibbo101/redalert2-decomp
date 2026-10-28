@@ -5,6 +5,7 @@
 #include "shared/progress_screen.hpp"
 #include "shared/unknown_globals.hpp"
 #include "shared/surface.hpp"
+#include "shared/dsurface.hpp"
 
 void ProgressScreenClass::Init(double total, char count, HWND window)
 {

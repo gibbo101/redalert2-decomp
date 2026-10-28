@@ -10,6 +10,7 @@
 #include "shared/abstract_type.hpp"
 #include "shared/win32_window.hpp"
 #include "shared/gscreen.hpp"
+#include "shared/dsurface.hpp"
 // @ref ?Draw_Player@ProgressScreenClass@@QAEXPAVColorScheme@@PBGAAUPoint2D@@H_N@Z=0061fc20
 
 void ProgressScreenClass::Draw_It(Point2D xy)

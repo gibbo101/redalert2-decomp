@@ -45,6 +45,7 @@
 #include "shared/debug_printf.hpp"
 #include "shared/gscreen.hpp"
 #include "shared/surface.hpp"
+#include "shared/dsurface.hpp"
 
 bool __fastcall Start_Scenario_0065bc70(char const *name, bool briefing, int campaign)
 {

@@ -2,6 +2,7 @@
 // empty Rect from shared/shape_file.hpp (0x0084E9B0 in this unit).
 #include "shared/movie.hpp"
 #include "shared/shape_file.hpp"
+#include "shared/dsurface.hpp"
 // @ref _unknown_empty_rect=0084e9b0
 // @ref ?unknown_check_406f30@@YAHXZ=00406f30
 // @ref ?unknown_directsound_40a6c0@@YAPAXXZ=0040a6c0
@@ -9,7 +10,7 @@
 // @ref ?unknown_volume_84e9a8@@3MA=0084e9a8
 // @ref ?unknown_create_companion_69b190@@YIPAVVQAMovieCompanion@@PBD@Z=0069b190
 // @ref ?unknown_surface_839950@@3PAVSurface@@A=00839950
-// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
 // @ref ?MainWindow@@3PAUHWND__@@A=00b263d8
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
 // @ref __real@4@400e8000000000000000=0079c780

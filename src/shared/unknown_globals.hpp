@@ -21,7 +21,8 @@ extern int unknown_int_839648;  // 0x00839648 screen width
 extern int unknown_int_83964c;  // 0x0083964C screen height
 extern Surface *unknown_surface_839948;  // 0x00839948 (sidebar surface)
 extern Surface *unknown_surface_839950;  // 0x00839950 screen
-extern Surface *unknown_surface_839954;  // 0x00839954 (Get_Input draws the buttons on it)
+class DSurface;
+extern DSurface *unknown_surface_839954; // 0x00839954 (Get_Input draws the buttons on it; shared/dsurface.hpp)
 extern Surface *unknown_surface_839958;  // 0x00839958 background
 extern Surface *unknown_surface_83995c;  // 0x0083995C current drawing surface
 extern Surface *unknown_surface_839964;  // 0x00839964 the surface Render composes

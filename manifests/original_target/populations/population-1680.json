@@ -4,8 +4,8 @@
     "id": "population-1680",
     "inventory_sha256": "39f5541001ad99dd255a2b2201c04f5cb6c809b2ae82297ac78579294c87d7c0",
     "gaps_sha256": "19951375e9b8b931b8779385df55e9e61a543e735dcd961e3e11a16ebd5c093f",
-    "historical_population_sha256": "0e898b5a5b1dafe2c411dc9e498818683c12ea3b56b95435a3afc2c9eab05172",
-    "historical_acceptance_sha256": "d54c9f8de428f2cb3224b4bea36e07b3c9f8a6bce5464939c93fb1b9368e9539"
+    "historical_population_sha256": "d49e54de2826e14b82da59345d0f029784adab0cbfd48fde7c314fcdd2f228ca",
+    "historical_acceptance_sha256": "3edaa4e5c4792844f326b94c9900c483b5c8bcf39ba2e99b07ea8e590d5ac5b9"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2443,7 +2443,7 @@
     "?unknown_check_406f30@@YAHXZ": 4222768,
     "_wcslen": 7878149,
     "?unknown_load_shape_495310@@YIPAUShapeFileStruct@@ABVWstring@@PA_N@Z": 4805392,
-    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
     "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHH@Z": 5950896,
     "??_7MSFadeAnim@@6B@": 8023436,
     "??_7MSOverlayAnim@@6B@": 8023476,

@@ -1,6 +1,7 @@
 #include "shared/surface.hpp"
 #include "shared/win32_api.hpp"
 #include "shared/debug_printf.hpp"
+#include "shared/dsurface.hpp"
 WIN32_IMPORT int WINAPI lstrlenA(LPCSTR string);
 WIN32_IMPORT DWORD WINAPI GetCurrentThreadId();
 void __cdecl Unknown_00522e10();
@@ -16,7 +17,6 @@ extern HWND exception_window_00b25dd4;
 extern bool unknown_flag_839c4c;
 extern Surface *unknown_surface_839950;
 // @ref ?unknown_surface_839950@@=00839950
-extern Surface *unknown_surface_839954;
 // @ref ?unknown_surface_839954@@=00839954
 extern Surface *unknown_surface_839964;
 // @ref ?unknown_surface_839964@@=00839964

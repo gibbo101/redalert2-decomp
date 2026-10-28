@@ -4,8 +4,8 @@
     "id": "population-2487",
     "inventory_sha256": "d31e6b64b716661b4c6ee14c3855bc38af51cff2b72accd0022dfc3521015924",
     "gaps_sha256": "e7425a9018fa62710b9255014a572d8840515fca2c3799fb1c74ab8c1b5c6553",
-    "historical_population_sha256": "ed862ebd21ce7ed5a40e50338de818cee861b474e14fba472672b1971e66e9e9",
-    "historical_acceptance_sha256": "5ebc4f50b41aedb8f29b7d2c12a07a580800c35ae6b0e9463390196267c37b89"
+    "historical_population_sha256": "c1c0a95affd9130b60a75ec6738cded31ff42e7d234f07f0aa602a67cfb83dd7",
+    "historical_acceptance_sha256": "2936a3625c35454d0dcfe2f630cee9e06d4fe46e6ff6cbad1661890986d05832"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2924,7 +2924,7 @@
     "?GetClassID@WeaponTypeClass@@UAGJPAUGUID@@@Z": 7552080,
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
     "?Text_Rect@MSFont@@QAEXPBGAAVRect@@@Z": 5980656,
-    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
     "?TacButton@DisplayClass@@2VTacticalClass@1@A": 8726800,
     "??_7TacticalClass@DisplayClass@@6B@": 7989396,
     "?RadarButton@RadarClass@@2VRTacticalClass@@A": 11232376,

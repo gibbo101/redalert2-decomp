@@ -4,8 +4,8 @@
     "id": "population-2483",
     "inventory_sha256": "6582fba4252d8234c18be0811686f9777af8cfb98542db22664afeba77d40d03",
     "gaps_sha256": "3fe96907a8a1f9ece1fcb5f8f0620c8047f04bb9ac934c51d545b3ed6faea28d",
-    "historical_population_sha256": "021eb614819c81dd8a8da11fef14e5c53161183a5c339481e310118c41d31c53",
-    "historical_acceptance_sha256": "36c10b93de8d4bfff2accadbdc86bc4fbac35516a9953a4e78498c531aa4e8c6"
+    "historical_population_sha256": "f6d5b29e15bcbdb7f071e11b728544d37bac216f54d6ba9a49f17a9598a90982",
+    "historical_acceptance_sha256": "50b84d7930b9fa660f6126d0bd4ff06854d24b1e0ed854ccf71ab40b5f94b9bb"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3939,7 +3939,7 @@
     "??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z": 4732496,
     "?Text_Rect@MSFont@@QAEXPBGAAVRect@@@Z": 5980656,
     "_wcslen": 7878149,
-    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
     "?TacButton@DisplayClass@@2VTacticalClass@1@A": 8726800,
     "??_7TacticalClass@DisplayClass@@6B@": 7989396,
     "?RadarButton@RadarClass@@2VRTacticalClass@@A": 11232376,

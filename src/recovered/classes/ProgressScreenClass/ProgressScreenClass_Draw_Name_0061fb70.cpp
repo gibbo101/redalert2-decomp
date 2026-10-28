@@ -4,6 +4,7 @@
 #include "shared/progress_screen.hpp"
 #include "shared/text_print.hpp"
 #include "shared/unknown_globals.hpp"
+#include "shared/dsurface.hpp"
 // @ref ??_C@_01FJFF@W?$AA@=007db208
 // @ref ?Font_For_Style@@YIPAVBitFontClass@@H@Z=00497a50
 // @ref ?Unknown_006FA180@@YIPAGPBD@Z=006fa180

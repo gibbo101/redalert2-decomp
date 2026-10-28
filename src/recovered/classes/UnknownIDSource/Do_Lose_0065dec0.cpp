@@ -41,6 +41,7 @@
 #include "shared/string_table.hpp"
 #include "shared/ipx_manager.hpp"
 #include "shared/crt_memory.hpp"
+#include "shared/dsurface.hpp"
 
 #define Max(a, b) ((a) < (b) ? (b) : (a))
 

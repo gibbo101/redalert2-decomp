@@ -72,7 +72,7 @@ public:
     HDC Get_DC();                                                   // 0x004AABF0
     int Release_DC(HDC dc);                                         // 0x004AAC30
     // The DirectDraw surface has been lost (DDERR_SURFACELOST).
-    int Is_Surface_Lost();                                          // 0x004AAEE0
+    bool Is_Surface_Lost();                                         // 0x004AAEE0
     // Restores a lost DirectDraw surface and re-establishes an outstanding
     // lock; false when restoration is disabled or fails.
     bool Restore_Check();                                           // 0x004AAF00

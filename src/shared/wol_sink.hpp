@@ -25,6 +25,7 @@
 #include "shared/wide_string.hpp"
 
 #include "shared/debug_printf.hpp"
+#include "shared/pcx_cache.hpp"
 WIN32_IMPORT HWND WINAPI SetFocus(HWND window);
 
 namespace WOL {
@@ -629,11 +630,7 @@ bool Unknown_0075a920();
 extern "C" wchar_t *__cdecl wcscpy(wchar_t *destination, wchar_t const *source);
 extern "C" unsigned long __stdcall ntohl(unsigned long value);
 
-class UnknownBitmapWriter {
-public:
-    void Write_0068c040(char const *file, void *bitmap, void *palette, int format);
-};
-extern UnknownBitmapWriter unknown_bitmap_writer_a76378;
+// The PCX image cache (UnknownBitmapWriter, 0x00A76378): shared/pcx_cache.hpp.
 extern WOL::Channel unknown_pending_channel_b26a60;
 extern int unknown_connection_result_b2ac10;
 extern bool unknown_b2abd8;

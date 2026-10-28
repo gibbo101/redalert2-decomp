@@ -20,6 +20,7 @@
 #include "shared/keyboard.hpp"
 #include "shared/mouse.hpp"
 #include "shared/map_view.hpp"
+#include "shared/dsurface.hpp"
 
 void __fastcall Unknown_0065e590()
 {
