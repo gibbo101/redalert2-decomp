@@ -5,7 +5,7 @@
 #include "shared/techno.hpp"
 #include "shared/techno_type.hpp"
 #include "shared/rules.hpp"
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 
 void TechnoClass::unknown_slot253(bool quiet)
 {
@@ -16,7 +16,7 @@ void TechnoClass::unknown_slot253(bool quiet)
         unknown_1bc.Set_Rate(unknown_slot32()->CloakingSpeed);
         unknown_1bc.unknown_14 = 1;
         if (!quiet) {
-            Unknown_00713E60(Rules->unknown_5c0, CoordStruct(Coord), 0);
+            Voc_Play_At(Rules->unknown_5c0, CoordStruct(Coord), 0);
         }
     }
 }

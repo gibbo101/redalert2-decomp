@@ -9,7 +9,7 @@
 #include "shared/rules.hpp"
 extern double const unknown_falling_decrement_007a7668;
 // @ref ?unknown_falling_decrement_007a7668@@3NB=007a7668
-// @ref ?Unknown_00713E60@@=00713e60
+// @ref ?Voc_Play_At@@=00713e60
 // @ref ?Unknown_00420D30@@=00420d30
 // @ref ??0AnimClass@@=00420110
 
@@ -30,12 +30,12 @@ void ObjectClass::AI()
     if (!unknown_76) {
         if (Class_Of() && Class_Of()->unknown_1c4 != -1) {
             CoordStruct current = Coord;
-            Unknown_00713E60(Class_Of()->unknown_1c4, current, &unknown_3c);
+            Voc_Play_At(Class_Of()->unknown_1c4, current, &unknown_3c);
         }
         int sound = unknown_64;
         if (sound != -1) {
             CoordStruct current = Coord;
-            Unknown_00713E60(sound, current, &unknown_50);
+            Voc_Play_At(sound, current, &unknown_50);
         }
     }
     if (!unknown_7a) return;

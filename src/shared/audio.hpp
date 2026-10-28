@@ -17,6 +17,7 @@
 #include "shared/dsound_api.hpp"
 #include "shared/debug_printf.hpp"
 #include "shared/random.hpp"
+#include "shared/sound_play.hpp"
 
 struct AudioChannel;
 struct AudioDevice;
@@ -867,16 +868,7 @@ struct AudioEvent : AudioListNode {
     int unknown_27c;
 };
 
-// What the game holds for an event it started: the event, the serial
-// (AudioEvent::unknown_138) and type it had then, and the address of the
-// event bag variable as proof it came from this system. A handle only works
-// while all of that still matches.
-struct AudioEventHandle {
-    AudioEvent *Event;              // +0x00
-    int Serial;                     // +0x04
-    AudioEventType *Type;           // +0x08
-    AudioBag **Token;               // +0x0C &Audio_Event_Bag
-};
+// AudioEventHandle, what the game holds for an event: shared/sound_play.hpp.
 
 // A keyword of the event settings (0x007CCB18, ends with a null name): the
 // flags it turns on.

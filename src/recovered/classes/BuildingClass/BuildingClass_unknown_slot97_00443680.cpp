@@ -8,7 +8,7 @@
 #include "shared/house.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 // @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
 // @ref ??_C@_0O@MHGH@EVA_Repairing?$AA@=007cf894
 
@@ -50,6 +50,6 @@ void BuildingClass::unknown_slot97(int mode)
         sound = Rules->unknown_62c;
     }
     if (House->Unknown_004F52B0()) {
-        Unknown_00713E60(sound, CoordStruct(Coord), 0);
+        Voc_Play_At(sound, CoordStruct(Coord), 0);
     }
 }

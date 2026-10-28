@@ -43,7 +43,7 @@ int AircraftClass::unknown_415510()
                 if (passenger->unknown_slot56(landing)) {
                     {
                     CoordStruct sound_position = Coord;
-                    Unknown_00713E60(Rules->ChuteSound, sound_position, 0);
+                    Voc_Play_At(Rules->ChuteSound, sound_position, 0);
                     }
                     passenger->unknown_454 = Coord_Cell(Map[landing].Center_Coord());
                     if (Team) Team->Unknown_006B8FB0(passenger, -1, 0);

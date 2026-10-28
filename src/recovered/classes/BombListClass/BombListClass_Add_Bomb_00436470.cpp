@@ -24,7 +24,7 @@ void BombListClass::Add_Bomb(TechnoClass *owner, ObjectClass *target)
         unknown_30 = 1;
         if (Rules->BombAttachSound != -1 && owner->House->Unknown_004F52B0()) {
             CoordStruct coord = target->Coord;
-            Unknown_00713E60(Rules->BombAttachSound, coord, 0);
+            Voc_Play_At(Rules->BombAttachSound, coord, 0);
         }
     }
 }

@@ -1,14 +1,9 @@
 // Private Building mission139, full349+3; Rules+5E8 draft/compiler scope approved.
 #include "shared/building.hpp"
 #include "shared/rules.hpp"
-// Existing pointer-controller sound interface from canonical shared/anim.hpp.
-void __fastcall Unknown_00713E60(int sound,CoordStruct const &coord,UnknownAudioController *controller);
-// Real external function: ECX coordinate reference, EDX existing audio controller;
-// ignored EAX result; full215-byte original body independently qualified.
-int __fastcall Unknown_007141B0(CoordStruct const &coord,UnknownAudioController *controller);
 // @ref ?unknown_443d60@BuildingClass@@QAEXH@Z=00443d60
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@PAVUnknownAudioController@@@Z=00713e60
-// @ref ?Unknown_007141B0@@YIHABUCoordStruct@@PAVUnknownAudioController@@@Z=007141b0
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
+// @ref ?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z=007141b0
 // @ref ?Set_Current@FacingClass@@QAE_NABUUnknownFacingDir@@@Z=004b8b10
 // @ref ?Free_Buildup@BuildingTypeClass@@QAEXXZ=0045e920
 // @ref ?Unknown_00406070@UnknownAudioController@@QAEXXZ=00406070
@@ -21,14 +16,14 @@ int BuildingClass::unknown_slot139()
         {
             int sound=Type->BuildupSound;
             if(sound==-1)sound=Rules->Construction;
-            if(sound!=-1)Unknown_00713E60(sound,CoordStruct(Coord),&unknown_570);
+            if(sound!=-1)Voc_Play_At(sound,CoordStruct(Coord),&unknown_570);
         }
         unknown_75=true;
         unknown_a8=1;
         break;
     case 1:
         unknown_75=true;
-        Unknown_007141B0(CoordStruct(Coord),&unknown_570);
+        Voc_Update_At(CoordStruct(Coord),&unknown_570);
         if(unknown_5ad) {
             unknown_slot149(12);
             unknown_slot149(3);

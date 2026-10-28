@@ -17,7 +17,7 @@ extern "C" char const unknown_eva_structure_garrisoned_007cfbfc[];
 // @ref ?Voc_Play@@YIPAUAudioEvent@@HMHPAUAudioEventHandle@@@Z=00713db0
 // @ref ?Unknown_0063B5B0@@YI_NHVCell@@@Z=0063b5b0
 // @ref ?Unknown_00715B40@@YIHPBDHH@Z=00715b40
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 // @ref ?Houses@@3V?$DynamicVectorClass@PAVHouseClass@@@@A=00a32298
 void BuildingClass::unknown_453300()
 {
@@ -49,7 +49,7 @@ void BuildingClass::unknown_453300()
         unknown_slot222(unknown_554[0]->House,0);
         if(unknown_554[0]->House->Unknown_004F52B0()) {
             Unknown_00715B40(unknown_eva_structure_garrisoned_007cfbfc,-1,-1);
-            Unknown_00713E60(Rules->BuildingGarrisonedSound,Center_Coord(),0);
+            Voc_Play_At(Rules->BuildingGarrisonedSound,Center_Coord(),0);
         }
     }
 }

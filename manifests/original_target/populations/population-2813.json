@@ -4,8 +4,8 @@
     "id": "population-2813",
     "inventory_sha256": "91168b29a70ea729e2464d754f1f0f7cd68aaade68f2d8a55c78afdfb986f5c6",
     "gaps_sha256": "f2d02e1473b86c975fdb005a947983c47d8382fa5129db6c30de192a7f32b772",
-    "historical_population_sha256": "950ba930479c62083bff639dac428dc537085c1fe9baa7b6a9d63142ad875945",
-    "historical_acceptance_sha256": "e7884aa1395c52b38eaab9518ff533d4b77497b5e89730a8aadba7c96c4ccbe3"
+    "historical_population_sha256": "42d966611e84bfbc23fbdab00a32773ae683842daa183e667c61000f9c4ef300",
+    "historical_acceptance_sha256": "0b1074deba2fc759907711b356dcce8e1a72da24a45527544cd189dd958c8812"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4663,7 +4663,7 @@
     "?unknown_6c8300@TechnoClass@@QAEXXZ": 7111424,
     "?unknown_slot233@TechnoClass@@UAEXXZ": 7133360,
     "?unknown_44d070@BuildingClass@@QAEXH@Z": 4509808,
-    "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z": 7421536,
+    "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z": 7421536,
     "?unknown_6cdc00@TechnoClass@@QAEXPAVHouseClass@@@Z": 7134208,
     "?unknown_6d1440@TechnoClass@@QAE_NXZ": 7148608,
     "?unknown_613b60@UnknownTechno408@@QAEHXZ": 6372192,
@@ -7345,7 +7345,7 @@
     "?Get_Waypoint@WaypointPathClass@@QAEPAUWaypointClass@@H@Z": 7490912,
     "?Unknown_0054F7C0@MapClass@@QAE_NABVCell@@0H_NE1@Z": 5568448,
     "?Unknown_00568140@MapClass@@QAE_NABUCoordStruct@@@Z": 5669184,
-    "?Unknown_00714290@@YIXHABUCoordStruct@@H@Z": 7422608,
+    "?Voc_Static_Add@@YIPAUAudioEvent@@HABUCoordStruct@@I@Z": 7422608,
     "_$E2": 4990656,
     "_$E5": 4990704,
     "_$E8": 4990736,
@@ -8158,7 +8158,7 @@
     "?unknown_func_45eaa0@BuildingTypeClass@@QAEXXZ": 4582048,
     "?Draw_Line_Depth_Masked@DSurface@@UAE_NABUPoint2D@@0H_N@Z": 4918576,
     "?Draw_Me@ShapeButtonClass@@UAEHH@Z": 6771168,
-    "?Unknown_007141B0@@YIHABUCoordStruct@@PAVUnknownAudioController@@@Z": 7422384,
+    "?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z": 7422384,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABU2@_N@Z": 6495136,
     "?Unknown_0056A8A0@MapClass@@QAEHXZ": 5679264,
     "?Set_Color@RadBeam@@QAEXABVRGBClass@@@Z": 6510352,
@@ -8384,7 +8384,39 @@
     "?unknown_slot42@MultiplayerGameMode@@UAE?AVCell@@HAAV?$DynamicVectorClass@VCell@@@@PA_N@Z": 5994784,
     "??_7FoggedObjectClass@@6B@": 7999816,
     "??_EMPCooperative@@": 5923504,
-    "??_GMPCooperative@@": 5923504
+    "??_GMPCooperative@@": 5923504,
+    "?Audio_Event_Handle_Event@@YIPAUAudioEvent@@PAUAudioEventHandle@@@Z": 4219200,
+    "?Find@UnknownChunkList_602cd0@@QAEPAUUnknownChunk_602cd0@@PBD@Z": 6302928,
+    "?Audio_Event_Stop@@YIXPAUAudioEvent@@@Z": 4215552,
+    "?Audio_Event_Bag@@3PAUAudioBag@@A": 8589228,
+    "?Audio_Event_Set_Volume@@YIXPAUAudioEvent@@H@Z": 4219360,
+    "?Audio_Event_Set_Pan@@YIXPAUAudioEvent@@H@Z": 4219520,
+    "?Audio_Event_Create@@YIPAUAudioEvent@@PAUAudioEventType@@@Z": 4215152,
+    "?Audio_Event_Handle_Stop@@YIXPAUAudioEventHandle@@@Z": 4218192,
+    "?Find@Unknown42C350Table@@QBEPAUUnknown42C350Record@@ABVCell@@@Z": 4375376,
+    "?unknown_voc_volume_7f9a70@@3MA": 8362608,
+    "?unknown_voc_min_volume_7f9a74@@3MA": 8362612,
+    "?unknown_voc_priority_7f9a6c@@3HA": 8362604,
+    "?unknown_voc_control_ad0850@@3IA": 11339856,
+    "?unknown_voc_type_7f9a78@@3IA": 8362616,
+    "?unknown_voc_limit_7f9a80@@3HA": 8362624,
+    "?unknown_voc_range_7f9a7c@@3HA": 8362620,
+    "?Audio_Event_Type_Of@@YIPAUAudioEventType@@PAUAudioEvent@@@Z": 4219680,
+    "?Audio_Event_Handle_Set@@YIXPAUAudioEventHandle@@PAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
+    "?Voc_Volume_At@@YIMABUCoordStruct@@PAHPAUAudioEventType@@@Z": 7421744,
+    "?Audio_Event_Type_Range@@YIHPAUAudioEventType@@@Z": 4215056,
+    "?Audio_Event_Type_Flags@@YIIPAUAudioEventType@@@Z": 4215104,
+    "?Audio_Event_Type_Min_Volume@@YIMPAUAudioEventType@@@Z": 4215072,
+    "__real@8@3ffaccccccccccccd000": 7999736,
+    "__real@4@400c8000000000000000": 8055240,
+    "?Audio_Event_Handle_Type@@YIPAUAudioEventType@@PAUAudioEventHandle@@@Z": 4219264,
+    "?Audio_Event_Type_Loops_Forever@@YIHPAUAudioEventType@@@Z": 4220512,
+    "?Audio_Event_Set_Flag_8@@YIXPAUAudioEvent@@@Z": 4215536,
+    "?Voc_Static_Finish_At@@YIXABUCoordStruct@@I@Z": 7422896,
+    "?Audio_Event_Handle_Finish@@YIXPAUAudioEventHandle@@@Z": 4218848,
+    "?Process@VocClass@@SIXAAVCCINIClass@@@Z": 7423296,
+    "?Find@VocClass@@SIPAV1@PBD@Z": 7424400,
+    "?unknown_slot43@MultiplayerGameMode@@UAE_NPAVHouseClass@@PAH@Z": 5996432
   },
   "regions": [
     {
@@ -15459,7 +15491,7 @@
         {
           "offset": 1160,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2402788
@@ -15475,7 +15507,7 @@
         {
           "offset": 1350,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2402598
@@ -15483,7 +15515,7 @@
         {
           "offset": 1457,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2402491
@@ -15491,7 +15523,7 @@
         {
           "offset": 1535,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2402413
@@ -15507,7 +15539,7 @@
         {
           "offset": 1602,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2402346
@@ -15539,7 +15571,7 @@
         {
           "offset": 1766,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2402182
@@ -15547,7 +15579,7 @@
         {
           "offset": 1841,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2402107
@@ -15563,7 +15595,7 @@
         {
           "offset": 1921,
           "kind": 20,
-          "symbol": "?Unknown_007141B0@@YIXABUCoordStruct@@PAVUnknownAudioController@@@Z",
+          "symbol": "?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7422384,
           "addend": 0,
           "resolved": 2402875
@@ -15601,7 +15633,7 @@
           "resolved": 2156319
         }
       ],
-      "source_sha256": "a1ebde8a5d3c97752997ac207d73acaa69975c61c51ebbbc66d4e73f531301b3",
+      "source_sha256": "60f46e28f6e6ad054d49ac2ba3f85d1c8dee20172ee3edec45c21e5681de95df",
       "source": "src/recovered/classes/FootClass/FootClass_AI_004c8ff0.cpp",
       "population": "population-2813",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
@@ -16096,13 +16128,13 @@
         {
           "offset": 101,
           "kind": 20,
-          "symbol": "?Unknown_00714290@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Static_Add@@YIPAUAudioEvent@@HABUCoordStruct@@I@Z",
           "target": 7422608,
           "addend": 0,
           "resolved": 2388903
         }
       ],
-      "source_sha256": "ed4a03883768f3ef7ea2961e15b2339a1238c881213ff10bd364e58ae85464f5",
+      "source_sha256": "63fdb9b384d3d9227f81b9ba86b09a515a81e8263bf0de121f401fd3feffb828",
       "source": "src/recovered/classes/FootClass/FootClass_Unknown_004CCE80_004cce80.cpp",
       "population": "population-2813",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
@@ -16139,13 +16171,13 @@
         {
           "offset": 101,
           "kind": 20,
-          "symbol": "?Unknown_00714290@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Static_Add@@YIPAUAudioEvent@@HABUCoordStruct@@I@Z",
           "target": 7422608,
           "addend": 0,
           "resolved": 2388743
         }
       ],
-      "source_sha256": "5be1a9c849cf565c2c0691d6f497a24d61f14a8d4312404f99a1d0c76ea00966",
+      "source_sha256": "76eb73d4ba8d13c4f71b2601df99bf07a641d2c244947e3dcf321df45aa7e237",
       "source": "src/recovered/classes/FootClass/FootClass_unknown_4ccf20_004ccf20.cpp",
       "population": "population-2813",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
@@ -16182,13 +16214,13 @@
         {
           "offset": 133,
           "kind": 20,
-          "symbol": "?Unknown_00714290@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Static_Add@@YIPAUAudioEvent@@HABUCoordStruct@@I@Z",
           "target": 7422608,
           "addend": 0,
           "resolved": 2388551
         }
       ],
-      "source_sha256": "f3f2d0efdefcbf1c099fe0b90aa02c026d6349c5b5e399c7e807fde8183a10da",
+      "source_sha256": "707f55e05398f5d5d988f423fb1ae8f181f48eda0e95867072cc19e4066a5bbd",
       "source": "src/recovered/classes/FootClass/FootClass_unknown_4ccfc0_004ccfc0.cpp",
       "population": "population-2813",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",

@@ -2,7 +2,7 @@
 #include "shared/infantry.hpp"
 #include "shared/techno_map.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 // @ref ?unknown_do_controls_7a3474@@3PAUDoStruct@@A=007a3474
 // @ref ?Options@@3VOptionsClass@@A=00a40b18
 // @ref ?Normalize_Delay@OptionsClass@@QBEHH@Z=005d9760
@@ -32,10 +32,10 @@ bool InfantryClass::unknown_slot311(int sequence, bool force, bool random_start)
         }
         if (unknown_5d0 == 0 && on_land == 1) {
             CoordStruct coord = Coord;
-            Unknown_00713E60(Type->LeaveWaterSound, coord, 0);
+            Voc_Play_At(Type->LeaveWaterSound, coord, 0);
         } else if (unknown_5d0 == 1 && on_land == 0) {
             CoordStruct coord = Coord;
-            Unknown_00713E60(Type->EnterWaterSound, coord, 0);
+            Voc_Play_At(Type->EnterWaterSound, coord, 0);
         }
         unknown_5d0 = on_land;
     }
@@ -50,11 +50,11 @@ bool InfantryClass::unknown_slot311(int sequence, bool force, bool random_start)
     if (sequence == 27) {
         if (unknown_slot32()->DeploySound != -1) {
             CoordStruct coord = Coord;
-            Unknown_00713E60(unknown_slot32()->DeploySound, coord, 0);
+            Voc_Play_At(unknown_slot32()->DeploySound, coord, 0);
         }
     } else if (sequence == 31 && unknown_slot32()->UndeploySound != -1) {
         CoordStruct coord = Coord;
-        Unknown_00713E60(unknown_slot32()->UndeploySound, coord, 0);
+        Voc_Play_At(unknown_slot32()->UndeploySound, coord, 0);
     }
     Sequence = sequence;
     if (Is_Prone_Sequence_005096e0(sequence)) {

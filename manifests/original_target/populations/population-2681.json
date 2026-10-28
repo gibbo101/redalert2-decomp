@@ -4,8 +4,8 @@
     "id": "population-2681",
     "inventory_sha256": "88707110680051360eb08f798a22706ad5f358a7ff031a3a275a52aedcf6cbbd",
     "gaps_sha256": "bbe03305dce035c3a0d3281eed3fcea4b9d042a193b89afb63ce31ffb5d6dd30",
-    "historical_population_sha256": "99f58434494e98f8b858fb6d82a1c69bf5be437fd046f90d75bbed049d92accc",
-    "historical_acceptance_sha256": "37c6643bc18f22b23c9a4c1681302d9364539e017e9e85fa4838637e18c59499"
+    "historical_population_sha256": "a722581f257b30a6fa7d92fb8e695467727bb6ece7b1159f37188715520db629",
+    "historical_acceptance_sha256": "1b54fa8b3b8161af0e33d319e4ba3744d91da2192822183b4d989d485276f40c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1460,7 +1460,7 @@
     "?unknown_func_733a60@WeaponTypeClass@@QBEHXZ": 7551584,
     "?unknown_slot219@TechnoClass@@UAEPAVAbstractClass@@HPBUCoordStruct@@_N@Z": 7103792,
     "?Unknown_004F52B0@HouseClass@@QAE_NXZ": 5198512,
-    "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z": 7421536,
+    "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z": 7421536,
     "?Unknown_00715B40@@YIHPBDHH@Z": 7428928,
     "??_C@_0O@MHGH@EVA_Repairing?$AA@": 8190100,
     "?Voc_Play@@YIPAUAudioEvent@@HMHPAUAudioEventHandle@@@Z": 7421360,
@@ -1491,7 +1491,7 @@
     "?In_Radio_Contact@RadioClass@@QBE_NXZ": 6516496,
     "?unknown_443d60@BuildingClass@@QAEXH@Z": 4472160,
     "?Unknown_00713E60@@YIXHABUCoordStruct@@PAVUnknownAudioController@@@Z": 7421536,
-    "?Unknown_007141B0@@YIHABUCoordStruct@@PAVUnknownAudioController@@@Z": 7422384,
+    "?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z": 7422384,
     "?Set_Current@FacingClass@@QAE_NABUUnknownFacingDir@@@Z": 4950800,
     "?unknown_game_mode_a3d298@@3HA": 10736280,
     "?unknown_flag_a3d340@@3_NA": 10736448,
@@ -10912,7 +10912,38 @@
     "??_7?$DynamicVectorClass@PAVMPlayerScoreType@@@@6B@": 8022244,
     "??0?$DynamicVectorClass@PAVMPlayerScoreType@@@@QAE@ABV0@@Z": 5923536,
     "??_7?$DynamicVectorClass@PAUNodeNameType@@@@6B@": 8022116,
-    "??_7?$DynamicVectorClass@PAVCoopCampaignClass@@@@6B@": 8022084
+    "??_7?$DynamicVectorClass@PAVCoopCampaignClass@@@@6B@": 8022084,
+    "?Audio_Event_Handle_Event@@YIPAUAudioEvent@@PAUAudioEventHandle@@@Z": 4219200,
+    "?Voc_Static_Add@@YIPAUAudioEvent@@HABUCoordStruct@@I@Z": 7422608,
+    "?Audio_Event_Stop@@YIXPAUAudioEvent@@@Z": 4215552,
+    "?Audio_Event_Bag@@3PAUAudioBag@@A": 8589228,
+    "?Audio_Event_Set_Volume@@YIXPAUAudioEvent@@H@Z": 4219360,
+    "?Audio_Event_Set_Pan@@YIXPAUAudioEvent@@H@Z": 4219520,
+    "?Audio_Event_Create@@YIPAUAudioEvent@@PAUAudioEventType@@@Z": 4215152,
+    "?Audio_Event_Handle_Stop@@YIXPAUAudioEventHandle@@@Z": 4218192,
+    "?unknown_voc_volume_7f9a70@@3MA": 8362608,
+    "?unknown_voc_min_volume_7f9a74@@3MA": 8362612,
+    "?unknown_voc_priority_7f9a6c@@3HA": 8362604,
+    "?unknown_voc_control_ad0850@@3IA": 11339856,
+    "?unknown_voc_type_7f9a78@@3IA": 8362616,
+    "?unknown_voc_limit_7f9a80@@3HA": 8362624,
+    "?unknown_voc_range_7f9a7c@@3HA": 8362620,
+    "?Audio_Event_Type_Of@@YIPAUAudioEventType@@PAUAudioEvent@@@Z": 4219680,
+    "?Audio_Event_Handle_Set@@YIXPAUAudioEventHandle@@PAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
+    "?Voc_Volume_At@@YIMABUCoordStruct@@PAHPAUAudioEventType@@@Z": 7421744,
+    "?Audio_Event_Type_Range@@YIHPAUAudioEventType@@@Z": 4215056,
+    "?Audio_Event_Type_Flags@@YIIPAUAudioEventType@@@Z": 4215104,
+    "?Audio_Event_Type_Min_Volume@@YIMPAUAudioEventType@@@Z": 4215072,
+    "__real@8@3ffaccccccccccccd000": 7999736,
+    "__real@4@400c8000000000000000": 8055240,
+    "?Audio_Event_Handle_Type@@YIPAUAudioEventType@@PAUAudioEventHandle@@@Z": 4219264,
+    "?Audio_Event_Type_Loops_Forever@@YIHPAUAudioEventType@@@Z": 4220512,
+    "?Audio_Event_Set_Flag_8@@YIXPAUAudioEvent@@@Z": 4215536,
+    "?Voc_Static_Finish_At@@YIXABUCoordStruct@@I@Z": 7422896,
+    "?Audio_Event_Handle_Finish@@YIXPAUAudioEventHandle@@@Z": 4218848,
+    "?Process@VocClass@@SIXAAVCCINIClass@@@Z": 7423296,
+    "?Find@VocClass@@SIPAV1@PBD@Z": 7424400,
+    "?unknown_slot43@MultiplayerGameMode@@UAE_NPAVHouseClass@@PAH@Z": 5996432
   },
   "regions": [
     {
@@ -16084,13 +16115,13 @@
         {
           "offset": 267,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2950865
         }
       ],
-      "source_sha256": "c4cddd8b71875d378f163cb0bfd914a8ff178d8827d694a0d8b2ff25569cadf2",
+      "source_sha256": "21f7a5840c5588fe4b60c8aeebc128bc93bccab0d574ccda7f64b73fcda4b67b",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_unknown_slot97_00443680.cpp",
       "population": "population-2681",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
@@ -22366,7 +22397,7 @@
         {
           "offset": 72,
           "kind": 20,
-          "symbol": "?Unknown_007141B0@@YIHABUCoordStruct@@PAVUnknownAudioController@@@Z",
+          "symbol": "?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7422384,
           "addend": 0,
           "resolved": 2942996
@@ -22422,13 +22453,13 @@
         {
           "offset": 320,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@PAVUnknownAudioController@@@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2941900
         }
       ],
-      "source_sha256": "53aa26f4b42ad314e57954153e7e223b8122e109261fa0f97edb84fe69c51138",
+      "source_sha256": "dd8b3a01c75e85eded55a564d6aae7b3a9770d6999f995a871ec261f2401d912",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_unknown_slot139_00445950.cpp",
       "population": "population-2681",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
@@ -23745,13 +23776,13 @@
         {
           "offset": 320,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2886172
         }
       ],
-      "source_sha256": "d528aefadf5c5c8197788e6cfc132450b891717255e109d1b56bb07be54aa1d9",
+      "source_sha256": "a752738619d7d5605ac558c4abc45b6473cbd1ba4dfbfc4453b1ef277fc9398f",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_unknown_453300_00453300.cpp",
       "population": "population-2681",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",

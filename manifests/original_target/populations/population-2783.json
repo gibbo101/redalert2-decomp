@@ -4,8 +4,8 @@
     "id": "population-2783",
     "inventory_sha256": "42ab2848437d0ffe7223a4ee3282df23de05f146f09bbf42f11056913f302d80",
     "gaps_sha256": "d1aec5bd9b2c08436b8b87d8a3047a44adc0a1f69036e3572ef05a7425841e93",
-    "historical_population_sha256": "631ede10d66f507e7f5968b5fa63edfc5a20c159e458f15bfe0a8c381d91a9d0",
-    "historical_acceptance_sha256": "c327391238da18049744275f5a330c12d6ae1e57e4fc085d62d4441e0e989d53"
+    "historical_population_sha256": "4182151341b585960d1d8772332982578f68045fc28cb103442af5422933c040",
+    "historical_acceptance_sha256": "45a2e9c225ebcba4f22e3e9ebf0756290aeeeda8293016c888171a6bab364cf9"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -5600,7 +5600,7 @@
     "??_C@_0L@JHHB@TXT_AT_WAR?$AA@": 8233804,
     "??_C@_0BD@IDCM@EVA_AllianceBroken?$AA@": 8233784,
     "?unknown_func_69d090@UnknownSuperView@@QAEX_NPBVCell@@@Z": 6934672,
-    "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z": 7421536,
+    "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z": 7421536,
     "??_C@_00A@?$AA@": 8635740,
     "??_C@_06DAOK@Houses?$AA@": 8235068,
     "??_C@_07FNCB@Country?$AA@": 8235060,
@@ -10252,7 +10252,41 @@
     "?unknown_slot42@MultiplayerGameMode@@UAE?AVCell@@HAAV?$DynamicVectorClass@VCell@@@@PA_N@Z": 5994784,
     "__imp__SetActiveWindow": 7971872,
     "??_EMPCooperative@@": 5923504,
-    "??_GMPCooperative@@": 5923504
+    "??_GMPCooperative@@": 5923504,
+    "?Audio_Event_Handle_Event@@YIPAUAudioEvent@@PAUAudioEventHandle@@@Z": 4219200,
+    "?Find@UnknownChunkList_602cd0@@QAEPAUUnknownChunk_602cd0@@PBD@Z": 6302928,
+    "?Voc_Static_Add@@YIPAUAudioEvent@@HABUCoordStruct@@I@Z": 7422608,
+    "?Audio_Event_Stop@@YIXPAUAudioEvent@@@Z": 4215552,
+    "?Audio_Event_Bag@@3PAUAudioBag@@A": 8589228,
+    "?Audio_Event_Set_Volume@@YIXPAUAudioEvent@@H@Z": 4219360,
+    "?Audio_Event_Set_Pan@@YIXPAUAudioEvent@@H@Z": 4219520,
+    "?Audio_Event_Create@@YIPAUAudioEvent@@PAUAudioEventType@@@Z": 4215152,
+    "?Audio_Event_Handle_Stop@@YIXPAUAudioEventHandle@@@Z": 4218192,
+    "?Find@Unknown42C350Table@@QBEPAUUnknown42C350Record@@ABVCell@@@Z": 4375376,
+    "?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z": 7422384,
+    "?unknown_voc_volume_7f9a70@@3MA": 8362608,
+    "?unknown_voc_min_volume_7f9a74@@3MA": 8362612,
+    "?unknown_voc_priority_7f9a6c@@3HA": 8362604,
+    "?unknown_voc_control_ad0850@@3IA": 11339856,
+    "?unknown_voc_type_7f9a78@@3IA": 8362616,
+    "?unknown_voc_limit_7f9a80@@3HA": 8362624,
+    "?unknown_voc_range_7f9a7c@@3HA": 8362620,
+    "?Audio_Event_Type_Of@@YIPAUAudioEventType@@PAUAudioEvent@@@Z": 4219680,
+    "?Audio_Event_Handle_Set@@YIXPAUAudioEventHandle@@PAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
+    "?Voc_Volume_At@@YIMABUCoordStruct@@PAHPAUAudioEventType@@@Z": 7421744,
+    "?Audio_Event_Type_Range@@YIHPAUAudioEventType@@@Z": 4215056,
+    "?Audio_Event_Type_Flags@@YIIPAUAudioEventType@@@Z": 4215104,
+    "?Audio_Event_Type_Min_Volume@@YIMPAUAudioEventType@@@Z": 4215072,
+    "__real@8@3ffaccccccccccccd000": 7999736,
+    "__real@4@400c8000000000000000": 8055240,
+    "?Audio_Event_Handle_Type@@YIPAUAudioEventType@@PAUAudioEventHandle@@@Z": 4219264,
+    "?Audio_Event_Type_Loops_Forever@@YIHPAUAudioEventType@@@Z": 4220512,
+    "?Audio_Event_Set_Flag_8@@YIXPAUAudioEvent@@@Z": 4215536,
+    "?Voc_Static_Finish_At@@YIXABUCoordStruct@@I@Z": 7422896,
+    "?Audio_Event_Handle_Finish@@YIXPAUAudioEventHandle@@@Z": 4218848,
+    "?Process@VocClass@@SIXAAVCCINIClass@@@Z": 7423296,
+    "?Find@VocClass@@SIPAV1@PBD@Z": 7424400,
+    "?unknown_slot43@MultiplayerGameMode@@UAE_NPAVHouseClass@@PAH@Z": 5996432
   },
   "regions": [
     {
@@ -21883,7 +21917,7 @@
         {
           "offset": 293,
           "kind": 20,
-          "symbol": "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z",
+          "symbol": "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z",
           "target": 7421536,
           "addend": 0,
           "resolved": 2280999
@@ -21929,7 +21963,7 @@
           "resolved": 5140479
         }
       ],
-      "source_sha256": "98a3ebc1a2dd04f68fb53e2c9247d8d41031733eabc6a45d129fe16cffcf0baa",
+      "source_sha256": "b12e40ded244286fc472beb0c4084c2b75c85bf29cd7859d81f531db294c0e71",
       "switch_data_bytes": 35,
       "source": "src/recovered/classes/HouseClass/HouseClass_Just_Built_004e6f10.cpp",
       "population": "population-2783",

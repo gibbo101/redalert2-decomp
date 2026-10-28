@@ -4,8 +4,8 @@
     "id": "population-2579",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "826742b79b4a58aea2683655e035673034f4e311bcc4ceadec040ebd8753ba99",
-    "historical_acceptance_sha256": "d179c383dd2e85f53a2fc6ba63ca7ff4ea3a586275cab314026f49a018f6f626"
+    "historical_population_sha256": "76bf925c5056fd356436ae86942dbdeece1cd1d6f1deec30395ec03c7bdbdc83",
+    "historical_acceptance_sha256": "618703b9e475e2b66210d7111c5c750e7dad84fd7dcad127aef2ccc62f36b107"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3996,7 +3996,7 @@
     "?Unknown_0070C490@UnknownHouseTracker@@QAEXH@Z": 7390352,
     "?Unknown_00713360@UnknownTechnoPair@@QAEXHH@Z": 7418720,
     "?Voc_Play@@YIPAUAudioEvent@@HMHPAUAudioEventHandle@@@Z": 7421360,
-    "?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z": 7421536,
+    "?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z": 7421536,
     "?Unknown_00713E60@@YIXHABUCoordStruct@@PAVUnknownAudioController@@@Z": 7421536,
     "?Unknown_00715B40@@YIHPBDHH@Z": 7428928,
     "?Unknown_00724F80@WaypointPathClass@@QAEPAUWaypointClass@@PAU2@@Z": 7491456,

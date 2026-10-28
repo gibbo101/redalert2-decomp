@@ -49,22 +49,9 @@ class ParticleSystemTypeClass;
 class CellClass;
 struct UnknownFacingDir;
 
-// A 0x14-byte member pair of ObjectClass (sound-like controller;
-// hypothesis). Methods are out of line in another unit.
-class UnknownAudioController {
-public:
-    void Init();                        // 0x00405BF0 (clears the three words, links 0x00830FAC)
-    void Unknown_00405C10();            // 0x00405C10
-    void Unknown_00405D50();            // 0x00405D50
-    void Unknown_00405FE0();            // 0x00405FE0
-    void Unknown_00406070();            // 0x00406070 (VoxelAnimClass destructor, before Unknown_00405C10)
-
-    int unknown_00;
-    int unknown_04;
-    int unknown_08;
-    void *unknown_0c;
-    int unknown_10;
-};
+// The 0x14-byte sound handle of the game objects, UnknownAudioController:
+// shared/sound_play.hpp.
+#include "shared/sound_play.hpp"
 
 // The object at +0x34: TagClass (shared/tag.hpp).
 #include "shared/tag.hpp"

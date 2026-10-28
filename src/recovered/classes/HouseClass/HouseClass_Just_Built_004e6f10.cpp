@@ -5,7 +5,7 @@
 #include "shared/techno.hpp"
 #include "shared/rules.hpp"
 // @ref ?Increment@UnknownHouseCounter@@QAEXH@Z=00491c50
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 
 void HouseClass::Just_Built(TechnoClass *techno)
 {
@@ -38,7 +38,7 @@ void HouseClass::Just_Built(TechnoClass *techno)
     }
     if (sound != -1) {
         CoordStruct coord = techno->Coord;
-        Unknown_00713E60(sound, coord, 0);
+        Voc_Play_At(sound, coord, 0);
     }
     unknown_144 = true;
 }

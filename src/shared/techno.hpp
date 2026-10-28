@@ -800,9 +800,7 @@ public:
     Cell Unknown_006A6A50(CoordStruct const &coord);      // 0x006A6A50 (the cell a coordinate shows in)
 };
 
-// A sound played at a coordinate (0x00713E60; fastcall: sound, coordinate,
-// then one stack argument).
-void __fastcall Unknown_00713E60(int sound, CoordStruct const &coord, int arg3);
+// Voc_Play_At (0x00713E60): shared/sound_play.hpp.
 // The cell 0x006CF130 returns when there is none (0x00AC0148).
 extern Cell unknown_cell_ac0148;
 // The object at 0x008322E0 whose 0x004366D0 TechnoClass slot 52 calls for a

@@ -8,6 +8,8 @@ struct AudioEventHandle;
 struct CoordStruct;
 class CCINIClass;
 
+#include "shared/sound_play.hpp"
+
 // The audio event type with this name, made with the default settings when
 // there is none (0x004063C0, the audio library).
 AudioEventType *__fastcall Audio_Event_Type_Find(char const *name);
@@ -90,10 +92,7 @@ extern unsigned int unknown_voc_control_ad0850;
 // the tactical view (0x00713F30; hypothesis).
 float __fastcall Voc_Volume_At(CoordStruct const &coord, int *pan, AudioEventType *type);
 
-// Moves a handle's playing sound to a coordinate: its volume and pan from
-// 0x00713F30; a silent sound is stopped, a forever-looping one restarted when
-// audible again (0x007141B0; hypothesis).
-AudioEvent *__fastcall Voc_Update_At(CoordStruct const &coord, AudioEventHandle *handle);
+// Voc_Play, Voc_Play_At, Voc_Update_At and Voc_Static_Add: shared/sound_play.hpp.
 
 // The name of a VocType (0x00714A00; "<none>" when out of range).
 char const *__fastcall Voc_Name(int voc);

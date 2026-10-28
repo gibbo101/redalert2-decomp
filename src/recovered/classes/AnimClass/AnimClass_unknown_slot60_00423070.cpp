@@ -13,7 +13,7 @@ void AnimClass::unknown_slot60()
     Attach_To(0);
     unknown_180.Unknown_00406070();
     if (!unknown_178 && Class->StopSound != -1) {
-        Unknown_00713E60(Class->StopSound, Center_Coord(), &unknown_194);
+        Voc_Play_At(Class->StopSound, Center_Coord(), &unknown_194);
     }
     ObjectClass::unknown_slot60();
 }

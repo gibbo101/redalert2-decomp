@@ -27,7 +27,7 @@ void AnimClass::unknown_func_4226d0()
 {
     unknown_slot71(2);
     if (!unknown_178 && Class->StartSound != -1) {
-        Unknown_00713E60(Class->StartSound, Center_Coord(), &unknown_180);
+        Voc_Play_At(Class->StartSound, Center_Coord(), &unknown_180);
     } else {
         unknown_180.Unknown_00405D50();
     }

@@ -7,7 +7,7 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Health_Ratio@ObjectClass@@QBENXZ=005d4540
 // @ref ?unknown_44d070@BuildingClass@@QAEXH@Z=0044d070
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 
 void TechnoClass::unknown_slot233()
 {
@@ -18,6 +18,6 @@ void TechnoClass::unknown_slot233()
     if (Kind_Of() == 6) {
         unknown_slot97(0);
         ((BuildingClass *)this)->unknown_44d070(Health_Ratio() <= Rules->unknown_1368);
-        Unknown_00713E60(Rules->unknown_1bc, Center_Coord(), 0);
+        Voc_Play_At(Rules->unknown_1bc, Center_Coord(), 0);
     }
 }

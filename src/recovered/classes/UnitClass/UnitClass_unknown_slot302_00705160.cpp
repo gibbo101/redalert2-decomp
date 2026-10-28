@@ -15,12 +15,10 @@
 // @ref ?unknown_ad04c0@@3HA=00ad04c0
 // @ref ?Is_Ally@HouseClass@@QBE_NPBVTechnoClass@@@Z=004e5580
 // @ref ?Distance_Squared@ObjectClass@@QBEHABUCoordStruct@@@Z=005d4e00
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 
 // A value the scatter takes (0x00AD04C0; meaning unknown).
 extern int unknown_ad04c0;
-// A sound at a coordinate (Merge4c: fastcall sound, coordinate, arg3).
-void __fastcall Unknown_00713E60(int sound, CoordStruct const &coord, int arg3);
 // An infantry's type and destination (a view until shared/infantry.hpp is
 // installed).
 struct UnknownUnitInfantryView2 : TechnoClass {
@@ -79,7 +77,7 @@ void UnitClass::unknown_slot302(Cell const *where, bool arg2)
             } else {
                 ObjectClass *next = object->unknown_30;
                 crushed = 1;
-                Unknown_00713E60(object->Class_Of()->unknown_1c0, CoordStruct(Coord), 0);
+                Voc_Play_At(object->Class_Of()->unknown_1c0, CoordStruct(Coord), 0);
                 object->unknown_slot55(this);
                 object->unknown_slot71(0);
                 object->unknown_slot52();

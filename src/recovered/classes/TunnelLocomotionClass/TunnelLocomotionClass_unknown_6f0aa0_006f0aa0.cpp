@@ -2,7 +2,7 @@
 #include "shared/anim.hpp"
 #include "shared/map_view.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
 // @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref __ftol=0077f110
 // @ref __real@8@40058000000000000000=007adca0
@@ -23,7 +23,7 @@ void TunnelLocomotionClass::unknown_6f0aa0()
         }
         LinkedTo->unknown_slot103(coord);
         if (height <= -0x32 && LinkedTo->unknown_slot108() > -0x32) {
-            Unknown_00713E60(Rules->unknown_16c, CoordStruct(LinkedTo->Coord), 0);
+            Voc_Play_At(Rules->unknown_16c, CoordStruct(LinkedTo->Coord), 0);
             new AnimClass(Rules->unknown_228, CoordStruct(LinkedTo->Coord), 0, 1, 0x600, 0);
         }
     } else {

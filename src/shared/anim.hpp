@@ -240,9 +240,7 @@ inline int Cell_Distance(int dx, int dy)
 void __fastcall Unknown_00688460(CoordStruct const &coord, int width, int height, bool force);
 void __fastcall Unknown_00688750(CoordStruct const &coord, int width, int height, bool force);
 
-// Plays a sound at a coordinate through an audio controller (0x00713E60;
-// hypothesis: the controller tracks the playing sound).
-void __fastcall Unknown_00713E60(int sound, CoordStruct const &coord, UnknownAudioController *controller);
+// Voc_Play_At (0x00713E60): shared/sound_play.hpp.
 
 extern DynamicVectorClass<AnimClass *> Anims;     // 0x00A40960
 // A second animation list (0x00A35E60): the destructor removes an

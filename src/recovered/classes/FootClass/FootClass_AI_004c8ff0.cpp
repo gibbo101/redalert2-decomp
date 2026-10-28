@@ -22,8 +22,8 @@
 // @ref ?unknown_player_a35db4@@3PAVHouseClass@@A=00a35db4
 // @ref ?Unknown_00405D50@UnknownAudioController@@QAEXXZ=00405d50
 // @ref ?Unknown_00406070@UnknownAudioController@@QAEXXZ=00406070
-// @ref ?Unknown_00713E60@@YIXHABUCoordStruct@@H@Z=00713e60
-// @ref ?Unknown_007141B0@@YIXABUCoordStruct@@PAVUnknownAudioController@@@Z=007141b0
+// @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
+// @ref ?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z=007141b0
 // @ref ?unknown_random_839218@@3VRandom2Class@@A=00839218
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 // @ref ?unknown_6d7f70@TechnoClass@@QAE_NXZ=006d7f70
@@ -31,8 +31,6 @@
 // @ref __com_issue_error@4=00795940
 // @ref ?unknown_slot164@TechnoClass@@UAEHXZ=006d6e60
 
-// The audio controller follows a coordinate (0x007141B0; fastcall).
-void __fastcall Unknown_007141B0(CoordStruct const &coord, UnknownAudioController *controller);
 // IPiggyback's interface ID (a copy at 0x007CFC30; IID_IPiggyback is 0x007A2050).
 extern "C" GUID const unknown_uuid_IPiggyback_7cfc30;
 
@@ -137,7 +135,7 @@ void FootClass::AI()
     if ((frame != unknown_430 || Locomotor.Checked()->Is_Moving_Now()) && !unknown_7a && !unknown_37d) {
         if (!unknown_434 && unknown_slot32()->MoveSound.Count() > 0) {
             unknown_43c.Unknown_00405D50();
-            Unknown_00713E60(Random_Sound(unknown_slot32()->MoveSound), CoordStruct(Coord), (int)&unknown_43c);
+            Voc_Play_At(Random_Sound(unknown_slot32()->MoveSound), CoordStruct(Coord), &unknown_43c);
             unknown_434 = true;
         }
         unknown_438 = 3;
@@ -153,19 +151,19 @@ void FootClass::AI()
 
     if (unknown_7a != unknown_7b) {
         if (unknown_7a && unknown_slot32()->VoiceFalling != -1 && unknown_7c) {
-            Unknown_00713E60(unknown_slot32()->VoiceFalling, CoordStruct(Coord), 0);
+            Voc_Play_At(unknown_slot32()->VoiceFalling, CoordStruct(Coord), 0);
         }
         unknown_7b = unknown_7a;
     }
     if (unknown_325 != unknown_326) {
         if (unknown_325) {
             if (unknown_slot32()->VoiceSinking != -1) {
-                Unknown_00713E60(unknown_slot32()->VoiceSinking, CoordStruct(Coord), 0);
+                Voc_Play_At(unknown_slot32()->VoiceSinking, CoordStruct(Coord), 0);
             }
             if (unknown_slot32()->SinkingSound != -1) {
-                Unknown_00713E60(unknown_slot32()->SinkingSound, CoordStruct(Coord), (int)&unknown_43c);
+                Voc_Play_At(unknown_slot32()->SinkingSound, CoordStruct(Coord), &unknown_43c);
             } else if (Rules->unknown_200 != -1) {
-                Unknown_00713E60(Rules->unknown_200, CoordStruct(Coord), (int)&unknown_43c);
+                Voc_Play_At(Rules->unknown_200, CoordStruct(Coord), &unknown_43c);
             }
         } else if (!unknown_434) {
             unknown_43c.Unknown_00406070();
@@ -176,17 +174,17 @@ void FootClass::AI()
         if (unknown_37d) {
             unknown_43c.Unknown_00406070();
             if (unknown_slot32()->VoiceCrashing != -1 && House->Unknown_004F52B0()) {
-                Unknown_00713E60(unknown_slot32()->VoiceCrashing, CoordStruct(Coord), 0);
+                Voc_Play_At(unknown_slot32()->VoiceCrashing, CoordStruct(Coord), 0);
             }
             if (unknown_slot32()->CrashingSound != -1) {
-                Unknown_00713E60(unknown_slot32()->CrashingSound, CoordStruct(Coord), (int)&unknown_43c);
+                Voc_Play_At(unknown_slot32()->CrashingSound, CoordStruct(Coord), &unknown_43c);
             }
         } else if (!unknown_434) {
             unknown_43c.Unknown_00406070();
         }
         unknown_37e = unknown_37d;
     }
-    Unknown_007141B0(CoordStruct(Coord), &unknown_43c);
+    Voc_Update_At(CoordStruct(Coord), &unknown_43c);
 
     if ((Frame & 0x3F) == 0x3F && unknown_494 == 0 && !unknown_79
         && !((UnknownCellClass *)unknown_slot105())->unknown_11c && (unsigned char)unknown_slot164() && unknown_slot108() == 0) {
