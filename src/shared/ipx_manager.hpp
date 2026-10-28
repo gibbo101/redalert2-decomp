@@ -28,27 +28,17 @@
 #endif
 #include "shared/vector_class.hpp"
 #include "shared/conn_man.hpp"
+#include "shared/unknown_player_entry.hpp"
 
 enum {
     CONNECT_MAX = 7
 };
 
-// A session node: a wide name and its address (hypothesis: the session's
-// player list, the DynamicVectorClass at 0x00A3FA7C).
-#pragma pack(push, 1)
-struct UnknownNodeName {
-    wchar_t Name[20];                   // +0x00
-    IPXAddressClass Address;            // +0x28
-    char unknown_34[0x5B - 0x34];
-    int unknown_5b;                     // +0x5B (-1: none)
-    int ID;                             // +0x5F (packed)
-};
-#pragma pack(pop)
+// The session players: 0x00A3FA7C is the list of UnknownPlayerEntry (shared/unknown_player_entry.hpp).
 // A per-node unsigned short, by node index (0x00A402BA).
 extern unsigned short unknown_node_ids_a402ba[];
 
 extern "C" int __cdecl _wcsicmp(wchar_t const *string1, wchar_t const *string2);   // 0x00796318
-extern DynamicVectorClass<UnknownNodeName *> unknown_nodes_a3fa7c;
 
 // The frames-ahead value the timing printout reports (0x00A3D560).
 extern int unknown_max_ahead_a3d560;

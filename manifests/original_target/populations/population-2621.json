@@ -4,8 +4,8 @@
     "id": "population-2621",
     "inventory_sha256": "280e79d14c622b4c6426514989820b78920d2f2eeae0860bb72292bdeca0b60a",
     "gaps_sha256": "5d249e4f83e6f85c19b88b6718ed7aa0695fc29ad67e649b5e4896e47240e52a",
-    "historical_population_sha256": "b7160d3606e755f5c392f69f34088807ccde2c0776425da589b270da30ed6d06",
-    "historical_acceptance_sha256": "32d5a4d5a198410aebdc0297b773a66fa531f965de32f09e459f573ff29afea1"
+    "historical_population_sha256": "dda252f0b3278c8d6dafda695a731bd18c660366cc15345fad21007868a94bea",
+    "historical_acceptance_sha256": "ec0ef0b1d6a80dc98c32a6009796cb94cefe341c49c03a590001df6b10f1edf0"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -12158,7 +12158,7 @@
     "??_C@_0BA@BBAO@MaxAhead?5is?5?$CFd?6?$AA@": 8249200,
     "?Create_Connection@IPXManagerClass@@QAEHHPBGPAVIPXAddressClass@@@Z": 5395712,
     "?unknown_5255b0@IPXManagerClass@@QAEHXZ": 5395888,
-    "?unknown_nodes_a3fa7c@@3V?$DynamicVectorClass@PAUUnknownNodeName@@@@A": 10746492,
+    "?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@A": 10746492,
     "??_C@_09LEIE@Multicast?$AA@": 8249248,
     "?Unknown_006FA180@@YIPAGPBD@Z": 7315840,
     "?Delete_Connection@IPXManagerClass@@QAEHH@Z": 5396032,
@@ -14080,7 +14080,6 @@
     "??_7MultiplayerGameMode@@6B@": 8024504,
     "??_7?$VectorClass@PAVMultiplayerTeam@@@@6B@": 8024720,
     "?unknown_slot4@MultiplayerGameMode@@UAE_NXZ": 5993296,
-    "?unknown_players_a3fa7c@@3V?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@A": 10746492,
     "?unknown_66e290@UnknownPlayerEntry@@QAEHXZ": 6742672,
     "?unknown_slot14@MultiplayerGameMode@@UAEXPAUHWND__@@PBV?$DynamicVectorClass@H@@H@Z": 5993696,
     "?unknown_reset_combo_6007f0@@YIXPAUHWND__@@@Z": 6293488,

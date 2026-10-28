@@ -4,7 +4,7 @@
 int MultiplayerGameMode::unknown_team_of_5b8430(int id)
 {
     for (int index = 0; index < unknown_players_a3fa7c.Count(); index++) {
-        if (unknown_players_a3fa7c[index]->unknown_5f == id) {
+        if (unknown_players_a3fa7c[index]->ID == id) {
             return unknown_players_a3fa7c[index]->Team;
         }
     }

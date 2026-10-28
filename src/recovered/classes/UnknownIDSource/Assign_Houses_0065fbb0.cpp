@@ -73,7 +73,7 @@ void __fastcall Assign_Houses_0065fbb0()
         }
         house->unknown_11c = unknown_house_setting_7d88d8;
         house->Assign_Handicap(1);
-        player->unknown_5f = house->ArrayIndex;
+        player->ID = house->ArrayIndex;
     }
 
     int computers = unknown_session_a3d298.AICount;
