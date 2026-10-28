@@ -82,28 +82,8 @@ public:
     char unknown_00[0x2C];
 };
 class HouseClass;
-// A base plan (RTTI BaseClass, vtable 0x0079C590; 0x78 bytes; Base.cpp).
-// Layout from its constructor 0x0042BF70; the destructor is inline.
-// BaseNodeClass: shared/house_nodes.hpp.
-class BaseClass {
-public:
-    BaseClass();                            // 0x0042BF70
-    BaseClass(NoInitClass const &noinit);   // 0x0042CA50
-    virtual HRESULT __stdcall Load(IStream *stream);  // slot 0 0x0042C6A0
-    virtual HRESULT __stdcall Save(IStream *stream);  // slot 1 0x0042C8E0
-    ~BaseClass() { Nodes.Clear(); }
-    virtual void Compute_CRC(WWCRCEngine &crc) const;   // slot 2 0x0042C9F0
-    void Read_INI(CCINIClass &ini, char const *section);    // 0x0042C460 (the house's section)
-    void Write_INI(CCINIClass &ini, char const *section);   // 0x0042C5D0
-
-    DynamicVectorClass<BaseNodeClass> Nodes;    // +0x04 (vtable 0x0079C5C0)
-    int unknown_1c;                         // +0x1C
-    DynamicVectorClass<Cell> unknown_20;  // +0x20 (vtable 0x0079C5A0)
-    DynamicVectorClass<Cell> unknown_38;  // +0x38 (vtable 0x0079C5A0)
-    Cell unknown_50;                  // +0x50
-    int unknown_54[(0x74 - 0x54) / 4];      // +0x54
-    HouseClass *House;                      // +0x74 (set by HouseClass::Read_INI)
-};
+// A base plan: shared/base.hpp.
+#include "shared/base.hpp"
 
 // Members of other classes read here, as views until their headers exist.
 class TiberiumClass;
@@ -299,6 +279,7 @@ public:
     }
     void unknown_func_4f2fc0();                            // 0x004F2FC0 (HouseClass::AI: the player's spy satellite view)
     void unknown_func_4f2e50();                            // 0x004F2E50 (HouseClass::AI: the player's radar)
+    bool unknown_func_4f64c0(BaseNodeClass const &node);   // 0x004F64C0 (the node may be built now; BaseClass::Next_Buildable_Index)
     bool unknown_func_4ed140(Cell const &cell);      // 0x004ED140 (no other path has a waypoint there)
     WaypointClass *unknown_func_4ed200(Cell const &cell);   // 0x004ED200 (a waypoint in the cell, else 0)
     void unknown_func_4eaba0(TechnoClass *techno);         // 0x004EABA0

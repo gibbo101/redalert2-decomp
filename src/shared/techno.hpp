@@ -780,7 +780,9 @@ public:
     void unknown_44d070(int damaged);   // 0x0044D070 (TechnoClass slot 233: health at or below the rules' +0x1368)
     char unknown_41c[0x434 - 0x41C];
     int unknown_434;                    // +0x434 (TechnoClass slot 55; the full class names it in shared/building.hpp)
-    char unknown_438[0x4EC - 0x438];
+    char unknown_438[0x4C0 - 0x438];
+    TechnoTypeClass *unknown_4c0[3];    // +0x4C0 the upgrades (as shared/building_class.hpp; BaseClass::Get_Building)
+    char unknown_4cc[0x4EC - 0x4CC];
     int unknown_4ec;                    // +0x4EC (a laser fence's state; FootClass slot 93: below 8 it hurts)
     char unknown_4f0[0x530 - 0x4F0];
     bool unknown_530;                   // +0x530 (HouseClass 0x004F2E50: a radar building counts only with it)
