@@ -10,8 +10,8 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
 has 16 GB): Seed70 (seed sweep 100-1500 B below 0x680000), Seed76 (the same sweep
-from 0x680000), Tiny74 (under 100 B, including inline COMDATs accepted units already emit),
-Big75 (1-4 KB functions, controlled-study method). Windows: one Codex lead
+from 0x680000), Surf77 (DSurface
+Draw_Shaded_Line and slots 13-16), Big75 (1-4 KB functions, controlled-study method). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -25,6 +25,7 @@ Each lane's resume notes are in `build/class-work/<Lane>/NOTES*` (ignored).
    rewrote those sources, `private/tools/rehead_plan.py PLAN` writes PLAN.head.json with unchanged
    context rows re-pointed at HEAD sources (drafts that rewrite a source are kept; missing population
    rows are added; Windows `C:/` prefixes are stripped). Accept the .head.json.
+   `private/tools/land_round.sh DIR "message" PLAN...` does header merge, rehead, accept and land.
 3. Merge header copies with `git merge-file src/shared/H BASE COPY` (BASE = the
    header at the worker's base commit). New headers are copied.
 4. Accept each plan: `$RA2_PYTHON -B tools/original_target/accept_sources.py
@@ -111,6 +112,9 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - techno.hpp's UnknownTechno238 stand-in still declares SpawnManagerClass members 0x689B70,
   0x68A560, 0x68A4B0, 0x68A680 under other names (fold into SpawnManagerClass with a rename);
   SpawnManagerClass::AI 0x689C90 (2008 B) not drafted.
+- Tiny74 NOTES: guarded class-static lists (88 B atexits) renumber other units' `_$E` symbols when
+  the static is declared in a shared header (convert.hpp); the Map global 0x40D060 needs MouseClass's
+  ctor out of line and dtor inline; Mark_All_Occupation_Bits (Mech/Teleport/Walk) 92.00.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

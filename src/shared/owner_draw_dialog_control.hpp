@@ -27,7 +27,9 @@ public:
 // Descriptive recovery names for the integer-keyed OwnerDraw registry.
 // Only the used prefix is declared; this is not a full global-size claim.
 struct UnknownControlRecord {
-    char unknown_00[0xd4];
+    char unknown_00[0x6c];
+    int unknown_6c;     // +0x6C the control's kind (0x005DF8E0 tests it against a list)
+    char unknown_70[0xd4 - 0x70];
     bool unknown_d4;
     char unknown_d5[0x200 - 0xd5];
 };
