@@ -13,6 +13,16 @@ typedef unsigned short wchar_t;
 #define _WCHAR_T_DEFINED
 #endif
 
+#include "shared/wide_string.hpp"
+
+// The tool tip text request a dialog procedure answers (message 0x4E9; lparam points at it;
+// layout from the skirmish dialog's handler, names hypotheses).
+struct ToolTipTextRequest {
+    HWND Window;            // +0x00 the control
+    int Item;               // +0x04 the list item under the cursor (-1: none)
+    WideString Text;        // +0x08 the answer
+};
+
 extern HWND SkirmishDialog;   // 0x00ABCDFC (while the dialog runs)
 
 // The player-type combo box id of player index + 1 (index 0-6), or -1, and the
@@ -27,6 +37,12 @@ BOOL __fastcall Skirmish_Is_Computer(HWND dialog, int id);                  // 0
 // Shows the rows of `count` players from `first` and enables their side and
 // colour boxes for computer players only (resetting them otherwise).
 void __fastcall Skirmish_Show_Players(HWND dialog, int first, int count);  // 0x006836F0
+// WM_COMMAND (0x006829F0; not recovered) and message 0x497 (0x00683FC0; not recovered).
+void __fastcall Skirmish_Command(HWND dialog, int id, HWND control, int code);
+int __fastcall Skirmish_Message_497(HWND dialog, WPARAM wparam, LPARAM lparam);
+// The dialog procedure (0x00683D10): the common handler 0x005FFB00 first, then the map preview
+// paint, commands, message 0x497 and the player row tool tips.
+int __stdcall Skirmish_Dialog_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 // Resets the rows of the players from `first` on to "none" and hides them.
 void __fastcall Skirmish_Hide_Players(HWND dialog, int first);              // 0x00683920
 

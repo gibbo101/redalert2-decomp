@@ -133,6 +133,7 @@ typedef long LRESULT;
 WIN32_IMPORT LONG WINAPI SetWindowLongA(HWND window, int index, LONG value);
 WIN32_IMPORT LONG WINAPI GetWindowLongA(HWND window, int index);
 WIN32_IMPORT HWND WINAPI GetDlgItem(HWND dialog, int id);
+WIN32_IMPORT BOOL WINAPI ValidateRect(HWND window, RECT const *rect);
 WIN32_IMPORT int WINAPI GetDlgCtrlID(HWND window);
 WIN32_IMPORT LRESULT WINAPI SendMessageA(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 typedef HANDLE HINSTANCE;

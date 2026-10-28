@@ -22,5 +22,8 @@ int __fastcall Skirmish_Player_Index(int id)
     if (id == 0x51C) {
         return 5;
     }
-    return id == 0x51D ? 6 : -1;
+    if (id == 0x51D) {
+        return 6;
+    }
+    return -1;
 }

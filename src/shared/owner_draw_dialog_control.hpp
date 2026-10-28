@@ -53,6 +53,8 @@ public:
     }
 };
 extern UnknownControlIndex unknown_registry_a73640;
+// Whether the control is in the registry (0x005E4720; the skirmish preview paint skips one that is).
+bool __fastcall unknown_5e4720(HWND control);
 
 }
 #endif

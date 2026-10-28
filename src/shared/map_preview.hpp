@@ -6,12 +6,14 @@
 #define RA2_SHARED_MAP_PREVIEW_HPP
 
 class CCINIClass;
+typedef struct HWND__ *HWND;
 class UnknownPreview_0061D430 {
 public:
     UnknownPreview_0061D430();                      // 0x0061D430 (clears the pointer)
     ~UnknownPreview_0061D430();                     // 0x0061D440 (deletes the object it holds)
     void Unknown_0061D660();                        // 0x0061D660 (renders the preview from the map)
     void Write_INI_0061DC80(CCINIClass &ini);       // 0x0061DC80
+    void Draw_0061D460(HWND window);                // 0x0061D460 (paints the preview into the dialog)
     bool Is_Present() const { return unknown_00 != 0; }   // inline (Write_Scenario_INI)
 
     void *unknown_00;                               // +0x00 the preview surface (hypothesis)
