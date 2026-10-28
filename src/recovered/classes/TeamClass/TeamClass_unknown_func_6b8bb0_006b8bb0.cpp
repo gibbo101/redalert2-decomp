@@ -9,7 +9,7 @@
 #include "shared/task_force.hpp"
 #include "shared/tag.hpp"
 // @ref ?Total_Amount@TaskForceClass@@QBEHXZ=006b6b30
-// @ref ?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z=006b3df0
+// @ref ?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z=006b3df0
 // @ref ?unknown_tags_866160@@3V?$DynamicVectorClass@PAVTagClass@@@@A=00866160
 // @ref ?unknown_cell_ac0050@@3VCell@@A=00ac0050
 
@@ -52,7 +52,7 @@ bool TeamClass::unknown_func_6b8bb0()
             if (TargetNotAssigned) {
                 for (int index = unknown_tags_866160.Count() - 1; index >= 0; index--) {
                     TagClass *tag = unknown_tags_866160[index];
-                    if (tag->Unknown_006B3DF0(0x17, 0, unknown_cell_ac0050, 0, 0) && unknown_tags_866160.Count() == 0) {
+                    if (tag->Spring(0x17, 0, unknown_cell_ac0050, 0, 0) && unknown_tags_866160.Count() == 0) {
                         break;
                     }
                 }

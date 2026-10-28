@@ -12,7 +12,7 @@
 // @ref ?Unknown_004F52F0@HouseClass@@QAE_NXZ=004f52f0
 // @ref ?unknown_a40774@@3HA=00a40774
 // @ref ?unknown_cell_ac0148@@3VCell@@A=00ac0148
-// @ref ?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z=006b3df0
+// @ref ?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z=006b3df0
 
 bool TechnoClass::unknown_slot96(HouseClass *house)
 {
@@ -36,7 +36,7 @@ bool TechnoClass::unknown_slot96(HouseClass *house)
             House->unknown_5669 = true;
             if (!unknown_372) {
                 if (unknown_a40774 == 0 && unknown_34 != 0) {
-                    unknown_34->Unknown_006B3DF0(4, this, unknown_cell_ac0148, 0, 0);
+                    unknown_34->Spring(4, this, unknown_cell_ac0148, 0, 0);
                 }
                 House->unknown_13c = true;
             }

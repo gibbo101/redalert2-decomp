@@ -15,7 +15,7 @@ void TechnoClass::unknown_slot93(int arg1)
         Cell cell = Coord_Cell(Center_Coord());
         unknown_slot238();
         if (unknown_34 != 0) {
-            unknown_34->Unknown_006B3DF0(0x22, this, unknown_cell_ac0148, 0, 0);
+            unknown_34->Spring(0x22, this, unknown_cell_ac0148, 0, 0);
         }
         if (!unknown_32d && Map.Unknown_0055A660(cell, true)) {
             unknown_32d = true;

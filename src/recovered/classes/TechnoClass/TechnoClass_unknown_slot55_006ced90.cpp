@@ -19,7 +19,7 @@
 #include "shared/gscreen.hpp"
 #include "shared/techno_map.hpp"
 // @ref ?unknown_cell_ac0148@@3VCell@@A=00ac0148
-// @ref ?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z=006b3df0
+// @ref ?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z=006b3df0
 // @ref ?Is_Ally@HouseClass@@QBE_NPBVTechnoClass@@@Z=004e5580
 // @ref ?unknown_7133a0@UnknownTechnoPair@@QBE_NXZ=007133a0
 // @ref ?unknown_713420@UnknownTechnoPair@@QBE_NXZ=00713420
@@ -31,21 +31,21 @@ void TechnoClass::unknown_slot55(TechnoClass *killer)
     int found = 0;
     int points = unknown_slot32()->unknown_slot33((int)House);
     if (unknown_7d && unknown_34 != 0 && killer != 0) {
-        unknown_34->Unknown_006B3DF0(6, this, unknown_cell_ac0148, 0, 0);
+        unknown_34->Spring(6, this, unknown_cell_ac0148, 0, 0);
     }
     if (unknown_7d) {
         if (unknown_34 != 0 && killer != 0) {
-            unknown_34->Unknown_006B3DF0(4, this, unknown_cell_ac0148, 0, 0);
+            unknown_34->Spring(4, this, unknown_cell_ac0148, 0, 0);
         }
         if (unknown_7d && Kind_Of() != 1) {
             if (unknown_7d && unknown_34 != 0 && killer != 0) {
-                unknown_34->Unknown_006B3DF0(7, this, unknown_cell_ac0148, 0, 0);
+                unknown_34->Spring(7, this, unknown_cell_ac0148, 0, 0);
             }
             if (unknown_7d && unknown_34 != 0) {
-                unknown_34->Unknown_006B3DF0(0x30, this, unknown_cell_ac0148, 0, 0);
+                unknown_34->Spring(0x30, this, unknown_cell_ac0148, 0, 0);
             }
             if (unknown_7d && unknown_34 != 0) {
-                unknown_34->Unknown_006B3DF0(0x1D, this, unknown_cell_ac0148, 0, 0);
+                unknown_34->Spring(0x1D, this, unknown_cell_ac0148, 0, 0);
             }
         }
     }

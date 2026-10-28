@@ -48,8 +48,9 @@ public:
     bool unknown_func_6b3db0() const;                                   // 0x006B3DB0 (Class->unknown_func_6b4cc0)
     bool unknown_func_6b3dc0() const;                                   // 0x006B3DC0 (Class->unknown_func_6b4c30)
     bool Is_Trigger_Attached(TriggerClass *trigger) const;              // 0x006B3DD0
-    // 0x006B3DF0 (spring an event; hypothesis). Returns a bool in al.
-    bool Unknown_006B3DF0(int event, ObjectClass *object, Cell cell, int arg4, int arg5);
+    // Offers an event to the attached triggers (0x006B3DF0; TS's TagClass::Spring). source is the
+    // event's originator (an object pointer the callers pass as an int).
+    bool Spring(int event, ObjectClass *object, Cell cell, bool forced = false, int source = 0);
     void Set_Cell(Cell cell);                                     // 0x006B3F90
     void unknown_func_6b3fd0(int value);                                // 0x006B3FD0
     bool unknown_func_6b41f0() const;                                   // 0x006B41F0

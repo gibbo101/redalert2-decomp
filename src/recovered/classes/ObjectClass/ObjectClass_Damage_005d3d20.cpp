@@ -56,23 +56,23 @@ int ObjectClass::unknown_slot86(int *damage, int distance, WarheadTypeClass *war
     }
     int strength_after_damage = Strength;
     if (state == 2) {
-        if (source && unknown_34) unknown_34->Unknown_006B3DF0(39, this, unknown_geometry_k, 0, 0);
+        if (source && unknown_34) unknown_34->Spring(39, this, unknown_geometry_k, 0, 0);
         if (!unknown_7d) goto damage_interrupted;
-        if (unknown_34) unknown_34->Unknown_006B3DF0(42, this, unknown_geometry_k, 0, 0);
+        if (unknown_34) unknown_34->Spring(42, this, unknown_geometry_k, 0, 0);
     }
     if (unknown_7d) {
         if (state == 3) {
-            if (source && unknown_34) unknown_34->Unknown_006B3DF0(40, this, unknown_geometry_k, 0, 0);
+            if (source && unknown_34) unknown_34->Spring(40, this, unknown_geometry_k, 0, 0);
             if (!unknown_7d) goto damage_interrupted;
-            if (unknown_34) unknown_34->Unknown_006B3DF0(43, this, unknown_geometry_k, 0, 0);
+            if (unknown_34) unknown_34->Spring(43, this, unknown_geometry_k, 0, 0);
         }
         if (unknown_7d) {
             if (Strength != old_strength && Class_Of() && old_strength == Class_Of()->MaxStrength) {
-                if (source && unknown_34) unknown_34->Unknown_006B3DF0(38, this, unknown_geometry_k, 0, 0);
-                if (unknown_34 && unknown_7d) unknown_34->Unknown_006B3DF0(41, this, unknown_geometry_k, 0, 0);
+                if (source && unknown_34) unknown_34->Spring(38, this, unknown_geometry_k, 0, 0);
+                if (unknown_34 && unknown_7d) unknown_34->Spring(41, this, unknown_geometry_k, 0, 0);
                 if (unknown_34) {
                     if (!unknown_7d) goto damage_interrupted;
-                    if (source) unknown_34->Unknown_006B3DF0(41, this, unknown_geometry_k, 0, reinterpret_cast<int>(source));
+                    if (source) unknown_34->Spring(41, this, unknown_geometry_k, 0, reinterpret_cast<int>(source));
                 }
             }
             if (unknown_7d && (strength_after_damage <= 0 || Strength > 0)) {
@@ -83,10 +83,10 @@ int ObjectClass::unknown_slot86(int *damage, int distance, WarheadTypeClass *war
                 }
                 if (!unknown_7d) goto damage_done;
                 if (source && unknown_34 && state != 4)
-                    unknown_34->Unknown_006B3DF0(6, this, unknown_geometry_k, 0, reinterpret_cast<int>(source));
+                    unknown_34->Spring(6, this, unknown_geometry_k, 0, reinterpret_cast<int>(source));
                 if (!unknown_7d) goto damage_done;
                 if (source && unknown_34 && state != 4)
-                    unknown_34->Unknown_006B3DF0(44, this, unknown_geometry_k, 0, reinterpret_cast<int>(source));
+                    unknown_34->Spring(44, this, unknown_geometry_k, 0, reinterpret_cast<int>(source));
                 if (!unknown_7d) goto damage_done;
                 if (state == 0) goto damage_done;
                 if (!unknown_77) goto damage_done;

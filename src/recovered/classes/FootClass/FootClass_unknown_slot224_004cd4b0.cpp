@@ -5,7 +5,7 @@
 // object leaves the scenario lists (0x006ECB90). False when slot 108 is 0.
 #include "shared/foot.hpp"
 #include "shared/tag.hpp"
-// @ref ?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z=006b3df0
+// @ref ?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z=006b3df0
 // @ref ?unknown_6d3040@TechnoClass@@QAEXPAV1@@Z=006d3040
 // @ref ?unknown_a40774@@3HA=00a40774
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
@@ -18,13 +18,13 @@ bool FootClass::unknown_slot224(int source)
     if (unknown_slot108() > 0) {
         if (Strength > 0) {
             if (source != 0 && unknown_34 != 0) {
-                unknown_34->Unknown_006B3DF0(0x26, this, unknown_geometry_k, 0, 0);
+                unknown_34->Spring(0x26, this, unknown_geometry_k, 0, 0);
             }
             if (unknown_34 != 0 && unknown_7d) {
-                unknown_34->Unknown_006B3DF0(0x29, this, unknown_geometry_k, 0, 0);
+                unknown_34->Spring(0x29, this, unknown_geometry_k, 0, 0);
             }
             if (unknown_34 != 0 && unknown_7d && source != 0) {
-                unknown_34->Unknown_006B3DF0(0x29, this, unknown_geometry_k, 0, source);
+                unknown_34->Spring(0x29, this, unknown_geometry_k, 0, source);
             }
             if (!unknown_7d) {
                 return true;

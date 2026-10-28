@@ -4,8 +4,8 @@
     "id": "population-2659",
     "inventory_sha256": "ecc8ebe8c9438a0cff288bedb552f384eb125b531ea3322d9ddc0278d0909a95",
     "gaps_sha256": "503df24f509afd51f898ab68a05fdfe40b9168035d0453342c94c2e2759e7a38",
-    "historical_population_sha256": "5b542010ab7d125af0e8c118e02009aa62ebf1033aad005cda400c2f47c64ed0",
-    "historical_acceptance_sha256": "5c8eb1af80aea22fcde1730dc16296388e61db4f9d6e90440fdb6c2dc7037bd7"
+    "historical_population_sha256": "e600845bed0ccb55271f30c7958fba47c64508ea69bc05744ed34d23e50bf0a6",
+    "historical_acceptance_sha256": "5a62f21e875c72d63ed20a7d08cf15b02d2e2e5ed5a701bb2f02e19383cd5679"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4150,7 +4150,7 @@
     "?Unknown_0067C2D0@SidebarClass@@QAEXH@Z": 6800080,
     "?Unknown_0068A560@UnknownTechno238@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Unknown_006A6A50@UnknownTacticalView@@QAE?AVCell@@ABUCoordStruct@@@Z": 6974032,
-    "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z": 7028208,
+    "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z": 7028208,
     "?Unknown_006B5810@UnknownTarget@@QBEPAVAbstractClass@@XZ": 7034896,
     "?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z": 7049136,
     "?Unknown_006B9AA0@TeamClass@@QAEXPAVFootClass@@HPAVTechnoClass@@@Z": 7051936,
@@ -8475,7 +8475,71 @@
     "?Unknown_00660b60@@YIHPAVObjectClass@@AAVCell@@H@Z": 6687584,
     "__imp__SendDlgItemMessageA": 7971972,
     "__imp__EnableWindow": 7971984,
-    "__imp__ShowWindow": 7971992
+    "__imp__ShowWindow": 7971992,
+    "?AddRef@SwizzleManagerClass@@UAGKXZ": 6946192,
+    "?Release@SwizzleManagerClass@@UAGKXZ": 6946208,
+    "?Save_Interface@SwizzleManagerClass@@UAGJPAUIStream@@PAUIUnknown@@@Z": 6946224,
+    "?Get_Save_Size@SwizzleManagerClass@@UAGJPAH@Z": 6946032,
+    "?Fetch_Swizzle_ID@SwizzleManagerClass@@UAGJPAXPAJ@Z": 6946160,
+    "__imp__DefWindowProcA@16": 7971720,
+    "__imp__MoveWindow@24": 7971808,
+    "__imp__UpdateWindow@4": 7971948,
+    "?Load_Interface@SwizzleManagerClass@@UAGJPAUIStream@@PAUGUID@@PAPAX@Z": 6946240,
+    "__imp__SetFocus@4": 7971724,
+    "__imp__GetSystemMetrics@4": 7971804,
+    "?Input@GadgetClass@@UAEHXZ": 5042992,
+    "?ID_Number@HouseClass@@W3AGJXZ": 5213872,
+    "??0UnknownPathEstimator@@QAE@XZ": 4358064,
+    "??1UnknownPathEstimator@@QAE@XZ": 4358624,
+    "?Unknown_004EF6F0@HouseClass@@QAEPAVUnitTypeClass@@ABV?$TypeList@PAVUnitTypeClass@@@@@Z": 5175024,
+    "?Unknown_00713550@UnknownTechnoPair@@QAEX_N@Z": 7419216,
+    "?Process_Tables@SwizzleManagerClass@@AAEXXZ": 6945840,
+    "??0SwizzleManagerClass@@QAE@XZ": 6945376,
+    "??1SwizzleManagerClass@@QAE@XZ": 6945456,
+    "?QueryInterface@SwizzleManagerClass@@UAGJABUGUID@@PAPAX@Z": 6946064,
+    "_IID_ISwizzle": 8003680,
+    "?unknown_slot67@ParticleSystemClass@@UAEXHH@Z": 6336656,
+    "?AI@SpawnManagerClass@@UAEXXZ": 6855824,
+    "?Focus_Loss@@YAXXZ": 7566240,
+    "?Unknown_00406F50@@YAXXZ": 4222800,
+    "__imp__FileTimeToSystemTime@8": 7971044,
+    "__imp__InitCommonControls@0": 7970860,
+    "__imp__LoadIconA@8": 7971868,
+    "__imp__LoadCursorA@8": 7971892,
+    "__imp__RegisterClassA@4": 7972044,
+    "__imp__CreateWindowExA@48": 7972040,
+    "__imp__GetMenu@4": 7971728,
+    "__imp__AdjustWindowRectEx@16": 7971812,
+    "_ImmGetContext@4": 7871520,
+    "__imp__RegisterHotKey@16": 7972100,
+    "__imp__SetCursor@4": 7971896,
+    "_ImmNotifyIME@16": 7871526,
+    "_ImmGetCompositionStringA@16": 7871538,
+    "__mbsnbcnt": 7884173,
+    "__imp__GetDlgCtrlID@4": 7971828,
+    "?One_Time@UnitTypeClass@@SAXXZ": 7383296,
+    "?Insert@WideString@@QAE_NGI@Z": 7800288,
+    "__imp__FileTimeToSystemTime": 7971044,
+    "__imp__DefWindowProcA": 7971720,
+    "__imp__SetFocus": 7971724,
+    "__imp__GetMenu": 7971728,
+    "__imp__GetSystemMetrics": 7971804,
+    "__imp__MoveWindow": 7971808,
+    "__imp__AdjustWindowRectEx": 7971812,
+    "__imp__GetDlgCtrlID": 7971828,
+    "__imp__LoadIconA": 7971868,
+    "__imp__LoadCursorA": 7971892,
+    "__imp__SetCursor": 7971896,
+    "__imp__UpdateWindow": 7971948,
+    "__imp__CreateWindowExA": 7972040,
+    "__imp__RegisterClassA": 7972044,
+    "__imp__RegisterHotKey": 7972100,
+    "__imp__ImmNotifyIME@16": 7970996,
+    "__imp__ImmNotifyIME": 7970996,
+    "__imp__ImmGetContext@4": 7971000,
+    "__imp__ImmGetContext": 7971000,
+    "__imp__ImmGetCompositionStringA@16": 7971004,
+    "__imp__ImmGetCompositionStringA": 7971004
   },
   "regions": [
     {
@@ -13988,7 +14052,7 @@
         {
           "offset": 578,
           "kind": 20,
-          "symbol": "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z",
+          "symbol": "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z",
           "target": 7028208,
           "addend": 0,
           "resolved": 917130
@@ -14004,7 +14068,7 @@
         {
           "offset": 615,
           "kind": 20,
-          "symbol": "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z",
+          "symbol": "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z",
           "target": 7028208,
           "addend": 0,
           "resolved": 917093
@@ -14020,7 +14084,7 @@
         {
           "offset": 661,
           "kind": 20,
-          "symbol": "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z",
+          "symbol": "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z",
           "target": 7028208,
           "addend": 0,
           "resolved": 917047
@@ -14036,7 +14100,7 @@
         {
           "offset": 698,
           "kind": 20,
-          "symbol": "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z",
+          "symbol": "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z",
           "target": 7028208,
           "addend": 0,
           "resolved": 917010
@@ -14052,7 +14116,7 @@
         {
           "offset": 792,
           "kind": 20,
-          "symbol": "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z",
+          "symbol": "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z",
           "target": 7028208,
           "addend": 0,
           "resolved": 916916
@@ -14068,7 +14132,7 @@
         {
           "offset": 824,
           "kind": 20,
-          "symbol": "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z",
+          "symbol": "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z",
           "target": 7028208,
           "addend": 0,
           "resolved": 916884
@@ -14084,7 +14148,7 @@
         {
           "offset": 864,
           "kind": 20,
-          "symbol": "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z",
+          "symbol": "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z",
           "target": 7028208,
           "addend": 0,
           "resolved": 916844
@@ -14100,7 +14164,7 @@
         {
           "offset": 970,
           "kind": 20,
-          "symbol": "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z",
+          "symbol": "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z",
           "target": 7028208,
           "addend": 0,
           "resolved": 916738
@@ -14116,13 +14180,13 @@
         {
           "offset": 1012,
           "kind": 20,
-          "symbol": "?Unknown_006B3DF0@TagClass@@QAE_NHPAVObjectClass@@VCell@@HH@Z",
+          "symbol": "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z",
           "target": 7028208,
           "addend": 0,
           "resolved": 916696
         }
       ],
-      "source_sha256": "0cfda6c7f9400ac1696a792b8faf2b1c87fb8f6200c109b6c17153b591ef5dde",
+      "source_sha256": "2c2c854e0fcc3fb1d93957cc47bbdab0580d96074757c9531177d8db09766b3e",
       "source": "src/recovered/classes/ObjectClass/ObjectClass_Damage_005d3d20.cpp",
       "population": "population-2659",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",

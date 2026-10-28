@@ -9,7 +9,7 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Seed70 (seed sweep 100-1500 B below 0x680000), Seed76 (the same sweep
+has 16 GB): Seed78 (seed sweep 100-1500 B below 0x680000, continuing Seed70), Seed76 (the same sweep
 from 0x680000), Surf77 (DSurface
 Draw_Shaded_Line and slots 13-16), Big75 (1-4 KB functions, controlled-study method). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
@@ -115,6 +115,10 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - Tiny74 NOTES: guarded class-static lists (88 B atexits) renumber other units' `_$E` symbols when
   the static is declared in a shared header (convert.hpp); the Map global 0x40D060 needs MouseClass's
   ctor out of line and dtor inline; Mark_All_Occupation_Bits (Mech/Teleport/Walk) 92.00.
+- Seed70 debt: 0x668350 accepted as UnknownTimed_00668350::unknown_start_timer is
+  ScoreAnimClass::Resume; 0xA3FA7C declared twice (UnknownPlayerEntry, UnknownNodeName);
+  Unknown_00713DB0 declared in radar.hpp and techno.hpp; MultiplayerGameMode ctor 0x5B6CD0 needs a
+  signature rename across the mode classes. Misses in Seed70 NOTES (Get_Input 82.8, Planning 30-95).
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).
