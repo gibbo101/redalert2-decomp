@@ -63,7 +63,6 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
   building.hpp but IndexClass elsewhere.
 - RulesClass Sides 0x64BC10 needs DynamicVectorClass::ID with `Count()`, which makes
   142 explicit-instantiation units emit an unaccounted Count COMDAT.
-- HouseClass::Write_INI 0x4EC230 returns void (rename pending).
 - Display chain parked on register tie-breaks (Disp52 NOTES): RTacticalClass::Action 0x62FE30
   97.18, DisplayClass slot 48 0x49BB20 78.29 (needs a slot 46/48 + 0x6D8F60 rename and header
   moves listed there), 0x4991D0 49.4.
