@@ -900,6 +900,10 @@ extern AudioListNode Audio_Event_Type_List;             // 0x00830F70
 extern AudioLevelSet Audio_Event_Levels;                // 0x00830ED8
 extern AudioBag *Audio_Event_Bag;                       // 0x00830FAC
 extern AudioBank *Audio_Event_Bank;                     // 0x00830FB0
+extern int Audio_Static_Sound_Count;                    // 0x00AD0848 (static sounds in use; reported with the maximum)
+extern int Audio_Static_Sound_Maximum;                  // 0x00AD084C
+// Reports the audio event and static sound usage through a callback taking each text line (0x00406770).
+void __fastcall Audio_Report_Usage(void (__fastcall *report)(char *text));
 
 // The event a handle stands for, or 0 when the handle no longer matches (a
 // stale handle forgets its event).
