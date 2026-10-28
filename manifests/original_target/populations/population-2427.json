@@ -4,8 +4,8 @@
     "id": "population-2427",
     "inventory_sha256": "88127c31946cddec419023f056e2640062304ce34afa123b3aedbb54ac26211f",
     "gaps_sha256": "95ba998a63428c12a8821d5960dec54d41caa78da777bc7e0f16e2856c739749",
-    "historical_population_sha256": "c7cb1df6f73755d9320837e563988f17bc0df2abbdb7ddd1dd898bc01c07e175",
-    "historical_acceptance_sha256": "76ffd072c164bd4ab727d3f95cab127d46329e772c838f9a355ba1f63c2534f3"
+    "historical_population_sha256": "4815debbd6661e3f6d013da380709ab762e3bdd4da8e5326c4f006ce436cea74",
+    "historical_acceptance_sha256": "a3d8fc26a407cb16bb33e5f3934520da64c25b459e365fddf4dae3bb790d481b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4824,7 +4824,7 @@
     "?Simple_Text_Print@@YI?AUPoint2D@@PBGPAVSurface@@PBVRect@@PAU1@IIIH@Z": 4814896,
     "?Set_Clip_Box@BitFontClass@@QAEXPBUtagRECT@@@Z": 4396128,
     "?BitText@@3PAVBitTextClass@@A": 8710608,
-    "?Print@BitTextClass@@QAEXPAVBitFontClass@@PAVSurface@@PBGHHHH@Z": 4399952,
+    "?Print@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHH@Z": 4399952,
     "?To_RGB@HSVClass@@QBE?AVRGBClass@@XZ": 5238864,
     "?Plain_Text_Print@@YA?AUPoint2D@@PBGPAVSurface@@PBVRect@@PAU1@IIIZZ": 4815456,
     "_vswprintf": 7879256,

@@ -7,15 +7,8 @@
 // @ref ?Set_Clipping@BitFontClass@@QAEEE@Z=00431450
 // @ref ?Set_Clip_Box@BitFontClass@@QAEXPBUtagRECT@@@Z=00431460
 // @ref ?Set_Color@BitFontClass@@QAEGG@Z=00431430
-// @ref ?Print@BitTextClass@@QAEXPAVBitFontClass@@PAVSurface@@PBGHHHH@Z=00432350
+// @ref ?Print@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHH@Z=00432350
 // @ref ?BitText@@3PAVBitTextClass@@A=0084e9d0
-
-struct tagRECT {
-    long left;
-    long top;
-    long right;
-    long bottom;
-};
 
 Point2D __fastcall Simple_Text_Print(wchar_t const *text, Surface *surface, Rect const *clip, Point2D *xy,
                                      unsigned fore, unsigned back, unsigned flags, int unknown8)

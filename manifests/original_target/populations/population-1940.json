@@ -4,8 +4,8 @@
     "id": "population-1940",
     "inventory_sha256": "4d1a8cfd815c77764d988d43f29957cb0dac342a9e310e68e1665d8e41ab7f05",
     "gaps_sha256": "b27e317e88d6222aaecf5716bab4e8f8853b6002d25550ceea4206ce425ef266",
-    "historical_population_sha256": "72adcb4015366206d639c3eabdbc5423a298ecd561a886e63ef570f5a2855fbb",
-    "historical_acceptance_sha256": "ce9baf2ce7b23690b1de6ec1f9ed35a9ece699a1fe7ec3d9b28b571507514b4f"
+    "historical_population_sha256": "4e19b9c644aad8ceed73a598c0fc3f41ade4e3214bd8cf7743f7a0f41338b882",
+    "historical_acceptance_sha256": "e047b24ebb33561b33105c77a837c315f6ba1d2bf1fc952384e2508f9661aaa3"
   },
   "references": {
     "?target@Call_402190_0@@QAEIXZ": 4198400,
@@ -1600,7 +1600,7 @@
     "?Plain_Text_Print@@YA?AUPoint2D@@PBGPAVSurface@@PBVRect@@PAU1@IIIZZ": 4815456,
     "?Prep_For_Blit@@YI_NAAVSurface@@AAVRect@@01AA_NAAPAX3@Z": 7820128,
     "?Prep_For_Blit@@YI_NAAVSurface@@ABVRect@@AAV2@012AA_NAAPAX4@Z": 7820208,
-    "?Print@BitTextClass@@QAEXPAVBitFontClass@@PAVSurface@@PBGHHHH@Z": 4399952,
+    "?Print@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHH@Z": 4399952,
     "?Put_Pixel@XSurface@@UAE_NABUPoint2D@@H@Z": 7815712,
     "?Put_Pixel@XSurface@@UAE_NABUPoint2D@@HABVRect@@@Z": 7815936,
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,

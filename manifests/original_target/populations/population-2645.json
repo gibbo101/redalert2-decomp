@@ -4,8 +4,8 @@
     "id": "population-2645",
     "inventory_sha256": "e7c005defd52b3b2f0dd0a81faf95a3bec565dad0fe48ec41ad43443ac017f4a",
     "gaps_sha256": "857756dd960332ae2be6e324d93d97d31262ee2a49c9df3b18f0dfc28b93a75e",
-    "historical_population_sha256": "ffa6b638d12062490066a2805c671ae6652e713c7be650ca718ef5b07e6d76d6",
-    "historical_acceptance_sha256": "ceb466f36c6a4c839a9d9688c48e0b11efe8610af883c5c0a1e44213a63061a0"
+    "historical_population_sha256": "bf353f5308e115d87ccbb6ac7b969e1edc47cbcfc4fd7924e53d81b828c34d4a",
+    "historical_acceptance_sha256": "48d47e4b0f2bac71761c2425bfb17bd99d96d67f4a22774f74a69b396903082a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4135,7 +4135,7 @@
     "?Power_Off@LocomotionClass@@UAG_NXZ": 5493264,
     "?Power_On@LocomotionClass@@UAG_NXZ": 5493232,
     "?Power_Output@HouseClass@@UAGJXZ": 5122976,
-    "?Print@BitTextClass@@QAEXPAVBitFontClass@@PAVSurface@@PBGHHHH@Z": 4399952,
+    "?Print@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHH@Z": 4399952,
     "?Process@LocomotionClass@@UAG_NXZ": 5494112,
     "?Process@MechLocomotionClass@@UAG_NXZ": 5838912,
     "?Process@WalkLocomotionClass@@UAG_NXZ": 7462896,

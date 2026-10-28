@@ -24,16 +24,10 @@
 #include "shared/vector_class.hpp"
 #include "shared/ini_class.hpp"
 #include "shared/string_table.hpp"
+#include "shared/tag_rect.hpp"
 
 
 
-// The Win32 rectangle record under its tag name (shared/text_print.hpp only declares it).
-struct tagRECT {
-    long left;
-    long top;
-    long right;
-    long bottom;
-};
 
 class ToolTip;
 

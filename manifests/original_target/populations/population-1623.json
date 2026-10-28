@@ -4,8 +4,8 @@
     "id": "population-1623",
     "inventory_sha256": "c64f4607a587156d31a252fe56ce9b6a37b362b7ae58b29bf2cc761aa62b2fc7",
     "gaps_sha256": "64bed4af9dbb66019f28c2795c2fc8c87026bd4758faeb7503cf4fce83a7b60f",
-    "historical_population_sha256": "f3e4fffca374531a2c33ab8a898b2a10b150a7c17a63f457c1df452ca06bbd71",
-    "historical_acceptance_sha256": "4e13168b81f12e3537be15e345f1c4b4890a792b354f4a379b88e65d7bdc28c2"
+    "historical_population_sha256": "ce1cfe569ab584905c7222daf705a104e58dbf02ad9f67a17c1508a4d76b63b2",
+    "historical_acceptance_sha256": "600ebe1f4d0c276889bbd117f522ba91c59286132f82b1266d32d595b0497db3"
   },
   "references": {
     "_unknown_empty_rect": 8725648,
@@ -161,7 +161,7 @@
     "?Set_Clipping@BitFontClass@@QAEEE@Z": 4396112,
     "?Set_Clip_Box@BitFontClass@@QAEXPBUtagRECT@@@Z": 4396128,
     "?Set_Color@BitFontClass@@QAEGG@Z": 4396080,
-    "?Print@BitTextClass@@QAEXPAVBitFontClass@@PAVSurface@@PBGHHHH@Z": 4399952,
+    "?Print@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHH@Z": 4399952,
     "?BitText@@3PAVBitTextClass@@A": 8710608,
     "?To_RGB@HSVClass@@QBE?AVRGBClass@@XZ": 5238864,
     "?unknown_shift_852fb8@@3HA": 8728504,
@@ -3046,7 +3046,30 @@
     "??_ERadarClass@@UAEPAXI@Z": 6507216,
     "??_EFactoryClass@@UAEPAXI@Z": 4955968,
     "??_ETActionClass@@UAEPAXI@Z": 7024848,
-    "??_EOverlayTypeClass@@UAEPAXI@Z": 6148752
+    "??_EOverlayTypeClass@@UAEPAXI@Z": 6148752,
+    "??0TechnoClass@@QAE@ABVNoInitClass@@@Z": 7085840,
+    "?Clear@?$DynamicVectorClass@PBD@@UAEXXZ": 5906368,
+    "?ID@?$DynamicVectorClass@PBD@@UAEHPBQBD@Z": 5906416,
+    "?Fetch@?$VectorClass@PBD@@UBEPBDH@Z": 5906448,
+    "?Clear@?$VectorClass@PBD@@UAEXXZ": 5906704,
+    "?ID@?$VectorClass@PBD@@UAEHABQBD@Z": 5906752,
+    "?ID@?$VectorClass@PBD@@UAEHPBQBD@Z": 5906816,
+    "?ID@?$DynamicVectorClass@PBD@@UAEHABQBD@Z": 5907024,
+    "?Resize@?$VectorClass@PBD@@UAE_NHPBQBD@Z": 5906528,
+    "?Resize@?$DynamicVectorClass@PBD@@UAE_NHPBQBD@Z": 5906848,
+    "??1TechnoClass@@UAE@XZ": 7086256,
+    "??0TechnoClass@@QAE@PAVHouseClass@@@Z": 7081168,
+    "??_7TechnoClass@@6BIPersistStream@@@": 8047488,
+    "??_7TechnoClass@@6BIRTTITypeInfo@@@": 8047460,
+    "??_7TechnoClass@@6BINoticeSink@@@": 8047452,
+    "??_7TechnoClass@@6BINoticeSource@@@": 8047444,
+    "?Fill_Rect_Trans@DSurface@@UAE_NABVRect@@ABVRGBClass@@I@Z": 4896560,
+    "__real@8@400fc350000000000000": 8048696,
+    "?unknown_radar_surface_8336f8@@3PAVSurface@@A": 8599288,
+    "?Delete@?$DynamicVectorClass@PAVPlanningNodeClass@@@@QAE_NABQAVPlanningNodeClass@@@Z": 6402960,
+    "?unknown_slot15@UDPInterfaceClass@@UAE_NH@Z": 7784176,
+    "?unknown_slot4@UDPInterfaceClass@@UAEXPAXH_N@Z": 7784896,
+    "??_7TechnoClass@@6B@": 8047488
   },
   "regions": [
     {
@@ -3420,13 +3443,13 @@
         {
           "offset": 318,
           "kind": 20,
-          "symbol": "?Print@BitTextClass@@QAEXPAVBitFontClass@@PAVSurface@@PBGHHHH@Z",
+          "symbol": "?Print@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHH@Z",
           "target": 4399952,
           "addend": 0,
           "resolved": 4294552030
         }
       ],
-      "source_sha256": "bcb319c73f902dc50a8c92aafbedafa2c6bddf1abf4b749f2d7b96d36bf2ecf9",
+      "source_sha256": "1bf3f18fbc42b5f7f7994a38cf979800c3ddf755a8d388b5d91355a131b224ba",
       "source": "src/recovered/classes/TextPrint/Simple_Text_Print_00497830.cpp",
       "population": "population-1623",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",

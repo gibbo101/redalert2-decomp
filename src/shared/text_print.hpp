@@ -35,7 +35,7 @@ typedef unsigned short wchar_t;
 #define _WCHAR_T_DEFINED
 #endif
 
-struct tagRECT;
+#include "shared/tag_rect.hpp"
 
 // The bitmap font text is drawn with (the object at 0x0084E9E8 points to).
 class BitFontClass {
@@ -65,7 +65,7 @@ extern BitFontClass *BitFont;               // 0x0084E9E8
 // The bitmap text printer (the object at 0x0084E9D0 points to).
 class BitTextClass {
 public:
-    void Print(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y,
+    int Print(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y,
                int arg6, int arg7);                                                 // 0x00432350
 };
 extern BitTextClass *BitText;               // 0x0084E9D0
