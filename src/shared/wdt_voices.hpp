@@ -18,7 +18,6 @@ struct AudioDevice;
 struct AudioStreamPlayer;
 AudioDevice *Audio_Get_Device();                                    // 0x00406F40
 void __fastcall Audio_Stream_Destroy(AudioStreamPlayer *stream);    // 0x004079C0
-void __fastcall Unknown_007158C0(int voice, int arg2, int arg3);   // 0x007158C0 (plays a voice)
 int __fastcall Unknown_00716640(char const *name);                 // 0x00716640 (voice index by name)
 extern Random2Class unknown_random_839218;                          // 0x00839218
 // The faction name of a faction number (0x007685A0; function statics, the

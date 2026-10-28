@@ -114,8 +114,8 @@ extern int unknown_int_af8fe8;                          // 0x00AF8FE8
 // Runs after the radar's update unless it is in mode 4 (0x00716950).
 void Unknown_00716950();
 // The radar's transmission sequence (mode 4) helpers (meanings not recovered).
-void Unknown_007157B0();                                // 0x007157B0
-void __fastcall Unknown_007158C0(int voice, int arg2, int arg3);   // 0x007158C0
+// Speech_Clear 0x007157B0 and Speech_Play 0x007158C0: shared/vox_class.hpp.
+#include "shared/vox_class.hpp"
 void Unknown_00716940();                                // 0x00716940
 bool __fastcall Unknown_00716690(int voice);            // 0x00716690
 void Unknown_004082B0();                                // 0x004082B0

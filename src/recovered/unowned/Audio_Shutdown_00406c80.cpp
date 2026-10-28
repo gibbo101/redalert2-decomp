@@ -5,12 +5,12 @@
 #include "shared/mix_file_class.hpp"
 #include "shared/cd.hpp"
 #include "shared/audio.hpp"
+#include "shared/vox_class.hpp"
 
-// @ref ?unknown_00715780@@YAXXZ=00715780
+// @ref ?Speech_Shutdown@@YAXXZ=00715780
 // @ref ?unknown_00715f80@@YAXXZ=00715f80
 // @ref ?Audio_Events_Shutdown@@YAXXZ=00403f80
 // @ref ?Audio_System_Shutdown@@YIHXZ=00402990
-void unknown_00715780();    // 0x00715780
 void unknown_00715f80();    // 0x00715F80
 
 int Audio_Shutdown()
@@ -20,7 +20,7 @@ int Audio_Shutdown()
     }
     Audio_Events_Clear();
     Audio_Streams_Stop();
-    unknown_00715780();
+    Speech_Shutdown();
     unknown_00715f80();
     Audio_Events_Shutdown();
     Audio_Streamer_Shutdown();

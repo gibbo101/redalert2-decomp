@@ -15,7 +15,7 @@ void Voices::Update()
             }
         }
         if (Queue.Count() > 0) {
-            Unknown_007158C0(Unknown_00716640(Queue[0].Get()), -1, -1);
+            Speech_Play(Unknown_00716640(Queue[0].Get()), -1, -1);
             Idle = false;
         } else {
             Pending = 0;

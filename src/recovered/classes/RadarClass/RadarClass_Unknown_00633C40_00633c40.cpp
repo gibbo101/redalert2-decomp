@@ -19,8 +19,8 @@ void RadarClass::Unknown_00633C40()
 {
     switch (unknown_14b4) {
     case 0:
-        Unknown_007157B0();
-        Unknown_007158C0(unknown_14d0, 0, 3);
+        Speech_Clear();
+        Speech_Play(unknown_14d0, 0, 3);
         Unknown_00716940();
         unknown_14b4 = 1;
         break;

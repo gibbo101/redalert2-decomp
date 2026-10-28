@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 771 | 86,428 | 771 | 0x004011C0–0x0077CB70 |
+| [unowned](../src/recovered/unowned/) | 770 | 86,373 | 770 | 0x004011C0–0x0077CB70 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | (discovery: address-named) | 1517 | 45,658 | 0 | 0x004010A0–0x00797198 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 157 | 38,753 | 157 | 0x00438A60–0x004D3450 |
@@ -1064,6 +1064,7 @@
 | [classes/DynamicVectorClass_tConnInfoStruct_ptr](../src/recovered/classes/DynamicVectorClass_tConnInfoStruct_ptr/) | 1 | 176 | 1 | 0x007666A0–0x007666A0 |
 | [classes/DynamicVectorClass_uchar_ptr](../src/recovered/classes/DynamicVectorClass_uchar_ptr/) | 1 | 176 | 1 | 0x0076D790–0x0076D790 |
 | [classes/BlitTransXlatWriteAlpha_unsigned_short](../src/recovered/classes/BlitTransXlatWriteAlpha_unsigned_short/) | 3 | 175 | 1 | 0x00488380–0x0048CE70 |
+| [classes/VoxClass](../src/recovered/classes/VoxClass/) | 3 | 175 | 3 | 0x00715650–0x00715DE0 |
 | [classes/BlitTransLucent25ZRead_unsigned_short](../src/recovered/classes/BlitTransLucent25ZRead_unsigned_short/) | 2 | 174 | 2 | 0x004875A0–0x0048CB90 |
 | [classes/BlitTransLucent75ZRead_unsigned_short](../src/recovered/classes/BlitTransLucent75ZRead_unsigned_short/) | 2 | 174 | 2 | 0x00487420–0x0048CB50 |
 | [classes/BlitTransZRemapXlatZReadWrite_unsigned_short](../src/recovered/classes/BlitTransZRemapXlatZReadWrite_unsigned_short/) | 2 | 173 | 2 | 0x00487A20–0x0048CC50 |
@@ -1109,7 +1110,6 @@
 | [classes/BlitTransLucent25_unsigned_short](../src/recovered/classes/BlitTransLucent25_unsigned_short/) | 2 | 122 | 2 | 0x00487110–0x0048CAB0 |
 | [classes/BlitTransLucent75_unsigned_short](../src/recovered/classes/BlitTransLucent75_unsigned_short/) | 2 | 122 | 2 | 0x00486FF0–0x0048CA70 |
 | [classes/UndoInfoStruct](../src/recovered/classes/UndoInfoStruct/) | 2 | 120 | 2 | 0x00684F40–0x00684F80 |
-| [classes/VoxClass](../src/recovered/classes/VoxClass/) | 2 | 120 | 2 | 0x00715650–0x00715690 |
 | [classes/char_const_ptr](../src/recovered/classes/char_const_ptr/) | 2 | 120 | 2 | 0x005A0D40–0x005A0D80 |
 | [classes/unsigned_long](../src/recovered/classes/unsigned_long/) | 2 | 120 | 2 | 0x0068DB40–0x0068DB80 |
 | [classes/VectorClass_TPoint3D_int](../src/recovered/classes/VectorClass_TPoint3D_int/) | 3 | 115 | 3 | 0x0045EDC0–0x0045EFB0 |

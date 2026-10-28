@@ -1,12 +1,12 @@
 // bool TActionClass::unknown_play_voice(...) (0x006B1180)
-// Plays voice Data through Unknown_007158C0 (mode 2, -1); always true.
+// Plays the VoxClass Data through Speech_Play (type 2, its own priority); always true.
 #include "shared/taction.hpp"
+#include "shared/vox_class.hpp"
 
-// @ref ?Unknown_007158C0@@YIXHHH@Z=007158c0
-void __fastcall Unknown_007158C0(int voice, int arg2, int arg3);   // 0x007158C0 (plays a voice)
+// @ref ?Speech_Play@@YIXHHH@Z=007158c0
 
 bool TActionClass::unknown_play_voice(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
-    Unknown_007158C0(Data, 2, -1);
+    Speech_Play(Data, 2, -1);
     return true;
 }
