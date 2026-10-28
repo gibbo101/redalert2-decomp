@@ -8,7 +8,7 @@
 
 // A message node (a MessageNode_006f15c0 of shared/message_gadget_layout.hpp; the list is linked through the
 // LinkClass-style slots: slot 1 is the next node, slot 4 appends to a list, slot 9 removes the node and returns the next one;
-// slot 20 gives the edit line the focus).
+// slots 11 and 20-27 are GadgetClass's: Draw_All, Set_Focus, Clear_Focus, Has_Focus, Draw_Me).
 class UnknownMessageNode {
 public:
     virtual ~UnknownMessageNode();                              // slot 0
@@ -22,7 +22,7 @@ public:
     virtual void unknown_slot8();
     virtual UnknownMessageNode *Remove();                       // slot 9
     virtual void unknown_slot10();
-    virtual void unknown_slot11();
+    virtual void Draw_All(bool forced);                         // slot 11 (GadgetClass)
     virtual void unknown_slot12();
     virtual void unknown_slot13();
     virtual void unknown_slot14();
@@ -31,16 +31,24 @@ public:
     virtual void unknown_slot17();
     virtual void unknown_slot18();
     virtual void unknown_slot19();
-    virtual void Set_Focus();                                   // slot 20 (the edit line takes the keyboard focus; name hypothesis)
+    virtual void Set_Focus();                                   // slot 20 (GadgetClass)
+    virtual void Clear_Focus();                                 // slot 21
+    virtual bool Has_Focus();                                   // slot 22
+    virtual void unknown_slot23();
+    virtual void unknown_slot24();
+    virtual void unknown_slot25();
+    virtual void unknown_slot26();
+    virtual int Draw_Me(int forced);                            // slot 27
 
-    char unknown_04[0x10 - 0x04];
+    char unknown_04[0x0C - 0x04];
+    int X;                                                      // +0x0C
     int Y;                                                      // +0x10
     char unknown_14[0x24 - 0x14];
     int Expires;                                                // +0x24 the SystemTimerClass time it goes away (0: never)
     int Identifier;                                             // +0x28
-    char unknown_2c[0x30 - 0x2C];
+    unsigned Style;                                             // +0x2C the text print flags
     unsigned short *Text;                                       // +0x30 one of the list's text slots
-    char unknown_34[0x38 - 0x34];
+    int Color;                                                  // +0x34 the ColorSchemes index
     int MaximumWidth;                                           // +0x38
     char unknown_3c[0x41 - 0x3C];
     bool unknown_41;                                            // +0x41
@@ -78,6 +86,8 @@ public:
     // Cuts the first characters off src into dest (when given): at least min_chars and at most max_chars, at a
     // space looked for forward from min_chars or backward from max_chars; src keeps the rest. The count (0x005B5CB0).
     int Trim_Message(unsigned short *dest, unsigned short *src, int min_chars, int max_chars, int scan_start);
+    // Draws the edit line (with its cursor while it has the focus and there is room) and the messages (0x005B5B30).
+    void Draw();
     UnknownMessageNode *Add_Message(unsigned short const *prefix, int identifier, unsigned short const *text, int color,
         unsigned style, int delay, bool unknown_flag);                              // 0x005B4DA0
     // Removes the messages that have expired, frees their text slots and restacks the rest (0x005B5610); whether any went.

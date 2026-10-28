@@ -47,6 +47,7 @@
 | [classes/AnimClass](../src/recovered/classes/AnimClass/) | 39 | 5,387 | 39 | 0x004208E0–0x004D44D0 |
 | [classes/FoggedObjectClass](../src/recovered/classes/FoggedObjectClass/) | 24 | 5,325 | 22 | 0x004BFEC0–0x004C2670 |
 | [classes/TerrainClass](../src/recovered/classes/TerrainClass/) | 27 | 5,297 | 27 | 0x004D3310–0x006E4B50 |
+| [classes/MultiplayerGameMode](../src/recovered/classes/MultiplayerGameMode/) | 58 | 5,238 | 58 | 0x005A2380–0x005B8E10 |
 | [classes/TiberiumClass](../src/recovered/classes/TiberiumClass/) | 23 | 5,214 | 19 | 0x006E8920–0x006EA9F0 |
 | [classes/TeamTypeClass](../src/recovered/classes/TeamTypeClass/) | 29 | 5,211 | 29 | 0x004D3990–0x006C0280 |
 | [classes/WaveClass](../src/recovered/classes/WaveClass/) | 27 | 5,184 | 27 | 0x004D3090–0x00724600 |
@@ -56,7 +57,6 @@
 | [classes/XSurface](../src/recovered/classes/XSurface/) | 34 | 4,975 | 34 | 0x004112E0–0x007758F0 |
 | [classes/VeinholeMonsterClass](../src/recovered/classes/VeinholeMonsterClass/) | 23 | 4,941 | 23 | 0x0070F780–0x00712730 |
 | [classes/MSChoice](../src/recovered/classes/MSChoice/) | 72 | 4,912 | 72 | 0x005B16E0–0x005B2B70 |
-| [classes/MultiplayerGameMode](../src/recovered/classes/MultiplayerGameMode/) | 57 | 4,876 | 57 | 0x005A2380–0x005B8E10 |
 | [classes/SaveLoad](../src/recovered/classes/SaveLoad/) | 15 | 4,853 | 15 | 0x00654C40–0x0065B150 |
 | [classes/SpawnManagerClass](../src/recovered/classes/SpawnManagerClass/) | 22 | 4,831 | 22 | 0x00689690–0x0068AA00 |
 | [classes/WeaponTypeClass](../src/recovered/classes/WeaponTypeClass/) | 20 | 4,679 | 20 | 0x0040F8F0–0x00733FF0 |
@@ -135,6 +135,7 @@
 | [classes/TubeClass](../src/recovered/classes/TubeClass/) | 14 | 1,861 | 14 | 0x004D3010–0x006EF910 |
 | [library/LZO](../src/recovered/library/LZO/) | 3 | 1,797 | 3 | 0x0053E420–0x0053E970 |
 | [classes/DynamicVectorClass_AbstractClass_ptr](../src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/) | 29 | 1,790 | 28 | 0x00454B20–0x006ECB50 |
+| [classes/MessageListClass](../src/recovered/classes/MessageListClass/) | 13 | 1,787 | 13 | 0x005B4BD0–0x005B5CB0 |
 | [classes/AircraftTypeClass](../src/recovered/classes/AircraftTypeClass/) | 24 | 1,745 | 24 | 0x0041BC90–0x004D3CD0 |
 | [word_storage](../src/recovered/word_storage/) | 15 | 1,739 | 15 | 0x0046CE20–0x006C03E0 |
 | [classes/RadioClass](../src/recovered/classes/RadioClass/) | 19 | 1,737 | 19 | 0x006368C0–0x00636F90 |
@@ -149,7 +150,6 @@
 | [classes/MonoClass](../src/recovered/classes/MonoClass/) | 10 | 1,605 | 10 | 0x0059E160–0x0059EA90 |
 | [classes/TriColorGaugeClass](../src/recovered/classes/TriColorGaugeClass/) | 5 | 1,605 | 5 | 0x004D0630–0x004D0CD0 |
 | [classes/BaseClass](../src/recovered/classes/BaseClass/) | 11 | 1,555 | 11 | 0x0042C000–0x0042CB70 |
-| [classes/MessageListClass](../src/recovered/classes/MessageListClass/) | 12 | 1,532 | 12 | 0x005B4BD0–0x005B5CB0 |
 | [classes/CaptureManagerClass](../src/recovered/classes/CaptureManagerClass/) | 16 | 1,530 | 16 | 0x00467D30–0x00468380 |
 | [classes/TeleportLocomotionClass](../src/recovered/classes/TeleportLocomotionClass/) | 27 | 1,528 | 27 | 0x006DFCA0–0x006E1C70 |
 | [classes/Dial8Class](../src/recovered/classes/Dial8Class/) | 5 | 1,504 | 4 | 0x00496D30–0x00497320 |
@@ -338,6 +338,7 @@
 | [classes/VectorClass_AbstractClass_ptr](../src/recovered/classes/VectorClass_AbstractClass_ptr/) | 8 | 513 | 6 | 0x004CDE80–0x004CEB90 |
 | [classes/VectorClass_BuildingClass_ptr](../src/recovered/classes/VectorClass_BuildingClass_ptr/) | 8 | 513 | 6 | 0x004D4A50–0x004F8A90 |
 | [classes/VectorClass_CellClass_ptr](../src/recovered/classes/VectorClass_CellClass_ptr/) | 8 | 513 | 6 | 0x0056ACD0–0x0058F040 |
+| [classes/VectorClass_CoopCampaignClass_ptr](../src/recovered/classes/VectorClass_CoopCampaignClass_ptr/) | 8 | 513 | 7 | 0x005A64C0–0x005A6E20 |
 | [classes/VectorClass_FoggedObjectClass_ptr](../src/recovered/classes/VectorClass_FoggedObjectClass_ptr/) | 8 | 513 | 6 | 0x00453DD0–0x0047D0E0 |
 | [classes/VectorClass_GraphicMenuItem_ptr](../src/recovered/classes/VectorClass_GraphicMenuItem_ptr/) | 8 | 513 | 6 | 0x004DEF80–0x004DF2E0 |
 | [classes/VectorClass_HouseClass_ptr](../src/recovered/classes/VectorClass_HouseClass_ptr/) | 8 | 513 | 6 | 0x004D5060–0x00674BA0 |
@@ -415,7 +416,6 @@
 | [classes/VectorClass_ColorScheme_ptr](../src/recovered/classes/VectorClass_ColorScheme_ptr/) | 7 | 439 | 6 | 0x00604D20–0x006055A0 |
 | [classes/VectorClass_CommandClass_ptr](../src/recovered/classes/VectorClass_CommandClass_ptr/) | 7 | 439 | 7 | 0x0040BDB0–0x0040C020 |
 | [classes/VectorClass_ConvertClass_ptr](../src/recovered/classes/VectorClass_ConvertClass_ptr/) | 7 | 439 | 6 | 0x00486290–0x0048DBD0 |
-| [classes/VectorClass_CoopCampaignClass_ptr](../src/recovered/classes/VectorClass_CoopCampaignClass_ptr/) | 7 | 439 | 6 | 0x005A64C0–0x005A6CE0 |
 | [classes/VectorClass_EBolt_ptr](../src/recovered/classes/VectorClass_EBolt_ptr/) | 7 | 439 | 6 | 0x004B2640–0x004B28B0 |
 | [classes/VectorClass_EgoClass_ptr](../src/recovered/classes/VectorClass_EgoClass_ptr/) | 7 | 439 | 6 | 0x004B4380–0x004B45F0 |
 | [classes/VectorClass_EventClass_ptr](../src/recovered/classes/VectorClass_EventClass_ptr/) | 7 | 439 | 6 | 0x0061AA90–0x0061BBF0 |
@@ -1130,10 +1130,16 @@
 | [classes/BlitTransRemapXlat_unsigned_char](../src/recovered/classes/BlitTransRemapXlat_unsigned_char/) | 2 | 102 | 2 | 0x00486470–0x0048C850 |
 | [classes/MultiplayerBattle](../src/recovered/classes/MultiplayerBattle/) | 4 | 102 | 4 | 0x005A2320–0x005A2500 |
 | [classes/MultiplayerManBattle](../src/recovered/classes/MultiplayerManBattle/) | 3 | 99 | 0 | 0x005A74B0–0x005A7500 |
+| [classes/MultiplayerGameMode__Initializer_MPCooperative](../src/recovered/classes/MultiplayerGameMode__Initializer_MPCooperative/) | 2 | 94 | 2 | 0x005B8F80–0x005B91A0 |
 | [classes/Vector3](../src/recovered/classes/Vector3/) | 4 | 94 | 4 | 0x00437690–0x00717CD0 |
 | [classes/BlitPlainXlat_unsigned_short](../src/recovered/classes/BlitPlainXlat_unsigned_short/) | 2 | 93 | 2 | 0x00486E90–0x0048CA10 |
 | [classes/LoadOptionsClass](../src/recovered/classes/LoadOptionsClass/) | 4 | 92 | 0 | 0x0053C970–0x0053C9D0 |
 | [classes/BlitTransXlat_unsigned_char](../src/recovered/classes/BlitTransXlat_unsigned_char/) | 2 | 91 | 2 | 0x00486310–0x0048C7F0 |
+| [classes/MultiplayerGameMode__Initializer_FreeForAll](../src/recovered/classes/MultiplayerGameMode__Initializer_FreeForAll/) | 2 | 91 | 2 | 0x005B8F60–0x005B9160 |
+| [classes/MultiplayerGameMode__Initializer_MultiplayerBattle](../src/recovered/classes/MultiplayerGameMode__Initializer_MultiplayerBattle/) | 2 | 91 | 2 | 0x005B8EE0–0x005B9060 |
+| [classes/MultiplayerGameMode__Initializer_MultiplayerManBattle](../src/recovered/classes/MultiplayerGameMode__Initializer_MultiplayerManBattle/) | 2 | 91 | 2 | 0x005B8F00–0x005B90A0 |
+| [classes/MultiplayerGameMode__Initializer_MultiplayerSiege](../src/recovered/classes/MultiplayerGameMode__Initializer_MultiplayerSiege/) | 2 | 91 | 2 | 0x005B8F20–0x005B90E0 |
+| [classes/MultiplayerGameMode__Initializer_UnholyAlliance](../src/recovered/classes/MultiplayerGameMode__Initializer_UnholyAlliance/) | 2 | 91 | 2 | 0x005B8F40–0x005B9120 |
 | [messages](../src/recovered/messages/) | 1 | 91 | 1 | 0x006F15C0–0x006F15C0 |
 | [classes/BlitPlainXlat_unsigned_char](../src/recovered/classes/BlitPlainXlat_unsigned_char/) | 2 | 89 | 2 | 0x004862A0–0x0048C7D0 |
 | [classes/Surface](../src/recovered/classes/Surface/) | 7 | 89 | 7 | 0x00411270–0x00411350 |
@@ -1247,7 +1253,7 @@
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 | [classes/UnknownAlphaTableCache_008315B8](../src/recovered/classes/UnknownAlphaTableCache_008315B8/) | 2 | 4 | 2 | 0x0041E3C0–0x0041E3D0 |
 
-1240 directories, 14691 regions. Generated by `tools/original_target/source_index.py`.
+1246 directories, 14706 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

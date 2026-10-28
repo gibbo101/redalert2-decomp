@@ -159,7 +159,7 @@ public:
     static void __fastcall unknown_register_5b8490(Wstring const &name, InitializerBase const &initializer);
     // Recreates the mode list: deletes the old modes and registers the six
     // modes (0x005B8BD0).
-    static void unknown_init_modes_5b8bd0();
+    static void __fastcall unknown_init_modes_5b8bd0();
     // Deletes the registered modes (0x005B8D40).
     static void unknown_delete_modes_5b8d40();
 
