@@ -76,12 +76,15 @@ struct UnknownSessionState {
     unsigned short MasterPlayerName[21];    // +0x2FC8 (wide)
     char unknown_2ff2[0x301C - 0x2FF2];
     int MasterPlayerID;                     // +0x301C
+    char unknown_3020[0x3080 - 0x3020];
+    unsigned char unknown_3080;             // +0x3080 (0x00672F10 returns it; the dialog control test 0x005E0760)
 
     // Whether the house (null: the player's) is the game master: by MasterPlayerID,
     // else by name, in game mode 4 (0x0066F150; YR's Am_I_Master, hypothesis).
     bool Am_I_Master(HouseClass *house);
     void Unknown_0066EE50();                // 0x0066EE50 (Do_Lose after a networked replay restarts)
     void Unknown_00672440();                // 0x00672440 (game mode 4, after the load wait of 0x0065C7D0)
+    unsigned char Unknown_00672F10();       // 0x00672F10 (+0x3080)
     void Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)
 };
 extern UnknownSessionState unknown_session_a3d298;
