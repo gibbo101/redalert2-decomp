@@ -129,6 +129,8 @@ public:
     int Print_Char(BitFontClass *font, Surface *surface, wchar_t character, int x, int y);   // 0x00432300
     int Print(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y,
               int arg6, int arg7);                                                  // 0x00432350
+    int Print_Box(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y, int width, int height,
+                  int arg8, int arg9, int arg10);                                   // 0x00432490 (text in a box)
     int Print_Bold(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y, int count);   // 0x004323B0 (twice, one pixel apart, when the font's unknown_40 is set)
 };
 extern BitTextClass *BitText;               // 0x0084E9D0

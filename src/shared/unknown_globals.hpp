@@ -9,6 +9,8 @@ class HouseClass;
 class ConvertClass;
 class BuildingClass;
 
+#include "shared/coord.hpp"
+
 extern int unknown_int_7add80;
 extern ConvertClass *unknown_drawer_8323b8;  // 0x008323B8 (OverlayTypeClass slot 40; also CellClass 0x474C6B)
 extern ConvertClass *unknown_drawer_8323bc;  // 0x008323BC (TerrainClass slots 67/68 draw Tiberium spawners with it)
@@ -226,14 +228,32 @@ void __cdecl Reset_Light_Converts_00529720();
 // Deletes every radar event (0x0063C640).
 void RadarEventClass_unknown_delete_all_63c640();
 // The object at 0x0084E8D0 (moved from shared/display.hpp).
+class UnknownBeacon;
 class Unknown84E8D0 {
 public:
+    UnknownBeacon *Unknown_0042E860(int x, int y, int z);  // 0x0042E860 (the beacon within 128 of the point)
+    bool Unknown_0042E740(int x, int y, int z);            // 0x0042E740 (selects the beacon within 128 of the point)
+    Unknown84E8D0();                                        // 0x0042D960 (the static initializer; inline)
+    ~Unknown84E8D0();                                       // 0x0042D990 (the atexit destructor; inline)
+    void Unknown_0042E370(int house, int x, int y, int z, int slot);   // 0x0042E370 (places a beacon; slot -1: the first free one)
+    void Unknown_0042E290(Surface *surface, Rect rect);     // 0x0042E290 (draws the allied beacons)
+    void Unknown_0042EED0(Surface *surface, Rect rect);     // 0x0042EED0 (draws the allied beacons during the blink phase)
+    bool Unknown_0042EFD0();                               // 0x0042EFD0 (an allied beacon is shown and the blink phase is on)
     void Unknown_0042E150();                    // 0x0042E150 (frees the per-house blocks; last call of 0x00519960)
     void Unknown_0042E1A0();                    // 0x0042E1A0 (Read_Scenario_INI)
     bool Unknown_0042E700(int house);           // 0x0042E700 true when one of the house's three slots is empty
     // +0x00 three owned blocks per house (8 houses): the static initializer 0x0042D960
     // clears the 0x18 words, its atexit 0x0042D990 deletes each non-null one.
-    void *unknown_00[8][3];
+    UnknownBeacon *unknown_00[8][3];
+    int unknown_60;                 // the beacons are enabled
+    int unknown_64;                 // +0x64..+0x6C the PBEACON.SHP width, height and frame count
+    int unknown_68;
+    int unknown_6c;
+    int unknown_70;                 // +0x70..+0x78 the RDRBEACN.SHP width, height and frame count
+    int unknown_74;
+    int unknown_78;
+    int unknown_7c;                 // +0x7C the radar beacon's blink cycle (frames << 2)
+    CoordStruct unknown_80;         // +0x80 the position a new beacon starts at
 };
 extern Unknown84E8D0 unknown_object_84e8d0;
 // Read_Scenario_INI's settings and helpers (0x0065EB40; meanings mostly not recovered).
