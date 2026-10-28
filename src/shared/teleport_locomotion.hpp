@@ -28,6 +28,9 @@ public:
     virtual HRESULT __stdcall Load(IStream *stream);                            // 0x006E1770
     virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);          // 0x006E1810
     virtual int Size() { return sizeof(TeleportLocomotionClass); }              // 0x006E1BE0 (inline)
+    // Teleport's own virtuals (IPersistStream-side slots 10 and 11; names unknown).
+    virtual void __stdcall unknown_slot10();                                    // 0x006E16F0 (the warp timer ran out: clears the linked object's +0x205, counts +0x38 on)
+    virtual bool unknown_slot11();                                              // 0x006DFD30 (not moving)
 
     virtual bool __stdcall Is_Moving();                                         // 0x006DFD20
     virtual CoordStruct __stdcall Destination();                                // 0x006DFD40
@@ -44,6 +47,8 @@ public:
     virtual bool __stdcall Is_Ok_To_End();                                      // 0x006E19F0
     virtual HRESULT __stdcall Piggyback_CLSID(GUID *classid);                   // 0x006E1A40
     virtual bool __stdcall Is_Piggybacking();                                   // 0x006E1BC0
+
+    void unknown_6e06b0(CoordStruct const &to);                                 // 0x006E06B0 (Move_To's step: picks the arrival coordinate, +0x28)
 
     CoordStruct unknown_1c;                     // +0x1C destination
     CoordStruct unknown_28;                     // +0x28
