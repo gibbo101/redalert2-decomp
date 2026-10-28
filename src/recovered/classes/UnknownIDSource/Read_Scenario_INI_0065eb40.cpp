@@ -47,7 +47,7 @@
 // @ref ?Find_Entry@INIClass@@QBEPAUINIEntry@1@PBD0@Z=0050cca0
 // @ref ?Find_Section@INIClass@@QBEPAUINISection@1@PBD@Z=0050c9b0
 // @ref ?Init_Theater_00519e70@@YIXH@Z=00519e70
-// @ref ?Process@RulesClass@@QAE_NAAVCCINIClass@@@Z=006433a0
+// @ref ?Process@RulesClass@@QAEXAAVCCINIClass@@@Z=006433a0
 // @ref ?Read_INI@BuildingClass@@SIXAAVCCINIClass@@@Z=0044ab80
 // @ref ?Read_INI@TerrainClass@@SIXAAVCCINIClass@@@Z=006e4260
 // @ref ?Read_INI@UnitClass@@SIXAAVCCINIClass@@@Z=00706ae0

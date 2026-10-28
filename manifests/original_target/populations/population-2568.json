@@ -4,8 +4,8 @@
     "id": "population-2568",
     "inventory_sha256": "82d911ff4ee969595e3f130cfee069b48d04fad06db245f8fb226b821607c8fc",
     "gaps_sha256": "4683ce15e709c77bcecaf67f2701225ba57691b84a63558da8ec1f7655320364",
-    "historical_population_sha256": "9ddaab4199f1a82716c96fba8774637b483dae7276a6ccb4134d8a00c2b32185",
-    "historical_acceptance_sha256": "e3a73627f67d994cd99806775808ca23929b6fe142793afbce75506b4cf73f6b"
+    "historical_population_sha256": "4769f71dd67ecd01dfabf41fba1523c78ec01631467971a8f549c3df7b011975",
+    "historical_acceptance_sha256": "93f3173ba2fc6eba145c3f09e8f2c7f5b4a4bf4d9c33cd77cdbedbe14c4fb864"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1354,7 +1354,7 @@
     "?Find_Entry@INIClass@@QBEPAUINIEntry@1@PBD0@Z": 5295264,
     "?Find_Section@INIClass@@QBEPAUINISection@1@PBD@Z": 5294512,
     "?Init_Theater_00519e70@@YIXH@Z": 5348976,
-    "?Process@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6566816,
+    "?Process@RulesClass@@QAEXAAVCCINIClass@@@Z": 6566816,
     "?Read_INI@BuildingClass@@SIXAAVCCINIClass@@@Z": 4500352,
     "?Read_INI@TerrainClass@@SIXAAVCCINIClass@@@Z": 7225952,
     "?Read_INI@UnitClass@@SIXAAVCCINIClass@@@Z": 7367392,
