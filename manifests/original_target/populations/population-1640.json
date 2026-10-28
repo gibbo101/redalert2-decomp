@@ -4,8 +4,8 @@
     "id": "population-1640",
     "inventory_sha256": "9bed87e5f705a4f5ad352b6b1b6452a031913b93078619c6ccf0a5153f2cf9a6",
     "gaps_sha256": "f04d061a8912454e93d3440ea485e4f4c385d8ae623bceee55f5a790077fc14c",
-    "historical_population_sha256": "daa7d435e2ddedfdc7e08182f004fbd1cd2b86d383a4ca855126757c2dcb7898",
-    "historical_acceptance_sha256": "ec81b5832fee3c83605c782cce5785faa92ed2db77e04f8582a00577c57758aa",
+    "historical_population_sha256": "4102c708e1045b6aac1c2f00be048454f22a1ea9cc492484ee72dd14a867d2f1",
+    "historical_acceptance_sha256": "90654adb68a519c8e694858384a6738811c351e90373ad79f9b43a00498f851b",
     "separate_units": true
   },
   "references": {
@@ -2937,8 +2937,6 @@
     "?Save@CounterClass@@QAEJPAUIStream@@@Z": 4791728,
     "?Load@CounterClass@@QAEJPAUIStream@@@Z": 4791824,
     "?Load@SmudgeClass@@UAGJPAUIStream@@@Z": 6846976,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Open@AnimFile@@UAE_NPAVFileClass@@@Z": 4341872,
     "?Close@AnimFile@@UAEXXZ": 4341936,
     "?Load@IsometricTileClass@@UAGJPAUIStream@@@Z": 5406944,

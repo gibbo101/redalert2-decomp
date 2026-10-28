@@ -4,8 +4,8 @@
     "id": "population-2736",
     "inventory_sha256": "701e7193e364534f0ff31a661a07437b2dfc95c5680e5bf935f63536df5c39ad",
     "gaps_sha256": "0897ce8bdcf528530f3a64410563519616ea71424b6de4880f7a6a0ea1543137",
-    "historical_population_sha256": "aee253d541a884b6d27877160374c5060317bdbaec6c755e784d0d65f8ef787e",
-    "historical_acceptance_sha256": "ab4b74ea1dd6d2b4c2778245c26794544282e620a223f96a175d26b77d81b48e"
+    "historical_population_sha256": "68621e603d8158edd730e9f67d40f6aad4c82eb48d323163ed16bff5fac627d9",
+    "historical_acceptance_sha256": "9e7eb732bf0dc9725665836a54624da9d189441457a3b7adfe9a0574606d8431"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6290,8 +6290,6 @@
     "?Next@EnumConnectionPointsClass@@UAGJKPAPAUIConnectionPoint@@PAK@Z": 4795472,
     "?Clone@EnumConnectionPointsClass@@UAGJPAPAUIEnumConnectionPoints@@@Z": 4795680,
     "?Read_INI@SmudgeClass@@SIXAAVCCINIClass@@@Z": 6846448,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Compute_CRC@TerrainClass@@UBEXAAVWWCRCEngine@@@Z": 7227168,
     "?Open@AnimFile@@UAE_NPAVFileClass@@@Z": 4341872,
     "?Close@AnimFile@@UAEXXZ": 4341936,
@@ -6510,7 +6508,6 @@
     "__imp__GetCommMask@8": 7971180,
     "__imp__EscapeCommFunction@8": 7971076,
     "__imp__GetOverlappedResult@16": 7971192,
-    "?Increase_Table_Size@?$IndexClass@JPAVObjectClass@@@@QAE_NH@Z": 4307200,
     "?Fill_Rect_Trans@DSurface@@UAE_NABVRect@@ABVRGBClass@@I@Z": 4896560,
     "?Copy_From@DSurface@@UAE_NABVRect@@0AAVSurface@@00_N2@Z": 4894672,
     "?QueryInterface@HouseClass@@W3AGJABUGUID@@PAPAX@Z": 5213728,

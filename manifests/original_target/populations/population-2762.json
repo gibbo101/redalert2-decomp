@@ -4,8 +4,8 @@
     "id": "population-2762",
     "inventory_sha256": "a4ee3276f43d6a329ca0245e92ca4cb62fe6d4aa7ac87066aaaca28e977c69e9",
     "gaps_sha256": "947203030974bc32af9a18237f21220391158166a91c57ba98d88240895452fa",
-    "historical_population_sha256": "089793ebc5568578bc99ce6670619bc35fb257b68726fbde7682510988e585fa",
-    "historical_acceptance_sha256": "dc52aaaabf890c3f6394830d5554ed20f19e0ce582b2873229f9853b1840ffd1"
+    "historical_population_sha256": "7dbaa2c7eb3aeb67ad6d341f0291e5fce76d827d0a8a351b0c6b408d4c2d3cb6",
+    "historical_acceptance_sha256": "b72d74e559af97c1166cc2a8958d07145d7e5cc325b08d51d58e076e1124f9fd"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6134,8 +6134,6 @@
     "??1MapSelectData@@QAE@XZ": 5963680,
     "?Delete@?$DynamicVectorClass@PAVObjectClass@@@@QAE_NH@Z": 4541216,
     "?Write@WinModemClass@@QAEXPAXH@Z": 7556208,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
     "??_EMultiplayerGameMode@@": 6000144,
     "??_GMultiplayerGameMode@@": 6000144,
     "?target@Call_7273c0_0@@QAEIXZ": 6526224,
@@ -8911,7 +8909,6 @@
     "?Assign_Handicap@HouseClass@@QAEHH@Z": 5123648,
     "?Unknown_004ED610@HouseClass@@QAEXPAVTechnoClass@@_N@Z": 5166608,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABU2@_N@Z": 6495136,
-    "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A": 11272024,
     "?unknown_func_422690@AnimClass@@QAEXH@Z": 4335248,
     "?Spawn_Survivors_0043f8e0@BuildingClass@@QAEXPAVObjectClass@@@Z": 4454624,
     "?Offset_Toward_Map_Center_0044aa40@BuildingClass@@QAE?AVCell@@H@Z": 4500032,
@@ -9026,7 +9023,6 @@
     "?Unknown_0049C670@DisplayClass@@QAEXXZ": 4834928,
     "?Write_INI_0049D910@DisplayClass@@QAEXAAVCCINIClass@@@Z": 4839696,
     "?Unknown_004F5B30@HouseClass@@QAEMXZ": 5200688,
-    "?Increase_Table_Size@?$IndexClass@JPAVObjectClass@@@@QAE_NH@Z": 4307200,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABUCoordStruct@@_N@Z": 6495136,
     "??0WaypointPathClass@@QAE@ABVNoInitClass@@@Z": 7490480,
     "?Array@LaserDrawList@@2V?$DynamicVectorClass@PAVLaserDrawClass@@@@A": 10938008,

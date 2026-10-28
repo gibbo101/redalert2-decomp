@@ -4,8 +4,8 @@
     "id": "population-2519",
     "inventory_sha256": "c5af56432329dde200240815ab625dc0ef715b547405c649d7ed2628915a0f94",
     "gaps_sha256": "105b20b6b85bd7a60ca2f756cbf9021ef1bcfdb2c94392b7382ac67f1c13ccd4",
-    "historical_population_sha256": "c0236677da64c2d604bfe45a601b705a17a19efcf755f863638ba3e949f36628",
-    "historical_acceptance_sha256": "ae23cb36e718bf7e611b6db2f33df696670b13cc40a9e5c2f8a64fc059137743"
+    "historical_population_sha256": "65987efe7d1e6e935c07ca4be3ef7725c1ff7fba06205c21ddde32fe7fc98f7b",
+    "historical_acceptance_sha256": "ee45029a4677abf3d234a51c2a642f20860e40bf51daf93b83e5f64a7494eebd"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4031,8 +4031,6 @@
     "?Write_INI@SmudgeClass@@SIXAAVCCINIClass@@@Z": 6846768,
     "?Load@SmudgeClass@@UAGJPAUIStream@@@Z": 6846976,
     "?unknown_slot52@TerrainClass@@UAE_NXZ": 7225632,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
     "?unknown_slot53@TerrainClass@@UAE_NPBUCoordStruct@@H@Z": 7227344,
     "?unknown_slot71@TerrainClass@@UAE_NH@Z": 7223264,
     "?unknown_slot59@TerrainClass@@UAEXABUCoordStruct@@@Z": 7223376,

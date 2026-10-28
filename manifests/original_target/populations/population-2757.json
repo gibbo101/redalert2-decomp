@@ -4,8 +4,8 @@
     "id": "population-2757",
     "inventory_sha256": "077c1d588c584faf98ed8dde1b14649f5ed529ea381ff4a2f12fc5224484bdbe",
     "gaps_sha256": "e537c5b87c6b75d365b7269973f986c31691aeb2a318df5e1ad8eb948ae75eae",
-    "historical_population_sha256": "efb051e79d3d1e38128f344b109363a4595a46459be59e6b5b13ab3911b98dfe",
-    "historical_acceptance_sha256": "fd16e7ed3a33b463f12bccfaf69ff69d42487f707cdaabc951f3d5839ff4cc80"
+    "historical_population_sha256": "3a4b5751eb86839b78e4d3169483fbe2ef4638b2b36c68f36143c3f5c584a1fe",
+    "historical_acceptance_sha256": "c2bf2ba7a807f17ec0d38cf51463851118a62f5b75c5cc2bbc72b1d7f972555a"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -5726,9 +5726,6 @@
     "?Kind_Of@HouseClass@@": 5204864,
     "?unknown_slot16@HouseClass@@": 5204880,
     "?Set@RGBClass@@": 5204928,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
-    "?Increase_Table_Size@?$IndexClass@JPAVObjectClass@@@@QAE_NH@Z": 4307200,
     "??_EMultiplayerGameMode@@": 6000144,
     "??_GMultiplayerGameMode@@": 6000144,
     "?Array@RadBeam@@2V?$DynamicVectorClass@PAVRadBeam@@@@A": 11232480,
@@ -9192,7 +9189,6 @@
     "?unknown_talk_techno_ac01c4@@3PAVTechnoClass@@A": 11272644,
     "?unknown_timer_ac0168@@3V?$CDTimerClass@VSystemTimerClass@@@@A": 11272552,
     "?unknown_func_422690@AnimClass@@QAEXH@Z": 4335248,
-    "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A": 11272024,
     "?Unknown_00710160@@YIPAUUnknownCellObject710160@@ABVCell@@@Z": 7405920,
     "?unknown_AbstractClass_list_00ac0c98@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275416,
     "?unknown_6c6350@TechnoClass@@QAEHPBVCell@@@Z": 7103312,

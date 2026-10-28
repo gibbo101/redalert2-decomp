@@ -4,8 +4,8 @@
     "id": "population-2758",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "27219b341da0b49b589fb1ec72d44cedc30919a3b8fd21ddf77a45dc2b21aa55",
-    "historical_acceptance_sha256": "669537da82aebafc6dc1ad6d4b539707ee493729c69fc029e684e9f5b0d042e7"
+    "historical_population_sha256": "2c49bb59215059339cc18f5f98f7325626474eb3ad9c5ed7ace2833729ce9877",
+    "historical_acceptance_sha256": "4c40a86db0d4cdd7b09eaac611229254b3a92ffd7d22430d7a355a2ec5afe187"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2252,7 +2252,6 @@
     "?Bias@RawFileClass@@QAEXHH@Z": 6525792,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINIEntry@INIClass@@@@PAU12@HABU12@@Z": 5313328,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINISection@INIClass@@@@PAU12@HABU12@@Z": 5313456,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVAbstractClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Binary_Search@@YIPAUToolTipIndexNode@@PAU1@HABU1@@Z": 7258960,
     "?Build_INI_Entry@ScriptMissionClass@@QBEHPAD@Z": 7253920,
@@ -4015,7 +4014,6 @@
     "?_com_issue_error@@YGXJ@Z": 7952704,
     "?search_compfunc@?$IndexClass@HPAUINIEntry@INIClass@@@@CAHPBX0@Z": 5313280,
     "?search_compfunc@?$IndexClass@HPAUINISection@INIClass@@@@CAHPBX0@Z": 5313408,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
     "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z": 4307472,
     "?search_compfunc@ToolTipIndex@@SAHPBX0@Z": 7258912,
     "?strtrim@@YIPADPAD@Z": 7270160,
@@ -6445,7 +6443,6 @@
     "__imp__EscapeCommFunction@8": 7971076,
     "__imp__GetOverlappedResult@16": 7971192,
     "?Load@TerrainClass@@UAGJPAUIStream@@@Z": 7226736,
-    "?Increase_Table_Size@?$IndexClass@JPAVObjectClass@@@@QAE_NH@Z": 4307200,
     "?unknown_slot73@TerrainClass@@UAE?AVRect@@XZ": 7227664,
     "?unknown_slot68@TerrainClass@@UAEXHH@Z": 7224128,
     "?unknown_drawer_8323bc@@3PAVConvertClass@@A": 8594364,

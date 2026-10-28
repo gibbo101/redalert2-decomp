@@ -4,8 +4,8 @@
     "id": "population-2542",
     "inventory_sha256": "3a110f46e7c4e8a521b486a67268cb55d470a5cb0fd6f23b6a7ded159f95a68f",
     "gaps_sha256": "c381c9f852b00800992661f62d4fe556baed9a444597fb1a043482d69fbd0c46",
-    "historical_population_sha256": "cc92b8349ec7f39e2e218462b2ac419e37d30b78b2a482a4c412d2452aca48a9",
-    "historical_acceptance_sha256": "2c22c7fdc20b30a080e260a9d9e5723548f2094af0507ceae56cdd26e771db3c"
+    "historical_population_sha256": "cccf7e829c985db46cbd70b9c7bd4d3586f999601d5017b37904f14ad7129cf5",
+    "historical_acceptance_sha256": "ae148c316c0f613394b8c7e95878ebe069f123880f685cdd44c7f9b547ec5808"
   },
   "references": {
     "??0LoadOptionsClass@@": 5484768,
@@ -2754,8 +2754,6 @@
     "?Release@EnumConnectionPointsClass@@UAGKXZ": 4795312,
     "?Next@EnumConnectionPointsClass@@UAGJKPAPAUIConnectionPoint@@PAK@Z": 4795472,
     "?Read_INI@SmudgeClass@@SIXAAVCCINIClass@@@Z": 6846448,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Open@AnimFile@@UAE_NPAVFileClass@@@Z": 4341872,
     "?Close@AnimFile@@UAEXXZ": 4341936,
     "?Blit@?$RLEBlitTransXlat@G@@UBEXPAXPBXHHHHHHHH@Z": 4757520,

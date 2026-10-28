@@ -4,8 +4,8 @@
     "id": "population-2609",
     "inventory_sha256": "3ca4721c488e6cff82722e3078e6c616ca398bdd8bac525334c84ccfd789194d",
     "gaps_sha256": "1a3e9b538f664ed5c8b2a3ef5880eaa96898f911a76fe2db5a55956cb7b7f511",
-    "historical_population_sha256": "7b0b454a53357b9d535a0bb78fa9f6ffffc4a0fe65a33a6a0f9690edc303884b",
-    "historical_acceptance_sha256": "21f6d8a81a459994d55c5827d9875c5c0e5b6bee931f9edaaeaf9be4b41644fb"
+    "historical_population_sha256": "e96fdcb2997b84e623d3cf2ea0a3c1764d378e21d29f52d126d76a585022c216",
+    "historical_acceptance_sha256": "d44af026352db3a7264433f5da067183f2c98de36b8f71a3b01b2f59cdb31fc4"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2160,7 +2160,6 @@
     "?Bias@RawFileClass@@QAEXHH@Z": 6525792,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINIEntry@INIClass@@@@PAU12@HABU12@@Z": 5313328,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINISection@INIClass@@@@PAU12@HABU12@@Z": 5313456,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVAbstractClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Binary_Search@@YIPAUToolTipIndexNode@@PAU1@HABU1@@Z": 7258960,
     "?BitFont@@3PAVBitFontClass@@A": 8710632,
@@ -5745,7 +5744,6 @@
     "?init@FactoryObject_6981b0@@QAEPAV1@XZ": 4980768,
     "?search_compfunc@?$IndexClass@HPAUINIEntry@INIClass@@@@CAHPBX0@Z": 5313280,
     "?search_compfunc@?$IndexClass@HPAUINISection@INIClass@@@@CAHPBX0@Z": 5313408,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
     "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z": 4307472,
     "?search_compfunc@ToolTipIndex@@SAHPBX0@Z": 7258912,
     "?strtrim@@YIPADPAD@Z": 7270160,

@@ -4,8 +4,8 @@
     "id": "population-1661",
     "inventory_sha256": "0eb7c48dacb1190baf4cc8c81378ce958690e9b0b94db7483b2e4b43b1ed2a70",
     "gaps_sha256": "b9ed886916c5341de964eb84405242b103f3f7ba2a2d08d02e3c38d56fcb5427",
-    "historical_population_sha256": "4c1e762b794a1affeb06612ed61deec66266c9081d9d77e56c59cf9cc71292c3",
-    "historical_acceptance_sha256": "d731c7240a3093294d10f7d6102a64299a1bd3ee5a650ee0314ee9f4d46b58be"
+    "historical_population_sha256": "1e29472be1d16688f0f49bfcbe0e6c74f62a668b17939571e786310bf509a6dc",
+    "historical_acceptance_sha256": "ffded5b61e2c701a96cc69204374b70280085ccec2dfbd6844fc07be2a2298ca"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -1901,8 +1901,6 @@
     "?Release@ConnectionPointClass@@UAGKXZ": 4794176,
     "?Release@EnumConnectionPointsClass@@UAGKXZ": 4795312,
     "?Load@SmudgeClass@@UAGJPAUIStream@@@Z": 6846976,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Load@IsometricTileClass@@UAGJPAUIStream@@@Z": 5406944,
     "?Save@WaveClass@@UAGJPAUIStream@@H@Z": 7480112,
     "?ID@?$VectorClass@PAVFootClass@@@@UAEHABQAVFootClass@@@Z": 5039024,

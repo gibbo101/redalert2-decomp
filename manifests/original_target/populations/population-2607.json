@@ -4,8 +4,8 @@
     "id": "population-2607",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "1ccc1765c0482e738eaf998489707875e5ea16efe3e967dcb229ac4c1a7b5d08",
-    "historical_acceptance_sha256": "eff07e6d4ba91ed3afc3903ab4e9d7799f4399a22beb505527aa18562a640722"
+    "historical_population_sha256": "4ff5f87822652f58dc7ff0bb8b12664f22990ba283b870e6fdca7f1471339561",
+    "historical_acceptance_sha256": "693b61caa824aea8dba055ac56c04321db0d0f4752536448be43225b3a809320"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2027,7 +2027,6 @@
     "?Bias@RawFileClass@@QAEXHH@Z": 6525792,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINIEntry@INIClass@@@@PAU12@HABU12@@Z": 5313328,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINISection@INIClass@@@@PAU12@HABU12@@Z": 5313456,
-    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVObjectClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@JPAVAbstractClass@@@@PAU12@HABU12@@Z": 5282016,
     "?Binary_Search@@YIPAUToolTipIndexNode@@PAU1@HABU1@@Z": 7258960,
     "?Build_INI_Entry@ScriptMissionClass@@QBEHPAD@Z": 7253920,
@@ -4043,7 +4042,6 @@
     "?_com_issue_error@@YGXJ@Z": 7952704,
     "?search_compfunc@?$IndexClass@HPAUINIEntry@INIClass@@@@CAHPBX0@Z": 5313280,
     "?search_compfunc@?$IndexClass@HPAUINISection@INIClass@@@@CAHPBX0@Z": 5313408,
-    "?search_compfunc@?$IndexClass@JPAVObjectClass@@@@CAHPBX0@Z": 4307472,
     "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z": 4307472,
     "?search_compfunc@ToolTipIndex@@SAHPBX0@Z": 7258912,
     "?strtrim@@YIPADPAD@Z": 7270160,
@@ -7391,7 +7389,7 @@
     "?get@Leaf_6b35b0@@QAEPAXI@Z": 7026096,
     "?get@Leaf_6b51b0@@QAEPAXI@Z": 7033264,
     "?get@Leaf_6b5200@@QAEPAXI@Z": 7033344,
-    "?unknown_object_index_abff58@@3V?$IndexClass@JPAVObjectClass@@@@A": 11272024,
+    "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A": 11272024,
     "?get@Leaf_6bc210@@QAEIII@Z": 7062032,
     "?get@Leaf_6bc230@@QAEIII@Z": 7062064,
     "?get@Leaf_6bc570@@QAEIII@Z": 7062896,
@@ -7593,7 +7591,6 @@
     "?Fast_Atan@@YAMN@Z": 4957616,
     "?unknown_atan_step_817df8@@3MA": 8486392,
     "?unknown_atan_table_813df4@@3PAMA": 8470004,
-    "?unknown_object_index_abff58@@3V?$IndexClass@JPAVAbstractClass@@@@A": 11272024,
     "_IID_IFlyControl": 8003712,
     "?unknown_facings_7ce4a8@@3QBHB": 8185000,
     "?AdjacentCell@@3QBVCell@@B": 8723056,
