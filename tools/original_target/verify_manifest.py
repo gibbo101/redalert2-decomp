@@ -509,7 +509,7 @@ class Audit:
         original at its bound address: which class the original's RTTI says
         is there, where the name's own original copy is, and each differing
         slot with the name the unit binds it to. Only explains a refusal."""
-        notes = []
+        notes, hint = [], []
         there = self.vtable_name_at(address + start)
         if there and there != name:
             notes.append('the original RTTI names the vtable at %08x %s' % (address + start, there))
@@ -522,7 +522,23 @@ class Audit:
             emitted, kept = (struct.unpack_from('<I', d, offset)[0] for d in (data, original))
             if emitted != kept:
                 notes.append('+%02x %s bound %08x, original %08x' % (offset - start, slots.get(offset, '?'), emitted, kept))
-        self.__dict__.setdefault('vtable_mismatches', {})[name] = '; '.join(notes[:8])
+        if own is not None and own != address + start:
+            # The table binds the name to another instance's vtable. When the
+            # slots the unit emits are right for this class's own copy, only
+            # the bindings are stale: the plan states them (the audit still
+            # compares every byte against the copy the RTTI names).
+            try:
+                right = self.original(own - start, len(data))
+            except ValueError:
+                right = None
+            if right is not None:
+                fixes = ['%s=%08x' % (name, own)]
+                for offset in range(start, len(data) - 3, 4):
+                    emitted, kept = (struct.unpack_from('<I', d, offset)[0] for d in (data, right))
+                    if emitted != kept and offset in slots and slots[offset] != name:
+                        fixes.append('%s=%08x' % (slots[offset], kept))
+                hint = ['try plan bindings: ' + ' '.join('// @ref ' + f for f in fixes)]
+        self.__dict__.setdefault('vtable_mismatches', {})[name] = '; '.join(notes[:8] + hint)
 
     def defined_data_duplicate(self, coff, index, section, candidates):
         """Initialized data a unit defines (a table written out in source).

@@ -17,13 +17,8 @@
 #define RA2_SHARED_ISOMETRIC_TILE_TYPE_HPP
 
 #include "shared/object_type.hpp"
+#include "shared/light_convert.hpp"
 
-// A palette light converter (RTTI vtable 0x007A55DC); only its virtual
-// destructor is used here.
-class LightConvertClass {
-public:
-    virtual ~LightConvertClass();                                      // ??_G 0x00538F30
-};
 // Every light converter (0x00832398; hypothesis: the tile drawers).
 extern DynamicVectorClass<LightConvertClass *> unknown_LightConvertClass_list_00832398;
 

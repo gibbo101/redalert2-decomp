@@ -370,7 +370,14 @@ population leaves an emitted vtable (`??_7X6B@`) or its deleting destructor
 binding of a vtable name that the RTTI places elsewhere is printed as a
 warning (a source may model a `T const *` instance as `T *`), and a vtable
 that differs from the original names the RTTI class at the bound address and
-each differing slot.
+each differing slot. A vtable or template instance that "belongs to another
+population" needs no takeover: the audit never transfers an emitted vtable, it
+compares its bytes with the original, and a plan's own `// @ref NAME=ADDRESS`
+lines take precedence over the shared table. When the table binds a name to the
+sibling instance (the usual refusal: `VectorClass<T *>` bound to the
+`T const *` vtable), the refusal ends with `try plan bindings: // @ref ...`:
+the vtable name at its RTTI address plus every slot whose emitted binding
+differs from that copy.
 
 ## Iteration tools
 

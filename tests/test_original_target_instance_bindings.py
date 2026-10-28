@@ -113,6 +113,17 @@ class InstanceBindingTest(unittest.TestCase):
         self.assertIn('names the vtable at %08x %s' % (self.image.vtables[VECTOR], VECTOR), note)
         self.assertIn('%s is %08x' % (DYNAMIC, self.image.vtables[DYNAMIC]), note)
 
+    def test_stale_vtable_binding_names_the_plan_bindings_that_fix_it(self):
+        coff, section = vtable_object([DELETING, RESIZE])
+        # The table binds the name to the sibling instance's vtable (T const *
+        # modelled as T *); the unit's slots are right for the class's own copy.
+        candidates = {'unit': {'references': {DYNAMIC: self.image.vtables[CONST], RESIZE: 0x403200,
+                                              DELETING: 0x403100}}}
+        self.assertFalse(self.audit.original_duplicate(coff, 1, section, candidates))
+        note = self.audit.vtable_mismatches[DYNAMIC]
+        self.assertIn('try plan bindings: // @ref %s=%08x' % (DYNAMIC, self.image.vtables[DYNAMIC]), note)
+        self.assertNotIn(DELETING + '=', note.split('try plan bindings')[1])
+
     def test_deleting_destructor_kept_elsewhere_by_rtti(self):
         symbols = {0: dict(name='??_G?$DynamicVectorClass@PAVThing@@@@UAEPAXI@Z', storage=2, section=1, value=0)}
         section = dict(name='.text', flags=0x60001020, data=b'\xc3', relocs=[])
