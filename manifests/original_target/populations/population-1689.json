@@ -4,8 +4,8 @@
     "id": "population-1689",
     "inventory_sha256": "03620d7c5523b633f4b3b941ba71b643c2ade3fbd182359d0afd23cbe3a8b973",
     "gaps_sha256": "b5a32c4468b4e33689a74444a398e9e2a47c6facf52689cfeb6d0f180e14c84c",
-    "historical_population_sha256": "3a8bf7b11fa16304e59bcf1a13e664e84440d4301c402796b6c35f9b7ab3a518",
-    "historical_acceptance_sha256": "6fb9a3a5c0ff3ce475d686c2c8473fa9dc80fec0cb59ba64042a1fe14746ac13"
+    "historical_population_sha256": "d1d3be8b5c0fc09e73e94ec582ce8ae98673894533238935d6620ab3d893b1cb",
+    "historical_acceptance_sha256": "7319ba090c02ac115a388798cad764ca198a7e010d5e392b6dbe4e09c4ad61ee"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -1593,7 +1593,7 @@
     "?Get_CD_Index@@YIHHH@Z": 4817888,
     "?Lock@DSurface@@UAEPAXUPoint2D@@@Z": 4893824,
     "?Unlock@DSurface@@UAE_NXZ": 4894272,
-    "??HPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HTPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
     "?search_compfunc@?$UnknownIndexClass@JPAVObjectClass@@@@SAHPBX0@Z": 4307472,
     "?search_compfunc@ToolTipIndex@@SAHPBX0@Z": 7258912,
     "?Remove@UnknownList832470@@QAEXPAVObjectClass@@@Z": 5497712,

@@ -4,8 +4,8 @@
     "id": "population-2566",
     "inventory_sha256": "6213a28baf648fc6501816dba6ede91e611469afa60543716b0c38306048d770",
     "gaps_sha256": "08c2b845e9c03e0e8197058342729e6b9fe3afc8f55ec062661e4f2a29244754",
-    "historical_population_sha256": "6ce28b5d6a71aaf17d683ac6ecbcbbee18ef654f0a1a2f9bbb988e9e05c64bb9",
-    "historical_acceptance_sha256": "6b3f3a66f233e3c946337fb1dff55d60601f54d65fc311d825fa35976bb0b88d"
+    "historical_population_sha256": "216353c146490b889d5fec56d11e50f2f6172d3a88a74747f8c1391cab6b5391",
+    "historical_acceptance_sha256": "497fb326bdf67d5895fecbb8aa6b86ac9405193d0f5d5a924eaa02d1a2cbf73b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -973,8 +973,8 @@
     "__chkstk": 7878736,
     "__strnicmp": 7878672,
     "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
-    "??HPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
-    "?Top_Left@Rect@@QBE?AUPoint2D@@XZ": 4412768,
+    "??HTPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "?Top_Left@Rect@@QBE?AUTPoint2D@@XZ": 4412768,
     "__DAT_00ab6ea8": 11234984,
     "__DAT_00ab6eb0": 11234992,
     "__DAT_00ac0168": 11272552,
@@ -1167,7 +1167,7 @@
     "?Resize@?$DynamicVectorClass@UDrawRecord@FoggedObjectClass@@@@UAE_NHPBUDrawRecord@FoggedObjectClass@@@Z": 4989744,
     "__real@8@4001c000000000000000": 8007584,
     "__real@8@3ffefae147ae147ae000": 8056480,
-    "??0Rect@@QAE@ABUPoint2D@@HH@Z": 4537920,
+    "??0Rect@@QAE@ABUTPoint2D@@HH@Z": 4537920,
     "__real@8@bffcc90fdaa22168c000": 7983248,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "??KCoordStruct@@QBE?AU0@H@Z": 7182192,
@@ -1272,8 +1272,8 @@
     "??_7CellClass@@6BINoticeSink@@@": 7985888,
     "??_7CellClass@@6BINoticeSource@@@": 7985880,
     "?Center_Coord@CellClass@@UBE?AUCoordStruct@@XZ": 4700752,
-    "??GRect@@QBE?AV0@ABUPoint2D@@@Z": 4706304,
-    "??GPoint2D@@QBE?AU0@ABU0@@Z": 4706368,
+    "??GRect@@QBE?AV0@ABUTPoint2D@@@Z": 4706304,
+    "??GTPoint2D@@QBE?AU0@ABU0@@Z": 4706368,
     "__purecall": 4950368,
     "??_7AbstractClass@@6B@": 7974360,
     "??_7AnimClass@@6B@": 7979140,
@@ -7905,7 +7905,19 @@
     "??_GLightConvertClass@@": 5476144,
     "??_EBombClass@@UAEPAXI@Z": 4418032,
     "??_ETActionClass@@UAEPAXI@Z": 7024848,
-    "?unknown_slot175@TechnoClass@@UAEHPAVObjectClass@@@Z": 7083472
+    "?unknown_slot175@TechnoClass@@UAEHPAVObjectClass@@@Z": 7083472,
+    "?Unknown_Rect_Shrink_006F1B00@@YIXPAVRect@@H@Z": 7281408,
+    "?Prep_For_Blit@@YI_NAAVSurface@@AAVRect@@01AA_NAAPAX3@Z": 7820128,
+    "?Prep_For_Blit@@YI_NAAVSurface@@ABVRect@@AAV2@012AA_NAAPAX4@Z": 7820208,
+    "?Clip_Line_Outcode@@YIHABVRect@@NN@Z": 7821552,
+    "__real@8@3ff7a3d70a3d70a3d800": 7983472,
+    "__real@8@401f8000000000000000": 7986704,
+    "__real@8@3feb8637bd05af6c6800": 8027424,
+    "__real@8@3ffd99999a0000000000": 7989832,
+    "__real@8@bfffc90fdaa22168c000": 8032208,
+    "__real@8@40048000000000000000": 8051888,
+    "?Draw_It@ProgressScreenClass@@QAEXUPoint2D@@@Z": 6422608,
+    "?Draw_It@PowerClass@@UAEX_N@Z": 6408384
   },
   "regions": [
     {
@@ -11233,8 +11245,8 @@
     {
       "entry": 4706304,
       "method": "0047d000",
-      "symbol": "??GRect@@QBE?AV0@ABUPoint2D@@@Z",
-      "symbol_prefix": "??GRect@@QBE?AV0@ABUPoint2D@@@Z",
+      "symbol": "??GRect@@QBE?AV0@ABUTPoint2D@@@Z",
+      "symbol_prefix": "??GRect@@QBE?AV0@ABUTPoint2D@@@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -11247,7 +11259,7 @@
       "full_extent_bytes": 64,
       "full_extent_sha256": "cc298cd7e595cc8e05635e1ab776e6fb49610f80e2154e01421261327f6c88ea",
       "relocations": [],
-      "source_sha256": "8aac0ea3b8fe0c2bbb8aae3554c5c9fcae163f8f249a58ae5847fe7386fe752f",
+      "source_sha256": "07abb4d4dd535cf0e99722c0cd85b0c8dea6fab0cb65c5bf2fd716ec9a29bfa5",
       "source": "src/recovered/classes/Rect/Rect_operator_minus_0047d000.cpp",
       "population": "population-2566",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
@@ -11259,8 +11271,8 @@
     {
       "entry": 4706368,
       "method": "0047d040",
-      "symbol": "??GPoint2D@@QBE?AU0@ABU0@@Z",
-      "symbol_prefix": "??GPoint2D@@QBE?AU0@ABU0@@Z",
+      "symbol": "??GTPoint2D@@QBE?AU0@ABU0@@Z",
+      "symbol_prefix": "??GTPoint2D@@QBE?AU0@ABU0@@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -11273,7 +11285,7 @@
       "full_extent_bytes": 32,
       "full_extent_sha256": "ef850fe747d4988a9c25ce9696cb42512d3d49e3649534ac3881a170065cbe00",
       "relocations": [],
-      "source_sha256": "1238b862bc54453eeb1b29ef42c0f357d1cb8f4ec1d3da447007a5ac81f333f1",
+      "source_sha256": "6207a9c8df56fa441460dc02cd3d1be45e2ab2ae2e97b113e1e4f7e30db70cd0",
       "source": "src/recovered/classes/Point2D/Point2D_operator_minus_0047d040.cpp",
       "population": "population-2566",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

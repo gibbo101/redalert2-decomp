@@ -4,6 +4,13 @@
 // Layouts from the surface code: Rect is {X, Y, Width, Height} (Get_Rect at
 // 0x00411290 stores 0, 0, Width, Height; the line and blit clippers read
 // +0x08/+0x0C as extents), Point2D is {X, Y}.
+//
+// Two point types: the corner and the point arithmetic of Rect (Top_Left,
+// operator+, operator-) produce TPoint2D, the surfaces take Point2D. Passing
+// a TPoint2D result by value to Surface::Lock goes through Point2D's
+// converting constructor, which VC6 builds in the argument slot (sub esp, 8;
+// mov ecx, esp; two member copies: Prep_For_Blit 0x007753B0 and the other
+// Lock(rect.Top_Left()) callers), where a Point2D local is pushed.
 // Intersect (0x0041FDF0) and Clip_Line (0x00775620) are explicit __fastcall
 // free functions like the rest of the game's non-member code.
 #ifndef RA2_SHARED_RECT_HPP
@@ -11,18 +18,32 @@
 
 struct INIPoint2D;
 
+// The point type of Rect's corner arithmetic (name after Westwood's library
+// TPoint2D<int>; possibly the same type as INIPoint2D, which also converts
+// into Point2D).
+struct TPoint2D {
+    TPoint2D() {}
+    TPoint2D(int x, int y) : X(x), Y(y) {}
+
+    // Not inlined by the original (out-of-line copy 0x00435540, Blit.cpp).
+    TPoint2D operator+(TPoint2D const &point) const;
+    // Member-wise difference (out of line, 0x0047D040 in Cell.cpp; MapClass calls it).
+    TPoint2D operator-(TPoint2D const &point) const;
+
+    int X;          // +0x00
+    int Y;          // +0x04
+};
+
 struct Point2D {
     Point2D() {}
     Point2D(int x, int y) : X(x), Y(y) {}
     // From the point an INI reader returns (defined in shared/ini_class.hpp).
     Point2D(INIPoint2D const &point);
+    // From a Rect corner or a sum of them.
+    Point2D(TPoint2D const &point) : X(point.X), Y(point.Y) {}
 
-    // Not inlined by the original (out-of-line copy 0x00435540, Blit.cpp).
-    Point2D operator+(Point2D const &point) const;
     // Member-wise difference in place (DisplayClass::TacticalClass::Action 0x0049AE70).
     Point2D &operator-=(Point2D const &point) { X -= point.X; Y -= point.Y; return *this; }
-    // Member-wise difference (out of line, 0x0047D040 in Cell.cpp; MapClass calls it).
-    Point2D operator-(Point2D const &point) const;
     int Length() const; // 0047D060, integer table-sqrt vector length
     // Member-wise comparison (the Point2D vectors of MSChoice.cpp,
     // 0x005B1930/0x005B1A90).
@@ -36,7 +57,7 @@ class Rect {
 public:
     Rect() {}
     Rect(int x, int y, int width, int height) : X(x), Y(y), Width(width), Height(height) {}
-    Rect(Point2D const &point, int width, int height);
+    Rect(TPoint2D const &point, int width, int height);
 
     bool Is_Valid() const { return Width > 0 && Height > 0; }
 
@@ -49,10 +70,10 @@ public:
     bool operator!=(Rect const &rect) const { return !(*this == rect); }
 
     // Not inlined by the original (out-of-line copy 0x00435560, Blit.cpp).
-    Point2D Top_Left() const;
+    TPoint2D Top_Left() const;
 
     // The rectangle moved back by point (out of line, 0x0047D000 in Cell.cpp).
-    Rect operator-(Point2D const &point) const;
+    Rect operator-(TPoint2D const &point) const;
 
     // Overlap with another rectangle (the free Intersect below).
     Rect Intersect(Rect const &rect, int *x = 0, int *y = 0) const;
@@ -118,8 +139,11 @@ T __fastcall Union(T const &rect1, T const &rect2)
 }
 
 // Clips a line to a rectangle; false when nothing of it is inside
-// (0x00775620, hypothesis from the surface line drawers).
+// (0x00775620).
 bool __fastcall Clip_Line(Point2D &start, Point2D &end, Rect const &rect);
+// Cohen-Sutherland region code of a point against rect (0x007758F0; Clip_Line
+// expands it inline).
+int __fastcall Clip_Line_Outcode(Rect const &rect, double x, double y);
 
 // Moves every side of a rectangle inwards by amount (outwards when negative)
 // (0x006F1B00).

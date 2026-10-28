@@ -4,8 +4,8 @@
     "id": "population-1573",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "869fd6771b43b0216a822c520dccc24c1732bf083ae3bf4e216617df486f8d13",
-    "historical_acceptance_sha256": "32e66747286425bd201d6b2b914bc5f2aa164cd295e5a2a7d603b43a957c01f4"
+    "historical_population_sha256": "1c61b43a48cb24173b575f595a350d6c0546c5acce4580fb0074f12c4d18ec4c",
+    "historical_acceptance_sha256": "6fa16ce607eb4edc5d0b70e69379dffe556dae8a33580fc428678f4d0ab37680"
   },
   "references": {
     "?ZBufferPtr@@3PAVZBuffer@@A": 8590772,
@@ -313,8 +313,8 @@
     "?Prep_For_Blit@@YI_NAAVSurface@@ABVRect@@AAV2@012AA_NAAPAX4@Z": 7820208,
     "?Lock@DSurface@@UAEPAXUPoint2D@@@Z": 4893824,
     "?Unlock@DSurface@@UAE_NXZ": 4894272,
-    "??HPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
-    "?Top_Left@Rect@@QBE?AUPoint2D@@XZ": 4412768,
+    "??HTPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "?Top_Left@Rect@@QBE?AUTPoint2D@@XZ": 4412768,
     "__DAT_00ab6ea8": 11234984,
     "__DAT_00ab6eb0": 11234992,
     "__DAT_00ac0168": 11272552,

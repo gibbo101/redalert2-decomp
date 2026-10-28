@@ -122,7 +122,7 @@ void Unblock_Mouse();                           // 0x00773660
 int unknown_function_522e80();
 // Draws source through convert onto dest at destpoint clipped to destclip (0x0049F3A0).
 void __fastcall unknown_blit_49f3a0(Surface &dest, void *convert, Surface &source, Rect const &sourcerect,
-                                    Point2D const &destpoint, Rect const &destclip, int unknown1, int unknown2,
+                                    TPoint2D const &destpoint, Rect const &destclip, int unknown1, int unknown2,
                                     int unknown3, int unknown4, int unknown5, int unknown6);
 extern void *unknown_convert_8323c8;            // drawer passed to unknown_blit_49f3a0; no cursor without it
 

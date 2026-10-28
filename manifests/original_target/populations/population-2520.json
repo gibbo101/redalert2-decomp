@@ -4,8 +4,8 @@
     "id": "population-2520",
     "inventory_sha256": "e9ec00becc985a64d4084fef519e54d77dc852498f2585c5f836db36b42a5d15",
     "gaps_sha256": "c75310bc41df56d2b58699935151f8887ad639f916f407fc977809f411cb8fd6",
-    "historical_population_sha256": "5447cd1ac76a4a1affaedd637882cc2d7bdcb35af46c05ff6d57516fc1219156",
-    "historical_acceptance_sha256": "c80e132b6052611f4025cd6de0c198793465c628944dfb2ef268d1f2615f4700"
+    "historical_population_sha256": "39d8c46c8e68d48eb168b46ea5651fb0c3899a70b921e685b9894bbc88906720",
+    "historical_acceptance_sha256": "a1e2bffc1a35901b6da85b3f9aa841b944ce753ea559372d3b7b4b2ec682650a"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2424,7 +2424,7 @@
     "??RRandom3Class@@QAEHHH@Z": 6523344,
     "?Error@?$Int@$0EA@@@2HA": 10753984,
     "_strtok": 7876290,
-    "??HPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HTPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
     "?search_compfunc@?$UnknownIndexClass@JPAVObjectClass@@@@SAHPBX0@Z": 4307472,
     "?Time@ConnectionClass@@SAKXZ": 4724160,
     "??BSystemTimerClass@@QBEJXZ": 6923312,
@@ -3786,7 +3786,7 @@
     "?AddRef@?$TClassFactory@VAlphaShapeClass@@@@UAGKXZ": 6914784,
     "??1MSShapeAnim@@UAE@XZ": 5949216,
     "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
-    "?Top_Left@Rect@@QBE?AUPoint2D@@XZ": 4412768,
+    "?Top_Left@Rect@@QBE?AUTPoint2D@@XZ": 4412768,
     "??0Rect@@QAE@HHHH@Z": 4373712,
     "?Blit@VQMovieHandle@@UAEXXZ": 5904704,
     "?Blit@BinkMovieHandle@@UAEXXZ": 5905248,
@@ -3853,7 +3853,7 @@
     "?Blit@?$RLEBlitTransLucent75AlphaZReadWrite@G@@UBEXPAXPBXHHHHHHHH@Z": 4768256,
     "?Blit@?$RLEBlitTransLucent50AlphaZReadWrite@G@@UBEXPAXPBXHHHHHHHH@Z": 4768720,
     "?Blit@?$RLEBlitTransLucent25AlphaZReadWrite@G@@UBEXPAXPBXHHHHHHHH@Z": 4769216,
-    "??0Rect@@QAE@ABUPoint2D@@HH@Z": 4537920,
+    "??0Rect@@QAE@ABUTPoint2D@@HH@Z": 4537920,
     "?AI@FactoryClass@@UAEXXZ": 4952832,
     "?QueryInterface@?$TClassFactory@VCStreamClass@@@@UAGJABUGUID@@PAPAX@Z": 6886640,
     "?QueryInterface@?$TClassFactory@VWaveClass@@@@UAGJABUGUID@@PAPAX@Z": 6887024,

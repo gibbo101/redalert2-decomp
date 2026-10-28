@@ -4,8 +4,8 @@
     "id": "population-1696",
     "inventory_sha256": "2047a1e400bd8e4ec359e3325eebd4e650a165c18bc3a7699fc6bb00054516cc",
     "gaps_sha256": "31a9a2a3b15a5bae6c3cba890eda042ff8fddb0a4acdad80e5d0c032a2e6ba3c",
-    "historical_population_sha256": "e9ca1636f92ee7afbc7ebd3173b26cd1d70b2367733a6739d02c973299c95901",
-    "historical_acceptance_sha256": "12b764505409d257f4fb0e0ae0145a4ad8a9cc03eb8686d439f95931643e5949"
+    "historical_population_sha256": "5883f6bda39e122bc7d8befaafa65823d39ae3219151dcc4cda7fc21f3210eab",
+    "historical_acceptance_sha256": "fe8059814d51860659c6e68735e03bdef6e966120933e7a92f520a22cab926b3"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2254,8 +2254,8 @@
     "__chkstk": 7878736,
     "__strnicmp": 7878672,
     "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
-    "??HPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
-    "?Top_Left@Rect@@QBE?AUPoint2D@@XZ": 4412768,
+    "??HTPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "?Top_Left@Rect@@QBE?AUTPoint2D@@XZ": 4412768,
     "??BSystemTimerClass@@QBEJXZ": 6923312,
     "?Timer@MouseClass@@2V?$CDTimerClass@VSystemTimerClass@@@@A": 10948464,
     "__DAT_00ab6ea8": 11234984,
