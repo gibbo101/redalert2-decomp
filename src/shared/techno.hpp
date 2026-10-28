@@ -538,7 +538,7 @@ public:
     virtual void unknown_slot264();                             // slot 264 (+0x420) 0x006D74D0
     virtual void unknown_slot265();                             // slot 265 (+0x424) 0x006D7500
     virtual void unknown_slot266();                             // slot 266 (+0x428) 0x006D7530
-    virtual int unknown_slot267(int arg1);                          // slot 267 (+0x42C) 0x006D8120
+    virtual void unknown_slot267(bool arg1);                        // slot 267 (+0x42C) 0x006D8120
     virtual int unknown_slot268(UnknownSlot268Arg const *arg) { return arg->unknown_0c; } // slot 268 (+0x430) 0x006D8EB0
     virtual void unknown_slot269() {}                          // slot 269 (+0x434) 0x006D8EC0
     virtual bool unknown_slot270() { return false; }           // slot 270 (+0x438) 0x006D8ED0

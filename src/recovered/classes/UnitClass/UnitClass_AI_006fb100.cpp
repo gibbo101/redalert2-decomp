@@ -63,7 +63,7 @@ void UnitClass::AI()
     }
     if (unknown_574 >= 0) {
         Unknown_006FAA30();
-        unknown_slot267(0);
+        unknown_slot267(false);
         return;
     }
     int countdown = unknown_5a8 - 1;

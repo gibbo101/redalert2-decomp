@@ -27,7 +27,7 @@ void InfantryClass::AI()
 {
     if (unknown_574 >= 0) {
         unknown_5025c0();
-        unknown_slot267(0);
+        unknown_slot267(false);
         return;
     }
     if ((unknown_slot111() || unknown_slot112()) && Frame % 24 == 0 && Rules->unknown_2a8 != 0) {

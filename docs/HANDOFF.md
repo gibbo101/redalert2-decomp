@@ -9,8 +9,8 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Surf66 (Surface, XSurface, BSurface, DSurface), Foot68 (FootClass, then TechnoClass), Leaf67 (ObjectClass leaf classes: Bullet, VoxelAnim,
-BuildingLight, Anim, Overlay, Veinhole, Particle, Terrain). Windows: one Codex lead
+has 16 GB): Surf66 (Surface, XSurface, BSurface, DSurface), Foot68 (FootClass, then TechnoClass), Promo69 (drafts recorded exact but never landed:
+`build/class-work/Promo69/candidates.md`), Seed70 (sweep_seeds breadth, 100-1500 B). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -82,6 +82,11 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - InfantryClass (Inf65 NOTES): 0x507170 99.37, 0x504BC0 98.41, 0x4FFB70 82.95; FootClass slot 54
   0x4C8220 86.96. Uncovered template members: DynamicVectorClass<PlanningNodeClass*> Delete
   0x61B350/0x61B390, DynamicVectorClass<TechnoTypeClass*>::Delete 0x6DFA70.
+- ObjectClass leaves (Leaf67 NOTES): Bullet Draw 0x4610D0 98.91, Terrain slot67 0x6E3990 95.56,
+  slot63 88.79, Overlay Write_INI 0x5DBA30 86.91, Veinhole 0x711E60 86.51 / 0x711D20 85.71,
+  VoxelAnim ctor 85.64; BuildingLight slot67 0x433380 and AI 0x433970 have short inventory bounds.
+- Handwritten assembly (not C; ledger category): XSurface::Fill_Rect(clip, rect, color) 0x7743C0,
+  BlitTrans<uchar>::BlitForward 0x775980 (Surf66).
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).
