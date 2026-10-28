@@ -7,6 +7,6 @@
 // @ref ??_7FoggedObjectClass@@6BINoticeSource@@@=007a111c
 // @ref ??_7?$DynamicVectorClass@UDrawRecord@FoggedObjectClass@@@@6B@=007a11b0
 FoggedObjectClass::FoggedObjectClass(NoInitClass const &noinit)
-    : AbstractClass(noinit), unknown_50(noinit)
+    : AbstractClass(noinit)
 {
 }
