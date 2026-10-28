@@ -1,5 +1,5 @@
 // Header-static dynamic initializers of the unit at 0x00532E80 and its
-// list globals (LaserDrawClass); the other drafts of this plan are emitted by this file.
+// list globals (LaserDrawList::Array); the other drafts of this plan are emitted by this file.
 // A list whose atexit thunk tests and sets a guard bit is a static data
 // member (VC6 guards their destruction); its owner class is a hypothesis.
 #include "shared/unknown_geometry.hpp"
@@ -8,21 +8,16 @@
 #define VECTOR_IMPLEMENT_ALL
 #endif
 #include "shared/vector_class.hpp"
+#include "shared/laser_draw_list.hpp"
 
-// Only the members this unit defines; the layout is not recovered here.
-class LaserDrawClass {
-public:
-    static DynamicVectorClass<LaserDrawClass *> Array;   // 0x00A6E698
-};
-
-DynamicVectorClass<LaserDrawClass *> LaserDrawClass::Array;
+DynamicVectorClass<LaserDrawClass *> LaserDrawList::Array;
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??8?$VectorClass@PAVLaserDrawClass@@@@UBE_NABV0@@Z=005343b0
 // @ref ??_7?$DynamicVectorClass@PAVLaserDrawClass@@@@6B@=007a5414
 // @ref ??_7?$VectorClass@PAVLaserDrawClass@@@@6B@=007a5434
 // @ref ??_G?$DynamicVectorClass@PAVLaserDrawClass@@@@UAEPAXI@Z=00534660
 // @ref ??_G?$VectorClass@PAVLaserDrawClass@@@@UAEPAXI@Z=00534610
-// @ref ?Array@LaserDrawClass@@2V?$DynamicVectorClass@PAVLaserDrawClass@@@@A=00a6e698
+// @ref ?Array@LaserDrawList@@2V?$DynamicVectorClass@PAVLaserDrawClass@@@@A=00a6e698
 // @ref ?Clear@?$DynamicVectorClass@PAVLaserDrawClass@@@@UAEXXZ=00534350
 // @ref ?Clear@?$VectorClass@PAVLaserDrawClass@@@@UAEXXZ=005344a0
 // @ref ?Fetch@?$VectorClass@PAVLaserDrawClass@@@@UBEPAVLaserDrawClass@@H@Z=005343a0

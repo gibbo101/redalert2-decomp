@@ -37,4 +37,44 @@ struct UnknownStage {
     int unknown_14;                                     // +0x14 (step; 1)
 };
 
+// Westwood's animation stage counter (AnimClass +0x98, LaserDrawClass +0x00),
+// moved here from shared/anim.hpp. Same layout as UnknownStage, with other
+// inline helpers.
+// StageClass's frame countdown. Its NoInitClass constructor is called out of
+// line (0x00423F60, an empty COMDAT shared with TeamClass's
+// UnknownTimer423F60 in shared/techno.hpp); hypothesis for the original
+// class shape.
+class StageTimerClass : public CDTimerClass<FrameTimerClass> {
+public:
+    StageTimerClass(long set) : CDTimerClass<FrameTimerClass>(set) {}
+    StageTimerClass(NoInitClass const &noinit);         // 0x00423F60
+};
+
+class StageClass {
+public:
+    StageClass() : Stage(0), StageTimer(0), Rate(0), Step(1) {}
+    StageClass(NoInitClass const &noinit) : StageTimer(noinit) {}
+
+    void Set_Rate(int rate)
+    {
+        StageTimer = rate;
+        Rate = rate;
+    }
+
+    // Inline StageClass operations observed in FactoryClass::AI (0x004B9300); names are hypotheses.
+    bool Ready_For_Advance() const { return StageTimer.Value()==0 && Rate!=0; }
+    bool Advance_Stage_When_Ready()
+    {
+        if(!Ready_For_Advance()) return false;
+        Stage=(int)((unsigned int)Stage+(unsigned int)Step);
+        StageTimer=Rate;
+        return true;
+    }
+
+    int Stage;                                  // +0x00
+    StageTimerClass StageTimer;                 // +0x04
+    int Rate;                                   // +0x10
+    int Step;                                   // +0x14 frame step (1; -1 for Reverse types)
+};
+
 #endif

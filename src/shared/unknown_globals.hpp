@@ -206,6 +206,8 @@ void __fastcall Unknown_004A6B90();
 void __fastcall Unknown_005A07F0(int arg1, int arg2, int arg3, int arg4, int arg5);   // 0x005A07F0
 // Frees the art data before a scenario starts (0x006F30F0).
 void __fastcall Unknown_Free_Art_Set_006F30F0();
+void __fastcall Unknown_Free_Art_Sets_006F2510();                 // 0x006F2510
+void __fastcall Unknown_Free_Art_Pair_006F26D0();                 // 0x006F26D0
 // Deletes every LightConvertClass in the global list (0x00832398) and makes a
 // new default one (tint 1000, 1000, 1000) (0x00529720; DisplayClass 0x0049E570
 // and UnknownIDSource::Read_Basic call it; name hypothesis).
@@ -252,15 +254,35 @@ void Unknown_006ecf10();                                    // 0x006ECF10 (walks
 // A lazily made object (0x00A6E7C4; 0x00535910 makes it, 0x00535BF0 runs it;
 // vtable 0x007A549C with one slot). The progress screen sends it its percent
 // before and after each change (message 0x11AE).
+// Layout from the factory's stores (0x00535910, 0x60 bytes) and the release
+// 0x00536E20; +0x04 is LOAD.MIX (0x00535B90 makes it), +0x5C a 0x20-byte
+// surface (0x00535BF0 makes it).
 struct Point2D;
+class CCFileClass;
+template <class T> class MixFileClass;
 struct Unknown535910 {
     virtual bool Message_00536ea0(int message, void *data);      // slot 0
     void Unknown_00535BF0();
     void Unknown_005359E0();                // 0x005359E0 (places itself by the screen size)
     Point2D Unknown_00535AB0();             // 0x00535AB0 (the loading screen's text position)
     int Unknown_00535B60();                 // 0x00535B60 (the name width: -1 in a campaign)
-    void Unknown_00535B90();                // 0x00535B90
+    void Unknown_00535B90();                // 0x00535B90 (opens LOAD.MIX)
     void Unknown_00536E20();                // 0x00536E20 (frees its buffers and surfaces)
+
+    MixFileClass<CCFileClass> *LoadMix;     // +0x04 LOAD.MIX
+    char unknown_08[0x30];                  // +0x08 not written by the factory
+    int unknown_38;                         // +0x38
+    int unknown_3c;                         // +0x3C
+    void *unknown_40;                       // +0x40 buffer, owned when unknown_4c
+    void *unknown_44;                       // +0x44 buffer, owned when unknown_4d
+    void *unknown_48;                       // +0x48 buffer, owned when unknown_4e
+    bool unknown_4c;                        // +0x4C
+    bool unknown_4d;                        // +0x4D
+    bool unknown_4e;                        // +0x4E
+    int unknown_50;                         // +0x50
+    int unknown_54;                         // +0x54
+    int unknown_58;                         // +0x58
+    Surface *unknown_5c;                    // +0x5C (0x20 bytes, constructed by 0x0049ED90)
 };
 Unknown535910 *Unknown_00535910();
 // The art data at 0x00AC1154 (0x006F2490; the campaign loading screen's bar drawer).
