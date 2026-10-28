@@ -4905,54 +4905,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 6102816,
-      "method": "5d1f20",
-      "symbol": "?get@Leaf_5d1f20@@QAEII@Z",
-      "symbol_prefix": "?get@Leaf_5d1f20@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 5,
-      "body_sha256": "5fed5afb29946811bf02359627a94bc01d08d31b779528feaadde3866af9c855",
-      "padding_bytes": 11,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "3004f92f58d17d5816db8b502d475d818e57c2ba54e31a90c4f95edece32ad1b",
-      "relocations": [],
-      "source": "src/recovered/classes/NullModemClass/005d1f20.cpp",
-      "source_sha256": "17c2f49e0d218658bbc0a0cbcbe838f66ba6a471508a4678bca36c394f804fa1",
-      "source_order": 4055,
-      "population": "population-09",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
-      "entry": 6102832,
-      "method": "5d1f30",
-      "symbol": "?get@Leaf_5d1f30@@QAEII@Z",
-      "symbol_prefix": "?get@Leaf_5d1f30@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 5,
-      "body_sha256": "5fed5afb29946811bf02359627a94bc01d08d31b779528feaadde3866af9c855",
-      "padding_bytes": 11,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "3004f92f58d17d5816db8b502d475d818e57c2ba54e31a90c4f95edece32ad1b",
-      "relocations": [],
-      "source": "src/recovered/classes/NullModemClass/005d1f30.cpp",
-      "source_sha256": "3f79afd1b059aaed76fcfb89a0ff192deb39e0dbe96cbbc47cf4b28f59ff23d3",
-      "source_order": 4056,
-      "population": "population-09",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 6344944,
       "method": "60d0f0",
       "symbol": "?get@Leaf_60d0f0@@QAEXXZ",
