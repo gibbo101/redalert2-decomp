@@ -9,6 +9,8 @@ class Surface;
 
 class UnknownBitmapWriter {
 public:
+    UnknownBitmapWriter();                  // 0x0068BD50
+    ~UnknownBitmapWriter();                 // 0x0068BE30
     void Write_0068c040(char const *file, void *bitmap, void *palette, int format);
     // Copies image into rect of destination, skipping the transparent pixel
     // (0x0068CE80; false when the image cannot be locked).

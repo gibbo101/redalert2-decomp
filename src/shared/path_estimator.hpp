@@ -9,6 +9,8 @@
 class FootClass;
 
 struct UnknownPathEstimator {
+    UnknownPathEstimator();                 // 0x00427FB0
+    ~UnknownPathEstimator();                // 0x004281E0
     // The length of a path between two cells for a unit (0x0042AA30; hypothesis).
     int Unknown_0042AA30(Cell const &from, Cell const &to, FootClass *foot, bool from_bridge, bool to_bridge, int arg6);
     // Resets the estimator (0x00429A90; MapClass 0x00563D40 after rebuilding the subzones).

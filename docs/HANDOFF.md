@@ -9,9 +9,9 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Seed70 (sweep_seeds breadth, 100-1500 B), Surf71 (DSurface slots 13-16
-and the Surf66 misses), Debt73 (evidenced signature renames and the misses they unblock), Tiny74
-(sweep under 100 B, including inline COMDATs accepted units already emit). Windows: one Codex lead
+has 16 GB): Seed70 (seed sweep 100-1500 B below 0x680000), Seed76 (the same sweep
+from 0x680000), Tiny74 (under 100 B, including inline COMDATs accepted units already emit),
+Big75 (1-4 KB functions, controlled-study method). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -21,15 +21,19 @@ Each lane's resume notes are in `build/class-work/<Lane>/NOTES*` (ignored).
 
 1. Take a delivery: frozen `d/rN/` folder with plans, drafts, header copies,
    base commit. Plans use forward-slash paths and LF endings.
-2. Merge header copies with `git merge-file src/shared/H BASE COPY` (BASE = the
+2. Frozen whole-population plans carry context drafts from their base commit; when later landings
+   rewrote those sources, `private/tools/rehead_plan.py PLAN` writes PLAN.head.json with unchanged
+   context rows re-pointed at HEAD sources (drafts that rewrite a source are kept; missing population
+   rows are added; Windows `C:/` prefixes are stripped). Accept the .head.json.
+3. Merge header copies with `git merge-file src/shared/H BASE COPY` (BASE = the
    header at the worker's base commit). New headers are copied.
-3. Accept each plan: `$RA2_PYTHON -B tools/original_target/accept_sources.py
+4. Accept each plan: `$RA2_PYTHON -B tools/original_target/accept_sources.py
    --config private/original-target.interactive.json --output
    private/original-target-20261020/accept-NAME PLAN` (accepted == candidates).
-4. Land with `private/tools/land.sh "message"`: rehash, full build, commit only
+5. Land with `private/tools/land.sh "message"`: rehash, full build, commit only
    if `"whole_file_exact": true`, sync Windows, publish the GitHub snapshot,
    prune old build outputs.
-5. Signature/name changes land alone through
+6. Signature/name changes land alone through
    `tools/original_target/apply_rename.py SPEC --dry-run`, then with
    `--config private/original-target.interactive.json`, then `land.sh`.
 
@@ -97,6 +101,13 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
   Foot slot 77 0x4C69F0 65.32 (body 1312 with jump and byte tables).
 - Coord stand-ins (Study72 FINDINGS): UnknownVector3 0x41B630 is CoordStruct(int,int,int);
   CoordStruct::Set_00434820 is the UnknownCoord434820 forwarding constructor.
+- Surfaces (Surf71 NOTES): Plot_Line 0x773F00 99.44, Draw_Ellipse 22.71 (decoded), DSurface slots
+  13-16 (~14 KB) not started; Intersect lives in rect_intersect.hpp because xsurface.cpp must not
+  see it (Draw_Line 0x773980 calls 0x41FDF0).
+- Debt73 NOTES: slot 234 0x6C89C0 89.83 (budget), Clear_Scenario 94.63, Coord stand-in renames
+  blocked until the Aircraft/BuildingLight callers that keep them out of line are recovered.
+- Windows lead: r1-r16 landed (last e3e64c00, tools 728474f6); Factory/House declarations and the
+  Leaf_4ea7f0 rename approved 2026-10-28 for the Building 0x44B480 caller plan.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

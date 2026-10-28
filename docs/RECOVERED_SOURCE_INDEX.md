@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 714 | 66,719 | 714 | 0x004011C0–0x0077CB70 |
+| [unowned](../src/recovered/unowned/) | 718 | 66,783 | 718 | 0x004011C0–0x0077CB70 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | (discovery: address-named) | 1552 | 46,636 | 0 | 0x004010A0–0x00797198 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 157 | 38,753 | 157 | 0x00438A60–0x004D3450 |
@@ -138,6 +138,7 @@
 | [classes/CampaignClass](../src/recovered/classes/CampaignClass/) | 14 | 1,503 | 14 | 0x00465450–0x004D37D0 |
 | [classes/VectorClass](../src/recovered/classes/VectorClass/) | 15 | 1,500 | 15 | 0x0045EDF0–0x00634E20 |
 | [classes/GadgetClass](../src/recovered/classes/GadgetClass/) | 28 | 1,479 | 28 | 0x00483560–0x004CF6A0 |
+| [classes/VectorClass_SubzoneTrackingStruct](../src/recovered/classes/VectorClass_SubzoneTrackingStruct/) | 8 | 1,468 | 7 | 0x0056ABF0–0x0056CC40 |
 | [classes/IPXGlobalConnClass](../src/recovered/classes/IPXGlobalConnClass/) | 15 | 1,463 | 15 | 0x005241B0–0x00524DD0 |
 | [classes/MechLocomotionClass](../src/recovered/classes/MechLocomotionClass/) | 18 | 1,455 | 18 | 0x005916D0–0x00593310 |
 | [classes/EditClass](../src/recovered/classes/EditClass/) | 11 | 1,447 | 9 | 0x004A5550–0x004B2F20 |
@@ -196,6 +197,7 @@
 | [classes/PacketField_004BAD50](../src/recovered/classes/PacketField_004BAD50/) | 11 | 933 | 11 | 0x004BAD50–0x004BB0F0 |
 | [classes/ScriptClass](../src/recovered/classes/ScriptClass/) | 17 | 920 | 17 | 0x0040E590–0x00669250 |
 | [classes/VectorClass_ParticleSystemTypeClass_ptr](../src/recovered/classes/VectorClass_ParticleSystemTypeClass_ptr/) | 14 | 913 | 13 | 0x00453D10–0x006DF8C0 |
+| [classes/VectorClass_TeamTypeClass_ptr](../src/recovered/classes/VectorClass_TeamTypeClass_ptr/) | 14 | 913 | 13 | 0x004D5300–0x006C0930 |
 | [classes/VQA](../src/recovered/classes/VQA/) | 21 | 905 | 21 | 0x0071C320–0x0071D6E0 |
 | [classes/Random](../src/recovered/classes/Random/) | 8 | 896 | 8 | 0x00638700–0x006389D0 |
 | [word_sequences](../src/recovered/word_sequences/) | 21 | 885 | 21 | 0x004546E0–0x0076D840 |
@@ -205,6 +207,7 @@
 | [classes/DynamicVectorClass_SmudgeTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_SmudgeTypeClass_ptr/) | 11 | 864 | 9 | 0x004D53D0–0x00654480 |
 | [classes/PKPipe](../src/recovered/classes/PKPipe/) | 9 | 857 | 9 | 0x0060FA90–0x0060FDD0 |
 | [classes/VectorClass_InfantryTypeClass_ptr](../src/recovered/classes/VectorClass_InfantryTypeClass_ptr/) | 14 | 851 | 12 | 0x004D5660–0x00652840 |
+| [classes/VectorClass_ZoneConnectionClass](../src/recovered/classes/VectorClass_ZoneConnectionClass/) | 8 | 845 | 6 | 0x0056AB10–0x0056CB90 |
 | [classes/StaticButtonClass](../src/recovered/classes/StaticButtonClass/) | 8 | 840 | 8 | 0x00698760–0x00698AA0 |
 | [classes/AlphaShapeClass](../src/recovered/classes/AlphaShapeClass/) | 12 | 836 | 12 | 0x0041EB60–0x0041F9C0 |
 | [classes/PKStraw](../src/recovered/classes/PKStraw/) | 8 | 835 | 8 | 0x0060FE30–0x00610150 |
@@ -212,11 +215,11 @@
 | [classes/VectorClass_int](../src/recovered/classes/VectorClass_int/) | 12 | 835 | 8 | 0x0046CCD0–0x00652810 |
 | [classes/DynamicVectorClass_AnimClass_ptr](../src/recovered/classes/DynamicVectorClass_AnimClass_ptr/) | 12 | 822 | 8 | 0x004D5070–0x00520F50 |
 | [classes/GraphicMenuAnimItem](../src/recovered/classes/GraphicMenuAnimItem/) | 4 | 817 | 3 | 0x004DF350–0x004DF7B0 |
+| [classes/VectorClass_SubzoneConnectionStruct](../src/recovered/classes/VectorClass_SubzoneConnectionStruct/) | 9 | 815 | 8 | 0x0040B050–0x0056CAF0 |
 | [classes/DynamicVectorClass_ParticleSystemTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_ParticleSystemTypeClass_ptr/) | 11 | 812 | 10 | 0x00453CC0–0x006DF990 |
 | [classes/VectorClass_AircraftTypeClass_ptr](../src/recovered/classes/VectorClass_AircraftTypeClass_ptr/) | 13 | 806 | 12 | 0x004D5540–0x004FB660 |
 | [classes/VectorClass_UnitTypeClass_ptr](../src/recovered/classes/VectorClass_UnitTypeClass_ptr/) | 13 | 806 | 12 | 0x004D55A0–0x004FB610 |
 | [classes/VectorClass_AnimClass_ptr](../src/recovered/classes/VectorClass_AnimClass_ptr/) | 13 | 805 | 12 | 0x004D50C0–0x00520F00 |
-| [classes/VectorClass_TeamTypeClass_ptr](../src/recovered/classes/VectorClass_TeamTypeClass_ptr/) | 13 | 805 | 12 | 0x004D5300–0x004F8710 |
 | [classes/VectorClass_unsigned_short_ptr](../src/recovered/classes/VectorClass_unsigned_short_ptr/) | 13 | 805 | 12 | 0x0052E720–0x0053AE60 |
 | [classes/MapRegionClass](../src/recovered/classes/MapRegionClass/) | 2 | 787 | 2 | 0x005709C0–0x00571DB0 |
 | [classes/GScreenClass](../src/recovered/classes/GScreenClass/) | 17 | 786 | 14 | 0x0040D100–0x004E1110 |
@@ -235,16 +238,17 @@
 | [classes/VectorClass_DirtyAreaStruct](../src/recovered/classes/VectorClass_DirtyAreaStruct/) | 7 | 703 | 5 | 0x006AC8D0–0x006ACFC0 |
 | [classes/MultiplayerSiege](../src/recovered/classes/MultiplayerSiege/) | 9 | 702 | 5 | 0x005AB5A0–0x005ABBA0 |
 | [classes/CounterClass](../src/recovered/classes/CounterClass/) | 9 | 696 | 8 | 0x00491C00–0x00491F00 |
+| [classes/DynamicVectorClass_SubzoneTrackingStruct](../src/recovered/classes/DynamicVectorClass_SubzoneTrackingStruct/) | 5 | 696 | 4 | 0x0056AB40–0x0056C390 |
 | [classes/VectorClass_HashObject_HashString_SchemeNode_ptr](../src/recovered/classes/VectorClass_HashObject_HashString_SchemeNode_ptr/) | 7 | 695 | 6 | 0x00605810–0x00605E30 |
 | [classes/LZOStraw](../src/recovered/classes/LZOStraw/) | 4 | 675 | 4 | 0x0053EFB0–0x0053F220 |
 | [address_offsets](../src/recovered/address_offsets/) | 25 | 674 | 25 | 0x0042AE90–0x0076D5E0 |
-| [classes/VectorClass_ZoneConnectionClass](../src/recovered/classes/VectorClass_ZoneConnectionClass/) | 7 | 671 | 5 | 0x0056AB10–0x0056C1B0 |
 | [classes/GraphicMenuShortcutItem](../src/recovered/classes/GraphicMenuShortcutItem/) | 4 | 669 | 4 | 0x004E0250–0x004E0630 |
 | [classes/MSShapeAnim](../src/recovered/classes/MSShapeAnim/) | 8 | 668 | 7 | 0x005AC6A0–0x005AFCC0 |
 | [classes/WorldDominationTour__Territory](../src/recovered/classes/WorldDominationTour__Territory/) | 8 | 666 | 8 | 0x00730B80–0x00731290 |
 | [classes/CDownloadEventSink](../src/recovered/classes/CDownloadEventSink/) | 7 | 664 | 7 | 0x007668A0–0x00766B20 |
 | [classes/DynamicVectorClass_TechnoTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TechnoTypeClass_ptr/) | 9 | 661 | 7 | 0x0046CCE0–0x006DFA70 |
 | [classes/DynamicVectorClass_VoxelAnimTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_VoxelAnimTypeClass_ptr/) | 10 | 650 | 9 | 0x004D56D0–0x006DF890 |
+| [classes/DynamicVectorClass_SubzoneConnectionStruct](../src/recovered/classes/DynamicVectorClass_SubzoneConnectionStruct/) | 7 | 639 | 5 | 0x0056AA70–0x0056C9B0 |
 | [classes/DynamicVectorClass_TeamTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TeamTypeClass_ptr/) | 9 | 639 | 8 | 0x004D52B0–0x004F7E10 |
 | [classes/DynamicVectorClass_MultiMission_ptr](../src/recovered/classes/DynamicVectorClass_MultiMission_ptr/) | 7 | 625 | 5 | 0x005CD590–0x006741F0 |
 | [classes/Blit](../src/recovered/classes/Blit/) | 7 | 612 | 7 | 0x00434940–0x00435560 |
@@ -292,7 +296,6 @@
 | [classes/RGBClass](../src/recovered/classes/RGBClass/) | 4 | 525 | 4 | 0x004A9AF0–0x0063CF20 |
 | [classes/VectorClass_rc_ptr_WDTTerritory](../src/recovered/classes/VectorClass_rc_ptr_WDTTerritory/) | 6 | 521 | 6 | 0x0072CA70–0x0072CD60 |
 | [classes/VectorClass_rc_ptr_WorldDominationTour__Territory](../src/recovered/classes/VectorClass_rc_ptr_WorldDominationTour__Territory/) | 6 | 521 | 6 | 0x0072AFD0–0x0072B2F0 |
-| [classes/VectorClass_SubzoneConnectionStruct](../src/recovered/classes/VectorClass_SubzoneConnectionStruct/) | 7 | 520 | 6 | 0x0040B050–0x0040B230 |
 | [classes/VectorClass_SwizzlePointerClass](../src/recovered/classes/VectorClass_SwizzlePointerClass/) | 7 | 520 | 6 | 0x0069FE20–0x006A0130 |
 | [classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr](../src/recovered/classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr/) | 5 | 519 | 4 | 0x006056F0–0x00605D30 |
 | [classes/RLEBlitTransLucent25AlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransLucent25AlphaZReadWrite_unsigned_short/) | 2 | 516 | 1 | 0x0048C5C0–0x0048D930 |
@@ -340,7 +343,6 @@
 | [classes/VectorClass_HashObject_unsigned_int_unsigned_int](../src/recovered/classes/VectorClass_HashObject_unsigned_int_unsigned_int/) | 7 | 488 | 6 | 0x0056AD90–0x0056C910 |
 | [classes/RLEBlitTransLucent50AlphaZRead_unsigned_short](../src/recovered/classes/RLEBlitTransLucent50AlphaZRead_unsigned_short/) | 2 | 487 | 1 | 0x0048B5B0–0x0048D6F0 |
 | [classes/VectorClass_BuildingTypeDistribution](../src/recovered/classes/VectorClass_BuildingTypeDistribution/) | 5 | 487 | 4 | 0x004F6EC0–0x004F8250 |
-| [classes/DynamicVectorClass_SubzoneConnectionStruct](../src/recovered/classes/DynamicVectorClass_SubzoneConnectionStruct/) | 6 | 486 | 4 | 0x0056AA70–0x0056B9B0 |
 | [classes/RLEBlitTransZRemapXlatAlphaZRead_unsigned_short](../src/recovered/classes/RLEBlitTransZRemapXlatAlphaZRead_unsigned_short/) | 2 | 485 | 1 | 0x0048B240–0x0048D670 |
 | [classes/DynamicVectorClass_Wstring](../src/recovered/classes/DynamicVectorClass_Wstring/) | 4 | 482 | 4 | 0x00673830–0x00674030 |
 | [classes/DynamicVectorClass_TagClass_ptr](../src/recovered/classes/DynamicVectorClass_TagClass_ptr/) | 7 | 478 | 4 | 0x004D4760–0x004DBC40 |
@@ -942,7 +944,6 @@
 | [classes/TauntCommandClass](../src/recovered/classes/TauntCommandClass/) | 6 | 193 | 4 | 0x0051B530–0x0051B820 |
 | [classes/FilePipe](../src/recovered/classes/FilePipe/) | 4 | 192 | 4 | 0x0046CBD0–0x007737F0 |
 | [classes/UnknownComPtr_ILocomotion](../src/recovered/classes/UnknownComPtr_ILocomotion/) | 3 | 192 | 3 | 0x0041B650–0x00509830 |
-| [classes/VectorClass_SubzoneTrackingStruct](../src/recovered/classes/VectorClass_SubzoneTrackingStruct/) | 3 | 192 | 2 | 0x0056B4D0–0x0056B810 |
 | [classes/RLEBlitTransLucent25_unsigned_short](../src/recovered/classes/RLEBlitTransLucent25_unsigned_short/) | 2 | 191 | 2 | 0x00489B00–0x0048D2F0 |
 | [classes/RLEBlitTransLucent75_unsigned_short](../src/recovered/classes/RLEBlitTransLucent75_unsigned_short/) | 2 | 191 | 2 | 0x004899C0–0x0048D2B0 |
 | [classes/TClassFactory_AITriggerTypeClass](../src/recovered/classes/TClassFactory_AITriggerTypeClass/) | 4 | 189 | 4 | 0x00697DF0–0x00697F30 |
@@ -1100,7 +1101,6 @@
 | [classes/BlitTransRemapXlat_unsigned_char](../src/recovered/classes/BlitTransRemapXlat_unsigned_char/) | 2 | 102 | 2 | 0x00486470–0x0048C850 |
 | [classes/MultiplayerBattle](../src/recovered/classes/MultiplayerBattle/) | 4 | 102 | 4 | 0x005A2320–0x005A2500 |
 | [classes/MultiplayerManBattle](../src/recovered/classes/MultiplayerManBattle/) | 3 | 99 | 0 | 0x005A74B0–0x005A7500 |
-| [classes/DynamicVectorClass_SubzoneTrackingStruct](../src/recovered/classes/DynamicVectorClass_SubzoneTrackingStruct/) | 2 | 96 | 1 | 0x0056ABC0–0x0056B9F0 |
 | [classes/ScoreBigFontClass](../src/recovered/classes/ScoreBigFontClass/) | 1 | 96 | 0 | 0x00668490–0x00668490 |
 | [classes/ScoreFullFontClass](../src/recovered/classes/ScoreFullFontClass/) | 1 | 96 | 0 | 0x00668430–0x00668430 |
 | [classes/Vector3](../src/recovered/classes/Vector3/) | 4 | 94 | 4 | 0x00437690–0x00717CD0 |
@@ -1220,6 +1220,7 @@
 | [header_statics/00716d80](../src/recovered/header_statics/00716d80/) | 1 | 23 | 1 | 0x00716D80–0x00716D80 |
 | [header_statics/00773930](../src/recovered/header_statics/00773930/) | 1 | 23 | 1 | 0x00773930–0x00773930 |
 | [header_statics/00775b60](../src/recovered/header_statics/00775b60/) | 1 | 23 | 1 | 0x00775B60–0x00775B60 |
+| [classes/Cell](../src/recovered/classes/Cell/) | 1 | 22 | 1 | 0x0042AD30–0x0042AD30 |
 | [classes/CDTimerClass_FrameTimerClass](../src/recovered/classes/CDTimerClass_FrameTimerClass/) | 1 | 20 | 1 | 0x00463F80–0x00463F80 |
 | [classes/IndexClass_int_INISection_ptr](../src/recovered/classes/IndexClass_int_INISection_ptr/) | 1 | 19 | 1 | 0x004910C0–0x004910C0 |
 | [classes/ATL__CComObject_CChatEventSink](../src/recovered/classes/ATL__CComObject_CChatEventSink/) | 1 | 17 | 0 | 0x00765B20–0x00765B20 |
@@ -1230,7 +1231,7 @@
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 
-1223 directories, 14203 regions. Generated by `tools/original_target/source_index.py`.
+1224 directories, 14221 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
