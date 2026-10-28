@@ -78,6 +78,8 @@ def compile_batch(config, batch, directory, options, timeout=1800):
     The parallel runner's watchdog kills a compiler stuck for minutes on one
     seed; that seed is recorded as hung and the rest continue.
     """
+    if config.get('wine_kind') == 'native':
+        return compile_native_batch(config, batch, directory, options)
     from build import wine_parallel, win
     compiler = win(Path(config['compiler_directory']) / 'CL.EXE')
     units = []
@@ -95,20 +97,93 @@ def compile_batch(config, batch, directory, options, timeout=1800):
     return hung
 
 
+def compile_native_batch(config, batch, directory, options, timeout=180):
+    """Bound each native compiler process; never inspect or kill other jobs."""
+    from concurrent.futures import ThreadPoolExecutor
+    import os
+    import subprocess
+    from build import exclusive_lock
+    compiler = str(Path(config['compiler_directory']) / 'CL.EXE')
+
+    def compile_one(entry):
+        source = directory / ('%08x.cpp' % entry)
+        obj = source.with_suffix('.obj')
+        log = source.with_suffix('.log')
+        if obj.exists():
+            obj.unlink()
+        temporary = directory / ('tmp-%08x' % entry)
+        temporary.mkdir(exist_ok=True)
+        env = dict(os.environ, TMP=str(temporary), TEMP=str(temporary))
+        for name in ('CL', '_CL_', 'LINK', 'INCLUDE', 'LIB', 'WINEPREFIX', 'CX_BOTTLE', 'CX_INITIALIZED'):
+            env.pop(name, None)
+        command = [compiler] + diff.compiler_args(options) + [
+            '/I' + str(REPOSITORY / 'src'), '/Fo' + str(obj), str(source)]
+        started = time.monotonic()
+        timed_out = False
+        with log.open('wb') as stream:
+            try:
+                result = subprocess.run(command, cwd=directory, env=env, stdin=subprocess.DEVNULL,
+                                        stdout=stream, stderr=subprocess.STDOUT, timeout=timeout,
+                                        creationflags=getattr(subprocess, 'BELOW_NORMAL_PRIORITY_CLASS', 0))
+                code = result.returncode
+            except subprocess.TimeoutExpired:
+                # subprocess.run terminates and waits for this exact CL process.
+                # Remove a possibly partial object; it cannot be a scoring input.
+                timed_out, code = True, None
+                if obj.exists():
+                    obj.unlink()
+        return dict(entry='%08x' % entry, command=command, returncode=code,
+                    seconds=time.monotonic() - started, timed_out=timed_out)
+
+    before = time.monotonic()
+    with exclusive_lock(config['lock']):
+        waited = time.monotonic() - before
+        count = max(1, min(int(config.get('parallel_sessions', 2)), len(batch)))
+        with ThreadPoolExecutor(count) as pool:
+            receipts = list(pool.map(compile_one, batch))
+    receipt = dict(backend='native', units=receipts, lock_wait_seconds=waited)
+    (directory / ('sweep-%08x-command.json' % batch[0])).write_text(
+        json.dumps(receipt, indent=2) + '\n', encoding='utf-8')
+    return [int(row['entry'], 16) for row in receipts if row['timed_out']]
+
+
+def size_summary(results):
+    """Keep large-body compile progress visible; >=75 includes byte-exact rows."""
+    buckets = [(0, 256, '<256 B'), (256, 1024, '256 B-1 KB'),
+               (1024, 4096, '1-4 KB'), (4096, float('inf'), '>=4 KB')]
+    summary = []
+    for first, last, label in buckets:
+        rows = [r for r in results.values() if first <= r['length'] < last]
+        summary.append(dict(bucket=label, attempted=len(rows),
+                            compiled=sum(r.get('compiled', 'score' in r or r.get('status') == 'score-refused')
+                                         for r in rows),
+                            exact=sum(bool(r.get('byte_exact')) for r in rows),
+                            score_at_least_75=sum(r.get('score', -1) >= 75 for r in rows)))
+    return summary
+
+
 def write_queue(output, results):
     rows = sorted(results.values(), key=lambda r: (not r.get('byte_exact'), -r.get('score', -1), r['entry']))
     exact = [r for r in rows if r.get('byte_exact')]
     near = [r for r in rows if not r.get('byte_exact') and r.get('score', 0) >= 75]
     lines = ['# Seed sweep queue', '',
              '%d entries: %d compiled, %d byte-exact (%d body bytes), %d near misses (score >= 75).' % (
-                 len(rows), sum('score' in r for r in rows), len(exact),
+                 len(rows), sum(r['compiled'] for r in size_summary(results)), len(exact),
                  sum(r['length'] for r in exact), len(near)), '',
+             '| body size | attempted | compiled | exact | score >=75 (including exact) |',
+             '| --- | ---: | ---: | ---: | ---: |']
+    summary = size_summary(results)
+    for bucket in summary:
+        lines.append('| {bucket} | {attempted} | {compiled} | {exact} | {score_at_least_75} |'.format(**bucket))
+    lines += ['',
              '| entry | bytes | options | score | shape | status |', '| --- | ---: | --- | ---: | ---: | --- |']
     for r in rows:
         status = 'byte-exact' if r.get('byte_exact') else r.get('status', 'mismatch')
         lines.append('| %s | %d | %s | %s | %s | %s |' % (
             r['entry'], r['length'], r.get('options', ''), r.get('score', ''), r.get('shape_score', ''), status))
-    (output / 'queue.md').write_text('\n'.join(lines) + '\n')
+    with (output / 'queue.md').open('w', encoding='utf-8', newline='\n') as stream:
+        stream.write('\n'.join(lines) + '\n')
+    (output / 'summary.json').write_text(json.dumps(dict(size_buckets=summary), indent=2) + '\n', encoding='utf-8')
 
 
 def main():
@@ -171,6 +246,7 @@ def main():
                     obj = output / str(index) / ('%08x.obj' % entry)
                     if not obj.exists():
                         continue
+                    rows[entry]['compiled'] = True
                     try:
                         scored = score_object(audit, decoder, references, obj, entry, rows[entry]['length'],
                                               (output / str(index) / ('%08x.cpp' % entry)).read_text(encoding='utf-8'))

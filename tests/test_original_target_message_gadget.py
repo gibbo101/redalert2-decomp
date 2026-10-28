@@ -25,7 +25,7 @@ class MessageGeneratorTests(unittest.TestCase):
         return generator.render_family(root,root/'plan.json',root/'templates',root/'original',evidence,root/'private/generated')
     def test_manual_canonical_edits_preserved_not_used_as_template(self):
         with tempfile.TemporaryDirectory() as t:
-            r=Path(t);e=self.fixture(r);p=r/'src/recovered/messages/Fixture.cpp';p.write_text('// manual maintained edit\n');before=p.read_bytes();receipt=self.render(r,e);self.assertEqual(p.read_bytes(),before);self.assertEqual((r/'private/generated/src/recovered/messages/Fixture.cpp').read_bytes(),b'// reviewed synthetic source\n');self.assertEqual(receipt['observed_canonical_sha256'][str(p.relative_to(r))],sha(before))
+            r=Path(t);e=self.fixture(r);p=r/'src/recovered/messages/Fixture.cpp';p.write_text('// manual maintained edit\n');before=p.read_bytes();receipt=self.render(r,e);self.assertEqual(p.read_bytes(),before);self.assertEqual((r/'private/generated/src/recovered/messages/Fixture.cpp').read_bytes(),b'// reviewed synthetic source\n');self.assertEqual(receipt['observed_canonical_sha256'][p.relative_to(r).as_posix()],sha(before))
     def test_template_drift_refused_before_output(self):
         with tempfile.TemporaryDirectory() as t:
             r=Path(t);e=self.fixture(r);(r/'templates/Fixture.cpp.in').write_text('// unreviewed\n')

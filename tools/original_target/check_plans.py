@@ -48,6 +48,25 @@ def link(source, destination):
 RECORD = [None]
 
 
+def acceptance_error(report, expected):
+    """A successful process is insufficient: every planned candidate must pass."""
+    if not isinstance(report, list) or not report or type(expected) is not int or expected < 1:
+        return 'missing acceptance rows or empty source plan'
+    total = 0
+    for row in report:
+        if not isinstance(row, dict) or row.get('error'):
+            return 'acceptance reported an error'
+        candidates, accepted = row.get('candidates'), row.get('accepted')
+        if type(candidates) is not int or type(accepted) is not int:
+            return 'missing integer acceptance counts'
+        if candidates < 1 or accepted != candidates or row.get('missed') != []:
+            return 'accepted %s of %s candidates; missed %s' % (accepted, candidates, row.get('missed'))
+        total += candidates
+    if total != expected:
+        return 'reported %d candidates for %d planned sources' % (total, expected)
+    return None
+
+
 def unlink_tree(path, record):
     """Remove a worktree: first every recorded link (rmdir of a junction or
     unlink of a symlink never touches its target), then the rest."""
@@ -174,6 +193,15 @@ def main():
             failed = failed or result.returncode != 0
             lines.append('exit_code: %d' % result.returncode)
             lines += [l for l in output if any(k in l for k in KEEP)][:12]
+            try:
+                report = json.loads((worktree / 'build' / ('accept-' + stem) / 'results.json').read_bytes())
+                expected = len(json.loads((REPOSITORY / plan).read_bytes())['sources'])
+                incomplete = acceptance_error(report, expected)
+            except (OSError, ValueError, TypeError, KeyError) as error:
+                incomplete = 'unreadable acceptance report or source plan: %s' % error
+            if incomplete:
+                failed = True
+                lines.append('error: incomplete acceptance: ' + incomplete)
             if result.returncode:
                 lines += output[-3:]
             with open(base / 'results.txt', 'w') as handle:

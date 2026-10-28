@@ -29,7 +29,7 @@ class CopyWordStorageGenerationTests(unittest.TestCase):
         self.target = dict(size=9, sha256=sha(b'synthetic'))
         self.exe = self.root / 'private/game.bin'; self.exe.write_bytes(b'synthetic')
         self.template = self.root / 'private/template.in'
-        self.template.write_text('// Reviewed candidate @ENTRY@ owner @OWNER_CLASS@\n')
+        self.template.write_bytes(b'// Reviewed candidate @ENTRY@ owner @OWNER_CLASS@\n')
         self.header = self.root/'src/shared/word_storage_layout.hpp'
         self.header.parent.mkdir(parents=True);self.header.write_text('// Synthetic shared declarations.\n')
         self.rows = []

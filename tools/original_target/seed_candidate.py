@@ -29,7 +29,11 @@ CALLEE = re.compile(r'\b(FUN_[0-9a-f]{8})\b')
 # trailing address is always the label's own location.
 DATA = re.compile(r'\b(_?PTR_(?:\w+?_)?[0-9a-f]{8}|_?DAT_[0-9a-f]{8}|LAB_[0-9a-f]{8})\b')
 STRING = re.compile(r'\b([su]_\w*_[0-9a-f]{8})\b')
-LOCAL = re.compile(r'^\s+([\w ]+?\s*\**)\s*(\w+)(\s*\[\w+\])?;\s*$', re.M)
+# Horizontal whitespace only, with a mandatory identifier between repetitions.
+# Masked long literals/comments can otherwise cause catastrophic backtracking.
+LOCAL = re.compile(r'^[\t ]+([A-Za-z_]\w*(?:[\t ]+[A-Za-z_]\w*)*?'
+                   r'(?:[\t ]*\*+[\t ]*|[\t ]+))([A-Za-z_]\w*)'
+                   r'([\t ]*\[\w+\])?;[\t ]*$', re.M)
 ASSIGN = re.compile(r'^(\s*)(\w+) = (.+);\s*$', re.M)
 PARTIAL = re.compile(r'\b(\w+)\._(\d+)_(\d+)_')
 PARTIAL_TYPES = {'1': 'uchar', '2': 'ushort', '4': 'uint'}
@@ -162,6 +166,32 @@ def concat_artifacts(body):
         body = body[:match.start()] + expression + body[end + 1:]
 
 
+def extend_artifacts(body):
+    """Width-exact zero/sign extension; no signed reinterpretation of uint64."""
+    pattern = re.compile(r'\b([ZS])EXT([1248])([1248])\s*\(')
+    while True:
+        sites = list(pattern.finditer(code_view(body)))
+        if not sites:
+            return body
+        match = sites[-1]
+        first, last = int(match[2]), int(match[3])
+        if first > last:
+            raise ValueError('Invalid Ghidra extension width')
+        end = matching_paren(body, match.end() - 1)
+        args = split_args(body[match.end():end])
+        if len(args) != 1:
+            raise ValueError('Ghidra extension requires one operand')
+        kinds = {1: 'char', 2: 'short', 4: 'int', 8: 'longlong'}
+        source = kinds[first]
+        destination = kinds[last]
+        if match[1] == 'Z':
+            source = {1: 'uchar', 2: 'ushort', 4: 'uint', 8: 'ulonglong'}[first]
+            destination = {1: 'uchar', 2: 'ushort', 4: 'uint', 8: 'ulonglong'}[last]
+        elif first == 1:
+            source = 'signed char'
+        body = body[:match.start()] + '((%s)(%s)(%s))' % (destination, source, args[0]) + body[end + 1:]
+
+
 def stack_artifacts(body, params, convention):
     """Name stack storage honestly, reusing a known local/argument when possible.
 
@@ -199,12 +229,446 @@ def stack_artifacts(body, params, convention):
 
 def pointer_global_type(body, symbol):
     """Reuse an unambiguous local pointer type; prefixes alone do not fix layout."""
-    types = {name: kind.strip() for kind, name, array in LOCAL.findall(body) if not array}
+    types = variable_types(body)
     assigned = {types[m[1]] for m in re.finditer(r'\b(\w+)\s*=\s*' + re.escape(symbol) + r'\s*;', body)
                 if m[1] in types and '*' in types[m[1]]}
     if len(assigned) == 1:
         return assigned.pop()
     return 'code *' if re.match(r'_?PTR_(?:FUN|LAB)_', symbol) else 'void *'
+
+
+def variable_types(body, params=()):
+    types = {name: kind for kind, name in map(param_parts, params) if name}
+    types.update({name: kind.strip() + (' *' if array else '')
+                  for kind, name, array in LOCAL.findall(code_view(body))
+                  if kind.strip().split()[0] not in ('return', 'goto', 'delete', 'throw', 'break', 'continue')})
+    return types
+
+
+def unary_operator(view, position):
+    before = view[:position].rstrip()
+    if not before or before[-1] in '([=!,;:{}?&|^~+-*/%<>' or re.search(r'\breturn$', before):
+        return True
+    if not before.endswith(')'):
+        return False
+    # A cast can precede a unary load: (code **)*DAT reads DAT's pointee.
+    # Treating that star as multiplication would cast DAT itself to uint,
+    # producing illegal indirection and losing the intended memory read.
+    depth, start = 1, len(before) - 2
+    while start >= 0:
+        if before[start] == ')':
+            depth += 1
+        elif before[start] == '(':
+            depth -= 1
+            if depth == 0:
+                break
+        start -= 1
+    if start < 0:
+        return False
+    prefix = before[:start].rstrip()
+    if prefix and (prefix[-1].isalnum() or prefix[-1] in '_)]') and not re.search(r'\breturn$', prefix):
+        # f(uint)*p and sizeof(uint)*p multiply a result, not a cast operand.
+        return False
+    kind = before[start + 1:-1].strip()
+    if re.fullmatch(r'[A-Za-z_]\w*(?:::\w+)*(?:\s+[A-Za-z_]\w*)*\s*\*+\s*', kind):
+        return True
+    return clean_type(kind) in INTEGRAL32 | {
+        'char', 'signed char', 'unsigned char', 'short', 'ushort', 'unsigned short',
+        'longlong', 'ulonglong', 'undefined1', 'undefined2', 'undefined3', 'undefined8',
+        'float', 'double', 'float10', 'byte', 'uchar', 'code'}
+
+
+def cast_void_global_offsets(body, globals_):
+    """Keep literal byte offsets on otherwise opaque global pointers explicit.
+
+    Ghidra uses byte offsets on a void pointer. Cast the stored address bits,
+    leaving the outer load/store width untouched. Indexing, pointer differences,
+    variable offsets and unknown layouts are not inferred by this narrow rule.
+    """
+    view, sites = code_view(body), []
+    for symbol, kind in globals_.items():
+        if not re.fullmatch(r'void\s*\*', clean_type(kind)):
+            continue
+        pattern = (r'\b' + re.escape(symbol) +
+                   r'\b(?=\s*[+-]\s*(?:0x[0-9a-fA-F]+|\d+)\b(?![.\w]))')
+        for match in re.finditer(pattern, view):
+            before = view[:match.start()].rstrip()
+            if before.endswith(('&', '*')) and unary_operator(view, len(before) - 1):
+                continue
+            if before.endswith(('(uint)', '(int)', '(unsigned int)')):
+                continue
+            sites.append((match.start(), match.end()))
+    for first, last in sorted(sites, reverse=True):
+        body = body[:first] + '(uint)' + body[first:last] + body[last:]
+    return body
+
+
+_SHARED_POINTERS = {}
+
+
+def shared_pointer_types(directory=None):
+    """Read unambiguous, address-annotated pointer declarations from shared layouts.
+
+    Only existing top-level class/struct names and primitive pointees are used.
+    No struct layout, inheritance, or field offset is synthesized by this index.
+    """
+    directory = Path(directory or REPOSITORY / 'src/shared').resolve()
+    if directory in _SHARED_POINTERS:
+        return _SHARED_POINTERS[directory]
+    texts = {p: p.read_text(encoding='utf-8') for p in sorted(directory.glob('*.hpp'))}
+    tags = {}
+    for text in texts.values():
+        tags.update({name: tag for tag, name in re.findall(r'^(class|struct)\s+(\w+)\b', code_view(text), re.M)})
+    choices = {}
+    pattern = re.compile(r'^\s*extern\s+([A-Za-z_]\w*\s*\*)\s*(\w+)\s*;[^\n]*//\s*0x([0-9a-fA-F]{8})\b', re.M)
+    for path, text in texts.items():
+        for match in pattern.finditer(text):
+            kind = match[1].strip()
+            pointee = kind.rstrip('*').strip()
+            if pointee not in tags and pointee not in ('int', 'uint', 'char', 'short', 'ushort', 'byte', 'void'):
+                continue
+            kind = pointee + ' *'
+            choices.setdefault(int(match[3], 16), []).append(dict(
+                kind=kind, header='shared/' + path.name,
+                forward=('%s %s;' % (tags[pointee], pointee)) if pointee in tags else None))
+    result = {address: rows[0] for address, rows in choices.items()
+              if len({r['kind'] for r in rows}) == 1}
+    _SHARED_POINTERS[directory] = result
+    return result
+
+
+def recover_global_pointers(body, params=(), shared=None):
+    """Infer stored pointer globals from their uses, without inventing layouts.
+
+    An address taken with &DAT is storage, not evidence of a stored pointer.
+    Direct dereferences/subscripts and consistent pointer assignments supply
+    evidence. Conflicting pointee types keep a width-only uint pointee. Ghidra
+    byte-offset arithmetic is kept explicit at the pointer/integer boundary;
+    subscripts retain their inferred element stride. These remain hypotheses.
+    """
+    view, types = code_view(body), variable_types(body, params)
+    shared = shared or {}
+    inferred = {}
+    for symbol in sorted(set(DATA.findall(view))):
+        if not re.fullmatch(r'_?DAT_[0-9a-f]{8}', symbol):
+            continue
+        token = r'\b' + re.escape(symbol) + r'\b'
+        hints = set()
+        for match in re.finditer(r'^\s*(\w+)\s*=\s*' + token + r'\s*;', view, re.M):
+            kind = types.get(match[1], '')
+            if '*' in kind:
+                hints.add(kind)
+        for match in re.finditer(token + r'\s*(?:==|!=|=)\s*\(([^()]+\*)\)', view):
+            hints.add(match[1].strip())
+        callable_ = re.search(r'\(\s*\*\s*' + token + r'\s*\)\s*\(', view)
+        dereferenced = False
+        for match in re.finditer(r'\*\s*' + token, view):
+            if unary_operator(view, match.start()):
+                dereferenced = True
+        indexed = re.search(token + r'\s*\[', view)
+        known = shared.get(int(symbol[-8:], 16))
+        if known and not callable_ and not dereferenced and not indexed:
+            # Incomplete shared owner types suffice at raw address boundaries.
+            # Direct pointee accesses remain width-only until fields are recovered.
+            inferred[symbol] = known['kind']
+        elif callable_:
+            inferred[symbol] = 'code *'
+        elif hints or dereferenced or indexed:
+            inferred[symbol] = hints.pop() if len(hints) == 1 else 'undefined4 *'
+    for symbol in inferred:
+        # A cast is at the raw byte-offset boundary, rather than at every read.
+        view = code_view(body)
+        sites = list(re.finditer(r'\b' + symbol + r'\b', view))
+        for match in reversed(sites):
+            before = view[:match.start()].rstrip()
+            after = view[match.end():].lstrip()
+            if before.endswith(('&', '*')) and unary_operator(view, len(before) - 1):
+                continue
+            if not re.match(r'(?:[+\-*/%]|<<|>>|[&|^])', after) and not before.endswith(('+', '-', '*', '/', '%', '^', '|', '&', '<<', '>>')):
+                continue
+            body = body[:match.start()] + '(uint)' + body[match.start():]
+    return body, inferred
+
+
+def expression_end(view, start):
+    """End of an assignment RHS, including multiline and for-loop clauses."""
+    depth = 0
+    for index in range(start, len(view)):
+        char = view[index]
+        if char in '([':
+            depth += 1
+        elif char in ')]':
+            if depth == 0:
+                return index
+            depth -= 1
+        elif depth == 0 and char in ';,':
+            return index
+    return len(view)
+
+
+def lvalue_type(left, types):
+    """Recover only explicit cast-dereferences and declared scalar/array slots."""
+    left = left.rstrip()
+    # Explicit dereference casts include nested addresses and partial fields.
+    line = left[left.rfind('\n') + 1:].strip()
+    while line.startswith('(') and line.endswith(')'):
+        try:
+            if matching_paren(line, 0) != len(line) - 1:
+                break
+        except ValueError:
+            break
+        line = line[1:-1].strip()
+    cast = re.match(r'^\*\s*\(\s*([\w\s]+(?:\s*\*)+)\s*\)', line)
+    if cast:
+        return cast[1].rsplit('*', 1)[0].strip()
+    # Most expressions end in a declared name (also assignments within for/if).
+    match = re.search(r'\b(\w+)$', line)
+    if match:
+        name = match[1]
+        if name in types:
+            kind = types[name]
+            prefix = line[:match.start()].rstrip()
+            return kind.rsplit('*', 1)[0].strip() if prefix.endswith('*') and '*' in kind else kind
+    array = re.search(r'\b(\w+)\s*\[[^\[\]]*\]$', line)
+    if array and '*' in types.get(array[1], ''):
+        return types[array[1]].rsplit('*', 1)[0].strip()
+    return None
+
+
+def cast_storage_boundaries(body, params=(), globals_=None):
+    """Spell C's scalar assignment conversions at stores, not every operand.
+
+    Ghidra output includes multiline/embedded stores that the old line regex
+    missed. The declared destination fixes the conversion width. Never cast
+    aggregate assignments or transform compound assignments as plain stores.
+    """
+    types = variable_types(body, params)
+    types.update(globals_ or {})
+    view = code_view(body)
+    edits = []
+    for match in re.finditer(r'(?<![=!<>+\-*/%&|^])=(?!=)', view):
+        kind = lvalue_type(view[:match.start()], types)
+        if not kind or not re.fullmatch(r'[\w\s]+(?:\s*\*)*', kind):
+            continue
+        end = expression_end(view, match.end())
+        rhs = body[match.end():end]
+        value = rhs.strip()
+        if not value or value.startswith('(' + kind + ')'):
+            continue
+        # Shared aggregate types are not scalar conversion targets.
+        if '*' not in kind and not re.fullmatch(r'(?:unsigned |signed )?(?:char|short|int|long|long long|__int64)|'
+                                               r'undefined[1-8]?|u?int[1-8]?|byte|u?char|u?short|u?long|'
+                                               r'float(?:10)?|double|u?longlong|[dq]word|size_t|BOOL|DWORD|UINT|'
+                                               r'LONG|SHORT|WORD|BYTE|LPARAM|WPARAM|LRESULT|HWND|HANDLE|HINSTANCE', kind):
+            continue
+        # Preserve nested assignment evaluation by inserting paired tokens.
+        first = match.end() + len(rhs) - len(rhs.lstrip())
+        last = end - len(rhs) + len(rhs.rstrip())
+        edits += [(first, '(%s)(' % kind), (last, ')')]
+    for position, text in sorted(edits, key=lambda item: item[0], reverse=True):
+        body = body[:position] + text + body[position:]
+    return body
+
+
+INTEGRAL32 = {'int', 'uint', 'undefined4', 'long', 'ulong', 'unsigned', 'signed',
+              'unsigned int', 'signed int', 'unsigned long', 'signed long',
+              'DWORD', 'UINT', 'LONG', 'ULONG', 'BOOL', 'LPARAM', 'WPARAM', 'LRESULT'}
+POINTER_ALIASES = {'HWND', 'HANDLE', 'HINSTANCE', 'HMODULE', 'LPVOID', 'HDC', 'HKEY',
+                   'LPSTR', 'LPCSTR', 'LPDWORD', 'LPCRITICAL_SECTION', 'LPSECURITY_ATTRIBUTES',
+                   'LPOVERLAPPED', 'LPWSTR', 'LPCWSTR', 'PVOID', 'LPCVOID', 'FARPROC'}
+
+
+def clean_type(kind):
+    return ' '.join(re.sub(r'\b(?:extern|static|const|volatile)\b', '', kind).split())
+
+
+def equality_operand(view, boundary, direction):
+    """Find one full equality operand without crossing a lower-precedence operator."""
+    index = boundary if direction == 1 else boundary - 1
+    stack = []
+    while 0 <= index < len(view):
+        char = view[index]
+        opening, closing = ('([', ')]') if direction == 1 else (')]', '([')
+        if char in opening:
+            stack.append(char)
+        elif char in closing:
+            if not stack:
+                break
+            stack.pop()
+        elif not stack:
+            if char in ';,{}?:=' or char == '!' and view[index:index+2] == '!=':
+                break
+            if char in '&|^':
+                double = view[index:index+2] in ('&&', '||') or view[index-1:index+1] in ('&&', '||')
+                if double or char != '&' or not unary_operator(view, index):
+                    break
+        index += direction
+    first, last = (boundary, index) if direction == 1 else (index + 1, boundary)
+    while first < last and view[first].isspace(): first += 1
+    while last > first and view[last-1].isspace(): last -= 1
+    if direction == -1:
+        match = re.match(r'return\b\s*', view[first:last])
+        if match: first += match.end()
+    return first, last
+
+
+def one_atom(text):
+    if re.fullmatch(r'\w+(?:\+\+|--)?', text):
+        return True
+    if text.startswith('('):
+        try:
+            return matching_paren(text, 0) == len(text) - 1
+        except ValueError:
+            return False
+    match = re.match(r'\w+\s*\[', text)
+    if match:
+        depth = 1
+        for index in range(match.end(), len(text)):
+            if text[index] == '[': depth += 1
+            elif text[index] == ']': depth -= 1
+            if depth == 0: return index == len(text) - 1
+    return False
+
+
+def equality_type(expression, types):
+    expression = expression.strip()
+    while expression.startswith('('):
+        try:
+            if matching_paren(expression, 0) != len(expression)-1: break
+        except ValueError:
+            return None
+        expression = expression[1:-1].strip()
+    if re.fullmatch(r'\w+', expression):
+        kind = clean_type(types.get(expression, ''))
+        return 'pointer' if '*' in kind or kind in POINTER_ALIASES else ('int32' if kind in INTEGRAL32 else None)
+    if re.fullmatch(r'&\s*\w+', expression):
+        return 'pointer'
+    load = re.match(r'^\*\s*\(\s*([\w\s]+(?:\s*\*)+)\s*\)\s*', expression)
+    if load and one_atom(expression[load.end():]):
+        kind = clean_type(load[1].rsplit('*', 1)[0])
+        return 'pointer' if '*' in kind or kind in POINTER_ALIASES else ('int32' if kind in INTEGRAL32 else None)
+    cast = re.match(r'^\(\s*([\w\s]+(?:\s*\*)*)\s*\)\s*', expression)
+    if cast and one_atom(expression[cast.end():]):
+        kind = clean_type(cast[1])
+        return 'pointer' if '*' in kind or kind in POINTER_ALIASES else ('int32' if kind in INTEGRAL32 else None)
+    array = re.match(r'^(\w+)\s*\[', expression)
+    if array and one_atom(expression) and '*' in types.get(array[1], ''):
+        kind = clean_type(types[array[1]].rsplit('*', 1)[0])
+        return 'pointer' if '*' in kind or kind in POINTER_ALIASES else ('int32' if kind in INTEGRAL32 else None)
+    # Ghidra often indexes a pointer loaded from an explicit pointer-to-pointer
+    # view: (*(int **)(owner + offset))[index]. Keep both original reads.
+    if expression.startswith('('):
+        try:
+            close = matching_paren(expression, 0)
+        except ValueError:
+            return None
+        suffix = expression[close+1:].strip()
+        if suffix.startswith('[') and one_atom('base' + suffix):
+            base = expression[1:close].strip()
+            load = re.match(r'^\*\s*\(\s*([\w\s]+\*\s*\*+)\s*\)\s*', base)
+            if load and one_atom(base[load.end():]):
+                kind = clean_type(load[1].rsplit('*', 2)[0])
+                return 'pointer' if '*' in kind or kind in POINTER_ALIASES else ('int32' if kind in INTEGRAL32 else None)
+    return None
+
+
+def full_pointer_equality(body, params=(), globals_=None):
+    types = variable_types(body, params)
+    types.update(globals_ or {})
+    view = code_view(body)
+    edits = []
+    for match in re.finditer(r'==|!=', view):
+        left = equality_operand(view, match.start(), -1)
+        right = equality_operand(view, match.end(), 1)
+        if view[:left[0]].rstrip().endswith(('==','!=')) or view[right[1]:].lstrip().startswith(('==','!=')):
+            continue
+        values = [view[first:last] for first,last in (left,right)]
+        kinds = [equality_type(value, types) for value in values]
+        if 'pointer' not in kinds or any(kind not in ('pointer','int32') for kind in kinds):
+            continue
+        if all(re.fullmatch(r'\w+', value) for value in values) and clean_type(types.get(values[0],'')) == clean_type(types.get(values[1],'')):
+            continue
+        # Cast the complete value, including an address-of or loaded pointer.
+        # The existing dereference keeps its original width and single evaluation.
+        for (first,last), kind in zip((left,right), kinds):
+            if kind == 'pointer':
+                edits.extend(((first, '(uint)('), (last, ')')))
+    # Ambiguous/chained equalities can select overlapping operands; refuse them.
+    positions = [position for position, _ in edits]
+    if len(positions) != len(set(positions)):
+        return body
+    for position, text in sorted(edits, reverse=True):
+        body = body[:position] + text + body[position:]
+    return body
+
+
+def normalize_import_exrefs(body, facts=None):
+    """Resolve only known imported-function external-reference spellings."""
+    if facts is None:
+        facts = import_facts()
+    view = code_view(body)
+    edits = [(match.start(), match.end(), match[1])
+             for match in re.finditer(r'\b(\w+)_exref\b', view) if match[1] in facts]
+    for first,last,name in reversed(edits):
+        body = body[:first] + name + body[last:]
+    return body
+
+
+
+def pointer_equality_boundaries(body, params=(), globals_=None):
+    """Compare address bits once when Ghidra gives incompatible pointer views."""
+    types = variable_types(body, params)
+    types.update(globals_ or {})
+    view = code_view(body)
+    edits = []
+    def bare_identifier(start, end):
+        before, after = view[:start].rstrip(), view[end:].lstrip()
+        return not before.endswith(('*', '&', '.', '->', ')')) and not after.startswith(('[', '.', '->', '('))
+    for match in re.finditer(r'\b(\w+)\s*(==|!=)\s*(\w+)\b', view):
+        if not bare_identifier(match.start(1), match.end(1)) or not bare_identifier(match.start(3), match.end(3)):
+            continue
+        left, right = types.get(match[1], ''), types.get(match[3], '')
+        if not left or not right or left == right or '*' not in left + right:
+            continue
+        if any('*' not in kind and re.search(r'\b(?:float(?:10)?|double|u?longlong|(?:unsigned |signed )?__int64)\b', kind) for kind in (left, right)):
+            continue
+        # Equality is independent of signedness. No relational ordering or
+        # pointer arithmetic is rewritten under this rule.
+        for group, kind in ((1, left), (3, right)):
+            if '*' in kind:
+                edits.append((match.start(group), '(uint)'))
+    for position, text in sorted(edits, reverse=True):
+        body = body[:position] + text + body[position:]
+    view = code_view(body)
+    edits = []
+    for match in re.finditer(r'\b(\w+)\s*(==|!=)\s*\(\s*[\w\s]+\*+\s*\)\s*(0x[0-9a-fA-F]+|[0-9]+)\b', view):
+        if '*' not in types.get(match[1], '') or not bare_identifier(match.start(1), match.end(1)):
+            continue
+        if int(match[3], 0) > 0xffffffff:
+            continue
+        edits.append((match.start(), match.end(), '(uint)%s %s %s' % (match[1], match[2], match[3])))
+    for first, last, text in reversed(edits):
+        body = body[:first] + text + body[last:]
+    return full_pointer_equality(body, params, globals_)
+
+
+def return_boundaries(body, kind):
+    """Make 32-bit pointer/value return conversions explicit at the ABI boundary."""
+    if '*' not in kind and kind not in ('int', 'uint', 'undefined4', 'long', 'ulong', 'DWORD', 'LRESULT', 'HWND', 'HANDLE'):
+        return body
+    view, edits = code_view(body), []
+    for match in re.finditer(r'\breturn\s+', view):
+        end = expression_end(view, match.end())
+        rhs = body[match.end():end]
+        value = rhs.strip()
+        if not value or value.startswith('(' + kind + ')'):
+            continue
+        first = match.end() + len(rhs) - len(rhs.lstrip())
+        last = end - len(rhs) + len(rhs.rstrip())
+        edits.extend(((first, '(%s)(' % kind), (last, ')')))
+    for position, text in sorted(edits, key=lambda item: item[0], reverse=True):
+        body = body[:position] + text + body[position:]
+    return body
 
 
 def reindent(body):
@@ -409,13 +873,7 @@ def cast_assignments(body, params):
     conversion is the one C would apply implicitly, so 32-bit values and
     arithmetic conversions are unchanged; C++ merely requires it spelled out.
     """
-    types = {}
-    for param in params:
-        kind, name = param_parts(param)
-        if name: types[name] = kind
-    for kind, name, array in LOCAL.findall(body):
-        if not array and kind.strip() not in ('return', 'goto'):
-            types[name] = kind.strip()
+    types = variable_types(body, params)
     def repl(match):
         indent, name, rhs = match.groups()
         kind = types.get(name)
@@ -428,13 +886,19 @@ def cast_assignments(body, params):
 _IMPORTS = []
 
 
-def imported_calls(body):
-    """Imported API names called in body -> import facts (manifests/imports.json)."""
+def import_facts():
+    """Recorded import signatures and IAT slots; no inferred platform ABI."""
     if not _IMPORTS:
         path = Path(__file__).resolve().parents[2] / 'manifests/imports.json'
-        _IMPORTS.append({i['name']: i for i in json.loads(path.read_text())['imports']} if path.exists() else {})
-    names = set(re.findall(r'\b([A-Za-z_]\w*)\s*\(', code_view(body)))
-    return {n: _IMPORTS[0][n] for n in names if n in _IMPORTS[0]}
+        _IMPORTS.append({i['name']: i for i in json.loads(path.read_bytes())['imports']} if path.exists() else {})
+    return _IMPORTS[0]
+
+
+def imported_calls(body):
+    """Imported API calls and function-address values -> recorded import facts."""
+    facts = import_facts()
+    names = set(re.findall(r'\b[A-Za-z_]\w*\b', code_view(body)))
+    return {name: facts[name] for name in names if name in facts}
 
 
 def declare_import(body, name, fact):
@@ -556,8 +1020,9 @@ def seed(entry, inventory, accepted):
     conv, params = fit_convention(conv, params, stack_cleanup(inventory.function(entry)[1]),
                                   conv == '__thiscall')
     body = nonnegative_tests(reindent(text[end:].strip()))
+    body = normalize_import_exrefs(body)
     body, labels = local_labels(body)
-    body = stack_artifacts(concat_artifacts(body), params, conv)
+    body = stack_artifacts(extend_artifacts(concat_artifacts(body)), params, conv)
     body = LABEL.sub(lambda m: m.group(1) + re.sub(r'\W', '_', m.group(2)) + m.group(3), body)
     body = RAM.sub(lambda m: '(*(%s *)0x%s)' % (RAM_TYPES.get(m.group(1), 'int'), m.group(2)), body)
     body = PARTIAL.sub(lambda m: '(*(%s*)((char*)&%s + %s))' % (PARTIAL_TYPES.get(m.group(3), 'uint'),
@@ -594,6 +1059,9 @@ def seed(entry, inventory, accepted):
                 hint = this_name
         body, lines = declare_callee(body, callee, (c_ret, c_conv, c_params), hint)
         declarations.extend(lines)
+    if list(call_sites(body, name)):
+        body, _ = declare_callee(body, name, (ret, conv, params), this_name)
+        body = body.replace('Callee_%08x' % entry, 'Owner_%08x' % entry)
     imports = imported_calls(body)
     for api, fact in sorted(imports.items()):
         body, declaration = declare_import(body, api, fact)
@@ -602,15 +1070,30 @@ def seed(entry, inventory, accepted):
         if library in imports:
             continue
         declarations.append('extern "C" undefined4 __cdecl %s(...);  // @ref _%s=%08x' % (library, library, address))
+    evidence_root = (REPOSITORY / 'private/original-target-20261020/inventory').resolve()
+    shared = (shared_pointer_types() if any(p.resolve().is_relative_to(evidence_root) for p in inventory.passes) else {})
+    body, global_types = recover_global_pointers(body, params, shared)
+    for symbol, kind in sorted(global_types.items()):
+        known = shared.get(int(symbol[-8:], 16))
+        if known and known['kind'] == kind:
+            if known['forward'] and known['forward'] not in declarations:
+                declarations.append(known['forward'])
+            declarations.append('// %s pointer type from %s; raw field offsets remain explicit.' % (symbol, known['header']))
     for symbol in sorted(set(DATA.findall(code_view(body))) - labels):
-        kind = pointer_global_type(body, symbol) if 'PTR_' in symbol else 'char' if symbol.startswith('LAB_') else 'undefined4'
+        kind = global_types.get(symbol) or (pointer_global_type(body, symbol) if 'PTR_' in symbol else 'char' if symbol.startswith('LAB_') else 'undefined4')
+        global_types[symbol] = kind
         if kind == 'undefined4' and byte_global(body, symbol):
             # Ghidra compares or assigns it as a character: a byte global.
+            global_types[symbol] = 'char'
             declarations.append('extern "C" char %s;' % symbol); continue
         declarations.append('extern "C" %s %s%s;' % (kind, symbol, '[]' if kind == 'char' else ''))
     for symbol in sorted(set(STRING.findall(code_view(body)))):
         declarations.append('extern "C" %s %s[];' % ('wchar16' if symbol.startswith('u_') else 'char', symbol))
+    body = cast_void_global_offsets(body, global_types)
+    body = pointer_equality_boundaries(body, params, global_types)
+    body = cast_storage_boundaries(body, params, global_types)
     body = address_stores(cast_assignments(body, params))
+    body = return_boundaries(body, ret)
     if conv == '__thiscall' and params:
         this_type, this_name = param_parts(params[0])
         owner = 'Owner_%08x' % entry

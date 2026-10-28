@@ -31,7 +31,7 @@ class ReadableGeneratorTests(unittest.TestCase):
         self.exe.write_bytes(b'synthetic original input')
         self.template = self.work / 'storage.cpp.in'
         text = '// @TARGET_SHA256@\nclass WordStorage_@ENTRY@ {};\n'
-        self.template.write_text(text)
+        self.template.write_bytes(text.encode('utf-8'))
         self.entry = 0x401000
         key = '%08x' % self.entry
         self.fact = dict(entry=self.entry, body_bytes=93, padding_bytes=3, refusals=[],
@@ -126,7 +126,7 @@ class ReadableGeneratorTests(unittest.TestCase):
         catalog['headers']=[dict(path=header,sha256=sha(path.read_bytes()))]
         self.catalog_path.write_text(json.dumps(catalog))
         shared=self.template.with_name('word_storage_shared.cpp.in')
-        shared.write_text('#include "shared/word_storage_layout.hpp"\n// Shared @ENTRY@ @TARGET_SHA256@\n')
+        shared.write_bytes(b'#include "shared/word_storage_layout.hpp"\n// Shared @ENTRY@ @TARGET_SHA256@\n')
         self.plan['shared_template_sha256']=sha(shared.read_bytes())
         self.plan_path.write_text(json.dumps(self.plan))
         return path,shared

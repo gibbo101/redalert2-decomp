@@ -65,7 +65,7 @@ class ClosedOutputTests(unittest.TestCase):
         coff = self.coff if coff is None else coff
         policy = self.policy if policy is None else policy
         def document(path, expected):
-            if str(path)=='manifests/policy.json':
+            if Path(path).as_posix()=='manifests/policy.json':
                 if expected != sha(json.dumps(policy).encode()): raise ValueError('policy drift')
                 return policy
             return self.facts
