@@ -9,10 +9,17 @@
 #include "shared/cd_timer.hpp"
 #include "shared/system_timer.hpp"
 #include "shared/rect.hpp"
+#include "shared/matrix3d.hpp"
 
 class CellClass;
 
 class Surface;
+
+// The screen rise of a height in leptons (0x006A2970; rounded, plus one from
+// 728 up) and its inverse (0x006A29B0); hypotheses.
+int __fastcall Unknown_006A2970(int z);
+int __fastcall Unknown_006A29B0(int pixel);
+
 
 // The tactical view (0x0083996C; RTTI class Tactical, an AbstractClass:
 // primary vtable 0x007AC570 with 25 slots, stored by 0x006A24B0, 0x006A26C0,
@@ -22,6 +29,7 @@ class Surface;
 class Tactical : public AbstractClass {
 public:
     Tactical();                                     // 0x006A24B0 (Read_Scenario_INI makes a new view)
+    Tactical(NoInitClass const &noinit);            // 0x006A26C0
     virtual HRESULT __stdcall GetClassID(GUID *clsid);
     virtual HRESULT __stdcall Load(IStream *stream);
     virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);
@@ -68,29 +76,38 @@ public:
     void Unknown_006A65A0(Rect const &rect);
     void Unknown_006A6640(Point2D const &point);    // 0x006A6640 (sets the view position, clamped)
 
-    char unknown_24[0xA8 - 0x24];
+    // Layout from the constructor 0x006A24B0 (init-list stores, then the body).
+    short unknown_24;               // +0x24 cleared by the constructor
+    char unknown_26[0xA4 - 0x26];
+    int unknown_a4;                 // +0xA4 -1 after construction
     int unknown_a8;                 // +0xA8 the frame of the last update (-1 after construction)
-    char unknown_ac[0xB0 - 0xAC];
+    bool unknown_ac;                // +0xAC
+    bool unknown_ad;                // +0xAD
     Point2D unknown_b0;             // +0xB0 the view position (BuildingClass slot 73 caches it)
-    char unknown_b8[0xC0 - 0xB8];
+    Point2D unknown_b8;             // +0xB8
     double unknown_c0;              // +0xC0 zoom factor (Blit_Display divides by it; 1.0 = none)
     Point2D unknown_c8;             // +0xC8 the scroll start (AI 0x006A2DD0 interpolates it to unknown_d0)
     Point2D unknown_d0;             // +0xD0 the scroll target
     float unknown_d8;               // +0xD8 the scroll step per frame (ScrollClass slot 26 tests it against 0)
     float unknown_dc;               // +0xDC the scroll progress, 0..1
-    char unknown_e0[0xD64 - 0xE0];
+    int unknown_e0;                 // +0xE0
+    int unknown_e4[800];            // +0xE4 pointers (cleared by the constructor, swizzled by Load; unknown_e0 counts them)
     Point2D unknown_d64;            // +0xD64 the view position
-    char unknown_d6c[0xD74 - 0xD6C];
+    Point2D unknown_d6c;            // +0xD6C
     Point2D unknown_d74;            // +0xD74 the requested view position
-    char unknown_d7c;
+    bool unknown_d7c;               // +0xD7C true after construction
     bool unknown_d7d;               // +0xD7D set by Flag_To_Redraw
-    char unknown_d7e[0xD90 - 0xD7E];
+    bool unknown_d7e;               // +0xD7E
+    Rect unknown_d80;               // +0xD80 copied from the global rectangle at 0x00ABE4A8
     Point2D unknown_d90;            // +0xD90 the selection band corner (DisplayClass slot 47 starts it)
     Point2D unknown_d98;            // +0xD98 the other corner
     int unknown_da0;                // +0xDA0 counts the timer expiries
     CDTimerClass<SystemTimerClass> unknown_da4;     // +0xDA4 restarted at Rules->WaypointAnimationSpeed
     int unknown_db0;                // +0xDB0 the number of entries of the table at 0x00ABE5F8
-    char unknown_db4[0xE18 - 0xDB4];    // (0xE18 bytes: Read_Scenario_INI's new)
+    Matrix3D unknown_db4;           // +0xDB4 the view transform (identity, rotated, scaled)
+    Matrix3D unknown_de4;           // +0xDE4 the screen projection (rows set by the constructor)
+    int unknown_e14;                // +0xE14
+    // (0xE18 bytes: Read_Scenario_INI's new)
 };
 extern Tactical *unknown_tactical_83996c;
 
