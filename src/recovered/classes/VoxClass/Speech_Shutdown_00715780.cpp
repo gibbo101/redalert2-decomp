@@ -2,7 +2,7 @@
 // destroys the stream (name hypothesis).
 #include "shared/vox_speech.hpp"
 // @ref ?unknown_vox_stream_ad095c@@3PAUAudioStreamPlayer@@A=00ad095c
-// @ref ?Speech_Clear@@YAXXZ=007157b0
+// @ref ?Speech_Clear@@YIXXZ=007157b0
 
 void Speech_Shutdown()
 {

@@ -4,8 +4,8 @@
     "id": "population-2795",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "401edb374f126e6fa7687b0fa050ce476b319f32d66a6b2b1d99ad495cac1de3",
-    "historical_acceptance_sha256": "97fc5c8b597cb7a41f6b87a2b69ac5c9de44afd43ca9846c2ff8fbd9e0edc384",
+    "historical_population_sha256": "e9a922d44166d58ecc13a25196ef1028c521d929e2f083ab1c571f838322cfd7",
+    "historical_acceptance_sha256": "0b9ed14177c90aea3d6fb433e6c6dbd42a7a275cbb53c4851ef112945262eaee",
     "separate_units": true
   },
   "references": {
@@ -1032,7 +1032,7 @@
     "?Audio_Main_Bag@@3PAUAudioBag@@A": 8590388,
     "?Audio_Streamer_Init@@YAHXZ": 4224128,
     "?Audio_Is_On@@3HA": 8590396,
-    "?Audio_Stop@@YAXXZ": 4222400,
+    "?Audio_Stop@@YIXXZ": 4222400,
     "?Audio_Pause_All@@YAXXZ": 4222528,
     "?Audio_Resume_All@@YAXXZ": 4222576,
     "?Audio_Update_Busy@@3HA": 8590444,

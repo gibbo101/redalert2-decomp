@@ -1,4 +1,4 @@
-// void Speech_Clear() (0x007157B0): drops every waiting speech, marking its
+// void __fastcall Speech_Clear() (0x007157B0): drops every waiting speech, marking its
 // VoxClass idle (name hypothesis).
 #include "shared/vox_speech.hpp"
 // @ref ?unknown_vox_list_ad0868@@3UAudioListNode@@A=00ad0868
@@ -7,7 +7,7 @@
 // @ref ?unknown_vox_pending_ad0948@@3PAUVoxSpeech@@A=00ad0948
 // @ref ?unknown_vox_enabled_ad094c@@3HA=00ad094c
 
-void Speech_Clear()
+void __fastcall Speech_Clear()
 {
     if (!unknown_vox_enabled_ad094c) {
         return;

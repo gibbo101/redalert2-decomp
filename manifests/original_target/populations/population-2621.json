@@ -4,8 +4,8 @@
     "id": "population-2621",
     "inventory_sha256": "280e79d14c622b4c6426514989820b78920d2f2eeae0860bb72292bdeca0b60a",
     "gaps_sha256": "5d249e4f83e6f85c19b88b6718ed7aa0695fc29ad67e649b5e4896e47240e52a",
-    "historical_population_sha256": "ea0fa9461a44a282bc94ad38f856541bcf53eff7d0841401a3de6ed93c9dd933",
-    "historical_acceptance_sha256": "1b7ef69eafb03f06f4cde4cee7b62bbe33f0ae987e7edeac148bda23fe175567"
+    "historical_population_sha256": "3a9b17484869753ff30138375f640950a62c808c4053a6aba60ac8803e061695",
+    "historical_acceptance_sha256": "4cd54f6ca5f974e40d41d9854bd56d8c8dd465d48ecf939091a6e282f8983e7c"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -14022,7 +14022,7 @@
     "?unknown_vox_playing_ad0954@@3PAVVoxClass@@A": 11340116,
     "?unknown_vox_stream_ad095c@@3PAUAudioStreamPlayer@@A": 11340124,
     "?Audio_Stream_Stop@@YIXPAUAudioStreamPlayer@@@Z": 4226656,
-    "?Speech_Clear@@YAXXZ": 7428016,
+    "?Speech_Clear@@YIXXZ": 7428016,
     "?unknown_table_name_6f8e00@@YIPBDH@Z": 7310848,
     "?unknown_table_7f8cf0@@3PAUUnknownTableEntry_7f8cf0@@A": 8359152,
     "??_C@_07CAMD@unknown?$AA@": 8178912,
@@ -15742,7 +15742,7 @@
     "?unknown_007156d0@@YAXXZ": 7427792,
     "?unknown_00715f10@@YAXXZ": 7429904,
     "?Audio_Is_On@@3HA": 8590396,
-    "?Audio_Stop@@YAXXZ": 4222400,
+    "?Audio_Stop@@YIXXZ": 4222400,
     "?Audio_Pause@@YAXXZ": 4222432,
     "?unknown_007144b0@@YAXXZ": 7423152,
     "?Audio_Resume@@YAXXZ": 4222464,

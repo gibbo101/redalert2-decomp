@@ -4,8 +4,8 @@
     "id": "population-2878",
     "inventory_sha256": "fadd3ba94a37583d28dc3ddc45039b0642e3ec70cd3a192a9c31eed7daddfe87",
     "gaps_sha256": "6f75b98b5bbd265a96dfb9dd878f3371f1c1127c466f4c7ad84d1f18c9139a97",
-    "historical_population_sha256": "5ef8f01d2520b3c1fad9691eb157b8108c179f124e0bebb9c04dabb8837449fc",
-    "historical_acceptance_sha256": "ffba3c1ff49f70eca69d2379c0eea4ab5ca3c459c2eb69bffb1a195e4a13f6ad"
+    "historical_population_sha256": "c93035c566ead1de1146d473aeb4d519250060815e09709b45a874b638663346",
+    "historical_acceptance_sha256": "ba0b49ed5f5c5d52b76f510c5a2fa3e90a350b893ae411ed953a018eb633c9b1"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2502,7 +2502,7 @@
     "?Audio_Global_Levels@@3PAPAUAudioLevelSet@@A": 8590412,
     "??_C@_0L@BPPF@EVA?5Stream?$AA@": 8363068,
     "?Audio_Get_Device@@YAPAUAudioDevice@@XZ": 4222784,
-    "?Speech_Clear@@YAXXZ": 7428016,
+    "?Speech_Clear@@YIXXZ": 7428016,
     "??_C@_04KIKH@none?$AA@": 8184044,
     "?unknown_vox_playing_ad0954@@3PAVVoxClass@@A": 11340116,
     "?unknown_vox_delay_ad0960@@3_KA": 11340128,
@@ -3585,7 +3585,7 @@
     "?Audio_Main_Bag@@3PAUAudioBag@@A": 8590388,
     "?Audio_Streamer_Init@@YAHXZ": 4224128,
     "?Audio_Is_On@@3HA": 8590396,
-    "?Audio_Stop@@YAXXZ": 4222400,
+    "?Audio_Stop@@YIXXZ": 4222400,
     "?Audio_Pause_All@@YAXXZ": 4222528,
     "?Audio_Resume_All@@YAXXZ": 4222576,
     "?Audio_Update_Busy@@3HA": 8590444,
@@ -5000,7 +5000,8 @@
     "?Create@?$Initializer@VMultiplayerSiege@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000864,
     "?Create@?$Initializer@VUnholyAlliance@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000928,
     "?Create@?$Initializer@VFreeForAll@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000992,
-    "?Create@?$Initializer@VMPCooperative@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6001056
+    "?Create@?$Initializer@VMPCooperative@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6001056,
+    "?Input@MessageListClass@@QAEHAAHG@Z": 5986032
   },
   "regions": [
     {
@@ -5929,13 +5930,13 @@
         {
           "offset": 50,
           "kind": 20,
-          "symbol": "?Speech_Clear@@YAXXZ",
+          "symbol": "?Speech_Clear@@YIXXZ",
           "target": 7428016,
           "addend": 0,
           "resolved": 4294965658
         }
       ],
-      "source_sha256": "2f3452f15fb53940a92ad0ea9870c774dc0aa23ae5dc798bfadd47bac3f51d98",
+      "source_sha256": "01ca9ceff52f61dd27c4eab2ec4dbbfe4fc96bf141254fe067e36b2c05d6ed82",
       "source": "src/recovered/classes/VoxClass/Speech_Stop_00715de0.cpp",
       "population": "population-2878",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
@@ -6175,7 +6176,7 @@
         {
           "offset": 1,
           "kind": 20,
-          "symbol": "?Speech_Clear@@YAXXZ",
+          "symbol": "?Speech_Clear@@YIXXZ",
           "target": 7428016,
           "addend": 0,
           "resolved": 43
@@ -6221,7 +6222,7 @@
           "resolved": 11340124
         }
       ],
-      "source_sha256": "ca2df288ba75541eac552aae071c6fc3140863fb2c497f9d740e856b546e81f8",
+      "source_sha256": "eacc962f7710f3c7db14e7464f2a4b1ed9465b3a93c53f12825e846614c62ed6",
       "source": "src/recovered/classes/VoxClass/Speech_Shutdown_00715780.cpp",
       "population": "population-2878",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
@@ -6233,8 +6234,8 @@
     {
       "entry": 7428016,
       "method": "007157b0",
-      "symbol": "?Speech_Clear@@YAXXZ",
-      "symbol_prefix": "?Speech_Clear@@YAXXZ",
+      "symbol": "?Speech_Clear@@YIXXZ",
+      "symbol_prefix": "?Speech_Clear@@YIXXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -6432,7 +6433,7 @@
           "resolved": 11340048
         }
       ],
-      "source_sha256": "5b7309b1a7fc4c0fc0d1ffbd939e362eaa73efd04d66f7bef5d72debbcc4f6c9",
+      "source_sha256": "b2befcc4d43f3901ef3bc743b79d436f2c0777314bcd9770ea66552aefb9e6bc",
       "source": "src/recovered/classes/VoxClass/Speech_Clear_007157b0.cpp",
       "population": "population-2878",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
@@ -6632,7 +6633,7 @@
         {
           "offset": 204,
           "kind": 20,
-          "symbol": "?Speech_Clear@@YAXXZ",
+          "symbol": "?Speech_Clear@@YIXXZ",
           "target": 7428016,
           "addend": 0,
           "resolved": 4294966816
@@ -8200,7 +8201,7 @@
         {
           "offset": 43,
           "kind": 20,
-          "symbol": "?Speech_Clear@@YAXXZ",
+          "symbol": "?Speech_Clear@@YIXXZ",
           "target": 7428016,
           "addend": 0,
           "resolved": 4294963697
@@ -8736,7 +8737,7 @@
         {
           "offset": 42,
           "kind": 20,
-          "symbol": "?Speech_Clear@@YAXXZ",
+          "symbol": "?Speech_Clear@@YIXXZ",
           "target": 7428016,
           "addend": 0,
           "resolved": 4294962658

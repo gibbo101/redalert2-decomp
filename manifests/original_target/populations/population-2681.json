@@ -4,8 +4,8 @@
     "id": "population-2681",
     "inventory_sha256": "88707110680051360eb08f798a22706ad5f358a7ff031a3a275a52aedcf6cbbd",
     "gaps_sha256": "bbe03305dce035c3a0d3281eed3fcea4b9d042a193b89afb63ce31ffb5d6dd30",
-    "historical_population_sha256": "9abc15133c7b19c8625a9b242c80ae266a99763dd496bc15dda50e62614bd4c5",
-    "historical_acceptance_sha256": "688b045cbf4fbef713d6be24442632af3d7db68a4a93e2fab48623a57d51021a"
+    "historical_population_sha256": "eb9c748098f221bcb876b63aad4e8bf0f275edb6f153730f53ed9fcfcf091432",
+    "historical_acceptance_sha256": "affbfc5eb70c8406425b3a65664bd5ba316478a2f384bba8006e12e7c8c41223"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10958,7 +10958,7 @@
     "?Create@?$Initializer@VUnholyAlliance@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000928,
     "?Create@?$Initializer@VFreeForAll@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000992,
     "?Create@?$Initializer@VMPCooperative@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6001056,
-    "?Speech_Clear@@YAXXZ": 7428016,
+    "?Speech_Clear@@YIXXZ": 7428016,
     "?Speech_Play@@YIXHHH@Z": 7428288,
     "?Speech_Shutdown@@YAXXZ": 7427968,
     "??0VoxClass@@QAE@PBD@Z": 7430368,

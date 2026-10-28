@@ -41,7 +41,7 @@ bool Speech_Is_Playing();
 // The EVA speech queue (shared/vox_speech.hpp): drops every waiting speech
 // (0x007157B0); clears it and destroys the stream (0x00715780); plays the
 // VoxClass at an index, -1 for the type or priority taking its own (0x007158C0).
-void Speech_Clear();
+void __fastcall Speech_Clear();
 void Speech_Shutdown();
 void __fastcall Speech_Play(int index, int type, int priority);
 // Speech queue helpers (0x00714410 releases the queued entries of the list at

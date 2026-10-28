@@ -4,8 +4,8 @@
     "id": "population-2709",
     "inventory_sha256": "cf3d4ec7f2fb29e81074af978d44b25250734ce698433b0e5cdf5ef72d2b5663",
     "gaps_sha256": "01de4b690b92e723463f9ebef4e7fb17ea5bc5bbac4ba10c622959097468ff3f",
-    "historical_population_sha256": "b66e53db74ec59f3ba2c3fccd9a09e33cada6e39c4eb736e969676ccd974dfdf",
-    "historical_acceptance_sha256": "cb80020ddb9406ed29a27171d33e3f67fc6d66e710a7271ce48792b0eefbfb07"
+    "historical_population_sha256": "bf33ec01bfcb541f6bba8e6abedfe333085a28632a5b9bd30d49f080f6d108c7",
+    "historical_acceptance_sha256": "06286733420a95107abf485a61e26f760fb594785d67a529f9d7a7ac4a31855c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9393,7 +9393,7 @@
     "?unknown_476cc0@CellClass@@QAE_NPAVObjectClass@@@Z": 4680896,
     "??_7MechLocomotionClass@@6B@": 8020340,
     "??_EMechLocomotionClass@@UAEPAXI@Z": 5845776,
-    "?Audio_Stop@@YAXXZ": 4222400,
+    "?Audio_Stop@@YIXXZ": 4222400,
     "?Audio_Level_Fade_To_Zero@@YIXPAUAudioLevel@@@Z": 4222880,
     "?Post_Load_Game_0065d2c0@@YIXXZ": 6673088,
     "?CPU_Scaled_Delay_00662d60@@YIHH@Z": 6696288,
@@ -10482,7 +10482,7 @@
     "?Resume@ScoreAnimClass@@UAEXXZ": 6718288,
     "?Pause@VocStaticSound@@QAEXXZ": 7423072,
     "_strncmp": 7878672,
-    "?Speech_Clear@@YAXXZ": 7428016,
+    "?Speech_Clear@@YIXXZ": 7428016,
     "?Speech_Play@@YIXHHH@Z": 7428288,
     "?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z": 7422384,
     "?Voc_Static_Add@@YIPAUAudioEvent@@HABUCoordStruct@@I@Z": 7422608,
@@ -21405,7 +21405,7 @@
         {
           "offset": 152,
           "kind": 20,
-          "symbol": "?Audio_Stop@@YAXXZ",
+          "symbol": "?Audio_Stop@@YIXXZ",
           "target": 4222400,
           "addend": 0,
           "resolved": 4292511972
@@ -21888,7 +21888,7 @@
         {
           "offset": 297,
           "kind": 20,
-          "symbol": "?Audio_Stop@@YAXXZ",
+          "symbol": "?Audio_Stop@@YIXXZ",
           "target": 4222400,
           "addend": 0,
           "resolved": 4292511491
@@ -24178,7 +24178,7 @@
         {
           "offset": 290,
           "kind": 20,
-          "symbol": "?Audio_Stop@@YAXXZ",
+          "symbol": "?Audio_Stop@@YIXXZ",
           "target": 4222400,
           "addend": 0,
           "resolved": 4292514986
@@ -25573,7 +25573,7 @@
         {
           "offset": 388,
           "kind": 20,
-          "symbol": "?Audio_Stop@@YAXXZ",
+          "symbol": "?Audio_Stop@@YIXXZ",
           "target": 4222400,
           "addend": 0,
           "resolved": 4292513144
