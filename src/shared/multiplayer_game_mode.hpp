@@ -337,6 +337,11 @@ public:
 // NumPlayers; 0 without a name or an INI (0x005A2800, MPCoop.cpp).
 int __fastcall Map_Player_Count_005a2800(char const *filename);
 
+// MultiplayerGameMode slot 42 0x005B7920: an observer took a random first cell (0x00A71A3C), and the
+// next house was given that cell (0x00A71A3D).
+extern bool unknown_flag_a71a3c;
+extern bool unknown_flag_a71a3d;
+
 // The colours taken while MPCooperative slot 21 picks a map's computer colours (0x00A71118).
 extern int unknown_colors_a71118[8];
 

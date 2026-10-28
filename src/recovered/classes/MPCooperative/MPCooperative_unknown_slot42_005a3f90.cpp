@@ -8,11 +8,6 @@
 #include "shared/coord_distance.hpp"
 #include "shared/id_source.hpp"
 
-static inline double Cell_Distance(double x, double y)
-{
-    return unknown_sqrt_4ba410(x * x + y * y);
-}
-
 Cell MPCooperative::unknown_slot42(int house, DynamicVectorClass<Cell> &cells, bool *taken)
 {
     int count = 0;

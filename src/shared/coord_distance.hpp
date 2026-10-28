@@ -14,4 +14,11 @@ inline int Coord_Distance(CoordStruct const &a, CoordStruct const &b)
     return (int)unknown_sqrt_4ba410((double)d.X * d.X + (double)d.Z * d.Z + (double)d.Y * d.Y);
 }
 
+// The length of a cell offset (both slot 42s, MultiplayerGameMode 0x005B7920 and MPCooperative
+// 0x005A3F90, sum it over the taken start cells).
+inline double Cell_Distance(double x, double y)
+{
+    return unknown_sqrt_4ba410(x * x + y * y);
+}
+
 #endif
