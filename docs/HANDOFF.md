@@ -1,32 +1,49 @@
 # Handoff — original-target decompilation
 
-Current state only; rewritten 2026-10-28. Numbers: [STATUS.md](STATUS.md).
-Workflow: [process](ORIGINAL_TARGET_PROCESS.md). Commands:
-[build](ORIGINAL_TARGET_BUILD.md). Matching rules: [VC6 notes](VC6_MATCHING_NOTES.md).
-Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF_CODEX_OWNER_20261024.md),
-[history/CLAUDE_HANDOFF_20261026.md](history/CLAUDE_HANDOFF_20261026.md).
+Current state only (2026-10-28). Numbers: [STATUS.md](STATUS.md). Workflow:
+[process](ORIGINAL_TARGET_PROCESS.md). Commands: [build](ORIGINAL_TARGET_BUILD.md). Matching rules:
+[VC6 notes](VC6_MATCHING_NOTES.md). Open misses and debt: [OPEN_MISSES.md](OPEN_MISSES.md).
+Earlier owner periods are in [history/](history/).
 
-## Owner and lanes
+## Owner, lanes and pacing
 
-Claude (Mac) owns integration. Until the Nov 1 usage reset, Mac lanes run on Opus with fewer lanes
-(user direction 2026-10-28): Coop115 (MultiplayerGameMode and derived modes, MessageListClass) and
-Seed116 (100-1500 B from 0x680000: sound-handle rename and Voc_Play_At, Vox speech). MPGameMode.cpp
-and MPCoop.cpp compile as one unit (population-2861), so MPCooperative functions that call a base body
-need separate units. Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
-(LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
-0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
-the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
-Each lane's resume notes are in `build/class-work/<Lane>/NOTES*` (ignored).
+Claude (Mac) owns integration; a Codex session on the Mac may take over as standby owner using this
+file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
+- At most four Mac lanes. Each lane gets one function or one small family, hands back when it lands
+  or its time box ends, and the next target gets a fresh lane (shared brief:
+  `build/class-work/LANE_BRIEF.md`, "Scope and budget").
+- Stop a lane past about 150 output tokens per landed byte or after two zero-byte handbacks;
+  record its best score and draft in its NOTES.
+- Sweep promotion and near-miss hill-climbing are the Windows lead's (Codex) work.
+- Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
+- The owner session restarts from this file when its context passes about 200K tokens.
+
+Running Mac lanes (resume folders `build/class-work/<Lane>/`, NOTES.md and `d/rN/`):
+- Coop115 (Opus): finishing its current MultiplayerGameMode/MessageListClass round, then stops.
+- Seed117 (Opus): VoxClass::Find_Index 0x716640 and the two functions it unblocks (0x715B40,
+  0x7163F0), then stops.
+Next-lane candidates: the MultiplayerGameMode fill-combo family 0x5B70B0/0x5B71E0/0x5B8490 (inline
+budget), MessageListClass Input 0x5B56F0 (81.55), the CD-drive detection unit 0x715090-0x715463,
+Seed116's fresh.json (613 functions in 0x680000-0x770000; sweep work, so Windows), the Tactical
+projection family (Seed113/Seed114 NOTES).
+
+Windows: one Codex lead (LEAD.md in the coordination folder) staffing codex1 pathfinding
+0x570000-0x58FFFF, codex2 BuildingClass, codex3 bound evidence; the lead owns seed tooling, sweeps
+and, from 2026-10-28, near-miss hill-climbing (queue in messages/2026-10-28T2200Z-owner-to-lead.md).
+BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
+so MPCooperative functions that call a base body need separate units.
 
 ## Integration loop
 
 1. Take a delivery: frozen `d/rN/` folder with plans, drafts, header copies,
    base commit. Plans use forward-slash paths and LF endings.
-2. Frozen whole-population plans carry context drafts from their base commit; when later landings
+2. `private/tools/land_round.sh DIR "message" PLAN...` merges DIR/shared against DIR/BASE (a header
+   new at BASE that already landed is replaced only by a superset copy), reheads, accepts and lands;
+   `private/tools/land_rename.sh SPEC "message"` applies a rename alone and lands. On a header
+   conflict, resolve by hand and rerun with SKIP_HEADERS=1. Frozen whole-population plans carry context drafts from their base commit; when later landings
    rewrote those sources, `private/tools/rehead_plan.py PLAN` writes PLAN.head.json with unchanged
    context rows re-pointed at HEAD sources (drafts that rewrite a source are kept; missing population
    rows are added; Windows `C:/` prefixes are stripped). Accept the .head.json.
-   `private/tools/land_round.sh DIR "message" PLAN...` does header merge, rehead, accept and land.
 3. Merge header copies with `git merge-file src/shared/H BASE COPY` (BASE = the
    header at the worker's base commit). New headers are copied.
 4. Accept each plan: `$RA2_PYTHON -B tools/original_target/accept_sources.py
@@ -54,105 +71,6 @@ plateau with its best score and draft, then move on. A repeat delivery with no
 new bytes is not a delivery. 489 unrecovered functions over 1 KB hold about
 1 MB; big functions are worked with the controlled-study method (lab
 experiments that yield a rule, then the rule applied), as in the VC6 notes.
-
-## Open debt and resumable misses
-
-- Map.cpp Cell tables (0x5441E0, 0x5461A0, 0x55B520, 0x55CBC0, 0x56B330, ~15.7 KB):
-  exact with `Cell(short, short) { Set(x, y); }`; TechFoot39 is finishing the
-  0x54AB00 and Overlay Read_INI 0x5DB670 refits.
-- CounterClass: HouseClass::~HouseClass calls 0x491C20, which is accepted as the
-  `template class VectorClass<int>` destructor; an out-of-line ~CounterClass matches House
-  but makes the VectorClass<int> unit emit an extra destructor (Clean45 spec/counter2.json).
-- Duplicates left (Clean45 d/globals/README.md): unknown_a40d13 vs unknown_flag_a40d13 (same
-  bool), class-typed globals declared in several headers (MainWindow, Houses, Infantry,
-  TeamTypes, IsoTileTypes, ...), unknown_object_index_abff58 typed UnknownIndexClass in
-  building.hpp but IndexClass elsewhere.
-- RulesClass Sides 0x64BC10 needs DynamicVectorClass::ID with `Count()`, which makes
-  142 explicit-instantiation units emit an unaccounted Count COMDAT.
-- Display chain parked on register tie-breaks (Disp52 NOTES): RTacticalClass::Action 0x62FE30
-  97.18, DisplayClass slot 48 0x49BB20 78.29 (needs a slot 46/48 + 0x6D8F60 rename and header
-  moves listed there), 0x4991D0 49.4.
-- Write_Scenario_INI 0x65F980 uses an inline accessor on PreviewClass (YRpp name; its member is
-  `DSurface *ImageSurface`); no plain member form comes close (21-43), so the accessor stays as an
-  inline split (AGENTS.md lists inline splits as normal iteration).
-- Near misses of 96 or more, ranked with drafts and the remaining difference:
-  `build/class-work/Close64/queue.md` (Close64 closed only Sidebar Draw_It; the rest are
-  register/scheduling tie-breaks, negative results in its FINDINGS.md). Bound fixes found there:
-  Clear_Scenario 0x65D370 body 1140, WideString Trim_Trailing 0x770230 body 246 (inventory 103).
-  RulesClass::Process 0x6433A0 returns void (rename pending; HEAD says bool).
-- UnitClass (Unit62 NOTES): Read_INI 0x706AE0 99.44, death 0x6FD3A0 99.33, damage 98.08;
-  the 0x704A80 leaf replacement is approved.
-- Units60 (NOTES): progress Draw_Player 0x61FC20 41.06 (the original keeps Draw_Name out of
-  line), Shape/Flag/Text_Offset ~89.9, WinModem Read_From_Serial_Port 0x734B30 77.97,
-  Wait_For_Serial_Write 71.07; Get_Modem_Result 0x734CD0 and 0x735110 not drafted.
-- InfantryClass (Inf65 NOTES): 0x507170 99.37, 0x504BC0 98.41, 0x4FFB70 82.95; FootClass slot 54
-  0x4C8220 86.96. Uncovered template members: DynamicVectorClass<PlanningNodeClass*> Delete
-  0x61B350/0x61B390, DynamicVectorClass<TechnoTypeClass*>::Delete 0x6DFA70.
-- ObjectClass leaves (Leaf67 NOTES): Bullet Draw 0x4610D0 98.91, Terrain slot67 0x6E3990 95.56,
-  slot63 88.79, Overlay Write_INI 0x5DBA30 86.91, Veinhole 0x711E60 86.51 / 0x711D20 85.71,
-  VoxelAnim ctor 85.64; BuildingLight slot67 0x433380 and AI 0x433970 have short inventory bounds.
-- Handwritten assembly (not C; ledger category): XSurface::Fill_Rect(clip, rect, color) 0x7743C0,
-  BlitTrans<uchar>::BlitForward 0x775980 (Surf66).
-- Promo69 (NOTES) closed the recorded-exact list; still blocked: Audio_Stream_Open 0x407A90 99.69
-  (64-bit max compare jb/ja order), Planning_Close_Loop 0x6164E0 98.46, MSEngine slots 4/5,
-  VectorClass ctor 0x727040 (needs the WDTState ctor 0x725F40 emitted).
-- Plans with `separate_units` are accepted with a local compile (`private/tools/accept.sh` does
-  this): remote compilation does not stage their out-of-tree draft paths.
-- TechnoClass/FootClass (Foot68 NOTES): ctor 0x6C0CD0 99.66, 0x6C16F0 97.41, slot 220 0x6C9AF0
-  97.65, 0x6C5270 96.38, slot 234 0x6C89C0 90.31 (int -> void with BuildingClass 0x44FB50),
-  Foot slot 77 0x4C69F0 65.32 (body 1312 with jump and byte tables).
-- Coord stand-ins (Study72 FINDINGS): UnknownVector3 0x41B630 is CoordStruct(int,int,int);
-  CoordStruct::Set_00434820 is the UnknownCoord434820 forwarding constructor.
-- Surfaces (Surf71, Surf77 NOTES; parked on register tie-breaks): Plot_Line 0x773F00 99.44,
-  Draw_Shaded_Line 0x4AE9C0 66.71, slot 16 0x4ADE00 67.11 (fully decoded), slots 13-15 share its
-  skeleton, Draw_Ellipse 22.71; Intersect lives in rect_intersect.hpp because xsurface.cpp must not
-  see it (Draw_Line 0x773980 calls 0x41FDF0).
-- Debt73 NOTES: slot 234 0x6C89C0 89.83 (budget), Clear_Scenario 94.63, Coord stand-in renames
-  blocked until the Aircraft/BuildingLight callers that keep them out of line are recovered.
-- Windows lead: r1-r16 landed (last e3e64c00, tools 728474f6); Factory/House declarations and the
-  Leaf_4ea7f0 rename approved 2026-10-28 for the Building 0x44B480 caller plan.
-- techno.hpp's UnknownTechno238 stand-in still declares SpawnManagerClass members 0x689B70,
-  0x68A560, 0x68A4B0, 0x68A680 under other names (fold into SpawnManagerClass with a rename);
-  SpawnManagerClass::AI 0x689C90 (2008 B) not drafted.
-- Tiny74 NOTES: guarded class-static lists (88 B atexits) renumber other units' `_$E` symbols when
-  the static is declared in a shared header (convert.hpp); the Map global 0x40D060 needs MouseClass's
-  ctor out of line and dtor inline; Mark_All_Occupation_Bits (Mech/Teleport/Walk) 92.00.
-- Seed70 debt: 0x668350 accepted as UnknownTimed_00668350::unknown_start_timer is
-  ScoreAnimClass::Resume; 0xA3FA7C declared twice (UnknownPlayerEntry, UnknownNodeName);
-  Unknown_00713DB0 declared in radar.hpp and techno.hpp; MultiplayerGameMode ctor 0x5B6CD0 needs a
-  signature rename across the mode classes. Misses in Seed70 NOTES (Get_Input 82.8, Planning 30-95).
-- Big75 plateaus (NOTES): Set_Video_Mode 0x5434E0 93.32 (Set_Cursor zero stores), Allocate_Surfaces
-  0x519500 68.2, TeamClass 0x6BA1A0 78.32, OwnerDraw 0x5DEFB0 66.4; Create_Units' callee 0x660B60 32.
-- Seed76/Seed78 NOTES: WorldDom Faction_Name 0x7685A0 needs its four atexit thunks
-  (0x768690-0x7686CF) as inventory rows; Temporal 0x6E2500/0x6E2610 need BuildingClass 0x44D380;
-  misses Skirmish_Dialog 0x683BF0 98.72, RadBeam Start_Pass 0x635BA0 98.15, RadSite 0x637A80/0x637DC0
-  ~96.9 (stack slot swap), LineTrail ctor 94.55. Guarded static lists live in holder structs in
-  headers only their unit includes (a shared-header static renumbers other units' `_$E`).
-- MapClass 0x55CEF0-0x562450 (Big86 NOTES/FINDINGS): 0x55DEF0 78.69 and its X/Y twin 0x55E410 76.67;
-  two operator+ Cell constructors stay out of line on budget, and `else return changed;` folds to a
-  constant where the original reloads the local. The other 11 family members wait for that rule.
-- Plans can retire accepted regions they fully cover (`"retire": ["004d0020"]`, Tools91; used
-  for 0x4CFFB0). 0xA3FA98 has two names (unknown_lobby_slots_a3fa98, unknown_player_slots_a3fa98).
-  UICmnds 0x6F5B10 stays 98.55 after the slot 200 retype.
-- Leaf92 (Leaf67 NOTES): VoxelAnim slot67 0x70CFC0 91.57 (draft Leaf67/w/va67k3.cpp, overlay hv/);
-  BuildingLight slot67 0x433380 is 1510 B (ret 8 at 0x433963), AI 0x433970 is 1818 B; Trigger action
-  0x6B2040 99.31 (one lea operand order, Seed90 w/t2/j1.cpp).
-- Vtable ownership blocks (Tools102 working): IsometricTileTypeClass dtor 0x529190 (exact body),
-  LightConvertClass ctor 0x538860, DistributionObject vector ctor 0x6C09A0, WDTState ctor 0x72BEF0,
-  House AI picker 0x6BED50. MessageListClass::Add_Message 0x5B4DA0 98.18 (body 952 B).
-- Below 0x500000 (Seed110/Seed105/Seed104 NOTES): EventClass type-5 ctor 0x4B61F0 97.67, VQ audio
-  close 0x411A60 92.41, 0x4763D0 94.0, Fly 0x4BCA00 86.96, BulletClass::Detach 0x461520 75.21 (Cell ctor
-  0x42AD30 stays out of line in the original); not started: CCToolTip 0x46DFC0/0x46E250, 0x467A20,
-  COM QueryInterface 0x49F710/0x4A6460, Aircraft 0x4141C0/0x418840.
-- Symbol debt: manifests/symbols.json names 0x783810 `__strnicmp`, but it is strncmp; the real
-  _strnicmp is 0x7858D0 (Coop108 evidence). Fixing it needs CDFileClass Set_Search_Drives 0x46FE70 to call
-  strncmp and its population re-accepted with the new binding (a symbols-only edit fails the reference
-  audit). FoggedObjectClass(BuildingClass *, bool) 0x4C0670 90.66 (Index109 w/f4c0670c.cpp).
-- Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
-  0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
-  command registration 0x5173C0 76.7 (holds 47 destructors).
-- The catalog is sharded per population under `manifests/original_target/` (index.json +
-  populations/); load and write it only through `tools/original_target/catalog_io.py`.
 
 ## Environment
 
