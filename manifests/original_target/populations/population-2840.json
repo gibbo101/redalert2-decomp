@@ -4,8 +4,8 @@
     "id": "population-2840",
     "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
     "gaps_sha256": "04d36338335bdd7e43e23bfbef070ac0785ff73d83cba2e18e0315fd2eb8d76f",
-    "historical_population_sha256": "c6ed6d1d5c030b1334896301f81fd5d9fd2cb2171065e12c5c1ef44838680ae8",
-    "historical_acceptance_sha256": "ae46d5583ec87ab8fc7252f1786dcb1cc458e55770faafc63aabbe5846bd12b8"
+    "historical_population_sha256": "04732f6d49192bacc094f14ede167cdb74dde015462fb34316830c157489cb58",
+    "historical_acceptance_sha256": "fb32645531128aaa0c2004b0dfc5905011faab9774d845e87a2e575ce07f9705"
   },
   "references": {
     "??_7Tactical@@6BIPersistStream@@@": 8045936,
@@ -4051,7 +4051,7 @@
     "??_ERadarClass@@UAEPAXI@Z": 6507216,
     "??_EScrollClass@@UAEPAXI@Z": 6728800,
     "??_ETabClass@@UAEPAXI@Z": 5898128,
-    "?Unknown_006AABC0@Tactical@@QAEXPBVRect@@PAX@Z": 6990784,
+    "?Unknown_006AABC0@Tactical@@QAEXPBVRect@@P6IXPAVObjectClass@@@Z@Z": 6990784,
     "?unknown_rect_839630@@3VRect@@A": 8623664,
     "?Unknown_006AA610@Tactical@@": 6989328,
     "?Unknown_006AA790@Tactical@@": 6989712,
@@ -5634,7 +5634,15 @@
     "??_ETActionClass@@UAEPAXI@Z": 7024848,
     "??_EOverlayTypeClass@@UAEPAXI@Z": 6148752,
     "??_EBitTextClass@@UAEPAXI@Z": 4402464,
-    "??_EMultiplayerGameMode@@UAEPAXI@Z": 6000144
+    "??_EMultiplayerGameMode@@UAEPAXI@Z": 6000144,
+    "?Unknown_006A6800@@YIXHHPAH0@Z": 6973440,
+    "?Redraw@MSEngine@@QAEXXZ": 5975952,
+    "?Unknown_006AA610@Tactical@@QAEXP6IXPAVObjectClass@@@Z@Z": 6989328,
+    "?Unknown_006AA790@Tactical@@QAEXXZ": 6989712,
+    "??0FoggedObjectClass@@QAE@PAVAnimClass@@@Z": 4983536,
+    "?Unknown_006A9E10@Tactical@@QAEX_NABVRect@@1@Z": 6987280,
+    "?Unknown_006A9F60@Tactical@@QAEX_NABVRect@@1@Z": 6987616,
+    "??0TacticalProjection@@QAE@HH@Z": 6956864
   },
   "regions": [
     {
@@ -5715,7 +5723,7 @@
     {
       "entry": 6989328,
       "method": "006aa610",
-      "symbol": "?Unknown_006AA610@Tactical@@QAEXPAX@Z",
+      "symbol": "?Unknown_006AA610@Tactical@@QAEXP6IXPAVObjectClass@@@Z@Z",
       "symbol_prefix": "?Unknown_006AA610@Tactical@@",
       "options": [
         "/O2",
@@ -5732,13 +5740,13 @@
         {
           "offset": 107,
           "kind": 20,
-          "symbol": "?Unknown_006AABC0@Tactical@@QAEXPBVRect@@PAX@Z",
+          "symbol": "?Unknown_006AABC0@Tactical@@QAEXPBVRect@@P6IXPAVObjectClass@@@Z@Z",
           "target": 6990784,
           "addend": 0,
           "resolved": 1345
         }
       ],
-      "source_sha256": "b81f9ef02fc86016afb04ee937b33111dc81df4284fa9c18ab462cd779ab565a",
+      "source_sha256": "77232f29bc57c3fedfb292aebc4d9e0e24197f2c75869338c9f0a541eb6d7611",
       "source": "src/recovered/classes/Tactical/Tactical_unknown_6aa610_006aa610.cpp",
       "population": "population-2840",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",

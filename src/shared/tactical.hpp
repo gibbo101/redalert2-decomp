@@ -14,6 +14,7 @@
 class CellClass;
 
 class Surface;
+class ObjectClass;
 
 // The screen rise of a height in leptons (0x006A2970; rounded, plus one from
 // 728 up) and its inverse (0x006A29B0); hypotheses.
@@ -54,14 +55,14 @@ public:
 
     bool Unknown_006A8C80(Point2D *point);          // 0x006A8C80 (clamps a view position; false when unchanged)
     void Unknown_006A9170();                        // 0x006A9170 (after the view position changed)
-    void Unknown_006AA610(void *callback);          // 0x006AA610 (ends the selection band: the rectangle of its two corners to 0x006AABC0; hypothesis)
+    void Unknown_006AA610(void (__fastcall *callback)(ObjectClass *object));          // 0x006AA610 (ends the selection band: the rectangle of its two corners to 0x006AABC0; hypothesis)
     // Redraw the terrain objects (0x006A9E10, last first) and the buildings
     // (0x006A9F60) of display layer 2 whose drawn area overlaps the
     // intersection of the two rectangles (hypothesis).
     void Unknown_006A9E10(bool arg1, Rect const &rect1, Rect const &rect2);
     void Unknown_006A9F60(bool arg1, Rect const &rect1, Rect const &rect2);
     void Unknown_006AA790();                        // 0x006AA790 (draws the selection band rectangle; hypothesis)
-    void Unknown_006AABC0(Rect const *rect, void *callback);   // 0x006AABC0 (hypothesis)
+    void Unknown_006AABC0(Rect const *rect, void (__fastcall *callback)(ObjectClass *object));   // 0x006AABC0 (hypothesis)
 
     // Draws a line between two coordinates in a color (0x006AC160, slot 24;
     // TechnoClass 0x006C3950/0x006C3A90; true when drawn; hypothesis).
