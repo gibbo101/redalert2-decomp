@@ -4,8 +4,8 @@
     "id": "population-2440",
     "inventory_sha256": "22d01c544a5544294248466305c17b0acb118b04d755b893934bf36892859b19",
     "gaps_sha256": "d78e5f2034d6c8ac98c27faf3106f4f0cb1874420858b4e9a3143d9e66f3a253",
-    "historical_population_sha256": "0b76b5a2be66234a689dfcf11de3fbd1410d8588375b969713399d80432e1186",
-    "historical_acceptance_sha256": "b946c535602ceab29014ab32ba652c9e36e873f41bde1c3a9bfe97e9eed1f7d2"
+    "historical_population_sha256": "9135542284b66b5c7977e9c1841aafd7acd65f88f73ffdf2346e0032ec796668",
+    "historical_acceptance_sha256": "ddddac2ebafd17158cb13c70190872bee74bbbb569ca6e4aba629e0cfef07a5d"
   },
   "references": {
     "??_V@YAXPAX@Z": 7871803,
@@ -3030,9 +3030,9 @@
     "_wcslen": 7878149,
     "??0MultiplayerBattleTeam@@QAE@ABVWideString@@H@Z": 5907760,
     "??_7MultiplayerBattleTeam@@6B@": 8021868,
-    "??0UnholyAlliance@@QAE@PBXHHHHH@Z": 5948208,
-    "??0MultiplayerGameMode@@QAE@PBXHHHHH@Z": 5991632,
-    "??0FreeForAll@@QAE@PBXHHHHH@Z": 5927008,
+    "??0UnholyAlliance@@QAE@ABVWideString@@0ABVWstring@@1_NH@Z": 5948208,
+    "??0MultiplayerGameMode@@QAE@ABVWideString@@0ABVWstring@@1_NH@Z": 5991632,
+    "??0FreeForAll@@QAE@ABVWideString@@0ABVWstring@@1_NH@Z": 5927008,
     "?unknown_slot16@TEventClass@@UBEHXZ": 7237008,
     "?unknown_slot14@IPXInterfaceClass@@UAEIH@Z": 7776864,
     "?unknown_slot13@UDPInterfaceClass@@UAEHXZ": 7787488,
@@ -3207,7 +3207,7 @@
     "?unknown_count_members_5b9bb0@MultiplayerTeam@@QBEHXZ": 6003632,
     "?unknown_add_to_combo_5b9be0@MultiplayerTeam@@QAEHPAUHWND__@@@Z": 6003680,
     "??_GMultiplayerTeam@@UAEPAXI@Z": 6003744,
-    "??0MultiplayerBattle@@QAE@PBXHHHHH@Z": 5907232,
+    "??0MultiplayerBattle@@QAE@ABVWideString@@0ABVWstring@@1_NH@Z": 5907232,
     "?unknown_slot18@MultiplayerGameMode@@UAE_NHV?$VectorClass@H@@HHHH@Z": 5907408,
     "?unknown_slot17@MultiplayerGameMode@@UAE_NHV?$VectorClass@H@@HH@Z": 5907440,
     "?unknown_slot39@MultiplayerGameMode@@UAE_NV?$VectorClass@H@@HHH@Z": 5907664,

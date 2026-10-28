@@ -4,8 +4,8 @@
     "id": "population-2639",
     "inventory_sha256": "d13c42b1ef4d1b50a1b89b7da1c29ddcb4e316b775fa2bf7f72d85b9eca8c842",
     "gaps_sha256": "3463e96832bb75b5d7596557832b3de7034c1eb9c77eedbc8999373009e65b9c",
-    "historical_population_sha256": "82f98d60e9cbcbefa5174e3c86528c57223064e75a3bc0e29d5c8c60d65c1263",
-    "historical_acceptance_sha256": "af80098f18b50389d5eb66d24be0668c5c414eab6be06d76ee96de172f3ff7ce"
+    "historical_population_sha256": "9ef79ba5b3380771d11eb827ebfcc050e07222fc51252bb21520fcf98a4eab4e",
+    "historical_acceptance_sha256": "47cbe84fda250d62987f57806b334984d62b666db1d77f74347688f232a33ed3"
   },
   "references": {
     "_unknown_empty_rect": 11505560,
@@ -1403,7 +1403,7 @@
     "??HTPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AUTPoint2D@@XZ": 4412768,
     "?Time@ConnectionClass@@SAKXZ": 4724160,
-    "??0MultiplayerGameMode@@QAE@PBXHHHHH@Z": 5991632,
+    "??0MultiplayerGameMode@@QAE@ABVWideString@@0ABVWstring@@1_NH@Z": 5991632,
     "__DAT_00ab6ea8": 11234984,
     "__DAT_00ab6eb0": 11234992,
     "__DAT_00ac0168": 11272552,

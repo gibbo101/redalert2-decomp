@@ -54,8 +54,8 @@ WideString __fastcall unknown_number_text_7710c0(int number);
 
 class MultiplayerGameMode {
 public:
-    MultiplayerGameMode(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4, int unknown_5,
-                        int unknown_6);                       // 0x005B6CD0
+    MultiplayerGameMode(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id);                       // 0x005B6CD0
     virtual ~MultiplayerGameMode();                           // 0x005B6E20 (scalar deleting 0x005B8E10)
     virtual bool unknown_slot1() { return false; }               // 1 0x005A2380
     virtual bool unknown_slot2() { return false; }               // 2 0x005A2390
@@ -127,16 +127,16 @@ public:
     class InitializerBase {
     public:
         virtual ~InitializerBase() {}                                     // scalar deleting 0x005B8EC0
-        virtual MultiplayerGameMode *Create(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4,
-                                            int unknown_5, int unknown_6) = 0;
+        virtual MultiplayerGameMode *Create(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id) = 0;
     };
     template <class T>
     class Initializer : public InitializerBase {
     public:
-        virtual MultiplayerGameMode *Create(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4,
-                                            int unknown_5, int unknown_6)
+        virtual MultiplayerGameMode *Create(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id)
         {
-            return new T(unknown_1, unknown_2, unknown_3, unknown_4, unknown_5, unknown_6);
+            return new T(name, description, ini_name, unknown_4, unknown_5, id);
         }
     };
     // Registers a mode by name (0x005B8490; reads its settings).
@@ -162,7 +162,8 @@ public:
 // vtable 0x007A66B4 (scalar deleting destructor 0x005A2500)
 class MultiplayerBattle : public MultiplayerGameMode {
 public:
-    MultiplayerBattle(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4, int unknown_5, int unknown_6);
+    MultiplayerBattle(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id);
     virtual ~MultiplayerBattle();
     virtual bool unknown_slot12();                                 // 12 0x005A2370
 };
@@ -170,14 +171,16 @@ public:
 // vtable 0x007A69DC (scalar deleting destructor 0x005A7500)
 class MultiplayerManBattle : public MultiplayerGameMode {
 public:
-    MultiplayerManBattle(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4, int unknown_5, int unknown_6);
+    MultiplayerManBattle(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id);
     virtual ~MultiplayerManBattle();
 };
 
 // vtable 0x007A6B8C (scalar deleting destructor 0x005ABBA0)
 class MultiplayerSiege : public MultiplayerGameMode {
 public:
-    MultiplayerSiege(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4, int unknown_5, int unknown_6);
+    MultiplayerSiege(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id);
     virtual ~MultiplayerSiege();
     virtual bool unknown_slot4();                                  // 4 0x005AB5F0
     virtual bool unknown_slot5(WideString *message);                                // 5 0x005AB640
@@ -192,7 +195,8 @@ public:
 // vtable 0x007A6914 (scalar deleting destructor 0x005A71C0)
 class FreeForAll : public MultiplayerGameMode {
 public:
-    FreeForAll(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4, int unknown_5, int unknown_6);
+    FreeForAll(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id);
     virtual ~FreeForAll();
     virtual bool unknown_slot4();                                  // 4 0x005A70B0
     virtual bool unknown_slot5(WideString *message);                                // 5 0x005A70C0
@@ -204,7 +208,8 @@ public:
 // vtable 0x007A6AA4 (scalar deleting destructor 0x005AA780)
 class Megawealth : public MultiplayerGameMode {
 public:
-    Megawealth(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4, int unknown_5, int unknown_6);
+    Megawealth(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id);
     virtual ~Megawealth();
     virtual bool unknown_slot29();                                 // 29 0x005AA770
 };
@@ -212,7 +217,8 @@ public:
 // vtable 0x007A6C84 (scalar deleting destructor 0x005AC510)
 class UnholyAlliance : public MultiplayerGameMode {
 public:
-    UnholyAlliance(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4, int unknown_5, int unknown_6);
+    UnholyAlliance(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id);
     virtual ~UnholyAlliance();
     virtual bool unknown_slot4();                                  // 4 0x005AC380
     virtual bool unknown_slot5(WideString *message);                                // 5 0x005AC390
@@ -223,7 +229,8 @@ public:
 // vtable 0x007A678C (scalar deleting destructor 0x005A62B0)
 class MPCooperative : public MultiplayerGameMode {
 public:
-    MPCooperative(void const *unknown_1, int unknown_2, int unknown_3, int unknown_4, int unknown_5, int unknown_6);
+    MPCooperative(WideString const &name, WideString const &description, Wstring const &ini_name,
+        Wstring const &unknown_4, bool unknown_5, int id);
     virtual ~MPCooperative();
     virtual bool unknown_slot1();                                  // 1 0x005A6280
     virtual bool unknown_slot2();                                  // 2 0x005A6290

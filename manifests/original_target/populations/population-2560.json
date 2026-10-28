@@ -4,8 +4,8 @@
     "id": "population-2560",
     "inventory_sha256": "c7c870ac4ef069098cbd2e7cd64c921caa8724d7c5e538d74e293ad8507721c9",
     "gaps_sha256": "56a24911956ee87f3cc774f0e46e7295db84c6ecc3c60114815391bcfe59c518",
-    "historical_population_sha256": "9c4209772ebda483df96fea140b6bd1e9bc57387a4791090857a0612332b48b4",
-    "historical_acceptance_sha256": "7c6fbb76f176a0713389b8e5961973e5dbdfb5d374deb8c0a14632b31b031228"
+    "historical_population_sha256": "36b578f3c714e5b3e45fcb7bcacbcf84f852dc50bc73744ec7dfdad83f10c6d6",
+    "historical_acceptance_sha256": "124233612491b18010fefe8741dcbf1f701a38703ef43ae712bbfd4e178b2a09"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6225,7 +6225,7 @@
     "?Prep_For_Blit@@YI_NAAVSurface@@AAVRect@@01AA_NAAPAX3@Z": 7820128,
     "?Prep_For_Blit@@YI_NAAVSurface@@ABVRect@@AAV2@012AA_NAAPAX4@Z": 7820208,
     "?Lock@DSurface@@UAEPAXUPoint2D@@@Z": 4893824,
-    "??0MultiplayerGameMode@@QAE@PBXHHHHH@Z": 5991632,
+    "??0MultiplayerGameMode@@QAE@ABVWideString@@0ABVWstring@@1_NH@Z": 5991632,
     "?unknown_slot14@IPXInterfaceClass@@UAEIH@Z": 7776864,
     "?unknown_slot13@UDPInterfaceClass@@UAEHXZ": 7787488,
     "?Get_Global_Variable@UnknownIDSource@@QAE_NHPA_N@Z": 6689712,

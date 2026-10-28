@@ -4,8 +4,8 @@
     "id": "population-2611",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "e63066202d1a75d66763926e3f73a1d2d63f16b155481ff85bf3135bade9a08c",
-    "historical_acceptance_sha256": "0c410a273b74826129fd66807d74bc9f89a5c6a84edb44d0fbac7ad1a5de6f67"
+    "historical_population_sha256": "060ee39a74e165458d597e781bf0dad0b4ac689901c2eacd8c51afc6a7d39647",
+    "historical_acceptance_sha256": "e078d227781e5b424eb672db132ac06645d627c9fecf438d2bf98a366a457ef6"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2652,7 +2652,7 @@
     "?Time@ConnectionClass@@SAKXZ": 4724160,
     "??BSystemTimerClass@@QBEJXZ": 6923312,
     "?Timer@MouseClass@@2V?$CDTimerClass@VSystemTimerClass@@@@A": 10948464,
-    "??0MultiplayerGameMode@@QAE@PBXHHHHH@Z": 5991632,
+    "??0MultiplayerGameMode@@QAE@ABVWideString@@0ABVWstring@@1_NH@Z": 5991632,
     "__DAT_00ab6ea8": 11234984,
     "__DAT_00ab6eb0": 11234992,
     "?One_Time@SidebarClass@@UAEXXZ": 6797456,

@@ -4,8 +4,8 @@
     "id": "population-2661",
     "inventory_sha256": "11cbf301f12a5f55e8b46ca2cf3fa6d8c7790dbc79e84ecc4e53471aba033181",
     "gaps_sha256": "e7962dc6e720bfd7b8744b3121a0724c46746b4aafc76c108e85a0f2a212a690",
-    "historical_population_sha256": "6e7c2d8a6186a475245e3a0508dd4cdc0dd1e776f225756a59dc0f28353d70bc",
-    "historical_acceptance_sha256": "e21053795eca01e4b727f9ecbd5711f1c6b15f0a5cf00bbf257cfd55c1bf4a2d"
+    "historical_population_sha256": "aa27defde1317189214040d5fa828a6d02d76b8cb79ae3e7d45465923b5dfd0a",
+    "historical_acceptance_sha256": "3ec7356dbf9eaea122a4364352d9f3541eab31a2fdde85175307333f8ae15dac"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3522,7 +3522,7 @@
     "?unknown_slot15@WinsockInterfaceClass@@UAE_NH@Z": 7780896,
     "__imp__InvalidateRect@12": 7971988,
     "?unknown_flag_852fd7@@3_NA": 8728535,
-    "??0MultiplayerGameMode@@QAE@PBXHHHHH@Z": 5991632,
+    "??0MultiplayerGameMode@@QAE@ABVWideString@@0ABVWstring@@1_NH@Z": 5991632,
     "?Release@?$TClassFactory@VCampaignClass@@@@UAGKXZ": 6891776,
     "?Release@?$TClassFactory@VAlphaShapeClass@@@@UAGKXZ": 6914816,
     "?unknown_slot16@TEventClass@@UBEHXZ": 7237008,
