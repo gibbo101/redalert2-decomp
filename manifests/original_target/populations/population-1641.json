@@ -2902,49 +2902,6 @@
       "source_order": 55596
     },
     {
-      "entry": 7423072,
-      "method": "00714460",
-      "symbol": "?unknown_bump_and_notify@UnknownOwner_00714460@@QAEXXZ",
-      "symbol_prefix": "?unknown_bump_and_notify@UnknownOwner_00714460@@QAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 27,
-      "body_sha256": "99e53f5b1c4ca8b6f4c23579811b3f52a8f98d58cc1645fa7a1baa520ffd6af1",
-      "padding_bytes": 5,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "8cad074f5fafd5796f92a1e9dd9a1487000c27e9ca7edd58fbc94493b9ff798c",
-      "relocations": [
-        {
-          "offset": 11,
-          "kind": 20,
-          "symbol": "?unknown_find_406140@UnknownPart_00714460@@QAEPAUUnknownTarget_00714460@@XZ",
-          "target": 4219200,
-          "addend": 0,
-          "resolved": 4291763409
-        },
-        {
-          "offset": 22,
-          "kind": 20,
-          "symbol": "?unknown_call_4053f0@UnknownTarget_00714460@@QAEXXZ",
-          "target": 4215792,
-          "addend": 0,
-          "resolved": 4291759990
-        }
-      ],
-      "source_sha256": "d37ae6dc4ed8c0ffe77bb69fea7b7a407235d75f82160c1a27a2b6b84560ad48",
-      "source": "src/recovered/unowned/unknown_bump_and_notify_00714460.cpp",
-      "population": "population-1641",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_bump_and_notify_00714460",
-      "source_order": 55597
-    },
-    {
       "entry": 7432080,
       "method": "00716790",
       "symbol": "?unknown_save_vox_markers@@YIXPAUIStream@@@Z",
