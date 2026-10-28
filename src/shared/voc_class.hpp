@@ -68,6 +68,7 @@ public:
 
     static int __fastcall From_Name(char const *name);              // 0x00714940 (-1 if none)
     static VocClass *__fastcall Find(char const *name);             // 0x00714990 (0 for none or "<none>"; name hypothesis)
+    static int __fastcall Index_Of(VocClass *voc);                  // 0x00714A30 (-1 for none; name hypothesis)
 
     bool Read_INI(CCINIClass &ini);                                 // 0x007138D0
     // Reads Sound.ini: the [Defaults] and a type for each [SoundList] entry; resets the static sounds (0x00714540).
