@@ -4,8 +4,8 @@
     "id": "population-2252",
     "inventory_sha256": "f407fd9525e5d43df628d83c1306bee930f95bc8a3f619e3d6439e9aea55da1e",
     "gaps_sha256": "4b8cb888ee7eafb1f02acefea4f349b392f53d7225ebe00529edd562c226e84e",
-    "historical_population_sha256": "f194abcec25610a222f31d99028ab77bdaf701bd43ec483b241c4c37b319f935",
-    "historical_acceptance_sha256": "0a6adc137f7804b1db2bd4e840590647a88a0ddb61e188942bb040c5ca5fe3e4",
+    "historical_population_sha256": "50ee7291a827d064f315155d1087992ce96ff9ad7b1085791e2bffcec34758f2",
+    "historical_acceptance_sha256": "05939b84b8c816673fa1226e5c98afab66c6dd933255ae7896fb253a562c72ac",
     "separate_units": true
   },
   "references": {
@@ -1376,7 +1376,7 @@
     "??_ETemporalClass@@UAEPAXI@Z": 7219744,
     "??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z": 6854416,
     "??_7SpawnManagerClass@@6B@": 8042696,
-    "??0CaptureManagerClass@@QAE@PAVAbstractClass@@@Z": 4619696,
+    "??0CaptureManagerClass@@QAE@PAVTechnoClass@@@Z": 4619696,
     "??_7CaptureManagerClass@@6BIPersistStream@@@": 7985080,
     "??_7CaptureManagerClass@@6BIRTTITypeInfo@@@": 7985052,
     "??_7CaptureManagerClass@@6BINoticeSink@@@": 7985044,

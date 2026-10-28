@@ -4,8 +4,8 @@
     "id": "population-2648",
     "inventory_sha256": "b0964bdc2a1df06d942ca00ca3edd9a51d58a3b5053a0e2b3eccdd47ebdcb2f2",
     "gaps_sha256": "d5a04aaf68a3fdac5d644813755e1bfdf0a09fa1ccd13a7bc8fbbe78f852ef6c",
-    "historical_population_sha256": "e739169a0b3ecdf051edf55a5a133234e3ea43158285c282adc049f68f690a8f",
-    "historical_acceptance_sha256": "28a09399fc21baa61ea1e841db89b149938c2826e6e818507a7b741ef697256c"
+    "historical_population_sha256": "13c26f4d33f9f9fae22ce0863bca0d736339cfb501d2f073a5f766b8c84606ce",
+    "historical_acceptance_sha256": "7d26b684b43ac1a4a54719b72883788cf31289afb7c0a4ff746d337ac57662f7"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1348,7 +1348,7 @@
     "?Rules@@3PAVRulesClass@@A": 8624200,
     "?unknown_player_a35db4@@3PAVHouseClass@@A": 10706356,
     "??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z": 6854416,
-    "??0CaptureManagerClass@@QAE@PAVAbstractClass@@@Z": 4619696,
+    "??0CaptureManagerClass@@QAE@PAVTechnoClass@@@Z": 4619696,
     "??0ParasiteClass@@QAE@PAVAbstractClass@@@Z": 6316608,
     "??0TemporalClass@@QAE@PAVTechnoClass@@@Z": 7217024,
     "??_7TechnoClass@@6BIPersistStream@@@": 8047488,
@@ -9618,7 +9618,24 @@
     "?Spring@TriggerClass@@QAE_NHPAVObjectClass@@_N1H@Z": 7264064,
     "?unknown_func_6e6050@TEventClass@@QAE_NHPAVHouseClass@@PAVObjectClass@@PAV?$CDTimerClass@VFrameTimerClass@@@@PA_NH@Z": 7233616,
     "?unknown_func_6e6cf0@TEventClass@@QBE_NXZ": 7236848,
-    "__real@8@3ffd9999999999999800": 7986512
+    "__real@8@3ffd9999999999999800": 7986512,
+    "?Array@LaserDrawList@@2V?$DynamicVectorClass@PAVLaserDrawClass@@@@A": 10938008,
+    "?Array@RadBeamList@@2V?$DynamicVectorClass@PAVRadBeam@@@@A": 11232480,
+    "?Unknown_Free_Art_Sets_006F2510@@YIXXZ": 7283984,
+    "?Unknown_Free_Art_Pair_006F26D0@@YIXXZ": 7284432,
+    "?Get_Warp_Per_Step@TemporalClass@@QAEHH@Z": 7218288,
+    "?Detach_Techno@TemporalClass@@QAEXPAVTechnoClass@@@Z": 7218368,
+    "?Let_Go_Of_Target@TemporalClass@@QAEXXZ": 7218432,
+    "?Let_Go@TemporalClass@@QAEXXZ": 7218816,
+    "?Just_Let_Go@TemporalClass@@QAEXXZ": 7218960,
+    "?Can_Warp_Target@TemporalClass@@QBE_NPAVTechnoClass@@@Z": 7219056,
+    "??1LaserDrawClass@@QAE@XZ": 5452384,
+    "?Clear_All@LaserDrawClass@@SAXXZ": 5452464,
+    "?Attacked@HouseClass@@QAEXPAVTechnoClass@@@Z": 5132128,
+    "?unknown_func_4f3420@HouseClass@@QAEXXZ": 5190688,
+    "?unknown_func_4f5320@HouseClass@@QAE_NPAVBuildingTypeClass@@ABVCell@@@Z": 5198624,
+    "__imp__ValidateRect@8": 7971832,
+    "__imp__ValidateRect": 7971832
   },
   "regions": [
     {
@@ -14897,7 +14914,7 @@
         {
           "offset": 244,
           "kind": 20,
-          "symbol": "??0CaptureManagerClass@@QAE@PAVAbstractClass@@@Z",
+          "symbol": "??0CaptureManagerClass@@QAE@PAVTechnoClass@@@Z",
           "target": 4619696,
           "addend": 0,
           "resolved": 4292501608
@@ -14951,7 +14968,7 @@
           "resolved": 8624200
         }
       ],
-      "source_sha256": "ee093e4de52867eb410c466006a3bbec46354ef5cfd33fd2e080e3214ce10dbd",
+      "source_sha256": "ca0475ad951f8a54bd051bf74b7eef35be0776c10dc8e6deac1598a7a58ef246",
       "source": "src/recovered/classes/TechnoClass/TechnoClass_Init_006c1c50.cpp",
       "population": "population-2648",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",

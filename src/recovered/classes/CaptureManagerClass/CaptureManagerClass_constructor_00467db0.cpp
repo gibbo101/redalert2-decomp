@@ -1,4 +1,4 @@
-// ??0CaptureManagerClass@@QAE@PAVAbstractClass@@@Z (0x00467DB0)
+// ??0CaptureManagerClass@@QAE@PAVTechnoClass@@@Z (0x00467DB0)
 // Manager for owner; listed in the unit list.
 // @ref ??0AbstractClass@@QAE@XZ=0040ff10
 // @ref ??_7CaptureManagerClass@@6BINoticeSink@@@=0079d794
@@ -39,8 +39,9 @@
 // @ref ?unknown_slot21@AbstractClass@@UBE_NXZ=004102d0
 // @ref ?unknown_slot22@AbstractClass@@UBE?AUCoordStruct@@XZ=004102e0
 #include "shared/capture_manager.hpp"
+#include "shared/techno.hpp"
 
-CaptureManagerClass::CaptureManagerClass(AbstractClass *owner)
+CaptureManagerClass::CaptureManagerClass(TechnoClass *owner)
 {
     unknown_24 = 0;
     unknown_28 = 0;

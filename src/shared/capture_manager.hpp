@@ -15,11 +15,14 @@
 #define E_POINTER ((HRESULT)0x80004003L)
 #endif
 
+class TechnoClass;
+class HouseClass;
+
 extern "C" GUID const CLSID_CaptureManagerClass;   // 0x007A1DE0
 
 class CaptureManagerClass : public AbstractClass {
 public:
-    CaptureManagerClass(AbstractClass *owner);                  // 0x00467DB0
+    CaptureManagerClass(TechnoClass *owner);                    // 0x00467DB0
     CaptureManagerClass();                                      // 0x00467E40
     CaptureManagerClass(NoInitClass const &noinit);             // 0x00467ED0
     virtual ~CaptureManagerClass();                             // 0x00467F00
@@ -31,9 +34,13 @@ public:
     virtual int Size_Of() const;                                // 0x00468360
     virtual void Compute_CRC(WWCRCEngine &crc) const;           // 0x00468220
 
-    AbstractClass *unknown_24;      // +0x24
-    AbstractClass *unknown_28;      // +0x28
-    AbstractClass *Owner;           // +0x2C (constructor argument; hypothesis)
+    bool Can_Capture(TechnoClass *target);                      // 0x00467F80 (names after YR)
+    bool Capture(TechnoClass *target);                          // 0x00467FF0
+    void Draw_Link();                                           // 0x00468150 (name hypothesis)
+
+    TechnoClass *unknown_24;        // +0x24 the controlled techno (Capture 0x00467FF0)
+    HouseClass *unknown_28;         // +0x28 the house it belonged to (returned to it on release)
+    TechnoClass *Owner;             // +0x2C the controlling techno (constructor argument)
 };
 
 extern DynamicVectorClass<CaptureManagerClass *> unknown_CaptureManagerClass_list_008505a0;   // 0x008505A0

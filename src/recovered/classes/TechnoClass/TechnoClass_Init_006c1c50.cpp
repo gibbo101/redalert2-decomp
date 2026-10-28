@@ -24,7 +24,7 @@
 // @ref ?unknown_player_a35db4@@3PAVHouseClass@@A=00a35db4
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z=00689710
-// @ref ??0CaptureManagerClass@@QAE@PAVAbstractClass@@@Z=00467db0
+// @ref ??0CaptureManagerClass@@QAE@PAVTechnoClass@@@Z=00467db0
 // @ref ??0ParasiteClass@@QAE@PAVAbstractClass@@@Z=00606240
 // @ref ??0TemporalClass@@QAE@PAVTechnoClass@@@Z=006e1f80
 
