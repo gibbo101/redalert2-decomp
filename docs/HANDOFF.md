@@ -9,8 +9,9 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Surf66 (Surface, XSurface, BSurface, DSurface), Foot68 (FootClass, then TechnoClass), Promo69 (drafts recorded exact but never landed:
-`build/class-work/Promo69/candidates.md`), Seed70 (sweep_seeds breadth, 100-1500 B). Windows: one Codex lead
+has 16 GB): Foot68 (FootClass, then TechnoClass), Seed70 (sweep_seeds breadth, 100-1500 B), Surf71
+(DSurface slots 13-16 and the Surf66 misses), Study72 (DynamicVectorClass<WaypointClass>::Resize
+0x7256C0, which blocks seven exact WaypointPathClass drafts). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -87,6 +88,11 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
   VoxelAnim ctor 85.64; BuildingLight slot67 0x433380 and AI 0x433970 have short inventory bounds.
 - Handwritten assembly (not C; ledger category): XSurface::Fill_Rect(clip, rect, color) 0x7743C0,
   BlitTrans<uchar>::BlitForward 0x775980 (Surf66).
+- Promo69 (NOTES) closed the recorded-exact list; still blocked: Audio_Stream_Open 0x407A90 99.69
+  (64-bit max compare jb/ja order), Planning_Close_Loop 0x6164E0 98.46, MSEngine slots 4/5,
+  VectorClass ctor 0x727040 (needs the WDTState ctor 0x725F40 emitted).
+- Plans with `separate_units` are accepted with a local compile (`private/tools/accept.sh` does
+  this): remote compilation does not stage their out-of-tree draft paths.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).
