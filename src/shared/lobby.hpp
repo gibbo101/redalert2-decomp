@@ -14,6 +14,7 @@
 #include "shared/network_tests.hpp"
 #include "shared/win32_api.hpp"
 #include "shared/wide_string.hpp"
+class MultiplayerGameMode;
 
 // The first six fixed entries (0x00A72D2C..0x00A72D40); the seventh is unknown_player_a72d44.
 // The eight player slots are unknown_player_slots_a3fa98 and the session list unknown_players_a3fa7c.
@@ -47,7 +48,8 @@ int Selected_Campaign_005c67a0();
 HWND __fastcall Find_Dialog_00735940(int id);
 // 0 until the lobby is set up (0x007E6D90, initialised -1; hypothesis).
 extern int unknown_lobby_flag_7e6d90;
-// Sends a game options text to the other players (0x005C3C60).
+// Sends a game options text to the other players (0x005C3C60; it passes the string to strncpy and the
+// chat/pregame packet).
 void __fastcall Send_Game_Options_005c3c60(char const *text);
 // Selects the multiplayer map with this unknown_multi_missions_a3d8d8 index (-1: none) (0x005C7C30).
 void __fastcall Select_Scenario_005c7c30(int index);
@@ -65,6 +67,14 @@ void Free_Memory_00781d3b(void *block);
 // Frees every element of the list and clears it (0x005A7480).
 void __fastcall Free_Pointers_005a7480(DynamicVectorClass<NodeNameType *> *list);
 
+// Shows a game mode's description in a lobby dialog (0x005C3450; the mode's unknown_name_20).
+void __fastcall Unknown_005c3450(HWND dialog, MultiplayerGameMode *mode);
+// Sets a lobby dialog's text 0x5A8 from the session (0x005C34B0).
+void __fastcall Unknown_005c34b0(HWND dialog);
+// Refreshes a lobby dialog (0x005C7570).
+void __fastcall Unknown_005c7570(HWND dialog);
+// Sends the lobby state (0x005C3810; flags not recovered).
+void __fastcall Unknown_005c3810(bool unknown_1, bool unknown_2);
 // Starts a multiplayer game's pregame state (0x005C74F0).
 void Unknown_Pregame_Setup_005c74f0();
 

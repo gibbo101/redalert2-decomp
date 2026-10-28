@@ -5,11 +5,9 @@
 #include "shared/unknown_description_list.hpp"
 #include "shared/quoted_printable.hpp"
 #include "shared/debug_printf.hpp"
+#include "shared/lobby.hpp"
 extern "C" int __cdecl _stricmp(char const *first,char const *second);
 char *__fastcall Quoted_Printable_Encode_0048dec0(char const *input);
-// 005C3C60 consumes the ECX string as text: it passes it to strncpy and to the
-// chat/pregame packet; there is no owner layout or vptr access through it.
-void __fastcall Send_Game_Options_005c3c60(char const *text);
 extern char const campaign_options_format_007d5068[];
 extern char const campaign_options_separator_007d5060[];
 extern char const campaign_options_comma_007ce9c0[];

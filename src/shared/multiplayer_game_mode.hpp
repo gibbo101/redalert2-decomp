@@ -292,6 +292,7 @@ public:
     CoopCampaignClass *unknown_campaign_44;                        // +0x44 the selected campaign
     char unknown_48[0x4C - 0x48];
     bool unknown_4c;                                               // +0x4C (set when the saved campaign is chosen)
+    bool unknown_4d;                                               // +0x4D (slot 30 removes the lobby list's last row while set)
     int unknown_50;                                                // +0x50 the campaign list row last loaded
     CampaignScoreClass *unknown_score_54;                          // +0x54 the score screen (made by slot 36)
     int unknown_58;                                                // +0x58 (slot 34: the session row whose address is the local one)
