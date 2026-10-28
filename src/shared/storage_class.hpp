@@ -14,6 +14,10 @@ public:
     float Get_Total_Amount() const;         // 0x0069AE10
     float Get_Amount(int type) const;       // 0x0069AE40 (the amount of one type; hypothesis)
     float Add_Amount(float amount, int type);   // 0x0069AE50 (returns the new amount; hypothesis)
+    float Remove_Amount(float amount, int type);    // 0x0069AE70 (at most what is there; returns the amount removed)
+    int First_Used_Slot() const;            // 0x0069AFE0 (the first type with a positive amount, or -1)
+    StorageClass operator+=(StorageClass const &that);  // 0x0069AF00 (adds each amount; returns a copy)
+    StorageClass operator-=(StorageClass const &that);  // 0x0069AFA0 (subtracts each amount; returns a copy)
 
     float Amounts[4];
 };

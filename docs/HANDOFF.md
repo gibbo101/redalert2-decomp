@@ -9,9 +9,9 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Mac lanes (Opus, at most four at once; the Mac
-has 16 GB): Seed78 (seed sweep 100-1500 B, 0x500000-0x67FFFF), Seed79 (the same below
-0x500000), Seed76 (the same sweep
-from 0x680000), Big80 (1-4 KB functions, continuing Big75: OwnerDraw family, MapClass 0x55CEF0-0x562450). Windows: one Codex lead
+has 16 GB): Seed79 (seed sweep 100-1500 B below 0x500000), Seed82 (0x500000-0x67FFFF,
+continuing Seed78), Seed81 (0x680000 up, continuing Seed76; first the 0xABFF58 index unification and
+the TargetClass As_* family), Big80 (1-4 KB: OwnerDraw family, MapClass 0x55CEF0-0x562450). Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -122,6 +122,11 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
   signature rename across the mode classes. Misses in Seed70 NOTES (Get_Input 82.8, Planning 30-95).
 - Big75 plateaus (NOTES): Set_Video_Mode 0x5434E0 93.32 (Set_Cursor zero stores), Allocate_Surfaces
   0x519500 68.2, TeamClass 0x6BA1A0 78.32, OwnerDraw 0x5DEFB0 66.4; Create_Units' callee 0x660B60 32.
+- Seed76/Seed78 NOTES: WorldDom Faction_Name 0x7685A0 needs its four atexit thunks
+  (0x768690-0x7686CF) as inventory rows; Temporal 0x6E2500/0x6E2610 need BuildingClass 0x44D380;
+  misses Skirmish_Dialog 0x683BF0 98.72, RadBeam Start_Pass 0x635BA0 98.15, RadSite 0x637A80/0x637DC0
+  ~96.9 (stack slot swap), LineTrail ctor 94.55. Guarded static lists live in holder structs in
+  headers only their unit includes (a shared-header static renumbers other units' `_$E`).
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

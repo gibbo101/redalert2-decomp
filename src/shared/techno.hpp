@@ -778,6 +778,7 @@ public:
     void Unknown_004536D0(InfantryClass *infantry);     // 0x004536D0 (an Assaulter enters; InfantryClass 0x005094B0)
     BuildingTypeClass *Type;            // +0x418 (AircraftClass slots 28/101)
     void unknown_44d070(int damaged);   // 0x0044D070 (TechnoClass slot 233: health at or below the rules' +0x1368)
+    int unknown_449dd0();               // 0x00449DD0 (the power the building drains; as shared/building_class.hpp)
     char unknown_41c[0x434 - 0x41C];
     int unknown_434;                    // +0x434 (TechnoClass slot 55; the full class names it in shared/building.hpp)
     char unknown_438[0x4C0 - 0x438];

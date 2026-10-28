@@ -33,6 +33,7 @@
 #include "shared/abstract_type.hpp"
 
 class ObjectClass;
+class FootClass;
 class HouseClass;       // derives from AbstractClass (RTTI); the shared stand-in does not yet
 class TagTypeClass;
 class ScriptTypeClass;
@@ -67,6 +68,7 @@ public:
     Cell Waypoint_Location() const;                               // 0x006BFA90 (the waypoint's cell; hypothesis)
     TeamClass *Create_One_Of(HouseClass *house);                  // 0x006BEC80 (a new team of this type; hypothesis)
     Cell Transport_Waypoint_Location() const;                     // 0x006BFAD0 (the transport waypoint's cell; hypothesis)
+    bool unknown_func_6c0010(FootClass *foot, HouseClass *house);      // 0x006C0010 (the foot may join a team of this type; HouseClass::Can_Build_Team)
     void unknown_func_6c0110(int value) const;                      // 0x006C0110 (each team of this type)
     TeamClass *Find_Team() const;                                   // 0x006C0150 (first team of this type)
     void unknown_func_6c0180();                                     // 0x006C0180 (+0xE4/+0xE8/+0xE9 from the task force: movement zones, naval transports)

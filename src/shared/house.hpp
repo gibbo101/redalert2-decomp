@@ -70,6 +70,8 @@ public:
     UnknownHouseCounter();                  // 0x00491C00
     ~UnknownHouseCounter();                 // 0x00491C20
     int unknown_func_491d10(int index);     // 0x00491D10 (a count by type index)
+    void Increment(int index);              // 0x00491C50 (one more of a type; grows the counts; name hypothesis)
+    void Decrement(int index);              // 0x00491CB0 (one fewer; name hypothesis)
     void Save(IStream *stream);             // 0x00491DB0
     void Load(IStream *stream);             // 0x00491E10
     char unknown_00[0x10];
@@ -265,6 +267,7 @@ public:
     void unknown_func_4ecfb0(CoordStruct const &coord);    // 0x004ECFB0
     void unknown_func_4eeba0(int amount, HouseClass *house);   // 0x004EEBA0 (anger)
     bool unknown_func_4f5320(BuildingTypeClass *type, Cell const &cell);   // 0x004F5320 (the widened foundation touches a cell with this house's bit)
+    void Just_Built(TechnoClass *techno);                  // 0x004E6F10 (TS name; the factory finished an object)
     void Attacked(TechnoClass *source);                    // 0x004E4F60 (TS name; an object of the house was attacked)
     void unknown_func_4f3420();                            // 0x004F3420 (after an alliance changes; Make_Enemy)
     // Whether the player controls the house: in the campaign a human or
