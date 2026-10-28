@@ -319,6 +319,18 @@ public:
     void unknown_612b50(bool all);                             // 0x00612B50
     void unknown_614aa0();                                    // 0x00614AA0
 
+    // Clears the loop marks: +0xB4 and every branch's +0x74 (expanded inline
+    // by PlanningTokenClass::unknown_613a80).
+    void Clear_Loop_Marks()
+    {
+        unknown_b4 = -1;
+        int count = Branches.Count();
+        for (int i = 0; i < count; i++) {
+            Branches[i]->unknown_74 = -1;
+        }
+        Branch.unknown_74 = -1;
+    }
+
     DynamicVectorClass<PlanningMemberClass *> Members;        // +0x00
     int unknown_18;                                           // +0x18
     bool IsQueued;                                            // +0x1C
