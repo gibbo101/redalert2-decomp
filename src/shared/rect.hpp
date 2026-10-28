@@ -121,4 +121,8 @@ T __fastcall Union(T const &rect1, T const &rect2)
 // (0x00775620, hypothesis from the surface line drawers).
 bool __fastcall Clip_Line(Point2D &start, Point2D &end, Rect const &rect);
 
+// Moves every side of a rectangle inwards by amount (outwards when negative)
+// (0x006F1B00).
+void __fastcall Unknown_Rect_Shrink_006F1B00(Rect *rect, int amount);
+
 #endif
