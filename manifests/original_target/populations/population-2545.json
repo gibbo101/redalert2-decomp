@@ -4,8 +4,8 @@
     "id": "population-2545",
     "inventory_sha256": "b359ae516ad099ccc559ccc5bc3e4cc212922f8461c8517d9224e48a2489a309",
     "gaps_sha256": "08ac503aef953a6d85e4627a787f46ce99273270924511af5b5a74eb1da31e9e",
-    "historical_population_sha256": "3d9ca0453ceb5a68681841f308787f5a1420986a17d586af6ae8a0c8e7420f89",
-    "historical_acceptance_sha256": "5c013b8b16617c23d0846de5af28fdc317de6fdad4106668703bdc48389761fb"
+    "historical_population_sha256": "763e0402f0ef894fdc3a95d9741ec47fcec93e61d95b0f2e8091efd2861f14e9",
+    "historical_acceptance_sha256": "de6e64775b565003dc286ef1d2e52aaf8105b9a37f0f31607763931229279694"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2306,7 +2306,7 @@
     "?unknown_slot32@ParticleSystemTypeClass@@UBE_NABVCell@@PAVHouseClass@@@Z": 6426272,
     "?unknown_slot32@ParticleTypeClass@@UBE_NABVCell@@PAVHouseClass@@@Z": 6430304,
     "?unknown_slot14@MultiplayerGameMode@@UAEXPAUHWND__@@PBV?$DynamicVectorClass@H@@H@Z": 5993696,
-    "?unknown_slot15@MultiplayerGameMode@@UAEXPAUHWND__@@PBV?$DynamicVectorClass@H@@H@Z": 5993808,
+    "?unknown_slot15@MultiplayerGameMode@@UAEXPAUHWND__@@PBV?$DynamicVectorClass@PAVMultiMission@@@@PAVMultiMission@@@Z": 5993808,
     "?unknown_slot16@MultiplayerGameMode@@UAEXPAUHWND__@@H@Z": 5993936,
     "?unknown_slot26@MultiplayerGameMode@@UAE_NXZ": 5994528,
     "?unknown_slot18@MultiplayerGameMode@@UAE_NHV?$DynamicVectorClass@H@@PBD1@Z": 5907408,

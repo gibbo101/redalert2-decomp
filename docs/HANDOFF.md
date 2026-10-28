@@ -9,8 +9,8 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 ## Owner and lanes
 
 Claude (Mac) owns integration. Until the Nov 1 usage reset, Mac lanes run on Opus with fewer lanes
-(user direction 2026-10-28): Coop112 (MPCooperative, session layout, MessageListClass) and Seed113
-(100-1500 B from 0x680000: Tactical projection family, VocClass). Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
+(user direction 2026-10-28): Coop112 (MPCooperative, session layout, MessageListClass) and Seed114
+(100-1500 B from 0x680000: 0x6AA990, VocClass INI reader, Tactical projection family). Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.

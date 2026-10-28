@@ -86,7 +86,7 @@ public:
     // (unknown_5b7470), or -1.
     virtual int unknown_slot13();                                  // 13 0x005B7400
     virtual void unknown_slot14(HWND combo, DynamicVectorClass<int> const *items, int selected);                               // 14 0x005B74E0
-    virtual void unknown_slot15(HWND list, DynamicVectorClass<int> const *items, int selected);                               // 15 0x005B7550
+    virtual void unknown_slot15(HWND list, DynamicVectorClass<MultiMission *> const *maps, MultiMission *selected);                               // 15 0x005B7550
     virtual void unknown_slot16(HWND combo, int team);                                // 16 0x005B75D0
     virtual bool unknown_slot17(int unknown_1, DynamicVectorClass<int> unknown_list) { return false; } // 17 0x005A23F0
     virtual bool unknown_slot18(int index, DynamicVectorClass<int> choices, char const *second_name, char const *first_name) { return false; } // 18 0x005A23D0
@@ -256,7 +256,7 @@ public:
     virtual int unknown_slot10();                                  // 10 0x005A34B0
     virtual bool unknown_slot11();                                 // 11 0x005A46B0
     virtual int unknown_slot13();                                  // 13 0x005A3200
-    virtual void unknown_slot15(HWND list, DynamicVectorClass<int> const *items, int selected);                               // 15 0x005A4B70
+    virtual void unknown_slot15(HWND list, DynamicVectorClass<MultiMission *> const *maps, MultiMission *selected);                               // 15 0x005A4B70
     virtual void unknown_slot16(HWND combo, int team);                                // 16 0x005A3F70
     virtual bool unknown_slot18(int index, DynamicVectorClass<int> choices, char const *second_name, char const *first_name); // 18 0x005A3500
     virtual bool unknown_slot19(int index, int time, MPlayerScoreType *scores); // 19 0x005A35D0
