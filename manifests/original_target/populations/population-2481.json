@@ -4,8 +4,8 @@
     "id": "population-2481",
     "inventory_sha256": "990b915cbcebb6ea1bc8809e2be8057cec1b1c65811c2ab133b1c8153b6fe969",
     "gaps_sha256": "5d249e4f83e6f85c19b88b6718ed7aa0695fc29ad67e649b5e4896e47240e52a",
-    "historical_population_sha256": "6793e65c59d9c78ee2168b14d453e46b73f5804cbc0d417aa18b0f36c8cda78c",
-    "historical_acceptance_sha256": "05c547934d3a0ef1d1306ab669fbcca75b9804cc1f79df1c8e3247e95ac8ae5e"
+    "historical_population_sha256": "26b20779162fc0931a05355d94ebd5f7043013b770f35f8ff66c54356a608d0a",
+    "historical_acceptance_sha256": "51995781f0327a9f63cc4c37a1e83cac1fe32b81e64c66be17139bed8a2f350c"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -16982,8 +16982,8 @@
     "?Service@NullModemClass@@QAEHXZ": 6096480,
     "?Receive_Serial_Packet_005d0630@NullModemClass@@QAEHPAXPAH@Z": 6096432,
     "?serial_local_player_00a3fb38@@3HA": 10746680,
-    "?progress_indicator_00a769e8@@3VUnknownProgressIndicator@@A": 10971624,
-    "?Set_Progress_006201c0@UnknownProgressIndicator@@QAEXHNUPoint2D@@@Z": 6422976,
+    "?ProgressScreen@@3VProgressScreenClass@@A": 10971624,
+    "?Set_Progress_006201c0@ProgressScreenClass@@QAEXHNUPoint2D@@@Z": 6422976,
     "?Service_Game_IO_00481fb0@@YIXXZ": 4726704,
     "?queued_movies_00af8fd8@@3V?$DynamicVectorClass@PAVMovieHandle@@@@A": 11505624,
     "?Service_Network_Handshake_00482110@@YAXXZ": 4727056,

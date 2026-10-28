@@ -1,9 +1,9 @@
 #include "shared/serial_progress.hpp"
 // @ref ?Service@NullModemClass@@=005d0660
 // @ref ?Receive_Serial_Packet_005d0630@NullModemClass@@=005d0630
-// @ref ?Set_Progress_006201c0@UnknownProgressIndicator@@=006201c0
+// @ref ?Set_Progress_006201c0@ProgressScreenClass@@=006201c0
 // @ref ?serial_manager_00a40a28@@=00a40a28
-// @ref ?progress_indicator_00a769e8@@=00a769e8
+// @ref ?ProgressScreen@@=00a769e8
 // @ref ?serial_session_flags_00a3fac0@@=00a3fac0
 // @ref ?serial_local_player_00a3fb38@@=00a3fb38
 // @ref ?unknown_game_mode_a3d298@@=00a3d298
@@ -21,7 +21,7 @@ void __cdecl Process_Serial_Progress_Packets_00481f00()
                 // signed progress read. Complete packet format remains unknown.
                 if (*(int *)packet == 108 &&
                     (*(unsigned int *)(packet + 24) & 255) != serial_local_player_00a3fb38) {
-                    progress_indicator_00a769e8.Set_Progress_006201c0(
+                    ProgressScreen.Set_Progress_006201c0(
                         1, (double)*(int *)(packet + 25), Point2D(-1, -1));
                 }
             }

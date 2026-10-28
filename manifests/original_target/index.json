@@ -1220,7 +1220,7 @@
       },
       {
         "path": "src/shared/serial_progress.hpp",
-        "sha256": "2da8f4d70fe9663145134d4f59eb6495ec68b0828816514745e76217f654b5a0"
+        "sha256": "54b1953b27caa58da831234f9bfd8fe5bcbf4456daeebb794226878de0cd4d47"
       },
       {
         "path": "src/shared/translucent_write_alpha_blitter.hpp",
@@ -1509,6 +1509,10 @@
       {
         "path": "src/shared/tube.hpp",
         "sha256": "d13801fddae6a0171a3601a2782a6bff286d02eba1755b6a5f77ab02987bdd11"
+      },
+      {
+        "path": "src/shared/progress_screen.hpp",
+        "sha256": "dde828f1402ce89a616b4dd3b99c1c6ab80d2b3a9983a46f8b98d2212c527d77"
       }
     ],
     "source_quality_checkpoint": {
@@ -8586,7 +8590,7 @@
     "population-2422": "8353296d86e295a18598086315e0f3e25ef78bd5d0a7fbbce2e118bce5de63e2",
     "population-2423": "d988154cdc97ac707922572e3a98b776a503d861c3ab267e61826ad660ee1dd9",
     "population-2424": "4598c9d1a43f52c64ae49afef1211b2226686c95519daea3b642d10fd28cf3b8",
-    "population-2425": "95607811f737ef72c7e23bc8a37904be88f87d72eecea5b7eb7f61231c3d9eae",
+    "population-2425": "218691e4f69d72ef2c4ab7c0e3538b2a429dc8b42682c028bfa369a953565282",
     "population-2426": "6a0b99a696d5e5ddb76ca84eb9ee5b9c1aca4408c40bb08a5a8f7f4ebbde43fd",
     "population-2427": "9fc86ebfd0e2acd2f2f8e7dc84d47d4765891cf263975d82a30bc66da8a12037",
     "population-2428": "bc1f4bf8c351424cc1b4a58c3be56824b5458185334e8d405ed778c351522efb",
@@ -8648,7 +8652,7 @@
     "population-2479": "4334c2b98df83b8969795ea6ee202498dd352ee70ec396339a20389b7013f86e",
     "population-248": "a22c390b591c72c7210a6496bdd672feea7af7e38131bbb957e9f3f139ab0af9",
     "population-2480": "b022397db20c7f245e697173288c2be0dffcb8794184af4d8205d7f152e3f999",
-    "population-2481": "07abadd12054b3620eb85d540c1dccdea3eb0ddfd4037fb4f4e8dc4592aa1f26",
+    "population-2481": "e2a0845fbdfb5f09902f3125afc659863f44c8b47e8c5e422c7f3e394b1e0686",
     "population-2482": "598bea96c716e53a393148ff69c28e4a620266a7dadc0a95f514597239081915",
     "population-2483": "2002e07540991413377bbdf3bd3c04261565274cfb6fcc09104e5168a63c03ec",
     "population-2484": "1a6a72219a53d701c61a5f44d8856b3608e196583154dab09c729ab5f82eb811",

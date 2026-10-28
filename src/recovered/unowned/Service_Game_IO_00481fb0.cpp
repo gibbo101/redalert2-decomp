@@ -37,7 +37,7 @@ void __fastcall Service_Game_IO_00481fb0()
                 while (serial_manager_00a40a28.Receive_Serial_Packet_005d0630(packet,&length)>0) {
                     if (*(int *)packet==108 &&
                         (*(unsigned int *)(packet+24)&255)!=serial_local_player_00a3fb38) {
-                        progress_indicator_00a769e8.Set_Progress_006201c0(
+                        ProgressScreen.Set_Progress_006201c0(
                             1,(double)*(int *)(packet+25),Point2D(-1,-1));
                     }
                 }
