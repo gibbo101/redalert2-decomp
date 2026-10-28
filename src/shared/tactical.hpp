@@ -66,6 +66,7 @@ public:
     void Unknown_006A3020(Rect rect, int arg2);
     // Sets the view rectangle (0x006A65A0; DisplayClass slot 42).
     void Unknown_006A65A0(Rect const &rect);
+    void Unknown_006A6640(Point2D const &point);    // 0x006A6640 (sets the view position, clamped)
 
     char unknown_24[0xA8 - 0x24];
     int unknown_a8;                 // +0xA8 the frame of the last update (-1 after construction)
@@ -83,10 +84,13 @@ public:
     Point2D unknown_d74;            // +0xD74 the requested view position
     char unknown_d7c;
     bool unknown_d7d;               // +0xD7D set by Flag_To_Redraw
-    char unknown_d7e[0xDA0 - 0xD7E];
+    char unknown_d7e[0xD90 - 0xD7E];
+    Point2D unknown_d90;            // +0xD90 the selection band corner (DisplayClass slot 47 starts it)
+    Point2D unknown_d98;            // +0xD98 the other corner
     int unknown_da0;                // +0xDA0 counts the timer expiries
     CDTimerClass<SystemTimerClass> unknown_da4;     // +0xDA4 restarted at Rules->WaypointAnimationSpeed
-    char unknown_db0[0xE18 - 0xDB0];    // (0xE18 bytes: Read_Scenario_INI's new)
+    int unknown_db0;                // +0xDB0 the number of entries of the table at 0x00ABE5F8
+    char unknown_db4[0xE18 - 0xDB4];    // (0xE18 bytes: Read_Scenario_INI's new)
 };
 extern Tactical *unknown_tactical_83996c;
 
