@@ -7,6 +7,7 @@
 class UnknownMapGenerationLink {
 public:
     UnknownMapGenerationLink(); //0058B190
+    UnknownMapGenerationLink(unsigned int value,Cell const &a,unsigned int next,Cell const &b,int index); //0058B160
     UnknownMapGenerationLink(UnknownMapGenerationLink const &other); //0058B1D0
     unsigned int unknown_00;
     Cell unknown_04;

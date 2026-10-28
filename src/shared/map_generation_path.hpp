@@ -6,6 +6,7 @@
 #include "shared/coord.hpp"
 struct UnknownMapGenerationPoint {
     UnknownMapGenerationPoint() : Position(0,0),unknown_04(-1) {}
+    UnknownMapGenerationPoint(UnknownMapGenerationPoint const &other); //0058B140, copyctor-versus-assignment intent qualified
     Cell Position;
     int unknown_04;
 };
