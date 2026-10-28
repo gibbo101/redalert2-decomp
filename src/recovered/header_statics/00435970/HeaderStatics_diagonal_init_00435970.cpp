@@ -7,7 +7,7 @@
 #endif
 #include "shared/vector_class.hpp"
 
-class BombClass;
+#include "shared/object.hpp"
 
 // The unit's list of BombClass objects (0x0084EB78; name is a hypothesis).
 DynamicVectorClass<BombClass *> unknown_BombClass_list_0084eb78;

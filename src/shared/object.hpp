@@ -78,14 +78,60 @@ struct UnknownTriple {
     int unknown_08;
 };
 
-// The object at +0x38 (hypothesis: BombClass, whose vtable writers are
-// near 0x00435BE0).
-class BombClass {
+// The object at +0x38: a bomb planted on the object (Bomb.cpp, unit 0x00435970:
+// BombClass 0x00435BE0-0x004361EF and BombListClass; RTTI vtables 0x0079CA08
+// primary (24 slots), 0x0079C9EC IRTTITypeInfo, 0x0079C9E4, 0x0079C9DC).
+// Every bomb is in the unit's list 0x0084EB78. Field names are hypotheses.
+class TechnoClass;
+extern "C" GUID const CLSID_BombClass;          // 0x007A1E00
+class BombClass : public AbstractClass {
 public:
-    void Unknown_00435FB0();            // 0x00435FB0
+    BombClass();                                                        // 0x00435BE0
+    BombClass(NoInitClass const &noinit);                               // 0x00435D00
+    virtual ~BombClass();                                               // 0x00435C80
 
-    char unknown_00[0x28];
+    void Unknown_00435FB0();            // 0x00435FB0 (disarms: lets go of the target, the owner and the sound)
+    int Unknown_00436000() const;       // 0x00436000 (the flicker frame, 0..11; 12 for a type 1 bomb)
+    bool Unknown_00436070() const;      // 0x00436070 (a timed bomb, type 0, whose delay has passed)
+
+    virtual HRESULT __stdcall GetClassID(GUID *clsid);                  // 0x00436100 slot 3
+    virtual HRESULT __stdcall Load(IStream *stream);                    // 0x00436140 slot 5
+    virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);  // 0x004361D0 slot 6
+    virtual int Kind_Of() const { return 0x44; }                        // 0x004369E0 slot 11 (inline)
+    virtual int Size_Of() const { return sizeof(BombClass); }           // 0x004369D0 slot 12 (inline)
+    virtual void Compute_CRC(WWCRCEngine &crc) const;                   // 0x00436090 slot 13
+
+    TechnoClass *Owner;                 // +0x24 (the planting unit)
     HouseClass *unknown_28;             // +0x28 (the planting house; BuildingClass slot 78)
+    ObjectClass *Target;                // +0x2C (the object the bomb sits on; its +0x38)
+    int Type;                           // +0x30 (0 a timed bomb)
+    int unknown_34;                     // +0x34 (the frame it was planted; the flicker counts from it)
+    int unknown_38;                     // +0x38 (the frame it goes off)
+    UnknownAudioController unknown_3c;  // +0x3C (the ticking sound)
+    int unknown_50;                     // +0x50 (Rules BombTickingSound)
+    int unknown_54;                     // +0x54
+    bool unknown_58;                    // +0x58 (disarmed or gone off)
+};
+
+// Every bomb (0x0084EB78; defined by the Bomb unit).
+extern DynamicVectorClass<BombClass *> unknown_BombClass_list_0084eb78;
+
+// The planted bombs and the units whose type has BombSight (the object at
+// 0x008322E0; TechnoClass slots 52 and 53 leave and join the second list).
+class BombListClass {
+public:
+    void Unknown_004361F0();                                    // 0x004361F0 (the per-frame update; not recovered)
+    void Add_Bomb(TechnoClass *owner, ObjectClass *target);     // 0x00436470 (an infantry plants a timed bomb on target)
+    void Unknown_00436630(BombClass *bomb);                     // 0x00436630 (Bombs.Add)
+    void Unknown_00436680(TechnoClass *techno);                 // 0x00436680 (joins the BombSight list)
+    void Unknown_004366D0(TechnoClass *techno);                 // 0x004366D0 (leaves it)
+    void Clear();                                               // 0x00436710 (both lists emptied at their size; +0x30 = 45)
+    void Detach(AbstractClass *target);                         // 0x00436750 (drops the bomb, or the owner from every bomb)
+    HRESULT Save(IStream *stream);                              // 0x004367C0 (both lists as a count and pointers)
+
+    DynamicVectorClass<BombClass *> Bombs;                      // +0x00
+    DynamicVectorClass<TechnoClass *> unknown_18;               // +0x18 (BombSight units)
+    int unknown_30;                                             // +0x30 (45 when cleared, 1 when a bomb is planted)
 };
 
 // Original non-polymorphic trail layout; name/field meanings remain hypotheses.
