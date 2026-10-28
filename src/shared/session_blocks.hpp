@@ -5,7 +5,10 @@
 #ifndef RA2_SHARED_SESSION_BLOCKS_HPP
 #define RA2_SHARED_SESSION_BLOCKS_HPP
 
-struct UnknownSessionBlock_293C { int unknown[24]; };
+#include "shared/ipx_address.hpp"
+
+// Eight player addresses (MPCooperative +0xC8 constructs them one by one).
+struct UnknownSessionBlock_293C { IPXAddressClass Addresses[8]; };
 struct UnknownSessionBlock_299C { int unknown[8]; };
 struct UnknownSessionBlock_3022 { unsigned short unknown[8]; };
 

@@ -290,7 +290,7 @@ public:
 
     UnknownDescriptionList_00490E00 *unknown_campaigns_40;         // +0x40 the cooperative campaign records
     CoopCampaignClass *unknown_campaign_44;                        // +0x44 the selected campaign
-    char unknown_48[0x4C - 0x48];
+    int unknown_48;                                                // +0x48 (0 from the constructor)
     bool unknown_4c;                                               // +0x4C (set when the saved campaign is chosen)
     bool unknown_4d;                                               // +0x4D (slot 30 removes the lobby list's last row while set)
     int unknown_50;                                                // +0x50 the campaign list row last loaded
@@ -332,6 +332,10 @@ public:
     int unknown_340;                                               // +0x340 the selected campaign's record index
     bool unknown_344;                                              // +0x344
 };
+
+// The number of players of a map file: its [Waypoints] 0-7 that are set, else [RandomMap]
+// NumPlayers; 0 without a name or an INI (0x005A2800, MPCoop.cpp).
+int __fastcall Map_Player_Count_005a2800(char const *filename);
 
 // The colours taken while MPCooperative slot 21 picks a map's computer colours (0x00A71118).
 extern int unknown_colors_a71118[8];
