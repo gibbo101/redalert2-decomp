@@ -23,6 +23,8 @@ public:
     char unknown_00[0x58];
     char unknown_58[0x17C - 0x58];          // +0x58 the map's file name (the cooperative campaign records list it)
     bool unknown_17c;                       // +0x17C (a game mode test is skipped when false and 0x0073C370 agrees)
+    char unknown_17d[0x184 - 0x17D];
+    int unknown_184;                        // +0x184 the map's player count (MPCooperative slot 37: the computers are two fewer)
 };
 
 extern DynamicVectorClass<MultiMission *> unknown_multi_missions_a3d8d8;

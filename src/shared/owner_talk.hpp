@@ -32,6 +32,7 @@ public:
 
     // Whether a connection with this ID is flagged (0x0063F4C0; hypothesis).
     unsigned char Unknown_0063F4C0(int id);
+    void Unknown_0063FC90();                // 0x0063FC90 (MPCooperative slot 37, when the flagged connection exists)
 
     DynamicVectorClass<ConnectionListStruct *> Connections;   // +0x00
     bool unknown_18;                                          // +0x18

@@ -96,7 +96,14 @@ struct UnknownSessionState {
     int unknown_138;                        // +0x138 (-2 random, -3 observer: the country shows as that; 0x004D1820)
     char unknown_13c[0x2B0 - 0x13C];
     int unknown_2b0;                        // +0x2B0 (also unknown_int_a3d548)
-    char unknown_2b4[0x638 - 0x2B4];
+    char unknown_2b4[0x2C8 - 0x2B4];
+    unsigned int MaxAhead_2c8;              // +0x2C8 the frames ahead (set by the game speed; also unknown_max_ahead_a3d560)
+    unsigned int unknown_2cc;               // +0x2CC
+    char unknown_2d0[0x2E0 - 0x2D0];
+    unsigned int unknown_2e0;               // +0x2E0 (MaxAhead_2c8 at the start of a cooperative map)
+    unsigned int unknown_2e4;               // +0x2E4 (from MaxAhead_2c8 by the ping class, a multiple of 10)
+    unsigned int unknown_2e8;               // +0x2E8 (by the game speed; 0 without pings; also unknown_a3d580)
+    char unknown_2ec[0x638 - 0x2EC];
     bool unknown_638;                       // +0x638 (cleared by 0x00672440)
     bool unknown_639;                       // +0x639 (cleared before the load wait, 0x0065C7D0)
     bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)
@@ -109,7 +116,9 @@ struct UnknownSessionState {
     char unknown_23a8[0x27E4 - 0x23A8];
     // The player list (the object at 0x00A3FA7C, shared/unknown_player_entry.hpp unknown_players_a3fa7c).
     DynamicVectorClass<NodeNameType *> Players;   // +0x27E4
-    char unknown_27fc[0x293C - 0x27FC];
+    char unknown_27fc[0x290C - 0x27FC];
+    int unknown_290c;                       // +0x290C the ping class (1: below 1000 ms, 2: above)
+    char unknown_2910[0x293C - 0x2910];
     UnknownSessionBlock_293C unknown_293c;  // +0x293C (MPCooperative slot 34 saves it, slot 37 restores it)
     UnknownSessionBlock_299C unknown_299c;  // +0x299C (the same)
     char unknown_29bc[0x2FA0 - 0x29BC];
@@ -375,6 +384,11 @@ extern char unknown_string_83c55c[];
 // WOnline.cpp globals (moved from shared/wol_sink.hpp, which includes this header).
 extern int unknown_b2a7ec;              // 0x00B2A7EC
 extern int unknown_b2a7fc;              // 0x00B2A7FC (the game ID the loading screen shows)
+extern char unknown_b2a6d8[];           // 0x00B2A6D8 (MPCooperative slot 37 copies unknown_wstring_b26cb8 into it)
+extern unsigned int unknown_b2ab84;     // 0x00B2AB84 (slot 37: unknown_protocol_7fd370)
+extern int unknown_pings_b2a734[];      // 0x00B2A734 the players' pings in ms (1000: none)
+extern bool unknown_b2a820;             // 0x00B2A820
+extern bool unknown_b293d8;             // 0x00B293D8
 extern int unknown_a40774;  // 0x00A40774 (a live-object count; BuildingClass, FactoryClass, ...)
 extern int unknown_int_a40d48;  // 0x00A40D48 the mode the radar buttons select (1, 8, 9; Game Controls sets 4 and 6)
 extern bool unknown_flag_a40d84;  // 0x00A40D84 (Game Controls: set with a session game, its sliders then stay visible)

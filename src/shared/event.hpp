@@ -103,5 +103,8 @@ public:
 };
 
 extern QueueClass<EventClass, 128> OutList;     // 0x00A32338
+// The event queue the game executes (0x00866270; TS DoList, name and size hypotheses:
+// declared with OutList's size, only Count/Head/Tail are used).
+extern QueueClass<EventClass, 128> unknown_do_list_866270;
 
 #endif

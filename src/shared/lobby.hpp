@@ -65,6 +65,9 @@ void Free_Memory_00781d3b(void *block);
 // Frees every element of the list and clears it (0x005A7480).
 void __fastcall Free_Pointers_005a7480(DynamicVectorClass<NodeNameType *> *list);
 
+// Starts a multiplayer game's pregame state (0x005C74F0).
+void Unknown_Pregame_Setup_005c74f0();
+
 // The index-matched player's value (+0x67) for a nick name, 1 for the host's own name, -1 when unknown (0x005BCC60).
 int __fastcall Unknown_Find_Player_By_Name_005bcc60(char const *name);
 
