@@ -4,8 +4,8 @@
     "id": "population-2648",
     "inventory_sha256": "b0964bdc2a1df06d942ca00ca3edd9a51d58a3b5053a0e2b3eccdd47ebdcb2f2",
     "gaps_sha256": "d5a04aaf68a3fdac5d644813755e1bfdf0a09fa1ccd13a7bc8fbbe78f852ef6c",
-    "historical_population_sha256": "13599e3c3470f0b7141f7fba255623d546bbd606442e4eef16b77e2fdb863e9d",
-    "historical_acceptance_sha256": "b745a7c70c6fba86209b5ff345dfaaf3979fa1063f5d7ea79d8c5213b7d2a548"
+    "historical_population_sha256": "ea4ceca5d90a5e331484f6493ccbb80bd96af9a518a5d9091d6e79684d55ebd7",
+    "historical_acceptance_sha256": "5122e0978ae66095ba640dfbba8032a547f29cd56a5a61e59865be001e6e84ee"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1347,7 +1347,7 @@
     "?Unknown_004F52B0@HouseClass@@QAE_NXZ": 5198512,
     "?Rules@@3PAVRulesClass@@A": 8624200,
     "?unknown_player_a35db4@@3PAVHouseClass@@A": 10706356,
-    "??0SpawnManagerClass@@QAE@PAVAbstractClass@@PAVAircraftTypeClass@@HHH@Z": 6854416,
+    "??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z": 6854416,
     "??0CaptureManagerClass@@QAE@PAVAbstractClass@@@Z": 4619696,
     "??0ParasiteClass@@QAE@PAVAbstractClass@@@Z": 6316608,
     "??0TemporalClass@@QAE@PAVAbstractClass@@@Z": 7217024,
@@ -9530,7 +9530,37 @@
     "??_EGenericList@@UAEPAXI@Z": 4252192,
     "??_ETEventClass@@UAEPAXI@Z": 7237024,
     "??_EAlphaShapeClass@@UAEPAXI@Z": 4323776,
-    "??_E?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5686160
+    "??_E?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5686160,
+    "?Set_Target@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6857872,
+    "??_GSpawnManagerClass@@UAEPAXI@Z": 6859264,
+    "??1SpawnManagerClass@@UAE@XZ": 6855296,
+    "?AddRef@SwizzleManagerClass@@UAGKXZ": 6946192,
+    "?Release@SwizzleManagerClass@@UAGKXZ": 6946208,
+    "?Save_Interface@SwizzleManagerClass@@UAGJPAUIStream@@PAUIUnknown@@@Z": 6946224,
+    "?Alive_Count@SpawnManagerClass@@QBEHXZ": 6858288,
+    "?Docked_Count@SpawnManagerClass@@QBEHXZ": 6858320,
+    "?Launching_Count@SpawnManagerClass@@QBEHXZ": 6858368,
+    "?Get_Save_Size@SwizzleManagerClass@@UAGJPAH@Z": 6946032,
+    "?Fetch_Swizzle_ID@SwizzleManagerClass@@UAGJPAXPAJ@Z": 6946160,
+    "?Load_Interface@SwizzleManagerClass@@UAGJPAUIStream@@PAUGUID@@PAPAX@Z": 6946240,
+    "??0UnknownPathEstimator@@QAE@XZ": 4358064,
+    "??1UnknownPathEstimator@@QAE@XZ": 4358624,
+    "??_7SpawnManagerClass@@6BIPersistStream@@@": 8042696,
+    "??_7SpawnManagerClass@@6BIRTTITypeInfo@@@": 8042668,
+    "??_7SpawnManagerClass@@6BINoticeSink@@@": 8042660,
+    "??_7SpawnManagerClass@@6BINoticeSource@@@": 8042652,
+    "??0SpawnManagerClass@@QAE@XZ": 6854928,
+    "??0SpawnManagerClass@@QAE@ABVNoInitClass@@@Z": 6855184,
+    "?Kill_Nodes@SpawnManagerClass@@QAEXXZ": 6855536,
+    "?Abandon_Target@SpawnManagerClass@@QAEXXZ": 6857904,
+    "?Next_Target@SpawnManagerClass@@QAE_NXZ": 6858048,
+    "?Process_Tables@SwizzleManagerClass@@AAEXXZ": 6945840,
+    "??0SwizzleManagerClass@@QAE@XZ": 6945376,
+    "??1SwizzleManagerClass@@QAE@XZ": 6945456,
+    "?QueryInterface@SwizzleManagerClass@@UAGJABUGUID@@PAPAX@Z": 6946064,
+    "_IID_ISwizzle": 8003680,
+    "?unknown_slot67@ParticleSystemClass@@UAEXHH@Z": 6336656,
+    "??_ESpawnManagerClass@@UAEPAXI@Z": 6859264
   },
   "regions": [
     {
@@ -14793,7 +14823,7 @@
         {
           "offset": 164,
           "kind": 20,
-          "symbol": "??0SpawnManagerClass@@QAE@PAVAbstractClass@@PAVAircraftTypeClass@@HHH@Z",
+          "symbol": "??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z",
           "target": 6854416,
           "addend": 0,
           "resolved": 4294736408
@@ -14863,7 +14893,7 @@
           "resolved": 8624200
         }
       ],
-      "source_sha256": "154ce5ccdb380d8f105507c5579981670210ef635228b1533999937e47651cbe",
+      "source_sha256": "1e1c71d1fcc1f4b998b5e50f65a9f843d1c72113dd5a67940a5777ad86851d80",
       "source": "src/recovered/classes/TechnoClass/TechnoClass_Init_006c1c50.cpp",
       "population": "population-2648",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",

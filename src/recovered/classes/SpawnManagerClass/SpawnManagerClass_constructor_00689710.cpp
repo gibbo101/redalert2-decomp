@@ -1,4 +1,4 @@
-// SpawnManagerClass::SpawnManagerClass(AbstractClass *owner, AircraftTypeClass *type, int count, int regen, int reload) (0x00689710)
+// SpawnManagerClass::SpawnManagerClass(TechnoClass *owner, AircraftTypeClass *type, int count, int regen, int reload) (0x00689710)
 // Creates count units of the type for the owner's house, each in its own
 // record, and joins the unit's list.
 #include "shared/spawn_manager.hpp"
@@ -30,7 +30,7 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?unknown_SpawnManagerClass_list_00abd028@@3V?$DynamicVectorClass@PAVSpawnManagerClass@@@@A=00abd028
 
-SpawnManagerClass::SpawnManagerClass(AbstractClass *owner, AircraftTypeClass *type, int count, int regen, int reload)
+SpawnManagerClass::SpawnManagerClass(TechnoClass *owner, AircraftTypeClass *type, int count, int regen, int reload)
 {
     Owner = owner;
     SpawnType = type;

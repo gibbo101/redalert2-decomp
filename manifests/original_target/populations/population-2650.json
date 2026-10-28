@@ -4,8 +4,8 @@
     "id": "population-2650",
     "inventory_sha256": "c251f4af02872ef335713dca1976317947ea852c5b7b5236d15f95759c4020b4",
     "gaps_sha256": "64bd87b6ba4b194094225bcacaa6562eb1034927d7c08c310257405d7923f7f0",
-    "historical_population_sha256": "4859e4a41ba1c7b81fc6cf83b8c2dd72318fb519ebca733db02f7d0aa4bb7f08",
-    "historical_acceptance_sha256": "313bbf90d420fcb7cd44eb3d1500d3079f63eab57ad759c3395548d077b05982"
+    "historical_population_sha256": "0b7f449fe3508c583c393cd4700c06d60ebade0c9055be87fa8aabe7bf2ca097",
+    "historical_acceptance_sha256": "123c062e1dad59923c188e4ff9b4aa6f88bf62348b313d014908464b6bd3ada1"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -5369,7 +5369,7 @@
     "??0RadSiteClass@@QAE@ABVNoInitClass@@@Z": 6517600,
     "??_ERadSiteClass@@UAEPAXI@Z": 6520720,
     "??0SmudgeTypeClass@@QAE@PBD@Z": 6847904,
-    "??0SpawnManagerClass@@QAE@PAVAbstractClass@@PAVAircraftTypeClass@@HHH@Z": 6854416,
+    "??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z": 6854416,
     "??0TActionClass@@QAE@XZ": 7000944,
     "??_7TActionClass@@6BIPersistStream@@@": 8046172,
     "??_7TActionClass@@6BIRTTITypeInfo@@@": 8046144,

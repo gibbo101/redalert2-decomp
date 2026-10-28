@@ -19,6 +19,7 @@
 extern "C" GUID const CLSID_SpawnManagerClass;     // 0x007A1DD0
 
 class AircraftClass;
+class TechnoClass;
 class AircraftTypeClass;
 
 // One spawned unit's record (0x18 bytes; read and written whole by Load/Save).
@@ -33,7 +34,7 @@ struct SpawnControl {
 
 class SpawnManagerClass : public AbstractClass {
 public:
-    SpawnManagerClass(AbstractClass *owner, AircraftTypeClass *type, int count, int regen, int reload);   // 0x00689710 (TechnoClass::Init)
+    SpawnManagerClass(TechnoClass *owner, AircraftTypeClass *type, int count, int regen, int reload);   // 0x00689710 (TechnoClass::Init)
     SpawnManagerClass();                                        // 0x00689910 (class factory)
     SpawnManagerClass(NoInitClass const &noinit);               // 0x00689A10
     virtual ~SpawnManagerClass();                               // 0x00689A80 (deleting 0x0068AA00)
@@ -43,7 +44,7 @@ public:
     virtual int Kind_Of() const;                                // 0x0068A9F0
     virtual int Size_Of() const;                                // 0x0068A9E0
     virtual void Compute_CRC(WWCRCEngine &crc) const;           // 0x0068A6A0
-    virtual void AI();                                          // slot 23 0x00689C90 (not recovered)
+    virtual void AI();                                          // slot 23 0x00689C90
 
     void Kill_Nodes();                                          // 0x00689B70
     void Set_Target(AbstractClass *target);                     // 0x0068A490 (unless it is the destination)
@@ -54,7 +55,7 @@ public:
     int Docked_Count() const;                                   // 0x0068A650 (status 6 or 0)
     int Launching_Count() const;                                // 0x0068A680 (status 1)
 
-    AbstractClass *Owner;                           // +0x24
+    TechnoClass *Owner;                             // +0x24 (AI calls its techno slots)
     AircraftTypeClass *SpawnType;                   // +0x28
     int SpawnCount;                                 // +0x2C
     int RegenRate;                                  // +0x30
