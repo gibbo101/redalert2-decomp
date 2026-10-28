@@ -76,6 +76,7 @@ public:
     virtual int Size_Of() const;                                // 0x00607DD0
     virtual void Compute_CRC(WWCRCEngine &crc) const;           // 0x00606460
     virtual void AI();                                          // 0x00606F50
+    void Unknown_006064C0();                                    // 0x006064C0 (the destructor's release steps)
     void Unknown_00607440();                                    // 0x00607440 (FootClass slot 82 after restarting the +0x2C timer)
 
     AbstractClass *Owner;                           // +0x24
