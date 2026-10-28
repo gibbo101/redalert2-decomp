@@ -1,0 +1,17 @@
+// The global object lists (names unknown), moved out of shared/object.hpp so
+// units below the object layer (AlphaShapeClass) can use them.
+#ifndef RA2_SHARED_OBJECT_LISTS_HPP
+#define RA2_SHARED_OBJECT_LISTS_HPP
+
+#include "shared/vector_class_decl.hpp"
+
+class AbstractClass;
+class ObjectClass;
+
+extern DynamicVectorClass<ObjectClass *> unknown_objects_a40368;   // 0x00A40368
+extern DynamicVectorClass<ObjectClass *> unknown_objects_ac0d60;   // 0x00AC0D60
+extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0cb0; // 0x00AC0CB0 (objects and types; defined as AbstractClass * at 0x006EC3A0's unit)
+// Trigger, tag, event and action objects (0x00AC0C98; element type AbstractClass * by RTTI).
+extern DynamicVectorClass<AbstractClass *> unknown_AbstractClass_list_00ac0c98;
+
+#endif

@@ -362,12 +362,8 @@ public:
     UnknownObject5394F0 *unknown_94;        // +0x94
 };
 
-// Global object lists (names unknown).
-extern DynamicVectorClass<ObjectClass *> unknown_objects_a40368;   // 0x00A40368
-extern DynamicVectorClass<ObjectClass *> unknown_objects_ac0d60;   // 0x00AC0D60
-extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0cb0; // 0x00AC0CB0 (objects and types; defined as AbstractClass * at 0x006EC3A0's unit)
-// Trigger, tag, event and action objects (0x00AC0C98; element type AbstractClass * by RTTI).
-extern DynamicVectorClass<AbstractClass *> unknown_AbstractClass_list_00ac0c98;
+// Global object lists: shared/object_lists.hpp.
+#include "shared/object_lists.hpp"
 extern DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0bf8;   // 0x00AC0BF8 (TechnoClass +0x108 holders, bullets)
 extern DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0d08;   // 0x00AC0D08 (technos, supers)
 extern DynamicVectorClass<ObjectClass *> unknown_objects_ac0c58;   // 0x00AC0C58

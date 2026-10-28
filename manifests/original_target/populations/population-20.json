@@ -551,63 +551,6 @@
   },
   "regions": [
     {
-      "entry": 4321216,
-      "method": "41efc0",
-      "symbol": "_recover_41efc0@8",
-      "symbol_prefix": "_recover_41efc0",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 56,
-      "body_sha256": "dc23687d67dbf6188105a0092955148807137e5bcd94ba2ae86636cee44c6913",
-      "padding_bytes": 8,
-      "full_extent_bytes": 64,
-      "full_extent_sha256": "8fc0421c94eb7db53a1d46b53fb4273cf01e926d3f2f9dd75a896c848c89b0a2",
-      "relocations": [
-        {
-          "offset": 18,
-          "kind": 6,
-          "symbol": "_source_41efc0_0",
-          "target": 8003296,
-          "addend": 0,
-          "resolved": 8003296
-        },
-        {
-          "offset": 26,
-          "kind": 6,
-          "symbol": "_source_41efc0_1",
-          "target": 8003300,
-          "addend": 0,
-          "resolved": 8003300
-        },
-        {
-          "offset": 35,
-          "kind": 6,
-          "symbol": "_source_41efc0_2",
-          "target": 8003304,
-          "addend": 0,
-          "resolved": 8003304
-        },
-        {
-          "offset": 44,
-          "kind": 6,
-          "symbol": "_source_41efc0_3",
-          "target": 8003308,
-          "addend": 0,
-          "resolved": 8003308
-        }
-      ],
-      "source": "src/recovered/classes/AlphaShapeClass/0041efc0.cpp",
-      "source_sha256": "c7d996a54abd367136ef52a40ea6087d2034882e4556969a5ff76b344a6f8aa9",
-      "source_order": 505,
-      "population": "population-20",
-      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 4415744,
       "method": "436100",
       "symbol": "_recover_436100@8",
