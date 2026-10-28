@@ -31,15 +31,27 @@ public:
     unsigned char unknown_01;   // +0x01
     unsigned char House;        // +0x02 (0xFF: none)
     unsigned long Frame;        // +0x03 the frame it was queued
-    unsigned char Data[0x6F - 0x07];    // +0x07 the payload; each constructor fills its own shape
+    // +0x07 the payload; each constructor fills its own shape. The
+    // three-long-and-cell shape of 0x004B6370 and 0x004B63F0 is written
+    // through these members (writing it through LongAt schedules the stores
+    // differently).
+    union {
+        unsigned char Bytes[0x6F - 0x07];
+        struct {
+            long Long1;             // +0x07
+            long Long2;             // +0x0B
+            long Long3;             // +0x0F
+            struct { short X, Y; } Location;   // +0x13 a cell (Cell has constructors: not a union member)
+        } LongsCell;
+    } Data;
 
     // The payload field at a packed offset of the event (offsets as in the
     // constructors: 0x07 and up).
-    TargetClass &TargetAt(int offset) { return *(TargetClass *)&Data[offset - 0x07]; }
-    unsigned char &ByteAt(int offset) { return Data[offset - 0x07]; }
-    short &ShortAt(int offset) { return *(short *)&Data[offset - 0x07]; }
-    long &LongAt(int offset) { return *(long *)&Data[offset - 0x07]; }
-    Cell &CellAt(int offset) { return *(Cell *)&Data[offset - 0x07]; }
+    TargetClass &TargetAt(int offset) { return *(TargetClass *)&Data.Bytes[offset - 0x07]; }
+    unsigned char &ByteAt(int offset) { return Data.Bytes[offset - 0x07]; }
+    short &ShortAt(int offset) { return *(short *)&Data.Bytes[offset - 0x07]; }
+    long &LongAt(int offset) { return *(long *)&Data.Bytes[offset - 0x07]; }
+    Cell &CellAt(int offset) { return *(Cell *)&Data.Bytes[offset - 0x07]; }
 
     // An event about an object (0x004B5EF0; BuildingClass slot 77 queues
     // type 0x16 for itself).
