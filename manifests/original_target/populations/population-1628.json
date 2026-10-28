@@ -4,8 +4,8 @@
     "id": "population-1628",
     "inventory_sha256": "035ebe698683b2b644f9b102efd2e80b29546c83534ac89f3d596d4003c0ce3e",
     "gaps_sha256": "50eb3817fcbd365e93ac0f49b66b262dbed640e70852201cf87f083627d615bc",
-    "historical_population_sha256": "fc8f669bb27870270c4fd9b8cfc9d37c4567bac787d93c4a93a2834f2f883d90",
-    "historical_acceptance_sha256": "868160b5dd1cae00e6d4942e07d7f75f7493aae35786bedc0a2c9c26fda60ddb"
+    "historical_population_sha256": "6b59a06d9f0545a0732ab94d874276226d9f4a562bf4f4b0e1286743322a2697",
+    "historical_acceptance_sha256": "7af914e4a3c893fb93928641671e6ea6b84506e2b5a0d568ec6915e47f168aa0"
   },
   "references": {
     "_unknown_empty_rect": 8720688,
@@ -1871,7 +1871,7 @@
     "?Remove_Item@ColorListClass@@UAEXH@Z": 4708720,
     "?Text_Rect@@YI?AVRect@@PBGHHIHH@Z": 4813664,
     "?Text_Lines@@YIHPBGHHPAH1@Z": 4814800,
-    "?Get_Text_Area@BitFontClass@@QAEXPBGPAH1H@Z": 4396208,
+    "?Get_Text_Area@BitFontClass@@QAE_NPBGPAH1H@Z": 4396208,
     "?Simple_Text_Print@@YI?AUPoint2D@@PBGPAVSurface@@PBVRect@@PAU1@IIIH@Z": 4814896,
     "?Set_Clipping@BitFontClass@@QAEEE@Z": 4396112,
     "?Set_Clip_Box@BitFontClass@@QAEXPBUtagRECT@@@Z": 4396128,

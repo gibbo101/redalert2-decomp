@@ -4,8 +4,8 @@
     "id": "population-2646",
     "inventory_sha256": "d3b5aafee6cc413efa4ec1496e9411582d45cb05f42337033a12c471f8d629fc",
     "gaps_sha256": "7be7fa3f318551f8947a51ca5c7dfc28243cbedc6a81120ce8ffb441f00dea88",
-    "historical_population_sha256": "18e0f383b7b92c05e6ed1840ba0cdffd9e34ad79515319c97f618eb683037a31",
-    "historical_acceptance_sha256": "6a1136171405fd021d6e6f34470786e272d107a5a5a88d93e8b248750144a463"
+    "historical_population_sha256": "c4fd17b3b58f4e2462c231db9cb3a673657caca45fc909772a156f72dd9c497c",
+    "historical_acceptance_sha256": "a6e19bcd0cd8dde8c439b736afdccaa100f3f0333f0e238d431461761c46a254"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -128,7 +128,7 @@
     "?Load_Font_Data@BitFontClass@@SIPAUFontDataType@@PBD@Z": 4395344,
     "?unknown_431ec0@BitFontClass@@QAEXXZ": 4398784,
     "_free": 7874024,
-    "?Get_Text_Area@BitFontClass@@QAEXPBGPAH1H@Z": 4396208,
+    "?Get_Text_Area@BitFontClass@@QAE_NPBGPAH1H@Z": 4396208,
     "_malloc": 7874096,
     "?Intersect_Rect@BitFontClass@@QAE_NPAUtagRECT@@PBU2@1@Z": 4399104,
     "??_7BitTextClass@@6B@": 7980944,
@@ -3174,7 +3174,10 @@
     "??_ERadarClass@@UAEPAXI@Z": 6507216,
     "??_EFactoryClass@@UAEPAXI@Z": 4955968,
     "??_ETActionClass@@UAEPAXI@Z": 7024848,
-    "??_EOverlayTypeClass@@UAEPAXI@Z": 6148752
+    "??_EOverlayTypeClass@@UAEPAXI@Z": 6148752,
+    "?Copy_From@DSurface@@UAE_NABVRect@@0AAVSurface@@00_N2@Z": 4894672,
+    "??_EBitFontClass@@UAEPAXI@Z": 4399616,
+    "??_EBitTextClass@@UAEPAXI@Z": 4402464
   },
   "regions": [
     {
@@ -3500,13 +3503,13 @@
         {
           "offset": 18,
           "kind": 20,
-          "symbol": "?Get_Text_Area@BitFontClass@@QAEXPBGPAH1H@Z",
+          "symbol": "?Get_Text_Area@BitFontClass@@QAE_NPBGPAH1H@Z",
           "target": 4396208,
           "addend": 0,
           "resolved": 4294966794
         }
       ],
-      "source_sha256": "827a868d8797c9651c7d0a8b05ce5d385c1e07b3fb1418392fe6ec0c5652431e",
+      "source_sha256": "abad1a32b88e6260da0fd2c64af6b93f01a19af0ec66cbd74ef97b61e3089df1",
       "source": "src/recovered/classes/BitFontClass/BitFontClass_String_Pixel_Width_00431690.cpp",
       "population": "population-2646",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",

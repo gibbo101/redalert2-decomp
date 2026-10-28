@@ -96,7 +96,7 @@ public:
     unsigned short Set_Color(unsigned short color);                                 // 0x00431430 (returns the old one)
     unsigned char Set_Clipping(unsigned char clip);                                 // 0x00431450 (returns the old one)
     void Set_Clip_Box(tagRECT const *box);                                          // 0x00431460
-    void Get_Text_Area(wchar_t const *text, int *width, int *height, int max_width);   // 0x004314B0 (name hypothesis)
+    bool Get_Text_Area(wchar_t const *text, int *width, int *height, int max_width);   // 0x004314B0 (false without font or text; name hypothesis)
     int String_Pixel_Width(wchar_t const *string, int arg2) const;                  // 0x00431690
     int Char_Pixel_Width(wchar_t character) const;                                  // 0x00432170
 

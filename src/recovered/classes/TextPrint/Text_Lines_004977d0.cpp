@@ -3,7 +3,7 @@
 // the style's font: the text area goes to width/height, the line count is
 // returned (0 for no text or no font).
 #include "shared/text_print.hpp"
-// @ref ?Get_Text_Area@BitFontClass@@QAEXPBGPAH1H@Z=004314b0
+// @ref ?Get_Text_Area@BitFontClass@@QAE_NPBGPAH1H@Z=004314b0
 // @ref ?Char_Pixel_Width@BitFontClass@@QBEHG@Z=00432170
 // @ref ?BitFont@@3PAVBitFontClass@@A=0084e9e8
 

@@ -3,7 +3,7 @@
 // right-aligns; 0x8000 puts a translucent black box behind it, 0x400 an
 // opaque one); returns where it was drawn.
 #include "shared/text_print.hpp"
-// @ref ?Get_Text_Area@BitFontClass@@QAEXPBGPAH1H@Z=004314b0
+// @ref ?Get_Text_Area@BitFontClass@@QAE_NPBGPAH1H@Z=004314b0
 // @ref ?Set_Clipping@BitFontClass@@QAEEE@Z=00431450
 // @ref ?Set_Clip_Box@BitFontClass@@QAEXPBUtagRECT@@@Z=00431460
 // @ref ?Set_Color@BitFontClass@@QAEGG@Z=00431430
