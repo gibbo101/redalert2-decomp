@@ -24,6 +24,9 @@ public:
     // register atexit destructors that only set their guard bits.
     ~CDTimerClass() {}
 
+    // The time left (Westwood's operator long); UnknownStage::Graphic_Logic
+    // tests `Timer == 0` through it (TerrainClass::AI 0x006E3F10).
+    operator long() const { return Value(); }
     long Value() const
     {
         long remain = DelayTime;

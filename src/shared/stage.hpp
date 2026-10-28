@@ -17,6 +17,20 @@ struct UnknownStage {
         Timer = rate;
         unknown_10 = rate;
     }
+    int Fetch_Stage() const { return Value; }
+    void Set_Stage(int stage) { Value = stage; }
+    int Fetch_Rate() const { return unknown_10; }
+    // Steps the stage when the timer has run out (hypothesis: Westwood's
+    // StageClass::Graphic_Logic); true when it stepped.
+    bool Graphic_Logic()
+    {
+        if (Timer == 0 && unknown_10 != 0) {
+            Value += unknown_14;
+            Timer = unknown_10;
+            return true;
+        }
+        return false;
+    }
     int Value;                                          // +0x00
     CDTimerClass<FrameTimerClass> Timer;                // +0x04
     int unknown_10;                                     // +0x10
