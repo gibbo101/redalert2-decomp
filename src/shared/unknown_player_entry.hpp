@@ -18,7 +18,9 @@ struct UnknownPlayerEntry {
     char unknown_57[0x5b - 0x57];
     int Team;
     int unknown_5f;
-    char unknown_63[0x75 - 0x63];
+    char unknown_63[0x67 - 0x63];
+    int unknown_67;                 // +0x67 (cleared by 0x005C9700 for every entry but the host's)
+    char unknown_6b[0x75 - 0x6b];
     int unknown_66e290();
     int unknown_66e2a0();
     int Get_Color_0066e2a0(); // Same actual accessor; original +53/+57 sentinel operation.

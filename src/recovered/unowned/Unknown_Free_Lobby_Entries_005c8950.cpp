@@ -3,8 +3,9 @@
 // and every session node, then clears the node list (0x005A7480, which frees
 // each element again through the list's virtual Clear).
 #include "shared/lobby.hpp"
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUUnknownNodeName@@A=00a72d2c
-// @ref ?Free_Pointers_005a7480@@YIXPAV?$DynamicVectorClass@PAUUnknownNodeName@@@@@Z=005a7480
+// @ref ?unknown_player_a72d44@@3PAUUnknownPlayerEntry@@A=00a72d44
+// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUUnknownPlayerEntry@@A=00a72d2c
+// @ref ?Free_Pointers_005a7480@@YIXPAV?$DynamicVectorClass@PAUUnknownPlayerEntry@@@@@Z=005a7480
 // @ref ?Free_Memory_00781d3b@@YAXPAX@Z=00781d3b
 
 void Unknown_Free_Lobby_Entries_005c8950()
@@ -33,9 +34,9 @@ void Unknown_Free_Lobby_Entries_005c8950()
         Free_Memory_00781d3b(unknown_lobby_entries_a72d2c[5]);
         unknown_lobby_entries_a72d2c[5] = 0;
     }
-    if (unknown_lobby_entries_a72d2c[6] != 0) {
-        Free_Memory_00781d3b(unknown_lobby_entries_a72d2c[6]);
-        unknown_lobby_entries_a72d2c[6] = 0;
+    if (unknown_player_a72d44 != 0) {
+        Free_Memory_00781d3b(unknown_player_a72d44);
+        unknown_player_a72d44 = 0;
     }
-    Free_Pointers_005a7480(&unknown_nodes_a3fa7c);
+    Free_Pointers_005a7480(&unknown_players_a3fa7c);
 }

@@ -7,7 +7,7 @@
 #include "shared/id_source.hpp"
 #include "shared/cd_timer.hpp"
 #include "shared/special.hpp"
-#include "shared/ipx_manager.hpp"
+#include "shared/lobby.hpp"
 // @ref ?unknown_session_a3d2b4@@3HA=00a3d2b4
 // @ref ?unknown_session_a3d2c8@@3HA=00a3d2c8
 // @ref ?unknown_session_a3d2ac@@3HA=00a3d2ac
@@ -24,8 +24,8 @@ void Unknown_Pregame_Setup_005c74f0()
 {
     unknown_id_source_a3d290->TechLevel = unknown_session_a3d2b4;
     Frame = 0;
-    unknown_session_a3d55c = unknown_nodes_a3fa7c.Count();
-    Debug_Log("Pregame setup for %d players.\n", unknown_nodes_a3fa7c.Count());
+    unknown_session_a3d55c = unknown_players_a3fa7c.Count();
+    Debug_Log("Pregame setup for %d players.\n", unknown_players_a3fa7c.Count());
     unknown_a40b18 = unknown_session_a3d2c8;
     unknown_session_a3d2ac = 2;
     unknown_special_a40920.DestroyableBridges = unknown_session_a3d2c0;
