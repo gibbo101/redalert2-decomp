@@ -66,6 +66,9 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - Display chain parked on register tie-breaks (Disp52 NOTES): RTacticalClass::Action 0x62FE30
   97.18, DisplayClass slot 48 0x49BB20 78.29 (needs a slot 46/48 + 0x6D8F60 rename and header
   moves listed there), 0x4991D0 49.4.
+- Write_Scenario_INI 0x65F980 uses an inline accessor on PreviewClass (YRpp name; its member is
+  `DSurface *ImageSurface`); no plain member form comes close (21-43), so the accessor stays as an
+  inline split (AGENTS.md lists inline splits as normal iteration).
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

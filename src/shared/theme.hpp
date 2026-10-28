@@ -17,6 +17,7 @@ class ThemeClass {
 public:
     void Stop(bool fade = false);           // 0x006E81A0 (argument meaning unknown)
     void Queue_Song(ThemeType theme);       // 0x006E7E20
+    int Play_Song(ThemeType theme);         // 0x006E7EB0 (name hypothesis after TS)
     void Scan();                            // 0x006E7AF0 (name hypothesis)
     // The theme whose file name is `name` (0x006E8510) and a theme's file
     // base name (0x006E7C40); CCINIClass reads and writes themes by name.

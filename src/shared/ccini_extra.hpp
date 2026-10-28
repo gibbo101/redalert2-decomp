@@ -116,10 +116,8 @@ int __fastcall Owner_From_Name(char const *name);          // 0x00482DE0
 // The music player (ThemeClass, Theme): shared/theme.hpp.
 #include "shared/theme.hpp"
 
-// A list of names at 0x00A71050 (what it names is not known); Find_Index
-// 0x00482E60 returns the index of a name, -1 for "<none>" or unknown.
-extern DynamicVectorClass<char const *> unknown_names_a71050;
-int __fastcall unknown_name_index_482e60(char const *name);
+// The movie names: shared/movie_list.hpp.
+#include "shared/movie_list.hpp"
 
 // Sound effects: Voc_Name (0x00714A00) is in shared/voc_class.hpp.
 #include "shared/voc_class.hpp"

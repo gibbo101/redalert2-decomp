@@ -38,7 +38,6 @@ bool Unknown_0051FC50();                                            // 0x0051FC5
 void Unknown_0051FBB0();                                            // 0x0051FBB0 (sets 0x00A51944 when that flag is set)
 void __fastcall Unknown_0051F930(int arg1, int arg2, Cell arg3, int arg4);   // 0x0051F930
 void __fastcall Unknown_006D8FD0(FootClass *member, int arg2);       // 0x006D8FD0
-void __fastcall Unknown_005A07F0(int arg1, int arg2, int arg3, int arg4, int arg5);   // 0x005A07F0
 
 class BuildingTypeClass;
 // Picks the target for a team (0x006BCF70; a fastcall over a building type;

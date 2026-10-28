@@ -238,6 +238,13 @@ extern bool unknown_was_paused_ab6ef4;
 // With [Video] AllowModeToggle, switches to the RA2.INI screen size or back to
 // 640 x 480 (0x0065C480).
 void __fastcall Toggle_Display_Mode_0065c480(bool preferred);
+// Waits until every player has loaded the scenario (multiplayer only; 0x0065C520):
+// drops the players who made no progress for 3600 ticks, fails when the serial
+// carrier is lost; true when all are in (name hypothesis).
+bool __fastcall Wait_For_Players_0065c520();
+// Reads and sets up the named scenario (0x0065C7D0; Start_Scenario's worker;
+// false on failure; meaning partly recovered).
+bool __fastcall Unknown_0065c7d0(char const *name);
 // Reads the named scenario file into an INI and through Read_Scenario_INI
 // (0x0065E760; Westwood's Read_Scenario; false on failure).
 bool __fastcall Read_Scenario_0065e760(char const *name);

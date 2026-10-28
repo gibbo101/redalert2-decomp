@@ -46,7 +46,9 @@ struct UnknownSessionState {
 
     // Data (offsets from 0x00A3D298; the first word is unknown_game_mode_a3d298,
     // +0x40/+0x28/+0xA7 are declared separately in this header for now).
-    char unknown_00[0x24];
+    char unknown_00[0x1C];
+    int ScenarioIndex;                      // +0x1C the multiplayer map (unknown_multi_missions_a3d8d8 index; -1: none)
+    char unknown_20[0x24 - 0x20];
     int unknown_24;                         // +0x24 every multiplayer house's third setup value (Assign_Houses)
     char unknown_28[0x3C - 0x28];
     int AICount;                            // +0x3C the computer players
@@ -54,6 +56,17 @@ struct UnknownSessionState {
     int AIDifficulty[8];                    // +0x44
     int AICountry[8];                       // +0x64 (-1 none, -3 random)
     int AIColor[8];                         // +0x84
+    char unknown_a4[0x2FC8 - 0xA4];
+    // The game master (host): name and house index (-1: none). The load wait
+    // 0x0065C520 clears both when it drops the master (names after TS/YR's
+    // SessionClass MasterPlayerName/MasterPlayerID, hypothesis).
+    unsigned short MasterPlayerName[21];    // +0x2FC8 (wide)
+    char unknown_2ff2[0x301C - 0x2FF2];
+    int MasterPlayerID;                     // +0x301C
+
+    // Whether the house (null: the player's) is the game master: by MasterPlayerID,
+    // else by name, in game mode 4 (0x0066F150; YR's Am_I_Master, hypothesis).
+    bool Am_I_Master(HouseClass *house);
 };
 extern UnknownSessionState unknown_session_a3d298;
 // The session's game mode object (+0x04, a MultiplayerGameMode; moved from
@@ -98,6 +111,25 @@ extern UnknownSessionA3D29C *unknown_session_a3d29c;     // 0x00A3D29C
 // Services audio, queued movies and the network while a long operation runs
 // (0x00481FB0).
 void __fastcall Service_Game_IO_00481fb0();
+// Drops a player's connection by house index: prints the "left" (error 0) or
+// "connection lost" (error 1) message and removes the player (0x005BB5D0; YR's
+// SessionClass::Destroy_Connection, hypothesis).
+void __fastcall Destroy_Connection_005bb5d0(int id, int error);
+// A counter Start_Scenario raises around its disk check (0x00A3FABC; meaning not
+// recovered).
+extern int unknown_counter_a3fabc;
+// Start_Scenario takes this scenario name instead of the campaign's when the flag
+// is set (0x00A35EA8, 0x00A40D05; meanings not recovered).
+extern char unknown_scenario_name_a35ea8[];
+extern bool unknown_flag_a40d05;
+// The dropship loadout before a scenario with StartingDropships (0x004A6B90;
+// hypothesis).
+void __fastcall Unknown_004A6B90();
+// Plays a movie by index (0x005A07F0; Start_Scenario passes the scenario's Intro or
+// Brief and Action movies with -1, 1, 1, 1; the arguments are not recovered).
+void __fastcall Unknown_005A07F0(int arg1, int arg2, int arg3, int arg4, int arg5);   // 0x005A07F0
+// Frees the art data before a scenario starts (0x006F30F0).
+void __fastcall Unknown_Free_Art_Set_006F30F0();
 // Deletes every LightConvertClass in the global list (0x00832398) and makes a
 // new default one (tint 1000, 1000, 1000) (0x00529720; DisplayClass 0x0049E570
 // and UnknownIDSource::Read_Basic call it; name hypothesis).
