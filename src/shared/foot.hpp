@@ -199,9 +199,15 @@ public:
     virtual int unknown_slot290(CoordStruct const &coord);    // slot 290 0x004C4B90 (ILocomotion::Move_To, then Is_Moving)
     virtual bool unknown_slot291();                             // slot 291 0x004C4B60 (ILocomotion::Stop_Moving; false)
     virtual bool unknown_slot292();                             // slot 292 0x004CA2B0
-    // slot 293 (kept copy 0x0041B490): passes 15 arguments on to the
-    // TechnoClass member 0x006D1510 (ret 0x3C); signature unknown.
-    virtual void unknown_slot293();
+    // slot 293 (kept copy 0x0041B490): passes its fifteen arguments on to
+    // the TechnoClass shape drawer 0x006D1510 (ret 0x3C).
+    virtual void unknown_slot293(void const *shape, int drawer, Point2D const *point, Rect const *bounds, int arg5,
+                                 int arg6, int z, int arg8, int arg9, int height, int arg11, int arg12, int arg13,
+                                 int arg14, int arg15)
+    {
+        unknown_6d1510(shape, drawer, point, bounds, arg5, arg6, z, arg8, arg9, height, arg11, arg12, arg13, arg14,
+                       arg15);
+    }
     virtual void unknown_slot294() {}                           // slot 294 (kept copy 0x0041B4F0)
     virtual void unknown_slot295() {}                           // slot 295 (kept copy 0x0041B500)
     virtual void unknown_slot296() {}                           // slot 296 (kept copy 0x0041B510)
