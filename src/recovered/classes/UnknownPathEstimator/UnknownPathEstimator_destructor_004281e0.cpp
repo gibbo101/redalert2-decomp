@@ -1,6 +1,9 @@
 // UnknownPathEstimator::~UnknownPathEstimator() (0x004281E0)
 // Frees the estimator's blocks and tables; the three vectors at +0x74 are
 // destroyed as members.
+#ifndef VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
+#define VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
+#endif
 #ifndef VECTOR_IMPLEMENT_VECTOR_DESTRUCTOR
 #define VECTOR_IMPLEMENT_VECTOR_DESTRUCTOR
 #endif
