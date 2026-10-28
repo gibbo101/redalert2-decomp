@@ -621,6 +621,7 @@ public:
     int unknown_6c16f0(int weapon);                             // 0x006C16F0 (+0x98 plus +0xA4 of a weapon, or their average)
     bool unknown_6d3b60(TechnoClass *source, int arg2);         // 0x006D3B60 (whether to answer an attack by source; arg2 unused)
     double unknown_6d7550(ObjectClass *target, CoordStruct const &coord);   // 0x006D7550 (a threat value of the target; hypothesis)
+    void unknown_6d8820();                                      // 0x006D8820 (steps the +0x16C state on the +0x160 timer while slot 203 holds; TechnoClass::AI)
     bool unknown_6c4bb0(CoordStruct const *coord, AbstractClass *target, WeaponTypeClass *weapon);   // 0x006C4BB0 (in range; hypothesis)
     int unknown_6d5900();                                       // 0x006D5900 (ground strength of the secondary weapon, Verses[4])
     int unknown_6d59d0();                                       // 0x006D59D0 (the same with Verses[0])
