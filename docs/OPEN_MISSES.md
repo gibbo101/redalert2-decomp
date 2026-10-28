@@ -86,7 +86,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Tactical projection family parked (Seed113, Seed114, Seed123 NOTES): 0x6A2870 82.14 and 0x6A27A0 73.24
   hinge on a dead store of the projected X at the lowest frame slot that no `int[2]`/struct layout reproduces
   (VC6 keeps only the highest element's store). The same shape blocks 0x6A29D0, 0x6A66B0, 0x6AA180, 0x6AA300,
-  0x6AADD0, 0x6A92A0. Untried: a references signature for 0x6A6800, an in-place TacticalProjection/Point2D member.
+  0x6AADD0, 0x6A92A0, 0x6A8560 (Seed125: X/256 dead store to the CellClass* slot at 0x6A8813). Untried: a references signature for 0x6A6800, an in-place TacticalProjection/Point2D member.
 - Voc_Static_Save 0x714A90 74.12 (Seed118 w/voc2/save.cpp): register allocation only (-1 index in esi, node
   and result registers swapped); the callee-pops `lea` rule that fixed the loads does not apply.
 - CD unit (Cd121, Cd124): Find_Disk_Drive 0x715090 85.61 (Cd121 dr/w_0_1.cpp, `i` wrongly at function scope);
@@ -96,3 +96,18 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   It inlines Drive_Info yet precedes it in population-2880; check emission order. Inventory debt: the function
   list splits 0x715230 at 0x715244 and 0x715300 at 0x715463 (last FindClose bytes; accepted with body_bytes
   201 and 369); the sweep/seed lists should drop 0x715244 and 0x715463.
+- Tactical 0x6AAFD0 82.94 (Seed125 w/best_6aafd0.cpp, plan pl/t.json in population-2856, header overlays in
+  hdr/shared: tactical.hpp declaration, rect.hpp Point2D::Unknown_006AC850 in-place difference): selected
+  buildings' dashed target lines. Register/schedule ties only (b4/b0 load order, ctor X push register, a
+  folded `lea` for `to += area; +2`, phase/vtable registers in the three draw calls), so Windows near-miss work.
+- MultiplayerGameMode 0x5B8490 (1838 B) 61.28 (Coop122 w/r8490.cpp with hdr/; needs
+  VECTOR_IMPLEMENT_DYNAMIC_INSERT_AFTER in the modes() 0x5B6C30 source). Shape is right: without the unit's
+  LIST/INDEX_DECLARE_CONSTRUCTOR it is 71.06 at 100% shape, only stack slots differ, but ctor 0x5B6CD0 then
+  drops to 74.15 (its `new CCINIClass` must call the List/Index ctors out of line while 0x5B8490's
+  `INIClass ini;` inlines them), the same unit inline-budget problem as 0x5B7840. ABI debt: the draft
+  const_casts to call non-const Create through a const & parameter (fix: const Create, 6 rows, or a non-const
+  parameter, which renames register used by init_modes).
+- TechnoClass slot 43 0x6C1830 (576 B) 98.30, 176/176 instructions (Techno127 w/best_6c1830.cpp, plan pl/t.json in
+  population-2648): fire coordinate through Matrix3D. One scheduling tie: the original stores/fild's the turret
+  int after `shr ecx,1; and ecx,0x1F` with its fmul after the second store. Untried: an inline TechnoClass member
+  for the turret angle, another FacingClass accessor for +0x2E0. Windows near-miss work.

@@ -390,6 +390,10 @@ and pefile) from the repository root.
 $RA2_PYTHON -B tools/original_target/seed_candidate.py 6b1710
 # Compile under each recorded option set and print a scored, aligned diff
 $RA2_PYTHON -B tools/original_target/diff_candidate.py build/candidates/006b1710/candidate.cpp --entry 6b1710 --watch
+# Lane loop: score several variant files in one call; whole-population plan from HEAD; frozen delivery
+$RA2_PYTHON -B tools/original_target/lane_tools.py scores --entry 6b1710 w/v_*.cpp
+$RA2_PYTHON -B tools/original_target/lane_tools.py plan pl/r1.json lane-r1 6b1700 6b1710=w/v_a.cpp:SYMBOL --copy-dir p/r1
+$RA2_PYTHON -B tools/original_target/lane_tools.py freeze pl/r1.json d/r1 lane-r1 6b1710=classes/Foo/Foo_Bar_006b1710.cpp
 # Seed/compile/score many unrecovered functions (resumable) -> build/sweep/queue.md
 $RA2_PYTHON -B tools/original_target/sweep_seeds.py --limit 1000
 # Rank vtable classes by remaining bytes -> build/classes/classes.md
