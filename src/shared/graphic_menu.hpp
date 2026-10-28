@@ -9,6 +9,7 @@
 #include "shared/shape_file.hpp"   // its empty-rect static is each GraphicMenu unit's first initializer
 #include "shared/ms_choice.hpp"
 #include "shared/ms_anim.hpp"
+#include "shared/ms_engine.hpp"
 #include "shared/vector_class.hpp"
 
 struct Point2D;
@@ -62,7 +63,7 @@ public:
     virtual void Enabled_Changed(bool enabled);                  // 0x004DFD60 (slot 4)
     virtual void Visible_Changed(bool visible);                  // 0x004DFDF0 (slot 5)
 
-    int unknown_10;                                              // +0x10
+    MSEngine *Engine;                                            // +0x10 the screen engine the images belong to
     Rect Area;                                                   // +0x14
     MSPCXAnim *unknown_image_24;                                 // +0x24
     MSPCXAnim *unknown_image_28;                                 // +0x28

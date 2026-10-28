@@ -10,7 +10,8 @@ Earlier owner periods: [history/HANDOFF_CODEX_OWNER_20261024.md](history/HANDOFF
 
 Claude (Mac) owns integration. Until the Nov 1 usage reset, Mac lanes run mostly on Sonnet (user
 direction 2026-10-28: use the week's capacity, Sonnet first): Seed97 (100-1500 B below 0x480000), Seed98
-(0x480000-0x4FFFFF), Seed99 (0x500000-0x67FFFF), Seed100 (0x680000 up), all Sonnet, Sonnet lanes tend to stop after a round: resume them with SendMessage. Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
+(0x480000-0x4FFFFF), Seed103 (0x500000-0x67FFFF), Seed101 (0x680000 up), Tools102 (plans taking over
+vtable/data rows owned by other populations), all Sonnet, Sonnet lanes tend to stop after a round: resume them with SendMessage. Shared lane instructions: `build/class-work/LANE_BRIEF.md`. Windows: one Codex lead
 (LEAD.md in the coordination folder) staffing codex1 (Sol) pathfinding
 0x570000-0x58FFFF, codex2 (Sol) BuildingClass, codex3 (Terra) bound evidence;
 the lead itself owns seed tooling and sweeps. BOARD.md is the lane authority.
@@ -135,6 +136,9 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
 - Leaf92 (Leaf67 NOTES): VoxelAnim slot67 0x70CFC0 91.57 (draft Leaf67/w/va67k3.cpp, overlay hv/);
   BuildingLight slot67 0x433380 is 1510 B (ret 8 at 0x433963), AI 0x433970 is 1818 B; Trigger action
   0x6B2040 99.31 (one lea operand order, Seed90 w/t2/j1.cpp).
+- Vtable ownership blocks (Tools102 working): IsometricTileTypeClass dtor 0x529190 (exact body),
+  LightConvertClass ctor 0x538860, DistributionObject vector ctor 0x6C09A0, WDTState ctor 0x72BEF0,
+  House AI picker 0x6BED50. MessageListClass::Add_Message 0x5B4DA0 98.18 (body 952 B).
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).
