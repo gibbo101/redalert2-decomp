@@ -349,6 +349,7 @@
 | [classes/RLEBlitTransZRemapXlatAlphaZRead_unsigned_short](../src/recovered/classes/RLEBlitTransZRemapXlatAlphaZRead_unsigned_short/) | 2 | 485 | 1 | 0x0048B240–0x0048D670 |
 | [classes/DynamicVectorClass_Wstring](../src/recovered/classes/DynamicVectorClass_Wstring/) | 4 | 482 | 4 | 0x00673830–0x00674030 |
 | [classes/DynamicVectorClass_TagClass_ptr](../src/recovered/classes/DynamicVectorClass_TagClass_ptr/) | 7 | 478 | 4 | 0x004D4760–0x004DBC40 |
+| [classes/DynamicVectorClass_LightConvertClass_ptr](../src/recovered/classes/DynamicVectorClass_LightConvertClass_ptr/) | 7 | 476 | 7 | 0x0040C0C0–0x0040C450 |
 | [classes/RLEBlitTransXlatAlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransXlatAlphaZReadWrite_unsigned_short/) | 2 | 474 | 1 | 0x0048BE80–0x0048D830 |
 | [classes/WorldDominationTour__ValueGameOption_unsigned_char](../src/recovered/classes/WorldDominationTour__ValueGameOption_unsigned_char/) | 5 | 474 | 5 | 0x00727C10–0x00727F20 |
 | [classes/DynamicVectorClass_PlanningNodeClass_ptr](../src/recovered/classes/DynamicVectorClass_PlanningNodeClass_ptr/) | 7 | 470 | 6 | 0x0061A9E0–0x0061BBA0 |
@@ -384,7 +385,7 @@
 | [classes/VectorClass_CampaignClass_ptr](../src/recovered/classes/VectorClass_CampaignClass_ptr/) | 7 | 439 | 6 | 0x004D5180–0x004DC8C0 |
 | [classes/VectorClass_CaptureManagerClass_ptr](../src/recovered/classes/VectorClass_CaptureManagerClass_ptr/) | 7 | 439 | 6 | 0x00468460–0x004686D0 |
 | [classes/VectorClass_ColorScheme_ptr](../src/recovered/classes/VectorClass_ColorScheme_ptr/) | 7 | 439 | 6 | 0x00604D20–0x006055A0 |
-| [classes/VectorClass_CommandClass_ptr](../src/recovered/classes/VectorClass_CommandClass_ptr/) | 7 | 439 | 6 | 0x0040BDB0–0x0040C020 |
+| [classes/VectorClass_CommandClass_ptr](../src/recovered/classes/VectorClass_CommandClass_ptr/) | 7 | 439 | 7 | 0x0040BDB0–0x0040C020 |
 | [classes/VectorClass_ConvertClass_ptr](../src/recovered/classes/VectorClass_ConvertClass_ptr/) | 7 | 439 | 6 | 0x00486290–0x0048DBD0 |
 | [classes/VectorClass_CoopCampaignClass_ptr](../src/recovered/classes/VectorClass_CoopCampaignClass_ptr/) | 7 | 439 | 6 | 0x005A64C0–0x005A6CE0 |
 | [classes/VectorClass_EBolt_ptr](../src/recovered/classes/VectorClass_EBolt_ptr/) | 7 | 439 | 6 | 0x004B2640–0x004B28B0 |
@@ -402,7 +403,7 @@
 | [classes/VectorClass_IsometricTileTypeClass__TileInsertType_ptr](../src/recovered/classes/VectorClass_IsometricTileTypeClass__TileInsertType_ptr/) | 7 | 439 | 6 | 0x0052E780–0x0052ECF0 |
 | [classes/VectorClass_IsometricTileTypeClass_ptr](../src/recovered/classes/VectorClass_IsometricTileTypeClass_ptr/) | 7 | 439 | 6 | 0x004D5780–0x004DD2C0 |
 | [classes/VectorClass_LaserDrawClass_ptr](../src/recovered/classes/VectorClass_LaserDrawClass_ptr/) | 7 | 439 | 6 | 0x005343A0–0x00534610 |
-| [classes/VectorClass_LightConvertClass_ptr](../src/recovered/classes/VectorClass_LightConvertClass_ptr/) | 7 | 439 | 6 | 0x0040C190–0x0040C400 |
+| [classes/VectorClass_LightConvertClass_ptr](../src/recovered/classes/VectorClass_LightConvertClass_ptr/) | 7 | 439 | 7 | 0x0040C190–0x0040C400 |
 | [classes/VectorClass_LightSourceClass__PendingCellClass_ptr](../src/recovered/classes/VectorClass_LightSourceClass__PendingCellClass_ptr/) | 7 | 439 | 6 | 0x00537D90–0x00538300 |
 | [classes/VectorClass_LightSourceClass_ptr](../src/recovered/classes/VectorClass_LightSourceClass_ptr/) | 7 | 439 | 6 | 0x00537D30–0x00538260 |
 | [classes/VectorClass_LineTrail_ptr](../src/recovered/classes/VectorClass_LineTrail_ptr/) | 7 | 439 | 6 | 0x005398C0–0x00539B30 |
@@ -461,12 +462,10 @@
 | [classes/Blitter](../src/recovered/classes/Blitter/) | 12 | 417 | 11 | 0x0048C7B0–0x00775B30 |
 | [classes/DynamicVectorClass_AlphaLightingRemapClass_ptr](../src/recovered/classes/DynamicVectorClass_AlphaLightingRemapClass_ptr/) | 6 | 417 | 4 | 0x0041E320–0x0041E920 |
 | [classes/DynamicVectorClass_ColorScheme_ptr](../src/recovered/classes/DynamicVectorClass_ColorScheme_ptr/) | 6 | 417 | 4 | 0x00604CD0–0x00663610 |
-| [classes/DynamicVectorClass_CommandClass_ptr](../src/recovered/classes/DynamicVectorClass_CommandClass_ptr/) | 6 | 417 | 4 | 0x0040BCE0–0x0040C070 |
 | [classes/DynamicVectorClass_ConvertClass_ptr](../src/recovered/classes/DynamicVectorClass_ConvertClass_ptr/) | 6 | 417 | 4 | 0x004835B0–0x0048DC20 |
 | [classes/DynamicVectorClass_EgoClass_ptr](../src/recovered/classes/DynamicVectorClass_EgoClass_ptr/) | 6 | 417 | 4 | 0x004B35A0–0x004B4640 |
 | [classes/DynamicVectorClass_HWND___ptr](../src/recovered/classes/DynamicVectorClass_HWND___ptr/) | 6 | 417 | 4 | 0x005B5DE0–0x005B68C0 |
 | [classes/DynamicVectorClass_IsometricTileTypeClass__TileInsertType_ptr](../src/recovered/classes/DynamicVectorClass_IsometricTileTypeClass__TileInsertType_ptr/) | 6 | 417 | 4 | 0x00528590–0x0052ED40 |
-| [classes/DynamicVectorClass_LightConvertClass_ptr](../src/recovered/classes/DynamicVectorClass_LightConvertClass_ptr/) | 6 | 417 | 4 | 0x0040C0C0–0x0040C450 |
 | [classes/DynamicVectorClass_ObjectClass_ptr](../src/recovered/classes/DynamicVectorClass_ObjectClass_ptr/) | 6 | 417 | 4 | 0x0040CB60–0x004D4570 |
 | [classes/DynamicVectorClass_ObjectTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_ObjectTypeClass_ptr/) | 6 | 417 | 4 | 0x005D5750–0x005D8340 |
 | [classes/DynamicVectorClass_ShadowControlClass_ptr](../src/recovered/classes/DynamicVectorClass_ShadowControlClass_ptr/) | 6 | 417 | 4 | 0x006A23A0–0x006AD0B0 |
@@ -523,6 +522,7 @@
 | [classes/DynamicVectorClass_BulletTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_BulletTypeClass_ptr/) | 5 | 356 | 4 | 0x004D5670–0x004DD1D0 |
 | [classes/DynamicVectorClass_CampaignClass_ptr](../src/recovered/classes/DynamicVectorClass_CampaignClass_ptr/) | 5 | 356 | 4 | 0x004D5130–0x004DC910 |
 | [classes/DynamicVectorClass_CaptureManagerClass_ptr](../src/recovered/classes/DynamicVectorClass_CaptureManagerClass_ptr/) | 5 | 356 | 4 | 0x00468410–0x00468720 |
+| [classes/DynamicVectorClass_CommandClass_ptr](../src/recovered/classes/DynamicVectorClass_CommandClass_ptr/) | 5 | 356 | 5 | 0x0040BD60–0x0040C070 |
 | [classes/DynamicVectorClass_CoopCampaignClass_ptr](../src/recovered/classes/DynamicVectorClass_CoopCampaignClass_ptr/) | 5 | 356 | 4 | 0x005A6470–0x005A6D30 |
 | [classes/DynamicVectorClass_EBolt_ptr](../src/recovered/classes/DynamicVectorClass_EBolt_ptr/) | 5 | 356 | 4 | 0x004B25F0–0x004B2900 |
 | [classes/DynamicVectorClass_EventClass_ptr](../src/recovered/classes/DynamicVectorClass_EventClass_ptr/) | 5 | 356 | 4 | 0x0061AA40–0x0061BC40 |
@@ -1010,6 +1010,7 @@
 | [classes/BlitTransLucent25ZReadWarp_unsigned_short](../src/recovered/classes/BlitTransLucent25ZReadWarp_unsigned_short/) | 2 | 183 | 2 | 0x00487800–0x0048CBF0 |
 | [classes/BlitTransLucent50ZReadWrite_unsigned_short](../src/recovered/classes/BlitTransLucent50ZReadWrite_unsigned_short/) | 2 | 183 | 2 | 0x00487C50–0x0048CCB0 |
 | [classes/BlitTransLucent75ZReadWarp_unsigned_short](../src/recovered/classes/BlitTransLucent75ZReadWarp_unsigned_short/) | 2 | 183 | 2 | 0x00487660–0x0048CBB0 |
+| [classes/CommandClass](../src/recovered/classes/CommandClass/) | 7 | 182 | 2 | 0x0040BCE0–0x0051AFA0 |
 | [classes/StringTable](../src/recovered/classes/StringTable/) | 1 | 180 | 1 | 0x006F9EC0–0x006F9EC0 |
 | [classes/BlitTransLucent50ZReadWarp_unsigned_short](../src/recovered/classes/BlitTransLucent50ZReadWarp_unsigned_short/) | 2 | 179 | 2 | 0x00487730–0x0048CBD0 |
 | [classes/List_INISection_ptr](../src/recovered/classes/List_INISection_ptr/) | 1 | 179 | 1 | 0x0040E300–0x0040E300 |
@@ -1135,7 +1136,6 @@
 | [classes/MultiplayerSyncCommandClass](../src/recovered/classes/MultiplayerSyncCommandClass/) | 1 | 67 | 1 | 0x0051D820–0x0051D820 |
 | [classes/SimpleWonlineDialogControl](../src/recovered/classes/SimpleWonlineDialogControl/) | 3 | 65 | 0 | 0x0073C000–0x0075D0A0 |
 | [classes/UnknownObjectPair](../src/recovered/classes/UnknownObjectPair/) | 1 | 65 | 1 | 0x005D4A60–0x005D4A60 |
-| [classes/CommandClass](../src/recovered/classes/CommandClass/) | 5 | 62 | 0 | 0x0051AE70–0x0051AFA0 |
 | [classes/CursorPositionCommandClass](../src/recovered/classes/CursorPositionCommandClass/) | 3 | 59 | 3 | 0x0051D910–0x0051E060 |
 | [classes/WDTTerritory](../src/recovered/classes/WDTTerritory/) | 4 | 59 | 2 | 0x00727B70–0x0072C9D0 |
 | [header_statics/004b35a0](../src/recovered/header_statics/004b35a0/) | 1 | 59 | 1 | 0x004B35E0–0x004B35E0 |
@@ -1232,7 +1232,7 @@
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 
-1225 directories, 14257 regions. Generated by `tools/original_target/source_index.py`.
+1225 directories, 14259 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

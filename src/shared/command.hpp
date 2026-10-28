@@ -616,7 +616,7 @@ public:
 // key code to command). Names are hypotheses.
 #include "shared/vector_class.hpp"
 #include "shared/ini_class.hpp"
-extern DynamicVectorClass<CommandClass *> unknown_commands_832358;
+extern DynamicVectorClass<CommandClass const *> unknown_commands_832358;
 extern IndexClass<int, CommandClass *> unknown_hotkeys_832380;
 
 // Creates and registers every command (0x005173C0).
