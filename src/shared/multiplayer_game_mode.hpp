@@ -137,6 +137,11 @@ public:
     // mode as item data, and selects the mode with the id; in game mode 5 only
     // modes whose slot 12 agrees are listed (0x005B70B0).
     static void __fastcall unknown_fill_combo_5b70b0(HWND combo, int id);
+    // Fills a list box the same way (LB_RESETCONTENT first); modes that need a
+    // network session test (unknown_3c clear, game mode 4 and 0x0073C370) and,
+    // before the lobby is set up with the first slot's team -1, modes whose slot
+    // 40 refuses are left out (0x005B71E0).
+    static void __fastcall unknown_fill_list_5b71e0(HWND list, int id);
 
     // Creates a game mode of one class (RTTI MultiplayerGameMode::
     // InitializerBase, vtable 0x007A72B0, and Initializer<T>).
@@ -162,6 +167,11 @@ public:
     static void __fastcall unknown_init_modes_5b8bd0();
     // Deletes the registered modes (0x005B8D40).
     static void unknown_delete_modes_5b8d40();
+
+    // The name and the id as inline accessors (the fill-combo functions 0x005B70B0 and
+    // 0x005B71E0 read the members through them; names are hypotheses).
+    WideString const &Get_Name() const { return unknown_name_20; }
+    int Get_ID() const { return unknown_28; }
 
     bool unknown_04;                                        // +0x04
     DynamicVectorClass<MultiplayerTeam *> Teams;            // +0x08

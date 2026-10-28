@@ -89,8 +89,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x6AADD0, 0x6A92A0. Untried: a references signature for 0x6A6800, an in-place TacticalProjection/Point2D member.
 - Voc_Static_Save 0x714A90 74.12 (Seed118 w/voc2/save.cpp): register allocation only (-1 index in esi, node
   and result registers swapped); the callee-pops `lea` rule that fixed the loads does not apply.
-- CD unit (Cd121): Find_Disk_Drive 0x715090 85.61 (dr/w_0_1.cpp; ebx/ebp hold the GetDriveTypeA and
-  GetDiskFreeSpaceA pointers, `test al,al; setne al` tail, failure paths cross-jumped to one print tail);
-  0x715300 recursive directory walk seeded only. 0x715463 is padding, not a function. Inventory debt: the
-  function list splits 0x715230 at the internal branch target 0x715244 (accepted with body_bytes=201); the
-  sweep/seed lists should drop 0x715244.
+- CD unit (Cd121, Cd124): Find_Disk_Drive 0x715090 85.61 (Cd121 dr/w_0_1.cpp, `i` wrongly at function scope);
+  better-shaped Cd124 dr/x1.cpp 80.00 (shape 98.18, exact inner loop). Left: root/i/API-pointer register
+  allocation (original esi/edi/ebx/ebp, GetDiskFreeSpaceA hoisted) and a `test al,al; setne al` tail after
+  `CD().Force_Available` (untested: the virtual returns a 1-byte non-bool, a cd.hpp change touching its users).
+  It inlines Drive_Info yet precedes it in population-2880; check emission order. Inventory debt: the function
+  list splits 0x715230 at 0x715244 and 0x715300 at 0x715463 (last FindClose bytes; accepted with body_bytes
+  201 and 369); the sweep/seed lists should drop 0x715244 and 0x715463.

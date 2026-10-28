@@ -19,10 +19,9 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - The owner session restarts from this file when its context passes about 200K tokens.
 
 Running Mac lanes (resume folders `build/class-work/<Lane>/`): Coop122 (Opus) the MultiplayerGameMode
-fill-combo family 0x5B70B0/0x5B71E0/0x5B8490 (inline budget); Cd124 (Opus) directory walk 0x715300 then
-Find_Disk_Drive 0x715090; Seed125 (Opus) 0x6A8560 and 0x6AAFD0. Closed 2026-10-28: Seed118 (callee-pops `lea`
+fill-combo family 0x5B70B0/0x5B71E0/0x5B8490 (inline budget); Seed125 (Opus) 0x6A8560 and 0x6AAFD0. Closed 2026-10-28: Seed118 (callee-pops `lea`
 rule; Speech_Load, Voc_Static_Load), Seed119 (Speech_Update), Coop120 (MessageListClass::Input), Cd121
-(0x715230), Seed123 (zero bytes; Tactical family parked). Their misses are in OPEN_MISSES.md.
+(0x715230), Cd124 (0x715300), Seed123 (zero bytes; Tactical family parked). Their misses are in OPEN_MISSES.md.
 Next-lane candidates: Voc_Static_Save 0x714A90 74.12, Seed116's fresh.json (613 functions in 0x680000-0x770000; sweep work, so
 Windows), the rest of OPEN_MISSES.md.
 
