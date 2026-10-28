@@ -255,7 +255,7 @@ public:
     virtual void unknown_slot69();                                         // slot 69 (+0x114) 0x5d2c80
     virtual void unknown_slot70(bool arg1, bool arg2);                       // slot 70 (+0x118) 0x5d2c90
     virtual bool unknown_slot71(int arg1);                                 // slot 71 (+0x11C) 0x5d4160 (callers test al: TechnoClass 0x006C2550, BulletClass 0x0045F6F0)
-    virtual int unknown_slot72(int arg1);                                  // slot 72 (+0x120) 0x5d3060
+    virtual Rect unknown_slot72();                                         // slot 72 (+0x120) 0x5d3060 (the drawn area without the view offset; ret 4: the Rect comes back through the hidden pointer)
     virtual Rect unknown_slot73();                                         // slot 73 (+0x124) 0x5d31c0 (the drawn area; ret 4)
     virtual void unknown_slot74(int arg1);                                 // slot 74 (+0x128) 0x41b2f0
     virtual void unknown_slot75();                                         // slot 75 (+0x12C) 0x5d36e0
