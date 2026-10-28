@@ -118,9 +118,7 @@ public:
 // Decimal text of a number (0x0076F580, sprintf "%d"; result through ECX).
 Wstring __fastcall Int_To_Wstring(int value);
 // Wstring.cpp helpers used by the MapStage loader (both return through ECX):
-// "text" + string (0x0076F6B0) and the 16-bit copy of a string (0x007711C0;
-// name is a hypothesis).
+// "text" + string (0x0076F6B0); Wstring_To_Wide (0x007711C0) is in wide_string.hpp.
 Wstring __fastcall operator+(char const *left, Wstring const &right);
-WideString __fastcall Wstring_To_Wide(Wstring const &string);
 
 #endif

@@ -13,6 +13,7 @@
 #include "shared/wstring.hpp"
 #include "shared/network_tests.hpp"
 #include "shared/win32_api.hpp"
+#include "shared/wide_string.hpp"
 
 // The first six fixed entries (0x00A72D2C..0x00A72D40); the seventh is unknown_player_a72d44.
 // The eight player slots are unknown_player_slots_a3fa98 and the session list unknown_players_a3fa7c.
@@ -55,5 +56,8 @@ int Compare_Narrow_00781f20(char const *first, char const *second);
 void Free_Memory_00781d3b(void *block);
 // Frees every element of the list and clears it (0x005A7480).
 void __fastcall Free_Pointers_005a7480(DynamicVectorClass<UnknownPlayerEntry *> *list);
+
+// The name of a fixed lobby entry ("Waiting" for any other entry; 0x005CD0E0).
+Wstring __fastcall Unknown_Lobby_Entry_Name_005cd0e0(UnknownPlayerEntry *entry);
 
 #endif

@@ -89,5 +89,7 @@ WideString __fastcall operator+(WideString const &left, WideString const &right)
 // for a WOL player's name; name hypothesis).
 class Wstring;
 Wstring __fastcall Narrow_Copy_00771280(WideString const &wide);
+// The wide copy of a narrow string (0x007711C0; the reverse of Narrow_Copy_00771280).
+WideString __fastcall Wstring_To_Wide(Wstring const &string);
 
 #endif

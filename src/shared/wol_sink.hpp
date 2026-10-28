@@ -246,7 +246,6 @@ extern int unknown_color_7a7374;        // 0x007A7374 (public message colour for
 void __fastcall Unknown_0075B910(char const *message, bool arg2);   // 0x0075B910 (in-game message)
 extern int unknown_b2a7e8;              // 0x00B2A7E8
 extern char unknown_name_a3d3a0[];      // 0x00A3D3A0 (the local nick name)
-WideString __fastcall Wstring_To_Wide(Wstring const &string);  // 0x007711C0
 extern "C" int __cdecl _stricmp(char const *left, char const *right);
 
 
