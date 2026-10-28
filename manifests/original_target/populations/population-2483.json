@@ -4,8 +4,8 @@
     "id": "population-2483",
     "inventory_sha256": "6582fba4252d8234c18be0811686f9777af8cfb98542db22664afeba77d40d03",
     "gaps_sha256": "3fe96907a8a1f9ece1fcb5f8f0620c8047f04bb9ac934c51d545b3ed6faea28d",
-    "historical_population_sha256": "724020ac45ebb75d17bda651e12f733e63465c8f61dcfd468fc49a2cb63c7e80",
-    "historical_acceptance_sha256": "cb5a450739bad840143b84378528603a19f17c067757a341df72689bcda2827c"
+    "historical_population_sha256": "06832cd864dea6a8272f1392a6fc14ff0d388376a4a61d245a192727e5fbb521",
+    "historical_acceptance_sha256": "3209e2ce289d54d599e8a0a9078174c6b31445b93cd3855f5068496dbcb177cc"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3984,7 +3984,7 @@
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,
     "?unknown_slot22@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260576,
@@ -4007,7 +4007,7 @@
     "?unknown_slot26@ObjectClass@@UAEPAXXZ": 6105008,
     "?unknown_slot29@ObjectClass@@UBEHXZ": 6106048,
     "?Load@ObjectClass@@UAGJPAUIStream@@@Z": 6113120,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?unknown_game_mode_a3d298@@3HA": 10736280,
     "?unknown_slot20@ObjectClass@@UBE_NXZ": 6116320,
     "?unknown_slot21@ObjectClass@@UBE_NXZ": 6116368,
@@ -6297,7 +6297,7 @@
     "?unknown_session_fog_a3d33f@@3_NA": 10736447,
     "?Unknown_00535910@@YAPAUUnknown535910@@XZ": 5462288,
     "?Unknown_00535BF0@Unknown535910@@QAEXXZ": 5463024,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "??0Tactical@@QAE@XZ": 6956208,
     "?Init_Theater_00519e70@@YIXH@Z": 5348976,
     "?unknown_a40770@@3HA": 10749808,

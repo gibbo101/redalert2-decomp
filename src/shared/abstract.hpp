@@ -35,14 +35,8 @@ class TechnoClass;
 
 #include "shared/wwcrc_engine.hpp"
 
-// The save-game pointer fixup service (hypothesis: SwizzleManagerClass).
-class SwizzleManagerClass {
-public:
-    HRESULT __stdcall Reset();                               // 0x0069FB10 (Read_Scenario_INI)
-    HRESULT __stdcall Swizzle(void **pointer);              // 0x0069FB20
-    HRESULT __stdcall Here_I_Am(long id, void *pointer);   // 0x0069FBA0
-};
-extern SwizzleManagerClass SwizzleManager;     // 0x00ABD868
+// The save-game pointer fix-up service (SwizzleManager).
+#include "shared/swizzle.hpp"
 
 // Requests the fix-up of a loaded pointer (an inline wrapper; each use is an
 // inline expansion in the caller, which counts against /Ob2's per-function

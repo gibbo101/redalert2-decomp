@@ -47,7 +47,7 @@
 // @ref ?GetSizeMax@ObjectTypeClass@@UAGJPATULARGE_INTEGER@@@Z=005d7e80
 // @ref ?Load@ObjectTypeClass@@UAGJPAUIStream@@@Z=005d7c30
 // @ref ??0ObjectTypeClass@@QAE@ABVNoInitClass@@@Z=005d5a80
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ?unknown_func_52e3d0@IsometricTileTypeClass@@QAEXXZ=0052e3d0
 // @ref ?unknown_LightConvertClass_list_00832398@@3V?$DynamicVectorClass@PAVLightConvertClass@@@@A=00832398

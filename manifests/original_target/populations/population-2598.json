@@ -4,8 +4,8 @@
     "id": "population-2598",
     "inventory_sha256": "7109dc1fab02224d6c240534bb69930961b63b163566e4140b8cff7bbe2986b9",
     "gaps_sha256": "a217667569b0f80a462f62efb6d885e79993a5d16d1ced20a5a25418d1d6bd5a",
-    "historical_population_sha256": "8cf0155deea22ab6cc9bd5fa5cdb4a271cc3bb3f1b590b07a668a0b1478b457e",
-    "historical_acceptance_sha256": "cc36a8ff4737c0de4a29fbbfd4d1ea70f29f553de37c4632c7a80a1334478c5c"
+    "historical_population_sha256": "7dd064930f1a24526c4de49a48e6404961d1b5ff4c7711fcf02c61ab43b09453",
+    "historical_acceptance_sha256": "9f6421d0e71067e50d8219e7c1652f96bfebc80390df34cd094e5d5482977993"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3019,7 +3019,7 @@
     "?Head_To_Coord@MechLocomotionClass@@UAG?AUCoordStruct@@XZ": 5838784,
     "?Head_To_Coord@WalkLocomotionClass@@UAG?AUCoordStruct@@XZ": 7462768,
     "?Health_Ratio@ObjectClass@@QBENXZ": 6112576,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "?House@PlanningNodeClass@@QBEPAVHouseClass@@XZ": 6361456,
     "?HouseTypes@@3V?$DynamicVectorClass@PAVHouseTypeClass@@@@A": 10706184,
     "?Houses@@3V?$DynamicVectorClass@PAVHouseClass@@@@A": 10691224,
@@ -3784,7 +3784,7 @@
     "?Submit@UnknownList832470@@QAE_NPAVObjectClass@@_N@Z": 5497648,
     "?SuperWeaponTypes@@3V?$DynamicVectorClass@PAVSuperWeaponTypeClass@@@@A": 10748728,
     "?Supers@@3V?$DynamicVectorClass@PAVSuperClass@@@@A": 10706216,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
     "?TMission_unknown_6badc0@TeamClass@@QAEXABVScriptMissionClass@@_N@Z": 7056832,
     "?TMission_unknown_6bae00@TeamClass@@QAEXABVScriptMissionClass@@_N@Z": 7056896,
@@ -6243,7 +6243,7 @@
     "?unknown_session_fog_a3d33f@@3_NA": 10736447,
     "?Unknown_00535910@@YAPAUUnknown535910@@XZ": 5462288,
     "?Unknown_00535BF0@Unknown535910@@QAEXXZ": 5463024,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "??0Tactical@@QAE@XZ": 6956208,
     "?Init_Theater_00519e70@@YIXH@Z": 5348976,
     "?unknown_ini_839860@@3VCCINIClass@@A": 8624224,

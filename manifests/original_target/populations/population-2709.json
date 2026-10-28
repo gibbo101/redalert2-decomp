@@ -4,8 +4,8 @@
     "id": "population-2709",
     "inventory_sha256": "cf3d4ec7f2fb29e81074af978d44b25250734ce698433b0e5cdf5ef72d2b5663",
     "gaps_sha256": "01de4b690b92e723463f9ebef4e7fb17ea5bc5bbac4ba10c622959097468ff3f",
-    "historical_population_sha256": "a1d138c9e89a4842fbc32628deecc773d981b06227a9d7186e9f9b79757e36f2",
-    "historical_acceptance_sha256": "2d75b23c269bf69fe7b22953f3140617d8f3ada6b68258e7fd64392699c2d583"
+    "historical_population_sha256": "c913daf186063f8faede22c37c7357d7d8a10b6d5298402da11b1398a957275c",
+    "historical_acceptance_sha256": "16bfbc64bcaf9009d20983b160b17e5b5d26b1ed1ccbc1fbf29060fddfe9e7f0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1514,7 +1514,7 @@
     "?Read_INI@TerrainClass@@SIXAAVCCINIClass@@@Z": 7225952,
     "?Read_INI@UnitClass@@SIXAAVCCINIClass@@@Z": 7367392,
     "?Read_INI_0049CFD0@DisplayClass@@QAEXAAVCCINIClass@@@Z": 4837328,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "?Service_Game_IO_00481fb0@@YIXXZ": 4726704,
     "?Unknown_0042E1A0@Unknown84E8D0@@QAEXXZ": 4383136,
     "?Unknown_0051a330@@YI_NH@Z": 5350192,
@@ -2814,7 +2814,7 @@
     "?IsDirty@LocomotionClass@@UAGJXZ": 4869104,
     "?Swizzle_Types_004A6B10@Unknown4A6AE0Owner@@QAEXXZ": 4877072,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?Get_Application@HouseClass@@UAGPAVIApplication@@XZ": 5122768,
     "_IID_IApplication_79c3d0": 7979984,
     "?unknown_application_84c7dc@@3PAUIUnknown@@A": 8701916,
@@ -3319,7 +3319,7 @@
     "_IID_IPersist": 8060096,
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,
     "?unknown_slot22@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260576,
@@ -16278,7 +16278,7 @@
         {
           "offset": 1889,
           "kind": 20,
-          "symbol": "?Reset@SwizzleManagerClass@@QAGJXZ",
+          "symbol": "?Reset@SwizzleManagerClass@@UAGJXZ",
           "target": 6945552,
           "addend": 0,
           "resolved": 264299
@@ -17766,7 +17766,7 @@
         {
           "offset": 3435,
           "kind": 20,
-          "symbol": "?Reset@SwizzleManagerClass@@QAGJXZ",
+          "symbol": "?Reset@SwizzleManagerClass@@UAGJXZ",
           "target": 6945552,
           "addend": 0,
           "resolved": 262753
@@ -17988,7 +17988,7 @@
           "resolved": 4293574499
         }
       ],
-      "source_sha256": "1789ccd44b50932ead24fac25819730297d4af914a3e676970d5c215e17efd4a",
+      "source_sha256": "db5367b74e79f1bea802f3cb4916094a5ff051b7e510f08ea0a40a67d56f986e",
       "source": "src/recovered/classes/UnknownIDSource/Read_Scenario_INI_0065eb40.cpp",
       "population": "population-2709",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
@@ -26089,7 +26089,7 @@
         {
           "offset": 382,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 256222

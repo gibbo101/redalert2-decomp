@@ -4,8 +4,8 @@
     "id": "population-2704",
     "inventory_sha256": "f16c7c47dcbbacbc90ddca69d2ac7644c8c14a1a75c20182ac97aae659d03dc5",
     "gaps_sha256": "e035fb5d699b2bf6605336a9e1c33698dc5dd5a23622e7c60f887e9d50bdbc4d",
-    "historical_population_sha256": "a9eaceb00bea636eba74c755b5262b55a066102d74202f51656263b035e48321",
-    "historical_acceptance_sha256": "030b2af1836107ce4a535a369107f177c36f7a95dce92f184ccb08be503511fa"
+    "historical_population_sha256": "0ab29a4184454f6420a10c30e0dbc6124080ebb1ba3e4e78af3b979e29fb15fe",
+    "historical_acceptance_sha256": "a4cb6fae99752a007524f19f2e39a4548d4a01555f49790f666ce753680243d1"
   },
   "references": {
     "?unknown_hotkeys_832380@@3V?$IndexClass@HPAVCommandClass@@@@A": 8594304,
@@ -3366,7 +3366,7 @@
     "?Get_Time@INIClass@@QBEHPBD0H@Z": 5309536,
     "?Load@LightSourceClass@@UAGJPAUIStream@@@Z": 5471136,
     "__real@8@3feea7c5ac471b478800": 7980320,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "?Read_INI@TerrainClass@@SIXAAVCCINIClass@@@Z": 7225952,
     "?Read_INI@UnitClass@@SIXAAVCCINIClass@@@Z": 7367392,
     "?Read_INI@BuildingClass@@SIXAAVCCINIClass@@@Z": 4500352,

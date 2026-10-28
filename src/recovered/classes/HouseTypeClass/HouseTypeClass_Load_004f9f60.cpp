@@ -15,7 +15,7 @@
 // @ref ?Add@?$DynamicVectorClass@PAVUnitTypeClass@@@@QAE_NABQAVUnitTypeClass@@@Z=004fafc0
 // @ref ??0?$TypeList@PAVAircraftTypeClass@@@@QAE@XZ=004fa630
 // @ref ?Add@?$DynamicVectorClass@PAVAircraftTypeClass@@@@QAE_NABQAVAircraftTypeClass@@@Z=004fb390
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 
 // Rebuilds a list in place from its saved count and elements.

@@ -4,8 +4,8 @@
     "id": "population-2672",
     "inventory_sha256": "c7ff249e1a8cca92842c1eb728a10478a7f7c5e45ea2268db14f0997c7f1b361",
     "gaps_sha256": "20a4cd4be62905b799537e1242d20389b6d12d448384b36f30914a5abcb6b3f2",
-    "historical_population_sha256": "9e53d9c288ef8cee4d0233915169dce0e6187ae1bf5374aa7cc39540d18df0a2",
-    "historical_acceptance_sha256": "6bfa65901d9deedf121a5870480255585dc6c93b1a46e33a617c154a4d4d3dbe"
+    "historical_population_sha256": "efe60c4230c6c05c9f89d09c00272b6cf5c02a4cc6812ee858adc213312cef8a",
+    "historical_acceptance_sha256": "bbae88c1093e9956bf822eefd8eef2efe6baf69593622bb6b592cbf6a0c14239"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3523,7 +3523,7 @@
     "?_com_issue_error@@YGXJ@Z": 7952704,
     "?IsDirty@LocomotionClass@@UAGJXZ": 4869104,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?GetSizeMax@HouseTypeClass@@UAGJPATULARGE_INTEGER@@@Z": 5218880,
     "?Detach@IsometricTileTypeClass@@UAEXPAVAbstractClass@@_N@Z": 5432080,
     "?unknown_slot96@ObjectClass@@UAE_NPAVHouseClass@@@Z": 6111792,
@@ -3916,7 +3916,7 @@
     "_IID_IPersist": 8060096,
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,
     "?unknown_slot22@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260576,
@@ -8937,7 +8937,7 @@
     "?unknown_session_fog_a3d33f@@3_NA": 10736447,
     "?Unknown_00535910@@YAPAUUnknown535910@@XZ": 5462288,
     "?Unknown_00535BF0@Unknown535910@@QAEXXZ": 5463024,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "??0Tactical@@QAE@XZ": 6956208,
     "?Init_Theater_00519e70@@YIXH@Z": 5348976,
     "?unknown_ini_839860@@3VCCINIClass@@A": 8624224,
@@ -31186,7 +31186,7 @@
         {
           "offset": 7641,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325267
@@ -31202,7 +31202,7 @@
         {
           "offset": 7658,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325250
@@ -31218,7 +31218,7 @@
         {
           "offset": 7675,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325233
@@ -31234,7 +31234,7 @@
         {
           "offset": 7689,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325219
@@ -31250,7 +31250,7 @@
         {
           "offset": 7703,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325205
@@ -31266,7 +31266,7 @@
         {
           "offset": 7717,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325191
@@ -31282,7 +31282,7 @@
         {
           "offset": 7734,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325174
@@ -31298,7 +31298,7 @@
         {
           "offset": 7751,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325157
@@ -31314,7 +31314,7 @@
         {
           "offset": 7768,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325140
@@ -31330,7 +31330,7 @@
         {
           "offset": 7785,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325123
@@ -31346,7 +31346,7 @@
         {
           "offset": 7802,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325106
@@ -31362,7 +31362,7 @@
         {
           "offset": 7819,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325089
@@ -31378,7 +31378,7 @@
         {
           "offset": 7836,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325072
@@ -31394,7 +31394,7 @@
         {
           "offset": 7853,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325055
@@ -31410,7 +31410,7 @@
         {
           "offset": 7870,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325038
@@ -31426,7 +31426,7 @@
         {
           "offset": 7887,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325021
@@ -31442,7 +31442,7 @@
         {
           "offset": 7904,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 325004
@@ -31458,7 +31458,7 @@
         {
           "offset": 7921,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324987
@@ -31474,7 +31474,7 @@
         {
           "offset": 7938,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324970
@@ -31490,7 +31490,7 @@
         {
           "offset": 7955,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324953
@@ -31506,7 +31506,7 @@
         {
           "offset": 7972,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324936
@@ -31522,7 +31522,7 @@
         {
           "offset": 7989,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324919
@@ -31538,7 +31538,7 @@
         {
           "offset": 8006,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324902
@@ -31554,7 +31554,7 @@
         {
           "offset": 8023,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324885
@@ -31570,7 +31570,7 @@
         {
           "offset": 8040,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324868
@@ -31586,7 +31586,7 @@
         {
           "offset": 8057,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324851
@@ -31602,7 +31602,7 @@
         {
           "offset": 8074,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324834
@@ -31618,7 +31618,7 @@
         {
           "offset": 8091,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324817
@@ -31634,7 +31634,7 @@
         {
           "offset": 8108,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324800
@@ -31650,7 +31650,7 @@
         {
           "offset": 8125,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324783
@@ -31666,7 +31666,7 @@
         {
           "offset": 8142,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324766
@@ -31682,7 +31682,7 @@
         {
           "offset": 8159,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324749
@@ -31698,7 +31698,7 @@
         {
           "offset": 8176,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324732
@@ -31714,7 +31714,7 @@
         {
           "offset": 8193,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324715
@@ -31730,7 +31730,7 @@
         {
           "offset": 8210,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324698
@@ -31746,7 +31746,7 @@
         {
           "offset": 8227,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324681
@@ -31762,7 +31762,7 @@
         {
           "offset": 8244,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324664
@@ -31778,7 +31778,7 @@
         {
           "offset": 8261,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324647
@@ -31794,7 +31794,7 @@
         {
           "offset": 8278,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324630
@@ -31810,7 +31810,7 @@
         {
           "offset": 8295,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324613
@@ -31826,7 +31826,7 @@
         {
           "offset": 8312,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324596
@@ -31842,7 +31842,7 @@
         {
           "offset": 8329,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324579
@@ -31858,7 +31858,7 @@
         {
           "offset": 8346,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324562
@@ -31874,7 +31874,7 @@
         {
           "offset": 8363,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324545
@@ -31890,7 +31890,7 @@
         {
           "offset": 8380,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324528
@@ -31906,7 +31906,7 @@
         {
           "offset": 8397,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324511
@@ -31922,7 +31922,7 @@
         {
           "offset": 8414,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324494
@@ -31938,7 +31938,7 @@
         {
           "offset": 8431,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324477
@@ -31954,7 +31954,7 @@
         {
           "offset": 8448,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324460
@@ -31970,7 +31970,7 @@
         {
           "offset": 8465,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324443
@@ -31986,7 +31986,7 @@
         {
           "offset": 8482,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324426
@@ -32002,7 +32002,7 @@
         {
           "offset": 8499,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324409
@@ -32018,7 +32018,7 @@
         {
           "offset": 8516,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324392
@@ -32034,7 +32034,7 @@
         {
           "offset": 8533,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324375
@@ -32050,7 +32050,7 @@
         {
           "offset": 8550,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324358
@@ -32066,7 +32066,7 @@
         {
           "offset": 8567,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324341
@@ -32082,7 +32082,7 @@
         {
           "offset": 8584,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324324
@@ -32098,7 +32098,7 @@
         {
           "offset": 8601,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324307
@@ -32114,7 +32114,7 @@
         {
           "offset": 8618,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324290
@@ -32130,7 +32130,7 @@
         {
           "offset": 8635,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324273
@@ -32146,7 +32146,7 @@
         {
           "offset": 8652,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324256
@@ -32162,7 +32162,7 @@
         {
           "offset": 8669,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324239
@@ -32178,7 +32178,7 @@
         {
           "offset": 8686,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324222
@@ -32194,7 +32194,7 @@
         {
           "offset": 8703,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324205
@@ -32210,7 +32210,7 @@
         {
           "offset": 8720,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324188
@@ -32226,7 +32226,7 @@
         {
           "offset": 8737,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324171
@@ -32242,7 +32242,7 @@
         {
           "offset": 8754,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324154
@@ -32258,7 +32258,7 @@
         {
           "offset": 8771,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324137
@@ -32274,7 +32274,7 @@
         {
           "offset": 8788,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324120
@@ -32290,7 +32290,7 @@
         {
           "offset": 8805,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324103
@@ -32306,7 +32306,7 @@
         {
           "offset": 8822,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324086
@@ -32322,7 +32322,7 @@
         {
           "offset": 8839,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324069
@@ -32338,7 +32338,7 @@
         {
           "offset": 8856,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324052
@@ -32354,7 +32354,7 @@
         {
           "offset": 8873,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324035
@@ -32370,7 +32370,7 @@
         {
           "offset": 8890,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324018
@@ -32386,7 +32386,7 @@
         {
           "offset": 8907,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 324001
@@ -32402,7 +32402,7 @@
         {
           "offset": 8924,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323984
@@ -32418,7 +32418,7 @@
         {
           "offset": 8941,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323967
@@ -32434,7 +32434,7 @@
         {
           "offset": 8958,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323950
@@ -32450,7 +32450,7 @@
         {
           "offset": 8975,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323933
@@ -32466,7 +32466,7 @@
         {
           "offset": 8992,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323916
@@ -32482,7 +32482,7 @@
         {
           "offset": 9009,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323899
@@ -32498,7 +32498,7 @@
         {
           "offset": 9026,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323882
@@ -32514,7 +32514,7 @@
         {
           "offset": 9043,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323865
@@ -32530,7 +32530,7 @@
         {
           "offset": 9060,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323848
@@ -32546,7 +32546,7 @@
         {
           "offset": 9077,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323831
@@ -32562,7 +32562,7 @@
         {
           "offset": 9094,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323814
@@ -32578,7 +32578,7 @@
         {
           "offset": 9111,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323797
@@ -32594,7 +32594,7 @@
         {
           "offset": 9128,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323780
@@ -32610,7 +32610,7 @@
         {
           "offset": 9145,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323763
@@ -32626,7 +32626,7 @@
         {
           "offset": 9162,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323746
@@ -32642,7 +32642,7 @@
         {
           "offset": 9179,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323729
@@ -32658,7 +32658,7 @@
         {
           "offset": 9196,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323712
@@ -32674,7 +32674,7 @@
         {
           "offset": 9213,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323695
@@ -32690,7 +32690,7 @@
         {
           "offset": 9230,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323678
@@ -32706,7 +32706,7 @@
         {
           "offset": 9247,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323661
@@ -32722,7 +32722,7 @@
         {
           "offset": 9261,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323647
@@ -32738,7 +32738,7 @@
         {
           "offset": 9275,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323633
@@ -32754,7 +32754,7 @@
         {
           "offset": 9289,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323619
@@ -32770,7 +32770,7 @@
         {
           "offset": 9306,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323602
@@ -32786,7 +32786,7 @@
         {
           "offset": 9323,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323585
@@ -32802,7 +32802,7 @@
         {
           "offset": 9340,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323568
@@ -32818,7 +32818,7 @@
         {
           "offset": 9357,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323551
@@ -32834,7 +32834,7 @@
         {
           "offset": 9374,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323534
@@ -32866,7 +32866,7 @@
         {
           "offset": 9416,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323492
@@ -32882,7 +32882,7 @@
         {
           "offset": 9456,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323452
@@ -32898,7 +32898,7 @@
         {
           "offset": 9499,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323409
@@ -32914,7 +32914,7 @@
         {
           "offset": 9542,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323366
@@ -32930,7 +32930,7 @@
         {
           "offset": 9585,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323323
@@ -32946,7 +32946,7 @@
         {
           "offset": 9628,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323280
@@ -32962,7 +32962,7 @@
         {
           "offset": 9671,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323237
@@ -32978,7 +32978,7 @@
         {
           "offset": 9714,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323194
@@ -32994,7 +32994,7 @@
         {
           "offset": 9757,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323151
@@ -33010,7 +33010,7 @@
         {
           "offset": 9800,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323108
@@ -33026,7 +33026,7 @@
         {
           "offset": 9843,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323065
@@ -33042,7 +33042,7 @@
         {
           "offset": 9886,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 323022
@@ -33058,7 +33058,7 @@
         {
           "offset": 9929,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322979
@@ -33074,7 +33074,7 @@
         {
           "offset": 9972,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322936
@@ -33090,7 +33090,7 @@
         {
           "offset": 10015,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322893
@@ -33106,7 +33106,7 @@
         {
           "offset": 10058,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322850
@@ -33122,7 +33122,7 @@
         {
           "offset": 10101,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322807
@@ -33138,7 +33138,7 @@
         {
           "offset": 10144,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322764
@@ -33154,7 +33154,7 @@
         {
           "offset": 10187,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322721
@@ -33170,7 +33170,7 @@
         {
           "offset": 10230,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322678
@@ -33186,7 +33186,7 @@
         {
           "offset": 10273,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322635
@@ -33202,7 +33202,7 @@
         {
           "offset": 10316,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322592
@@ -33218,7 +33218,7 @@
         {
           "offset": 10359,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322549
@@ -33234,7 +33234,7 @@
         {
           "offset": 10402,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322506
@@ -33250,7 +33250,7 @@
         {
           "offset": 10445,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322463
@@ -33266,7 +33266,7 @@
         {
           "offset": 10488,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322420
@@ -33282,7 +33282,7 @@
         {
           "offset": 10531,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322377
@@ -33298,7 +33298,7 @@
         {
           "offset": 10574,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322334
@@ -33314,7 +33314,7 @@
         {
           "offset": 10617,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322291
@@ -33330,7 +33330,7 @@
         {
           "offset": 10660,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322248
@@ -33346,7 +33346,7 @@
         {
           "offset": 10703,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322205
@@ -33362,7 +33362,7 @@
         {
           "offset": 10746,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322162
@@ -33378,7 +33378,7 @@
         {
           "offset": 10789,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322119
@@ -33394,7 +33394,7 @@
         {
           "offset": 10832,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322076
@@ -33410,7 +33410,7 @@
         {
           "offset": 10875,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 322033
@@ -33426,7 +33426,7 @@
         {
           "offset": 10918,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 321990
@@ -33442,7 +33442,7 @@
         {
           "offset": 10955,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 321953
@@ -33458,7 +33458,7 @@
         {
           "offset": 10995,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 321913
@@ -33474,7 +33474,7 @@
         {
           "offset": 11032,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 321876
@@ -33490,7 +33490,7 @@
         {
           "offset": 11069,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 321839
@@ -33506,7 +33506,7 @@
         {
           "offset": 11112,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 321796
@@ -33522,7 +33522,7 @@
         {
           "offset": 11155,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 321753
@@ -33538,7 +33538,7 @@
         {
           "offset": 11198,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 321710

@@ -4,8 +4,8 @@
     "id": "population-2670",
     "inventory_sha256": "c0ba7885f9d69734a31218718afc4b7df0cfe769e557c286d7610dcf7ab8a167",
     "gaps_sha256": "7ccff8e242e18658abc006bd0ea05194ae60e9c0d85b677b8507b96b0da647e7",
-    "historical_population_sha256": "367a73d92006d2ed0f119077ae28096d02aa74874b085270568c52047556b2a8",
-    "historical_acceptance_sha256": "76b6da53d22a2d598a6305aae549618612bb5104344f9c9794359fe7854d80d6"
+    "historical_population_sha256": "479022278c9521033d25ad82bfffeb0cf9dd0843375f414f980f0f2ed79c9938",
+    "historical_acceptance_sha256": "d78d779362e0bfdd7cd92711c7df3df8f7125c0f07bb2f7e0a1b60b54a608563"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2409,7 +2409,7 @@
     "?_com_issue_error@@YGXJ@Z": 7952704,
     "?IsDirty@LocomotionClass@@UAGJXZ": 4869104,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?Get_Application@HouseClass@@UAGPAVIApplication@@XZ": 5122768,
     "_IID_IApplication_79c3d0": 7979984,
     "?unknown_application_84c7dc@@3PAUIUnknown@@A": 8701916,
@@ -3434,7 +3434,7 @@
     "_IID_IPersist": 8060096,
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?Center_Coord@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260448,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,
@@ -6556,7 +6556,7 @@
     "?unknown_session_fog_a3d33f@@3_NA": 10736447,
     "?Unknown_00535910@@YAPAUUnknown535910@@XZ": 5462288,
     "?Unknown_00535BF0@Unknown535910@@QAEXXZ": 5463024,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "??0Tactical@@QAE@XZ": 6956208,
     "?Init_Theater_00519e70@@YIXH@Z": 5348976,
     "?unknown_ini_839860@@3VCCINIClass@@A": 8624224,

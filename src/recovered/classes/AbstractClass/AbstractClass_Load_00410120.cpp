@@ -1,7 +1,7 @@
 // HRESULT __stdcall AbstractClass::Load(IStream *stream) (0x00410120)
 // IPersistStream: reads the saved pointer, registers it with the swizzle manager, then reads the object over itself keeping RefCount.
 #include "shared/abstract.hpp"
-// @ref ?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z=0069fba0
+// @ref ?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z=0069fba0
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 
 HRESULT __stdcall AbstractClass::Load(IStream *stream)

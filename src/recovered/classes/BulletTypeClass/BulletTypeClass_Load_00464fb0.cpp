@@ -6,7 +6,7 @@
 // @ref ??0ObjectTypeClass@@QAE@ABVNoInitClass@@@Z=005d5a80
 // @ref ?unknown_func_5d6730@ObjectTypeClass@@QAEXXZ=005d6730
 // @ref ?unknown_func_5d7630@ObjectTypeClass@@QAEXXZ=005d7630
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 
 HRESULT __stdcall BulletTypeClass::Load(IStream *stream)

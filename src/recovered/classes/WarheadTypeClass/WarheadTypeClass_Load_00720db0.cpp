@@ -7,7 +7,7 @@
 // @ref ??_7?$DynamicVectorClass@H@@6B@=0079da94
 // @ref ??_G?$DynamicVectorClass@H@@UAEPAXI@Z=0046cf50
 // @ref ?Load@AbstractClass@@UAGJPAUIStream@@@Z=00410120
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ??0?$DynamicVectorClass@PAVAnimTypeClass@@@@QAE@IPBQAVAnimTypeClass@@@Z=0050b480
 // @ref ?Add@?$DynamicVectorClass@PAVAnimTypeClass@@@@QAE_NABQAVAnimTypeClass@@@Z=0050b590

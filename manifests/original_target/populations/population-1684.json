@@ -4,8 +4,8 @@
     "id": "population-1684",
     "inventory_sha256": "479d7d95a66f428c15c4835d561e78bc0eabee78abe2d73e8eed12cd77b4d43b",
     "gaps_sha256": "3c8e6ac2493097f3fb764dfa8aee5103768eee3c889e1d39113bb990ce7aa03d",
-    "historical_population_sha256": "953399643e81f5ee3216955e7de2fa30fa1a39c55319c1bc95135cb30c9b93fe",
-    "historical_acceptance_sha256": "53f9c3b916aa18c50ae9f554be67fe697991f6838f5e6f3d4dfe204d64bdbe0c"
+    "historical_population_sha256": "8eb92dcfd0d4fccaa268e9ae8ee4cadbdfc68585fb1349ee0e24db8873875402",
+    "historical_acceptance_sha256": "f8f7db99164f956981f43df01c10fa6fc6249e1d694a14cc8cbb9702fa20636c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1433,7 +1433,7 @@
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,
     "?unknown_slot22@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260576,
@@ -1452,7 +1452,7 @@
     "?Compute_CRC@ObjectClass@@UBEXAAVWWCRCEngine@@@Z": 6114064,
     "?Init@UnknownAudioController@@QAEXXZ": 4217840,
     "?Load@ObjectClass@@UAGJPAUIStream@@@Z": 6113120,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?unknown_slot20@ObjectClass@@UBE_NXZ": 6116320,
     "?unknown_slot21@ObjectClass@@UBE_NXZ": 6116368,
     "?QueryInterface@GScreenClass@@UAGJABUGUID@@PAPAX@Z": 5114096,

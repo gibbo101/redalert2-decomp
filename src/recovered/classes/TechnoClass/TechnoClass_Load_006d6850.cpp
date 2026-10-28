@@ -4,7 +4,7 @@
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ?Init@UnknownAudioController@@QAEXXZ=00405bf0
 // @ref ?Load@RadioClass@@UAGJPAUIStream@@@Z=00636c60
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?unknown_abstracts_ac0bf8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0bf8
 
 HRESULT __stdcall TechnoClass::Load(IStream *stream)

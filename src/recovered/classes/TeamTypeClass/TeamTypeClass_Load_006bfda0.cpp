@@ -4,7 +4,7 @@
 #include "shared/team_type.hpp"
 // @ref ?Load@AbstractClass@@UAGJPAUIStream@@@Z=00410120
 // @ref ??0AbstractTypeClass@@QAE@ABVNoInitClass@@@Z=004106e0
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 
 HRESULT __stdcall TeamTypeClass::Load(IStream *stream)

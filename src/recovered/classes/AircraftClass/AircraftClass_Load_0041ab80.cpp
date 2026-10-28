@@ -5,7 +5,7 @@
 // @ref ?Load@FootClass@@UAGJPAUIStream@@@Z=004c9d10
 // @ref ??0FootClass@@QAE@ABVNoInitClass@@@Z=004c2c60
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A=00abff58
 // @ref ?Search_For_Node@?$UnknownIndexClass@JPAVObjectClass@@@@QAEPBUNodeElement@1@ABJ@Z=0041b990
 // @ref ?Increase_Table_Size@?$UnknownIndexClass@JPAVObjectClass@@@@QAE_NH@Z=0041b900

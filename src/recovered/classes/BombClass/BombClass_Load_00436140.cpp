@@ -5,7 +5,7 @@
 // @ref ?Load@AbstractClass@@UAGJPAUIStream@@@Z=00410120
 // @ref ??0AbstractClass@@QAE@ABVNoInitClass@@@Z=0040ff60
 // @ref ?Init@UnknownAudioController@@QAEXXZ=00405bf0
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 
 HRESULT __stdcall BombClass::Load(IStream *stream)

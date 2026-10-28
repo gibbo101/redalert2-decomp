@@ -4,8 +4,8 @@
     "id": "population-2420",
     "inventory_sha256": "13eab1e496c6f2b099ea4f8f7bf7d4fbc747453792e7fb8d6cd350697f7297ab",
     "gaps_sha256": "39510c93facd28802228ebcf40b63d8fb0f1bac5bca567dadbbab5c33c3ff696",
-    "historical_population_sha256": "5f73bdbd17523ef5ba8553e1e4ab3b7b06adffcb2b1114711a410573986ba9b2",
-    "historical_acceptance_sha256": "ee7bafe440d290cfc1b7d6bcb64eabdbe713cf1a1b520e95fe50f1538f4a788f"
+    "historical_population_sha256": "4e814bec79c924c2eda04c135555d035b1a2cef58bebb60ddd2ad291e431a7aa",
+    "historical_acceptance_sha256": "16d9e94f93b50842e1ff04e8698e3fd9ee368122d1069afe5a0ad555a4a0a93a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4093,7 +4093,7 @@
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??0AbstractTypeClass@@QAE@ABVNoInitClass@@@Z": 4261600,
     "??_7AbstractTypeClass@@6BIPersistStream@@@": 7974536,
     "??_7AbstractTypeClass@@6BIRTTITypeInfo@@@": 7974508,
@@ -4134,7 +4134,7 @@
     "?unknown_func_5d4670@ObjectClass@@QBEHXZ": 6112880,
     "?unknown_func_5d46b0@ObjectClass@@QBEHXZ": 6112944,
     "?Load@ObjectClass@@UAGJPAUIStream@@@Z": 6113120,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?unknown_slot108@ObjectClass@@UBEHXZ": 6113296,
     "?Unknown_0055A280@UnknownMap8324E0@@QAEHABUCoordStruct@@@Z": 5612160,
     "?unknown_slot109@ObjectClass@@UAEXH@Z": 6113376,
@@ -8589,7 +8589,7 @@
         {
           "offset": 169,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4227
@@ -8605,7 +8605,7 @@
         {
           "offset": 183,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4213
@@ -8621,7 +8621,7 @@
         {
           "offset": 194,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4202

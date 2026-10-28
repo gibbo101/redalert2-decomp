@@ -4,8 +4,8 @@
 // owner and linked object.
 #include "shared/locomotion.hpp"
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
-// @ref ?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z=0069fba0
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z=0069fba0
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 
 HRESULT __stdcall LocomotionClass::Load(IStream *stream)
 {

@@ -9,7 +9,7 @@
 // @ref ??0StageTimerClass@@QAE@ABVNoInitClass@@@Z=00423f60
 // @ref ?Load@PaletteName@@QAEPAXXZ=00603380
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 
 HRESULT __stdcall AnimClass::Load(IStream *stream)
 {

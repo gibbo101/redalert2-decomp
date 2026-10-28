@@ -14,7 +14,7 @@
 // @ref ??0TechnoTypeClass@@QAE@ABVNoInitClass@@@Z=006da6e0
 // @ref ?unknown_func_5d6730@ObjectTypeClass@@QAEXXZ=005d6730
 // @ref ?unknown_func_5d7630@ObjectTypeClass@@QAEXXZ=005d7630
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ??0?$DynamicVectorClass@PAVAnimTypeClass@@@@QAE@IPBQAVAnimTypeClass@@@Z=0050b480
 // @ref ?Add@?$DynamicVectorClass@PAVAnimTypeClass@@@@QAE_NABQAVAnimTypeClass@@@Z=0050b590

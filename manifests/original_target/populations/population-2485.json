@@ -4,8 +4,8 @@
     "id": "population-2485",
     "inventory_sha256": "1c4f3497af9dae7b100db012b689c555a0d4e91571f67af0f97e4b2305a0c216",
     "gaps_sha256": "13d19117d2bcccda1dcfa6dc1b392b262a483ecece5f7e90f7473ff4a92216a7",
-    "historical_population_sha256": "4728fcec9001a3fe6cd64e275274c1f5cdff0e7a2c8bc02b846d63e7ab1f9e4e",
-    "historical_acceptance_sha256": "5c3ece998d312fd7ef351216037c742eb0a4de15581f7da8bb0edf8c12c4090f"
+    "historical_population_sha256": "54d31cad1c539b1eaeee4a87d0d53e99db487f9bf9600935bb6ac0eaa340882d",
+    "historical_acceptance_sha256": "daf36a5a205458fb8a671cc2dd612ae9b0bb545bece2bd322d2feb7f8c9524e8"
   },
   "references": {
     "?unknown_mono_width_a70eb8@@3HA": 10948280,
@@ -3383,7 +3383,7 @@
     "?Hash@SHAEngine@@QAEXPBXJ@Z": 6769808,
     "?Head_Of_List@LinkClass@@UAEAAV1@XZ": 5476416,
     "?Health_Ratio@ObjectClass@@QBENXZ": 6112576,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "?Hide_Mouse@WWMouseClass@@UAEXXZ": 7810208,
     "?House@PlanningNodeClass@@QBEPAVHouseClass@@XZ": 6361456,
     "?HouseTypes@@3V?$DynamicVectorClass@PAVHouseTypeClass@@@@A": 10706184,
@@ -4496,7 +4496,7 @@
     "?Submit@UnknownList832470@@QAE_NPAVObjectClass@@_N@Z": 5497648,
     "?SuperWeaponTypes@@3V?$DynamicVectorClass@PAVSuperWeaponTypeClass@@@@A": 10748728,
     "?Supers@@3V?$DynamicVectorClass@PAVSuperClass@@@@A": 10706216,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
     "?TacButton@DisplayClass@@2VTacticalClass@1@A": 8726800,
     "?Tail_Of_List@LinkClass@@UAEAAV1@XZ": 5476464,

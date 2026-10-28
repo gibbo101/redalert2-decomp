@@ -4,8 +4,8 @@
     "id": "population-2524",
     "inventory_sha256": "a8bec0f60e25b4dba66f2d551cad2afcc53068f44b03d9883ccff7c5407b4134",
     "gaps_sha256": "f71d2b8c2030539361f538872b9cc11934cbb62ab3f3e7aae3ca4fd84248cd25",
-    "historical_population_sha256": "58c1d4d78f6ea034307d432aca5a201d4bbd87e5a373febe16581b61015955e8",
-    "historical_acceptance_sha256": "9837f04d6535b596fe404e6a4dc341cf15d711d21c4d6cc6141adaf5f0487eb7"
+    "historical_population_sha256": "f0e1aa4f08ebc00ce7ca9241b465754325469030996abcd329af19251df07f6a",
+    "historical_acceptance_sha256": "2b0d554c5565be63b68d33385e5fa75d277987ba90b5e1b4011b4f82a2e8fcba"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2052,7 +2052,7 @@
     "?Get_Unique_ID@CCINIClass@@QBEHXZ": 4637120,
     "?Get_VoxType@CCINIClass@@QBEHPBD0H@Z": 4629600,
     "?Health_Ratio@ObjectClass@@QBENXZ": 6112576,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "?Houses@@3V?$DynamicVectorClass@PAVHouseClass@@@@A": 10691224,
     "?ID@?$VectorClass@U?$rc_ptr@VConflict@WorldDominationTour@@@@@@UAEHPBU?$rc_ptr@VConflict@WorldDominationTour@@@@@Z": 7499136,
     "?INoticeSink_Unknown@AbstractClass@@UAE_NHH@Z": 4260640,
@@ -2764,7 +2764,7 @@
     "?Stop@ThemeClass@@QAEX_N@Z": 7242144,
     "?Strip_Comments@INIClass@@SIXPAD@Z": 5310304,
     "?SuperWeaponTypes@@3V?$DynamicVectorClass@PAVSuperWeaponTypeClass@@@@A": 10748728,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
     "?TechnoTypes@@3V?$DynamicVectorClass@PAVTechnoTypeClass@@@@A": 10750648,
     "?Text@TaskForceEntryStruct@@QBEPBDXZ": 4933888,
@@ -6538,7 +6538,7 @@
         {
           "offset": 76,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4294642880
@@ -6554,7 +6554,7 @@
         {
           "offset": 93,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4294642863
@@ -6570,7 +6570,7 @@
         {
           "offset": 110,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4294642846
@@ -6586,7 +6586,7 @@
         {
           "offset": 127,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4294642829

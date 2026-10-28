@@ -8,7 +8,7 @@
 // @ref ??_7AircraftTypeClass@@6BINoticeSink@@@=0079b654
 // @ref ??_7AircraftTypeClass@@6BINoticeSource@@@=0079b64c
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?unknown_func_5d6730@ObjectTypeClass@@QAEXXZ=005d6730
 // @ref ?unknown_func_5d7630@ObjectTypeClass@@QAEXXZ=005d7630
 

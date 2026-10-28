@@ -6,7 +6,7 @@
 // @ref ??_C@_04KIKH@none?$AA@=007ce0ec
 // @ref ??_C@_06CPHF@?$DMnone?$DO?$AA@=007cdecc
 // @ref ??_C@_0L@DFCE@TaskForces?$AA@=007f6da0
-// @ref ?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z=0069fba0
+// @ref ?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z=0069fba0
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ?unknown_hex_to_long_412390@@YIJPBD@Z=00412390
 

@@ -4,8 +4,8 @@
     "id": "population-2622",
     "inventory_sha256": "1f21e32a0c59515a6ab1ab11958c3d12be3ea4046b02edd03d679a2ff9afb2c8",
     "gaps_sha256": "16402c3e839e319ba3ea9adfa2f3418942a8d4789d3cfa9ad57b840200e0cb6b",
-    "historical_population_sha256": "9d1651153be78c28f528e3322fe58ae05a67864a45de8962176e315b45f5c8d4",
-    "historical_acceptance_sha256": "1c42fd274d94b95da32e241b6f934580c9f5e48d76ccd563298e1c48b5df043d"
+    "historical_population_sha256": "079fe2f3c43c9fd965b2c4037f25b378d632bf35a117c743f84fa6c92a831ce2",
+    "historical_acceptance_sha256": "e9c0dba5c9a7c620a0fe9c10288ff8978c9835e1cf7344133a882f2438280158"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2324,7 +2324,7 @@
     "?unknown_session_fog_a3d33f@@3_NA": 10736447,
     "?Unknown_00535910@@YAPAUUnknown535910@@XZ": 5462288,
     "?Unknown_00535BF0@Unknown535910@@QAEXXZ": 5463024,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "?Init_Theater_00519e70@@YIXH@Z": 5348976,
     "?unknown_a40770@@3HA": 10749808,
     "?Unknown_0051a330@@YI_NH@Z": 5350192,
@@ -4464,7 +4464,7 @@
     "?_com_issue_error@@YGXJ@Z": 7952704,
     "?IsDirty@LocomotionClass@@UAGJXZ": 4869104,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?GetSizeMax@HouseTypeClass@@UAGJPATULARGE_INTEGER@@@Z": 5218880,
     "?GetClassID@ParasiteClass@@UAGJPAUGUID@@@Z": 6317664,
     "?Save@ParticleSystemTypeClass@@UAGJPAUIStream@@H@Z": 6426000,
@@ -4837,7 +4837,7 @@
     "_IID_IPersistStream": 8060112,
     "_IID_IPersist": 8060096,
     "_IID_IRTTITypeInfo": 8003616,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?QueryInterface@AbstractClass@@W3AGJABUGUID@@PAPAX@Z": 4260736,
     "?AddRef@AbstractClass@@W3AGKXZ": 4260752,

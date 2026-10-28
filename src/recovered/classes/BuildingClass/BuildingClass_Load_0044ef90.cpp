@@ -6,7 +6,7 @@
 // @ref ??0BuildingClass@@QAE@ABVNoInitClass@@@Z=00438c20
 // @ref ?Load@TechnoClass@@UAGJPAUIStream@@@Z=006d6850
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?Init@UnknownAudioController@@QAEXXZ=00405bf0
 // @ref ?unknown_object_index_abff58@@3V?$UnknownIndexClass@JPAVObjectClass@@@@A=00abff58
 // @ref ?Search_For_Node@?$UnknownIndexClass@JPAVObjectClass@@@@QAEPBUNodeElement@1@ABJ@Z=0041b990

@@ -25,7 +25,7 @@
 // @ref ??0ObjectTypeClass@@QAE@ABVNoInitClass@@@Z=005d5a80
 // @ref ??0?$DynamicVectorClass@VRGBClass@@@@QAE@IPBVRGBClass@@@Z=00621fa0
 // @ref ?unknown_func_5d7630@ObjectTypeClass@@QAEXXZ=005d7630
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ??_7ParticleTypeClass@@6BIPersistStream@@@=007a8560
 // @ref ??_7ParticleTypeClass@@6BIRTTITypeInfo@@@=007a8544

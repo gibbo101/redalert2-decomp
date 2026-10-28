@@ -4,8 +4,8 @@
     "id": "population-2432",
     "inventory_sha256": "10b021cf492c58b868cb701c5edb7fd665f3ee8b80a74cefcce6b3d22c640205",
     "gaps_sha256": "4e192976205e51ffe37bb6971da5788205eff759e4f315500f732c9bf10f273d",
-    "historical_population_sha256": "9ca8ae080cbeff71b9e3462b600eba2ba30bfbd099bb0f02bc5072b7d4b54c61",
-    "historical_acceptance_sha256": "0b58b1462266d6d0b2256c1ec3525cd6685f23076f6f2de4b9d3ebce94cd961d"
+    "historical_population_sha256": "dfc11ca1f4ee291d64ccd4faabfddc660698ad615e3f4beae1e7cacc3f77bf09",
+    "historical_acceptance_sha256": "215f216a6af9180647286c07152e2ad36c892958f69249aa595233a0b90e8ec0"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2292,7 +2292,7 @@
     "?IsDirty@LocomotionClass@@UAGJXZ": 4869104,
     "?Drawing_Code@DropPodLocomotionClass@@UAGHXZ": 4875632,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?Layer@FlyLocomotionClass@@UAGHXZ": 4977776,
     "?Is_Ion_Sensitive@FlyLocomotionClass@@UAG_NXZ": 4977952,
     "?Get_Application@HouseClass@@UAGPAVIApplication@@XZ": 5122768,
@@ -3219,7 +3219,7 @@
     "_IID_IPersist": 8060096,
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?Center_Coord@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260448,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,

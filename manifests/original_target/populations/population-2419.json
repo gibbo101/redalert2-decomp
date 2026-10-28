@@ -4,8 +4,8 @@
     "id": "population-2419",
     "inventory_sha256": "c28308841e483241a4d3301b59cf57be2e778453f38252e4f86ef74a7583a625",
     "gaps_sha256": "a9c4c7f81f0640d005fa5f78ab77663a7d7453497a605a59a3d30b260dd05157",
-    "historical_population_sha256": "78948e7b986e6d42e3e53770120ca332da87721473f7f901d264549779209fa5",
-    "historical_acceptance_sha256": "dd008188f726078b21b74df00fefaa5ef487553dbf88aeb1493d1b80d79d3a37"
+    "historical_population_sha256": "23ce87c935fa114bf2ee3ed35dda5ecdccc27d9036149bb1d1aab0fe170aa4ab",
+    "historical_acceptance_sha256": "a74baf8df5977b602a5ffd330e61ab3885a7e535af4d98099e015d2859e022e6"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2094,7 +2094,7 @@
     "?_com_issue_error@@YGXJ@Z": 7952704,
     "?IsDirty@LocomotionClass@@UAGJXZ": 4869104,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?GetSizeMax@HouseTypeClass@@UAGJPATULARGE_INTEGER@@@Z": 5218880,
     "?Detach@IsometricTileTypeClass@@UAEXPAVAbstractClass@@_N@Z": 5432080,
     "?unknown_slot96@ObjectClass@@UAE_NPAVHouseClass@@@Z": 6111792,
@@ -2955,7 +2955,7 @@
     "_IID_IPersist": 8060096,
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?Center_Coord@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260448,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,
@@ -7047,7 +7047,7 @@
         {
           "offset": 226,
           "kind": 20,
-          "symbol": "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z",
+          "symbol": "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z",
           "target": 6945696,
           "addend": 0,
           "resolved": 4294881754
@@ -7544,7 +7544,7 @@
         {
           "offset": 76,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4294880432

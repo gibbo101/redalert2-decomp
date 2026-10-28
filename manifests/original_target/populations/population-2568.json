@@ -4,8 +4,8 @@
     "id": "population-2568",
     "inventory_sha256": "82d911ff4ee969595e3f130cfee069b48d04fad06db245f8fb226b821607c8fc",
     "gaps_sha256": "4683ce15e709c77bcecaf67f2701225ba57691b84a63558da8ec1f7655320364",
-    "historical_population_sha256": "07a2d18ea58455900e45e54e50f16ebfef495e0a29238fc3f8c16c95ec4612a7",
-    "historical_acceptance_sha256": "118069d2e3367d082924728bd61d9606d5dd10e334f33956c2cf36ebc637b40d"
+    "historical_population_sha256": "1e0a331c7aeee6c8224d7df739603d9a1d1af8de62fec59ebe8c4376468f7097",
+    "historical_acceptance_sha256": "9f56f89783ff193bd454d403d9da01ca5054ba4a30620883f8d32c6f65d2b221"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1359,7 +1359,7 @@
     "?Read_INI@TerrainClass@@SIXAAVCCINIClass@@@Z": 7225952,
     "?Read_INI@UnitClass@@SIXAAVCCINIClass@@@Z": 7367392,
     "?Read_INI_0049CFD0@DisplayClass@@QAEXAAVCCINIClass@@@Z": 4837328,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "?Service_Game_IO_00481fb0@@YIXXZ": 4726704,
     "?Unknown_0042E1A0@Unknown84E8D0@@QAEXXZ": 4383136,
     "?Unknown_0051a330@@YI_NH@Z": 5350192,
@@ -2544,7 +2544,7 @@
     "?IsDirty@LocomotionClass@@UAGJXZ": 4869104,
     "?Swizzle_Types_004A6B10@Unknown4A6AE0Owner@@QAEXXZ": 4877072,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?Get_Application@HouseClass@@UAGPAVIApplication@@XZ": 5122768,
     "_IID_IApplication_79c3d0": 7979984,
     "?unknown_application_84c7dc@@3PAUIUnknown@@A": 8701916,
@@ -3051,7 +3051,7 @@
     "_IID_IPersist": 8060096,
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,
     "?unknown_slot22@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260576,

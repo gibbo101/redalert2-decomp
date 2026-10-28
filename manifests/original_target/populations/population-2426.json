@@ -4,8 +4,8 @@
     "id": "population-2426",
     "inventory_sha256": "e6ad37108d9ab5c0d37d452816cdec03e48725674ebf2fbf09c94ebc7276dc0d",
     "gaps_sha256": "4eec48f3fb623e2b0c4312ac319be0614e07a6627d811324282bbb0091902439",
-    "historical_population_sha256": "e6db71d9982c5dabb9db24834e53e13913807ebec4ff64a567c23f7d425f8f79",
-    "historical_acceptance_sha256": "70b87d05ad0327238d533ebfbb7f68c375effa3195d65f500ed710e887d7e4d2"
+    "historical_population_sha256": "6bdfd0211973861bd767eb6134d9aff42b6094b26e1ac289b0456ef75828f3ea",
+    "historical_acceptance_sha256": "6d100b1733cdf8fa09a8e7197613fe7ef107d3595a828d6dc0929efe8fad61c4"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2472,7 +2472,7 @@
     "?Get_VoxType@CCINIClass@@QBEHPBD0H@Z": 4629600,
     "?Get_Waypoint_Location@UnknownIDSource@@QBE?AVCell@@H@Z": 6697344,
     "?Health_Ratio@ObjectClass@@QBENXZ": 6112576,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "?House@PlanningNodeClass@@QBEPAVHouseClass@@XZ": 6361456,
     "?Houses@@3V?$DynamicVectorClass@PAVHouseClass@@@@A": 10691224,
     "?ID@?$DynamicVectorClass@PAVIConnectionPoint@@@@UAEHABQAVIConnectionPoint@@@Z": 4798064,
@@ -3383,7 +3383,7 @@
     "?Stop@Voices@WorldDominationTour@@QAEXXZ": 7547376,
     "?Strip_Comments@INIClass@@SIXPAD@Z": 5310304,
     "?SuperWeaponTypes@@3V?$DynamicVectorClass@PAVSuperWeaponTypeClass@@@@A": 10748728,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
     "?TechnoTypes@@3V?$DynamicVectorClass@PAVTechnoTypeClass@@@@A": 10750648,
     "?Text@TaskForceEntryStruct@@QBEPBDXZ": 4933888,

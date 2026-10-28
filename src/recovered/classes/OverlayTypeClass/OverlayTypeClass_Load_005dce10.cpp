@@ -8,7 +8,7 @@
 // @ref ?Load@ObjectTypeClass@@UAGJPAUIStream@@@Z=005d7c30
 // @ref ?unknown_func_5d6730@ObjectTypeClass@@QAEXXZ=005d6730
 // @ref ?unknown_func_5d7630@ObjectTypeClass@@QAEXXZ=005d7630
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ?Theaters@@3PAUTheaterTypeStruct@@A=0079ab68

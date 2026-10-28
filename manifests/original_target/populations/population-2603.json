@@ -4,8 +4,8 @@
     "id": "population-2603",
     "inventory_sha256": "23b2d9164780256774f50d76995f2db1648e6c100c12359c33082082c26a4840",
     "gaps_sha256": "05a3200114caf6b160fcf12c799bc1b4b2c0b15f9cb52bbe2cac39fd79510c2f",
-    "historical_population_sha256": "b820020819999c96feff4de0bc5bd36abb80919aa4c026a52f1cb1b3e7028298",
-    "historical_acceptance_sha256": "7c702d7e75b7b2edcf4137bfd1604d28b1910ce783d8c7a60519dcb5cd1fe0c1"
+    "historical_population_sha256": "f5f27df1f9fb1f7e6fc5884a3725c369ac3b44d98c0db225c8ed1823010e6143",
+    "historical_acceptance_sha256": "ee9cc88ad6a3cf72d3ef486122b36236ec4e633cfebdbd8c93261c6d0bc92865"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5702,7 +5702,7 @@
     "?Is_Fighter@AircraftClass@@UAGJXZ": 4304784,
     "?Drawing_Code@DropPodLocomotionClass@@UAGHXZ": 4875632,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?Layer@FlyLocomotionClass@@UAGHXZ": 4977776,
     "?Is_Ion_Sensitive@FlyLocomotionClass@@UAG_NXZ": 4977952,
     "?Get_Application@HouseClass@@UAGPAVIApplication@@XZ": 5122768,
@@ -6116,7 +6116,7 @@
     "?Create_ID@AbstractClass@@UAGXXZ": 4259792,
     "?Next_ID@UnknownIDSource@@QAEJXZ": 6697328,
     "_IID_IRTTITypeInfo": 8003616,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,
     "?unknown_slot22@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260576,
@@ -8871,7 +8871,7 @@
     "?unknown_session_fog_a3d33f@@3_NA": 10736447,
     "?Unknown_00535910@@YAPAUUnknown535910@@XZ": 5462288,
     "?Unknown_00535BF0@Unknown535910@@QAEXXZ": 5463024,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "??0Tactical@@QAE@XZ": 6956208,
     "?Init_Theater_00519e70@@YIXH@Z": 5348976,
     "?unknown_ini_839860@@3VCCINIClass@@A": 8624224,

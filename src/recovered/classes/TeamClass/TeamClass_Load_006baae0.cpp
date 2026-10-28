@@ -4,7 +4,7 @@
 // @ref ?Load@AbstractClass@@UAGJPAUIStream@@@Z=00410120
 // @ref ??0AbstractClass@@QAE@ABVNoInitClass@@@Z=0040ff60
 // @ref ??0UnknownTimer423F60@@QAE@ABVNoInitClass@@@Z=00423f60
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ??_7TeamClass@@6BIPersistStream@@@=007ac950
 // @ref ??_7TeamClass@@6BIRTTITypeInfo@@@=007ac934

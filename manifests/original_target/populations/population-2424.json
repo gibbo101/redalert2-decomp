@@ -4,8 +4,8 @@
     "id": "population-2424",
     "inventory_sha256": "65bedbeaf2c1e14f729667f583875f583ec0158d82e4de7eb77d471d71cff446",
     "gaps_sha256": "d78fd278c2c3d38da2926cbbed95b945ff1cfbfb4c2ebf041f7e31586adc6fda",
-    "historical_population_sha256": "c69fdf345687ffa08350634140498a11887d8af8eb22d42e89182133bfd9aa21",
-    "historical_acceptance_sha256": "fe65357434f74c00b3c22243081c37de0c642de8598aebaf0069eab2ee9a3857"
+    "historical_population_sha256": "760ef95a629fac1621d325da418dc6f571994199283843228875e2d2ef275b9c",
+    "historical_acceptance_sha256": "b54b394bd6913ac79feecfc6fcd367787a935b3281c6d9c5e403190bdda31412"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2269,7 +2269,7 @@
     "?Get_Weapon@TechnoTypeClass@@QAEPAUWeaponStruct@@H@Z": 7206336,
     "?Has_Turret_Weapons@TechnoTypeClass@@QBE_NXZ": 7206528,
     "?Health_Ratio@ObjectClass@@QBENXZ": 6112576,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "?House@PlanningNodeClass@@QBEPAVHouseClass@@XZ": 6361456,
     "?ID@?$DynamicVectorClass@PAVIConnectionPoint@@@@UAEHABQAVIConnectionPoint@@@Z": 4798064,
     "?ID@?$DynamicVectorClass@PAVIConnectionPoint@@@@UAEHPBQAVIConnectionPoint@@@Z": 4796752,
@@ -3206,7 +3206,7 @@
     "?Stop@ThemeClass@@QAEX_N@Z": 7242144,
     "?Stop@Voices@WorldDominationTour@@QAEXXZ": 7547376,
     "?Strip_Comments@INIClass@@SIXPAD@Z": 5310304,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
     "?TaskForces@@3V?$DynamicVectorClass@PAVTaskForceClass@@@@A": 10750096,
     "?TechnoTypes@@3V?$DynamicVectorClass@PAVTechnoTypeClass@@@@A": 10750648,

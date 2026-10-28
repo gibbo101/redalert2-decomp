@@ -2,7 +2,7 @@
 // Restores the task force in place and swizzles the entry types.
 #include "shared/task_force.hpp"
 // @ref ?Load@AbstractClass@@UAGJPAUIStream@@@Z=00410120
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 
 HRESULT __stdcall TaskForceClass::Load(IStream *stream)

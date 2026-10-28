@@ -4,8 +4,8 @@
     "id": "population-2674",
     "inventory_sha256": "a8d4676837ee1f7e78ecabc0a147a0de009644b0764e3c64cea0fa8d3a0b1c3e",
     "gaps_sha256": "7767624930754dcafa7316411f2115064392fb1b994b2cf8ba141ae73b0acbe2",
-    "historical_population_sha256": "5b34497691163c2289d089ea18f4dcf919a7e896e3f2dc8b28e22209a37c8605",
-    "historical_acceptance_sha256": "7d0d3e8926a9dc2f276ca700cf45de05a494fe8bb777a3cff8b18e53b4ba1728"
+    "historical_population_sha256": "584dfc1db131da33238b21754833687043e64f5a1425e36bb8e7de11c4eb67ab",
+    "historical_acceptance_sha256": "7743d497f41b6fd41a2c5cd2756b3d24e626e6b37011b84abaa13d25adb41b13"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2847,7 +2847,7 @@
     "_IID_IRTTITypeInfo": 8003616,
     "?Load@AbstractClass@@UAGJPAUIStream@@@Z": 4260128,
     "?SwizzleManager@@3VSwizzleManagerClass@@A": 11262056,
-    "?Here_I_Am@SwizzleManagerClass@@QAGJJPAX@Z": 6945696,
+    "?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z": 6945696,
     "??RWWCRCEngine@@QAEX_N@Z": 4800128,
     "?unknown_slot19@AbstractClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4260496,
     "?unknown_slot22@AbstractClass@@UBE?AUCoordStruct@@XZ": 4260576,
@@ -2893,7 +2893,7 @@
     "?unknown_func_5d4670@ObjectClass@@QBEHXZ": 6112880,
     "?unknown_func_5d46b0@ObjectClass@@QBEHXZ": 6112944,
     "?Load@ObjectClass@@UAGJPAUIStream@@@Z": 6113120,
-    "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z": 6945568,
+    "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z": 6945568,
     "?unknown_slot108@ObjectClass@@UBEHXZ": 6113296,
     "?Unknown_0055A280@UnknownMap8324E0@@QAEHABUCoordStruct@@@Z": 5612160,
     "?unknown_slot109@ObjectClass@@UAEXH@Z": 6113376,
@@ -5054,7 +5054,7 @@
     "?unknown_session_fog_a3d33f@@3_NA": 10736447,
     "?Unknown_00535910@@YAPAUUnknown535910@@XZ": 5462288,
     "?Unknown_00535BF0@Unknown535910@@QAEXXZ": 5463024,
-    "?Reset@SwizzleManagerClass@@QAGJXZ": 6945552,
+    "?Reset@SwizzleManagerClass@@UAGJXZ": 6945552,
     "??0Tactical@@QAE@XZ": 6956208,
     "?Init_Theater_00519e70@@YIXH@Z": 5348976,
     "?unknown_ini_839860@@3VCCINIClass@@A": 8624224,
@@ -7427,7 +7427,7 @@
         {
           "offset": 73,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4294647811
@@ -7443,7 +7443,7 @@
         {
           "offset": 87,
           "kind": 20,
-          "symbol": "?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z",
+          "symbol": "?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z",
           "target": 6945568,
           "addend": 0,
           "resolved": 4294647797

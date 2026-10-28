@@ -5,7 +5,7 @@
 // @ref ?Load@ObjectClass@@UAGJPAUIStream@@@Z=005d4760
 // @ref ??0ObjectClass@@QAE@ABVNoInitClass@@@Z=005d2500
 // @ref ??0?$VectorClass@PAVParticleClass@@@@QAE@IPBQAVParticleClass@@@Z=0060d0a0
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 
 HRESULT __stdcall ParticleSystemClass::Load(IStream *stream)

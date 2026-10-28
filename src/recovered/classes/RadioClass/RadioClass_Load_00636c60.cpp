@@ -4,7 +4,7 @@
 #include "shared/radio.hpp"
 #include "shared/techno.hpp"
 // @ref ?Load@ObjectClass@@UAGJPAUIStream@@@Z=005d4760
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 
 HRESULT __stdcall RadioClass::Load(IStream *stream)

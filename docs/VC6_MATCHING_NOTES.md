@@ -500,3 +500,26 @@ reaching each block).
   `fld 1.0; jmp; fcomp` comparison the original has (Drive Is_Level 0x0049FFC0).
 - A virtual call on a temporary (`CD().Force_Available(...)`) is emitted as `call [vtable]`, not bound
   statically (Scen57).
+
+## Constants, negations and temporaries (Big75)
+
+- A constant cached in a callee-saved register (`mov ebx, 1`, later `mov eax, ebx`, `cmp eax, ebx`)
+  comes from a variable initialised to it: `int players = 1; if (...) players = list.Count();`. The
+  equivalent ternary loads the constant inline and never caches it (0x0065C7D0).
+- `sete al; test al, al; sete al` for a negated comparison passed as a bool is a bool local negated at
+  the use (`bool campaign = mode == 0; f(!campaign)`); `mode != 0`, `!(mode == 0)`, `!!mode` and
+  casts all fold to one `setne` (0x0065C7D0).
+- A named pointer local (`char *extension = &name[strlen(name) - 4];`) computes its value at its
+  statement and moves a cached constant's live range; the same expression inline in a later call
+  evaluates late (0x0065C7D0).
+- Inline helpers fix the evaluation order of their arguments: `Cell operator-` built through the
+  constructor computes Y before X, and a length helper that converts Y then X reproduces a distance sum
+  whose inline spelling changes the register webs of the whole function (Create_Units 0x00660320).
+- A zero-initialised accumulator declared before an inline `Clear()` gets its own register; declared
+  after it, it shares the cached zero's register (Create_Units).
+- `f(&CoordStruct(...))` builds the temporary after the later arguments are pushed; a named local
+  built before the call stores ahead of the pushes.
+- `volatile` is steering when it only moves registers. It is the original's source when the original
+  performs the memory accesses only volatile semantics keep: `volatile int zero = 0; zero = 1 / zero;`
+  stores the zero, reloads it, divides and stores the quotient (a deliberate fault,
+  SwizzleManagerClass::Process_Tables 0x0069FC30; owner ruling 2026-10-28).

@@ -52,7 +52,7 @@
 // @ref ?Read_INI@TerrainClass@@SIXAAVCCINIClass@@@Z=006e4260
 // @ref ?Read_INI@UnitClass@@SIXAAVCCINIClass@@@Z=00706ae0
 // @ref ?Read_INI_0049CFD0@DisplayClass@@QAEXAAVCCINIClass@@@Z=0049cfd0
-// @ref ?Reset@SwizzleManagerClass@@QAGJXZ=0069fb10
+// @ref ?Reset@SwizzleManagerClass@@UAGJXZ=0069fb10
 // @ref ?Service_Game_IO_00481fb0@@YIXXZ=00481fb0
 // @ref ?Unknown_0042E1A0@Unknown84E8D0@@QAEXXZ=0042e1a0
 // @ref ?Unknown_0051a330@@YI_NH@Z=0051a330

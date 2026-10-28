@@ -9,7 +9,7 @@
 // @ref __imp__OleLoadFromStream@12=0079a5ec
 // @ref _IID_ILocomotion=007a5890
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
-// @ref ?Swizzle@SwizzleManagerClass@@QAGJPAPAX@Z=0069fb20
+// @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 // @ref ?Init@UnknownAudioController@@QAEXXZ=00405bf0
 // @ref ??0?$VectorClass@PAVAbstractClass@@@@QAE@IPBQAVAbstractClass@@@Z=004ceb90
 // @ref ??_7?$DynamicVectorClass@PAVAbstractClass@@@@6B@=007a177c
