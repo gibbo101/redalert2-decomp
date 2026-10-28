@@ -5,5 +5,5 @@
 void TagClass::unknown_func_6b3cc0()
 {
     unknown_34 = true;
-    unknown_objects_ac0cd8.Add((ObjectClass *)this);
+    unknown_objects_ac0cd8.Add(this);
 }

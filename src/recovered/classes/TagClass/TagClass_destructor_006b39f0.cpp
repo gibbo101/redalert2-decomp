@@ -43,7 +43,7 @@ TagClass::~TagClass()
         house->unknown_1e0 = 60;
     }
     for (TriggerClass *trigger = AttachedTrigger; trigger != 0; trigger = trigger->Next) {
-        unknown_objects_ac0cd8.Add((ObjectClass *)trigger);
+        unknown_objects_ac0cd8.Add(trigger);
     }
     unknown_objects_ac0cb0.Delete((ObjectClass *)this);
     unknown_AbstractClass_list_00ac0d48.Delete(this);

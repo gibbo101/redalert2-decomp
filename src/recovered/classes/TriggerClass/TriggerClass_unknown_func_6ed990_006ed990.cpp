@@ -5,5 +5,5 @@
 void TriggerClass::unknown_func_6ed990()
 {
     unknown_2c = true;
-    unknown_objects_ac0cd8.Add((ObjectClass *)this);
+    unknown_objects_ac0cd8.Add(this);
 }

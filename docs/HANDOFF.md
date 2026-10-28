@@ -108,6 +108,9 @@ experiments that yield a rule, then the rule applied), as in the VC6 notes.
   blocked until the Aircraft/BuildingLight callers that keep them out of line are recovered.
 - Windows lead: r1-r16 landed (last e3e64c00, tools 728474f6); Factory/House declarations and the
   Leaf_4ea7f0 rename approved 2026-10-28 for the Building 0x44B480 caller plan.
+- techno.hpp's UnknownTechno238 stand-in still declares SpawnManagerClass members 0x689B70,
+  0x68A560, 0x68A4B0, 0x68A680 under other names (fold into SpawnManagerClass with a rename);
+  SpawnManagerClass::AI 0x689C90 (2008 B) not drafted.
 - Best misses by lane: WarheadType Read_INI 0x7204E0 99.80, Sidebar Draw_It
   0x67CF80 99.43, TechnoType Load 0x6DE260 98.19 (cached-zero register),
   command registration 0x5173C0 76.7 (holds 47 destructors).

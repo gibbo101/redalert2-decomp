@@ -4,8 +4,8 @@
     "id": "population-2689",
     "inventory_sha256": "3049215903462f474d6217596b448039779e4e5cd763be14a8731fe6de51c877",
     "gaps_sha256": "e5402d87ba04e6eee45f0c1db5e3f41725e22009bc8ddda35bfb6686576800ae",
-    "historical_population_sha256": "c4d1f562d8777951005aea8cc6ef7b14d2537045cd4d745da258ac7a1cb7b38a",
-    "historical_acceptance_sha256": "f1b12902f0a0317a471d3a03f238068e40dae74285ab773319ec9cff9c58c5f0"
+    "historical_population_sha256": "1b1e1e5574ee77c780ad32259796e2faaa01fb0d46de33891cf2163d956872f9",
+    "historical_acceptance_sha256": "960efde40153093a715b0870d8f52108d757036bc9bb7a6ae38b98422dc2f075"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4385,10 +4385,10 @@
     "?Compute_CRC@MissionClass@@UBEXAAVWWCRCEngine@@@Z": 5853248,
     "?Compute_CRC@ObjectClass@@UBEXAAVWWCRCEngine@@@Z": 6114064,
     "?Init@UnknownAudioController@@QAEXXZ": 4217840,
-    "?unknown_objects_ac0d60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275616,
+    "?unknown_AbstractClass_list_00ac0d60@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275616,
     "?unknown_objects_ac0cb0@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275440,
-    "?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275352,
-    "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275480,
+    "?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275352,
+    "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275480,
     "?Unknown_00405D50@UnknownAudioController@@QAEXXZ": 4218192,
     "?Unknown_00405C10@UnknownAudioController@@QAEXXZ": 4217872,
     "?Unknown_005394F0@UnknownObject5394F0@@QAEXXZ": 5477616,

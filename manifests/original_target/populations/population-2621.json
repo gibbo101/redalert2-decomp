@@ -4,8 +4,8 @@
     "id": "population-2621",
     "inventory_sha256": "280e79d14c622b4c6426514989820b78920d2f2eeae0860bb72292bdeca0b60a",
     "gaps_sha256": "5d249e4f83e6f85c19b88b6718ed7aa0695fc29ad67e649b5e4896e47240e52a",
-    "historical_population_sha256": "0555b28efd0332704634182aaa75cc2b9f2ec2a0c37663cb6964ed10935ff599",
-    "historical_acceptance_sha256": "22534bb7971f5e4e5af4cb0f712db6b069105dc77b673d8fb2148d99d97233f2"
+    "historical_population_sha256": "466b0fc02400828cd6f1c572404520252f1254982925a34ce404b5f71bf90651",
+    "historical_acceptance_sha256": "13ff1c559836c6a99ce938e45e2f24572873a19a3c4cf33e34a05ffcb94fce49"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -11352,10 +11352,9 @@
     "?Compute_CRC@MissionClass@@UBEXAAVWWCRCEngine@@@Z": 5853248,
     "?Compute_CRC@ObjectClass@@UBEXAAVWWCRCEngine@@@Z": 6114064,
     "?Init@UnknownAudioController@@QAEXXZ": 4217840,
-    "?unknown_objects_ac0d60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275616,
     "?unknown_objects_ac0cb0@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275440,
-    "?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275352,
-    "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275480,
+    "?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275352,
+    "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275480,
     "?Unknown_00405D50@UnknownAudioController@@QAEXXZ": 4218192,
     "?Unknown_00405C10@UnknownAudioController@@QAEXXZ": 4217872,
     "?Unknown_005394F0@UnknownObject5394F0@@QAEXXZ": 5477616,
@@ -13351,7 +13350,7 @@
     "?Tiberium_Fraction@HouseClass@@QBENXZ": 5123568,
     "?unknown_objects_ac0c80@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275392,
     "?Delete@?$DynamicVectorClass@PAVObjectClass@@@@QAE_NH@Z": 4541216,
-    "?unknown_objects_ac0c30@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275312,
+    "?unknown_objects_ac0c30@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275312,
     "?unknown_house_84e894@@3PAVHouseClass@@A": 8710292,
     "?Delete@?$DynamicVectorClass@PAVHouseClass@@@@QAE_NH@Z": 5213216,
     "??_7BaseClass@@6B@": 7980432,

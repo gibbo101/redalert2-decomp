@@ -23,8 +23,6 @@
 // @ref ?unknown_objects_ac0d30@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0d30
 
 extern Cell unknown_cell_ac0050;
-extern DynamicVectorClass<ObjectClass *> unknown_objects_ac0c58;
-extern DynamicVectorClass<ObjectClass *> unknown_objects_ac0d60;
 extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0cb0;
 extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0d30;
 
@@ -64,8 +62,8 @@ TeamClass::TeamClass(TeamTypeClass *type, HouseClass *owner, int arg3) :
 {
     Teams.Add(this);
     unknown_objects_ac0cb0.Add(this);
-    unknown_objects_ac0c58.Add((ObjectClass *)this);
-    unknown_objects_ac0d60.Add((ObjectClass *)this);
+    unknown_objects_ac0c58.Add(this);
+    unknown_AbstractClass_list_00ac0d60.Add(this);
     unknown_objects_ac0d30.Add(this);
     memset(unknown_84, 0, sizeof(unknown_84));
     if (Class != 0) {

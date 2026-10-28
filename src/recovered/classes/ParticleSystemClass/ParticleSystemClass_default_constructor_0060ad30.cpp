@@ -5,7 +5,7 @@
 // @ref ??0ObjectClass@@QAE@XZ=005d22e0
 // @ref ??_7?$DynamicVectorClass@PAVParticleClass@@@@6B@=007a22a4
 // @ref ?ParticleSystems@@3V?$DynamicVectorClass@PAVParticleSystemClass@@@@A=00a32280
-// @ref ?unknown_objects_ac0d60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A=00ac0d60
+// @ref ?unknown_AbstractClass_list_00ac0d60@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0d60
 // @ref ??_7ParticleSystemClass@@6BIPersistStream@@@=007a7f8c
 // @ref ??_7ParticleSystemClass@@6BIRTTITypeInfo@@@=007a7f70
 // @ref ??_7ParticleSystemClass@@6BINoticeSink@@@=007a7f68
@@ -25,5 +25,5 @@ ParticleSystemClass::ParticleSystemClass() :
 {
     Particles.Clear();
     ParticleSystems.Add(this);
-    unknown_objects_ac0d60.Add(this);
+    unknown_AbstractClass_list_00ac0d60.Add(this);
 }

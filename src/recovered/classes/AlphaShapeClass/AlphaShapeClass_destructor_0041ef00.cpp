@@ -11,5 +11,5 @@
 AlphaShapeClass::~AlphaShapeClass()
 {
     unknown_AlphaShapeClass_list_0083c648.Delete(this);
-    unknown_objects_ac0d60.Delete((ObjectClass *)this);
+    unknown_AbstractClass_list_00ac0d60.Delete(this);
 }

@@ -3,9 +3,9 @@
 // @ref ??0AbstractClass@@QAE@XZ=0040ff10
 // @ref ?Init@UnknownAudioController@@QAEXXZ=00405bf0
 // @ref ?unknown_objects_a40368@@3V?$DynamicVectorClass@PAVObjectClass@@@@A=00a40368
-// @ref ?unknown_objects_ac0d60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A=00ac0d60
+// @ref ?unknown_AbstractClass_list_00ac0d60@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0d60
 // @ref ?unknown_objects_ac0cb0@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0cb0
-// @ref ?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVObjectClass@@@@A=00ac0c58
+// @ref ?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0c58
 // @ref ??_7ObjectClass@@6BIPersistStream@@@=007a7498
 // @ref ??_7ObjectClass@@6BIRTTITypeInfo@@@=007a747c
 // @ref ??_7ObjectClass@@6BINoticeSink@@@=007a7474
@@ -38,7 +38,7 @@ ObjectClass::ObjectClass() :
     unknown_3c.Init();
     unknown_50.Init();
     unknown_objects_a40368.Add(this);
-    unknown_objects_ac0d60.Add(this);
+    unknown_AbstractClass_list_00ac0d60.Add(this);
     unknown_objects_ac0cb0.Add(this);
     unknown_objects_ac0c58.Add(this);
     unknown_14_bit1 = 1;

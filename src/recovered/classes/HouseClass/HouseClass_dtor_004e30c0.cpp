@@ -8,7 +8,6 @@
 // @ref ??_I@YGXPAXIHP6EX0@Z@Z=0040af00
 
 extern DynamicVectorClass<ObjectClass *> unknown_objects_ac0c80;   // 0x00AC0C80
-extern DynamicVectorClass<ObjectClass *> unknown_objects_ac0c30;   // 0x00AC0C30
 extern bool unknown_flag_a40958;            // 0x00A40958
 extern HouseClass *unknown_house_84e894;    // 0x0084E894
 
@@ -40,9 +39,9 @@ HouseClass::~HouseClass()
     unknown_15f60 = 0;
     unknown_objects_ac0cb0.Delete((ObjectClass *)this);
     unknown_objects_ac0c80.Delete((ObjectClass *)this);
-    unknown_objects_ac0c30.Delete((ObjectClass *)this);
-    unknown_objects_ac0c58.Delete((ObjectClass *)this);
-    unknown_objects_ac0d60.Delete((ObjectClass *)this);
+    unknown_objects_ac0c30.Delete(this);
+    unknown_objects_ac0c58.Delete(this);
+    unknown_AbstractClass_list_00ac0d60.Delete(this);
     if (unknown_house_84e894 == this) {
         unknown_house_84e894 = 0;
     }

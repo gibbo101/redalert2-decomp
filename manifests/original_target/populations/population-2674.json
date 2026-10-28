@@ -4,8 +4,8 @@
     "id": "population-2674",
     "inventory_sha256": "a8d4676837ee1f7e78ecabc0a147a0de009644b0764e3c64cea0fa8d3a0b1c3e",
     "gaps_sha256": "7767624930754dcafa7316411f2115064392fb1b994b2cf8ba141ae73b0acbe2",
-    "historical_population_sha256": "69b7fdee4a82ac7144b2bbcd5c5af16b32f4db0c30a927f37037f43ed9abe7ce",
-    "historical_acceptance_sha256": "4dd381a86835d1dcb540f06b3aa50ca08d5fcc6e986a8214ff1300a442c8a97e"
+    "historical_population_sha256": "c39c0efb39d6bc44a82b6a6b7f2e699bfa982a19d8014a0b7b9114fac4bb4e9c",
+    "historical_acceptance_sha256": "15d78c337a51b3ae18fd85cdb266225ad955403cad6369dfddc7d3c03ee3e286"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2870,9 +2870,9 @@
     "?Compute_CRC@MissionClass@@UBEXAAVWWCRCEngine@@@Z": 5853248,
     "?Compute_CRC@ObjectClass@@UBEXAAVWWCRCEngine@@@Z": 6114064,
     "?Init@UnknownAudioController@@QAEXXZ": 4217840,
-    "?unknown_objects_ac0d60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275616,
-    "?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275352,
-    "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A": 11275480,
+    "?unknown_AbstractClass_list_00ac0d60@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275616,
+    "?unknown_objects_ac0c58@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275352,
+    "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275480,
     "?Unknown_00405D50@UnknownAudioController@@QAEXXZ": 4218192,
     "?Unknown_00405C10@UnknownAudioController@@QAEXXZ": 4217872,
     "?Unknown_005394F0@UnknownObject5394F0@@QAEXXZ": 5477616,
@@ -5343,7 +5343,78 @@
     "??_ESmudgeTypeClass@@UAEPAXI@Z": 6851616,
     "??_ETerrainTypeClass@@UAEPAXI@Z": 7232224,
     "??_EGenericList@@UAEPAXI@Z": 4252192,
-    "??_ETEventClass@@UAEPAXI@Z": 7237024
+    "??_ETEventClass@@UAEPAXI@Z": 7237024,
+    "?GetClassID@AlphaShapeClass@@UAGJPAUGUID@@@Z": 4321216,
+    "?Kind_Of@AlphaShapeClass@@UBEHXZ": 4321280,
+    "?Size_Of@AlphaShapeClass@@UBEHXZ": 4321296,
+    "?Compute_CRC@AlphaShapeClass@@UBEXAAVWWCRCEngine@@@Z": 4321312,
+    "?Detach@AlphaShapeClass@@UAEXPAVAbstractClass@@_N@Z": 4321520,
+    "?GetClassID@NeuronClass@@UAGJPAUGUID@@@Z": 4422336,
+    "?Compute_CRC@NeuronClass@@UBEXAAVWWCRCEngine@@@Z": 4422544,
+    "?Kind_Of@NeuronClass@@UBEHXZ": 4423520,
+    "?Size_Of@NeuronClass@@UBEHXZ": 4423536,
+    "?unknown_slot14@NullModemClass@@UAEXKKK@Z": 6102848,
+    "?Save@AlphaShapeClass@@UAGJPAUIStream@@H@Z": 4321472,
+    "?Save@NeuronClass@@UAGJPAUIStream@@H@Z": 4422512,
+    "?unknown_list_ac0c18@@3V?$DynamicVectorClass@PAVTechnoClass@@@@A": 11275288,
+    "?unknown_objects_ac0c30@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275312,
+    "??0AlphaShapeClass@@QAE@PAVObjectClass@@HH@Z": 4320224,
+    "?Resize@?$DynamicVectorClass@PAE@@UAE_NHPBQAE@Z": 7788432,
+    "?Resize@?$DynamicVectorClass@PAVWinsockBufferType@WinsockInterfaceClass@@@@UAE_NHPBQAVWinsockBufferType@WinsockInterfaceClass@@@Z": 7781600,
+    "??0AlphaShapeClass@@QAE@ABVNoInitClass@@@Z": 4320976,
+    "??_7AlphaShapeClass@@6BIPersistStream@@@": 7978964,
+    "??_7AlphaShapeClass@@6BIRTTITypeInfo@@@": 7978936,
+    "??_7AlphaShapeClass@@6BINoticeSink@@@": 7978928,
+    "??_7AlphaShapeClass@@6BINoticeSource@@@": 7978920,
+    "??1AlphaShapeClass@@UAE@XZ": 4321024,
+    "?Load@AlphaShapeClass@@UAGJPAUIStream@@@Z": 4321376,
+    "??_GAlphaShapeClass@@UAEPAXI@Z": 4323776,
+    "?unknown_ini_8396e0@@3VCCINIClass@@A": 8623840,
+    "?Resize@?$DynamicVectorClass@G@@UAE_NHPBG@Z": 4371184,
+    "?ID@?$DynamicVectorClass@G@@UAEHABG@Z": 4371360,
+    "?Resize@?$DynamicVectorClass@PAUDamageGroup@@@@UAE_NHPBQAUDamageGroup@@@Z": 4718288,
+    "?ID@?$VectorClass@PAVGraphicMenuItem@@@@UAEHPBQAVGraphicMenuItem@@@Z": 5108000,
+    "?Resize@?$DynamicVectorClass@V?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@@@UAE_NHPBV?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@@Z": 5210816,
+    "?Resize@?$DynamicVectorClass@PAVCCINIClass@@@@UAE_NHPBQAVCCINIClass@@@Z": 5366400,
+    "?Delete@?$DynamicVectorClass@PAVIonBlastClass@@@@QAE_NH@Z": 5383424,
+    "?Resize@?$DynamicVectorClass@W4PassabilityType@@@@UAE_NHPBW4PassabilityType@@@Z": 5684752,
+    "?Delete@?$DynamicVectorClass@PAVTechnoClass@@@@QAE_NABQAVTechnoClass@@@Z": 6403776,
+    "?Delete@?$DynamicVectorClass@PAVPlanningTokenClass@@@@QAE_NABQAVPlanningTokenClass@@@Z": 6404496,
+    "?Delete@?$DynamicVectorClass@PAVPlanningTokenClass@@@@QAE_NH@Z": 6405632,
+    "?Delete@?$DynamicVectorClass@PAVRadarEventClass@@@@QAE_NH@Z": 6539856,
+    "?Resize@?$DynamicVectorClass@PAUGlobalPacketType@@@@UAE_NHPBQAUGlobalPacketType@@@Z": 6767696,
+    "?Resize@?$DynamicVectorClass@PAVPhoneEntryClass@@@@UAE_NHPBQAVPhoneEntryClass@@@Z": 6768304,
+    "?Delete@?$DynamicVectorClass@PAVAbstractClass@@@@QAE_NABQAVAbstractClass@@@Z": 6942016,
+    "?Delete@?$DynamicVectorClass@PAVSuperClass@@@@QAE_NH@Z": 6942096,
+    "?Clear@?$DynamicVectorClass@V?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@@UAEXXZ": 7078752,
+    "?Resize@?$DynamicVectorClass@V?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@@UAE_NHPBV?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@Z": 7079520,
+    "?Add@?$DynamicVectorClass@V?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@@QAE_NABV?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@Z": 7079824,
+    "?Delete@?$DynamicVectorClass@PAVVeinholeMonsterClass@@@@QAE_NH@Z": 7416544,
+    "?Resize@?$DynamicVectorClass@PAUtConnInfoStruct@@@@UAE_NHPBQAUtConnInfoStruct@@@Z": 7759520,
+    "?Delete@?$DynamicVectorClass@PAVMapRegionClass@@@@QAE_NH@Z": 5828528,
+    "?Resize@?$DynamicVectorClass@N@@UAE_NHPBN@Z": 5827328,
+    "?ID@?$DynamicVectorClass@N@@UAEHABN@Z": 5827520,
+    "?Resize@?$DynamicVectorClass@PAUWIN32_FIND_DATA@@@@UAE_NHPBQAUWIN32_FIND_DATA@@@Z": 5825616,
+    "?Resize@?$DynamicVectorClass@VRect@@@@UAE_NHPBVRect@@@Z": 5826368,
+    "?Compute_CRC@NullModemConnClass@@SIHPADH@Z": 6085760,
+    "?Load@NeuronClass@@UAGJPAUIStream@@@Z": 4422400,
+    "?Clear@BrainClass@@QAEXXZ": 4422704,
+    "?Init@BrainClass@@QAEXHH@Z": 4422768,
+    "?Add@BrainClass@@QAE_NPAVNeuronClass@@@Z": 4422848,
+    "?Save@BrainClass@@QAEJPAUIStream@@H@Z": 4422960,
+    "?Load@BrainClass@@QAEJPAUIStream@@@Z": 4423072,
+    "?Clear@?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEXXZ": 5679936,
+    "?Fetch@?$VectorClass@USubzoneTrackingStruct@@@@UBE?AUSubzoneTrackingStruct@@H@Z": 5680112,
+    "?Resize@?$VectorClass@USubzoneTrackingStruct@@@@UAE_NHPBUSubzoneTrackingStruct@@@Z": 5682464,
+    "?Clear@?$VectorClass@USubzoneTrackingStruct@@@@UAEXXZ": 5683008,
+    "?Resize@?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAE_NHPBUSubzoneTrackingStruct@@@Z": 5683264,
+    "?Detach@KamikazeTrackerClass@@QAEXPAVAircraftClass@@@Z": 5445760,
+    "?Add@KamikazeTrackerClass@@QAEXPAVAircraftClass@@PAVAbstractClass@@@Z": 5445280,
+    "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
+    "?Load@SpawnManagerClass@@UAGJPAUIStream@@@Z": 6858704,
+    "?Save@SpawnManagerClass@@UAGJPAUIStream@@H@Z": 6859120,
+    "??_7AlphaShapeClass@@6B@": 7978964,
+    "??_EAlphaShapeClass@@UAEPAXI@Z": 4323776
   },
   "regions": [
     {
@@ -7112,7 +7183,7 @@
         {
           "offset": 8,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275480,
           "addend": 8,
           "resolved": 11275488
@@ -7120,7 +7191,7 @@
         {
           "offset": 14,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275480,
           "addend": 16,
           "resolved": 11275496
@@ -7128,7 +7199,7 @@
         {
           "offset": 22,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275480,
           "addend": 13,
           "resolved": 11275493
@@ -7136,7 +7207,7 @@
         {
           "offset": 36,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275480,
           "addend": 20,
           "resolved": 11275500
@@ -7144,7 +7215,7 @@
         {
           "offset": 47,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275480,
           "addend": 0,
           "resolved": 11275480
@@ -7152,7 +7223,7 @@
         {
           "offset": 55,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275480,
           "addend": 0,
           "resolved": 11275480
@@ -7160,7 +7231,7 @@
         {
           "offset": 68,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275480,
           "addend": 16,
           "resolved": 11275496
@@ -7168,7 +7239,7 @@
         {
           "offset": 77,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275480,
           "addend": 16,
           "resolved": 11275496
@@ -7176,13 +7247,13 @@
         {
           "offset": 83,
           "kind": 6,
-          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVObjectClass@@@@A",
+          "symbol": "?unknown_objects_ac0cd8@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A",
           "target": 11275480,
           "addend": 4,
           "resolved": 11275484
         }
       ],
-      "source_sha256": "07928ed7fa23715eea86abd9d674ef958c4680acfb37d49234244dcbac5ad695",
+      "source_sha256": "b2387fcb2137a23bfed84c9522e35302a4645b2418dc939aa40b7caad1ffb4d8",
       "source": "src/recovered/classes/TriggerClass/TriggerClass_unknown_func_6ed990_006ed990.cpp",
       "population": "population-2674",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",

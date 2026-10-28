@@ -2,7 +2,7 @@
 #define VECTOR_IMPLEMENT_DYNAMIC_DELETE_INDEX
 #define VECTOR_IMPLEMENT_VECTOR_DESTRUCTOR
 #include "shared/factory_class.hpp"
-extern DynamicVectorClass<AbstractClass *> unknown_AbstractClass_list_00ac0d60;
+#include "shared/object_lists.hpp"
 extern bool unknown_flag_a40958;
 // @ref ?unknown_AbstractClass_list_00ac0d60@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0d60
 // @ref ?unknown_flag_a40958@@3_NA=00a40958

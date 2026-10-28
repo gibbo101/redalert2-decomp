@@ -22,8 +22,6 @@
 // @ref ?unknown_objects_ac0d30@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A=00ac0d30
 
 extern bool unknown_flag_a40958;            // 0x00A40958
-extern DynamicVectorClass<ObjectClass *> unknown_objects_ac0c58;
-extern DynamicVectorClass<ObjectClass *> unknown_objects_ac0d60;
 extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0cb0;
 extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0d30;
 
@@ -55,9 +53,9 @@ TeamClass::~TeamClass()
     }
     Unknown_006ECB90(this, true);
     unknown_objects_ac0d30.Delete(this);
-    unknown_objects_ac0d60.Delete((ObjectClass *)this);
+    unknown_AbstractClass_list_00ac0d60.Delete(this);
     unknown_objects_ac0cb0.Delete(this);
-    unknown_objects_ac0c58.Delete((ObjectClass *)this);
+    unknown_objects_ac0c58.Delete(this);
     Teams.Delete(this);
     if (IsTransient && Class != 0) {
         delete Class;
