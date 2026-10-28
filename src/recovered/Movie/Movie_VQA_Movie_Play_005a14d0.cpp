@@ -6,7 +6,7 @@
 // @ref ?VQA_Unknown_0071DBA0@@YI_NH@Z=0071dba0
 // @ref ?Unknown_0071CBE0@VQAClass@@QAE_NHH@Z=0071cbe0
 // @ref ?Unknown_0071CC10@VQAClass@@QAE_NHHH@Z=0071cc10
-// @ref ?Unknown_0071CC60@VQAClass@@QAEHH@Z=0071cc60
+// @ref ?Unknown_0071CC60@VQAClass@@QAEXH@Z=0071cc60
 // @ref ?Unknown_0071CCD0@VQAClass@@QAEHHH@Z=0071ccd0
 // @ref ?Unknown_0071D210@VQAClass@@QAEXXZ=0071d210
 // @ref ?WWMouse@@3PAVMouse@@A=00839c68

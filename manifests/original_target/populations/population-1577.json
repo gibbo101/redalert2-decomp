@@ -4,8 +4,8 @@
     "id": "population-1577",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "4334ea9b498843f98cb4f5e67e8c16724d23833d1f246405b5a6ad14b7c84d2c",
-    "historical_acceptance_sha256": "204b896ac0d81c8d8ba3345c152fbd54d316422f86d161b9fb29388ea6f177f2"
+    "historical_population_sha256": "ff536d6017ca35e70580dd903bb561380f9f048b7326da9b68cb3a2358715125",
+    "historical_acceptance_sha256": "fe1408d995c5231fc7c398e1e6842912b008836eed6c8475beed0678c29de5cd"
   },
   "references": {
     "?ZBufferPtr@@3PAVZBuffer@@A": 8590772,
@@ -128,8 +128,8 @@
     "?target@Target_56d4f0@@QAEII@Z": 6522768,
     "?target@Target_5794d0@@QAEII@Z": 5490640,
     "?Size@MechLocomotionClass@@UAEHXZ": 5845760,
-    "?Unknown_Slot7@VQMovieHandle@@UAEHH@Z": 5904656,
-    "?Unknown_Slot7@BinkMovieHandle@@UAEHH@Z": 5905216,
+    "?Unknown_Slot7@VQMovieHandle@@UAEXH@Z": 5904656,
+    "?Unknown_Slot7@BinkMovieHandle@@UAEXH@Z": 5905216,
     "?target@Target_5a3f70@@QAEIII@Z": 5993936,
     "?target@Target_5aa800@@QAEII@Z": 6003552,
     "?Unknown_Slot7@MSVQAnim@@UAE_NXZ": 5956720,

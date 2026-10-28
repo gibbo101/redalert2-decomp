@@ -91,7 +91,7 @@ public:
     int Unknown_0071CBC0(int value);                       // 0x0071CBC0 old value; -1 keeps it
     bool Unknown_0071CBE0(int unknown1, int unknown2);     // 0x0071CBE0
     bool Unknown_0071CC10(int unknown1, int unknown2, int unknown3);  // 0x0071CC10
-    int Unknown_0071CC60(int frame);                       // 0x0071CC60 seek (no return value: VQMovieHandle passes EAX on)
+    void Unknown_0071CC60(int frame);                      // 0x0071CC60 seek to a frame (no value: the same-frame path leaves EAX unset)
     bool Unknown_0071CC90();                               // 0x0071CC90
     int Unknown_0071CCD0(int unknown1, int unknown2);      // 0x0071CCD0 (1 ends the loop)
     bool Unknown_0071CFC0(bool *unknown);                  // 0x0071CFC0
@@ -207,7 +207,7 @@ public:
     // Frees the companion, closes the movie and the file handle.
     void Close();                                          // 0x00430230
     void Unknown_00430280(int x, int y);                   // 0x00430280
-    int Unknown_004303A0(int frame);                       // 0x004303A0 BinkGoto
+    void Unknown_004303A0(int frame);                      // 0x004303A0 BinkGoto
     int Unknown_004303C0();                                // 0x004303C0 milliseconds per frame
     void Unknown_004303E0(int unknown);                    // 0x004303E0
     void Unknown_00430400(bool pause);                     // 0x00430400 BinkPause
@@ -251,7 +251,7 @@ public:
     virtual void Play() = 0;                               // slot 4 (+0x10)
     virtual bool Is_Finished() = 0;                        // slot 5 (+0x14)
     virtual void Set_Position(int x, int y) = 0;          // slot 6 (+0x18)
-    virtual int Unknown_Slot7(int unknown) = 0;            // slot 7 (+0x1C)
+    virtual void Unknown_Slot7(int frame) = 0;             // slot 7 (+0x1C) seek to a frame
     virtual void Unknown_Slot8(int unknown) = 0;           // slot 8 (+0x20)
     virtual int Unknown_Slot9() = 0;                       // slot 9 (+0x24)
     virtual void Blit() = 0;                               // slot 10 (+0x28)
@@ -273,7 +273,7 @@ public:
     virtual void Play();                                   // 0x005A1830
     virtual bool Is_Finished();                            // 0x005A1850
     virtual void Set_Position(int x, int y);              // 0x005A18B0
-    virtual int Unknown_Slot7(int unknown);                // 0x005A1910
+    virtual void Unknown_Slot7(int frame);                 // 0x005A1910
     virtual void Unknown_Slot8(int unknown);               // 0x005A18F0
     virtual int Unknown_Slot9();                           // 0x005A1930
     virtual void Blit();                                   // 0x005A1940
@@ -292,7 +292,7 @@ public:
     virtual void Play();                                   // 0x005A1AC0
     virtual bool Is_Finished();                            // 0x005A1AE0
     virtual void Set_Position(int x, int y);              // 0x005A1B10
-    virtual int Unknown_Slot7(int unknown);                // 0x005A1B40
+    virtual void Unknown_Slot7(int frame);                 // 0x005A1B40
     virtual void Unknown_Slot8(int unknown);               // 0x005A1B30
     virtual int Unknown_Slot9();                           // 0x005A1B50
     virtual void Blit();                                   // 0x005A1B60

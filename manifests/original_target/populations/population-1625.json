@@ -4,8 +4,8 @@
     "id": "population-1625",
     "inventory_sha256": "54bfa4e297fdfbd690aa6d2ee0346e8601f9f159e99bffbdb2787483db7d5a3a",
     "gaps_sha256": "1ca407a47623942716371daecb784ef12280e07e832029fc1e9c45eeed324d64",
-    "historical_population_sha256": "6f135532684f339027b3b25e31afe0c44bc77ca30829bc44932d38b6c7679fc0",
-    "historical_acceptance_sha256": "cc40b2964926b7e0db2d8bfaef55c45b34dfb183c15270fd2741c15a92a71497"
+    "historical_population_sha256": "d3170395bc3d9c1cf95b1de74cca9485e14c1ad6a610516556de175479d9b8b9",
+    "historical_acceptance_sha256": "1a12f46ef1896e4e75ba45c07b4c854618126a584f70f84b3813a456d211c055"
   },
   "references": {
     "_unknown_empty_rect": 10950712,
@@ -787,9 +787,9 @@
     "?Unknown_Slot2@VQMovieHandle@@UAEXXZ": 5904544,
     "?Unknown_Slot8@VQMovieHandle@@UAEXH@Z": 5904624,
     "?Unknown_0069B4F0@VQAMovieCompanion@@QAEXH@Z": 6927600,
-    "?Unknown_Slot7@VQMovieHandle@@UAEHH@Z": 5904656,
+    "?Unknown_Slot7@VQMovieHandle@@UAEXH@Z": 5904656,
     "?Unknown_0071D210@VQAClass@@QAEXXZ": 7459344,
-    "?Unknown_0071CC60@VQAClass@@QAEHH@Z": 7457888,
+    "?Unknown_0071CC60@VQAClass@@QAEXH@Z": 7457888,
     "?Unknown_Slot9@VQMovieHandle@@UAEHXZ": 5904688,
     "?Pause@BinkMovieHandle@@UAEX_N@Z": 5905072,
     "?Unknown_00430400@BinkClass@@QAEX_N@Z": 4391936,
@@ -800,8 +800,8 @@
     "?Unknown_00430280@BinkClass@@QAEXHH@Z": 4391552,
     "?Unknown_Slot8@BinkMovieHandle@@UAEXH@Z": 5905200,
     "?Unknown_004303E0@BinkClass@@QAEXH@Z": 4391904,
-    "?Unknown_Slot7@BinkMovieHandle@@UAEHH@Z": 5905216,
-    "?Unknown_004303A0@BinkClass@@QAEHH@Z": 4391840,
+    "?Unknown_Slot7@BinkMovieHandle@@UAEXH@Z": 5905216,
+    "?Unknown_004303A0@BinkClass@@QAEXH@Z": 4391840,
     "?target@Target_5a3f70@@QAEIII@Z": 5993936,
     "?Clear@?$DynamicVectorClass@PAVMPlayerScoreType@@@@UAEXXZ": 5923760,
     "?ID@?$DynamicVectorClass@PAVMPlayerScoreType@@@@UAEHPBQAVMPlayerScoreType@@@Z": 5923808,

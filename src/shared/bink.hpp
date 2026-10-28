@@ -15,7 +15,7 @@ BINK_IMPORT BinkHandleSize *__stdcall BinkOpen(char const *name, unsigned flags)
 BINK_IMPORT void __stdcall BinkSetVolume(BinkHandleSize *bink, int volume);
 BINK_IMPORT void __stdcall BinkClose(BinkHandleSize *bink);
 BINK_IMPORT unsigned __stdcall BinkDDSurfaceType(void *surface);
-BINK_IMPORT int __stdcall BinkGoto(BinkHandleSize *bink, unsigned frame, int flags);
+BINK_IMPORT void __stdcall BinkGoto(BinkHandleSize *bink, unsigned frame, int flags);
 BINK_IMPORT int __stdcall BinkPause(BinkHandleSize *bink, int pause);
 BINK_IMPORT void __stdcall BinkNextFrame(BinkHandleSize *bink);
 BINK_IMPORT int __stdcall BinkCopyToBuffer(BinkHandleSize *bink, void *dest, int destpitch, unsigned destheight,

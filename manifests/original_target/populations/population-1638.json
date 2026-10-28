@@ -4,8 +4,8 @@
     "id": "population-1638",
     "inventory_sha256": "199f5c115dd6f515544b30d5609bfa32349705af732a18f2cd3b46d92e86327a",
     "gaps_sha256": "cbdbbaf7445431eacdf22f0682098215b2e55821098f9e65bdffb5c084db316b",
-    "historical_population_sha256": "c3e96dfb9b0b4a04f613478957d5692314849e73f1a7cbacff05a1a94c82fe04",
-    "historical_acceptance_sha256": "7d0827e733a0d46427f1962de73441023b3832e01e235cbafc096622becaa73d"
+    "historical_population_sha256": "32829ba5b4e7bec1c7ddc178bab0fe67cdb6f785ac3c2b4ea00fd90aabdbad0e",
+    "historical_acceptance_sha256": "ba816aa2647362a9d8b43e6f9d47b2f047dad94897b6cabca12d0a3ecc2c6bed"
   },
   "references": {
     "_unknown_empty_rect": 8719464,
@@ -864,9 +864,9 @@
     "?Clear@?$VectorClass@N@@UAEXXZ": 5827168,
     "?ID@?$VectorClass@N@@UAEHPBN@Z": 5827296,
     "?Control@MissionClass@@QBEPAVMissionControlClass@@XZ": 5853392,
-    "?Unknown_Slot7@VQMovieHandle@@UAEHH@Z": 5904656,
+    "?Unknown_Slot7@VQMovieHandle@@UAEXH@Z": 5904656,
     "?Set_Position@BinkMovieHandle@@UAEXHH@Z": 5905168,
-    "?Unknown_Slot7@BinkMovieHandle@@UAEHH@Z": 5905216,
+    "?Unknown_Slot7@BinkMovieHandle@@UAEXH@Z": 5905216,
     "?Clear@?$DynamicVectorClass@PAVMPlayerScoreType@@@@UAEXXZ": 5923760,
     "?ID@?$DynamicVectorClass@PAVMPlayerScoreType@@@@UAEHPBQAVMPlayerScoreType@@@Z": 5923808,
     "?Fetch@?$VectorClass@PAVMPlayerScoreType@@@@UBEPAVMPlayerScoreType@@H@Z": 5923840,
