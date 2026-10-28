@@ -22,11 +22,11 @@ void MessageListClass::Init(int x, int y, int max_messages, int max_chars, int u
     for (int i = 0; i < 7; i++) {
         unknown_1480[i] = 0x10001;
     }
-    if (unknown_19) {
-        if (unknown_24) {
-            delete unknown_24;
+    if (IsEdit) {
+        if (EditLabel) {
+            delete EditLabel;
         }
-        unknown_24 = 0;
+        EditLabel = 0;
     }
     First = 0;
     X = x;
@@ -41,22 +41,22 @@ void MessageListClass::Init(int x, int y, int max_messages, int max_chars, int u
     }
     Height = 19;
     unknown_18 = unknown_flag;
-    unknown_19 = false;
+    IsEdit = false;
     if (x2 == -1 || y2 == -1) {
-        unknown_1a = true;
-        unknown_1c = x;
-        unknown_20 = y;
+        AdjustEdit = true;
+        EditX = x;
+        EditY = y;
     } else {
-        unknown_1a = false;
-        unknown_1c = x2;
-        unknown_20 = y2;
+        AdjustEdit = false;
+        EditX = x2;
+        EditY = y2;
     }
-    unknown_24 = 0;
-    unknown_28 = 0;
-    unknown_16c = 0;
-    unknown_2b0 = 0;
-    unknown_2b4 = 0;
-    unknown_2b8 = 0;
+    EditLabel = 0;
+    EditBuf[0] = 0;
+    OverflowBuf[0] = 0;
+    EditCurPos = 0;
+    EditInitPos = 0;
+    EditCursor = 0;
     Selection_First = first;
     Selection_Last = last;
     if (Selection_Last >= MaxChars) {

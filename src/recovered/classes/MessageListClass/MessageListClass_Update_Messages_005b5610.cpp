@@ -31,7 +31,7 @@ int MessageListClass::Update_Messages()
         } while (node != 0);
         if (removed != 0) {
             int y;
-            if (unknown_19 && unknown_1a) {
+            if (IsEdit && AdjustEdit) {
                 y = Height + Y;
             } else {
                 y = Y;

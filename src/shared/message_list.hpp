@@ -7,7 +7,8 @@
 #include "shared/debug_printf.hpp"
 
 // A message node (a MessageNode_006f15c0 of shared/message_gadget_layout.hpp; the list is linked through the
-// LinkClass-style slots: slot 1 is the next node, slot 4 appends to a list, slot 9 removes the node and returns the next one).
+// LinkClass-style slots: slot 1 is the next node, slot 4 appends to a list, slot 9 removes the node and returns the next one;
+// slot 20 gives the edit line the focus).
 class UnknownMessageNode {
 public:
     virtual ~UnknownMessageNode();                              // slot 0
@@ -20,6 +21,17 @@ public:
     virtual void unknown_slot7();
     virtual void unknown_slot8();
     virtual UnknownMessageNode *Remove();                       // slot 9
+    virtual void unknown_slot10();
+    virtual void unknown_slot11();
+    virtual void unknown_slot12();
+    virtual void unknown_slot13();
+    virtual void unknown_slot14();
+    virtual void unknown_slot15();
+    virtual void unknown_slot16();
+    virtual void unknown_slot17();
+    virtual void unknown_slot18();
+    virtual void unknown_slot19();
+    virtual void Set_Focus();                                   // slot 20 (the edit line takes the keyboard focus; name hypothesis)
 
     char unknown_04[0x10 - 0x04];
     int Y;                                                      // +0x10
@@ -34,6 +46,9 @@ public:
     bool unknown_41;                                            // +0x41
 };
 
+// An empty function the edit removal calls (0x00738100).
+void Unknown_00738100();
+
 extern bool unknown_flag_a3f208;         // 0x00A3F208 (game mode 3: new messages are marked)
 extern bool unknown_flag_a3f209;         // 0x00A3F209 (game mode 4)
 
@@ -45,6 +60,24 @@ public:
     // Resets the list and its geometry: position, maximum messages (at most 14) and characters (at most 112),
     // an optional second position (-1: the same), and the selection range; width is the pixel width.
     // Adds a message (an optional "prefix: " and the text, wrapped to the width; the rest goes in further messages).
+    // The text of the message with the identifier, or none (0x005B5160).
+    unsigned short *Get_Message(int identifier);
+    // The message with the identifier, or none (0x005B5190).
+    UnknownMessageNode *Get_Label(int identifier);
+    // Gives the edit line the focus when one is open (0x005B53E0).
+    void Set_Edit_Focus();
+    // Opens the edit line with the text (none: empty) and the cursor character; with AdjustEdit it takes the last
+    // row of the list (dropping the oldest message when the list is full). A width of 0 or less is TextWidth (0x005B5410).
+    UnknownMessageNode *Add_Edit(int color, unsigned style, unsigned short const *text, char cursor, int width);
+    // Closes the edit line and gives its row back to the list (0x005B5580).
+    void Remove_Edit();
+    // The number of messages, with the edit line when it is a row of the list (0x005B5C30).
+    int Num_Messages();
+    // Sets the pixel width of the list (TextWidth is 8 less) and of every message and the edit line (0x005B5C60).
+    void Set_Width(int width);
+    // Cuts the first characters off src into dest (when given): at least min_chars and at most max_chars, at a
+    // space looked for forward from min_chars or backward from max_chars; src keeps the rest. The count (0x005B5CB0).
+    int Trim_Message(unsigned short *dest, unsigned short *src, int min_chars, int max_chars, int scan_start);
     UnknownMessageNode *Add_Message(unsigned short const *prefix, int identifier, unsigned short const *text, int color,
         unsigned style, int delay, bool unknown_flag);                              // 0x005B4DA0
     // Removes the messages that have expired, frees their text slots and restacks the rest (0x005B5610); whether any went.
@@ -59,18 +92,16 @@ public:
     int MaxChars;                   // +0x010
     int Height;                     // +0x014 (19)
     bool unknown_18;                // +0x018
-    bool unknown_19;                // +0x019
-    bool unknown_1a;                // +0x01A (set when no second position)
-    int unknown_1c;                 // +0x01C
-    int unknown_20;                 // +0x020
-    UnknownMessageNode *unknown_24;          // +0x024
-    short unknown_28;               // +0x028
-    char unknown_2a[0x16C - 0x2A];
-    short unknown_16c;              // +0x16C
-    char unknown_16e[0x2B0 - 0x16E];
-    int unknown_2b0;                // +0x2B0
-    int unknown_2b4;                // +0x2B4
-    short unknown_2b8;              // +0x2B8
+    bool IsEdit;                    // +0x019 an edit line is open (EditLabel)
+    bool AdjustEdit;                // +0x01A (set when no second position: the edit line is the last row of the list)
+    int EditX;                      // +0x01C the edit line's position
+    int EditY;                      // +0x020
+    UnknownMessageNode *EditLabel;  // +0x024 the edit line
+    unsigned short EditBuf[162];    // +0x028 the edit text
+    unsigned short OverflowBuf[162];  // +0x16C
+    int EditCurPos;                 // +0x2B0 (the text length when the edit opens)
+    int EditInitPos;                // +0x2B4
+    unsigned short EditCursor;      // +0x2B8 the cursor character
     int Selection_First;            // +0x2BC (first of the selection range)
     int Selection_Last;             // +0x2C0
     int TextWidth;                  // +0x2C4 (the width minus 8)
