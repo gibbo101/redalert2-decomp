@@ -184,6 +184,7 @@
 | [classes/VoxelAnimClass](../src/recovered/classes/VoxelAnimClass/) | 16 | 1,226 | 16 | 0x0040EC40–0x0070DF90 |
 | [Movie](../src/recovered/Movie/) | 12 | 1,214 | 12 | 0x005A1470–0x005A1EF0 |
 | [classes/EnumConnectionPointsClass](../src/recovered/classes/EnumConnectionPointsClass/) | 10 | 1,208 | 7 | 0x00492B20–0x00492FB0 |
+| [classes/WorldDominationTour__Territory](../src/recovered/classes/WorldDominationTour__Territory/) | 9 | 1,207 | 9 | 0x00730B80–0x00731290 |
 | [classes/MixFileClass_CCFileClass](../src/recovered/classes/MixFileClass_CCFileClass/) | 9 | 1,190 | 9 | 0x005952D0–0x00595C60 |
 | [classes/FacingClass](../src/recovered/classes/FacingClass/) | 12 | 1,175 | 12 | 0x004B89D0–0x004B8E90 |
 | [classes/GraphicMenuAnimItem](../src/recovered/classes/GraphicMenuAnimItem/) | 5 | 1,150 | 4 | 0x004DF350–0x004DF7B0 |
@@ -273,7 +274,6 @@
 | [address_offsets](../src/recovered/address_offsets/) | 25 | 674 | 25 | 0x0042AE90–0x0076D5E0 |
 | [classes/MSShapeAnim](../src/recovered/classes/MSShapeAnim/) | 8 | 668 | 7 | 0x005AC6A0–0x005AFCC0 |
 | [classes/VectorClass_SwizzlePointerClass](../src/recovered/classes/VectorClass_SwizzlePointerClass/) | 8 | 667 | 8 | 0x0069FE20–0x006A01D0 |
-| [classes/WorldDominationTour__Territory](../src/recovered/classes/WorldDominationTour__Territory/) | 8 | 666 | 8 | 0x00730B80–0x00731290 |
 | [classes/CDownloadEventSink](../src/recovered/classes/CDownloadEventSink/) | 7 | 664 | 7 | 0x007668A0–0x00766B20 |
 | [classes/DynamicVectorClass_TechnoTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TechnoTypeClass_ptr/) | 9 | 661 | 7 | 0x0046CCE0–0x006DFA70 |
 | [classes/RGBClass](../src/recovered/classes/RGBClass/) | 5 | 659 | 5 | 0x004A9AF0–0x0063CF20 |
@@ -484,6 +484,7 @@
 | [classes/VectorClass_unsigned_long](../src/recovered/classes/VectorClass_unsigned_long/) | 7 | 439 | 6 | 0x00691440–0x006986A0 |
 | [classes/IPXConnClass](../src/recovered/classes/IPXConnClass/) | 9 | 438 | 9 | 0x00523B70–0x00523F90 |
 | [classes/UnknownTimed](../src/recovered/classes/UnknownTimed/) | 6 | 435 | 6 | 0x00496A70–0x00496C70 |
+| [classes/WorldDominationTour__CampaignProperties](../src/recovered/classes/WorldDominationTour__CampaignProperties/) | 9 | 432 | 9 | 0x0072D180–0x0072D320 |
 | [classes/DynamicVectorClass_SwizzlePointerClass](../src/recovered/classes/DynamicVectorClass_SwizzlePointerClass/) | 5 | 430 | 5 | 0x0069FDD0–0x006A0180 |
 | [classes/DynamicVectorClass_AITriggerTypeDistribution](../src/recovered/classes/DynamicVectorClass_AITriggerTypeDistribution/) | 3 | 425 | 3 | 0x006C0360–0x006C0790 |
 | [classes/DynamicVectorClass_BuildingTypeDistribution](../src/recovered/classes/DynamicVectorClass_BuildingTypeDistribution/) | 3 | 425 | 3 | 0x004F6E60–0x004F83F0 |
@@ -927,7 +928,6 @@
 | [classes/RLEBlitTransLucent50ZRead_unsigned_short](../src/recovered/classes/RLEBlitTransLucent50ZRead_unsigned_short/) | 2 | 287 | 2 | 0x00489F70–0x0048D390 |
 | [classes/DynamicVectorClass_DiscreteDistributionClass_CellClass___DistributionObject_CellClass_ptr](../src/recovered/classes/DynamicVectorClass_DiscreteDistributionClass_CellClass___DistributionObject_CellClass_ptr/) | 1 | 285 | 1 | 0x004CE820–0x004CE820 |
 | [classes/DynamicVectorClass_HashObject_unsigned_int_SubzoneConnectionStruct](../src/recovered/classes/DynamicVectorClass_HashObject_unsigned_int_SubzoneConnectionStruct/) | 2 | 285 | 2 | 0x0056C080–0x0056C180 |
-| [classes/WorldDominationTour__CampaignProperties](../src/recovered/classes/WorldDominationTour__CampaignProperties/) | 8 | 285 | 8 | 0x0072D180–0x0072D320 |
 | [classes/DynamicVectorClass_WaypointPathClass_ptr](../src/recovered/classes/DynamicVectorClass_WaypointPathClass_ptr/) | 4 | 283 | 4 | 0x00725370–0x00725A70 |
 | [classes/RLEBlitTransZRemapXlatZRead_unsigned_char](../src/recovered/classes/RLEBlitTransZRemapXlatZRead_unsigned_char/) | 2 | 278 | 2 | 0x004867E0–0x0048C930 |
 | [classes/MSSfxEntry](../src/recovered/classes/MSSfxEntry/) | 3 | 277 | 3 | 0x005B15B0–0x005B16D0 |
@@ -1170,6 +1170,7 @@
 | [classes/MultiplayerSyncCommandClass](../src/recovered/classes/MultiplayerSyncCommandClass/) | 1 | 67 | 1 | 0x0051D820–0x0051D820 |
 | [classes/SimpleWonlineDialogControl](../src/recovered/classes/SimpleWonlineDialogControl/) | 3 | 65 | 0 | 0x0073C000–0x0075D0A0 |
 | [classes/UnknownObjectPair](../src/recovered/classes/UnknownObjectPair/) | 1 | 65 | 1 | 0x005D4A60–0x005D4A60 |
+| [classes/ReferenceCounted](../src/recovered/classes/ReferenceCounted/) | 4 | 64 | 1 | 0x00639710–0x00639750 |
 | [classes/CursorPositionCommandClass](../src/recovered/classes/CursorPositionCommandClass/) | 3 | 59 | 3 | 0x0051D910–0x0051E060 |
 | [classes/WDTTerritory](../src/recovered/classes/WDTTerritory/) | 4 | 59 | 2 | 0x00727B70–0x0072C9D0 |
 | [header_statics/004b35a0](../src/recovered/header_statics/004b35a0/) | 1 | 59 | 1 | 0x004B35E0–0x004B35E0 |
@@ -1189,7 +1190,6 @@
 | [classes/OwnerDraw__DialogControl](../src/recovered/classes/OwnerDraw__DialogControl/) | 3 | 46 | 0 | 0x00601040–0x00601450 |
 | [classes/WorldDominationTour__GameOption](../src/recovered/classes/WorldDominationTour__GameOption/) | 3 | 46 | 3 | 0x00727DF0–0x00728680 |
 | [classes/WolLadderListCell](../src/recovered/classes/WolLadderListCell/) | 1 | 45 | 1 | 0x005DE940–0x005DE940 |
-| [classes/ReferenceCounted](../src/recovered/classes/ReferenceCounted/) | 3 | 44 | 0 | 0x00639710–0x00639750 |
 | [classes/DeleteCommandClass](../src/recovered/classes/DeleteCommandClass/) | 2 | 41 | 2 | 0x0051D9B0–0x0051E080 |
 | [classes/PageUserCommandClass](../src/recovered/classes/PageUserCommandClass/) | 2 | 41 | 2 | 0x0051D870–0x0051E040 |
 | [classes/FileClass](../src/recovered/classes/FileClass/) | 3 | 40 | 3 | 0x006386B0–0x006386D0 |
@@ -1259,7 +1259,7 @@
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 | [classes/UnknownAlphaTableCache_008315B8](../src/recovered/classes/UnknownAlphaTableCache_008315B8/) | 2 | 4 | 2 | 0x0041E3C0–0x0041E3D0 |
 
-1252 directories, 14769 regions. Generated by `tools/original_target/source_index.py`.
+1252 directories, 14772 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

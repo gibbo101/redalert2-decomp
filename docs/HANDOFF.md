@@ -19,9 +19,10 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes: Score144 (Opus) CampaignScoreClass 0x465BF0/0x466A50; Modem141 (Opus) WinModemClass
-0x734B30/0x734BC0; Base142 (Opus) BaseClass::Read_INI 0x42C460; Ref143 (Sonnet) small WDT members 0x729330,
-0x72D1F0, 0x730BE0, 0x639720. Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
+Running Mac lanes: Score144 (Opus) CampaignScoreClass 0x465BF0/0x466A50; Ref143 (Sonnet) small WDT members
+0x729330, 0x72D1F0, 0x730BE0, 0x639720; unit-sized: VoxAnim145 (Opus) the VoxelAnimClass unit; Air146 (Opus)
+AircraftClass's own members 0x4141C0/0x418840/0x4178A0. Modem141 (0x734B30/0x734BC0) and Base142 (Read_INI
+0x42C460; the Base unit is complete) landed. Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
 0x734CD0/0x735110. WDT136 (Campaign ctor 0x725F40) and Sink139 (OnLadderList 0x75D330) are misses in OPEN_MISSES.md.
 Landed 2026-10-28 evening: Map129, Obj126, Para131, Iso128, MSAnim133, Score132, IPX135 (Send_To), Base134
 (BaseClass ctor/Load/NoInit ctor). Near misses (OPEN_MISSES.md) go to the Windows lead; queue and drafts sent in

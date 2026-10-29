@@ -137,11 +137,19 @@ public:
 // A point member that starts at (0, 0) and takes INI points (the
 // Territory constructor zeroes its points as member constructors before
 // the shape name; the type's real name is unknown, perhaps TPoint2D<int>).
-struct TerritoryPoint : INIPoint2D {
+// Derives from Point2D so Get_Point's default argument binds to the member itself, and takes the
+// INIPoint2D it returns through the Point2D conversion (both members loaded before either is stored).
+struct TerritoryPoint : Point2D {
     TerritoryPoint()
     {
         X = 0;
         Y = 0;
+    }
+    TerritoryPoint &operator=(Point2D const &point)
+    {
+        X = point.X;
+        Y = point.Y;
+        return *this;
     }
 };
 
