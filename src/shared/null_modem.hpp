@@ -54,11 +54,13 @@ struct SerialCRCType {
 class NullModemConnClass : public ConnectionClass {
 public:
     NullModemConnClass(int numsend, int numreceive, int maxlen, unsigned short magicnum);   // 0x005CDB40
-    virtual ~NullModemConnClass() { delete SendBuf; }                   // scalar deleting 0x005CDCD0
+    virtual ~NullModemConnClass();                                      // 0x005CDB90 (scalar deleting 0x005CDCD0 inlines it)
     void Init(int port);                                                // 0x005CDBB0
     virtual void Init();                                                // slot 1 0x005CDCC0
     virtual int Send(char *buf, int buflen, void *extrabuf, int extralen, bool flagged, unsigned short id);   // slot 9 0x005CDBD0
     static int __fastcall Compute_CRC(char *buf, int buflen);           // 0x005CDC80 (rotating sum of the bytes)
+    // The bytes a packet carries for the serial link: the frame header, the CRC and the queue header (0x005CDCB0).
+    static int Packet_Overhead_Size();
     // A packet with its serial header, CRC and carriage return.
     int Actual_Max_Packet() { return MaxPacketLen + sizeof(SerialHeaderType) + sizeof(int) + sizeof(char); }
 
