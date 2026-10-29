@@ -11,7 +11,7 @@
 // @ref __imp__ShowWindow@8=0079a498
 // @ref ?unknown_lobby_flag_7e6d90@@3HA=007e6d90
 // @ref ?Send_Game_Options_005c3c60@@YIXPBD@Z=005c3c60
-// @ref ?Select_Scenario_005c7c30@@YIXH@Z=005c7c30
+// @ref ?Select_Scenario_005c7c30@@YI_NH@Z=005c7c30
 // @ref ?Get_Lobby_Dialog_005c2c40@@YAPAUHWND__@@XZ=005c2c40
 // @ref ?Current_Dialog_Id_00735b20@@YAHXZ=00735b20
 // @ref ?unknown_empty_wide_839d4c@@3QBGB=00839d4c

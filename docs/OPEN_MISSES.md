@@ -368,3 +368,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   and second Planning_Help(4) out of line), 0x617680 64.31 (Rect family), 0x614850 37.75 (first 612b50 inline, second
   called; needs 0x610770 and 0x613310 taken over from pops 1640/42), 0x6155E0 56.43, 0x615480 40.15, 0x6165A0 49.28.
   Exact supporting rewrites in v/ (0x611E20, 0x613A80, 0x611310, 0x61A8B0 operator== returning bool, 0x615FB0).
+- Modem units after Modem185 (build/class-work/Modem185/w, NOTES): guest Init_Dialog 0x596540 66.11 (this/GetDlgItem
+  pointer ebx/ebp swapped), guest Start_Game 0x5986F0 98.50 (TechLevel store eax/edx swapped), host Send_Options 0x59BC90
+  93.30 (last IsOfficial store load order). Host Dialog_Proc 0x598FA0 needs the chat chain form (Show_Chat leaf <-
+  Send_Chat(text) <- Send_Chat()); accepted host 0x59A880/0x59BFA0 are hand-expanded and may need rewriting.

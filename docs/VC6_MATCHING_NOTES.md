@@ -618,3 +618,11 @@ verified on the target.
   `unsigned IsX:1` bitfields where RA2's are `int` members and `bool` returns (see
   Types). `Percent_Chance`, `Random_Pick` and `Sim_Random_Pick` are inline wrappers in
   INLINE.H over the scenario and simulation generators.
+
+## Dialog chains (Modem185)
+
+- Chat chain: write the leaf (Show_Chat), a caller with text (Send_Chat(text) calls Show_Chat) and the parameterless
+  wrapper (Send_Chat() calls Send_Chat(text)); the dialog proc only gets the original's inline set in that form.
+- A helper the original keeps out of line stays out when written with an explicit if/else into a local, while the
+  same logic through a small inline accessor gets auto-inlined (Read_Color 0x597xxx vs Player_Color_RGB).
+- Each checksum test written as clearing a `match` flag then `if (!match)` reproduces the original's branch layout.
