@@ -380,7 +380,7 @@ struct UnknownSessionState {
     unsigned char Unknown_00672F10();       // 0x00672F10 (+0x3080)
     int Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)
     bool Unknown_006728D0(int color);       // 0x006728D0 (whether a player or computer slot already has the colour; -2 never)
-    void Unknown_00672980();                // 0x00672980 (a random colour not in use)
+    int Unknown_00672980();                 // 0x00672980 (a random colour not in use; returns it)
 };
 extern UnknownSessionState unknown_session_a3d298;
 // Two flags (0x00A3F120 for game mode 3, 0x00A3F121 for mode 4: session +0x1E88/+0x1E89; a received
