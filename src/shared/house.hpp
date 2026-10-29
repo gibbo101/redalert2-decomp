@@ -200,7 +200,7 @@ public:
     virtual void AI();                                                  // 0x004E4110 slot 23
 
     float Cost_Multiplier(TechnoTypeClass const *type);    // 0x004F5960
-    bool Unknown_004F52B0();                               // 0x004F52B0 (TechnoClass slots 24, 38, 39, 80)
+    bool Unknown_004F52B0();                               // 0x004F52B0 (TechnoClass slots 24, 38, 39, 80; ObjectClass slot 80 tests al; local player or human flag)
     bool Unknown_004F52F0();                               // 0x004F52F0
     float Unknown_004F5B30();                              // 0x004F5B30 (a float of the owner type, +0x148; UnitClass 0x00707130 scales the load value by it)
     void Unknown_004E5280(int amount);                      // 0x004E5280 (spends credits; TechnoClass slot 95 repair)
@@ -231,7 +231,6 @@ public:
     void unknown_4ea800(TechnoClass *techno);              // 0x004EA800 (AircraftClass/InfantryClass destructors)
     void unknown_4ea970(TechnoClass *techno);              // 0x004EA970 (AircraftClass::Init)
     void unknown_func_4f4b20();                            // 0x004F4B20 (BuildingClass destructor, for a building with a usable super weapon)
-    bool unknown_func_4f52b0();                            // 0x004F52B0 (hypothesis; ObjectClass slot 80 tests al)
     // The first unit type of the list this house can own (0x004EF6F0; the
     // multiplayer base unit from Rules BaseUnit, Create_Units 0x00660320).
     UnitTypeClass *Unknown_004EF6F0(TypeList<UnitTypeClass *> const &list);

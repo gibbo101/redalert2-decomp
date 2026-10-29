@@ -182,3 +182,14 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Infantry 0x505390), slot 182 0x704730 59.71 (this/facing edi/ebp swap, frame 0x38 vs 0x34). Not drafted:
   slot 131 Mission_Harvest 0x7025A0 (seed s7025a0.cpp), slot 101 0x703040, slot 137 0x701580, 0x707F60.
   Slot 87's ad0488/ad04c0/ad0588 externs and the 0x79B628/0x79B630 facing constants still want a shared header.
+- BulletClass shrapnel 0x462C50 (2757+11 B, ret at 0x463714; plan needs body_bytes) 49.25 (Bullet151
+  best/s462c50_49.25.cpp with hdr2/ inline BulletVelocity API; codex1 66.76): the targeted loop calls the four
+  Length helpers out of line, the later random loop expands all but XY().Length; waits on Study152. AI 0x45F710
+  not started. Score Bullet drafts inside the whole unit (Bullet151 mkwhole.py).
+- UnitClass group 1 (Unit147 w/, NOTES): slot 86 0x6FCA30 98.08 (crate 0x5502E0 call registers; retry with the
+  new Point2D(1, 1) argument), idle 0x6FBF40 96.02 (cell sum operand order), slot 67 Draw_It 0x700E70 84.52
+  (frame overlap; needs slot 310/311 `void (int, int, Rect, int)` and TechnoClass::unknown_6cc020), slot 312
+  0x6FF3E0 66.67 (needs a rename spec), slot 93 0x6FE610 codex4 draft does not compile and has a comma-expression
+  steering construct. Not drafted: 0x6FDFC0, 0x6FF690, 0x7005B0, 0x6FAA30. Cell::unknown_42add0 is an inline
+  member standing for 0x42ADD0 (naming hypothesis). Unit statics 0xAD0488/0xAD04C0/0xAD057C are the header
+  statics unknown_geometry_k/_l/_j.
