@@ -428,3 +428,13 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   store after the first Who_Can_Build_Me test, default-case `xor esi,esi` not jump-threaded), 0x4F3F40 95.45 (SIB
   operand order at four sites), 0x4E76A0 needs a rename (void->bool, int arg->bool, +0x5308 AbstractClass*).
   Zone map +0x5640..+0x5654 and cell array +0x15F44 missing from house.hpp (needed by 0x4F02E0, 0x4F1190).
+- Session.CPP after Session200 (build/class-work/Session200/w, NOTES): MultiMission(INIClass &, section) 0x671670 93.82
+  (1496 B, inventory 650; two Wstring frame slots swapped; needs INIClass::Get_Wide_String 0x50F010 declared),
+  0x672440 85.89 (original keeps not/dec/add 0x20 for new char[strlen+0x20]; VC6 folds ours to add 0x1F; squad
+  strings 0xB2A820/0xB293D8 mistyped bool in unknown_globals.hpp), Set_Official real entry 0x6720B0 (13 B; inventory
+  row starts on the nop at 0x6720AF: needs an inventory bound correction). Undrafted 0x673090, ctor 0x66E380, dtor 0x66EB20.
+- UICmnds.cpp after UICmnds202 (zero bytes; build/class-work/UICmnds202, NOTES CORRECTION): 0x6F7B80 and 0x6F7EC0 are
+  exact only when the list builders 0x6F6AD0/0x6F69F0 are declaration-only; in the whole-population TU VC6 expands
+  them at these first call sites (7B80 grows to 752 B). The original expands them in 0x6F79C0/0x6F7800/0x6F7020/
+  0x6F71E0 but calls them here: explain with the Study152 depth-first budget (VC6_MATCHING_NOTES) in the full plan TU.
+  0x6F79C0 53.70 (registers). True ends: 0x6F7360 682 B (ret 0x6F7609), 0x6F6D00 to 0x6F6FD4, 0x6F81B0 >= 741 B.

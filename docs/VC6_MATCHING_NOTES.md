@@ -634,3 +634,10 @@ verified on the target.
   instead of a folded `[eax+0xC]`), keeps the dead `lea` of `(*cursor)->f()`, and charges inline budget, which is
   why operator-> COMDAT copies exist. Get() keeps the plain body; code the original compiles without the test reads
   through Get() (State ctor 0x730830). WDTSel unit: 17/19 drafts exact with it, 11/19 without.
+
+## Out-of-line base vector constructors (Session200)
+
+- When the original expands TypeList/DynamicVectorClass constructors inline but calls the VectorClass base
+  constructor out of line, declare the VectorClass constructor without a definition in scope and define only the
+  derived constructors inline as explicit specializations; any generic definition in scope (even after the caller)
+  makes VC6 inline it. The out-of-line copy is its own row (0x674AF0 VectorClass<Wstring>).
