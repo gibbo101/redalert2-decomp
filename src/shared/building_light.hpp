@@ -40,11 +40,7 @@ class BuildingLightClass : public ObjectClass {
 public:
     BuildingLightClass(TechnoClass *owner);                         // 0x00432FC0
     BuildingLightClass(NoInitClass const &noinit) : ObjectClass(noinit) {}   // (inlined into Load)
-    virtual ~BuildingLightClass()                                   // (inlined into 0x00434850)
-    {
-        unknown_slot52();
-        BuildingLights.Delete(this);
-    }
+    virtual ~BuildingLightClass();                                  // 0x004332F0 (also inlined into 0x00434850)
 
     void unknown_func_4341d0(TechnoClass *object);                  // 0x004341D0
     void Set_Behavior(int behavior);                                // 0x00434370 (name hypothesis)
