@@ -411,6 +411,8 @@ bool __fastcall Answer_Query_005c05f0(UnknownGlobalPacket *packet, IPXAddressCla
 // the host for it (0x0066AEF0); both hypotheses.
 bool __fastcall Find_Local_Scenario_0066c5b0(char *filename, int length, char *digest, bool official, bool unknown);
 bool __fastcall Unknown_0066aef0(char *filename, int unknown_1, bool unknown_2);
+// Sends a file to the other player ("Send_Remote_File" in the modem host's preview upload; 0x0066BB20).
+bool __fastcall Send_Remote_File_0066bb20(char const *filename, int unknown_1, int unknown_2, int unknown_3);
 // A joiner's start of the game: the scenario is found or fetched (NET_READY_TO_GO 0x13 to the host),
 // the IPX timing is set from the response time; otherwise TXT_UNABLE_PLAY_WAAUGH and a sign-off
 // (0x005BE3B0; from Red Alert's Net_Join_Dialog).

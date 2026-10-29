@@ -15,6 +15,7 @@ public:
     void Write_INI_0061DC80(CCINIClass &ini);       // 0x0061DC80
     void Draw_0061D460(HWND window);                // 0x0061D460 (paints the preview into the dialog)
     void Load_0061E170(char const *name);           // 0x0061E170 (loads a preview image file; the lobby passes RandMap.img)
+    unsigned short *Unknown_0061E490(int unknown, int *size);  // 0x0061E490 (the preview image and its size; ModemHost 0x0059C8B0)
     void Unknown_0061E930(unsigned short const *image);    // 0x0061E930 (makes the preview from a decompressed image; ModemGuest 0x005989B0)
     bool Is_Present() const { return unknown_00 != 0; }   // inline (Write_Scenario_INI)
 

@@ -6,6 +6,7 @@
 #include "shared/buffer.hpp"
 class BufferPipe : public Pipe {
 public:
+    BufferPipe(void *buffer, int length) : Storage(buffer, length), Position(0) {}
     virtual int Put(void const *source,int length);
 private:
     Buffer Storage; // +0x0C: pointer/size/ownership from real Buffer
