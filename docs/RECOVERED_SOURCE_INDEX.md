@@ -209,6 +209,7 @@
 | [classes/BrainClass](../src/recovered/classes/BrainClass/) | 7 | 1,023 | 7 | 0x00437BC0–0x00438050 |
 | [classes/SHAEngine](../src/recovered/classes/SHAEngine/) | 4 | 1,006 | 4 | 0x00674BF0–0x00674E60 |
 | [classes/Unknown84E8D0](../src/recovered/classes/Unknown84E8D0/) | 6 | 1,002 | 6 | 0x0042D960–0x0042EFD0 |
+| [classes/MSShapeAnim](../src/recovered/classes/MSShapeAnim/) | 9 | 999 | 8 | 0x005AC6A0–0x005AFCC0 |
 | [classes/VectorClass_AnimTypeClass_ptr](../src/recovered/classes/VectorClass_AnimTypeClass_ptr/) | 15 | 987 | 13 | 0x004D5600–0x006534D0 |
 | [classes/VectorClass_BuildingTypeClass_ptr](../src/recovered/classes/VectorClass_BuildingTypeClass_ptr/) | 15 | 987 | 13 | 0x004D54E0–0x006530E0 |
 | [classes/VectorClass_SmudgeTypeClass_ptr](../src/recovered/classes/VectorClass_SmudgeTypeClass_ptr/) | 15 | 987 | 13 | 0x004D5420–0x006549B0 |
@@ -268,6 +269,7 @@
 | [classes/VQMovieHandle](../src/recovered/classes/VQMovieHandle/) | 13 | 725 | 13 | 0x005A17B0–0x005A1F00 |
 | [classes/CRCEngine](../src/recovered/classes/CRCEngine/) | 3 | 720 | 3 | 0x00493DF0–0x00493FC0 |
 | [classes/RocketLocomotionClass](../src/recovered/classes/RocketLocomotionClass/) | 12 | 711 | 12 | 0x0063DAC0–0x0063ED40 |
+| [classes/MSOverlayAnim](../src/recovered/classes/MSOverlayAnim/) | 5 | 709 | 4 | 0x005AD370–0x005AFD60 |
 | [classes/MSBinkAnim](../src/recovered/classes/MSBinkAnim/) | 8 | 705 | 8 | 0x005AD8E0–0x005AFDB0 |
 | [classes/VectorClass_DirtyAreaStruct](../src/recovered/classes/VectorClass_DirtyAreaStruct/) | 7 | 703 | 5 | 0x006AC8D0–0x006ACFC0 |
 | [classes/CounterClass](../src/recovered/classes/CounterClass/) | 9 | 696 | 8 | 0x00491C00–0x00491F00 |
@@ -275,7 +277,6 @@
 | [classes/VectorClass_HashObject_HashString_SchemeNode_ptr](../src/recovered/classes/VectorClass_HashObject_HashString_SchemeNode_ptr/) | 7 | 695 | 6 | 0x00605810–0x00605E30 |
 | [classes/LZOStraw](../src/recovered/classes/LZOStraw/) | 4 | 675 | 4 | 0x0053EFB0–0x0053F220 |
 | [address_offsets](../src/recovered/address_offsets/) | 25 | 674 | 25 | 0x0042AE90–0x0076D5E0 |
-| [classes/MSShapeAnim](../src/recovered/classes/MSShapeAnim/) | 8 | 668 | 7 | 0x005AC6A0–0x005AFCC0 |
 | [classes/VectorClass_SwizzlePointerClass](../src/recovered/classes/VectorClass_SwizzlePointerClass/) | 8 | 667 | 8 | 0x0069FE20–0x006A01D0 |
 | [classes/CDownloadEventSink](../src/recovered/classes/CDownloadEventSink/) | 7 | 664 | 7 | 0x007668A0–0x00766B20 |
 | [classes/DynamicVectorClass_TechnoTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TechnoTypeClass_ptr/) | 9 | 661 | 7 | 0x0046CCE0–0x006DFA70 |
@@ -328,6 +329,7 @@
 | [classes/VectorClass_OwnerTalkClass__ConnectionListStruct_ptr](../src/recovered/classes/VectorClass_OwnerTalkClass__ConnectionListStruct_ptr/) | 8 | 545 | 6 | 0x0063F0C0–0x006401D0 |
 | [classes/RLEBlitTransLucent50AlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransLucent50AlphaZReadWrite_unsigned_short/) | 2 | 544 | 1 | 0x0048C3D0–0x0048D8F0 |
 | [classes/DynamicVectorClass_WaypointClass](../src/recovered/classes/DynamicVectorClass_WaypointClass/) | 5 | 543 | 5 | 0x007252D0–0x00725800 |
+| [classes/MSFadeAnim](../src/recovered/classes/MSFadeAnim/) | 3 | 543 | 3 | 0x005ACDB0–0x005AFD10 |
 | [classes/GdiBitmapSurface_004981C0](../src/recovered/classes/GdiBitmapSurface_004981C0/) | 3 | 536 | 3 | 0x004981C0–0x004983A0 |
 | [classes/BlitTranslucentWriteAlpha_unsigned_short](../src/recovered/classes/BlitTranslucentWriteAlpha_unsigned_short/) | 2 | 533 | 2 | 0x004884C0–0x0048CEB0 |
 | [classes/RLEBlitTransZRemapXlatAlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransZRemapXlatAlphaZReadWrite_unsigned_short/) | 2 | 527 | 1 | 0x0048C020–0x0048D870 |
@@ -538,7 +540,6 @@
 | [classes/BlitTransLucent50AlphaZReadWarp_unsigned_short](../src/recovered/classes/BlitTransLucent50AlphaZReadWarp_unsigned_short/) | 3 | 366 | 1 | 0x00488FA0–0x0048D090 |
 | [classes/VectorClass_WaypointPathClass_ptr](../src/recovered/classes/VectorClass_WaypointPathClass_ptr/) | 6 | 366 | 6 | 0x007253C0–0x007259A0 |
 | [classes/VectorClass_char_const_ptr](../src/recovered/classes/VectorClass_char_const_ptr/) | 6 | 366 | 6 | 0x005A2010–0x005A2180 |
-| [classes/MSOverlayAnim](../src/recovered/classes/MSOverlayAnim/) | 4 | 363 | 3 | 0x005AD370–0x005AFD60 |
 | [classes/BlitTransLucent50AlphaZRead_unsigned_short](../src/recovered/classes/BlitTransLucent50AlphaZRead_unsigned_short/) | 3 | 360 | 1 | 0x00488BF0–0x0048CFD0 |
 | [classes/RLEBlitTransLucent25Alpha_unsigned_short](../src/recovered/classes/RLEBlitTransLucent25Alpha_unsigned_short/) | 2 | 360 | 1 | 0x0048AF90–0x0048D5F0 |
 | [classes/RLEBlitTransLucent75Alpha_unsigned_short](../src/recovered/classes/RLEBlitTransLucent75Alpha_unsigned_short/) | 2 | 360 | 1 | 0x0048AD30–0x0048D570 |
@@ -978,7 +979,6 @@
 | [classes/SelectTeamCommandClass](../src/recovered/classes/SelectTeamCommandClass/) | 7 | 204 | 4 | 0x0051B260–0x0051B330 |
 | [classes/DynamicVectorClass_FoggedObjectClass__DrawRecord](../src/recovered/classes/DynamicVectorClass_FoggedObjectClass__DrawRecord/) | 4 | 196 | 2 | 0x004C20A0–0x004C24D0 |
 | [classes/GetCDClass](../src/recovered/classes/GetCDClass/) | 1 | 194 | 1 | 0x004D2940–0x004D2940 |
-| [classes/MSFadeAnim](../src/recovered/classes/MSFadeAnim/) | 2 | 194 | 2 | 0x005ACDB0–0x005AFD10 |
 | [classes/CCToolTip](../src/recovered/classes/CCToolTip/) | 4 | 193 | 3 | 0x0046E1D0–0x00738420 |
 | [classes/FilePipe](../src/recovered/classes/FilePipe/) | 4 | 192 | 4 | 0x0046CBD0–0x007737F0 |
 | [classes/UnknownComPtr_ILocomotion](../src/recovered/classes/UnknownComPtr_ILocomotion/) | 3 | 192 | 3 | 0x0041B650–0x00509830 |
@@ -1260,7 +1260,7 @@
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 | [classes/UnknownAlphaTableCache_008315B8](../src/recovered/classes/UnknownAlphaTableCache_008315B8/) | 2 | 4 | 2 | 0x0041E3C0–0x0041E3D0 |
 
-1253 directories, 14799 regions. Generated by `tools/original_target/source_index.py`.
+1253 directories, 14802 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
