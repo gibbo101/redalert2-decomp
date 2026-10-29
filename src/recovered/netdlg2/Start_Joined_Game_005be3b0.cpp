@@ -12,7 +12,7 @@
 // @ref ??_C@_0DA@FCOD@Failed?5to?5find?5local?5scenario?0?5f@=007e6bc0
 // @ref ??_C@_0DD@CJFE@IPX?4Global_Response_Time?$CI?$CJ?5?$DN?$DN?5?$CFd@=007e6bf0
 // @ref ?Find_Local_Scenario_0066c5b0@@YI_NPADH0_N1@Z=0066c5b0
-// @ref ?Unknown_0066aef0@@YI_NPADH_N@Z=0066aef0
+// @ref ?Get_File_From_Host_0066aef0@@YI_NPADH_N@Z=0066aef0
 // @ref ?Unknown_00672140@UnknownSessionState@@QAE_NXZ=00672140
 // @ref ?unknown_chat_a3fa4c@@3V?$DynamicVectorClass@PAUNodeNameType@@@@A=00a3fa4c
 // @ref ?unknown_session_a3d298.ScenarioDigest_85a@@3PADA=00a3daf2
@@ -39,7 +39,7 @@ bool __fastcall Start_Joined_Game_005be3b0()
     } else {
         Debug_Printf("Failed to find local scenario, file name is %d\n", unknown_session_a3d298.ScenarioFileName_658);
         if ((unknown_session_a3d298.ScenarioIsOfficial_880 && !unknown_session_a3d298.Unknown_00672140())
-            || !Unknown_0066aef0(unknown_session_a3d298.ScenarioFileName_658, 3, true)) {
+            || !Get_File_From_Host_0066aef0(unknown_session_a3d298.ScenarioFileName_658, 3, true)) {
             unknown_session_a3d2b4 = -1;
             WWMessageBox(L" ").Process(StringTable::Load_String("TXT_UNABLE_PLAY_WAAUGH", 0, "D:\\Ra2\\netdlg2.cpp", 678),
                 StringTable::Load_String("TXT_OK", 0, "D:\\Ra2\\netdlg2.cpp", 678), 0, 0, false);

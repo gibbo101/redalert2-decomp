@@ -673,3 +673,10 @@ verified on the target.
 - (TAction211) A coordinate built through an inline `XYZ_Coord(x, y, z)` evaluates its arguments right to left
   (Z, Y, X) like any call; that, with `Cell spot = waypoint - Cell(size / 2, size / 2)`, reproduces the original's
   "Cell temporary" order in the reveal actions.
+
+## Static over-the-cap functions count as pending sites (Queue220)
+
+- In the Study152 budget, a later `static` function in the unit whose size is over the auto-inline cap still counts
+  in W (a pending candidate site) at its call; an external function of any size does not, and a small external one
+  is simply inlined. Queue_AI 0x623770 is exact only with Queue_AI_Multiplayer 0x623B00 defined `static` in the unit
+  (as in Red Alert's QUEUE.CPP): land them together.

@@ -27,7 +27,7 @@
 // @ref ??_C@_0M@CNHP@Preview?4bin?$AA@=007e2720
 // @ref ??_C@_0M@FDHG@RandMap?4Sed?$AA@=007e16e8
 // @ref ?Compare_Narrow_00781f20@@YAHPBD0@Z=00781f20
-// @ref ?Send_Remote_File_0066bb20@@YI_NPBDHHH@Z=0066bb20
+// @ref ?Send_Remote_File_0066bb20@@YI_NPBDH_N1@Z=0066bb20
 // @ref ?Service_Game_IO_00481fb0@@YIXXZ=00481fb0
 // @ref ?Unknown_0061E490@UnknownPreview_0061D430@@QAEPAGHPAH@Z=0061e490
 // @ref ?serial_manager_00a40a28@@3VNullModemClass@@A=00a40a28

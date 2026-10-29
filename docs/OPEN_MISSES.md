@@ -503,3 +503,18 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   latency timer ctor inlines; original calls 0x4DE1E0), LdPrgMgr 0x5359E0 61.74 / 0x535AB0 69.16 (registers), WorldDom
   Mouse_Move 0x768840 64.00 (soviet block before allied). Startup.CPP is WinMain 0x68E280 (~10 KB, EH frame) and shutdown
   0x6909E0 (2345 B): each needs its own lane. LdPrgMgr 0x535BF0 is one 3978 B function (inventory splits it).
+- Init.CPP after Init219 (build/class-work/Init219, NOTES, d/r2-blocked): 0x5173C0 command registration (7807 B) and four
+  template rows (DVC<CommandClass const *>::Add 0x51E360, IndexClass<int,CommandClass*> Add_Index/Remove_Index/Is_Present)
+  are exact only with wwlib VECTOR.H's `T & operator[](int)` and `(*this)[ActiveCount++] = object` in Add; that header
+  change makes WDT Conflict::Init_Options 0x727480 inline rc_ptr<FlagGameOption>'s dtor and the build fails: needs a
+  whole-tree impact study (lane Vector223). Select_Game 0x5135F0 is 4516 B with a 40-entry table (inventory stops before
+  it); Init_Game 0x5116A0 (4420) not drafted.
+- Skirmish.cpp after Skirmish222 (zero bytes; build/class-work/Skirmish222/misses, NOTES, score in the unit with sc.sh):
+  0x683FC0 97.43 (shape 100; the slot loop's strength-reduced pointer starts at Slots[1][1] in the original, ours at
+  Slots[1][0]), 0x6829F0 78.89 (the original calls Skirmish_Is_Computer 0x6836B0 in the player-type case; ours inlines it).
+  LdPrgMgr 0x535BF0 (3978 B) not started (disassembly Small218/o_535bf0.s).
+- Queue.CPP after Queue220 (build/class-work/Queue220, NOTES): 0x62DBA0 sync writer exact in the whole TU (d/r1) but
+  check_plans refuses "Unsupported allocatable data section ... ??_C@_02JOHD@No?$AA@" although the "No"/"Yes" @refs match
+  accepted 0x516C40 - cause unknown (fallback: extern char arrays as 0x482FE0 does). Queue_AI 0x623770 exact only with
+  static Queue_AI_Multiplayer 0x623B00 (3355) in the unit plus the Next 0x62E9E0 seed take-over (pop-42).
+  Extract_Compressed_Events 0x6282D0 43.24 (registers/frame), 0x629220 82.05.

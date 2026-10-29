@@ -34,7 +34,7 @@
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410
-// @ref ?Unknown_0066aef0@@YI_NPADH_N@Z=0066aef0
+// @ref ?Get_File_From_Host_0066aef0@@YI_NPADH_N@Z=0066aef0
 
 void ModemGuest::Receive_Preview_005989b0()
 {
@@ -52,7 +52,7 @@ void ModemGuest::Receive_Preview_005989b0()
     Debug_Printf("Preview mode ack sent\n");
     Debug_Printf("Calling Get_File_From_Host to receive the file download\n");
     char filename[256];
-    if (!Unknown_0066aef0(filename, 1, false)) {
+    if (!Get_File_From_Host_0066aef0(filename, 1, false)) {
         Debug_Printf("got_file is false. Download failed\n");
         return;
     }

@@ -416,12 +416,15 @@ extern char unknown_a71bc4[];
 // then the lobby state when the query names the first player); whether the packet was one of
 // them (0x005C05F0; from Red Alert's Process_Global_Packet).
 bool __fastcall Answer_Query_005c05f0(UnknownGlobalPacket *packet, IPXAddressClass *address);
-// Looks for the scenario among the local maps (0x0066C5B0; Red Alert's Find_Local_Scenario) and asks
-// the host for it (0x0066AEF0); both hypotheses.
+// Looks for the scenario among the local maps (0x0066C5B0; Red Alert's Find_Local_Scenario).
 bool __fastcall Find_Local_Scenario_0066c5b0(char *filename, int length, char *digest, bool official, bool unknown);
-bool __fastcall Unknown_0066aef0(char *filename, int unknown_1, bool unknown_2);
-// Sends a file to the other player ("Send_Remote_File" in the modem host's preview upload; 0x0066BB20).
-bool __fastcall Send_Remote_File_0066bb20(char const *filename, int unknown_1, int unknown_2, int unknown_3);
+// Asks the host for its file (gametype 1 and 2: the modem, else the network), receives the file
+// info into return_name and the file through Receive_Remote_File; with progress set the transfer
+// shows the progress screen (0x0066AEF0; its traces name it Get_File_From_Host).
+bool __fastcall Get_File_From_Host_0066aef0(char *return_name, int gametype, bool progress);
+// Sends a file to the clients: the file info to every other player (to_players) or to the session's
+// scenario requests, then the file in 192-byte chunks (0x0066BB20; Red Alert's Send_Remote_File).
+bool __fastcall Send_Remote_File_0066bb20(char const *file_name, int gametype, bool to_players, bool progress);
 // A joiner's start of the game: the scenario is found or fetched (NET_READY_TO_GO 0x13 to the host),
 // the IPX timing is set from the response time; otherwise TXT_UNABLE_PLAY_WAAUGH and a sign-off
 // (0x005BE3B0; from Red Alert's Net_Join_Dialog).

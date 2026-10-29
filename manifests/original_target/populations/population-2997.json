@@ -4,8 +4,8 @@
     "id": "population-2997",
     "inventory_sha256": "7a8ca258f1220ced3c475e882b4474540b93e82eeca430e509b0e61bcf8074c9",
     "gaps_sha256": "035b2e7ead20516934fec27025a9806f490fe27fd73be33002dd501a7fc813ef",
-    "historical_population_sha256": "7e156dcf3245eb463d8d18f054443e7fe6dcc7bec23310ee0309ce766ffdc89d",
-    "historical_acceptance_sha256": "486ae01f52dcf2c2139c93a2e8847de7727435529eabe4c4dc4930fc5fc2b2b5"
+    "historical_population_sha256": "3c61ce76109bbc22d20c772fa103f321364c84113bd0b4b77df7026a86e1353c",
+    "historical_acceptance_sha256": "16ed8d9293f068d42e4603f7dc075898944d4be12ea751cab8c4b3486ab4658e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9471,7 +9471,7 @@
     "?Get_Serial_005bce90@@YI_NPAD@Z": 6016656,
     "?Start_Joined_Game_005be3b0@@YI_NXZ": 6022064,
     "?Find_Local_Scenario_0066c5b0@@YI_NPADH0_N1@Z": 6735280,
-    "?Unknown_0066aef0@@YI_NPADH_N@Z": 6729456,
+    "?Get_File_From_Host_0066aef0@@YI_NPADH_N@Z": 6729456,
     "?Send_Chat_Message_005bee20@@YIXPAUHWND__@@HH@Z": 6024736,
     "?unknown_join_state_a71e94@@3HA": 10952340,
     "?Options_Dialog_Proc_005bf9b0@@YGJPAUHWND__@@IIJ@Z": 6027696,
@@ -9486,7 +9486,7 @@
     "?unknown_session_a40d04@@3_NA": 10751236,
     "?Clip_Version_00713170@UnknownVersionObject@@QAEHKK@Z": 7418224,
     "?Version_Protocol_00713130@UnknownVersionObject@@QAEHH@Z": 7418160,
-    "?Send_Remote_File_0066bb20@@YI_NPBDHHH@Z": 6732576,
+    "?Send_Remote_File_0066bb20@@YI_NPBDH_N1@Z": 6732576,
     "?Download_Map_Preview_005c7970@@YIXXZ": 6060400,
     "?Set_Slot_Names_005c8dd0@@YIXPBG@Z": 6065616,
     "?Init_Network_005bc460@@YA_NXZ": 6014048,

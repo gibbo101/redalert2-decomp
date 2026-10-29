@@ -58,7 +58,7 @@ void __fastcall Download_Map_Preview_005c7970()
     unknown_address_a3f80c = unknown_address_a3db2c;
     Debug_Printf("Calling Get_File_From_Host to receive the file download\n");
     char filename[256];
-    if (!Unknown_0066aef0(filename, 3, false)) {
+    if (!Get_File_From_Host_0066aef0(filename, 3, false)) {
         Debug_Printf("got_file is false. Download failed\n");
         unknown_ipx_manager_a40978.Set_Timing(30, -1, 600, true);
         return;

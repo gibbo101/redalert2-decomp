@@ -63,7 +63,7 @@
 // @ref ??_C@_13ECNF@?$AA?5?$AA?$AA@=007d64f4
 // @ref ?Find_Local_Scenario_0066c5b0@@YI_NPADH0_N1@Z=0066c5b0
 // @ref ?Show_Chat_00598510@ModemGuest@@QAEXPBGH0@Z=00598510
-// @ref ?Unknown_0066aef0@@YI_NPADH_N@Z=0066aef0
+// @ref ?Get_File_From_Host_0066aef0@@YI_NPADH_N@Z=0066aef0
 // @ref ??_C@_13ECNF@?$AA?5?$AA?$AA@=007d64f4
 
 bool ModemGuest::Process_Messages_00597680()
@@ -154,7 +154,7 @@ bool ModemGuest::Process_Messages_00597680()
                 ReceiveTime = TickCount.Time();
                 return true;
             } else {
-                if (!Unknown_0066aef0(unknown_session_a3d298.ScenarioFileName_658, 1, false)) {
+                if (!Get_File_From_Host_0066aef0(unknown_session_a3d298.ScenarioFileName_658, 1, false)) {
                     return true;
                 }
                 ReceiveTime = TickCount.Time();
