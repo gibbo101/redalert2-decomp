@@ -422,6 +422,19 @@ extern bool unknown_flags_a3f118[8];
 extern int unknown_a40770;                      // 0x00A40770 (cleared before the houses are read)
 extern bool unknown_a40d39;                     // 0x00A40D39 (game mode 5 reads TMCJ4F.INI)
 extern bool unknown_7df630;                     // 0x007DF630 (false while the buildings are read)
+// Cleared when the event queue is full; Init_Random keeps the seed while it is set
+// (0x00A3D8C8; moved from shared/queue.hpp).
+extern int unknown_a3d8c8;
+// The game's random seed and the one the command line asks for (0x00A40D3C and
+// 0x00A40D40; Red Alert's Seed and CustomSeed; Init_Random 0x00515710).
+extern unsigned int Seed;
+extern unsigned int CustomSeed;
+// Records the side for the interface (stores it at 0x00AD0958; 0x007168C0).
+void __fastcall Unknown_007168C0(int side);
+// Called by Unknown_0051a330 before the side colour is chosen (0x006F44D0).
+void Unknown_006F44D0();
+// Copies one of two colours (0 or else) into the interface colour (0x006F45A0).
+void __fastcall unknown_select_color(int which);
 void __fastcall Init_Theater_00519e70(int theater);         // 0x00519E70
 bool __fastcall Unknown_0051a330(int side);                 // 0x0051A330 (side 0 allied, 1 soviet; false fails the scenario)
 // TacticalClass: a height (leptons) as screen pixels (0x006A2970, __fastcall;

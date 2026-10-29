@@ -208,6 +208,8 @@ struct SYSTEMTIME {
     WORD wMilliseconds;
 };
 WIN32_IMPORT BOOL WINAPI FileTimeToSystemTime(FILETIME const *file_time, SYSTEMTIME *system_time);
+WIN32_IMPORT void WINAPI GetSystemTime(SYSTEMTIME *system_time);
+WIN32_IMPORT DWORD WINAPI GetTickCount();
 
 // Input method editor (IMM32, called through the import thunks 0x00781C20-0x00781C32).
 typedef struct HIMC__ *HIMC;

@@ -49,6 +49,16 @@ extern MixFileClass<CCFileClass> *ThemeMix;    // 0x00831448 THEME.MIX
 extern MixFileClass<CCFileClass> *MultiMix;    // 0x00837498 MULTI.MIX
 extern MixFileClass<CCFileClass> *MapsMix;     // 0x008374F4 MAPS%02d.MIX
 extern MixFileClass<CCFileClass> *MainMix;     // 0x008374DC MAIN.MIX
+// The side's archives Unknown_0051a330 releases and opens: one released only (0x008374F8),
+// SIDEC%02d.MIX (0x00837500) and SIDENC%02d.MIX (0x00837504).
+// The archives Init_Bootstrap_Mixfiles opens: RA2.MIX (0x008374B8), CACHE.MIX (0x008374E8)
+// and LOCAL.MIX (0x008374EC).
+extern MixFileClass<CCFileClass> *unknown_ra2_mix_8374b8;
+extern MixFileClass<CCFileClass> *unknown_cache_mix_8374e8;
+extern MixFileClass<CCFileClass> *unknown_local_mix_8374ec;
+extern MixFileClass<CCFileClass> *unknown_mix_8374f8;
+extern MixFileClass<CCFileClass> *unknown_side_mix_837500;
+extern MixFileClass<CCFileClass> *unknown_side_nc_mix_837504;
 extern MixFileClass<CCFileClass> *unknown_mix_8374f0;   // 0x008374F0 (released by 0x0051A270, reopened by 0x0051A2B0)
 // The expansion mixfiles Init_Expansion_Files opens (0x00837450).
 extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_expansion_mixes_837450;

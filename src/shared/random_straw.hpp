@@ -32,4 +32,7 @@ private:
     void Scramble_Seed();                               // 0x0063D790
 };
 
+// The generator Init_Random seeds from the system time (0x00A40778; Red Alert's CryptRandom).
+extern RandomStraw CryptRandom;
+
 #endif
