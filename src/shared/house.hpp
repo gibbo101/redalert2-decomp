@@ -594,7 +594,7 @@ public:
     FixedString<32> unknown_15ef5;                        // +0x15EF5 (a name; empty when made)
     wchar_t UIName[21];                                   // +0x15F16 (the type's UIName)
     int ColorSchemeIndex;                                 // +0x15F40 (hypothesis; BulletClass inherits it)
-    int unknown_15f44;                                    // +0x15F44
+    int *unknown_15f44;                                   // +0x15F44 (a grid over the base plan area, Rect +0x5644)
     DynamicVectorClass<IConnectionPoint *> ConnectionPoints;// +0x15F48 (vtable 0x0079E6A0)
     ConnectionPointClass *unknown_15f60;                  // +0x15F60 (the house's connection point)
     int unknown_15f64;                                    // +0x15F64
