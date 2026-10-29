@@ -658,3 +658,14 @@ verified on the target.
   `<BuildingTypeClass *>` (0x7A2F28/0x7A2F08) compiled outside the Factory population fails with "Unsupported
   allocatable data section" and its slot names bind to another copy. @ref both vtables and every slot name to the
   original vtable dwords (House208 refs.py generates the lines; refs_tt.txt, refs_bt.txt).
+
+- (UICmnds210) A function called through a function-pointer type inlines through the constant pointer only when
+  the parameter count matches the pointer type; return type and pointee type differences do not block it.
+
+## _$E initializer numbering counts static data members (Session209)
+
+- VC6 advances a unit's `_$E` initializer counter once per class static data member declaration the unit sees
+  (static member functions and inline virtual destructors do not count). A header that pulls a class with static
+  data (e.g. CDFileClass's search-list statics via cc_file_class.hpp) into a widely included header renumbers every
+  unit's `_$E` symbols and the build fails "Function symbol ambiguous/missing: _$EN". Keep such includes out of
+  shared headers that units include for unrelated declarations.

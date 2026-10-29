@@ -267,6 +267,7 @@ public:
     void Unknown_0067D420(bool complete);               // 0x0067D420
     void Unknown_0067CA50(int index);                   // 0x0067CA50 a tab whose strip emptied
     void Select_Tab(int index);                         // 0x0067D990 switches to another tab
+    void Unknown_006822B0(TechnoTypeClass *type, int arg2);   // 0x006822B0 (TActionClass 0x006B3060)
     void Activate_Tab(int index);                       // 0x0067D7E0 selects a tab and shows its strip
     void Unknown_0067C910(int index);                   // 0x0067C910 enables a tab button
     void Unknown_0067C850();                            // 0x0067C850 enables the scroll buttons when the strip overflows

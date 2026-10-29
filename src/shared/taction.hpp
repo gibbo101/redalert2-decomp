@@ -128,6 +128,28 @@ public:
     bool unknown_technos_with_tag_to_house(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0360
     bool unknown_base_building(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0560 (Red Alert's TACTION_BASE_BUILDING)
     bool unknown_stop_mission_timer(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0A60
+    bool unknown_grant_super_6b11a0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B11A0 (grants the house's super weapon Data one-time and adds it to the player's sidebar)
+    bool unknown_grant_super_6b1200(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1200 (grants the house's super weapon Data, clears its +0x48, adds it to the player's sidebar)
+    bool unknown_win_or_lose_6b1360(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1360 (the player wins when its house type is Data, else loses)
+    bool unknown_lose_or_win_6b1390(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1390 (the player loses when its house type is Data, else wins)
+    bool unknown_set_house_136(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B13C0 (the house of type Data (unless -1): +0x136 set)
+    bool unknown_func_6b1d00(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1D00 (undoes 0x006B1C80: zoom 1.0, keyboard cleared, input flag from the pause flag, mouse shown, redraw)
+    bool unknown_waypoint_sound_6b0ec0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0EC0 (the object at waypoint +0x44 takes sound Data (0x005D5520), else a static sound Data plays there)
+    bool unknown_waypoint_sound_6b0f90(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0F90 (the object at waypoint +0x44 drops its sound, else the static sounds there end)
+    bool unknown_spotlight_behavior_6b1d80(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1D80 (sets the spotlight behavior Data of every living, active spotlight building whose tag has the trigger attached; true when any)
+    bool unknown_ion_blast_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2370 (a new ion blast at waypoint +0x44, ground height)
+    bool unknown_center_on_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1BC0 (moves the tactical view to waypoint +0x44, ground height, raised on a bridge)
+    bool unknown_sound_at_random_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0D90 (static sound Data at a random set waypoint)
+    bool unknown_reveal_6b1050(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1050 (unless the player's +0x188: Map 0x0054A720 around waypoint Data with the rules RevealTriggerRadius, then 0x0055A300)
+    bool unknown_reveal_around_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0670 (Red Alert's TACTION_REVEAL_SOME)
+    bool unknown_reveal_zone_of_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0840 (Red Alert's TACTION_REVEAL_ZONE)
+    bool unknown_iron_curtain_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B26D0 (the rules IronCurtainInvokeAnim over waypoint +0x44; slot 82 with the rules IronCurtainDuration on every object in the cells around it)
+    bool unknown_weapon_explosion_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1810 (the explosion of weapon type Data at waypoint +0x44: its damage animation, effects and area damage)
+    bool unknown_meteor_shower_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2040 (METSMALL/METLARGE animations scattered around waypoint +0x44, the count by size Data)
+    bool unknown_nuke_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2400 (a NukePayload bullet dropped from 20000 leptons above waypoint +0x44; false when it cannot be created)
+    bool unknown_chem_missile_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2860 (a ChemLauncher bullet at waypoint +0x44; false when it cannot be created)
+    bool unknown_select_sidebar_tab(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B3010 (selects sidebar tab Data when its strip has buildables)
+    bool unknown_sidebar_6822b0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B3060 (Map.Unknown_006822B0 with techno type Data and +0x48)
     static int __fastcall Action_Flags(int type);                       // 0x006B2DF0 (hypothesis)
     // What the value of an action type names (0x006B2AB0; 0x2B, 0x28, 0x0C, 0x22, 0x0B,
     // 0x1A, 0x27, 4, 3, 0x26, 1 are the kinds Build_INI_Entry writes; name hypothesis).
@@ -155,6 +177,10 @@ public:
         float DataFloat;                    // +0x74
     };
 };
+
+// The object in the cell of a coordinate: its building, else its terrain object; none for the unset
+// cell (0x006B0E40; Execute calls it, the waypoint sound actions inline it; name hypothesis).
+ObjectClass *__fastcall Building_Or_Terrain_At_006B0E40(CoordStruct const &coord);
 
 // Every action (0x00ABFD88; defined in this unit).
 extern DynamicVectorClass<TActionClass *> unknown_TActionClass_list_00abfd88;

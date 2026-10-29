@@ -48,6 +48,7 @@ class ObjectClass;
 class TechnoClass;
 class HouseClass;
 class BuildingTypeClass;
+class TechnoTypeClass;
 class CCINIClass;
 
 #ifndef RA2_SHARED_GSCREEN_HPP
@@ -71,6 +72,11 @@ public:
     CellClass &operator[](CoordStruct const &coord);                            // 0x00548000
     CellClass &operator[](Cell const &cell);                              // 0x00548070
     void Sight_From(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, int arg6, bool arg7, int arg8);   // 0x0054A110
+    void Unknown_0054A720(CoordStruct const &coord, int radius);           // 0x0054A720 (TActionClass 0x006B1050: the rules RevealTriggerRadius around a waypoint)
+    void Unknown_0055A300();                                              // 0x0055A300
+    Cell Unknown_005689D0(Cell const &cell, int arg2);                    // 0x005689D0 (TActionClass 0x006B2860 launches from the cell it returns)
+    void Unknown_0055AA50();                                                    // 0x0055AA50 (starts the walk of 0x0055A910)
+    CellClass *Unknown_0055A910();                                              // 0x0055A910 (the next cell of the local-map walk, or null)
     void Unknown_00549C50(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, bool arg6, bool arg7, bool arg8);   // 0x00549C50 (reveals around coord; TechnoClass slot 70)
     void Unknown_00559F10();                                              // 0x00559F10
     void Unknown_0055A120();                                              // 0x0055A120 (shared/map.hpp)
@@ -201,6 +207,9 @@ class PowerClass : public RadarClass {
 #endif
 
 #ifndef RA2_SHARED_SIDEBAR_HPP
+// The production column of an object type (as shared/sidebar.hpp; 0x006818D0).
+int __fastcall Unknown_006818D0(int type, int id, int arg3);
+
 class SidebarClass : public PowerClass {
 public:
     void Unknown_0067C150(ObjectClass *object);                                 // 0x0067C150 (as shared/sidebar.hpp)
@@ -209,6 +218,20 @@ public:
     bool Unknown_00681740(int type, int id, class FactoryClass *factory);             // 0x00681740 (as shared/sidebar.hpp; production abandoned)
     static int __fastcall Which_Column(int kind, int arg3, bool naval);           // 0x00681940 (as shared/sidebar.hpp)
     void Unknown_0067B880(bool cameo_text);                                     // 0x0067B880 (empty; OptionsClass SidebarCameoText)
+    void Select_Tab(int index);                                                 // 0x0067D990 (as shared/sidebar.hpp)
+    bool Unknown_0067C530(int type, int id);                                    // 0x0067C530 (as shared/sidebar.hpp; adds a buildable to its strip)
+    void Unknown_006822B0(TechnoTypeClass *type, int arg2);                     // 0x006822B0 (as shared/sidebar.hpp)
+
+    // A production strip, as far as the other units read it (shared/sidebar.hpp's StripClass, 0xE64 bytes).
+    class StripClass {
+    public:
+        bool Unknown_00681730();                                                // 0x00681730 any buildables
+        char unknown_0[0xE64];
+    };
+
+    // The sidebar's data the other units read, at shared/sidebar.hpp's offset.
+    char unknown_1238[0x1540 - 0x1238];
+    StripClass Column[4];                                                       // +0x1540
 };
 #endif
 

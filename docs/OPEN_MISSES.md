@@ -464,3 +464,12 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   VECTOR_IMPLEMENT_DYNAMIC_INSERT_AFTER in VECTOR_IMPLEMENT_ALL - whole-tree --build check for new COMDATs - and a
   4-argument BaseNodeClass ctor; left: store order of `BaseNodeClass copy = *node`). Not started: 0x4E90F0 (production
   driver, after AI_Building), Place_Object 0x4E6950, 0x4E77F0 (MPlayer_Defeated-like).
+- UICmnds.cpp after UICmnds210 (build/class-work/UICmnds210, NOTES; parked): 0x6F81B0 99.60 (pop ebp slot), 0x6F7360
+  48-62 (needs 0x6F7610 retyped from population-1641; original calls 0x6F6790 out of line), 0x6F58E0 exact alone but
+  defining it makes 0x6F6D00 inline it; 0x6F7020/0x6F71E0: our functions keep more inline budget at the end than the
+  original - one shared cause to find. Score in the whole TU (ws.py).
+- Session.CPP after Session209 (build/class-work/Session209, NOTES): its ren1 (CDFileClass statics moved into an invented
+  nested SearchList holder) is REFUSED by the owner: RA's CDFILE.H has them as direct CDFileClass statics. Honest route:
+  split UnknownSessionState (with CCFileClass RecordFile) out of unknown_globals.hpp into its own header included only by
+  units that use the session, then land the dtor 0x66EB20 (exact, d/r1). Ctor 0x66E380 98.59 (~280 store orders tried;
+  idea: 0x2C0-0x2EC or 0x638-0x63A is a nested struct with an inline ctor/clear); 0x673090 Allocate_Ports 87.47.

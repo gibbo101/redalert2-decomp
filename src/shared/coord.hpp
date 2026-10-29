@@ -104,6 +104,14 @@ public:
     short Y;
 };
 
+// The coordinate X, Y, Z (Westwood's XYZ_Coord; hypothesis). Its arguments are a
+// call's, evaluated right to left, so Z is computed before Y and X (the TAction
+// reveal actions 0x006B0670 and 0x006B0840, 0x006B26D0).
+inline CoordStruct XYZ_Coord(int x, int y, int z)
+{
+    return CoordStruct(x, y, z);
+}
+
 // The centre of a cell at ground level (hypothesis: Westwood's Cell_Coord;
 // the cell is taken by value).
 inline CoordStruct Cell_Center(Cell cell)

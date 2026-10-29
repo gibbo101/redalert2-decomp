@@ -66,6 +66,8 @@ public:
     void unknown_69ebb0();                                      // 0x0069EBB0
     // Whether the sidebar should flash its tab for it (ready; hypothesis).
     bool Unknown_0069D820();                                    // 0x0069D820
+    // Grants it to its house (TS's Grant(one_time, announce, on_hold); hypothesis; true when granted).
+    bool Grant(bool one_time, bool announce, bool on_hold);     // 0x0069CCF0
 
     virtual int __stdcall What_Am_I();                          // 0x0069ECA0
     virtual HRESULT __stdcall GetClassID(GUID *classid);        // 0x0069E9B0
