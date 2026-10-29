@@ -57,23 +57,8 @@ extern wchar_t const unknown_empty_wide_839d4c[];
 void __fastcall Unknown_006F6810(wchar_t *buffer, wchar_t const *name);
 int __fastcall Unknown_006F7DF0(TechnoClass *techno, int argument);
 DynamicVectorClass<TechnoClass *> *Unknown_006F6AD0();
+void Unknown_006F79C0();
 DynamicVectorClass<TechnoClass *> *__fastcall Unknown_006F69F0(UnknownTest test, int argument);
-
-// Static copy of 0x006F79C0 (rebuild the command list from the selection, else from the player's mobile
-// technos) until that function is accepted; expanded here with its two builders left as calls.
-static void Rebuild_List_B()
-{
-    if (unknown_list_ac1344 != 0) {
-        delete (DynamicVectorClass<TechnoClass *> *)unknown_list_ac1344;
-        unknown_list_ac1344 = 0;
-    }
-    unknown_list_ac1344 = (UnknownPointerList *)Unknown_006F6AD0();
-    if (unknown_list_ac1344->Count == 0) {
-        delete (DynamicVectorClass<TechnoClass *> *)unknown_list_ac1344;
-        unknown_list_ac1344 = 0;
-        unknown_list_ac1344 = (UnknownPointerList *)Unknown_006F69F0((UnknownTest)Unknown_006F7DF0, 0);
-    }
-}
 
 static wchar_t const *__fastcall Veterancy_Message(int state)
 {
@@ -123,7 +108,7 @@ void __fastcall Unknown_006F7EC0(bool flag)
     }
     int kind;
     if (unknown_state_ac132c != 4) {
-        Rebuild_List_B();
+        Unknown_006F79C0();
         unknown_selected_83996c->Unknown_006AAD40();
         kind = 0;
     } else {

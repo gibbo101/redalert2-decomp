@@ -4993,32 +4993,6 @@
       "source_order": 55618
     },
     {
-      "entry": 7302288,
-      "method": "006f6c90",
-      "symbol": "?unknown_find_name_index@@YIHABV?$DynamicVectorClass@PBD@@PBD@Z",
-      "symbol_prefix": "?unknown_find_name_index@@YIHABV?$DynamicVectorClass@PBD@@PBD@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 98,
-      "body_sha256": "2e8e2040a6ececd04bc1b5ec49f15ae732c76ca41a88350481492b8a97ad155a",
-      "padding_bytes": 14,
-      "full_extent_bytes": 112,
-      "full_extent_sha256": "88b891022ba6e86b86d46c202d8dbb097dfc8776f38864963704b9555c256854",
-      "relocations": [],
-      "source_sha256": "4c7cde1e455fe50518d977df82686b718d3b48ad4dec32e868492850532cb6a8",
-      "source": "src/recovered/unowned/unknown_find_name_index_006f6c90.cpp",
-      "population": "population-1642",
-      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_find_name_index_006f6c90",
-      "source_order": 55619
-    },
-    {
       "entry": 6973632,
       "method": "006a68c0",
       "symbol": "?unknown_cell_to_screen@@YGXHHPAH0@Z",

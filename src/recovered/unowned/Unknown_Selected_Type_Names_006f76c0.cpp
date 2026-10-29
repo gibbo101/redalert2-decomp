@@ -8,15 +8,7 @@
 #include "shared/crt_string.hpp"
 #include "shared/object_type.hpp"
 
-static int Find_Name_Index(DynamicVectorClass<char const *> *names, char const *name)
-{
-    for (int index = 0; index < names->Count(); index++) {
-        if (strcmp(name, (*names)[index]) == 0) {
-            return index;
-        }
-    }
-    return -1;
-}
+int __fastcall unknown_find_name_index(DynamicVectorClass<char const *> const &names, char const *name);
 
 DynamicVectorClass<char const *> *Unknown_006F76C0()
 {
@@ -24,7 +16,7 @@ DynamicVectorClass<char const *> *Unknown_006F76C0()
     int count = unknown_objects_a40c60.Count();
     for (int index = 0; index < count; index++) {
         char const *name = unknown_objects_a40c60[index]->Class_Of()->ID;
-        if (Find_Name_Index(names, name) == -1) {
+        if (unknown_find_name_index(*names, name) == -1) {
             names->Add(name);
         }
     }
