@@ -357,3 +357,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   the pushes), 0x5CB560 Clear_Observer_Slots 98.97 (tail-call arguments before the pops), 0x5C2DA0 56.09 (registers),
   0x5C67C0 91.06 (needs pop-67 seed 0x5C67A0 in the unit). Blocked: 0x5C3C60/0x5C3D90 (packet type past 0x1C7),
   0x5C6310 (WOL hash table), 0x5C8420/0x5C84E0 (random-map CRC). 0x5C5EC0 is inside 0x5C3FF0.
+- netdlg2.cpp after Netdlg184 (build/class-work/Netdlg184/misses, NOTES): 0x5BCCF0 Set_Slot_Country_Color 87.73 (name in
+  ebp, country spilled across the slot loop), 0x5BC940 Build_Game_Options 86.47 (register rotation after
+  description.Get()); 0x5BC460 Init_Network exact (w_hold_abc460.cpp) now that Set_Bridge has landed. Undrafted:
+  0x5BBDD0 (WolLadderListCell hash table), 0x5BD070 (4915), 0x5BE6B0, 0x5BEFE0, 0x5C01D0 (three local timer statics,
+  atexit dtors are pop-67 seeds), 0x5C08A0 (6798), 0x5C2330.

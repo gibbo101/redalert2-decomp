@@ -415,4 +415,8 @@ extern PlanningNodeClass *unknown_node_a7678c;
 extern PlanningNodeClass *unknown_node_a766f8;
 extern PlanningNodeClass *unknown_node_a766b0;
 
+// Adds every member of from to node, each with a copy of the event aimed at
+// that member's techno (0x006167F0; PlanningNodeClass::Add_Member's body).
+void __fastcall Planning_Copy_Members(PlanningNodeClass *node, PlanningNodeClass *from, EventClass event);
+
 #endif
