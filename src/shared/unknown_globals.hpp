@@ -458,6 +458,9 @@ void __fastcall Unknown_005fe020(void *unknown, Surface *surface, RECT *area, vo
 void *Unknown_Get_Art_6f2490();
 // Assign_Houses' session data and globals (0x0065FBB0).
 extern int unknown_house_setting_7d88d8;            // 0x007D88D8 (every new house's +0x11C)
+// Two values a recording starts with (Load_Recording_Values 0x00516BA0 / Save_Recording_Values 0x00516B00).
+extern int unknown_a40d3c;                          // 0x00A40D3C
+extern int unknown_a40c38;                          // 0x00A40C38
 class HouseClass;
 extern HouseClass *unknown_house_a72d28;            // 0x00A72D28 (the player without a team)
 // The index of a colour scheme by name (0x00663D90).

@@ -7,6 +7,7 @@
 #include "shared/special.hpp"
 #include "shared/options.hpp"
 #include "shared/debug_printf.hpp"
+#include "shared/unknown_globals.hpp"
 // @ref ?unknown_house_setting_7d88d8@@3HA=007d88d8
 // @ref ?unknown_a40d3c@@3HA=00a40d3c
 // @ref ?unknown_a40c38@@3HA=00a40c38
@@ -14,9 +15,6 @@
 // @ref ?Options@@3VOptionsClass@@A=00a40b18
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
 // @ref ??_C@_0CL@JLID@Loaded?5recording?5values?5for?5scen@=007dbc64
-
-extern int unknown_a40d3c;     // 0x00A40D3C
-extern int unknown_a40c38;     // 0x00A40C38
 
 bool __fastcall Load_Recording_Values(CCFileClass &file)
 {

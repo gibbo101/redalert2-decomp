@@ -548,3 +548,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Startup.CPP after Startup232 (NOTES, w/wm_b.cpp, out/): WinMain 0x68E280 25.98, drafted through OleInitialize plus the
   Main_Game __try. Needs acceptance-tool SEH support first (see HANDOFF), a TClassFactory<T> inline ctor in
   class_factory.hpp for the 74 registrations, and the 0x6983E0 IUnknownPtr dtor bound by @ref.
+- ownrdraw.cpp after OwnrDraw233 (NOTES, s/, c/): 0x5E8720 51.12 (only Bucket_Index inside 5e12a0's Find differs in
+  inlining: the original has more pending inline sites; frame 0x94 vs 0x90), 0x5E8BA0 68.66, 0x5E1640 90.53 (one
+  cross-jump). 0x600260 drafted but has no inventory row.
+- wonline.cpp after Wonline230 (one TU 0x73A6F0-0x7683B0, NOTES unit table): seven dictionary static destructors
+  0x73AB20.. 98.95 (load order at the shrink-loop bottom); their exact initializers land only with them (initializer
+  table contiguity). WolStringArray::Remove 0x7661F0 85.88. b29828 string array needs a rename (extern int Count).
