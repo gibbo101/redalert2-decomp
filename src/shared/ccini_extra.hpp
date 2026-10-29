@@ -75,8 +75,7 @@ TheaterType __fastcall Theater_From_Name(char const *name); // 0x00482B10
 char const *__fastcall Name_From_Land(LandType land);      // 0x00482F00
 LandType __fastcall Land_From_Name(char const *name);      // 0x00482EB0
 
-char const *__fastcall Name_From_Category(CategoryType category);   // 0x00468EC0
-CategoryType __fastcall Category_From_Name(char const *name);       // 0x00468EE0
+// Name_From_Category, Category_From_Name: shared/ini_enums.hpp.
 
 // {name, value} tables searched by name.
 struct NameValueStruct {

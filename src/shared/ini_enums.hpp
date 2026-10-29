@@ -19,8 +19,18 @@ enum LandType {
 // Unit categories Soldier, Civilian, VIP, Recon, AFV, IFV, LRFS, Support,
 // Transport, AirPower, AirLift ({description, name} pairs at 0x007D17E0).
 enum CategoryType {
-    CATEGORY_SOLDIER
+    CATEGORY_NONE = -1,
+    CATEGORY_SOLDIER,
+    CATEGORY_COUNT = 11
 };
+struct CategoryNameStruct {
+    char const *Description;    // "VIP/Agent", "Armored Fighting Vehicle", ...
+    char const *Name;           // "VIP", "AFV", ... (the INI name)
+};
+extern CategoryNameStruct CategoryNames[CATEGORY_COUNT];             // 0x007D17E0
+char const *__fastcall Description_From_Category(CategoryType category);   // 0x00468EA0
+char const *__fastcall Name_From_Category(CategoryType category);   // 0x00468EC0
+CategoryType __fastcall Category_From_Name(char const *name);       // 0x00468EE0
 
 // Crate powerups Money, Unit, HealBase, Cloak, ... Pod (names 0x0079DE54;
 // CCINIClass::Get_CrateType 0x0046AE30, RulesClass's [CrateRules]).

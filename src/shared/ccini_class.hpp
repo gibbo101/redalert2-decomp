@@ -41,6 +41,14 @@ enum CategoryType;
 enum RTTIType;
 enum BuildCat;
 
+// The value CCINIClass 0x00469F10 / 0x00469F30 read and write with Get_Hex /
+// Put_Hex. A class (it is returned through a hidden pointer) holding one int;
+// both functions are unreferenced and the type is unidentified.
+struct UnknownHexValue {
+    UnknownHexValue(int value) : Value(value) {}
+    int Value;
+};
+
 class CCINIClass : public INIClass {
 public:
     CCINIClass() : IsDigestValid(false) {}
@@ -188,6 +196,10 @@ public:
     bool Put_Listed_Name(char const *section, char const *entry, unsigned index);
     // 0x0046AD30
     int Get_ThemeType(char const *section, char const *entry, int defvalue) const;
+    // 0x00469F10 (unreferenced): a hex value returned through a hidden pointer
+    UnknownHexValue Get_UnknownHex_469f10(char const *section, char const *entry, int defvalue) const;
+    // 0x00469F30 (unreferenced)
+    bool Put_UnknownHex_469f30(char const *section, char const *entry, int value);
     // 0x00469F50
     int Get_ColorScheme(char const *section, char const *entry, int defvalue) const;
     // 0x00469FE0
