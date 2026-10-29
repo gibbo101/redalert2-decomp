@@ -194,3 +194,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   steering construct. Not drafted: 0x6FDFC0, 0x6FF690, 0x7005B0, 0x6FAA30. Cell::unknown_42add0 is an inline
   member standing for 0x42ADD0 (naming hypothesis). Unit statics 0xAD0488/0xAD04C0/0xAD057C are the header
   statics unknown_geometry_k/_l/_j.
+- UnitClass remainder (Unit153 NOTES): 0x707F60's 1598 B inventory bound is wrong (the body jumps to 0x708AF0,
+  0x709536, 0x70955C; ~11 fragments to 0x709790, about 6 KB): fix the bound before drafting (seed/00707f60).
+  Tube walk 0x6FAA30 (1730 B) layout and math recovered, blocked on typing 0x4348F0/0x41B780/0x41B630 as
+  CoordStruct helpers (HEAD has UnknownVector3). Slots 310 0x6FF690 and 311 0x7005B0 wait on the 310/311/312
+  signature rename (Unit147 hdr/).

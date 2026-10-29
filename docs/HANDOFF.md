@@ -21,13 +21,15 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 
 Running Mac lanes: Study152 (Opus, study, ~400K output tokens) the VC6 /Ob2 inline-budget rule behind five open
 misses (BuildingLight ctor, Campaign and WDT Map ctors, MultiplayerGameMode 0x5B8490, MSPrintAnim::Draw);
-Unit153 (Opus) UnitClass remainder (slot 86 retry, then 0x6FAA30/0x6FDFC0/0x6FF690/0x7005B0/0x707F60). Debt154 merged the two 0x4F52B0 names
+Unit155 (Opus) UnitClass drawing family (slots 310/311/312 rename, then 0x6FF3E0, 0x700E70, 0x7005B0,
+0x6FF690). Debt154 merged the two 0x4F52B0 names
 (b24cc60c). Inf148 (InfantryClass) parked, zero bytes.
 Landed this evening: Modem141, Base142 (Base unit complete), Ref143 (Release 0x639720, CampaignProperties and
 Territory ctors), Score144 (CampaignScoreClass ctor 0x465BF0), VoxAnim145 (VoxelAnimClass::AI 0x70D380), Air146
 (AircraftClass slot 147 0x415210), BLight150 (~BuildingLightClass 0x4332F0), Unit149
 (MapClass 0x5502E0 Point2D rename; UnitClass slot 87 0x7072D0), Bullet151 (detonation 0x462110, NukeMaker
-payload 0x463C50), Unit147 (MCV deploy search 0x6FD930 and two unit statics). Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
+payload 0x463C50), Unit147 (MCV deploy search 0x6FD930 and two unit statics), Unit153
+(slot 86 0x6FCA30, BuildingTypeClass 0x45EC50 bool, deploy attempt 0x6FDFC0). Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
 0x734CD0/0x735110. WDT136 (Campaign ctor 0x725F40) and Sink139 (OnLadderList 0x75D330) are misses in OPEN_MISSES.md.
 Landed 2026-10-28 evening: Map129, Obj126, Para131, Iso128, MSAnim133, Score132, IPX135 (Send_To), Base134
 (BaseClass ctor/Load/NoInit ctor). Near misses (OPEN_MISSES.md) go to the Windows lead; queue and drafts sent in
