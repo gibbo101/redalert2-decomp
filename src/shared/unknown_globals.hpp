@@ -239,6 +239,8 @@ extern UnknownSessionA3D29C *unknown_session_a3d29c;     // 0x00A3D29C
 // Services audio, queued movies and the network while a long operation runs
 // (0x00481FB0).
 void __fastcall Service_Game_IO_00481fb0();
+bool unknown_53f460();                  // 0x0053F460 returns the byte at 0x00A6EB30
+bool unknown_53fbd0();                  // 0x0053FBD0
 // Drops a player's connection by house index: prints the "left" (error 0) or
 // "connection lost" (error 1) message and removes the player (0x005BB5D0; YR's
 // SessionClass::Destroy_Connection, hypothesis).

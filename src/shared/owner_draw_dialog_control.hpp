@@ -105,7 +105,9 @@ struct UnknownTextRequest {
     WideString text;
 };
 WideString __fastcall unknown_5e2100(HWND window, int a, int b);
-// The tooltip label ("STT:...") of a control by its dialog's kind and control ID (0x005E22B0, not yet recovered).
+// A registered control's +0xC0 state, or -1 (0x005E20A0).
+int __fastcall unknown_5e20a0(HWND control);
+// The tooltip label ("STT:...") of a control by its dialog's kind and control ID (0x005E22B0).
 char const *__fastcall unknown_5e22b0(unsigned int key, HWND window);
 // Whether the control is in the registry (0x005E4720; the skirmish preview paint skips one that is).
 bool __fastcall unknown_5e4720(HWND control);
@@ -124,6 +126,12 @@ extern int unknown_visible_count_a763b4;
 extern int unknown_surface_count_a763d8;
 // Set once 0x005EAC30 has registered the "ComboDropWin" and "NewEdit" window classes.
 extern int unknown_classes_registered_a763f0;
+// Nesting count of 0x005FF5A0 (mouse released) over 0x005FF5D0 (recaptured when it returns to zero).
+extern int unknown_mouse_release_depth_a76410;
+// The screen pixel format's 8-bit channel masks, set by 0x005FC820.
+extern unsigned short unknown_red_mask_a763dc;
+extern unsigned short unknown_green_mask_a763de;
+extern unsigned short unknown_blue_mask_a763e0;
 // The window procedures of those classes (not yet recovered).
 LRESULT __stdcall unknown_combo_drop_proc_5ead20(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 LRESULT __stdcall unknown_new_edit_proc_5ead00(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
