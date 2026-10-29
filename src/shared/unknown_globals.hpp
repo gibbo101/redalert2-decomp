@@ -15,6 +15,7 @@ struct NodeNameType;
 #include "shared/session_blocks.hpp"
 #include "shared/serial_settings.hpp"
 #include "shared/message_list.hpp"
+#include "shared/mplayer_score_type.hpp"
 
 extern int unknown_int_7add80;
 extern ConvertClass *unknown_drawer_8323b8;  // 0x008323B8 (OverlayTypeClass slot 40; also CellClass 0x474C6B)
@@ -162,9 +163,19 @@ struct UnknownSessionState {
     int KickVotes[8];                       // +0x8B8 per connection: the kick votes received (0x00627210)
     UnknownKickVoters KickVoters[8];        // +0x8D8 per connection: the voters' ids
     MessageListClass Messages;              // +0x9D8 the on-screen messages (Red Alert's Session.Messages; 0x00A3DC70)
-    char unknown_1e74[0x1FB4 - 0x1E74];
-    int unknown_1fb4[4][28];                // +0x1FB4 four rows indexed by the +0x2300 counter (MPCooperative slot 34 sets -1)
-    char unknown_2174[0x2300 - 0x2174];
+    char unknown_1e74[0x1F74 - 0x1E74];
+    union {
+        // The cooperative campaign's score records, one per player (CampaignScoreClass
+        // 0x00465D10 fills them from the houses; also unknown_session_scores_a3f20c).
+        MPlayerScoreType Scores[8];         // +0x1F74
+        struct {
+            char unknown_1f74[0x1FB4 - 0x1F74];
+            int unknown_1fb4[4][28];        // +0x1FB4 four rows indexed by the +0x2300 counter (MPCooperative slot 34 sets -1)
+        };
+    };
+    int unknown_22f4;                       // +0x22F4 (also unknown_a3f58c)
+    int ScoreCount;                         // +0x22F8 the used Scores records (also unknown_session_score_count_a3f590)
+    int ScoreWinner;                        // +0x22FC the last record of a house that did not lose (0x00465D10)
     int unknown_2300;                       // +0x2300 (capped at 3; also unknown_a3f598)
     char unknown_2304[0x2380 - 0x2304];
     unsigned short HostName_2380[20];       // +0x2380 the host's name (wide; also unknown_host_name_a3f618)

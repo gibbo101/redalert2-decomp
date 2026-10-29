@@ -70,6 +70,7 @@ public:
     UnknownHouseCounter();                  // 0x00491C00
     ~UnknownHouseCounter();                 // 0x00491C20
     int unknown_func_491d10(int index);     // 0x00491D10 (a count by type index)
+    int Sum() const;                        // 0x00491D90 (the total of every type's count)
     void Increment(int index);              // 0x00491C50 (one more of a type; grows the counts; name hypothesis)
     void Decrement(int index);              // 0x00491CB0 (one fewer; name hypothesis)
     void Save(IStream *stream);             // 0x00491DB0

@@ -322,3 +322,11 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Is_Human_Control is now the mode==0-first inline: recheck House164's AI draft with it. Type debt: Sell_Wall casts
   `(int)this` into building-type slot 33 (Cost_Of(HouseClass *) declared int); unknown_max_ahead_a3d560 is a
   file-level extern (ipx_manager.hpp has the other declaration; unknown_globals.hpp is the better home).
+- Init.CPP after Init176 (w/, NOTES with true extents): Init_Bulk_Data 0x516900 82.35, best selected object 0x51A690
+  60.34 (bit0 bool stored to a stack byte), Init_Theater 0x519E70 78.06, Allocate_Surfaces 0x519500 76.84; 0x514EE0
+  writes session globals at widths that conflict with their declarations. Not started: 0x5134C0, 0x513080,
+  0x516C40, 0x516F00, 0x5171D0, 0x515E70, 0x516560, 0x51A880, 0x5129C0, 0x5147A0, 0x5135F0, 0x5116A0, 0x5173C0.
+  Rules: a parameterless function called with this-style object setup matches as __fastcall (as __cdecl VC6
+  schedules the object-address lea/mov ecx after the pushes); a unit doing CCINIClass new/delete emits ??_GCCINIClass
+  and ??_GGenericNode, which need ArtINI_init_0040de40.cpp's @ref block; queue.hpp's include chain ahead of 0x515710
+  grows Delete_All_Objects by 64 bytes.
