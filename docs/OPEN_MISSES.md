@@ -214,3 +214,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   8 bytes too big, Windows near-miss work. BuildingLight ctor 0x432FC0: with a UnknownCoord434820 local in
   0x4341D0 (bl/v/f2.cpp, stays exact) the ctor reaches 87.01 but keeps owner in edi instead of rereading [ebp+8].
   The other out-of-line 0x41FDF0 call at 0x5AF50D is in an unrecovered MSPrintAnim function 0x5AF210-0x5AF790.
+- UnitClass drawing family (Unit155 drafts/, NOTES): slot 311 0x7005B0 87.08 (slot311_7005b0.cpp with hdr311/:
+  needs an inline UnknownObjectPair::Is_Loaded() in object_type.hpp and `Matrix3D __fastcall
+  unknown_voxel_matrix_717f90()`; left are load scheduling and a zero kept in ebx into slot 246's zero args);
+  Draw_It 0x700E70 85.75 (draw_it_700e70.cpp: frame 0x48 vs 0x40, the original shares one slot between the
+  angle double and the projected CoordStruct; still carries `int const &direction`/`ColorScheme *const &scheme`
+  steering to replace); slot 310 0x6FF690 not drafted (seed does not compile; reuse slot 311's idioms).

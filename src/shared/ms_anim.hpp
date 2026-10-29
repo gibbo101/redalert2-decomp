@@ -42,7 +42,15 @@ public:
     MSAnim(int x, int y) : X(x), Y(y), unknown_0C(true) {}
     virtual ~MSAnim();                                          // slot 0 (+0x00) 0x005AC690
     virtual void Set_Unknown_0C(bool value) { unknown_0C = value; }  // slot 1 (+0x04) 0x005AFC00
-    virtual void Pause() { Timer.Stop(); }                      // slot 2 (+0x08) 0x005AFC10
+    // Timer.Stop() spelled out: through Stop() the expansion folds the
+    // second Started test the original keeps.
+    virtual void Pause()                                        // slot 2 (+0x08) 0x005AFC10
+    {
+        if (Timer.Started != -1) {
+            Timer.DelayTime = Timer;
+            Timer.Started = -1;
+        }
+    }
     virtual void Resume() { Timer.Start(); }                    // slot 3 (+0x0C) 0x005AFC60
     // MSEngine::Draw (0x005B2FB0) calls slot 4 on every animation with the
     // target surface and a rectangle to receive the area to refresh, and
@@ -146,8 +154,20 @@ public:
 #include "shared/msfont.hpp"
 class MSPrintAnim : public MSAnim {
 public:
+    MSPrintAnim(WideString const &text, int x, int y, MSFont *font, Rect const &rect, unsigned position,
+                int char_delay, bool unknown_30, bool centered);   // 0x005AE6C0
     virtual bool Unknown_Slot4(Surface *surface, Rect *dirty);     // 0x005AEDA0
     virtual void Draw(Surface *surface, Rect const *clip);          // 0x005AF030
+    virtual ~MSPrintAnim() {}
+    virtual Rect Get_Rect();                                    // 0x005AF400
+    virtual bool Unknown_Slot7();                               // 0x005AF450
+
+    // Fits TextRect to the text, centred in rect when it is not empty
+    // (clipped to it), else placed at X, Y (0x005AE7E0; name hypothesis).
+    void Set_Rect(Rect const &rect);
+    // TextRect sized to the whole text (inline: Set_Rect expands it in both
+    // branches; name hypothesis).
+    void Measure_Text() { Font->Text_Rect(Text.Get(), TextRect); }
     // The width of a line up to its end or newline (inline: slot 4 and Draw
     // expand it; name hypothesis).
     int Line_Width(WideString const &line);
