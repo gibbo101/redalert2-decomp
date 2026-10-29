@@ -94,6 +94,8 @@ inline DynamicVectorClass<char const *>::DynamicVectorClass(unsigned size, char 
 struct UnknownSelection {
     int Count();                        // 0x006AC7B0
     ObjectClass *Get(int index);        // 0x006AC7C0
+    void Unknown_006AAD40();            // 0x006AAD40 (hypothesis: refreshes the selection display)
+    void Unknown_006AAD70();            // 0x006AAD70 (called first by the select-combatants command 0x006F6D00)
 };
 extern UnknownSelection *unknown_selected_83996c;
 // Whether the player-side technos in group (1-based) are exactly the selected ones (0x006F5E80).

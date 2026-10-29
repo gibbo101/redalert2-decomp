@@ -443,3 +443,12 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x543CF0 66.37 (registers), Has_Saved_Games 0x53C5C0 97.83 (mov al,bl after pop edi). Undrafted: Main_Options_Proc
   0x542590 (1996), 0x542D60 (1909, IPX card dialog), Set_Display_Mode 0x5434E0 (1414), 0x53B770 (2068), Fill_List 0x53C040.
   The scorer can report 100 with a wrong constant (0x79C570 is double 0.1): trust check_plans.
+- House.CPP after House204 (build/class-work/House204/w, NOTES): Random_Cell_In_Zone 0x4ECA50 53.51 (1276 B with fill
+  and table; clamp head, case order and quadrant bitfield write match; left: bitfield store/reload as movsx word, case-0
+  x/y swap, Cell ctor 0x42AD30 out of line in the original, frame 0x34 vs 0x44). +0x5640..+0x5650 is BaseClass
+  unknown_50/unknown_54, +0x15F44 an int grid pointer. Map 0x568D60 returns Cell by hidden pointer.
+- Session.CPP after Session205 (zero bytes; build/class-work/Session205, NOTES): dtor 0x66EB20 byte-exact (d/r1, 50/50
+  accepted) but the full build fails "Function symbol ambiguous/missing: _$E2" after the UnknownSessionState header
+  additions (CCFileClass RecordFile +0x2304, two NodeNameType lists, ~UnknownSessionState, ~MessageListClass) - cause
+  unknown. Ctor 0x66E380 98.59 (w/ctor_best.cpp, inc_a: three-instruction scheduling diff; needs six inline DVC ctors,
+  unknown_geometry_l and a long @ref set). 0x673090 disassembled only.

@@ -58,6 +58,7 @@ public:
     UnknownTechnoPair();                // 0x00713340
     UnknownTechnoPair(NoInitClass const &noinit) {}
     ~UnknownTechnoPair();               // 0x00713350
+    int unknown_713440() const;         // 0x00713440 (rank 0, 1 or 2 from the experience value)
     int unknown_713580() const;         // 0x00713580 (hypothesis: written to the [Units] line)
     // Sets the first word to 0 and the second to 2.0f with the flag, else 0
     // (0x00713550; Create_Units with InitialVeteran).
