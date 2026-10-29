@@ -13,6 +13,7 @@ struct NodeNameType;
 #include "shared/coord.hpp"
 #include "shared/vector_class_decl.hpp"
 #include "shared/session_blocks.hpp"
+#include "shared/serial_settings.hpp"
 #include "shared/message_list.hpp"
 
 extern int unknown_int_7add80;
@@ -59,6 +60,29 @@ struct UnknownKickVoters {
     int ID[8];
 };
 struct UnknownGlobalPacket;   // shared/queue.hpp
+// A block of multiplayer game settings (0x7C bytes), kept per game type in the
+// session (the Skirmish, LAN and WonlinePref sections of RA2.INI).
+class CCINIClass;
+class MultiplayerGameMode;
+class MultiMission;
+struct UnknownGameOptions {
+    // Reads the block from a section; the computer slots default to
+    // (first_slot for slot 1, else other_slots, -2, -2) (0x0066F1F0).
+    void Read(CCINIClass &ini, char const *section, int other_slots, int first_slot);
+    void Write(CCINIClass &ini, char const *section);   // 0x00670270
+
+    int GameMode;                           // +0x00 (default: the first registered mode's id)
+    int ScenIndex;                          // +0x04
+    int GameSpeed;                          // +0x08
+    int Credits;                            // +0x0C
+    int UnitCount;                          // +0x10
+    bool ShortGame;                         // +0x14
+    bool SuperWeaponsAllowed;               // +0x15
+    bool BuildOffAlly;                      // +0x16
+    bool MCVRepacks;                        // +0x17
+    bool CratesAppear;                      // +0x18
+    int Slots[8][3];                        // +0x1C (Slot01..Slot07 entries; slot 0 is not saved)
+};
 struct UnknownSessionState {
     int Value_0124_006729f0();
     int Value_011c_00672a10();
@@ -73,7 +97,10 @@ struct UnknownSessionState {
     // Data (offsets from 0x00A3D298; the first word is unknown_game_mode_a3d298,
     // +0x40/+0x28/+0xA7 are declared separately in this header for now).
     union {
-        int Type;                           // +0x00 the game mode (also unknown_game_mode_a3d298; Red Alert's Session.Type)
+        struct {
+            int Type;                       // +0x00 the game mode (also unknown_game_mode_a3d298; Red Alert's Session.Type)
+            MultiplayerGameMode *Mode;      // +0x04 the game mode object (also unknown_session_a3d29c)
+        };
         char unknown_00[0x1C];
     };
     int ScenarioIndex;                      // +0x1C the multiplayer map (unknown_multi_missions_a3d8d8 index; -1: none)
@@ -97,16 +124,24 @@ struct UnknownSessionState {
     bool unknown_a6;                        // +0xA6
     bool unknown_fog_a7;                    // +0xA7 fog of war (also unknown_session_fog_a3d33f)
     bool unknown_a8;                        // +0xA8 (unknown_session_a3d340)
-    char unknown_a9[0x124 - 0xA9];
+    char unknown_a9[0x104 - 0xA9];
+    unsigned long UniqueID;                 // +0x104 (One_Time: Compute_Unique_ID)
+    char Handle[20];                        // +0x108 the player's name (also unknown_name_a3d3a0)
+    char unknown_11c[0x124 - 0x11C];
     int unknown_124;                        // +0x124 (also unknown_a3d3bc)
     char unknown_128[0x12C - 0x128];
     int unknown_12c;                        // +0x12C the player's colour (GDlgSupp 0x004D23C0)
     int unknown_130;                        // +0x130 (-2: the colour shows as random; 0x004D23C0)
     int unknown_134;                        // +0x134 the player's country (GDlgSupp 0x004D1820)
     int unknown_138;                        // +0x138 (-2 random, -3 observer: the country shows as that; 0x004D1820)
-    char unknown_13c[0x2B0 - 0x13C];
+    UnknownGameOptions SkirmishOptions;     // +0x13C
+    UnknownGameOptions LANOptions;          // +0x1B8
+    UnknownGameOptions WonlineOptions;      // +0x234
     int unknown_2b0;                        // +0x2B0 (also unknown_int_a3d548)
-    char unknown_2b4[0x2C8 - 0x2B4];
+    char unknown_2b4[0x2B8 - 0x2B4];
+    bool WOLLimitResolution;                // +0x2B8
+    int LastNickSlot;                       // +0x2BC
+    char unknown_2c0[0x2C8 - 0x2C0];
     unsigned int MaxAhead_2c8;              // +0x2C8 the frames ahead (set by the game speed; also unknown_max_ahead_a3d560)
     unsigned int unknown_2cc;               // +0x2CC
     char unknown_2d0[0x2E0 - 0x2D0];
@@ -117,7 +152,10 @@ struct UnknownSessionState {
     bool unknown_638;                       // +0x638 (cleared by 0x00672440)
     bool unknown_639;                       // +0x639 (cleared before the load wait, 0x0065C7D0)
     bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)
-    char unknown_63b[0x8A0 - 0x63B];
+    char unknown_63b[0x640 - 0x63B];
+    // The multiplayer maps (also unknown_multi_missions_a3d8d8; Red Alert's Scenarios).
+    DynamicVectorClass<MultiMission *> Scenarios;   // +0x640
+    char unknown_658[0x8A0 - 0x658];
     // +0x8A0 copies of received global packets (RTTI DynamicVectorClass<GlobalPacketType *>,
     // vtable 0x007A9584; Unknown_00627190 adds them).
     DynamicVectorClass<UnknownGlobalPacket *> GlobalPackets_8a0;
@@ -133,9 +171,18 @@ struct UnknownSessionState {
     char unknown_23a8[0x27E4 - 0x23A8];
     // The player list (the object at 0x00A3FA7C, shared/unknown_player_entry.hpp unknown_players_a3fa7c).
     DynamicVectorClass<NodeNameType *> Players;   // +0x27E4
-    char unknown_27fc[0x290C - 0x27FC];
+    char unknown_27fc[0x282C - 0x27FC];
+    int CurPhoneIdx;                        // +0x282C
+    SerialSettingsType SerialDefaults;      // +0x2830
+    char unknown_28a0[0x28A4 - 0x28A0];
+    DynamicVectorClass<PhoneEntryClass *> PhoneBook;   // +0x28A4
+    DynamicVectorClass<char *> InitStrings;            // +0x28BC
+    // The modem call-waiting strings (wide; 0x0066EAA0 adds the four TXT_CWAIT_* texts).
+    DynamicVectorClass<unsigned short *> CallWaitStrings;   // +0x28D4
+    char unknown_28ec[0x290C - 0x28EC];
     int unknown_290c;                       // +0x290C the ping class (1: below 1000 ms, 2: above)
-    char unknown_2910[0x293C - 0x2910];
+    bool ViaPacketRouter;                   // +0x2910 (also unknown_flag_a3fba8)
+    char unknown_2911[0x293C - 0x2911];
     UnknownSessionBlock_293C unknown_293c;  // +0x293C (MPCooperative slot 34 saves it, slot 37 restores it)
     UnknownSessionBlock_299C unknown_299c;  // +0x299C (the same)
     char unknown_29bc[0x2FA0 - 0x29BC];
@@ -145,11 +192,19 @@ struct UnknownSessionState {
     // 0x0065C520 clears both when it drops the master (names after TS/YR's
     // SessionClass MasterPlayerName/MasterPlayerID, hypothesis).
     unsigned short MasterPlayerName[21];    // +0x2FC8 (wide)
-    char unknown_2ff2[0x301C - 0x2FF2];
+    char unknown_2ff2[0x2FF4 - 0x2FF2];
+    int unknown_2ff4[8];                    // +0x2FF4 (Create_Connections sets each to TickCount)
+    char unknown_3014[0x301C - 0x3014];
     int MasterPlayerID;                     // +0x301C
     char unknown_3020[0x3022 - 0x3020];
     UnknownSessionBlock_3022 unknown_3022;  // +0x3022 (MPCooperative slot 34 saves it, slot 37 restores it)
-    char unknown_3032[0x3080 - 0x3032];
+    char unknown_3032[0x3034 - 0x3032];
+    int unknown_3034;                       // +0x3034 (also unknown_a402cc; Create_Connections clears it)
+    bool unknown_3038;                      // +0x3038 (game mode 4: connect through the packet router)
+    int unknown_303c;                       // +0x303C (also unknown_a402d4; -1)
+    char unknown_3040[0x3044 - 0x3040];
+    int unknown_3044;                       // +0x3044 (20)
+    char unknown_3048[0x3080 - 0x3048];
     unsigned char unknown_3080;             // +0x3080 (0x00672F10 returns it; the dialog control test 0x005E0760)
     char unknown_3081[0x3AA4 - 0x3081];
     int unknown_3aa4;                       // +0x3AA4 (MPCooperative slot 34 saves it, slot 37 restores it)
@@ -161,6 +216,15 @@ struct UnknownSessionState {
     // RA2.INI (0x00670380; Red Alert's Write_MultiPlayer_Settings; after the skirmish
     // dialog and WOL games).
     void Write_MultiPlayer_Settings();
+    // Adds the four TXT_CWAIT_* strings to CallWaitStrings (0x0066EAA0).
+    void Unknown_0066EAA0();
+    // Reads the scenario descriptions and sets UniqueID (0x0066EDB0; Red Alert's One_Time).
+    void One_Time();
+    void Read_Scenario_Descriptions();      // 0x00670C50
+    // A number from the time, the free disk space and PATH (0x00671600).
+    unsigned long Compute_Unique_ID();
+    // Deletes the maps, the init strings and the phone book (0x006714B0).
+    void Free_Scenario_Descriptions();
     // Makes a connection to every other player (game modes 3 and 4) and records the
     // houses' addresses; 0 in other modes (0x0066EE50; Red Alert's Create_Connections;
     // Do_Lose after a networked replay restarts).

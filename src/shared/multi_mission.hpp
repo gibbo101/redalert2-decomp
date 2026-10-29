@@ -5,8 +5,15 @@
 #define RA2_SHARED_MULTI_MISSION_HPP
 
 #include "shared/vector_class.hpp"
+#include "shared/type_list.hpp"
 
 class Wstring;
+
+// A CD the map needs (RTTI: TypeList<DiskID>, an enum; -1 any disk, -2 the map file
+// itself is present).
+enum DiskID {
+    DISK_ANY_UNKNOWN = -1
+};
 
 class MultiMission {
 public:
@@ -25,7 +32,20 @@ public:
     bool unknown_17c;                       // +0x17C (a game mode test is skipped when false and 0x0073C370 agrees)
     char unknown_17d[0x184 - 0x17D];
     int unknown_184;                        // +0x184 the map's player count (MPCooperative slot 37: the computers are two fewer)
+    TypeList<DiskID> DiskIDs;               // +0x188 the disks the map is on (TypeList: 0x1C bytes)
+    char unknown_1a4[0x1BC - 0x1A4];       // +0x1A4 DynamicVectorClass<Wstring> GameModes (vtable 0x007A9664; not declared: see Session173 NOTES)
 };
+
+// Whether a disk list holds the disk (inline; expanded twice in 0x00671F00).
+inline bool Is_On_Disk(TypeList<DiskID> const &list, DiskID disk)
+{
+    for (int index = 0; index < list.Count(); index++) {
+        if (list[index] == disk) {
+            return true;
+        }
+    }
+    return false;
+}
 
 extern DynamicVectorClass<MultiMission *> unknown_multi_missions_a3d8d8;
 

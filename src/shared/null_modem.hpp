@@ -50,15 +50,7 @@ public:
     char *SendBuf;                      // +0x50
 };
 
-// The serial settings the dialogs edit (Westwood's SerialSettingsType;
-// only the fields used here).
-struct SerialSettingsType {
-    int Port;                           // +0x00 the port address, or 1 for a registry modem
-    int IRQ;                            // +0x04
-    int Baud;                           // +0x08
-    char unknown_0c[0x30 - 0x0C];
-    char ModemName[64];                 // +0x30 (length a hypothesis)
-};
+#include "shared/serial_settings.hpp"
 
 // ESC aborted the modem operation (0x00A72EC4).
 extern bool unknown_modem_aborted_a72ec4;
