@@ -51,3 +51,5 @@ bool __fastcall Select_Scenario_005c7c30(int index)
     unknown_session_a3d298.ScenarioFileLength_87c = CCFileClass(unknown_session_a3d298.ScenarioFileName_658).Size();
     return true;
 }
+// @ref ??_EWstring@@QAEPAXI@Z=0040af40
+// @ref ??_I@YGXPAXIHP6EX0@Z@Z=0040af00

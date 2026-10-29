@@ -29,3 +29,4 @@ int MPCooperative::Unknown_005A2E50()
     }
     return found;
 }
+// @ref ??_EWstring@@QAEPAXI@Z=0040af40

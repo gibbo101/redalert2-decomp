@@ -120,3 +120,5 @@ bool ModemGuest::Receive_Options_00597e50(UnknownSerialPacket const *packet)
     }
     return true;
 }
+// @ref ??_EWstring@@QAEPAXI@Z=0040af40
+// @ref ??_I@YGXPAXIHP6EX0@Z@Z=0040af00

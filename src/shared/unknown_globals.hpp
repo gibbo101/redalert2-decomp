@@ -172,6 +172,9 @@ struct UnknownGlobalPacket {
         struct {
             unsigned short Names[(0x1C7 - 0x2F) / 2];   // +0x2F the slot names (wide; Unknown_Slot_Names_005c8cf0 fills them)
         } Slots;                        // command 0x16
+        struct {
+            int Percent;                // +0x2F the sender's loading progress (UnknownSessionState 0x00672160)
+        } Progress;                     // command 0x0F
     };
 };
 #pragma pack(pop)
@@ -187,6 +190,8 @@ struct UnknownGameOptions {
     // (first_slot for slot 1, else other_slots, -2, -2) (0x0066F1F0).
     void Read(CCINIClass &ini, char const *section, int other_slots, int first_slot);
     void Write(CCINIClass &ini, char const *section);   // 0x00670270
+    // Credits 10000, ten units, the five flags set, the rest 0 (0x0066E330; expanded into the session constructor).
+    UnknownGameOptions();
 
     int GameMode;                           // +0x00 (default: the first registered mode's id)
     int ScenIndex;                          // +0x04
@@ -212,6 +217,26 @@ struct UnknownSessionState {
     void Loading_Progress_00672160(int percent);
     // The colour scheme of a player colour (0x006715D0; -2 reads as 8).
     int Unknown_006715D0(int color);
+    // The unknown_3022 value of the session player with this ID; 0 when none has it (0x00672F50).
+    unsigned short Unknown_00672F50(int id);
+    // The lobby slot whose name equals this session player's name; 0 when none (0x00672F90).
+    int Unknown_00672F90(int player);
+    // Entered once while unknown_flag_a40958 is set (+0x3080 records it): keeps the game speed in
+    // unknown_game_speed_7f3230 (game mode 0 runs at speed 2), pauses the game, captures the mouse and sets the
+    // global volume to full (0x00672DE0; callers around Special_Dialog 0x00481850; hypothesis).
+    void Unknown_00672DE0();
+    // Undoes 0x00672DE0: restores the speed, stops the sound and speech, disables the tooltips, releases and
+    // hides the mouse (0x00672E70).
+    void Unknown_00672E70();
+    // Resolves the random choices before a game: observers (-3) get colour 8, random countries (-2) come from
+    // the game mode (slot 23; the session's 0x00672940 without one) and random colours from 0x00672980, for the
+    // session players and the eight computer slots (slot 24 for their countries); the first player's colour goes to
+    // unknown_a3d3b4 (0x00672BB0).
+    void Unknown_00672BB0();
+    // The lobby slot whose name equals the text; 0 when none (0x00672FF0).
+    int Unknown_00672FF0(char const *name);
+    // The session player whose name equals this lobby slot's name; 0 when none (0x00673030).
+    int Unknown_00673030(int slot);
 
     // Data (offsets from 0x00A3D298; the first word is unknown_game_mode_a3d298,
     // +0x40/+0x28/+0xA7 are declared separately in this header for now).
@@ -251,10 +276,10 @@ struct UnknownSessionState {
     char unknown_a9[0x104 - 0xA9];
     unsigned long UniqueID;                 // +0x104 (One_Time: Compute_Unique_ID)
     char Handle[20];                        // +0x108 the player's name (also unknown_name_a3d3a0)
-    char unknown_11c[0x120 - 0x11C];    // +0x11C (also unknown_a3d3b4)
+    int unknown_11c;                        // +0x11C (also unknown_a3d3b4; with +0x120 the colour 0x00672AE0 copies from +0x12C)
     int unknown_120;                        // +0x120 (the join dialog copies +0x130 here)
     int unknown_124;                        // +0x124 (also unknown_a3d3bc)
-    char unknown_128[0x12C - 0x128];
+    int unknown_128;                        // +0x128 (with +0x124 the country 0x00672A30 copies from +0x134)
     int unknown_12c;                        // +0x12C the player's colour (GDlgSupp 0x004D23C0)
     int unknown_130;                        // +0x130 (-2: the colour shows as random; 0x004D23C0)
     int unknown_134;                        // +0x134 the player's country (GDlgSupp 0x004D1820)
@@ -657,6 +682,10 @@ extern int unknown_ini_format_a40d24;
 extern bool unknown_flag_a40d28;  // 0x00A40D28 application active (focus)
 extern bool unknown_flag_a40d44;  // 0x00A40D44
 extern int unknown_ab9174;        // 0x00AB9174 (cleared when the game pauses or resumes)
+// The game speed kept by UnknownSessionState::Unknown_00672DE0 (0x007F3230; -1: none).
+extern int unknown_game_speed_7f3230;
+// An empty function 0x00672E70 calls first (0x005173A0).
+void Unknown_005173A0();
 // The global sound volume kept while the game window has no focus (0x007F1DEC;
 // 0x4000 otherwise) and the tooltip state restored with the focus (0x00A40B34).
 extern int unknown_saved_volume_7f1dec;

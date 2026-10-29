@@ -49,4 +49,6 @@ extern DynamicVectorClass<NodeNameType *> unknown_players_a3fa7c;
 // entry the dialogs compare a row against (0x00A72D44; meaning not recovered).
 extern NodeNameType *unknown_player_slots_a3fa98[8];
 extern NodeNameType *unknown_player_a72d44;
+// Narrows a wide string into a rotating buffer (0x006FA120; moved from shared/lobby.hpp).
+char *__fastcall Unknown_006FA120(unsigned short const *string);
 #endif

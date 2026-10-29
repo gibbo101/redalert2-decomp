@@ -118,6 +118,7 @@ struct UnknownSerialPacket {
     union {
         unsigned short Message[1];      // +0x19 a message's text (wide; length not recovered)
         char Taunt;                     // +0x19 a taunt's packed byte
+        int Progress;                   // +0x19 the sender's loading progress (command 0x6C; 0x00672160)
         struct {
             char unknown_19[4];
             char Color;                 // +0x1D the player leaving

@@ -161,3 +161,5 @@ bool ModemHost::Start_Game_0059c290(bool load_game)
     Debug_Printf("ModemHost.StartGame(exit)\n");
     return true;
 }
+// @ref ??_EWstring@@QAEPAXI@Z=0040af40
+// @ref ??_I@YGXPAXIHP6EX0@Z@Z=0040af00

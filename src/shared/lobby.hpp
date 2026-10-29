@@ -72,8 +72,6 @@ void __fastcall Download_Map_Preview_005c7970();
 
 // Wide-string comparison, 0 when equal (0x007837D3; the CRT's _wcsicmp).
 int Compare_Wide_007837d3(wchar_t const *first, wchar_t const *second);
-// Narrows a wide string into a rotating buffer (0x006FA120).
-char *__fastcall Unknown_006FA120(unsigned short const *string);
 // Widens a narrow string into a rotating buffer (0x006FA180).
 wchar_t *__fastcall Unknown_006FA180(char const *text);
 // Case-insensitive comparison, 0 when equal (0x00781F20; the CRT's _stricmp).

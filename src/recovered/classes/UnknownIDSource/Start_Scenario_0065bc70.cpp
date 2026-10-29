@@ -127,3 +127,5 @@ bool __fastcall Start_Scenario_0065bc70(char const *name, bool briefing, int cam
     unknown_flag_a40380 = true;
     return true;
 }
+// @ref ??_EWstring@@QAEPAXI@Z=0040af40
+// @ref ??_I@YGXPAXIHP6EX0@Z@Z=0040af00

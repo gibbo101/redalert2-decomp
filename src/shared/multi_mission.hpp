@@ -7,7 +7,7 @@
 #include "shared/vector_class.hpp"
 #include "shared/type_list.hpp"
 
-class Wstring;
+#include "shared/wstring.hpp"
 
 // A CD the map needs (RTTI: TypeList<DiskID>, an enum; -1 any disk, -2 the map file
 // itself is present).
@@ -24,6 +24,10 @@ public:
     int Unknown_00671F90();
     // Whether the text at +0x58 is a fixed string (0x006720C0).
     bool Unknown_006720C0();
+    // Copies the file name (null: "No File Name") into +0x58 (0x00671FF0; Red Alert's Set_Filename).
+    void Set_Filename(char const *filename);
+    // Copies the digest (null: "No Digest") into +0x15C (0x00672050; Red Alert's Set_Digest).
+    void Set_Digest(char const *digest);
     // Whether the map allows the game mode named (0x006720E0).
     bool Unknown_006720E0(Wstring &mode);
 
@@ -34,7 +38,7 @@ public:
     char unknown_17d[0x184 - 0x17D];
     int unknown_184;                        // +0x184 the map's player count (MPCooperative slot 37: the computers are two fewer)
     TypeList<DiskID> DiskIDs;               // +0x188 the disks the map is on (TypeList: 0x1C bytes)
-    char unknown_1a4[0x1BC - 0x1A4];       // +0x1A4 DynamicVectorClass<Wstring> GameModes (vtable 0x007A9664; not declared: see Session173 NOTES)
+    DynamicVectorClass<Wstring> GameModes;  // +0x1A4 the game modes the map allows (vtable 0x007A9664)
 };
 
 // Whether a disk list holds the disk (inline; expanded twice in 0x00671F00).
