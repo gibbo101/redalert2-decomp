@@ -6,6 +6,11 @@
 
 #include "shared/vector_class.hpp"
 
+#ifndef _WCHAR_T_DEFINED
+typedef unsigned short wchar_t;
+#define _WCHAR_T_DEFINED
+#endif
+
 class MPlayerScoreType;
 
 // Shown after each cooperative campaign map.
@@ -34,5 +39,9 @@ public:
 
 // Set by the score screens (read and cleared by MPCooperative slot 36; 0x00850504).
 extern bool unknown_score_850504;
+// The shown map's game time (CampaignScoreClass::Presentation; 0x00850508).
+extern int unknown_score_time_850508;
+// The shown map's difficulty, -1 when unknown (CampaignScoreClass::Presentation; 0x007D1480).
+extern int unknown_score_difficulty_7d1480;
 
 #endif
