@@ -314,3 +314,11 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   layouts (PhoneEd 0x60D970, ModemGst 0x598E10/0x596010, SerialEd 0x66CA70) and helpers 0x5FF610/0x600120, and
   inlines TTimerClass::Time at some sites while calling 0x5CFDB0 (31 B, lands with it) at others. Init_Null_Modem
   0x5CEA30 is accepted in population-2402 under a stand-in class but belongs to population-293 (debt).
+- House.CPP after House171 (miss/, NOTES; score inside the unit): 0x4F3F40 95.45 (index+base operand order),
+  0x4E67A0 84.06 (inlined Is_Ally result kept as 0/1 in al; 0x4EB360 has the same pattern), House_Facing_Score
+  0x4F02E0 81.82, Spend_Money 0x4E5280 76.61, All_Prerequisites_Available 0x4EF740 39.07. Not drafted: Flag_Attach
+  0x4E76A0 (needs +0x5308 and Flag_Remove as AbstractClass *), 0x4F1E50/0x4F1FF0/0x4F2190 (return a DVC by value;
+  VectorClass ctor 0x4F8900 is accepted under a seed name), 0x4E64F0, 0x4EAF30, 0x4EA1B0, 0x4EA4D0, the >800 B rest.
+  Is_Human_Control is now the mode==0-first inline: recheck House164's AI draft with it. Type debt: Sell_Wall casts
+  `(int)this` into building-type slot 33 (Cost_Of(HouseClass *) declared int); unknown_max_ahead_a3d560 is a
+  file-level extern (ipx_manager.hpp has the other declaration; unknown_globals.hpp is the better home).

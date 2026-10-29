@@ -10,12 +10,10 @@
 // @ref ??_C@_0BD@MGDA@?5?5?5?5?5Releasing?5?$CFs?6?$AA@=007d2208
 // @ref ??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z=005952f0
 // @ref ?FastKey@@3VPKey@@A=00839010
-// @ref ?Unknown_00496460@@YAXPBD@Z=00496460
+// @ref ?Unknown_00496460@@YAXPBDZZ=00496460
 // @ref ??_C@_0BD@PMEL@LOADED?5NEUTRAL?4MIX?$AA@=007dd8f4
 // @ref ??_C@_0M@HJIF@NEUTRAL?4MIX?$AA@=007dd908
 
-// Shows a loading message (0x00496460; hypothesis).
-void __cdecl Unknown_00496460(char const *text);
 
 bool __cdecl Unknown_0051A2B0()
 {
