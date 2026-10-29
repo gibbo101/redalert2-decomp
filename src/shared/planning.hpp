@@ -104,9 +104,9 @@ struct PlanningEventTargets {
     char unknown_07[0x0C - 0x07];
     unsigned char unknown_0c;           // +0x0C (2 -> 0x1D in 0x00611440)
     char unknown_0d;
-    UnknownTarget Target_0e;            // +0x0E
-    UnknownTarget Target_13;            // +0x13
-    UnknownTarget Target_18;            // +0x18
+    TargetClass Target_0e;              // +0x0E
+    TargetClass Target_13;              // +0x13
+    TargetClass Target_18;              // +0x18
     unsigned char unknown_1d;           // +0x1D (set to 1 when planned, 0x00614B70)
 };
 #pragma pack(pop)
@@ -143,8 +143,8 @@ extern int unknown_counts_a76684[8];            // 0x00A76684
 extern bool unknown_flag_a767a5;                // 0x00A767A5 (the planning lists are being torn down)
 extern bool unknown_flag_a767a4;                // 0x00A767A4
 extern bool unknown_flag_a767a6;                // 0x00A767A6 (a re-entry guard)
-extern int unknown_int_a76728;                  // 0x00A76728
-extern int unknown_int_a7672c;                  // 0x00A7672C
+// The screen point the mouse button went down at ((-1, -1): none) (0x00A76728).
+extern Point2D unknown_point_a76728;
 extern bool unknown_flag_a76770;                // 0x00A76770
 // An object the planning mode notifies (0x00A76680; hypothesis: its slot 0 takes a message and an argument).
 struct UnknownPlanningSink {
@@ -166,7 +166,7 @@ void __fastcall Unknown_006F58E0(wchar_t const *text, int priority);
 void __fastcall Planning_Message(char const *label);
 // Once per session: shows a refusal message and plays the refused-action sound (0x00616FD0).
 void __fastcall Planning_Refuse(char const *label);
-void Planning_Refuse_No_Guard_Area();                    // 0x00616E70
+void __fastcall Planning_Refuse_No_Guard_Area();         // 0x00616E70
 extern bool unknown_flag_a766c8;                // 0x00A766C8 (a refusal was shown)
 extern int unknown_counts_a766b4[];             // 0x00A766B4 (help messages shown, per kind)
 // Shows a planning-mode help message the first time it is wanted (0x00616F50).
@@ -230,6 +230,14 @@ void __fastcall Planning_Draw_Thick_Line(int thickness, int color, Point2D start
 void __fastcall Planning_Draw_Dashed_Thick_Line(int thickness, int color, Point2D start, Point2D end);   // 0x0061A6F0
 // Whether the techno's mission lets planning mode take over (0x00615A10).
 bool __fastcall Planning_Mission_Allows(TechnoClass *techno);
+// Whether a mission 11 order keeps the techno where it is (0x00615910).
+bool __fastcall Planning_Order_Stays_Put(TechnoClass *techno, int mission, TargetClass target);
+// Lists a copy of an event among the planned events (0x00614350).
+void __fastcall Planning_Store_Event(EventClass const &event);
+// Makes the techno's path loop back to one of its nodes (0x006164E0).
+void __fastcall Planning_Close_Loop(TechnoClass *techno, PlanningNodeClass *node);
+void __fastcall Planning_Unknown_616a50(TechnoClass *techno);   // 0x00616A50
+extern bool unknown_flag_a76788;                // 0x00A76788 (a loop was closed once)
 // Empties the list of nodes drawn on screen (0x00615BC0).
 void Planning_Clear_Drawn();
 // Settles every queued node and empties the queue (0x006146C0).
@@ -356,6 +364,7 @@ public:
     bool Reached(int slot) const;                             // 0x00613B40
     void unknown_612ec0();                                    // 0x00612EC0
     void Add_Node(PlanningNodeClass *node);                   // 0x00613BA0
+    EventClass unknown_613330();                              // 0x00613330
     void unknown_613a80();                                    // 0x00613A80
     bool Has_Node(PlanningNodeClass *node);                   // 0x00613C60
     void unknown_613c80(PlanningNodeClass *node);             // 0x00613C80
@@ -366,6 +375,10 @@ public:
 
     // The node at index, wrapping into the loop past the end; 0 outside.
     PlanningNodeClass *Node_At(int index) const;             // 0x00613C00
+
+    // The index of a node in the path, or -1 (expanded inline by
+    // 0x00617A10 and 0x006164E0).
+    int Node_Index(PlanningNodeClass *node) { return Nodes.ID(node); }
 
     // The last node of the path, or 0 (expanded inline by its callers).
     PlanningNodeClass *Last_Node() const

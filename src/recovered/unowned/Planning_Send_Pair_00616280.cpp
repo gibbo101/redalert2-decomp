@@ -9,17 +9,17 @@ void __fastcall Planning_Send_Pair(AbstractClass *source, PlanningNodeClass *nod
 {
     EventClass event = *node->Members[0]->Event;
     PlanningEventTargets const *view = (PlanningEventTargets const *)&event;
-    UnknownTarget const *reference;
-    if (view->Target_0e.unknown_4) {
+    TargetClass const *reference;
+    if (view->Target_0e.Kind) {
         reference = &view->Target_0e;
-    } else if (view->Target_18.unknown_4) {
+    } else if (view->Target_18.Kind) {
         reference = &view->Target_18;
-    } else if (view->Target_13.unknown_4) {
+    } else if (view->Target_13.Kind) {
         reference = &view->Target_13;
     } else {
         return;
     }
-    AbstractClass *object = reference->Unknown_006B5810();
+    AbstractClass *object = reference->As_Abstract();
     if (object) {
         EventClass send(unknown_player_a35db4->ArrayIndex, 0x2A, TargetClass(source), TargetClass(object));
         Unknown_0062E670(send);

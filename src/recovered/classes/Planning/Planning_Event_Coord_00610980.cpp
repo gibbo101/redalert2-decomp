@@ -8,18 +8,18 @@ CoordStruct __fastcall Planning_Event_Coord(EventClass const &event)
 {
     if (event.Type == 4) {
         PlanningEventTargets const &targets = (PlanningEventTargets const &)event;
-        if (targets.Target_0e.unknown_4) {
-            AbstractClass *object = targets.Target_0e.Unknown_006B5810();
+        if (targets.Target_0e.Kind) {
+            AbstractClass *object = targets.Target_0e.As_Abstract();
             if (object) {
                 return object->unknown_slot22();
             }
-        } else if (targets.Target_18.unknown_4) {
-            AbstractClass *object = targets.Target_18.Unknown_006B5810();
+        } else if (targets.Target_18.Kind) {
+            AbstractClass *object = targets.Target_18.As_Abstract();
             if (object) {
                 return object->unknown_slot22();
             }
-        } else if (targets.Target_13.unknown_4) {
-            AbstractClass *object = targets.Target_13.Unknown_006B5810();
+        } else if (targets.Target_13.Kind) {
+            AbstractClass *object = targets.Target_13.As_Abstract();
             if (object) {
                 return object->unknown_slot22();
             }
