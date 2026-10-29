@@ -172,3 +172,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   between the NotHuman block and the switch), slot 67 0x500550 62.78 (w/p0.cpp, still has dead Map_Cell_At calls),
   slot 260 0x501CE0 70.74 (Cell ctor 0x42AD30 out of line: inline budget spent earlier), slot 101 0x503190 77.82,
   slot 93 0x500AA0 drafts stale. Needs a controlled study of partial-function constant registers first.
+- BuildingLightClass (BLight150 best/, NOTES): ctor 0x432FC0 73.59 (96.54 with UnknownCoord434820 forced out of
+  line: /Ob2 budget inlines the first 0x434820 site, every natural extra cost pushes the second out instead);
+  slot 67 0x433380 54.51 fully decoded (inline pattern of operator- 0x4348F0 / 0x41B630 per site in NOTES, and
+  an aligned frame from the `double angle` local); AI 0x433970 not started. COMDAT CoordStruct::operator-
+  0x4348F0 lands with whichever of slot 67/AI first calls it out of line.

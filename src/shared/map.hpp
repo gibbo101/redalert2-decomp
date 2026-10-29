@@ -192,8 +192,10 @@ public:
     // border, the layout of HouseClass +0x56D0 (0x0054E370; FootClass slot 93).
     int Unknown_0054E370(Cell const &cell);
     // A reachable cell near `cell` for a speed type and zone (0x005502E0;
-    // hypothesis: Westwood's Nearby_Location; FootClass 0x004CCA40).
-    Cell Unknown_005502E0(Cell const &cell, int speed, int zone_index, int zone, bool bridge, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, Cell const &arg12, int arg13);
+    // hypothesis: Westwood's Nearby_Location; FootClass 0x004CCA40). `size` is
+    // a Point2D by value (width, height): callers build it in a register pair,
+    // the second a copy of the first (UnitClass slot 87 0x007072D0).
+    Cell Unknown_005502E0(Cell const &cell, int speed, int zone_index, int zone, bool bridge, Point2D size, int arg8, int arg9, int arg10, int arg11, Cell const &arg12, int arg13);
     void Unknown_00552570(Cell const &cell);      // 0x00552570 (repairs the bridge at a cell; InfantryClass slot 93)
     void Unknown_00555A60(Cell const &cell);      // 0x00555A60 (the other bridge kind)
     Cell Unknown_00568ED0(Cell const &cell, Cell const &from);   // 0x00568ED0 (FootClass 0x004C4C30)
