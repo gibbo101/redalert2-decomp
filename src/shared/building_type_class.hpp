@@ -164,7 +164,7 @@ public:
     // Loads the type images and buildups for a theater (0x00458600).
     static void __fastcall Init(int theater);
     static void unknown_func_458510();                                  // 0x00458510 (BUILDNGZ.SHP)
-    int unknown_func_45ec50() const;                                    // 0x0045EC50
+    bool unknown_func_45ec50() const;                                   // 0x0045EC50 (sensor array, tick tank, ICBM launcher or artillery)
     bool unknown_func_458e00(void **image, int *frame) const;            // 0x00458E00 (rubble image and frame 3)
     bool unknown_func_458e50(void **image, int *frame) const;            // 0x00458E50 (rubble image and frame count / 2 + 3)
     void Read_Rest(CCINIClass &ini);

@@ -4,8 +4,8 @@
     "id": "population-2919",
     "inventory_sha256": "a1b6165902014922769d82c5f4b572bacd472903b74b7b29bc030844dde62b81",
     "gaps_sha256": "79ce03f502fbd17fdda574a54d74d10055df25bbb259de3be009d10e257a3ecb",
-    "historical_population_sha256": "b584e7608786d83f658f722a78151cdc99a2790d2487998c77356c0cc0b30779",
-    "historical_acceptance_sha256": "afdde93e00a845de77ef64aaf7ac00c5fa3542c2e6c5228dac410d90e7fceacc"
+    "historical_population_sha256": "d0aa89c10674fbd15b87972f639d473781b10b7d12b7e26ec8d8444e4013ad43",
+    "historical_acceptance_sha256": "a9c44e6cbe42da44057264c90793c881356d2296dc9369f811c52e7d2e28858a"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6014,7 +6014,7 @@
     "?Get_Turret_Weapon@TechnoTypeClass@@QBEHH@Z": 7206576,
     "?Repair_Step@UnitTypeClass@@UBEHXZ": 7386000,
     "_CLSID_WarheadTypeClass": 8002992,
-    "?unknown_func_45ec50@BuildingTypeClass@@QBEHXZ": 4582480,
+    "?unknown_func_45ec50@BuildingTypeClass@@QBE_NXZ": 4582480,
     "?Has_Turret_Weapons@TechnoTypeClass@@QBE_NXZ": 7206528,
     "?unknown_func_733a60@WeaponTypeClass@@QBEHXZ": 7551584,
     "?Free_Buildup@BuildingTypeClass@@QAEXXZ": 4581664,

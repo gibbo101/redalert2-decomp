@@ -4,8 +4,8 @@
     "id": "population-2630",
     "inventory_sha256": "4130e9a247616979ba8562309900879a02a0ee75867541b5da482df7929c2ca7",
     "gaps_sha256": "7389b37ceaa382531b33460dc0c8508ce01f2fb298de43b0f3c5d9ad9455bb3f",
-    "historical_population_sha256": "7382fd0bd3795af89f42d4b191e17999c3d8723d728b95eb687e7d37135c86b7",
-    "historical_acceptance_sha256": "3355d2e9212068c501a549ce30a40579f37add6b1e02a9bb2da49c1e44cccea3"
+    "historical_population_sha256": "d9bf49f82d42fb518c0cc2565e8171209efa36d5b46f9418fadde7fd6603b6ec",
+    "historical_acceptance_sha256": "960bf8217c05abf08435fdd34a8c5f8605fd7690c4046ab8dc8493634b52cc0c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3129,7 +3129,7 @@
     "?Size@BufferIOFileClass@@UAEJXZ": 4390272,
     "?Size@RawFileClass@@UAEJXZ": 6525312,
     "?unknown_slot130@BuildingClass@@UAEHXZ": 4479296,
-    "?unknown_func_45ec50@BuildingTypeClass@@QBEHXZ": 4582480,
+    "?unknown_func_45ec50@BuildingTypeClass@@QBE_NXZ": 4582480,
     "?ID@?$VectorClass@U?$TPoint3D@H@@@@UAEHABU?$TPoint3D@H@@@Z": 4583264,
     "?ID@?$VectorClass@U?$TPoint3D@H@@@@UAEHPBU?$TPoint3D@H@@@Z": 4583344,
     "?ID@?$DynamicVectorClass@URGBClass@@@@UAEHPBURGBClass@@@Z": 4640112,

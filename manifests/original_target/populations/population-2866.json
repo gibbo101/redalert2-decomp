@@ -4,8 +4,8 @@
     "id": "population-2866",
     "inventory_sha256": "3e023908585ae49fd0823fa0637c7f10d66e70506eb195ae5c54d0a2a8c6fd4d",
     "gaps_sha256": "e06d6cd3c70398d230f749dedf798914ae69ac15d3be098590cddf9d16b79266",
-    "historical_population_sha256": "6554a5a7477529563fef28d4b8d5713b0ed5238e8f815ba6b9e7fea24cb3b3b0",
-    "historical_acceptance_sha256": "8be1fa119bececde8ef93afd434777b52bb0f4e31d7ff6249a6c8e09abbb43f9"
+    "historical_population_sha256": "ee828232ceaff5464b078635518eccbd6c0d1ff29225cabcf8f27dfe915e65ae",
+    "historical_acceptance_sha256": "16d114a8a62cf4bebe4082b3a62166a65012fecfab082b01783d7a877a0d1eed"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5596,7 +5596,7 @@
     "?Size@BufferIOFileClass@@UAEJXZ": 4390272,
     "?Size@RawFileClass@@UAEJXZ": 6525312,
     "?unknown_slot130@BuildingClass@@UAEHXZ": 4479296,
-    "?unknown_func_45ec50@BuildingTypeClass@@QBEHXZ": 4582480,
+    "?unknown_func_45ec50@BuildingTypeClass@@QBE_NXZ": 4582480,
     "?Enable@GadgetClass@@UAEXXZ": 5042496,
     "?Disable@GadgetClass@@UAEXXZ": 5042512,
     "?Translate@Matrix3D@@QAEXMMM@Z": 5832848,
