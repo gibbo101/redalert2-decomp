@@ -422,8 +422,15 @@ extern int unknown_a71ea4;
 int Unknown_00737af0();
 // The version object (0x00A40C88; its two values go into a join request, 0x007131B0/0x007131C0).
 struct UnknownVersionObject {
-    unsigned long Unknown_007131b0();
-    unsigned long Unknown_007131c0();
+    // Resets the version clipping range (0x00713160; Red Alert's Init_Clipping).
+    void Init_Clipping_00713160();
+    // The version both sides can play for a peer's range: 0 when the peer is too old, -1
+    // when this game is (0x00713170; Red Alert's VersionClass::Clip_Version).
+    int Clip_Version_00713170(unsigned long min, unsigned long max);
+    // The protocol of a version (0x00713130; Red Alert's Version_Protocol).
+    int Version_Protocol_00713130(int version);
+    unsigned long Unknown_007131b0();       // 0x007131B0 the minimum version (0x20000)
+    unsigned long Unknown_007131c0();       // 0x007131C0 the maximum version (0x20000)
 };
 extern UnknownVersionObject version_object_00a40c88;
 // Asks the host of a game to let the player join (NET_QUERY_JOIN); refused with a chat message and the

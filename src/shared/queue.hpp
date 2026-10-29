@@ -18,6 +18,7 @@
 #include "shared/keyboard.hpp"
 #include "shared/mouse.hpp"
 #include "shared/exit.hpp"
+#include "shared/special.hpp"
 #include "shared/ipx_manager.hpp"
 #include "shared/owner_talk.hpp"
 #include "shared/win32_api.hpp"
@@ -125,6 +126,47 @@ struct UnknownSerialPacket {
             char unknown_19[0x9A - 0x19];
             unsigned long ResponseTime; // +0x9A the sender's response time (command 0x69, ModemHost 0x0059B560)
         } Timing;
+        // The game options (command 0x65): the sender's country, colour, version range and INI
+        // checksums (both sides send them; ModemGuest 0x00598330, 0x00597680) and the host's
+        // settings (ModemGuest 0x00597E50 reads them). Names follow the session members.
+        struct {
+            int House;                      // +0x19 the sender's country (unknown_a3d3bc)
+            char Color;                     // +0x1D the sender's colour (unknown_a3d3b4)
+            unsigned long MinVersion;       // +0x1E the sender's version range
+            unsigned long MaxVersion;       // +0x22
+            unsigned short MapName[44];     // +0x26 the map's description
+            int Credits;                    // +0x7E session +0x24
+            unsigned Bases : 1;             // +0x82 bit 0 session +0x20
+            unsigned unknown_28 : 1;        // bit 1 session +0x28 (DestroyableBridges)
+            unsigned Crates : 1;            // bit 2 session +0x29
+            unsigned unknown_bit_3 : 1;
+            unsigned IsOfficial : 1;        // bit 4 session ScenarioIsOfficial_880
+            unsigned unknown_bits_5 : 27;
+            int Checksum;                   // +0x86 the sender's INI checksum sum (Unknown_006525F0)
+            unsigned char TechLevel;        // +0x8A
+            unsigned char UnitCount;        // +0x8B session +0x38
+            unsigned char AICount;          // +0x8C session +0x3C
+            unsigned char AIDifficulty;     // +0x8D session +0x40
+            unsigned unknown_bit_0 : 1;     // +0x8E
+            unsigned unknown_a5 : 1;        // bit 1 session +0xA5 (HarvesterImmune)
+            unsigned unknown_a8 : 1;        // bit 2 session +0xA8
+            unsigned FogOfWar : 1;          // bit 3 session +0xA7
+            unsigned unknown_2a : 1;        // bit 4 session +0x2A
+            unsigned unknown_2b : 1;        // bit 5 session +0x2B
+            unsigned unknown_2c : 1;        // bit 6 session +0x2C
+            unsigned unknown_34 : 1;        // bit 7 session +0x34
+            unsigned unknown_bits_8 : 24;
+            unsigned int Seed;              // +0x92 the random seed (Seed 0x00A40D3C)
+            SpecialClass Special;           // +0x96 the game options word
+            unsigned long unknown_9a;       // +0x9A
+            int FileLength;                 // +0x9E session ScenarioFileLength_87c
+            unsigned char GameSpeed;        // +0xA2 session +0x30
+            char FileName[13];              // +0xA3 session ScenarioFileName_658
+            char Digest[0x20];              // +0xB0 session ScenarioDigest_85a
+            int INIID;                      // +0xD0 the sender's unknown_ini_8397a0_unique_id
+            int ArtID;                      // +0xD4 the sender's unknown_art_ini_unique_id
+            unsigned long Version;          // +0xD8 the sender's version number (0x00737AF0)
+        } Options;
         char unknown_19[0xFA - 0x19];   // the packet is 0xFA bytes (Reconnect_Null_Modem's send and receive copies)
     };
 };

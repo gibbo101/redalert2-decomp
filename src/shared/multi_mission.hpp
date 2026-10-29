@@ -27,7 +27,7 @@ public:
     // Whether the map allows the game mode named (0x006720E0).
     bool Unknown_006720E0(Wstring &mode);
 
-    char unknown_00[0x58];
+    unsigned short Description[0x2C];      // +0x00 the map's description (ModemGuest 0x00597E50 shows it)
     char unknown_58[0x17C - 0x58];          // +0x58 the map's file name (the cooperative campaign records list it)
     bool unknown_17c;                       // +0x17C (a game mode test is skipped when false and 0x0073C370 agrees)
     char unknown_17d[0x184 - 0x17D];

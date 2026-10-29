@@ -362,3 +362,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   description.Get()); 0x5BC460 Init_Network exact (w_hold_abc460.cpp) now that Set_Bridge has landed. Undrafted:
   0x5BBDD0 (WolLadderListCell hash table), 0x5BD070 (4915), 0x5BE6B0, 0x5BEFE0, 0x5C01D0 (three local timer statics,
   atexit dtors are pop-67 seeds), 0x5C08A0 (6798), 0x5C2330.
+- PlanMgr.cpp after PlanMgr186 (build/class-work/PlanMgr186/v, NOTES; parked): nearly every miss is an inline split
+  where the original expands less. 0x616350 Path_Add exact except relocations with Close_Loop inline, but Close_Loop's
+  only out-of-line caller is 0x614BA0 Execute (65.84): land the three together (~1.17 KB). 0x617AF0 90.00 (Member_Event(0)
+  and second Planning_Help(4) out of line), 0x617680 64.31 (Rect family), 0x614850 37.75 (first 612b50 inline, second
+  called; needs 0x610770 and 0x613310 taken over from pops 1640/42), 0x6155E0 56.43, 0x615480 40.15, 0x6165A0 49.28.
+  Exact supporting rewrites in v/ (0x611E20, 0x613A80, 0x611310, 0x61A8B0 operator== returning bool, 0x615FB0).

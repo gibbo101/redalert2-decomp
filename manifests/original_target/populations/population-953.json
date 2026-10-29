@@ -501,65 +501,6 @@
       "source_order": 31887
     },
     {
-      "entry": 5862640,
-      "method": "005974f0",
-      "symbol": "?unknown_disable_ok_and_send_005974f0@@YIXPAUUnknownDialogOwner_005974f0@@@Z",
-      "symbol_prefix": "?unknown_disable_ok_and_send_005974f0@@YIXPAUUnknownDialogOwner_005974f0@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 84,
-      "body_sha256": "331977b280449bc693fc296b0aac3a27cfb7dd45bcc8349ebb14affdda0afec6",
-      "padding_bytes": 12,
-      "full_extent_bytes": 96,
-      "full_extent_sha256": "7bccf15a05ad8adf5cf81a766e8fd614f796ad9fa370d90e6aadee6255d5a3a7",
-      "relocations": [
-        {
-          "offset": 13,
-          "kind": 6,
-          "symbol": "__imp__GetDlgItem@8",
-          "target": 7971996,
-          "addend": 0,
-          "resolved": 7971996
-        },
-        {
-          "offset": 26,
-          "kind": 6,
-          "symbol": "__imp__EnableWindow@8",
-          "target": 7971984,
-          "addend": 0,
-          "resolved": 7971984
-        },
-        {
-          "offset": 59,
-          "kind": 6,
-          "symbol": "?unknown_message_sink_a40a28@@3VUnknownMessageSink_005974f0@@A",
-          "target": 10750504,
-          "addend": 0,
-          "resolved": 10750504
-        },
-        {
-          "offset": 72,
-          "kind": 20,
-          "symbol": "?unknown_send_5d05f0@UnknownMessageSink_005974f0@@QAEXPAXHH@Z",
-          "target": 6096368,
-          "addend": 0,
-          "resolved": 233652
-        }
-      ],
-      "source_sha256": "49895b0275ed33a70998ca9b3e45494cb5879a80453141cfae12452f66e48fff",
-      "source": "src/recovered/unowned/unknown_disable_ok_and_send_005974f0.cpp",
-      "population": "population-953",
-      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_disable_ok_and_send_005974f0",
-      "source_order": 31889
-    },
-    {
       "entry": 4223024,
       "method": "00407030",
       "symbol": "?unknown_start_00407030@@YIXPAUUnknownFixedTimer_00407030@@H@Z",
