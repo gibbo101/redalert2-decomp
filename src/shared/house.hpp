@@ -225,6 +225,7 @@ public:
     void Make_Enemy(HouseClass *house, bool announce);     // 0x004E5A70
     void unknown_func_4e8300(int color, int arg2, int balance);   // 0x004E8300
     double Power_Fraction() const;                         // 0x004E8330 (1 when power covers the drain)
+    float unknown_func_4f5a20(TechnoTypeClass *type);       // 0x004F5A20 (the owner type's multiplier for the type's kind; FootClass 0x004C9B10)
     float unknown_func_4f5a70(TechnoTypeClass *type);       // 0x004F5A70 (the owner type's build time multiplier for the type's kind; TechnoClass 0x006C22A0)
     float unknown_func_4f58a0(TechnoTypeClass *type);       // 0x004F58A0 (the owner type's armor multiplier against the type's kind; TechnoClass 0x006CA6C0)
     // Index in Houses of the house with this name, or -1 (0x004F5B40).
@@ -321,6 +322,7 @@ public:
     Cell Random_Cell_In_Zone(int zone);                    // 0x004ECA50 (RA's Random_Cell_In_Zone)
     // Sells the wall overlay at a cell for its owner (RA's Sell_Wall; 0x004E8380).
     void Sell_Wall(Cell const &cell, bool quiet);
+    CoordStruct unknown_func_4e8610(int arg) const;        // 0x004E8610 (returns the unit's zero coordinate; no caller)
     void unknown_func_4ee8f0();                            // 0x004EE8F0 (turns the house's firestorm walls on)
     void unknown_func_4eea40();                            // 0x004EEA40 (turns them off)
     // The team types the house may make now (0x004E5CF0; RA's name, whose version

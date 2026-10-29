@@ -477,3 +477,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   waypoint sound 0x6B0EC0 85.07 (esi/edi), show text 0x6B0440 92.86. Not started: 0x6AFD80 (755), Execute 0x6ADAE0
   (7.3 KB switch). Type debt: 0x6B2400/0x6B2860 cast `(AbstractClass *)&Map[coord]` because map_cell.hpp's stand-in
   CellClass does not derive from AbstractClass.
+- NullDlg.CPP after NullDlg213 (build/class-work/NullDlg213/w, hdr/, NOTES): Select_Serial_Dialog 0x5CDF00 83.17 (2567 B;
+  structure, frame, jump table and inline budget match; left: UpdateWindow/ShowWindow import pointers in swapped
+  registers, cached zero in edi used in case 0x653). Landing needs Init_Null_Modem 0x5CEA30 moved from population-2402
+  into the unit under its real name, Options.Seed as int in queue.hpp, SetCommBreak/ClearCommBreak, new phone_ed.hpp /
+  serial_ed.hpp. Register-allocation work: Windows lead 2 queue. 0x5CFDB0 (31 B) lands with it.
