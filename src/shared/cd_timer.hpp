@@ -27,10 +27,13 @@ public:
     // The time left (Westwood's operator long); UnknownStage::Graphic_Logic
     // tests `Timer == 0` through it (TerrainClass::AI 0x006E3F10).
     operator long() const { return Value(); }
+    // Value tests Started against 0xFFFFFFFFU as Westwood's FTIMER.H does (an
+    // unsigned test): VC6 then keeps it after Stop's signed test, as
+    // TActionClass 0x006B0A60 does (stop the mission timer).
     long Value() const
     {
         long remain = DelayTime;
-        if (Started != -1) {
+        if (Started != 0xFFFFFFFFU) {
             long value = Timer - Started;
             if (value < remain) {
                 return remain - value;

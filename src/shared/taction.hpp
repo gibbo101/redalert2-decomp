@@ -127,6 +127,7 @@ public:
     bool unknown_buildings_with_tag_power_up(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B02F0
     bool unknown_technos_with_tag_to_house(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0360
     bool unknown_base_building(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0560 (Red Alert's TACTION_BASE_BUILDING)
+    bool unknown_stop_mission_timer(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0A60
     static int __fastcall Action_Flags(int type);                       // 0x006B2DF0 (hypothesis)
     // What the value of an action type names (0x006B2AB0; 0x2B, 0x28, 0x0C, 0x22, 0x0B,
     // 0x1A, 0x27, 4, 3, 0x26, 1 are the kinds Build_INI_Entry writes; name hypothesis).
