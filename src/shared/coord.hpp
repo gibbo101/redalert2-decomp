@@ -95,6 +95,10 @@ public:
     // 0x004CB8F0 loads one operand in the other order (TechFoot39).
     Cell(short x, short y) { Set(x, y); }
     Cell &Set(short x, short y) { X = x; Y = y; return *this; }
+    // A member-wise sum whose out-of-line copy is 0x0042ADD0 (thiscall; the
+    // free operator+ below expands the same sum). UnitClass 0x006FD930 calls it
+    // out of line once its inline budget is spent. Name is a hypothesis.
+    Cell unknown_42add0(Cell const &right) const { return Cell(X + right.X, Y + right.Y); }
     bool Unknown_00493C80();   // 0x00493C80 (removes the cell's crate overlay and redraws it; CrateClass)
     short X;
     short Y;

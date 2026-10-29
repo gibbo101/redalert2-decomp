@@ -1,34 +1,10 @@
-// 0x006fa3d0: function not yet identified
-//
-// Body: 45 bytes (frozen inventory bound).
-// Referenced from 1 site (data).
-// Ghidra prototype: void FUN_006fa3d0(void)
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
+// Unit.cpp's drawing rectangle (0x00AD0490): a copy of the header-static
+// unknown_static_rect made by its dynamic initializer (0x006FA3D0, _$E), the
+// unit's first own initializer after the header statics. UnitClass slot 312
+// (0x006FF3E0) offsets it by the draw position. Name is a hypothesis.
+#include "shared/unit.hpp"
+#include "shared/unknown_static_rect.hpp"
+// @ref _unknown_static_rect=00ad0478
+// @ref ?unknown_unit_rect_ad0490@@3VRect@@A=00ad0490
 
-namespace seed_006fa3d0 {
-
-extern "C" undefined4 DAT_00ad0478;
-extern "C" undefined4 DAT_00ad047c;
-extern "C" undefined4 DAT_00ad0480;
-extern "C" undefined4 DAT_00ad0484;
-extern "C" undefined4 DAT_00ad0490;
-extern "C" undefined4 DAT_00ad0494;
-extern "C" undefined4 DAT_00ad0498;
-extern "C" undefined4 DAT_00ad049c;
-
-void  FUN_006fa3d0(void)
-{
-    DAT_00ad0490 = DAT_00ad0478;
-    DAT_00ad0494 = DAT_00ad047c;
-    DAT_00ad0498 = DAT_00ad0480;
-    DAT_00ad049c = DAT_00ad0484;
-    return;
-}
-
-}  // namespace seed_006fa3d0
+Rect unknown_unit_rect_ad0490 = unknown_static_rect;

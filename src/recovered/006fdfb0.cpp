@@ -1,21 +1,5 @@
-// 0x006fdfb0: function not yet identified
-//
-// Body: 1 bytes (frozen inventory bound).
-// Referenced from 1 site (data).
-// Ghidra prototype: void FUN_006fdfb0(void)
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
-
-namespace seed_006fdfb0 {
-
-void  FUN_006fdfb0(void)
-{
-    return;
-}
-
-}  // namespace seed_006fdfb0
+// The atexit callback (0x006FDFB0, _$E) of UnitClass::unknown_6fd930's local
+// static array of 36 search offsets (0x00AD04E8); emitted with the
+// UnitClass unit, no source of its own. Replaces the unidentified seed
+// function at the same legacy source path.
+#include "shared/unit.hpp"

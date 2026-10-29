@@ -192,4 +192,9 @@ public:
 // Every unit (0x00866198).
 extern DynamicVectorClass<UnitClass *> Units;
 
+// Unit.cpp's drawing rectangle (0x00AD0490): a copy of unknown_static_rect
+// made by its dynamic initializer 0x006FA3D0; slot 312 (0x006FF3E0) offsets
+// it by the draw position. Name is a hypothesis.
+extern Rect unknown_unit_rect_ad0490;
+
 #endif
