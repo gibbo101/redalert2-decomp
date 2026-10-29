@@ -219,7 +219,9 @@ typedef unsigned short wchar_t;
 #endif
 class TabClass : public SidebarClass {
 public:
+    virtual void Init_IO();                                     // slot 8  0x006A0C50
     virtual wchar_t const *unknown_slot33(int id);              // slot 33 0x006A20B0 (the tooltip text; called directly)
+    virtual bool unknown_slot54(int control);                   // slot 54 0x006A0DA0 (the sidebar shown or hidden)
     void Unknown_006A17B0();                                    // 0x006A17B0 (sets +0x4F15 and flags a redraw)
 };
 #endif

@@ -42,4 +42,26 @@ VideoModeSize * __fastcall Get_Display_Mode_Sizes_004962a0(unsigned long minimum
 void Free_Memory_00781d3b(void *block);                                                  // 0x00781D3B (free in lobby.hpp is 0x007825E8)
 void __fastcall Unknown_00737080(HWND dialog, HWND window);                              // 0x00737080
 
+// The Options dialog's state: the mode list of its resolution combo box (0x00A6ED10, freed on close), set once
+// the controls are filled (0x00A6ED0C; the sliders ignore scrolling until then), and the combo selection at the
+// start (0x007DFDB4, -1).
+extern VideoModeSize *unknown_modes_a6ed10;
+extern bool unknown_options_ready_a6ed0c;
+extern int unknown_mode_initial_7dfdb4;
+// The slider labels: detail (0x007DFD80; low, medium, high), difficulty (0x007DFD8C) and scroll rate (0x007DFD98, slowest to fastest).
+extern char const *unknown_detail_names_7dfd80[3];
+extern char const *unknown_difficulty_names_7dfd8c[3];
+extern char const *unknown_scroll_rate_names_7dfd98[7];
+void __fastcall Unknown_Reset_Art_006F33B0(int width, int height);                         // 0x006F33B0
+
+// Set_Display_Mode's callees.
+long Wait_For_Surface_Blit_004961d0();                                                     // 0x004961D0
+bool __fastcall Set_Video_Mode(HWND window, int width, int height, int bits);              // 0x00495C90
+// Reallocates the off-screen surfaces for the visible rectangle (0x00519500; TS Allocate_Surfaces).
+bool __fastcall Allocate_Surfaces(Rect *common, Rect *composite, Rect *tile, Rect *sidebar, bool clear);
+// Rebuilds the colour remap tables from the old pixel format shifts (0x00486010).
+void __fastcall Unknown_00486010(int red_right, int red_left, int green_right, int green_left, int blue_right, int blue_left);
+void __fastcall Unknown_005FF380(HWND dialog);                                              // 0x005FF380
+void __fastcall Unknown_005E9F00(HWND dialog, Point2D *old_size);                            // 0x005E9F00
+
 #endif

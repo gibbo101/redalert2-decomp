@@ -191,6 +191,7 @@ WIN32_IMPORT LRESULT WINAPI DefWindowProcA(HWND window, UINT message, WPARAM wpa
 WIN32_IMPORT HMENU WINAPI GetMenu(HWND window);
 WIN32_IMPORT BOOL WINAPI AdjustWindowRectEx(RECT *rect, DWORD style, BOOL menu, DWORD exstyle);
 WIN32_IMPORT BOOL WINAPI MoveWindow(HWND window, int x, int y, int width, int height, BOOL repaint);
+WIN32_IMPORT BOOL WINAPI SetWindowPos(HWND window, HWND insert_after, int x, int y, int width, int height, UINT flags);
 WIN32_IMPORT int WINAPI GetSystemMetrics(int index);
 WIN32_IMPORT BOOL WINAPI UpdateWindow(HWND window);
 WIN32_IMPORT HWND WINAPI SetFocus(HWND window);
