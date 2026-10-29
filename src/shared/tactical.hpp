@@ -58,6 +58,8 @@ public:
     virtual int Kind_Of() const;
     virtual int Size_Of() const;
     virtual void AI();                              // 0x006A2DD0 (slot 23: the scroll animation and the view position)
+    // Shows a caption with a value (+0x24 text, +0xA4; HouseClass::Flag_To_Win/Flag_To_Lose).
+    void Unknown_006A53F0(unsigned short const *text, int value);   // 0x006A53F0 (wchar_t text)
 
     bool Unknown_006A8C80(Point2D *point);          // 0x006A8C80 (clamps a view position; false when unchanged)
     void Unknown_006A9170();                        // 0x006A9170 (after the view position changed)

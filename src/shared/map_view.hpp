@@ -92,6 +92,7 @@ public:
     bool Unknown_00569090(Cell *cell);                                          // 0x00569090
     void Unknown_00563D40();                                                    // 0x00563D40
     void Unknown_0054EBD0();                                                    // 0x0054EBD0
+    void Unknown_005688A0(DynamicVectorClass<Cell> &cells);                    // 0x005688A0 (as shared/map.hpp)
     void Unknown_0055A550();                                                    // 0x0055A550
     bool Unknown_0054E410();                                                    // 0x0054E410 (places a crate on a random cell)
     void Unknown_0055D990(Cell const &cell);                              // 0x0055D990
@@ -149,6 +150,18 @@ public:
     void Write_INI_0049D910(CCINIClass &ini);                                   // 0x0049D910 (Theater, Size, LocalSize; Write_Scenario_INI)
     void Read_INI_0049CFD0(CCINIClass &ini);                                    // 0x0049CFD0 (the map's sections of a scenario; Read_Scenario_INI)
     virtual bool unknown_slot39(Cell const &cell, HouseClass *house);                    // slot 39 0x0049A370
+    void Unknown_00498F10(Cell const *list);                                    // 0x00498F10 (the placement cursor's cell list)
+    // The pending placement (as shared/display.hpp; HouseClass::Manual_Place sets them).
+    char unknown_130[0x11A0 - 0x130];
+    ObjectClass *unknown_11a0;      // +0x11A0 the object waiting for placement
+    void *unknown_11a4;             // +0x11A4 its type
+    int unknown_11a8;               // +0x11A8 its house (-1)
+    bool unknown_11ac;              // +0x11AC
+    bool unknown_11ad;              // +0x11AD
+    bool unknown_11ae;              // +0x11AE
+    bool unknown_11af;              // +0x11AF
+    bool unknown_11b0;              // +0x11B0
+    int unknown_11b4;               // +0x11B4 -1
 };
 #endif
 
@@ -172,7 +185,7 @@ public:
     void Unknown_00631ED0();                                                    // 0x00631ED0 builds the radar's table and surfaces (load path)
 
     // The radar's data the other units read, at shared/radar.hpp's offset.
-    char unknown_130[0x1220 - 0x130];
+    char unknown_11b8[0x1220 - 0x11B8];
     DynamicVectorClass<Cell> unknown_1220;                                      // +0x1220 the cells to redraw
 
     // Forgets the cells waiting for a radar redraw (inline in Read_Scenario_INI;

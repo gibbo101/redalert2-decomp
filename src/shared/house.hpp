@@ -282,6 +282,25 @@ public:
         }
         return this == unknown_player_a35db4;
     }
+    // Whether a human controls the house: the human flag, in the campaign also
+    // the player-control flag (inline; YRpp calls it ControlledByHuman).
+    bool Is_Human_Control() const
+    {
+        if (unknown_game_mode_a3d298 == 0) {
+            bool result = unknown_134 || unknown_135;
+            return result;
+        }
+        return unknown_134;
+    }
+    void unknown_func_4f3c50(SuperClass *super);          // 0x004F3C50 (fires a super weapon near the base of house +0x54F0, or at the +0x541C target)
+    void unknown_func_4f3e00(SuperClass *super);          // 0x004F3E00 (fires a super weapon at the best building of house +0x54F0)
+    void unknown_func_4ef890();                            // 0x004EF890 (plans the base; Unknown_004EF5A0)
+    Cell unknown_func_4eca30(int arg1, int arg2);           // 0x004ECA30 (always cell 0, 0; no caller references it)
+    Cell Random_Cell_In_Zone(int zone);                    // 0x004ECA50 (RA's Random_Cell_In_Zone)
+    // Sells the wall overlay at a cell for its owner (RA's Sell_Wall; 0x004E8380).
+    void Sell_Wall(Cell const &cell, bool quiet);
+    void unknown_func_4ee8f0();                            // 0x004EE8F0 (turns the house's firestorm walls on)
+    void unknown_func_4eea40();                            // 0x004EEA40 (turns them off)
     // The team types the house may make now (0x004E5CF0; RA's name, whose version
     // returned one type; HouseClass::AI expands it).
     TypeList<TeamTypeClass const *> Suggested_New_Team(bool alerted);
