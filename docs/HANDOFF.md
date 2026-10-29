@@ -9,18 +9,19 @@ Earlier owner periods are in [history/](history/).
 
 Claude (Mac) owns integration; a Codex session on the Mac may take over as standby owner using this
 file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
-- At most four Mac lanes. Each lane gets one function or one small family, hands back when it lands
-  or its time box ends, and the next target gets a fresh lane (shared brief:
-  `build/class-work/LANE_BRIEF.md`, "Scope and budget").
+- At most four Mac lanes. Each lane gets one class unit or family sharing one recovered layout (one lane per
+  large sibling family when a class exceeds a few KB), runs the whole unit, delivers every 1-3 KB, and the next
+  unit gets a fresh lane (brief: `build/class-work/LANE_BRIEF.md`, "Scope and budget"). Revised 2026-10-28:
+  one-function lanes landed 300-900 B each at about 3x the tokens per KB of unit-sized lanes.
 - Stop a lane past about 150 output tokens per landed byte or after two zero-byte handbacks;
   record its best score and draft in its NOTES.
 - Sweep promotion and near-miss hill-climbing are the Windows lead's (Codex) work.
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes: Light140 (Sonnet) ~LightConvertClass 0x538F20; Modem141 (Opus) WinModemClass
+Running Mac lanes: Score144 (Opus) CampaignScoreClass 0x465BF0/0x466A50; Modem141 (Opus) WinModemClass
 0x734B30/0x734BC0; Base142 (Opus) BaseClass::Read_INI 0x42C460; Ref143 (Sonnet) small WDT members 0x729330,
-0x72D1F0, 0x730BE0, 0x639720. Landed: Light137 Set_Tint 0x538AA0, Modem138
+0x72D1F0, 0x730BE0, 0x639720. Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
 0x734CD0/0x735110. WDT136 (Campaign ctor 0x725F40) and Sink139 (OnLadderList 0x75D330) are misses in OPEN_MISSES.md.
 Landed 2026-10-28 evening: Map129, Obj126, Para131, Iso128, MSAnim133, Score132, IPX135 (Send_To), Base134
 (BaseClass ctor/Load/NoInit ctor). Near misses (OPEN_MISSES.md) go to the Windows lead; queue and drafts sent in
