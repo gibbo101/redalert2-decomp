@@ -456,3 +456,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   before the 0xAC132C store), 0x6F7360 61.57 (needs 0x6F6C90 retyped to DynamicVectorClass<char const *> const & and
   moved out of population-1642 by a rename spec; then 0x6F76C0 calls it, both exact), 0x6F79C0 58.10, 0x6F7020 77.52,
   0x6F71E0 73.33.
+- MainOpt.cpp after MainOpt207 (build/class-work/MainOpt207/w, NOTES): Main_Options_Proc 0x542590 84.05 (two register
+  gaps), Main_Options_Dialog 0x542460 98.91 without the local once 0x5DA360 is renamed to OptionsClass::Unknown_005DA360()
+  (rename not delivered; push 0 scheduling left), Has_Saved_Games 0x53C5C0 97.83. Undrafted IPX proc 0x542D60; 0x53B770 is
+  LoadOptionsClass::Process and Fill_List 0x53C040 (LoadOptionsClass: Windows scope).
