@@ -4,7 +4,7 @@
 void HouseClass::unknown_func_4e82c0()
 {
     if (!unknown_140 && !unknown_13f) {
-        unknown_func_4e7ee0(0);
+        Flag_To_Win(false);
         return;
     }
     unknown_1e0.Start();

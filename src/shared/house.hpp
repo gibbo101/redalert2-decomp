@@ -329,9 +329,9 @@ public:
     BuildingClass *unknown_func_4e5160();                  // 0x004E5160 (the storage building with most free room)
     void unknown_func_4e7df0();                            // 0x004E7DF0 (destroys every techno the house owns)
     bool unknown_func_4e7e80();                            // 0x004E7E80
-    void unknown_func_4e7ee0(int arg1);                    // 0x004E7EE0
+    bool Flag_To_Win(bool quiet);                          // 0x004E7EE0 (RA's name)
     void unknown_func_4e82c0();                            // 0x004E82C0
-    void unknown_func_4e80d0(int arg1);                    // 0x004E80D0
+    bool Flag_To_Lose(bool quiet);                         // 0x004E80D0 (RA's name)
     // Hands a human player's house to the computer (0x004F4070; Destroy_Null_Connection calls it when a
     // serial player leaves).
     void unknown_func_4f4070();

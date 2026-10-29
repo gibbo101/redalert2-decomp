@@ -152,7 +152,7 @@ public:
     ObjectClass *Prev_Object(ObjectClass *object);                     // 0x0049E5E0 runs 0x004798F0 on every cell
     void Unknown_0049C980(int control);
     void Unknown_0049CAC0(int control);                 // 0x0049CAC0 the mode switch for +0x11B0
-    void Unknown_00498F10(int arg1);                    // 0x00498F10
+    void Unknown_00498F10(Cell const *list);            // 0x00498F10 (the placement cursor's cell list; 0 clears it)
     void Unknown_0049C860(int control, bool keep);     // 0x0049C860 the same for +0x11AF (the player's waypoint mode)                 // 0x0049C980 the same for the mode at +0x11AE
     // The mouse shape over a cell with one of the player's waypoints (0x0049EAD0).
     int Unknown_0049EAD0(int mouse, Cell const &cell);

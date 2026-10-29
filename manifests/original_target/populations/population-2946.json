@@ -4,8 +4,8 @@
     "id": "population-2946",
     "inventory_sha256": "eb8ba31e817a541d1d46d1a7b0d3f6c64d7729c25d11e78b9e92a57d1a6e74cc",
     "gaps_sha256": "cbeb105522d7fca4d22cc75656d9f76a0001268bd697dbf0d6f4a605bb64201e",
-    "historical_population_sha256": "36e70e6e2843217656fbe7f8a4ed6d2e6101c66589bbb360615b72cfabf1d1cb",
-    "historical_acceptance_sha256": "140b906b638e0194815f8bd2420080b346e3e9e89c8e2ea4ac1af4de869ff8ed"
+    "historical_population_sha256": "f25ad215cd8529cdb5d9a71fb94895914f52a109dbe496c503a241472ae9a614",
+    "historical_acceptance_sha256": "75d719a13f909a13106bc3bd8b5f20bf5e3f760d9420c5f35a5221abcbf472e5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3912,7 +3912,7 @@
     "?unknown_func_4e7df0@HouseClass@@QAEXXZ": 5144048,
     "?unknown_func_4e7e80@HouseClass@@QAE_NXZ": 5144192,
     "?unknown_func_4e82c0@HouseClass@@QAEXXZ": 5145280,
-    "?unknown_func_4e7ee0@HouseClass@@QAEXH@Z": 5144288,
+    "?Flag_To_Win@HouseClass@@QAE_N_N@Z": 5144288,
     "?Power_Fraction@HouseClass@@QBENXZ": 5145392,
     "?Find_Building@HouseClass@@QAEPAVBuildingClass@@HH@Z": 5145952,
     "?Which_Zone@HouseClass@@QBEHABUCoordStruct@@@Z": 5156160,
@@ -10720,7 +10720,7 @@
     "?Unknown_004EF5A0@HouseClass@@QAEXXZ": 5174688,
     "?Unknown_004F6310@HouseClass@@QAEXXZ": 5202704,
     "?Suggested_New_Team@HouseClass@@QAE?AV?$TypeList@PBVTeamTypeClass@@@@_N@Z": 5135600,
-    "?unknown_func_4e80d0@HouseClass@@QAEXH@Z": 5144784,
+    "?Flag_To_Lose@HouseClass@@QAE_N_N@Z": 5144784,
     "?unknown_func_4f5be0@HouseClass@@QAEXXZ": 5200864,
     "?unknown_func_4e7070@HouseClass@@QAE_NPAVTechnoClass@@PAVBuildingClass@@@Z": 5140592,
     "?Unknown_0066EAA0@UnknownSessionState@@QAEXXZ": 6744736,

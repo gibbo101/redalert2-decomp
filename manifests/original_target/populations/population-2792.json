@@ -4,8 +4,8 @@
     "id": "population-2792",
     "inventory_sha256": "d8264f12c10910f023f07e4111d1a563322f63354c8dda321e5f88fd6e685da2",
     "gaps_sha256": "e7224a98023fdaa02cd5c91264577c9ef1aaaa036f6d9492fd5242d1e99c7d4f",
-    "historical_population_sha256": "8bee437cb109a53a710726d0f949b7756d4a60696b95a17fcdf116989e00040f",
-    "historical_acceptance_sha256": "73ef8699568264f91d58350c7544bf0aeceac44170c8ea6fe8ec2add929dcb52"
+    "historical_population_sha256": "582715a73f2b5e242fdc20a3bf41d7c4f98e6fa032801ccf411759c79a97610a",
+    "historical_acceptance_sha256": "08a3845ca2c4f295cae182f722a85cbab1999ef4160130e156d5bcbe60017032"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5293,7 +5293,7 @@
     "?unknown_func_4e7df0@HouseClass@@QAEXXZ": 5144048,
     "?unknown_func_4e7e80@HouseClass@@QAE_NXZ": 5144192,
     "?unknown_func_4e82c0@HouseClass@@QAEXXZ": 5145280,
-    "?unknown_func_4e7ee0@HouseClass@@QAEXH@Z": 5144288,
+    "?Flag_To_Win@HouseClass@@QAE_N_N@Z": 5144288,
     "?Power_Fraction@HouseClass@@QBENXZ": 5145392,
     "?Find_Building@HouseClass@@QAEPAVBuildingClass@@HH@Z": 5145952,
     "?Which_Zone@HouseClass@@QBEHABUCoordStruct@@@Z": 5156160,
@@ -5924,7 +5924,7 @@
     "?Unknown_00568520@MapClass@@QAEXPAVCellClass@@PAVHouseClass@@_N@Z": 5670176,
     "?unknown_47be00@CellClass@@QAEXXZ": 4701696,
     "?unknown_slot38@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@@Z": 4825328,
-    "?Unknown_00498F10@DisplayClass@@QAEXH@Z": 4820752,
+    "?Unknown_00498F10@DisplayClass@@QAEXPBVCell@@@Z": 4820752,
     "?unknown_slot47@DisplayClass@@UAEXABUPoint2D@@@Z": 4834560,
     "?unknown_rect_839630@@3VRect@@A": 8623664,
     "?Unknown_006AA5E0@Tactical@@QAEXABUPoint2D@@@Z": 6989280,

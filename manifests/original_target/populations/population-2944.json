@@ -4,8 +4,8 @@
     "id": "population-2944",
     "inventory_sha256": "c018523ebd3512e3c7c4829aafbfdee192c72bbdc090bd405bbb4f08aea9c98c",
     "gaps_sha256": "92b212c7ae9a113c906f67e979b4149b1d61bb3f69385d655ba10054d91f8dbf",
-    "historical_population_sha256": "c842965e0a712cd14f8a576b1d9276722674e135ddaec3e0560ce64e3bc3a27c",
-    "historical_acceptance_sha256": "c490499dd7a1b73e10c993d189c57f356e87cad14fad612b91275ab462a310e9"
+    "historical_population_sha256": "179cd924d6af5ad93ad94a6ddf9a3486fa7f5508892854c094a1965077fffeda",
+    "historical_acceptance_sha256": "8a8060ebe01355d895796a1f188be803f6105ad12242ffe69a813dc77ce2fa41"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6242,7 +6242,7 @@
     "?Unknown_006AADD0@Tactical@@QAEXPAVCellClass@@@Z": 6991312,
     "?Unknown_00568520@MapClass@@QAEXPAVCellClass@@PAVHouseClass@@_N@Z": 5670176,
     "?unknown_slot38@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@@Z": 4825328,
-    "?Unknown_00498F10@DisplayClass@@QAEXH@Z": 4820752,
+    "?Unknown_00498F10@DisplayClass@@QAEXPBVCell@@@Z": 4820752,
     "?unknown_slot47@DisplayClass@@UAEXABUPoint2D@@@Z": 4834560,
     "?unknown_rect_839630@@3VRect@@A": 8623664,
     "?Unknown_006AA5E0@Tactical@@QAEXABUPoint2D@@@Z": 6989280,
@@ -8691,7 +8691,7 @@
     "?unknown_func_4e7df0@HouseClass@@QAEXXZ": 5144048,
     "?unknown_func_4e7e80@HouseClass@@QAE_NXZ": 5144192,
     "?unknown_func_4e82c0@HouseClass@@QAEXXZ": 5145280,
-    "?unknown_func_4e7ee0@HouseClass@@QAEXH@Z": 5144288,
+    "?Flag_To_Win@HouseClass@@QAE_N_N@Z": 5144288,
     "?Power_Fraction@HouseClass@@QBENXZ": 5145392,
     "?Find_Building@HouseClass@@QAEPAVBuildingClass@@HH@Z": 5145952,
     "?Which_Zone@HouseClass@@QBEHABUCoordStruct@@@Z": 5156160,
@@ -10723,7 +10723,7 @@
     "?Unknown_0051FC90@@YGXVCell@@@Z": 5373072,
     "?unknown_particle_system_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7010816,
     "?unknown_player_4e80d0@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7011664,
-    "?unknown_func_4e80d0@HouseClass@@QAEXH@Z": 5144784,
+    "?Flag_To_Lose@HouseClass@@QAE_N_N@Z": 5144784,
     "?unknown_explosion_50_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7012480,
     "?unknown_explosion_100_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7012576,
     "?unknown_explosion_300_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7012672,

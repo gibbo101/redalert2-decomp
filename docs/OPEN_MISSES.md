@@ -309,3 +309,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   needs an empty NoInit ctor; TypeList DVC ctors must stay out of line: inline budget), Clear_Scenario 0x65D370 99.32,
   Fill_In_Data 0x65CDD0 93.73 (needs a RadarClass/Tactical slot 52 CoordStruct rename). 0x65D7EA and 0x661408 are
   tail chunks of accepted functions.
+- NullDlg.CPP (population-293) / NullMgr.CPP (population-2691) after Null175 (NOTES): the serial dialog main loop
+  0x5CDF00 (2567 B + jump table at 0x5CE904; the inventory start 0x5CDEFA is padding) needs stack dialog class
+  layouts (PhoneEd 0x60D970, ModemGst 0x598E10/0x596010, SerialEd 0x66CA70) and helpers 0x5FF610/0x600120, and
+  inlines TTimerClass::Time at some sites while calling 0x5CFDB0 (31 B, lands with it) at others. Init_Null_Modem
+  0x5CEA30 is accepted in population-2402 under a stand-in class but belongs to population-293 (debt).

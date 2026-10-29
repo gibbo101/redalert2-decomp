@@ -7,7 +7,7 @@
 #include "shared/display.hpp"
 // @ref ?Unknown_00482BC0@@YAXXZ=00482bc0
 // @ref ?unknown_flag_83740c@@3_NA=0083740c
-// @ref ?Unknown_00498F10@DisplayClass@@QAEXH@Z=00498f10
+// @ref ?Unknown_00498F10@DisplayClass@@QAEXPBVCell@@@Z=00498f10
 
 void Unknown_00482BC0();
 

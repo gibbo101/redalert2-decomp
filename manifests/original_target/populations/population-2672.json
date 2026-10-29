@@ -4,8 +4,8 @@
     "id": "population-2672",
     "inventory_sha256": "c7ff249e1a8cca92842c1eb728a10478a7f7c5e45ea2268db14f0997c7f1b361",
     "gaps_sha256": "20a4cd4be62905b799537e1242d20389b6d12d448384b36f30914a5abcb6b3f2",
-    "historical_population_sha256": "dc43c6c0534b301b2ee6c9237aec66786e8e5458ac826fbfba8182c8fb4281d5",
-    "historical_acceptance_sha256": "7996cf897752314d05e71871c6f352a8e277b8a5952791367c989f2b4545d8a2"
+    "historical_population_sha256": "671fb95f45bae6d8a29697d84ab6402a10b8847795ed08bff0235d8c18c2535b",
+    "historical_acceptance_sha256": "f70b8909a6857ccaa3629f0d1b1a325f5b203e9c6eec49ad4e5072696e907e3e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8321,7 +8321,7 @@
     "??0ToolTipManager@@QAE@PAUHWND__@@@Z": 7254752,
     "??_7ToolTipManager@@6B@": 8050996,
     "?Unknown_00568520@MapClass@@QAEXPAVCellClass@@PAVHouseClass@@_N@Z": 5670176,
-    "?Unknown_00498F10@DisplayClass@@QAEXH@Z": 4820752,
+    "?Unknown_00498F10@DisplayClass@@QAEXPBVCell@@@Z": 4820752,
     "?unknown_rect_839630@@3VRect@@A": 8623664,
     "?Override_Mouse_Shape@MouseClass@@UAE_NH_N@Z": 5894736,
     "?Mouse_Small@MouseClass@@UAEX_N@Z": 5894288,
@@ -9350,7 +9350,7 @@
     "?unknown_func_4e7df0@HouseClass@@QAEXXZ": 5144048,
     "?unknown_func_4e7e80@HouseClass@@QAE_NXZ": 5144192,
     "?unknown_func_4e82c0@HouseClass@@QAEXXZ": 5145280,
-    "?unknown_func_4e7ee0@HouseClass@@QAEXH@Z": 5144288,
+    "?Flag_To_Win@HouseClass@@QAE_N_N@Z": 5144288,
     "?Power_Fraction@HouseClass@@QBENXZ": 5145392,
     "?Find_Building@HouseClass@@QAEPAVBuildingClass@@HH@Z": 5145952,
     "?Which_Zone@HouseClass@@QBEHABUCoordStruct@@@Z": 5156160,
