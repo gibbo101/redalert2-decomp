@@ -4,8 +4,8 @@
     "id": "population-2507",
     "inventory_sha256": "1f266d6a1fa72955f891cf06a7858a2e70ce547bbd4c72eb71ddc117a03514e8",
     "gaps_sha256": "129efb8d8e0b6c491692c9fa0a0b38f438b46256157b893b2c51b50e716aa5c3",
-    "historical_population_sha256": "6502c46ad0cc99e79112988f05efb7d50c765d8eb7e78f8f12f78efa53a65b62",
-    "historical_acceptance_sha256": "68006a4a2b12744f8eea2cad302e7c1dbf750444ef36d6df5f0e41d3102f9c6f"
+    "historical_population_sha256": "38e29d70e7e31e447aec3e9c33d0162837107b341466bfb2542bf810d045b0e0",
+    "historical_acceptance_sha256": "870f095fe349677970aab7bd622f523c64b20ce8dbef4f24a483883b8af8aefe"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4160,7 +4160,7 @@
     "?unknown_slot194@FootClass@@UAEXXZ": 5033456,
     "?Unknown_00724F80@WaypointPathClass@@QAEPAUWaypointClass@@PAU2@@Z": 7491456,
     "?unknown_slot60@FootClass@@UAEXXZ": 5033536,
-    "?Unknown_004681E0@UnknownTechno230@@QAEXXZ": 4620768,
+    "?Release_4681e0@CaptureManagerClass@@QAEXXZ": 4620768,
     "?Unknown_00468960@UnknownCargo@@QAEXPAVFootClass@@@Z": 4622688,
     "?Unknown_00468A70@UnknownCargo@@QAEXPAVFootClass@@@Z": 4622960,
     "?Unknown_00636ED0@RadioClass@@QBE_NPAVTechnoClass@@@Z": 6516432,
@@ -4296,7 +4296,7 @@
     "?Unknown_00713360@UnknownTechnoPair@@QAEXHH@Z": 7418720,
     "?Unknown_0070C490@UnknownHouseTracker@@QAEXH@Z": 7390352,
     "?Detach@RadioClass@@UAEXPAVAbstractClass@@_N@Z": 6515616,
-    "?Unknown_00468120@UnknownTechno230@@QAEXPAVAbstractClass@@@Z": 4620576,
+    "?Detach_Target_468120@CaptureManagerClass@@QAE_NPAVAbstractClass@@@Z": 4620576,
     "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Unknown_006E24C0@UnknownTechno208@@QAEXPAVAbstractClass@@@Z": 7218368,
     "?unknown_slot90@TechnoClass@@UAEHXZ": 7156048,

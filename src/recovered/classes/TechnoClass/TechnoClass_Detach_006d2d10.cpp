@@ -11,6 +11,7 @@
 // +0x3A8 / +0x3C0 lists.
 #include "shared/techno.hpp"
 #include "shared/spawn_manager.hpp"
+#include "shared/capture_manager.hpp"
 #include "shared/house.hpp"
 #include "shared/aircraft.hpp"
 #include "shared/gscreen.hpp"
@@ -21,7 +22,7 @@
 // @ref ?unknown_a40774@@3HA=00a40774
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ??RRandom2Class@@QAEHHH@Z=006388a0
-// @ref ?Unknown_00468120@UnknownTechno230@@QAEXPAVAbstractClass@@@Z=00468120
+// @ref ?Detach_Target_468120@CaptureManagerClass@@QAE_NPAVAbstractClass@@@Z=00468120
 // @ref ?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z=0068a560
 // @ref ?Unknown_006E24C0@UnknownTechno208@@QAEXPAVAbstractClass@@@Z=006e24c0
 
@@ -86,7 +87,7 @@ void TechnoClass::Detach(AbstractClass *target, bool all)
             unknown_1b0 = 0;
         }
         if (unknown_230 != 0) {
-            ((UnknownTechno230 *)unknown_230)->Unknown_00468120(target);
+            ((CaptureManagerClass *)unknown_230)->Detach_Target_468120(target);
         }
     }
     if (SpawnManager != 0) {

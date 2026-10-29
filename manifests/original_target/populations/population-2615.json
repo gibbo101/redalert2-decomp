@@ -4,8 +4,8 @@
     "id": "population-2615",
     "inventory_sha256": "115d2d2264e7833e8503ad68595043c98fc4a28c8f89833fb805a2afa6d28578",
     "gaps_sha256": "f4d92411cd52dc996d56c41ecbfa12e352a603b7dc35d6aa127b37b1090074f8",
-    "historical_population_sha256": "5435c86be273b5bf0214e0d5588c10fa933db2353ecea74c3441e6e3c27e2076",
-    "historical_acceptance_sha256": "01b4fb39f2625f16ed899b78c8abfe097a472f7ec921ae4c1510d028267c13db"
+    "historical_population_sha256": "5c7c545bfba8ae87610f66dffaa49f22bc40315b00ef9d1a43541b22ac868cac",
+    "historical_acceptance_sha256": "be5c395b2bb5db0194e89845fdb44ca4f81106db860cde9ce94d2c70abace8d3"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3877,8 +3877,8 @@
     "?Unknown_004366D0@UnknownList8322E0@@QAEXPAVTechnoClass@@@Z": 4417232,
     "?Unknown_00452EB0@BuildingClass@@QAE_NPAVTechnoClass@@@Z": 4533936,
     "?Unknown_004536D0@BuildingClass@@QAEXPAVInfantryClass@@@Z": 4536016,
-    "?Unknown_00468120@UnknownTechno230@@QAEXPAVAbstractClass@@@Z": 4620576,
-    "?Unknown_004681E0@UnknownTechno230@@QAEXXZ": 4620768,
+    "?Detach_Target_468120@CaptureManagerClass@@QAE_NPAVAbstractClass@@@Z": 4620576,
+    "?Release_4681e0@CaptureManagerClass@@QAEXXZ": 4620768,
     "?Unknown_00468960@UnknownCargo@@QAEXPAVFootClass@@@Z": 4622688,
     "?Unknown_00468A70@UnknownCargo@@QAEXPAVFootClass@@@Z": 4622960,
     "?Unknown_00471660@CellClass@@QAEPAVObjectClass@@ABUPoint2D@@HH@Z": 4658784,

@@ -4,8 +4,8 @@
     "id": "population-2433",
     "inventory_sha256": "1566543f50341a840f9350e7a4ca607b3bff4f58b73502c2240dc7322b3dd2a3",
     "gaps_sha256": "f32915773d0d0e51c2ff1796ee0ecc5be09ae9030e17da1ac22734d8c0bcec68",
-    "historical_population_sha256": "18f7934519cbf8c70d59355a628139ab7b84ecd962de345067305d18280553b1",
-    "historical_acceptance_sha256": "3dab3f13ae61b4e5dc20d81ce89ddc079a46a82e0ce831f96bc002174e95e7d2"
+    "historical_population_sha256": "2e87708250ed9af9920e31ed12eac06960812f9d2aa15d42876316440cf14160",
+    "historical_acceptance_sha256": "92224bad067a36c8b5f692638cd6a92b0c306f27c86a71c71baecc2bbfd4b993"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4178,7 +4178,7 @@
     "?unknown_slot194@FootClass@@UAEXXZ": 5033456,
     "?Unknown_00724F80@WaypointPathClass@@QAEPAUWaypointClass@@PAU2@@Z": 7491456,
     "?unknown_slot60@FootClass@@UAEXXZ": 5033536,
-    "?Unknown_004681E0@UnknownTechno230@@QAEXXZ": 4620768,
+    "?Release_4681e0@CaptureManagerClass@@QAEXXZ": 4620768,
     "?Unknown_00468960@UnknownCargo@@QAEXPAVFootClass@@@Z": 4622688,
     "?Unknown_00468A70@UnknownCargo@@QAEXPAVFootClass@@@Z": 4622960,
     "?Unknown_00636ED0@RadioClass@@QBE_NPAVTechnoClass@@@Z": 6516432,
@@ -4314,7 +4314,7 @@
     "?Unknown_00713360@UnknownTechnoPair@@QAEXHH@Z": 7418720,
     "?Unknown_0070C490@UnknownHouseTracker@@QAEXH@Z": 7390352,
     "?Detach@RadioClass@@UAEXPAVAbstractClass@@_N@Z": 6515616,
-    "?Unknown_00468120@UnknownTechno230@@QAEXPAVAbstractClass@@@Z": 4620576,
+    "?Detach_Target_468120@CaptureManagerClass@@QAE_NPAVAbstractClass@@@Z": 4620576,
     "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Unknown_006E24C0@UnknownTechno208@@QAEXPAVAbstractClass@@@Z": 7218368,
     "?unknown_slot90@TechnoClass@@UAEHXZ": 7156048,
