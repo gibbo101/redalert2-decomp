@@ -1,7 +1,7 @@
 // void WinsockInterfaceClass::unknown_slot4(void *buf, int buflen, bool alternate) (0x0076B7A0, slot 4)
 // Queues a broadcast packet (checksummed) and posts a write notification.
 #include "shared/winsock_interface.hpp"
-// @ref __imp__PostMessageA@16=0079a4a0
+// @ref __imp__SendMessageA@16=0079a4a0
 // @ref ?unknown_window_b263d8@@3PAXA=00b263d8
 // @ref ?WWKeyboard@@3PAVWWKeyboardClass@@A=00832468
 // @ref ?Check@WWKeyboardClass@@QAE?AW4KeyNumType@@XZ=005322d0
@@ -22,6 +22,6 @@ void WinsockInterfaceClass::unknown_slot4(void *buf, int buflen, bool alternate)
         OutBuffers.Add(packet);
         socket = Socket;
     }
-    PostMessageA(unknown_window_b263d8, unknown_slot14(socket), 0, 2);
+    SendMessageA((HWND)unknown_window_b263d8, unknown_slot14(socket), 0, 2);
     WWKeyboard->Check();
 }

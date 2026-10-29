@@ -20,9 +20,9 @@
 #define VECTOR_IMPLEMENT_ALL
 #endif
 #include "shared/vector_class.hpp"
+#include "shared/win32_api.hpp"
 #include "shared/keyboard.hpp"
 
-WIN32_IMPORT BOOL WINAPI PostMessageA(void *window, unsigned int message, unsigned int wparam, long lparam);   // 0x0079A4A0
 
 #include "shared/debug_printf.hpp"
 

@@ -140,6 +140,7 @@ WIN32_IMPORT BOOL WINAPI ValidateRect(HWND window, RECT const *rect);
 WIN32_IMPORT int WINAPI GetDlgCtrlID(HWND window);
 WIN32_IMPORT HWND WINAPI ChildWindowFromPointEx(HWND parent, POINT point, UINT flags);
 WIN32_IMPORT LRESULT WINAPI SendMessageA(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+WIN32_IMPORT BOOL WINAPI PostMessageA(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 typedef HANDLE HINSTANCE;
 typedef BOOL (WINAPI *DLGPROC)(HWND dialog, UINT message, WPARAM wparam, LPARAM lparam);
 #define MAKEINTRESOURCEA(id) ((LPCSTR)(unsigned long)(unsigned short)(id))
