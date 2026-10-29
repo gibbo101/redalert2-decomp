@@ -18,15 +18,16 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes (Opus): Base134
-BaseClass 0x42BF70/0x42CA50/0x42C6A0; IPX135 IPXGlobalConnClass 0x524B50/0x524870. Landed this period: Map129,
-Obj126, Para131, Iso128 (0x527A80), MSAnim133 (MSPrintAnim slot 4 0x5AEDA0), Score132 (ScorePrintClass::Update 0x6680F0). Register/scheduling-tie near
-misses (see OPEN_MISSES.md) go to the Windows lead. Lanes use tools/original_target/lane_tools.py.
-Windows lead backlog in landing: r17 and r19 landed (8f8247fe, 9d6af74f); next r20 (region-helpers-r53-r55,
-drafts being copied from the Windows worktrees), then r22, r24, r27, r29, r32, r36 source rounds, then the
-seed-tool patches r21-r40 and the bounds rounds (zero source credit). Packets copied to
-build/class-work/lead/d/; plans point at C:/ paths, so missing drafts come from the mount
-(/Volumes/mike-gaming/Users/Mike/.codex/worktrees/ra2-seed-lead/repo and /Volumes/mike-gaming/ra2/w/codexN). Closed 2026-10-28 (resume folders `build/class-work/<Lane>/`): Seed118 (callee-pops
+Running Mac lanes (Opus): WDT136 WDTState ctor 0x725F40 (+ VectorClass ctor 0x727040); Light137
+LightConvertClass 0x538AA0; Modem138 WinModemClass 0x734CD0/0x735110; Sink139 CNetUtilEventSink 0x75D330.
+Landed 2026-10-28 evening: Map129, Obj126, Para131, Iso128, MSAnim133, Score132, IPX135 (Send_To), Base134
+(BaseClass ctor/Load/NoInit ctor). Near misses (OPEN_MISSES.md) go to the Windows lead; queue and drafts sent in
+messages/2026-10-29T0130Z-owner-to-lead-backlog.md and owner-reference/. Lanes use lane_tools.py.
+Windows lead backlog r17-r42 landed (last 5626377a). Lead plans built on old bases are refused by allow_split when
+their population has grown: rebuild on the HEAD population keeping only the plan's new rows (owner scratch script
+reheadpop.py pattern: lane_tools.build_plan + the plan's unaccepted rows and top-level keys), and drop helper
+copies the unit now defines. Missing worker drafts come over ssh tar from C:/ra2/w/codexN (copy only the folders
+a plan names: codex2's d/ is about 30 GB). Bounds rounds (r18, r26, r28, r31, r35, r39) are evidence only. Closed 2026-10-28 (resume folders `build/class-work/<Lane>/`): Seed118 (callee-pops
 `lea` rule; Speech_Load, Voc_Static_Load), Seed119 (Speech_Update), Coop120 (MessageListClass::Input), Cd121
 (0x715230), Cd124 (0x715300), Coop122 (fill combo 0x5B70B0, fill list 0x5B71E0; 0x5B8490 open), Seed123 and
 Seed125 (zero bytes; Tactical family parked; 0x6AAFD0 is a register-tie near miss for Windows). Their misses
