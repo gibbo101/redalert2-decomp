@@ -120,6 +120,8 @@ WIN32_IMPORT BOOL WINAPI ClientToScreen(HWND window, POINT *point);
 WIN32_IMPORT BOOL WINAPI GetWindowRect(HWND window, RECT *rect);
 WIN32_IMPORT BOOL WINAPI SetRect(RECT *rect, int left, int top, int right, int bottom);
 WIN32_IMPORT BOOL WINAPI InvalidateRect(HWND window, RECT const *rect, BOOL erase);
+// A stock pen, brush or font (GDI32; 4: BLACK_BRUSH).
+WIN32_IMPORT HANDLE WINAPI GetStockObject(int object);
 
 // Key state (USER32).
 WIN32_IMPORT short WINAPI GetKeyState(int key);

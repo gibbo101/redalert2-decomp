@@ -109,6 +109,9 @@ public:
     int Trim_Message(unsigned short *dest, unsigned short *src, int min_chars, int max_chars, int scan_start);
     // Draws the edit line (with its cursor while it has the focus and there is room) and the messages (0x005B5B30).
     void Draw();
+    // Appends the text to the message with the identifier and prefix when it is still shown and has room
+    // (0x005B51C0; Red Alert's Concat_Message; 0: not added).
+    int Concat_Message(unsigned short const *prefix, int identifier, unsigned short const *text, int delay);
     UnknownMessageNode *Add_Message(unsigned short const *prefix, int identifier, unsigned short const *text, int color,
         unsigned style, int delay, bool unknown_flag);                              // 0x005B4DA0
     // Removes the messages that have expired, frees their text slots and restacks the rest (0x005B5610); whether any went.

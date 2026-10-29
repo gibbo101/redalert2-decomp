@@ -7,6 +7,7 @@
 
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #include "shared/vector_class.hpp"
 #include "shared/event.hpp"
 #include "shared/unknown_globals.hpp"
@@ -20,6 +21,7 @@
 #include "shared/ipx_manager.hpp"
 #include "shared/owner_talk.hpp"
 #include "shared/win32_api.hpp"
+#include "shared/system_timer.hpp"
 
 // Queue a MEGAMISSION (type 4) event for the player (0x006233A0).
 bool __fastcall Queue_Mission(TargetClass whom, int mission, TargetClass const &target, TargetClass const &destination);
@@ -86,13 +88,163 @@ void __fastcall Unknown_0062E5C0(UnknownFrameTiming *their, int index);
 // Puts a local event at the head of DoList for the next send frame; TXT_QUEUE_FULL
 // ends a multiplayer game when it is full (0x0062E6E0).
 void __fastcall Unknown_0062E6E0(EventClass *event);
-// A global network packet (0x1C8 bytes; Send_Port_Unreachable sends its first 0x2F;
-// hypothesis: Red Alert's GlobalPacketType).
+// A global network packet (0x1C7 bytes, packed: Unknown_00627190 copies that many;
+// Send_Port_Unreachable sends its first 0x2F; Red Alert's GlobalPacketType, the
+// name RTTI gives the session's packet list DynamicVectorClass<GlobalPacketType *>).
+#pragma pack(push, 1)
 struct UnknownGlobalPacket {
     int Command;                        // +0x00
     char Name[0x2F - 4];                // +0x04
-    char unknown_2f[0x1C8 - 0x2F];
+    union {
+        char unknown_2f[0x1C7 - 0x2F];
+        struct {
+            int Kickee;                 // +0x2F the id of the player proposed for a kick
+            int Proposer;               // +0x33 the id of the player who proposes it
+        } Kick;                         // command 0x1C (Propose_Kick_Player)
+    };
 };
+#pragma pack(pop)
+// Proposes to kick the player at a list index from the reconnect dialog: refused for the
+// player himself and in game mode 4 while unknown_b2a7ec is set (0x00626FE0; named by its trace).
+void __fastcall Propose_Kick_Player(HWND dialog, int index);
+// Adds a copy of a received global packet to the session's list (0x00627190; the
+// caller 0x004824BE passes the session's packet +0x23A8 and its address +0x2574,
+// which is not read; name hypothesis).
+void __fastcall Unknown_00627190(UnknownGlobalPacket *packet, IPXAddressClass *address);
+
+// The return codes of the multiplayer queue routines (Red Alert's RetcodeEnum).
+enum RetcodeType {
+    RC_NORMAL,                          // no news is good news
+    RC_PLAYER_READY,                    // a new player has been heard from
+    RC_SCENARIO_MISMATCH,
+    RC_DOLIST_FULL,
+    RC_SERIAL_PROCESSED,                // modem: a SERIAL packet was processed
+    RC_PLAYER_LEFT,                     // modem: the other player left the game
+    RC_HUNG_UP,                         // modem: hung up
+    RC_NOT_RESPONDING,
+    RC_CANCEL
+};
+// A modem game's packet (packed; Red Alert's SerialPacketType; only the fields
+// Process_Serial_Packet reads; the same bytes are read as an EventClass).
+#pragma pack(push, 1)
+struct UnknownSerialPacket {
+    int Command;                        // +0x00 (0x66 sign off, 0x68 message, 0x69, 0x6A, 0x78 taunt)
+    char Name[0x18 - 0x04];             // +0x04 the sender (narrow)
+    unsigned char ID;                   // +0x18
+    union {
+        unsigned short Message[1];      // +0x19 a message's text (wide; length not recovered)
+        char Taunt;                     // +0x19 a taunt's packed byte
+        struct {
+            char unknown_19[4];
+            char Color;                 // +0x1D the player leaving
+        } ScenarioInfo;
+    };
+};
+#pragma pack(pop)
+// Ends the modem connection of a player (0x005CEBA0; Red Alert's Destroy_Null_Connection).
+void __fastcall Destroy_Null_Connection(int id, int error);
+// Handles a modem game's packet: sign-off, message, taunt and the other serial
+// commands; an event packet comes back as RC_NORMAL (0x00626B30; Red Alert's
+// Process_Serial_Packet).
+RetcodeType __fastcall Process_Serial_Packet(char *multi_packet_buf, int first_time);
+
+// The megamission unit lists a compressed packet may refer to by slot instead of sending
+// them again (0x00A76CA8: 8 slots of a 5-byte Whom and up to 127 more 5-byte units; the
+// unit counts 0x00AABDB0 and the frames each slot was saved 0x00AABE94; names are hypotheses).
+extern char unknown_megamission_lists_a76ca8[8][0x280];
+extern int unknown_megamission_counts_aabdb0[8];
+extern int unknown_megamission_frames_aabe94[8];
+// Looks the megamission unit list (count, whom and the other units) up in the saved
+// slots: a match with save set takes the units out of the packet (count 0, size less,
+// the slot in whom[6]); without a match, save stores it in the free or oldest slot.
+// True when it matched (0x006279D0; name hypothesis).
+bool __fastcall Unknown_006279D0(unsigned char *count, int *size, char *whom, char *units, bool save);
+
+// Sends OutList's events in packets of at most multi_packet_max bytes through the connection
+// manager; the number of events sent (0x006261A0; Red Alert's Send_Packets, with
+// Build_Send_Packet and Add_Uncompressed_Events inline).
+int __fastcall Send_Packets(ConnManClass *net, char *multi_packet_buf, int multi_packet_max, int max_ahead, int my_sent);
+// Puts a received compressed packet's events in DoList; the count, -1 when DoList is full
+// (0x006282D0; Red Alert's Extract_Compressed_Events).
+int __fastcall Extract_Compressed_Events(void *buf, int bufsize);
+// Adds OutList's events to a send packet in the compressed form; the new size, the events
+// added in *added (0x00627B60; Red Alert's Add_Compressed_Events).
+int __fastcall Add_Compressed_Events(void *buf, int bufsize, int frame_delay, int size, int cap, int *added);
+
+// A count-up timer: the time since Started (Process_Receive_Packet 0x006265C0 reads it).
+struct UnknownElapsedTimer {
+    UnknownElapsedTimer() : Started(Timer) {}
+    long Started;                       // +0x00
+    SystemTimerClass Timer;             // +0x04
+};
+// The other players' frame-sync records (0x00AABDD0; 7, built by 0x006232D0).
+extern UnknownFrameTiming unknown_their_timing_aabdd0[7];
+// The commands sent so far (0x00AABE78; Red Alert's Queue_AI_Multiplayer static my_sent).
+extern unsigned short unknown_my_sent_aabe78;
+// The session's meta packet buffer and its size (0x00A3F81A, 0x00A3FA48: session +0x2582,
+// +0x27B0; Red Alert's Session.MetaPacket and Session.MetaSize).
+extern char unknown_meta_packet_a3f81a[];
+extern int unknown_meta_size_a3fa48;
+// The entries of the router's MEGAFRAMEINFO (type 0x25: 13 bytes) and PACKETTIMING (type 0x26:
+// 8 bytes) packets, after the event header; the entry count is the header's House byte.
+#pragma pack(push, 1)
+struct UnknownMegaFrameEntry {
+    long Frame;                         // +0x00
+    long unknown_04;
+    unsigned short CommandCount;        // +0x08
+    unsigned char Delay;                // +0x0A
+    char ID;                            // +0x0B
+    unsigned char Flags;                // +0x0C (bit 0: no response time)
+};
+struct UnknownPacketTimingEntry {
+    char ID;                            // +0x00
+    bool unknown_01;                    // +0x01 (set: report the player when this machine is the master)
+    unsigned long ResponseTime;         // +0x02
+    short unknown_06;
+};
+#pragma pack(pop)
+// The router's response time and the largest response time of the other players
+// (0x00A402DC is unknown_a402dc; 0x00A402CC, session +0x3034; hypothesis).
+extern unsigned int unknown_a402cc;
+// A player id the PACKETTIMING report skips (0x00A402D4, session +0x303C).
+extern int unknown_a402d4;
+// The other players' response times by connection index (0x00A76C88).
+extern unsigned long unknown_response_times_a76c88[];
+// Handles a received FRAMEINFO / FRAMESYNC packet (0x006265C0; Red Alert's
+// Process_Receive_Packet, with the RA2 timing records and an elapsed timer).
+RetcodeType __fastcall Process_Receive_Packet(ConnManClass *net, char *multi_packet_buf, int id, int packetlen,
+    UnknownFrameTiming *their, UnknownElapsedTimer *timer);
+// Sends the last commands and waits up to 600 ticks for every player to pass this frame
+// before the score screen, resending the frame sync every 15 ticks (0x00624850; called by
+// 0x0065D80A and 0x0065DEDA; name hypothesis).
+void __fastcall Wait_For_End_Game();
+// Handles the keyboard input of a frame (0x005406E0; Red Alert's Keyboard_Process).
+void __fastcall Keyboard_Process(int &input);
+
+// The reconnect dialog: the kick buttons (0x007EC3F8, in list order) and the
+// response-time bars beside them (0x007EC418), one per player.
+extern int unknown_kick_buttons_7ec3f8[8];
+extern int unknown_timing_bars_7ec418[8];
+// The reconnect dialog's ping counts (game mode 4): pings sent, seconds waited, the
+// two warnings given and the flag that ends the wait (0x00AB62E0-0x00AB62F8; cleared by
+// unknown_reset_globals_ab62e0 0x00627330).
+extern bool unknown_ab62e0;
+extern int unknown_ab62ec;
+extern int unknown_ab62f0;
+extern bool unknown_ab62f4;
+extern bool unknown_ab62f5;
+extern int unknown_ab62f8;
+// Draws each player's response-time bar in the reconnect dialog (0x00626CB0).
+void __fastcall Unknown_00626CB0(HWND dialog);
+// The reconnect dialog's window procedure (0x00627350): the kick buttons, a
+// once-a-second ping in game mode 4, and WM_USER + 0x97 to set it up.
+BOOL __stdcall Unknown_00627350(HWND dialog, UINT message, WPARAM wparam, LPARAM lparam);
+// The dialog helpers it calls (0x005B6000 on setup, 0x005B6060 on WM_DESTROY,
+// 0x005FEE70 before painting and 0x005FE380 for WM_DRAWITEM; hypotheses).
+void __fastcall Unknown_005B6000(HWND dialog);
+void __fastcall Unknown_005B6060(HWND dialog);
+void __fastcall Unknown_005FEE70(HWND dialog);
+void __fastcall Unknown_005FE380(LPARAM item);
 
 // The queue processing of a frame: playback, single player or multiplayer (0x00623770).
 void __fastcall Queue_AI();
@@ -105,6 +257,8 @@ void __fastcall Queue_AI_Multiplayer();
 int __fastcall Execute_DoList(int max_houses, int base_house, ConnManClass *net, long *their_frame, void *timing);
 // Adds the game state to GameCRC (0x00629FA0; Red Alert's Compute_Game_CRC).
 void __fastcall Compute_Game_CRC();
+// Called with the frame (mod 256) after the game CRC (0x0062CF40).
+void __fastcall Unknown_0062CF40(int frame);
 // Prints the CRC log (0x0062A360; Red Alert's Print_CRCs).
 void __fastcall Print_CRCs(EventClass *event);
 // The other CRC log (0x0062DBA0; used instead of Print_CRCs while unknown_flag_ab62e8 is set).

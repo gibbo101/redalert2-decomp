@@ -3,6 +3,8 @@
 #ifndef RA2_SHARED_TAUNT_PACKET_HPP
 #define RA2_SHARED_TAUNT_PACKET_HPP
 
+#include "shared/unknown_globals.hpp"
+
 // A partial view of HouseTypeClass for this unit only (shared/house_type.hpp adds header statics
 // that need their own accepted initializer sources; do not include both).
 class HouseTypeClass {
@@ -31,12 +33,9 @@ struct UnknownTauntPacket {
 
 // When the last taunt was sent, in milliseconds (0x007DB560; -1 until the first).
 extern unsigned long unknown_taunt_time_7db560;
-// Two flags (0x00A3F120 for game mode 3, 0x00A3F121 for mode 4; next to unknown_flags_a3f118 (next to unknown_flags_a3f118; meaning not recovered).
-extern bool unknown_flag_a3f120;
-extern bool unknown_flag_a3f121;
+// unknown_flag_a3f120, unknown_flag_a3f121: shared/unknown_globals.hpp.
 // Checks the sender's host name (0x005BBA50, ECX = the name at 0x00A3F618; hypothesis).
 int __fastcall Unknown_005bba50(unsigned short *name);
-// Plays the taunt with the packed byte (low nibble taunt, high nibble country; 0x00715FB0; hypothesis).
-void __fastcall Unknown_Play_Taunt_00715fb0(char packed);
+// Unknown_Play_Taunt_00715fb0: shared/unknown_globals.hpp.
 
 #endif

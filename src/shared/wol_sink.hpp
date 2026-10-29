@@ -566,11 +566,10 @@ struct __declspec(novtable) WolLadderClient : public IUnknown {
     virtual void __stdcall unknown_slot03() = 0;
     virtual void __stdcall unknown_slot04() = 0;
     virtual HRESULT __stdcall Request(char const *server, int port, char const *names, unsigned int game, int unknown1, int unknown2, int unknown3) = 0;
-private:
-    // Slot position only: ABI/return/parameters unresolved; never invoked.
-    // This private placeholder makes no claim about the original signature.
-    virtual void __stdcall unknown_slot06_abi_unresolved() = 0;
-public:
+    // Pings an address with a timeout in milliseconds; the request's handle in *handle
+    // (the reconnect dialog 0x00627350 pings the game address 0x00B2A758 every second;
+    // name hypothesis: WOLAPI's INetUtil::RequestPing).
+    virtual HRESULT __stdcall Request_Ping(char const *address, int timeout, int *handle) = 0;
     // Original004820DD passes only COM this and calls vtable+1C. The return
     // is ignored; void expresses only this caller, not original return behavior.
     virtual void __stdcall unknown_slot07_004820dd() = 0;

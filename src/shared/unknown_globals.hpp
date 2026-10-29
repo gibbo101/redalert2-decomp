@@ -13,6 +13,7 @@ struct NodeNameType;
 #include "shared/coord.hpp"
 #include "shared/vector_class_decl.hpp"
 #include "shared/session_blocks.hpp"
+#include "shared/message_list.hpp"
 
 extern int unknown_int_7add80;
 extern ConvertClass *unknown_drawer_8323b8;  // 0x008323B8 (OverlayTypeClass slot 40; also CellClass 0x474C6B)
@@ -57,6 +58,7 @@ extern bool unknown_flag_a3d2b8;       // 0x00A3D2B8 (session +0x20: multiplayer
 struct UnknownKickVoters {
     int ID[8];
 };
+struct UnknownGlobalPacket;   // shared/queue.hpp
 struct UnknownSessionState {
     int Value_0124_006729f0();
     int Value_011c_00672a10();
@@ -115,10 +117,14 @@ struct UnknownSessionState {
     bool unknown_638;                       // +0x638 (cleared by 0x00672440)
     bool unknown_639;                       // +0x639 (cleared before the load wait, 0x0065C7D0)
     bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)
-    char unknown_63b[0x8B8 - 0x63B];
+    char unknown_63b[0x8A0 - 0x63B];
+    // +0x8A0 copies of received global packets (RTTI DynamicVectorClass<GlobalPacketType *>,
+    // vtable 0x007A9584; Unknown_00627190 adds them).
+    DynamicVectorClass<UnknownGlobalPacket *> GlobalPackets_8a0;
     int KickVotes[8];                       // +0x8B8 per connection: the kick votes received (0x00627210)
     UnknownKickVoters KickVoters[8];        // +0x8D8 per connection: the voters' ids
-    char unknown_9d8[0x1FB4 - 0x9D8];
+    MessageListClass Messages;              // +0x9D8 the on-screen messages (Red Alert's Session.Messages; 0x00A3DC70)
+    char unknown_1e74[0x1FB4 - 0x1E74];
     int unknown_1fb4[4][28];                // +0x1FB4 four rows indexed by the +0x2300 counter (MPCooperative slot 34 sets -1)
     char unknown_2174[0x2300 - 0x2174];
     int unknown_2300;                       // +0x2300 (capped at 3; also unknown_a3f598)
@@ -159,6 +165,14 @@ struct UnknownSessionState {
     void Unknown_00672980();                // 0x00672980 (a random colour not in use)
 };
 extern UnknownSessionState unknown_session_a3d298;
+// Two flags (0x00A3F120 for game mode 3, 0x00A3F121 for mode 4: session +0x1E88/+0x1E89; a received
+// taunt packet is played only while the mode's flag is set; next to unknown_flags_a3f118).
+extern bool unknown_flag_a3f120;
+extern bool unknown_flag_a3f121;
+// The last message text received (0x00A3F122, session +0x1E8A; Red Alert's Session.LastMessage).
+extern unsigned short unknown_last_message_a3f122[];
+// Plays the taunt with the packed byte (low nibble taunt, high nibble country; 0x00715FB0; hypothesis).
+void __fastcall Unknown_Play_Taunt_00715fb0(char packed);
 // The player count of a multiplayer map (0x005C6600; hypothesis).
 int __fastcall Unknown_005c6600(int scenario);
 // Saves the session settings (0x00670380; after the skirmish dialog and WOL games).

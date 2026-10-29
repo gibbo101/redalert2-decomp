@@ -273,3 +273,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x6C9AF0 98.82 (mov ebp,esi early; inline Target_Legal), NoInit ctor 0x6C1F10 66.06 (exact only with four more
   pending inline sites after the vectors: no natural source yet), helper 0x6C3950 69.29, slot 65 0x6C3B30 28.57
   (decoded; inline budget). Not started: Take_Damage 0x6CDC40, AI 0x6C74C0, slot 66 0x6C2C40.
+- Conquer.CPP (population-2425; little of Red Alert's CONQUER.CPP survives here): 0x481BF0 (780 B, the game-session
+  loop) stores ESP/EBP and a code label (`lea eax,[0x481cd8]`) into 0x865C14/1C/18 -- evidenced handwritten
+  assembly, a separate ledger category, not C. 0x482110 Service_Network_Handshake (2438 B, seed 22.78) needs the
+  0xA40978 manager members, Unknown84E8D0 methods, session/packet layouts and retiring seed 0x482AA0 (atexit
+  destructor of the function-static timer at 0x850D94): a layout-recovery lane.
