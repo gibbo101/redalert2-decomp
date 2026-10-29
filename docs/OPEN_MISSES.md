@@ -513,12 +513,15 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x683FC0 97.43 (shape 100; the slot loop's strength-reduced pointer starts at Slots[1][1] in the original, ours at
   Slots[1][0]), 0x6829F0 78.89 (the original calls Skirmish_Is_Computer 0x6836B0 in the player-type case; ours inlines it).
   LdPrgMgr 0x535BF0 (3978 B) not started (disassembly Small218/o_535bf0.s).
-- Queue.CPP after Queue220 (build/class-work/Queue220, NOTES): 0x62DBA0 sync writer exact in the whole TU (d/r1) but
-  check_plans refuses "Unsupported allocatable data section ... ??_C@_02JOHD@No?$AA@" although the "No"/"Yes" @refs match
-  accepted 0x516C40 - cause unknown (fallback: extern char arrays as 0x482FE0 does). Queue_AI 0x623770 exact only with
+- Queue.CPP after Queue225 (build/class-work/Queue220, Queue225 NOTES; 0x62DBA0 and 0x62CF40 landed; Queue220's literal
+  refusal was a stale check, wrong @ref literal names pass ws.py but fail acceptance). Print_CRCs 0x62A360 (11,223 B)
+  outlined in Queue225 NOTES. Queue_AI 0x623770 exact only with
   static Queue_AI_Multiplayer 0x623B00 (3355) in the unit plus the Next 0x62E9E0 seed take-over (pop-42).
   Extract_Compressed_Events 0x6282D0 43.24 (registers/frame), 0x629220 82.05.
 - WorldDom.cpp after SendFile221 (build/class-work/SendFile221/NOTES.md, misses/768c70): Faction_Select_Dialog 0x768C70
   82.11 (Load_Image static helper and three named image members zeroed in the init list fix the dtor inlining and vptr
   order, so header and dtor 0x768800 change together; remaining: register arguments set before the stack pushes).
   0x768E90 (1272 B state machine) not started, needs ctor COMDAT 0x769790 in the plan; Mouse_Move 0x768840 64.00.
+- Vector forms after Vector223 (build/class-work/Vector223/NOTES.md, impact.py): Westwood Add/ID landed (r1, zero impact).
+  int operator[] still moves BaseClass::Get_Building 0x42C0A0 (99.20, lea operand order) and WDT Conflict::Init_Options
+  0x727480 (rc_ptr<FlagGameOption> dtor inlines); HouseClass 0x4E68D0 has a natural fix. Init 0x5173C0 99.48 under r1.

@@ -135,6 +135,10 @@ typedef long LPARAM;
 typedef long LRESULT;
 WIN32_IMPORT LONG WINAPI SetWindowLongA(HWND window, int index, LONG value);
 WIN32_IMPORT LONG WINAPI GetWindowLongA(HWND window, int index);
+WIN32_IMPORT HWND WINAPI GetParent(HWND window);
+WIN32_IMPORT BOOL WINAPI IsWindowVisible(HWND window);
+typedef BOOL (WINAPI *WNDENUMPROC)(HWND window, LPARAM lparam);
+WIN32_IMPORT BOOL WINAPI EnumChildWindows(HWND parent, WNDENUMPROC callback, LPARAM lparam);
 WIN32_IMPORT HWND WINAPI GetDlgItem(HWND dialog, int id);
 WIN32_IMPORT BOOL WINAPI ValidateRect(HWND window, RECT const *rect);
 WIN32_IMPORT int WINAPI GetDlgCtrlID(HWND window);
@@ -158,6 +162,8 @@ WIN32_IMPORT BOOL WINAPI ReleaseCapture();
 #define SW_HIDE 0
 #define SW_SHOW 5
 #define DWL_USER 8
+#define GWL_STYLE (-16)
+#define BS_OWNERDRAW 0xB
 #define CB_GETCOUNT 0x146
 #define CB_GETCURSEL 0x147
 #define CB_SETCURSEL 0x14E

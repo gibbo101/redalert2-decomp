@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Startup226 Startup.CPP WinMain and shutdown; Vector223 wwlib VECTOR.H forms whole-tree study (unblocks Init 0x5173C0); OwnrDraw224 ownrdraw.cpp span split and first unit; Queue225 Queue.CPP sync writer (literal-binding refusal) and Queue_AI group. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Startup226 Startup.CPP WinMain and shutdown; Init227 Init 0x5173C0 command registration (Vector223 r1 landed, 99.48); OwnrDraw224 ownrdraw.cpp span split and first unit; Queue228 Queue.CPP Print_CRCs 0x62A360 and Queue_AI group. All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
