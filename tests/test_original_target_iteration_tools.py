@@ -292,6 +292,8 @@ class UnreferencedEntryTests(unittest.TestCase):
             return dict(entry='00401010', ranges=[dict(bytes_hex=(code + fill + table).hex())])
         self.assertTrue(cc.aligned_unreferenced_entry(after_ret, body(bytes.fromhex('9090908bff')), {}))
         self.assertTrue(cc.aligned_unreferenced_entry(after_ret, body(bytes.fromhex('9090909090')), {}))
+        self.assertTrue(cc.aligned_unreferenced_entry(after_ret, body(bytes.fromhex('90908d4900')), {}))
+        self.assertTrue(cc.aligned_unreferenced_entry(after_ret, body(bytes.fromhex('908d642400')), {}))
         # 8B FF that does not end at a 4-aligned table is code, not alignment fill.
         self.assertFalse(cc.aligned_unreferenced_entry(after_ret, body(bytes.fromhex('8bff')), {}))
 

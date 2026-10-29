@@ -46,6 +46,9 @@ def accepted_region_ends(catalog):
     return {r['entry'] + r['full_extent_bytes'] for r in catalog['regions']}
 
 
+ALIGNMENT_FILLS = (b'\x8d\x64\x24\x00', b'\x8d\x49\x00', b'\x8b\xff')
+
+
 def aligned_unreferenced_entry(audit, bound, gaps, accepted_ends=()):
     """Entry evidence for a function nothing calls directly (inlined everywhere).
 
@@ -78,11 +81,15 @@ def aligned_unreferenced_entry(audit, bound, gaps, accepted_ends=()):
     data = switch_data_start(decoder, body, entry)
     if data is not None:
         # The tables are 4-byte aligned after the code; drop the alignment fill:
-        # NOPs/INT3s, or VC6's two-byte `mov edi, edi` (8B FF) when it ends
-        # exactly at a 4-aligned table (HouseClass 0x4EB8C0).
+        # NOPs/INT3s, or one of VC6's multi-byte no-op fills when it ends exactly
+        # at a 4-aligned table: `mov edi, edi` (8B FF, HouseClass 0x4EB8C0),
+        # `lea ecx, [ecx]` (8D 49 00, HouseClass 0x4EAF30), `lea esp, [esp]` (8D 64 24 00).
         body = body[:data]
-        if body.endswith(b'\x8b\xff') and (entry + data) % 4 == 0:
-            body = body[:-2]
+        if (entry + data) % 4 == 0:
+            for fill in ALIGNMENT_FILLS:
+                if body.endswith(fill):
+                    body = body[:-len(fill)]
+                    break
         body = body.rstrip(b'\x90\xcc')
     instructions = list(decoder.disasm(body, entry))
     return (sum(i.size for i in instructions) == len(body) and bool(instructions) and
