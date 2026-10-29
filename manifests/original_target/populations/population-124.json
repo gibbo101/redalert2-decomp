@@ -2865,64 +2865,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 5064848,
-      "method": "004d4890",
-      "symbol": "?FUN_004d4890@seed_004d4890@@YAXXZ",
-      "symbol_prefix": "?FUN_004d4890@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 36,
-      "body_sha256": "d5b1f28f44f18ea210fda44812190124765031a5bb81cb5b4927e594e2bdd90a",
-      "padding_bytes": 12,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "029e018384f6679629a5c5dc4556c961d2fcf5ae9a749038d0a760eabeb4b50c",
-      "relocations": [
-        {
-          "offset": 15,
-          "kind": 6,
-          "symbol": "_DAT_00a40a28",
-          "target": 10750504,
-          "addend": 0,
-          "resolved": 10750504
-        },
-        {
-          "offset": 20,
-          "kind": 20,
-          "symbol": "?FUN_005cffc0@Callee_005cffc0@seed_004d4890@@QAEXIIIG@Z",
-          "target": 6094784,
-          "addend": 0,
-          "resolved": 1029912
-        },
-        {
-          "offset": 25,
-          "kind": 6,
-          "symbol": "?FUN_004d48c0@seed_004d4890@@YAXXZ",
-          "target": 5064896,
-          "addend": 0,
-          "resolved": 5064896
-        },
-        {
-          "offset": 30,
-          "kind": 20,
-          "symbol": "?FUN_0078298a@seed_004d4890@@YAII@Z",
-          "target": 7874954,
-          "addend": 0,
-          "resolved": 2810072
-        }
-      ],
-      "source_sha256": "cf4af3a7bacf44f1c7a65d325874ede9bc1d853466fad2a58d45307eb82d67b2",
-      "source": "src/recovered/004d4890.cpp",
-      "source_order": 11111,
-      "population": "population-124",
-      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 5351536,
       "method": "0051a870",
       "symbol": "?FUN_0051a870@seed_0051a870@@YAXXZ",

@@ -1,2 +1,6 @@
 capstone==5.0.9
 pefile==2024.8.26
+
+# Optional: pycparser enables closed C ownership checks for import aliases.
+# If absent, only those repairs are skipped; existing seed generation is unchanged.
+# The bundled Windows runtime supplies it; this change performs no installation.
