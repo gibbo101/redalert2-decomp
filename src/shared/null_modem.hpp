@@ -80,6 +80,9 @@ enum DialStatusType {
     DIAL_CANCELED
 };
 
+// The modem command result names by status (0x007E78F0; NullMgr.CPP's debug log).
+extern char ModemCmdNames[4][20];
+
 // The modem's CONNECT line (0x00A72E10; Red Alert's ModemRXString).
 extern char ModemRXString[80];
 

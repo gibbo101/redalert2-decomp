@@ -1,6 +1,16 @@
 // NullModemClass::NullModemClass(int numsend, int numreceive, int maxlen, unsigned short magicnum) (0x005CFFC0)
 #include "shared/null_modem.hpp"
 // @ref ??_7NullModemClass@@6B@=007a7414
+// @ref ?ModemCmdNames@@3PAY0BE@DA=007e78f0
+
+// The modem command results by status, for the debug log (0x007E78F0; the first
+// data of the unit, before Init's com_ids).
+char ModemCmdNames[4][20] = {
+    "MODEM_CMD_TIMEOUT",
+    "MODEM_CMD_ERROR",
+    "MODEM_CMD_OK",
+    "MODEM_CMD_0"
+};
 
 NullModemClass::NullModemClass(int numsend, int numreceive, int maxlen, unsigned short magicnum) : ConnManClass()
 {
