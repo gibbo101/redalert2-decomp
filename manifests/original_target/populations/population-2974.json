@@ -4,8 +4,8 @@
     "id": "population-2974",
     "inventory_sha256": "e01b021329f3ebae246f986a743e53bdc90e6645a7b166a2cd50da4e07147a77",
     "gaps_sha256": "544e12e054885981d9481e5bdd06f41ce1fd5e9f1303ae653aad75d93d6516a7",
-    "historical_population_sha256": "c2239a1c13d453ab23edf26f8683a352c103501ba4090e16cbf8de2edc819aa8",
-    "historical_acceptance_sha256": "f0a62db844b827b95934bec4ea4eb9ee0907d662377e9170810eea7b5b97dd67"
+    "historical_population_sha256": "f39d0e9628ae1239bf2844d16806b92ff722ed5aa61c661ccfd56076151ee3c5",
+    "historical_acceptance_sha256": "6820b326bf992397f9ebcbdcc8850dda601940593655b412b188530c47583476"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7995,12 +7995,12 @@
     "?Lobby_Slot_Limit_005c6520@@YAHXZ": 6055200,
     "?Lobby_Slot_Limit_Plus_One_005c6550@@YAHXZ": 6055248,
     "?Scenario_Slot_Limit_005c65a0@@YIHH@Z": 6055328,
-    "?Open_Lobby_Dialog_005c6960@@YIXPAUHWND__@@@Z": 6056288,
+    "?Open_Lobby_Dialog_005c6960@@YIHPAUHWND__@@@Z": 6056288,
     "?Lobby_Dialog_Proc_005c69e0@@YGJPAUHWND__@@IIJ@Z": 6056416,
     "?unknown_lobby_dialog_a728e0@@3PAUHWND__@@A": 10954976,
     "?Lobby_Dialog_Update_005c67c0@@YA_NXZ": 6055872,
     "?Unknown_007359e0@@YIXPAUHWND__@@P6A_NXZHHH@Z": 7559648,
-    "?Is_Host_005c86a0@@YAHXZ": 6063776,
+    "?Is_Host_005c86a0@@YA_NXZ": 6063776,
     "?Is_Local_Name_005c86c0@@YIHPBG@Z": 6063808,
     "?Fill_Slots_005c8a10@@YAXXZ": 6064656,
     "?Clear_Slot_Lists_005c8a70@@YAXXZ": 6064752,

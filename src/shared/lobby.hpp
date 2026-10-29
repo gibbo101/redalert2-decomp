@@ -109,7 +109,7 @@ int Lobby_Slot_Limit_Plus_One_005c6550();
 // and by the game mode 4 network tests; 8 for no map (-1) (0x005C65A0).
 int __fastcall Scenario_Slot_Limit_005c65a0(int scenario);
 // Answers whether the local nick name is the host's name (0x005C86A0).
-int Is_Host_005c86a0();
+bool Is_Host_005c86a0();
 // Answers whether a name is the local nick name (0x005C86C0).
 int __fastcall Is_Local_Name_005c86c0(wchar_t const *name);
 // The usable slots get the open entry and the rest the closed entry (0x005C8A10).
@@ -162,7 +162,7 @@ int Lobby_Slot_Limit_Plus_One_005c6550();
 // and by the game mode 4 network tests; 8 for no map (-1) (0x005C65A0).
 int __fastcall Scenario_Slot_Limit_005c65a0(int scenario);
 // Answers whether the local nick name is the host's name (0x005C86A0).
-int Is_Host_005c86a0();
+bool Is_Host_005c86a0();
 // Answers whether a name is the local nick name (0x005C86C0).
 int __fastcall Is_Local_Name_005c86c0(wchar_t const *name);
 // The usable slots get the open entry and the rest the closed entry (0x005C8A10).
@@ -254,7 +254,7 @@ void __fastcall Lock_Slots_005c9da0(HWND dialog, int slot);
 // shows it and starts the callback.
 long __stdcall Lobby_Dialog_Proc_005c69e0(HWND window, unsigned message, unsigned wparam, long lparam);
 bool Lobby_Dialog_Update_005c67c0();
-void __fastcall Open_Lobby_Dialog_005c6960(HWND parent);
+int __fastcall Open_Lobby_Dialog_005c6960(HWND parent);
 extern HWND unknown_lobby_dialog_a728e0;
 // The dialog manager: creates a dialog from a template (0x00735700), prepares a created dialog
 // (0x005FF7E0) and runs a dialog's update callback (0x007359E0; the last three arguments unknown; it returns

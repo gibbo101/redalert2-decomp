@@ -4,8 +4,8 @@
     "id": "population-2971",
     "inventory_sha256": "b226684107c632d48637051ee4c08620912bde382f8b427fa8660c36e3cb87d5",
     "gaps_sha256": "5c3f943465b225cee656e63e864830e273febbe5067bdaefcbd6d7e7e01bb5f0",
-    "historical_population_sha256": "0aa59a57753cff792e6cb1efd61a38ff60550531586e91a28e198640005b4870",
-    "historical_acceptance_sha256": "aa1f1a086e0688abc6d3910d23046152a0d78313a114aff687d571375209da02"
+    "historical_population_sha256": "0e68dd56c57c48a46a85ff2771688608aee2f94e59f9500a1aec5e6a6763f855",
+    "historical_acceptance_sha256": "1c33a8c3d79c35ad25e2def81bdb75a4c3ba7c87c72fdc27b9392f80177ec741"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1647,11 +1647,11 @@
     "?Lobby_Slot_Limit_Plus_One_005c6550@@YAHXZ": 6055248,
     "?Scenario_Slot_Limit_005c65a0@@YIHH@Z": 6055328,
     "?Selected_Campaign_005c67a0@@YAHXZ": 6055840,
-    "?Open_Lobby_Dialog_005c6960@@YIXPAUHWND__@@@Z": 6056288,
+    "?Open_Lobby_Dialog_005c6960@@YIHPAUHWND__@@@Z": 6056288,
     "?Unknown_Pregame_Setup_005c74f0@@YAXXZ": 6059248,
     "?Download_Map_Preview_005c7970@@YIXXZ": 6060400,
     "?Select_Scenario_005c7c30@@YI_NH@Z": 6061104,
-    "?Is_Host_005c86a0@@YAHXZ": 6063776,
+    "?Is_Host_005c86a0@@YA_NXZ": 6063776,
     "?Is_Local_Name_005c86c0@@YIHPBG@Z": 6063808,
     "?Init_Lobby_Entries_005c86e0@@YIXXZ": 6063840,
     "?Unknown_Free_Lobby_Entries_005c8950@@YAXXZ": 6064464,
@@ -8238,7 +8238,24 @@
     "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615136,
     "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615140,
     "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615016,
-    "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615072
+    "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615072,
+    "?Init_Network_005bc460@@YA_NXZ": 6014048,
+    "?Join_Dialog_Proc_005be6b0@@YGJPAUHWND__@@IIJ@Z": 6022832,
+    "?unknown_join_list_7e699c@@3_NA": 8284572,
+    "?unknown_lobby_result_a71e8c@@3HA": 10952332,
+    "__imp__IsWindowEnabled@4": 7971760,
+    "?unknown_a71e99@@3_NA": 10952345,
+    "__imp__ChildWindowFromPointEx@16": 7971748,
+    "?Unknown_005e22b0@@YIPBDPAUHWND__@@0@Z": 6169264,
+    "?Unknown_005e8710@@YIXPAUHWND__@@@Z": 6194960,
+    "?Unknown_005def80@@YI_NJ_N@Z": 6156160,
+    "?Join_Lobby_Dialog_Proc_005c2330@@YGJPAUHWND__@@IIJ@Z": 6038320,
+    "?unknown_a72d52@@3_NA": 10956114,
+    "?Unknown_005c3d90@@YIXPBD0@Z": 6045072,
+    "?Init_Clipping_00713160@UnknownVersionObject@@QAEXXZ": 7418208,
+    "__imp__ChildWindowFromPointEx@12": 7971748,
+    "__imp__ChildWindowFromPointEx": 7971748,
+    "__imp__IsWindowEnabled": 7971760
   },
   "regions": [
     {
@@ -11311,8 +11328,8 @@
     {
       "entry": 6056288,
       "method": "005c6960",
-      "symbol": "?Open_Lobby_Dialog_005c6960@@YIXPAUHWND__@@@Z",
-      "symbol_prefix": "?Open_Lobby_Dialog_005c6960@@YIXPAUHWND__@@@Z",
+      "symbol": "?Open_Lobby_Dialog_005c6960@@YIHPAUHWND__@@@Z",
+      "symbol_prefix": "?Open_Lobby_Dialog_005c6960@@YIHPAUHWND__@@@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -11430,7 +11447,7 @@
           "resolved": 1503249
         }
       ],
-      "source_sha256": "9a4987a3e3f0df14b279c319b456c827d0ab7178639d1329daafd2c5f01efd1f",
+      "source_sha256": "e6577de7390aa191fbb26bc9dd86081f4a8d19ceb63bfeaf4a8ead2e9b735aa9",
       "source": "src/recovered/netshare/Open_Lobby_Dialog_005c6960.cpp",
       "population": "population-2971",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
@@ -11442,8 +11459,8 @@
     {
       "entry": 6063776,
       "method": "005c86a0",
-      "symbol": "?Is_Host_005c86a0@@YAHXZ",
-      "symbol_prefix": "?Is_Host_005c86a0@@YAHXZ",
+      "symbol": "?Is_Host_005c86a0@@YA_NXZ",
+      "symbol_prefix": "?Is_Host_005c86a0@@YA_NXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -11489,7 +11506,7 @@
           "resolved": 1814814
         }
       ],
-      "source_sha256": "6a4151e68fdeaac3a50727f4cdf3cc610e2c841802b6b28fdb917bc4c85739e9",
+      "source_sha256": "ae2be2f83fb1984cdb5fbd97247573fba168cab6035a0da085fd6528636f336e",
       "source": "src/recovered/netshare/Is_Host_005c86a0.cpp",
       "population": "population-2971",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
