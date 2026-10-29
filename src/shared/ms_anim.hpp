@@ -168,6 +168,11 @@ public:
     // TextRect sized to the whole text (inline: Set_Rect expands it in both
     // branches; name hypothesis).
     void Measure_Text() { Font->Text_Rect(Text.Get(), TextRect); }
+    // Slot 4's line-at-a-time variant: shows the line from LineStart at
+    // unknown_50 in three fade steps (unknown_24 0..2), then moves to the
+    // next line with a "bleep1" (0x005AF210; no caller, not in the vtable;
+    // name hypothesis).
+    bool Unknown_5af210(Surface *surface, Rect *dirty);
     // The width of a line up to its end or newline (inline: slot 4 and Draw
     // expand it; name hypothesis).
     int Line_Width(WideString const &line);
@@ -183,6 +188,9 @@ public:
     bool unknown_48;            // +0x48 (slot 4 returns its negation once finished)
     bool Centered;              // +0x49 lines centred in TextRect
     int unknown_4C;             // +0x4C the last line's centring offset
+    // Used only by 0x005AF210 (the constructor leaves them unset).
+    int unknown_50;             // +0x50 y of the line being shown
+    Rect unknown_54;            // +0x54 area of the previous step
 };
 
 inline int MSPrintAnim::Line_Width(WideString const &line)
@@ -195,6 +203,13 @@ inline int MSPrintAnim::Line_Width(WideString const &line)
     }
     return width;
 }
+
+// Breaks text into lines no wider than width less one glyph: each line ends
+// at its last space (the space becomes '\n'), or, when the line has none,
+// after a '-' or where it runs out of room (a '\n' is inserted); '\n' and
+// '@' end a line early. Returns the widest line (0x005AE9A0, __fastcall;
+// name hypothesis).
+int __fastcall unknown_wrap_text_5ae9a0(WideString &text, MSFont *font, int width);
 
 class Wstring;
 class FileClass;
@@ -260,6 +275,7 @@ extern PaletteClass unknown_palette_838710;     // 0x00838710
 // member names are hypotheses.
 class MSPCXAnim : public MSAnim {
 public:
+    MSPCXAnim(Wstring const &name, DynamicVectorClass<MSAnim *> *anims, bool unknown_28);   // 0x005AF5F0 centred on Background
     MSPCXAnim(Wstring const &name, DynamicVectorClass<MSAnim *> *anims, Point2D const &position,
               bool unknown_28);                                 // 0x005AF790 loads <name up to '.'>.PCX
     virtual ~MSPCXAnim();                                       // 0x005AF8F0

@@ -60,6 +60,15 @@ public:
     Rect(TPoint2D const &point, int width, int height);
 
     bool Is_Valid() const { return Width > 0 && Height > 0; }
+    // All four members at once (MSPrintAnim 0x005AF210 stores the reported
+    // area through it: a charged four-store callee; name hypothesis).
+    void Set(int x, int y, int width, int height)
+    {
+        X = x;
+        Y = y;
+        Width = width;
+        Height = height;
+    }
 
     // Member-wise comparison (MSShapeAnim::Set_Frame 0x005AC760 compares a
     // saved rectangle with a returned temporary field by field).

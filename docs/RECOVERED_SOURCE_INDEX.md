@@ -130,6 +130,7 @@
 | [classes/WorldDominationTour__Conflict](../src/recovered/classes/WorldDominationTour__Conflict/) | 12 | 2,104 | 12 | 0x007272F0–0x00727B30 |
 | [classes/WWKeyboardClass](../src/recovered/classes/WWKeyboardClass/) | 20 | 2,081 | 20 | 0x00532130–0x00532E60 |
 | [classes/WaypointPathClass](../src/recovered/classes/WaypointPathClass/) | 21 | 2,055 | 21 | 0x00724970–0x00725200 |
+| [classes/MSPrintAnim](../src/recovered/classes/MSPrintAnim/) | 7 | 2,015 | 7 | 0x005AE6C0–0x005AFE80 |
 | [classes/WorldDominationTour__Campaign](../src/recovered/classes/WorldDominationTour__Campaign/) | 11 | 2,011 | 11 | 0x00725DE0–0x007269B0 |
 | [classes/ZBuffer](../src/recovered/classes/ZBuffer/) | 10 | 2,009 | 10 | 0x00410A40–0x00411230 |
 | [classes/IPXGlobalConnClass](../src/recovered/classes/IPXGlobalConnClass/) | 16 | 1,994 | 16 | 0x005241B0–0x00524DD0 |
@@ -155,7 +156,7 @@
 | [classes/RadBeam](../src/recovered/classes/RadBeam/) | 20 | 1,624 | 20 | 0x006353A0–0x00636020 |
 | [classes/MonoClass](../src/recovered/classes/MonoClass/) | 10 | 1,605 | 10 | 0x0059E160–0x0059EA90 |
 | [classes/TriColorGaugeClass](../src/recovered/classes/TriColorGaugeClass/) | 5 | 1,605 | 5 | 0x004D0630–0x004D0CD0 |
-| [classes/MSPrintAnim](../src/recovered/classes/MSPrintAnim/) | 6 | 1,531 | 6 | 0x005AE6C0–0x005AFE80 |
+| [classes/MSPCXAnim](../src/recovered/classes/MSPCXAnim/) | 9 | 1,538 | 9 | 0x005AF5F0–0x005AFEB0 |
 | [classes/CaptureManagerClass](../src/recovered/classes/CaptureManagerClass/) | 16 | 1,530 | 16 | 0x00467D30–0x00468380 |
 | [classes/TeleportLocomotionClass](../src/recovered/classes/TeleportLocomotionClass/) | 27 | 1,528 | 27 | 0x006DFCA0–0x006E1C70 |
 | [classes/Dial8Class](../src/recovered/classes/Dial8Class/) | 5 | 1,504 | 4 | 0x00496D30–0x00497320 |
@@ -179,6 +180,7 @@
 | [classes/SmudgeClass](../src/recovered/classes/SmudgeClass/) | 14 | 1,381 | 14 | 0x004D3290–0x00687B00 |
 | [classes/KamikazeTrackerClass](../src/recovered/classes/KamikazeTrackerClass/) | 9 | 1,338 | 9 | 0x00531550–0x00531AA0 |
 | [classes/IsometricTileTypeClass](../src/recovered/classes/IsometricTileTypeClass/) | 18 | 1,319 | 17 | 0x004D3F90–0x0052E6B0 |
+| [classes/MSAnim](../src/recovered/classes/MSAnim/) | 10 | 1,278 | 10 | 0x005AC540–0x005AFCA0 |
 | [classes/EnumConnectionsClass](../src/recovered/classes/EnumConnectionsClass/) | 10 | 1,265 | 7 | 0x00492180–0x00492650 |
 | [classes/AbstractTypeClass](../src/recovered/classes/AbstractTypeClass/) | 11 | 1,237 | 11 | 0x00410580–0x004D4450 |
 | [classes/IPXAddressClass](../src/recovered/classes/IPXAddressClass/) | 18 | 1,229 | 18 | 0x00523410–0x00523960 |
@@ -189,7 +191,6 @@
 | [classes/MixFileClass_CCFileClass](../src/recovered/classes/MixFileClass_CCFileClass/) | 9 | 1,190 | 9 | 0x005952D0–0x00595C60 |
 | [classes/FacingClass](../src/recovered/classes/FacingClass/) | 12 | 1,175 | 12 | 0x004B89D0–0x004B8E90 |
 | [classes/GraphicMenuAnimItem](../src/recovered/classes/GraphicMenuAnimItem/) | 5 | 1,150 | 4 | 0x004DF350–0x004DF7B0 |
-| [classes/MSPCXAnim](../src/recovered/classes/MSPCXAnim/) | 8 | 1,137 | 8 | 0x005AF790–0x005AFEB0 |
 | [classes/VectorClass_TechnoTypeClass_ptr](../src/recovered/classes/VectorClass_TechnoTypeClass_ptr/) | 16 | 1,111 | 14 | 0x0046CD30–0x004BA3C0 |
 | [classes/BinkClass](../src/recovered/classes/BinkClass/) | 16 | 1,106 | 16 | 0x0042FE50–0x00430AF0 |
 | [classes/LZOPipe](../src/recovered/classes/LZOPipe/) | 5 | 1,097 | 5 | 0x0053EB40–0x0053EF60 |
@@ -310,6 +311,7 @@
 | [classes/VectorClass_tConnInfoStruct_ptr](../src/recovered/classes/VectorClass_tConnInfoStruct_ptr/) | 9 | 586 | 6 | 0x00765E50–0x007680C0 |
 | [classes/LCWStraw](../src/recovered/classes/LCWStraw/) | 4 | 575 | 4 | 0x005352D0–0x005354E0 |
 | [classes/VectorClass_BaseNodeClass](../src/recovered/classes/VectorClass_BaseNodeClass/) | 7 | 575 | 5 | 0x0042CBE0–0x0042D340 |
+| [classes/MSBitPrintAnim](../src/recovered/classes/MSBitPrintAnim/) | 8 | 571 | 8 | 0x005AE480–0x005AFE50 |
 | [classes/DynamicVectorClass_AircraftTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_AircraftTypeClass_ptr/) | 8 | 566 | 8 | 0x004D54F0–0x004FB3E0 |
 | [classes/DynamicVectorClass_InfantryTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_InfantryTypeClass_ptr/) | 8 | 566 | 8 | 0x004D5610–0x004FAC40 |
 | [classes/DynamicVectorClass_UnitTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_UnitTypeClass_ptr/) | 8 | 566 | 8 | 0x004D5550–0x004FB010 |
@@ -394,7 +396,6 @@
 | [classes/LinkClass](../src/recovered/classes/LinkClass/) | 13 | 459 | 13 | 0x004CF710–0x00539110 |
 | [classes/ScrollClass](../src/recovered/classes/ScrollClass/) | 10 | 458 | 10 | 0x0040D140–0x0066AC60 |
 | [classes/UnholyAlliance](../src/recovered/classes/UnholyAlliance/) | 7 | 458 | 6 | 0x005AC330–0x005AC510 |
-| [classes/MSAnim](../src/recovered/classes/MSAnim/) | 9 | 457 | 9 | 0x005AC540–0x005AFCA0 |
 | [classes/DynamicVectorClass_RGBClass](../src/recovered/classes/DynamicVectorClass_RGBClass/) | 5 | 456 | 3 | 0x0046CD40–0x00622040 |
 | [classes/TypeList_int](../src/recovered/classes/TypeList_int/) | 6 | 450 | 6 | 0x0046CBF0–0x00652C00 |
 | [classes/DynamicVectorClass_CellClass_ptr](../src/recovered/classes/DynamicVectorClass_CellClass_ptr/) | 6 | 449 | 3 | 0x0058DE10–0x007246D0 |
@@ -958,7 +959,6 @@
 | [classes/FirewallSettings](../src/recovered/classes/FirewallSettings/) | 2 | 234 | 2 | 0x005B9E80–0x005BA210 |
 | [classes/RLEBlitTransRemapDestZRead_unsigned_char](../src/recovered/classes/RLEBlitTransRemapDestZRead_unsigned_char/) | 2 | 234 | 2 | 0x004868E0–0x0048C950 |
 | [classes/MSAnimEntry](../src/recovered/classes/MSAnimEntry/) | 1 | 232 | 1 | 0x005B14C0–0x005B14C0 |
-| [classes/MSBitPrintAnim](../src/recovered/classes/MSBitPrintAnim/) | 6 | 231 | 6 | 0x005AE480–0x005AFE50 |
 | [classes/Planning](../src/recovered/classes/Planning/) | 2 | 231 | 2 | 0x00610980–0x00612570 |
 | [classes/TaskForceEntryStruct](../src/recovered/classes/TaskForceEntryStruct/) | 2 | 222 | 2 | 0x004B4860–0x004B4930 |
 | [classes/DynamicVectorClass_CellDistribution](../src/recovered/classes/DynamicVectorClass_CellDistribution/) | 4 | 221 | 3 | 0x004CE7C0–0x004CE9B0 |
@@ -1260,7 +1260,7 @@
 | [classes/PlanningModeCommandClass](../src/recovered/classes/PlanningModeCommandClass/) | 1 | 6 | 1 | 0x0051B940–0x0051B940 |
 | [classes/UnknownAlphaTableCache_008315B8](../src/recovered/classes/UnknownAlphaTableCache_008315B8/) | 2 | 4 | 2 | 0x0041E3C0–0x0041E3D0 |
 
-1253 directories, 14794 regions. Generated by `tools/original_target/source_index.py`.
+1253 directories, 14799 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
