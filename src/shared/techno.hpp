@@ -767,6 +767,13 @@ public:
 #ifndef RA2_BUILDING_FULL
 class BuildingClass : public TechnoClass {
 public:
+    BuildingClass(BuildingTypeClass *type, HouseClass *house);         // 0x00438CE0 (UnitClass 0x006FDFC0 deploys into one)
+    // The overrides of the pure virtuals (so `new BuildingClass` compiles; the
+    // full class in shared/building_class.hpp defines them).
+    virtual HRESULT __stdcall GetClassID(GUID *clsid);                // slot 3 0x00453C00
+    virtual int Kind_Of() const;                                      // slot 11 0x00453C40
+    virtual int Size_Of() const;                                      // slot 12 0x00453BF0
+    virtual void unknown_slot216(int arg1);                           // slot 216 0x00449170
     int unknown_4532f0();               // 0x004532F0
     bool Unknown_00452EB0(TechnoClass *techno);     // 0x00452EB0 (whether techno may enter; InfantryClass slot 132)
     void Unknown_004536D0(InfantryClass *infantry);     // 0x004536D0 (an Assaulter enters; InfantryClass 0x005094B0)
@@ -784,6 +791,12 @@ public:
     bool unknown_531;                   // +0x531 (TechnoClass slot 174: always the secondary weapon)
     char unknown_532[0x554 - 0x532];
     DynamicVectorClass<InfantryClass *> unknown_554;    // +0x554 (the occupants; InfantryClass 0x005094B0)
+    char unknown_56c[0x59A - 0x56C];
+    bool unknown_59a;                   // +0x59A (as shared/building_class.hpp)
+    bool unknown_59b;                   // +0x59B
+    char unknown_59c[0x5AD - 0x59C];
+    bool unknown_5ad;                   // +0x5AD (as shared/building_class.hpp; slot 122 tests it)
+    char unknown_5ae[0x5E0 - 0x5AE];    // size 0x5E0 (operator new in UnitClass 0x006FDFC0)
 };
 #else
 class BuildingClass;
