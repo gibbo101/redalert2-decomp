@@ -38,6 +38,11 @@ struct Server {
     char password[10];                 // +0xee
 };
 struct Update;
+struct Squad {
+    char unknown_00[0x168];
+    char abbreviation[0x191 - 0x168];   // +0x168
+    char name[1];                       // +0x191 (extent unknown)
+};
 struct Channel;
 struct User;
 struct Ladder {
@@ -142,6 +147,34 @@ struct __declspec(novtable) IChatEvent : public IUnknown {
     virtual HRESULT __stdcall OnPublicAction(HRESULT result, Channel *channel, User *user, char const *action) = 0;
     virtual HRESULT __stdcall OnUserList(HRESULT result, Channel *channel, User *users) = 0;
     virtual HRESULT __stdcall OnPublicMessage(HRESULT result, Channel *channel, User *user, char const *message) = 0;
+    virtual HRESULT __stdcall OnPrivateMessage(HRESULT result, User *user, char const *message) = 0;
+    virtual HRESULT __stdcall OnSystemMessage(HRESULT result, char const *message) = 0;
+    virtual HRESULT __stdcall OnNetStatus(HRESULT result) = 0;
+    virtual HRESULT __stdcall OnLogout(HRESULT result, User *user) = 0;
+    virtual HRESULT __stdcall OnPrivateGameOptions(HRESULT result, User *user, char const *options) = 0;
+    virtual HRESULT __stdcall OnPublicGameOptions(HRESULT result, Channel *channel, User *user, char const *options) = 0;
+    virtual HRESULT __stdcall OnGameStart(HRESULT result, Channel *channel, User *users, int game_id) = 0;
+    virtual HRESULT __stdcall OnUserKick(HRESULT result, Channel *channel, User *kicked, User *kicker) = 0;
+    virtual HRESULT __stdcall OnUserIP(HRESULT result, User *user) = 0;
+    virtual HRESULT __stdcall OnFind(HRESULT result, Channel *channel) = 0;
+    virtual HRESULT __stdcall OnPageSend(HRESULT result) = 0;
+    virtual HRESULT __stdcall OnPaged(HRESULT result, User *user, char const *message) = 0;
+    virtual HRESULT __stdcall OnServerBannedYou(HRESULT result, long banned_till) = 0;
+    virtual HRESULT __stdcall OnUserFlags(HRESULT result, char const *name, unsigned int flags, unsigned int mask) = 0;
+    virtual HRESULT __stdcall OnChannelBan(HRESULT result, char const *name, int banned) = 0;
+    virtual HRESULT __stdcall OnSquadInfo(HRESULT result, unsigned long id, Squad *squad) = 0;
+    virtual HRESULT __stdcall OnUserLocale(HRESULT result, User *users) = 0;
+    virtual HRESULT __stdcall OnUserTeam(HRESULT result, User *users) = 0;
+    virtual HRESULT __stdcall OnSetLocale(HRESULT result, int locale) = 0;
+    virtual HRESULT __stdcall OnSetTeam(HRESULT result, int team) = 0;
+    virtual HRESULT __stdcall OnBuddyList(HRESULT result, User *buddies) = 0;
+    virtual HRESULT __stdcall OnBuddyAdd(HRESULT result, User *buddy) = 0;
+    virtual HRESULT __stdcall OnBuddyDelete(HRESULT result, User *buddy) = 0;
+    virtual HRESULT __stdcall OnPublicUnicodeMessage(HRESULT result, Channel *channel, User *user, unsigned short const *message) = 0;
+    virtual HRESULT __stdcall OnPrivateUnicodeMessage(HRESULT result, User *user, unsigned short const *message) = 0;
+    virtual HRESULT __stdcall OnPrivateUnicodeAction(HRESULT result, User *user, unsigned short const *action) = 0;
+    virtual HRESULT __stdcall OnPublicUnicodeAction(HRESULT result, Channel *channel, User *user, unsigned short const *action) = 0;
+    virtual HRESULT __stdcall OnPagedUnicode(HRESULT result, User *user, unsigned short const *message) = 0;
 };
 }
 
@@ -184,6 +217,34 @@ public:
     virtual HRESULT __stdcall OnPublicAction(HRESULT result, WOL::Channel *channel, WOL::User *user, char const *action);  // 0x00764500
     virtual HRESULT __stdcall OnUserList(HRESULT result, WOL::Channel *channel, WOL::User *users);     // 0x00760C00
     virtual HRESULT __stdcall OnPublicMessage(HRESULT result, WOL::Channel *channel, WOL::User *user, char const *message);  // 0x00762590
+    virtual HRESULT __stdcall OnPrivateMessage(HRESULT result, WOL::User *user, char const *message);            // 0x00762790
+    virtual HRESULT __stdcall OnSystemMessage(HRESULT result, char const *message);                            // 0x00763AB0
+    virtual HRESULT __stdcall OnNetStatus(HRESULT result);                                                     // 0x00763AE0
+    virtual HRESULT __stdcall OnLogout(HRESULT result, WOL::User *user);                                       // 0x0075EEB0
+    virtual HRESULT __stdcall OnPrivateGameOptions(HRESULT result, WOL::User *user, char const *options);      // 0x00761C50
+    virtual HRESULT __stdcall OnPublicGameOptions(HRESULT result, WOL::Channel *channel, WOL::User *user, char const *options);  // 0x00761890
+    virtual HRESULT __stdcall OnGameStart(HRESULT result, WOL::Channel *channel, WOL::User *users, int game_id);  // 0x00761570
+    virtual HRESULT __stdcall OnUserKick(HRESULT result, WOL::Channel *channel, WOL::User *kicked, WOL::User *kicker);  // 0x00764B00
+    virtual HRESULT __stdcall OnUserIP(HRESULT result, WOL::User *user);                                       // 0x007646B0
+    virtual HRESULT __stdcall OnFind(HRESULT result, WOL::Channel *channel);                                   // 0x00762F70
+    virtual HRESULT __stdcall OnPageSend(HRESULT result);                                                      // 0x00762E00
+    virtual HRESULT __stdcall OnPaged(HRESULT result, WOL::User *user, char const *message);                   // 0x007629B0
+    virtual HRESULT __stdcall OnServerBannedYou(HRESULT result, long banned_till);                             // 0x007646C0
+    virtual HRESULT __stdcall OnUserFlags(HRESULT result, char const *name, unsigned int flags, unsigned int mask);  // 0x007647B0
+    virtual HRESULT __stdcall OnChannelBan(HRESULT result, char const *name, int banned);                      // 0x00764730
+    virtual HRESULT __stdcall OnSquadInfo(HRESULT result, unsigned long id, WOL::Squad *squad);                // 0x0075ED00
+    virtual HRESULT __stdcall OnUserLocale(HRESULT result, WOL::User *users);                                  // 0x00764D70
+    virtual HRESULT __stdcall OnUserTeam(HRESULT result, WOL::User *users);                                    // 0x007651D0
+    virtual HRESULT __stdcall OnSetLocale(HRESULT result, int locale);                                         // 0x00764F80
+    virtual HRESULT __stdcall OnSetTeam(HRESULT result, int team);                                             // 0x00765430
+    virtual HRESULT __stdcall OnBuddyList(HRESULT result, WOL::User *buddies);                                 // 0x007656B0
+    virtual HRESULT __stdcall OnBuddyAdd(HRESULT result, WOL::User *buddy);                                    // 0x00765930
+    virtual HRESULT __stdcall OnBuddyDelete(HRESULT result, WOL::User *buddy);                                 // 0x00765940
+    virtual HRESULT __stdcall OnPublicUnicodeMessage(HRESULT result, WOL::Channel *channel, WOL::User *user, unsigned short const *message);  // 0x007626B0
+    virtual HRESULT __stdcall OnPrivateUnicodeMessage(HRESULT result, WOL::User *user, unsigned short const *message);  // 0x007628D0
+    virtual HRESULT __stdcall OnPrivateUnicodeAction(HRESULT result, WOL::User *user, unsigned short const *action);    // 0x00764440
+    virtual HRESULT __stdcall OnPublicUnicodeAction(HRESULT result, WOL::Channel *channel, WOL::User *user, unsigned short const *action);  // 0x007645E0
+    virtual HRESULT __stdcall OnPagedUnicode(HRESULT result, WOL::User *user, unsigned short const *message);  // 0x00762C20
 };
 
 // The patch download sink (vtable of CComObject<CDownloadEventSink>
@@ -228,6 +289,7 @@ extern int unknown_color_7a736c;        // 0x007A736C (private action colour)
 extern int unknown_color_7a7370;        // 0x007A7370 (public action colour)
 extern int unknown_color_7a7364;        // 0x007A7364 (public message colour)
 extern int unknown_color_7a7374;        // 0x007A7374 (public message colour for users with flag bit 0)
+extern int unknown_color_7a7368;        // 0x007A7368 (private message colour)
 void __fastcall Unknown_0075B910(char const *message, bool arg2);   // 0x0075B910 (in-game message)
 extern int unknown_b2a7e8;              // 0x00B2A7E8
 extern "C" int __cdecl _stricmp(char const *left, char const *right);
@@ -342,6 +404,10 @@ public:
     int Losses;                     // +0x30
     int Disconnects;                // +0x34
     int Unknown_Value_10() const { return unknown_10; }
+    // Sets the locale (+0x10; source 2: from the server) (0x00739950; name hypothesis).
+    void Set_Locale_00739950(int locale, int source);
+    // Writes the profile for a nickname into the registry (0x007395D0; name hypothesis).
+    void Save_007395d0(Wstring const &name);
     // size 0x38 (operator new in Load_Default 0x00738670)
 };
 struct WolRegistryOptions {
@@ -358,6 +424,7 @@ extern int unknown_newnick_result_b2ac08;
 extern bool unknown_7fd374;
 extern void Unknown_0073c120();
 int __fastcall Popup_005c3230(wchar_t const *text, int unknown, void (*callback)(), int flags);
+extern "C" char *__cdecl ctime(long const *timer);     // 0x007858AF
 
 #include "shared/random.hpp"
 extern "C" void __cdecl srand(unsigned int seed);
@@ -593,6 +660,67 @@ public:
         *value = &node->Value;
         return true;
     }
+    // wlib Dictionary::remove(key, value) (inline; WolChannelNameSet's out-of-line copy is
+    // Remove_007675e0).
+    bool Remove_Entry(K const &key, V *old_value)
+    {
+        if (Count == 0) return false;
+        float load = (float)(Count - 1);
+        load /= (float)BucketCount;
+        unsigned int bucket = Key_Hash(key);
+        Node *head = Buckets[bucket];
+        Node *previous = head;
+        if (!head) return false;
+        if (head->Key == key) {
+            *old_value = head->Value;
+            Node *removed = Buckets[bucket];
+            Node *next = removed->Next;
+            delete removed;
+            Buckets[bucket] = next;
+            --Count;
+            if (load <= ShrinkLimit) Shrink_Table();
+            return true;
+        }
+        Node *node = head->Next;
+        bool removed = false;
+        while (node) {
+            if (node->Key == key) {
+                *old_value = node->Value;
+                previous->Next = node->Next;
+                --Count;
+                delete node;
+                removed = true;
+                break;
+            }
+            previous = node;
+            node = node->Next;
+        }
+        if (load <= ShrinkLimit) Shrink_Table();
+        return removed;
+    }
+    // wlib Dictionary::remove(key).
+    bool Remove(K const &key)
+    {
+        V old_value;
+        return Remove_Entry(key, &old_value);
+    }
+    // wlib Dictionary::add without its replacing remove: a new entry at the head of its bucket.
+    bool Add(K const &key, V value)
+    {
+        Node *node = new Node;
+        node->Key = key;
+        node->Value = value;
+        node->Next = 0;
+        unsigned int bucket = Key_Hash(key);
+        Node *head = Buckets[bucket];
+        Buckets[bucket] = node;
+        if (head) node->Next = head;
+        ++Count;
+        float load = (float)Count;
+        load /= (float)Get_Size();
+        if (load >= GrowLimit) Grow_Table();
+        return true;
+    }
     void Grow_Table()
     {
         if (ResizeLocked != true) {
@@ -812,6 +940,9 @@ extern WolNameTable unknown_names_b29848;
 extern WolChannelDictionary unknown_channels_b29478;
 extern char unknown_query_b2b420[512];
 extern int unknown_query_count_b2abf4;
+extern int unknown_squad_query_b2abf8;  // 0x00B2ABF8 (a squad lookup of the local player is pending)
+extern unsigned long unknown_squad_id_b2abfc;   // 0x00B2ABFC (the local player's squad id)
+extern char unknown_squad_name_b2a8b0[];        // 0x00B2A8B0 (the local player's squad name)
 extern int unknown_a72d08;
 extern int unknown_a40230;
 extern IPXAddressClass unknown_address_a3fbc8;
@@ -832,6 +963,9 @@ extern int unknown_icon_format_7fd304;
 extern Wstring unknown_motd_b26954;
 extern HANDLE unknown_b26500;
 extern HANDLE unknown_b264f8;
+extern HANDLE unknown_b26530;           // 0x00B26530 (set when the local user's locale or team arrives)
+extern HANDLE unknown_b2651c;           // 0x00B2651C (set when a net status arrives while disconnecting)
+extern HRESULT unknown_net_status_b2ac00;   // 0x00B2AC00 (that net status)
 extern wchar_t unknown_connection_error_b2a8ec[];
 extern "C" wchar_t *__cdecl wcscpy(wchar_t *destination, wchar_t const *source);
 

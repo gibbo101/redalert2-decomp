@@ -616,7 +616,7 @@
       },
       {
         "path": "src/shared/wol_sink.hpp",
-        "sha256": "8ae9bbab0b4067ae9a46df5c301a9e2ca78a4fb4606cbf739f343114a687d070"
+        "sha256": "1d8882da4fb7554472b1cd1bd38d837ebec0399d30767516473f8573c3a9f1fa"
       },
       {
         "path": "src/shared/house_screen.hpp",
@@ -1416,7 +1416,7 @@
       },
       {
         "path": "src/shared/unknown_globals.hpp",
-        "sha256": "4bed135f4f6e8182101c3d23e2f4793624e10fdbdb6767af4e3692ed0db95fd6"
+        "sha256": "9cde7f0a7c3de5dbf3e2e7cc3d3cc3135eeb2d9d43236fcf23971e0d67aabf11"
       },
       {
         "path": "src/shared/building_class.hpp",
@@ -4868,7 +4868,8 @@
     "population-3026",
     "population-3027",
     "population-3028",
-    "population-3029"
+    "population-3029",
+    "population-3030"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -8137,7 +8138,8 @@
     ["population-3026", 1],
     ["population-3027", 21],
     ["population-3028", 3],
-    ["population-3029", 1]
+    ["population-3029", 1],
+    ["population-3030", 13]
   ],
   "shards": {
     "population-01": "e43a49efdf90ecf070577c1bcfdef91c7f1c1ceb501cbcc4335bd3dc3695d7b4",
@@ -10404,6 +10406,7 @@
     "population-3028": "b325fd66242550c84545f43a76cac1604d4a66e37bd5cf409bc8454454d51c8c",
     "population-3029": "25b23fe81d06debd35b6b294d016d8d9d64cc045bb122cd79bf1747ed9f7c187",
     "population-303": "5d1428372c40f9f704229cb1e37f8b8ee79e0910204a2ac77fe00e46bc21ef89",
+    "population-3030": "e6754c09facc737a5f9f82f60503f150c51ff6125f51348322707e9d48761036",
     "population-304": "13dbca11a6caf813c78ebae59143b96792e6ce6ca7d97c8df34d4cdd961d94fe",
     "population-305": "f65430f7380049c25af269410e30338dcf561d296f672df2ffa84f0cb734ae8e",
     "population-306": "2a47ba376e73a9feea127c6aab0aa6e3f98771215c1fd7410927f7bb3cd051e8",

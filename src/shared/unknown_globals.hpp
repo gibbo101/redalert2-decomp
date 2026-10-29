@@ -78,7 +78,9 @@ struct User {
     User *next;                         // +0x20
     char name[10];                      // +0x24
     char unknown_2e[0x57 - 0x2e];
-    char unknown_57[0x6c - 0x57];
+    char unknown_57[0x64 - 0x57];
+    int locale;                         // +0x64
+    int team;                           // +0x68
 };
 }
 // The first user of the channel list whose flags have bit 0 set (the game host; 0x0074DA60, hypothesis:
