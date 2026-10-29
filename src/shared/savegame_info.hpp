@@ -83,10 +83,6 @@ extern "C" GUID const unknown_uuid_IPropertySetStorage;   // (not referenced)
 extern "C" GUID const unknown_uuid_IStorage;    // (not referenced: Get_Savefile_Info's pointer never queries)
 extern "C" GUID const unknown_uuid_IStream;     // (not referenced: the pointers below never query)
 extern "C" GUID const unknown_uuid_IPropertyStorage;
-extern "C" __declspec(dllimport) int __stdcall WideCharToMultiByte(unsigned int code_page, unsigned long flags,
-                                                                   wchar_t const *wide, int wide_length,
-                                                                   char *string, int length, char const *fallback,
-                                                                   int *used_fallback);
 
 extern "C" unsigned __cdecl wcslen(wchar_t const *string);
 extern "C" GUID const unknown_uuid_IFullStream;

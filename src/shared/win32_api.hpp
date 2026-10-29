@@ -269,6 +269,7 @@ WIN32_IMPORT LONG WINAPI RegCreateKeyExA(HKEY key, LPCSTR subkey, DWORD reserved
 WIN32_IMPORT LONG WINAPI RegSetValueExA(HKEY key, LPCSTR name, DWORD reserved, DWORD type, BYTE const *data,
                                         DWORD size);
 WIN32_IMPORT LONG WINAPI RegCloseKey(HKEY key);
+WIN32_IMPORT LONG WINAPI RegDeleteKeyA(HKEY key, LPCSTR subkey);
 // Serial ports (KERNEL32; WinModemClass, shared/win_modem.hpp).
 struct OVERLAPPED {
     DWORD Internal;
@@ -355,6 +356,14 @@ WIN32_IMPORT LONG WINAPI RegQueryValueExA(HKEY key, LPCSTR name, DWORD *reserved
 WIN32_IMPORT char *WINAPI lstrcpyA(char *destination, LPCSTR source);
 WIN32_IMPORT char *WINAPI lstrcatA(char *destination, LPCSTR source);
 WIN32_IMPORT int WINAPI lstrlenA(LPCSTR string);
+WIN32_IMPORT DWORD WINAPI GetModuleFileNameA(HINSTANCE module, char *name, DWORD size);
+
+#ifndef _WCHAR_T_DEFINED
+typedef unsigned short wchar_t;
+#define _WCHAR_T_DEFINED
+#endif
+WIN32_IMPORT int WINAPI WideCharToMultiByte(unsigned int code_page, DWORD flags, wchar_t const *wide, int wide_length,
+                                           char *string, int length, char const *fallback, int *used_fallback);
 
 // USER32 printf into a buffer (cdecl, variable arguments).
 WIN32_IMPORT int __cdecl wsprintfA(char *buffer, char const *format, ...);

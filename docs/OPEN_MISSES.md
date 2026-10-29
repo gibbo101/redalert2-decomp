@@ -541,3 +541,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x601710 out of line inside the inlined 0x5E12A0/0x5E1CA0).
 - Startup.CPP after Startup226 (NOTES): WinMain 0x68E280 (SEH __try/__except, 10,080 B) not drafted; 0x68DC70, 0x68E040,
   0x68E0AD, 0x691450 open.
+- Event.CPP after Event231 (zero bytes; build/class-work/Event231/NOTES.md, w/best.cpp, hw/shared): EventClass::Execute
+  0x4B65C0 (4994 B, table inside padding: body_bytes) 54.41, shape 94.10, call sequence identical. Remaining: register
+  roles (original this=esi, (char)House=ebx, house=edi), frame 4 bytes short (slot at 0x10), then scheduling. Landing
+  moves EventClass(int, unsigned char) 0x4B5FD0 from population-2913 into Event.CPP; slot 268/259 casts need a rename.

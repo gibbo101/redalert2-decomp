@@ -47,4 +47,29 @@ extern "C" __declspec(dllimport) HRESULT __stdcall RevokeActiveObject(unsigned l
 
 void __stdcall _com_issue_error(HRESULT result);
 
+#ifndef _WCHAR_T_DEFINED
+typedef unsigned short wchar_t;
+#define _WCHAR_T_DEFINED
+#endif
+// ole32 and OLEAUT32 imports of the COM server registration (0x0068DC70, 0x0068E040); the
+// type library is only loaded and released, so it is held as its IUnknown.
+extern "C" __declspec(dllimport) int __stdcall StringFromGUID2(GUID const &guid, wchar_t *string, int length);
+extern "C" __declspec(dllimport) HRESULT __stdcall LoadTypeLib(wchar_t const *file, IUnknown **library);
+
+// The VC6 COM support smart pointer of IUnknown (comip.h's _com_ptr_t, IUnknownPtr):
+// WinMain creates the game's own server object through it.
+struct IUnknownPtr {
+    IUnknown *Interface;    // +0x00
+
+    void _Release();
+    HRESULT CreateInstance(GUID const &clsid, IUnknown *outer, unsigned long context);    // 0x00691450
+};
+
+inline void IUnknownPtr::_Release()
+{
+    if (Interface != 0) {
+        Interface->Release();
+    }
+}
+
 #endif
