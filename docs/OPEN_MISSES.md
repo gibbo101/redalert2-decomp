@@ -227,3 +227,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   the right inline pattern), register allocation only: compare with the exact MSFadeAnim slot 4. 0x5AF430 sits in
   seed population-88. Rule: VC6 defers code generation to the end of the unit under /Ob2, so inlines defined
   later in the unit expand into earlier functions.
+- TerrainClass unit complete except (Terrain160 w/miss/, NOTES): slot 63 0x6E4430 88.79 (Offset_Rect/Rects_Overlap
+  form; register allocation after the slot73 call), Read_INI 0x6E4260 80.21 (the original copies the cell into
+  the shared local inside each branch from different registers; ours merges the store after the join). Both
+  Windows near-miss work. Rules: an if/else on a file-level inline predicate keeps a flags ternary from being
+  if-converted (slot 67); a by-value inline accessor gives one hoisted Coord copy per use (slot 86).
