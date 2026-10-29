@@ -18,8 +18,10 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes (Opus): WDT136 WDTState ctor 0x725F40 (+ VectorClass ctor 0x727040); Light137
-LightConvertClass 0x538AA0; Modem138 WinModemClass 0x734CD0/0x735110; Sink139 CNetUtilEventSink 0x75D330.
+Running Mac lanes: Light140 (Sonnet) ~LightConvertClass 0x538F20; Modem141 (Opus) WinModemClass
+0x734B30/0x734BC0; Base142 (Opus) BaseClass::Read_INI 0x42C460; Ref143 (Sonnet) small WDT members 0x729330,
+0x72D1F0, 0x730BE0, 0x639720. Landed: Light137 Set_Tint 0x538AA0, Modem138
+0x734CD0/0x735110. WDT136 (Campaign ctor 0x725F40) and Sink139 (OnLadderList 0x75D330) are misses in OPEN_MISSES.md.
 Landed 2026-10-28 evening: Map129, Obj126, Para131, Iso128, MSAnim133, Score132, IPX135 (Send_To), Base134
 (BaseClass ctor/Load/NoInit ctor). Near misses (OPEN_MISSES.md) go to the Windows lead; queue and drafts sent in
 messages/2026-10-29T0130Z-owner-to-lead-backlog.md and owner-reference/. Lanes use lane_tools.py.

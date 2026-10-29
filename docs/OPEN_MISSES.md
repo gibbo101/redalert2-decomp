@@ -37,7 +37,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   BlitTrans<uchar>::BlitForward 0x775980 (Surf66).
 - Promo69 (NOTES) closed the recorded-exact list; still blocked: Audio_Stream_Open 0x407A90 99.69
   (64-bit max compare jb/ja order), Planning_Close_Loop 0x6164E0 98.46, MSEngine slots 4/5,
-  VectorClass ctor 0x727040 (needs the WDTState ctor 0x725F40 emitted).
+  VectorClass ctor 0x727040 (needs the WorldDominationTour::Campaign ctor 0x725F40 emitted).
 - TechnoClass/FootClass (Foot68 NOTES): ctor 0x6C0CD0 99.66, 0x6C16F0 97.41, slot 220 0x6C9AF0
   97.65, 0x6C5270 96.38, slot 234 0x6C89C0 90.31 (int -> void with BuildingClass 0x44FB50),
   Foot slot 77 0x4C69F0 65.32 (body 1312 with jump and byte tables).
@@ -141,3 +141,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   inc/shared/wol_sink.hpp built by mkhdr.py adds codex3 r14 declarations HEAD lacks; scores need --symbol and
   --include). Only the opening differs (original keeps the normalized list pointer in ebx). The structurally
   closer v/a1.cpp (74.53) swaps ebx/ebp (list vs cached SendMessageA) throughout. Windows near-miss work.
+- WorldDominationTour::Campaign ctor 0x725F40 (914 B; not WDTState) 77.30 on HEAD headers (WDT136 v/c.cpp,
+  --include inc); 84.47 (v/F_q.cpp, --include incopF) only with rc_ptr::operator-> written as a null-checked
+  conditional and a WDTState Territory_List() accessor, a header change every rc_ptr user must be checked
+  against. Left: the original does not fold properties->TheWDTState-> in the conflict loop, and an edi/ebp swap
+  in the INI tail. VectorClass<rc_ptr<Conflict>> ctor 0x727040 is exact when emitted from the ctor's source and
+  lands with it (check its ??_E COMDAT across the population).
