@@ -322,6 +322,7 @@ public:
     Point2D Unknown_00547DB0(Point2D const &point);    // inverse of 0x00547D40
     Point2D Unknown_00547DF0(Point2D const &point);    // 0x00547DB0, then less +0xF8/+0xFC
     Cell Unknown_00547E50(Cell const &cell);
+    void Unknown_00562EA0();                // 0x00562EA0 (frees the twelve unknown_18 blocks; Prog_End)
     Cell Unknown_00547E90(Cell const &cell);
     Cell Unknown_00547EE0(Cell const &cell);
     Cell Unknown_00547F30(Cell const &cell);

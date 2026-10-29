@@ -36,6 +36,14 @@ extern "C" GUID const IID_IUnknown;    // 0x007CE610
 extern "C" __declspec(dllimport) HRESULT __stdcall CoCreateInstance(GUID const &clsid, IUnknown *outer,
                                                                     unsigned long context, GUID const &iid, void **object);
 extern "C" __declspec(dllimport) HRESULT __stdcall OleRun(IUnknown *unknown);
+// The application object the scripting interfaces return (0x0084C7DC; its address is the object:
+// the exit path disconnects it; moved from shared/house.hpp).
+extern IUnknown *unknown_application_84c7dc;
+// The registrations Prog_End and the exit path revoke (ole32 and OLEAUT32 imports).
+extern "C" __declspec(dllimport) HRESULT __stdcall CoRevokeClassObject(unsigned long registration);
+extern "C" __declspec(dllimport) HRESULT __stdcall CoDisconnectObject(IUnknown *object, unsigned long reserved);
+extern "C" __declspec(dllimport) void __stdcall OleUninitialize();
+extern "C" __declspec(dllimport) HRESULT __stdcall RevokeActiveObject(unsigned long registration, void *reserved);
 
 void __stdcall _com_issue_error(HRESULT result);
 

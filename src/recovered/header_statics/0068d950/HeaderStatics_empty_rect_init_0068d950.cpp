@@ -6,6 +6,7 @@
 #define VECTOR_IMPLEMENT_ALL
 #endif
 #include "shared/vector_class.hpp"
+#include "shared/com_registration.hpp"
 
 
 // The unit's list of unsigned long (0x00ABD428; name is a hypothesis).

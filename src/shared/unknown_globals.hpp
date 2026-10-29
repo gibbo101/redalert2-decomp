@@ -539,5 +539,46 @@ class CCINIClass;
 void __fastcall Unknown_00668EA0(CCINIClass &ini, int is_global);
 // Called when the sidebar is hidden (0x005A09E0).
 void Unknown_005A09E0();
+// GRFXTXT.PAL's data (0x00A41670), the converter built from it (0x00A41678) and GRFXTXT.SHP
+// (0x00A41674), loaded by 0x00511C90 and freed by Prog_End.
+extern void *unknown_grfxtxt_palette_a41670;
+extern void *unknown_grfxtxt_shape_a41674;
+extern ConvertClass *unknown_grfxtxt_drawer_a41678;
+// Converters of CAMEO.PAL (0x008323B4) and of the surface 0x00839950 (0x008323B0), built by
+// 0x00511C90; 0x008323C0 is the unit drawer.
+extern ConvertClass *unknown_drawer_8323b4;
+extern ConvertClass *unknown_drawer_8323b0;
+extern ConvertClass *Unit_Draw_Convert_008323C0;
+struct ShapeFileStruct;
+extern ShapeFileStruct *unknown_building_depth_shape_85029c;   // 0x0085029C
+extern Surface *unknown_surface_839968;                        // 0x00839968 (next to the screen surfaces)
+// Blocks Prog_End frees (0x00A6E38C, 0x00A52EB0-0x00A52EBC; owners not recovered).
+extern void *unknown_block_a6e38c;
+extern void *unknown_block_a52eb0;
+extern void *unknown_block_a52eb4;
+extern void *unknown_block_a52eb8;
+extern void *unknown_block_a52ebc;
+class Buffer;
+extern Buffer *unknown_buffer_a35e20;                          // 0x00A35E20
+extern void *unknown_instance_00851ca8;                        // 0x00851CA8 (a loaded library)
+// WinMain's active-object registration (0x00ABD484) and two handles it creates (0x00ABD480,
+// 0x00ABD47C).
+extern unsigned long unknown_active_object_abd484;
+extern void *unknown_handle_abd480;
+extern void *unknown_handle_abd47c;
+// Shutdown steps Prog_End calls (names not recovered).
+void Unknown_005DDB40();
+void Unknown_00521CB0();
+void Unknown_00603FA0();
+void Unknown_0059D900();
+void Unknown_005D5F40();
+void Unknown_005EAC20();
+void Unknown_00613E40();
+void Unknown_006F57E0();
+void Unknown_00714860();
+void Unknown_005BB5A0();
+void Unknown_00522930();
+// The program's exit cleanup, registered with atexit by WinMain (0x006909E0; Red Alert's Prog_End).
+void __cdecl Prog_End();
 
 #endif

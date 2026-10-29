@@ -64,6 +64,19 @@ extern MixFileClass<CCFileClass> *unknown_side_nc_mix_837504;
 extern MixFileClass<CCFileClass> *unknown_mix_8374f0;   // 0x008374F0 (released by 0x0051A270, reopened by 0x0051A2B0)
 // The expansion mixfiles Init_Expansion_Files opens (0x00837450).
 extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_expansion_mixes_837450;
+// A second mixfile list Prog_End empties the same way (0x00837480).
+extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_mixes_837480;
+// LANGUAGE.MIX (0x008374BC, opened by WinMain), the theater archives (0x008374C0-0x008374D0,
+// reopened by 0x00519F50 when the theater changes) and two archives only Prog_End is seen to
+// release (0x008374D8, 0x008374FC).
+extern MixFileClass<CCFileClass> *unknown_language_mix_8374bc;
+extern MixFileClass<CCFileClass> *unknown_theater_mix_8374c0;
+extern MixFileClass<CCFileClass> *unknown_theater_mix_8374c4;
+extern MixFileClass<CCFileClass> *unknown_theater_mix_8374c8;
+extern MixFileClass<CCFileClass> *unknown_theater_mix_8374cc;
+extern MixFileClass<CCFileClass> *unknown_theater_mix_8374d0;
+extern MixFileClass<CCFileClass> *unknown_mix_8374d8;
+extern MixFileClass<CCFileClass> *unknown_mix_8374fc;
 // The further MAPS*.MIX and MOVIES*.MIX Init_Secondary_Mixfiles finds on a local install
 // (0x00837468 and 0x008374A0; the first of each is MapsMix and MoviesMix).
 extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_maps_mixes_837468;

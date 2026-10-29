@@ -36,6 +36,7 @@ public:
     int From_Name(char const *name) const;
     char const *Base_Name(int theme) const;
     char const *Name(int theme) const;      // 0x006E8570 (the theme's INI name; "none" out of range)
+    void Unknown_006E7A70();                // 0x006E7A70 (frees every theme record; Prog_End)
     void Set_Volume(int volume);            // 0x006E8590 (at most 255)
 
     ThemeType Current;      // +0x00 playing theme

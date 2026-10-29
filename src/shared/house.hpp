@@ -138,8 +138,6 @@ extern "C" GUID const IID_IHouse;                   // 0x007A2CA8
 extern "C" GUID const IID_IPublicHouse;             // 0x007A2040
 extern "C" GUID const IID_IConnectionPointContainer;   // 0x007AFD20 (UUID.LIB)
 
-// The application object the scripting interfaces return (0x0084C7DC).
-extern IUnknown *unknown_application_84c7dc;
 extern "C" GUID const IID_IApplication_79c3d0;  // 0x0079C3D0 (hypothesis)
 // Query helper (0x00426C60): object, iid, result.
 void __stdcall Unknown_00426C60(IUnknown **object, GUID const &iid, void **result);
