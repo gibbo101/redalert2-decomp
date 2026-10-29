@@ -290,3 +290,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   (original keeps a Cell(half, half) temporary slot), 0x6AFD80 not drafted (Seed90 58; needs the 0x41B630 chain),
   Execute 0x6ADAE0 (7.3 KB switch) not started. Stale inventory starts here: 0x6AFD46 is 0x6AFD50, 0x6B01A2 is
   0x6B01A0, 0x6B02F0 is two functions (0x6B02F0, 0x6B0360), 0x6B03D0/0x6B05FD/0x6B082B/0x6B0A59 are tails or padding.
+- Init.CPP (population-2752) after Init174 (NOTES, w/; score drafts as w/pre.txt + draft): PlanningMode slot 5
+  0x51B9B0 42.86 (the original returns a full-register 0/1; bool forms give setne), 0x516E70 97.62 (push 0 / xor cl,cl
+  order in the inlined 0x517370 call), 0x513290 needs LoadOptionsClass::Unknown_0053C5C0 (Windows-owned class).
+  Not started: 0x5127F0, 0x514EE0, 0x516900, 0x51A690, 0x515710, 0x51A330, 0x519500, 0x519E70, 0x515110, 0x5173C0,
+  INIClass/CCINIClass ctors 0x51AD50/0x51ADE0 (emitted only with their callers). About 20 inventory extents in this
+  range are wrong (0x5116A0 is about 4.4 KB); Init174's ext.py checks them.

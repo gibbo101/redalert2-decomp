@@ -4,8 +4,8 @@
     "id": "population-2410",
     "inventory_sha256": "10af80db1a6d38c4414efdf5250c525bf160cf73e2cb01c0f70b3c480e5fcbfd",
     "gaps_sha256": "e8c2996cdb98f3060894f657a56560081bc5b590cafd16f914ae0b29f4a590e1",
-    "historical_population_sha256": "cb3d1885bdb302a22cccbde9b4b3afc1df272db5e06ed44f884eea92d337dd7c",
-    "historical_acceptance_sha256": "9e104e863fa027b63465f2de08711c3d112135dfb77532ee18a442fba04769d7"
+    "historical_population_sha256": "d06dea2b3a5c3eaa6c05107540418165a4fa4b71871970de039391f64866ec83",
+    "historical_acceptance_sha256": "8392ab2eef34fa1b90473ee9392e8c927b93d6d9bb15b2fde3fff17b9a12ddee"
   },
   "references": {
     "??_7CNetUtilEventSink@@6B@": 8058944,
@@ -2566,7 +2566,7 @@
     "?unknown_004ff2c0@WolRegistryOptions@@QBE_NXZ": 5239488,
     "?Save_Nickname_00745320@@YIHPBD0_NH@Z": 7623456,
     "?unknown_session_a3d298@@3UUnknownSessionState@@A": 10736280,
-    "?Save_Session_00670380@@YIXPAUUnknownSessionState@@@Z": 6751104,
+    "?Write_MultiPlayer_Settings@UnknownSessionState@@QAEXXZ": 6751104,
     "?unknown_password_b2a63c@@3VWstring@@A": 11707964,
     "?unknown_7fd374@@3_NA": 8377204,
     "?Populate_Dialog_00739b70@PlayerProfile@@QAEXPAUHWND__@@ABVWstring@@_N@Z": 7576432,

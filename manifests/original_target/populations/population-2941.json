@@ -4,8 +4,8 @@
     "id": "population-2941",
     "inventory_sha256": "8956d14548e5ba5ba67976af26d4a1d74511cd71d77fd0298a5fdc09b8fe6455",
     "gaps_sha256": "d4f5b26022be32c6307a5211298dbd8ada20a2f922abe4c9e3d7232cdc516c05",
-    "historical_population_sha256": "25e091beb51da1c0bce42379e361334f5e84dc1c13b8ca97411460bcbead818f",
-    "historical_acceptance_sha256": "9d2862812a201775512643f6184faec69518329f53d1f30d784df92a9599537b"
+    "historical_population_sha256": "c1103ded42dfa5d713f84b067a5eea3f7f4c0388155c63db83941d944730a6b3",
+    "historical_acceptance_sha256": "4fbfa77d01bbc80248361d16733fffc5809b145faf0e8a3fe69b16c4aac9fb12"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4907,7 +4907,7 @@
     "?unknown_a3d3bc@@3HA": 10736572,
     "?unknown_a3d3b4@@3HA": 10736564,
     "?unknown_session_a3d298@@3UUnknownSessionState@@A": 10736280,
-    "?Save_Session_00670380@@YIXPAUUnknownSessionState@@@Z": 6751104,
+    "?Write_MultiPlayer_Settings@UnknownSessionState@@QAEXXZ": 6751104,
     "??0ParticleSystemClass@@QAE@PAVParticleSystemTypeClass@@ABUCoordStruct@@PAVAbstractClass@@PAVTechnoClass@@1@Z": 6335088,
     "?AI@WaveClass@@UAEXXZ": 7483936,
     "?AI@ObjectClass@@UAEXXZ": 6105072,
@@ -5479,7 +5479,7 @@
     "?Unknown_0058F620@@YIXPAVUnknownIDSource@@PBD@Z": 5830176,
     "?Unknown_0058F510@@YIXPAVUnknownIDSource@@@Z": 5829904,
     "?Unknown_005BC460@@YI_NXZ": 6014048,
-    "?Unknown_0066EE50@UnknownSessionState@@QAEXXZ": 6745680,
+    "?Create_Connections@UnknownSessionState@@QAEHXZ": 6745680,
     "?unknown_a3d580@@3HA": 10737024,
     "?Do_Lose_0065dec0@@YIXXZ": 6676160,
     "?Load@UnknownIDSource@@QAEXPAUIStream@@@Z": 6688960,

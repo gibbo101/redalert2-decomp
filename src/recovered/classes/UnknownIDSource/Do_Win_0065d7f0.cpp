@@ -11,7 +11,7 @@
 // @ref ?Unknown_0058F620@@YIXPAVUnknownIDSource@@PBD@Z=0058f620
 // @ref ?Unknown_005BC460@@YI_NXZ=005bc460
 // @ref ?Unknown_00624850@@YIXXZ=00624850
-// @ref ?Unknown_0066EE50@UnknownSessionState@@QAEXXZ=0066ee50
+// @ref ?Create_Connections@UnknownSessionState@@QAEHXZ=0066ee50
 // @ref ?unknown_5159b0@@YIXH_N@Z=005159b0
 // @ref ?unknown_a3f58c@@3HA=00a3f58c
 // @ref ?unknown_a3f598@@3HA=00a3f598
@@ -190,7 +190,7 @@ void __fastcall Do_Win_0065d7f0()
     Start_Scenario_0065bc70(unknown_id_source_a3d290->FileName, true, unknown_id_source_a3d290->unknown_224c);
     if ((unknown_game_mode_a3d298 == 3 || unknown_game_mode_a3d298 == 4) && unknown_session_a3d29c != 0
         && unknown_session_a3d29c->unknown_slot2()) {
-        unknown_session_a3d298.Unknown_0066EE50();
+        unknown_session_a3d298.Create_Connections();
         if (unknown_game_mode_a3d298 == 3) {
             unknown_ipx_manager_a40978.Set_Timing(Max(unknown_ipx_manager_a40978.unknown_526c30() + 2, 15), -1, 600, true);
             unknown_ipx_manager_a40978.unknown_slot14(Max(unknown_ipx_manager_a40978.unknown_526c30() + 2, 60), -1, 600);

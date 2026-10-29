@@ -11,7 +11,7 @@ HRESULT __stdcall CNetUtilEventSink::OnNewNick(HRESULT result, char const *messa
         options.Read_004ff200();
         if (options.unknown_004ff2c0()) {
             nick_slot = Save_Nickname_00745320(nick, password, true, profile->Unknown_Value_10());
-            Save_Session_00670380(&unknown_session_a3d298);
+            unknown_session_a3d298.Write_MultiPlayer_Settings();
         }
         bool login_dialog = true;
         bool alternate = false;
@@ -73,7 +73,7 @@ HRESULT __stdcall CNetUtilEventSink::OnNewNick(HRESULT result, char const *messa
 // @ref ?Read_004ff200@WolRegistryOptions@@=004ff200
 // @ref ?unknown_004ff2c0@WolRegistryOptions@@=004ff2c0
 // @ref ?unknown_session_a3d298=00a3d298
-// @ref ?Save_Session_00670380=00670380
+// @ref ?Write_MultiPlayer_Settings@UnknownSessionState@@QAEXXZ=00670380
 // @ref ?Save_Nickname_00745320=00745320
 // @ref ?unknown_password_b2a63c=00b2a63c
 // @ref ?unknown_newnick_result_b2ac08=00b2ac08

@@ -157,7 +157,14 @@ struct UnknownSessionState {
     // Whether the house (null: the player's) is the game master: by MasterPlayerID,
     // else by name, in game mode 4 (0x0066F150; YR's Am_I_Master, hypothesis).
     bool Am_I_Master(HouseClass *house);
-    void Unknown_0066EE50();                // 0x0066EE50 (Do_Lose after a networked replay restarts)
+    // Saves the player and serial settings, the init strings and the phone book to
+    // RA2.INI (0x00670380; Red Alert's Write_MultiPlayer_Settings; after the skirmish
+    // dialog and WOL games).
+    void Write_MultiPlayer_Settings();
+    // Makes a connection to every other player (game modes 3 and 4) and records the
+    // houses' addresses; 0 in other modes (0x0066EE50; Red Alert's Create_Connections;
+    // Do_Lose after a networked replay restarts).
+    int Create_Connections();
     void Unknown_00672440();                // 0x00672440 (game mode 4, after the load wait of 0x0065C7D0)
     unsigned char Unknown_00672F10();       // 0x00672F10 (+0x3080)
     int Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)
@@ -175,8 +182,6 @@ extern unsigned short unknown_last_message_a3f122[];
 void __fastcall Unknown_Play_Taunt_00715fb0(char packed);
 // The player count of a multiplayer map (0x005C6600; hypothesis).
 int __fastcall Unknown_005c6600(int scenario);
-// Saves the session settings (0x00670380; after the skirmish dialog and WOL games).
-void __fastcall Save_Session_00670380(UnknownSessionState *session);
 // The session's game mode object (+0x04, a MultiplayerGameMode; moved from
 // shared/radar.hpp).
 class CCINIClass;

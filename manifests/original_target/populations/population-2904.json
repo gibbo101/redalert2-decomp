@@ -4,8 +4,8 @@
     "id": "population-2904",
     "inventory_sha256": "b98cc30644c00d04cb37b4b91cabed7920b481195c78d450387272eb41fe5258",
     "gaps_sha256": "9199abce20c2cc8a548e24e7437f6318536bc9855467e2514eb6c2da3e045ce3",
-    "historical_population_sha256": "ad0537f52b0d080c130f791dcae9815cbed9c50df755cb9cc76589dcd8c30fd2",
-    "historical_acceptance_sha256": "75e1e2d9b6a60e1171b0f8dd3ef083d7afa1bf194ef71fbdcc2d010181a2aead"
+    "historical_population_sha256": "8345ad142e14871f265edbffa984bcdde6da1172e2a88541469af11c96b8be27",
+    "historical_acceptance_sha256": "90406b971a61b1f08f0d1ef29188dcacfa005612963bcc9af0dca3d4573ebaad"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6757,7 +6757,7 @@
     "?Unknown_0058F620@@YIXPAVUnknownIDSource@@PBD@Z": 5830176,
     "?Unknown_0058F510@@YIXPAVUnknownIDSource@@@Z": 5829904,
     "?Unknown_005BC460@@YI_NXZ": 6014048,
-    "?Unknown_0066EE50@UnknownSessionState@@QAEXXZ": 6745680,
+    "?Create_Connections@UnknownSessionState@@QAEHXZ": 6745680,
     "?unknown_a3d580@@3HA": 10737024,
     "?Do_Lose_0065dec0@@YIXXZ": 6676160,
     "?Process@WWMessageBox@@QAEHPBG000_N@Z": 5981872,
@@ -7266,7 +7266,7 @@
     "?Find_Country_Index_004904A0@@YIHPBD@Z": 4785312,
     "?unknown_a3d3bc@@3HA": 10736572,
     "?unknown_a3d3b4@@3HA": 10736564,
-    "?Save_Session_00670380@@YIXPAUUnknownSessionState@@@Z": 6751104,
+    "?Write_MultiPlayer_Settings@UnknownSessionState@@QAEXXZ": 6751104,
     "?unknown_int_a40d48@@3HA": 10751304,
     "?unknown_protocol_7fd370@@3IA": 8377200,
     "?Options@@3VOptionsClass@@A": 10750744,
