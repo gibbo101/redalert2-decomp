@@ -137,3 +137,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   with drafts/ipx_global_conn.slot17.hpp): really `void unknown_slot17(unsigned long age)` (rename spec needed),
   one swapped load pair at +0x95 (original reads rec->ReceiveTime before age). Windows near-miss work. The
   `memset(&header->unknown_08, ...)` rule that fixed Send_To may lift IPXConnClass::Send_To 0x523D90 (52.7).
+- CNetUtilEventSink::OnLadderList 0x75D330 (2195 B) 87.38, shape 99.67, 610/610 (Sink139 v/best.cpp; header overlay
+  inc/shared/wol_sink.hpp built by mkhdr.py adds codex3 r14 declarations HEAD lacks; scores need --symbol and
+  --include). Only the opening differs (original keeps the normalized list pointer in ebx). The structurally
+  closer v/a1.cpp (74.53) swaps ebx/ebp (list vs cached SendMessageA) throughout. Windows near-miss work.
