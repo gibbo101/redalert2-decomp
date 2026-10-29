@@ -6,6 +6,7 @@
 #define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #define VECTOR_IMPLEMENT_DYNAMIC_ID_OBJECT
 #define VECTOR_IMPLEMENT_VECTOR_DESTRUCTOR
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_INDEX
 #include "shared/vector_class.hpp"
 #include "shared/unknown_player_entry.hpp"
 
