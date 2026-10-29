@@ -28,8 +28,9 @@ public:
     bool Unknown_006720E0(Wstring &mode);
 
     unsigned short Description[0x2C];      // +0x00 the map's description (ModemGuest 0x00597E50 shows it)
-    char unknown_58[0x17C - 0x58];          // +0x58 the map's file name (the cooperative campaign records list it)
-    bool unknown_17c;                       // +0x17C (a game mode test is skipped when false and 0x0073C370 agrees)
+    char unknown_58[0x15C - 0x58];          // +0x58 the map's file name (the cooperative campaign records list it)
+    char unknown_15c[0x17C - 0x15C];        // +0x15C the map's digest (ModemHost 0x0059BC90 sends it)
+    bool unknown_17c;                       // +0x17C official map (sent as the options IsOfficial bit; a game mode test is skipped when false and 0x0073C370 agrees)
     char unknown_17d[0x184 - 0x17D];
     int unknown_184;                        // +0x184 the map's player count (MPCooperative slot 37: the computers are two fewer)
     TypeList<DiskID> DiskIDs;               // +0x188 the disks the map is on (TypeList: 0x1C bytes)

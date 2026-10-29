@@ -70,6 +70,8 @@ public:
     void Service_0059b560(bool force);
     // Sends the game options packet (0x0059BC90).
     void Send_Options_0059bc90();
+    // Answers the guest's preview request (command 0x77): uploads the map preview (0x0059C8B0).
+    void Send_Preview_0059c8b0();
     // Handles the guest's messages; true when the guest timed out (a message box unless quiet) (0x0059B690).
     bool Process_Messages_0059b690(bool quiet);
     // Sends the sign-off to the guest and waits up to 300 ticks for it to go out (or the guest's
