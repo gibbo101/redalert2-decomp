@@ -149,10 +149,13 @@ public:
     virtual void unknown_slot304();                                   // slot 304 0x00705070
     virtual bool INoticeSink_Unknown(int code, int arg);              // INoticeSink (+8) slot 0 0x00709890 (vtable 0x007ADDD4)
 
-    // New virtuals (slots 310-312); placeholders from ret N.
-    virtual int unknown_slot310(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6);    // slot 310 0x006FF690
-    virtual int unknown_slot311(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6);    // slot 311 0x007005B0
-    virtual int unknown_slot312(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7);  // slot 312 0x006FF3E0
+    // New virtuals (slots 310-312): the draw paths. Slot 67 (0x00700E70) calls
+    // 310 or 311 with (point, a 16-byte Rect copy, depth), ret 0x1C; both call
+    // 312 with the surface first, ret 0x20. Slot 311 passes the address of its
+    // point argument on as a Point2D. Names are hypotheses.
+    virtual void unknown_slot310(Point2D point, Rect window, int depth);    // slot 310 0x006FF690 (ret 0x1C)
+    virtual void unknown_slot311(Point2D point, Rect window, int depth);    // slot 311 0x007005B0 (ret 0x1C)
+    virtual void unknown_slot312(Surface &surface, Point2D point, Rect window, int depth);  // slot 312 0x006FF3E0 (ret 0x20)
     static void __fastcall Read_INI(CCINIClass &ini);                 // 0x00706AE0 (the [Units] section; hypothesis)
     static void __fastcall Write_INI(CCINIClass &ini);                // 0x00706F60 (the [Units] section; hypothesis)
     void unknown_709c30(ObjectTypeClass *type);                       // 0x00709C30 (sets the disguise; hypothesis)

@@ -207,3 +207,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   MSPrintAnim::Draw 0x5AF030: one more pending inline site later in Draw, or a depth-3 Intersect, gives the
   original call; untested a two-level Rect::Intersect member chain (rect.hpp, whole-tree check). The Campaign ctor
   0x725F40 is not an inlining problem (folding/registers, WDT136).
+- After Inline156 (NOTES, drafts in build/class-work/Inline156/): MSPrintAnim::Draw landed. Bullet shrapnel 0x462C50
+  53.52 (bul/v/best_53.52.cpp with bul/inc2): the inline call pattern is solved by routing Coord copies through an
+  inline by-value accessor (lab: free Coord_Of_462c50; really an ObjectClass member) and the random loop's cell
+  through Map_Cell(cell); left is the count prefix (esi spill, Coord copied before Owner->Center_Coord) and a frame
+  8 bytes too big, Windows near-miss work. BuildingLight ctor 0x432FC0: with a UnknownCoord434820 local in
+  0x4341D0 (bl/v/f2.cpp, stays exact) the ctor reaches 87.01 but keeps owner in edi instead of rereading [ebp+8].
+  The other out-of-line 0x41FDF0 call at 0x5AF50D is in an unrecovered MSPrintAnim function 0x5AF210-0x5AF790.

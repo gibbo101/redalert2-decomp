@@ -19,8 +19,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes: Inline156 (Opus) applies the Study152 inline rule to Bullet shrapnel 0x462C50,
-MSPrintAnim::Draw 0x5AF030 and the BuildingLight ctor 0x432FC0; Unit155 (Opus) UnitClass drawing family (slots 310/311/312 rename, then 0x6FF3E0, 0x700E70, 0x7005B0,
+Running Mac lanes: MSAnim157 (Opus) the rest of the MSAnim.cpp unit 0x5AC540-0x5AFEE0; Unit155 (Opus) UnitClass drawing family (slots 310/311/312 rename, then 0x6FF3E0, 0x700E70, 0x7005B0,
 0x6FF690). Debt154 merged the two 0x4F52B0 names
 (b24cc60c). Inf148 (InfantryClass) parked, zero bytes.
 Landed this evening: Modem141, Base142 (Base unit complete), Ref143 (Release 0x639720, CampaignProperties and
@@ -29,7 +28,7 @@ Territory ctors), Score144 (CampaignScoreClass ctor 0x465BF0), VoxAnim145 (Voxel
 (MapClass 0x5502E0 Point2D rename; UnitClass slot 87 0x7072D0), Bullet151 (detonation 0x462110, NukeMaker
 payload 0x463C50), Unit147 (MCV deploy search 0x6FD930 and two unit statics), Unit153
 (slot 86 0x6FCA30, BuildingTypeClass 0x45EC50 bool, deploy attempt 0x6FDFC0), Study152 (inline rule now in
-VC6_MATCHING_NOTES; WDT Map ctor 0x729330). Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
+VC6_MATCHING_NOTES; WDT Map ctor 0x729330), Inline156 (MSPrintAnim::Draw 0x5AF030). Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
 0x734CD0/0x735110. WDT136 (Campaign ctor 0x725F40) and Sink139 (OnLadderList 0x75D330) are misses in OPEN_MISSES.md.
 Landed 2026-10-28 evening: Map129, Obj126, Para131, Iso128, MSAnim133, Score132, IPX135 (Send_To), Base134
 (BaseClass ctor/Load/NoInit ctor). Near misses (OPEN_MISSES.md) go to the Windows lead; queue and drafts sent in
