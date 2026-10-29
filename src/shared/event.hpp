@@ -12,6 +12,8 @@
 #include "shared/cd_timer.hpp"
 #include "shared/debug_printf.hpp"
 
+class SpecialClass;
+
 extern "C" __declspec(dllimport) unsigned long __stdcall timeGetTime();
 
 #pragma pack(push, 1)
@@ -20,8 +22,9 @@ public:
     // An empty event (type 0): the outgoing queue's 128 entries (0x004D46D0)
     // and the planning copies (Planning.cpp) are built this way.
     EventClass() { Type = 0; }
-    // An event with only a house and a type (0x004B5FD0; Planning.cpp).
-    EventClass(int house, int type);
+    // An event with only a house and a type (0x004B5FD0; Planning.cpp; the
+    // type is a byte: Queue_Exit pushes a byte local).
+    EventClass(int house, unsigned char type);
     // A production event (type 0x10 from the strips; payload kind, id, naval).
     EventClass(int house, int type, int rtti, int id, int naval);                         // 0x004B6280
     // The same with a cell (type 0x0B: place).
@@ -52,6 +55,7 @@ public:
     short &ShortAt(int offset) { return *(short *)&Data.Bytes[offset - 0x07]; }
     long &LongAt(int offset) { return *(long *)&Data.Bytes[offset - 0x07]; }
     Cell &CellAt(int offset) { return *(Cell *)&Data.Bytes[offset - 0x07]; }
+    SpecialClass &SpecialAt(int offset) { return *(SpecialClass *)&Data.Bytes[offset - 0x07]; }
 
     // An event about an object (0x004B5EF0; BuildingClass slot 77 queues
     // type 0x16 for itself).
@@ -63,8 +67,9 @@ public:
     EventClass(int house, int type, long a, Cell const &cell);
     // Type 5 (0x004B61F0): like type 4 with two more longs.
     EventClass(int house, TargetClass whom, unsigned char mission, TargetClass target, TargetClass destination, long a, long b);
-    // Type 0x18 (0x004B5EB0): one long.
-    EventClass(int house, long a);
+    // Type 0x18 (SPECIAL, 0x004B5EB0): the game options word (Red Alert's
+    // EventClass(SpecialClass)).
+    EventClass(int house, SpecialClass data);
     // Type and a four-byte payload (0x004B6030; the type is a byte).
     EventClass(int house, int type, unsigned long a);
     // Type 4 (0x004B6170): a target, a mission byte and three more targets.
@@ -103,8 +108,13 @@ public:
 };
 
 extern QueueClass<EventClass, 128> OutList;     // 0x00A32338
-// The event queue the game executes (0x00866270; TS DoList, name and size hypotheses:
-// declared with OutList's size, only Count/Head/Tail are used).
-extern QueueClass<EventClass, 128> unknown_do_list_866270;
+// Stamps the event with the current frame and adds it to OutList; false when
+// the queue is full (0x0062E670, the Queue unit; the event is passed by value;
+// moved from shared/planning.hpp).
+bool __stdcall Unknown_0062E670(EventClass event);
+// The events the game executes (0x00866270, Red Alert's DoList): 0x4000 entries
+// (Clean_DoList 0x00629E80 and Queue_Record 0x00629ED0 wrap the head with
+// 0x3FFF; the array starts at 0x0086627C).
+extern QueueClass<EventClass, 0x4000> DoList;
 
 #endif

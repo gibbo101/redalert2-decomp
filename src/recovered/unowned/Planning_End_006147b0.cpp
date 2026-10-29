@@ -7,8 +7,8 @@
 // @ref ?unknown_flag_a767a4@@3_NA=00a767a4
 // @ref ?unknown_sink_a76680@@3PAUUnknownPlanningSink@@A=00a76680
 // @ref ?unknown_player_a35db4@@3PAVHouseClass@@A=00a35db4
-// @ref ??0EventClass@@QAE@HH@Z=004b5fd0
-// @ref ?Unknown_0062E670@@YGXVEventClass@@@Z=0062e670
+// @ref ??0EventClass@@QAE@HE@Z=004b5fd0
+// @ref ?Unknown_0062E670@@YG_NVEventClass@@@Z=0062e670
 
 void Planning_End()
 {

@@ -226,7 +226,7 @@ extern int unknown_b29828;              // 0x00B29828 (pings expected)
 extern int unknown_b26898;              // 0x00B26898
 extern int unknown_b299c0;              // 0x00B299C0
 
-void __fastcall Unknown_00698D00(int arg);              // 0x00698D00
+void __fastcall Unknown_00698D00(bool arg);             // 0x00698D00 (stores cl: a byte)
 void *__fastcall Unknown_00735940(int id);              // 0x00735940 (a dialog by id)
 void __fastcall Unknown_007357E0(void *dialog, int arg);    // 0x007357E0
 HWND Unknown_00735B10();                                // 0x00735B10 (the current dialog window)

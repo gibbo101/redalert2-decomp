@@ -4,8 +4,8 @@
     "id": "population-2903",
     "inventory_sha256": "3fea64ee09ae9b5df67ef7650605e4cf2ab526153b4f19feeb34091b29c87736",
     "gaps_sha256": "6625e85e0f629e869a22d45ce9ac7911b8a0baed510ae76920b27fff92118009",
-    "historical_population_sha256": "b169df13ee7c3e8ae64bd34d652ae8c9c2416605f66ebf60a999fde620401f93",
-    "historical_acceptance_sha256": "8d313e8aa8e0301d3b5a68eaf2e6b0d6d86eb443a8dcecc2d9e628d2406cadac"
+    "historical_population_sha256": "4248fde95c77052b2071024b0b28cb9f7d4fc04bf1087a8838a15b1b23aa3936",
+    "historical_acceptance_sha256": "ce65232c7a5dbcce232c9e5ce77c872ff29032bc48283aafbec7de6764bf9780"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1904,9 +1904,9 @@
     "??0EnumConnectionPointsClass@@QAE@ABV?$DynamicVectorClass@PAUIConnectionPoint@@@@@Z": 4795936,
     "??0EnumConnectionsClass@@QAE@ABV0@@Z": 4793728,
     "??0EnumConnectionsClass@@QAE@ABV?$DynamicVectorClass@UtagCONNECTDATA@@@@@Z": 4793520,
-    "??0EventClass@@QAE@HH@Z": 4939728,
+    "??0EventClass@@QAE@HE@Z": 4939728,
     "??0EventClass@@QAE@HHJABVCell@@@Z": 4940528,
-    "??0EventClass@@QAE@HJ@Z": 4939440,
+    "??0EventClass@@QAE@HVSpecialClass@@@Z": 4939440,
     "??0EventClass@@QAE@HVTargetClass@@E000@Z": 4940144,
     "??0FacingClass@@QAE@H@Z": 4950512,
     "??0FacingClass@@QAE@XZ": 4950480,
@@ -11052,7 +11052,7 @@
     "?unknown_tileset_a52ee8@@3HA": 10825448,
     "?unknown_tileset_a52eec@@3HA": 10825452,
     "?unknown_471d10@CellClass@@QAEXXZ": 4660496,
-    "?unknown_do_list_866270@@3V?$QueueClass@VEventClass@@$0IA@@@A": 8807024,
+    "?DoList@@3V?$QueueClass@VEventClass@@$0EAAA@@@A": 8807024,
     "?unknown_flag_a3dc89@@3_NA": 10738825,
     "?To_Char@WWKeyboardClass@@QAEDG@Z": 5449728,
     "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,

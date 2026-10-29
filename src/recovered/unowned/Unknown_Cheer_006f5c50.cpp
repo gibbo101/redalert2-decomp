@@ -4,7 +4,7 @@
 #include "shared/uicmnds.hpp"
 #include "shared/rules.hpp"
 // @ref ?unknown_cheer_frame_ac134c@@3HA=00ac134c
-// @ref ??0EventClass@@QAE@HH@Z=004b5fd0
+// @ref ??0EventClass@@QAE@HE@Z=004b5fd0
 
 void Unknown_006F5C50()
 {

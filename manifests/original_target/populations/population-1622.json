@@ -4,8 +4,8 @@
     "id": "population-1622",
     "inventory_sha256": "33439d82928a05e42fd800df6b273cb114154ef3657196ed1156cad52afa9369",
     "gaps_sha256": "8cf7adfaf6921f845a43110bb5fa7213da4a7b6ff5e4893e1869e86aa0fe079b",
-    "historical_population_sha256": "70fc41a8074be0c784566e8b82d69910011b5e13fdb3e67f6f5ad7e0f8b92786",
-    "historical_acceptance_sha256": "96840d1bceb53e705911881bc18692f880015d46bc375b4388aeb9d69edc6cc4",
+    "historical_population_sha256": "8f854289e954fe9261969c38bce634417fd9fcb0275cf56654ab9796d26c1cd7",
+    "historical_acceptance_sha256": "4108988e0f94ea46db2c4be3d17daf86b9fe59613a147feef8d1419943972d61",
     "separate_units": true
   },
   "references": {
@@ -1629,9 +1629,9 @@
     "??0PlanningNodeClass@@QAE@H@Z": 6359680,
     "??1PlanningNodeClass@@QAE@XZ": 6359792,
     "??0EventClass@@QAE@HHVTargetClass@@@Z": 4939504,
-    "??0EventClass@@QAE@HH@Z": 4939728,
+    "??0EventClass@@QAE@HE@Z": 4939728,
     "??0EventClass@@QAE@HHVTargetClass@@0@Z": 4939920,
-    "??0EventClass@@QAE@HJ@Z": 4939440,
+    "??0EventClass@@QAE@HVSpecialClass@@@Z": 4939440,
     "??0EventClass@@QAE@HVTargetClass@@E000@Z": 4940144,
     "??0EventClass@@QAE@HHJABVCell@@@Z": 4940528,
     "??0PlanningTokenClass@@QAE@PAVTechnoClass@@@Z": 6368448,

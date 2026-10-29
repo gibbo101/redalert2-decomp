@@ -248,10 +248,14 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   HouseClass::AI is one function 0x4E4110..0x4E4EE7 (3536 B; inventory rows 0x4E4110 + 0x4E414C), a class-lane
   target of its own (raw seed 24.45). Inventory artifacts: TEventClass 0x6E6D9D is 3 NOPs before the accepted
   ??_G 0x6E6DA0; DynamicVectorClass<FoggedObjectClass *> lists 0x478CB0 as a vptr writer.
-- TeamClass (Team159 v/, NOTES; score inside the unit with HDR=h3): 0x6BC980 98.37 (Member load register),
-  0x6BD240 94.55 (x87 sum order in case 2), 0x6BB0F0 75.38 (this/leader registers), 0x6BE010 69.08 (0x6BDD80 stays
-  a call in the original). Type hypotheses in landed source: 0x6BC7B0 casts 0x6BCF70's result to ObjectClass *;
-  0x6B91C0 reads the stand-in Infantry elements as FootClass *. Inventory rows 0x6BBEE1 and 0x6BC565 are mid-function.
+- TeamClass after Team165 (v/, v159/, NOTES; score with HD=hr and the 0x6BAA60 EXTRA in its sc.sh): GatherAtEnemy
+  0x6BDAA0 95.67 (stack slots), 0x6BD240 93.13 (x87 add order), 0x6BCBB0 88.06 (coord copy during argument
+  evaluation; needs HouseClass::unknown_4eec70), TMission_Load 0x6BB5F0 85.10 (transport register), 0x6BE010 76.32
+  and 0x6BE440 65.81 (0x6BDD80 still inlined: one inline call short after the leader pick). Not drafted:
+  0x6B88B0, Calc_Center 0x6B9610 (the original calls UnknownVector3::Length 0x41B780 in one loop and inlines it in
+  the other: Length is inline in RA2, a header change touching EMPulse 0x4B4E30 and BuildingClass 0x445620),
+  AI 0x6B7AD0. Type hypotheses in landed source: 0x6BC7B0 casts 0x6BCF70's result to ObjectClass *; 0x6B91C0 reads
+  the stand-in Infantry elements as FootClass *. Inventory rows 0x6BBEE1 and 0x6BC565 are mid-function.
 - HouseClass::AI 0x4E4110 (body 3544 B, not 3536: the two inventory rows miss 8 bytes) 99.32, shape 100, 1034/1034
   (House164 miss/HouseClass_AI_004e4110_99.32.cpp with miss/inc/; NOTES has the whole-unit scoring commands): two
   variables get ebp where the original has ebx (flag-home damage-loop counter, capacity local in the money check).

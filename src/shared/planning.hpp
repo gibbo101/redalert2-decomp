@@ -146,8 +146,6 @@ extern bool unknown_flag_a767a6;                // 0x00A767A6 (a re-entry guard)
 extern int unknown_int_a76728;                  // 0x00A76728
 extern int unknown_int_a7672c;                  // 0x00A7672C
 extern bool unknown_flag_a76770;                // 0x00A76770
-// Queues an event for sending (0x0062E670; the event is passed by value).
-void __stdcall Unknown_0062E670(EventClass event);
 // An object the planning mode notifies (0x00A76680; hypothesis: its slot 0 takes a message and an argument).
 struct UnknownPlanningSink {
     virtual void Unknown_Slot0(int message, int argument);

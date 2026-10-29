@@ -24,7 +24,7 @@
 // @ref ?unknown_b2a6d8@@3PADA=00b2a6d8
 // @ref ?unknown_b2a820@@3_NA=00b2a820
 // @ref ?unknown_b2ab84@@3IA=00b2ab84
-// @ref ?unknown_do_list_866270@@3V?$QueueClass@VEventClass@@$0IA@@@A=00866270
+// @ref ?DoList@@3V?$QueueClass@VEventClass@@$0EAAA@@@A=00866270
 // @ref ?unknown_pings_b2a734@@3PAHA=00b2a734
 #include "shared/multiplayer_game_mode.hpp"
 #include "shared/coop_campaign.hpp"
@@ -59,7 +59,6 @@ extern bool unknown_b2a820;
 extern bool unknown_b293d8;
 extern IPXManagerClass unknown_ipx_manager_a40978;
 extern OwnerTalkClass unknown_OwnerTalkClass_00ab6d18;
-extern QueueClass<EventClass, 128> unknown_do_list_866270;
 void Unknown_Pregame_Setup_005c74f0();
 extern CCToolTip *ToolTips;
 
@@ -252,9 +251,9 @@ void MPCooperative::unknown_slot37()
     Options.GameSpeed = unknown_session_a3d298.GameSpeed_30;
     unknown_b293d8 = false;
     Unknown_Pregame_Setup_005c74f0();
-    unknown_do_list_866270.Count = 0;
-    unknown_do_list_866270.Head = 0;
-    unknown_do_list_866270.Tail = 0;
+    DoList.Count = 0;
+    DoList.Head = 0;
+    DoList.Tail = 0;
     OutList.Count = 0;
     OutList.Head = 0;
     OutList.Tail = 0;

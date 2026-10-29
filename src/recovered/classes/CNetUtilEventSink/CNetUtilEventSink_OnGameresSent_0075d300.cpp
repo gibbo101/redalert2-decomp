@@ -5,7 +5,7 @@
 // @ref ?unknown_game_mode_a3d298@@3HA=00a3d298
 // @ref ?unknown_a3d2a4@@3HA=00a3d2a4
 // @ref ?unknown_b2a7ec@@3HA=00b2a7ec
-// @ref ?Unknown_00698D00@@YIXH@Z=00698d00
+// @ref ?Unknown_00698D00@@YIX_N@Z=00698d00
 
 HRESULT __stdcall CNetUtilEventSink::OnGameresSent(HRESULT result)
 {

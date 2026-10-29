@@ -19,12 +19,12 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Team165 the rest of the TeamClass unit (TMission handlers, Calc_Center, AI);
-Queue166 the Event/Queue units (EVENT.CPP/QUEUE.CPP descendants). Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Queue166 the Event/Queue units (EVENT.CPP/QUEUE.CPP descendants); Techno167 TechnoClass own members (TECHNO.CPP). Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
-Remove/Coordinate_Regroup rename; House164 landed Suggested_New_Team 0x4E5CF0 and 0x4EF6F0 (AI at 99.32). Windows lead: r43-r45 landed (858ffa6d); codex2 approved for the three ScoreFontClass methods;
+Remove/Coordinate_Regroup rename; House164 landed Suggested_New_Team 0x4E5CF0 and 0x4EF6F0 (AI at 99.32);
+Team165 landed 7 more TeamClass functions (4.3 KB) with the Fire_Sw Cell const & rename. Windows lead: r43-r45 landed (858ffa6d); codex2 approved for the three ScoreFontClass methods;
 the user approved the map-generator 0xA6FD68/A0 ownership rename (lead delivers it alone, rebased on main). Lanes read docs/WESTWOOD_SOURCES.md before drafting library members. Debt154 merged the two 0x4F52B0 names
 (b24cc60c). Inf148 (InfantryClass) parked, zero bytes.
 Landed this evening: Modem141, Base142 (Base unit complete), Ref143 (Release 0x639720, CampaignProperties and
