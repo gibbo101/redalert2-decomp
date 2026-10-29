@@ -24,6 +24,7 @@ typedef int ThemeType;
 
 class ThemeClass {
 public:
+    ThemeClass();                           // 0x006E7C60
     void Stop(bool fade = false);           // 0x006E81A0 (argument meaning unknown)
     void Queue_Song(ThemeType theme);       // 0x006E7E20
     int Play_Song(ThemeType theme);         // 0x006E7EB0 (name hypothesis after TS)

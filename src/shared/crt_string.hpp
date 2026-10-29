@@ -9,6 +9,7 @@ extern "C" int __cdecl strcmp(char const *left, char const *right);
 extern "C" char *__cdecl strcpy(char *destination, char const *source);
 extern "C" char *__cdecl strcat(char *destination, char const *source);
 extern "C" int __cdecl strncmp(char const *left, char const *right, unsigned int count);   // 0x00783810
+extern "C" char *__cdecl strncpy(char *destination, char const *source, unsigned int count);   // 0x007823D0
 extern "C" int __cdecl sprintf(char *buffer, char const *format, ...);   // 0x007820F4
 extern "C" int __cdecl _stricmp(char const *left, char const *right);      // 0x00781F20
 extern "C" void __cdecl _splitpath(char const *path, char *drive, char *dir, char *fname, char *ext);   // 0x00784873

@@ -370,4 +370,17 @@ WIN32_IMPORT int WINAPI WideCharToMultiByte(unsigned int code_page, DWORD flags,
 // USER32 printf into a buffer (cdecl, variable arguments).
 WIN32_IMPORT int __cdecl wsprintfA(char *buffer, char const *format, ...);
 
+// The Windows version (WindowsVersionInfo 0x00736EB0).
+struct OSVERSIONINFOA {
+    DWORD dwOSVersionInfoSize;
+    DWORD dwMajorVersion;
+    DWORD dwMinorVersion;
+    DWORD dwBuildNumber;
+    DWORD dwPlatformId;
+    char szCSDVersion[128];
+};
+#define VER_PLATFORM_WIN32_WINDOWS 1
+#define VER_PLATFORM_WIN32_NT 2
+WIN32_IMPORT BOOL WINAPI GetVersionExA(OSVERSIONINFOA *info);
+
 #endif
