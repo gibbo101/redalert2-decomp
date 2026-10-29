@@ -55,18 +55,7 @@ struct Ladder {
     char name[0x6c - 0x40];
 };
 
-// A WOL user (only the members WOnline.cpp reads here).
-struct User {
-    unsigned int flags;                 // +0x00
-    char unknown_04[0x14 - 4];
-    unsigned int unknown_14;
-    unsigned long unknown_18;
-    int unknown_1c;
-    User *next;                         // +0x20
-    char name[10];                      // +0x24
-    char unknown_2e[0x57 - 0x2e];
-    char unknown_57[0x6c - 0x57];
-};
+// WOL::User is in shared/unknown_globals.hpp.
 
 struct Channel {
     int unknown_00;

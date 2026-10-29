@@ -61,6 +61,14 @@ extern int unknown_lobby_flag_7e6d90;
 void __fastcall Send_Game_Options_005c3c60(char const *text);
 // Selects the multiplayer map with this unknown_multi_missions_a3d8d8 index (-1: none) (0x005C7C30).
 bool __fastcall Select_Scenario_005c7c30(int index);
+// The lobby entry with this name (0x005CD1B0) and the fixed entry or session node whose name text equals
+// the name (0x005C8B20).
+NodeNameType *__fastcall Unknown_Find_Lobby_Entry_005cd1b0(WideString const &name);
+NodeNameType *__fastcall Unknown_Find_Lobby_Name_005c8b20(wchar_t const *name);
+// Seats the comma-separated lobby names in the player slots (0x005C8DD0).
+void __fastcall Set_Slot_Names_005c8dd0(wchar_t const *names);
+// Downloads the host's map preview image into the dialogs' map preview (0x005C7970).
+void __fastcall Download_Map_Preview_005c7970();
 
 // Wide-string comparison, 0 when equal (0x007837D3; the CRT's _wcsicmp).
 int Compare_Wide_007837d3(wchar_t const *first, wchar_t const *second);

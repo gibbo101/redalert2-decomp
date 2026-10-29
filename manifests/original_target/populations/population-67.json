@@ -1353,48 +1353,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 6055840,
-      "method": "005c67a0",
-      "symbol": "?FUN_005c67a0@seed_005c67a0@@YAXXZ",
-      "symbol_prefix": "?FUN_005c67a0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 27,
-      "body_sha256": "e9336d933a420ae748f81c37f0b0f250e6a0ce9ac3d38e592ac09d5bf81e5eb0",
-      "padding_bytes": 5,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "eb9ed88af33c6cb30d6ec913ca69c5a59994af191bc4b0eab6b4560c09262712",
-      "relocations": [
-        {
-          "offset": 1,
-          "kind": 6,
-          "symbol": "_DAT_00a728e0",
-          "target": 10954976,
-          "addend": 0,
-          "resolved": 10954976
-        },
-        {
-          "offset": 22,
-          "kind": 6,
-          "symbol": "__imp__SendDlgItemMessageA@20",
-          "target": 7971972,
-          "addend": 0,
-          "resolved": 7971972
-        }
-      ],
-      "source_sha256": "8df799e4da032963abbf60a5754842400ad24c1818260ed35c139db8e409ad4c",
-      "source": "src/recovered/005c67a0.cpp",
-      "source_order": 8063,
-      "population": "population-67",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 6141504,
       "method": "005db640",
       "symbol": "?FUN_005db640@seed_005db640@@YAXXZ",

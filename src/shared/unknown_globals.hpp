@@ -71,7 +71,22 @@ void __fastcall Unknown_005cd030(HWND dialog, bool value);
 // The World Online chat object, 0 when not connected (0x00A72CFC; moved from shared/wol_sink.hpp).
 namespace WOL {
 struct IChat;
+// A WOL user (only the members WOnline.cpp reads here; moved from shared/wol_sink.hpp).
+struct User {
+    unsigned int flags;                 // +0x00
+    char unknown_04[0x14 - 4];
+    unsigned int unknown_14;
+    unsigned long unknown_18;
+    int unknown_1c;
+    User *next;                         // +0x20
+    char name[10];                      // +0x24
+    char unknown_2e[0x57 - 0x2e];
+    char unknown_57[0x6c - 0x57];
+};
 }
+// The first user of the channel list whose flags have bit 0 set (the game host; 0x0074DA60, hypothesis:
+// it returns a copy in a static record, 0 when there is none).
+WOL::User *Unknown_0074DA60();
 extern WOL::IChat *unknown_chat_a72cfc;
 HWND Unknown_00735B10();                                // 0x00735B10 (the current dialog window; moved from shared/wol_sink.hpp)
 // Dialog helpers (moved from shared/queue.hpp and shared/wol_sink.hpp): 0x005FEE70 before a dialog paints,

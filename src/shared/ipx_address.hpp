@@ -40,5 +40,8 @@ public:
 // The local player's address (0x00A3DB2C, session +0x894): MPCooperative slot 34 finds the saved
 // player row with it, slot 37 sets it from that row.
 extern IPXAddressClass unknown_address_a3db2c;
+// The address of the session's last received global packet (0x00A3F80C, session +0x2574; the
+// map preview download sets it to unknown_address_a3db2c).
+extern IPXAddressClass unknown_address_a3f80c;
 
 #endif
