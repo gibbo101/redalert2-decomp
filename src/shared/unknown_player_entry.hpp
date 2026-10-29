@@ -13,7 +13,17 @@ typedef unsigned short wchar_t;
 struct NodeNameType {
     wchar_t Name[20];
     IPXAddressClass Address;
-    char unknown_34[0x4b - 0x34];   // +0x34 a narrow string (copied with strcpy)
+    union {
+        char unknown_34[0x4b - 0x34];   // +0x34 a narrow string (copied with strcpy)
+        struct {
+            unsigned char IsOpen;       // +0x34 the game is open (Red Alert's Game.IsOpen)
+            unsigned long LastTime;     // +0x35 the last time the game was heard from
+        } Game;                         // an entry of unknown_games_a3fa64
+        struct {
+            unsigned long LastTime;     // +0x34 the last time the player was heard from (0: not yet)
+            unsigned char LastChance;   // +0x38 a NET_CHAT_REQUEST was sent before the removal
+        } Chat;                         // an entry of unknown_chat_a3fa4c
+    };
     int unknown_4b;                 // +0x4B the country (HouseTypes index; -3: random, read as 0 by Read_Scenario_INI)
     int unknown_4f;                 // +0x4F
     int unknown_53;                 // +0x53 the colour (lowest first gets the first house; Assign_Houses)

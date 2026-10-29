@@ -9,6 +9,8 @@
 // @ref ?Compare_Wide_007837d3@@YAHPBG0@Z=007837d3
 // @ref ?Compare_Narrow_00781f20@@YAHPBD0@Z=00781f20
 
+// The original never inlines it (Unknown_005c28e0 calls it out of line).
+#pragma auto_inline(off)
 int __fastcall Unknown_Find_Player_By_Name_005bcc60(char const *name)
 {
     if (name == 0) {
@@ -28,3 +30,4 @@ int __fastcall Unknown_Find_Player_By_Name_005bcc60(char const *name)
     }
     return -1;
 }
+#pragma auto_inline(on)

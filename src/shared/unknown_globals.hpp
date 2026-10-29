@@ -81,6 +81,8 @@ void __fastcall Unknown_005FE380(long item);
 void __fastcall Unknown_007357E0(void *dialog, int arg);    // 0x007357E0
 // Adds a formatted line to the chat display (hypothesis; 0x005C2C80; moved from shared/wol_sink.hpp).
 void __cdecl Unknown_005C2C80(int color, unsigned short const *format, ...);
+// The system chat colour (0x007A7360; moved from shared/wol_sink.hpp).
+extern int unknown_color_7a7360;
 // The same into the list 0x5B5 (0x005C2D10).
 void __cdecl Unknown_005c2d10(int color, unsigned short const *format, ...);
 // Adds a line to a dialog list box (0x005C2DA0; hypothesis: color -1 is the default; moved from shared/queue.hpp).
@@ -107,16 +109,55 @@ struct UnknownKickVoters {
 #pragma pack(push, 1)
 struct UnknownGlobalPacket {
     int Command;                        // +0x00
-    char Name[0x2F - 4];                // +0x04
+    char Name[20];                      // +0x04
+    char unknown_18[0x2F - 0x18];       // +0x18 (NET_ANSWER_PLAYER: a narrow string, unknown_a71bc4)
     union {
         char unknown_2f[0x1C7 - 0x2F];
+        struct {
+            unsigned int IsOpen : 1;    // +0x2F the game is open (unknown_session_a3f616)
+        } GameInfo;                     // command 1 (NET_ANSWER_GAME)
+        struct {
+            int unknown_2f;             // +0x2F session 0x006729F0 (+0x124)
+            int unknown_33;             // +0x33 session 0x00672A10 (+0x11C)
+            int unknown_37;             // +0x37 0x005BBA50 of the host's name
+            char unknown_3b[0x53 - 0x3B];
+            int Slot;                   // +0x53 unknown_lobby_a3fa94
+            int Observer;               // +0x57 the slot is the observer slot and the player is an observer
+        } PlayerInfo;                   // command 3 (NET_ANSWER_PLAYER)
+        struct {
+            int unknown_2f;             // +0x2F session 0x006729F0 (+0x124)
+            int unknown_33;             // +0x33 session 0x00672A10 (+0x11C)
+            char unknown_37[0x3B - 0x37];
+            unsigned long unknown_3b;   // +0x3B version_object_00a40c88 0x007131B0
+            unsigned long unknown_3f;   // +0x3F version_object_00a40c88 0x007131C0
+            int unknown_43;             // +0x43 unknown_a71e9c
+            int unknown_47;             // +0x47 unknown_a71ea4
+            int unknown_4b;             // +0x4B unknown_a71ea0
+            int unknown_4f;             // +0x4F 0x00737AF0
+            char unknown_53[0x57 - 0x53];
+            int unknown_57;             // +0x57 the joiner's flag argument
+        } Join;                         // command 6 (NET_QUERY_JOIN)
+        struct {
+            int Why;                    // +0x2F the reason (4: by the host; Red Alert's REJECT_BY_OWNER)
+        } Reject;                       // command 8 (NET_REJECT_JOIN)
         struct {
             int Kickee;                 // +0x2F the id of the player proposed for a kick
             int Proposer;               // +0x33 the id of the player who proposes it
         } Kick;                         // command 0x1C (Propose_Kick_Player)
+        struct {
+            char unknown_2f;            // +0x2F
+            unsigned short Buf[112];    // +0x30 the text (wide)
+            int unknown_110;            // +0x110
+            int unknown_114;            // +0x114 0x005BBA50 of the host's name
+        } Message;                      // command 12 (NET_MESSAGE)
+        struct {
+            unsigned short Names[(0x1C7 - 0x2F) / 2];   // +0x2F the slot names (wide; Unknown_Slot_Names_005c8cf0 fills them)
+        } Slots;                        // command 0x16
     };
 };
 #pragma pack(pop)
+// The session's packet (0x00A3F640, session +0x23A8; Red Alert's Session.GPacket).
+extern UnknownGlobalPacket unknown_gpacket_a3f640;
 // A block of multiplayer game settings (0x7C bytes), kept per game type in the
 // session (the Skirmish, LAN and WonlinePref sections of RA2.INI).
 class CCINIClass;
@@ -142,6 +183,8 @@ struct UnknownGameOptions {
 };
 struct UnknownSessionState {
     int Value_0124_006729f0();
+    // netdlg2's scenario download test for an official map (0x00672140; meaning not recovered).
+    bool Unknown_00672140();
     int Value_011c_00672a10();
     void Set_Value_00672a30(int value, bool update);
     void Set_Value_00672ae0(int value, bool update);
@@ -217,7 +260,15 @@ struct UnknownSessionState {
     char unknown_63b[0x640 - 0x63B];
     // The multiplayer maps (also unknown_multi_missions_a3d8d8; Red Alert's Scenarios).
     DynamicVectorClass<MultiMission *> Scenarios;   // +0x640
-    char unknown_658[0x8A0 - 0x658];
+    // The game's scenario as the host announces it (netdlg2.cpp; Red Alert's ScenarioFileName,
+    // ScenarioDigest, ScenarioFileLength and ScenarioIsOfficial; hypotheses).
+    char ScenarioFileName_658[0x85A - 0x658];   // +0x658
+    char ScenarioDigest_85a[0x87C - 0x85A];     // +0x85A
+    int ScenarioFileLength_87c;                 // +0x87C
+    bool ScenarioIsOfficial_880;                // +0x880
+    char unknown_881[0x884 - 0x881];
+    int unknown_884;                            // +0x884 (sent in the game options text)
+    char unknown_888[0x8A0 - 0x888];
     // +0x8A0 copies of received global packets (RTTI DynamicVectorClass<GlobalPacketType *>,
     // vtable 0x007A9584; Unknown_00627190 adds them).
     DynamicVectorClass<UnknownGlobalPacket *> GlobalPackets_8a0;

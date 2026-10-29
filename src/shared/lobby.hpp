@@ -315,7 +315,9 @@ void Unknown_005c3c20();
 void Unknown_005c3c40();
 void Unknown_0075c980();
 void Unknown_0075ca00();
-void Unknown_005c28e0();
+// Unknown_005c28e0 is __fastcall: its own register setups come before its pushes (0x005C28E0 tells the
+// joiners that the host started the game, GUI:HostGameStartJoiner, unless the local player is the host).
+void __fastcall Unknown_005c28e0();
 void Unknown_005c2940();
 
 // The dialog manager's window before this one in its stack, 0 for none (0x007359B0; keys are windows here).
@@ -372,5 +374,100 @@ extern "C" int __cdecl iswgraph(unsigned short character);          // 0x00784AE
 extern wchar_t const *unknown_lobby_texts_a72d0c[7];
 // Loads those texts and makes each missing fixed entry with its text as the name (0x005C86E0).
 void __fastcall Init_Lobby_Entries_005c86e0();
+
+// The netdlg2.cpp network dialog helpers (0x005BBD20..0x005C2933; names follow Red Alert's
+// NETDLG.CPP where the body matches, hypotheses otherwise).
+// Refreshes the LAN lobby; false from every netdlg2.cpp caller (0x005BBDD0).
+void __fastcall Unknown_005bbdd0(bool unknown);
+// Sends the slot names (global packet 0x16) to every other session player (0x005BBD20).
+void Send_Slot_Names_005bbd20();
+// Sets the country and colour of the slot whose entry has a name, updating the side and colour
+// combo boxes of the dialog 0xBC (or 0xBD) when the observer choice changes; whether the
+// country changed (0x005BCCF0).
+int __fastcall Set_Slot_Country_Color_005bccf0(char const *name, int country, int color);
+// The serial number: "Serial" under HKLM\SOFTWARE\Westwood\Red Alert 2 (22 '0's by default),
+// decoded digit by digit with woldata.key; false without the key file (0x005BCE90).
+bool __fastcall Get_Serial_005bce90(char *serial);
+// Set while the options dialog is being filled: its procedure ignores messages (0x00A71E98).
+extern bool unknown_lock_a71e98;
+// The game options dialog's procedure: reads the speed, money and unit sliders and the option
+// check boxes into the session (0x005BF9B0).
+long __stdcall Options_Dialog_Proc_005bf9b0(HWND window, unsigned message, unsigned wparam, long lparam);
+// Sends the chat line of the edit box 0x540 (longer than two characters) to the session players
+// (join state 2) or the chat players, and shows it in colour (0x005BEE20).
+void __fastcall Send_Chat_Message_005bee20(HWND dialog, int color, int unknown);
+// Session flags (0x00A3F614, 0x00A3F616, session +0x237C/+0x237E; +0x237E is sent as the game's
+// IsOpen) and 0x00A40D04 (session +0x3A6C); meanings not recovered.
+extern bool unknown_session_a3f614;
+extern bool unknown_session_a3f616;
+extern bool unknown_session_a40d04;
+// The narrow string a NET_ANSWER_PLAYER carries at +0x18 (0x00A71BC4).
+extern char unknown_a71bc4[];
+// The host's answers to NET_QUERY_GAME (NET_ANSWER_GAME) and NET_QUERY_PLAYER (NET_ANSWER_PLAYER,
+// then the lobby state when the query names the first player); whether the packet was one of
+// them (0x005C05F0; from Red Alert's Process_Global_Packet).
+bool __fastcall Answer_Query_005c05f0(UnknownGlobalPacket *packet, IPXAddressClass *address);
+// Looks for the scenario among the local maps (0x0066C5B0; Red Alert's Find_Local_Scenario) and asks
+// the host for it (0x0066AEF0); both hypotheses.
+bool __fastcall Find_Local_Scenario_0066c5b0(char *filename, int length, char *digest, bool official, bool unknown);
+bool __fastcall Unknown_0066aef0(char *filename, int unknown_1, bool unknown_2);
+// A joiner's start of the game: the scenario is found or fetched (NET_READY_TO_GO 0x13 to the host),
+// the IPX timing is set from the response time; otherwise TXT_UNABLE_PLAY_WAAUGH and a sign-off
+// (0x005BE3B0; from Red Alert's Net_Join_Dialog).
+bool __fastcall Start_Joined_Game_005be3b0();
+// Three join request values (0x00A71E9C, 0x00A71EA0, 0x00A71EA4) and 0x00737AF0's (meanings not recovered).
+extern int unknown_a71e9c;
+extern int unknown_a71ea0;
+extern int unknown_a71ea4;
+int Unknown_00737af0();
+// The version object (0x00A40C88; its two values go into a join request, 0x007131B0/0x007131C0).
+struct UnknownVersionObject {
+    unsigned long Unknown_007131b0();
+    unsigned long Unknown_007131c0();
+};
+extern UnknownVersionObject version_object_00a40c88;
+// Asks the host of a game to let the player join (NET_QUERY_JOIN); refused with a chat message and the
+// SystemError sound without a game, with no name, a reserved name or a closed game (0x005BFC40; Red
+// Alert's Request_To_Join).
+int __fastcall Request_To_Join_005bfc40(int game, bool unknown);
+// Whether a name is one of the seven fixed lobby entry names (0x005CD2F0).
+bool __fastcall Unknown_Is_Lobby_Name_005cd2f0(Wstring const &name);
+// Turns a joiner down (NET_REJECT_JOIN, REJECT_BY_OWNER; 0x005BC3E0).
+void __fastcall Reject_Join_005bc3e0(NodeNameType *node);
+// Unknown_005cbdb0 on the dialog 0xBC (0x005BC430).
+bool __fastcall Unknown_005bc430(int count, bool unknown_1, bool unknown_2);
+// Starts the IPX manager and resets the lobby (0x005BC460; Red Alert's Init_Network).
+bool Init_Network_005bc460();
+// Frees the lobby entries, clears the host's name and deletes the packet transport
+// (0x005BC4D0; Red Alert's Shutdown_Network).
+void Shutdown_Network_005bc4d0();
+// Stores a value (+0x67) on the session player with a name (0 is the local nick name;
+// the host's own name stores 1) and refreshes the lobby (0x005BCBC0).
+void __fastcall Set_Player_Value_005bcbc0(char const *name, int value);
+// Signs off (NET_SIGN_OFF) to the session players, the game's host and everyone, then
+// clears the slots, the session list and the host's name (0x005C00B0; Red Alert's Unjoin_Game).
+void __fastcall Unjoin_Game_005c00b0(int game);
+// Frees the fixed lobby entries (0x005C8950) and resets the slots (0x005C8A90).
+void Unknown_Free_Lobby_Entries_005c8950();
+void Unknown_Reset_Slots_005c8a90();
+// The join state of the network join dialog (0x00A71E94; 1 and 2 are joined or waiting,
+// Red Alert's JOIN_CONFIRMED and JOIN_WAITING, hypothesis).
+extern int unknown_join_state_a71e94;
+// The players in the network chat (0x00A3FA4C, session +0x27B4; Red Alert's Session.Chat).
+extern DynamicVectorClass<NodeNameType *> unknown_chat_a3fa4c;
+// The selected game of the join dialog's list (0x00A71E90; Red Alert's game_index, hypothesis).
+extern int unknown_game_index_a71e90;
+// Removes the games and chat players not heard from: a game after 300 ticks (refreshing the
+// game list, and leaving it when it is the selected one or above), a chat player after 360
+// ticks, with a NET_CHAT_REQUEST after 300 (0x005BC500; from Red Alert's Net_Join_Dialog).
+void __fastcall Process_Timeouts_005bc500();
+// Refills the join dialog's (0xBB) game list 0x549: TXT_LOBBY, then each game, keeping
+// the selection and the top row (0x005BC790).
+void __fastcall Refresh_Game_List_005bc790();
+// Changes the join dialog's state (0x005C01D0; arguments not recovered).
+void __fastcall Unknown_005c01d0(int unknown_1, int unknown_2, int unknown_3, int unknown_4);
+// The games the join dialog has heard of (0x00A3FA64, session +0x27CC; Red Alert's Session.Games).
+extern DynamicVectorClass<NodeNameType *> unknown_games_a3fa64;
+
 
 #endif

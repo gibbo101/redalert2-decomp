@@ -4,6 +4,8 @@
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ADD
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_OBJECT
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_INDEX
 #include "shared/movie_queue.hpp"
 #include "shared/movie.hpp"
 // @ref ?queued_movies_00af8fd8@@3V?$DynamicVectorClass@PAVMovieHandle@@@@A=00af8fd8

@@ -234,7 +234,7 @@ void __fastcall Unknown_0073FEE0(int arg1, bool arg2);  // 0x0073FEE0
 void __fastcall Unknown_00741750(WOL::User *user);      // 0x00741750 (a user left the channel)
 // Converts a narrow string into wide characters (0x006FA0C0; -1: to its end).
 void __fastcall Unknown_006FA0C0(wchar_t *buffer, char const *text, int length);
-extern int unknown_color_7a7360;        // 0x007A7360 (a chat colour)
+// unknown_color_7a7360: shared/unknown_globals.hpp.
 extern int unknown_color_7a736c;        // 0x007A736C (private action colour)
 extern int unknown_color_7a7370;        // 0x007A7370 (public action colour)
 extern int unknown_color_7a7364;        // 0x007A7364 (public message colour)
