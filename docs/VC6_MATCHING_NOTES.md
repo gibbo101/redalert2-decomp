@@ -626,3 +626,11 @@ verified on the target.
 - A helper the original keeps out of line stays out when written with an explicit if/else into a local, while the
   same logic through a small inline accessor gets auto-inlined (Read_Color 0x597xxx vs Player_Color_RGB).
 - Each checksum test written as clearing a `match` flag then `if (!match)` reproduces the original's branch layout.
+
+## rc_ptr operator-> (RcPtr192)
+
+- `rc_ptr<T>::operator->` carries an empty null test before the load (`if (Pointer == 0) {} return (T *)Pointer;`,
+  a release-empty debug check). It keeps a second-level chain's `this` in a register (`add eax,8; mov ecx,[eax+4]`
+  instead of a folded `[eax+0xC]`), keeps the dead `lea` of `(*cursor)->f()`, and charges inline budget, which is
+  why operator-> COMDAT copies exist. Get() keeps the plain body; code the original compiles without the test reads
+  through Get() (State ctor 0x730830). WDTSel unit: 17/19 drafts exact with it, 11/19 without.

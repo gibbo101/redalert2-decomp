@@ -4,13 +4,7 @@
 bool HouseClass::Is_Ally(TechnoClass const *techno) const
 {
     if (techno != 0) {
-        HouseClass *house = techno->Owning_House();
-        if (house != 0) {
-            if (house == this) {
-                return true;
-            }
-            return Is_Ally(house->ArrayIndex);
-        }
+        return Is_Ally(techno->Owning_House());
     }
     return false;
 }

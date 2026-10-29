@@ -776,6 +776,7 @@ public:
     virtual int Size_Of() const;                                      // slot 12 0x00453BF0
     virtual void unknown_slot216(int arg1);                           // slot 216 0x00449170
     int unknown_4532f0();               // 0x004532F0
+    bool unknown_44d900(BuildingTypeClass *upgrade, HouseClass *house);   // 0x0044D900 (as shared/building_class.hpp: the upgrade may power up this building)
     void unknown_450950();              // 0x00450950 (a firestorm wall building switches its state; HouseClass 0x004EE8F0/0x004EEA40)
     bool Unknown_00452EB0(TechnoClass *techno);     // 0x00452EB0 (whether techno may enter; InfantryClass slot 132)
     void Unknown_004536D0(InfantryClass *infantry);     // 0x004536D0 (an Assaulter enters; InfantryClass 0x005094B0)
@@ -800,7 +801,9 @@ public:
     bool unknown_5ad;                   // +0x5AD (as shared/building_class.hpp; slot 122 tests it)
     char unknown_5ae[0x5BD - 0x5AE];
     char unknown_5bd;                   // +0x5BD (as shared/building_class.hpp; HouseClass 0x004F3E00 tests 15)
-    char unknown_5be[0x5E0 - 0x5BE];    // size 0x5E0 (operator new in UnitClass 0x006FDFC0)
+    char unknown_5be[0x5C6 - 0x5BE];
+    char unknown_5c6;                   // +0x5C6 (as shared/building_class.hpp: the upgrades in unknown_4c0)
+    char unknown_5c7[0x5E0 - 0x5C7];    // size 0x5E0 (operator new in UnitClass 0x006FDFC0)
 };
 #else
 class BuildingClass;

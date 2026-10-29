@@ -272,7 +272,19 @@ public:
     bool unknown_func_4f5320(BuildingTypeClass *type, Cell const &cell);   // 0x004F5320 (the widened foundation touches a cell with this house's bit)
     void Just_Built(TechnoClass *techno);                  // 0x004E6F10 (TS name; the factory finished an object)
     void Attacked(TechnoClass *source);                    // 0x004E4F60 (TS name; an object of the house was attacked)
-    void unknown_func_4f3420();                            // 0x004F3420 (after an alliance changes; Make_Enemy)
+    void unknown_func_4f3420();                            // 0x004F3420 (rebuilds the threat map +0x56D0; after an alliance changes)
+    // The cell of this house's building of the type an upgrade powers up,
+    // the least upgraded one (or one without upgrades) that takes it; cell
+    // 0, 0 when there is none (0x004F0E30; BuildingClass 0x00440520).
+    Cell unknown_func_4f0e30(BuildingTypeClass *upgrade);
+    // Adds an object's influence to a grid over an area: within six cells of
+    // its cell, strength / ((distance - 1) * 0.1 + 1) (0x004F0FF0; 0x004F1190).
+    void unknown_func_4f0ff0(ObjectClass const *object, int strength, int *grid, Rect const &area);
+    // A computer house's money mode (+0x12C) in a skirmish or network game,
+    // by Available_Money against Rules AIAlternateProductionCreditCutoff
+    // (0x004F3720; BuildingClass 0x00440520).
+    void unknown_func_4f3720(int arg1);
+    void unknown_func_4e67a0(int index);                   // 0x004E67A0 (0x004E68D0 at the best enemy building by slot 90, each passing a 90% roll)
     // Whether the player controls the house: in the campaign a human or
     // player-controlled house, otherwise the player's own house (inline; YRpp
     // calls it ControlledByPlayer).
@@ -322,6 +334,9 @@ public:
     static void unknown_func_4ec5e0();                     // 0x004EC5E0
     static int __fastcall unknown_func_4eb550(int kind, int index);   // 0x004EB550 (a building type's +0xBA0)
     int unknown_func_4e63f0(int kind, int index, bool naval);   // 0x004E63F0
+    // RA's Abandon_Production: 0, or 3 when the house has no factory for the
+    // type (0x004E64F0; EventClass::Execute, BuildingClass).
+    int Abandon_Production(int kind, int index, bool naval);
     bool unknown_func_4e7070(TechnoClass *builder, BuildingClass *building);   // 0x004E7070
     void Write_INI(CCINIClass &ini);                       // 0x004EC230
     // Makes the houses listed in [Houses] (or one per house type when there
