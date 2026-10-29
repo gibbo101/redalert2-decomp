@@ -61,7 +61,17 @@ public:
     bool operator!=(rc_ptr<T> const &other) const { return Pointer != other.Pointer; }
 
     T *Get() const { return (T *)Pointer; }
-    T *operator->() const { return (T *)Pointer; }
+    // The original keeps a null test with an empty (release-build) body in front of
+    // the load: VC6 then charges the expansion (out-of-line copies 0x007302D0,
+    // 0x00730320, 0x00730330) and keeps the `this` of a second level unfolded
+    // (`add eax,0x10; mov ecx,[eax+4]` for TheCampaign->TheHistory->..., the
+    // dead `lea` of (*cursor)->... in 0x0072F180). A plain `return` folds both.
+    T *operator->() const
+    {
+        if (Pointer == 0) {
+        }
+        return (T *)Pointer;
+    }
 };
 
 #endif

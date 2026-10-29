@@ -37,6 +37,7 @@ public:
     ConflictCursor Find_Conflict(int index);                        // 0x00726730
     void Set_Player_Faction(int faction);                           // 0x007267C0
     void Load_History(INIClass &ini);                               // 0x00726930
+    int Player_Faction() const { return PlayerFaction; }
 
     rc_ptr<CampaignProperties> Properties;                          // +0x08
     rc_ptr<History> TheHistory;                                     // +0x10

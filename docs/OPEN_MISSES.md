@@ -386,3 +386,12 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   (TheCampaign->TheHistory->Get_State(): original `add eax,8; mov ecx,[eax+4]`, ours folds to [eax+0xC]); 25 operator->
   spellings tried. 0x72DEA0 96.15, 0x72F180/0x72F200 92.54 (dead lea), 0x72F6E0 82.14, 0x72FCD0 76.19, 0x72FF30 76.36,
   0x72F540 73.68, 0x72F430 58.50, 0x72E650 41.18; ctor 0x72D560, dtor 0x72D990 and ~5.5 KB wait on the chain.
+- ModemHst.cpp after Modem190 (build/class-work/Modem190/w, NOTES): Dialog_Proc 0x598FA0 88.36 (case bodies in the
+  original's jump-table order; /Ob2 cap is size; WM_DESTROY delete preview must call ??_GUnknownPreview 0x59CB80; land
+  with the exact chat-chain rewrites w/sc880.cpp, w/scfa0.cpp), Send_Options 0x59BC90 93.30, guest Init_Dialog
+  0x596540 85.97 (w/gi1.cpp, this/GetDlgItem ebx/ebp), guest Start_Game 0x5986F0 98.50. 0x59B090/0x59B2C0 now
+  unblocked by the Lobby191 rename (f0fafc38).
+- Lobby after Lobby191 (build/class-work/Lobby191/misses, NOTES): Make_Random_Map 0x5C84E0 99.18 (mov edi,eax after push
+  0x1bc; inventory body 120, real 379), Send_Join_Queries 98.94, Host_Dialog_Proc 95.68 (tool-tip block), 0x5C67C0 91.87
+  and 0x5C71F0 87.67 (HWND through eax; the rename did not move them). Undrafted: 0x5CB8D0, 0x5CA6C0, 0x5CBF20,
+  0x5C69E0, 0x5C3FF0, 0x5BD070, 0x5C08A0, 0x5C7EF0.

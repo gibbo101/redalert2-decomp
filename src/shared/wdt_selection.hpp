@@ -37,7 +37,7 @@ public:
     void Remove_Territory_Anims_2();                                // 0x0072F200 (same body)
     void Play_Map_Enter();                                          // 0x0072F280
     void Check_Escape();                                            // 0x0072FC80
-    void Set_Description(WideString const &text, bool unknown2);    // 0x0072FCD0
+    void Set_Description(WideString const &text, int unknown2);     // 0x0072FCD0 (unknown2: Animate_Days passes the heading length after the first day)
     void Set_Tooltip(WideString const &text);                       // 0x0072FDA0
     void Play_Sound(Wstring const &name);                           // 0x0072FE90
     void Show_Campaign();                                           // 0x0072FF30
@@ -50,6 +50,10 @@ public:
     int Get_Result(int index, bool &mega);                          // 0x0072F6E0 (0 won, 1 lost, 2 neither)
     void Start_Theme();                                             // 0x00730160
     void Show_Result(int faction);                                  // 0x0072FA00
+    void Show_Progress(int faction);                                // 0x0072F5A0 (the days since the last visit; name hypothesis)
+    void Show_State(rc_ptr<State> const &state, bool unknown2, bool won);   // 0x0072E780 (name hypothesis)
+    bool Animate_Days(int from, int to);                            // 0x0072F7A0 (name hypothesis)
+    bool Show_Days(int from, int to);                               // 0x0072FB60 (voice for the change, then Animate_Days; name hypothesis)
     static void __fastcall Show(rc_ptr<Campaign> const &campaign, int faction);   // 0x0072FF80
     void Clear_Screen();                                            // 0x00730230 (inline in the destructor)
 

@@ -820,7 +820,7 @@
       },
       {
         "path": "src/shared/reference_counted.hpp",
-        "sha256": "2e8d874076e1d3153e4f3563d3c7b808eefe89147c3ec3794dc488ef09cfb702"
+        "sha256": "b147b72f23ac7b8d2c3f21d04725846a301454b4ad318e2f58783a81bf27ccb7"
       },
       {
         "path": "src/shared/vector_cursor.hpp",
@@ -828,7 +828,7 @@
       },
       {
         "path": "src/shared/wdt_campaign.hpp",
-        "sha256": "4955a28a37a4519ad02f5ccc86ec3b37da17325c90f2709f850f6df70f05079b"
+        "sha256": "2f983669d815fb53689e21eaaad7ce2c50fca94b56c994f91f24ef9a3f8effdc"
       },
       {
         "path": "src/shared/wdt_game_options.hpp",
@@ -1800,7 +1800,7 @@
       },
       {
         "path": "src/shared/wdt_selection.hpp",
-        "sha256": "fb1480b0414cba5d98d75920a92a967cd2a36b51f5c61f0e5b40a719a8f2c473"
+        "sha256": "60c382c33f6baf8fa37777a5e8e458f50f1e7a0cf22d8bbffc7bc0b98557b933"
       }
     ],
     "source_quality_checkpoint": {
@@ -4786,7 +4786,9 @@
     "population-2972",
     "population-2973",
     "population-2974",
-    "population-2975"
+    "population-2975",
+    "population-2976",
+    "population-2977"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -6029,14 +6031,14 @@
     ["population-1622", 1],
     ["population-02", 1],
     ["population-2911", 15],
-    ["population-2973", 13],
+    ["population-2977", 13],
     ["population-01", 2],
     ["population-02", 1],
     ["population-01", 2],
     ["population-09", 6],
     ["population-22", 1],
     ["population-16", 1],
-    ["population-1679", 14],
+    ["population-2976", 14],
     ["population-2912", 15],
     ["population-1681", 11],
     ["population-18", 2],
@@ -7231,7 +7233,7 @@
     ["population-2504", 14],
     ["population-2661", 15],
     ["population-1677", 4],
-    ["population-1679", 5],
+    ["population-2976", 5],
     ["population-2911", 3],
     ["population-2912", 5],
     ["population-2278", 4],
@@ -7999,9 +8001,10 @@
     ["population-2974", 3],
     ["population-2975", 3],
     ["population-2972", 3],
-    ["population-2973", 11],
+    ["population-2977", 11],
     ["population-2974", 5],
-    ["population-2975", 1]
+    ["population-2975", 1],
+    ["population-2977", 11]
   ],
   "shards": {
     "population-01": "6a3181828790c7dae8cc14bd5437b3a2653e96d2f77196597258421bfbac633c",
@@ -8767,7 +8770,7 @@
     "population-1676": "fbf1bab595e6f9b4d39fc2fe918591134b38d82538025bf8f7467fd11f169cc2",
     "population-1677": "b4fe651a401557937198baba27fb3d1d0200429cf6c6115c72ddb9c94956be10",
     "population-1678": "ee639d31034f03f2f9077bdbca565f12ec6d1b8a3046acc4daacb5d7e86ef0dd",
-    "population-1679": "b34abcd88f278b319e87dbed1e706e00e581dad64138581f115fd2e277251a0c",
+    "population-1679": "152c2a39ef8d3fa71b00451c19254576f549838f8c91ba471169578db7056100",
     "population-168": "b9421733788f7e7698f3af64d87666960f34581f3eaf7575ac54ba820426bf2d",
     "population-1680": "5bf074d529eac0c0ef2aaeafc41ce92309ad541e057849a16d851c9b89e490ac",
     "population-1681": "66e5e37babe564639a3b90d01f097438dd29190f70ec0bd3e61338202998c47c",
@@ -10204,9 +10207,11 @@
     "population-2970": "af1000b395ee397d93b395c87cf0d259bba2d6409f472060463df732188dddd9",
     "population-2971": "be484f555608bc89feb56e92b73553fab5be04c7bdb110996e2a4ef6b8be4075",
     "population-2972": "4894ab5503dd0e24e9f8761834430bb3e058cb4d0a1cb535fc49bea0e5f0d6ff",
-    "population-2973": "140e19f11f55a6f4fea4a23a0a856fe1312e26b48a0eb378a0a79b41d68dbe0a",
+    "population-2973": "3a6dc491a1a671646e1ced3c176a79eabeee50a178f748f931df72d48ed59268",
     "population-2974": "cc2fee6768745b32b66642185d69c4ba679126ba25f4856981b8eb1c383f14d4",
     "population-2975": "8d4e5710b8e4209a52a1ae383e0d1660bdd301630451223549bbd2944b39de84",
+    "population-2976": "b0e0066f353b56ffb192979055c18c3eca15fe58ca0d06d5eba232b8d145d4df",
+    "population-2977": "2a81c68cf67e41bf398f95518b5c05581a06734257cd3d202d9a921afc33fc3b",
     "population-298": "858fa7cfc0235386b2dcecec182ae92938bea9b079759e267bce95ef187d2dc7",
     "population-299": "a1978b26dbd53a2d754f75495075ce34c5089b9f48b4444d89110e4ce40ad91c",
     "population-30": "89f9c976626fb8ea5d1b9da0ea99d4e7276325b0593f6568abe3ec61da85e381",
