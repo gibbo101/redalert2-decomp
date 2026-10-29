@@ -22,10 +22,11 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 Running Mac lanes: Study152 (Opus, study, ~400K output tokens) the VC6 /Ob2 inline-budget rule behind five open
 misses (BuildingLight ctor, Campaign and WDT Map ctors, MultiplayerGameMode 0x5B8490, MSPrintAnim::Draw);
 unit-sized (Opus): Bullet151 the BulletClass unit (0x462110, 0x462C50, then AI 0x45F710);
-Unit149 UnitClass group 0x7025A0/0x703040/0x703BD0/0x7072D0; Unit147 UnitClass group 0x6FCA30/0x6FE610/0x700E70. Inf148 (InfantryClass) parked, zero bytes.
+Unit147 UnitClass group 0x6FCA30/0x6FE610/0x700E70. Inf148 (InfantryClass) parked, zero bytes.
 Landed this evening: Modem141, Base142 (Base unit complete), Ref143 (Release 0x639720, CampaignProperties and
 Territory ctors), Score144 (CampaignScoreClass ctor 0x465BF0), VoxAnim145 (VoxelAnimClass::AI 0x70D380), Air146
-(AircraftClass slot 147 0x415210), BLight150 (~BuildingLightClass 0x4332F0). Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
+(AircraftClass slot 147 0x415210), BLight150 (~BuildingLightClass 0x4332F0), Unit149
+(MapClass 0x5502E0 Point2D rename; UnitClass slot 87 0x7072D0). Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
 0x734CD0/0x735110. WDT136 (Campaign ctor 0x725F40) and Sink139 (OnLadderList 0x75D330) are misses in OPEN_MISSES.md.
 Landed 2026-10-28 evening: Map129, Obj126, Para131, Iso128, MSAnim133, Score132, IPX135 (Send_To), Base134
 (BaseClass ctor/Load/NoInit ctor). Near misses (OPEN_MISSES.md) go to the Windows lead; queue and drafts sent in

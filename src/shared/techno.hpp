@@ -204,6 +204,7 @@ class UnknownTechno208 : public AbstractClass {
 public:
     void unknown_6e2500();              // 0x006E2500 (UnitClass slot 281, when +0x28 is set)
     void Unknown_006E24C0(AbstractClass *target);   // 0x006E24C0 (TechnoClass::Detach)
+    void Unknown_006E27B0(TechnoClass *target);     // 0x006E27B0 (a Temporal warhead hits target; BulletClass 0x00462110)
     int unknown_24;
     int unknown_28;                     // +0x28 (slot 113 tests it)
 };
@@ -809,6 +810,7 @@ class UnknownList8322E0 {
 public:
     void Unknown_00436680(TechnoClass *techno);     // 0x00436680 (TechnoClass slot 53: joins)
     void Unknown_004366D0(TechnoClass *techno);     // 0x004366D0
+    void Add_Bomb(TechnoClass *owner, ObjectClass *target);   // 0x00436470 (BombListClass::Add_Bomb; BulletClass 0x00462110 plants an IvanBomb)
 };
 extern UnknownList8322E0 unknown_list_8322e0;
 

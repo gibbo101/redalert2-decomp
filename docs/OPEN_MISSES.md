@@ -177,3 +177,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   slot 67 0x433380 54.51 fully decoded (inline pattern of operator- 0x4348F0 / 0x41B630 per site in NOTES, and
   an aligned frame from the `double angle` local); AI 0x433970 not started. COMDAT CoordStruct::operator-
   0x4348F0 lands with whichever of slot 67/AI first calls it out of line.
+- UnitClass group 2 (Unit149 w/, NOTES): slot 28 What_Action 0x703BD0 56.84 (block layout: the DeploysInto==0
+  block sits after the 4F52B0/action==7 body; needs shared declarations for 0x40DBD0 and 0x614B50, now local to
+  Infantry 0x505390), slot 182 0x704730 59.71 (this/facing edi/ebp swap, frame 0x38 vs 0x34). Not drafted:
+  slot 131 Mission_Harvest 0x7025A0 (seed s7025a0.cpp), slot 101 0x703040, slot 137 0x701580, 0x707F60.
+  Slot 87's ad0488/ad04c0/ad0588 externs and the 0x79B628/0x79B630 facing constants still want a shared header.

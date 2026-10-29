@@ -283,7 +283,7 @@ inline InfantryClass *As_Infantry(FootClass *foot)
 // Foot6 additions (InfantryClass slot 93, 0x00500AA0).
 // Damage around a coordinate (0x0047E2C0, __fastcall; hypothesis; as in
 // build/class-work/Effects/shared/anim.hpp).
-void __fastcall Unknown_0047E2C0(CoordStruct const &coord, int damage, TechnoClass *source, WarheadTypeClass *warhead, bool arg5);
+int __fastcall Unknown_0047E2C0(CoordStruct const &coord, int damage, TechnoClass *source, WarheadTypeClass *warhead, bool arg5);   // returns 2 when the warhead was nullified (BulletClass 0x00462110), 0 when nothing was hit
 // Coordinate offsets of the eight facings (0x00851AC0; X and Y leptons).
 struct UnknownFacingOffset {
     int X;

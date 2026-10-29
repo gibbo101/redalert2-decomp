@@ -81,6 +81,7 @@ public:
     void Unknown_006064C0();                                    // 0x006064C0 (the destructor's release steps)
     CoordStruct Unknown_00607C30();                             // 0x00607C30
     void Unknown_00606780();                                    // 0x00606780
+    void Unknown_00607980(FootClass *target);                  // 0x00607980 (a Parasite warhead hits target, or 0; BulletClass 0x00462110)
     void Unknown_00607440();                                    // 0x00607440 (FootClass slot 82 after restarting the +0x2C timer)
 
     FootClass *Owner;                               // +0x24 (the parasite unit; its +0x588 holds this)

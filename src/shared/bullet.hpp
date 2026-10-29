@@ -68,9 +68,20 @@ public:
     int unknown_24;                             // +0x24
 };
 
+// The horizontal part of a velocity: built first (Y evaluated before X) and
+// copied whole into a BulletVelocity's X and Y (BulletClass 0x00462110 and
+// 0x00463C50; hypothesis: a two-dimensional vector type).
+struct BulletVelocityXY {
+    BulletVelocityXY(double x, double y) : X(x), Y(y) {}
+    double X;
+    double Y;
+};
+
 // A velocity vector of three doubles.
 struct BulletVelocity {
     BulletVelocity &operator+=(BulletVelocity const &other); // 0x004642A0
+    // The X and Y members as one horizontal vector.
+    BulletVelocityXY &XY() { return *(BulletVelocityXY *)this; }
 
     double X;       // +0x00
     double Y;       // +0x08
@@ -188,6 +199,9 @@ public:
     // around it.
     void unknown_func_461de0(bool forced);                              // 0x00461DE0
     void unknown_func_462110(CoordStruct const &coord);                 // 0x00462110
+    // Fires the type's ShrapnelWeapon at objects in the cells around the
+    // bullet, then at random nearby cells for the rest of the count.
+    void unknown_func_462c50();                                         // 0x00462C50
     void Set_Weapon_Type(WeaponTypeClass *weapon);                      // 0x00463BA0
     WeaponTypeClass *Get_Weapon_Type();                                 // 0x00463BB0
     bool unknown_func_463970();                                         // 0x00463970
