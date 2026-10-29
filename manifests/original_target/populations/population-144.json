@@ -4,8 +4,8 @@
     "id": "population-144",
     "inventory_sha256": "22cf9c1cb651477dddd0d509edc376f7d7c65888d902892c9bf0d785ab3b8e04",
     "gaps_sha256": "7e705cc63db92c44cb0a6b50a9491952fe11a2485ff85c7b5b48e84893dd2685",
-    "historical_population_sha256": "004ded0e72a1064992af0690019767768fc79ada49aa71d1a37e20f72db212be",
-    "historical_acceptance_sha256": "79004f934a5da17456c888acf17dbec03d22ad95c3e6e8ea559d825d1b88a2d7"
+    "historical_population_sha256": "3533e69910de07b699af5f278d5cdb4d6826e74a1d6a991e13d5f87ef4043957",
+    "historical_acceptance_sha256": "4c9599426e467432b2b83da99649e2789f5b0e3576d7ecf59fa610d9bf73a435"
   },
   "references": {
     "_unknown_empty_rect": 10950776,
@@ -189,7 +189,7 @@
     "?unknown_flag_b2af68@@3_NA": 11710312,
     "?Process_Mouse_Unthreaded@@YAXXZ": 7804864,
     "?Start_Mouse_Thread@@YAXXZ": 7804896,
-    "?Kill_Mouse_Thread@@YAXXZ": 7805344,
+    "?Kill_Mouse_Thread@@YIXXZ": 7805344,
     "?Get_Mouse_State@WWMouseClass@@UBEHXZ": 7806176,
     "?Set_Cursor@WWMouseClass@@UAEXABUPoint2D@@PBUShapeFileStruct@@H@Z": 7806192,
     "?Has_Cursor@WWMouseClass@@QBE_NXZ": 7806784,

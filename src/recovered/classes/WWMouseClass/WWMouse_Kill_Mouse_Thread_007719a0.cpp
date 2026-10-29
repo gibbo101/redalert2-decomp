@@ -1,4 +1,4 @@
-// void Kill_Mouse_Thread() (0x007719A0)
+// void __fastcall Kill_Mouse_Thread() (0x007719A0)
 // Stops the mouse thread, waits for it and closes the thread and mutex
 // handles. Name is a hypothesis (tail-called from 0x00691304).
 #include "shared/wwmouse.hpp"
@@ -7,7 +7,7 @@
 // @ref ?MouseThread@@3PAXA=00b2af4c
 // @ref ?MouseMutex@@3PAXA=00b2af60
 
-void Kill_Mouse_Thread()
+void __fastcall Kill_Mouse_Thread()
 {
     if (MouseThreadActive) {
         MouseThreadInfo.Quit = 1;

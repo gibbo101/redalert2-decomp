@@ -4,8 +4,8 @@
     "id": "population-2997",
     "inventory_sha256": "7a8ca258f1220ced3c475e882b4474540b93e82eeca430e509b0e61bcf8074c9",
     "gaps_sha256": "035b2e7ead20516934fec27025a9806f490fe27fd73be33002dd501a7fc813ef",
-    "historical_population_sha256": "3c61ce76109bbc22d20c772fa103f321364c84113bd0b4b77df7026a86e1353c",
-    "historical_acceptance_sha256": "16ed8d9293f068d42e4603f7dc075898944d4be12ea751cab8c4b3486ab4658e"
+    "historical_population_sha256": "b34e226233075423fc4a408c764985804d68c605b569cba506692721dac88f84",
+    "historical_acceptance_sha256": "4a7de4915748d8e99dac07d9b0514a8723bca2f7d47768dfffb29b8f1539ef37"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3505,7 +3505,7 @@
     "__imp__SetThreadPriority@8": 7971312,
     "__imp__FormatMessageA@28": 7971320,
     "__imp__Sleep@4": 7971300,
-    "?Kill_Mouse_Thread@@YAXXZ": 7805344,
+    "?Kill_Mouse_Thread@@YIXXZ": 7805344,
     "?Calc_Confining_Rect@WWMouseClass@@QAEXXZ": 7806032,
     "__imp__ShowCursor@4": 7971788,
     "__imp__GetClientRect@8": 7972024,

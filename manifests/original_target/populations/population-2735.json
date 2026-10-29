@@ -4,8 +4,8 @@
     "id": "population-2735",
     "inventory_sha256": "fe1c27ae400d92108ee3be67a631a35ae7d9bba7345d6580941fede0b3c09d03",
     "gaps_sha256": "a009d1c72f95e86035c44117d25717586d78703c6f7eb2c1c0cb6c0db037b830",
-    "historical_population_sha256": "ecefc5108c4a3fa7f85cf3dc585581320236bdd905c18a60c80be04820dfd586",
-    "historical_acceptance_sha256": "a39379b608a11e94ad3bd30261dfdefff038f26ac9ca9e2d6cfa9a3915b72655"
+    "historical_population_sha256": "d4e393ea8ccef81832154a7d8939dfcf5850c941243fe05d51e3860a9b4c8d6e",
+    "historical_acceptance_sha256": "8fcf061c9f244f74553d8eacaefdb5222e3aeeac22f3a8bdeed863175a9be67d"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8712,7 +8712,7 @@
     "?MouseThreadID@@3KA": 11710288,
     "?Mouse_Thread@@YGKPAX@Z": 7805184,
     "?MouseThread@@3PAXA": 11710284,
-    "?Kill_Mouse_Thread@@YAXXZ": 7805344,
+    "?Kill_Mouse_Thread@@YIXXZ": 7805344,
     "?Calc_Confining_Rect@WWMouseClass@@QAEXXZ": 7806032,
     "?Validate_Backgrounds@WWMouseClass@@QAE_NXZ": 7806800,
     "?Get_Cursor_Rect@WWMouseClass@@QAE?AVRect@@XZ": 7807344,

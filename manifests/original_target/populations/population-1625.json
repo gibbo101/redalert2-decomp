@@ -4,8 +4,8 @@
     "id": "population-1625",
     "inventory_sha256": "54bfa4e297fdfbd690aa6d2ee0346e8601f9f159e99bffbdb2787483db7d5a3a",
     "gaps_sha256": "1ca407a47623942716371daecb784ef12280e07e832029fc1e9c45eeed324d64",
-    "historical_population_sha256": "adc52d5857dfc1d3fb493ce1ff9a02775ea8e4c146148407b1d92445e70c46dd",
-    "historical_acceptance_sha256": "8e08d832530bdf160391a7c5195484d10d5726965c8b88bcb808f775486931fe"
+    "historical_population_sha256": "9cd56bce4e3d856894e1e0a3e739379fd8e455e94315179738d99ac88ebaa47b",
+    "historical_acceptance_sha256": "9e8645ad05315084e5a9264ec37fe87c86e4492a7f52d6abc2becab63781c351"
   },
   "references": {
     "_unknown_empty_rect": 10950712,
@@ -1907,7 +1907,7 @@
     "__imp__SetThreadPriority@8": 7971312,
     "__imp__FormatMessageA@28": 7971320,
     "__imp__Sleep@4": 7971300,
-    "?Kill_Mouse_Thread@@YAXXZ": 7805344,
+    "?Kill_Mouse_Thread@@YIXXZ": 7805344,
     "??0WWMouseClass@@QAE@PAVSurface@@PAUHWND__@@@Z": 7805472,
     "??_7WWMouseClass@@6B@": 8059884,
     "?Calc_Confining_Rect@WWMouseClass@@QAEXXZ": 7806032,

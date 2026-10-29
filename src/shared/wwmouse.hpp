@@ -112,7 +112,7 @@ extern bool unknown_flag_b2af68;                // 0x00B2AF68 position pending w
 void Process_Mouse_Unthreaded();                // 0x007717C0
 void Start_Mouse_Thread();                      // 0x007717E0
 DWORD WINAPI Mouse_Thread(LPVOID parameter);    // 0x00771900
-void Kill_Mouse_Thread();                       // 0x007719A0
+void __fastcall Kill_Mouse_Thread();            // 0x007719A0 (fastcall: Prog_End reaches it by a tail jump after restoring registers)
 void Block_Mouse();                             // 0x00773630
 void Unblock_Mouse();                           // 0x00773660
 

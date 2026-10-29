@@ -4,8 +4,8 @@
     "id": "population-2799",
     "inventory_sha256": "0be23d5d176d2c064990ae70204a21492d94b1dc1d94b44d142cb8b4ca48da95",
     "gaps_sha256": "57f89c1a6d8b0ee398f3ffbf21c895ee319b3167c2c548e08e6b325fcb6d542b",
-    "historical_population_sha256": "0f8695b17bd7d1d13ada343aaa77d0035dd8627edd57e6fa08a48938dc657b46",
-    "historical_acceptance_sha256": "8f31d2f3757e588098f7820f56b19e6d9e43f550bf64b0d578d9bd26f601c29e"
+    "historical_population_sha256": "2900b6347337ce140720d22323e11478a35db84c0fef801bfc1ec701294e3151",
+    "historical_acceptance_sha256": "885f263e3a84ce8f7b28d90a593f80e823d2fb6d0bd1932fa72d7adfaeac804a"
   },
   "references": {
     "_unknown_empty_rect": 10751560,
@@ -3469,7 +3469,7 @@
     "?MouseThreadID@@3KA": 11710288,
     "?Mouse_Thread@@YGKPAX@Z": 7805184,
     "?MouseThread@@3PAXA": 11710284,
-    "?Kill_Mouse_Thread@@YAXXZ": 7805344,
+    "?Kill_Mouse_Thread@@YIXXZ": 7805344,
     "?Calc_Confining_Rect@WWMouseClass@@QAEXXZ": 7806032,
     "?Set_Cursor@WWMouseClass@@UAEXABUPoint2D@@PBUShapeFileStruct@@H@Z": 7806192,
     "?Validate_Backgrounds@WWMouseClass@@QAE_NXZ": 7806800,
