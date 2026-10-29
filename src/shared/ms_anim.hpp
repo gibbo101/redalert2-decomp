@@ -79,6 +79,9 @@ public:
     void Set_Frame(int frame);                                  // 0x005AC760
     void Set_Start_Frame(int frame);                            // 0x005AC810
     void Set_End_Frame(int frame);                              // 0x005AC830
+    // The current frame's rectangle in shape coordinates (inline: the slot 4s
+    // expand it; name hypothesis).
+    Rect Frame_Rect() { return Shape->Get_Frame_Rect(Frame); }
 
     ShapeFileStruct *Shape;     // +0x1C
     ConvertClass *Drawer;       // +0x20
