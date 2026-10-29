@@ -232,3 +232,12 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   the shared local inside each branch from different registers; ours merges the store after the join). Both
   Windows near-miss work. Rules: an if/else on a file-level inline predicate keeps a flags ternary from being
   if-converted (slot 67); a by-value inline accessor gives one hoisted Coord copy per use (slot 86).
+- Type-class readers (Types161 dr/, NOTES): WarheadTypeClass::Read_INI 0x7204E0 99.80 (Verses loop: the shared
+  fstp [ebx] sits after the two strtok pushes in the original), TechnoTypeClass::Load 0x6DE260 99.64 (palette at
+  point of use: shape 100, cached zero in ebx vs ebp), UnitTypeClass::Read_INI 0x70AB40 50.00 (shape 93.4, register
+  assignment of this/ini/ID/art section differs throughout). Windows near-miss work.
+- AnimClass unit (Anim162, zero bytes; NOTES, drafts/, overlays hv/ hy/): ctor 0x420110 95.68 (531/533 insns, frame
+  right; Center_Coord inline in the ctor; 0x436DC0 is `void (CoordStruct const &, double, double, double,
+  Vector3 const &, double)`; a free operator+ gives 98.40 but breaks accepted 0x420D90 at 77.67), landing spot
+  0x4237B0 73.22 (stack slots, x/y in edi/ebx). Not started: AI 0x421710, draw 0x420E50, 0x423120 (codex1 drafts
+  72.36/81.82/84.50 need porting). 0x42007B, 0x420A8E, 0x42151B are inventory fragments inside accepted regions.
