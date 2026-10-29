@@ -395,3 +395,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x1bc; inventory body 120, real 379), Send_Join_Queries 98.94, Host_Dialog_Proc 95.68 (tool-tip block), 0x5C67C0 91.87
   and 0x5C71F0 87.67 (HWND through eax; the rename did not move them). Undrafted: 0x5CB8D0, 0x5CA6C0, 0x5CBF20,
   0x5C69E0, 0x5C3FF0, 0x5BD070, 0x5C08A0, 0x5C7EF0.
+- House.CPP after House193 (build/class-work/House193/w, NOTES): 0x4F2CC0 power recount 94.21 (was_low stack slot),
+  0x4F3910 super-weapon AI 79.71 (original frame 4 bytes larger: two inlined Cell locals in separate slots).
+  Begin_Production 0x4E5E30 analysed (e5e30.dis). 0x4F1E50/0x4F1FF0/0x4F2190 need VectorClass ctor 0x4F8900 taken over;
+  Flag_Attach 0x4E76A0 needs a retype rename. True extents: 0x4EECB0 2276 B, 0x4F1190 3264 B.

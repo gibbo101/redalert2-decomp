@@ -13,7 +13,9 @@
 template <class T, class V>
 class VectorCursor {
 public:
-    VectorCursor(V &vector) : Vector(&vector), Index(0) {}
+    // The index argument shows where the constructor goes out of line: the copies
+    // 0x00730340/0x00730370 (WDTSel.cpp) store it and the callers push 0.
+    VectorCursor(V &vector, unsigned index = 0) : Vector(&vector), Index(index) {}
     virtual ~VectorCursor() {}
     virtual bool Valid() const { return Index < (unsigned)Vector->Count(); }
     virtual VectorCursor<T, V> &Next()

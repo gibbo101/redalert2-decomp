@@ -39,7 +39,7 @@ public:
     int Territory_At(Point2D const &point) const;                   // 0x0072A660 (-1 for none)
     void Set_Unknown_74(MSEngine *engine, bool value);              // 0x0072A6D0
     void Set_Unknown_68(MSEngine *engine, bool value);              // 0x0072A720
-    int Is_Inside(Point2D const &point) const;                      // 0x0072A770 (inside the +0x54 rectangle)
+    bool Is_Inside(Point2D const &point) const;                     // 0x0072A770 (inside the +0x54 rectangle)
     // The territory of that index (inline; out-of-line copy 0x007302B0 in WDTSel.cpp).
     rc_ptr<Territory> Get_Territory(int index) { return Find_Territory(Territories, index); }
 

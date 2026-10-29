@@ -55,6 +55,13 @@ public:
     bool Animate_Days(int from, int to);                            // 0x0072F7A0 (name hypothesis)
     bool Show_Days(int from, int to);                               // 0x0072FB60 (voice for the change, then Animate_Days; name hypothesis)
     static void __fastcall Show(rc_ptr<Campaign> const &campaign, int faction);   // 0x0072FF80
+    // Runs the screen for the player's next conflict: true when a territory was chosen; its
+    // battle settings go to the session (0x0072FFC0; name hypothesis).
+    static bool __fastcall Choose_Conflict(rc_ptr<Campaign> const &campaign, int faction);
+    rc_ptr<Territory> Choose_Territory();                           // 0x0072E050 (the mouse loop; empty when canceled; name hypothesis)
+    void Click(Point2D const &point, bool &selected);              // 0x0072E430 (a left button press; name hypothesis)
+    // 2 over the map's +0x54 rectangle (the Back button), else 1 (inline in 0x0072E050 and 0x0072E430).
+    int Region(Point2D const &point) { return TheMap->Is_Inside(point) ? 2 : 1; }
     void Clear_Screen();                                            // 0x00730230 (inline in the destructor)
 
     rc_ptr<Campaign> TheCampaign;                                   // +0x048
@@ -65,8 +72,7 @@ public:
     int MegaWinningThreshold;                                       // +0x43C
     int MegaLosingThreshold;                                        // +0x440
     bool Escaped;                                                   // +0x444 (Escape pressed)
-    int unknown_448;                                                // +0x448
-    int unknown_44c;                                                // +0x44C
+    Point2D LastMouse;                                              // +0x448 (the mouse position Choose_Territory last saw)
     int unknown_450;                                                // +0x450 (the last conflict)
     int unknown_454;                                                // +0x454
     rc_ptr<Map> TheMap;                                             // +0x458

@@ -15,7 +15,7 @@ public:
     char unknown_0c[0x0E - 0x0C];
     unsigned char UnitCount;                        // +0x0E (WDT:UnitCount)
     unsigned char TechLevel;                        // +0x0F (WDT:TechLevel)
-    char unknown_10[0x12 - 0x10];
+    unsigned short unknown_10;                      // +0x10 (the session's +0x24, unknown_session_a3d2bc)
     unsigned char unknown_12;                       // +0x12 (MapSizeGameOption)
     unsigned char unknown_13;                       // +0x13 (MapSizeGameOption)
     unsigned char PlayerCount;                      // +0x14 (4: WDT:FourPlayerOnly)
