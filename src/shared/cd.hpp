@@ -49,6 +49,8 @@ extern MixFileClass<CCFileClass> *ThemeMix;    // 0x00831448 THEME.MIX
 extern MixFileClass<CCFileClass> *MultiMix;    // 0x00837498 MULTI.MIX
 extern MixFileClass<CCFileClass> *MapsMix;     // 0x008374F4 MAPS%02d.MIX
 extern MixFileClass<CCFileClass> *MainMix;     // 0x008374DC MAIN.MIX
+extern MixFileClass<CCFileClass> *ConquerMix;  // 0x008374E0 CONQUER.MIX
+extern MixFileClass<CCFileClass> *CameoMix;    // 0x008374E4 CAMEO.MIX
 // The side's archives Unknown_0051a330 releases and opens: one released only (0x008374F8),
 // SIDEC%02d.MIX (0x00837500) and SIDENC%02d.MIX (0x00837504).
 // The archives Init_Bootstrap_Mixfiles opens: RA2.MIX (0x008374B8), CACHE.MIX (0x008374E8)
@@ -62,6 +64,10 @@ extern MixFileClass<CCFileClass> *unknown_side_nc_mix_837504;
 extern MixFileClass<CCFileClass> *unknown_mix_8374f0;   // 0x008374F0 (released by 0x0051A270, reopened by 0x0051A2B0)
 // The expansion mixfiles Init_Expansion_Files opens (0x00837450).
 extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_expansion_mixes_837450;
+// The further MAPS*.MIX and MOVIES*.MIX Init_Secondary_Mixfiles finds on a local install
+// (0x00837468 and 0x008374A0; the first of each is MapsMix and MoviesMix).
+extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_maps_mixes_837468;
+extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_movies_mixes_8374a0;
 extern PKey FastKey;                           // 0x00839010 key the mixfiles are opened with
 
 // Checks the volume of the game disk (its debug strings name it

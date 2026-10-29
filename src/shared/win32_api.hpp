@@ -207,6 +207,18 @@ struct SYSTEMTIME {
     WORD wSecond;
     WORD wMilliseconds;
 };
+// Memory status (KERNEL32).
+struct MEMORYSTATUS {
+    DWORD dwLength;
+    DWORD dwMemoryLoad;
+    DWORD dwTotalPhys;
+    DWORD dwAvailPhys;
+    DWORD dwTotalPageFile;
+    DWORD dwAvailPageFile;
+    DWORD dwTotalVirtual;
+    DWORD dwAvailVirtual;
+};
+WIN32_IMPORT void WINAPI GlobalMemoryStatus(MEMORYSTATUS *status);
 WIN32_IMPORT BOOL WINAPI FileTimeToSystemTime(FILETIME const *file_time, SYSTEMTIME *system_time);
 WIN32_IMPORT void WINAPI GetSystemTime(SYSTEMTIME *system_time);
 WIN32_IMPORT DWORD WINAPI GetTickCount();

@@ -51,6 +51,8 @@ public:
     void *Sample;           // +0x2C the playing audio stream (0 when none)
 };
 
+// Set before the theme scan (0x00A40C18; Red Alert's ScoresPresent).
+extern char unknown_sound_enabled_a40c18;
 extern ThemeClass Theme;    // 0x00A35D78
 
 #endif

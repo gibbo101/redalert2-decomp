@@ -36,6 +36,10 @@ public:
     static void __fastcall Refresh_Search_Drives();              // 0x0046FE20
     static int __fastcall Is_Disk_Inserted(int drive);           // 0x0046FDB0
     static bool __fastcall Find_File(char *filename);            // 0x004702B0
+    // The next file matching Find_File's pattern into filename, and the end of the search
+    // (names hypotheses).
+    static bool __fastcall Find_Next_File(char *filename);       // 0x00470400
+    static void Find_Close();                                    // 0x00470470
 
     bool IsDisabled;            // +0x50 do not search the directory list
 

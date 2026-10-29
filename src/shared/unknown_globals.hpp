@@ -34,6 +34,16 @@ extern Surface *unknown_radar_surface_8336f8;  // 0x008336F8 (the radar view: Te
 extern Surface *unknown_surface_839948;  // 0x00839948 (sidebar surface)
 // A screen-sized clipping window (0x00839640; 0, 0, 640, 400 at startup, 0x0040D920).
 extern Rect unknown_window_839640;
+// The machine profile Get_Performance_Profile (0x0051A880) rates once (-1 until then;
+// 0x007DB564) and the texts it writes for the version dialog (0x00516C40): CPU, RAM, VRAM,
+// blit speed and the profile (0x00A411FC, 0x00A41388, 0x00A41308, 0x00A41408, 0x00A4127C).
+extern int unknown_performance_profile_7db564;
+extern char unknown_profile_cpu_text_a411fc[];
+extern char unknown_profile_ram_text_a41388[];
+extern char unknown_profile_vram_text_a41308[];
+extern char unknown_profile_blit_text_a41408[];
+extern char unknown_profile_text_a4127c[];
+extern Surface *unknown_surface_839944;  // 0x00839944 (a video memory surface: Get_Performance_Profile times blits from it)
 extern Surface *unknown_surface_839950;  // 0x00839950 screen
 class DSurface;
 extern DSurface *unknown_surface_839954; // 0x00839954 (Get_Input draws the buttons on it; shared/dsurface.hpp)

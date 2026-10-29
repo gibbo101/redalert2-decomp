@@ -87,6 +87,8 @@ public:
     // The DirectDraw surface (inline accessor; BinkClass::Open passes it to
     // BinkDDSurfaceType).
     IDirectDrawSurface *Get_DD_Surface() const { return VideoSurfacePtr; }
+    // Whether the surface lives in video memory (inline accessor; Get_Performance_Profile 0x0051A880).
+    bool Is_Video_Ram() const { return IsVideoRam; }
 
 protected:
     int BytesPerPixel;                          // +0x10

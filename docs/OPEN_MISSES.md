@@ -335,3 +335,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   a whole-unit TU: misses/tu_...; use unknown_session_a3d298.Scores/.ScoreCount and controls_7d1484[i][5]; the
   ctor draft must also define DYNAMIC_DELETE_OBJECT, DYNAMIC_DELETE_INDEX and VECTOR_CLEAR to land it). Inventory
   rows 0x465D01, 0x465F96, 0x46622A, 0x466754, 0x4669E8, 0x46743A, 0x4676CF, 0x467963 are false entries.
+- netshare.cpp (populations 2763/2769) after Netshare179 (misses/, NOTES; score with sc.sh -a against the whole
+  unit): 0x5C67C0 91.87 (dialog handle register copy), 0x5CA540 56.30 (strength-reduced second loop), 0x5CB170
+  52.86, 0x5CAE00 ~30. Blocked: 0x5CC700 inlines accepted 0x5C9950 (population-955; owner approved moving it into
+  2763), 0x5CC890 reads an int at 0xA3D2B0 that the headers declare as UnknownLobbyState/UnknownBlock_a3d2b0 (type
+  decision), 0x5CA000 not drafted. About 20 larger functions and the unit start 0x5C2BA0-0x5C3D90 not started.

@@ -78,7 +78,8 @@ struct DDSURFACEDESC {
 struct DDCAPS {
     DWORD dwSize;                 // +0x00; observed size 0x13C
     DWORD dwCaps;                 // +0x04; capability masks read by 00495FC0
-    unsigned char unknown_08[0x40 - 0x08];
+    unsigned char unknown_08[0x3C - 0x08];
+    DWORD dwVidMemTotal;           // +0x3C; read by Get_Performance_Profile 0051A880
     DWORD dwVidMemFree;            // +0x40; value returned by 00495F60
     unsigned char unknown_44[0x13C - 0x44];
 };
