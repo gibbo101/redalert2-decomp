@@ -562,6 +562,16 @@ reaching each block).
 - A separate-unit plan cannot include headers that carry header statics; such functions go in their
   real unit.
 
+## Lobby rules (Netshare183)
+
+- VC6 strength-reduces two arrays onto one induction pointer only when both are members of one object; read
+  both through that object (0x5CA540: AIColor at session +0x84 and the slot table at +0x2800).
+- When /Ob2 inlines too much in a large body, write its repeated parts as file-static helpers; the budget then
+  reproduces the original's inline set (0x5CA000 41-63 as one function, exact with helpers).
+- A parameterless function declared `__fastcall` schedules a fastcall callee's ecx/edx loads before the pushes
+  (0x5C86E0, 0x5C3040, accepted 0x4D1EA0); it did not help 0x5C67C0 or 0x5C34F0.
+- A WideString temporary destroyed before the return copy is a block-scoped local (0x5CCF50).
+
 ## Westwood source idioms (published Westwood sources, 2026-10-28)
 
 The published Red Alert and Renegade sources ([WESTWOOD_SOURCES.md](WESTWOOD_SOURCES.md))

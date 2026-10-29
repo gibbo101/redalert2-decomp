@@ -242,7 +242,168 @@ def sdk_named_types(body, params=(), result='void'):
                   'typedef WIN32_FIND_DATAA *PWIN32_FIND_DATAA, *LPWIN32_FIND_DATAA;')
         preamble = preamble.replace('struct WIN32_FIND_DATAA; typedef WIN32_FIND_DATAA *LPWIN32_FIND_DATAA;', record)
     preamble = process_sdk_records(preamble, view, signature, identifiers)
-    return com_interface_types(preamble, view, signature, identifiers)
+    preamble = com_interface_types(preamble, view, signature, identifiers)
+    return strict_hwnd_sdk_type(preamble, body, params, result)
+
+
+def strict_hwnd_sdk_type(preamble, body, params=(), result='void'):
+    """Supply the documented STRICT HWND pointee when an operation needs it.
+
+    Opaque handle transport keeps its existing spelling. Ghidra's scaled HWND
+    arithmetic/unused-member views need the SDK's actual four-byte dummy record,
+    not a byte-pointer cast or a guessed game layout. Nominal identity and original
+    STRICT configuration remain seed hypotheses; no runtime handle validity follows.
+    """
+    raw = '\n'.join([body, result] + list(params))
+    if 'HWND' not in raw:
+        return preamble
+    if (any(token in raw for token in ('%:', '<%', '%>', '<:', ':>', '??')) or
+            re.search(r'\\\r?\n|\b(?:u8|[uUL])?R"', raw)):
+        return preamble
+    view = code_view(body)
+    signature = code_view(' '.join([result] + list(params)))
+    context = view + ' ' + signature
+    # These exports do not carry a full C++ scope model. Qualified declaration
+    # shadows and enumerators can look like ordinary parameter/type uses.
+    if '#' in context or '::' in context or re.search(r'\b(?:enum|typedef|using|namespace)\b', context):
+        return preamble
+    # seed() passes its outer function body first, followed by generated
+    # declarations. Do not confuse a callee prototype's parameter names with
+    # the caller's locals or accept arbitrary C++ declaration/scope grammar.
+    start = len(view) - len(view.lstrip())
+    if start == len(view) or view[start] != '{':
+        return preamble
+    depth, end = 0, None
+    for offset in range(start, len(view)):
+        depth += (view[offset] == '{') - (view[offset] == '}')
+        if depth == 0:
+            end = offset + 1
+            break
+    if end is None:
+        return preamble
+    function_view = view[start:end]
+    if (scalar_declarations(function_view)[1] or
+            re.search(r'\b(?:struct|class|union)\s+(?:[A-Za-z_]\w*\s*)?[:{]', function_view)):
+        return preamble
+    names = ('HWND', 'HWND__', 'MSG', 'LPMSG', 'WNDPROC', 'DLGPROC',
+             'WNDENUMPROC', 'TIMERPROC')
+    identifiers = {name for _, name, _ in scalar_declarations(view)[0]}
+    identifiers.update(name for _, name in map(param_parts, params))
+    known_calls = set(import_facts()) | {'if', 'while', 'switch', 'for', 'sizeof'}
+    def parenthesis_root(position):
+        try:
+            end = matching_paren(context, position)
+            while True:
+                before = context[:position].rstrip()
+                following = len(context) - len(context[end+1:].lstrip())
+                if (not before.endswith('(') or following == len(context) or
+                        context[following] != ')'):
+                    return position
+                outer = len(before)-1
+                if matching_paren(context, outer) != following:
+                    return position
+                position, end = outer, following
+        except ValueError:
+            return None
+    def unary_at(position):
+        if unary_operator(context, position):
+            return True
+        # The existing helper recognises scalar/explicit-pointer casts. HWND
+        # is a separately guarded SDK pointer alias; (HWND)(value) is a cast.
+        before = context[:position].rstrip()
+        cast = re.search(r'\(\s*HWND\s*\)$', before)
+        return bool(cast and unary_operator(context, cast.start()))
+    def ambiguous_parenthesized_name(name):
+        # T(name) can declare a shadow even though the simple declaration index
+        # does not see it. Only expressions and independently named calls are
+        # classified here; unknown call-versus-type syntax remains unresolved.
+        for match in re.finditer(r'\(\s*' + re.escape(name) + r'\b', context):
+            if not context[match.end():].lstrip().startswith((')', '[', '(', ',')):
+                continue  # A binary/member expression is not a declarator.
+            position = parenthesis_root(match.start())
+            if position is None:
+                return True
+            before = context[:position].rstrip()
+            if unary_at(position):
+                continue
+            call = re.search(r'([A-Za-z_]\w*)$', before)
+            if call and (call[1] in known_calls or re.fullmatch(r'FUN_[0-9a-f]{8}', call[1])):
+                continue
+            return True
+        return False
+    def pointer_declaration(name):
+        pattern = r'\([^(){};]*[*&][^(){};]*\b' + re.escape(name) + r'\s*\)'
+        for match in re.finditer(pattern, context):
+            position = parenthesis_root(match.start())
+            if position is None or not unary_at(position):
+                return True
+        return False
+    for name in names:
+        token = r'\b' + name + r'\b'
+        if (name in identifiers or typedef_mentions(view, name) or
+                re.search(r'\b(?:struct|class|union|enum|namespace)\s+' + name + r'\s*[{;:]', context) or
+                re.search(r'\busing\s+(?:typename\s+)?' + token, context) or
+                re.search(token + r'\s*\(', context) or
+                re.search(r'\([^(){};]*[*&][^(){};]*' + token + r'\s*\)', context) or
+                ambiguous_parenthesized_name(name)):
+            return preamble
+    if re.search(r'(?:::|->|\.)\s*HWND(?:__)?\b|\bHWND(?:__)?\s*::', context):
+        return preamble
+    # A bare HWND__ label/enumerator/value is not a type demand.
+    demand = bool(re.search(r'\bHWND__\s*[*&]|\b(?:struct\s+)?HWND__\s+[A-Za-z_]\w*\s*[;=,)]|\bsizeof\s*\(\s*HWND__\s*\)', context))
+    slots = {}
+    for kind, name in map(param_parts, params):
+        if name:
+            slots.setdefault(name, []).append((kind, None))
+    for kind, name, array in scalar_declarations(function_view)[0]:
+        slots.setdefault(name, []).append((kind, array))
+    for name, declarations in slots.items():
+        if len(declarations) != 1 or declarations[0][1] or clean_type(declarations[0][0]) != 'HWND':
+            continue
+        if re.search(r'}\s*[*&]*\s*\b' + re.escape(name) + r'\b', function_view):
+            continue  # Anonymous/tagged aggregate declarator missed by the index.
+        if (ambiguous_parenthesized_name(name) or pointer_declaration(name) or
+                re.search(r'\b' + re.escape(name) + r'\s*\(', function_view)):
+            continue
+        for match in re.finditer(r'\b' + re.escape(name) + r'\b', function_view):
+            before = function_view[:match.start()].rstrip()
+            if before.endswith(('.', '->', '::')):
+                continue
+            after = function_view[match.end():]
+            if (re.match(r'\s*(?:\+\+|--|[+-]=?|\[|->\s*unused\b)', after) or
+                    before.endswith(('++', '--')) or
+                    before.endswith('*') and unary_operator(function_view, len(before)-1)):
+                demand = True
+    if not demand:
+        return preamble
+    # Prefix, rather than append: MSG/callbacks/imports must all use the same
+    # local SDK type. HANDLE and all other handle aliases remain unchanged.
+    return 'struct HWND__ { int unused; };\ntypedef HWND__ *HWND;\n' + preamble
+
+
+def typedef_mentions(view, name):
+    """Conservatively detect a spelling inside a whole typedef declaration.
+
+    Braced anonymous/tagged records can contain semicolons before the alias.
+    Masked source preserves delimiters; an unterminated declaration refuses
+    subsequent uses rather than inventing type ownership.
+    """
+    for match in re.finditer(r'\btypedef\b', view):
+        stack, end = [], len(view)
+        pairs = {')': '(', ']': '[', '}': '{'}
+        for cursor in range(match.end(), len(view)):
+            char = view[cursor]
+            if char in '([{':
+                stack.append(char)
+            elif char in pairs:
+                if not stack or stack.pop() != pairs[char]:
+                    break
+            elif char == ';' and not stack:
+                end = cursor
+                break
+        if re.search(r'\b' + re.escape(name) + r'\b', view[match.end():end]):
+            return True
+    return False
 
 
 def process_sdk_records(preamble, view, signature, identifiers):
@@ -253,6 +414,39 @@ def process_sdk_records(preamble, view, signature, identifiers):
     are SDK declarations only, not inferred game layouts or helper bodies.
     """
     records = [
+        # Documented SDK tags/public aliases, not inferred game records:
+        # https://learn.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-systemtime
+        # https://learn.microsoft.com/en-us/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information
+        # https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-osversioninfoa
+        (('_SYSTEMTIME', 'SYSTEMTIME', 'PSYSTEMTIME', 'LPSYSTEMTIME'),
+         'struct SYSTEMTIME { WORD wYear, wMonth, wDayOfWeek, wDay, wHour, wMinute, wSecond, wMilliseconds; };\n'
+         'typedef SYSTEMTIME *LPSYSTEMTIME;',
+         '''struct _SYSTEMTIME {
+    WORD wYear, wMonth, wDayOfWeek, wDay, wHour, wMinute, wSecond, wMilliseconds;
+};
+typedef _SYSTEMTIME SYSTEMTIME;
+typedef SYSTEMTIME *PSYSTEMTIME, *LPSYSTEMTIME;'''),
+        (('_TIME_ZONE_INFORMATION', 'TIME_ZONE_INFORMATION', 'PTIME_ZONE_INFORMATION', 'LPTIME_ZONE_INFORMATION'),
+         'struct TIME_ZONE_INFORMATION; typedef TIME_ZONE_INFORMATION *LPTIME_ZONE_INFORMATION;',
+         '''struct _TIME_ZONE_INFORMATION {
+    LONG Bias;
+    WCHAR StandardName[32];
+    SYSTEMTIME StandardDate;
+    LONG StandardBias;
+    WCHAR DaylightName[32];
+    SYSTEMTIME DaylightDate;
+    LONG DaylightBias;
+};
+typedef _TIME_ZONE_INFORMATION TIME_ZONE_INFORMATION;
+typedef TIME_ZONE_INFORMATION *PTIME_ZONE_INFORMATION, *LPTIME_ZONE_INFORMATION;'''),
+        (('_OSVERSIONINFOA', 'OSVERSIONINFOA', 'POSVERSIONINFOA', 'LPOSVERSIONINFOA'),
+         'struct OSVERSIONINFOA; typedef OSVERSIONINFOA *LPOSVERSIONINFOA;',
+         '''struct _OSVERSIONINFOA {
+    DWORD dwOSVersionInfoSize, dwMajorVersion, dwMinorVersion, dwBuildNumber, dwPlatformId;
+    CHAR szCSDVersion[128];
+};
+typedef _OSVERSIONINFOA OSVERSIONINFOA;
+typedef OSVERSIONINFOA *POSVERSIONINFOA, *LPOSVERSIONINFOA;'''),
         (('_PROCESS_INFORMATION', 'PROCESS_INFORMATION', 'PPROCESS_INFORMATION', 'LPPROCESS_INFORMATION'),
          'struct PROCESS_INFORMATION; typedef PROCESS_INFORMATION *LPPROCESS_INFORMATION;',
          '''struct _PROCESS_INFORMATION {
@@ -287,11 +481,22 @@ typedef CPINFO *LPCPINFO;'''),
     for names, forward, definition in records:
         if not any(re.search(r'\b' + name + r'\b', view + ' ' + signature) for name in names):
             continue
+        # Time-zone fields depend on the same real SYSTEMTIME record and SDK
+        # scalar widths. Refuse a conflicting dependency with the entire group.
+        dependencies = {
+            '_SYSTEMTIME': ('WORD',),
+            '_TIME_ZONE_INFORMATION': ('LONG', 'WCHAR', 'WORD', '_SYSTEMTIME',
+                                       'SYSTEMTIME', 'PSYSTEMTIME', 'LPSYSTEMTIME'),
+            '_OSVERSIONINFOA': ('DWORD', 'CHAR'),
+        }.get(names[0], ())
         blocked = any(name in identifiers or
-                      re.search(r'\btypedef\b[^;{}]*\b' + name + r'\s*;', view) or
+                      typedef_mentions(view, name) or
                       re.search(r'\b(?:struct|class|union)\s+' + name + r'\s*[{:]', view) or
                       re.search(r'#\s*(?:define|undef)\s+' + name + r'\b', view) or
-                      re.search(r'\b' + name + r'\s*\(', view) for name in names)
+                      re.search(r'\b' + name + r'\s*\(', view) or
+                      re.search(r'\([^(){};]*[*&][^(){};]*\b' + name + r'\s*\)', view + ' ' + signature) or
+                      re.search(r'(?:::|->|\.)\s*' + name + r'\b|\b' + name + r'\s*::', view + ' ' + signature)
+                      for name in names + dependencies)
         if not blocked:
             preamble = preamble.replace(forward, definition)
     return preamble
@@ -386,6 +591,64 @@ typedef IStorage *LPSTORAGE;
 '''
 
 
+def large_integer_member_artifacts(body, params=()):
+    """Normalize Ghidra's named .s halves only on unambiguous SDK locals.
+
+    The SDK/preamble already supplies the same anonymous DWORD LowPart and
+    signed LONG HighPart at offsets 0 and 4. No layout, storage, access width,
+    signedness, read order or runtime helper changes. This is a spelling repair,
+    not evidence for the decompiler's other type, ABI or stack hypotheses.
+    """
+    if 'LARGE_INTEGER' not in body:
+        return body
+    # code_view is not a preprocessor or a raw-string/line-splice lexer.
+    if '%:' in body or '??' in body or re.search(r'\\\r?\n|\b(?:u8|[uUL])?R"', body):
+        return body
+    view = code_view(body)
+    if '#' in view or re.search(r'\b(?:typedef|using|namespace|class|struct|union)\b', view):
+        return body
+    declarations, comma = scalar_declarations(view)
+    parameters = {name for _, name in map(param_parts, params) if name}
+    if comma or any(name in {'LARGE_INTEGER', 'DWORD', 'LONG'}
+                    for _, name, _ in declarations) or parameters & {'LARGE_INTEGER', 'DWORD', 'LONG'}:
+        return body
+    edits = []
+    for decl in re.finditer(r'^[\t ]+LARGE_INTEGER[\t ]+([A-Za-z_]\w*)[\t ]*;', view, re.M):
+        name = decl[1]
+        if (re.search(r'\b' + re.escape(name) + r'\b', code_view(' '.join(params))) or
+                view[:decl.start()].count('{') - view[:decl.start()].count('}') != 1):
+            continue
+        if [(kind, array) for kind, ident, array in declarations if ident == name] != [('LARGE_INTEGER', None)]:
+            continue
+        pending, refused = [], False
+        for token in re.finditer(r'\b' + re.escape(name) + r'\b', view):
+            before = view[:token.start()].rstrip()
+            if before.endswith(('.', '->', '::')):
+                continue  # A different object's member or namespace spelling.
+            if decl.start(1) == token.start():
+                continue
+            suffix = view[token.end():]
+            member = re.match(r'\s*\.\s*s\s*\.\s*(LowPart|HighPart)\b', suffix)
+            if member:
+                end = token.end() + member.end()
+                if body[token.end():end] != view[token.end():end]:
+                    refused = True  # Preserve comments inside a selector.
+                    break
+                pending.append((token.end(), end, '.' + member[1]))
+                continue
+            if re.match(r'\s*\.\s*(?:LowPart|HighPart|QuadPart)\b', suffix):
+                continue
+            if before.endswith('&') and unary_operator(view, len(before)-1):
+                continue  # The same local's address, including an explicit cast.
+            refused = True
+            break
+        if not refused:
+            edits.extend(pending)
+    for start, end, replacement in sorted(edits, reverse=True):
+        body = body[:start] + replacement + body[end:]
+    return body
+
+
 def sdk_preamble(body, params=(), result='void'):
     """Only used, known Windows interface types enter a seed's namespace.
 
@@ -419,6 +682,60 @@ def local_labels(body):
     body = re.sub(r'^(\s*)(LAB_[0-9a-f]{8})\s*:',
                   lambda m: m[1] + (m[2] + ':;' if m[2] in targets else ''), body, flags=re.M)
     return body, definitions
+
+
+def generated_statement_view(body):
+    """Mask trivia only for the ordinary generated C statement subset.
+
+    These small repairs do not parse preprocessing or alternate C++ tokens.
+    Preserve such input rather than infer statement/scope boundaries from it.
+    """
+    if (any(token in body for token in ('%:', '<%', '%>', '<:', ':>', '??')) or
+            re.search(r'\\\r?\n|\b(?:u8|[uUL])?R"', body)):
+        return None
+    view = code_view(body)
+    if '#' in view or '/*' in view or '"' in view or "'" in view:
+        return None
+    return view
+
+
+def terminal_label_statements(body):
+    """Give a terminal Ghidra label its empty statement before a block closes.
+
+    This preserves an empty/fallthrough branch, including do/while labels. It
+    neither invents a break nor changes the destination of any goto. General
+    case expressions, declarations and nonordinary scope grammar stay untouched.
+    """
+    view = generated_statement_view(body)
+    if (view is None or not view.lstrip().startswith('{') or '::' in view or
+            re.search(r'\b(?:class|struct|union|enum|namespace|template)\b', view)):
+        return body
+    integer = r'-?(?:0[xX][0-9a-fA-F]+|[0-9]+)[uUlL]*'
+    constant = r'(?:' + integer + r'|[A-Za-z_]\w*)'
+    pattern = re.compile(r'^[\t ]*(?:case[\t ]+' + constant +
+                         r'|default|[A-Za-z_]\w*)[\t ]*:(?=\s*})', re.M)
+    candidates = {match.end()-1 for match in pattern.finditer(view)
+                  if match[0].strip()[:-1].strip() not in ('public', 'private', 'protected', 'case')}
+    stack, questions, insertions = [], 0, []
+    pairs = {')': '(', ']': '[', '}': '{'}
+    for position, token in enumerate(view):
+        if token in '([{':
+            stack.append(token)
+        elif token in ')]}':
+            if not stack or stack.pop() != pairs[token]:
+                return body
+        elif token == '?':
+            questions += 1
+        elif token == ':':
+            if questions:
+                questions -= 1
+            elif position in candidates and stack and all(item == '{' for item in stack):
+                insertions.append(position+1)
+    if stack or questions:
+        return body
+    for position in reversed(insertions):
+        body = body[:position] + ';' + body[position:]
+    return body
 
 
 def concat_artifacts(body):
@@ -1439,11 +1756,30 @@ def cast_assignments(body, params):
     conversion is the one C would apply implicitly, so 32-bit values and
     arithmetic conversions are unchanged; C++ merely requires it spelled out.
     """
+    view = generated_statement_view(body)
+    if view is None:
+        return body
     types = variable_types(body, params)
+    def complete_rhs(expression):
+        # A line can continue an enclosing if/for condition. Never pull its
+        # closing delimiters, comma tail or subsequent statement into a cast.
+        stack = []
+        for token in expression:
+            if token in '{;}' or token == ',' and not stack:
+                return False
+            if token in '([':
+                stack.append(token)
+            elif token in ')]':
+                if not stack or stack.pop() != {')': '(', ']': '['}[token]:
+                    return False
+        return not stack and not re.search(r'\b(?:goto|return|break|continue|case|default|if|else|for|while|do|switch|throw|try|catch|__asm)\b', expression)
     def repl(match):
         indent, name, rhs = match.groups()
         kind = types.get(name)
-        if not kind or rhs.startswith('(' + kind + ')'):
+        if (not kind or rhs.startswith('(' + kind + ')') or
+                view[match.start(2):match.end(2)] != name or
+                view[match.end(3):match.end(3)+1] != ';' or
+                not complete_rhs(view[match.start(3):match.end(3)])):
             return match.group(0)
         return '%s%s = (%s)(%s);' % (indent, name, kind, rhs)
     return ASSIGN.sub(repl, body)
@@ -1865,8 +2201,10 @@ def seed(entry, inventory, accepted):
     conv, params = fit_convention(conv, params, stack_cleanup(inventory.function(entry)[1]),
                                   conv == '__thiscall')
     body = nonnegative_tests(reindent(text[end:].strip()))
+    body = large_integer_member_artifacts(body, params)
     body = normalize_import_exrefs(body)
     body, labels = local_labels(body)
+    body = terminal_label_statements(body)
     body, switch_notes = indexed_switch_artifacts(body, entry, params)
     body = nan_artifacts(body, params, named_calls(body, inventory) if re.search(r'\bNAN\s*\(', code_view(body)) else ())
     body = byte_update_artifacts(body, params)

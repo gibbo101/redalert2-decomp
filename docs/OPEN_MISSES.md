@@ -353,3 +353,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   registers swapped), 0x6171E0 81.58, 0x616A50 77.83 (js vs test/jl), 0x616B40 75.76 (kind -1 in ebp), 0x616960 60.10
   (Next inlined), Rect family 0x615D30 56.69/0x616140 65.41/0x616070/0x617900 (one extra frame Rect), 0x615A80 39.38;
   0x615C00 exact only with Pick_Drawn inline. Twelve undrafted (list in NOTES); inventory bounds wrong, ext.py.
+- netshare.cpp after Netshare183 (build/class-work/Netshare183/misses, NOTES): 0x5C34F0 97.37 (mov esi,eax before
+  the pushes), 0x5CB560 Clear_Observer_Slots 98.97 (tail-call arguments before the pops), 0x5C2DA0 56.09 (registers),
+  0x5C67C0 91.06 (needs pop-67 seed 0x5C67A0 in the unit). Blocked: 0x5C3C60/0x5C3D90 (packet type past 0x1C7),
+  0x5C6310 (WOL hash table), 0x5C8420/0x5C84E0 (random-map CRC). 0x5C5EC0 is inside 0x5C3FF0.

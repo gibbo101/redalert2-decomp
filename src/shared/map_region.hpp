@@ -8,6 +8,7 @@
 #include "shared/vector_class.hpp"
 class MapRegionClass {
 public:
+    DynamicVectorClass<Cell> *Select_Separated_Cells_00576810(DynamicVectorClass<Cell> const &candidates); //operation/reference/constness hypotheses; EAXptr/RET4
     bool Place_Neutral_Building_00571db0(Rect const &area); // hypothesis name; caller establishes MapRegion receiver, RET4
     void unknown_0056eac0(int count,int mark);
     void Update_Cell_Marks_005707a0();

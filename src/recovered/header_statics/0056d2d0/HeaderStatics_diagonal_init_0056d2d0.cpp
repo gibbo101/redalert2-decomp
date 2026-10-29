@@ -1,3 +1,8 @@
+// Actual generic vector definitions required by the new constructed/append context.
+#define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
+#define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 // Header-static dynamic initializers of the unit at 0x0056D2D0:  the
