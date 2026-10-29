@@ -21,12 +21,27 @@
 
 namespace WorldDominationTour {
 
+class Voices;
+
+// The territory of `territories` whose Index is `index` (WDTTerr.cpp 0x007311B0; an empty
+// pointer when none is; name hypothesis).
+rc_ptr<Territory> __fastcall Find_Territory(DynamicVectorClass<rc_ptr<Territory> > &territories, int index);
+
 class Map : public ReferenceCounted {
 public:
     class AnimationPalette;
 
     Map(int unknown_08, int unknown_0c, int unknown_10);          // 0x00729330
     virtual ~Map();                                                 // 0x0072AF30 (slot 0, calls 0x007293F0)
+
+    static rc_ptr<Map> __fastcall Create(int unknown_08, int unknown_0c, int unknown_10);   // 0x007292E0
+    void unknown_72a620(MSEngine *engine, Voices *voices);         // 0x0072A620
+    int Territory_At(Point2D const &point) const;                   // 0x0072A660 (-1 for none)
+    void Set_Unknown_74(MSEngine *engine, bool value);              // 0x0072A6D0
+    void Set_Unknown_68(MSEngine *engine, bool value);              // 0x0072A720
+    int Is_Inside(Point2D const &point) const;                      // 0x0072A770 (inside the +0x54 rectangle)
+    // The territory of that index (inline; out-of-line copy 0x007302B0 in WDTSel.cpp).
+    rc_ptr<Territory> Get_Territory(int index) { return Find_Territory(Territories, index); }
 
     int unknown_08;                                                 // +0x08
     int unknown_0c;                                                 // +0x0C
@@ -56,7 +71,10 @@ public:
         char unknown_8;
     } unknown_6c;                                                   // +0x6C
     void *unknown_78;                                               // +0x78
-    char unknown_7c[0xBC - 0x7C];
+    Rect DescriptionRect;                                           // +0x7C (Selection's description text)
+    Rect TooltipRect;                                               // +0x8C (Selection's tool tip text)
+    Rect PlayRect;                                                  // +0x9C (GUI:PlayWDT)
+    Rect BackRect;                                                  // +0xAC (TXT_BACK)
     DynamicVectorClass<AnimationPalette *> Palettes;                // +0xBC
 };
 
