@@ -118,6 +118,34 @@ SDK_PREAMBLE += '\n' + '\n'.join('struct %s; typedef %s *%s;' % (kind, kind, ali
                                 for kind, alias in sorted(SDK_OPAQUE.items()))
 SDK_PREAMBLE += '\nstruct BITMAPINFO; struct LOGFONTA; struct MSGBOXPARAMSA; struct WNDCLASSA;'
 
+# Documented Win32 console records; no SDK headers or game layouts. Keep the
+# union arm present in the export even when EventType suggests another arm.
+SDK_INPUT_RECORD = '''struct _COORD { SHORT X, Y; }; typedef _COORD COORD;
+struct _KEY_EVENT_RECORD {
+    BOOL bKeyDown;
+    WORD wRepeatCount, wVirtualKeyCode, wVirtualScanCode;
+    union { WCHAR UnicodeChar; CHAR AsciiChar; } uChar;
+    DWORD dwControlKeyState;
+}; typedef _KEY_EVENT_RECORD KEY_EVENT_RECORD;
+struct _MOUSE_EVENT_RECORD {
+    COORD dwMousePosition;
+    DWORD dwButtonState, dwControlKeyState, dwEventFlags;
+}; typedef _MOUSE_EVENT_RECORD MOUSE_EVENT_RECORD;
+struct _WINDOW_BUFFER_SIZE_RECORD { COORD dwSize; };
+typedef _WINDOW_BUFFER_SIZE_RECORD WINDOW_BUFFER_SIZE_RECORD;
+struct _MENU_EVENT_RECORD { UINT dwCommandId; }; typedef _MENU_EVENT_RECORD MENU_EVENT_RECORD;
+struct _FOCUS_EVENT_RECORD { BOOL bSetFocus; }; typedef _FOCUS_EVENT_RECORD FOCUS_EVENT_RECORD;
+struct _INPUT_RECORD {
+    WORD EventType;
+    union {
+        KEY_EVENT_RECORD KeyEvent;
+        MOUSE_EVENT_RECORD MouseEvent;
+        WINDOW_BUFFER_SIZE_RECORD WindowBufferSizeEvent;
+        MENU_EVENT_RECORD MenuEvent;
+        FOCUS_EVENT_RECORD FocusEvent;
+    } Event;
+}; typedef _INPUT_RECORD INPUT_RECORD; typedef INPUT_RECORD *PINPUT_RECORD;'''
+
 
 def code_view(text):
     """Mask comments and literals, preserving positions and line breaks."""
@@ -243,7 +271,180 @@ def sdk_named_types(body, params=(), result='void'):
         preamble = preamble.replace('struct WIN32_FIND_DATAA; typedef WIN32_FIND_DATAA *LPWIN32_FIND_DATAA;', record)
     preamble = process_sdk_records(preamble, view, signature, identifiers)
     preamble = com_interface_types(preamble, view, signature, identifiers)
+    preamble = tagged_sdk_types(preamble, body, params, result)
     return strict_hwnd_sdk_type(preamble, body, params, result)
+
+
+def tagged_sdk_types(preamble, body, params=(), result='void'):
+    """Complete documented SDK tag/alias groups only on real tag demand.
+
+    Replace the primary tag in place so all imports and dependent records use
+    one type. Existing unsigned LPARAM remains unchanged. Exception records
+    stay incomplete; no game layout, original SDK edition or ABI is inferred.
+    """
+    if not re.search(r'\b(?:_MEMORYSTATUS|_FILETIME|tagMSG|_SECURITY_ATTRIBUTES|_EXCEPTION_POINTERS|_INPUT_RECORD)\b', body+' '+result+' '+' '.join(params)):
+        return preamble
+    view = generated_statement_view(body)
+    signature = generated_statement_view(' '.join([result]+list(params)))
+    if (view is None or signature is None or '=' in signature or
+            any(re.search(r'[()[\]]',parameter) for parameter in params)):
+        return preamble
+    context = view+' '+signature
+    if '::' in context or re.search(r'\b(?:typedef|using|enum|namespace|template)\b', context):
+        return preamble
+    start = len(view)-len(view.lstrip())
+    if start==len(view) or view[start]!='{':
+        return preamble
+    depth, end = 0, None
+    for offset in range(start,len(view)):
+        depth += (view[offset]=='{')-(view[offset]=='}')
+        if depth==0:
+            end=offset+1;break
+    if end is None:
+        return preamble
+    function = view[start:end]
+    normalized_function=re.sub(r'\s+',' ',function)
+    if (scalar_declarations(function)[1] or scalar_declarations(normalized_function)[1] or
+            re.search(r'\b(?:class|struct|union)\s+(?:[A-Za-z_]\w*\s*)?[:{]',function)):
+        return preamble
+    # C whitespace can split a declaration across lines even though ordinary
+    # Ghidra locals use one line. Index both views for ownership and type demand;
+    # do not change the source or the shared declaration parser.
+    declarations=list(dict.fromkeys(scalar_declarations(view)[0]+scalar_declarations(re.sub(r'\s+',' ',view))[0]))
+    identifiers={name for _,name,_ in declarations}
+    identifiers.update(name for _,name in map(param_parts,params))
+    kinds=[kind for kind,_,_ in declarations]+[kind for kind,_ in map(param_parts,params)]+[result]
+    def parenthesis_root(position):
+        try:
+            end=matching_paren(context,position)
+            while True:
+                before=context[:position].rstrip()
+                following=len(context)-len(context[end+1:].lstrip())
+                if (not before.endswith('(') or following==len(context) or context[following]!=')'):
+                    return position
+                outer=len(before)-1
+                if matching_paren(context,outer)!=following:
+                    return position
+                position,end=outer,following
+        except ValueError:
+            return None
+    groups=[
+        (('_MEMORYSTATUS','MEMORYSTATUS','LPMEMORYSTATUS'), ('DWORD','SIZE_T'),
+         'struct MEMORYSTATUS { DWORD dwLength, dwMemoryLoad, dwTotalPhys, dwAvailPhys, dwTotalPageFile, dwAvailPageFile, dwTotalVirtual, dwAvailVirtual; };',
+         'struct _MEMORYSTATUS { DWORD dwLength, dwMemoryLoad; SIZE_T dwTotalPhys, dwAvailPhys, dwTotalPageFile, dwAvailPageFile, dwTotalVirtual, dwAvailVirtual; };\ntypedef _MEMORYSTATUS MEMORYSTATUS;'),
+        (('_FILETIME','FILETIME','PFILETIME','LPFILETIME'), ('DWORD',),
+         'struct FILETIME { DWORD dwLowDateTime, dwHighDateTime; };',
+         'struct _FILETIME { DWORD dwLowDateTime, dwHighDateTime; };\ntypedef _FILETIME FILETIME;'),
+        (('tagMSG','MSG','PMSG','NPMSG','LPMSG'), ('HWND','UINT','WPARAM','LPARAM','DWORD','POINT'),
+         'struct MSG { HWND hwnd; UINT message; WPARAM wParam; LPARAM lParam; DWORD time; POINT pt; };',
+         'struct tagMSG { HWND hwnd; UINT message; WPARAM wParam; LPARAM lParam; DWORD time; POINT pt; };\ntypedef tagMSG MSG;'),
+        (('_SECURITY_ATTRIBUTES','SECURITY_ATTRIBUTES','PSECURITY_ATTRIBUTES','LPSECURITY_ATTRIBUTES'), ('DWORD','LPVOID','BOOL'),
+         None,
+         'struct _SECURITY_ATTRIBUTES { DWORD nLength; LPVOID lpSecurityDescriptor; BOOL bInheritHandle; };\ntypedef _SECURITY_ATTRIBUTES SECURITY_ATTRIBUTES;\ntypedef SECURITY_ATTRIBUTES *PSECURITY_ATTRIBUTES, *LPSECURITY_ATTRIBUTES;'),
+        (('_EXCEPTION_POINTERS','EXCEPTION_POINTERS','PEXCEPTION_POINTERS','LPTOP_LEVEL_EXCEPTION_FILTER'), (),
+         'struct EXCEPTION_POINTERS;',
+         'struct _EXCEPTION_POINTERS;\ntypedef _EXCEPTION_POINTERS EXCEPTION_POINTERS;'),
+        (('_INPUT_RECORD','INPUT_RECORD','PINPUT_RECORD'),
+         ('SHORT','WORD','WCHAR','CHAR','BOOL','DWORD','UINT','COORD','_COORD',
+          'KEY_EVENT_RECORD','_KEY_EVENT_RECORD','MOUSE_EVENT_RECORD','_MOUSE_EVENT_RECORD',
+          'WINDOW_BUFFER_SIZE_RECORD','_WINDOW_BUFFER_SIZE_RECORD',
+          'MENU_EVENT_RECORD','_MENU_EVENT_RECORD','FOCUS_EVENT_RECORD','_FOCUS_EVENT_RECORD'),
+         'struct INPUT_RECORD; typedef INPUT_RECORD *PINPUT_RECORD;', SDK_INPUT_RECORD),
+    ]
+    for names,dependencies,existing,definition in groups:
+        tag,public=names[:2]
+        if not re.search(r'\b'+tag+r'\b',context):
+            continue
+        blocked=False
+        for name in names+dependencies:
+            token=r'\b'+name+r'\b'
+            if (name in identifiers or typedef_mentions(view,name) or
+                    re.search(r'\b(?:struct|class|union)\s+'+name+r'\s*[;{:]',context) or
+                    re.search(token+r'\s*\(',context) or
+                    re.search(r'(?:::|->|\.)\s*'+token+'|'+token+r'\s*::',context) or
+                    re.search(token+r'\s*:(?!:)',context) or
+                    re.search(token+r'\s*=',context) or
+                    re.search(token+r'\s*\[',context) or
+                    re.search(r'\([^(){};]*[*&][^(){};]*'+token+r'\s*\)',context)):
+                blocked=True;break
+            # Parenthesized values/declarators are not evidence of a tag type.
+            for match in re.finditer(r'\(\s*'+token+r'\s*\)',context):
+                position=parenthesis_root(match.start())
+                is_size=position==match.start() and re.search(r'\bsizeof\s*$',context[:position])
+                # A real C-style cast is unary and has an operand after the
+                # closing parenthesis. Nested declarators are checked at their
+                # outermost redundant parentheses, not at an inner '(' token.
+                after=context[match.end():].lstrip()
+                is_cast=position is not None and unary_operator(context,position) and after and after[0] not in ';,)]}'
+                if not (is_size or is_cast):
+                    blocked=True;break
+        if blocked or re.search(r'\b(?:struct|class|union)\s+'+public+r'\b',context):
+            continue
+        if tag=='_INPUT_RECORD' and any(re.search(r'\b(?:struct|class|union)\s+'+name+r'\b',context)
+                                       for name in dependencies if name.endswith('_RECORD') or name=='COORD'):
+            continue
+        if tag=='_INPUT_RECORD' and (
+                re.search(r'\b(?:__declspec|__attribute__|alignas|_Alignas)\b',function) or
+                re.search(r'\b(?:struct|class|union)\b[^;{}]*\b(?:__declspec|__attribute__|alignas|_Alignas)\b',context)):
+            continue
+        # Normal declarations/signatures, explicit pointer casts and sizeof
+        # provide type demand. A label/member/value token on its own does not.
+        kind_pattern=r'(?:const\s+|volatile\s+|struct\s+)*'+tag+r'(?:\s*\*|\s+const|\s+volatile)*'
+        demand=any(re.fullmatch(kind_pattern,kind.strip()) for kind in kinds)
+        demand |= bool(re.search(r'\(\s*(?:const\s+|volatile\s+|struct\s+)*'+tag+r'\s*\*+\s*\)',context))
+        demand |= bool(re.search(r'\bsizeof\s*\(\s*(?:struct\s+)?'+tag+r'\s*\)',context))
+        if not demand:
+            continue
+        if tag=='_EXCEPTION_POINTERS':
+            relevant=[kind for kind in kinds if re.search(r'\b(?:_EXCEPTION_POINTERS|EXCEPTION_POINTERS)\b',kind)]
+            if (any('*' not in kind for kind in relevant) or
+                    re.search(r'\bsizeof\s*\(\s*(?:struct\s+)?(?:_EXCEPTION_POINTERS|EXCEPTION_POINTERS)\s*\)',context)):
+                continue
+            runtime_declarations=list(dict.fromkeys(scalar_declarations(function)[0]+scalar_declarations(normalized_function)[0]))
+            runtime_slots=[(kind,name) for kind,name,_ in runtime_declarations]+list(map(param_parts,params))
+            pointer_names={name:kind.count('*')+(1 if re.search(r'\bPEXCEPTION_POINTERS\b',kind) else 0)
+                           for kind,name in runtime_slots if re.search(r'\b(?:_EXCEPTION_POINTERS|EXCEPTION_POINTERS|PEXCEPTION_POINTERS)\b',kind)}
+            if any(sum(slot_name==name for _,slot_name in runtime_slots)!=1 for name in pointer_names):
+                continue
+            def unary_dereferences(position):
+                count=0
+                before=function[:position].rstrip()
+                while before.endswith('*') and unary_operator(function,len(before)-1):
+                    count+=1
+                    before=before[:-1].rstrip()
+                return count
+            dereferenced=False
+            for name,pointer_depth in pointer_names.items():
+                if not name:
+                    continue
+                if re.search(r'\b'+re.escape(name)+r'\s*(?:->|\[)',function):
+                    dereferenced=True
+                for match in re.finditer(r'\*\s*\b'+re.escape(name)+r'\b',function):
+                    if unary_dereferences(match.end()-len(name))>=pointer_depth:
+                        dereferenced=True
+            if dereferenced:
+                continue
+            # A cast can introduce a record access without any declared name.
+            # Do not try to parse a full member-expression grammar here.
+            cast_pattern=r'\(\s*(?:(?:struct\s+)?(?:_EXCEPTION_POINTERS|EXCEPTION_POINTERS)\s*(?P<stars>\*+)|PEXCEPTION_POINTERS(?P<alias_stars>\s*\*+)?)\s*\)'
+            if re.search(cast_pattern+r'[^;{}]*(?:->|\[)',function):
+                continue
+            cast_dereference=False
+            for match in re.finditer(cast_pattern,function):
+                pointer_depth=len(match['stars']) if match['stars'] else 1+len((match['alias_stars'] or '').strip())
+                if unary_dereferences(match.start())>=pointer_depth:
+                    cast_dereference=True
+            if cast_dereference:
+                continue
+        if existing:
+            preamble=preamble.replace(existing,definition)
+        else:
+            preamble+='\n'+definition
+        if tag=='tagMSG' and any(re.search(r'\b'+name+r'\b',context) for name in ('PMSG','NPMSG')):
+            preamble=preamble.replace('typedef MSG *LPMSG;','typedef MSG *PMSG, *NPMSG, *LPMSG;')
+        if tag=='_EXCEPTION_POINTERS' and re.search(r'\bPEXCEPTION_POINTERS\b',context):
+            preamble=preamble.replace('typedef _EXCEPTION_POINTERS EXCEPTION_POINTERS;','typedef _EXCEPTION_POINTERS EXCEPTION_POINTERS;\ntypedef EXCEPTION_POINTERS *PEXCEPTION_POINTERS;')
+    return preamble
 
 
 def strict_hwnd_sdk_type(preamble, body, params=(), result='void'):
@@ -2091,6 +2292,102 @@ def array_byte_partials(body, params=()):
                             {param_parts(param)[1] for param in params})
 
 
+def input_record_byte_partials(body, params=(), result='void'):
+    """Keep one documented DWORD byte-read's entire qualified lvalue path.
+
+    This is deliberately a local mutable _INPUT_RECORD case, not a general
+    member-expression parser. Unsigned character access preserves the one-byte
+    read and aliasing; pointer, volatile, shadowed and lvalue uses refuse.
+    """
+    if 'dwControlKeyState' not in body or '._2_1_' not in body:
+        return body
+    if 'struct _INPUT_RECORD {' not in tagged_sdk_types(SDK_PREAMBLE, body, params, result):
+        return body
+    view=generated_statement_view(body)
+    if view is None:
+        return body
+    start=len(view)-len(view.lstrip())
+    if start==len(view) or view[start]!='{':
+        return body
+    depth=0;end=None
+    for offset in range(start,len(view)):
+        depth+=(view[offset]=='{')-(view[offset]=='}')
+        if not depth:
+            end=offset+1;break
+    if end is None:
+        return body
+    function=view[:end]
+    if re.search(r'\b(?:sizeof|__alignof|decltype|typeid|__declspec|__attribute__|alignas|_Alignas)\b',function):
+        return body
+    declarations=scalar_declarations(re.sub(r'\s+',' ',function))[0]
+    if (any('&' in kind or kind.strip()=='auto' for kind,_,_ in declarations) or
+            re.search(r'(?:^|[;{}])\s*[^;{}=]*&[^;{}=]*=',function)):
+        return body
+    parameters={name for _,name in map(param_parts,params)}
+    stack=[];parentheses=[]
+    for offset,token in enumerate(function):
+        if token=='(':
+            stack.append(offset)
+        elif token==')':
+            if not stack:
+                return body
+            parentheses.append((stack.pop(),offset))
+    if stack:
+        return body
+    mutation=r'=(?!=)|<<=|>>=|[+*/%&|^\-]=|\+\+|--'
+    local=re.compile(r'(?:^|(?<=[;{}]))\s*(?:struct\s+)?_INPUT_RECORD\s+(?P<name>[A-Za-z_]\w*)\s*;')
+    edits=[]
+    for declaration in local.finditer(function):
+        name=declaration['name'];at=declaration.start('name')
+        if (function[:declaration.start()].count('{')-function[:declaration.start()].count('}')!=1 or
+                name in parameters or sum(slot==name for _,slot,_ in declarations)!=1):
+            continue
+        refused=False
+        for mention in re.finditer(r'\b'+re.escape(name)+r'\b',function):
+            if mention.start()==at:
+                continue
+            before=function[:mention.start()].rstrip();after=function[mention.end():].lstrip()
+            if before.endswith(('.', '->', ':')):
+                refused=True;break
+            if after.startswith('.'):
+                continue
+            if (before.endswith('&') and unary_operator(function,len(before)-1) and
+                    after and after[0] in '),;'):
+                continue  # Existing output-buffer address passed to the API.
+            refused=True;break
+        if refused:
+            continue
+        pattern=re.compile(r'\b'+re.escape(name)+r'\s*\.\s*Event\s*\.\s*MouseEvent\s*\.\s*dwControlKeyState\s*\.\s*_2_1_\b')
+        for match in pattern.finditer(function):
+            before=function[:match.start()].rstrip();after=function[match.end():].lstrip()
+            span=body[match.start():match.end()]
+            if ('/*' in span or '//' in span or before.endswith(('(', '++', '--')) or
+                    (before.endswith(('&','*')) and unary_operator(function,len(before)-1)) or
+                    re.search(r'\b(?:sizeof|__alignof|decltype|typeid)\s*(?:\([^;{}]*)?$',before) or
+                    re.match(mutation+r'|\.|->|\[|\(',after)):
+                continue
+            ambiguous=False
+            for a,z in parentheses:
+                if not a<match.start()<z:
+                    continue
+                prefix=function[:a].rstrip()
+                label=re.search(r'([A-Za-z_]\w*)$',prefix)
+                # A call may take a reference or use unknown overload rules.
+                # Refuse its entire argument list, not only the first slot.
+                if (',' in function[a+1:z] or prefix.endswith((')',']','>','++','--')) or
+                        (prefix.endswith(('&','*')) and unary_operator(function,len(prefix)-1)) or
+                        (label and label[1] not in ('if','while','switch','for','return')) or
+                        re.match(mutation,function[z+1:].lstrip())):
+                    ambiguous=True;break
+            if ambiguous:
+                continue
+            path=span[:span.rfind('.')].rstrip()
+            edits.append((match.start(),match.end(),'(*(uchar const *)((char const *)&('+path+') + 2))'))
+    for a,z,replacement in sorted(edits,reverse=True):
+        body=body[:a]+replacement+body[z:]
+    return body
+
+
 def low_offset_byte_fields(body, params, global_types, shared, entry,
                            inventory=None, facts=None):
     """Repair data-offset labels only with existing pointer and original widths.
@@ -2212,6 +2509,7 @@ def seed(entry, inventory, accepted):
     body = stack_artifacts(extend_artifacts(concat_artifacts(body)), params, conv)
     body = LABEL.sub(lambda m: m.group(1) + re.sub(r'\W', '_', m.group(2)) + m.group(3), body)
     body = RAM.sub(lambda m: '(*(%s *)0x%s)' % (RAM_TYPES.get(m.group(1), 'int'), m.group(2)), body)
+    body = input_record_byte_partials(body, params, ret)
     body = PARTIAL.sub(lambda m: '(*(%s*)((char*)&%s + %s))' % (PARTIAL_TYPES.get(m.group(3), 'uint'),
                                                                m.group(1), m.group(2)), body)
     body = array_byte_partials(body, params)

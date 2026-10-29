@@ -53,4 +53,6 @@ extern int unknown_map_cell_side_84e804;
 extern int unknown_map_min_a70a1c,unknown_map_max_a70a20;
 extern Cell const unknown_adjacent_851a70[8];
 extern UnknownMapGenerationCell *unknown_map_cells_a70a24;
+// Source name, const-reference and signed-index intent are hypotheses; physical ECX/EDX contract at0056E970.
+void __fastcall Set_Cell_Region_Index_0056e970(Cell const &position, int index);
 #endif

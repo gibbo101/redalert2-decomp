@@ -452,3 +452,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   additions (CCFileClass RecordFile +0x2304, two NodeNameType lists, ~UnknownSessionState, ~MessageListClass) - cause
   unknown. Ctor 0x66E380 98.59 (w/ctor_best.cpp, inc_a: three-instruction scheduling diff; needs six inline DVC ctors,
   unknown_geometry_l and a long @ref set). 0x673090 disassembled only.
+- UICmnds.cpp after UICmnds206 (build/class-work/UICmnds206/w, NOTES; score with ws.py): 0x6F81B0 99.60 (pop ebp
+  before the 0xAC132C store), 0x6F7360 61.57 (needs 0x6F6C90 retyped to DynamicVectorClass<char const *> const & and
+  moved out of population-1642 by a rename spec; then 0x6F76C0 calls it, both exact), 0x6F79C0 58.10, 0x6F7020 77.52,
+  0x6F71E0 73.33.

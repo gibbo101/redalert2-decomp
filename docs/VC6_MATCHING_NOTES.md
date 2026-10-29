@@ -641,3 +641,13 @@ verified on the target.
   constructor out of line, declare the VectorClass constructor without a definition in scope and define only the
   derived constructors inline as explicit specializations; any generic definition in scope (even after the caller)
   makes VC6 inline it. The out-of-line copy is its own row (0x674AF0 VectorClass<Wstring>).
+
+## Waiting sites decide nested expansion (UICmnds206)
+
+- Which depth-2 calls the original inlines is decided by the inline sites still pending later in the caller (W in
+  the Study152 rule), not by definition order. UICmnds.cpp commands call the list rebuild 0x6F79C0 (depth 1, inlined);
+  its builder calls (depth 2) stay calls only because the command's loop reads the list through
+  DynamicVectorClass accessors (Count(), operator[]), each a pending site. Reading raw fields removes those sites and
+  the builders expand. The out-of-line 0x6F79C0, with nothing pending, inlines both builders. One accessor too many
+  pushes out a later expansion that must stay. Score such functions in the whole-population TU (UICmnds206 ws.py),
+  never in a prefix compile.
