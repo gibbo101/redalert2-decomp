@@ -4,8 +4,8 @@
     "id": "population-2946",
     "inventory_sha256": "eb8ba31e817a541d1d46d1a7b0d3f6c64d7729c25d11e78b9e92a57d1a6e74cc",
     "gaps_sha256": "cbeb105522d7fca4d22cc75656d9f76a0001268bd697dbf0d6f4a605bb64201e",
-    "historical_population_sha256": "5cfa5f9caf8351c1b668d3ba248b0aa7fd15571f2b834d94545eb1d1019fa812",
-    "historical_acceptance_sha256": "1ec4eab8ddeb3a405f0b332bd0ca901a15c643038e5f2f39ea56e0090fdab4a2"
+    "historical_population_sha256": "ec9fabadb231c474eea3504d50581e5ed772426bb3ed3148f15f65b74b4bd340",
+    "historical_acceptance_sha256": "b3f926e3baee844706ed7efdcabb6c02252b6ca166444c016ebba857050fbaf4"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9678,7 +9678,7 @@
     "??_E?$DynamicVectorClass@PAVMovieHandle@@@@UAEPAXI@Z": 7461584,
     "??_E?$DynamicVectorClass@PAVWaypointPathClass@@@@UAEPAXI@Z": 7494384,
     "??_E?$DynamicVectorClass@V?$rc_ptr@VGameOption@WorldDominationTour@@@@@@UAEPAXI@Z": 7504912,
-    "?unknown_524a10@IPXGlobalConnClass@@QAEXH@Z": 5392912,
+    "?Set_Bridge@IPXGlobalConnClass@@QAEXQAE@Z": 5392912,
     "?Configured@IPXConnClass@@2HA": 10822660,
     "?Receive_Packet@IPXGlobalConnClass@@UAEHPAXH@Z": 5393808,
     "?Receive_Packet@ConnectionClass@@UAEHPAXH@Z": 4722688,
@@ -9810,7 +9810,7 @@
     "?unknown_526c70@IPXManagerClass@@QAEKXZ": 5401712,
     "?Reset_Response_Time@IPXManagerClass@@UAEX_N@Z": 5404208,
     "?unknown_5276a0@IPXManagerClass@@QAEPADXZ": 5404320,
-    "?unknown_527730@IPXManagerClass@@QAEXH@Z": 5404464,
+    "?Set_Bridge@IPXManagerClass@@QAEXQAE@Z": 5404464,
     "?unknown_527810@IPXManagerClass@@QAEXPAVIPXAddressClass@@G@Z": 5404688,
     "?unknown_527830@IPXManagerClass@@QAEXH@Z": 5404720,
     "??0WinsockInterfaceClass@@QAE@XZ": 7777408,

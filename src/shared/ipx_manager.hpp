@@ -76,7 +76,7 @@ public:
     unsigned long unknown_526c50();                                     // 0x00526C50 (second global channel's)
     unsigned long unknown_526c70();                                     // 0x00526C70 (multicast connection's)
     char *unknown_5276a0();                                             // 0x005276A0 (the oldest unacknowledged sequenced send)
-    void unknown_527730(int arg1);                                      // 0x00527730
+    void Set_Bridge(NetNumType bridge);                                 // 0x00527730 (Red Alert's Set_Bridge)
     void unknown_5277c0(IPXAddressClass *address);                      // 0x005277C0
     void unknown_5277f0();                                              // 0x005277F0
     void unknown_527800();                                              // 0x00527800

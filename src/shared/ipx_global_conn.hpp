@@ -56,7 +56,7 @@ public:
     virtual int unknown_slot16(IPXAddressClass *address, unsigned short id);   // slot 16 0x00524AA0 (drops unacknowledged sends to an address)
     virtual int unknown_slot17(int arg1);                               // slot 17 0x00524870
 
-    void unknown_524a10(int arg1);                                      // 0x00524A10
+    void Set_Bridge(NetNumType bridge);                                 // 0x00524A10 (Red Alert's Set_Bridge: clears IsBridge once configured)
 
     unsigned short ProductID;           // +0xB8
     NetNumType BridgeNet;               // +0xBA

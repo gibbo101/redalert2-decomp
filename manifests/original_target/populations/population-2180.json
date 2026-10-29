@@ -4,8 +4,8 @@
     "id": "population-2180",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "16f079f449eea61f2b7e2590f696ed273c9bc67872c1c6e09427e329d46db041",
-    "historical_acceptance_sha256": "2734681f10d03cc5ac7541349c9aaf99a09d27f699cdf8196f902cf7f94c2eb5"
+    "historical_population_sha256": "34f75161a6525ce16ac10449ebe83bcf7facde95d55ca5c6ab054f9e835f23f2",
+    "historical_acceptance_sha256": "4e6fb01671b8a2badff817e9dee182668583f502258267f2b02832b727799890"
   },
   "references": {
     "?unknown_ipx_manager_a40978@@3VIPXManagerClass@@A": 10750328,
@@ -670,7 +670,7 @@
     "?ID@?$VectorClass@PAVIonBlastClass@@@@UAEHABQAVIonBlastClass@@@Z": 5382944,
     "?ID@?$VectorClass@PAVIonBlastClass@@@@UAEHPBQAVIonBlastClass@@@Z": 5383008,
     "?ID@?$DynamicVectorClass@PAVIonBlastClass@@@@UAEHABQAVIonBlastClass@@@Z": 5383216,
-    "?unknown_524a10@IPXGlobalConnClass@@QAEXH@Z": 5392912,
+    "?Set_Bridge@IPXGlobalConnClass@@QAEXQAE@Z": 5392912,
     "?Configured@IPXConnClass@@2HA": 10822660,
     "?Send_Packet@IPXGlobalConnClass@@UAEHPAXHHE@Z": 5393776,
     "?Send_Packet@ConnectionClass@@UAEHPAXHHE@Z": 4722432,
@@ -1914,7 +1914,7 @@
     "?unknown_526c70@IPXManagerClass@@QAEKXZ": 5401712,
     "?Reset_Response_Time@IPXManagerClass@@UAEX_N@Z": 5404208,
     "?unknown_5276a0@IPXManagerClass@@QAEPADXZ": 5404320,
-    "?unknown_527730@IPXManagerClass@@QAEXH@Z": 5404464,
+    "?Set_Bridge@IPXManagerClass@@QAEXQAE@Z": 5404464,
     "?Configure_Debug@IPXManagerClass@@UAEXHHHHHH@Z": 5404496,
     "?unknown_527810@IPXManagerClass@@QAEXPAVIPXAddressClass@@G@Z": 5404688,
     "?unknown_527830@IPXManagerClass@@QAEXH@Z": 5404720,
