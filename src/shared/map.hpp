@@ -171,6 +171,7 @@ public:
     // unknown).
     void Sight_From(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, int arg6, bool arg7, int arg8);
     void Unknown_00549C50(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, bool arg6, bool arg7, bool arg8);   // 0x00549C50 (reveals around coord; TechnoClass slot 70)
+    unsigned int Unknown_0055BD70(CellClass *cell); // physical full-EAX mask/RET4; Map receiver/source intent hypotheses
     void Unknown_00559F10();                                              // 0x00559F10
     void Unknown_0054AB70(Cell const &cell, ObjectClass *object);   // 0x0054AB70 (FootClass slot 71, cases 1 and 3; hypothesis: occupation)
     void Unknown_0054AF70(Cell const &cell, ObjectClass *object);   // 0x0054AF70 (FootClass slot 71, case 0)
