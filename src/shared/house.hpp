@@ -526,7 +526,12 @@ public:
     int unknown_53b8;                                     // +0x053B8 (-1)
     CoordStruct BaseCenter;                               // +0x053BC
     int unknown_53c8;                                     // +0x053C8
-    char unknown_53cc[0x5408 - 0x53CC];                   // +0x053CC
+    // Each base zone's defence (RA's ZoneInfo; 0x004E8640 sums it).
+    struct ZoneInfoStruct {
+        int AirDefense;
+        int ArmorDefense;
+        int InfantryDefense;
+    } ZoneInfo[5];                                        // +0x053CC
     int unknown_5408;                                     // +0x05408
     int unknown_540c;                                     // +0x0540C (-1)
     ObjectClass *unknown_5410;                            // +0x05410
