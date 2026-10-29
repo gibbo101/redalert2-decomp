@@ -481,10 +481,35 @@ void __fastcall Process_Timeouts_005bc500();
 // Refills the join dialog's (0xBB) game list 0x549: TXT_LOBBY, then each game, keeping
 // the selection and the top row (0x005BC790).
 void __fastcall Refresh_Game_List_005bc790();
-// Changes the join dialog's state (0x005C01D0; arguments not recovered).
-void __fastcall Unknown_005c01d0(int unknown_1, int unknown_2, int unknown_3, int unknown_4);
+// Sends the join dialog's queries (0x005C01D0; Red Alert's Send_Join_Queries): the game query every 120
+// ticks or now (not from the dialog 0xBC), the player query of the selected game every 35 ticks or now,
+// the chat announcement every 83 ticks (below join state 2) or now; init restarts the three timers.
+void __fastcall Unknown_005c01d0(int gamenow, int playernow, int chatnow, int init);
 // The games the join dialog has heard of (0x00A3FA64, session +0x27CC; Red Alert's Session.Games).
 extern DynamicVectorClass<NodeNameType *> unknown_games_a3fa64;
+// The text label of a dialog control's tool tip, or 0 (0x005E22B0; hypothesis).
+char const *__fastcall Unknown_005e22b0(HWND dialog, HWND control);
+// Sends a player's side and colour choice ("R<side>,<colour>") from the host's name (0x005C3D90).
+void __fastcall Unknown_005c3d90(char const *name, char const *text);
+// A dialog helper for message 0x4EC (0x005E8710).
+void __fastcall Unknown_005e8710(HWND dialog);
+// Cleared when the game lobby dialog gets message 0x497 (0x00A72D52).
+extern bool unknown_a72d52;
+// The network dialogs' result (0x00A71E8C; 2 on IDCANCEL, else the pressed button's id).
+extern int unknown_lobby_result_a71e8c;
+// The join dialog's game list accepts a selection (0x007E699C, initially true; set on message 0x497).
+extern bool unknown_join_list_7e699c;
+// Set from the observer mode when the join dialog's button 0x6CC is pressed (0x00A71E99).
+extern bool unknown_a71e99;
+// Message 0x4DB of the join dialog (0x005DEF80; hypothesis).
+bool __fastcall Unknown_005def80(long lparam, bool flag);
+// The LAN join dialog's procedure (0xBB; from Red Alert's Net_Join_Dialog): paint, tool tips, the game
+// list 0x549, the name edit 0x541, the chat line 0x540, the buttons 0x5C0, 0x6CC..0x6CE and the observer
+// radio buttons 0x75F/0x760, setup message 0x497 (0x005BE6B0).
+long __stdcall Join_Dialog_Proc_005be6b0(HWND window, unsigned message, unsigned wparam, long lparam);
+// The joined player's game lobby dialog procedure: destroy, paint, tool tips, the player row combo boxes,
+// the chat line, the ready button 0x59F and the setup message 0x497 (0x005C2330).
+long __stdcall Join_Lobby_Dialog_Proc_005c2330(HWND window, unsigned message, unsigned wparam, long lparam);
 
 
 #endif

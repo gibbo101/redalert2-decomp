@@ -156,6 +156,10 @@ struct UnknownGlobalPacket {
             int Why;                    // +0x2F the reason (4: by the host; Red Alert's REJECT_BY_OWNER)
         } Reject;                       // command 8 (NET_REJECT_JOIN)
         struct {
+            unsigned long ID;           // +0x2F the session's UniqueID
+            int Color;                  // +0x33 unknown_a3d3b4 (session +0x11C)
+        } Chat;                         // command 4 (Red Alert's NET_CHAT_ANNOUNCE)
+        struct {
             int Kickee;                 // +0x2F the id of the player proposed for a kick
             int Proposer;               // +0x33 the id of the player who proposes it
         } Kick;                         // command 0x1C (Propose_Kick_Player)
@@ -247,7 +251,8 @@ struct UnknownSessionState {
     char unknown_a9[0x104 - 0xA9];
     unsigned long UniqueID;                 // +0x104 (One_Time: Compute_Unique_ID)
     char Handle[20];                        // +0x108 the player's name (also unknown_name_a3d3a0)
-    char unknown_11c[0x124 - 0x11C];
+    char unknown_11c[0x120 - 0x11C];    // +0x11C (also unknown_a3d3b4)
+    int unknown_120;                        // +0x120 (the join dialog copies +0x130 here)
     int unknown_124;                        // +0x124 (also unknown_a3d3bc)
     char unknown_128[0x12C - 0x128];
     int unknown_12c;                        // +0x12C the player's colour (GDlgSupp 0x004D23C0)

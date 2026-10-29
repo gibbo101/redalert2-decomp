@@ -22,6 +22,7 @@ struct NodeNameType {
         struct {
             unsigned long LastTime;     // +0x34 the last time the player was heard from (0: not yet)
             unsigned char LastChance;   // +0x38 a NET_CHAT_REQUEST was sent before the removal
+            int Color;                  // +0x39 the chat colour (Red Alert's Chat.Color)
         } Chat;                         // an entry of unknown_chat_a3fa4c
     };
     int unknown_4b;                 // +0x4B the country (HouseTypes index; -3: random, read as 0 by Read_Scenario_INI)
