@@ -43,6 +43,7 @@ class InfantryClass;
 // An infantry unit (only its constructor and ObjectClass virtuals are used
 // here; 0x5D8 bytes; the full class is in the Infantry workers'
 // shared/infantry.hpp proposals, derived through FootClass).
+class InfantryTypeClass;
 class InfantryClass : public ObjectClass {
 public:
     InfantryClass(InfantryTypeClass *type, HouseClass *house);         // 0x004FF640
@@ -54,7 +55,9 @@ public:
     virtual int Kind_Of() const;
     virtual int Size_Of() const;
 
-    char unknown_098[0x5D8 - 0x98];         // TechnoClass/FootClass/InfantryClass members
+    char unknown_098[0x5A8 - 0x98];         // TechnoClass/FootClass members
+    InfantryTypeClass *Type;                // +0x5A8 (as shared/infantry.hpp; TeamClass 0x006B9BB0)
+    char unknown_5ac[0x5D8 - 0x5AC];        // InfantryClass members
 };
 #endif
 

@@ -396,17 +396,14 @@ public:
     int unknown_5dc;                        // +0x5DC
 };
 
-// Every infantry (0x00A35E48; shared/infantry.hpp in the Infantry work) and
-// the one infantry member BuildingClass slot 173 reads (a view until
-// infantry.hpp is installed).
-extern DynamicVectorClass<InfantryClass *> Infantry;
+// Every infantry (0x00A35E48): shared/techno.hpp. The one infantry member
+// BuildingClass slot 173 reads (a view until infantry.hpp is installed):
 struct UnknownBuildingInfantryView : TechnoClass {
     char unknown_418[0x494 - 0x418];
     ObjectClass *unknown_494;               // +0x494 (the building it heads for; hypothesis)
 };
 
-// Every building (0x00A40AF8).
-extern DynamicVectorClass<BuildingClass *> unknown_BuildingClass_list_00a40af8;
+// Every building (0x00A40AF8): shared/techno.hpp.
 // unknown_abstracts_ac0c80 (0x00AC0C80): shared/object_lists.hpp.
 
 // Writes [Structures] (0x0044B200; takes the INI by pointer; Write_Scenario_INI

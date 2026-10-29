@@ -97,6 +97,7 @@ public:
     void Unknown_0055D990(Cell const &cell);                              // 0x0055D990
     void Unknown_00562F50(CellClass *cell); // 00562F50: observed thiscall/RET4; unused return hypothesis
     CellClass *Unknown_005629D0(AbstractClass *object);                         // 0x005629D0 (the cell under an object; hypothesis)
+    int Unknown_0054E3A0(Cell const &cell, HouseClass *house);                 // 0x0054E3A0
     bool Unknown_0055A660(Cell const &cell, bool flag);                   // 0x0055A660
     bool Unknown_0055A740(CellClass *cell, bool flag);                          // 0x0055A740
     bool Unknown_0055A7F0(CoordStruct const &coord);                            // 0x0055A7F0

@@ -802,6 +802,10 @@ public:
 #else
 class BuildingClass;
 #endif
+// Every building (0x00A40AF8; TeamClass 0x006BCF70 scans it beside the full class).
+extern DynamicVectorClass<BuildingClass *> unknown_BuildingClass_list_00a40af8;
+// Every infantry (0x00A35E48; the global-list unit's name; TeamClass 0x006B91C0 scans it).
+extern DynamicVectorClass<InfantryClass *> Infantry;
 
 // Every techno (0x00A40C20) and two other lists it joins (0x00AC0D08) or
 // may join (0x00AC0BF8, while unknown_108 is set).

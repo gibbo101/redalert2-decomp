@@ -110,6 +110,11 @@ inline CoordStruct Cell_Center(Cell cell)
 {
     return CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0);
 }
+// The same from a cell reference (InfantryClass; TeamClass 0x006B91C0 reads a returned cell in place).
+inline CoordStruct Cell_Coord(Cell const &cell)
+{
+    return CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0);
+}
 
 // The cell at X, Y (Westwood's XY_Cell; the original passes int
 // coordinates, narrowed only when stored).

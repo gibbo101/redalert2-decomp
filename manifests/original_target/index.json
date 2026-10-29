@@ -344,7 +344,7 @@
       },
       {
         "path": "src/shared/coord.hpp",
-        "sha256": "1fcde0f12f4342fbd01625ac5620a75a63a517a4a931a25a29d3a43a3c4dd9c9"
+        "sha256": "7ebc9c28a6c066db03e36fdea6e2fad58591edfe3de7b4eb03f43d6b0dc4d264"
       },
       {
         "path": "src/shared/mission.hpp",
@@ -408,7 +408,7 @@
       },
       {
         "path": "src/shared/techno.hpp",
-        "sha256": "3ced00072db9ea6d17e74aacbba54dbcb13e3f88fa1a2d79da2a61d8d7493fe5"
+        "sha256": "1b3c39150d6242205887428583ce3ce97c2c7b929952abd7a5eb483fc71fc246"
       },
       {
         "path": "src/shared/techno_type.hpp",
@@ -436,7 +436,7 @@
       },
       {
         "path": "src/shared/infantry_type.hpp",
-        "sha256": "f9056af7453897b311be0edf94f041f4654b4cda37b76599c907ef546744cb53"
+        "sha256": "cf6a4247a07897dcde84fa0e432e74ffd703dc23af8c0e8daf7f2d85ab61dd4b"
       },
       {
         "path": "src/shared/mouse_class.hpp",
@@ -592,7 +592,7 @@
       },
       {
         "path": "src/shared/team.hpp",
-        "sha256": "f6ba8b3e4316434864ead3a7a623a7a5671490263475420668c9e97e55428fd7"
+        "sha256": "383cb3a85e2afbe60718fd3772b730ba61c8ffd219aaaef30a3e3d8a880843f5"
       },
       {
         "path": "src/shared/team_type.hpp",
@@ -804,7 +804,7 @@
       },
       {
         "path": "src/shared/infantry.hpp",
-        "sha256": "aaf59b3ba6605337576acfcf4b38893d3a0283cc548a598d31515f59e91f9841"
+        "sha256": "55d2b7ff08e3e02744fde536411b300bcac0de397e8ff623de9e5bc1c0a55a65"
       },
       {
         "path": "src/shared/isometric_tile.hpp",
@@ -912,7 +912,7 @@
       },
       {
         "path": "src/shared/map_view.hpp",
-        "sha256": "2b6c02539d5ed8c9b685a13ca6a57da53c3965c88b9c2b2a9e355d7d78a487c9"
+        "sha256": "3aa65eae1f3df4d7aa582d960a4c9379cf26ee329a19dc87602a5bf008e0365e"
       },
       {
         "path": "src/shared/overlay_view.hpp",
@@ -1420,7 +1420,7 @@
       },
       {
         "path": "src/shared/building_class.hpp",
-        "sha256": "b53bf7b03543aae9f923a63dc36ceeb5e197fcaa11f13b9907a54f30fa1672f3"
+        "sha256": "0a18186dfa763c10b9afcca3619a4368cee4355cd60f6e5cc8f62280bddfa5bb"
       },
       {
         "path": "src/shared/building_type_class.hpp",
@@ -4716,7 +4716,8 @@
     "population-2930",
     "population-2931",
     "population-2932",
-    "population-2933"
+    "population-2933",
+    "population-2934"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -5841,9 +5842,9 @@
     ["population-12", 1],
     ["population-2755", 14],
     ["population-2416", 18],
-    ["population-2473", 10],
+    ["population-2934", 10],
     ["population-02", 4],
-    ["population-2473", 2],
+    ["population-2934", 2],
     ["population-2820", 19],
     ["population-11", 2],
     ["population-2648", 11],
@@ -6354,7 +6355,7 @@
     ["population-2253", 71],
     ["population-66", 4],
     ["population-2723", 1],
-    ["population-2473", 1],
+    ["population-2934", 1],
     ["population-2931", 1],
     ["population-1630", 1],
     ["population-66", 1],
@@ -6537,7 +6538,7 @@
     ["population-2723", 2],
     ["population-2419", 1],
     ["population-2416", 1],
-    ["population-2473", 1],
+    ["population-2934", 1],
     ["population-88", 1],
     ["population-2820", 1],
     ["population-88", 7],
@@ -6842,7 +6843,7 @@
     ["population-477", 2],
     ["population-2421", 2],
     ["population-2768", 2],
-    ["population-2473", 4],
+    ["population-2934", 4],
     ["population-2648", 2],
     ["population-2578", 2],
     ["population-2729", 2],
@@ -6964,7 +6965,7 @@
     ["population-2740", 16],
     ["population-2422", 10],
     ["population-2820", 12],
-    ["population-2473", 5],
+    ["population-2934", 5],
     ["population-2712", 11],
     ["population-2787", 18],
     ["population-1627", 6],
@@ -7269,10 +7270,10 @@
     ["population-2630", 6],
     ["population-2669", 6],
     ["population-2903", 22],
-    ["population-2473", 42],
+    ["population-2934", 42],
     ["population-2903", 7],
     ["population-2536", 6],
-    ["population-2473", 7],
+    ["population-2934", 7],
     ["population-2783", 1],
     ["population-2903", 12],
     ["population-2541", 4],
@@ -7417,7 +7418,7 @@
     ["population-2016", 9],
     ["population-2017", 8],
     ["population-2648", 2],
-    ["population-2473", 5],
+    ["population-2934", 5],
     ["population-2919", 2],
     ["population-2096", 3],
     ["population-2783", 5],
@@ -7887,7 +7888,8 @@
     ["population-2930", 1],
     ["population-2931", 2],
     ["population-2932", 1],
-    ["population-2933", 1]
+    ["population-2933", 1],
+    ["population-2934", 11]
   ],
   "shards": {
     "population-01": "4b0f87513bbb41ad857e15c75653a11a7634d4ed06f4731764ef3cca69dbf5a9",
@@ -9535,7 +9537,7 @@
     "population-2470": "b2c08cd221adfcfbd0e0f64b43308c20897aae2e9a5e4c4a2a57d6bacd3163ca",
     "population-2471": "4773f4284f2d3c5b09f7ffeb0c5c2031bb0e9f9db71fe5c81d0fcb3ea410b45b",
     "population-2472": "d80aa18d03f7b9bf993cbbbc489da1e5dc31d321cdd13606dcac7fecb1668d77",
-    "population-2473": "2a52593f472de06b715f2585fef499bb129150f5cd7283d77245aa2b5f5f0c56",
+    "population-2473": "ab1d439030cbc4086b4e807e81b46e0588d06cb72610644ae86643c3ace1fe6f",
     "population-2474": "fbb01f8aed8ee44b3a0a9fb20769cd1758609950511dd5e34a724545aa70c02f",
     "population-2475": "3e113c30c3c8955e3da5216ac6ea4808fe5616167f10ef0568dabed66e3968a8",
     "population-2476": "45978e991f03dbde65907f2f87731680c7aab2ccf99290fef0530fa9cd7a17e3",
@@ -10047,6 +10049,7 @@
     "population-2931": "93a59d86fc0a4b345b83248df7b7d9dd241278218404e6d73d7302ccf1dfe4c2",
     "population-2932": "6d808371cc0a924f2917a31b6b8b3931579c14c76f2b85ca6c2a1896c1052861",
     "population-2933": "8a284f2b54a115c3fbb3c25afd70284d928070538b79387868c63b997febce79",
+    "population-2934": "8867c4305884689505c30fdc2749d2ee047728de4135fdd0322da25d7b028d22",
     "population-294": "485af9555adbff0bb80dc1b878959bb630e3e74c520054ff12920e883ce8b196",
     "population-295": "8248c9fb13059a3c703cab1a123b0c7ba4943a8d5f73e5ca498edeafffcd0a19",
     "population-296": "3e57d29a0742899af130576ac396fab325916a98c8e786a82ebaa850ff0a2cb4",

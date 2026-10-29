@@ -212,8 +212,7 @@ public:
     int unknown_5d4;                            // +0x5D4
 };
 
-// Every infantry (0x00A35E48; the global-list unit's name).
-extern DynamicVectorClass<InfantryClass *> Infantry;
+// Every infantry (0x00A35E48): shared/techno.hpp.
 
 // The spot (sub-cell) index of a coordinate (0x004763D0; ECX = &coord, so
 // declared fastcall; owner hypothesis CellClass static).
@@ -251,11 +250,7 @@ inline Cell Adjacent_Cell(Cell const &cell, int facing)
     return AdjacentCell[facing & 7] + cell;   // Westwood's form: the offset is the left operand (FootClass 0x004C45B0, slot 129)
 }
 #endif
-// The centre of a cell at ground height 0.
-inline CoordStruct Cell_Coord(Cell const &cell)
-{
-    return CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0);
-}
+// Cell_Coord: shared/coord.hpp.
 // The direction from one coordinate to another (hypothesis: Westwood's
 // Direction, by value; as in BulletClass slot 116).
 inline UnknownFacingDir Direction_Of(CoordStruct from, CoordStruct to)

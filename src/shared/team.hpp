@@ -38,10 +38,11 @@ bool Unknown_0051FC50();                                            // 0x0051FC5
 void Unknown_0051FBB0();                                            // 0x0051FBB0 (sets 0x00A51944 when that flag is set)
 void __fastcall Unknown_0051F930(int arg1, int arg2, Cell arg3, int arg4);   // 0x0051F930
 void __fastcall Unknown_006D8FD0(FootClass *member, int arg2);       // 0x006D8FD0
+int __fastcall Unknown_006220E0(int value);                          // 0x006220E0 (the target kind for a script argument; hypothesis)
 
 class BuildingTypeClass;
-// Picks the target for a team (0x006BCF70; a fastcall over a building type;
-// hypothesis).
+// The enemy building of a type that rates best by mode (0x006BCF70: lowest or highest house
+// value of its cell's block, nearest or farthest from member; see its source).
 AbstractClass *__fastcall Unknown_006BCF70(BuildingTypeClass *type, HouseClass *enemy, FootClass *member, int arg4, bool arg5);
 
 
@@ -72,6 +73,7 @@ public:
     bool unknown_func_6b8bb0();                                     // 0x006B8BB0 (updates the strength flags after the members changed)
     bool unknown_func_6b8cc0(FootClass *member);                    // 0x006B8CC0 (adds a member)
     bool unknown_func_6b8dc0(FootClass *member, int *slot);         // 0x006B8DC0 (whether member may join; its task force slot)
+    int unknown_func_6b91c0(int slot);                              // 0x006B91C0 (Red Alert's Recruit: adds the nearest object for a task force slot)
     void unknown_func_6b9610(AbstractClass **first, AbstractClass **second);   // 0x006B9610
     void unknown_func_6b8860();                                     // 0x006B8860
     void unknown_func_6b79e0(AbstractClass *target);                // 0x006B79E0 (sets the team's target)
@@ -86,7 +88,7 @@ public:
     void unknown_func_6bd870(DynamicVectorClass<TechnoTypeClass *> &types);   // 0x006BD870 (the techno types the task force still lacks)
     static void __fastcall unknown_func_6ba8e0(int priority, HouseClass *house);   // 0x006BA8E0 (disbands the lower-priority teams of a house)
     bool unknown_func_6ba7d0(FootClass *member);                    // 0x006BA7D0
-    void unknown_func_6ba600();                                     // 0x006BA600
+    bool unknown_func_6ba600();                                     // 0x006BA600 (moves stray members back; returns and keeps whether any lags: Red Alert's Lagging_Units)
     bool unknown_func_6ba8b0(FootClass *object);                    // 0x006BA8B0 (whether object is a member)
     bool unknown_func_6baa00();                                     // 0x006BAA00 (whether every member has +0x32D set)
     void unknown_func_6bd990(int value);                            // 0x006BD990 (stores value in every member)
@@ -131,6 +133,9 @@ public:
     void TMission_unknown_6bc1e0(ScriptMissionClass const &mission, int unknown);  // 0x006BC1E0 (jump to line Data - 2)
     void TMission_unknown_6bc250(ScriptMissionClass const &mission, int unknown);  // 0x006BC250 (nothing)
     void TMission_unknown_6bd7f0(ScriptMissionClass const &mission, int unknown);  // 0x006BD7F0 (also sets IsSuspended)
+    void TMission_unknown_6bae60(ScriptMissionClass const &mission, bool unknown);  // 0x006BAE60
+    void TMission_unknown_6bc7b0(ScriptMissionClass const &mission, int unknown);  // 0x006BC7B0
+    void TMission_unknown_6bb480(ScriptMissionClass const &mission, int unknown);  // 0x006BB480 (leader picks a target of kind Data; done once members are armed)
 
     virtual HRESULT __stdcall GetClassID(GUID *clsid);              // 0x006BABF0 slot 3
     virtual HRESULT __stdcall Load(IStream *stream);                // 0x006BAAE0 slot 5
