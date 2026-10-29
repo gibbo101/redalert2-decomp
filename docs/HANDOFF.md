@@ -19,7 +19,9 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes: none. Lanes read docs/WESTWOOD_SOURCES.md before drafting library members. Debt154 merged the two 0x4F52B0 names
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Team159 the TeamClass unit; Terrain160
+the TerrainClass unit. Windows lead: r43-r45 landed (858ffa6d); codex2 approved for the three ScoreFontClass methods;
+the user approved the map-generator 0xA6FD68/A0 ownership rename (lead delivers it alone, rebased on main). Lanes read docs/WESTWOOD_SOURCES.md before drafting library members. Debt154 merged the two 0x4F52B0 names
 (b24cc60c). Inf148 (InfantryClass) parked, zero bytes.
 Landed this evening: Modem141, Base142 (Base unit complete), Ref143 (Release 0x639720, CampaignProperties and
 Territory ctors), Score144 (CampaignScoreClass ctor 0x465BF0), VoxAnim145 (VoxelAnimClass::AI 0x70D380), Air146

@@ -212,6 +212,12 @@ void __fastcall Unknown_0047E2C0(CoordStruct const &coord, int damage, int arg3,
 // coordinate by value on the stack, damage in ECX, warhead in EDX;
 // VoxelAnimClass::AI after Unknown_0047E2C0; hypothesis).
 void __fastcall Unknown_0047F600(CoordStruct coord, int damage, WarheadTypeClass *warhead, int arg4, int arg5);
+// The animation a warhead leaves where it hits (0x0047F4D0, defined in
+// unowned/Select_Damage_Anim_0047f4d0.cpp).
+AnimTypeClass *__fastcall Select_Damage_Anim(int damage, WarheadTypeClass *warhead, int land, CoordStruct *coords);
+// Returns -15 for any coordinate (0x0047FCC0; a height adjustment for new
+// animations, hypothesis).
+int __stdcall Unknown_0047FCC0(CoordStruct position);
 
 // The overlay types (AnimClass 0x00423B90): shared/overlay_view.hpp.
 #include "shared/overlay_view.hpp"
