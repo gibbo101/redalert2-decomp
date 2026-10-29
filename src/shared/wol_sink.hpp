@@ -368,6 +368,8 @@ extern "C" void *__cdecl memcpy(void *destination, void const *source, unsigned 
 // Non-polymorphic server array observed at 0x00b2a700.
 class WolServerArray {
 public:
+    WolServerArray() : Count(0), Capacity(0), Items(0) {}
+    ~WolServerArray() { Count = 0; operator delete(Items); }
     int Count;
     int Capacity;
     WOL::Server *Items;
@@ -444,18 +446,78 @@ public:
 };
 class WolIntArray {
 public:
+    WolIntArray() : Count(0), Capacity(0), Items(0) {}
+    ~WolIntArray() { Count = 0; operator delete(Items); }
     int Count;
     int Capacity;
     int *Items;
     bool Get_00768260(int &value, int index);
+    bool Grow() {
+        if (Count < Capacity) return false;
+        int capacity = Count * 2;
+        if (capacity < 10) capacity = 10;
+        int *items = (int *)operator new(capacity * sizeof(int));
+        memset(items, 0, capacity * sizeof(int));
+        if (Items) memcpy(items, Items, Count * sizeof(int));
+        operator delete(Items);
+        Items = items;
+        Capacity = capacity;
+        return true;
+    }
+    bool Shrink() {
+        if (Count * 3 > Capacity) return false;
+        int capacity = Capacity / 2;
+        if (capacity < 10) capacity = 10;
+        if (capacity >= Capacity) return false;
+        int *items = (int *)operator new(capacity * sizeof(int));
+        if (Items) memcpy(items, Items, Count * sizeof(int));
+        operator delete(Items);
+        Items = items;
+        Capacity = capacity;
+        return true;
+    }
+    bool Grow_00768290();
+    bool Insert_00766f90(int const &value, int index);
     bool Remove_007681a0(int index);
 };
 class WolStringArray {
 public:
+    WolStringArray() : Count(0), Capacity(0), Items(0) {}
+    ~WolStringArray() {
+        for (int i = 0; i < Count; ++i) Items[i].~Wstring();
+        Count = 0;
+        operator delete(Items);
+    }
     int Count;
     int Capacity;
     Wstring *Items;
     bool Grow_00768320();
+    bool Grow() {
+        if (Count < Capacity) return false;
+        int capacity = Count * 2;
+        if (capacity < 10) capacity = 10;
+        Wstring *items = (Wstring *)operator new(capacity * sizeof(Wstring));
+        memset(items, 0, capacity * sizeof(Wstring));
+        if (Items) memcpy(items, Items, Count * sizeof(Wstring));
+        operator delete(Items);
+        Items = items;
+        Capacity = capacity;
+        return true;
+    }
+    bool Shrink_00767b20();
+    bool Remove_007661f0(int index);
+    bool Shrink() {
+        if (Count * 3 > Capacity) return false;
+        int capacity = Capacity / 2;
+        if (capacity < 10) capacity = 10;
+        if (capacity >= Capacity) return false;
+        Wstring *items = (Wstring *)operator new(capacity * sizeof(Wstring));
+        if (Items) memcpy(items, Items, Count * sizeof(Wstring));
+        operator delete(Items);
+        Items = items;
+        Capacity = capacity;
+        return true;
+    }
     bool Get(Wstring &text, int index) {
         if (index >= 0 && index < Count) { text = Items[index]; return true; }
         return false;
@@ -472,14 +534,136 @@ public:
     }
 
 };
-// Key and chain prefix only; the payload has not been identified.
-class WolChannelNameSet {
+// WOnline's chained hash dictionary (the shape of Westwood's WOL library
+// Dictionary<K,V>: table, entries, size, tableBits, log2Size, keepSize,
+// hashFunc, then SHRINK_THRESHOLD 0.2, EXPAND_THRESHOLD 0.8 and
+// MIN_TABLE_SIZE 128). The file statics' initializers and atexit destructors
+// (0x0073AA80..0x0073BC30) inline the constructor and destructor; the
+// destructor inlines clear() and shrink().
+unsigned int __fastcall Hash_Name_005c2ba0(Wstring const &name);
+template<class K, class V> class WolDictionary {
 public:
-    struct Node { Wstring Key; int unknown_04; Node *Next; };
+    struct Node { K Key; V Value; Node *Next; };
+    WolDictionary(unsigned int (__fastcall *hash)(K const &key))
+        : ShrinkLimit(0.2), GrowLimit(0.8), MinimumBuckets(0x80)
+    {
+        unknown_10 = MinimumBuckets;
+        BucketCount = MinimumBuckets;
+        Bits = 0;
+        while (unknown_10) {
+            ++Bits;
+            unknown_10 >>= 1;
+        }
+        --Bits;
+        BucketCount = 1 << Bits;
+        Count = 0;
+        ResizeLocked = false;
+        Buckets = new Node *[BucketCount];
+        memset(Buckets, 0, BucketCount * sizeof(Node *));
+        Hash = hash;
+    }
+    ~WolDictionary()
+    {
+        for (unsigned int index = 0; index < BucketCount; ++index) {
+            Node *node = Buckets[index];
+            while (node) {
+                Node *old = node;
+                node = node->Next;
+                delete old;
+            }
+            Buckets[index] = 0;
+        }
+        Count = 0;
+        while (Get_Size() > MinimumBuckets && !ResizeLocked) Shrink_Table();
+        delete [] Buckets;
+    }
+    unsigned int Get_Size() const { return BucketCount; }
+    unsigned int Key_Hash(K const &key) const
+    {
+        unsigned int hash = Hash(key);
+        return ((1u << Bits) - 1) & hash;
+    }
+    bool Get_Pointer(K const &key, V **value) const
+    {
+        if (Count == 0) return false;
+        Node *node = Buckets[Key_Hash(key)];
+        if (node == 0) return false;
+        while (node != 0 && !(node->Key == key)) node = node->Next;
+        if (node == 0) return false;
+        *value = &node->Value;
+        return true;
+    }
+    void Grow_Table()
+    {
+        if (ResizeLocked != true) {
+            int old_count = BucketCount;
+            Node **old_buckets = Buckets;
+            BucketCount *= 2;
+            ++Bits;
+            Buckets = new Node *[BucketCount];
+            memset(Buckets, 0, BucketCount * sizeof(Node *));
+            for (int index = 0; index < old_count; ++index) {
+                Node *node = old_buckets[index];
+                while (node) {
+                    unsigned int hash = Hash(node->Key);
+                    unsigned int bucket = ((1u << Bits) - 1) & hash;
+                    Node *head = Buckets[bucket];
+                    Buckets[bucket] = node;
+                    Node *next = node->Next;
+                    node->Next = head;
+                    node = next;
+                }
+            }
+            delete [] old_buckets;
+        }
+    }
+    void Shrink_Table()
+    {
+        if (BucketCount > MinimumBuckets && ResizeLocked != true) {
+            int old_count = BucketCount;
+            Node **old_buckets = Buckets;
+            BucketCount >>= 1;
+            --Bits;
+            Buckets = new Node *[BucketCount];
+            memset(Buckets, 0, BucketCount * sizeof(Node *));
+            for (int index = 0; index < old_count; ++index) {
+                Node *node = old_buckets[index];
+                while (node) {
+                    unsigned int hash = Hash(node->Key);
+                    unsigned int bucket = ((1u << Bits) - 1) & hash;
+                    Node *head = Buckets[bucket];
+                    Buckets[bucket] = node;
+                    Node *next = node->Next;
+                    node->Next = head;
+                    node = next;
+                }
+            }
+            delete [] old_buckets;
+        }
+    }
     Node **Buckets;
-    unsigned int Count, BucketCount, Bits;
-    char unknown_10[8];
-    unsigned int (__fastcall *Hash)(Wstring const &key);
+    unsigned int Count;
+    unsigned int BucketCount;
+    unsigned int Bits;
+    unsigned int unknown_10;            // log2Size (scratch of the constructor)
+    bool ResizeLocked;
+    char unknown_15[3];
+    unsigned int (__fastcall *Hash)(K const &key);
+    void *unknown_1c;
+    double ShrinkLimit;
+    double GrowLimit;
+    unsigned int MinimumBuckets;
+};
+// Name sets: the value is a 4-byte payload that has not been identified.
+class WolChannelNameSet : public WolDictionary<Wstring, int> {
+public:
+    WolChannelNameSet() : WolDictionary<Wstring, int>(Hash_Name_005c2ba0) {}
+    bool Get_Pointer_00767570(Wstring const &key, int **value) const;
+    bool Remove_007675e0(Wstring const &key, int *old_value);
+    void Shrink_00767850();
+    void Grow_00767900();
+    unsigned int Key_Hash_007679a0(Wstring const &key) const;
+    bool Add_00766070(Wstring const &key, int const &value);
     bool Contains(Wstring const &key) const {
         unsigned int hash = Hash(key);
         for (Node *node = Buckets[((1u << Bits) - 1) & hash]; node; node = node->Next) {
@@ -488,21 +672,29 @@ public:
         return false;
     }
 };
-class WolLadderCache {
+// A second name table (0x00B29848): another 4-byte payload, a separate instance.
+class WolNameTable : public WolDictionary<Wstring, unsigned int> {
 public:
-    struct Node { Wstring Key; WOL::Ladder Value; Node *Next; };
-    Node **Buckets;
-    unsigned int Count;
-    unsigned int BucketCount;
-    unsigned int Bits;
-    unsigned int unknown_10;
-    bool ResizeLocked;
-    char unknown_15[3];
-    unsigned int (__fastcall *Hash)(Wstring const &key);
-    void *unknown_1c;
-    double ShrinkLimit;
-    double GrowLimit;
-    unsigned int MinimumBuckets;
+    WolNameTable() : WolDictionary<Wstring, unsigned int>(Hash_Name_005c2ba0) {}
+    bool Get_Pointer_00767bb0(Wstring const &key, unsigned int **value) const;
+    void Shrink_00767c20();
+    unsigned int Key_Hash_00767cd0(Wstring const &key) const;
+    void Clear_007662f0();
+};
+// Channel records by name (0x00B29478).
+class WolChannelDictionary : public WolDictionary<Wstring, WOL::Channel> {
+public:
+    WolChannelDictionary() : WolDictionary<Wstring, WOL::Channel>(Hash_Name_005c2ba0) {}
+    bool Get_Pointer_00767cf0(Wstring const &key, WOL::Channel **value) const;
+    bool Remove_00767d60(Wstring const &key, WOL::Channel *old_value);
+    void Shrink_00768010();
+    void Clear_00766400();
+};
+class WolLadderCache : public WolDictionary<Wstring, WOL::Ladder> {
+public:
+    WolLadderCache() : WolDictionary<Wstring, WOL::Ladder>(Hash_Name_005c2ba0) {}
+    bool Get_Pointer_007670f0(Wstring const &key, WOL::Ladder **value) const;
+    unsigned int Key_Hash_00767550(Wstring const &key) const;
     bool Remove_00767160(Wstring const &key, WOL::Ladder *old_value);
     void Shrink_00767400();
     void Grow_007674b0();
@@ -563,6 +755,18 @@ extern WolChannelArray unknown_lobbies_b26c88;
 extern WolChannelArray unknown_games_b29990;
 extern WolStringArray unknown_game_names_b2a648;
 extern WolStringArray unknown_pending_names_b29468;
+extern WolStringArray unknown_strings_b26a50;
+extern WolStringArray unknown_strings_b26570;
+extern WolStringArray unknown_strings_b299b0;
+extern WolStringArray unknown_strings_b29380;
+extern WolStringArray unknown_strings_b26960;
+extern WolStringArray unknown_strings_b2a6c8;
+extern WolStringArray unknown_strings_b26580;
+extern WolStringArray unknown_strings_b29000;
+extern WolStringArray unknown_strings_b26920;
+extern WolStringArray unknown_strings_b29838;
+extern WolStringArray unknown_strings_b2a7d8;
+extern WolStringArray unknown_strings_b29980;
 extern WolChannelNameSet unknown_channel_names_b293a0;
 extern WolLadderCache *unknown_ladder_cache_b2ac24;
 extern WolLadderClient *unknown_ladder_client_a72d00;
@@ -578,10 +782,13 @@ WIN32_IMPORT BOOL WINAPI KillTimer(HWND window, unsigned int id);
 // WolUserArray is a descriptive recovery name; original template spelling is unknown.
 class WolUserArray {
 public:
+    WolUserArray() : Count(0), Capacity(0), Items(0) {}
+    ~WolUserArray() { Count = 0; operator delete(Items); }
     int Count, Capacity;
     WOL::User *Items;
     bool Insert_00765e90(WOL::User const &user, int index);
     bool Grow_00766e60();
+    bool Shrink_00766f00();
     bool Get(WOL::User &user, int index) const; // 0x00766020
     bool Get(WOL::User *&user, int index) const {
         if (index >= 0 && index < Count) { user = Items + index; return true; }
@@ -599,6 +806,10 @@ public:
 extern WolUserArray unknown_users_b2a728;
 extern WolChannelNameSet unknown_known_names_b294b8;
 extern WolLadderCache unknown_ladder_b296f8;
+extern WolLadderCache unknown_ladder_b26970;
+extern WolLadderCache unknown_ladder_b2ab98;
+extern WolNameTable unknown_names_b29848;
+extern WolChannelDictionary unknown_channels_b29478;
 extern char unknown_query_b2b420[512];
 extern int unknown_query_count_b2abf4;
 extern int unknown_a72d08;
