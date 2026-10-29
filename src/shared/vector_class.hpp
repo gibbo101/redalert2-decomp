@@ -132,6 +132,9 @@ public:
 #ifdef VECTOR_IMPLEMENT_DYNAMIC_CLEAR
 #define VECTOR_IMPLEMENT_VECTOR_CLEAR
 #endif
+#if defined(VECTOR_IMPLEMENT_DYNAMIC_ID_OBJECT) || defined(VECTOR_IMPLEMENT_DYNAMIC_ADD)
+#define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
+#endif
 #ifdef VECTOR_IMPLEMENT_DYNAMIC_ID_POINTER
 #define VECTOR_IMPLEMENT_VECTOR_ID_POINTER
 #endif
@@ -417,11 +420,14 @@ int DynamicVectorClass<T>::ID(T const *ptr)
 #ifdef VECTOR_IMPLEMENT_DYNAMIC_ID_OBJECT
 // Slot 4: first index among the active elements equal to `object`, or -1.
 // Unlike the base lookup it does not consult IsValid.
+// Elements are read through operator[] (Westwood DYNAVEC.CPP / wwlib vector.h); the
+// direct `Vector[index]` read moves operand tie-breaks in inlining callers
+// (InfantryTypeClass ctor 0x00509B20 together with Add below).
 template <class T>
 int DynamicVectorClass<T>::ID(T const &object)
 {
     for (int index = 0; index < ActiveCount; index++) {
-        if (Vector[index] == object) {
+        if ((*this)[index] == object) {
             return index;
         }
     }
@@ -445,6 +451,8 @@ DynamicVectorClass<T> &DynamicVectorClass<T>::operator=(DynamicVectorClass<T> co
 // Appends `object`. When full, grows by GrowthStep through the virtual
 // Resize, but only for owned or still unallocated storage and a positive
 // step; returns false when it cannot grow.
+// The store is Westwood's `(*this)[ActiveCount++] = object` (Red Alert DYNAVEC.CPP and
+// Renegade wwlib vector.h agree); a named index local changes inlining callers.
 template <class T>
 bool DynamicVectorClass<T>::Add(T const &object)
 {
@@ -457,8 +465,7 @@ bool DynamicVectorClass<T>::Add(T const &object)
             return false;
         }
     }
-    int index = ActiveCount++;
-    Vector[index] = object;
+    (*this)[ActiveCount++] = object;
     return true;
 }
 #endif

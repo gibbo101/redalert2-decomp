@@ -518,3 +518,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   accepted 0x516C40 - cause unknown (fallback: extern char arrays as 0x482FE0 does). Queue_AI 0x623770 exact only with
   static Queue_AI_Multiplayer 0x623B00 (3355) in the unit plus the Next 0x62E9E0 seed take-over (pop-42).
   Extract_Compressed_Events 0x6282D0 43.24 (registers/frame), 0x629220 82.05.
+- WorldDom.cpp after SendFile221 (build/class-work/SendFile221/NOTES.md, misses/768c70): Faction_Select_Dialog 0x768C70
+  82.11 (Load_Image static helper and three named image members zeroed in the init list fix the dtor inlining and vptr
+  order, so header and dtor 0x768800 change together; remaining: register arguments set before the stack pushes).
+  0x768E90 (1272 B state machine) not started, needs ctor COMDAT 0x769790 in the plan; Mouse_Move 0x768840 64.00.
