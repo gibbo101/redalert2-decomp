@@ -31,6 +31,7 @@
 #define RA2_SHARED_TEAM_TYPE_HPP
 
 #include "shared/abstract_type.hpp"
+#include "shared/type_list.hpp"
 
 class ObjectClass;
 class FootClass;
@@ -67,6 +68,9 @@ public:
     static void __fastcall Write_Scenario_INI(CCINIClass &ini, int is_global);  // 0x006BFCA0
     Cell Waypoint_Location() const;                               // 0x006BFA90 (the waypoint's cell; hypothesis)
     TeamClass *Create_One_Of(HouseClass *house);                  // 0x006BEC80 (a new team of this type; hypothesis)
+    // The team types a house may make now (0x006BED50; RA's Suggested_New_Team,
+    // which returned one type; name hypothesis).
+    static TypeList<TeamTypeClass const *> __fastcall Suggested_New_Teams(HouseClass *house, bool alerted);
     Cell Transport_Waypoint_Location() const;                     // 0x006BFAD0 (the transport waypoint's cell; hypothesis)
     bool unknown_func_6c0010(FootClass *foot, HouseClass *house);      // 0x006C0010 (the foot may join a team of this type; HouseClass::Can_Build_Team)
     void unknown_func_6c0110(int value) const;                      // 0x006C0110 (each team of this type)

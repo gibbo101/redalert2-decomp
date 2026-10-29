@@ -248,3 +248,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   HouseClass::AI is one function 0x4E4110..0x4E4EE7 (3536 B; inventory rows 0x4E4110 + 0x4E414C), a class-lane
   target of its own (raw seed 24.45). Inventory artifacts: TEventClass 0x6E6D9D is 3 NOPs before the accepted
   ??_G 0x6E6DA0; DynamicVectorClass<FoggedObjectClass *> lists 0x478CB0 as a vptr writer.
+- TeamClass (Team159 v/, NOTES; score inside the unit with HDR=h3): 0x6BC980 98.37 (Member load register),
+  0x6BD240 94.55 (x87 sum order in case 2), 0x6BB0F0 75.38 (this/leader registers), 0x6BE010 69.08 (0x6BDD80 stays
+  a call in the original). Type hypotheses in landed source: 0x6BC7B0 casts 0x6BCF70's result to ObjectClass *;
+  0x6B91C0 reads the stand-in Infantry elements as FootClass *. Inventory rows 0x6BBEE1 and 0x6BC565 are mid-function.

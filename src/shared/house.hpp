@@ -282,6 +282,9 @@ public:
         }
         return this == unknown_player_a35db4;
     }
+    // The team types the house may make now (0x004E5CF0; RA's name, whose version
+    // returned one type; HouseClass::AI expands it).
+    TypeList<TeamTypeClass const *> Suggested_New_Team(bool alerted);
     void unknown_func_4f2fc0();                            // 0x004F2FC0 (HouseClass::AI: the player's spy satellite view)
     void unknown_func_4f2e50();                            // 0x004F2E50 (HouseClass::AI: the player's radar)
     bool unknown_func_4f64c0(BaseNodeClass const &node);   // 0x004F64C0 (the node may be built now; BaseClass::Next_Buildable_Index)
