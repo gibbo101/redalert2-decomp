@@ -21,8 +21,8 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 
 Running Mac lanes: Study152 (Opus, study, ~400K output tokens) the VC6 /Ob2 inline-budget rule behind five open
 misses (BuildingLight ctor, Campaign and WDT Map ctors, MultiplayerGameMode 0x5B8490, MSPrintAnim::Draw);
-Unit153 (Opus) UnitClass remainder (slot 86 retry, then 0x6FAA30/0x6FDFC0/0x6FF690/0x7005B0/0x707F60); Debt154
-(Sonnet) merge the two 0x4F52B0 names in house.hpp (rename spec). Inf148 (InfantryClass) parked, zero bytes.
+Unit153 (Opus) UnitClass remainder (slot 86 retry, then 0x6FAA30/0x6FDFC0/0x6FF690/0x7005B0/0x707F60). Debt154 merged the two 0x4F52B0 names
+(b24cc60c). Inf148 (InfantryClass) parked, zero bytes.
 Landed this evening: Modem141, Base142 (Base unit complete), Ref143 (Release 0x639720, CampaignProperties and
 Territory ctors), Score144 (CampaignScoreClass ctor 0x465BF0), VoxAnim145 (VoxelAnimClass::AI 0x70D380), Air146
 (AircraftClass slot 147 0x415210), BLight150 (~BuildingLightClass 0x4332F0), Unit149

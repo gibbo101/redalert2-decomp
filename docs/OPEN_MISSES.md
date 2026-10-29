@@ -127,8 +127,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   the unit; the original calls 0x41FDF0 out of line at 0x5ACC73, 0x5AD2D3, 0x5AD777, 0x5AF04D, 0x5AF50D while
   other sites expand an inline (Rect ctor 0x42BCD0 calls). Needs a rect.hpp/rect_intersect.hpp design (the
   expanding sites likely use a different inline). Symbol ?Draw@MSPrintAnim@@UAEXPAVSurface@@PBVRect@@@Z.
-- Name debt: 0x4F52B0 is declared twice in house.hpp, `bool Unknown_004F52B0()` (Para131 and earlier callers)
-  and `bool unknown_func_4f52b0()` (Obj126, the defining source). Merge with an apply_rename spec.
+- Stale 0x4F52B0 manglings left in reference tables after Debt154 (harmless, no source user): two truncated @ref
+  lines `?Unknown_004F52B0@HouseClass@@` in BuildingClass 0x443BA0 and 0x4519D0, and `?unknown_func_4f52b0@
+  HouseClass@@QAEHXZ` (int return) rows.
 - ScoreFontClass Print_Char 0x667B60 98.89, Print 0x667C70 99.11, Char_Pixel_Width 0x667AA0 98.28 (Score132
   misses/): one shared blocker, the char-index clamp's first test is `add eax,-0x21; test eax,eax; ja` (unsigned)
   where every draft gives `jg`; unsigned casts break the reuse of `ch - '!'`. Untried: OEM output char types, an
