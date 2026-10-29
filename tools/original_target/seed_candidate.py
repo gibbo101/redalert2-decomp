@@ -125,6 +125,227 @@ def code_view(text):
     return re.sub(pattern, lambda m: ''.join('\n' if c == '\n' else ' ' for c in m[0]), text)
 
 
+def scalar_declarations(view):
+    """Find simple statement/parameter declarations, including nested scopes.
+
+    This conservative index is for refusing shadowing, not inferring layouts.
+    Comma declarations are flagged separately because the later names have no
+    repeated type spelling. Ghidra's ordinary local list uses one name per line.
+    """
+    pattern = re.compile(r'(?:^|(?<=[;{}(\n]))[\t ]*'
+                         r'([A-Za-z_]\w*(?:[\t ]+[A-Za-z_]\w*)*?'
+                         r'(?:[\t ]*[*&]+[\t ]*|[\t ]+))([A-Za-z_]\w*)'
+                         r'([\t ]*\[[^\]\n]*\])?(?=[\t ]*[;=,)])', re.M)
+    rows, comma = [], False
+    for match in pattern.finditer(view):
+        kind, name, array = match.groups()
+        if kind.strip().split()[0] in ('return', 'goto', 'delete', 'throw', 'break', 'continue'):
+            continue
+        rows.append((kind.strip(), name, array))
+        comma |= ',' in view[match.end():].split(';', 1)[0]
+    return rows, comma
+
+
+def nan_artifacts(body, params=(), named_functions=()):
+    """Spell Ghidra's NaN predicate on a stable floating scalar as self-inequality.
+
+    No helper call, argument store or new precision boundary is introduced.
+    Expressions with effects, volatile/unknown storage and named real functions
+    remain unresolved. This recovers a value predicate, not exception behavior;
+    a source candidate still needs the complete original instruction audit.
+    """
+    view = code_view(body)
+    if ('NAN' in named_functions or re.search(r'#\s*(?:define|undef)\s+NAN\b', view) or
+            re.search(r'(?:^|[;{}\n])\s*(?!return\b|throw\b|delete\b|goto\b)'
+                      r'(?:[A-Za-z_]\w*\s+)+\**\s*NAN\s*\(', view)):
+        return body
+    slots = {}
+    for kind, name in map(param_parts, params):
+        if name:
+            slots.setdefault(name, []).append((kind.strip(), None))
+    declarations, comma = scalar_declarations(view)
+    if comma or re.search(r'\(\s*\*\s*NAN\s*\)', view+' '+code_view(' '.join(params))):
+        return body
+    for kind, name, array in declarations:
+        slots.setdefault(name, []).append((kind.strip(), array))
+    if 'NAN' in slots:
+        return body
+    kinds = {'float', 'double', 'float10', 'const float', 'const double', 'const float10'}
+    edits = []
+    for match in re.finditer(r'\bNAN\s*\(\s*([A-Za-z_]\w*)\s*\)', view):
+        name = match[1]
+        declarations = slots.get(name, [])
+        if len(declarations) != 1:
+            continue
+        kind, array = declarations[0]
+        if kind not in kinds or array:
+            continue
+        edits.append((match.start(), match.end(), '(%s != %s)' % (name, name)))
+    for start, end, replacement in reversed(edits):
+        body = body[:start] + replacement + body[end:]
+    return body
+
+
+def sdk_named_types(body, params=(), result='void'):
+    """Supply used Win32 interface names, without guessing opaque game layouts.
+
+    The file-search record is the same 0x140-byte ANSI Windows interface as
+    shared/win32_find.hpp. POINT's tag and ULONG have their documented Win32
+    definitions. Leave unrelated seeds, authored types and shadowing unchanged.
+    No SDK headers, global macro guards or emitted helper code are introduced.
+    """
+    view = code_view(body)
+    signature = code_view(' '.join([result] + list(params)))
+    declarations = scalar_declarations(view)[0]
+    identifiers = {name for _, name, _ in declarations}
+    identifiers.update(name for _, name in map(param_parts, params))
+
+    def needed(name):
+        if not re.search(r'\b' + name + r'\b', view + ' ' + signature):
+            return False
+        if name in identifiers or re.search(r'#\s*(?:define|undef)\s+' + name + r'\b', view):
+            return False
+        if (re.search(r'\btypedef\b[^;{}]*\b' + name + r'\s*;', view) or
+                re.search(r'\b(?:struct|class|union)\s+' + name + r'\s*[{:]', view) or
+                re.search(r'\b' + name + r'\s*\(', view)):
+            return False
+        return True
+
+    preamble = SDK_PREAMBLE
+    if needed('tagPOINT'):
+        preamble = preamble.replace('struct POINT { LONG x, y; };',
+                                    'struct tagPOINT { LONG x, y; };\ntypedef tagPOINT POINT;')
+    if needed('ULONG'):
+        preamble += '\ntypedef unsigned long ULONG;'
+    names = ('_WIN32_FIND_DATAA', 'WIN32_FIND_DATAA', 'PWIN32_FIND_DATAA', 'LPWIN32_FIND_DATAA')
+    # One real interface type serves the tag, typedef and pointer spellings.
+    # Do not add a conflicting definition when the seed owns any of these names.
+    blocked = any(name in identifiers or re.search(r'\btypedef\b[^;{}]*\b' + name + r'\s*;', view) or
+                  re.search(r'\b(?:struct|class|union)\s+' + name + r'\s*[{:]', view) or
+                  re.search(r'#\s*(?:define|undef)\s+' + name + r'\b', view) for name in names)
+    if not blocked and any(needed(name) for name in names):
+        record = ('struct _WIN32_FIND_DATAA {\n'
+                  '    DWORD dwFileAttributes;\n'
+                  '    FILETIME ftCreationTime, ftLastAccessTime, ftLastWriteTime;\n'
+                  '    DWORD nFileSizeHigh, nFileSizeLow, dwReserved0, dwReserved1;\n'
+                  '    CHAR cFileName[260], cAlternateFileName[14];\n'
+                  '};\n'
+                  'typedef _WIN32_FIND_DATAA WIN32_FIND_DATAA;\n'
+                  'typedef WIN32_FIND_DATAA *PWIN32_FIND_DATAA, *LPWIN32_FIND_DATAA;')
+        preamble = preamble.replace('struct WIN32_FIND_DATAA; typedef WIN32_FIND_DATAA *LPWIN32_FIND_DATAA;', record)
+    return com_interface_types(preamble, view, signature, identifiers)
+
+
+def com_interface_types(preamble, view, signature, identifiers):
+    """Supply documented C COM vtables for explicitly named SDK interfaces.
+
+    These are i386 SDK declarations, not recovered game classes. Full vtable
+    lengths keep pointer arithmetic/sizeof honest; unused record pointees stay
+    incomplete. C REFIID/REFCLSID are pointers. No SDK headers or helper bodies.
+    """
+    names = {'IUnknown', 'IStream', 'IPersistStream', 'IStorage',
+             'IUnknownVtbl', 'IStreamVtbl', 'IPersistStreamVtbl', 'IStorageVtbl',
+             'LPUNKNOWN', 'LPSTREAM', 'LPPERSISTSTREAM', 'LPSTORAGE'}
+    if not any(re.search(r'\b' + name + r'\b', view + ' ' + signature) for name in names):
+        return preamble
+    dependencies = names | {'ULONG', 'LARGE_INTEGER', 'ULARGE_INTEGER',
+                            'STATSTG', 'IEnumSTATSTG'}
+    # An authored definition, macro, callable or shadowing identifier owns its
+    # spelling. Refuse the entire coupled interface group on a conflict.
+    for name in dependencies:
+        if (name in identifiers or
+                re.search(r'\btypedef\b[^;{}]*\b' + name + r'\s*;', view) or
+                re.search(r'\b(?:struct|class|union)\s+' + name + r'\s*[{:]', view) or
+                re.search(r'#\s*(?:define|undef)\s+' + name + r'\b', view) or
+                re.search(r'\b' + name + r'\s*\(', view)):
+            return preamble
+    if 'typedef unsigned long ULONG;' not in preamble:
+        preamble += '\ntypedef unsigned long ULONG;'
+    return preamble + r'''
+// Documented i386 COM C ABI; nominal Ghidra interface identity still needs proof.
+union ULARGE_INTEGER { struct { DWORD LowPart, HighPart; }; unsigned __int64 QuadPart; };
+struct tagSTATSTG; typedef tagSTATSTG STATSTG;
+struct IEnumSTATSTG;
+struct IUnknownVtbl {
+    HRESULT (__stdcall *QueryInterface)(IUnknown *, IID const *, void **);
+    ULONG (__stdcall *AddRef)(IUnknown *);
+    ULONG (__stdcall *Release)(IUnknown *);
+};
+struct IUnknown { IUnknownVtbl *lpVtbl; };
+struct IStreamVtbl {
+    HRESULT (__stdcall *QueryInterface)(IStream *, IID const *, void **);
+    ULONG (__stdcall *AddRef)(IStream *);
+    ULONG (__stdcall *Release)(IStream *);
+    HRESULT (__stdcall *Read)(IStream *, void *, ULONG, ULONG *);
+    HRESULT (__stdcall *Write)(IStream *, void const *, ULONG, ULONG *);
+    HRESULT (__stdcall *Seek)(IStream *, LARGE_INTEGER, DWORD, ULARGE_INTEGER *);
+    HRESULT (__stdcall *SetSize)(IStream *, ULARGE_INTEGER);
+    HRESULT (__stdcall *CopyTo)(IStream *, IStream *, ULARGE_INTEGER, ULARGE_INTEGER *, ULARGE_INTEGER *);
+    HRESULT (__stdcall *Commit)(IStream *, DWORD);
+    HRESULT (__stdcall *Revert)(IStream *);
+    HRESULT (__stdcall *LockRegion)(IStream *, ULARGE_INTEGER, ULARGE_INTEGER, DWORD);
+    HRESULT (__stdcall *UnlockRegion)(IStream *, ULARGE_INTEGER, ULARGE_INTEGER, DWORD);
+    HRESULT (__stdcall *Stat)(IStream *, STATSTG *, DWORD);
+    HRESULT (__stdcall *Clone)(IStream *, IStream **);
+};
+struct IStream { IStreamVtbl *lpVtbl; };
+struct IPersistStreamVtbl {
+    HRESULT (__stdcall *QueryInterface)(IPersistStream *, IID const *, void **);
+    ULONG (__stdcall *AddRef)(IPersistStream *);
+    ULONG (__stdcall *Release)(IPersistStream *);
+    HRESULT (__stdcall *GetClassID)(IPersistStream *, CLSID *);
+    HRESULT (__stdcall *IsDirty)(IPersistStream *);
+    HRESULT (__stdcall *Load)(IPersistStream *, IStream *);
+    HRESULT (__stdcall *Save)(IPersistStream *, IStream *, BOOL);
+    HRESULT (__stdcall *GetSizeMax)(IPersistStream *, ULARGE_INTEGER *);
+};
+struct IPersistStream { IPersistStreamVtbl *lpVtbl; };
+struct IStorageVtbl {
+    HRESULT (__stdcall *QueryInterface)(IStorage *, IID const *, void **);
+    ULONG (__stdcall *AddRef)(IStorage *);
+    ULONG (__stdcall *Release)(IStorage *);
+    HRESULT (__stdcall *CreateStream)(IStorage *, wchar16 const *, DWORD, DWORD, DWORD, IStream **);
+    HRESULT (__stdcall *OpenStream)(IStorage *, wchar16 const *, void *, DWORD, DWORD, IStream **);
+    HRESULT (__stdcall *CreateStorage)(IStorage *, wchar16 const *, DWORD, DWORD, DWORD, IStorage **);
+    HRESULT (__stdcall *OpenStorage)(IStorage *, wchar16 const *, IStorage *, DWORD, SNB, DWORD, IStorage **);
+    HRESULT (__stdcall *CopyTo)(IStorage *, DWORD, IID const *, SNB, IStorage *);
+    HRESULT (__stdcall *MoveElementTo)(IStorage *, wchar16 const *, IStorage *, wchar16 const *, DWORD);
+    HRESULT (__stdcall *Commit)(IStorage *, DWORD);
+    HRESULT (__stdcall *Revert)(IStorage *);
+    HRESULT (__stdcall *EnumElements)(IStorage *, DWORD, void *, DWORD, IEnumSTATSTG **);
+    HRESULT (__stdcall *DestroyElement)(IStorage *, wchar16 const *);
+    HRESULT (__stdcall *RenameElement)(IStorage *, wchar16 const *, wchar16 const *);
+    HRESULT (__stdcall *SetElementTimes)(IStorage *, wchar16 const *, FILETIME const *, FILETIME const *, FILETIME const *);
+    HRESULT (__stdcall *SetClass)(IStorage *, CLSID const *);
+    HRESULT (__stdcall *SetStateBits)(IStorage *, DWORD, DWORD);
+    HRESULT (__stdcall *Stat)(IStorage *, STATSTG *, DWORD);
+};
+struct IStorage { IStorageVtbl *lpVtbl; };
+typedef IStorage *LPSTORAGE;
+'''
+
+
+def sdk_preamble(body, params=(), result='void'):
+    """Only used, known Windows interface types enter a seed's namespace.
+
+    Keep the alias inside each seed's namespace. A shared macro guard would
+    suppress the typedef in subsequent namespaces of a composite population.
+    Explicit typedefs and identifier shadowing stay with their authored text.
+    """
+    preamble = sdk_named_types(body, params, result)
+    view = code_view(body)
+    signature = code_view(' '.join([result] + list(params)))
+    if not re.search(r'\bwchar_t\b', view + ' ' + signature):
+        return preamble
+    if re.search(r'\btypedef\b[^;{}]*\bwchar_t\s*;', view):
+        return preamble
+    if any(name == 'wchar_t' for _, name in map(param_parts, params)):
+        return preamble
+    if any(name == 'wchar_t' for _, name, _ in scalar_declarations(view)[0]):
+        return preamble
+    return preamble + '\ntypedef wchar16 wchar_t;'
+
+
 def local_labels(body):
     """Keep real goto labels local, drop unused label declarations, refuse gaps."""
     view = code_view(body)
@@ -192,6 +413,90 @@ def extend_artifacts(body):
         body = body[:match.start()] + '((%s)(%s)(%s))' % (destination, source, args[0]) + body[end + 1:]
 
 
+def byte_update_artifacts(body, params=()):
+    """Recover standalone low-byte stores, without reading an invented uint24.
+
+    Ghidra spells a byte store into a reused four-byte slot as
+    x = CONCAT31(x._1_3_, value). The other three bytes are preserved, not
+    loaded by a wider unaligned access. Only declared scalar slots and constant
+    array elements qualify. Used assignment results, effectful values, unknown
+    storage, volatile objects and masks changing the upper bytes stay untouched.
+    """
+    view = code_view(body)
+    slots = {name: (kind, None) for kind, name in map(param_parts, params) if name}
+    for kind, name, array in LOCAL.findall(view):
+        if kind.strip().split()[0] in ('return', 'goto', 'delete', 'throw', 'break', 'continue'):
+            continue
+        slots[name] = (kind.strip(), array.strip() if array else None)
+    pattern = re.compile(r'^[\t ]*(?P<slot>[A-Za-z_]\w*(?:[\t ]*\[[\t ]*\d+[\t ]*\])?)'
+                         r'[\t ]*=(?!=)\s*', re.M)
+    edits = []
+    for match in pattern.finditer(view):
+        before = view[:match.start()].rstrip()
+        if before and before[-1] not in '{;}':
+            continue  # A line break does not make a used assignment standalone.
+        slot = re.sub(r'\s+', '', match['slot'])
+        name = slot.split('[', 1)[0]
+        kind, array = slots.get(name, ('', None))
+        if re.search(r'\b(?:const|volatile)\b', kind):
+            continue
+        kind = clean_type(kind)
+        if kind not in INTEGRAL32 and kind not in POINTER_ALIASES and '*' not in kind:
+            continue
+        if '[' in slot:
+            count = re.fullmatch(r'\[\s*(\d+)\s*\]', array or '')
+            if not count or int(slot[slot.index('[')+1:-1]) >= int(count[1]):
+                continue
+        elif array:
+            continue
+        cursor = match.end()
+        cast = re.match(r'\(([\w\t ]+(?:\s*\*)*)\)\s*', view[cursor:])
+        if cast:
+            if clean_type(cast[1]) != kind:
+                continue
+            cursor += cast.end()
+        concat = re.match(r'CONCAT31\s*\(', view[cursor:])
+        if not concat:
+            continue
+        opening = cursor + concat.end() - 1
+        closing = matching_paren(view, opening)
+        args = split_args(body[opening+1:closing])
+        if len(args) != 2 or re.sub(r'\s+', '', args[0]) != slot + '._1_3_':
+            continue
+        value = args[1]
+        value_view = code_view(value)
+        # A call or write can change the slot while the high bytes are being
+        # assembled. Do not replace that expression with a different ordering.
+        if re.search(r'\+\+|--|(?<![=!<>])=(?!=)|,|\b\w+\s*\(', value_view):
+            continue
+        calls = False
+        for parenthesis in re.finditer(r'\)\s*\(', value_view):
+            end = parenthesis.start()
+            depth, start = 1, end - 1
+            while start >= 0 and depth:
+                depth += (value_view[start] == ')') - (value_view[start] == '(')
+                start -= 1
+            inside = clean_type(value_view[start+2:end])
+            if inside not in INTEGRAL32 | {'char', 'uchar', 'byte', 'undefined1', 'ushort', 'short', 'undefined2'}:
+                calls = True
+                break
+        if calls:
+            continue
+        tail = re.match(r'\s*(?:&\s*(0x[0-9a-fA-F]+|\d+)[uU]?)?\s*;', view[closing+1:])
+        if not tail:
+            continue
+        if tail[1]:
+            mask = int(tail[1], 16 if tail[1].lower().startswith('0x') else 10)
+            if mask > 0xffffffff or mask & 0xffffff00 != 0xffffff00:
+                continue
+            value = '(uchar)(%s) & 0x%02x' % (value, mask & 0xff)
+        replacement = '*(uchar *)&(%s) = (uchar)(%s);' % (slot, value)
+        edits.append((match.start('slot'), closing + 1 + tail.end(), replacement))
+    for start, end, replacement in reversed(edits):
+        body = body[:start] + replacement + body[end:]
+    return body
+
+
 def stack_artifacts(body, params, convention):
     """Name stack storage honestly, reusing a known local/argument when possible.
 
@@ -245,37 +550,99 @@ def variable_types(body, params=()):
     return types
 
 
+def scalar_address_views(body, params=()):
+    """Type memory views of merged 32-bit locals, retaining their storage type.
+
+    Ghidra sometimes reuses one undefined4 slot for packed values and addresses,
+    then writes a bare *slot or slot[index]. A unique explicit pointer-assignment
+    type supplies a four-byte primitive view, not a new local type or layout.
+    Numeric uses, partial writes, address taking and evaluation order stay as
+    written. Conflicting/unknown pointees and duplicate declarations refuse it.
+    This repairs scratch C++ syntax; the original loads/ABI still need proof.
+    """
+    view, declarations = code_view(body), {}
+    for match in LOCAL.finditer(view):
+        declarations.setdefault(match[2], []).append(match)
+    parameters = {param_parts(p)[1] for p in params}
+    pointee32 = {'int', 'uint', 'undefined4', 'long', 'ulong', 'unsigned int',
+                 'unsigned long', 'signed int', 'signed long'}
+    edits, notes = [], []
+    for name, decls in declarations.items():
+        if len(decls) != 1 or name in parameters:
+            continue
+        decl = decls[0]
+        if decl[3] or clean_type(decl[1]) not in INTEGRAL32:
+            continue
+        token = r'\b' + re.escape(name) + r'\b'
+        hints = set()
+        for match in re.finditer(token + r'\s*=\s*\(\s*([^()]+?)\s*\*\s*\)', view):
+            before = view[:match.start()].rstrip()
+            if before.endswith(('*', '.', '->', '::', ']')):
+                continue
+            # Qualifiers are meaningful for a memory access. Do not erase
+            # const/volatile as clean_type does for ABI-width comparisons.
+            hints.add(' '.join(match[1].split()))
+        if len(hints) != 1 or not hints <= pointee32:
+            continue
+        pointee, count = next(iter(hints)), 0
+        for match in re.finditer(token, view):
+            before, after = view[:match.start()].rstrip(), view[match.end():].lstrip()
+            if before.endswith(('.', '->', '::')) or after.startswith(('(', '.', '->', '::')):
+                continue
+            if before.endswith('*') and unary_operator(view, len(before)-1):
+                # Do not infer the additional pointer level in **slot.
+                prefix = before[:-1].rstrip()
+                if prefix.endswith('*') and unary_operator(view, len(prefix)-1):
+                    continue
+                edits.append((match.start(), match.end(), '(%s *)%s' % (pointee, name)))
+            elif after.startswith('['):
+                edits.append((match.start(), match.end(), '((%s *)%s)' % (pointee, name)))
+            else:
+                continue
+            count += 1
+        if count:
+            notes.append('// Scratch %s memory view: %s * from explicit assignments; '
+                         'merged %s storage retained, original-load/type proof still required.' %
+                         (name, pointee, clean_type(decl[1])))
+    for first, last, replacement in sorted(edits, reverse=True):
+        body = body[:first] + replacement + body[last:]
+    return body, notes
+
+
 def unary_operator(view, position):
     before = view[:position].rstrip()
-    if not before or before[-1] in '([=!,;:{}?&|^~+-*/%<>' or re.search(r'\breturn$', before):
-        return True
-    if not before.endswith(')'):
-        return False
     # A cast can precede a unary load: (code **)*DAT reads DAT's pointee.
     # Treating that star as multiplication would cast DAT itself to uint,
     # producing illegal indirection and losing the intended memory read.
-    depth, start = 1, len(before) - 2
-    while start >= 0:
-        if before[start] == ')':
-            depth += 1
-        elif before[start] == '(':
-            depth -= 1
-            if depth == 0:
-                break
-        start -= 1
-    if start < 0:
-        return False
-    prefix = before[:start].rstrip()
-    if prefix and (prefix[-1].isalnum() or prefix[-1] in '_)]') and not re.search(r'\breturn$', prefix):
-        # f(uint)*p and sizeof(uint)*p multiply a result, not a cast operand.
-        return False
-    kind = before[start + 1:-1].strip()
-    if re.fullmatch(r'[A-Za-z_]\w*(?:::\w+)*(?:\s+[A-Za-z_]\w*)*\s*\*+\s*', kind):
-        return True
-    return clean_type(kind) in INTEGRAL32 | {
-        'char', 'signed char', 'unsigned char', 'short', 'ushort', 'unsigned short',
-        'longlong', 'ulonglong', 'undefined1', 'undefined2', 'undefined3', 'undefined8',
-        'float', 'double', 'float10', 'byte', 'uchar', 'code'}
+    # Peel each cast in (int)(uint)*DAT. A closing parenthesis alone cannot
+    # distinguish this from f(uint)*DAT; its complete left context matters.
+    while True:
+        if not before or before[-1] in '([=!,;:{}?&|^~+-*/%<>' or re.search(r'\breturn$', before):
+            return True
+        if not before.endswith(')'):
+            return False
+        depth, start = 1, len(before)-2
+        while start >= 0:
+            if before[start] == ')':
+                depth += 1
+            elif before[start] == '(':
+                depth -= 1
+                if depth == 0:
+                    break
+            start -= 1
+        if start < 0:
+            return False
+        kind = before[start+1:-1].strip()
+        pointer_cast = re.fullmatch(r'[A-Za-z_]\w*(?:::\w+)*(?:\s+[A-Za-z_]\w*)*\s*\*+\s*', kind)
+        scalar_cast = clean_type(kind) in INTEGRAL32 | {
+            'bool', 'char', 'signed char', 'unsigned char', 'short', 'ushort', 'unsigned short',
+            'longlong', 'ulonglong', 'undefined1', 'undefined2', 'undefined3', 'undefined8',
+            'float', 'double', 'float10', 'byte', 'uchar', 'code'}
+        if not pointer_cast and not scalar_cast:
+            return False
+        # f(uint), sizeof(uint), T(uint) and a[index](uint) stop at their
+        # expression/callee prefix rather than being mistaken for casts.
+        before = before[:start].rstrip()
 
 
 def cast_void_global_offsets(body, globals_):
@@ -599,6 +966,144 @@ def full_pointer_equality(body, params=(), globals_=None):
         return body
     for position, text in sorted(edits, reverse=True):
         body = body[:position] + text + body[position:]
+    return body
+
+
+UNSIGNED32 = {'uint', 'undefined4', 'ulong', 'unsigned', 'unsigned int', 'unsigned long',
+              'DWORD', 'UINT', 'ULONG', 'LPARAM', 'WPARAM', 'LRESULT'}
+PROMOTED_SMALL = {'bool', 'char', 'signed char', 'unsigned char', 'byte', 'uchar',
+                  'short', 'signed short', 'unsigned short', 'ushort', 'undefined1', 'undefined2'}
+
+
+def expression_category(kind):
+    """Only evidenced i386 pointer and ordinary integral categories."""
+    kind = clean_type(kind or '')
+    if '::*' in kind or '(' in kind:
+        return None
+    if '*' in kind or kind in POINTER_ALIASES:
+        return 'pointer'
+    if kind in UNSIGNED32:
+        return 'unsigned32'
+    if kind in INTEGRAL32 or kind in PROMOTED_SMALL:
+        return 'signed32'
+    return None
+
+
+def seed_expression_type(expression, types, depth=0):
+    """Infer an operand's existing type, never change its arithmetic or reads.
+
+    This small grammar refuses unknown calls/types, FP/wide arithmetic and
+    conditionals. Explicit casts and loads, ordinary promoted integral math,
+    and pointer +/- integer keep their existing widths and element strides.
+    """
+    if depth > 64:
+        return None
+    expression = expression.strip()
+    while expression.startswith('('):
+        try:
+            if matching_paren(expression, 0) != len(expression)-1:
+                break
+        except ValueError:
+            return None
+        expression = expression[1:-1].strip()
+    operators, stack, index = [], [], 0
+    ranks = {'|':0, '^':1, '&':2, '<<':3, '>>':3, '+':4, '-':4, '*':5, '/':5, '%':5}
+    while index < len(expression):
+        char = expression[index]
+        if char in '([':
+            stack.append(char)
+        elif char in ')]':
+            if not stack:
+                return None
+            stack.pop()
+        elif not stack:
+            pair = expression[index:index+2]
+            if pair in ('++', '--', '->', '&&', '||'):
+                index += 2
+                continue
+            op = pair if pair in ('<<', '>>') else char
+            if op in ranks and not (op in ('+', '-', '*', '&') and unary_operator(expression, index)):
+                operators.append((ranks[op], index, op))
+            if len(op) == 2:
+                index += 1
+        index += 1
+    if stack:
+        return None
+    if operators:
+        _, at, op = min(operators, key=lambda item:(item[0],-item[1]))
+        left = seed_expression_type(expression[:at], types, depth+1)
+        right = seed_expression_type(expression[at+len(op):], types, depth+1)
+        a, b = expression_category(left), expression_category(right)
+        integral = {'signed32', 'unsigned32'}
+        if a in integral and b in integral:
+            return ('uint' if a == 'unsigned32' else 'int') if op in ('<<', '>>') else ('uint' if 'unsigned32' in (a,b) else 'int')
+        if op in ('+', '-') and a == 'pointer' and b in integral:
+            return left
+        if op == '+' and b == 'pointer' and a in integral:
+            return right
+        if op == '-' and a == b == 'pointer' and clean_type(left) == clean_type(right):
+            return 'int'
+        return None
+    variable = re.fullmatch(r'(?:\+\+|--)?(\w+)(?:\+\+|--)?', expression)
+    if variable and variable[1] in types:
+        return types[variable[1]]
+    literal = re.fullmatch(r'(0[xX][0-9a-fA-F]+|[0-9]+)([uUlL]*)', expression)
+    if literal and literal[2].lower() in ('', 'u', 'l', 'ul', 'lu'):
+        value = int(literal[1], 16 if literal[1].lower().startswith('0x') else 10)
+        if value <= 0xffffffff and ('u' in literal[2].lower() or value <= 0x7fffffff or literal[1].lower().startswith('0x')):
+            return 'uint' if 'u' in literal[2].lower() or value > 0x7fffffff else 'int'
+    load = re.match(r'^\*\s*\(\s*([\w\s]+(?:\s*\*)+)\s*\)\s*', expression)
+    if load and one_atom(expression[load.end():]):
+        return load[1].rsplit('*',1)[0].strip()
+    cast = re.match(r'^\(\s*([\w\s]+(?:\s*\*)*)\s*\)\s*', expression)
+    if cast:
+        rest = expression[cast.end():].strip()
+        if rest and (one_atom(rest) or seed_expression_type(rest, types, depth+1) is not None):
+            return cast[1].strip()
+    array = re.match(r'^(\w+)\s*\[', expression)
+    if array and one_atom(expression) and '*' in types.get(array[1], ''):
+        return types[array[1]].rsplit('*',1)[0].strip()
+    if expression.startswith(('+', '-', '~', '!')):
+        kind = seed_expression_type(expression[1:], types, depth+1)
+        category = expression_category(kind)
+        if expression[0] == '!' and category:
+            return 'bool'
+        if category in ('signed32', 'unsigned32'):
+            return 'uint' if category == 'unsigned32' else 'int'
+    if expression.startswith('&') and re.fullmatch(r'&\s*\w+', expression):
+        return 'void *'
+    if expression.startswith('*'):
+        operand = expression[1:].strip()
+        simple = re.fullmatch(r'(\w+)(?:\+\+|--)?', operand)
+        if simple and '*' in types.get(simple[1], ''):
+            return types[simple[1]].rsplit('*',1)[0].strip()
+    return None
+
+
+def unsigned_pointer_ordering(body, params=(), globals_=None):
+    """Order pointer bits only against an already unsigned32 operand.
+
+    Signed/unknown/wide/FP counterparts stay unresolved. Cast the COMPLETE
+    pointer operand once; do not change pointee loads or arithmetic strides.
+    """
+    types = variable_types(body, params)
+    types.update(globals_ or {})
+    view, edits = code_view(body), []
+    for match in re.finditer(r'(?<![<>=!])(?:<=|>=|<|>)(?![<>=])', view):
+        spans = [equality_operand(view,match.start(),-1), equality_operand(view,match.end(),1)]
+        values = [view[a:b] for a,b in spans]
+        categories = [expression_category(seed_expression_type(value,types)) for value in values]
+        if sorted(categories, key=str) != sorted(['pointer','unsigned32']):
+            continue
+        scalar = values[categories.index('unsigned32')]
+        if re.fullmatch(r'0(?:[uUlL]*)', scalar):
+            continue  # A literal zero can already be a null pointer constant.
+        first,last = spans[categories.index('pointer')]
+        if any(first < b and last > a for a,b in edits):
+            return body
+        edits.append((first,last))
+    for first,last in sorted(edits,reverse=True):
+        body = body[:first] + '(uint)(' + body[first:last] + ')' + body[last:]
     return body
 
 
@@ -948,6 +1453,48 @@ def named_calls(body, inventory):
             if n in names and n not in KEYWORDS}
 
 
+def named_thunk_values(body, entry, inventory, params=()):
+    """Declare address-only thunk names from positive original DATA evidence.
+
+    The existing `code` type means an unknown callable signature. No new call
+    or helper body is generated, and no ABI or bounds acceptance is implied.
+    A shared suffix/jump target alone never identifies a thunk's own address.
+    """
+    view = code_view(body)
+    tokens = set(re.findall(r'\bthunk_[A-Za-z_]\w*\b', view))
+    if not tokens:
+        return []
+    groups = getattr(inventory, '_seed_thunk_value_names', None)
+    if groups is None:
+        groups = {}
+        for directory in inventory.passes:
+            for at, row in inventory.rows(directory).items():
+                if re.fullmatch(r'thunk_[A-Za-z_]\w*', row['name']):
+                    groups.setdefault(row['name'], set()).add(at)
+        inventory._seed_thunk_value_names = groups
+    identifiers = set(variable_types(body, params))
+    identifiers.update(name for _, name, _ in scalar_declarations(view)[0])
+    declarations = []
+    for name in sorted(tokens & groups.keys()):
+        if name in identifiers or list(call_sites(body, name)):
+            continue
+        uses = list(re.finditer(r'\b' + re.escape(name) + r'\b', view))
+        if any(view[:m.start()].rstrip().endswith(('::', '.', '->')) or
+               re.match(r'\s*(?:\)*\s*\(|\[)', view[m.end():]) for m in uses):
+            continue
+        from seed_thunk_values import original_thunk_address
+        proof = original_thunk_address(entry, groups[name], inventory)
+        if proof is None:
+            continue
+        sites = ','.join('%08x' % at for at in proof['push_sites'])
+        declarations.append('// Address-only thunk: original DATA PUSH sites %s; inventory bounds/entry roots and callable ABI remain hypotheses.' % sites)
+        # Namespace-local C++ linkage keeps different owners' bindings separate
+        # when a composite population contains both same-named thunk entries.
+        declarations.append('extern code %s; // @ref ?%s@seed_%08x@@=%08x' %
+                            (name, name, entry, proof['entry']))
+    return declarations
+
+
 def accepted_sources(catalog):
     return {r['entry']: r['source'] for r in catalog.get('regions', [])}
 
@@ -1012,6 +1559,138 @@ def byte_global(body, symbol):
     return uses > 0 and chars == uses
 
 
+RTTI_ADDRESS = re.compile(r'(?<![\w&])&\s*([A-Za-z_]\w*(?:::[A-Za-z_]\w*)*)::RTTI_Type_Descriptor\b')
+_RTTI_ADDRESSES = []
+
+
+def rtti_address_names(descriptors):
+    """Only unambiguous, ordinary class/struct names from original RTTI."""
+    found, repeated = {}, set()
+    for symbol, address in descriptors.items():
+        match = re.fullmatch(r'\?\?_R0\?A[UV]([A-Za-z_]\w*(?:@[A-Za-z_]\w*)*)@@@8', symbol)
+        if not match:
+            continue
+        name = '::'.join(reversed(match[1].split('@')))
+        if name in found and found[name] != address:
+            repeated.add(name)
+        found[name] = address
+    return {name: address for name, address in found.items() if name not in repeated}
+
+
+def original_rtti_addresses():
+    """Hash the exact target, then reuse the strict auditor's RTTI bindings."""
+    if not _RTTI_ADDRESSES:
+        from verify_manifest import Audit
+        audit = Audit(REPOSITORY, 'private/original-target-20261020/inputs/game.exe')
+        _RTTI_ADDRESSES.append(rtti_address_names(audit.original_type_descriptors()))
+    return _RTTI_ADDRESSES[0]
+
+
+def rtti_address_labels(body, addresses=None):
+    """Name address-only RTTI labels without inventing the owning class layout.
+
+    A DAT label supplies the same address bits. Direct descriptor values,
+    fields, arrays and descriptor-pointer arithmetic remain unsupported.
+    """
+    view = code_view(body)
+    matches = list(RTTI_ADDRESS.finditer(view))
+    if not matches:
+        return body, []
+    addresses = original_rtti_addresses() if addresses is None else addresses
+    edits, used = [], {}
+    for match in matches:
+        address = addresses.get(match[1])
+        if type(address) is not int or not 0 < address <= 0xffffffff:
+            continue
+        before = re.sub(r'(?:\(\s*)+$', '', view[:match.start()].rstrip()).rstrip()
+        if before.endswith('*'):
+            continue              # a descriptor value/sizeof-object needs its real type
+        after = view[match.end():].lstrip()
+        # Also reject arithmetic after parentheses around the address. This
+        # conservatively skips arithmetic on an enclosing call result too.
+        after = re.sub(r'^(?:\)\s*)+', '', after)
+        if after.startswith(('.', '->', '::', '[', '+', '-', '*', '/', '%', '<<', '>>')):
+            continue
+        label = 'DAT_%08x' % address
+        edits.append((match.start(), match.end(), '&' + label))
+        used[match[1]] = address
+    for start, end, replacement in reversed(edits):
+        body = body[:start] + replacement + body[end:]
+    notes = ['// Original RTTI address: %s -> DAT_%08x; descriptor layout is not modeled.' % item
+             for item in sorted(used.items())]
+    return body, notes
+
+
+_SWITCH_ORIGINAL = []
+
+
+def original_index_switch(entry, dispatch, table):
+    from seed_switches import inspect_index_switch
+    if not _SWITCH_ORIGINAL:
+        from verify_manifest import Audit
+        audit = Audit(REPOSITORY, 'private/original-target-20261020/inputs/game.exe')
+        catalog = catalog_io.load(catalog_io.locate(REPOSITORY), references=False)
+        _SWITCH_ORIGINAL.append((audit, {row['entry'] for row in catalog['regions']}))
+    audit, accepted = _SWITCH_ORIGINAL[0]
+    return inspect_index_switch(audit, entry, dispatch, table, accepted)
+
+
+def indexed_switch_artifacts(body, entry, params=(), facts=None):
+    """Use verified integer cases, never a runtime array of instruction pointers."""
+    from seed_switches import UnsupportedSwitch
+    pattern = re.compile(r'\bswitch\s*\(\s*\(\s*&switchD_([0-9a-f]{8})::switchdataD_([0-9a-f]{8})'
+                         r'\s*\)\s*\[\s*([A-Za-z_]\w*)\s*\]\s*\)')
+    view = code_view(body)
+    matches = list(pattern.finditer(view))
+    if not matches:
+        return body, []
+    types, edits, notes = variable_types(body, params), [], []
+    for match in matches:
+        if clean_type(types.get(match[3], '')) not in INTEGRAL32:
+            continue
+        opening = match.end()
+        while opening < len(view) and view[opening].isspace():
+            opening += 1
+        if opening == len(view) or view[opening] != '{':
+            continue
+        depth, cursor, cases, unsupported = 1, opening+1, [], False
+        while cursor < len(view) and depth:
+            if view[cursor] == '{': depth += 1
+            elif view[cursor] == '}': depth -= 1
+            elif (depth == 1 and view.startswith('case', cursor) and
+                  not (view[cursor-1].isalnum() or view[cursor-1] == '_') and
+                  (cursor+4 == len(view) or not (view[cursor+4].isalnum() or view[cursor+4] == '_'))):
+                case = re.match(r'case\s*\(\s*undefined\s*\*\s*\)\s*0x([0-9a-fA-F]+)\s*:', view[cursor:])
+                if not case:
+                    unsupported = True
+                    break
+                cases.append((cursor, cursor+case.end(), int(case[1], 16)))
+                cursor += case.end()-1
+            cursor += 1
+        if unsupported or depth or not cases:
+            continue
+        dispatch, table = int(match[1], 16), int(match[2], 16)
+        try:
+            proof = original_index_switch(entry, dispatch, table) if facts is None else facts[(dispatch, table)]
+        except (UnsupportedSwitch, KeyError):
+            continue
+        targets = proof['targets']
+        if len({target for _, _, target in cases}) != len(cases) or {target for _, _, target in cases} != set(targets):
+            continue
+        # Refuse overlapping edits; nested case labels belong to their own switch.
+        if any(start < cursor and end > match.start() for start, end, _ in edits):
+            continue
+        edits.append((match.start(), match.end(), 'switch(%s)' % match[3]))
+        for start, end, target in cases:
+            indices = [index for index, at in enumerate(targets) if at == target]
+            edits.append((start, end, ' '.join('case %d:' % index for index in indices)))
+        notes.append('// Original guarded switch %08x: integer indices from read-only table %08x; '
+                     'local-flow/call/entry hypotheses remain explicit.' % (dispatch, table))
+    for start, end, replacement in sorted(edits, reverse=True):
+        body = body[:start]+replacement+body[end:]
+    return body, notes
+
+
 def seed(entry, inventory, accepted):
     text = inventory.decompiled(entry)
     if text is None:
@@ -1022,12 +1701,17 @@ def seed(entry, inventory, accepted):
     body = nonnegative_tests(reindent(text[end:].strip()))
     body = normalize_import_exrefs(body)
     body, labels = local_labels(body)
+    body, switch_notes = indexed_switch_artifacts(body, entry, params)
+    body = nan_artifacts(body, params, named_calls(body, inventory) if re.search(r'\bNAN\s*\(', code_view(body)) else ())
+    body = byte_update_artifacts(body, params)
     body = stack_artifacts(extend_artifacts(concat_artifacts(body)), params, conv)
     body = LABEL.sub(lambda m: m.group(1) + re.sub(r'\W', '_', m.group(2)) + m.group(3), body)
     body = RAM.sub(lambda m: '(*(%s *)0x%s)' % (RAM_TYPES.get(m.group(1), 'int'), m.group(2)), body)
     body = PARTIAL.sub(lambda m: '(*(%s*)((char*)&%s + %s))' % (PARTIAL_TYPES.get(m.group(3), 'uint'),
                                                                m.group(1), m.group(2)), body)
-    declarations, notes = [], []
+    body, scalar_view_notes = scalar_address_views(body, params)
+    body, rtti_notes = rtti_address_labels(body)
+    declarations, notes = [], list(rtti_notes) + switch_notes + scalar_view_notes
     owners = ecx_owners(inventory.function(entry)[1])
     this_name = param_parts(params[0])[1] if conv == '__thiscall' and params else None
     for callee in sorted(set(CALLEE.findall(code_view(body))) - {name}):
@@ -1070,6 +1754,7 @@ def seed(entry, inventory, accepted):
         if library in imports:
             continue
         declarations.append('extern "C" undefined4 __cdecl %s(...);  // @ref _%s=%08x' % (library, library, address))
+    declarations.extend(named_thunk_values(body, entry, inventory, params))
     evidence_root = (REPOSITORY / 'private/original-target-20261020/inventory').resolve()
     shared = (shared_pointer_types() if any(p.resolve().is_relative_to(evidence_root) for p in inventory.passes) else {})
     body, global_types = recover_global_pointers(body, params, shared)
@@ -1091,6 +1776,7 @@ def seed(entry, inventory, accepted):
         declarations.append('extern "C" %s %s[];' % ('wchar16' if symbol.startswith('u_') else 'char', symbol))
     body = cast_void_global_offsets(body, global_types)
     body = pointer_equality_boundaries(body, params, global_types)
+    body = unsigned_pointer_ordering(body, params, global_types)
     body = cast_storage_boundaries(body, params, global_types)
     body = address_stores(cast_assignments(body, params))
     body = return_boundaries(body, ret)
@@ -1107,7 +1793,8 @@ def seed(entry, inventory, accepted):
     # translation unit without clashing declarations or cross-seed inlining;
     # every mangled name still carries the FUN_ address.
     return '\n'.join(documentation(entry, inventory, text[start:end].strip(), notes) +
-                     [MARKER, INCLUDE, '', 'namespace seed_%08x {' % entry, '', SDK_PREAMBLE, ''] +
+                     [MARKER, INCLUDE, '', 'namespace seed_%08x {' % entry, '',
+                      sdk_preamble(body+'\n'+'\n'.join(declarations), params, ret), ''] +
                      (declarations + [''] if declarations else []) +
                      [definition.rstrip(), '', '}  // namespace seed_%08x' % entry, ''])
 
