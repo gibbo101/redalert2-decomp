@@ -1,5 +1,5 @@
 {
- "source": "PE import directory of the supplied executable; Ghidra import signatures",
+ "source": "PE import directory of the supplied executable; Ghidra import signatures; three SDK signature corrections supported by original import windows and VC6 SDK import libraries",
  "imports": [
   {
    "dll": "KERNEL32.dll",
@@ -1036,12 +1036,20 @@
   {
    "dll": "KERNEL32.dll",
    "name": "GetACP",
-   "iat": "0079a2d0"
+   "iat": "0079a2d0",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "UINT __stdcall GetACP(void)",
+   "signature_source": "https://learn.microsoft.com/windows/win32/api/winnls/nf-winnls-getacp"
   },
   {
    "dll": "KERNEL32.dll",
    "name": "GetOEMCP",
-   "iat": "0079a2d4"
+   "iat": "0079a2d4",
+   "convention": "__stdcall",
+   "parameters": 0,
+   "signature": "UINT __stdcall GetOEMCP(void)",
+   "signature_source": "https://learn.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getoemcp"
   },
   {
    "dll": "KERNEL32.dll",
@@ -2613,9 +2621,10 @@
    "dll": "DDRAW.dll",
    "name": "DirectDrawCreate",
    "iat": "0079a048",
-   "convention": "unknown",
-   "parameters": 0,
-   "signature": "undefined DirectDrawCreate(void)"
+   "convention": "__stdcall",
+   "parameters": 3,
+   "signature": "HRESULT __stdcall DirectDrawCreate(GUID *lpGUID, struct IDirectDraw **lplpDD, struct IUnknown *pUnkOuter)",
+   "signature_source": "https://learn.microsoft.com/en-us/windows/win32/api/ddraw/nf-ddraw-directdrawcreate"
   },
   {
    "dll": "VERSION.dll",
