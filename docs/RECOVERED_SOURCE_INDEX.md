@@ -6,9 +6,9 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 831 | 102,958 | 831 | 0x004011C0–0x0077CB70 |
+| [unowned](../src/recovered/unowned/) | 830 | 102,891 | 830 | 0x004011C0–0x0077CB70 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
-| (discovery: address-named) | 1517 | 45,658 | 0 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1515 | 45,559 | 0 | 0x004010A0–0x00797198 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 158 | 39,236 | 158 | 0x00438A60–0x004D3450 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 185 | 34,115 | 182 | 0x0041B370–0x006D9750 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 161 | 30,912 | 161 | 0x004D3590–0x004F8EF0 |
@@ -91,6 +91,7 @@
 | [classes/DriveLocomotionClass](../src/recovered/classes/DriveLocomotionClass/) | 46 | 3,349 | 46 | 0x0049F640–0x004A4D90 |
 | [classes/ShipLocomotionClass](../src/recovered/classes/ShipLocomotionClass/) | 46 | 3,349 | 46 | 0x00675600–0x0067AC30 |
 | [classes/PKey](../src/recovered/classes/PKey/) | 18 | 3,281 | 18 | 0x0060ED40–0x0060FA20 |
+| [CampScor](../src/recovered/CampScor/) | 11 | 3,271 | 11 | 0x00465C20–0x00467A00 |
 | [classes/Matrix3D](../src/recovered/classes/Matrix3D/) | 34 | 3,254 | 34 | 0x0058FDE0–0x00591420 |
 | [classes/OverlayClass](../src/recovered/classes/OverlayClass/) | 17 | 3,207 | 16 | 0x004D3190–0x005DC300 |
 | [classes/ProgressScreenClass](../src/recovered/classes/ProgressScreenClass/) | 28 | 3,180 | 28 | 0x0061ED00–0x006203F0 |
@@ -340,7 +341,7 @@
 | [classes/ScreenCaptureCommandClass](../src/recovered/classes/ScreenCaptureCommandClass/) | 1 | 524 | 1 | 0x0051D570–0x0051D570 |
 | [classes/VectorClass_rc_ptr_WDTTerritory](../src/recovered/classes/VectorClass_rc_ptr_WDTTerritory/) | 6 | 521 | 6 | 0x0072CA70–0x0072CD60 |
 | [classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr](../src/recovered/classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr/) | 5 | 519 | 4 | 0x006056F0–0x00605D30 |
-| [classes/CampaignScoreClass](../src/recovered/classes/CampaignScoreClass/) | 4 | 518 | 2 | 0x00465BF0–0x00467B00 |
+| [classes/CampaignScoreClass](../src/recovered/classes/CampaignScoreClass/) | 4 | 518 | 4 | 0x00465BF0–0x00467B00 |
 | [classes/RLEBlitTransLucent25AlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransLucent25AlphaZReadWrite_unsigned_short/) | 2 | 516 | 1 | 0x0048C5C0–0x0048D930 |
 | [classes/RLEBlitTransLucent75AlphaZReadWrite_unsigned_short](../src/recovered/classes/RLEBlitTransLucent75AlphaZReadWrite_unsigned_short/) | 2 | 516 | 1 | 0x0048C200–0x0048D8B0 |
 | [classes/VectorClass_CellDistribution](../src/recovered/classes/VectorClass_CellDistribution/) | 6 | 514 | 5 | 0x004CDF10–0x004CE6F0 |
@@ -406,7 +407,6 @@
 | [classes/UnholyAlliance](../src/recovered/classes/UnholyAlliance/) | 7 | 458 | 6 | 0x005AC330–0x005AC510 |
 | [classes/DynamicVectorClass_RGBClass](../src/recovered/classes/DynamicVectorClass_RGBClass/) | 5 | 456 | 3 | 0x0046CD40–0x00622040 |
 | [classes/TypeList_int](../src/recovered/classes/TypeList_int/) | 6 | 450 | 6 | 0x0046CBF0–0x00652C00 |
-| [CampScor](../src/recovered/CampScor/) | 7 | 449 | 7 | 0x00465C20–0x00467290 |
 | [classes/DynamicVectorClass_CellClass_ptr](../src/recovered/classes/DynamicVectorClass_CellClass_ptr/) | 6 | 449 | 3 | 0x0058DE10–0x007246D0 |
 | [classes/DynamicVectorClass_MultiplayerGameMode_ptr](../src/recovered/classes/DynamicVectorClass_MultiplayerGameMode_ptr/) | 6 | 449 | 3 | 0x005B9000–0x005B97F0 |
 | [classes/DynamicVectorClass_PlanningBranchClass_ptr](../src/recovered/classes/DynamicVectorClass_PlanningBranchClass_ptr/) | 6 | 449 | 4 | 0x0061A980–0x0061BB00 |
@@ -930,7 +930,7 @@
 | [classes/BlowStraw](../src/recovered/classes/BlowStraw/) | 2 | 291 | 2 | 0x00435840–0x00435930 |
 | [classes/ScoreTimeClass](../src/recovered/classes/ScoreTimeClass/) | 2 | 291 | 1 | 0x00667F90–0x00668390 |
 | [classes/BlitTransZRemapXlatAlpha_unsigned_short](../src/recovered/classes/BlitTransZRemapXlatAlpha_unsigned_short/) | 3 | 290 | 1 | 0x00487FA0–0x0048CD70 |
-| [classes/CampaignEndScoreClass](../src/recovered/classes/CampaignEndScoreClass/) | 4 | 290 | 2 | 0x00467200–0x00467B20 |
+| [classes/CampaignEndScoreClass](../src/recovered/classes/CampaignEndScoreClass/) | 4 | 290 | 4 | 0x00467200–0x00467B20 |
 | [classes/RLEBlitTransZRemapXlatZRead_unsigned_short](../src/recovered/classes/RLEBlitTransZRemapXlatZRead_unsigned_short/) | 2 | 289 | 2 | 0x00489C80–0x0048D330 |
 | [classes/ScoreBigFontClass](../src/recovered/classes/ScoreBigFontClass/) | 2 | 288 | 2 | 0x00667E80–0x00668490 |
 | [classes/ScoreFullFontClass](../src/recovered/classes/ScoreFullFontClass/) | 2 | 288 | 2 | 0x00667DC0–0x00668430 |
@@ -1284,7 +1284,7 @@
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 | [classes/UnknownAlphaTableCache_008315B8](../src/recovered/classes/UnknownAlphaTableCache_008315B8/) | 2 | 4 | 2 | 0x0041E3C0–0x0041E3D0 |
 
-1277 directories, 14958 regions. Generated by `tools/original_target/source_index.py`.
+1277 directories, 14959 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

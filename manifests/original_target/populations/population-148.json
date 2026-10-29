@@ -77,64 +77,6 @@
   },
   "regions": [
     {
-      "entry": 4618752,
-      "method": "00467a00",
-      "symbol": "?FUN_00467a00@seed_00467a00@@YAXXZ",
-      "symbol_prefix": "?FUN_00467a00@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 32,
-      "body_sha256": "4d21f335e8ac4558ea811d64d39287cc20f9e8ace84079b27d41a77597acdd9f",
-      "padding_bytes": 0,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "4d21f335e8ac4558ea811d64d39287cc20f9e8ace84079b27d41a77597acdd9f",
-      "relocations": [
-        {
-          "offset": 1,
-          "kind": 6,
-          "symbol": "_DAT_008504e8",
-          "target": 8717544,
-          "addend": 0,
-          "resolved": 8717544
-        },
-        {
-          "offset": 11,
-          "kind": 6,
-          "symbol": "?FUN_00465f20@seed_00467a00@@YAXXZ",
-          "target": 4611872,
-          "addend": 0,
-          "resolved": 4611872
-        },
-        {
-          "offset": 19,
-          "kind": 6,
-          "symbol": "_DAT_008504a8",
-          "target": 8717480,
-          "addend": 0,
-          "resolved": 8717480
-        },
-        {
-          "offset": 24,
-          "kind": 20,
-          "symbol": "?FUN_00781d46@seed_00467a00@@YAXPAI0IP6AHZZ@Z",
-          "target": 7871814,
-          "addend": 0,
-          "resolved": 3253034
-        }
-      ],
-      "source_sha256": "dcb662874ccc1d67049cf3d9a43e1877f3a3d893586fa268c0d8342af59a8bf0",
-      "source": "src/recovered/00467a00.cpp",
-      "source_order": 11608,
-      "population": "population-148",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-adjusted"
-    },
-    {
       "entry": 4693152,
       "method": "00479ca0",
       "symbol": "?FUN_00479ca0@seed_00479ca0@@YGXH@Z",

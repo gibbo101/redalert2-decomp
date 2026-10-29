@@ -1747,64 +1747,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 4616768,
-      "method": "00467240",
-      "symbol": "?FUN_00467240@seed_00467240@@YIXPAXHI@Z",
-      "symbol_prefix": "?FUN_00467240@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 67,
-      "body_sha256": "86568c0af9b42b38991c949b06ac4942e54e085565f6963f9474f507c517ac6c",
-      "padding_bytes": 13,
-      "full_extent_bytes": 80,
-      "full_extent_sha256": "267c281ccd2349a1a2b9cd2e0d3f72e5ec5bf8d6b781f553a9a24bb5f90b7d67",
-      "relocations": [
-        {
-          "offset": 17,
-          "kind": 6,
-          "symbol": "_PTR_LAB_007d1598",
-          "target": 8197528,
-          "addend": 0,
-          "resolved": 8197528
-        },
-        {
-          "offset": 25,
-          "kind": 20,
-          "symbol": "?FUN_00783764@seed_00467240@@YAIHHH@Z",
-          "target": 7878500,
-          "addend": 0,
-          "resolved": 3261703
-        },
-        {
-          "offset": 36,
-          "kind": 6,
-          "symbol": "__imp__GetDlgItem@8",
-          "target": 7971996,
-          "addend": 0,
-          "resolved": 7971996
-        },
-        {
-          "offset": 55,
-          "kind": 6,
-          "symbol": "__imp__SendMessageA@16",
-          "target": 7972000,
-          "addend": 0,
-          "resolved": 7972000
-        }
-      ],
-      "source_sha256": "7ec5001657e600679710827bc6aee0b8a34e8e53481837523e4f5a3a301b8cbe",
-      "source": "src/recovered/00467240.cpp",
-      "source_order": 10077,
-      "population": "population-88",
-      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 4620608,
       "method": "00468140",
       "symbol": "?FUN_00468140@seed_00468140@@YGEH@Z",

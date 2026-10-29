@@ -84,4 +84,32 @@ void Unknown_Free_Art_Flagged_006F2750();
 // Runs a modal dialog from a resource with a dialog procedure; returns its result (0x005EAB60).
 int __fastcall unknown_dialog_box_5eab60(int resource, int (__stdcall *proc)(struct HWND__ *, unsigned int, unsigned int, long), int unknown3);
 
+// The score screens' control IDs per player row: name, kills, lost, built, score and
+// the row's status text (0x007D1484).
+extern int unknown_score_controls_7d1484[8][6];
+// The score screen's title text (0x00A3D342, session +0xAA; also 0x005C34B0's).
+extern char unknown_text_a3d342[];
+// Whether the player has said ready (0x00850510; the continue button toggles it).
+extern bool unknown_score_flag_850510;
+// The campaign name (0x00850514).
+extern wchar_t unknown_score_name_850514[];
+// A score-screen network message (0x1C7 bytes).
+#pragma pack(push, 1)
+struct UnknownScorePacket {
+    int Command;                    // +0x00 0x23 ready, 0x24 aborted, 0x25 waiting, 0x26 continue
+    char Name[0x1C7 - 4];           // +0x04 the sender's narrowed name
+};
+#pragma pack(pop)
+// Sends value as decimal text to the dialog control id (message 0x4B2; 0x00465CC0, and the
+// end screen's copy 0x00467240).
+void __fastcall unknown_set_dialog_item_number_00465cc0(struct HWND__ *dialog, int id, int value);
+void __fastcall unknown_set_dialog_item_number_467240(struct HWND__ *dialog, int id, int value);
+// The score screen's dialog procedure (0x00465FC0).
+int __stdcall unknown_score_dialog_proc_465fc0(struct HWND__ *window, unsigned int message, unsigned int wparam, long lparam);
+// Sorts the end screen's score list best first (0x00467A00).
+void unknown_sort_end_scores_467a00();
+// Dialog helpers of the score screens (0x005E5F20 when painting; 0x005ECF40 on message 0x4ED).
+void __fastcall unknown_dialog_5e5f20(struct HWND__ *window);
+void __stdcall unknown_dialog_5ecf40(struct HWND__ *window, int unknown2);
+
 #endif

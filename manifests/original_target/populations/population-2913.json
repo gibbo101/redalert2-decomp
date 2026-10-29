@@ -2603,74 +2603,6 @@
       "source_order": 111420
     },
     {
-      "entry": 4611088,
-      "method": "00465c10",
-      "symbol": "?FUN_00465c10@seed_00465c10@@YIXPAI@Z",
-      "symbol_prefix": "?FUN_00465c10@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 7,
-      "body_sha256": "ac234f738da281957adb10f60fdeb63060d637300764dc6dea1757b250aa2115",
-      "padding_bytes": 9,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "fa1e67b46414bae1bc6ef05c34f7a8412672239337dbe0c875a4335297f278f5",
-      "relocations": [
-        {
-          "offset": 2,
-          "kind": 6,
-          "symbol": "_PTR_FUN_0079d724",
-          "target": 7984932,
-          "addend": 0,
-          "resolved": 7984932
-        }
-      ],
-      "source_sha256": "1d170b981754be2dc3fd27443f2b1439a6a124daf1941368db9b88a454f4bbcf",
-      "source": "src/recovered/classes/CampaignScoreClass/00465c10.cpp",
-      "population": "population-2913",
-      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 111422
-    },
-    {
-      "entry": 4616752,
-      "method": "00467230",
-      "symbol": "?FUN_00467230@seed_00467230@@YIXPAI@Z",
-      "symbol_prefix": "?FUN_00467230@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 7,
-      "body_sha256": "11c8e8acdfbf72694bbd4f45a2a5936f991f88d95e40ce044202be3cecbe9766",
-      "padding_bytes": 9,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "21fe5d8ceca5379fab788f6e1882dff552a3e5ad14af4c188b09d1625248ed90",
-      "relocations": [
-        {
-          "offset": 2,
-          "kind": 6,
-          "symbol": "_PTR_FUN_0079d730",
-          "target": 7984944,
-          "addend": 0,
-          "resolved": 7984944
-        }
-      ],
-      "source_sha256": "1b6f8d14c0208f26667425a0b8b9d09a023be21316deed7d2a91533ecae7e116",
-      "source": "src/recovered/classes/CampaignEndScoreClass/00467230.cpp",
-      "population": "population-2913",
-      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 111423
-    },
-    {
       "entry": 4624032,
       "method": "00468ea0",
       "symbol": "?FUN_00468ea0@seed_00468ea0@@YIPADI@Z",
@@ -6657,57 +6589,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
       "source_order": 111497
-    },
-    {
-      "entry": 4611056,
-      "method": "00465bf0",
-      "symbol": "??0CampaignScoreClass@@QAE@XZ",
-      "symbol_prefix": "??0CampaignScoreClass@@QAE@XZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 30,
-      "body_sha256": "9c7d81891d86a8aa0ec45bfc75d176c73c7eafb5e3934b85251e707f470f7d23",
-      "padding_bytes": 2,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "d70e9cb83b118a082ec8699f4c1ae1272d7252c1234d7706ecceb80a4f6cc021",
-      "relocations": [
-        {
-          "offset": 6,
-          "kind": 6,
-          "symbol": "??_7CampaignScoreClass@@6B@",
-          "target": 7984932,
-          "addend": 0,
-          "resolved": 7984932
-        },
-        {
-          "offset": 15,
-          "kind": 6,
-          "symbol": "?unknown_score_time_850508@@3HA",
-          "target": 8717576,
-          "addend": 0,
-          "resolved": 8717576
-        },
-        {
-          "offset": 21,
-          "kind": 6,
-          "symbol": "?unknown_score_difficulty_7d1480@@3HA",
-          "target": 8197248,
-          "addend": 0,
-          "resolved": 8197248
-        }
-      ],
-      "source_sha256": "73d2e930579f42dc54d486d79fb91733f2eb1a0196ec3d343efd45ac2d24d41c",
-      "source": "src/recovered/classes/CampaignScoreClass/CampaignScoreClass_constructor_00465bf0.cpp",
-      "population": "population-2913",
-      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "CampaignScoreClass_constructor_00465bf0",
-      "source_order": 111421
     }
   ]
 }
