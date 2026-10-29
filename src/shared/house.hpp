@@ -332,6 +332,9 @@ public:
     void unknown_func_4e7ee0(int arg1);                    // 0x004E7EE0
     void unknown_func_4e82c0();                            // 0x004E82C0
     void unknown_func_4e80d0(int arg1);                    // 0x004E80D0
+    // Hands a human player's house to the computer (0x004F4070; Destroy_Null_Connection calls it when a
+    // serial player leaves).
+    void unknown_func_4f4070();
     void unknown_func_4f5be0();                            // 0x004F5BE0 (the base building action when the base plan is empty)
     FactoryClass *unknown_func_4eb580(int kind, bool naval, int arg3); // 0x004EB580 (the factory per kind)
     // Starts producing a type in the house's factory for its kind (made when

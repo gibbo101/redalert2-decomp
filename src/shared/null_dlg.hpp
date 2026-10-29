@@ -6,6 +6,8 @@
 #include "shared/null_modem.hpp"
 #include "shared/win32_api.hpp"
 
+// The number to dial, with its call-waiting prefix (0x00A72D78; Red Alert's DialString).
+extern char DialString[];
 // The modem settings of the dial and answer dialogs (0x00A72DC4; Red Alert's DialSettings).
 extern SerialSettingsType *DialSettings;
 
@@ -15,6 +17,9 @@ extern SerialSettingsType *DialSettings;
 // 0x653-0x655 only when the session's default port settings open.
 int __stdcall Select_Serial_Dialog_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 void __fastcall Select_Serial_Dialog_Init(HWND window);
+
+// Appends a character the modem echoed to NullModem's echo buffer (0x005CFD70; Red Alert's Modem_Echo).
+void __fastcall unknown_text_buffer_append_005cfd70(char character);
 
 void Shutdown_Modem();                                                  // 0x005CEA60
 // Reconnect_Modem (0x005CEB40) and Destroy_Null_Connection (0x005CEBA0) are in shared/queue.hpp.

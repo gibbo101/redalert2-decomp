@@ -432,7 +432,7 @@
       },
       {
         "path": "src/shared/house.hpp",
-        "sha256": "5342daa17e94cab7cb2a408737aa48a0a7422eb92301f5d8abf1d712da8a291d"
+        "sha256": "74cc828bee794646bc65cf9f2c9af7cfb58ed7963333287cbc306bee691544e2"
       },
       {
         "path": "src/shared/infantry_type.hpp",
@@ -1776,7 +1776,7 @@
       },
       {
         "path": "src/shared/queue.hpp",
-        "sha256": "7105eedcf2c843a188dec920d3070b2e1f89d11341d80d4cb3b6de3b17577c7c"
+        "sha256": "4f9fb4491db1f8c34d06d02550fa370abbc22fca7e13c5cbe52c0420e4bd1059"
       },
       {
         "path": "src/shared/ww_message_box.hpp",
@@ -1788,7 +1788,7 @@
       },
       {
         "path": "src/shared/null_dlg.hpp",
-        "sha256": "8729321b52d37fc875dda9ace6153f55b6ca017502aad03fb5bc44416e1f84e1"
+        "sha256": "c26c8f2395b32788eedaff87e8a0e10d61054b0523a16fa34daa340e256fde35"
       }
     ],
     "source_quality_checkpoint": {
@@ -4748,7 +4748,8 @@
     "population-2946",
     "population-2947",
     "population-2948",
-    "population-2949"
+    "population-2949",
+    "population-2950"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -5523,7 +5524,7 @@
     ["population-15", 2],
     ["population-22", 1],
     ["population-2692", 1],
-    ["population-2947", 12],
+    ["population-2950", 12],
     ["population-2949", 20],
     ["population-2886", 36],
     ["population-2504", 13],
@@ -6753,7 +6754,7 @@
     ["population-130", 1],
     ["population-2865", 1],
     ["population-130", 1],
-    ["population-2947", 1],
+    ["population-2950", 1],
     ["population-2886", 1],
     ["population-130", 3],
     ["population-2603", 1],
@@ -7932,8 +7933,9 @@
     ["population-2944", 29],
     ["population-2945", 9],
     ["population-2946", 1],
-    ["population-2947", 4],
-    ["population-2949", 9]
+    ["population-2950", 4],
+    ["population-2949", 9],
+    ["population-2950", 4]
   ],
   "shards": {
     "population-01": "5c22284e67bbd185be0c4000f204f7d410e172b5750f694c53f8f26c83c98856",
@@ -10107,10 +10109,11 @@
     "population-2944": "ceb0bc79c89a571918f05a2bef9c3f2d9b37a1f806ad648ad43b5105f8e84ca2",
     "population-2945": "0a08bd4305b9b192f9a91a8276f07d37f07876342d7bcc3ea87431c274d4180f",
     "population-2946": "df623b098fad9f5fe944184e593b40ef20333d2834f4137852578d81758b58d0",
-    "population-2947": "686677d8c60e78cda438a74a8e274f27689f0a2fb20674fd3ed29f7c6844f9c6",
+    "population-2947": "d47a7bc99fbc77c676d1b92dec997025834216294a5181f9bd413f45c639d68a",
     "population-2948": "adb2d1d4983d05e5601dc716dee2fde0b3d908dde677f8fe99bb7f0bad2a7296",
     "population-2949": "335a5b768d86670f036940b5a6489e2be14888860fcf07a6052698b3052eeab9",
     "population-295": "8248c9fb13059a3c703cab1a123b0c7ba4943a8d5f73e5ca498edeafffcd0a19",
+    "population-2950": "8c9523dc260938fb4be525aa12aa553c72b2d2622b0506cea5d79cb3fa9715bf",
     "population-296": "3e57d29a0742899af130576ac396fab325916a98c8e786a82ebaa850ff0a2cb4",
     "population-297": "bd1e9960ea814e2b0067c0f42d586287e60a26b3b2e31118833a4efa82a55442",
     "population-298": "858fa7cfc0235386b2dcecec182ae92938bea9b079759e267bce95ef187d2dc7",

@@ -125,7 +125,7 @@ enum RetcodeType {
     RC_CANCEL
 };
 // A modem game's packet (packed; Red Alert's SerialPacketType; only the fields
-// Process_Serial_Packet reads; the same bytes are read as an EventClass).
+// Process_Serial_Packet reads; the same bytes are read as an EventClass; 0xFA bytes).
 #pragma pack(push, 1)
 struct UnknownSerialPacket {
     int Command;                        // +0x00 (0x66 sign off, 0x68 message, 0x69, 0x6A, 0x78 taunt)
@@ -138,6 +138,7 @@ struct UnknownSerialPacket {
             char unknown_19[4];
             char Color;                 // +0x1D the player leaving
         } ScenarioInfo;
+        char unknown_19[0xFA - 0x19];   // the packet is 0xFA bytes (Reconnect_Null_Modem's send and receive copies)
     };
 };
 #pragma pack(pop)
