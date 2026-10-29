@@ -143,11 +143,14 @@ public:
 // Unicode text typed out character by character into a rectangle, one
 // character every CharDelay ticks, optionally centring each line
 // (RTTI vtable 0x007A6E54). Layout from the constructor 0x005AE6C0.
-class MSFont;
+#include "shared/msfont.hpp"
 class MSPrintAnim : public MSAnim {
 public:
     virtual bool Unknown_Slot4(Surface *surface, Rect *dirty);     // 0x005AEDA0
     virtual void Draw(Surface *surface, Rect const *clip);          // 0x005AF030
+    // The width of a line up to its end or newline (inline: slot 4 and Draw
+    // expand it; name hypothesis).
+    int Line_Width(WideString const &line);
 
     WideString Text;            // +0x1C
     unsigned LineStart;         // +0x20 first character of the line shown at the top
@@ -161,6 +164,17 @@ public:
     bool Centered;              // +0x49 lines centred in TextRect
     int unknown_4C;             // +0x4C the last line's centring offset
 };
+
+inline int MSPrintAnim::Line_Width(WideString const &line)
+{
+    int i = 0;
+    int width = 0;
+    while (line.Get_Char(i) != 0 && line.Get_Char(i) != '\n') {
+        width += Font->Char_Width(line.Get_Char(i));
+        i++;
+    }
+    return width;
+}
 
 class Wstring;
 class FileClass;

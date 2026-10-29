@@ -38,12 +38,7 @@ bool MSPrintAnim::Unknown_Slot4(Surface *surface, Rect *dirty)
                 WideString line(Text);
                 line.Remove(0, index);
                 int spacing = Font->Width;
-                int i = 0;
-                int width = 0;
-                while (line.Get_Char(i) != 0 && line.Get_Char(i) != '\n') {
-                    width += Font->Char_Width(line.Get_Char(i));
-                    i++;
-                }
+                int width = Line_Width(line);
                 int offset = (TextRect.Width - width - spacing) / 2;
                 centered = false;
                 x += offset;

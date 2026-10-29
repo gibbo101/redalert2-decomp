@@ -88,11 +88,27 @@ starting points for the next class, not guarantees.
   floor, so their own size does not matter. Later statements count as much as
   earlier ones (the size is the whole function's). Each site inlines when its
   cost still fits; it is not "stop at the first miss".
-- **Direct sites first, nested sites after.** VC6 decides every direct call
-  in the caller (in source order) before any call that appears inside an
-  expansion. Then it decides the depth-2 calls in source order, and so on. So
-  any extra direct site pushes nested expansions out of line, even one placed
-  after them in the source. Examples: a DynamicVectorClass member's
+- **Depth-first, and a nested site pays for the sites still waiting above
+  it** (Study152; replaces Inline17's "direct sites first"). VC6 decides call
+  sites in source order; when it expands one it decides the sites inside that
+  body next, before the caller's later sites. A direct site (depth 1) inlines
+  when `cost <= remaining budget`. A site at depth d >= 2 inlines only when
+  `cost * (1 + W) <= remaining budget`, where W counts the inline-candidate
+  sites not yet decided in the enclosing bodies: a later direct site counts
+  d-1 times, a later site in the parent body d-2 times, later siblings in the
+  same body 0. Empty inline calls and inline calls that will be rejected as
+  too large count in W; out-of-line, virtual and over-the-cap non-inline calls
+  do not. Only accepted sites consume their cost, and free callees (Study37:
+  at most two plain stores or one call) cost 0. So an empty call before the
+  nested sites changes nothing (`E(); B();` = `B();`), one after takes the full
+  penalty (`B(); E();`), and a large nested callee (a template constructor,
+  Intersect) is pushed out by one or two later inline calls while a small one
+  is not. Lab: `build/class-work/Study152/lab/` (a 3/6/12/24-store callee loses
+  about its own cost per pending empty call; depth 3 pays 2x, depth 4 3x).
+  Examples: WorldDominationTour::Map ctor 0x729330 (exact only with three
+  member objects with inline constructors after Territories, which push the
+  VectorClass<rc_ptr<Territory>> ctor 0x72BB10 out while Palettes' small
+  vector ctor, decided last, stays inline); a DynamicVectorClass member's
   VectorClass base constructor, a helper's own callees, ToolTip() inside an
   inlined Tab helper. Examples:
   - FootClass ctor 0x4C2930 is byte-exact with one extra empty direct inline
@@ -328,8 +344,8 @@ the ignored build/class-work/Sched29/).
   DynamicVectorClass<ZoneConnectionClass>::Resize 0x0056B330 calling it for To).
 - The budget is proportional to the caller's size (a fixed fraction of equal sites inlines for
   any table length) up to an absolute cap past which the inlined count falls as the caller
-  grows. A callee's cost is its own unexpanded IL; nested sites are decided after all direct
-  ones and get only what is left, except free callees, which always expand.
+  grows. A callee's cost is its own unexpanded IL; nested sites are decided depth-first and
+  pay for the sites still pending above them (Study152, above), except free callees, which always expand.
 - A dynamic initializer is `_$E(n+1): jmp _$E(n)` for large objects; small ones are expanded
   into the .CRT$XCU entry itself, which makes their constructor calls depth-2 sites with only
   the entry's floor budget (Map 0x0055B520: 8 of 40 constructions inline).

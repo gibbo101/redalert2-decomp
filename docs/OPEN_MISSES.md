@@ -199,3 +199,11 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Tube walk 0x6FAA30 (1730 B) layout and math recovered, blocked on typing 0x4348F0/0x41B780/0x41B630 as
   CoordStruct helpers (HEAD has UnknownVector3). Slots 310 0x6FF690 and 311 0x7005B0 wait on the 310/311/312
   signature rename (Unit147 hdr/).
+- Inline-budget cases after Study152 (rule now in VC6_MATCHING_NOTES): BuildingLight ctor 0x432FC0 gets the
+  original call pattern by typing unknown_a0/unknown_ac as UnknownCoord434820 (Coord_Along_Facing building one;
+  0x4341D0 stays exact) but the init-list copies then put zero in eax not edi (37.69): find the init-list
+  spelling. MultiplayerGameMode 0x5B6CD0/0x5B8490/0x5B7840: `{ Invalidate_Message_Digest(); }` in the CCINIClass
+  ctor reproduces the pattern but breaks other units (DIR32 operand boundary), so not the original spelling.
+  MSPrintAnim::Draw 0x5AF030: one more pending inline site later in Draw, or a depth-3 Intersect, gives the
+  original call; untested a two-level Rect::Intersect member chain (rect.hpp, whole-tree check). The Campaign ctor
+  0x725F40 is not an inlining problem (folding/registers, WDT136).
