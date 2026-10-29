@@ -561,3 +561,46 @@ reaching each block).
   redraw is one statement with an inline `Rect - TPoint2D`).
 - A separate-unit plan cannot include headers that carry header statics; such functions go in their
   real unit.
+
+## Westwood source idioms (published Westwood sources, 2026-10-28)
+
+The published Red Alert and Renegade sources ([WESTWOOD_SOURCES.md](WESTWOOD_SOURCES.md))
+show how the original code was written, which is what the rules above are reverse
+engineering. Read them for shape; GPL code is never copied, and every shape is still
+verified on the target.
+
+- The recovered library headers already reproduce the wwlib text: VectorClass,
+  IndexClass, GenericList, Straw/Pipe, Pick_Random_Number, TRect/TPoint2D and the
+  timers match member for member. When a lane needs a container or library member it
+  has not met, read the wwlib header first; its names and statement order are the
+  original's. The RA2-only differences are listed in WESTWOOD_SOURCES.md.
+- `wwlib/always.h` is included by every library unit. It defines
+  `WWINLINE` as `__forceinline` under MSVC and uses it on `VectorClass<T>::operator[]`,
+  `Length()`, the NoInit constructor and `RefCountClass::Add_Ref`/`Release_Ref`; it
+  pulls in `visualc.h`, which sets `#pragma inline_depth(255)` (VC6's default is 8) and
+  disables warnings 4514, 4244, 4056, 4710, 4355, 4097, 4505, 4711, 4511, 4512, 4100
+  and 4786; it defines `NOMINMAX`, `MIN`/`MAX` as the usual double-evaluating macros
+  beside template `min`/`max`, and `ARRAY_SIZE`. `bound.h` has the `Bound<T>` template
+  (two ifs, not a nested ternary), `swap.h` a `swap<T>` with a default-constructed
+  temporary, `incdec.h` the enum `++`/`--` operator templates. Two hypotheses to test in
+  the Study152 lab before any rule changes: (1) library units compiled with
+  `inline_depth(255)`, so a nested site that refuses to inline under the default depth
+  may be the real shape at depth 9 or deeper; (2) `__forceinline` on those accessors is
+  Westwood's own text, so an accessor that never appears out of line is evidence for
+  `WWINLINE`, not steering. The honest-source rule in ORIGINAL_TARGET_PROCESS.md bans
+  `__forceinline`; if (2) holds it needs an owner ruling that limits the exception to
+  the members wwlib marks.
+- The MIN/MAX macro under "Macro clamps and member accessors" is wwlib's spelling
+  (`MIN(a,b)`, `MAX(a,b)` in always.h); Red Alert's JSHELL.H had template `min`/`max`
+  and `Bound` instead.
+- Game-code idioms from Red Alert that the class lanes keep meeting: NoInit constructors
+  pass `x` to every base and member that has one
+  (`AircraftClass(NoInitClass const & x) : FootClass(x), Class(x), SightTimer(x) {}`);
+  `Is_Infantry()`-style tests are inline RTTI compares in the header; each object class
+  has `static void Init(void)`, an out-of-line pool `operator new(size_t)` beside an
+  inline placement `operator new(size_t, void * ptr) {return(ptr);}` and a
+  `Read_INI(CCINIClass &)`; nested constants are `enum {FLIGHT_LEVEL=256};`;
+  parameter lists are `(void)` and accessors `const`; 1996 flags are
+  `unsigned IsX:1` bitfields where RA2's are `int` members and `bool` returns (see
+  Types). `Percent_Chance`, `Random_Pick` and `Sim_Random_Pick` are inline wrappers in
+  INLINE.H over the scenario and simulation generators.

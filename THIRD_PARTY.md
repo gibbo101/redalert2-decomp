@@ -73,6 +73,17 @@ inspection tools; VC6 and CrossOver are legitimate user-supplied local build too
   tooling installed or builds/tests run. Neither reference is a new dependency.
   See [docs/REFERENCES.md](historical/native-reconstruction/docs/REFERENCES.md) for the use and verification procedure.
 
+- **Electronic Arts Westwood source releases** (read-only shape references,
+  see [docs/WESTWOOD_SOURCES.md](docs/WESTWOOD_SOURCES.md)):
+  `electronicarts/CnC_Red_Alert` commit `0dc09bb1d6188d1ec79ab4765b22a48b75ffee32`,
+  `electronicarts/CnC_Renegade` commit `3e00c3a1b97381bb28be89a35b856375e0629a08`,
+  `electronicarts/CnC_Tiberian_Dawn` commit `e0d372dc582c053a699114942b984dad0457f9b3`.
+  GPL-3.0 with EA's additional terms (section 7 of each LICENSE.md: no EA trademarks,
+  modified versions marked, notice retained), Copyright Electronic Arts Inc. Cloned
+  under the ignored `private/reference/`. No header, implementation or data was
+  incorporated; they supply naming, member-order and idiom hypotheses that are
+  verified on the base executable like every other reference.
+
 ## Native linked libraries (tested development versions)
 
 | Library | Version | License | Use |

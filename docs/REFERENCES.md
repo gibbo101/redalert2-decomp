@@ -33,3 +33,11 @@ Those observations may be stale: inspect the exact pinned license before reuse;
 their former workflow, platform claims and next-step directives are not active
 recovery instructions. Current architecture/phase authority is
 [ORIGINAL_TARGET_PROCESS.md](ORIGINAL_TARGET_PROCESS.md).
+
+The published Westwood sources (Electronic Arts' GPL releases of Red Alert,
+Tiberian Dawn and Renegade) are the closest public relatives of RA2's code and
+are cloned read-only under `private/reference/`: see
+[WESTWOOD_SOURCES.md](WESTWOOD_SOURCES.md) for the pinned revisions, the
+licence terms and a recovered-header to reference-file lookup table. They are
+shape references under the same rule as everything else here: hypotheses only,
+verified on the exact target, nothing copied.
