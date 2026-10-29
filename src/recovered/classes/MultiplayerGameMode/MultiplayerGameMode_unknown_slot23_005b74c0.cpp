@@ -1,5 +1,5 @@
 // int MultiplayerGameMode::unknown_slot23() -- 0x005B74C0
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
 // @ref ?Unknown_00672940@UnknownSessionState@@QAEHXZ=00672940
 

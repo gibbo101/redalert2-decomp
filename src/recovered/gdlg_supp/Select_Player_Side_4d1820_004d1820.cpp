@@ -2,7 +2,7 @@
 // Selects the session player's country in a row's side combo box (random,
 // -2, or observer, -3, when the session says so).
 #include "shared/gdlg_supp.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
 
 void __fastcall Select_Player_Side_4d1820(HWND dialog, int player)

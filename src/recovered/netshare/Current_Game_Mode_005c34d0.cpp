@@ -2,6 +2,7 @@
 // The session's game mode object (session +0x18), or the first registered mode when there is none.
 #include "shared/lobby.hpp"
 #include "shared/multiplayer_game_mode.hpp"
+#include "shared/session_state.hpp"
 
 MultiplayerGameMode *Current_Game_Mode_005c34d0()
 {

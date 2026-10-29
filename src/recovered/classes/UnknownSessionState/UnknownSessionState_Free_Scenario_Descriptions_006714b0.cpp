@@ -2,6 +2,7 @@
 #include "shared/vector_class.hpp"
 #include "shared/multi_mission.hpp"
 #include "shared/serial_settings.hpp"
+#include "shared/session_state.hpp"
 
 // Red Alert's Free_Scenario_Descriptions: deletes the maps, the init strings and the phone book entries.
 // Deleting a MultiMission expands its destructor (GameModes, then DiskIDs); the VectorClass<Wstring> and

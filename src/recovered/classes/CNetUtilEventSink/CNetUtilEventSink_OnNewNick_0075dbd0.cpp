@@ -1,4 +1,5 @@
 #include "shared/wol_sink.hpp"
+#include "shared/session_state.hpp"
 HRESULT __stdcall CNetUtilEventSink::OnNewNick(HRESULT result, char const *message, char const *nick, char const *password)
 {
     wchar_t error[5120];

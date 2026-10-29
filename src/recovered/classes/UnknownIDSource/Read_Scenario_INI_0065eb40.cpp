@@ -84,7 +84,7 @@
 #include "shared/unknown_geometry.hpp"
 #include "shared/house.hpp"
 #include "shared/win32_api.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/cc_file_class.hpp"
 #include "shared/debug_printf.hpp"
 #include "shared/string_table.hpp"

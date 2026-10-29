@@ -3,6 +3,7 @@
 #include "shared/string_table.hpp"
 #include "shared/unknown_player_entry.hpp"
 #include "shared/lobby.hpp"
+#include "shared/session_state.hpp"
 // @ref ?unknown_ipx_manager_a40978@@3VIPXManagerClass@@A=00a40978
 // @ref ?Unknown_005C2DA0@@YIXHPBGPAUHWND__@@@Z=005c2da0
 // @ref ??_C@_0BI@DEM@TXT_RECONNECT_KICK_SELF?$AA@=007ecadc

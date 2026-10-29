@@ -1,7 +1,7 @@
 // Original entry0057BE50: incoming ECX unused, one signed32 argument, RET4.
 // Operation/free-stdcall/void intent hypotheses; no caller/runtime root established.
 #include "shared/id_source.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/progress_screen.hpp"
 
 void __stdcall Report_Generation_Progress_0057be50(int progress)

@@ -6,6 +6,7 @@
 #include "shared/rules.hpp"
 #include "shared/sound_play.hpp"
 #include "shared/gadget.hpp"
+#include "shared/session_state.hpp"
 // @ref ?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z=005b4da0
 // @ref ?Concat_Message@MessageListClass@@QAEHPBGH0H@Z=005b51c0
 // @ref ?Destroy_Null_Connection@@YIXHH@Z=005ceba0

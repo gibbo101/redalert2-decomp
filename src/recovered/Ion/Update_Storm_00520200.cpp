@@ -20,7 +20,7 @@
 #include "shared/object.hpp"
 #include "shared/rules.hpp"
 #include "shared/string_table.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/unknown_geometry.hpp"
 #include "shared/vox_class.hpp"
 // @ref ?StormActive@@3_NA=00a51934

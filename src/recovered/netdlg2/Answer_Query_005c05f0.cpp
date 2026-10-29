@@ -2,6 +2,7 @@
 #include "shared/lobby.hpp"
 #include "shared/ipx_manager.hpp"
 #include "shared/taunt_packet.hpp"
+#include "shared/session_state.hpp"
 // @ref ?Value_011c_00672a10@UnknownSessionState@@QAEHXZ=00672a10
 // @ref ?Value_0124_006729f0@UnknownSessionState@@QAEHXZ=006729f0
 // @ref ?unknown_a71bc4@@3PADA=00a71bc4

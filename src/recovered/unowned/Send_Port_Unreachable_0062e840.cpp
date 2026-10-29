@@ -4,6 +4,7 @@
 #include "shared/lobby.hpp"
 #include "shared/system_timer.hpp"
 #include "shared/audio.hpp"
+#include "shared/session_state.hpp"
 // @ref ?unknown_ipx_manager_a40978@@3VIPXManagerClass@@A=00a40978
 // @ref ?unknown_OwnerTalkClass_00ab6d18@@3VOwnerTalkClass@@A=00ab6d18
 // @ref ?Unknown_0063FB40@OwnerTalkClass@@QAEPADH@Z=0063fb40

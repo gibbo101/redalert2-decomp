@@ -14,6 +14,7 @@
 #include "shared/keyboard.hpp"
 #include "shared/map_preview.hpp"
 #include "shared/options_dialog.hpp"
+#include "shared/session_state.hpp"
 // @ref ??_C@_0BB@BKAI@Settings?5change?6?$AA@=007e20b0
 // @ref ?Unknown_005c7570@@YIXPAUHWND__@@@Z=005c7570
 // @ref ?unknown_dialog_preview_a72ce8@@3PAVUnknownPreview_0061D430@@A=00a72ce8

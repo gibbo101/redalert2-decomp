@@ -4,8 +4,8 @@
     "id": "population-2996",
     "inventory_sha256": "1900fee3c52149d9b0a0398b454a9bf22f70aaed846da1517d994909752cbde6",
     "gaps_sha256": "58022b047f31c3b3b11df5f141b520fa85ed38c1a62d270261722d74a02c28eb",
-    "historical_population_sha256": "4e31d84e7d79837e4dc985d89c4e3d409ca34603db89c26b1e1e7c3c666992c7",
-    "historical_acceptance_sha256": "0427685fb751d2191b0e43fd8c557c5098a3593f9212d1e8e1884944de3d91d4"
+    "historical_population_sha256": "5003ff7f0db2bf9cabb163c5409825e78a5d8923ef09556caaf788023689fe1c",
+    "historical_acceptance_sha256": "b54ebb4bfc1edce872cb9ea8645de787606781c60a50c28e303c7893bb5234ba"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8698,7 +8698,36 @@
     "?Read_Battles@CampaignClass@@SIXAAVCCINIClass@@@Z": 4609776,
     "??_7CampaignClass@@6B@": 7984800,
     "??_ECampaignClass@@UAEPAXI@Z": 4610416,
-    "??_ECampaign@WorldDominationTour@@UAEPAXI@Z": 7498160
+    "??_ECampaign@WorldDominationTour@@UAEPAXI@Z": 7498160,
+    "__imp__SetWindowPos@28": 7971792,
+    "?AI_Unit@HouseClass@@QAEHXZ": 5151888,
+    "?AI_Infantry@HouseClass@@QAEHXZ": 5153200,
+    "?AI_Aircraft@HouseClass@@QAEHXZ": 5154000,
+    "?unknown_reveal_around_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7014000,
+    "?unknown_reveal_zone_of_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7014464,
+    "?unknown_sound_at_random_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7015824,
+    "?Building_Or_Terrain_At_006B0E40@@YIPAVObjectClass@@ABUCoordStruct@@@Z": 7016000,
+    "?unknown_waypoint_sound_6b0f90@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7016336,
+    "?unknown_grant_super_6b11a0@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7016864,
+    "?unknown_grant_super_6b1200@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7016960,
+    "?unknown_win_or_lose_6b1360@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7017312,
+    "?unknown_lose_or_win_6b1390@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7017360,
+    "?unknown_set_house_136@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7017408,
+    "?unknown_weapon_explosion_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7018512,
+    "?unknown_center_on_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7019456,
+    "?unknown_func_6b1d00@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7019776,
+    "?unknown_spotlight_behavior_6b1d80@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7019904,
+    "?unknown_meteor_shower_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7020608,
+    "?unknown_ion_blast_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7021424,
+    "?unknown_nuke_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7021568,
+    "__real@8@c005c800000000000000": 8019912,
+    "?unknown_chem_missile_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7022688,
+    "?unknown_select_sidebar_tab@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7024656,
+    "?unknown_sidebar_6822b0@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7024736,
+    "?Unknown_006822B0@SidebarClass@@QAEXPAVTechnoTypeClass@@H@Z": 6824624,
+    "?unknown_func_4e8610@HouseClass@@QBE?AUCoordStruct@@H@Z": 5146128,
+    "?unknown_func_4f5a20@HouseClass@@QAEMPAVTechnoTypeClass@@@Z": 5200416,
+    "__imp__SetWindowPos": 7971792
   },
   "regions": [
     {
@@ -9932,7 +9961,7 @@
           "resolved": 4293330827
         }
       ],
-      "source_sha256": "a868dede65ba06aebd55c952277f892cd7ab195bec798fd52351b8c01c7fd2dc",
+      "source_sha256": "442887768d93f2f8b76a0f903799630628a148671676c82d97a752eecd802c14",
       "source": "src/recovered/classes/ModemGuest/ModemGuest_Dialog_00596010.cpp",
       "population": "population-2996",
       "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
@@ -10985,7 +11014,7 @@
           "resolved": 1558740
         }
       ],
-      "source_sha256": "7099431e90c3482035f856b3dabd48b32778a118b0e5c7b1b22c5814029d13b0",
+      "source_sha256": "e076d34111932c9f46a61fb57e9f3e8d40adcb2faf184ba59150c9f0cdf884a8",
       "source": "src/recovered/classes/ModemGuest/ModemGuest_Show_Options_00597220.cpp",
       "population": "population-2996",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
@@ -12751,7 +12780,7 @@
           "resolved": 5864954
         }
       ],
-      "source_sha256": "f6e23249c02b15f18894572261ba1966020708f8ebfc26a62bc16d1e482d7f78",
+      "source_sha256": "e7068d49ab6c97c4172a1ffeb3052e6688b39681c2eed9a139ab30d4e0b9f3b2",
       "switch_data_bytes": 49,
       "source": "src/recovered/classes/ModemGuest/ModemGuest_Process_Messages_00597680.cpp",
       "population": "population-2996",
@@ -13395,7 +13424,7 @@
           "resolved": 10956008
         }
       ],
-      "source_sha256": "815aab93db1d5f48dafe8c4de5f9ccb10325b91df1128ac536edc57f0603fde6",
+      "source_sha256": "69179591884d9726f0d1c4b0e09cb4e8f53408959d70c8521dc699d2d485ab7c",
       "source": "src/recovered/classes/ModemGuest/ModemGuest_Receive_Options_00597e50.cpp",
       "population": "population-2996",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -15101,7 +15130,7 @@
           "resolved": 993902
         }
       ],
-      "source_sha256": "9a06dca5a68875e07a10d2de392b53879045899254f09efdab7310c4fbad0e07",
+      "source_sha256": "e6be64fe1bdef257ec8e2e4080f0356f3b4e27d87ddd20e767cf80cdff818216",
       "source": "src/recovered/classes/ModemGuest/ModemGuest_Start_Game_005986f0.cpp",
       "population": "population-2996",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",

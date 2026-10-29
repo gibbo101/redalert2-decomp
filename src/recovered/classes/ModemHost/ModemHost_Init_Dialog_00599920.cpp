@@ -23,6 +23,7 @@
 #include "shared/special.hpp"
 #include "shared/random2.hpp"
 #include "shared/cc_file_class.hpp"
+#include "shared/session_state.hpp"
 extern "C" void __cdecl srand(unsigned int seed);
 extern "C" int __cdecl rand();
 // @ref ?unknown_modem_host_first_7e2410@@3_NA=007e2410

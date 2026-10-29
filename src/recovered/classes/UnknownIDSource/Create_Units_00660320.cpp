@@ -79,7 +79,7 @@
 // UnitClass is this unit's stand-in (shared/unit_type.hpp; the full class
 // cannot be included after it), so the new base unit is used as TechnoClass.
 #include "shared/id_source.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/unit_type.hpp"
 #include "shared/infantry_type.hpp"
 #include "shared/house.hpp"

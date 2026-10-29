@@ -1,5 +1,6 @@
 // void __fastcall Unknown_00627190(UnknownGlobalPacket *packet, IPXAddressClass *address) (0x00627190).
 #include "shared/queue.hpp"
+#include "shared/session_state.hpp"
 
 void __fastcall Unknown_00627190(UnknownGlobalPacket *packet, IPXAddressClass *address)
 {

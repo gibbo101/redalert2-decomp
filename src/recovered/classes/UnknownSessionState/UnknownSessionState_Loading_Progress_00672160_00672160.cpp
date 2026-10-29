@@ -8,6 +8,7 @@
 #include "shared/crt_string.hpp"
 #include "shared/keyboard.hpp"
 #include "shared/audio.hpp"
+#include "shared/session_state.hpp"
 
 // Reports the local loading progress: the progress screen's own bar (half of it while unknown_223b is set), then,
 // with other players, a 0x0F global packet (IPX; guaranteed to each player once at 99.95%) or a 0x6C serial packet,

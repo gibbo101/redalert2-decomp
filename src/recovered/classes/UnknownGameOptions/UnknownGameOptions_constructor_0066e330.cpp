@@ -1,5 +1,5 @@
 // UnknownGameOptions (the 0x7C option block; session +0x13C, +0x1B8, +0x234).
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 
 // The defaults: credits 10000, ten units, the five flags set, the rest 0.
 UnknownGameOptions::UnknownGameOptions() :

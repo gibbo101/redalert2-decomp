@@ -14,7 +14,7 @@
 #include "shared/rules.hpp"
 #include "shared/sound_play.hpp"
 #include "shared/string_table.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?StormActive@@3_NA=00a51934
 // @ref ?StormCoords@@3VCell@@A=00a51878

@@ -3,7 +3,7 @@
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #include "shared/multiplayer_game_mode.hpp"
 #include "shared/unknown_description_list.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/debug_printf.hpp"
 #include "shared/crt_string.hpp"
 // @ref ??_C@_06BILL@Normal?$AA@=007d1b30

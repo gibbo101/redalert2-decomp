@@ -3,6 +3,7 @@
 // dialog's combo boxes) into a per-game-type settings block.
 #include "shared/lobby.hpp"
 #include "shared/gdlg_supp.hpp"
+#include "shared/session_state.hpp"
 
 void __fastcall Save_Lobby_Options_005cc890(HWND dialog, UnknownGameOptions *options)
 {

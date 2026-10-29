@@ -3,6 +3,7 @@
 // complete and the port opens (the session's SerialDefaults).
 #include "shared/null_dlg.hpp"
 #include "shared/serial_progress.hpp"
+#include "shared/session_state.hpp"
 // @ref __imp__GetDlgItem@8=0079a49c
 // @ref __imp__EnableWindow@8=0079a490
 // @ref ?serial_manager_00a40a28@@3VNullModemClass@@A=00a40a28

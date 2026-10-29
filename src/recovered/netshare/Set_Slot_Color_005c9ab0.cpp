@@ -1,6 +1,7 @@
 // void __fastcall Set_Slot_Color_005c9ab0(HWND dialog, int id) (0x005C9AB0)
 #include "shared/lobby.hpp"
 #include "shared/gdlg_supp.hpp"
+#include "shared/session_state.hpp"
 // @ref ?Set_Value_00672ae0@UnknownSessionState@@QAEXH_N@Z=00672ae0
 // @ref ?unknown_66e300@NodeNameType@@QAEXH@Z=0066e300
 // @ref ?unknown_closed_entry_a72d30@@3PAUNodeNameType@@A=00a72d30

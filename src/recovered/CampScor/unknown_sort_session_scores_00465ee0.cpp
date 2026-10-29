@@ -4,7 +4,7 @@
 // @ref ?unknown_score_list_850448@@3PAPAVMPlayerScoreType@@A=00850448
 // @ref ?unknown_compare_descending_60_00465f20@@YAHPBX0@Z=00465f20
 // @ref _qsort=00781d46
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/campaign_score.hpp"
 
 extern "C" void __cdecl qsort(void *base, unsigned int count, unsigned int width, int (__cdecl *compare)(void const *, void const *));

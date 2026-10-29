@@ -18,6 +18,7 @@
 #include "shared/raw_file_class.hpp"
 #include "shared/buffer_pipe.hpp"
 #include "shared/lzo_pipe.hpp"
+#include "shared/session_state.hpp"
 // @ref ??_C@_0BK@LFJL@Preview?5size?5is?5?$CFd?5bytes?6?$AA@=007e2754
 // @ref ??_C@_0BN@KJJF@Starting?5map?5preview?5upload?6?$AA@=007e2794
 // @ref ??_C@_0CC@GEGD@Failed?5to?5get?5SERIAL_PREVIEW_ACK@=007e2770

@@ -6,7 +6,7 @@
 class WDTTerritory;
 template <> bool VectorClass<rc_ptr<WDTTerritory> >::Resize(int newsize, rc_ptr<WDTTerritory> const *array);
 #include "shared/world_domination_tour.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/random2.hpp"
 rc_ptr<WDTTerritory> __fastcall Get_WDT_Territory_00769690(int value);
 // @ref ?Get_WDT_Territory_00769690@@=00769690

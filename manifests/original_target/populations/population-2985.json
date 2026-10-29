@@ -4,8 +4,8 @@
     "id": "population-2985",
     "inventory_sha256": "d1652fe25756d8dad793b805787fcffaa7f019deec19731d47f4e4041b7922ce",
     "gaps_sha256": "9bf2b244a8df96258e17b0f69a5c686abcb7426e2396f3da0cd1b3c162cec826",
-    "historical_population_sha256": "0dfe2947fd19c9a2f97bce4dc8eb0c15335119bbecfccf0f42ce8e1f76a21b16",
-    "historical_acceptance_sha256": "3ad0b009aff9797cc478312a7def6f9e8d9517e5ae67be16c400964dea402b58"
+    "historical_population_sha256": "953fe7315b40b6d34a80814172e61851618c98a61e3964adc5c4e65713f767cb",
+    "historical_acceptance_sha256": "2ff4aaa1b6a9ed8eac39c7bf73623bb63b9cc0dd51d5b5be26a2903c0906d921"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8358,7 +8358,16 @@
     "?unknown_func_4e67a0@HouseClass@@QAEXH@Z": 5138336,
     "?unknown_func_4f0e30@HouseClass@@QAE?AVCell@@PAVBuildingTypeClass@@@Z": 5180976,
     "?unknown_func_4f0ff0@HouseClass@@QAEXPBVObjectClass@@HPAHABVRect@@@Z": 5181424,
-    "?unknown_func_4f3720@HouseClass@@QAEXH@Z": 5191456
+    "?unknown_func_4f3720@HouseClass@@QAEXH@Z": 5191456,
+    "?Count@UnknownSelection@@QAEHXZ": 6997936,
+    "?Get@UnknownSelection@@QAEPAVObjectClass@@H@Z": 6997952,
+    "?Add@?$DynamicVectorClass@PAVTechnoClass@@@@QAE_NABQAVTechnoClass@@@Z": 4274096,
+    "??0MultiMission@@QAE@PBDPBG0_N0HH@Z": 6757456,
+    "??0?$VectorClass@W4DiskID@@@@QAE@IPBW4DiskID@@@Z": 6769312,
+    "??0?$VectorClass@VWstring@@@@QAE@IPBVWstring@@@Z": 6769392,
+    "__imp__SetWindowPos@28": 7971792,
+    "__real@8@c005c800000000000000": 8019912,
+    "__imp__SetWindowPos": 7971792
   },
   "regions": [
     {
@@ -12852,7 +12861,7 @@
           "resolved": 10736412
         }
       ],
-      "source_sha256": "254c4cc97f7b56bd0ca4ff37c21188235d6acca1ac793df0abf72ac47e0542bf",
+      "source_sha256": "0d9791f0f1a6ad6192f3eb9842a448a59e26f82cce51c4b59b9c76f170584b6a",
       "source": "src/recovered/netshare/Set_Slot_Country_005c9a10.cpp",
       "population": "population-2985",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
@@ -13055,7 +13064,7 @@
           "resolved": 10736412
         }
       ],
-      "source_sha256": "dc7ccc27b2186f14e3853376e95eb0e4689ac91da0881202f496b498bf0072ab",
+      "source_sha256": "20d71a0bc496bb85324d0c6dc7837f4da570e6869315a56a72ebd2a7b238a7ba",
       "source": "src/recovered/netshare/Set_Slot_Color_005c9ab0.cpp",
       "population": "population-2985",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
@@ -13801,7 +13810,7 @@
           "resolved": 671182
         }
       ],
-      "source_sha256": "0cc5212c7025a48f09cb3cfcbdb7af0bccaaf44f172b3c5ecf72af9e5af4faf2",
+      "source_sha256": "e2a7d4cf2873fa842e88738105e01586c1de6f687b727b9cbb246e3dd32320b0",
       "source": "src/recovered/netshare/Slot_Color_005ca480.cpp",
       "population": "population-2985",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
@@ -16123,7 +16132,7 @@
           "resolved": 4294916572
         }
       ],
-      "source_sha256": "edfd57a1840cb7ae7ff4b068a6ea6d1e7a3921f8edeafca0819dced96df8071d",
+      "source_sha256": "45684338e2717f554bf016bb0a627b1f715328a054a098ed40af34266dab22ed",
       "source": "src/recovered/netshare/Current_Game_Mode_005c34d0.cpp",
       "population": "population-2985",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -18222,7 +18231,7 @@
           "resolved": 10736321
         }
       ],
-      "source_sha256": "83c0ae0c207f534c3aa6c44fe481241ed66774e7882218adf705e380dbd473c3",
+      "source_sha256": "e0b9c2bfc3652942ac8d5a5685e5ea5280a7b7c98aaa00386021854b7483528f",
       "source": "src/recovered/netshare/Save_Lobby_Options_005cc890.cpp",
       "population": "population-2985",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
@@ -19455,7 +19464,7 @@
           "resolved": 4293293167
         }
       ],
-      "source_sha256": "79f74cac2c1e37a4080c9029624a781230e19642f62111f48fb80a12fbbb919d",
+      "source_sha256": "5d4d89aebcfef9bd61129c08e7c6e0ce60cefbf780dd029e0d05f02408437f57",
       "source": "src/recovered/netshare/Select_Scenario_005c7c30.cpp",
       "population": "population-2985",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",

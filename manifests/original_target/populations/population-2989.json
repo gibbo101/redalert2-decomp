@@ -4,8 +4,8 @@
     "id": "population-2989",
     "inventory_sha256": "373b4b6bb650c8d71e08f4fd0c8a2d2f801725caa8ceea60c0a3850c5a73803a",
     "gaps_sha256": "a144c984ebfe260304706e60296db3a8143eefb640484fbde62ffe0597469d46",
-    "historical_population_sha256": "83d9a5c8239baaa5ab86418720e50e9a22352b6bb9853c0dfe49be818406cbfc",
-    "historical_acceptance_sha256": "eb2089a3650b209a45e2116af1cbf47e333b984b5c584adeaf719065549c27f6"
+    "historical_population_sha256": "ebbef531d7e1db3e2cc6217d5e7a2f5fbc229b52fca4cc3db550453f35a2cde7",
+    "historical_acceptance_sha256": "984d039c0264d123343b571fa451bb3dde1a824c27a240c06ab04c53a4d23b9a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7233,7 +7233,11 @@
     "??_7?$VectorClass@VWstring@@@@6B@": 8033860,
     "??_7?$VectorClass@W4DiskID@@@@6B@": 8033828,
     "??_G?$VectorClass@VWstring@@@@UAEPAXI@Z": 6768608,
-    "??_E?$VectorClass@VWstring@@@@UAEPAXI@Z": 6768608
+    "??_E?$VectorClass@VWstring@@@@UAEPAXI@Z": 6768608,
+    "??0MultiMission@@QAE@PBDPBG0_N0HH@Z": 6757456,
+    "__imp__SetWindowPos@28": 7971792,
+    "__real@8@c005c800000000000000": 8019912,
+    "__imp__SetWindowPos": 7971792
   },
   "regions": [
     {
@@ -11933,7 +11937,7 @@
           "resolved": 4294957116
         }
       ],
-      "source_sha256": "a4df2b989cd35fd2d8e6d45070b7c35e41100a9295bf875d2135502521d63a6e",
+      "source_sha256": "4edf8cbf20fbf871c7928b111a4352b009d5d3fc2ab7456b063f7ab4321d4ba7",
       "source": "src/recovered/classes/WorldDominationTour__Selection/WorldDominationTour_Selection_Choose_Conflict_0072ffc0.cpp",
       "population": "population-2989",
       "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",

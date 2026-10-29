@@ -27,7 +27,7 @@
 #include "shared/display.hpp"
 #include "shared/map_view.hpp"
 #include "shared/lobby.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/debug_printf.hpp"
 #include "shared/crt_string.hpp"
 

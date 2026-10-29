@@ -25,7 +25,7 @@
 // selection or NextScenario/AltNextScenario by variable 1); checkpoints the
 // scenario state, raises +0x834 and starts the next scenario.
 #include "shared/id_source.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/scenario_checkpoint.hpp"
 #include "shared/system_timer.hpp"
 #include "shared/t_timer.hpp"

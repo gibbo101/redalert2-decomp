@@ -482,3 +482,14 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   registers, cached zero in edi used in case 0x653). Landing needs Init_Null_Modem 0x5CEA30 moved from population-2402
   into the unit under its real name, Options.Seed as int in queue.hpp, SetCommBreak/ClearCommBreak, new phone_ed.hpp /
   serial_ed.hpp. Register-allocation work: Windows lead 2 queue. 0x5CFDB0 (31 B) lands with it.
+- House.CPP after House212 (build/class-work/House212/w, NOTES; parked): AI_Building 0x4E9660 99.42 (original reads Type
+  before the Cell store but stores Type after it; ~15 copy forms tried), AI_Raise_Money 0x4E90F0 87.22 (w/rm_best.cpp,
+  overlay i6: the original keeps Factories.Vector in eax across the Suspend/Abandon/delete loop, loading before and
+  reloading after the delete - same blocker as 0x4E8D80 and the function near 0x4F4128; only `if (Factories[f]) delete
+  Factories[f];` reproduces it in tests, with an extra null test). Place_Object 0x4E6950, 0x4E77F0 not started.
+- TAction.CPP after TAction215 (zero bytes; build/class-work/TAction215, NOTES; parked): Execute 0x6ADAE0 69.14 (body_bytes
+  7752 = 7284 code + 117-entry table at 0x6AF754; case order and member map recovered in w/exec2.cpp; shape `bool success
+  = true; ... case N: success = member(...); break;`; blocked by the /Ob2 budget: ours also inlines 0x6B1270, 0x6B19A0,
+  the timer Stop and CDTimer ctor and runs out at case 55, the original at case 74 - members likely cost more to inline in
+  the original; exact member rewrites in w/r_*.cpp). 0x6AFD80 49.66 (one function; same budget pattern).
+  Execute needs seed take-overs 0x6B0540 (pop-148), 0x6B1AC0/0x6B1AE0/0x6B1AF0 (pop-88).

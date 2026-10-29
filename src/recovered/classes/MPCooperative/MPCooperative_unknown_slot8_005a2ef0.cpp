@@ -25,7 +25,7 @@
 #include "shared/unknown_description_list.hpp"
 #include "shared/string_table.hpp"
 #include "shared/lobby.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/multi_mission.hpp"
 #include "shared/abstract_type.hpp"
 #include "shared/debug_printf.hpp"

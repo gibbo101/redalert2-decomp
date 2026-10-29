@@ -3,7 +3,7 @@
 // (-2) with a random country; in game modes 3 and 4 the observer colour (8)
 // for the 0x00A72D44 entry without a team.
 #include "shared/gdlg_supp.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/unknown_player_entry.hpp"
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
 // @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98

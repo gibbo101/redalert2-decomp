@@ -32,7 +32,7 @@
 #include "shared/id_source.hpp"
 #include "shared/multi_mission.hpp"
 #include "shared/lobby.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/network_statistics.hpp"
 #include "shared/ipx_manager.hpp"
 #include "shared/connection.hpp"

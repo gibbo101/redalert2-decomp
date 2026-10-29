@@ -25,7 +25,7 @@
 // "replay?". A replay restarts the scenario (re-creating the network transport
 // for mode 3 with the computer players kept) and restores the checkpoint.
 #include "shared/id_source.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/scenario_checkpoint.hpp"
 #include "shared/system_timer.hpp"
 #include "shared/t_timer.hpp"

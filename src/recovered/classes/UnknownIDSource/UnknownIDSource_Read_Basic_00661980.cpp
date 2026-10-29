@@ -116,7 +116,7 @@
 #include "shared/unknown_geometry.hpp"
 #include "shared/house.hpp"
 #include "shared/win32_api.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 
 
 // Westwood-style macro: each operand is evaluated where it appears (the

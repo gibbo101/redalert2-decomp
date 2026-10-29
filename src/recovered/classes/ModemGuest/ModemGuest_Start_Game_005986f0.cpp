@@ -14,6 +14,7 @@
 #include "shared/null_dlg.hpp"
 #include "shared/id_source.hpp"
 #include "shared/special.hpp"
+#include "shared/session_state.hpp"
 extern "C" unsigned short *__cdecl wcscpy(unsigned short *dest, unsigned short const *source);
 
 bool ModemGuest::Start_Game_005986f0(bool unknown)

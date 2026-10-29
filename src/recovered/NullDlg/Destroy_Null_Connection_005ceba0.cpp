@@ -18,6 +18,7 @@
 #include "shared/unknown_player_entry.hpp"
 #include "shared/gadget.hpp"
 #include "shared/vector_class.hpp"
+#include "shared/session_state.hpp"
 // @ref ?serial_manager_00a40a28@@3VNullModemClass@@A=00a40a28
 // @ref ?Delete_Connection@NullModemClass@@QAEHXZ=005d0360
 // @ref ?unknown_session_a3d55c@@3HA=00a3d55c

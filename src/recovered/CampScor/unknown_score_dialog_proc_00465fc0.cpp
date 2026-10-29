@@ -62,7 +62,7 @@
 #include "shared/string_table.hpp"
 #include "shared/ipx_manager.hpp"
 #include "shared/lobby.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/campaign_score.hpp"
 
 extern "C" int __cdecl wcscmp(wchar_t const *left, wchar_t const *right);

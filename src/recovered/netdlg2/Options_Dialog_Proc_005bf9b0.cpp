@@ -1,6 +1,7 @@
 // long __stdcall Options_Dialog_Proc_005bf9b0(HWND window, unsigned message, unsigned wparam, long lparam) (0x005BF9B0)
 #include "shared/lobby.hpp"
 #include "shared/options_dialog.hpp"
+#include "shared/session_state.hpp"
 // @ref ?unknown_lock_a71e98@@3_NA=00a71e98
 
 long __stdcall Options_Dialog_Proc_005bf9b0(HWND window, unsigned message, unsigned wparam, long lparam)

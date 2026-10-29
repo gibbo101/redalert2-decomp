@@ -13,7 +13,7 @@
 // @ref ?unknown_flags_a3f118@@3PA_NA=00a3f118
 // @ref ?unknown_session_a3d55c@@3HA=00a3d55c
 #include "shared/id_source.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/unknown_player_entry.hpp"
 #include "shared/house.hpp"
 #include "shared/house_type.hpp"

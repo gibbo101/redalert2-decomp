@@ -3,6 +3,7 @@
 #include "shared/ms_message_box.hpp"
 #include "shared/comm_buffer.hpp"
 #include "shared/debug_printf.hpp"
+#include "shared/session_state.hpp"
 // @ref ?TickCount@@3V?$TTimerClass@VSystemTimerClass@@@@A=00839980
 // @ref ?unknown_modem_host_a70de4@@3PAVModemHost@@A=00a70de4
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298

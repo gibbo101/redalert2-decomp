@@ -1,6 +1,7 @@
 // void __fastcall Set_Slot_Country_005c9a10(HWND dialog, int id) (0x005C9A10)
 #include "shared/lobby.hpp"
 #include "shared/gdlg_supp.hpp"
+#include "shared/session_state.hpp"
 // @ref ?Set_Value_00672a30@UnknownSessionState@@QAEXH_N@Z=00672a30
 // @ref ?unknown_easy_ai_entry_a72d34@@3PAUNodeNameType@@A=00a72d34
 // @ref ?unknown_hard_ai_entry_a72d3c@@3PAUNodeNameType@@A=00a72d3c

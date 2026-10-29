@@ -2,6 +2,7 @@
 // Shows the "loading" dialog (text TXT_LOADING) with the mouse hidden, loads the game, then restores
 // the mouse hide count and closes the dialog.
 #include "shared/load_dlg.hpp"
+#include "shared/session_state.hpp"
 // @ref ?WWMouse@@3PAVMouse@@A=00839c68
 // @ref ?Load_String@StringTable@@SIPBGPBDPAD0H@Z=006f9ec0
 // @ref ??_C@_0BD@BKAO@D?3?2Ra2?2LoadDlg?4CPP?$AA@=007dfaa4

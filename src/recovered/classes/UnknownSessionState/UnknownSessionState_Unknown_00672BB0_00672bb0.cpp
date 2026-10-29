@@ -1,4 +1,5 @@
 #include "shared/multiplayer_game_mode.hpp"
+#include "shared/session_state.hpp"
 
 // Resolves the random countries and colours (see the declaration); 0x00672940 and 0x00672980 are expanded on the
 // global session.

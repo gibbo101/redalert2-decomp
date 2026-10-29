@@ -11,6 +11,7 @@
 #include "shared/ww_message_box.hpp"
 #include "shared/multiplayer_game_mode.hpp"
 #include "shared/id_source.hpp"
+#include "shared/session_state.hpp"
 // @ref ??_C@_06DN@TXT_OK?$AA@=007db8f4
 // @ref ??_C@_0BE@EJOA@D?3?2Ra2?2netshare?4cpp?$AA@=007e6ebc
 // @ref ??_C@_0BJ@IMPI@TXT_UNABLE_READ_SCENARIO?$AA@=007e7180

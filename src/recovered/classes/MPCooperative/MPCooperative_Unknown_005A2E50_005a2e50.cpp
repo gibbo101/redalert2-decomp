@@ -5,7 +5,7 @@
 // @ref __strnicmp=007858d0
 #include "shared/multiplayer_game_mode.hpp"
 #include "shared/unknown_description_list.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/multi_mission.hpp"
 #include "shared/crt_tokens.hpp"
 

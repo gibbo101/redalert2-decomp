@@ -11,7 +11,7 @@
 #include "shared/string_table.hpp"
 #include "shared/crt_string.hpp"
 #include "shared/debug_printf.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/vector_class.hpp"
 #include "shared/crt_tokens.hpp"
 // @ref ?SerialPort@@3PAVWinModemClass@@A=00b25bb0

@@ -23,6 +23,7 @@
 #include "shared/abstract_type.hpp"
 #include "shared/win32_api.hpp"
 #include "shared/crt_string.hpp"
+#include "shared/session_state.hpp"
 
 void MPCooperative::unknown_slot30()
 {

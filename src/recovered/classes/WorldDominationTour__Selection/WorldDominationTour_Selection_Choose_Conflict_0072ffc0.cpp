@@ -4,7 +4,7 @@
 #endif
 #include "shared/wdt_selection.hpp"
 #include "shared/options_dialog.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 namespace WorldDominationTour {
 bool __fastcall Selection::Choose_Conflict(rc_ptr<Campaign> const &campaign, int faction)
 {

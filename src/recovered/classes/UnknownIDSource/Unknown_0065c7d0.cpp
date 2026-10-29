@@ -41,7 +41,7 @@
 // map) and waits for the other players; when they are in, runs the progress
 // bars to full. Clears the progress screen and its listener.
 #include "shared/id_source.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/progress_screen.hpp"
 #include "shared/unknown_map_generator.hpp"
 #include "shared/winsock_interface.hpp"

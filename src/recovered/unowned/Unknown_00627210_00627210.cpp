@@ -3,6 +3,7 @@
 #include "shared/wol_sink.hpp"
 #include "shared/string_table.hpp"
 #include "shared/unknown_player_entry.hpp"
+#include "shared/session_state.hpp"
 // @ref ?unknown_ipx_manager_a40978@@3VIPXManagerClass@@A=00a40978
 // @ref ?Unknown_005C2DA0@@YIXHPBGPAUHWND__@@@Z=005c2da0
 // @ref ?Unknown_00735B10@@YAPAUHWND__@@XZ=00735b10

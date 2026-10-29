@@ -1,4 +1,5 @@
 #include "shared/crt_string.hpp"
+#include "shared/session_state.hpp"
 // The lobby slot whose name equals this session player's name; 0 when none.
 int UnknownSessionState::Unknown_00672F90(int player)
 {

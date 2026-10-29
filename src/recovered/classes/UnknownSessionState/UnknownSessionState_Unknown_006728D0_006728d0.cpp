@@ -1,4 +1,4 @@
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/house_type.hpp"
 #include "shared/id_source.hpp"
 

@@ -20,6 +20,7 @@
 #include "shared/house.hpp"
 #include "shared/debug_printf.hpp"
 #include "shared/campaign_score.hpp"
+#include "shared/session_state.hpp"
 
 extern "C" wchar_t *__cdecl wcscpy(wchar_t *destination, wchar_t const *source);
 

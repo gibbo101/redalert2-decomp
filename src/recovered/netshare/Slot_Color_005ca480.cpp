@@ -1,5 +1,6 @@
 // int __fastcall Slot_Color_005ca480(int slot) (0x005CA480)
 #include "shared/lobby.hpp"
+#include "shared/session_state.hpp"
 // @ref ?unknown_closed_entry_a72d30@@3PAUNodeNameType@@A=00a72d30
 // @ref ?unknown_easy_ai_entry_a72d34@@3PAUNodeNameType@@A=00a72d34
 // @ref ?unknown_hard_ai_entry_a72d3c@@3PAUNodeNameType@@A=00a72d3c

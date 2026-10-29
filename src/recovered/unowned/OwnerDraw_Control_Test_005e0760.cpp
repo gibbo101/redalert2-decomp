@@ -9,7 +9,7 @@
 #include "shared/win32_api.hpp"
 #include "shared/owner_draw_dialog_control.hpp"
 
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 namespace seed_005df660 {
 unsigned char __fastcall FUN_005df660(int param_1);   // 0x005DF660
 }

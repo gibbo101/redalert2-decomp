@@ -19,6 +19,7 @@
 #include "shared/id_source.hpp"
 #include "shared/special.hpp"
 #include "shared/multi_mission.hpp"
+#include "shared/session_state.hpp"
 // @ref ??1UnknownPreview_0061D430@@QAE@XZ=0061d440
 // @ref ??_C@_0BG@JFGK@Scenario?5has?5changed?6?$AA@=007e2264
 // @ref ??_C@_0BH@OIIO@Decoding?5game?5options?6?$AA@=007e227c

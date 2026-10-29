@@ -7,6 +7,7 @@
 #include "shared/campaign_score.hpp"
 #include "shared/string_table.hpp"
 #include "shared/wol_settings.hpp"
+#include "shared/session_state.hpp"
 // @ref ??_C@_0BD@ELLL@D?3?2Ra2?2netdlg2?4cpp?$AA@=007e69c8
 // @ref ??_C@_11LOCGONAA@?$AA?$AA@=00839d4c
 // @ref ??_C@_13JKDK@?$AA?0?$AA?$AA@=007e5c64

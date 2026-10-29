@@ -4,7 +4,7 @@
 #define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #define VECTOR_IMPLEMENT_DYNAMIC_ID_OBJECT
 #define VECTOR_IMPLEMENT_VECTOR_DESTRUCTOR
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/vector_class.hpp"
 #include "shared/string_table.hpp"
 #include "shared/debug_printf.hpp"

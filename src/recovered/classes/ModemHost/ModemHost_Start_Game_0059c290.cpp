@@ -24,6 +24,7 @@
 #include "shared/cd_timer.hpp"
 #include "shared/ww_message_box.hpp"
 #include "shared/multi_mission.hpp"
+#include "shared/session_state.hpp"
 // @ref ??_C@_0BC@FOEB@Received?5message?6?$AA@=007e2674
 // @ref ??_C@_0BF@BAJ@Received?5GO?5message?6?$AA@=007e265c
 // @ref ??_C@_0BK@MEMK@TXT_NO_EXPANSION_SCENARIO?$AA@=007e2640

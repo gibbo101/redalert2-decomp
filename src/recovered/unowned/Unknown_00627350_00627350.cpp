@@ -4,6 +4,7 @@
 #include "shared/unknown_player_entry.hpp"
 #include "shared/wol_sink.hpp"
 #include "shared/mouse.hpp"
+#include "shared/session_state.hpp"
 // @ref ?unknown_ab62ec@@3HA=00ab62ec
 // @ref ?unknown_ab62f0@@3HA=00ab62f0
 // @ref ?unknown_ab62f4@@3_NA=00ab62f4

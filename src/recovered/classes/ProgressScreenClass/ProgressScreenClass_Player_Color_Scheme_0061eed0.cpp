@@ -2,7 +2,7 @@
 // A player's colours (an observer's are those of colour -2); null for an
 // index past the eight players.
 #include "shared/progress_screen.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/unknown_player_entry.hpp"
 #include "shared/color_scheme.hpp"
 // @ref ?Get_Color_0066e2a0@NodeNameType@@QAEHXZ=0066e2a0

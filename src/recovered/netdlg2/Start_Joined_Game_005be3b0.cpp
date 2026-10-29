@@ -5,6 +5,7 @@
 #include "shared/ww_message_box.hpp"
 #include "shared/debug_printf.hpp"
 #include "shared/id_source.hpp"
+#include "shared/session_state.hpp"
 // @ref ??_C@_0BD@ELLL@D?3?2Ra2?2netdlg2?4cpp?$AA@=007e69c8
 // @ref ??_C@_0BH@NCIJ@TXT_UNABLE_PLAY_WAAUGH?$AA@=007e2184
 // @ref ??_C@_0CH@KMCI@Found?5local?5scenario?0?5file?5name?5@=007e6c24

@@ -20,7 +20,7 @@
 #include "shared/id_source.hpp"
 #include "shared/ccini_class.hpp"
 #include "shared/house.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/unknown_player_entry.hpp"
 #include "shared/string_table.hpp"
 #include "shared/wstring.hpp"

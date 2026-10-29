@@ -63,6 +63,7 @@ extern bool unknown_flag_a3f209;         // 0x00A3F209 (game mode 4)
 class MessageListClass {
 public:
     MessageListClass();                                                             // 0x005B4BD0
+    ~MessageListClass() { Reset(); }                                               // expands 0x005B4C40
     // Init with the default width of 640 (0x005B4C40).
     void Reset();
     // Resets the list and its geometry: position, maximum messages (at most 14) and characters (at most 112),

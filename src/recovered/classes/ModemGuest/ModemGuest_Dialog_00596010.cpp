@@ -14,6 +14,7 @@
 #include "shared/keyboard.hpp"
 #include "shared/map_preview.hpp"
 #include "shared/options_dialog.hpp"
+#include "shared/session_state.hpp"
 // @ref ??_C@_04NCCD@true?$AA@=007d24d8
 // @ref ??_C@_05NAGO@false?$AA@=007d24d0
 // @ref ??_C@_0BK@KDAM@ModemGuest?4Dialog?$CIenter?$CJ?6?$AA@=007e1e3c

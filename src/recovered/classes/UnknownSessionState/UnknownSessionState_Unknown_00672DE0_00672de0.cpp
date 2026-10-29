@@ -6,6 +6,7 @@
 #include "shared/gscreen.hpp"
 #include "shared/vox_class.hpp"
 #include "shared/vox_speech.hpp"
+#include "shared/session_state.hpp"
 
 // Pauses for a dialog once (+0x3080 records it); see the declaration.
 void UnknownSessionState::Unknown_00672DE0()

@@ -4,6 +4,7 @@
 #include "shared/string_table.hpp"
 #include "shared/rules.hpp"
 #include "shared/sound_play.hpp"
+#include "shared/session_state.hpp"
 // @ref ??_C@_0BD@ELLL@D?3?2Ra2?2netdlg2?4cpp?$AA@=007e69c8
 // @ref ??_C@_0BD@KCMF@TXT_GAME_IS_CLOSED?$AA@=007e6c7c
 // @ref ??_C@_0BE@CDLH@TXT_NOTHING_TO_JOIN?$AA@=007e6c4c

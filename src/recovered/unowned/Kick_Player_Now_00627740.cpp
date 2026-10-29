@@ -1,6 +1,7 @@
 // void __fastcall Kick_Player_Now(ConnManClass *net, int index, UnknownFrameTiming *their, unsigned char error) (0x00627740).
 #include "shared/queue.hpp"
 #include "shared/wol_sink.hpp"
+#include "shared/session_state.hpp"
 // @ref ?Unknown_005C3150@@YIHPAVHouseClass@@@Z=005c3150
 // @ref ?Unknown_0069A160@@YAXXZ=0069a160
 // @ref ?Unknown_00698D00@@YIX_N@Z=00698d00

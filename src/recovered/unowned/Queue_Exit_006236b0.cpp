@@ -1,5 +1,6 @@
 // bool __fastcall Queue_Exit() (0x006236B0): EXIT, or 0x27 when the master leaves a network game of more than two players.
 #include "shared/queue.hpp"
+#include "shared/session_state.hpp"
 // @ref ??0EventClass@@QAE@HE@Z=004b5fd0
 // @ref ?Am_I_Master@UnknownSessionState@@QAE_NPAVHouseClass@@@Z=0066f150
 

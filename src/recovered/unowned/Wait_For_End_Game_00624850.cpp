@@ -5,6 +5,7 @@
 #include "shared/tactical.hpp"
 #include "shared/serial_progress.hpp"
 #include "shared/cd_timer.hpp"
+#include "shared/session_state.hpp"
 // @ref ?Frame@@3HA=00a40d2c
 // @ref ??_C@_0BB@FKCM@Dolist?5is?5full?$CB?6?$AA@=007ec640
 // @ref ??_C@_0BE@ILKF@Entering?5wait?5loop?6?$AA@=007ec6b4

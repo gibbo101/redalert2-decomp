@@ -28,7 +28,7 @@
 // The inventory bound (584 bytes, to 0x0065BEB8) stops inside the function:
 // the code continues by fall-through to its ret 4 at 0x0065C039 (972 bytes).
 #include "shared/id_source.hpp"
-#include "shared/unknown_globals.hpp"
+#include "shared/session_state.hpp"
 #include "shared/multi_mission.hpp"
 #include "shared/campaign.hpp"
 #include "shared/cd.hpp"

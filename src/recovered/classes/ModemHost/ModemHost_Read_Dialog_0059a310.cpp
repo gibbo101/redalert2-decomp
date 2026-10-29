@@ -4,6 +4,7 @@
 #include "shared/ww_message_box.hpp"
 #include "shared/string_table.hpp"
 #include "shared/debug_printf.hpp"
+#include "shared/session_state.hpp"
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
 // @ref ?unknown_house_setting_7d88d8@@3HA=007d88d8
 // @ref ?unknown_a3d3b4@@3HA=00a3d3b4
