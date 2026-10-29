@@ -15,7 +15,7 @@
 // @ref ?Unknown_Load_Art_Pair_006F2A30@@YIXH@Z=006f2a30
 // @ref ?Unknown_006F2AB0@@YIXXZ=006f2ab0
 // @ref ?Unknown_Free_Art_Flagged_006F2750@@YAXXZ=006f2750
-// @ref ?unknown_dialog_box_5eab60@@YIHHP6GHPAUHWND__@@IIJ@ZH@Z=005eab60
+// @ref ?unknown_dialog_box_5eab60@@YIHHP6GHPAUHWND__@@IIJ@Z_N@Z=005eab60
 // @ref ?unknown_5159b0@@YIXH_N@Z=005159b0
 // @ref _wcscpy=00783689
 // @ref _qsort=00781d46

@@ -82,7 +82,7 @@ void __fastcall Unknown_Load_Art_Pair_006F2A30(int alternate);
 void __fastcall Unknown_006F2AB0();
 void Unknown_Free_Art_Flagged_006F2750();
 // Runs a modal dialog from a resource with a dialog procedure; returns its result (0x005EAB60).
-int __fastcall unknown_dialog_box_5eab60(int resource, int (__stdcall *proc)(struct HWND__ *, unsigned int, unsigned int, long), int unknown3);
+int __fastcall unknown_dialog_box_5eab60(int resource, int (__stdcall *proc)(struct HWND__ *, unsigned int, unsigned int, long), bool unknown3);
 
 // The score screens' control IDs per player row: name, kills, lost, built, score and
 // the row's status text (0x007D1484).

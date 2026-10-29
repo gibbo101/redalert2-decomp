@@ -545,3 +545,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x4B65C0 (4994 B, table inside padding: body_bytes) 54.41, shape 94.10, call sequence identical. Remaining: register
   roles (original this=esi, (char)House=ebx, house=edi), frame 4 bytes short (slot at 0x10), then scheduling. Landing
   moves EventClass(int, unsigned char) 0x4B5FD0 from population-2913 into Event.CPP; slot 268/259 casts need a rename.
+- Startup.CPP after Startup232 (NOTES, w/wm_b.cpp, out/): WinMain 0x68E280 25.98, drafted through OleInitialize plus the
+  Main_Game __try. Needs acceptance-tool SEH support first (see HANDOFF), a TClassFactory<T> inline ctor in
+  class_factory.hpp for the 74 registrations, and the 0x6983E0 IUnknownPtr dtor bound by @ref.
