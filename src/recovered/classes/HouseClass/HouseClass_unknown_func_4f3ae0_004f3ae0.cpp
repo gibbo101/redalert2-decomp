@@ -16,7 +16,7 @@ void HouseClass::unknown_func_4f3ae0(SuperClass *super)
             cell = unknown_func_4f6a80(unknown_541c);
         }
         if (cell != unknown_cell_a40f10) {
-            unknown_func_4e68d0(Supers.ID(super), &cell);
+            unknown_func_4e68d0(Supers.ID(super), cell);
         }
     }
 }

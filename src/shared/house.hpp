@@ -263,7 +263,7 @@ public:
     int unknown_func_4e8d20();                             // 0x004E8D20
     int *unknown_func_4eab10(int kind, bool naval);         // 0x004EAB10
     int unknown_func_4eb980(int kind, bool naval);          // 0x004EB980
-    bool unknown_func_4e68d0(int index, Cell const *cell);        // 0x004E68D0
+    bool unknown_func_4e68d0(int index, Cell const &cell);        // 0x004E68D0
     void unknown_func_4ec9b0();                            // 0x004EC9B0 (a member: its callers pass this)
     bool unknown_func_4ed2b0(WaypointClass *waypoint, int *path, char *position);   // 0x004ED2B0
     void unknown_func_4ecfb0(CoordStruct const &coord);    // 0x004ECFB0

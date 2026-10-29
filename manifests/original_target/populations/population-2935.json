@@ -4,8 +4,8 @@
     "id": "population-2935",
     "inventory_sha256": "8f525b4bc5b6fce7c9fb1f32e09319d05c906814d0f0ab9bd4877f5c75bb6286",
     "gaps_sha256": "6016839e1c06d0cd122f157bdf3cffb45c66800d686b1398f6386a543c5d7c71",
-    "historical_population_sha256": "84ce49470f9a6f3311dd4d5fe324939a452960ac84e8fb9449018285b41cf219",
-    "historical_acceptance_sha256": "a3ab1c09e9bde5d21a8882515201d7a1520e90f446e33dc0fde3aa9054e5fca0"
+    "historical_population_sha256": "9552b5fd7feca549bfd84e9eab6b187449a9cedf3f932c51bc3d83a5c44e8bb5",
+    "historical_acceptance_sha256": "3297970cd76ab651bb18d924102431ccc5fb44ef0bc413f128e85a983dc7775f"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -3854,7 +3854,7 @@
     "?Is_Ally@HouseClass@@QBE_NPBVObjectClass@@@Z": 5133792,
     "?unknown_func_4e5dc0@HouseClass@@QAEXHH@Z": 5135808,
     "?unknown_func_4e63f0@HouseClass@@QAEHHH_N@Z": 5137392,
-    "?unknown_func_4e68d0@HouseClass@@QAE_NHPBVCell@@@Z": 5138640,
+    "?unknown_func_4e68d0@HouseClass@@QAE_NHABVCell@@@Z": 5138640,
     "?unknown_func_4e7150@HouseClass@@QAEXXZ": 5140816,
     "?unknown_func_4e7440@HouseClass@@QAE_NH@Z": 5141568,
     "?unknown_func_491d10@UnknownHouseCounter@@QAEHH@Z": 4791568,
@@ -14212,7 +14212,7 @@
     {
       "entry": 5138640,
       "method": "004e68d0",
-      "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHPBVCell@@@Z",
+      "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHABVCell@@@Z",
       "symbol_prefix": "?unknown_func_4e68d0@HouseClass@@",
       "options": [
         "/O2",
@@ -14267,7 +14267,7 @@
           "resolved": 1795705
         }
       ],
-      "source_sha256": "15e511d54cad13ba48eedcf49c1d80de32e4d2d662736f719d83124a9f3c4b91",
+      "source_sha256": "501d3ecaedb88990b6f78139a063b9d30126f7f65e738998a53d70b3eccff117",
       "source": "src/recovered/classes/HouseClass/HouseClass_unknown_func_4e68d0_004e68d0.cpp",
       "population": "population-2935",
       "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
@@ -19662,13 +19662,13 @@
         {
           "offset": 120,
           "kind": 20,
-          "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHPBVCell@@@Z",
+          "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHABVCell@@@Z",
           "target": 5138640,
           "addend": 0,
           "resolved": 4294913396
         }
       ],
-      "source_sha256": "7db8410e4e2dde612a8a53e9534aeec7238177bd17d731664c2204287542f950",
+      "source_sha256": "d0ba4ecba8eb70f9cb15bd486737c326d8dc783aafd44b45c688fd880105f850",
       "source": "src/recovered/classes/HouseClass/HouseClass_unknown_func_4f3ae0_004f3ae0.cpp",
       "population": "population-2935",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
@@ -19705,13 +19705,13 @@
         {
           "offset": 41,
           "kind": 20,
-          "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHPBVCell@@@Z",
+          "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHABVCell@@@Z",
           "target": 5138640,
           "addend": 0,
           "resolved": 4294913331
         }
       ],
-      "source_sha256": "c72999d8dbf382ca6b0bdea457276f72f5d7be68f70d8a68299a31b30884cf3c",
+      "source_sha256": "0bcb02e1fd4f9641c5fd76389e77f14565a95bb9abe39e6feda85f6f051ac8ba",
       "source": "src/recovered/classes/HouseClass/HouseClass_unknown_func_4f3b70_004f3b70.cpp",
       "population": "population-2935",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
@@ -19780,13 +19780,13 @@
         {
           "offset": 120,
           "kind": 20,
-          "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHPBVCell@@@Z",
+          "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHABVCell@@@Z",
           "target": 5138640,
           "addend": 0,
           "resolved": 4294913188
         }
       ],
-      "source_sha256": "6c414bf78b22764e22ea52c84a4f6197b303776e3ab3f93d1623c5162a9f248b",
+      "source_sha256": "90c7bd1abd58fe65de2c15b922e5e427aa0c64ccf943d8272dc0a8065c380ce3",
       "source": "src/recovered/classes/HouseClass/HouseClass_unknown_func_4f3bb0_004f3bb0.cpp",
       "population": "population-2935",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
@@ -19863,13 +19863,13 @@
         {
           "offset": 129,
           "kind": 20,
-          "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHPBVCell@@@Z",
+          "symbol": "?unknown_func_4e68d0@HouseClass@@QAE_NHABVCell@@@Z",
           "target": 5138640,
           "addend": 0,
           "resolved": 4294912731
         }
       ],
-      "source_sha256": "56ed510b60ed6a199b87772b0e1fa25f6af44cbcd5bd538e6ee70f74f8210b5a",
+      "source_sha256": "f62f74b61f961728818071386fc77eefd1962dffe9e6d1d90c217c03a44e3fb0",
       "source": "src/recovered/classes/HouseClass/HouseClass_unknown_func_4f3d70_004f3d70.cpp",
       "population": "population-2935",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",

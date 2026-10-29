@@ -7,6 +7,6 @@
 void HouseClass::unknown_func_4f3b70(SuperClass *super)
 {
     if (unknown_54f0 != -1) {
-        unknown_func_4e68d0(Supers.ID(super), &unknown_cell_a40f10);
+        unknown_func_4e68d0(Supers.ID(super), unknown_cell_a40f10);
     }
 }
