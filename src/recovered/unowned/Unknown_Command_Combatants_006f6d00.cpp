@@ -33,7 +33,7 @@ struct UnknownFlags_006f8a70;
 unsigned char __fastcall unknown_flag_bit0(UnknownFlags_006f8a70 const *object);
 void __fastcall Unknown_006F58E0(wchar_t const *text, int delay);
 void __fastcall Unknown_006F6790(wchar_t *buffer);
-int __fastcall Unknown_006F6FE0(TechnoClass *techno);
+int __fastcall Unknown_006F6FE0(TechnoClass *techno, int argument);
 DynamicVectorClass<TechnoClass *> *__fastcall Unknown_006F6930(UnknownTest test, int argument);
 
 // The selected objects (bit 0 of +0x14, 0x006F8A70) for which test(object, argument) holds, in a new list.

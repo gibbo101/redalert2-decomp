@@ -14,7 +14,7 @@
 // @ref ?Unknown_006AAD40@UnknownSelection@@QAEXXZ=006aad40
 // @ref ?Unknown_006F6AD0@@YAPAV?$DynamicVectorClass@PAVTechnoClass@@@@XZ=006f6ad0
 // @ref ?Unknown_006F69F0@@YIPAV?$DynamicVectorClass@PAVTechnoClass@@@@P6I_NPAXH@ZH@Z=006f69f0
-// @ref ?Unknown_006F7DF0@@YIHPAVTechnoClass@@@Z=006f7df0
+// @ref ?Unknown_006F7DF0@@YIHPAVTechnoClass@@H@Z=006f7df0
 // @ref ?Unknown_006F6810@@YIXPAGPBG@Z=006f6810
 // @ref ?unknown_func_5d46b0@ObjectClass@@QBEHXZ=005d46b0
 // @ref ?Add@?$DynamicVectorClass@PAVTechnoClass@@@@QAE_NABQAVTechnoClass@@@Z=004137b0
@@ -51,7 +51,7 @@ extern int unknown_state_7f8bd8;
 extern bool unknown_flag_ac1330;
 extern wchar_t const unknown_empty_wide_839d4c[];
 void __fastcall Unknown_006F6810(wchar_t *buffer, wchar_t const *name);
-int __fastcall Unknown_006F7DF0(TechnoClass *techno);
+int __fastcall Unknown_006F7DF0(TechnoClass *techno, int argument);
 DynamicVectorClass<TechnoClass *> *Unknown_006F6AD0();
 DynamicVectorClass<TechnoClass *> *__fastcall Unknown_006F69F0(UnknownTest test, int argument);
 

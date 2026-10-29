@@ -4,8 +4,8 @@
     "id": "population-2995",
     "inventory_sha256": "07f7dccfab45e92e39a243ca8284b7d02e923337696027b504e23472ddc297eb",
     "gaps_sha256": "6086930d43325dcf5a0c67ba9629eca15164664ab7ec116e01ff0d3264a6792c",
-    "historical_population_sha256": "ba229a61e92a107020d0a0302b9287ba68d87b02ecaecbcede9ec30cdcebd783",
-    "historical_acceptance_sha256": "50da65a86c675ef0188abee50f5df3e0616bebf0a0b09f21fbc71d9014ebe764"
+    "historical_population_sha256": "2415e237e956c7b66c1f487d5eaf4b4573e784f424f0db1600a3d8e88600b110",
+    "historical_acceptance_sha256": "8f7a980ae9af140b813afbd0e9b6fc3841c8f5f51544d2a8b239fd56819a2ffc"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1523,7 +1523,7 @@
     "?unknown_state_7f8bd8@@3HA": 8358872,
     "?Unknown_006F6AD0@@YAPAV?$DynamicVectorClass@PAVTechnoClass@@@@XZ": 7301840,
     "?Unknown_006F69F0@@YIPAV?$DynamicVectorClass@PAVTechnoClass@@@@P6I_NPAXH@ZH@Z": 7301616,
-    "?Unknown_006F7DF0@@YIHPAVTechnoClass@@@Z": 7306736,
+    "?Unknown_006F7DF0@@YIHPAVTechnoClass@@H@Z": 7306736,
     "?Unknown_006F6810@@YIXPAGPBG@Z": 7301136,
     "?unknown_func_5d46b0@ObjectClass@@QBEHXZ": 6112944,
     "??8?$VectorClass@PAVTechnoClass@@@@UBE_NABV0@@Z": 4241520,
@@ -1582,7 +1582,7 @@
     "?Unknown_006F6C10@@YI_NPAUUnknownPointerList@@P6I_NPAXH@ZH@Z": 7302160,
     "?Unknown_006F6C50@@YI_NPAUUnknownPointerList@@P6I_NPAXH@ZH@Z": 7302224,
     "?Unknown_006F6D00@@": 7302400,
-    "?Unknown_006F6FE0@@YIHPAVTechnoClass@@@Z": 7303136,
+    "?Unknown_006F6FE0@@YIHPAVTechnoClass@@H@Z": 7303136,
     "?Unknown_006F7670@@": 7304816,
     "?Unknown_006F76C0@@": 7304896,
     "?Unknown_006F7800@@": 7305216,
@@ -8937,7 +8937,12 @@
     "?Unknown_006F7970@@YIXPAX@Z": 7305584,
     "?Unknown_006F6D00@@YIX_N@Z": 7302400,
     "?Unknown_006F7B80@@YIX_N@Z": 7306112,
-    "?Unknown_006F7EC0@@YIX_N@Z": 7306944
+    "?Unknown_006F7EC0@@YIX_N@Z": 7306944,
+    "__imp__SetWindowPos@28": 7971792,
+    "?AI_Unit@HouseClass@@QAEHXZ": 5151888,
+    "?AI_Infantry@HouseClass@@QAEHXZ": 5153200,
+    "?AI_Aircraft@HouseClass@@QAEHXZ": 5154000,
+    "__imp__SetWindowPos": 7971792
   },
   "regions": [
     {
@@ -10787,8 +10792,8 @@
     {
       "entry": 7303136,
       "method": "006f6fe0",
-      "symbol": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@@Z",
-      "symbol_prefix": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@@Z",
+      "symbol": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@H@Z",
+      "symbol_prefix": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@H@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -10818,7 +10823,7 @@
           "resolved": 4292862627
         }
       ],
-      "source_sha256": "c28b6a0a1ee1c5f3888228ca5b5e7b827b422c040e4df2ab3882f3eea8d24004",
+      "source_sha256": "871538802085ad9e0e2e0ce4c2ad2ee15ecc0f0a8f6d8cffe1aff85060b8c6ea",
       "source": "src/recovered/unowned/Unknown_Is_Player_Techno_006f6fe0.cpp",
       "population": "population-2995",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
@@ -10879,8 +10884,8 @@
     {
       "entry": 7306736,
       "method": "006f7df0",
-      "symbol": "?Unknown_006F7DF0@@YIHPAVTechnoClass@@@Z",
-      "symbol_prefix": "?Unknown_006F7DF0@@YIHPAVTechnoClass@@@Z",
+      "symbol": "?Unknown_006F7DF0@@YIHPAVTechnoClass@@H@Z",
+      "symbol_prefix": "?Unknown_006F7DF0@@YIHPAVTechnoClass@@H@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -10910,7 +10915,7 @@
           "resolved": 4292859024
         }
       ],
-      "source_sha256": "5d7992fe61fc937402e3408b79669715bce580c797b1087af61c25758d85d0c2",
+      "source_sha256": "8d2292f6044f2faaf7f6f3be3cd643fe49ef1d4476dc4f14b1a9a26e480676f3",
       "source": "src/recovered/unowned/Unknown_Is_Player_Mobile_006f7df0.cpp",
       "population": "population-2995",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
@@ -12294,7 +12299,7 @@
         {
           "offset": 184,
           "kind": 20,
-          "symbol": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@@Z",
+          "symbol": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@H@Z",
           "target": 7303136,
           "addend": 0,
           "resolved": 548
@@ -12350,7 +12355,7 @@
         {
           "offset": 271,
           "kind": 20,
-          "symbol": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@@Z",
+          "symbol": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@H@Z",
           "target": 7303136,
           "addend": 0,
           "resolved": 461
@@ -12414,7 +12419,7 @@
         {
           "offset": 452,
           "kind": 20,
-          "symbol": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@@Z",
+          "symbol": "?Unknown_006F6FE0@@YIHPAVTechnoClass@@H@Z",
           "target": 7303136,
           "addend": 0,
           "resolved": 280
@@ -12564,7 +12569,7 @@
           "resolved": 11277104
         }
       ],
-      "source_sha256": "dc2585ded77d496dfdcfa739c3cf8abc586057c83e876ed10dfa258ec167b1a2",
+      "source_sha256": "4bffa456c98aaf6d2239b7e8d1666ace5b36c4d4ac12b64b37b62bdbc93dd68c",
       "source": "src/recovered/unowned/Unknown_Command_Combatants_006f6d00.cpp",
       "population": "population-2995",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -12641,7 +12646,7 @@
         {
           "offset": 85,
           "kind": 6,
-          "symbol": "?Unknown_006F7DF0@@YIHPAVTechnoClass@@@Z",
+          "symbol": "?Unknown_006F7DF0@@YIHPAVTechnoClass@@H@Z",
           "target": 7306736,
           "addend": 0,
           "resolved": 7306736
@@ -12951,7 +12956,7 @@
           "resolved": 11277104
         }
       ],
-      "source_sha256": "ffcb8bdb902a4a42a3df9d55bdc9c06efe4bd4021c553b12c291a9146f327e19",
+      "source_sha256": "9924fbcae5674e9f406f2abb11a37761043e833803a4c4c3b3c49e1f76a9b701",
       "source": "src/recovered/unowned/Unknown_Command_Select_006f7b80.cpp",
       "population": "population-2995",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -13028,7 +13033,7 @@
         {
           "offset": 85,
           "kind": 6,
-          "symbol": "?Unknown_006F7DF0@@YIHPAVTechnoClass@@@Z",
+          "symbol": "?Unknown_006F7DF0@@YIHPAVTechnoClass@@H@Z",
           "target": 7306736,
           "addend": 0,
           "resolved": 7306736
@@ -13338,7 +13343,7 @@
           "resolved": 11277104
         }
       ],
-      "source_sha256": "b461e0f42281d87e5592629b4049cb150f034a64e1439affef355470ba3a7361",
+      "source_sha256": "0920ed2de48f9f6ad3e5a6116ea1ba0e5a54adc3fc5a9253ff4711e95e72eacc",
       "source": "src/recovered/unowned/Unknown_Command_Experience_006f7ec0.cpp",
       "population": "population-2995",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

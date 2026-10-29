@@ -460,3 +460,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   gaps), Main_Options_Dialog 0x542460 98.91 without the local once 0x5DA360 is renamed to OptionsClass::Unknown_005DA360()
   (rename not delivered; push 0 scheduling left), Has_Saved_Games 0x53C5C0 97.83. Undrafted IPX proc 0x542D60; 0x53B770 is
   LoadOptionsClass::Process and Fill_List 0x53C040 (LoadOptionsClass: Windows scope).
+- House.CPP after House208 (build/class-work/House208/w, NOTES): AI_Building 0x4E9660 99.42 (w/bld_best.cpp; needs
+  VECTOR_IMPLEMENT_DYNAMIC_INSERT_AFTER in VECTOR_IMPLEMENT_ALL - whole-tree --build check for new COMDATs - and a
+  4-argument BaseNodeClass ctor; left: store order of `BaseNodeClass copy = *node`). Not started: 0x4E90F0 (production
+  driver, after AI_Building), Place_Object 0x4E6950, 0x4E77F0 (MPlayer_Defeated-like).

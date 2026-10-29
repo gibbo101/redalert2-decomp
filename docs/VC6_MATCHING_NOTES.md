@@ -651,3 +651,10 @@ verified on the target.
   the builders expand. The out-of-line 0x6F79C0, with nothing pending, inlines both builders. One accessor too many
   pushes out a later expansion that must stay. Score such functions in the whole-population TU (UICmnds206 ws.py),
   never in a prefix compile.
+
+## Local DynamicVectorClass vtables outside their home population (House208)
+
+- A local `DynamicVectorClass<TechnoTypeClass *>` (vtables 0x7A0F44/0x7A0F64; RTTI says `T const *`) or
+  `<BuildingTypeClass *>` (0x7A2F28/0x7A2F08) compiled outside the Factory population fails with "Unsupported
+  allocatable data section" and its slot names bind to another copy. @ref both vtables and every slot name to the
+  original vtable dwords (House208 refs.py generates the lines; refs_tt.txt, refs_bt.txt).
