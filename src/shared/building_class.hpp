@@ -69,6 +69,7 @@ struct UnknownBuildingFootView : TechnoClass {
 };
 // A unit's type (a view until shared/unit.hpp is installed).
 class UnitTypeClass;
+class FoggedObjectClass;
 struct UnknownBuildingUnitView : TechnoClass {
     char unknown_418[0x5AC - 0x418];
     UnitTypeClass *Type;                    // +0x5AC
@@ -266,6 +267,7 @@ public:
     bool unknown_4454b0();                                            // 0x004454B0 (weapons factory guard step; slot 129)
     BuildingClass *unknown_44ddb0(int facing, bool through_fences, int max_range); // 0x0044DDB0, RET12; arg2 read as byte
     void unknown_44dc40(int arg1);                                    // 0x0044DC40 (laser fence post; slot 52)
+    void Create_Fogged_Copy_00452c70(DynamicVectorClass<FoggedObjectClass *> *replacement_list, CellClass *replacement_cell, bool arg); // new owned RET12 helper
     void unknown_4513b0();                                            // 0x004513B0 (slot 52, when slot 31 fails)
     void unknown_44cfd0(int index);                                   // 0x0044CFD0 (-2: all of unknown_454)
     bool unknown_4538d0(ObjectTypeClass *type);                       // 0x004538D0 (whether slot 62 accepts a new object of the type for the house; hypothesis)
