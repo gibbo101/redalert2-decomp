@@ -461,8 +461,12 @@ struct UnknownVersionObject {
     int Version_Protocol_00713130(int version);
     unsigned long Unknown_007131b0();       // 0x007131B0 the minimum version (0x20000)
     unsigned long Unknown_007131c0();       // 0x007131C0 the maximum version (0x20000)
+    // The internal version text (0x00712ED0; the sync logs print it).
+    char const *Internal_Version_Name_00712ed0();
 };
 extern UnknownVersionObject version_object_00a40c88;
+// The version text (0x007131D0; the sync logs print it).
+char const *__fastcall Version_Name_007131d0();
 // Asks the host of a game to let the player join (NET_QUERY_JOIN); refused with a chat message and the
 // SystemError sound without a game, with no name, a reserved name or a closed game (0x005BFC40; Red
 // Alert's Request_To_Join).

@@ -14,6 +14,9 @@ int Get_CPU_Type();
 char const *__fastcall Get_CPU_Type_Name();
 int Get_CPU_Speed();
 
+// The CPU vendor text (0x008015A5; Get_CPU_Info 0x004D2A20 copies it, the version dialog prints it).
+extern char unknown_cpu_text_8015a5[];
+
 // The performance counter frequency: returns its low dword and stores the
 // high dword in high (0x005ABF20; QueryPerformanceFrequency).
 unsigned int __fastcall Performance_Frequency_005abf20(unsigned int *high);

@@ -286,12 +286,13 @@ void __fastcall Queue_AI_Multiplayer();
 int __fastcall Execute_DoList(int max_houses, int base_house, ConnManClass *net, long *their_frame, void *timing);
 // Adds the game state to GameCRC (0x00629FA0; Red Alert's Compute_Game_CRC).
 void __fastcall Compute_Game_CRC();
-// Called with the frame (mod 256) after the game CRC (0x0062CF40).
-void __fastcall Unknown_0062CF40(int frame);
+// Saves the frame's game state into sync state slot index (the frame mod 256), after the game CRC; without
+// sync logging only draws the random number (0x0062CF40).
+void __fastcall Unknown_0062CF40(int index);
 // Prints the CRC log (0x0062A360; Red Alert's Print_CRCs).
 void __fastcall Print_CRCs(EventClass *event);
 // The other CRC log (0x0062DBA0; used instead of Print_CRCs while unknown_flag_ab62e8 is set).
-void __fastcall Unknown_0062DBA0(int index, int unknown);
+void __fastcall Unknown_0062DBA0(int index, EventClass *event);
 // Posts the main window's WM_DESTROY (0x00691320).
 void Unknown_00691320();
 
@@ -331,5 +332,69 @@ extern int unknown_mouse_y_a76c78;
 
 // The session's record file (0x00A3F59C, session +0x2304; Red Alert's Session.RecordFile).
 extern CCFileClass unknown_record_file_a3f59c;
+
+// The frame rate samples and the largest MaxAhead of the game (0x00A6EB20, 0x00A6EB24, 0x00A3D578;
+// the statistics file and the sync logs print them).
+extern unsigned int accumulated_fps_00a6eb20;
+extern unsigned int fps_sample_count_00a6eb24;
+extern int max_max_ahead_00a3d578;
+
+#pragma pack(push, 4)
+// A house in a saved game state (0x5C bytes).
+struct UnknownSyncHouse {
+    char Name[0x14];                    // +0x00
+    unsigned char IsHuman;              // +0x14
+    char Color[0x20];                   // +0x15
+    int ID;                             // +0x38 (-1: unused)
+    char HouseType[0x20];               // +0x3C
+};
+// An infantry, unit, aircraft or building in a saved game state (0x68 bytes).
+struct UnknownSyncObject {
+    int Coord;                          // +0x00
+    int Type;                           // +0x04
+    char TypeName[0x18];                // +0x08
+    char Owner;                         // +0x20 (a house index)
+    int TargetID;                       // +0x24
+    char Target[0x18];                  // +0x28
+    int NavComID;                       // +0x40
+    char NavCom[0x18];                  // +0x44
+    int SpeedAccum;                     // +0x5C
+    short TrackNumber;                  // +0x60
+    short TrackIndex;                   // +0x62
+    unsigned char Facing;               // +0x64
+    unsigned char Facing2;              // +0x65
+    unsigned char Mission;              // +0x66
+    char Speed;                         // +0x67
+};
+// A map or logic layer object in a saved game state (0x28 bytes).
+struct UnknownSyncLayerObject {
+    int Value;                          // +0x00
+    int Type;                           // +0x04
+    char Name[0x18];                    // +0x08
+    char Owner;                         // +0x20 (a house index, -1 none)
+    char unknown_21[3];
+    short RTTI;                         // +0x24
+};
+// A saved game state (0x33C bytes; 256 at 0x00A780D8, built by 0x006231A0 and filled by
+// 0x0062CF40; 0x0062DBA0 writes one to a sync file).
+struct UnknownSyncState {
+    int unknown_000;                    // +0x000
+    int RandomNumber;                   // +0x004
+    int Frame;                          // +0x008
+    UnknownSyncHouse Houses[8];         // +0x00C
+    int ObjectCount;                    // +0x2EC the records at Objects
+    int Counts[4];                      // +0x2F0 infantry, units, aircraft, buildings
+    UnknownSyncObject *Objects;         // +0x300 in that order
+    int LayerCounts[5];                 // +0x304
+    UnknownSyncLayerObject *Layers[5];  // +0x318
+    int LogicCount;                     // +0x32C
+    UnknownSyncLayerObject *Logic;      // +0x330
+    char *Buffer;                       // +0x334 the records (allocated on first use)
+    unsigned int BufferSize;            // +0x338 (grown in 64K steps)
+};
+#pragma pack(pop)
+extern UnknownSyncState unknown_sync_states_a780d8[256];
+// The random number drawn each frame while no sync log is kept (0x00AABCE0).
+extern int unknown_random_aabce0;
 
 #endif

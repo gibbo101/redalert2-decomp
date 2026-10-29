@@ -6,5 +6,6 @@ struct _iobuf;
 extern "C" _iobuf *__cdecl fopen(char const *name, char const *mode);   // 0x00783A45
 extern "C" int __cdecl fgetc(_iobuf *file);                            // 0x00784A0B
 extern "C" int __cdecl fclose(_iobuf *file);                           // 0x0078395B
+extern "C" int __cdecl fprintf(_iobuf *file, char const *format, ...); // 0x007839D8
 
 #endif
