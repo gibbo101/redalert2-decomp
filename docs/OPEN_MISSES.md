@@ -269,3 +269,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Alert's), the unit statics 0x623210/0x623230/0x6232D0/0x623320/0x623370 (need data definitions and retiring five
   seeds), EventClass::Execute 0x4B65C0 (4994 B), Queue_AI_Multiplayer, Wait_For_Players, Execute_DoList,
   Send_Packets, Build_Send_Packet, Print_CRCs (917-5519 B), dialog code 0x626FE0, 0x626CB0, 0x627350.
+- TechnoClass (Techno167 w/, NOTES): ctor 0x6C0CD0 99.66 (mov eax,0xa scheduled early), slot 220 Assign_Target
+  0x6C9AF0 98.82 (mov ebp,esi early; inline Target_Legal), NoInit ctor 0x6C1F10 66.06 (exact only with four more
+  pending inline sites after the vectors: no natural source yet), helper 0x6C3950 69.29, slot 65 0x6C3B30 28.57
+  (decoded; inline budget). Not started: Take_Damage 0x6CDC40, AI 0x6C74C0, slot 66 0x6C2C40.
