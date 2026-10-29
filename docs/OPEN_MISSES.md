@@ -525,3 +525,14 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Vector forms after Vector223 (build/class-work/Vector223/NOTES.md, impact.py): Westwood Add/ID landed (r1, zero impact).
   int operator[] still moves BaseClass::Get_Building 0x42C0A0 (99.20, lea operand order) and WDT Conflict::Init_Options
   0x727480 (rc_ptr<FlagGameOption> dtor inlines); HouseClass 0x4E68D0 has a natural fix. Init 0x5173C0 99.48 under r1.
+- ownrdraw.cpp after OwnrDraw224 (one TU 0x5DE660-0x605F30, build/class-work/OwnrDraw224/NOTES.md, c/): 0x5E1640 89.80
+  (original jumps from the kind 0x94 test into the 0x72B compare, no stored bool), 0x5E8BA0 67.67 (parent width before
+  `test bl`, dx in ebp; six placement siblings share it).
+- Init 0x5173C0 after Init227 (zero bytes; build/class-work/Init227/NOTES.md, u/): a one-call-wide inline budget
+  window. Unsigned operator[]: 99.48, exact only with 6 extra out-of-line calls; int operator[]: exact, but WDT
+  Conflict::Init_Options 0x727480 drops to 73.75 (sixth rc_ptr<FlagGameOption> temporary's dtor inlines). Get_Building
+  0x42C0A0 is exact under both headers with `BaseNodeClass const &node = Nodes[index]; Cell cell = node.Cell;`.
+- Queue.CPP after Queue228 (zero bytes; build/class-work/Queue228/NOTES.md, u-misses/): Print_CRCs 0x62A360 (11,223 B)
+  92.24, shape 99.84; needs MonoClass::Clear 0x59E290 and Set_Cursor 0x59E240 declared out of line with the Mono
+  population taking over their transliterated rows (re-check ctor 0x59E190, View, Text_Print). Remaining: frame slot
+  order and register allocation in the map-layer/logic loops. Queue_AI group not started.

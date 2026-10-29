@@ -135,6 +135,7 @@ typedef long LPARAM;
 typedef long LRESULT;
 WIN32_IMPORT LONG WINAPI SetWindowLongA(HWND window, int index, LONG value);
 WIN32_IMPORT LONG WINAPI GetWindowLongA(HWND window, int index);
+WIN32_IMPORT int WINAPI GetClassNameA(HWND window, char *name, int size);
 WIN32_IMPORT HWND WINAPI GetParent(HWND window);
 WIN32_IMPORT BOOL WINAPI IsWindowVisible(HWND window);
 typedef BOOL (WINAPI *WNDENUMPROC)(HWND window, LPARAM lparam);

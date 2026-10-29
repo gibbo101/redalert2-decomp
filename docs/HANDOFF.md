@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Startup226 Startup.CPP WinMain and shutdown; Init227 Init 0x5173C0 command registration (Vector223 r1 landed, 99.48); OwnrDraw224 ownrdraw.cpp span split and first unit; Queue228 Queue.CPP Print_CRCs 0x62A360 and Queue_AI group. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Startup226 Startup.CPP WinMain and shutdown; Wonline230 wonline.cpp span unit table and first unit; OwnrDraw229 ownrdraw.cpp continuation (one TU 0x5DE660-0x605F30, OwnrDraw224 NOTES table); Event231 Event.CPP EventClass::Execute 0x4B65C0 and the rest of Event.CPP. All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -62,11 +62,8 @@ a plan names: codex2's d/ is about 30 GB). Bounds rounds (r18, r26, r28, r31, r3
 (0x715230), Cd124 (0x715300), Coop122 (fill combo 0x5B70B0, fill list 0x5B71E0; 0x5B8490 open), Seed123 and
 Seed125 (zero bytes; Tactical family parked; 0x6AAFD0 is a register-tie near miss for Windows). Their misses
 are in OPEN_MISSES.md.
-Next-lane candidates (2026-10-30; unit table build/class-work/Survey170/UNITS.md): the ownrdraw.cpp span's other units
-(OwnrDraw224's NOTES unit table), wonline.cpp span 0x73C580-0x766A94 (~104 KB, many WOL units: split first),
-WorldDom.cpp rest (OPEN_MISSES), EventClass::Execute 0x4B65C0 (5 KB),
-LdPrgMgr 0x535BF0 (4 KB), Init.CPP Select_Game 0x5135F0 / Init_Game 0x5116A0, MainLoop 0x540C20 (3.5 KB).
-Parked (OPEN_MISSES has resume points): House.CPP, UICmnds.cpp, WDTSel.cpp, PlanMgr.cpp, TAction.CPP, Session.CPP,
+Next-lane candidates (2026-10-30; unit table build/class-work/Survey170/UNITS.md): WorldDom.cpp rest (OPEN_MISSES), LdPrgMgr 0x535BF0 (4 KB), Init.CPP Select_Game 0x5135F0 / Init_Game 0x5116A0, MainLoop 0x540C20 (3.5 KB).
+Parked (OPEN_MISSES has resume points): Init 0x5173C0 (Init219/Init227), Queue.CPP (Queue228), House.CPP, UICmnds.cpp, WDTSel.cpp, PlanMgr.cpp, TAction.CPP, Session.CPP,
 Skirmish.cpp, NullDlg Select_Serial_Dialog. Pending landings: none (Mac lanes deliver on hand-back; Windows last r62).
 
 Windows lead 2 (user-approved 2026-10-29): LEAD2.md in the coordination folder, subagents codex4-6 (worktrees
