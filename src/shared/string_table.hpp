@@ -23,5 +23,7 @@ public:
 
 extern "C" int __cdecl swprintf(wchar_t *buffer, wchar_t const *format, ...);   // 0x00783764
 extern "C" wchar_t *__cdecl wcsncpy(wchar_t *destination, wchar_t const *source, unsigned int count);   // 0x00783622
+extern "C" unsigned int __cdecl wcslen(wchar_t const *string);                                     // 0x00783605
+extern "C" wchar_t *__cdecl wcscpy(wchar_t *destination, wchar_t const *source);                     // 0x00783689
 
 #endif

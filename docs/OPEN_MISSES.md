@@ -561,3 +561,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   IsoTileType 0x529120 + VectorClass<unsigned short*> ctor 0x52ED90 exact alone but make Load 0x52E1C0 inline the ctor
   (57.89); ProgressScreen pair 0x61ECA0/0x61ECC0 ctor inlines into the initializer. Unexamined >=85: 0x5AADD0 95.45,
   0x7291C0, 0x732AA0, 0x6AAD40, 0x63F047.
+- Init.CPP after Init234/Init238 (NOTES, gen.py/mix.py list every tried form): Select_Game 0x5135F0 (4516 B, 93.08 is
+  the scorer ceiling) misses by one instruction pair in two draft families: Init234/u (single `started` join: original
+  `jne 0x513E55` at 0x513E6B vs our cross-jump) and Init238/w/best_select_game_q.cpp (RA per-arm Dialog checks: modem
+  code exact; only the while(process) back-edge reload order `or edi,-1; mov esi,1` differs; reshape the internet case
+  and the case 16/17 switch). Its session_state edits rebase on Init238 r1. Init_Game 0x5116A0 (4420 B) not drafted.

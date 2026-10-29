@@ -3,11 +3,14 @@
 #include "shared/win32_api.hpp"
 #include "shared/wide_string.hpp"
 #include "shared/rect.hpp"
+#include "shared/string_table.hpp"
+#include "shared/unknown_node_list.hpp"
 // RTTI establishes this hierarchy; 0x6010c0 clears +4 and +8.
 // The fields are placed in SimpleDialogControl as an ownership hypothesis;
 // no base-field ownership claim is made from constructor omission alone.
 // Slot1 stores the second argument at +4, then looks up the first as a registry key.
 class Surface;
+class BitFontClass;
 namespace OwnerDraw {
 class DialogControl {
 public:
@@ -30,20 +33,41 @@ public:
 // Descriptive recovery names for the integer-keyed OwnerDraw registry.
 // Only the used prefix is declared; this is not a full global-size claim.
 struct UnknownControlRecord {
+    // Zeroes the record: kind 0xB at +0x68, the game font at +0x64, a new WideString at +0x3C, -1 at +0x90 (0x006002F0).
+    UnknownControlRecord();
+    // Frees list_34 and replaces it with copies of source's nodes (0x00600460; inline below).
+    void Copy_List_600460(UnknownNode_006003d0 const *source);
+    // Copies other except the owned pointers: text_28 and list_34 are deep copies, unknown_3c stays (0x006005C0).
+    UnknownControlRecord &operator=(UnknownControlRecord const &other);
+    // Replaces text_28 with a wide copy of text (none for a null or empty string) (0x00600560).
+    void Set_Text_600560(char const *text);
     char unknown_00[0x10];
     Surface *surface_10; // +0x10 a BSurface (0x005FE490 creates it; 0x005FF380 deletes it)
     Surface *image_14;  // +0x14 image set by 0x005E1F30
-    char unknown_18[0x68 - 0x18];
+    char unknown_18[0x28 - 0x18];
+    wchar_t *text_28;   // +0x28 owned wide text (0x006005C0 copies it, 0x00600560 sets it from a char string)
+    char unknown_2c[0x34 - 0x2c];
+    UnknownNode_006003d0 *list_34;  // +0x34 owned node list (shared/unknown_node_list.hpp; 0x00600460 copies one)
+    int unknown_38;
+    WideString *unknown_3c;     // +0x3C created by the constructor 0x006002F0, kept by operator=
+    int unknown_40;
+    char unknown_44[0x5c - 0x44];
+    int unknown_5c;
+    int unknown_60;
+    BitFontClass *font_64;      // +0x64 the game font (BitFont) by default
     int unknown_68;     // +0x68 nonzero skips the owner-draw tests (0x005E7230)
     int unknown_6c;     // +0x6C the control's kind (0x005DF8E0 tests it against a list)
     int unknown_70;     // +0x70 0x005E1F30 sets 2 with an image
     int unknown_74;
-    char unknown_78[0xb0 - 0x78];
+    char unknown_78[0x90 - 0x78];
+    int unknown_90;             // +0x90 -1 by default
+    char unknown_94[0xb0 - 0x94];
     int unknown_b0;     // +0xB0 set to 2 by 0x005EA230 for the listed dialog kinds
     char unknown_b4[0xbc - 0xb4];
     bool unknown_bc;
     bool unknown_bd;
-    char unknown_be[2];
+    bool unknown_be;    // +0xBE cleared by 0x005E5F20 after notifying control 0x71A
+    char unknown_bf;
     int unknown_c0;
     int unknown_c4;
     int unknown_c8;     // +0xC8 0xC0 for edit, list and combo controls of the listed dialog kinds (0x005E1CA0, 0x005E8720)
@@ -57,7 +81,8 @@ struct UnknownControlRecord {
     int unknown_dc;     // +0xDC 0x25 or 0xE by the dialog's kind and the control ID (0x005E8720)
     int unknown_e0;
     int unknown_e4;
-    char unknown_e8[0x200 - 0xe8];
+    unsigned int unknown_e8;    // +0xE8 the last WM_DRAWITEM itemState of a ODT type 4 control (0x005FE380)
+    char unknown_ec[0x200 - 0xec];
 };
 class UnknownControlIndex {
 public:
@@ -92,6 +117,41 @@ public:
     }
 };
 extern UnknownControlIndex unknown_registry_a73640;
+// 0x00600460 when not inlined (0x006005C0 inlines it).
+inline void UnknownControlRecord::Copy_List_600460(UnknownNode_006003d0 const *source)
+{
+    while (list_34) {
+        UnknownNode_006003d0 *node = list_34;
+        UnknownNode_006003d0 *previous = 0;
+        UnknownNode_006003d0 *current;
+        for (current = list_34; current; current = current->Next) {
+            if (node == current) {
+                break;
+            }
+            previous = current;
+        }
+        if (current) {
+            if (previous) {
+                previous->Next = current->Next;
+            } else {
+                list_34 = current->Next;
+            }
+            operator delete(current);
+        }
+    }
+    for (; source; source = source->Next) {
+        UnknownNode_006003d0 *node = (UnknownNode_006003d0 *)operator new(wcslen(source->Data) * 2 + 0x12);
+        if (node) {
+            node->Data = node->Text;
+            node->Next = list_34;
+            node->unknown_04 = 0;
+            list_34 = node;
+        }
+        node->unknown_0c = source->unknown_0c;
+        node->unknown_04 = source->unknown_04;
+        wcscpy(node->Data, source->Data);
+    }
+}
 // The two-word key of the hash table at 0x00A73398 (compared by 0x005DE990 in 0x005EFCB0's removal).
 struct UnknownPairKey {
     int unknown_00;
@@ -117,6 +177,15 @@ void __fastcall unknown_5e1f30(HWND control, Surface *image);
 int __fastcall unknown_5e12a0(unsigned int key, HWND window);
 // 0xC0 for an edit, list or combo control of the listed dialog kinds; sets the dialog's +0xB0 (0x005E1CA0).
 int __fastcall unknown_5e1ca0(HWND dialog, HWND window);
+// EnumChildWindows callback of 0x005E61B0 (0x005E4780, not yet recovered).
+BOOL __stdcall unknown_5e4780(HWND window, LPARAM lparam);
+// Shows a registered dialog that is not shown yet: plays GUIMoveInSound, then 0x005E5150 with the
+// children disabled through 0x005E4780 (0x005E61B0).
+bool __fastcall unknown_show_dialog_5e61b0(HWND dialog);
+// Called by 0x005E5F20 with false, 0x005E61B0 with true (0x005E5150, not yet recovered).
+void __fastcall unknown_5e5150(HWND dialog, bool unknown2);
+// Called by 0x005FF6E0 on a dialog before it is destroyed (0x005E5FC0, not yet recovered).
+bool __fastcall unknown_5e5fc0(HWND dialog);
 // A second per-dialog control test (0x005E72C0, not yet recovered), beside 0x005E6860.
 bool __fastcall unknown_5e72c0(unsigned int key, HWND window);
 // Visible owner-drawn controls counted by the EnumChildWindows callbacks 0x005E7D00 and 0x005E7DD0.

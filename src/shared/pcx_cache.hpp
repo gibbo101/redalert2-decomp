@@ -17,8 +17,14 @@ public:
     bool Draw_0068ce80(Rect const &rect, Surface *destination, Surface *image, int transparent);
     // The image of a .pcx file, loaded on first use (0x0068CA40; arg2 meaning not recovered).
     Surface *Get_Image_0068ca40(char const *name, int arg2);
+    // Draws image through its alpha image into rect of destination with the palette, from x offset
+    // source_x of the image (0x0068CF90; the other arguments are 0 in every caller seen).
+    void Draw_0068cf90(Rect const &rect, Surface *destination, Surface *image, Surface *alpha, unsigned char *palette,
+                       int arg6, int source_x, int arg8);
 };
 extern UnknownBitmapWriter unknown_bitmap_writer_a76378;
+// Brightens a 768-byte RGB palette: red and green by 1.5, clamped to 255 (0x0068BCE0; hypothesis).
+void __fastcall unknown_brighten_palette_68bce0(unsigned char *palette);
 
 // The images the skirmish and multiplayer dialogs name (GDlgSupp.cpp): the
 // country flags, [0] "rani.pcx" (random), [1] "obsi.pcx" (observer),

@@ -207,6 +207,18 @@ WIN32_IMPORT BOOL WINAPI MoveWindow(HWND window, int x, int y, int width, int he
 WIN32_IMPORT BOOL WINAPI SetWindowPos(HWND window, HWND insert_after, int x, int y, int width, int height, UINT flags);
 WIN32_IMPORT int WINAPI GetSystemMetrics(int index);
 WIN32_IMPORT BOOL WINAPI UpdateWindow(HWND window);
+// The WM_DRAWITEM record (lparam).
+struct DRAWITEMSTRUCT {
+    UINT CtlType;       // +0x00
+    UINT CtlID;
+    UINT itemID;
+    UINT itemAction;
+    UINT itemState;     // +0x10
+    HWND hwndItem;      // +0x14
+    void *hDC;          // +0x18 (HDC)
+    RECT rcItem;        // +0x1C
+    DWORD itemData;
+};
 WIN32_IMPORT HWND WINAPI SetFocus(HWND window);
 WIN32_IMPORT BOOL WINAPI IsWindowEnabled(HWND window);
 WIN32_IMPORT HWND WINAPI SetActiveWindow(HWND window);

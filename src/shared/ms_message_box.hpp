@@ -33,10 +33,15 @@ struct UnknownDialogCreateParam {
 };
 // A modeless dialog with the text and one cancel button; the button sets *cancelled (0x006001E0).
 HWND __fastcall unknown_cancel_dialog_6001e0(unsigned short const *text, unsigned short const *button, bool *cancelled);
+// Shows the yes/no dialog 0x10D with the text and waits for a choice; true for button 0x5C1 (0x00600C80).
+bool __fastcall unknown_choice_dialog_600c80(unsigned short const *text);
 // Its dialog procedure: the common handler 0x005FFB00 first, then the button sets *cancelled and queues Escape (0x00600260).
 int __stdcall unknown_cancel_dialog_proc_600260(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 // Sends 0x4B2 with value to the dialog's control 0x5B0 (its text) and repaints the dialog (0x006002C0).
 void __fastcall unknown_set_dialog_item_5b0(HWND dialog, LPARAM value);
+// Moves a window to x, y relative to the main window's client origin (-1 keeps that coordinate),
+// keeping its size and without repainting (0x00600120).
+void __fastcall unknown_move_window_600120(HWND window, int x, int y);
 void __fastcall unknown_dialog_5ff7c0(HWND window);                                  // 0x005FF7C0 (after setup)
 void __fastcall unknown_dialog_5ff6e0(HWND window);                                  // 0x005FF6E0 (when done)
 int __fastcall unknown_dialog_proc_5ffb00(HWND window, UINT message, WPARAM wparam, LPARAM lparam);  // 0x005FFB00

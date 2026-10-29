@@ -18,4 +18,23 @@ BOOL __fastcall Window_Rect_In_Main_Client(HWND window, RECT *rect);
 // size[1] = height. The third argument is not read. Returns 1 (0x00735B50).
 int __fastcall Dialog_Template_Size(int dialog_id, DLGPROC procedure, int unused, LONG *size);
 
+// The stack of open modeless dialogs: 0x005FF610 pushes each dialog it creates with its
+// template resource id, 0x005FF6E0 removes it and makes the new top the current dialog
+// (0x00735910-0x007359B0 search it). Its capacity is not evidenced.
+struct DialogStackEntry {
+    HWND Window;                    // +0x00
+    int Resource;                   // +0x04
+};
+extern DialogStackEntry DialogStack[];   // 0x00B25BB8
+extern HWND CurrentDialog;               // 0x00B25DD4 the top of the stack (0 when empty)
+extern int CurrentDialogResource;        // 0x00B25DD8 its resource id
+extern int DialogStackCount;             // 0x00B25DE0
+
+struct DLGTEMPLATE;
+WIN32_IMPORT HWND WINAPI CreateDialogIndirectParamA(HINSTANCE instance, DLGTEMPLATE const *dialog, HWND parent,
+                                                    DLGPROC procedure, LPARAM parameter);
+
+// The locked data of resource id of the given type in the module at 0x00851CA8 (0x004954E0).
+void *__fastcall Load_Resource_004954e0(unsigned int id, char const *type);
+
 #endif

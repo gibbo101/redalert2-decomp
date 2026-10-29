@@ -10,6 +10,7 @@ extern "C" void *__cdecl memmove(void *destination, void const *source, unsigned
 extern "C" int __cdecl memcmp(void const *left, void const *right, unsigned int count);
 extern "C" int __cdecl abs(int value);
 extern "C" void *__cdecl malloc(unsigned int size);                                // 0x00782630
+extern "C" int __cdecl rand();                                                      // 0x007846AA
 #pragma intrinsic(memset, memcpy, memcmp, abs)
 
 #endif
