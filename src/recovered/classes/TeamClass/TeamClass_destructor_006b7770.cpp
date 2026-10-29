@@ -13,7 +13,7 @@
 #include "shared/ai_trigger_type.hpp"
 // @ref ?Register_Success@AITriggerTypeClass@@QAEXXZ=0041dfb0
 // @ref ?Register_Failure@AITriggerTypeClass@@QAEXXZ=0041e070
-// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
+// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref ?unknown_func_6b3cc0@TagClass@@QAEXXZ=006b3cc0
 // @ref ?Unknown_006ECB90@@YIXPAVAbstractClass@@_N@Z=006ecb90
 // @ref ??1AbstractClass@@UAE@XZ=0040ff90

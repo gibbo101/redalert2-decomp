@@ -8,7 +8,7 @@
 #include "shared/crt_memory.hpp"
 
 // @ref ?unknown_84ed10@@3HA=0084ed10
-// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
+// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref ?Unknown_006D9610@TechnoClass@@=006d9610
 
 void BuildingClass::unknown_452f50(int control)

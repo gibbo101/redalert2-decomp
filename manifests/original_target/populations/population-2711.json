@@ -4,8 +4,8 @@
     "id": "population-2711",
     "inventory_sha256": "ae03b6305fec8fe353734827ab9492ea8b7b0956fc357f5c94e739f8d7667eaf",
     "gaps_sha256": "26492183dcaf0dd391deb962532e3c7a51aa810897ab41617a67eed1ac6a6ddd",
-    "historical_population_sha256": "e5b1334df09ad29b5222c57c33361edcac3c65b3beb2ecfa594484100ea17c8e",
-    "historical_acceptance_sha256": "3b5578cf78a75dee7f8b512c7e31b8ad9e790bf6c362ea34471caec30f3267f1"
+    "historical_population_sha256": "25c4f6a87b032da7168260f570c30a99a573ef49b72e80c0422e338878f21f1e",
+    "historical_acceptance_sha256": "fc3a9dc78fe910d685bf31b3ca7c8352779b3c2849de4f264fc3560e2a402a16"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -7702,7 +7702,7 @@
     "?Unknown_006328D0@UnknownMap8324E0@@QAEPAV?$DynamicVectorClass@UPoint2D@@@@PAVBuildingTypeClass@@@Z": 6498512,
     "?Unknown_006331A0@RadarClass@@QAE_NXZ": 6500768,
     "?Unknown_0063B5B0@@YI_NHVCell@@@Z": 6534576,
-    "?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z": 7049136,
+    "?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z": 7049136,
     "?Unknown_006B9AA0@TeamClass@@QAEXPAVFootClass@@HPAVTechnoClass@@@Z": 7051936,
     "?Unknown_006BA990@TeamClass@@QAE_NXZ": 7055760,
     "?Unknown_006BE6A0@TeamClass@@QAEHXZ": 7071392,
@@ -7794,7 +7794,7 @@
     "?unknown_func_6b8dc0@TeamClass@@QAE_NPAVFootClass@@PAH@Z": 7048640,
     "?unknown_func_6b9610@TeamClass@@QAEXPAPAVAbstractClass@@0@Z": 7050768,
     "?unknown_func_6b9bb0@TeamClass@@QAEXXZ": 7052208,
-    "?unknown_func_6b9f40@TeamClass@@QAEXXZ": 7053120,
+    "?unknown_func_6b9f40@TeamClass@@QAE_NXZ": 7053120,
     "?unknown_func_6ba1a0@TeamClass@@QAEXXZ": 7053728,
     "?unknown_func_6ba7d0@TeamClass@@QAE_NPAVFootClass@@@Z": 7055312,
     "?unknown_func_6ba8b0@TeamClass@@QAE_NPAVFootClass@@@Z": 7055536,

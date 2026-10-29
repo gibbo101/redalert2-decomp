@@ -6,7 +6,7 @@
 // @ref ?unknown_func_4f52f0@HouseClass@@QAE_NXZ=004f52f0
 // @ref ?In_Radio_Contact@RadioClass@@QBE_NXZ=00636f10
 // @ref ?unknown_func_6baa00@TeamClass@@QAE_NXZ=006baa00
-// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
+// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref ?unknown_4198b0@AircraftClass@@QAEPAVAbstractClass@@XZ=004198b0
 bool AircraftClass::unknown_slot261(bool first, bool second)
 {

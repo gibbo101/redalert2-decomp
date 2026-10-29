@@ -3,7 +3,7 @@
 #include "shared/unit.hpp"
 #include "shared/foot.hpp"
 #include "shared/team.hpp"
-// @ref ?unknown_func_6b9f40@TeamClass@@QAEXXZ=006b9f40
+// @ref ?unknown_func_6b9f40@TeamClass@@QAE_NXZ=006b9f40
 // @ref ?Frame@@3HA=00a40d2c
 
 void TeamClass::TMission_unknown_6bbb40(ScriptMissionClass const &mission, bool unknown)

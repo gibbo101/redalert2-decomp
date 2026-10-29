@@ -4,8 +4,8 @@
     "id": "population-2578",
     "inventory_sha256": "3bb79707c97461caa97473a37980b224e14e3437106be94acea6fb2ef809a271",
     "gaps_sha256": "9bc190859ab6610d64c44b5554eb159451824d81e85b2da69b944ade03543c0e",
-    "historical_population_sha256": "f0500eedeca3e7b3d26a09744237e89640fc6e42c863cb2efbb92dfafd0a4e26",
-    "historical_acceptance_sha256": "33ba4e11d9e604aa6cc027013b7b352bc442a1b8554e4bbbac6390c8f37b7fe5"
+    "historical_population_sha256": "645ff1198d4f5b860ea216469757f37f3d976ba4376dc12f478b1ce5dad84fbb",
+    "historical_acceptance_sha256": "9cf459acc32f14af7c1d00128afbb7e6a265b1c003e8c0b04fd8db6a21d0027f"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3968,7 +3968,7 @@
     "?Unknown_006A6A50@UnknownTacticalView@@QAE?AVCell@@ABUCoordStruct@@@Z": 6974032,
     "?Spring@TagClass@@QAE_NHPAVObjectClass@@VCell@@_NH@Z": 7028208,
     "?Unknown_006B5810@UnknownTarget@@QBEPAVAbstractClass@@XZ": 7034896,
-    "?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z": 7049136,
+    "?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z": 7049136,
     "?Unknown_006B9AA0@TeamClass@@QAEXPAVFootClass@@HPAVTechnoClass@@@Z": 7051936,
     "?Unknown_006BA990@TeamClass@@QAE_NXZ": 7055760,
     "?Unknown_006BE6A0@TeamClass@@QAEHXZ": 7071392,
@@ -4447,7 +4447,7 @@
     "?unknown_func_6b8dc0@TeamClass@@QAE_NPAVFootClass@@PAH@Z": 7048640,
     "?unknown_func_6b9610@TeamClass@@QAEXPAPAVAbstractClass@@0@Z": 7050768,
     "?unknown_func_6b9bb0@TeamClass@@QAEXXZ": 7052208,
-    "?unknown_func_6b9f40@TeamClass@@QAEXXZ": 7053120,
+    "?unknown_func_6b9f40@TeamClass@@QAE_NXZ": 7053120,
     "?unknown_func_6ba1a0@TeamClass@@QAEXXZ": 7053728,
     "?unknown_func_6ba7d0@TeamClass@@QAE_NPAVFootClass@@@Z": 7055312,
     "?unknown_func_6ba8b0@TeamClass@@QAE_NPAVFootClass@@@Z": 7055536,

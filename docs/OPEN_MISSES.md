@@ -241,3 +241,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Vector3 const &, double)`; a free operator+ gives 98.40 but breaks accepted 0x420D90 at 77.67), landing spot
   0x4237B0 73.22 (stack slots, x/y in edi/ebx). Not started: AI 0x421710, draw 0x420E50, 0x423120 (codex1 drafts
   72.36/81.82/84.50 need porting). 0x42007B, 0x420A8E, 0x42151B are inventory fragments inside accepted regions.
+- Left163 (NOTES, miss/): CellClass::Load 0x478CB0 91.12 in the population composite (plan pl/cell-t1.json 86/87;
+  needs the VectorClass<FoggedObjectClass*> ctor specialization under auto_inline(off), an inline DVC ctor
+  specialization, and the accepted noinit ctor 0x470680 rewritten as an init list (owner decision, still exact);
+  left: the original keeps a second null test on the deleted map-table cell). CellClass ctor 0x470F10 72.45.
+  HouseClass::AI is one function 0x4E4110..0x4E4EE7 (3536 B; inventory rows 0x4E4110 + 0x4E414C), a class-lane
+  target of its own (raw seed 24.45). Inventory artifacts: TEventClass 0x6E6D9D is 3 NOPs before the accepted
+  ??_G 0x6E6DA0; DynamicVectorClass<FoggedObjectClass *> lists 0x478CB0 as a vptr writer.

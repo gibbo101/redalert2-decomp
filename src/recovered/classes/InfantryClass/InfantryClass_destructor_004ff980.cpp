@@ -6,7 +6,7 @@
 #include "shared/infantry.hpp"
 // @ref ?unknown_flag_a40958@@3_NA=00a40958
 // @ref ?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z=004e3660
-// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
+// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref ?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z=004ea800
 // @ref ?_com_issue_error@@YGXJ@Z=00795940
 // @ref ?unknown_slot52@FootClass@@UAE_NXZ=004c9bd0

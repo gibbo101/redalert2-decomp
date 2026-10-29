@@ -4,7 +4,7 @@
 // a target near the aircraft (with 0x40 first in some game modes); without
 // one slot 261 (0, 1), with one queue mission 1. Returns the delay.
 #include "shared/aircraft.hpp"
-// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
+// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref ?Control@MissionClass@@QBEPAVMissionControlClass@@XZ=005950d0
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ??RRandom2Class@@QAEHHH@Z=006388a0

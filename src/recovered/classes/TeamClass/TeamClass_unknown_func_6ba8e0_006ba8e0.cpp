@@ -5,7 +5,7 @@
 #include "shared/team_type.hpp"
 // @ref ?Teams@@3V?$DynamicVectorClass@PAVTeamClass@@@@A=00866178
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
-// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
+// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref __ftol=0077f110
 // @ref ?Frame@@3HA=00a40d2c
 

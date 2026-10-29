@@ -63,7 +63,7 @@ public:
         AbstractClass(noinit), unknown_58(noinit), unknown_64(noinit) {}
     virtual ~TeamClass();                                           // 0x006B7770 (scalar deleting 0x006BE740)
 
-    bool Unknown_006B8FB0(FootClass *member, int arg2, int arg3);   // 0x006B8FB0 (removes a member; hypothesis)
+    bool Unknown_006B8FB0(FootClass *member, int slot, bool arg3);  // 0x006B8FB0 (removes a member: Red Alert's Remove; slot -1 finds it by type)
     bool Unknown_006BA990();                                        // 0x006BA990
     int Unknown_006BE6A0();                                         // 0x006BE6A0 (how far a member may stray; FootClass 0x004C3000)
     void Unknown_006B9AA0(FootClass *member, int result, TechnoClass *source);   // 0x006B9AA0 (a member was damaged; hypothesis)
@@ -79,7 +79,7 @@ public:
     bool unknown_func_6be6e0();                                     // 0x006BE6E0 (whether any member has ammo or unlimited ammo)
     static bool __fastcall unknown_func_6bdd80(ObjectClass *object);  // 0x006BDD80
     bool unknown_func_6bd810();                                     // 0x006BD810 (whether the task force has a transporter that carries passengers)
-    void unknown_func_6b9f40();                                     // 0x006B9F40
+    bool unknown_func_6b9f40();                                     // 0x006B9F40 (Red Alert's Coordinate_Regroup: whether no member had to move)
     void unknown_func_6b9bb0();                                     // 0x006B9BB0
     void unknown_func_6ba1a0();                                     // 0x006BA1A0
     FootClass *unknown_func_6baa60();                               // 0x006BAA60 (the best member for leading: highest LeadershipRating)

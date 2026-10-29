@@ -7,7 +7,7 @@
 // @ref ?unknown_flag_a40958@@3_NA=00a40958
 // @ref ?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z=004e3660
 // @ref ?unknown_6d3040@TechnoClass@@QAEXPAV1@@Z=006d3040
-// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
+// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref ?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z=004ea800
 // @ref ?Unknown_006ECB90@@YIXPAVAbstractClass@@_N@Z=006ecb90
 // @ref ?Aircraft@@3V?$DynamicVectorClass@PAVAircraftClass@@@@A=00a40398

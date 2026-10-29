@@ -4,8 +4,8 @@
     "id": "population-2755",
     "inventory_sha256": "b13e9f8a9c80267fb68c5bd415014405b9bc78678999b67b184f26e446fee49e",
     "gaps_sha256": "39a87731f2f2872c7e727c9bebe584eb081b3ddde2c518f5182d6bce3f128ad1",
-    "historical_population_sha256": "51129df9d720d6271ef77aa91626bec6bd758872969e97c58155f940b579ae79",
-    "historical_acceptance_sha256": "e1405681e33f9955f050441ec8f0c348ea90c3efecda13562db35adc8c06df5d"
+    "historical_population_sha256": "7bd43e26564f5d6dbd65df60173a5649b315b74adcbe49ef2481a3e66ebdff55",
+    "historical_acceptance_sha256": "7894c69f07c602de921a3461d6065dc0259548edefb1b9b8f7f1a22802c51b78"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6618,7 +6618,7 @@
     "?unknown_4ea970@HouseClass@@QAEXPAVTechnoClass@@@Z": 5155184,
     "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z": 5125728,
     "?unknown_6d3040@TechnoClass@@QAEXPAV1@@Z": 7155776,
-    "?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z": 7049136,
+    "?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z": 7049136,
     "?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z": 5154816,
     "?unknown_slot52@FootClass@@UAE_NXZ": 5020624,
     "?QueryInterface@AircraftClass@@UAGJABUGUID@@PAPAX@Z": 4276128,
@@ -7800,7 +7800,7 @@
     "?unknown_func_6b9bb0@TeamClass@@QAEXXZ": 7052208,
     "?TMission_unknown_6bb260@TeamClass@@QAEXABVScriptMissionClass@@_N@Z": 7058016,
     "?TMission_unknown_6bbb40@TeamClass@@QAEXABVScriptMissionClass@@_N@Z": 7060288,
-    "?unknown_func_6b9f40@TeamClass@@QAEXXZ": 7053120,
+    "?unknown_func_6b9f40@TeamClass@@QAE_NXZ": 7053120,
     "?TMission_unknown_6bbf20@TeamClass@@QAEXABVScriptMissionClass@@H@Z": 7061280,
     "?Compute_CRC@HouseClass@@UBEXAAVWWCRCEngine@@@Z": 5166992,
     "?unknown_44f730@BuildingClass@@QAEXXZ": 4519728,

@@ -3,7 +3,7 @@
 // the unit leaves its team, then ObjectClass's slot 60.
 #include "shared/foot.hpp"
 // @ref ?Unknown_004681E0@UnknownTechno230@@QAEXXZ=004681e0
-// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
+// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref ?unknown_slot60@ObjectClass@@UAEXXZ=005d4e90
 
 void FootClass::unknown_slot60()

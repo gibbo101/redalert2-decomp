@@ -5,7 +5,7 @@
 #include "shared/team_type.hpp"
 #include "shared/techno_type.hpp"
 // @ref ?unknown_func_6b8dc0@TeamClass@@QAE_NPAVFootClass@@PAH@Z=006b8dc0
-// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@HH@Z=006b8fb0
+// @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref ?Get_Group@TeamTypeClass@@QBEHXZ=006bfa60
 // @ref ?Attach_Tag@ObjectClass@@QAE_NPAVTagClass@@@Z=005d4430
 // @ref ?unknown_func_6b9610@TeamClass@@QAEXPAPAVAbstractClass@@0@Z=006b9610
