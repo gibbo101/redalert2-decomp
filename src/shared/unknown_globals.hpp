@@ -390,17 +390,22 @@ void Unknown_006ecf10();                                    // 0x006ECF10 (walks
 struct Point2D;
 class CCFileClass;
 template <class T> class MixFileClass;
+class Rect;
 struct Unknown535910 {
+    Unknown535910();                        // 0x005359A0
     virtual bool Message_00536ea0(int message, void *data);      // slot 0
     void Unknown_00535BF0();
     void Unknown_005359E0();                // 0x005359E0 (places itself by the screen size)
     Point2D Unknown_00535AB0();             // 0x00535AB0 (the loading screen's text position)
     int Unknown_00535B60();                 // 0x00535B60 (the name width: -1 in a campaign)
     void Unknown_00535B90();                // 0x00535B90 (opens LOAD.MIX)
+    void Unknown_00536E00(Surface *surface);    // 0x00536E00 (copies its surface onto another)
     void Unknown_00536E20();                // 0x00536E20 (frees its buffers and surfaces)
 
     MixFileClass<CCFileClass> *LoadMix;     // +0x04 LOAD.MIX
-    char unknown_08[0x30];                  // +0x08 not written by the factory
+    int unknown_08[4];                      // +0x08 (x, y, width, height; 0x005359E0)
+    int unknown_18[4];                      // +0x18 (x, y, width, height; 0x005359E0)
+    int unknown_28[4];                      // +0x28 (x, y, width, height; 0x005359E0)
     int unknown_38;                         // +0x38
     int unknown_3c;                         // +0x3C
     void *unknown_40;                       // +0x40 buffer, owned when unknown_4c
@@ -415,6 +420,32 @@ struct Unknown535910 {
     Surface *unknown_5c;                    // +0x5C (0x20 bytes, constructed by 0x0049ED90)
 };
 Unknown535910 *Unknown_00535910();
+void Unknown_00535970();                    // 0x00535970 (releases and deletes the object)
+extern Unknown535910 *unknown_load_progress_a6e7c4;   // 0x00A6E7C4
+// The loading-screen sizes: widths 640, 800, 1024 (0x007ADD68) and heights
+// 480, 600, 768 (0x007ADD74).
+extern int unknown_screen_widths_7add68[3];
+extern int unknown_screen_heights_7add74[3];
+void __fastcall Unknown_006f24a0(int flag);     // 0x006F24A0 (loads the campaign loading art)
+void __fastcall Unknown_006f25c0();             // 0x006F25C0 (loads the multiplayer loading art)
+#ifndef _WCHAR_T_DEFINED
+typedef unsigned short wchar_t;
+#define _WCHAR_T_DEFINED
+#endif
+// The loading screen's two text areas, centred on screens past 800x600
+// (0x00536B80, 0x00536C00).
+Rect __fastcall Unknown_00536b80();
+Rect __fastcall Unknown_00536c00();
+// Draws text in an area of the surface: flags 1 centres it, 2 right-aligns
+// it; fill widens the area to width (0x00536C70).
+void __fastcall Unknown_00536c70(wchar_t const *text, Surface *surface, int x, int y, int width, int flags, bool fill);
+// Draws a frame around an area in a 16-bit colour (0x00536D30).
+void __fastcall Unknown_00536d30(Surface *surface, void *unknown, Rect const &area, unsigned short color, int unknown_c);
+// Owner-draw helpers (ownrdraw.cpp; types are hypotheses).
+struct RECT;
+void __fastcall Unknown_005feb60(Rect *area, Surface *surface, int unknown_0, int unknown_9f);    // 0x005FEB60
+void __fastcall Unknown_005fe020(void *unknown, Surface *surface, RECT *area, void *font, int color,
+                                 int unknown_c, int unknown_10, int unknown_14, int unknown_18, int unknown_1c);   // 0x005FE020
 // The art data at 0x00AC1154 (0x006F2490; the campaign loading screen's bar drawer).
 void *Unknown_Get_Art_6f2490();
 // Assign_Houses' session data and globals (0x0065FBB0).

@@ -496,3 +496,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Session.CPP after Session214 (build/class-work/Session214/w, NOTES; parked): ctor 0x66E380 98.59 (w/ctor1.cpp; +0x63A and
   +0x2C4 stores out of order; HEAD's unsigned short[8] loop works for 0x3022; needs unknown_geometry_l binding and inline
   DVC ctors), Allocate_Ports 0x673090 87.47 (rotated registers). Session state is now in src/shared/session_state.hpp.
+- SerialEd.cpp after Scenario216 (build/class-work/Scenario216/open, NOTES): Fill_Port 0x66D5A0 71.93 (this/SendMessageA
+  ebp/ebx swap; original pushes all four callee-saved registers in the prologue), Read_Custom_Port 0x66DB50 83.04.
+  Clear_Scenario note: the inlined check is unsigned (cmp esi,0x802; jae) while the loop test is signed (jl).
