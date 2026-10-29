@@ -25,6 +25,12 @@ void __fastcall Message_Box_Command(HWND window, int id, HWND control, unsigned 
 
 
 HWND __fastcall unknown_create_dialog_5ff610(int resource, DialogProc proc, int unknown3);  // 0x005FF610
+// The WM_INITDIALOG lparam of a dialog that 0x005FF610 creates: the resource id and its third
+// argument (the WDT faction dialog proc 0x007689C0 keeps Param as its DWL_USER value).
+struct UnknownDialogCreateParam {
+    unsigned short Resource;    // +0x00
+    int Param;                  // +0x04
+};
 // A modeless dialog with the text and one cancel button; the button sets *cancelled (0x006001E0).
 HWND __fastcall unknown_cancel_dialog_6001e0(unsigned short const *text, unsigned short const *button, bool *cancelled);
 // Sends 0x4B2 with value to the dialog's control 0x5B0 (its text) and repaints the dialog (0x006002C0).
