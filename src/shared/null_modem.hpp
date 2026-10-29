@@ -26,7 +26,11 @@ public:
 
     char *ModemName;                    // +0x00
     char *ModemDeviceName;              // +0x04 the port to open
-    char unknown_08[0x1C - 0x08];
+    char *ErrorCorrectionEnable;        // +0x08
+    char *ErrorCorrectionDisable;       // +0x0C
+    char *CompressionEnable;            // +0x10
+    char *CompressionDisable;           // +0x14
+    char *HardwareFlowControl;          // +0x18
 };
 
 // The serial frame header (6 bytes): then the data, an int CRC of the data
@@ -37,6 +41,14 @@ struct SerialHeaderType {
     unsigned short MagicNumber2;    // 0xDEAF
 };
 
+// The CRC after a serial frame's data.
+struct SerialCRCType {
+    int SerialCRC;
+};
+
+// The serial frame overhead: the header and the CRC (unsigned, as the compares are).
+#define PACKET_SERIAL_OVERHEAD_SIZE (sizeof(SerialHeaderType) + sizeof(SerialCRCType))
+
 class NullModemConnClass : public ConnectionClass {
 public:
     NullModemConnClass(int numsend, int numreceive, int maxlen, unsigned short magicnum);   // 0x005CDB40
@@ -45,12 +57,31 @@ public:
     virtual void Init();                                                // slot 1 0x005CDCC0
     virtual int Send(char *buf, int buflen, void *extrabuf, int extralen, bool flagged, unsigned short id);   // slot 9 0x005CDBD0
     static int __fastcall Compute_CRC(char *buf, int buflen);           // 0x005CDC80 (rotating sum of the bytes)
+    // A packet with its serial header, CRC and carriage return.
+    int Actual_Max_Packet() { return MaxPacketLen + sizeof(SerialHeaderType) + sizeof(int) + sizeof(char); }
 
     int PortHandle;                     // +0x4C
     char *SendBuf;                      // +0x50
 };
 
 #include "shared/serial_settings.hpp"
+
+// Waits the given ticks of the frame timer (0x00496A20; Red Alert's Delay).
+void __fastcall Wait_Timer_00496A20(long ticks);
+
+// The result of NullModemClass::Dial_Modem and Answer_Modem.
+enum DialStatusType {
+    DIAL_CONNECTED = 0,
+    DIAL_NO_CARRIER,
+    DIAL_BUSY,
+    DIAL_ERROR,
+    DIAL_NO_DIAL_TONE,
+    DIAL_TIMEOUT,
+    DIAL_CANCELED
+};
+
+// The modem's CONNECT line (0x00A72E10; Red Alert's ModemRXString).
+extern char ModemRXString[80];
 
 // ESC aborted the modem operation (0x00A72EC4).
 extern bool unknown_modem_aborted_a72ec4;
@@ -75,6 +106,7 @@ public:
     virtual void unknown_slot14(unsigned long retrydelta, unsigned long maxretries, unsigned long timeout);   // 14 0x005D1F40
     virtual void Configure_Debug(int index, int offset, int size, int names, int namestart, int namecount);   // 15 0x005D0970
 
+    int Init(int port, int irq, char *dev_name, int baud, char parity, int wordlen, int stopbits);   // 0x005D00E0
     int Delete_Connection();                                            // 0x005D0360
     int Detect_Port(SerialSettingsType *settings);                      // 0x005D03E0 (0 when the port opens)
     int Init_Send_Queue();                                              // 0x005D03C0
@@ -84,10 +116,22 @@ public:
     int Num_Send();                                                     // 0x005D08A0
     int Num_Receive();                                                  // 0x005D08C0
     void *Oldest_Send();                                                // 0x005D0920
+    // Initialises the modem in failsafe mode under a dialog: echo, result codes, the
+    // session's init string and the registry modem's options, auto-answer off (0x005D09A0).
+    bool Detect_Modem(SerialSettingsType *settings, bool reconnect);
+    // Dials string with method (tone or pulse) under a cancel dialog (0x005D1350).
+    DialStatusType Dial_Modem(char *string, int method, bool reconnect);
+    // Waits for a ring under a cancel dialog, answers with ATA and waits for the connection (0x005D16E0).
+    DialStatusType Answer_Modem(bool reconnect);
+    // Drops the line (DTR, escape code, ATH, ATZ): true when the modem answers (0x005D1B70).
+    bool Hangup_Modem();
     void Setup_Modem_Echo(void (__fastcall *func)(char c));            // 0x005D1D20
     void unknown_5d1d40();                                              // 0x005D1D40 (empty)
     void Translate_Line_Ends();                                         // 0x005D1D50 (CR -> 1, LF -> 2 in the receive buffer)
     void Clear_Receive_Buffer();                                        // 0x005D1DA0
+    int Get_Modem_Status();                                             // 0x005D1E50 (0x80: carrier detect)
+    // Sends command plus terminator and reads the reply through SerialPort (no overall timeout; 0x005D1EA0).
+    int Send_Modem_Command(char *command, char terminator, char *buffer, int buflen, int delay, int retries);
     static int Abort_Modem();                                           // 0x005D1DB0 (-1000 once ESC was pressed)
     void Setup_Abort_Modem();                                           // 0x005D1E00
     void Remove_Abort_Modem();                                          // 0x005D1E20

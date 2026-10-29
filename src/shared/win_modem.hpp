@@ -32,6 +32,7 @@ public:
     virtual void Set_Abort_Function(int (*func)());                     // 0x007354B0 slot 9
 
     void Serial_Port_Close();                                           // 0x00734950
+    HANDLE Get_Port_Handle();                                           // 0x007354C0
     bool Enter_Failsafe_Mode();                                         // 0x00734670 (9600 baud, 8N1)
     void Leave_Failsafe_Mode();                                         // 0x007347C0
     // Moves what the port has received into the circular buffer; true when

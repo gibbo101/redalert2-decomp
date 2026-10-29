@@ -26,6 +26,10 @@ void __fastcall Message_Box_Command(HWND window, int id, HWND control, unsigned 
 
 void __fastcall unknown_5159b0(int unknown1, bool unknown2);                         // 0x005159B0
 HWND __fastcall unknown_create_dialog_5ff610(int resource, DialogProc proc, int unknown3);  // 0x005FF610
+// A modeless dialog with the text and one cancel button; the button sets *cancelled (0x006001E0).
+HWND __fastcall unknown_cancel_dialog_6001e0(unsigned short const *text, unsigned short const *button, bool *cancelled);
+// Sends 0x4B2 with value to the dialog's control 0x5B0 (its text) and repaints the dialog (0x006002C0).
+void __fastcall unknown_set_dialog_item_5b0(HWND dialog, LPARAM value);
 void __fastcall unknown_dialog_5ff7c0(HWND window);                                  // 0x005FF7C0 (after setup)
 void __fastcall unknown_dialog_5ff6e0(HWND window);                                  // 0x005FF6E0 (when done)
 int __fastcall unknown_dialog_proc_5ffb00(HWND window, UINT message, WPARAM wparam, LPARAM lparam);  // 0x005FFB00

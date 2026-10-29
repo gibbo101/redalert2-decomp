@@ -303,3 +303,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   the inventory (bound decision). Not started: ctor 0x66E380, dtor 0x66EB20, Read_MultiPlayer_Settings 0x66F3A0,
   0x6707D0, Read_Scenario_Descriptions 0x670C50, 0x671670, MultiMission ctor 0x671C50, 0x66E330. Lesson: acceptance
   binds references per candidate, so a draft needs @ref lines for what other drafts inline into it.
+- Scenario.CPP (population-2709, 0x65B2C0-~0x663440; Scenario177 open/, NOTES): Wait_For_Players 0x65C520 90.40
+  (shape 100; drop-loop register permutation), Multiplayer_Start_Waypoints 0x65FFF0 66.67, Scan_Place_Object 0x660B60
+  51.74 (RA shape with file-static Clip_Move/Clip_Scatter; shape 91.97), NoInit ctor 0x65B780 64.00 (TTimerClass
+  needs an empty NoInit ctor; TypeList DVC ctors must stay out of line: inline budget), Clear_Scenario 0x65D370 99.32,
+  Fill_In_Data 0x65CDD0 93.73 (needs a RadarClass/Tactical slot 52 CoordStruct rename). 0x65D7EA and 0x661408 are
+  tail chunks of accepted functions.
