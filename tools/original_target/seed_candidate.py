@@ -217,6 +217,14 @@ def sdk_named_types(body, params=(), result='void'):
                                     'struct tagPOINT { LONG x, y; };\ntypedef tagPOINT POINT;')
     if needed('ULONG'):
         preamble += '\ntypedef unsigned long ULONG;'
+    # The native Win32 CRT's va_list is a char pointer. In particular,
+    # FormatMessageA takes va_list*, not an opaque integer or a new layout.
+    if needed('va_list'):
+        preamble += '\ntypedef char *va_list;'
+    if needed('LCTYPE'):
+        preamble += '\ntypedef DWORD LCTYPE;'
+    if needed('OLECHAR'):
+        preamble += '\ntypedef WCHAR OLECHAR;'
     names = ('_WIN32_FIND_DATAA', 'WIN32_FIND_DATAA', 'PWIN32_FIND_DATAA', 'LPWIN32_FIND_DATAA')
     # One real interface type serves the tag, typedef and pointer spellings.
     # Do not add a conflicting definition when the seed owns any of these names.
@@ -233,7 +241,60 @@ def sdk_named_types(body, params=(), result='void'):
                   'typedef _WIN32_FIND_DATAA WIN32_FIND_DATAA;\n'
                   'typedef WIN32_FIND_DATAA *PWIN32_FIND_DATAA, *LPWIN32_FIND_DATAA;')
         preamble = preamble.replace('struct WIN32_FIND_DATAA; typedef WIN32_FIND_DATAA *LPWIN32_FIND_DATAA;', record)
+    preamble = process_sdk_records(preamble, view, signature, identifiers)
     return com_interface_types(preamble, view, signature, identifiers)
+
+
+def process_sdk_records(preamble, view, signature, identifiers):
+    """Complete explicitly used, documented native Win32 records.
+
+    Tags and public/pointer aliases share one complete record. Preserve an
+    authored or shadowing spelling by refusing its whole coupled group. These
+    are SDK declarations only, not inferred game layouts or helper bodies.
+    """
+    records = [
+        (('_PROCESS_INFORMATION', 'PROCESS_INFORMATION', 'PPROCESS_INFORMATION', 'LPPROCESS_INFORMATION'),
+         'struct PROCESS_INFORMATION; typedef PROCESS_INFORMATION *LPPROCESS_INFORMATION;',
+         '''struct _PROCESS_INFORMATION {
+    HANDLE hProcess, hThread;
+    DWORD dwProcessId, dwThreadId;
+};
+typedef _PROCESS_INFORMATION PROCESS_INFORMATION;
+typedef PROCESS_INFORMATION *PPROCESS_INFORMATION, *LPPROCESS_INFORMATION;'''),
+        (('_STARTUPINFOA', 'STARTUPINFOA', 'LPSTARTUPINFOA'),
+         'struct STARTUPINFOA; typedef STARTUPINFOA *LPSTARTUPINFOA;',
+         '''struct _STARTUPINFOA {
+    DWORD cb;
+    LPSTR lpReserved, lpDesktop, lpTitle;
+    DWORD dwX, dwY, dwXSize, dwYSize, dwXCountChars, dwYCountChars;
+    DWORD dwFillAttribute, dwFlags;
+    WORD wShowWindow, cbReserved2;
+    LPBYTE lpReserved2;
+    HANDLE hStdInput, hStdOutput, hStdError;
+};
+typedef _STARTUPINFOA STARTUPINFOA;
+typedef STARTUPINFOA *LPSTARTUPINFOA;'''),
+        (('_cpinfo', 'CPINFO', 'LPCPINFO'),
+         'struct CPINFO; typedef CPINFO *LPCPINFO;',
+         '''struct _cpinfo {
+    UINT MaxCharSize;
+    BYTE DefaultChar[2];
+    BYTE LeadByte[12];
+};
+typedef _cpinfo CPINFO;
+typedef CPINFO *LPCPINFO;'''),
+    ]
+    for names, forward, definition in records:
+        if not any(re.search(r'\b' + name + r'\b', view + ' ' + signature) for name in names):
+            continue
+        blocked = any(name in identifiers or
+                      re.search(r'\btypedef\b[^;{}]*\b' + name + r'\s*;', view) or
+                      re.search(r'\b(?:struct|class|union)\s+' + name + r'\s*[{:]', view) or
+                      re.search(r'#\s*(?:define|undef)\s+' + name + r'\b', view) or
+                      re.search(r'\b' + name + r'\s*\(', view) for name in names)
+        if not blocked:
+            preamble = preamble.replace(forward, definition)
+    return preamble
 
 
 def com_interface_types(preamble, view, signature, identifiers):
@@ -1534,6 +1595,9 @@ def fit_convention(conv, params, popped, has_this):
     """
     if popped is None:
         return conv, params
+    if popped % 4:
+        raise ValueError('Non-DWORD return cleanup %d cannot be represented by the generated i386 C++ ABI; '
+                         'entry and prototype remain unverified' % popped)
     fixed = {'__thiscall': 1, '__fastcall': 2}.get(conv, 0) if has_this or conv == '__fastcall' else 0
     stack = params[fixed:]
     if popped == 0 and conv == '__stdcall' and stack:
