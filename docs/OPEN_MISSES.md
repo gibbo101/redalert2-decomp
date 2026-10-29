@@ -404,3 +404,12 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   of line; keep Click under auto_inline(off) or Choose_Territory stops matching), Hover 0x72E650 exact only as
   `true ? TheMap->Get_Territory(x) : rc_ptr<Territory>()` (refused as steering; the original zeroes a temporary-
   construction flag and copies the result: find a natural form). Undrafted: ctor 0x72D560, Show_State 0x72E780.
+- Session.CPP after Session194 (build/class-work/Session194, NOTES): Create_Connections 0x66EE50 99.09; Set_Official
+  0x6720AF (inventory starts on a nop; real entry 0x6720B0: needs a bound decision); MultiMission ctor 0x671C50 (body
+  runs to 0x671F00; emits the DVC<Wstring> vtable so 0x674850/0x674AF0 join the unit; 0x671670 depends on it).
+  Undrafted: 0x672440, 0x673090, ctor 0x66E380, dtor 0x66EB20, 0x66F3A0, 0x6707D0, 0x670C50, 0x66FF90(+0x670061).
+- House.CPP after House197 (build/class-work/House197, NOTES): Zone_Cell 0x4EAF30 exact (f/, body_bytes 828), landable
+  now that acceptance strips the 8D 49 00 fill; AI 0x4E4110 99.32 (two ebx/ebp choices), Check_Raise_Money 0x4E8D80
+  84.60 (vector pointer kept in eax across the Factories loop), Expert_AI 0x4E8990 62.21. Begin_Production 0x4E5E30
+  has four byte-indexed tables (~1464 B). 0x4F1E50/0x4F1FF0/0x4F2190 need the VectorClass<BuildingTypeClass*> ctor
+  0x4F8900 emitted by the House unit and its seed row retired, and call unrecovered 0x4EF740.

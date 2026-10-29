@@ -10,6 +10,7 @@
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ADD
+#define VECTOR_IMPLEMENT_VECTOR_CONSTRUCTOR
 #include "shared/vector_class.hpp"
 #include "shared/object.hpp"
 #include "shared/techno.hpp"
@@ -34,6 +35,18 @@ struct UnknownPointerList {
     int unknown_08;
     int unknown_0c;
     int Count;
+    // Removes the item at index, shifting the later ones down (inline in 0x006F7970).
+    bool Delete(int index)
+    {
+        if (index < Count) {
+            Count--;
+            for (int shift = index; shift < Count; shift++) {
+                Items[shift] = Items[shift + 1];
+            }
+            return true;
+        }
+        return false;
+    }
 };
 typedef void (__fastcall *UnknownVisit)(void *item, int argument);
 typedef bool (__fastcall *UnknownTest)(void *item, int argument);
@@ -57,11 +70,21 @@ inline void Show_Message(wchar_t const *text, int delay)
     unknown_messages_a3dc70.Add_Message(0, 0, text, color, 0x4046, delay, 1);
 }
 
-// The constructor of the techno list the command code builds (the
-// VectorClass part stays out of line, 0x0040BC10): empty, growing by 10.
+// The constructor of the techno list the command code builds: empty, growing by 10.
+// The VectorClass part is expanded inline in the small functions and called
+// (0x0040BC10) in the larger ones.
 template <>
 inline DynamicVectorClass<TechnoClass *>::DynamicVectorClass(unsigned size, TechnoClass *const *array)
     : VectorClass<TechnoClass *>(size, array)
+{
+    GrowthStep = 10;
+    ActiveCount = 0;
+}
+
+// The same for the name lists (DynamicVectorClass<char const *>).
+template <>
+inline DynamicVectorClass<char const *>::DynamicVectorClass(unsigned size, char const *const *array)
+    : VectorClass<char const *>(size, array)
 {
     GrowthStep = 10;
     ActiveCount = 0;
