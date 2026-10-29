@@ -45,10 +45,6 @@ public:
     bool unknown_4f2a;                                          // +0x4F2A drag-select in progress
 };
 
-// user32 mouse capture (not yet in shared/win32_api.hpp).
-WIN32_IMPORT HWND WINAPI GetCapture();
-WIN32_IMPORT BOOL WINAPI ReleaseCapture();
-
 // Unidentified flag tested by the scroll slots (0x00A40D44).
 // Mouse shape size flag passed to Set_Default_Mouse (0x0083740C).
 

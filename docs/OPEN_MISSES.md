@@ -499,3 +499,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - SerialEd.cpp after Scenario216 (build/class-work/Scenario216/open, NOTES): Fill_Port 0x66D5A0 71.93 (this/SendMessageA
   ebp/ebx swap; original pushes all four callee-saved registers in the prologue), Read_Custom_Port 0x66DB50 83.04.
   Clear_Scenario note: the inlined check is unsigned (cmp esi,0x802; jae) while the loop test is signed (jl).
+- Small units after Small217/Small218 (build/class-work/Small217, Small218, NOTES): Options_Menu_Proc 0x4DD8A0 86.53 (first
+  latency timer ctor inlines; original calls 0x4DE1E0), LdPrgMgr 0x5359E0 61.74 / 0x535AB0 69.16 (registers), WorldDom
+  Mouse_Move 0x768840 64.00 (soviet block before allied). Startup.CPP is WinMain 0x68E280 (~10 KB, EH frame) and shutdown
+  0x6909E0 (2345 B): each needs its own lane. LdPrgMgr 0x535BF0 is one 3978 B function (inventory splits it).

@@ -150,6 +150,9 @@ WIN32_IMPORT BOOL WINAPI DestroyWindow(HWND window);
 WIN32_IMPORT LRESULT WINAPI SendDlgItemMessageA(HWND dialog, int id, UINT message, WPARAM wparam, LPARAM lparam);
 WIN32_IMPORT BOOL WINAPI ShowWindow(HWND window, int command);
 WIN32_IMPORT BOOL WINAPI EnableWindow(HWND window, BOOL enable);
+WIN32_IMPORT HWND WINAPI SetCapture(HWND window);
+WIN32_IMPORT HWND WINAPI GetCapture();
+WIN32_IMPORT BOOL WINAPI ReleaseCapture();
 #define FALSE 0
 #define TRUE 1
 #define SW_HIDE 0
