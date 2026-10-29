@@ -4,8 +4,8 @@
     "id": "population-2915",
     "inventory_sha256": "1b857ed3c68cb240e5d306008bfe9f71ea54fb81cf55637dc15a8cfbf1e2f25f",
     "gaps_sha256": "1ea14ceaa1f1a29b40228b4a952d498af269b8df4f7fe2731a2a80bc2930a76c",
-    "historical_population_sha256": "b818b752cfd00beeb1fb1b7c9028b6c7f7bfbc88af575cb1c0d6949583d4f7bc",
-    "historical_acceptance_sha256": "721d30a99da1313e32c8c17908f91fda2bfd3fc3a94c60ed3016b5b870712b1b"
+    "historical_population_sha256": "42dcf34cd3e059bfdf5c5dca2213b45230692a125f83d091ede5829df59b0607",
+    "historical_acceptance_sha256": "a63d3b9c5e9379511b650c39dc8810937ccfce53a2e52c9b24ab1addb67f46df"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1547,7 +1547,7 @@
     "?unknown_slot116@MissionClass@@UAEXH_N@Z": 5852336,
     "?unknown_slot119@FootClass@@UAEXHHH@Z": 5012160,
     "?unknown_slot299@FootClass@@UAEPAVTechnoClass@@PBV?$DynamicVectorClass@PAVTechnoTypeClass@@@@HH@Z": 5036320,
-    "?unknown_6d1510@TechnoClass@@QAEXPBXHPBUPoint2D@@PBVRect@@HHHHHHHHHHH@Z": 7148816,
+    "?unknown_6d1510@TechnoClass@@QAEXPBXHPBUPoint2D@@PBVRect@@HHHHHHHHU2@H@Z": 7148816,
     "_CLSID_AircraftClass": 8002512,
     "??1AircraftClass@@UAE@XZ": 4275616,
     "?Aircraft_Velocity_Zero_0079b610@@3NB": 7976464,
@@ -5278,7 +5278,7 @@
     "?unknown_slot291@InfantryClass@@UAE_NXZ": 5262048,
     "?unknown_slot292@BuildingClass@@UAEHXZ": 4510672,
     "?unknown_slot292@FootClass@@UAE_NXZ": 5022384,
-    "?unknown_slot293@FootClass@@UAEXPBXHPBUPoint2D@@PBVRect@@HHHHHHHHHHH@Z": 4306064,
+    "?unknown_slot293@FootClass@@UAEXPBXHPBUPoint2D@@PBVRect@@HHHHHHHHU2@H@Z": 4306064,
     "?unknown_slot294@FootClass@@UAEXXZ": 4306160,
     "?unknown_slot294@InfantryClass@@UAEXXZ": 5278960,
     "?unknown_slot295@FootClass@@UAEXXZ": 4306176,
@@ -17109,7 +17109,7 @@
     {
       "entry": 4306064,
       "method": "0041b490",
-      "symbol": "?unknown_slot293@FootClass@@UAEXPBXHPBUPoint2D@@PBVRect@@HHHHHHHHHHH@Z",
+      "symbol": "?unknown_slot293@FootClass@@UAEXPBXHPBUPoint2D@@PBVRect@@HHHHHHHHU2@H@Z",
       "symbol_prefix": "?unknown_slot293@FootClass@@",
       "options": [
         "/O2",
@@ -17126,13 +17126,13 @@
         {
           "offset": 76,
           "kind": 20,
-          "symbol": "?unknown_6d1510@TechnoClass@@QAEXPBXHPBUPoint2D@@PBVRect@@HHHHHHHHHHH@Z",
+          "symbol": "?unknown_6d1510@TechnoClass@@QAEXPBXHPBUPoint2D@@PBVRect@@HHHHHHHHU2@H@Z",
           "target": 7148816,
           "addend": 0,
           "resolved": 2842672
         }
       ],
-      "source_sha256": "2e4a300f4dd0f6a5aedad99b0c02ca433ee2a18fe101602e2ee68fbb9f9cb1ce",
+      "source_sha256": "875685db0a166fd78f38c559cc4af28033bec2d2a6ad8aaab99a4d9691e4de99",
       "source": "src/recovered/classes/FootClass/FootClass_unknown_slot293_0041b490.cpp",
       "population": "population-2915",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",

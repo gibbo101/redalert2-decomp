@@ -573,10 +573,11 @@ public:
     bool Unknown_006D8640(WeaponStruct *weapon);                // 0x006D8640 (InfantryClass slot 137)
     void unknown_6c8300();                                      // 0x006C8300
     void unknown_6d7f30();                                      // 0x006D7F30
-    // Draws a shape frame (0x006D1510; ret 0x3C, fifteen arguments; names
-    // hypotheses; BuildingClass slot 68).
+    // Draws a shape frame (0x006D1510; ret 0x3C, fifteen argument words; names
+    // hypotheses; BuildingClass slot 68). Words 13 and 14 are a Point2D passed
+    // on by value as CC_Draw_Shape's last argument.
     void unknown_6d1510(void const *shape, int drawer, Point2D const *point, Rect const *bounds, int arg5, int arg6,
-                        int z, int arg8, int arg9, int height, int arg11, int arg12, int arg13, int arg14, int arg15);
+                        int z, int arg8, int arg9, int height, int arg11, int arg12, Point2D offset, int arg15);
     int unknown_6d86f0(int value);                              // 0x006D86F0 (adjusts the slot 254 value when slot 203 holds; BuildingClass slot 79)
     void unknown_6cdc00(HouseClass *house);                     // 0x006CDC00 (sets House; +0x372 when it is the player's)
     void unknown_6d95a0(UnknownCellClass *cell);                // 0x006D95A0
