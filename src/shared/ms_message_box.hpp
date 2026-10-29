@@ -17,14 +17,13 @@
 #include "shared/wwmouse.hpp"
 #include "shared/win32_api.hpp"
 #include "shared/ww_message_box.hpp"
+#include "shared/dialog_create.hpp"
 
-typedef int (WINAPI *DialogProc)(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 
 int __stdcall Message_Box_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);           // 0x005B48C0
 void __fastcall Message_Box_Command(HWND window, int id, HWND control, unsigned code);                             // 0x005B4980
 
 
-HWND __fastcall unknown_create_dialog_5ff610(int resource, DialogProc proc, int unknown3);  // 0x005FF610
 // The WM_INITDIALOG lparam of a dialog that 0x005FF610 creates: the resource id and its third
 // argument (the WDT faction dialog proc 0x007689C0 keeps Param as its DWL_USER value).
 struct UnknownDialogCreateParam {
@@ -47,7 +46,6 @@ void __fastcall unknown_dialog_5ff6e0(HWND window);                             
 int __fastcall unknown_dialog_proc_5ffb00(HWND window, UINT message, WPARAM wparam, LPARAM lparam);  // 0x005FFB00
 // A dialog procedure: the common handler first, then WM_COMMAND from controls 0x5C0-0x5C1 stores the id in *DWL_USER (0x00600D50).
 int __stdcall unknown_choice_dialog_proc_600d50(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
-bool unknown_6000d0();                                                               // 0x006000D0 ends the wait when true
 void __fastcall unknown_5115f0(HWND dialog);                                       // 0x005115F0 (0x005EAB60 with its flag)
 void __fastcall unknown_517370(bool unknown1);                                       // 0x00517370 idle step
 bool __fastcall unknown_moving_736d80(HWND window, WPARAM wparam, LPARAM lparam);    // 0x00736D80 WM_MOVING

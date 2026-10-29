@@ -304,7 +304,7 @@
       },
       {
         "path": "src/shared/theme.hpp",
-        "sha256": "db18b325295e04588e040ef0d8b795e9ba93a9f327656648d9c91a8fb86585cd"
+        "sha256": "3459928bbfcf1bffa711c73c0883fa1fed386c887d277bbbd6e8318b884777e7"
       },
       {
         "path": "src/shared/ms_choice.hpp",
@@ -312,7 +312,7 @@
       },
       {
         "path": "src/shared/ms_message_box.hpp",
-        "sha256": "1148a7a72e8009c5a71a09c1c8eed5dddfe95a15bb826cfd32f7cce940d8e84a"
+        "sha256": "19a6ccd428c5e331cf037c2516f55aa7403207d0ac945ef51701a2563206d567"
       },
       {
         "path": "src/shared/wide_string.hpp",
@@ -616,7 +616,7 @@
       },
       {
         "path": "src/shared/wol_sink.hpp",
-        "sha256": "1d8882da4fb7554472b1cd1bd38d837ebec0399d30767516473f8573c3a9f1fa"
+        "sha256": "802d19ba77816416b8ae482ec01e1079933533b4a303bf286c2f3c32ef8a9042"
       },
       {
         "path": "src/shared/house_screen.hpp",
@@ -1833,6 +1833,10 @@
       {
         "path": "src/shared/windows_version.hpp",
         "sha256": "3b78bf070d19aeb1ce5991973ce5483808138980f676f6998860c927bf1d8a55"
+      },
+      {
+        "path": "src/shared/dialog_create.hpp",
+        "sha256": "420aee7b1dda137c98c3f74e7fdf9070f036c68c089022460405119bf30759e3"
       }
     ],
     "source_quality_checkpoint": {
@@ -4893,7 +4897,8 @@
     "population-3047",
     "population-3048",
     "population-3049",
-    "population-3050"
+    "population-3050",
+    "population-3051"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -8166,7 +8171,7 @@
     ["population-3027", 21],
     ["population-3028", 3],
     ["population-3043", 1],
-    ["population-3030", 13],
+    ["population-3051", 13],
     ["population-3031", 2],
     ["population-3032", 1],
     ["population-3033", 1],
@@ -8181,7 +8186,8 @@
     ["population-3043", 1],
     ["population-3044", 12],
     ["population-3049", 1],
-    ["population-3050", 2]
+    ["population-3050", 2],
+    ["population-3051", 16]
   ],
   "shards": {
     "population-01": "e43a49efdf90ecf070577c1bcfdef91c7f1c1ceb501cbcc4335bd3dc3695d7b4",
@@ -10448,7 +10454,7 @@
     "population-3028": "b325fd66242550c84545f43a76cac1604d4a66e37bd5cf409bc8454454d51c8c",
     "population-3029": "55a1bd6627b780c82a23c18b5a86057c7f83bf0471b6f8f15533883aecb9e785",
     "population-303": "5d1428372c40f9f704229cb1e37f8b8ee79e0910204a2ac77fe00e46bc21ef89",
-    "population-3030": "e6754c09facc737a5f9f82f60503f150c51ff6125f51348322707e9d48761036",
+    "population-3030": "c4baaf74e6f4c3d7496add225fd216ce6f121786e932b448677322a6150565e6",
     "population-3031": "f0bacbd5b6f829603d9353b0a3acf42a8b31542f0a050637b6aa1f1e965a207c",
     "population-3032": "1511f28a3bc01fb2b5771d14cdec04b28260375ea2157a6ed412ac14bb9abac0",
     "population-3033": "910994639ff52ec59435a5bdb45106a03721b98bd393e5269649fd65c785b980",
@@ -10471,6 +10477,7 @@
     "population-3049": "be19499b8158aacc8f45083388f9235c780abe6e092809a3ed8dcf581f57019f",
     "population-305": "f65430f7380049c25af269410e30338dcf561d296f672df2ffa84f0cb734ae8e",
     "population-3050": "22734692dec6aa8dbc1cc24e3c92461d8924293b7a16c8bd60e78939a68a4c8f",
+    "population-3051": "872ceb1a55963c2125d1713965069c2058a4934a5f7cc0daa218afcacc51e35f",
     "population-306": "2a47ba376e73a9feea127c6aab0aa6e3f98771215c1fd7410927f7bb3cd051e8",
     "population-307": "68616d2eba67608c9d15e74bc50896f1fbdb5c8c0881ce3e62d2afa918a4d823",
     "population-308": "1839ed424691afb67ec35e33e2bb7bdd9791d9180e69e0aab4af8fdf56cb8eba",

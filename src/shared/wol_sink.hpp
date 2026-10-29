@@ -23,6 +23,8 @@
 #include "shared/string_table.hpp"
 #include "shared/wstring.hpp"
 #include "shared/wide_string.hpp"
+#include "shared/system_timer.hpp"
+#include "shared/cd_timer.hpp"
 
 #include "shared/debug_printf.hpp"
 #include "shared/pcx_cache.hpp"
@@ -64,7 +66,11 @@ struct Ladder {
 
 struct Channel {
     int unknown_00;
-    char unknown_04[0x28 - 4];
+    char unknown_04[0x14 - 4];
+    int unknown_14;                     // +0x14
+    char unknown_18[0x20 - 0x18];
+    unsigned int unknown_20;            // +0x20 flags (OnGameStart keeps the low byte; bits 8, 11, 12 tested by 0x0073C340..0x0073C400)
+    char unknown_24[0x28 - 0x24];
     int ping;
     int unknown_2c;
     Channel *next;
@@ -93,7 +99,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot21() = 0;
     virtual void __stdcall unknown_slot22() = 0;
     virtual HRESULT __stdcall Game_Icon(long id, long format, void **bitmap, void **palette, int *width, int *height) = 0;
-    virtual void __stdcall unknown_slot24() = 0;
+    virtual HRESULT __stdcall unknown_slot24(User *user) = 0;   // OnBuddyList: a zeroed User with the name
     virtual void __stdcall unknown_slot25() = 0;
     virtual void __stdcall unknown_slot26() = 0;
     virtual void __stdcall unknown_slot27() = 0;
@@ -289,6 +295,9 @@ extern int unknown_color_7a736c;        // 0x007A736C (private action colour)
 extern int unknown_color_7a7370;        // 0x007A7370 (public action colour)
 extern int unknown_color_7a7364;        // 0x007A7364 (public message colour)
 extern int unknown_color_7a7374;        // 0x007A7374 (public message colour for users with flag bit 0)
+extern int unknown_color_7a7378;        // 0x007A7378 (page colour)
+// The nick of the last user who paged us (0x00B2AC48; /reply target hypothesis).
+extern char unknown_last_pager_b2ac48[];
 extern int unknown_color_7a7368;        // 0x007A7368 (private message colour)
 void __fastcall Unknown_0075B910(char const *message, bool arg2);   // 0x0075B910 (in-game message)
 extern int unknown_b2a7e8;              // 0x00B2A7E8
@@ -590,6 +599,16 @@ public:
         return false;
     }
     bool Insert(Wstring const &text, int index); // original complete method 0x007679c0
+    bool Get_007662c0(Wstring &text, int index); // out of line in wonline.cpp (accepted unowned 0x007662C0)
+    void Add(Wstring const &text) {
+        int index = Count;
+        if (index > Count) index = Count;
+        if (index >= Capacity) Grow_00768320();
+        if (Count >= Capacity) Grow_00768320();
+        if (index < Count) memmove(Items + index + 1, Items + index, (Count - index) * sizeof(Wstring));
+        new (Items + index) Wstring(text);
+        ++Count;
+    }
     void Prepend(Wstring const &text) {
         int index = 0;
         if (index > Count) index = Count;
@@ -894,6 +913,52 @@ extern WolStringArray unknown_strings_b29000;
 extern WolStringArray unknown_strings_b26920;
 extern WolStringArray unknown_strings_b29838;
 extern WolStringArray unknown_strings_b2a7d8;
+// The buddy name whose request is in flight (0x00B26944) and the time it was sent (0x00B2A7F8).
+extern Wstring unknown_wstring_b26944;
+extern unsigned long unknown_b2a7f8;
+// The lobby names (0x00B26C94; "Lob_33_<n>" channels show names[n % 8], with " <n / 8 + 1>" past the first eight).
+extern char *unknown_lobby_names_b26c94[8];
+// The display name of the channel a user was kicked from (0x00B2B3C0; written, never read).
+extern char unknown_kick_channel_b2b3c0[64];
+extern int unknown_b2abec;              // 0x00B2ABEC (OnGameStart: the game channel's +0x20 low byte; OnUserKick counts kick popups)
+// The general WOnline timer (0x00B292E8; OnPaged restarts it at 300, OnGameStart at 0).
+extern CDTimerClass<SystemTimerClass> unknown_timer_b292e8;
+// A copy of a user list entry (0x00B2A658; Unknown_0074DA60 returns it).
+extern WOL::User unknown_user_b2a658;
+extern bool unknown_b2ac45;             // 0x00B2AC45 (a game has started)
+extern bool unknown_b2ac44;             // 0x00B2AC44
+extern bool unknown_b2ac04;             // 0x00B2AC04
+extern int unknown_b2ac40;              // 0x00B2AC40 (2 once a game starts)
+extern int unknown_login_state_00b2abe4;   // 0x00B2ABE4
+extern unsigned int unknown_protocol_7fd370;   // 0x007FD370
+extern int unknown_b2668c;              // 0x00B2668C (0x2300 when a game starts)
+extern int unknown_b299d4;              // 0x00B299D4 (unknown_b299c0 +0x14)
+extern unsigned int unknown_b299e0;     // 0x00B299E0 (unknown_b299c0 +0x20)
+extern Wstring unknown_wstring_b26cb8;
+extern char unknown_b2a808[];           // 0x00B2A808 (the first user's name when the game starts)
+extern long unknown_game_start_time_b2a638;   // 0x00B2A638
+extern char unknown_session_a3fc54[];   // 0x00A3FC54 (session +0x29BC)
+extern int unknown_session_a40054;      // 0x00A40054 (session +0x2DBC)
+void __fastcall Unknown_0074d7d0(WOL::User *users);
+// Opens a web page (0x0073C580; the second argument is unknown).
+void __fastcall unknown_open_url_73c580(char const *url, int arg2);
+extern int unknown_b2ac5c;              // 0x00B2AC5C (a language code: the registration page LANGCODE)
+// The dialog procedure of dialog 0xCF (0x007485D0).
+int WINAPI Unknown_Dialog_Proc_007485d0(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+// Channel tests of a game mode 4 session (0x0073C340..0x0073C400; false in other modes): +0x14 set or
+// flag bit 8 (of a channel, of the current game channel unknown_b299c0), flag bit 8, 11 or 12 of a channel.
+// The current game channel (0x00B299C0; unknown_b299c0 is its first word, unknown_b299d4/e0 its +0x14/+0x20).
+extern WOL::Channel unknown_game_channel_b299c0;
+bool __fastcall Unknown_0073c340(WOL::Channel const *channel);
+bool Unknown_0073c370();
+bool Unknown_0073c3a0();
+bool __fastcall Unknown_0073c3c0(WOL::Channel const *channel);
+bool __fastcall Unknown_0073c3e0(WOL::Channel const *channel);
+bool __fastcall Unknown_0073c400(WOL::Channel const *channel);
+int __fastcall Unknown_0074e070(void *unknown);
+// Whether a nick is acceptable (0x00756790; hypothesis).
+bool __fastcall Unknown_00756790(Wstring const &name);
+void Unknown_00757380();                                 // 0x00757380
 extern WolStringArray unknown_strings_b29980;
 extern WolChannelNameSet unknown_channel_names_b293a0;
 extern WolLadderCache *unknown_ladder_cache_b2ac24;
@@ -908,6 +973,8 @@ WIN32_IMPORT BOOL WINAPI KillTimer(HWND window, unsigned int id);
 #include "shared/unknown_player_entry.hpp"
 // WOnline non-polymorphic array: Count +0, Capacity +4, Items +8.
 // WolUserArray is a descriptive recovery name; original template spelling is unknown.
+// The user list order (0x007416D0): more of flags bits 0 (x4) and 1 (x2) first, then _stricmp of the names.
+int __fastcall Compare_Users_007416d0(WOL::User const &left, WOL::User const &right);
 class WolUserArray {
 public:
     WolUserArray() : Count(0), Capacity(0), Items(0) {}
@@ -921,6 +988,53 @@ public:
     bool Get(WOL::User *&user, int index) const {
         if (index >= 0 && index < Count) { user = Items + index; return true; }
         return false;
+    }
+    // Inline forms (the out-of-line COMDATs above are the same bodies where a caller did not inline them).
+    bool Get_Copy(WOL::User &user, int index) const {
+        if (index >= 0 && index < Count) { user = Items[index]; return true; }
+        return false;
+    }
+    bool Grow() {
+        if (Count < Capacity) return false;
+        int capacity = Count * 2;
+        if (capacity < 10) capacity = 10;
+        WOL::User *items = (WOL::User *)operator new(capacity * sizeof(WOL::User));
+        memset(items, 0, capacity * sizeof(WOL::User));
+        if (Items) memcpy(items, Items, Count * sizeof(WOL::User));
+        operator delete(Items);
+        Items = items;
+        Capacity = capacity;
+        return true;
+    }
+    bool Insert(WOL::User const &user, int index) {
+        if (index > Count) index = Count;
+        if (index >= Capacity) Grow();
+        Grow();
+        if (index < Count) memmove(Items + index + 1, Items + index, (Count - index) * sizeof(WOL::User));
+        new (Items + index) WOL::User(user);
+        ++Count;
+        return true;
+    }
+    bool Remove(int index) {
+        if (Count == 0) return false;
+        if (index < 0) index = 0;
+        if (index >= Count) index = Count - 1;
+        memmove(Items + index, Items + index + 1, (Count - (index + 1)) * sizeof(WOL::User));
+        --Count;
+        if (Count * 3 <= Capacity) Shrink_00766f00();
+        return true;
+    }
+    // Inserts a copy of user (unlinked) before the first entry it sorts before (0x007416D0 order).
+    void Add_Sorted(WOL::User const &user) {
+        int index = Count;
+        WOL::User other;
+        for (int i = 0; i < Count; ++i) {
+            Get_Copy(other, i);
+            if (Compare_Users_007416d0(user, other) < 0) { index = i; break; }
+        }
+        WOL::User entry = user;
+        entry.next = 0;
+        Insert(entry, index);
     }
     int Find_Name(Wstring const &name) const {
         WOL::User *user = 0;
@@ -963,6 +1077,15 @@ extern int unknown_icon_format_7fd304;
 extern Wstring unknown_motd_b26954;
 extern HANDLE unknown_b26500;
 extern HANDLE unknown_b264f8;
+// The text of a dialog item (0x00757CC0; name hypothesis).
+Wstring __fastcall Unknown_00757cc0(HWND item);
+// Sends text to a dialog control with message 0x4B4 (WM_USER + 0xB4; the page dialogs' reply line, hypothesis).
+inline void Set_Edit_Text(HWND edit, Wstring const &text)
+{
+    SendMessageA(edit, 0x4b4, 0, (LPARAM)text.Peek_Buffer());
+}
+// The procedure of the page reply dialog 0x11E (0x00757D80).
+int WINAPI Page_Dialog_Proc_00757d80(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 extern HANDLE unknown_b26530;           // 0x00B26530 (set when the local user's locale or team arrives)
 extern HANDLE unknown_b2651c;           // 0x00B2651C (set when a net status arrives while disconnecting)
 extern HRESULT unknown_net_status_b2ac00;   // 0x00B2AC00 (that net status)

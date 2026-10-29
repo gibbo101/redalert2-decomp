@@ -39,6 +39,7 @@ public:
     char const *Name(int theme) const;      // 0x006E8570 (the theme's INI name; "none" out of range)
     void Unknown_006E7A70();                // 0x006E7A70 (frees every theme record; Prog_End)
     void Set_Volume(int volume);            // 0x006E8590 (at most 255)
+    bool Still_Playing() const;             // 0x006E82D0 (name after Red Alert's ThemeClass)
 
     ThemeType Current;      // +0x00 playing theme
     ThemeType Score;        // +0x04 theme that should be playing

@@ -570,3 +570,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   of color in the original; 0x5FE020 also needs a rename: int return, ECX surface, EDX text, retypes 0x536D30). 0x600460
   exact only as an inline (needs an out-of-line caller). The 0x200 record is modelled three ways (UnknownControlRecord,
   UnknownListOwner_00600350, UnknownNodeList_006003d0): merge by rename spec. Population-1646 fails as one composite.
+- netdlg2.cpp/netshare.cpp after Netdlg240 (NOTES unit table: netdlg2 0x5BBB20-0x5C29B0 has 7 large fns / 17.8 KB left,
+  all plateaus; netshare 0x5C29B0-0x5CDB40 23 fns / 25 KB; nullconn.cpp 0x5CDB40-0x5CDD10). Its netshare plan was
+  refused: LobbyNameSet Shrink/Grow wrapper functions under auto_inline(off) (the original inlines Grow_Table in
+  Save_List_Selection). Misses: Save_List_Selection 0x5C5FF0 94.01, 0x5C34F0 97.37, 0x5CB560 7 bytes off.

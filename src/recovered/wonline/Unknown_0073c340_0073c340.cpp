@@ -1,0 +1,11 @@
+// Channel test of a game mode 4 session (false in any other mode).
+#include "shared/wol_sink.hpp"
+#include "shared/session_state.hpp"
+// @ref ?unknown_game_channel_b299c0@@3UChannel@WOL@@A=00b299c0
+
+// 0x0073C340: the channel's +0x14 is set or its flag bit 8.
+bool __fastcall Unknown_0073c340(WOL::Channel const *channel)
+{
+    if (unknown_session_a3d298.Type != 4) return false;
+    return channel->unknown_14 || Unknown_0073c3c0(channel);
+}
