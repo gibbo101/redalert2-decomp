@@ -70,8 +70,6 @@ void __fastcall Unknown_00626FA0(HWND list);
 // Records a kick vote of player id against the connection index and shows it in the
 // reconnect dialog (0x00627210; trace "Player %s votes to kick player %s").
 void __fastcall Unknown_00627210(int id, int index);
-// Adds a line to a dialog list box (0x005C2DA0; hypothesis: color -1 is the default).
-void __fastcall Unknown_005C2DA0(int color, wchar_t const *text, HWND list);
 // Reconnects a modem game (0x005CEB40; Red Alert's Reconnect_Modem).
 bool Reconnect_Modem();
 
@@ -88,22 +86,7 @@ void __fastcall Unknown_0062E5C0(UnknownFrameTiming *their, int index);
 // Puts a local event at the head of DoList for the next send frame; TXT_QUEUE_FULL
 // ends a multiplayer game when it is full (0x0062E6E0).
 void __fastcall Unknown_0062E6E0(EventClass *event);
-// A global network packet (0x1C7 bytes, packed: Unknown_00627190 copies that many;
-// Send_Port_Unreachable sends its first 0x2F; Red Alert's GlobalPacketType, the
-// name RTTI gives the session's packet list DynamicVectorClass<GlobalPacketType *>).
-#pragma pack(push, 1)
-struct UnknownGlobalPacket {
-    int Command;                        // +0x00
-    char Name[0x2F - 4];                // +0x04
-    union {
-        char unknown_2f[0x1C7 - 0x2F];
-        struct {
-            int Kickee;                 // +0x2F the id of the player proposed for a kick
-            int Proposer;               // +0x33 the id of the player who proposes it
-        } Kick;                         // command 0x1C (Propose_Kick_Player)
-    };
-};
-#pragma pack(pop)
+// UnknownGlobalPacket (Red Alert's GlobalPacketType) is in shared/unknown_globals.hpp.
 // Proposes to kick the player at a list index from the reconnect dialog: refused for the
 // player himself and in game mode 4 while unknown_b2a7ec is set (0x00626FE0; named by its trace).
 void __fastcall Propose_Kick_Player(HWND dialog, int index);
@@ -244,12 +227,10 @@ void __fastcall Unknown_00626CB0(HWND dialog);
 // The reconnect dialog's window procedure (0x00627350): the kick buttons, a
 // once-a-second ping in game mode 4, and WM_USER + 0x97 to set it up.
 BOOL __stdcall Unknown_00627350(HWND dialog, UINT message, WPARAM wparam, LPARAM lparam);
-// The dialog helpers it calls (0x005B6000 on setup, 0x005B6060 on WM_DESTROY,
-// 0x005FEE70 before painting and 0x005FE380 for WM_DRAWITEM; hypotheses).
+// The dialog helpers it calls (0x005B6000 on setup, 0x005B6060 on WM_DESTROY, and 0x005FEE70 /
+// 0x005FE380, declared in shared/unknown_globals.hpp; hypotheses).
 void __fastcall Unknown_005B6000(HWND dialog);
 void __fastcall Unknown_005B6060(HWND dialog);
-void __fastcall Unknown_005FEE70(HWND dialog);
-void __fastcall Unknown_005FE380(LPARAM item);
 
 // The queue processing of a frame: playback, single player or multiplayer (0x00623770).
 void __fastcall Queue_AI();

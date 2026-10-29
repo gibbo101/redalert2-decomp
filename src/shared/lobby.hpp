@@ -28,9 +28,10 @@ extern NodeNameType *unknown_hard_ai_entry_a72d3c;
 extern NodeNameType *unknown_waiting_entry_a72d40;
 // The slot before the table (0x00A3FA94; -1 after a reset).
 extern int unknown_lobby_a3fa94;
-// Two lobby words cleared by a reset (0x00A728E4, 0x00A72734).
-extern unsigned short unknown_lobby_a728e4;
-extern unsigned short unknown_lobby_a72734;
+// The slot names as Unknown_Slot_Names_005c8cf0 writes them (0x00A72734) and their previous value
+// (0x00A728E4); a reset empties both, 0x005CA000 compares them (lengths not recovered).
+extern wchar_t unknown_slot_names_old_a728e4[];
+extern wchar_t unknown_slot_names_a72734[];
 // The object at 0x00A3D2B0 (session +0x18) and its member 0x00672810 (hypothesis).
 class UnknownLobbyState {
 public:
@@ -248,11 +249,12 @@ bool Lobby_Dialog_Update_005c67c0();
 void __fastcall Open_Lobby_Dialog_005c6960(HWND parent);
 extern HWND unknown_lobby_dialog_a728e0;
 // The dialog manager: creates a dialog from a template (0x00735700), prepares a created dialog
-// (0x005FF7E0) and runs a dialog's update callback (0x007359E0; the last three arguments unknown).
+// (0x005FF7E0) and runs a dialog's update callback (0x007359E0; the last three arguments unknown; it returns
+// the dialog's result, which 0x005C3230 returns).
 typedef long (__stdcall *UnknownDialogProc)(HWND window, unsigned message, unsigned wparam, long lparam);
 void *__fastcall unknown_create_dialog_735700(void *instance, int id, HWND parent, UnknownDialogProc procedure, long arg);
 void __fastcall unknown_show_dialog_5ff7e0(void *dialog, int id);
-void __fastcall Unknown_007359e0(HWND dialog, bool (*callback)(), int unknown_1, int unknown_2, int unknown_3);
+int __fastcall Unknown_007359e0(HWND dialog, bool (*callback)(), int unknown_1, int unknown_2, int unknown_3);
 // Shows each slot's status image: the host's (wolhost.pcx) for the host's own slot, the accepted
 // one (wolacpt.pcx) for computer slots and players that accepted, none otherwise (0x005C9EC0).
 void __fastcall Refresh_Slot_Images_005c9ec0(HWND dialog);
@@ -278,5 +280,97 @@ extern wchar_t unknown_lobby_map_name_a72a68[];
 bool Unknown_005bbd10();
 bool Unknown_0073e100();
 bool Unknown_0059c880();
+
+// Answers whether a slot's entry has accepted: a computer entry, or a player whose unknown_67 is 1
+// (0x005CA3B0).
+int __fastcall Is_Accepted_Slot_005ca3b0(int slot);
+// Refreshes the slots' flags, side and colour combo boxes; with full set first rebuilds the slot rows
+// (0x005CA6C0), else only redoes what changed since the last call: the status images, the slot names
+// (0x00A728E4 old, 0x00A72734 new), the countries and the colours (0x005CA000).
+void __fastcall Refresh_Slot_Settings_005ca000(HWND dialog, bool full);
+void __fastcall Unknown_005ca6c0(HWND dialog);
+// Writes the names of the eight slots' entries, each followed by a comma (0x005C8CF0).
+void __fastcall Unknown_Slot_Names_005c8cf0(wchar_t *list);
+// The World Online lobby's slot refresh (0x0075B0C0; game mode 4).
+void Unknown_0075b0c0();
+extern "C" wchar_t *__cdecl wcscpy(wchar_t *dest, wchar_t const *source);   // 0x00783689
+extern "C" int __cdecl sprintf(char *buffer, char const *format, ...);       // 0x007820F4
+extern "C" char *__cdecl strcpy(char *dest, char const *source);
+extern "C" char *__cdecl strcat(char *dest, char const *source);
+extern "C" int __cdecl strcmp(char const *first, char const *second);
+
+// Rotating hashes of a narrow and a wide name (0x005C2BA0, 0x005C2BF0; the WOL hash tables take their addresses).
+unsigned int __fastcall Hash_Name_005c2ba0(Wstring const &name);
+unsigned int __fastcall Hash_Wide_Name_005c2bf0(WideString const &name);
+// The first open dialog of 0xC2, 0xC9, 0xBC, 0xBD (0x005C2C40).
+HWND Find_Lobby_Window_005c2c40();
+// The session's game mode object, else the first registered mode (0x005C34D0).
+MultiplayerGameMode *Current_Game_Mode_005c34d0();
+// Runs slot 31 of the selected (dialog 0x6B) or the session's game mode (0x005C34F0).
+void __fastcall Unknown_005c34f0();
+// A lobby flag (0x00A3FAB8, session +0x2820) that 0x005C3C20 sets and 0x005C3C40 clears before running the
+// chat's (0x0075C980, 0x0075CA00) or the LAN's (0x005C28E0, 0x005C2940) handlers.
+extern bool unknown_lobby_flag_a3fab8;
+void Unknown_005c3c20();
+void Unknown_005c3c40();
+void Unknown_0075c980();
+void Unknown_0075ca00();
+void Unknown_005c28e0();
+void Unknown_005c2940();
+
+// The dialog manager's window before this one in its stack, 0 for none (0x007359B0; keys are windows here).
+int __fastcall unknown_previous_key(int key);
+extern "C" int __cdecl vswprintf(wchar_t *buffer, wchar_t const *format, char *arguments);   // 0x00783A58
+
+// Sends every other player a global packet 0x28 with the local nick name (0x005C3AE0); game mode 3 does
+// that and game mode 4 runs 0x0075C960 (0x005C3B70).
+void Unknown_005c3ae0();
+void Unknown_005c3b70();
+void Unknown_0075c960();
+// A plain lobby message dialog's procedure (0x005C33A0).
+long __stdcall Unknown_Dialog_Proc_005c33a0(HWND window, unsigned message, unsigned wparam, long lparam);
+
+// A window's wide text (0x00600E50).
+LRESULT __fastcall unknown_get_window_wide_text(HWND window, WideString &text);
+// An edit control's text limited for a lobby name: 0x78 characters, or for text that is not narrow the
+// run of characters up to 0x100 less one (at least 0x28); the control gets the shortened text, and the
+// result has trailing line breaks removed (0x005CCF50).
+WideString __fastcall Limit_Name_Text_005ccf50(HWND control);
+
+class HouseClass;
+// Counts the teams among the live houses (0x005C3150).
+int __fastcall Count_Teams_005c3150(HouseClass *exclude);
+
+// A list box item's wide text (0x00600F10).
+LRESULT __fastcall unknown_get_list_item_wide_text(HWND window, WPARAM index, WideString &text);
+// Adds a progress dot to the last line of the current dialog's chat list 0x53F (a new line after 0x24
+// characters) (0x005C3040).
+void __fastcall Add_Chat_Dot_005c3040();
+
+extern "C" wchar_t *__cdecl wcsncpy(wchar_t *dest, wchar_t const *source, unsigned int count);   // 0x00783622
+extern "C" wchar_t *__cdecl wcschr(wchar_t const *string, wchar_t character);                   // 0x00783AC6
+// The line buffer of Add_List_Text_005c2f20 (0x00A71EA8).
+extern wchar_t unknown_list_text_a71ea8[0x200];
+// Adds length characters of text (cut at the first line break) as a line of a list box, colour -1 the
+// default; the oldest line goes beyond 500, and the list stays scrolled to the bottom when it was (0x005C2F20).
+void __fastcall Add_List_Text_005c2f20(HWND list, wchar_t const *text, int length, int color);
+
+extern "C" unsigned int __cdecl wcslen(wchar_t const *string);     // 0x00783605
+// A button helper of the message box (0x005E8FA0; with the flag on the OK button).
+void __fastcall Unknown_005e8fa0(HWND button);
+// Shows a lobby message box with text and runs it with callback: kind 0 an OK button, 1 OK and Cancel, 4 Yes
+// and No (dialog 0x126; 0xD0, 0xFC and 0xFB otherwise, 0xFB with flag); 0 for no text, else the result
+// (0x005C3230).
+int __fastcall Message_Box_005c3230(wchar_t const *text, int kind, bool (*callback)(), bool flag);
+
+extern "C" wchar_t *__cdecl _wcsdup(wchar_t const *string);       // 0x00797033
+extern "C" void __cdecl free(void *block);                         // 0x007825E8
+extern "C" int __cdecl iswgraph(unsigned short character);          // 0x00784AE6 (ctype mask 0x117)
+
+// The fixed entries' display texts, loaded once (0x00A72D0C..0x00A72D24: GUI:Open, GUI:Closed, GUI:AIEasy,
+// GUI:AINormal, GUI:AIHard, GUI:Waiting, GUI:OpenObserver).
+extern wchar_t const *unknown_lobby_texts_a72d0c[7];
+// Loads those texts and makes each missing fixed entry with its text as the name (0x005C86E0).
+void __fastcall Init_Lobby_Entries_005c86e0();
 
 #endif

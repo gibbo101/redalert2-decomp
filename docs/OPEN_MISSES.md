@@ -345,3 +345,11 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   memset else-branch after the epilogue), Init_Rules 0x5129C0 45.98 (VectorClass<CCINIClass*> ctor 0x51E710 out of
   line with the Dynamic part inline; out-of-line INIClass ctor 0x51AD50 is unaccepted and needs its own row).
   Not started: 0x5147A0 (1842), 0x5135F0 (4356), 0x5116A0 (4420), 0x5173C0 (7807).
+- ModemHst.cpp after Modem182 (build/class-work/Modem182/NOTES.md): undrafted. 0x59B090 SelectMultiMap and
+  0x59B2C0 use the result of 0x5C6960 (accepted as void Open_Lobby_Dialog_005c6960: needs a rename to int with
+  0x7359E0's return type); 0x59BC90 Send_Options needs the command 0x65 bitfield packet layout; large bodies
+  0x599920, 0x598FA0 (jump table), 0x59B690, 0x59C290, 0x59C8B0, 0x59CBA0, 0x59CD00. ModemGst.cpp (16) untouched.
+- PlanMgr.cpp after PlanMgr178 (build/class-work/PlanMgr178/v, NOTES): 0x615ED0 Can_Add 92.00 (__fastcall, count/added
+  registers swapped), 0x6171E0 81.58, 0x616A50 77.83 (js vs test/jl), 0x616B40 75.76 (kind -1 in ebp), 0x616960 60.10
+  (Next inlined), Rect family 0x615D30 56.69/0x616140 65.41/0x616070/0x617900 (one extra frame Rect), 0x615A80 39.38;
+  0x615C00 exact only with Pick_Drawn inline. Twelve undrafted (list in NOTES); inventory bounds wrong, ext.py.

@@ -73,8 +73,18 @@ namespace WOL {
 struct IChat;
 }
 extern WOL::IChat *unknown_chat_a72cfc;
+HWND Unknown_00735B10();                                // 0x00735B10 (the current dialog window; moved from shared/wol_sink.hpp)
+// Dialog helpers (moved from shared/queue.hpp and shared/wol_sink.hpp): 0x005FEE70 before a dialog paints,
+// 0x005FE380 for WM_DRAWITEM, 0x007357E0 ends a dialog with a result (the command id).
+void __fastcall Unknown_005FEE70(HWND dialog);
+void __fastcall Unknown_005FE380(long item);
+void __fastcall Unknown_007357E0(void *dialog, int arg);    // 0x007357E0
 // Adds a formatted line to the chat display (hypothesis; 0x005C2C80; moved from shared/wol_sink.hpp).
 void __cdecl Unknown_005C2C80(int color, unsigned short const *format, ...);
+// The same into the list 0x5B5 (0x005C2D10).
+void __cdecl Unknown_005c2d10(int color, unsigned short const *format, ...);
+// Adds a line to a dialog list box (0x005C2DA0; hypothesis: color -1 is the default; moved from shared/queue.hpp).
+void __fastcall Unknown_005C2DA0(int color, unsigned short const *text, HWND list);
 // The session's map name (0x00A3D342, session +0xAA; the lobby's map messages print it).
 extern unsigned short unknown_map_name_a3d342[];
 // 0x005159B0 (the lobby dialog opener calls it with 0, true before creating its dialog; moved from
@@ -91,7 +101,22 @@ extern bool unknown_flag_a3d2b8;       // 0x00A3D2B8 (session +0x20: multiplayer
 struct UnknownKickVoters {
     int ID[8];
 };
-struct UnknownGlobalPacket;   // shared/queue.hpp
+// A global network packet (moved from shared/queue.hpp) (0x1C7 bytes, packed: Unknown_00627190 copies that many;
+// Send_Port_Unreachable sends its first 0x2F; Red Alert's GlobalPacketType, the
+// name RTTI gives the session's packet list DynamicVectorClass<GlobalPacketType *>).
+#pragma pack(push, 1)
+struct UnknownGlobalPacket {
+    int Command;                        // +0x00
+    char Name[0x2F - 4];                // +0x04
+    union {
+        char unknown_2f[0x1C7 - 0x2F];
+        struct {
+            int Kickee;                 // +0x2F the id of the player proposed for a kick
+            int Proposer;               // +0x33 the id of the player who proposes it
+        } Kick;                         // command 0x1C (Propose_Kick_Player)
+    };
+};
+#pragma pack(pop)
 // A block of multiplayer game settings (0x7C bytes), kept per game type in the
 // session (the Skirmish, LAN and WonlinePref sections of RA2.INI).
 class CCINIClass;
@@ -132,6 +157,11 @@ struct UnknownSessionState {
         struct {
             int Type;                       // +0x00 the game mode (also unknown_game_mode_a3d298; Red Alert's Session.Type)
             MultiplayerGameMode *Mode;      // +0x04 the game mode object (also unknown_session_a3d29c)
+            char unknown_08[0x18 - 0x08];
+            // +0x18 the first word of the 0xEC-byte options block at 0x00A3D2B0 (UnknownLobbyState in
+            // shared/lobby.hpp; its 0x00672810 clears AICount and the AI tables): the game mode index that
+            // UnknownGameOptions::GameMode saves (0x005CC890).
+            int GameModeIndex;
         };
         char unknown_00[0x1C];
     };
@@ -213,7 +243,11 @@ struct UnknownSessionState {
     char unknown_23a8[0x27E4 - 0x23A8];
     // The player list (the object at 0x00A3FA7C, shared/unknown_player_entry.hpp unknown_players_a3fa7c).
     DynamicVectorClass<NodeNameType *> Players;   // +0x27E4
-    char unknown_27fc[0x282C - 0x27FC];
+    char unknown_27fc[0x2800 - 0x27FC];
+    // +0x2800 the eight lobby player slots (also unknown_player_slots_a3fa98, shared/unknown_player_entry.hpp;
+    // 0x005CA540 strength-reduces them and AIColor onto one pointer, so both are read through the session).
+    NodeNameType *PlayerSlots[8];
+    char unknown_2820[0x282C - 0x2820];
     int CurPhoneIdx;                        // +0x282C
     SerialSettingsType SerialDefaults;      // +0x2830
     char unknown_28a0[0x28A4 - 0x28A0];

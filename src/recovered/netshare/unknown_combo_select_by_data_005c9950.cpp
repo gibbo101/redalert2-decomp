@@ -1,7 +1,7 @@
 // void __fastcall unknown_combo_select_by_data(HWND dialog, int id, int data) -- 0x005C9950
 // Purpose: hides a dialog combo box while it selects (CB_SETCURSEL) the first
 // item whose item data (CB_GETITEMDATA) equals `data`, then shows it again.
-// No direct callers; bound by linear sweep to the ret 4.
+// Its one caller in the unit, 0x005CC700, expands it inline.
 #include "shared/win32_api.hpp"
 // @ref __imp__GetDlgItem@8=0079a49c
 // @ref __imp__ShowWindow@8=0079a498

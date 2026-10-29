@@ -228,8 +228,6 @@ extern int unknown_b299c0;              // 0x00B299C0
 
 void __fastcall Unknown_00698D00(bool arg);             // 0x00698D00 (stores cl: a byte)
 void *__fastcall Unknown_00735940(int id);              // 0x00735940 (a dialog by id)
-void __fastcall Unknown_007357E0(void *dialog, int arg);    // 0x007357E0
-HWND Unknown_00735B10();                                // 0x00735B10 (the current dialog window)
 void Unknown_0075B590();                                // 0x0075B590
 void Unknown_0075B2D0();                                // 0x0075B2D0
 void __fastcall Unknown_0073FEE0(int arg1, bool arg2);  // 0x0073FEE0

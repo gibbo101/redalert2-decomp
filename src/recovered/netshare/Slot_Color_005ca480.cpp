@@ -9,10 +9,10 @@
 
 int __fastcall Slot_Color_005ca480(int slot)
 {
-    NodeNameType *entry = unknown_player_slots_a3fa98[slot];
+    NodeNameType *entry = unknown_session_a3d298.PlayerSlots[slot];
     if (entry != 0 && (entry == unknown_easy_ai_entry_a72d34 || entry == unknown_medium_ai_entry_a72d38
                        || entry == unknown_hard_ai_entry_a72d3c)) {
-        return unknown_lobby_a3d31c[slot];
+        return unknown_session_a3d298.AIColor[slot];
     }
     if (entry == unknown_open_entry_a72d2c) {
         return -2;

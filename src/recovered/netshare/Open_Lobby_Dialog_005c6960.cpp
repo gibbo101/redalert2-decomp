@@ -3,7 +3,7 @@
 #include "shared/win32_window.hpp"
 // @ref ?unknown_create_dialog_735700@@YIPAXPAXHPAUHWND__@@P6GJ1IIJ@ZJ@Z=00735700
 // @ref ?unknown_show_dialog_5ff7e0@@YIXPAXH@Z=005ff7e0
-// @ref ?Unknown_007359e0@@YIXPAUHWND__@@P6A_NXZHHH@Z=007359e0
+// @ref ?Unknown_007359e0@@YIHPAUHWND__@@P6A_NXZHHH@Z=007359e0
 // @ref ?Lobby_Dialog_Proc_005c69e0@@YGJPAUHWND__@@IIJ@Z=005c69e0
 // @ref ?Lobby_Dialog_Update_005c67c0@@YA_NXZ=005c67c0
 // @ref ?unknown_lobby_dialog_a728e0@@3PAUHWND__@@A=00a728e0
