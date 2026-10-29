@@ -4,8 +4,8 @@
     "id": "population-2990",
     "inventory_sha256": "8b2998896d9dbeb7983e4ec9ece0fe9938a9f67c4703b8ca134576b3a61c86c6",
     "gaps_sha256": "66f6c494f692790165f723c514ca4896ad3e6a5732f62e95e3d2862b856dc86a",
-    "historical_population_sha256": "d84a2a1187122e5ef237de293d488365cb3efae7e4943cfc1ce10ea5d51add83",
-    "historical_acceptance_sha256": "2ad8afea3f0265e79091f17454d152ed238fd91865d34d17815bd3fb8dfb672e"
+    "historical_population_sha256": "d71f60c6effe5c130dfbe0d6462df8c250fa47d22cb9fa3dc203c3ffc2b13a6a",
+    "historical_acceptance_sha256": "376e65ef3bb5cc4a75720d35500200af840c2037e928c60744e064d825e1652f"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -5017,7 +5017,7 @@
     "?unknown_func_4e7440@HouseClass@@QAE_NH@Z": 5141568,
     "?unknown_func_491d10@UnknownHouseCounter@@QAEHH@Z": 4791568,
     "?unknown_func_4e74c0@HouseClass@@QAEPAVTechnoTypeClass@@H_N@Z": 5141696,
-    "?unknown_func_4e7580@HouseClass@@QAE_NPAVObjectClass@@_N@Z": 5141888,
+    "?unknown_func_4e7580@HouseClass@@QAE_NPAVAbstractClass@@_N@Z": 5141888,
     "?unknown_func_4e77a0@HouseClass@@QAE_NPAVObjectClass@@_N@Z": 5142432,
     "?unknown_func_4e7df0@HouseClass@@QAEXXZ": 5144048,
     "?unknown_func_4e7e80@HouseClass@@QAE_NXZ": 5144192,
@@ -5430,7 +5430,7 @@
     "?Detach@RadioClass@@UAEXPAVAbstractClass@@_N@Z": 6515616,
     "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Compute_CRC@RadioClass@@UBEXAAVWWCRCEngine@@@Z": 6515696,
-    "?unknown_4e76a0@HouseClass@@QAEXABVCell@@H@Z": 5142176,
+    "?unknown_4e76a0@HouseClass@@QAE_NABVCell@@_N@Z": 5142176,
     "?Delete@?$DynamicVectorClass@PAVPlanningNodeClass@@@@QAE_NH@Z": 6402896,
     "??_7?$VectorClass@PAVPlanningBranchClass@@@@6B@": 8028924,
     "??_7?$VectorClass@PAVPlanningMemberClass@@@@6B@": 8028892,
@@ -10839,7 +10839,8 @@
     "?Set_Scheme_Lighting_00520A80@@YIXHHH_N@Z": 5376640,
     "?Storm_Active_Message_00520BF0@@YIXXZ": 5377008,
     "?Unknown_00603C10@@YAHXZ": 6306832,
-    "?unknown_selected_83996c@@3PAUUnknownSelection@@A": 8624492
+    "?unknown_selected_83996c@@3PAUUnknownSelection@@A": 8624492,
+    "??0MultiMission@@QAE@PBDPBG0_N0HH@Z": 6757456
   },
   "regions": [
     {
@@ -14892,7 +14893,7 @@
     {
       "entry": 5141888,
       "method": "004e7580",
-      "symbol": "?unknown_func_4e7580@HouseClass@@QAE_NPAVObjectClass@@_N@Z",
+      "symbol": "?unknown_func_4e7580@HouseClass@@QAE_NPAVAbstractClass@@_N@Z",
       "symbol_prefix": "?unknown_func_4e7580@HouseClass@@",
       "options": [
         "/O2",
@@ -14995,7 +14996,7 @@
           "resolved": 10751760
         }
       ],
-      "source_sha256": "32e960692a4f6ac8d9da6de89071ea179ff7cf355bf8a539ee60ae8ee2b74cc7",
+      "source_sha256": "bac9592e7c626afe9c98a650defc2a6bd7e4664bfdafbe8fd02af8052d6d4a41",
       "source": "src/recovered/classes/HouseClass/HouseClass_unknown_func_4e7580_004e7580.cpp",
       "population": "population-2990",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
@@ -15024,7 +15025,7 @@
         {
           "offset": 34,
           "kind": 20,
-          "symbol": "?unknown_func_4e7580@HouseClass@@QAE_NPAVObjectClass@@_N@Z",
+          "symbol": "?unknown_func_4e7580@HouseClass@@QAE_NPAVAbstractClass@@_N@Z",
           "target": 5141888,
           "addend": 0,
           "resolved": 4294966714

@@ -438,3 +438,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   them at these first call sites (7B80 grows to 752 B). The original expands them in 0x6F79C0/0x6F7800/0x6F7020/
   0x6F71E0 but calls them here: explain with the Study152 depth-first budget (VC6_MATCHING_NOTES) in the full plan TU.
   0x6F79C0 53.70 (registers). True ends: 0x6F7360 682 B (ret 0x6F7609), 0x6F6D00 to 0x6F6FD4, 0x6F81B0 >= 741 B.
+- MainOpt.cpp / LoadDlg.CPP after MainOpt203 (build/class-work/MainOpt203/w, NOTES): Main_Options_Dialog 0x542460 98.91
+  (w/d3.cpp uses an `OptionsClass *options = &Options` local that is borderline steering; 97.30 without), Video_Mode_Proc
+  0x543CF0 66.37 (registers), Has_Saved_Games 0x53C5C0 97.83 (mov al,bl after pop edi). Undrafted: Main_Options_Proc
+  0x542590 (1996), 0x542D60 (1909, IPX card dialog), Set_Display_Mode 0x5434E0 (1414), 0x53B770 (2068), Fill_List 0x53C040.
+  The scorer can report 100 with a wrong constant (0x79C570 is double 0.1): trust check_plans.

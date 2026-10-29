@@ -6,7 +6,7 @@
 #include "shared/house.hpp"
 // @ref ?unknown_slot52@FootClass@@UAE_NXZ=004c9bd0
 // @ref ?Houses@@3V?$DynamicVectorClass@PAVHouseClass@@@@A=00a32298
-// @ref ?unknown_4e76a0@HouseClass@@QAEXABVCell@@H@Z=004e76a0
+// @ref ?unknown_4e76a0@HouseClass@@QAE_NABVCell@@_N@Z=004e76a0
 
 bool UnitClass::unknown_slot52()
 {

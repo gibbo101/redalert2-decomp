@@ -13,7 +13,7 @@
 // @ref ?unknown_4689f0@UnknownCargo@@QAEPAVObjectClass@@XZ=004689f0
 // @ref ?unknown_slot52@FootClass@@UAE_NXZ=004c9bd0
 // @ref ?Houses@@3V?$DynamicVectorClass@PAVHouseClass@@@@A=00a32298
-// @ref ?unknown_4e76a0@HouseClass@@QAEXABVCell@@H@Z=004e76a0
+// @ref ?unknown_4e76a0@HouseClass@@QAE_NABVCell@@_N@Z=004e76a0
 // @ref ?Unknown_006ECB90@@YIXPAVAbstractClass@@_N@Z=006ecb90
 // @ref ?Units@@3V?$DynamicVectorClass@PAVUnitClass@@@@A=00866198
 // @ref ?Fetch_ID@AbstractClass@@UAGJXZ=0040ffc0

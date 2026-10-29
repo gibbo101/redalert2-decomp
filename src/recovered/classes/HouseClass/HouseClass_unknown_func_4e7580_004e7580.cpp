@@ -1,4 +1,4 @@
-// bool HouseClass::unknown_func_4e7580(ObjectClass *object, bool arg2) (0x004E7580)
+// bool HouseClass::unknown_func_4e7580(AbstractClass *object, bool arg2) (0x004E7580)
 // Releases an object (a unit through 0x007049F0, anything else through its
 // cell); forgets it at +0x5308 when it was kept there. With arg2 the marked
 // cell at +0x530C is cleared too.
@@ -19,7 +19,7 @@ struct UnknownCellView {
 };
 
 
-bool HouseClass::unknown_func_4e7580(ObjectClass *object, bool arg2)
+bool HouseClass::unknown_func_4e7580(AbstractClass *object, bool arg2)
 {
     bool result = false;
     if (object != 0) {
