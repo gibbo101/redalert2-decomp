@@ -10,6 +10,8 @@ class BuildingTypeClass;
 class UnknownMapGenerator {
 public:
     UnknownMapGenerator(); //00577010 remains parked, no body promoted
+    // Proposed rename-only owner correction; same int,int/ECX/RET8 physical ABI.
+    void Unknown_0057A0D0(int arg1,int arg2); //0057A0D0, operation unchanged; no body promoted
     void Run_Region_Attempts_0057dd60();
     bool unknown_0057ecf0(Cell const &point,double value,bool flag); //actualcallee, sourceintentqualified
     bool unknown_0057e100(Cell const &point); //actualcallee, sourceintentqualified
@@ -33,4 +35,8 @@ typedef char UnknownMapGenerator_dim184[(((unsigned int)&(((UnknownMapGenerator*
 typedef char UnknownMapGenerator_counter308[(((unsigned int)&(((UnknownMapGenerator*)0)->unknown_308))==0x308)?1:-1];
 typedef char UnknownMapGenerator_level30c[(((unsigned int)&(((UnknownMapGenerator*)0)->unknown_30c))==0x30c)?1:-1];
 typedef char UnknownMapGenerator_size[(sizeof(UnknownMapGenerator)==0x314)?1:-1];
+typedef char UnknownMapGenerator_seed_prefix[(((unsigned int)&(((UnknownMapGenerator*)0)->SeedOptions))==0)?1:-1];
+// Proposed complete global view; original constructor/lifetime scaffolding stays in place.
+// Declares storage elsewhere; no global definition or new initializer is introduced.
+extern UnknownMapGenerator unknown_map_generator_a6fd68; //00A6FD68, nominal type/name hypotheses
 #endif

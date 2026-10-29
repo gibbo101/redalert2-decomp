@@ -4,8 +4,8 @@
     "id": "population-2963",
     "inventory_sha256": "65f27d1e9b41b58f6e3969f76eddf8fdd3774259539328375d6f075b9a8cb19d",
     "gaps_sha256": "212bea6ece565eccc30f8091412a98f7746aa45e08053219230eb554ef4b7aa3",
-    "historical_population_sha256": "b811adcc78ecbc9796f4d77feccf71aa398a101492ee1e10f6d575bccb01e356",
-    "historical_acceptance_sha256": "095d75444ac90e40696aacd9dea042c7b8df501811d4fe4425f6800e6886428a"
+    "historical_population_sha256": "0617c8aec95afcac5e2157759d232554f80d406d10e1acba9b250784ebcf3cca",
+    "historical_acceptance_sha256": "0921fac7e9a26ede995de53091239ceb3f408ddeb4488d4ef9c8e90778c08b15"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7599,8 +7599,8 @@
     "?unknown_map_type_labels_7e0ae4@@3PAPBDA": 8260324,
     "?unknown_resource_labels_7e0af8@@3PAPBDA": 8260344,
     "?unknown_seed_text_a709c8@@3PADA": 10947016,
-    "?MapSeed@@3VMapSeedClass@@A": 10943848,
-    "?Unknown_0057A0D0@MapSeedClass@@QAEXHH@Z": 5742800,
+    "?unknown_map_generator_a6fd68@@3VUnknownMapGenerator@@A": 10943848,
+    "?Unknown_0057A0D0@UnknownMapGenerator@@QAEXHH@Z": 5742800,
     "?Unknown_00406F50@@YAXXZ": 4222800,
     "?Unknown_00406F70@@YAXXZ": 4222832,
     "_unknown_empty_rect": 8594576,
@@ -12666,7 +12666,7 @@
         {
           "offset": 11,
           "kind": 6,
-          "symbol": "?MapSeed@@3VMapSeedClass@@A",
+          "symbol": "?unknown_map_generator_a6fd68@@3VUnknownMapGenerator@@A",
           "target": 10943848,
           "addend": 88,
           "resolved": 10943936
@@ -12690,7 +12690,7 @@
         {
           "offset": 63,
           "kind": 6,
-          "symbol": "?MapSeed@@3VMapSeedClass@@A",
+          "symbol": "?unknown_map_generator_a6fd68@@3VUnknownMapGenerator@@A",
           "target": 10943848,
           "addend": 80,
           "resolved": 10943928
@@ -12824,7 +12824,7 @@
           "resolved": 10947108
         }
       ],
-      "source_sha256": "84d4f9facda42865c4fefe2f7f5d4f30d88227b1e64a94dc021d9f7cb521b6e5",
+      "source_sha256": "e607db501899a4869e3029464ba4944629a5da392c6417a4900c21241a10aca4",
       "source": "src/recovered/classes/MapRegionClass/MapRegionClass_Select_Separated_Cells_00576810.cpp",
       "population": "population-2963",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",

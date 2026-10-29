@@ -48,7 +48,6 @@ public:
     void Randomize_Parameters_005789f0(int map_type);
     bool Save_Or_Prompt_00578ed0(char const *filename);
     bool Load_Or_Prompt_005791a0(char const *filename);
-    void Unknown_0057A0D0(int arg1, int arg2);  // 0x0057A0D0 (generates the map; 0x0065C7D0 passes 0, 0)
     virtual bool Load(char const *filename); // 005791C0
     virtual bool Save(char const *filename,wchar_t const *description); // 00578F00
     virtual bool Delete_File(char const *filename); // 005794D0
@@ -75,8 +74,9 @@ public:
     int Seed;
     wchar_t DescriptionBuffer[128]; // +78
 };
-// The random map's parameters (0x00A6FD68).
-extern MapSeedClass MapSeed;
+// Proposed complete-owner global view at0x00A6FD68 is declared in
+// unknown_map_generator.hpp; MapSeedClass remains its0x178-byte SeedOptions prefix.
+// Composition/original complete-owner type remain explicit hypotheses.
 typedef char LoadOptionsClass_size[(sizeof(LoadOptionsClass)==0x38)?1:-1];
 typedef char MapSeedClass_size[(sizeof(MapSeedClass)==0x178)?1:-1];
 typedef char MapSeedClass_description_offset[(((unsigned int)&(((MapSeedClass*)0)->DescriptionBuffer))==0x78)?1:-1];

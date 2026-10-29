@@ -14,14 +14,14 @@
 // @ref ??_C@_0N@LJCA@PROGBARM?4SHP?$AA@=007f1fe8
 // @ref ??_C@_13ECNF@?$AA?5?$AA?$AA@=007d64f4
 // @ref ?Fill_In_Data_0065cdd0@@YAXXZ=0065cdd0
-// @ref ?MapSeed@@3VMapSeedClass@@A=00a6fd68
+// @ref ?unknown_map_generator_a6fd68@@3VUnknownMapGenerator@@A=00a6fd68
 // @ref ?Read_Scenario_0065e760@@YI_NPBD_N@Z=0065e760
 // @ref ?Unknown_005359E0@Unknown535910@@QAEXXZ=005359e0
 // @ref ?Unknown_00535AB0@Unknown535910@@QAE?AUPoint2D@@XZ=00535ab0
 // @ref ?Unknown_00535B60@Unknown535910@@QAEHXZ=00535b60
 // @ref ?Unknown_00535B90@Unknown535910@@QAEXXZ=00535b90
 // @ref ?Unknown_00536E20@Unknown535910@@QAEXXZ=00536e20
-// @ref ?Unknown_0057A0D0@MapSeedClass@@QAEXHH@Z=0057a0d0
+// @ref ?Unknown_0057A0D0@UnknownMapGenerator@@QAEXHH@Z=0057a0d0
 // @ref ?Unknown_0061EFA0@ProgressScreenClass@@QAEXUPoint2D@@PBG_N2@Z=0061efa0
 // @ref ?Unknown_00672440@UnknownSessionState@@QAEXXZ=00672440
 // @ref ?Wait_For_Players_0065c520@@YI_NXZ=0065c520
@@ -43,7 +43,7 @@
 #include "shared/id_source.hpp"
 #include "shared/unknown_globals.hpp"
 #include "shared/progress_screen.hpp"
-#include "shared/map_seed.hpp"
+#include "shared/unknown_map_generator.hpp"
 #include "shared/winsock_interface.hpp"
 #include "shared/ipx_manager.hpp"
 #include "shared/unknown_player_entry.hpp"
@@ -134,9 +134,9 @@ bool __fastcall Unknown_0065c7d0(char const *name)
 
     bool ok;
     if (unknown_id_source_a3d290->unknown_223b) {
-        ok = MapSeed.Load_Or_Prompt_005791a0(filename);
+        ok = unknown_map_generator_a6fd68.SeedOptions.Load_Or_Prompt_005791a0(filename);
         if (ok) {
-            MapSeed.Unknown_0057A0D0(0, 0);
+            unknown_map_generator_a6fd68.Unknown_0057A0D0(0, 0);
             Unknown_0065e8c0(true);
         }
         strcpy(unknown_id_source_a3d290->FileName, filename);
