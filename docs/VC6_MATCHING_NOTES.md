@@ -685,3 +685,6 @@ verified on the target.
   cdecl or stdcall callee keeps `call; pop; ret` (Prog_End 0x6909E0 -> Kill_Mouse_Thread, Startup226).
 - An `extern` declaration of a global placed after its dynamically initialised definition in the same unit makes VC6
   emit the initializer twice; include the declaring header before the definition (Startup226 header statics).
+- String literals outside a unit's own pool (shared "%s", "INTRO", registry paths) need @ref lines: diff_candidate
+  shows them resolved, but acceptance refuses the population with "Unsupported allocatable data section .data"; read the
+  mangled names from the compiled object (Wonline239, Queue225).
