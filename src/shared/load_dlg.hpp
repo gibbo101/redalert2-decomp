@@ -25,8 +25,6 @@ WIN32_IMPORT LONG WINAPI CompareFileTime(FILETIME const *first, FILETIME const *
 
 // Compares the write times of two save file entries (qsort callback; newest first) (0x0053C650).
 int __cdecl Compare_Save_Times(FileEntryClass **first, FileEntryClass **second);
-// Whether any save file other than SAVEGAME.NET exists for the extension (0x0053C5C0).
-bool __fastcall Has_Saved_Games_0053c5c0(LoadOptionsClass *options);
 // Runs a load or save under the "loading" / "saving" dialog (0x0053C680, 0x0053C760).
 bool __stdcall Load_Game_With_Dialog(char const *filename);
 bool __stdcall Save_Game_With_Dialog(char const *filename, wchar_t const *description);

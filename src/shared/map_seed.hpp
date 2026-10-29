@@ -28,6 +28,8 @@ public:
     virtual wchar_t const *Saved_Message() const;
     char Load_Dialog_0053b190();
     char Save_Dialog_0053b1b0(wchar_t *description);
+    char Delete_Dialog_0053b1e0();
+    bool Has_Saved_Games_0053c5c0();     // whether any save file other than SAVEGAME.NET exists for the extension (0x0053C5C0)
     int unknown_04;
     char const *Extension; // +08: SAV in base, SED in MapSeed
     wchar_t *Description; // +0C: points into MapSeed's inline buffer

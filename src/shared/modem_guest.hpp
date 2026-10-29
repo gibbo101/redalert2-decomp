@@ -84,7 +84,5 @@ void __fastcall Unknown_006FA0F0(char *dst, unsigned short const *src, int limit
 
 // The row of a combo box whose item data is data, searching after the row start (0x00736E10).
 int __fastcall Find_Combo_Item_Data_00736e10(HWND combo, int start, int data);
-// (0x00A3FBA4; cleared when the GO arrives.)
-extern int unknown_a3fba4;
 
 #endif

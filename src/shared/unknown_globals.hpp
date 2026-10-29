@@ -55,6 +55,7 @@ extern HouseClass *unknown_player_a35db4;  // 0x00A35DB4 the player's house
 // moved from shared/radar.hpp).
 extern int unknown_int_a3d548;
 extern int unknown_game_mode_a3d298;  // 0x00A3D298
+extern int unknown_a3fba4;            // 0x00A3FBA4 the latency setting (the GOptions slider shows 3 - it; cleared when the GO arrives)
 // The players of a multiplayer game (0x00A3D558, session +0x2C0; Red Alert's Session.MaxPlayers;
 // moved from shared/queue.hpp, which pulls header statics into the netshare unit).
 extern int unknown_max_players_a3d558;
