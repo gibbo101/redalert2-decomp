@@ -32,6 +32,8 @@
 #ifndef RA2_SHARED_BUILDING_TYPE_HPP
 class BuildingTypeClass : public TechnoTypeClass {
 public:
+    int unknown_458b10(Cell const &origin, HouseClass *house) const;   // 0x00458B10 (as shared/building_type_class.hpp; TeamClass 0x006BB8B0)
+
     int ArrayIndex;                     // +0xB90 index in BuildingTypes (TechnoClass slot 55)
     char unknown_b94[0x1215 - 0xB94];
     bool Wall;                          // +0x1215 (TechnoClass 0x006C22A0)

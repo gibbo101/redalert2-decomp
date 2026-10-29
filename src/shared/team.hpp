@@ -44,6 +44,8 @@ class BuildingTypeClass;
 // The enemy building of a type that rates best by mode (0x006BCF70: lowest or highest house
 // value of its cell's block, nearest or farthest from member; see its source).
 AbstractClass *__fastcall Unknown_006BCF70(BuildingTypeClass *type, HouseClass *enemy, FootClass *member, int arg4, bool arg5);
+// The same pick among the member's own house's buildings (0x006BD240; hypothesis).
+AbstractClass *__fastcall Unknown_006BD240(BuildingTypeClass *type, HouseClass *enemy, FootClass *member, int arg4, bool arg5);
 
 
 class CellClass;
@@ -136,6 +138,12 @@ public:
     void TMission_unknown_6bae60(ScriptMissionClass const &mission, bool unknown);  // 0x006BAE60
     void TMission_unknown_6bc7b0(ScriptMissionClass const &mission, int unknown);  // 0x006BC7B0
     void TMission_unknown_6bb480(ScriptMissionClass const &mission, int unknown);  // 0x006BB480 (leader picks a target of kind Data; done once members are armed)
+    void TMission_unknown_6bb8b0(ScriptMissionClass const &mission, int unknown);  // 0x006BB8B0 (Red Alert's TMission_Deploy)
+    void TMission_unknown_6bbbb0(ScriptMissionClass const &mission, int unknown);  // 0x006BBBB0 (Red Alert's Coordinate_Do; mission Data)
+    void TMission_unknown_6bd4b0(ScriptMissionClass const &mission, int unknown);  // 0x006BD4B0 (Red Alert's TMission_Unload)
+    void TMission_unknown_6bddb0(ScriptMissionClass const &mission, bool unknown);  // 0x006BDDB0 (toward the enemy base from the own one)
+    void TMission_unknown_6be1c0(ScriptMissionClass const &mission, int unknown);  // 0x006BE1C0 (fires super weapons 3 and 4: chronoshift)
+    void TMission_unknown_6bc980(ScriptMissionClass const &mission, bool unknown);  // 0x006BC980 (as 0x006BC7B0 over the leader's own house, 0x006BD240)
 
     virtual HRESULT __stdcall GetClassID(GUID *clsid);              // 0x006BABF0 slot 3
     virtual HRESULT __stdcall Load(IStream *stream);                // 0x006BAAE0 slot 5
