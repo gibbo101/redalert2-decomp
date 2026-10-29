@@ -8,6 +8,8 @@
 #include "shared/vector_class.hpp"
 class MapRegionClass {
 public:
+    ~MapRegionClass(); // original0056D970 nondeleting destruction; nominal source ownership hypothesis
+    bool Grow_Border_00570040(int steps); // physical AL0/1, RET4; name/bool intent hypotheses
     DynamicVectorClass<Cell> *Select_Separated_Cells_00576810(DynamicVectorClass<Cell> const &candidates); //operation/reference/constness hypotheses; EAXptr/RET4
     bool Place_Neutral_Building_00571db0(Rect const &area); // hypothesis name; caller establishes MapRegion receiver, RET4
     void unknown_0056eac0(int count,int mark);
