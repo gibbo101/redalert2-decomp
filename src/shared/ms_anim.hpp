@@ -93,17 +93,21 @@ public:
 
 class MSFadeAnim : public MSShapeAnim {
 public:
-    MSFadeAnim(Wstring const &filename, int x, int y, ConvertClass *drawer, int unknown_24, int flags, int unknown_44);  // 0x005ACDB0
+    MSFadeAnim(Wstring const &filename, int x, int y, ConvertClass *drawer, int unknown_24, int flags,
+               DynamicVectorClass<MSAnim *> *anims);           // 0x005ACDB0
     virtual bool Unknown_Slot4(Surface *surface, Rect *dirty);     // 0x005ACE30
     virtual void Draw(Surface *surface, Rect const *clip);          // 0x005AD210
 
     int unknown_40;             // +0x40
-    int unknown_44;             // +0x44
+    // The engine's animation list (WorldDominationTour passes &engine->Anims):
+    // slot 4 redraws the others over each new step.
+    DynamicVectorClass<MSAnim *> *Anims;    // +0x44 (may be 0)
 };
 
 class MSOverlayAnim : public MSFadeAnim {
 public:
-    MSOverlayAnim(Wstring const &filename, int x, int y, ConvertClass *drawer, int unknown_24, int unknown_44,
+    MSOverlayAnim(Wstring const &filename, int x, int y, ConvertClass *drawer, int unknown_24,
+                  DynamicVectorClass<MSAnim *> *anims,
                   bool unknown_48, int frame, bool unknown9);    // 0x005AD370
     virtual bool Unknown_Slot4(Surface *surface, Rect *dirty);     // 0x005AD450
     virtual void Draw(Surface *surface, Rect const *clip);          // 0x005AD6B0

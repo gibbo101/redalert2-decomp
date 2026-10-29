@@ -4,8 +4,8 @@
     "id": "population-2928",
     "inventory_sha256": "fae8a3a3ead5e6a255f052ec07f0a34509f41465f734d25f9a8b2f9f8293e411",
     "gaps_sha256": "c2fa017fc9bcfd513bad107d0c480a2510406e863a3bbee46e4732b0a4670f3c",
-    "historical_population_sha256": "de847f9eeaa4cd697b1dde25b5158ffd9fcdddb9c76a05dcd89e8d3f409f8cc2",
-    "historical_acceptance_sha256": "58c4b7783c8ca158d10ca5ba723d7c60c1ab6d9e1f506ace122e53c728c5860d"
+    "historical_population_sha256": "ef6b4fa2ecdeaf958775960e4392754e63670416b24b436a4f86c889afebb574",
+    "historical_acceptance_sha256": "f891c6e6ef91a3a8a5a671c50d424adc93053a4cbe1ae3cc163b8abaedc2b3a2"
   },
   "references": {
     "_unknown_empty_rect": 10950664,
@@ -2197,9 +2197,9 @@
     "?Set_Frame@MSShapeAnim@@QAEXH@Z": 5949280,
     "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
     "?Get_Rect@MSShapeAnim@@UAE?AVRect@@XZ": 5950720,
-    "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHH@Z": 5950896,
+    "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHPAV?$DynamicVectorClass@PAVMSAnim@@@@@Z": 5950896,
     "??_7MSFadeAnim@@6B@": 8023436,
-    "??0MSOverlayAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HH_NH2@Z": 5952368,
+    "??0MSOverlayAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HPAV?$DynamicVectorClass@PAVMSAnim@@@@_NH3@Z": 5952368,
     "??_7MSOverlayAnim@@6B@": 8023476,
     "?Resume@MSAnim@@UAEXXZ": 5962848,
     "??_7TacticalClass@DisplayClass@@6B@": 7989396,
@@ -5632,8 +5632,8 @@
     {
       "entry": 5950896,
       "method": "005acdb0",
-      "symbol": "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHH@Z",
-      "symbol_prefix": "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHH@Z",
+      "symbol": "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHPAV?$DynamicVectorClass@PAVMSAnim@@@@@Z",
+      "symbol_prefix": "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHPAV?$DynamicVectorClass@PAVMSAnim@@@@@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -5679,7 +5679,7 @@
           "resolved": 8023436
         }
       ],
-      "source_sha256": "6c839371c4672fa85c366e8fa39dd442eedd27f3d564ffbf729a5ddeb321bc70",
+      "source_sha256": "a9b5741fbf047f18e9f855804b02cd9ea5f71d3cf8a9bc653fe1fe26e7589617",
       "source": "src/recovered/classes/MSFadeAnim/MSFadeAnim_MSFadeAnim_005acdb0.cpp",
       "population": "population-2928",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
@@ -5691,8 +5691,8 @@
     {
       "entry": 5952368,
       "method": "005ad370",
-      "symbol": "??0MSOverlayAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HH_NH2@Z",
-      "symbol_prefix": "??0MSOverlayAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HH_NH2@Z",
+      "symbol": "??0MSOverlayAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HPAV?$DynamicVectorClass@PAVMSAnim@@@@_NH3@Z",
+      "symbol_prefix": "??0MSOverlayAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HPAV?$DynamicVectorClass@PAVMSAnim@@@@_NH3@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -5738,7 +5738,7 @@
           "resolved": 8023476
         }
       ],
-      "source_sha256": "96d1830d905a8ef260af43eb70a73ec1aed0e5fbb0adb32690c8e1d11ab5dced",
+      "source_sha256": "a049244c36295f672db624535d9951a64f4f83e1bf8236052536f40294802e9f",
       "source": "src/recovered/classes/MSOverlayAnim/MSOverlayAnim_MSOverlayAnim_005ad370.cpp",
       "population": "population-2928",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",

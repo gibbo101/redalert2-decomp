@@ -4,8 +4,8 @@
     "id": "population-2799",
     "inventory_sha256": "0be23d5d176d2c064990ae70204a21492d94b1dc1d94b44d142cb8b4ca48da95",
     "gaps_sha256": "57f89c1a6d8b0ee398f3ffbf21c895ee319b3167c2c548e08e6b325fcb6d542b",
-    "historical_population_sha256": "0891fc52f101d5e3270aeeaab669729d8c28ed9582828dc7807bdb1064af405a",
-    "historical_acceptance_sha256": "7925cd6589a843f85b80a989c36a1b8f58313e9b02f90888988bbcbf9aa1039a"
+    "historical_population_sha256": "ad947823785aafc53c9596453ece5f1222b018afbadf7348467dd1d77bf40630",
+    "historical_acceptance_sha256": "745c7cfef2d826db32a3f44b64e727b4ea8ba4d96f75273f385e3658e43b062f"
   },
   "references": {
     "_unknown_empty_rect": 10751560,
@@ -2255,9 +2255,9 @@
     "?Set_Frame@MSShapeAnim@@QAEXH@Z": 5949280,
     "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
     "?Get_Rect@MSShapeAnim@@UAE?AVRect@@XZ": 5950720,
-    "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHH@Z": 5950896,
+    "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHPAV?$DynamicVectorClass@PAVMSAnim@@@@@Z": 5950896,
     "??_7MSFadeAnim@@6B@": 8023436,
-    "??0MSOverlayAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HH_NH2@Z": 5952368,
+    "??0MSOverlayAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HPAV?$DynamicVectorClass@PAVMSAnim@@@@_NH3@Z": 5952368,
     "??_7MSOverlayAnim@@6B@": 8023476,
     "?Resume@MSAnim@@UAEXXZ": 5962848,
     "?Background@SidebarClass@@2VSBGadgetClass@1@A": 11245336,
