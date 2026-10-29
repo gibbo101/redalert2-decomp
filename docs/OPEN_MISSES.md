@@ -278,3 +278,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   assembly, a separate ledger category, not C. 0x482110 Service_Network_Handshake (2438 B, seed 22.78) needs the
   0xA40978 manager members, Unknown84E8D0 methods, session/packet layouts and retiring seed 0x482AA0 (atexit
   destructor of the function-static timer at 0x850D94): a layout-recovery lane.
+- Queue.CPP after Queue168 (u-misses/, NOTES; hv/shared is ahead of main: rebase before resuming): 0x6279D0 83.46
+  (save kept in cl and tested twice), 0x629220 82.05 (loop tail jg/jmp and shared epilogue), Process_Receive_Packet
+  0x6265C0 66.27 (packet/net registers, one more local), response-time bars 0x626CB0 46.93 (registers). Not started:
+  Add_Compressed_Events 0x627B60, Extract_Compressed_Events 0x6282D0, Execute_DoList 0x628880, 0x629290,
+  Queue_AI_Multiplayer 0x623B00, Wait_For_Players 0x624C10, Print_CRCs 0x62A360 (11 KB), 0x62CF40, 0x62DBA0, the
+  templates 0x62EA00/0x62EA40, Queue_AI 0x623770. Unit rules: ms_engine.hpp adds an initializer (use map.hpp's
+  unknown_481fb0), display.hpp must precede map_view.hpp.

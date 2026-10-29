@@ -116,6 +116,17 @@ public:
     bool unknown_map_559fd0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1D70
     bool unknown_63b5b0_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B1FD0
     bool unknown_set_session_22a8(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2260
+    bool unknown_func_6af950(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006AF950 (Unknown_0051FC90 at the cell of waypoint +0x44)
+    bool unknown_particle_system_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006AFA00 (the particle system type Data over the ground at waypoint +0x44)
+    bool unknown_set_mission_timer_text(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0C50 (the mission timer label and text from the action text)
+    bool unknown_player_4e80d0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006AFD50
+    bool unknown_explosion_50_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);    // 0x006B0080 (Unknown_0047F600 with the rules C4 warhead at waypoint Data)
+    bool unknown_explosion_100_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B00E0
+    bool unknown_explosion_300_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0140
+    bool unknown_buildings_with_tag_slot98(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B01A0
+    bool unknown_buildings_with_tag_power_up(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B02F0
+    bool unknown_technos_with_tag_to_house(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0360
+    bool unknown_base_building(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0560 (Red Alert's TACTION_BASE_BUILDING)
     static int __fastcall Action_Flags(int type);                       // 0x006B2DF0 (hypothesis)
     // What the value of an action type names (0x006B2AB0; 0x2B, 0x28, 0x0C, 0x22, 0x0B,
     // 0x1A, 0x27, 4, 3, 0x26, 1 are the kinds Build_INI_Entry writes; name hypothesis).

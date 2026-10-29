@@ -331,6 +331,8 @@ public:
     bool unknown_func_4e7e80();                            // 0x004E7E80
     void unknown_func_4e7ee0(int arg1);                    // 0x004E7EE0
     void unknown_func_4e82c0();                            // 0x004E82C0
+    void unknown_func_4e80d0(int arg1);                    // 0x004E80D0
+    void unknown_func_4f5be0();                            // 0x004F5BE0 (the base building action when the base plan is empty)
     FactoryClass *unknown_func_4eb580(int kind, bool naval, int arg3); // 0x004EB580 (the factory per kind)
     // Starts producing a type in the house's factory for its kind (made when
     // missing): 0 on success, 3 when refused (0x004E5E30; name after TS, from
