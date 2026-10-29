@@ -15,6 +15,7 @@
 class SpecialClass;
 
 extern "C" __declspec(dllimport) unsigned long __stdcall timeGetTime();
+class IPXAddressClass;
 
 #pragma pack(push, 1)
 class EventClass {
@@ -31,9 +32,10 @@ public:
     EventClass(int house, int type, int rtti, int id, int naval, Cell const &cell);  // 0x004B63F0
 
     unsigned char Type;         // +0x00
-    unsigned char unknown_01;   // +0x01
+    unsigned char IsExecuted : 1;   // +0x01 bit 0: executed (Red Alert's IsExecuted)
+    unsigned char unknown_01 : 7;
     unsigned char House;        // +0x02 (0xFF: none)
-    unsigned long Frame;        // +0x03 the frame it was queued
+    long Frame;                 // +0x03 the frame it was queued or executes (signed: Clean_DoList compares with jle)
     // +0x07 the payload; each constructor fills its own shape. The
     // three-long-and-cell shape of 0x004B6370 and 0x004B63F0 is written
     // through these members (writing it through LongAt schedules the stores
@@ -74,6 +76,9 @@ public:
     EventClass(int house, int type, unsigned long a);
     // Type 4 (0x004B6170): a target, a mission byte and three more targets.
     EventClass(int house, TargetClass whom, unsigned char mission, TargetClass target, TargetClass destination, TargetClass follow);
+    // ADDRESSCHANGE (type 0x29, 0x004B6560): the first four node bytes of an address
+    // (the IP of a UDP address) at +0x08 and a byte at +0x07.
+    EventClass(int house, IPXAddressClass *address, unsigned char unknown);
     // The same with two longs (0x004B6370; +0x0F is 0).
     EventClass(int house, int type, int a, int b, Cell const &cell);
 };
@@ -99,6 +104,17 @@ public:
         }
         return false;
     }
+    // Drops the head entry (Red Alert's QueueClass::Next).
+    int Next()
+    {
+        if (Count) {
+            Head = (Head + 1) & (size - 1);
+            Count--;
+        }
+        return Count;
+    }
+    T &operator[](int index) { return Array[(Head + index) & (size - 1)]; }
+    T &First() { return Array[Head]; }
 
     int Count;
     int Head;

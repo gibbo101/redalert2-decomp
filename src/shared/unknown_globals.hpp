@@ -52,6 +52,11 @@ extern int unknown_a3d3bc;            // 0x00A3D3BC (session +0x124; the modem g
 extern bool unknown_flag_a3d2b8;       // 0x00A3D2B8 (session +0x20: multiplayer bases)
 // The session object at 0x00A3D298 (its first word is unknown_game_mode_a3d298;
 // SessionClass in TS, hypothesis).
+// The ids of the players that voted to kick a connection (session +0x8D8, 8 per
+// connection; Kick_Player_Now shifts them with the frame-sync records).
+struct UnknownKickVoters {
+    int ID[8];
+};
 struct UnknownSessionState {
     int Value_0124_006729f0();
     int Value_011c_00672a10();
@@ -65,7 +70,10 @@ struct UnknownSessionState {
 
     // Data (offsets from 0x00A3D298; the first word is unknown_game_mode_a3d298,
     // +0x40/+0x28/+0xA7 are declared separately in this header for now).
-    char unknown_00[0x1C];
+    union {
+        int Type;                           // +0x00 the game mode (also unknown_game_mode_a3d298; Red Alert's Session.Type)
+        char unknown_00[0x1C];
+    };
     int ScenarioIndex;                      // +0x1C the multiplayer map (unknown_multi_missions_a3d8d8 index; -1: none)
     bool unknown_bases_20;                  // +0x20 multiplayer bases (also unknown_flag_a3d2b8)
     int unknown_24;                         // +0x24 every multiplayer house's third setup value (Assign_Houses)
@@ -107,7 +115,10 @@ struct UnknownSessionState {
     bool unknown_638;                       // +0x638 (cleared by 0x00672440)
     bool unknown_639;                       // +0x639 (cleared before the load wait, 0x0065C7D0)
     bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)
-    char unknown_63b[0x1FB4 - 0x63B];
+    char unknown_63b[0x8B8 - 0x63B];
+    int KickVotes[8];                       // +0x8B8 per connection: the kick votes received (0x00627210)
+    UnknownKickVoters KickVoters[8];        // +0x8D8 per connection: the voters' ids
+    char unknown_9d8[0x1FB4 - 0x9D8];
     int unknown_1fb4[4][28];                // +0x1FB4 four rows indexed by the +0x2300 counter (MPCooperative slot 34 sets -1)
     char unknown_2174[0x2300 - 0x2174];
     int unknown_2300;                       // +0x2300 (capped at 3; also unknown_a3f598)
