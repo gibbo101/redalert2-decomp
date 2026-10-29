@@ -6,7 +6,7 @@
 #include "shared/hicolor.hpp"
 // @ref ??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z=00483650
 // @ref ?Initialize_Blitters_00483B00@ConvertClass@@QAEXXZ=00483b00
-// @ref ?Set_Tint@LightConvertClass@@QAEXHHH_N@Z=00538aa0
+// @ref ?Set_Tint@LightConvertClass@@UAEXHHH_N@Z=00538aa0
 // @ref ?Get_Unknown_7d6290@@YAHXZ=004abb90
 // @ref ?Unknown_0051FC50@@YA_NXZ=0051fc50
 // @ref ?Unknown_0051FC60@@YA_NXZ=0051fc60

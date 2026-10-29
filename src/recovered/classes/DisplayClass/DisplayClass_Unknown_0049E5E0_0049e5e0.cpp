@@ -1,4 +1,4 @@
-// static void DisplayClass::Unknown_0049E5E0() (0x0049E5E0)
+// void DisplayClass::Unknown_0049E5E0() (0x0049E5E0)
 // Runs 0x004798F0 on every cell of the map.
 #include "shared/display.hpp"
 #include "shared/map_cell.hpp"

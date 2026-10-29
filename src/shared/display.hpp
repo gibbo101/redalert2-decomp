@@ -131,7 +131,8 @@ public:
     // the list at +0x1178 / +0x1188 placed at a cell.
     void Unknown_004998C0(Cell const &cell, bool set);
     void Unknown_00499970(Cell const &cell, bool set);
-    static void Unknown_0049E5E0();
+    // Runs 0x004798F0 on every cell of the map (0x0049E5E0; a member: Ion.cpp's 0x00520B00 calls it on Map).
+    void Unknown_0049E5E0();
     // Loads eight house colours (color % 12, or the first eight for -1) into
     // entries 1-8 of the drawer 0x008323C8's surface value table (0x0049EB40).
     void Unknown_0049EB40(int color);

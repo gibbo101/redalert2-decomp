@@ -399,3 +399,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x4F3910 super-weapon AI 79.71 (original frame 4 bytes larger: two inlined Cell locals in separate slots).
   Begin_Production 0x4E5E30 analysed (e5e30.dis). 0x4F1E50/0x4F1FF0/0x4F2190 need VectorClass ctor 0x4F8900 taken over;
   Flag_Attach 0x4E76A0 needs a retype rename. True extents: 0x4EECB0 2276 B, 0x4F1190 3264 B.
+- WDTSel.cpp after WDTSel196 (build/class-work/WDTSel196, NOTES): Select_Territory 0x72ED80 90.55 (mov eax,2 preload
+  for Voices::Say kind; needs a Conflict::Is_Territory inline), Click 0x72E430 62.14 (original calls Get_Territory out
+  of line; keep Click under auto_inline(off) or Choose_Territory stops matching), Hover 0x72E650 exact only as
+  `true ? TheMap->Get_Territory(x) : rc_ptr<Territory>()` (refused as steering; the original zeroes a temporary-
+  construction flag and copies the result: find a natural form). Undrafted: ctor 0x72D560, Show_State 0x72E780.

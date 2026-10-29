@@ -5,7 +5,7 @@
 // are selected by the pixel format code 0x007DF868; any other format builds the table inline.
 #include "shared/light_convert.hpp"
 #include "shared/hicolor.hpp"
-// @ref ?Set_Tint@LightConvertClass@@QAEXHHH_N@Z=00538aa0
+// @ref ?Set_Tint@LightConvertClass@@UAEXHHH_N@Z=00538aa0
 // @ref __real@8@3ffb8637bd05af6c6800=007a55e8
 extern "C" unsigned char DAT_007df768[];
 extern "C" int DAT_007df868;

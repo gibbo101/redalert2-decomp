@@ -15,7 +15,8 @@ public:
     virtual ~LightConvertClass();                                     // slot 0 (??_G 0x00538F30)
 
     // Rebuilds the tinted tables from the colour (0x00538AA0).
-    void Set_Tint(int red, int green, int blue, bool unknown4);
+    // Vtable slot 1 (0x007A55DC); Ion.cpp's lighting 0x00520B00 calls it through the vtable.
+    virtual void Set_Tint(int red, int green, int blue, bool unknown4);
 
     PaletteClass const *ArtPalette;                                   // +0x188
     PaletteClass const *ScreenPalette;                                // +0x18C
