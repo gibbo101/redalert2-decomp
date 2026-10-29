@@ -536,3 +536,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   92.24, shape 99.84; needs MonoClass::Clear 0x59E290 and Set_Cursor 0x59E240 declared out of line with the Mono
   population taking over their transliterated rows (re-check ctor 0x59E190, View, Text_Print). Remaining: frame slot
   order and register allocation in the map-layer/logic loops. Queue_AI group not started.
+- ownrdraw.cpp after OwnrDraw229 (NOTES, c/, s/): tooltip-label switch 0x5E22B0 71.54 (original is one else-if chain
+  with a shared `return 0`), EnumChildWindows callback 0x5E8720 51.12 (original keeps Bucket_Index 0x602020 and Get
+  0x601710 out of line inside the inlined 0x5E12A0/0x5E1CA0).
+- Startup.CPP after Startup226 (NOTES): WinMain 0x68E280 (SEH __try/__except, 10,080 B) not drafted; 0x68DC70, 0x68E040,
+  0x68E0AD, 0x691450 open.

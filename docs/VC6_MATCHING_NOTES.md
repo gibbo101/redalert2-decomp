@@ -680,3 +680,8 @@ verified on the target.
   in W (a pending candidate site) at its call; an external function of any size does not, and a small external one
   is simply inlined. Queue_AI 0x623770 is exact only with Queue_AI_Multiplayer 0x623B00 defined `static` in the unit
   (as in Red Alert's QUEUE.CPP): land them together.
+
+- Tail calls: after callee-saved pushes VC6 turns a final call into `pop; jmp` only when the callee is `__fastcall`; a
+  cdecl or stdcall callee keeps `call; pop; ret` (Prog_End 0x6909E0 -> Kill_Mouse_Thread, Startup226).
+- An `extern` declaration of a global placed after its dynamically initialised definition in the same unit makes VC6
+  emit the initializer twice; include the declaring header before the definition (Startup226 header statics).
