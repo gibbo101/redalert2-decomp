@@ -17,6 +17,10 @@ enum DiskID {
 
 class MultiMission {
 public:
+    // The map entry the session's INI reader builds (0x00671C50): file name, description
+    // (null: MSG:NoDescription), digest, official flag, comma-separated game modes (null: none).
+    MultiMission(char const *filename, unsigned short const *description, char const *digest, bool official,
+                 char const *modes, int unknown_180, int players);
     // Whether the map is on the disk (-2: its file is present; else the disk is
     // in its disk list or the list holds -1) (0x00671F00; hypothesis).
     bool Unknown_00671F00(int cd);
@@ -35,7 +39,8 @@ public:
     char unknown_58[0x15C - 0x58];          // +0x58 the map's file name (the cooperative campaign records list it)
     char unknown_15c[0x17C - 0x15C];        // +0x15C the map's digest (ModemHost 0x0059BC90 sends it)
     bool unknown_17c;                       // +0x17C official map (sent as the options IsOfficial bit; a game mode test is skipped when false and 0x0073C370 agrees)
-    char unknown_17d[0x184 - 0x17D];
+    char unknown_17d[0x180 - 0x17D];
+    int unknown_180;                        // +0x180 (constructor argument 6)
     int unknown_184;                        // +0x184 the map's player count (MPCooperative slot 37: the computers are two fewer)
     TypeList<DiskID> DiskIDs;               // +0x188 the disks the map is on (TypeList: 0x1C bytes)
     DynamicVectorClass<Wstring> GameModes;  // +0x1A4 the game modes the map allows (vtable 0x007A9664)
@@ -50,6 +55,32 @@ inline bool Is_On_Disk(TypeList<DiskID> const &list, DiskID disk)
         }
     }
     return false;
+}
+
+// MultiMission's constructors build DiskIDs and GameModes through inline expansions of the list constructors over the
+// out-of-line VectorClass constructors (0x00674AA0, 0x00674AF0): the VectorClass constructors are declared here and
+// defined in their own rows, so no unit expands them.
+template <>
+VectorClass<DiskID>::VectorClass(unsigned size, DiskID const *array);
+template <>
+VectorClass<Wstring>::VectorClass(unsigned size, Wstring const *array);
+template <>
+inline DynamicVectorClass<DiskID>::DynamicVectorClass(unsigned size, DiskID const *array)
+    : VectorClass<DiskID>(size, array)
+{
+    GrowthStep = 10;
+    ActiveCount = 0;
+}
+template <>
+inline DynamicVectorClass<Wstring>::DynamicVectorClass(unsigned size, Wstring const *array)
+    : VectorClass<Wstring>(size, array)
+{
+    GrowthStep = 10;
+    ActiveCount = 0;
+}
+template <>
+inline TypeList<DiskID>::TypeList()
+{
 }
 
 extern DynamicVectorClass<MultiMission *> unknown_multi_missions_a3d8d8;

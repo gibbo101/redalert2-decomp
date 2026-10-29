@@ -422,3 +422,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   unknown: try an inline INIClass::Load(FileClass &), Map rect accessors, string-fetch wrapper), Show_State 0x72E780
   0.827 (original calls the TerritoryCursor ctor out of line), Select_Territory 0x72ED80 0.959 (Conflicts loop load
   order), Click 0x72E430, Hover 0x72E650.
+- House.CPP after House201 (build/class-work/House201/w, NOTES): Begin_Production 0x4E5E30 78.85 (w/bp18.cpp; the
+  four tables are inlined copies of 0x4EB550/0x4EB770/0x4EB580/Set_Factory; 0x4EB810 stays a call only under
+  auto_inline(off) on its own source - acceptable only if the original never inlines it anywhere; diffs: `later`
+  store after the first Who_Can_Build_Me test, default-case `xor esi,esi` not jump-threaded), 0x4F3F40 95.45 (SIB
+  operand order at four sites), 0x4E76A0 needs a rename (void->bool, int arg->bool, +0x5308 AbstractClass*).
+  Zone map +0x5640..+0x5654 and cell array +0x15F44 missing from house.hpp (needed by 0x4F02E0, 0x4F1190).
