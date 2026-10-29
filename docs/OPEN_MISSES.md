@@ -296,3 +296,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Not started: 0x5127F0, 0x514EE0, 0x516900, 0x51A690, 0x515710, 0x51A330, 0x519500, 0x519E70, 0x515110, 0x5173C0,
   INIClass/CCINIClass ctors 0x51AD50/0x51ADE0 (emitted only with their callers). About 20 inventory extents in this
   range are wrong (0x5116A0 is about 4.4 KB); Init174's ext.py checks them.
+- Session.CPP (population-329, 0x66E0A0-~0x674FFF, RA SESSION.CPP order; Session173 open/, NOTES): Create_Connections
+  0x66EE50 99.09 (two cmp al,bl vs test al,al; needs open/owner_talk.hpp), Free_Scenario_Descriptions 0x6714B0 exact
+  in the unit but needs a DynamicVectorClass<Wstring> GameModes member at MultiMission +0x1A4, which makes a
+  multi_mission.hpp header-user population emit unaccounted COMDATs. 0x66FF90 + 0x670061 are one function split by
+  the inventory (bound decision). Not started: ctor 0x66E380, dtor 0x66EB20, Read_MultiPlayer_Settings 0x66F3A0,
+  0x6707D0, Read_Scenario_Descriptions 0x670C50, 0x671670, MultiMission ctor 0x671C50, 0x66E330. Lesson: acceptance
+  binds references per candidate, so a draft needs @ref lines for what other drafts inline into it.
