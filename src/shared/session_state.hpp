@@ -197,21 +197,34 @@ struct UnknownSessionState {
     char unknown_28ec[0x290C - 0x28EC];
     int unknown_290c;                       // +0x290C the ping class (1: below 1000 ms, 2: above)
     bool ViaPacketRouter;                   // +0x2910 (also unknown_flag_a3fba8)
-    char unknown_2911[0x293C - 0x2911];
+    char unknown_2911[0x292C - 0x2911];
+    unsigned short unknown_292c;            // +0x292C (the network reset 0x00514EE0 clears it; also unknown_forward_port_a3fbc4)
+    char unknown_292e[0x293C - 0x292E];
     UnknownSessionBlock_293C unknown_293c;  // +0x293C (MPCooperative slot 34 saves it, slot 37 restores it)
     UnknownSessionBlock_299C unknown_299c;  // +0x299C (the same)
-    char unknown_29bc[0x2FA0 - 0x29BC];
+    int unknown_29bc[128];                  // +0x29BC (the network reset 0x00514EE0 clears it)
+    int unknown_2bbc[128];                  // +0x2BBC (the network reset sets each to -1)
+    int unknown_2dbc;                       // +0x2DBC
+    int unknown_2dc0[4];                    // +0x2DC0
+    char unknown_2dd0[0x2F98 - 0x2DD0];
+    int PortBase;                           // +0x2F98 RA2.INI [MultiPlayer] PortBase (1250..1745)
+    int unknown_2f9c;                       // +0x2F9C a fixed port base (nonzero: PortBase takes it)
     UnknownSessionBlock_299C unknown_2fa0;  // +0x2FA0 (the same)
-    char unknown_2fc0[0x2FC8 - 0x2FC0];
+    bool unknown_2fc0;                      // +0x2FC0 step PortBase by 5 at the next network reset
+    char unknown_2fc1[0x2FC8 - 0x2FC1];
     // The game master (host): name and house index (-1: none). The load wait
     // 0x0065C520 clears both when it drops the master (names after TS/YR's
     // SessionClass MasterPlayerName/MasterPlayerID, hypothesis).
     unsigned short MasterPlayerName[21];    // +0x2FC8 (wide)
     char unknown_2ff2[0x2FF4 - 0x2FF2];
     int unknown_2ff4[8];                    // +0x2FF4 (Create_Connections sets each to TickCount)
-    char unknown_3014[0x301C - 0x3014];
+    bool unknown_3014;                      // +0x3014
+    char unknown_3015;
+    unsigned short unknown_3016;            // +0x3016
+    char unknown_3018[0x301C - 0x3018];
     int MasterPlayerID;                     // +0x301C
-    char unknown_3020[0x3022 - 0x3020];
+    bool unknown_3020;                      // +0x3020
+    char unknown_3021;
     UnknownSessionBlock_3022 unknown_3022;  // +0x3022 (MPCooperative slot 34 saves it, slot 37 restores it)
     char unknown_3032[0x3034 - 0x3032];
     int unknown_3034;                       // +0x3034 (also unknown_a402cc; Create_Connections clears it)
@@ -219,7 +232,10 @@ struct UnknownSessionState {
     int unknown_303c;                       // +0x303C (also unknown_a402d4; -1)
     char unknown_3040[0x3044 - 0x3040];
     int unknown_3044;                       // +0x3044 (20)
-    char unknown_3048[0x3080 - 0x3048];
+    int unknown_3048;                       // +0x3048
+    int unknown_304c;                       // +0x304C
+    int unknown_3050;                       // +0x3050 (-1)
+    char unknown_3054[0x3080 - 0x3054];
     unsigned char unknown_3080;             // +0x3080 (0x00672F10 returns it; the dialog control test 0x005E0760)
     char unknown_3081[0x3AA4 - 0x3081];
     int unknown_3aa4;                       // +0x3AA4 (MPCooperative slot 34 saves it, slot 37 restores it)

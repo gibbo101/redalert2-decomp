@@ -35,6 +35,7 @@ public:
     // Whether a connection with this ID is flagged (0x0063F4C0; hypothesis).
     unsigned char Unknown_0063F4C0(int id);
     void Unknown_0063FC90();
+    void Unknown_0063F070();                                // 0x0063F070 (empties the list; also UnknownOwnedList_0063f070::unknown_clear)
     char *Unknown_0063FB40(int index);                      // 0x0063FB40 (a connection's name)
     IPXAddressClass *Unknown_0063FA00(char *name);          // 0x0063FA00 (the address of a named connection)
     unsigned short Unknown_0063FAF0(char *name);            // 0x0063FAF0 (the id of a named connection)                // 0x0063FC90 (MPCooperative slot 37, when the flagged connection exists)

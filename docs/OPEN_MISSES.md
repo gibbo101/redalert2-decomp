@@ -556,3 +556,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   table contiguity). WolStringArray::Remove 0x7661F0 85.88. b29828 string array needs a rename (extern int Count).
 - wonline.cpp after Wonline236 (NOTES slot map, c/): CChatEventSink OnSetTeam 0x765430 90.63 (two stack slots swapped),
   OnPagedUnicode 0x762C20 90.78 (ebp saved only in the dialog branch; 0x757CC0 result in ebx).
+- Seed sweep after Sweep235 (build/class-work/Sweep235/NOTES.md, scan_atexit.py, rank80.txt): only 28 unaccepted rows
+  score >= 85 (1.2 KB), mostly static-object _$E pairs; recover them by defining the real global with its real class.
+  IsoTileType 0x529120 + VectorClass<unsigned short*> ctor 0x52ED90 exact alone but make Load 0x52E1C0 inline the ctor
+  (57.89); ProgressScreen pair 0x61ECA0/0x61ECC0 ctor inlines into the initializer. Unexamined >=85: 0x5AADD0 95.45,
+  0x7291C0, 0x732AA0, 0x6AAD40, 0x63F047.
