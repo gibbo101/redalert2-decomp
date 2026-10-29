@@ -340,3 +340,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   52.86, 0x5CAE00 ~30. Blocked: 0x5CC700 inlines accepted 0x5C9950 (population-955; owner approved moving it into
   2763), 0x5CC890 reads an int at 0xA3D2B0 that the headers declare as UnknownLobbyState/UnknownBlock_a3d2b0 (type
   decision), 0x5CA000 not drafted. About 20 larger functions and the unit start 0x5C2BA0-0x5C3D90 not started.
+- Init.CPP after Init181 (w/, NOTES): Load_Title_Page 0x516560 99.63 (pop edi one instruction early inside the
+  64-bit Audio_Now()+5000 store), 0x516F00 95.15 (score as pre.txt + draft + w/e/tail.txt; the original puts the
+  memset else-branch after the epilogue), Init_Rules 0x5129C0 45.98 (VectorClass<CCINIClass*> ctor 0x51E710 out of
+  line with the Dynamic part inline; out-of-line INIClass ctor 0x51AD50 is unaccepted and needs its own row).
+  Not started: 0x5147A0 (1842), 0x5135F0 (4356), 0x5116A0 (4420), 0x5173C0 (7807).

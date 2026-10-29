@@ -138,6 +138,10 @@ struct UnknownSerialPacket {
             char unknown_19[4];
             char Color;                 // +0x1D the player leaving
         } ScenarioInfo;
+        struct {
+            char unknown_19[0x9A - 0x19];
+            unsigned long ResponseTime; // +0x9A the sender's response time (command 0x69, ModemHost 0x0059B560)
+        } Timing;
         char unknown_19[0xFA - 0x19];   // the packet is 0xFA bytes (Reconnect_Null_Modem's send and receive copies)
     };
 };
