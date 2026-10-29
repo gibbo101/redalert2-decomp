@@ -285,3 +285,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Queue_AI_Multiplayer 0x623B00, Wait_For_Players 0x624C10, Print_CRCs 0x62A360 (11 KB), 0x62CF40, 0x62DBA0, the
   templates 0x62EA00/0x62EA40, Queue_AI 0x623770. Unit rules: ms_engine.hpp adds an initializer (use map.hpp's
   unknown_481fb0), display.hpp must precede map_view.hpp.
+- TAction.CPP after TAction172 (w/, NOTES): show text 0x6B0440 92.86 (Rules pointer register), reveal zone 0x6B0840
+  62.39 (needs map_view Unknown_0055AA50/0055A910; coordinate temporaries scheduling), reveal some 0x6B0670 43.97
+  (original keeps a Cell(half, half) temporary slot), 0x6AFD80 not drafted (Seed90 58; needs the 0x41B630 chain),
+  Execute 0x6ADAE0 (7.3 KB switch) not started. Stale inventory starts here: 0x6AFD46 is 0x6AFD50, 0x6B01A2 is
+  0x6B01A0, 0x6B02F0 is two functions (0x6B02F0, 0x6B0360), 0x6B03D0/0x6B05FD/0x6B082B/0x6B0A59 are tails or padding.

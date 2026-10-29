@@ -49,6 +49,9 @@ extern MixFileClass<CCFileClass> *ThemeMix;    // 0x00831448 THEME.MIX
 extern MixFileClass<CCFileClass> *MultiMix;    // 0x00837498 MULTI.MIX
 extern MixFileClass<CCFileClass> *MapsMix;     // 0x008374F4 MAPS%02d.MIX
 extern MixFileClass<CCFileClass> *MainMix;     // 0x008374DC MAIN.MIX
+extern MixFileClass<CCFileClass> *unknown_mix_8374f0;   // 0x008374F0 (released by 0x0051A270, reopened by 0x0051A2B0)
+// The expansion mixfiles Init_Expansion_Files opens (0x00837450).
+extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_expansion_mixes_837450;
 extern PKey FastKey;                           // 0x00839010 key the mixfiles are opened with
 
 // Checks the volume of the game disk (its debug strings name it

@@ -388,6 +388,10 @@ public:
 };
 #endif
 
+// Every unit (0x00866198; shared/unit.hpp has the full class).
+class UnitClass;
+extern DynamicVectorClass<UnitClass *> Units;
+
 // The path a search returns (0x20 bytes; FootClass 0x004C3000 copies it
 // whole to slot 305; hypothesis: Westwood's PathType).
 struct UnknownPathType {

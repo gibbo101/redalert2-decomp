@@ -192,8 +192,7 @@ public:
     wchar_t unknown_5d0[256];               // +0x5D0 the name slot 35 composes ("%s %s")
 };
 
-// Every unit (0x00866198).
-extern DynamicVectorClass<UnitClass *> Units;
+// Every unit (0x00866198): Units, declared in shared/foot.hpp.
 
 // Unit.cpp's drawing rectangle (0x00AD0490): a copy of unknown_static_rect
 // made by its dynamic initializer 0x006FA3D0; slot 312 (0x006FF3E0) offsets

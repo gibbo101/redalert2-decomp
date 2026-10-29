@@ -20,7 +20,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - The owner session restarts from this file when its context passes about 200K tokens.
 
 Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): House171 House.CPP small functions;
-TAction172 TAction.CPP; Session173 Session.CPP; Init174 Init.CPP; Terrain160 landed
+Session173 Session.CPP; Init174 Init.CPP; Null175 NullDlg/NullMgr.CPP; Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -28,7 +28,8 @@ Remove/Coordinate_Regroup rename; House164 landed Suggested_New_Team 0x4E5CF0 an
 Team165 landed 7 more TeamClass functions (4.3 KB) with the Fire_Sw Cell const & rename;
 Queue166 landed 19 Queue.CPP/Event functions (3.5 KB) with the EventClass byte-type rename;
 Techno167 landed TechnoClass Unlimbo 0x6C4610 and What_Action 0x6CC5D0; Conquer169 landed
-Special_Dialog 0x481850; Queue168 landed 8 Queue.CPP functions (4.7 KB). Windows lead: r43-r45 landed (858ffa6d); codex2 approved for the three ScoreFontClass methods;
+Special_Dialog 0x481850; Queue168 landed 8 Queue.CPP functions (4.7 KB); TAction172
+landed 12 trigger actions (CDTimerClass::Value now tests Started unsigned, as FTIMER.H). Windows lead: r43-r45 landed (858ffa6d); codex2 approved for the three ScoreFontClass methods;
 the user approved the map-generator 0xA6FD68/A0 ownership rename (lead delivers it alone, rebased on main). Lanes read docs/WESTWOOD_SOURCES.md before drafting library members. Debt154 merged the two 0x4F52B0 names
 (b24cc60c). Inf148 (InfantryClass) parked, zero bytes.
 Landed this evening: Modem141, Base142 (Base unit complete), Ref143 (Release 0x639720, CampaignProperties and
@@ -53,8 +54,7 @@ a plan names: codex2's d/ is about 30 GB). Bounds rounds (r18, r26, r28, r31, r3
 (0x715230), Cd124 (0x715300), Coop122 (fill combo 0x5B70B0, fill list 0x5B71E0; 0x5B8490 open), Seed123 and
 Seed125 (zero bytes; Tactical family parked; 0x6AAFD0 is a register-tie near miss for Windows). Their misses
 are in OPEN_MISSES.md.
-Next-lane candidates (ranked unit table: build/class-work/Survey170/UNITS.md): NullDlg/NullMgr.CPP,
-Scenario.CPP, PlanMgr.cpp, netshare.cpp, CampScor.cpp; Voc_Static_Save 0x714A90 74.12, Seed116's fresh.json (613 functions in 0x680000-0x770000; sweep work, so
+Next-lane candidates (ranked unit table: build/class-work/Survey170/UNITS.md): Scenario.CPP, PlanMgr.cpp, netshare.cpp, CampScor.cpp; Voc_Static_Save 0x714A90 74.12, Seed116's fresh.json (613 functions in 0x680000-0x770000; sweep work, so
 Windows), the rest of OPEN_MISSES.md.
 
 Windows: one Codex lead (LEAD.md in the coordination folder) staffing codex1 pathfinding

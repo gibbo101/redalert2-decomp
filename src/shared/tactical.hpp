@@ -80,6 +80,9 @@ public:
     void Unknown_006A45A0(Surface *surface, bool redraw, int pass);
     // A screen point converted for the techno types' smoke offsets (0x006A2900).
     Point2D Unknown_006A2900(Point2D const &point);
+    // The view position (0x006A67D0: the offset +0xD64/+0xD68 less +0xB0/+0xB4;
+    // the View commands store the cell under it).
+    Point2D Unknown_006A67D0();
     // Moves the view to a point (0x006A66B0; radar slot 52).
     void Unknown_006A66B0(Point2D const &point);
     void Unknown_006A66B0(CoordStruct const &coord);    // the same entry, given a coordinate

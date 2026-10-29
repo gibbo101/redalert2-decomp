@@ -116,6 +116,7 @@ WIN32_IMPORT DWORD WINAPI timeGetTime();
 WIN32_IMPORT int WINAPI ShowCursor(BOOL show);
 WIN32_IMPORT BOOL WINAPI GetCursorPos(POINT *point);
 WIN32_IMPORT BOOL WINAPI GetClientRect(HWND window, RECT *rect);
+WIN32_IMPORT BOOL WINAPI EndDialog(HWND window, int result);
 WIN32_IMPORT BOOL WINAPI ClientToScreen(HWND window, POINT *point);
 WIN32_IMPORT BOOL WINAPI GetWindowRect(HWND window, RECT *rect);
 WIN32_IMPORT BOOL WINAPI SetRect(RECT *rect, int left, int top, int right, int bottom);
