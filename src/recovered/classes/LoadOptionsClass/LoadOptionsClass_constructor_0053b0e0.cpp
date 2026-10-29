@@ -1,5 +1,6 @@
 // LoadOptionsClass default saved-game file list. Original0053B0E0,75body+5padding.
 #define VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
+#define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #include "shared/map_seed.hpp"

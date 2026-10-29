@@ -29,6 +29,7 @@ public:
     char Load_Dialog_0053b190();
     char Save_Dialog_0053b1b0(wchar_t *description);
     char Delete_Dialog_0053b1e0();
+    void Fill_List_0053c040(HWND list); // physical ECX/one HWND/RET4; operation/void intent hypotheses
     bool Has_Saved_Games_0053c5c0();     // whether any save file other than SAVEGAME.NET exists for the extension (0x0053C5C0)
     int unknown_04;
     char const *Extension; // +08: SAV in base, SED in MapSeed

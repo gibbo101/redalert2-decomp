@@ -11,6 +11,7 @@ typedef unsigned short wchar_t;
 #endif
 class FileEntryClass {
 public:
+    FileEntryClass(); // real53C09A/53C263 construction hypothesis; ordinary inline definition in owning unit
     wchar_t Description[128]; // +000
     char Filename[32]; // +100
     int unknown_120;

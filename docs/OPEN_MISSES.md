@@ -566,3 +566,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   `jne 0x513E55` at 0x513E6B vs our cross-jump) and Init238/w/best_select_game_q.cpp (RA per-arm Dialog checks: modem
   code exact; only the while(process) back-edge reload order `or edi,-1; mov esi,1` differs; reshape the internet case
   and the case 16/17 switch). Its session_state edits rebase on Init238 r1. Init_Game 0x5116A0 (4420 B) not drafted.
+- ownrdraw.cpp after OwnrDraw237 (NOTES, v4/, c/): 0x5FDF40 75.78 and 0x5FE020 47.47 (blue channel from a register copy
+  of color in the original; 0x5FE020 also needs a rename: int return, ECX surface, EDX text, retypes 0x536D30). 0x600460
+  exact only as an inline (needs an out-of-line caller). The 0x200 record is modelled three ways (UnknownControlRecord,
+  UnknownListOwner_00600350, UnknownNodeList_006003d0): merge by rename spec. Population-1646 fails as one composite.
