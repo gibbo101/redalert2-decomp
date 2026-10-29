@@ -669,3 +669,7 @@ verified on the target.
   data (e.g. CDFileClass's search-list statics via cc_file_class.hpp) into a widely included header renumbers every
   unit's `_$E` symbols and the build fails "Function symbol ambiguous/missing: _$EN". Keep such includes out of
   shared headers that units include for unrelated declarations.
+
+- (TAction211) A coordinate built through an inline `XYZ_Coord(x, y, z)` evaluates its arguments right to left
+  (Z, Y, X) like any call; that, with `Cell spot = waypoint - Cell(size / 2, size / 2)`, reproduces the original's
+  "Cell temporary" order in the reveal actions.

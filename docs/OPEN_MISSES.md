@@ -473,3 +473,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   split UnknownSessionState (with CCFileClass RecordFile) out of unknown_globals.hpp into its own header included only by
   units that use the session, then land the dtor 0x66EB20 (exact, d/r1). Ctor 0x66E380 98.59 (~280 store orders tried;
   idea: 0x2C0-0x2EC or 0x638-0x63A is a nested struct with an inline ctor/clear); 0x673090 Allocate_Ports 87.47.
+- TAction.CPP after TAction211 (build/class-work/TAction211/w, NOTES): iron curtain 0x6B26D0 96.34, reveal 0x6B1050 92.11,
+  waypoint sound 0x6B0EC0 85.07 (esi/edi), show text 0x6B0440 92.86. Not started: 0x6AFD80 (755), Execute 0x6ADAE0
+  (7.3 KB switch). Type debt: 0x6B2400/0x6B2860 cast `(AbstractClass *)&Map[coord]` because map_cell.hpp's stand-in
+  CellClass does not derive from AbstractClass.
