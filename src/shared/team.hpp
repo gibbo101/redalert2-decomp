@@ -26,6 +26,7 @@
 #include "shared/cd_timer.hpp"
 #include "shared/techno.hpp"   // UnknownTimer423F60
 #include "shared/script.hpp"
+#include "shared/lightning_storm.hpp"   // the storm calls (0x0051F930, 0x0051FBB0, 0x0051FC50)
 
 class TeamTypeClass;
 class ScriptClass;
@@ -34,9 +35,6 @@ class FootClass;
 class ScriptMissionClass;
 
 // Free functions of other units the script handlers call (hypotheses).
-bool Unknown_0051FC50();                                            // 0x0051FC50 (a flag byte at 0x00A51934)
-void Unknown_0051FBB0();                                            // 0x0051FBB0 (sets 0x00A51944 when that flag is set)
-void __fastcall Unknown_0051F930(int arg1, int arg2, Cell arg3, int arg4);   // 0x0051F930
 void __fastcall Unknown_006D8FD0(FootClass *member, int arg2);       // 0x006D8FD0
 int __fastcall Unknown_006220E0(int value);                          // 0x006220E0 (the target kind for a script argument; hypothesis)
 

@@ -6,6 +6,7 @@
 #define RA2_SHARED_LIGHT_CONVERT_HPP
 
 #include "shared/convert.hpp"
+#include "shared/vector_class_decl.hpp"
 
 class LightConvertClass : public ConvertClass {
 public:
@@ -30,5 +31,9 @@ public:
     int StoredBlue;                                                   // +0x1AC
     bool unknown_1b0;                                                 // +0x1B0
 };
+
+// Every light converter (0x00832398; hypothesis: the tile drawers; moved from
+// shared/isometric_tile_type.hpp for Ion.cpp's lighting 0x00520B00).
+extern DynamicVectorClass<LightConvertClass *> unknown_LightConvertClass_list_00832398;
 
 #endif

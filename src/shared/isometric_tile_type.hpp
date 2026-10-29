@@ -19,8 +19,7 @@
 #include "shared/object_type.hpp"
 #include "shared/light_convert.hpp"
 
-// Every light converter (0x00832398; hypothesis: the tile drawers).
-extern DynamicVectorClass<LightConvertClass *> unknown_LightConvertClass_list_00832398;
+// Every light converter (0x00832398): shared/light_convert.hpp.
 
 extern "C" GUID const CLSID_IsometricTileTypeClass;
 

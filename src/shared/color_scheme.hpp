@@ -44,4 +44,19 @@ ConvertClass *__fastcall Unknown_00663690(HSVClass const *base, void *unknown_a,
 extern char const unknown_table_7f264c[];                  // 0x007F264C
 extern DynamicVectorClass<ColorScheme *> ColorSchemes;      // 0x00AB6EF8 (Vector at 0x00AB6EFC)
 
+
+// The lists of colour schemes kept per name at 0x00A76414 (made on first use;
+// RulesClass::Colors registers its colours there through 0x00603A60). An
+// iterator over the lists (0x00603640 returns the next one, null at the end)
+// and the count 0x00603C10 returns (the +0x10 of the table's +4 list).
+// Hypotheses: names and the element type.
+struct UnknownSchemeListIterator {
+    UnknownSchemeListIterator() : Bucket(0), Index(0), Done(false) {}
+    DynamicVectorClass<ColorScheme *> *Next();   // 0x00603640
+    int Bucket;     // +0x0
+    int Index;      // +0x4
+    bool Done;      // +0x8
+};
+int Unknown_00603C10();                         // 0x00603C10
+
 #endif

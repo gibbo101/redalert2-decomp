@@ -134,6 +134,7 @@ public:
     void Submit(ObjectClass *object);                                           // 0x00499A40
     void Remove(ObjectClass *object);                                           // 0x00499A90
     Cell Unknown_0049A700(int edge, Cell const &cell1, Cell const &cell2, int arg4, int arg5, int arg6);   // 0x0049A700
+    void Unknown_0049E5E0();                                                    // 0x0049E5E0 (every cell runs 0x004798F0)
     ObjectClass *Unknown_0049EC40();                                            // 0x0049EC40
     void Unknown_0049EC60(ObjectClass *object);                                 // 0x0049EC60
     Cell Unknown_004994D0(Cell const &cell);                                    // 0x004994D0

@@ -29,7 +29,7 @@ public:
     // and loadout lists are rebuilt, the mission timer text reloaded from its
     // label (0x0065B780).
     UnknownIDSource(NoInitClass const &noinit);
-    // 0x0051FC50 is a free function (shared/team.hpp): it reads the byte at 0x00A51934.
+    // 0x0051FC50 is a free function (shared/lightning_storm.hpp): it reads the byte at 0x00A51934.
     // Adds the scenario's state to a CRC (0x00662E00; Game_CRC).
     void Compute_CRC(WWCRCEngine &crc) const;
     long Next_ID();                             // 0x00663170 (name hypothesis)
