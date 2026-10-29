@@ -2744,7 +2744,15 @@
    "iat": "0079a584",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkSetSoundSystem@8(void)"
+   "signature": "undefined _BinkSetSoundSystem@8(void)",
+   "seed_declaration": {
+    "name": "BinkSetSoundSystem",
+    "convention": "__stdcall",
+    "parameters": 2,
+    "signature": "int __stdcall BinkSetSoundSystem(void *open, unsigned long param)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkSetSoundSystem_8"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2757,7 +2765,15 @@
    "iat": "0079a58c",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkGetError@0(void)"
+   "signature": "undefined _BinkGetError@0(void)",
+   "seed_declaration": {
+    "name": "BinkGetError",
+    "convention": "__stdcall",
+    "parameters": 0,
+    "signature": "char * __stdcall BinkGetError(void)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkGetError_0"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2765,7 +2781,15 @@
    "iat": "0079a590",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkOpen@8(void)"
+   "signature": "undefined _BinkOpen@8(void)",
+   "seed_declaration": {
+    "name": "BinkOpen",
+    "convention": "__stdcall",
+    "parameters": 2,
+    "signature": "struct BinkHandleSize * __stdcall BinkOpen(char const *name, unsigned flags)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkOpen_8"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2773,7 +2797,15 @@
    "iat": "0079a594",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkSetVolume@8(void)"
+   "signature": "undefined _BinkSetVolume@8(void)",
+   "seed_declaration": {
+    "name": "BinkSetVolume",
+    "convention": "__stdcall",
+    "parameters": 2,
+    "signature": "void __stdcall BinkSetVolume(struct BinkHandleSize *bink, int volume)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkSetVolume_8"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2781,7 +2813,15 @@
    "iat": "0079a598",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkClose@4(void)"
+   "signature": "undefined _BinkClose@4(void)",
+   "seed_declaration": {
+    "name": "BinkClose",
+    "convention": "__stdcall",
+    "parameters": 1,
+    "signature": "void __stdcall BinkClose(struct BinkHandleSize *bink)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkClose_4"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2789,7 +2829,15 @@
    "iat": "0079a59c",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkDDSurfaceType@4(void)"
+   "signature": "undefined _BinkDDSurfaceType@4(void)",
+   "seed_declaration": {
+    "name": "BinkDDSurfaceType",
+    "convention": "__stdcall",
+    "parameters": 1,
+    "signature": "unsigned __stdcall BinkDDSurfaceType(void *surface)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkDDSurfaceType_4"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2805,7 +2853,15 @@
    "iat": "0079a5a4",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkPause@8(void)"
+   "signature": "undefined _BinkPause@8(void)",
+   "seed_declaration": {
+    "name": "BinkPause",
+    "convention": "__stdcall",
+    "parameters": 2,
+    "signature": "int __stdcall BinkPause(struct BinkHandleSize *bink, int pause)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkPause_8"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2813,7 +2869,15 @@
    "iat": "0079a5a8",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkNextFrame@4(void)"
+   "signature": "undefined _BinkNextFrame@4(void)",
+   "seed_declaration": {
+    "name": "BinkNextFrame",
+    "convention": "__stdcall",
+    "parameters": 1,
+    "signature": "void __stdcall BinkNextFrame(struct BinkHandleSize *bink)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkNextFrame_4"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2821,7 +2885,15 @@
    "iat": "0079a5ac",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkCopyToBuffer@28(void)"
+   "signature": "undefined _BinkCopyToBuffer@28(void)",
+   "seed_declaration": {
+    "name": "BinkCopyToBuffer",
+    "convention": "__stdcall",
+    "parameters": 7,
+    "signature": "int __stdcall BinkCopyToBuffer(struct BinkHandleSize *bink, void *dest, int destpitch, unsigned destheight, unsigned destx, unsigned desty, unsigned flags)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkCopyToBuffer_28"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2829,7 +2901,15 @@
    "iat": "0079a5b0",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkDoFrame@4(void)"
+   "signature": "undefined _BinkDoFrame@4(void)",
+   "seed_declaration": {
+    "name": "BinkDoFrame",
+    "convention": "__stdcall",
+    "parameters": 1,
+    "signature": "int __stdcall BinkDoFrame(struct BinkHandleSize *bink)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkDoFrame_4"
+   }
   },
   {
    "dll": "binkw32.dll",
@@ -2837,7 +2917,15 @@
    "iat": "0079a5b4",
    "convention": "unknown",
    "parameters": 0,
-   "signature": "undefined _BinkWait@4(void)"
+   "signature": "undefined _BinkWait@4(void)",
+   "seed_declaration": {
+    "name": "BinkWait",
+    "convention": "__stdcall",
+    "parameters": 1,
+    "signature": "int __stdcall BinkWait(struct BinkHandleSize *bink)",
+    "model_source": "src/shared/bink.hpp: existing simplified canonical declarations; original opaque layout/source ABI not newly inferred",
+    "source_alias": "_BinkWait_4"
+   }
   }
  ]
 }

@@ -15,6 +15,8 @@ import json
 from pathlib import Path
 import re
 import sys
+from seed_import_aliases import AliasRefusal, check_generated_import_names
+from seed_import_alias_facts import recorded_direct_imports
 
 REPOSITORY = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -2490,10 +2492,15 @@ def indexed_switch_artifacts(body, entry, params=(), facts=None):
     return body, notes
 
 
-def seed(entry, inventory, accepted):
+def seed(entry, inventory, accepted, _import_aliases=True):
     text = inventory.decompiled(entry)
     if text is None:
         raise ValueError('No Ghidra export for %08x' % entry)
+    alias_imports = {}
+    if _import_aliases:
+        macros = set(re.findall(r'^\s*#\s*define\s+(\w+)',
+            (REPOSITORY / 'src/shared/ghidra_types.hpp').read_text(), re.M))
+        text, alias_imports = recorded_direct_imports(text, import_facts(), parse_header, stack_bytes, macros)
     ret, conv, name, params, (start, end) = parse_header(text)
     conv, params = fit_convention(conv, params, stack_cleanup(inventory.function(entry)[1]),
                                   conv == '__thiscall')
@@ -2551,9 +2558,13 @@ def seed(entry, inventory, accepted):
         body, _ = declare_callee(body, name, (ret, conv, params), this_name)
         body = body.replace('Callee_%08x' % entry, 'Owner_%08x' % entry)
     imports = imported_calls(body)
+    imports.update(alias_imports)
+    alias_declarations = {}
     for api, fact in sorted(imports.items()):
         body, declaration = declare_import(body, api, fact)
         declarations.append(declaration)
+        if api in alias_imports:
+            alias_declarations[api] = declaration
     for library, address in sorted(named_calls(body, inventory).items()):
         if library in imports:
             continue
@@ -2598,9 +2609,15 @@ def seed(entry, inventory, accepted):
     # A private namespace per seed lets accepted seeds share one compiler
     # translation unit without clashing declarations or cross-seed inlining;
     # every mangled name still carries the FUN_ address.
+    preamble = sdk_preamble(body+'\n'+'\n'.join(declarations), params, ret)
+    if alias_imports:
+        try:
+            check_generated_import_names(declarations + [preamble], alias_declarations)
+        except AliasRefusal:
+            return seed(entry, inventory, accepted, _import_aliases=False)
     return '\n'.join(documentation(entry, inventory, text[start:end].strip(), notes) +
                      [MARKER, INCLUDE, '', 'namespace seed_%08x {' % entry, '',
-                      sdk_preamble(body+'\n'+'\n'.join(declarations), params, ret), ''] +
+                      preamble, ''] +
                      (declarations + [''] if declarations else []) +
                      [definition.rstrip(), '', '}  // namespace seed_%08x' % entry, ''])
 

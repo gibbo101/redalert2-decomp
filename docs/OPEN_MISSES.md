@@ -554,3 +554,5 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - wonline.cpp after Wonline230 (one TU 0x73A6F0-0x7683B0, NOTES unit table): seven dictionary static destructors
   0x73AB20.. 98.95 (load order at the shrink-loop bottom); their exact initializers land only with them (initializer
   table contiguity). WolStringArray::Remove 0x7661F0 85.88. b29828 string array needs a rename (extern int Count).
+- wonline.cpp after Wonline236 (NOTES slot map, c/): CChatEventSink OnSetTeam 0x765430 90.63 (two stack slots swapped),
+  OnPagedUnicode 0x762C20 90.78 (ebp saved only in the dialog branch; 0x757CC0 result in ebx).
