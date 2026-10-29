@@ -19,7 +19,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Init181 Init.CPP third pass; PlanMgr178 PlanMgr.cpp;Netshare179 netshare.cpp; CampScor180 CampScor.cpp; Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Init181 Init.CPP third pass; PlanMgr178 PlanMgr.cpp;Netshare179 netshare.cpp; Modem182 ModemHst.cpp/ModemGst.cpp; Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -33,7 +33,8 @@ functions (19 CommandClass Execute slots, 3.6 KB); Session173 landed
 9 Session.CPP functions (2.3 KB) with a rename; Scenario177 landed Set_Defaults 0x65B830;
 Null175 landed 17 null-modem functions (11.3 KB); House171 landed 14
 House.CPP functions (4.1 KB) with the Flag_To_Win/Lose rename; Init176 landed 7 Init.CPP
-functions (3.4 KB) with the variadic 0x496460 rename. Windows lead: r43-r45 landed (858ffa6d); codex2 approved for the three ScoreFontClass methods;
+functions (3.4 KB) with the variadic 0x496460 rename; CampScor180 landed
+12 CampScor.cpp functions (3.8 KB; unit complete but two near misses). Windows lead: r43-r45 landed (858ffa6d); codex2 approved for the three ScoreFontClass methods;
 the user approved the map-generator 0xA6FD68/A0 ownership rename (lead delivers it alone, rebased on main). Lanes read docs/WESTWOOD_SOURCES.md before drafting library members. Debt154 merged the two 0x4F52B0 names
 (b24cc60c). Inf148 (InfantryClass) parked, zero bytes.
 Landed this evening: Modem141, Base142 (Base unit complete), Ref143 (Release 0x639720, CampaignProperties and

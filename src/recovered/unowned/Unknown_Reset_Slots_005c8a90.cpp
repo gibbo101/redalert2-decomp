@@ -3,7 +3,8 @@
 // network tests) get the first fixed entry, the rest the second; the slot
 // before the table is set to -1, the lobby state is told and two words clear.
 #include "shared/lobby.hpp"
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_open_entry_a72d2c@@3PAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_closed_entry_a72d30@@3PAUNodeNameType@@A=00a72d30
 // @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98
 // @ref ?unknown_lobby_a3fa94@@3HA=00a3fa94
 // @ref ?unknown_lobby_a728e4@@3GA=00a728e4
@@ -27,10 +28,10 @@ void Unknown_Reset_Slots_005c8a90()
         limit = 8;
     }
     for (int i = 0; i < limit; i++) {
-        unknown_player_slots_a3fa98[i] = unknown_lobby_entries_a72d2c[0];
+        unknown_player_slots_a3fa98[i] = unknown_open_entry_a72d2c;
     }
     for (int j = limit; j < 8; j++) {
-        unknown_player_slots_a3fa98[j] = unknown_lobby_entries_a72d2c[1];
+        unknown_player_slots_a3fa98[j] = unknown_closed_entry_a72d30;
     }
     unknown_lobby_a3fa94 = -1;
     unknown_lobby_state_a3d2b0.Unknown_00672810();

@@ -23,7 +23,8 @@ struct NodeNameType {
     int unknown_63;                 // +0x63
     int unknown_67;                 // +0x67 (cleared by 0x005C9700 for every entry but the host's)
     int unknown_6b;                 // +0x6B
-    char unknown_6f[0x75 - 0x6f];
+    int unknown_map_state_6f;       // +0x6F the player's map state (0: no map, 2: transfer, 1: the host; 0x005C3F00)
+    char unknown_73[0x75 - 0x73];
     int unknown_66e290();
     int unknown_66e2a0();
     int Get_Color_0066e2b0();          // 0x0066E2B0 the colour (+0x53; -2 when +0x57 is -2 and +0x53 is -1)

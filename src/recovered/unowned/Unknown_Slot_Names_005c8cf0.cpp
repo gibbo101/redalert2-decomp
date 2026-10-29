@@ -6,7 +6,12 @@
 // @ref ??_C@_13JKDK@?$AA?0?$AA?$AA@=007e5c64
 // @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98
 // @ref ?unknown_player_a72d44@@3PAUNodeNameType@@A=00a72d44
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_open_entry_a72d2c@@3PAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_closed_entry_a72d30@@3PAUNodeNameType@@A=00a72d30
+// @ref ?unknown_easy_ai_entry_a72d34@@3PAUNodeNameType@@A=00a72d34
+// @ref ?unknown_medium_ai_entry_a72d38@@3PAUNodeNameType@@A=00a72d38
+// @ref ?unknown_hard_ai_entry_a72d3c@@3PAUNodeNameType@@A=00a72d3c
+// @ref ?unknown_waiting_entry_a72d40@@3PAUNodeNameType@@A=00a72d40
 // @ref ??0WideString@@QAE@XZ=0076f9b0
 // @ref ??1WideString@@QAE@XZ=0076fa50
 // @ref ??1Wstring@@QAE@XZ=0076d9e0
@@ -23,10 +28,10 @@ void __fastcall Unknown_Slot_Names_005c8cf0(wchar_t *list)
     for (int i = 0; i < 8; i++) {
         NodeNameType *entry = unknown_player_slots_a3fa98[i];
         WideString name;
-        if (entry == 0 || entry == unknown_lobby_entries_a72d2c[0] || entry == unknown_lobby_entries_a72d2c[1] ||
-            entry == unknown_lobby_entries_a72d2c[5] || entry == unknown_player_a72d44 ||
-            entry == unknown_lobby_entries_a72d2c[2] || entry == unknown_lobby_entries_a72d2c[3] ||
-            entry == unknown_lobby_entries_a72d2c[4]) {
+        if (entry == 0 || entry == unknown_open_entry_a72d2c || entry == unknown_closed_entry_a72d30 ||
+            entry == unknown_waiting_entry_a72d40 || entry == unknown_player_a72d44 ||
+            entry == unknown_easy_ai_entry_a72d34 || entry == unknown_medium_ai_entry_a72d38 ||
+            entry == unknown_hard_ai_entry_a72d3c) {
             Wstring text = Unknown_Lobby_Entry_Name_005cd0e0(entry);
             name = Wstring_To_Wide(text);
         } else {

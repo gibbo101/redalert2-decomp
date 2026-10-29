@@ -49,6 +49,27 @@ extern HouseClass *unknown_player_a35db4;  // 0x00A35DB4 the player's house
 // moved from shared/radar.hpp).
 extern int unknown_int_a3d548;
 extern int unknown_game_mode_a3d298;  // 0x00A3D298
+// The players of a multiplayer game (0x00A3D558, session +0x2C0; Red Alert's Session.MaxPlayers;
+// moved from shared/queue.hpp, which pulls header statics into the netshare unit).
+extern int unknown_max_players_a3d558;
+// The observer mode switch ([MultiPlayer] ObserverMode of RA2.INI, 0x00A72C68; moved from shared/wol_sink.hpp).
+extern int unknown_a72c68;
+// Enables or disables the first session player's side and colour combo boxes unless that player
+// is in the observer slot (0x005CD030; moved from shared/wol_sink.hpp).
+typedef struct HWND__ *HWND;
+void __fastcall Unknown_005cd030(HWND dialog, bool value);
+// The World Online chat object, 0 when not connected (0x00A72CFC; moved from shared/wol_sink.hpp).
+namespace WOL {
+struct IChat;
+}
+extern WOL::IChat *unknown_chat_a72cfc;
+// Adds a formatted line to the chat display (hypothesis; 0x005C2C80; moved from shared/wol_sink.hpp).
+void __cdecl Unknown_005C2C80(int color, unsigned short const *format, ...);
+// The session's map name (0x00A3D342, session +0xAA; the lobby's map messages print it).
+extern unsigned short unknown_map_name_a3d342[];
+// 0x005159B0 (the lobby dialog opener calls it with 0, true before creating its dialog; moved from
+// shared/ms_message_box.hpp).
+void __fastcall unknown_5159b0(int unknown1, bool unknown2);
 extern int unknown_a3d3b4;            // 0x00A3D3B4 (session +0x11C)
 extern char unknown_name_a3d3a0[];    // 0x00A3D3A0 (the local nick name)
 extern int unknown_a3d3bc;            // 0x00A3D3BC (session +0x124; the modem guest's colour list choice)
@@ -272,9 +293,9 @@ public:
     virtual void unknown_slot7();
     virtual void unknown_slot8();
     virtual void unknown_slot9();
-    virtual void unknown_slot10();
+    virtual int unknown_slot10();                        // slot 10 (the lobby: the default country in game modes 3 and 4; 0x005CA3F0)
     virtual void unknown_slot11();
-    virtual void unknown_slot12();
+    virtual bool unknown_slot12();                       // slot 12 (the lobby: the slot count is not limited; 0x005CB300)
     virtual void unknown_slot13();
     virtual void unknown_slot14();
     virtual void unknown_slot15();
@@ -294,7 +315,7 @@ public:
     virtual void unknown_slot29();                       // slot 29 (0x0065E8C0, after slot 28)
     virtual void unknown_slot30();
     virtual void unknown_slot31();
-    virtual void unknown_slot32();
+    virtual int unknown_slot32();                        // slot 32 (the lobby: a player limit, -1 for none; 0x005C65A0)
     virtual void unknown_slot33();
     virtual void unknown_slot34();
     virtual void unknown_slot35(int arg);                // slot 35 (Do_Lose 0x0065DEC0 with 0 when there is no replay)

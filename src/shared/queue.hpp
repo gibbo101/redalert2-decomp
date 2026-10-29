@@ -296,8 +296,6 @@ extern int unknown_trap_print_crc_a40314;
 extern bool unknown_flag_ab62e8;
 // The frames between packets (0x00A3D564, session +0x2CC; Red Alert's Session.FrameSendRate).
 extern unsigned int unknown_frame_send_rate_a3d564;
-// The players of a multiplayer game (0x00A3D558, session +0x2C0; Red Alert's Session.MaxPlayers).
-extern int unknown_max_players_a3d558;
 // The mouse position a playback last saw (0x00A76B70, 0x00A76C78; Red Alert's
 // Queue_Playback statics mx, my).
 extern int unknown_mouse_x_a76b70;

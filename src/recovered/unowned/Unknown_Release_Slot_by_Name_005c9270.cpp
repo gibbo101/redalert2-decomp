@@ -4,7 +4,8 @@
 // goes to the first fixed entry within the slot limit and to the second beyond it.
 #include "shared/lobby.hpp"
 // @ref ?unknown_player_a72d44@@3PAUNodeNameType@@A=00a72d44
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_open_entry_a72d2c@@3PAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_closed_entry_a72d30@@3PAUNodeNameType@@A=00a72d30
 // @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98
 // @ref ?unknown_lobby_flag_7e6d90@@3HA=007e6d90
 // @ref ?unknown_game_mode_a3d298@@3HA=00a3d298
@@ -33,9 +34,9 @@ void __fastcall Unknown_Release_Slot_by_Name_005c9270(char const *name)
                 unknown_player_slots_a3fa98[i] = unknown_player_a72d44;
                 return;
             }
-            NodeNameType *entry = unknown_lobby_entries_a72d2c[0];
+            NodeNameType *entry = unknown_open_entry_a72d2c;
             if (i >= limit) {
-                entry = unknown_lobby_entries_a72d2c[1];
+                entry = unknown_closed_entry_a72d30;
             }
             unknown_player_slots_a3fa98[i] = entry;
             return;

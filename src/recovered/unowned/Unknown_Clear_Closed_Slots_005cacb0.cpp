@@ -6,15 +6,20 @@
 #include "shared/lobby.hpp"
 #include "shared/win32_api.hpp"
 // @ref __imp__SendDlgItemMessageA@20=0079a484
-// @ref ?unknown_lobby_entries_a72d2c@@3PAPAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_open_entry_a72d2c@@3PAUNodeNameType@@A=00a72d2c
+// @ref ?unknown_closed_entry_a72d30@@3PAUNodeNameType@@A=00a72d30
+// @ref ?unknown_easy_ai_entry_a72d34@@3PAUNodeNameType@@A=00a72d34
+// @ref ?unknown_medium_ai_entry_a72d38@@3PAUNodeNameType@@A=00a72d38
+// @ref ?unknown_hard_ai_entry_a72d3c@@3PAUNodeNameType@@A=00a72d3c
 // @ref ?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A=00a3fa98
 // @ref ?unknown_lobby_a3d2dc@@3PAHA=00a3d2dc
 // @ref ?unknown_lobby_a3d2fc@@3PAHA=00a3d2fc
 // @ref ?unknown_lobby_a3d31c@@3PAHA=00a3d31c
-// @ref ?Unknown_005c9b90@@YIXPAUHWND__@@HH@Z=005c9b90
+
 // @ref ?unknown_game_mode_a3d298@@3HA=00a3d298
 // @ref ?unknown_73c370@@YA_NXZ=0073c370
 // @ref ?unknown_73c3a0@@YA_NXZ=0073c3a0
+// @ref ?Unknown_005c9b90@@YIXPAUHWND__@@H_N@Z=005c9b90
 
 bool __fastcall Unknown_Clear_Closed_Slots_005cacb0(HWND dialog)
 {
@@ -50,13 +55,13 @@ bool __fastcall Unknown_Clear_Closed_Slots_005cacb0(HWND dialog)
         }
         WPARAM selected = SendDlgItemMessageA(dialog, id, 0x147, 0, 0);
         LRESULT data = SendDlgItemMessageA(dialog, id, 0x150, selected, 0);
-        if (data != 0 && (data == (LRESULT)unknown_lobby_entries_a72d2c[2] ||
-                          data == (LRESULT)unknown_lobby_entries_a72d2c[3] ||
-                          data == (LRESULT)unknown_lobby_entries_a72d2c[4])) {
+        if (data != 0 && (data == (LRESULT)unknown_easy_ai_entry_a72d34 ||
+                          data == (LRESULT)unknown_medium_ai_entry_a72d38 ||
+                          data == (LRESULT)unknown_hard_ai_entry_a72d3c)) {
             if (i < limit) {
-                unknown_player_slots_a3fa98[i] = unknown_lobby_entries_a72d2c[0];
+                unknown_player_slots_a3fa98[i] = unknown_open_entry_a72d2c;
             } else {
-                unknown_player_slots_a3fa98[i] = unknown_lobby_entries_a72d2c[1];
+                unknown_player_slots_a3fa98[i] = unknown_closed_entry_a72d30;
             }
             Unknown_005c9b90(dialog, i, 0);
             unknown_lobby_a3d2dc[i] = -1;

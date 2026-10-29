@@ -330,3 +330,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   schedules the object-address lea/mov ecx after the pushes); a unit doing CCINIClass new/delete emits ??_GCCINIClass
   and ??_GGenericNode, which need ArtINI_init_0040de40.cpp's @ref block; queue.hpp's include chain ahead of 0x515710
   grows Delete_All_Objects by 64 bytes.
+- CampScor.cpp (population-423) after CampScor180 (misses/, NOTES): end-screen dialog proc 0x467330 93.49 (shape
+  99.20; ebp pushed right after the dialog-handler early return in the original), Presentation 0x466A50 98.98 (now as
+  a whole-unit TU: misses/tu_...; use unknown_session_a3d298.Scores/.ScoreCount and controls_7d1484[i][5]; the
+  ctor draft must also define DYNAMIC_DELETE_OBJECT, DYNAMIC_DELETE_INDEX and VECTOR_CLEAR to land it). Inventory
+  rows 0x465D01, 0x465F96, 0x46622A, 0x466754, 0x4669E8, 0x46743A, 0x4676CF, 0x467963 are false entries.

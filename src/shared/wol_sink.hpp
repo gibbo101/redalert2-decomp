@@ -234,8 +234,6 @@ void Unknown_0075B590();                                // 0x0075B590
 void Unknown_0075B2D0();                                // 0x0075B2D0
 void __fastcall Unknown_0073FEE0(int arg1, bool arg2);  // 0x0073FEE0
 void __fastcall Unknown_00741750(WOL::User *user);      // 0x00741750 (a user left the channel)
-// Adds a formatted line to the chat display (hypothesis; 0x005C2C80).
-void __cdecl Unknown_005C2C80(int color, wchar_t const *format, ...);
 // Converts a narrow string into wide characters (0x006FA0C0; -1: to its end).
 void __fastcall Unknown_006FA0C0(wchar_t *buffer, char const *text, int length);
 extern int unknown_color_7a7360;        // 0x007A7360 (a chat colour)
@@ -331,7 +329,6 @@ struct WolPlayerData {
 };
 extern WolPlayerData unknown_player_b29cf0[16];
 extern WOL::Channel unknown_channel_b299c0;
-extern WOL::IChat *unknown_chat_a72cfc;
 extern Wstring unknown_wstring_b26cb8;
 extern int unknown_b2ac58;
 extern int unknown_b2abe8;
@@ -618,11 +615,9 @@ extern WolLadderCache unknown_ladder_b296f8;
 extern char unknown_query_b2b420[512];
 extern int unknown_query_count_b2abf4;
 extern int unknown_a72d08;
-extern int unknown_a72c68;
 extern int unknown_a40230;
 extern IPXAddressClass unknown_address_a3fbc8;
 extern PlayerProfile *unknown_profile_b28cc4;
-void __fastcall Unknown_005cd030(HWND dialog, bool value);
 void Unknown_005c9700();
 bool Unknown_0075a920();
 extern "C" wchar_t *__cdecl wcscpy(wchar_t *destination, wchar_t const *source);
