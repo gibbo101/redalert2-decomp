@@ -413,3 +413,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   84.60 (vector pointer kept in eax across the Factories loop), Expert_AI 0x4E8990 62.21. Begin_Production 0x4E5E30
   has four byte-indexed tables (~1464 B). 0x4F1E50/0x4F1FF0/0x4F2190 need the VectorClass<BuildingTypeClass*> ctor
   0x4F8900 emitted by the House unit and its seed row retired, and call unrecovered 0x4EF740.
+- UICmnds.cpp after UICmnds199 (build/class-work/UICmnds199/w, NOTES): 0x6F7020 77.52 (original pushes ebx inside
+  branch 1), 0x6F71E0 73.33 (saved sound flag in bl). Undrafted 0x6F6D00, 0x6F79C0, 0x6F7B80, 0x6F7EC0, 0x6F81B0
+  (calls unrecovered 0x6F85E0), 0x6F7360 (end unclear: no ret between 0x6F7353 and 0x6F763E). Inventory extents
+  wrong for 0x6F6930/0x6F69F0/0x6F6AD0/0x6F76C0 (lens.txt).
