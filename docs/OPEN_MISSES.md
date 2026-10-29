@@ -493,3 +493,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   the timer Stop and CDTimer ctor and runs out at case 55, the original at case 74 - members likely cost more to inline in
   the original; exact member rewrites in w/r_*.cpp). 0x6AFD80 49.66 (one function; same budget pattern).
   Execute needs seed take-overs 0x6B0540 (pop-148), 0x6B1AC0/0x6B1AE0/0x6B1AF0 (pop-88).
+- Session.CPP after Session214 (build/class-work/Session214/w, NOTES; parked): ctor 0x66E380 98.59 (w/ctor1.cpp; +0x63A and
+  +0x2C4 stores out of order; HEAD's unsigned short[8] loop works for 0x3022; needs unknown_geometry_l binding and inline
+  DVC ctors), Allocate_Ports 0x673090 87.47 (rotated registers). Session state is now in src/shared/session_state.hpp.
