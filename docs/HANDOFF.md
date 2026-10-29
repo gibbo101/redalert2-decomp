@@ -19,9 +19,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - The owner session restarts from this file when its context passes about 200K tokens.
 
-Running Mac lanes: MSAnim157 (Opus) the rest of the MSAnim.cpp unit 0x5AC540-0x5AFEE0; Study158 (Opus, study,
-~200K) wwlib inline_depth(255) and WWINLINE __forceinline hypotheses (report only; __forceinline or a library
-inline_depth pragma needs a user ruling). Lanes read docs/WESTWOOD_SOURCES.md before drafting library members. Debt154 merged the two 0x4F52B0 names
+Running Mac lanes: none. Lanes read docs/WESTWOOD_SOURCES.md before drafting library members. Debt154 merged the two 0x4F52B0 names
 (b24cc60c). Inf148 (InfantryClass) parked, zero bytes.
 Landed this evening: Modem141, Base142 (Base unit complete), Ref143 (Release 0x639720, CampaignProperties and
 Territory ctors), Score144 (CampaignScoreClass ctor 0x465BF0), VoxAnim145 (VoxelAnimClass::AI 0x70D380), Air146
@@ -30,7 +28,8 @@ Territory ctors), Score144 (CampaignScoreClass ctor 0x465BF0), VoxAnim145 (Voxel
 payload 0x463C50), Unit147 (MCV deploy search 0x6FD930 and two unit statics), Unit153
 (slot 86 0x6FCA30, BuildingTypeClass 0x45EC50 bool, deploy attempt 0x6FDFC0), Study152 (inline rule now in
 VC6_MATCHING_NOTES; WDT Map ctor 0x729330), Inline156 (MSPrintAnim::Draw 0x5AF030), Unit155 (slot 310-312 and
-0x6D1510/slot 293 Point2D renames; slot 312 0x6FF3E0). Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
+0x6D1510/slot 293 Point2D renames; slot 312 0x6FF3E0), MSAnim157 (20 MSAnim-unit functions, 5.1 KB;
+MSFadeAnim Anims rename), Study158 (wwlib inline_depth/WWINLINE: neither explains any case; VC6 notes). Landed: Light137 Set_Tint 0x538AA0, Light140 ~LightConvertClass 0x538F20, Modem138
 0x734CD0/0x735110. WDT136 (Campaign ctor 0x725F40) and Sink139 (OnLadderList 0x75D330) are misses in OPEN_MISSES.md.
 Landed 2026-10-28 evening: Map129, Obj126, Para131, Iso128, MSAnim133, Score132, IPX135 (Send_To), Base134
 (BaseClass ctor/Load/NoInit ctor). Near misses (OPEN_MISSES.md) go to the Windows lead; queue and drafts sent in

@@ -1686,6 +1686,108 @@ def rtti_address_labels(body, addresses=None):
 
 
 _SWITCH_ORIGINAL = []
+_BYTE_FIELD_ORIGINAL = []
+_WORD_STORE_ORIGINAL = []
+_WORD_STORE_ROWS = {}
+
+
+def word_store_artifacts(body, params, entry, inventory=None, facts=None):
+    """Preserve observed WORD stores behind Ghidra's CONCAT22 spelling.
+
+    Never synthesize the unresolved high-token's address. Original membership,
+    local windows and source correspondence remain scratch-seed hypotheses.
+    """
+    from seed_narrow_stores import ASSIGNMENT, source_groups, inspect_word_windows, apply_word_groups
+    view = code_view(body)
+    if not ASSIGNMENT.search(view):
+        return body, []
+    declarations, comma = scalar_declarations(view)
+    if comma:
+        return body, []
+    groups = source_groups(body, view, declarations, map(param_parts, params))
+    if not groups:
+        return body, []
+    if facts is None:
+        if inventory is None:
+            return body, []
+        evidence_root = (REPOSITORY / 'private/original-target-20261020/inventory').resolve()
+        directory = next((p for p in inventory.passes if
+                          (p / 'decompiled' / ('%08x.c' % entry)).is_file()), None)
+        if directory is None or not directory.resolve().is_relative_to(evidence_root):
+            return body, []
+        path = directory / 'instructions.jsonl'
+        row = inventory.rows(directory).get(entry)
+        if row is None or not path.is_file():
+            return body, []
+        key = (path.resolve(), entry)
+        if key not in _WORD_STORE_ROWS:
+            needle, records = ('%08x' % entry).encode('ascii'), []
+            with path.open('rb') as stream:
+                for line in stream:
+                    if needle in line.lower():
+                        record = json.loads(line)
+                        if int(record['function_entry'], 16) == entry:
+                            records.append(record)
+            _WORD_STORE_ROWS[key] = records
+        if not _WORD_STORE_ORIGINAL:
+            from verify_manifest import Audit
+            _WORD_STORE_ORIGINAL.append(Audit(REPOSITORY, 'private/original-target-20261020/inputs/game.exe'))
+        audit = _WORD_STORE_ORIGINAL[0]
+
+        def is_code(address, length):
+            section = audit.pe.get_section_by_rva(address - audit.base)
+            return bool(section and section.Characteristics & 0x20000000 and
+                        address + length <= audit.base + section.VirtualAddress + section.SizeOfRawData)
+
+        facts = inspect_word_windows(entry, row['ranges'], _WORD_STORE_ROWS[key],
+                                     audit.original, set(groups), is_code)
+    return apply_word_groups(body, groups, facts)
+
+
+def array_byte_partials(body, params=()):
+    """Retain existing scalar/pointer-array storage at explicit byte slices."""
+    from seed_byte_access import array_byte_parts
+    view = code_view(body)
+    declarations, comma = scalar_declarations(view)
+    if comma:
+        return body
+    return array_byte_parts(body, view, declarations,
+                            {param_parts(param)[1] for param in params})
+
+
+def low_offset_byte_fields(body, params, global_types, shared, entry,
+                           inventory=None, facts=None):
+    """Repair data-offset labels only with existing pointer and original widths.
+
+    Facts for real seeds come from the hash-checked original executable. They
+    prove observed local reads, not Ghidra bounds, source types or root validity.
+    """
+    from seed_byte_access import OFFSET, offset_groups, inspect_byte_fields, apply_offset_groups
+    view = code_view(body)
+    if not OFFSET.search(view) or not shared:
+        return body, []
+    slots = {}
+    for kind, name, array in scalar_declarations(view)[0]:
+        slots.setdefault(name, []).append((kind, array))
+    for kind, name in map(param_parts, params):
+        slots.setdefault(name, []).append((kind, None))
+    names = set(slots)
+    local_types = {name: values[0][0] for name, values in slots.items()
+                   if len(values) == 1 and not values[0][1]}
+    groups = offset_groups(body, view, global_types, shared,
+                           local_types, names, 0x400000)
+    if not groups:
+        return body, []
+    if facts is None:
+        if inventory is None:
+            return body, []
+        if not _BYTE_FIELD_ORIGINAL:
+            from verify_manifest import Audit
+            _BYTE_FIELD_ORIGINAL.append(Audit(REPOSITORY, 'private/original-target-20261020/inputs/game.exe'))
+        audit = _BYTE_FIELD_ORIGINAL[0]
+        row = inventory.function(entry)[1]
+        facts = inspect_byte_fields(entry, row['ranges'], audit.original, set(groups)) if row else {}
+    return apply_offset_groups(body, groups, facts)
 
 
 def original_index_switch(entry, dispatch, table):
@@ -1768,14 +1870,16 @@ def seed(entry, inventory, accepted):
     body, switch_notes = indexed_switch_artifacts(body, entry, params)
     body = nan_artifacts(body, params, named_calls(body, inventory) if re.search(r'\bNAN\s*\(', code_view(body)) else ())
     body = byte_update_artifacts(body, params)
+    body, word_store_notes = word_store_artifacts(body, params, entry, inventory)
     body = stack_artifacts(extend_artifacts(concat_artifacts(body)), params, conv)
     body = LABEL.sub(lambda m: m.group(1) + re.sub(r'\W', '_', m.group(2)) + m.group(3), body)
     body = RAM.sub(lambda m: '(*(%s *)0x%s)' % (RAM_TYPES.get(m.group(1), 'int'), m.group(2)), body)
     body = PARTIAL.sub(lambda m: '(*(%s*)((char*)&%s + %s))' % (PARTIAL_TYPES.get(m.group(3), 'uint'),
                                                                m.group(1), m.group(2)), body)
+    body = array_byte_partials(body, params)
     body, scalar_view_notes = scalar_address_views(body, params)
     body, rtti_notes = rtti_address_labels(body)
-    declarations, notes = [], list(rtti_notes) + switch_notes + scalar_view_notes
+    declarations, notes = [], list(rtti_notes) + switch_notes + scalar_view_notes + word_store_notes
     owners = ecx_owners(inventory.function(entry)[1])
     this_name = param_parts(params[0])[1] if conv == '__thiscall' and params else None
     for callee in sorted(set(CALLEE.findall(code_view(body))) - {name}):
@@ -1822,6 +1926,8 @@ def seed(entry, inventory, accepted):
     evidence_root = (REPOSITORY / 'private/original-target-20261020/inventory').resolve()
     shared = (shared_pointer_types() if any(p.resolve().is_relative_to(evidence_root) for p in inventory.passes) else {})
     body, global_types = recover_global_pointers(body, params, shared)
+    body, byte_field_notes = low_offset_byte_fields(body, params, global_types, shared, entry, inventory)
+    notes.extend(byte_field_notes)
     for symbol, kind in sorted(global_types.items()):
         known = shared.get(int(symbol[-8:], 16))
         if known and known['kind'] == kind:

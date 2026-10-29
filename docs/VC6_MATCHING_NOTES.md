@@ -582,14 +582,18 @@ verified on the target.
   and 4786; it defines `NOMINMAX`, `MIN`/`MAX` as the usual double-evaluating macros
   beside template `min`/`max`, and `ARRAY_SIZE`. `bound.h` has the `Bound<T>` template
   (two ifs, not a nested ternary), `swap.h` a `swap<T>` with a default-constructed
-  temporary, `incdec.h` the enum `++`/`--` operator templates. Two hypotheses to test in
-  the Study152 lab before any rule changes: (1) library units compiled with
-  `inline_depth(255)`, so a nested site that refuses to inline under the default depth
-  may be the real shape at depth 9 or deeper; (2) `__forceinline` on those accessors is
-  Westwood's own text, so an accessor that never appears out of line is evidence for
-  `WWINLINE`, not steering. The honest-source rule in ORIGINAL_TARGET_PROCESS.md bans
-  `__forceinline`; if (2) holds it needs an owner ruling that limits the exception to
-  the members wwlib marks.
+  temporary, `incdec.h` the enum `++`/`--` operator templates. Tested (Study158): neither
+  idiom changes any open case. `#pragma inline_depth(n)` only caps nesting (default 8,
+  the 9th level is called); 255 leaves budget, W thresholds and whole-unit objects
+  identical at depth 8 or less (MultiplayerGameMode and BuildingLight units compared byte
+  for byte). `__forceinline` expands its site past the budget and its own W, costs no
+  budget, still counts as a pending site in W for earlier nested sites, and does not lift
+  the depth cap. Plain VectorClass `operator[]`/`Length()` and the empty NoInit
+  constructor are already free callees (cost 0, counted in W the same way), so `WWINLINE`
+  on them gives the same code as `inline`: no ruling is needed and `__forceinline` stays
+  banned. Side observation: free one-call wrapper levels do not multiply W by depth (an
+  X under 1, 4 or 7 free wrappers goes out at the same budget); Study152's per-depth
+  multiplier was measured with costed levels.
 - The MIN/MAX macro under "Macro clamps and member accessors" is wwlib's spelling
   (`MIN(a,b)`, `MAX(a,b)` in always.h); Red Alert's JSHELL.H had template `min`/`max`
   and `Bound` instead.

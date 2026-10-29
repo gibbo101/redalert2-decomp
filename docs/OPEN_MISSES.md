@@ -220,3 +220,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Draw_It 0x700E70 85.75 (draw_it_700e70.cpp: frame 0x48 vs 0x40, the original shares one slot between the
   angle double and the projected CoordStruct; still carries `int const &direction`/`ColorScheme *const &scheme`
   steering to replace); slot 310 0x6FF690 not drafted (seed does not compile; reuse slot 311's idioms).
+- MSAnim unit (MSAnim157 NOTES): MSPrintAnim::Set_Rect 0x5AE7E0 (439 B) is byte-exact in the unit but refused
+  ("Unsupported independent bound": Ghidra splits it at 0x5AE806 around a phantom 0x5AE808); needs a bounds row
+  0x5AE7E0-0x5AE996 (caller 0x5AE752), then one row (src1/MSPrintAnim_Set_Rect_005ae7e0.cpp,
+  ?Set_Rect@MSPrintAnim@@QAEXABVRect@@@Z). MSShapeAnim slot 4 0x5AC850 81.74 (v/s4_a.cpp; v/s4_y2.cpp 80.70 has
+  the right inline pattern), register allocation only: compare with the exact MSFadeAnim slot 4. 0x5AF430 sits in
+  seed population-88. Rule: VC6 defers code generation to the end of the unit under /Ob2, so inlines defined
+  later in the unit expand into earlier functions.
