@@ -262,3 +262,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Landing it needs a rename (TeamTypeClass::Create_One_Of 0x6BEC80 const), about eight HouseClass helper
   declarations, IUnknownHouseAI for +0x56CC, map_view members, and resolving ownership of 0x4F6F30/0x4F7CD0
   (accepted today under other sources; AI makes the House unit emit them). Windows near-miss work.
+- Queue.CPP (population-466, 0x622FB0-0x62EAF0) and Event.cpp (population-2590) after Queue166 (NOTES, w/, hv/):
+  Queue_AI 0x623770 91.78 (the original calls QueueClass<EventClass,128>::Next 0x62E9E0 out of line, accepted
+  as seed FUN_0062e9e0 in population-42, so a plan must retire it; defining Next late pushes Clean_DoList inline
+  instead), EventClass type-5 ctor 0x4B61F0 97.67. Not started: Compute_Game_CRC 0x629FA0 (924 B, maps onto Red
+  Alert's), the unit statics 0x623210/0x623230/0x6232D0/0x623320/0x623370 (need data definitions and retiring five
+  seeds), EventClass::Execute 0x4B65C0 (4994 B), Queue_AI_Multiplayer, Wait_For_Players, Execute_DoList,
+  Send_Packets, Build_Send_Packet, Print_CRCs (917-5519 B), dialog code 0x626FE0, 0x626CB0, 0x627350.

@@ -37,9 +37,12 @@ public:
     int ArrayIndex;                     // +0xB90 index in BuildingTypes (TechnoClass slot 55)
     char unknown_b94[0x1215 - 0xB94];
     bool Wall;                          // +0x1215 (TechnoClass 0x006C22A0)
-    char unknown_1216[0x1218 - 0x1216];
+    bool Capturable;                    // +0x1216 (TechnoClass slot 28)
+    char unknown_1217[0x1218 - 0x1217];
     bool Overpowerable;                 // +0x1218 (TechnoClass slot 174)
-    char unknown_1219[0x1349 - 0x1219];
+    bool Spyable;                       // +0x1219 (TechnoClass slot 28)
+    bool CanC4;                         // +0x121A (TechnoClass slot 28)
+    char unknown_121b[0x1349 - 0x121B];
     bool unknown_1349;                  // +0x1349 (UnitRepair)
     bool unknown_134a;                  // +0x134A (UnitReload; AircraftClass slot 129)
     char unknown_134b[0x1357 - 0x134B];

@@ -39,9 +39,6 @@
 // @ref ?Houses@@3V?$DynamicVectorClass@PAVHouseClass@@@@A=00a32298
 // @ref ?Unknown_00710160@@YIPAUUnknownCellObject710160@@ABVCell@@@Z=00710160
 
-// A key binding is down (the bindings are ints; WWKeyboardClass takes 16-bit keys).
-inline bool Techno_Key_Down(int key) { return WWKeyboard->Down(key); }
-
 int TechnoClass::unknown_slot27(Cell const *cell, bool arg2, bool arg3)
 {
     UnknownCellClass *cellptr = Map_Cell_At(*cell);
