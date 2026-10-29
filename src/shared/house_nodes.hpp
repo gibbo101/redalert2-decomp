@@ -27,6 +27,7 @@ struct ScoutStruct {
 class BaseNodeClass {
 public:                      // (layout hypothesis)
     BaseNodeClass() {}
+    BaseNodeClass(int type, ::Cell cell) : Type(type), Cell(cell) {}
     // User copy constructor, member-wise (VectorClass<BaseNodeClass>::Fetch 0x0042CBE0 copies the byte separately).
     BaseNodeClass(BaseNodeClass const &other)
         : Type(other.Type), Cell(other.Cell), unknown_08(other.unknown_08), unknown_0c(other.unknown_0c)
