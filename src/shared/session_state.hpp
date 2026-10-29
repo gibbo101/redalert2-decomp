@@ -149,7 +149,11 @@ struct UnknownSessionState {
     bool ScenarioIsOfficial_880;                // +0x880
     char unknown_881[0x884 - 0x881];
     int unknown_884;                            // +0x884 (sent in the game options text)
-    char unknown_888[0x8A0 - 0x888];
+    // The players that asked for the scenario file (indexes into the player list; Red Alert's
+    // ScenarioRequests and RequestCount; Send_Remote_File 0x0066BB20 sends to them).
+    char ScenarioRequests[0x890 - 0x888];       // +0x888
+    int RequestCount;                           // +0x890
+    char unknown_894[0x8A0 - 0x894];
     // +0x8A0 copies of received global packets (RTTI DynamicVectorClass<GlobalPacketType *>,
     // vtable 0x007A9584; Unknown_00627190 adds them).
     DynamicVectorClass<UnknownGlobalPacket *> GlobalPackets_8a0;

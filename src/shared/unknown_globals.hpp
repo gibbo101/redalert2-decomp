@@ -165,6 +165,11 @@ struct UnknownGlobalPacket {
         struct {
             int Percent;                // +0x2F the sender's loading progress (UnknownSessionState 0x00672160)
         } Progress;                     // command 0x0F
+        struct {
+            char unknown_2f[0xAF - 0x2F];
+            unsigned int FileLength;    // +0xAF the file's length
+            char ShortFileName[0x1C7 - 0xB3];   // +0xB3 the file's name (length not recovered)
+        } ScenarioInfo;                 // command 0x11 (Red Alert's NET_FILE_INFO; Get_File_From_Host 0x0066AEF0)
     };
 };
 #pragma pack(pop)

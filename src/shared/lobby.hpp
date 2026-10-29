@@ -422,6 +422,22 @@ bool __fastcall Find_Local_Scenario_0066c5b0(char *filename, int length, char *d
 // info into return_name and the file through Receive_Remote_File; with progress set the transfer
 // shows the progress screen (0x0066AEF0; its traces name it Get_File_From_Host).
 bool __fastcall Get_File_From_Host_0066aef0(char *return_name, int gametype, bool progress);
+// The file transfer response timeout in ticks for a game type (0x0066AEA0).
+int __fastcall Get_Timeout(int gametype);
+// A file transfer chunk (0xDC bytes; Red Alert's RemoteFileTransferType; command 0x12 on the network,
+// 0x70 on the modem; Receive_Remote_File reads it into a 0x1E7-byte buffer).
+#pragma pack(push, 1)
+struct RemoteFileTransferType {
+    int Command;                        // +0x00
+    char Name[20];                      // +0x04 the sender (narrow)
+    unsigned short BlockNumber;         // +0x18
+    unsigned short BlockLength;         // +0x1A
+    char RawData[192];                  // +0x1C
+};
+#pragma pack(pop)
+// Receives a file from the host in 192-byte chunks into file_name; with progress set it shows the
+// map transfer progress screen; true when every chunk arrived (0x0066B520).
+bool __fastcall Receive_Remote_File_0066b520(char *file_name, unsigned int file_length, int gametype, bool progress);
 // Sends a file to the clients: the file info to every other player (to_players) or to the session's
 // scenario requests, then the file in 192-byte chunks (0x0066BB20; Red Alert's Send_Remote_File).
 bool __fastcall Send_Remote_File_0066bb20(char const *file_name, int gametype, bool to_players, bool progress);
