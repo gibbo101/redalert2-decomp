@@ -254,6 +254,7 @@ public:
     int Which_Zone(CoordStruct const &coord) const;        // 0x004EAD40
     int Which_Zone(ObjectClass const *object) const;       // 0x004EAEB0
     int Which_Zone(Cell const &cell) const;          // 0x004EAEF0
+    Cell Zone_Cell(int zone) const;                         // 0x004EAF30 (RA's Zone_Cell)
     bool unknown_func_4e90c0(int arg1);                    // 0x004E90C0
     void unknown_func_4e5dc0(int cell, int amount);        // 0x004E5DC0
     bool unknown_func_4e7580(ObjectClass *object, bool arg2);   // 0x004E7580

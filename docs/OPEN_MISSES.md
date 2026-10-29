@@ -417,3 +417,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   branch 1), 0x6F71E0 73.33 (saved sound flag in bl). Undrafted 0x6F6D00, 0x6F79C0, 0x6F7B80, 0x6F7EC0, 0x6F81B0
   (calls unrecovered 0x6F85E0), 0x6F7360 (end unclear: no ret between 0x6F7353 and 0x6F763E). Inventory extents
   wrong for 0x6F6930/0x6F69F0/0x6F6AD0/0x6F76C0 (lens.txt).
+- WDTSel.cpp after WDTSel198 (build/class-work/WDTSel198, NOTES; parked): ctor 0x72D560 cmp 0.892 (Sounds' base vector
+  ctor 0x7304C0 inlined in ours; 3+ extra pending inline sites after Sounds make it exact in the lab, natural source
+  unknown: try an inline INIClass::Load(FileClass &), Map rect accessors, string-fetch wrapper), Show_State 0x72E780
+  0.827 (original calls the TerritoryCursor ctor out of line), Select_Territory 0x72ED80 0.959 (Conflicts loop load
+  order), Click 0x72E430, Hover 0x72E650.
