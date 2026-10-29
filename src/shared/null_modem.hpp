@@ -23,6 +23,8 @@ class ModemRegistryEntryClass {
 public:
     ModemRegistryEntryClass(int modem_number);                          // 0x0059CD00
     ~ModemRegistryEntryClass();                                         // 0x0059D4F0
+    // Frees the strings and clears their pointers (0x0059D500; the destructor's tail call).
+    void Clear_0059d500();
 
     char *ModemName;                    // +0x00
     char *ModemDeviceName;              // +0x04 the port to open

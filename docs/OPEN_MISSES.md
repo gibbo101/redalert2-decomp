@@ -372,3 +372,17 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   pointer ebx/ebp swapped), guest Start_Game 0x5986F0 98.50 (TechLevel store eax/edx swapped), host Send_Options 0x59BC90
   93.30 (last IsOfficial store load order). Host Dialog_Proc 0x598FA0 needs the chat chain form (Show_Chat leaf <-
   Send_Chat(text) <- Send_Chat()); accepted host 0x59A880/0x59BFA0 are hand-expanded and may need rewriting.
+- netshare.cpp after Netshare187 (build/class-work/Netshare187/misses, NOTES): 0x5C71F0 87.67 (lobby HWND through eax;
+  needs 0x75CA30 unknown_dialog_c2_call -> bool(int,bool,bool) rename), 0x5C67C0 91.87 (same eax copy), 0x5C7570 80.45
+  (CCFileClass temporary overlaps case buffers), 0x5C7EF0 73.91 (needs a wol_chat.hpp with IChat slot 15 and
+  unknown_identifier_a71b18; owner: allowed as a new header), 0x5CCA30 73.63. 0x5C8420/0x5C84E0 use MapSeedClass (now
+  free: the map-generator rename landed). 0x5C5FF0/0x5C6310 WideString hash-set template family.
+- netdlg2.cpp after Netdlg188 (build/class-work/Netdlg188, NOTES): 0x5C01D0 Send_Join_Queries 98.94 (Games[curgame]
+  vector before index; then take 0x5C05C0/D0/E0 atexit rows from pop-67), 0x5BEFE0 Host_Dialog_Proc 95.68
+  (message/lparam ebx/edi swap; needs Open_Lobby_Dialog_005c6960 int and Is_Host_005c86a0 bool rename, and
+  Send_Slot_Names via Session.Handle). Undrafted 0x5BBDD0 (hash container from 0x5C5FF0/0x5C6310), 0x5BD070, 0x5C08A0.
+  The scorer never reports byte-exact for switch-table functions: check with Netdlg188/t/tdiff.py.
+- WDTSel.cpp after WDTSel189 (build/class-work/WDTSel189, NOTES): blocked on two-level rc_ptr chains
+  (TheCampaign->TheHistory->Get_State(): original `add eax,8; mov ecx,[eax+4]`, ours folds to [eax+0xC]); 25 operator->
+  spellings tried. 0x72DEA0 96.15, 0x72F180/0x72F200 92.54 (dead lea), 0x72F6E0 82.14, 0x72FCD0 76.19, 0x72FF30 76.36,
+  0x72F540 73.68, 0x72F430 58.50, 0x72E650 41.18; ctor 0x72D560, dtor 0x72D990 and ~5.5 KB wait on the chain.

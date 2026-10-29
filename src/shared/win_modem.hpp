@@ -10,6 +10,9 @@
 HKEY __fastcall Get_Registry_Sub_Key(HKEY base_key, char const *search_key, bool close);
 // The first modem's FriendlyName from HKLM\Enum\Root\Modem\0000 (0x00734310).
 bool __fastcall Get_Modem_Name_From_Registry(char *buffer, int buffer_len);
+// Searches key and all its sub keys for a sub key whose string value value_name is
+// value; that key (open, the caller closes it) or null. Reenters itself (0x0059CBA0).
+HKEY __fastcall Search_Registry_Key(HKEY key, char const *value_name, char const *value);
 
 enum {
     SIZE_OF_WINDOWS_SERIAL_BUFFER = 0x2000
