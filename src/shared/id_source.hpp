@@ -210,6 +210,13 @@ public:
     char LS800BkgdName[64];                     // +0x2420 MISSION.INI LS800BkgdName
 };
 extern UnknownIDSource *unknown_id_source_a3d290;    // 0x00A3D290
+// A value in [a, b] from the scenario's generator (Westwood's Random_Pick:
+// the inline's result is a variable, so callers add it after the rest of an
+// expression; VoxelAnimClass::AI 0x0070D380).
+template<class T> inline T Random_Pick(T a, T b)
+{
+    return T(unknown_id_source_a3d290->Random()((int)a, (int)b));
+}
 // Assigns the houses of a multiplayer game to the players (0x0065FBB0; Read_Basic
 // calls it instead of reading [Basic] Player; name hypothesis).
 void __fastcall Assign_Houses_0065fbb0();

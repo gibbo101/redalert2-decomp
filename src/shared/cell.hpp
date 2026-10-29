@@ -183,7 +183,7 @@ public:
     void unknown_47a4e0();                      // 0x0047A4E0 (redraws the cell's 60x30 screen area; BuildingClass 0x0043C1F0)
     int unknown_47a5a0();                       // 0x0047A5A0 (bit per cardinal neighbour holding veins: an IsVeins overlay, or overlay 0x7E with data from 48)
     bool unknown_475840(int overlay, int facing) const;   // 0x00475840 (whether a wall of overlay type joins this cell toward facing: the same wall, or a gate or wall tower; hypothesis)
-    bool unknown_478ba0();                      // 0x00478BA0 (whether tiberium may grow here; hypothesis)
+    bool unknown_478ba0(bool arg1);             // 0x00478BA0 (whether tiberium may grow here; hypothesis)
     void unknown_473d20(ObjectClass *object, bool alt);   // 0x00473D20 (unlinks object from the occupier list; MapClass 0x0054B04D)
     Rect unknown_4752b0() const;                // 0x004752B0 (a screen rectangle of the cell's contents; hypothesis)
     Rect unknown_474eb0() const;                // 0x00474EB0 (another; hypothesis)

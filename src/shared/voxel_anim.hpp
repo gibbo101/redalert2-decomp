@@ -57,6 +57,7 @@ public:
     virtual ObjectTypeClass *Class_Of() const { return Class; }         // 0x0070DF70 slot 33 (inline)
     virtual Cell const *unknown_slot64(int arg1) { return 0; }    // 0x0070DF80 (inline)
     virtual bool unknown_slot63(Rect *bounds, bool arg2, bool arg3);    // 0x0070CF70
+    virtual void AI();                                                  // 0x0070D380 slot 23
     static void __cdecl Clear_All();                                    // 0x0070D350 (deletes every voxel animation; name hypothesis)
 
     BounceClass Bounce;                         // +0x098

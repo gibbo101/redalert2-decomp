@@ -3,7 +3,8 @@
   plan OUT NAME ANCHOR [ENTRY=DRAFT[:SYMBOL]]... --copy-dir DIR
       Plan for the HEAD population that holds accepted entry ANCHOR: every current source is copied to
       DIR as a context draft (source order kept), then each ENTRY=DRAFT replaces that row's draft or
-      inserts a new row in address order (SYMBOL is the new row's symbol prefix).
+      inserts a new row in address order (SYMBOL is the new row's symbol prefix). Option sets come from
+      the population's rows; more than one makes the plan separate_units.
   freeze PLAN DELIVERY NAME [ENTRY=classes/<Class>/<file>.cpp]...
       Copy every draft of PLAN into DELIVERY/unit/ and write DELIVERY/NAME.json (LF endings). Each
       ENTRY=PATH sets that row's canonical source under src/recovered/ and its semantic name.
@@ -56,7 +57,13 @@ def build_plan(regions, anchor, name, drafts, copy_dir, copy=shutil.copyfile):
         item = dict(entry=entry, draft=draft, source='src/recovered/x_%s.cpp' % entry, symbol_prefix=symbol)
         at = next((k for k, s in enumerate(sources) if int(s['entry'], 16) > int(entry, 16)), len(sources))
         sources.insert(at, item)
-    return population, dict(name=name, separate_units=False, options=DEFAULT_OPTIONS, sources=sources)
+    # Populations mixing option sets (e.g. /O1 CRT seeds beside /O2 game code) compile as separate units.
+    options = []
+    for row in rows:
+        if row.get('options') and row['options'] not in options:
+            options.append(row['options'])
+    options = options or DEFAULT_OPTIONS
+    return population, dict(name=name, separate_units=len(options) > 1, options=options, sources=sources)
 
 
 def parse_drafts(arguments):

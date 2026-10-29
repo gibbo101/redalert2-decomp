@@ -208,6 +208,10 @@ extern DynamicVectorClass<UnknownAnimTiberium *> unknown_tiberiums_ac0b30;   // 
 
 // Damage around a coordinate (0x0047E2C0, __fastcall; hypothesis).
 void __fastcall Unknown_0047E2C0(CoordStruct const &coord, int damage, int arg3, WarheadTypeClass *warhead, int arg5);
+// An explosion's effects at a coordinate (0x0047F600, __fastcall: the
+// coordinate by value on the stack, damage in ECX, warhead in EDX;
+// VoxelAnimClass::AI after Unknown_0047E2C0; hypothesis).
+void __fastcall Unknown_0047F600(CoordStruct coord, int damage, WarheadTypeClass *warhead, int arg4, int arg5);
 
 // The overlay types (AnimClass 0x00423B90): shared/overlay_view.hpp.
 #include "shared/overlay_view.hpp"

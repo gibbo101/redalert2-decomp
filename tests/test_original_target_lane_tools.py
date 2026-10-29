@@ -29,6 +29,14 @@ class LaneToolsTests(unittest.TestCase):
         self.assertEqual(len(copies), 2)
         self.assertEqual(plan['options'], lane_tools.DEFAULT_OPTIONS)
 
+    def test_plan_takes_population_option_sets(self):
+        o1 = ['/O1', '/Ob2', '/G5', '/Gy']
+        regions = [region(0x500000, 0), dict(region(0x500020, 1), options=o1)]
+        regions[0]['options'] = lane_tools.DEFAULT_OPTIONS[0]
+        _, plan = lane_tools.build_plan(regions, '500000', 'lane', [], 'p', copy=lambda a, b: None)
+        self.assertEqual(plan['options'], [lane_tools.DEFAULT_OPTIONS[0], o1])
+        self.assertTrue(plan['separate_units'])
+
     def test_plan_refuses_unaccepted_anchor(self):
         with self.assertRaises(SystemExit):
             lane_tools.build_plan([region(0x500000, 0)], '500010', 'lane', [], 'p', copy=lambda a, b: None)
