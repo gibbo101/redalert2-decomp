@@ -1303,41 +1303,6 @@
       "source_order": 89875
     },
     {
-      "entry": 5890704,
-      "method": "0059e290",
-      "symbol": "?Clear@MonoClass@@QAEXXZ",
-      "symbol_prefix": "?Clear@MonoClass@@QAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 72,
-      "body_sha256": "7e91c3752d0c6fb5ae46a39bd978d0ac21833723a23ee3e972a78c840d32360b",
-      "padding_bytes": 8,
-      "full_extent_bytes": 80,
-      "full_extent_sha256": "78ffdaa68399f37c24ca1db1fc9fde220d6f1d1fbda14ec5dde3aeb2c7a16f52",
-      "relocations": [
-        {
-          "offset": 64,
-          "kind": 20,
-          "symbol": "?Refresh@MonoClass@@QAEXHHHH@Z",
-          "target": 5892752,
-          "addend": 0,
-          "resolved": 1980
-        }
-      ],
-      "source_sha256": "4b5ad5a647b5a1adf1f2cb5cb3d72def02fef4fee3f6e8c1ebd4a3c2aae3c259",
-      "source": "src/recovered/unowned/UnknownTextGrid_Clear_0059e290.cpp",
-      "population": "population-2392",
-      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "UnknownTextGrid_Clear_0059e290",
-      "source_order": 89869
-    },
-    {
       "entry": 6094192,
       "method": "005cfd70",
       "symbol": "?unknown_text_buffer_append_005cfd70@@YIXD@Z",
