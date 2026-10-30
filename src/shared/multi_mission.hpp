@@ -32,6 +32,8 @@ public:
     void Set_Filename(char const *filename);
     // Copies the digest (null: "No Digest") into +0x15C (0x00672050; Red Alert's Set_Digest).
     void Set_Digest(char const *digest);
+    // Sets the official flag (+0x17C) (0x006720B0; Red Alert's Set_Official; no direct caller).
+    void Set_Official(bool official);
     // Whether the map allows the game mode named (0x006720E0).
     bool Unknown_006720E0(Wstring &mode);
 

@@ -20,6 +20,7 @@ struct UnknownKickVoters {
 class CCINIClass;
 class MultiplayerGameMode;
 class MultiMission;
+struct _iobuf;
 struct UnknownGameOptions {
     // Reads the block from a section; the computer slots default to
     // (first_slot for slot 1, else other_slots, -2, -2) (0x0066F1F0).
@@ -98,6 +99,7 @@ struct UnknownSessionState {
     bool unknown_2c;                        // +0x2C
     int GameSpeed_30;                       // +0x30 the game speed (0..5 pick the frame-ahead values; Options +0x0 copies it)
     bool unknown_34;                        // +0x34
+    bool unknown_ghosts_35;                 // +0x35 (Red Alert's Options.Ghosts; Log_To_File prints it)
     int UnitCount;                          // +0x38 the multiplayer start units (Create_Units)
     int AICount;                            // +0x3C the computer players
     int unknown_difficulty_40;              // +0x40 the multiplayer difficulty (also unknown_session_difficulty_a3d2d8)
@@ -127,7 +129,8 @@ struct UnknownSessionState {
     char unknown_2b4[0x2B8 - 0x2B4];
     bool WOLLimitResolution;                // +0x2B8
     int LastNickSlot;                       // +0x2BC
-    char unknown_2c0[0x2C8 - 0x2C0];
+    char unknown_2c0[0x2C4 - 0x2C0];
+    int NumPlayers;                         // +0x2C4 the players in the game (Red Alert's Session.NumPlayers; Log_To_File)
     unsigned int MaxAhead_2c8;              // +0x2C8 the frames ahead (set by the game speed; also unknown_max_ahead_a3d560)
     unsigned int unknown_2cc;               // +0x2CC
     int unknown_2d0;                        // +0x2D0 (also unknown_a3d568; the TIMING event sets it)
@@ -135,7 +138,9 @@ struct UnknownSessionState {
     unsigned int unknown_2e0;               // +0x2E0 (MaxAhead_2c8 at the start of a cooperative map)
     unsigned int unknown_2e4;               // +0x2E4 (from MaxAhead_2c8 by the ping class, a multiple of 10)
     unsigned int unknown_2e8;               // +0x2E8 (by the game speed; 0 without pings; also unknown_a3d580)
-    char unknown_2ec[0x638 - 0x2EC];
+    char unknown_2ec[0x630 - 0x2EC];
+    int LoadGame;                           // +0x630 (Red Alert's Session.LoadGame; Log_To_File prints it)
+    char unknown_634[0x638 - 0x634];
     bool unknown_638;                       // +0x638 (cleared by 0x00672440)
     bool unknown_639;                       // +0x639 (cleared before the load wait, 0x0065C7D0)
     bool unknown_63a;                       // +0x63A (cleared before the load wait, 0x0065C7D0)
@@ -261,6 +266,9 @@ struct UnknownSessionState {
     // houses' addresses; 0 in other modes (0x0066EE50; Red Alert's Create_Connections;
     // Do_Lose after a networked replay restarts).
     int Create_Connections();
+    // Prints the session settings, the player addresses and the game type to the file
+    // (0x0066FF90; Red Alert's Log_To_File; no direct caller).
+    bool Log_To_File(_iobuf *out);
     void Unknown_00672440();                // 0x00672440 (game mode 4, after the load wait of 0x0065C7D0)
     unsigned char Unknown_00672F10();       // 0x00672F10 (+0x3080)
     int Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)

@@ -80,7 +80,7 @@ Bytes landed per worker per day (first two days; body bytes from each delivery R
 | Date | codex1 | codex2 | codex3 | codex4 |
 | --- | ---: | ---: | ---: | ---: |
 | 2026-10-30 | 2,845 | 0 (Mono rename+takeover) | 11,110 | 780 |
-| 2026-10-31 | 1,327 | 0 | 2,363 | 0 (r5 rename; r4 refused, r6 waits on r4) |
+| 2026-10-31 | 2,742 | 0 | 2,363 | 0 (r5 rename; r4 refused, r6 waits on r4) |
 BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
 so MPCooperative functions that call a base body need separate units.
 
