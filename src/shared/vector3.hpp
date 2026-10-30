@@ -13,6 +13,11 @@ struct Vector3 {
     Vector3 &Scale_004376b0(float factor);
     Vector3 &Add_004376e0(Vector3 const &other);
 
+    static Vector3 Cross_Product(Vector3 const &a, Vector3 const &b)
+    {
+        return Vector3(a.Y * b.Z - a.Z * b.Y, a.Z * b.X - a.X * b.Z, a.X * b.Y - a.Y * b.X);
+    }
+
     Vector3 &operator*=(float k)
     {
         X *= k;
@@ -24,5 +29,10 @@ struct Vector3 {
     float Y;    // +0x04
     float Z;    // +0x08
 };
+
+inline Vector3 operator*(Vector3 const &vector, float scale)
+{
+    return Vector3(vector.X * scale, vector.Y * scale, vector.Z * scale);
+}
 
 #endif

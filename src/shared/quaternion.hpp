@@ -4,10 +4,11 @@
 #ifndef RA2_SHARED_QUATERNION_HPP
 #define RA2_SHARED_QUATERNION_HPP
 
+#include "shared/matrix3d.hpp"
+
 class Quaternion {
 public:
-    Quaternion() {}
-    Quaternion(float x, float y, float z, float w);         // 0x00622160
+    Quaternion(float x = 0.0f, float y = 0.0f, float z = 0.0f, float w = 1.0f);    // 0x00622160
     void Set(float x, float y, float z, float w);           // 0x00622180
     void Normalize();                                       // 0x006221A0 (divides by the squared length)
     void Scale(float scale);                                // 0x00622200
@@ -26,5 +27,8 @@ Quaternion __fastcall operator*(Quaternion const &a, Quaternion const &b);     /
 Quaternion __fastcall operator/(Quaternion const &a, Quaternion const &b);     // 0x00622570
 Quaternion __fastcall Conjugate(Quaternion const &quat);                       // 0x006225F0
 Quaternion __fastcall Inverse(Quaternion const &quat);                         // 0x00622640
+Quaternion __fastcall Axis_To_Quat(Vector3 const &axis, float angle);          // 0x006229B0
+Quaternion __fastcall Slerp(Quaternion const &a, Quaternion const &b, float alpha);    // 0x00622AC0
+Matrix3D __fastcall Build_Matrix3D(Quaternion const &quat);                     // 0x00622EB0
 
 #endif

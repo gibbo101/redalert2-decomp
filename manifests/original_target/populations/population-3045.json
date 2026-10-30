@@ -6831,41 +6831,6 @@
       "source_order": 118983
     },
     {
-      "entry": 7442032,
-      "method": "00718e70",
-      "symbol": "?unknown_table_entry_7f9d9c@@YIHH@Z",
-      "symbol_prefix": "?unknown_table_entry_7f9d9c@@YIHH@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 8,
-      "body_sha256": "399f8b04470ba9764950bbec35a73ee24c7eb133bb67e21ce5ad2b2b5f8b895f",
-      "padding_bytes": 8,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "206af3db14fe9631a64204e53c4c653758c15b37edd78ed07bd3073a71ce167f",
-      "relocations": [
-        {
-          "offset": 3,
-          "kind": 6,
-          "symbol": "?unknown_table_7f9d9c@@3PAHA",
-          "target": 8363420,
-          "addend": 0,
-          "resolved": 8363420
-        }
-      ],
-      "source_sha256": "ee48e8becc0e302c93cd126c9e0f73951d1dfb8948056f26a078e0b4d1cf3568",
-      "source": "src/recovered/unowned/unknown_table_entry_7f9d9c_00718e70.cpp",
-      "population": "population-3045",
-      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_table_entry_7f9d9c_00718e70",
-      "source_order": 118984
-    },
-    {
       "entry": 7521168,
       "method": "0072c390",
       "symbol": "?unknown_has_44@UnknownOwner_0072c390@@QBE_NXZ",
