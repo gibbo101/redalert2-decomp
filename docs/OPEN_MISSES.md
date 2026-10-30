@@ -698,3 +698,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Scenario.CPP after Scenario289: Fill_In_Data 0x65CDD0 99.18, Clear_Scenario 0x65D370 99.66 (jge vs jae), Wait_For_Players
   90.40, Scan_Place_Object ~48.6, NoInit ctor 64.00. Rules.CPP: AudioVisual 0x643E10 ~48; Sides 0x64BC10 matches only with
   a DynamicVectorClass::ID/Count() header change (Vector223 found Count() adds a COMDAT in 144 units: owner decision, held).
+- UnitClass after Unit288 (NOTES, map.txt): Explode 0x6FD3A0 99.33, Read_INI 0x706AE0 99.15, Desired_Load_Dir 0x704730
+  68.92, Mission_Harvest 0x7025A0 76.70 (draft has steering: rewrite from TibSun). Slot 260 0x7053F0 is 5651 B with no
+  inventory entry. By-value arguments fixed operand order (file-local operator< and Unit_Adjacent_Cell).
+- Tactical.CPP after Tactical290: caption/timer drawer 0x6A5280 99.18, ctor 0x6A24B0 99.02, Render_Fogged_Objects
+  0x6A3D00 59.46 and Render_Terrain 0x6A4350 51.05 (Coord_Snap CoordStruct ctor 0x41B630 out of line in the original),
+  Register_Dirty_Area 0x6A3020 29.40 (second Union out of line); 0x6A9F50 take-over exact, lands with 0x6A3D00.
+  The original inlines less here: helper sources are wordier (Inline293 studies it).
