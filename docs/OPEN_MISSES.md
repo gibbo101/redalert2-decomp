@@ -754,3 +754,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   map_view_with_slots.hpp); destroy-bridge twins 0x551470/551810/551DD0/5521A0 69.08 (/Ob2 budget, like 568B00); 5502E0 undrafted.
 - FootClass after Foot304: undrafted 0x4CB110 Execute_Waypoint_Path 1465, 0x4C3000 Basic_Path 2246, 0x4C3950 2174,
   0x4C4C30 Approach_Target 3279, 0x4CBB40 1467; Foot302's misses unchanged.
+- FootClass after Foot305 (NOTES; overlays hr, hb): Basic_Path 0x4C3000 91.99 (needs MapClass::Unknown_005502E0 arg8-11 as
+  bool, a rename over 18 callers; then block-1 register allocation); slot 102 98.31; 0x4C4C30 (3279) and 0x4CBB40 (1467,
+  needs DiscreteDistributionClass and the unit's COMDATs 0x4CE710/0x4CEA90/0x4CEAF0/0x4CEB30) undrafted.
+- Header cleanups unblocked by Hdr306 (no byte credit, full builds passed at 55325943): Point2D::operator/(int) into
+  rect.hpp (c2/hdrA + c2/w/6a33f0.cpp), Rect::operator+= (c2/hdrB), CellClass::Fetch_CellID member (c3/hdr).

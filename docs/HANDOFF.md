@@ -18,10 +18,10 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Near misses in a unit belong to whoever holds the unit (BOARD.md); Windows workers hold units like Mac lanes.
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - Lanes hand back at about 200 tool calls or 200K context, whichever first; the owner continues the unit in a
-  fresh lane from NOTES. Mac lanes go to zero once Foot305 and Hdr306 hand back (user, 2026-10-30): the owner then only lands Windows deliveries, keeps assignments/BOARD current and steers codex1-4; no new Mac lanes; when the Claude week runs out, hand over to the
+  fresh lane from NOTES. Mac lanes are at zero (user, 2026-10-30): the owner only lands Windows deliveries, keeps assignments/BOARD current and steers codex1-4; no new Mac lanes; when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (two; Opus, unit-sized; TibSun first, then Red Alert): Foot305 FootClass continuation (0x4CB110 first); Hdr306 make 'Complete compiler extent differs' name its unit, then land Map303's exact 0x549C50. Landed 2026-10-30: Map303 r1 (2,219 B), Foot304 r3 (5,255 B, slots 78/93, 0x4CCA40), Foot302 r2 (1,432 B, slots 54/77), Map298 r5 (10,138 B + 0x54F7C0 bool rename), Cell301 r1 (1,403 B + Init_Drawer rename), Tactical300 r1 (1,071 B; owner dropped its file-local Point2D operator+, now a rect.hpp member). Next lane candidates: Tactical rest (Tactical300 NOTES), Cell rest (Cell301 NOTES), Techno.CPP, TeamClass, Sidebar. Terrain160 landed
+No Mac lanes running (last: Foot305, Hdr306). Landed 2026-10-30: Hdr306 (audit now names the refused row and first differing offset; 0x549C50 Sight_From 1,208 B; type-count rule in VC6_MATCHING_NOTES), Foot305 r2 (3,657 B with the 0x4CB110 bool rename), Map303 r1 (2,219 B), Foot304 r3 (5,255 B, slots 78/93, 0x4CCA40), Foot302 r2 (1,432 B, slots 54/77), Map298 r5 (10,138 B + 0x54F7C0 bool rename), Cell301 r1 (1,403 B + Init_Drawer rename), Tactical300 r1 (1,071 B; owner dropped its file-local Point2D operator+, now a rect.hpp member). Next lane candidates: Tactical rest (Tactical300 NOTES), Cell rest (Cell301 NOTES), Techno.CPP, TeamClass, Sidebar. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the

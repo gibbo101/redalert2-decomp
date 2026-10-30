@@ -151,7 +151,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot54() = 0;
     virtual void __stdcall unknown_slot55() = 0;
     virtual HRESULT __stdcall unknown_slot56(User *user) = 0;
-    virtual void __stdcall unknown_slot57() = 0;
+    virtual HRESULT __stdcall unknown_slot57(User *user) = 0;
     virtual HRESULT __stdcall unknown_slot58(unsigned short const *message) = 0;
     virtual HRESULT __stdcall unknown_slot59(User *users,unsigned short const *message) = 0;
     virtual HRESULT __stdcall unknown_slot60(unsigned short const *message) = 0;
@@ -162,6 +162,7 @@ struct __declspec(novtable) IChat : public IUnknown {
 struct __declspec(novtable) IDownload : public IUnknown {
     virtual HRESULT __stdcall DownloadFile(char const *server, char const *login, char const *password,
                                            char const *file, char const *local, char const *regkey) = 0;
+    virtual HRESULT __stdcall Abort() = 0;
 };
 
 struct __declspec(novtable) INetUtilEvent : public IUnknown {
@@ -552,6 +553,15 @@ public:
         if (index >= 0 && index < Count) { channel = Items + index; return true; }
         return false;
     }
+    bool Find_Name(Wstring const &name,WOL::Channel &channel) const {
+        memset(&channel,0,sizeof(channel));
+        for(int i=0;i<Count;++i) {
+            Get(channel,i);
+            if(!_stricmp(channel.name,name.Peek_Buffer())) return true;
+        }
+        memset(&channel,0,sizeof(channel));
+        return false;
+    }
     bool Grow_When_Full(); // capacity operation expanded inside original Insert
     bool Shrink_00766dc0();
 };
@@ -599,6 +609,10 @@ public:
         Count = 0;
         operator delete(Items);
     }
+    void Clear() {
+        for(int i=0;i<Count;++i) Items[i].~Wstring();
+        Count=0;
+    }
     int Count;
     int Capacity;
     Wstring *Items;
@@ -628,6 +642,16 @@ public:
         return true;
     }
 
+    bool Remove_Inline(int index) {
+        if(Count==0) return false;
+        if(index<0) index=0;
+        if(index>=Count) index=Count-1;
+        Items[index].~Wstring();
+        memmove(Items+index,Items+index+1,(Count-index-1)*sizeof(Wstring));
+        --Count;
+        if(Count*3<=Capacity) Shrink_00767b20();
+        return true;
+    }
     bool Shrink() {
         if (Count * 3 > Capacity) return false;
         int capacity = Capacity / 2;
@@ -689,15 +713,108 @@ public:
 class WolNameTable : public WolDictionary<Wstring, unsigned int> {
 public:
     WolNameTable() : WolDictionary<Wstring, unsigned int>(Hash_Name_005c2ba0) {}
+    bool Get_Pointer(Wstring const &key,unsigned int **value) const {
+        if(Count==0) return false;
+        Node *node=Buckets[Key_Hash_00767cd0(key)];
+        if(!node) return false;
+        while(node && !(node->Key==key)) node=node->Next;
+        if(!node) return false;
+        *value=&node->Value;
+        return true;
+    }
     bool Get_Pointer_00767bb0(Wstring const &key, unsigned int **value) const;
     void Shrink_00767c20();
     unsigned int Key_Hash_00767cd0(Wstring const &key) const;
     void Clear_007662f0();
+    bool Remove_Name(Wstring const &key) {
+        if(Count==0) return false;
+        float load=(float)(Count-1);
+        load/=(float)BucketCount;
+        unsigned int hash=Hash(key);
+        unsigned int bucket=((1u<<Bits)-1)&hash;
+        Node *head=Buckets[bucket];
+        Node *previous=head;
+        if(!head) return false;
+        if(head->Key==key) {
+            Node *old=Buckets[bucket];
+            Node *next=old->Next;
+            delete old;
+            Buckets[bucket]=next;
+            --Count;
+            if(load<=ShrinkLimit) Shrink_00767c20();
+            return true;
+        }
+        Node *node=head->Next;
+        bool removed=false;
+        while(node) {
+            if(node->Key==key) {
+                previous->Next=node->Next;
+                --Count;
+                delete node;
+                removed=true;
+                break;
+            }
+            previous=node;
+            node=node->Next;
+        }
+        if(load<=ShrinkLimit) Shrink_00767c20();
+        return removed;
+    }
+
 };
 // Channel records by name (0x00B29478).
 class WolChannelDictionary : public WolDictionary<Wstring, WOL::Channel> {
 public:
     WolChannelDictionary() : WolDictionary<Wstring, WOL::Channel>(Hash_Name_005c2ba0) {}
+    bool Remove_Channel(Wstring const &key) {
+        if(Count==0) return false;
+        float load=(float)(Count-1);
+        load/=(float)BucketCount;
+        unsigned int hash=Hash(key);
+        unsigned int bucket=((1u<<Bits)-1)&hash;
+        Node *head=Buckets[bucket];
+        Node *previous=head;
+        if(!head) return false;
+        if(head->Key==key) {
+            Node *old=Buckets[bucket];
+            Node *next=old->Next;
+            delete old;
+            Buckets[bucket]=next;
+            --Count;
+            if(load<=ShrinkLimit) Shrink_00768010();
+            return true;
+        }
+        Node *node=head->Next;
+        bool removed=false;
+        while(node) {
+            if(node->Key==key) {
+                previous->Next=node->Next;
+                --Count;
+                delete node;
+                removed=true;
+                break;
+            }
+            previous=node;
+            node=node->Next;
+        }
+        if(load<=ShrinkLimit) Shrink_00768010();
+        return removed;
+    }
+    bool Add(Wstring const &key,WOL::Channel const &value) {
+        Node *node=new Node;
+        node->Key=key;
+        node->Value=value;
+        node->Next=0;
+        unsigned int bucket=Key_Hash(key);
+        Node *head=Buckets[bucket];
+        Buckets[bucket]=node;
+        if(head) node->Next=head;
+        ++Count;
+        float load=(float)Count;
+        load/=(float)Get_Size();
+        if(load>=GrowLimit) Grow_Table();
+        return true;
+    }
     bool Get_Pointer_00767cf0(Wstring const &key, WOL::Channel **value) const;
     bool Remove_00767d60(Wstring const &key, WOL::Channel *old_value);
     void Shrink_00768010();
@@ -707,6 +824,13 @@ class WolLadderCache : public WolDictionary<Wstring, WOL::Ladder> {
 public:
     WolLadderCache() : WolDictionary<Wstring, WOL::Ladder>(Hash_Name_005c2ba0) {}
     bool Get_Pointer_007670f0(Wstring const &key, WOL::Ladder **value) const;
+    bool Get_Copy(WOL::Ladder &entry,Wstring const &key) const {
+        WOL::Ladder *value=0;
+        if(!Get_Pointer(key,&value)) return false;
+        if(value) entry=*value;
+        return true;
+    }
+
     unsigned int Key_Hash_00767550(Wstring const &key) const;
     bool Remove_00767160(Wstring const &key, WOL::Ladder *old_value);
     void Shrink_00767400();
