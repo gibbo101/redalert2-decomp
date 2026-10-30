@@ -446,6 +446,7 @@ wchar_t *__fastcall Unknown_006FA180(char const *text);
 
 class PlayerProfile : public ReferenceCounted {
 public:
+    virtual ~PlayerProfile() {}
     PlayerProfile(Wstring const &server, int locale, bool verified, int unknown_18, int country, int color,
                   int rank, int points, int wins, int losses, int disconnects);   // 0x00738C40
     static rc_ptr<PlayerProfile> __fastcall Load_Default();                          // 0x00738670
