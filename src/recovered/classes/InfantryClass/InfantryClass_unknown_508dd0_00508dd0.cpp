@@ -9,7 +9,7 @@
 #include "shared/map_view.hpp"
 #include "shared/techno_map.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
-// @ref ?Unknown_0054F7C0@MapClass@@QAE_NABVCell@@0H_NE1@Z=0054f7c0
+// @ref ?Unknown_0054F7C0@MapClass@@QAE_NABVCell@@0H_N11@Z=0054f7c0
 // @ref ?Unknown_0051FC80@HouseClass@@QAE_NXZ=0051fc80
 // @ref ?Unknown_004F52F0@HouseClass@@QAE_NXZ=004f52f0
 // @ref ?Unknown_00479CF0@UnknownCellClass@@QAE_NXZ=00479cf0

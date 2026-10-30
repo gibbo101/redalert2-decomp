@@ -7,7 +7,7 @@
 #include "shared/techno_type.hpp"
 #include "shared/map_view.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
-// @ref ?Unknown_0054F7C0@MapClass@@QAE_NABVCell@@0H_NE1@Z=0054f7c0
+// @ref ?Unknown_0054F7C0@MapClass@@QAE_NABVCell@@0H_N11@Z=0054f7c0
 // @ref ?Unknown_0055A280@MapClass@@QAEHABUCoordStruct@@@Z=0055a280
 // @ref ?Unknown_00568140@MapClass@@QAE_NABUCoordStruct@@@Z=00568140
 // @ref ?unknown_game_mode_a3d298@@3HA=00a3d298

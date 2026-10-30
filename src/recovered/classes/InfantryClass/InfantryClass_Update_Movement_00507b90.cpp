@@ -7,7 +7,7 @@
 // @ref ?Release_Held@UnknownPersistPtr@@QAEXXZ=004a4d00
 // @ref _CLSID_JumpjetLocomotionClass=007a2000
 // @ref ?Map@@3VMouseClass@@A=008324e0
-// @ref ?Unknown_0054F7C0@MapClass@@QAE_NABVCell@@0H_NE1@Z=0054f7c0
+// @ref ?Unknown_0054F7C0@MapClass@@QAE_NABVCell@@0H_N11@Z=0054f7c0
 // @ref ?_com_issue_error@@YGXJ@Z=00795940
 extern "C" GUID const CLSID_JumpjetLocomotionClass;
 void InfantryClass::Update_Movement_00507b90()

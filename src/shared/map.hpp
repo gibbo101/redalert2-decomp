@@ -180,7 +180,7 @@ public:
     void Unknown_00559F10();                                              // 0x00559F10
     void Unknown_0054AB70(Cell const &cell, ObjectClass *object);   // 0x0054AB70 (FootClass slot 71, cases 1 and 3; hypothesis: occupation)
     void Unknown_0054AF70(Cell const &cell, ObjectClass *object);   // 0x0054AF70 (FootClass slot 71, case 0)
-    bool Unknown_0054F7C0(Cell const &from, Cell const &to, int zone, bool arg4, unsigned char bridge, bool arg6);  // 0x0054F7C0 (a path test; FootClass slot 171)
+    bool Unknown_0054F7C0(Cell const &from, Cell const &to, int zone, bool arg4, bool bridge, bool arg6);  // 0x0054F7C0 (a path test; FootClass slot 171)
     int Zone(Cell const &cell, int zone_type, bool alt); // 0x0054F8F0 (the cell's movement zone; hypothesis)
     void Unknown_0054FB20(Cell const &cell);      // 0x0054FB20 (after a tiberium cell is cleared; AnimClass)
     int Unknown_0055A280(CoordStruct const &coord);     // 0x0055A280 (ground height; hypothesis)
