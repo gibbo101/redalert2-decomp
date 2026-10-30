@@ -5,7 +5,7 @@
 #include "shared/waypoint_path.hpp"
 // @ref ?unknown_player_a35db4@@3PAVHouseClass@@A=00a35db4
 // @ref ?Get_Waypoint@WaypointPathClass@@QAEPAUWaypointClass@@H@Z=00724d60
-// @ref ?unknown_4cb110@FootClass@@QAEXPAUWaypointClass@@@Z=004cb110
+// @ref ?unknown_4cb110@FootClass@@QAE_NPAUWaypointClass@@@Z=004cb110
 
 void FootClass::unknown_slot194()
 {

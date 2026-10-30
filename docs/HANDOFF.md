@@ -18,10 +18,10 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Near misses in a unit belong to whoever holds the unit (BOARD.md); Windows workers hold units like Mac lanes.
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - Lanes hand back at about 200 tool calls or 200K context, whichever first; the owner continues the unit in a
-  fresh lane from NOTES. Two Mac lanes since 2026-10-30 (user cut, to extend the week), Opus; when the Claude week runs out, hand over to the
+  fresh lane from NOTES. Mac lanes go to zero once Foot305 and Hdr306 hand back (user, 2026-10-30): the owner then only lands Windows deliveries, keeps assignments/BOARD current and steers codex1-4; no new Mac lanes; when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (two; Opus, unit-sized; TibSun first, then Red Alert): Foot304 FootClass continuation (slot 78 first); Map303 Map.CPP continuation. Landed 2026-10-30: Foot302 r2 (1,432 B, slots 54/77), Map298 r5 (10,138 B + 0x54F7C0 bool rename), Cell301 r1 (1,403 B + Init_Drawer rename), Tactical300 r1 (1,071 B; owner dropped its file-local Point2D operator+, now a rect.hpp member). Next lane candidates: Tactical rest (Tactical300 NOTES), Cell rest (Cell301 NOTES), Techno.CPP, TeamClass, Sidebar. Terrain160 landed
+Running Mac lanes (two; Opus, unit-sized; TibSun first, then Red Alert): Foot305 FootClass continuation (0x4CB110 first); Hdr306 make 'Complete compiler extent differs' name its unit, then land Map303's exact 0x549C50. Landed 2026-10-30: Map303 r1 (2,219 B), Foot304 r3 (5,255 B, slots 78/93, 0x4CCA40), Foot302 r2 (1,432 B, slots 54/77), Map298 r5 (10,138 B + 0x54F7C0 bool rename), Cell301 r1 (1,403 B + Init_Drawer rename), Tactical300 r1 (1,071 B; owner dropped its file-local Point2D operator+, now a rect.hpp member). Next lane candidates: Tactical rest (Tactical300 NOTES), Cell rest (Cell301 NOTES), Techno.CPP, TeamClass, Sidebar. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -72,7 +72,7 @@ workers codex1-4 work under WORKER.md (the Mac lane brief adapted for Windows), 
 codex1 pathfinding + map generation 0x570000-0x58FFFF; codex2 wonline.cpp (from 2026-10-31; Queue.CPP closed: plateaus); codex3 BuildingClass; codex4 House.CPP, plus seed tooling between units. codex5/6 unused. Two workers run on
 Astra and two on Sol with identical briefs. Westwood reference clones for them are at C:\ra2\reference\ (copied without .git). TibSun reconstruction (OpenTS-Developers/TibSun dbfbfbf, code/ only; user-approved 2026-10-30) is cloned at private/reference/TibSun and C:\ra2\reference\TibSun: first place to look for a unit's names and shape (docs/WESTWOOD_SOURCES.md cautions). Optional readability follow-up when a lane next touches HouseClass: rename unknown_ members from TibSun house.h (unknown_142 FirestormDefenseActivated, unknown_18d IsBuiltSomething, unknown_144 IsRecalcNeeded, unknown_1bc JustBuiltUnit, unknown_54a0..54d0 PB/PU/PI/PAQuantity; BuildingClass::unknown_450950 Update_FS_Wall_State; Map 0x54EBD0 Zone_Reset, 0x5688A0 Recalc_Cells_In_List). 2026-10-30 20:24: the shared C:\ra2\repo\private\compiler and private\original-target-20261020 were emptied by a recursive delete through junctions (most likely the removal of the lead worktree C:\Users\Mike\.codex\worktrees\ra2-seed-lead, whose private folders were junctions; check trees under C:\ra2\c have the same junctions). Restored from the Mac (game.exe hash verified, 2719 inventory passes). Lead r66 (map reset 0x57BEA0, 545 B) was lost with that worktree, and so were the codex1, codex2 and codex4 scratch folders (codex3's survived); codex2-r2728 (Mono rename) is void and is being redone. Never delete a Windows worktree or check tree recursively without removing its junctions first. Deliveries arrive as deliveries/codexN-rN.md pointing at a frozen
 build\class-work\codexN\d\rN (BASE, README with body bytes, shared/, plans, unit/); land them with land_round.sh
-after rewriting the C:/ prefix, as for lead packets. The owner keeps assignments/codexN-next.md current for hand-backs; WORKER.md (2026-10-31) makes workers merge main and re-read messages/assignments before every delivery (codex4 kept delivering on BASE d5134dff because the brief never said to read messages). codex4's r4/r6-r9 (~3 KB) wait for one rebased cumulative round r10.
+after rewriting the C:/ prefix, as for lead packets. The owner keeps assignments/codexN-next.md current for hand-backs; WORKER.md (2026-10-31) makes workers merge main and re-read messages/assignments before every delivery (codex4 kept delivering on BASE d5134dff because the brief never said to read messages). codex4's rebased r10 and ctor r11 landed (9020f4bf); r4/r6-r9 are void.
 First line for each new Codex thread (N = 1..4):
 `Read C:\ra2\coordination\ra2-recovery-w1\WORKER.md, you are codexN, and start assignments\codexN-next.md.`
 Bytes landed per worker per day (first two days; body bytes from each delivery README):
@@ -80,6 +80,7 @@ Bytes landed per worker per day (first two days; body bytes from each delivery R
 | --- | ---: | ---: | ---: | ---: |
 | 2026-10-30 | 2,845 | 0 (Mono rename+takeover) | 11,110 | 780 |
 | 2026-10-31 | 9,706 | 0 | 2,978 | 0 (r5 rename; r4 refused, r6 waits on r4) |
+| 2026-10-31 (later) | 2,577 (r242, r249) | 6,051 (r2732-r2740 + r2733 fastcall rename) | 4,329 (r185, supersedes r182-r184) | 6,805 (r10 rebase + r11 ctor) |
 BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
 so MPCooperative functions that call a base body need separate units.
 

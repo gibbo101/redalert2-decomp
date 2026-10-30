@@ -230,7 +230,7 @@ public:
     bool unknown_4c8d60();                                      // 0x004C8D60 (slot 91 == 7)
     void unknown_4cdb60();                                      // 0x004CDB60 (+0x4B8 from +0x4BC's cell)
     void Unknown_004CD9B0();                                    // 0x004CD9B0 (clears +0x490 and +0x494)
-    void unknown_4cb110(WaypointClass *waypoint);               // 0x004CB110 (heads for a waypoint of the path; FootClass slot 93)
+    bool unknown_4cb110(WaypointClass *waypoint);               // 0x004CB110 (heads for a waypoint of the path; returns whether the click succeeded; FootClass slots 93, 194)
     BuildingClass *unknown_4c45b0();                            // 0x004C45B0 (an adjacent Overpowerable building of the same owner)
     bool unknown_4c8d00(HouseClass *house);                     // 0x004C8D00 (free to recruit: no team, an idle mission, +0x379)
     FootClass *unknown_4ccfc0();                                // 0x004CCFC0 (a passenger leaves this transport)

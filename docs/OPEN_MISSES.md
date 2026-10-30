@@ -749,3 +749,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - FootClass after Foot302 (NOTES, w/): Can_Reach slot 102 0x4C8730 98.31 (one load scheduled late); Mission_Guard_Area
   slot 130 0x4C5900 83.70 (Delete 0x454B20 must stay out of line; needs 0x4CE210 re-owned from population-19);
   Mission_Hunt slot 132 0x4C48E0 80.95; Draw_Action_Line 0x4CAB90 74.06 (one Rect slot too many). Seeded: slot 78 0x4C61A0.
+- Map.CPP after Map303 (NOTES): 0x549C50 (1,208 B, TibSun Sight_From) EXACT in unit context but declaring DisplayClass slot 38
+  0x49A0F0 / RadarClass slot 37 0x62FCA0 in map_view.hpp breaks another unit's full build (unit unknown; header saved as
+  map_view_with_slots.hpp); destroy-bridge twins 0x551470/551810/551DD0/5521A0 69.08 (/Ob2 budget, like 568B00); 5502E0 undrafted.
+- FootClass after Foot304: undrafted 0x4CB110 Execute_Waypoint_Path 1465, 0x4C3000 Basic_Path 2246, 0x4C3950 2174,
+  0x4C4C30 Approach_Target 3279, 0x4CBB40 1467; Foot302's misses unchanged.

@@ -4,8 +4,8 @@
     "id": "population-3141",
     "inventory_sha256": "38a02aa10f58dc9599a98e8fba0ff75a122b5b6b9e663828bd5f6b9e69309560",
     "gaps_sha256": "72e5f850c841c892dd002a0b1f88388506018642e6f3e11866367a040fc005f0",
-    "historical_population_sha256": "324f5865ac155500296ceb7b0207ef66badcb7ad107d232abc2bb37b2236362b",
-    "historical_acceptance_sha256": "629aa89301c819129390c6dac12d8b48a853af534fd4db8dd07c57fd86b471f6"
+    "historical_population_sha256": "1b315ca37f28975f05e0722349d43598035c8877ec8150aaee2307f6e6e1dfe0",
+    "historical_acceptance_sha256": "e0ba021b41fc3bf975501124ddc79318b97f072ff71f66b78de7f7bc3e3aef17"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -14952,7 +14952,7 @@
     "?Unknown_004EB270@HouseClass@@QAE?AVCell@@PAVFootClass@@@Z": 5157488,
     "?unknown_slot194@FootClass@@UAEXXZ": 5033456,
     "?Next_Waypoint@WaypointPathClass@@QAEPAUWaypointClass@@PBU2@@Z": 7491456,
-    "?unknown_4cb110@FootClass@@QAEXPAUWaypointClass@@@Z": 5026064,
+    "?unknown_4cb110@FootClass@@QAE_NPAUWaypointClass@@@Z": 5026064,
     "?unknown_slot60@FootClass@@UAEXXZ": 5033536,
     "?Release_4681e0@CaptureManagerClass@@QAEXXZ": 4620768,
     "?Unknown_004CCE80@FootClass@@QAEXPAV1@@Z": 5033600,
