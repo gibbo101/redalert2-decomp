@@ -10,7 +10,7 @@
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 194 | 52,196 | 194 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 171 | 47,172 | 171 | 0x00438A60–0x004D3450 |
-| (discovery: address-named) | 1449 | 43,220 | 13 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1448 | 43,185 | 13 | 0x004010A0–0x00797198 |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 128 | 42,374 | 128 | 0x0049ED10–0x0056A9D0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 188 | 35,894 | 185 | 0x0041B370–0x006D9750 |
@@ -546,6 +546,7 @@
 | [classes/DynamicVectorClass_IsometricTileTypeClass__TileInsertType_ptr](../src/recovered/classes/DynamicVectorClass_IsometricTileTypeClass__TileInsertType_ptr/) | 6 | 417 | 4 | 0x00528590–0x0052ED40 |
 | [classes/DynamicVectorClass_ObjectTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_ObjectTypeClass_ptr/) | 6 | 417 | 4 | 0x005D5750–0x005D8340 |
 | [classes/VectorClass_DiscreteDistributionClass_AITriggerTypeClass___DistributionObject_AITriggerTypeClass_ptr](../src/recovered/classes/VectorClass_DiscreteDistributionClass_AITriggerTypeClass___DistributionObject_AITriggerTypeClass_ptr/) | 4 | 417 | 4 | 0x006C03C0–0x006C05B0 |
+| [classes/Cell](../src/recovered/classes/Cell/) | 3 | 412 | 3 | 0x0042AD30–0x004FEF20 |
 | [classes/VectorClass_PlanningMemberClass_ptr](../src/recovered/classes/VectorClass_PlanningMemberClass_ptr/) | 6 | 412 | 4 | 0x0061A970–0x0061BA10 |
 | [classes/Quaternion](../src/recovered/classes/Quaternion/) | 9 | 409 | 9 | 0x00622160–0x00622640 |
 | [classes/BlowPipe](../src/recovered/classes/BlowPipe/) | 3 | 408 | 3 | 0x00435690–0x00435800 |
@@ -570,7 +571,6 @@
 | [header_statics/0040d950](../src/recovered/header_statics/0040d950/) | 14 | 379 | 14 | 0x0040D950–0x0040DB40 |
 | [header_statics/0040ea30](../src/recovered/header_statics/0040ea30/) | 14 | 379 | 14 | 0x0040EA30–0x0040EC20 |
 | [header_statics/0056cef0](../src/recovered/header_statics/0056cef0/) | 14 | 379 | 14 | 0x0056CEF0–0x0056D0E0 |
-| [classes/Cell](../src/recovered/classes/Cell/) | 2 | 377 | 2 | 0x0042AD30–0x00493C80 |
 | [classes/BlitTransLucent25AlphaZReadWarp_unsigned_short](../src/recovered/classes/BlitTransLucent25AlphaZReadWarp_unsigned_short/) | 3 | 376 | 1 | 0x004890E0–0x0048D0D0 |
 | [classes/BlitTransLucent75AlphaZReadWarp_unsigned_short](../src/recovered/classes/BlitTransLucent75AlphaZReadWarp_unsigned_short/) | 3 | 376 | 1 | 0x00488E60–0x0048D050 |
 | [classes/DynamicVectorClass_char_const_ptr](../src/recovered/classes/DynamicVectorClass_char_const_ptr/) | 5 | 376 | 5 | 0x005A1FC0–0x006F8AE0 |

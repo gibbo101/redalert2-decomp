@@ -83,6 +83,8 @@ struct UnknownCoord434820 : CoordStruct {
 
 class Cell {
 public:
+    // Original full-EAX comparison at004FEF20; thiscall/RET4.
+    int Equal_004fef20(Cell const &other) const;
     void unknown_47e2b0(); // 0047E2B0 empty RET; nonconst/nonvirtual coordinate operation hypothesis
     Cell() {}
     // Stores the coordinates through Set. 0x0042AD30 is the out-of-line copy

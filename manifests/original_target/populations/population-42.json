@@ -4,8 +4,8 @@
     "id": "population-42",
     "inventory_sha256": "a6e83d732959f1475aeb0c48bcfb990e9e75a3c13374eabebd19ad7f943521f1",
     "gaps_sha256": "d61d0da403b90e2409ab0cfa93e9dac80f1c06f0588399193bd138173c322f82",
-    "historical_population_sha256": "923fe4841bef42c6172b0a7ca86e93f2752b8b0003b9fc3517d1c3a74d0c19bf",
-    "historical_acceptance_sha256": "6e3ab1454972ea4f927eb37576ab402a0098f35522f157bc2308f739992c5a97"
+    "historical_population_sha256": "f7e5717becf98f9b93dc2b12896c69a97ed4e836e68e2a5da2303ee50ccfcea8",
+    "historical_acceptance_sha256": "56c77e5d8b753b29422f87b429bfdcc104a65325556db37a39d6d8b03ed0fa21"
   },
   "references": {
     "?FUN_0041b3f0@": 4305904,
@@ -80,7 +80,7 @@
     "?FUN_004f7940@": 5208384,
     "?FUN_004f8250@": 5210704,
     "?FUN_004f8450@": 5211216,
-    "?FUN_004fef20@": 5238560,
+    "?Equal_004fef20@Cell@@": 5238560,
     "?FUN_004ff1e0@": 5239264,
     "?FUN_00509760@": 5281632,
     "?FUN_0051af90@": 5353360,
@@ -2356,7 +2356,39 @@
     "??_ETeamClass@@UAEPAXI@Z": 7071552,
     "??_EAnimTypeClass@@UAEPAXI@Z": 4351936,
     "??_ERadarClass@@UAEPAXI@Z": 6507216,
-    "??_EMSPrintAnim@@UAEPAXI@Z": 5963392
+    "??_EMSPrintAnim@@UAEPAXI@Z": 5963392,
+    "?Equal_004fef20@Cell@@QBEHABV1@@Z": 5238560,
+    "__real@8@c005c800000000000000": 8019912,
+    "_?as@?1??Faction_Code@@YIABVWstring@@H@Z@4V2@A": 11709748,
+    "__real@8@3fe08000000080000000": 8019432,
+    "__real@4@3ffb8000000000000000": 8026912,
+    "__real@4@3ffe99999a0000000000": 8026908,
+    "__real@4@3ffdcccccd0000000000": 8026904,
+    "__real@8@3fefa7c5ac471b478800": 8013352,
+    "__real@8@bfefa7c5ac471b478800": 8048672,
+    "__real@4@3ffec90fdb0000000000": 8027392,
+    "__real@4@bffec90fdb0000000000": 8048668,
+    "__real@4@3ff683126f0000000000": 8048664,
+    "__real@8@3ff7a3d70ac000000000": 8048656,
+    "__real@4@3ffda0d97c0000000000": 8048652,
+    "??0Cell@@QAE@XZ": 4582640,
+    "__real@4@c001c000000000000000": 8055344,
+    "__real@4@c000c000000000000000": 8055352,
+    "__real@4@40068000000000000000": 8055356,
+    "__real@4@40078000000000000000": 7975084,
+    "__real@4@40038000000000000000": 8055360,
+    "__real@4@3ffccccccd0000000000": 8055364,
+    "__real@8@3fe1c0000000c0000000": 8019840,
+    "__open": 7919681,
+    "__read": 7899759,
+    "__lseek": 7929160,
+    "__filelength": 7958936,
+    "__close": 7908612,
+    "?Coord_To_Cell@Tactical@@QAE?AVCell@@ABUCoordStruct@@@Z": 6974032,
+    "__real@8@4002a000000000000000": 7983408,
+    "__real@8@3fe5ca000000ca000000": 8019448,
+    "__real@8@4006e100000000000000": 7983416,
+    "__real@8@3fe0c0000000c0000000": 8019456
   },
   "regions": [
     {
@@ -3864,8 +3896,8 @@
     {
       "entry": 5238560,
       "method": "004fef20",
-      "symbol": "?FUN_004fef20@Owner_004fef20@seed_004fef20@@QAEIPAF@Z",
-      "symbol_prefix": "?FUN_004fef20@",
+      "symbol": "?Equal_004fef20@Cell@@QBEHABV1@@Z",
+      "symbol_prefix": "?Equal_004fef20@Cell@@",
       "options": [
         "/O2",
         "/Ob2",
@@ -3878,13 +3910,13 @@
       "full_extent_bytes": 48,
       "full_extent_sha256": "da9136369b31f33d72f28e54d80f70a29cfbbf317f35151814ee480aa25eecf5",
       "relocations": [],
-      "source_sha256": "e58de2238cbdf7f9f870c5dc284861201227c18e67b05def4fc2a64587b56023",
-      "source": "src/recovered/004fef20.cpp",
+      "source_sha256": "5eeb8d74bd96989b28151f0d4a2e2065219bfbe08194ed5dd9e0a330588c1bd8",
+      "source": "src/recovered/classes/Cell/Cell_Equal_004fef20.cpp",
       "source_order": 6955,
       "population": "population-42",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
+      "source_quality_family": "hand-written"
     },
     {
       "entry": 5239264,
