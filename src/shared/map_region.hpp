@@ -6,8 +6,11 @@
 #include "shared/coord.hpp"
 #include "shared/rect.hpp"
 #include "shared/vector_class.hpp"
+class CellClass;
 class MapRegionClass {
 public:
+    static bool Make_Regions_00570810();
+    static MapRegionClass *__fastcall Create_Region_From_Cell_0056e100(CellClass *cell);
     static Cell __fastcall Pick_Random_Map_Cell_0056d720();
     static Cell __fastcall Pick_Random_Clear_Map_Cell_0056d7a0();
     MapRegionClass(Cell origin); //0056D870 by-value packed Cell, nominal constructor hypothesis
