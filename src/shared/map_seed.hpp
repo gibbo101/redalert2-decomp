@@ -41,6 +41,7 @@ public:
 };
 class MapSeedClass : public LoadOptionsClass {
 public:
+    char Delete_Dialog_005794c0(); // AL result; original base-dialog forwarder
     MapSeedClass(); // 00576F50
     void Set_Default_Description_00576fe0();
     void Populate_Dialog_Parameters_00578600(HWND dialog); // operation name is a hypothesis

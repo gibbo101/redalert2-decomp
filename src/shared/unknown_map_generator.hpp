@@ -9,6 +9,7 @@
 class BuildingTypeClass;
 class UnknownMapGenerator {
 public:
+    double Angle_Score_00582970(Cell const &from,Cell const &to,double heading);
     void Cleanup_0057ace0();
     void unknown_005835f0();
     void unknown_00582fd0();
