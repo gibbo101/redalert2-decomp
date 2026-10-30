@@ -610,3 +610,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   units smaller); named locals shrink S here. PlanMgr 0x617AF0 90.00 needs ~100-190 more budget spent before the help
   calls (most promising). TAction Execute: 6b1270/6b19a0 are over the non-inline cap in the original (wordier sources);
   case bodies differ too. UICmnds 6D00 95.53. WDTSel ctor: maybe inline Wstring/WideString dtors in the original headers.
+- Techno/Foot after TechFoot253 (NOTES lists every unrecovered Techno/Foot function with size and best score): 0x6D65B0
+  87.83 (frame 8 bytes larger: slot 22 result buffer unshared), slot 223 0x6D5F40 52.75 (needs rename to
+  void(CoordStruct const *, float)), 0x6C3950 69.29 (exact only with two more waiting inline sites after the second
+  divide; source unknown). Slot 200 casts arg3/arg4 (really AbstractClass*; rename touches Aircraft 78/200 and two
+  Building sources). Untried: 0x6C4BB0 range test, slot 251 0x6D5510, voxel draws 0x6D24E0/0x6D2810/0x6D21E0/0x6D1D00.
+  Check the value behind every __real constant name (0x3F747AE1_58000000 is 0.002f*2.5).

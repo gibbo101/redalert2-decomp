@@ -127,6 +127,9 @@ public:
     // The width and height of a cell list ending with (0x7FFF, 0x7FFF), at
     // least 1 x 1; 0 x 0 for no list (0x00499810).
     Cell Unknown_00499810(Cell const *list);
+    // Sets the placement cursor's cell list (0x00499070; RA Set_Cursor_Shape): unmarks the old
+    // one, copies the list into a function static and centres it on the zone cell.
+    void Set_Cursor_Shape(Cell const *list);
     // Sets or clears flag 2 (0x004998C0) or 4 (0x00499970) of the cells of
     // the list at +0x1178 / +0x1188 placed at a cell.
     void Unknown_004998C0(Cell const &cell, bool set);
