@@ -3,7 +3,7 @@
 #include "shared/multi_mission.hpp"
 #include "shared/map_preview.hpp"
 // @ref ??_C@_0M@EOLM@RandMap?4img?$AA@=007e1540
-// @ref ?Load_0061E170@UnknownPreview_0061D430@@QAEXPBD@Z=0061e170
+// @ref ?Load_0061E170@UnknownPreview_0061D430@@QAE_NPBD@Z=0061e170
 
 void __fastcall Load_Random_Map_Preview_005cc800(HWND dialog)
 {
