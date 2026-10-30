@@ -5,7 +5,8 @@
 #define RA2_SHARED_MAP_GENERATION_PATH_HPP
 #include "shared/coord.hpp"
 struct UnknownMapGenerationPoint {
-    UnknownMapGenerationPoint() : Position(0,0),unknown_04(-1) {}
+    UnknownMapGenerationPoint(); //0058B120
+    UnknownMapGenerationPoint(Cell const &position,int value); //0058B100
     UnknownMapGenerationPoint(UnknownMapGenerationPoint const &other); //0058B140, copyctor-versus-assignment intent qualified
     Cell Position;
     int unknown_04;
