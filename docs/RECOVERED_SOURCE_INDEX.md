@@ -10,13 +10,13 @@
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 195 | 53,656 | 195 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 171 | 47,172 | 171 | 0x00438A60–0x004D3450 |
-| (discovery: address-named) | 1447 | 43,150 | 13 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1446 | 43,107 | 13 | 0x004010A0–0x00797198 |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 128 | 42,374 | 128 | 0x0049ED10–0x0056A9D0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 188 | 35,894 | 185 | 0x0041B370–0x006D9750 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 114 | 34,035 | 110 | 0x0041B470–0x004CDE10 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 82 | 30,791 | 82 | 0x004D3510–0x0070A330 |
-| [classes/UnknownIDSource](../src/recovered/classes/UnknownIDSource/) | 50 | 28,998 | 50 | 0x0065B4F0–0x00663440 |
+| [classes/UnknownIDSource](../src/recovered/classes/UnknownIDSource/) | 51 | 29,041 | 51 | 0x0065B4F0–0x00663440 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 92 | 27,168 | 92 | 0x005DE880–0x00600D50 |
 | [classes/InfantryClass](../src/recovered/classes/InfantryClass/) | 84 | 22,742 | 84 | 0x004D3390–0x00509810 |
 | [classes/TechnoTypeClass](../src/recovered/classes/TechnoTypeClass/) | 31 | 20,880 | 31 | 0x004D4310–0x006DF7A0 |

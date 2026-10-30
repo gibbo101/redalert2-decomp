@@ -22,6 +22,7 @@ struct UnknownScenarioVariable_004B5AB0 { char unknown_00[40]; bool Value; };
 typedef char ScenarioVariable_stride_check[(sizeof(UnknownScenarioVariable_004B5AB0)==41)?1:-1];
 class UnknownIDSource {
 public:
+    void Set_Scenario_Name_0065e730(char const *name);
     // Builds the scenario with its defaults (0x0065B4F0; Set_Defaults, the
     // special options, no waypoints, names or variables).
     UnknownIDSource();
