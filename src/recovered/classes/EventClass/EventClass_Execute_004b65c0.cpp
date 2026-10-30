@@ -47,7 +47,7 @@
 // @ref ??_C@_0CN@JPPC@Executing?5ADDRESSCHANGE?5event?5fo@=007d69d0
 // @ref ?Unknown_00435D30@BombClass@@QAEXXZ=00435d30
 // @ref ?Unknown_004E6950@HouseClass@@QAE_NHH_NABVCell@@@Z=004e6950
-// @ref ?Unknown_0063F130@OwnerTalkClass@@QAEXXZ=0063f130
+// @ref ?Unknown_0063F130@OwnerTalkClass@@QAE_NXZ=0063f130
 // @ref ?Unknown_0063F9A0@OwnerTalkClass@@QAEXHPAVIPXAddressClass@@@Z=0063f9a0
 // @ref ?Unknown_0063FBA0@OwnerTalkClass@@QAEHXZ=0063fba0
 // @ref ?Unknown_0063FE20@OwnerTalkClass@@QAEXH@Z=0063fe20

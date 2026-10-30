@@ -20,9 +20,9 @@
 // @ref ??_C@_0DJ@PLDA@?$EA?$EA?$EA?$EA?5Before?5destroying?5connectio@=007e3864
 // @ref ?Unknown_0063FC90@OwnerTalkClass@@QAEXXZ=0063fc90
 // @ref ?unknown_address_a3db2c@@3VIPXAddressClass@@A=00a3db2c
-// @ref ?unknown_b293d8@@3_NA=00b293d8
+// @ref ?unknown_squad_2_b293d8@@3PADA=00b293d8
 // @ref ?unknown_b2a6d8@@3PADA=00b2a6d8
-// @ref ?unknown_b2a820@@3_NA=00b2a820
+// @ref ?unknown_squad_1_b2a820@@3PADA=00b2a820
 // @ref ?unknown_b2ab84@@3IA=00b2ab84
 // @ref ?DoList@@3V?$QueueClass@VEventClass@@$0EAAA@@@A=00866270
 // @ref ?unknown_pings_b2a734@@3PAHA=00b2a734
@@ -55,8 +55,6 @@ extern unsigned int unknown_protocol_7fd370;
 extern char unknown_b2a6d8[];
 extern unsigned int unknown_b2ab84;
 extern int unknown_pings_b2a734[];
-extern bool unknown_b2a820;
-extern bool unknown_b293d8;
 extern IPXManagerClass unknown_ipx_manager_a40978;
 extern OwnerTalkClass unknown_OwnerTalkClass_00ab6d18;
 void Unknown_Pregame_Setup_005c74f0();
@@ -247,9 +245,9 @@ void MPCooperative::unknown_slot37()
     }
     unknown_session_a3d298.unknown_2e0 = unknown_session_a3d298.MaxAhead_2c8;
     memset(player_statistics_00a3d584, 0, sizeof(player_statistics_00a3d584));
-    unknown_b2a820 = false;
+    unknown_squad_1_b2a820[0] = '\0';
     Options.GameSpeed = unknown_session_a3d298.GameSpeed_30;
-    unknown_b293d8 = false;
+    unknown_squad_2_b293d8[0] = '\0';
     Unknown_Pregame_Setup_005c74f0();
     DoList.Count = 0;
     DoList.Head = 0;

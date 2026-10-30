@@ -478,8 +478,10 @@ extern int unknown_b2a7fc;              // 0x00B2A7FC (the game ID the loading s
 extern char unknown_b2a6d8[];           // 0x00B2A6D8 (MPCooperative slot 37 copies unknown_wstring_b26cb8 into it)
 extern unsigned int unknown_b2ab84;     // 0x00B2AB84 (slot 37: unknown_protocol_7fd370)
 extern int unknown_pings_b2a734[];      // 0x00B2A734 the players' pings in ms (1000: none)
-extern bool unknown_b2a820;             // 0x00B2A820
-extern bool unknown_b293d8;             // 0x00B293D8
+// The two comma-separated lists of house names a game mode 4 session started with (Squad 1 and Squad 2:
+// 0x00672440 makes each list's houses allies; MPCooperative slot 37 empties both).
+extern char unknown_squad_1_b2a820[];    // 0x00B2A820
+extern char unknown_squad_2_b293d8[];    // 0x00B293D8
 extern int unknown_a40774;  // 0x00A40774 (a live-object count; BuildingClass, FactoryClass, ...)
 extern int unknown_int_a40d48;  // 0x00A40D48 the mode the radar buttons select (1, 8, 9; Game Controls sets 4 and 6)
 extern bool unknown_flag_a40d84;  // 0x00A40D84 (Game Controls: set with a session game, its sliders then stay visible)
