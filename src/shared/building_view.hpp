@@ -14,6 +14,7 @@
 
 class BuildingClass : public ObjectClass {
 public:
+    virtual ~BuildingClass(); // original439240; existing full-class declaration
     BuildingClass(BuildingTypeClass *type, HouseClass *house);         // 0x00438CE0
 
     virtual HRESULT __stdcall GetClassID(GUID *clsid);
@@ -23,7 +24,9 @@ public:
 
     bool unknown_44d900(BuildingTypeClass *upgrade,HouseClass *house); // identified0044D900
 
-    char unknown_098[0x5E0 - 0x98];         // TechnoClass and BuildingClass members
+    char unknown_098[0x418 - 0x98];
+    BuildingTypeClass *Type; // existing full-class member +418
+    char unknown_41c[0x5E0 - 0x41C];         // TechnoClass and BuildingClass members
 };
 
 #endif
