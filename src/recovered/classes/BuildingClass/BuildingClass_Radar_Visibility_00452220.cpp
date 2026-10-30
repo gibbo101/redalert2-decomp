@@ -17,8 +17,8 @@ bool BuildingClass::unknown_slot190(int *out_kind)
         if (House->Unknown_004F52B0()) return unknown_373 ? true : false;
         int height = Type->Foundation_Height(false) * 256 - 256;
         int width = Type->Width() * 256 - 256;
-        bool shrouded = Map.Unknown_00568140(UnknownCoord434820(Coord))
-            && Map.Unknown_00568140(UnknownCoord434820(Coord) + CoordStruct(width, height, 0))
+        bool shrouded = Map.Unknown_00568140(CoordStruct(Coord))
+            && Map.Unknown_00568140(CoordStruct(Coord) + CoordStruct(width, height, 0))
             && unknown_b263d8;
         if (unknown_1b8 != 2 && unknown_5bd != 15 && !unknown_5b7 && !shrouded) return true;
         if (!unknown_slot191()) return false;

@@ -9,6 +9,14 @@ struct UnknownVector3 {
     UnknownVector3() {}
     UnknownVector3(int x, int y, int z);
     int Length() const;
+    UnknownVector3 const operator-(UnknownVector3 const &other) const
+    {
+        return UnknownVector3(X-other.X, Y-other.Y, Z-other.Z);
+    }
+    int Distance_To(UnknownVector3 const &other) const
+    {
+        return (*this-other).Length();
+    }
     int X;
     int Y;
     int Z;

@@ -83,7 +83,7 @@ inline bool operator!=(CoordStruct const &left, CoordStruct const &right)
 struct UnknownCoord434820 : CoordStruct {
     UnknownCoord434820() {}
     UnknownCoord434820(int x, int y, int z) : CoordStruct(x, y, z) {}
-    UnknownCoord434820(CoordStruct const &coord) : CoordStruct(coord) {}
+    UnknownCoord434820(CoordStruct const &coord) { X=coord.X; Y=coord.Y; Z=coord.Z; }
 };
 
 class Cell {
