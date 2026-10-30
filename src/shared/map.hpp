@@ -36,6 +36,7 @@
 class AbstractClass;
 class CellClass;
 class HouseClass;
+class BuildingTypeClass;
 class ObjectClass;
 class Straw;
 class Pipe;
@@ -155,6 +156,10 @@ bool __fastcall Unknown_00556B30(int tile, int kind, CellClass const *cell);
 
 class MapClass : public GScreenClass {
 public:
+    // Original House004E6950 calls: ECX Map, cell reference, house, building type; RET12.
+    void Unknown_0056A480(Cell const &cell, HouseClass *house, BuildingTypeClass *type);
+    void Unknown_0056A660(Cell const &cell, HouseClass *house, BuildingTypeClass *type);
+
     MapClass();                                                                 // 0x00547960
     MapClass(NoInitClass const &noinit);                                        // 0x00547A60
     // A cell test with a flag (0x0055A660; radar 0x00630340 passes true).

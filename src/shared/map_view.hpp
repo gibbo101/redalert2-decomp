@@ -45,6 +45,7 @@
 class AbstractClass;
 class CellClass;
 class ObjectClass;
+class ObjectTypeClass;
 class TechnoClass;
 class HouseClass;
 class BuildingTypeClass;
@@ -183,10 +184,23 @@ public:
     // Slot 38 (0x0049A0F0, virtual in shared/display.hpp), declared non-virtual so the light vtable keeps its layout;
     // Map calls it directly (MapClass 0x00549C50).
     bool unknown_slot38(Cell const &cell, HouseClass *house);
+    void Set_Cursor_Shape(Cell const *list);
     void Unknown_00498F10(Cell const *list);                                    // 0x00498F10 (the placement cursor's cell list)
     // The pending placement (as shared/display.hpp; HouseClass::Manual_Place sets them).
 #ifdef RA2_SHARED_MAP_HPP
-    char unknown_1170[0x11A0 - 0x1170];   // after the full MapClass (shared/map.hpp ends at +0x1170)
+    Cell unknown_1170;
+    Cell unknown_1174;
+    Cell const *unknown_1178;
+    bool unknown_117c;
+    bool unknown_117d;
+    Cell unknown_117e;
+    Cell unknown_1182;
+    Cell const *unknown_1188;
+    ObjectClass *unknown_118c;
+    ObjectTypeClass *unknown_1190;
+    int unknown_1194;
+    bool unknown_1198;
+    void *unknown_119c;
 #else
     char unknown_130[0x11A0 - 0x130];
 #endif
