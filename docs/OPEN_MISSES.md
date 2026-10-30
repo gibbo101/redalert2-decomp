@@ -688,3 +688,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   allow_split): UnVQ2_C0_4x4_TRANS 0x77D940 95.52, UnVQ2_C4_4x2 0x77D5B0 86.84 (VC6 chains the 0x2000 masked block in
   place), UnVQ2_C0_4x2_TRANS 0x77E5B0 85.59, UnVQ2_C4_4x4 0x77D0C0 74.04, UnVQ2_C0_4x4_KEY 50.60; 0x77E1A0 and 0x77E9E0
   not drafted. Load_CBPZ 96.77 (VC6 canonicalises the address sum). VQA library parked (slow register hill-climbs).
+- Init.CPP after Init283 (Init_Game landed 4a7917ca). Owner judgement: Init_Game calls empty file-static Init_Heaps and
+  Init_Threads; Init_Heaps is a real static called at that point in Westwood's RA INIT.CPP (RA2's heaps are dynamic, so an
+  empty body is plausible); Init_Threads is only in TibSun. Accepted as evidenced source, not empty steering calls.
+  Init_Theater 0x519E70 77.74 (register allocation), Draw_Loading_Screen 99.63, 0x516E70 97.62, Select_Game 93.08,
+  Allocate_Surfaces 77.26, 0x516F00 95.15, Init_Rules 45.98, 0x5173C0 (7807) not started.
