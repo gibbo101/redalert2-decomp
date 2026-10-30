@@ -16,6 +16,7 @@ class PaletteClass {
 public:
     RGBClass &operator[](int index) { return Palette[index % 256]; }
     RGBClass const &operator[](int index) const { return Palette[index % 256]; }
+    PaletteClass &operator=(PaletteClass const &palette);   // 0x00603080
 
     // Makes this the current palette (0x00496120; a copy into 0x00851CC8
     // when it is not that palette already; name is a hypothesis).

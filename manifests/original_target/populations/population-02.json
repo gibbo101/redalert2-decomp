@@ -724,63 +724,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 5352736,
-      "method": "51ad20",
-      "symbol": "?get@Leaf_51ad20@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_51ad20@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 39,
-      "body_sha256": "8fc738935509346d5aea61ea22642e601498e13494cd48f3c1cfaebc1edb4144",
-      "padding_bytes": 9,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "615ce4ae102f34de8bcc40c10b061e178a92f56caf9607bb8563465679983aa5",
-      "relocations": [
-        {
-          "offset": 8,
-          "kind": 6,
-          "symbol": "_data_51ad20_79a6a0",
-          "target": 7972512,
-          "addend": 0,
-          "resolved": 7972512
-        },
-        {
-          "offset": 20,
-          "kind": 20,
-          "symbol": "?target@Call_51ad20_0@@QAEIXZ",
-          "target": 4424720,
-          "addend": 0,
-          "resolved": 4294039256
-        },
-        {
-          "offset": 28,
-          "kind": 6,
-          "symbol": "_data_51ad20_79a658",
-          "target": 7972440,
-          "addend": 0,
-          "resolved": 7972440
-        },
-        {
-          "offset": 33,
-          "kind": 20,
-          "symbol": "?target@Call_51ad20_1@@QAEIXZ",
-          "target": 4387664,
-          "addend": 0,
-          "resolved": 4294002187
-        }
-      ],
-      "source": "src/recovered/classes/CCFileClass/0051ad20.cpp",
-      "source_sha256": "419148142d63a1802505262e0b7759e8ecf1d9801e6fa6a4bed851b0037a256b",
-      "source_order": 2559,
-      "population": "population-02",
-      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 6005376,
       "method": "5ba280",
       "symbol": "?get@Leaf_5ba280@@QAEIXZ",

@@ -16,7 +16,8 @@ public:
     void Unknown_0068B410();                    // 0x0068B410 (Read_Scenario_INI, on the global options)
     void Unknown_0068B420();                    // 0x0068B420 (the modem host's first setup, on the global options)
 
-    unsigned unknown_bits_0 : 3;                // bits 0-2
+    unsigned unknown_bits_0 : 2;                // bits 0-1
+    unsigned IsFromInstall : 1;                 // bit 2 play the intro movies (RA2.INI [Intro] Play)
     unsigned EscapeMovies : 1;                  // bit 3 (registry value)
     unsigned unknown_bit_4 : 1;
     unsigned Inert : 1;                         // bit 5

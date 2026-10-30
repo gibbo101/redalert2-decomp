@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 912 | 133,218 | 912 | 0x004011C0–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 913 | 137,638 | 913 | 0x004011C0–0x0078FB6B |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | (discovery: address-named) | 1452 | 43,245 | 13 | 0x004010A0–0x00797198 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 163 | 42,214 | 163 | 0x00438A60–0x004D3450 |
@@ -23,12 +23,12 @@
 | [VQA32](../src/recovered/VQA32/) | 72 | 20,708 | 72 | 0x00776380–0x0077D470 |
 | [classes/TeamClass](../src/recovered/classes/TeamClass/) | 85 | 19,208 | 84 | 0x004D3690–0x006BE740 |
 | [classes/AircraftClass](../src/recovered/classes/AircraftClass/) | 77 | 18,548 | 77 | 0x004139F0–0x004D34D0 |
-| [classes/INIClass](../src/recovered/classes/INIClass/) | 86 | 18,359 | 86 | 0x0050B8D0–0x005113B0 |
+| [classes/INIClass](../src/recovered/classes/INIClass/) | 87 | 18,496 | 87 | 0x0050B8D0–0x0051AD50 |
 | [classes/CChatEventSink](../src/recovered/classes/CChatEventSink/) | 35 | 16,667 | 34 | 0x0075DFE0–0x00765B90 |
 | [netshare](../src/recovered/netshare/) | 71 | 16,527 | 71 | 0x005C2BA0–0x005CD540 |
 | [classes/MPCooperative](../src/recovered/classes/MPCooperative/) | 41 | 14,646 | 39 | 0x005A2800–0x005A62B0 |
 | [classes/TActionClass](../src/recovered/classes/TActionClass/) | 121 | 13,936 | 121 | 0x006AD2F0–0x006B30D0 |
-| [classes/CCINIClass](../src/recovered/classes/CCINIClass/) | 85 | 13,630 | 85 | 0x004696B0–0x00654150 |
+| [classes/CCINIClass](../src/recovered/classes/CCINIClass/) | 86 | 13,770 | 86 | 0x004696B0–0x00654150 |
 | [classes/SidebarClass](../src/recovered/classes/SidebarClass/) | 79 | 11,558 | 77 | 0x0067B4B0–0x006824A0 |
 | [classes/ModemHost](../src/recovered/classes/ModemHost/) | 32 | 11,065 | 32 | 0x00598E10–0x0059C8B0 |
 | [classes/DisplayClass](../src/recovered/classes/DisplayClass/) | 57 | 10,807 | 51 | 0x0040D120–0x006824F0 |
@@ -182,7 +182,7 @@
 | [classes/BitFontClass](../src/recovered/classes/BitFontClass/) | 16 | 1,685 | 16 | 0x00431040–0x00432200 |
 | [classes/UnknownPairFirst](../src/recovered/classes/UnknownPairFirst/) | 10 | 1,677 | 10 | 0x00719060–0x00719F60 |
 | [classes/UnitTypeClass](../src/recovered/classes/UnitTypeClass/) | 23 | 1,674 | 23 | 0x004D3D10–0x0070B600 |
-| [classes/CDFileClass](../src/recovered/classes/CDFileClass/) | 15 | 1,669 | 13 | 0x00401950–0x0051AD10 |
+| [classes/CDFileClass](../src/recovered/classes/CDFileClass/) | 15 | 1,669 | 14 | 0x00401950–0x0051AD10 |
 | [classes/CNetUtilEventSink](../src/recovered/classes/CNetUtilEventSink/) | 8 | 1,645 | 7 | 0x0075D1F0–0x00765D00 |
 | [classes/RadBeam](../src/recovered/classes/RadBeam/) | 20 | 1,624 | 20 | 0x006353A0–0x00636020 |
 | [classes/CaptureManagerClass](../src/recovered/classes/CaptureManagerClass/) | 18 | 1,607 | 18 | 0x00467D30–0x00468380 |
@@ -203,7 +203,7 @@
 | [classes/EditClass](../src/recovered/classes/EditClass/) | 11 | 1,447 | 9 | 0x004A5550–0x004B2F20 |
 | [classes/GaugeClass](../src/recovered/classes/GaugeClass/) | 13 | 1,446 | 13 | 0x004D00F0–0x0053AB60 |
 | [classes/RandomStraw](../src/recovered/classes/RandomStraw/) | 11 | 1,446 | 11 | 0x0063D2D0–0x0063D890 |
-| [classes/CCFileClass](../src/recovered/classes/CCFileClass/) | 17 | 1,442 | 15 | 0x00401980–0x0051AD20 |
+| [classes/CCFileClass](../src/recovered/classes/CCFileClass/) | 17 | 1,442 | 16 | 0x00401980–0x0051AD20 |
 | [classes/TemporalClass](../src/recovered/classes/TemporalClass/) | 18 | 1,423 | 18 | 0x006E1E70–0x006E2A20 |
 | [classes/WolChannelNameSet](../src/recovered/classes/WolChannelNameSet/) | 6 | 1,397 | 6 | 0x00766070–0x007679A0 |
 | [classes/EBolt](../src/recovered/classes/EBolt/) | 10 | 1,396 | 10 | 0x004B1770–0x004B2580 |
@@ -312,13 +312,13 @@
 | [classes/CounterClass](../src/recovered/classes/CounterClass/) | 9 | 696 | 8 | 0x00491C00–0x00491F00 |
 | [classes/DynamicVectorClass_SubzoneTrackingStruct](../src/recovered/classes/DynamicVectorClass_SubzoneTrackingStruct/) | 5 | 696 | 4 | 0x0056AB40–0x0056C390 |
 | [classes/VectorClass_HashObject_HashString_SchemeNode_ptr](../src/recovered/classes/VectorClass_HashObject_HashString_SchemeNode_ptr/) | 7 | 695 | 6 | 0x00605810–0x00605E30 |
+| [classes/RGBClass](../src/recovered/classes/RGBClass/) | 6 | 684 | 6 | 0x00432D70–0x0063CF20 |
 | [classes/WolIntArray](../src/recovered/classes/WolIntArray/) | 3 | 679 | 3 | 0x00766F90–0x00768290 |
 | [classes/LZOStraw](../src/recovered/classes/LZOStraw/) | 4 | 675 | 4 | 0x0053EFB0–0x0053F220 |
 | [address_offsets](../src/recovered/address_offsets/) | 25 | 674 | 25 | 0x0042AE90–0x0076D5E0 |
 | [classes/VectorClass_SwizzlePointerClass](../src/recovered/classes/VectorClass_SwizzlePointerClass/) | 8 | 667 | 8 | 0x0069FE20–0x006A01D0 |
 | [classes/CDownloadEventSink](../src/recovered/classes/CDownloadEventSink/) | 7 | 664 | 7 | 0x007668A0–0x00766B20 |
 | [classes/DynamicVectorClass_TechnoTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TechnoTypeClass_ptr/) | 9 | 661 | 7 | 0x0046CCE0–0x006DFA70 |
-| [classes/RGBClass](../src/recovered/classes/RGBClass/) | 5 | 659 | 5 | 0x004A9AF0–0x0063CF20 |
 | [classes/DynamicVectorClass_VoxelAnimTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_VoxelAnimTypeClass_ptr/) | 10 | 650 | 9 | 0x004D56D0–0x006DF890 |
 | [classes/DynamicVectorClass_SubzoneConnectionStruct](../src/recovered/classes/DynamicVectorClass_SubzoneConnectionStruct/) | 7 | 639 | 5 | 0x0056AA70–0x0056C9B0 |
 | [classes/DynamicVectorClass_TeamTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TeamTypeClass_ptr/) | 9 | 639 | 8 | 0x004D52B0–0x004F7E10 |
@@ -1322,7 +1322,7 @@
 | [classes/exception](../src/recovered/classes/exception/) | 1 | 13 | 0 | 0x0078B1E7–0x0078B1E7 |
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 
-1315 directories, 15795 regions. Generated by `tools/original_target/source_index.py`.
+1315 directories, 15799 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

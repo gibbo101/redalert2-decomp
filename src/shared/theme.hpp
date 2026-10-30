@@ -22,12 +22,15 @@ struct ThemeControl {
 typedef int ThemeType;
 #define THEME_NONE (-1)
 
+class CCINIClass;
+
 class ThemeClass {
 public:
     ThemeClass();                           // 0x006E7C60
     void Stop(bool fade = false);           // 0x006E81A0 (argument meaning unknown)
     void Queue_Song(ThemeType theme);       // 0x006E7E20
     int Play_Song(ThemeType theme);         // 0x006E7EB0 (name hypothesis after TS)
+    void Unknown_006E7890(CCINIClass &ini); // 0x006E7890 (Tiberian Sun's Init_Themes; name hypothesis)
     void Scan();                            // 0x006E7AF0 (name hypothesis)
     void AI();                              // 0x006E7CD0 (name hypothesis: chooses and starts the next song)
     ThemeType Pick_Next_Song(ThemeType current);    // 0x006E7D80 (name hypothesis)

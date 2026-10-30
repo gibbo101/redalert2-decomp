@@ -444,14 +444,7 @@ public:
     void Save_007395d0(Wstring const &name);
     // size 0x38 (operator new in Load_Default 0x00738670)
 };
-struct WolRegistryOptions {
-    WolRegistryOptions() : Options(0), HasOptions(false) {}
-    bool Read_004ff200();
-    bool unknown_004ff2c0() const;
-    bool Write_004ff2e0(unsigned int options);
-    unsigned int Options;
-    bool HasOptions;
-};
+#include "shared/wol_registry_options.hpp"
 int __fastcall Save_Nickname_00745320(char const *nick, char const *password, bool arg, int arg2);
 extern Wstring unknown_password_b2a63c;
 extern int unknown_newnick_result_b2ac08;

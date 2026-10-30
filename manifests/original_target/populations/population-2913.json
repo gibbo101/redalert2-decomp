@@ -3193,48 +3193,6 @@
       "source_order": 111442
     },
     {
-      "entry": 5352720,
-      "method": "0051ad10",
-      "symbol": "?FUN_0051ad10@seed_0051ad10@@YIXPAI@Z",
-      "symbol_prefix": "?FUN_0051ad10@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 11,
-      "body_sha256": "c87bd2c995e06724a89829b758e9b95cb3d801846c767006348a83a9db86a4e1",
-      "padding_bytes": 5,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "58da0a20b7f71f9433ebaf49239a9b4ea41d78f2f0448f9d58ddfdca8f3ef76a",
-      "relocations": [
-        {
-          "offset": 2,
-          "kind": 6,
-          "symbol": "_PTR_FUN_0079a658",
-          "target": 7972440,
-          "addend": 0,
-          "resolved": 7972440
-        },
-        {
-          "offset": 7,
-          "kind": 20,
-          "symbol": "?FUN_0042f350@seed_0051ad10@@YIXXZ",
-          "target": 4387664,
-          "addend": 0,
-          "resolved": 4294002229
-        }
-      ],
-      "source_sha256": "5731c9fa8776cb9905275a55ef8d1acf6e7edf879140e0d40362078e2167c458",
-      "source": "src/recovered/classes/CDFileClass/0051ad10.cpp",
-      "population": "population-2913",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 111443
-    },
-    {
       "entry": 5353152,
       "method": "0051aec0",
       "symbol": "?FUN_0051aec0@seed_0051aec0@@YIPAEH@Z",

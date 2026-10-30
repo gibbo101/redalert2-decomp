@@ -684,3 +684,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   fold `0x2B - used` vs inc/mov 0x2C/sub remains; needs 5+ pending inline sites after the INIClass), ctor 0x66E380 98.59,
   Allocate_Ports 0x673090 87.47.
 - VQA task.cpp landed via VQA285 (the inline_depth pragma was not needed). VQA_Reset 0x77C7D0 75.68 (stop in esi).
+- VQA unvq.cpp after VQA284 (NOTES, w/; joined rows need body_bytes through the final ret + bound_evidence, tails under
+  allow_split): UnVQ2_C0_4x4_TRANS 0x77D940 95.52, UnVQ2_C4_4x2 0x77D5B0 86.84 (VC6 chains the 0x2000 masked block in
+  place), UnVQ2_C0_4x2_TRANS 0x77E5B0 85.59, UnVQ2_C4_4x4 0x77D0C0 74.04, UnVQ2_C0_4x4_KEY 50.60; 0x77E1A0 and 0x77E9E0
+  not drafted. Load_CBPZ 96.77 (VC6 canonicalises the address sum). VQA library parked (slow register hill-climbs).
