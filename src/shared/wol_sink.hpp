@@ -106,7 +106,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot03() = 0;
     virtual void __stdcall unknown_slot04() = 0;
     virtual void __stdcall unknown_slot05() = 0;
-    virtual void __stdcall unknown_slot06() = 0;
+    virtual HRESULT __stdcall unknown_slot06(int channel_type,int autoping) = 0;
     virtual void __stdcall unknown_slot07() = 0;
     virtual HRESULT __stdcall unknown_slot08(Channel *channel) = 0;
     virtual HRESULT __stdcall unknown_slot09() = 0;
@@ -605,6 +605,17 @@ public:
         Capacity = capacity;
         return true;
     }
+    char Add_At(int &value,int index) {
+        if(index>Count) index=Count;
+        if(index>=Capacity) Grow();
+        if(Count>=Capacity) Grow();
+        if(index<Count) memmove(Items+index+1,Items+index,(Count-index)*sizeof(int));
+        new(Items+index) int(value);
+        ++Count;
+        return 1;
+    }
+    int Length() const { return Count; }
+    char Add_Tail(int &value) { return Add_At(value,Length()); }
     bool Grow_00768290();
     bool Insert_00766f90(int const &value, int index);
     bool Remove_007681a0(int index);
