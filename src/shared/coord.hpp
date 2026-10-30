@@ -93,6 +93,8 @@ public:
     int Equal_004fef20(Cell const &other) const;
     void unknown_47e2b0(); // 0047E2B0 empty RET; nonconst/nonvirtual coordinate operation hypothesis
     Cell() {}
+    // Original inline conversion, signed division toward zero; source name hypothesis.
+    Cell(CoordStruct const &coord) { *this=Cell(coord.X/256,coord.Y/256); }
     // Stores the coordinates through Set. 0x0042AD30 is the out-of-line copy
     // (two word stores, returns this). The discarded reference Set returns
     // makes the constructor one IL node larger than two plain stores, so /Ob2

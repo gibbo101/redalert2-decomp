@@ -6,6 +6,8 @@
 // A 16-bit direction in a 4-byte value (hypothesis: Westwood's DirStruct;
 // cf. UnknownDirStruct in shared/bullet.hpp).
 struct UnknownFacingDir {
+    void From_Radian(double angle); // original inline angle conversion
+    double As_Radian() const; // original signed16 angle observation
     UnknownFacingDir() {}
     UnknownFacingDir(unsigned short raw) : Raw(raw) {}
     UnknownFacingDir(CoordStruct const &from, CoordStruct const &to);   // 0x00423EF0 (the direction from one coordinate to another)
