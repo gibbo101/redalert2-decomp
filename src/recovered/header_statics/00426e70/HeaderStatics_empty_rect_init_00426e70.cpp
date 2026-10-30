@@ -1,3 +1,4 @@
+#define COM_PTR_IMPLEMENT_RELEASE
 // Header-static dynamic initializers of the unit at 0x00426E70: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x00426E70-0x00427051); the other
 // drafts of this plan are emitted by these includes.
