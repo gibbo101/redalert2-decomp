@@ -4,8 +4,8 @@
     "id": "population-3079",
     "inventory_sha256": "c7c41fad459193373059d293b063beed58e2de213f58a1956e83eb4ae5f85eee",
     "gaps_sha256": "40f7221ccceb6e575e881aa7cbf3ddad0578ddad720d203e6748b15e47b3b6ad",
-    "historical_population_sha256": "f9b7d67e0fd31cd712647581c05b2d022e4de2cc5d803b7cf92fc2dd48439e3f",
-    "historical_acceptance_sha256": "ceaea1652d05e989ad4fa47692f51cf3c70bcbf097d0e0fe5310b7190dba9b41"
+    "historical_population_sha256": "d2da2aa55e33dd4c081a741fe55be79db5acb8a6b542208401a8c757ca3b2b39",
+    "historical_acceptance_sha256": "6d10954c24a8c6092bbf0bba0486d23b8cea3635e32e33fa943f0327e99e270c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -19763,7 +19763,7 @@
     "??_GTerrainTypeClass@@UAEPAXI@Z": 7232224,
     "?Draw_Matrix@LocomotionClass@@UAGPAVMatrix3D@@PAV2@PAH@Z": 5492784,
     "?Shadow_Matrix@LocomotionClass@@UAGPAVMatrix3D@@PAV2@PAH@Z": 5492944,
-    "?Unknown_00718D60@@YI?AVMatrix3D@@H@Z": 7441760,
+    "?Unknown_00718D60@@YIPAVMatrix3D@@PAV1@H@Z": 7441760,
     "?Shadow_Point@LocomotionClass@@UAG?AUPoint2D@@XZ": 5493184,
     "?Set_Global_Variable@UnknownIDSource@@QAE_NPBD_N@Z": 6689552,
     "?Get_Global_Variable@UnknownIDSource@@QAE_NPBDPA_N@Z": 6689760,

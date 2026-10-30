@@ -8,7 +8,7 @@
 // frame gives the three their own lifetimes; a function-scope buffer does not).
 #include "shared/tunnel_locomotion.hpp"
 #include "shared/cell.hpp"
-// @ref ?Unknown_00718D60@@YI?AVMatrix3D@@H@Z=00718d60
+// @ref ?Unknown_00718D60@@YIPAVMatrix3D@@PAV1@H@Z=00718d60
 // @ref ??D@YI?AVMatrix3D@@ABV0@0@Z=00591180
 // @ref ??0Matrix3D@@QAE@ABV0@@Z=0058fe10
 // @ref ?Draw_Matrix@LocomotionClass@@UAGPAVMatrix3D@@PAV2@PAH@Z=0053d030
@@ -32,7 +32,8 @@ Matrix3D * __stdcall TunnelLocomotionClass::Draw_Matrix(Matrix3D *matrix, int *k
         if (ramp != 0) {
             Matrix3D temp;
             Matrix3D body(*LocomotionClass::Draw_Matrix(&temp, key));
-            transform = Unknown_00718D60(ramp) * body;
+            Matrix3D ramp_matrix;
+            transform = *Unknown_00718D60(&ramp_matrix, ramp) * body;
         } else {
             Matrix3D temp;
             Matrix3D body(*LocomotionClass::Draw_Matrix(&temp, key));

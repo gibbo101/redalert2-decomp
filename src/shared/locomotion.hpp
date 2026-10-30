@@ -53,7 +53,7 @@ inline UnknownLocoCellObject *Loco_Cell_At(Cell const &cell)
 int __fastcall Unknown_006A29B0(int pixels);
 // The slope tilt matrix for a cell ramp type (a copy of the table entry at
 // 0x00AF8608 + 48 * ramp; LocomotionClass::Shadow_Matrix and the locomotors).
-Matrix3D __fastcall Unknown_00718D60(int ramp);                 // 0x00718D60
+Matrix3D * __fastcall Unknown_00718D60(Matrix3D *matrix, int ramp);     // 0x00718D60 (fills and returns matrix)
 // Where an object is, as a value (an inline accessor: each use copies the
 // whole coordinate; Drive and Ship Is_Moving compare its X and Y).
 inline CoordStruct Object_Coord(ObjectClass const *object)

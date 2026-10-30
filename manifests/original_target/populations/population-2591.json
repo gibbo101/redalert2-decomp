@@ -4,8 +4,8 @@
     "id": "population-2591",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "20cba7e3fe4be504bce982850a96e6c2df88e68c18626896b08f539cacb57439",
-    "historical_acceptance_sha256": "67851b1dca33422ad697abe815dfb944e69f23ca85b8487cdf26a57ca4659cc6"
+    "historical_population_sha256": "582d329b54cc7da65c58f3143eb94883d9a3339262372014d0407b04135eb01b",
+    "historical_acceptance_sha256": "7154644e686d73f48ed607005a0f01924d6103d81fce4e3c001d8f464a61b4d6"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6291,7 +6291,7 @@
     "?Compute_CRC@TerrainTypeClass@@UBEXAAVWWCRCEngine@@@Z": 7231680,
     "?Load@TerrainTypeClass@@UAGJPAUIStream@@@Z": 7231824,
     "??_GTerrainTypeClass@@UAEPAXI@Z": 7232224,
-    "?Unknown_00718D60@@YI?AVMatrix3D@@H@Z": 7441760,
+    "?Unknown_00718D60@@YIPAVMatrix3D@@PAV1@H@Z": 7441760,
     "?Set_Global_Variable@UnknownIDSource@@QAE_NPBD_N@Z": 6689552,
     "?Get_Global_Variable@UnknownIDSource@@QAE_NPBDPA_N@Z": 6689760,
     "?Find_Global_Variable@UnknownIDSource@@QAEHPBD@Z": 6689904,
