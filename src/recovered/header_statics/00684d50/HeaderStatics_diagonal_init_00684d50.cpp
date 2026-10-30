@@ -7,22 +7,7 @@
 #endif
 #include "shared/vector_class.hpp"
 
-// 12 bytes, from DynamicVectorClass<UndoInfoStruct>::Resize (0x00687030,
-// 0x007AB52C slot 2: new of count * 12, each element zeroed), operator==
-// (0x00686FD0: three dword compares) and Fetch (0x00686FA0). Field names and
-// types are hypotheses.
-struct UndoInfoStruct {
-    UndoInfoStruct() : unknown_00(0), unknown_04(0), unknown_08(0) {}
-    bool operator==(UndoInfoStruct const &other) const
-    {
-        return unknown_00 == other.unknown_00 && unknown_04 == other.unknown_04 && unknown_08 == other.unknown_08;
-    }
-    bool operator!=(UndoInfoStruct const &other) const { return !(*this == other); }
-
-    int unknown_00;     // +0x00
-    int unknown_04;     // +0x04
-    int unknown_08;     // +0x08
-};
+#include "shared/vector_elements.hpp"
 
 // The unit's list of UndoInfoStruct (0x00ABCE18; name is a hypothesis).
 DynamicVectorClass<UndoInfoStruct> unknown_UndoInfoStruct_list_00abce18;

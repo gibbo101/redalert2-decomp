@@ -16,7 +16,7 @@ void unknown_undo_restore_685030()
 {
     for (int index = unknown_UndoInfoStruct_list_00abce18.Count() - 1; index >= 0; index--) {
         UndoInfoStruct &info = unknown_UndoInfoStruct_list_00abce18[index];
-        unknown_undo_cells_abceac[info.unknown_04 * unknown_undo_width_8286e4 + info.unknown_00].Value = info.unknown_08;
+        unknown_undo_cells_abceac[info.Y * unknown_undo_width_8286e4 + info.X].Value = info.Value;
     }
     unknown_UndoInfoStruct_list_00abce18.Clear();
 }
