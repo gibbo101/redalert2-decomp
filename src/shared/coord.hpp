@@ -13,10 +13,15 @@ struct CoordStruct {
     // From the point an INI reader returns (defined in shared/ini_class.hpp).
     CoordStruct(INIPoint3D const &point);
     // Member-wise difference (0x004348F0 is the out-of-line copy the BuildingLight unit keeps).
+#ifdef RA2_COORD_MINUS_SOURCE
+    // The member's own source supplies the independently bounded out-of-line copy.
+    CoordStruct operator-(CoordStruct const &coord) const;
+#else
     CoordStruct operator-(CoordStruct const &coord) const
     {
         return CoordStruct(X - coord.X, Y - coord.Y, Z - coord.Z);
     }
+#endif
     // Member-wise sum (AnimClass::Center_Coord, 0x00420D90).
     // Member-wise difference in place (Tactical::Coord_To_Cell 0x006A6A50 steps back with it; its Z store stays).
     CoordStruct &operator-=(CoordStruct const &coord) { X -= coord.X; Y -= coord.Y; Z -= coord.Z; return *this; }
