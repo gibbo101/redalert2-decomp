@@ -11,6 +11,7 @@ class UnknownPreview_0061D430 {
 public:
     UnknownPreview_0061D430();                      // 0x0061D430 (clears the pointer)
     ~UnknownPreview_0061D430();                     // 0x0061D440 (deletes the object it holds)
+    void unknown_005c7ef0(); // original ECX preview receiver/RET0; ignored result
     void Unknown_0061D660();                        // 0x0061D660 (renders the preview from the map)
     void Write_INI_0061DC80(CCINIClass &ini);       // 0x0061DC80
     void Draw_0061D460(HWND window);                // 0x0061D460 (paints the preview into the dialog)
