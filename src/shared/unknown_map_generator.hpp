@@ -10,6 +10,7 @@ class BuildingTypeClass;
 class CellClass;
 class UnknownMapGenerator {
 public:
+    bool Init_Start_Points_00583790();
     void Generate_Lights_0058a9c0();
     void Generate_Vegetation_00585a60();
     void Place_Tile_Patch_00586340(CellClass *cell,int tile,int count,int origin,bool flag);
