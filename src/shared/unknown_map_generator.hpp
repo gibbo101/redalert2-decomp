@@ -35,7 +35,7 @@ public:
     TypeList<int> unknown_188,unknown_1a4,unknown_1c0,unknown_1dc,unknown_1f8;
     TypeList<int> unknown_214,unknown_230,unknown_24c,unknown_268,unknown_284,unknown_2a0;
     int unknown_2bc,unknown_2c0;
-    TypeList<BuildingTypeClass const *> unknown_2c4,unknown_2e0;
+    TypeList<BuildingTypeClass *> unknown_2c4,unknown_2e0;
     int unknown_2fc;
     bool unknown_300;
     int unknown_304;
