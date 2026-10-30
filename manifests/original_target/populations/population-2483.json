@@ -4,8 +4,8 @@
     "id": "population-2483",
     "inventory_sha256": "6582fba4252d8234c18be0811686f9777af8cfb98542db22664afeba77d40d03",
     "gaps_sha256": "3fe96907a8a1f9ece1fcb5f8f0620c8047f04bb9ac934c51d545b3ed6faea28d",
-    "historical_population_sha256": "105c8a30a95865ff8e97cec0c9619208dac838e6139b3186c71f05be400bcc33",
-    "historical_acceptance_sha256": "67055443eec66eceb60b5295f33ed0a3eb969a640e53873d1ee43af00b0f217c"
+    "historical_population_sha256": "c27f2702e72530c1e931120691ac7f7ff2e10bac6ab043e7ba0080422e11231e",
+    "historical_acceptance_sha256": "471279ea26231fa5e949f324d1bb31c7dd68c2752d37be87b31c035b9a7438cd"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5228,7 +5228,7 @@
     "?unknown_slot43@DisplayClass@@UAEXXZ": 4247840,
     "?unknown_slot45@DisplayClass@@UAEXABUPoint2D@@@Z": 4834448,
     "?unknown_slot46@DisplayClass@@UAEXABVCell@@_NPAVObjectClass@@H1@Z": 4829424,
-    "?unknown_slot48@DisplayClass@@UAEXXZ": 4832032,
+    "?unknown_slot48@DisplayClass@@UAEXABUCoordStruct@@ABVCell@@PAVObjectClass@@H_N@Z": 4832032,
     "?unknown_slot53@TabClass@@UAEXXZ": 6949744,
     "?unknown_slot54@TabClass@@UAE_NH@Z": 6950304,
     "??_GScrollClass@@UAEPAXI@Z": 6728800,
@@ -8126,7 +8126,7 @@
           "resolved": 8033340
         }
       ],
-      "source_sha256": "ec9cbdb215f3f2e5d7b2afe3fcbc8445083c849f930d43120eeb4a734ce2f721",
+      "source_sha256": "7b8da8b50a81b5478a4411f1665f6140114819c22359e0373315599899c65ab1",
       "source": "src/recovered/classes/ScrollClass/ScrollClass_ScrollClass_006695e0.cpp",
       "population": "population-2483",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",

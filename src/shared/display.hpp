@@ -181,7 +181,9 @@ public:
     // Mouse_Left_Up: cell, shadowed, object, action, small mouse; hypothesis).
     virtual void unknown_slot46(Cell const &cell, bool shadow, ObjectClass *object, int action, bool small_mouse);
     virtual void unknown_slot47(Point2D const &xy);                   // slot 47 0x0049C500 (the mouse held at xy: drags a selection band)
-    virtual void unknown_slot48();                                    // slot 48 0x0049BB20
+    // Slot 48 (0x0049BB20): the left button released after a drag (Westwood's
+    // Mouse_Left_Release: coordinate, cell, object, action, small mouse; hypothesis).
+    virtual void unknown_slot48(CoordStruct const &coord, Cell const &cell, ObjectClass *object, int action, bool small_mouse);
     virtual void unknown_slot49(Point2D const &xy);                    // slot 49 0x0049AF90 (ScrollClass 0x0066A7A0 passes Point2D(-1, -1))
 
     // The tactical area's gadget (0x00852910; RTTI DisplayClass::TacticalClass).
