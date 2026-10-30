@@ -186,6 +186,59 @@ def write_queue(output, results):
     (output / 'summary.json').write_text(json.dumps(dict(size_buckets=summary), indent=2) + '\n', encoding='utf-8')
 
 
+def record_compiled(rows, entries, directory, options, audit, decoder, references, mode='preferred'):
+    """Score actual objects without replacing their source/option provenance."""
+    for entry in entries:
+        obj=directory/('%08x.obj'%entry);source=directory/('%08x.cpp'%entry)
+        if not obj.is_file():continue
+        row=rows[entry]
+        if not row.get('compiled'):
+            row.pop('status',None);row.pop('reason',None)
+        row['compiled']=True
+        if 'score' not in row:
+            row.update(seed_mode=mode,source=str(source),object=str(obj),options=' '.join(options))
+        try:
+            scored=score_object(audit,decoder,references,obj,entry,row['length'],source.read_text(encoding='utf-8'))
+        except ValueError as error:
+            if 'score' not in row:row.update(status='score-refused',reason=str(error))
+            continue
+        if (scored['byte_exact'],scored['score'])>(row.get('byte_exact',False),row.get('score',-1)):
+            row.pop('status',None);row.pop('reason',None)
+            row.update(scored,seed_mode=mode,options=' '.join(options),object=str(obj),source=str(source))
+
+
+def retry_uncompiled(config, rows, inventory, accepted, output, variants, audit, decoder, references, baseline=None):
+    """Retry pass5 only after every requested preferred option failed to compile.
+
+    Fallback payloads and objects have separate directories. A JSON result's
+    source always belongs to the object that was actually compiled/scored.
+    """
+    from seed_fallback import frozen_inventory,has_fallback,fallback_source
+    baseline=baseline or frozen_inventory();retry=[]
+    for entry,row in rows.items():
+        if row.get('compiled') or not has_fallback(entry,inventory,baseline):continue
+        provenance=dict(reason='preferred seed did not compile under any requested option',
+                        preferred_status=row.get('status','compile-failed'),
+                        preferred_logs=[str(output/str(i)/('%08x.log'%entry)) for i in range(len(variants))])
+        if row.get('reason'):provenance['preferred_reason']=row['reason']
+        row['fallback']=provenance
+        try:payload=fallback_source(entry,inventory,accepted,seed,baseline)
+        except ValueError as error:
+            provenance['generation_error']=str(error);continue
+        if payload is None:continue
+        provenance['export_pass']=payload['export_pass'];retry.append(entry)
+        for index in range(len(variants)):
+            directory=output/'fallback'/str(index);directory.mkdir(parents=True,exist_ok=True)
+            with open((directory/('%08x.cpp'%entry)),'w',encoding='utf-8',newline='\n') as stream: stream.write(payload['source'])
+    for index,options in enumerate(variants):
+        if not retry:continue
+        directory=output/'fallback'/str(index)
+        hung=compile_batch(config,retry,directory,options)
+        for entry in hung:rows[entry]['fallback']['timed_out']=True
+        record_compiled(rows,retry,directory,options,audit,decoder,references,'pass5')
+    for entry in retry:rows[entry]['fallback']['compiled']=bool(rows[entry].get('compiled'))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--output', type=Path, default=REPOSITORY / 'build/sweep')
@@ -242,22 +295,8 @@ def main():
                 if compiled:
                     for entry in compile_batch(config, compiled, output / str(index), options):
                         rows[entry]['status'] = 'compile-timeout'
-                for entry in compiled:
-                    obj = output / str(index) / ('%08x.obj' % entry)
-                    if not obj.exists():
-                        continue
-                    rows[entry]['compiled'] = True
-                    try:
-                        scored = score_object(audit, decoder, references, obj, entry, rows[entry]['length'],
-                                              (output / str(index) / ('%08x.cpp' % entry)).read_text(encoding='utf-8'))
-                    except ValueError as error:
-                        rows[entry].setdefault('status', 'score-refused'); rows[entry]['reason'] = str(error)
-                        continue
-                    best = rows[entry]
-                    if (scored['byte_exact'], scored['score']) > (best.get('byte_exact', False), best.get('score', -1)):
-                        best.pop('status', None); best.pop('reason', None)
-                        best.update(scored, options=' '.join(options), object=str(obj),
-                                    source=str(output / str(index) / ('%08x.cpp' % entry)))
+                record_compiled(rows,compiled,output/str(index),options,audit,decoder,references)
+            retry_uncompiled(config,rows,inventory,accepted,output,variants,audit,decoder,references)
             for entry, row in rows.items():
                 if 'score' not in row:
                     row.setdefault('status', 'compile-failed')

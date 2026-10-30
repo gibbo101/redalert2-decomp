@@ -55,6 +55,22 @@ def scalar_preamble(shared):
     return widths+'\n'+macros
 
 
+def scalar_conflict_aliases(source, variables):
+    """Keep Ghidra's conflict spelling for its exported fixed-width integers.
+
+    These aliases carry storage width/signedness only, like ghidra_types.hpp.
+    Unknown names and names already owned by a declaration stay unresolved.
+    """
+    view=code_view(source);owned=_declared_types(source)|set(variables);lines=[]
+    for base in ('uchar','ushort','uint','ulong','sbyte','longlong','ulonglong'):
+        alias=base+'_conflict'
+        if alias in owned:continue
+        use=re.search(r'\b'+alias+r'\s+\**\s*[A-Za-z_]\w*\s*[,;)\[=]',view)
+        cast=re.search(r'\(\s*'+alias+r'(?:\s*\*)*\s*\)\s*[A-Za-z_0-9(&*~-]',view)
+        if use or cast:lines.append('typedef '+base+' '+alias+';')
+    return '\n'.join(lines)
+
+
 def _closure(shared, headers):
     result={}
     pending=list(headers)
@@ -114,6 +130,51 @@ def _reuse_shared_records(source, entry, closure):
         if not any(a<=start and end<=b for a,b in outer):outer.append((start,end))
     for start,end in reversed(outer):prefix=prefix[:start]+prefix[end:]
     return source[:first]+prefix+source[last:]
+
+
+def null_void_views(body):
+    """A Ghidra C void-pointer zero is a C++ null pointer constant.
+
+    Keep nonzero addresses and values in comments/literals unchanged. The
+    generated callee argument casts still supply their declared pointer type.
+    """
+    pattern=re.compile(r'\(\s*void\s*\*\s*\)\s*(?:0[xX]0+|0)[uUlL]*(?![\w.])')
+    edits=[(m.start(),m.end()) for m in pattern.finditer(code_view(body))]
+    for first,last in reversed(edits):body=body[:first]+'0'+body[last:]
+    return body
+
+
+def pointer_member_assignments(body,variables,schema):
+    """Spell the C pointer conversion required by a real shared field type.
+
+    Only simple public pointer-member stores are covered. Arrays, aggregate
+    assignments, unknown template parameters and unbalanced expressions remain
+    unresolved; no guessed member, layout or access-control change is made.
+    """
+    pattern=re.compile(r'(?m)^([ \t]*)([A-Za-z_]\w*(?:(?:->|\.)[A-Za-z_]\w*)+)[ \t]*=[ \t]*(?!=)([^;\n]+);')
+    view=code_view(body);edits=[]
+    for match in pattern.finditer(view):
+        root=re.match(r'\w+',match[2])[0];kind=variables.get(root);field=None
+        if kind is None:continue
+        for part in re.finditer(r'(?:->|\.)([A-Za-z_]\w*)',match[2]):
+            field=schema.field(kind,part[1])
+            if field is None or field.access!='public' or field.dimensions:
+                field=None;break
+            kind=field.kind
+        if field is None or '*' not in re.sub(r'<.*>','',kind) or re.search(r'\b(?:T|U|K|V)\b',kind):continue
+        rhs=match[3];stack=[];balanced=True
+        for char in rhs:
+            if char in '([':stack.append(char)
+            elif char in ')]':
+                if not stack or stack.pop()!={')':'(',']':'['}[char]:balanced=False;break
+            elif char in '{}' or char==',' and not stack:balanced=False;break
+        if not balanced or stack:continue
+        kind=re.sub(r'\bmutable\s+','',kind).strip()
+        original=body[match.start(3):match.end(3)]
+        if original.lstrip().startswith('('+kind+')'):continue
+        edits.append((match.start(3),match.end(3),'('+kind+')('+original+')'))
+    for first,last,text in reversed(edits):body=body[:first]+text+body[last:]
+    return body
 
 
 def _vtable_reads(body):
@@ -193,6 +254,8 @@ def adapt_seed(source, original, entry, owner, schema, variables, recast, stubs=
     body=_vtable_aliases(body)
     body,field_notes=schema.rewrite_members(body,variables)
     notes.extend(field_notes)
+    body=null_void_views(body)
+    body=pointer_member_assignments(body,variables,schema)
     body=byte_pointer_arithmetic(body,variables,stubs)
     receiver='typed_this'
     while re.search(r'\b'+receiver+r'\b',code_view(body)):receiver+='_'
@@ -221,8 +284,11 @@ def adapt_seed(source, original, entry, owner, schema, variables, recast, stubs=
     closure=_closure(schema.directory,headers)
     platform_names=_declared_types('\n'.join(closure.values()))
     source=_reuse_shared_records(source,entry,closure)
-    bridge='\n'.join('typedef '+kind+' '+name+';' for name,kind in [('HDC','void *'),('LPSTR','char *')]
-                     if name not in platform_names)
+    aliases=[('HDC','void *'),('LPSTR','char *')]
+    if 'IID' in set(re.findall(r'\b\w+\b',code_view(source))) and 'GUID' in platform_names:
+        aliases.append(('IID','GUID'))  # the canonical ghidra_types.hpp SDK alias
+    bridge='\n'.join('typedef '+kind+' '+name+';' for name,kind in aliases if name not in platform_names)
+    bridge+='\n'+scalar_conflict_aliases(source,variables)
     head='\n'.join(['#define VECTOR_IMPLEMENT_VECTOR_ACCESSORS','#define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS']+
                    ['#include "'+header+'"' for header in sorted(headers,key=lambda h:(_PRIORITY.get(h,0),h))])
     source=source.replace('#include "shared/ghidra_types.hpp"',head,1)

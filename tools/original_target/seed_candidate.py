@@ -1852,9 +1852,17 @@ def call_sites(body, name):
     view = code_view(body)
     for match in re.finditer(r'\b' + name + r'\s*\(', view):
         open_at = match.end() - 1; close_at = matching_paren(view, open_at)
-        before = view[:match.start()].rstrip()
+        start = match.start()
+        if re.fullmatch(r'FUN_[0-9a-f]{8}', name):
+            # Ghidra may preserve a class/namespace before an address name.
+            # It belongs to this bound function token, not to the replacement
+            # call expression. Leave actual object/member expressions alone.
+            qualifier = re.search(r'(?<![\w.:>])(?:(?:::)?(?:[A-Za-z_]\w*::\s*)+|::)$', view[:start])
+            if qualifier and re.fullmatch(r'[\w\s:]+', body[qualifier.start():start]):
+                start = qualifier.start()
+        before = view[:start].rstrip()
         used = bool(before) and before[-1] in '=(),!&|+-*<>?:' or before.endswith('return')
-        yield match.start(), close_at + 1, split_args(body[open_at + 1:close_at]), used
+        yield start, close_at + 1, split_args(body[open_at + 1:close_at]), used
 
 
 def ecx_owners(row):
@@ -2728,14 +2736,50 @@ def documentation(entry, inventory, prototype, callee_notes):
     return lines
 
 
+def compile_seed_text(entry, text, directory, config):
+    """Compile one scratch payload with the existing bounded batch backend."""
+    from sweep_seeds import compile_batch
+    from diff_candidate import OPTIONS
+    from coff import Coff
+    import hashlib
+    directory=Path(directory).resolve();directory.mkdir(parents=True,exist_ok=True)
+    source=directory/('%08x.cpp'%entry)
+    with open(source,'w',encoding='utf-8',newline='\n') as stream: stream.write(text)
+    hung=compile_batch(config,[entry],directory,OPTIONS[0])
+    obj=source.with_suffix('.obj');log=source.with_suffix('.log')
+    diagnostic=log.read_text(errors='replace') if log.exists() else ''
+    compiled=entry not in hung and obj.is_file() and not re.search(r'error C\d+:',diagnostic)
+    receipt=directory/('sweep-%08x-command.json'%entry)
+    if config.get('wine_kind')=='native' and receipt.exists():
+        units=json.loads(receipt.read_bytes())['units']
+        compiled=compiled and len(units)==1 and units[0]['returncode']==0
+    if compiled:
+        try:Coff(obj.read_bytes())
+        except ValueError:compiled=False
+    return dict(compiled=bool(compiled),source_path=source.as_posix(),object_path=obj.as_posix(),
+                log_path=log.as_posix(),timed_out=entry in hung,
+                source_sha256=hashlib.sha256(source.read_bytes()).hexdigest())
+
+
+def seed_config_path(explicit=None):
+    if explicit is not None:return Path(explicit)
+    native=REPOSITORY/'private/original-target.win.json'
+    if sys.platform=='win32' and native.is_file():return native
+    return REPOSITORY/'private/original-target.local.json'
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('entries', nargs='+', help='original entry addresses (hex)')
     parser.add_argument('--output', type=Path, default=REPOSITORY / 'build/candidates')
     parser.add_argument('--force', action='store_true', help='overwrite an existing scratch seed')
+    parser.add_argument('--config', type=Path, help='compiler configuration; validates the seed and enables pass5 fallback')
+    parser.add_argument('--no-compile-check', action='store_true', help='generate preferred source only, for diagnosing a typed export')
     args = parser.parse_args()
     from inventory import Inventory
     inventory = Inventory()
+    from seed_fallback import frozen_inventory,has_fallback,choose_seed
+    baseline=frozen_inventory();failed=False
     accepted = accepted_sources(catalog_io.load(catalog_io.locate(REPOSITORY), references=False))
     for item in args.entries:
         entry = int(item, 16)
@@ -2745,10 +2789,22 @@ def main():
         if path.exists() and not args.force:
             print('%08x exists: %s (use --force)' % (entry, path)); continue
         path.parent.mkdir(parents=True, exist_ok=True)
-        with open(path, 'w', encoding='utf-8', newline='\n') as stream:
-            stream.write(seed(entry, inventory, accepted))
+        validate=not args.no_compile_check and (args.config is not None or has_fallback(entry,inventory,baseline))
+        if validate:
+            config_path=seed_config_path(args.config)
+            if not config_path.is_file():parser.error('Typed seed compile validation needs --config pointing to an existing compiler configuration')
+            config=json.loads(config_path.read_bytes())
+            choice=choose_seed(entry,inventory,accepted,seed,
+                lambda text,mode:compile_seed_text(entry,text,path.parent/('check-'+mode),config),baseline)
+            text=choice.pop('source')
+            with open((path.parent/'seed-choice.json'),'w',encoding='utf-8',newline='\n') as stream: stream.write(json.dumps(choice,indent=2)+'\n')
+            failed=failed or not choice['compiled']
+        else:
+            text=seed(entry,inventory,accepted)
+        with open(path,'w',encoding='utf-8',newline='\n') as stream: stream.write(text)
         print(path)
+    return int(failed)
 
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(main())

@@ -10,7 +10,7 @@ import re
 _TOKEN = re.compile(r'"(?:\\.|[^"\\])*"|\'(?:\\.|[^\'\\])*\'|//[^\n]*|/\*[\s\S]*?\*/')
 _CLASS = re.compile(r'\b(class|struct)\s+(?:__declspec\s*\([^)]*\)\s*)?(\w+)\s*(?::([^;{}]+))?\s*\{')
 _FIELD = re.compile(r'^\s*(.*?)\b([A-Za-z_]\w*)\s*((?:\[[^;\]]*\])*)\s*;\s*$')
-_CHAIN = re.compile(r'\b([A-Za-z_]\w*)((?:(?:->|\.)[A-Za-z_]\w*)+)')
+_CHAIN = re.compile(r'\b([A-Za-z_]\w*(?:\[[^\[\]\n]*\])*)((?:(?:->|\.)[A-Za-z_]\w*(?:\[[^\[\]\n]*\])*)+)')
 
 
 def code_view(text):
@@ -220,12 +220,13 @@ class SharedTypes:
         edits = []
         notes = []
         for match in _CHAIN.finditer(view):
-            kind = variables.get(match[1])
+            root = re.match(r'[A-Za-z_]\w*',match[1])[0]
+            kind = variables.get(root)
             if not kind:
                 continue
-            expression = match[1]
+            expression = body[match.start(1):match.end(1)]
             changed = False
-            parts = list(re.finditer(r'(->|\.)(\w+)', match[2]))
+            parts = list(re.finditer(r'(->|\.)(\w+)((?:\[[^\[\]\n]*\])*)', match[2]))
             valid = True
             for number, part in enumerate(parts):
                 path = self.flat_path(kind, part[2])
@@ -261,6 +262,7 @@ class SharedTypes:
                     parent_kind = field.kind
                 if not valid:
                     break
+                expression += body[match.start(2)+part.start(3):match.start(2)+part.end(3)]
                 kind = path[-1].kind
                 changed = changed or expression != match[0]
             if valid and changed and expression != match[0]:
