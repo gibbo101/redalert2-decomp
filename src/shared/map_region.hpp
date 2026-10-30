@@ -9,6 +9,7 @@
 class CellClass;
 class MapRegionClass {
 public:
+    void Place_Neutral_Tech_Building_00576cd0();
     static bool Make_Regions_00570810();
     static MapRegionClass *__fastcall Create_Region_From_Cell_0056e100(CellClass *cell);
     static Cell __fastcall Pick_Random_Map_Cell_0056d720();

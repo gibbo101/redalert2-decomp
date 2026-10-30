@@ -8,10 +8,11 @@ extern Random2Class unknown_map_random_a705c0;
 // @ref __real@8@3fdf8000000080000000=007a5dd0
 unsigned int __fastcall Map_Random_Range_005797a0(unsigned int minimum,unsigned int maximum)
 {
-    double span=(unsigned int)(maximum-minimum+1);
+    double origin;
     unsigned int result;
     do {
-        result=(unsigned int)((unsigned int)unknown_map_random_a705c0()*span*(1.0/4294967295.0)+(double)minimum);
+        origin=minimum;
+        result=(unsigned int)((unsigned int)unknown_map_random_a705c0()*(double)(unsigned int)(maximum-minimum+1)*(1.0/4294967295.0)+origin);
     } while(result>maximum);
     return result;
 }
