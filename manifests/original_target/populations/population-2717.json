@@ -1334,32 +1334,6 @@
       "source_order": 105340
     },
     {
-      "entry": 7844752,
-      "method": "0077b390",
-      "symbol": "?unknown_decoder_read_chunk@@YIHPAUUnknownDecoderState_77b390@@I@Z",
-      "symbol_prefix": "?unknown_decoder_read_chunk@@YIHPAUUnknownDecoderState_77b390@@I@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 205,
-      "body_sha256": "a689dd67d5a53d996432a283d1c12d16ecf579bb2468f7836389bc6b6e105c3e",
-      "padding_bytes": 3,
-      "full_extent_bytes": 208,
-      "full_extent_sha256": "2dcfab9fba353480aa45f1d9ab5b252a153144eb0b089b5e7b30b10f3db32b4f",
-      "relocations": [],
-      "source_sha256": "444911d236db9dd4e7363066005229c84b223e868c103cf06577925d2c9391e8",
-      "source": "src/recovered/unowned/unknown_decoder_read_chunk_0077b390.cpp",
-      "population": "population-2717",
-      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_decoder_read_chunk_0077b390",
-      "source_order": 105341
-    },
-    {
       "entry": 7281312,
       "method": "006f1aa0",
       "symbol": "?unknown_init_color_ac10f4@@YAXXZ",

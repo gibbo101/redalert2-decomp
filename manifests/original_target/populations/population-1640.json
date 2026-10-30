@@ -5484,32 +5484,6 @@
       "source_order": 55584
     },
     {
-      "entry": 7840576,
-      "method": "0077a340",
-      "symbol": "?unknown_decoder_read_header@@YIHPAUUnknownDecoderState_77a340@@H@Z",
-      "symbol_prefix": "?unknown_decoder_read_header@@YIHPAUUnknownDecoderState_77a340@@H@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 29,
-      "body_sha256": "022c4c17556256eee10ce3f48cdf6a2bd6e663ebf4fc6fd7c751bd24b17f50a8",
-      "padding_bytes": 3,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "1d27033f1e5b7d167db5cc01904ea4bd4c298aa14d881e285b4dd4bd1001cc85",
-      "relocations": [],
-      "source_sha256": "90ed0a2c12776cb226c1ea866de41ffa2439e0878d439c16dc5306f3b3763e57",
-      "source": "src/recovered/unowned/unknown_decoder_read_header_0077a340.cpp",
-      "population": "population-1640",
-      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_decoder_read_header_0077a340",
-      "source_order": 55585
-    },
-    {
       "entry": 7847536,
       "method": "0077be70",
       "symbol": "?unknown_close_decoder@@YIXPAUUnknownDecoderState@@@Z",

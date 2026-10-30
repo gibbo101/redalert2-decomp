@@ -431,6 +431,44 @@ void __fastcall VQA_SetTimer(VQAHandleP *vqap, long time);                      
 void __fastcall VQA_StepTimer(VQAHandleP *vqap, long step);                            // 0x0077CB60
 unsigned long __fastcall VQA_GetTime(VQAHandleP *vqap);                                // 0x0077CB70
 
+// ZAP audio frame header (SND1 chunks).
+struct ZAPHeader {
+    unsigned short UnCompSize;
+    unsigned short CompSize;
+};
+
+// Handwritten assembly helpers of the library (vqa_uncomp.asm, vqa_sos.asm).
+extern "C" long __cdecl AudioUnzap(void *source, void *dest, long size);                                // 0x00781130
+extern "C" unsigned long __cdecl VQA_LCW_Uncompress(char const *source, char *dest, unsigned long length); // 0x007813EB
+extern "C" void __cdecl VQA_sosCODECDecompressData(void *source, void *dest, unsigned short bits,
+                                                   unsigned short channels, unsigned long size, VQASOS *info); // 0x00780581
+
+// dstream.cpp
+int __cdecl Memory_VQA_Stream_Handler(VQAHandle *vqa, int action, int buffer, int nbytes);           // 0x007785B0
+
+// loader.cpp
+long __fastcall VQA_LoadFrame(VQAHandleP *vqap, long flags);                                          // 0x00778680
+long __fastcall VQA_LoadFrame_Internal(VQAHandleP *vqap, long flags);                                 // 0x00778950
+long __fastcall PrimeBuffers(VQAHandleP *vqap);                                                       // 0x007796A0
+bool __fastcall VQA_IsFrameStartOfLoop(VQAHandleP *vqap, long framenum);                              // 0x007796F0
+long __fastcall VQA_ReloadPalette(VQAHandleP *vqap, long framenum, int force);                        // 0x00779740
+long __fastcall VQA_GetPaletteFrameRange(VQAHandleP *vqap, long framenum, long *first_frame, long *last_frame); // 0x007798C0
+long __fastcall Load_CLIP(VQAHandleP *vqap, unsigned long iffsize);                                   // 0x0077A340
+long __fastcall Load_LINF(VQAHandleP *vqap);                                                          // 0x0077A360
+long __fastcall Load_MFCI(VQAHandleP *vqap);                                                          // 0x0077A4C0
+long __fastcall Load_MSCI(VQAHandleP *vqap);                                                          // 0x0077A940
+long __fastcall VQA_GetCodebookFrameRange(VQAHandleP *vqap, long framenum, long *first_frame, long *last_frame); // 0x0077AC00
+long __fastcall Load_CINF(VQAHandleP *vqap);                                                          // 0x0077AC80
+long __fastcall Load_PINF(VQAHandleP *vqap);                                                          // 0x0077ADF0
+long __fastcall Load_FINF(VQAHandleP *vqap, unsigned long iffsize);                                   // 0x0077AF50
+long __fastcall Load_CBFZ(VQAHandleP *vqap, unsigned long iffsize);                                   // 0x0077AFA0
+long __fastcall Load_CBP0(VQAHandleP *vqap, unsigned long iffsize);                                   // 0x0077B020
+long __fastcall Load_CBPZ(VQAHandleP *vqap, unsigned long iffsize);                                   // 0x0077B140
+long __fastcall Load_CPLZ(VQAHandleP *vqap, unsigned long iffsize);                                   // 0x0077B2C0
+long __fastcall Load_SND0(VQAHandleP *vqap, unsigned long iffsize);                                   // 0x0077B390
+long __fastcall Load_SND1(VQAHandleP *vqap, unsigned long iffsize);                                   // 0x0077B460
+long __fastcall Load_SND2(VQAHandleP *vqap, unsigned long iffsize);                                   // 0x0077B620
+
 // Library entry points called by VQAClass (names from the call sites; TS names in comments).
 void __fastcall VQA_Unknown_00777850(VQAConfig *config);                                         // defaults
 int __fastcall VQA_Unknown_0077B7A0(char const *filename, VQAConfig *config, VQAHandle **handle);   // open
