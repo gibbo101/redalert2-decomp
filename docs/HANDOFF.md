@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Netshare243 netshare.cpp (0x5C29B0-0x5CDB40) redo of Netdlg240's refused plan and sweep; Wonline244 wonline.cpp (one TU 0x73A6F0-0x7683B0) OnSetTeam/OnUpdateList audit fixes and remaining sink slots; OwnrDraw242 ownrdraw.cpp control window procs 0x5F0F40-0x5FC8A0 (one TU, OwnrDraw237 NOTES); CampScor241 CampScor.cpp re-measure and sweep. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Netshare243 netshare.cpp (0x5C29B0-0x5CDB40) redo of Netdlg240's refused plan and sweep; Wonline244 wonline.cpp (one TU 0x73A6F0-0x7683B0) OnSetTeam/OnUpdateList audit fixes and remaining sink slots; OwnrDraw242 ownrdraw.cpp control window procs 0x5F0F40-0x5FC8A0 (one TU, OwnrDraw237 NOTES); Display245 map display hierarchy (Map/Display/Radar/Power/Sidebar/Tab/Scroll/Mouse slots). All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -63,7 +63,7 @@ a plan names: codex2's d/ is about 30 GB). Bounds rounds (r18, r26, r28, r31, r3
 Seed125 (zero bytes; Tactical family parked; 0x6AAFD0 is a register-tie near miss for Windows). Their misses
 are in OPEN_MISSES.md.
 Next-lane candidates (2026-10-30; unit table build/class-work/Survey170/UNITS.md): WorldDom.cpp rest (OPEN_MISSES), LdPrgMgr 0x535BF0 (4 KB), MainLoop 0x540C20 (3.5 KB).
-Parked (OPEN_MISSES has resume points): Init.CPP (0x5173C0, Select_Game, Init_Game; Init219/227/234/238), Queue.CPP (Queue228), Event.CPP (Event231), Startup.CPP WinMain (Startup232; needs SEH acceptance support: __except_handler3 0x7852D4, fs:[0] __except_list, per-compile $T scope table at 0x7AB990 - the only game-code SEH user), House.CPP, UICmnds.cpp, WDTSel.cpp, PlanMgr.cpp, TAction.CPP, Session.CPP,
+Parked (OPEN_MISSES has resume points): Init.CPP (0x5173C0, Select_Game, Init_Game; Init219/227/234/238; Windows lead holds Select_Game), Queue.CPP (Queue228; Windows C2 holds Print_CRCs with the MonoClass prerequisite), Event.CPP (Event231), Startup.CPP WinMain (Startup232; needs SEH acceptance support: __except_handler3 0x7852D4, fs:[0] __except_list, per-compile $T scope table at 0x7AB990 - the only game-code SEH user), House.CPP, UICmnds.cpp, WDTSel.cpp, PlanMgr.cpp, TAction.CPP, Session.CPP,
 Skirmish.cpp, NullDlg Select_Serial_Dialog. Pending landings: none (Mac lanes deliver on hand-back; Windows last r65).
 
 Windows lead 2 (user-approved 2026-10-29): LEAD2.md in the coordination folder, subagents codex4-6 (worktrees

@@ -201,6 +201,11 @@ WIN32_IMPORT WORD WINAPI RegisterClassA(WNDCLASSA const *window_class);
 WIN32_IMPORT HWND WINAPI CreateWindowExA(DWORD exstyle, LPCSTR class_name, LPCSTR window_name, DWORD style, int x, int y,
                                          int width, int height, HWND parent, HMENU menu, HINSTANCE instance, void *param);
 WIN32_IMPORT LRESULT WINAPI DefWindowProcA(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+WIN32_IMPORT LRESULT WINAPI CallWindowProcA(WNDPROC previous, HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+#define WM_GETTEXT 0xD
+#define EM_GETSEL 0xB0
+WIN32_IMPORT UINT WINAPI MapVirtualKeyA(UINT code, UINT map_type);
+WIN32_IMPORT int WINAPI GetKeyNameTextA(LONG lparam, char *name, int size);
 WIN32_IMPORT HMENU WINAPI GetMenu(HWND window);
 WIN32_IMPORT BOOL WINAPI AdjustWindowRectEx(RECT *rect, DWORD style, BOOL menu, DWORD exstyle);
 WIN32_IMPORT BOOL WINAPI MoveWindow(HWND window, int x, int y, int width, int height, BOOL repaint);

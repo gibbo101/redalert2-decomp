@@ -574,3 +574,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   all plateaus; netshare 0x5C29B0-0x5CDB40 23 fns / 25 KB; nullconn.cpp 0x5CDB40-0x5CDD10). Its netshare plan was
   refused: LobbyNameSet Shrink/Grow wrapper functions under auto_inline(off) (the original inlines Grow_Table in
   Save_List_Selection). Misses: Save_List_Selection 0x5C5FF0 94.01, 0x5C34F0 97.37, 0x5CB560 7 bytes off.
+- CampScor.cpp and neighbours after CampScor241 (NOTES: CampScor.cpp is population-2954, 0x465A00-0x467B3D, now complete
+  except Presentation 0x466A50 98.98 - cached GetDlgItem/EnableWindow register tie, vp/p0.cpp + inc/ overlay).
+  UnknownCargo Attach 0x468960 45.87 (per-flag bool stores). UnknownTechno230 still declares the two renamed
+  CaptureManager methods (drop in a header batch). Seed 0x468140 (5 B) unclaimed.

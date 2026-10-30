@@ -81,8 +81,12 @@ struct UnknownControlRecord {
     int unknown_dc;     // +0xDC 0x25 or 0xE by the dialog's kind and the control ID (0x005E8720)
     int unknown_e0;
     int unknown_e4;
-    unsigned int unknown_e8;    // +0xE8 the last WM_DRAWITEM itemState of a ODT type 4 control (0x005FE380)
-    char unknown_ec[0x200 - 0xec];
+    // +0xE8 the last WM_DRAWITEM itemState of a ODT type 4 control (0x005FE380); a progress bar's range
+    // minimum (0x005FAFF0).
+    int unknown_e8;
+    int unknown_ec;     // +0xEC a progress bar's range maximum (0x005FAFF0)
+    int unknown_f0;     // +0xF0 a progress bar's position (0x005FAFF0)
+    char unknown_f4[0x200 - 0xf4];
 };
 class UnknownControlIndex {
 public:
@@ -117,6 +121,57 @@ public:
     }
 };
 extern UnknownControlIndex unknown_registry_a73640;
+// A control's registry record through the out-of-line Get, or null (0x005FC020).
+inline UnknownControlRecord *Get_Record(HWND window)
+{
+    UnknownControlRecord *record = 0;
+    unknown_registry_a73640.Get((unsigned int)window, record);
+    return record;
+}
+// The original window procedures of the subclassed controls, keyed by window (0x00A73688; the same hash
+// table shape as unknown_registry_a73640).
+class UnknownWindowProcIndex {
+public:
+    struct Node { HWND Key; WNDPROC Value; Node *Next; };
+    Node **Buckets; // +0x00
+    unsigned int Count; // +0x04
+    unsigned int unknown_08;
+    unsigned int Bits; // +0x0c
+    char unknown_10[8];
+    unsigned int (__fastcall *Hash)(HWND const &key); // +0x18
+    unsigned int Bucket_Index(HWND const &key) const {
+        unsigned int hash = Hash(key);
+        unsigned int bucket = (1u << Bits) - 1;
+        bucket &= hash;
+        return bucket;
+    }
+    WNDPROC *Find(HWND const &key) const {
+        if (!Count) return 0;
+        Node *node = Buckets[Bucket_Index(key)];
+        while (node && node->Key != key) node = node->Next;
+        return node ? &node->Value : 0;
+    }
+};
+extern UnknownWindowProcIndex unknown_window_procs_a73688;
+// The text of an edit control as wide text without line breaks (a trailing "\r\n" if it had any), and the
+// caret's character index (0x005F2120).
+int __fastcall unknown_edit_text_5f2120(HWND window, wchar_t *text, int size, int *caret);
+// The text of a hot key control's value ("Alt+Ctrl+Shift+Key"; empty for an extended key) (0x005FC600).
+void __fastcall unknown_hotkey_text_5fc600(unsigned short hotkey, wchar_t *text);
+// Draws a progress bar's fill of fraction (16.16) over area of surface (0x005FE7C0, not yet recovered).
+void __fastcall unknown_5fe7c0(Rect const &area, Surface *surface, int color, int fraction);
+// Draws a frame thickness pixels wide around rect, in the owner-draw frame colour for color -1 (0x005FDB20).
+void __fastcall unknown_5fdb20(Surface *surface, Rect const &rect, int thickness, int color);
+// Draws text clipped to and laid out in area with the font (the game font when null) in a Win32 colour
+// (0x00BBGGRR) (0x005FDF40, not yet recovered).
+int __fastcall unknown_draw_text_5fdf40(Surface *surface, wchar_t const *text, RECT *area, BitFontClass *font,
+                                        unsigned long color, int flags);
+// The window procedure of the group box buttons (0x005FC020).
+LRESULT __stdcall unknown_group_box_proc_5fc020(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+// The window procedure of the msctls_hotkey32 controls (0x005FC330).
+LRESULT __stdcall unknown_hotkey_proc_5fc330(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+// The window procedure of the msctls_progress32 controls (0x005FAFF0).
+LRESULT __stdcall unknown_progress_proc_5faff0(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 // 0x00600460 when not inlined (0x006005C0 inlines it).
 inline void UnknownControlRecord::Copy_List_600460(UnknownNode_006003d0 const *source)
 {
@@ -249,6 +304,9 @@ extern int unknown_7add78;
 BOOL __stdcall unknown_5e7dd0(HWND window, LPARAM);
 
 }
+// Prints text in area of surface (0x005FE1B0, not yet recovered; also EgoClass::Draw).
+int __fastcall unknown_text_draw_005fe1b0(unsigned int color, int unknown2, Rect const &area, wchar_t const *text,
+                                          int length, int alignment, int unknown7, Surface *surface, int unknown9);
 // A test of an owner-drawn dialog control by the dialog's registered kind and the control ID.
 bool __fastcall OwnerDraw_Control_Test_005e6860(unsigned int key, HWND window);
 #endif
