@@ -233,6 +233,10 @@ public:
     void AI_Supers_004f3910();
     bool Can_Make_Money_004e27e0();
     void Spend_Money_004e5280(int money);
+    bool Is_Build_Limited_004F4F30(TechnoTypeClass *type);
+    void Recalc_Power_004f2cc0();
+    void Enable_Available_Super_Weapons_004f4db0();
+    bool AI_Raise_Money_004e90f0(int urgency);
     int AI_Unit();                                         // 0x004E9C90 (RA's AI_Unit: picks unknown_5540, a harvester first)
     int AI_Building();                                     // 0x004E9660 (RA's AI_Building: picks unknown_553c from the base plan)
     void unknown_func_4f2350();                            // 0x004F2350 (AI_Building: a base node of type -3)

@@ -6,7 +6,7 @@
 #include "shared/map_view.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
 // @ref ??0?$VectorClass@VCell@@@@QAE@HPBVCell@@@Z=0042d4a0
-// @ref ?unknown_450950@BuildingClass@@QAEXXZ=00450950
+// @ref ?Update_Firestorm_Wall_00450950@BuildingClass@@QAEXXZ=00450950
 // @ref ??_7?$DynamicVectorClass@VCell@@@@6B@=0079c5a0
 // @ref ??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z=0042d3e0
 // @ref ??8?$VectorClass@VCell@@@@UBE_NABV0@@Z=0042ce10
@@ -30,7 +30,7 @@ void HouseClass::unknown_func_4eea40()
         for (int index = unknown_BuildingClass_list_00a40af8.Count() - 1; index >= 0; index--) {
             BuildingClass *building = unknown_BuildingClass_list_00a40af8[index];
             if (building->Type->FirestormWall && building->House == this) {
-                building->unknown_450950();
+                building->Update_Firestorm_Wall_00450950();
                 cells.Add(Coord_Cell(building->Center_Coord()));
             }
         }

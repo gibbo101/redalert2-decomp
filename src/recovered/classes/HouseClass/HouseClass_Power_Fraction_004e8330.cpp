@@ -3,11 +3,9 @@
 
 double HouseClass::Power_Fraction() const
 {
-    int power = Power;
-    int drain = Drain;
-    if (power < drain && drain != 0) {
-        if (power != 0) {
-            return (double)power / drain;
+    if (Power < Drain && Drain != 0) {
+        if (Power != 0) {
+            return (double)Power / Drain;
         }
         return 0.0;
     }

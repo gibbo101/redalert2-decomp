@@ -67,6 +67,8 @@ public:
     // Whether the sidebar should flash its tab for it (ready; hypothesis).
     bool Unknown_0069D820();                                    // 0x0069D820
     // Grants it to its house (TS's Grant(one_time, announce, on_hold); hypothesis; true when granted).
+    bool Is_Present() const { return unknown_0x55; }
+    bool Is_One_Time() const { return unknown_0x56 && unknown_0x55; }
     bool Grant(bool one_time, bool announce, bool on_hold);     // 0x0069CCF0
 
     virtual int __stdcall What_Am_I();                          // 0x0069ECA0

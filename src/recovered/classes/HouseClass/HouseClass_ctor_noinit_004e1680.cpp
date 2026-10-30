@@ -2,7 +2,7 @@
 // The constructor used when loading: the lists, the +0x1C8 timer, the
 // counters and the base records are constructed empty; everything else is
 // restored by Load.
-#include "shared/techno.hpp"
+#include "shared/building_class.hpp"
 
 HouseClass::HouseClass(NoInitClass const &noinit)
     : AbstractClass(noinit),
