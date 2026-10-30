@@ -34,13 +34,19 @@ struct SwizzlePointerClass {
 inline bool operator==(SwizzlePointerClass const &a, SwizzlePointerClass const &b) { return a.ID == b.ID; }
 inline bool operator!=(SwizzlePointerClass const &a, SwizzlePointerClass const &b) { return !(a == b); }
 
-// 12 bytes: a coordinate (VectorClass<UndoInfoStruct>::operator== 0x00686FD0 compares all
-// three words; the constructor passes three separate zeros).
+// 12 bytes: a cell and the value recorded for it (the map-generation undo list
+// 0x00ABCE18: unknown_undo_record_684fc0 adds one, unknown_undo_restore_685030 writes the
+// values back; VectorClass<UndoInfoStruct>::operator== 0x00686FD0 compares all three words).
 struct UndoInfoStruct {
-    UndoInfoStruct() : Coord(0, 0, 0) {}
-    CoordStruct Coord;
+    UndoInfoStruct() : X(0), Y(0), Value(0) {}
+    int X;              // +0x00
+    int Y;              // +0x04
+    int Value;          // +0x08
 };
-inline bool operator==(UndoInfoStruct const &a, UndoInfoStruct const &b) { return a.Coord == b.Coord; }
+inline bool operator==(UndoInfoStruct const &a, UndoInfoStruct const &b)
+{
+    return a.X == b.X && a.Y == b.Y && a.Value == b.Value;
+}
 inline bool operator!=(UndoInfoStruct const &a, UndoInfoStruct const &b) { return !(a == b); }
 
 // 0x14 bytes: a rectangle and a flag (VectorClass<DirtyAreaStruct>::Fetch 0x006AC8D0 copies

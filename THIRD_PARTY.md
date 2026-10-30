@@ -84,6 +84,12 @@ inspection tools; VC6 and CrossOver are legitimate user-supplied local build too
   incorporated; they supply naming, member-order and idiom hypotheses that are
   verified on the base executable like every other reference.
 
+- **TibSun reconstruction** (`OpenTS-Developers/TibSun` commit `dbfbfbfaac40364ce7e1cd8fad7bcade5c6fb0d4`,
+  `code/` only; read-only shape reference, see [docs/WESTWOOD_SOURCES.md](docs/WESTWOOD_SOURCES.md)): a community
+  source reconstruction of Tiberian Sun GAME.EXE 2.03, not Westwood text. GPL-3.0-or-later plus EA's section 7 terms
+  for the parts derived from the Red Alert release. Cloned under the ignored `private/reference/TibSun`. Nothing is
+  incorporated; it supplies naming, member-order and statement-shape hypotheses verified on the base executable.
+
 ## Native linked libraries (tested development versions)
 
 | Library | Version | License | Use |

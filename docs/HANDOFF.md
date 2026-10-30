@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Span262 0x426E70-0x42BCF0 span; Loco263 Ship/Drive Draw_Matrix/Process, track drivers, other locomotors; Score264 Score.CPP rest, UndoInfoStruct, unheld Unit.CPP; Voxel265 .VXL library TU 0x719040-0x71C31F. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Span266 path estimator rest (0x426E70-0x42B66F); Loco263 Ship/Drive Draw_Matrix/Process, track drivers, other locomotors; Score264 Score.CPP rest, UndoInfoStruct, unheld Unit.CPP; Voxel265 .VXL library TU 0x719040-0x71C31F. All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -71,7 +71,7 @@ lead 1 was told to finish or freeze its in-flight delivery and stop (messages/20
 workers codex1-4 work under WORKER.md (the Mac lane brief adapted for Windows), one unit each, reserved on BOARD.md:
 codex1 pathfinding + map generation 0x570000-0x58FFFF; codex2 Queue.CPP (Print_CRCs with the MonoClass prerequisite,
 Queue_AI); codex3 BuildingClass; codex4 House.CPP, plus seed tooling between units. codex5/6 unused. Two workers run on
-Astra and two on Sol with identical briefs. Westwood reference clones for them are at C:\ra2\reference\ (copied without .git). 2026-10-30 20:24: the shared C:\ra2\repo\private\compiler and private\original-target-20261020 were emptied by a recursive delete through junctions (most likely the removal of the lead worktree C:\Users\Mike\.codex\worktrees\ra2-seed-lead, whose private folders were junctions; check trees under C:\ra2\c have the same junctions). Restored from the Mac (game.exe hash verified, 2719 inventory passes). Lead r66 (map reset 0x57BEA0, 545 B) was lost with that worktree, and so were the codex1, codex2 and codex4 scratch folders (codex3's survived); codex2-r2728 (Mono rename) is void and is being redone. Never delete a Windows worktree or check tree recursively without removing its junctions first. Deliveries arrive as deliveries/codexN-rN.md pointing at a frozen
+Astra and two on Sol with identical briefs. Westwood reference clones for them are at C:\ra2\reference\ (copied without .git). TibSun reconstruction (OpenTS-Developers/TibSun dbfbfbf, code/ only; user-approved 2026-10-30) is cloned at private/reference/TibSun and C:\ra2\reference\TibSun: first place to look for a unit's names and shape (docs/WESTWOOD_SOURCES.md cautions). Optional readability follow-up when a lane next touches HouseClass: rename unknown_ members from TibSun house.h (unknown_142 FirestormDefenseActivated, unknown_18d IsBuiltSomething, unknown_144 IsRecalcNeeded, unknown_1bc JustBuiltUnit, unknown_54a0..54d0 PB/PU/PI/PAQuantity; BuildingClass::unknown_450950 Update_FS_Wall_State; Map 0x54EBD0 Zone_Reset, 0x5688A0 Recalc_Cells_In_List). 2026-10-30 20:24: the shared C:\ra2\repo\private\compiler and private\original-target-20261020 were emptied by a recursive delete through junctions (most likely the removal of the lead worktree C:\Users\Mike\.codex\worktrees\ra2-seed-lead, whose private folders were junctions; check trees under C:\ra2\c have the same junctions). Restored from the Mac (game.exe hash verified, 2719 inventory passes). Lead r66 (map reset 0x57BEA0, 545 B) was lost with that worktree, and so were the codex1, codex2 and codex4 scratch folders (codex3's survived); codex2-r2728 (Mono rename) is void and is being redone. Never delete a Windows worktree or check tree recursively without removing its junctions first. Deliveries arrive as deliveries/codexN-rN.md pointing at a frozen
 build\class-work\codexN\d\rN (BASE, README with body bytes, shared/, plans, unit/); land them with land_round.sh
 after rewriting the C:/ prefix, as for lead packets. The owner keeps assignments/codexN-next.md current for hand-backs.
 First line for each new Codex thread (N = 1..4):
@@ -79,7 +79,7 @@ First line for each new Codex thread (N = 1..4):
 Bytes landed per worker per day (first two days; body bytes from each delivery README):
 | Date | codex1 | codex2 | codex3 | codex4 |
 | --- | ---: | ---: | ---: | ---: |
-| 2026-10-30 | 1,106 | 0 (Mono rename+takeover) | 11,110 | 780 |
+| 2026-10-30 | 1,347 | 0 (Mono rename+takeover) | 11,110 | 780 |
 | 2026-10-31 | | | | |
 BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
 so MPCooperative functions that call a base body need separate units.

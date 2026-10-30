@@ -19,8 +19,9 @@ hypothesis taken from them is verified on the exact target like any other
 | Repository | Pinned commit | Checked out |
 |---|---|---|
 | `electronicarts/CnC_Red_Alert` | `0dc09bb1d6188d1ec79ab4765b22a48b75ffee32` | everything: `CODE/` (1996-97 game and library classes), `WIN32LIB/`, `IPX/`, `WINVQ/`, `WWFLAT32/` |
-| `electronicarts/CnC_Renegade` | `3e00c3a1b97381bb28be89a35b856375e0629a08` | sparse: `Code/wwlib` (2001-02 library), `Code/WWOnline`, `Code/wwsaveload`, `Code/wwnet`, `Code/wwutil`, `Code/wwdebug` |
+| `electronicarts/CnC_Renegade` | `3e00c3a1b97381bb28be89a35b856375e0629a08` | sparse: `Code/wwlib` (2001-02 library), `Code/WWOnline`, `Code/wwsaveload`, `Code/wwnet`, `Code/wwutil`, `Code/wwdebug`, `Code/WWMath` (added 2026-10-30) |
 | `electronicarts/CnC_Tiberian_Dawn` | `e0d372dc582c053a699114942b984dad0457f9b3` | repository only, no checkout (older copy of the Red Alert code) |
+| `OpenTS-Developers/TibSun` | `dbfbfbfaac40364ce7e1cd8fad7bcade5c6fb0d4` | sparse: `code/` (community reconstruction of Tiberian Sun GAME.EXE 2.03; see below) |
 
 Not cloned: `CnC_Remastered_Collection` (the 2020 release of the same two
 games with remaster changes) and `CnC_Generals_Zero_Hour` (the SAGE engine,
@@ -90,4 +91,21 @@ Paths are relative to `private/reference/CnC_Red_Alert/CODE/` (RA1),
 | gadget, check_list, color_list, game_options_dialog, game_controls_dialog | RA1 GADGET.H, CONTROL.H, TOGGLE.H, TEXTBTN.H, SHAPEBTN.H, LIST.H, CHEKLIST.H, COLRLIST.H, EDIT.H, SLIDER.H, GAUGE.H, MSGBOX.H, GOPTIONS.H, GAMEDLG.H |
 | ipx_address, ipx_conn, ipx_global_conn, ipx_manager, ipx_interface, connection, conn_man, comm_buffer, null_modem, session_blocks, packet_field | RA1 IPXADDR.H, IPXCONN.H, IPXGCONN.H, IPXMGR.H, CONNECT.H, CONNMGR.H, COMBUF.H, NULLCONN.H, NULLMGR.H, SESSION.H, FIELD.H, PACKET.H; RG wwnet/ |
 | movie, audio, sound_play, shape_file, buffer, dial8 | RA1 MOVIE.H, AUDIO.H, DIAL8.H; W32 MOVIE/, AUDIO/, SHAPE/, BUFFER.H |
-| vector3, matrix3d, quaternion | RG Code/WWMath (add to the sparse checkout) |
+| vector3, matrix3d, quaternion | RG Code/WWMath |
+
+## TibSun reconstruction (added 2026-10-30)
+
+`private/reference/TibSun/code/<unit>.cpp` (Windows: `C:\ra2\reference\TibSun\code\`) is a frozen community
+reconstruction of Tiberian Sun GAME.EXE v2.03 (2000-06-05), built with the same-era MSVC and matched function by
+function (its README: ~95% of ~11,150 functions byte-exact). It is the closest relative of RA2: same class hierarchy
+one year earlier, same compiler, Westwood's names. 55 of the 73 Survey170 units have a same-named file (house, queue,
+building, astar, mapgen, vein, voxel, the locomotors, init, scenario, rules, session, sidebar, skirmish, tactical,
+taction, wonline, netshare, ownrdraw, loaddlg, mono ...). Look here first for a unit's names, member order, inline
+helpers and statement shape, then Red Alert's `CODE/`. Do not use OpenTS itself (modernised, not matched).
+
+Same shape-only rule as the other references, with two extra cautions:
+- It is a community reconstruction, not Westwood text, and about 5% of its functions never matched: a TibSun body that
+  fails on RA2 is not evidence that RA2 differs.
+- Its text will often be near-identical to the exact RA2 match. Candidates are still derived from the seed and the
+  diff; TibSun is consulted for names, member order, inline helpers and statement shape. Never copy its text: write
+  the RA2 shape and verify. The audit cannot tell the difference, so this rule lives in the briefs.

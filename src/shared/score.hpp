@@ -16,6 +16,14 @@
 #include "shared/score_font.hpp"
 class Surface;
 class ConvertClass;
+class HouseClass;
+// A score screen sound (12 bytes, TibSun's SfxEntry; Presentation lists "Back",
+// "Type", "Wipe" in ScoreClass::Sounds). Only the name is kept when sound is available.
+struct ScoreSoundClass {
+    char *Name;                     // +0x00 _strdup of the name
+    int unknown_04;                 // +0x04
+    bool unknown_08;                // +0x08
+};
 
 class ScoreClass {
 public:
@@ -28,9 +36,17 @@ public:
     void Blit_Score();                                                  // 0x006676C0
     void Cycle_Wait_Click(bool cycle);                                  // 0x00665EE0
     void Do_Graphs();                                                   // 0x006661E0
-    void Do_Graph(int first, int second, int ypos);                     // 0x00666320
+    void Do_Graph(int first, int second, int xpos);                     // 0x00666320
     void Show_Credits();                                                // 0x00666B60
     void Print_Time(unsigned long seconds);                             // 0x00666C70
+    int Efficiency(HouseClass *house);                                  // 0x00666040
+    void Input_Name(char *name, int x, int y);                          // 0x00666E70
+    void Draw_Cursor(int x, int y);                                     // 0x006672A0
+    void Wait_While_Inactive();                                         // 0x00667780
+
+    // Looks the sound up by name when sound is available; the play itself
+    // is gone, so volume is unused (TibSun's ScoreClass::DoSound).
+    void Play_Sound(char const *name, int volume);                      // 0x006677F0
 
     int XOffset;                                    // +0x00 (screen width - 640) / 2
     int YOffset;                                    // +0x04 (screen height - 400) / 2
@@ -40,5 +56,6 @@ public:
     ConvertClass *Drawer;                           // +0x14
     int Color;                                      // +0x18
     DynamicVectorClass<ScoreAnimClass *> Anims;     // +0x1C
+    DynamicVectorClass<ScoreSoundClass *> Sounds;   // +0x34
 };
 #endif

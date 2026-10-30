@@ -146,49 +146,6 @@
       "source_order": 81281
     },
     {
-      "entry": 6715376,
-      "method": "006677f0",
-      "symbol": "?unknown_scan@UnknownNameTable_006677f0@@QAEXPBDH@Z",
-      "symbol_prefix": "?unknown_scan@UnknownNameTable_006677f0@@QAEXPBDH@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 67,
-      "body_sha256": "c6c9af25386a1479f48c2ebf34f0d64af13259f6053aaef13db03c98400b5a7b",
-      "padding_bytes": 13,
-      "full_extent_bytes": 80,
-      "full_extent_sha256": "1b932eb68986de6f6cc143ec14b372924b21bc7f0ecb1721266e2f9ce1cb0fd2",
-      "relocations": [
-        {
-          "offset": 14,
-          "kind": 20,
-          "symbol": "?unknown_check_406f30@@YAHXZ",
-          "target": 4222768,
-          "addend": 0,
-          "resolved": 4292474670
-        },
-        {
-          "offset": 42,
-          "kind": 20,
-          "symbol": "__stricmp",
-          "target": 7872288,
-          "addend": 0,
-          "resolved": 1156866
-        }
-      ],
-      "source_sha256": "049926bd29571b7dc372a9c79fe74a2e0e32535981fdf37066b2d84f5aff8a48",
-      "source": "src/recovered/unowned/unknown_find_name_006677f0.cpp",
-      "population": "population-2224",
-      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_find_name_006677f0",
-      "source_order": 81282
-    },
-    {
       "entry": 7239488,
       "method": "006e7740",
       "symbol": "??0UnknownRecord_006e7740@@QAE@XZ",
