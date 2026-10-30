@@ -93,7 +93,7 @@ struct Channel {
     int ping;
     int unknown_2c;
     Channel *next;
-    char name[0x10c - 0x34];
+    union { char name[0x10c - 0x34]; struct { char channel_name[17],topic[81],location[65],key[9],exInfo[41]; char unknown_109[3]; }; };
 };
 // Only slot 42 is called here; unused interface signatures are hypotheses.
 struct __declspec(novtable) IChat : public IUnknown {
@@ -102,7 +102,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot05() = 0;
     virtual void __stdcall unknown_slot06() = 0;
     virtual void __stdcall unknown_slot07() = 0;
-    virtual void __stdcall unknown_slot08() = 0;
+    virtual HRESULT __stdcall unknown_slot08(Channel *channel) = 0;
     virtual void __stdcall unknown_slot09() = 0;
     virtual void __stdcall unknown_slot10() = 0;
     virtual void __stdcall unknown_slot11() = 0;
@@ -115,7 +115,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot18() = 0;
     virtual void __stdcall unknown_slot19() = 0;
     virtual void __stdcall unknown_slot20() = 0;
-    virtual void __stdcall unknown_slot21() = 0;
+    virtual HRESULT __stdcall unknown_slot21(User *user) = 0;
     virtual void __stdcall unknown_slot22() = 0;
     virtual HRESULT __stdcall Game_Icon(long id, long format, void **bitmap, void **palette, int *width, int *height) = 0;
     virtual HRESULT __stdcall unknown_slot24(User *user) = 0;   // OnBuddyList: a zeroed User with the name
@@ -130,8 +130,8 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall Game_Types(char const **types) = 0;
     virtual void __stdcall unknown_slot34() = 0;
     virtual HRESULT __stdcall unknown_slot35(unsigned long sku) = 0;
-    virtual void __stdcall unknown_slot36() = 0;
-    virtual void __stdcall unknown_slot37() = 0;
+    virtual HRESULT __stdcall unknown_slot36(int index,char const **nick,char const **password) = 0;
+    virtual HRESULT __stdcall unknown_slot37(int index,char const *nick,char const *password,int mangle) = 0;
     virtual void __stdcall unknown_slot38() = 0;
     virtual void __stdcall unknown_slot39() = 0;
     virtual void __stdcall unknown_slot40() = 0;
@@ -144,7 +144,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot47() = 0;
     virtual void __stdcall unknown_slot48() = 0;
     virtual void __stdcall unknown_slot49() = 0;
-    virtual void __stdcall unknown_slot50() = 0;
+    virtual HRESULT __stdcall unknown_slot50(int index,int locale) = 0;
     virtual void __stdcall unknown_slot51() = 0;
     virtual HRESULT __stdcall unknown_slot52(int *count) = 0;
     virtual void __stdcall unknown_slot53() = 0;
@@ -1105,4 +1105,12 @@ int __fastcall Unknown_0073d3f0(Wstring const &name);
 // Connects to a WOL server (0x007424C0; hypothesis).
 bool __fastcall Unknown_007424c0(WOL::Server *server);
 
+// RTTI0x007AF934; actual constructor/destructor establish one owned Wstring at+C.
+#include "shared/wonline_dialog_control.hpp"
+class WonlineStringDialogControl : public SimpleWonlineDialogControl {
+public:
+    WonlineStringDialogControl() {}
+    virtual ~WonlineStringDialogControl() {}
+    Wstring Text;
+};
 #endif
