@@ -3352,31 +3352,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
       "source_order": 86861
-    },
-    {
-      "entry": 7849920,
-      "method": "0077c7c0",
-      "symbol": "?unknown_decoder_field_714@@YIHPBUUnknownDecoderState_77c7c0@@@Z",
-      "symbol_prefix": "?unknown_decoder_field_714@@YIHPBUUnknownDecoderState_77c7c0@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 10,
-      "body_sha256": "19e51bc97038863419ce89e3a990e12cf4319bb9e218f7bbaa3aeb90de0d5e0d",
-      "padding_bytes": 6,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "5efad9fd937403c94b7ea66bad13bd4643b4233c9a23acc5a91a44743c4bf3cc",
-      "relocations": [],
-      "source_sha256": "5b66a7020ec703726bd1cae17cf0c3564495fbd1e4345f4f2c3698f1bf32cb19",
-      "source": "src/recovered/unowned/unknown_decoder_field_714_0077c7c0.cpp",
-      "population": "population-2332",
-      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 86863
     }
   ]
 }

@@ -227,32 +227,6 @@
       "source_order": 31906
     },
     {
-      "entry": 7850544,
-      "method": "0077ca30",
-      "symbol": "?unknown_count_flag_40000000_0077ca30@@YIHPBUUnknownFlagTable_0077ca30@@@Z",
-      "symbol_prefix": "?unknown_count_flag_40000000_0077ca30@@YIHPBUUnknownFlagTable_0077ca30@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 31,
-      "body_sha256": "4c17e683ce6913de4759cf3d1c499c292c70a5ece3741963b014f5399c28d2b5",
-      "padding_bytes": 1,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "68199155e5db0a79e7ba9330d55b1f97ad9d2b5e9e12fd6812e550912c9d478a",
-      "relocations": [],
-      "source_sha256": "090b70b6b7c799e6c9d6daabb7966c3b70b74c8799cac242c7a40de62da85cd0",
-      "source": "src/recovered/unowned/unknown_count_flag_40000000_0077ca30.cpp",
-      "population": "population-957",
-      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_count_flag_40000000_0077ca30",
-      "source_order": 31907
-    },
-    {
       "entry": 7513568,
       "method": "0072a5e0",
       "symbol": "??0UnknownNamedValue_0072a5e0@@QAE@ABVWstring@@H@Z",
