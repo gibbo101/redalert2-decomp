@@ -42,8 +42,12 @@ struct Point2D {
     // From a Rect corner or a sum of them.
     Point2D(TPoint2D const &point) : X(point.X), Y(point.Y) {}
 
+    // Member-wise sum in place (Westwood's Overlay_Shadow_Render_Rect, CellClass 0x00475100).
+    Point2D &operator+=(Point2D const &point) { X += point.X; Y += point.Y; return *this; }
     // Member-wise difference in place (DisplayClass::TacticalClass::Action 0x0049AE70).
     Point2D &operator-=(Point2D const &point) { X -= point.X; Y -= point.Y; return *this; }
+    // Member-wise sum by value (CellClass::unknown_475440 and its callers: Westwood's Overlay_Draw_Offset, Draw_Overlay_Shadow).
+    Point2D operator+(Point2D const &point) const { return Point2D(X + point.X, Y + point.Y); }
     // Member-wise difference by value (VeinholeMonsterClass 0x00711AA0: the Y
     // difference is computed first, as a constructor argument).
     Point2D operator-(Point2D const &point) const { return Point2D(X - point.X, Y - point.Y); }

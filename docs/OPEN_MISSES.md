@@ -730,3 +730,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Cell_Render_Rect 0x4752B0 needs the real IsometricTileTypeClass slot 39; Init_Drawer rename (LightConvertClass*) pending.
 - Tactical after Inline293: Register_Dirty_Area 0x6A3020 35.48; Render_Shroud 0x6A3EF0, Wipe_Depth 0x6A33F0 not drafted.
   Adding any member to CellClass broke the full build in another unit (repro in Inline293 NOTES).
+- COM pointer model after ComPtr299 (zero bytes, parked by the stop rule; NOTES, v/in, unit/, model/): 15/18 COM
+  populations exact under the comip model. Infantry: callers 0x507530/0x500350 become exact by calling 0x508D00 (TibSun
+  Is_JumpJet) in model form, but 0x508D00 itself is 78.57 (success-path Attach->_Release inlines; 1-3 extra pending sites
+  after the ctor fix it). Foot Load 0x4C9D10 85.41 (needs >=3 more sites after OleLoadFromStream), Aircraft 0x416420 63.48
+  (1-2 more sites after Link_To_Object). Find the natural missing sites, then land model + overlays in one round.

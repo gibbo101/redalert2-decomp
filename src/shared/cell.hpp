@@ -172,6 +172,7 @@ public:
     bool unknown_47cdd0() const;                // 0x0047CDD0 (land allows ...; no building, not blocked)
     Point2D unknown_475440() const;             // 0x00475440 (the overlay image offset in the cell; hypothesis)
     void unknown_4754b0(Point2D const &point, Rect const &rect);   // 0x004754B0 (draws IsoTileTypes[0] at point; Tactical 0x006A3641)
+    void unknown_474830(Point2D const &point, Rect const &clip);   // 0x00474830 (Westwood's Draw_Overlay_Shadow: the overlay's shadow frame, or a rubble building's)
     void unknown_474260(int arg1, int arg2, int frame);  // 0x00474260 (draws the shroud frame; hypothesis)
     void unknown_474510(int arg1, int arg2, int frame);  // 0x00474510 (draws the fog frame; hypothesis)
     void unknown_475520(int arg1, int arg2);    // 0x00475520 (updates and draws the cell's shroud and fog frames; Tactical 0x006A3FA6)
