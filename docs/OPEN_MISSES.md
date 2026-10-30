@@ -638,3 +638,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   ScoreDelay 0x667420 77.54 (Rect ctor 0x42BCD0 out of line in the original).
 - Facing/ramp TU after Matrix261 (0x717CE0-0x71903F; NOTES): 0x718060 (3,290 B) 88.27 (/G5 scheduling only), 0x718E80
   96.15. Renegade WWMath is not in the sparse reference checkout (adding it is a fetch: needs the user).
+- Score.CPP after Score264 (NOTES): ScoreDelay 0x667420 77.54 (our Blit_Score is just over the auto-inline cap; exact
+  if unknown_surface_839954 were Surface*), Efficiency 0x666040 98.33. Presentation 0x663FE0, DVC<ScoreAnimClass*>::Add
+  0x6684F0, UndoInfo 0x685290+ not started.
+- Voxel library after Voxel265: 0x71BAA0 86.55, 0x71BF20 63.39 (true body 665 B); drawers/Read_File/Render_Shadow to do.
+- Ship/Drive after Loco263: Draw_Matrix 82.25 (one Value call out of line in the first expansion only), Process 77.65
+  (CDTimerClass(long) 0x463F80 out of line in Set_Slope), Piggyback_CLSID x5 (com_ptr.hpp attach model).

@@ -4,8 +4,8 @@
     "id": "population-2775",
     "inventory_sha256": "38ad979ae3ac40c33f217426c2c35a76554c5f29b0c03efc124ee89f7a643ece",
     "gaps_sha256": "890e1d812d5edbf1c9ccf7ba68e3e6ae6cf2d8d3753f3e41afccf6c81cb87fbb",
-    "historical_population_sha256": "6d8b9349472aab8a48c4c636aefaff133369ecc5e92c452c97025f0274d48a6f",
-    "historical_acceptance_sha256": "60c14089a8a90e8591dc6cbfe62e70acc08ecc39c0e9d7430556f888382a8c4d"
+    "historical_population_sha256": "8fe6e4c917ea29b6e2bfa9a7190f8eea05573563d876829a055c2aafe35c4494",
+    "historical_acceptance_sha256": "3501a2c8cae5a41fe1bb9105c188b4a447bd4c691e31b5e89fb978b2c508be62"
   },
   "references": {
     "?Array@AlphaLightingRemapClass@@2V?$DynamicVectorClass@PAVAlphaLightingRemapClass@@@@A": 8635864,
@@ -3419,7 +3419,7 @@
     "?get@Leaf_4f87b0@@QAEPAXI@Z": 5212080,
     "?get@Storage_4f8900@@QAEPAXIPAI@Z": 5212416,
     "?get@Storage_4f8950@@QAEPAXIPAI@Z": 5212496,
-    "?get@Storage_4f89a0@@QAEPAXIPAI@Z": 5212576,
+    "??0?$VectorClass@PBVBuildingTypeClass@@@@QAE@IPBQBVBuildingTypeClass@@@Z": 5212576,
     "?get@Storage_4f89f0@@QAEPAXIPAI@Z": 5212656,
     "?get@Storage_4f8a40@@QAEPAXIPAI@Z": 5212736,
     "?get@Storage_4f8a90@@QAEPAXIPAI@Z": 5212816,
