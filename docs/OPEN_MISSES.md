@@ -708,3 +708,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - ownrdraw.cpp after OwnrDraw292 (NOTES, c/, hdr/ overlay): Edit proc 0x5F1900 96.47 (which copy of the shared
   SetWindowLongA tail VC6 keeps), NewEdit 0x5F22A0 57.91, tab proc 0x5F0F40 42.51 (Bucket_Index out of line at 0x601C30),
   progress 0x5FAFF0 76.92, push-button 0x5F42D0 70.01. Static/ScrollBar/trackbar/ComboBox/ListBox not started.
+- Scenario.CPP after Scenario291: Clear_Scenario 0x65D370 99.66 (jae vs jge on the inlined unknown_6612c0 range check:
+  VC6 types the derived induction variable signed), Wait_For_Players 90.40, Scan_Place_Object 48.62 (try a FacingType
+  enum with operator++), NoInit ctor 64.00. TeamClass 0x6B8BB0 still has a local extern of 866160 (scenario_tags.hpp).

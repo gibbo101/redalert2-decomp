@@ -729,3 +729,7 @@ verified on the target.
   differently from the same draft after any other function; always score inside the population file in address order.
 - MAX macro (Scenario289, Session275): Westwood's MAX(a,b) expansion repeats the expression (`a > b ? a : b`); a local or
   a template max compiles differently and does not match.
+- __fastcall argument scheduling (Scenario291): in a __fastcall function, the register-argument setups after a
+  callee-pops call are scheduled before the pushes; "/G5 scheduling ties" around calls in a free function often mean it
+  is __fastcall. Also: a single new global `extern` in tag.hpp/id_source.hpp shifts a load pair in BaseClass::Read_INI
+  0x42C460, while new function/member declarations do not - put new extern objects in a unit-local header.
