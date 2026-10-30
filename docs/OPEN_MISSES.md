@@ -735,3 +735,14 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Is_JumpJet) in model form, but 0x508D00 itself is 78.57 (success-path Attach->_Release inlines; 1-3 extra pending sites
   after the ctor fix it). Foot Load 0x4C9D10 85.41 (needs >=3 more sites after OleLoadFromStream), Aircraft 0x416420 63.48
   (1-2 more sites after Link_To_Object). Find the natural missing sites, then land model + overlays in one round.
+- Map.CPP after Map298 (NOTES, w/, hdr/): Set_WasUnderBridge_Flags 0x568B00 58.10 (first Adjacent_Cell sum out of line
+  0x42ADD0, ours calls the Cell ctor 0x42AD30 out of line: /Ob2 budget); Closest_Passable_Cell 0x568ED0 82.98 (inner-loop
+  registers); Map295 misses 559EB0 44.83, 5689D0 46.64, 55A590 56.16. Undrafted: 549C20 (needs 549C50 signature), 5658C0,
+  54A8F0, 5651E0, 567AE0, 55B060, destroy-bridge twins 551470/551810/551DD0, 5502E0 (2570).
+- CellClass after Cell301 (NOTES): Draw_Overlay 0x4749C0 62.74 (needs CellClass +0x68 as Rect, slope-shape table 0xA52EB0
+  conflicts with unknown_globals.hpp's single pointer; register allocation left); Init_Light 0x479440 83.65 (frame 0x2c vs
+  0x3c, one shared CoordStruct slot; Point2D::Length takeover probably unnecessary); Closest_Free_Spot 0x4764B0 undrafted.
+- Tactical after Tactical300 (NOTES, w/): Render_Shroud 0x6A3EF0 96.25 (moved-rect Y first); Get_Selectable_Object
+  0x6AA990 90.07 (stack slots); Register_Dirty_Area 0x6A3020 65.58 (needs bool rename first; second Union inlines); ctor
+  0x6A24B0 99.02. Inline members added to rect.hpp broke another unit's full build for Tactical300 (not bisected), yet
+  Cell301's Point2D operator+/+= landed exact.

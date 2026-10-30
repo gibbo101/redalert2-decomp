@@ -18,10 +18,10 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Near misses in a unit belong to whoever holds the unit (BOARD.md); Windows workers hold units like Mac lanes.
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - Lanes hand back at about 200 tool calls or 200K context, whichever first; the owner continues the unit in a
-  fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
+  fresh lane from NOTES. Two Mac lanes since 2026-10-30 (user cut, to extend the week), Opus; when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): ComPtr299 landing the comip.h com_ptr model; Map298 Map.CPP continuation; Tactical300 Tactical.CPP rest; Cell301 CellClass rest (Overlay_Draw_Offset over the inline cap, Init_Light). All Opus. Terrain160 landed
+Running Mac lanes (two; Opus, unit-sized; TibSun first, then Red Alert): Foot302 FootClass via TibSun foot.cpp; Map303 Map.CPP continuation. Landed 2026-10-30: Map298 r5 (10,138 B + 0x54F7C0 bool rename), Cell301 r1 (1,403 B + Init_Drawer rename), Tactical300 r1 (1,071 B; owner dropped its file-local Point2D operator+, now a rect.hpp member). Next lane candidates: Tactical rest (Tactical300 NOTES), Cell rest (Cell301 NOTES), Techno.CPP, TeamClass, Sidebar. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
