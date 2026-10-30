@@ -18,7 +18,7 @@
 //   +0x530, +0x540, +0x54C, +0x558  frame timers (+0x53C int 10)
 //   +0x564  the locomotor (a COM interface released by the destructor)
 //   +0x568  CoordStruct (the unit's zero coordinate)
-//   +0x574  byte 0xFF, +0x575..+0x57E bools, +0x580..+0x588 ints
+//   +0x574  byte 0xFF, +0x575 signed byte, +0x576..+0x57E bools, +0x580..+0x588 ints
 //           (+0x588 an owned object deleted by the destructor)
 //   +0x58C  frame timer, +0x598..+0x5A2 bools (+0x5A0 true)
 //   size 0x5A4 (hypothesis)
@@ -294,7 +294,7 @@ public:
     UnknownComPtr<ILocomotion, &unknown_uuid_ILocomotion_7ce600> Locomotor;  // +0x564 (ILocomotionPtr)
     CoordStruct unknown_568;                    // +0x568
     signed char unknown_574;                    // +0x574 (-1; slot 46 tests its sign)
-    bool unknown_575;                           // +0x575
+    signed char unknown_575;                           // +0x575
     char unknown_576;                           // +0x576 (the waypoint index in the path, slot 99)
     bool unknown_577;                           // +0x577
     bool unknown_578;                           // +0x578
