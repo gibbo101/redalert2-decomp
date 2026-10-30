@@ -19,6 +19,8 @@ public:
     // Observed ECX/plain-RET/ignored-result contracts; unobserved stack aliases and source intent remain hypotheses.
     void Initialize_Region_Map_0057bea0();
     void unknown_0057c4f0();
+    void unknown_0057c0d0(DynamicVectorClass<Rect> *regions,int count,Rect const &area); //0057C5B7 ECX owner, RET12
+    int unknown_0057d3a0(int count,Rect const &area,Point2D const &seed,bool flag,Cell const &origin,double weight,bool last); //RET32; source intent hypotheses
     void unknown_0057c780();
     void unknown_0057c9e0();
     bool unknown_0057ecf0(Cell const &point,double value,bool flag); //actualcallee, sourceintentqualified

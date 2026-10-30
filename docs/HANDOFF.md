@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Init283 Init_Game and Init.CPP misses; VQA285 VQA32 task.cpp without the inline_depth pragma; VQA284 VQA32 unvq.cpp and loader misses; Session282 Session.CPP near misses and large readers. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Init283 Init_Game and Init.CPP misses; VQA284 VQA32 unvq.cpp and loader misses; OwnrDraw286 ownrdraw.cpp control procs via TibSun ownrdraw.cpp; Tactical287 Tactical.CPP via TibSun tactical.cpp. All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -63,7 +63,7 @@ a plan names: codex2's d/ is about 30 GB). Bounds rounds (r18, r26, r28, r31, r3
 Seed125 (zero bytes; Tactical family parked; 0x6AAFD0 is a register-tie near miss for Windows). Their misses
 are in OPEN_MISSES.md.
 Next-lane candidates (2026-10-30; fresh map build/class-work/Survey251/UNITS.md: unclassified tail 0x775B60-0x781FF0 (triage first), VQAClass 0x717CE0, 0x426E70-0x42BCF0, Ini.CPP, Beacon span, VeinholeMonster, Score.CPP, UndoInfo, Unit.CPP; unit table build/class-work/Survey170/UNITS.md): WorldDom.cpp rest (OPEN_MISSES), LdPrgMgr 0x535BF0 (4 KB), MainLoop 0x540C20 (3.5 KB).
-Parked (OPEN_MISSES has resume points): netshare.cpp (Netshare247), ownrdraw.cpp (rest large or blocked, OwnrDraw242 map),  Startup.CPP WinMain (Startup232; needs SEH acceptance support: __except_handler3 0x7852D4, fs:[0] __except_list, per-compile $T scope table at 0x7AB990 - the only game-code SEH user), UICmnds.cpp, WDTSel.cpp, PlanMgr.cpp, TAction.CPP, Session.CPP,
+Parked (OPEN_MISSES has resume points): netshare.cpp (Netshare247),  Startup.CPP WinMain (Startup232; needs SEH acceptance support: __except_handler3 0x7852D4, fs:[0] __except_list, per-compile $T scope table at 0x7AB990 - the only game-code SEH user), UICmnds.cpp, WDTSel.cpp, PlanMgr.cpp, TAction.CPP, Session.CPP,
 Skirmish.cpp, NullDlg Select_Serial_Dialog. Pending landings: none (Mac lanes deliver on hand-back; Windows last r65).
 
 Windows (user decision 2026-10-30, relayed by the review session): no lead layer. LEAD.md and LEAD2.md are withdrawn;

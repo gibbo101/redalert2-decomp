@@ -680,3 +680,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Allocate_Surfaces 0x519500 77.26; Init_Game 0x5116A0 and 0x519E70 not drafted.
 - VQA task.cpp after VQA280: plan refused because VQA_Open wrapped a call in `#pragma inline_depth(0)` copied from TibSun
   (a reconstruction pragma is not evidence; VQA285 redoes it). VQA_Reset 0x77C7D0 71.6 (register choice).
+- Session.CPP after Session282: Read_Scenario_Descriptions 0x670C50 94.54 (true body 2142 B; only the wcsncat count
+  fold `0x2B - used` vs inc/mov 0x2C/sub remains; needs 5+ pending inline sites after the INIClass), ctor 0x66E380 98.59,
+  Allocate_Ports 0x673090 87.47.
+- VQA task.cpp landed via VQA285 (the inline_depth pragma was not needed). VQA_Reset 0x77C7D0 75.68 (stop in esi).
