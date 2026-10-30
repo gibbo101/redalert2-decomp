@@ -12,6 +12,7 @@ public:
     void Cleanup_0057ace0();
     void unknown_005835f0();
     void unknown_00582fd0();
+    void Read_Settings_00579960();
     int Randomize_Ramp_Tile_00582b30(int tile); // caller ECXowner/RET4; operation name hypothesis
     bool Clear_Region_Border_00581bf0(int region,int rings,int newRegion); // ECXowner,RET12; ALpredicate
     DynamicVectorClass<Cell> *Build_Region_Border_Cell_List_00581ee0(int region); // ECXowner,RET4; existingprivateevidence
