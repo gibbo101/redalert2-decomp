@@ -53,7 +53,37 @@ struct VQAHandle {
     unsigned char unknown_14[0x98];
     class VQAClass *Player;     // +0xAC the owner (callbacks)
 };
-struct VQAConfig;
+// The player configuration given to the VQA library (VQAClass +0x170; set
+// by the library's defaults 0x00777850, then by the VQAClass constructor).
+// Field meanings are hypotheses from the constructor's stores.
+typedef int (__cdecl *VQACallback)(VQAHandle *handle, int unknown2, int unknown3, int unknown4);
+struct VQAConfig {
+    VQACallback DrawerCallback;     // +0x00 0x0071D490 or 0x0071D640 (VQAClass flag 1)
+    VQACallback EventHandler;       // +0x04 0x0071D680
+    VQACallback unknown_08;         // +0x08 0x0071D6E0
+    int NotifyFlags;                // +0x0C
+    void (*unknown_10)();           // +0x10 0x004122C0 or 0x00411420 (VQA option 4)
+    int unknown_14;
+    void (*unknown_18)();           // +0x18 0x004115A0
+    char *unknown_1c;               // +0x1C
+    int unknown_20;                 // +0x20 (-1)
+    int unknown_24;                 // +0x24 (-1)
+    int unknown_28;
+    int unknown_2c;
+    int unknown_30;                 // +0x30 (constructor argument 6)
+    int unknown_34;                 // +0x34 (constructor argument 7)
+    int FrameRate;                  // +0x38 (60)
+    int unknown_3c;
+    int DrawFlags;                  // +0x40 bits 0x01, 0x04, 0x40, 0x80 from VQA options 15, 1, 10, 12
+    int OptionFlags;                // +0x44 bits 0x01, 0x04, 0x08, 0x20, 0x100
+    int unknown_48;                 // +0x48 (1 or 14)
+    int unknown_4c;                 // +0x4C (-1)
+    int unknown_50[3];
+    int unknown_5c;                 // +0x5C (0x2000)
+    int unknown_60;
+};
+void __fastcall VQA_Unknown_00777850(VQAConfig *config);                                         // defaults
+extern int unknown_int_a40b54;                              // 0x00A40B54 (low 16 bits: VQAConfig +0x84)
 int __fastcall VQA_Unknown_0077B7A0(char const *filename, VQAConfig *config, VQAHandle **handle);   // open
 int __fastcall VQA_Unknown_0077C640(VQAHandle *handle, int unknown2, int unknown3, int unknown4);
 int __fastcall VQA_Unknown_0077C6C0(VQAHandle *handle, int unknown2, int unknown3, int unknown4, int unknown5);
@@ -63,6 +93,18 @@ void __fastcall VQA_Unknown_0077BE70(VQAHandle *handle);                        
 void __fastcall VQA_Unknown_0077C7D0(VQAHandle *handle);
 int __fastcall VQA_Unknown_0077C480(VQAHandle *handle, int unknown2, int x, int y, int width, int height);
 void __fastcall VQA_Unknown_0070B7F0(int unknown1, unsigned unknown2);
+int __fastcall VQA_Unknown_0077C8A0(VQAHandle *handle, int frames);
+int __fastcall VQA_Unknown_0077C920(VQAHandle *handle, int *unknown2, int *unknown3, int *state);
+int __fastcall VQA_Unknown_0077C440(VQAHandle *handle, void (*unknown2)(), void (*unknown3)());
+int __fastcall VQA_Unknown_0077CBA0(VQAHandle *handle);                                         // current time
+void VQA_Unknown_0077FD80();
+void __fastcall VQA_Unknown_0070B690(int unknown1);
+void VQA_Unknown_0070B820();
+void VQA_Unknown_0077FE89();
+void VQA_Unknown_0070BBC0();
+void VQA_Unknown_0070BF60();
+void VQA_Unknown_0070C0A0();
+extern bool unknown_vqa_paused_af901c;                     // 0x00AF901C the pause was reported
 // Window message helpers (0x00522E90/0x00522ED0, the game's GetMessage /
 // PeekMessage wrappers; __fastcall) and the message counter 0x00A52298.
 // MSG: shared/win32_api.hpp.
@@ -84,6 +126,8 @@ int __cdecl VQA_Unknown_0071D6E0(VQAHandle *handle, int event, int unknown3, int
 // unknown, 0x54C bytes from the constructor's stores).
 class VQAClass {
 public:
+    VQAClass(char const *filename, int flags, int (*callback538)(), void (*callback53c)(), void (*callback540)(),
+             int unknown6, int unknown7);                  // 0x0071C5F0
     ~VQAClass();                                           // 0x0071C8A0
     void Unknown_0070B7D0();                               // 0x0070B7D0 (releases the player)
     bool Unknown_0071CB30();                               // 0x0071CB30 opens the movie
@@ -94,6 +138,7 @@ public:
     void Unknown_0071CC60(int frame);                      // 0x0071CC60 seek to a frame (no value: the same-frame path leaves EAX unset)
     bool Unknown_0071CC90();                               // 0x0071CC90
     int Unknown_0071CCD0(int frame, bool unknown);         // 0x0071CCD0 play loop (1: stopped by Escape)
+    void Unknown_0071CF50(int frame);                      // 0x0071CF50 shows a frame (-1: the last)
     bool Unknown_0071CFC0(bool *unknown);                  // 0x0071CFC0
     void Unknown_0071D1A0();                               // 0x0071D1A0 (pause)
     void Unknown_0071D1E0();                               // 0x0071D1E0 (resume)
@@ -125,9 +170,12 @@ public:
     CCFileClass File;                      // +0x004
     bool FileOpen;                         // +0x068
     char Filename[0x107];                  // +0x069
-    unsigned char Config[0x64];            // +0x170 VQA configuration (not modelled)
-    int unknown_1d4;                       // +0x1D4 (configuration)
-    unsigned char unknown_1d8[0x20];       // +0x1D8 (configuration)
+    VQAConfig Config;                      // +0x170 VQA configuration
+    int unknown_1d4;                       // +0x1D4 (configuration continued)
+    int unknown_1d8;                       // +0x1D8 (configuration)
+    VQAClass *Owner;                       // +0x1DC (configuration: this)
+    int unknown_1e0[5];                    // +0x1E0 (configuration)
+    int unknown_1f4;                       // +0x1F4 (configuration: low 16 bits of 0x00A40B54)
     VQAHandle *Handle;                     // +0x1F8
     unsigned char Palette[0x300];          // +0x1FC current movie palette (PaletteClass layout)
     int CurrentFrame;                      // +0x4FC
@@ -147,7 +195,7 @@ public:
     unsigned char *Buffer;                 // +0x534
     int (*Callback538)();                  // +0x538
     void (*Callback53C)();                 // +0x53C
-    int unknown_540;                       // +0x540
+    void (*Callback540)();                 // +0x540 called after each frame
     int unknown_544;                       // +0x544
     bool unknown_548;                      // +0x548 paused
     bool unknown_549;                      // +0x549

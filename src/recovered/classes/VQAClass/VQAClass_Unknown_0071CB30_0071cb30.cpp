@@ -5,7 +5,7 @@
 
 bool VQAClass::Unknown_0071CB30()
 {
-    if (VQA_Unknown_0077B7A0(Filename, (VQAConfig *)Config, &Handle) != -1) {
+    if (VQA_Unknown_0077B7A0(Filename, &Config, &Handle) != -1) {
         Opened = false;
         return false;
     }
