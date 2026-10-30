@@ -309,6 +309,8 @@ class CanonicalAudit(Audit):
             for name in RECORDED:
                 self.__dict__.pop(name, None)
             self.__dict__.update(saved)
+        refused = sorted(r for outcome in outcomes for r in outcome['refused'])
+        require(not refused, '%d fresh row(s) refused:\n%s' % (len(refused), '\n'.join(m for _, m in refused)))
         # Replay what the tasks recorded in the serial audit's order (rows by
         # entry, then the order within the row): dict insertion order and the
         # last value bound to a name are then the serial path's.
@@ -401,14 +403,20 @@ def _audit_group(task):
         handle.seek(start)
         data = handle.read(length)
     require(len(data) == length, 'Short fresh manifest read')
-    populations, results = {}, []
+    populations, results, refused = {}, [], []
     for entry, offset, size in rows:
         row = json.loads(data[offset-start:offset-start+size])
         require(row['entry'] == entry, 'Fresh manifest row placement differs')
         audit._current_entry = entry
-        results.append(audit.audit_row(row, path, populations))
+        # A refused row is reported with every other refused row of the
+        # build (audit_parallel raises them together), so one header change
+        # shows all the units and regions it moved.
+        try:
+            results.append(audit.audit_row(row, path, populations))
+        except ValueError as error:
+            refused.append((entry, str(error)))
     blobs = [(str(key), audit.sha(audit.blobs[key])) for key in audit.blobs.added]
-    return dict(group=index, rows=results, events=log, blobs=blobs)
+    return dict(group=index, rows=results, events=log, blobs=blobs, refused=refused)
 
 
 def write_manifest(path, manifest):

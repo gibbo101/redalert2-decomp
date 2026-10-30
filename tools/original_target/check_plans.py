@@ -217,7 +217,8 @@ def main():
             (base / 'build.stdout.log').write_text(result.stdout)
             (base / 'build.stderr.log').write_text(result.stderr)
             failed = failed or result.returncode != 0
-            lines += [l for l in output if 'whole_file_exact' in l or 'rror' in l][:6] or output[-3:]
+            # A refused fresh row names its entry, source and object ('[row ...]').
+            lines += [l for l in output if 'whole_file_exact' in l or 'rror' in l or '[row ' in l][:16] or output[-3:]
             for log in sorted((worktree / 'build' / 'check-build').glob('compile-*/compile.log')):
                 lines += sorted({l.strip() for l in log.read_text(errors='replace').splitlines() if 'error C' in l})[:4]
             # Keep the decisive full-file receipt and assembly/link diagnostics

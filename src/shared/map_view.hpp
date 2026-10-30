@@ -180,6 +180,9 @@ public:
     void Write_INI_0049D910(CCINIClass &ini);                                   // 0x0049D910 (Theater, Size, LocalSize; Write_Scenario_INI)
     void Read_INI_0049CFD0(CCINIClass &ini);                                    // 0x0049CFD0 (the map's sections of a scenario; Read_Scenario_INI)
     virtual bool unknown_slot39(Cell const &cell, HouseClass *house);                    // slot 39 0x0049A370
+    // Slot 38 (0x0049A0F0, virtual in shared/display.hpp), declared non-virtual so the light vtable keeps its layout;
+    // Map calls it directly (MapClass 0x00549C50).
+    bool unknown_slot38(Cell const &cell, HouseClass *house);
     void Unknown_00498F10(Cell const *list);                                    // 0x00498F10 (the placement cursor's cell list)
     // The pending placement (as shared/display.hpp; HouseClass::Manual_Place sets them).
 #ifdef RA2_SHARED_MAP_HPP
@@ -204,6 +207,8 @@ class RadarClass : public DisplayClass {
 public:
     virtual bool unknown_slot36(Cell const &cell, HouseClass *house);              // slot 36 0x0062FC80
     virtual void unknown_slot52(CoordStruct const &coord);                       // slot 52 0x00630320 (centres the tactical view on a coordinate)
+    // Slot 37 (0x0062FCA0, virtual in shared/radar.hpp), declared non-virtual as slot 38 above.
+    bool unknown_slot37(Cell const &cell, HouseClass *house, bool arg3);
     void Unknown_00631570(Cell const &cell);                              // 0x00631570
     void Unknown_00631910(TechnoClass *techno, Point2D point);                  // 0x00631910
     void Unknown_00631AF0(TechnoClass *techno, Point2D point);                  // 0x00631AF0

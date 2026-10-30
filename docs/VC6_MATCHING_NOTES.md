@@ -715,9 +715,14 @@ verified on the target.
   `inline` function of 252 units still expands. So a callee the original keeps out of line with budget to spare is
   probably wordier in its source than ours. Unit sizes measured in a caller: global store 6, out-of-line call
   statement 4, explicit pointer cast 1; `T *x = new X; Add(x);` is 2 smaller than `Add(new X)` when Add takes T const&.
-- Header hygiene (Span268): a new inline function or even an extra declaration in a widely included header can shift
-  instruction scheduling in unrelated units (an inline MapClass::Subzones in map_view.hpp swapped a load pair in
-  BaseClass::Read_INI 0x42C460). Keep single-use helpers file-local; every header change needs check_plans --build.
+- Type-count sensitivity (Hdr306; replaces "header hygiene", Span268): a few functions pick between equal-cost
+  instruction orders by VC6's internal allocation order, so any new declared type earlier in their unit (a new function
+  signature, member or free, or a new function-pointer typedef; not comments, names or a reused signature) can flip them,
+  non-monotonically (1-2 new types flipped 0x428370 at 7d270e22, 3-4 did not). Known victims: 0x428370 (path estimator,
+  until 29d3eb48), BaseClass::Read_INI 0x42C460. The full-build refusal now names the victim row and first differing
+  offset; reproduce by scoring that row in its concatenated population. Fixes, in order: land the header when the victim
+  is exact with it (other landings move the count); give the victim's unit the real declarations its own code needs; a
+  unit-local declaration in the one population that needs it. Never pad a header with dummy declarations (steering).
 - Union members vs pointer casts (Event274): reading an event payload as `*(long*)&Data.Bytes[n]` instead of a union
   member (`Data.LongsCell.Long1`) adds indirect memory expressions that change operand order and scheduling much later
   in the same function (EventClass::Execute's TIMING sum). If a late expression resists every local rewrite, look at

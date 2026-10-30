@@ -26,6 +26,17 @@ def require(condition, reason):
         raise ValueError(reason)
 
 
+def extent_difference(actual, expected, va):
+    """Where a fresh extent first differs from the original (for the refusal
+    message): offset, both lengths and a few bytes from each side."""
+    actual, expected = bytes(actual), bytes(expected)
+    first = next((i for i, (a, b) in enumerate(zip(actual, expected)) if a != b), min(len(actual), len(expected)))
+    if actual == expected:
+        return ' (bytes equal; recorded extent fingerprint differs)'
+    return ' at %08x+%x (fresh %d bytes, original %d; fresh %s, original %s)' % (
+        va, first, len(actual), len(expected), actual[first:first + 8].hex(), expected[first:first + 8].hex())
+
+
 def longest_prefix_binding(references, name):
     """The address a symbol-prefix binding gives `name`, or None.
 
@@ -738,6 +749,16 @@ class Audit:
         return self.audit_result(manifest_path, manifest, result, self.sha(self.read(manifest_path)))
 
     def audit_row(self, row, manifest_path, populations):
+        """Verify one accepted interval (see verify_row); a refusal names the
+        row: entry, method, source and compiler object."""
+        try:
+            return self.verify_row(row, manifest_path, populations)
+        except ValueError as error:
+            raise ValueError('%s [row %s %s, source %s, object %s]' % (
+                error, '%08X' % row['entry'] if isinstance(row.get('entry'), int) else row.get('entry'),
+                row.get('method'), row.get('source'), row.get('object'))) from None
+
+    def verify_row(self, row, manifest_path, populations):
         """Verify one accepted interval completely; return its result row.
 
         `populations` caches each owner's frozen population for the caller's
@@ -886,14 +907,15 @@ class Audit:
                 require(len(sites) == 1 and sites[0].operands[0].type == capstone.x86_const.X86_OP_IMM and sites[0].operands[0].imm == target, 'Original direct call/jump reference differs at %08x+%x (%s)' % (va, offset, target_symbol['name']))
             else:
                 sites = [i for i in instructions if (i.address + i.imm_offset == va + offset and i.imm_size == 4) or (i.address + i.disp_offset == va + offset and i.disp_size == 4)]
-                require(len(sites) == 1, 'DIR32 not at original operand boundary')
+                require(len(sites) == 1, 'DIR32 not at original operand boundary at %08x+%x (%s)' % (va, offset, target_symbol['name']))
                 operand_values = [o.imm & 0xffffffff for o in sites[0].operands if o.type == capstone.x86_const.X86_OP_IMM]
                 operand_values += [o.mem.disp & 0xffffffff for o in sites[0].operands if o.type == capstone.x86_const.X86_OP_MEM]
                 require(value in operand_values and self.pe.get_section_by_rva(target - self.base) is not None, 'Original DIR32 operand/section binding differs')
             struct.pack_into('<I', actual, offset, value)
             bindings.append(dict(offset=offset, kind=kind, symbol='$local' if local is not None else target_symbol['name'], target=target, addend=addend, resolved=value))
         require(bindings == row.get('relocations', []), 'Relocation receipt differs at %08x: %s' % (va, [(a, b) for a, b in zip(bindings, row.get('relocations', [])) if a != b][:2] or (len(bindings), len(row.get('relocations', [])))))
-        require(bytes(actual) == expected and self.sha(actual) == row['full_extent_sha256'], 'Complete compiler extent differs')
+        require(bytes(actual) == expected and self.sha(actual) == row['full_extent_sha256'],
+                'Complete compiler extent differs' + extent_difference(actual, expected, va))
         return dict(entry=va, body_bytes=body_size, padding_bytes=len(padding), full_extent_bytes=len(actual), boundary_confidence='Frozen independent analysis hypothesis; byte equality verified')
 
     def audit_result(self, manifest_path, manifest, result, manifest_sha256):

@@ -180,6 +180,42 @@ class CanonicalBuildTests(unittest.TestCase):
                     synthetic_object(b'\xc3',extra=('.data',b'X',0xc0100040))]:
             with self.subTest(obj=obj),self.assertRaises(ValueError):self.verify(self.row(),b'\xc3',obj)
 
+    def test_extent_refusal_names_row_unit_and_first_difference(self):
+        # A changed fresh extent names its entry, source, object and first
+        # differing offset, so a header change that moves an unrelated unit
+        # can be traced without bisecting.
+        original=b'\x33\xc0\xc3';row=self.row(original)
+        message=r'Complete compiler extent differs at 00401000\+1 \(fresh 3 bytes, original 3; fresh c9c3, original c0c3\)'
+        context=r'\[row 00401000 401000, source src/recovered/00401000.cpp, object .*fresh.obj\]'
+        with self.assertRaisesRegex(ValueError,message+' '+context):
+            self.verify(row,original,synthetic_object(b'\x33\xc9\xc3'))
+
+    def test_all_refused_fresh_rows_are_reported_together(self):
+        second=self.root/'src/recovered/00401001.cpp';second.write_text('void other() {}\n')
+        rows=[self.row(),dict(self.row(),entry=0x401001,method='401001',source='src/recovered/00401001.cpp',
+                              source_sha256=sha(second.read_bytes()),source_order=1,options=['/O2','/Ob2','/G6','/Gy'])]
+        original=b'\xc3\xc3'
+        for jobs in (2,1):
+            audit=CanonicalAudit.__new__(CanonicalAudit)
+            audit.repository=self.root;audit.base=0x400000;audit.catalog={'regions':rows}
+            audit.blobs={};audit.documents={};audit.coffs={};audit.validated_objects=set();audit.groups={}
+            audit.decoder=capstone.Cs(capstone.CS_ARCH_X86,capstone.CS_MODE_32);audit.decoder.detail=True
+            audit.original=lambda address,size: original[address-0x401000:address-0x401000+size]
+            audit.pe=SimpleNamespace(get_section_by_rva=lambda rva: object() if 0x1000<=rva<0x100000 else None)
+            audit.bounds={'p':({r['entry']:dict(entry='%08x'%r['entry'],ranges=[dict(start='%08x'%r['entry'],
+                               end_inclusive='%08x'%r['entry'],bytes_hex='c3')]) for r in rows},{})}
+            out=self.root/'out';out.mkdir()
+            groups=[]
+            for index,row in enumerate(rows):
+                path=out/('g%d.obj'%index);path.write_bytes(synthetic_object(b'\xcc'));groups.append(([row],path))
+            with self.assertRaises(ValueError) as caught:audit.verify_fresh(out,groups,jobs=jobs)
+            text=str(caught.exception)
+            self.assertTrue(text.startswith('2 fresh row(s) refused:\n'),text)
+            self.assertIn('[row 00401000 401000, source src/recovered/00401000.cpp',text)
+            self.assertIn('[row 00401001 401001, source src/recovered/00401001.cpp',text)
+            self.assertLess(text.index('00401000 401000'),text.index('00401001 401001'))
+            import shutil;shutil.rmtree(out)
+
     def test_direct_call_binding_and_unbound_refusal(self):
         target=0x402000;original=b'\xe8'+struct.pack('<i',target-0x401005)+b'\xc3'
         row=self.row(original);row['references']={'_target':target}
