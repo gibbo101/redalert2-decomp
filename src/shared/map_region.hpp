@@ -8,6 +8,8 @@
 #include "shared/vector_class.hpp"
 class MapRegionClass {
 public:
+    MapRegionClass(Cell origin); //0056D870 by-value packed Cell, nominal constructor hypothesis
+    void Count_Grid_Cells_0056dbd0();
     ~MapRegionClass(); // original0056D970 nondeleting destruction; nominal source ownership hypothesis
     bool Grow_Border_00570040(int steps); // physical AL0/1, RET4; name/bool intent hypotheses
     DynamicVectorClass<Cell> *Select_Separated_Cells_00576810(DynamicVectorClass<Cell> const &candidates); //operation/reference/constness hypotheses; EAXptr/RET4
@@ -32,13 +34,14 @@ public:
 };
 // A separate0x50-byte map-generation grid record; formal original name unknown.
 struct UnknownMapGenerationCell {
+    UnknownMapGenerationCell(); //0056D6C0; nominal source identity remains unknown
     ::Cell Position;
     unsigned char unknown_04[4];
     double unknown_08; // floating-view hypothesis: original ordered DWORD stores and584E36 FADDqword
-    unsigned char unknown_10[0x10];
+    double unknown_10, unknown_18; //0056D6C0 zero qword stores; type hypothesis
     double unknown_20; // original585240 initializes,5852C0 compares as x87qword
     double unknown_28; // same; operational names remain unknown
-    unsigned char unknown_30[8];
+    double unknown_30; //0056D6C0 zero qword stores; type hypothesis
     int RegionIndex;
     int unknown_3c;
     int unknown_40;
