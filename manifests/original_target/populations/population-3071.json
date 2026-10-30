@@ -4,8 +4,8 @@
     "id": "population-3071",
     "inventory_sha256": "5a54105ac4d2396e91e7dd736a986fdc3a01e711f8b049e7c463292adcbc9f85",
     "gaps_sha256": "cbaa6a9219c06dd16711e145013760b2ea0cd4030ca397cd9bfbb4e69e14ae20",
-    "historical_population_sha256": "b84a7e11f37663f44c7978026519f2a392e6a6956c4c99f3a38babbc5eeb1ff6",
-    "historical_acceptance_sha256": "c79bfa519f0283e00c8bf345030fd5cb4dd5c30f79dac25f879a218d441f82df"
+    "historical_population_sha256": "2ca8534ef37f2def8ea1c0f42dff7051258ec2f169f7e67dba70854b226c7029",
+    "historical_acceptance_sha256": "b53ad1c7c472b68d7d68460e086edc5359235b450c8fd641c1bc22f1862700bf"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9895,7 +9895,7 @@
     "?FUN_0059da40@seed_0059da40@@YAIXZ": 5888576,
     "?FUN_0059e220@seed_0059e220@@YAXXZ": 5890592,
     "?FUN_0059e230@seed_0059e230@@YIIH@Z": 5890608,
-    "?FUN_0059e240@Owner_0059e240@seed_0059e240@@QAEXII@Z": 5890624,
+    "?Set_Cursor@MonoClass@@QAEXHH@Z": 5890624,
     "?FUN_0059e260@Owner_0059e260@seed_0059e260@@QAEXIIII@Z": 5890656,
     "?FUN_0059e2e0@seed_0059e2e0@@YIEH@Z": 5890784,
     "?FUN_0059e370@Owner_0059e370@seed_0059e370@@QAEXI@Z": 5890928,
@@ -17892,7 +17892,7 @@
     "?unknown_cleanup_62e6e0@UnknownItem_006142f0@@QAEXXZ": 6481632,
     "?unknown_clear@UnknownOwnedList_0063f070@@QAEXXZ": 6549616,
     "?unknown_clear@UnknownStringList_007661c0@@QAEXXZ": 7758272,
-    "?unknown_clear_0059e290@UnknownTextGrid_0059e290@@QAEXXZ": 5890704,
+    "?Clear@MonoClass@@QAEXXZ": 5890704,
     "?unknown_clear_combo@@YIHPAUHWND__@@@Z": 6293488,
     "?unknown_clear_dialog_flag_74d780@@YIXI@Z": 7657344,
     "?unknown_clear_flag_ac1330@@YAXXZ": 7300704,
@@ -19103,7 +19103,6 @@
     "?unknown_rect_ac1210@@3PBVRect@@B": 11276816,
     "?unknown_rect_ae2ff0@@3VRect@@A": 11415536,
     "?unknown_red_mask_a763dc@OwnerDraw@@3GA": 10970076,
-    "?unknown_redraw_59ea90@UnknownTextGrid_0059e290@@QAEXHHHH@Z": 5892752,
     "?unknown_redraw_8523dc@@3_NA": 8725468,
     "?unknown_region_max_7e0b44@@3PAHA": 8260420,
     "?unknown_region_min_7e0b30@@3PAHA": 8260400,

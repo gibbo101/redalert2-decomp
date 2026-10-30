@@ -1,6 +1,7 @@
 // void MonoClass::Draw_Character(HDC dc, int x, int y) (0x0059E9D0)
 // Draws one cell, switching the device context's colours when its attribute
 // differs from the last one drawn (attribute 1 is inverse video).
+#include "shared/win32_gdi.hpp"
 #include "shared/mono_class.hpp"
 // @ref ?unknown_mono_text_color_a70de8@@3KA=00a70de8
 // @ref ?unknown_mono_back_color_a70e00@@3KA=00a70e00

@@ -1,5 +1,6 @@
 // void MonoClass::Refresh(int x, int y, int width, int height) (0x0059EA90)
 // Redraws a block of cells on the game window if this is the window on display.
+#include "shared/win32_gdi.hpp"
 #include "shared/mono_class.hpp"
 // @ref ?unknown_mono_enabled_a70f0a@@3_NA=00a70f0a
 // @ref ?unknown_mono_viewed_a70f0c@@3PAVMonoClass@@A=00a70f0c

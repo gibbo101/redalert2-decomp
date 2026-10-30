@@ -4,8 +4,8 @@
     "id": "population-3052",
     "inventory_sha256": "6d86a485a6093b5e009d67378276d490d3a524a38487026dad155b9b9d8b8d2d",
     "gaps_sha256": "276a54b7e5442a89e2ca655b00b73f0f83eb38641741917d3b1fcec42b65910b",
-    "historical_population_sha256": "f6d0056d2a27d967b2ef1e84075db46a7b19c3d1cd511a8b576cb5c23c1579ac",
-    "historical_acceptance_sha256": "21a44cbf2531536e746dbd8e35b2230a5e9a6ea3f8234bf5ebabb56b17673775"
+    "historical_population_sha256": "09ee174d7a72af00eebe69923bbb894935645e23b7b5889c59b2ccdea4c7cad4",
+    "historical_acceptance_sha256": "ae00313a8f8abc109d268e3f7b09262260e5f2cba3dce6729a85c43fb8a1e0d5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6374,7 +6374,7 @@
     "?FUN_00792ad4@seed_00792ad4@@YAXXZ": 7940820,
     "?FUN_00792a8e@seed_00792ad4@@YAXXZ": 7940750,
     "__imp__SetUnhandledExceptionFilter": 7971132,
-    "?unknown_redraw_59ea90@UnknownTextGrid_0059e290@@QAEXHHHH@Z": 5892752,
+    "?Refresh@MonoClass@@QAEXHHHH@Z": 5892752,
     "?unknown_text_buffer_a40a34@@3PADA": 10750516,
     "?unknown_text_capacity_a40a38@@3HA": 10750520,
     "?unknown_text_length_a40a3c@@3HA": 10750524,
@@ -6388,7 +6388,7 @@
     "?unknown_free_self_00407440@UnknownFreeable_00407440@@QAEXXZ": 4224064,
     "?unknown_select_list_item_by_data_005c7160@@YIHPAUHWND__@@H@Z": 6058336,
     "?unknown_send_word_pair_message_005e2010@@YIXPAUHWND__@@HH@Z": 6168592,
-    "?unknown_clear_0059e290@UnknownTextGrid_0059e290@@QAEXXZ": 5890704,
+    "?Clear@MonoClass@@QAEXXZ": 5890704,
     "?unknown_text_buffer_append_005cfd70@@YIXD@Z": 6094192,
     "?unknown_slot38@ObjectClass@@UAE_NXZ": 6106160,
     "?unknown_slot38@ObjectTypeClass@@UBEHXZ": 6118784,

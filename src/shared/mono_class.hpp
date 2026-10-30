@@ -4,7 +4,8 @@
 // 0x00A70F0A turns it on; 0x00A70F0C is the grid on display.
 #ifndef RA2_SHARED_MONO_CLASS_HPP
 #define RA2_SHARED_MONO_CLASS_HPP
-#include "shared/win32_gdi.hpp"
+struct HDC__;
+struct HWND__;
 #include "shared/rect.hpp"
 typedef unsigned short wchar_t;
 
@@ -19,23 +20,9 @@ class MonoClass {
 public:
     MonoClass(int handle);                                    // 0x0059E190
     int Get_Handle() const { return Handle; }                 // 0x0059E230
-    void Set_Cursor(int x, int y)                             // 0x0059E240
-    {
-        X = x;
-        Y = y;
-    }
+    void Set_Cursor(int x, int y);                         // 0x0059E240
     void Window(int x, int y, int width, int height);         // 0x0059E260
-    void Clear()                                              // 0x0059E290
-    {
-        for (int y = 0; y < 25; y++) {
-            for (int x = 0; x < 80; x++) {
-                Characters[x][y] = ' ';
-                Attributes[x][y] = 0;
-            }
-        }
-        Changed = true;
-        Refresh(0, 0, 80, 25);
-    }
+    void Clear();                                         // 0x0059E290
     bool Is_Changed() const { return Changed; }               // 0x0059E2E0
     void View();                                              // 0x0059E2F0
     void Set_Attribute(int attribute)                         // 0x0059E370
@@ -53,7 +40,7 @@ public:
     void Text_Print(char const *text, int x, int y, int attribute);   // 0x0059E8A0
     void Text_Print(wchar_t const *text, int x, int y, int attribute);   // 0x0059E8E0
     char Map_Character(char character) const;                // 0x0059E960
-    void Draw_Character(HDC dc, int x, int y);                // 0x0059E9D0
+    void Draw_Character(HDC__ *dc, int x, int y);                // 0x0059E9D0
     void Refresh(int x, int y, int width, int height);        // 0x0059EA90
 
     char Characters[80][25];            // +0x0000 by column, then row
@@ -71,13 +58,13 @@ public:
 };
 
 extern MonoClass *unknown_mono_viewed_a70f0c;  // 0x00A70F0C
-extern HWND unknown_mono_window_a70f10;        // 0x00A70F10
-extern HGDIOBJ unknown_mono_font_a70f14;       // 0x00A70F14
+extern HWND__ *unknown_mono_window_a70f10;        // 0x00A70F10
+extern void *unknown_mono_font_a70f14;       // 0x00A70F14
 extern int unknown_mono_height_a70ea0;         // 0x00A70EA0
 extern int unknown_mono_leading_a70eb0;        // 0x00A70EB0
 extern int unknown_mono_width_a70eb8;          // 0x00A70EB8
-extern DWORD unknown_mono_text_color_a70de8;   // 0x00A70DE8
-extern DWORD unknown_mono_back_color_a70e00;   // 0x00A70E00
+extern unsigned long unknown_mono_text_color_a70de8;   // 0x00A70DE8
+extern unsigned long unknown_mono_back_color_a70e00;   // 0x00A70E00
 
 extern "C" unsigned int __cdecl strlen(char const *string);
 #pragma intrinsic(strlen)
