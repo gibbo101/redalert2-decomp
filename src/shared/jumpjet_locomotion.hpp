@@ -36,6 +36,9 @@ public:
     virtual bool __stdcall Is_Moving_Now();                                     // 0x00530AE0
     virtual void __stdcall Mark_All_Occupation_Bits(int mark);                  // 0x00531250
 
+    void unknown_52fca0();              // 0x0052FCA0 (Process: a moving jumpjet takes off: full height ratio, the object facing taken, speeds cleared, target height; unless the house holds the locomotors, state 1)
+    int unknown_531140();               // 0x00531140 (the ground height to hold: under the object, or with speed the higher of it and one cell ahead, else their mean; bridges add the bridge height)
+
     // The linked type's [Jumpjet*] values (Link_To_Object copies them; the
     // height is at least twice the unit's geometry constant).
     int TurnRate;                       // +0x18 (JumpjetTurnRate)
