@@ -372,7 +372,9 @@ class EBolt;
 class UnitTypeClass : public TechnoTypeClass {
 public:
     int ArrayIndex;                             // +0xB90 index in UnitTypes (TechnoClass slot 55)
-    char unknown_b94[0xBAA - 0xB94];
+    char unknown_b94[0xBA6 - 0xB94];
+    bool Harvester;                             // +0xBA6 (as shared/unit_type.hpp)
+    char unknown_ba7[0xBAA - 0xBA7];
     bool DeployToFire;                          // +0xBAA
     char unknown_bab[0xBE0 - 0xBAB];
     int BurstDelay[4];                          // +0xBE0 (TechnoClass slot 187)

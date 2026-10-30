@@ -106,6 +106,7 @@
 | [classes/VoxelAnimTypeClass](../src/recovered/classes/VoxelAnimTypeClass/) | 18 | 3,560 | 18 | 0x004D3F10–0x0070EF40 |
 | [classes/TextPrint](../src/recovered/classes/TextPrint/) | 13 | 3,549 | 13 | 0x00497360–0x00498160 |
 | [classes/MSEngine](../src/recovered/classes/MSEngine/) | 40 | 3,527 | 39 | 0x0058FD90–0x005B3ED0 |
+| [classes/FlyLocomotionClass](../src/recovered/classes/FlyLocomotionClass/) | 30 | 3,465 | 30 | 0x004BC110–0x004BFCC0 |
 | [classes/BulletTypeClass](../src/recovered/classes/BulletTypeClass/) | 21 | 3,455 | 21 | 0x004644E0–0x004D3ED0 |
 | [classes/FactoryClass](../src/recovered/classes/FactoryClass/) | 25 | 3,427 | 21 | 0x004B90A0–0x004D3750 |
 | [classes/WorldDominationTour__Voices](../src/recovered/classes/WorldDominationTour__Voices/) | 15 | 3,369 | 15 | 0x007317A0–0x00732A40 |
@@ -123,7 +124,6 @@
 | [classes/PowerClass](../src/recovered/classes/PowerClass/) | 16 | 2,801 | 16 | 0x0061C450–0x0061D220 |
 | [classes/MapSelectData](../src/recovered/classes/MapSelectData/) | 9 | 2,758 | 9 | 0x005AFF10–0x005B0980 |
 | [classes/BaseClass](../src/recovered/classes/BaseClass/) | 15 | 2,729 | 15 | 0x0042BF70–0x0042CB70 |
-| [classes/FlyLocomotionClass](../src/recovered/classes/FlyLocomotionClass/) | 29 | 2,717 | 29 | 0x004BC110–0x004BFCC0 |
 | [classes/AnimFile](../src/recovered/classes/AnimFile/) | 18 | 2,716 | 18 | 0x00423F90–0x00424BC0 |
 | [classes/ScrollClass](../src/recovered/classes/ScrollClass/) | 13 | 2,701 | 13 | 0x0040D140–0x0066AC60 |
 | [classes/PlayerProfile](../src/recovered/classes/PlayerProfile/) | 8 | 2,624 | 7 | 0x00738670–0x007395B0 |
@@ -143,13 +143,13 @@
 | [classes/ParticleSystemTypeClass](../src/recovered/classes/ParticleSystemTypeClass/) | 19 | 2,360 | 19 | 0x004D4090–0x00620EC0 |
 | [classes/TagTypeClass](../src/recovered/classes/TagTypeClass/) | 27 | 2,325 | 27 | 0x006B44F0–0x006B4ED0 |
 | [classes/IsometricTileClass](../src/recovered/classes/IsometricTileClass/) | 15 | 2,320 | 15 | 0x0040C690–0x00528260 |
+| [classes/WalkLocomotionClass](../src/recovered/classes/WalkLocomotionClass/) | 35 | 2,292 | 35 | 0x0071DE00–0x0071FEE0 |
 | [classes/TaskForceClass](../src/recovered/classes/TaskForceClass/) | 23 | 2,275 | 23 | 0x004D3910–0x006B71B0 |
 | [classes/MSVQAnim](../src/recovered/classes/MSVQAnim/) | 10 | 2,268 | 10 | 0x005ADBA0–0x005AFDF0 |
 | [classes/TerrainTypeClass](../src/recovered/classes/TerrainTypeClass/) | 22 | 2,265 | 22 | 0x004D3B90–0x006E5AE0 |
 | [classes/EMPulseClass](../src/recovered/classes/EMPulseClass/) | 17 | 2,249 | 12 | 0x004B4B60–0x004B5410 |
 | [classes/MissionClass](../src/recovered/classes/MissionClass/) | 43 | 2,236 | 42 | 0x004CDDE0–0x00595130 |
 | [classes/BuildingLightClass](../src/recovered/classes/BuildingLightClass/) | 19 | 2,228 | 19 | 0x004332F0–0x004D2F50 |
-| [classes/WalkLocomotionClass](../src/recovered/classes/WalkLocomotionClass/) | 34 | 2,222 | 34 | 0x0071DE00–0x0071FEE0 |
 | [classes/CD](../src/recovered/classes/CD/) | 9 | 2,216 | 9 | 0x0046E4A0–0x00715300 |
 | [classes/ScriptTypeClass](../src/recovered/classes/ScriptTypeClass/) | 19 | 2,212 | 19 | 0x004D3A10–0x00669310 |
 | [containers](../src/recovered/containers/) | 18 | 2,201 | 18 | 0x0042B620–0x00682580 |
@@ -188,6 +188,7 @@
 | [classes/TriColorGaugeClass](../src/recovered/classes/TriColorGaugeClass/) | 5 | 1,605 | 5 | 0x004D0630–0x004D0CD0 |
 | [classes/MSPCXAnim](../src/recovered/classes/MSPCXAnim/) | 9 | 1,538 | 9 | 0x005AF5F0–0x005AFEB0 |
 | [classes/MSFadeAnim](../src/recovered/classes/MSFadeAnim/) | 4 | 1,526 | 4 | 0x005ACDB0–0x005AFD10 |
+| [classes/MechLocomotionClass](../src/recovered/classes/MechLocomotionClass/) | 19 | 1,525 | 19 | 0x005916D0–0x00593310 |
 | [classes/SmudgeClass](../src/recovered/classes/SmudgeClass/) | 15 | 1,517 | 15 | 0x004D3290–0x00687B00 |
 | [classes/Dial8Class](../src/recovered/classes/Dial8Class/) | 5 | 1,504 | 4 | 0x00496D30–0x00497320 |
 | [classes/CampaignClass](../src/recovered/classes/CampaignClass/) | 14 | 1,503 | 14 | 0x00465450–0x004D37D0 |
@@ -196,7 +197,6 @@
 | [classes/GadgetClass](../src/recovered/classes/GadgetClass/) | 28 | 1,479 | 28 | 0x00483560–0x004CF6A0 |
 | [classes/MultiplayerSiege](../src/recovered/classes/MultiplayerSiege/) | 11 | 1,479 | 7 | 0x005AB5A0–0x005ABBA0 |
 | [classes/VectorClass_SubzoneTrackingStruct](../src/recovered/classes/VectorClass_SubzoneTrackingStruct/) | 8 | 1,468 | 7 | 0x0056ABF0–0x0056CC40 |
-| [classes/MechLocomotionClass](../src/recovered/classes/MechLocomotionClass/) | 18 | 1,455 | 18 | 0x005916D0–0x00593310 |
 | [classes/ScoreFontClass](../src/recovered/classes/ScoreFontClass/) | 9 | 1,448 | 9 | 0x00667840–0x006683D0 |
 | [classes/EditClass](../src/recovered/classes/EditClass/) | 11 | 1,447 | 9 | 0x004A5550–0x004B2F20 |
 | [classes/GaugeClass](../src/recovered/classes/GaugeClass/) | 13 | 1,446 | 13 | 0x004D00F0–0x0053AB60 |
@@ -1321,7 +1321,7 @@
 | [classes/exception](../src/recovered/classes/exception/) | 1 | 13 | 0 | 0x0078B1E7–0x0078B1E7 |
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 
-1314 directories, 15738 regions. Generated by `tools/original_target/source_index.py`.
+1314 directories, 15741 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
