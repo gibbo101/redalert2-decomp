@@ -687,6 +687,18 @@ public:
         new (Items + index) Wstring(text);
         ++Count;
     }
+    // Published ArrayList::add and addTail operations, with the actual element reference.
+    char Add_At(Wstring &text,int index) {
+        if(index>Count) index=Count;
+        if(index>=Capacity) Grow();
+        if(Count>=Capacity) Grow();
+        if(index<Count) memmove(Items+index+1,Items+index,(Count-index)*sizeof(Wstring));
+        new(Items+index) Wstring(text);
+        ++Count;
+        return 1;
+    }
+    int Length() const { return Count; }
+    char Add_Tail(Wstring &text) { return Add_At(text,Length()); }
     void Prepend(Wstring const &text) {
         int index = 0;
         if (index > Count) index = Count;
