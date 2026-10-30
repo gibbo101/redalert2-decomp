@@ -56,6 +56,7 @@ extern "C" __declspec(dllimport) BSTR __stdcall SysAllocString(wchar_t const *st
 // Subobjects whose code lives in other units (sizes from the constructor;
 // names are hypotheses).
 #include "shared/house_nodes.hpp"
+#include "shared/region.hpp"
 class UnknownHouseTracker {
 public:
     UnknownHouseTracker();                  // 0x0070C440
@@ -230,6 +231,8 @@ public:
     static int __fastcall Find_Index(char const *name);
     int unknown_4e3660(TechnoTypeClass const *type, int arg2, int arg3);// 0x004E3660 (-1: none left; hypothesis; AircraftClass destructor)
     void AI_Supers_004f3910();
+    bool Can_Make_Money_004e27e0();
+    void Spend_Money_004e5280(int money);
     int AI_Unit();                                         // 0x004E9C90 (RA's AI_Unit: picks unknown_5540, a harvester first)
     int AI_Building();                                     // 0x004E9660 (RA's AI_Building: picks unknown_553c from the base plan)
     void unknown_func_4f2350();                            // 0x004F2350 (AI_Building: a base node of type -3)
@@ -383,6 +386,8 @@ public:
     // serial player leaves).
     void unknown_func_4f4070();
     void unknown_func_4f5be0();                            // 0x004F5BE0 (the base building action when the base plan is empty)
+    int Check_Raise_Money_004e8d80();
+    FactoryClass *Factory_Producing_This_004e4090(TechnoTypeClass const *type) const;
     FactoryClass *unknown_func_4eb580(int kind, bool naval, int arg3); // 0x004EB580 (the factory per kind)
     // Starts producing a type in the house's factory for its kind (made when
     // missing): 0 on success, 3 when refused (0x004E5E30; name after TS, from
@@ -600,7 +605,7 @@ public:
     CDTimerClass<FrameTimerClass> unknown_56b4;           // +0x056B4
     CDTimerClass<FrameTimerClass> unknown_56c0;           // +0x056C0
     IUnknown *unknown_56cc;                               // +0x056CC (saved through OleSaveToStream)
-    int unknown_56d0[0x4204];                             // +0x056D0 (cleared by the constructor)
+    RegionClass unknown_56d0[0x4204];                             // +0x056D0 (cleared by the constructor)
     FixedString<21> IniName;                              // +0x15EE0 (the [Houses] entry value; the type's ID)
     FixedString<32> unknown_15ef5;                        // +0x15EF5 (a name; empty when made)
     wchar_t UIName[21];                                   // +0x15F16 (the type's UIName)

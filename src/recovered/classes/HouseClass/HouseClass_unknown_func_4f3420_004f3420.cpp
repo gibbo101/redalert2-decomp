@@ -11,7 +11,7 @@
 void HouseClass::unknown_func_4f3420()
 {
     for (int region = 0; region < 0x4204; region++) {
-        unknown_56d0[region] = 0;
+        unknown_56d0[region].Threat = 0;
     }
     for (int index = Technos.Count() - 1; index >= 0; index--) {
         TechnoClass *techno = Technos[index];

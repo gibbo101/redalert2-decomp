@@ -18,7 +18,7 @@ void HouseClass::unknown_func_4e5dc0(int cell, int amount)
     int index = 0;
     for (int count = 9; count != 0; count--, index++) {
         int value = amount >> unknown_adjacent_shift_7d9fc4[index];
-        int *entry = &unknown_56d0[unknown_adjacent_offset_7d9fa0[index] + cell];
+        int *entry = &unknown_56d0[unknown_adjacent_offset_7d9fa0[index] + cell].Threat;
         if (negative) {
             *entry -= value;
         } else {

@@ -27,6 +27,8 @@ struct ScoutStruct {
 class BaseNodeClass {
 public:                      // (layout hypothesis)
     BaseNodeClass() {}
+    // Original004F6BE0 node reset; constructor identity remains unproven.
+    BaseNodeClass *unknown_4f6be0(int type, ::Cell const &cell);
     BaseNodeClass(int type, ::Cell cell) : Type(type), Cell(cell) {}
     // User copy constructor, member-wise (VectorClass<BaseNodeClass>::Fetch 0x0042CBE0 copies the byte separately).
     BaseNodeClass(BaseNodeClass const &other)

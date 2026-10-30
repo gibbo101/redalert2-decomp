@@ -331,6 +331,8 @@ public:
     int unknown_80;                         // +0x80
     bool unknown_84;                        // +0x84
     bool unknown_85;                        // +0x85
+    // Unadjusted position copy at004F3F5A; nonvirtual dispatch is an inline-only hypothesis.
+    CoordStruct Position_Coord_004f3f40() const { return Coord; }
     CoordStruct Coord;                      // +0x88
     LineTrail *unknown_94;                  // +0x94
 };

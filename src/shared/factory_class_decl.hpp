@@ -27,6 +27,8 @@ public:
  bool unknown_4b9440(TechnoTypeClass *type, HouseClass *owner, unsigned char flag); // owner-approved narrow declaration
  void Set_Object_004B95E0(TechnoClass *object);
  bool Suspend_004B9630(bool value);
+ // Inline owner accessor hypothesis, original owner read004E40AF.
+ HouseClass *Get_House_004e4090() { return Owner; }
  TechnoClass *Get_Object() const; //0x004B9930
  bool Is_Complete_004B9900() const;
  int Cost_Per_Tick_004B9950() const;
