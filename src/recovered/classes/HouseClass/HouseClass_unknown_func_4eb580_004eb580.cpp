@@ -6,25 +6,29 @@
 
 FactoryClass *HouseClass::unknown_func_4eb580(int kind, bool naval, int arg3)
 {
+    FactoryClass *factory;
     switch (kind) {
     case 15:
     case 16:
-        return unknown_52dc;
+        factory=unknown_52dc;
+        break;
     case 1:
     case 40:
-        if (naval) {
-            return unknown_52e4;
-        }
-        return unknown_52e0;
+        if (naval) factory=unknown_52e4;
+        else factory=unknown_52e0;
+        break;
     case 6:
     case 7:
-        if (arg3 == 5) {
-            return unknown_52f8;
-        }
-        return unknown_52e8;
+        if (arg3==5) factory=unknown_52f8;
+        else factory=unknown_52e8;
+        break;
     case 2:
     case 3:
-        return unknown_52d8;
+        factory=unknown_52d8;
+        break;
+    default:
+        factory=0;
+        break;
     }
-    return 0;
+    return factory;
 }

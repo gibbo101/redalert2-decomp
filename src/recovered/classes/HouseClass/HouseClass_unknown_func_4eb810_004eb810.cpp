@@ -1,3 +1,5 @@
+// Original House unit keeps the only flag-setter call at004E5EFC; exhaustive flag-store audit finds no inlined copy.
+#pragma auto_inline(off)
 // void HouseClass::unknown_func_4eb810(int kind, bool naval, int arg3, bool value) (0x004EB810)
 // Sets the flag per object kind to a value.
 // Cases are object kinds: 1 unit, 2/3 aircraft, 6/7 building, 15/16
@@ -33,3 +35,5 @@ void HouseClass::unknown_func_4eb810(int kind, bool naval, int arg3, bool value)
         break;
     }
 }
+
+#pragma auto_inline(on)

@@ -416,6 +416,11 @@ $RA2_PYTHON -B tools/original_target/ghidra_seed_pass.py --no-analysis --base-pr
   --project .../recovery-pass6a/ghidra-project --output .../inventory/seeded-pass6a \
   --pre-script ApplyKnowledge.java SYMBOLS.jsonl - MEMBERS.json(= {}) APPLY-OUT named
 # A trial or newer pass can be put ahead of the defaults with RA2_INVENTORY_PASSES=dir[:dir...].
+# Seed pass 6b (2026-10-30): same pre-script on a pass5 copy with layouts and members:
+#   ApplyKnowledge.java SYMBOLS.jsonl build/pass6b/types.h build/pass6b/members-rendered.json OUT fun
+# (types.h: build/pass6b/render_layouts.py over clang -cc1 -triple i686-pc-windows-msvc -fdump-record-layouts of each
+# class's shared header; 'fun' keeps accepted callees named FUN_ for seed binding). inventory/seeded-pass6b = pass5 rows
+# + OUT/decompiled for the typed members, class prefix stripped from headers. Use: RA2_INVENTORY_PASSES=.../seeded-pass6b.
 # RTTI class inventory, docs/CLASS_HIERARCHY.md and manifests/rtti_classes.json
 $RA2_PYTHON -B tools/original_target/class_inventory.py --write-docs
 # Move class-owned flat sources into src/recovered/classes/<Class>/
