@@ -33,6 +33,7 @@
 #include "shared/building_type_class.hpp"
 #include "shared/super.hpp"
 #include "shared/rect.hpp"
+#include "shared/progress_timer.hpp"
 
 class InfantryClass;
 class Matrix3D;
@@ -127,6 +128,7 @@ struct UnknownBuildingSlot105 {
 class BuildingClass : public TechnoClass {
 public:
     void Unknown_00450CB0(BulletClass *bullet, bool flag); // owner0200Z, declaration only
+    void Leave_Rubble_0043eba0(); // 0043EBA0: rubble footprint and crate beneath
     BuildingClass(BuildingTypeClass *type, HouseClass *house);         // 0x00438CE0
     void Set_Turret_Animation_Frame_0043bd40(int frame); // 0x0043BD40, nonvirtual
     BuildingClass(NoInitClass const &noinit);                         // 0x00438C20
@@ -343,8 +345,7 @@ public:
     int unknown_4cc;                        // +0x4CC (-1)
     int unknown_4d0;                        // +0x4D0 (-1)
     AbstractClass *unknown_4d4;             // +0x4D4 (swizzled)
-    CDTimerClass<FrameTimerClass> unknown_4d8;  // +0x4D8
-    int unknown_4e4;                        // +0x4E4
+    ProgressTimerClass<FrameTimerClass> GateTimer; // +0x4D8, total duration +0x4E4
     UnknownBuilding4E8 *unknown_4e8;        // +0x4E8 (owned)
     int unknown_4ec;                        // +0x4EC
     int unknown_4f0;                        // +0x4F0

@@ -39,7 +39,7 @@ BuildingClass::BuildingClass(BuildingTypeClass *type, HouseClass *house) :
     unknown_4cc(-1),
     unknown_4d0(-1),
     unknown_4d4(0),
-    unknown_4e4(0),
+    GateTimer(0),
     unknown_4e8(0),
     unknown_4ec(0),
     unknown_4f0(0),

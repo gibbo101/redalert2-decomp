@@ -12,6 +12,8 @@ static inline bool Is_List_End(Cell const *offset)
     return offset->X == 0x7FFF && offset->Y == 0x7FFF;
 }
 
+// Sole original direct caller in this unit: 00449BC7.
+#pragma auto_inline(off)
 bool BuildingClass::unknown_449930()
 {
     Cell cell = unknown_slot104();
@@ -31,3 +33,5 @@ bool BuildingClass::unknown_449930()
     }
     return found;
 }
+
+#pragma auto_inline(on)

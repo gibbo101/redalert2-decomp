@@ -14,7 +14,7 @@ BuildingClass::BuildingClass(NoInitClass const &noinit) :
     TechnoClass(noinit),
     unknown_420(noinit),
     unknown_448(noinit),
-    unknown_4d8(noinit),
+    GateTimer(noinit),
     unknown_5a0(noinit)
 {
 }
