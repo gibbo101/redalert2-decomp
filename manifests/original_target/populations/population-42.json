@@ -4,8 +4,8 @@
     "id": "population-42",
     "inventory_sha256": "a6e83d732959f1475aeb0c48bcfb990e9e75a3c13374eabebd19ad7f943521f1",
     "gaps_sha256": "d61d0da403b90e2409ab0cfa93e9dac80f1c06f0588399193bd138173c322f82",
-    "historical_population_sha256": "f7e5717becf98f9b93dc2b12896c69a97ed4e836e68e2a5da2303ee50ccfcea8",
-    "historical_acceptance_sha256": "56c77e5d8b753b29422f87b429bfdcc104a65325556db37a39d6d8b03ed0fa21"
+    "historical_population_sha256": "875e5890c19d0f4260ccd11495645bd9c5422a24573758e4f7047a1c37d2cad9",
+    "historical_acceptance_sha256": "2f41d53dfb7527ccdef36b4cf8f08b0ea16f1aba279a842e22c27ef04ba2524c"
   },
   "references": {
     "?FUN_0041b3f0@": 4305904,
@@ -110,7 +110,7 @@
     "_DAT_00a70a24": 10947108,
     "?FUN_0056dba0@": 5692320,
     "?Set_Cell_Region_Index_0056e970@@": 5695856,
-    "?FUN_0058db50@": 5823312,
+    "?Not_Equal_0058db50@Cell@@": 5823312,
     "?FUN_0058e6c0@": 5826240,
     "?FUN_0058e830@": 5826608,
     "?FUN_005ad8c0@": 5953728,
@@ -2388,7 +2388,11 @@
     "__real@8@4002a000000000000000": 7983408,
     "__real@8@3fe5ca000000ca000000": 8019448,
     "__real@8@4006e100000000000000": 7983416,
-    "__real@8@3fe0c0000000c0000000": 8019456
+    "__real@8@3fe0c0000000c0000000": 8019456,
+    "?Not_Equal_0058db50@Cell@@QBEHABV1@@Z": 5823312,
+    "??GCoordStruct@@QBE?AU0@ABU0@@Z": 4409584,
+    "__unlink": 7886498,
+    "__real@4@3ff9a3d70a0000000000": 8053468
   },
   "regions": [
     {
@@ -4417,8 +4421,8 @@
     {
       "entry": 5823312,
       "method": "0058db50",
-      "symbol": "?FUN_0058db50@Owner_0058db50@seed_0058db50@@QAEIPAF@Z",
-      "symbol_prefix": "?FUN_0058db50@",
+      "symbol": "?Not_Equal_0058db50@Cell@@QBEHABV1@@Z",
+      "symbol_prefix": "?Not_Equal_0058db50@Cell@@",
       "options": [
         "/O2",
         "/Ob2",
@@ -4431,13 +4435,13 @@
       "full_extent_bytes": 48,
       "full_extent_sha256": "e9c975f22247d1c4235be00783b95d4416103c4f082b36c27662f2c9b3d65085",
       "relocations": [],
-      "source_sha256": "1a16baf79827f2db1ebfde3e85565d50d906e5431447467595cd1a6b700d1968",
-      "source": "src/recovered/0058db50.cpp",
+      "source_sha256": "e356c9cfef522d2c12f6574d568e71c408a88ff721505d3977db337da0540845",
+      "source": "src/recovered/classes/Cell/Cell_Not_Equal_0058db50.cpp",
       "source_order": 6988,
       "population": "population-42",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
+      "source_quality_family": "hand-written"
     },
     {
       "entry": 5826240,

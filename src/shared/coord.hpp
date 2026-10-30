@@ -88,6 +88,7 @@ struct UnknownCoord434820 : CoordStruct {
 
 class Cell {
 public:
+    int Not_Equal_0058db50(Cell const &other) const; //fullEAX0/1,thiscall/RET4
     // Original full-EAX comparison at004FEF20; thiscall/RET4.
     int Equal_004fef20(Cell const &other) const;
     void unknown_47e2b0(); // 0047E2B0 empty RET; nonconst/nonvirtual coordinate operation hypothesis

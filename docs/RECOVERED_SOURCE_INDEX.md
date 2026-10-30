@@ -10,7 +10,7 @@
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 194 | 52,196 | 194 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 171 | 47,172 | 171 | 0x00438A60–0x004D3450 |
-| (discovery: address-named) | 1448 | 43,185 | 13 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1447 | 43,150 | 13 | 0x004010A0–0x00797198 |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 128 | 42,374 | 128 | 0x0049ED10–0x0056A9D0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 188 | 35,894 | 185 | 0x0041B370–0x006D9750 |
@@ -447,6 +447,7 @@
 | [classes/DynamicVectorClass_MultiplayerGameMode_ptr](../src/recovered/classes/DynamicVectorClass_MultiplayerGameMode_ptr/) | 6 | 449 | 3 | 0x005B9000–0x005B97F0 |
 | [classes/DynamicVectorClass_PlanningBranchClass_ptr](../src/recovered/classes/DynamicVectorClass_PlanningBranchClass_ptr/) | 6 | 449 | 4 | 0x0061A980–0x0061BB00 |
 | [classes/DynamicVectorClass_PlanningMemberClass_ptr](../src/recovered/classes/DynamicVectorClass_PlanningMemberClass_ptr/) | 6 | 449 | 4 | 0x0061A920–0x0061BA60 |
+| [classes/Cell](../src/recovered/classes/Cell/) | 4 | 447 | 4 | 0x0042AD30–0x0058DB50 |
 | [classes/DynamicVectorClass_AngerStruct](../src/recovered/classes/DynamicVectorClass_AngerStruct/) | 5 | 446 | 3 | 0x004F6C60–0x004F8580 |
 | [classes/DynamicVectorClass_ScoutStruct](../src/recovered/classes/DynamicVectorClass_ScoutStruct/) | 5 | 446 | 3 | 0x004F6CD0–0x004F8620 |
 | [classes/ApplicationClass](../src/recovered/classes/ApplicationClass/) | 12 | 444 | 10 | 0x00426B00–0x00426E50 |
@@ -546,7 +547,6 @@
 | [classes/DynamicVectorClass_IsometricTileTypeClass__TileInsertType_ptr](../src/recovered/classes/DynamicVectorClass_IsometricTileTypeClass__TileInsertType_ptr/) | 6 | 417 | 4 | 0x00528590–0x0052ED40 |
 | [classes/DynamicVectorClass_ObjectTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_ObjectTypeClass_ptr/) | 6 | 417 | 4 | 0x005D5750–0x005D8340 |
 | [classes/VectorClass_DiscreteDistributionClass_AITriggerTypeClass___DistributionObject_AITriggerTypeClass_ptr](../src/recovered/classes/VectorClass_DiscreteDistributionClass_AITriggerTypeClass___DistributionObject_AITriggerTypeClass_ptr/) | 4 | 417 | 4 | 0x006C03C0–0x006C05B0 |
-| [classes/Cell](../src/recovered/classes/Cell/) | 3 | 412 | 3 | 0x0042AD30–0x004FEF20 |
 | [classes/VectorClass_PlanningMemberClass_ptr](../src/recovered/classes/VectorClass_PlanningMemberClass_ptr/) | 6 | 412 | 4 | 0x0061A970–0x0061BA10 |
 | [classes/Quaternion](../src/recovered/classes/Quaternion/) | 9 | 409 | 9 | 0x00622160–0x00622640 |
 | [classes/BlowPipe](../src/recovered/classes/BlowPipe/) | 3 | 408 | 3 | 0x00435690–0x00435800 |
