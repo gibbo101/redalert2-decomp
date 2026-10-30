@@ -12,6 +12,7 @@
 #include "shared/matrix3d.hpp"
 
 class CellClass;
+class ShadowControlClass;
 
 class Surface;
 class ObjectClass;
@@ -94,6 +95,8 @@ public:
     CoordStruct Unknown_006A2BF0(Point2D const &point); // original ECX Tactical, hidden CoordStruct result, RET8
     Point2D Unknown_006A27A0(CoordStruct const &coord);  // 0x006A27A0 (the screen point of a coordinate; hidden Point2D result, RET8)
     Cell Unknown_006A6BD0(Point2D const &point);
+    // The cell drawn over a coordinate: scans back along the view diagonal for the cell whose raised ground covers it (0x006A6A50).
+    Cell Coord_To_Cell(CoordStruct const &coord);
     void Unknown_006A2CB0(CoordStruct const &coord, int arg2);   // 0x006A2CB0 (TeamClass script handler 0x006BC4C0: looks at a coordinate; hypothesis)
     int Unknown_006AA840(int arg1);                 // 0x006AA840 (display slot 41; -1 when none)
     void Unknown_006A8B70(int arg1, int arg2);      // 0x006A8B70 (display slot 41)
@@ -112,6 +115,15 @@ public:
     // Sets the view rectangle (0x006A65A0; DisplayClass slot 42).
     void Unknown_006A65A0(Rect const &rect);
     void Unknown_006A6640(Point2D const &point);    // 0x006A6640 (sets the view position, clamped)
+
+    bool Blit_Tiles();                              // 0x006A6570 (the tile surface's tactical area onto the drawing surface)
+    int Get_Cell_Height(CoordStruct const &coord);  // 0x006A70D0
+    void Add_Shadow_Control(ShadowControlClass control);    // 0x006A7130 (a heap copy into TacticalLists::ShadowControls)
+    CellClass *Find_Bridge_Owner_Cell(Cell const &cell);    // 0x006A71F0 (no caller in the executable)
+    Point2D Clamp_Pixel_To_Tactical(Point2D const &pixel);  // 0x006A8B10
+    bool Is_Cell_Visible(Cell const &cell);         // 0x006A9120
+    Cell Clamp_Cursor_To_Tactical(Cell const &cell, Cell const *list);  // 0x006AA970
+    void Reset_Dirty_Rectangles();                  // 0x006AAF80 (empties TacticalLists::DirtyAreas)
 
     // Layout from the constructor 0x006A24B0 (init-list stores, then the body).
     short unknown_24;               // +0x24 cleared by the constructor

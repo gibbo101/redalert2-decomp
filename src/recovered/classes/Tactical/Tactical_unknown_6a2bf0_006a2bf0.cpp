@@ -7,8 +7,6 @@
 // @ref ?unknown_rect_abe560@@3VRect@@A=00abe560
 // @ref ??D@YI?AUVector3@@ABVMatrix3D@@ABU0@@Z=00591380
 
-extern Rect unknown_rect_abe560;
-
 CoordStruct Tactical::Unknown_006A2BF0(Point2D const &point)
 {
     int x = point.X;

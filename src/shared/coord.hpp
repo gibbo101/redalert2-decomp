@@ -18,6 +18,8 @@ struct CoordStruct {
         return CoordStruct(X - coord.X, Y - coord.Y, Z - coord.Z);
     }
     // Member-wise sum (AnimClass::Center_Coord, 0x00420D90).
+    // Member-wise difference in place (Tactical::Coord_To_Cell 0x006A6A50 steps back with it; its Z store stays).
+    CoordStruct &operator-=(CoordStruct const &coord) { X -= coord.X; Y -= coord.Y; Z -= coord.Z; return *this; }
     CoordStruct operator+(CoordStruct const &coord) const
     {
         return CoordStruct(X + coord.X, Y + coord.Y, Z + coord.Z);
