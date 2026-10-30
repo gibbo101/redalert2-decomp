@@ -112,7 +112,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall unknown_slot09() = 0;
     virtual void __stdcall unknown_slot10() = 0;
     virtual HRESULT __stdcall unknown_slot11(char const *text) = 0;
-    virtual void __stdcall unknown_slot12() = 0;
+    virtual HRESULT __stdcall unknown_slot12(User *users,char const *options) = 0;
     virtual HRESULT __stdcall unknown_slot13() = 0;
     virtual HRESULT __stdcall unknown_slot14(User *user, char const *text) = 0;
     virtual HRESULT __stdcall unknown_slot15(char const *text) = 0;
@@ -1106,7 +1106,7 @@ extern int unknown_a40230;
 extern IPXAddressClass unknown_address_a3fbc8;
 extern PlayerProfile *unknown_profile_b28cc4;
 void Unknown_005c9700();
-bool Unknown_0075a920();
+bool __fastcall Unknown_0075a920();
 extern "C" wchar_t *__cdecl wcscpy(wchar_t *destination, wchar_t const *source);
 extern "C" unsigned long __stdcall ntohl(unsigned long value);
 
