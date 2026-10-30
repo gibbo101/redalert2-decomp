@@ -35,27 +35,7 @@
 // 0x0059EBA0).
 class FileClass;
 
-// A voxel section tailer (hypothesis: +0x0C the HVA scale multiplier,
-// +0xA0..+0xA2 the section's x/y/z size).
-struct UnknownVoxelTailer {
-    char unknown_00[0x0C];
-    float unknown_0c;                   // +0x0C
-    char unknown_10[0xA0 - 0x10];
-    unsigned char unknown_a0;           // +0xA0
-    unsigned char unknown_a1;           // +0xA1
-    unsigned char unknown_a2;           // +0xA2
-};
-
-class UnknownPairFirst {
-public:
-    UnknownPairFirst(FileClass *file, int arg2 = 0);    // 0x00719080 (a .VXL library; hypothesis)
-    ~UnknownPairFirst();                // 0x007190C0
-    UnknownVoxelTailer *unknown_719860(int section, int arg2);    // 0x00719860
-    bool unknown_00;                    // +0x00 load failed (hypothesis)
-    int unknown_04;                     // +0x04 section count (hypothesis)
-    char unknown_08[0x1C - 0x08];       // (0x1C bytes: operator new size)
-};
-
+#include "shared/unknown_pair_first.hpp"
 #include "shared/unknown_pair_second.hpp"
 
 class UnknownObjectPair {

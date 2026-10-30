@@ -30,6 +30,11 @@ struct Vector3 {
     float Z;    // +0x08
 };
 
+inline Vector3 operator+(Vector3 const &a, Vector3 const &b)
+{
+    return Vector3(a.X + b.X, a.Y + b.Y, a.Z + b.Z);
+}
+
 inline Vector3 operator*(Vector3 const &vector, float scale)
 {
     return Vector3(vector.X * scale, vector.Y * scale, vector.Z * scale);
