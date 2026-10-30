@@ -662,3 +662,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x428AE0 97.44, Get_Movement_Cost 0x427110 97.04, Optimize_Moves 0x4290C0 60.09, Try_Diagonal_Shortcut 0x428CF0 63.38
   (0x42ADD0 member-sum copy is unaccepted; byte-exact from the shared body once a unit emits it).
 - Locomotion after Loco269: Fly Stop_Moving 0x4BC730 96.82, Hover Draw_Matrix 0x4FBBF0 95.80, Rocket Move_To 59.32.
+- Event.CPP after Event278 (Execute and seven ctors landed 3bdf9770): MEGAMISSION_F ctor 0x4B61F0 (136 B, not even a seed)
+  97.67 (one store [esi+0x1B] scheduled after +0x17; Event278/w, plan-r2.json). Execute keeps hypothesis casts on slot
+  259/268 and (BuildingClass *) until a rename spec retypes them. Event.CPP's header-static source now includes the unit's
+  full include list after its geometry includes (include order decides Execute's inline accessors).
