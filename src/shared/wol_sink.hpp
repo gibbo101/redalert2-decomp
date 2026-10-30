@@ -133,7 +133,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall unknown_slot36(int index,char const **nick,char const **password) = 0;
     virtual HRESULT __stdcall unknown_slot37(int index,char const *nick,char const *password,int mangle) = 0;
     virtual void __stdcall unknown_slot38() = 0;
-    virtual void __stdcall unknown_slot39() = 0;
+    virtual HRESULT __stdcall unknown_slot39(char const *text) = 0;
     virtual void __stdcall unknown_slot40() = 0;
     virtual void __stdcall unknown_slot41() = 0;
     virtual HRESULT __stdcall unknown_slot42(char const *text) = 0;
@@ -156,6 +156,8 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall unknown_slot59(User *users,unsigned short const *message) = 0;
     virtual HRESULT __stdcall unknown_slot60(unsigned short const *message) = 0;
     virtual HRESULT __stdcall unknown_slot61(User *users,unsigned short const *message) = 0;
+    virtual void __stdcall unknown_slot62() = 0;
+    virtual HRESULT __stdcall unknown_slot63(int update,int count) = 0;
 };
 
 // The WOL download object (only the first method is called here).
