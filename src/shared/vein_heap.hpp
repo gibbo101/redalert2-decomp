@@ -6,11 +6,13 @@
 #define RA2_SHARED_VEIN_HEAP_HPP
 
 #include "shared/coord.hpp"
+#include "shared/debug_printf.hpp"
 
 // One vein node (8 bytes; the rules' +0xD4 of them per monster; the heap
 // orders them by the float at +4; hypothesis).
 struct UnknownVeinNode {
     UnknownVeinNode() {}
+    UnknownVeinNode(::Cell const &cell) : Position(cell) {}
     ::Cell Position;                        // +0x00 the vein cell
     float Key;                              // +0x04
 };
@@ -89,6 +91,92 @@ public:
         }
     }
     float Key_At(int index) const { return Array[index]->Key; }
+    // Takes the node at the item's cell out of the heap (inlined by
+    // 0x00712300).
+    // Each repair is followed by a check that faults when a slot points
+    // outside the nodes ever inserted.
+    bool Remove_Matching(UnknownVeinNode const &item)
+    {
+        for (int index = 1; index <= Count; index++) {
+            if (Array[index]->Position == item.Position) {
+                if (index == Count) {
+                    Count--;
+                } else {
+                    UnknownVeinNode *last = Array[Count];
+                    float key = last->Key;
+                    int parent = index >> 1;
+                    Count--;
+                    if (index != 1 && Array[parent]->Key >= key) {
+                        while ((unsigned)index > 1) {
+                            if (Array[parent]->Key <= key) {
+                                break;
+                            }
+                            Array[index] = Array[parent];
+                            index = parent;
+                            parent = index >> 1;
+                        }
+                        Array[index] = last;
+                        for (int check = 1; check <= Count; check++) {
+                            if (Array[check] < Lowest || Array[check] > Highest) {
+                                volatile int zero = 0;
+                                zero = 1 / zero;
+                            }
+                        }
+                    } else {
+                        Array[index] = last;
+                        Sift_Down(index);
+                        for (int check = 1; check <= Count; check++) {
+                            if (Array[check] < Lowest || Array[check] > Highest) {
+                                volatile int zero = 0;
+                                zero = 1 / zero;
+                            }
+                        }
+                    }
+                }
+                Debug_Printf("Exiting Remove_Matching\n");
+                return true;
+            }
+        }
+        Debug_Printf("Exiting Remove_Matching\n");
+        return false;
+    }
+    // Reads what Save writes, turning each node index back into a pointer
+    // (inlined by Load_All 0x00711E60).
+    bool Load(IStream *stream, UnknownVeinNode *nodes)
+    {
+        if (FAILED(stream->Read(&Count, sizeof(Count), 0))) {
+            return false;
+        }
+        if (FAILED(stream->Read(&Capacity, sizeof(Capacity), 0))) {
+            return false;
+        }
+        for (int slot = 0; slot < Capacity; slot++) {
+            int index;
+            if (FAILED(stream->Read(&index, sizeof(index), 0))) {
+                return false;
+            }
+            Array[slot] = &nodes[index];
+        }
+        return true;
+    }
+    // Writes the count, the capacity and each slot as a node index (inlined by
+    // Save_All 0x00712150, which ignores the result).
+    bool Save(IStream *stream, UnknownVeinNode *nodes)
+    {
+        if (FAILED(stream->Write(&Count, sizeof(Count), 0))) {
+            return false;
+        }
+        if (FAILED(stream->Write(&Capacity, sizeof(Capacity), 0))) {
+            return false;
+        }
+        for (int index = 0; index < Capacity; index++) {
+            int node = Array[index] - nodes;
+            if (FAILED(stream->Write(&node, sizeof(node), 0))) {
+                return false;
+            }
+        }
+        return true;
+    }
     // Takes the node with the lowest Key off the heap.
 #ifdef RA2_VEIN_HEAP_REMOVE_MIN_IMPLEMENTATION
     UnknownVeinNode *Remove_Min();

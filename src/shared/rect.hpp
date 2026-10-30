@@ -44,6 +44,9 @@ struct Point2D {
 
     // Member-wise difference in place (DisplayClass::TacticalClass::Action 0x0049AE70).
     Point2D &operator-=(Point2D const &point) { X -= point.X; Y -= point.Y; return *this; }
+    // Member-wise difference by value (VeinholeMonsterClass 0x00711AA0: the Y
+    // difference is computed first, as a constructor argument).
+    Point2D operator-(Point2D const &point) const { return Point2D(X - point.X, Y - point.Y); }
     int Length() const; // 0047D060, integer table-sqrt vector length
     // Member-wise comparison (the Point2D vectors of MSChoice.cpp,
     // 0x005B1930/0x005B1A90).
