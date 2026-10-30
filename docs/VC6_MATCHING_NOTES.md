@@ -708,3 +708,5 @@ verified on the target.
   pending extra sites only divide one level, while each charged inline helper level subtracts its size and divides
   again. Out-of-line probe calls only raise S (the root budget). Measured sizes: CoordStruct ctor 41-52,
   CoordStruct::operator- 71-88. Lab tools: build/class-work/Inline248/lab/.
+- Stack packing: wrapping a function's main part in a scope block (an if/else or a guarding if) decides VC6's frame
+  slot sharing; a unit's .data must reproduce the original exactly, including statics between used ones (Scroll250).
