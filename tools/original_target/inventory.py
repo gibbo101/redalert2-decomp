@@ -11,13 +11,30 @@ REPOSITORY = Path(__file__).resolve().parents[2]
 INVENTORY = REPOSITORY / 'private/original-target-20261020/inventory'
 # Newest discovery pass first; earlier passes supply entries it dropped.
 PASSES = [INVENTORY / 'seeded-pass5', INVENTORY / 'seeded-pass3', INVENTORY / 'seeded-pass2', INVENTORY]
-# Trial or newer passes ahead of the frozen ones (colon-separated directories).
-PASSES = [Path(p) for p in os.environ.get('RA2_INVENTORY_PASSES', '').split(':') if p] + PASSES
+def split_inventory_paths(value, separator=os.pathsep):
+    """Native path lists; retain legacy colon lists without splitting drive letters."""
+    if separator != ';':
+        return [p for p in value.split(separator) if p]
+    result=[]
+    for native in value.split(';'):
+        start=0
+        for i,char in enumerate(native):
+            drive = i == start+1 and native[start:start+1].isalpha()
+            if char == ':' and not drive:
+                if native[start:i]:result.append(native[start:i])
+                start=i+1
+        if native[start:]:result.append(native[start:])
+    return result
+
+
+# Trial/newer passes precede frozen ones. Native separators also support
+# Windows absolute paths; legacy relative colon lists remain valid.
+PASSES = [Path(p) for p in split_inventory_paths(os.environ.get('RA2_INVENTORY_PASSES', ''))] + PASSES
 
 
 class Inventory:
-    def __init__(self, passes=PASSES):
-        self.passes = [Path(p) for p in passes]
+    def __init__(self, passes=None):
+        self.passes = [Path(p) for p in (PASSES if passes is None else passes)]
         self._rows = {}
 
     def rows(self, directory):

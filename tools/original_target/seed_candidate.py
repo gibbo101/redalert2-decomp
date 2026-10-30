@@ -1994,7 +1994,7 @@ _IMPORTS = []
 def import_facts():
     """Recorded import signatures and IAT slots; no inferred platform ABI."""
     if not _IMPORTS:
-        path = Path(__file__).resolve().parents[2] / 'manifests/imports.json'
+        path = REPOSITORY / 'manifests/imports.json'
         _IMPORTS.append({i['name']: i for i in json.loads(path.read_bytes())['imports']} if path.exists() else {})
     return _IMPORTS[0]
 
@@ -2492,7 +2492,37 @@ def indexed_switch_artifacts(body, entry, params=(), facts=None):
     return body, notes
 
 
-def seed(entry, inventory, accepted, _import_aliases=True):
+_TYPED_SCHEMAS = {}
+
+
+def typed_schema():
+    from seed_shared_types import SharedTypes
+    directory = (REPOSITORY/'src/shared').resolve()
+    fingerprint = tuple((p.name,p.stat().st_size,p.stat().st_mtime_ns) for p in sorted(directory.glob('*.hpp')))
+    old = _TYPED_SCHEMAS.get(directory)
+    if old is None or old[0] != fingerprint:
+        old = (fingerprint,SharedTypes(directory));_TYPED_SCHEMAS[directory]=old
+    return old[1]
+
+
+def earlier_uncontradicted_inventory(entry, inventory, owner=None):
+    from inventory import Inventory
+    from seed_typed import exported_owner
+    paths = list(inventory.passes)
+    chosen = next((i for i,p in enumerate(paths) if (p/'decompiled'/('%08x.c'%entry)).is_file()),None)
+    if chosen is None:return None
+    for i in range(chosen+1,len(paths)):
+        text = (paths[i]/'decompiled'/('%08x.c'%entry))
+        if not text.is_file():continue
+        try:ret,conv,name,params,span=parse_header(text.read_text())
+        except ValueError:continue
+        prior_owner=exported_owner(params,param_parts) if conv=='__thiscall' else None
+        if owner is not None and prior_owner not in (None,owner):continue
+        return Inventory(paths[i:])
+    return None
+
+
+def seed(entry, inventory, accepted, _import_aliases=True, _typed=True):
     text = inventory.decompiled(entry)
     if text is None:
         raise ValueError('No Ghidra export for %08x' % entry)
@@ -2502,6 +2532,44 @@ def seed(entry, inventory, accepted, _import_aliases=True):
             (REPOSITORY / 'src/shared/ghidra_types.hpp').read_text(), re.M))
         text, alias_imports = recorded_direct_imports(text, import_facts(), parse_header, stack_bytes, macros)
     ret, conv, name, params, (start, end) = parse_header(text)
+    typed = None
+    if _typed and conv == '__thiscall':
+        from seed_typed import exported_owner, adapt_seed, placeholder_types, TypedRefusal
+        declared = exported_owner(params,param_parts)
+        if not params:
+            prior = earlier_uncontradicted_inventory(entry,inventory)
+            if prior is not None:
+                ptext=prior.decompiled(entry)
+                if parse_header(ptext)[1] != '__thiscall':
+                    return ('// Ghidra supplied thiscall without a receiver; earlier frozen free-function export retained.\n'+
+                            seed(entry,prior,accepted,_import_aliases=_import_aliases,_typed=False))
+        if declared:
+            schema=typed_schema()
+            if declared in schema.records:
+                hint=schema.method_at(entry)
+                rtti=_owners().owner(entry)
+                actual=schema.constructor_owner(entry) or (rtti[0] if rtti and rtti[0] in schema.records else declared)
+                receiver=param_parts(params[0])[1]
+                fields=re.findall(r'\b'+re.escape(receiver)+r'\s*->\s*(\w+)',code_view(text[end:]))
+                contradicted=actual!=declared and any(f!='vftable_0' for f in fields)
+                if contradicted:
+                    prior=earlier_uncontradicted_inventory(entry,inventory,actual)
+                    if prior is None:raise TypedRefusal('Typed owner contradicts shared constructor/RTTI: '+declared+' vs '+actual)
+                    ptext=prior.decompiled(entry);pr,pc,pn,pp,ps=parse_header(ptext)
+                    raw=seed(entry,prior,accepted,_import_aliases=_import_aliases,_typed=False)
+                    variables=variable_types(ptext[ps[1]:],pp)
+                    result,_=adapt_seed(raw,ptext,entry,actual,schema,variables,
+                                       lambda body:cast_assignments(body,pp),placeholder_types(prior.passes,entry))
+                    return ('// Rejected contradictory typed layout '+declared+'; shared headers identify '+actual+'.\n'
+                            '// Earlier frozen byte views retained; no fields invented for the contradictory owner.\n'+result)
+                static=hint[1] if hint and hint[1].static else None
+                if static and (len(params)!=1 or ',' in static.parameters):
+                    prior=earlier_uncontradicted_inventory(entry,inventory)
+                    if prior is not None:
+                        return ('// Rejected forced instance layout: shared header declares '+static.declaration+'\n'+
+                                seed(entry,prior,accepted,_import_aliases=_import_aliases,_typed=False))
+                    raise TypedRefusal('Static shared signature contradicts supplied instance parameters')
+                typed=(actual,schema,static)
     conv, params = fit_convention(conv, params, stack_cleanup(inventory.function(entry)[1]),
                                   conv == '__thiscall')
     body = nonnegative_tests(reindent(text[end:].strip()))
@@ -2614,12 +2682,19 @@ def seed(entry, inventory, accepted, _import_aliases=True):
         try:
             check_generated_import_names(declarations + [preamble], alias_declarations)
         except AliasRefusal:
-            return seed(entry, inventory, accepted, _import_aliases=False)
-    return '\n'.join(documentation(entry, inventory, text[start:end].strip(), notes) +
+            return seed(entry, inventory, accepted, _import_aliases=False, _typed=_typed)
+    result = '\n'.join(documentation(entry, inventory, text[start:end].strip(), notes) +
                      [MARKER, INCLUDE, '', 'namespace seed_%08x {' % entry, '',
                       preamble, ''] +
                      (declarations + [''] if declarations else []) +
                      [definition.rstrip(), '', '}  // namespace seed_%08x' % entry, ''])
+
+    if typed:
+        owner,schema,static=typed
+        variables=variable_types(text[end:],params)
+        result,_=adapt_seed(result,text,entry,owner,schema,variables,
+                            lambda body:cast_assignments(body,params),placeholder_types(inventory.passes,entry),static)
+    return result
 
 
 _OWNERS = []
