@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Survey251 fresh unrecovered-bytes unit map (UNITS.md) and sweep of the top unit; TechFoot253 TechnoClass and FootClass members; Inline252 applying the /Ob2 inline rule (VC6_MATCHING_NOTES) to Init 0x5173C0 and other inline-budget plateaus; Display254 Scroll.CPP rest (0x669960, 0x669650, 0x669EC0) and Power/Radar/GScreen misses. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Cell255 CellClass (Cell.CPP 0x470490-0x47D2C0); TechFoot253 TechnoClass and FootClass members; Loco256 Jumpjet/Ship and other locomotion classes; Display254 Scroll.CPP rest (0x669960, 0x669650, 0x669EC0) and Power/Radar/GScreen misses. All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -62,7 +62,7 @@ a plan names: codex2's d/ is about 30 GB). Bounds rounds (r18, r26, r28, r31, r3
 (0x715230), Cd124 (0x715300), Coop122 (fill combo 0x5B70B0, fill list 0x5B71E0; 0x5B8490 open), Seed123 and
 Seed125 (zero bytes; Tactical family parked; 0x6AAFD0 is a register-tie near miss for Windows). Their misses
 are in OPEN_MISSES.md.
-Next-lane candidates (2026-10-30; unit table build/class-work/Survey170/UNITS.md): WorldDom.cpp rest (OPEN_MISSES), LdPrgMgr 0x535BF0 (4 KB), MainLoop 0x540C20 (3.5 KB).
+Next-lane candidates (2026-10-30; fresh map build/class-work/Survey251/UNITS.md: unclassified tail 0x775B60-0x781FF0 (triage first), VQAClass 0x717CE0, 0x426E70-0x42BCF0, Ini.CPP, Beacon span, VeinholeMonster, Score.CPP, UndoInfo, Unit.CPP; unit table build/class-work/Survey170/UNITS.md): WorldDom.cpp rest (OPEN_MISSES), LdPrgMgr 0x535BF0 (4 KB), MainLoop 0x540C20 (3.5 KB).
 Parked (OPEN_MISSES has resume points): netshare.cpp (Netshare247), ownrdraw.cpp (rest large or blocked, OwnrDraw242 map), Init.CPP (0x5173C0, Select_Game, Init_Game; Init219/227/234/238), Event.CPP (Event231), Startup.CPP WinMain (Startup232; needs SEH acceptance support: __except_handler3 0x7852D4, fs:[0] __except_list, per-compile $T scope table at 0x7AB990 - the only game-code SEH user), UICmnds.cpp, WDTSel.cpp, PlanMgr.cpp, TAction.CPP, Session.CPP,
 Skirmish.cpp, NullDlg Select_Serial_Dialog. Pending landings: none (Mac lanes deliver on hand-back; Windows last r65).
 
@@ -71,7 +71,7 @@ lead 1 was told to finish or freeze its in-flight delivery and stop (messages/20
 workers codex1-4 work under WORKER.md (the Mac lane brief adapted for Windows), one unit each, reserved on BOARD.md:
 codex1 pathfinding + map generation 0x570000-0x58FFFF; codex2 Queue.CPP (Print_CRCs with the MonoClass prerequisite,
 Queue_AI); codex3 BuildingClass; codex4 House.CPP, plus seed tooling between units. codex5/6 unused. Two workers run on
-Astra and two on Sol with identical briefs. Westwood reference clones for them are at C:\ra2\reference\ (copied without .git). Deliveries arrive as deliveries/codexN-rN.md pointing at a frozen
+Astra and two on Sol with identical briefs. Westwood reference clones for them are at C:\ra2\reference\ (copied without .git). 2026-10-30 20:24: the shared C:\ra2\repo\private\compiler and private\original-target-20261020 were emptied by a recursive delete through junctions (most likely the removal of the lead worktree C:\Users\Mike\.codex\worktrees\ra2-seed-lead, whose private folders were junctions; check trees under C:\ra2\c have the same junctions). Restored from the Mac (game.exe hash verified, 2719 inventory passes). Lead r66 (map reset 0x57BEA0, 545 B) was lost with that worktree. Never delete a Windows worktree or check tree recursively without removing its junctions first. Deliveries arrive as deliveries/codexN-rN.md pointing at a frozen
 build\class-work\codexN\d\rN (BASE, README with body bytes, shared/, plans, unit/); land them with land_round.sh
 after rewriting the C:/ prefix, as for lead packets. The owner keeps assignments/codexN-next.md current for hand-backs.
 First line for each new Codex thread (N = 1..4):
@@ -79,7 +79,7 @@ First line for each new Codex thread (N = 1..4):
 Bytes landed per worker per day (first two days; body bytes from each delivery README):
 | Date | codex1 | codex2 | codex3 | codex4 |
 | --- | ---: | ---: | ---: | ---: |
-| 2026-10-30 | 0 | 0 | 0 | 0 |
+| 2026-10-30 | 110 | 0 | 35 | 0 |
 | 2026-10-31 | | | | |
 BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
 so MPCooperative functions that call a base body need separate units.

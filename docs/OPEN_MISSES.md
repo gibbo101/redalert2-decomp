@@ -605,3 +605,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   (or eax,-1 before the pops), 0x73C480 96.05 and 0x75C980 89.19 (lea ecx before push eax: implicit conversions
   reproduce it), 0x73CB80 needs WolUserArray::Get inline (row 0x766020 in population-2411), 0x752210 static Wstring[16]
   table + atexit 0x752710. Not reached: OnPrivateGameOptions 0x761C50, OnUserList, OnFind, OnChannelJoin (2.3 KB+ each).
+- Inline-rule application after Inline252 (zero bytes; NOTES, spend.py/stores.py/probe.py): Init 0x5173C0 needs caller S
+  +21..27 under unsigned operator[] (int operator[] is exactly +46 via Add's conversion; Init_Options then needs a form 3
+  units smaller); named locals shrink S here. PlanMgr 0x617AF0 90.00 needs ~100-190 more budget spent before the help
+  calls (most promising). TAction Execute: 6b1270/6b19a0 are over the non-inline cap in the original (wordier sources);
+  case bodies differ too. UICmnds 6D00 95.53. WDTSel ctor: maybe inline Wstring/WideString dtors in the original headers.

@@ -710,3 +710,8 @@ verified on the target.
   CoordStruct::operator- 71-88. Lab tools: build/class-work/Inline248/lab/.
 - Stack packing: wrapping a function's main part in a scope block (an if/else or a guarding if) decides VC6's frame
   slot sharing; a unit's .data must reproduce the original exactly, including statics between used ones (Scroll250).
+- Auto-inline size cap (Inline252, lab with real CL): a function NOT declared inline is never auto-inlined above about
+  175 IL units (27 constant stores expand, 28 do not; 23/24 with parameter stores), whatever the caller's budget; an
+  `inline` function of 252 units still expands. So a callee the original keeps out of line with budget to spare is
+  probably wordier in its source than ours. Unit sizes measured in a caller: global store 6, out-of-line call
+  statement 4, explicit pointer cast 1; `T *x = new X; Add(x);` is 2 smaller than `Add(new X)` when Add takes T const&.
