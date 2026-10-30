@@ -15,5 +15,6 @@ class TagClass;
 
 extern DynamicVectorClass<TagClass *> unknown_tags_866160;      // 0x00866160 (LogicTags)
 extern DynamicVectorClass<TagClass *> unknown_tags_866238;      // 0x00866238 (MapTags)
+extern int unknown_tag_position_a35e24;                         // 0x00A35E24 (MapTriggerID: the map tag being processed; FootClass slot 93)
 
 #endif

@@ -221,7 +221,9 @@ public:
     void Unknown_00631ED0();                                                    // 0x00631ED0 builds the radar's table and surfaces (load path)
 
     // The radar's data the other units read, at shared/radar.hpp's offset.
-    char unknown_11b8[0x1220 - 0x11B8];
+    CoordStruct *unknown_11b8;                                                  // +0x11B8 the coordinate of the waypoint being dragged (as shared/display.hpp; FootClass slot 93)
+    CoordStruct unknown_11bc;                                                   // +0x11BC where it is dragged to (FootClass slot 93 takes its cell)
+    char unknown_11c8[0x1220 - 0x11C8];
     DynamicVectorClass<Cell> unknown_1220;                                      // +0x1220 the cells to redraw
 
     // Forgets the cells waiting for a radar redraw (inline in Read_Scenario_INI;
