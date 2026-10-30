@@ -9,10 +9,12 @@
 // @ref ?Unknown_00476AC0@UnknownCellClass@@QAEPAV1@H@Z=00476ac0
 // @ref ?Unknown_004717B0@UnknownCellClass@@QAEPAVBuildingClass@@XZ=004717b0
 
+inline CoordStruct Position_Coord_00450950(ObjectClass const &object) { return object.Coord; }
+
 int BuildingClass::unknown_4508c0()
 {
     int mask = 0;
-    CoordStruct coord = Coord;
+    CoordStruct coord = Position_Coord_00450950(*this);
     UnknownCellClass *cell = Map_Cell(coord);
     for (int facing = 0; facing < 8; facing += 2) {
         BuildingClass *building = cell->Unknown_00476AC0(facing)->Unknown_004717B0();

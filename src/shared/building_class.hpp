@@ -128,6 +128,11 @@ struct UnknownBuildingSlot105 {
 class BuildingClass : public TechnoClass {
 public:
     void Unknown_00450CB0(BulletClass *bullet, bool flag); // owner0200Z, declaration only
+    void Update_Firestorm_Wall_00450950(); // 00450950 Firestorm wall state and crossing damage
+    void Repair_AI_0044b9b0(); // 0044B9B0 AI repair/sale and paid repair ticks
+    void Create_Damage_Fires_004395f0(); // 0x004395F0: damage-fire animations at art offsets
+    void Factory_AI_0044b480(); // 0x0044B480: production completion and AI factory selection
+    int Flush_For_Placement_0044a3d0(TechnoClass const *object, Cell const &cell); // original46-byte helper, nominal qualifiers hypothetical
     void Leave_Rubble_0043eba0(); // 0043EBA0: rubble footprint and crate beneath
     BuildingClass(BuildingTypeClass *type, HouseClass *house);         // 0x00438CE0
     void Set_Turret_Animation_Frame_0043bd40(int frame); // 0x0043BD40, nonvirtual

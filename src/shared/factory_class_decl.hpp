@@ -24,6 +24,7 @@ public:
  int Production_Rate_004B9780() const;
  virtual void Detach(AbstractClass *target,bool all=true);
  virtual HRESULT __stdcall GetClassID(GUID *id);
+ bool unknown_4b9440(TechnoTypeClass *type, HouseClass *owner, unsigned char flag); // owner-approved narrow declaration
  void Set_Object_004B95E0(TechnoClass *object);
  bool Suspend_004B9630(bool value);
  TechnoClass *Get_Object() const; //0x004B9930
