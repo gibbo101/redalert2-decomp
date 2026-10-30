@@ -1544,7 +1544,7 @@
       },
       {
         "path": "src/shared/map_region.hpp",
-        "sha256": "9ef80e9e3b4c6b5cd740705a9ab4fe3704dd40d3fdcd18890222b575b41302f5"
+        "sha256": "e0018363706c02b3c32250d88f4974bf631a7e5772e86c98cd077b44c5935223"
       },
       {
         "path": "src/shared/conn_man.hpp",
@@ -1768,7 +1768,7 @@
       },
       {
         "path": "src/shared/unknown_map_generator.hpp",
-        "sha256": "ab2ae6541f201b2f18239e0115bb6f4b6eb256010ccd35bbde46e688aba1e1c9"
+        "sha256": "1136a3f0a75fe89df1a2a3c8b6efcb2268c6dcc7753d09cd73ff4b7ac97f3984"
       },
       {
         "path": "src/shared/wdt_map.hpp",
@@ -5125,7 +5125,8 @@
     "population-3175",
     "population-3176",
     "population-3177",
-    "population-3178"
+    "population-3178",
+    "population-3179"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -8564,7 +8565,8 @@
     ["population-3174", 2],
     ["population-3175", 1],
     ["population-3177", 5],
-    ["population-3178", 1]
+    ["population-3178", 1],
+    ["population-3179", 3]
   ],
   "shards": {
     "population-01": "eed08c810c67f40078588f2a2c784303e06ee7c52e5e689455a93fb27bd15938",
@@ -10995,6 +10997,7 @@
     "population-3176": "d32dd01cd7735d7cff28893e6e4e491c6244733e5ac17b4eed81c74fcd0909b6",
     "population-3177": "06c484b0419ce34d8536bd39f2135fd7c17d37ee45b1bf8f6dba84bb522cb239",
     "population-3178": "031d2073557291dc4a945cf6c210a8a32c5b6d760dde2fb4e17cd632b24f36da",
+    "population-3179": "f73804f96833defd7d17f0c643bb6ff14f47aa98f9b65b0c902df1cdd37c518f",
     "population-318": "979885163e6d2adaad2395c7352f512c0c16a90a99d86cf94f2576adf20bf3b8",
     "population-319": "52a1b13c60ffb6b8aca511673c2b3403df663a14d74ea3cb5e0f6ab5d1e5d95a",
     "population-32": "ea6f98f83808b01a5663c1ea1402181dcf6dd8d76164e8b45a6227e740eaaa8d",

@@ -9,6 +9,10 @@
 class BuildingTypeClass;
 class UnknownMapGenerator {
 public:
+    void Generate_Rural_Areas_00589890();
+    void Generate_Rural_Buildings_00589ac0(Cell const &position);
+    void Generate_Rural_Units_00589f00(Cell const &position);
+    bool Generate_Rural_Roads_0058a1b0(Cell const &position);
     double Angle_Score_00582970(Cell const &from,Cell const &to,double heading);
     void Cleanup_0057ace0();
     void unknown_005835f0();
