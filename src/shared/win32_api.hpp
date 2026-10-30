@@ -122,6 +122,7 @@ WIN32_IMPORT BOOL WINAPI GetCursorPos(POINT *point);
 WIN32_IMPORT BOOL WINAPI GetClientRect(HWND window, RECT *rect);
 WIN32_IMPORT BOOL WINAPI EndDialog(HWND window, int result);
 WIN32_IMPORT BOOL WINAPI ClientToScreen(HWND window, POINT *point);
+WIN32_IMPORT BOOL WINAPI SetCursorPos(int x, int y);
 WIN32_IMPORT BOOL WINAPI GetWindowRect(HWND window, RECT *rect);
 WIN32_IMPORT BOOL WINAPI SetRect(RECT *rect, int left, int top, int right, int bottom);
 WIN32_IMPORT BOOL WINAPI InvalidateRect(HWND window, RECT const *rect, BOOL erase);

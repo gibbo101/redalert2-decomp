@@ -18,6 +18,7 @@
 #include "shared/event.hpp"
 #include "shared/techno.hpp"
 #include "shared/house.hpp"
+#include "shared/planning_mouse.hpp"
 
 // Two lists Planning.cpp defines (0x00A76648 the planned events, 0x00A76700 the
 // technos with a planning token). They are static members here rather than of
@@ -197,9 +198,6 @@ PlanningNodeClass *__stdcall Planning_Pick_Node(int x, int y);
 int Planning_Selection_Kind();
 // Marks a node queued and appends it to the queue list (0x00614650).
 void __fastcall Planning_Queue_Node(PlanningNodeClass *node);
-// The mouse button went down / came up at a screen point (0x00617860, 0x006178A0).
-void __stdcall Planning_Mouse_Down(int x, int y);
-void __stdcall Planning_Mouse_Up(int x, int y);
 // The coordinate an event points at, or the object's (0x00619810).
 CoordStruct __fastcall Planning_Event_Or_Object_Coord(EventClass const &event, AbstractClass *object);
 // A techno's house colour faded (0x00619CA0 by 0x50, 0x00619D50 by 100).
