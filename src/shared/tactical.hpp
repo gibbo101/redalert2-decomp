@@ -17,6 +17,10 @@ class ShadowControlClass;
 class Surface;
 class ObjectClass;
 
+// Draws the fogged objects inside a screen rectangle (0x004C1010, the
+// FoggedObject unit's; TibSun ::Draw_Fogged_Objects; the rectangle in ECX).
+void __fastcall Draw_Fogged_Objects(Rect const &rect);
+
 // A flag at 0x00AC133D (0x006F76B0) and the handler 0x006F71E0 that the
 // selection band gives each object type's ID while the flag is set
 // (hypotheses).
@@ -127,6 +131,19 @@ public:
     // Redraws the overlays of the view, the panned strips, the flagged cells and the dirty areas (0x006A3B20).
     void Render_Overlays(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw);
     void Draw_Overlays(Rect const &area);           // 0x006A7350
+    // The render passes: each redraws its layer over the view or the panned strips, the flagged cells and the
+    // dirty areas (TibSun Tactical::Render_*).
+    void Render_Terrain(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw);     // 0x006A4350
+    void Render_Tiles(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw);       // 0x006A3670
+    void Render_Tile_Shadows(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw); // 0x006A38D0
+    // Draws the iso tiles inside an area (0x006A7BA0), those of one cell (0x006A8560) and the tile shadows
+    // inside an area (0x006A8240) (TibSun Tactical::Draw_Tiles / Draw_Tile_Shadows).
+    void Draw_Tiles(Rect const &area, Rect const &cliprect);
+    void Draw_Tiles(Cell const &cell, Rect const &cliprect);
+    void Draw_Tile_Shadows(Rect const &area, Rect const &cliprect);
+    void Render_Buildings(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw);   // 0x006A4100
+    void Render_Fogged_Objects(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw); // 0x006A3D00
+    void Draw_Fogged_Objects(Rect const &area);     // 0x006A9F50 (forwards to ::Draw_Fogged_Objects)
     void Register_Dirty_Buildings(Rect area);       // 0x006AA090
 
     // Layout from the constructor 0x006A24B0 (init-list stores, then the body).
