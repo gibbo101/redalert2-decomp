@@ -4,8 +4,8 @@
     "id": "population-2930",
     "inventory_sha256": "7dfe89dbb948e0c622af0adbb588c03f76fecf8bd0a3e42a6b29941ab396c24d",
     "gaps_sha256": "91c631d866f95b939d8d24bf48f884c386ee7ab760d6ff390b942a5688445205",
-    "historical_population_sha256": "7495137e4274183e41635ec402eea70493ff34606761746f673ee175e72ce759",
-    "historical_acceptance_sha256": "e33ed2b3c35955e1ae657723ba0edff99bb2015d3073fc58de3d85a983359cca"
+    "historical_population_sha256": "be9f56f2b0640265dce5aa10e3f486c8fd9fb2f9cbdf742da6d0e92582dea373",
+    "historical_acceptance_sha256": "cec683a2824b0983160d6071fc646e88f23a3545b29f7e68bb8196f526db3739"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -4322,7 +4322,7 @@
     "?get@Leaf_766850@@QAEPAXI@Z": 7759952,
     "?get@Storage_7680c0@@QAEPAXIPAI@Z": 7766208,
     "?get@Leaf_769510@@QAEIXZ": 7771408,
-    "?get@Leaf_769670@@QAEIXZ": 7771760,
+    "?Current_WDT_Campaign_00769670@@YIABV?$rc_ptr@VCampaign@WorldDominationTour@@@@XZ": 7771760,
     "?get@Leaf_7698a0@@QAEXXZ": 7772320,
     "?get@Cleanup_76bb00@@QAEXXZ": 7781120,
     "?get@Leaf_76bdc0@@QAEPAXI@Z": 7781824,
