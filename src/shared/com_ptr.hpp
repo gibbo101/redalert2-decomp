@@ -221,6 +221,24 @@ public:
 };
 
 
+// A pointer built from a raw interface pointer through comip's _QueryInterface
+// where Release_Held stays out of line: the held pointer is released through
+// Release_Held on both outcomes (the locomotors' Piggyback_CLSID query their
+// own IPersistStream for IPersist this way; Release_Held 0x004A4D00).
+template <class Interface, GUID const *iid>
+struct UnknownHeldComPtr : UnknownComPtr<Interface, iid> {
+    template <class Other>
+    UnknownHeldComPtr(Other const &other)
+    {
+        if (other) {
+            HRESULT result = Query_Held(other);
+            if (FAILED(result) && result != E_NOINTERFACE) {
+                _com_issue_error(result);
+            }
+        }
+    }
+};
+
 // Units that expand Release_Held inline (SaveLoad.cpp's stream and property
 // helpers; comip's _Release) define COM_PTR_IMPLEMENT_RELEASE before the
 // first include; elsewhere it stays out of line (0x004A4D10 in Drive.cpp).

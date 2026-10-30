@@ -77,11 +77,11 @@
 | [classes/SaveLoad](../src/recovered/classes/SaveLoad/) | 15 | 4,853 | 15 | 0x00654C40–0x0065B150 |
 | [classes/SpawnManagerClass](../src/recovered/classes/SpawnManagerClass/) | 22 | 4,831 | 22 | 0x00689690–0x0068AA00 |
 | [classes/WinModemClass](../src/recovered/classes/WinModemClass/) | 19 | 4,806 | 13 | 0x00734120–0x00735610 |
+| [classes/DriveLocomotionClass](../src/recovered/classes/DriveLocomotionClass/) | 52 | 4,734 | 52 | 0x0049F640–0x004A4D90 |
+| [classes/ShipLocomotionClass](../src/recovered/classes/ShipLocomotionClass/) | 52 | 4,734 | 52 | 0x00675600–0x0067AC30 |
 | [classes/WeaponTypeClass](../src/recovered/classes/WeaponTypeClass/) | 20 | 4,679 | 20 | 0x0040F8F0–0x00733FF0 |
 | [classes/HouseTypeClass](../src/recovered/classes/HouseTypeClass/) | 23 | 4,609 | 23 | 0x004D3890–0x004FB6D0 |
 | [classes/VoxClass](../src/recovered/classes/VoxClass/) | 34 | 4,520 | 34 | 0x00715650–0x007169A0 |
-| [classes/DriveLocomotionClass](../src/recovered/classes/DriveLocomotionClass/) | 51 | 4,467 | 51 | 0x0049F640–0x004A4D90 |
-| [classes/ShipLocomotionClass](../src/recovered/classes/ShipLocomotionClass/) | 51 | 4,467 | 51 | 0x00675600–0x0067AC30 |
 | [classes/SerialEdDialog](../src/recovered/classes/SerialEdDialog/) | 13 | 4,444 | 13 | 0x0066CA70–0x0066DFE0 |
 | [classes/TargetClass](../src/recovered/classes/TargetClass/) | 24 | 4,411 | 24 | 0x006B54A0–0x006B6610 |
 | [classes/IPXManagerClass](../src/recovered/classes/IPXManagerClass/) | 56 | 4,364 | 56 | 0x004D48D0–0x00527850 |
@@ -115,11 +115,13 @@
 | [classes/WinsockInterfaceClass](../src/recovered/classes/WinsockInterfaceClass/) | 30 | 3,024 | 30 | 0x0076AA00–0x0076BA40 |
 | [classes/BufferIOFileClass](../src/recovered/classes/BufferIOFileClass/) | 17 | 3,023 | 17 | 0x0042F200–0x0042FDF0 |
 | [classes/SavegameInformation](../src/recovered/classes/SavegameInformation/) | 31 | 2,972 | 31 | 0x00659240–0x0065ABF0 |
+| [classes/DropPodLocomotionClass](../src/recovered/classes/DropPodLocomotionClass/) | 28 | 2,922 | 28 | 0x004A5A40–0x004A6710 |
 | [classes/MessageListClass](../src/recovered/classes/MessageListClass/) | 14 | 2,872 | 14 | 0x005B4BD0–0x005B5CB0 |
 | [MainOpt](../src/recovered/MainOpt/) | 7 | 2,816 | 7 | 0x00542150–0x00543C40 |
 | [classes/PowerClass](../src/recovered/classes/PowerClass/) | 16 | 2,801 | 16 | 0x0061C450–0x0061D220 |
 | [classes/MapSelectData](../src/recovered/classes/MapSelectData/) | 9 | 2,758 | 9 | 0x005AFF10–0x005B0980 |
 | [classes/BaseClass](../src/recovered/classes/BaseClass/) | 15 | 2,729 | 15 | 0x0042BF70–0x0042CB70 |
+| [classes/FlyLocomotionClass](../src/recovered/classes/FlyLocomotionClass/) | 29 | 2,717 | 29 | 0x004BC110–0x004BFCC0 |
 | [classes/AnimFile](../src/recovered/classes/AnimFile/) | 18 | 2,716 | 18 | 0x00423F90–0x00424BC0 |
 | [classes/ScrollClass](../src/recovered/classes/ScrollClass/) | 13 | 2,701 | 13 | 0x0040D140–0x0066AC60 |
 | [classes/PlayerProfile](../src/recovered/classes/PlayerProfile/) | 8 | 2,624 | 7 | 0x00738670–0x007395B0 |
@@ -133,7 +135,6 @@
 | [classes/IPXInterfaceClass](../src/recovered/classes/IPXInterfaceClass/) | 8 | 2,474 | 8 | 0x0076A070–0x0076AA70 |
 | [classes/TagClass](../src/recovered/classes/TagClass/) | 28 | 2,466 | 28 | 0x006B37F0–0x006B42E0 |
 | [classes/MapStage](../src/recovered/classes/MapStage/) | 4 | 2,459 | 4 | 0x005B0A20–0x005B1380 |
-| [classes/FlyLocomotionClass](../src/recovered/classes/FlyLocomotionClass/) | 28 | 2,414 | 28 | 0x004BC110–0x004BFCC0 |
 | [classes/TriggerClass](../src/recovered/classes/TriggerClass/) | 29 | 2,411 | 29 | 0x004D2E90–0x006EDBA0 |
 | [classes/SuperWeaponTypeClass](../src/recovered/classes/SuperWeaponTypeClass/) | 19 | 2,405 | 19 | 0x004D4110–0x0069F8C0 |
 | [classes/CStreamClass](../src/recovered/classes/CStreamClass/) | 24 | 2,390 | 24 | 0x00494800–0x00495220 |
@@ -146,6 +147,7 @@
 | [classes/EMPulseClass](../src/recovered/classes/EMPulseClass/) | 17 | 2,249 | 12 | 0x004B4B60–0x004B5410 |
 | [classes/MissionClass](../src/recovered/classes/MissionClass/) | 43 | 2,236 | 42 | 0x004CDDE0–0x00595130 |
 | [classes/BuildingLightClass](../src/recovered/classes/BuildingLightClass/) | 19 | 2,228 | 19 | 0x004332F0–0x004D2F50 |
+| [classes/WalkLocomotionClass](../src/recovered/classes/WalkLocomotionClass/) | 34 | 2,222 | 34 | 0x0071DE00–0x0071FEE0 |
 | [classes/CD](../src/recovered/classes/CD/) | 9 | 2,216 | 9 | 0x0046E4A0–0x00715300 |
 | [classes/ScriptTypeClass](../src/recovered/classes/ScriptTypeClass/) | 19 | 2,212 | 19 | 0x004D3A10–0x00669310 |
 | [containers](../src/recovered/containers/) | 18 | 2,201 | 18 | 0x0042B620–0x00682580 |
@@ -160,10 +162,10 @@
 | [classes/IPXGlobalConnClass](../src/recovered/classes/IPXGlobalConnClass/) | 16 | 1,994 | 16 | 0x005241B0–0x00524DD0 |
 | [classes/ABuffer](../src/recovered/classes/ABuffer/) | 9 | 1,972 | 9 | 0x00775B80–0x00776340 |
 | [classes/ConnectionClass](../src/recovered/classes/ConnectionClass/) | 13 | 1,964 | 13 | 0x00480E20–0x00481610 |
-| [classes/WalkLocomotionClass](../src/recovered/classes/WalkLocomotionClass/) | 33 | 1,955 | 33 | 0x0071DE00–0x0071FEE0 |
 | [classes/DropListClass](../src/recovered/classes/DropListClass/) | 21 | 1,919 | 21 | 0x004A4DC0–0x004A55A0 |
 | [classes/TEventClass](../src/recovered/classes/TEventClass/) | 17 | 1,902 | 17 | 0x006E5D60–0x006E6DA0 |
 | [classes/ParasiteClass](../src/recovered/classes/ParasiteClass/) | 14 | 1,900 | 14 | 0x00606120–0x00607DE0 |
+| [classes/TeleportLocomotionClass](../src/recovered/classes/TeleportLocomotionClass/) | 29 | 1,865 | 29 | 0x006DFCA0–0x006E1C70 |
 | [classes/TubeClass](../src/recovered/classes/TubeClass/) | 14 | 1,861 | 14 | 0x004D3010–0x006EF910 |
 | [library/LZO](../src/recovered/library/LZO/) | 3 | 1,797 | 3 | 0x0053E420–0x0053E970 |
 | [classes/DynamicVectorClass_AbstractClass_ptr](../src/recovered/classes/DynamicVectorClass_AbstractClass_ptr/) | 29 | 1,790 | 28 | 0x00454B20–0x006ECB50 |
@@ -183,7 +185,6 @@
 | [classes/MonoClass](../src/recovered/classes/MonoClass/) | 10 | 1,605 | 10 | 0x0059E160–0x0059EA90 |
 | [classes/TriColorGaugeClass](../src/recovered/classes/TriColorGaugeClass/) | 5 | 1,605 | 5 | 0x004D0630–0x004D0CD0 |
 | [classes/MSPCXAnim](../src/recovered/classes/MSPCXAnim/) | 9 | 1,538 | 9 | 0x005AF5F0–0x005AFEB0 |
-| [classes/TeleportLocomotionClass](../src/recovered/classes/TeleportLocomotionClass/) | 27 | 1,528 | 27 | 0x006DFCA0–0x006E1C70 |
 | [classes/MSFadeAnim](../src/recovered/classes/MSFadeAnim/) | 4 | 1,526 | 4 | 0x005ACDB0–0x005AFD10 |
 | [classes/SmudgeClass](../src/recovered/classes/SmudgeClass/) | 15 | 1,517 | 15 | 0x004D3290–0x00687B00 |
 | [classes/Dial8Class](../src/recovered/classes/Dial8Class/) | 5 | 1,504 | 4 | 0x00496D30–0x00497320 |
@@ -198,7 +199,6 @@
 | [classes/EditClass](../src/recovered/classes/EditClass/) | 11 | 1,447 | 9 | 0x004A5550–0x004B2F20 |
 | [classes/GaugeClass](../src/recovered/classes/GaugeClass/) | 13 | 1,446 | 13 | 0x004D00F0–0x0053AB60 |
 | [classes/RandomStraw](../src/recovered/classes/RandomStraw/) | 11 | 1,446 | 11 | 0x0063D2D0–0x0063D890 |
-| [classes/DropPodLocomotionClass](../src/recovered/classes/DropPodLocomotionClass/) | 26 | 1,443 | 26 | 0x004A5A40–0x004A6710 |
 | [classes/CCFileClass](../src/recovered/classes/CCFileClass/) | 17 | 1,442 | 15 | 0x00401980–0x0051AD20 |
 | [classes/TemporalClass](../src/recovered/classes/TemporalClass/) | 18 | 1,423 | 18 | 0x006E1E70–0x006E2A20 |
 | [classes/WolChannelNameSet](../src/recovered/classes/WolChannelNameSet/) | 6 | 1,397 | 6 | 0x00766070–0x007679A0 |
@@ -1320,7 +1320,7 @@
 | [classes/exception](../src/recovered/classes/exception/) | 1 | 13 | 0 | 0x0078B1E7–0x0078B1E7 |
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 
-1313 directories, 15702 regions. Generated by `tools/original_target/source_index.py`.
+1313 directories, 15710 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

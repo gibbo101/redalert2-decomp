@@ -31,6 +31,14 @@ public:
     // field, so the copy constructor is user-declared.
     int unknown_0x18;
 
+    // The element an index (a random number) picks, wrapped to the active
+    // count (TibSun TypeList::Pick; DropPodLocomotionClass::Process picks the
+    // weapon's report sound with it).
+    T const Pick(int index) const
+    {
+        return (*this)[(unsigned)index % (unsigned)this->Count()];
+    }
+
     // Whether object is one of the active elements: a non-virtual scan, unlike
     // the virtual ID (Create_Units 0x00660320 expands it for Rules BaseUnit;
     // name hypothesis).

@@ -83,6 +83,10 @@ public:
     void Start_Drift();                                                         // 0x004BF550 (a drift of 20..30 either way; Power_Off)
     void unknown_4bf1f0();                                                      // 0x004BF1F0 (unless on mission 7 or the techno check 0x006D1470 holds: an airport-bound aircraft out of radio contact with the building in its cell calls slot 261, else the flight state resets)
     bool unknown_4bcc60();                                                      // 0x004BCC60 (landed carrier unloads its passengers)
+    bool unknown_4bca00();                                                      // 0x004BCA00 (TibSun Landing_Takeoff_AI)
+    void unknown_4bcd50();                                                      // 0x004BCD50 (TibSun Movement_AI)
+    void unknown_4bdd10();                                                      // 0x004BDD10 (TibSun Rotation_AI)
+    int unknown_4be720(bool stage, CoordStruct coord);                          // 0x004BE720 (TibSun Nearing_Target)
 
     bool unknown_18;                    // +0x18
     CoordStruct unknown_1c;             // +0x1C
