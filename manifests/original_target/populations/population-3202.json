@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "1d38ef962a8e697c568a39ce67c175ab551693ed82ce8462b956089cb53c916f",
-    "historical_acceptance_sha256": "dfd2fefe5dbd0ee5471b3924b546932b4ff2601a099c6d46b4d97607b6631a9e"
+    "historical_population_sha256": "b86aabd533369dc1c3f8e95de468772495ca6721664882c3ceca0f63c99bce26",
+    "historical_acceptance_sha256": "a5e608fc69f98dd15f1f92f414975ced15b04d7f27626e952fb10b402a305c2e"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -13216,7 +13216,7 @@
     "?Unknown_0054AB70@MapClass@@QAEXABVCell@@PAVObjectClass@@@Z": 5548912,
     "?Unknown_0054AF70@MapClass@@QAEXABVCell@@PAVObjectClass@@@Z": 5549936,
     "?unknown_slot291@FootClass@@UAE_NXZ": 5000032,
-    "?unknown_slot290@FootClass@@UAEHABUCoordStruct@@@Z": 5000080,
+    "?unknown_slot290@FootClass@@UAE_NAAUCoordStruct@@@Z": 5000080,
     "?unknown_slot241@FootClass@@UAE?AUCoordStruct@@XZ": 5009840,
     "?unknown_slot120@FootClass@@UAE_NXZ": 5012224,
     "?unknown_slot216@FootClass@@UAEXH@Z": 5014464,

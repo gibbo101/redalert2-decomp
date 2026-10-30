@@ -152,7 +152,7 @@ public:
     virtual bool unknown_slot275();   // slot 275 0x00509460 ret 
     virtual void unknown_slot288();   // slot 288 0x005089D0 ret 0
     virtual bool unknown_slot289();   // slot 289 0x00508AB0 ret 0
-    virtual int unknown_slot290(CoordStruct const &coord);   // slot 290 0x00504BC0 ret 4
+    virtual bool unknown_slot290(CoordStruct &coord);   // slot 290 0x00504BC0 ret 4
     virtual bool unknown_slot291();   // slot 291 0x00504AE0 ret 0
     virtual void unknown_slot294();   // slot 294 0x00508CF0 ret 0
     virtual void unknown_slot295();   // slot 295 0x00508820 ret 0

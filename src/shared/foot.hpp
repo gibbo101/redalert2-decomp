@@ -197,7 +197,7 @@ public:
     virtual CoordStruct unknown_slot287();                      // slot 287 0x004C8AC0 (slot 40's coordinate)
     virtual void unknown_slot288();                             // slot 288 0x004CA880
     virtual bool unknown_slot289() { return false; }            // slot 289 (kept copy 0x0041B480)
-    virtual int unknown_slot290(CoordStruct const &coord);    // slot 290 0x004C4B90 (ILocomotion::Move_To, then Is_Moving)
+    virtual bool unknown_slot290(CoordStruct &coord);    // slot 290 0x004C4B90 (ILocomotion::Move_To, then Is_Moving)
     virtual bool unknown_slot291();                             // slot 291 0x004C4B60 (ILocomotion::Stop_Moving; false)
     virtual bool unknown_slot292();                             // slot 292 0x004CA2B0
     // slot 293 (kept copy 0x0041B490): passes its arguments on to the
