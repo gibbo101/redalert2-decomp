@@ -408,6 +408,14 @@ $RA2_PYTHON -B tools/original_target/regenerate_seeds.py
 $RA2_PYTHON -B tools/original_target/permute_seeds.py --entries 004732d0 ... --output build/permute-N
 # Seeded Ghidra discovery pass -> new frozen inventory pass (no compiler)
 $RA2_PYTHON -B tools/original_target/ghidra_seed_pass.py --base-project P --project NEW --seeds S.jsonl --output INV
+# Reference pass 6a (2026-10-30): pass5 + every accepted MSVC symbol demangled and applied (name, namespace,
+# parameters, return, convention), no re-analysis (re-analysis split ~2,700 bodies), full decompile export.
+# READ-ONLY reference for field/callee names and argument counts; seeds still use pass5 (inventory.PASSES).
+# symbols: one {entry, symbol} line per accepted region whose symbol starts with '?' (not '??_', no '$').
+$RA2_PYTHON -B tools/original_target/ghidra_seed_pass.py --no-analysis --base-project .../recovery-pass5/ghidra-project \
+  --project .../recovery-pass6a/ghidra-project --output .../inventory/seeded-pass6a \
+  --pre-script ApplyKnowledge.java SYMBOLS.jsonl - MEMBERS.json(= {}) APPLY-OUT named
+# A trial or newer pass can be put ahead of the defaults with RA2_INVENTORY_PASSES=dir[:dir...].
 # RTTI class inventory, docs/CLASS_HIERARCHY.md and manifests/rtti_classes.json
 $RA2_PYTHON -B tools/original_target/class_inventory.py --write-docs
 # Move class-owned flat sources into src/recovered/classes/<Class>/

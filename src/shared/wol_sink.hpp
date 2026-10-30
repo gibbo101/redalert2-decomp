@@ -111,7 +111,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall unknown_slot08(Channel *channel) = 0;
     virtual HRESULT __stdcall unknown_slot09() = 0;
     virtual void __stdcall unknown_slot10() = 0;
-    virtual void __stdcall unknown_slot11() = 0;
+    virtual HRESULT __stdcall unknown_slot11(char const *text) = 0;
     virtual void __stdcall unknown_slot12() = 0;
     virtual HRESULT __stdcall unknown_slot13() = 0;
     virtual HRESULT __stdcall unknown_slot14(User *user, char const *text) = 0;
@@ -646,7 +646,7 @@ public:
         Items[index].~Wstring();
         memmove(Items+index,Items+index+1,(Count-index-1)*sizeof(Wstring));
         --Count;
-        Shrink();
+        if(Count*3<=Capacity) Shrink();
         return true;
     }
 
