@@ -334,7 +334,7 @@ void __fastcall Unknown_005c34f0();
 extern bool unknown_lobby_flag_a3fab8;
 void Unknown_005c3c20();
 void Unknown_005c3c40();
-void Unknown_0075c980();
+void __fastcall Unknown_0075c980();
 void Unknown_0075ca00();
 // Unknown_005c28e0 is __fastcall: its own register setups come before its pushes (0x005C28E0 tells the
 // joiners that the host started the game, GUI:HostGameStartJoiner, unless the local player is the host).
