@@ -716,3 +716,11 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Per_Cell_Process, Assign_Destination need the inline COM query model (ComPtr297); Tunnel_AI needs FootClass::unknown_575
   signed char, out-of-line CoordStruct operator- 0x4348F0 with UnknownVector3::Length 0x41B780 as one type; Draw_It needs
   a slot 67 rename (Point2D const &, Rect const &).
+- Map.CPP after Map295 (one TU population-3061; NOTES unit table): exact but blocked Local_Sector_Index_To_Cell 0x55AE50
+  ("Unsupported independent bound"), crate-near-cell 0x54E580 (bound), Is_Same_Cell_Zone 0x54F7C0 (bool 5th param rename);
+  misses Pick_Random_Location 0x559EB0 44.83, Closest_Edge_Cell 0x5689D0 46.64, In_Local_Radar 0x55A590 56.16.
+- COM pointers after ComPtr297 (zero bytes; NOTES, model/shared): a faithful VC6 comip.h model of com_ptr.hpp (every member
+  in-class; layered _QueryInterface/Attach/_Release/_AddRef; checked operator->) keeps 14 of 18 COM populations exact and
+  makes the Unit/Mission_Harvest inline query natural. Four accepted functions inline more under it: FootClass::Load
+  0x4C9D10, Aircraft 0x416420, Infantry 0x507530/0x500350 (ComPtr299 re-matches them). VC6 COMIP.H/COMDEF.H/COMUTIL.H were
+  extracted read-only from the user's VS6 ISO into the ignored toolchain media folder.

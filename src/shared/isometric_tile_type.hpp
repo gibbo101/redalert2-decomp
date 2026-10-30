@@ -77,6 +77,9 @@ public:
     unsigned short unknown_func_52e360(int index, int value, bool second) const;    // 0x0052E360
     // Draws one cell of the tile image (0x0052C230; arguments are hypotheses: a light converter,
     // a cell index, the surface, the screen point, the clip rectangle, a height and a level).
+    // The light converter with these tints, made when there is none yet (0x00529590; Westwood's
+    // Find_Or_Make_Drawer; 0 without a palette).
+    static LightConvertClass *__fastcall Find_Or_Make_Drawer(int red, int green, int blue);
     void unknown_func_52c230(LightConvertClass *drawer, int arg2, Surface *surface, int x, int y, Rect rect,
         int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, int arg13, int arg14);
 

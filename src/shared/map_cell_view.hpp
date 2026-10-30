@@ -29,6 +29,9 @@ public:
     bool unknown_2d6;                       // +0x2D6 (CellClass::unknown_478ba0: tiberium may grow on the tile)
 
     // 0x0052C230 (shared/isometric_tile_type.hpp; CellClass::unknown_4754b0).
+    // The light converter with these tints, made when there is none yet (0x00529590; Westwood's
+    // Find_Or_Make_Drawer; 0 without a palette).
+    static LightConvertClass *__fastcall Find_Or_Make_Drawer(int red, int green, int blue);
     void unknown_func_52c230(LightConvertClass *drawer, int arg2, Surface *surface, int x, int y, Rect rect,
         int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, int arg13, int arg14);
 };

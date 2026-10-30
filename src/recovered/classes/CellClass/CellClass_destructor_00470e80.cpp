@@ -3,6 +3,7 @@
 // zero cell, releases +0x34 (its count drops while unknown_flag_a40958 is set).
 #include "shared/cell.hpp"
 #include "shared/unknown_globals.hpp"
+#include "shared/light_convert.hpp"
 // @ref ?unknown_flag_a40958@@3_NA=00a40958
 
 CellClass::~CellClass()

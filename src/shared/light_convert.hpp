@@ -32,6 +32,8 @@ public:
     bool unknown_1b0;                                                 // +0x1B0
 };
 
+// Limits each tint to 0..1000 (0x005385A0; Westwood's Clamp_Tile_RGB, LIGHTCALC).
+void __fastcall Clamp_Tile_RGB(int &red, int &green, int &blue);
 // Every light converter (0x00832398; hypothesis: the tile drawers; moved from
 // shared/isometric_tile_type.hpp for Ion.cpp's lighting 0x00520B00).
 extern DynamicVectorClass<LightConvertClass *> unknown_LightConvertClass_list_00832398;

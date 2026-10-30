@@ -13,8 +13,8 @@
 //           saved as a count and pointers, swizzled)
 //   +0x02C  CellClass *unknown_2c     (swizzled; bridge owner cell)
 //   +0x030  void *unknown_30          (swizzled)
-//   +0x034  UnknownCellCounted *unknown_34 (cleared by the NoInit
-//           constructor; the destructor drops a count at its +0x194)
+//   +0x034  LightConvertClass *unknown_34  the tile drawer (Westwood's Drawer;
+//           counted at its +0x194, Init_Drawer 0x004790F0)
 //   +0x038  int IsoTileIndex          0xFFFF when constructed
 //   +0x03C  TagClass *unknown_3c (swizzled; the cell tag: counted at +0x2C,
 //           cells with one are listed in the map at 0x00833638)
@@ -54,6 +54,7 @@ class ObjectClass;
 class TechnoClass;
 class TagClass;
 class FoggedObjectClass;
+class LightConvertClass;
 
 extern "C" GUID const CLSID_CellClass;          // 0x007A1E70
 
@@ -108,13 +109,6 @@ struct UnknownCell68 {
     int unknown_04;
     int unknown_08;
     int unknown_0c;
-};
-
-// The object at +0x34: while unknown_flag_a40958 is set the destructor drops
-// a count at its +0x194 (type unknown; not a TagClass, which is 0x38 bytes).
-struct UnknownCellCounted {
-    char unknown_000[0x194];
-    int unknown_194;                // +0x194
 };
 
 class CellClass : public AbstractClass {
@@ -199,6 +193,7 @@ public:
     bool unknown_47c3a0(int tiberium, bool arg2);   // 0x0047C3A0 (not recovered; hypothesis to fix: arg2 is an int, the spread 0x00478A40 passes 3)
     int unknown_47ce70() const;                 // 0x0047CE70 (+0xF0 limited to Rules RadLevelMax, as an int)
     bool unknown_47c200();                      // 0x0047C200 (the map allows the cell, its tile type does not refuse it, it is not blocked and holds no building or terrain object)
+    void unknown_47bc80();                      // 0x0047BC80 (Westwood's Fog_Cell: fogs the diagonal cells, keeping fogged copies of their buildings)
     void unknown_47be00();                      // 0x0047BE00 (diagonal pass over the cells ahead)
     void unknown_47be60();                      // 0x0047BE60
 
@@ -219,7 +214,15 @@ public:
     // Counters and scalars.
     void unknown_47c840();                      // 0x0047C840 (decrements +0x130)
     void unknown_47c8a0();                      // 0x0047C8A0 (increments +0x130 up to +0x134)
-    void Unknown_004790F0(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6);   // 0x004790F0 (sets up the cell's light drawer at +0x34; TerrainClass slots 67/68, DisplayClass 0x0049E570)
+    // Westwood's Init_Drawer: takes the drawer given, or finds or makes one for the cell's light (+0x34), and keeps the light values.
+    // arg1 is the drawer (a LightConvertClass *; retyping it is a rename of the accepted callers' binding).
+    void Unknown_004790F0(int arg1, int intensity, int ambient, int brightness, int tile_brightness, int alt_brightness);   // 0x004790F0 (TerrainClass slots 67/68, DisplayClass 0x0049E570)
+    void Inc_Drawer_Ref_Count(LightConvertClass *drawer) const;   // 0x00479C90
+    void Dec_Drawer_Ref_Count(LightConvertClass *drawer) const;   // 0x00479CA0
+    // Westwood's Pick_Drawer and Init_Light (TibSun CELL.CPP order).
+    void Pick_Drawer(LightConvertClass *&drawer, int &intensity, int &ambient, int &brightness, int &tile_brightness, int &alt_brightness) const;   // 0x00479310
+    void unknown_4798f0();                      // 0x004798F0 (Westwood's Recalc_Light: the brightness values from the scenario light; DisplayClass 0x0049E5E0)
+    void Init_Light(int &intensity, int &ambient, int &brightness, int &tile_brightness, int &alt_brightness, int &red, int &green, int &blue) const;   // 0x00479440
     int unknown_47ce50() const;                 // 0x0047CE50 (+0xF0 above 1.0)
     void Reduce_f0(double amount);              // 0x0047CEC0
     bool Set_unknown_e0(void *value);           // 0x0047CF30
@@ -256,7 +259,7 @@ public:
     DynamicVectorClass<FoggedObjectClass *> *FoggedObjects;   // +0x028
     CellClass *unknown_2c;                      // +0x02C
     void *unknown_30;                           // +0x030
-    UnknownCellCounted *unknown_34;             // +0x034
+    LightConvertClass *unknown_34;              // +0x034 the tile drawer (Westwood's Drawer)
     int IsoTileIndex;                           // +0x038
     TagClass *unknown_3c;                       // +0x03C
     void *unknown_40;                           // +0x040
