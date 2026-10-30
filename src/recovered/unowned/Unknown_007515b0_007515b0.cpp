@@ -3,6 +3,7 @@
 #include "shared/wol_sink.hpp"
 #include "shared/unknown_player_entry.hpp"
 #include "shared/crt_memory.hpp"
+#pragma auto_inline(off)
 void __fastcall Unknown_007515b0()
 {
     NodeNameType *player=new NodeNameType;
@@ -25,3 +26,5 @@ void __fastcall Unknown_007515b0()
     ++unknown_session_a3d55c;
     unknown_address_a3db2c=player->Address;
 }
+
+#pragma auto_inline(on)

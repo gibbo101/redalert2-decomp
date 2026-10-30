@@ -3,6 +3,7 @@
 #include "shared/wol_sink.hpp"
 #include "shared/unknown_player_entry.hpp"
 #include "shared/crt_memory.hpp"
+#pragma auto_inline(off)
 void __fastcall Unknown_007513e0()
 {
     NodeNameType *player=new NodeNameType;
@@ -24,3 +25,5 @@ void __fastcall Unknown_007513e0()
     unknown_pings_b2a734[unknown_session_a3d55c]=100;
     ++unknown_session_a3d55c;
 }
+
+#pragma auto_inline(on)
