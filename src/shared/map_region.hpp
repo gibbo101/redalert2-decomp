@@ -9,6 +9,7 @@
 class MapRegionClass {
 public:
     MapRegionClass(Cell origin); //0056D870 by-value packed Cell, nominal constructor hypothesis
+    void Generate_Starting_Points_00576170(int firstWaypoint); //ECXowner/RET4
     void Count_Grid_Cells_0056dbd0();
     void Make_Region_Connections_00571ed0();
     bool Connect_Regions_With_Bridge_00570bc0(MapRegionClass *first,MapRegionClass *second); // ECXowner/RET8; result hypothesis
