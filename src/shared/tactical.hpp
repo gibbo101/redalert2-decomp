@@ -127,6 +127,9 @@ public:
     Point2D Clamp_Pixel_To_Tactical(Point2D const &pixel);  // 0x006A8B10
     bool Is_Cell_Visible(Cell const &cell);         // 0x006A9120
     Cell Clamp_Cursor_To_Tactical(Cell const &cell, Cell const *list);  // 0x006AA970
+    // With exactly one object selected and owned by a house the player does not control, unselects it (0x006AAD70;
+    // true then; hypothesis).
+    bool Unknown_006AAD70();
     void Reset_Dirty_Rectangles();                  // 0x006AAF80 (empties TacticalLists::DirtyAreas)
     // Redraws the overlays of the view, the panned strips, the flagged cells and the dirty areas (0x006A3B20).
     void Render_Overlays(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw);
@@ -143,6 +146,9 @@ public:
     void Draw_Tile_Shadows(Rect const &area, Rect const &cliprect);
     void Render_Buildings(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw);   // 0x006A4100
     void Render_Fogged_Objects(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw); // 0x006A3D00
+    // Moves the dirty areas by the scroll offset and clips them to the view, then wipes the depth of the cells
+    // flagged for redraw (TibSun Tactical::Wipe_Depth).
+    void Wipe_Depth(bool fullredraw, int xoff, int yoff, Rect const &cliprect);   // 0x006A33F0
     void Draw_Fogged_Objects(Rect const &area);     // 0x006A9F50 (forwards to ::Draw_Fogged_Objects)
     void Register_Dirty_Buildings(Rect area);       // 0x006AA090
 
