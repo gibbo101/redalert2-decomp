@@ -4,8 +4,8 @@
     "id": "population-2539",
     "inventory_sha256": "8c2804abedaa1f79027291a60e339f39d7cdbe2bb876133e12b8418655fa9bb6",
     "gaps_sha256": "0e2f6f05e6615016d6f8ea5bef735db25a18ce10b8e3cbb67d4dadb46cbfbc88",
-    "historical_population_sha256": "bbbcc8bba1f0eddfe961d7374ad233366c2dc9627a5a760418637a9d9814b908",
-    "historical_acceptance_sha256": "c1de286adf986533b9640789bdacf62ebae99621e364f0dff7672eca97df68be"
+    "historical_population_sha256": "e50ec7312ba9e7b91899f21ce4f2b73d1b087013a77bf8f742b19ff34fcafdca",
+    "historical_acceptance_sha256": "11f1b25695dc4f4541479a512af917ac502e06054be9b811a821c44cad34f07b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3186,7 +3186,7 @@
     "?Reset_Light_Converts_00529720@@YAXXZ": 5412640,
     "?Unknown_0055A550@UnknownScreen8324E0@@QAEXXZ": 5612880,
     "?Unknown_0055A490@UnknownScreen8324E0@@QAEPAVCellClass@@XZ": 5612688,
-    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?Unknown_0049E5E0@DisplayClass@@QAEXXZ": 4842976,
     "?Unknown_004798F0@CellClass@@QAEXXZ": 4692208,
     "?Load@LayerClass@@QAEJPAUIStream@@@Z": 5458560,

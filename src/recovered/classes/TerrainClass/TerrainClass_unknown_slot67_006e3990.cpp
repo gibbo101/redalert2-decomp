@@ -11,7 +11,7 @@
 #define SHAPE_FILE_EMPTY_RECT unknown_static_rect
 #include "shared/palette.hpp"
 // @ref ?Unknown_006A2970@@YIHH@Z=006a2970
-// @ref ?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z=004790f0
+// @ref ?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z=004790f0
 // @ref ?unknown_drawer_8323bc@@3PAVConvertClass@@A=008323bc
 // @ref ?unknown_surface_83995c@@3PAVSurface@@A=0083995c
 // @ref ?unknown_flag_7d88d5@@3_NA=007d88d5
@@ -43,7 +43,7 @@ void TerrainClass::unknown_slot67(int arg1, int arg2)
         Point2D position = *point;
         int height = -Unknown_006A2970(unknown_slot110());
         if (cell.unknown_34 == 0) {
-            cell.Unknown_004790F0(0, 0x10000, 0, 1000, 1000, 1000);
+            cell.Init_Drawer(0, 0x10000, 0, 1000, 1000, 1000);
         }
         ConvertClass *drawer;
         int brightness;

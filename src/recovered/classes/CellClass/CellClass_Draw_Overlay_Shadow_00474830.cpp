@@ -11,7 +11,7 @@
 #include "shared/light_convert.hpp"
 #include "shared/palette.hpp"
 #include "shared/unknown_globals.hpp"
-// @ref ?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z=004790f0
+// @ref ?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z=004790f0
 // @ref ?unknown_surface_83995c@@3PAVSurface@@A=0083995c
 // @ref ?CC_Draw_Shape@@YIXPAVSurface@@PAVConvertClass@@PBUShapeFileStruct@@HABUPoint2D@@ABVRect@@HHHHHHHU4@@Z=0049eea0
 void CellClass::unknown_474830(Point2D const &xpoint, Rect const &clip)
@@ -28,7 +28,7 @@ void CellClass::unknown_474830(Point2D const &xpoint, Rect const &clip)
         }
     }
     if (unknown_34 == 0) {
-        Unknown_004790F0(0, 0x10000, 0, 1000, 1000, 1000);
+        Init_Drawer(0, 0x10000, 0, 1000, 1000, 1000);
     }
     unsigned char frame = OverlayData;
     if (overlay->Crate) {

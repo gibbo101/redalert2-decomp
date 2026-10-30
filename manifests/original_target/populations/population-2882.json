@@ -4,8 +4,8 @@
     "id": "population-2882",
     "inventory_sha256": "0971a0e4d7436efde3adc966782947debb951b65c9f34759910c504c47a168a4",
     "gaps_sha256": "be24b288226c195ed3de6575e6e40057012083fc68b840dc40ec9746371e6a83",
-    "historical_population_sha256": "49f5f1d9bbadabba98a8a844d5681403361938a54f844ca52eaef9bf5c78d19d",
-    "historical_acceptance_sha256": "b771371f8a842e1993d3e4c10efbe774c21d55f220f739e9eca7da191479456b"
+    "historical_population_sha256": "e03764d10e7218ec530010d692c9f3d627b096e9904a426c54939c3180191939",
+    "historical_acceptance_sha256": "105bcce3560863f803a08c53609f59e76b097c47d3c63d64fd65b25f7b9d7640"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6865,7 +6865,7 @@
     "?Unknown_0049CA20@DisplayClass@@QAEXH@Z": 4835872,
     "?Reset_Light_Converts_00529720@@YAXXZ": 5412640,
     "?Unknown_0055A490@MapClass@@QAEPAVCellClass@@XZ": 5612688,
-    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?Unknown_00630A00@RadarClass@@QAEXXZ": 6490624,
     "?Unknown_00631D40@RadarClass@@QAEXXZ": 6495552,
     "?unknown_slot29@RadarClass@@UAEXABVRect@@@Z": 6490176,

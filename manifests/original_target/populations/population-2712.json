@@ -4,8 +4,8 @@
     "id": "population-2712",
     "inventory_sha256": "3b854ef8b1747345d1ad701702df5ee66efbea9ebae70f2d532c5d72b5e3c34a",
     "gaps_sha256": "c2dad5812f6d7007b85da2db6f3d8aa8e3cd65c401c51af6640bc23ceb1ca4e4",
-    "historical_population_sha256": "7fd61c64f75ffdb873648ce1676a289eaf1f0263f2ee623d8c34e4480b4b088b",
-    "historical_acceptance_sha256": "7320d8882b12c4bc936d1a334f18f45b1c430c40726405287f60098645e68f99"
+    "historical_population_sha256": "3e0fe057dca5da1b6618b104017d7d2bc64067e815f8a1fd1f9b8c7b78fd4348",
+    "historical_acceptance_sha256": "7862ea63a26ce63b7b4be69028c984828c7255adc5d09821bdfbedec5c9bc72c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8134,7 +8134,7 @@
     "?unknown_47c200@UnknownLocoCellObject@@QAE_NXZ": 4702720,
     "?Force_New_Slope@DriveLocomotionClass@@UAGXH@Z": 4848688,
     "?Force_New_Slope@ShipLocomotionClass@@UAGXH@Z": 6773744,
-    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?Unknown_00630A00@RadarClass@@QAEXXZ": 6490624,
     "?Unknown_00631ED0@RadarClass@@QAEXXZ": 6495952,
     "?Unknown_0054E410@MapClass@@QAE_NXZ": 5563408,

@@ -84,7 +84,7 @@ public:
     CoordStruct Closest_Free_Spot(CoordStruct const &coord, bool any = false, int alt = 0) const;   // 0x004764B0
     bool unknown_476460(int facing, bool alt) const;   // 0x00476460
     void Unknown_004712c0(class RGBClass *first, class RGBClass *second);   // 0x004712C0 the two radar colours of the cell
-    void Unknown_004790F0(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6);   // 0x004790F0 (DisplayClass 0x0049E570)
+    void Init_Drawer(class LightConvertClass *drawer, int intensity, int ambient, int brightness, int tile_brightness, int alt_brightness);   // 0x004790F0 (DisplayClass 0x0049E570)
 };
 
 #endif

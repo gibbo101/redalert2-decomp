@@ -4,8 +4,8 @@
     "id": "population-2650",
     "inventory_sha256": "c251f4af02872ef335713dca1976317947ea852c5b7b5236d15f95759c4020b4",
     "gaps_sha256": "64bd87b6ba4b194094225bcacaa6562eb1034927d7c08c310257405d7923f7f0",
-    "historical_population_sha256": "4f78f7ad7c91d40ccd9b6c39a533b6901e1b589b4e598ef57057615f651f51fa",
-    "historical_acceptance_sha256": "ba47efa5acffd1869e6b6918d39c3d1823c16ef4b69feecb5ae9c0ddce017865"
+    "historical_population_sha256": "dc329d6aa6b64eec503d87c150bd416ce88736a2b620c58ce7571503b1177339",
+    "historical_acceptance_sha256": "59961bb6abff16bcb0ca8e8ed29e7d09126628a72cf84b817905c2e53f7f5632"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -9309,7 +9309,7 @@
     "?Shadow_Point@FlyLocomotionClass@@UAG?AUPoint2D@@XZ": 4976832,
     "?Process@WalkLocomotionClass@@UAG_NXZ": 7462896,
     "?All_To_Hunt@HouseClass@@UAGJXZ": 5162016,
-    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?RadarEventClass_unknown_delete_all_63c640@@YAXXZ": 6538816,
     "?unknown_object_84e8d0@@3UUnknownFallback_006f6490@@A": 8710352,
     "?unknown_color_scheme_index_663d90@@YIHPBDH@Z": 6700432,

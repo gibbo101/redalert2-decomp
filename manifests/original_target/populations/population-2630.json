@@ -4,8 +4,8 @@
     "id": "population-2630",
     "inventory_sha256": "4130e9a247616979ba8562309900879a02a0ee75867541b5da482df7929c2ca7",
     "gaps_sha256": "7389b37ceaa382531b33460dc0c8508ce01f2fb298de43b0f3c5d9ad9455bb3f",
-    "historical_population_sha256": "f392b614d84e33fef28f60a59969902697d393a97880304d6db8289e28c63ab8",
-    "historical_acceptance_sha256": "c70f09fb51964372893744f0bfafeb7053524243be1177af024b2799f8496fe1"
+    "historical_population_sha256": "21f9da49b9d3e18ba533d64cd24601c9a79d50bb667284fae2a8ce5379e3cddb",
+    "historical_acceptance_sha256": "0917725a9ca3f7a4b20e9ecde14d9f4b6c35e6ccffcf84133082453f75df9254"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9509,7 +9509,7 @@
     "??0CoordStruct@@QAE@HHH@Z": 4306480,
     "??_EWaypointClass@@QAEPAXI@Z": 4307088,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABUCoordStruct@@_N@Z": 6495136,
-    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
     "?GetClassID@AlphaShapeClass@@UAGJPAUGUID@@@Z": 4321216,
     "?Kind_Of@AlphaShapeClass@@UBEHXZ": 4321280,

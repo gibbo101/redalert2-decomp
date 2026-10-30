@@ -4,8 +4,8 @@
     "id": "population-3151",
     "inventory_sha256": "d865d6edcb7d23ba43e72d50c8706cad7c1819e24b25525ccee656b8a60e5a9d",
     "gaps_sha256": "082f3b93d8cbba8e6191d1f393eb13950be18ff41c7f812f400f5d036fc57497",
-    "historical_population_sha256": "e5aaa4fa132b28deeeb6074c626c617a384049a01f566fcdf59e224aea1c64dd",
-    "historical_acceptance_sha256": "70e05534def4098e56151880888df4f60db2c37ac0a5caec7fb9d0658499134c"
+    "historical_population_sha256": "f6023e6de7b71d65de10b2d5b26594dbbe8da8e51b1641fc58fd2879b4cf5222",
+    "historical_acceptance_sha256": "307d7e7c4077838e855d416d899532ae43004b91b96784275c50c35b74de0992"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1484,7 +1484,7 @@
     "?unknown_flag_a40958@@3_NA": 10750296,
     "?OverlayTypes@@3V?$DynamicVectorClass@PAVOverlayTypeClass@@@@A": 10706408,
     "?unknown_BuildingClass_list_00a40af8@@3V?$DynamicVectorClass@PAVBuildingClass@@@@A": 10750712,
-    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?unknown_surface_83995c@@3PAVSurface@@A": 8624476,
     "?CC_Draw_Shape@@YIXPAVSurface@@PAVConvertClass@@PBUShapeFileStruct@@HABUPoint2D@@ABVRect@@HHHHHHHU4@@Z": 4845216,
     "?unknown_int_839634@@3HA": 8623668,
@@ -1587,7 +1587,7 @@
     "?unknown_4789d0@CellClass@@": 4688336,
     "?unknown_478ba0@CellClass@@": 4688800,
     "?Save@CellClass@@": 4689616,
-    "?Unknown_004790F0@CellClass@@": 4690160,
+    "?Init_Drawer@CellClass@@": 4690160,
     "?Pick_Drawer@CellClass@@": 4690704,
     "?unknown_4798f0@CellClass@@": 4692208,
     "?unknown_47a160@CellClass@@": 4694368,
@@ -10160,7 +10160,8 @@
     "?Get_Height@AnimFile@@UAEHXZ": 4342688,
     "?Get_Frame@AnimFile@@UAEPAXH@Z": 4342704,
     "??_EWWMouseClass@@UAEPAXI@Z": 7812880,
-    "??_EMSFont@@UAEPAXI@Z": 5981808
+    "??_EMSFont@@UAEPAXI@Z": 5981808,
+    "?unknown_474830@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4671536
   },
   "regions": [
     {
@@ -14648,8 +14649,8 @@
     {
       "entry": 4690160,
       "method": "004790f0",
-      "symbol": "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z",
-      "symbol_prefix": "?Unknown_004790F0@CellClass@@",
+      "symbol": "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z",
+      "symbol_prefix": "?Init_Drawer@CellClass@@",
       "options": [
         "/O2",
         "/Ob2",
@@ -14711,7 +14712,7 @@
           "resolved": 721633
         }
       ],
-      "source_sha256": "efaef829b7706ce0644f4f0ec8fb31b883aff602cf6efdb1b63ed30f74970fe8",
+      "source_sha256": "558c198282b0cfe1cea00ee1beb0a3f1849921deb933c38452e3fc2a5afed42f",
       "source": "src/recovered/classes/CellClass/CellClass_Init_Drawer_004790f0.cpp",
       "population": "population-3151",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
@@ -14989,7 +14990,7 @@
         {
           "offset": 186,
           "kind": 20,
-          "symbol": "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z",
+          "symbol": "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z",
           "target": 4690160,
           "addend": 0,
           "resolved": 18434
@@ -15019,7 +15020,7 @@
           "resolved": 4294853840
         }
       ],
-      "source_sha256": "0000906e1e73c62c98ff6553ba25af5a5e95bd2ccd36b7c28445b0ed90638751",
+      "source_sha256": "b4caa12aa89b9fc164ce22f1d7d846c9eebc5346728d0d503450ad8783c4b892",
       "source": "src/recovered/classes/CellClass/CellClass_Draw_Overlay_Shadow_00474830.cpp",
       "population": "population-3151",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",

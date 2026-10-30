@@ -1,4 +1,4 @@
-// void CellClass::Unknown_004790F0(int arg1, int intensity, int ambient,
+// void CellClass::Init_Drawer(LightConvertClass *drawer, int intensity, int ambient,
 //     int brightness, int tile_brightness, int alt_brightness) (0x004790F0)
 #include "shared/cell.hpp"
 #include "shared/light_convert.hpp"
@@ -22,18 +22,18 @@ inline void CellClass::Dec_Drawer_Ref_Count(LightConvertClass *drawer) const
     }
 }
 
-void CellClass::Unknown_004790F0(int arg1, int intensity, int ambient, int brightness, int tile_brightness, int alt_brightness)
+void CellClass::Init_Drawer(LightConvertClass *drawer, int intensity, int ambient, int brightness, int tile_brightness, int alt_brightness)
 {
     bool got_drawer = false;
     int red;
     int green;
     int blue;
 
-    if (arg1 != 0) {
+    if (drawer != 0) {
         if (unknown_34 != 0) {
             Dec_Drawer_Ref_Count(unknown_34);
         }
-        unknown_34 = (LightConvertClass *)arg1;
+        unknown_34 = drawer;
         Inc_Drawer_Ref_Count(unknown_34);
         red = unknown_34->Red;
         green = unknown_34->Green;

@@ -4,8 +4,8 @@
     "id": "population-2755",
     "inventory_sha256": "b13e9f8a9c80267fb68c5bd415014405b9bc78678999b67b184f26e446fee49e",
     "gaps_sha256": "39a87731f2f2872c7e727c9bebe584eb081b3ddde2c518f5182d6bce3f128ad1",
-    "historical_population_sha256": "1c8331c9747826e87352e1ed1279048d42535138a2dedb30f7e71b7595fb2fb4",
-    "historical_acceptance_sha256": "f16408c87116bf5aaaaa13893868038c6437d6c058f932c964f466e8cea2badc"
+    "historical_population_sha256": "12e434d92c07341bb3cdc0e42b04ff772cc32046ed1715ee1df1dc4a2195d2b5",
+    "historical_acceptance_sha256": "eca7c862beb2eb46fe93d29e8c8e31b94c3eafed9d09987814bdecb15a6efdc4"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7041,7 +7041,7 @@
     "?Unknown_0049CA20@DisplayClass@@QAEXH@Z": 4835872,
     "?Reset_Light_Converts_00529720@@YAXXZ": 5412640,
     "?Unknown_0055A490@MapClass@@QAEPAVCellClass@@XZ": 5612688,
-    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?unknown_func_4ed200@HouseClass@@QAEPAVWaypointClass@@ABVCell@@@Z": 5165568,
     "?Unknown_00630A00@RadarClass@@QAEXXZ": 6490624,
     "?unknown_slot29@RadarClass@@UAEXABVRect@@@Z": 6490176,

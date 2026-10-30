@@ -4,8 +4,8 @@
     "id": "population-2936",
     "inventory_sha256": "6016fd8b74f378c84c98c08977fe9d3bf8c030027fca3c5c99826c52be0b9611",
     "gaps_sha256": "2505ebcbb541e8282c4750bd2c67002ee8f73d4ee78474b59ba0d7d205940666",
-    "historical_population_sha256": "662c022d2cfa856254070447bd962c0dfe79494be88df4653385c7c1f5deed97",
-    "historical_acceptance_sha256": "6febcbec1de59890d4ff52cf472f0279ee780e2e1f558fbc67e852f9dd7e86b1"
+    "historical_population_sha256": "febb3979c9a2f608301dc4fb20e17b0145e223dac9b2aa81d538f2026fe22e3d",
+    "historical_acceptance_sha256": "0a6e6d27461f70bcea170161463280f569eb1eb8780d3e0ed52ac3bd1d69487c"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -7782,7 +7782,7 @@
     "__imp__OleLoadFromStream@12": 7972332,
     "?unknown_objects_ac0c30@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275312,
     "?Reset_Light_Converts_00529720@@YAXXZ": 5412640,
-    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?Unknown_00630A00@RadarClass@@QAEXXZ": 6490624,
     "?Unknown_00631ED0@RadarClass@@QAEXXZ": 6495952,
     "?RadarEventClass_unknown_delete_all_63c640@@YAXXZ": 6538816,

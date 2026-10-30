@@ -4,8 +4,8 @@
     "id": "population-3141",
     "inventory_sha256": "38a02aa10f58dc9599a98e8fba0ff75a122b5b6b9e663828bd5f6b9e69309560",
     "gaps_sha256": "72e5f850c841c892dd002a0b1f88388506018642e6f3e11866367a040fc005f0",
-    "historical_population_sha256": "74cfef4bd12b284d209c5746263d383e539f990c378e98c87e8815ea0e84c99e",
-    "historical_acceptance_sha256": "56aec9ca9c77997c6d39ea508164b03013b6f394e3eb7650e00979843bbe776a"
+    "historical_population_sha256": "458e6187e609e7539f2ad3fff14cdf2c99588d36eb78119bfb07dceec73f359d",
+    "historical_acceptance_sha256": "b6c2b69339e9e7d15acd610a262e2aa8ba147fcb15f56267ead458732650cd00"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -13660,7 +13660,7 @@
     "?Unknown_0055A550@MapClass@@QAEXXZ": 5612880,
     "?Unknown_0055A490@MapClass@@QAEPAVCellClass@@XZ": 5612688,
     "?unknown_int_a6fa2c@@3HA": 10943020,
-    "?Unknown_004790F0@CellClass@@QAEXHHHHHH@Z": 4690160,
+    "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?Unknown_0049E5E0@DisplayClass@@QAEXXZ": 4842976,
     "?Unknown_004798F0@CellClass@@QAEXXZ": 4692208,
     "?Load@LayerClass@@QAEJPAUIStream@@@Z": 5458560,

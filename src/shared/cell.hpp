@@ -217,7 +217,7 @@ public:
     void unknown_47c8a0();                      // 0x0047C8A0 (increments +0x130 up to +0x134)
     // Westwood's Init_Drawer: takes the drawer given, or finds or makes one for the cell's light (+0x34), and keeps the light values.
     // arg1 is the drawer (a LightConvertClass *; retyping it is a rename of the accepted callers' binding).
-    void Unknown_004790F0(int arg1, int intensity, int ambient, int brightness, int tile_brightness, int alt_brightness);   // 0x004790F0 (TerrainClass slots 67/68, DisplayClass 0x0049E570)
+    void Init_Drawer(LightConvertClass *drawer, int intensity, int ambient, int brightness, int tile_brightness, int alt_brightness);   // 0x004790F0 (TerrainClass slots 67/68, DisplayClass 0x0049E570 pass no drawer)
     void Inc_Drawer_Ref_Count(LightConvertClass *drawer) const;   // 0x00479C90
     void Dec_Drawer_Ref_Count(LightConvertClass *drawer) const;   // 0x00479CA0
     // Westwood's Pick_Drawer and Init_Light (TibSun CELL.CPP order).
