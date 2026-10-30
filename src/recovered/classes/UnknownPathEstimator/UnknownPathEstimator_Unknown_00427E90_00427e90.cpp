@@ -5,8 +5,8 @@
 
 void UnknownPathEstimator::Unknown_00427E90()
 {
-    unknown_0c->entries[0xFFFF].unknown_14 = 0;
-    unknown_10->entries[0xFFFF].unknown_0c = 0;
+    unknown_0c->count = 0;
+    unknown_10->count = 0;
     unknown_14->Clear();
     unknown_68->Clear();
     if (++unknown_28 == 0) {

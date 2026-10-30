@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Voxel267 voxel drawers, Render_Shadow, Read_File; Span268 path estimator large functions (first: re-land Span266 r3, which failed the full build after Voxel265's headers); Loco269 Hover/Fly/Rocket/Teleport/DropPod; Vein270 VeinholeMonsterClass. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Event271 EventClass::Execute via TibSun event.cpp; TAction272 TAction.CPP via TibSun taction.cpp; Span268 path estimator large functions (first: re-land Span266 r3, which failed the full build after Voxel265's headers); Loco269 Hover/Fly/Rocket/Teleport/DropPod. All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the

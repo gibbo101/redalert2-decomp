@@ -12,14 +12,14 @@
 UnknownPathEstimator::UnknownPathEstimator()
     : unknown_00(false), unknown_01(false), unknown_02(false), unknown_03(true), unknown_04(1.0f), unknown_08(true),
       unknown_18(0), unknown_1c(0), unknown_20(0), unknown_24(0), unknown_28(-1), unknown_2c(-1), unknown_38(true),
-      unknown_3c(0), unknown_6c(-1), unknown_70(0), unknown_72(0)
+      unknown_3c(0), unknown_6c(-1), unknown_70(0, 0)
 {
     unknown_14 = new UnknownPathEstimatorBlock(0x10000);
     unknown_68 = new UnknownPathEstimatorBlock(0x2710);
-    unknown_10 = new UnknownPathTable16;
-    unknown_0c = new UnknownPathTable24;
-    unknown_0c->entries[0xFFFF].unknown_14 = 0;
-    unknown_10->entries[0xFFFF].unknown_0c = 0;
+    unknown_10 = new UnknownPathNodeTable;
+    unknown_0c = new UnknownPathEntryTable;
+    unknown_0c->count = 0;
+    unknown_10->count = 0;
     unknown_14->Clear();
     unknown_68->Clear();
     for (int index = 0; index < 3; index++) {
@@ -27,7 +27,7 @@ UnknownPathEstimator::UnknownPathEstimator()
         unknown_4c[index] = 0;
         unknown_58[index] = 0;
         unknown_74[index].Clear();
-        for (int slot = 0; slot < 250; slot++) {
+        for (int slot = 0; slot < 500; slot++) {
             unknown_bc[index][slot] = 0;
         }
         unknown_c74[index] = 0;

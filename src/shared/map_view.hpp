@@ -123,12 +123,27 @@ public:
     void Unknown_00555A60(Cell const &cell);                              // 0x00555A60
     Cell Unknown_00568ED0(Cell const &cell, Cell const &from);   // 0x00568ED0
     bool Unknown_00569320(Cell const &cell);                              // 0x00569320
+    Cell Unknown_00564F70(CellClass *cell, bool bridge);                  // 0x00564F70 (the zone connection cell of a cell, its bridge deck when bridge; TS Get_Bridge_Zone_Connection_Cell)
+    int Unknown_005500D0(Cell const &cell, int distance, int start);      // 0x005500D0 (shared/map.hpp)
+    Cell Unknown_00565610(Cell const &cell, int layer, unsigned int subzone); // 0x00565610 (a bridge end cell in the subzone, or (0,0); TS Find_Bridge_End_Cell_For_Subzone)
+    int Unknown_0054FAB0(Cell const &cell);                               // 0x0054FAB0 (shared/map.hpp)
+    // Lists the layer subzones around the cell's (hypothesis); true sends the caller to 0x0042A840 (0x00565EB0).
+    bool Unknown_00565EB0(CellClass &cell, int layer, DynamicVectorClass<unsigned short> *list, int arg4);
 
     // The map's data the other units read, at its shared/map.hpp offsets
     // (the light class has no other members, so the gap is padding).
-    char unknown_010[0x70 - 0x10];
+    char unknown_010[0x6C - 0x10];
+    char *unknown_6c;                           // +0x6C (shared/map.hpp; 10 bytes per cell: the subzone of each path estimator layer, a short each)
     int unknown_70[3];                          // +0x70 (shared/map.hpp)
+#ifdef RA2_SHARED_SUBZONE_TRACKING_HPP
+    // Only units that include shared/subzone_tracking.hpp first see the vectors (the element's list
+    // member makes every VectorClass instantiation that sees it emit the list's own members).
+    char unknown_07c[0x88 - 0x7C];
+    DynamicVectorClass<SubzoneTrackingStruct> SubzoneTracking[3];   // +0x88 (shared/map.hpp)
+    char unknown_0d0[0xE8 - 0xD0];
+#else
     char unknown_07c[0xE8 - 0x7C];
+#endif
     Rect MapSize;                               // +0xE8 (shared/map.hpp)
     Rect MapLocalSize;                          // +0xF8 (shared/map.hpp)
     char unknown_108[0x120 - 0x108];

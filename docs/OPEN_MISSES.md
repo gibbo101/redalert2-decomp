@@ -644,3 +644,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Voxel library after Voxel265: 0x71BAA0 86.55, 0x71BF20 63.39 (true body 665 B); drawers/Read_File/Render_Shadow to do.
 - Ship/Drive after Loco263: Draw_Matrix 82.25 (one Value call out of line in the first expansion only), Process 77.65
   (CDTimerClass(long) 0x463F80 out of line in Set_Slope), Piggyback_CLSID x5 (com_ptr.hpp attach model).
+- VeinholeMonster after Vein270 (NOTES, u.cpp, w/u_best.cpp, w/hdr_best): Load_All 0x711E60 99.21 (body_bytes 740),
+  Build_Growth_Queue 0x7115B0 98.39 (two stack slots), Draw_It 0x710880 81.32, dtor 0x70FDF0 66.91, AI 0x710250 64.19
+  (body_bytes 1480; timer ctor 0x463F80 out of line inside Graphic_Logic). Rules->unknown_d4 read directly, not via inline.
+- Voxel library after Voxel267 (NOTES, hdr/ overlay): Render_Shadow 0x719C10 78.11 (frame slots only; needs
+  UnknownVoxelRecord48, unify with the globals unit 0x716F10's struct), Read_File 0x719160 73.61 (header retypes, frame
+  0x13c vs 0x120, unsigned palette loop), lighting drawers 0x71AD30 81.84 / 0x71AFA0 88.58 (normal byte spilled to a slot).

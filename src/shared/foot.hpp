@@ -394,14 +394,7 @@ public:
 class UnitClass;
 extern DynamicVectorClass<UnitClass *> Units;
 
-// The path a search returns (0x20 bytes; FootClass 0x004C3000 copies it
-// whole to slot 305; hypothesis: Westwood's PathType).
-struct UnknownPathType {
-    int unknown_00;
-    int unknown_04;                             // +0x04 (nonzero: a path was found)
-    int Length;                                 // +0x08 facings in the buffer
-    int unknown_0c[5];
-};
+// The path a search returns (UnknownPathType): shared/path_estimator.hpp.
 // The path estimator at 0x008315C8: shared/path_estimator.hpp.
 #include "shared/path_estimator.hpp"
 // Movement zones by MovementZone (0x007A1200; hypothesis).
