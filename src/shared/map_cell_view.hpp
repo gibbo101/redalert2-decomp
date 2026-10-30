@@ -9,6 +9,7 @@
 #include "shared/object.hpp"
 #include "shared/cell.hpp"
 #include "shared/map_view.hpp"
+class LightConvertClass;
 
 // The cell at a cell position (MapClass::operator[] 0x00548070).
 inline CellClass &Map_Cell(Cell const &cell)
@@ -26,6 +27,10 @@ public:
     char unknown_2b1[0x2D5 - 0x2B1];
     bool unknown_2d5;                       // +0x2D5 (CellClass::unknown_47c200: false refuses the cell)
     bool unknown_2d6;                       // +0x2D6 (CellClass::unknown_478ba0: tiberium may grow on the tile)
+
+    // 0x0052C230 (shared/isometric_tile_type.hpp; CellClass::unknown_4754b0).
+    void unknown_func_52c230(LightConvertClass *drawer, int arg2, Surface *surface, int x, int y, Rect rect,
+        int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, int arg13, int arg14);
 };
 extern DynamicVectorClass<IsometricTileTypeClass *> IsoTileTypes;
 

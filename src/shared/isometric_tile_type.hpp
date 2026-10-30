@@ -75,6 +75,10 @@ public:
     void unknown_func_52e3d0();                                         // 0x0052E3D0 (rebuilds unknown_274)
     char unknown_func_52b6f0(int index);                               // 0x0052B6F0 (a cell's +0x2A byte of the image; hypothesis)
     unsigned short unknown_func_52e360(int index, int value, bool second) const;    // 0x0052E360
+    // Draws one cell of the tile image (0x0052C230; arguments are hypotheses: a light converter,
+    // a cell index, the surface, the screen point, the clip rectangle, a height and a level).
+    void unknown_func_52c230(LightConvertClass *drawer, int arg2, Surface *surface, int x, int y, Rect rect,
+        int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, int arg13, int arg14);
 
     int ArrayIndex;                                     // +0x264
     char unknown_268[0x274 - 0x268];                    // +0x268

@@ -79,6 +79,10 @@ public:
 UnknownCellLookup *__fastcall Unknown_007101B0(Cell const &cell);
 
 
+// The ore stage by the count of neighbours with the same tiberium (0x007D2C10;
+// Westwood's _adj in Tiberium_Adjust: 0, 1, 3, 4, 6, 7, 8, 10, 11).
+extern int unknown_tiberium_stage_7d2c10[9];
+
 // The map's cell table (MapClass +0x134 VectorClass<CellClass *>; this is
 // its element storage pointer at 0x00832618, x + y * 512).
 extern CellClass **unknown_map_cells_832618;
@@ -173,6 +177,7 @@ public:
     bool unknown_47ba10(int house) const;      // 0x0047BA10 (visible to the player's house; hypothesis)
     bool unknown_47cdd0() const;                // 0x0047CDD0 (land allows ...; no building, not blocked)
     Point2D unknown_475440() const;             // 0x00475440 (the overlay image offset in the cell; hypothesis)
+    void unknown_4754b0(Point2D const &point, Rect const &rect);   // 0x004754B0 (draws IsoTileTypes[0] at point; Tactical 0x006A3641)
     void unknown_474260(int arg1, int arg2, int frame);  // 0x00474260 (draws the shroud frame; hypothesis)
     void unknown_474510(int arg1, int arg2, int frame);  // 0x00474510 (draws the fog frame; hypothesis)
     void unknown_475520(int arg1, int arg2);    // 0x00475520 (updates and draws the cell's shroud and fog frames; Tactical 0x006A3FA6)
@@ -183,7 +188,7 @@ public:
     void unknown_47a4e0();                      // 0x0047A4E0 (redraws the cell's 60x30 screen area; BuildingClass 0x0043C1F0)
     int unknown_47a5a0();                       // 0x0047A5A0 (bit per cardinal neighbour holding veins: an IsVeins overlay, or overlay 0x7E with data from 48)
     bool unknown_475840(int overlay, int facing) const;   // 0x00475840 (whether a wall of overlay type joins this cell toward facing: the same wall, or a gate or wall tower; hypothesis)
-    bool unknown_478ba0(bool arg1);             // 0x00478BA0 (whether tiberium may grow here; hypothesis)
+    bool unknown_478ba0(bool arg1);             // 0x00478BA0 (Westwood's Can_Tiberium_Germinate; arg1 unused. Hypothesis to fix: the spread 0x00478A40 passes a TiberiumClass *, other callers 0)
     void unknown_473d20(ObjectClass *object, bool alt);   // 0x00473D20 (unlinks object from the occupier list; MapClass 0x0054B04D)
     Rect unknown_4752b0() const;                // 0x004752B0 (a screen rectangle of the cell's contents; hypothesis)
     Rect unknown_474eb0() const;                // 0x00474EB0 (another; hypothesis)
@@ -191,7 +196,7 @@ public:
     bool unknown_4788e0() const;                // 0x004788E0 (the ore may grow here: scenario +0x222A, ore below its last stage; hypothesis)
     bool unknown_478950() const;                // 0x00478950 (the ore may spread from here; hypothesis)
     bool unknown_4789d0();                      // 0x004789D0 (grows the ore through unknown_47c3a0; hypothesis)
-    bool unknown_47c3a0(int tiberium, bool arg2);   // 0x0047C3A0 (not recovered)
+    bool unknown_47c3a0(int tiberium, bool arg2);   // 0x0047C3A0 (not recovered; hypothesis to fix: arg2 is an int, the spread 0x00478A40 passes 3)
     int unknown_47ce70() const;                 // 0x0047CE70 (+0xF0 limited to Rules RadLevelMax, as an int)
     bool unknown_47c200();                      // 0x0047C200 (the map allows the cell, its tile type does not refuse it, it is not blocked and holds no building or terrain object)
     void unknown_47be00();                      // 0x0047BE00 (diagonal pass over the cells ahead)
@@ -242,7 +247,7 @@ public:
     void unknown_473700(unsigned arg1, unsigned arg2);                   // 0x00473700 (OverlayClass slot 71: the other bridge piece; hypothesis)
     bool unknown_4718b0(int arg1, int arg2, int arg3);                   // 0x004718B0 (whether a wall may be placed; hypothesis)
     void unknown_475960(bool arg1);                                      // 0x00475960
-    void unknown_476ba0(bool arg1);                                      // 0x00476BA0
+    int unknown_476ba0(bool pregame);                                    // 0x00476BA0 (Westwood's Tiberium_Adjust: the ore stage from its neighbours; answers the value)
     void unknown_471d10();                      // 0x00471D10 (IsometricTileClass slot 71: after the tile changes; hypothesis)
     void Unknown_00472540(int value);           // 0x00472540 (clears an overlay with -1: AnimClass 0x004226D0, TerrainClass slot 52)
     int unknown_4706c0(Point2D const &point) const;       // 0x004706C0 (height at a lepton position in the cell; hypothesis)
