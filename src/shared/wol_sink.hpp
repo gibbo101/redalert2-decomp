@@ -14,6 +14,13 @@
 // hypotheses otherwise.
 #ifndef RA2_WOL_SINK_HPP
 #define RA2_WOL_SINK_HPP
+// The unit inlines VectorClass::operator[] and DynamicVectorClass::Count (0x0073F550).
+#ifndef VECTOR_IMPLEMENT_VECTOR_ACCESSORS
+#define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
+#endif
+#ifndef VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
+#endif
 
 #include "shared/unknown_globals.hpp"
 #include "shared/wdt_state.hpp"
@@ -939,5 +946,14 @@ extern "C" wchar_t *__cdecl wcscpy(wchar_t *destination, wchar_t const *source);
 // WOnline helper: ECX is an output address (saved at 0x0074fcbc);
 // return paths use AL. The original free-function name remains unknown.
 bool __fastcall Find_Local_Address_0074fcb0(IPXAddressClass *address);
+
+// Reads list-box item `index` into a wide string (0x00600F10).
+LRESULT __fastcall unknown_get_list_item_wide_text(HWND window, WPARAM index, WideString &text);
+// A file-static Wstring (0x00B29CD4; initializer 0x0073B8A0).
+extern Wstring unknown_wstring_b29cd4;
+// The index of the session player with this name (1: the local player; 0x0073D3F0).
+int __fastcall Unknown_0073d3f0(Wstring const &name);
+// Connects to a WOL server (0x007424C0; hypothesis).
+bool __fastcall Unknown_007424c0(WOL::Server *server);
 
 #endif

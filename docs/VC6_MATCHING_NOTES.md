@@ -691,3 +691,20 @@ verified on the target.
 - A class template member's out-of-line copy (e.g. WolDictionary<WideString,bool>::Shrink_Table 0x5CD9A0) is emitted only
   when the member is defined outside the class and some caller in the unit keeps a call to it; the accepted row source
   is an explicit instantiation (`template void X<...>::F();`), as for 0x51E760 (Netshare243).
+
+## /Ob2 inline decision rule (Inline248, read from C2.DLL's P2 inline routine 0x1072D288 and confirmed in lab units)
+
+- Every function has an IL size `s` (its own unexpanded body, call nodes included; lab: a constant global store ~6,
+  an empty body ~12; a caller's S ~18 plus its statements).
+- Root budget = max(1000, 2*S(caller)); a running total starting at S stops all further inlining past 35000.
+- Sites are decided in evaluation order. N_i = inline-candidate sites in the same body from this one to the end,
+  itself included (calls with IL available, including empty or later-rejected ones; not virtual or declared-only).
+- Reject when s > 40 and s > budget (also depth limit, argument-count mismatch, the 35000 cap). Callees with s <= 40
+  are free: always expanded, never charged.
+- On accept: if s > 40 subtract s from the budget; then decide the callee's own body with budget / N_i (integer) at
+  depth+1 and subtract what it consumed. The division compounds per level (Study152's cost*(1+W) was a linear
+  approximation; the "waiting sites" rule is N_i).
+- Practical: a tiny charged ctor out of line inside an inlined chain means the budget reaching that level was tiny;
+  pending extra sites only divide one level, while each charged inline helper level subtracts its size and divides
+  again. Out-of-line probe calls only raise S (the root budget). Measured sizes: CoordStruct ctor 41-52,
+  CoordStruct::operator- 71-88. Lab tools: build/class-work/Inline248/lab/.
