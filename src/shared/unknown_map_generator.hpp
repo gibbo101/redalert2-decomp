@@ -9,6 +9,11 @@
 class BuildingTypeClass;
 class UnknownMapGenerator {
 public:
+    void Generate_Urban_Areas_00586800();
+    DynamicVectorClass<Cell> *Create_Urban_Area_00586b40(Cell const &position,int count);
+    void Generate_Urban_Roads_00587330(DynamicVectorClass<Cell> &cells);
+    void Generate_Urban_Buildings_00587cf0(DynamicVectorClass<Cell> &cells);
+    void Generate_Urban_Units_00588100(DynamicVectorClass<Cell> &cells);
     void Generate_Rural_Areas_00589890();
     void Generate_Rural_Buildings_00589ac0(Cell const &position);
     void Generate_Rural_Units_00589f00(Cell const &position);
