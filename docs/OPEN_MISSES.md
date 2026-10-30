@@ -678,3 +678,5 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Load_MSCI 78.10, Load_CBPZ 96.77.
 - Init.CPP after Init279: Draw_Loading_Screen 0x516560 99.63, 0x516E70 97.62, Select_Game 93.08 (scorer ceiling),
   Allocate_Surfaces 0x519500 77.26; Init_Game 0x5116A0 and 0x519E70 not drafted.
+- VQA task.cpp after VQA280: plan refused because VQA_Open wrapped a call in `#pragma inline_depth(0)` copied from TibSun
+  (a reconstruction pragma is not evidence; VQA285 redoes it). VQA_Reset 0x77C7D0 71.6 (register choice).

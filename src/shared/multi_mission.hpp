@@ -11,12 +11,16 @@
 
 // A CD the map needs (RTTI: TypeList<DiskID>, an enum; -1 any disk, -2 the map file
 // itself is present).
+class INIClass;
+
 enum DiskID {
     DISK_ANY_UNKNOWN = -1
 };
 
 class MultiMission {
 public:
+    // The map entry of an INI section (0x00671670; called by Read_Scenario_Descriptions 0x00670C50).
+    MultiMission(INIClass &ini, char const *section);
     // The map entry the session's INI reader builds (0x00671C50): file name, description
     // (null: MSG:NoDescription), digest, official flag, comma-separated game modes (null: none).
     MultiMission(char const *filename, unsigned short const *description, char const *digest, bool official,

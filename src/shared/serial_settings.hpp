@@ -23,7 +23,7 @@ public:
     ~PhoneEntryClass() {}
 
     SerialSettingsType Settings;        // +0x00
-    char Name[42];                      // +0x70
+    unsigned short Name[21];                      // +0x70
     char Number[22];                    // +0x9A (length a hypothesis)
 };
 

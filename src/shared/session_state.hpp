@@ -21,6 +21,7 @@ class CCINIClass;
 class MultiplayerGameMode;
 class MultiMission;
 struct _iobuf;
+class CellClass;
 struct UnknownGameOptions {
     // Reads the block from a section; the computer slots default to
     // (first_slot for slot 1, else other_slots, -2, -2) (0x0066F1F0).
@@ -166,7 +167,13 @@ struct UnknownSessionState {
     int KickVotes[8];                       // +0x8B8 per connection: the kick votes received (0x00627210)
     UnknownKickVoters KickVoters[8];        // +0x8D8 per connection: the voters' ids
     MessageListClass Messages;              // +0x9D8 the on-screen messages (Red Alert's Session.Messages; 0x00A3DC70)
-    char unknown_1e74[0x1F74 - 0x1E74];
+    char unknown_1e74[0x1E88 - 0x1E74];
+    bool LANTaunts;                         // +0x1E88 RA2.INI [MultiPlayer] LANTaunts
+    bool WOLTaunts;                         // +0x1E89 [MultiPlayer] WOLTaunts
+    char unknown_1e8a[0x1F70 - 0x1E8A];
+    bool LANScrollText;                     // +0x1F70 [MultiPlayer] LANScrollText
+    bool WOLScrollText;                     // +0x1F71 [MultiPlayer] WOLScrollText
+    char unknown_1f72[0x1F74 - 0x1F72];
     union {
         // The cooperative campaign's score records, one per player (CampaignScoreClass
         // 0x00465D10 fills them from the houses; also unknown_session_scores_a3f20c).
@@ -181,7 +188,9 @@ struct UnknownSessionState {
     int ScoreWinner;                        // +0x22FC the last record of a house that did not lose (0x00465D10)
     int unknown_2300;                       // +0x2300 (capped at 3; also unknown_a3f598)
     CCFileClass RecordFile;                 // +0x2304 (Red Alert's Session.RecordFile)
-    char unknown_2368[0x2380 - 0x2368];
+    unsigned char Record : 1;               // +0x2368 bit 0 (Red Alert's Session.Record; hypothesis)
+    unsigned char Play : 1;                 // +0x2368 bit 1 (Red Alert's Session.Play: SyncBug settings are read)
+    char unknown_2369[0x2380 - 0x2369];
     unsigned short HostName_2380[20];       // +0x2380 the host's name (wide; also unknown_host_name_a3f618)
     char unknown_23a8[0x27B4 - 0x23A8];
     DynamicVectorClass<NodeNameType *> NodeList_27b4;  // +0x27B4 (a third of Red Alert's Games / Players / Chat lists)
@@ -212,12 +221,15 @@ struct UnknownSessionState {
     int unknown_2bbc[128];                  // +0x2BBC (the network reset sets each to -1)
     int unknown_2dbc;                       // +0x2DBC
     int unknown_2dc0[4];                    // +0x2DC0
-    char unknown_2dd0[0x2F98 - 0x2DD0];
+    char unknown_2dd0[0x2EF0 - 0x2DD0];
+    bool SendDelay;                         // +0x2EF0 [MultiPlayer] SendDelay
+    char unknown_2ef1[0x2F98 - 0x2EF1];
     int PortBase;                           // +0x2F98 RA2.INI [MultiPlayer] PortBase (1250..1745)
     int unknown_2f9c;                       // +0x2F9C a fixed port base (nonzero: PortBase takes it)
     UnknownSessionBlock_299C unknown_2fa0;  // +0x2FA0 (the same)
     bool unknown_2fc0;                      // +0x2FC0 step PortBase by 5 at the next network reset
-    char unknown_2fc1[0x2FC8 - 0x2FC1];
+    char unknown_2fc1[0x2FC4 - 0x2FC1];
+    int PortNumberOverride;                 // +0x2FC4 [MultiPlayer] PortNumberOverride
     // The game master (host): name and house index (-1: none). The load wait
     // 0x0065C520 clears both when it drops the master (names after TS/YR's
     // SessionClass MasterPlayerName/MasterPlayerID, hypothesis).
@@ -241,7 +253,15 @@ struct UnknownSessionState {
     int unknown_3048;                       // +0x3048
     int unknown_304c;                       // +0x304C
     int unknown_3050;                       // +0x3050 (-1)
-    char unknown_3054[0x3080 - 0x3054];
+    int TrapFrame;                          // +0x3054 [SyncBug] Frame (Red Alert's TrapFrame)
+    int TrapObjType;                        // +0x3058 [SyncBug] Type (an RTTI number)
+    char unknown_305c[0x306C - 0x305C];
+    int TrapTarget;                         // +0x306C [SyncBug] Target (low 24 bits)
+    char TrapTargetKind;                    // +0x3070 [SyncBug] Target (high byte)
+    char unknown_3071[0x3074 - 0x3071];
+    CellClass *TrapCell;                    // +0x3074 [SyncBug] Cell
+    int TrapCheckHeap;                      // +0x3078 [MultiPlayer] CheckHeap
+    int TrapPrintCRC;                       // +0x307C [SyncBug] PrintCRC
     unsigned char unknown_3080;             // +0x3080 (0x00672F10 returns it; the dialog control test 0x005E0760)
     char unknown_3081[0x3AA4 - 0x3081];
     int unknown_3aa4;                       // +0x3AA4 (MPCooperative slot 34 saves it, slot 37 restores it)
@@ -253,6 +273,8 @@ struct UnknownSessionState {
     // RA2.INI (0x00670380; Red Alert's Write_MultiPlayer_Settings; after the skirmish
     // dialog and WOL games).
     void Write_MultiPlayer_Settings();
+    // Reads the player, serial, phone book and SyncBug settings from RA2.INI (0x0066F3A0).
+    void Read_MultiPlayer_Settings();
     // Adds the four TXT_CWAIT_* strings to CallWaitStrings (0x0066EAA0).
     void Unknown_0066EAA0();
     // Reads the scenario descriptions and sets UniqueID (0x0066EDB0; Red Alert's One_Time).

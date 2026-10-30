@@ -8,6 +8,7 @@ class FirewallSettings {
 public:
     void Detect_And_Save_005b9e80();                // 0x005B9E80 (when type is still 0)
     void Save_005ba210();                           // 0x005BA210
+    void Load_005ba280();                           // 0x005BA280 (Read_MultiPlayer_Settings calls it once)
     int Detect_005ba2c0(bool *found);               // 0x005BA2C0 (thiscall, one stack argument)
 
     int unknown_00;                                 // +0x00 detected type; [MultiPlayer] FirewallSettings
