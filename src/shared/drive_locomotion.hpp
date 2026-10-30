@@ -69,6 +69,7 @@ public:
     virtual bool __stdcall Is_Piggybacking();                                   // 0x004A4C80
 
     double Slope_Ratio();                                                       // 0x0049FB90 (how far the slope change has run; 1.0 with none)
+    Matrix3D *unknown_49faa0(Matrix3D *matrix);                                 // 0x0049FAA0 (the slope tilt matrix: blended from the old ramp while the slope changes, else the ramp's; expanded by Draw_Matrix)
     void Set_Slope(int ramp);                                                   // 0x0049FBF0 (a new ramp: the old one kept, a 3-frame change)
     bool Stop_Driver();                                                         // 0x004A0E90 (clears the head-to coordinate; never called out of line)
     bool Start_Driver(CoordStruct const &headto);                               // 0x004A0EE0 (heads for a coordinate whose cell can be entered, marking the track; never called out of line)

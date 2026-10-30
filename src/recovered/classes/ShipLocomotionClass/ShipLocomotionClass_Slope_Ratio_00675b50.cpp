@@ -5,8 +5,5 @@
 
 double ShipLocomotionClass::Slope_Ratio()
 {
-    if (unknown_24.unknown_0c == 0) {
-        return 1.0;
-    }
-    return (double)(unknown_24.unknown_0c - unknown_24.Timer.Value()) / unknown_24.unknown_0c;
+    return unknown_24.Progress();
 }

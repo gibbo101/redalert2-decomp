@@ -54,6 +54,7 @@ int __fastcall Unknown_006A29B0(int pixels);
 // The slope tilt matrix for a cell ramp type (a copy of the table entry at
 // 0x00AF8608 + 48 * ramp; LocomotionClass::Shadow_Matrix and the locomotors).
 Matrix3D * __fastcall Unknown_00718D60(Matrix3D *matrix, int ramp);     // 0x00718D60 (fills and returns matrix)
+Matrix3D * __fastcall Unknown_00718DF0(Matrix3D *matrix, int from, int to, double alpha);   // 0x00718DF0 (the tilt part way between two ramps; fills and returns matrix)
 // Where an object is, as a value (an inline accessor: each use copies the
 // whole coordinate; Drive and Ship Is_Moving compare its X and Y).
 inline CoordStruct Object_Coord(ObjectClass const *object)
@@ -122,6 +123,23 @@ struct UnknownSlopeTimer {
     UnknownSlopeTimer() : unknown_0c(0) {}
     UnknownSlopeTimer(NoInitClass const &noinit) : Timer(noinit) {}
     UnknownSlopeTimer(int duration) : Timer(duration), unknown_0c(duration) {}
+    // The frames spent so far (TibSun ProgressTimerClass::Time_Spent).
+    int Time_Spent() const
+    {
+        return unknown_0c - Timer;
+    }
+    // How far the change has run, 0..1 (1.0 with no duration).
+    double Progress() const
+    {
+        if (unknown_0c == 0) {
+            return 1.0;
+        }
+        return (double)Time_Spent() / (double)unknown_0c;
+    }
+    bool Has_Completed2() const
+    {
+        return Progress() >= 1.0;
+    }
     CDTimerClass<FrameTimerClass> Timer;    // +0x00
     int unknown_0c;                         // +0x0C
 };
