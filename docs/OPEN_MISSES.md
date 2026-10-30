@@ -746,3 +746,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x6AA990 90.07 (stack slots); Register_Dirty_Area 0x6A3020 65.58 (needs bool rename first; second Union inlines); ctor
   0x6A24B0 99.02. Inline members added to rect.hpp broke another unit's full build for Tactical300 (not bisected), yet
   Cell301's Point2D operator+/+= landed exact.
+- FootClass after Foot302 (NOTES, w/): Can_Reach slot 102 0x4C8730 98.31 (one load scheduled late); Mission_Guard_Area
+  slot 130 0x4C5900 83.70 (Delete 0x454B20 must stay out of line; needs 0x4CE210 re-owned from population-19);
+  Mission_Hunt slot 132 0x4C48E0 80.95; Draw_Action_Line 0x4CAB90 74.06 (one Rect slot too many). Seeded: slot 78 0x4C61A0.

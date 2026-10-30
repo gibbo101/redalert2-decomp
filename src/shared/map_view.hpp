@@ -182,7 +182,11 @@ public:
     virtual bool unknown_slot39(Cell const &cell, HouseClass *house);                    // slot 39 0x0049A370
     void Unknown_00498F10(Cell const *list);                                    // 0x00498F10 (the placement cursor's cell list)
     // The pending placement (as shared/display.hpp; HouseClass::Manual_Place sets them).
+#ifdef RA2_SHARED_MAP_HPP
+    char unknown_1170[0x11A0 - 0x1170];   // after the full MapClass (shared/map.hpp ends at +0x1170)
+#else
     char unknown_130[0x11A0 - 0x130];
+#endif
     ObjectClass *unknown_11a0;      // +0x11A0 the object waiting for placement
     void *unknown_11a4;             // +0x11A4 its type
     int unknown_11a8;               // +0x11A8 its house (-1)

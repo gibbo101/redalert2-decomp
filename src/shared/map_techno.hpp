@@ -14,7 +14,10 @@
 
 class HouseClass;
 class CellClass;
-class ObjectClass;
+// ObjectClass as the Map unit sees it: only the virtual destructor (slot 8,
+// AbstractClass), which deletes the display's pending object (0x0055B060).
+class ObjectClass : public AbstractClass {
+};
 
 class TechnoClass : public AbstractClass {
 public:
@@ -78,7 +81,9 @@ extern DynamicVectorClass<BuildingClass *> unknown_BuildingClass_list_00a40af8;
 // A house type as MapClass 0x00567380 sees it (stand-in; shared/house_type.hpp).
 class HouseTypeClass {
 public:
-    char unknown_000[0x1A7];
+    char unknown_000[0xB8];
+    int House;                              // +0xB8 the index in HouseTypes (as shared/house_type.hpp)
+    char unknown_bc[0x1A7 - 0xBC];
     bool WallOwner;                         // +0x1A7
 };
 

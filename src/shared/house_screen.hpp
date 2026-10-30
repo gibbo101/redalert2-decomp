@@ -62,7 +62,9 @@ public:
     int unknown_5310[20];               // +0x5310 per house index: units, infantry, aircraft killed (as shared/house.hpp)
     int unknown_5360;                   // +0x5360
     int unknown_5364[20];               // +0x5364 per house index: buildings killed
-    char unknown_53b4[0x56D0 - 0x53B4];
+    char unknown_53b4[0x5414 - 0x53B4];
+    unsigned int unknown_5414;          // +0x5414 house bits that see this house's sight (TibSun RadarSpied; MapClass 0x00549C50)
+    char unknown_5418[0x56D0 - 0x5418];
     int unknown_56d0[0x4204];           // +0x56D0 a value per 4 x 4 cell block (MapClass 0x0054E3A0)
     char IniName[0x15];                 // +0x15EE0 the [Houses] entry value
     char unknown_15ef5[0x15F16 - 0x15EF5];

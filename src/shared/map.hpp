@@ -222,6 +222,7 @@ public:
     bool Unknown_00568140(CoordStruct const &coord);    // 0x00568140 (AircraftClass slot 101)
     bool Unknown_00568280(CoordStruct const &coord);    // 0x00568280 (as 0x00568140 for the cells' +0x13C; RadarClass)
     void Unknown_0054A550(CoordStruct const &coord, int arg2, int arg3, int arg4);   // 0x0054A550 (InfantryClass slot 93)
+    void Unknown_0054A8F0(CoordStruct const &coord, int radius);   // 0x0054A8F0 (clears +0x130/+0x134 and sets +0x12C bits 3-4 in a disc around coord)
     // The index of a cell's 4 x 4 block in a 130 x 130 grid with a one-block
     // border, the layout of HouseClass +0x56D0 (0x0054E370; FootClass slot 93).
     int Unknown_0054E370(Cell const &cell);
@@ -242,6 +243,10 @@ public:
     void Internal_Damage_Train_Bridge_EW_TopLeft(Cell const &cell, int dir);     // 0x00551360
     void Internal_Damage_Train_Bridge_NS_BottomLeft(Cell const &cell, int dir);  // 0x00551BB0
     void Internal_Damage_Train_Bridge_NS_TopRight(Cell const &cell, int dir);    // 0x00551CC0
+    void Internal_Destroy_Train_Bridge_EW_BottomRight(Cell const &cell, int dir); // 0x00551470
+    void Internal_Destroy_Train_Bridge_EW_TopLeft(Cell const &cell, int dir);     // 0x00551810
+    void Internal_Destroy_Train_Bridge_NS_BottomLeft(Cell const &cell, int dir);  // 0x00551DD0
+    void Internal_Destroy_Train_Bridge_NS_TopRight(Cell const &cell, int dir);    // 0x005521A0
     void Internal_Damage_High_Bridge_EW_BottomRight(Cell const &cell, int dir);  // 0x00554750
     void Internal_Damage_High_Bridge_EW_TopLeft(Cell const &cell, int dir);      // 0x00554850
     void Internal_Damage_High_Bridge_NS_BottomLeft(Cell const &cell, int dir);   // 0x005550A0
@@ -257,6 +262,16 @@ public:
     // Marks the cells under impassable bridge connections (TibSun Set_WasUnderBridge_Flags).
     void Unknown_00568B00();                                    // 0x00568B00
     Cell Unknown_00568ED0(Cell const &cell, Cell const &from);   // 0x00568ED0 (FootClass 0x004C4C30)
+    Cell Unknown_005651E0(Cell const &cell, Cell const &from);   // 0x005651E0 (the end of the zone connection at cell nearer to from, else 0x005653C0)
+    Cell Unknown_005653C0(Cell const &cell, Cell const &from);   // 0x005653C0
+    int Unknown_005658C0(int &zone);                             // 0x005658C0 (the most common zone among the local map's type-4 cells and its count)
+    // The random map generator's cliff passes (TibSun Build_All_Cliffs, Expand_High_Ground,
+    // Place_Cliff, Mark_Fill_Area, Rebuild_Cliffs_At; names are hypotheses).
+    bool Build_All_Cliffs(int unused, int region_id);           // 0x0055B060
+    bool Expand_High_Ground(CellClass *cellptr, int region_id); // 0x0055B210
+    bool Place_Cliff(CellClass *cellptr, int region_id);        // 0x0055B820
+    void Mark_Fill_Area(Cell const &cell, bool mark);           // 0x00567710
+    bool Rebuild_Cliffs_At(Cell const &cell);                   // 0x00567AE0
     bool Unknown_00569320(Cell const &cell);      // 0x00569320 (a bridge hut's bridge is intact; InfantryClass slot 28; hypothesis)
     // A walk over the map's cells: restart (0x0055A550) and next cell, or
     // null at the end (0x0055A490).
