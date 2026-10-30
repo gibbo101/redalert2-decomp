@@ -15,6 +15,7 @@
 #include "shared/win32_window.hpp"
 #include "shared/bink.hpp"
 #include "shared/cc_file_class.hpp"
+#include "shared/vqa_player.hpp"
 
 // The VQA option bits (a bit vector at 0x00AF9020; 18 options, option 6 set
 // by default). Index meanings are unknown.
@@ -40,67 +41,12 @@ public:
     Rect unknown_24;         // +0x24 area cleared before a frame
 };
 
-// The VQA player library (0x0077xxxx, __fastcall; names from the call
-// sites, all hypotheses). Results are VQA error codes (-1 none).
-struct VQAHandle {
-    unsigned short unknown_00;  // +0x00
-    unsigned short Width;       // +0x02
-    unsigned short Height;      // +0x04
-    unsigned short unknown_06[3];
-    unsigned short unknown_0C;  // +0x0C
-    unsigned short unknown_0E;
-    int Frames;                 // +0x10
-    unsigned char unknown_14[0x98];
-    class VQAClass *Player;     // +0xAC the owner (callbacks)
-};
-// The player configuration given to the VQA library (VQAClass +0x170; set
-// by the library's defaults 0x00777850, then by the VQAClass constructor).
-// Field meanings are hypotheses from the constructor's stores.
-typedef int (__cdecl *VQACallback)(VQAHandle *handle, int unknown2, int unknown3, int unknown4);
-struct VQAConfig {
-    VQACallback DrawerCallback;     // +0x00 0x0071D490 or 0x0071D640 (VQAClass flag 1)
-    VQACallback EventHandler;       // +0x04 0x0071D680
-    VQACallback unknown_08;         // +0x08 0x0071D6E0
-    int NotifyFlags;                // +0x0C
-    void (*unknown_10)();           // +0x10 0x004122C0 or 0x00411420 (VQA option 4)
-    int unknown_14;
-    void (*unknown_18)();           // +0x18 0x004115A0
-    char *unknown_1c;               // +0x1C
-    int unknown_20;                 // +0x20 (-1)
-    int unknown_24;                 // +0x24 (-1)
-    int unknown_28;
-    int unknown_2c;
-    int unknown_30;                 // +0x30 (constructor argument 6)
-    int unknown_34;                 // +0x34 (constructor argument 7)
-    int FrameRate;                  // +0x38 (60)
-    int unknown_3c;
-    int DrawFlags;                  // +0x40 bits 0x01, 0x04, 0x40, 0x80 from VQA options 15, 1, 10, 12
-    int OptionFlags;                // +0x44 bits 0x01, 0x04, 0x08, 0x20, 0x100
-    int unknown_48;                 // +0x48 (1 or 14)
-    int unknown_4c;                 // +0x4C (-1)
-    int unknown_50[3];
-    int unknown_5c;                 // +0x5C (0x2000)
-    int unknown_60;
-};
-void __fastcall VQA_Unknown_00777850(VQAConfig *config);                                         // defaults
+// The VQA player library (0x0077xxxx, __fastcall; shared/vqa_player.hpp).
+// Results are VQA error codes (-1 none).
 extern int unknown_int_a40b54;                              // 0x00A40B54 (low 16 bits: VQAConfig +0x84)
-int __fastcall VQA_Unknown_0077B7A0(char const *filename, VQAConfig *config, VQAHandle **handle);   // open
-int __fastcall VQA_Unknown_0077C640(VQAHandle *handle, int unknown2, int unknown3, int unknown4);
-int __fastcall VQA_Unknown_0077C6C0(VQAHandle *handle, int unknown2, int unknown3, int unknown4, int unknown5);
-int __fastcall VQA_Unknown_0077C2E0(VQAHandle *handle, int frame, int unknown3);                // seek
-int __fastcall VQA_Unknown_0077BF10(VQAHandle *handle, int unknown2, int unknown3);             // pause (2)
-void __fastcall VQA_Unknown_0077BE70(VQAHandle *handle);                                         // stop
-void __fastcall VQA_Unknown_0077C7D0(VQAHandle *handle);
-int __fastcall VQA_Unknown_0077C480(VQAHandle *handle, int unknown2, int x, int y, int width, int height);
 void __fastcall VQA_Unknown_0070B7F0(int unknown1, unsigned unknown2);
-int __fastcall VQA_Unknown_0077C8A0(VQAHandle *handle, int frames);
-int __fastcall VQA_Unknown_0077C920(VQAHandle *handle, int *unknown2, int *unknown3, int *state);
-int __fastcall VQA_Unknown_0077C440(VQAHandle *handle, void (*unknown2)(), void (*unknown3)());
-int __fastcall VQA_Unknown_0077CBA0(VQAHandle *handle);                                         // current time
-void VQA_Unknown_0077FD80();
 void __fastcall VQA_Unknown_0070B690(int unknown1);
 void VQA_Unknown_0070B820();
-void VQA_Unknown_0077FE89();
 void VQA_Unknown_0070BBC0();
 void VQA_Unknown_0070BF60();
 void VQA_Unknown_0070C0A0();
@@ -170,12 +116,7 @@ public:
     CCFileClass File;                      // +0x004
     bool FileOpen;                         // +0x068
     char Filename[0x107];                  // +0x069
-    VQAConfig Config;                      // +0x170 VQA configuration
-    int unknown_1d4;                       // +0x1D4 (configuration continued)
-    int unknown_1d8;                       // +0x1D8 (configuration)
-    VQAClass *Owner;                       // +0x1DC (configuration: this)
-    int unknown_1e0[5];                    // +0x1E0 (configuration)
-    int unknown_1f4;                       // +0x1F4 (configuration: low 16 bits of 0x00A40B54)
+    VQAConfig Config;                      // +0x170 VQA configuration (0x88 bytes)
     VQAHandle *Handle;                     // +0x1F8
     unsigned char Palette[0x300];          // +0x1FC current movie palette (PaletteClass layout)
     int CurrentFrame;                      // +0x4FC

@@ -117,32 +117,6 @@
       "source_order": 32090
     },
     {
-      "entry": 7850864,
-      "method": "0077cb70",
-      "symbol": "?unknown_decoder_time@@YIHPAUUnknownDecoderState_77cb70@@@Z",
-      "symbol_prefix": "?unknown_decoder_time@@YIHPAUUnknownDecoderState_77cb70@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 36,
-      "body_sha256": "8aa3881e154c7c6820fb4febe5815602c349d4c38d3ab9bddd7de66b3604bfee",
-      "padding_bytes": 12,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "34783f8fbe10dab890259bd61e24f8f17f35f2161d2d9bffde6fcf51ff942482",
-      "relocations": [],
-      "source_sha256": "efca0cb061bc7ec505c88b6a085aa73be357590856761e04c6e3c2b0af125c91",
-      "source": "src/recovered/unowned/unknown_decoder_time_0077cb70.cpp",
-      "population": "population-978",
-      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_decoder_time_0077cb70",
-      "source_order": 32091
-    },
-    {
       "entry": 6302928,
       "method": "00602cd0",
       "symbol": "?Find@UnknownChunkList_602cd0@@QAEPAUUnknownChunk_602cd0@@PBD@Z",

@@ -1,11 +1,11 @@
-// int VQAClass::Unknown_0071CBC0(int value) (0x0071CBC0): sets a configuration value (-1 keeps it); returns the old one.
+// int VQAClass::Unknown_0071CBC0(int value) (0x0071CBC0): sets the configuration volume (-1 keeps it); returns the old one.
 #include "shared/movie.hpp"
 
 int VQAClass::Unknown_0071CBC0(int value)
 {
-    int old = unknown_1d4;
+    int old = Config.Volume;
     if (value != -1) {
-        unknown_1d4 = value;
+        Config.Volume = value;
     }
     return old;
 }

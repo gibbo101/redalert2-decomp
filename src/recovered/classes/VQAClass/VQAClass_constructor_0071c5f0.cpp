@@ -7,13 +7,13 @@
 // @ref ?VQA_Unknown_00777850@@YIXPAUVQAConfig@@@Z=00777850
 // @ref ?VQA_Unknown_0071DBA0@@YI_NH@Z=0071dba0
 // @ref ?unknown_int_a40b54@@3HA=00a40b54
-// @ref ?Unknown_004122C0@@YAXXZ=004122c0
-// @ref ?Unknown_00411420@@YAXXZ=00411420
-// @ref ?Unknown_004115A0@@YAXXZ=004115a0
+// @ref ?Unknown_004122C0@@YAKPAUVQAHandle@@@Z=004122c0
+// @ref ?Unknown_00411420@@YAKPAUVQAHandle@@@Z=00411420
+// @ref ?Unknown_004115A0@@YAHPAUVQAHandle@@HHH@Z=004115a0
 
-void Unknown_004122C0();
-void Unknown_00411420();
-void Unknown_004115A0();
+unsigned long __cdecl Unknown_004122C0(VQAHandle *vqa);
+unsigned long __cdecl Unknown_00411420(VQAHandle *vqa);
+int __cdecl Unknown_004115A0(VQAHandle *handle, int action, int buffer, int size);
 
 VQAClass::VQAClass(char const *filename, int flags, int (*callback538)(), void (*callback53c)(),
                    void (*callback540)(), int unknown6, int unknown7)
@@ -21,8 +21,8 @@ VQAClass::VQAClass(char const *filename, int flags, int (*callback538)(), void (
     char unknown;
     VQA_Unknown_00777850(&Config);
     Flags = flags;
-    Owner = this;
-    Config.unknown_1c = &unknown;
+    Config.Owner = this;
+    Config.ImageBuf = &unknown;
     Config.DrawFlags = 0;
     if (!VQA_Unknown_0071DBA0(15)) {
         Config.DrawFlags |= 1;
@@ -55,36 +55,36 @@ VQAClass::VQAClass(char const *filename, int flags, int (*callback538)(), void (
     } else {
         Config.OptionFlags |= 1;
     }
-    Config.unknown_20 = -1;
-    Config.unknown_24 = -1;
-    Config.unknown_28 = 0;
-    Config.unknown_2c = 0;
-    Config.NotifyFlags = 0;
-    Config.unknown_30 = unknown6;
-    Config.unknown_34 = unknown7;
+    Config.ImageWidth = -1;
+    Config.ImageHeight = -1;
+    Config.X1 = 0;
+    Config.Y1 = 0;
+    Config.DrawerCallback = 0;
+    Config.FrameRate = unknown6;
+    Config.DrawRate = unknown7;
     if (VQA_Unknown_0071DBA0(3) == true) {
-        Config.unknown_48 = 1;
+        Config.NumFrameBufs = 1;
     } else {
-        Config.unknown_48 = 14;
+        Config.NumFrameBufs = 14;
     }
-    Config.unknown_4c = -1;
+    Config.NumCBBufs = -1;
     if (Flags & 1) {
-        Config.DrawerCallback = VQA_Unknown_0071D640;
+        Config.StreamHandler = VQA_Unknown_0071D640;
     } else {
-        Config.DrawerCallback = VQA_Unknown_0071D490;
+        Config.StreamHandler = VQA_Unknown_0071D490;
     }
-    Config.EventHandler = VQA_Unknown_0071D680;
-    Config.unknown_08 = VQA_Unknown_0071D6E0;
+    Config.MemoryHandler = VQA_Unknown_0071D680;
+    Config.EventHandler = VQA_Unknown_0071D6E0;
     if (VQA_Unknown_0071DBA0(4) == true) {
-        Config.unknown_10 = Unknown_004122C0;
-        Config.FrameRate = 60;
+        Config.TimerCallback = Unknown_004122C0;
+        Config.RefreshRate = 60;
     } else {
-        Config.unknown_10 = Unknown_00411420;
-        Config.FrameRate = 60;
-        unknown_1f4 = unknown_int_a40b54 & 0xFFFF;
+        Config.TimerCallback = Unknown_00411420;
+        Config.RefreshRate = 60;
+        Config.LatencyAdjustment = unknown_int_a40b54 & 0xFFFF;
     }
-    Config.unknown_18 = Unknown_004115A0;
-    Config.unknown_5c = 0x2000;
+    Config.AudioHandler = Unknown_004115A0;
+    Config.HMIBufSize = 0x2000;
     CurrentFrame = 0;
     unknown_544 = 0;
     FrameCount = 0;
