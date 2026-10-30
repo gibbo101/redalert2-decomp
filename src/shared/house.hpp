@@ -397,6 +397,7 @@ public:
     // missing): 0 on success, 3 when refused (0x004E5E30; name after TS, from
     // its "Request to Begin_Production" messages).
     int Begin_Production(int kind, int index, bool naval, bool resume);
+    void MPlayer_Defeated_004e77f0();
     void Set_Factory(FactoryClass *factory, int kind, bool naval, int buildcat);   // 0x004EB8C0 (name after TS)
     // Adds to the power output / drain; when the house turns under- or
     // re-powered, every sink of its outgoing interface is told (names after TS).

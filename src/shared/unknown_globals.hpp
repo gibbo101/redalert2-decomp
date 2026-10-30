@@ -334,6 +334,7 @@ public:
     bool Unknown_0042EFD0();                               // 0x0042EFD0 (an allied beacon is shown and the blink phase is on)
     void Unknown_0042E150();                    // 0x0042E150 (frees the per-house blocks; last call of 0x00519960)
     void Unknown_0042E1A0();                    // 0x0042E1A0 (Read_Scenario_INI)
+    void Unknown_0042EBE0(int house); // removes the house beacon slots, original56-byte RET4
     bool Unknown_0042E700(int house);           // 0x0042E700 true when one of the house's three slots is empty
     // +0x00 three owned blocks per house (8 houses): the static initializer 0x0042D960
     // clears the 0x18 words, its atexit 0x0042D990 deletes each non-null one.

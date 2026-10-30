@@ -233,6 +233,7 @@ public:
     bool Unknown_006331A0();                                                    // 0x006331A0
     bool Unknown_00633130();                                                    // 0x00633130 (+0x14D4: the radar is on; as shared/radar.hpp)
     void Unknown_00633140(bool on);                                             // 0x00633140 (turns the radar on or off; as shared/radar.hpp)
+    void Unknown_00634970(int arg1); // as shared/radar.hpp
     void Unknown_006331E0(bool flag);                                           // 0x006331E0
     void Unknown_00631D40();                                                    // 0x00631D40 (as shared/radar.hpp)
     void Unknown_00634030();                                                    // 0x00634030
@@ -297,6 +298,8 @@ public:
     virtual wchar_t const *unknown_slot33(int id);              // slot 33 0x006A20B0 (the tooltip text; called directly)
     virtual bool unknown_slot54(int control);                   // slot 54 0x006A0DA0 (the sidebar shown or hidden)
     void Unknown_006A17B0();                                    // 0x006A17B0 (sets +0x4F15 and flags a redraw)
+    void Unknown_006A1EC0(); // as shared/tab.hpp
+    void Unknown_006A1F10(); // as shared/tab.hpp
 };
 #endif
 
