@@ -705,3 +705,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x6A3D00 59.46 and Render_Terrain 0x6A4350 51.05 (Coord_Snap CoordStruct ctor 0x41B630 out of line in the original),
   Register_Dirty_Area 0x6A3020 29.40 (second Union out of line); 0x6A9F50 take-over exact, lands with 0x6A3D00.
   The original inlines less here: helper sources are wordier (Inline293 studies it).
+- ownrdraw.cpp after OwnrDraw292 (NOTES, c/, hdr/ overlay): Edit proc 0x5F1900 96.47 (which copy of the shared
+  SetWindowLongA tail VC6 keeps), NewEdit 0x5F22A0 57.91, tab proc 0x5F0F40 42.51 (Bucket_Index out of line at 0x601C30),
+  progress 0x5FAFF0 76.92, push-button 0x5F42D0 70.01. Static/ScrollBar/trackbar/ComboBox/ListBox not started.

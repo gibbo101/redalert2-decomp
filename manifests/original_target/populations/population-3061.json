@@ -4,8 +4,8 @@
     "id": "population-3061",
     "inventory_sha256": "0ad8e33ec5add1275e8914e8104be6c4f125be6a963fab8dc167a0b565c5b84a",
     "gaps_sha256": "054adca50d73bc6afa4c3a6779d9926b804d01f714eb1c689e10de077a52101c",
-    "historical_population_sha256": "1366e1b04b218525545b271ccd1ec0755b363390ff2f03a7b958ca0749d6dc9a",
-    "historical_acceptance_sha256": "87724b31fe849aa50c87740fc2899099d3814a70c971a53e3afb59299d5b3c62"
+    "historical_population_sha256": "8a2afb0ae29347ea72c9b764fef7dc81735c614223cdb570c5a80fabf020cda6",
+    "historical_acceptance_sha256": "64ba0db38dca79ce5333121a55dcb0e74e56515a312dcf71ea1ff774df366546"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7472,7 +7472,7 @@
     "?unknown_slot41@UnitTypeClass@@UBE_NXZ": 7383280,
     "?unknown_slot53@SidebarClass@@UAEXXZ": 6798736,
     "?unknown_slot51@RadarClass@@UAE?AVCell@@ABUPoint2D@@@Z": 6486992,
-    "?unknown_slot52@RadarClass@@UAEXABUPoint2D@@@Z": 6488864,
+    "?unknown_slot52@RadarClass@@UAEXABUCoordStruct@@@Z": 6488864,
     "?unknown_slot52@FootClass@@UAE_NXZ": 5020624,
     "?unknown_slot62@AircraftClass@@UAEHPAVTechnoClass@@@Z": 4281280,
     "?unknown_slot78@AircraftClass@@UAE_NHH_N@Z": 4289712,

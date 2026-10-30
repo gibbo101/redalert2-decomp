@@ -4,8 +4,8 @@
     "id": "population-2792",
     "inventory_sha256": "d8264f12c10910f023f07e4111d1a563322f63354c8dda321e5f88fd6e685da2",
     "gaps_sha256": "e7224a98023fdaa02cd5c91264577c9ef1aaaa036f6d9492fd5242d1e99c7d4f",
-    "historical_population_sha256": "31242e4c9f07cc2528a50e2463a7305a3727f3269d96413855faf4b18fba0d07",
-    "historical_acceptance_sha256": "677ecd10b8b4dea8b92ed18ebc02fff2c6b6cc7be589bd37278d118da46eb5d7"
+    "historical_population_sha256": "aef94bef3366df3254ae6fcf621a76968f6c74eda8a2c8e4076318c5a88cc1c8",
+    "historical_acceptance_sha256": "a0476185e1c976e5bad15e59780c41f46186a3d58b2a33e1984695ad322bf283"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5094,7 +5094,7 @@
     "?unknown_slot51@RadarClass@@UAE?AVCell@@ABUPoint2D@@@Z": 6486992,
     "?Unknown_006A2B10@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6957840,
     "?Unknown_006A6BD0@Tactical@@QAE?AVCell@@ABUPoint2D@@@Z": 6974416,
-    "?unknown_slot52@RadarClass@@UAEXABUPoint2D@@@Z": 6488864,
+    "?unknown_slot52@RadarClass@@UAEXABUCoordStruct@@@Z": 6488864,
     "?Unknown_006A66B0@Tactical@@QAEXABUPoint2D@@@Z": 6973104,
     "?Unknown_0055A660@MapClass@@QAE_NABVCell@@_N@Z": 5613152,
     "?Unknown_00631570@RadarClass@@QAEXABVCell@@@Z": 6493552,
@@ -6873,7 +6873,7 @@
     "?Draw_Me@GaugeClass@@UAEHH@Z": 5046912,
     "?Draw_Thumb@GaugeClass@@UAEXXZ": 5047680,
     "?Draw_Me@TriColorGaugeClass@@UAEHH@Z": 5048112,
-    "?Fill_In_Data_0065cdd0@@YAXXZ": 6671824,
+    "?Fill_In_Data_0065cdd0@@YIXXZ": 6671824,
     "?Wait_For_Players_0065c520@@YI_NXZ": 6669600,
     "?Unknown_00675320@ShapeButtonClass@@QAE_NXZ": 6771488,
     "?Multiplayer_Start_Waypoints_0065fff0@@YI?AV?$DynamicVectorClass@VCell@@@@_N@Z": 6684656,

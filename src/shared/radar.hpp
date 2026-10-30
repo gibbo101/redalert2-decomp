@@ -202,7 +202,7 @@ public:
 
     virtual void unknown_slot50();                      // slot 50 0x0062F210 (frees shapes)
     virtual Cell unknown_slot51(Point2D const &xy);   // slot 51 0x0062FBD0 the cell under a screen point
-    virtual void unknown_slot52(Point2D const &point);  // slot 52 0x00630320 moves the tactical view
+    virtual void unknown_slot52(CoordStruct const &coord);  // slot 52 0x00630320 centres the tactical view on a coordinate
     virtual void unknown_slot53();                      // slot 53 0x0062F310 Init_For_House (loads shapes)
 
     // Adds (true) or removes the two radar shape buttons (0x0062F2D0).

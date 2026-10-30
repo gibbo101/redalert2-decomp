@@ -13,7 +13,7 @@
 // @ref ??_C@_0M@INGE@TXT_GAME_ID?$AA@=007f2004
 // @ref ??_C@_0N@LJCA@PROGBARM?4SHP?$AA@=007f1fe8
 // @ref ??_C@_13ECNF@?$AA?5?$AA?$AA@=007d64f4
-// @ref ?Fill_In_Data_0065cdd0@@YAXXZ=0065cdd0
+// @ref ?Fill_In_Data_0065cdd0@@YIXXZ=0065cdd0
 // @ref ?unknown_map_generator_a6fd68@@3VUnknownMapGenerator@@A=00a6fd68
 // @ref ?Read_Scenario_0065e760@@YI_NPBD_N@Z=0065e760
 // @ref ?Unknown_005359E0@Unknown535910@@QAEXXZ=005359e0

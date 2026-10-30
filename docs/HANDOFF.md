@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Scenario291 Scenario.CPP near-exact finishes (slot 52 rename first); Unit294 UnitClass near misses and TibSun-shaped slot rewrites; OwnrDraw292 ownrdraw.cpp control procs (TibSun Get lookup form); Inline293 helper-size study (wordier Westwood helpers; unblocks Tactical Render passes). All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Scenario291 Scenario.CPP near-exact finishes (slot 52 rename first); Unit294 UnitClass near misses and TibSun-shaped slot rewrites; Map295 MapClass span 0x543FE0-0x56CEF0 (non-virtual members, TibSun map.cpp); Inline293 helper-size study (wordier Westwood helpers; unblocks Tactical Render passes). All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the

@@ -4,8 +4,8 @@
     "id": "population-2831",
     "inventory_sha256": "f02ba5f05ba59a00f4a03d3aef9180571e20050d30fa9c2bae2a698bdff0c76f",
     "gaps_sha256": "a2221043b921c720bb7c035080d87a3c105c38a0d0c401666104b8cb39d28f1d",
-    "historical_population_sha256": "d1171e195dbcc840daadde0fbbc790716991a48da6a85e459e6621c62667e73f",
-    "historical_acceptance_sha256": "43df5b25bff58e8a409363f4b297e00ffeb1dfd1472df93652a94ff32995d31f"
+    "historical_population_sha256": "e09d5c47e7e48038c04ea44ae839424483bc8533728d056d563261d7ccd669e1",
+    "historical_acceptance_sha256": "b335a0c1fab339927d75646a7256dd19c56529a5cd177e140749346fa8427e74"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3625,7 +3625,7 @@
     "?Add@KamikazeTrackerClass@@QAEXPAVAircraftClass@@PAVAbstractClass@@@Z": 5445280,
     "?Load@SpawnManagerClass@@UAGJPAUIStream@@@Z": 6858704,
     "?Save@SpawnManagerClass@@UAGJPAUIStream@@H@Z": 6859120,
-    "?Fill_In_Data_0065cdd0@@YAXXZ": 6671824,
+    "?Fill_In_Data_0065cdd0@@YIXXZ": 6671824,
     "?Wait_For_Players_0065c520@@YI_NXZ": 6669600,
     "?Multiplayer_Start_Waypoints_0065fff0@@YI?AV?$DynamicVectorClass@VCell@@@@_N@Z": 6684656,
     "?Unknown_00660b60@@YIHPAVObjectClass@@AAVCell@@H@Z": 6687584,

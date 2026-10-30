@@ -223,8 +223,9 @@ void __fastcall Assign_Houses_0065fbb0();
 // Resets the scenario before a new one is read (0x0065D370; name hypothesis).
 void Clear_Scenario_0065d370();
 // Completes a freshly read scenario: view, tags, silos, map overlays and zones,
-// the gas cloud system and ore twinkles (0x0065CDD0; Westwood's Fill_In_Data).
-void Fill_In_Data_0065cdd0();
+// the gas cloud system and ore twinkles (0x0065CDD0; Westwood's Fill_In_Data;
+// __fastcall: its call setups come before the pushes after callee-pops calls).
+void __fastcall Fill_In_Data_0065cdd0();
 // Pauses and resumes the game: drag select aborted, mouse hidden or shown,
 // keyboard cleared (0x0065C3D0, 0x0065C420; names hypotheses).
 void Pause_Game_0065c3d0();

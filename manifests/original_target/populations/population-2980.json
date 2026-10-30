@@ -4,8 +4,8 @@
     "id": "population-2980",
     "inventory_sha256": "7df7fe6248389f6020b56ab4556d8e32ac9f1419e7c584b2cf1b00f8489654e1",
     "gaps_sha256": "596ac0a2fc79d72efd93e79ccf7c9424851bbb97223b6f21208bb9b8bed44808",
-    "historical_population_sha256": "aea6548ad51fbc6687af2f490ef446053d1523cb59220791a048ac49ea2f34b6",
-    "historical_acceptance_sha256": "31982bc496d20a1972ed580745eff5bb953a4b22d41dfa2b0e13101aaaff3775"
+    "historical_population_sha256": "4a9603f7816c0c9962ce50507402bf39c1f80c76e175b3462fecd89a05cc86ea",
+    "historical_acceptance_sha256": "abdea3e222f3ef0d5fac0a64c6eeb3ab63b52cf4057489623688139d38f56ee6"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2905,7 +2905,7 @@
     "?Add@KamikazeTrackerClass@@QAEXPAVAircraftClass@@PAVAbstractClass@@@Z": 5445280,
     "?Load@SpawnManagerClass@@UAGJPAUIStream@@@Z": 6858704,
     "?Save@SpawnManagerClass@@UAGJPAUIStream@@H@Z": 6859120,
-    "?Fill_In_Data_0065cdd0@@YAXXZ": 6671824,
+    "?Fill_In_Data_0065cdd0@@YIXXZ": 6671824,
     "?Wait_For_Players_0065c520@@YI_NXZ": 6669600,
     "?Multiplayer_Start_Waypoints_0065fff0@@YI?AV?$DynamicVectorClass@VCell@@@@_N@Z": 6684656,
     "?Unknown_00660b60@@YIHPAVObjectClass@@AAVCell@@H@Z": 6687584,
@@ -7463,7 +7463,7 @@
     "?unknown_slot51@RadarClass@@UAE?AVCell@@ABUPoint2D@@@Z": 6486992,
     "?Unknown_006A2B10@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6957840,
     "?Unknown_006A6BD0@Tactical@@QAE?AVCell@@ABUPoint2D@@@Z": 6974416,
-    "?unknown_slot52@RadarClass@@UAEXABUPoint2D@@@Z": 6488864,
+    "?unknown_slot52@RadarClass@@UAEXABUCoordStruct@@@Z": 6488864,
     "?Unknown_006A66B0@Tactical@@QAEXABUPoint2D@@@Z": 6973104,
     "?unknown_slot52@FootClass@@UAE_NXZ": 5020624,
     "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,

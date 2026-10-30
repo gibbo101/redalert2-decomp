@@ -4,8 +4,8 @@
     "id": "population-3107",
     "inventory_sha256": "b565b146a0d3289abdeccea9a27893202d93d72e0b9775577fe9fc3305acf60f",
     "gaps_sha256": "0c81906ca7334b224f409e6f761fa09ad55f4cf4896799e76f3fceead24bf27d",
-    "historical_population_sha256": "8059caf88633be33cfc03f825a20c39250bc1a12819a8b7b610488a924234c14",
-    "historical_acceptance_sha256": "927898154dad3d46b91867d161da8911f7720ac47a8cdd89f9b6160c1e19486e"
+    "historical_population_sha256": "edfd301d42b688edc205260acf86e4dc861a7640ac8b90a56fdd13da4845c439",
+    "historical_acceptance_sha256": "fbf5b2df56e9878d3fcd4b255dee78856bef59a9688dc40b50b3393223eeaaa9"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5146,7 +5146,7 @@
     "?unknown_slot52@InfantryClass@@UAE_NXZ": 5263104,
     "?unknown_slot52@IsometricTileClass@@UAE_NXZ": 5407120,
     "?unknown_slot52@ObjectClass@@UAE_NXZ": 6108928,
-    "?unknown_slot52@RadarClass@@UAEXABUPoint2D@@@Z": 6488864,
+    "?unknown_slot52@RadarClass@@UAEXABUCoordStruct@@@Z": 6488864,
     "?unknown_slot52@RadioClass@@UAE_NXZ": 6515552,
     "?unknown_slot52@TechnoClass@@UAE_NXZ": 7095424,
     "?unknown_slot52@TerrainClass@@UAE_NXZ": 7225632,
@@ -8259,7 +8259,7 @@
     "?Unknown_00535B90@Unknown535910@@QAEXXZ": 5462928,
     "?Unknown_00535AB0@Unknown535910@@QAE?AUPoint2D@@XZ": 5462704,
     "?Unknown_00535B60@Unknown535910@@QAEHXZ": 5462880,
-    "?Fill_In_Data_0065cdd0@@YAXXZ": 6671824,
+    "?Fill_In_Data_0065cdd0@@YIXXZ": 6671824,
     "?Wait_For_Players_0065c520@@YI_NXZ": 6669600,
     "?Unknown_00536E20@Unknown535910@@QAEXXZ": 5467680,
     "?unknown_window_839640@@3VRect@@A": 8623680,

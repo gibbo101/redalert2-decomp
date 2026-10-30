@@ -4,8 +4,8 @@
     "id": "population-2888",
     "inventory_sha256": "3eb61f49fd96152d63a132b8b3abe756ec3f606bbf0e08948e632351ad8aec54",
     "gaps_sha256": "4bb3b5053c7f55be4b2d384941de4ffcbb72975bfd7ec448cba1f87098c01750",
-    "historical_population_sha256": "0e6caba1029b20b454cd5e5fe04a95c6d4e7e470e604bc0602a1438c29caf550",
-    "historical_acceptance_sha256": "1b553d35bf4c29190774b0986affe9a5ef34a836376ee6ebebe13d1bd15d1b7a"
+    "historical_population_sha256": "20ae811069748ce3bc7d3dbc8e179845b0b63cb15c67a78fb8fc3bdc2d4ddd88",
+    "historical_acceptance_sha256": "30b8cee8f9413e9bde539cb6ade395ca963c9d3241a6f548906b2db988581990"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3426,7 +3426,7 @@
     "?unknown_slot36@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@@Z": 4823984,
     "?unknown_slot37@RadarClass@@UAE_NABVCell@@PAVHouseClass@@_N@Z": 6487200,
     "?unknown_slot37@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@_N@Z": 4825024,
-    "?unknown_slot52@RadarClass@@UAEXABUPoint2D@@@Z": 6488864,
+    "?unknown_slot52@RadarClass@@UAEXABUCoordStruct@@@Z": 6488864,
     "?unknown_slot34@RadarClass@@UAEXXZ": 6489808,
     "?unknown_slot34@DisplayClass@@UAEXXZ": 4843472,
     "?Remove@ToolTipManager@@QAEXI@Z": 7256592,
@@ -5482,7 +5482,7 @@
     "?Unknown_00535B90@Unknown535910@@QAEXXZ": 5462928,
     "?Unknown_00535AB0@Unknown535910@@QAE?AUPoint2D@@XZ": 5462704,
     "?Unknown_00535B60@Unknown535910@@QAEHXZ": 5462880,
-    "?Fill_In_Data_0065cdd0@@YAXXZ": 6671824,
+    "?Fill_In_Data_0065cdd0@@YIXXZ": 6671824,
     "?Wait_For_Players_0065c520@@YI_NXZ": 6669600,
     "?Unknown_00672440@UnknownSessionState@@QAEXXZ": 6759488,
     "?Unknown_00536E20@Unknown535910@@QAEXXZ": 5467680,
