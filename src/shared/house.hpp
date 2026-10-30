@@ -229,6 +229,7 @@ public:
     // Index in Houses of the house with this name, or -1 (0x004F5B40).
     static int __fastcall Find_Index(char const *name);
     int unknown_4e3660(TechnoTypeClass const *type, int arg2, int arg3);// 0x004E3660 (-1: none left; hypothesis; AircraftClass destructor)
+    void AI_Supers_004f3910();
     int AI_Unit();                                         // 0x004E9C90 (RA's AI_Unit: picks unknown_5540, a harvester first)
     int AI_Building();                                     // 0x004E9660 (RA's AI_Building: picks unknown_553c from the base plan)
     void unknown_func_4f2350();                            // 0x004F2350 (AI_Building: a base node of type -3)

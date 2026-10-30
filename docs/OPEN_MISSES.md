@@ -626,3 +626,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   0x47BFA0 64.29, 0x4755D0 61.54, 0x471660 60.23, 0x47BB30 59.78.
 - Jumpjet after Loco256: Loco256 r3 refused (Process 0x52F3C0 used an empty inline `unknown_state_6() {}` to keep a jump
   table entry); Loco259 redoes the round without Process. Misses 0x530B00 85.56, 0x530180 91.69, Move_To 0x52F600 34.85.
+- VQAClass after VQA257 (NOTES: span 0x717CE0-0x71DC10 is three TUs: quaternion/Matrix3D facing 0x717CE0-0x71C31F,
+  VQAClass 0x71C320-0x71DB1F population-2639, option bits 0x71DB20-0x71DC0F own population): buffer stream callback
+  0x71CA00 39.47 (count in edx, ebx pushed only around memcpy, position in edi; case 1-4 block first).
