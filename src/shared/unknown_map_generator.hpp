@@ -7,8 +7,12 @@
 #include "shared/coord.hpp"
 #include "shared/map_seed.hpp"
 class BuildingTypeClass;
+class CellClass;
 class UnknownMapGenerator {
 public:
+    void Generate_Vegetation_00585a60();
+    void Place_Tile_Patch_00586340(CellClass *cell,int tile,int count,int origin,bool flag);
+    int Place_Forest_00585dc0(CellClass *cell,int count,double density);
     void Generate_Urban_Areas_00586800();
     DynamicVectorClass<Cell> *Create_Urban_Area_00586b40(Cell const &position,int count);
     void Generate_Urban_Roads_00587330(DynamicVectorClass<Cell> &cells);

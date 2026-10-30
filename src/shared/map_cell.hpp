@@ -12,6 +12,7 @@
 // code touches; the first eight slots are placeholders.
 class CellClass {
 public:
+    void unknown_471d10(); //actual declaration from shared/cell.hpp, original RET0
     CellClass();                    // 0x00470F10
     virtual void unknown_slot0();
     virtual void unknown_slot1();
