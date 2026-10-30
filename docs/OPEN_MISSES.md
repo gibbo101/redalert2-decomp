@@ -650,3 +650,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Voxel library after Voxel267 (NOTES, hdr/ overlay): Render_Shadow 0x719C10 78.11 (frame slots only; needs
   UnknownVoxelRecord48, unify with the globals unit 0x716F10's struct), Read_File 0x719160 73.61 (header retypes, frame
   0x13c vs 0x120, unsigned palette loop), lighting drawers 0x71AD30 81.84 / 0x71AFA0 88.58 (normal byte spilled to a slot).
+- Event.CPP after Event271 (zero bytes; NOTES, w/best.cpp, hw/shared): Execute 0x4B65C0 54.41 -> 90.74 with TibSun shape
+  (::Frame vs member Frame, function-level locals, one bool foot slot, session fields, House as char). Only the TIMING
+  then-branch differs: original (MaxAhead + rate) + Frame - 1, ours (MaxAhead + Frame) + rate - 1.
