@@ -578,3 +578,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   except Presentation 0x466A50 98.98 - cached GetDlgItem/EnableWindow register tie, vp/p0.cpp + inc/ overlay).
   UnknownCargo Attach 0x468960 45.87 (per-flag bool stores). UnknownTechno230 still declares the two renamed
   CaptureManager methods (drop in a header batch). Seed 0x468140 (5 B) unclaimed.
+- ownrdraw.cpp after OwnrDraw242 (NOTES: the 0x5F0F40-0x5FC8A0 area is 15 real control window procs, map in NOTES):
+  progress bar 0x5FAFF0 86.15 in the unit (exact alone: unit context swaps esi/edi; score drafts with tux.sh), hot key
+  proc 0x5FC330 98.12 (inlined BSurface ctor loads height before width in the original), Edit helper 0x5F2120 86.03.
+  0x5F3CF0 has no inventory row; 0x5F42D0/0x5F0F40/0x5F3CF0 need the 0x5FE020 rename; seeds for 0x5F1900/0x5F0F40 are
+  unusable. EgoClass_Draw_004b3690.cpp still declares 0x5FE1B0 locally.

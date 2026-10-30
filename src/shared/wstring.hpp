@@ -143,8 +143,7 @@ public:
     // Whether the text contains any of characters (0x0076F920, 0x0076F960).
     bool Contains_Any(char const *characters) const;
     bool Contains_Any(Wstring const &characters) const;
-
-private:
+    // The text buffer (public: 0x005CB8D0 reads it directly), null for an empty string.
     char *Buffer;
 };
 

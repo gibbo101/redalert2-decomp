@@ -234,6 +234,9 @@ public:
     virtual void unknown_slot35(int arg);                // slot 35 (Do_Lose 0x0065DEC0 with 0 when there is no replay)
     virtual bool unknown_slot36();                       // slot 36 (Do_Lose: true replays)
     virtual void unknown_slot37();                       // slot 37 (Do_Lose, before the replay)
+    virtual void unknown_slot38();
+    virtual void unknown_slot39();
+    virtual bool unknown_slot40();                       // slot 40 (the lobby: whether slot 7 becomes the observer slot; 0x005CA6C0, 0x005CB8D0)
     void Unknown_005B7CE0();                             // 0x005B7CE0 (after slot 27)
     CCINIClass *unknown_ini_005b7840();                 // 0x005B7840 (the session INI)
 };

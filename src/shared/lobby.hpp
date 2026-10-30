@@ -59,6 +59,10 @@ extern int unknown_lobby_flag_7e6d90;
 // Sends a game options text to the other players (0x005C3C60; it passes the string to strncpy and the
 // chat/pregame packet).
 void __fastcall Send_Game_Options_005c3c60(char const *text);
+// Writes the LAN game options text into the buffer (0x005BC940, netdlg2.cpp) and the World Online
+// one (0x0073CCB0, wonline.cpp); 0x005C3810 sends the result with Send_Game_Options_005c3c60.
+void __fastcall Build_Game_Options_005bc940(char *buffer);
+void __fastcall Unknown_0073ccb0(char *buffer);
 // Selects the multiplayer map with this unknown_multi_missions_a3d8d8 index (-1: none) (0x005C7C30).
 bool __fastcall Select_Scenario_005c7c30(int index);
 // The lobby entry with this name (0x005CD1B0) and the fixed entry or session node whose name text equals
@@ -74,6 +78,9 @@ void __fastcall Download_Map_Preview_005c7970();
 int Compare_Wide_007837d3(wchar_t const *first, wchar_t const *second);
 // Widens a narrow string into a rotating buffer (0x006FA180).
 wchar_t *__fastcall Unknown_006FA180(char const *text);
+// Converts a narrow string into wide characters (0x006FA0C0; -1: to its end; also in shared/campaign.hpp
+// and shared/wol_sink.hpp).
+void __fastcall Unknown_006FA0C0(wchar_t *buffer, char const *text, int length);
 // Case-insensitive comparison, 0 when equal (0x00781F20; the CRT's _stricmp).
 int Compare_Narrow_00781f20(char const *first, char const *second);
 // Frees a block (0x00781D3B; the CRT's free).
@@ -228,6 +235,11 @@ bool __fastcall Unknown_Is_Color_Taken_005c95d0(int color);
 // Puts a fixed entry into a slot's combo box (0x005CBF20; the last argument hypothesised as a
 // send-update flag).
 void __fastcall Unknown_005cbf20(HWND dialog, int id, NodeNameType *entry, int update);
+// Resets the observer slots after a slot change (0x005CB560).
+void __fastcall Unknown_005cb560(HWND dialog);
+// The slot count of the last scenario (0x007E6DE4, 8 initially) and its extra open slot (0x00A72D5C).
+extern int unknown_slot_count_7e6de4;
+extern int unknown_extra_slot_a72d5c;
 // Opens or closes the slots from first on (open within the slot limit, closed beyond; the observer
 // slot keeps its entry), refreshes the rows and sends the lobby state (0x005CB7C0).
 void __fastcall Reset_Slots_From_005cb7c0(HWND dialog, int first);
