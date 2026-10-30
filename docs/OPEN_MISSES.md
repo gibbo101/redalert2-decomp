@@ -666,3 +666,10 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   97.67 (one store [esi+0x1B] scheduled after +0x17; Event278/w, plan-r2.json). Execute keeps hypothesis casts on slot
   259/268 and (BuildingClass *) until a rename spec retypes them. Event.CPP's header-static source now includes the unit's
   full include list after its geometry includes (include order decides Execute's inline accessors).
+- Span 0x775B60-0x781FF0 after Tail277 (NOTES table): ABuffer.cpp done; VQA32 library 0x776380-0x77EDD0 in files audio,
+  buffer_, config, drawer, dstream, loader, task, timer, unvq (TibSun code/vqalib/ is the reference); 0x77EDD0-0x781572
+  handwritten MASM (AudioUnzap, LCW, sosCODEC, ASM_UnVQ, cpuid/rdtsc: separate ledger, ~9.6 KB); linker thunks; CRT.
+- Session.CPP after Session275: MultiMission(INIClass&) 0x671670 97.39, map reader 0x6707D0 95.30, ctor 98.59,
+  Allocate_Ports 87.47; Read_Scenario_Descriptions 0x670C50 and Read_MultiPlayer_Settings 0x66F3A0 not drafted.
+- Locomotion after Loco276: Fly Move_To 0x4BC3E0 54.77 (IFlyControl comip model in hdr/), Tunnel Stop_Moving 0x6EFDE0
+  77.31, Tunnel Process 0x6F0000 79.16; Fly Stop_Moving 96.82 and Hover Draw_Matrix 95.80 unchanged.
