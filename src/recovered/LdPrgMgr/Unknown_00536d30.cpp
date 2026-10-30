@@ -1,12 +1,12 @@
-// void __fastcall Unknown_00536d30(surface, unknown, area, color, unknown_c) -- 0x00536D30
+// void __fastcall Unknown_00536d30(text, surface, area, color, flags) -- 0x00536D30
 #include "shared/unknown_globals.hpp"
 #include "shared/rect.hpp"
 #include "shared/hicolor.hpp"
 #include "shared/text_print.hpp"
 #include "shared/win32_api.hpp"
-// @ref ?Unknown_005fe020@@YIXPAXPAVSurface@@PAURECT@@0HHHHHH@Z=005fe020
+// @ref ?unknown_draw_text_5fe020@OwnerDraw@@YIHPAVSurface@@PBGPAURECT@@PAVBitFontClass@@KHHHHH@Z=005fe020
 
-void __fastcall Unknown_00536d30(Surface *surface, void *unknown, Rect const &area, unsigned short color, int unknown_c)
+void __fastcall Unknown_00536d30(wchar_t const *text, Surface *surface, Rect const &area, unsigned short color, int flags)
 {
     RECT rect;
     rect.left = area.X;
@@ -14,5 +14,5 @@ void __fastcall Unknown_00536d30(Surface *surface, void *unknown, Rect const &ar
     rect.right = area.X + area.Width;
     rect.bottom = area.Y + area.Height;
     RGBClass rgb = Unpack_Hicolor_Pixel(color);
-    Unknown_005fe020(unknown, surface, &rect, BitFont, rgb.Red | (rgb.Green << 8) | (rgb.Blue << 16), unknown_c, 12, 0, 0, 0);
+    OwnerDraw::unknown_draw_text_5fe020(surface, text, &rect, BitFont, rgb.Red | (rgb.Green << 8) | (rgb.Blue << 16), flags, 12, 0, 0, 0);
 }

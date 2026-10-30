@@ -4,8 +4,8 @@
     "id": "population-3013",
     "inventory_sha256": "25a7c0b714d1026472c1834b526feca266f8f86984d8a9a0980e1e1e533511f1",
     "gaps_sha256": "64325600bdeece725765090d1e7ac2406d006690d47394cac736b92065859c47",
-    "historical_population_sha256": "dd51ed270980582e2cb270d182323a41df1458b1513268ec9eff83114ed31734",
-    "historical_acceptance_sha256": "2c1768ea3066cd489be280da74fee72705cdcdf636d4078d4885389707ef88ea"
+    "historical_population_sha256": "4e136270203c9ae71ba51d2cdeffefbc68399308d44832dfab519de7270c8b35",
+    "historical_acceptance_sha256": "79ff47f6eef6faa0d57f5b0b29862d452f2df647101e4d8860c14b348933a3c7"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4462,8 +4462,8 @@
     "?Unknown_00536c00@@YI?AVRect@@XZ": 5467136,
     "?Unknown_00536c70@@YIXPBGPAVSurface@@HHHH_N@Z": 5467248,
     "?Unknown_005feb60@@YIXPAVRect@@PAVSurface@@HH@Z": 6286176,
-    "?Unknown_00536d30@@YIXPAVSurface@@PAXABVRect@@GH@Z": 5467440,
-    "?Unknown_005fe020@@YIXPAXPAVSurface@@PAURECT@@0HHHHHH@Z": 6283296,
+    "?Unknown_00536d30@@YIXPBGPAVSurface@@ABVRect@@GH@Z": 5467440,
+    "?unknown_draw_text_5fe020@OwnerDraw@@YIHPAVSurface@@PBGPAURECT@@PAVBitFontClass@@KHHHHH@Z": 6283296,
     "?Message_00536ea0@Unknown535910@@UAE_NHPAX@Z": 5467808,
     "__imp__GetTickCount": 7971020,
     "__imp__GetSystemTime": 7971024,

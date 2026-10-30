@@ -722,3 +722,6 @@ verified on the target.
   member (`Data.LongsCell.Long1`) adds indirect memory expressions that change operand order and scheduling much later
   in the same function (EventClass::Execute's TIMING sum). If a late expression resists every local rewrite, look at
   how earlier code in the function accesses memory.
+- Dead stores (Tactical287): VC6 keeps two stores to an address-taken local when the second goes through an inline
+  member (`rect.Y = a; rect += Point2D(0, b);`) but merges plain field writes; a "dead store" in the original points
+  at an inline member operator. `Rect rect = Rect(x, y, 60, 30)` stores the constants through a register.

@@ -452,13 +452,20 @@ Rect __fastcall Unknown_00536c00();
 // Draws text in an area of the surface: flags 1 centres it, 2 right-aligns
 // it; fill widens the area to width (0x00536C70).
 void __fastcall Unknown_00536c70(wchar_t const *text, Surface *surface, int x, int y, int width, int flags, bool fill);
-// Draws a frame around an area in a 16-bit colour (0x00536D30).
-void __fastcall Unknown_00536d30(Surface *surface, void *unknown, Rect const &area, unsigned short color, int unknown_c);
+// Draws text in an area of the surface in a 16-bit colour through the game font, flags as for
+// OwnerDraw::unknown_draw_text_5fe020 (0x00536D30).
+void __fastcall Unknown_00536d30(wchar_t const *text, Surface *surface, Rect const &area, unsigned short color, int flags);
 // Owner-draw helpers (ownrdraw.cpp; types are hypotheses).
 struct RECT;
 void __fastcall Unknown_005feb60(Rect *area, Surface *surface, int unknown_0, int unknown_9f);    // 0x005FEB60
-void __fastcall Unknown_005fe020(void *unknown, Surface *surface, RECT *area, void *font, int color,
-                                 int unknown_c, int unknown_10, int unknown_14, int unknown_18, int unknown_1c);   // 0x005FE020
+class BitFontClass;
+namespace OwnerDraw {
+// Draws text clipped to area with the font in a Win32 colour (0x00BBGGRR); flags 4 centres it vertically;
+// the rest of the arguments go to BitTextClass::Print_Box. Returns 0 (0x005FE020).
+int __fastcall unknown_draw_text_5fe020(Surface *surface, wchar_t const *text, RECT *area, BitFontClass *font,
+                                        unsigned long color, int flags, int unknown_7, int unknown_8, int unknown_9,
+                                        int unknown_10);
+}
 // The art data at 0x00AC1154 (0x006F2490; the campaign loading screen's bar drawer).
 void *Unknown_Get_Art_6f2490();
 // Assign_Houses' session data and globals (0x0065FBB0).

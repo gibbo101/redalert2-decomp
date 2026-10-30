@@ -4,8 +4,8 @@
     "id": "population-3117",
     "inventory_sha256": "93f6b0d42e635e45db844455b42a7486ce1ae4eb07be4cd89aa96fe15004c23f",
     "gaps_sha256": "3a05b12ba59a732653d3e81fe9b518c62db2c33be332f158cbbc494f5d1c83f1",
-    "historical_population_sha256": "bc5feb72e652c6629aa4a9e1349bc116a0312e5a78b6900f0572cfd3b6dbc11c",
-    "historical_acceptance_sha256": "0c0053456fcf1bbb10035063ae1f914d5dedf64e4740f07bd1afcf97658e0060"
+    "historical_population_sha256": "50a331627960c949ac2426941c974ebd40b47cc050cea6243ff9474bbf29840e",
+    "historical_acceptance_sha256": "6d53751dc07bcd7e7bed0c0d1fdfbc6b3b610490b4acfce150534adc5ff51f8e"
   },
   "references": {
     "_unknown_empty_rect": 11505560,
@@ -3323,8 +3323,8 @@
     "?Unknown_00536c00@@YI?AVRect@@XZ": 5467136,
     "?Unknown_00536c70@@YIXPBGPAVSurface@@HHHH_N@Z": 5467248,
     "?Unknown_005feb60@@YIXPAVRect@@PAVSurface@@HH@Z": 6286176,
-    "?Unknown_00536d30@@YIXPAVSurface@@PAXABVRect@@GH@Z": 5467440,
-    "?Unknown_005fe020@@YIXPAXPAVSurface@@PAURECT@@0HHHHHH@Z": 6283296,
+    "?Unknown_00536d30@@YIXPBGPAVSurface@@ABVRect@@GH@Z": 5467440,
+    "?unknown_draw_text_5fe020@OwnerDraw@@YIHPAVSurface@@PBGPAURECT@@PAVBitFontClass@@KHHHHH@Z": 6283296,
     "?Message_00536ea0@Unknown535910@@UAE_NHPAX@Z": 5467808,
     "_?all@?1??Faction_Name@@YIABVWstring@@H@Z@4V2@A": 11709728,
     "_?unknown@?3??Faction_Name@@YIABVWstring@@H@Z@4V2@A": 11709704,
