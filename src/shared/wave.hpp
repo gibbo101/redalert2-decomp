@@ -108,4 +108,9 @@ public:
     char unknown_204[0x208 - 0x204];
 };
 
+// Builds the wave sine tables once (0x00721BF0; Westwood's WaveClass::Init_Statics;
+// Fill_In_Data).
+void __fastcall Initialize_Wave_Tables_00721bf0();
+
+
 #endif

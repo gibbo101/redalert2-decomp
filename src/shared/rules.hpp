@@ -39,6 +39,9 @@ class WarheadTypeClass;
 // 0x0053D820 (__fastcall): stores its argument at 0x007DFB34, a frame-rate threshold
 // (RadarClass passes DetailMinFrameRateNormal or DetailMinFrameRateMovie; name hypothesis).
 void __fastcall unknown_set_frame_rate_0053d820(int rate);
+// 0x0053D830 (__fastcall): stores its argument at 0x007DFB38 (Fill_In_Data passes
+// DetailBufferZoneWidth; name hypothesis).
+void __fastcall unknown_set_buffer_zone_0053d830(int width);
 
 // A rocket's flight model ([General] V3Rocket*= and DMisl*=; RulesClass::General).
 struct RocketStruct {

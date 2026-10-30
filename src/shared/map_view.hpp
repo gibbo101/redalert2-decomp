@@ -102,6 +102,8 @@ public:
     void Unknown_0054EBD0();                                                    // 0x0054EBD0
     void Unknown_005688A0(DynamicVectorClass<Cell> &cells);                    // 0x005688A0 (as shared/map.hpp)
     void Unknown_0055A550();                                                    // 0x0055A550
+    void Unknown_0054FDA0();                                                    // 0x0054FDA0 (shared/map.hpp)
+    void Unknown_00568B00();                                                    // 0x00568B00
     bool Unknown_0054E410();                                                    // 0x0054E410 (places a crate on a random cell)
     void Unknown_0055D990(Cell const &cell);                              // 0x0055D990
     void Unknown_00562F50(CellClass *cell); // 00562F50: observed thiscall/RET4; unused return hypothesis
@@ -197,6 +199,7 @@ public:
 class RadarClass : public DisplayClass {
 public:
     virtual bool unknown_slot36(Cell const &cell, HouseClass *house);              // slot 36 0x0062FC80
+    virtual void unknown_slot52(CoordStruct const &coord);                       // slot 52 0x00630320 (centres the tactical view on a coordinate)
     void Unknown_00631570(Cell const &cell);                              // 0x00631570
     void Unknown_00631910(TechnoClass *techno, Point2D point);                  // 0x00631910
     void Unknown_00631AF0(TechnoClass *techno, Point2D point);                  // 0x00631AF0

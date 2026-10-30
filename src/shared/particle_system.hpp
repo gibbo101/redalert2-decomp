@@ -146,4 +146,8 @@ public:
 // The list of particle systems (0x00A32280; defined by the unit at 0x004D2BA0).
 extern DynamicVectorClass<ParticleSystemClass *> ParticleSystems;
 
+// The gas cloud particle system (0x00A40D20; Westwood's GasSystem): made by
+// Fill_In_Data, removed and deleted by Clear_Scenario.
+extern ParticleSystemClass *unknown_gas_cloud_system_a40d20;
+
 #endif
