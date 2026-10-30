@@ -85,7 +85,10 @@ struct Ladder {
 
 struct Channel {
     int unknown_00;
-    char unknown_04[0x14 - 4];
+    union {
+        char unknown_04[0x14 - 4];
+        struct { unsigned int minUsers,maxUsers,currentUsers,official; };
+    };
     int unknown_14;                     // +0x14
     char unknown_18[0x20 - 0x18];
     unsigned int unknown_20;            // +0x20 flags (OnGameStart keeps the low byte; bits 8, 11, 12 tested by 0x0073C340..0x0073C400)
