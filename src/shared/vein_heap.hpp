@@ -90,6 +90,9 @@ public:
     }
     float Key_At(int index) const { return Array[index]->Key; }
     // Takes the node with the lowest Key off the heap.
+#ifdef RA2_VEIN_HEAP_REMOVE_MIN_IMPLEMENTATION
+    UnknownVeinNode *Remove_Min();
+#else
     UnknownVeinNode *Remove_Min()
     {
         if (Count == 0) {
@@ -102,6 +105,7 @@ public:
         Sift_Down(1);
         return top;
     }
+#endif
     int Count;                              // +0x00
     int Capacity;                           // +0x04
     UnknownVeinNode **Array;                // +0x08

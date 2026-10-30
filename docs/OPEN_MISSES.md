@@ -632,3 +632,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Ini.CPP after Ini258 (NOTES unit map; mk.py states bounds, RETIRE= for retired rows): Save(Pipe) 0x50C620 98.57, Put_Unicode
   0x50ECF0 91.82, Load(Straw) 0x50BC30 84.36 (lands with CacheStraw dtor 0x510AD0), Get_Unicode 0x50EDF0 83.33 (frame
   0x5028 vs 0x5014). Follow-up rename: CampaignINI::Get_Wide_String -> INIClass::Get_Wide_String (0x50F010).
+- Locomotion after Loco259 (NOTES; Ship and Drive are one source): Jumpjet 0x530B00 85.56 (frame slots only), Ship
+  Piggyback_CLSID 0x6756D0 81.73 (com_ptr attach model), slope matrix 0x675A60 70.37, Will_Jump_Tracks 0x67AA10 82.67.
+- Score.CPP / UndoInfo after Score260 (NOTES, usc.py): Efficiency 0x666040 98.33, Draw_Cursor 0x6672A0 83.00,
+  ScoreDelay 0x667420 77.54 (Rect ctor 0x42BCD0 out of line in the original).
+- Facing/ramp TU after Matrix261 (0x717CE0-0x71903F; NOTES): 0x718060 (3,290 B) 88.27 (/G5 scheduling only), 0x718E80
+  96.15. Renegade WWMath is not in the sparse reference checkout (adding it is a fetch: needs the user).
