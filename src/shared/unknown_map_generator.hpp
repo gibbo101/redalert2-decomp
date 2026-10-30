@@ -9,6 +9,9 @@
 class BuildingTypeClass;
 class UnknownMapGenerator {
 public:
+    bool Clear_Region_Border_00581bf0(int region,int rings,int newRegion); // ECXowner,RET12; ALpredicate
+    DynamicVectorClass<Cell> *Build_Region_Border_Cell_List_00581ee0(int region); // ECXowner,RET4; existingprivateevidence
+    void Generate_Urban_Pavement_005890b0(DynamicVectorClass<Cell> &cells); // pendingr198
     UnknownMapGenerator(); //00577010 remains parked, no body promoted
     // Proposed rename-only owner correction; same int,int/ECX/RET8 physical ABI.
     void Unknown_0057A0D0(int arg1,int arg2); //0057A0D0, operation unchanged; no body promoted

@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Init279 Init.CPP via TibSun init.cpp; VQA280 VQA32 drawer/dstream/task; VQA281 VQA32 loader/unvq; Session282 Session.CPP near misses and large readers. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Init283 Init_Game and Init.CPP misses; VQA280 VQA32 drawer/dstream/task; VQA284 VQA32 unvq.cpp and loader misses; Session282 Session.CPP near misses and large readers. All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the

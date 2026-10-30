@@ -673,3 +673,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   Allocate_Ports 87.47; Read_Scenario_Descriptions 0x670C50 and Read_MultiPlayer_Settings 0x66F3A0 not drafted.
 - Locomotion after Loco276: Fly Move_To 0x4BC3E0 54.77 (IFlyControl comip model in hdr/), Tunnel Stop_Moving 0x6EFDE0
   77.31, Tunnel Process 0x6F0000 79.16; Fly Stop_Moving 96.82 and Hover Draw_Matrix 95.80 unchanged.
+- VQA loader after VQA281 (NOTES, w/loader.cpp): Load_VQF 0x779E90 withheld (its VPKZ case used an invented second copy
+  Load_VPKZ of the VPTZ reader: refused; 83.69 without it), LoadFrame_Internal 0x778950 85.52, Load_MFCI 83.47,
+  Load_MSCI 78.10, Load_CBPZ 96.77.
+- Init.CPP after Init279: Draw_Loading_Screen 0x516560 99.63, 0x516E70 97.62, Select_Game 93.08 (scorer ceiling),
+  Allocate_Surfaces 0x519500 77.26; Init_Game 0x5116A0 and 0x519E70 not drafted.
