@@ -718,3 +718,7 @@ verified on the target.
 - Header hygiene (Span268): a new inline function or even an extra declaration in a widely included header can shift
   instruction scheduling in unrelated units (an inline MapClass::Subzones in map_view.hpp swapped a load pair in
   BaseClass::Read_INI 0x42C460). Keep single-use helpers file-local; every header change needs check_plans --build.
+- Union members vs pointer casts (Event274): reading an event payload as `*(long*)&Data.Bytes[n]` instead of a union
+  member (`Data.LongsCell.Long1`) adds indirect memory expressions that change operand order and scheduling much later
+  in the same function (EventClass::Execute's TIMING sum). If a late expression resists every local rewrite, look at
+  how earlier code in the function accesses memory.

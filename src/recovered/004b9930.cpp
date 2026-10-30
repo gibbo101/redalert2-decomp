@@ -1,3 +1,7 @@
+// Factory object getter, original004B9930; existing4body+12tail bytes.
+#include "shared/factory_class_decl.hpp"
 
-class Leaf_4b9930 { public: unsigned int get(); };
-unsigned int Leaf_4b9930::get() { return *(unsigned int*)((char*)this + 0x54); }
+TechnoClass *FactoryClass::Get_Object() const
+{
+    return Object;
+}

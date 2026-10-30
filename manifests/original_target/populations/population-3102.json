@@ -4,8 +4,8 @@
     "id": "population-3102",
     "inventory_sha256": "bbe67f03ce4f9878fd485fae6ab997c95e088cdcc546ccd39845a3fd9649e463",
     "gaps_sha256": "6ea31a82545ae06fa9713879908b494c5c8c028ef2d2e195fc609a5283ed28f8",
-    "historical_population_sha256": "5c350b0c489c086457aa248a1516eedf6e5ccd4c05b9b6bce94d32b5b83cdbc6",
-    "historical_acceptance_sha256": "756eda95f1a0f423146a51fc0412bc6b90cec1acc1bef164d77efedd16566a41"
+    "historical_population_sha256": "5565067bd1f03b4ce2090539629ebbd6126e8eefc3d578b6cfca5c015c1434cd",
+    "historical_acceptance_sha256": "1984ce9c23143dcbd6dc3f9e2f81272b11d1d1ee5dab9249a88f549b799da640"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3316,7 +3316,7 @@
     "?get@Leaf_4b8960@@QAEHXZ": 4950368,
     "?get@Leaf_4b9420@@QAEEXZ": 4953120,
     "?get@Leaf_4b98f0@@QAEIXZ": 4954352,
-    "?get@Leaf_4b9930@@QAEIXZ": 4954416,
+    "?Get_Object@FactoryClass@@QBEPAVTechnoClass@@XZ": 4954416,
     "?get@Leaf_4b9940@@QAEIXZ": 4954432,
     "?GetClassID@FactoryClass@@UAGJPAUGUID@@@Z": 4954624,
     "?Detach@FactoryClass@@UAEXPAVAbstractClass@@_N@Z": 4955472,

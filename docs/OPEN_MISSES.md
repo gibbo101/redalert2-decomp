@@ -653,3 +653,12 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Event.CPP after Event271 (zero bytes; NOTES, w/best.cpp, hw/shared): Execute 0x4B65C0 54.41 -> 90.74 with TibSun shape
   (::Frame vs member Frame, function-level locals, one bool foot slot, session fields, House as char). Only the TIMING
   then-branch differs: original (MaxAhead + rate) + Frame - 1, ours (MaxAhead + Frame) + rate - 1.
+- TAction.CPP after TAction272 (NOTES, w/, hdrx/hdry/hdrz overlays): Execute 0x6ADAE0 70.32 (CellClass+0x140 bridge flags
+  as bitfields make Execute call 6b1270/6b19a0 like the original - a tree-wide header change over 79 files; CDTimerClass
+  Is_Active() for the timer actions; set_house members bigger than the inline cap in the original; Execute also needs rows
+  0x6B3230 and 0x6B32C0). Show text 0x6B0440 92.86, waypoint sound 0x6B0EC0 85.07, iron curtain 0x6B26D0 96.34, damage
+  0x6AFD80 49.66.
+- Path estimator after Span273 (zero bytes; NOTES, w_*): Apply_Path_Collision_Avoidance 0x4285D0 97.31, Cut_Corners
+  0x428AE0 97.44, Get_Movement_Cost 0x427110 97.04, Optimize_Moves 0x4290C0 60.09, Try_Diagonal_Shortcut 0x428CF0 63.38
+  (0x42ADD0 member-sum copy is unaccepted; byte-exact from the shared body once a unit emits it).
+- Locomotion after Loco269: Fly Stop_Moving 0x4BC730 96.82, Hover Draw_Matrix 0x4FBBF0 95.80, Rocket Move_To 59.32.
