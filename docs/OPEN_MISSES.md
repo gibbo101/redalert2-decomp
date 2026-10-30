@@ -759,3 +759,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   needs DiscreteDistributionClass and the unit's COMDATs 0x4CE710/0x4CEA90/0x4CEAF0/0x4CEB30) undrafted.
 - Header cleanups unblocked by Hdr306 (no byte credit, full builds passed at 55325943): Point2D::operator/(int) into
   rect.hpp (c2/hdrA + c2/w/6a33f0.cpp), Rect::operator+= (c2/hdrB), CellClass::Fetch_CellID member (c3/hdr).
+- TechnoClass (Techno320 NOTES, 0 bytes): slot 248 health bar 0x6C3F00 40.61/85.8 shape (rename spec ren/techno320-ren1.json retypes slots 248/249; operator/ ctor goes out of line only with ~16 more pending inline sites), 0x6D7D20 Should_Use_High_Arc 89.87/100 shape (operand load order), 0x6CA340 96.08.
+- BulletClass (Bullet322 NOTES, 0 bytes): Draw 0x4610D0 98.55 (w/draw_best_98.91.cpp, two scheduling diffs), AI 0x45F710 (6438 B) 43.37 first typed draft (frame 0x150 vs original 0x198; stack-slot map in NOTES; hdr/ overlay bullet.hpp additive). Shrapnel 0x462C50 is Windows near-miss work.
+- AnimClass (Anim323 NOTES, 0 bytes; second zero handback after Anim162, unit parked): 0x4237B0 Next_Flaming_Guy_Coord 93.56/100 shape (needs a cell-left adjacent helper under its own name, not RA2_ADJACENT_CELL), ctor 0x420110 97.36 (Center_Coord Z register only). Not started: 0x423120 Flaming_Guy_AI, draw 0x420E50, AI 0x421710.
