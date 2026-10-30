@@ -28,7 +28,7 @@
 // @ref ?unknown_slot42@DisplayClass@@UAEXABVRect@@@Z=00498c80
 // @ref ?unknown_slot43@DisplayClass@@UAEXXZ=0040d120
 // @ref ?unknown_slot45@DisplayClass@@UAEXXZ=0049c490
-// @ref ?unknown_slot46@DisplayClass@@UAEXXZ=0049b0f0
+// @ref ?unknown_slot46@DisplayClass@@UAEXABVCell@@_NPAVObjectClass@@H1@Z=0049b0f0
 // @ref ?unknown_slot48@DisplayClass@@UAEXXZ=0049bb20
 // @ref ?unknown_slot53@TabClass@@UAEXXZ=006a0b70
 // @ref ?unknown_slot54@TabClass@@UAE_NH@Z=006a0da0

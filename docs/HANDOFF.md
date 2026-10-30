@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Survey251 fresh unrecovered-bytes unit map (UNITS.md) and sweep of the top unit; Wonline249 wonline.cpp (one TU 0x73A6F0-0x7683B0) small targets, remaining sink slots, dialog areas; Inline252 applying the /Ob2 inline rule (VC6_MATCHING_NOTES) to Init 0x5173C0 and other inline-budget plateaus; Scroll250 Display slot 46 / Scroll slot 49 renames, Scroll.CPP unit, display-hierarchy misses. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Survey251 fresh unrecovered-bytes unit map (UNITS.md) and sweep of the top unit; TechFoot253 TechnoClass and FootClass members; Inline252 applying the /Ob2 inline rule (VC6_MATCHING_NOTES) to Init 0x5173C0 and other inline-budget plateaus; Scroll250 Display slot 46 / Scroll slot 49 renames, Scroll.CPP unit, display-hierarchy misses. All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the

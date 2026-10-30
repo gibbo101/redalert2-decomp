@@ -601,3 +601,7 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   DynamicVectorClass ctor/Add the original calls; landing moves 0x5C7160 from population-2392 into netshare and renames
   MultiplayerGameMode slot 3 to take WideString*). 0x5CBF20 43.42 (the refusal path keeps `previous` on the stack in the
   original). 0x5C3FF0 (7,887 B) not started.
+- wonline.cpp after Wonline249 (NOTES, c/, todo.txt; most inventory bounds in this TU are false splits): 0x744930 98.44
+  (or eax,-1 before the pops), 0x73C480 96.05 and 0x75C980 89.19 (lea ecx before push eax: implicit conversions
+  reproduce it), 0x73CB80 needs WolUserArray::Get inline (row 0x766020 in population-2411), 0x752210 static Wstring[16]
+  table + atexit 0x752710. Not reached: OnPrivateGameOptions 0x761C50, OnUserList, OnFind, OnChannelJoin (2.3 KB+ each).

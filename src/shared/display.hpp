@@ -177,7 +177,9 @@ public:
     virtual void unknown_slot43();                                    // slot 43 0x0040D120
     virtual void unknown_slot44(Point2D const &point);               // slot 44 0x0049AF80
     virtual void unknown_slot45();                                    // slot 45 0x0049C490
-    virtual void unknown_slot46();                                    // slot 46 0x0049B0F0
+    // Slot 46 (0x0049B0F0): the left button released over a cell (Westwood's
+    // Mouse_Left_Up: cell, shadowed, object, action, small mouse; hypothesis).
+    virtual void unknown_slot46(Cell const &cell, bool shadow, ObjectClass *object, int action, bool small_mouse);
     virtual void unknown_slot47(Point2D const &xy);                   // slot 47 0x0049C500 (the mouse held at xy: drags a selection band)
     virtual void unknown_slot48();                                    // slot 48 0x0049BB20
     virtual void unknown_slot49(int unknown);                         // slot 49 0x0049AF90
