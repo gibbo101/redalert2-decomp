@@ -1,5 +1,4 @@
-// Fresh complete5831C0 diagnostic. No required incoming receiver is established.
-// Free/no-argvoid/name/operation spelling remain hypotheses; no invented per-function owner.
+#include "shared/unknown_map_generator.hpp"
 #include "shared/map_region.hpp"
 #include "shared/map_view.hpp"
 #include "shared/cell.hpp"
@@ -30,7 +29,7 @@ static inline void Write_Generation_Region(Cell const &position,int region)
         cells[(int)at].RegionIndex=region;
     }
 }
-void Adjust_Ramp_Junctions_005831c0()
+void UnknownMapGenerator::Adjust_Ramp_Junctions_005831c0()
 {
     Map.Unknown_0055A550();
     CellClass *current=Map.Unknown_0055A490();

@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 940 | 146,854 | 940 | 0x004011C0–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 939 | 146,209 | 939 | 0x004011C0–0x0078FB6B |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 192 | 50,734 | 192 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 171 | 47,172 | 171 | 0x00438A60–0x004D3450 |
@@ -60,6 +60,7 @@
 | [MPMath](../src/recovered/MPMath/) | 43 | 6,037 | 43 | 0x005A7530–0x005AA130 |
 | [classes/MultiplayerGameMode](../src/recovered/classes/MultiplayerGameMode/) | 60 | 5,907 | 60 | 0x005A2380–0x005B8E10 |
 | [classes/MapRegionClass](../src/recovered/classes/MapRegionClass/) | 10 | 5,889 | 10 | 0x0056D870–0x00576810 |
+| [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 10 | 5,789 | 10 | 0x0057BEA0–0x005890B0 |
 | [classes/TabClass](../src/recovered/classes/TabClass/) | 39 | 5,776 | 38 | 0x0059FF60–0x006A20B0 |
 | [classes/ScoreClass](../src/recovered/classes/ScoreClass/) | 15 | 5,558 | 15 | 0x00665E50–0x006677F0 |
 | [classes/InfantryTypeClass](../src/recovered/classes/InfantryTypeClass/) | 27 | 5,453 | 27 | 0x004D3E10–0x0050AF90 |
@@ -69,7 +70,6 @@
 | [classes/TiberiumClass](../src/recovered/classes/TiberiumClass/) | 23 | 5,214 | 19 | 0x006E8920–0x006EA9F0 |
 | [classes/TeamTypeClass](../src/recovered/classes/TeamTypeClass/) | 29 | 5,211 | 29 | 0x004D3990–0x006C0280 |
 | [classes/WaveClass](../src/recovered/classes/WaveClass/) | 27 | 5,184 | 27 | 0x004D3090–0x00724600 |
-| [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 9 | 5,144 | 9 | 0x0057BEA0–0x005890B0 |
 | [NullDlg](../src/recovered/NullDlg/) | 9 | 5,097 | 9 | 0x005CE920–0x005CF780 |
 | [classes/PlanningNodeClass](../src/recovered/classes/PlanningNodeClass/) | 53 | 5,093 | 53 | 0x00610440–0x0061A060 |
 | [classes/MapSeedClass](../src/recovered/classes/MapSeedClass/) | 19 | 5,052 | 13 | 0x00576F50–0x0058DA50 |

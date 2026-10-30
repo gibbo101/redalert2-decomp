@@ -4,8 +4,8 @@
     "id": "population-3137",
     "inventory_sha256": "af2259e61c6a000b0599e17c154047bd4f59676a6ecd1a89c81b4b85e33f0961",
     "gaps_sha256": "e62e4b94506aa8b1e950a96156c1e3accc6f7f712ff7683f54517292406f6300",
-    "historical_population_sha256": "b7b564aa658a11f40d213dbc899394cb7633ce4d5d6d2168ae34a9013d5177ed",
-    "historical_acceptance_sha256": "cef7d73989727560af1ed52d112b395ec822e303cd45e10f2466cfa2cc2f6ab7"
+    "historical_population_sha256": "b7b8035a7ed282890bbc4f388ee85235bcd4591554f026767466a0620c701d15",
+    "historical_acceptance_sha256": "56c2473c444a4a05a605fbe90af3d9abe0e6f71a5290675279ce691b1a22eef1"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7900,7 +7900,7 @@
     "?Adjust@ZBuffer@@QAEXHHG@Z": 4262992,
     "?Adjust_Drain@HouseClass@@QAEXH@Z": 5163088,
     "?Adjust_Power@HouseClass@@QAEXH@Z": 5162720,
-    "?Adjust_Ramp_Junctions_005831c0@@YAXXZ": 5779904,
+    "?Adjust_Ramp_Junctions_005831c0@UnknownMapGenerator@@QAEXXZ": 5779904,
     "?Advance@EgoClass@@QAE_NH@Z": 4929136,
     "?Advance_Alternating_Counter_004bbf00@@YI_NAAUUnknownAlternatingCounterPrefix@@@Z": 4964096,
     "?Advance_Animation_005078b0@InfantryClass@@QAEXXZ": 5273776,
