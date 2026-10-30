@@ -8,6 +8,7 @@
 #include "shared/vector_class.hpp"
 
 class FootClass;
+class ObjectClass;
 
 // A 0x14-byte block that owns an array at +0x08 (freed first); the
 // constructor 0x00427FB0 builds two (+0x14 with 0x10000 entries, +0x68 with 0x2710).
@@ -71,6 +72,27 @@ struct UnknownPathEstimator {
     void Unknown_00429A90();
     // Sizes the estimator for the map rectangle (0x004284E0; MapClass 0x005499C0).
     void Unknown_004284E0(Rect const &size);
+    // Starts a new search: empties both blocks and the table sentinels and bumps the generation +0x28
+    // (clearing the marks when it wraps) (0x00427E90).
+    void Unknown_00427E90();
+    // Whether the cell index is marked in the current generation, in the +0x18 marks or the +0x1C ones
+    // (0x00427F70; the first argument is unused).
+    bool Unknown_00427F70(int unused, bool first, int index);
+    // The cell one step from cell toward facing; facing 8 is the exit of the tube that starts at the cell
+    // ((0,0) when none) (out-of-line copy 0x0042AD50).
+    static Cell __fastcall Unknown_0042AD50(Cell const &cell, int facing);
+    // The cell reached from start by count steps along the facings (0x00427060).
+    static Cell __fastcall Unknown_00427060(Cell const &start, int count, int const *facings);
+    // The moving object in the 5x5 cells around cell (the bridge occupiers when the cell is a bridge more
+    // than two levels from level) whose locomotor is moving to the cell's centre at level's height, or
+    // null (0x00428950; this is unused).
+    ObjectClass *Unknown_00428950(Cell const &cell, int level);
+    // The facing from one cell to an adjacent one (8 when not adjacent) (0x00428320).
+    static int __fastcall Unknown_00428320(Cell const &from, Cell const &to);
+    // Whether the subzone pair is recorded in layer's +0x74 list (0x0042A770).
+    bool Unknown_0042A770(unsigned short first, unsigned short second, int layer);
+    // Records the subzone pair (smaller one in the high word) in layer's +0x74 list (0x0042A7D0).
+    void Unknown_0042A7D0(unsigned first, unsigned second, int layer);
 
     bool unknown_00;                        // +0x00
     bool unknown_01;                        // +0x01
@@ -81,18 +103,18 @@ struct UnknownPathEstimator {
     UnknownPathTable24 *unknown_0c;         // +0x0C
     UnknownPathTable16 *unknown_10;         // +0x10
     UnknownPathEstimatorBlock *unknown_14;  // +0x14
-    char *unknown_18;                       // +0x18
-    char *unknown_1c;                       // +0x1C
-    char *unknown_20;                       // +0x20
-    char *unknown_24;                       // +0x24
+    int *unknown_18;                        // +0x18
+    int *unknown_1c;                        // +0x1C
+    int *unknown_20;                        // +0x20
+    int *unknown_24;                        // +0x24
     int unknown_28;                         // +0x28 (-1)
     int unknown_2c;                         // +0x2C (-1)
     char unknown_30[8];                     // +0x30
     bool unknown_38;                        // +0x38 (true)
     int unknown_3c;                         // +0x3C
-    char *unknown_40[3];                    // +0x40
-    char *unknown_4c[3];                    // +0x4C
-    char *unknown_58[3];                    // +0x58
+    int *unknown_40[3];                     // +0x40 (Map.unknown_70[layer] entries each)
+    int *unknown_4c[3];                     // +0x4C (Map.unknown_70[layer] entries each)
+    int *unknown_58[3];                     // +0x58 (Map.unknown_70[layer] entries each)
     char *unknown_64;                       // +0x64
     UnknownPathEstimatorBlock *unknown_68;  // +0x68
     int unknown_6c;                         // +0x6C (-1)
@@ -103,5 +125,9 @@ struct UnknownPathEstimator {
     int unknown_c74[3];                     // +0xC74
 };
 extern UnknownPathEstimator unknown_path_estimator_8315c8;     // 0x008315C8
+// The cell index offsets of the eight facings for a map of side unknown_map_cell_side_84e804 (0x0084C838).
+extern int unknown_path_facing_offsets_84c838[8];
+// The facing by (dy + 1, dx + 1); -1 at the centre (0x007CF100).
+extern int unknown_path_facing_table_7cf100[3][3];
 
 #endif

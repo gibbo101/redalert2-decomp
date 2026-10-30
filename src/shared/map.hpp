@@ -336,9 +336,7 @@ public:
     UnknownMapElem4 *unknown_64;                                // +0x64 freed by the destructor
     int unknown_68;                                             // +0x68
     char *unknown_6c;                                           // +0x6C freed by the destructor
-    int unknown_70;                                             // +0x70
-    int unknown_74;                                             // +0x74
-    int unknown_78;                                             // +0x78
+    int unknown_70[3];                                          // +0x70 entry counts of the path estimator's three layer arrays (0x00427E90, 0x00429A90)
     HashTableClass<unsigned int, SubzoneConnectionStruct> *unknown_7c[3];      // +0x7C (One_Time)
     DynamicVectorClass<SubzoneTrackingStruct> SubzoneTracking[3];              // +0x88
     DynamicVectorClass<Cell> unknown_d0;                  // +0xD0

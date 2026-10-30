@@ -126,7 +126,9 @@ public:
 
     // The map's data the other units read, at its shared/map.hpp offsets
     // (the light class has no other members, so the gap is padding).
-    char unknown_010[0xE8 - 0x10];
+    char unknown_010[0x70 - 0x10];
+    int unknown_70[3];                          // +0x70 (shared/map.hpp)
+    char unknown_07c[0xE8 - 0x7C];
     Rect MapSize;                               // +0xE8 (shared/map.hpp)
     Rect MapLocalSize;                          // +0xF8 (shared/map.hpp)
     char unknown_108[0x120 - 0x108];
