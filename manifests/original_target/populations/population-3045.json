@@ -7077,32 +7077,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "unknown_get_entry_00765e60",
       "source_order": 118990
-    },
-    {
-      "entry": 7829616,
-      "method": "00777870",
-      "symbol": "?unknown_decoder_reset_6d0@@YIHPAUUnknownDecoderState_77870@@@Z",
-      "symbol_prefix": "?unknown_decoder_reset_6d0@@YIHPAUUnknownDecoderState_77870@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 10,
-      "body_sha256": "d5f8937e1ba7c498a25b6ae490ccb34bd7fcefddaf3a8aa1e7f2be18aea63ed3",
-      "padding_bytes": 6,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "2e85b35b025ef20eed3820b46fcefae8d94961eff471728bf59302c4375660a8",
-      "relocations": [],
-      "source_sha256": "ef39e7a57488f3d079fcaf3689feb243b0789855476cec6355aa6fff8d896efc",
-      "source": "src/recovered/unowned/unknown_decoder_reset_6d0_00777870.cpp",
-      "population": "population-3045",
-      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_decoder_reset_6d0_00777870",
-      "source_order": 118991
     }
   ]
 }

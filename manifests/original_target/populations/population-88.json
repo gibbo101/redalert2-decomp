@@ -7198,56 +7198,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 7832624,
-      "method": "00778430",
-      "symbol": "?FUN_00778430@seed_00778430@@YAXXZ",
-      "symbol_prefix": "?FUN_00778430@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 1,
-      "body_sha256": "ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e",
-      "padding_bytes": 15,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "499f1f307c1cb989f968a6b7fcaec591e1828877223d0b0e7e8e8b76cde8c9ca",
-      "relocations": [],
-      "source_sha256": "e81d7f88463eee7bea46185f545c153b546594a64f6fa2d7c8ee1d7a0f0d82da",
-      "source": "src/recovered/00778430.cpp",
-      "source_order": 10491,
-      "population": "population-88",
-      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
-      "entry": 7832640,
-      "method": "00778440",
-      "symbol": "?FUN_00778440@seed_00778440@@YAIXZ",
-      "symbol_prefix": "?FUN_00778440@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 4,
-      "body_sha256": "031a1d90a8a2c46993613c8b2828efd0c52f20f2852d5f2ff930bc6acc0090c8",
-      "padding_bytes": 12,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "ca7ecff8f03519160102a6cef35737c8af874a9bea7748eb56fc710a9fb329f3",
-      "relocations": [],
-      "source_sha256": "f82acfa2aea734100d6c6e06338dae7814bd8d377c50f94ef3af4d450b422f03",
-      "source": "src/recovered/00778440.cpp",
-      "source_order": 10492,
-      "population": "population-88",
-      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 7850112,
       "method": "0077c880",
       "symbol": "?FUN_0077c880@seed_0077c880@@YIXH@Z",

@@ -6,6 +6,7 @@
 #define RA2_SHARED_CRT_STRING_HPP
 
 extern "C" int __cdecl strcmp(char const *left, char const *right);
+extern "C" unsigned int __cdecl strlen(char const *string);
 extern "C" char *__cdecl strcpy(char *destination, char const *source);
 extern "C" char *__cdecl strcat(char *destination, char const *source);
 extern "C" int __cdecl strncmp(char const *left, char const *right, unsigned int count);   // 0x00783810
@@ -17,6 +18,6 @@ extern "C" void *__cdecl memmove(void *destination, void const *source, unsigned
 extern "C" void *__cdecl memset(void *destination, int value, unsigned int count);
 extern "C" void __cdecl qsort(void *base, unsigned int count, unsigned int width,
                               int(__cdecl *compare)(void const *, void const *));   // 0x00781D46
-#pragma intrinsic(strcmp, strcpy, strcat, memset)
+#pragma intrinsic(strcmp, strlen, strcpy, strcat, memset)
 
 #endif
