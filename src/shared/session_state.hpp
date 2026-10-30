@@ -130,7 +130,8 @@ struct UnknownSessionState {
     char unknown_2c0[0x2C8 - 0x2C0];
     unsigned int MaxAhead_2c8;              // +0x2C8 the frames ahead (set by the game speed; also unknown_max_ahead_a3d560)
     unsigned int unknown_2cc;               // +0x2CC
-    char unknown_2d0[0x2E0 - 0x2D0];
+    int unknown_2d0;                        // +0x2D0 (also unknown_a3d568; the TIMING event sets it)
+    char unknown_2d4[0x2E0 - 0x2D4];
     unsigned int unknown_2e0;               // +0x2E0 (MaxAhead_2c8 at the start of a cooperative map)
     unsigned int unknown_2e4;               // +0x2E4 (from MaxAhead_2c8 by the ping class, a multiple of 10)
     unsigned int unknown_2e8;               // +0x2E8 (by the game speed; 0 without pings; also unknown_a3d580)

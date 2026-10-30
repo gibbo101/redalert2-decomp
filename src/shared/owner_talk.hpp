@@ -38,6 +38,10 @@ public:
     void Unknown_0063F070();                                // 0x0063F070 (empties the list; also UnknownOwnedList_0063f070::unknown_clear)
     char *Unknown_0063FB40(int index);                      // 0x0063FB40 (a connection's name)
     IPXAddressClass *Unknown_0063FA00(char *name);          // 0x0063FA00 (the address of a named connection)
+    int Unknown_0063FBA0();                                 // 0x0063FBA0 (the next game host, -1: none; ABOUTTOEXIT)
+    void Unknown_0063F130();                                // 0x0063F130 (the new host takes over the router; ABOUTTOEXIT)
+    void Unknown_0063F9A0(int id, IPXAddressClass *address);   // 0x0063F9A0 (a player's new address; ADDRESSCHANGE)
+    void Unknown_0063FE20(int id);                          // 0x0063FE20 (a removed player; REMOVEPLAYER)
     unsigned short Unknown_0063FAF0(char *name);            // 0x0063FAF0 (the id of a named connection)                // 0x0063FC90 (MPCooperative slot 37, when the flagged connection exists)
 
     DynamicVectorClass<ConnectionListStruct *> Connections;   // +0x00

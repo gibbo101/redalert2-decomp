@@ -34,7 +34,7 @@ public:
     unsigned char Type;         // +0x00
     unsigned char IsExecuted : 1;   // +0x01 bit 0: executed (Red Alert's IsExecuted)
     unsigned char unknown_01 : 7;
-    unsigned char House;        // +0x02 (0xFF: none)
+    char House;                 // +0x02 (0xFF: none)
     long Frame;                 // +0x03 the frame it was queued or executes (signed: Clean_DoList compares with jle)
     // +0x07 the payload; each constructor fills its own shape. The
     // three-long-and-cell shape of 0x004B6370 and 0x004B63F0 is written
@@ -48,6 +48,16 @@ public:
             long Long3;             // +0x0F
             struct { short X, Y; } Location;   // +0x13 a cell (Cell has constructors: not a union member)
         } LongsCell;
+        // TIMING (type 0x20): the new timing values (Red Alert's TimingEventType).
+        struct {
+            unsigned short DesiredFrameRate;    // +0x07
+            unsigned short MaxAhead;            // +0x09
+            unsigned char FrameSendRate;        // +0x0B
+        } Timing;
+        // PROCESS_TIME (type 0x21): the sender's average frame time.
+        struct {
+            unsigned short AverageTicks;        // +0x07
+        } ProcessTime;
     } Data;
 
     // The payload field at a packed offset of the event (offsets as in the
@@ -81,6 +91,17 @@ public:
     EventClass(int house, IPXAddressClass *address, unsigned char unknown);
     // The same with two longs (0x004B6370; +0x0F is 0).
     EventClass(int house, int type, int a, int b, Cell const &cell);
+    // The cell at +0x07 (0x004B5F60; TibSun's SellCell shape).
+    EventClass(int house, unsigned char type, Cell const &cell);
+    // A long at +0x07 and the cell at +0x0B (0x004B6470).
+    EventClass(int house, unsigned char type, int id, Cell const &cell);
+    // Two longs at +0x07 and +0x0B (0x004B64F0).
+    EventClass(int house, unsigned char type, int rtti, int id);
+    // ANIMATION (type 0x14, 0x004B6110): anim type, owner and the coordinate's X and Y.
+    EventClass(int house, int anim, int owner, CoordStruct const &coord);
+
+    // Carries out the event (0x004B65C0; Red Alert's Execute).
+    void Execute();
 };
 #pragma pack(pop)
 

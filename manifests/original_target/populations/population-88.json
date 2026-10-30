@@ -2106,64 +2106,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 4940048,
-      "method": "004b6110",
-      "symbol": "?FUN_004b6110@Owner_004b6110@seed_004b6110@@QAEPAEHIIPAI@Z",
-      "symbol_prefix": "?FUN_004b6110@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 96,
-      "body_sha256": "7958a9e9349ae40f7cadf98d2e717cad1009dd6b3fc4dfb3df455ddd2121edb3",
-      "padding_bytes": 0,
-      "full_extent_bytes": 96,
-      "full_extent_sha256": "7958a9e9349ae40f7cadf98d2e717cad1009dd6b3fc4dfb3df455ddd2121edb3",
-      "relocations": [
-        {
-          "offset": 4,
-          "kind": 6,
-          "symbol": "_s_Adding_event_ANIMATION_007d68a4",
-          "target": 8218788,
-          "addend": 0,
-          "resolved": 8218788
-        },
-        {
-          "offset": 9,
-          "kind": 20,
-          "symbol": "?FUN_004068f0@seed_004b6110@@YAXH@Z",
-          "target": 4221168,
-          "addend": 0,
-          "resolved": 4294248403
-        },
-        {
-          "offset": 61,
-          "kind": 6,
-          "symbol": "_DAT_00a40d2c",
-          "target": 10751276,
-          "addend": 0,
-          "resolved": 10751276
-        },
-        {
-          "offset": 83,
-          "kind": 6,
-          "symbol": "_DAT_00a40d2c",
-          "target": 10751276,
-          "addend": 0,
-          "resolved": 10751276
-        }
-      ],
-      "source_sha256": "a9cac719da25336ac858cb0ad52ab3ff2f1923919b1b923da008421b7658d88f",
-      "source": "src/recovered/004b6110.cpp",
-      "source_order": 10099,
-      "population": "population-88",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 4957888,
       "method": "004ba6c0",
       "symbol": "?FUN_004ba6c0@seed_004ba6c0@@YAXXZ",

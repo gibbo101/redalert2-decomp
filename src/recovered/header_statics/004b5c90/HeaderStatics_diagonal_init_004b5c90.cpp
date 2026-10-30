@@ -4,6 +4,30 @@
 // drafts of this plan are emitted by these includes.
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
+// The rest of Event.CPP's include list: EventClass::Execute (0x004B65C0) matches only when these
+// come before shared/event.hpp (the order changes its inline expansions).
+#include "shared/building_class.hpp"
+#include "shared/unit.hpp"
+#include "shared/cell.hpp"
+#include "shared/dsurface.hpp"
+#include "shared/queue.hpp"
+#include "shared/session_state.hpp"
+#include "shared/foot.hpp"
+#include "shared/building_type_class.hpp"
+#include "shared/map_view.hpp"
+#include "shared/anim.hpp"
+#include "shared/anim_type.hpp"
+#include "shared/rules.hpp"
+#include "shared/team.hpp"
+#include "shared/spawn_manager.hpp"
+#include "shared/string_table.hpp"
+#include "shared/ww_message_box.hpp"
+#include "shared/load_dlg.hpp"
+#include "shared/ipx_conn.hpp"
+#include "shared/options.hpp"
+#include "shared/id_source.hpp"
+#include "shared/unknown_player_entry.hpp"
+#include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410
