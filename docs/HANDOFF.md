@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. Mac lanes are at zero (user, 2026-10-30): the owner only lands Windows deliveries (a Monitor on deliveries/ wakes it; re-arm every 30 min), keeps assignments/BOARD current and steers codex1-4; no new Mac lanes; when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-No Mac lanes running (last: Foot305, Hdr306). Landed 2026-10-30: Hdr306 (audit now names the refused row and first differing offset; 0x549C50 Sight_From 1,208 B; type-count rule in VC6_MATCHING_NOTES), Foot305 r2 (3,657 B with the 0x4CB110 bool rename), Map303 r1 (2,219 B), Foot304 r3 (5,255 B, slots 78/93, 0x4CCA40), Foot302 r2 (1,432 B, slots 54/77), Map298 r5 (10,138 B + 0x54F7C0 bool rename), Cell301 r1 (1,403 B + Init_Drawer rename), Tactical300 r1 (1,071 B; owner dropped its file-local Point2D operator+, now a rect.hpp member). Next lane candidates: Tactical rest (Tactical300 NOTES), Cell rest (Cell301 NOTES), Techno.CPP, TeamClass, Sidebar. Terrain160 landed
+Ghidra pass 6 trial (2026-10-30, review-session request): build/pass6-trial/REPORT.md. ApplyKnowledge.java (tracked, landed in f2f511a3 with codex2 r2753) applied 9,190 accepted signatures and flat HouseClass/BuildingClass layouts to a pass5 copy; 20-function seed scores flat on average (6 up, 4 down, mean -0.1; 0x4E8990 27.5->43.7), readability much better (named fields, typed callees). Awaiting the user's call on whole-program 6a as a reference pass; inventory.py takes RA2_INVENTORY_PASSES for trial passes. No Mac lanes running (last: Foot305, Hdr306). Landed 2026-10-30: Hdr306 (audit now names the refused row and first differing offset; 0x549C50 Sight_From 1,208 B; type-count rule in VC6_MATCHING_NOTES), Foot305 r2 (3,657 B with the 0x4CB110 bool rename), Map303 r1 (2,219 B), Foot304 r3 (5,255 B, slots 78/93, 0x4CCA40), Foot302 r2 (1,432 B, slots 54/77), Map298 r5 (10,138 B + 0x54F7C0 bool rename), Cell301 r1 (1,403 B + Init_Drawer rename), Tactical300 r1 (1,071 B; owner dropped its file-local Point2D operator+, now a rect.hpp member). Next lane candidates: Tactical rest (Tactical300 NOTES), Cell rest (Cell301 NOTES), Techno.CPP, TeamClass, Sidebar. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -82,7 +82,7 @@ Bytes landed per worker per day (first two days; body bytes from each delivery R
 | 2026-10-31 | 9,706 | 0 | 2,978 | 0 (r5 rename; r4 refused, r6 waits on r4) |
 | 2026-10-31 (later) | 2,577 (r242, r249) | 6,051 (r2732-r2740 + r2733 fastcall rename) | 4,329 (r185, supersedes r182-r184) | 6,805 (r10 rebase + r11 ctor) |
 | 2026-10-31 (evening) | 758 (r269; r266 rename, r279 header types) | 7,532 (r2741-r2745) | 629 (r186) | 3,028 (r12-r15; r16 rename) |
-| 2026-10-31 (night) | 2,746 (r287, r293, r308, r319; r312 Cell::Equal rename) | 8,269 (r2746-r2752) | 512 (r187, first UnitClass) | 1,814 (r17, r19; r18 IndexClass header) |
+| 2026-10-31 (night) | 2,746 (r287, r293, r308, r319; r312 Cell::Equal rename) | 9,236 (r2746-r2753) | 512 (r187, first UnitClass) | 1,814 (r17, r19; r18 IndexClass header) |
 BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
 so MPCooperative functions that call a base body need separate units.
 
