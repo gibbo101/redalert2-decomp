@@ -8,7 +8,7 @@
 #include "shared/vector_class.hpp"
 
 bool HouseClass::unknown_func_4ef740(BuildingTypeClass *type,
-    DynamicVectorClass<BuildingTypeClass *> &available, int count)
+    DynamicVectorClass<BuildingTypeClass const *> &available, int count)
 {
     int prerequisite = 0;
     if (type->Prerequisite.Count() > 0) {

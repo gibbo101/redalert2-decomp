@@ -242,7 +242,7 @@ public:
     void unknown_func_4f2350();                            // 0x004F2350 (AI_Building: a base node of type -3)
     bool unknown_func_4f5d30(int node);                    // 0x004F5D30 (AI_Building: by base node index)
     bool unknown_func_4f1190(int node, DynamicVectorClass<Cell> *cells);   // 0x004F1190 (AI_Building: places a base node)
-    bool unknown_func_4ef740(BuildingTypeClass *type, DynamicVectorClass<BuildingTypeClass *> &owned, int count);   // 0x004EF740 (whether owned holds the type's prerequisites)
+    bool unknown_func_4ef740(BuildingTypeClass *type, DynamicVectorClass<BuildingTypeClass const *> &owned, int count);   // 0x004EF740 (whether owned holds the type's prerequisites)
     int AI_Infantry();                                     // 0x004EA1B0 (RA's AI_Infantry: picks unknown_5544 from the teams' needs)
     int AI_Aircraft();                                     // 0x004EA4D0 (RA's AI_Aircraft: picks unknown_5548)
     void unknown_4ea7f0(TechnoClass *object); // proposedacceptedLeafownership/typecorrection,0x004EA7F0
