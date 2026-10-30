@@ -89,6 +89,14 @@ public:
     // Moves the origin back by a point (FoggedObjectClass 0x004C00F0).
     Rect &operator-=(Point2D const &point) { X -= point.X; Y -= point.Y; return *this; }
 
+    // The two rectangles overlap, shared edges excluded (TibSun TRect::Is_Overlapping; Tactical 0x006AA090).
+    bool Is_Overlapping(Rect const &rect) const
+    {
+        return X < rect.X + rect.Width && Y < rect.Y + rect.Height && X + Width > rect.X && Y + Height > rect.Y;
+    }
+    // The rectangle moved by a point (TibSun TRect::operator+, here member-wise inline).
+    Rect operator+(Point2D const &point) const { return Rect(X + point.X, Y + point.Y, Width, Height); }
+
     // Overlap with another rectangle (the free Intersect below).
     Rect Intersect(Rect const &rect, int *x = 0, int *y = 0) const;
 

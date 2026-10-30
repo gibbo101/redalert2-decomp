@@ -124,6 +124,10 @@ public:
     bool Is_Cell_Visible(Cell const &cell);         // 0x006A9120
     Cell Clamp_Cursor_To_Tactical(Cell const &cell, Cell const *list);  // 0x006AA970
     void Reset_Dirty_Rectangles();                  // 0x006AAF80 (empties TacticalLists::DirtyAreas)
+    // Redraws the overlays of the view, the panned strips, the flagged cells and the dirty areas (0x006A3B20).
+    void Render_Overlays(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw);
+    void Draw_Overlays(Rect const &area);           // 0x006A7350
+    void Register_Dirty_Buildings(Rect area);       // 0x006AA090
 
     // Layout from the constructor 0x006A24B0 (init-list stores, then the body).
     short unknown_24;               // +0x24 cleared by the constructor
@@ -140,7 +144,7 @@ public:
     float unknown_d8;               // +0xD8 the scroll step per frame (ScrollClass slot 26 tests it against 0)
     float unknown_dc;               // +0xDC the scroll progress, 0..1
     int unknown_e0;                 // +0xE0
-    int unknown_e4[800];            // +0xE4 pointers (cleared by the constructor, swizzled by Load; unknown_e0 counts them)
+    CellClass *unknown_e4[800];     // +0xE4 the cells to redraw (TibSun CellRedraw; cleared by the constructor, swizzled by Load; unknown_e0 counts them)
     Point2D unknown_d64;            // +0xD64 the view position
     Point2D unknown_d6c;            // +0xD6C
     Point2D unknown_d74;            // +0xD74 the requested view position
