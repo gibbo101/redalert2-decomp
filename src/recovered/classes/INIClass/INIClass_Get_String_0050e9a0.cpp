@@ -11,18 +11,16 @@ int INIClass::Get_String(char const *section, char const *entry, char const *def
         return 0;
     }
 
-    char const *value;
     INIEntry *entptr = Find_Entry(section, entry);
     if (entptr != 0 && entptr->Value != 0) {
-        value = entptr->Value;
-    } else {
-        value = defvalue;
-        if (value == 0) {
-            buffer[0] = '\0';
-            return 0;
-        }
+        defvalue = entptr->Value;
     }
-    strncpy(buffer, value, size);
+
+    if (defvalue == 0) {
+        buffer[0] = '\0';
+        return 0;
+    }
+    strncpy(buffer, defvalue, size);
     buffer[size - 1] = '\0';
     strtrim(buffer);
     return strlen(buffer);

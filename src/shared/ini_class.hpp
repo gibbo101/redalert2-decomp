@@ -60,6 +60,8 @@ extern "C" void *__cdecl memset(void *destination, int value, unsigned int count
 #include "shared/wstring.hpp"
 
 struct GUID;
+class WideString;
+class PKey;
 
 void *__cdecl operator new(unsigned int size);
 void __cdecl operator delete(void *block);
@@ -441,7 +443,12 @@ struct INIRect {
     int Height;     // +0x0C
 };
 
+// The readers build their result with the (x, y[, z]) constructors; with them
+// the 8-byte point is returned through a hidden pointer, and the constructor
+// site in Get_Point 0x0050FA40 keeps Get_String's Is_Present out of line.
 struct INIPoint2D {
+    INIPoint2D() {}
+    INIPoint2D(int x, int y) : X(x), Y(y) {}
     int X;          // +0x00
     int Y;          // +0x04
 };
@@ -453,6 +460,8 @@ struct INIPoint2D {
 inline Point2D::Point2D(INIPoint2D const &point) : X(point.X), Y(point.Y) {}
 
 struct INIPoint3D {
+    INIPoint3D() {}
+    INIPoint3D(int x, int y, int z) : X(x), Y(y), Z(z) {}
     int X;          // +0x00
     int Y;          // +0x04
     int Z;          // +0x08
@@ -583,11 +592,12 @@ public:
     double Get_Double(char const *section, char const *entry, double defvalue = 0.0) const;
     // A class ID written as text (0x0050DA00).
     GUID Get_UUID(char const *section, char const *entry, GUID defvalue) const;
+    // The class ID as text (StringFromCLSID narrowed into 128 bytes; 0x0050DC20).
+    bool Put_UUID(char const *section, char const *entry, GUID const &value);
     bool Get_Bool(char const *section, char const *entry, bool defvalue = false) const;
     INIRect Get_Rect(char const *section, char const *entry, INIRect const &defvalue) const;
     INIRect Get_Rect(Wstring const &section, Wstring const &entry, INIRect const &defvalue) const;
-    // 0x0050F670: returns a Point2D (through a hidden pointer: Point2D has
-    // constructors).
+    // 0x0050F670 (returned through a hidden pointer: INIPoint2D has constructors).
     INIPoint2D Get_Point(char const *section, char const *entry, Point2D const &defvalue) const;
     INIPoint2D Get_Point(Wstring const &section, Wstring const &entry, Point2D const &defvalue) const;  // 0x0050F800 (default a Point2D like the char overload: Create_Anim_Item 0x004DF350)
     INIPoint3D Get_Point(char const *section, char const *entry, INIPoint3D const &defvalue) const;
@@ -599,10 +609,27 @@ public:
     // A wide string with a wide default (0x0050EDF0; name hypothesis).
     int Get_Unicode(char const *section, char const *entry, unsigned short const *defvalue, unsigned short *buffer, int size) const;
     bool Put_Unicode(char const *section, char const *entry, unsigned short const *string);   // 0x0050ECF0 (name hypothesis)
+    // The localized text of the string table label the entry names, at most
+    // size characters, null terminated; returns the length (0x0050F010). The
+    // second form fetches the label defvalue when the entry is missing or
+    // empty (0x0050F1B0; it takes the buffer before the default).
+    int Get_Wide_String(char const *section, char const *entry, unsigned short *buffer, int size) const;
+    int Get_Wide_String(char const *section, char const *entry, unsigned short *buffer, char const *defvalue,
+                        int size) const;
+    bool Put_Unicode(Wstring const &section, Wstring const &entry, WideString const &string);  // 0x0050EDC0
     // A binary block stored uuencoded across the entries of a section;
     // returns the decoded length (0x0050D0F0 / 0x0050CFC0).
     int Get_UUBlock(char const *section, void *block, int length) const;
     bool Put_UUBlock(char const *section, void const *block, int length);
+    // Text split into numbered entries of at most 75 characters, broken at
+    // whitespace (0x0050D310); Get_TextBlock joins them (0x0050D400).
+    bool Put_TextBlock(char const *section, char const *text);
+    int Get_TextBlock(char const *section, char *buffer, int length) const;
+    // The RSA key parts as uuencoded DER blocks in [PublicKey] (modulus) and
+    // [PrivateKey] (exponent; the fast key uses the known exponent 65537)
+    // (0x00510310, 0x00510370).
+    bool Put_PKey(PKey const &key);
+    PKey Get_PKey(bool fast) const;
 
     // Line helpers used by Load (explicit fastcall, like the rest of the
     // game's non-member code).
