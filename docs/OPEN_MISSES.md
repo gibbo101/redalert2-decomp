@@ -588,3 +588,16 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   misses. New: BuildingLightClass::AI 0x433970 71.88 (bl/ai5.cpp; CoordStruct ctor 0x41B630 out of line in the original
   inside the inlined 434530->434610->operator- chain), BulletClass::Detach 0x461520 74.38. Fresh large targets: Bullet AI
   0x45F710 (6438), Anim AI 0x421710, Team AI 0x6B7AD0 (3222; needs Foot/Techno slot declarations, coordinate with Windows).
+- wonline.cpp after Wonline244 (NOTES): OnPublicGameOptions 0x761890 66.78 in the population (/Ob2 inlines
+  Unknown_0074DA60, the original calls it; atexit 0x765980 + guard go with it), deleting dtors 0x765A60/0x765AC0 and
+  ctor 0x765AA0 come from the unaccepted create-game dialog proc near 0x7459A0, OnLadderList 0x75D330 87.38.
+  Special_Dialog_00481850.cpp declares Unknown_0073C230 locally as cdecl (it is __fastcall).
+- Display hierarchy after Display245 (NOTES: 17 open members, 19.2 KB; class_inventory double-counts inherited slots):
+  ScrollClass edge autoscroll 0x669EC0 82.07, PowerClass::Draw_It 0x61C8C0 89.69, RadarClass 0x62F310 90.22, 0x633000
+  87.43, GScreenClass::Get_Input 0x4E09D0 82.81. Cell sums written as the member `AdjacentCell[f].unknown_42add0(cell)`
+  load the table operand first like the original.
+- netshare.cpp after Netshare247 (zero bytes; NOTES, c/, t/us.sh scores in the whole unit): Lobby_Dialog_Proc 0x5C69E0
+  63.75 (four static helpers reproduce the 0x583/0x497 inline decisions; the 0x6EB case still inlines the local
+  DynamicVectorClass ctor/Add the original calls; landing moves 0x5C7160 from population-2392 into netshare and renames
+  MultiplayerGameMode slot 3 to take WideString*). 0x5CBF20 43.42 (the refusal path keeps `previous` on the stack in the
+  original). 0x5C3FF0 (7,887 B) not started.
