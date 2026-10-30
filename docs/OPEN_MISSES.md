@@ -629,3 +629,6 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - VQAClass after VQA257 (NOTES: span 0x717CE0-0x71DC10 is three TUs: quaternion/Matrix3D facing 0x717CE0-0x71C31F,
   VQAClass 0x71C320-0x71DB1F population-2639, option bits 0x71DB20-0x71DC0F own population): buffer stream callback
   0x71CA00 39.47 (count in edx, ebx pushed only around memcpy, position in edi; case 1-4 block first).
+- Ini.CPP after Ini258 (NOTES unit map; mk.py states bounds, RETIRE= for retired rows): Save(Pipe) 0x50C620 98.57, Put_Unicode
+  0x50ECF0 91.82, Load(Straw) 0x50BC30 84.36 (lands with CacheStraw dtor 0x510AD0), Get_Unicode 0x50EDF0 83.33 (frame
+  0x5028 vs 0x5014). Follow-up rename: CampaignINI::Get_Wide_String -> INIClass::Get_Wide_String (0x50F010).

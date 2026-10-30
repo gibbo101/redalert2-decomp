@@ -111,6 +111,7 @@ public:
     bool Unknown_0055A740(CellClass *cell, bool flag);                          // 0x0055A740
     bool Unknown_0055A7F0(CoordStruct const &coord);                            // 0x0055A7F0
     void Unknown_0055ACC0();                                                    // 0x0055ACC0
+    bool Unknown_0055ACD0(ObjectClass *object, Cell const &cell);             // 0x0055ACD0 (whether the object may enter the cell: false when another object there blocks it)
     void Unknown_0054FC60(Cell const &cell);      // 0x0054FC60
     void Unknown_00566340(Cell const &cell);                              // 0x00566340
     bool Unknown_005683C0(CoordStruct const &coord);                            // 0x005683C0 (Tunnel.cpp)
@@ -141,6 +142,7 @@ class DisplayClass : public MapClass {
 public:
     void Submit(ObjectClass *object);                                           // 0x00499A40
     void Remove(ObjectClass *object);                                           // 0x00499A90
+    CoordStruct Unknown_0049CB70(CoordStruct const &coord, bool any);           // 0x0049CB70
     Cell Unknown_0049A700(int edge, Cell const &cell1, Cell const &cell2, int arg4, int arg5, int arg6);   // 0x0049A700
     void Unknown_0049E5E0();                                                    // 0x0049E5E0 (every cell runs 0x004798F0)
     ObjectClass *Unknown_0049EC40();                                            // 0x0049EC40

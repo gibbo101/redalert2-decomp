@@ -42,6 +42,8 @@ class TeamTypeClass;
 struct UnknownTracker839EA0 {
     void Unknown_00413310(FootClass *foot);    // 0x00413310
     void Unknown_004131E0(FootClass *foot);    // 0x004131E0 (a unit arrives; FootClass slot 53)
+    bool Unknown_004132E0(FootClass *foot);    // 0x004132E0
+    void Unknown_00413600(FootClass *foot, Cell from, Cell to);    // 0x00413600 (a unit moves from one cell to another)
 };
 extern UnknownTracker839EA0 unknown_tracker_839ea0;
 // An object found by cell (0x00710160 searches the list at 0x00AD074C for

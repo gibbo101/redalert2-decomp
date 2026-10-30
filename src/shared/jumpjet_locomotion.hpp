@@ -38,6 +38,14 @@ public:
 
     void unknown_52fca0();              // 0x0052FCA0 (Process: a moving jumpjet takes off: full height ratio, the object facing taken, speeds cleared, target height; unless the house holds the locomotors, state 1)
     int unknown_531140();               // 0x00531140 (the ground height to hold: under the object, or with speed the higher of it and one cell ahead, else their mean; bridges add the bridge height)
+    void unknown_52fd50();              // 0x0052FD50 (Process state 1, ascending: climbs to the target height, then claims the cell (2) or cruises (3))
+    void unknown_52fff0();              // 0x0052FFF0 (Process state 2, hovering: over the target the state becomes 2 or 4, else turns toward it, releases the cell claims, state 3)
+    void unknown_530180();              // 0x00530180 (Process state 3)
+    void unknown_530550();              // 0x00530550 (Process state 4)
+    void unknown_530940();              // 0x00530940 (Process state 5, crashing: sinks and spins; on the ground state 6 and notice 0x117C)
+    void unknown_530ad0();              // 0x00530AD0 (Process state 6: an empty routine; Process expands it, the copy is unreferenced)
+    void unknown_530b00();              // 0x00530B00 (Process: the movement step)
+    CoordStruct unknown_5310a0(CoordStruct const &coord);    // 0x005310A0 (the free spot near a coordinate (0x0049CB70) at ground height, bridges added; Move_To expands it, the copy is unreferenced)
 
     // The linked type's [Jumpjet*] values (Link_To_Object copies them; the
     // height is at least twice the unit's geometry constant).

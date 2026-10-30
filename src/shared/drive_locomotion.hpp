@@ -75,6 +75,8 @@ public:
     int Is_Level();                                                             // 0x0049FFC0 (slope settled and the hull within 0.005 of level)
     void unknown_4a0bc0(CoordStruct const &coord, int mark);                    // 0x004A0BC0 (marks the track cells)
     Point2D Smooth_Turn(Point2D const &offset, int &facing);                    // 0x004A4740 (a track point and facing mirrored by the track's flags, from the head-to coordinate)
+    bool unknown_4a47c0(Cell cell);                                             // 0x004A47C0 (whether the unit may enter a cell, 0x0055ACD0; unreferenced)
+    bool unknown_4a4850();                                                      // 0x004A4850 (with no queued 0x478 entries slot 260(0, 1) and false, else 0x004CD9B0 and slot 261(false, true); unreferenced)
 
     int unknown_1c;                     // +0x1C ramp
     int unknown_20;                     // +0x20 ramp
