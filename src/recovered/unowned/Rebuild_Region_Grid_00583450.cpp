@@ -18,8 +18,8 @@ void __fastcall Rebuild_Region_Grid_00583450(MapSeedClass const &options)
     if(unknown_map_cells_a70a24!=0) {
         int remaining=(int)((unsigned int)unknown_map_cell_side_84e804*(unsigned int)unknown_map_cell_side_84e804);
         for(int index=0;remaining>0;--remaining,++index) {
-            unknown_map_cells_a70a24[index].RegionIndex=-1;
-            unknown_map_cells_a70a24[index].unknown_3c=-1;
+            MapRegionClass::Get_Cell_Data(index).RegionIndex=-1;
+            MapRegionClass::Get_Cell_Data(index).unknown_3c=-1;
         }
     }
     for(int reverse=(int)((unsigned int)unknown_map_regions_a6fd28.Count()-1u);reverse>=0;--reverse) {
@@ -30,10 +30,10 @@ void __fastcall Rebuild_Region_Grid_00583450(MapSeedClass const &options)
         int remaining=(int)((unsigned int)unknown_map_cell_side_84e804*(unsigned int)unknown_map_cell_side_84e804);
         unknown_map_region_next_index_a70a28=0;
         for(int index=0;remaining>0;--remaining,++index) {
-            Cell position=unknown_map_cells_a70a24[index].Position;
+            Cell position=MapRegionClass::Get_Cell_Data(index).Position;
             CellClass &cell=Map[position];
-            if(unknown_map_cells_a70a24[index].RegionIndex==-1 &&
-               (unknown_map_cells_a70a24[index].Position.X!=0 || unknown_map_cells_a70a24[index].Position.Y!=0) &&
+            if(MapRegionClass::Get_Cell_Data(index).RegionIndex==-1 &&
+               (MapRegionClass::Get_Cell_Data(index).Position.X!=0 || MapRegionClass::Get_Cell_Data(index).Position.Y!=0) &&
                (cell.unknown_47b7e0() || cell.unknown_47b9c0())) {
                 Build_Map_Region_0056e100(&cell);
             }
@@ -52,9 +52,9 @@ void __fastcall Rebuild_Region_Grid_00583450(MapSeedClass const &options)
     {
         int remaining=(int)((unsigned int)unknown_map_cell_side_84e804*(unsigned int)unknown_map_cell_side_84e804);
         for(int index=0;remaining>0;--remaining,++index) {
-            if(unknown_map_cells_a70a24[index].RegionIndex==-1 &&
-               (unknown_map_cells_a70a24[index].Position.X!=0 || unknown_map_cells_a70a24[index].Position.Y!=0)) {
-                MapRegionClass *region=Build_Map_Region_0056e100(&Map[unknown_map_cells_a70a24[index].Position]);
+            if(MapRegionClass::Get_Cell_Data(index).RegionIndex==-1 &&
+               (MapRegionClass::Get_Cell_Data(index).Position.X!=0 || MapRegionClass::Get_Cell_Data(index).Position.Y!=0)) {
+                MapRegionClass *region=Build_Map_Region_0056e100(&Map[MapRegionClass::Get_Cell_Data(index).Position]);
                 if(region!=0)region->unknown_1a=false;
             }
         }

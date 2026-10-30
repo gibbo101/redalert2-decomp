@@ -7,8 +7,12 @@
 #include "shared/rect.hpp"
 #include "shared/vector_class.hpp"
 class CellClass;
+struct UnknownMapGenerationCell;
 class MapRegionClass {
 public:
+    static UnknownMapGenerationCell &Get_Cell_Data(int index);
+    static void Make_Ice_Regions_005704c0();
+    bool Split_Region_0056ef20();
     void Place_Neutral_Tech_Building_00576cd0();
     static bool Make_Regions_00570810();
     static MapRegionClass *__fastcall Create_Region_From_Cell_0056e100(CellClass *cell);
@@ -82,4 +86,8 @@ extern Cell const unknown_adjacent_851a70[8];
 extern UnknownMapGenerationCell *unknown_map_cells_a70a24;
 // Source name, const-reference and signed-index intent are hypotheses; physical ECX/EDX contract at0056E970.
 void __fastcall Set_Cell_Region_Index_0056e970(Cell const &position, int index);
+inline UnknownMapGenerationCell &MapRegionClass::Get_Cell_Data(int index)
+{
+    return unknown_map_cells_a70a24[index];
+}
 #endif
