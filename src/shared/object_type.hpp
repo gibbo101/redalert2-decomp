@@ -52,6 +52,20 @@ public:
 // and cleared when destroyed.
 class UnknownBuffer {
 public:
+    // Index nodes are eight bytes: signed key at +0 and an opaque voxel-cache value at +4.
+    struct NodeElement {
+        int ID;
+        void *Data;
+    };
+    bool Is_Present_0070a350(int const &id) const; // ECX owner, RET4, AL bool; sorts and updates archive.
+    bool Is_Archive_Same_0070a3f0(int const &id) const; // ECX owner, RET4, AL bool.
+    NodeElement const *Search_For_Node_006d9850(int const &id) const; // ECX owner, RET4; sorts before signed-key binary search.
+    static int __cdecl Compare_Nodes_006d98d0(void const *left,void const *right)
+        {
+            if (*static_cast<int const *>(left)==*static_cast<int const *>(right)) return 0;
+            if (*static_cast<int const *>(left)<*static_cast<int const *>(right)) return -1;
+            return 1;
+        }
     UnknownBuffer() : unknown_00(0), unknown_04(0), unknown_08(0), unknown_0c(false), unknown_10(0) {}
     ~UnknownBuffer()
     {
