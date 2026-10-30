@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Cell296 CellClass via TibSun cell.cpp; Unit294 UnitClass near misses and TibSun-shaped slot rewrites; Map295 MapClass span 0x543FE0-0x56CEF0 (non-virtual members, TibSun map.cpp); Inline293 helper-size study (wordier Westwood helpers; unblocks Tactical Render passes). All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Cell296 CellClass via TibSun cell.cpp; ComPtr297 com_ptr.hpp comip.h model (unblocks inline COM queries in Unit/Fly); Map295 MapClass span 0x543FE0-0x56CEF0 (non-virtual members, TibSun map.cpp); Inline293 helper-size study (wordier Westwood helpers; unblocks Tactical Render passes). All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -80,7 +80,7 @@ Bytes landed per worker per day (first two days; body bytes from each delivery R
 | Date | codex1 | codex2 | codex3 | codex4 |
 | --- | ---: | ---: | ---: | ---: |
 | 2026-10-30 | 2,845 | 0 (Mono rename+takeover) | 11,110 | 780 |
-| 2026-10-31 | 8,153 | 0 | 2,978 | 0 (r5 rename; r4 refused, r6 waits on r4) |
+| 2026-10-31 | 8,786 | 0 | 2,978 | 0 (r5 rename; r4 refused, r6 waits on r4) |
 BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
 so MPCooperative functions that call a base body need separate units.
 

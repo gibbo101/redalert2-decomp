@@ -13,6 +13,7 @@
 #include "shared/vector_class.hpp"
 
 class HouseClass;
+class CellClass;
 
 class TechnoClass : public AbstractClass {
 public:
@@ -29,11 +30,19 @@ public:
     virtual void unknown_slot77(); virtual void unknown_slot78(); virtual void unknown_slot79(); virtual void unknown_slot80(); virtual void unknown_slot81(); virtual void unknown_slot82();
     virtual void unknown_slot83(); virtual void unknown_slot84(); virtual void unknown_slot85(); virtual void unknown_slot86(); virtual void unknown_slot87(); virtual void unknown_slot88();
     virtual void unknown_slot89(); virtual void unknown_slot90(); virtual void unknown_slot91(); virtual void unknown_slot92(); virtual void unknown_slot93(); virtual void unknown_slot94();
-    virtual void unknown_slot95(); virtual void unknown_slot96(); virtual void unknown_slot97(); virtual void unknown_slot98(); virtual void unknown_slot99(); virtual void unknown_slot100();
+    virtual void unknown_slot95();
+    virtual void unknown_slot96(HouseClass *house);                  // slot 96 (+0x180; MapClass 0x00568520: reveals the techno to a house)
+    virtual void unknown_slot97(); virtual void unknown_slot98(); virtual void unknown_slot99(); virtual void unknown_slot100();
     virtual void unknown_slot101(); virtual void unknown_slot102(); virtual void unknown_slot103();
     virtual Cell unknown_slot104() const;                            // slot 104 (+0x1A0) the object's cell (as shared/object.hpp)
 
-    char unknown_24[0x76 - 0x24];
+    // The distance to a cell (ObjectClass 0x005D4C00 takes an AbstractClass *; the Map
+    // unit's CellClass stand-in has no AbstractClass base).
+    int unknown_5d4c00(CellClass *target);
+
+    char unknown_24[0x74 - 0x24];
+    bool unknown_74;                        // +0x74 (as shared/object.hpp)
+    char unknown_75;
     bool unknown_76;                        // +0x76 (as shared/object.hpp)
     char unknown_77[0x7D - 0x77];
     bool unknown_7d;                        // +0x7D (as shared/object.hpp)
@@ -41,6 +50,20 @@ public:
     HouseClass *House;                      // +0x1B4 (as shared/techno.hpp)
     char unknown_1b8[0x32D - 0x1B8];
     bool unknown_32d;                       // +0x32D (as shared/techno.hpp)
+};
+
+// A building as MapClass 0x00567380 sees it (stand-in).
+class BuildingClass : public TechnoClass {
+};
+
+// Every building (0x00A40AF8; as shared/techno.hpp).
+extern DynamicVectorClass<BuildingClass *> unknown_BuildingClass_list_00a40af8;
+
+// A house type as MapClass 0x00567380 sees it (stand-in; shared/house_type.hpp).
+class HouseTypeClass {
+public:
+    char unknown_000[0x1A7];
+    bool WallOwner;                         // +0x1A7
 };
 
 // Every techno (0x00A40C20; as shared/planning.hpp).

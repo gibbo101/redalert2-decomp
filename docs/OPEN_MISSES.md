@@ -711,3 +711,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
 - Scenario.CPP after Scenario291: Clear_Scenario 0x65D370 99.66 (jae vs jge on the inlined unknown_6612c0 range check:
   VC6 types the derived induction variable signed), Wait_For_Players 90.40, Scan_Place_Object 48.62 (try a FacingType
   enum with operator++), NoInit ctor 64.00. TeamClass 0x6B8BB0 still has a local extern of 866160 (scenario_tags.hpp).
+- UnitClass after Unit294 (zero bytes; NOTES, w/, o/mh.asm): Explode 0x6FD3A0 99.33, Read_INI 0x706AE0 99.44 (bridge height
+  is 0xAD057C), What_Action 0x703BD0 63.20 (no gotos; edi/ebp swap, frame 0x14), Desired_Load_Dir 68.92. Mission_Harvest,
+  Per_Cell_Process, Assign_Destination need the inline COM query model (ComPtr297); Tunnel_AI needs FootClass::unknown_575
+  signed char, out-of-line CoordStruct operator- 0x4348F0 with UnknownVector3::Length 0x41B780 as one type; Draw_It needs
+  a slot 67 rename (Point2D const &, Rect const &).

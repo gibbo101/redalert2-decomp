@@ -5,7 +5,7 @@
 // @ref ?Unknown_00710B50@@YAXXZ=00710b50
 // @ref ?Unknown_00711C70@@YAXXZ=00711c70
 // @ref ?Unknown_006E9670@@YAXXZ=006e9670
-// @ref ?Unknown_006EA130@@YAXXZ=006ea130
+// @ref ?Unknown_006EA130@@YIXXZ=006ea130
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??_ESubzoneTrackingStruct@@QAEPAXI@Z=0040afa0
 

@@ -35,7 +35,8 @@ public:
     int OverlayIndex;               // +0x44
     char unknown_48[0x4C - 0x48];
     int unknown_4c;                 // +0x4C (MapClass 0x00565E20 accepts 3 and 4; as shared/cell.hpp)
-    char unknown_50[0xDC - 0x50];
+    int unknown_50;                 // +0x50 the wall owner's house index (MapClass 0x00567380)
+    char unknown_54[0xDC - 0x54];
     int unknown_dc;                 // +0xDC per-house bits (as shared/cell.hpp)
     char unknown_e0[0xE4 - 0xE0];
     class ObjectClass *OccupierPtr; // +0xE4 (as shared/cell.hpp)
@@ -57,14 +58,18 @@ public:
     unsigned int unknown_12c;       // +0x12C flags; bit 3 answers IGameMap::Is_Visible
     int unknown_130;                // +0x130 (1 after MapClass 0x00559F10)
     int unknown_134;                // +0x134 (0 after MapClass 0x00559F10)
-    char unknown_138[0x140 - 0x138];
+    bool unknown_138;               // +0x138 (as shared/cell.hpp)
+    int unknown_13c;                // +0x13C (as shared/cell.hpp; positive: MapClass 0x00568280)
     unsigned int unknown_140;       // +0x140 flags (bit 1: mapped, bit 0 set when layer 1 is fully shrouded)
     void unknown_47a340(class AbstractClass *target);  // 0x0047A340 forgets a target (as shared/cell.hpp)
+    int unknown_4706c0(Point2D const &point) const;       // 0x004706C0 (height at a lepton position in the cell; as shared/cell.hpp)
+    CellClass &Adjacent_Cell(unsigned facing);  // 0x00476AC0 (as shared/cell.hpp)
     void Set_unknown_3c(class TagClass *tag);         // 0x0047A460 (as shared/cell.hpp)
     Rect unknown_474eb0() const;    // 0x00474EB0 (as shared/cell.hpp)
     Rect unknown_475100() const;    // 0x00475100 (as shared/cell.hpp)
     bool unknown_479cc0() const;    // 0x00479CC0 (as shared/cell.hpp)
     void Unknown_00472540(int value);   // 0x00472540 (as shared/cell.hpp)
+    int unknown_475db0(int amount);     // 0x00475DB0 (takes up to amount of tiberium; as shared/cell.hpp)
     void unknown_47bc80();          // 0x0047BC80 (DisplayClass 0x0049CDB0, for a cell that was mapped)
     void unknown_47be00();          // 0x0047BE00 (as shared/cell.hpp)
     void unknown_47c840();          // 0x0047C840 (as shared/cell.hpp)

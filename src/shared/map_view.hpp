@@ -205,6 +205,7 @@ public:
     void Unknown_00631AF0(TechnoClass *techno, Point2D point);                  // 0x00631AF0
     Point2D Unknown_00631BA0(CoordStruct const &coord, bool clip);              // 0x00631BA0 (the radar point of a coordinate; RadarClass declares it with a Point2D; TechnoClass slot 53)
     void Unknown_00632620(Point2D const &point);                                // 0x00632620
+    void Unknown_006328F0(Cell const &cell);                                    // 0x006328F0 marks the radar pixels of a cell for redraw (as shared/radar.hpp)
     DynamicVectorClass<Point2D> *Unknown_006328D0(BuildingTypeClass *type);     // 0x006328D0
     bool Unknown_006331A0();                                                    // 0x006331A0
     bool Unknown_00633130();                                                    // 0x00633130 (+0x14D4: the radar is on; as shared/radar.hpp)

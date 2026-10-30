@@ -76,6 +76,8 @@ struct UnknownMapEntry154 {
     // Removes the entry's crate from its cell and forgets the cell
     // (0x00493930; hypothesis: CrateClass::Remove_It).
     bool Unknown_00493930();
+    // Places a crate at or near the cell (updated in place); false when none fits (0x004939A0; hypothesis: CrateClass::Create_Crate).
+    bool Unknown_004939A0(::Cell &cell);
     CDTimerClass<FrameTimerClass> Timer;    // +0x00 (Started, Timer, DelayTime)
     ::Cell Cell;                        // +0x0C
 };
@@ -87,7 +89,7 @@ unsigned __fastcall Unknown_Hash_0054F240(unsigned const &key);
 void Unknown_00710B50();
 void Unknown_00711C70();
 void Unknown_006E9670();
-void Unknown_006EA130();
+void __fastcall Unknown_006EA130();  // tail-called by 0x00562EA0 (pop; jmp): __fastcall
 // Called by MapClass slot 23 with (0, true) (0x00529710).
 void __fastcall Unknown_00529710(int unknown1, bool unknown2);
 
@@ -142,6 +144,8 @@ int __fastcall Unknown_0055DA70(Cell const &cell);
 int __fastcall Unknown_0055DB90(Cell const &cell);
 int __fastcall Unknown_0055EB70(Cell const &cell);      // 0x0055EB70 (as 0x0055DA70, other overlays)
 int __fastcall Unknown_0055ECA0(Cell const &cell);
+// Whether a tile is a bridge piece of kind 2 (cell +0x11A 4) or kind 4 (+0x11A 2) (0x00556B30).
+bool __fastcall Unknown_00556B30(int tile, int kind, CellClass const *cell);
 
 class MapClass : public GScreenClass {
 public:
@@ -180,6 +184,9 @@ public:
     int Zone(Cell const &cell, int zone_type, bool alt); // 0x0054F8F0 (the cell's movement zone; hypothesis)
     void Unknown_0054FB20(Cell const &cell);      // 0x0054FB20 (after a tiberium cell is cleared; AnimClass)
     int Unknown_0055A280(CoordStruct const &coord);     // 0x0055A280 (ground height; hypothesis)
+    int Cell_To_Local_Sector_Index(Cell const &cell);   // 0x0055AD70 (the local view sector 1-9 of a cell)
+    Cell Clip_To_Map(Cell const &cell);                 // 0x00568D60 (a cell moved into the local view)
+    Cell Local_Sector_Index_To_Cell(int index);         // 0x0055AE50 (a sector's cell)
     bool Unknown_0055A740(CellClass *cell, bool flag);  // 0x0055A740 (AircraftClass slot 101; 0x0055A660 for a cell object, flag read as a byte)
     // The cell test 0x0055A660 (with true) for the cell of a lepton position
     // (0x0055A7F0; FootClass slot 282 and others).
@@ -189,6 +196,7 @@ public:
     void Unknown_00566340(Cell const &cell);      // 0x00566340
     bool Unknown_005683C0(CoordStruct const &coord);                            // 0x005683C0 (Tunnel.cpp)
     bool Unknown_00568140(CoordStruct const &coord);    // 0x00568140 (AircraftClass slot 101)
+    bool Unknown_00568280(CoordStruct const &coord);    // 0x00568280 (as 0x00568140 for the cells' +0x13C; RadarClass)
     void Unknown_0054A550(CoordStruct const &coord, int arg2, int arg3, int arg4);   // 0x0054A550 (InfantryClass slot 93)
     // The index of a cell's 4 x 4 block in a 130 x 130 grid with a one-block
     // border, the layout of HouseClass +0x56D0 (0x0054E370; FootClass slot 93).
@@ -229,6 +237,7 @@ public:
     // 0x00563D80 with its index, from 2 down) and resets the path estimator
     // (0x00563D40).
     void Unknown_00563D40();
+    void Unknown_00567380();                            // 0x00567380 (TibSun Initialize_Wall_Ownership)
     void Unknown_00563D80(int index);                   // 0x00563D80
     // Runs 0x00564B60 with arg on every zone connection whose +0x08 is set
     // (0x00564B20).
