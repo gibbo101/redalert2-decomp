@@ -25,6 +25,13 @@ public:
     DynamicVectorClass< ::Cell > *Collect_Boundary_Cells_0056ed10();
     bool Expand_Cells_005702b0();
     void Collect_Neighbor_Regions_005709c0();
+    bool unknown_005729f0(Cell const &,Cell const &,int);
+    bool unknown_00573040(Cell const &,Cell const &,int);
+    bool unknown_00573680(Cell const &,Cell const &,int);
+    bool unknown_00573d40(Cell const &,Cell const &,int);
+    bool unknown_00574930(Cell const &,Cell const &,int);
+    bool unknown_00574e50(Cell const &,Cell const &,int);
+    bool unknown_005753f0(Cell const &,Cell const &,int);
     void *unknown_00;
     DynamicVectorClass<int> *NeighborRegionIndices; // +04, originalnew0x18/vptr79DA94 at5709E8
     int Index; // +08, assigned increasing ID by0056D870
