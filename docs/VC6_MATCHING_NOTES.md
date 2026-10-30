@@ -725,3 +725,7 @@ verified on the target.
 - Dead stores (Tactical287): VC6 keeps two stores to an address-taken local when the second goes through an inline
   member (`rect.Y = a; rect += Point2D(0, b);`) but merges plain field writes; a "dead store" in the original points
   at an inline member operator. `Rect rect = Rect(x, y, 60, 30)` stores the constants through a register.
+- Score in file context (OwnrDraw286): a draft scored as the first function of its file can allocate registers
+  differently from the same draft after any other function; always score inside the population file in address order.
+- MAX macro (Scenario289, Session275): Westwood's MAX(a,b) expansion repeats the expression (`a > b ? a : b`); a local or
+  a template max compiles differently and does not match.

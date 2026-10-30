@@ -693,3 +693,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   empty body is plausible); Init_Threads is only in TibSun. Accepted as evidenced source, not empty steering calls.
   Init_Theater 0x519E70 77.74 (register allocation), Draw_Loading_Screen 99.63, 0x516E70 97.62, Select_Game 93.08,
   Allocate_Surfaces 77.26, 0x516F00 95.15, Init_Rules 45.98, 0x5173C0 (7807) not started.
+- ownrdraw.cpp after OwnrDraw286: push-button proc 0x5F42D0 70.01 (frame slots; map in NOTES), progress 0x5FAFF0 76.92 in
+  file context, Edit helper 0x5F2120 86.03.
+- Scenario.CPP after Scenario289: Fill_In_Data 0x65CDD0 99.18, Clear_Scenario 0x65D370 99.66 (jge vs jae), Wait_For_Players
+  90.40, Scan_Place_Object ~48.6, NoInit ctor 64.00. Rules.CPP: AudioVisual 0x643E10 ~48; Sides 0x64BC10 matches only with
+  a DynamicVectorClass::ID/Count() header change (Vector223 found Count() adds a COMDAT in 144 units: owner decision, held).

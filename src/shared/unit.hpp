@@ -162,6 +162,7 @@ public:
     bool Clear_Unknown5B4_007049F0();                 // 0x007049F0
     bool unknown_6fbab0();                           // 0x006FBAB0
     bool unknown_7049c0(int arg1);                                    // 0x007049C0
+    void unknown_704a80();                                            // 0x00704A80 (restarts the +0x2A8 change over the type's DeployTime; AI and slot 95 expand it inline)
     void unknown_704aa0();                                            // 0x00704AA0
     bool unknown_709790(Cell const *from, Cell const *to);   // 0x00709790 (hypothesis: whether a trip should use the path estimator)
     bool unknown_707170(TechnoClass *target);                         // 0x00707170 (hypothesis: may crush the target)
