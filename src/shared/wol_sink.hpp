@@ -39,7 +39,19 @@ struct Server {
     char nickname[10];                 // +0xe4
     char password[10];                 // +0xee
 };
-struct Update;
+// An available patch (the WOL API Update record; the field names are the Renegade WOLAPI ones).
+struct Update {
+    unsigned long SKU;                  // +0x00
+    unsigned long version;              // +0x04
+    int required;                       // +0x08
+    Update *next;                       // +0x0C
+    char server[0x51 - 0x10];           // +0x10
+    char patchpath[0x151 - 0x51];       // +0x51
+    char patchfile[0x172 - 0x151];      // +0x151
+    char login[0x193 - 0x172];          // +0x172
+    char password[0x1D4 - 0x193];       // +0x193
+    char localpath[0x2D4 - 0x1D4];      // +0x1D4
+};
 struct Squad {
     char unknown_00[0x168];
     char abbreviation[0x191 - 0x168];   // +0x168
@@ -90,7 +102,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot12() = 0;
     virtual void __stdcall unknown_slot13() = 0;
     virtual HRESULT __stdcall unknown_slot14(User *user, char const *text) = 0;
-    virtual void __stdcall unknown_slot15() = 0;
+    virtual HRESULT __stdcall unknown_slot15(char const *text) = 0;
     virtual void __stdcall unknown_slot16() = 0;
     virtual void __stdcall unknown_slot17() = 0;
     virtual void __stdcall unknown_slot18() = 0;
@@ -120,6 +132,12 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall unknown_slot42(char const *text) = 0;
     virtual void __stdcall unknown_slot43() = 0;
     virtual HRESULT __stdcall unknown_slot44(unsigned int value) = 0;
+};
+
+// The WOL download object (only the first method is called here).
+struct __declspec(novtable) IDownload : public IUnknown {
+    virtual HRESULT __stdcall DownloadFile(char const *server, char const *login, char const *password,
+                                           char const *file, char const *local, char const *regkey) = 0;
 };
 
 struct __declspec(novtable) INetUtilEvent : public IUnknown {
@@ -760,6 +778,12 @@ extern long unknown_game_start_time_b2a638;   // 0x00B2A638
 extern char unknown_session_a3fc54[];   // 0x00A3FC54 (session +0x29BC)
 extern int unknown_session_a40054;      // 0x00A40054 (session +0x2DBC)
 void __fastcall Unknown_0074d7d0(WOL::User *users);
+extern WOL::IDownload *unknown_download_a72d04;   // 0x00A72D04
+extern HANDLE unknown_b26518;           // 0x00B26518 (set after the patches are downloaded)
+// The dialog procedure of the download progress dialog 0xD3 (0x00748CD0).
+int WINAPI Download_Dialog_Proc_00748cd0(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+// Three words 0x0073CFD0 combines (exclusive or; meaning unknown).
+extern unsigned int unknown_b2ac18, unknown_b2ac1c, unknown_b2ac20;
 // Opens a web page (0x0073C580; the second argument is unknown).
 void __fastcall unknown_open_url_73c580(char const *url, int arg2);
 extern int unknown_b2ac5c;              // 0x00B2AC5C (a language code: the registration page LANGCODE)

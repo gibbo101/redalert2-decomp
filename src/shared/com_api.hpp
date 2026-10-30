@@ -33,6 +33,17 @@ struct __declspec(novtable) IUnknown {
 
 extern "C" GUID const IID_IUnknown;    // 0x007CE610
 
+// ATL's CComPtr (atlbase.h): releases the interface it holds.
+template <class T>
+class CComPtr {
+public:
+    CComPtr() { p = 0; }
+    ~CComPtr() { if (p) p->Release(); }
+    T **operator&() { return &p; }
+    T *operator->() const { return p; }
+    T *p;
+};
+
 extern "C" __declspec(dllimport) HRESULT __stdcall CoCreateInstance(GUID const &clsid, IUnknown *outer,
                                                                     unsigned long context, GUID const &iid, void **object);
 extern "C" __declspec(dllimport) HRESULT __stdcall OleRun(IUnknown *unknown);

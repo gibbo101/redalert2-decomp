@@ -688,3 +688,6 @@ verified on the target.
 - String literals outside a unit's own pool (shared "%s", "INTRO", registry paths) need @ref lines: diff_candidate
   shows them resolved, but acceptance refuses the population with "Unsupported allocatable data section .data"; read the
   mangled names from the compiled object (Wonline239, Queue225).
+- A class template member's out-of-line copy (e.g. WolDictionary<WideString,bool>::Shrink_Table 0x5CD9A0) is emitted only
+  when the member is defined outside the class and some caller in the unit keeps a call to it; the accepted row source
+  is an explicit instantiation (`template void X<...>::F();`), as for 0x51E760 (Netshare243).

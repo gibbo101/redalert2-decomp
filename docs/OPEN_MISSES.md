@@ -583,3 +583,8 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   proc 0x5FC330 98.12 (inlined BSurface ctor loads height before width in the original), Edit helper 0x5F2120 86.03.
   0x5F3CF0 has no inventory row; 0x5F42D0/0x5F0F40/0x5F3CF0 need the 0x5FE020 rename; seeds for 0x5F1900/0x5F0F40 are
   unusable. EgoClass_Draw_004b3690.cpp still declares 0x5FE1B0 locally.
+- ObjectClass-derived holdouts after Objects246 (zero bytes; build/class-work/Objects246/NOTES.md inventory of all
+  remaining Bullet/Anim/BuildingLight/Overlay/Particle/VoxelAnim/Veinhole/Team members): nearly all are recorded near
+  misses. New: BuildingLightClass::AI 0x433970 71.88 (bl/ai5.cpp; CoordStruct ctor 0x41B630 out of line in the original
+  inside the inlined 434530->434610->operator- chain), BulletClass::Detach 0x461520 74.38. Fresh large targets: Bullet AI
+  0x45F710 (6438), Anim AI 0x421710, Team AI 0x6B7AD0 (3222; needs Foot/Techno slot declarations, coordinate with Windows).

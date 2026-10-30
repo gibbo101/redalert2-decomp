@@ -1605,47 +1605,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 7585792,
-      "method": "73c000",
-      "symbol": "?get@Leaf_73c000@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_73c000@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 18,
-      "body_sha256": "e7653313eeea3e6540146f6cc294bb0d0a980a788feee04339a4e00f5729d4bb",
-      "padding_bytes": 14,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "78a6d0ce87f275835548cf6e285324981f606978840505d3552c782623d745e5",
-      "relocations": [
-        {
-          "offset": 4,
-          "kind": 20,
-          "symbol": "?target@Call_73c000_0@@QAEIXZ",
-          "target": 6295744,
-          "addend": 0,
-          "resolved": 4293677240
-        },
-        {
-          "offset": 10,
-          "kind": 6,
-          "symbol": "_data_73c000_7af6f4",
-          "target": 8058612,
-          "addend": 0,
-          "resolved": 8058612
-        }
-      ],
-      "source": "src/recovered/classes/SimpleWonlineDialogControl/0073c000.cpp",
-      "source_sha256": "76c2d76d44a173ab1561f8d06d4124df4616c5b41f0ab4bf17c36187b114fe74",
-      "source_order": 6618,
-      "population": "population-02",
-      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 7756448,
       "method": "765aa0",
       "symbol": "?get@Leaf_765aa0@@QAEIXZ",

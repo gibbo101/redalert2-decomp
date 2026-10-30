@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Netshare243 netshare.cpp (0x5C29B0-0x5CDB40) redo of Netdlg240's refused plan and sweep; Wonline244 wonline.cpp (one TU 0x73A6F0-0x7683B0) OnSetTeam/OnUpdateList audit fixes and remaining sink slots; Objects246 ObjectClass-derived holdouts (Bullet, Anim, BuildingLight, Overlay, Particle, VoxelAnim, Veinhole, Team); Display245 map display hierarchy (Map/Display/Radar/Power/Sidebar/Tab/Scroll/Mouse slots). All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Netshare247 netshare.cpp (0x5C29B0-0x5CDB40) lobby dialog proc 0x5C69E0, 0x5CBF20, 0x5C3FF0; Wonline244 wonline.cpp (one TU 0x73A6F0-0x7683B0) OnSetTeam/OnUpdateList audit fixes and remaining sink slots; Inline248 VC6 /Ob2 inline-decision rule study applied to recorded inline-budget misses; Display245 map display hierarchy (Map/Display/Radar/Power/Sidebar/Tab/Scroll/Mouse slots). All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
