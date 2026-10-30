@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Cell255 CellClass (Cell.CPP 0x470490-0x47D2C0); VQA257 VQAClass 0x717CE0-0x71DC10; Loco256 Jumpjet/Ship and other locomotion classes; Display254 Scroll.CPP rest (0x669960, 0x669650, 0x669EC0) and Power/Radar/GScreen misses. All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized, using the Red Alert reference files): Loco259 Jumpjet redo without Process (empty-inline steering refused), Ship and other locomotors; VQA257 VQAClass 0x717CE0-0x71DC10; Ini258 Ini.CPP 0x509930-0x511400. All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the
@@ -79,7 +79,7 @@ First line for each new Codex thread (N = 1..4):
 Bytes landed per worker per day (first two days; body bytes from each delivery README):
 | Date | codex1 | codex2 | codex3 | codex4 |
 | --- | ---: | ---: | ---: | ---: |
-| 2026-10-30 | 110 | 0 | 35 | 0 |
+| 2026-10-30 | 675 | 0 (Mono rename+takeover) | 35 | 324 |
 | 2026-10-31 | | | | |
 BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
 so MPCooperative functions that call a base body need separate units.

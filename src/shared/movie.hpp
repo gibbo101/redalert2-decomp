@@ -93,7 +93,7 @@ public:
     bool Unknown_0071CC10(int unknown1, int unknown2, int unknown3);  // 0x0071CC10
     void Unknown_0071CC60(int frame);                      // 0x0071CC60 seek to a frame (no value: the same-frame path leaves EAX unset)
     bool Unknown_0071CC90();                               // 0x0071CC90
-    int Unknown_0071CCD0(int unknown1, int unknown2);      // 0x0071CCD0 (1 ends the loop)
+    int Unknown_0071CCD0(int frame, bool unknown);         // 0x0071CCD0 play loop (1: stopped by Escape)
     bool Unknown_0071CFC0(bool *unknown);                  // 0x0071CFC0
     void Unknown_0071D1A0();                               // 0x0071D1A0 (pause)
     void Unknown_0071D1E0();                               // 0x0071D1E0 (resume)
@@ -178,7 +178,7 @@ public:
 extern VQAMovie *CurrentVQAMovie;                          // 0x00A710AC
 
 void __fastcall VQA_Movie_Close(VQAMovie *movie);                                     // 0x005A1470
-void __fastcall VQA_Movie_Play(VQAMovie *movie, bool hide, int theme, int unknown);  // 0x005A14D0
+void __fastcall VQA_Movie_Play(VQAMovie *movie, bool hide, int theme, bool unknown);  // 0x005A14D0
 bool __fastcall VQA_Movie_Unknown_005A15F0(VQAMovie *movie, bool *unknown);          // 0x005A15F0
 bool __fastcall VQA_Movie_Is_Playing();                                              // 0x005A1620
 void __fastcall VQA_Movie_Pause(VQAMovie *movie);                                     // 0x005A1630

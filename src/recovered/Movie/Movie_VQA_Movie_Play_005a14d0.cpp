@@ -1,4 +1,4 @@
-// void __fastcall VQA_Movie_Play(VQAMovie *movie, bool hide, int theme, int unknown) (0x005A14D0)
+// void __fastcall VQA_Movie_Play(VQAMovie *movie, bool hide, int theme, bool unknown) (0x005A14D0)
 // Plays the movie to the end (or Repeats times) unless another one is
 // playing; optionally brackets it with WWMouse Hide_Mouse/Show_Mouse and
 // starts theme first.
@@ -7,7 +7,7 @@
 // @ref ?Unknown_0071CBE0@VQAClass@@QAE_NHH@Z=0071cbe0
 // @ref ?Unknown_0071CC10@VQAClass@@QAE_NHHH@Z=0071cc10
 // @ref ?Unknown_0071CC60@VQAClass@@QAEXH@Z=0071cc60
-// @ref ?Unknown_0071CCD0@VQAClass@@QAEHHH@Z=0071ccd0
+// @ref ?Unknown_0071CCD0@VQAClass@@QAEHH_N@Z=0071ccd0
 // @ref ?Unknown_0071D210@VQAClass@@QAEXXZ=0071d210
 // @ref ?WWMouse@@3PAVMouse@@A=00839c68
 // @ref ?Theme@@3VThemeClass@@A=00a35d78
@@ -17,7 +17,7 @@
 
 VQAMovie *CurrentVQAMovie;      // 0x00A710AC: the VQA movie playing now
 
-void __fastcall VQA_Movie_Play(VQAMovie *movie, bool hide, int theme, int unknown)
+void __fastcall VQA_Movie_Play(VQAMovie *movie, bool hide, int theme, bool unknown)
 {
     if (CurrentVQAMovie) {
         return;

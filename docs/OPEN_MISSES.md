@@ -616,3 +616,13 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   divide; source unknown). Slot 200 casts arg3/arg4 (really AbstractClass*; rename touches Aircraft 78/200 and two
   Building sources). Untried: 0x6C4BB0 range test, slot 251 0x6D5510, voxel draws 0x6D24E0/0x6D2810/0x6D21E0/0x6D1D00.
   Check the value behind every __real constant name (0x3F747AE1_58000000 is 0.002f*2.5).
+- Display hierarchy after Display254 (NOTES, v/, inc/shared): ScrollClass 0x669960 98.59 (original keeps a branch with
+  two epilogues; ours goes branchless; needs Unknown84E8D0::Unknown_0042E860 rename to take CoordStruct by value), edge
+  scroll 0x669EC0 82.07, PowerClass::Draw_It 89.69, RadarClass 0x62F310 90.22 / 0x633000 87.43, GScreen 0x4E09D0 82.81,
+  Sidebar slot 33 0x681ED0 64.89. Guarded statics: take the atexit thunk's seed row over with a stub source and read
+  _$E<n>/$S<n> names from a compile of the concatenated unit.
+- CellClass after Cell255 (NOTES unit map, false splits listed): 0x47C080 92.00, ctor 0x470F10 86.43, Spread_Tiberium
+  0x478A40 85.84 (needs pending/cell255-ren1.json and 0x478950 ending `if (OccupierPtr != 0) return false; return true;`),
+  0x47BFA0 64.29, 0x4755D0 61.54, 0x471660 60.23, 0x47BB30 59.78.
+- Jumpjet after Loco256: Loco256 r3 refused (Process 0x52F3C0 used an empty inline `unknown_state_6() {}` to keep a jump
+  table entry); Loco259 redoes the round without Process. Misses 0x530B00 85.56, 0x530180 91.69, Move_To 0x52F600 34.85.
