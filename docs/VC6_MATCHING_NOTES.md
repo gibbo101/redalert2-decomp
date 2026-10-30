@@ -715,3 +715,6 @@ verified on the target.
   `inline` function of 252 units still expands. So a callee the original keeps out of line with budget to spare is
   probably wordier in its source than ours. Unit sizes measured in a caller: global store 6, out-of-line call
   statement 4, explicit pointer cast 1; `T *x = new X; Add(x);` is 2 smaller than `Add(new X)` when Add takes T const&.
+- Header hygiene (Span268): a new inline function or even an extra declaration in a widely included header can shift
+  instruction scheduling in unrelated units (an inline MapClass::Subzones in map_view.hpp swapped a load pair in
+  BaseClass::Read_INI 0x42C460). Keep single-use helpers file-local; every header change needs check_plans --build.

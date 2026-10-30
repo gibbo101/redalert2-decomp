@@ -10,6 +10,7 @@ class MapRegionClass {
 public:
     MapRegionClass(Cell origin); //0056D870 by-value packed Cell, nominal constructor hypothesis
     void Count_Grid_Cells_0056dbd0();
+    unsigned Build_Neighbor_Region_Mask_005728d0(Cell const &position,bool &valid,int unknown,float density); // RET16; name/reference hypotheses
     ~MapRegionClass(); // original0056D970 nondeleting destruction; nominal source ownership hypothesis
     bool Grow_Border_00570040(int steps); // physical AL0/1, RET4; name/bool intent hypotheses
     DynamicVectorClass<Cell> *Select_Separated_Cells_00576810(DynamicVectorClass<Cell> const &candidates); //operation/reference/constness hypotheses; EAXptr/RET4

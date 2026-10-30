@@ -1,3 +1,5 @@
+#define VECTOR_IMPLEMENT_VECTOR_DESTRUCTOR
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_INDEX
 #define VECTOR_IMPLEMENT_DYNAMIC_SET_GROWTH_STEP
 // Actual generic vector definitions required by the new constructed/append context.
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
