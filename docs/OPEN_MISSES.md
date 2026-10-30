@@ -724,3 +724,9 @@ Resumable near misses, plateaus and type/name debt, with the lane folder (`build
   makes the Unit/Mission_Harvest inline query natural. Four accepted functions inline more under it: FootClass::Load
   0x4C9D10, Aircraft 0x416420, Infantry 0x507530/0x500350 (ComPtr299 re-matches them). VC6 COMIP.H/COMDEF.H/COMUTIL.H were
   extracted read-only from the user's VS6 ISO into the ignored toolchain media folder.
+- CellClass after Cell296 (NOTES): Draw_Overlay_Shadow 0x474830 exact once Overlay_Draw_Offset 0x475440 stays out of line
+  (its real source is over the auto-inline cap; no natural form found) - unblocks 0x474EB0, 0x475100, 0x4749C0; Init_Light
+  0x479440 needs inline Point2D::Length + take-over of 0x47D060 (population-1905); Bounce_Direction 0x479AC0 95.49;
+  Cell_Render_Rect 0x4752B0 needs the real IsometricTileTypeClass slot 39; Init_Drawer rename (LightConvertClass*) pending.
+- Tactical after Inline293: Register_Dirty_Area 0x6A3020 35.48; Render_Shroud 0x6A3EF0, Wipe_Depth 0x6A33F0 not drafted.
+  Adding any member to CellClass broke the full build in another unit (repro in Inline293 NOTES).

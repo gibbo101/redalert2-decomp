@@ -1,7 +1,8 @@
 // UnknownPathEstimator::Unknown_00427E90() (0x00427E90): starts a new search.
 #include "shared/path_estimator.hpp"
 #include "shared/map_view.hpp"
-#include "shared/map_region.hpp"
+// Shared map-grid dimension; this pathfinding routine needs no MapRegionClass layout.
+extern int unknown_map_cell_side_84e804;
 
 void UnknownPathEstimator::Unknown_00427E90()
 {

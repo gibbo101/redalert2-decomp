@@ -733,3 +733,9 @@ verified on the target.
   callee-pops call are scheduled before the pushes; "/G5 scheduling ties" around calls in a free function often mean it
   is __fastcall. Also: a single new global `extern` in tag.hpp/id_source.hpp shifts a load pair in BaseClass::Read_INI
   0x42C460, while new function/member declarations do not - put new extern objects in a unit-local header.
+- Measured IL sizes (Inline293 lab sweep): CoordStruct(int,int,int) 47-52; UnknownCoord434820(x,y,z) 41-46 (with inner
+  ctor 89-94); XYZ_Coord 41-46; Cell_Center 47-52; old Coord_Snap 53-58; Union<Rect> 275-280 (Westwood's int() casts +6);
+  TibSun Rect::Size() <= 40 (free). Arguments are decided before the call they feed (Cell_Center before Coord_Snap).
+  Coord_Snap is the UnknownCoord434820 wrapper (out-of-line pair 0x434820 over 0x41B630), which puts the CoordStruct
+  ctor one charged level deeper - that, plus TibSun's `pixel = f(coord); pixel -= Point2D(...)`, matches all six
+  Tactical Render passes.

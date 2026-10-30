@@ -21,7 +21,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
   fresh lane from NOTES. At most four lanes, Opus at full speed (user 2026-10-29); when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
-Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): Cell296 CellClass via TibSun cell.cpp; ComPtr299 landing the comip.h com_ptr model (re-match Foot Load, Aircraft 416420, Infantry 507530/500350); Map298 Map.CPP continuation (one TU 0x543FE0-0x56CEF0, TibSun order); Inline293 helper-size study (wordier Westwood helpers; unblocks Tactical Render passes). All Opus. Terrain160 landed
+Running Mac lanes (Opus, unit-sized; TibSun first, then Red Alert): ComPtr299 landing the comip.h com_ptr model; Map298 Map.CPP continuation; Tactical300 Tactical.CPP rest; Cell301 CellClass rest (Overlay_Draw_Offset over the inline cap, Init_Light). All Opus. Terrain160 landed
 slots 86/67 (TerrainClass complete but two near misses); Types161 landed UnitTypeClass slot 32 0x70A9D0;
 Anim162 zero bytes (AnimClass ctor 95.68); Left163
 landed Smudge slot 71 0x687750; Team159 landed 11 TeamClass functions (6.6 KB) with the

@@ -1,7 +1,8 @@
 // UnknownPathEstimator::Unknown_004284E0() (0x004284E0): sizes the cell marks
 // and the facing offsets for the map rectangle.
 #include "shared/path_estimator.hpp"
-#include "shared/map_region.hpp"
+// Shared map-grid dimension; this pathfinding routine needs no MapRegionClass layout.
+extern int unknown_map_cell_side_84e804;
 
 void UnknownPathEstimator::Unknown_004284E0(Rect const &size)
 {
