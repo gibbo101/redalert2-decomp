@@ -103,7 +103,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot06() = 0;
     virtual void __stdcall unknown_slot07() = 0;
     virtual HRESULT __stdcall unknown_slot08(Channel *channel) = 0;
-    virtual void __stdcall unknown_slot09() = 0;
+    virtual HRESULT __stdcall unknown_slot09() = 0;
     virtual void __stdcall unknown_slot10() = 0;
     virtual void __stdcall unknown_slot11() = 0;
     virtual void __stdcall unknown_slot12() = 0;
@@ -887,7 +887,7 @@ struct __declspec(novtable) WolLadderClient : public IUnknown {
     // is ignored; void expresses only this caller, not original return behavior.
     virtual void __stdcall unknown_slot07_004820dd() = 0;
     virtual HRESULT __stdcall Get_Average_Ping(unsigned long address,int *ping) = 0;
-    virtual void __stdcall unknown_slot09() = 0;
+    virtual HRESULT __stdcall unknown_slot09() = 0;
     virtual void __stdcall unknown_slot10() = 0;
     virtual HRESULT __stdcall Request_WDT_State(char const *host,int port,unsigned char request) = 0;
 };
