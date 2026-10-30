@@ -16,3 +16,5 @@ int BuildingTypeClass::unknown_func_45ec90() const
     }
     return 0x80;
 }
+
+#include "shared/building_foundation_tables.hpp"
