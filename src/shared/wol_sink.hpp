@@ -129,7 +129,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot32() = 0;
     virtual HRESULT __stdcall Game_Types(char const **types) = 0;
     virtual void __stdcall unknown_slot34() = 0;
-    virtual void __stdcall unknown_slot35() = 0;
+    virtual HRESULT __stdcall unknown_slot35(unsigned long sku) = 0;
     virtual void __stdcall unknown_slot36() = 0;
     virtual void __stdcall unknown_slot37() = 0;
     virtual void __stdcall unknown_slot38() = 0;
@@ -139,6 +139,23 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall unknown_slot42(char const *text) = 0;
     virtual void __stdcall unknown_slot43() = 0;
     virtual HRESULT __stdcall unknown_slot44(unsigned int value) = 0;
+    virtual void __stdcall unknown_slot45() = 0;
+    virtual void __stdcall unknown_slot46() = 0;
+    virtual void __stdcall unknown_slot47() = 0;
+    virtual void __stdcall unknown_slot48() = 0;
+    virtual void __stdcall unknown_slot49() = 0;
+    virtual void __stdcall unknown_slot50() = 0;
+    virtual void __stdcall unknown_slot51() = 0;
+    virtual HRESULT __stdcall unknown_slot52(int *count) = 0;
+    virtual void __stdcall unknown_slot53() = 0;
+    virtual void __stdcall unknown_slot54() = 0;
+    virtual void __stdcall unknown_slot55() = 0;
+    virtual HRESULT __stdcall unknown_slot56(User *user) = 0;
+    virtual void __stdcall unknown_slot57() = 0;
+    virtual HRESULT __stdcall unknown_slot58(unsigned short const *message) = 0;
+    virtual HRESULT __stdcall unknown_slot59(User *users,unsigned short const *message) = 0;
+    virtual HRESULT __stdcall unknown_slot60(unsigned short const *message) = 0;
+    virtual HRESULT __stdcall unknown_slot61(User *users,unsigned short const *message) = 0;
 };
 
 // The WOL download object (only the first method is called here).
@@ -600,6 +617,17 @@ public:
     }
     bool Shrink_00767b20();
     bool Remove_007661f0(int index);
+    bool Remove(int index) {
+        if(Count==0) return false;
+        if(index<0) index=0;
+        if(index>=Count) index=Count-1;
+        Items[index].~Wstring();
+        memmove(Items+index,Items+index+1,(Count-index-1)*sizeof(Wstring));
+        --Count;
+        Shrink();
+        return true;
+    }
+
     bool Shrink() {
         if (Count * 3 > Capacity) return false;
         int capacity = Capacity / 2;
@@ -734,6 +762,10 @@ struct __declspec(novtable) WolLadderClient : public IUnknown {
     // Original004820DD passes only COM this and calls vtable+1C. The return
     // is ignored; void expresses only this caller, not original return behavior.
     virtual void __stdcall unknown_slot07_004820dd() = 0;
+    virtual HRESULT __stdcall Get_Average_Ping(unsigned long address,int *ping) = 0;
+    virtual void __stdcall unknown_slot09() = 0;
+    virtual void __stdcall unknown_slot10() = 0;
+    virtual HRESULT __stdcall Request_WDT_State(char const *host,int port,unsigned char request) = 0;
 };
 extern WolIntArray unknown_channel_requests_b29390;
 extern WolChannelArray unknown_lobbies_b26c88;
