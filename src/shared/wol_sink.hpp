@@ -113,7 +113,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot10() = 0;
     virtual void __stdcall unknown_slot11() = 0;
     virtual void __stdcall unknown_slot12() = 0;
-    virtual void __stdcall unknown_slot13() = 0;
+    virtual HRESULT __stdcall unknown_slot13() = 0;
     virtual HRESULT __stdcall unknown_slot14(User *user, char const *text) = 0;
     virtual HRESULT __stdcall unknown_slot15(char const *text) = 0;
     virtual void __stdcall unknown_slot16() = 0;
@@ -706,6 +706,19 @@ public:
     bool Get_Pointer_00767570(Wstring const &key, int **value) const;
     bool Remove_007675e0(Wstring const &key, int *old_value);
     void Shrink_00767850();
+    void Clear() {
+        for(unsigned int index=0;index<BucketCount;++index) {
+            Node *node=Buckets[index];
+            while(node) {
+                Node *old=node;
+                node=node->Next;
+                delete old;
+            }
+            Buckets[index]=0;
+        }
+        Count=0;
+        while(BucketCount>MinimumBuckets && !ResizeLocked) Shrink_00767850();
+    }
     void Grow_00767900();
     unsigned int Key_Hash_007679a0(Wstring const &key) const;
     bool Add_00766070(Wstring const &key, int const &value);

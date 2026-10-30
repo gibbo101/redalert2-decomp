@@ -4,12 +4,15 @@ The seeded pass is preferred because it covers more entries; the baseline pass
 is the fallback. Rows are analysis hypotheses, not verified function bounds.
 """
 import json
+import os
 from pathlib import Path
 
 REPOSITORY = Path(__file__).resolve().parents[2]
 INVENTORY = REPOSITORY / 'private/original-target-20261020/inventory'
 # Newest discovery pass first; earlier passes supply entries it dropped.
 PASSES = [INVENTORY / 'seeded-pass5', INVENTORY / 'seeded-pass3', INVENTORY / 'seeded-pass2', INVENTORY]
+# Trial or newer passes ahead of the frozen ones (colon-separated directories).
+PASSES = [Path(p) for p in os.environ.get('RA2_INVENTORY_PASSES', '').split(':') if p] + PASSES
 
 
 class Inventory:
