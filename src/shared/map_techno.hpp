@@ -14,6 +14,7 @@
 
 class HouseClass;
 class CellClass;
+class ObjectClass;
 
 class TechnoClass : public AbstractClass {
 public:
@@ -40,7 +41,9 @@ public:
     // unit's CellClass stand-in has no AbstractClass base).
     int unknown_5d4c00(CellClass *target);
 
-    char unknown_24[0x74 - 0x24];
+    char unknown_24[0x30 - 0x24];
+    ObjectClass *unknown_30;                // +0x30 the next object in the cell (as shared/object.hpp)
+    char unknown_34[0x74 - 0x34];
     bool unknown_74;                        // +0x74 (as shared/object.hpp)
     char unknown_75;
     bool unknown_76;                        // +0x76 (as shared/object.hpp)
@@ -52,8 +55,21 @@ public:
     bool unknown_32d;                       // +0x32D (as shared/techno.hpp)
 };
 
-// A building as MapClass 0x00567380 sees it (stand-in).
+// A building type as MapClass 0x0055ACD0 sees it (stand-in; shared/building_type_class.hpp).
+class BuildingTypeClass {
+public:
+    char unknown_000[0x1351];
+    bool Gate;                              // +0x1351
+};
+
+// A building as MapClass 0x00567380 and 0x0055ACD0 see it (stand-in).
 class BuildingClass : public TechnoClass {
+public:
+    bool unknown_44d880();                  // 0x0044D880 (as shared/building_class.hpp)
+    bool unknown_44d7d0();                  // 0x0044D7D0 (as shared/building_class.hpp)
+
+    char unknown_330[0x418 - 0x330];
+    BuildingTypeClass *Type;                // +0x418
 };
 
 // Every building (0x00A40AF8; as shared/techno.hpp).

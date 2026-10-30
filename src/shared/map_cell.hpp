@@ -22,6 +22,9 @@ public:
     virtual void unknown_slot6();
     virtual void unknown_slot7();
     virtual ~CellClass();           // slot 8 (0x00470E80 is the destructor proper)
+    virtual void unknown_slot9(); virtual void unknown_slot10(); virtual void unknown_slot11(); virtual void unknown_slot12(); virtual void unknown_slot13();
+    virtual void unknown_slot14(); virtual void unknown_slot15(); virtual void unknown_slot16(); virtual void unknown_slot17();
+    virtual CoordStruct Center_Coord() const;   // slot 18 0x0047BA50 (as shared/cell.hpp)
 
     char unknown_04[0x24 - 0x04];
     Cell MapCoords;           // +0x24 the cell's own coordinates
@@ -61,6 +64,7 @@ public:
     bool unknown_138;               // +0x138 (as shared/cell.hpp)
     int unknown_13c;                // +0x13C (as shared/cell.hpp; positive: MapClass 0x00568280)
     unsigned int unknown_140;       // +0x140 flags (bit 1: mapped, bit 0 set when layer 1 is fully shrouded)
+    Cell Fetch_CellID() const { return MapCoords; }    // the cell's own coordinates as a value (inline; TibSun name)
     void unknown_47a340(class AbstractClass *target);  // 0x0047A340 forgets a target (as shared/cell.hpp)
     int unknown_4706c0(Point2D const &point) const;       // 0x004706C0 (height at a lepton position in the cell; as shared/cell.hpp)
     CellClass &Adjacent_Cell(unsigned facing);  // 0x00476AC0 (as shared/cell.hpp)
@@ -68,6 +72,9 @@ public:
     Rect unknown_474eb0() const;    // 0x00474EB0 (as shared/cell.hpp)
     Rect unknown_475100() const;    // 0x00475100 (as shared/cell.hpp)
     bool unknown_479cc0() const;    // 0x00479CC0 (as shared/cell.hpp)
+    bool unknown_47a270();          // 0x0047A270 (a water tile; hypothesis: TibSun Is_Tile_Water)
+    bool unknown_47b960() const;    // 0x0047B960 (a bridge tile; as shared/cell.hpp)
+    bool unknown_47b980() const;    // 0x0047B980 (a train bridge tile; as shared/cell.hpp)
     void Unknown_00472540(int value);   // 0x00472540 (as shared/cell.hpp)
     int unknown_475db0(int amount);     // 0x00475DB0 (takes up to amount of tiberium; as shared/cell.hpp)
     void unknown_47bc80();          // 0x0047BC80 (DisplayClass 0x0049CDB0, for a cell that was mapped)

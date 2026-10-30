@@ -23,6 +23,7 @@ class HouseClass {
 public:
     void unknown_4ea7f0(TechnoClass *object); // proposedmirrorofsamefullHousecallback
     bool Is_Ally(HouseClass const *house) const;           // 0x004E5540 (as shared/house.hpp)
+    bool Is_Ally(TechnoClass const *techno) const;         // 0x004E5580 (its owning house; as shared/house.hpp)
     // Index in Houses of the house with this name, or -1 (0x004F5B40).
     static int __fastcall Find_Index(char const *name);
     float Cost_Multiplier(TechnoTypeClass const *type);    // 0x004F5960

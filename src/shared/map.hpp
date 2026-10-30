@@ -37,6 +37,8 @@ class AbstractClass;
 class CellClass;
 class HouseClass;
 class ObjectClass;
+class Straw;
+class Pipe;
 
 // The cell returned for coordinates outside the map (0x00A6F9F8; its
 // MapCoords are set to the requested cell). Defined in Map.cpp: dynamic
@@ -128,6 +130,7 @@ int __fastcall Unknown_00562980(Cell const &cell);
 // Tile set start indices: shared/tileset_index.hpp (the tile tests
 // 0x0055AF60 and 0x0055AF80).
 #include "shared/tileset_index.hpp"
+
 // Whether a tile is one of the 42 of the tile set at 0x00A6CB74 (0x0055AF60).
 bool __fastcall Unknown_0055AF60(int tile);
 // Whether a tile is passable in direction kind: the sets at 0x00A52E68 (40)
@@ -138,6 +141,9 @@ bool __fastcall Unknown_0055AF80(int tile, int kind);
 // Flags from the overlays of a cell's X - 1 and X + 1 neighbours (of the
 // global Map): 1 or 2 by the right one, 4 or 8 added by the left one
 // (0x0055DA70).
+// The length of a straight shore from a cell along a facing: land on the snapped
+// side and water beyond, cell by cell (0x0055CB00; TibSun Straight_Shore_Length).
+int __fastcall Straight_Shore_Length(CellClass *cellptr, int direction);
 int __fastcall Unknown_0055DA70(Cell const &cell);
 // The same for the Y - 1 and Y + 1 neighbours and two other overlay sets
 // (0x0055DB90, 0x0055ECA0).
@@ -184,6 +190,24 @@ public:
     int Zone(Cell const &cell, int zone_type, bool alt); // 0x0054F8F0 (the cell's movement zone; hypothesis)
     void Unknown_0054FB20(Cell const &cell);      // 0x0054FB20 (after a tiberium cell is cleared; AnimClass)
     int Unknown_0055A280(CoordStruct const &coord);     // 0x0055A280 (ground height; hypothesis)
+    // Reads the cells' tile data, a cell at a time up to the "no cell" value (TibSun
+    // Read_Binary_2 to _5): through an LCW straw, uncompressed, through an LZO straw,
+    // and through an LZO straw with each cell's +0x119.
+    // Writes the cells' tile data (TibSun Write_Binary_1 to _5; read back by 0x0054DCC0 to 0x0054E1E0).
+    int Unknown_0054D560(Pipe &pipe);                          // 0x0054D560 (every slot, field by field; LCW)
+    int Unknown_0054D660(Pipe &pipe);                          // 0x0054D660 (cells with a tile or height; LCW)
+    int Unknown_0054D810(Pipe &pipe);                          // 0x0054D810 (the same, uncompressed)
+    int Unknown_0054D970(Pipe &pipe);                          // 0x0054D970 (the same through LZO)
+    int Unknown_0054DB10(Pipe &pipe);                          // 0x0054DB10 (LZO, with each cell's +0x119)
+    bool Unknown_0054DCC0(Straw &straw);                       // 0x0054DCC0 (the first 128 x 128 cells, field by field; TibSun Read_Binary_1)
+    bool Unknown_0054DEA0(Straw &straw);                       // 0x0054DEA0
+    bool Unknown_0054DFC0(Straw &straw);                       // 0x0054DFC0
+    bool Unknown_0054E0C0(Straw &straw);                       // 0x0054E0C0
+    bool Unknown_0054E1E0(Straw &straw);                       // 0x0054E1E0
+    // Redraws the cells whose shroud changed (0x0055A300): see its source.
+    void Unknown_0055A300();                                    // 0x0055A300
+    // Whether the object may enter the cell: a gate there of an allied house opens (TibSun Try_Open_Gate).
+    bool Unknown_0055ACD0(ObjectClass *object, Cell const &cell);  // 0x0055ACD0
     int Cell_To_Local_Sector_Index(Cell const &cell);   // 0x0055AD70 (the local view sector 1-9 of a cell)
     Cell Clip_To_Map(Cell const &cell);                 // 0x00568D60 (a cell moved into the local view)
     Cell Local_Sector_Index_To_Cell(int index);         // 0x0055AE50 (a sector's cell)
@@ -208,6 +232,30 @@ public:
     Cell Unknown_005502E0(Cell const &cell, int speed, int zone_index, int zone, bool bridge, Point2D size, int arg8, int arg9, int arg10, int arg11, Cell const &arg12, int arg13);
     void Unknown_00552570(Cell const &cell);      // 0x00552570 (repairs the bridge at a cell; InfantryClass slot 93)
     void Unknown_00555A60(Cell const &cell);      // 0x00555A60 (the other bridge kind)
+    // A bridge end cell's damaged state, spread over the cells of its tile (TibSun name).
+    void Set_Bridge_End_State(Cell const &cell, bool damaged, bool recursive);   // 0x00550EB0
+    // A bridge middle cell's tile, spread over the cells of its old tile (TibSun name).
+    void Set_Bridge_Middle_State(Cell const &cell, int new_tile, int match_tile, int cell_height, bool recursive);  // 0x005510A0
+    // Damage spreading to the bridge cell next to a damaged one (TibSun names; train bridges use
+    // unknown_tileset_a6cb68, high bridges unknown_tileset_a52c74).
+    void Internal_Damage_Train_Bridge_EW_BottomRight(Cell const &cell, int dir); // 0x00551260
+    void Internal_Damage_Train_Bridge_EW_TopLeft(Cell const &cell, int dir);     // 0x00551360
+    void Internal_Damage_Train_Bridge_NS_BottomLeft(Cell const &cell, int dir);  // 0x00551BB0
+    void Internal_Damage_Train_Bridge_NS_TopRight(Cell const &cell, int dir);    // 0x00551CC0
+    void Internal_Damage_High_Bridge_EW_BottomRight(Cell const &cell, int dir);  // 0x00554750
+    void Internal_Damage_High_Bridge_EW_TopLeft(Cell const &cell, int dir);      // 0x00554850
+    void Internal_Damage_High_Bridge_NS_BottomLeft(Cell const &cell, int dir);   // 0x005550A0
+    void Internal_Damage_High_Bridge_NS_TopRight(Cell const &cell, int dir);     // 0x005551B0
+    // Springs the triggers of the cells of a destroyed bridge span (0x00558340; TibSun name).
+    void Spring_Bridge_Destruction_Triggers(Cell start, Cell end);   // 0x00558340
+    // The span of a destroyed low bridge through a cell, north/south and east/west (TibSun names).
+    void Spring_Low_Bridge_Destroyed_NS(Cell cell);                     // 0x0055E930
+    void Spring_Low_Bridge_Destroyed_EW(Cell cell);                     // 0x0055EA50
+    // The same for the second low bridge overlays (0xCD..0xE8; 0x00562980).
+    void Unknown_0055FA60(Cell cell);                                   // 0x0055FA60 (north/south)
+    void Unknown_0055FB90(Cell cell);                                   // 0x0055FB90 (east/west)
+    // Marks the cells under impassable bridge connections (TibSun Set_WasUnderBridge_Flags).
+    void Unknown_00568B00();                                    // 0x00568B00
     Cell Unknown_00568ED0(Cell const &cell, Cell const &from);   // 0x00568ED0 (FootClass 0x004C4C30)
     bool Unknown_00569320(Cell const &cell);      // 0x00569320 (a bridge hut's bridge is intact; InfantryClass slot 28; hypothesis)
     // A walk over the map's cells: restart (0x0055A550) and next cell, or
