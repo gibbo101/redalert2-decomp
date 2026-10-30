@@ -4,8 +4,8 @@
     "id": "population-2483",
     "inventory_sha256": "6582fba4252d8234c18be0811686f9777af8cfb98542db22664afeba77d40d03",
     "gaps_sha256": "3fe96907a8a1f9ece1fcb5f8f0620c8047f04bb9ac934c51d545b3ed6faea28d",
-    "historical_population_sha256": "e06e474368121fe4ade6cfd11eb6f5c55473bb2bb54030fce47147bedddd56e7",
-    "historical_acceptance_sha256": "8905504911c797394c0f397fd3268e00e51d0797c0dbf5850bac1a1ce711bd24"
+    "historical_population_sha256": "639526dfce018723dc98f72ec5903905b372a52a50d1f4408f98b34e09ef7b4c",
+    "historical_acceptance_sha256": "5d33bb90e6f2daa8aa73b43969de2c0044150080caf0b199da51d812d924f5ba"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -927,7 +927,7 @@
     "?unknown_flag_a40d44@@3_NA": 10751300,
     "?unknown_slot35@DisplayClass@@UAEXXZ": 4844528,
     "?unknown_slot44@DisplayClass@@UAEXABUPoint2D@@@Z": 4829056,
-    "?unknown_slot49@DisplayClass@@UAEXH@Z": 4829072,
+    "?unknown_slot49@DisplayClass@@UAEXABUPoint2D@@@Z": 4829072,
     "?unknown_tactical_83996c@@3PAVTactical@@A": 8624492,
     "_$E79": 6723008,
     "_$S80": 11235384,
@@ -4200,7 +4200,7 @@
     "?unknown_text_a767e0@@3PAGA": 10971104,
     "_swprintf": 7878500,
     "?unknown_slot26@ScrollClass@@UAE_NXZ": 6726592,
-    "?unknown_slot49@ScrollClass@@UAEXH@Z": 6728608,
+    "?unknown_slot49@ScrollClass@@UAEXABUPoint2D@@@Z": 6728608,
     "?unknown_slot44@ScrollClass@@UAEXABUPoint2D@@@Z": 6728672,
     "?unknown_slot35@ScrollClass@@UAEXXZ": 6728736,
     "?One_Time@MouseClass@@UAEXXZ": 5895408,
@@ -8345,7 +8345,7 @@
     {
       "entry": 6728608,
       "method": "0066aba0",
-      "symbol": "?unknown_slot49@ScrollClass@@UAEXH@Z",
+      "symbol": "?unknown_slot49@ScrollClass@@UAEXABUPoint2D@@@Z",
       "symbol_prefix": "?unknown_slot49@ScrollClass@@",
       "options": [
         "/O2",
@@ -8370,13 +8370,13 @@
         {
           "offset": 48,
           "kind": 20,
-          "symbol": "?unknown_slot49@DisplayClass@@UAEXH@Z",
+          "symbol": "?unknown_slot49@DisplayClass@@UAEXABUPoint2D@@@Z",
           "target": 4829072,
           "addend": 0,
           "resolved": 4293067708
         }
       ],
-      "source_sha256": "66b4330416f5d1df62b2ed67669dabe26a546e9de2032efc45feac6bb72700d2",
+      "source_sha256": "06ce3b5e6c20b9aef2e9afb30f515a3bc8c6b0678687c38eb17dcdde3d512838",
       "source": "src/recovered/classes/ScrollClass/ScrollClass_unknown_slot49_0066aba0.cpp",
       "population": "population-2483",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",

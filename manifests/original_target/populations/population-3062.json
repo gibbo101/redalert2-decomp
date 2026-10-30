@@ -4,8 +4,8 @@
     "id": "population-3062",
     "inventory_sha256": "d395e9dc6d09aacf190dfa8afd2a98c9870ca8ea33ebfc6ce08d5b796c4d6004",
     "gaps_sha256": "6765e139219c3376810c04d9fdfd5b2a2283461510d8653e9ed6437195e6d34d",
-    "historical_population_sha256": "3b4fd429942126a058d4151b6cc157495227fb1164555e9afab5c960387d18cc",
-    "historical_acceptance_sha256": "98083956dfe36ac2007d85e9b70946720bd4a74fe1521c558ef29dda489d1684"
+    "historical_population_sha256": "da52f9cff6301b1cf4f366ca90f8567aa6adf28acabcb8b35b824df69b472414",
+    "historical_acceptance_sha256": "430a6ce3737e6fefbdfdf1397e598393961457448432516f5de6fa8eb38849fb"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1610,7 +1610,7 @@
     "?Prev_Object@DisplayClass@@QAEPAVObjectClass@@PAV2@@Z": 4826736,
     "?Unknown_0049AD90@DisplayClass@@QAE_NABVCell@@0HHH@Z": 4828560,
     "?Action@TacticalClass@DisplayClass@@": 4828784,
-    "?unknown_slot49@DisplayClass@@UAEXH@Z": 4829072,
+    "?unknown_slot49@DisplayClass@@UAEXABUPoint2D@@@Z": 4829072,
     "?Unknown_0049C3F0@@YIXPAVObjectClass@@@Z": 4834288,
     "?unknown_slot47@DisplayClass@@UAEXABUPoint2D@@@Z": 4834560,
     "?Unknown_0049C7C0@DisplayClass@@QAEXH@Z": 4835264,
@@ -7039,7 +7039,7 @@
     "?unknown_slot47@DisplayClass@@UAEXXZ": 4834560,
     "?unknown_slot48@DisplayClass@@UAEXXZ": 4832032,
     "?unknown_slot49@InfantryClass@@UAE_NPAVHouseClass@@@Z": 5280656,
-    "?unknown_slot49@ScrollClass@@UAEXH@Z": 6728608,
+    "?unknown_slot49@ScrollClass@@UAEXABUPoint2D@@@Z": 6728608,
     "?unknown_slot49@UnitClass@@UAE_NPAVHouseClass@@@Z": 7380304,
     "?unknown_slot4@FreeForAll@@UAE_NXZ": 5927088,
     "?unknown_slot4@MultiplayerGameMode@@UAE_NXZ": 5993296,
@@ -10102,7 +10102,8 @@
     "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
     "?Show@Selection@WorldDominationTour@@SIXABV?$rc_ptr@VCampaign@WorldDominationTour@@@@H@Z": 7536512,
     "?unknown_flag_a3dc89@@3_NA": 10738825,
-    "?To_Char@WWKeyboardClass@@QAEDG@Z": 5449728
+    "?To_Char@WWKeyboardClass@@QAEDG@Z": 5449728,
+    "?Detach@BulletClass@@UAEXPAVAbstractClass@@_N@Z": 4592928
   },
   "regions": [
     {
@@ -13128,8 +13129,8 @@
     {
       "entry": 4829072,
       "method": "0049af90",
-      "symbol": "?unknown_slot49@DisplayClass@@UAEXH@Z",
-      "symbol_prefix": "?unknown_slot49@DisplayClass@@UAEXH@Z",
+      "symbol": "?unknown_slot49@DisplayClass@@UAEXABUPoint2D@@@Z",
+      "symbol_prefix": "?unknown_slot49@DisplayClass@@UAEXABUPoint2D@@@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -13263,7 +13264,7 @@
           "resolved": 8614924
         }
       ],
-      "source_sha256": "f7ac8fa066f3e57a9dc5b13923d1d099be6d90eaf3b85f550bc526b2442ce3b0",
+      "source_sha256": "46e4d8a5fc3baa6c29b62ea19094fb86450849b3e1f2dbc01d5c4cdb3624997e",
       "source": "src/recovered/classes/DisplayClass/DisplayClass_unknown_slot49_0049af90.cpp",
       "population": "population-3062",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",

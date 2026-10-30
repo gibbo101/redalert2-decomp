@@ -182,7 +182,7 @@ public:
     virtual void unknown_slot46(Cell const &cell, bool shadow, ObjectClass *object, int action, bool small_mouse);
     virtual void unknown_slot47(Point2D const &xy);                   // slot 47 0x0049C500 (the mouse held at xy: drags a selection band)
     virtual void unknown_slot48();                                    // slot 48 0x0049BB20
-    virtual void unknown_slot49(int unknown);                         // slot 49 0x0049AF90
+    virtual void unknown_slot49(Point2D const &xy);                    // slot 49 0x0049AF90 (ScrollClass 0x0066A7A0 passes Point2D(-1, -1))
 
     // The tactical area's gadget (0x00852910; RTTI DisplayClass::TacticalClass).
     // Constructor: GadgetClass(0, 0, 0, 0, 0x7F, true) inlined (0x00498A00).

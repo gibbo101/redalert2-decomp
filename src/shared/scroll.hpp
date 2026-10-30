@@ -26,7 +26,7 @@ public:
     virtual bool unknown_slot26();                              // slot 26 0x0066A3C0
     virtual void unknown_slot35();                              // slot 35 0x0066AC20 (aborts a drag select)
     virtual void unknown_slot44(Point2D const &point);          // slot 44 0x0066ABE0
-    virtual void unknown_slot49(int unknown);                   // slot 49 0x0066ABA0
+    virtual void unknown_slot49(Point2D const &xy);             // slot 49 0x0066ABA0
 
     // Scrolls by the mouse and keyboard (0x0066A290, called first by AI).
     void Unknown_0066A290();

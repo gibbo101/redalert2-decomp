@@ -1,4 +1,4 @@
-// void DisplayClass::unknown_slot49(int unknown) (0x0049AF90, slot 49)
+// void DisplayClass::unknown_slot49(Point2D const &xy) (0x0049AF90, slot 49)
 // Cancels whatever the right mouse button cancels (hypothesis: Westwood's
 // Mouse_Right_Press), first match only: a techno waiting for placement, then
 // the modes at +0x11AC, +0x11AD, +0x11AE, the target at +0x11B4, the
@@ -11,7 +11,7 @@
 
 void Unknown_00482BC0();
 
-void DisplayClass::unknown_slot49(int unknown)
+void DisplayClass::unknown_slot49(Point2D const &xy)
 {
     UnknownPendingObjectView *pending = unknown_11a0;
     bool techno;
