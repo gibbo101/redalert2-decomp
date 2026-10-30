@@ -13,6 +13,11 @@ public:
     // Proposed rename-only owner correction; same int,int/ECX/RET8 physical ABI.
     void Unknown_0057A0D0(int arg1,int arg2); //0057A0D0, operation unchanged; no body promoted
     void Run_Region_Attempts_0057dd60();
+    // Observed ECX/plain-RET/ignored-result contracts; unobserved stack aliases and source intent remain hypotheses.
+    void Initialize_Region_Map_0057bea0();
+    void unknown_0057c4f0();
+    void unknown_0057c780();
+    void unknown_0057c9e0();
     bool unknown_0057ecf0(Cell const &point,double value,bool flag); //actualcallee, sourceintentqualified
     bool unknown_0057e100(Cell const &point); //actualcallee, sourceintentqualified
     int Compute_Water_Cell_Count_0057ec20() const; //name/constness hypotheses
