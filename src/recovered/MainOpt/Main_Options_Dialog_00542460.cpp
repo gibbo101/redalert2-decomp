@@ -16,7 +16,7 @@
 // @ref ?Main_Options_Apply@@YIXPAUHWND__@@@Z=00542280
 // @ref ?Main_Options_Proc@@YGHPAUHWND__@@IIJ@Z=00542590
 // @ref ?Main_Options_Proc2@@YGHPAUHWND__@@IIJ@Z=00542d60
-// @ref ?Unknown_005DA360@OptionsClass@@QAEXXZ=005da360
+// @ref ?Unknown_005DA360@OptionsClass@@QAE_NXZ=005da360
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
 
 void __fastcall Main_Options_Dialog()

@@ -38,7 +38,7 @@ public:
     int Normalize_Delay(int delay) const;                   // 0x005D9760 (name after TS)
     // Runs dialog 0xA3 (proc 0x005D97A0) to its end (0x005DA360; the shell Options dialog's button 0x5CE;
     // it lies in Options.cpp and ignores ecx: Main_Options_Dialog 0x00542460 hoists mov ecx, &Options).
-    void Unknown_005DA360();
+    bool Unknown_005DA360();
 
     int GameSpeed;                          // +0x00 [Options] GameSpeed (3)
     int Difficulty;                         // +0x04 [Options] Difficulty, 0-4 (1; the campaign difficulty)

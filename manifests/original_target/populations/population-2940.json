@@ -4,8 +4,8 @@
     "id": "population-2940",
     "inventory_sha256": "a5d62be39a4306562ab9955da8f1738aae4e13fa788f9c4f1d1d5124d6d050be",
     "gaps_sha256": "6cf2d7d21e57e4760c827e29af224173f668e1fbbdbd610cb3fe44611565d353",
-    "historical_population_sha256": "8e377f1958781d9216ed9053cdfb9a74ea1d01a5b2c2b120fb6f8260b1ef6016",
-    "historical_acceptance_sha256": "a17958d04c590796f832d4b42f390bcde884fa46bb7a9a73cea5708d263a400a"
+    "historical_population_sha256": "ad30023fd3713e55d7e1904922716cb63ee55a872f03422900f9f6966ca2738a",
+    "historical_acceptance_sha256": "0f416ee80ee71255ad90cb16326a58c3bf6d29d4ffa99f1375ef0a936bdddc6f"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1457,7 +1457,7 @@
     "?Unknown_004DD7D0@@YAXXZ": 5101520,
     "?Unknown_00634A00@@YIXPAVMouseClass@@@Z": 6507008,
     "?Unknown_0063B090@@YIXPAVUnknownIDSource@@@Z": 6533264,
-    "?Unknown_005DA360@OptionsClass@@QAEXXZ": 6136672,
+    "?Unknown_005DA360@OptionsClass@@QAE_NXZ": 6136672,
     "?Unknown_00672DE0@@YIXPAUUnknownSessionState@@@Z": 6761952,
     "?Unknown_0073C230@@YAXXZ": 7586352,
     "?OK_Cancel_Message_005A7430@@YIHPBG@Z": 5927984,
@@ -8819,7 +8819,16 @@
     "??_EPlayerProfile@@UAEPAXI@Z": 7577744,
     "??_E?$VectorClass@V?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@@UAEPAXI@Z": 7079984,
     "??_E?$VectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEPAXI@Z": 5040784,
-    "??_E?$VectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524048
+    "??_E?$VectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524048,
+    "?Main_Options_Dialog@@YIXXZ": 5514336,
+    "__real@8@4004c800000000000000": 7986024,
+    "__real@4@3ff9c90e560000000000": 8055348,
+    "?unknown_slot28@BuildingClass@@UAEHPAVObjectClass@@_N@Z": 4470944,
+    "?OnStatusUpdate@CDownloadEventSink@@UAGJH@Z": 7760400,
+    "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z": 6866432,
+    "?Load_Image_0068ca20@UnknownBitmapWriter@@QAEXPBD@Z": 6867488,
+    "?Draw@RadarEventClass@@QAEXXZ": 6536080,
+    "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABUSurfaceRegion@@@Z": 6922704
   },
   "regions": [
     {
@@ -11639,7 +11648,7 @@
         {
           "offset": 345,
           "kind": 20,
-          "symbol": "?Unknown_005DA360@OptionsClass@@QAEXXZ",
+          "symbol": "?Unknown_005DA360@OptionsClass@@QAE_NXZ",
           "target": 6136672,
           "addend": 0,
           "resolved": 1411507
@@ -12141,7 +12150,7 @@
           "resolved": 4725353
         }
       ],
-      "source_sha256": "eb2c7666f83ab08f36c2856e97d8418dc1fb68ab56808e2ee97b88084a4bed19",
+      "source_sha256": "40f0a2fc899014368bec2e385c6cc06242b0487d547d8d6d0d08cdeb037da548",
       "switch_data_bytes": 52,
       "source": "src/recovered/unowned/Special_Dialog_00481850.cpp",
       "population": "population-2940",

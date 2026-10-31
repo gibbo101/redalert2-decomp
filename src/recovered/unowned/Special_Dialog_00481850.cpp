@@ -17,7 +17,7 @@
 // @ref ?Unknown_004DD7D0@@YAXXZ=004dd7d0
 // @ref ?Unknown_00634A00@@YIXPAVMouseClass@@@Z=00634a00
 // @ref ?Unknown_0063B090@@YIXPAVUnknownIDSource@@@Z=0063b090
-// @ref ?Unknown_005DA360@OptionsClass@@QAEXXZ=005da360
+// @ref ?Unknown_005DA360@OptionsClass@@QAE_NXZ=005da360
 // @ref ?Unknown_00672DE0@@YIXPAUUnknownSessionState@@@Z=00672de0
 // @ref ?Unknown_0073C230@@YAXXZ=0073c230
 // @ref ?OK_Cancel_Message_005A7430@@YIHPBG@Z=005a7430
