@@ -50,8 +50,9 @@ public:
     unsigned short *Text;                                       // +0x30 one of the list's text slots
     int Color;                                                  // +0x34 the ColorSchemes index
     int MaximumWidth;                                           // +0x38
-    char unknown_3c[0x41 - 0x3C];
-    bool unknown_41;                                            // +0x41
+    char unknown_3c[0x40 - 0x3C];
+    bool unknown_40;                                            // +0x40 (set on the beacon text edit line)
+    bool unknown_41;                                            // +0x41                                            // +0x41
 };
 
 // An empty function the edit removal calls (0x00738100).
@@ -117,6 +118,12 @@ public:
         unsigned style, int delay, bool unknown_flag);                              // 0x005B4DA0
     // Removes the messages that have expired, frees their text slots and restacks the rest (0x005B5610); whether any went.
     int Update_Messages();
+#ifdef MESSAGE_LIST_DECLARE_EDIT_BUF
+    // The edit text after the 'to' prefix (EditBuf + EditInitPos; 0x005B55E0; Westwood's Get_Edit_Buf).
+    // Behind a guard (shared/main_loop.hpp defines it): a new member here renumbers
+    // Refresh_Wonline_Players 0x0073FEE0's $L labels.
+    unsigned short *Get_Edit_Buf();
+#endif
     void Init(int x, int y, int max_messages, int max_chars, int unknown_arg5, int x2, int y2,
         bool unknown_flag, int first, int last, int width);                         // 0x005B4C60
 

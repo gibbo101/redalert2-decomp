@@ -195,7 +195,8 @@ struct UnknownSessionState {
     unsigned Attract : 1;                   //         bit 2 (Red Alert's Session.Attract; Parse_Command_Line -ATTRACT)
     char unknown_236c[0x2380 - 0x236C];
     unsigned short HostName_2380[20];       // +0x2380 the host's name (wide; also unknown_host_name_a3f618)
-    char unknown_23a8[0x27B4 - 0x23A8];
+    UnknownGlobalPacket GPacket;            // +0x23A8 (also unknown_gpacket_a3f640; Red Alert's Session.GPacket)
+    char unknown_256f[0x27B4 - 0x256F];
     DynamicVectorClass<NodeNameType *> NodeList_27b4;  // +0x27B4 (a third of Red Alert's Games / Players / Chat lists)
     DynamicVectorClass<NodeNameType *> NodeList_27cc;  // +0x27CC
     // The player list (the object at 0x00A3FA7C, shared/unknown_player_entry.hpp unknown_players_a3fa7c).

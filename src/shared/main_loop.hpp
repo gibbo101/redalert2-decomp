@@ -6,6 +6,8 @@
 // sees (any new declaration there renumbers its $L labels): included first in the unit.
 #define SESSION_STATE_DECLARE_TRAP_OBJECT
 #define MAP_VIEW_DECLARE_SLOT41
+#define MESSAGE_LIST_DECLARE_EDIT_BUF
+#define UNKNOWN_BEACONS_DECLARE_TEXT
 
 #include "shared/cd_timer.hpp"
 #include "shared/system_timer.hpp"
@@ -27,6 +29,9 @@ inline bool Main_Loop_Key_Down(int key) { return WWKeyboard->Down(key); }
 // The keyboard as Keyboard_Process's repeat-key loop reads it (an inline accessor: three
 // pending inline sites after its hotkey lookups, which decide their IndexClass inlining).
 inline WWKeyboardClass *Main_Loop_Keyboard() { return WWKeyboard; }
+// The character of an int key (Message_Input's chat keys; the same int-key wrapper: the key
+// goes to To_ASCII as the caller's dword, the keyboard as an argument).
+inline char Main_Loop_To_ASCII(WWKeyboardClass *keyboard, int key) { return keyboard->To_ASCII(key); }
 
 // Westwood's always.h min (TibSun; Main_Loop's process time).
 template <class T> T min(T a, T b)
@@ -40,6 +45,19 @@ template <class T> T min(T a, T b)
 
 // For network and modem games, processes the key for inter-player messages (0x00540C20).
 void __fastcall Message_Input(int &input);
+// The WOL chat commands Message_Input tries on an internet message (unowned wonline units):
+// a page ("/page <name> <text>"; 0: not one, 1: sent), an online command (nonzero: handled)
+// and a reply to the last pager (0: not one, 1: sent).
+int __fastcall Parse_Page_Command_00746480(unsigned short const *text);
+int __fastcall Parse_Online_Command_00746240(unsigned short const *text);
+int __fastcall Reply_To_Last_Pager_007466c0(unsigned short const *text);
+// The last player who paged (narrow; 0x00B2AC48).
+extern char unknown_last_pager_b2ac48[];
+// The players Message_Input's chat goes to (0x00A6EBE0; set by the key that opened the edit line): 1 (Return)
+// the houses marked in unknown_flags_a3f118, 2 (Backspace) the player's allies, 3 ('\\') every player; 0: none.
+extern int unknown_chat_target_a6ebe0;
+// Narrows a wide string into dst (at most limit characters; 0x006FA0F0; also shared/modem_guest.hpp).
+void __fastcall Unknown_006FA0F0(char *dst, unsigned short const *src, int limit);
 
 // The sidebar tab key action on the screen object (0x006818B0; name hypothesis).
 class SidebarClass;

@@ -343,6 +343,12 @@ public:
     void Unknown_0042E1A0();                    // 0x0042E1A0 (Read_Scenario_INI)
     void Unknown_0042EBE0(int house); // removes the house beacon slots, original56-byte RET4
     bool Unknown_0042E700(int house);           // 0x0042E700 true when one of the house's three slots is empty
+#ifdef UNKNOWN_BEACONS_DECLARE_TEXT
+    // The house's beacon whose text is being edited (flag 2; house -1: any), else none (0x0042E940).
+    UnknownBeacon *Unknown_0042E940(int house);
+    // Sets the edited beacon's text (none: the edit was cancelled; done: the text is final; 0x0042EC20).
+    void Unknown_0042EC20(unsigned short const *text, int x, int y, bool done);
+#endif
     // +0x00 three owned blocks per house (8 houses): the static initializer 0x0042D960
     // clears the 0x18 words, its atexit 0x0042D990 deletes each non-null one.
     UnknownBeacon *unknown_00[8][3];
