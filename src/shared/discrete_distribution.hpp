@@ -31,6 +31,46 @@ public:
         U Object;          // +0x00
         unsigned Weight;   // +0x04
     };
+    typedef DistributionObject<T *> DIST_OBJ;
+
+    // FootClass 0x004CBB40 constructs one on the stack: the vector's
+    // constructor (0x004CE710, out of line), then Clear (the virtual call).
+    DiscreteDistributionClass() { Clear(); }
+    ~DiscreteDistributionClass() {}
+
+    void Add(T *object, unsigned weight)
+    {
+        DIST_OBJ entry;
+        entry.Object = object;
+        entry.Weight = weight;
+        Objects.Add(entry);
+        TotalWeight += weight;
+    }
+    void Clear()
+    {
+        TotalWeight = 0;
+        Objects.Clear();
+    }
+    int Count() const { return Objects.Count(); }
+    // A weighted random pick (Random_Pick from shared/id_source.hpp, looked
+    // up where the template is used); null when empty.
+    T *Sample()
+    {
+        unsigned cumulative = 0;
+        if (TotalWeight >= 1 && Count() != 0) {
+            unsigned pick = Random_Pick<unsigned>(1, TotalWeight);
+            for (int index = 0; index < Objects.Count(); index++) {
+                cumulative += Objects[index].Weight;
+                if (cumulative >= pick) {
+                    return Objects[index].Object;
+                }
+            }
+        }
+        return 0;
+    }
+
+    DynamicVectorClass<DIST_OBJ> Objects;   // +0x00
+    unsigned TotalWeight;                   // +0x18
 };
 
 #endif
