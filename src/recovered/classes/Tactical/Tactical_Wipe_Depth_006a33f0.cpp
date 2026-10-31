@@ -68,8 +68,7 @@ void Tactical::Wipe_Depth(bool fullredraw, int xoff, int yoff, Rect const &clipr
             CoordStruct coord = unknown_e4[i]->unknown_475d60();
             coord.Z = 0;
             Point2D pixel;
-            pixel = Coord_To_Pixel_Absolute(coord);
-            pixel -= Point2D(unknown_b0.X, unknown_b0.Y);
+            Coord_To_Pixel(coord, pixel);
             Point2D draw = pixel + Point2D(60, 30) / -2;
             draw = draw + Point2D(unknown_rect_839630.X, unknown_rect_839630.Y);
 

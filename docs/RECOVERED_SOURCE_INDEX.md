@@ -10,7 +10,7 @@
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 171 | 47,172 | 171 | 0x00438A60–0x004D3450 |
-| (discovery: address-named) | 1440 | 42,895 | 13 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1444 | 43,816 | 17 | 0x004010A0–0x00797198 |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 128 | 42,374 | 128 | 0x0049ED10–0x0056A9D0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 195 | 38,690 | 192 | 0x0041B370–0x006D9750 |
@@ -27,9 +27,9 @@
 | [classes/INIClass](../src/recovered/classes/INIClass/) | 87 | 18,496 | 87 | 0x0050B8D0–0x0051AD50 |
 | [netshare](../src/recovered/netshare/) | 71 | 16,527 | 71 | 0x005C2BA0–0x005CD540 |
 | [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 23 | 15,351 | 23 | 0x0057A0D0–0x0058A9C0 |
-| [classes/Tactical](../src/recovered/classes/Tactical/) | 72 | 14,840 | 65 | 0x006A22D0–0x006AC800 |
 | [classes/MPCooperative](../src/recovered/classes/MPCooperative/) | 41 | 14,646 | 39 | 0x005A2800–0x005A62B0 |
 | [classes/TActionClass](../src/recovered/classes/TActionClass/) | 121 | 13,936 | 121 | 0x006AD2F0–0x006B30D0 |
+| [classes/Tactical](../src/recovered/classes/Tactical/) | 68 | 13,919 | 61 | 0x006A22D0–0x006AC800 |
 | [classes/CCINIClass](../src/recovered/classes/CCINIClass/) | 86 | 13,770 | 86 | 0x004696B0–0x00654150 |
 | [classes/RadarClass](../src/recovered/classes/RadarClass/) | 58 | 13,417 | 57 | 0x0062ECF0–0x00634AD0 |
 | [classes/DisplayClass](../src/recovered/classes/DisplayClass/) | 62 | 12,614 | 56 | 0x0040D120–0x006824F0 |

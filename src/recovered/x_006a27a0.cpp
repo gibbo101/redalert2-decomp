@@ -5,9 +5,11 @@
 
 Point2D Tactical::Coord_To_Pixel_Absolute(CoordStruct const &coord)
 {
-    Point2D pixel = Rectangular_To_Isometric(Point2D(coord.X, coord.Y));
+    Point2D point(coord.X, coord.Y);
+    Point2D pixel = Rectangular_To_Isometric(point);
     pixel.X /= 256;
     pixel.Y /= 256;
-    pixel.Y -= Unknown_006A2970(coord.Z);
+    int lift = Unknown_006A2970(coord.Z);
+    pixel.Y -= lift;
     return pixel;
 }

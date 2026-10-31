@@ -27,12 +27,12 @@ void Tactical::Render_Tile_Shadows(Rect const &xpanrect, Rect const &ypanrect, b
         for (int i = 0; i < unknown_e0; i++) {
             CoordStruct coord = Coord_Snap(Cell_Center(unknown_e4[i]->MapCoords));
             Point2D pixel;
-            pixel = Coord_To_Pixel_Absolute(coord);
-            pixel -= Point2D(unknown_b0.X, unknown_b0.Y);
+            Coord_To_Pixel(coord, pixel);
             Rect rect = Rect(pixel.X - 30, pixel.Y, 60, 30);
             rect.Y += unknown_rect_839630.Y;
 
-            Rect inter = Intersect(unknown_rect_839630, rect);
+            Rect inter;
+            inter = Intersect(unknown_rect_839630, rect);
 
             if (inter.Is_Valid()) {
                 Draw_Tile_Shadows(inter, inter);

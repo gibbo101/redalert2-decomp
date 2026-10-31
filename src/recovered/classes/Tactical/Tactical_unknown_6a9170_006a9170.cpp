@@ -8,7 +8,6 @@
 // @ref ??D@YI?AUVector3@@ABVMatrix3D@@ABU0@@Z=00591380
 // @ref ?unknown_rect_abe560@@3VRect@@A=00abe560
 
-extern Rect unknown_rect_abe560;
 
 void Tactical::Unknown_006A9170()
 {
