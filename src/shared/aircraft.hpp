@@ -170,6 +170,7 @@ public:
     int Move_Carryall_00416670(); // private own carryall-move helper00416670; ECX/RET0/int ABI hypothesis
     bool Is_Landing_Cell_Available_00419250(Cell const &cell, bool allow_self); // AL0/1, RET8; identity hypothesis
     AbstractClass *Select_Landing_Destination_004185b0(AbstractClass *desired); // approved private source identity hypothesis
+    AbstractClass *unknown_418f10(AbstractClass *desired);                  // 0x00418F10
     void unknown_416420(); // evidenced own ECX receiver/RET0 cargo operation; declaration only
     int unknown_415510();                                            // 0x00415510 (slot 147, over the target)
 
@@ -211,6 +212,13 @@ inline Cell Adjacent_Cell(Cell const &cell, int facing)
     return Cell(cell.X + offset.X, cell.Y + offset.Y);
 }
 #endif
+
+// The cell under the coordinate a target offers a techno (AbstractClass slot 19): the landing
+// cell the move and patrol missions (0x00416010, 0x00416C20) check.
+inline Cell Destination_Cell(AbstractClass *target, TechnoClass *techno)
+{
+    return Coord_Cell(target->unknown_slot19(techno));
+}
 
 // Every aircraft (0x00A40398).
 extern DynamicVectorClass<AircraftClass *> Aircraft;

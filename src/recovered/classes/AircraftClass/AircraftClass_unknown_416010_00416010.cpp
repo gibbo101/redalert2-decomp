@@ -13,12 +13,6 @@ static inline bool Within_One_Cell(CoordStruct here, CoordStruct target)
     return delta.Length() < 256;
 }
 
-// The cell under the coordinate a target offers this techno (AbstractClass slot 19).
-static inline Cell Destination_Cell(AbstractClass *target, TechnoClass *techno)
-{
-    return Coord_Cell(target->unknown_slot19(techno));
-}
-
 // Do_MISSION_MOVE for aircraft that are not carryalls (0x00415FF0 dispatches here).
 int AircraftClass::unknown_416010()
 {
