@@ -160,49 +160,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "unknown_empty_0068cb20",
       "source_order": 83008
-    },
-    {
-      "entry": 5823264,
-      "method": "0058db20",
-      "symbol": "?Release_58db20@UnknownOwner_58db20@@QAEPAV1@E@Z",
-      "symbol_prefix": "?Release_58db20@UnknownOwner_58db20@@QAEPAV1@E@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 38,
-      "body_sha256": "58ebd00400c6c0f43f968689127f1cdd64848fe119903be4797c922352cfec40",
-      "padding_bytes": 10,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "45757df8f6c1965ab449c71600072b7e834393ecea14b2934e958055eef965ca",
-      "relocations": [
-        {
-          "offset": 8,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 2048527
-        },
-        {
-          "offset": 25,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 2048510
-        }
-      ],
-      "source_sha256": "b2122a2ed691abbb242b32d068649f748ee029254bc5842c7d076e09e8a6d752",
-      "source": "src/recovered/unowned/UnknownOwner_Release_0058db20.cpp",
-      "population": "population-2257",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "UnknownOwner_Release_0058db20",
-      "source_order": 83009
     }
   ]
 }
