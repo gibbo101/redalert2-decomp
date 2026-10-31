@@ -2,7 +2,7 @@
 #include "shared/lobby.hpp"
 #include "shared/multiplayer_game_mode.hpp"
 // @ref ?Unknown_005cbf20@@YIXPAUHWND__@@HPAUNodeNameType@@H@Z=005cbf20
-// @ref ?Unknown_005bbdc0@@YAXXZ=005bbdc0
+// @ref ?Unknown_005bbdc0@@YIXXZ=005bbdc0
 // @ref ?Unknown_005c3810@@YIX_N0@Z=005c3810
 // @ref ?unknown_chat_a72cfc@@3PAUIChat@WOL@@A=00a72cfc
 // @ref ?unknown_closed_entry_a72d30@@3PAUNodeNameType@@A=00a72d30

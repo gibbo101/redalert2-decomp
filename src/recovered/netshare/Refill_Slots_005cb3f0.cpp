@@ -1,6 +1,6 @@
 // void __fastcall Unknown_005cb3f0(HWND dialog, int first, int count) (0x005CB3F0)
 #include "shared/lobby.hpp"
-// @ref ?Unknown_005bbdc0@@YAXXZ=005bbdc0
+// @ref ?Unknown_005bbdc0@@YIXXZ=005bbdc0
 // @ref ?Unknown_005cae00@@YIXPAUHWND__@@HH@Z=005cae00
 // @ref ?Unknown_005cbf20@@YIXPAUHWND__@@HPAUNodeNameType@@H@Z=005cbf20
 // @ref ?unknown_closed_entry_a72d30@@3PAUNodeNameType@@A=00a72d30

@@ -252,7 +252,7 @@ void __fastcall Unknown_005cafd0(HWND dialog);
 void __fastcall Change_Slot_Count_005cb300(HWND dialog, int old_count, int new_count, UnknownSessionA3D29C *mode);
 // The chat's lobby refresh (0x007412F0) and the LAN one (0x005BBDC0, a thunk to 0x005BBDD0).
 void unknown_call_73fee0_default();
-void Unknown_005bbdc0();
+void __fastcall Unknown_005bbdc0();    // __fastcall: callers' tail-call register arguments are set before the pops (0x005CB560)
 // Records a player's map state (0: no map, 2: transfer; the host's own name always reads 1) and
 // announces the missing map or its transfer; 0 is the local nick name (0x005C3F00).
 void __fastcall Set_Player_Map_State_005c3f00(char const *name, int state);
