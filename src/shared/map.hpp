@@ -289,6 +289,8 @@ public:
     void Destroy_Low_Bridge_NS(Cell const &cell);               // 0x005579C0
     void Destroy_Low_Bridge2_EW(Cell const &cell);              // 0x00557CE0
     void Destroy_Low_Bridge2_NS(Cell const &cell);              // 0x00558010
+    void Destroy_Low_Bridge_Span(Cell const &cell);             // 0x00556BF0 (TibSun Repair_Low_Bridge_Span shape)
+    void Destroy_Low_Bridge2_Span(Cell const &cell);            // 0x00556E30 (the same for the second low bridge set)
     bool Check_Map();                                           // 0x00569B60 (TibSun Check_Map: a debug zone-table check to MapCheck.txt)
     bool Rebuild_Cliffs_At(Cell const &cell);                   // 0x00567AE0
     // The map generator's shore passes (TibSun Prune_Water, Get_Water_Mask; names are hypotheses).
@@ -303,6 +305,10 @@ public:
     void Unknown_0055A550();
     CellClass *Unknown_0055A490();
     bool Unknown_00569090(Cell *cell);              // 0x00569090 (whether a cell can be scrolled to; hypothesis)
+    bool Unknown_0055DEF0(Cell const &cell);      // 0x0055DEF0 (TibSun Damage_Low_Bridge_EW)
+    bool Unknown_0055E410(Cell const &cell);      // 0x0055E410 (TibSun Damage_Low_Bridge_NS)
+    bool Unknown_0055F020(Cell const &cell);      // 0x0055F020 (the second set's Damage_Low_Bridge_EW)
+    bool Unknown_0055F540(Cell const &cell);      // 0x0055F540 (the second set's Damage_Low_Bridge_NS)
     bool Unknown_0055DCA0(Cell const &cell);      // 0x0055DCA0 (damages the low bridge at a cell; TibSun Damage_Low_Bridge)
     bool Unknown_0055EDB0(Cell const &cell);      // 0x0055EDB0 (the same for the second low bridge overlays)
     bool Unknown_00559000(Cell const &cell);      // 0x00559000 (TibSun Damage_High_Bridge)

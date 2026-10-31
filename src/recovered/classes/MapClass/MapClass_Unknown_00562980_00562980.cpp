@@ -9,8 +9,5 @@
 int __fastcall Unknown_00562980(Cell const &cell)
 {
     int overlay = Map[cell].OverlayIndex;
-    if (overlay >= 0xcd && overlay <= 0xe8) {
-        return true;
-    }
-    return false;
+    return overlay >= 0xcd && overlay <= 0xe8;
 }
