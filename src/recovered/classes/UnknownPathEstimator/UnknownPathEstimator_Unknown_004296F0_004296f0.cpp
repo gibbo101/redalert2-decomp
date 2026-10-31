@@ -10,11 +10,12 @@
 #include "shared/crt_memory.hpp"
 
 // The cell next to one toward a facing (the guarded block of shared/display.hpp, shared/terrain.hpp,
-// shared/infantry.hpp and shared/aircraft.hpp; those headers are too heavy for this unit).
+// shared/infantry.hpp and shared/aircraft.hpp; those headers are too heavy for this unit). Here the
+// sum is spelled member-wise through Cell's int constructor.
 #ifndef RA2_ADJACENT_CELL
 #define RA2_ADJACENT_CELL
 #include "shared/adjacent_cell.hpp"
-inline Cell Adjacent_Cell(Cell cell, int facing)
+inline Cell Adjacent_Cell(Cell const &cell, int facing)
 {
     Cell const &offset = AdjacentCell[facing & 7];
     return Cell(cell.X + offset.X, cell.Y + offset.Y);

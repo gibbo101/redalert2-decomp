@@ -65,10 +65,12 @@ extern Rect unknown_rect_85291c;
 #ifndef RA2_ADJACENT_CELL
 #define RA2_ADJACENT_CELL
 #include "shared/adjacent_cell.hpp"
-// The cell next to `cell` toward an 8-way facing.
+// The cell next to `cell` toward an 8-way facing (TibSun Adjacent_Cell: the
+// cell is the left operand of TPoint2D<short>::operator+; DisplayClass slot 38
+// 0x0049A0F0).
 inline Cell Adjacent_Cell(Cell const &cell, int facing)
 {
-    return AdjacentCell[facing & 7] + cell;   // Westwood's form: the offset is the left operand (FootClass 0x004C45B0, slot 129)
+    return cell + AdjacentCell[facing & 7];
 }
 #endif
 

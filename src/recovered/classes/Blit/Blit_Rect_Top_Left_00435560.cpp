@@ -1,8 +1,8 @@
-// TPoint2D Rect::Top_Left() const (0x00435560)
+// RectPoint2D Rect::Top_Left() const (0x00435560)
 // The rectangle's top left corner.
 #include "shared/rect.hpp"
 
-TPoint2D Rect::Top_Left() const
+RectPoint2D Rect::Top_Left() const
 {
-    return TPoint2D(X, Y);
+    return RectPoint2D(X, Y);
 }

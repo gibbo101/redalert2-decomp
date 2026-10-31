@@ -11,8 +11,8 @@
 // @ref ?unknown_rect_839630@@3VRect@@A=00839630
 // @ref ?DirtyAreas@TacticalLists@@2V?$DynamicVectorClass@UDirtyAreaStruct@@@@A=00abe5b0
 // @ref ?Intersect@@YI?AVRect@@ABV1@0PAH1@Z=0041fdf0
-// @ref ??GTPoint2D@@QBE?AU0@ABU0@@Z=0047d040
-// @ref ??0Rect@@QAE@ABUTPoint2D@@HH@Z=00453e40
+// @ref ??GRectPoint2D@@QBE?AU0@ABU0@@Z=0047d040
+// @ref ??0Rect@@QAE@ABURectPoint2D@@HH@Z=00453e40
 // @ref ?unknown_4754b0@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z=004754b0
 // @ref ?unknown_475d60@CellClass@@QBE?AUCoordStruct@@XZ=00475d60
 // @ref ?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z=006a27a0
@@ -20,7 +20,7 @@
 // @ref ?ABufferPtr@@3PAVABuffer@@A=00839c6c
 // @ref ?MainWindow@@3PAUHWND__@@A=00b263d8
 
-// Point quotient by a scalar, zero giving the origin (TibSun TPoint2D::operator/; file-local: as a Point2D
+// Point quotient by a scalar, zero giving the origin (TibSun RectPoint2D::operator/; file-local: as a Point2D
 // member it changes another unit's output). The sum is rect.hpp's Point2D::operator+.
 inline Point2D operator/(Point2D const &point, int value)
 {
@@ -32,15 +32,15 @@ inline Point2D operator/(Point2D const &point, int value)
 
 // The rectangle moved back by a point and its corner (TibSun TRect::operator- and Top_Left, which this unit
 // expands; the other units call their out-of-line copies 0x0047D000 and 0x00435560).
-inline TPoint2D Corner(Rect const &rect)
+inline RectPoint2D Corner(Rect const &rect)
 {
-    TPoint2D point;
+    RectPoint2D point;
     point.Y = rect.Y;
     point.X = rect.X;
     return point;
 }
 
-inline Rect Moved_Back(Rect const &rect, TPoint2D const &point)
+inline Rect Moved_Back(Rect const &rect, RectPoint2D const &point)
 {
     return Rect(Corner(rect) - point, rect.Width, rect.Height);
 }

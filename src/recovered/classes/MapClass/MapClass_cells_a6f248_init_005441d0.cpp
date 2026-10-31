@@ -5,7 +5,7 @@
 // /Ob2 expands the first 288 Cell constructors and calls the kept copy
 // (0x0042AD30) for the rest: the budget of the initializer is proportional
 // to its size, and Cell(int, int) is a charged callee (see shared/coord.hpp).
-// @ref ??0Cell@@QAE@FF@Z=0042ad30
+// @ref ??0Cell@@QAE@HH@Z=0042ad30
 // @ref ?unknown_cells_a6f248@@3PAVCell@@A=00a6f248
 #include "shared/coord.hpp"
 

@@ -5,7 +5,7 @@
 #include "shared/text_print.hpp"
 #include "shared/surface_blit.hpp"
 struct BulletVoxelBounds {
-    TPoint2D offset; // first8, original463B0C/463B10
+    RectPoint2D offset; // first8, original463B0C/463B10
     Rect rectangle; // +08, original463B6C LEA passes this field
 };
 void __fastcall Prepare_Voxel_Lighting_00717050(UnknownPairFirst *voxel, int section, int arg3, Matrix3D const &matrix, Vector3 const &light);
@@ -27,9 +27,9 @@ extern int unknown_flat_voxel_7d11a4;
 // @ref ?unknown_voxel_light_839ab0@@=00839ab0
 // @ref ?unknown_flat_voxel_7d11a4@@=007d11a4
 // @ref ?Select_Blitter_00485AA0@ConvertClass@@=00485aa0
-// @ref ?unknown_blit_49f3a0@@YIXAAVSurface@@PAX0ABVRect@@ABUTPoint2D@@2HHHHHH@Z=0049f3a0
+// @ref ?unknown_blit_49f3a0@@YIXAAVSurface@@PAX0ABVRect@@ABURectPoint2D@@2HHHHHH@Z=0049f3a0
 void BulletClass::Draw_Voxel_00463a00(UnknownObjectPair const &pair, Matrix3D const &matrix,
-                                   TPoint2D const &point, Rect const &window, unsigned frame,
+                                   RectPoint2D const &point, Rect const &window, unsigned frame,
                                    unsigned flags, int brightness)
 {
     UnknownPairFirst *voxel = pair.unknown_00;
@@ -61,4 +61,4 @@ void BulletClass::Draw_Voxel_00463a00(UnknownObjectPair const &pair, Matrix3D co
 }
 
 // Genuine shared point-sum operation; complete emitted copy binds435540.
-TPoint2D TPoint2D::operator+(TPoint2D const &point) const { return TPoint2D(X + point.X, Y + point.Y); }
+RectPoint2D RectPoint2D::operator+(RectPoint2D const &point) const { return RectPoint2D(X + point.X, Y + point.Y); }

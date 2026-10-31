@@ -11,6 +11,19 @@
 // the definition.
 #include "shared/foot.hpp"
 
+// Member-wise sum of two cells as this unit's code compiles it (Foot.CPP; a
+// free sum built through TPoint2D<short>, hypothesis): Search_For_Tiberium_Weighted
+// 0x004CBB40, 0x004C45B0 and slot 93 0x004C7220 order the component loads as
+// this form does, where TPoint2D<short>::operator+ orders them otherwise. The
+// guard is shared with BuildingClass slot 52's unit-local copy.
+#ifndef RA2_CELLSTRUCT_PLUS
+#define RA2_CELLSTRUCT_PLUS
+inline Cell operator+(Cell const &left, Cell const &right)
+{
+    return TPoint2D<short>(short(left.X + right.X), short(left.Y + right.Y));
+}
+#endif
+
 // The unit's list of FootClass objects (0x00865F38; name is a hypothesis).
 DynamicVectorClass<FootClass *> unknown_FootClass_list_00865f38;
 // @ref ??3@YAXPAX@Z=00781d3b

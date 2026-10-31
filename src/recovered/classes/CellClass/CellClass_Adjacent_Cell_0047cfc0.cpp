@@ -6,5 +6,5 @@
 
 Cell __fastcall CellClass::Adjacent_Cell(Cell const &cell, int facing)
 {
-    return cell.unknown_42add0(AdjacentCell[facing & 7]);
+    return cell + AdjacentCell[facing & 7];
 }

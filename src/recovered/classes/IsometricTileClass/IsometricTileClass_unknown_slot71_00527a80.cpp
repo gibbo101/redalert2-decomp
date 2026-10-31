@@ -25,7 +25,7 @@ bool IsometricTileClass::unknown_slot71(int mark)
     }
     for (int row = 0; row < Type->unknown_2b8; row++) {
         for (int column = 0; column < Type->unknown_2b4; column++) {
-            Cell cell = unknown_slot104() + XY_Cell(column, row);
+            Cell cell = XY_Cell(column, row) + unknown_slot104();
             if (!Map.Unknown_0054AAB0(cell)) {
                 continue;
             }

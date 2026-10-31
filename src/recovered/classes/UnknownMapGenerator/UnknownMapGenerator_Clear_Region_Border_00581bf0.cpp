@@ -8,7 +8,7 @@ bool __fastcall Generation_Cell_In_Bounds_0058da10(Cell const &position);
 // @ref ??_7?$DynamicVectorClass@VCell@@@@6B@=0079c5a0
 Cell __fastcall CellClass::Adjacent_Cell(Cell const &cell,int facing)
 {
-    return cell.unknown_42add0(unknown_adjacent_851a70[facing&7]);
+    return cell + unknown_adjacent_851a70[facing&7];
 }
 bool UnknownMapGenerator::Clear_Region_Border_00581bf0(int region,int rings,int newRegion)
 {

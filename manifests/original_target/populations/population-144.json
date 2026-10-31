@@ -4,8 +4,8 @@
     "id": "population-144",
     "inventory_sha256": "22cf9c1cb651477dddd0d509edc376f7d7c65888d902892c9bf0d785ab3b8e04",
     "gaps_sha256": "7e705cc63db92c44cb0a6b50a9491952fe11a2485ff85c7b5b48e84893dd2685",
-    "historical_population_sha256": "3533e69910de07b699af5f278d5cdb4d6826e74a1d6a991e13d5f87ef4043957",
-    "historical_acceptance_sha256": "4c9599426e467432b2b83da99649e2789f5b0e3576d7ecf59fa610d9bf73a435"
+    "historical_population_sha256": "15e94f95a8a5cac72499cc3f974c6115335fbeb8d361b98b8548e9582b05d735",
+    "historical_acceptance_sha256": "e34856d579ed3435877f78c82242e13060b85d0cf97448e6d78d069756f37d80"
   },
   "references": {
     "_unknown_empty_rect": 10950776,
@@ -139,7 +139,7 @@
     "__imp__ShowCursor": 7971788,
     "__imp__ClientToScreen": 7972012,
     "__imp__GetClientRect": 7972024,
-    "?Top_Left@Rect@@QBE?AUTPoint2D@@XZ": 4412768,
+    "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "??0Rect@@QAE@HHHH@Z": 4373712,
     "?unknown_object_839c68@@3PAVUnknownInterface839C68@@A": 8625256,
     "?Unknown_Slot7@VQMovieHandle@@UAEXH@Z": 5904656,
@@ -179,7 +179,7 @@
     "?Process_Mouse@WWMouseClass@@QAEXXZ": 7812096,
     "?Validate_Backgrounds@WWMouseClass@@QAE_NXZ": 7806800,
     "?_Mouse@@3PAVWWMouseClass@@A": 11710300,
-    "?unknown_blit_49f3a0@@YIXAAVSurface@@PAX0ABVRect@@ABUTPoint2D@@2HHHHHH@Z": 4846496,
+    "?unknown_blit_49f3a0@@YIXAAVSurface@@PAX0ABVRect@@ABURectPoint2D@@2HHHHHH@Z": 4846496,
     "?unknown_convert_8323c8@@3PAXA": 8594376,
     "?unknown_flag_a40b30@@3_NA": 10750768,
     "?unknown_flag_b2af58@@3_NA": 11710296,

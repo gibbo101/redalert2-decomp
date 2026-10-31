@@ -19,7 +19,7 @@ AbstractClass *HouseClass::unknown_func_4eb360(CoordStruct const &coord)
 {
     TechnoClass *best = 0;
     int value = 0;
-    Cell center = Coord_Cell(coord);
+    Cell center = coord;
     int count = unknown_cell_count_7a5934;
     for (int index = 0; index < count; index++) {
         TechnoClass *unit = (TechnoClass *)Map[center + unknown_cells_a6f248[index]].Cell_Unit(true);

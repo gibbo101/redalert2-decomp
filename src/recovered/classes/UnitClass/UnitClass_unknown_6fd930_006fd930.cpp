@@ -23,12 +23,12 @@
 // @ref _unknown_geometry_l=00ad04c0
 // @ref _?$S46@?BN@??unknown_6fd930@UnitClass@@QAE_NXZ@4EA=00ad04b8
 // @ref _?offsets@?BN@??unknown_6fd930@UnitClass@@QAE_NXZ@4PAVCell@@A=00ad04e8
-// @ref ?unknown_42add0@Cell@@QBE?AV1@ABV1@@Z=0042add0
+// @ref ??H?$TPoint2D@F@@QBE?BV0@ABV0@@Z=0042add0
 
 // The building origin for a unit cell: one cell north-west.
 static inline Cell Deploy_Origin_6fd930(Cell const &cell)
 {
-    return cell.unknown_42add0(AdjacentCell[7]);
+    return cell + AdjacentCell[7];
 }
 
 // A search offset added to the unit's cell.

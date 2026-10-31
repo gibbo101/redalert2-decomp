@@ -7,7 +7,7 @@ extern wchar_t const counter_text_format_007d61ec[];
 extern char const counter_scheme_007d61e4[];
 ColorScheme *__fastcall unknown_color_scheme_663d30(char const *name,int kind);
 void __fastcall unknown_blit_49f3a0(Surface &dest,void *convert,Surface &source,Rect const &sourcerect,
-    TPoint2D const &destpoint,Rect const &destclip,int unknown1,int unknown2,int unknown3,int unknown4,int unknown5,int unknown6);
+    RectPoint2D const &destpoint,Rect const &destclip,int unknown1,int unknown2,int unknown3,int unknown4,int unknown5,int unknown6);
 // @ref ?counter_current_text_00852a68@@3PAGA=00852a68
 // @ref ?counter_previous_text_00852ab8@@3PAGA=00852ab8
 // @ref ?counter_text_format_007d61ec@@3QBGB=007d61ec
@@ -59,7 +59,7 @@ void __fastcall Draw_Updated_Counter_004a95c0(int current,int previous,Surface *
     Rect area=screen_area;
     area.X-=(unknown_surface_839954->Get_Width()-background->Get_Width())/2;
     area.Y-=(unknown_surface_839954->Get_Height()-background->Get_Height())/2;
-    unknown_blit_49f3a0(*unknown_surface_839954,convert,*background,area,TPoint2D(0,0),screen_area,0,unknown_blit_flags,0,0,1000,0);
+    unknown_blit_49f3a0(*unknown_surface_839954,convert,*background,area,RectPoint2D(0,0),screen_area,0,unknown_blit_flags,0,0,1000,0);
     Fancy_Text_Printf(counter_current_text_00852a68,unknown_surface_839954,
         &unknown_surface_839954->Get_Rect(),&position,
         unknown_color_scheme_663d30(counter_scheme_007d61e4,1),0,style);

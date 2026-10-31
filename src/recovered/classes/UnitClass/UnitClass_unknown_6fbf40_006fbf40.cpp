@@ -6,10 +6,11 @@
 #include "shared/map_view.hpp"
 // @ref ?unknown_5d47d0@ObjectClass@@QAEHXZ=005d47d0
 // The cell next to `cell` toward an 8-way facing (TibSun Adjacent_Cell; here
-// the cell is taken by value, which orders the sum's loads as the original).
+// the cell is taken by value, which orders TPoint2D<short>::operator+'s loads as
+// the original).
 inline Cell Unit_Adjacent_Cell(Cell cell, int facing)
 {
-    return AdjacentCell[facing & 7] + cell;
+    return cell + AdjacentCell[facing & 7];
 }
 
 void UnitClass::unknown_6fbf40()

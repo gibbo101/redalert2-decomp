@@ -21,7 +21,7 @@ extern int unknown_int_839638;
 // @ref ?unknown_drawer_ad0608@@3PAVConvertClass@@A=00ad0608
 // @ref ?unknown_int_839638@@3HA=00839638
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
-// @ref ?unknown_blit_49f3a0@@YIXAAVSurface@@PAX0ABVRect@@ABUTPoint2D@@2HHHHHH@Z=0049f3a0
+// @ref ?unknown_blit_49f3a0@@YIXAAVSurface@@PAX0ABVRect@@ABURectPoint2D@@2HHHHHH@Z=0049f3a0
 SurfaceRegion TechnoClass::Render_Voxel_Object_006d24e0(UnknownObjectPair const &voxel,Matrix3D const &transform,Point2D const &point,Rect const &xcliprect,int frame,unsigned flags,int brightness)
 {
     Matrix3D combined;
@@ -58,7 +58,7 @@ SurfaceRegion TechnoClass::Render_Voxel_Object_006d24e0(UnknownObjectPair const 
     int phase=0;
     if (flags&8) phase=(Fetch_ID()+(int)unknown_1e0)%400;
     Point2D destination=region.Point+point;
-    unknown_blit_49f3a0(*unknown_surface_83995c,converter,*VoxelDrawSystem::Get_Surface(),region.Bounds,TPoint2D(destination.X,destination.Y),cliprect,0,(int)converter->Select_Blitter_00485AA0(flags),unknown_slot176(),unknown_slot177(),brightness,phase);
+    unknown_blit_49f3a0(*unknown_surface_83995c,converter,*VoxelDrawSystem::Get_Surface(),region.Bounds,RectPoint2D(destination.X,destination.Y),cliprect,0,(int)converter->Select_Blitter_00485AA0(flags),unknown_slot176(),unknown_slot177(),brightness,phase);
     return region;
 }
 // @ref ?Precalculate_Light@VoxelDrawSystem@@YIXPAVUnknownPairFirst@@HHABVMatrix3D@@1ABUVector3@@M@Z=007170d0

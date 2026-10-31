@@ -4,8 +4,8 @@
     "id": "population-2320",
     "inventory_sha256": "facea29c57ccac3709083e062b8e13ab8ea54cd43b81162142547de8d59c2b58",
     "gaps_sha256": "8ec163efee32c86b2326103e3c1ee7058c7f8b454f6989c44e38c84c2f512165",
-    "historical_population_sha256": "03ca71a19b0c844ebccd00067739763dea3da7be7e8ed0323106172becd56444",
-    "historical_acceptance_sha256": "7cdb2a916957c57808e42932e5bd92a41583bb516498820647e34a6d3ea6f305"
+    "historical_population_sha256": "f47b8bdd32a1ad369e429e944b45f5885dfabe872d87537c5d30076d4a9e97d6",
+    "historical_acceptance_sha256": "f4076cc1d6c9c6277b49d4620f704d2206d770caf10b384be563add395b77f98"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -1635,7 +1635,7 @@
     "?Clear_Search_Drives@CDFileClass@@SIXXZ": 4653312,
     "?Find_File@CDFileClass@@SI_NPAD@Z": 4653744,
     "?FindHandle@CDFileClass@@2PAXA": 8202196,
-    "??HTPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
     "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z": 4307472,
     "?search_compfunc@ToolTipIndex@@SAHPBX0@Z": 7258912,
     "?Remove@UnknownList832470@@QAEXPAVObjectClass@@@Z": 5497712,
@@ -1987,7 +1987,7 @@
     "?Release@?$TClassFactory@VFoggedObjectClass@@@@UAGKXZ": 6914432,
     "??1MSShapeAnim@@UAE@XZ": 5949216,
     "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
-    "?Top_Left@Rect@@QBE?AUTPoint2D@@XZ": 4412768,
+    "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "??0Rect@@QAE@HHHH@Z": 4373712,
     "?Blit@VQMovieHandle@@UAEXXZ": 5904704,
     "?Blit@BinkMovieHandle@@UAEXXZ": 5905248,
@@ -2108,7 +2108,7 @@
     "?Set_00434820@CoordStruct@@QAEAAU1@HHH@Z": 4409376,
     "_strstr": 7878320,
     "?unknown_47e2b0@Cell@@QAEXXZ": 4711088,
-    "??0Rect@@QAE@ABUTPoint2D@@HH@Z": 4537920,
+    "??0Rect@@QAE@ABURectPoint2D@@HH@Z": 4537920,
     "?Save@FactoryClass@@UAGJPAUIStream@@H@Z": 4955024,
     "?Put@BufferPipe@@UAEHPBXH@Z": 7812912,
     "?Get@BufferStraw@@UAEHPAXH@Z": 7813184,

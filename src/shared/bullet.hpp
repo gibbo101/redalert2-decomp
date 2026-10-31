@@ -206,7 +206,7 @@ public:
     WeaponTypeClass *Get_Weapon_Type();                                 // 0x00463BB0
     bool unknown_func_463970();                                         // 0x00463970
     void unknown_func_463bc0();                                         // 0x00463BC0
-    void Draw_Voxel_00463a00(class UnknownObjectPair const &voxel, class Matrix3D const &matrix, struct TPoint2D const &point, class Rect const &window, unsigned frame, unsigned flags, int brightness); // observed ECX receiver/RET28
+    void Draw_Voxel_00463a00(class UnknownObjectPair const &voxel, class Matrix3D const &matrix, struct RectPoint2D const &point, class Rect const &window, unsigned frame, unsigned flags, int brightness); // observed ECX receiver/RET28
     void unknown_func_463c50();                                         // 0x00463C50 (drops a NukePayload on the target cell)
 
     static DynamicVectorClass<BulletClass *> Array;                     // 0x008502F8

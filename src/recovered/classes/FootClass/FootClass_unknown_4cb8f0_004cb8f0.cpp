@@ -11,7 +11,7 @@
 Cell FootClass::unknown_4cb8f0(int radius, int arg2)
 {
     Cell found = unknown_geometry_k;
-    Cell center = Coord_Cell(Center_Coord());
+    Cell center = Center_Coord();
     if (((UnknownCellClass *)&Map[center])->unknown_ec == 5) {
         return center;
     }

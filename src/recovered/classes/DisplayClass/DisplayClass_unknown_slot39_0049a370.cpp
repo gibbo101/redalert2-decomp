@@ -36,7 +36,7 @@ bool DisplayClass::unknown_slot39(Cell const &cell, HouseClass *house)
         unknown_tactical_83996c->Unknown_006AADD0(&target);
     }
     for (int facing = 0; facing < 8; facing++) {
-        Cell adjacent = AdjacentCell[facing & 7].unknown_42add0(cell);
+        Cell adjacent = AdjacentCell[facing & 7] + cell;
         CellClass &next = (*this)[adjacent];
         if (adjacent == cell || (next.unknown_12c & 0x10)) {
             continue;

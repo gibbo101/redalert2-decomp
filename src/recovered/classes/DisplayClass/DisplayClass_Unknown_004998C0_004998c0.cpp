@@ -13,7 +13,7 @@ void DisplayClass::Unknown_004998C0(Cell const &cell, bool set)
         return;
     }
     Cell const *offset = unknown_1178;
-    while (offset->X != 0x7FFF || offset->Y != 0x7FFF) {
+    while (*offset != Cell(0x7FFF, 0x7FFF)) {
         Cell target = cell + *offset++;
         if (Unknown_0054AAB0(target)) {
             CellClass &target_cell = (*this)[target];

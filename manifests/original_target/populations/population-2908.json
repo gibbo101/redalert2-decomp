@@ -4,8 +4,8 @@
     "id": "population-2908",
     "inventory_sha256": "17110e0c7921d99b5813d4f02827027a2e4269ee0f45a9404bdda3f86ea07df0",
     "gaps_sha256": "35929f4d48709c06f318fa89aafa3e97cfb1de2d8d90c4e6272129ecb4cf5ebc",
-    "historical_population_sha256": "eb414e4926985247b9da27a31388f2c1774ce3e0d7e87aecd5f75c6e71790d9a",
-    "historical_acceptance_sha256": "090bb1f96cfbcb00c177a4f3ba74c234b1b41fa02d07090d81deee459db8d82a"
+    "historical_population_sha256": "24c8bdf923c687d41e0d68ee15b01747b6093fc97f49820460d7866d84516e78",
+    "historical_acceptance_sha256": "147d61a3117258315f4f7766d95f1c0c0d873b079133f09864004bc2bdaf7bfe"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3528,7 +3528,7 @@
     "?Resize@?$VectorClass@UDrawRecord@FoggedObjectClass@@@@UAE_NHPBUDrawRecord@FoggedObjectClass@@@Z": 4989312,
     "?Resize@?$DynamicVectorClass@UDrawRecord@FoggedObjectClass@@@@UAE_NHPBUDrawRecord@FoggedObjectClass@@@Z": 4989744,
     "?unknown_slot33@BuildingTypeClass@@UBEHH@Z": 4557424,
-    "??0Rect@@QAE@ABUTPoint2D@@HH@Z": 4537920,
+    "??0Rect@@QAE@ABURectPoint2D@@HH@Z": 4537920,
     "?unknown_slot27@BuildingClass@@UAEHPBVCell@@_N1@Z": 4471712,
     "?AI@UnitClass@@UAEXXZ": 7319808,
     "?AI@AircraftClass@@UAEXXZ": 4278256,
@@ -3667,7 +3667,7 @@
     "?Resize@?$DynamicVectorClass@PAVReestablish@@@@UAE_NHPBQAVReestablish@@@Z": 4539952,
     "?Read_Scenario_INI@HouseClass@@SIXAAVCCINIClass@@@Z": 5159456,
     "??0HouseClass@@QAE@PAVHouseTypeClass@@@Z": 5118144,
-    "??0Cell@@QAE@FF@Z": 4369712,
+    "??0Cell@@QAE@HH@Z": 4369712,
     "?Resize@?$DynamicVectorClass@UZoneConnectionClass@@@@UAE_NHPBUZoneConnectionClass@@@Z": 5681968,
     "??0ZoneConnectionClass@@QAE@XZ": 5682272,
     "??0IPXAddressClass@@QAE@QAE0G@Z": 5387328,
@@ -3688,7 +3688,7 @@
     "?unknown_slot20@CellClass@@UBE_NXZ": 4700656,
     "?Center_Coord@CellClass@@UBE?AUCoordStruct@@XZ": 4700752,
     "?unknown_slot22@CellClass@@UBE?AUCoordStruct@@XZ": 4700832,
-    "??GRect@@QBE?AV0@ABUTPoint2D@@@Z": 4706304,
+    "??GRect@@QBE?AV0@ABURectPoint2D@@@Z": 4706304,
     "?Clear@BombListClass@@QAEXXZ": 4417296,
     "?Detach@BombListClass@@QAEXPAVAbstractClass@@@Z": 4417360,
     "?Read_Basic@UnknownIDSource@@QAE_NAAVCCINIClass@@@Z": 6691200,

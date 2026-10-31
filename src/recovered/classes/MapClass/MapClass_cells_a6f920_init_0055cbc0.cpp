@@ -2,7 +2,7 @@
 // (0x0055CBC0, expanded into the .CRT$XCU entry): small cell offsets
 // (0 or -1/-2 per axis). Only 7 constructors are expanded; the rest call
 // 0x0042AD30.
-// @ref ??0Cell@@QAE@FF@Z=0042ad30
+// @ref ??0Cell@@QAE@HH@Z=0042ad30
 // @ref ?unknown_cells_a6f920@@3PAVCell@@A=00a6f920
 #include "shared/coord.hpp"
 

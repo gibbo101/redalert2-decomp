@@ -4,8 +4,8 @@
     "id": "population-2835",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "010001bca313ec2ec3f2967b6aaf3c4aed6005e6c416b571efb2c13f6c178437",
-    "historical_acceptance_sha256": "4dcb5312ebba330d70a96b918a00f6de69dd2224beaa3f9723fa0a24105604f2"
+    "historical_population_sha256": "dce24bd43efed50f3e238ab5e7cb66339fe3990f7cc14085254c80c9aa9661cd",
+    "historical_acceptance_sha256": "5188f71d0ef6cb9ce3e436cc3e9e2ebb4035fe2a2664e1899d181b574ae2066e"
   },
   "references": {
     "??8?$VectorClass@PAVColorScheme@@@@UBE_NABV0@@Z": 6311360,
@@ -3734,7 +3734,7 @@
     "?unknown_slot27@InfantryClass@@UAEHPBVCell@@_N1@Z": 5269072,
     "?unknown_47e2b0@Cell@@QAEXXZ": 4711088,
     "?unknown_slot33@BuildingTypeClass@@UBEHH@Z": 4557424,
-    "??0Rect@@QAE@ABUTPoint2D@@HH@Z": 4537920,
+    "??0Rect@@QAE@ABURectPoint2D@@HH@Z": 4537920,
     "?unknown_slot27@BuildingClass@@UAEHPBVCell@@_N1@Z": 4471712,
     "?AI@UnitClass@@UAEXXZ": 7319808,
     "?AI@AircraftClass@@UAEXXZ": 4278256,
@@ -3769,7 +3769,7 @@
     "?Draw_It@SidebarClass@@UAEX_N@Z": 6803328,
     "??0LineTrail@@QAE@XZ": 5477344,
     "?Read_Scenario_INI@HouseClass@@SIXAAVCCINIClass@@@Z": 5159456,
-    "??0Cell@@QAE@FF@Z": 4369712,
+    "??0Cell@@QAE@HH@Z": 4369712,
     "??0ZoneConnectionClass@@QAE@XZ": 5682272,
     "?Draw_It@RadarClass@@UAEX_N@Z": 6485376,
     "?AI@PowerClass@@UAEXAAHABUPoint2D@@@Z": 6409264,
@@ -3784,7 +3784,7 @@
     "?unknown_slot20@CellClass@@UBE_NXZ": 4700656,
     "?Center_Coord@CellClass@@UBE?AUCoordStruct@@XZ": 4700752,
     "?unknown_slot22@CellClass@@UBE?AUCoordStruct@@XZ": 4700832,
-    "??GRect@@QBE?AV0@ABUTPoint2D@@@Z": 4706304,
+    "??GRect@@QBE?AV0@ABURectPoint2D@@@Z": 4706304,
     "?Detach@BombListClass@@QAEXPAVAbstractClass@@@Z": 4417360,
     "?Read_Basic@UnknownIDSource@@QAE_NAAVCCINIClass@@@Z": 6691200,
     "?Loading_Progress_00672160@UnknownSessionState@@QAEXH@Z": 6758752,

@@ -2,7 +2,7 @@
 // (0x00546190, a jump to the construction at 0x005461A0): the companion
 // spread table (read by MapClass 0x00549C50 and 0x0054A110). The first 241
 // constructors are expanded, the rest call 0x0042AD30 (same 78% budget).
-// @ref ??0Cell@@QAE@FF@Z=0042ad30
+// @ref ??0Cell@@QAE@HH@Z=0042ad30
 // @ref ?unknown_cells_a6ed18@@3PAVCell@@A=00a6ed18
 #include "shared/coord.hpp"
 

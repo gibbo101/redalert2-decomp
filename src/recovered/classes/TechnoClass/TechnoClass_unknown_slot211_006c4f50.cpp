@@ -15,7 +15,7 @@ bool TechnoClass::unknown_slot211(ObjectClass *target)
             range -= warhead->CellInset;
             Cell here = Coord_Cell(Center_Coord());
             Cell there = Coord_Cell(target->Center_Coord());
-            Cell delta(here.X - there.X, here.Y - there.Y);
+            Cell delta = here - there;
             if ((short)Short_Length(delta.X, delta.Y) <= range) {
                 return true;
             }

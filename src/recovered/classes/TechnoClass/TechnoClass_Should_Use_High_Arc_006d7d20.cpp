@@ -21,7 +21,7 @@ bool TechnoClass::unknown_6d7d20(int weapon)
             // CoordStruct's first two signed32-bit fields are the XY point
             // prefix (reference Coord inherits the point); this storage view
             // keeps the existing shared Point2D constructor/API unchanged.
-            if((Point2D(reinterpret_cast<TPoint2D const &>(static_cast<CoordStruct const &>(Position_Coord_004f3f40())))-Point2D(reinterpret_cast<TPoint2D const &>(static_cast<CoordStruct const &>(unknown_228->Center_Coord())))).Length()<height) high_arc=true;
+            if((Point2D(reinterpret_cast<RectPoint2D const &>(static_cast<CoordStruct const &>(Position_Coord_004f3f40())))-Point2D(reinterpret_cast<RectPoint2D const &>(static_cast<CoordStruct const &>(unknown_228->Center_Coord())))).Length()<height) high_arc=true;
         }
     }
     return high_arc;

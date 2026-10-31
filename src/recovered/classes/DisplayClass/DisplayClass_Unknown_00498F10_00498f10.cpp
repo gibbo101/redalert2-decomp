@@ -12,7 +12,7 @@
 void DisplayClass::Unknown_00498F10(Cell const *list)
 {
     if (unknown_1178) {
-        Unknown_004998C0(unknown_1174 + unknown_1170, false);
+        Unknown_004998C0(unknown_1170 + unknown_1174, false);
     }
     unknown_1174 = unknown_cell_852610;
 
@@ -22,11 +22,9 @@ void DisplayClass::Unknown_00498F10(Cell const *list)
         memcpy(_list, list, sizeof(_list));
         unknown_1178 = _list;
         Cell size = Unknown_00499810(unknown_1178);
-        size.X--;
-        size.Y--;
-        size = Cell(-size.X, -size.Y);
-        unknown_1174 = Cell(size.X / 2, size.Y / 2);
-        Unknown_004998C0(unknown_1174 + unknown_1170, true);
+        size -= Cell(1, 1);
+        unknown_1174 = -size / 2;
+        Unknown_004998C0(unknown_1170 + unknown_1174, true);
     } else {
         unknown_1178 = 0;
     }

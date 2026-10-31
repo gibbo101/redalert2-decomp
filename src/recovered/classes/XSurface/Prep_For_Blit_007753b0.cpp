@@ -8,8 +8,8 @@
 // source cannot be locked.
 #include "shared/surface.hpp"
 // @ref ?Clip_Blit_Rects@@YI_NAAVRect@@ABV1@01@Z=00775190
-// @ref ??HTPoint2D@@QBE?AU0@ABU0@@Z=00435540
-// @ref ?Top_Left@Rect@@QBE?AUTPoint2D@@XZ=00435560
+// @ref ??HRectPoint2D@@QBE?AU0@ABU0@@Z=00435540
+// @ref ?Top_Left@Rect@@QBE?AURectPoint2D@@XZ=00435560
 
 bool __fastcall Prep_For_Blit(Surface &dest, Rect const &dcliprect, Rect &drect, Surface &source,
                               Rect const &scliprect, Rect &srect, bool &overlapped, void *&dbuffer,

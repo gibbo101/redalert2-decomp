@@ -61,7 +61,7 @@ void FootClass::unknown_slot93(int why)
 
         if (unknown_1b8 == 2) {
             for (int face = 0; face < 8; face++) {
-                Cell cell = Adjacent_Cell(unknown_slot104(), face);
+                Cell cell = AdjacentCell[face & 7] + unknown_slot104();
 
                 if (Map.Unknown_0055A660(cell, true)) {
                     TechnoClass *techno = ((UnknownCellClass *)&Map[cell])->Unknown_00471660(Point2D(0, 0), 0, 0);
@@ -169,7 +169,7 @@ void FootClass::unknown_slot93(int why)
             if (Map.unknown_11b8 == &next->Coord) {
                 wp_cell = Coord_Cell(Map.unknown_11bc);
             }
-            if (wp_cell + unknown_41c != unknown_420) {
+            if (unknown_41c + wp_cell != unknown_420) {
                 unknown_4cb110(next);
             }
         } else {

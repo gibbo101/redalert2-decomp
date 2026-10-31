@@ -4,8 +4,8 @@
     "id": "population-3367",
     "inventory_sha256": "c3ce9331365ee5f73b6711db761ce49f1439f2edd39f425adb886097ac18b976",
     "gaps_sha256": "edfdd8306d12f5f2e0a099cda5caaaf2f7374942dd9c362e423886e776723704",
-    "historical_population_sha256": "2aaa2ee18ebf5eb87f704ef4cbe4896c4688eff9e548070902f0a7c263be92fe",
-    "historical_acceptance_sha256": "47ea1af4854bdfd490cfd081d46abc5ec8f626362e577b2aa060062a7319e768"
+    "historical_population_sha256": "7b44ead50283b8b6ebce29f6b2d3936908c98fa15fab6686f61a67406aa94230",
+    "historical_acceptance_sha256": "07f32cf3f488946da63d8209af3587bee4504a35551f842cd92dbb01500fd23e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1017,8 +1017,8 @@
     "?Prep_For_Blit@@YI_NAAVSurface@@AAVRect@@01AA_NAAPAX3@Z": 7820128,
     "?Prep_For_Blit@@YI_NAAVSurface@@ABVRect@@AAV2@012AA_NAAPAX4@Z": 7820208,
     "?Lock@DSurface@@UAEPAXUPoint2D@@@Z": 4893824,
-    "??HTPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
-    "?Top_Left@Rect@@QBE?AUTPoint2D@@XZ": 4412768,
+    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "__DAT_00ab6ea8": 11234984,
     "__DAT_00ab6eb0": 11234992,
     "__DAT_00ac0168": 11272552,
@@ -1242,7 +1242,7 @@
     "?Resize@?$DynamicVectorClass@UDrawRecord@FoggedObjectClass@@@@UAE_NHPBUDrawRecord@FoggedObjectClass@@@Z": 4989744,
     "__real@8@4001c000000000000000": 8007584,
     "__real@8@3ffefae147ae147ae000": 8056480,
-    "??0Rect@@QAE@ABUTPoint2D@@HH@Z": 4537920,
+    "??0Rect@@QAE@ABURectPoint2D@@HH@Z": 4537920,
     "__real@8@bffcc90fdaa22168c000": 7983248,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "??KCoordStruct@@QBE?AU0@H@Z": 7182192,
@@ -1333,7 +1333,7 @@
     "?Resize@?$DynamicVectorClass@PAVReestablish@@@@UAE_NHPBQAVReestablish@@@Z": 4539952,
     "__real@4@3ff8a3d70a0000000000": 8048608,
     "?Name@ThemeClass@@QBEPBDH@Z": 7243120,
-    "??0Cell@@QAE@FF@Z": 4369712,
+    "??0Cell@@QAE@HH@Z": 4369712,
     "?Resize@?$DynamicVectorClass@UZoneConnectionClass@@@@UAE_NHPBUZoneConnectionClass@@@Z": 5681968,
     "??0ZoneConnectionClass@@QAE@XZ": 5682272,
     "__real@8@4006f000000000000000": 8007512,
@@ -1351,8 +1351,8 @@
     "??_7CellClass@@6BINoticeSink@@@": 7985888,
     "??_7CellClass@@6BINoticeSource@@@": 7985880,
     "?Center_Coord@CellClass@@UBE?AUCoordStruct@@XZ": 4700752,
-    "??GRect@@QBE?AV0@ABUTPoint2D@@@Z": 4706304,
-    "??GTPoint2D@@QBE?AU0@ABU0@@Z": 4706368,
+    "??GRect@@QBE?AV0@ABURectPoint2D@@@Z": 4706304,
+    "??GRectPoint2D@@QBE?AU0@ABU0@@Z": 4706368,
     "__real@8@3feea7c5ac471b478800": 7980320,
     "??0Tactical@@QAE@XZ": 6956208,
     "__real@8@3ff7a3d70a3d70a3d800": 7983472,
@@ -1420,7 +1420,7 @@
     "??0FoggedObjectClass@@QAE@PAVBuildingClass@@_N@Z": 4982384,
     "__real@8@3ffb8637bd05af6c6800": 8017384,
     "__real@8@3ff99da7b584ce88b000": 8054264,
-    "?unknown_42add0@Cell@@QBE?AV1@ABV1@@Z": 4369872,
+    "??H?$TPoint2D@F@@QBE?BV0@ABV0@@Z": 4369872,
     "??0Map@WorldDominationTour@@QAE@HHH@Z": 7508784,
     "??_7Map@WorldDominationTour@@6B@": 8057324,
     "??0MSPrintAnim@@QAE@ABVWideString@@HHPAVMSFont@@ABVRect@@IH_N3@Z": 5957312,
@@ -12153,7 +12153,11 @@
     "?unknown_gas_cloud_system_a40d20@@3PAVParticleSystemClass@@A": 10751264,
     "??_7exception@@6B@": 8067116,
     "??_Eexception@@": 7909647,
-    "??_Gexception@@": 7909647
+    "??_Gexception@@": 7909647,
+    "?Reset@VoxelDrawSystem@@YAXXZ": 7434704,
+    "?Render@VoxelDrawSystem@@YI?AUSurfaceRegion@@XZ": 7436512,
+    "??0Surface@@QAE@HH@Z": 4844944,
+    "?RLEBlitter_From_Flags_00485d60@ConvertClass@@QBEPBVRLEBlitter@@I@Z": 4742496
   },
   "regions": [
     {
@@ -26059,7 +26063,7 @@
         {
           "offset": 511,
           "kind": 20,
-          "symbol": "??0Rect@@QAE@ABUTPoint2D@@HH@Z",
+          "symbol": "??0Rect@@QAE@ABURectPoint2D@@HH@Z",
           "target": 4537920,
           "addend": 0,
           "resolved": 86173
@@ -26145,7 +26149,7 @@
           "resolved": 1111834
         }
       ],
-      "source_sha256": "d5e749ee8d068cb099d2398c65a5d5a0be3f641eac9fc7c9beb86748305c2f36",
+      "source_sha256": "987da9bc3f39ca9bd4ea642d2d71900e3d0203309fb788aefee9f09ebb752602",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Leave_Rubble_0043eba0.cpp",
       "population": "population-3367",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",

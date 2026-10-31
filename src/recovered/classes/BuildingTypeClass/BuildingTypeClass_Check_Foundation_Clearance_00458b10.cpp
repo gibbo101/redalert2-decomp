@@ -36,10 +36,8 @@ int BuildingTypeClass::unknown_458b10(Cell const &origin,HouseClass *house) cons
  Cell const *offset;
  if(origin==unknown_geometry_k)goto no_placement;
  offset=unknown_slot36(1);
- while(true) {
-  if(offset->X==0x7fff && offset->Y==0x7fff)break;
-  Cell cell;
-  cell=origin+*offset++;
+ while(*offset!=Cell(0x7fff,0x7fff)) {
+  Cell cell=origin+*offset++;
   if(!Map.Unknown_0054AAB0(cell))continue;
   CellClass &map_cell=Map[cell];
   if(map_cell.OverlayIndex!=-1) {

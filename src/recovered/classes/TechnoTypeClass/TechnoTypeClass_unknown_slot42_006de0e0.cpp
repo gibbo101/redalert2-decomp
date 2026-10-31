@@ -24,14 +24,14 @@ struct UnknownBuildingTypeBF0View {
 
 bool TechnoTypeClass::unknown_slot42(Cell const &cell, HouseClass *house) const
 {
-    if (cell.X == unknown_cell_ac01e8.X && cell.Y == unknown_cell_ac01e8.Y) {
+    if (cell == unknown_cell_ac01e8) {
         return false;
     }
     Cell const *offset = unknown_slot36(1);
     bool building = Kind_Of() == 7;
     bool blocked = false;
     bool open = false;
-    while (offset && (offset->X != 0x7FFF || offset->Y != 0x7FFF)) {
+    while (offset && *offset != Cell(0x7FFF, 0x7FFF)) {
         Cell place = cell + *offset++;
         if (building) {
             if (!((UnknownPlacementCellView &)Map[place]).Unknown_004718B0(SpeedType, this, house)) {

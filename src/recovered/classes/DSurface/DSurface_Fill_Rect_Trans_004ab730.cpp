@@ -7,7 +7,7 @@
 #include "shared/dsurface.hpp"
 #include "shared/hicolor.hpp"
 #include "shared/rgb_class.hpp"
-// @ref ?Top_Left@Rect@@QBE?AUTPoint2D@@XZ=00435560
+// @ref ?Top_Left@Rect@@QBE?AURectPoint2D@@XZ=00435560
 // @ref ?Intersect@@YI?AVRect@@ABV1@0PAH1@Z=0041fdf0
 
 bool DSurface::Fill_Rect_Trans(Rect const &rect, RGBClass const &color, unsigned int percent)

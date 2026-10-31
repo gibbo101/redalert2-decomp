@@ -30,7 +30,7 @@ void MapRegionClass::Place_Neutral_Tech_Building_00576cd0()
         Cell const *list=building->Type->unknown_slot36(1);
         bool clear=true;
         while(list->X!=0x7fff || list->Y!=0x7fff) {
-            Cell next=position.unknown_42add0(*list);
+            Cell next=position + *list;
             CellClass *cell=&Map[next];
             if(cell->OccupierPtr!=0 || !cell->unknown_47b590() || cell->unknown_11b!=height || cell->unknown_ec==3 || !Map.Unknown_0055A740(cell,true) || !seed_0056dac0::FUN_0056dac0((short *)&cell->MapCoords))clear=false;
             ++list;

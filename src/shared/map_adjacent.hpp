@@ -8,8 +8,9 @@
 #include "shared/coord.hpp"
 #include "shared/adjacent_cell.hpp"
 
-// The cell next to `cell` toward an 8-way facing (the cell is the left operand:
-// Set_Bridge_Middle_State 0x005510A0 loads the offset first).
+// The cell next to `cell` toward an 8-way facing (TibSun Adjacent_Cell: the cell
+// is the left operand of TPoint2D<short>::operator+; the train bridge twins
+// 0x00551470.. call its out-of-line copy 0x0042ADD0 that way).
 #ifndef RA2_ADJACENT_CELL
 #define RA2_ADJACENT_CELL
 inline Cell Adjacent_Cell(Cell const &cell, int facing)

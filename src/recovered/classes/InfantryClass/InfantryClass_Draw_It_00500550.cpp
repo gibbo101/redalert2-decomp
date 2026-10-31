@@ -46,7 +46,7 @@ void InfantryClass::unknown_slot67(int point_arg,int window_arg)
             // COM returns a separate two-int point layout. The existing interface
             // spells that result Point2D; this storage view preserves its ABI and
             // applies the evidenced converting constructor without retyping it.
-            Point2D shadow=input+Point2D(*reinterpret_cast<TPoint2D const *>(&Locomotor.Checked()->Shadow_Point()));
+            Point2D shadow=input+Point2D(*reinterpret_cast<RectPoint2D const *>(&Locomotor.Checked()->Shadow_Point()));
             CC_Draw_Shape(unknown_surface_83995c,unknown_infantry_drawer_008323c4,shape,
                 Locomotor.Checked()->Drawing_Code(),shadow,window,0x2e01,0,unknown_slot176()-2,0,1000,0,0,Point2D(0,0));
             Map[cell];

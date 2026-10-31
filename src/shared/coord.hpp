@@ -5,6 +5,8 @@
 #ifndef RA2_SHARED_COORD_HPP
 #define RA2_SHARED_COORD_HPP
 
+#include "shared/point.hpp"
+
 struct INIPoint3D;
 
 struct CoordStruct {
@@ -104,7 +106,11 @@ struct UnknownCoord434820 : CoordStruct {
     UnknownCoord434820(CoordStruct const &coord) { X=coord.X; Y=coord.Y; Z=coord.Z; }
 };
 
-class Cell {
+// Westwood's Cell is TibSun's `Cell : TPoint2D<short>` (coord.h): the
+// arithmetic is TPoint2D<short>'s member operators (shared/point.hpp), whose
+// TPoint2D<short> results convert back through Cell(BASECLASS const &).
+class Cell : public TPoint2D<short> {
+    typedef TPoint2D<short> BASECLASS;
 public:
     int Not_Equal_0058db50(Cell const &other) const; //fullEAX0/1,thiscall/RET4
     // Original full-EAX comparison at004FEF20; thiscall/RET4.
@@ -113,25 +119,19 @@ public:
     Cell() {}
     // Original inline conversion, signed division toward zero; source name hypothesis.
     Cell(CoordStruct const &coord) { *this=Cell(coord.X/256,coord.Y/256); }
-    // Stores the coordinates through Set. 0x0042AD30 is the out-of-line copy
-    // (two word stores, returns this). The discarded reference Set returns
-    // makes the constructor one IL node larger than two plain stores, so /Ob2
-    // charges each expansion against the caller's budget instead of expanding
-    // it for free: the Map spread tables (0x005441E0 288 of 369, 0x005461A0
-    // 241 of 309, 0x0055B520 8 of 40, 0x0055CBC0 7 of 42) and
+    // TibSun's int constructor. 0x0042AD30 is the out-of-line copy (two word
+    // stores, returns this). The int-to-short conversions make it 41-42 IL
+    // units, just over the free line, so /Ob2 charges each expansion against
+    // the caller's budget: the Map spread tables (0x005441E0 288 of 369,
+    // 0x005461A0 241 of 309, 0x0055B520 8 of 40, 0x0055CBC0 7 of 42) and
     // DynamicVectorClass<ZoneConnectionClass>::Resize (0x0056B330, To out of
-    // line) run out exactly as the original does (Study37, Screen40). The
-    // parameters are short like the members: with int parameters FootClass
-    // 0x004CB8F0 loads one operand in the other order (TechFoot39).
-    Cell(short x, short y) { Set(x, y); }
+    // line) run out exactly as the original does (Study37, Screen40,
+    // InlineLab398).
+    Cell(int x, int y) : BASECLASS(x, y) {}
+    // A TPoint2D<short> result (a sum or difference) taken as a cell.
+    Cell(BASECLASS const &pt) : BASECLASS(pt) {}
     Cell &Set(short x, short y) { X = x; Y = y; return *this; }
-    // A member-wise sum whose out-of-line copy is 0x0042ADD0 (thiscall; the
-    // free operator+ below expands the same sum). UnitClass 0x006FD930 calls it
-    // out of line once its inline budget is spent. Name is a hypothesis.
-    Cell unknown_42add0(Cell const &right) const { return Cell(X + right.X, Y + right.Y); }
     bool Unknown_00493C80();   // 0x00493C80 (removes the cell's crate overlay and redraws it; CrateClass)
-    short X;
-    short Y;
 };
 
 // The coordinate X, Y, Z (Westwood's XYZ_Coord; hypothesis). Its arguments are a
@@ -179,24 +179,5 @@ inline bool operator==(Cell const &a, Cell const &b) { return a.X == b.X && a.Y 
 inline bool operator!=(Cell const &a, Cell const &b) { return !(a == b); }
 #endif
 
-// Member-wise sum of two cells (formerly one guarded copy each in
-// shared/cell.hpp, shared/display.hpp, shared/foot.hpp and shared/terrain.hpp).
-#ifndef RA2_CELLSTRUCT_PLUS
-#define RA2_CELLSTRUCT_PLUS
-inline Cell operator+(Cell const &left, Cell const &right)
-{
-    return Cell(left.X + right.X, left.Y + right.Y);
-}
-#endif
-
-// Member-wise difference of two cells (Create_Units 0x00660320: the X and Y
-// differences are computed together, Y first, as a constructor's arguments).
-#ifndef RA2_CELLSTRUCT_MINUS
-#define RA2_CELLSTRUCT_MINUS
-inline Cell operator-(Cell const &left, Cell const &right)
-{
-    return Cell(left.X - right.X, left.Y - right.Y);
-}
-#endif
 
 #endif

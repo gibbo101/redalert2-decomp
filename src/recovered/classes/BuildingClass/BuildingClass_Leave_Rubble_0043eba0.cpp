@@ -6,7 +6,7 @@
 #include "shared/tactical.hpp"
 extern Rect unknown_rect_839630; // existing declaration in shared/display.hpp
 // @ref ?unknown_rect_839630@@3VRect@@A=00839630
-// @ref ??0Rect@@QAE@ABUTPoint2D@@HH@Z=00453e40
+// @ref ??0Rect@@QAE@ABURectPoint2D@@HH@Z=00453e40
 static inline bool Is_List_End(Cell const *offset);
 void BuildingClass::Leave_Rubble_0043eba0()
 {
@@ -31,7 +31,7 @@ void BuildingClass::Leave_Rubble_0043eba0()
         Rect area = Union(base.unknown_474eb0(), base.unknown_475100());
         Point2D view_origin(unknown_rect_839630.X, unknown_rect_839630.Y);
         Point2D translated(area.X - view_origin.X, area.Y - view_origin.Y);
-        unknown_tactical_83996c->Register_Dirty_Area(Rect(TPoint2D(translated.X, translated.Y), area.Width, area.Height), 0);
+        unknown_tactical_83996c->Register_Dirty_Area(Rect(RectPoint2D(translated.X, translated.Y), area.Width, area.Height), 0);
         unknown_tactical_83996c->Unknown_006AADD0(&Map[origin]);
     }
     if (Type->CrateBeneath) {

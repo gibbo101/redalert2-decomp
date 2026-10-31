@@ -3,6 +3,14 @@
 // (the inverse of 0x0055AD70; TibSun Local_Sector_Index_To_Cell).
 #include "shared/map.hpp"
 
+// The sector's cell offset as a cell (a one-line inline builder; name and form
+// are hypotheses: the extra inline level over a bare Cell(x, y) gives the
+// original's frame slots for the two TPoint2D<short>::operator+ operands).
+inline Cell Sector_Offset_Cell(int x, int y)
+{
+    return Cell(x, y);
+}
+
 Cell MapClass::Local_Sector_Index_To_Cell(int index)
 {
     int wrem = (2 * MapLocalSize.Width - 1) % 3;
@@ -23,5 +31,5 @@ Cell MapClass::Local_Sector_Index_To_Cell(int index)
 
     int cx = (bottom + right) / 2;
     int cy = (top - left) / 2;
-    return Cell(cx, cy) + Cell(x, y);
+    return Sector_Offset_Cell(cx, cy) + Cell(x, y);
 }

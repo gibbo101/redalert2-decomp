@@ -31,7 +31,7 @@ void UnknownMapGenerator::Generate_Rural_Units_00589f00(Cell const &origin)
         bool wasPlaced=false;
         while(!wasPlaced) {
             if(attempts>=60)break;
-            Cell position=origin.unknown_42add0(Cell(Map_Random_Range_005797a0(0,16)-8,Map_Random_Range_005797a0(0,16)-8));
+            Cell position=origin + Cell(Map_Random_Range_005797a0(0,16)-8,Map_Random_Range_005797a0(0,16)-8);
             if(Map.Unknown_0055A660(position,true) && Map[position].OccupierPtr==0) {
                 if(unit->unknown_slot53(&CoordStruct(position.X*256+128,position.Y*256+128,0),Map_Random_Range_005797a0(0,7)*32)) {
                     int strength=unit->unknown_slot32()->MaxStrength;

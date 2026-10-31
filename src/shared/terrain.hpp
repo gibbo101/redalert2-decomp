@@ -29,13 +29,13 @@ extern "C" GUID const CLSID_TerrainClass;       // 0x007A1CB0
 // The cell offsets of the eight facings (0x00851A70; Westwood's AdjacentCell)
 // and the cell next to one toward a facing (the guard is shared with
 // shared/display.hpp, shared/infantry.hpp and shared/aircraft.hpp; the cell
-// sum is shared/coord.hpp's).
+// sum is TPoint2D<short>::operator+, shared/point.hpp).
 #ifndef RA2_ADJACENT_CELL
 #define RA2_ADJACENT_CELL
 #include "shared/adjacent_cell.hpp"
 inline Cell Adjacent_Cell(Cell const &cell, int facing)
 {
-    return AdjacentCell[facing & 7] + cell;
+    return cell + AdjacentCell[facing & 7];
 }
 #endif
 

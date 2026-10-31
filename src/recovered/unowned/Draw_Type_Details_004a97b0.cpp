@@ -12,7 +12,7 @@ extern char const type_green_scheme_007d61fc[];
 extern char const type_red_scheme_007d61f8[];
 ColorScheme *__fastcall unknown_color_scheme_663d30(char const *name,int kind);
 void __fastcall unknown_blit_49f3a0(Surface &dest,void *convert,Surface &source,Rect const &sourcerect,
-    TPoint2D const &destpoint,Rect const &destclip,int unknown1,int unknown2,int unknown3,int unknown4,int unknown5,int unknown6);
+    RectPoint2D const &destpoint,Rect const &destclip,int unknown1,int unknown2,int unknown3,int unknown4,int unknown5,int unknown6);
 // @ref ?type_name_format_007d627c@@=007d627c
 // @ref ?type_cost_format_007d6268@@=007d6268
 // @ref ?type_cost_unavailable_007d6254@@=007d6254
@@ -28,20 +28,20 @@ void __fastcall unknown_blit_49f3a0(Surface &dest,void *convert,Surface &source,
 // @ref ?unknown_blit_49f3a0@@=0049f3a0
 // @ref ?Get_Weapon@TechnoTypeClass@@=006df5c0
 // @ref ?Select_Blitter_00485AA0@ConvertClass@@=00485aa0
-// @ref ??0Rect@@QAE@ABUTPoint2D@@HH@Z=00453e40
-// @ref ??HTPoint2D@@=00435540
+// @ref ??0Rect@@QAE@ABURectPoint2D@@HH@Z=00453e40
+// @ref ??HRectPoint2D@@=00435540
 // @ref _swprintf=00783764
 void __fastcall Draw_Type_Details_004a97b0(Surface *background, ConvertClass *converter,
     TechnoTypeClass *type, bool show_cost)
 {
-    TPoint2D offset;
+    RectPoint2D offset;
     {
     Rect source_area = Rect(450,300,190,80);
-    offset = TPoint2D((unknown_surface_839954->Get_Width()-background->Get_Width())/2,
+    offset = RectPoint2D((unknown_surface_839954->Get_Width()-background->Get_Width())/2,
                    (unknown_surface_839954->Get_Height()-background->Get_Height())/2);
-    TPoint2D top_left = TPoint2D(450,300);
+    RectPoint2D top_left = RectPoint2D(450,300);
     Rect clip = Rect(top_left+offset,190,80);
-    TPoint2D zero(0,0);
+    RectPoint2D zero(0,0);
     // Preserve the existing unresolved blit prototype's 32-bit payload spelling.
     unknown_blit_49f3a0(*unknown_surface_839954,converter,*background,source_area,
         zero,clip,0,reinterpret_cast<int>(converter->Select_Blitter_00485AA0(0)),0,0,1000,0);

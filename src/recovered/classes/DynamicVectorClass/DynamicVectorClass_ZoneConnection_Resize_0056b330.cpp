@@ -3,7 +3,7 @@
 // element constructor's Cell members expand through the charged Cell
 // constructor, whose budget runs out at To (0x0042AD30 out of line).
 // @ref ??_H@YGXPAXIHP6EX0@Z@Z=0040aed0
-// @ref ??0Cell@@QAE@FF@Z=0042ad30
+// @ref ??0Cell@@QAE@HH@Z=0042ad30
 // @ref ??0ZoneConnectionClass@@QAE@XZ=0056b460
 #define VECTOR_IMPLEMENT_DYNAMIC_RESIZE
 #include "shared/vector_class.hpp"
