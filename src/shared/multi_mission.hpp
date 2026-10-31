@@ -32,6 +32,9 @@ public:
     int Unknown_00671F90();
     // Whether the text at +0x58 is a fixed string (0x006720C0).
     bool Unknown_006720C0();
+    // Copies a description (at most 43 characters; null: MSG:NoDescription) into Description (0x00671FA0;
+    // accepted as UnknownDescribed_00671FA0::unknown_set_description, bound by @ref; Make_Random_Map 0x005C84E0).
+    void Set_Description_00671FA0(unsigned short const *text);
     // Copies the file name (null: "No File Name") into +0x58 (0x00671FF0; Red Alert's Set_Filename).
     void Set_Filename(char const *filename);
     // Copies the digest (null: "No Digest") into +0x15C (0x00672050; Red Alert's Set_Digest).
