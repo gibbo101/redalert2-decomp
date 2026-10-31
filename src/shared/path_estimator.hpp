@@ -93,6 +93,7 @@ struct UnknownPathType {
 // Layout from the constructor 0x00427FB0 and the destructor 0x004281E0
 // (size not established beyond +0xBC).
 struct UnknownPathEstimator {
+    void Apply_Path_Collision_Avoidance_004285d0(FootClass *foot);
     // Runs hierarchical and regular searches, retrying blocked corridors (0x0042A1D0).
     UnknownPathType *Find_Path_0042a1d0(Cell const &from, Cell const &to, FootClass *foot, int *moves, int max_loops, int zone, int avoidance);
     // Searches the cells within the selected corridor (0x00427370).
