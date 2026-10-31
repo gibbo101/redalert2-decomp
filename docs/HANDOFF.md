@@ -1,9 +1,30 @@
 # Handoff — original-target decompilation
 
-Current state only (2026-10-28). Numbers: [STATUS.md](STATUS.md). Workflow:
+Current state only (2026-10-30 night). Numbers: [STATUS.md](STATUS.md). Workflow:
 [process](ORIGINAL_TARGET_PROCESS.md). Commands: [build](ORIGINAL_TARGET_BUILD.md). Matching rules:
 [VC6 notes](VC6_MATCHING_NOTES.md). Open misses and debt: [OPEN_MISSES.md](OPEN_MISSES.md).
 Earlier owner periods are in [history/](history/).
+
+## Account switch (2026-10-30 night): start here
+
+The Claude owner stopped at 94% weekly usage; the user switches the app to a second Claude account and integration
+resumes from this file. State at the switch:
+- Mac lanes: none running (results in "Pass 6 notes" below and OPEN_MISSES bottom entries). Do not start lanes until
+  the queue below is landed (user, via review session).
+- Landing queue: `private/tools/landing-queue.txt` (8 rounds: Radar334 r2, codex3 r195 (combined plan with r194's
+  row), codex2 r2771-r2774, codex3 r196 rename, codex1 r380 rename). Run
+  `private/tools/runq.sh private/tools/landing-queue.txt` in the background (Integration loop step 0). Radar334 r1
+  was landing when this owner stopped: check `git log` first; if it is not there, put its line
+  (`P build/class-work/Radar334/d/r1 radar334-r1-radar.json RadarClass (Radar334 r1)`) back at the top.
+- Held: `private/tools/landing-queue-held.txt` (Init328 r1, OwnrDraw326 r2, OwnrDraw330 r1, ~6.3 KB). Each passes
+  acceptance but the full build then refuses codex1's map-generator rows 0x587CF0/0x589AC0 ("DIR32 not at original
+  operand boundary", unknown_map_random_a705c0); codex1 was asked (messages/owner-to-codex1-2026-10-30-dir32.md).
+  Fix that first, then land the held list.
+- Windows: codex1 map generation, codex2 wonline.cpp, codex3 InfantryClass (r195 Take_Damage queued), codex4 moved
+  to TeamClass (House.CPP parked). New packets carry landing.txt (WORKER.md); append their lines to the queue.
+- Open owner decisions are the "OWNER DECISION" and "needs" lines at the bottom of OPEN_MISSES.md (coord.hpp
+  out-of-line CoordStruct ctor/Length, Aircraft Fire_At direction type, RadarClass +0x1244 Rect, Veinhole
+  map_view.hpp declaration).
 
 ## Owner, lanes and pacing
 
@@ -18,7 +39,7 @@ file, BOARD.md on Windows and git. Usage rules (2026-10-28 review, Pro plan):
 - Near misses in a unit belong to whoever holds the unit (BOARD.md); Windows workers hold units like Mac lanes.
 - Opus for class lanes with recovered layouts; Sonnet for mechanical loops.
 - Lanes hand back at about 200 tool calls or 200K context, whichever first; the owner continues the unit in a
-  fresh lane from NOTES. Mac lanes restarted 2026-10-30 evening until 95% weekly usage (see Pass 6 notes line); the owner also lands Windows deliveries (a Monitor on deliveries/ wakes it; re-arm every 30 min), keeps assignments/BOARD current and steers codex1-4; no new Mac lanes; when the Claude week runs out, hand over to the
+  fresh lane from NOTES. Mac lanes ran 2026-10-30 evening and stopped at 94% weekly usage (see "Account switch" above); the owner lands Windows deliveries (a Monitor on deliveries/ wakes it; re-arm every 30 min), keeps assignments/BOARD current and steers codex1-4; no new Mac lanes; when the Claude week runs out, hand over to the
   Codex standby owner (commit, HANDOFF refresh, board message, one owner at a time).
 
 Ghidra pass 6 trial (2026-10-30, review-session request): build/pass6-trial/REPORT.md. ApplyKnowledge.java (tracked, landed in f2f511a3 with codex2 r2753) applied 9,190 accepted signatures and flat HouseClass/BuildingClass layouts to a pass5 copy; 20-function seed scores flat on average (6 up, 4 down, mean -0.1; 0x4E8990 27.5->43.7), readability much better (named fields, typed callees). User approved both (2026-10-30 midday): reference pass 6a EXISTS at inventory/seeded-pass6a (pass5 + 9,194 demangled accepted signatures, no re-analysis, 19,140 decompiles; read-only, seeds still use pass5; LANE_BRIEF and WORKER.md tell workers to read it; recipe in ORIGINAL_TARGET_BUILD.md). Pass 6b (layouts in seeds) is queued for codex4 after its House chain: seed_candidate must compile typed seeds against real shared headers (assignments/codex4-next.md, trial material in owner-reference/pass6-trial); Pass 6b DONE 2026-10-30: codex4's typed-seed tooling landed (e9d80f58, r21); inventory/seeded-pass6b holds 324 typed member functions (97 flat layouts rendered by build/pass6b/render_layouts.py from clang's MSVC layouts, sizes verified; members = unique vtable slots + pass5 __thiscall functions inside one class's accepted span). Select it with RA2_INVENTORY_PASSES. Sweep on 314 entries: typed 109 compiled / 2 byte-exact (0x73A090, 0x765AC0 -> codex2) / mean 31.0 vs pass5 262 / 0 / 29.7. codex4's seed tooling is capped (user, 2026-10-30): its r24 (landed) already carried the pass5 fallback and a typed compile-rate repair (109->153 of 314 compile); no further seed-tool work, House.CPP bytes. Raising the typed compile rate (typed-compile-regressions.txt, 154 entries) is backlog for any worker between units, no owner time. Mac lanes 2026-10-30 evening (user via review session, hard stop 95% weekly): STOPPED at 94%, none running. Lanes 320-334 and their results: Aircraft321/329 (5.7 KB, AircraftClass), OwnrDraw326/330 (4.3 KB), Team327 (1.9 KB) and Team331 (bool rename), Init328 (3.2 KB + rename), Radar334 (1.9 KB), Overlay324 (588 B), Particle325 (390 B); zero: Techno320, Bullet322, Anim323, Light332, Vein333 (Anim/BuildingLight/Veinhole parked). Every lane's misses are in OPEN_MISSES (bottom entries) and build/class-work/<Lane>/NOTES.md. Open owner decisions recorded there: coord.hpp out-of-line CoordStruct ctor/Length (blocks Particle 0x60C7C0, BuildingLight), Aircraft Fire_At direction type, RadarClass +0x1244 as Rect, map_view.hpp Unknown_005680A0 for Veinhole AI (codex3 header). LANDING QUEUE: rounds not yet landed when this owner stopped are listed in private/tools/landing-queue.txt (one line each: `P dir plan msg` or `R spec msg`, in order); run private/tools/runq.sh private/tools/landing-queue.txt (lands sequentially, stops at the first failure, moves done lines to .done). Team331/d/r1 is an unfinished draft: never land it. Landed 2026-10-30: Hdr306 (audit now names the refused row and first differing offset; 0x549C50 Sight_From 1,208 B; type-count rule in VC6_MATCHING_NOTES), Foot305 r2 (3,657 B with the 0x4CB110 bool rename), Map303 r1 (2,219 B), Foot304 r3 (5,255 B, slots 78/93, 0x4CCA40), Foot302 r2 (1,432 B, slots 54/77), Map298 r5 (10,138 B + 0x54F7C0 bool rename), Cell301 r1 (1,403 B + Init_Drawer rename), Tactical300 r1 (1,071 B; owner dropped its file-local Point2D operator+, now a rect.hpp member). Next lane candidates: Tactical rest (Tactical300 NOTES), Cell rest (Cell301 NOTES), Techno.CPP, TeamClass, Sidebar. Terrain160 landed
@@ -83,7 +104,7 @@ Bytes landed per worker per day (first two days; body bytes from each delivery R
 | 2026-10-31 (later) | 2,577 (r242, r249) | 6,051 (r2732-r2740 + r2733 fastcall rename) | 4,329 (r185, supersedes r182-r184) | 6,805 (r10 rebase + r11 ctor) |
 | 2026-10-31 (evening) | 758 (r269; r266 rename, r279 header types) | 7,532 (r2741-r2745) | 629 (r186) | 3,028 (r12-r15; r16 rename) |
 | 2026-10-31 (night) | 5,715 (r287-r334; r312, r324, r329 renames) | 18,359 (r2746-r2761) | 3,897 (r187, r188 UnitClass; r189 misses only) | 3,274 (r17, r19, r20; r18 IndexClass header) |
-| 2026-11-01 | 8,721 (r343-r368; r339 rename) | 2,708 (r2763-r2765) | 1,254 (r191, r192; r190, r193 retypes) | 2,999 (r22, r23; r24 seed tools: typed compile 109->153 of 314, pass5 fallback) |
+| 2026-11-01 | 9,912 (r343-r373; r339 rename) | 8,971 (r2763-r2770) | 2,071 (r191, r192, r194; r190, r193 retypes) | 6,543 (r22, r23, r25; r24 seed tools: typed compile 109->153 of 314, pass5 fallback) |
 BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
 so MPCooperative functions that call a base body need separate units.
 

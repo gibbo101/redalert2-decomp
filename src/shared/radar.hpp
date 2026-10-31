@@ -173,6 +173,12 @@ extern int unknown_heights_7cfcc8[22];
 // passes "EVA_IncomingTransmission").
 int __fastcall Unknown_00716640(char const *name);
 
+// The radar's statistics dialog (resource 0x73; the special-dialog switch, case 8, 0x00481850):
+// runs it until it closes or the game quits (0x00634A00), with its dialog procedure 0x006340F0.
+class MouseClass;
+void __fastcall Unknown_00634A00(MouseClass *map);
+int __stdcall Unknown_006340F0(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
+
 class BuildingTypeClass;
 class RadarClass : public DisplayClass {
 public:
