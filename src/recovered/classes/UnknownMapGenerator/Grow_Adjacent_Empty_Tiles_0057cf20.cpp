@@ -1,4 +1,5 @@
-// Map tile-growth operation/name/free-cdecl hypotheses; original plain RET, no receiver used.
+#include "shared/unknown_map_generator.hpp"
+// Map tile-growth operation/name hypotheses; original controller passes its owner in ECX, unused here.
 #include "shared/cell.hpp"
 #include "shared/map_view.hpp"
 #include "shared/tileset_index.hpp"
@@ -13,7 +14,7 @@ extern Random2Class unknown_map_random_a705c0;
 // @ref ??_7?$VectorClass@PAVCellClass@@@@6B@=007a59b8
 // @ref __real@8@3fdf8000000080000000=007a5dd0
 // @ref __ftol=0077f110
-void Grow_Adjacent_Empty_Tiles_0057cf20()
+void UnknownMapGenerator::Grow_Adjacent_Empty_Tiles_0057cf20()
 {
     DynamicVectorClass<CellClass *> candidates;
     candidates.Set_Growth_Step(10000);

@@ -10,6 +10,9 @@ class BuildingTypeClass;
 class CellClass;
 class UnknownMapGenerator {
 public:
+    // Controller0057A0D0 restores this owner in ECX before both calls; neither callee reads it.
+    void Grow_Adjacent_Empty_Tiles_0057cf20();
+    void Randomize_Tile_Group_0057de10();
     bool Init_Start_Points_00583790();
     void Generate_Lights_0058a9c0();
     void Generate_Vegetation_00585a60();

@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 1015 | 183,719 | 1015 | 0x004011C0–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 1013 | 182,757 | 1013 | 0x004011C0–0x0078FB6B |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 171 | 47,172 | 171 | 0x00438A60–0x004D3450 |
@@ -27,9 +27,9 @@
 | [classes/INIClass](../src/recovered/classes/INIClass/) | 87 | 18,496 | 87 | 0x0050B8D0–0x0051AD50 |
 | [netshare](../src/recovered/netshare/) | 71 | 16,527 | 71 | 0x005C2BA0–0x005CD540 |
 | [classes/MPCooperative](../src/recovered/classes/MPCooperative/) | 41 | 14,646 | 39 | 0x005A2800–0x005A62B0 |
+| [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 24 | 14,375 | 24 | 0x0057ACE0–0x0058A9C0 |
 | [classes/TActionClass](../src/recovered/classes/TActionClass/) | 121 | 13,936 | 121 | 0x006AD2F0–0x006B30D0 |
 | [classes/CCINIClass](../src/recovered/classes/CCINIClass/) | 86 | 13,770 | 86 | 0x004696B0–0x00654150 |
-| [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 22 | 13,413 | 22 | 0x0057ACE0–0x0058A9C0 |
 | [classes/RadarClass](../src/recovered/classes/RadarClass/) | 57 | 12,635 | 56 | 0x0062ECF0–0x00634AD0 |
 | [classes/SidebarClass](../src/recovered/classes/SidebarClass/) | 79 | 11,558 | 77 | 0x0067B4B0–0x006824A0 |
 | [classes/Tactical](../src/recovered/classes/Tactical/) | 65 | 11,471 | 58 | 0x006A22D0–0x006AC800 |

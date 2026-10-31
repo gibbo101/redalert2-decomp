@@ -4,8 +4,8 @@
     "id": "population-3189",
     "inventory_sha256": "44bf35994912f0f7a381baecf1d2dc4e2241788fa2ebfa0fed1204e6cc4d5ac7",
     "gaps_sha256": "a1844f9e7ba65c27073b23f6e59d9af4cea971459c51cfbe6410ca2919187311",
-    "historical_population_sha256": "f4a0397d2035ec50c9ee4a2f0cbff13df05fd37ae23befd3ae33cd35fcdea5b5",
-    "historical_acceptance_sha256": "82aeee78d9b617a0ebdbe0fd12f123cc4e387256cff9f50ae50034379b4106de"
+    "historical_population_sha256": "e356483a8c62031eef315613dfde6b8842baec2fefbb30d270a26d82e418d7c8",
+    "historical_acceptance_sha256": "170ea05eba9fd4871191faa389c105a9cc8b8c13ad1522e661fa499c7bdcb5d5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -13034,7 +13034,7 @@
     "?Randomize@?$Int@$0EA@@@QAEXAAVStraw@@ABV1@1@Z": 6355024,
     "?Randomize_00578b10@MapSeedClass@@QAEXXZ": 5737232,
     "?Randomize_Parameters_005789f0@MapSeedClass@@QAEXH@Z": 5736944,
-    "?Randomize_Tile_Group_0057de10@@YAXXZ": 5758480,
+    "?Randomize_Tile_Group_0057de10@UnknownMapGenerator@@QAEXXZ": 5758480,
     "?RawPath@CDFileClass@@2PADA": 8718500,
     "?Raw_Cost@BuildingTypeClass@@UBEHXZ": 4557296,
     "?Raw_Cost@TechnoTypeClass@@UBEHXZ": 7187680,

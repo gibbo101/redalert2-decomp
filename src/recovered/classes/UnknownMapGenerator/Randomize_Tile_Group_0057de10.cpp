@@ -1,3 +1,4 @@
+#include "shared/unknown_map_generator.hpp"
 // @ref __real@8@3fe2a0000000a0000000=007a5f28
 // @ref __real@8@3fe6f2000000f2000000=007a5f20
 // @ref __real@8@3fe6c9000000c9000000=007a5f18
@@ -31,7 +32,7 @@ unsigned int __fastcall Map_Random_Range_005797a0(unsigned int minimum,unsigned 
 // @ref ?Stamp_Tile_005883f0@@=005883f0
 // @ref ?Map_Random_Range_005797a0@@=005797a0
 void __fastcall Stamp_Tile_005883f0(int tile,Cell const &position,int region,int height);
-void Randomize_Tile_Group_0057de10()
+void UnknownMapGenerator::Randomize_Tile_Group_0057de10()
 {
     Map.Unknown_0055A550();
     for(CellClass *cell=Map.Unknown_0055A490();cell;cell=Map.Unknown_0055A490()) {
