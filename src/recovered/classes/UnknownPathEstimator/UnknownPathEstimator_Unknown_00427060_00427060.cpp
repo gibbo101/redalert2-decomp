@@ -33,17 +33,7 @@ inline DynamicVectorClass<unsigned short>::DynamicVectorClass(unsigned size, uns
 }
 
 // The unit's out-of-line copy is the COMDAT 0x0042AD50 (0x00428CF0 calls it).
-inline Cell __fastcall UnknownPathEstimator::Unknown_0042AD50(Cell const &cell, int facing)
-{
-    if (facing == 8) {
-        int tube = Map[cell].unknown_116;
-        if (tube != -1) {
-            return unknown_TubeClass_list_008661c8[tube]->ExitCell;
-        }
-        return Cell(0, 0);
-    }
-    return cell + AdjacentCell[facing];
-}
+
 
 Cell __fastcall UnknownPathEstimator::Unknown_00427060(Cell const &start, int count, int const *facings)
 {
