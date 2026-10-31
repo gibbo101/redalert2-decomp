@@ -93,9 +93,10 @@ public:
     struct Node { unsigned int Key; UnknownControlRecord Value; Node *Next; };
     Node **Buckets; // +0x00
     unsigned int Count; // +0x04
-    unsigned int unknown_08;
+    unsigned int Size; // +0x08 bucket count
     unsigned int Bits; // +0x0c
-    char unknown_10[8];
+    int unknown_10;
+    bool Fixed_Size; // +0x14 never resized when set
     unsigned int (__fastcall *Hash)(unsigned int const &key); // +0x18
     // 0x00602020 when not inlined.
     unsigned int Bucket_Index(unsigned int const &key) const {
@@ -112,6 +113,8 @@ public:
     }
     // 0x00601710 (defined out of line in ownrdraw.cpp).
     bool Get(unsigned int const &key, UnknownControlRecord *&value) const;
+    // Doubles the bucket count and rehashes every node (0x00601F70).
+    void Resize();
 };
 extern UnknownControlIndex unknown_registry_a73640;
 // A control's registry record through the out-of-line Get, or null (0x005FC020).
@@ -128,10 +131,12 @@ public:
     struct Node { HWND Key; WNDPROC Value; Node *Next; };
     Node **Buckets; // +0x00
     unsigned int Count; // +0x04
-    unsigned int unknown_08;
+    unsigned int Size; // +0x08 bucket count
     unsigned int Bits; // +0x0c
-    char unknown_10[8];
+    int unknown_10;
+    bool Fixed_Size; // +0x14 never resized when set
     unsigned int (__fastcall *Hash)(HWND const &key); // +0x18
+    // 0x00601C30 when not inlined.
     unsigned int Bucket_Index(HWND const &key) const {
         unsigned int hash = Hash(key);
         unsigned int bucket = (1u << Bits) - 1;
@@ -144,6 +149,10 @@ public:
         while (node && node->Key != key) node = node->Next;
         return node ? &node->Value : 0;
     }
+    // 0x006018E0 (defined out of line in ownrdraw.cpp).
+    bool Get(HWND const &key, WNDPROC *&value) const;
+    // Doubles the bucket count and rehashes every node (0x00601B90).
+    void Resize();
 };
 extern UnknownWindowProcIndex unknown_window_procs_a73688;
 // The text of an edit control as wide text without line breaks (a trailing "\r\n" if it had any), and the
