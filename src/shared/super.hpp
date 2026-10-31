@@ -48,6 +48,8 @@ struct SuperStateStruct {
 
 // The super joins object.hpp's lists unknown_objects_ac0cb0 (0x00AC0CB0),
 // unknown_abstracts_ac0d08 and unknown_abstracts_ac0bf8.
+// The super weapon type whose placement is pending (4 while a chronosphere warp waits, else -1; hypothesis).
+extern int unknown_pending_super_833694;                          // 0x00833694
 extern Cell const unknown_cell_abd768;                            // 0x00ABD768
 
 extern "C" GUID const CLSID_SuperClass;                         // 0x007A1AF0
@@ -68,6 +70,18 @@ public:
     bool Unknown_0069D820();                                    // 0x0069D820
     // Grants it to its house (TS's Grant(one_time, announce, on_hold); hypothesis; true when granted).
     bool unknown_69d390(bool local_player); // original0069D390, AL result/RET4; meaning remains a hypothesis
+    // Starts the chrono placement animation (Rules->ChronoPlacement) 5 leptons above coord (hypothesis).
+    void unknown_place_anim_69cb30(CoordStruct coord);          // 0x0069CB30
+    bool Suspend(bool on);                                      // 0x0069CC60
+    bool Remove();                                              // 0x0069CF40
+    bool Recharge(bool player);                                 // 0x0069CFC0
+    bool Discharged(bool player, Cell const &cell);             // 0x0069D090
+    int Anim_Stage() const;                                     // 0x0069D560
+    void Forced_Charge(bool player);                            // 0x0069D690
+    bool Is_Powered() const;                                    // 0x0069D760
+    wchar_t const *State_String() const;                        // 0x0069D770
+    void Place(Cell const &cell, bool player);                  // 0x0069D850
+    bool unknown_69e990() const;                                // 0x0069E990
     bool Is_Present() const { return unknown_0x55; }
     bool Is_One_Time() const { return unknown_0x56 && unknown_0x55; }
     bool Grant(bool one_time, bool announce, bool on_hold);     // 0x0069CCF0

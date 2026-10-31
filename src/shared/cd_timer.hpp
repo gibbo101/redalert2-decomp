@@ -43,6 +43,7 @@ public:
         }
         return remain;
     }
+    bool Is_Active() const { return Started != -1; }
     void Stop()
     {
         if (Started != -1) {

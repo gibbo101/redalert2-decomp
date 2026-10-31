@@ -813,3 +813,13 @@ The no-argument __fastcall lever pays on recorded near misses (8 of ~20), not on
   a free nested base ctor, while the HEAD forms cost 80 or ~60 + a charged Cell ctor. This model makes
   Destroy_Low_Bridge_Span 0x556BF0 and the COMDAT 0x56AA40 byte-exact; adopting it needs ten accepted re-shapes
   (InlineLab398 NOTES "Whole-tree check").
+
+## Auto-inline size cap versus budget (Map405, 2026-10-31)
+A callee that is expanded although the original calls it may simply be under VC6's auto-inline size cap: the cap
+applies to the callee's unexpanded IL, independent of the caller's budget (padding the callee with k 6-unit stores
+flips it at a fixed k however many calls the caller gains) and of where the callee is defined. The natural fix is the
+original's wordier body: Spring_Low_Bridge_Destroyed_EW 0x55EA50 goes out of line when its walk writes TibSun's
+Is_Low_Bridge test out (`CellClass *cellptr = &Map[tmp]; overlay = cellptr->OverlayIndex; ... while (overlay >= 0x4a
+&& overlay <= 0x65)`) instead of calling the bridge predicate. A hand-written `tmp + AdjacentCell[f]` costs ~16-20 IL
+more than an Adjacent_Cell call; by-value vs reference, enum vs int, `!= 0` and early declarations cost nothing.
+(macOS `seq 0 -1` prints "0 -1": guard k=0 in probe scripts.)
