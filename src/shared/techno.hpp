@@ -621,6 +621,7 @@ public:
     int unknown_6cfda0();                                       // 0x006CFDA0 (times ZFudgeCliff)
     int unknown_6c4a70(ObjectClass *other);                     // 0x006C4A70
     int unknown_6c48f0(ObjectClass *other);                     // 0x006C48F0
+    void unknown_6d9080(Point2D const &center, void const *unused); // 0x006D9080, RET8; unused pointee type unknown
     bool unknown_6cf670();                                      // 0x006CF670 (ZFudgeBridge applies)
     bool unknown_6cf820();                                      // 0x006CF820
     bool unknown_6d4180();                                      // 0x006D4180
