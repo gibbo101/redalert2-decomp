@@ -4,6 +4,7 @@
 #include "shared/reference_counted.hpp"
 #include "shared/wstring.hpp"
 struct HWND__;
+namespace WOL { struct Ladder; }
 class PlayerProfile : public ReferenceCounted {
 public:
     virtual ~PlayerProfile() {}
@@ -31,6 +32,7 @@ public:
     unsigned int Set_Country_007399b0(unsigned int country);
     unsigned int Set_Color_007399d0(unsigned int color);
     // Writes the profile for a nickname into the registry (0x007395D0; name hypothesis).
+    void Set_Ladder_007399f0(WOL::Ladder *entry);
     void Save_007395d0(Wstring const &name);
     // size 0x38 (operator new in Load_Default 0x00738670)
 };

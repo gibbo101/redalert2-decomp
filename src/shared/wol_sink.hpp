@@ -22,6 +22,7 @@
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #endif
 
+#include "shared/wol_ladder.hpp"
 #include "shared/unknown_globals.hpp"
 #include "shared/wdt_state.hpp"
 #include "shared/com_persist.hpp"
@@ -66,20 +67,7 @@ struct Squad {
 };
 struct Channel;
 struct User;
-struct Ladder {
-    unsigned int game_type;
-    int unknown_04;
-    int unknown_08;
-    int unknown_0c;
-    int unknown_10;
-    int unknown_14;
-    int unknown_18;
-    int unknown_1c;
-    int unknown_20;
-    char unknown_24[0x3c - 0x24];
-    Ladder *next;
-    char name[0x6c - 0x40];
-};
+
 
 // WOL::User is in shared/unknown_globals.hpp.
 

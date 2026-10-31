@@ -10,7 +10,7 @@
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 171 | 47,172 | 171 | 0x00438A60–0x004D3450 |
-| (discovery: address-named) | 1444 | 43,816 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1443 | 43,723 | 17 | 0x004010A0–0x00797198 |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 128 | 42,374 | 128 | 0x0049ED10–0x0056A9D0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 195 | 38,690 | 192 | 0x0041B370–0x006D9750 |
@@ -121,9 +121,9 @@
 | [classes/WinsockInterfaceClass](../src/recovered/classes/WinsockInterfaceClass/) | 30 | 3,024 | 30 | 0x0076AA00–0x0076BA40 |
 | [classes/BufferIOFileClass](../src/recovered/classes/BufferIOFileClass/) | 17 | 3,023 | 17 | 0x0042F200–0x0042FDF0 |
 | [classes/SavegameInformation](../src/recovered/classes/SavegameInformation/) | 31 | 2,972 | 31 | 0x00659240–0x0065ABF0 |
+| [classes/PlayerProfile](../src/recovered/classes/PlayerProfile/) | 14 | 2,943 | 13 | 0x00738670–0x0073A090 |
 | [classes/DropPodLocomotionClass](../src/recovered/classes/DropPodLocomotionClass/) | 28 | 2,922 | 28 | 0x004A5A40–0x004A6710 |
 | [classes/MessageListClass](../src/recovered/classes/MessageListClass/) | 14 | 2,872 | 14 | 0x005B4BD0–0x005B5CB0 |
-| [classes/PlayerProfile](../src/recovered/classes/PlayerProfile/) | 13 | 2,850 | 12 | 0x00738670–0x0073A090 |
 | [MainOpt](../src/recovered/MainOpt/) | 7 | 2,816 | 7 | 0x00542150–0x00543C40 |
 | [classes/PowerClass](../src/recovered/classes/PowerClass/) | 16 | 2,801 | 16 | 0x0061C450–0x0061D220 |
 | [classes/MapSelectData](../src/recovered/classes/MapSelectData/) | 9 | 2,758 | 9 | 0x005AFF10–0x005B0980 |
