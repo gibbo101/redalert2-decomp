@@ -3,7 +3,7 @@
 // out: the original expands that member here and keeps its unreferenced copy after this function).
 #include "shared/tiberium.hpp"
 #include "shared/veinhole.hpp"
-// @ref ?unknown_cells_428ac0@@YAHXZ=00428ac0
+// @ref ?unknown_cells_428ac0@@YIHXZ=00428ac0
 // @ref ?Rebuild_Growth@TiberiumClass@@QAEXXZ=006ea680
 
 void TiberiumClass::Init_Growth()

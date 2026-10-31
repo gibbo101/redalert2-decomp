@@ -1,5 +1,5 @@
 #include "shared/veinhole.hpp"
-// @ref ?unknown_cells_428ac0@@YAHXZ=00428ac0
+// @ref ?unknown_cells_428ac0@@YIHXZ=00428ac0
 // @ref ?unknown_veinhole_buffer_ad07a0@@3PAEA=00ad07a0
 
 bool __fastcall VeinholeMonsterClass::Save_All(IStream *stream)

@@ -2,7 +2,7 @@
 #include "shared/map_cell_view.hpp"
 #include "shared/map_view.hpp"
 #include "shared/anim.hpp"
-// @ref ?unknown_cells_428ac0@@YAHXZ=00428ac0
+// @ref ?unknown_cells_428ac0@@YIHXZ=00428ac0
 // @ref ?unknown_cell_index_428a90@@YIHABVCell@@@Z=00428a90
 
 void VeinholeMonsterClass::unknown_func_711aa0()

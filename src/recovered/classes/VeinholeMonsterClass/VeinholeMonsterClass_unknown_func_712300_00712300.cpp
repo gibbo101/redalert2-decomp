@@ -3,7 +3,7 @@
 #include "shared/random.hpp"
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ??RRandom2Class@@QAEHXZ=00638840
-// @ref ?unknown_cells_428ac0@@YAHXZ=00428ac0
+// @ref ?unknown_cells_428ac0@@YIHXZ=00428ac0
 // @ref ?unknown_veinhole_buffer_ad07a0@@3PAEA=00ad07a0
 // @ref ?unknown_cell_index_428a90@@YIHABVCell@@@Z=00428a90
 // @ref ?unknown_47a7a0@CellClass@@QAEXXZ=0047a7a0

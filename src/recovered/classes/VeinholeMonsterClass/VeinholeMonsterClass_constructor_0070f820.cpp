@@ -11,7 +11,7 @@
 // @ref ??_7VeinholeMonsterClass@@6BIRTTITypeInfo@@@=007ae784
 // @ref ??_7VeinholeMonsterClass@@6BINoticeSink@@@=007ae77c
 // @ref ??_7VeinholeMonsterClass@@6BINoticeSource@@@=007ae774
-// @ref ?unknown_cells_428ac0@@YAHXZ=00428ac0
+// @ref ?unknown_cells_428ac0@@YIHXZ=00428ac0
 // @ref ?unknown_veinhole_buffer_ad07a0@@3PAEA=00ad07a0
 
 VeinholeMonsterClass::VeinholeMonsterClass(NoInitClass const &noinit) : ObjectClass(noinit), unknown_bc(noinit), unknown_d4(noinit)

@@ -4,7 +4,7 @@
 #include "shared/veinhole.hpp"
 #include "shared/cell.hpp"
 #include "shared/map_view.hpp"
-// @ref ?unknown_cells_428ac0@@YAHXZ=00428ac0
+// @ref ?unknown_cells_428ac0@@YIHXZ=00428ac0
 // @ref ?unknown_cell_index_428a90@@YIHABVCell@@@Z=00428a90
 
 void TiberiumClass::Rebuild_Spread()

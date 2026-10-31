@@ -773,3 +773,11 @@ too large can need an earlier, larger buffer (0x5C7570: `char name[128]`, any 12
 ## Inline helper with a const-reference argument (Netshare390, 2026-10-31)
 Eight repeated add-row/set-item-data pairs in 0x5CA6C0 come from one file-static inline helper. Passing the node pointer
 by value scored 97.00; passing it as `NodeNameType * const &` is exact (the reference keeps the caller's load order).
+
+## Calling-convention probe order (NearMiss392, 2026-10-31)
+The __fastcall lever also applies to the function itself. When a free function's only miss is register-argument setup
+(mov ecx/edx, lea ecx) after the pushes, or a push/mov ecx tie right after a call, probe before rewriting statements:
+(1) the function's own convention as __fastcall; (2) each no-argument callee just before the tie as __fastcall; (3) a
+free "object pointer" callee as a member (thiscall). Five of about twelve probes hit: 0x711E60 (callee 0x428AC0),
+0x519E70 (TechnoTypeClass::Load_Palettes static __fastcall), 0x516E70 and 0x768C70 (self; 82 -> shape 100), 0x542460
+(self plus 0x5DA360 as OptionsClass member). Missing @refs for string literals look like a convention miss on scores.

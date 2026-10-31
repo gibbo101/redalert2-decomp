@@ -18,7 +18,7 @@
 // @ref ??_7VeinholeMonsterClass@@6BIRTTITypeInfo@@@=007ae784
 // @ref ??_7VeinholeMonsterClass@@6BINoticeSink@@@=007ae77c
 // @ref ??_7VeinholeMonsterClass@@6BINoticeSource@@@=007ae774
-// @ref ?unknown_cells_428ac0@@YAHXZ=00428ac0
+// @ref ?unknown_cells_428ac0@@YIHXZ=00428ac0
 // @ref ?unknown_veinhole_buffer_ad07a0@@3PAEA=00ad07a0
 // @ref ?unknown_veinhole_tiles_7f9508@@3QAY02$$CBEA=007f9508
 // @ref ?unknown_a40774@@3HA=00a40774

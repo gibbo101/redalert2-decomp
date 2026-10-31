@@ -7,7 +7,7 @@
 #include "shared/veinhole.hpp"
 #include "shared/map_cell_view.hpp"
 #include "shared/crt_memory.hpp"
-// @ref ?unknown_cells_428ac0@@YAHXZ=00428ac0
+// @ref ?unknown_cells_428ac0@@YIHXZ=00428ac0
 // @ref ?unknown_veinhole_buffer_ad07a0@@3PAEA=00ad07a0
 // @ref ?unknown_cell_index_428a90@@YIHABVCell@@@Z=00428a90
 // @ref ?unknown_func_711c90@VeinholeMonsterClass@@QAEXXZ=00711c90

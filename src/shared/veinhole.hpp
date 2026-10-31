@@ -34,7 +34,7 @@ extern "C" GUID const CLSID_VeinholeMonsterClass;      // 0x007A1EF0
 int __fastcall unknown_cell_index_428a90(Cell const &cell);
 
 // The byte size of a per-cell table (0x00428AC0; (map width + 4) * height * 2; name hypothesis).
-int unknown_cells_428ac0();
+int __fastcall unknown_cells_428ac0();    // __fastcall: Load_All 0x00711E60 copies the result and sets the next Read's lea ecx before its pushes
 
 // The veinhole buffers: a shared per-cell table (0x00AD07A0).
 extern unsigned char *unknown_veinhole_buffer_ad07a0;
