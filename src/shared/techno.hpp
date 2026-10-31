@@ -496,7 +496,7 @@ public:
     virtual void unknown_slot220(AbstractClass *target);                     // slot 220 (+0x370) 0x006C9AF0
     virtual BulletClass *unknown_slot221(AbstractClass *target, int arg2);                // slot 221 (+0x374) 0x006CA890
     virtual bool unknown_slot222(HouseClass *house, int arg2);                // slot 222 (+0x378) 0x006CD940
-    virtual int unknown_slot223(int arg1, int arg2);                // slot 223 (+0x37C) 0x006D5F40
+    virtual void unknown_slot223(CoordStruct const &coord, float force); // slot 223 (+0x37C) 0x006D5F40 (rock from a nearby impact)
     virtual bool unknown_slot224(int arg1);                         // slot 224 (+0x380) 0x00453BD0 (kept copy elsewhere)
     virtual bool unknown_slot225();                             // slot 225 (+0x384) 0x006D84D0
     virtual int unknown_slot226();                              // slot 226 (+0x388) 0x006D84F0
@@ -524,7 +524,7 @@ public:
     virtual void unknown_slot248(Point2D const &point, Rect const &window, bool arg3);   // slot 248 (+0x3E0) 0x006C3F00 (draws the health bar and pips)
     virtual void unknown_slot249(Point2D const &point, Point2D const &center, Rect const &window);   // slot 249 (+0x3E4) 0x006D4920 (draws the pips)
     virtual void unknown_slot250(Point2D const &point, Rect const &window);  // slot 250 (+0x3E8) 0x006D5440
-    virtual int unknown_slot251(int arg1, int arg2, int arg3);      // slot 251 (+0x3EC) 0x006D5510
+    virtual void unknown_slot251(Point2D const &point, Point2D const &center, Rect const &window); // slot 251 (+0x3EC) 0x006D5510 (draw text overlays)
     virtual void unknown_slot252(bool quiet);                   // slot 252 (+0x3F0) 0x006CF250
     virtual void unknown_slot253(bool quiet);                       // slot 253 (+0x3F4) 0x006CF300
     virtual int unknown_slot254(int arg1);                      // slot 254 (+0x3F8) 0x006D79D0
