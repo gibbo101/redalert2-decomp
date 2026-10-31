@@ -7,6 +7,5 @@
 // @ref ??1Wstring@@QAE@XZ=0076d9e0
 // @ref _atexit=0078298a
 // @ref ?unknown_wstring_b29cd4@@3VWstring@@A=00b29cd4
-// @ref _$E2=0073b8c0
 
 Wstring unknown_wstring_b29cd4;

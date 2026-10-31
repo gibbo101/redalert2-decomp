@@ -13,6 +13,9 @@
 // (0x0073AA80..0x0073BC30) inline the constructor and destructor; the
 // destructor inlines clear() and shrink().
 unsigned int __fastcall Hash_Name_005c2ba0(Wstring const &name);
+// Vendor dictionary ABI: sizeof 0x38, eight-byte alignment.
+// Original 0073FEE0 proves the local extent; natural padding supplies +0x1C.
+#pragma pack(push, 8)
 template<class K, class V> class WolDictionary {
 public:
     struct Node { K Key; V Value; Node *Next; };
@@ -167,11 +170,12 @@ public:
     bool ResizeLocked;
     char unknown_15[3];
     unsigned int (__fastcall *Hash)(K const &key);
-    void *unknown_1c;
     double ShrinkLimit;
     double GrowLimit;
     unsigned int MinimumBuckets;
 };
+
+#pragma pack(pop)
 
 // wlib Dictionary::expand and shrink, defined out of the class (explicitly instantiable).
 template<class K, class V> void WolDictionary<K, V>::Grow_Table()
