@@ -92,4 +92,14 @@ public:
 // Every techno (0x00A40C20; as shared/planning.hpp).
 extern DynamicVectorClass<TechnoClass *> unknown_list_a40c20;
 
+// AnimClass as the Map unit sees it (stand-in; shared/anim.hpp brings headers whose types
+// the stand-ins above redefine): the constructor and the size operator new allocates
+// (MapClass 0x005576A0 and its three twins place bridge explosions with it).
+class AnimTypeClass;
+class AnimClass {
+public:
+    AnimClass(AnimTypeClass *type, CoordStruct const &coord, int loop_delay, int loops, int flags, int zadjust);   // 0x00420110 (as shared/anim.hpp)
+    char unknown_0[0x1A8];                  // sizeof(AnimClass) 0x1A8 (as shared/anim.hpp)
+};
+
 #endif

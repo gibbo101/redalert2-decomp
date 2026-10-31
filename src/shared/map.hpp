@@ -280,6 +280,13 @@ public:
     bool Place_Cliff(CellClass *cellptr, int region_id);        // 0x0055B820
     void Mark_Fill_Area(Cell const &cell, bool mark);           // 0x00567710
     bool Rebuild_Shores_At(Cell const &origin);                  // 0x00567490 (TibSun Rebuild_Shores_At)
+    Cell Pick_Random_Location() const;                          // 0x00559EB0 (TibSun Pick_Random_Location: a random cell of the map rectangle)
+    // Blow up up to four cells of the low bridge run through a cell with bridge explosions
+    // and damage each until it gives way (first low bridge overlays 0x4A..0x65, second 0xCD..0xE8).
+    void Destroy_Low_Bridge_EW(Cell const &cell);               // 0x005576A0
+    void Destroy_Low_Bridge_NS(Cell const &cell);               // 0x005579C0
+    void Destroy_Low_Bridge2_EW(Cell const &cell);              // 0x00557CE0
+    void Destroy_Low_Bridge2_NS(Cell const &cell);              // 0x00558010
     bool Check_Map();                                           // 0x00569B60 (TibSun Check_Map: a debug zone-table check to MapCheck.txt)
     bool Rebuild_Cliffs_At(Cell const &cell);                   // 0x00567AE0
     // The map generator's shore passes (TibSun Prune_Water, Get_Water_Mask; names are hypotheses).
