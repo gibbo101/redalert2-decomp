@@ -4,8 +4,8 @@
     "id": "population-2609",
     "inventory_sha256": "3ca4721c488e6cff82722e3078e6c616ca398bdd8bac525334c84ccfd789194d",
     "gaps_sha256": "1a3e9b538f664ed5c8b2a3ef5880eaa96898f911a76fe2db5a55956cb7b7f511",
-    "historical_population_sha256": "57f4542f4b88f55a4e6e0606e3d681d65d73859d846b47a95f0a87a0c670e0c0",
-    "historical_acceptance_sha256": "6af1b1d6692047c5a4eecd78a042195a88b5e72ed037a94d30f54e8f8eae368c"
+    "historical_population_sha256": "49096efce688904ac749bd52db3752bc9c4688cbb08e67f72d2265bb78a11f72",
+    "historical_acceptance_sha256": "1841f18dff6960d71a01177d8b7d23eb41657ec20c93c14d6daebe1b35453510"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5529,7 +5529,7 @@
     "?get@Leaf_716940@@QAEXXZ": 7432512,
     "?get@Leaf_716ce0@@QAEPAXI@Z": 7433440,
     "?get@Leaf_716d30@@QAEPAXI@Z": 7433520,
-    "?get@Leaf_717040@@QAEIXZ": 7434304,
+    "?Get_Surface@VoxelDrawSystem@@YAPAVSurface@@XZ": 7434304,
     "?get@Leaf_717ee0@@QAEXXZ": 7438048,
     "?get@Leaf_717f50@@QAEXXZ": 7438160,
     "?get@Leaf_717f60@@QAEXXZ": 7438176,

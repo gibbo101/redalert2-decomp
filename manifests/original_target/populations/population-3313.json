@@ -4,8 +4,8 @@
     "id": "population-3313",
     "inventory_sha256": "897ebee5648df1f5beaa85fd8b129d8c18c80e6652bdc5016ebd348c4f82fc68",
     "gaps_sha256": "fe124168a4492470ff9a4eb46d4e36e0bead1982f2de3d93031086f12ceb1621",
-    "historical_population_sha256": "d7d86fb95ebfea787012c11c8f6d63a16b9e64536b634415cd80a0a49c64335e",
-    "historical_acceptance_sha256": "c76a63e2bb486e8a15be268884882a16c24bcde5bc3f5cb51ab250d8feac9844"
+    "historical_population_sha256": "617f895ac307b4051fd57d0f69577816a8be9b1caeb9df51b293241337b9f867",
+    "historical_acceptance_sha256": "2d78b0754ddb202dad3daa00a4986dcb08ad64dd191e65daea18068c440833e2"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6147,7 +6147,7 @@
     "?get@Leaf_716940@@QAEXXZ": 7432512,
     "?get@Leaf_716ce0@@QAEPAXI@Z": 7433440,
     "?get@Leaf_716d30@@QAEPAXI@Z": 7433520,
-    "?get@Leaf_717040@@QAEIXZ": 7434304,
+    "?Get_Surface@VoxelDrawSystem@@YAPAVSurface@@XZ": 7434304,
     "?GetClassID@WalkLocomotionClass@@UAGJPAUGUID@@@Z": 7469312,
     "?AddRef@WalkLocomotionClass@@UAGKXZ": 7470560,
     "?Release@WalkLocomotionClass@@UAGKXZ": 7470576,

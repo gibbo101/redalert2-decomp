@@ -4,8 +4,8 @@
     "id": "population-2331",
     "inventory_sha256": "30aaca6ce5d6c2dcf7f07671841e1fd8b14cc562d183957f9a609f1dfb48ac05",
     "gaps_sha256": "640459b5d6fcc79d78771a65e5936f588e188f7a050a7d5302b5267b602843db",
-    "historical_population_sha256": "08aa782bfe0ddada08a0cc440468ecdd5c01dcc41917ee8c0590ab91a549eb7a",
-    "historical_acceptance_sha256": "08e3573da798fc94fda7c01c5279912044422888227f1582cc48f2d7a19bd799"
+    "historical_population_sha256": "14d4473b5337d9d9fdf1068800f542ed205e5bb234e4b5ca4eb16a491493ee72",
+    "historical_acceptance_sha256": "413c2cd27e0f97ec78e0a190d1487936ca3144454ea34bfa085b8a2bd0392040"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5180,7 +5180,7 @@
     "?get@Leaf_716940@@QAEXXZ": 7432512,
     "?get@Leaf_716ce0@@QAEPAXI@Z": 7433440,
     "?get@Leaf_716d30@@QAEPAXI@Z": 7433520,
-    "?get@Leaf_717040@@QAEIXZ": 7434304,
+    "?Get_Surface@VoxelDrawSystem@@YAPAVSurface@@XZ": 7434304,
     "?Size_Of@WarheadTypeClass@@UBEHXZ": 7475312,
     "?Kind_Of@WarheadTypeClass@@UBEHXZ": 7475328,
     "?Size_Of@WaveClass@@UBEHXZ": 7480288,

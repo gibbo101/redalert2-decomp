@@ -4,8 +4,8 @@
     "id": "population-2804",
     "inventory_sha256": "e5282bf2c831073c0c4bd9724068076d0a8c094299ab15c9cac43d8d94dc2c64",
     "gaps_sha256": "1080f45ddeb65f9675feeff2aaced6582ddfcafd39fec1adafcabc34aa7fd204",
-    "historical_population_sha256": "eba1d25e0ef43ad9590632900df323f1630c8e3cfec877af4910301c54e7eb32",
-    "historical_acceptance_sha256": "4954aa81b3fdafa9194e71f36fad90b87f1f4860ab6a4e8ce9c9d10a8512ad90"
+    "historical_population_sha256": "984210915809ede16728467d38782cd0f4bdd2dd433296c7765e102d6c1e08b0",
+    "historical_acceptance_sha256": "5642a3ce37e0e56bbf619284d8e512500e54762a42959abb99cd3464d8e1975e"
   },
   "references": {
     "?Unknown_006A8C80@Tactical@@QAE_NPAUPoint2D@@@Z": 6982784,
@@ -5291,7 +5291,7 @@
     "?get@Leaf_716940@@QAEXXZ": 7432512,
     "?get@Leaf_716ce0@@QAEPAXI@Z": 7433440,
     "?get@Leaf_716d30@@QAEPAXI@Z": 7433520,
-    "?get@Leaf_717040@@QAEIXZ": 7434304,
+    "?Get_Surface@VoxelDrawSystem@@YAPAVSurface@@XZ": 7434304,
     "?Size@WalkLocomotionClass@@UAEHXZ": 7470640,
     "?get@Append_724730@@QAEEPBI@Z": 7489328,
     "?get@Leaf_726ef0@@QAEIXZ": 7499504,
