@@ -14,7 +14,7 @@ extern bool unknown_flag_a40958;
 // @ref ?Unknown_00405D50@UnknownAudioController@@QAEXXZ=00405d50
 // @ref ?Unknown_00405FE0@UnknownAudioController@@QAEXXZ=00405fe0
 // @ref ?Remove@UnknownList832470@@QAEXPAVObjectClass@@@Z=0053e370
-// @ref ?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
+// @ref ?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
 // @ref ?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z=006a3020
 // @ref _unknown_static_rect=00a72ed0
 bool ObjectClass::unknown_slot52()
@@ -34,7 +34,7 @@ bool ObjectClass::unknown_slot52()
     if (Class_Of() && Class_Of()->unknown_ac) {
         Point2D pixel;
         CoordStruct location = Center_Coord();
-        unknown_tactical_83996c->Unknown_006A29D0(location, pixel);
+        unknown_tactical_83996c->Coord_To_Pixel(location, pixel);
         ShapeFileStruct *shape = reinterpret_cast<ShapeFileStruct *>(Class_Of()->unknown_ac);
         Point2D half;
         half.X = shape->Width / 2;

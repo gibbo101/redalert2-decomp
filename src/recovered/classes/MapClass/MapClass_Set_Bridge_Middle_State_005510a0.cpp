@@ -19,7 +19,7 @@ void MapClass::Set_Bridge_Middle_State(Cell const &cell, int new_tile, int match
         coord.X = cell.X * 256 + 128;
         coord.Y = cell.Y * 256 + 128;
         coord.Z = 0;
-        unknown_tactical_83996c->Unknown_006A29D0(coord, point);
+        unknown_tactical_83996c->Coord_To_Pixel(coord, point);
         point.Y -= 15 * cellptr->unknown_11b;
         unknown_tactical_83996c->Register_Dirty_Area(Rect(point.X - 128, point.Y - 128, 256, 256), 0);
         old_tile = cellptr->IsoTileIndex;

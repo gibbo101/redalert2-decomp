@@ -4,8 +4,8 @@
     "id": "population-3265",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "84866adc642b01509f48b25ebca6974c27a32bdeae9409f30dbdb3116d614fd8",
-    "historical_acceptance_sha256": "cf70c75a5488728684bb4c4e402c4b00088fd18887983d89c9b6a0cf030cb47b"
+    "historical_population_sha256": "87adf477750510ef76cbe6a4c0e71c2e3c59cf9b4b7e5add77692b8e62242124",
+    "historical_acceptance_sha256": "962278f6adbc8fbcbaa7ebe3292c5c51d5aa30e2bdbfe02fc689c008b19b6ecd"
   },
   "references": {
     "?get@Leaf_401170@@QAEXXZ": 4198768,
@@ -2914,7 +2914,7 @@
     "?unknown_slot21@ObjectClass@@UBE_NXZ": 6116368,
     "?QueryInterface@GScreenClass@@UAGJABUGUID@@PAPAX@Z": 5114096,
     "?unknown_tactical_83996c@@3PAVTactical@@A": 8624492,
-    "?Unknown_006A45A0@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
+    "?Render@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
     "?Blit_Display@GScreenClass@@UAEXXZ": 5114960,
     "?Blit@GScreenClass@@SIX_NPAVSurface@@PBVRect@@@Z": 5115024,
     "?AI@GScreenClass@@UAEXAAHABUPoint2D@@@Z": 5116096,
@@ -3329,7 +3329,7 @@
     "?Detach@InfantryClass@@UAEXPAVAbstractClass@@_N@Z": 5250224,
     "?Fast_Sqrt@@YAMN@Z": 4957200,
     "?Compute_CRC@InfantryClass@@UBEXAAVWWCRCEngine@@@Z": 5277856,
-    "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
+    "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "?Coord@PlanningBranchClass@@QBE?AUCoordStruct@@XZ": 6359376,
     "?Coord@PlanningNodeClass@@QBE?AUCoordStruct@@XZ": 6361472,
     "?Pixel@PlanningNodeClass@@QBE?AUPoint2D@@XZ": 6361536,
@@ -3440,7 +3440,7 @@
     "?AI@ObjectClass@@UAEXXZ": 6105072,
     "__real@8@4000c000000000000000": 7981704,
     "?Load@InfantryClass@@UAGJPAUIStream@@@Z": 5277040,
-    "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
+    "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
     "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
     "?Compute_CRC@HouseClass@@UBEXAAVWWCRCEngine@@@Z": 5166992,
     "?AI@RadarClass@@UAEXAAHABUPoint2D@@@Z": 6487232,
@@ -3747,7 +3747,7 @@
     "__real@8@4003a000000000000000": 7983440,
     "?Resize@?$DynamicVectorClass@PAVReestablish@@@@UAE_NHPBQAVReestablish@@@Z": 4539952,
     "__real@4@3ff8a3d70a0000000000": 8048608,
-    "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
     "?Read_Scenario_INI@HouseClass@@SIXAAVCCINIClass@@@Z": 5159456,
     "??0HouseClass@@QAE@PAVHouseTypeClass@@@Z": 5118144,
     "?Name@ThemeClass@@QBEPBDH@Z": 7243120,
@@ -4311,13 +4311,13 @@
     "?unknown_abe490@@3NA": 11265168,
     "?unknown_abe520@@3NA": 11265312,
     "?unknown_scroll_speeds_7f6914@@3PAMA": 8349972,
-    "?Unknown_006A27A0@Tactical@@": 6956960,
-    "?Coord_To_Pixel_Absolute@Tactical@@": 6957168,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@": 6956960,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@": 6957168,
     "?Unknown_006A2900@Tactical@@": 6957312,
     "?Unknown_006A2970@@": 6957424,
     "?Unknown_006A29B0@@": 6957488,
-    "?Unknown_006A29D0@Tactical@@": 6957520,
-    "?Unknown_006A2CB0@Tactical@@": 6958256,
+    "?Coord_To_Pixel@Tactical@@": 6957520,
+    "?Setup_Trigger_Scroll@Tactical@@": 6958256,
     "?Unknown_006A9170@Tactical@@": 6984048,
     "?Load@Tactical@@": 6996768,
     "?get@Leaf_42b950@@QAEXXZ": 4372816,
@@ -6154,7 +6154,8 @@
     "?unknown_undo_record_684fc0@@YIXABUPoint2D@@H@Z": 6836160,
     "?unknown_undo_restore_685030@@YAXXZ": 6836272,
     "??_7InfantryTypeClass@@6B@": 8010360,
-    "??_EInfantryTypeClass@@UAEPAXI@Z": 5287824
+    "??_EInfantryTypeClass@@UAEPAXI@Z": 5287824,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@@Z": 6957168
   },
   "regions": [
     {
@@ -6531,8 +6532,8 @@
     {
       "entry": 6956960,
       "method": "006a27a0",
-      "symbol": "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
-      "symbol_prefix": "?Unknown_006A27A0@Tactical@@",
+      "symbol": "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
+      "symbol_prefix": "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@",
       "options": [
         "/O2",
         "/Ob2",
@@ -6570,7 +6571,7 @@
           "resolved": 903356
         }
       ],
-      "source_sha256": "a9c799d0e17f9378c772165a37b8fe1b75600fe1bf69e2d02a48ab8a7288c3da",
+      "source_sha256": "237664318f62787b3be3ef042390ff5b00efb62004ea69b82cf9f2e8c8d17e6b",
       "source": "src/recovered/classes/Tactical/Tactical_Coord_To_Pixel_Absolute_006a27a0.cpp",
       "population": "population-3265",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
@@ -6583,7 +6584,7 @@
       "entry": 6957168,
       "method": "006a2870",
       "symbol": "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@@Z",
-      "symbol_prefix": "?Coord_To_Pixel_Absolute@Tactical@@",
+      "symbol_prefix": "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@",
       "options": [
         "/O2",
         "/Ob2",
@@ -6608,8 +6609,8 @@
     {
       "entry": 6957520,
       "method": "006a29d0",
-      "symbol": "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
-      "symbol_prefix": "?Unknown_006A29D0@Tactical@@",
+      "symbol": "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
+      "symbol_prefix": "?Coord_To_Pixel@Tactical@@",
       "options": [
         "/O2",
         "/Ob2",
@@ -6663,7 +6664,7 @@
           "resolved": 11265388
         }
       ],
-      "source_sha256": "a21f2321808f1ab866dc918a56d892a70d8760397c75044c50eab56044236a8e",
+      "source_sha256": "0d32266b4fc8189019ff80d7392547fe5d527e684e3cd9adc2a4fee495f0ad1c",
       "source": "src/recovered/classes/Tactical/Tactical_Coord_To_Pixel_006a29d0.cpp",
       "population": "population-3265",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -6675,8 +6676,8 @@
     {
       "entry": 6958256,
       "method": "006a2cb0",
-      "symbol": "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z",
-      "symbol_prefix": "?Unknown_006A2CB0@Tactical@@",
+      "symbol": "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z",
+      "symbol_prefix": "?Setup_Trigger_Scroll@Tactical@@",
       "options": [
         "/O2",
         "/Ob2",
@@ -6722,7 +6723,7 @@
           "resolved": 902029
         }
       ],
-      "source_sha256": "4ab9c1fc69743c1f5598886770c1a0d310d8357d76892c162669a4db54e1add1",
+      "source_sha256": "447b06366b296002ed69624ff13ae57c35325063e12bb4eed6c0159630dbc7ff",
       "source": "src/recovered/classes/Tactical/Tactical_Setup_Trigger_Scroll_006a2cb0.cpp",
       "population": "population-3265",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",

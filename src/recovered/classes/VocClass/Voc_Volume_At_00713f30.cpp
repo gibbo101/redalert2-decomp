@@ -39,7 +39,7 @@ float __fastcall Voc_Volume_At(CoordStruct const &coord, int *pan, AudioEventTyp
         }
     }
     Point2D pixel;
-    unknown_tactical_83996c->Unknown_006A29D0(coord, pixel);
+    unknown_tactical_83996c->Coord_To_Pixel(coord, pixel);
     float dx = pixel.X - half_width;
     float x = abs((int)dx);
     float y = abs((int)(pixel.Y - half_height));

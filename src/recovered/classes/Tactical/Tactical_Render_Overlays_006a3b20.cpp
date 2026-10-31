@@ -26,7 +26,7 @@ void Tactical::Render_Overlays(Rect const &xpanrect, Rect const &ypanrect, bool 
     if (unknown_e0 > 0 && !fullredraw) {
         for (int i = 0; i < unknown_e0; i++) {
             CoordStruct coord = Coord_Snap(Cell_Center(unknown_e4[i]->MapCoords));
-            Point2D pixel = Unknown_006A27A0(coord);
+            Point2D pixel = Coord_To_Pixel_Absolute(coord);
             Point2D view = unknown_b0;
             pixel -= view;
             Rect rect = Rect(pixel.X - 30, pixel.Y, 60, 30);

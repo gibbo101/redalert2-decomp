@@ -4,8 +4,8 @@
     "id": "population-2843",
     "inventory_sha256": "c03aabccd61162067a4d9cf38363bde7b1074584f6fe9a22b181ac952ec528e8",
     "gaps_sha256": "9763b50ba88a135513a7768b645a4f8d0c63e100ab554a446624001a8b6c1bf6",
-    "historical_population_sha256": "ab4cb759ca81eba1751f2588c7ad1d9861b1e027a611e4d4c7e71c40bf2e81ab",
-    "historical_acceptance_sha256": "2b6c54cff5e4bee6a514428e305570c8994877cbe7c9851239a8dd871e66ea61"
+    "historical_population_sha256": "397e486f49b58feee5ea2c3ec20d16135eb14494088320a1751b0ae05ad3a932",
+    "historical_acceptance_sha256": "a50147e9ec6487b4b1cb8dde894fda2acb895705ec2a1971988ec95d65d329aa"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -8433,7 +8433,7 @@
     "?unknown_slot149@RadioClass@@UAEHH@Z": 6516112,
     "?unknown_slot152@RadioClass@@UAEXH@Z": 6516160,
     "?unknown_tactical_83996c@@3PAVTactical@@A": 8624492,
-    "?Unknown_006A45A0@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
+    "?Render@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
     "?Blit_Display@GScreenClass@@UAEXXZ": 5114960,
     "?Layer@DisplayClass@@2PAVLayerClass@@A": 8725880,
     "?unknown_slot155@TechnoClass@@UAE_NXZ": 7082704,
@@ -8909,7 +8909,7 @@
     "?Unknown_004536D0@BuildingClass@@QAEXPAVInfantryClass@@@Z": 4536016,
     "?unknown_slot204@InfantryClass@@UAE_NXZ": 5281392,
     "?unknown_slot205@InfantryClass@@UAEXXZ": 5281456,
-    "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
+    "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "_bsearch": 7872549,
     "??0UnknownQuaternion@@QAE@MMMM@Z": 6431072,
     "??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z": 6854416,
@@ -9008,7 +9008,7 @@
     "?unknown_44d0f0@BuildingClass@@QAEXHH@Z": 4509936,
     "?unknown_44d7d0@BuildingClass@@QAE_NXZ": 4511696,
     "?unknown_44da20@BuildingClass@@QAEXPAVInfantryClass@@@Z": 4512288,
-    "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
+    "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
     "?unknown_449930@BuildingClass@@QAE_NXZ": 4495664,
     "?unknown_449d40@BuildingClass@@QAEHXZ": 4496704,
     "?unknown_44d190@BuildingClass@@QAEXXZ": 4510096,
@@ -9165,7 +9165,7 @@
     "?unknown_func_4f5a70@HouseClass@@QAEMPAVTechnoTypeClass@@@Z": 5200496,
     "?unknown_47c2c0@UnknownCellClass@@QBE_NH@Z": 4702912,
     "?unknown_6ca020@TechnoClass@@QAEPAVEBolt@@PAVAbstractClass@@PAVWeaponTypeClass@@ABUCoordStruct@@@Z": 7118880,
-    "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
     "?unknown_6ca130@TechnoClass@@QAEPAVEBolt@@PAVAbstractClass@@@Z": 7119152,
     "?unknown_6ca1d0@TechnoClass@@QAEXPAVAbstractClass@@H@Z": 7119312,
     "?unknown_6ca6c0@TechnoClass@@QAEHPAV1@PAVWeaponTypeClass@@@Z": 7120576,
@@ -10203,7 +10203,10 @@
     "??_ENode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
     "??_EMapSelect@@UAEPAXI@Z": 5832096,
     "??_E?$VectorClass@V?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@@@UAEPAXI@Z": 5212160,
-    "??_EPlayerProfile@@UAEPAXI@Z": 7577744
+    "??_EPlayerProfile@@UAEPAXI@Z": 7577744,
+    "?unknown_47a200@CellClass@@QBEPBGXZ": 4694528,
+    "?Fetch@?$VectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UBE?AU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@H@Z": 6507536,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@@Z": 6957168
   },
   "regions": [
     {
@@ -13091,7 +13094,7 @@
         {
           "offset": 214,
           "kind": 20,
-          "symbol": "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
+          "symbol": "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
           "target": 6957520,
           "addend": 0,
           "resolved": 1975622
@@ -13337,7 +13340,7 @@
           "resolved": 8805956
         }
       ],
-      "source_sha256": "393d12916c34f51003eb65c9d5cfbf33483c0357ac98606a47ba05b44860eb3d",
+      "source_sha256": "fe19a303ac529628b31ac90cf212f0dc0d849e691bbe78099cbfdd7f7c8b02a5",
       "source": "src/recovered/classes/FoggedObjectClass/FoggedObjectClass_constructor_004c03b0.cpp",
       "population": "population-2843",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",

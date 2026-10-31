@@ -11,7 +11,7 @@
 // @ref ?unknown_surface_83995c@@3PAVSurface@@A=0083995c
 // @ref ?unknown_surface_839964@@3PAVSurface@@A=00839964
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
-// @ref ?Unknown_006A45A0@Tactical@@QAEXPAVSurface@@_NH@Z=006a45a0
+// @ref ?Render@Tactical@@QAEXPAVSurface@@_NH@Z=006a45a0
 // @ref ?unknown_flag_abcd85@@3_NA=00abcd85
 // @ref ?unknown_flag_a40d13@@3_NA=00a40d13
 // @ref ?unknown_object_a3dc70@@3VUnknownObjectA3DC70@@A=00a3dc70
@@ -29,10 +29,10 @@ void GScreenClass::Render()
     bool any = IsToRedraw != 0;
     bool complete = IsToRedraw == 2;
     IsToRedraw = 0;
-    unknown_tactical_83996c->Unknown_006A45A0(unknown_surface_839964, any, 0);
-    unknown_tactical_83996c->Unknown_006A45A0(unknown_surface_839964, any, 1);
+    unknown_tactical_83996c->Render(unknown_surface_839964, any, 0);
+    unknown_tactical_83996c->Render(unknown_surface_839964, any, 1);
     Draw_It(complete);
-    unknown_tactical_83996c->Unknown_006A45A0(unknown_surface_839964, any, 2);
+    unknown_tactical_83996c->Render(unknown_surface_839964, any, 2);
 
     if (unknown_flag_abcd85 && !unknown_flag_a40d13) {
         WWMouse->Erase_Mouse(unknown_surface_839948, true);

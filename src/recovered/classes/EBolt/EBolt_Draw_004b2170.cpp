@@ -6,8 +6,8 @@ void EBolt::Draw_004B2170()
 {
  if(unknown_28) {
   Point2D start,end;
-  unknown_tactical_83996c->Unknown_006A29D0(Start,start);
-  unknown_tactical_83996c->Unknown_006A29D0(End,end);
+  unknown_tactical_83996c->Coord_To_Pixel(Start,start);
+  unknown_tactical_83996c->Coord_To_Pixel(End,end);
   if(Clip_Line(start,end,unknown_rect_839630)) Draw_Bolt_004B1900(Start,End,unknown_2c ? 5 : 10);
   ++unknown_1c;
  }

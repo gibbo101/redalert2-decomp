@@ -15,7 +15,7 @@ extern int unknown_a40774;
 // @ref ?unknown_a40774@@3HA=00a40774
 // @ref ?Submit@UnknownList832470@@QAE_NPAVObjectClass@@_N@Z=0053e330
 // @ref ?Submit@DisplayClass@@QAEXPAVObjectClass@@@Z=00499a40
-// @ref ?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
+// @ref ?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
 // @ref ?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z=006a3020
 // @ref ??0AlphaShapeClass@@=0041ebe0
 // @ref ??0LineTrail@@=005393e0
@@ -51,7 +51,7 @@ bool ObjectClass::unknown_slot53(CoordStruct const *coord, int direction)
                 if (type->unknown_ac) {
                     CoordStruct location = Center_Coord();
                     Point2D pixel;
-                    unknown_tactical_83996c->Unknown_006A29D0(location, pixel);
+                    unknown_tactical_83996c->Coord_To_Pixel(location, pixel);
                     Object_Placement_Add_Point(pixel, unknown_tactical_83996c->unknown_b0);
                     ShapeFileStruct *shape = reinterpret_cast<ShapeFileStruct *>(Class_Of()->unknown_ac);
                     Point2D half;

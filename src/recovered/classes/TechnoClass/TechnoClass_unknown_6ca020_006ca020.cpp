@@ -11,7 +11,7 @@
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
 // @ref ??0EBolt@@QAE@XZ=004b17f0
 // @ref ?Setup_004B2430@EBolt@@QAEXUCoordStruct@@0H@Z=004b2430
-// @ref ?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z=006a27a0
+// @ref ?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z=006a27a0
 
 EBolt *TechnoClass::unknown_6ca020(AbstractClass *target, WeaponTypeClass *weapon, CoordStruct const &source)
 {
@@ -21,8 +21,8 @@ EBolt *TechnoClass::unknown_6ca020(AbstractClass *target, WeaponTypeClass *weapo
         return 0;
     }
     if (Kind_Of() == 6) {
-        Point2D from = unknown_tactical_83996c->Unknown_006A27A0(source);
-        Point2D to = unknown_tactical_83996c->Unknown_006A27A0(unknown_slot42());
+        Point2D from = unknown_tactical_83996c->Coord_To_Pixel_Absolute(source);
+        Point2D to = unknown_tactical_83996c->Coord_To_Pixel_Absolute(unknown_slot42());
         depth = from.Y - to.Y;
         if (depth > 0) {
             depth = 0;

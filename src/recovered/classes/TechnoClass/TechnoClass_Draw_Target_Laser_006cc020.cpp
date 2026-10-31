@@ -25,8 +25,8 @@ void TechnoClass::unknown_6cc020()
         CoordStruct target=unknown_6d65b0();
         Point2D start;
         Point2D end;
-        unknown_tactical_83996c->Unknown_006A29D0(source,start);
-        unknown_tactical_83996c->Unknown_006A29D0(target,end);
+        unknown_tactical_83996c->Coord_To_Pixel(source,start);
+        unknown_tactical_83996c->Coord_To_Pixel(target,end);
         start.Y+=unknown_rect_839630.Y;
         end.Y+=unknown_rect_839630.Y;
         unknown_surface_83995c->Fill_Rect(unknown_rect_839630.Intersect(Rect(TPoint2D(start.X,start.Y),3,3)-TPoint2D(2,2)),unknown_drawer_8323c4->Convert(8));

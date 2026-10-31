@@ -1,4 +1,4 @@
-// void Tactical::Unknown_006A2CB0(CoordStruct const &coord, int speed) (0x006A2CB0): starts a trigger scroll
+// void Tactical::Setup_Trigger_Scroll(CoordStruct const &coord, int speed) (0x006A2CB0): starts a trigger scroll
 // to a coordinate: the progress cleared, the step from the speed table (0x007F6914), the target the
 // coordinate's absolute pixel (Coord_To_Pixel plus the view position), the start the current view position
 // (TibSun Tactical::Setup_Trigger_Scroll; TeamClass script handler 0x006BC4C0).
@@ -7,13 +7,13 @@
 
 extern float unknown_scroll_speeds_7f6914[5];      // 0x007F6914 (TibSun's static _speeds)
 
-void Tactical::Unknown_006A2CB0(CoordStruct const &coord, int speed)
+void Tactical::Setup_Trigger_Scroll(CoordStruct const &coord, int speed)
 {
     unknown_dc = 0;
     unknown_d8 = unknown_scroll_speeds_7f6914[speed];
 
     Point2D to;
-    Unknown_006A29D0(coord, to);
+    Coord_To_Pixel(coord, to);
     to.X += unknown_b0.X;
     to.Y += unknown_b0.Y;
     unknown_d0 = to;

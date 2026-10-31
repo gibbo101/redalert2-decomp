@@ -15,7 +15,7 @@
 // @ref ??0Rect@@QAE@ABUTPoint2D@@HH@Z=00453e40
 // @ref ?unknown_4754b0@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z=004754b0
 // @ref ?unknown_475d60@CellClass@@QBE?AUCoordStruct@@XZ=00475d60
-// @ref ?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z=006a27a0
+// @ref ?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z=006a27a0
 // @ref ?Clear_Region_007761C0@ABuffer@@QAEXVRect@@@Z=007761c0
 // @ref ?ABufferPtr@@3PAVABuffer@@A=00839c6c
 // @ref ?MainWindow@@3PAUHWND__@@A=00b263d8
@@ -68,7 +68,7 @@ void Tactical::Wipe_Depth(bool fullredraw, int xoff, int yoff, Rect const &clipr
             CoordStruct coord = unknown_e4[i]->unknown_475d60();
             coord.Z = 0;
             Point2D pixel;
-            pixel = Unknown_006A27A0(coord);
+            pixel = Coord_To_Pixel_Absolute(coord);
             pixel -= Point2D(unknown_b0.X, unknown_b0.Y);
             Point2D draw = pixel + Point2D(60, 30) / -2;
             draw = draw + Point2D(unknown_rect_839630.X, unknown_rect_839630.Y);

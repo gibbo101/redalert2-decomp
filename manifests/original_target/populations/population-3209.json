@@ -4,8 +4,8 @@
     "id": "population-3209",
     "inventory_sha256": "8c8beb6cf8dcd991965ca9ef38ac0b26a4663191a6935d901c343b2da6e261c2",
     "gaps_sha256": "d821eef92d36b32521b4ed4e4d659838b74b1b308475a2c9f2a57fea05912290",
-    "historical_population_sha256": "08406eb85d2f4b559b6bcafd6e2ee80f676d29b5ff750c2e02d5d4aff4d678d6",
-    "historical_acceptance_sha256": "422f22aacbf90b21cb1209a848a3b8b7247959eca0269f75117622e5400699ea"
+    "historical_population_sha256": "0c877e8af09e6ccf2539b92d17de303b777122bfbe5c3021cb5815e2bddb7a81",
+    "historical_acceptance_sha256": "d847010da2fbee0deeadf41d7834adf470ef4f51c000950297c4e6e3d4e37800"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1549,7 +1549,7 @@
     "?MainWindow@@": 11690968,
     "?unknown_rect_839630@@3VRect@@A": 8623664,
     "?unknown_tactical_83996c@@3PAVTactical@@A": 8624492,
-    "?Unknown_006A29D0@Tactical@@": 6957520,
+    "?Coord_To_Pixel@Tactical@@": 6957520,
     "?Unknown_006A2970@@YIHH@Z": 6957424,
     "?Fast_Atan2@@": 4957696,
     "_unknown_turret_frame_table_007acab0": 8047280,
@@ -5449,10 +5449,10 @@
     "?Unknown_00688460@@YIXABUCoordStruct@@HH_N@Z": 6849632,
     "?Unknown_00688750@@YIXABUCoordStruct@@HH_N@Z": 6850384,
     "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
-    "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
+    "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "?Unknown_006A2B10@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6957840,
-    "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
-    "?Unknown_006A45A0@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
+    "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
+    "?Render@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
     "?Unknown_006A66B0@Tactical@@QAEXABUPoint2D@@@Z": 6973104,
     "?Unknown_006A6A50@UnknownTacticalView@@QAE?AVCell@@ABUCoordStruct@@@Z": 6974032,
     "?Unknown_006A6BD0@Tactical@@QAE?AVCell@@ABUPoint2D@@@Z": 6974416,
@@ -9793,7 +9793,7 @@
     "?unknown_AbstractClass_list_00ac0c98@@3V?$DynamicVectorClass@PAVAbstractClass@@@@A": 11275416,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABU2@_N@Z": 6495136,
     "?Unknown_006A2BF0@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6958064,
-    "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
     "?Set_Color@RadBeam@@QAEXABVRGBClass@@@Z": 6510352,
     "?Read_Scenario_INI@HouseClass@@SIXAAVCCINIClass@@@Z": 5159456,
     "??0HouseClass@@QAE@PAVHouseTypeClass@@@Z": 5118144,
@@ -11940,7 +11940,11 @@
     "?unknown_47c2e0@CellClass@@QBE_NH@Z": 4702944,
     "?Unknown_0042E860@Unknown84E8D0@@QAEPAVUnknownBeacon@@UCoordStruct@@@Z": 4384864,
     "?unknown_func_4ed2b0@HouseClass@@QAE_NPAVWaypointClass@@PAHPAD@Z": 5165744,
-    "__imp__DialogBoxParamA": 7971780
+    "__imp__DialogBoxParamA": 7971780,
+    "?Fetch@?$VectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UBE?AU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@H@Z": 6507536,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@@Z": 6957168,
+    "?unknown_6cc020@TechnoClass@@QAEXXZ": 7127072,
+    "_?pattern@?1??unknown_6cc020@TechnoClass@@QAEXXZ@4PA_NA": 8352020
   },
   "regions": [
     {
@@ -19494,7 +19498,7 @@
         {
           "offset": 241,
           "kind": 20,
-          "symbol": "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
+          "symbol": "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
           "target": 6957520,
           "addend": 0,
           "resolved": 2524891
@@ -19516,7 +19520,7 @@
           "resolved": 8623668
         }
       ],
-      "source_sha256": "888f4c03423f64a5118dca9e316fa7c781eaf2fd3dc3a50c781ad00786d86066",
+      "source_sha256": "30b71fa87da18657961937666086792366e85199f2a43994212de5c8fc4c5e1b",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Draw_Visible_0043a200.cpp",
       "population": "population-3209",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
@@ -19620,7 +19624,7 @@
         {
           "offset": 147,
           "kind": 20,
-          "symbol": "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
+          "symbol": "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
           "target": 6957520,
           "addend": 0,
           "resolved": 2431849
@@ -19634,7 +19638,7 @@
           "resolved": 54297
         }
       ],
-      "source_sha256": "b11a4a8f2da135193154d7a5fcbfa19eefb08b608b6c151da351b183ea8e6d4b",
+      "source_sha256": "ee956675523de920e86bc36b4af6e72e50408ae60598dcfdce166463f3bb6320",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Cached_Draw_Bounds_00450dd0.cpp",
       "population": "population-3209",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",

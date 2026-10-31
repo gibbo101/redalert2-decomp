@@ -12,8 +12,8 @@ void RadBeam::Draw_Line(CoordStruct const &start, CoordStruct const &end, short 
 {
     Point2D first_pixel;
     Point2D second_pixel;
-    unknown_tactical_83996c->Unknown_006A29D0(start, first_pixel);
-    unknown_tactical_83996c->Unknown_006A29D0(end, second_pixel);
+    unknown_tactical_83996c->Coord_To_Pixel(start, first_pixel);
+    unknown_tactical_83996c->Coord_To_Pixel(end, second_pixel);
     Rect clip = unknown_rect_839630;
     if (Clip_Line(first_pixel, second_pixel, clip)) {
         int first_z = Depth - Unknown_006A2970(start.Z) - 2;

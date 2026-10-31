@@ -3,7 +3,7 @@
 #include "shared/tactical.hpp"
 #include "shared/map_view.hpp"
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
-// @ref ?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
+// @ref ?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
 // @ref ?unknown_7f8660@@3HA=007f8660
 // @ref ?unknown_7f8664@@3HA=007f8664
 // @ref __real@8@3ffdccccccccccccd000=0079c268
@@ -15,10 +15,10 @@ int __stdcall TunnelLocomotionClass::Z_Adjust()
 {
     CoordStruct coord = LinkedTo->Coord;
     Point2D from;
-    unknown_tactical_83996c->Unknown_006A29D0(coord, from);
+    unknown_tactical_83996c->Coord_To_Pixel(coord, from);
     coord.Z = Map.Unknown_0055A280(coord);
     Point2D to;
-    unknown_tactical_83996c->Unknown_006A29D0(coord, to);
+    unknown_tactical_83996c->Coord_To_Pixel(coord, to);
     int height = from.Y - to.Y;
     double ratio = Timer_Ratio();
     int facing = Dir_To_256(LinkedTo->unknown_2e0.Current());

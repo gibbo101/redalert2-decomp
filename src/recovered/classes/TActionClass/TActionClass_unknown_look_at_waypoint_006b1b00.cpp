@@ -15,6 +15,6 @@ bool TActionClass::unknown_look_at_waypoint(HouseClass *house, ObjectClass *obje
     if ((Map[waypoint].unknown_140 & 0x100) || (Map[waypoint].unknown_140 & 0x400)) {
         coord.Z += unknown_geometry_j;
     }
-    unknown_tactical_83996c->Unknown_006A2CB0(coord, Data);
+    unknown_tactical_83996c->Setup_Trigger_Scroll(coord, Data);
     return true;
 }

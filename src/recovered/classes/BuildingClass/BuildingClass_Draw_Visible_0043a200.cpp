@@ -8,7 +8,7 @@ extern Rect unknown_rect_839630;
 // @ref ?MainWindow@@=00b263d8
 // @ref ?unknown_rect_839630@@3VRect@@A=00839630
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
-// @ref ?Unknown_006A29D0@Tactical@@=006a29d0
+// @ref ?Coord_To_Pixel@Tactical@@=006a29d0
 // @ref ?Intersect@@YI?AVRect@@ABV1@0PAH1@Z=0041fdf0
 inline bool Overlap_Draw_Bounds(Rect const &clip,Rect const &draw) {
     return clip.X<(int)((unsigned int)draw.Width+(unsigned int)draw.X)
@@ -26,7 +26,7 @@ bool BuildingClass::unknown_slot63(Rect *bounds,bool force,bool alternate)
 
         if(Overlap_Draw_Bounds(*bounds,Offset_Draw_Bounds(unknown_slot73(),origin))) {
             Point2D pixel;
-            unknown_tactical_83996c->Unknown_006A29D0(unknown_slot42(),pixel);
+            unknown_tactical_83996c->Coord_To_Pixel(unknown_slot42(),pixel);
             if(bounds->X>unknown_rect_839630.X) {
                 pixel.X=(int)((unsigned int)pixel.X+(unsigned int)unknown_rect_839630.X-(unsigned int)bounds->X);
             }

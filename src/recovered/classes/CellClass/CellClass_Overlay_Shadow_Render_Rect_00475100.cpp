@@ -23,7 +23,7 @@ Rect CellClass::unknown_475100() const
     }
     int shadow = frame + image->FrameCount / 2;
     Point2D point;
-    unknown_tactical_83996c->Unknown_006A29D0(Coord_Snap(Cell_Coord(MapCoords)), point);
+    unknown_tactical_83996c->Coord_To_Pixel(Coord_Snap(Cell_Coord(MapCoords)), point);
     point += unknown_475440();
     point.X -= 30;
     if (unknown_140 & 0x80) {

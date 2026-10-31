@@ -17,7 +17,7 @@ void Tactical::Render_Terrain(Rect const &xpanrect, Rect const &ypanrect, bool f
         for (i = 0; i < unknown_e0; i++) {
             CoordStruct coord = Coord_Snap(Cell_Center(unknown_e4[i]->MapCoords));
             Point2D pixel;
-            pixel = Unknown_006A27A0(coord);
+            pixel = Coord_To_Pixel_Absolute(coord);
             pixel -= Point2D(unknown_b0.X, unknown_b0.Y);
 
             Rect rect = Rect(pixel.X - 30, pixel.Y, 60, 30);

@@ -4,8 +4,8 @@
     "id": "population-3264",
     "inventory_sha256": "02f824e8f909c1dbe23942c411169e93526517683dbf1e7adcc7e0c98d980b70",
     "gaps_sha256": "2ce9a441e989baeff838d682ff6a161ce85221b9f0ead49629637cf8bda88792",
-    "historical_population_sha256": "18a98eb007c193052387a374007e0bebf8e67eed30a3005379c4a6b9882d7b06",
-    "historical_acceptance_sha256": "d1b687de3952ab2e98a00c2e3e9e96dac75378fe419572dda6bbb561b57f5da8"
+    "historical_population_sha256": "e2e826ae3e187a49096cefe723c13bce286074e87329b741c1f0fdf3121d2ea4",
+    "historical_acceptance_sha256": "9bbdd2abedf28eaff16a730629ad8e5f2000e281363fc827115bd37dce18e39e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4934,10 +4934,10 @@
     "?Unknown_00675300@ShapeButtonClass@@QAE_NXZ": 6771456,
     "?Unknown_0067C2D0@SidebarClass@@QAEXH@Z": 6800080,
     "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
-    "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
+    "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "?Unknown_006A2B10@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6957840,
-    "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
-    "?Unknown_006A45A0@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
+    "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
+    "?Render@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
     "?Unknown_006A66B0@Tactical@@QAEXABUPoint2D@@@Z": 6973104,
     "?Unknown_006A6A50@UnknownTacticalView@@QAE?AVCell@@ABUCoordStruct@@@Z": 6974032,
     "?Unknown_006A6BD0@Tactical@@QAE?AVCell@@ABUPoint2D@@@Z": 6974416,
@@ -8331,7 +8331,7 @@
     "?unknown_ini_format_a40d24@@3HA": 10751268,
     "?unknown_int_7add80@@3HA": 8052096,
     "?Read_INI@AnimTypeClass@@UAE_NAAVCCINIClass@@@Z": 4347536,
-    "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
     "?Set_Color@RadBeam@@QAEXABVRGBClass@@@Z": 6510352,
     "?Read_INI@TiberiumClass@@UAE_NAAVCCINIClass@@@Z": 7245104,
     "??0HouseClass@@QAE@PAVHouseTypeClass@@@Z": 5118144,

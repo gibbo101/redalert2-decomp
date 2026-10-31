@@ -93,7 +93,7 @@ public:
     virtual bool unknown_slot24(CoordStruct const &from, CoordStruct const &to, int color, int arg4);
 
     // Draws one pass (0, 1, 2) of the tactical view into surface (0x006A45A0).
-    void Unknown_006A45A0(Surface *surface, bool redraw, int pass);
+    void Render(Surface *surface, bool redraw, int pass);
     // A screen point converted for the techno types' smoke offsets (0x006A2900).
     Point2D Unknown_006A2900(Point2D const &point);
     // The view position (0x006A67D0: the offset +0xD64/+0xD68 less +0xB0/+0xB4;
@@ -108,18 +108,18 @@ public:
     CoordStruct Unknown_006A2BF0(Point2D const &point); // original ECX Tactical, hidden CoordStruct result, RET8
     // The absolute screen pixel of a coordinate: the isometric rotation, leptons to pixels, less the height
     // (0x006A27A0; TibSun Tactical::Coord_To_Pixel_Absolute(Coord const &)), and of a flat point (0x006A2870).
-    Point2D Unknown_006A27A0(CoordStruct const &coord);
+    Point2D Coord_To_Pixel_Absolute(CoordStruct const &coord);
     Point2D Coord_To_Pixel_Absolute(Point2D const &point);
     Cell Unknown_006A6BD0(Point2D const &point);
     // The cell drawn over a coordinate: scans back along the view diagonal for the cell whose raised ground covers it (0x006A6A50).
     Cell Coord_To_Cell(CoordStruct const &coord);
-    void Unknown_006A2CB0(CoordStruct const &coord, int arg2);   // 0x006A2CB0 (TeamClass script handler 0x006BC4C0: looks at a coordinate; hypothesis)
+    void Setup_Trigger_Scroll(CoordStruct const &coord, int arg2);   // 0x006A2CB0 (TeamClass script handler 0x006BC4C0: looks at a coordinate; hypothesis)
     int Unknown_006AA840(int arg1);                 // 0x006AA840 (display slot 41; -1 when none)
     void Unknown_006A8B70(int arg1, int arg2);      // 0x006A8B70 (display slot 41)
 
     // The screen pixel of a coordinate: the absolute pixel less the view position; false when it lies
     // more than six tiles outside the view (0x006A29D0; TibSun Tactical::Coord_To_Pixel).
-    bool Unknown_006A29D0(CoordStruct const &coord, Point2D &pixel);
+    bool Coord_To_Pixel(CoordStruct const &coord, Point2D &pixel);
     // The shroud (fog: the fog) edge frame of a cell from its eight neighbours: -2 solid black, -1 none
     // (0x006A8D40; TibSun Tactical::Cell_Shadow; the flag is read as a byte).
     int Cell_Shadow(Cell const &cell, bool fog);

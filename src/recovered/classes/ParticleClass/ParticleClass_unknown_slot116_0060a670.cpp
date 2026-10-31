@@ -17,8 +17,8 @@ int ParticleClass::unknown_slot116()
         {
             Point2D from;
             Point2D to;
-            unknown_tactical_83996c->Unknown_006A29D0(unknown_e4, from);
-            unknown_tactical_83996c->Unknown_006A29D0(unknown_d8, to);
+            unknown_tactical_83996c->Coord_To_Pixel(unknown_e4, from);
+            unknown_tactical_83996c->Coord_To_Pixel(unknown_d8, to);
             int direction = Unknown_00721DB0(from, to);
             if (direction == 2 || direction == 6) {
                 return unknown_11e + Class->EndStateAI * 2;

@@ -4,8 +4,8 @@
     "id": "population-2637",
     "inventory_sha256": "f3c3711e960e3fa5de1f61d24b97bd94786d4d971e751e01a2e3f5e460f15784",
     "gaps_sha256": "0fdd0a839a439fef4e0c25a2ca7219105b454aa10f445d3b52b1b1827cbc6951",
-    "historical_population_sha256": "7ce62d764a9b714021507a064d33c2c7583c9f35e6d51138b32456861dd82f91",
-    "historical_acceptance_sha256": "6229b21e38f6f55f52f7790ed93d233079b9181b30bc9d167f4c26fc5d5fe90d"
+    "historical_population_sha256": "3cc34393bb71e94fe5b1f0f9982766e5e23db5cd403a1c35796ff094cad371f0",
+    "historical_acceptance_sha256": "f998dd94f08547a83510116d582c84c95aa57c9cff0dacb1aba53be2f8a198c7"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6863,7 +6863,7 @@
     "??1MSPCXAnim@@UAE@XZ": 5961968,
     "??_GMSPCXAnim@@UAEPAXI@Z": 5963440,
     "?unknown_slot116@MissionClass@@UAEXH_N@Z": 5852336,
-    "?Unknown_006A45A0@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
+    "?Render@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
     "?Blit_Display@GScreenClass@@UAEXXZ": 5114960,
     "?Layer@DisplayClass@@2PAVLayerClass@@A": 8725880,
     "?unknown_random_839218@@3VRandom2Class@@A": 8622616,
@@ -6926,7 +6926,7 @@
     "?unknown_wrench_shape_8502a8@@3PBXB": 8716968,
     "?unknown_cloak_surface_8502a0@@3PAVBSurface@@A": 8716960,
     "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z": 6959136,
-    "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
+    "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "_bsearch": 7872549,
     "?Unknown_006AAD40@Tactical@@QAEXXZ": 6991168,
     "?unknown_slot116@AnimClass@@UAEHXZ": 4330880,
@@ -6941,7 +6941,7 @@
     "?Unknown_006AA5E0@Tactical@@QAEXABUPoint2D@@@Z": 6989280,
     "?Unknown_006AA5A0@Tactical@@QAEXABUPoint2D@@@Z": 6989216,
     "?Unknown_006AA770@Tactical@@QAEXXZ": 6989680,
-    "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
+    "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
     "?unknown_buildcat_table_7cfc40@@3PAUUnknownBuildCatEntry@@A": 8191040,
     "?unknown_func_45e170@BuildingTypeClass@@SAXXZ": 4579696,
     "?unknown_45e270@BuildingTypeClass@@QBEPBVCell@@XZ": 4579952,
@@ -7919,7 +7919,7 @@
     "?Read_INI_0041A840@AircraftClass@@SIXAAVCCINIClass@@@Z": 4302912,
     "?Unknown_006A2BF0@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6958064,
     "?unknown_458b10@BuildingTypeClass@@QBEHABVCell@@PAVHouseClass@@@Z": 4557584,
-    "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960
   },
   "regions": [
     {

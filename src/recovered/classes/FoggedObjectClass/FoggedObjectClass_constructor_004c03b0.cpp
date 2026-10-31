@@ -24,7 +24,7 @@ FoggedObjectClass::FoggedObjectClass(CoordStruct const &coord, int arg54, unsign
     CoordStruct &at = Coord;
     at = position;
     Point2D pixel;
-    unknown_tactical_83996c->Unknown_006A29D0(position, pixel);
+    unknown_tactical_83996c->Coord_To_Pixel(position, pixel);
     pixel -= Point2D(30, 15);
     unknown_40 = Rect(pixel.X, pixel.Y, 60, 30);
     unknown_40.X += unknown_tactical_83996c->unknown_b0.X;

@@ -6,7 +6,7 @@
 #include "shared/terrain.hpp"
 #include "shared/tactical.hpp"
 // @ref ?unknown_slot53@ObjectClass@@UAE_NPBUCoordStruct@@H@Z=005d3890
-// @ref ?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
+// @ref ?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
 // @ref ?AdjacentCell@@3QBVCell@@B=00851a70
 // @ref ?unknown_slot42@ObjectClass@@UBE?AUCoordStruct@@XZ=0041b270
@@ -20,7 +20,7 @@ bool TerrainClass::unknown_slot53(CoordStruct const *coord, int dir)
             next.unknown_122++;
         }
         Point2D &pixel = (Point2D &)unknown_b8.Width;
-        unknown_tactical_83996c->Unknown_006A29D0(unknown_slot42(), pixel);
+        unknown_tactical_83996c->Coord_To_Pixel(unknown_slot42(), pixel);
         Point2D offset = unknown_tactical_83996c->unknown_b0;
         pixel.X += offset.X;
         pixel.Y += offset.Y;

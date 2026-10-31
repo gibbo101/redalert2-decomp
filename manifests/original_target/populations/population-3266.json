@@ -4,8 +4,8 @@
     "id": "population-3266",
     "inventory_sha256": "c5bc3addf488297cbb4477bab82ef5205a69206a4ee9dc08a902543bb23c59eb",
     "gaps_sha256": "37dec6669a17b311680796afed46330e37d11037a1f39a66290eb50d5145e5c0",
-    "historical_population_sha256": "ec50ac80a644f6cfde858734dfe2ed6f95cc629a1b97f084b20bfe9cf08f819b",
-    "historical_acceptance_sha256": "b5314cea2f14494f60a303a3b72fe828fb2de16b8704703468d167f402e55cf5"
+    "historical_population_sha256": "395ef056a9a6abbdd57cbb7df4d3defb8fb21858f83a0e8953b7cb2b58ac1973",
+    "historical_acceptance_sha256": "98ccb773d70111234e5bb183bb583a0aae56223bce4c80dd351d8db9d0a2dfd5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7347,7 +7347,7 @@
     "?Kill_Nodes@SpawnManagerClass@@QAEXXZ": 6855536,
     "?Abandon_Target@SpawnManagerClass@@QAEXXZ": 6857904,
     "?Setup_004B2430@EBolt@@QAEXUCoordStruct@@0H@Z": 4924464,
-    "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
+    "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
     "?Attach_004B2580@EBolt@@QAEXPAVTechnoClass@@H@Z": 4924800,
     "?Allocate@RadBeam@@SIPAV1@H@Z": 6509632,
     "?Set_Color@RadBeam@@QAEXABVRGBClass@@@Z": 6510352,
@@ -8624,10 +8624,10 @@
     "?Unknown_0067C2D0@SidebarClass@@QAEXH@Z": 6800080,
     "?Unknown_00688460@@YIXABUCoordStruct@@HH_N@Z": 6849632,
     "?Unknown_00688750@@YIXABUCoordStruct@@HH_N@Z": 6850384,
-    "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
+    "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "?Unknown_006A2B10@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6957840,
-    "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
-    "?Unknown_006A45A0@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
+    "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
+    "?Render@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
     "?Unknown_006A66B0@Tactical@@QAEXABUPoint2D@@@Z": 6973104,
     "?Unknown_006A6BD0@Tactical@@QAE?AVCell@@ABUPoint2D@@@Z": 6974416,
     "?Unknown_006A8B70@Tactical@@QAEXHH@Z": 6982512,
@@ -11340,7 +11340,8 @@
     "?unknown_47c2e0@CellClass@@QBE_NH@Z": 4702944,
     "?unknown_func_4ed2b0@HouseClass@@QAE_NPAVWaypointClass@@PAHPAD@Z": 5165744,
     "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@@Z": 6957168,
-    "?unknown_rect_839630@@3VRect@@A": 8623664
+    "?unknown_rect_839630@@3VRect@@A": 8623664,
+    "?unknown_6cc020@TechnoClass@@QAEXXZ": 7127072
   },
   "regions": [
     {
@@ -20898,7 +20899,7 @@
         {
           "offset": 81,
           "kind": 20,
-          "symbol": "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
+          "symbol": "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
           "target": 6956960,
           "addend": 0,
           "resolved": 4294805291
@@ -20914,7 +20915,7 @@
         {
           "offset": 122,
           "kind": 20,
-          "symbol": "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
+          "symbol": "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
           "target": 6956960,
           "addend": 0,
           "resolved": 4294805250
@@ -20928,7 +20929,7 @@
           "resolved": 4292772625
         }
       ],
-      "source_sha256": "63f0e01a9dd49c68f0fca746a93a2016f4561c43b580584c4aea5469a9cece1e",
+      "source_sha256": "aa0d423b168dc104dcf15b66252f330fc9bf2eb4ae35983d1cff0033580e82f8",
       "source": "src/recovered/classes/TechnoClass/TechnoClass_unknown_6ca020_006ca020.cpp",
       "population": "population-3266",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
@@ -21016,7 +21017,7 @@
         {
           "offset": 120,
           "kind": 20,
-          "symbol": "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
+          "symbol": "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
           "target": 6956960,
           "addend": 0,
           "resolved": 4294804820
@@ -21032,7 +21033,7 @@
         {
           "offset": 150,
           "kind": 20,
-          "symbol": "?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
+          "symbol": "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z",
           "target": 6956960,
           "addend": 0,
           "resolved": 4294804790
@@ -21094,7 +21095,7 @@
           "resolved": 4294358020
         }
       ],
-      "source_sha256": "d5cc3445e29793e981cfa2290baa79515858d3b49aabd6f7abccd30e7d8cdd3e",
+      "source_sha256": "1474a98f22bd723c750b3b6826cf9d046d7a57ee1e69fd817009a2eb1e19c5ff",
       "source": "src/recovered/classes/TechnoClass/TechnoClass_unknown_6ca1d0_006ca1d0.cpp",
       "population": "population-3266",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -25569,7 +25570,7 @@
         {
           "offset": 110,
           "kind": 20,
-          "symbol": "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
+          "symbol": "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
           "target": 6957520,
           "addend": 0,
           "resolved": 4294797630
@@ -25585,7 +25586,7 @@
         {
           "offset": 131,
           "kind": 20,
-          "symbol": "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
+          "symbol": "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z",
           "target": 6957520,
           "addend": 0,
           "resolved": 4294797609
@@ -25743,7 +25744,7 @@
           "resolved": 8352020
         }
       ],
-      "source_sha256": "cc9fc51721a1db45c0741d00d12f928aa8d2792567c9fa1ffe15ca39ac730162",
+      "source_sha256": "69a74e6fb0c2bd61701d258a2a1637c98865f182b7d6a0f8fe27a2150f1880a7",
       "source": "src/recovered/classes/TechnoClass/TechnoClass_Draw_Target_Laser_006cc020.cpp",
       "population": "population-3266",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",

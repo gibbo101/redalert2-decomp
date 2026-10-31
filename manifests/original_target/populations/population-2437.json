@@ -4,8 +4,8 @@
     "id": "population-2437",
     "inventory_sha256": "e4b500abc53aa59b50a527cc9cd30d397ca5f381fdb7148006fb689e5de5715a",
     "gaps_sha256": "c8f174cbfe4423293eddc97c1c2f12d741d001439148058c38e1ea788f7cb8d4",
-    "historical_population_sha256": "76f15dad95b1df50634b831d2328bd00da1e1eb875aeb811592c344a4b8f18c5",
-    "historical_acceptance_sha256": "413cd8b09dcbcfd19053229760e093dc08e1fd677c010e9ebd7151199836cd93"
+    "historical_population_sha256": "2e96fbff1dbd1bbeb7035f4cf08cef1bd612a4f71c3c0b2de83a4fea984546ea",
+    "historical_acceptance_sha256": "61b4b6a66a8dad89d1acd0e838bae4c7615509e58883b7f509f39a635e3d4c94"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6198,7 +6198,7 @@
     "??_7ScrollClass@@6BINoticeSink@@@": 8033340,
     "?unknown_slot116@MissionClass@@UAEXH_N@Z": 5852336,
     "?unknown_tactical_83996c@@3PAVTactical@@A": 8624492,
-    "?Unknown_006A45A0@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
+    "?Render@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
     "?Blit_Display@GScreenClass@@UAEXXZ": 5114960,
     "?Layer@DisplayClass@@2PAVLayerClass@@A": 8725880,
     "?unknown_random_839218@@3VRandom2Class@@A": 8622616,
@@ -6240,7 +6240,7 @@
     "??_7ParticleTypeClass@@6BINoticeSink@@@": 8029500,
     "??_7ParticleTypeClass@@6BINoticeSource@@@": 8029492,
     "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z": 6959136,
-    "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
+    "?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "?Unknown_006AAD40@Tactical@@QAEXXZ": 6991168,
     "?unknown_slot116@AnimClass@@UAEHXZ": 4330880,
     "?unknown_func_60a350@ParticleClass@@QAEXXZ": 6333264,
@@ -6255,7 +6255,7 @@
     "?Unknown_006AA5A0@Tactical@@QAEXABUPoint2D@@@Z": 6989216,
     "?Unknown_006AA770@Tactical@@QAEXXZ": 6989680,
     "??_GScrollClass@@UAEPAXI@Z": 6728800,
-    "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
+    "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
     "?unknown_wind_7eb7e4@@3PAY07HA": 8304612,
     "?unknown_wind_7eb824@@3PAY07HA": 8304676,
     "??0ParticleTypeClass@@QAE@ABVNoInitClass@@@Z": 6427408,

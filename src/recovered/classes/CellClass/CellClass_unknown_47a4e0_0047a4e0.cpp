@@ -10,7 +10,7 @@ void CellClass::unknown_47a4e0()
 {
     CoordStruct corner = Coord_Snap(CoordStruct(MapCoords.X * 256 + 128, MapCoords.Y * 256 + 128, 0));
     Point2D pixel;
-    unknown_tactical_83996c->Unknown_006A29D0(corner, pixel);
+    unknown_tactical_83996c->Coord_To_Pixel(corner, pixel);
     pixel.Y += unknown_int_839634 - unknown_11b * 15;
     pixel.X -= 30;
     pixel.Y -= 15;

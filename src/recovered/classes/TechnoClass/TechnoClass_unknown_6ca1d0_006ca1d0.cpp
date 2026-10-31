@@ -10,7 +10,7 @@
 #include "shared/rad_beam.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
-// @ref ?Unknown_006A27A0@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z=006a27a0
+// @ref ?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z=006a27a0
 // @ref ?Allocate@RadBeam@@SIPAV1@H@Z=00635440
 // @ref ?Set_Color@RadBeam@@QAEXABVRGBClass@@@Z=00635710
 // @ref ?Set_Depth@RadBeam@@QAEXH@Z=00635730
@@ -26,8 +26,8 @@ void TechnoClass::unknown_6ca1d0(AbstractClass *target, int chrono)
     CoordStruct source = unknown_slot43(0);
     CoordStruct center = unknown_slot42();
     if (source.Y != center.Y) {
-        Point2D from = unknown_tactical_83996c->Unknown_006A27A0(source);
-        Point2D to = unknown_tactical_83996c->Unknown_006A27A0(center);
+        Point2D from = unknown_tactical_83996c->Coord_To_Pixel_Absolute(source);
+        Point2D to = unknown_tactical_83996c->Coord_To_Pixel_Absolute(center);
         depth = from.Y - to.Y;
     }
     CoordStruct coord;
