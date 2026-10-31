@@ -750,3 +750,7 @@ A spilled byte of an object's bit-0 flag that is tested once and then dead comes
 is_x = object->flag_bit0; if (object != 0 && is_x ...)`, not from register pressure. Seen in Cell 0x471660/0x47BB30,
 TechnoClass Detach 0x6D2D10, 0x6F69F0; still open at 0x477B55, 0x477C87, 0x477EF8, 0x47805B, 0x47842A, 0x49B76B,
 0x62A8A6, 0x62AB79, 0x6D70AF.
+
+## Element loop versus memset (Cell360, 2026-10-31)
+VC6 turns `for (i = 0; i < N; i++) a[i] = 0;` into `lea edi,a / mov ecx,N / rep stosd` (lea first), while memset emits
+mov ecx first. When the original clears an array with lea edi before mov ecx, write the element loop.

@@ -49,6 +49,19 @@
 #include "shared/abstract_type.hpp"
 #include "shared/rect.hpp"
 
+// The occupation bits of a cell (Westwood's OccupyFlagsType): the five sub-cell spots (centre,
+// north-west, north-east, south-west, south-east), a vehicle, a building ("monolith") and a
+// building owner bit.
+struct CellOccupyFlags {
+    unsigned Center:1;
+    unsigned NW:1;
+    unsigned NE:1;
+    unsigned SW:1;
+    unsigned SE:1;
+    unsigned Vehicle:1;
+    unsigned Monolith:1;
+    unsigned Building:1;
+};
 class CellClass;
 class ObjectClass;
 class TechnoClass;
@@ -142,6 +155,8 @@ public:
     bool unknown_476cc0(ObjectClass *object);   // 0x00476CC0 (the object may stand here; MechLocomotionClass 0x00592F70)
     bool unknown_47b590() const;                // 0x0047B590 (no tile: 0 or 0xFFFF)
     bool unknown_47b5b0() const;                // 0x0047B5B0
+    bool unknown_47b5e0() const;                // 0x0047B5E0 (Westwood's Is_Tile_Cliff: a cliff, waterfall, ramp, cave or bridge tile)
+    int unknown_47bfa0(int house);              // 0x0047BFA0 (-1 unless unknown_dc has the house bit, else the facings whose neighbour has it; BuildingClass 0x004512C6/0x004515A9)
     bool unknown_47b7c0() const;                // 0x0047B7C0
     bool unknown_47b7e0() const;                // 0x0047B7E0
     bool unknown_47b860() const;                // 0x0047B860
@@ -162,9 +177,9 @@ public:
     bool unknown_47c300(int house) const;       // 0x0047C300 (a second per-house bit test; UnitClass slot 49)
     bool unknown_47c2e0(int house) const;       // 0x0047C2E0 (overlay)
     void unknown_476920(void const *arg1, bool arg2, bool arg3, bool alt);  // 0x00476920 (scatters the occupants; alt picks AltOccupierPtr; UnitClass slot 302)
-    bool unknown_479cc0() const;                // 0x00479CC0 (UnitClass slot 27)
-    bool unknown_479cf0() const;                // 0x00479CF0, no stack arguments; AL result
-    bool unknown_479f70() const;                // 0x00479F70, no stack arguments; AL result
+    bool unknown_479cc0() const;                // 0x00479CC0 (Westwood's Has_Tunnel: a valid tube index and LAND_TUNNEL; UnitClass slot 27)
+    bool unknown_479cf0() const;                // 0x00479CF0 (Westwood's Is_Near_Tunnel_NW)
+    bool unknown_479f70() const;                // 0x00479F70 (Westwood's Is_Near_Tunnel_ES)
     bool unknown_47a120(TechnoClass *techno) const;   // 0x0047A120 (UnitClass slot 27)
     void Set_House_Bit(int house);              // 0x0047C320
     void Clear_House_Bit(int house);            // 0x0047C340
@@ -174,6 +189,7 @@ public:
     Point2D unknown_475440() const;             // 0x00475440 (the overlay image offset in the cell; hypothesis)
     void unknown_4754b0(Point2D const &point, Rect const &rect);   // 0x004754B0 (draws IsoTileTypes[0] at point; Tactical 0x006A3641)
     void unknown_474830(Point2D const &point, Rect const &clip);   // 0x00474830 (Westwood's Draw_Overlay_Shadow: the overlay's shadow frame, or a rubble building's)
+    void unknown_4749c0(Point2D const &point, Rect const &clip);   // 0x004749C0 (Westwood's Draw_Overlay: the overlay image at point within clip; not recovered; Tactical Draw_Overlays 0x006A7350)
     void unknown_474260(int arg1, int arg2, int frame);  // 0x00474260 (draws the shroud frame; hypothesis)
     void unknown_474510(int arg1, int arg2, int frame);  // 0x00474510 (draws the fog frame; hypothesis)
     void unknown_475520(int arg1, int arg2);    // 0x00475520 (updates and draws the cell's shroud and fog frames; Tactical 0x006A3FA6)
@@ -219,6 +235,11 @@ public:
     // Westwood's Init_Drawer: takes the drawer given, or finds or makes one for the cell's light (+0x34), and keeps the light values.
     // arg1 is the drawer (a LightConvertClass *; retyping it is a rename of the accepted callers' binding).
     void Init_Drawer(LightConvertClass *drawer, int intensity, int ambient, int brightness, int tile_brightness, int alt_brightness);   // 0x004790F0 (TerrainClass slots 67/68, DisplayClass 0x0049E570 pass no drawer)
+    class BuildingClass *Get_Gate() const;   // Westwood's Get_Gate: the gate building in the cell, or 0 (inline in the Cell unit)
+    CoordStruct Closest_Free_Spot(CoordStruct const &coord, bool any = false, bool alt = false) const;   // 0x004764B0 (the free sub-cell spot nearest coord, alt on the bridge; any: the nearest spot even if taken)
+    void unknown_478f40();                      // 0x00478F40 (Westwood's Recalc_Passability: sets unknown_4c from the overlay, land and occupiers)
+    void unknown_47bb30();                      // 0x0047BB30 (veins attack the occupants; hypothesis)
+    int unknown_479ac0(CoordStruct const &origin) const;   // 0x00479AC0 (Westwood's Bounce_Direction: the facing to bounce toward from origin's cell)
     void Inc_Drawer_Ref_Count(LightConvertClass *drawer) const;   // 0x00479C90
     void Dec_Drawer_Ref_Count(LightConvertClass *drawer) const;   // 0x00479CA0
     // Westwood's Pick_Drawer and Init_Light (TibSun CELL.CPP order).
@@ -296,7 +317,7 @@ public:
     short unknown_112;                          // +0x112
     short unknown_114;                          // +0x114
     short unknown_116;                          // +0x116
-    char unknown_118;                           // +0x118
+    unsigned char unknown_118;                  // +0x118
     char unknown_119;                           // +0x119
     char unknown_11a;                           // +0x11A
     char unknown_11b;                           // +0x11B
@@ -308,16 +329,33 @@ public:
     char unknown_121;                           // +0x121
     char unknown_122;                           // +0x122
     char unknown_123;
-    unsigned char unknown_124;                  // +0x124
-    char unknown_125[3];
-    unsigned char unknown_128;                  // +0x128
-    char unknown_129[3];
-    unsigned int unknown_12c;                   // +0x12C flags; bit 3 answers IGameMap::Is_Visible
+    // +0x124 occupation flags (Westwood's Flag: the five sub-cell spots, then Vehicle, Monolith,
+    // Building); +0x128 the same for the bridge (BridgeFlag). unknown_124/unknown_128 read them as a
+    // byte (Westwood's Composite), Occupy_124/Occupy_128 bit by bit (Closest_Free_Spot 0x004764B0).
+    union {
+        unsigned char unknown_124;
+        CellOccupyFlags Occupy_124;
+    };
+    union {
+        unsigned char unknown_128;
+        CellOccupyFlags Occupy_128;
+    };
+    union {                                     // +0x12C flags; bit 3 answers IGameMap::Is_Visible
+        unsigned int unknown_12c;
+        struct {
+            unsigned Flags_12c:5;
+        };
+    };
     int unknown_130;                            // +0x130
     int unknown_134;                            // +0x134
     bool unknown_138;                           // +0x138
     int unknown_13c;                            // +0x13C
-    unsigned int unknown_140;                   // +0x140 flags
+    union {                                     // +0x140 flags
+        unsigned int unknown_140;
+        struct {
+            unsigned Flags_140:23;
+        };
+    };
     int unknown_144;                            // +0x144
 };
 
