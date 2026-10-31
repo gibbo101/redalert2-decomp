@@ -132,6 +132,9 @@ public:
     // With exactly one object selected and owned by a house the player does not control, unselects it (0x006AAD70;
     // true then; hypothesis).
     bool Unknown_006AAD70();
+    // Draws the caption over the middle of the view: frame unknown_a4 of GRFXTXT.SHP when set, else the text
+    // centred in the bitmap font (0x006A5460; TibSun Tactical::Draw_Screen_Text).
+    void Draw_Screen_Text(wchar_t const *text);
     void Reset_Dirty_Rectangles();                  // 0x006AAF80 (empties TacticalLists::DirtyAreas)
     // Redraws the overlays of the view, the panned strips, the flagged cells and the dirty areas (0x006A3B20).
     void Render_Overlays(Rect const &xpanrect, Rect const &ypanrect, bool fullredraw);
