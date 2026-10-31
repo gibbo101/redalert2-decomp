@@ -243,7 +243,7 @@ public:
     virtual int unknown_slot283();                                    // slot 283 0x00441EB0
     virtual void unknown_slot284(Point2D const &point, Rect const &bounds);  // slot 284 0x0043ABD0 (draws; ret 8)
     virtual UnknownFacingDir unknown_slot285(AbstractClass *target);  // slot 285 0x0043BBD0 (ret 8: the direction to a target)
-    virtual int unknown_slot286(int arg1, int arg2, int arg3, int arg4);  // slot 286 0x0043E270
+    virtual void unknown_slot286(TechnoClass *last_contact, TechnoClass *source, bool forced, Cell const *offset);  // slot 286 0x0043E270
     virtual bool unknown_slot287();                                    // slot 287 0x00444580
     virtual void unknown_slot288(Cell cell);                            // slot 288 0x00450550
     virtual void unknown_slot289(Cell cell);                            // slot 289 0x00450400
