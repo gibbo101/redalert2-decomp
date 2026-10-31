@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6be1c0(ScriptMissionClass const &mission, int unknown) (0x006BE1C0)
+// void TeamClass::TMission_unknown_6be1c0(ScriptMissionClass const &mission, bool unknown) (0x006BE1C0)
 // Chronoshift: with the leader house's super weapons of types 3 and 4 (hypothesis: ChronoSphere and
 // ChronoWarp) and the first ready, picks a building of type Data & 0xFFFF (mode Data >> 16, as 0x006BCF70)
 // and fires both, 3 at the team's cell (+0x34) and 4 at the building's, which becomes the team's target;
@@ -16,7 +16,7 @@
 
 extern DynamicVectorClass<BuildingTypeClass *> BuildingTypes;      // 0x00A35CD8
 
-void TeamClass::TMission_unknown_6be1c0(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6be1c0(ScriptMissionClass const &mission, bool unknown)
 {
     FootClass *leader = unknown_func_6baa60();
     if (leader == 0) {

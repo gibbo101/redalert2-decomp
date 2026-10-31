@@ -95,53 +95,53 @@ public:
     void unknown_func_6bd990(int value);                            // 0x006BD990 (stores value in every member)
 
     // Script action handlers (second argument unknown).
-    void TMission_unknown_6bbe60(ScriptMissionClass const &mission, int unknown);  // 0x006BBE60
-    void TMission_unknown_6bbe90(ScriptMissionClass const &mission, int unknown);  // 0x006BBE90
-    void TMission_unknown_6bbec0(ScriptMissionClass const &mission, int unknown);  // 0x006BBEC0
-    void TMission_unknown_6bbef0(ScriptMissionClass const &mission, int unknown);  // 0x006BBEF0
-    void TMission_unknown_6bc360(ScriptMissionClass const &mission, int unknown);  // 0x006BC360
-    void TMission_unknown_6bc380(ScriptMissionClass const &mission, int unknown);  // 0x006BC380
-    void TMission_unknown_6bc410(ScriptMissionClass const &mission, int unknown);  // 0x006BC410
-    void TMission_unknown_6bc290(ScriptMissionClass const &mission, int unknown);  // 0x006BC290
-    void TMission_unknown_6bc4a0(ScriptMissionClass const &mission, int unknown);  // 0x006BC4A0
-    void TMission_unknown_6bc3a0(ScriptMissionClass const &mission, int unknown);  // 0x006BC3A0
-    void TMission_unknown_6bc2e0(ScriptMissionClass const &mission, int unknown);  // 0x006BC2E0
-    void TMission_unknown_6bc460(ScriptMissionClass const &mission, int unknown);  // 0x006BC460
-    void TMission_unknown_6bc5b0(ScriptMissionClass const &mission, int unknown);  // 0x006BC5B0
-    void TMission_unknown_6bc5f0(ScriptMissionClass const &mission, int unknown);  // 0x006BC5F0
-    void TMission_unknown_6bc660(ScriptMissionClass const &mission, int unknown);  // 0x006BC660
+    void TMission_unknown_6bbe60(ScriptMissionClass const &mission, bool unknown);  // 0x006BBE60
+    void TMission_unknown_6bbe90(ScriptMissionClass const &mission, bool unknown);  // 0x006BBE90
+    void TMission_unknown_6bbec0(ScriptMissionClass const &mission, bool unknown);  // 0x006BBEC0
+    void TMission_unknown_6bbef0(ScriptMissionClass const &mission, bool unknown);  // 0x006BBEF0
+    void TMission_unknown_6bc360(ScriptMissionClass const &mission, bool unknown);  // 0x006BC360
+    void TMission_unknown_6bc380(ScriptMissionClass const &mission, bool unknown);  // 0x006BC380
+    void TMission_unknown_6bc410(ScriptMissionClass const &mission, bool unknown);  // 0x006BC410
+    void TMission_unknown_6bc290(ScriptMissionClass const &mission, bool unknown);  // 0x006BC290
+    void TMission_unknown_6bc4a0(ScriptMissionClass const &mission, bool unknown);  // 0x006BC4A0
+    void TMission_unknown_6bc3a0(ScriptMissionClass const &mission, bool unknown);  // 0x006BC3A0
+    void TMission_unknown_6bc2e0(ScriptMissionClass const &mission, bool unknown);  // 0x006BC2E0
+    void TMission_unknown_6bc460(ScriptMissionClass const &mission, bool unknown);  // 0x006BC460
+    void TMission_unknown_6bc5b0(ScriptMissionClass const &mission, bool unknown);  // 0x006BC5B0
+    void TMission_unknown_6bc5f0(ScriptMissionClass const &mission, bool unknown);  // 0x006BC5F0
+    void TMission_unknown_6bc660(ScriptMissionClass const &mission, bool unknown);  // 0x006BC660
     void TMission_unknown_6bc6d0(ScriptMissionClass const &mission, bool unknown);  // 0x006BC6D0
-    void TMission_unknown_6bc070(ScriptMissionClass const &mission, int unknown);  // 0x006BC070
+    void TMission_unknown_6bc070(ScriptMissionClass const &mission, bool unknown);  // 0x006BC070
     void TMission_unknown_6bda70(ScriptMissionClass const &mission, bool unknown);  // 0x006BDA70
-    void TMission_unknown_6bb350(ScriptMissionClass const &mission, int unknown);  // 0x006BB350
-    void TMission_unknown_6bc4c0(ScriptMissionClass const &mission, int unknown);  // 0x006BC4C0
+    void TMission_unknown_6bb350(ScriptMissionClass const &mission, bool unknown);  // 0x006BB350
+    void TMission_unknown_6bc4c0(ScriptMissionClass const &mission, bool unknown);  // 0x006BC4C0
     void TMission_unknown_6badc0(ScriptMissionClass const &mission, bool unknown);  // 0x006BADC0
     void TMission_unknown_6bae00(ScriptMissionClass const &mission, bool unknown);  // 0x006BAE00
     void TMission_unknown_6bd9b0(ScriptMissionClass const &mission, bool unknown);  // 0x006BD9B0
-    void TMission_unknown_6bb3b0(ScriptMissionClass const &mission, int unknown);  // 0x006BB3B0
-    void TMission_unknown_6bb420(ScriptMissionClass const &mission, int unknown);  // 0x006BB420
+    void TMission_unknown_6bb3b0(ScriptMissionClass const &mission, bool unknown);  // 0x006BB3B0
+    void TMission_unknown_6bb420(ScriptMissionClass const &mission, bool unknown);  // 0x006BB420
     void TMission_unknown_6bbb40(ScriptMissionClass const &mission, bool unknown);  // 0x006BBB40
     void TMission_unknown_6bb260(ScriptMissionClass const &mission, bool unknown);  // 0x006BB260
     void TMission_unknown_6bb020(ScriptMissionClass const &mission, bool unknown);  // 0x006BB020
-    void TMission_unknown_6bbf20(ScriptMissionClass const &mission, int unknown);  // 0x006BBF20
+    void TMission_unknown_6bbf20(ScriptMissionClass const &mission, bool unknown);  // 0x006BBF20
     void TMission_unknown_6bb0f0(ScriptMissionClass const &mission, bool unknown);  // 0x006BB0F0
-    void TMission_unknown_6bb310(ScriptMissionClass const &mission, int unknown);  // 0x006BB310
-    void TMission_unknown_6bc040(ScriptMissionClass const &mission, int unknown);  // 0x006BC040
-    void TMission_unknown_6bc130(ScriptMissionClass const &mission, int unknown);  // 0x006BC130
-    void TMission_unknown_6bc160(ScriptMissionClass const &mission, int unknown);  // 0x006BC160
-    void TMission_unknown_6bc190(ScriptMissionClass const &mission, int unknown);  // 0x006BC190
-    void TMission_unknown_6bc260(ScriptMissionClass const &mission, int unknown);  // 0x006BC260
-    void TMission_unknown_6bc1e0(ScriptMissionClass const &mission, int unknown);  // 0x006BC1E0 (jump to line Data - 2)
-    void TMission_unknown_6bc250(ScriptMissionClass const &mission, int unknown);  // 0x006BC250 (nothing)
-    void TMission_unknown_6bd7f0(ScriptMissionClass const &mission, int unknown);  // 0x006BD7F0 (also sets IsSuspended)
+    void TMission_unknown_6bb310(ScriptMissionClass const &mission, bool unknown);  // 0x006BB310
+    void TMission_unknown_6bc040(ScriptMissionClass const &mission, bool unknown);  // 0x006BC040
+    void TMission_unknown_6bc130(ScriptMissionClass const &mission, bool unknown);  // 0x006BC130
+    void TMission_unknown_6bc160(ScriptMissionClass const &mission, bool unknown);  // 0x006BC160
+    void TMission_unknown_6bc190(ScriptMissionClass const &mission, bool unknown);  // 0x006BC190
+    void TMission_unknown_6bc260(ScriptMissionClass const &mission, bool unknown);  // 0x006BC260
+    void TMission_unknown_6bc1e0(ScriptMissionClass const &mission, bool unknown);  // 0x006BC1E0 (jump to line Data - 2)
+    void TMission_unknown_6bc250(ScriptMissionClass const &mission, bool unknown);  // 0x006BC250 (nothing)
+    void TMission_unknown_6bd7f0(ScriptMissionClass const &mission, bool unknown);  // 0x006BD7F0 (also sets IsSuspended)
     void TMission_unknown_6bae60(ScriptMissionClass const &mission, bool unknown);  // 0x006BAE60
-    void TMission_unknown_6bc7b0(ScriptMissionClass const &mission, int unknown);  // 0x006BC7B0
-    void TMission_unknown_6bb480(ScriptMissionClass const &mission, int unknown);  // 0x006BB480 (leader picks a target of kind Data; done once members are armed)
-    void TMission_unknown_6bb8b0(ScriptMissionClass const &mission, int unknown);  // 0x006BB8B0 (Red Alert's TMission_Deploy)
-    void TMission_unknown_6bbbb0(ScriptMissionClass const &mission, int unknown);  // 0x006BBBB0 (Red Alert's Coordinate_Do; mission Data)
-    void TMission_unknown_6bd4b0(ScriptMissionClass const &mission, int unknown);  // 0x006BD4B0 (Red Alert's TMission_Unload)
+    void TMission_unknown_6bc7b0(ScriptMissionClass const &mission, bool unknown);  // 0x006BC7B0
+    void TMission_unknown_6bb480(ScriptMissionClass const &mission, bool unknown);  // 0x006BB480 (leader picks a target of kind Data; done once members are armed)
+    void TMission_unknown_6bb8b0(ScriptMissionClass const &mission, bool unknown);  // 0x006BB8B0 (Red Alert's TMission_Deploy)
+    void TMission_unknown_6bbbb0(ScriptMissionClass const &mission, bool unknown);  // 0x006BBBB0 (Red Alert's Coordinate_Do; mission Data)
+    void TMission_unknown_6bd4b0(ScriptMissionClass const &mission, bool unknown);  // 0x006BD4B0 (Red Alert's TMission_Unload)
     void TMission_unknown_6bddb0(ScriptMissionClass const &mission, bool unknown);  // 0x006BDDB0 (toward the enemy base from the own one)
-    void TMission_unknown_6be1c0(ScriptMissionClass const &mission, int unknown);  // 0x006BE1C0 (fires super weapons 3 and 4: chronoshift)
+    void TMission_unknown_6be1c0(ScriptMissionClass const &mission, bool unknown);  // 0x006BE1C0 (fires super weapons 3 and 4: chronoshift)
     void TMission_unknown_6bc980(ScriptMissionClass const &mission, bool unknown);  // 0x006BC980 (as 0x006BC7B0 over the leader's own house, 0x006BD240)
 
     virtual HRESULT __stdcall GetClassID(GUID *clsid);              // 0x006BABF0 slot 3

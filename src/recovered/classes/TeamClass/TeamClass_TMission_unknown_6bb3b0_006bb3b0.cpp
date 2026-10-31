@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bb3b0(ScriptMissionClass const &mission, int unknown) (0x006BB3B0)
+// void TeamClass::TMission_unknown_6bb3b0(ScriptMissionClass const &mission, bool unknown) (0x006BB3B0)
 // Moves every member into a new team of team type Data (same owner) and deletes this team.
 #include "shared/unit.hpp"
 #include "shared/foot.hpp"
@@ -10,7 +10,7 @@
 // @ref ??_GTeamClass@@UAEPAXI@Z=006be740
 // @ref ?TeamTypes@@3V?$DynamicVectorClass@PAVTeamTypeClass@@@@A=00a40c48
 
-void TeamClass::TMission_unknown_6bb3b0(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bb3b0(ScriptMissionClass const &mission, bool unknown)
 {
     TeamClass *team = new TeamClass(TeamTypes[mission.Data], Owner, 0);
     FootClass *member = Member;

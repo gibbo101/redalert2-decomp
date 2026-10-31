@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bc4c0(ScriptMissionClass const &mission, int unknown) (0x006BC4C0)
+// void TeamClass::TMission_unknown_6bc4c0(ScriptMissionClass const &mission, bool unknown) (0x006BC4C0)
 // Moves the tactical view to the team's target, raised over the map (and over cells flagged 0x100 or 0x400), using Data.
 #include "shared/unit.hpp"
 #include "shared/foot.hpp"
@@ -12,7 +12,7 @@
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
 // @ref ?Unknown_0055A280@MapClass@@QAEHABUCoordStruct@@@Z=0055a280
 
-void TeamClass::TMission_unknown_6bc4c0(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bc4c0(ScriptMissionClass const &mission, bool unknown)
 {
     CoordStruct coord = unknown_34->Center_Coord();
     coord.Z = Map.Unknown_0055A280(coord);

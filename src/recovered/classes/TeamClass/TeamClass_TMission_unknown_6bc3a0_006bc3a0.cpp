@@ -1,10 +1,10 @@
-// void TeamClass::TMission_unknown_6bc3a0(ScriptMissionClass const &mission, int unknown) (0x006BC3A0)
+// void TeamClass::TMission_unknown_6bc3a0(ScriptMissionClass const &mission, bool unknown) (0x006BC3A0)
 // Kills every member that is alive and on the map (slot 86 with the rules' warhead), repeating while any was hit, then completes the step.
 #include "shared/unit.hpp"
 #include "shared/foot.hpp"
 #include "shared/team.hpp"
 
-void TeamClass::TMission_unknown_6bc3a0(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bc3a0(ScriptMissionClass const &mission, bool unknown)
 {
     bool hit;
     do {

@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bd4b0(ScriptMissionClass const &mission, int unknown) (0x006BD4B0; Red Alert's TMission_Unload)
+// void TeamClass::TMission_unknown_6bd4b0(ScriptMissionClass const &mission, bool unknown) (0x006BD4B0; Red Alert's TMission_Unload)
 // Members carrying passengers unload (mission 0x10) where their cell has no building; once none carries
 // any, Data says who leaves the team: transports go home (with TransportsReturnOnUnload, to +0x1B0) or
 // leave for Data 2 and 3, the others (non-transports, or units when the task force has a transport
@@ -12,7 +12,7 @@
 #include "shared/map_view.hpp"
 #include "shared/cell.hpp"
 
-void TeamClass::TMission_unknown_6bd4b0(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bd4b0(ScriptMissionClass const &mission, bool unknown)
 {
     FootClass *unit = Member;
     bool finished = true;

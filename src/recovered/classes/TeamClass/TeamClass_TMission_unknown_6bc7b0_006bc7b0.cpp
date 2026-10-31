@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bc7b0(ScriptMissionClass const &mission, int unknown) (0x006BC7B0)
+// void TeamClass::TMission_unknown_6bc7b0(ScriptMissionClass const &mission, bool unknown) (0x006BC7B0)
 // Picks a target of a building type (Data: type index in the low word, a value in the high word) for
 // the first member and targets the reachable cell nearest it in the first member's movement zone
 // (none when there is none); completes the step when the team has no second target, then runs 0x006BA1A0.
@@ -19,7 +19,7 @@
 
 extern DynamicVectorClass<BuildingTypeClass *> BuildingTypes;      // 0x00A35CD8
 
-void TeamClass::TMission_unknown_6bc7b0(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bc7b0(ScriptMissionClass const &mission, bool unknown)
 {
     if (unknown_3c == 0 && Member != 0) {
         FootClass *first = Member;

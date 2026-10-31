@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bb480(ScriptMissionClass const &mission, int unknown) (0x006BB480)
+// void TeamClass::TMission_unknown_6bb480(ScriptMissionClass const &mission, bool unknown) (0x006BB480)
 // Sends the team's leader to a target found from Data, then completes the
 // step once every member has ammo.
 #include "shared/unit.hpp"
@@ -24,7 +24,7 @@ inline bool Team_Members_Armed(TeamClass *team)
     return true;
 }
 
-void TeamClass::TMission_unknown_6bb480(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bb480(ScriptMissionClass const &mission, bool unknown)
 {
     if (unknown_3c == 0 && Member != 0) {
         FootClass *leader = unknown_func_6baa60();

@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bc660(ScriptMissionClass const &mission, int unknown) (0x006BC660)
+// void TeamClass::TMission_unknown_6bc660(ScriptMissionClass const &mission, bool unknown) (0x006BC660)
 // Turns every TRUCKA unit of the team (the type is the TRUCKB one) and completes the step.
 #include "shared/unit.hpp"
 #include "shared/foot.hpp"
@@ -10,7 +10,7 @@
 // @ref ??_C@_06DJAP@TRUCKB?$AA@=007f6dbc
 // @ref ??_C@_06MGLG@TRUCKA?$AA@=007f6db4
 
-void TeamClass::TMission_unknown_6bc660(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bc660(ScriptMissionClass const &mission, bool unknown)
 {
     for (FootClass *member = Member; member != 0; member = (FootClass *)member->unknown_4c8) {
         if (member->Kind_Of() == 1 && _stricmp(member->unknown_slot32()->ID, "TRUCKA") == 0) {

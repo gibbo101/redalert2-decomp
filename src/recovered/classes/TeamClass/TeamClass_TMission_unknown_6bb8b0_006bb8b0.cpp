@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bb8b0(ScriptMissionClass const &mission, int unknown) (0x006BB8B0; Red Alert's TMission_Deploy)
+// void TeamClass::TMission_unknown_6bb8b0(ScriptMissionClass const &mission, bool unknown) (0x006BB8B0; Red Alert's TMission_Deploy)
 // Conscripts every member; a live unit whose type deploys into a building stops the step: unless it is
 // already unloading (mission 0x10) it is told to deploy where the building fits (else 0x00458B10 for its
 // cell and house); simple deployers and deploying infantry get mission 0x10. Completes when no unit deploys.
@@ -10,7 +10,7 @@
 #include "shared/techno_type.hpp"
 #include "shared/aircraft.hpp"
 
-void TeamClass::TMission_unknown_6bb8b0(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bb8b0(ScriptMissionClass const &mission, bool unknown)
 {
     FootClass *unit = Member;
     bool finished = true;

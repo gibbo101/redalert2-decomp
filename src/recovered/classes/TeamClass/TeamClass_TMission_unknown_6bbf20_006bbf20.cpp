@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bbf20(ScriptMissionClass const &mission, int unknown) (0x006BBF20)
+// void TeamClass::TMission_unknown_6bbf20(ScriptMissionClass const &mission, bool unknown) (0x006BBF20)
 // Re-picks the team's targets (+0x34/+0x38 through 0x006B9610), copies +0x34 to +0x40, runs 0x006BA1A0, and then points every live, placed member at the new target's own target.
 #include "shared/unit.hpp"
 #include "shared/foot.hpp"
@@ -8,7 +8,7 @@
 // @ref ?As_Techno@AbstractClass@@QAEPAVTechnoClass@@XZ=0040dc20
 // @ref ?unknown_a40774@@3HA=00a40774
 
-void TeamClass::TMission_unknown_6bbf20(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bbf20(ScriptMissionClass const &mission, bool unknown)
 {
     unknown_func_6b9610(&unknown_34, &unknown_38);
     unknown_40 = unknown_34;

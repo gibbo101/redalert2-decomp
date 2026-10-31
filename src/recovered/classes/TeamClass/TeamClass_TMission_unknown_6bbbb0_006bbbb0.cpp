@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bbbb0(ScriptMissionClass const &mission, int unknown) (0x006BBBB0; Red Alert's Coordinate_Do)
+// void TeamClass::TMission_unknown_6bbbb0(ScriptMissionClass const &mission, bool unknown) (0x006BBBB0; Red Alert's Coordinate_Do)
 // Conscripts every member; a live one without target and destination that strayed beyond twice the
 // allowed distance (unless Data is mission 0xB) moves back to the team (+0x34), the cell beside it
 // (0x004C8AF0) as destination; otherwise one without target and destination takes mission Data (except
@@ -9,7 +9,7 @@
 #include "shared/map_view.hpp"
 #include "shared/cell.hpp"
 
-void TeamClass::TMission_unknown_6bbbb0(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bbbb0(ScriptMissionClass const &mission, bool unknown)
 {
     FootClass *unit = Member;
     int do_mission = mission.Data;

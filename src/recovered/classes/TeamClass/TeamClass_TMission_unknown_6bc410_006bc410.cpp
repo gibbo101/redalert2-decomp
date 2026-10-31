@@ -1,10 +1,10 @@
-// void TeamClass::TMission_unknown_6bc410(ScriptMissionClass const &mission, int unknown) (0x006BC410)
+// void TeamClass::TMission_unknown_6bc410(ScriptMissionClass const &mission, bool unknown) (0x006BC410)
 // Takes every member off the map (slot 52) and removes it (slot 60), then completes the step.
 #include "shared/unit.hpp"
 #include "shared/foot.hpp"
 #include "shared/team.hpp"
 
-void TeamClass::TMission_unknown_6bc410(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bc410(ScriptMissionClass const &mission, bool unknown)
 {
     FootClass *member = Member;
     while (member != 0) {

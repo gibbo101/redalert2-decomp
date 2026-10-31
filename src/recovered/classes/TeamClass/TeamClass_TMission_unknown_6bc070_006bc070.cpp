@@ -1,4 +1,4 @@
-// void TeamClass::TMission_unknown_6bc070(ScriptMissionClass const &mission, int unknown) (0x006BC070)
+// void TeamClass::TMission_unknown_6bc070(ScriptMissionClass const &mission, bool unknown) (0x006BC070)
 // Waits until no member is moving, turning idle members toward direction Data (Data << 13 in the 16-bit facing).
 #include "shared/unit.hpp"
 #include "shared/foot.hpp"
@@ -6,7 +6,7 @@
 // @ref ?Current@FacingClass@@QBE?AUUnknownFacingDir@@XZ=004b8be0
 // @ref ?_com_issue_error@@YGXJ@Z=00795940
 
-void TeamClass::TMission_unknown_6bc070(ScriptMissionClass const &mission, int unknown)
+void TeamClass::TMission_unknown_6bc070(ScriptMissionClass const &mission, bool unknown)
 {
     bool done = true;
     FootClass *member = Member;
