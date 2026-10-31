@@ -83,6 +83,8 @@ ObjectTypeClass *__fastcall Unknown_00482C00(int kind, int id);
 // Help-text state: tooltips on (0x00A40958), cost-only format (0x008373C0)
 // and the text buffer (0x00AB9484).
 extern bool unknown_flag_8373c0;
+// Prints a cameo caption in the "DarkRed" scheme when captions are on (0x00682140).
+void __fastcall Unknown_00682140(wchar_t const *text, Point2D const &point, Rect const &window, int width);
 extern wchar_t unknown_text_ab9484[];
 extern "C" unsigned int __cdecl wcslen(wchar_t const *string);     // 0x00783605
 
