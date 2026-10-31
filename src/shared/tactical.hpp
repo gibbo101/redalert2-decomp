@@ -37,6 +37,15 @@ int __fastcall Unknown_006A29B0(int pixel);
 // by its users; hypothesis).
 void __fastcall Unknown_006A6800(int x, int y, int *pixel_x, int *pixel_y);
 
+// A rectangular point rotated onto the isometric axes, in the units it came in (TibSun
+// Tactical::Rectangular_To_Isometric(Point2D); built on 0x006A6800 and always expanded).
+inline Point2D Rectangular_To_Isometric(Point2D point)
+{
+    Point2D iso;
+    Unknown_006A6800(point.X, point.Y, &iso.X, &iso.Y);
+    return iso;
+}
+
 // The screen offset of a lepton offset, built through 0x006A6800 (0x006A2740;
 // the Tactical slot-24 line drawer 0x006AC160 builds two; name hypothesis).
 struct TacticalProjection {
@@ -97,7 +106,10 @@ public:
     // (0x006A6BD0; radar slot 51).
     CoordStruct Unknown_006A2B10(Point2D const &point);
     CoordStruct Unknown_006A2BF0(Point2D const &point); // original ECX Tactical, hidden CoordStruct result, RET8
-    Point2D Unknown_006A27A0(CoordStruct const &coord);  // 0x006A27A0 (the screen point of a coordinate; hidden Point2D result, RET8)
+    // The absolute screen pixel of a coordinate: the isometric rotation, leptons to pixels, less the height
+    // (0x006A27A0; TibSun Tactical::Coord_To_Pixel_Absolute(Coord const &)), and of a flat point (0x006A2870).
+    Point2D Unknown_006A27A0(CoordStruct const &coord);
+    Point2D Coord_To_Pixel_Absolute(Point2D const &point);
     Cell Unknown_006A6BD0(Point2D const &point);
     // The cell drawn over a coordinate: scans back along the view diagonal for the cell whose raised ground covers it (0x006A6A50).
     Cell Coord_To_Cell(CoordStruct const &coord);
@@ -105,8 +117,8 @@ public:
     int Unknown_006AA840(int arg1);                 // 0x006AA840 (display slot 41; -1 when none)
     void Unknown_006A8B70(int arg1, int arg2);      // 0x006A8B70 (display slot 41)
 
-    // The screen pixel of a coordinate; false when off screen (0x006A29D0;
-    // hypothesis: Coord_To_Pixel).
+    // The screen pixel of a coordinate: the absolute pixel less the view position; false when it lies
+    // more than six tiles outside the view (0x006A29D0; TibSun Tactical::Coord_To_Pixel).
     bool Unknown_006A29D0(CoordStruct const &coord, Point2D &pixel);
     // The shroud (fog: the fog) edge frame of a cell from its eight neighbours: -2 solid black, -1 none
     // (0x006A8D40; TibSun Tactical::Cell_Shadow; the flag is read as a byte).
