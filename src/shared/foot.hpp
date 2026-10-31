@@ -379,7 +379,10 @@ public:
     bool Harvester;                             // +0xBA6 (as shared/unit_type.hpp)
     char unknown_ba7[0xBAA - 0xBA7];
     bool DeployToFire;                          // +0xBAA
-    char unknown_bab[0xBE0 - 0xBAB];
+    char unknown_bab[0xBB0 - 0xBAB];
+    bool SmallVisceroid;                        // +0xBB0 (as full UnitTypeClass)
+    bool LargeVisceroid;                        // +0xBB1 (as full UnitTypeClass)
+    char unknown_bb2[0xBE0 - 0xBB2];
     int BurstDelay[4];                          // +0xBE0 (TechnoClass slot 187)
 };
 #endif
@@ -390,7 +393,9 @@ public:
     FootClass *unknown_5b0;                     // +0x5B0 the next unit of a convoy (FootClass 0x004C3000; hypothesis)
     int unknown_5b4;                            // +0x5B4 (-1; FootClass slot 303 halves the speed when set)
     bool unknown_5b8;                           // +0x5B8 (FootClass 0x004C3000: the convoy does not follow)
-    char unknown_5b9[0x5C4 - 0x5B9];
+    char unknown_5b9[0x5BB - 0x5B9];
+    bool unknown_5bb;                           // +0x5BB (composite surface; matches full UnitClass, TechnoClass 0x006D1510)
+    char unknown_5bc[0x5C4 - 0x5BC];
     EBolt *unknown_5c4;                         // +0x5C4 the unit's electric bolt (TechnoClass 0x006CA130)
 };
 #endif
