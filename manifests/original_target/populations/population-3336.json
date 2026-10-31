@@ -4,8 +4,8 @@
     "id": "population-3336",
     "inventory_sha256": "425447eecbf23d4f143d4128dc839f68e43716b8d8ffa3ce4ab32eff804eb0bd",
     "gaps_sha256": "5ed18002a0178d5b02b0ab8b9a385a4fa102c224ca00b7439a9d90c345f8f026",
-    "historical_population_sha256": "ec4a4c2451f413e5e0c77f3b6b00142df64b6f255a0b910c0fbc9a7395553b58",
-    "historical_acceptance_sha256": "f5be1f79e931eab722d9ec51f7879a8b653263c14d77dbd76b1d9124f3e3b97b"
+    "historical_population_sha256": "e709e1dd1db5ec8b511b57e4900a9f74f608bdbef97e181fc1457c9a58698f72",
+    "historical_acceptance_sha256": "f754c2d2330dbd9d2ceef06f73fad427554f2672a97d6fb09e5877b6f38348ec"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1793,7 +1793,7 @@
     "?Unknown_Pregame_Setup_005c74f0@@YAXXZ": 6059248,
     "?Unknown_005c7570": 6059376,
     "?Download_Map_Preview_005c7970@@YIXXZ": 6060400,
-    "?Random_Map_CRC_005c8420@@YAPADXZ": 6063136,
+    "?Random_Map_CRC_005c8420@@YIPADXZ": 6063136,
     "?Is_Host_005c86a0@@YA_NXZ": 6063776,
     "?Is_Local_Name_005c86c0@@YIHPBG@Z": 6063808,
     "?Init_Lobby_Entries_005c86e0@@YIXXZ": 6063840,
@@ -9340,7 +9340,8 @@
     "??_ETagTypeClass@@UAEPAXI@Z": 7032528,
     "??_ETriggerTypeClass@@UAEPAXI@Z": 7270128,
     "??_ETriggerClass@@UAEPAXI@Z": 7265184,
-    "??_ENullModemConnClass@@UAEPAXI@Z": 6085840
+    "??_ENullModemConnClass@@UAEPAXI@Z": 6085840,
+    "__real@8@4004c800000000000000": 7986024
   },
   "regions": [
     {
@@ -20908,8 +20909,8 @@
     {
       "entry": 6063136,
       "method": "005c8420",
-      "symbol": "?Random_Map_CRC_005c8420@@YAPADXZ",
-      "symbol_prefix": "?Random_Map_CRC_005c8420@@YAPADXZ",
+      "symbol": "?Random_Map_CRC_005c8420@@YIPADXZ",
+      "symbol_prefix": "?Random_Map_CRC_005c8420@@YIPADXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -20979,7 +20980,7 @@
           "resolved": 10943968
         }
       ],
-      "source_sha256": "fa17fb37359642d2ae7e28ad908a0948a688a17158630bbf062addf0307bd6ac",
+      "source_sha256": "5d5484fa6f0d1ec458484d074d8c545d988b9f6ee27b89a61d38e4e579d2a076",
       "source": "src/recovered/netshare/Random_Map_CRC_005c8420.cpp",
       "population": "population-3336",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",

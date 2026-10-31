@@ -4,8 +4,8 @@
     "id": "population-3333",
     "inventory_sha256": "543a01ef60046b946cc8b42831a3ad98a483a60ca9e517837bfdbe0158cfa108",
     "gaps_sha256": "fe3207b2f6fbb03991bb1c1cd8fbdf435699d957d5084b71188a8e62d5f09833",
-    "historical_population_sha256": "f126a68e6b5ecfa5aece8f916da745fd29bf58f92c1bed9a30e72a7fe11bc0fb",
-    "historical_acceptance_sha256": "ccec5674c32f22107b655a9e9c5e367ab8692867f5ebbef092ffbee9279e8876"
+    "historical_population_sha256": "f4581ff858f2ebefdce33d9f1994179cce5d641b5060c81509e748bced788662",
+    "historical_acceptance_sha256": "da7669489433bc32fd5e1111d0cff5e13f9854a4133f17515a68edf9adca9ac4"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -7664,7 +7664,7 @@
     "?rmg_cache_suffix_7e15e8@@": 8263144,
     "?rmg_cache_directory_7e15d4@@": 8263124,
     "?rmg_description_7e15dc@@": 8263132,
-    "?Random_Map_CRC_005c8420@@YAPADXZ": 6063136,
+    "?Random_Map_CRC_005c8420@@YIPADXZ": 6063136,
     "?unknown_005c7ef0@UnknownPreview_0061D430@@": 6061808,
     "?Load_0061E170@UnknownPreview_0061D430@@QAE_NPBD@Z": 6414704,
     "?Clean_Up_RMCache_005775b0@@": 5731760,
@@ -25000,7 +25000,8 @@
     "??0UnknownTechnoPair@@QAE@XZ": 7418688,
     "?unknown_4cbb40@FootClass@@QAE?AVCell@@H@Z": 5028672,
     "?unknown_dialog_a763cc@OwnerDraw@@3PAUHWND__@@A": 10970060,
-    "?unknown_5e9bb0@OwnerDraw@@YGHPAUHWND__@@J@Z": 6200240
+    "?unknown_5e9bb0@OwnerDraw@@YGHPAUHWND__@@J@Z": 6200240,
+    "__real@8@4004c800000000000000": 7986024
   },
   "regions": [
     {
@@ -35253,7 +35254,7 @@
         {
           "offset": 111,
           "kind": 20,
-          "symbol": "?Random_Map_CRC_005c8420@@YAPADXZ",
+          "symbol": "?Random_Map_CRC_005c8420@@YIPADXZ",
           "target": 6063136,
           "addend": 0,
           "resolved": 330541
@@ -35867,7 +35868,7 @@
           "resolved": 792907
         }
       ],
-      "source_sha256": "e107902e223464b695c4b18222136cd06079fb3c037ac3f7e51924afe78c0aaa",
+      "source_sha256": "da2342ec3f2e969ff6109a825c1e7c536e91c7c67c796ffe528c8a9113fe69fc",
       "source": "src/recovered/unowned/Do_Random_Map_00577880.cpp",
       "population": "population-3333",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

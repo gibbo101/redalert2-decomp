@@ -1,4 +1,4 @@
-// char *Random_Map_CRC_005c8420() (0x005C8420)
+// char * __fastcall Random_Map_CRC_005c8420() (0x005C8420; __fastcall: Make_Random_Map 0x005C84E0 copies its result before the ctor pushes)
 // The random map's identity text: the CRC of the map generator's seed options (0x140 bytes from Theater,
 // with the description buffer cleared while it runs) as "%08X" in a new 12-character buffer.
 #include "shared/lobby.hpp"
@@ -6,7 +6,7 @@
 // @ref ?unknown_map_generator_a6fd68@@3VUnknownMapGenerator@@A=00a6fd68
 // @ref ??_C@_04CLEA@?$CF08X?$AA@=007ce280
 
-char *Random_Map_CRC_005c8420()
+char * __fastcall Random_Map_CRC_005c8420()
 {
     unsigned long crc = 0;
     unsigned long const *data = (unsigned long const *)&unknown_map_generator_a6fd68.SeedOptions.Theater;

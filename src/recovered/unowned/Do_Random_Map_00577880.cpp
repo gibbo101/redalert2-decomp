@@ -9,7 +9,7 @@
 class Surface;
 int __fastcall Write_PCX_File(FileClass &,Surface &,PaletteClass *);
 void __fastcall unknown_517370(bool);
-char *Random_Map_CRC_005c8420();
+char * __fastcall Random_Map_CRC_005c8420();
 void __fastcall Clean_Up_RMCache_005775b0();
 extern bool (*rmg_callback_7e09c4)();
 extern char const rmg_preview_filename_7e1540[];
@@ -30,7 +30,7 @@ char *__cdecl strncat(char *,char const *,unsigned);
 // @ref ?rmg_cache_suffix_7e15e8@@=007e15e8
 // @ref ?rmg_cache_directory_7e15d4@@=007e15d4
 // @ref ?rmg_description_7e15dc@@=007e15dc
-// @ref ?Random_Map_CRC_005c8420@@YAPADXZ=005c8420
+// @ref ?Random_Map_CRC_005c8420@@YIPADXZ=005c8420
 // @ref ?Write_PCX_File@@YIHAAVFileClass@@AAVSurface@@PAVPaletteClass@@@Z=007698c0
 // @ref ?unknown_005c7ef0@UnknownPreview_0061D430@@=005c7ef0
 // @ref ?Load_0061E170@UnknownPreview_0061D430@@QAE_NPBD@Z=0061e170

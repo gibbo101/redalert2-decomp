@@ -295,7 +295,7 @@ extern int unknown_lobby_map_a72c80;
 extern wchar_t unknown_lobby_map_name_a72a68[];
 // The random map's identity text: the CRC of the map generator's seed options (0x140 bytes from Theater, the
 // description buffer cleared while it runs) as "%08X" in a new 12-character buffer (0x005C8420).
-char *Random_Map_CRC_005c8420();
+char * __fastcall Random_Map_CRC_005c8420();
 // The per-mode services the lobby dialog runs (LAN 0x005BBD10, World Online 0x0073E100,
 // modem/serial 0x0059C880; hypotheses from the game modes).
 bool Unknown_005bbd10();
