@@ -781,3 +781,6 @@ The __fastcall lever also applies to the function itself. When a free function's
 free "object pointer" callee as a member (thiscall). Five of about twelve probes hit: 0x711E60 (callee 0x428AC0),
 0x519E70 (TechnoTypeClass::Load_Palettes static __fastcall), 0x516E70 and 0x768C70 (self; 82 -> shape 100), 0x542460
 (self plus 0x5DA360 as OptionsClass member). Missing @refs for string literals look like a convention miss on scores.
+Follow-up (NearMiss395): four more self-__fastcall hits, all free no-argument functions (0x718060 voxel matrices,
+0x6F5B10, 0x5C84E0 with its callee 0x5C8420, 0x683BF0). Ghidra cannot tell a no-argument __fastcall from __cdecl,
+so every unaccepted no-argument free function is a candidate: probe the convention before anything else.

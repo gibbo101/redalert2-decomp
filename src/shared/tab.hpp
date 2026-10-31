@@ -167,7 +167,7 @@ void Unknown_006F6570();
 void Unknown_006F64B0();
 void Unknown_006F5C50();
 void Unknown_006F5940();
-void Unknown_006F5B10();
+void __fastcall Unknown_006F5B10();    // 0x006F5B10 guard command; __fastcall: its slot 200 call sets ecx before the pushes
 void __fastcall Unknown_006F64D0(bool arg);
 void __fastcall Unknown_006F64F0(bool arg);
 void Unknown_006F5BC0();

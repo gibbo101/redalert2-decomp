@@ -20,7 +20,7 @@
 // @ref ?Unknown_006F64B0@@YAXXZ=006f64b0
 // @ref ?Unknown_006F5C50@@YAXXZ=006f5c50
 // @ref ?Unknown_006F5940@@YAXXZ=006f5940
-// @ref ?Unknown_006F5B10@@YAXXZ=006f5b10
+// @ref ?Unknown_006F5B10@@YIXXZ=006f5b10
 // @ref ?Unknown_006F64D0@@YIX_N@Z=006f64d0
 // @ref ?Unknown_006F64F0@@YIX_N@Z=006f64f0
 // @ref ?Unknown_006F5BC0@@YAXXZ=006f5bc0
