@@ -76,6 +76,7 @@ public:
     int unknown_func_6b91c0(int slot);                              // 0x006B91C0 (Red Alert's Recruit: adds the nearest object for a task force slot)
     void unknown_func_6b9610(AbstractClass **first, AbstractClass **second);   // 0x006B9610
     void unknown_func_6b8860();                                     // 0x006B8860
+    void unknown_func_6b88b0();                                     // 0x006B88B0 (TS Regroup: back to the best unarmed own building)
     void unknown_func_6b79e0(AbstractClass *target);                // 0x006B79E0 (sets the team's target)
     void unknown_func_6baa30();                                     // 0x006BAA30 (clears the target of the team and its members)
     bool unknown_func_6be6e0();                                     // 0x006BE6E0 (whether any member has ammo or unlimited ammo)

@@ -238,6 +238,7 @@ public:
     void unknown_4c4c30();                                      // 0x004C4C30 (approach the target; hypothesis: Approach_Target)
     bool unknown_4c3000(Cell dest, int arg2, int arg3);   // 0x004C3000 (plans a path to dest; hypothesis: Basic_Path)
     struct UnknownPathType *Unknown_004BB350(Cell *dest, int *buffer, int length, int arg4, int arg5, int arg6);  // 0x004BB350 (hypothesis: Find_Path)
+    Cell Unknown_004BB3F0(Cell const &from, Cell const &to, int arg3, int arg4);   // 0x004BB3F0 (hypothesis: TS Safety_Point; TeamClass 0x006B88B0 Regroup)
     void unknown_4c9a40(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11);  // 0x004C9A40 (the shadow draw; AircraftClass, UnitClass)
     void Unknown_004CCE80(FootClass *passenger);                // 0x004CCE80 (a passenger enters this transport)
     virtual int unknown_slot298();                              // slot 298 0x004C86D0 (0)
