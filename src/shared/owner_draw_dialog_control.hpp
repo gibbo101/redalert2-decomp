@@ -304,9 +304,10 @@ extern int unknown_7add78;
 BOOL __stdcall unknown_5e7dd0(HWND window, LPARAM);
 
 }
-// Prints text in area of surface (0x005FE1B0, not yet recovered; also EgoClass::Draw).
-int __fastcall unknown_text_draw_005fe1b0(unsigned int color, int unknown2, Rect const &area, wchar_t const *text,
-                                          int length, int alignment, int unknown7, Surface *surface, int unknown9);
+// Prints text in font (null: the game font) at area of surface (null: the background surface), aligned by
+// x_alignment and y_alignment (0x005FE1B0; also EgoClass::Draw).
+int __fastcall unknown_text_draw_005fe1b0(unsigned int color, BitFontClass *font, Rect const &area, wchar_t const *text,
+                                          int length, int x_alignment, int y_alignment, Surface *surface, int unknown9);
 // A test of an owner-drawn dialog control by the dialog's registered kind and the control ID.
 bool __fastcall OwnerDraw_Control_Test_005e6860(unsigned int key, HWND window);
 #endif

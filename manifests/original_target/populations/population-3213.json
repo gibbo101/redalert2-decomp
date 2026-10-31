@@ -4,8 +4,8 @@
     "id": "population-3213",
     "inventory_sha256": "d01365b35b9b10e4df71a47631476d8e0487ae3538015cc931fc146d402d6ed8",
     "gaps_sha256": "11010b266d02d0ae3f9cc5207cf284c0e002a921e36229cb31c2eae050b9bd83",
-    "historical_population_sha256": "307391913522f89b824d42b3129491fddf5d0b82e0482c78a740e7ebd91af6cb",
-    "historical_acceptance_sha256": "e7b8ea62e7e0db09b98639248edccfdf971bf74dc893ac070eb803a2ad6b264f"
+    "historical_population_sha256": "d55b1a86fbcc058cdc1f27c7a52dc0b1d873a39870172b01c4dc2dd273d27d86",
+    "historical_acceptance_sha256": "9d658daae71fcad830bf7ae3ccebaaaee48a628d441b350101aabfa8280c48dd"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1928,7 +1928,7 @@
     "?unknown_shift_852fc8@@3HA": 8728520,
     "?unknown_shift_852fcc@@3HA": 8728524,
     "?Get_Text_Area@BitFontClass@@QAE_NPBGPAH1H@Z": 4396208,
-    "?unknown_text_draw_005fe1b0@@YIHIHABVRect@@PBGHHHPAVSurface@@H@Z": 6283696,
+    "?unknown_text_draw_005fe1b0@@YIHIPAVBitFontClass@@ABVRect@@PBGHHHPAVSurface@@H@Z": 6283696,
     "??_C@_11A@?$AA?$AA@": 8625484,
     "__imp__ValidateRect@8": 7971832,
     "?unknown_surface_count_a763d8@OwnerDraw@@3HA": 10970072,
@@ -9397,7 +9397,10 @@
     "?Recalc_Power_004f2cc0@HouseClass@@QAEXXZ": 5188800,
     "?Enable_Available_Super_Weapons_004f4db0@HouseClass@@QAEXXZ": 5197232,
     "?Is_Build_Limited_004F4F30@HouseClass@@QAE_NPAVTechnoTypeClass@@@Z": 5197616,
-    "?MPlayer_Defeated_004e77f0@HouseClass@@QAEXXZ": 5142512
+    "?MPlayer_Defeated_004e77f0@HouseClass@@QAEXXZ": 5142512,
+    "?AI@HouseClass@@UAEXXZ": 5128464,
+    "?Clear@?$VectorClass@PBVTeamTypeClass@@@@UAEXXZ": 5209296,
+    "__real@8@4005f800000000000000": 8010280
   },
   "regions": [
     {
@@ -20423,7 +20426,7 @@
         {
           "offset": 405,
           "kind": 20,
-          "symbol": "?unknown_text_draw_005fe1b0@@YIHIHABVRect@@PBGHHHPAVSurface@@H@Z",
+          "symbol": "?unknown_text_draw_005fe1b0@@YIHIPAVBitFontClass@@ABVRect@@PBGHHHPAVSurface@@H@Z",
           "target": 6283696,
           "addend": 0,
           "resolved": 8183
@@ -20541,7 +20544,7 @@
           "resolved": 7971832
         }
       ],
-      "source_sha256": "1bf1c33175ff85ee33be9cf41d5071539950ae138035f77616ecd17ca77d9885",
+      "source_sha256": "e9a56d568e4663092777cb3bd8fa0cd0e3df699b3ef89fece6750e7b7e8863b0",
       "source": "src/recovered/ownrdraw/OwnerDraw_unknown_group_box_proc_5fc020_005fc020.cpp",
       "population": "population-3213",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",

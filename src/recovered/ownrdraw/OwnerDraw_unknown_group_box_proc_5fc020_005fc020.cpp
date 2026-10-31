@@ -12,7 +12,7 @@
 // @ref ?unknown_shift_852fc8@@3HA=00852fc8
 // @ref ?unknown_shift_852fcc@@3HA=00852fcc
 // @ref ?Get_Text_Area@BitFontClass@@QAE_NPBGPAH1H@Z=004314b0
-// @ref ?unknown_text_draw_005fe1b0@@YIHIHABVRect@@PBGHHHPAVSurface@@H@Z=005fe1b0
+// @ref ?unknown_text_draw_005fe1b0@@YIHIPAVBitFontClass@@ABVRect@@PBGHHHPAVSurface@@H@Z=005fe1b0
 // @ref ??_C@_11A@?$AA?$AA@=00839d4c
 // @ref _wcslen=00783605
 // @ref __imp__CallWindowProcA@20=0079a4c0

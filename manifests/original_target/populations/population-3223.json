@@ -4,8 +4,8 @@
     "id": "population-3223",
     "inventory_sha256": "d0612836c776d3d4cff61a6d0ed595bdc20ca0c234ce0a63e8f6640fcc95b555",
     "gaps_sha256": "7bdb7ae75f02c2fbecf066b2420853bd9e6d963ea1cdc565641aa4b244e3661f",
-    "historical_population_sha256": "3070ad9d770724d675408256d98bb916f0c219b8fda6ff662bc8a685467da10c",
-    "historical_acceptance_sha256": "3a890881e316af771722dcb851934b64671988225428e740461d15d70e04ab32"
+    "historical_population_sha256": "a86b617e67ec0bde455b0d64d6d66b46da4a1012116a13f6464d19d462bca648",
+    "historical_acceptance_sha256": "d8694929005902422f71c7ad87a9e718c25a7202cbb6dd4b344c9c84908a86f7"
   },
   "references": {
     "??0SimpleDialogControl@OwnerDraw@@QAE@XZ": 6295744,
@@ -1081,7 +1081,7 @@
     "??0EgoClass@@QAE@HHPBGI@Z": 4929056,
     "??1EgoClass@@QAE@XZ": 4929120,
     "?Draw@EgoClass@@QAEX_N@Z": 4929168,
-    "?unknown_text_draw_005fe1b0@@YIHIHABVRect@@PBGHHHPAVSurface@@H@Z": 6283696,
+    "?unknown_text_draw_005fe1b0@@YIHIPAVBitFontClass@@ABVRect@@PBGHHHPAVSurface@@H@Z": 6283696,
     "__real@8@3ffc8000000000000000": 8055960,
     "__real@8@4002c000000000000000": 8019480,
     "__real@8@3ffdfae147ae147ae000": 8020048,

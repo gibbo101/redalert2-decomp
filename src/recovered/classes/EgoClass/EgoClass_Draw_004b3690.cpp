@@ -5,9 +5,9 @@ extern int unknown_8523e4;
 extern Surface *unknown_surface_853118;
 extern bool unknown_flag_a40d28;
 extern "C" unsigned int __cdecl wcslen(wchar_t const *text);
-int __fastcall unknown_text_draw_005fe1b0(unsigned int color, int unknown2,
-    Rect const &area, wchar_t const *text, int length, int alignment,
-    int unknown7, Surface *surface, int unknown9);
+int __fastcall unknown_text_draw_005fe1b0(unsigned int color, BitFontClass *font,
+    Rect const &area, wchar_t const *text, int length, int x_alignment,
+    int y_alignment, Surface *surface, int unknown9);
 // @ref ?unknown_8523e0@@3HA=008523e0
 // @ref ?unknown_8523e4@@3HA=008523e4
 // @ref ?unknown_surface_853118@@3PAVSurface@@A=00853118
