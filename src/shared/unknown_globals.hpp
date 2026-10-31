@@ -230,7 +230,14 @@ public:
     virtual void unknown_slot31();
     virtual int unknown_slot32();                        // slot 32 (the lobby: a player limit, -1 for none; 0x005C65A0)
     virtual void unknown_slot33();
+#ifdef UNKNOWN_SESSION_DECLARE_SLOT34_ARG
+    // MainLoop.CPP passes PlayerWins (0x0053F840, game modes 3 and 4); the argument is
+    // declared only there: any new member text here renumbers Refresh_Wonline_Players'
+    // compiler labels (0x0073FEE0, VC6_MATCHING_NOTES "Fragile 0x73FEE0").
+    virtual void unknown_slot34(bool player_wins);
+#else
     virtual void unknown_slot34();
+#endif
     virtual void unknown_slot35(int arg);                // slot 35 (Do_Lose 0x0065DEC0 with 0 when there is no replay)
     virtual bool unknown_slot36();                       // slot 36 (Do_Lose: true replays)
     virtual void unknown_slot37();                       // slot 37 (Do_Lose, before the replay)
