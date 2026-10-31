@@ -15,6 +15,7 @@ class TechnoTypeClass;
 class TechnoClass;
 class SuperClass;
 class HouseTypeClass;
+class FactoryClass;
 struct UnknownBuilding;                 // shared/power.hpp (BuildingClass stand-in)
 
 // The layout is padded from +0x000 (no AbstractClass base declared here, so
@@ -27,6 +28,10 @@ public:
     // Index in Houses of the house with this name, or -1 (0x004F5B40).
     static int __fastcall Find_Index(char const *name);
     float Cost_Multiplier(TechnoTypeClass const *type);    // 0x004F5960
+    // Full House interface mirrors for Sidebar production queries.
+    int unknown_4e3660(TechnoTypeClass const *type, int arg2, int arg3); // 0x004E3660; low argument bytes observed, as full House interface
+    FactoryClass *unknown_func_4eb580(int kind, bool naval, int arg3); // 0x004EB580
+    bool Is_Build_Limited_004F4F30(TechnoTypeClass *type); // 0x004F4F30
     bool Unknown_004F52B0();                               // 0x004F52B0 (TechnoClass slots 24, 38, 39, 80)
     bool Unknown_004F52F0();                               // 0x004F52F0
     int Unknown_004F30D0();                                // 0x004F30D0 a free waypoint path, or -1
