@@ -94,6 +94,19 @@ public:
     bool unknown_func_6baa00();                                     // 0x006BAA00 (whether every member has +0x32D set)
     void unknown_func_6bd990(int value);                            // 0x006BD990 (stores value in every member)
 
+#ifdef RA2_TEAM_AI_HANDLERS
+    void TMission_unknown_6bb5f0(ScriptMissionClass const &mission, bool unknown);  // 0x006BB5F0 (Red Alert's TMission_Load)
+
+    void TMission_unknown_6bcbb0(ScriptMissionClass const &mission, bool unknown);  // 0x006BCBB0
+
+    void TMission_unknown_6bdaa0(ScriptMissionClass const &mission, bool unknown);  // 0x006BDAA0
+
+    void TMission_unknown_6be010(ScriptMissionClass const &mission, bool unknown);  // 0x006BE010
+
+    void TMission_unknown_6be440(ScriptMissionClass const &mission, bool unknown);  // 0x006BE440
+
+#endif
+
     // Script action handlers (second argument unknown).
     void TMission_unknown_6bbe60(ScriptMissionClass const &mission, bool unknown);  // 0x006BBE60
     void TMission_unknown_6bbe90(ScriptMissionClass const &mission, bool unknown);  // 0x006BBE90

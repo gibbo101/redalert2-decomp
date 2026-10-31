@@ -149,6 +149,10 @@ class FootClass;
 class TeamTypeClass;
 class HouseClass : public AbstractClass, public IHouse, public IPublicHouse, public IConnectionPointContainer {
 public:
+#ifdef RA2_TEAM_AI_HANDLERS
+    void unknown_4eec70(HouseClass *house); // original004EEC70/RET4, marks a scout-house node.
+#endif
+
     bool Can_Build_Team(TeamTypeClass *team);                   // 0x004F3630 (name hypothesis)
     int Team_Count(TeamTypeClass *team);                        // 0x004F35F0 (name hypothesis)
     // A production choice (layout not recovered); the unit keeps every

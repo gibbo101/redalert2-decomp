@@ -181,6 +181,9 @@ public:
     UnknownCargo(NoInitClass const &noinit) {}
     ObjectClass *unknown_468a10() const;    // 0x00468A10 (the first passenger)
     int Unknown_00468A20() const; // 0x00468A20; existing Scope12 ABI hypothesis
+#ifdef RA2_TEAM_AI_HANDLERS
+    int How_Many() const { return Count; } // Cargo passenger count; original inline reads +0.
+#endif
     ObjectClass *unknown_4689f0();          // 0x004689F0 (detaches the first passenger)
     void Unknown_00468960(FootClass *passenger);    // 0x00468960 (adds a passenger; InfantryClass slot 93)
     void Unknown_00468A70(FootClass *passenger);    // 0x00468A70 (removes a given passenger; FootClass 0x004CCF20)

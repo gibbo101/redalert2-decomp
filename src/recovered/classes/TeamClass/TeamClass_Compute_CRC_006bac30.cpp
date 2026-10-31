@@ -6,21 +6,6 @@
 // @ref ??RWWCRCEngine@@QAEX_N@Z=00493e80
 // @ref ??RWWCRCEngine@@QAEJPBXH@Z=00493fc0
 
-// CDTimerClass::Value() for the timer type whose class is not recovered.
-inline long Timer_Value(UnknownTimer423F60 const &timer)
-{
-    long remain = timer.DelayTime;
-    if (timer.Started != -1) {
-        long value = timer.Timer - timer.Started;
-        if (value < remain) {
-            return remain - value;
-        } else {
-            return 0;
-        }
-    }
-    return remain;
-}
-
 void TeamClass::Compute_CRC(WWCRCEngine &crc) const
 {
     AbstractClass::Compute_CRC(crc);

@@ -1,3 +1,4 @@
+#define RA2_TEAM_AI_HANDLERS
 // Header-static dynamic initializers of the unit at 0x006B7240:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x006B7240-0x006B7426); the other

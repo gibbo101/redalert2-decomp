@@ -11,19 +11,6 @@
 // @ref ?unknown_func_6b9bb0@TeamClass@@QAEXXZ=006b9bb0
 // @ref ?unknown_a40774@@3HA=00a40774
 
-// Whether the team may complete the step: no member is out of ammo.
-inline bool Team_Members_Armed(TeamClass *team)
-{
-    if (team->unknown_3c != 0) {
-        for (FootClass *member = team->Member; member != 0; member = (FootClass *)member->unknown_4c8) {
-            if (member->unknown_slot32()->Ammo <= 0 || member->unknown_254 > 0) {
-                return false;
-            }
-        }
-    }
-    return true;
-}
-
 void TeamClass::TMission_unknown_6bb480(ScriptMissionClass const &mission, bool unknown)
 {
     if (unknown_3c == 0 && Member != 0) {
@@ -31,11 +18,29 @@ void TeamClass::TMission_unknown_6bb480(ScriptMissionClass const &mission, bool 
         int target_data = Unknown_006220E0(mission.Data);
         AbstractClass *target = leader->unknown_slot219(target_data, &CoordStruct(leader->Coord), Class->OnlyTargetHouseEnemy);
         unknown_func_6b79e0(target);
-        if (Team_Members_Armed(this)) {
+        bool armed = true;
+        if (unknown_3c != 0) {
+            for (FootClass *member = Member; member != 0; member = (FootClass *)member->unknown_4c8) {
+                if (member->unknown_slot32()->Ammo <= 0 || member->unknown_254 > 0) {
+                    armed = false;
+                    break;
+                }
+            }
+        }
+        if (armed) {
             StepCompleted = true;
         }
     }
-    if (Team_Members_Armed(this)) {
+    bool armed = true;
+    if (unknown_3c != 0) {
+        for (FootClass *member = Member; member != 0; member = (FootClass *)member->unknown_4c8) {
+            if (member->unknown_slot32()->Ammo <= 0 || member->unknown_254 > 0) {
+                armed = false;
+                break;
+            }
+        }
+    }
+    if (armed) {
         StepCompleted = true;
     }
     unknown_func_6b9bb0();

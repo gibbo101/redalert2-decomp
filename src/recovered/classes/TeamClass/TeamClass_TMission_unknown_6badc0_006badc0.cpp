@@ -13,11 +13,11 @@
 void TeamClass::TMission_unknown_6badc0(ScriptMissionClass const &mission, bool unknown)
 {
     if (unknown) {
-        AbstractClass *object = unknown_34;
-        if (object == 0) {
-            object = Member;
+        if (unknown_34 != 0) {
+            unknown_func_6b79e0(Map.Unknown_005629D0(unknown_34));
+        } else {
+            unknown_func_6b79e0(Map.Unknown_005629D0(Member));
         }
-        unknown_func_6b79e0(Map.Unknown_005629D0(object));
     }
     unknown_func_6ba1a0();
 }
