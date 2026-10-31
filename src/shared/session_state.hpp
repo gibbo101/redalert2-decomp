@@ -188,9 +188,10 @@ struct UnknownSessionState {
     int ScoreWinner;                        // +0x22FC the last record of a house that did not lose (0x00465D10)
     int unknown_2300;                       // +0x2300 (capped at 3; also unknown_a3f598)
     CCFileClass RecordFile;                 // +0x2304 (Red Alert's Session.RecordFile)
-    unsigned char Record : 1;               // +0x2368 bit 0 (Red Alert's Session.Record; hypothesis)
-    unsigned char Play : 1;                 // +0x2368 bit 1 (Red Alert's Session.Play: SyncBug settings are read)
-    char unknown_2369[0x2380 - 0x2369];
+    unsigned Record : 1;                    // +0x2368 bit 0 (Red Alert's Session.Record; hypothesis)
+    unsigned Play : 1;                      //         bit 1 (Red Alert's Session.Play: SyncBug settings are read)
+    unsigned Attract : 1;                   //         bit 2 (Red Alert's Session.Attract; Parse_Command_Line -ATTRACT)
+    char unknown_236c[0x2380 - 0x236C];
     unsigned short HostName_2380[20];       // +0x2380 the host's name (wide; also unknown_host_name_a3f618)
     char unknown_23a8[0x27B4 - 0x23A8];
     DynamicVectorClass<NodeNameType *> NodeList_27b4;  // +0x27B4 (a third of Red Alert's Games / Players / Chat lists)

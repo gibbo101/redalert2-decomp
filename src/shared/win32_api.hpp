@@ -158,6 +158,8 @@ typedef BOOL (WINAPI *DLGPROC)(HWND dialog, UINT message, WPARAM wparam, LPARAM 
 WIN32_IMPORT HWND WINAPI CreateDialogParamA(HINSTANCE instance, LPCSTR name, HWND parent, DLGPROC procedure,
                                             LPARAM parameter);
 WIN32_IMPORT BOOL WINAPI DestroyWindow(HWND window);
+WIN32_IMPORT int WINAPI DialogBoxParamA(HINSTANCE instance, LPCSTR name, HWND parent, DLGPROC procedure,
+                                        LPARAM parameter);
 WIN32_IMPORT LRESULT WINAPI SendDlgItemMessageA(HWND dialog, int id, UINT message, WPARAM wparam, LPARAM lparam);
 WIN32_IMPORT BOOL WINAPI ShowWindow(HWND window, int command);
 WIN32_IMPORT BOOL WINAPI SetForegroundWindow(HWND window);
