@@ -163,6 +163,8 @@ public:
     // The screen's load and save (0x0049E810, 0x0049E840).
     virtual HRESULT unknown_slot30(IStream *stream);                  // slot 30
     virtual HRESULT unknown_slot31(IStream *stream);                  // slot 31
+    // The map's sections of a scenario INI (0x0049D910; TibSun Write_INI).
+    void Write_INI_0049D910(CCINIClass &ini);
     virtual void unknown_slot32();                                    // slot 32
     // Help text of a button id (RadarClass 0x00634AA0, PowerClass 0x0061D1C0 for id 999).
     virtual wchar_t const *unknown_slot33(int id);                   // slot 33

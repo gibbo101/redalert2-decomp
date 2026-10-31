@@ -14067,57 +14067,6 @@
       "source_order": 115725
     },
     {
-      "entry": 4845008,
-      "method": "0049edd0",
-      "symbol": "??_GBufferPipe@@UAEPAXI@Z",
-      "symbol_prefix": "??_GBufferPipe@@UAEPAXI@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 40,
-      "body_sha256": "008a37ca5ae76dd8246d144171bc3d855daebe866cd1394956b10c9e1fa68408",
-      "padding_bytes": 8,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "0cee385ffebbfd09af455ed12b824f7999628eb08cb42311124fe1e11bb2d48f",
-      "relocations": [
-        {
-          "offset": 7,
-          "kind": 20,
-          "symbol": "??1Buffer@@QAE@XZ",
-          "target": 4424720,
-          "addend": 0,
-          "resolved": 4294546997
-        },
-        {
-          "offset": 14,
-          "kind": 20,
-          "symbol": "??1Pipe@@UAE@XZ",
-          "target": 6351456,
-          "addend": 0,
-          "resolved": 1506430
-        },
-        {
-          "offset": 27,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 3026764
-        }
-      ],
-      "source_sha256": "093bbcf02cf1c4787cd5340495dae5472a01c9adc79acedd896616e46cdf6e48",
-      "source": "src/recovered/classes/BufferPipe/BufferPipe_scalar_deleting_destructor_0049edd0.cpp",
-      "population": "population-2983",
-      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "BufferPipe_scalar_deleting_destructor_0049edd0",
-      "source_order": 115686
-    },
-    {
       "entry": 5884080,
       "method": "0059c8b0",
       "symbol": "?Send_Preview_0059c8b0@ModemHost@@QAEXXZ",

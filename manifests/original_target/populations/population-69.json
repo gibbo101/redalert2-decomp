@@ -310,49 +310,6 @@
   },
   "regions": [
     {
-      "entry": 4844976,
-      "method": "0049edb0",
-      "symbol": "??_GPipe@@UAEPAXI@Z",
-      "symbol_prefix": "??_GPipe@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 30,
-      "body_sha256": "44220f8d87ae13b8011a294423f6cfd889f00c01d123c0686ef9283affd658f9",
-      "padding_bytes": 2,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "df7070468b8140e8350bd8a36bed5c34e852a0ee0fb8c3e5bf2b1c682d8c52b9",
-      "relocations": [
-        {
-          "offset": 4,
-          "kind": 20,
-          "symbol": "??1Pipe@@UAE@XZ",
-          "target": 6351456,
-          "addend": 0,
-          "resolved": 1506472
-        },
-        {
-          "offset": 17,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 3026806
-        }
-      ],
-      "source_sha256": "5b3d8af7d18c0c421d65245955ad7deffd57df4f6d74ee085ede0447076d3683",
-      "source": "src/recovered/classes/Pipe/Pipe_scalar_deleting_destructor_0049edb0.cpp",
-      "population": "population-69",
-      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "Pipe_scalar_deleting_destructor_0049edb0",
-      "source_order": 8082
-    },
-    {
       "entry": 6351456,
       "method": "0060ea60",
       "symbol": "??1Pipe@@UAE@XZ",

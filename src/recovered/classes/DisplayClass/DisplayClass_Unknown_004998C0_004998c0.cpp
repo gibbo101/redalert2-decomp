@@ -18,9 +18,9 @@ void DisplayClass::Unknown_004998C0(Cell const &cell, bool set)
         if (Unknown_0054AAB0(target)) {
             CellClass &target_cell = (*this)[target];
             if (set) {
-                target_cell.unknown_12c |= 2;
+                target_cell.unknown_12c = target_cell.unknown_12c | 2;
             } else {
-                target_cell.unknown_12c &= ~2;
+                target_cell.unknown_12c = target_cell.unknown_12c & ~2;
             }
         }
     }

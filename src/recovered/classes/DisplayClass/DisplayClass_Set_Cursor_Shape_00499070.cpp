@@ -8,7 +8,7 @@
 #include "shared/crt_memory.hpp"
 // @ref ?unknown_cell_852610@@3VCell@@A=00852610
 // @ref _?_list@?7??Set_Cursor_Shape@DisplayClass@@QAEXPBVCell@@@Z@4PAV3@A=008524b0
-// @ref _?$S69@?7??Set_Cursor_Shape@DisplayClass@@QAEXPBVCell@@@Z@4EA=008525f0
+// @ref _?$S71@?7??Set_Cursor_Shape@DisplayClass@@QAEXPBVCell@@@Z@4EA=008525f0
 
 void DisplayClass::Set_Cursor_Shape(Cell const *list)
 {
