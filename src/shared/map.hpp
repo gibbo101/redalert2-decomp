@@ -168,6 +168,7 @@ public:
     void Unknown_00562F50(CellClass *cell); // 00562F50: observed thiscall/RET4; unused return hypothesis
     CellClass *Unknown_005629D0(AbstractClass *object);                         // 0x005629D0 (the cell under an object; hypothesis)
     bool Unknown_0054AAB0(Cell const &cell);      // 0x0054AAB0 (a cell test: on the map; hypothesis)
+    bool Base_Region(Cell const &cell, int &house, int &zone);   // 0x00550DC0 (TibSun Base_Region: the house whose base zone holds the cell)
     bool Unknown_0054AB00(CoordStruct const &coord);    // 0x0054AB00 (a coordinate test; InfantryClass 0x005070E0 tests al)
     // The +0x02 value of the cell's +0x64 element (0x0054FA60); the cell's
     // index in that array, clamped to it (0x0054FAB0), and unclamped
@@ -282,6 +283,9 @@ public:
     // The map generator's shore passes (TibSun Prune_Water, Get_Water_Mask; names are hypotheses).
     void Unknown_0055C520(CellClass *cellptr, int region_id, bool set_region);   // 0x0055C520 (TibSun Prune_Water)
     int Unknown_0055D410(CellClass *cellptr, int control);                       // 0x0055D410 (TibSun Get_Water_Mask)
+    bool Build_All_Shores(int region_id, bool set_region);                       // 0x0055C2C0 (TibSun Build_All_Shores)
+    bool Expand_Water(CellClass *cellptr, int region_id, bool set_region);       // 0x0055C630 (TibSun Expand_Water)
+    bool Place_Shore(CellClass *cellptr, int pass, int region_id, bool set_region); // 0x0055CEF0 (TibSun Place_Shore)
     bool Unknown_00569320(Cell const &cell);      // 0x00569320 (a bridge hut's bridge is intact; InfantryClass slot 28; hypothesis)
     // A walk over the map's cells: restart (0x0055A550) and next cell, or
     // null at the end (0x0055A490).
@@ -390,6 +394,8 @@ public:
     // Places a new +0x154 entry on a random cell (0x0054E410; hypothesis:
     // Place_Random_Crate).
     bool Unknown_0054E410();
+    // Removes the crate at a cell (0x0054E6E0; TibSun Remove_Crate).
+    bool Remove_Crate(Cell const &cell);
     virtual void unknown_slot28(Rect const *rect, bool arg2, bool arg3, bool arg4);   // slot 28 0x005484E0 (callee pops 4 arguments, ret 0x10)
     virtual void unknown_slot29(Rect const &rect);                                      // slot 29 0x00549AE0 (sets the map size; hypothesis)
 

@@ -63,6 +63,8 @@ class BuildingTypeClass {
 public:
     char unknown_000[0x1351];
     bool Gate;                              // +0x1351
+    char unknown_1352[0x135A - 0x1352];
+    bool FirestormWall;                     // +0x135A (TibSun IsFirestormWall; Map 0x00569FB0)
 };
 
 // A building as MapClass 0x00567380 and 0x0055ACD0 see it (stand-in).

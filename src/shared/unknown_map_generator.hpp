@@ -44,6 +44,11 @@ public:
     void Generate_Urban_Pavement_005890b0(DynamicVectorClass<Cell> &cells); // pendingr198
     void Adjust_Ramp_Junctions_005831c0(); // caller0058360A restores complete-owner ECX
     bool Expand_All_High_Ground_00583740(); //ALresult/RET0, receiver notread
+    // The region of a cell's generator record, or -1 without generator data (TibSun
+    // RandomMapGen.Get_Cell_Data_Region; ECX owner not read, RET4).
+    int Get_Cell_Data_Region_005818a0(Cell const &cell);
+    // Sets the region of a cell's generator record (TibSun Set_Cell_Data_Region; RET8).
+    void Set_Cell_Data_Region_00581870(Cell const &cell, int region_id);
     ~UnknownMapGenerator();
     UnknownMapGenerator(); //00577010 remains parked, no body promoted
     // Proposed rename-only owner correction; same int,int/ECX/RET8 physical ABI.

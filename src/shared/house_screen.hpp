@@ -52,6 +52,7 @@ public:
     IHouse *As_IHouse() { return reinterpret_cast<IHouse *>(reinterpret_cast<char *>(this) + 0x24); }
     bool Unknown_004F52B0();                               // 0x004F52B0 (TechnoClass slots 24, 38, 39, 80)
     bool Unknown_004F52F0();                               // 0x004F52F0
+    int Which_Zone(Cell const &cell) const;                // 0x004EAEF0 (as shared/house.hpp; MapClass 0x00550DC0)
     int Unknown_004F30D0();                                // 0x004F30D0 a free waypoint path, or -1
     // A waypoint in the cell, else 0 (0x004ED200; shared/house.hpp).
     class WaypointClass *unknown_func_4ed200(Cell const &cell);
@@ -69,7 +70,9 @@ public:
     bool unknown_135;                   // +0x135 (as shared/house.hpp; Tactical 0x006AAD70 tests it in the campaign)
     char unknown_136[0x13D - 0x136];
     bool unknown_13d;                   // +0x13D (radar: forces mode 1 in multiplayer)
-    char unknown_13e[0x154 - 0x13E];
+    char unknown_13e[0x142 - 0x13E];
+    bool FirestormActive;               // +0x142 (TibSun FirestormDefenseActivated; Map 0x00569FB0)
+    char unknown_143[0x154 - 0x143];
     int unknown_154;                    // +0x154 the current waypoint path (-1)
     class WaypointPathClass *WaypointPaths[12];   // +0x158 (overlay)
     bool unknown_188;                   // +0x188 (cleared by MapClass 0x00559F10 / 0x00559FD0)
