@@ -10,6 +10,8 @@ class CellClass;
 struct UnknownMapGenerationCell;
 class MapRegionClass {
 public:
+    bool Is_Bridge_Allowed_00571bc0(Rect const &area) const;
+    bool Is_Rectangle_Clear_00575910(Rect const &area,int allowedRegion);
     static void Destroy_Cell_Regions();
     static UnknownMapGenerationCell &Get_Cell_Data(int index);
     static void Make_Ice_Regions_005704c0();

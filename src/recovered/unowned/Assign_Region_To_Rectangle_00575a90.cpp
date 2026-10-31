@@ -17,10 +17,9 @@ void __stdcall Assign_Region_To_Rectangle_00575a90(Rect const &area,int index)
 {
     for(int y=area.Y;y<area.Y+area.Height;y++) {
         for(int x=area.X;x<area.X+area.Width;x++) {
-            Cell position; position.X=(short)x; position.Y=(short)y;
+            Cell const position((short)x,(short)y);
             if(Generation_Cell_In_Bounds_0058da10(position)) {
-                if(unknown_map_cells_a70a24)
-                    unknown_map_cells_a70a24[position.Y*unknown_map_cell_side_84e804+position.X].RegionIndex=index;
+                Set_Cell_Region_Index_0056e970(position,index);
                 CellClass &target=Map[position];
                 target.unknown_11b=(char)Find_Map_Region_By_Index_00575ce0(index)->unknown_10;
             }
