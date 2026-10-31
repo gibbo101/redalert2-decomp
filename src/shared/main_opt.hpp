@@ -15,7 +15,7 @@ extern OptionsClass unknown_options_a6ec38;
 int __stdcall Try_Mode_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);    // 0x00542160
 bool __fastcall Try_Mode_Dialog();                                                       // 0x00542210
 void __fastcall Main_Options_Apply(HWND window);                                         // 0x00542280
-void Main_Options_Dialog();                                                              // 0x00542460
+void __fastcall Main_Options_Dialog();                                                            // 0x00542460
 int __stdcall Main_Options_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);    // 0x00542590
 int __stdcall Confirm_Mode_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);   // 0x00543C40
 int __stdcall Main_Options_Proc2(HWND window, UINT message, WPARAM wparam, LPARAM lparam);   // 0x00542D60

@@ -13,12 +13,15 @@
 #include "shared/vector_class.hpp"
 
 class ConvertClass;
+class PaletteClass;
 class Surface;
 
 class ColorScheme {
 public:
     ColorScheme(char const *name, HSVClass const &base, void *unknown_a, int unknown_b, int unknown_c, bool add);   // 0x006639F0
     ~ColorScheme();                         // 0x00663BB0 (frees the name and converter, leaves ColorSchemes)
+    // Rebuilds Converter from the palettes (0x00663B40; Tiberian Sun's Build_Light_Converters with scales).
+    void Unknown_00663B40(PaletteClass *unknown_a, PaletteClass *palette, int rscale, int gscale, int bscale);
 
     int Index;                              // +0x000 ColorSchemes.Count() after the scheme was added
     RGBClass Palette[256];                  // +0x004 the scheme's palette
