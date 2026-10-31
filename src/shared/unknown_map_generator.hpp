@@ -10,6 +10,7 @@ class BuildingTypeClass;
 class CellClass;
 class UnknownMapGenerator {
 public:
+    void Seed_Hill_Heights_00584730();
     void Init_Regions();
     void Init_Map_0057ae00(int fullInit);
     void Generate_Neutral_Tech_Buildings_0058ad90();

@@ -126,6 +126,8 @@ struct UnknownCell68 {
 
 class CellClass : public AbstractClass {
 public:
+    Cell Fetch_CellID() const { return MapCoords; }
+
     int unknown_475fe0(int damage); // 00475FE0: wall mutation, full EAX/RET4; hypothesis
     CellClass();                                                        // 0x00470F10
     CellClass(NoInitClass const &noinit);                               // 0x00470680
