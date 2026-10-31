@@ -9,9 +9,9 @@ namespace WorldDominationTour {
 
 FactionSelectDialogControl::~FactionSelectDialogControl()
 {
-    delete Images[0];
-    delete Images[1];
-    delete Images[2];
+    delete NoneImage;
+    delete AlliedImage;
+    delete SovietImage;
 }
 
 }

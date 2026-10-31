@@ -14,6 +14,9 @@ namespace WorldDominationTour {
 
 class FactionSelectDialogControl : public OwnerDraw::SimpleDialogControl {
 public:
+    // Loads the three images (each only while still unset) and shows the first (inline in
+    // WorldDom.cpp; out of line at 0x00769790).
+    FactionSelectDialogControl();
     virtual ~FactionSelectDialogControl();                          // 0x00768800 (deleting 0x00769740)
 
     // Picks the image and selection (2 allied, 3 soviet, 0 none) under the
@@ -24,7 +27,9 @@ public:
     void Draw_00768940(int unknown);
 
     int Selection;          // +0x0C
-    Surface *Images[3];     // +0x10 none, allied, soviet (deleted by the destructor)
+    Surface *NoneImage;     // +0x10 (deleted by the destructor)
+    Surface *AlliedImage;   // +0x14
+    Surface *SovietImage;   // +0x18
     Surface *Current;       // +0x1C
 };
 
