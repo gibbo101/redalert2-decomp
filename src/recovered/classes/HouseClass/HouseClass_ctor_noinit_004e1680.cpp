@@ -1,3 +1,5 @@
+// House screen operations used by this population; full screen providers live in their own units.
+#define RA2_HOUSE_SCREEN_AI
 #include "shared/map.hpp"
 // HouseClass::HouseClass(NoInitClass const &noinit) (0x004E1680)
 // The constructor used when loading: the lists, the +0x1C8 timer, the

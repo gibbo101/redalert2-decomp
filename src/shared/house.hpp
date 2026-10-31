@@ -237,6 +237,7 @@ public:
     void Recalc_Power_004f2cc0();
     void Enable_Available_Super_Weapons_004f4db0();
     bool AI_Raise_Money_004e90f0(int urgency);
+    int Expert_AI(); // original004E8990, returns the delay stored by House AI
     int AI_Unit();                                         // 0x004E9C90 (RA's AI_Unit: picks unknown_5540, a harvester first)
     int AI_Building();                                     // 0x004E9660 (RA's AI_Building: picks unknown_553c from the base plan)
     void unknown_func_4f2350();                            // 0x004F2350 (AI_Building: a base node of type -3)
