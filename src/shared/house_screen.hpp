@@ -32,6 +32,8 @@ public:
     int Unknown_004F30D0();                                // 0x004F30D0 a free waypoint path, or -1
     // A waypoint in the cell, else 0 (0x004ED200; shared/house.hpp).
     class WaypointClass *unknown_func_4ed200(Cell const &cell);
+    bool unknown_func_4ed2b0(class WaypointClass *waypoint, int *path, char *position);   // 0x004ED2B0 (overlay)
+    bool Unknown_004F3120() const;                         // 0x004F3120 (overlay)
 
     char unknown_000[0x30];
     int ArrayIndex;                     // +0x030 index in Houses (bit in house masks; TechnoClass::Owner)
@@ -46,7 +48,7 @@ public:
     bool unknown_13d;                   // +0x13D (radar: forces mode 1 in multiplayer)
     char unknown_13e[0x154 - 0x13E];
     int unknown_154;                    // +0x154 the current waypoint path (-1)
-    char unknown_158[0x188 - 0x158];
+    class WaypointPathClass *WaypointPaths[12];   // +0x158 (overlay)
     bool unknown_188;                   // +0x188 (cleared by MapClass 0x00559F10 / 0x00559FD0)
     char unknown_189[0x19C - 0x189];
     DynamicVectorClass<SuperClass *> Supers;    // +0x19C (Vector +0x1A0, ActiveCount +0x1AC)

@@ -324,7 +324,7 @@ void RadarEventClass_unknown_delete_all_63c640();
 class UnknownBeacon;
 class Unknown84E8D0 {
 public:
-    UnknownBeacon *Unknown_0042E860(int x, int y, int z);  // 0x0042E860 (the beacon within 128 of the point)
+    UnknownBeacon *Unknown_0042E860(CoordStruct coord);  // 0x0042E860 (the beacon within 128 of the point)
     bool Unknown_0042E740(int x, int y, int z);            // 0x0042E740 (selects the beacon within 128 of the point)
     Unknown84E8D0();                                        // 0x0042D960 (the static initializer; inline)
     ~Unknown84E8D0();                                       // 0x0042D990 (the atexit destructor; inline)

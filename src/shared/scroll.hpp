@@ -53,6 +53,14 @@ public:
     bool unknown_4f2a;                                          // +0x4F2A drag-select in progress
 };
 
+class ObjectClass;
+class TechnoClass;
+// The selected object that decides the mouse action for a cell or an object
+// (0x0051A690; one of the two is null; ScrollClass 0x00669960).
+ObjectClass *__fastcall Unknown_0051A690(Cell const *cell, ObjectClass *object);
+// RTTI-kind checked conversion to TechnoClass (0x0040DBD0: kinds 1, 2, 6 and 15).
+TechnoClass *__fastcall Infantry_As_Techno_0040dbd0(ObjectClass *object);
+
 // Unidentified flag tested by the scroll slots (0x00A40D44).
 // Mouse shape size flag passed to Set_Default_Mouse (0x0083740C).
 

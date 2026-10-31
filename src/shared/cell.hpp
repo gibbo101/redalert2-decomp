@@ -160,6 +160,7 @@ public:
     // Per-house bits.
     bool Is_House_Bit(int house) const;         // 0x0047C2C0
     bool unknown_47c300(int house) const;       // 0x0047C300 (a second per-house bit test; UnitClass slot 49)
+    bool unknown_47c2e0(int house) const;       // 0x0047C2E0 (overlay)
     void unknown_476920(void const *arg1, bool arg2, bool arg3, bool alt);  // 0x00476920 (scatters the occupants; alt picks AltOccupierPtr; UnitClass slot 302)
     bool unknown_479cc0() const;                // 0x00479CC0 (UnitClass slot 27)
     bool unknown_479cf0() const;                // 0x00479CF0, no stack arguments; AL result

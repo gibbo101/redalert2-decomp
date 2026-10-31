@@ -464,7 +464,7 @@
       },
       {
         "path": "src/shared/scroll.hpp",
-        "sha256": "ce991b2f2ba162c54eaa7236d19f115253a6f4a6a6a22837cbb85a9b9b1bd657"
+        "sha256": "7fd7d38dfa28e3b610d04a10f98209aef45620795721c11775c816a96b118c48"
       },
       {
         "path": "src/shared/sha_pipe.hpp",
@@ -620,7 +620,7 @@
       },
       {
         "path": "src/shared/house_screen.hpp",
-        "sha256": "0f4c42140e92b559fd63413e654eae20bc872a38eb142bdfbe9fde14d746a0bb"
+        "sha256": "2e016cf4aa20dd01def4c1f6c818f1011fe0ebfa5496345ec947e742a6cf52b9"
       },
       {
         "path": "src/shared/house_type.hpp",
@@ -772,7 +772,7 @@
       },
       {
         "path": "src/shared/cell.hpp",
-        "sha256": "a1bda18f09fb9d7a0eb29c096425efbb28c3bc9715f1dc37e2f503417aceb120"
+        "sha256": "6c61d634ff931a2385d36092315df961b23e6dd1763c40435c5b76911e568d0e"
       },
       {
         "path": "src/shared/map_cell_view.hpp",
@@ -1416,7 +1416,7 @@
       },
       {
         "path": "src/shared/unknown_globals.hpp",
-        "sha256": "a765eae905e53d9d72e45864e78557d9ad8beebed4e5ec03f1963343c7f95414"
+        "sha256": "8329f5ccedbe8a57168a02718af6b854980484eb9b28a206442e0713ae530955"
       },
       {
         "path": "src/shared/building_class.hpp",
@@ -5217,7 +5217,8 @@
     "population-3251",
     "population-3252",
     "population-3253",
-    "population-3254"
+    "population-3254",
+    "population-3255"
   ],
   "region_runs": [
     ["population-01", 2],
@@ -6111,7 +6112,7 @@
     ["population-1659", 13],
     ["population-01", 1],
     ["population-1659", 7],
-    ["population-3065", 12],
+    ["population-3255", 12],
     ["population-3012", 13],
     ["population-3004", 11],
     ["population-3130", 16],
@@ -7219,7 +7220,7 @@
     ["population-124", 4],
     ["population-2867", 1],
     ["population-124", 5],
-    ["population-3065", 1],
+    ["population-3255", 1],
     ["population-2787", 4],
     ["population-124", 5],
     ["population-1629", 1],
@@ -7301,7 +7302,7 @@
     ["population-148", 2],
     ["population-3144", 2],
     ["population-1659", 1],
-    ["population-3065", 1],
+    ["population-3255", 1],
     ["population-2707", 1],
     ["population-2787", 3],
     ["population-148", 1],
@@ -7364,7 +7365,7 @@
     ["population-2442", 2],
     ["population-316", 2],
     ["population-1659", 2],
-    ["population-3065", 2],
+    ["population-3255", 2],
     ["population-3004", 2],
     ["population-2933", 2],
     ["population-3021", 2],
@@ -7454,7 +7455,7 @@
     ["population-3070", 3],
     ["population-2498", 14],
     ["population-2539", 7],
-    ["population-3065", 5],
+    ["population-3255", 5],
     ["population-2666", 5],
     ["population-1660", 8],
     ["population-2468", 6],
@@ -7775,7 +7776,7 @@
     ["population-2498", 7],
     ["population-2539", 2],
     ["population-2735", 2],
-    ["population-3065", 1],
+    ["population-3255", 1],
     ["population-3104", 2],
     ["population-2334", 3],
     ["population-3070", 5],
@@ -8551,7 +8552,7 @@
     ["population-3070", 1],
     ["population-3063", 1],
     ["population-3248", 5],
-    ["population-3065", 3],
+    ["population-3255", 3],
     ["population-3080", 1],
     ["population-3244", 1],
     ["population-3082", 3],
@@ -8708,7 +8709,8 @@
     ["population-3248", 1],
     ["population-3242", 2],
     ["population-3248", 3],
-    ["population-3254", 7]
+    ["population-3254", 7],
+    ["population-3255", 1]
   ],
   "shards": {
     "population-01": "60bfb8c61f08ba84174dba120c5e362b145978d678c98fa69e69cf59e4295537",
@@ -11013,7 +11015,7 @@
     "population-3062": "de1efd003877f16f044dc1cbfe201757693e4f084371f7b1b6e33a31c50c2321",
     "population-3063": "f21c4a514fd71d289e5eee31e0b48a9ca432a9038751ac31fb3f19b1353494e9",
     "population-3064": "4347666ad4515624ea503f92a02d3b3a99e2227eeb30e0d0470d2f7b591f7f2d",
-    "population-3065": "46d6258b7130eb8f1b91d62370948401061eb34ae6cd645be8b62914ad65c08a",
+    "population-3065": "4016e8f56ac46db4bf69b104c9b5ce0f3aed1ae41e75e3f7bf054b66f5274a64",
     "population-3066": "e090424e912d89e4ef97bff4a940b7d6f128460b1f4ab0d0cda9cc12fa56aba6",
     "population-3067": "5564d7b7ea13652494cc5949a0bc9df5d9abd613d8ac0a49b337b2cc41da6e3c",
     "population-3068": "3ed9567f16f7723a1037e851bd63a50cf368e254e536055ec8cef7df849d8938",
@@ -11224,6 +11226,7 @@
     "population-3252": "7098dc7abd291403268e44a2f810a42e7c4701c31993cebe8f44a64fca4b9c38",
     "population-3253": "95de79f6d0a15fdbd41f561a309fc54871f87f460501b4ff20e5aa06c776dc01",
     "population-3254": "767ae67d0883cf58abdd6e82b7700cbd2d8f095ff1721f4dd3376ebe8df0a67d",
+    "population-3255": "d9f74f8e631f2b324e1bf1334eab2adbb6ba00a8ea0d353e325ee93a49b45466",
     "population-326": "d9242c29e92f68091f803234b2b2e30019f7f748464dad878400a69fbac32115",
     "population-327": "d858cf3262ca554326c40393f83de4467e72504388b4b38c4346d01f1dc4acec",
     "population-328": "fff680d80b5c35073c2e4089a404cbe51f6733a745353ed6cb82017847e9e436",
