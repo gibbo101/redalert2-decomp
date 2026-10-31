@@ -54,6 +54,10 @@ inline bool operator!=(UndoInfoStruct const &a, UndoInfoStruct const &b) { retur
 struct DirtyAreaStruct {
     DirtyAreaStruct() : Area(0, 0, 0, 0), unknown_10(false) {}
     DirtyAreaStruct(DirtyAreaStruct const &other) : Area(other.Area), unknown_10(other.unknown_10) {}
+    // An area and its shroud flag (Tactical::Register_Dirty_Area 0x006A3020). The area goes
+    // through Rect(x, y, w, h): with the plain copy Area(area) the IL is smaller and the
+    // second Union in Register_Dirty_Area stays inline (the original calls 0x0045EFE0).
+    DirtyAreaStruct(Rect const &area, bool flag) : Area(area.X, area.Y, area.Width, area.Height), unknown_10(flag) {}
     Rect Area;                  // +0x00
     bool unknown_10;            // +0x10
 };

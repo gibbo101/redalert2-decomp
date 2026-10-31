@@ -67,6 +67,8 @@ public:
     Rect(TPoint2D const &point, int width, int height);
 
     bool Is_Valid() const { return Width > 0 && Height > 0; }
+    // The area in pixels (TibSun TRect::Size; Tactical::Register_Dirty_Area 0x006A3020).
+    int Size() const { return Width * Height; }
     // All four members at once (MSPrintAnim 0x005AF210 stores the reported
     // area through it: a charged four-store callee; name hypothesis).
     void Set(int x, int y, int width, int height)
