@@ -158,7 +158,7 @@ extern UnknownWindowProcIndex unknown_window_procs_a73688;
 int __fastcall unknown_edit_text_5f2120(HWND window, wchar_t *text, int size, int *caret);
 // The text of a hot key control's value ("Alt+Ctrl+Shift+Key"; empty for an extended key) (0x005FC600).
 void __fastcall unknown_hotkey_text_5fc600(unsigned short hotkey, wchar_t *text);
-// Draws a progress bar's fill of fraction (16.16) over area of surface (0x005FE7C0, not yet recovered).
+// Draws a progress bar's fill of fraction (16.16) over area of surface (0x005FE7C0).
 void __fastcall unknown_5fe7c0(Rect const &area, Surface *surface, int color, int fraction);
 // Draws a frame thickness pixels wide around rect, in the owner-draw frame colour for color -1 (0x005FDB20).
 void __fastcall unknown_5fdb20(Surface *surface, Rect const &rect, int thickness, int color);
@@ -252,10 +252,23 @@ extern int unknown_surface_count_a763d8;
 extern int unknown_classes_registered_a763f0;
 // Nesting count of 0x005FF5A0 (mouse released) over 0x005FF5D0 (recaptured when it returns to zero).
 extern int unknown_mouse_release_depth_a76410;
-// The screen pixel format's 8-bit channel masks, set by 0x005FC820.
+// The screen pixel format's 8-bit channel masks, set by 0x005FC820 (defined there).
 extern unsigned short unknown_red_mask_a763dc;
 extern unsigned short unknown_green_mask_a763de;
 extern unsigned short unknown_blue_mask_a763e0;
+// Blends color into pixel by alpha (0-255) per channel through the masks (inline; its alpha statics are
+// 0x00B2B634 and 0x00B2B638).
+inline unsigned short Blend_Color(unsigned short pixel, unsigned short color, unsigned char alpha)
+{
+    static unsigned int color_alpha;
+    static unsigned int pixel_alpha;
+    color_alpha = alpha;
+    pixel_alpha = 255 - alpha;
+    unsigned short red = (((pixel & unknown_red_mask_a763dc) * pixel_alpha) + ((color & unknown_red_mask_a763dc) * color_alpha)) >> 8 & unknown_red_mask_a763dc;
+    unsigned short green = (((pixel & unknown_green_mask_a763de) * pixel_alpha) + ((color & unknown_green_mask_a763de) * color_alpha)) >> 8 & unknown_green_mask_a763de;
+    unsigned short blue = (((pixel & unknown_blue_mask_a763e0) * pixel_alpha) + ((color & unknown_blue_mask_a763e0) * color_alpha)) >> 8;
+    return (unsigned short)(red | green | blue);
+}
 // The window procedures of those classes (not yet recovered).
 LRESULT __stdcall unknown_combo_drop_proc_5ead20(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 LRESULT __stdcall unknown_new_edit_proc_5ead00(HWND window, UINT message, WPARAM wparam, LPARAM lparam);

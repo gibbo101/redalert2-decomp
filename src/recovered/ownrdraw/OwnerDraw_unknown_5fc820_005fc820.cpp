@@ -13,6 +13,10 @@
 
 namespace OwnerDraw {
 
+unsigned short unknown_red_mask_a763dc = 0;
+unsigned short unknown_green_mask_a763de = 0;
+unsigned short unknown_blue_mask_a763e0 = 0;
+
 // Builds the screen pixel format's channel masks from the hicolor shifts (0x005FC820).
 void unknown_5fc820()
 {
