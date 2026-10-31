@@ -161,8 +161,8 @@ struct UnknownPathEstimator {
     UnknownPathEstimatorBlock *unknown_14;  // +0x14
     int *unknown_18;                        // +0x18
     int *unknown_1c;                        // +0x1C
-    int *unknown_20;                        // +0x20
-    int *unknown_24;                        // +0x24
+    float *unknown_20;                        // +0x20
+    float *unknown_24;                        // +0x24
     int unknown_28;                         // +0x28 (-1)
     int unknown_2c;                         // +0x2C (-1)
     char unknown_30[8];                     // +0x30

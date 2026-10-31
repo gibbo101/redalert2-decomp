@@ -4,8 +4,8 @@
     "id": "population-3284",
     "inventory_sha256": "1f286370aa4c5b4130b15bab7ff3bfb3182627d4951781994cada98ad2b934a0",
     "gaps_sha256": "adc85f51585dd583abf592dfb1e2bdb252f1badbe5410e252f0d3fd09b8ddc1d",
-    "historical_population_sha256": "96a282e270ab4ae69acc59843f311a54b58673cbea9641e75bb2e33976d9bdf6",
-    "historical_acceptance_sha256": "225920916ce612187614b23b7590dd0e3e5d0f3b1c2ee01f9c899cca3360540c"
+    "historical_population_sha256": "cebb295e35ea3ec60f2fa6b00441ae042733c454e50ed8249132125282b28f4c",
+    "historical_acceptance_sha256": "c3c3e864a3a8f7c75c7d244fc26308811fa87545670210dabbfb530f45172086"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9839,7 +9839,20 @@
     "??0RadioClass@@QAE@XZ": 6514736,
     "?Unknown_006F8A00@@YIXPAVBuildingClass@@@Z": 7309824,
     "?unknown_slot251@TechnoClass@@UAEXABUPoint2D@@0ABVRect@@@Z": 7165200,
-    "?unknown_level_height_a41130@@3HA": 10752304
+    "?unknown_level_height_a41130@@3HA": 10752304,
+    "?Unknown_00428950@UnknownPathEstimator@@QAEPAVObjectClass@@ABVCell@@H@Z": 4360528,
+    "?Add@?$DynamicVectorClass@PAVEventClass@@@@QAE_NABQAVEventClass@@@Z": 6403648,
+    "?Add@?$DynamicVectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@QAE_NABU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z": 6315200,
+    "?Add@?$DynamicVectorClass@U?$HashObject@IUSubzoneConnectionStruct@@@@@@QAE_NABU?$HashObject@IUSubzoneConnectionStruct@@@@@Z": 5688672,
+    "?Add@?$DynamicVectorClass@PAVScoreAnimClass@@@@QAE_NABQAVScoreAnimClass@@@Z": 6718704,
+    "?Delete@?$DynamicVectorClass@PAVPlanningMemberClass@@@@QAE_NABQAVPlanningMemberClass@@@Z": 6401424,
+    "?Delete@?$DynamicVectorClass@PAVPlanningMemberClass@@@@QAE_NH@Z": 6405424,
+    "?Delete@?$DynamicVectorClass@USubzoneConnectionStruct@@@@QAE_NH@Z": 5681264,
+    "?Resize@BooleanVectorClass@@QAEHI@Z": 7401952,
+    "?Clear@BooleanVectorClass@@QAEXXZ": 7402176,
+    "?Set@BooleanVectorClass@@QAEXXZ": 7402288,
+    "?Add@?$DynamicVectorClass@PAVAbstractClass@@@@QAE_NABQAVAbstractClass@@@Z": 5038608,
+    "__real@8@3ffec000000000000000": 7996888
   },
   "regions": [
     {
@@ -11190,7 +11203,7 @@
           "resolved": 8702036
         }
       ],
-      "source_sha256": "89893463a85b49c0fa146ef0926219843a716f165ca12aac401af6cb6de39cbc",
+      "source_sha256": "7936fccfd8d8fb1795de852da74b60f6aa9b83273c1f99ba87523e937a7edeca",
       "source": "src/recovered/classes/UnknownPathEstimator/UnknownPathEstimator_Unknown_004284E0_004284e0.cpp",
       "population": "population-3284",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",

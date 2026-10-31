@@ -26,8 +26,8 @@ void UnknownPathEstimator::Unknown_004284E0(Rect const &size)
     int count = unknown_map_cell_side_84e804 * unknown_map_cell_side_84e804;
     unknown_1c = new int[count];
     unknown_18 = new int[count];
-    unknown_24 = new int[count];
-    unknown_20 = new int[count];
+    unknown_24 = new float[count];
+    unknown_20 = new float[count];
     unknown_path_facing_offsets_84c838[0] = -unknown_map_cell_side_84e804;
     unknown_path_facing_offsets_84c838[1] = 1 - unknown_map_cell_side_84e804;
     unknown_path_facing_offsets_84c838[2] = 1;
