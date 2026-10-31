@@ -270,11 +270,13 @@ public:
     void unknown_440140(Cell const *cell, bool arg2);           // 0x00440140 (slot 77, action 1)
     CoordStruct unknown_44ed60(int weapon, bool arg2);                // 0x0044ED60 (the voxel barrel's fire coordinate; slot 43)
     Matrix3D &unknown_453900(Matrix3D &result); // 00453900: writes/returns48-byte transform output, ABI hypothesis
+    void Draw_Selection_Overlay_0043b660(Point2D const &point, Rect const &bounds); // 0043B660, observed ret8
     int unknown_43be20();                                             // 0x0043BE20 selects SHP frame from stage/state, health and occupants
     bool unknown_4454b0();                                            // 0x004454B0 (weapons factory guard step; slot 129)
     BuildingClass *unknown_44ddb0(int facing, bool through_fences, int max_range); // 0x0044DDB0, RET12; arg2 read as byte
     void unknown_44dc40(int arg1);                                    // 0x0044DC40 (laser fence post; slot 52)
     void Create_Fogged_Copy_00452c70(DynamicVectorClass<FoggedObjectClass *> *replacement_list, CellClass *replacement_cell, bool arg); // new owned RET12 helper
+    void Reserve_Base_Area_004510d0(bool skip_inner_cells); // 004510D0, original RET4 and byte predicate
     void unknown_4513b0();                                            // 0x004513B0 (slot 52, when slot 31 fails)
     void unknown_44cfd0(int index);                                   // 0x0044CFD0 (-2: all of unknown_454)
     bool unknown_4538d0(ObjectTypeClass *type);                       // 0x004538D0 (whether slot 62 accepts a new object of the type for the house; hypothesis)
