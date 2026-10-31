@@ -4,8 +4,8 @@
     "id": "population-3244",
     "inventory_sha256": "c91d7a5952e55a709b61ce09d399d47b35e5139dcf5a1c9dfa5d11a4e9e96868",
     "gaps_sha256": "c83cc76e79b03e8e155e984c7f6cc8c57415e368d493b3905835d7fb28a5359b",
-    "historical_population_sha256": "c7ed4ba7becc2868856779037b65943ad4448d99df927d22b8718f9fdde4f13e",
-    "historical_acceptance_sha256": "ddc119d12f1a2b71bcb511111ab508b7b66039a5cd51e1a9d4374538bebb754f"
+    "historical_population_sha256": "ddfa72beed65891c648f73b12c1aa84936f0860867c515f4674941f2d316d8af",
+    "historical_acceptance_sha256": "318c74da7d6dcfee92a0ca343e6b149b19291115ee59698640f3d3dfec1f9a10"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -21642,9 +21642,9 @@
     "??ZStorageClass@@QAE?AV0@ABV0@@Z": 6926240,
     "??YStorageClass@@QAE?AV0@ABV0@@Z": 6926080,
     "?unknown_func_6c0010@TeamTypeClass@@QAE_NPAVFootClass@@PAVHouseClass@@@Z": 7077904,
-    "?unknown_475520@CellClass@@QAEXHH@Z": 4674848,
-    "?unknown_474260@CellClass@@QAEXHHH@Z": 4670048,
-    "?unknown_474510@CellClass@@QAEXHHH@Z": 4670736,
+    "?Draw_Shroud_And_Fog@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674848,
+    "?Draw_Shroud_Or_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670048,
+    "?Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670736,
     "_unknown_section_7a7170": 8024432,
     "??_C@_0BJ@NIJN@WonlineTournamentAllowed?$AA@": 8282120,
     "?Delete_All_Objects_00519960@@YIXXZ": 5347680,

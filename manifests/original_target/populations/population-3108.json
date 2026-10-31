@@ -4,8 +4,8 @@
     "id": "population-3108",
     "inventory_sha256": "6a98231d267b9cde2a3bac9d450e86d0f1b4c3e35a279391a6cf6d7d586ee217",
     "gaps_sha256": "a4c992380c9c2cada77a6301f26d25327ed5953bc0c9a5a7d02ad57d4ddcf70b",
-    "historical_population_sha256": "7dcd36cfd660137015c67d4faf4559160ebc9fbaf5cb2a5879dbf885fbadd67c",
-    "historical_acceptance_sha256": "3432663648080261dc25b0b846e254ac11cd7328c9569ac51385dad802857027"
+    "historical_population_sha256": "1c2069bb4f431cc829ba760647b8942d1d54d279f66f3168717f51306fe170fc",
+    "historical_acceptance_sha256": "9bd3b2c1be78d1481bac57bedbf1d179de46065fb0c7d318b6d8b5d9a900b174"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8964,9 +8964,9 @@
     "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
     "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
     "?unknown_475440@CellClass@@QBE?AUPoint2D@@XZ": 4674624,
-    "?unknown_475520@CellClass@@QAEXHH@Z": 4674848,
-    "?unknown_474260@CellClass@@QAEXHHH@Z": 4670048,
-    "?unknown_474510@CellClass@@QAEXHHH@Z": 4670736,
+    "?Draw_Shroud_And_Fog@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674848,
+    "?Draw_Shroud_Or_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670048,
+    "?Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670736,
     "?unknown_475100@CellClass@@QBE?AVRect@@XZ": 4673792,
     "?unknown_474eb0@CellClass@@QBE?AVRect@@XZ": 4673200,
     "?unknown_tileset_a52f00@@3HA": 10825472,

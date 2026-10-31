@@ -4,8 +4,8 @@
     "id": "population-3218",
     "inventory_sha256": "4657cbaa9ab07818fdad7dc36e92e505e31ee74492eb99c73f462cc0aeb6b800",
     "gaps_sha256": "6e20d521352999efd6668e8d0bea00157ae4ceedefa12cb1262a1e7e0847413d",
-    "historical_population_sha256": "174695a195cf355b23499b582feb123c7d662527bad0baf5cf448c5b27b0b50f",
-    "historical_acceptance_sha256": "318bde626f853bf2ed6daa3c267c1a7403d17ca66674756e7b89ddc36ee4d1ab"
+    "historical_population_sha256": "f4890c89e70874f58f1e3ec9b2d67552e3456a68975fa59cfd3288d728194a7b",
+    "historical_acceptance_sha256": "aa5255851939d67840c124d9af6b4fd44ef6681caa6826e4f8a4962091356dda"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -10990,9 +10990,9 @@
     "?As_Unit@TargetClass@@QBEPAVUnitClass@@XZ": 7037856,
     "?As_Building@TargetClass@@QBEPAVBuildingClass@@XZ": 7038064,
     "?As_Aircraft@TargetClass@@QBEPAVAircraftClass@@XZ": 7038272,
-    "?unknown_475520@CellClass@@QAEXHH@Z": 4674848,
-    "?unknown_474260@CellClass@@QAEXHHH@Z": 4670048,
-    "?unknown_474510@CellClass@@QAEXHHH@Z": 4670736,
+    "?Draw_Shroud_And_Fog@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674848,
+    "?Draw_Shroud_Or_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670048,
+    "?Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670736,
     "??_GSpawnManagerClass@@UAEPAXI@Z": 6859264,
     "??1SpawnManagerClass@@UAE@XZ": 6855296,
     "??0SpawnManagerClass@@QAE@PAVTechnoClass@@PAVAircraftTypeClass@@HHH@Z": 6854416,

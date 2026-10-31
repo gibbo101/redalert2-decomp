@@ -4,8 +4,8 @@
     "id": "population-3016",
     "inventory_sha256": "23a52eb6764d8868d111a67515f2d42d33b5da2296ea224604e38a157af572d2",
     "gaps_sha256": "c4ce819ed455db3a0b79d089da56e8668c908eddf2765bcc432205a385c17360",
-    "historical_population_sha256": "52743cd70f8e226f5a55d18322d8a34569794a950a958d8af8c4064fcc7783c5",
-    "historical_acceptance_sha256": "5bdcc35e872d7fb81a08f543f686dce3a4952c81e029dd072df5fb8ce6264f10"
+    "historical_population_sha256": "94ba9e0fd114e611173d3780335e7f2b41da9309954e3d65562aa0924f9cdbd7",
+    "historical_acceptance_sha256": "2918827bc5141d9d7685c86c55096a0b8cd2eeceed1ab1ac65705f88961e69e5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -11239,9 +11239,9 @@
     "?Play_Song@ThemeClass@@QAEHH@Z": 7241392,
     "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
     "?unknown_475440@CellClass@@QBE?AUPoint2D@@XZ": 4674624,
-    "?unknown_475520@CellClass@@QAEXHH@Z": 4674848,
-    "?unknown_474260@CellClass@@QAEXHHH@Z": 4670048,
-    "?unknown_474510@CellClass@@QAEXHHH@Z": 4670736,
+    "?Draw_Shroud_And_Fog@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674848,
+    "?Draw_Shroud_Or_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670048,
+    "?Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670736,
     "?unknown_475100@CellClass@@QBE?AVRect@@XZ": 4673792,
     "?unknown_474eb0@CellClass@@QBE?AVRect@@XZ": 4673200,
     "?Pick_Next_Song@ThemeClass@@QAEHH@Z": 7241088,

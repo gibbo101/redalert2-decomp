@@ -4,8 +4,8 @@
     "id": "population-2755",
     "inventory_sha256": "b13e9f8a9c80267fb68c5bd415014405b9bc78678999b67b184f26e446fee49e",
     "gaps_sha256": "39a87731f2f2872c7e727c9bebe584eb081b3ddde2c518f5182d6bce3f128ad1",
-    "historical_population_sha256": "3b43b7f9f8516d34d8d44f228ac2bfd6f8bb83bda04cf2f116c2c54344b225bd",
-    "historical_acceptance_sha256": "ae4704168ab53834daee54d8fb3e5e5c04161f8572bf723aaf9a79d1a96602d7"
+    "historical_population_sha256": "e5646a2cb446eeba15c2825364e317ba2e9d1a9d1c1354e9e1212983b43cc174",
+    "historical_acceptance_sha256": "9e7904b7031b1839a8c7a592e36314892158ff32cffdb788d064f3f3feaa6a51"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8860,9 +8860,9 @@
     "??YStorageClass@@QAE?AV0@ABV0@@Z": 6926080,
     "?unknown_func_6c0010@TeamTypeClass@@QAE_NPAVFootClass@@PAVHouseClass@@@Z": 7077904,
     "?unknown_475440@CellClass@@QBE?AUPoint2D@@XZ": 4674624,
-    "?unknown_475520@CellClass@@QAEXHH@Z": 4674848,
-    "?unknown_474260@CellClass@@QAEXHHH@Z": 4670048,
-    "?unknown_474510@CellClass@@QAEXHHH@Z": 4670736,
+    "?Draw_Shroud_And_Fog@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674848,
+    "?Draw_Shroud_Or_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670048,
+    "?Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670736,
     "??_GMultiplayerGameMode@@UAEPAXI@Z": 6000144,
     "?Unknown_0042E150@Unknown84E8D0@@QAEXXZ": 4383056,
     "__imp__OleSaveToStream": 7972328,
