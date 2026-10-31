@@ -37,6 +37,8 @@ BOOL __fastcall Skirmish_Is_Computer(HWND dialog, int id);                  // 0
 // Shows the rows of `count` players from `first` and enables their side and
 // colour boxes for computer players only (resetting them otherwise).
 void __fastcall Skirmish_Show_Players(HWND dialog, int first, int count);  // 0x006836F0
+// Runs the skirmish dialog; true when it ends with Start (0x617) (0x00683BF0).
+bool __fastcall Skirmish_Dialog();                                           // 0x00683BF0
 // WM_COMMAND (0x006829F0; not recovered) and message 0x497 (0x00683FC0; not recovered).
 void __fastcall Skirmish_Command(HWND dialog, int id, HWND control, int code);
 int __fastcall Skirmish_Message_497(HWND dialog, WPARAM wparam, LPARAM lparam);
