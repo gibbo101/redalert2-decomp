@@ -10,6 +10,7 @@ class CellClass;
 struct UnknownMapGenerationCell;
 class MapRegionClass {
 public:
+    static void Destroy_Cell_Regions();
     static UnknownMapGenerationCell &Get_Cell_Data(int index);
     static void Make_Ice_Regions_005704c0();
     bool Split_Region_0056ef20();

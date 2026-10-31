@@ -10,12 +10,9 @@ Earlier owner periods are in [history/](history/).
 The Claude owner stopped at 94% weekly usage; the user switches the app to a second Claude account and integration
 resumes from this file. State at the switch:
 - Mac lanes: none running (results in "Pass 6 notes" below and OPEN_MISSES bottom entries). Do not start lanes until
-  the queue below is landed (user, via review session); then run FOUR unit-sized Opus lanes (user, 2026-10-30 21:40 CDT, Ultra account; week resets Mon 2026-11-02 17:00 local, spend it all). Calibrate after two hours of four lanes: weekly %/hour and the projected 100% time; if past Mon 17:00, add a fifth and sixth lane while the landing queue stays under ~10 rounds; if well before Sunday, keep four. Hard stop 97%. Then the user switches back to the first account (resets Sun 09:00 local). After the Mon 2026-11-02 reset, two Mac lanes is the expected standard (user); four-to-six is only for this short first week. Measured rate: (pending).
-- Landing queue: `private/tools/landing-queue.txt` (8 rounds: Radar334 r2, codex3 r195 (combined plan with r194's
-  row), codex2 r2771-r2774, codex3 r196 rename, codex1 r380 rename). Run
-  `private/tools/runq.sh private/tools/landing-queue.txt` in the background (Integration loop step 0). Radar334 r1
-  was landing when this owner stopped: check `git log` first; if it is not there, put its line
-  (`P build/class-work/Radar334/d/r1 radar334-r1-radar.json RadarClass (Radar334 r1)`) back at the top.
+  the queue below is landed (user, via review session); then run FOUR unit-sized Opus lanes (user, 2026-10-30 21:40 CDT, Ultra account; week resets Mon 2026-11-02 17:00 local, spend it all). Calibrate after two hours of four lanes: weekly %/hour and the projected 100% time; if past Mon 17:00, add a fifth and sixth lane while the landing queue stays under ~10 rounds; if well before Sunday, keep four. Hard stop 97%. Then the user switches back to the first account (resets Sun 09:00 local). After the Mon 2026-11-02 reset, two Mac lanes is the expected standard (user); four-to-six is only for this short first week. Four lanes started ~03:18Z 2026-10-31 at 0% weekly: Radar335, Aircraft336, Power338, Dir337 (DIR32 study). Measured rate: (pending, read at ~05:18Z).
+- Landing queue: the 8 switch-time rounds landed on the new account (through 22ef6ae4). Keep using
+  `private/tools/landing-queue.txt` with runq.sh for new packets (Integration loop step 0).
 - Held: `private/tools/landing-queue-held.txt` (Init328 r1, OwnrDraw326 r2, OwnrDraw330 r1, ~6.3 KB). Each passes
   acceptance but the full build then refuses codex1's map-generator rows 0x587CF0/0x589AC0 ("DIR32 not at original
   operand boundary", unknown_map_random_a705c0); codex1 was asked (messages/owner-to-codex1-2026-10-30-dir32.md).
@@ -104,7 +101,7 @@ Bytes landed per worker per day (first two days; body bytes from each delivery R
 | 2026-10-31 (later) | 2,577 (r242, r249) | 6,051 (r2732-r2740 + r2733 fastcall rename) | 4,329 (r185, supersedes r182-r184) | 6,805 (r10 rebase + r11 ctor) |
 | 2026-10-31 (evening) | 758 (r269; r266 rename, r279 header types) | 7,532 (r2741-r2745) | 629 (r186) | 3,028 (r12-r15; r16 rename) |
 | 2026-10-31 (night) | 5,715 (r287-r334; r312, r324, r329 renames) | 18,359 (r2746-r2761) | 3,897 (r187, r188 UnitClass; r189 misses only) | 3,274 (r17, r19, r20; r18 IndexClass header) |
-| 2026-11-01 | 9,912 (r343-r373; r339 rename) | 8,971 (r2763-r2770) | 2,071 (r191, r192, r194; r190, r193 retypes) | 6,543 (r22, r23, r25; r24 seed tools: typed compile 109->153 of 314, pass5 fallback) |
+| 2026-11-01 | 9,912 (r343-r373; r339, r380 renames) | 13,758 (r2763-r2774) | 4,075 (r191, r192, r194, r195; r190, r193, r196 retypes) | 6,543 (r22, r23, r25; r24 seed tools: typed compile 109->153 of 314, pass5 fallback) |
 BOARD.md is the lane authority. MPGameMode.cpp and MPCoop.cpp compile as one unit (population-2861),
 so MPCooperative functions that call a base body need separate units.
 

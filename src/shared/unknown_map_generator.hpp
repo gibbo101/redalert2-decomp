@@ -10,6 +10,12 @@ class BuildingTypeClass;
 class CellClass;
 class UnknownMapGenerator {
 public:
+    void Init_Regions();
+    void Init_Map_0057ae00(int fullInit);
+    void Generate_Neutral_Tech_Buildings_0058ad90();
+    void Create_Resources_00583b80();
+    void Generate_Hills_00584dd0();
+    void Generate_Vegetation_005852c0();
     // Controller0057A0D0 restores this owner in ECX before both calls; neither callee reads it.
     void Grow_Adjacent_Empty_Tiles_0057cf20();
     void Randomize_Tile_Group_0057de10();
