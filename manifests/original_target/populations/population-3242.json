@@ -4,8 +4,8 @@
     "id": "population-3242",
     "inventory_sha256": "16dbfd2a6ad07aae35418c798089f88158d1f801435a8ab8b234c451c09cdec4",
     "gaps_sha256": "c935339e9a0f03fc2feca20dcb8968f0e9340e9187ba6a52d97138ea1988a829",
-    "historical_population_sha256": "5bd97faf152c8cf756269c7d9cea17d01830436bd8aac908849211ccbe0cd8ff",
-    "historical_acceptance_sha256": "0ae998adb929bcf5a2f9f5233c3aeeba3c772db06e46804f0ede2e979ff7eacf"
+    "historical_population_sha256": "d2f36e01401fc14e0029c6587c1f8021adeeb6cfdcdc726d92246e01df5f976c",
+    "historical_acceptance_sha256": "47d6f863c43eb48dd4bf4cc6f7aeaf7cc4ed4808cfb94b34c7fc56dccdd73449"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3630,8 +3630,8 @@
     "?get@Leaf_7395b0@@QAEIXZ": 7574960,
     "?target@Call_7395b0_0@@QAEIXZ": 7789024,
     "?target@Call_7395b0_1@@QAEIXZ": 6526736,
-    "?get@Leaf_7399b0@@QAEII@Z": 7575984,
-    "?get@Leaf_7399d0@@QAEII@Z": 7576016,
+    "?Set_Country_007399b0@PlayerProfile@@QAEII@Z": 7575984,
+    "?Set_Color_007399d0@PlayerProfile@@QAEII@Z": 7576016,
     "?get@Leaf_73bc80@@QAEXXZ": 7584896,
     "?get@Leaf_73bca0@@QAEXXZ": 7584928,
     "?get@Leaf_73c000@@QAEIXZ": 7585792,

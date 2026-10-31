@@ -445,33 +445,7 @@ extern int unknown_b2abe8;
 void __fastcall Format_User_Options_0073cff0(char *text);
 wchar_t *__fastcall Unknown_006FA180(char const *text);
 
-class PlayerProfile : public ReferenceCounted {
-public:
-    virtual ~PlayerProfile() {}
-    PlayerProfile(Wstring const &server, int locale, bool verified, int unknown_18, int country, int color,
-                  int rank, int points, int wins, int losses, int disconnects);   // 0x00738C40
-    static rc_ptr<PlayerProfile> __fastcall Load_Default();                          // 0x00738670
-    static rc_ptr<PlayerProfile> __fastcall Load_00738880(Wstring const &name);
-    void Populate_Dialog_00739b70(HWND dialog, Wstring const &name, bool update);
-    bool unknown_08;                // +0x08 cleared by the constructor
-    Wstring Server;                 // +0x0C
-    int unknown_10;                 // +0x10 the locale
-    bool Verified;                  // +0x14
-    int unknown_18;                 // +0x18
-    int Country;                    // +0x1C
-    int Color;                      // +0x20
-    int Rank;                       // +0x24
-    int Points;                     // +0x28
-    int Wins;                       // +0x2C
-    int Losses;                     // +0x30
-    int Disconnects;                // +0x34
-    int Unknown_Value_10() const { return unknown_10; }
-    // Sets the locale (+0x10; source 2: from the server) (0x00739950; name hypothesis).
-    void Set_Locale_00739950(int locale, int source);
-    // Writes the profile for a nickname into the registry (0x007395D0; name hypothesis).
-    void Save_007395d0(Wstring const &name);
-    // size 0x38 (operator new in Load_Default 0x00738670)
-};
+#include "shared/player_profile.hpp"
 #include "shared/wol_registry_options.hpp"
 int __fastcall Save_Nickname_00745320(char const *nick, char const *password, bool arg, int arg2);
 extern Wstring unknown_password_b2a63c;

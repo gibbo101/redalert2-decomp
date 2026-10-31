@@ -4,8 +4,8 @@
     "id": "population-2710",
     "inventory_sha256": "f8ef961bf7b0693179d081767111dfa06d47b5f94189e7adac7bfe08391131e4",
     "gaps_sha256": "60c1bb11ecba31ce915a4ed1a6e0a4767c21e03d17d6c218d20464bfe63e241e",
-    "historical_population_sha256": "b1e5b2a1fa902471b99a9a8f829bde9b824887d8268dee60ce14d45b102f6716",
-    "historical_acceptance_sha256": "6c0c112463a6516b6c4a741f6549ff2781a7922bfd700801d0d240805b4fe883"
+    "historical_population_sha256": "7ff38868080016fa28cb185b7805471d26536bae769f789afd37656a4448e09e",
+    "historical_acceptance_sha256": "67bfabbbc0bc4edad25d4b65763b06816ee3755d26c3fb362db545dafe5443db"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2799,7 +2799,7 @@
     "_DAT_00ad0940": 11340096,
     "?FUN_00716690@": 7431824,
     "?FUN_0072a770@": 7513968,
-    "?FUN_00739950@": 7575888,
+    "?Set_Locale_00739950@PlayerProfile@@": 7575888,
     "_DAT_007fd324": 8377124,
     "_DAT_00a3fa8c": 10746508,
     "_DAT_00b26a2c": 11692588,

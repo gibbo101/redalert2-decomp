@@ -4,8 +4,8 @@
     "id": "population-3101",
     "inventory_sha256": "75b1fe6c2a369a837c7c1fc6dbbfd3855b4bcea14e717899b3c6e5fcafc418a6",
     "gaps_sha256": "c7340a4f13ba9b3c3abb724e11b6ff968d022bc545f01e4cd92a3db9c82115c1",
-    "historical_population_sha256": "9b67e7e6b4ad5de9efab3d190259c05b3e0c168edc82765eacd37cbac0b34bc5",
-    "historical_acceptance_sha256": "bc6a6e03e94dd67e50155953860de4a5763486e64e1dac67e9f203b67af740e1"
+    "historical_population_sha256": "f78a4bea4a047859809fb6374cb0c0434a79f649d12ca292205210c938815a02",
+    "historical_acceptance_sha256": "f63e9fc7eea9818d1385c83cc6d023849bacf34f9871ad3dc777240961a592e8"
   },
   "references": {
     "_unknown_static_rect": 11504128,
@@ -1101,8 +1101,8 @@
     "?get@Leaf_7380b0@@QAEIXZ": 7569584,
     "?get@Leaf_738100@@QAEXXZ": 7569664,
     "?get@Leaf_7395b0@@QAEIXZ": 7574960,
-    "?get@Leaf_7399b0@@QAEII@Z": 7575984,
-    "?get@Leaf_7399d0@@QAEII@Z": 7576016,
+    "?Set_Country_007399b0@PlayerProfile@@QAEII@Z": 7575984,
+    "?Set_Color_007399d0@PlayerProfile@@QAEII@Z": 7576016,
     "?get@Leaf_73bc80@@QAEXXZ": 7584896,
     "?get@Leaf_73bca0@@QAEXXZ": 7584928,
     "?get@Leaf_75272b@@QAEXXZ": 7677739,
@@ -4536,7 +4536,7 @@
     "?Clone@EnumConnectionsClass@@UAGJPAPAUIEnumConnections@@@Z": 4793232,
     "?Clone@EnumConnectionPointsClass@@UAGJPAPAUIEnumConnectionPoints@@@Z": 4795680,
     "?unknown_object_84e8d0@@3VUnknown84E8D0@@A": 8710352,
-    "?unknown_set_name@UnknownNamed_00739920@@QAEXABVWstring@@@Z": 7575840,
+    "?Set_Server_00739920@PlayerProfile@@QAEXABVWstring@@@Z": 7575840,
     "?unknown_forward@UnknownLink_0068e270@@QAEXXZ": 6873712,
     "?InfantryTypes@@3V?$DynamicVectorClass@PAVInfantryTypeClass@@@@A": 10748752,
     "?UnitTypes@@3V?$DynamicVectorClass@PAVUnitTypeClass@@@@A": 10706248,

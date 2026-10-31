@@ -6,11 +6,11 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 1021 | 195,735 | 1021 | 0x004011C0–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 1020 | 195,693 | 1020 | 0x004011C0–0x0078FB6B |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 171 | 47,172 | 171 | 0x00438A60–0x004D3450 |
-| (discovery: address-named) | 1443 | 43,033 | 13 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1440 | 42,895 | 13 | 0x004010A0–0x00797198 |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 128 | 42,374 | 128 | 0x0049ED10–0x0056A9D0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 188 | 35,894 | 185 | 0x0041B370–0x006D9750 |
@@ -122,13 +122,13 @@
 | [classes/SavegameInformation](../src/recovered/classes/SavegameInformation/) | 31 | 2,972 | 31 | 0x00659240–0x0065ABF0 |
 | [classes/DropPodLocomotionClass](../src/recovered/classes/DropPodLocomotionClass/) | 28 | 2,922 | 28 | 0x004A5A40–0x004A6710 |
 | [classes/MessageListClass](../src/recovered/classes/MessageListClass/) | 14 | 2,872 | 14 | 0x005B4BD0–0x005B5CB0 |
+| [classes/PlayerProfile](../src/recovered/classes/PlayerProfile/) | 13 | 2,850 | 12 | 0x00738670–0x0073A090 |
 | [MainOpt](../src/recovered/MainOpt/) | 7 | 2,816 | 7 | 0x00542150–0x00543C40 |
 | [classes/PowerClass](../src/recovered/classes/PowerClass/) | 16 | 2,801 | 16 | 0x0061C450–0x0061D220 |
 | [classes/MapSelectData](../src/recovered/classes/MapSelectData/) | 9 | 2,758 | 9 | 0x005AFF10–0x005B0980 |
 | [classes/BaseClass](../src/recovered/classes/BaseClass/) | 15 | 2,729 | 15 | 0x0042BF70–0x0042CB70 |
 | [classes/AnimFile](../src/recovered/classes/AnimFile/) | 18 | 2,716 | 18 | 0x00423F90–0x00424BC0 |
 | [classes/ScrollClass](../src/recovered/classes/ScrollClass/) | 13 | 2,701 | 13 | 0x0040D140–0x0066AC60 |
-| [classes/PlayerProfile](../src/recovered/classes/PlayerProfile/) | 9 | 2,670 | 8 | 0x00738670–0x0073A090 |
 | [classes/MultiMission](../src/recovered/classes/MultiMission/) | 7 | 2,594 | 7 | 0x00671670–0x006720E0 |
 | [classes/WarheadTypeClass](../src/recovered/classes/WarheadTypeClass/) | 16 | 2,535 | 16 | 0x0040F270–0x00721090 |
 | [classes/RadSiteClass](../src/recovered/classes/RadSiteClass/) | 23 | 2,516 | 23 | 0x00637220–0x00637F90 |

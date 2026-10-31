@@ -4,8 +4,8 @@
     "id": "population-3131",
     "inventory_sha256": "dcae65f86b47705e93450509c6060d40166c364b27329fd4f6ec0df665c34497",
     "gaps_sha256": "64f2d20582546adfc37681f307ee35a3bce5aa477fa903a8a96615eb195543a1",
-    "historical_population_sha256": "30b6da28c1d361ca7af1bdcc371755d0b9f7c794d7c843fb4bf568c6e219f730",
-    "historical_acceptance_sha256": "9d882414f76d7410aed852a9b2028ab8ec47864738d7935e40960bf5fc5a28e5"
+    "historical_population_sha256": "7933f2738dbe88aec3b9ba1c79d4b1611c898b904da9b9ed4eea4aad68296255",
+    "historical_acceptance_sha256": "e75e87b3ada79394e7f2394a1717bc165d8155a5165b12748930353bf29f0519"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3208,7 +3208,7 @@
     "?Clone@EnumConnectionPointsClass@@UAGJPAPAUIEnumConnectionPoints@@@Z": 4795680,
     "?unknown_object_84e8d0@@3VUnknown84E8D0@@A": 8710352,
     "?unknown_10@CampaignProperties@WorldDominationTour@@QBE?AVWstring@@XZ": 7525088,
-    "?unknown_set_name@UnknownNamed_00739920@@QAEXABVWstring@@@Z": 7575840,
+    "?Set_Server_00739920@PlayerProfile@@QAEXABVWstring@@@Z": 7575840,
     "?unknown_forward@UnknownLink_0068e270@@QAEXXZ": 6873712,
     "?InfantryTypes@@3V?$DynamicVectorClass@PAVInfantryTypeClass@@@@A": 10748752,
     "?UnitTypes@@3V?$DynamicVectorClass@PAVUnitTypeClass@@@@A": 10706248,
@@ -4625,7 +4625,7 @@
     "_DAT_00ad0940": 11340096,
     "?FUN_00716690@": 7431824,
     "?FUN_0072a770@": 7513968,
-    "?FUN_00739950@": 7575888,
+    "?Set_Locale_00739950@PlayerProfile@@": 7575888,
     "_DAT_007fd324": 8377124,
     "_DAT_00a3fa8c": 10746508,
     "_DAT_00b26a2c": 11692588,
