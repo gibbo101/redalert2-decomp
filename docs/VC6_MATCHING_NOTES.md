@@ -761,3 +761,15 @@ change: after the call, a following tail call's register arguments are set befor
 result is copied to its callee-saved register at once. Probe by overlaying the callee's declaration as __fastcall: a
 shape-100 result whose only miss is the unresolved mangling means a rename spec to __fastcall fixes the caller. Fixed
 netshare 0x5CB560 (98.97 over three lanes) and 0x5C34F0 (97.37). Other "scheduling tie around a call" plateaus may fall to it.
+
+## A global read twice, through eax (Netshare390, 2026-10-31)
+When the original loads a global HWND/pointer into eax, pushes a call's arguments and then copies eax into a callee-saved
+register, the source is `local = global;` followed by an inline call that reads the same global itself (or a first call
+that takes the global directly and later calls that take the local). VC6 merges the two loads into eax. Fixed netshare
+0x5C67C0 and 0x5C71F0 (87.67, and its inventory bound was short). Stack-frame sharing follows the 2x rule (Netshare387):
+VC6 reuses a slot for a non-overlapping object only when it is at most twice the slot's current size, so a frame that is
+too large can need an earlier, larger buffer (0x5C7570: `char name[128]`, any 125-200 matches).
+
+## Inline helper with a const-reference argument (Netshare390, 2026-10-31)
+Eight repeated add-row/set-item-data pairs in 0x5CA6C0 come from one file-static inline helper. Passing the node pointer
+by value scored 97.00; passing it as `NodeNameType * const &` is exact (the reference keeps the caller's load order).
