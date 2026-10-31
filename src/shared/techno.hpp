@@ -602,6 +602,7 @@ public:
     bool unknown_6c6130(int method, int arg2, Cell const *cell, int arg4, ObjectClass **object, int *value, int zone);   // 0x006C6130 (the best target in a cell; TechnoClass slot 219)
     LaserDrawClass *unknown_6c9df0(AbstractClass *target, int weapon_index, WeaponTypeClass *weapon, CoordStruct const &source);   // 0x006C9DF0 (draws the weapon's laser)
     bool unknown_6d9710() const;                                // 0x006D9710 (the +0x148 timer has run out)
+    void unknown_6cc020(); // 006CC020: draw the targeting laser
     CoordStruct unknown_6d65b0();                               // 0x006D65B0 (FootClass slot 243: the far end of a line to draw)
     void unknown_6d0510(CoordStruct from, CoordStruct to, RGBClass color, int arg8, int arg9);   // 0x006D0510 (draws a line between two points)
     bool unknown_6d1440();                                      // 0x006D1440 (+0x408 set and its 0x00613B60 positive)

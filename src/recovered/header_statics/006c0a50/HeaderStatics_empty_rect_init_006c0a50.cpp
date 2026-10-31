@@ -31,3 +31,5 @@
 // @ref _unknown_geometry_k=00ac0148
 // @ref _unknown_geometry_l=00ac0188
 // @ref _unknown_geometry_sixty=007acaa0
+
+#include "shared/building_type_class.hpp"

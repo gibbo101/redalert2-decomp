@@ -31,7 +31,7 @@ bool TechnoClass::unknown_6d7f70()
             }
             if (techno->Kind_Of() == 6 && Kind_Of() == 2) {
                 BuildingTypeClass *type = ((BuildingClass *)techno)->Type;
-                if (type->unknown_134a && !type->unknown_1349) {
+                if (type->UnitReload && !type->UnitRepair) {
                     unknown_slot150(14, techno);
                 }
             }
