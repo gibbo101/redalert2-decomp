@@ -279,6 +279,9 @@ public:
     bool Place_Cliff(CellClass *cellptr, int region_id);        // 0x0055B820
     void Mark_Fill_Area(Cell const &cell, bool mark);           // 0x00567710
     bool Rebuild_Cliffs_At(Cell const &cell);                   // 0x00567AE0
+    // The map generator's shore passes (TibSun Prune_Water, Get_Water_Mask; names are hypotheses).
+    void Unknown_0055C520(CellClass *cellptr, int region_id, bool set_region);   // 0x0055C520 (TibSun Prune_Water)
+    int Unknown_0055D410(CellClass *cellptr, int control);                       // 0x0055D410 (TibSun Get_Water_Mask)
     bool Unknown_00569320(Cell const &cell);      // 0x00569320 (a bridge hut's bridge is intact; InfantryClass slot 28; hypothesis)
     // A walk over the map's cells: restart (0x0055A550) and next cell, or
     // null at the end (0x0055A490).
