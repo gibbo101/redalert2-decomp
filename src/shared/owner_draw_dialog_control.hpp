@@ -110,15 +110,8 @@ public:
         while (node && node->Key != key) node = node->Next;
         return node ? &node->Value : 0;
     }
-    // 0x00601710 when not inlined.
-    bool Get(unsigned int const &key, UnknownControlRecord *&value) const {
-        if (!Count) return false;
-        Node *node = Buckets[Bucket_Index(key)];
-        while (node && node->Key != key) node = node->Next;
-        if (!node) return false;
-        value = &node->Value;
-        return true;
-    }
+    // 0x00601710 (defined out of line in ownrdraw.cpp).
+    bool Get(unsigned int const &key, UnknownControlRecord *&value) const;
 };
 extern UnknownControlIndex unknown_registry_a73640;
 // A control's registry record through the out-of-line Get, or null (0x005FC020).
