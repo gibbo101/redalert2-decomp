@@ -16,7 +16,7 @@
 // @ref ?Map@@3VMouseClass@@A=008324e0
 // @ref ??AMapClass@@QAEAAVCellClass@@ABVCell@@@Z=00548070
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
-// @ref ?Unknown_006A8D40@Tactical@@QAEHABVCell@@H@Z=006a8d40
+// @ref ?Cell_Shadow@Tactical@@QAEHABVCell@@_N@Z=006a8d40
 // @ref ?Unknown_006AADD0@Tactical@@QAEXPAVCellClass@@@Z=006aadd0
 // @ref ?Unknown_00568520@MapClass@@QAEXPAVCellClass@@PAVHouseClass@@_N@Z=00568520
 // @ref ?unknown_47be00@CellClass@@QAEXXZ=0047be00
@@ -31,7 +31,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, HouseClass *house)
     bool mapped = changed;
     target.unknown_140 = (target.unknown_140 & ~0x40) | 2;
     target.unknown_12c |= 8;
-    unsigned char frame = unknown_tactical_83996c->Unknown_006A8D40(cell, 0);
+    unsigned char frame = unknown_tactical_83996c->Cell_Shadow(cell, 0);
     if (frame != target.unknown_120) {
         changed = true;
         target.unknown_120 = frame;
@@ -39,7 +39,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, HouseClass *house)
     if (target.unknown_120 == 0xFF) {
         target.unknown_12c |= 0x10;
     }
-    frame = unknown_tactical_83996c->Unknown_006A8D40(cell, 1);
+    frame = unknown_tactical_83996c->Cell_Shadow(cell, 1);
     if (frame != target.unknown_121) {
         changed = true;
         target.unknown_121 = frame;
@@ -56,7 +56,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, HouseClass *house)
         CellClass &near_cell = (*this)[adjacent];
 
         if (adjacent != cell && !(near_cell.unknown_12c & 0x10)) {
-            int shade = unknown_tactical_83996c->Unknown_006A8D40(adjacent, 0);
+            int shade = unknown_tactical_83996c->Cell_Shadow(adjacent, 0);
             if (shade == -1) {
                 if (!(near_cell.unknown_12c & 8)) {
                     unknown_slot36(adjacent, house);
@@ -66,7 +66,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, HouseClass *house)
                     for (int around = 0; around < 8; around++) {
                         Cell next = AdjacentCell[around & 7] + adjacent;
                         CellClass &next_cell = (*this)[next];
-                        unsigned char next_frame = unknown_tactical_83996c->Unknown_006A8D40(next, 0);
+                        unsigned char next_frame = unknown_tactical_83996c->Cell_Shadow(next, 0);
                         if (next_frame != next_cell.unknown_120) {
                             next_cell.unknown_120 = next_frame;
                             unknown_tactical_83996c->Unknown_006AADD0(&next_cell);
@@ -82,7 +82,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, HouseClass *house)
         }
 
         if (adjacent != cell && !(near_cell.unknown_140 & 1)) {
-            int shade = unknown_tactical_83996c->Unknown_006A8D40(adjacent, 1);
+            int shade = unknown_tactical_83996c->Cell_Shadow(adjacent, 1);
             if (shade == -1) {
                 if (!(near_cell.unknown_140 & 2)) {
                     unknown_slot36(adjacent, house);
@@ -92,7 +92,7 @@ bool DisplayClass::unknown_slot36(Cell const &cell, HouseClass *house)
                     for (int around = 0; around < 8; around++) {
                         Cell next = AdjacentCell[around & 7] + adjacent;
                         CellClass &next_cell = (*this)[next];
-                        unsigned char next_frame = unknown_tactical_83996c->Unknown_006A8D40(next, 1);
+                        unsigned char next_frame = unknown_tactical_83996c->Cell_Shadow(next, 1);
                         if (next_frame != next_cell.unknown_121) {
                             next_cell.unknown_121 = next_frame;
                             unknown_tactical_83996c->Unknown_006AADD0(&next_cell);

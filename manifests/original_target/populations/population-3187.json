@@ -4,8 +4,8 @@
     "id": "population-3187",
     "inventory_sha256": "276c357901b2354dc06b24da3124f62e78036c719ac2f6b267343c55fe6bfbc8",
     "gaps_sha256": "457a2d343b678721dd8e1e5c558f1730d3236cff3e4976f50943d04601dc3e1a",
-    "historical_population_sha256": "b185d76afeb4880c54c9f116a049c0e9bd30b5b56f980e9a90958ac961f8d113",
-    "historical_acceptance_sha256": "1970d78d985c1f4a1efa892acab96a8b0f84b05ddd8e3f30f9ad6ee04b281c52"
+    "historical_population_sha256": "3a2d033253af2660e35b5ccbcfc939efecad104792e326d197c723b6558ec1eb",
+    "historical_acceptance_sha256": "d466a5069d9065bca8f3b1df72bbb8fdab5f9eac034b84031e179fd79790629c"
   },
   "references": {
     "?Create_Region_From_Cell_0056e100@MapRegionClass@@": 5693696,
@@ -5198,7 +5198,7 @@
     "?INoticeSink_Unknown@InfantryClass@@UAE_NHH@Z": 5281168,
     "?unknown_47c8a0@CellClass@@QAEXXZ": 4704416,
     "?unknown_47c840@CellClass@@QAEXXZ": 4704320,
-    "?Unknown_006A8D40@Tactical@@QAEHABVCell@@H@Z": 6982976,
+    "?Cell_Shadow@Tactical@@QAEHABVCell@@_N@Z": 6982976,
     "?Unknown_006AADD0@Tactical@@QAEXPAVCellClass@@@Z": 6991312,
     "?Unknown_00568520@MapClass@@QAEXPAVCellClass@@PAVHouseClass@@_N@Z": 5670176,
     "?unknown_47be00@CellClass@@QAEXXZ": 4701696,

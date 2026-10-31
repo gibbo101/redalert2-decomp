@@ -13,7 +13,7 @@
 // @ref ??AMapClass@@QAEAAVCellClass@@ABVCell@@@Z=00548070
 // @ref ?AdjacentCell@@3QBVCell@@B=00851a70
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
-// @ref ?Unknown_006A8D40@Tactical@@QAEHABVCell@@H@Z=006a8d40
+// @ref ?Cell_Shadow@Tactical@@QAEHABVCell@@_N@Z=006a8d40
 // @ref ?Unknown_006AADD0@Tactical@@QAEXPAVCellClass@@@Z=006aadd0
 // @ref ?Unknown_00568520@MapClass@@QAEXPAVCellClass@@PAVHouseClass@@_N@Z=00568520
 // @ref ?unknown_slot39@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@@Z=0049a370
@@ -24,7 +24,7 @@ bool DisplayClass::unknown_slot39(Cell const &cell, HouseClass *house)
     bool changed = !(target.unknown_12c & 8);
     target.unknown_12c |= 8;
     bool shown = changed;
-    unsigned char frame = unknown_tactical_83996c->Unknown_006A8D40(cell, 0);
+    unsigned char frame = unknown_tactical_83996c->Cell_Shadow(cell, 0);
     if (frame != target.unknown_120) {
         changed = true;
         target.unknown_120 = frame;
@@ -41,7 +41,7 @@ bool DisplayClass::unknown_slot39(Cell const &cell, HouseClass *house)
         if (adjacent == cell || (next.unknown_12c & 0x10)) {
             continue;
         }
-        int next_frame = unknown_tactical_83996c->Unknown_006A8D40(adjacent, 0);
+        int next_frame = unknown_tactical_83996c->Cell_Shadow(adjacent, 0);
         if (next_frame == -1) {
             if (!(next.unknown_12c & 8)) {
                 unknown_slot39(adjacent, house);
@@ -51,7 +51,7 @@ bool DisplayClass::unknown_slot39(Cell const &cell, HouseClass *house)
                 for (int around = 0; around < 8; around++) {
                     Cell beyond = Adjacent_Cell(adjacent, around);
                     CellClass &far_cell = (*this)[beyond];
-                    unsigned char far_frame = unknown_tactical_83996c->Unknown_006A8D40(beyond, 0);
+                    unsigned char far_frame = unknown_tactical_83996c->Cell_Shadow(beyond, 0);
                     if (far_frame != far_cell.unknown_120) {
                         far_cell.unknown_120 = far_frame;
                         unknown_tactical_83996c->Unknown_006AADD0(&far_cell);

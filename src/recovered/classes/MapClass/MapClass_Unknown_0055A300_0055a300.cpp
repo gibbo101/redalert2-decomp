@@ -30,7 +30,7 @@ void MapClass::Unknown_0055A300()
     cellptr = Unknown_0055A490();
     while (cellptr != 0) {
         Cell cell = Coord_Cell(cellptr->Center_Coord());
-        unsigned char frame = unknown_tactical_83996c->Unknown_006A8D40(cell, 0);
+        unsigned char frame = unknown_tactical_83996c->Cell_Shadow(cell, 0);
         if (frame != cellptr->unknown_120) {
             cellptr->unknown_120 = frame;
             cellptr->unknown_138 = true;

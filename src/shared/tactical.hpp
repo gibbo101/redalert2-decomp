@@ -108,7 +108,9 @@ public:
     // The screen pixel of a coordinate; false when off screen (0x006A29D0;
     // hypothesis: Coord_To_Pixel).
     bool Unknown_006A29D0(CoordStruct const &coord, Point2D &pixel);
-    int Unknown_006A8D40(Cell const &cell, int layer);     // 0x006A8D40 (a cell's shroud frame for a layer; DisplayClass slot 37; hypothesis)
+    // The shroud (fog: the fog) edge frame of a cell from its eight neighbours: -2 solid black, -1 none
+    // (0x006A8D40; TibSun Tactical::Cell_Shadow; the flag is read as a byte).
+    int Cell_Shadow(Cell const &cell, bool fog);
     void Unknown_006AADD0(CellClass *cell);        // 0x006AADD0 (DisplayClass slot 37: a cell to redraw; hypothesis)
     void Unknown_006AA5A0(Point2D const &point);   // 0x006AA5A0 starts a selection band at a point (DisplayClass slot 47; hypothesis)
     void Unknown_006AA5E0(Point2D const &point);   // 0x006AA5E0 drags the band to a point (DisplayClass slot 47; hypothesis)

@@ -13,7 +13,7 @@
 // @ref ?AdjacentCell@@3QBVCell@@B=00851a70
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
 // @ref ?Unknown_006AADD0@Tactical@@QAEXPAVCellClass@@@Z=006aadd0
-// @ref ?Unknown_006A8D40@Tactical@@QAEHABVCell@@H@Z=006a8d40
+// @ref ?Cell_Shadow@Tactical@@QAEHABVCell@@_N@Z=006a8d40
 // @ref ?unknown_47bc80@CellClass@@QAEXXZ=0047bc80
 // @ref ?Unknown_0049CDB0@DisplayClass@@QAEXABVCell@@@Z=0049cdb0
 
@@ -36,7 +36,7 @@ void DisplayClass::Unknown_0049CDB0(Cell const &cell)
         Cell adjacent = Adjacent_Cell(cell, facing);
         CellClass &next = (*this)[adjacent];
         Cell where = next.MapCoords;
-        int frame = unknown_tactical_83996c->Unknown_006A8D40(where, 1);
+        int frame = unknown_tactical_83996c->Cell_Shadow(where, 1);
         if (frame == -2 && (char)next.unknown_121 != (char)frame) {
             Unknown_0049CDB0(adjacent);
         } else if ((next.unknown_140 & 1) || frame != (char)next.unknown_121) {

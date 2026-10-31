@@ -4,8 +4,8 @@
     "id": "population-3238",
     "inventory_sha256": "67d86adf94eb225efc7377f8d563fae77a8f43e4a82680be337df0996fee23ee",
     "gaps_sha256": "dc9576559ebc3eee15dcb288d4807e89abbffe9ce2bbb029ce10afefde9f65b4",
-    "historical_population_sha256": "6e4c61346d18f9f72ccc0bb6e1642c1cc5ea018eddd93af6b8b0dbb380604c7f",
-    "historical_acceptance_sha256": "870ab08a1277589b2ed1bef364f5e6cc5692f4eb74cd2d31f629a323dd49f32c"
+    "historical_population_sha256": "ce70872ef6dba0dc611c8af594284a5a7dd5c2b19a8ffb3df70af3b99b7f1b4f",
+    "historical_acceptance_sha256": "4d566133a20689fd297a1d3e43636226733f96b88504985e8c8d9eb64148da64"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -4204,7 +4204,7 @@
     "?Unknown_006A6A50@UnknownTacticalView@@QAE?AVCell@@ABUCoordStruct@@@Z": 6974032,
     "?Unknown_006A6BD0@Tactical@@QAE?AVCell@@ABUPoint2D@@@Z": 6974416,
     "?Unknown_006A8B70@Tactical@@QAEXHH@Z": 6982512,
-    "?Unknown_006A8D40@Tactical@@QAEHABVCell@@H@Z": 6982976,
+    "?Cell_Shadow@Tactical@@QAEHABVCell@@_N@Z": 6982976,
     "?Unknown_006AA5A0@Tactical@@QAEXABUPoint2D@@@Z": 6989216,
     "?Unknown_006AA5E0@Tactical@@QAEXABUPoint2D@@@Z": 6989280,
     "?Unknown_006AA770@Tactical@@QAEXXZ": 6989680,

@@ -11,7 +11,7 @@
 // @ref ?Map@@3VMouseClass@@A=008324e0
 // @ref ??AMapClass@@QAEAAVCellClass@@ABVCell@@@Z=00548070
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
-// @ref ?Unknown_006A8D40@Tactical@@QAEHABVCell@@H@Z=006a8d40
+// @ref ?Cell_Shadow@Tactical@@QAEHABVCell@@_N@Z=006a8d40
 // @ref ?Unknown_006AADD0@Tactical@@QAEXPAVCellClass@@@Z=006aadd0
 // @ref ?Unknown_00568520@MapClass@@QAEXPAVCellClass@@PAVHouseClass@@_N@Z=00568520
 // @ref ?unknown_47be00@CellClass@@QAEXXZ=0047be00
@@ -31,7 +31,7 @@ bool DisplayClass::unknown_slot37(Cell const &cell, HouseClass *house, bool arg3
     } else {
         target.unknown_47c840();
     }
-    unsigned char frame = unknown_tactical_83996c->Unknown_006A8D40(cell, 0);
+    unsigned char frame = unknown_tactical_83996c->Cell_Shadow(cell, 0);
     if (frame != target.unknown_120) {
         changed = true;
         target.unknown_120 = frame;
@@ -39,7 +39,7 @@ bool DisplayClass::unknown_slot37(Cell const &cell, HouseClass *house, bool arg3
     if (target.unknown_120 == 0xFF) {
         target.unknown_12c |= 0x10;
     }
-    frame = unknown_tactical_83996c->Unknown_006A8D40(cell, 1);
+    frame = unknown_tactical_83996c->Cell_Shadow(cell, 1);
     if (frame != target.unknown_121) {
         changed = true;
         target.unknown_121 = frame;
