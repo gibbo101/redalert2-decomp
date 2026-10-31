@@ -521,8 +521,8 @@ public:
     virtual bool unknown_slot245(HouseClass *house);                // slot 245 (+0x3D4) 0x006D8CE0
     virtual int unknown_slot246(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9); // slot 246 (+0x3D8) 0x006D1D00
     virtual void unknown_slot247(int arg1, int arg2);           // slot 247 (+0x3DC) 0x006C3B20
-    virtual int unknown_slot248(int arg1, int arg2, int arg3);      // slot 248 (+0x3E0) 0x006C3F00
-    virtual int unknown_slot249();                                  // slot 249 (+0x3E4) 0x006D4920
+    virtual void unknown_slot248(Point2D const &point, Rect const &window, bool arg3);   // slot 248 (+0x3E0) 0x006C3F00 (draws the health bar and pips)
+    virtual void unknown_slot249(Point2D const &point, Point2D const &center, Rect const &window);   // slot 249 (+0x3E4) 0x006D4920 (draws the pips)
     virtual void unknown_slot250(Point2D const &point, Rect const &window);  // slot 250 (+0x3E8) 0x006D5440
     virtual int unknown_slot251(int arg1, int arg2, int arg3);      // slot 251 (+0x3EC) 0x006D5510
     virtual void unknown_slot252(bool quiet);                   // slot 252 (+0x3F0) 0x006CF250
