@@ -282,7 +282,8 @@ inline unsigned short Blend_Color(unsigned short pixel, unsigned short color, un
 // The window procedures of those classes (not yet recovered).
 LRESULT __stdcall unknown_combo_drop_proc_5ead20(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 LRESULT __stdcall unknown_new_edit_proc_5ead00(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
-void unknown_5eac30();
+// __fastcall: 0x005FF7E0 then loads EnumChildWindows into ebx before its dialog store (no-argument callee rule).
+void __fastcall unknown_5eac30();
 // The tooltip shown over owner-drawn controls (0x00A737F0; constructor 0x005EDFA0, static
 // initializer 0x005EDF60). surface_10 holds the screen area the tooltip covers.
 struct UnknownTooltipState {

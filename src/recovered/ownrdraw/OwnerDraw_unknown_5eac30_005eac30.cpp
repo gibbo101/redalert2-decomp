@@ -13,7 +13,7 @@
 namespace OwnerDraw {
 
 // Registers the "ComboDropWin" and "NewEdit" window classes once.
-void unknown_5eac30()
+void __fastcall unknown_5eac30()
 {
     if (unknown_classes_registered_a763f0 == 1) {
         return;
