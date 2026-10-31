@@ -5,7 +5,11 @@
 #include "shared/cd_timer.hpp"
 // A 16-bit direction in a 4-byte value (hypothesis: Westwood's DirStruct;
 // cf. UnknownDirStruct in shared/bullet.hpp).
+enum Dir32 {}; // The reference's wrapped 32-direction index type.
 struct UnknownFacingDir {
+    unsigned Round_To_32() const;
+    Dir32 As_Dir32() const;
+    double As_Radian32() const;
     void From_Radian(double angle); // original inline angle conversion
     double As_Radian() const; // original signed16 angle observation
     UnknownFacingDir() {}
