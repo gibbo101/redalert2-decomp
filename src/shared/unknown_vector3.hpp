@@ -8,6 +8,13 @@
 struct UnknownVector3 {
     UnknownVector3() {}
     UnknownVector3(int x, int y, int z);
+    UnknownVector3 const operator+(UnknownVector3 const &other) const
+    { return UnknownVector3(X+other.X,Y+other.Y,Z+other.Z); }
+    UnknownVector3 const operator/(int divisor) const
+    {
+        if (divisor==0) return UnknownVector3(0,0,0);
+        return UnknownVector3(X/divisor,Y/divisor,Z/divisor);
+    }
     int Length() const;
     UnknownVector3 const operator-(UnknownVector3 const &other) const
     {
