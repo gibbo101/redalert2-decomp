@@ -68,6 +68,7 @@ public:
     bool Unknown_00478760(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7);   // 0x00478760
     BuildingClass *Unknown_004717B0();  // 0x004717B0 (the building in the cell; hypothesis)
     CellClass &Adjacent_Cell(unsigned facing);  // 0x00476AC0 (as shared/cell.hpp; SpawnManagerClass::AI)
+    void unknown_476920(void const *arg1, bool arg2, bool arg3, bool alt);  // 0x00476920 (as shared/cell.hpp; AircraftClass slot 126)
     char unknown_024[0xE4 - 0x24];
     TechnoClass *Occupier;              // +0xE4 (hypothesis)
 };
