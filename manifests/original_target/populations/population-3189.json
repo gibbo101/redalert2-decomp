@@ -4,8 +4,8 @@
     "id": "population-3189",
     "inventory_sha256": "44bf35994912f0f7a381baecf1d2dc4e2241788fa2ebfa0fed1204e6cc4d5ac7",
     "gaps_sha256": "a1844f9e7ba65c27073b23f6e59d9af4cea971459c51cfbe6410ca2919187311",
-    "historical_population_sha256": "2741c8375a59a2cc2d1a544256b7a1c78b3e2f63ffeee2260c8879cd99bc9f8e",
-    "historical_acceptance_sha256": "363fc73b03cc3e3aefb6e95f139dcff2bef5cd2286e95c12b16e084b7791f00d"
+    "historical_population_sha256": "6793b633e3139f133339a13b5ea7e9afcb4bd943bca422c0ffba15adf53ca19e",
+    "historical_acceptance_sha256": "4e482e194a51760aec3e6d87c485bd67e0716162321f879a0bdd9b3c2f0e6dcd"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -18129,8 +18129,8 @@
     "?unknown_create_dialog_5ff610@@YIPAUHWND__@@HP6GHPAU1@IIJ@ZH@Z": 6288912,
     "?unknown_create_dialog_735700@@YIPAXPAXHPAUHWND__@@P6GJ1IIJ@ZJ@Z": 7558912,
     "?unknown_create_team@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7017504,
-    "?unknown_current_7f8ce8@@3PAUUnknownSelectable_006f9fe0@@A": 8359144,
-    "?unknown_current_ad0450@@3PAUUnknownSelectable_006f9fb0@@A": 11338832,
+    "?unknown_text_option_7f8ce8@@3HA": 8359144,
+    "?unknown_text_option_ad0450@@3HA": 11338832,
     "?unknown_cursor_b263d0@@3PAXA": 11690960,
     "?unknown_cyborg_recovery_007a7670@@3NB": 8025712,
     "?unknown_debug_allowed_a3d8c4@@3_NA": 10737860,
@@ -18882,8 +18882,8 @@
     "?unknown_lookup_pair@@YIHH@Z": 6664784,
     "?unknown_lose_or_win_6b1390@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7017360,
     "?unknown_make_ally@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7013568,
-    "?unknown_make_current@UnknownSelectable_006f9fb0@@QAEXXZ": 7315376,
-    "?unknown_make_current@UnknownSelectable_006f9fe0@@QAEXXZ": 7315424,
+    "?Set_Text_Option_006f9fb0@@YIXH@Z": 7315376,
+    "?Set_Text_Option_006f9fe0@@YIXH@Z": 7315424,
     "?unknown_make_enemy@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7013632,
     "?unknown_malformed_seen_b2ae24@@3_NA": 11709988,
     "?unknown_mangler_addresses_b26cbc@@3PAY0IA@DA": 11693244,
