@@ -10,7 +10,7 @@ Earlier owner periods are in [history/](history/).
 The Claude owner stopped at 94% weekly usage; the user switches the app to a second Claude account and integration
 resumes from this file. State at the switch:
 - Mac lanes: none running (results in "Pass 6 notes" below and OPEN_MISSES bottom entries). Do not start lanes until
-  the queue below is landed (user, via review session); then run two Mac lanes (user, 2026-10-30 night, new Ultra account).
+  the queue below is landed (user, via review session); then run FOUR unit-sized Opus lanes (user, 2026-10-30 21:40 CDT, Ultra account; week resets Mon 2026-11-02 17:00 local, spend it all). Calibrate after two hours of four lanes: weekly %/hour and the projected 100% time; if past Mon 17:00, add a fifth and sixth lane while the landing queue stays under ~10 rounds; if well before Sunday, keep four. Hard stop 97%. Then the user switches back to the first account (resets Sun 09:00 local). After the Mon 2026-11-02 reset, two Mac lanes is the expected standard (user); four-to-six is only for this short first week. Measured rate: (pending).
 - Landing queue: `private/tools/landing-queue.txt` (8 rounds: Radar334 r2, codex3 r195 (combined plan with r194's
   row), codex2 r2771-r2774, codex3 r196 rename, codex1 r380 rename). Run
   `private/tools/runq.sh private/tools/landing-queue.txt` in the background (Integration loop step 0). Radar334 r1
