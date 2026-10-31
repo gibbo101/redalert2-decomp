@@ -4,8 +4,8 @@
     "id": "population-3337",
     "inventory_sha256": "9cd62d3c485e9db9e2c5c26a8defdc189a130b185db81399c523ba567639e803",
     "gaps_sha256": "6b7dfdb96ab9ba21ffe6a463c94ea9bff8855583e545b3bcfe97984c3fb54352",
-    "historical_population_sha256": "c30e5ef2f3a9436a1d09e5e6d971a0fa43a9a46cdfa9c5662339134513abfe29",
-    "historical_acceptance_sha256": "c308b5ce1e9bc9fa5c73615167a0025f01a8017c61782285d203ade57d76e7c8"
+    "historical_population_sha256": "8f434b5bbf02a2344969548782e3e2fe6721816202ba5e4b3ba2c85b1bb95b5e",
+    "historical_acceptance_sha256": "8f9e2db57be2120d251280cf8d2a7c0f90d13c19c5e35b104b32ba832e651e6b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2024,7 +2024,7 @@
     "?unknown_session_a3f616@@3_NA": 10745366,
     "?unknown_counter_a3fabc@@3HA": 10746556,
     "?unknown_53f460@@YA_NXZ": 5502048,
-    "?unknown_53fbd0@@YA_NXZ": 5503952,
+    "?unknown_53fbd0@@YI_NXZ": 5503952,
     "?Service_Game_IO_00481fb0@@YIXXZ": 4726704,
     "?unknown_cancel_dialog_proc_600260@@YGHPAUHWND__@@IIJ@Z": 6292064,
     "__imp__GetDlgItem@8": 7971996,
@@ -10095,7 +10095,18 @@
     "?unknown_lobby_map_a72c80@@3HA": 10955904,
     "?unknown_lobby_map_name_a72a68@@3PAGA": 10955368,
     "?Unknown_005bbd10@@YA_NXZ": 6012176,
-    "?Unknown_0059c880@@YA_NXZ": 5884032
+    "?Unknown_0059c880@@YA_NXZ": 5884032,
+    "__real@8@4004c800000000000000": 7986024,
+    "__real@4@3ff9c90e560000000000": 8055348,
+    "?unknown_slot28@BuildingClass@@UAEHPAVObjectClass@@_N@Z": 4470944,
+    "?Draw@RadarEventClass@@QAEXXZ": 6536080,
+    "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABUSurfaceRegion@@@Z": 6922704,
+    "??0?$VectorClass@PBVParticleSystemTypeClass@@@@QAE@IPBQBVParticleSystemTypeClass@@@Z": 4541136,
+    "??_7?$VectorClass@PBVParticleSystemTypeClass@@@@6B@": 7983276,
+    "?Reset@VoxelDrawSystem@@YAXXZ": 7434704,
+    "?Render@VoxelDrawSystem@@YI?AUSurfaceRegion@@XZ": 7436512,
+    "??0Surface@@QAE@HH@Z": 4844944,
+    "?Destroy_Low_Bridge_Span@MapClass@@QAEXABVCell@@@Z": 5598192
   },
   "regions": [
     {
@@ -18885,7 +18896,7 @@
         {
           "offset": 136,
           "kind": 20,
-          "symbol": "?unknown_53fbd0@@YA_NXZ",
+          "symbol": "?unknown_53fbd0@@YI_NXZ",
           "target": 5503952,
           "addend": 0,
           "resolved": 4294266852
@@ -19367,7 +19378,7 @@
         {
           "offset": 47,
           "kind": 20,
-          "symbol": "?unknown_53fbd0@@YA_NXZ",
+          "symbol": "?unknown_53fbd0@@YI_NXZ",
           "target": 5503952,
           "addend": 0,
           "resolved": 4294179533
@@ -19381,7 +19392,7 @@
           "resolved": 4293402273
         }
       ],
-      "source_sha256": "50ab1a7c0fc6f08d30fa1922557555ac4890372d42d7609329ee44462e7c10c1",
+      "source_sha256": "ab0cfe5cb63b3de27741e93d8f166d68b16c26cfc45ad93120c18a7be0082663",
       "source": "src/recovered/ownrdraw/unknown_6000d0_006000d0.cpp",
       "population": "population-3337",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -19811,7 +19822,7 @@
         {
           "offset": 407,
           "kind": 20,
-          "symbol": "?unknown_53fbd0@@YA_NXZ",
+          "symbol": "?unknown_53fbd0@@YI_NXZ",
           "target": 5503952,
           "addend": 0,
           "resolved": 4294285941
@@ -21049,7 +21060,7 @@
         {
           "offset": 163,
           "kind": 20,
-          "symbol": "?unknown_53fbd0@@YA_NXZ",
+          "symbol": "?unknown_53fbd0@@YI_NXZ",
           "target": 5503952,
           "addend": 0,
           "resolved": 4294176425
@@ -21063,7 +21074,7 @@
           "resolved": 4294961574
         }
       ],
-      "source_sha256": "8b53545166372e76cfa2f8ada92faab3858dc9fbdf5825d103f24ff7e6d599fe",
+      "source_sha256": "e4d1b4ebdb079b6ffa6476a212e3936c9ca9d136d282e6411126c009243561ae",
       "source": "src/recovered/ownrdraw/unknown_choice_dialog_600c80_00600c80.cpp",
       "population": "population-3337",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",

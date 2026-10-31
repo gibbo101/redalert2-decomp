@@ -8,7 +8,7 @@
 // @ref ?unknown_session_a3f616@@3_NA=00a3f616
 // @ref ?unknown_counter_a3fabc@@3HA=00a3fabc
 // @ref ?unknown_53f460@@YA_NXZ=0053f460
-// @ref ?unknown_53fbd0@@YA_NXZ=0053fbd0
+// @ref ?unknown_53fbd0@@YI_NXZ=0053fbd0
 #include "shared/win32_api.hpp"
 #include "shared/keyboard.hpp"
 #include "shared/unknown_globals.hpp"

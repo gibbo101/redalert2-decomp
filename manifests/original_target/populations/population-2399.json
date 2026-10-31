@@ -4,8 +4,8 @@
     "id": "population-2399",
     "inventory_sha256": "d875040c54e284097fe975bbb31633b2928c4a6cf2fd46670801ac0ea7cc6cf4",
     "gaps_sha256": "cb291927af64fb1bc58861d53c62c9786babc19a5f5cee06a224cd4ccc736fc0",
-    "historical_population_sha256": "03ff205940e0783d153b1026d9b7a539bd8ea793e02a0d0143973a6979ce843d",
-    "historical_acceptance_sha256": "253ed84e715c4e448273f264f0d273a51ab4c858a0351ca1d2138d3516d2ee4b"
+    "historical_population_sha256": "5c9bcd24bd1fd1303ee058fd20f1c4ac4d1bd48178dc8ccdb7d8b3ab71b62070",
+    "historical_acceptance_sha256": "7a04053a605b75c44083c88d3dc380a55fe374d6eaba1911150752dcb60bafbe"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -5152,7 +5152,7 @@
     "?CreateInstance@IUnknownPtr@@QAEJABUGUID@@PAUIUnknown@@K@Z": 6886480,
     "__imp__SetForegroundWindow@4": 7972048,
     "?unknown_53f460@@YA_NXZ": 5502048,
-    "?unknown_53fbd0@@YA_NXZ": 5503952,
+    "?unknown_53fbd0@@YI_NXZ": 5503952,
     "?unknown_red_mask_a763dc@OwnerDraw@@3GA": 10970076,
     "?unknown_green_mask_a763de@OwnerDraw@@3GA": 10970078,
     "?unknown_blue_mask_a763e0@OwnerDraw@@3GA": 10970080,

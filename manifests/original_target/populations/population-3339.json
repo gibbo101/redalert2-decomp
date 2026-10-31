@@ -4,8 +4,8 @@
     "id": "population-3339",
     "inventory_sha256": "cdc2b619657b043020ac3615a2b81be129c0cd4dc32c1024e72f6950bd16f539",
     "gaps_sha256": "52e3fe568343003d590a1d405e7e02509999198985143e76747b96c5e4d26ec8",
-    "historical_population_sha256": "90ea918be7855e7d1911cd84c561c12f2a23341e128dd733035786e5c4e998c9",
-    "historical_acceptance_sha256": "7f622efd7a80185eb6572d2c9fb21614db597c400933c99284ec6eaceb5c0036"
+    "historical_population_sha256": "3e969f263feda8c59aa5807b42ad090215de5049420efa99a2434acb171ce83b",
+    "historical_acceptance_sha256": "c86b94fd8385c8a504b3dad0fd481d6a6223bbf76bc46eedee039b305f559175"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -12556,7 +12556,7 @@
     "__imp__LoadTypeLib@8": 7971672,
     "?CreateInstance@IUnknownPtr@@QAEJABUGUID@@PAUIUnknown@@K@Z": 6886480,
     "?unknown_53f460@@YA_NXZ": 5502048,
-    "?unknown_53fbd0@@YA_NXZ": 5503952,
+    "?unknown_53fbd0@@YI_NXZ": 5503952,
     "__imp__CoRevokeClassObject": 7972288,
     "__imp__OleUninitialize": 7972292,
     "__imp__CoDisconnectObject": 7972304,
