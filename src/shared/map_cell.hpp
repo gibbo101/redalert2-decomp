@@ -30,7 +30,7 @@ public:
     char unknown_04[0x24 - 0x04];
     Cell MapCoords;           // +0x24 the cell's own coordinates
     int unknown_28;                 // +0x28
-    int unknown_2c;                 // +0x2C cleared by MapClass slot 23
+    CellClass *unknown_2c;          // +0x2C cleared by MapClass slot 23 (TibSun BridgeDeckCell)
     int unknown_30;                 // +0x30 cleared by MapClass slot 23
     char unknown_34[0x38 - 0x34];
     int IsoTileIndex;               // +0x38
@@ -80,6 +80,7 @@ public:
     void unknown_473000();          // 0x00473000 (drops the cell's bridge; TibSun Destroy_Bridge)
     void unknown_473700(unsigned arg1, unsigned arg2);   // 0x00473700 (the other bridge piece; as shared/cell.hpp)
     bool unknown_47b960() const;    // 0x0047B960 (a bridge tile; as shared/cell.hpp)
+    void unknown_47c930();          // 0x0047C930 (a cell of a collapsed bridge; TibSun On_Bridge_Collapse)
     void unknown_47c900();          // 0x0047C900 (maps the cell for the player; MapClass 0x00549C50)
     bool unknown_47b980() const;    // 0x0047B980 (a train bridge tile; as shared/cell.hpp)
     void Unknown_00472540(int value);   // 0x00472540 (as shared/cell.hpp)
