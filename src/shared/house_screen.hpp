@@ -6,6 +6,7 @@
 #define RA2_SHARED_HOUSE_HPP
 
 #include "shared/unknown_globals.hpp"
+#include "shared/com_api.hpp"
 #ifndef VECTOR_IMPLEMENT_ALL
 #define VECTOR_IMPLEMENT_ALL
 #endif
@@ -16,7 +17,19 @@ class TechnoClass;
 class SuperClass;
 class HouseTypeClass;
 class FactoryClass;
+class BuildingClass;
 struct UnknownBuilding;                 // shared/power.hpp (BuildingClass stand-in)
+
+// The used prefix of the canonical IHouse interface (shared/house.hpp).
+// IUnknown supplies slots 0..2; Available_Money is slot 6 (+0x18).
+class IApplication;
+typedef wchar_t *BSTR;
+struct __declspec(novtable) IHouse : public IUnknown {
+    virtual long __stdcall ID_Number() = 0;
+    virtual BSTR __stdcall Name() = 0;
+    virtual IApplication *__stdcall Get_Application() = 0;
+    virtual long __stdcall Available_Money() = 0;
+};
 
 // The layout is padded from +0x000 (no AbstractClass base declared here, so
 // the screen units can use it without shared/abstract.hpp).
@@ -32,6 +45,11 @@ public:
     int unknown_4e3660(TechnoTypeClass const *type, int arg2, int arg3); // 0x004E3660; low argument bytes observed, as full House interface
     FactoryClass *unknown_func_4eb580(int kind, bool naval, int arg3); // 0x004EB580
     bool Is_Build_Limited_004F4F30(TechnoTypeClass *type); // 0x004F4F30
+    void unknown_func_4eb620(int kind, bool naval, int arg3); // 0x004EB620, as full House interface
+    bool unknown_func_4eb770(int kind, bool naval, int arg3); // 0x004EB770, as full House interface
+    bool unknown_func_4e7070(TechnoClass *builder, BuildingClass *building); // 0x004E7070
+    // The real IHouse subobject, which full House exposes through base conversion.
+    IHouse *As_IHouse() { return reinterpret_cast<IHouse *>(reinterpret_cast<char *>(this) + 0x24); }
     bool Unknown_004F52B0();                               // 0x004F52B0 (TechnoClass slots 24, 38, 39, 80)
     bool Unknown_004F52F0();                               // 0x004F52F0
     int Unknown_004F30D0();                                // 0x004F30D0 a free waypoint path, or -1
