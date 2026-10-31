@@ -25,6 +25,10 @@ struct CoordStruct {
     // Member-wise sum (AnimClass::Center_Coord, 0x00420D90).
     // Member-wise difference in place (Tactical::Coord_To_Cell 0x006A6A50 steps back with it; its Z store stays).
     CoordStruct &operator-=(CoordStruct const &coord) { X -= coord.X; Y -= coord.Y; Z -= coord.Z; return *this; }
+    // Member-wise sum in place (DisplayClass::Center_Map 0x0049E3B0).
+    CoordStruct const &operator+=(CoordStruct const &coord) { X += coord.X; Y += coord.Y; Z += coord.Z; return *this; }
+    // Member-wise quotient in place; a zero divisor leaves the coordinate (0x0049E3B0).
+    CoordStruct const &operator/=(int divisor) { if (divisor != 0) { X /= divisor; Y /= divisor; Z /= divisor; } return *this; }
     CoordStruct operator+(CoordStruct const &coord) const
     {
         return CoordStruct(X + coord.X, Y + coord.Y, Z + coord.Z);
@@ -38,8 +42,22 @@ struct CoordStruct {
     // draft), so no other unit sees this declaration.
     int operator==(CoordStruct const &coord) const;
 #endif
-    // Member-wise quotient (0x006D9770 is the Techno unit's out-of-line copy); a zero divisor gives (0, 0, 0).
-    CoordStruct operator/(int divisor) const;  // 0x006D9770
+    // Member-wise quotient; a zero divisor gives (0, 0, 0). Inline as in TibSun's TPoint3D
+    // (DisplayClass::Center_Map 0x0049E3B0 expands it). 0x006D9770 is the out-of-line copy the
+    // Techno unit emits for its non-inlined calls in 0x006C2C40, which is not recovered yet: until
+    // it is, that unit defines RA2_COORD_DIVIDE_SOURCE (first line of its first draft) and the
+    // row's own source supplies the copy; then the define and that definition go.
+#ifdef RA2_COORD_DIVIDE_SOURCE
+    CoordStruct operator/(int divisor) const;
+#else
+    CoordStruct operator/(int divisor) const
+    {
+        if (divisor == 0) {
+            return CoordStruct(0, 0, 0);
+        }
+        return CoordStruct(X / divisor, Y / divisor, Z / divisor);
+    }
+#endif
     // EAX=this/ret12; returned-reference source spelling is an ABI hypothesis.
     CoordStruct &Set_00434820(int x, int y, int z);  // 0x00434820
     // XY-only comparison; name/const spelling are source hypotheses for004BFB60.
