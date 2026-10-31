@@ -72,6 +72,7 @@ public:
     void Set_Connection_Address(int id, IPXAddressClass *address);      // 0x005269F0
     int unknown_526a30();                                               // 0x00526A30
     void Set_Socket(unsigned short socket);                             // 0x00526BA0
+    bool unknown_525dc0(CommHeaderType *header, char *buf, int buflen, IPXAddressClass *address, unsigned short port);   // 0x00525DC0 (forwards a packet through the local router)
     unsigned long unknown_526c30();                                     // 0x00526C30 (global channel's mean delay)
     unsigned long unknown_526c50();                                     // 0x00526C50 (second global channel's)
     unsigned long unknown_526c70();                                     // 0x00526C70 (multicast connection's)
