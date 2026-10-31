@@ -754,3 +754,10 @@ TechnoClass Detach 0x6D2D10, 0x6F69F0; still open at 0x477B55, 0x477C87, 0x477EF
 ## Element loop versus memset (Cell360, 2026-10-31)
 VC6 turns `for (i = 0; i < N; i++) a[i] = 0;` into `lea edi,a / mov ecx,N / rep stosd` (lea first), while memset emits
 mov ecx first. When the original clears an array with lea edi before mov ecx, write the element loop.
+
+## Calling convention of a no-argument callee (Netshare383, 2026-10-31)
+Declaring a no-argument callee `__fastcall` changes the caller's scheduling even though the callee's bytes do not
+change: after the call, a following tail call's register arguments are set before the epilogue pops, and the callee's
+result is copied to its callee-saved register at once. Probe by overlaying the callee's declaration as __fastcall: a
+shape-100 result whose only miss is the unresolved mangling means a rename spec to __fastcall fixes the caller. Fixed
+netshare 0x5CB560 (98.97 over three lanes) and 0x5C34F0 (97.37). Other "scheduling tie around a call" plateaus may fall to it.

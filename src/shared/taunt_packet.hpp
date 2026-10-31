@@ -4,6 +4,7 @@
 #define RA2_SHARED_TAUNT_PACKET_HPP
 
 #include "shared/unknown_globals.hpp"
+#include "shared/name_crc.hpp"
 
 // A partial view of HouseTypeClass for this unit only (shared/house_type.hpp adds header statics
 // that need their own accepted initializer sources; do not include both).
@@ -34,8 +35,7 @@ struct UnknownTauntPacket {
 // When the last taunt was sent, in milliseconds (0x007DB560; -1 until the first).
 extern unsigned long unknown_taunt_time_7db560;
 // unknown_flag_a3f120, unknown_flag_a3f121: shared/unknown_globals.hpp.
-// Checks the sender's host name (0x005BBA50, ECX = the name at 0x00A3F618; hypothesis).
-int __fastcall Unknown_005bba50(unsigned short *name);
+// Unknown_005bba50: shared/name_crc.hpp.
 // Unknown_Play_Taunt_00715fb0: shared/unknown_globals.hpp.
 
 #endif
