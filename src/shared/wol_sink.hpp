@@ -104,7 +104,8 @@ struct Channel {
 // Only slot 42 is called here; unused interface signatures are hypotheses.
 struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot03() = 0;
-    virtual void __stdcall unknown_slot04() = 0;
+    // IChat slot4, original744AF4: SDK RequestServerList; no prior callers of the placeholder.
+    virtual HRESULT __stdcall Request_Server_List(unsigned long sku,unsigned long version,char const *login,char const *password,int timeout) = 0;
     virtual void __stdcall unknown_slot05() = 0;
     virtual HRESULT __stdcall unknown_slot06(int channel_type,int autoping) = 0;
     virtual void __stdcall unknown_slot07() = 0;
@@ -932,8 +933,10 @@ struct __declspec(novtable) WolLadderClient : public IUnknown {
     // is ignored; void expresses only this caller, not original return behavior.
     virtual void __stdcall unknown_slot07_004820dd() = 0;
     virtual HRESULT __stdcall Get_Average_Ping(unsigned long address,int *ping) = 0;
-    virtual HRESULT __stdcall unknown_slot09() = 0;
-    virtual void __stdcall unknown_slot10() = 0;
+    // INetUtil slot9, original745251: six SDK RequestNewNick arguments.
+    virtual HRESULT __stdcall Request_New_Nick(char const *nick,char const *password,char const *email,char const *parent_email,int newsletter,int share_info) = 0;
+    // INetUtil slot10, original744DE0: SDK RequestAgeCheck.
+    virtual HRESULT __stdcall Request_Age_Check(int month,int day,int year,char const *email) = 0;
     virtual HRESULT __stdcall Request_WDT_State(char const *host,int port,unsigned char request) = 0;
 };
 extern WolIntArray unknown_channel_requests_b29390;
