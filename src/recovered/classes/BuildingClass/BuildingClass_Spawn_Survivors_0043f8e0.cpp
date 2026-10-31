@@ -24,7 +24,7 @@ inline Cell Adjacent_Cell(Cell const &cell, int facing)
 CoordStruct __fastcall Coord_Scatter(CoordStruct const &coord, int distance, bool lock);
 // @ref ??0InfantryClass@@=004ff640
 // @ref ?Closest_Free_Spot@UnknownPlacementCellView@@=004764b0
-// @ref ??RRandom2Class@@=006388a0
+// @ref ??RRandom2Class@@QAEHHH@Z=006388a0
 // @ref ?Is_Ally@HouseClass@@QBE_NPBVObjectClass@@@Z=004e55e0
 // @ref ?unknown_func_4f52f0@HouseClass@@=004f52f0
 // @ref ?unknown_478760@CellClass@@=00478760
