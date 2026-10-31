@@ -875,6 +875,28 @@ public:
         ++Count;
         if ((float)Count / (float)BucketCount >= GrowLimit) Grow_007674b0();
     }
+    bool Add(Wstring const &key, WOL::Ladder const &value)
+    {
+        Node *node = new Node;
+        node->Key = key;
+        node->Value = value;
+        node->Next = 0;
+        unsigned int hash = Hash(key);
+        unsigned int bucket = (1u << Bits) - 1;
+        bucket &= hash;
+        Node *head = Buckets[bucket];
+        if (!head) Buckets[bucket] = node;
+        else {
+            Node *previous = Buckets[bucket];
+            Buckets[bucket] = node;
+            node->Next = previous;
+        }
+        ++Count;
+        float load = (float)Count;
+        load /= (float)Get_Size();
+        if (load >= GrowLimit) Grow_007674b0();
+        return true;
+    }
     bool Contains(Wstring const &key) const {
         unsigned int hash = Hash(key);
         for (Node *node = Buckets[((1u << Bits) - 1) & hash]; node; node = node->Next) {
