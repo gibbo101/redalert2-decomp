@@ -183,10 +183,10 @@ public:
     virtual HRESULT __stdcall OnPrivateUnicodeMessage(HRESULT result, WOL::User *user, unsigned short const *message);  // 0x007628D0
     virtual HRESULT __stdcall OnPrivateUnicodeAction(HRESULT result, WOL::User *user, unsigned short const *action);    // 0x00764440
     virtual HRESULT __stdcall OnPublicUnicodeAction(HRESULT result, WOL::Channel *channel, WOL::User *user, unsigned short const *action);  // 0x007645E0
-    virtual HRESULT __stdcall OnPagedUnicode(HRESULT result, WOL::User *user, unsigned short const *message);
+    virtual HRESULT __stdcall OnPagedUnicode(HRESULT result, WOL::User *user, unsigned short const *message); // 0x00762C20
     virtual HRESULT __stdcall OnServerTime(HRESULT result, long server_time); // 0x00765950
     virtual HRESULT __stdcall OnInsiderStatus(HRESULT result, WOL::User *users); // 0x00765960
-    virtual HRESULT __stdcall OnSetLocalIP(HRESULT result, char const *message); // 0x00765970  // 0x00762C20
+    virtual HRESULT __stdcall OnSetLocalIP(HRESULT result, char const *message); // 0x00765970
 };
 
 // The patch download sink (vtable of CComObject<CDownloadEventSink>
@@ -495,6 +495,13 @@ public:
     int Count;
     int Capacity;
     Wstring *Items;
+    // Copies and removes the last string (the published ArrayList operation).
+    char Remove_Tail(Wstring &text) {
+        int index=Count-1;
+        char found=Get(text,index);
+        if(found==0) return 0;
+        return Remove(index);
+    }
     bool Grow_00768320();
     bool Grow() {
         if (Count < Capacity) return false;
