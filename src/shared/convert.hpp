@@ -48,6 +48,8 @@ public:
 
     void Initialize_Blitters_00483B00();
     Blitter *Select_Blitter_00485AA0(unsigned flags);
+    // RLE selector; logical const in the reference, with lazy blitter initialization.
+    RLEBlitter const *RLEBlitter_From_Flags_00485d60(unsigned flags) const;
     void Delete_Blitters_004853A0();                                 // 0x004853A0
 
     int BytesPerPixel;              // +0x004

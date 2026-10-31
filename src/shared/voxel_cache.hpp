@@ -7,7 +7,14 @@
 struct SurfaceRegion { Point2D Point; Rect Bounds; };
 class StaticBufferClass {
 public:
-    struct Entry;
+    // Cached image header: signed screen offsets, unsigned dimensions, RLE data.
+    struct Entry {
+        short X;
+        short Y;
+        unsigned short Width;
+        unsigned short Height;
+        unsigned char *Data;
+    };
     Entry *Add(Surface &surface, SurfaceRegion const &region);
     unsigned char *Buffer;
     int Capacity;
