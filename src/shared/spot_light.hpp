@@ -29,4 +29,8 @@ public:
 // Every spot light (0x00A731C0; defined with the unit's header statics; name hypothesis).
 extern DynamicVectorClass<SpotLightClass *> unknown_SpotLightClass_list_00a731c0;
 
+// Frees the block 0x00A73378 and deletes every object of the 74-entry table 0x00A731E0 (0x005DDB40; convention
+// unevidenced: __cdecl and __fastcall compile alike, and no caller is recovered).
+void Unknown_005DDB40();
+
 #endif

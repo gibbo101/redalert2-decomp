@@ -17,6 +17,14 @@ public:
     bool Draw_0068ce80(Rect const &rect, Surface *destination, Surface *image, int transparent);
     // The image of a .pcx file, loaded on first use (0x0068CA40; arg2 meaning not recovered).
     Surface *Get_Image_0068ca40(char const *name, int arg2);
+#ifdef PCX_CACHE_DECLARE_LOADS
+    // Declared only in units that define PCX_CACHE_DECLARE_LOADS: any new declaration here renumbers the
+    // compiler labels of Refresh_Wonline_Players 0x0073FEE0 (a fragile row) and changes its code.
+    // Loads a .pcx file into the cache (0x0068C600, not yet recovered; argument meanings not recovered).
+    int Load_Image_0068c600(char const *name, int arg2, int arg3);
+    // Load_Image_0068c600(name, 1, 1) (0x0068CA20, not yet recovered).
+    void Load_Image_0068ca20(char const *name);
+#endif
     // Draws image through its alpha image into rect of destination with the palette, from x offset
     // source_x of the image (0x0068CF90; the other arguments are 0 in every caller seen).
     void Draw_0068cf90(Rect const &rect, Surface *destination, Surface *image, Surface *alpha, unsigned char *palette,

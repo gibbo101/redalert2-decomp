@@ -1,0 +1,285 @@
+// @ref ??_C@_08BCHM@rani?4pcx?$AA@=007eb52c
+// @ref ??_C@_08BLKF@usai?4pcx?$AA@=007eb520
+// @ref ??_C@_08CJID@arbi?4pcx?$AA@=007eb4d8
+// @ref ??_C@_08CKDM@gbri?4pcx?$AA@=007eb4f0
+// @ref ??_C@_08FJNG@gt18?4pcx?$AA@=007eb1fc
+// @ref ??_C@_08FLCC@japi?4pcx?$AA@=007eb514
+// @ref ??_C@_08GPKK@frai?4pcx?$AA@=007eb508
+// @ref ??_C@_08HFFD@rusi?4pcx?$AA@=007eb4c0
+// @ref ??_C@_08IEKC@gdii?4pcx?$AA@=007eb544
+// @ref ??_C@_08LNEF@lati?4pcx?$AA@=007eb4cc
+// @ref ??_C@_08NMOA@djbi?4pcx?$AA@=007eb4e4
+// @ref ??_C@_08ODNE@geri?4pcx?$AA@=007eb4fc
+// @ref ??_C@_08OEMK@nodi?4pcx?$AA@=007eb538
+// @ref ??_C@_08POOI@obsi?4pcx?$AA@=007eb4b4
+// @ref ??_C@_09DJBB@trofr?4pcx?$AA@=007eaf68
+// @ref ??_C@_09FKJE@trofm?4pcx?$AA@=007eaf80
+// @ref ??_C@_09HBKP@pingy?4pcx?$AA@=007eaf9c
+// @ref ??_C@_09IEJN@cce_i?4pcx?$AA@=007eaef0
+// @ref ??_C@_09JAOK@pingr?4pcx?$AA@=007eaf90
+// @ref ??_C@_09JIAG@cud_i?4pcx?$AA@=007eb0e4
+// @ref ??_C@_09JNIK@wolob?4pcx?$AA@=007e7444
+// @ref ??_C@_09KKAI@ccd_i?4pcx?$AA@=007eb0f0
+// @ref ??_C@_09LCAP@pingg?4pcx?$AA@=007eafa8
+// @ref ??_C@_09LGJD@cue_i?4pcx?$AA@=007eaecc
+// @ref ??_C@_09PKLB@trofl?4pcx?$AA@=007eaf74
+// @ref ??_C@_0L@BFKA@wodref?4pcx?$AA@=007eb2c0
+// @ref ??_C@_0L@BOKI@bar_ur?4pcx?$AA@=007eb428
+// @ref ??_C@_0L@GBJH@wouban?4pcx?$AA@=007eb404
+// @ref ??_C@_0L@HFKB@wolnob?4pcx?$AA@=007e7438
+// @ref ??_C@_0L@HKFM@wouact?4pcx?$AA@=007eb2e4
+// @ref ??_C@_0L@HMAL@bar_lr?4pcx?$AA@=007eb440
+// @ref ??_C@_0L@KLFA@wodban?4pcx?$AA@=007eb3f8
+// @ref ??_C@_0L@LAJL@wodact?4pcx?$AA@=007eb2d8
+// @ref ??_C@_0L@LPKL@bar_ll?4pcx?$AA@=007eb44c
+// @ref ??_C@_0L@MHKJ@wodopt?4pcx?$AA@=007eb340
+// @ref ??_C@_0L@MOFJ@cce_ir?4pcx?$AA@=007eaed8
+// @ref ??_C@_0L@NGO@wouopt?4pcx?$AA@=007eb34c
+// @ref ??_C@_0L@NNAI@bar_ul?4pcx?$AA@=007eb434
+// @ref ??_C@_0L@NPGH@wouref?4pcx?$AA@=007eb2cc
+// @ref ??_C@_0L@NPJ@cce_il?4pcx?$AA@=007eaee4
+// @ref ??_C@_0M@BDDC@wolhost?4pcx?$AA@=007e69ac
+// @ref ??_C@_0M@BIBD@woutrny?4pcx?$AA@=007eb334
+// @ref ??_C@_0M@CBOL@wodfind?4pcx?$AA@=007eb358
+// @ref ??_C@_0M@CDBJ@tab_ftl?4pcx?$AA@=007eae60
+// @ref ??_C@_0M@CJBA@sbgript?4pcx?$AA@=007eaf20
+// @ref ??_C@_0M@DPHH@wouclan?4pcx?$AA@=007eb31c
+// @ref ??_C@_0M@EBLK@tab_fml?4pcx?$AA@=007eae90
+// @ref ??_C@_0M@EFJC@wolpriv?4pcx?$AA@=007eb234
+// @ref ??_C@_0M@EJPC@tab_tru?4pcx?$AA@=007eb2a8
+// @ref ??_C@_0M@EMPA@woddcon?4pcx?$AA@=007eb3a0
+// @ref ??_C@_0M@ENL@tab_fbl?4pcx?$AA@=007eae48
+// @ref ??_C@_0M@FBMJ@wouhelp?4pcx?$AA@=007eb37c
+// @ref ??_C@_0M@FGJB@tab_tmu?4pcx?$AA@=007eb2b4
+// @ref ??_C@_0M@FIPJ@woloper?4pcx?$AA@=007eb278
+// @ref ??_C@_0M@GBEB@tab_tld?4pcx?$AA@=007eb29c
+// @ref ??_C@_0M@GKHD@wolacpt?4pcx?$AA@=007e69a0
+// @ref ??_C@_0M@HGIH@dlgsysi?4pcx?$AA@=007eb41c
+// @ref ??_C@_0M@HHKN@dlgsysa?4pcx?$AA@=007eb410
+// @ref ??_C@_0M@HIIH@woluser?4pcx?$AA@=007eb250
+// @ref ??_C@_0M@HPK@wodkick?4pcx?$AA@=007eb388
+// @ref ??_C@_0M@ICBK@tab_fmr?4pcx?$AA@=007eae84
+// @ref ??_C@_0M@IDDM@tab_ftm?4pcx?$AA@=007eae78
+// @ref ??_C@_0M@IKEK@sbgripm?4pcx?$AA@=007eaf3c
+// @ref ??_C@_0M@JFLD@leftbar?4pcx?$AA@=007eb468
+// @ref ??_C@_0M@KEPO@tab_fbm?4pcx?$AA@=007eae6c
+// @ref ??_C@_0M@KKDK@woudcon?4pcx?$AA@=007eb3ac
+// @ref ??_C@_0M@LHAD@wodhelp?4pcx?$AA@=007eb370
+// @ref ??_C@_0M@MDDB@tab_tlu?4pcx?$AA@=007eae9c
+// @ref ??_C@_0M@MHCB@woufind?4pcx?$AA@=007eb364
+// @ref ??_C@_0M@MHHL@tab_fbr?4pcx?$AA@=007eae3c
+// @ref ??_C@_0M@MLPM@wolclan?4pcx?$AA@=007eb228
+// @ref ??_C@_0M@NJLN@wodclan?4pcx?$AA@=007eb310
+// @ref ??_C@_0M@OALJ@tab_ftr?4pcx?$AA@=007eae54
+// @ref ??_C@_0M@OBDA@woukick?4pcx?$AA@=007eb394
+// @ref ??_C@_0M@OLIC@tab_trd?4pcx?$AA@=007eb284
+// @ref ??_C@_0M@OLJK@sbgripb?4pcx?$AA@=007eaf04
+// @ref ??_C@_0M@OMJI@woltrny?4pcx?$AA@=007eb25c
+// @ref ??_C@_0M@PEOB@tab_tmd?4pcx?$AA@=007eb290
+// @ref ??_C@_0M@PONJ@wodtrny?4pcx?$AA@=007eb328
+// @ref ??_C@_0N@BFFO@dnarrowp?4pcx?$AA@=007eb1ec
+// @ref ??_C@_0N@CFLO@uparrowp?4pcx?$AA@=007eb1dc
+// @ref ??_C@_0N@CMDL@bud_li24?4pcx?$AA@=007eafe4
+// @ref ??_C@_0N@CNPN@gsbgripb?4pcx?$AA@=007eaf10
+// @ref ??_C@_0N@DCBD@wousqlch?4pcx?$AA@=007eb3c8
+// @ref ??_C@_0N@DCKM@wolvoice?4pcx?$AA@=007eb240
+// @ref ??_C@_0N@DJAO@bud_li30?4pcx?$AA@=007eb074
+// @ref ??_C@_0N@DJLM@bst_chkd?4pcx?$AA@=007eb12c
+// @ref ??_C@_0N@DNDC@arrow_dd?4pcx?$AA@=007eb474
+// @ref ??_C@_0N@DPOH@wolsqlch?4pcx?$AA@=007eb268
+// @ref ??_C@_0N@EBPF@wodsqlch?4pcx?$AA@=007eb3b8
+// @ref ??_C@_0N@EK@trakgrip?4pcx?$AA@=007eaf58
+// @ref ??_C@_0N@EKHE@bud_ri30?4pcx?$AA@=007eb054
+// @ref ??_C@_0N@EMCN@gsbgripm?4pcx?$AA@=007eaf48
+// @ref ??_C@_0N@FAOA@arrow_uu?4pcx?$AA@=007eb4a4
+// @ref ??_C@_0N@FCDD@sb_psh_u?4pcx?$AA@=007eb16c
+// @ref ??_C@_0N@FFBE@dnarrowr?4pcx?$AA@=007eb1cc
+// @ref ??_C@_0N@FOPL@sb_rel_u?4pcx?$AA@=007eb14c
+// @ref ??_C@_0N@FPEB@bud_ri24?4pcx?$AA@=007eafc4
+// @ref ??_C@_0N@GEBF@bud_mi24?4pcx?$AA@=007eafd4
+// @ref ??_C@_0N@GFPE@uparrowr?4pcx?$AA@=007eb1bc
+// @ref ??_C@_0N@HBCA@bud_mi30?4pcx?$AA@=007eb064
+// @ref ??_C@_0N@IHMF@bde_ri30?4pcx?$AA@=007eb084
+// @ref ??_C@_0N@INCE@wodfgame?4pcx?$AA@=007eb2f0
+// @ref ??_C@_0N@JCPA@bde_ri24?4pcx?$AA@=007eaff4
+// @ref ??_C@_0N@JHPJ@rightbar?4pcx?$AA@=007eb458
+// @ref ??_C@_0N@JPEC@arrow_du?4pcx?$AA@=007eb484
+// @ref ??_C@_0N@KDPJ@bue_li24?4pcx?$AA@=007eb044
+// @ref ??_C@_0N@KJKE@bde_mi24?4pcx?$AA@=007eb004
+// @ref ??_C@_0N@KOON@wolreslk?4pcx?$AA@=007eafb4
+// @ref ??_C@_0N@LBKN@wouleave?4pcx?$AA@=007eb3e8
+// @ref ??_C@_0N@LGMM@bue_li30?4pcx?$AA@=007eb0d4
+// @ref ??_C@_0N@LMJB@bde_mi30?4pcx?$AA@=007eb094
+// @ref ??_C@_0N@MCEL@wodleave?4pcx?$AA@=007eb3d8
+// @ref ??_C@_0N@MFLG@bue_ri30?4pcx?$AA@=007eb0b4
+// @ref ??_C@_0N@NAID@bue_ri24?4pcx?$AA@=007eb024
+// @ref ??_C@_0N@NDJB@bst_uchk?4pcx?$AA@=007eb11c
+// @ref ??_C@_0N@NJND@bst_chkg?4pcx?$AA@=007eb10c
+// @ref ??_C@_0N@OBIK@bde_li24?4pcx?$AA@=007eb014
+// @ref ??_C@_0N@OLNH@bue_mi24?4pcx?$AA@=007eb034
+// @ref ??_C@_0N@OMMO@bst_uckg?4pcx?$AA@=007eb0fc
+// @ref ??_C@_0N@OPHH@gsbgript?4pcx?$AA@=007eaf2c
+// @ref ??_C@_0N@PAED@sb_psh_d?4pcx?$AA@=007eb15c
+// @ref ??_C@_0N@PCJA@arrow_ud?4pcx?$AA@=007eb494
+// @ref ??_C@_0N@PELP@bde_li30?4pcx?$AA@=007eb0a4
+// @ref ??_C@_0N@PMIL@sb_rel_d?4pcx?$AA@=007eb13c
+// @ref ??_C@_0N@POMC@woufgame?4pcx?$AA@=007eb300
+// @ref ??_C@_0N@POOC@bue_mi30?4pcx?$AA@=007eb0c4
+// @ref ??_C@_0O@BNCI@wolrslkob?4pcx?$AA@=007eb218
+// @ref ??_C@_0O@JFNC@gdnarrowr?4pcx?$AA@=007eb18c
+// @ref ??_C@_0O@KFDC@guparrowr?4pcx?$AA@=007eb17c
+// @ref ??_C@_0O@NFJI@gdnarrowp?4pcx?$AA@=007eb1ac
+// @ref ??_C@_0O@OFHI@guparrowp?4pcx?$AA@=007eb19c
+// @ref ??_C@_0P@FFCB@wolrslknob?4pcx?$AA@=007eb208
+// @ref ?unknown_bitmap_writer_a76378@@3VUnknownBitmapWriter@@A=00a76378
+// @ref ?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z=0068c600
+// @ref ?Load_Image_0068ca20@UnknownBitmapWriter@@QAEXPBD@Z=0068ca20
+// @ref ?unknown_dialog_background_7e8d1c@@3PBDB=007e8d1c
+#define PCX_CACHE_DECLARE_LOADS
+#include "shared/rect.hpp"
+#include "shared/pcx_cache.hpp"
+#include "shared/owner_draw_images.hpp"
+
+namespace OwnerDraw {
+
+// Loads every image the owner-drawn dialogs and controls use into the PCX image cache: the dialog
+// background, flags, arrows, scroll bars, WOL buttons, tabs, check boxes and button edges (0x005FC8A0).
+void __fastcall Load_Dialog_Images_5fc8a0()
+{
+    unknown_bitmap_writer_a76378.Load_Image_0068c600(unknown_dialog_background_7e8d1c, 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("gdii.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("nodi.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("rani.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("usai.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("japi.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("frai.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("geri.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("gbri.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("djbi.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("arbi.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("lati.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("rusi.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("obsi.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("arrow_uu.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("arrow_ud.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("arrow_du.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("arrow_dd.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("leftbar.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("rightbar.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("trakgrip.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("sbgript.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("sbgripm.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("sbgripb.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("gsbgript.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("gsbgripm.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("gsbgripb.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bar_ll.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bar_lr.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bar_ul.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bar_ur.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("dlgsysi.pcx", 1, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068ca20("dlgsysa.pcx");
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wouban.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodban.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wouleave.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodleave.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wousqlch.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodsqlch.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("woudcon.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("woddcon.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("woukick.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodkick.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wouhelp.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodhelp.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("woufind.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodfind.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wouopt.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodopt.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("woutrny.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodtrny.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wouclan.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodclan.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("woufgame.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodfgame.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wouact.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodact.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wouref.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wodref.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_tlu.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_tmu.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_tru.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_tld.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_tmd.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_trd.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_ftl.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_ftr.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_ftm.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_fbr.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_fbl.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_fbm.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_fmr.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("tab_fml.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("woloper.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolsqlch.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("woltrny.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("woluser.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolvoice.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolpriv.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolacpt.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolhost.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolclan.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolob.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolnob.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolrslkob.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolrslknob.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("gt18.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("dnarrowp.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("uparrowp.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("dnarrowr.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("uparrowr.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("gdnarrowp.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("guparrowp.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("gdnarrowr.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("guparrowr.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("trofl.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("trofm.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("trofr.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("sb_psh_u.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("sb_psh_d.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("sb_rel_u.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("sb_rel_d.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bst_chkd.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bst_uchk.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bst_chkg.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bst_uckg.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("ccd_i.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("cce_i.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("cud_i.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("cue_i.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("cce_ir.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("cce_il.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bue_li30.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bue_mi30.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bue_ri30.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bde_li30.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bde_mi30.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bde_ri30.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bud_li30.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bud_mi30.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bud_ri30.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bue_li24.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bue_mi24.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bue_ri24.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bde_li24.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bde_mi24.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bde_ri24.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bud_li24.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bud_mi24.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("bud_ri24.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("wolreslk.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("pingg.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("pingy.pcx", 2, 0);
+    unknown_bitmap_writer_a76378.Load_Image_0068c600("pingr.pcx", 2, 0);
+}
+
+}  // namespace OwnerDraw

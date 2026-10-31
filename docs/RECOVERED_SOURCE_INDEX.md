@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 1050 | 212,740 | 1050 | 0x004011C0–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 1065 | 214,091 | 1065 | 0x004011C0–0x0078FB6B |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 177 | 56,902 | 177 | 0x00438A60–0x004D3450 |
@@ -14,8 +14,8 @@
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 200 | 45,132 | 197 | 0x0041B370–0x006D9750 |
 | (discovery: address-named) | 1441 | 43,626 | 17 | 0x004010A0–0x00797198 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
+| [ownrdraw](../src/recovered/ownrdraw/) | 110 | 37,716 | 110 | 0x005DE880–0x00601F70 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 117 | 37,481 | 113 | 0x0041B470–0x004CDE10 |
-| [ownrdraw](../src/recovered/ownrdraw/) | 109 | 35,172 | 109 | 0x005DE880–0x00601F70 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 82 | 30,791 | 82 | 0x004D3510–0x0070A330 |
 | [classes/InfantryClass](../src/recovered/classes/InfantryClass/) | 89 | 30,129 | 89 | 0x004D3390–0x00509810 |
 | [classes/UnknownIDSource](../src/recovered/classes/UnknownIDSource/) | 51 | 29,041 | 51 | 0x0065B4F0–0x00663440 |
@@ -256,6 +256,7 @@
 | [classes/ThemeClass](../src/recovered/classes/ThemeClass/) | 11 | 974 | 11 | 0x004D4660–0x006E84E0 |
 | [goptions](../src/recovered/goptions/) | 3 | 970 | 3 | 0x004DD7D0–0x004DDF90 |
 | [classes/ToolTipManager](../src/recovered/classes/ToolTipManager/) | 23 | 968 | 23 | 0x006EB2E0–0x006EC350 |
+| [classes/RadarEventClass](../src/recovered/classes/RadarEventClass/) | 15 | 965 | 15 | 0x0063B4F0–0x0063C790 |
 | [classes/VectorClass_WaypointClass](../src/recovered/classes/VectorClass_WaypointClass/) | 10 | 964 | 10 | 0x00725340–0x00725B40 |
 | [classes/VectorClass_VoxelAnimTypeClass_ptr](../src/recovered/classes/VectorClass_VoxelAnimTypeClass_ptr/) | 14 | 960 | 11 | 0x004D5720–0x00654960 |
 | [classes/BombListClass](../src/recovered/classes/BombListClass/) | 7 | 952 | 7 | 0x00436470–0x004367C0 |
@@ -328,6 +329,7 @@
 | [classes/VectorClass_SwizzlePointerClass](../src/recovered/classes/VectorClass_SwizzlePointerClass/) | 8 | 667 | 8 | 0x0069FE20–0x006A01D0 |
 | [classes/VectorClass_DiscreteDistributionClass_AITriggerTypeClass___DistributionObject_AITriggerTypeClass_ptr](../src/recovered/classes/VectorClass_DiscreteDistributionClass_AITriggerTypeClass___DistributionObject_AITriggerTypeClass_ptr/) | 6 | 663 | 6 | 0x006C03C0–0x006C09A0 |
 | [classes/DynamicVectorClass_TechnoTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TechnoTypeClass_ptr/) | 9 | 661 | 7 | 0x0046CCE0–0x006DFA70 |
+| [classes/SpotLightClass](../src/recovered/classes/SpotLightClass/) | 8 | 661 | 8 | 0x005DD510–0x005DE2E0 |
 | [classes/DynamicVectorClass_VoxelAnimTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_VoxelAnimTypeClass_ptr/) | 10 | 650 | 9 | 0x004D56D0–0x006DF890 |
 | [classes/DynamicVectorClass_TeamTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_TeamTypeClass_ptr/) | 9 | 639 | 8 | 0x004D52B0–0x004F7E10 |
 | [classes/LineTrail](../src/recovered/classes/LineTrail/) | 8 | 638 | 8 | 0x00539360–0x005397B0 |
@@ -336,7 +338,6 @@
 | [classes/DynamicVectorClass_MultiMission_ptr](../src/recovered/classes/DynamicVectorClass_MultiMission_ptr/) | 7 | 625 | 5 | 0x005CD590–0x006741F0 |
 | [classes/Blit](../src/recovered/classes/Blit/) | 7 | 612 | 7 | 0x00434940–0x00435560 |
 | [classes/DynamicVectorClass_unsigned_short_ptr](../src/recovered/classes/DynamicVectorClass_unsigned_short_ptr/) | 8 | 612 | 7 | 0x0052E6D0–0x0053AE30 |
-| [classes/RadarEventClass](../src/recovered/classes/RadarEventClass/) | 11 | 609 | 11 | 0x0063B4F0–0x0063C6C0 |
 | [classes/VectorClass_WorldDominationTour__Centroid](../src/recovered/classes/VectorClass_WorldDominationTour__Centroid/) | 7 | 609 | 5 | 0x0072B060–0x0072BAA0 |
 | [classes/VectorClass_double](../src/recovered/classes/VectorClass_double/) | 9 | 609 | 6 | 0x0058DEB0–0x0058F2D0 |
 | [classes/ColorListClass](../src/recovered/classes/ColorListClass/) | 8 | 608 | 8 | 0x0047D7C0–0x0047DF60 |
@@ -345,7 +346,6 @@
 | [classes/DynamicVectorClass_MixFileClass_ptr](../src/recovered/classes/DynamicVectorClass_MixFileClass_ptr/) | 9 | 600 | 4 | 0x0040D210–0x0040D720 |
 | [classes/VectorClass_CellDistribution](../src/recovered/classes/VectorClass_CellDistribution/) | 7 | 598 | 6 | 0x004CDF10–0x004CEA90 |
 | [classes/DynamicVectorClass_TagClass_ptr](../src/recovered/classes/DynamicVectorClass_TagClass_ptr/) | 9 | 596 | 8 | 0x004D4760–0x004DBC40 |
-| [classes/SpotLightClass](../src/recovered/classes/SpotLightClass/) | 7 | 596 | 7 | 0x005DD510–0x005DE2E0 |
 | [classes/VectorClass_rc_ptr_WorldDominationTour__GameOption](../src/recovered/classes/VectorClass_rc_ptr_WorldDominationTour__GameOption/) | 7 | 595 | 7 | 0x00727BE0–0x00728350 |
 | [classes/ColorScheme](../src/recovered/classes/ColorScheme/) | 4 | 590 | 4 | 0x00663610–0x00663BB0 |
 | [classes/VectorClass_ButtonFadeEffect_ptr](../src/recovered/classes/VectorClass_ButtonFadeEffect_ptr/) | 9 | 586 | 6 | 0x004A9B50–0x004AA210 |
@@ -1177,6 +1177,7 @@
 | [classes/BlitTransLucent75_unsigned_short](../src/recovered/classes/BlitTransLucent75_unsigned_short/) | 2 | 122 | 2 | 0x00486FF0–0x0048CA70 |
 | [classes/char_const_ptr](../src/recovered/classes/char_const_ptr/) | 2 | 120 | 2 | 0x005A0D40–0x005A0D80 |
 | [classes/unsigned_long](../src/recovered/classes/unsigned_long/) | 2 | 120 | 2 | 0x0068DB40–0x0068DB80 |
+| [netdlg](../src/recovered/netdlg/) | 2 | 116 | 2 | 0x005BB540–0x005BB5A0 |
 | [classes/VectorClass_TPoint3D_int](../src/recovered/classes/VectorClass_TPoint3D_int/) | 3 | 115 | 3 | 0x0045EDC0–0x0045EFB0 |
 | [classes/MultiplayerSiegeAttackerTeam](../src/recovered/classes/MultiplayerSiegeAttackerTeam/) | 3 | 114 | 1 | 0x005ABE60–0x005ABEF0 |
 | [classes/Megawealth](../src/recovered/classes/Megawealth/) | 4 | 112 | 0 | 0x005AA720–0x005AA780 |
@@ -1328,7 +1329,7 @@
 | [classes/exception](../src/recovered/classes/exception/) | 1 | 13 | 0 | 0x0078B1E7–0x0078B1E7 |
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 
-1321 directories, 16283 regions. Generated by `tools/original_target/source_index.py`.
+1322 directories, 16306 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

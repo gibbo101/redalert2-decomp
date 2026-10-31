@@ -784,3 +784,12 @@ free "object pointer" callee as a member (thiscall). Five of about twelve probes
 Follow-up (NearMiss395): four more self-__fastcall hits, all free no-argument functions (0x718060 voxel matrices,
 0x6F5B10, 0x5C84E0 with its callee 0x5C8420, 0x683BF0). Ghidra cannot tell a no-argument __fastcall from __cdecl,
 so every unaccepted no-argument free function is a candidate: probe the convention before anything else.
+
+## Fragile 0x73FEE0 is $L-label renumbering (ConvSweep396, 2026-10-31)
+Refresh_Wonline_Players 0x73FEE0 breaks (refused at +0x10A2) because a new declaration in a header it includes
+renumbers its compiler `$L` labels: measured lobby.hpp +2, pcx_cache.hpp +7, owner_draw_dialog_control.hpp +1. Put
+new declarations for those areas in new headers or behind a guard macro (pcx_cache.hpp PCX_CACHE_DECLARE_LOADS).
+Also: populations marked separate_units (1640, 1643, 2179, 2795) need that flag in the plan or the composite compile
+reports "accepted 0"; a joined unit cannot take a VECTOR_IMPLEMENT_*/guard macro defined after the header was first
+included (move such functions to a separate-units bag); every string literal needs its own @ref in the plan.
+The no-argument __fastcall lever pays on recorded near misses (8 of ~20), not on raw seeds (1 of 292).
