@@ -4,8 +4,8 @@
     "id": "population-3345",
     "inventory_sha256": "c0052c6df959c540de34b9a7c70228015cc7d4972499bead5d119ce5396981d8",
     "gaps_sha256": "d90f6014bee214dca0aeafb2ed6d1c5bc2a7a421f6b784f381d65580cf936702",
-    "historical_population_sha256": "71856c11718e50a47850eac361bcdf6e1b78398632081565b9526184a37c70ce",
-    "historical_acceptance_sha256": "c7182844a1f128053237780a699aca7096e5963bcb8c555ce30b13205451353a"
+    "historical_population_sha256": "e0104c10141819e225d8edab1ab443983931ba628355e0baee05fed0fbfc627a",
+    "historical_acceptance_sha256": "570ca0e158a33fea68c49f79294c224b83fd6c34d5fe331661735fc5f28849fd"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4133,7 +4133,7 @@
     "?Unknown_006B5810@UnknownTarget@@QBEPAVAbstractClass@@XZ": 7034896,
     "?Unknown_006BF260@@YIPAVAbstractTypeClass@@PBD@Z": 7074400,
     "?Unknown_006C22A0@TechnoClass@@QAEHXZ": 7086752,
-    "?Unknown_006D21E0@TechnoClass@@QAEHHHHHHHHHHHH@Z": 7152096,
+    "?Unknown_006D21E0@TechnoClass@@QAEXABVUnknownObjectPair@@HHPAVUnknownBuffer@@ABVRect@@ABUPoint2D@@ABVMatrix3D@@_NIII@Z": 7152096,
     "?Unknown_006D9610@TechnoClass@@QAEXPAVAbstractClass@@@Z": 7181840,
     "?Unknown_006E24C0@UnknownTechno208@@QAEXPAVAbstractClass@@@Z": 7218368,
     "?Unknown_006ECB90@@YIXPAVAbstractClass@@_N@Z": 7261072,
@@ -4840,8 +4840,8 @@
     "?unknown_slot242@TechnoClass@@UAE_NXZ": 7148640,
     "?unknown_slot244@TechnoClass@@UAEHH@Z": 7179312,
     "?unknown_slot245@TechnoClass@@UAE_NPAVHouseClass@@@Z": 7179488,
-    "?unknown_slot246@FootClass@@UAEHHHHHHHHHH@Z": 5019776,
-    "?unknown_slot246@TechnoClass@@UAEHHHHHHHHHH@Z": 7150848,
+    "?unknown_slot246@FootClass@@UAEXABVUnknownObjectPair@@HHPAVUnknownBuffer@@ABVRect@@ABUPoint2D@@ABVMatrix3D@@HI@Z": 5019776,
+    "?unknown_slot246@TechnoClass@@UAEXABVUnknownObjectPair@@HHPAVUnknownBuffer@@ABVRect@@ABUPoint2D@@ABVMatrix3D@@HI@Z": 7150848,
     "?unknown_slot247@TechnoClass@@UAEXHH@Z": 7093024,
     "?unknown_slot24@AbstractTypeClass@@UAEXH@Z": 4262304,
     "?unknown_slot24@AnimTypeClass@@UAEXH@Z": 4346816,

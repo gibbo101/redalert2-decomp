@@ -172,7 +172,7 @@ public:
     virtual bool unknown_slot224(int arg1);  // slot 224 0x004CD4B0
     virtual CoordStruct unknown_slot241();  // slot 241 0x004C71B0
     virtual void unknown_slot243(bool arg1, int arg2);  // slot 243 0x004CA8B0
-    virtual int unknown_slot246(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9);  // slot 246 0x004C9880
+    virtual void unknown_slot246(UnknownObjectPair const &voxel, int frame, int key, UnknownBuffer *cache, Rect const &cliprect, Point2D const &draw_point, Matrix3D const &transform, int brightness, unsigned flags);  // slot 246 0x004C9880
     virtual void unknown_slot260(AbstractClass *target, int arg2);  // slot 260 0x004C8030
     virtual bool unknown_slot261(bool arg1, bool arg2);  // slot 261 0x004C6F10
     virtual int unknown_slot268(UnknownSlot268Arg const *arg);  // slot 268 0x004CD9C0
@@ -241,7 +241,7 @@ public:
     bool unknown_4c3000(Cell dest, int arg2, int arg3);   // 0x004C3000 (plans a path to dest; hypothesis: Basic_Path)
     struct UnknownPathType *Unknown_004BB350(Cell *dest, int *buffer, int length, int arg4, int arg5, int arg6);  // 0x004BB350 (hypothesis: Find_Path)
     Cell Unknown_004BB3F0(Cell const &from, Cell const &to, int arg3, int arg4);   // 0x004BB3F0 (hypothesis: TS Safety_Point; TeamClass 0x006B88B0 Regroup)
-    void unknown_4c9a40(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11);  // 0x004C9A40 (the shadow draw; AircraftClass, UnitClass)
+    void unknown_4c9a40(UnknownObjectPair const &voxel, int layer, int key, UnknownBuffer *cache, Rect const &cliprect, Point2D const &draw_point, Matrix3D const &transform, bool force_cache, unsigned unknown_1, unsigned unknown_2, unsigned unknown_3);  // 0x004C9A40 (the shadow draw; AircraftClass, UnitClass)
     void Unknown_004CCE80(FootClass *passenger);                // 0x004CCE80 (a passenger enters this transport)
     virtual int unknown_slot298();                              // slot 298 0x004C86D0 (0)
     virtual TechnoClass *unknown_slot299(DynamicVectorClass<TechnoTypeClass *> const *types, int arg2, int arg3);  // (hypothesis: the nearest dock of any of the types)   // slot 299 (AircraftClass 0x0041B1E0: ret 0xC, returns +0x5B4)

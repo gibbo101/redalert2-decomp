@@ -4,8 +4,8 @@
     "id": "population-3063",
     "inventory_sha256": "26bc731e2aa3a8a702c64eaec58519e758d1a4cc891896697604cdd309c3c448",
     "gaps_sha256": "16df03ceb020759ceabbf73d38fb2b43953036ef48754f843c18c81d084c4e9b",
-    "historical_population_sha256": "14519e77db70fa7fc31391222886230e6b5efd359afa41682ee89dd5de3a5b12",
-    "historical_acceptance_sha256": "48762ca928e17c07dfab1c2ce676d062a9f328c4dbe4cf01ca1b024c6bccfe42"
+    "historical_population_sha256": "b02c17048793d35dba11f55c4efd56fd45c88811f44b84b004fb447852c4f4cf",
+    "historical_acceptance_sha256": "98f88d3bf8eec60fd43b3284479d23d5f80bd7350bc00ba796cde5900d53a5a9"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6892,9 +6892,9 @@
     "?Query@?$UnknownComPtr@UIPersist@@$1?unknown_uuid_IPersist_7cf208@@3UGUID@@B@@QAEJABV?$UnknownComPtr@UILocomotion@@$1?unknown_uuid_ILocomotion_7ce600@@3UGUID@@B@@@Z": 4541424,
     "?Unknown_0047CE70@UnknownCellClass@@QAEHXZ": 4705904,
     "?unknown_6d7f70@TechnoClass@@QAE_NXZ": 7176048,
-    "?unknown_slot246@FootClass@@UAEHHHHHHHHHH@Z": 5019776,
-    "?unknown_slot246@TechnoClass@@UAEHHHHHHHHHH@Z": 7150848,
-    "?Unknown_006D21E0@TechnoClass@@QAEHHHHHHHHHHHH@Z": 7152096,
+    "?unknown_slot246@FootClass@@UAEXABVUnknownObjectPair@@HHPAVUnknownBuffer@@ABVRect@@ABUPoint2D@@ABVMatrix3D@@HI@Z": 5019776,
+    "?unknown_slot246@TechnoClass@@UAEXABVUnknownObjectPair@@HHPAVUnknownBuffer@@ABVRect@@ABUPoint2D@@ABVMatrix3D@@HI@Z": 7150848,
+    "?Unknown_006D21E0@TechnoClass@@QAEXABVUnknownObjectPair@@HHPAVUnknownBuffer@@ABVRect@@ABUPoint2D@@ABVMatrix3D@@_NIII@Z": 7152096,
     "?Unknown_004F5A20@HouseClass@@QAENPAVTechnoTypeClass@@@Z": 5200416,
     "?unknown_slot144@FootClass@@UAEHXZ": 5031936,
     "?Unknown_004EB270@HouseClass@@QAE?AVCell@@PAVFootClass@@@Z": 5157488,
@@ -9289,7 +9289,7 @@
     "?Speech_Play@@YIXHHH@Z": 7428288,
     "?unknown_4c45b0@FootClass@@QAEPAVBuildingClass@@XZ": 4998576,
     "?unknown_4c8d00@FootClass@@QAE_NPAVHouseClass@@@Z": 5016832,
-    "?unknown_4c9a40@FootClass@@QAEXHHHHHHHHHHH@Z": 5020224,
+    "?unknown_4c9a40@FootClass@@QAEXABVUnknownObjectPair@@HHPAVUnknownBuffer@@ABVRect@@ABUPoint2D@@ABVMatrix3D@@_NIII@Z": 5020224,
     "?unknown_slot303@FootClass@@UAEHXZ": 5020432,
     "?unknown_4cb110@FootClass@@QAE_NPAUWaypointClass@@@Z": 5026064,
     "?Unknown_004CCE80@FootClass@@QAEXPAV1@@Z": 5033600,

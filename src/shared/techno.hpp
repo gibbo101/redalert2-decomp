@@ -45,6 +45,7 @@
 #include "shared/rgb_class.hpp"
 #include "shared/system_timer.hpp"
 
+class Matrix3D;
 class LaserDrawClass;
 class BulletClass;
 class EBolt;
@@ -520,7 +521,7 @@ public:
     virtual void unknown_slot243(bool arg1, int arg2);               // slot 243 (+0x3CC) 0x00453BE0 (kept copy elsewhere)
     virtual int unknown_slot244(int arg1);                          // slot 244 (+0x3D0) 0x006D8C30
     virtual bool unknown_slot245(HouseClass *house);                // slot 245 (+0x3D4) 0x006D8CE0
-    virtual int unknown_slot246(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9); // slot 246 (+0x3D8) 0x006D1D00
+    virtual void unknown_slot246(UnknownObjectPair const &voxel, int frame, int key, UnknownBuffer *cache, Rect const &cliprect, Point2D const &draw_point, Matrix3D const &transform, int brightness, unsigned flags); // slot 246 (+0x3D8) 0x006D1D00
     virtual void unknown_slot247(int arg1, int arg2);           // slot 247 (+0x3DC) 0x006C3B20
     virtual void unknown_slot248(Point2D const &point, Rect const &window, bool arg3);   // slot 248 (+0x3E0) 0x006C3F00 (draws the health bar and pips)
     virtual void unknown_slot249(Point2D const &point, Point2D const &center, Rect const &window);   // slot 249 (+0x3E4) 0x006D4920 (draws the pips)
@@ -563,7 +564,7 @@ public:
     void Unknown_006D9610(AbstractClass *cell);                 // 0x006D9610 (InfantryClass slot 93: an occupied building, its cell)
     bool unknown_6d7f70();                                      // 0x006D7F70 (FootClass::AI, after the movement; the result is unused there)
     int unknown_6d7e20(int extra);                              // 0x006D7E20 (fires the death weapon at itself; returns the damage)
-    int Unknown_006D21E0(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11);  // 0x006D21E0 (the shadow draw; FootClass 0x004C9A40)
+    void Unknown_006D21E0(UnknownObjectPair const &voxel, int layer, int key, UnknownBuffer *cache, Rect const &cliprect, Point2D const &draw_point, Matrix3D const &transform, bool force_cache, unsigned unknown_1, unsigned unknown_2, unsigned unknown_3);  // 0x006D21E0 (the shadow draw; FootClass 0x004C9A40)
     int unknown_6d6750();                                       // 0x006D6750
     bool unknown_6d83d0();                                      // 0x006D83D0
     bool unknown_6d83e0();                                      // 0x006D83E0
