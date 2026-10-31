@@ -793,3 +793,23 @@ Also: populations marked separate_units (1640, 1643, 2179, 2795) need that flag 
 reports "accepted 0"; a joined unit cannot take a VECTOR_IMPLEMENT_*/guard macro defined after the header was first
 included (move such functions to a separate-units bag); every string literal needs its own @ref in the plan.
 The no-argument __fastcall lever pays on recorded near misses (8 of ~20), not on raw seeds (1 of 292).
+
+## Inline budget in practice (InlineLab398, 2026-10-31)
+- The Inline248 rule holds in every lab here; two corrections to lane folklore: (1) "small" callees are often
+  charged, not free: the HEAD Cell(short,short) ctor is 41-42 IL units, the one-line 0x54FAF0 index 49-50, XY_Cell
+  53-54, so a `<= 40` free callee is rarer than it looks; (2) s is the callee's unexpanded size, so a wrapper that
+  only calls one large inline stays free and its callee is decided one level deeper.
+- Measure before reshaping: lab/g2.py (Spend = k stores + b calls: 2-unit resolution) for callee sizes; in place,
+  replace the callee by k stores (the "fk" sweep) to read the nested budget at each site, and add m empty inline
+  calls before the final return to read N_i (the flip m gives R_i and N_i from two callees of known size).
+- When the original keeps a charged callee out of line at early sites and expands it at a late one, the early
+  sites see (R - s_parent)/N_i with a large N_i: the natural fix is one more charged level above it (a small
+  inline accessor wrapping the call), not a wordier callee (0x565EB0: `Cell_Subzone(cell, layer)` around the
+  clamped index; the callee would otherwise need ~120 units).
+- When one of several identical statements has a different inline pattern, first write them all the same way:
+  the budget alone often produces the difference (0x5629D0's fourth Get_Height_GL).
+- Westwood's Cell is TibSun's `Cell : TPoint2D<short>` with `Cell(int x, int y) : BASECLASS(x, y) {}` and
+  TPoint2D member operators returning `TPoint2D<T> const` built with `T(...)` casts: an operator then costs ~64 with
+  a free nested base ctor, while the HEAD forms cost 80 or ~60 + a charged Cell ctor. This model makes
+  Destroy_Low_Bridge_Span 0x556BF0 and the COMDAT 0x56AA40 byte-exact; adopting it needs ten accepted re-shapes
+  (InlineLab398 NOTES "Whole-tree check").

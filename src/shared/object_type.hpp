@@ -55,9 +55,15 @@ public:
     // Index nodes are eight bytes: signed key at +0 and an opaque voxel-cache value at +4.
     struct NodeElement {
         NodeElement() {} // Reference node lifetime: default construction deliberately leaves both fields unset.
+        bool operator==(NodeElement const &other) const { return ID==other.ID; }
+        bool operator<(NodeElement const &other) const { return ID<other.ID; }
         int ID;
         void *Data;
     };
+    void * const &operator[](int const &id) const;
+    bool Add_Index(int const &id, void * const &data);
+    void Invalidate_Archive() const;
+    void Set_Archive(NodeElement const *node) const;
     bool Increase_Size_006d97c0(int amount); // cache-node capacity growth, original0x006D97C0
     bool Is_Present_0070a350(int const &id) const; // ECX owner, RET4, AL bool; sorts and updates archive.
     bool Is_Archive_Same_0070a3f0(int const &id) const; // ECX owner, RET4, AL bool.

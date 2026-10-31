@@ -1,6 +1,6 @@
 // Grow the existing signed-key voxel-cache node table.
 #include "shared/techno.hpp"
-bool UnknownBuffer::Increase_Size_006d97c0(int amount)
+inline bool UnknownBuffer::Increase_Size_006d97c0(int amount)
 {
     if(amount>=0) {
         NodeElement *table=new NodeElement[unknown_08+amount];

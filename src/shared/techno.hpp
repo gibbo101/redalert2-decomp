@@ -46,6 +46,7 @@
 #include "shared/system_timer.hpp"
 
 class Matrix3D;
+struct SurfaceRegion;
 class LaserDrawClass;
 class BulletClass;
 class EBolt;
@@ -573,6 +574,9 @@ public:
     int unknown_6d84a0();                                       // 0x006D84A0
     bool unknown_615360();                                      // 0x00615360 (out of this unit; returns al)
     static void __fastcall unknown_6d79c0(bool value);          // 0x006D79C0
+    SurfaceRegion Render_Voxel_Object_006d24e0(UnknownObjectPair const &voxel, Matrix3D const &transform, Point2D const &point, Rect const &cliprect, int frame, unsigned flags, int brightness);
+    SurfaceRegion Render_Voxel_Shadow_006d2810(UnknownObjectPair const &voxel, Matrix3D const &transform, Point2D const &point, Rect const &cliprect, int layer, unsigned flags, bool cached, unsigned unknown_1, unsigned unknown_2, unsigned unknown_3);
+    void Blit_Voxel_006d29d0(void const *entry, Point2D const &point, Rect const &cliprect, unsigned flags, int brightness);
     static void unknown_6d7990();                               // 0x006D7990 (restarts unknown_timer_ac0178 at 25)
     static void __fastcall unknown_6d8fd0(TechnoClass *techno, int value);   // 0x006D8FD0 (sets the talk-bubble techno and restarts its timer)
     void unknown_6145e0();                                      // 0x006145E0 (out of this unit)
