@@ -4,8 +4,8 @@
     "id": "population-3342",
     "inventory_sha256": "639109daff4f65483532c8226747763574116d48ad123337ac5d36c64e389426",
     "gaps_sha256": "01bc0e5830f26a5084cdba2d74056d33d4ff1884b81607d625737f628bbfe043",
-    "historical_population_sha256": "6f534109df9b621e898c45e3e3883f7509829cb92467535dd266c40f83e0e446",
-    "historical_acceptance_sha256": "0ed28318b576fb50f196d464d7cf09e30769f6a79e1cb604d3c0a0a65eb2876c"
+    "historical_population_sha256": "fba54e9417c2343f345537871ad5c8f4ff710ce32f20f247be7df072befee8ee",
+    "historical_acceptance_sha256": "daaa60250f8472bc130c8ef5c4fcc37bbd110e5ca65ee51073f723f3d4f8e90c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1584,7 +1584,7 @@
     "?Unknown_00529710@@YIXH_N@Z": 5412624,
     "?unknown_path_estimator_8315c8@@3UUnknownPathEstimator@@A": 8590792,
     "?Unknown_004284E0@UnknownPathEstimator@@QAEXABVRect@@@Z": 4359392,
-    "?Unknown_0054B2E0@MapClass@@QAEXXZ": 5550816,
+    "?Unknown_0054B2E0@MapClass@@QAEHXZ": 5550816,
     "?Unknown_0054FDA0@MapClass@@QAEXXZ": 5569952,
     "?Unknown_0054EBD0@MapClass@@QAEXXZ": 5565392,
     "?unknown_list_a40c20@@3V?$DynamicVectorClass@PAVTechnoClass@@@@A": 10751008,
@@ -8854,7 +8854,9 @@
     "??_GMapSeedClass@@": 5823056,
     "?Chars_In_Width@BitFontClass@@QBEHPBGHHH@Z": 4396816,
     "_fgetc": 7883275,
-    "?Unknown_00663B40@ColorScheme@@QAEXPAVPaletteClass@@0HHH@Z": 6699840
+    "?Unknown_00663B40@ColorScheme@@QAEXPAVPaletteClass@@0HHH@Z": 6699840,
+    "__real@4@3ff9c90e560000000000": 8055348,
+    "?unknown_slot28@BuildingClass@@UAEHPAVObjectClass@@_N@Z": 4470944
   },
   "regions": [
     {
@@ -13174,7 +13176,7 @@
         {
           "offset": 212,
           "kind": 20,
-          "symbol": "?Unknown_0054B2E0@MapClass@@QAEXXZ",
+          "symbol": "?Unknown_0054B2E0@MapClass@@QAEHXZ",
           "target": 5550816,
           "addend": 0,
           "resolved": 6216
@@ -13220,7 +13222,7 @@
           "resolved": 4293787581
         }
       ],
-      "source_sha256": "efcd47dc4f5d671864e6bf711bbad6995294403a9c58fcf7cf0e7e430a263eb4",
+      "source_sha256": "f581f6759c8c0e8986e1ea4c9d5cc8c32e6dd56f78c1382595986f85daf985c9",
       "source": "src/recovered/classes/MapClass/MapClass_Unknown_005499C0_005499c0.cpp",
       "population": "population-3342",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",

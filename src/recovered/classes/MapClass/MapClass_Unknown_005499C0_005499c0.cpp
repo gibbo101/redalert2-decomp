@@ -11,7 +11,7 @@
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ?unknown_path_estimator_8315c8@@3UUnknownPathEstimator@@A=008315c8
 // @ref ?Unknown_004284E0@UnknownPathEstimator@@QAEXABVRect@@@Z=004284e0
-// @ref ?Unknown_0054B2E0@MapClass@@QAEXXZ=0054b2e0
+// @ref ?Unknown_0054B2E0@MapClass@@QAEHXZ=0054b2e0
 // @ref ?Unknown_0054FDA0@MapClass@@QAEXXZ=0054fda0
 // @ref ?Unknown_0054EBD0@MapClass@@QAEXXZ=0054ebd0
 

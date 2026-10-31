@@ -4,8 +4,8 @@
     "id": "population-3246",
     "inventory_sha256": "e40c783bc09f6d5eba5f36cb6cd5a013c6a087c8b5eaad809918255a60a7b022",
     "gaps_sha256": "5fa89f0401f7477fa5984aaefcd14a1315e6a9c0ecade75d95bf4beadba3404d",
-    "historical_population_sha256": "12412d69801ffde6a20e92480f59eb8e9afb6b281ff40db582b96ce95ae75a94",
-    "historical_acceptance_sha256": "8e6a33ad51891aa9badeb8dfe22328fbfaa4cead7dcf29aa6d40ec839e2282ed"
+    "historical_population_sha256": "73d38bdb021b0376f81c86b5e86b9c3d0374d4eb4c3b908b8ce670de7d34da8e",
+    "historical_acceptance_sha256": "d679c68ca4d106656da4b6f36d2b31514c5d3cb67a35bc51b4bebaa4e1634b10"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -14536,7 +14536,7 @@
     "?Unknown_0054AB00@MapClass@@QAE_NABUCoordStruct@@@Z": 5548800,
     "?Unknown_0054AB70@MapClass@@QAEXABVCell@@PAVObjectClass@@@Z": 5548912,
     "?Unknown_0054AF70@MapClass@@QAEXABVCell@@PAVObjectClass@@@Z": 5549936,
-    "?Unknown_0054B2E0@MapClass@@QAEXXZ": 5550816,
+    "?Unknown_0054B2E0@MapClass@@QAEHXZ": 5550816,
     "?Unknown_0054E370@MapClass@@QAEHABVCell@@@Z": 5563248,
     "?Unknown_0054E3A0@MapClass@@QAEHABVCell@@PAVHouseClass@@@Z": 5563296,
     "?Unknown_0054E410@MapClass@@QAE_NXZ": 5563408,
@@ -27182,7 +27182,7 @@
         {
           "offset": 228,
           "kind": 20,
-          "symbol": "?Unknown_0054B2E0@MapClass@@QAEXXZ",
+          "symbol": "?Unknown_0054B2E0@MapClass@@QAEHXZ",
           "target": 5550816,
           "addend": 0,
           "resolved": 4294771992

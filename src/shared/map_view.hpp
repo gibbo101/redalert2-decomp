@@ -96,7 +96,7 @@ public:
     CellClass *Unknown_0055A490();
     bool Unknown_0054E580(Cell cell, int arg2);                             // 0x0054E580
     void Unknown_00559FD0();                                              // 0x00559FD0                                              // 0x0055A490
-    void Unknown_0054B2E0();                                                    // 0x0054B2E0
+    int Unknown_0054B2E0();                                                     // 0x0054B2E0 (TibSun Overpass)
     void Unknown_005685F0();                                                    // 0x005685F0
     bool Unknown_00569090(Cell *cell);                                          // 0x00569090
     void Unknown_00563D40();                                                    // 0x00563D40
