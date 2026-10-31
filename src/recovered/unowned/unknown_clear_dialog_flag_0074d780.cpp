@@ -8,14 +8,14 @@
 #include "shared/win32_api.hpp"
 // @ref ?Unknown_00735940@@YIPAXH@Z=00735940
 // @ref ?Unknown_007357E0@@YIXPAXH@Z=007357e0
-// @ref ?Unknown_00735B10@@YAPAUHWND__@@XZ=00735b10
+// @ref ?Unknown_00735B10@@YIPAUHWND__@@XZ=00735b10
 // @ref ?unknown_dialog_flags_b2abe0@@3IA=00b2abe0
 // @ref __imp__SetFocus@4=0079a38c
 
 WIN32_IMPORT HWND WINAPI SetFocus(HWND window);
 void *__fastcall Unknown_00735940(int id);
 void __fastcall Unknown_007357E0(void *window, int arg2);
-HWND Unknown_00735B10();
+HWND __fastcall Unknown_00735B10();
 extern unsigned unknown_dialog_flags_b2abe0;
 
 void __fastcall unknown_clear_dialog_flag_74d780(unsigned mask)

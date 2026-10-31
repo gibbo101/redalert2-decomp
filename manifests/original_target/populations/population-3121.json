@@ -4,8 +4,8 @@
     "id": "population-3121",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "4de667d226f6b69003539be7936849e3f774ddb8af17baf1c4854bfe861f3e2f",
-    "historical_acceptance_sha256": "59a3972a52ab9d2de4546eb4e6bafb4b506066db7b8de93205e1ef4c3c556b80"
+    "historical_population_sha256": "c65f41c6da1b9f0eb807137758b111d72be067af5bfbbccafd67063db3125e78",
+    "historical_acceptance_sha256": "617a3d95529e32549a08f0579139666b2cd743cef8229d8ffad76b40757f81a8"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -4622,7 +4622,7 @@
     "?Init@IPXManagerClass@@QAEHXZ": 5394880,
     "?Close@WinsockInterfaceClass@@QAEXXZ": 7777808,
     "?Unknown_007357E0@@YIXPAXH@Z": 7559136,
-    "?Unknown_00735B10@@YAPAUHWND__@@XZ": 7559952,
+    "?Unknown_00735B10@@YIPAUHWND__@@XZ": 7559952,
     "?Unknown_005C2C80@@YAXHPBGZZ": 6040704,
     "?unknown_color_7a7360@@3HA": 8024928,
     "__imp__wsprintfA": 7972004,

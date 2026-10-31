@@ -1,6 +1,6 @@
 #include "shared/wol_sink.hpp"
 #include "shared/crt_memory.hpp"
-HWND Unknown_00735B10();
+HWND __fastcall Unknown_00735B10();
 extern int unknown_selected_users_b26694[128];
 // @ref ?Unknown_00735B10@@YAPAXXZ=00735b10
 // @ref ?unknown_selected_users_b26694@@3PAHA=00b26694

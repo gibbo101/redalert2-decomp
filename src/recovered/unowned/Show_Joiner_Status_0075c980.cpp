@@ -1,6 +1,6 @@
 // @ref ??_C@_0BI@MKML@GUI?3HostGameStartJoiner?$AA@=007e6d78
 #include "shared/wol_sink.hpp"
-HWND Unknown_00735B10();
+HWND __fastcall Unknown_00735B10();
 void __cdecl Unknown_005C2C80(int color,unsigned short const *format,...);
 // @ref ?Unknown_00735B10@@YAPAXXZ=00735b10
 // @ref ?Unknown_005C2C80@@YAXHPBGZZ=005c2c80

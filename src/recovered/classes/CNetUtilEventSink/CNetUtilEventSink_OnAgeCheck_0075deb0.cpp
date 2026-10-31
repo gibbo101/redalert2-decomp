@@ -9,7 +9,7 @@
 // @ref ?unknown_b2abe0@@3IA=00b2abe0
 // @ref ?Unknown_00735940@@YIPAXH@Z=00735940
 // @ref ?Unknown_007357E0@@YIXPAXH@Z=007357e0
-// @ref ?Unknown_00735B10@@YAPAUHWND__@@XZ=00735b10
+// @ref ?Unknown_00735B10@@YIPAUHWND__@@XZ=00735b10
 
 HRESULT __stdcall CNetUtilEventSink::OnAgeCheck(HRESULT result, int years, int consent)
 {

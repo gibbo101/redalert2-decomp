@@ -4,8 +4,8 @@
     "id": "population-2984",
     "inventory_sha256": "b59950a3aa6a17e0c890f1f5b1616328145daefdb7ba9607fc1066aa588c7147",
     "gaps_sha256": "2b2d104173c6bd81a5dc944a5eb9ec23faf8638d1af89699889f6c69f8cf1d94",
-    "historical_population_sha256": "132dfa8a430c973e321953a92c2dc0eaaec5548701420abc5ce9c005f96e1bbb",
-    "historical_acceptance_sha256": "921f0987acf0285325ba5abdb99157f1056e7c3864ca86baf1cacabf9d76fc79"
+    "historical_population_sha256": "dfcd56850e65c3bff1935b149281fbcc57246d7ef72b757fa9c124d309bcf274",
+    "historical_acceptance_sha256": "f94697310a2630233f5b248a8207b891d15eaad817f50d45768be1b02a7d8fc0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10202,7 +10202,7 @@
     "?Unknown_00735940@@YIPAXH@Z": 7559488,
     "?unknown_b2abe0@@3IA": 11709408,
     "?Unknown_007357E0@@YIXPAXH@Z": 7559136,
-    "?Unknown_00735B10@@YAPAUHWND__@@XZ": 7559952,
+    "?Unknown_00735B10@@YIPAUHWND__@@XZ": 7559952,
     "?OnServerError@CChatEventSink@@UAGJJPBD@Z": 7728848,
     "?unknown_b2abd9@@3_NA": 11709401,
     "?Unknown_005C2C80@@YAXHPBGZZ": 6040704,
@@ -19997,7 +19997,7 @@
         {
           "offset": 39,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 1641189
@@ -20320,7 +20320,7 @@
         {
           "offset": 282,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 1640546

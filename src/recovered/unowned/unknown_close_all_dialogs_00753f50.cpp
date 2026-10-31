@@ -4,11 +4,11 @@
 // Assumptions: the dialog helpers are unidentified; names follow
 // 0x0074D780's draft.
 #include "shared/win32_api.hpp"
-// @ref ?Unknown_00735B10@@YAPAUHWND__@@XZ=00735b10
+// @ref ?Unknown_00735B10@@YIPAUHWND__@@XZ=00735b10
 // @ref ?Unknown_007357E0@@YIXPAXH@Z=007357e0
 
 void __fastcall Unknown_007357E0(void *window, int arg2);
-HWND Unknown_00735B10();
+HWND __fastcall Unknown_00735B10();
 
 void unknown_close_all_dialogs()
 {

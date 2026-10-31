@@ -87,7 +87,7 @@ struct User {
 // it returns a copy in a static record, 0 when there is none).
 WOL::User *Unknown_0074DA60();
 extern WOL::IChat *unknown_chat_a72cfc;
-HWND Unknown_00735B10();                                // 0x00735B10 (the current dialog window; moved from shared/wol_sink.hpp)
+HWND __fastcall Unknown_00735B10();                       // 0x00735B10 (the current dialog window; moved from shared/wol_sink.hpp; __fastcall: callers copy its result at once, 0x005C34F0)
 // Dialog helpers (moved from shared/queue.hpp and shared/wol_sink.hpp): 0x005FEE70 before a dialog paints,
 // 0x005FE380 for WM_DRAWITEM, 0x007357E0 ends a dialog with a result (the command id).
 void __fastcall Unknown_005FEE70(HWND dialog);

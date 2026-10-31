@@ -4,8 +4,8 @@
     "id": "population-3320",
     "inventory_sha256": "682162f8a877fe305b5a942bc6a3e04276acd157a31cf566ee35e817eb5714de",
     "gaps_sha256": "0e7d5184d0ab1bffe98248e09301e9c7a8fc4df41c1720909fdab3249519cddd",
-    "historical_population_sha256": "473be1710436a146479adf775555cb5a77bf27be3b02c3a5bdf691b3a83fb48d",
-    "historical_acceptance_sha256": "9a63cd5e0af392bd0688e98d9e9803a279eadc514f68349107e4ad6a867eda75"
+    "historical_population_sha256": "ea6e5349bf093bca36441655f4e76e96bd2ef1860576673e6933942891c7e640",
+    "historical_acceptance_sha256": "9722b65788f6c30a43a970b085cfcc3ce5ad26fcec8131e49da3350acd22bde4"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3528,7 +3528,7 @@
     "__real@8@4000c90fdaa22168c000": 7983448,
     "?unknown_b2a7ec@@3HA": 11708396,
     "?Unknown_007357E0@@YIXPAXH@Z": 7559136,
-    "?Unknown_00735B10@@YAPAUHWND__@@XZ": 7559952,
+    "?Unknown_00735B10@@YIPAUHWND__@@XZ": 7559952,
     "?Unknown_005C2C80@@YAXHPBGZZ": 6040704,
     "?Unknown_006FA0C0@@YIXPAGPBDH@Z": 7315648,
     "?unknown_color_7a7360@@3HA": 8024928,
@@ -11333,7 +11333,11 @@
     "?Send_To@IPXConnClass@@UAEHPADHPAVIPXAddressClass@@PAE_NG@Z": 5389712,
     "?unknown_525dc0@IPXManagerClass@@QAE_NPAUCommHeaderType@@PADHPAVIPXAddressClass@@G@Z": 5397952,
     "?Store_Stats@IPXManagerClass@@UAEXXZ": 5401744,
-    "?Wonline_Profile_Login_Dialog_00753370@@YGJPAUHWND__@@IIJ@Z": 7680880
+    "?Wonline_Profile_Login_Dialog_00753370@@YGJPAUHWND__@@IIJ@Z": 7680880,
+    "?Get@UnknownWindowProcIndex@OwnerDraw@@QBE_NABQAUHWND__@@AAPAP6GJPAU3@IIJ@Z@Z": 6297824,
+    "?Resize@UnknownWindowProcIndex@OwnerDraw@@QAEXXZ": 6298512,
+    "?Resize@UnknownControlIndex@OwnerDraw@@QAEXXZ": 6299504,
+    "?Remove@UnknownWindowProcIndex@OwnerDraw@@QAE_NABQAUHWND__@@AAP6GJPAU3@IIJ@Z@Z": 6297936
   },
   "regions": [
     {
@@ -15980,7 +15984,7 @@
         {
           "offset": 177,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294782043
@@ -19296,7 +19300,7 @@
         {
           "offset": 296,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294783028
@@ -19659,7 +19663,7 @@
         {
           "offset": 174,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294782526
@@ -21076,7 +21080,7 @@
         {
           "offset": 546,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294771258
@@ -21725,7 +21729,7 @@
         {
           "offset": 104,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294799444
@@ -23416,7 +23420,7 @@
         {
           "offset": 18,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294938794
@@ -23534,7 +23538,7 @@
           "resolved": 283095
         }
       ],
-      "source_sha256": "b0d8dea2e3bbb0dfa135c80f4f00e3e77253e246eb31dec24efc84ca0e4cd49c",
+      "source_sha256": "0a69a35824b1485ba4046872b4cf77153a347b8794230003c78a9bc34b537acd",
       "source": "src/recovered/unowned/Send_Unicode_Action_0073ca50.cpp",
       "population": "population-3320",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
@@ -23563,7 +23567,7 @@
         {
           "offset": 18,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294938490
@@ -23681,7 +23685,7 @@
           "resolved": 282791
         }
       ],
-      "source_sha256": "e0cf63819acf2889b041ce2cdb09f9816f1dd4e6f9d3d9bd165e5d6f29e31d10",
+      "source_sha256": "2d4a70d3d82cb047ef2ae86b4b34c635a9aeaab458dba7bf1b83ca595c5a9b58",
       "source": "src/recovered/unowned/Unknown_0073cb80_0073cb80.cpp",
       "population": "population-3320",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
@@ -24563,7 +24567,7 @@
         {
           "offset": 101,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294870487
@@ -29354,7 +29358,7 @@
         {
           "offset": 4,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294807944
@@ -29432,7 +29436,7 @@
           "resolved": 4293288597
         }
       ],
-      "source_sha256": "11526114e4aa1df497ef74a9db41a232008f7106bc07e39607ade2b876ae4b2e",
+      "source_sha256": "da510080b2432ca8faff8c97ce8ded3b1d72c598cded0bdb0c666a7adc89ce8a",
       "source": "src/recovered/unowned/Show_Joiner_Status_0075c980.cpp",
       "population": "population-3320",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -31141,7 +31145,7 @@
         {
           "offset": 2673,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294779179
@@ -32946,7 +32950,7 @@
         {
           "offset": 318,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294906574
@@ -35149,7 +35153,7 @@
         {
           "offset": 193,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294906939
@@ -37431,7 +37435,7 @@
         {
           "offset": 1449,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294925427
@@ -37810,7 +37814,7 @@
         {
           "offset": 439,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294916789
@@ -38699,7 +38703,7 @@
         {
           "offset": 279,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294934789
@@ -38771,7 +38775,7 @@
         {
           "offset": 368,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294934700
@@ -38827,7 +38831,7 @@
         {
           "offset": 444,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294934624
@@ -38883,7 +38887,7 @@
         {
           "offset": 520,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294934548
@@ -41260,7 +41264,7 @@
         {
           "offset": 379,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294899537
@@ -50925,7 +50929,7 @@
         {
           "offset": 519,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294898245
@@ -55805,7 +55809,7 @@
         {
           "offset": 351,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 4294905773

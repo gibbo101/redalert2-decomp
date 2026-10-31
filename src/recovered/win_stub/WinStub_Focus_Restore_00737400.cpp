@@ -27,7 +27,7 @@
 // @ref ?Flag_To_Redraw@GScreenClass@@UAEXH@Z=004e09a0
 // @ref ?MainWindow@@3PAUHWND__@@A=00b263d8
 // @ref ?Pause_Radar_Movie_005a0a90@@YIX_N@Z=005a0a90
-// @ref ?Unknown_00735B10@@YAPAUHWND__@@XZ=00735b10
+// @ref ?Unknown_00735B10@@YIPAUHWND__@@XZ=00735b10
 // @ref __imp__InvalidateRect@12=0079a494
 // @ref __imp__SetActiveWindow@4=0079a420
 // @ref __imp__SetFocus@4=0079a38c
@@ -41,7 +41,7 @@
 #include "shared/unknown_globals.hpp"
 
 extern Surface *unknown_surface_839944;
-HWND Unknown_00735B10();    // 0x00735B10 (the current dialog window)
+HWND __fastcall Unknown_00735B10();    // 0x00735B10 (the current dialog window)
 
 void Focus_Restore()
 {

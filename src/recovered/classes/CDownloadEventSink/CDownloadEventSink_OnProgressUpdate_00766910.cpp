@@ -2,7 +2,7 @@
 // Moves the progress bar (control 0x5C6) and, at most once a second,
 // shows the byte counts (and the time left when known) in control 0x5C8.
 #include "shared/wol_sink.hpp"
-// @ref ?Unknown_00735B10@@YAPAUHWND__@@XZ=00735b10
+// @ref ?Unknown_00735B10@@YIPAUHWND__@@XZ=00735b10
 // @ref ?Load_String@StringTable@@SIPBGPBDPAD0H@Z=006f9ec0
 // @ref _swprintf=00783764
 // @ref _time=0078387f

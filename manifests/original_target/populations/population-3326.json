@@ -4,8 +4,8 @@
     "id": "population-3326",
     "inventory_sha256": "1a8ee1ba0353c901cfc80ab853c7398df898b6a9da924b130b845c6dc5173271",
     "gaps_sha256": "4ae0d349033bedb7894eeec48441a7519d6641b43ed90a4b9b690f3b892b8521",
-    "historical_population_sha256": "9e75a3c3b64a61e549a37bac323a2d82aa05ac28a7929ceaf62433faf6203ad6",
-    "historical_acceptance_sha256": "a8dbfd468263c32444a47f927074b9bfaea3fcf829622fe014a551b6474329eb"
+    "historical_population_sha256": "1e938a5b7150fedab225cc0d00fe0de8ea4edb1a6e8d6ad46b6b885e95883151",
+    "historical_acceptance_sha256": "30ae5bcc5fd2aefb35027ff07558aea06652d327f4d4e1e22684267a3400fb1b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7625,7 +7625,7 @@
     "??_EHouseTypeClass@@UAEPAXI@Z": 5219376,
     "??_ESidebarClass@@UAEPAXI@Z": 6825120,
     "?Unknown_007357E0@@YIXPAXH@Z": 7559136,
-    "?Unknown_00735B10@@YAPAUHWND__@@XZ": 7559952,
+    "?Unknown_00735B10@@YIPAUHWND__@@XZ": 7559952,
     "_vswprintf": 7879256,
     "_wcschr": 7879366,
     "?unknown_get_window_wide_text@@YIJPAUHWND__@@AAVWideString@@@Z": 6295120,
@@ -16090,7 +16090,7 @@
         {
           "offset": 51,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 1519193
@@ -16098,7 +16098,7 @@
         {
           "offset": 60,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 1519184
@@ -16165,7 +16165,7 @@
         {
           "offset": 51,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 1519049
@@ -16173,7 +16173,7 @@
         {
           "offset": 60,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 1519040
@@ -16339,7 +16339,7 @@
         {
           "offset": 6,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 1518278
@@ -16347,7 +16347,7 @@
         {
           "offset": 19,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 1518265
@@ -19601,7 +19601,7 @@
         {
           "offset": 602,
           "kind": 20,
-          "symbol": "?Unknown_00735B10@@YAPAUHWND__@@XZ",
+          "symbol": "?Unknown_00735B10@@YIPAUHWND__@@XZ",
           "target": 7559952,
           "addend": 0,
           "resolved": 1498946
