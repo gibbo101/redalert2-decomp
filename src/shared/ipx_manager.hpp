@@ -106,7 +106,7 @@ public:
     virtual int unknown_slot20();                                       // 20 0x00526A80 (second global channel: queued sends)
     virtual int unknown_slot21();                                       // 21 0x00526AA0 (and receives)
     virtual unsigned long unknown_slot22(int index);                    // 22 0x00526C10 (a connection's mean delay)
-    virtual int unknown_slot23();                                       // 23 0x00526C90
+    virtual void Store_Stats();                                         // 23 0x00526C90 (records each connection's statistics)
     virtual void Mono_Debug_Print(int index, int refresh) {}            // 24 0x005277B0 (empty; inline)
 
     bool IPXStatus;                     // +0x04
