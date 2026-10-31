@@ -4,6 +4,8 @@
 #define RA2_SHARED_SESSION_STATE_HPP
 
 #include "shared/unknown_globals.hpp"
+#include "shared/cd_timer.hpp"
+#include "shared/system_timer.hpp"
 #include "shared/session_blocks.hpp"
 #include "shared/serial_settings.hpp"
 #include "shared/message_list.hpp"
@@ -224,7 +226,11 @@ struct UnknownSessionState {
     int unknown_2dc0[4];                    // +0x2DC0
     char unknown_2dd0[0x2EF0 - 0x2DD0];
     bool SendDelay;                         // +0x2EF0 [MultiPlayer] SendDelay
-    char unknown_2ef1[0x2F98 - 0x2EF1];
+    char unknown_2ef1[3];
+    int unknown_2ef4[8];                    // +0x2EF4 selected peer ports
+    int unknown_2f14[8];                    // +0x2F14 connected peer order
+    CDTimerClass<SystemTimerClass> unknown_2f34[8]; // +0x2F34 peer expiry timers
+    int unknown_2f94;                       // +0x2F94 connected peer count
     int PortBase;                           // +0x2F98 RA2.INI [MultiPlayer] PortBase (1250..1745)
     int unknown_2f9c;                       // +0x2F9C a fixed port base (nonzero: PortBase takes it)
     UnknownSessionBlock_299C unknown_2fa0;  // +0x2FA0 (the same)
