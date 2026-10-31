@@ -228,6 +228,8 @@ public:
     bool Unknown_00568280(CoordStruct const &coord);    // 0x00568280 (as 0x00568140 for the cells' +0x13C; RadarClass)
     void Unknown_0054A550(CoordStruct const &coord, int arg2, int arg3, int arg4);   // 0x0054A550 (InfantryClass slot 93)
     void Unknown_0054A8F0(CoordStruct const &coord, int radius);   // 0x0054A8F0 (clears +0x130/+0x134 and sets +0x12C bits 3-4 in a disc around coord)
+    void Unknown_0054A720(CoordStruct const &coord, int radius);   // 0x0054A720 (marks +0x130 and clears +0x12C bits 3-4 of the unmarked cells in a disc around coord; TActionClass 0x006B1050)
+    CellClass *Get_Local_Grid_Cell(Cell const &cell, int spacing, bool unbiased);   // 0x0055AA80 (TibSun name)
     // The index of a cell's 4 x 4 block in a 130 x 130 grid with a one-block
     // border, the layout of HouseClass +0x56D0 (0x0054E370; FootClass slot 93).
     int Unknown_0054E370(Cell const &cell);
