@@ -315,6 +315,11 @@ extern int unknown_color_a736d0;
 void unknown_5de880();
 extern int unknown_7add78;
 BOOL __stdcall unknown_5e7dd0(HWND window, LPARAM);
+// EnumChildWindows callback that moves a dialog's controls for the movie frame size (0x005E9BB0, not yet
+// recovered; 0x005E9F00 passes the old size as lparam).
+BOOL __stdcall unknown_5e9bb0(HWND window, LPARAM lparam);
+// The dialog whose controls 0x005E9BB0 is moving, or 0x005FF7E0 is setting up (0x00A763CC).
+extern HWND unknown_dialog_a763cc;
 
 }
 // Prints text in font (null: the game font) at area of surface (null: the background surface), aligned by
