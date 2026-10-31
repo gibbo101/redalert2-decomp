@@ -1,3 +1,5 @@
+// Wonline needs full lobby container implementations before their first inclusion.
+#include "shared/lobby.hpp"
 // Header-static dynamic initializers of the unit at 0x0073A6F0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x0073A6F0-0x0073A8D6); the other
