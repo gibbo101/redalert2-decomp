@@ -83,6 +83,9 @@ public:
     void unknown_527800();                                              // 0x00527800
     void unknown_527810(IPXAddressClass *address, unsigned short id);   // 0x00527810
     void unknown_527830(int index);                                     // 0x00527830
+    // Prints the connections' figures under Multiplayer_Debug_Print's (0x00526D90; TibSun's
+    // IPXManagerClass::Multiplayer_Debug_Print).
+    void Multiplayer_Debug_Print_00526d90();
 
     virtual int Service();                                              // 1 0x00525F60
     virtual int Send_Private_Message(void *buf, int buflen, int ack_req, int conn_id);   // 2 0x00525C00

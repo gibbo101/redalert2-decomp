@@ -72,6 +72,26 @@ public:
     CellClass *As_Cell() const;                             // 0x006B6610
 
     bool Is_Valid() const { return Kind != 0; }
+    void Invalidate() { Kind = 0; }
+    // TibSun's xTargetClass Encode and Decode (Main_Loop's game recording; the
+    // Decode COMDAT is 0x00541E90).
+    int Encode()
+    {
+        int value;
+        if (Kind == 0) {
+            value = -1;
+        } else {
+            value = ((Kind << 24) | (ID & 0x00FFFFFF));
+        }
+        return value;
+    }
+    TargetClass Decode(int value)
+    {
+        Invalidate();
+        Kind = (value >> 24) & 0xFF;
+        ID = value & 0x00FFFFFF;
+        return *this;
+    }
     // The packed form: kind in the top byte, the low 24 bits of the ID.
     int As_Target() const { return (Kind << 24) | (ID & 0x00FFFFFF); }
 

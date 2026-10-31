@@ -13,6 +13,8 @@ class UnknownList832470 : public DynamicVectorClass<ObjectClass *> {
 public:
     bool Submit(ObjectClass *object, bool arg2);    // 0x0053E330 (name hypothesis)
     void Remove(ObjectClass *object);               // 0x0053E370 (name hypothesis)
+    // Once per frame from Main_Loop (0x0053D890; Westwood's LogicClass::AI, hypothesis).
+    void Unknown_0053D890();
 };
 extern UnknownList832470 unknown_list_832470;
 

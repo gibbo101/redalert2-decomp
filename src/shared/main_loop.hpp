@@ -2,6 +2,11 @@
 #ifndef SHARED_MAIN_LOOP_HPP
 #define SHARED_MAIN_LOOP_HPP
 
+// Declarations this unit needs from headers that Refresh_Wonline_Players 0x0073FEE0 also
+// sees (any new declaration there renumbers its $L labels): included first in the unit.
+#define SESSION_STATE_DECLARE_TRAP_OBJECT
+#define MAP_VIEW_DECLARE_SLOT41
+
 #include "shared/cd_timer.hpp"
 #include "shared/system_timer.hpp"
 
@@ -14,6 +19,24 @@ void Clear_Main_Loop_Flag_0053f480();
 // Keyboard scroll keys held (0x00A6EBDC): left 0x100, right 0x1000, up 0x01, down 0x10;
 // Keyboard_Process sets a bit on the arrow key press and clears it on its release.
 extern int unknown_scroll_keys_a6ebdc;
+
+// A key binding is down (the bindings are ints, pushed as dwords; WWKeyboardClass::Down takes
+// a 16-bit KeyNumType; the same wrapper as the Scroll and TechnoClass units).
+#include "shared/keyboard.hpp"
+inline bool Main_Loop_Key_Down(int key) { return WWKeyboard->Down(key); }
+// The keyboard as Keyboard_Process's repeat-key loop reads it (an inline accessor: three
+// pending inline sites after its hotkey lookups, which decide their IndexClass inlining).
+inline WWKeyboardClass *Main_Loop_Keyboard() { return WWKeyboard; }
+
+// Westwood's always.h min (TibSun; Main_Loop's process time).
+template <class T> T min(T a, T b)
+{
+    if (a < b) {
+        return(a);
+    } else {
+        return(b);
+    }
+}
 
 // For network and modem games, processes the key for inter-player messages (0x00540C20).
 void __fastcall Message_Input(int &input);
@@ -45,6 +68,8 @@ bool __fastcall Main_Loop_End_0053f840();
 // hypothesis): the network frame timer counts with it.
 class MSTimerClass {
 public:
+    MSTimerClass();                         // 0x005B6A00 (timeBeginPeriod(1))
+    ~MSTimerClass();                        // 0x005B6A10 (timeEndPeriod(1))
     operator long() const;                  // 0x005B6A20
 };
 // The frame timers (Westwood's FrameTimer and NetFrameTimer, names hypotheses).
@@ -59,6 +84,32 @@ long Wait_For_Surface_Blit_004961d0();
 // Waits out the frame: services the network and the input while a network game's
 // frame timer runs, else blits and sleeps; once a second samples the frame rate
 // (0x00540960; Westwood's Sync_Delay).
-void Sync_Delay();
+void __fastcall Sync_Delay();
+
+// Main_Loop (0x0053FBD0) state; names after TibSun's Session and Main_Loop (hypotheses).
+extern unsigned long unknown_process_timer_a3d56c;   // 0x00A3D56C (Session.ProcessTimer)
+extern int unknown_process_ticks_a3d570;             // 0x00A3D570 (Session.ProcessTicks)
+extern int unknown_process_frames_a3d574;            // 0x00A3D574 (Session.ProcessFrames)
+extern bool unknown_trap_check_heap_a40d1a;          // 0x00A40D1A (Debug_Trap_Check_Heap)
+extern bool unknown_flag_a40b51;                     // 0x00A40B51 (picks the theme Main_Loop restarts)
+extern int unknown_net_frame_delay_a6ebcc;           // 0x00A6EBCC (the network frame timer's time left)
+extern bool unknown_flag_a40d45;                     // 0x00A40D45 (cleared once per frame; TibSun's drag_select_aborted)
+extern int unknown_team_event_a6ebc4;                // 0x00A6EBC4 (TibSun's TeamEvent)
+extern int unknown_team_number_a6ebc8;               // 0x00A6EBC8 (TibSun's TeamNumber)
+extern bool unknown_flag_a6ebd0;                     // 0x00A6EBD0 (the scenario's save name is set once)
+// The keyboard scroll distance (21) and its factor while a force-move key is held (2.5); this
+// unit's first .data (0x007DFB70, 0x007DFB74).
+extern int unknown_scroll_rate_7dfb70;
+extern float unknown_scroll_factor_7dfb74;
+extern int unknown_int_8325d0;                       // 0x008325D0
+extern int unknown_int_8325d4;                       // 0x008325D4
+class LayerClass;
+extern LayerClass unknown_layers_852578[5];          // 0x00852578 (DisplayClass::Layer)
+void unknown_delete_all_a76648();                    // 0x006142F0
+void Unknown_00614010();                             // 0x00614010
+void Unknown_00482BC0();                             // 0x00482BC0 (Unselect_All, hypothesis)
+
+// The value Multiplayer_Debug_Print shows in seconds when set (0x007EC498; -1: none).
+extern unsigned int unknown_time_7ec498;
 
 #endif

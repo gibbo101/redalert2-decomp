@@ -298,6 +298,12 @@ struct UnknownSessionState {
     // Prints the session settings, the player addresses and the game type to the file
     // (0x0066FF90; Red Alert's Log_To_File; no direct caller).
     bool Log_To_File(_iobuf *out);
+#ifdef SESSION_STATE_DECLARE_TRAP_OBJECT
+    // Main_Loop calls it from TrapFrame on (0x006715C0; Red Alert's Trap_Object, hypothesis).
+    // Behind a guard (shared/main_loop.hpp defines it): a new member here renumbers
+    // Refresh_Wonline_Players 0x0073FEE0's $L labels.
+    void Trap_Object_006715c0();
+#endif
     void Unknown_00672440();                // 0x00672440 (game mode 4, after the load wait of 0x0065C7D0)
     unsigned char Unknown_00672F10();       // 0x00672F10 (+0x3080)
     int Unknown_00672940();                // 0x00672940 (MultiplayerGameMode slot 23)

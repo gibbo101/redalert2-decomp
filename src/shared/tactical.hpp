@@ -133,6 +133,7 @@ public:
     void Register_Dirty_Area(Rect area, bool refresh_shroud);
     // Sets the view rectangle (0x006A65A0; DisplayClass slot 42).
     void Unknown_006A65A0(Rect const &rect);
+    Point2D Unknown_006A67B0();                     // 0x006A67B0 (the view position; recorded by Main_Loop)
     void Unknown_006A6640(Point2D const &point);    // 0x006A6640 (sets the view position, clamped)
 
     bool Blit_Tiles();                              // 0x006A6570 (the tile surface's tactical area onto the drawing surface)

@@ -181,6 +181,12 @@ public:
     void Write_INI_0049D910(CCINIClass &ini);                                   // 0x0049D910 (Theater, Size, LocalSize; Write_Scenario_INI)
     void Read_INI_0049CFD0(CCINIClass &ini);                                    // 0x0049CFD0 (the map's sections of a scenario; Read_Scenario_INI)
     virtual bool unknown_slot39(Cell const &cell, HouseClass *house);                    // slot 39 0x0049A370
+#ifdef MAP_VIEW_DECLARE_SLOT41
+    // Slot 41 (0x00499B60, virtual in shared/display.hpp): scrolls the view; Main_Loop calls it directly.
+    // Behind a guard (shared/main_loop.hpp defines it): a new declaration here renumbers
+    // Refresh_Wonline_Players 0x0073FEE0's $L labels.
+    bool unknown_slot41(int arg1, int *arg2, bool arg3);
+#endif
     // Slot 38 (0x0049A0F0, virtual in shared/display.hpp), declared non-virtual so the light vtable keeps its layout;
     // Map calls it directly (MapClass 0x00549C50).
     bool unknown_slot38(Cell const &cell, HouseClass *house);
