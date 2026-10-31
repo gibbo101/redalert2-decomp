@@ -234,28 +234,90 @@ def check_toolchain(config, pinned):
     return actual
 
 
+def object_cache_directory(config):
+    """Directory of reusable group objects, or None when disabled. RA2_OBJECT_CACHE
+    names it (0/off/no disables), else config['object_cache'], else
+    build/object-cache (ignored, outside the per-build output folders)."""
+    value = os.environ.get('RA2_OBJECT_CACHE', config.get('object_cache', REPOSITORY/'build/object-cache'))
+    if value in (None, False) or str(value).lower() in ('', '0', 'off', 'no', 'false'):
+        return None
+    return Path(value)
+
+
+def include_closure(data, headers, memo):
+    """Catalogued headers a unit text includes, transitively, by the same
+    directive scan validate_catalog enforces (quoted includes of catalogued
+    shared headers are the only include dependencies a tracked source may
+    have, so the unit text plus this closure fix the compiler's input)."""
+    from canonical import validate_includes
+    pending, seen = set(validate_includes(data, headers)), set()
+    while pending:
+        name = pending.pop()
+        if name in seen:
+            continue
+        seen.add(name)
+        if name not in memo:
+            memo[name] = validate_includes(headers[name], headers)
+        pending.update(memo[name] - seen)
+    return sorted(seen)
+
+
+def group_cache_key(source, args, closure, headers, pinned):
+    """Identity of one group's compile: the pinned compiler files, the
+    argument list, the unit text and every header in its include closure."""
+    return sha(json.dumps(dict(compiler=pinned, arguments=list(args), source=sha(source),
+                               headers=[(name, sha(headers[name])) for name in closure]),
+                          sort_keys=True).encode())
+
+
 def compile_sources(config, catalog, destination):
-    from canonical import compile_group_key, separate_unit_populations
+    from canonical import compile_group_key, separate_unit_populations, validate_headers
     groups = OrderedDict()
     separate = separate_unit_populations(catalog)
     for row in sorted(catalog['regions'], key=lambda r:r['source_order']):
         groups.setdefault(compile_group_key(row, separate), []).append(row)
     # A few concurrent Wine sessions (or the opt-in remote host) run every
-    # group. Each group keeps its own source, object, compiler log and exit
-    # code; a failure in any group fails the build.
-    units, planned = [], []
+    # group whose object is not already cached from an earlier build of the
+    # identical inputs. Each group keeps its own source, object, compiler log
+    # and exit code; a failure in any group fails the build. The whole-file
+    # comparison downstream judges the result either way.
+    cache = object_cache_directory(config)
+    if cache is not None:
+        headers = validate_headers(REPOSITORY, catalog)
+        pinned = json.loads((REPOSITORY/'manifests/toolchain.json').read_text())['compiler']
+        memo = {}
+    units, planned, keys, pending = [], [], [], []
     for index, (key, rows) in enumerate(groups.items()):
         population, options = key[0], key[1]
         directory = destination/('compile-%03d'%index); directory.mkdir()
         source = directory/'accepted.cpp'
-        source.write_bytes(b'\n'.join(source_path(REPOSITORY,r['source']).read_bytes() for r in rows))
+        text = b'\n'.join(source_path(REPOSITORY,r['source']).read_bytes() for r in rows)
+        source.write_bytes(text)
         obj = directory/'accepted.obj'
+        args = compiler_arguments(options)
         units.append(dict(cwd=directory, source=source, obj=obj, log=directory/'compile.log',
-                          returncode=directory/'returncode.txt', args=compiler_arguments(options)))
+                          returncode=directory/'returncode.txt', args=args))
         planned.append((population, options, rows, directory, source, obj))
-    session = compile_units(config, destination, units, 'compile')
-    failed = [i for i, p in enumerate(planned) if not (p[3]/'returncode.txt').exists() or
-              (p[3]/'returncode.txt').read_text().strip() != '0']
+        cached = None
+        if cache is not None:
+            cached = group_cache_key(text, args, include_closure(text, headers, memo), headers, pinned)
+            stored = cache/cached[:2]/(cached+'.obj')
+            if stored.exists():
+                shutil.copyfile(stored, obj)
+                log = cache/cached[:2]/(cached+'.log')
+                shutil.copyfile(log, directory/'compile.log') if log.exists() else (directory/'compile.log').write_bytes(b'')
+                (directory/'returncode.txt').write_text('0\n')
+                os.utime(stored)
+                keys.append((cached, True))
+                continue
+        keys.append((cached, False))
+        pending.append(index)
+    if pending:
+        session = compile_units(config, destination, [units[i] for i in pending], 'compile')
+    else:
+        session = dict(sessions=[], seconds=0.0, lock_wait_seconds=0.0, killed_hung_compilers=[], backend='cache')
+    failed = [i for i in pending if not (planned[i][3]/'returncode.txt').exists() or
+              (planned[i][3]/'returncode.txt').read_text().strip() != '0']
     if failed and session['killed_hung_compilers']:
         # Only a killed (hung) compiler earns a retry; real errors still fail.
         session['retry'] = compile_units(config, destination, [units[i] for i in failed], 'compile-retry')
@@ -263,14 +325,25 @@ def compile_sources(config, catalog, destination):
     for index, (population, options, rows, directory, source, obj) in enumerate(planned):
         returncode = int((directory/'returncode.txt').read_text().strip())
         require(returncode == 0 and obj.exists(), 'Compile failed: '+str(directory/'compile.log'))
+        cached, reused = keys[index]
+        if cached is not None and not reused:
+            # Store the fresh object for the next build of these exact inputs.
+            folder = cache/cached[:2]; folder.mkdir(parents=True, exist_ok=True)
+            for name, path in [('.obj', obj), ('.log', directory/'compile.log')]:
+                temporary = folder/(cached+name+'.tmp%d' % os.getpid())
+                shutil.copyfile(path, temporary); os.replace(temporary, folder/(cached+name))
         receipts.append(dict(group=index, returncode=returncode, population=population, options=list(options),
                              source_sha256=sha(source.read_bytes()), sources=[r['source'] for r in rows],
-                             object_sha256=sha(obj.read_bytes())))
+                             object_sha256=sha(obj.read_bytes()), cache_key=cached, reused=reused))
         outputs.append((rows,obj))
     print('Compiled %d groups (%d tracked sources) in %d %s sessions, %.1fs'%(
         len(planned), sum(len(p[2]) for p in planned), len(session['sessions']), session['backend'],
         session['seconds'] + session.get('retry', {}).get('seconds', 0)), flush=True)
-    write_json(destination/'compile-receipt.json', dict(session=session, groups=receipts))
+    if cache is not None:
+        print('Object cache %s: %d of %d groups reused, %d compiled' % (
+            cache, sum(1 for k in keys if k[1]), len(keys), len(pending)), flush=True)
+    write_json(destination/'compile-receipt.json', dict(session=session, groups=receipts,
+                                                         object_cache=None if cache is None else str(cache)))
     return outputs
 
 

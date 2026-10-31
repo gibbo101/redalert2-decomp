@@ -44,6 +44,7 @@ public:
     void Generate_Urban_Pavement_005890b0(DynamicVectorClass<Cell> &cells); // pendingr198
     void Adjust_Ramp_Junctions_005831c0(); // caller0058360A restores complete-owner ECX
     bool Expand_All_High_Ground_00583740(); //ALresult/RET0, receiver notread
+    ~UnknownMapGenerator();
     UnknownMapGenerator(); //00577010 remains parked, no body promoted
     // Proposed rename-only owner correction; same int,int/ECX/RET8 physical ABI.
     void Unknown_0057A0D0(int arg1,int arg2); //0057A0D0, operation unchanged; no body promoted
