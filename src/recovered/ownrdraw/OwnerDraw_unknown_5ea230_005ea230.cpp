@@ -3,9 +3,20 @@
 
 namespace OwnerDraw {
 
+// A control's registry record, or null. The setters 0x005EA390..0x005EAAA0 read their record through it;
+// 0x005FF7E0 inlines them with this helper's Get left out of line, which needs the key as its own local.
+inline UnknownControlRecord *unknown_control_record(HWND control)
+{
+    unsigned int key = (unsigned int)control;
+    UnknownControlRecord *record = 0;
+    unknown_registry_a73640.Get(key, record);
+    return record;
+}
+
 bool __fastcall unknown_5ea230(HWND control)
 {
-    UnknownControlRecord *record = unknown_registry_a73640.Find((unsigned int)control);
+    UnknownControlRecord *record = 0;
+    unknown_registry_a73640.Get(*(unsigned int *)&control, record);
     if (!record) {
         return false;
     }

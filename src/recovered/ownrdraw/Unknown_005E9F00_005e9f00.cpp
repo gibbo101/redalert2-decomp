@@ -10,7 +10,10 @@
 // Sizes a dialog to the movie frame and moves its controls from old_size by 0x005E9BB0 (0x005E9F00).
 void __fastcall Unknown_005E9F00(HWND dialog, Point2D *old_size)
 {
-    MoveWindow(dialog, 0, 0, unknown_8523e0, unknown_8523e4, 0);
+    int width = unknown_8523e0;
+    int height = unknown_8523e4;
+    MoveWindow(dialog, 0, 0, width, height, 0);
     OwnerDraw::unknown_dialog_a763cc = dialog;
-    EnumChildWindows(dialog, OwnerDraw::unknown_5e9bb0, (LPARAM)old_size);
+    LPARAM param = (LPARAM)old_size;
+    EnumChildWindows(dialog, OwnerDraw::unknown_5e9bb0, param);
 }
