@@ -162,7 +162,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall unknown_slot59(User *users,unsigned short const *message) = 0;
     virtual HRESULT __stdcall unknown_slot60(unsigned short const *message) = 0;
     virtual HRESULT __stdcall unknown_slot61(User *users,unsigned short const *message) = 0;
-    virtual void __stdcall unknown_slot62() = 0;
+    virtual HRESULT __stdcall unknown_slot62(User *user,unsigned short const *message) = 0; // RA2 Unicode page call at original +0xF8
     virtual HRESULT __stdcall unknown_slot63(int update,int count) = 0;
 };
 
