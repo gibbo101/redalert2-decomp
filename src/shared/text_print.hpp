@@ -98,6 +98,7 @@ public:
     void Set_Clip_Box(tagRECT const *box);                                          // 0x00431460
     bool Get_Text_Area(wchar_t const *text, int *width, int *height, int max_width);   // 0x004314B0 (false without font or text; name hypothesis)
     int String_Pixel_Width(wchar_t const *string, int arg2) const;                  // 0x00431690
+    int Chars_In_Width(wchar_t const *string, int width, int arg3, int arg4) const;  // 0x00431710 (how many characters of string fit in width; name hypothesis)
     int Char_Pixel_Width(wchar_t character) const;                                  // 0x00432170
 
     FontDataType *Data;     // +0x04
