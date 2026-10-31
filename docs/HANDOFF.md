@@ -69,7 +69,7 @@ Skirmish.cpp, NullDlg Select_Serial_Dialog. Pending landings: none (Mac lanes de
 Windows (user decision 2026-10-30, relayed by the review session): no lead layer. LEAD.md and LEAD2.md are withdrawn;
 lead 1 was told to finish or freeze its in-flight delivery and stop (messages/2026-10-30T1900Z). Four individual Codex
 workers codex1-4 work under WORKER.md (the Mac lane brief adapted for Windows), one unit each, reserved on BOARD.md:
-codex1 pathfinding + map generation 0x570000-0x58FFFF; codex2 wonline.cpp (from 2026-10-31; Queue.CPP closed: plateaus); codex3 UnitClass (from 2026-10-31; BuildingClass parked at plateaus, misses in codex3 NOTES; holds map_view/map/foot/ObjectType headers for Plan_Route/Assign_Destination since R189, then InfantryClass); codex4 House.CPP (seed tooling capped at the pass5 fallback). codex5/6 unused. Two workers run on
+codex1 pathfinding + map generation 0x570000-0x58FFFF; codex2 wonline.cpp (from 2026-10-31; Queue.CPP closed: plateaus); codex3 UnitClass (from 2026-10-31; BuildingClass parked at plateaus, misses in codex3 NOTES; holds map_view/map/foot/ObjectType headers for Plan_Route/Assign_Destination since R189, then InfantryClass); codex4 TeamClass / Team.CPP (from 2026-10-30 night; House.CPP parked at plateaus after r25). codex5/6 unused. Two workers run on
 Astra and two on Sol with identical briefs. Westwood reference clones for them are at C:\ra2\reference\ (copied without .git). TibSun reconstruction (OpenTS-Developers/TibSun dbfbfbf, code/ only; user-approved 2026-10-30) is cloned at private/reference/TibSun and C:\ra2\reference\TibSun: first place to look for a unit's names and shape (docs/WESTWOOD_SOURCES.md cautions). Optional readability follow-up when a lane next touches HouseClass: rename unknown_ members from TibSun house.h (unknown_142 FirestormDefenseActivated, unknown_18d IsBuiltSomething, unknown_144 IsRecalcNeeded, unknown_1bc JustBuiltUnit, unknown_54a0..54d0 PB/PU/PI/PAQuantity; BuildingClass::unknown_450950 Update_FS_Wall_State; Map 0x54EBD0 Zone_Reset, 0x5688A0 Recalc_Cells_In_List). 2026-10-30 20:24: the shared C:\ra2\repo\private\compiler and private\original-target-20261020 were emptied by a recursive delete through junctions (most likely the removal of the lead worktree C:\Users\Mike\.codex\worktrees\ra2-seed-lead, whose private folders were junctions; check trees under C:\ra2\c have the same junctions). Restored from the Mac (game.exe hash verified, 2719 inventory passes). Lead r66 (map reset 0x57BEA0, 545 B) was lost with that worktree, and so were the codex1, codex2 and codex4 scratch folders (codex3's survived); codex2-r2728 (Mono rename) is void and is being redone. Never delete a Windows worktree or check tree recursively without removing its junctions first. Deliveries arrive as deliveries/codexN-rN.md pointing at a frozen
 build\class-work\codexN\d\rN (BASE, README with body bytes, shared/, plans, unit/); land them with land_round.sh
 after rewriting the C:/ prefix, as for lead packets. The owner keeps assignments/codexN-next.md current for hand-backs; WORKER.md (2026-10-31) makes workers merge main and re-read messages/assignments before every delivery (codex4 kept delivering on BASE d5134dff because the brief never said to read messages). codex4's rebased r10 and ctor r11 landed (9020f4bf); r4/r6-r9 are void.
@@ -89,6 +89,14 @@ so MPCooperative functions that call a base body need separate units.
 
 ## Integration loop
 
+0. Queue landing (2026-10-30, user via review session): every new Windows packet carries `landing.txt` (format in
+   WORKER.md "Delivery": `P dir plan message`, `R spec message`, `H reason`). At each board check append the new
+   packets' landing.txt lines, in freeze order, to `private/tools/landing-queue.txt` and run
+   `private/tools/runq.sh private/tools/landing-queue.txt` in the background (untracked, lives in private/tools).
+   It fetches missing Windows packets, lands line by line, skips a P line already fully accepted, stops on a dirty
+   tree, an H line or the first failure; done lines go to landing-queue.txt.done. Touch a delivery only when the
+   runner stops on it. Packets without landing.txt are queued by hand in the same format. Never run two runners, and
+   never wait on another landing with `pgrep -f` from a shell command line (it matches the waiter itself).
 1. Take a delivery: frozen `d/rN/` folder with plans, drafts, header copies,
    base commit. Plans use forward-slash paths and LF endings.
 2. `private/tools/land_round.sh DIR "message" PLAN...` merges DIR/shared against DIR/BASE (a header
