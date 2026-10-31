@@ -117,7 +117,7 @@ public:
     WeaponStruct *Get_Weapon(int index);                                // 0x006DF5C0
     WeaponStruct *Get_Elite_Weapon(int index);                          // 0x006DF5E0
     void Load_Palette();                                                // 0x006DF620
-    static void Load_Palettes();                                        // 0x006DF640
+    static void __fastcall Load_Palettes();                                      // 0x006DF640
     bool Has_Turret_Weapons() const;                                    // 0x006DF680
     void Set_Turret_Weapon(int weapon, int index);                      // 0x006DF690
     int Get_Turret_Weapon(int index) const;                             // 0x006DF6B0

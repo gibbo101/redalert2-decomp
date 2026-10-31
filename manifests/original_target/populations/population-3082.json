@@ -4,8 +4,8 @@
     "id": "population-3082",
     "inventory_sha256": "74d799f52a2b6e76c9f4dc406398c7c1b0e908a32f6b55c3346965be61fd5be2",
     "gaps_sha256": "4dafe358ec6a5a1718c6b326396ad5bd56df603000986b0f84f254dfe2fa251c",
-    "historical_population_sha256": "e0dd619176e57384de341dd3d245d524480ed3d7ae4d76783f4353ea676b441e",
-    "historical_acceptance_sha256": "350114e64cb195f85f051adf1abbd9ae7fa8e7226c317954a64367adaf807c0f"
+    "historical_population_sha256": "45514f7b227d24ff91db757477a6cf819ec9a52cd6d4cc0f8d5317ccc337b2c4",
+    "historical_acceptance_sha256": "6ad74d106c65d03165d73279f8ccdbc5ce01018f38ee5aba48c50afec6c4e077"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3414,7 +3414,7 @@
     "?Load@WalkLocomotionClass@@UAGJPAUIStream@@@Z": 7469376,
     "?Load@WarheadTypeClass@@UAGJPAUIStream@@@Z": 7474608,
     "?Load_Palette@TechnoTypeClass@@QAEXXZ": 7206432,
-    "?Load_Palettes@TechnoTypeClass@@SAXXZ": 7206464,
+    "?Load_Palettes@TechnoTypeClass@@SIXXZ": 7206464,
     "?Load_String@StringTable@@SIPBGPBDPAD0H@Z": 7315136,
     "?Locate_Line_Comment@INIClass@@SIPADPADAAH11@Z": 5310128,
     "?LockRegion@CStreamClass@@UAGJTULARGE_INTEGER@@0K@Z": 4804384,

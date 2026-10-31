@@ -4,8 +4,8 @@
     "id": "population-2427",
     "inventory_sha256": "88127c31946cddec419023f056e2640062304ce34afa123b3aedbb54ac26211f",
     "gaps_sha256": "95ba998a63428c12a8821d5960dec54d41caa78da777bc7e0f16e2856c739749",
-    "historical_population_sha256": "8e52bafc2883dec348f64d0954a32f8c164c2fbcc2d19b453afa4b40b45a6ef5",
-    "historical_acceptance_sha256": "78804e3b6190d46f98d330ee857add350925471da760e6a19d038d080f56c55c"
+    "historical_population_sha256": "a23793e706fdf030695dc79a8010339b0d6184a0cb33b1a2f51a0e899fc1edbb",
+    "historical_acceptance_sha256": "a3d0bce1675116a4df44d01ec9333743c44965063496500f1d16e708d5105e7a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3480,7 +3480,7 @@
     "??RWWCRCEngine@@QAEXD@Z": 4799984,
     "?Load_Palette@TechnoTypeClass@@QAEXXZ": 7206432,
     "?Load@PaletteName@@QAEPAXXZ": 6304640,
-    "?Load_Palettes@TechnoTypeClass@@SAXXZ": 7206464,
+    "?Load_Palettes@TechnoTypeClass@@SIXXZ": 7206464,
     "??0ObjectTypeClass@@QAE@PBD@Z": 6117360,
     "??_7AnimTypeClass@@6BIPersistStream@@@": 7979800,
     "??_7AnimTypeClass@@6BINoticeSink@@@": 7979792,
