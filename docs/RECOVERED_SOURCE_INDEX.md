@@ -10,7 +10,7 @@
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 171 | 47,172 | 171 | 0x00438A60–0x004D3450 |
-| (discovery: address-named) | 1445 | 43,101 | 13 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1444 | 43,063 | 13 | 0x004010A0–0x00797198 |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 128 | 42,374 | 128 | 0x0049ED10–0x0056A9D0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 188 | 35,894 | 185 | 0x0041B370–0x006D9750 |
@@ -35,8 +35,8 @@
 | [classes/Tactical](../src/recovered/classes/Tactical/) | 65 | 11,471 | 58 | 0x006A22D0–0x006AC800 |
 | [classes/ModemHost](../src/recovered/classes/ModemHost/) | 32 | 11,065 | 32 | 0x00598E10–0x0059C8B0 |
 | [classes/DisplayClass](../src/recovered/classes/DisplayClass/) | 57 | 10,807 | 51 | 0x0040D120–0x006824F0 |
+| [classes/CellClass](../src/recovered/classes/CellClass/) | 90 | 10,640 | 86 | 0x00470680–0x0047CFC0 |
 | [classes/ObjectClass](../src/recovered/classes/ObjectClass/) | 124 | 10,638 | 100 | 0x0041B240–0x005D5540 |
-| [classes/CellClass](../src/recovered/classes/CellClass/) | 89 | 10,602 | 85 | 0x00470680–0x0047CFC0 |
 | [classes/UnknownSessionState](../src/recovered/classes/UnknownSessionState/) | 25 | 10,438 | 25 | 0x0066EAA0–0x00673030 |
 | [classes/ObjectTypeClass](../src/recovered/classes/ObjectTypeClass/) | 30 | 9,948 | 29 | 0x0041C2E0–0x005D7FF0 |
 | [classes/DSurface](../src/recovered/classes/DSurface/) | 37 | 9,705 | 37 | 0x004AA4A0–0x004B14F0 |
