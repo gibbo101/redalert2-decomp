@@ -96,10 +96,28 @@ extern DynamicVectorClass<TechnoClass *> unknown_list_a40c20;
 // the stand-ins above redefine): the constructor and the size operator new allocates
 // (MapClass 0x005576A0 and its three twins place bridge explosions with it).
 class AnimTypeClass;
-class AnimClass {
+class AnimClass : public ObjectClass {
 public:
     AnimClass(AnimTypeClass *type, CoordStruct const &coord, int loop_delay, int loops, int flags, int zadjust);   // 0x00420110 (as shared/anim.hpp)
-    char unknown_0[0x1A8];                  // sizeof(AnimClass) 0x1A8 (as shared/anim.hpp)
+    virtual HRESULT __stdcall GetClassID(GUID *classid);
+    virtual HRESULT __stdcall Load(IStream *stream);
+    virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);
+    virtual int Kind_Of() const;
+    virtual int Size_Of() const;
+    char unknown_24[0x177 - sizeof(AbstractClass)];
+    bool unknown_177;                       // +0x177 deleted by the map's Overpass (0x0054B2E0)
+    char unknown_178[0x1A8 - 0x178];        // sizeof(AnimClass) 0x1A8 (as shared/anim.hpp)
+};
+typedef char AnimClass_stand_in_size[(sizeof(AnimClass) == 0x1A8) ? 1 : -1];
+extern DynamicVectorClass<AnimClass *> Anims;     // 0x00A40960 (as shared/anim.hpp)
+
+// TagClass as the Map unit sees it (stand-in; shared/tag.hpp brings the type and trigger
+// headers whose types the stand-ins above redefine): the cross-line tests as shared/tag.hpp declares them
+// (MapClass 0x0054B2E0 tests the cross-line kinds of cell tags).
+class TagClass {
+public:
+    bool unknown_func_6b3d90() const;       // 0x006B3D90 (as shared/tag.hpp; TibSun Is_Cross_Vertical)
+    bool unknown_func_6b3da0() const;       // 0x006B3DA0 (as shared/tag.hpp; TibSun Is_Cross_Horizontal)
 };
 
 #endif
