@@ -57,6 +57,7 @@ struct __declspec(novtable) INetUtilEvent : public IUnknown {
     virtual HRESULT __stdcall OnWDTState(HRESULT result, unsigned char *state, int length) = 0;
 };
 
+// Used interface prefix; the final status slot is declared on the concrete sink below.
 struct __declspec(novtable) IDownloadEvent : public IUnknown {
     virtual HRESULT __stdcall OnEnd() = 0;
     virtual HRESULT __stdcall OnError(int error) = 0;
@@ -188,7 +189,8 @@ public:
     virtual HRESULT __stdcall OnEnd();                                               // 0x007668D0
     virtual HRESULT __stdcall OnError(int error);                                    // 0x007668F0
     virtual HRESULT __stdcall OnProgressUpdate(int bytes_read, int total_size, int time_taken, int time_left);  // 0x00766910
-    virtual HRESULT __stdcall OnQueryResume();                                       // 0x00766AA0
+    virtual HRESULT __stdcall OnQueryResume();
+    virtual HRESULT __stdcall OnStatusUpdate(int status); // Original IDownloadEvent status slot at0x00766A10.                                       // 0x00766AA0
 };
 extern long unknown_b2acc8;             // 0x00B2ACC8 (time of the last progress text)
 #include "shared/crt_time.hpp"
@@ -392,8 +394,7 @@ extern int unknown_mangler_ports_b291a4[64];
 extern HANDLE unknown_server_error_event_b264f8;
 extern HANDLE unknown_server_list_event_b264fc;
 extern wchar_t unknown_server_error_b2a8ec[];
-struct WolUnknownIdentifier { unsigned int unknown_00; void Initialize_005b9e80(); };
-extern WolUnknownIdentifier unknown_identifier_a71b18;
+
 
 class WolChannelArray {
 public:

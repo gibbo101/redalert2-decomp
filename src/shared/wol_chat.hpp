@@ -127,4 +127,6 @@ struct __declspec(novtable) IChat : public IUnknown {
 };
 }
 
+struct WolUnknownIdentifier { unsigned int unknown_00; void Initialize_005b9e80(); };
+extern WolUnknownIdentifier unknown_identifier_a71b18;
 #endif
