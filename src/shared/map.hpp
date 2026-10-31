@@ -261,6 +261,10 @@ public:
     void Internal_Damage_High_Bridge_EW_TopLeft(Cell const &cell, int dir);      // 0x00554850
     void Internal_Damage_High_Bridge_NS_BottomLeft(Cell const &cell, int dir);   // 0x005550A0
     void Internal_Damage_High_Bridge_NS_TopRight(Cell const &cell, int dir);     // 0x005551B0
+    void Internal_Destroy_High_Bridge_EW_BottomRight(Cell const &cell, int dir); // 0x00554960
+    void Internal_Destroy_High_Bridge_EW_TopLeft(Cell const &cell, int dir);     // 0x00554D00
+    void Internal_Destroy_High_Bridge_NS_BottomLeft(Cell const &cell, int dir);  // 0x005552C0
+    void Internal_Destroy_High_Bridge_NS_TopRight(Cell const &cell, int dir);    // 0x00555690
     // Springs the triggers of the cells of a destroyed bridge span (0x00558340; TibSun name).
     void Spring_Bridge_Destruction_Triggers(Cell start, Cell end);   // 0x00558340
     // The span of a destroyed low bridge through a cell, north/south and east/west (TibSun names).
@@ -291,6 +295,14 @@ public:
     void Destroy_Low_Bridge2_NS(Cell const &cell);              // 0x00558010
     void Destroy_Low_Bridge_Span(Cell const &cell);             // 0x00556BF0 (TibSun Repair_Low_Bridge_Span shape)
     void Destroy_Low_Bridge2_Span(Cell const &cell);            // 0x00556E30 (the same for the second low bridge set)
+    // Rebuild the low bridge span through a cell (TibSun Repair_Low_Bridge_Span / _EW / _NS; names a
+    // hypothesis): the span end next to the cell, then the EW (0x005615A0) or NS (0x00561A80) repair.
+    void Repair_Low_Bridge_Span(Cell const &cell);              // 0x00561100
+    void Repair_Low_Bridge2_Span(Cell const &cell);             // 0x00561340 (the same for the second low bridge set)
+    void Repair_Low_Bridge_EW(Cell const &cell);                // 0x005615A0
+    void Repair_Low_Bridge_NS(Cell const &cell);                // 0x00561A80
+    void Repair_Low_Bridge2_EW(Cell const &cell);               // 0x00561F60
+    void Repair_Low_Bridge2_NS(Cell const &cell);               // 0x00562450
     bool Check_Map();                                           // 0x00569B60 (TibSun Check_Map: a debug zone-table check to MapCheck.txt)
     bool Rebuild_Cliffs_At(Cell const &cell);                   // 0x00567AE0
     // The map generator's shore passes (TibSun Prune_Water, Get_Water_Mask; names are hypotheses).
