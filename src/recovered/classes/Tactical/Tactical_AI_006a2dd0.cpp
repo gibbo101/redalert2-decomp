@@ -11,11 +11,11 @@
 #include "shared/unknown_globals.hpp"
 // @ref ?Unknown_006A8C80@Tactical@@QAE_NPAUPoint2D@@@Z=006a8c80
 // @ref ?Unknown_006A9170@Tactical@@QAEXXZ=006a9170
-// @ref ?Unknown_00722140@@YI?AUPoint2D@@ABU1@0M@Z=00722140
+// @ref ?Lerp@@YI?AUPoint2D@@ABU1@0M@Z=00722140
 // @ref ?unknown_abe540@@3UPoint2D@@A=00abe540/00abe544
 
 extern Point2D unknown_abe540;    // 0x00ABE540 (the header static unknown_geometry_l, read as a point)
-Point2D __fastcall Unknown_00722140(Point2D const &b, Point2D const &a, float amount);
+Point2D __fastcall Lerp(Point2D const &from, Point2D const &to, float t);
 
 void Tactical::AI()
 {
@@ -29,7 +29,7 @@ void Tactical::AI()
             if (unknown_dc > 1.0) {
                 unknown_dc = 1.0f;
             }
-            Point2D pos = Unknown_00722140(unknown_c8, unknown_d0, unknown_dc);
+            Point2D pos = Lerp(unknown_c8, unknown_d0, unknown_dc);
             if (unknown_dc >= 1.0) {
                 unknown_d0 = Point2D(0, 0);
                 unknown_c8 = Point2D(0, 0);

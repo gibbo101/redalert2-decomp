@@ -1,8 +1,8 @@
-// Point2D __fastcall Unknown_00722140(Point2D const &b, Point2D const &a, float amount) (0x00722140)
-// The two-dimensional version of Unknown_007220C0; returns the point by value (the caller passes the result in ECX).
+// Point2D __fastcall Lerp(Point2D const &from, Point2D const &to, float t) (0x00722140)
+// The screen point a fraction t of the way from from to to (TibSun Lerp).
 #include "shared/wave.hpp"
 
-Point2D __fastcall Unknown_00722140(Point2D const &b, Point2D const &a, float amount)
+Point2D __fastcall Lerp(Point2D const &from, Point2D const &to, float t)
 {
-    return Point2D((int)(a.X * amount + b.X * (1.0 - amount)), (int)(a.Y * amount + b.Y * (1.0 - amount)));
+    return Point2D((int)(to.X * t + from.X * (1.0 - t)), (int)(to.Y * t + from.Y * (1.0 - t)));
 }

@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "cc47676e77fab69a690bd1df8d2e06b537f76c76bd45eeb67959bccb097fe3a2",
-    "historical_acceptance_sha256": "0dd4e0f935a832e9269144c626874b8e1689f2cc781b57da712af2cdc615b93d"
+    "historical_population_sha256": "049cd10f88145d0a99ea066c9c6d4ca1d0b13d33ba842607d71bfe5f35542d50",
+    "historical_acceptance_sha256": "c0048c38cc0c86a09073eb2a9251133cf64170a11b5500d741352c11187ed99f"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -16212,8 +16212,8 @@
     "?Unknown_0060A5C0@@YIHABUPoint2D@@@Z": 6333888,
     "?unknown_func_721cc0@WaveClass@@QAEXXZ": 7478464,
     "?unknown_func_722040@WaveClass@@QAEXABVCell@@@Z": 7479360,
-    "?Unknown_007220C0@@YIPAUCoordStruct@@PAU1@ABU1@1M@Z": 7479488,
-    "?Unknown_00722140@@YI?AUPoint2D@@ABU1@0M@Z": 7479616,
+    "?Lerp@@YI?AUCoordStruct@@ABU1@0M@Z": 7479488,
+    "?Lerp@@YI?AUPoint2D@@ABU1@0M@Z": 7479616,
     "?unknown_slot53@WaveClass@@UAE_NPBUCoordStruct@@H@Z": 7480336,
     "?unknown_slot67@WaveClass@@UAEXHH@Z": 7480624,
     "?Unknown_005683C0@MapClass@@QAE_NABUCoordStruct@@@Z": 5669824,

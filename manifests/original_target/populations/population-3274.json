@@ -4,8 +4,8 @@
     "id": "population-3274",
     "inventory_sha256": "e7ce5b130f55f6e28cbd24c27679bd3c0c702b7f1702c533e80444b76b69fe35",
     "gaps_sha256": "c1a029f71b906fb6dbd5a4dcf98d319c2e915bd2b47e58f7d34fb9dec8d4fc76",
-    "historical_population_sha256": "f7520387dba2c0a96a01fd92da5b8d5d00f64bce81d77cb0f5ea673196b10600",
-    "historical_acceptance_sha256": "1c2a538df61bcc3a26a2c9c65bff6a5aa7211c7c338403de87a163fd22b71253"
+    "historical_population_sha256": "ba437ba05c1a810b15502d9d8904dd945f8ead35184d04d048e2b1753e4293a1",
+    "historical_acceptance_sha256": "a6ac50a425e0c2f0ec8dd207001c9b11fd6ddd31085acf449709cb0b509c3d67"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1583,8 +1583,8 @@
     "?unknown_func_721cc0@WaveClass@@QAEXXZ": 7478464,
     "?Wave_Direction_00721db0@@": 7478704,
     "?unknown_func_722040@WaveClass@@QAEXABVCell@@@Z": 7479360,
-    "?Unknown_007220C0@@YIPAUCoordStruct@@PAU1@ABU1@1M@Z": 7479488,
-    "?Unknown_00722140@@YI?AUPoint2D@@ABU1@0M@Z": 7479616,
+    "?Lerp@@YI?AUCoordStruct@@ABU1@0M@Z": 7479488,
+    "?Lerp@@YI?AUPoint2D@@ABU1@0M@Z": 7479616,
     "?Detach@WaveClass@@": 7479696,
     "?GetClassID@WaveClass@@": 7480224,
     "?Size_Of@WaveClass@@": 7480288,
@@ -9305,7 +9305,13 @@
     "?unknown_quarter_mask_852fd2@@3GA": 8728530,
     "?unknown_half_mask_852fd0@@3GA": 8728528,
     "?Create_Primary@DSurface@@SIPAV1@PAPAV1@@Z": 4892256,
-    "?AllowStretchBlits_852fd6@@3_NA": 8728534
+    "?AllowStretchBlits_852fd6@@3_NA": 8728534,
+    "??0RadioClass@@QAE@XZ": 6514736,
+    "?Clear@?$VectorClass@PBVBuildingTypeClass@@@@UAEXXZ": 5206272,
+    "?AI@StripClass@SidebarClass@@QAE_NAAHABUPoint2D@@@Z": 6811728,
+    "?Unknown_006F8A00@@YIXPAVBuildingClass@@@Z": 7309824,
+    "?Insert@WideString@@QAE_NPBGI@Z": 7800000,
+    "?unknown_slot251@TechnoClass@@UAEXABUPoint2D@@0ABVRect@@@Z": 7165200
   },
   "regions": [
     {
@@ -10685,8 +10691,8 @@
     {
       "entry": 7479488,
       "method": "007220c0",
-      "symbol": "?Unknown_007220C0@@YIPAUCoordStruct@@PAU1@ABU1@1M@Z",
-      "symbol_prefix": "?Unknown_007220C0@@YIPAUCoordStruct@@PAU1@ABU1@1M@Z",
+      "symbol": "?Lerp@@YI?AUCoordStruct@@ABU1@0M@Z",
+      "symbol_prefix": "?Lerp@@YI?AUCoordStruct@@ABU1@0M@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -10732,7 +10738,7 @@
           "resolved": 380922
         }
       ],
-      "source_sha256": "ac87e2f79c2ada6faa4d683cb1727fa9c8b5ab91b83672f51aaea2980afd21aa",
+      "source_sha256": "d10a560c1e3364ecfb2b4dae5eda28783dc4782c02c97bb8875c0a3701d5a86b",
       "source": "src/recovered/classes/WaveClass/WaveClass_Lerp_Coord_007220c0.cpp",
       "population": "population-3274",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -10743,8 +10749,8 @@
     {
       "entry": 7479616,
       "method": "00722140",
-      "symbol": "?Unknown_00722140@@YI?AUPoint2D@@ABU1@0M@Z",
-      "symbol_prefix": "?Unknown_00722140@@YI?AUPoint2D@@ABU1@0M@Z",
+      "symbol": "?Lerp@@YI?AUPoint2D@@ABU1@0M@Z",
+      "symbol_prefix": "?Lerp@@YI?AUPoint2D@@ABU1@0M@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -10782,7 +10788,7 @@
           "resolved": 380820
         }
       ],
-      "source_sha256": "c21db2a8ca189c42085052944f2d4ef815a756fd4d871560f448bfdb1d05145e",
+      "source_sha256": "003033a8d6a98106d21fc0df2571c5b00ab13570b62777c6c9a7166ce5a8679b",
       "source": "src/recovered/classes/WaveClass/WaveClass_Lerp_Point_00722140.cpp",
       "population": "population-3274",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",

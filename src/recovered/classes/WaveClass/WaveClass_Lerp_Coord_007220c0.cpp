@@ -1,9 +1,8 @@
-// CoordStruct *__fastcall Unknown_007220C0(CoordStruct *result, CoordStruct const &b, CoordStruct const &a, float amount) (0x007220C0)
-// The point between two coordinates: a * amount + b * (1 - amount), per axis.
+// CoordStruct __fastcall Lerp(CoordStruct const &from, CoordStruct const &to, float t) (0x007220C0)
+// The coordinate a fraction t of the way from from to to (TibSun Lerp).
 #include "shared/wave.hpp"
 
-CoordStruct *__fastcall Unknown_007220C0(CoordStruct *result, CoordStruct const &b, CoordStruct const &a, float amount)
+CoordStruct __fastcall Lerp(CoordStruct const &from, CoordStruct const &to, float t)
 {
-    *result = CoordStruct((int)(a.X * amount + b.X * (1.0 - amount)), (int)(a.Y * amount + b.Y * (1.0 - amount)), (int)(a.Z * amount + b.Z * (1.0 - amount)));
-    return result;
+    return CoordStruct((int)(to.X * t + from.X * (1.0 - t)), (int)(to.Y * t + from.Y * (1.0 - t)), (int)(to.Z * t + from.Z * (1.0 - t)));
 }

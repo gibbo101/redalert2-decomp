@@ -4,8 +4,8 @@
     "id": "population-3278",
     "inventory_sha256": "1102150f4c7120c03d349193e9981018aee0fb8b1ae5bb0ae0ee67e6a1349758",
     "gaps_sha256": "027ecd723c375295cbb201ed62fd9b6168299707ce2b751391120f4b1fd98d55",
-    "historical_population_sha256": "5af6b59dcbe3b6e5479b37eded731c498ddd7ae9bd504ca049829f97633ef493",
-    "historical_acceptance_sha256": "4f75f9327b83286ddf0293c0e63a8c2df12bc88d25b8eda78d75e173bc346620"
+    "historical_population_sha256": "e07909c256c22df671049c02c146ff8bb6389e82a56ac08cc62e495fbe60e820",
+    "historical_acceptance_sha256": "0daa3822032be891560d2f1d7423a8e47a8a2257701d2cf7a95ebcff92657dd5"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -17898,8 +17898,8 @@
     "?Unknown_0060A5C0@@YIHABUPoint2D@@@Z": 6333888,
     "?unknown_func_721cc0@WaveClass@@QAEXXZ": 7478464,
     "?unknown_func_722040@WaveClass@@QAEXABVCell@@@Z": 7479360,
-    "?Unknown_007220C0@@YIPAUCoordStruct@@PAU1@ABU1@1M@Z": 7479488,
-    "?Unknown_00722140@@YI?AUPoint2D@@ABU1@0M@Z": 7479616,
+    "?Lerp@@YI?AUCoordStruct@@ABU1@0M@Z": 7479488,
+    "?Lerp@@YI?AUPoint2D@@ABU1@0M@Z": 7479616,
     "?unknown_slot67@WaveClass@@UAEXHH@Z": 7480624,
     "?unknown_func_722cb0@WaveClass@@QAEXHH@Z": 7482544,
     "?unknown_func_7225b0@WaveClass@@QAEXHH@Z": 7480752,
