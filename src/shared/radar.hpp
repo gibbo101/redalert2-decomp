@@ -52,6 +52,8 @@ class TechnoClass;
 class HouseClass;
 struct RadarTrackingStruct {
     RadarTrackingStruct() : unknown_00(0), unknown_04(0, 0) {}
+    // Member-wise copy (TibSun's form): the bucket vector's Fetch 0x00634C10 copies keys through it.
+    RadarTrackingStruct(RadarTrackingStruct const &that) : unknown_00(that.unknown_00), unknown_04(that.unknown_04) {}
     TechnoClass *unknown_00;                            // +0x00 the object tracked
     Point2D unknown_04;                                 // +0x04 its radar point
 };
@@ -128,22 +130,14 @@ bool Speech_Is_Playing();                               // 0x00715E20 (as shared
 // The movies queued for the radar (0x00AF8FD8; mode 3 plays the first; shared/movie.hpp).
 #include "shared/movie_queue.hpp"
 
-// Values at RadarClass +0x1238 (a buffer and two values) and +0x1244 (four), cleared by their
-// constructors (meaning not recovered).
+// Values at RadarClass +0x1238: the background colour buffer and the radar cell grid size
+// (TibSun BackgroundColors, RadarCellWidth/Height), cleared by its constructor.
 struct UnknownRadar1238 {
     UnknownRadar1238() : unknown_00(0), unknown_04(0), unknown_08(0) {}
     UnknownRadar1238(NoInitClass const &noinit) {}
     RGBClass *unknown_00;                               // the background colours, two per cell (deleted by 0x00631E40)
     int unknown_04;
     int unknown_08;
-};
-struct UnknownRadar1244 {
-    UnknownRadar1244() : unknown_00(0), unknown_04(0), unknown_08(0), unknown_0c(0) {}
-    UnknownRadar1244(NoInitClass const &noinit) {}
-    int unknown_00;
-    int unknown_04;
-    int unknown_08;
-    int unknown_0c;
 };
 
 // unknown_int_a3d548 (0x00A3D548): shared/unknown_globals.hpp.
@@ -185,7 +179,7 @@ public:
     RadarClass();                                       // 0x0062EDE0
     // Restore-in-place form: the display restored, the radar's lists rebuilt
     // empty (inlined into SidebarClass(NoInitClass const &) 0x0067B7B0).
-    RadarClass(NoInitClass const &noinit) : DisplayClass(noinit), unknown_1238(noinit), unknown_1244(noinit), unknown_14fc(0)
+    RadarClass(NoInitClass const &noinit) : DisplayClass(noinit), unknown_1238(noinit), unknown_14fc(0)
     {
         unknown_14bc.Unknown_00405BF0();
     }
@@ -241,11 +235,15 @@ public:
     // Fills the background colours (+0x1238) of the cells inside an area of the
     // radar's cell grid (0x00631250; TibSun's Fill_In_Background).
     void Unknown_00631250(Rect const &cell_rect, Rect const &update_rect);
+    // Recolours the background of the cells waiting at +0x1220 and keeps the
+    // radar area they changed (+0x1244) (0x00631600; TibSun's Plot_Radar_Background).
+    void Unknown_00631600();
     void Unknown_006328F0(Cell const &cell);      // 0x006328F0 marks the radar pixels of a cell for redraw
     void Unknown_00632700();                            // 0x00632700 builds the 22 dot shapes (+0x1274)
-    // The cell under a radar pixel, or under the object tracked at that pixel
-    // (also returned through found) (0x00632AA0).
-    Cell Unknown_00632AA0(Point2D const &pixel, TechnoClass **found);
+    // The object tracked at a radar pixel (0 if none) and the cell under it:
+    // the object's cell, or the cell under the pixel (0x00632AA0; TibSun's
+    // Resolve_Radar_Point).
+    void Unknown_00632AA0(Point2D const &pixel, Cell &cell, TechnoClass *&found);
     void Unknown_00631C80();
     bool Unknown_006331A0();                            // 0x006331A0 (TechnoClass slot 55: the radar is up)
     bool Unknown_00633130();                            // 0x00633130 returns +0x14D4 (the radar is on)
@@ -291,7 +289,7 @@ public:
     // Forgets the cells waiting for a radar redraw (inline in Read_Scenario_INI).
     void Clear_Redraw_Cells() { unknown_1220.Clear(); }
     UnknownRadar1238 unknown_1238;                      // +0x1238 (three values)
-    UnknownRadar1244 unknown_1244;                      // +0x1244 (four values)
+    Rect unknown_1244;                                  // +0x1244 the radar cells the last background update changed (TibSun CellRedrawRect)
     HashTableClass<RadarTrackingStruct, TechnoClass *> *unknown_1254;  // +0x1254 tracking table
     DynamicVectorClass<Point2D> unknown_1258;           // +0x1258 (growth step 500)
     unsigned char *unknown_1270;                        // +0x1270 a buffer (deleted by 0x00631E40)
