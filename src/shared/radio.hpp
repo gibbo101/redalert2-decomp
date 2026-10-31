@@ -1,7 +1,7 @@
 // RadioClass: MissionClass with radio contact (Radio.cpp, 0x00636640-
 // 0x0063702F; RTTI vtables 0x007A88E8 primary (153 slots), 0x007A88CC/
-// 0x007A88C4/0x007A88BC). Layout (constructor 0x00636830): +0xBC three
-// words (a CoordStruct; cleared), +0xC8 VectorClass<TechnoClass *> RadioLinks (1 entry).
+// 0x007A88C4/0x007A88BC). Layout (constructor 0x00636830): +0xBC Old, the
+// last three messages (TibSun Old; cleared), +0xC8 VectorClass<TechnoClass *> RadioLinks (1 entry).
 // Slot 151 (0x00636A50) sends a radio message; names are hypotheses.
 #ifndef RA2_SHARED_RADIO_HPP
 #define RA2_SHARED_RADIO_HPP
@@ -46,7 +46,7 @@ public:
     TechnoClass *Contact(int index) const;                      // 0x00636E10
     TechnoClass *Contact2(int index) const;                     // 0x00636E20 (identical copy)
 
-    CoordStruct unknown_bc;                 // +0xBC (cleared by the constructor)
+    int Old[3];                             // +0xBC the last three messages received, newest first (TibSun Old)
     VectorClass<TechnoClass *> RadioLinks;  // +0xC8
 };
 

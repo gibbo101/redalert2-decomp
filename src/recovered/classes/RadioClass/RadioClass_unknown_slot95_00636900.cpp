@@ -1,6 +1,6 @@
 // int RadioClass::unknown_slot95(RadioClass *radio, int message, long &param) (0x00636900, slot 95)
-// Receives a radio message: remembers the last three message kinds in the
-// +0xBC words; message 3 hangs up a contact and message 2 accepts one (0xA
+// Receives a radio message: remembers the last three message kinds in
+// Old; message 3 hangs up a contact and message 2 accepts one (0xA
 // when the other house is no ally or no link is free); anything else is
 // ObjectClass's.
 #include "shared/radio.hpp"
@@ -10,10 +10,10 @@
 
 int RadioClass::unknown_slot95(RadioClass *radio, int message, long &param)
 {
-    if (message != unknown_bc.X) {
-        unknown_bc.Z = unknown_bc.Y;
-        unknown_bc.Y = unknown_bc.X;
-        unknown_bc.X = message;
+    if (message != Old[0]) {
+        Old[2] = Old[1];
+        Old[1] = Old[0];
+        Old[0] = message;
     }
     if (message == 3) {
         for (int index = 0; index < RadioLinks.Length(); index++) {
