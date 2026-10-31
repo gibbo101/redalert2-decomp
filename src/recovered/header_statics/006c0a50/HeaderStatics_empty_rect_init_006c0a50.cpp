@@ -35,3 +35,7 @@
 // @ref _unknown_geometry_sixty=007acaa0
 
 #include "shared/building_type_class.hpp"
+
+#include "shared/cell.hpp"
+#include "shared/building_class.hpp"
+#include "shared/foot.hpp"
