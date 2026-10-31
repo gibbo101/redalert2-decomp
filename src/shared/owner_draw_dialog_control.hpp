@@ -136,6 +136,10 @@ public:
     int unknown_10;
     bool Fixed_Size; // +0x14 never resized when set
     unsigned int (__fastcall *Hash)(HWND const &key); // +0x18
+    int unknown_1c;
+    double Min_Load; // +0x20 shrink at or below this load
+    double Max_Load; // +0x28 grow at or above this load
+    unsigned int Min_Size; // +0x30 shrunk only while the bucket count is above this
     // 0x00601C30 when not inlined.
     unsigned int Bucket_Index(HWND const &key) const {
         unsigned int hash = Hash(key);
@@ -153,6 +157,10 @@ public:
     bool Get(HWND const &key, WNDPROC *&value) const;
     // Doubles the bucket count and rehashes every node (0x00601B90).
     void Resize();
+    // Halves the bucket count and rehashes every node (inline, defined beside Remove in ownrdraw.cpp).
+    void Shrink();
+    // Removes key, passing its window procedure back in value; true when it was there (0x00601950).
+    bool Remove(HWND const &key, WNDPROC &value);
 };
 extern UnknownWindowProcIndex unknown_window_procs_a73688;
 // The text of an edit control as wide text without line breaks (a trailing "\r\n" if it had any), and the
