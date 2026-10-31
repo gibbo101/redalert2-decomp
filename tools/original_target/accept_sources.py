@@ -298,24 +298,54 @@ def contradicted_vtables(stated, audit):
     return notes
 
 
-def with_headers(text, seen=None):
-    """Source text plus the shared headers it includes (inline code calls too)."""
+def header_parts(text, seen=None):
+    """Source text followed by each shared header it includes (recursively, once
+    each), as separate parts so bind() can cache the per-header work across
+    the rows of one plan. with_headers() is their join."""
     seen = set() if seen is None else seen
     parts = [text]
     for name in re.findall(r'#\s*include\s+"([^"]+)"', text):
         path = REPOSITORY / 'src' / name
         if name not in seen and path.exists():
             seen.add(name)
-            parts.append(with_headers(path.read_text(), seen))
-    return '\n'.join(parts)
+            parts.extend(header_parts(path.read_text(), seen))
+    return parts
 
 
-def bind(text, known):
+def with_headers(text, seen=None):
+    """Source text plus the shared headers it includes (inline code calls too)."""
+    return '\n'.join(header_parts(text, seen))
+
+
+_PART_CACHE = {}    # part text -> [identifier set, {non-identifier word: found}, text]
+
+
+def _part_entry(text):
+    entry = _PART_CACHE.get(text)
+    if entry is None:
+        entry = _PART_CACHE[text] = [set(re.findall(r'[A-Za-z_]\w*', text)), {}, text]
+    return entry
+
+
+def _part_mentions(entry, word):
+    found = entry[1].get(word)
+    if found is None:
+        found = entry[1][word] = bool(re.search(r'\b%s\b' % re.escape(word), entry[2]))
+    return found
+
+
+def bind(parts, known):
     """Reference map for one source: address-named symbols and @ref comments,
     plus every known name (import slots, original names) the text mentions.
-    The strict audit refuses any relocation left unbound or bound ambiguously."""
+    The strict audit refuses any relocation left unbound or bound ambiguously.
+    `parts` is header_parts(text) (or one joined text); the identifier set
+    and the fallback searches of each header are computed once per run, not
+    once per plan row (a 193-row TechnoClass plan spent ~6 minutes here)."""
+    parts = [parts] if isinstance(parts, str) else list(parts)
+    text = '\n'.join(parts)
     refs = seed_references(text, 0, {})
-    words = set(re.findall(r'[A-Za-z_]\w*', text))     # tokenize once; names are tested by membership
+    entries = [_part_entry(p) for p in parts]
+    words = set().union(*(e[0] for e in entries))      # tokens never span the '\n' joins
     word_matches = {}     # one visibility decision per distinct source spelling
     for name, address in known.items():
         if name in ('??2@YAPAXI@Z', '??3@YAXPAX@Z', '_atexit') or (name.startswith('__') and not name.startswith('__imp__')):
@@ -332,8 +362,8 @@ def bind(text, known):
         if not word:
             continue
         if word not in word_matches:
-            word_matches[word] = (word in words) if re.fullmatch(r'[A-Za-z_]\w*', word) else bool(
-                re.search(r'\b%s\b' % re.escape(word), text))
+            word_matches[word] = (word in words) if re.fullmatch(r'[A-Za-z_]\w*', word) else \
+                any(_part_mentions(e, word) for e in entries)
         if word_matches[word]:
             refs[name] = address
     # VC6 vtables name the vector deleting destructor (??_E), which aliases
@@ -504,7 +534,7 @@ def main():
                 any('/GR' in options for options in plan.get('options') or []) else {}
             candidates.append(dict(entry=entry, method='%08x' % entry, source=str(path), **switch,
                                    source_sha256=sha(path.read_bytes()), symbol_prefix=item['symbol_prefix'],
-                                   references={**bind(with_headers(text), known), **rtti,
+                                   references={**bind(header_parts(text), known), **rtti,
                                                **{k: int(v, 16) for k, v in plan.get('references', {}).items()}},
                                    body_bytes=len(body),
                                    body_sha256=sha(body), region_bytes=len(region), region_sha256=sha(region),

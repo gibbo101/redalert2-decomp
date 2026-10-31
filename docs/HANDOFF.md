@@ -113,7 +113,9 @@ so MPCooperative functions that call a base body need separate units.
    `private/tools/runq.sh private/tools/landing-queue.txt` in the background (untracked, lives in private/tools).
    It fetches missing Windows packets, lands line by line, skips a P line already fully accepted, stops on a dirty
    tree, an H line or the first failure; done lines go to landing-queue.txt.done. Touch a delivery only when the
-   runner stops on it. Packets without landing.txt are queued by hand in the same format. Never run two runners, and
+   runner stops on it. accept_sources.bind() caches per-header work (review-session patch 2026-10-31, ~6 min -> ~25 s per
+   plan; lands with the next round's commit). Next speed-up if needed: batch consecutive P lines into one full build.
+   Packets without landing.txt are queued by hand in the same format. Never run two runners, and
    never wait on another landing with `pgrep -f` from a shell command line (it matches the waiter itself).
 1. Take a delivery: frozen `d/rN/` folder with plans, drafts, header copies,
    base commit. Plans use forward-slash paths and LF endings.

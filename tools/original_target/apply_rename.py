@@ -204,7 +204,7 @@ def bind_changed(catalog, populations, files, config):
     (@ref comments, then known names the text mentions, RTTI under /GR); the
     population's existing (renamed) table keeps precedence."""
     import diff_candidate as diff
-    from accept_sources import bind, rtti_references, with_headers
+    from accept_sources import bind, header_parts, rtti_references, with_headers
     known = diff.known_references(catalog)
     audit = None
     for pid in sorted(populations):
@@ -217,7 +217,7 @@ def bind_changed(catalog, populations, files, config):
             for name, value in diff.SOURCE_REF.findall(text):
                 if table.setdefault(name, int(value, 16)) != int(value, 16):
                     raise SystemExit('%s: @ref %s differs from the accepted binding' % (row['source'], name))
-            for name, value in bind(with_headers(text), known).items():
+            for name, value in bind(header_parts(text), known).items():
                 table.setdefault(name, value)
             if '/GR' in row['options']:
                 if audit is None:

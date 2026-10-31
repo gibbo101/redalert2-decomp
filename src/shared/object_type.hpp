@@ -54,9 +54,11 @@ class UnknownBuffer {
 public:
     // Index nodes are eight bytes: signed key at +0 and an opaque voxel-cache value at +4.
     struct NodeElement {
+        NodeElement() {} // Reference node lifetime: default construction deliberately leaves both fields unset.
         int ID;
         void *Data;
     };
+    bool Increase_Size_006d97c0(int amount); // cache-node capacity growth, original0x006D97C0
     bool Is_Present_0070a350(int const &id) const; // ECX owner, RET4, AL bool; sorts and updates archive.
     bool Is_Archive_Same_0070a3f0(int const &id) const; // ECX owner, RET4, AL bool.
     NodeElement const *Search_For_Node_006d9850(int const &id) const; // ECX owner, RET4; sorts before signed-key binary search.

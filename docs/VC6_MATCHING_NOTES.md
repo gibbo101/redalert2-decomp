@@ -744,3 +744,9 @@ verified on the target.
   Coord_Snap is the UnknownCoord434820 wrapper (out-of-line pair 0x434820 over 0x41B630), which puts the CoordStruct
   ctor one charged level deeper - that, plus TibSun's `pixel = f(coord); pixel -= Point2D(...)`, matches all six
   Tactical Render passes.
+
+## Dead byte spill of an object flag (Cell351, 2026-10-31)
+A spilled byte of an object's bit-0 flag that is tested once and then dead comes from `bool is_x; if (object != 0)
+is_x = object->flag_bit0; if (object != 0 && is_x ...)`, not from register pressure. Seen in Cell 0x471660/0x47BB30,
+TechnoClass Detach 0x6D2D10, 0x6F69F0; still open at 0x477B55, 0x477C87, 0x477EF8, 0x47805B, 0x47842A, 0x49B76B,
+0x62A8A6, 0x62AB79, 0x6D70AF.
