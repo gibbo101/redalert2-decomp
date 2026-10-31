@@ -14,7 +14,7 @@
 // @ref ?ID@?$DynamicVectorClass@VCell@@@@UAEHABVCell@@@Z=0042d120
 // @ref ?ID@?$DynamicVectorClass@VCell@@@@UAEHPBVCell@@@Z=0042cc40
 // @ref ??4?$VectorClass@VCell@@@@QAEAAV0@ABV0@@Z=00663590
-// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@HHHH0H@Z=005502e0
+// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@11110H@Z=005502e0
 #include "shared/id_source.hpp"
 #include "shared/unknown_globals.hpp"
 #include "shared/unknown_player_entry.hpp"

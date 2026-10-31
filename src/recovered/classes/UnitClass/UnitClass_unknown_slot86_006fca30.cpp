@@ -1,5 +1,5 @@
 // @ref ?Unknown_0054E580@MapClass@@QAE_NVCell@@H@Z=0054e580
-// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@HHHH0H@Z=005502e0
+// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@11110H@Z=005502e0
 // @ref ?unknown_47b7e0@CellClass@@QBE_NXZ=0047b7e0
 // int UnitClass::unknown_slot86 (0x006FCA30, slot 86: the damage path; Take_Damage hypothesis).
 // After FootClass's damage, a destroyed unit plays its death frames, sinks (heavy naval

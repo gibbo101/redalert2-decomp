@@ -18,7 +18,7 @@
 #include "shared/rules.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z=004ef600
-// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@HHHH0H@Z=005502e0
+// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@11110H@Z=005502e0
 // @ref _unknown_geometry_k=00ad0488
 // @ref _unknown_geometry_l=00ad04c0
 // @ref _?$S46@?BN@??unknown_6fd930@UnitClass@@QAE_NXZ@4EA=00ad04b8

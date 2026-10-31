@@ -121,7 +121,7 @@ public:
     bool Unknown_00568140(CoordStruct const &coord);                            // 0x00568140
     void Unknown_0054A550(CoordStruct const &coord, int arg2, int arg3, int arg4);   // 0x0054A550
     int Unknown_0054E370(Cell const &cell);                               // 0x0054E370
-    Cell Unknown_005502E0(Cell const &cell, int speed, int zone_index, int zone, bool bridge, Point2D size, int arg8, int arg9, int arg10, int arg11, Cell const &arg12, int arg13);   // 0x005502E0 (size: width and height, by value)
+    Cell Unknown_005502E0(Cell const &cell, int speed, int zone_index, int zone, bool bridge, Point2D size, bool arg8, bool arg9, bool arg10, bool arg11, Cell const &arg12, int arg13);   // 0x005502E0 (size: width and height, by value)
     void Unknown_00552570(Cell const &cell);                              // 0x00552570
     void Unknown_00555A60(Cell const &cell);                              // 0x00555A60
     Cell Unknown_00568ED0(Cell const &cell, Cell const &from);   // 0x00568ED0

@@ -11,7 +11,7 @@
 #include "shared/rules.hpp"
 // @ref ?unknown_coord_a6e3e0@@3UCoordStruct@@A=00a6e3e0
 // @ref ?unknown_a40774@@3HA=00a40774
-// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@HHHH0H@Z=005502e0
+// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@11110H@Z=005502e0
 
 void __stdcall JumpjetLocomotionClass::Stop_Moving()
 {

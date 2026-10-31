@@ -5,7 +5,7 @@
 // cell (0x004F6A80). Nothing happens when no cell is found.
 #include "shared/techno.hpp"
 #include "shared/map_view.hpp"
-// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@HHHH0H@Z=005502e0
+// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@11110H@Z=005502e0
 
 void HouseClass::unknown_func_4f3c50(SuperClass *super)
 {

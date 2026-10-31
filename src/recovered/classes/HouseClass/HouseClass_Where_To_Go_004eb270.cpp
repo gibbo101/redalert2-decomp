@@ -9,7 +9,7 @@
 #include "shared/map_view.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
 // @ref ?Random_Cell_In_Zone@HouseClass@@QAE?AVCell@@H@Z=004eca50
-// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@HHHH0H@Z=005502e0
+// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@11110H@Z=005502e0
 
 inline Cell Coord_Cell_Value(CoordStruct coord)
 {

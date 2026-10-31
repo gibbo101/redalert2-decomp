@@ -11,7 +11,7 @@
 #include "shared/coord_distance.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
-// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@HHHH0H@Z=005502e0
+// @ref ?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@11110H@Z=005502e0
 
 // The distance between two coordinates (as shared/coord_distance.hpp's
 // Coord_Distance, with the last two squares summed first).

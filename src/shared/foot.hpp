@@ -215,6 +215,7 @@ public:
     Cell unknown_4c8af0(Cell const &cell);          // 0x004C8AF0 (returns its argument; TeamClass callers)
     void unknown_4ca1a0();                                      // 0x004CA1A0 (never called: a drop pod locomotor carries the old one)
     void unknown_4c8c90();                                      // 0x004C8C90 (clears the vector at +0x49C)
+    void unknown_4cab90();                                     // 0x004CAB90 (draws the action line; no stack arguments)
     double unknown_4cafb0() const;                              // 0x004CAFB0
     Cell unknown_4cca40(Cell const &cell, bool arg2); // 0x004CCA40 (the cell to head for; arg2 passed on to slot 27)
     Cell unknown_4cc100(int radius);                      // 0x004CC100 (nearest cell passing 0x004CC260, by rings)

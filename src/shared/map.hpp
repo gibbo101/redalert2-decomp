@@ -237,7 +237,7 @@ public:
     // hypothesis: Westwood's Nearby_Location; FootClass 0x004CCA40). `size` is
     // a Point2D by value (width, height): callers build it in a register pair,
     // the second a copy of the first (UnitClass slot 87 0x007072D0).
-    Cell Unknown_005502E0(Cell const &cell, int speed, int zone_index, int zone, bool bridge, Point2D size, int arg8, int arg9, int arg10, int arg11, Cell const &arg12, int arg13);
+    Cell Unknown_005502E0(Cell const &cell, int speed, int zone_index, int zone, bool bridge, Point2D size, bool arg8, bool arg9, bool arg10, bool arg11, Cell const &arg12, int arg13);
     void Unknown_00552570(Cell const &cell);      // 0x00552570 (repairs the bridge at a cell; InfantryClass slot 93)
     void Unknown_00555A60(Cell const &cell);      // 0x00555A60 (the other bridge kind)
     // A bridge end cell's damaged state, spread over the cells of its tile (TibSun name).
