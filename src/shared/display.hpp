@@ -55,6 +55,8 @@ double __cdecl unknown_sqrt_4ba410(double value);
 
 // The tactical area: X, Y, width, height (0x00839630; as shared/tool_tip.hpp).
 extern Rect unknown_rect_839630;
+// The cursor position display toggle (0x00A416BC; CursorPositionCommandClass 0x0051D990 flips it).
+extern bool unknown_show_cursor_position_a416bc;
 // A copy of the view rectangle (0x0085291C; set by slot 42).
 extern Rect unknown_rect_85291c;
 
@@ -115,6 +117,7 @@ public:
     void Unknown_0049E110(bool skip_buildings, bool arg2);   // 0x0049E110 (slot 70 over the technos of layer 2)
     void Unknown_0049E000(bool skip_buildings, bool arg2);    // 0x0049E000 (slots 263/236 over every techno)
     void Unknown_0049DE00(bool skip_buildings, bool arg2);    // 0x0049DE00 (over every techno; MapClass 0x00559F10)
+    void Constrained_Look(CoordStruct const &center, int distance);   // 0x0049E1D0 (TibSun Constrained_Look)
     // Whether a building type may be placed for the player at a cell: false
     // only when one of its foundation cells (by Width and Foundation_Height)
     // is a 0x00568140 cell and the type's +0xBF0 is clear (0x00499390).

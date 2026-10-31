@@ -67,6 +67,8 @@ public:
     unsigned int unknown_140;       // +0x140 flags (bit 1: mapped, bit 0 set when layer 1 is fully shrouded)
     Cell Fetch_CellID() const { return MapCoords; }    // the cell's own coordinates as a value (inline; TibSun name)
     void unknown_47a340(class AbstractClass *target);  // 0x0047A340 forgets a target (as shared/cell.hpp)
+    unsigned short const *unknown_47a200() const;   // 0x0047A200 the tiberium's UI name (as shared/cell.hpp; wchar_t is not declared here)
+    bool unknown_47c2e0(int house) const;       // 0x0047C2E0 (unknown_7c[house] > 0; TibSun Is_Sensed; DisplayClass slot 33)
     int unknown_4706c0(Point2D const &point) const;       // 0x004706C0 (height at a lepton position in the cell; as shared/cell.hpp)
     CellClass &Adjacent_Cell(unsigned facing);  // 0x00476AC0 (as shared/cell.hpp)
     void Set_unknown_3c(class TagClass *tag);         // 0x0047A460 (as shared/cell.hpp)
