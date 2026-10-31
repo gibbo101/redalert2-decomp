@@ -17,7 +17,7 @@
 // @ref ?Unknown_004DD7D0@@YAXXZ=004dd7d0
 // @ref ?Unknown_00634A00@@YIXPAVMouseClass@@@Z=00634a00
 // @ref ?Unknown_0063B090@@YIXPAVUnknownIDSource@@@Z=0063b090
-// @ref ?Unknown_005DA360@@YIXPAVOptionsClass@@@Z=005da360
+// @ref ?Unknown_005DA360@OptionsClass@@QAEXXZ=005da360
 // @ref ?Unknown_00672DE0@@YIXPAUUnknownSessionState@@@Z=00672de0
 // @ref ?Unknown_0073C230@@YAXXZ=0073c230
 // @ref ?OK_Cancel_Message_005A7430@@YIHPBG@Z=005a7430
@@ -39,7 +39,6 @@ extern bool unknown_flag_00866250;      // 0x00866250 set by the game options di
 void Unknown_004DD7D0();                                        // 0x004DD7D0 (a dialog)
 void __fastcall Unknown_00634A00(MouseClass *map);              // 0x00634A00 (a dialog)
 void __fastcall Unknown_0063B090(UnknownIDSource *scenario);    // 0x0063B090
-void __fastcall Unknown_005DA360(OptionsClass *options);        // 0x005DA360 (a dialog)
 void __fastcall Unknown_00672DE0(UnknownSessionState *session); // 0x00672DE0
 void Unknown_0073C230();                                        // 0x0073C230 (a dialog)
 // An OK/Cancel message box (MPLayer.CPP); nonzero on OK (0x005A7430).
@@ -96,7 +95,7 @@ void __fastcall Special_Dialog_00481850()
             unknown_int_a40d48 = 5;
             break;
         case 4:
-            Unknown_005DA360(&Options);
+            Options.Unknown_005DA360();
             unknown_int_a40d48 = 5;
             break;
         case 3:

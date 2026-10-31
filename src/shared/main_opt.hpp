@@ -20,7 +20,6 @@ int __stdcall Main_Options_Proc(HWND window, UINT message, WPARAM wparam, LPARAM
 int __stdcall Confirm_Mode_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);   // 0x00543C40
 int __stdcall Main_Options_Proc2(HWND window, UINT message, WPARAM wparam, LPARAM lparam);   // 0x00542D60
 
-void __fastcall Unknown_005DA360(OptionsClass *options);                                 // 0x005DA360 (a dialog)
 void __fastcall Unknown_0066F3A0(UnknownSessionState *session);                          // 0x0066F3A0 (Read_MultiPlayer_Settings)
 
 bool __fastcall Test_Display_Mode(int width, int height);                                // 0x00543A70
