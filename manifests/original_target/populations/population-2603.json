@@ -4,8 +4,8 @@
     "id": "population-2603",
     "inventory_sha256": "23b2d9164780256774f50d76995f2db1648e6c100c12359c33082082c26a4840",
     "gaps_sha256": "05a3200114caf6b160fcf12c799bc1b4b2c0b15f9cb52bbe2cac39fd79510c2f",
-    "historical_population_sha256": "987030f8e7810000427112dfbad84084ba379da61b039ba44ce07f57f0ccb95a",
-    "historical_acceptance_sha256": "b6019f54029c823fe638cb0dd4ac9d0cea906939a1eff701e3689836b0b60f8e"
+    "historical_population_sha256": "271960f40beb498098d48a9706fd815b85a2c10c18c5512462058129c1d74e58",
+    "historical_acceptance_sha256": "b98547ff3de15d995206ac28353f0c3e299f8361f04cbd1a34472377c957efe0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2307,7 +2307,7 @@
     "?FUN_00759df0@": 7708144,
     "?FUN_0078387f@": 7878783,
     "?FUN_007646b0@": 7751344,
-    "?FUN_00765960@": 7756128,
+    "?OnInsiderStatus@CChatEventSink@@": 7756128,
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
     "?AddRef@AbstractClass@@UAGKXZ": 4260000,
     "?Release@AbstractClass@@UAGKXZ": 4260016,
@@ -5560,7 +5560,7 @@
     "?get@Leaf_75272b@@QAEXXZ": 7677739,
     "?get@Leaf_765930@@QAEIIII@Z": 7756080,
     "?get@Leaf_765940@@QAEIIII@Z": 7756096,
-    "?get@Leaf_765950@@QAEIIII@Z": 7756112,
+    "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
     "?get@Leaf_765aa0@@QAEIXZ": 7756448,
     "?target@Call_765aa0_0@@QAEIXZ": 6295744,
     "?target@Call_765aa0_1@@QAEIXZ": 7788816,

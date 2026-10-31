@@ -12,7 +12,7 @@
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 178 | 59,242 | 178 | 0x00438A60–0x004D3450 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 207 | 50,152 | 204 | 0x0041B370–0x006D9750 |
-| (discovery: address-named) | 1439 | 43,597 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1437 | 43,587 | 17 | 0x004010A0–0x00797198 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 110 | 37,716 | 110 | 0x005DE880–0x00601F70 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 117 | 37,481 | 113 | 0x0041B470–0x004CDE10 |
@@ -24,7 +24,7 @@
 | [netshare](../src/recovered/netshare/) | 80 | 21,975 | 80 | 0x005C2BA0–0x005CD540 |
 | [classes/TechnoTypeClass](../src/recovered/classes/TechnoTypeClass/) | 31 | 20,880 | 31 | 0x004D4310–0x006DF7A0 |
 | [VQA32](../src/recovered/VQA32/) | 72 | 20,708 | 72 | 0x00776380–0x0077D470 |
-| [classes/CChatEventSink](../src/recovered/classes/CChatEventSink/) | 36 | 19,534 | 35 | 0x0075DFE0–0x00765B90 |
+| [classes/CChatEventSink](../src/recovered/classes/CChatEventSink/) | 38 | 19,544 | 37 | 0x0075DFE0–0x00765B90 |
 | [classes/INIClass](../src/recovered/classes/INIClass/) | 87 | 18,496 | 87 | 0x0050B8D0–0x0051AD50 |
 | [classes/CellClass](../src/recovered/classes/CellClass/) | 103 | 16,663 | 99 | 0x00470680–0x0047CFC0 |
 | [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 24 | 16,076 | 24 | 0x005771B0–0x0058A9C0 |

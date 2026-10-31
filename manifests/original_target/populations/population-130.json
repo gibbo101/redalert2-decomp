@@ -4,8 +4,8 @@
     "id": "population-130",
     "inventory_sha256": "11605ca7bd7a86cd6779f3df89ebb87136fa2eb6d722fa5d4283f703f27df88a",
     "gaps_sha256": "173cd90943a9cc60add2a2f81535f16c248e658fc9dc2cd583b8c89c664be23b",
-    "historical_population_sha256": "7b544a08825aadfd2df3d50ee3b4701a8db99fb030dc8ef49f19db66b7394287",
-    "historical_acceptance_sha256": "89dfab9569eee8bafb06723e64cf22f8e0a238cfc992d92ec7fbb0dd64327e20"
+    "historical_population_sha256": "0029aa0e8b3dced50c34a437f36e3726658599a126c4d61f4e9ccc1f2b5c4298",
+    "historical_acceptance_sha256": "b3a705d5c8c79203521aec13a91e8e467fbbfd7c3e4b6e351449e2a8bd91c009"
   },
   "references": {
     "_DAT_00839980": 8624512,
@@ -53,7 +53,7 @@
     "?FUN_00759df0@": 7708144,
     "?FUN_0078387f@": 7878783,
     "?FUN_007646b0@": 7751344,
-    "?FUN_00765960@": 7756128
+    "?OnInsiderStatus@CChatEventSink@@": 7756128
   },
   "regions": [
     {

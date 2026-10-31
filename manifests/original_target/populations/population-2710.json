@@ -4,8 +4,8 @@
     "id": "population-2710",
     "inventory_sha256": "f8ef961bf7b0693179d081767111dfa06d47b5f94189e7adac7bfe08391131e4",
     "gaps_sha256": "60c1bb11ecba31ce915a4ed1a6e0a4767c21e03d17d6c218d20464bfe63e241e",
-    "historical_population_sha256": "8d7af2f1f11cdeecbaea237a0b200f07c9946a7dab4dcfa69937bb613b3645d6",
-    "historical_acceptance_sha256": "0ef7b59e2f4182d7e5312d078584088730438f1bfba703562f5d7fc0a3788e8c"
+    "historical_population_sha256": "b75860718e5ba1596918d954616f56622bd4896875a02c5dd98fd7dddf398c50",
+    "historical_acceptance_sha256": "68bc9468828b0cef54a0d82f3a7ee60eec844c5eb8870009402689bc22e12b8d"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2953,7 +2953,7 @@
     "?FUN_00759df0@": 7708144,
     "?FUN_0078387f@": 7878783,
     "?FUN_007646b0@": 7751344,
-    "?FUN_00765960@": 7756128,
+    "?OnInsiderStatus@CChatEventSink@@": 7756128,
     "_vtable_40bad0": 7972828,
     "_release_buffer_40bad0": 7871803,
     "_release_object_40bad0": 7871803,

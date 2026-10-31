@@ -1,3 +1,6 @@
+// @ref ?OnServerTime@CChatEventSink@@UAGJJJ@Z=00765950
+// @ref ?OnInsiderStatus@CChatEventSink@@UAGJJPAUUser@WOL@@@Z=00765960
+// @ref ?OnSetLocalIP@CChatEventSink@@UAGJJPBD@Z=00765970
 // Wonline requires full lobby container implementations before their first inclusion.
 #include "shared/lobby.hpp"
 // Header-static dynamic initializers of the unit at 0x0073A6F0:  the
