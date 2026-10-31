@@ -133,7 +133,7 @@ bool Speech_Is_Playing();                               // 0x00715E20 (as shared
 struct UnknownRadar1238 {
     UnknownRadar1238() : unknown_00(0), unknown_04(0), unknown_08(0) {}
     UnknownRadar1238(NoInitClass const &noinit) {}
-    unsigned char *unknown_00;                          // a buffer (deleted by 0x00631E40)
+    RGBClass *unknown_00;                               // the background colours, two per cell (deleted by 0x00631E40)
     int unknown_04;
     int unknown_08;
 };
@@ -238,6 +238,9 @@ public:
     void Unknown_00631D40();                            // 0x00631D40 rebuilds the tracking table and refits the radar
     void Unknown_00630A00();                            // 0x00630A00 rebuilds the radar surfaces
     Rect Unknown_00630B70(Rect const &area, Rect const &clip, bool flag);   // 0x00630B70 builds the radar image (+0x121C)
+    // Fills the background colours (+0x1238) of the cells inside an area of the
+    // radar's cell grid (0x00631250; TibSun's Fill_In_Background).
+    void Unknown_00631250(Rect const &cell_rect, Rect const &update_rect);
     void Unknown_006328F0(Cell const &cell);      // 0x006328F0 marks the radar pixels of a cell for redraw
     void Unknown_00632700();                            // 0x00632700 builds the 22 dot shapes (+0x1274)
     // The cell under a radar pixel, or under the object tracked at that pixel

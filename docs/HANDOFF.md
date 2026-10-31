@@ -10,7 +10,7 @@ Earlier owner periods are in [history/](history/).
 The Claude owner stopped at 94% weekly usage; the user switches the app to a second Claude account and integration
 resumes from this file. State at the switch:
 - Mac lanes: none running (results in "Pass 6 notes" below and OPEN_MISSES bottom entries). Do not start lanes until
-  the queue below is landed (user, via review session).
+  the queue below is landed (user, via review session); then run two Mac lanes (user, 2026-10-30 night, new Ultra account).
 - Landing queue: `private/tools/landing-queue.txt` (8 rounds: Radar334 r2, codex3 r195 (combined plan with r194's
   row), codex2 r2771-r2774, codex3 r196 rename, codex1 r380 rename). Run
   `private/tools/runq.sh private/tools/landing-queue.txt` in the background (Integration loop step 0). Radar334 r1
