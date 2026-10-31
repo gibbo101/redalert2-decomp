@@ -5,7 +5,7 @@
 
 int BuildingClass::unknown_slot254(int arg1)
 {
-    if ((unknown_d8 & 2) == 2) {
+    if ((FlashCount & 2) == 2) {
         if (arg1 > 1500) {
             return arg1 - 500;
         }

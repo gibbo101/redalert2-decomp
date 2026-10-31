@@ -84,7 +84,7 @@ scatter_done:
     if (unknown_slot29() != 2) {
         unknown_slot71(2);
     }
-    if (unknown_57d && AnimationStage.unknown_10 == 0) {
+    if (unknown_57d && StageClass::Rate == 0) {
         unknown_57d = false;
         if (unknown_5090d0()) {
             unknown_slot311(28, false, false);

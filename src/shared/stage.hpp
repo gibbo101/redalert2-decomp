@@ -57,7 +57,8 @@ public:
 
     void Set_Rate(int rate)
     {
-        StageTimer = rate;
+        CDTimerClass<FrameTimerClass> reset(rate);
+        static_cast<CDTimerClass<FrameTimerClass> &>(StageTimer) = reset;
         Rate = rate;
     }
 
@@ -69,6 +70,18 @@ public:
         Stage=(int)((unsigned int)Stage+(unsigned int)Step);
         StageTimer=Rate;
         return true;
+    }
+
+    // Original stage advance operation, used through TechnoClass's actual StageClass base.
+    bool Graphic_Logic()
+    {
+        if (Ready_For_Advance()) {
+            Stage = (int)((unsigned int)Stage + (unsigned int)Step);
+            CDTimerClass<FrameTimerClass> reset(Rate);
+            static_cast<CDTimerClass<FrameTimerClass> &>(StageTimer) = reset;
+            return true;
+        }
+        return false;
     }
 
     int Stage;                                  // +0x00

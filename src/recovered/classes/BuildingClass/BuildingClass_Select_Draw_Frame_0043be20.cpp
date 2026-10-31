@@ -7,7 +7,7 @@
 int BuildingClass::unknown_43be20()
 {
     BuildingTypeClass *type=Type;
-    unsigned int frame=(unsigned int)AnimationStage.Value;
+    unsigned int frame=(unsigned int)StageClass::Stage;
     if(type->LaserFence) return unknown_4ec;
     if(type->FirestormWall) return unknown_4f0;
     if(unknown_42c==0) {

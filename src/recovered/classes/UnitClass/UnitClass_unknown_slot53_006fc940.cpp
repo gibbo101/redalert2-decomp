@@ -17,14 +17,14 @@ bool UnitClass::unknown_slot53(CoordStruct const *coord, int dir)
             unknown_1b8 = 2;
         }
         if (!Type->SmallVisceroid && !Type->LargeVisceroid) {
-            AnimationStage.Value = 0;
-            AnimationStage.Timer = CDTimerClass<FrameTimerClass>(0);
-            AnimationStage.unknown_10 = 0;
+            StageClass::Stage = 0;
+            static_cast<CDTimerClass<FrameTimerClass> &>(StageClass::StageTimer) = CDTimerClass<FrameTimerClass>(0);
+            StageClass::Rate = 0;
             return true;
         }
-        AnimationStage.Value = unknown_id_source_a3d290->Random()(0, 29);
-        AnimationStage.Timer = CDTimerClass<FrameTimerClass>(1);
-        AnimationStage.unknown_10 = 1;
+        StageClass::Stage = unknown_id_source_a3d290->Random()(0, 29);
+        static_cast<CDTimerClass<FrameTimerClass> &>(StageClass::StageTimer) = CDTimerClass<FrameTimerClass>(1);
+        StageClass::Rate = 1;
         return true;
     }
     return false;

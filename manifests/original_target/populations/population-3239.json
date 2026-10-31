@@ -4,8 +4,8 @@
     "id": "population-3239",
     "inventory_sha256": "6d6e6e8e2928b6f47c484489407aa2c382b679e01533a2221985bba403234254",
     "gaps_sha256": "a2fe9c485f47a0ea568986ba7ff40f6d4d7157ca205e7e19544a965d73f80d68",
-    "historical_population_sha256": "fdb323da160b71588243a3d9c467fe368d3f75a803d0de786f78e5cecdbb73c4",
-    "historical_acceptance_sha256": "2850d8b96855628b6a1ff9c182fc1a0b35a45f221ae11af586c39c50c97fffc3"
+    "historical_population_sha256": "9c96517fdd2e5af0ef8e73bcbd3789df55f8720eae8b2c63913cb85dd481dbff",
+    "historical_acceptance_sha256": "133a17da6f521ef9b0090fc9231fc03a569b981d95fd1ebff4092183263cdeac"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9884,7 +9884,27 @@
     "?TMission_unknown_6be010@TeamClass@@QAEXABVScriptMissionClass@@_N@Z": 7069712,
     "?TMission_unknown_6be440@TeamClass@@QAEXABVScriptMissionClass@@_N@Z": 7070784,
     "?unknown_4eec70@HouseClass@@QAEXPAV1@@Z": 5172336,
-    "?unknown_level_height_a41130@@3HA": 10752304
+    "?unknown_level_height_a41130@@3HA": 10752304,
+    "__imp__DialogBoxParamA@20": 7971780,
+    "__putws": 7881518,
+    "?Increase_Size_006d97c0@UnknownBuffer@@QAE_NH@Z": 7182272,
+    "?Binary_Search@@YIPAUNodeElement@UnknownBuffer@@PAU12@HABU12@@Z": 7182592,
+    "?unknown_6c6130@TechnoClass@@QAE_NHHPBVCell@@HPAPAVObjectClass@@PAHH@Z": 7102768,
+    "?unknown_6c5570@TechnoClass@@QAE_NHHHPAVObjectClass@@PAHHPBUCoordStruct@@@Z": 7099760,
+    "?unknown_47c2e0@CellClass@@QBE_NH@Z": 4702944,
+    "?Unknown_0042E860@Unknown84E8D0@@QAEPAVUnknownBeacon@@UCoordStruct@@@Z": 4384864,
+    "?unknown_func_4ed2b0@HouseClass@@QAE_NPAVWaypointClass@@PAHPAD@Z": 5165744,
+    "?Fetch@?$VectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UBE?AU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@H@Z": 6507536,
+    "?unknown_6cc020@TechnoClass@@QAEXXZ": 7127072,
+    "?Closest_Free_Spot@CellClass@@QBE?AUCoordStruct@@ABU2@_N1@Z": 4678832,
+    "?unknown_47bb30@CellClass@@QAEXXZ": 4700976,
+    "_?shapes@?1??Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z@4PBUShapeFileStruct@@B": 8719344,
+    "??0RadioClass@@QAE@XZ": 6514736,
+    "?Clear@?$VectorClass@PBVBuildingTypeClass@@@@UAEXXZ": 5206272,
+    "?AI@StripClass@SidebarClass@@QAE_NAAHABUPoint2D@@@Z": 6811728,
+    "?Unknown_006F8A00@@YIXPAVBuildingClass@@@Z": 7309824,
+    "?Insert@WideString@@QAE_NPBGI@Z": 7800000,
+    "__imp__DialogBoxParamA": 7971780
   },
   "regions": [
     {
@@ -14634,7 +14654,7 @@
           "resolved": 10751276
         }
       ],
-      "source_sha256": "6eb7e587658b35eb4c5193a2a66c260e85f2d9d01e3f88301d4ef1bc25bebd0e",
+      "source_sha256": "f98300eb54014aabe4e12d4e9a3673d0e0d627b0fb8c8ce5ee5846ac4b4fe449",
       "source": "src/recovered/classes/AircraftClass/AircraftClass_Place_00414020.cpp",
       "population": "population-3239",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",

@@ -35,8 +35,8 @@ void UnitClass::unknown_6fbc90()
     case 0:
         if (!Type->unknown_ba8) unknown_57d = false;
         if (Type->LargeVisceroid || Type->SmallVisceroid) {
-            AnimationStage.Value = Unit_Attack_Frames_007F8F2C[Dir_To_8(Direction_To(unknown_228))];
-            AnimationStage.Set_Rate(5);
+            StageClass::Stage = Unit_Attack_Frames_007F8F2C[Dir_To_8(Direction_To(unknown_228))];
+            StageClass::Set_Rate(5);
         }
         unknown_slot221(unknown_228, weapon);
         return;

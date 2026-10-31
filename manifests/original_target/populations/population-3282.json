@@ -4,8 +4,8 @@
     "id": "population-3282",
     "inventory_sha256": "504a506dee4aabd6042b6e6e592528f01f5f1cc4b84259dd908ad1fe2af24165",
     "gaps_sha256": "4a1f3431c1f7ea0583b0023184af306cd4b8dae8761afafff6e378ce22ba3f98",
-    "historical_population_sha256": "ff27da88e338583a845432a9d68771affa3e7b07bd8e0237d3e9e4f6548bab9e",
-    "historical_acceptance_sha256": "c7dc6d610223a86ff245fdd9e382eec2558743b29b3c49874bc2a39cb39b099d"
+    "historical_population_sha256": "6da9d30478533154af00d065fa5940930b4dc237fe0e2ee6e62eac947eed7731",
+    "historical_acceptance_sha256": "b3c51203ce180e8c33cc3c36f2d4e0da0f82e2f3b62b62c3012e46ef58b19a0f"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -11355,7 +11355,8 @@
     "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@@Z": 6957168,
     "?unknown_rect_839630@@3VRect@@A": 8623664,
     "?unknown_6cc020@TechnoClass@@QAEXXZ": 7127072,
-    "?unknown_47bb30@CellClass@@QAEXXZ": 4700976
+    "?unknown_47bb30@CellClass@@QAEXXZ": 4700976,
+    "?unknown_slot251@TechnoClass@@UAEXABUPoint2D@@0ABVRect@@@Z": 7165200
   },
   "regions": [
     {
@@ -13229,7 +13230,7 @@
           "resolved": 10706356
         }
       ],
-      "source_sha256": "6bdc403fe2c357285239d84de0300b34dc1e74fb881fa73d8354598e8c490016",
+      "source_sha256": "af53c19d6bdbff4e07c035b5c15669704c4b3128cd16f8dec556589ee49540d3",
       "source": "src/recovered/classes/TechnoClass/TechnoClass_unknown_slot79_006c7440.cpp",
       "population": "population-3282",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -14607,7 +14608,7 @@
       "full_extent_bytes": 64,
       "full_extent_sha256": "70d3a750d1b9fadac443ffd33f3c7389e47043a25bd66d4642d4a1a93ea710c9",
       "relocations": [],
-      "source_sha256": "afcf553400994e43358db3bc8d24411d1f5790e2c714aa8dd4793f9dae9813f5",
+      "source_sha256": "af0c242687eb7d95705eeb2d9322daa38002800f80b7b8b65a270cb1ca3d2120",
       "source": "src/recovered/classes/TechnoClass/TechnoClass_unknown_slot254_006d79d0.cpp",
       "population": "population-3282",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",

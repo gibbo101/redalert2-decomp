@@ -29,7 +29,7 @@ inline AnimTypeClass *InfantryClass::Pick_Dead_Body(bool use_type) const
 }
 void InfantryClass::Advance_Animation_005078b0()
 {
-    if (Sequence == -1 || AnimationStage.Value >= Type->DoControls[Sequence].Count) {
+    if (Sequence == -1 || StageClass::Stage >= Type->DoControls[Sequence].Count) {
         switch (Sequence) {
         case 27:
             unknown_slot311(28, true, false);
@@ -66,7 +66,7 @@ void InfantryClass::Advance_Animation_005078b0()
             unknown_slot311(35, true, false);
             break;
         case 11: case 12: case 13: case 14: case 15:
-            if (AnimationStage.Value >= Type->DoControls[Sequence].Count) {
+            if (StageClass::Stage >= Type->DoControls[Sequence].Count) {
                 if (Type->DeadBodies.Count() > 0) {
                     new AnimClass(Pick_Dead_Body(true),
                         Center_Coord(), 0, 1, 0x600, 0);
@@ -78,7 +78,7 @@ void InfantryClass::Advance_Animation_005078b0()
             }
             break;
         case 20: case 21: case 36:
-            if (AnimationStage.Value >= Type->DoControls[Sequence].Count) {
+            if (StageClass::Stage >= Type->DoControls[Sequence].Count) {
                 unknown_slot60();
             }
             break;

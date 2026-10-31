@@ -7,7 +7,7 @@
 // Layout (constructor 0x006C0CD0, NoInitClass constructor 0x006C1F10,
 // destructor 0x006C20B0, Load 0x006D6850; names are hypotheses unless
 // they follow from the code):
-//   +0x0D8  RadioClass ends; +0x0E0 UnknownStage AnimationStage
+//   +0x0D8 FlasherClass base; +0x0E0 StageClass base (original RTTI)
 //   +0x114  int (the owner's +0x130 when constructed with an owner)
 //   +0x118  UnknownTechnoPair (two cleared words, out-of-line ctor/dtor)
 //   +0x120, +0x128  double 1.0
@@ -36,6 +36,7 @@
 #include "shared/storage_class.hpp"
 #include "shared/sound_play.hpp"
 #include "shared/stage.hpp"
+#include "shared/flasher.hpp"
 #include "shared/techno_type.hpp"
 #include "shared/house.hpp"
 #include "shared/radio.hpp"
@@ -362,7 +363,7 @@ public:
 
 class InfantryTypeClass;
 
-class TechnoClass : public RadioClass {
+class TechnoClass : public RadioClass, public FlasherClass, public StageClass {
 public:
     int Unknown_006C22A0(); // 0x006C22A0 (production time used by factories; hypothesis)
 
@@ -631,9 +632,6 @@ public:
     int unknown_6d5900();                                       // 0x006D5900 (ground strength of the secondary weapon, Verses[4])
     int unknown_6d59d0();                                       // 0x006D59D0 (the same with Verses[0])
 
-    int unknown_d8;                         // +0x0D8
-    bool unknown_dc;                        // +0x0DC
-    UnknownStage AnimationStage;                // +0x0E0 value, countdown, rate and step (through +0x0F7)
     UnknownCargo Cargo;                     // +0x0F8 (count, first object; swizzled)
     int unknown_100;                        // +0x100 (-1)
     int unknown_104;                        // +0x104 (-1)

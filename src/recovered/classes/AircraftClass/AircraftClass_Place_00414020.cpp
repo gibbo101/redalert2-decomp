@@ -23,8 +23,8 @@ bool AircraftClass::unknown_slot53(CoordStruct const *coord, int dir)
             unknown_32c = true;
         if (Cargo.Object) unknown_5b1 = true;
         unknown_2f8.Set_Current(UnknownFacingDir((unsigned short)((unsigned char)dir << 8)));
-        AnimationStage.Set_Rate(1);
-        AnimationStage.Value = 0;
+        StageClass::Set_Rate(1);
+        StageClass::Stage = 0;
         int altitude = Type->Flight_Level();
         if (unknown_slot108() == altitude) unknown_slot306(1.0);
         else unknown_slot306(0.0);

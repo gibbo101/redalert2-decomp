@@ -15,16 +15,16 @@ inline Cell Unit_Adjacent_Cell(Cell cell, int facing)
 void UnitClass::unknown_6fbf40()
 {
     Cell position = unknown_slot104();
-    if (AnimationStage.Value >= 90) {
-        if (AnimationStage.Value % 5 != 4) return;
-        AnimationStage.Value = unknown_id_source_a3d290->Random()(0, 2) * 30;
-        AnimationStage.Set_Rate(1);
+    if (StageClass::Stage >= 90) {
+        if (StageClass::Stage % 5 != 4) return;
+        StageClass::Stage = unknown_id_source_a3d290->Random()(0, 2) * 30;
+        StageClass::Set_Rate(1);
         return;
     }
-    if (AnimationStage.Value % 30 == 29) {
-        AnimationStage.Value = unknown_id_source_a3d290->Random()(0, 2) * 30;
+    if (StageClass::Stage % 30 == 29) {
+        StageClass::Stage = unknown_id_source_a3d290->Random()(0, 2) * 30;
     }
-    AnimationStage.Set_Rate(1);
+    StageClass::Set_Rate(1);
     if (Locomotor.Checked()->Is_Moving()) return;
     if (Type->SmallVisceroid) {
         int direction = 7;

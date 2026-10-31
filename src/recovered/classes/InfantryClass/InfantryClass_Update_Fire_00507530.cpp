@@ -73,7 +73,7 @@ void InfantryClass::Update_Fire_00507530()
     if (unknown_5c3) {
         fire_frame = Type->FireProne;
     }
-    if (unknown_57d && AnimationStage.Value == fire_frame) {
+    if (unknown_57d && StageClass::Stage == fire_frame) {
         weapon = unknown_slot174(unknown_228);
         if (unknown_slot218(unknown_228, weapon, 1) == 0) {
             unknown_slot221(unknown_228, weapon);

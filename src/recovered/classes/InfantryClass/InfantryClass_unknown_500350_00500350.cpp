@@ -27,7 +27,7 @@ int InfantryClass::unknown_500350()
         type = (InfantryTypeClass *)unknown_slot50(true);
     }
     int count = type->DoControls[sequence].Count;
-    int frame = AnimationStage.Value % (count > 1 ? count : 1);
+    int frame = StageClass::Stage % (count > 1 ? count : 1);
     bool is_jumpjet = false;
     if (Type->JumpJet) {
         UnknownComPtr<IPersist, &unknown_uuid_IPersist_7cf208> persist(Locomotor);

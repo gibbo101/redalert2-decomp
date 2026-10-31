@@ -20,8 +20,8 @@ bool UnitClass::unknown_7013a0()
         if (Type->Weeder) {
             cell->unknown_47c040();
             unknown_294.Add_Amount(1.0f, 0);
-            AnimationStage.Value = 0;
-            AnimationStage.Set_Rate(Rules->unknown_1180 * 3);
+            StageClass::Stage = 0;
+            StageClass::Set_Rate(Rules->unknown_1180 * 3);
             goto harvested;
         }
         int resource = cell->Get_Tiberium_Type();
@@ -31,14 +31,14 @@ bool UnitClass::unknown_7013a0()
         int taken = cell->unknown_475db0(available);
         if (taken > 0) {
             unknown_294.Add_Amount((float)taken, resource);
-            AnimationStage.Value = 0;
-            AnimationStage.Set_Rate(Rules->unknown_1180);
+            StageClass::Stage = 0;
+            StageClass::Set_Rate(Rules->unknown_1180);
             goto harvested;
         }
         return false;
     }
-    AnimationStage.Value = 0;
-    AnimationStage.Set_Rate(0);
+    StageClass::Stage = 0;
+    StageClass::Set_Rate(0);
     return false;
 harvested:
     return true;

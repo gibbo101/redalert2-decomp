@@ -49,19 +49,6 @@ inline void Refresh_Building_Frame_0044BD40(BuildingClass *building)
     Apply_Frame_And_Layer_0044BD40(building,value,level);
 }
 // @ref ?Value@?$CDTimerClass@VFrameTimerClass@@@@QBEJXZ=00453eb0
-inline bool Stage_Frame_Due_0044BD40(UnknownStage const &stage)
-{
-    return stage.Timer.Value()==0 && stage.unknown_10!=0;
-}
-inline bool Advance_Stage_Frame_0044BD40(UnknownStage &stage)
-{
-    if(Stage_Frame_Due_0044BD40(stage)) {
-        stage.Value+=stage.unknown_14;
-        stage.Timer=CDTimerClass<FrameTimerClass>(stage.unknown_10);
-        return true;
-    }
-    return false;
-}
 inline int Silo_Storage_Frame_0044BD40(BuildingClass *building)
 {
  int frame=0;
@@ -76,7 +63,7 @@ inline int Silo_Storage_Frame_0044BD40(BuildingClass *building)
 }
 void BuildingClass::Update_Animations_0044BD40()
 {
-    bool advanced=Advance_Stage_Frame_0044BD40(AnimationStage);
+    bool advanced=StageClass::Graphic_Logic();
     bool finished=false;
     Refresh_Building_Frame_0044BD40(this);
     if(Type->UnitRepair && unknown_slot91()!=20 && (unknown_454[8] || unknown_454[11]) && !Type->Naval) {
@@ -129,11 +116,11 @@ void BuildingClass::Update_Animations_0044BD40()
     if(!unknown_slot232() || unknown_slot91()==18 || unknown_slot91()==19) {
         if(advanced) {
             BuildingTriple *state=&Type->AnimFrames[unknown_42c];
-            if(AnimationStage.Value==state->unknown_04-1+state->unknown_00 ||
-               (!unknown_1b0 && Type->UndeploysInto && unknown_slot91()==19 && AnimationStage.Value==23))unknown_5ad=true;
-            if(AnimationStage.Value>=state->unknown_04+state->unknown_00)finished=true;
+            if(StageClass::Stage==state->unknown_04-1+state->unknown_00 ||
+               (!unknown_1b0 && Type->UndeploysInto && unknown_slot91()==19 && StageClass::Stage==23))unknown_5ad=true;
+            if(StageClass::Stage>=state->unknown_04+state->unknown_00)finished=true;
             unknown_75=true;
-        }else if(unknown_42c==-1 || AnimationStage.unknown_10==0)unknown_5ad=true;
+        }else if(unknown_42c==-1 || StageClass::Rate==0)unknown_5ad=true;
     }
     if(unknown_slot203())unknown_75=true;
     if(unknown_slot232() && unknown_slot232() && unknown_454[9]) {
@@ -149,11 +136,11 @@ void BuildingClass::Update_Animations_0044BD40()
     if(finished) {
         BuildingTriple *state=&Type->AnimFrames[unknown_42c];
         if(unknown_42c==0 || unknown_42c==1) {
-            AnimationStage.Set_Rate(Options.Normalize_Delay(state->unknown_08));
+            StageClass::Set_Rate(Options.Normalize_Delay(state->unknown_08));
         }else {
-            AnimationStage.Set_Rate(state->unknown_08);
+            StageClass::Set_Rate(state->unknown_08);
         }
-        AnimationStage.Value=state->unknown_00;
+        StageClass::Stage=state->unknown_00;
         unknown_slot71(2);
     }
 }

@@ -6,6 +6,6 @@
 void TeamClass::unknown_func_6bd990(int value)
 {
     for (FootClass *member = Member; member != 0; member = (FootClass *)member->unknown_4c8) {
-        member->unknown_d8 = value;
+        member->FlashCount = value;
     }
 }

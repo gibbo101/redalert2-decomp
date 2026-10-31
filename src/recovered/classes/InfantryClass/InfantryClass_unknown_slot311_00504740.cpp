@@ -59,17 +59,17 @@ bool InfantryClass::unknown_slot311(int sequence, bool force, bool random_start)
     Sequence = sequence;
     if (Is_Prone_Sequence_005096e0(sequence)) {
         int rate = Options.Normalize_Delay(unknown_do_controls_7a3474[sequence].Rate);
-        AnimationStage.Set_Rate(rate);
+        StageClass::Set_Rate(rate);
     } else {
         int rate = unknown_do_controls_7a3474[sequence].Rate;
-        AnimationStage.Set_Rate(rate);
+        StageClass::Set_Rate(rate);
     }
     if (random_start) {
         int count = Type->DoControls[sequence].Count;
         if (count <= 1) count = 1;
-        AnimationStage.Value = unknown_id_source_a3d290->Random()(0, count - 1);
+        StageClass::Stage = unknown_id_source_a3d290->Random()(0, count - 1);
     } else {
-        AnimationStage.Value = 0;
+        StageClass::Stage = 0;
     }
     if (Strength == 0) {
         unknown_slot291();

@@ -4,8 +4,8 @@
     "id": "population-3209",
     "inventory_sha256": "8c8beb6cf8dcd991965ca9ef38ac0b26a4663191a6935d901c343b2da6e261c2",
     "gaps_sha256": "d821eef92d36b32521b4ed4e4d659838b74b1b308475a2c9f2a57fea05912290",
-    "historical_population_sha256": "3cfeb9b55e0aac510d6439c36f5efa7cd4ab270d7b5f3b17f5048971f389a7a6",
-    "historical_acceptance_sha256": "972942c3713a8b263783b6fb469d62de695a05db2a6246b32e12eceb6d7d8c94"
+    "historical_population_sha256": "cf065927f530b551df426312a8285a2227e62b564e7f2dc49c27a2710d55960a",
+    "historical_acceptance_sha256": "9172a47fb85804d23109ba4fd43099f8eba6f210c0a151d86a888a53880f8fd9"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -11944,7 +11944,23 @@
     "?Fetch@?$VectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UBE?AU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@H@Z": 6507536,
     "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@@Z": 6957168,
     "?unknown_6cc020@TechnoClass@@QAEXXZ": 7127072,
-    "_?pattern@?1??unknown_6cc020@TechnoClass@@QAEXXZ@4PA_NA": 8352020
+    "_?pattern@?1??unknown_6cc020@TechnoClass@@QAEXXZ@4PA_NA": 8352020,
+    "?Closest_Free_Spot@CellClass@@QBE?AUCoordStruct@@ABU2@_N1@Z": 4678832,
+    "?unknown_47bb30@CellClass@@QAEXXZ": 4700976,
+    "_?shapes@?1??Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z@4PBUShapeFileStruct@@B": 8719344,
+    "??0RadioClass@@QAE@XZ": 6514736,
+    "?Clear@?$VectorClass@PBVBuildingTypeClass@@@@UAEXXZ": 5206272,
+    "?AI@StripClass@SidebarClass@@QAE_NAAHABUPoint2D@@@Z": 6811728,
+    "?Unknown_0069D820@SuperClass@@QAE_NXZ": 6936608,
+    "?Unknown_006F8A00@@YIXPAVBuildingClass@@@Z": 7309824,
+    "?Insert@WideString@@QAE_NPBGI@Z": 7800000,
+    "?unknown_478f40@CellClass@@QAEXXZ": 4689728,
+    "?unknown_479ac0@CellClass@@QBEHABUCoordStruct@@@Z": 4692672,
+    "?unknown_47b5e0@CellClass@@QBE_NXZ": 4699616,
+    "?unknown_tileset_a6cb70@@3HA": 10931056,
+    "?unknown_tileset_a52e64@@3HA": 10825316,
+    "?unknown_47bfa0@CellClass@@QAEHH@Z": 4702112,
+    "?unknown_4752b0@CellClass@@QBE?AVRect@@XZ": 4674224
   },
   "regions": [
     {
@@ -16177,7 +16193,7 @@
       "full_extent_bytes": 48,
       "full_extent_sha256": "0f9e46cd00fe6bca27dec6dd74c3a3f61efdf493337fa237c768407ef5899787",
       "relocations": [],
-      "source_sha256": "f1568177c5542df6b70884bdbb2d2c1ed7cafab90e127f5e07f8d77f8437a67b",
+      "source_sha256": "84e0d35a96f4b2c2a264e433e1076b5faf5209a574731ccdab720a240d60c191",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_unknown_slot254_004521b0.cpp",
       "population": "population-3209",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
@@ -20408,7 +20424,7 @@
           "resolved": 8624200
         }
       ],
-      "source_sha256": "529dd207586052d2362b476ff227f045cf0b5f94aab8f6ee5f93e44edd2383d7",
+      "source_sha256": "59ae3dcc0eb3ef9b8875d1f4c5709c9b337dcab3336dec1847dfae8d2b6cc14d",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Select_Draw_Frame_0043be20.cpp",
       "population": "population-3209",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
@@ -21779,7 +21795,7 @@
           "resolved": 10751276
         }
       ],
-      "source_sha256": "9ccbf8316f5bd3c99a07503ccd9be14aff44000e2a64c57575636fd34946a6ad",
+      "source_sha256": "1952f420746fb3482c62d0410d9b72aac73ff0fe4444ae468b17eacf8a920a04",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Change_Animation_State_00443d60.cpp",
       "population": "population-3209",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
@@ -23960,7 +23976,7 @@
           "resolved": 10751276
         }
       ],
-      "source_sha256": "700e75c6877c8573b6a1e3d8ed5182bf3e2d6d0876d76c744b5575c230c07d13",
+      "source_sha256": "64c474e15478165bcb14a0318083c3197b361553a25bcffad7e8f0d1ace1e3a1",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Update_Animations_0044bd40.cpp",
       "population": "population-3209",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",

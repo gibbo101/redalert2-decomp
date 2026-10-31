@@ -30,7 +30,7 @@ void BuildingClass::unknown_443d60(int state)
         int rate=control->unknown_08;
         if(Type->Normalized && state!=0)
             rate=Options.Normalize_Delay(rate);
-        AnimationStage.Set_Rate(rate);
-        AnimationStage.Value=control->unknown_00;
+        StageClass::Set_Rate(rate);
+        StageClass::Stage=control->unknown_00;
     }
 }
