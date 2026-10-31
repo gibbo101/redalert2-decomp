@@ -28,7 +28,7 @@ void MapClass::Set_Bridge_End_State(Cell const &cell, bool damaged, bool recursi
         coord.Z = 0;
         unknown_tactical_83996c->Unknown_006A29D0(coord, point);
         point.Y -= 15 * cellptr->unknown_11b;
-        unknown_tactical_83996c->Unknown_006A3020(Rect(point.X - 128, point.Y - 128, 256, 256), 0);
+        unknown_tactical_83996c->Register_Dirty_Area(Rect(point.X - 128, point.Y - 128, 256, 256), 0);
     }
 
     if (damaged != (bool)((cellptr->unknown_140 >> 13) & 1)) {

@@ -4,8 +4,8 @@
     "id": "population-3163",
     "inventory_sha256": "1167f4f832855c1e13752d9c2c0a85e8eaf3aeee5db36fb6dd526b159ec61816",
     "gaps_sha256": "56868ece74807b05fee8b16375637ae424441ef54065f7557964d818d62e95aa",
-    "historical_population_sha256": "ce3a00efb16a4d452b826b13934256c01b483bf99e9231f52e602f24282d63b7",
-    "historical_acceptance_sha256": "91dac54d1322b3ce8f57d292f6824ab7cdf774bbf750ce0d880590e278547fdd"
+    "historical_population_sha256": "9bd3e9e99a9782c68aae762fb23a804d9bfbd5180d96836ccd7d025eb4930ce8",
+    "historical_acceptance_sha256": "e41d64a576ca20fff055a1b938fb1c69beee44643af9f131f6624bf1f3a0d63f"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3542,7 +3542,7 @@
     "?Init@BuildingTypeClass@@SIXH@Z": 4556288,
     "?AI@FootClass@@UAEXXZ": 5017584,
     "?AI@TechnoClass@@UAEXXZ": 7107776,
-    "?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z": 6959136,
+    "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z": 6959136,
     "?unknown_slot28@AircraftClass@@UAEHPAVObjectClass@@_N@Z": 4289952,
     "?Load@AircraftClass@@UAGJPAUIStream@@@Z": 4303744,
     "?Init@InfantryClass@@UAEXXZ": 5241008,
@@ -8538,7 +8538,9 @@
     "__wcsnicmp": 7958688,
     "?AI@TeamClass@@UAEXXZ": 7043792,
     "__putws": 7881518,
-    "__imp__DialogBoxParamA": 7971780
+    "__imp__DialogBoxParamA": 7971780,
+    "?Draw_Screen_Text@Tactical@@QAEXPBG@Z": 6968416,
+    "?Unknown_0042E860@Unknown84E8D0@@QAEPAVUnknownBeacon@@UCoordStruct@@@Z": 4384864
   },
   "regions": [
     {
@@ -25092,7 +25094,7 @@
         {
           "offset": 265,
           "kind": 20,
-          "symbol": "?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z",
+          "symbol": "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z",
           "target": 6959136,
           "addend": 0,
           "resolved": 1384547
@@ -25162,7 +25164,7 @@
           "resolved": 4294966830
         }
       ],
-      "source_sha256": "c03e324b9bb8a4b4bce9378e00653342fb663f5cc491abc9e04c370c97a408b3",
+      "source_sha256": "b4a4a06760d951b7624009da02f5a77b93ff4cb730345e369d916989142d8dbc",
       "source": "src/recovered/classes/MapClass/MapClass_Set_Bridge_End_State_00550eb0.cpp",
       "population": "population-3163",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
@@ -25239,7 +25241,7 @@
         {
           "offset": 212,
           "kind": 20,
-          "symbol": "?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z",
+          "symbol": "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z",
           "target": 6959136,
           "addend": 0,
           "resolved": 1384104
@@ -25317,7 +25319,7 @@
           "resolved": 4294966890
         }
       ],
-      "source_sha256": "4e78699eb4f9cecb45efc645f26d16631f6908940a9759275828e9944c2ad162",
+      "source_sha256": "ab89d9bf185c5709487ce4ff845887579ce66585b74c1112bcdbf539183552dd",
       "source": "src/recovered/classes/MapClass/MapClass_Set_Bridge_Middle_State_005510a0.cpp",
       "population": "population-3163",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",

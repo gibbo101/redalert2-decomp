@@ -19,7 +19,7 @@ bool Cell::Unknown_00493C80()
             if (type == Rules->unknown_f0 || type == Rules->unknown_f4 || type == Rules->unknown_f8) {
                 Rect rect = Union(cell.unknown_474eb0(), cell.unknown_475100());
                 rect.Y -= unknown_int_839634;
-                unknown_tactical_83996c->Unknown_006A3020(rect, 0);
+                unknown_tactical_83996c->Register_Dirty_Area(rect, 0);
                 cell.OverlayIndex = -1;
                 cell.OverlayData = 0;
                 return true;

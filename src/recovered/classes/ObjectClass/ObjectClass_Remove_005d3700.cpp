@@ -15,7 +15,7 @@ extern bool unknown_flag_a40958;
 // @ref ?Unknown_00405FE0@UnknownAudioController@@QAEXXZ=00405fe0
 // @ref ?Remove@UnknownList832470@@QAEXPAVObjectClass@@@Z=0053e370
 // @ref ?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
-// @ref ?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z=006a3020
+// @ref ?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z=006a3020
 // @ref _unknown_static_rect=00a72ed0
 bool ObjectClass::unknown_slot52()
 {
@@ -41,7 +41,7 @@ bool ObjectClass::unknown_slot52()
         half.Y = shape->Height / 2;
         pixel.X = (int)((unsigned int)pixel.X - (unsigned int)half.X);
         pixel.Y = (int)((unsigned int)pixel.Y - (unsigned int)half.Y);
-        unknown_tactical_83996c->Unknown_006A3020(
+        unknown_tactical_83996c->Register_Dirty_Area(
             Rect(pixel.X, pixel.Y, shape->Width, shape->Height), 1);
     }
     unknown_slot69();

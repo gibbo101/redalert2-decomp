@@ -16,7 +16,7 @@ extern int unknown_a40774;
 // @ref ?Submit@UnknownList832470@@QAE_NPAVObjectClass@@_N@Z=0053e330
 // @ref ?Submit@DisplayClass@@QAEXPAVObjectClass@@@Z=00499a40
 // @ref ?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
-// @ref ?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z=006a3020
+// @ref ?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z=006a3020
 // @ref ??0AlphaShapeClass@@=0041ebe0
 // @ref ??0LineTrail@@=005393e0
 // @ref ?Set_Decrement@LineTrail@@=00539510
@@ -61,7 +61,7 @@ bool ObjectClass::unknown_slot53(CoordStruct const *coord, int direction)
                     pixel.Y = (int)((unsigned int)pixel.Y - (unsigned int)half.Y);
                     new AlphaShapeClass(this, pixel.X, pixel.Y);
                     if (!unknown_a40774) {
-                        unknown_tactical_83996c->Unknown_006A3020(Rect(
+                        unknown_tactical_83996c->Register_Dirty_Area(Rect(
                             (int)((unsigned int)pixel.X - (unsigned int)unknown_tactical_83996c->unknown_b0.X),
                             (int)((unsigned int)pixel.Y - (unsigned int)unknown_tactical_83996c->unknown_b0.Y),
                             shape->Width, shape->Height), 1);

@@ -21,7 +21,7 @@ void MapClass::Set_Bridge_Middle_State(Cell const &cell, int new_tile, int match
         coord.Z = 0;
         unknown_tactical_83996c->Unknown_006A29D0(coord, point);
         point.Y -= 15 * cellptr->unknown_11b;
-        unknown_tactical_83996c->Unknown_006A3020(Rect(point.X - 128, point.Y - 128, 256, 256), 0);
+        unknown_tactical_83996c->Register_Dirty_Area(Rect(point.X - 128, point.Y - 128, 256, 256), 0);
         old_tile = cellptr->IsoTileIndex;
         if (new_tile == old_tile) {
             return;

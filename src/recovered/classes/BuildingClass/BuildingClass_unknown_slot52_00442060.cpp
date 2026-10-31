@@ -29,7 +29,7 @@
 // @ref ?unknown_overlay_types_a35de8@@3V?$DynamicVectorClass@PAVUnknownOverlayType@@@@A=00a35de8
 // @ref ?Width@BuildingTypeClass@@QBEHXZ=00458930
 // @ref ?Foundation_Height@BuildingTypeClass@@QBEH_N@Z=00458940
-// @ref ?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z=006a3020
+// @ref ?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z=006a3020
 // @ref _unknown_tactical_83996c=0083996c
 // @ref ?unknown_func_4eaba0@HouseClass@@QAEXPAVTechnoClass@@@Z=004eaba0
 // @ref ?unknown_func_4e8640@HouseClass@@QAEXXZ=004e8640
@@ -161,7 +161,7 @@ bool BuildingClass::unknown_slot52()
             }
         }
         if (unknown_tactical_83996c != 0) {
-            unknown_tactical_83996c->Unknown_006A3020(unknown_slot73(), 0);
+            unknown_tactical_83996c->Register_Dirty_Area(unknown_slot73(), 0);
         }
         if (unknown_4d4 != 0) {
             ((ObjectClass *)unknown_4d4)->unknown_slot60();

@@ -48,7 +48,7 @@ int TerrainClass::unknown_slot86(int *damage, int distance, WarheadTypeClass *wa
             } else {
                 Start_Crumbling();
             }
-            unknown_tactical_83996c->Unknown_006A3020(unknown_slot73(), 0);
+            unknown_tactical_83996c->Register_Dirty_Area(unknown_slot73(), 0);
             unknown_slot54(true);
             unknown_slot60();
         }

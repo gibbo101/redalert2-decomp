@@ -4,8 +4,8 @@
     "id": "population-3228",
     "inventory_sha256": "6e952f3f86e655976d228a0a25b7f3bef3a32afcc7711f73374a1ea369bfd264",
     "gaps_sha256": "a338b5996d7c0a736228bae3e0e8a8529e781b0a6a62bb2f26fa85f6377e6055",
-    "historical_population_sha256": "7e4196524e9ead3cbee92c7f60a31bf0b89826c9241ebda72a7833008f8e3a7e",
-    "historical_acceptance_sha256": "aced7e2f70ad8fa6d84876a09c3def1151704ab701e4ce7953e05dab0ca05c96"
+    "historical_population_sha256": "a82a6b3b6f3e0866e15d8947a7e0cae703ef49bf7b5f94c27fdaa5257bd0e78b",
+    "historical_acceptance_sha256": "0c5de696b2353d2cefb952beea8119c4458869dacf06c2b104c59e37329cd1d8"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4899,7 +4899,7 @@
     "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,
     "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "?Unknown_006A2CB0@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
-    "?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z": 6959136,
+    "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z": 6959136,
     "?Unknown_006A45A0@Tactical@@QAEXPAVSurface@@_NH@Z": 6964640,
     "?Unknown_006A6A50@UnknownTacticalView@@QAE?AVCell@@ABUCoordStruct@@@Z": 6974032,
     "?Unknown_006A8B70@Tactical@@QAEXHH@Z": 6982512,

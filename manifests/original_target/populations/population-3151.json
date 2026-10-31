@@ -4,8 +4,8 @@
     "id": "population-3151",
     "inventory_sha256": "d865d6edcb7d23ba43e72d50c8706cad7c1819e24b25525ccee656b8a60e5a9d",
     "gaps_sha256": "082f3b93d8cbba8e6191d1f393eb13950be18ff41c7f812f400f5d036fc57497",
-    "historical_population_sha256": "7e8cf7ff062cb1ef2e9887dd9a72f54b41917161e827b9fbbd8a0f107d17eb77",
-    "historical_acceptance_sha256": "cefdc03bc47df44cfbcdfe99d9af146b26f67a1da6cb1d055f82c36069d62a46"
+    "historical_population_sha256": "09cf76d12f708429e6f00c6ed07af2efc566c151c7c24921f26524d2bb3e0fc0",
+    "historical_acceptance_sha256": "61b4a2f0420baa8f2e1dfe503cf8d6f3ba190111096110c108a631cbbf0d6ecb"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7976,7 +7976,7 @@
     "?Unknown_006A66B0@Tactical@@QAEXABUPoint2D@@@Z": 6973104,
     "?Unknown_006AA840@Tactical@@QAEHH@Z": 6989888,
     "?Unknown_006A8B70@Tactical@@QAEXHH@Z": 6982512,
-    "?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z": 6959136,
+    "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z": 6959136,
     "?Unknown_006A29D0@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z": 6957520,
     "?Unknown_006AAD40@Tactical@@QAEXXZ": 6991168,
     "?Cell_Shadow@Tactical@@QAEHABVCell@@_N@Z": 6982976,
@@ -10220,7 +10220,10 @@
     "?unknown_4eec70@HouseClass@@QAEXPAV1@@Z": 5172336,
     "__putws": 7881518,
     "__imp__DialogBoxParamA": 7971780,
-    "??_EPlayerProfile@@UAEPAXI@Z": 7577744
+    "??_EPlayerProfile@@UAEPAXI@Z": 7577744,
+    "?Draw_Screen_Text@Tactical@@QAEXPBG@Z": 6968416,
+    "?Binary_Search@@YIPAUNodeElement@UnknownBuffer@@PAU12@HABU12@@Z": 7182592,
+    "?unknown_47c2e0@CellClass@@QBE_NH@Z": 4702944
   },
   "regions": [
     {
@@ -13302,13 +13305,13 @@
         {
           "offset": 181,
           "kind": 20,
-          "symbol": "?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z",
+          "symbol": "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z",
           "target": 6959136,
           "addend": 0,
           "resolved": 2263687
         }
       ],
-      "source_sha256": "51b1911098cb7db5f1cd9db3fde3241bc4cc82f3fe4e15f049868fbabe75a823",
+      "source_sha256": "0ff7ac3aacb1b419e77af22d168d81b785dfe8dbb73e7f9652eda55c1c45c58d",
       "source": "src/recovered/classes/CellClass/CellClass_unknown_47a4e0_0047a4e0.cpp",
       "population": "population-3151",
       "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",

@@ -116,8 +116,9 @@ public:
     void Unknown_006AA5E0(Point2D const &point);   // 0x006AA5E0 drags the band to a point (DisplayClass slot 47; hypothesis)
     void Unknown_006AA770();                       // 0x006AA770 (DisplayClass slot 35: ends the band selection; hypothesis)
     void Unknown_006AAD40();                       // 0x006AAD40 (Planning.cpp; hypothesis: drops the pending command)
-    // Redraws a screen rectangle (0x006A3020; hypothesis; BuildingClass slot 52).
-    void Unknown_006A3020(Rect rect, int arg2);
+    // Registers a screen area for redraw, merging it with the dirty areas (0x006A3020;
+    // TibSun Register_Dirty_Area; the flag also refreshes the shroud; BuildingClass slot 52).
+    void Register_Dirty_Area(Rect area, bool refresh_shroud);
     // Sets the view rectangle (0x006A65A0; DisplayClass slot 42).
     void Unknown_006A65A0(Rect const &rect);
     void Unknown_006A6640(Point2D const &point);    // 0x006A6640 (sets the view position, clamped)

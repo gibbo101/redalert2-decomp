@@ -41,7 +41,7 @@ bool TActionClass::unknown_func_6b14d0(HouseClass *house, ObjectClass *object, T
         coord.Z = unknown_geometry_j;
         Point2D pixel;
         unknown_tactical_83996c->Unknown_006A29D0(coord, pixel);
-        unknown_tactical_83996c->Unknown_006A3020(Rect(pixel.X - 0x80, pixel.Y - 0x80, 0x100, 0x100), 0);
+        unknown_tactical_83996c->Register_Dirty_Area(Rect(pixel.X - 0x80, pixel.Y - 0x80, 0x100, 0x100), 0);
     }
     return killed;
 }

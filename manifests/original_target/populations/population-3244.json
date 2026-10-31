@@ -4,8 +4,8 @@
     "id": "population-3244",
     "inventory_sha256": "c91d7a5952e55a709b61ce09d399d47b35e5139dcf5a1c9dfa5d11a4e9e96868",
     "gaps_sha256": "c83cc76e79b03e8e155e984c7f6cc8c57415e368d493b3905835d7fb28a5359b",
-    "historical_population_sha256": "59a1421979425038c014777aed4a492ff5b26c63266cd646c47a45e7346b626b",
-    "historical_acceptance_sha256": "19a259236166eb5622f13b88c1e973af24b436f5201a549479c21124d0bef8fa"
+    "historical_population_sha256": "5347f4b5e5b1aa39cce3b9677148c98d64741ad27909d78bda0b338e565f2bb4",
+    "historical_acceptance_sha256": "e4ac44c9a34280fc79dda7e58597e38219a8f746beb2db829cc144fb0c934922"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -5384,7 +5384,7 @@
     "?Voc_Update_At@@YIPAUAudioEvent@@ABUCoordStruct@@PAUAudioEventHandle@@@Z": 7422384,
     "__real@8@3fffc000000000000000": 7984488,
     "?Voc_Static_Add@@YIPAUAudioEvent@@HABUCoordStruct@@I@Z": 7422608,
-    "?Unknown_006A3020@Tactical@@QAEXVRect@@H@Z": 6959136,
+    "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z": 6959136,
     "??0UnknownVector3@@QAE@HHH@Z": 4306480,
     "?Length@UnknownVector3@@QBEHXZ": 4306816,
     "?unknown_slot28@AircraftClass@@UAEHPAVObjectClass@@_N@Z": 4289952,

@@ -15,7 +15,7 @@ void Tactical::Register_Dirty_Buildings(Rect area)
         if (object->Kind_Of() == 6 && object->unknown_75) {
             Rect const &render = object->unknown_slot73();
             if (area.Is_Overlapping(render + Point2D(unknown_rect_839630.X, unknown_rect_839630.Y))) {
-                Unknown_006A3020(render, false);
+                Register_Dirty_Area(render, false);
                 object->unknown_75 = false;
             }
         }

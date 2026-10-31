@@ -40,6 +40,6 @@ FoggedObjectClass::~FoggedObjectClass()
         }
     }
     if (unknown_tactical_83996c != 0) {
-        unknown_tactical_83996c->Unknown_006A3020(Offset_Rect(unknown_40, unknown_tactical_83996c->unknown_b0), 0);
+        unknown_tactical_83996c->Register_Dirty_Area(Offset_Rect(unknown_40, unknown_tactical_83996c->unknown_b0), 0);
     }
 }

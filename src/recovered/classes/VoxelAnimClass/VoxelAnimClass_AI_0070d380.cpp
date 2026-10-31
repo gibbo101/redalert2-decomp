@@ -80,7 +80,7 @@ void VoxelAnimClass::AI()
                             Map.Unknown_00631570(cell.MapCoords);
                         }
                     }
-                    unknown_tactical_83996c->Unknown_006A3020(dirty, 0);
+                    unknown_tactical_83996c->Register_Dirty_Area(dirty, 0);
                 }
             } else if (Class->IsTiberium && !bridge) {
                 CellClass &cell = Map[Bounce.Coord()];

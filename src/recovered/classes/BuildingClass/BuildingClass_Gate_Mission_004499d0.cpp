@@ -26,7 +26,7 @@ int BuildingClass::unknown_slot143()
                         unknown_2a8.unknown_496b70(Type->DeployTime);
                         CoordStruct position = Coord;
                         Voc_Play_At(Rules->GateDown, position, 0);
-                        unknown_tactical_83996c->Unknown_006A3020(unknown_slot73(), 0);
+                        unknown_tactical_83996c->Register_Dirty_Area(unknown_slot73(), 0);
                     }
                 }
                 unknown_a8 = 1;
