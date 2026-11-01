@@ -1,3 +1,4 @@
-extern "C" unsigned char table_53e3d0[]; extern "C" void* __cdecl storage_53e3d0(unsigned int);
-class Storage_53e3d0 { unsigned int table_word; unsigned int* items; unsigned int count; unsigned char valid; unsigned char owns; public: void* get(unsigned int requested,unsigned int* buffer); };
-void* Storage_53e3d0::get(unsigned int requested,unsigned int* buffer) { items=0; count=requested; valid=1; owns=0; table_word=(unsigned int)table_53e3d0; if(requested) { if(buffer) { items=buffer; return this; } items=(unsigned int*)storage_53e3d0(requested << 2); owns=1; } return this; }
+// VectorClass<TeamClass *> constructor (0x0053E3D0)
+// The out-of-line copy of the template constructor (shared/vector_class.hpp) that the local team
+// list of LogicClass::AI (0x0053D890) above calls; no source of its own.
+// @ref ??2@YAPAXI@Z=00782017

@@ -3002,47 +3002,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 5497808,
-      "method": "53e3d0",
-      "symbol": "?get@Storage_53e3d0@@QAEPAXIPAI@Z",
-      "symbol_prefix": "?get@Storage_53e3d0@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 74,
-      "body_sha256": "8953d4eea6a4854652d998e90d7b263dfa51b5c02cf6ce068992f72a6bd6206a",
-      "padding_bytes": 6,
-      "full_extent_bytes": 80,
-      "full_extent_sha256": "ed4e848241bc42e433e00f64f2545381c65057df3d085bfb8bd8a53a4e5646f6",
-      "relocations": [
-        {
-          "offset": 26,
-          "kind": 6,
-          "symbol": "_table_53e3d0",
-          "target": 8004804,
-          "addend": 0,
-          "resolved": 8004804
-        },
-        {
-          "offset": 54,
-          "kind": 20,
-          "symbol": "_storage_53e3d0",
-          "target": 7872535,
-          "addend": 0,
-          "resolved": 2374669
-        }
-      ],
-      "source": "src/recovered/classes/VectorClass_TeamClass_ptr/0053e3d0.cpp",
-      "source_sha256": "7a4956cc5e142e0b23c993d8463c5641d9714e1bdf6d2d6d0699de82c77584a5",
-      "source_order": 3261,
-      "population": "population-22",
-      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 5828448,
       "method": "58ef60",
       "symbol": "?get@Storage_58ef60@@QAEPAXIPAI@Z",

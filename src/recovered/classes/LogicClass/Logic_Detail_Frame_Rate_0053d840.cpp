@@ -1,3 +1,5 @@
+#define VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
+#define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_DELETE_OBJECT
@@ -21,10 +23,27 @@
 #include "shared/voxel_anim.hpp"
 #include "shared/wave.hpp"
 #include "shared/aircraft.hpp"
+#include "shared/saveload_lists.hpp"
+#include "shared/kamikaze_tracker.hpp"
+#include "shared/tiberium.hpp"
+#include "shared/spot_light.hpp"
+#include "shared/laser_draw.hpp"
+#include "shared/lightning_storm.hpp"
+#include "shared/radsite.hpp"
+#include "shared/light_source.hpp"
+#include "shared/empulse_class.hpp"
+#include "shared/alpha_shape.hpp"
+#include "shared/tactical.hpp"
+#include "shared/factory_class_decl.hpp"
+#include "shared/house.hpp"
 
 extern unsigned int unknown_detail_frame_rate_7dfb34;   // 0x007DFB34 (set by 0x0053D820)
 extern unsigned int unknown_detail_buffer_zone_7dfb38;  // 0x007DFB38 (set by 0x0053D830)
 extern bool unknown_detail_reduced_a6eb28;              // 0x00A6EB28
+#define MAX(a, b) (((a) > (b)) ? (a) : (b))
+#define MIN(a, b) (((a) < (b)) ? (a) : (b))
+bool Unknown_0051FC70();                                // 0x0051FC70 (dominator state 2; hypothesis)
+void Unknown_00521A70();                                // 0x00521A70
 
 unsigned int Unknown_0053D840()
 {

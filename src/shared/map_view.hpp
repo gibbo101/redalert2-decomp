@@ -75,6 +75,7 @@ public:
     void Sight_From(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, int arg6, bool arg7, int arg8);   // 0x0054A110
     void Unknown_0054A720(CoordStruct const &coord, int radius);           // 0x0054A720 (TActionClass 0x006B1050: the rules RevealTriggerRadius around a waypoint)
     void Unknown_0055A300();                                              // 0x0055A300
+    void unknown_slot27();                                                // slot 27 0x0054E300 (virtual in shared/map.hpp; Logic calls it directly)
     Cell Unknown_005689D0(Cell const &cell, int arg2);                    // 0x005689D0 (TActionClass 0x006B2860 launches from the cell it returns)
     void Unknown_0055AA50();                                                    // 0x0055AA50 (starts the walk of 0x0055A910)
     CellClass *Unknown_0055A910();                                              // 0x0055A910 (the next cell of the local-map walk, or null)

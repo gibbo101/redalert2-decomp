@@ -16,6 +16,9 @@ public:
 };
 extern LogicClass Logic;                                    // 0x00832470
 
+// The index of the logic tag being processed (0x00A35D44; Westwood's LogicTriggerID).
+extern int LogicTriggerID;
+
 // The frame-rate threshold for the light and particle detail level, with hysteresis: the
 // lower threshold (0x007DFB34) until the frame rate falls under it, then the threshold plus
 // the buffer zone (0x007DFB38) until the rate climbs back over that (0x0053D840).
