@@ -33,8 +33,10 @@ public:
 #ifdef PCX_CACHE_DECLARE_LOADS
     // Declared only in units that define PCX_CACHE_DECLARE_LOADS: any new declaration here renumbers the
     // compiler labels of Refresh_Wonline_Players 0x0073FEE0 (a fragile row) and changes its code.
-    // Loads a .pcx file into the cache (0x0068C600, not yet recovered; argument meanings not recovered).
-    int Load_Image_0068c600(char const *name, int arg2, int arg3);
+    // Loads a .pcx file into the cache under its lower-case name, replacing a cached image of that name
+    // (0x0068C600): arg2 2 converts it to a 16-bit surface, arg2 1 keeps the palette and, with arg3, replaces
+    // each pixel by its palette colour's red value. False when the file cannot be read.
+    bool Load_Image_0068c600(char const *name, int arg2, int arg3);
     // Load_Image_0068c600(name, 1, 1) (0x0068CA20, not yet recovered).
     void Load_Image_0068ca20(char const *name);
 #endif

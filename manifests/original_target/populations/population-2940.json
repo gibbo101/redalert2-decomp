@@ -4,8 +4,8 @@
     "id": "population-2940",
     "inventory_sha256": "a5d62be39a4306562ab9955da8f1738aae4e13fa788f9c4f1d1d5124d6d050be",
     "gaps_sha256": "6cf2d7d21e57e4760c827e29af224173f668e1fbbdbd610cb3fe44611565d353",
-    "historical_population_sha256": "38678630b6eaf76d66d211f3cae5431966d9f69134fada2d4fd13361ad273958",
-    "historical_acceptance_sha256": "dd68cc0fa715db40702b9f27ed10b15c03eb7a7e330bd58d6e076c7bb38e37cc"
+    "historical_population_sha256": "18d8d62ead29127cb93c813b2351f3a814400c3ff3f8fdb0d0301581822aae18",
+    "historical_acceptance_sha256": "3d4d1f5f951fea8338965984f7f658b2177d9b58ec3ced7827d16dbda0b75150"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8825,7 +8825,7 @@
     "__real@4@3ff9c90e560000000000": 8055348,
     "?unknown_slot28@BuildingClass@@UAEHPAVObjectClass@@_N@Z": 4470944,
     "?OnStatusUpdate@CDownloadEventSink@@UAGJH@Z": 7760400,
-    "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z": 6866432,
+    "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z": 6866432,
     "?Load_Image_0068ca20@UnknownBitmapWriter@@QAEXPBD@Z": 6867488,
     "?Draw@RadarEventClass@@QAEXXZ": 6536080,
     "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABUSurfaceRegion@@@Z": 6922704

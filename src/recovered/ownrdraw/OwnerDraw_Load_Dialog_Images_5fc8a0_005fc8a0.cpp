@@ -132,7 +132,7 @@
 // @ref ??_C@_0O@OFHI@guparrowp?4pcx?$AA@=007eb19c
 // @ref ??_C@_0P@FFCB@wolrslknob?4pcx?$AA@=007eb208
 // @ref ?unknown_bitmap_writer_a76378@@3VUnknownBitmapWriter@@A=00a76378
-// @ref ?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z=0068c600
+// @ref ?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z=0068c600
 // @ref ?Load_Image_0068ca20@UnknownBitmapWriter@@QAEXPBD@Z=0068ca20
 // @ref ?unknown_dialog_background_7e8d1c@@3PBDB=007e8d1c
 #define PCX_CACHE_DECLARE_LOADS

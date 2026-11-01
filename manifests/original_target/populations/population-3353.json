@@ -4,8 +4,8 @@
     "id": "population-3353",
     "inventory_sha256": "53ebe2c7616532f7152f650f3d518a892bf4a883ba00b4166abeac9f94f0fbd6",
     "gaps_sha256": "4e582a9109c45a1716db32b83dc3092d2f0dc5ed80df02a4a97f53dbbfed92d0",
-    "historical_population_sha256": "9e23d1459d9ce953567fda71412d36e5271fb4e8ce6ad519f342f7512473d558",
-    "historical_acceptance_sha256": "6ebf90507616e0f0efa4edacb985efe1b552f2248fb21ed3f70c4e81f205dff8",
+    "historical_population_sha256": "a2ab5e761b4084c2db9990ae6e43cb5379b2376e1b74f193f7a9c9ca5ff235a6",
+    "historical_acceptance_sha256": "855b0520fd7e4952204ad7b4f0eb843fe86fd3a39f0a21d01654b9d2e4b36d84",
     "separate_units": true
   },
   "references": {
@@ -865,7 +865,7 @@
     "??_C@_0O@OFHI@guparrowp?4pcx?$AA@": 8303004,
     "??_C@_0P@FFCB@wolrslknob?4pcx?$AA@": 8303112,
     "?unknown_bitmap_writer_a76378@@3VUnknownBitmapWriter@@A": 10969976,
-    "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z": 6866432,
+    "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z": 6866432,
     "?Load_Image_0068ca20@UnknownBitmapWriter@@QAEXPBD@Z": 6867488,
     "?unknown_dialog_background_7e8d1c@@3PBDB": 8293660,
     "??1UnknownNode_00602a60@@QAE@XZ": 4960352,
@@ -4821,7 +4821,32 @@
     "?Get_Image_0068ca40@UnknownBitmapWriter@@QAEPAVSurface@@PBDH@Z": 6867520,
     "?unknown_flag_images_7f86b0@@3PAPBDA": 8357552,
     "?unknown_brighten_palette_68bce0@@YIXPAE@Z": 6864096,
-    "?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z": 6868880
+    "?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
+    "?Get_Value@GaugeClass@@UBEHXZ": 5049472,
+    "?Get_Value@FlagGameOption@WorldDominationTour@@UBEHABV?$rc_ptr@VWDTTerritory@@@@@Z": 7506000,
+    "?Contains@GraphicMenuItem@@UAE_NABUPoint2D@@@Z": 5112256,
+    "?Value@Benchmark@@QBEKXZ": 4387296,
+    "?Hash@SHAEngine@@QAEXPBXJ@Z": 6769808,
+    "?Get_Value@?$ValueGameOption@E@WorldDominationTour@@UBEHABV?$rc_ptr@VWDTTerritory@@@@@Z": 7503376,
+    "?Hash_Name_005c2ba0@@YIIABVWstring@@@Z": 6040480,
+    "?Remove_007675e0@WolChannelNameSet@@QAE_NABVWstring@@PAH@Z": 7763424,
+    "?Shrink_Table@?$WolDictionary@VWstring@@H@@QAEXXZ": 7764048,
+    "?Grow_Table@?$WolDictionary@VWstring@@H@@QAEXXZ": 7764224,
+    "?Shrink_Table@?$WolDictionary@VWideString@@_N@@QAEXXZ": 6085024,
+    "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABUSurfaceRegion@@@Z": 6922704,
+    "??0Surface@@QAE@HH@Z": 4844944,
+    "??_GWstring@@QAEPAXI@Z": 7759808,
+    "?Remove@SuperClass@@QAE_NXZ": 6934336,
+    "__real@8@4004d800000000000000": 8045168,
+    "__real@4@400e8000000000000000": 7980928,
+    "?Value@?$CDTimerClass@VSystemTimerClass@@@@QBEJXZ": 5104128,
+    "?Set@RGBClass@@QAEXABV1@M@Z": 6540784,
+    "__real@8@3ffbaaaaaaaaaaaaa800": 8016520,
+    "?Add@?$DynamicVectorClass@PAVCellClass@@@@QAE_NABQAVCellClass@@@Z": 7489328,
+    "??9Cell@@QBE_NABV0@@Z": 5823312,
+    "?Shrink_Table@?$WolDictionary@VWstring@@UUnknownBitmapEntry@@@@QAEXXZ": 6871024,
+    "_?entry@?1??Get_Image_0068ca40@UnknownBitmapWriter@@QAEPAVSurface@@PBDH@Z@4UUnknownBitmapEntry@@A": 11260136,
+    "__real@8@3fe2c0000000c0000000": 8019920
   },
   "regions": [
     {
@@ -6610,7 +6635,7 @@
         {
           "offset": 16,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 589132
@@ -6634,7 +6659,7 @@
         {
           "offset": 35,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 589113
@@ -6658,7 +6683,7 @@
         {
           "offset": 54,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 589094
@@ -6682,7 +6707,7 @@
         {
           "offset": 73,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 589075
@@ -6706,7 +6731,7 @@
         {
           "offset": 92,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 589056
@@ -6730,7 +6755,7 @@
         {
           "offset": 111,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 589037
@@ -6754,7 +6779,7 @@
         {
           "offset": 130,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 589018
@@ -6778,7 +6803,7 @@
         {
           "offset": 149,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588999
@@ -6802,7 +6827,7 @@
         {
           "offset": 168,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588980
@@ -6826,7 +6851,7 @@
         {
           "offset": 187,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588961
@@ -6850,7 +6875,7 @@
         {
           "offset": 206,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588942
@@ -6874,7 +6899,7 @@
         {
           "offset": 225,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588923
@@ -6898,7 +6923,7 @@
         {
           "offset": 244,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588904
@@ -6922,7 +6947,7 @@
         {
           "offset": 263,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588885
@@ -6946,7 +6971,7 @@
         {
           "offset": 282,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588866
@@ -6970,7 +6995,7 @@
         {
           "offset": 301,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588847
@@ -6994,7 +7019,7 @@
         {
           "offset": 320,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588828
@@ -7018,7 +7043,7 @@
         {
           "offset": 339,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588809
@@ -7042,7 +7067,7 @@
         {
           "offset": 358,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588790
@@ -7066,7 +7091,7 @@
         {
           "offset": 377,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588771
@@ -7090,7 +7115,7 @@
         {
           "offset": 396,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588752
@@ -7114,7 +7139,7 @@
         {
           "offset": 415,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588733
@@ -7138,7 +7163,7 @@
         {
           "offset": 434,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588714
@@ -7162,7 +7187,7 @@
         {
           "offset": 453,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588695
@@ -7186,7 +7211,7 @@
         {
           "offset": 472,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588676
@@ -7210,7 +7235,7 @@
         {
           "offset": 491,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588657
@@ -7234,7 +7259,7 @@
         {
           "offset": 510,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588638
@@ -7258,7 +7283,7 @@
         {
           "offset": 529,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588619
@@ -7282,7 +7307,7 @@
         {
           "offset": 548,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588600
@@ -7306,7 +7331,7 @@
         {
           "offset": 567,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588581
@@ -7330,7 +7355,7 @@
         {
           "offset": 586,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588562
@@ -7354,7 +7379,7 @@
         {
           "offset": 605,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588543
@@ -7402,7 +7427,7 @@
         {
           "offset": 639,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588509
@@ -7426,7 +7451,7 @@
         {
           "offset": 658,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588490
@@ -7450,7 +7475,7 @@
         {
           "offset": 677,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588471
@@ -7474,7 +7499,7 @@
         {
           "offset": 696,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588452
@@ -7498,7 +7523,7 @@
         {
           "offset": 715,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588433
@@ -7522,7 +7547,7 @@
         {
           "offset": 734,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588414
@@ -7546,7 +7571,7 @@
         {
           "offset": 753,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588395
@@ -7570,7 +7595,7 @@
         {
           "offset": 772,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588376
@@ -7594,7 +7619,7 @@
         {
           "offset": 791,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588357
@@ -7618,7 +7643,7 @@
         {
           "offset": 810,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588338
@@ -7642,7 +7667,7 @@
         {
           "offset": 829,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588319
@@ -7666,7 +7691,7 @@
         {
           "offset": 848,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588300
@@ -7690,7 +7715,7 @@
         {
           "offset": 867,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588281
@@ -7714,7 +7739,7 @@
         {
           "offset": 886,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588262
@@ -7738,7 +7763,7 @@
         {
           "offset": 905,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588243
@@ -7762,7 +7787,7 @@
         {
           "offset": 924,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588224
@@ -7786,7 +7811,7 @@
         {
           "offset": 943,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588205
@@ -7810,7 +7835,7 @@
         {
           "offset": 962,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588186
@@ -7834,7 +7859,7 @@
         {
           "offset": 981,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588167
@@ -7858,7 +7883,7 @@
         {
           "offset": 1000,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588148
@@ -7882,7 +7907,7 @@
         {
           "offset": 1019,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588129
@@ -7906,7 +7931,7 @@
         {
           "offset": 1038,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588110
@@ -7930,7 +7955,7 @@
         {
           "offset": 1057,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588091
@@ -7954,7 +7979,7 @@
         {
           "offset": 1076,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588072
@@ -7978,7 +8003,7 @@
         {
           "offset": 1095,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588053
@@ -8002,7 +8027,7 @@
         {
           "offset": 1114,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588034
@@ -8026,7 +8051,7 @@
         {
           "offset": 1133,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 588015
@@ -8050,7 +8075,7 @@
         {
           "offset": 1152,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587996
@@ -8074,7 +8099,7 @@
         {
           "offset": 1171,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587977
@@ -8098,7 +8123,7 @@
         {
           "offset": 1190,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587958
@@ -8122,7 +8147,7 @@
         {
           "offset": 1209,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587939
@@ -8146,7 +8171,7 @@
         {
           "offset": 1228,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587920
@@ -8170,7 +8195,7 @@
         {
           "offset": 1247,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587901
@@ -8194,7 +8219,7 @@
         {
           "offset": 1266,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587882
@@ -8218,7 +8243,7 @@
         {
           "offset": 1285,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587863
@@ -8242,7 +8267,7 @@
         {
           "offset": 1304,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587844
@@ -8266,7 +8291,7 @@
         {
           "offset": 1323,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587825
@@ -8290,7 +8315,7 @@
         {
           "offset": 1342,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587806
@@ -8314,7 +8339,7 @@
         {
           "offset": 1361,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587787
@@ -8338,7 +8363,7 @@
         {
           "offset": 1380,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587768
@@ -8362,7 +8387,7 @@
         {
           "offset": 1399,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587749
@@ -8386,7 +8411,7 @@
         {
           "offset": 1418,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587730
@@ -8410,7 +8435,7 @@
         {
           "offset": 1437,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587711
@@ -8434,7 +8459,7 @@
         {
           "offset": 1456,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587692
@@ -8458,7 +8483,7 @@
         {
           "offset": 1475,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587673
@@ -8482,7 +8507,7 @@
         {
           "offset": 1494,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587654
@@ -8506,7 +8531,7 @@
         {
           "offset": 1513,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587635
@@ -8530,7 +8555,7 @@
         {
           "offset": 1532,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587616
@@ -8554,7 +8579,7 @@
         {
           "offset": 1551,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587597
@@ -8578,7 +8603,7 @@
         {
           "offset": 1570,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587578
@@ -8602,7 +8627,7 @@
         {
           "offset": 1589,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587559
@@ -8626,7 +8651,7 @@
         {
           "offset": 1608,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587540
@@ -8650,7 +8675,7 @@
         {
           "offset": 1627,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587521
@@ -8674,7 +8699,7 @@
         {
           "offset": 1646,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587502
@@ -8698,7 +8723,7 @@
         {
           "offset": 1665,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587483
@@ -8722,7 +8747,7 @@
         {
           "offset": 1684,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587464
@@ -8746,7 +8771,7 @@
         {
           "offset": 1703,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587445
@@ -8770,7 +8795,7 @@
         {
           "offset": 1722,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587426
@@ -8794,7 +8819,7 @@
         {
           "offset": 1741,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587407
@@ -8818,7 +8843,7 @@
         {
           "offset": 1760,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587388
@@ -8842,7 +8867,7 @@
         {
           "offset": 1779,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587369
@@ -8866,7 +8891,7 @@
         {
           "offset": 1798,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587350
@@ -8890,7 +8915,7 @@
         {
           "offset": 1817,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587331
@@ -8914,7 +8939,7 @@
         {
           "offset": 1836,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587312
@@ -8938,7 +8963,7 @@
         {
           "offset": 1855,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587293
@@ -8962,7 +8987,7 @@
         {
           "offset": 1874,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587274
@@ -8986,7 +9011,7 @@
         {
           "offset": 1893,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587255
@@ -9010,7 +9035,7 @@
         {
           "offset": 1912,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587236
@@ -9034,7 +9059,7 @@
         {
           "offset": 1931,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587217
@@ -9058,7 +9083,7 @@
         {
           "offset": 1950,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587198
@@ -9082,7 +9107,7 @@
         {
           "offset": 1969,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587179
@@ -9106,7 +9131,7 @@
         {
           "offset": 1988,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587160
@@ -9130,7 +9155,7 @@
         {
           "offset": 2007,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587141
@@ -9154,7 +9179,7 @@
         {
           "offset": 2026,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587122
@@ -9178,7 +9203,7 @@
         {
           "offset": 2045,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587103
@@ -9202,7 +9227,7 @@
         {
           "offset": 2064,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587084
@@ -9226,7 +9251,7 @@
         {
           "offset": 2083,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587065
@@ -9250,7 +9275,7 @@
         {
           "offset": 2102,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587046
@@ -9274,7 +9299,7 @@
         {
           "offset": 2121,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587027
@@ -9298,7 +9323,7 @@
         {
           "offset": 2140,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 587008
@@ -9322,7 +9347,7 @@
         {
           "offset": 2159,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586989
@@ -9346,7 +9371,7 @@
         {
           "offset": 2178,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586970
@@ -9370,7 +9395,7 @@
         {
           "offset": 2197,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586951
@@ -9394,7 +9419,7 @@
         {
           "offset": 2216,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586932
@@ -9418,7 +9443,7 @@
         {
           "offset": 2235,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586913
@@ -9442,7 +9467,7 @@
         {
           "offset": 2254,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586894
@@ -9466,7 +9491,7 @@
         {
           "offset": 2273,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586875
@@ -9490,7 +9515,7 @@
         {
           "offset": 2292,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586856
@@ -9514,7 +9539,7 @@
         {
           "offset": 2311,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586837
@@ -9538,7 +9563,7 @@
         {
           "offset": 2330,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586818
@@ -9562,7 +9587,7 @@
         {
           "offset": 2349,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586799
@@ -9586,7 +9611,7 @@
         {
           "offset": 2368,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586780
@@ -9610,7 +9635,7 @@
         {
           "offset": 2387,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586761
@@ -9634,7 +9659,7 @@
         {
           "offset": 2406,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586742
@@ -9658,7 +9683,7 @@
         {
           "offset": 2425,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586723
@@ -9682,7 +9707,7 @@
         {
           "offset": 2444,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586704
@@ -9706,7 +9731,7 @@
         {
           "offset": 2463,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586685
@@ -9730,7 +9755,7 @@
         {
           "offset": 2482,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586666
@@ -9754,7 +9779,7 @@
         {
           "offset": 2501,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586647
@@ -9778,7 +9803,7 @@
         {
           "offset": 2520,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586628
@@ -9802,13 +9827,13 @@
         {
           "offset": 2539,
           "kind": 20,
-          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z",
+          "symbol": "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z",
           "target": 6866432,
           "addend": 0,
           "resolved": 586609
         }
       ],
-      "source_sha256": "e9fe16cb3470fe64d196454ba224299011ab24e17a8e51e0b4034112df817f52",
+      "source_sha256": "9dad8999057b8d32b29dc9a832a6c0a45722afffad5243cd10cf5fa3d2ffd2c0",
       "source": "src/recovered/ownrdraw/OwnerDraw_Load_Dialog_Images_5fc8a0_005fc8a0.cpp",
       "population": "population-3353",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

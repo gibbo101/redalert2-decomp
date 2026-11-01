@@ -4,8 +4,8 @@
     "id": "population-3402",
     "inventory_sha256": "0bac317e8f4420b949aa525a7abe4293164e864906130290f4da8a746d9c8d68",
     "gaps_sha256": "0921981290d8c4516998677b92ec60a31127ef1abaca3f8c9860c8161c29064c",
-    "historical_population_sha256": "a1fe4d31965f17cff5912217a9479f52c4b24afe35c46a50978fbbf4c9686563",
-    "historical_acceptance_sha256": "53646ccb2a9377da4a98082167dd43dcdd6e19666cd86323909584f195b1906e"
+    "historical_population_sha256": "7073f77e25abc8b710ef7668d725944c33131c4a59ee2af56e07cbf0ba8824ff",
+    "historical_acceptance_sha256": "c9c810a69ee0b5e49c611419d275b72e8a4e35889dd90102d203424799b79448"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -11421,7 +11421,7 @@
     "?Main_Options_Dialog@@YIXXZ": 5514336,
     "?Discard_WDT_Sound_List_00752890@@YIXVWolStringArray@@@Z": 7678096,
     "?OnStatusUpdate@CDownloadEventSink@@UAGJH@Z": 7760400,
-    "?Load_Image_0068c600@UnknownBitmapWriter@@QAEHPBDHH@Z": 6866432,
+    "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z": 6866432,
     "?Load_Image_0068ca20@UnknownBitmapWriter@@QAEXPBD@Z": 6867488,
     "?Draw@RadarEventClass@@QAEXXZ": 6536080,
     "?Recall_Stored_Login_00742d80@@YI_NABVWstring@@@Z": 7613824,
