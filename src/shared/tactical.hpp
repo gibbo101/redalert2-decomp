@@ -62,6 +62,8 @@ struct TacticalProjection {
 // 10-12, 23) are not declared yet.
 class Tactical : public AbstractClass {
 public:
+    // Ramp index at coord; original006A7110, unusedthis in body.
+    int Get_Cell_Ramp_006a7110(CoordStruct const &coord);
     Tactical();                                     // 0x006A24B0 (Read_Scenario_INI makes a new view)
     Tactical(NoInitClass const &noinit);            // 0x006A26C0
     virtual HRESULT __stdcall GetClassID(GUID *clsid);
