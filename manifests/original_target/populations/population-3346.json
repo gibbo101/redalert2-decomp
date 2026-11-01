@@ -4,8 +4,8 @@
     "id": "population-3346",
     "inventory_sha256": "d5901f71ff90b07a50f81916289826b423d834895c1f00528af8f92ac1c45312",
     "gaps_sha256": "2f90bb638819bd06e17bb9833c98e11746ba717d8f5e3faa534534d14b27b2c4",
-    "historical_population_sha256": "2624d7b3523e1d1c2a3ba7214994060af8b00e7f16bc1e0f0dd6fc3670e81526",
-    "historical_acceptance_sha256": "6e5e30d66552ea3ca5b82e1d641d8eeff8d36404c5e25b426bf2e627059bdc4d"
+    "historical_population_sha256": "ea9e3fac69e4520f3d706b4f3cd3183ec27f86b4ffb79fabe46b9397eb623497",
+    "historical_acceptance_sha256": "5ea1c227bcf9104d2cbf4e231925935c3cb7d0c0322a1d8e362d82a4dc3a8d2b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1792,7 +1792,7 @@
     "?Send_Game_Options_005c3c60": 6044768,
     "?Unknown_005c3d90": 6045072,
     "?Set_Player_Map_State_005c3f00@@YIXPBDH@Z": 6045440,
-    "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAVLobbyNameSet@@@Z": 6054672,
+    "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z": 6054672,
     "?Lobby_Slot_Limit_005c6520@@YAHXZ": 6055200,
     "?Lobby_Slot_Limit_Plus_One_005c6550@@YAHXZ": 6055248,
     "?Scenario_Slot_Limit_005c65a0@@YIHH@Z": 6055328,
@@ -22345,8 +22345,8 @@
     {
       "entry": 6054672,
       "method": "005c6310",
-      "symbol": "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAVLobbyNameSet@@@Z",
-      "symbol_prefix": "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAVLobbyNameSet@@@Z",
+      "symbol": "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z",
+      "symbol_prefix": "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z",
       "options": [
         "/O2",
         "/Ob2",

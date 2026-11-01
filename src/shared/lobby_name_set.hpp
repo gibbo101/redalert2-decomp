@@ -8,10 +8,7 @@
 #include "shared/lobby.hpp"
 #include "shared/wol_dictionary.hpp"
 
-class LobbyNameSet : public WolDictionary<WideString, bool> {
-public:
-    LobbyNameSet() : WolDictionary<WideString, bool>(Hash_Wide_Name_005c2bf0) {}
-};
+typedef WolDictionary<WideString, bool> LobbyNameSet;
 
 // A list row's text as wide characters: wide rows (0x4CF) directly (0x4B6), narrow rows (0x4B7)
 // converted through the caller's narrow buffer. Inline (no out-of-line copy): the list/name-set

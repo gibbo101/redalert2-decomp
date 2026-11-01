@@ -9,8 +9,8 @@ void __fastcall Unknown_005c5ff0(HWND list,LobbyNameSet *selection);
 void __fastcall Restore_List_Selection_005c6310(HWND list,LobbyNameSet *selection);
 WideString __fastcall Locale_Name_0073f1c0(int locale);
 extern "C" int __cdecl tolower(int character);
-// @ref ?Unknown_005c5ff0@@YIXPAUHWND__@@PAVLobbyNameSet@@@Z=005c5ff0
-// @ref ?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAVLobbyNameSet@@@Z=005c6310
+// @ref ?Unknown_005c5ff0@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z=005c5ff0
+// @ref ?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z=005c6310
 // @ref ?Locale_Name_0073f1c0@@YI?AVWideString@@H@Z=0073f1c0
 // @ref _tolower=007841f4
 extern int player_list_colors_007e6d94[];
@@ -44,7 +44,7 @@ void __fastcall Unknown_0073FEE0(int keep_selection,bool full)
     else window=(HWND)Unknown_00735940(0x113);
     HWND list=GetDlgItem(window,0x53e);
     if(!window || !list) return;
-    LobbyNameSet selections;
+    LobbyNameSet selections(Hash_Wide_Name_005c2bf0);
     Unknown_005c5ff0(list,&selections);
     int top=SendDlgItemMessageA(window,0x53e,0x18e,0,0);
     SendDlgItemMessageA(window,0x53e,0x49d,0,1);

@@ -4,8 +4,8 @@
     "id": "population-3453",
     "inventory_sha256": "011a42fa2dd4906cdf53bde73e3307fad2a9a5ec83b313b53f2191ddafd0129c",
     "gaps_sha256": "c2586a236b61f73de493a8008b5d3702620a296183f6186e1752fce1eb0cc4bf",
-    "historical_population_sha256": "9ec2e6cc697c131930f9361c564832ae813d7a0ef065de3ed8fe9079ce0a1a80",
-    "historical_acceptance_sha256": "d997f222b934d1f21e2d072f6401bf13fb34a61619ee679c3f6869da7bce8664"
+    "historical_population_sha256": "bc00d64f773c4dcb41697d3b42201210ef1c8efefa1babcc0415898ef1835141",
+    "historical_acceptance_sha256": "6c7c6e7222672ff84e761d5bb9dba6e6c44cd06dcd3f8b1efd2611d961cf45cf"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -5556,8 +5556,8 @@
     "?game_tournament_label_007fd890@@3PADA": 8378512,
     "?game_password_label_007fd87c@@3PADA": 8378492,
     "?game_ping_label_007fd864@@3PADA": 8378468,
-    "?Unknown_005c5ff0@@YIXPAUHWND__@@PAVLobbyNameSet@@@Z": 6053872,
-    "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAVLobbyNameSet@@@Z": 6054672,
+    "?Unknown_005c5ff0@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z": 6053872,
+    "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z": 6054672,
     "?player_list_colors_007e6d94@@3PAHA": 8285588,
     "?player_list_locale_00b29738@@3PAGA": 11704120,
     "?player_list_w_00839d4c@@3PAGA": 8625484,
@@ -61707,7 +61707,7 @@
         {
           "offset": 270,
           "kind": 20,
-          "symbol": "?Unknown_005c5ff0@@YIXPAUHWND__@@PAVLobbyNameSet@@@Z",
+          "symbol": "?Unknown_005c5ff0@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z",
           "target": 6053872,
           "addend": 0,
           "resolved": 4293419006
@@ -63795,7 +63795,7 @@
         {
           "offset": 4292,
           "kind": 20,
-          "symbol": "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAVLobbyNameSet@@@Z",
+          "symbol": "?Restore_List_Selection_005c6310@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z",
           "target": 6054672,
           "addend": 0,
           "resolved": 4293415784
@@ -64089,7 +64089,7 @@
           "resolved": 7605587
         }
       ],
-      "source_sha256": "8889912633965dbf29fe6e7967062302ed5f53cf97d99ab3273570358ebbc8c6",
+      "source_sha256": "62bccc2f47139e3486a973aa6455a4edb4892dbe190a75b8bf610ff1f6522fe5",
       "switch_data_bytes": 36,
       "source": "src/recovered/unowned/Refresh_Wonline_Players_0073fee0.cpp",
       "population": "population-3453",
