@@ -10,6 +10,7 @@ class BuildingTypeClass;
 class CellClass;
 class UnknownMapGenerator {
 public:
+    bool Grow_Region_00581940(int region,int rings,Rect area,char setHeight,int height);
     void Create_Resource_Patch_005840a0(Cell const &position,int amount,int patchId,bool special);
     void Seed_Hill_Heights_00584730();
     void Init_Regions();
