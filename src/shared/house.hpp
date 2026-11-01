@@ -602,10 +602,8 @@ public:
     bool unknown_5668;                                    // +0x05668 (true)
     bool unknown_5669;                                    // +0x05669 (true)
     bool unknown_566a;                                    // +0x0566A
-    short unknown_566c;                                   // +0x0566C
-    short unknown_566e;                                   // +0x0566E
-    short unknown_5670;                                   // +0x05670
-    short unknown_5672;                                   // +0x05672
+    Cell EMPDest;                                        // +0x0566C, reference-supported target cell
+    Cell NukeDest;                                       // +0x05670, reference-supported target cell
     unsigned int Allies;                                  // +0x05674 one bit per house index
     CDTimerClass<FrameTimerClass> unknown_5678;           // +0x05678
     CDTimerClass<FrameTimerClass> unknown_5684;           // +0x05684
