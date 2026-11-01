@@ -1,3 +1,3 @@
-
-class Leaf_4de240 { public: void get(); };
-void Leaf_4de240::get() { unsigned int ecx = (unsigned int)this; unsigned int eax; unsigned int edx; eax = 0; *(unsigned int*)(0xa40e28) = eax; *(unsigned int*)(0xa40e2c) = eax; *(unsigned int*)(0xa40e30) = eax; *(unsigned int*)(0xa40e34) = eax; }
+// Header-static dynamic initializer of the GraphicMenu unit (0x004DE240, _$E): shape_file.hpp's empty rect
+// (0x00A40E28), emitted through shared/graphic_menu.hpp by the drafts of this plan; no source of its own.
+// @ref _unknown_empty_rect=00a40e28

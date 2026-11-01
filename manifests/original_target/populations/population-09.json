@@ -2433,30 +2433,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 5104192,
-      "method": "4de240",
-      "symbol": "?get@Leaf_4de240@@QAEXXZ",
-      "symbol_prefix": "?get@Leaf_4de240@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 23,
-      "body_sha256": "3418790ab20d4eee094e10277d3eda115e3edc22058f8cf4a06a294ca47657be",
-      "padding_bytes": 9,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "966bd8cd40bf967c4706762b9e08723dbdbf4cede15a5d6a41af08ce31c845b9",
-      "relocations": [],
-      "source": "src/recovered/004de240.cpp",
-      "source_sha256": "9710d26c214c02ff51407ee911755e46f5228c048a07ddfcde95b7cd45906500",
-      "source_order": 2278,
-      "population": "population-09",
-      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 5108256,
       "method": "4df220",
       "symbol": "?get@Leaf_4df220@@QAEIXZ",
