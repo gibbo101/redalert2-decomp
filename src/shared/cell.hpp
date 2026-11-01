@@ -225,7 +225,7 @@ public:
     int Get_Tiberium_Type() const;              // 0x0047A220
     int Get_Tiberium_Value() const;             // 0x0047A230
 
-    void unknown_47cb50();                      // 0x0047CB50 (map call at the cell centre)
+    bool unknown_47cb50();                      // 0x0047CB50 (map call at the cell centre)
     void unknown_47cbb0();                      // 0x0047CBB0
     int unknown_475db0(int amount);             // 0x00475DB0 (takes up to amount of tiberium; answers what it took; hypothesis)
     int unknown_47c040();                       // 0x0047C040
