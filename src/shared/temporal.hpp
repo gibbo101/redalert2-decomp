@@ -37,6 +37,8 @@ public:
     int Get_Warp_Per_Step(int step);                            // 0x006E2470
     void Detach_Techno(TechnoClass *target);                    // 0x006E24C0 (the owner or the target died)
     void Let_Go_Of_Target();                                    // 0x006E2500
+    void Unknown_006E2610();                         // 0x006E2610 clears target warp state
+    void Unknown_006E27B0(TechnoClass *target);           // 0x006E27B0 assigns a warp target
     void Let_Go();                                              // 0x006E2680 (and the helpers chained to it)
     void Just_Let_Go();                                         // 0x006E2710
     bool Can_Warp_Target(TechnoClass *target) const;            // 0x006E2770
