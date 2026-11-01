@@ -168,7 +168,7 @@ public:
     virtual int unknown_slot95(RadioClass *radio, int message, long &param);  // slot 95 0x004C7B30
     virtual void unknown_slot98(int arg1);  // slot 98 0x004C8A40
     virtual void unknown_slot99(int path, char waypoint);  // slot 99 0x004CB060
-    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5);  // slot 101 0x004C86E0
+    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, bool arg5);  // slot 101 0x004C86E0
     virtual int unknown_slot102(UnknownCellClass *from, int facing, int *level, bool *ramp, UnknownCellClass *to);  // slot 102 0x004C8730
     virtual int unknown_slot127();  // slot 127 0x004C41E0
     virtual int unknown_slot128();  // slot 128 0x004C4370

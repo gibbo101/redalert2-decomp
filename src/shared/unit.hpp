@@ -106,7 +106,7 @@ public:
     virtual void unknown_slot87(CoordStruct const &source, bool forced, bool nokidding);        // slot 87 0x007072D0
     virtual void unknown_slot93(int arg1);                            // slot 93 0x006FE610
     virtual int unknown_slot95(RadioClass *radio, int message, long &param);         // slot 95 0x006FC1F0
-    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5);   // slot 101 0x00703040
+    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, bool arg5);   // slot 101 0x00703040
     virtual bool unknown_slot122();                                   // slot 122 0x00707A40
     virtual int unknown_slot126();                                    // slot 126 0x00707F50
     virtual int unknown_slot129();                                    // slot 129 0x00704440

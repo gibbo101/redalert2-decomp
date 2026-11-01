@@ -95,7 +95,7 @@ public:
     virtual int unknown_slot86(int *damage, int distance, WarheadTypeClass *warhead, TechnoClass *source, bool forced, int arg6);   // 0x006E3170
     virtual bool unknown_slot88();                                      // 0x006E3D90
     virtual void unknown_slot89();                                      // 0x006E3E90
-    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5);   // 0x006E3CB0
+    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, bool arg5);   // 0x006E3CB0
 
     static void __fastcall Read_INI(CCINIClass &ini);                   // 0x006E4260 ([Terrain] entries)
     static void __fastcall Write_INI(CCINIClass &ini);                  // 0x006E4380

@@ -276,7 +276,7 @@ public:
     virtual void unknown_slot98(int arg1);                                 // slot 98 (+0x188) 0x5d2d50
     virtual void unknown_slot99(int path, char waypoint);                       // slot 99 (+0x18C) 0x5d53d0
     virtual void unknown_slot100(int facing);                              // slot 100 (+0x190) 0x5d2d60
-    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, int arg5); // slot 101 (+0x194) 0x423e00
+    virtual int unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4, bool arg5); // slot 101 (+0x194) 0x423e00
     virtual int unknown_slot102(UnknownCellClass *from, int facing, int *level, bool *ramp, UnknownCellClass *to); // slot 102 (+0x198) 0x423e10
     virtual void unknown_slot103(CoordStruct const &coord);                // slot 103 (+0x19C) 0x5d51c0
     virtual Cell unknown_slot104() const;                                 // slot 104 (+0x1A0) 0x41b320

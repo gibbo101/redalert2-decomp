@@ -4,8 +4,8 @@
     "id": "population-2442",
     "inventory_sha256": "20801cb0bc9a587c46e9c6a694070cd6ae468a361a23646a0698f942647830ea",
     "gaps_sha256": "d44d07204ad4de05886dccc49ebd9ebb0aef64d97cd0dc55a54ae523059ae63e",
-    "historical_population_sha256": "590c855cfc2328ad5e52c56f4bc53c359c2816bc1d5b75d0dd3f907a9af5eafa",
-    "historical_acceptance_sha256": "28233fb10d38aa396b2d4cbc32c54d4ce558d848055f3c6d51d2569e0a4399c3"
+    "historical_population_sha256": "4285a8a5c15d91c018062b92e92c819b60e0ccf2ef252b35ad7f566295768e99",
+    "historical_acceptance_sha256": "243bb67caf61101340d9a8b52d307a88cff18d14cd00a999d3628067b1f1833c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5478,10 +5478,10 @@
     "?unknown_random_839218@@3VRandom2Class@@A": 8622616,
     "?unknown_rules_839848@@3PAURadSiteRules@@A": 8624200,
     "?unknown_rules_839848@@3PAUUnknownRules839848@@A": 8624200,
-    "?unknown_slot101@AircraftClass@@UAEHPAVCellClass@@HHHH@Z": 4296192,
-    "?unknown_slot101@BuildingClass@@UAEHPAVCellClass@@HHHH@Z": 4477872,
-    "?unknown_slot101@FootClass@@UAEHPAVCellClass@@HHHH@Z": 5015264,
-    "?unknown_slot101@TerrainClass@@UAEHPAVCellClass@@HHHH@Z": 7224496,
+    "?unknown_slot101@AircraftClass@@UAEHPAVCellClass@@HHH_N@Z": 4296192,
+    "?unknown_slot101@BuildingClass@@UAEHPAVCellClass@@HHH_N@Z": 4477872,
+    "?unknown_slot101@FootClass@@UAEHPAVCellClass@@HHH_N@Z": 5015264,
+    "?unknown_slot101@TerrainClass@@UAEHPAVCellClass@@HHH_N@Z": 7224496,
     "?unknown_slot103@FootClass@@UAEXABUCoordStruct@@@Z": 5022048,
     "?unknown_slot103@ObjectClass@@UAEXABUCoordStruct@@@Z": 6115776,
     "?unknown_slot104@ObjectClass@@UBE?AVCell@@XZ": 4305696,

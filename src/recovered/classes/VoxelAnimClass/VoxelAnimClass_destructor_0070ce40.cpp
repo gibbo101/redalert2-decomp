@@ -42,7 +42,7 @@
 // @ref ?unknown_VoxelAnimClass_list_008399d0@@3V?$DynamicVectorClass@PAVVoxelAnimClass@@@@A=008399d0
 // @ref ?What_Am_I@AbstractClass@@UAGHXZ=0040ffb0
 // @ref ?unknown_slot100@ObjectClass@@UAEXH@Z=005d2d60
-// @ref ?unknown_slot101@ObjectClass@@UAEHPAVCellClass@@HHHH@Z=00423e00
+// @ref ?unknown_slot101@ObjectClass@@UAEHPAVCellClass@@HHH_N@Z=00423e00
 // @ref ?unknown_slot102@ObjectClass@@UAEHHHHHH@Z=00423e10
 // @ref ?unknown_slot103@ObjectClass@@UAEXABUCoordStruct@@@Z=005d51c0
 // @ref ?unknown_slot104@ObjectClass@@UAEHH@Z=0041b320
