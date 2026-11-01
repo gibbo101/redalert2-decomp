@@ -98,9 +98,10 @@ protected:
     long Raw_Seek(long position, int origin = FILE_SEEK_CURRENT);
 
 public:
-protected:
+    // Public as in TibSun rawfile.h (MixFileClass's constructor adds BiasStart to DataStart).
     long BiasStart;             // +0x08 window start within the disk file
     long BiasLength;            // +0x0C window length, -1 when unbiased
+protected:
     HANDLE Handle;              // +0x10 Win32 handle, INVALID_HANDLE_VALUE when closed
     char const *Filename;       // +0x14 file name (owned when Allocated)
     unsigned short Date;        // +0x18 DOS date (unused by these methods)

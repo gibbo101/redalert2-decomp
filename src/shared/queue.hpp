@@ -293,8 +293,7 @@ void __fastcall Unknown_0062CF40(int index);
 void __fastcall Print_CRCs(EventClass *event);
 // The other CRC log (0x0062DBA0; used instead of Print_CRCs while unknown_flag_ab62e8 is set).
 void __fastcall Unknown_0062DBA0(int index, EventClass *event);
-// Posts the main window's WM_DESTROY (0x00691320).
-void Unknown_00691320();
+// Unknown_00691320 (0x00691320, posts the main window's WM_DESTROY): shared/exit.hpp.
 
 // A CRC sent in the FRAMESYNC packet (0x00A40770).
 extern unsigned long unknown_crc_a40770;
