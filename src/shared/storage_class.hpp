@@ -18,6 +18,10 @@ public:
     int First_Used_Slot() const;            // 0x0069AFE0 (the first type with a positive amount, or -1)
     StorageClass operator+=(StorageClass const &that);  // 0x0069AF00 (adds each amount; returns a copy)
     StorageClass operator-=(StorageClass const &that);  // 0x0069AFA0 (subtracts each amount; returns a copy)
+#ifdef STORAGE_CLASS_UNIT
+    StorageClass operator+(StorageClass const &that) const;   // 0x0069AEA0 (the sums of each amount)
+    StorageClass operator-(StorageClass const &that) const;   // 0x0069AF40 (the differences of each amount)
+#endif
 
     float Amounts[4];
 };

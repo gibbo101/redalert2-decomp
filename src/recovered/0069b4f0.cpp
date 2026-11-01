@@ -1,3 +1,6 @@
-
-class Leaf_69b4f0 { public: void get(unsigned int a1); };
-void Leaf_69b4f0::get(unsigned int a1) { unsigned int ecx = (unsigned int)this; unsigned int eax; unsigned int edx; eax = a1; *(unsigned int*)(ecx + 0xc) = eax; }
+// void VQAMovieCompanion::Unknown_0069B4F0(int unknown) (0x0069B4F0): the callback that shows subtitles
+// instead of the surface.
+void VQAMovieCompanion::Unknown_0069B4F0(int unknown)
+{
+    Callback = (void (__fastcall *)(SubTitle *))unknown;
+}

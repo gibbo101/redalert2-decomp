@@ -836,3 +836,9 @@ whatever their size (`ini`, 80 bytes / 93 refs, sits among the scalars in Read_C
 ties among equal-weight spills are unstable: independent of declaration order and names, but sensitive to which
 temporaries are in the sort (removing one CDTimerClass temporary moves the other). Tools: Iso420 t2/fas.py, fcmp.py,
 fref.py compare every frame variable's offset against the original.
+
+## Macros versus inlined calls (Span427, 2026-11-01)
+When a header expresses a helper as a macro, check whether the original was a function VC6 inlined: the audio event
+code (0x403EB0-0x4068F0) is ordinary /Ob2 C calling Audio_Events_Clear / Audio_Event_Stop / Free_Stopped, which match
+byte-exact as calls; the audio_event.hpp macros are not the original shape and their expansion is too big to inline
+where the original does (Handle_Stop_Loop needs Stop written as Detach + Release_Samples calls).

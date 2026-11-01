@@ -27,15 +27,32 @@ bool __fastcall VQA_Unknown_0071DBA0(int option);          // 0x0071DBA0 test
 int __fastcall VQA_Unknown_0071DBC0(int option);           // 0x0071DBC0 toggle; 1 when now set
 
 // Owned by the VQA movie at +0x48 (class unknown).
+#ifdef VQA_MOVIE_COMPANION_UNIT
+// The subtitle manager unit (0x0069B170-0x0069C3AF) sees the subtitle fields typed.
+class SubTitle;
+template <class T> class DynamicVectorClass;
+#endif
 class VQAMovieCompanion {
 public:
+#ifdef VQA_MOVIE_COMPANION_UNIT
+    VQAMovieCompanion();                                   // 0x0069B280
+    bool Load_Sub_Titles(char const *moviename);           // 0x0069B300
+    void Draw_Sub_Title(SubTitle const *subtitle);         // 0x0069B500
+#endif
     ~VQAMovieCompanion();                                  // 0x0069B2A0
     void Unknown_0069B4F0(int unknown);                    // 0x0069B4F0
     void Unknown_0069B4E0();                               // 0x0069B4E0
     bool Unknown_0069B420(int time);                       // 0x0069B420 (Bink frame * interval)
 
+#ifdef VQA_MOVIE_COMPANION_UNIT
+    DynamicVectorClass<SubTitle *> *SubTitles;             // +0x00 the movie's subtitles
+    int SubTitleIndex;                                     // +0x04 the next one to show
+    SubTitle *ActiveSubTitle;                              // +0x08
+    void (__fastcall *Callback)(SubTitle *subtitle);       // +0x0C draws instead of the surface
+#else
     int unknown_00;          // +0x00 nonzero: active
     int unknown_04[3];       // +0x04
+#endif
     Surface *unknown_10;     // +0x10 picture drawn over the movie
     Rect unknown_14;         // +0x14 its source area
     Rect unknown_24;         // +0x24 area cleared before a frame

@@ -1,3 +1,4 @@
-
-class Leaf_69b6c0 { public: void get(); };
-void Leaf_69b6c0::get() {  }
+// SubTitleParser::~SubTitleParser() (0x0069B6C0).
+SubTitleParser::~SubTitleParser()
+{
+}
