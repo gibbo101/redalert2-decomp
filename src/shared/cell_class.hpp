@@ -288,8 +288,9 @@ public:
     bool unknown_47a670() const;                // 0x0047A670 (Overlay.cpp wall pass; hypothesis)
     void unknown_47ad00();                      // 0x0047AD00
     void unknown_478a40(int arg1);              // 0x00478A40 (TerrainClass::AI: spreads tiberium; hypothesis)
-    void Set_Under_Bridge(unsigned facing, bool state);                   // 0x004732D0 (OverlayClass slot 71: bridge piece; hypothesis)
-    void Set_Under_Rail_Bridge(unsigned facing, bool state);                   // 0x00473700 (OverlayClass slot 71: the other bridge piece; hypothesis)
+    void Set_Under_Bridge(unsigned facing, bool state);                  // 0x004732D0 (TibSun name: marks the cells one high-bridge deck piece covers; OverlayClass slot 71)
+    void Set_Under_Rail_Bridge(unsigned facing, bool state);             // 0x00473700 (TibSun name: the train bridge counterpart; OverlayClass slot 71)
+    void Destroy_Bridge();                                               // 0x00473000 (TibSun name hypothesis: called when a bridge flag is cleared)
     bool unknown_4718b0(int arg1, int arg2, int arg3);                   // 0x004718B0 (whether a wall may be placed; hypothesis)
     void unknown_475960(bool arg1);                                      // 0x00475960
     int unknown_476ba0(bool pregame);                                    // 0x00476BA0 (Westwood's Tiberium_Adjust: the ore stage from its neighbours; answers the value)
@@ -373,6 +374,17 @@ public:
         unsigned int unknown_140;
         struct {
             unsigned Flags_140:23;
+        };
+        struct {                                // TibSun names, from Set_Under_Bridge 0x004732D0
+            unsigned :7;
+            unsigned IsBridgeDeck:1;            // bit 7
+            unsigned IsUnderBridge:1;           // bit 8
+            unsigned IsBridgeTraversable:1;     // bit 9
+            unsigned WasUnderBridge:1;          // bit 10
+            unsigned IsBridgeEastWest:1;        // bit 11
+            unsigned IsBridgeSurface:1;         // bit 12
+            unsigned :3;
+            unsigned IsOvershadowed:1;          // bit 16
         };
     };
     int unknown_144;                            // +0x144
