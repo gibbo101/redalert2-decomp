@@ -174,6 +174,7 @@ public:
     void Unknown_0049CA20(int control);                                         // 0x0049CA20
     void Unknown_0049CAC0(int control);                                         // 0x0049CAC0
     void Unknown_0049CC20();                                                    // 0x0049CC20
+    void Unknown_0049CD20();                                                    // 0x0049CD20
     void Unknown_0049E110(bool skip_buildings, bool arg2);                      // 0x0049E110
     void Unknown_0049E000(bool skip_buildings, bool arg2);                      // 0x0049E000
     void Unknown_0049DE00(bool skip_buildings, bool arg2);                      // 0x0049DE00

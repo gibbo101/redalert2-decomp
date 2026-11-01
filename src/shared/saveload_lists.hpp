@@ -16,11 +16,9 @@ inline void DebugString(char const *string) {}
 HRESULT __fastcall Save_Misc_Values(IStream *stream);
 HRESULT __fastcall Load_Misc_Values(IStream *stream);
 
-// Red Alert's Logic (RTTI LogicClass, a LayerClass; shared/unknown_list_832470.hpp
-// declares the same object without the base).
-class LogicClass : public LayerClass {
-};
-extern LogicClass Logic;                                    // 0x00832470
+// Red Alert's Logic (shared/logic.hpp; shared/unknown_list_832470.hpp declares the same object
+// without the base).
+#include "shared/logic.hpp"
 
 // The planted bombs and the BombSight units (shared/techno.hpp's unknown_list_8322e0).
 extern BombListClass BombList;                              // 0x008322E0
