@@ -108,6 +108,7 @@
 | [classes/VQAClass](../src/recovered/classes/VQAClass/) | 32 | 3,686 | 32 | 0x0071C5F0–0x0071D7B0 |
 | [classes/ParticleTypeClass](../src/recovered/classes/ParticleTypeClass/) | 20 | 3,655 | 20 | 0x004D4010–0x00621E80 |
 | [classes/TunnelLocomotionClass](../src/recovered/classes/TunnelLocomotionClass/) | 25 | 3,629 | 25 | 0x006EFBE0–0x006F13B0 |
+| [classes/BinkClass](../src/recovered/classes/BinkClass/) | 22 | 3,628 | 22 | 0x0042FE50–0x00430BB0 |
 | [classes/ListClass](../src/recovered/classes/ListClass/) | 29 | 3,612 | 28 | 0x00539BF0–0x0053AA20 |
 | [classes/UDPInterfaceClass](../src/recovered/classes/UDPInterfaceClass/) | 23 | 3,604 | 23 | 0x0076C050–0x0076D460 |
 | [classes/VoxelAnimTypeClass](../src/recovered/classes/VoxelAnimTypeClass/) | 18 | 3,560 | 18 | 0x004D3F10–0x0070EF40 |
@@ -121,6 +122,7 @@
 | [classes/Matrix3D](../src/recovered/classes/Matrix3D/) | 34 | 3,254 | 34 | 0x0058FDE0–0x00591420 |
 | [classes/ProgressScreenClass](../src/recovered/classes/ProgressScreenClass/) | 28 | 3,180 | 28 | 0x0061ED00–0x006203F0 |
 | [MainOpt](../src/recovered/MainOpt/) | 8 | 3,108 | 8 | 0x00542150–0x00543C40 |
+| [classes/BitFontClass](../src/recovered/classes/BitFontClass/) | 19 | 3,079 | 19 | 0x00431040–0x00432200 |
 | [classes/OverlayTypeClass](../src/recovered/classes/OverlayTypeClass/) | 24 | 3,063 | 24 | 0x004D3A90–0x005DD290 |
 | [classes/WinsockInterfaceClass](../src/recovered/classes/WinsockInterfaceClass/) | 30 | 3,024 | 30 | 0x0076AA00–0x0076BA40 |
 | [classes/BufferIOFileClass](../src/recovered/classes/BufferIOFileClass/) | 17 | 3,023 | 17 | 0x0042F200–0x0042FDF0 |
@@ -130,7 +132,6 @@
 | [classes/PlayerProfile](../src/recovered/classes/PlayerProfile/) | 14 | 2,943 | 13 | 0x00738670–0x0073A090 |
 | [classes/DropPodLocomotionClass](../src/recovered/classes/DropPodLocomotionClass/) | 28 | 2,922 | 28 | 0x004A5A40–0x004A6710 |
 | [classes/MessageListClass](../src/recovered/classes/MessageListClass/) | 14 | 2,872 | 14 | 0x005B4BD0–0x005B5CB0 |
-| [classes/BinkClass](../src/recovered/classes/BinkClass/) | 21 | 2,869 | 21 | 0x0042FE50–0x00430BB0 |
 | [classes/PowerClass](../src/recovered/classes/PowerClass/) | 16 | 2,801 | 16 | 0x0061C450–0x0061D220 |
 | [skirmish](../src/recovered/skirmish/) | 9 | 2,767 | 9 | 0x006827F0–0x00683D10 |
 | [classes/MapSelectData](../src/recovered/classes/MapSelectData/) | 9 | 2,758 | 9 | 0x005AFF10–0x005B0980 |
@@ -166,7 +167,6 @@
 | [classes/WWKeyboardClass](../src/recovered/classes/WWKeyboardClass/) | 20 | 2,081 | 20 | 0x00532130–0x00532E60 |
 | [classes/WaypointPathClass](../src/recovered/classes/WaypointPathClass/) | 21 | 2,055 | 21 | 0x00724970–0x00725200 |
 | [classes/LoadOptionsClass](../src/recovered/classes/LoadOptionsClass/) | 8 | 2,038 | 4 | 0x0053B0E0–0x0053C9D0 |
-| [classes/BitFontClass](../src/recovered/classes/BitFontClass/) | 17 | 2,016 | 17 | 0x00431040–0x00432200 |
 | [classes/MSPrintAnim](../src/recovered/classes/MSPrintAnim/) | 7 | 2,015 | 7 | 0x005AE6C0–0x005AFE80 |
 | [classes/WorldDominationTour__Campaign](../src/recovered/classes/WorldDominationTour__Campaign/) | 11 | 2,011 | 11 | 0x00725DE0–0x007269B0 |
 | [classes/ZBuffer](../src/recovered/classes/ZBuffer/) | 10 | 2,009 | 10 | 0x00410A40–0x00411230 |
@@ -240,6 +240,7 @@
 | [classes/AbstractClass](../src/recovered/classes/AbstractClass/) | 35 | 1,080 | 35 | 0x0040DC20–0x006EC5D0 |
 | [classes/LaserDrawClass](../src/recovered/classes/LaserDrawClass/) | 7 | 1,077 | 7 | 0x00533070–0x005333F0 |
 | [classes/LightSourceClass](../src/recovered/classes/LightSourceClass/) | 15 | 1,068 | 10 | 0x00537120–0x00537C30 |
+| [classes/BitTextClass](../src/recovered/classes/BitTextClass/) | 11 | 1,063 | 11 | 0x00432290–0x00432D20 |
 | [classes/ConnectionPointClass](../src/recovered/classes/ConnectionPointClass/) | 10 | 1,062 | 9 | 0x004926B0–0x00492AD0 |
 | [classes/SideClass](../src/recovered/classes/SideClass/) | 11 | 1,051 | 11 | 0x004D3810–0x0067B1F0 |
 | [game_controls](../src/recovered/game_controls/) | 2 | 1,050 | 2 | 0x004CFC00–0x004CFFB0 |
@@ -324,7 +325,6 @@
 | [classes/VectorClass_DirtyAreaStruct](../src/recovered/classes/VectorClass_DirtyAreaStruct/) | 7 | 703 | 5 | 0x006AC8D0–0x006ACFC0 |
 | [classes/CounterClass](../src/recovered/classes/CounterClass/) | 9 | 696 | 8 | 0x00491C00–0x00491F00 |
 | [classes/DynamicVectorClass_SubzoneTrackingStruct](../src/recovered/classes/DynamicVectorClass_SubzoneTrackingStruct/) | 5 | 696 | 4 | 0x0056AB40–0x0056C390 |
-| [classes/BitTextClass](../src/recovered/classes/BitTextClass/) | 9 | 688 | 9 | 0x00432290–0x00432D20 |
 | [classes/RGBClass](../src/recovered/classes/RGBClass/) | 6 | 684 | 6 | 0x00432D70–0x0063CF20 |
 | [classes/WolIntArray](../src/recovered/classes/WolIntArray/) | 3 | 679 | 3 | 0x00766F90–0x00768290 |
 | [classes/LZOStraw](../src/recovered/classes/LZOStraw/) | 4 | 675 | 4 | 0x0053EFB0–0x0053F220 |
@@ -1337,7 +1337,7 @@
 | [classes/exception](../src/recovered/classes/exception/) | 1 | 13 | 0 | 0x0078B1E7–0x0078B1E7 |
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 
-1330 directories, 16451 regions. Generated by `tools/original_target/source_index.py`.
+1330 directories, 16456 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
