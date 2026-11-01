@@ -29,6 +29,7 @@ Quaternion __fastcall Conjugate(Quaternion const &quat);                       /
 Quaternion __fastcall Inverse(Quaternion const &quat);                         // 0x00622640
 Quaternion __fastcall Axis_To_Quat(Vector3 const &axis, float angle);          // 0x006229B0
 Quaternion __fastcall Slerp(Quaternion const &a, Quaternion const &b, float alpha);    // 0x00622AC0
+Quaternion __fastcall Build_Quaternion(Matrix3D const &matrix);               // 0x00622C60
 Matrix3D __fastcall Build_Matrix3D(Quaternion const &quat);                     // 0x00622EB0
 
 #endif

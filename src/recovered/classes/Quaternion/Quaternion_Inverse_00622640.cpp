@@ -4,5 +4,5 @@
 
 Quaternion __fastcall Inverse(Quaternion const &quat)
 {
-    return Quaternion(-quat.X, -quat.Y, -quat.Z, quat.W);
+    return Quaternion(-quat[0], -quat[1], -quat[2], quat[3]);
 }
