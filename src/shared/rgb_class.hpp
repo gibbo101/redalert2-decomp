@@ -38,6 +38,12 @@ public:
     void unknown_4fef70(int ratio, RGBClass const &target);
 
     int Difference(RGBClass const &other) const; // 0x0063CFB0 weighted absolute difference
+#ifdef RGB_DECLARE_ACCESSORS
+    // Westwood's channel accessors (the map preview unit 0x0061D240).
+    int Get_Red() const { return Red; }
+    int Get_Green() const { return Green; }
+    int Get_Blue() const { return Blue; }
+#endif
 #ifdef RGB_DECLARE_TO_HSV
     // The colour as hue, saturation and value (0x0063D000; TibSun RGBClass::operator HSVClass;
     // guarded: this header is in Refresh_Wonline_Players 0x0073FEE0's closure).

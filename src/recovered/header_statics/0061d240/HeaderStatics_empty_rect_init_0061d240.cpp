@@ -1,3 +1,9 @@
+#define RA2_COORD_FROM_CELL  // the unit defines CoordStruct(Cell const &, int) 0x0061EA80 (shared/coord.hpp)
+#define MAP_PREVIEW_DECLARE_INTERNALS
+#define TACTICAL_DECLARE_LEPTON_TO_MAP_PIXEL
+#define CELL_DECLARE_PREVIEW_CELL_COLOR
+#define RGB_DECLARE_ACCESSORS
+#define RA2_CELL_AS_COORD
 // Header-static dynamic initializers of the unit at 0x0061D240: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x0061D240-0x0061D421); the other
 // drafts of this plan are emitted by these includes.

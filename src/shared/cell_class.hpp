@@ -243,6 +243,11 @@ public:
     // Westwood's Init_Drawer: takes the drawer given, or finds or makes one for the cell's light (+0x34), and keeps the light values.
     // arg1 is the drawer (a LightConvertClass *; retyping it is a rename of the accepted callers' binding).
     void Init_Drawer(LightConvertClass *drawer, int intensity, int ambient, int brightness, int tile_brightness, int alt_brightness);   // 0x004790F0 (TerrainClass slots 67/68, DisplayClass 0x0049E570 pass no drawer)
+#ifdef CELL_DECLARE_PREVIEW_CELL_COLOR
+    // The cell's two preview pixel colours packed low << 16 | high (0x004710D0; TibSun
+    // Preview_Cell_Color; declared only for the map preview unit 0x0061D240).
+    unsigned int Preview_Cell_Color(unsigned char &unknown, bool flag);
+#endif
 #ifdef CELL_DECLARE_CLEAR_ICON
     // A variation index for a tile set of `count` variations, picked from the cell's position
     // (0x004767A0; TibSun Clear_Icon; declared only for IsometricTileTypeClass::Load_Tiles,

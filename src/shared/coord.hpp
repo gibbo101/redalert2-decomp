@@ -145,6 +145,15 @@ public:
     // A TPoint2D<short> result (a sum or difference) taken as a cell.
     Cell(BASECLASS const &pt) : BASECLASS(pt) {}
     Cell &Set(short x, short y) { X = x; Y = y; return *this; }
+#ifdef RA2_CELL_AS_COORD
+    // TibSun Cell::As_Coord: the centre of the cell at height z, built in a named coordinate
+    // (the map preview unit 0x0061D240 reads its Y through it).
+    CoordStruct As_Coord(int z = 0) const
+    {
+        CoordStruct coord(X * 256 + 128, Y * 256 + 128, z);
+        return coord;
+    }
+#endif
 #ifdef RA2_COORD_AS_CELL
     // TibSun TPoint2D comparisons (0x0058DB50 is the out-of-line operator!=).
     bool operator==(Cell const &rvalue) const { return X == rvalue.X && Y == rvalue.Y; }
