@@ -4,8 +4,8 @@
     "id": "population-3383",
     "inventory_sha256": "9dd397bdeef14a268600ef0d4cb7abae783a32e52ece08cbc77035d49078a3f9",
     "gaps_sha256": "039f6f96f34b95f7d6710ed3cfbd909127f1b041742229cbe967c6fd023ad6a1",
-    "historical_population_sha256": "9884e777d874418513325f86eec10a89b21911834e3a2b02361d257f7faeb4d2",
-    "historical_acceptance_sha256": "5efec50ef192f33c531d3c68cf3b349ca39e41134bcc021efc67413d0d419919"
+    "historical_population_sha256": "59eea0bbee59573cb9579d35b60785cde6c97d7226c6cc3be3816fde40d14ebe",
+    "historical_acceptance_sha256": "24611459dcbd54efdddb004bde2ef47662a107255bb3e94f56abab7ab8c4d60f"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8794,13 +8794,13 @@
     "?Reset@VoxelDrawSystem@@YAXXZ": 7434704,
     "?Render@VoxelDrawSystem@@YI?AUSurfaceRegion@@XZ": 7436512,
     "??0Surface@@QAE@HH@Z": 4844944,
-    "?unknown_473700@CellClass@@QAEXII@Z": 4667136,
+    "?Set_Under_Rail_Bridge@CellClass@@QAEXI_N@Z": 4667136,
     "?Destroy_Low_Bridge_Span@MapClass@@QAEXABVCell@@@Z": 5598192,
     "?unknown_slot41@DisplayClass@@QAE_NHPAH_N@Z": 4823904,
     "?Search_For_Node@?$IndexClass@HPAVCommandClass@@@@ABEPBUNodeElement@1@ABH@Z": 5512928,
     "?Is_Archive_Same@?$IndexClass@HPAVCommandClass@@@@ABE_NABH@Z": 5512896,
     "?Unknown_0042AD50@UnknownPathEstimator@@SI?AVCell@@ABV2@H@Z": 4369744,
-    "?unknown_4732d0@CellClass@@QAEXII@Z": 4666064,
+    "?Set_Under_Bridge@CellClass@@QAEXI_N@Z": 4666064,
     "?Unknown_0042E940@Unknown84E8D0@@QAEPAVUnknownBeacon@@H@Z": 4385088,
     "?Unknown_0042EC20@Unknown84E8D0@@QAEXPBGHH_N@Z": 4385824,
     "?Unknown_00428AE0@UnknownPathEstimator@@QAEXPAUUnknownPathType@@PAVFootClass@@@Z": 4360928,

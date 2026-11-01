@@ -4,8 +4,8 @@
     "id": "population-3413",
     "inventory_sha256": "044de1499637687afaa75f4d7c02fe7b2445a959219b4627b35565731bb0cea2",
     "gaps_sha256": "348637b49dbecf22b4d8c27f7636ed47a13d002cd3327b2c04a3a7c6e0deef5f",
-    "historical_population_sha256": "9214e5ead274ab00bfde60d9359bf62857027ce11756650af717e596d740111c",
-    "historical_acceptance_sha256": "fa5751fb1c05a965abf844fff01d54e2e62807f1c2ef9579a224f2ccf4c695e1"
+    "historical_population_sha256": "861c1ceb849e30cba2b4710bac0fa897ab73564691ef04b6f153225f4c31f24e",
+    "historical_acceptance_sha256": "ac8bc59adc22aea8d94dddd14c31c155d2230ce0ef95afab9631df4e77a49d8d"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9413,8 +9413,8 @@
     "??_E?$VectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEPAXI@Z": 5040784,
     "??_E?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEPAXI@Z": 5040944,
     "??_E?$VectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524048,
-    "?unknown_473700@CellClass@@QAEXII@Z": 4667136,
-    "?unknown_4732d0@CellClass@@QAEXII@Z": 4666064,
+    "?Set_Under_Rail_Bridge@CellClass@@QAEXI_N@Z": 4667136,
+    "?Set_Under_Bridge@CellClass@@QAEXI_N@Z": 4666064,
     "?Load_Tiles@IsometricTileTypeClass@@SIX_N0@Z": 5419744,
     "?Clear_Icon@CellClass@@QBEHHH@Z": 4679584,
     "?Is_Tile_Water@CellClass@@QBE_NXZ": 4694640

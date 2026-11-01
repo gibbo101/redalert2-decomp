@@ -4,8 +4,8 @@
     "id": "population-3412",
     "inventory_sha256": "d5259d307a70834f5853e75a6da98a5a3833a62f4f688d0f5bb653baf09390df",
     "gaps_sha256": "b72a3456592c2ce898c2c099367ffa0842cb9b80c764dfbaea77528af81854e3",
-    "historical_population_sha256": "75167602f66cb54746bf479962613539cddfe7fce1c79f2f17702aa6a09e3303",
-    "historical_acceptance_sha256": "59ba82c119db229e0f683af728052a395fc80160e21186297873dc2f33742895"
+    "historical_population_sha256": "9175c8d807e5418ef7b993f77c77ba59859813dfd628c82b3d2fdabbdc9ce7fb",
+    "historical_acceptance_sha256": "ff273a79bf881a7e6e1648584b477603ad42ba5d6ae07519d35b62204b98a60d"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -10339,7 +10339,7 @@
     "?Pick_Random_Location@MapClass@@QBE?AVCell@@XZ": 5611184,
     "?Unknown_00549C20@MapClass@@QAEXHHABUCoordStruct@@HPAVHouseClass@@_N222@Z": 5544992,
     "?Internal_Destroy_Train_Bridge_EW_BottomRight@MapClass@@QAEXABVCell@@H@Z": 5575792,
-    "?unknown_473700@CellClass@@QAEXII@Z": 4667136,
+    "?Set_Under_Rail_Bridge@CellClass@@QAEXI_N@Z": 4667136,
     "?Internal_Destroy_Train_Bridge_EW_TopLeft@MapClass@@QAEXABVCell@@H@Z": 5576720,
     "?Internal_Destroy_Train_Bridge_NS_BottomLeft@MapClass@@QAEXABVCell@@H@Z": 5578192,
     "?Internal_Destroy_Train_Bridge_NS_TopRight@MapClass@@QAEXABVCell@@H@Z": 5579168,
@@ -10350,7 +10350,7 @@
     "?Unknown_0055F540@MapClass@@QAE_NABVCell@@@Z": 5633344,
     "?Unknown_006A67B0@Tactical@@QAE?AUPoint2D@@XZ": 6973360,
     "?Internal_Destroy_High_Bridge_EW_BottomRight@MapClass@@QAEXABVCell@@H@Z": 5589344,
-    "?unknown_4732d0@CellClass@@QAEXII@Z": 4666064,
+    "?Set_Under_Bridge@CellClass@@QAEXI_N@Z": 4666064,
     "?Internal_Destroy_High_Bridge_EW_TopLeft@MapClass@@QAEXABVCell@@H@Z": 5590272,
     "?Internal_Destroy_High_Bridge_NS_BottomLeft@MapClass@@QAEXABVCell@@H@Z": 5591744,
     "?Internal_Destroy_High_Bridge_NS_TopRight@MapClass@@QAEXABVCell@@H@Z": 5592720,

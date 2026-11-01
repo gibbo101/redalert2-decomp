@@ -4,8 +4,8 @@
     "id": "population-3463",
     "inventory_sha256": "a3c60baecfad77f348b0e3e170d72a077b03542638f4cc6fccf85d32a5965eaf",
     "gaps_sha256": "056a1f15da5301a374d420e771bd033f508a67a332a8a278e663431d39c55408",
-    "historical_population_sha256": "b0d546559c56d1946e05becc2e2b922d1bf8a73a25e44b0a97990e84cccd5522",
-    "historical_acceptance_sha256": "5d36b8ec448802997f1d9bc6e96510cb4b503fb00e8e9c79ad38479c3a8f2b79"
+    "historical_population_sha256": "7d2d1a8b2a389dd4a9eaaf83024ebb85298d3c53fb6107988f8243205b053bfd",
+    "historical_acceptance_sha256": "e0478f03095b86a5e4d63f7832eae16bc35d1c7e00d1934b5ed40b0791075f91"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9997,10 +9997,10 @@
     "?Remove@UnknownWindowProcIndex@OwnerDraw@@QAE_NABQAUHWND__@@AAP6GJPAU3@IIJ@Z@Z": 6297936,
     "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABUSurfaceRegion@@@Z": 6922704,
     "?Render@VoxelDrawSystem@@YI?AUSurfaceRegion@@XZ": 7436512,
-    "?unknown_473700@CellClass@@QAEXII@Z": 4667136,
+    "?Set_Under_Rail_Bridge@CellClass@@QAEXI_N@Z": 4667136,
     "?Unknown_006A67B0@Tactical@@QAE?AUPoint2D@@XZ": 6973360,
     "?unknown_slot41@DisplayClass@@QAE_NHPAH_N@Z": 4823904,
-    "?unknown_4732d0@CellClass@@QAEXII@Z": 4666064,
+    "?Set_Under_Bridge@CellClass@@QAEXI_N@Z": 4666064,
     "?Remove@SuperClass@@QAE_NXZ": 6934336,
     "?Load@GraphicMenu@@SIPAV1@AAVINIClass@@ABVWstring@@@Z": 5104512,
     "?Value@?$CDTimerClass@VSystemTimerClass@@@@QBEJXZ": 5104128,

@@ -288,8 +288,8 @@ public:
     bool unknown_47a670() const;                // 0x0047A670 (Overlay.cpp wall pass; hypothesis)
     void unknown_47ad00();                      // 0x0047AD00
     void unknown_478a40(int arg1);              // 0x00478A40 (TerrainClass::AI: spreads tiberium; hypothesis)
-    void unknown_4732d0(unsigned arg1, unsigned arg2);                   // 0x004732D0 (OverlayClass slot 71: bridge piece; hypothesis)
-    void unknown_473700(unsigned arg1, unsigned arg2);                   // 0x00473700 (OverlayClass slot 71: the other bridge piece; hypothesis)
+    void Set_Under_Bridge(unsigned facing, bool state);                   // 0x004732D0 (OverlayClass slot 71: bridge piece; hypothesis)
+    void Set_Under_Rail_Bridge(unsigned facing, bool state);                   // 0x00473700 (OverlayClass slot 71: the other bridge piece; hypothesis)
     bool unknown_4718b0(int arg1, int arg2, int arg3);                   // 0x004718B0 (whether a wall may be placed; hypothesis)
     void unknown_475960(bool arg1);                                      // 0x00475960
     int unknown_476ba0(bool pregame);                                    // 0x00476BA0 (Westwood's Tiberium_Adjust: the ore stage from its neighbours; answers the value)

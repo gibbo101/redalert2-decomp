@@ -13,7 +13,7 @@
 #include "shared/map_adjacent.hpp"
 #include "shared/map_isotile.hpp"
 // @ref ?unknown_473000@CellClass@@QAEXXZ=00473000
-// @ref ?unknown_473700@CellClass@@QAEXII@Z=00473700
+// @ref ?Set_Under_Rail_Bridge@CellClass@@QAEXI_N@Z=00473700
 
 void MapClass::Internal_Destroy_Train_Bridge_EW_BottomRight(Cell const &cell, int dir)
 {
@@ -23,7 +23,7 @@ void MapClass::Internal_Destroy_Train_Bridge_EW_BottomRight(Cell const &cell, in
         if (adjacentptr->OverlayData > 6) {
             if (adjacentptr->OverlayData == 8) {
                 Internal_Destroy_Train_Bridge_EW_BottomRight(adjacent, dir);
-                adjacentptr->unknown_473700(0, 0);
+                adjacentptr->Set_Under_Rail_Bridge(0, false);
                 adjacentptr->OverlayData = 0;
                 adjacentptr->OverlayIndex = -1;
                 Map.Unknown_00631570(adjacentptr->MapCoords);

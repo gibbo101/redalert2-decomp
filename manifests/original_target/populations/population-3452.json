@@ -4,8 +4,8 @@
     "id": "population-3452",
     "inventory_sha256": "b9b2778cf794d491791aa9cd10f5d9d967bebb9dcda05b8b9156dbf6b839358a",
     "gaps_sha256": "7bd94322fe6da10f797d9aa8da93004acb40bc91135ef81ff534e5c7c74dd4d3",
-    "historical_population_sha256": "3c665dfb25eefbeee90bf289626dac83eb73f3212080f86dcf178e4c401e6de5",
-    "historical_acceptance_sha256": "bbc24cf3facc934afe1b2c2464b771fdbd7af0f510d66973571d3af9f2485c4c"
+    "historical_population_sha256": "ad37a5b235e6c57031cf6b98a881b40bf2eb84e81bf9f8a72794ac54b5b0c721",
+    "historical_acceptance_sha256": "42e430bc635dcccffcbf30bf73282940d51f73602917d68f6c53d248708399b1"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9894,8 +9894,8 @@
     "?unknown_tileset_a52e64@@3HA": 10825316,
     "?unknown_47bfa0@CellClass@@QAEHH@Z": 4702112,
     "?unknown_4752b0@CellClass@@QBE?AVRect@@XZ": 4674224,
-    "?unknown_473700@CellClass@@QAEXII@Z": 4667136,
-    "?unknown_4732d0@CellClass@@QAEXII@Z": 4666064,
+    "?Set_Under_Rail_Bridge@CellClass@@QAEXI_N@Z": 4667136,
+    "?Set_Under_Bridge@CellClass@@QAEXI_N@Z": 4666064,
     "?Load_Tiles@IsometricTileTypeClass@@SIX_N0@Z": 5419744,
     "?Clear_Icon@CellClass@@QBEHHH@Z": 4679584,
     "?Is_Tile_Water@CellClass@@QBE_NXZ": 4694640,
