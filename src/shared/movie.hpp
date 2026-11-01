@@ -210,6 +210,7 @@ public:
     void Unknown_00430AF0(Surface *surface);               // 0x00430AF0
     bool Unknown_00430800();                               // 0x00430800
     void Unknown_00430820();                               // 0x00430820
+    void Unknown_00430BB0();                               // 0x00430BB0 pauses or resumes with the application focus
 
     bool unknown_00;                // +0x00
     BinkHandleSize *Handle;         // +0x04

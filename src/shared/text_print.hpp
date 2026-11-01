@@ -133,6 +133,13 @@ public:
     bool Print_Box(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y, int width, int height,
                    int arg8, int arg9, int arg10);                                  // 0x00432490 (text in a box; true when drawn)
     int Print_Bold(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y, int count);   // 0x004323B0 (twice, one pixel apart, when the font's unknown_40 is set)
+    bool Print_Box_Shadow(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y, int width,
+                          int height, int arg8, int arg9, int arg10);               // 0x00432B00 (in unknown_26, one pixel down-right, then in the colour)
+    bool Print_Box_Bold(BitFontClass *font, Surface *surface, wchar_t const *text, int x, int y, int width,
+                        int height, int arg8, int arg9, int arg10);                 // 0x00432BB0 (twice, one pixel apart, when the font's unknown_40 is set)
+    void Load_Game_Font();                                                          // 0x00432C90 (as the constructor)
+    void Free_Game_Font();                                                          // 0x00432CC0 (as the destructor)
+    void Free_Font(BitFontClass *font);                                             // 0x00432CF0 (clears BitFont when it is the game font)
 };
 extern BitTextClass *BitText;               // 0x0084E9D0
 
