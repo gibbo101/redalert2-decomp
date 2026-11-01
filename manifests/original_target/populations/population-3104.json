@@ -4,8 +4,8 @@
     "id": "population-3104",
     "inventory_sha256": "66a71da64852e6b615aa85f59c1accf66b7dc98141414f787963eeb77ccea1cb",
     "gaps_sha256": "8758afeafd0aa8e6b916033384540e515695306024c1303da3ac08956cc53d7a",
-    "historical_population_sha256": "11b9cbc9e9eed201171676c88b97bf01b13386196db268e4b9db592056751ad6",
-    "historical_acceptance_sha256": "1870bf8c47b52f42789efbe31ce452c05ce6902698f17e3ebe63c898dc7eaab9"
+    "historical_population_sha256": "c8a6ceda7efc90f8e91b597efe83adddc870f7a62a2440ba4a563a7573d83127",
+    "historical_acceptance_sha256": "3c75b47ea428ea14f7fc8fa5433e73366e0a064f899ac7a1cc5c13cc80ab930d"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -10456,7 +10456,7 @@
     "?Audio_Create_Device@@YIPAUAudioDevice@@HPBUAudioFormat@@@Z": 4205680,
     "?Audio_Main_Device@@3PAUAudioDevice@@A": 8590392,
     "?Audio_Main_Bag@@3PAUAudioBag@@A": 8590388,
-    "?Audio_Streamer_Init@@YAHXZ": 4224128,
+    "?Audio_Streamer_Init@@YIHXZ": 4224128,
     "?Audio_Is_On@@3HA": 8590396,
     "?Audio_Stop@@YIXXZ": 4222400,
     "?Audio_Pause_All@@YAXXZ": 4222528,

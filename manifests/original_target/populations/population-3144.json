@@ -4,8 +4,8 @@
     "id": "population-3144",
     "inventory_sha256": "9b49da8deac1889074759c7ee91af2afb1aa59acf9de23ba7b00e1bd2f083f24",
     "gaps_sha256": "35d91b8470ebaf7df57b7aa21678d3713f8f563003b0c5601e088c8ee34d42bf",
-    "historical_population_sha256": "2db14eed4634d5732967ba5aa08090d69325b0e39bae982d8f0d690ad7771b41",
-    "historical_acceptance_sha256": "3e330555d8888533cc1f9801ca60f91faf6e558c17f503c1f35a208e3ba355a1"
+    "historical_population_sha256": "fe09f3a155da13df5baab13b204c3bc1589a0a4ba26dc818371506acb4015b02",
+    "historical_acceptance_sha256": "3b958367959e4a9fa813e2c7c81066df3fbc7e9eb38127f09bd721e337980496"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9313,7 +9313,7 @@
     "?Audio_Create_Device@@YIPAUAudioDevice@@HPBUAudioFormat@@@Z": 4205680,
     "?Audio_Main_Device@@3PAUAudioDevice@@A": 8590392,
     "?Audio_Main_Bag@@3PAUAudioBag@@A": 8590388,
-    "?Audio_Streamer_Init@@YAHXZ": 4224128,
+    "?Audio_Streamer_Init@@YIHXZ": 4224128,
     "?Audio_Is_On@@3HA": 8590396,
     "?Audio_Update_Busy@@3HA": 8590444,
     "?Audio_Update_Last@@3_JA": 8590448,

@@ -381,7 +381,7 @@ void __fastcall Audio_Source_Reset(AudioSource *source);                        
 int __fastcall Audio_Format_Read_Wave(FileClass *file, AudioFormat *format, int *data_size);  // 0x00408530
 void __fastcall Audio_Format_Init(AudioFormat *format);                                     // 0x004084C0 zero-fills it
 AudioChannel *__fastcall Audio_Device_Create_Channel(AudioDevice *device, int flags);       // 0x004036C0
-int Audio_Streamer_Init();                                                                  // 0x00407480
+int __fastcall Audio_Streamer_Init();                                                                // 0x00407480
 DWORD __stdcall Audio_Streamer_Proc(void *parameter);                                       // 0x004075B0
 void Audio_Streamer_Shutdown();                                                             // 0x004076B0
 AudioStreamPlayer *__fastcall Audio_Stream_Create(AudioDevice *device, __int64 buffer_time);              // 0x00407790

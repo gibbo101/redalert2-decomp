@@ -4,8 +4,8 @@
     "id": "population-3246",
     "inventory_sha256": "e40c783bc09f6d5eba5f36cb6cd5a013c6a087c8b5eaad809918255a60a7b022",
     "gaps_sha256": "5fa89f0401f7477fa5984aaefcd14a1315e6a9c0ecade75d95bf4beadba3404d",
-    "historical_population_sha256": "69aa9bc19075bae2841b9c5394fedfaa45ce0d2382a08f4a8d5ee2024e221446",
-    "historical_acceptance_sha256": "7d9a775a412d228133633b270837db52f549dd96bd24a3b5aa4420aaffc2b8bd"
+    "historical_population_sha256": "f0f5dad83f95eb2a52fcd255305163e9680121640140eecaff4bf212c1c15e6c",
+    "historical_acceptance_sha256": "b8bfe4abd2e995a17fdc8a48868413778eac6aa181785a33a392d41dc1c02260"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8328,7 +8328,7 @@
     "?Audio_Stream_Wait@@YIXPAUAudioStreamPlayer@@@Z": 4227088,
     "?Audio_Streamer@@3UAudioStreamerThread@@A": 8590464,
     "?Audio_Streamer_Handle@@3PAXA": 8590592,
-    "?Audio_Streamer_Init@@YAHXZ": 4224128,
+    "?Audio_Streamer_Init@@YIHXZ": 4224128,
     "?Audio_Streamer_Initialized@@3HA": 8590636,
     "?Audio_Streamer_Proc@@YGKPAX@Z": 4224432,
     "?Audio_Streamer_Running@@3HA": 8590640,
