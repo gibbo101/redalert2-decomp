@@ -110,7 +110,7 @@ HRESULT __stdcall CChatEventSink::OnChannelList(HRESULT result, WOL::Channel *ch
 // @ref ?Insert_00766c20@WolChannelArray@@=00766c20
 // @ref ?Get_00768260@WolIntArray@@=00768260
 // @ref ?Remove_007681a0@WolIntArray@@=007681a0
-// @ref ?Grow_00768320@WolStringArray@@=00768320
+// @ref ?Grow_00768320@?$WolArrayList@VWstring@@@@=00768320
 // @ref ?unknown_channel_requests_b29390=00b29390
 // @ref ?unknown_lobbies_b26c88=00b26c88
 // @ref ?unknown_games_b29990=00b29990

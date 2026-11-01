@@ -4,8 +4,8 @@
     "id": "population-3313",
     "inventory_sha256": "897ebee5648df1f5beaa85fd8b129d8c18c80e6652bdc5016ebd348c4f82fc68",
     "gaps_sha256": "fe124168a4492470ff9a4eb46d4e36e0bead1982f2de3d93031086f12ceb1621",
-    "historical_population_sha256": "cb167485d485fce2f3effef8c286d6904cb518f8c3a79ae35719f9527a6e85b8",
-    "historical_acceptance_sha256": "36d6fa07f88fa56328412c71a676a416d98fd1e8a43a1b3ca42fe24175a449c8"
+    "historical_population_sha256": "23e60faead68542d756f2665acd7570954b9dfd5dd80e3355a7a8ac77badcf43",
+    "historical_acceptance_sha256": "211c62124ff5f334810e220aad7b65405c2e47451f14b2d269e766969af7af51"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8149,7 +8149,7 @@
     "__imp__StringFromGUID2@12": 7972308,
     "__imp__LoadTypeLib@8": 7971672,
     "?CreateInstance@IUnknownPtr@@QAEJABUGUID@@PAUIUnknown@@K@Z": 6886480,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "?Get_UnknownHex_469f10@CCINIClass@@QBE?AUUnknownHexValue@@PBD0H@Z": 4628240,
     "?Put_UnknownHex_469f30@CCINIClass@@QAE_NPBD0H@Z": 4628272,
     "?Create@CarryoverClass@@QBE_NXZ": 4623696,

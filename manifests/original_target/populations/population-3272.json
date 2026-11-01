@@ -4,8 +4,8 @@
     "id": "population-3272",
     "inventory_sha256": "66d7a7f05ddb5afd0fa43dfd12b550a56143047f1965aab31a7201bb94780a30",
     "gaps_sha256": "39a563d29650b49a51d8467b7bf436ed5cddd49437f9779b11b9375e91a53a8a",
-    "historical_population_sha256": "696a17cfd3df89d9c8f5a3c74503b2b28b55466f885565d7f324e8e511c6c138",
-    "historical_acceptance_sha256": "2b28886cbd7f4d553a58a7ea31e6aedab66270fe1f6463afd70dc2f4282bf7c2"
+    "historical_population_sha256": "db194de51be315a0f724c06c3d0e69de5ab37876591a2dad8feef8474a1a9eba",
+    "historical_acceptance_sha256": "61f34528769660e254888000771d1fe6349857ba224f9bf59e46ed3ba4fa1db5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8970,7 +8970,7 @@
     "__imp__RegDeleteKeyA@8": 7970848,
     "?CreateInstance@IUnknownPtr@@QAEJABUGUID@@PAUIUnknown@@K@Z": 6886480,
     "__imp__SetForegroundWindow@4": 7972048,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "??_GNode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
     "??0WindowsVersionInfo@@QAE@XZ": 7564976,
     "?Get_UnknownHex_469f10@CCINIClass@@QBE?AUUnknownHexValue@@PBD0H@Z": 4628240,

@@ -4,8 +4,8 @@
     "id": "population-3344",
     "inventory_sha256": "2b2a307dbab74a5b5cecf40922206c24c7c44c976dd407653b0d0ec665c922c5",
     "gaps_sha256": "0211ebc8692239d5690c4a6da022a7b6f71fb210a9a798b0f9b680ba11070a4f",
-    "historical_population_sha256": "b8178d57744acfb8ca18825689a26558a3e6106a38539330d1ffe24e1700529f",
-    "historical_acceptance_sha256": "c2926dbff0058ace3ff0af423d76e3078900e77ff5464aa1bb1d124715c1ab61"
+    "historical_population_sha256": "ae69c8715fa23153b410f6315aee94093f0fe8a925142721fe7e8cf3159ae0a3",
+    "historical_acceptance_sha256": "c93265a99fe24516bec94980e4fd247a54ed64853ea88aa17d823dce56dab3fb"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6462,7 +6462,7 @@
     "?CurrentDialogResource@@3HA": 11689432,
     "__imp__CreateDialogIndirectParamA": 7971912,
     "?Get@UnknownSelection@@QAEPAVObjectClass@@H@Z": 6997952,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "?cleanup@Leaf_40e2e0@@QAEXXZ": 5290192,
     "?cleanup@Leaf_47cfa0@@QAEXXZ": 4656768,
     "?cleanup@Leaf_4a5780@@QAEXXZ": 4926048,

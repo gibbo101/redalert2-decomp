@@ -4,8 +4,8 @@
     "id": "population-3267",
     "inventory_sha256": "db946d97a0686c71de2240c5d9df9f75f93a128526cd0acf8fa51374f981ea7e",
     "gaps_sha256": "b023cdcfbaf64eda1ef995639d4de89e78193e3d20dc4929fc8531a0739a88b7",
-    "historical_population_sha256": "1147c72c3625ab32bdd08419f867cbcdf5ad619455df456d6a01642bba09c9c9",
-    "historical_acceptance_sha256": "cdfc97fc99e20a8ba3bfce4498004db40e668859f7e6d93940bde1be294a304b"
+    "historical_population_sha256": "111b4f5208b4a0504b9a06711fb35dc0a28fdc3fbbd78de24af0b83586241d0b",
+    "historical_acceptance_sha256": "80aa3d1ce4f2519f84923053c17ea7b9fdb2d171200faf48b855acf746bbc812"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10442,7 +10442,7 @@
     "?Unknown_0055BD70@MapClass@@QAEIPAVCellClass@@@Z": 5619056,
     "?CRC@@3PAKA": 11230940,
     "?Unknown_00562EA0@MapClass@@QAEXXZ": 5648032,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "??_GNode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
     "__imp__CreateDialogIndirectParamA@20": 7971912,
     "?CurrentDialog@@3PAUHWND__@@A": 11689428,

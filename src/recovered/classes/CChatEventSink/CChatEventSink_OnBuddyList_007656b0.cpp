@@ -6,8 +6,8 @@
 // @ref ?Unknown_00757380@@YAXXZ=00757380
 // @ref ?unknown_wstring_b26944@@3VWstring@@A=00b26944
 // @ref ?unknown_b2a7f8@@3KA=00b2a7f8
-// @ref ?Get_007662c0@WolStringArray@@QAE_NAAVWstring@@H@Z=007662c0
-// @ref ?Remove_007661f0@WolStringArray@@QAE_NH@Z=007661f0
+// @ref ?Get_007662c0@?$WolArrayList@VWstring@@@@QAE_NAAVWstring@@H@Z=007662c0
+// @ref ?Remove_007661f0@?$WolArrayList@VWstring@@@@QAE_NH@Z=007661f0
 
 HRESULT __stdcall CChatEventSink::OnBuddyList(HRESULT result, WOL::User *buddies)
 {

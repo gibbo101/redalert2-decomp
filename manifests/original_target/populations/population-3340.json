@@ -4,8 +4,8 @@
     "id": "population-3340",
     "inventory_sha256": "210403227ddd14f20a9e8ea4c0a25779354b0d1f347741e8a06bef83a578ae68",
     "gaps_sha256": "4211b204fbf330f842ac81ebefcceceb695dea9a19980618325c7e76393447e4",
-    "historical_population_sha256": "39a03ae3a65d27a51f01f0c1448c665ffe7ab660d913250444e4367fd72ee759",
-    "historical_acceptance_sha256": "b523707b50416e0ea88ffe92662ede89c1ffd6f8908eb28e477e6a5ae3e8465a"
+    "historical_population_sha256": "edc8f20e34c0105bc8128ca68c79961b0cc5d2dde18538689a010b13d4fdee72",
+    "historical_acceptance_sha256": "9fb940d3366a685c06b78bbdb338193f35f61c851aac6562dd3d0e88a47a95c5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9888,7 +9888,7 @@
     "__imp__StringFromGUID2@12": 7972308,
     "__imp__LoadTypeLib@8": 7971672,
     "?CreateInstance@IUnknownPtr@@QAEJABUGUID@@PAUIUnknown@@K@Z": 6886480,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "??_GNode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
     "??0ThemeClass@@QAE@XZ": 7240800,
     "__imp__CreateDialogIndirectParamA@20": 7971912,

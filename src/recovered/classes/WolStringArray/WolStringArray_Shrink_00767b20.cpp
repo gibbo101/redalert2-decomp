@@ -1,5 +1,5 @@
 #include "shared/wol_sink.hpp"
-bool WolStringArray::Shrink_00767b20()
+template<> bool WolArrayList<Wstring>::Shrink_00767b20()
 {
     if (Count * 3 > Capacity) return false;
     int capacity = Capacity / 2;

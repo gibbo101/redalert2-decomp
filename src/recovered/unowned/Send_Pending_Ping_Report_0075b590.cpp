@@ -1,4 +1,4 @@
-// @ref ?Shrink@WolStringArray@@QAE_NXZ=00767b20
+// @ref ?Shrink@?$WolArrayList@VWstring@@@@QAE_NXZ=00767b20
 // @ref ??_GWstring@@QAEPAXI@Z=007667c0
 // @ref ?ping_report_title_8000ec@@3PADA=008000ec
 // @ref ?ping_report_pending_8000c0@@3PADA=008000c0

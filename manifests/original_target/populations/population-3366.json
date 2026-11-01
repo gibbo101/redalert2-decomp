@@ -4,8 +4,8 @@
     "id": "population-3366",
     "inventory_sha256": "6327afc7385b03db7e641cd2e246f94940080a990ff10e25b51afbd004858bd4",
     "gaps_sha256": "8b00df2c6a71e2be63946fddec3963e124d75093c0aa09a5efb115d78d262878",
-    "historical_population_sha256": "c2e7786853857291fe11c465fb902df49a95a96b411306238015c1b57215badf",
-    "historical_acceptance_sha256": "c7cf0efa478fa09877965814d76d887b0bb558cebfa1642bc691bdc11ccbca69"
+    "historical_population_sha256": "0a8aef31ae9c74bae8d8d75d7ba386b8e10bdccda76b6637430ed262d01ba53f",
+    "historical_acceptance_sha256": "0a2b551b759eafb4a428e75b94f008d11177044db0191184e8a7db046f2bd037"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8951,7 +8951,7 @@
     "?CreateInstance@IUnknownPtr@@QAEJABUGUID@@PAUIUnknown@@K@Z": 6886480,
     "?unknown_53f460@@YA_NXZ": 5502048,
     "?unknown_53fbd0@@YI_NXZ": 5503952,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "?Save_Recording_Values@@YI_NAAVCCFileClass@@@Z": 5335808,
     "??_GNode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
     "??0ThemeClass@@QAE@XZ": 7240800,

@@ -17,6 +17,7 @@
 // hypotheses otherwise.
 #ifndef RA2_WOL_SINK_HPP
 #define RA2_WOL_SINK_HPP
+#include "shared/wol_array_list.hpp"
 // The unit inlines VectorClass::operator[] and DynamicVectorClass::Count (0x0073F550).
 #ifndef VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
@@ -480,114 +481,7 @@ public:
     bool Insert_00766f90(int const &value, int index);
     bool Remove_007681a0(int index);
 };
-class WolStringArray {
-public:
-    WolStringArray() : Count(0), Capacity(0), Items(0) {}
-    ~WolStringArray() {
-        for (int i = 0; i < Count; ++i) Items[i].~Wstring();
-        Count = 0;
-        operator delete(Items);
-    }
-    void Clear() {
-        for(int i=0;i<Count;++i) Items[i].~Wstring();
-        Count=0;
-    }
-    int Count;
-    int Capacity;
-    Wstring *Items;
-    // Copies and removes the last string (the published ArrayList operation).
-    char Remove_Tail(Wstring &text) {
-        int index=Count-1;
-        char found=Get(text,index);
-        if(found==0) return 0;
-        return Remove(index);
-    }
-    bool Grow_00768320();
-    bool Grow() {
-        if (Count < Capacity) return false;
-        int capacity = Count * 2;
-        if (capacity < 10) capacity = 10;
-        Wstring *items = (Wstring *)operator new(capacity * sizeof(Wstring));
-        memset(items, 0, capacity * sizeof(Wstring));
-        if (Items) memcpy(items, Items, Count * sizeof(Wstring));
-        operator delete(Items);
-        Items = items;
-        Capacity = capacity;
-        return true;
-    }
-    bool Shrink_00767b20();
-    bool Remove_007661f0(int index);
-    bool Remove(int index) {
-        if(Count==0) return false;
-        if(index<0) index=0;
-        if(index>=Count) index=Count-1;
-        Items[index].~Wstring();
-        memmove(Items+index,Items+index+1,(Count-index-1)*sizeof(Wstring));
-        --Count;
-        if(Count*3<=Capacity) Shrink();
-        return true;
-    }
 
-    bool Remove_Inline(int index) {
-        if(Count==0) return false;
-        if(index<0) index=0;
-        if(index>=Count) index=Count-1;
-        Items[index].~Wstring();
-        memmove(Items+index,Items+index+1,(Count-index-1)*sizeof(Wstring));
-        --Count;
-        if(Count*3<=Capacity) Shrink_00767b20();
-        return true;
-    }
-    bool Shrink() {
-        if (Count * 3 > Capacity) return false;
-        int capacity = Capacity / 2;
-        if (capacity < 10) capacity = 10;
-        if (capacity >= Capacity) return false;
-        Wstring *items = (Wstring *)operator new(capacity * sizeof(Wstring));
-        if (Items) memcpy(items, Items, Count * sizeof(Wstring));
-        operator delete(Items);
-        Items = items;
-        Capacity = capacity;
-        return true;
-    }
-    bool Get(Wstring &text, int index) {
-        if (index >= 0 && index < Count) { text = Items[index]; return true; }
-        return false;
-    }
-    bool Insert(Wstring const &text, int index); // original complete method 0x007679c0
-    bool Get_007662c0(Wstring &text, int index); // out of line in wonline.cpp (accepted unowned 0x007662C0)
-    void Add(Wstring const &text) {
-        int index = Count;
-        if (index > Count) index = Count;
-        if (index >= Capacity) Grow_00768320();
-        if (Count >= Capacity) Grow_00768320();
-        if (index < Count) memmove(Items + index + 1, Items + index, (Count - index) * sizeof(Wstring));
-        new (Items + index) Wstring(text);
-        ++Count;
-    }
-    // Published ArrayList::add and addTail operations, with the actual element reference.
-    char Add_At(Wstring &text,int index) {
-        if(index>Count) index=Count;
-        if(index>=Capacity) Grow();
-        if(Count>=Capacity) Grow();
-        if(index<Count) memmove(Items+index+1,Items+index,(Count-index)*sizeof(Wstring));
-        new(Items+index) Wstring(text);
-        ++Count;
-        return 1;
-    }
-    int Length() const { return Count; }
-    char Add_Tail(Wstring &text) { return Add_At(text,Length()); }
-    void Prepend(Wstring const &text) {
-        int index = 0;
-        if (index > Count) index = Count;
-        if (index >= Capacity) Grow_00768320();
-        if (Count >= Capacity) Grow_00768320();
-        if (index < Count) memmove(Items + index + 1, Items + index, (Count - index) * sizeof(Wstring));
-        new (Items + index) Wstring(text);
-        ++Count;
-    }
-
-};
 #include "shared/wol_dictionary.hpp"
 // Name sets: the value is a 4-byte payload that has not been identified.
 class WolChannelNameSet : public WolDictionary<Wstring, int> {

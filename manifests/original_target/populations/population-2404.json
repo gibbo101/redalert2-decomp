@@ -4,8 +4,8 @@
     "id": "population-2404",
     "inventory_sha256": "b6109758f20cf6f5b8b52d32299b0bb7d60daea2a6e815a551223e4c1d4a27f8",
     "gaps_sha256": "350cbe1058c673abcb06e48c59b7e340fe062bed672f1f64b2b8837ece9fdfba",
-    "historical_population_sha256": "5bc9832c6db45e72fe9cfeb79b13085bca6cb4e3de82fdadcc37a5736302bbfc",
-    "historical_acceptance_sha256": "99e74221c090c0abfafd5032b28d23c44ba87dc2e547ec3497a976639e405de6"
+    "historical_population_sha256": "32fb75b3c2d8ea2c2fcd35df907755877a15e709a67890b0c209239d366e8bd3",
+    "historical_acceptance_sha256": "8466027cf3e523f4bd5599e622d8bef2beb941b8e7919108619b2ac600303d61"
   },
   "references": {
     "??_7?$CComObject@VCChatEventSink@@@ATL@@6B@": 8058748,
@@ -2624,10 +2624,10 @@
     "?unknown_lobbies_b26c88@@3VWolChannelArray@@A": 11693192,
     "?unknown_games_b29990@@3VWolChannelArray@@A": 11704720,
     "?Insert_00766c20@WolChannelArray@@QAE_NABUChannel@WOL@@H@Z": 7760928,
-    "?unknown_game_names_b2a648@@3VWolStringArray@@A": 11707976,
-    "?Grow_00768320@WolStringArray@@QAE_NXZ": 7766816,
+    "?unknown_game_names_b2a648@@3V?$WolArrayList@VWstring@@@@A": 11707976,
+    "?Grow_00768320@?$WolArrayList@VWstring@@@@QAE_NXZ": 7766816,
     "?unknown_channel_names_b293a0@@3VWolChannelNameSet@@A": 11703200,
-    "?unknown_pending_names_b29468@@3VWolStringArray@@A": 11703400,
+    "?unknown_pending_names_b29468@@3V?$WolArrayList@VWstring@@@@A": 11703400,
     "?unknown_ladder_cache_b2ac24@@3PAVWolLadderCache@@A": 11709476,
     "?unknown_ladder_client_a72d00@@3PAUWolLadderClient@@A": 10956032,
     "?unknown_channel_event_b26504@@3PAXA": 11691268,

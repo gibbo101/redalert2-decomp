@@ -4,8 +4,8 @@
     "id": "population-3255",
     "inventory_sha256": "536e7fd0da84fab2f022a2471421f12c6746d75f22dcd86b120717dc48f6a8b4",
     "gaps_sha256": "34468155dbc96b45aad77ebe06390214487c71825c9af1554fa9fb43aded6c45",
-    "historical_population_sha256": "0c9c3f1621fb297ace44821e0694035d7ba0683bbbfeba8f75d55d339968c708",
-    "historical_acceptance_sha256": "2bb31c742aa615f0e9624ffaa6dfdeed3c001eb8bbbeb2f69c08312a5ba58cc5"
+    "historical_population_sha256": "78bb1803fe6e875a92a0d4441d2f55274a53c0ac4e87f74aec5859d45d8f82b6",
+    "historical_acceptance_sha256": "24d01fc4ae0cd8a4574962f1680352fe29b980f3fd2231ff4a9061cd587b6d5b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8721,7 +8721,7 @@
     "?unknown_chem_missile_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7022688,
     "?unknown_select_sidebar_tab@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7024656,
     "?unknown_sidebar_6822b0@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7024736,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "??_GNode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
     "?Get_UnknownHex_469f10@CCINIClass@@QBE?AUUnknownHexValue@@PBD0H@Z": 4628240,
     "?Put_UnknownHex_469f30@CCINIClass@@QAE_NPBD0H@Z": 4628272,

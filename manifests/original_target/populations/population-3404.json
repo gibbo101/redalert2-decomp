@@ -4,8 +4,8 @@
     "id": "population-3404",
     "inventory_sha256": "9f56d266568bda21f516411a71773c44ead8b1ae164eb3f6f0b2a171e055a676",
     "gaps_sha256": "b7f82ca41a6a0cf94979d2f29b9748246b5b38e139a0a5297ab2be087e272dae",
-    "historical_population_sha256": "6b3b45c674ca8b1a6ae98831f64a4ef1cbf1dfa3d71ee8552193855be515f54f",
-    "historical_acceptance_sha256": "3e6842140fc8d5baf93f9a170f8e9f26c2276a3dc62b2b0c6e56cb14757cadd4"
+    "historical_population_sha256": "f3a9192ccbf4125477ee63d72c2ed8f2e2acf17b619364d4c84b0105d95a82e5",
+    "historical_acceptance_sha256": "26835f028f8e8c1dedffad147f8e2ddd06999cc9d28718d625133794c264a1b4"
   },
   "references": {
     "_unknown_empty_rect": 8710576,
@@ -5021,7 +5021,7 @@
     "?Increase_Table_Size@?$IndexClass@HPAVCommandClass@@@@QAE_NH@Z": 5367648,
     "?Trim_Trailing@WideString@@QAEXABV1@@Z": 7799344,
     "?CRC@@3PAKA": 11230940,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "??_GNode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
     "?Find_Entry@INISection@INIClass@@QBEPAUINIEntry@2@PBD@Z": 5308880,
     "?Put_TextBlock@INIClass@@QAE_NPBD0@Z": 5296912,

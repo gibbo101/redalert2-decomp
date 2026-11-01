@@ -1,5 +1,5 @@
 #include "shared/wol_sink.hpp"
-bool WolStringArray::Remove_007661f0(int index)
+template<> bool WolArrayList<Wstring>::Remove_007661f0(int index)
 {
     if(Count==0) return false;
     if(index<0) index=0;

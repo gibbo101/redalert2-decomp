@@ -4,8 +4,8 @@
     "id": "population-3437",
     "inventory_sha256": "10439234c1b88792c512d3483dc152166d03d3da2aa85987f82c8d67e8c53c20",
     "gaps_sha256": "6bf604acd7ab622ff35b58fb45ec83a12a3dc1745a14dfa2d479dee1e4f65460",
-    "historical_population_sha256": "172c5d2ff481dbf0e40118fcb28b97d202f4a88fbc434ce00f56d272db3b3bfa",
-    "historical_acceptance_sha256": "dae07eb713c86ea8039af6865621b57e31708099f1f53580bc1a75c3dbd24a6d"
+    "historical_population_sha256": "53e264f3ac1fdc9ef4db85cce6c8f35cab2ec2d73c0f3f23b7d8b369ba6b83e6",
+    "historical_acceptance_sha256": "bb1d16541101aed543bcccdcf342646061dbafc5206d81d9305dbd5aa951f572"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -5884,7 +5884,7 @@
     "?Insert@WideString@@QAE_NGI@Z": 7800288,
     "??_7PlayerProfile@@6B@": 8058196,
     "?Trim_Trailing@WideString@@QAEXABV1@@Z": 7799344,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "?Save_007395d0@PlayerProfile@@QAEXABVWstring@@@Z": 7574992,
     "??0INIClass@@QAE@XZ": 5352784,
     "?Replace@Wstring@@QAE_NPBD0@Z": 7793296,

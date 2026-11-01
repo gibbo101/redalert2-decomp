@@ -1,5 +1,5 @@
 #include "shared/wol_sink.hpp"
-bool WolStringArray::Insert(Wstring const &text, int index)
+template<> bool WolArrayList<Wstring>::Insert(Wstring const &text, int index)
 {
     if (index > Count) index = Count;
     if (index >= Capacity) Grow();

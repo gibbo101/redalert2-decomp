@@ -4,8 +4,8 @@
     "id": "population-3046",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "9fe512de4364bf612f9c7d82844220d2a45e1eca125b28c9a3797bf27f15094a",
-    "historical_acceptance_sha256": "218e739be3379081531aeae3c600be7803f9a88c63a161182e9a14cbd24d2f37"
+    "historical_population_sha256": "78aa0be76ee91cca965b17ad4447ec5d9ea74c466e58bc62ae34c5b1689315f1",
+    "historical_acceptance_sha256": "53b2a1b905b4ada3a06d24bfede9245d0e9d1a5e16b2c42eea48792140bd5bbb"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2529,7 +2529,7 @@
     "?Release@ReferenceCounted@@UAEXXZ": 6526752,
     "?Trim_Trailing@WideString@@QAEXABV1@@Z": 7799344,
     "?Get@UnknownSelection@@QAEPAVObjectClass@@H@Z": 6997952,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "__imp__MapVirtualKeyA@8": 7971800,
     "__imp__DialogBoxParamA@20": 7971780,
     "__imp__CallWindowProcA@20": 7972032,

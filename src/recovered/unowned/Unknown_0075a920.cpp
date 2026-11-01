@@ -19,7 +19,7 @@ rc_ptr<WorldDominationTour::Campaign> const &__fastcall Current_WDT_Campaign_007
 // @ref ??_G?$rc_ptr@VCampaign@WorldDominationTour@@@@UAEPAXI@Z=00726b40
 // @ref ?unknown_a40230@@3HA=00a40230
 // @ref ?unknown_b2997c@@3VWstring@@A=00b2997c
-// @ref ?unknown_strings_b29828@@3VWolStringArray@@A=00b29828
+// @ref ?unknown_strings_b29828@@3V?$WolArrayList@VWstring@@@@A=00b29828
 // @ref ?unknown_b2ac2c@@3HA=00b2ac2c
 // @ref ?unknown_b2ab88@@3HA=00b2ab88
 // @ref ?unknown_b2a8a4@@3JA=00b2a8a4

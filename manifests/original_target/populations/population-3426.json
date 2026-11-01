@@ -4,8 +4,8 @@
     "id": "population-3426",
     "inventory_sha256": "6cde89bea531f503e86a0c785f67aebc8c5f451f75803494d6f72d99d2734055",
     "gaps_sha256": "3862e46e6c2c0a574679c32c236664863e1da80729bbe8c4fae41829df55a54d",
-    "historical_population_sha256": "fa8e671357b8791a8ff546aa63100c17f21ab3d42406db4ffb30b61c64a409e9",
-    "historical_acceptance_sha256": "8b59d28c2ae136c752557ea070a75400d2f1290ce94d4dea93ad1fc09549193f"
+    "historical_population_sha256": "ca91637139cb5a9d9c8b955ecf13f492a20eeeb5c9824032e616c21c20f05be7",
+    "historical_acceptance_sha256": "8cc96a4e7495aff9894622635dcddbee5fbe2a26db1fd97ad550d7e98d902790"
   },
   "references": {
     "_unknown_static_rect": 11260112,
@@ -3427,7 +3427,7 @@
     "?Get@UnknownSelection@@QAEPAVObjectClass@@H@Z": 6997952,
     "_?unknown@?3??Faction_Name@@YIABVWstring@@H@Z@4V2@A": 11709704,
     "_?unknown@?3??Faction_Code@@YIABVWstring@@H@Z@4V2@A": 11709652,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "?Save_007395d0@PlayerProfile@@QAEXABVWstring@@@Z": 7574992,
     "?Get@UnknownControlIndex@OwnerDraw@@QBE_NABIAAPAUUnknownControlRecord@2@@Z": 6297360,
     "?Get@Base64Straw@@UAEHPAXH@Z": 4372560,

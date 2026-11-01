@@ -4,8 +4,8 @@
     "id": "population-3276",
     "inventory_sha256": "380dc5275b3b8ac018e3ef4883c098ec83e4133e3d2cb90a5de42c89e292d616",
     "gaps_sha256": "f0074da2a6fac60a04ae9401224523000f9b5c2c0d6d47c1ddc5d6f3d71cc9f6",
-    "historical_population_sha256": "f006a9b4f3a429469289366b251e8a83c1a9d1a4ae4f79bc3f998e6b34387867",
-    "historical_acceptance_sha256": "5d1d801f328044a9ea862e7976e2af095f026a8f87dd81b1ec7ff7ad80089737"
+    "historical_population_sha256": "6b9de3e674499518f66cb9c81e7853ce2b68f8576060abc521d5feca16812ef5",
+    "historical_acceptance_sha256": "87e42aa9f4888e6a91d58297ee464c29f025947c5cdb1540c3a55abd34c02848"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7311,7 +7311,7 @@
     "__imp__SetForegroundWindow@4": 7972048,
     "?unknown_53f460@@YA_NXZ": 5502048,
     "?unknown_53fbd0@@YI_NXZ": 5503952,
-    "?Insert@WolStringArray@@QAE_NABVWstring@@H@Z": 7764416,
+    "?Insert@?$WolArrayList@VWstring@@@@QAE_NABVWstring@@H@Z": 7764416,
     "?Save_Recording_Values@@YI_NAAVCCFileClass@@@Z": 5335808,
     "??_GNode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
     "??_7?$VectorClass@PAUThemeControl@@@@6B@": 8006340,
