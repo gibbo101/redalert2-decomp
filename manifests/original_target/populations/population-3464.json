@@ -4,8 +4,8 @@
     "id": "population-3464",
     "inventory_sha256": "3a0cbffa5f4a0e79ca5f06b00860f121ff2a989390e5199f6645b22526c710d9",
     "gaps_sha256": "16147c2d716f3455ecdbb1797cd50069c8c595d301c818c6b7c2f07d406f22f0",
-    "historical_population_sha256": "0b36497f30dc761740b48dae6fc6a54a1cd26d6b262bf44f166de4e722d85c20",
-    "historical_acceptance_sha256": "43ef349edef08584cd9b9201c3a470c033b7d37cac7a627f512bdf594ea273e0"
+    "historical_population_sha256": "d5c672987e4c0f6935d0a2c38ebdd8b7e9140c92cb6a612b6a9956e64bcb79ae",
+    "historical_acceptance_sha256": "4953f89711c24bea8325e2314b9f21a2215cd4f1411c1e0ee9d3ab021120eb8e"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -10422,7 +10422,7 @@
     "?unknown_add@UnknownFloats_0069ae50@@QAEMMH@Z": 6925904,
     "?unknown_set_timecode@@YIXPBGPAUUnknownTimed_0069be40@@@Z": 6929984,
     "?unknown_add_ref@UnknownComHolder_0069ed20@@QAEXXZ": 6941984,
-    "?unknown_lepton_to_pixel@@YGXHHPAH0@Z": 6973728,
+    "?Lepton_To_Map_Pixel@Tactical@@QAEXHHAAH0@Z": 6973728,
     "?unknown_reset_flags_ac109c@@YAXXZ": 7281184,
     "?unknown_dispatch@@YAXXZ": 7300240,
     "?unknown_flag_bit0@@YIEPBUUnknownFlags_006f8a70@@@Z": 7309936,

@@ -4,8 +4,8 @@
     "id": "population-2688",
     "inventory_sha256": "72560ee40d9982cfd66ff8a7ab4123db55b136ab1d4ef68ea2eefec0c537d48b",
     "gaps_sha256": "0cd3b6300732a62ad984dbe4c7b87f4e2fcef785409edae5021ed4460a9225d0",
-    "historical_population_sha256": "28a8f4fc2af911c3dfe413e60f12493b30c65d84ce1b801ccfdd8db9e2c4a4d9",
-    "historical_acceptance_sha256": "c1c1f1382aa47140caa2361dcf32524babf756680facb9d5adba4f00de95aec7"
+    "historical_population_sha256": "809f45e1a5a0eeb8baba86f4cddfc8cf7ec993f502872069d7dd4fe9de5f4e1f",
+    "historical_acceptance_sha256": "c86e0630d5f67ba9cacd2fd5ae4a5cae3835771cd7b95f04e75913125e697d57"
   },
   "references": {
     "?unknown_map_dialog_modified_a70068@@3_NA": 10944616,
@@ -1951,7 +1951,7 @@
     "?Save@SavegameInformation@@QAEJPAUIStorage@@@Z": 6657328,
     "__real@8@bfffc90fdaa22168c000": 8032208,
     "__real@8@40048000000000000000": 8051888,
-    "?Write_INI_0061DC80@UnknownPreview_0061D430@@QAEXAAVCCINIClass@@@Z": 6413440,
+    "?Write_INI_0061DC80@UnknownPreview_0061D430@@QAE_NAAVCCINIClass@@@Z": 6413440,
     "??0UnknownPreview_0061D430@@QAE@XZ": 6411312,
     "?Unknown_0061D660@UnknownPreview_0061D430@@QAEXXZ": 6411872,
     "?Save@UnknownIDSource@@QAEXPAUIStream@@@Z": 6688608,

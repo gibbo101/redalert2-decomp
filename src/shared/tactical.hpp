@@ -62,6 +62,12 @@ struct TacticalProjection {
 // 10-12, 23) are not declared yet.
 class Tactical : public AbstractClass {
 public:
+#ifdef TACTICAL_DECLARE_LEPTON_TO_MAP_PIXEL
+    // The isometric map pixel of a lepton position: 60 across and 30 down per 256 leptons in X,
+    // (-60, 30) in Y, X offset by 0x3C00 (0x006A6920; TibSun Tactical::Lepton_To_Map_Pixel; the
+    // body does not read this).
+    void Lepton_To_Map_Pixel(int x, int y, int &pixel_x, int &pixel_y);
+#endif
     // Ramp index at coord; original006A7110, unusedthis in body.
     int Get_Cell_Ramp_006a7110(CoordStruct const &coord);
     Tactical();                                     // 0x006A24B0 (Read_Scenario_INI makes a new view)

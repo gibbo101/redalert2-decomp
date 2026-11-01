@@ -4,8 +4,8 @@
     "id": "population-3246",
     "inventory_sha256": "e40c783bc09f6d5eba5f36cb6cd5a013c6a087c8b5eaad809918255a60a7b022",
     "gaps_sha256": "5fa89f0401f7477fa5984aaefcd14a1315e6a9c0ecade75d95bf4beadba3404d",
-    "historical_population_sha256": "a53a9c0d2ae49a8618de7146f8a4ae9f5c2b285cdb5d7a75bffadee9e64e5a92",
-    "historical_acceptance_sha256": "9f5f90a27c3532d21700bf18c6e242fc5117380e3f7bdc3907dc18a0d164226e"
+    "historical_population_sha256": "fc06f24518c8cbbd176048478a182cc01d4aa6f6f79f0fa1ca2101454e24df19",
+    "historical_acceptance_sha256": "f28f830d5581c6d5dc2ebb138bf2996f14bfb20a7f3edf1ecc80b466a8d84106"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -14707,7 +14707,7 @@
     "?Unknown_0061CB50@PowerClass@@QAEXXZ": 6409040,
     "?Unknown_0061CBC0@PowerClass@@QAEXXZ": 6409152,
     "?Unknown_0061D660@UnknownPreview_0061D430@@QAEXXZ": 6411872,
-    "?Unknown_0061E2A0@UnknownPreview_0061D430@@QAEXPBD@Z": 6415008,
+    "?Unknown_0061E2A0@UnknownPreview_0061D430@@QAE_NPBD@Z": 6415008,
     "?Unknown_0061E490@UnknownPreview_0061D430@@QAEPAGHPAH@Z": 6415504,
     "?Unknown_0061E930@UnknownPreview_0061D430@@QAEXPBG@Z": 6416688,
     "?Unknown_0061EFA0@ProgressScreenClass@@QAEXUPoint2D@@PBG_N2@Z": 6418336,
@@ -15497,7 +15497,7 @@
     "?Write_INI@UnitClass@@SIXAAVCCINIClass@@@Z": 7368544,
     "?Write_INI_0041A6C0@AircraftClass@@SIXAAVCCINIClass@@@Z": 4302528,
     "?Write_INI_0049D910@DisplayClass@@QAEXAAVCCINIClass@@@Z": 4839696,
-    "?Write_INI_0061DC80@UnknownPreview_0061D430@@QAEXAAVCCINIClass@@@Z": 6413440,
+    "?Write_INI_0061DC80@UnknownPreview_0061D430@@QAE_NAAVCCINIClass@@@Z": 6413440,
     "?Write_MultiPlayer_Settings@UnknownSessionState@@QAEXXZ": 6751104,
     "?Write_Multiplayer_Statistics_00482fe0@@YAXXZ": 4730848,
     "?Write_PCX_File@@YIHAAVFileClass@@AAVSurface@@PAVPaletteClass@@@Z": 7772352,
@@ -18850,7 +18850,7 @@
     "?unknown_layers_7d5cdc@@3PAHA": 8215772,
     "?unknown_layers_7d5ce8@@3PAHA": 8215784,
     "?unknown_left_rotor_83c554@@3PBXB": 8635732,
-    "?unknown_lepton_to_pixel@@YGXHHPAH0@Z": 6973728,
+    "?Lepton_To_Map_Pixel@Tactical@@QAEXHHAAH0@Z": 6973728,
     "?unknown_level_height_850348@@3HA": 8717128,
     "?unknown_level_height_ad0588@@3HA": 11339144,
     "?unknown_light_scale_79c7a8@@3NB": 7980968,

@@ -9,7 +9,7 @@
 // @ref ??0UnknownPreview_0061D430@@QAE@XZ=0061d430
 // @ref ??1UnknownPreview_0061D430@@QAE@XZ=0061d440
 // @ref ?Unknown_0061D660@UnknownPreview_0061D430@@QAEXXZ=0061d660
-// @ref ?Write_INI_0061DC80@UnknownPreview_0061D430@@QAEXAAVCCINIClass@@@Z=0061dc80
+// @ref ?Write_INI_0061DC80@UnknownPreview_0061D430@@QAE_NAAVCCINIClass@@@Z=0061dc80
 // @ref ?Write_INI_0049D910@DisplayClass@@QAEXAAVCCINIClass@@@Z=0049d910
 // @ref ?Write_INI@TubeClass@@SIXAAVCCINIClass@@@Z=006ef480
 // @ref ?Unknown_00668EA0@@YIXAAVCCINIClass@@H@Z=00668ea0

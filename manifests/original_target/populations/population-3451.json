@@ -4,8 +4,8 @@
     "id": "population-3451",
     "inventory_sha256": "1d3a65e3133a8d7111c412645638e8acda7402606e5a9690d369370cfe763549",
     "gaps_sha256": "c9a912e73a304dcf8dc3bd783c93430b9e124b8075a58201b17f33c3ab85a1c3",
-    "historical_population_sha256": "1ccd1e608760f4ed26744c9612fdbaf2de183cf3c75dc9eda30f8759e66d1d1f",
-    "historical_acceptance_sha256": "4c1956da8b3711f526c489e7541723d1500d056d996514c143a0721adee04c1e"
+    "historical_population_sha256": "4cc05949653ac87bf7a488ff487aa929d0b6bd241efb3629f42118903308180c",
+    "historical_acceptance_sha256": "a4cfbb8f6d627e9626376a5aa42e0b9fa698dc552f45a022b9c4cc2c16594f8c"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -16112,7 +16112,7 @@
     "?unknown_parse_timecode@@YIIPBG@Z": 6929760,
     "?unknown_set_timecode@@YIXPBGPAUUnknownTimed_0069be40@@@Z": 6929984,
     "?unknown_add_ref@UnknownComHolder_0069ed20@@QAEXXZ": 6941984,
-    "?unknown_lepton_to_pixel@@YGXHHPAH0@Z": 6973728,
+    "?Lepton_To_Map_Pixel@Tactical@@QAEXHHAAH0@Z": 6973728,
     "?Suspend@ThemeClass@@QAEXXZ": 7242352,
     "?unknown_sound_enabled_a40c18@@3DA": 10751000,
     "?unknown_flag_a40d0c@@3DA": 10751244,
@@ -21379,7 +21379,7 @@
     "?Unknown_00515A80@@YIXPBX_N@Z": 5331584,
     "?Write_Scenario_INI_0065f980@@YIXPBD_N@Z": 6683008,
     "?unknown_preview_a6fee4@@3PAVUnknownPreview_0061D430@@A": 10944228,
-    "?Write_INI_0061DC80@UnknownPreview_0061D430@@QAEXAAVCCINIClass@@@Z": 6413440,
+    "?Write_INI_0061DC80@UnknownPreview_0061D430@@QAE_NAAVCCINIClass@@@Z": 6413440,
     "??0UnknownPreview_0061D430@@QAE@XZ": 6411312,
     "?Unknown_0061D660@UnknownPreview_0061D430@@QAEXXZ": 6411872,
     "??_C@_0CD@FIJM@Scenario?5Save?3?5ElapsedTimer?5?$DN?5?$CFl@": 8332104,
@@ -23376,7 +23376,7 @@
     "??_C@_0BC@BBEC@SuperWeapons?3?5?$CFs?6?$AA@": 8265464,
     "??_C@_0BC@IEEF@BuildOffAlly?3?5?$CFs?6?$AA@": 8265444,
     "?Init_Clipping_00713160@UnknownVersionObject@@QAEXXZ": 7418208,
-    "?Unknown_0061E2A0@UnknownPreview_0061D430@@QAEXPBD@Z": 6415008,
+    "?Unknown_0061E2A0@UnknownPreview_0061D430@@QAE_NPBD@Z": 6415008,
     "??_C@_0BM@CM@ModemHost?4InitDialog?$CIexit?$CJ?6?$AA@": 8266828,
     "??_C@_0BM@CEMH@ModemHost?4StartGame?$CIenter?$CJ?6?$AA@": 8267476,
     "??_C@_0P@OCIN@LoadGame?5?$DN?5?$CFs?6?$AA@": 8267460,

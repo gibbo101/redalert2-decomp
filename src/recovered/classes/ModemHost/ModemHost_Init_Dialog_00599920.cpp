@@ -28,7 +28,7 @@ extern "C" void __cdecl srand(unsigned int seed);
 extern "C" int __cdecl rand();
 // @ref ?unknown_modem_host_first_7e2410@@3_NA=007e2410
 // @ref ?Unknown_0068B420@SpecialClass@@QAEXXZ=0068b420
-// @ref ?Unknown_0061E2A0@UnknownPreview_0061D430@@QAEXPBD@Z=0061e2a0
+// @ref ?Unknown_0061E2A0@UnknownPreview_0061D430@@QAE_NPBD@Z=0061e2a0
 // @ref ??_C@_07NKKE@TXT_RED?$AA@=007e2000
 // @ref ??_C@_08LPFB@TXT_PINK?$AA@=007e1fb4
 // @ref ??_C@_08NALB@TXT_GOLD?$AA@=007e2008

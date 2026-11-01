@@ -4,8 +4,8 @@
     "id": "population-3131",
     "inventory_sha256": "dcae65f86b47705e93450509c6060d40166c364b27329fd4f6ec0df665c34497",
     "gaps_sha256": "64f2d20582546adfc37681f307ee35a3bce5aa477fa903a8a96615eb195543a1",
-    "historical_population_sha256": "7455c6494e7236e60d29d0c133195cb8c8412ed26fac592ded6a9ce9284e86da",
-    "historical_acceptance_sha256": "46f693efb74db1050c110ef7ada5de94dea514a9d2d34e019fc80b7cb94a573b"
+    "historical_population_sha256": "639395830cb46e4ca8c17c547cbef0900012f9cfc9f03c7d692c15a8b93ff526",
+    "historical_acceptance_sha256": "270dead55ef580dca82ba3927fb3d716ff4aa6c44b508e0db083414f3a267525"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -1256,7 +1256,7 @@
     "?unknown_add@UnknownFloats_0069ae50@@QAEMMH@Z": 6925904,
     "?unknown_set_timecode@@YIXPBGPAUUnknownTimed_0069be40@@@Z": 6929984,
     "?unknown_add_ref@UnknownComHolder_0069ed20@@QAEXXZ": 6941984,
-    "?unknown_lepton_to_pixel@@YGXHHPAH0@Z": 6973728,
+    "?Lepton_To_Map_Pixel@Tactical@@QAEXHHAAH0@Z": 6973728,
     "?Suspend@ThemeClass@@QAEXXZ": 7242352,
     "?Save@ThemeClass@@QAEXPAUIStream@@@Z": 7242512,
     "?unknown_reset_flags_ac109c@@YAXXZ": 7281184,
