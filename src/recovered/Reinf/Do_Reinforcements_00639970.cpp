@@ -14,7 +14,7 @@
 #include "shared/id_source.hpp"
 #include "shared/radar_event_class.hpp"
 #include "shared/unknown_geometry.hpp"
-// @ref ??0CoordStruct@@QAE@ABVCell@@H@Z=0061ea80
+// @ref ??0UnknownCoord434820@@QAE@ABVCell@@H@Z=0061ea80
 // @ref ??_C@_07IIFO@PDPLANE?$AA@=007ee570
 // @ref ?Create_Reinforcement@@YI_NPAVTeamTypeClass@@PAVFootClass@@ABVCell@@_N@Z=0063a050
 
@@ -124,7 +124,7 @@ static bool _Create_Paradrop(TeamTypeClass *teamtype, FootClass *object, Cell or
         plane->unknown_slot220((AbstractClass *)&Map[origin]);
 
         unknown_a40774++;
-        int placed = plane->unknown_slot53(&CoordStruct(dest, 0), 0);
+        int placed = plane->unknown_slot53(&UnknownCoord434820(dest, 0), 0);
         unknown_a40774--;
         if (placed) {
             plane->unknown_5b1 = true;

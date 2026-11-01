@@ -4,8 +4,8 @@
     "id": "population-3464",
     "inventory_sha256": "3a0cbffa5f4a0e79ca5f06b00860f121ff2a989390e5199f6645b22526c710d9",
     "gaps_sha256": "16147c2d716f3455ecdbb1797cd50069c8c595d301c818c6b7c2f07d406f22f0",
-    "historical_population_sha256": "d5c672987e4c0f6935d0a2c38ebdd8b7e9140c92cb6a612b6a9956e64bcb79ae",
-    "historical_acceptance_sha256": "4953f89711c24bea8325e2314b9f21a2215cd4f1411c1e0ee9d3ab021120eb8e"
+    "historical_population_sha256": "008b975dbf370ba1c51f9069d75ebc613af53abeb86ae83faf1036c997a70db6",
+    "historical_acceptance_sha256": "521fbb9c8e7db710de188d1575c2924e87a607830d42761cb4fde6fc77dfca94"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -2652,7 +2652,7 @@
     "??9Cell@@QBE_NABV0@@Z": 5823312,
     "?As_Cell@CoordStruct@@QBE?AVCell@@XZ": 4274032,
     "??0RadarEventClass@@QAE@W4RadarEventType@@VCell@@@Z": 6534848,
-    "??0CoordStruct@@QAE@ABVCell@@H@Z": 6417024,
+    "??0UnknownCoord434820@@QAE@ABVCell@@H@Z": 6417024,
     "??_ESurface@@UAEPAXI@Z": 4264784,
     "?Lock@BSurface@@UAEPAXHH@Z": 4264816,
     "?Lock@XSurface@@UAEPAXHH@Z": 4264672,

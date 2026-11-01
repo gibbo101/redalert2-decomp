@@ -4,8 +4,8 @@
     "id": "population-3353",
     "inventory_sha256": "53ebe2c7616532f7152f650f3d518a892bf4a883ba00b4166abeac9f94f0fbd6",
     "gaps_sha256": "4e582a9109c45a1716db32b83dc3092d2f0dc5ed80df02a4a97f53dbbfed92d0",
-    "historical_population_sha256": "210184471cf165f61f28d87f704e35081d7563216c37cb54efed0e801f9e71f0",
-    "historical_acceptance_sha256": "df1c3655a2d945a634fb7efb678b878078e72ed073c5c5dd47a2244160476938",
+    "historical_population_sha256": "ce4b05f19accb8e9be46d5c56cf170fadcd299611a8af99283284d3b74b21bf9",
+    "historical_acceptance_sha256": "d53ebcafb45ea31ffcb53dffd3b5585d2572d090ef1c2898014bb175b4ba6e71",
     "separate_units": true
   },
   "references": {
@@ -6438,7 +6438,7 @@
     "??0RadarEventClass@@QAE@W4RadarEventType@@VCell@@@Z": 6534848,
     "__real@8@3ffeb504f333f9de6000": 8031920,
     "__real@8@3fffc90fdaa221688800": 8029792,
-    "??0CoordStruct@@QAE@ABVCell@@H@Z": 6417024,
+    "??0UnknownCoord434820@@QAE@ABVCell@@H@Z": 6417024,
     "?Save@UnknownLobbyState@@QAE_NPAUIStream@@@Z": 6760496,
     "?Save@ThemeClass@@QAEJPAUIStream@@@Z": 7242512,
     "?Load@BombListClass@@QAEJPAUIStream@@@Z": 4417632,

@@ -4,8 +4,8 @@
     "id": "population-3472",
     "inventory_sha256": "5c214e77f25df97a5644fbbc99a08c938cff48c70cd46cdf2a8d27e52e331f3d",
     "gaps_sha256": "3559c3125b49c01bf376ba92128b2bc71cf2b80a8d0d2e9617aca0bab0c67169",
-    "historical_population_sha256": "188eff50050a75a6d6a30935504cca36d607ae8c0d35f8eb727dd70b2759e748",
-    "historical_acceptance_sha256": "b6f23bc1555af9ef0dd4b1646ae4e4f70191d860ce60bb699c65700e5ddee3f2"
+    "historical_population_sha256": "55bc4e8dfaaa4a380df4966e5a69ee4ef65227bea9ec1f4efb025f484e8b2067",
+    "historical_acceptance_sha256": "2a4ac1d9da1193847639f211a614eed4815abc82d4616cfd61213cae8e2d56b0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1529,7 +1529,7 @@
     "??0RadarEventClass@@QAE@W4RadarEventType@@VCell@@@Z": 6534848,
     "__real@8@3ffeb504f333f9de6000": 8031920,
     "__real@8@3fffc90fdaa221688800": 8029792,
-    "??0CoordStruct@@QAE@ABVCell@@H@Z": 6417024,
+    "??0UnknownCoord434820@@QAE@ABVCell@@H@Z": 6417024,
     "__purecall": 4950368,
     "??_ESurface@@UAEPAXI@Z": 4264784,
     "?Lock@BSurface@@UAEPAXHH@Z": 4264816,
@@ -9685,7 +9685,7 @@
           "resolved": 561932
         }
       ],
-      "source_sha256": "e693dcee69923e1e07a840c1d7518e4f73df04f98f5e9336eb1e9065c017e88f",
+      "source_sha256": "f1ca8e2e0708c23afc46aeb6e6398bee448f1e6296a16448e09a1918e9c8a2be",
       "source": "src/recovered/classes/MapPreviewClass/MapPreviewClass_Cell_To_Preview_Pixel_0061d5e0.cpp",
       "population": "population-3472",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -11107,8 +11107,8 @@
     {
       "entry": 6417024,
       "method": "0061ea80",
-      "symbol": "??0CoordStruct@@QAE@ABVCell@@H@Z",
-      "symbol_prefix": "??0CoordStruct@@QAE@ABVCell@@H@Z",
+      "symbol": "??0UnknownCoord434820@@QAE@ABVCell@@H@Z",
+      "symbol_prefix": "??0UnknownCoord434820@@QAE@ABVCell@@H@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -11121,7 +11121,7 @@
       "full_extent_bytes": 48,
       "full_extent_sha256": "151c9b8ca49815c96e8221b9cd4b93c8970fe36064ce09c12cf08bdd388a95a6",
       "relocations": [],
-      "source_sha256": "91441e023541db74acb4be6e2419bdf7ca0a6f568ce6b666ac88a2be05ff8c6b",
+      "source_sha256": "f378eb11329dafa3871ffd30cac0b5cd1e03aa5193b5596b172c817c15c9552b",
       "source": "src/recovered/classes/CoordStruct/CoordStruct_From_Cell_0061ea80.cpp",
       "population": "population-3472",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",

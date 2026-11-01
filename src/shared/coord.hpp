@@ -15,7 +15,7 @@ class Cell;
 struct CoordStruct {
     CoordStruct() {}
     CoordStruct(int x, int y, int z) : X(x), Y(y), Z(z) {}
-#if defined(RA2_COORD_FROM_CELL) || defined(RA2_COORD_FROM_CELL_INLINE)
+#ifdef RA2_COORD_FROM_CELL_INLINE
     // The centre of a cell at height z (out of line 0x0061EA80; inline in Building.cpp).
     CoordStruct(Cell const &cell, int z = 0);
 #endif
@@ -118,6 +118,9 @@ struct UnknownCoord434820 : CoordStruct {
     UnknownCoord434820() {}
     UnknownCoord434820(int x, int y, int z) : CoordStruct(x, y, z) {}
     UnknownCoord434820(CoordStruct const &coord) { X=coord.X; Y=coord.Y; Z=coord.Z; }
+#if defined(RA2_COORD_FROM_CELL) || defined(RA2_COORD_FROM_CELL_INLINE)
+    UnknownCoord434820(Cell const &cell, int z = 0);
+#endif
 };
 
 // Westwood's Cell is TibSun's `Cell : TPoint2D<short>` (coord.h): the
@@ -164,6 +167,7 @@ public:
 
 #ifdef RA2_COORD_FROM_CELL_INLINE
 inline CoordStruct::CoordStruct(Cell const &cell, int z) : X(cell.X * 256 + 128), Y(cell.Y * 256 + 128), Z(z) {}
+inline UnknownCoord434820::UnknownCoord434820(Cell const &cell, int z) : CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, z) {}
 #endif
 
 #ifdef RA2_COORD_AS_CELL

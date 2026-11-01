@@ -4,8 +4,8 @@
     "id": "population-3474",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "691e7d46651e2fcf1c42f50f07160a0ff0f50eb855deb0ca079ac95f0e243c2d",
-    "historical_acceptance_sha256": "acf3bfb194b11b502a498a1975b3d0e181494249bc687793d6ccb411da2572e7"
+    "historical_population_sha256": "b9bd7e8150329942b01e7633f2d2e799860fb7117f586267b8b29814483ff8ae",
+    "historical_acceptance_sha256": "573569fa31b16b6c1018dfbec08c6c546ae5537587c149170d4ff8a13470063f"
   },
   "references": {
     "?Update@AudioLevel@@QAIHXZ": 4223216,
@@ -1489,7 +1489,7 @@
     "?Init@PhoneEntryEdit@@QAEXXZ": 6351104,
     "__real@8@3ffeb504f333f9de6000": 8031920,
     "__real@8@3fffc90fdaa221688800": 8029792,
-    "??0CoordStruct@@QAE@ABVCell@@H@Z": 6417024,
+    "??0UnknownCoord434820@@QAE@ABVCell@@H@Z": 6417024,
     "__imp__GetTickCount": 7971020,
     "__imp__GetSystemTime": 7971024,
     "__imp__GlobalMemoryStatus": 7971028,
