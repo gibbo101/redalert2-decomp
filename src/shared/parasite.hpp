@@ -83,6 +83,9 @@ public:
     void Unknown_00606780();                                    // 0x00606780
     void Unknown_00607980(FootClass *target);                  // 0x00607980 (a Parasite warhead hits target, or 0; BulletClass 0x00462110)
     void Unknown_00607440();                                    // 0x00607440 (FootClass slot 82 after restarting the +0x2C timer)
+    bool Grapple_Frame_006066B0();                              // 0x006066B0 (advances the grapple anim; true after the last frame; name hypothesis)
+    bool Can_Infect_006078F0(FootClass *target);                // 0x006078F0 (name hypothesis)
+    bool Can_Exit_00607BA0();                                     // 0x00607BA0 (the parasite can leave on the victim's cell; name hypothesis)
 
     FootClass *Owner;                               // +0x24 (the parasite unit; its +0x588 holds this)
     FootClass *unknown_28;                          // +0x28 (the unit attacked; its +0x580 is Owner)

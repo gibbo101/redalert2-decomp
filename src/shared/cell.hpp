@@ -196,6 +196,7 @@ public:
     void Draw_Fog_Shape(Point2D const &point, Rect const &clip, int frame);  // 0x00474510 (TibSun name: FOG.SHP blended into the depth buffer)
     void Draw_Shroud_And_Fog(Point2D const &point, Rect const &clip);  // 0x00475520 (TibSun name; updates and draws the cell's shroud and fog frames; Tactical 0x006A3FA6)
     void unknown_4724a0();                      // 0x004724A0 (a wall overlay: +0x50 = owner of the nearest building of a WallOwner house)
+    bool Is_Tile_Water() const;                 // 0x0047A270 (TibSun name hypothesis)
     int unknown_47a290() const;                 // 0x0047A290 (the height of the top of the cell: ground plus a building's height or 0x55 for an object at the spot)
     void unknown_47a160();                      // 0x0047A160 (slot 109 on up to ten occupants; units and aircraft get Force_New_Slope(+0x11C))
     void unknown_476b20(int house, int value);  // 0x00476B20 (every other house that is not an ally (or fails 0x004F52F0) gets unknown_func_4e5dc0(the cell's map block, value); TechnoClass 0x006D95A0/0x006D95D0)
