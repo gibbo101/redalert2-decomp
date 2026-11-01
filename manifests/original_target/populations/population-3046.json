@@ -2689,32 +2689,6 @@
       "source_order": 118993
     },
     {
-      "entry": 7390528,
-      "method": "0070c540",
-      "symbol": "?Clear@UnknownTable_70c540@@QAEXXZ",
-      "symbol_prefix": "?Clear@UnknownTable_70c540@@QAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 37,
-      "body_sha256": "1834d4fdf0b5349c0eb67e5355d866f72518a69764d7fd9eccb7eb9892aad667",
-      "padding_bytes": 11,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "2027aff3371891980f65d010df0c0a985c734ff89d56d40deec0629180c2131c",
-      "relocations": [],
-      "source_sha256": "fcdf697c19cd984b8a2242365417a4fbc832861b4674d69c5bd391b567d6842d",
-      "source": "src/recovered/unowned/unknown_clear_table_0070c540.cpp",
-      "population": "population-3046",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_clear_table_0070c540",
-      "source_order": 118994
-    },
-    {
       "entry": 7683920,
       "method": "00753f50",
       "symbol": "?unknown_close_all_dialogs@@YAXXZ",

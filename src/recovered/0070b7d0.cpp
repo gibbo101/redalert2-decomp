@@ -1,30 +1,61 @@
-// 0x0070b7d0: function not yet identified
-//
-// Body: 29 bytes (frozen inventory bound).
-// Referenced from 1 site (unconditional call).
-// Ghidra prototype: void FUN_0070b7d0(void)
-// Callees with accepted source:
-//   FUN_00781d3b -> src/recovered/00781d3b.cpp
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
+// void Hicolor_Clear_Table() -- 0x0070B7D0
+// Releases the pixel table.
+#include "shared/unvq_table.hpp"
 
-namespace seed_0070b7d0 {
-
-extern void  FUN_00781d3b(undefined4 param_1);
-extern "C" undefined4 DAT_00ad0614;
-
-void  FUN_0070b7d0(void)
+void Hicolor_Clear_Table()
 {
-    if (DAT_00ad0614 != 0) {
-        FUN_00781d3b((undefined4)(DAT_00ad0614));
-        DAT_00ad0614 = 0;
+    if (HicolorTable != 0) {
+        delete [] HicolorTable;
+        HicolorTable = 0;
     }
-    return;
 }
 
-}  // namespace seed_0070b7d0
+static bool Hicolor_Set_Mode(int mode)
+{
+    bool valid = false;
+    int red_shift;
+    int green_shift;
+    int blue_shift;
+
+    switch (mode) {
+        case HICOLOR_MODE_555:
+            red_shift = 10;
+            green_shift = 5;
+            blue_shift = 0;
+            valid = true;
+            break;
+        case HICOLOR_MODE_655:
+            red_shift = 11;
+            green_shift = 5;
+            blue_shift = 0;
+            valid = true;
+            break;
+        case HICOLOR_MODE_565:
+            red_shift = 11;
+            green_shift = 6;
+            blue_shift = 0;
+            valid = true;
+            break;
+        case HICOLOR_MODE_556:
+            red_shift = 11;
+            green_shift = 6;
+            blue_shift = 1;
+            valid = true;
+            break;
+        default:
+            break;
+    }
+
+    if (valid) {
+        for (int red = 0; red < 32; red++) {
+            for (int green = 0; green < 32; green++) {
+                for (int blue = 0; blue < 32; blue++) {
+                    HicolorTable[(unsigned short)(((red << 5) | green) << 5) | (unsigned short)blue] =
+                        (unsigned short)((red << red_shift) | (green << green_shift) | (blue << blue_shift));
+                }
+            }
+        }
+        return true;
+    }
+    return false;
+}

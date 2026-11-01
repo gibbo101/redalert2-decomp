@@ -1,19 +1,9 @@
-// void UnknownTable_70c540::Clear() -- 0x0070C540
-// Purpose: zeroes the first Count (+0x800) words of the table.
-// Assumptions: owner unidentified (callers 0x00699A89..); names are
-// placeholders.
+// void UnitTrackerClass::Clear_Unit_Total() -- 0x0070C540
+#include "shared/unit_tracker.hpp"
 
-class UnknownTable_70c540 {
-public:
-    void Clear();
-
-    int Table[0x200];           // +0x000
-    int Count;                  // +0x800
-};
-
-void UnknownTable_70c540::Clear()
+void UnitTrackerClass::Clear_Unit_Total()
 {
-    for (int index = 0; index < Count; index++) {
-        Table[index] = 0;
+    for (int index = 0; index < UnitCount; index++) {
+        UnitTotals[index] = 0;
     }
 }

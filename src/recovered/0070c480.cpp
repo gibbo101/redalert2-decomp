@@ -1,3 +1,6 @@
+// UnitTrackerClass::~UnitTrackerClass() -- 0x0070C480
+#include "shared/unit_tracker.hpp"
 
-class Leaf_70c480 { public: void get(); };
-void Leaf_70c480::get() {  }
+UnitTrackerClass::~UnitTrackerClass()
+{
+}

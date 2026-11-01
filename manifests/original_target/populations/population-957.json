@@ -201,32 +201,6 @@
       "source_order": 31905
     },
     {
-      "entry": 7390480,
-      "method": "0070c510",
-      "symbol": "?unknown_sum_ints_0070c510@@YIHPBUUnknownIntList_0070c510@@@Z",
-      "symbol_prefix": "?unknown_sum_ints_0070c510@@YIHPBUUnknownIntList_0070c510@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 25,
-      "body_sha256": "2108ac74a76c0e7033f3caa2d13f77fc94e50ea8d0a7049fed90a954b1d19523",
-      "padding_bytes": 7,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "894b4219db16febce9962d841492b82dfdfb9147a7e4c5a6d830254a3b16acde",
-      "relocations": [],
-      "source_sha256": "a75699f13f150150977d23884d1ec8779a6a2133cda3003b3487e3c19877a38a",
-      "source": "src/recovered/unowned/unknown_sum_ints_0070c510.cpp",
-      "population": "population-957",
-      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_sum_ints_0070c510",
-      "source_order": 31906
-    },
-    {
       "entry": 7513568,
       "method": "0072a5e0",
       "symbol": "??0UnknownNamedValue_0072a5e0@@QAE@ABVWstring@@H@Z",

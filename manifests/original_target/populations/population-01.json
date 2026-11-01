@@ -11429,54 +11429,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 7390336,
-      "method": "70c480",
-      "symbol": "?get@Leaf_70c480@@QAEXXZ",
-      "symbol_prefix": "?get@Leaf_70c480@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 1,
-      "body_sha256": "ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e",
-      "padding_bytes": 15,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "499f1f307c1cb989f968a6b7fcaec591e1828877223d0b0e7e8e8b76cde8c9ca",
-      "relocations": [],
-      "source": "src/recovered/0070c480.cpp",
-      "source_sha256": "49e0135930d17d5d6cb3c5b463d9fa42f62aa5824d11be068c7d26a02f88ba57",
-      "source_order": 6056,
-      "population": "population-01",
-      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
-      "entry": 7390512,
-      "method": "70c530",
-      "symbol": "?get@Leaf_70c530@@QAEPAXXZ",
-      "symbol_prefix": "?get@Leaf_70c530@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 3,
-      "body_sha256": "58367ffa2a0179375018fa0f5c26da24391e42ebe0ed8fdda35a21fc7bdc396f",
-      "padding_bytes": 13,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "29f4ac27c274a9f1c52a282cbe6f8a57ec6e073cc0936fc0a2cbac85290fbfd4",
-      "relocations": [],
-      "source": "src/recovered/0070c530.cpp",
-      "source_sha256": "70187d5be1e698bf76ce0781292e85113374e57c5494047255ee69b7dbaadc82",
-      "source_order": 6057,
-      "population": "population-01",
-      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 7418208,
       "method": "713160",
       "symbol": "?get@Leaf_713160@@QAEXXZ",
