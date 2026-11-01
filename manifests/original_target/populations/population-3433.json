@@ -4,8 +4,8 @@
     "id": "population-3433",
     "inventory_sha256": "cc37ad24d74d6d4e50e1572fff589b72c7b2ec21c6b147a9785af4956a54cc9d",
     "gaps_sha256": "4de611f94c858c3169127f1e1263793e3becde4b291da194aec92da38f7aa235",
-    "historical_population_sha256": "afeccdce481c927f9477d85f23cd96dd7a8f6558bd4fc70f45ba6a3c9e2c94f9",
-    "historical_acceptance_sha256": "3f3cf442393f2e98015a89a00e4e7c2af792cf8f694df1cb2c536c7d555ae603"
+    "historical_population_sha256": "e373ae985d94c17a3fc55c62968f9747d78baf52631c5e8458c2d4ccf0430152",
+    "historical_acceptance_sha256": "709eb978e2b47d5a5bb233bf0f60578a05a3b3dc54f3b5c11caf72e6ccf5d563"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -4227,7 +4227,7 @@
     "?Audio_Shutdown@@YAHXZ": 4222080,
     "?Audio_Open_Main_Device@@YAHXZ": 4222240,
     "?Audio_Close_Main_Device@@YAXXZ": 4222368,
-    "?Audio_Pause@@YAXXZ": 4222432,
+    "?Audio_Pause@@YIXXZ": 4222432,
     "?Audio_Resume@@YAXXZ": 4222464,
     "?Audio_Stop_All@@YAXXZ": 4222496,
     "?Audio_Update@@YAXXZ": 4222624,
@@ -4331,7 +4331,29 @@
     "?Process@FlyLocomotionClass@@UAG_NXZ": 4965040,
     "?Process@DropPodLocomotionClass@@UAG_NXZ": 4872960,
     "?Find@ToolTipManager@@QAE_NIPAVToolTip@@@Z": 7256992,
-    "?Find@ToolTipManager@@QAEPAVToolTip@@PBUPOINT@@@Z": 7257360
+    "?Find@ToolTipManager@@QAEPAVToolTip@@PBUPOINT@@@Z": 7257360,
+    "?Audio_DS_Apply_Primary_Format@@YIXXZ": 4237168,
+    "?Audio_Event_Update@@YIXPAUAudioEvent@@@Z": 4216272,
+    "?Audio_Event_Channel_Done@@YIHPAUAudioChannel@@@Z": 4217360,
+    "?Audio_Event_Channel_End@@YIHPAUAudioChannel@@@Z": 4217344,
+    "_?address@?1??Unknown_0063FA00@OwnerTalkClass@@QAEPAVIPXAddressClass@@PAD@Z@4V3@A": 11234568,
+    "?Dialog@PhoneEdit@@QAE_NXZ": 6347120,
+    "?Dialog@PhoneEntryEdit@@QAE_NPAVPhoneEntryClass@@@Z": 6350016,
+    "?Init@PhoneEntryEdit@@QAEXXZ": 6351104,
+    "__real@8@3ffeb504f333f9de6000": 8031920,
+    "__real@8@3fffc90fdaa221688800": 8029792,
+    "?Is_Due@AudioTimeSpan@@QAEH_J@Z": 4208864,
+    "?Init@BounceClass@@QAEXABUCoordStruct@@NNNABUVector3@@N@Z": 4419008,
+    "__real@4@3fef8000800000000000": 7981712,
+    "?Length@Vector3@@QBEMXZ": 4421392,
+    "?Audio_Bank_Load@@YIPAUAudioBankEntry@@PAUAudioBank@@H@Z": 4201472,
+    "?Audio_Bag_Open@@YIHPAUAudioBag@@H@Z": 4200176,
+    "?Audio_Bag_Read@@YIHPAUAudioBag@@PAXH@Z": 4200640,
+    "?Audio_Device_Update@@YIHPAUAudioDevice@@@Z": 4206432,
+    "?Changed@AudioLevelSet@@QAEHXZ": 4198560,
+    "?Audio_Device_Release@@YIXPAUAudioDevice@@@Z": 4207376,
+    "__real@4@4004fc00000000000000": 7986596,
+    "__real@8@3fff9999999999999800": 7986600
   },
   "regions": [
     {
@@ -4887,8 +4909,8 @@
     {
       "entry": 4222432,
       "method": "00406de0",
-      "symbol": "?Audio_Pause@@YAXXZ",
-      "symbol_prefix": "?Audio_Pause@@YAXXZ",
+      "symbol": "?Audio_Pause@@YIXXZ",
+      "symbol_prefix": "?Audio_Pause@@YIXXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -4934,7 +4956,7 @@
           "resolved": 3200690
         }
       ],
-      "source_sha256": "b8e906acd563a7ec4fb08cdd444c17b07134aa4a8810824f50af43466dd21c12",
+      "source_sha256": "09404d6e45a10a06ca57aedc57e2661eaa8b263f3d2cf6fedffe42973f431c16",
       "source": "src/recovered/unowned/Audio_Pause_00406de0.cpp",
       "population": "population-3433",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
