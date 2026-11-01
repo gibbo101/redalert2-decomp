@@ -2405,49 +2405,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "unknown_ini_anim_653e40_00653e40",
       "source_order": 55666
-    },
-    {
-      "entry": 7310800,
-      "method": "006f8dd0",
-      "symbol": "?unknown_table_find_6f8dd0@@YIPAUUnknownTableEntry_7f8cf0@@H@Z",
-      "symbol_prefix": "?unknown_table_find_6f8dd0@@YIPAUUnknownTableEntry_7f8cf0@@H@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 34,
-      "body_sha256": "a6323c76bdd7258d7911f37128869d5082c015f1c98175edbc430aaeaca8497f",
-      "padding_bytes": 14,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "5ed59d9c3526d520d0feca3b51981b8c1314cd756e18963c4e062ee4be4747e6",
-      "relocations": [
-        {
-          "offset": 2,
-          "kind": 6,
-          "symbol": "?unknown_table_7f8cf0@@3PAUUnknownTableEntry_7f8cf0@@A",
-          "target": 8359152,
-          "addend": 0,
-          "resolved": 8359152
-        },
-        {
-          "offset": 7,
-          "kind": 6,
-          "symbol": "?unknown_table_7f8cf0@@3PAUUnknownTableEntry_7f8cf0@@A",
-          "target": 8359152,
-          "addend": 0,
-          "resolved": 8359152
-        }
-      ],
-      "source_sha256": "1690c301848557077ea9a2930886cad7f67dff42ac9445c934bbf57bc4913ccd",
-      "source": "src/recovered/unowned/unknown_table_find_006f8dd0.cpp",
-      "population": "population-1647",
-      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_table_find_006f8dd0",
-      "source_order": 55670
     }
   ]
 }

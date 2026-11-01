@@ -3733,57 +3733,6 @@
       "source_order": 145855
     },
     {
-      "entry": 7310848,
-      "method": "006f8e00",
-      "symbol": "?unknown_table_name_6f8e00@@YIPBDH@Z",
-      "symbol_prefix": "?unknown_table_name_6f8e00@@YIPBDH@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 44,
-      "body_sha256": "e0f73ad2d804a06c7e58a71ab3eb944160956ffdc17126e291957bfb381ad84f",
-      "padding_bytes": 4,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "d963ca2f36841d51b4ed7d7c3775c4741d271300af6340e2efe969e00e076deb",
-      "relocations": [
-        {
-          "offset": 1,
-          "kind": 6,
-          "symbol": "?unknown_table_7f8cf0@@3PAUUnknownTableEntry_7f8cf0@@A",
-          "target": 8359152,
-          "addend": 0,
-          "resolved": 8359152
-        },
-        {
-          "offset": 6,
-          "kind": 6,
-          "symbol": "?unknown_table_7f8cf0@@3PAUUnknownTableEntry_7f8cf0@@A",
-          "target": 8359152,
-          "addend": 0,
-          "resolved": 8359152
-        },
-        {
-          "offset": 31,
-          "kind": 6,
-          "symbol": "??_C@_07CAMD@unknown?$AA@",
-          "target": 8178912,
-          "addend": 0,
-          "resolved": 8178912
-        }
-      ],
-      "source_sha256": "31732297a391f293a1ddfb00adb0ea3780ca68d3298d7472f949419633faa86b",
-      "source": "src/recovered/unowned/unknown_table_name_006f8e00.cpp",
-      "population": "population-3356",
-      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_table_name_006f8e00",
-      "source_order": 145856
-    },
-    {
       "entry": 6535232,
       "method": "0063b840",
       "symbol": "??1RadarEventClass@@QAE@XZ",
