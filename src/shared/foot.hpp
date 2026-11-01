@@ -45,6 +45,7 @@ struct UnknownTracker839EA0 {
     DynamicVectorClass<TechnoClass *> Bins[400];
     DynamicVectorClass<TechnoClass *> Working; // +2580; ActiveCount+2590
     void Append_Bin_00412720(int index);
+    int Region_Index_00412820(Cell cell); // native128-byte unreferenced out-of-line copy
     long Load_00413400(IStream *stream);
     TechnoClass *Fetch_Next_004134e0();
     void Clear_00413540();
