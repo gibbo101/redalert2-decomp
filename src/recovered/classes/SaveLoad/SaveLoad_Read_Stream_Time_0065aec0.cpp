@@ -5,8 +5,7 @@
 
 HRESULT SavegameInformation::Read_Stream_Time(IStorage *storage, int id, FILETIME *time)
 {
-    time->dwLowDateTime = 0;
-    time->dwHighDateTime = 0;
+    *(__int64 *)time = 0;
     UnknownComPtr<IStream, &unknown_uuid_IStream> stream;
     HRESULT result = storage->OpenStream(Savegame_Stream_Name(id), 0, 0x10, 0, &stream);
     if (FAILED(result)) {

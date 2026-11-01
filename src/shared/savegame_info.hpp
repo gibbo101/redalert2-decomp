@@ -68,7 +68,7 @@ struct SavegameStreamName {
 };
 extern SavegameStreamName const unknown_savegame_streams_7f1c10[13];
 // The stream name of a property ID (0 when unknown).
-inline wchar_t const *Savegame_Stream_Name(int id)
+inline wchar_t const *__fastcall Savegame_Stream_Name(int id)
 {
     for (int index = 0; index < 13; index++) {
         if (unknown_savegame_streams_7f1c10[index].ID == id) {

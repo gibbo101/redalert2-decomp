@@ -1,18 +1,5 @@
-// void UnknownComHolder_0065B2A0::unknown_release() -- 0x0065B2A0
-// Purpose: releases the COM interface held at +0x00 when there is one (the
-// pointer is not cleared).
-// Assumptions: owner unidentified; the interface is any IUnknown (the
-// same code as 0x00765B00 in another unit).
-#include "shared/com_api.hpp"
-
-struct UnknownComHolder_0065b2a0 {
-    IUnknown *Interface;                    // +0x00
-    void unknown_release();
-};
-
-void UnknownComHolder_0065b2a0::unknown_release()
-{
-    if (Interface != 0) {
-        Interface->Release();
-    }
-}
+// void UnknownComPtr<IPropertySetStorage>::Release_Held() (0x0065B2A0)
+// comip's _Release, emitted out of line by SavegameInformation::Load
+// 0x00659A90 (shared/com_ptr.hpp).
+#include "shared/savegame_info.hpp"
+#include "shared/com_ptr.hpp"

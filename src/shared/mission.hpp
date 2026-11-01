@@ -32,7 +32,7 @@ public:
     double unknown_10;          // +0x10 0.016
     double unknown_18;          // +0x18 0.016
 };
-extern MissionControlClass MissionControl[];                    // 0x00A403B0
+extern MissionControlClass MissionControl[30];                  // 0x00A403B0
 extern char const *MissionNames[30];                            // 0x007CD774
 
 class MissionClass : public ObjectClass {

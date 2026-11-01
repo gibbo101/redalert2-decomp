@@ -3,6 +3,7 @@
 // leaks: the original never releases them).
 // SaveLoad.cpp expands the smart pointers' Release_Held inline (shared/com_ptr.hpp).
 #define COM_PTR_IMPLEMENT_RELEASE
+#define COM_PTR_RELEASE_IN_DESTRUCTOR
 #include "shared/com_persist.hpp"
 // @ref ?unknown_savegame_streams_7f1c10@@3QBUSavegameStreamName@@B=007f1c10
 // @ref _unknown_fmtid_7afd60=007afd60

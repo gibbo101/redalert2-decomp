@@ -62,12 +62,18 @@ public:
             Pointer->AddRef();
         }
     }
+#ifdef COM_PTR_RELEASE_IN_DESTRUCTOR
+    // comip's ~_com_ptr_t() { _Release(); } (SaveLoad.cpp, where _Release is a
+    // separate inline level that goes out of line: 0x0065B2A0, 0x0065B2B0).
+    ~UnknownComPtr() { Release_Held(); }
+#else
     ~UnknownComPtr()
     {
         if (Pointer != 0) {
             Pointer->Release();
         }
     }
+#endif
 
     operator Interface *() const { return Pointer; }
     Interface *operator->() const { return Pointer; }
