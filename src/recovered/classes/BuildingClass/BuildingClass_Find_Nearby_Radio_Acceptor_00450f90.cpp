@@ -1,7 +1,7 @@
 // Building-family nearby radio-acceptor search; free/static spelling remains a hypothesis.
 // Genuine local-static maximum/guard retain original storage; actual generated-name bindings are audited separately.
 // @ref _?maximum@?1??Building_Find_Nearby_Radio_Acceptor_00450f90@@YIPAVBuildingClass@@PAVHouseClass@@PAVTechnoClass@@@Z@4HA=0084ecec
-// @ref _?$S53@?1??Building_Find_Nearby_Radio_Acceptor_00450f90@@YIPAVBuildingClass@@PAVHouseClass@@PAVTechnoClass@@@Z@4EA=0084ed48
+// @ref _?$S79@?1??Building_Find_Nearby_Radio_Acceptor_00450f90@@YIPAVBuildingClass@@PAVHouseClass@@PAVTechnoClass@@@Z@4EA=0084ed48
 // @ref __real@8@4003a000000000000000=0079d150
 // PRIVATE free-function ownership and selection name hypotheses.
 #include "shared/building.hpp"

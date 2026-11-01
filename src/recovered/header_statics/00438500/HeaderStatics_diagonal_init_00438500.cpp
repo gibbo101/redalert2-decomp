@@ -1,3 +1,5 @@
+#define RA2_STAGE_SETTERS
+#define RA2_COORD_FROM_CELL_INLINE
 #define RA2_POINT_ADD_IN_PLACE
 // Header-static dynamic initializers of the unit at 0x00438500:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp

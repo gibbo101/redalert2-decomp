@@ -34,6 +34,7 @@
 #include "shared/super.hpp"
 #include "shared/rect.hpp"
 #include "shared/progress_timer.hpp"
+#include "shared/light_source.hpp"
 
 class InfantryClass;
 class Matrix3D;
@@ -353,7 +354,7 @@ public:
     int unknown_4d0;                        // +0x4D0 (-1)
     AbstractClass *unknown_4d4;             // +0x4D4 (swizzled)
     ProgressTimerClass<FrameTimerClass> GateTimer; // +0x4D8, total duration +0x4E4
-    UnknownBuilding4E8 *unknown_4e8;        // +0x4E8 (owned)
+    LightSourceClass *unknown_4e8;        // +0x4E8 (owned)
     int unknown_4ec;                        // +0x4EC
     int unknown_4f0;                        // +0x4F0
     UnknownStage unknown_4f4;               // +0x4F4

@@ -25,14 +25,7 @@ class BuildingTypeClass;
 
 // A three-component offset with an out-of-line constructor (0x0041B630)
 // and length (0x0041B780) (hypothesis: a coordinate difference class).
-struct UnknownVector3 {
-    UnknownVector3() {}
-    UnknownVector3(int x, int y, int z);
-    int Length() const;
-    int X;
-    int Y;
-    int Z;
-};
+#include "shared/unknown_vector3.hpp"
 // The selected objects (0x00A40C60) are unknown_objects_a40c60 (shared/object.hpp).
 
 // The object a display action is pending for (+0x11A0): only the flag at

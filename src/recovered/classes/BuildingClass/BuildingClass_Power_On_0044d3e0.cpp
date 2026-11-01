@@ -29,7 +29,7 @@ void BuildingClass::unknown_44d3e0()
                 building->unknown_44f8e0();
             }
         }
-        if(unknown_4e8) unknown_4e8->unknown_537540(0);
+        if(unknown_4e8) unknown_4e8->Activate(0);
         if(Type->LaserFencePost) unknown_44e5a0(0);
         for(int anim=0;anim<18;++anim) {
             if(Type->Anims[anim].Powered && unknown_454[anim])

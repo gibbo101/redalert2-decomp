@@ -53,7 +53,7 @@ BuildingClass::~BuildingClass()
     unknown_584.Unknown_00405C10();
     unknown_570.Unknown_00405C10();
     if (unknown_4e8) {
-        unknown_4e8->unknown_537560(0);
+        unknown_4e8->Deactivate(0);
         delete unknown_4e8;
         unknown_4e8 = 0;
     }

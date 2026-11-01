@@ -9,15 +9,15 @@
 
 struct INIPoint3D;
 
-#if defined(RA2_COORD_AS_CELL) || defined(RA2_COORD_FROM_CELL)
+#if defined(RA2_COORD_AS_CELL) || defined(RA2_COORD_FROM_CELL) || defined(RA2_COORD_FROM_CELL_INLINE)
 class Cell;
 #endif
 struct CoordStruct {
     CoordStruct() {}
     CoordStruct(int x, int y, int z) : X(x), Y(y), Z(z) {}
-#ifdef RA2_COORD_FROM_CELL
-    // The centre of a cell at height z (out of line 0x0061EA80; reinf.cpp's paradrop plane).
-    CoordStruct(Cell const &cell, int z);
+#if defined(RA2_COORD_FROM_CELL) || defined(RA2_COORD_FROM_CELL_INLINE)
+    // The centre of a cell at height z (out of line 0x0061EA80; inline in Building.cpp).
+    CoordStruct(Cell const &cell, int z = 0);
 #endif
     // From the point an INI reader returns (defined in shared/ini_class.hpp).
     CoordStruct(INIPoint3D const &point);
@@ -152,6 +152,10 @@ public:
 #endif
     bool Unknown_00493C80();   // 0x00493C80 (removes the cell's crate overlay and redraws it; CrateClass)
 };
+
+#ifdef RA2_COORD_FROM_CELL_INLINE
+inline CoordStruct::CoordStruct(Cell const &cell, int z) : X(cell.X * 256 + 128), Y(cell.Y * 256 + 128), Z(z) {}
+#endif
 
 #ifdef RA2_COORD_AS_CELL
 inline Cell CoordStruct::As_Cell() const

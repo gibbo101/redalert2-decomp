@@ -92,6 +92,7 @@ extern "C" GUID const CLSID_AircraftClass; // 0x007A1BD0
 
 class AircraftClass : public FootClass, public IFlyControl {
 public:
+    unsigned int Pose_Dir_00417890() const;
     AircraftClass(AircraftTypeClass *type, HouseClass *house);        // 0x00413A40
     AircraftClass(NoInitClass const &noinit) : FootClass(noinit) {}   // inline (Load)
     virtual ~AircraftClass();                                         // 0x00413DA0

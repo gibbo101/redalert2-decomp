@@ -27,7 +27,7 @@ void BuildingClass::unknown_44d6c0()
         }
     }
     if (unknown_4e8) {
-        unknown_4e8->unknown_537560(0);
+        unknown_4e8->Deactivate(0);
     }
     if (Type->CloakGenerator) {
         unknown_5bb = -1;

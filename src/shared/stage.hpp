@@ -55,6 +55,11 @@ public:
     StageClass() : Stage(0), StageTimer(0), Rate(0), Step(1) {}
     StageClass(NoInitClass const &noinit) : StageTimer(noinit) {}
 
+#ifdef RA2_STAGE_SETTERS
+    void Set_Stage(int frame) { Stage = frame; }
+    void Set_Step(int increment) { Step = increment; }
+#endif
+
     void Set_Rate(int rate)
     {
         CDTimerClass<FrameTimerClass> reset(rate);

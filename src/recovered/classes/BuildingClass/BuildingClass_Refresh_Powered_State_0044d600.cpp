@@ -19,7 +19,7 @@ void BuildingClass::unknown_44d600()
             building->unknown_44f8e0();
         }
     }
-    if(unknown_4e8) unknown_4e8->unknown_537540(0);
+    if(unknown_4e8) unknown_4e8->Activate(0);
     if(Type->LaserFencePost) unknown_44e5a0(0);
     int anim=0;
     do {
