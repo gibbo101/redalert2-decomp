@@ -238,7 +238,7 @@ public:
     virtual bool unknown_slot63(Rect *bounds, bool arg2, bool arg3);       // slot 63 (+0xFC) 0x5d34e0 (draws into bounds; hypothesis)
     virtual Cell const *unknown_slot64(int arg1);                                // slot 64 (+0x100) 0x5d4470
     virtual void unknown_slot65(int arg1, int arg2);                       // slot 65 (+0x104) 0x423dc0
-    virtual void unknown_slot66(int arg1, int arg2);                       // slot 66 (+0x108) 0x423dd0
+    virtual void unknown_slot66(Point2D const &point, Rect const &window);                       // slot 66 (+0x108) 0x423dd0
     virtual void unknown_slot67(int arg1, int arg2) {}                     // slot 67 (+0x10C) kept copy 0x595120 (Mission.cpp)
     virtual void unknown_slot68(int arg1, int arg2);                       // slot 68 (+0x110) 0x5d4e70
     virtual void unknown_slot69();                                         // slot 69 (+0x114) 0x5d2c80

@@ -102,7 +102,7 @@
 // @ref ?unknown_slot62@ObjectClass@@UAEHPAVTechnoClass@@@Z=005d2c70
 // @ref ?unknown_slot64@VoxelAnimClass@@UAEPBVCell@@H@Z=0070df80
 // @ref ?unknown_slot65@ObjectClass@@UAEXHH@Z=00423dc0
-// @ref ?unknown_slot66@ObjectClass@@UAEXHH@Z=00423dd0
+// @ref ?unknown_slot66@ObjectClass@@UAEXABUPoint2D@@ABVRect@@@Z=00423dd0
 // @ref ?unknown_slot67@ObjectClass@@UAEXHH@Z=0070cfc0
 // @ref ?unknown_slot68@ObjectClass@@UAEXHH@Z=005d4e70
 // @ref ?unknown_slot69@ObjectClass@@UAEXXZ=005d2c80

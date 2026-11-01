@@ -405,7 +405,7 @@ public:
     virtual void unknown_slot61();                              // slot 61 0x006CF3B0
     virtual int unknown_slot62(TechnoClass *techno);                       // slot 62 0x006D4880
     virtual void unknown_slot65(int arg1, int arg2);            // slot 65 0x006C3B30
-    virtual void unknown_slot66(int arg1, int arg2);            // slot 66 0x006C2C40
+    virtual void unknown_slot66(Point2D const &point, Rect const &window);            // slot 66 0x006C2C40
     virtual void unknown_slot69();                              // slot 69 0x006C2520
     virtual void unknown_slot70(bool arg1, bool arg2);            // slot 70 0x006D5AA0
     virtual bool unknown_slot71(int arg1);                      // slot 71 0x006C2550

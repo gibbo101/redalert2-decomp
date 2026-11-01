@@ -4,8 +4,8 @@
     "id": "population-3239",
     "inventory_sha256": "6d6e6e8e2928b6f47c484489407aa2c382b679e01533a2221985bba403234254",
     "gaps_sha256": "a2fe9c485f47a0ea568986ba7ff40f6d4d7157ca205e7e19544a965d73f80d68",
-    "historical_population_sha256": "b2d7d1c94bd84628d1a56dfc9cab60ed1c0f585972b4f4467e65f32b00ee9687",
-    "historical_acceptance_sha256": "2944412a1e3ed9c17c78ceaf34ae6175fa57355f2beb8e53b54aae1f7fc324f9"
+    "historical_population_sha256": "55b21c951c0d9b97c112d4ed05d67aa3bc5ba64d958d9834f5a79073bc677501",
+    "historical_acceptance_sha256": "47f6503608fb8202002991cf9bdc5876ae8b0e10145b00b8c2b35d6935770705"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5610,7 +5610,7 @@
     "?unknown_slot64@ParticleClass@@UAEPBVCell@@H@Z": 6333776,
     "?unknown_slot64@VoxelAnimClass@@UAEPBVCell@@H@Z": 7397248,
     "?unknown_slot65@TechnoClass@@UAEXHH@Z": 7093040,
-    "?unknown_slot66@TechnoClass@@UAEXHH@Z": 7089216,
+    "?unknown_slot66@TechnoClass@@UAEXABUPoint2D@@ABVRect@@@Z": 7089216,
     "?unknown_slot67@AircraftClass@@UAEXHH@Z": 4276672,
     "?unknown_slot67@IsometricTileClass@@UAEXHH@Z": 5407312,
     "?unknown_slot67@ObjectClass@@UAEXHH@Z": 5853472,
