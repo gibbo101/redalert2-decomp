@@ -178,6 +178,10 @@ public:
     void Wipe_Depth(bool fullredraw, int xoff, int yoff, Rect const &cliprect);   // 0x006A33F0
     void Draw_Fogged_Objects(Rect const &area);     // 0x006A9F50 (forwards to ::Draw_Fogged_Objects)
     void Register_Dirty_Buildings(Rect area);       // 0x006AA090
+    // Redraws the shroud and fog of the cells flagged for redraw (with the alpha shapes over them) or of the whole
+    // view, of the panned strips and of the dirty areas that refresh the shroud (0x006A3EF0; TibSun Tactical::Render_Shroud).
+    void Render_Shroud(Rect const &xpanrect, Rect const &ypanrect, Rect const &cliprect, bool fullredraw);
+    void Draw_Shroud(Rect const &area);             // 0x006A7820 (TibSun Tactical::Draw_Shroud)
 
     // Layout from the constructor 0x006A24B0 (init-list stores, then the body).
     short unknown_24;               // +0x24 cleared by the constructor

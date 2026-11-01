@@ -30,6 +30,8 @@ public:
     virtual void Compute_CRC(WWCRCEngine &crc) const;           // slot 13 0x0041F020
 
     static void Update_All();                                   // 0x0041F110
+    // Draws the alpha shapes over a cell's pixel inside cliprect (0x0041F1C0; TibSun AlphaShapeClass::Draw_In_Area).
+    static void __fastcall Draw_In_Area(Point2D const &pixel, Rect const &cliprect);
     static void Init_Alpha_Table();                             // 0x0041F950
 
     ObjectClass *Owner;         // +0x24
