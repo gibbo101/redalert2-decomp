@@ -31,10 +31,14 @@ struct CoordStruct {
     CoordStruct const &operator+=(CoordStruct const &coord) { X += coord.X; Y += coord.Y; Z += coord.Z; return *this; }
     // Member-wise quotient in place; a zero divisor leaves the coordinate (0x0049E3B0).
     CoordStruct const &operator/=(int divisor) { if (divisor != 0) { X /= divisor; Y /= divisor; Z /= divisor; } return *this; }
+#ifdef RA2_COORD_PLUS_SOURCE
+    CoordStruct operator+(CoordStruct const &coord) const;
+#else
     CoordStruct operator+(CoordStruct const &coord) const
     {
         return CoordStruct(X + coord.X, Y + coord.Y, Z + coord.Z);
     }
+#endif
 #ifdef RA2_COORD_EQUAL_MEMBER
     // Member-wise comparison (0x0061A8B0): the original has a real out-of-line
     // int-returning thiscall member that Planning.cpp calls, while the

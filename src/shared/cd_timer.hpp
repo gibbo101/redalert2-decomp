@@ -30,6 +30,9 @@ public:
     // Value tests Started against 0xFFFFFFFFU as Westwood's FTIMER.H does (an
     // unsigned test): VC6 then keeps it after Stop's signed test, as
     // TActionClass 0x006B0A60 does (stop the mission timer).
+#ifdef RA2_CDTIMER_VALUE_SOURCE
+    long Value() const;
+#else
     long Value() const
     {
         long remain = DelayTime;
@@ -43,6 +46,7 @@ public:
         }
         return remain;
     }
+#endif
     bool Is_Active() const { return Started != -1; }
     void Stop()
     {
