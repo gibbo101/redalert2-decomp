@@ -95,4 +95,4 @@ int UnknownSessionState::Create_Connections()
 // @ref ??_C@_0BN@JHPO@Entering?5Create_Connections?6?$AA@=007f3484
 // @ref ?Unknown_0063F130@OwnerTalkClass@@QAE_NXZ=0063f130
 // @ref ?Unknown_0063F2A0@OwnerTalkClass@@QAEXXZ=0063f2a0
-// @ref ?Unknown_0063F510@OwnerTalkClass@@QAE_NH@Z=0063f510
+// @ref ?Unknown_0063F510@OwnerTalkClass@@QAE_NPAE@Z=0063f510

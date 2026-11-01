@@ -41,7 +41,7 @@ public:
     int Unknown_0063FBA0();                                 // 0x0063FBA0 (the next game host, -1: none; ABOUTTOEXIT)
     bool Unknown_0063F130();                                // 0x0063F130 (the new host takes over the router; ABOUTTOEXIT; Create_Connections tests the result)
     void Unknown_0063F2A0();                                // 0x0063F2A0 (Create_Connections, packet-router games)
-    bool Unknown_0063F510(int arg);                         // 0x0063F510 (Create_Connections, packet-router games; with 0)
+    bool Unknown_0063F510(unsigned char *address);          // 0x0063F510 (starts mph.exe for this IP, null: the first player's or ours, and waits for TALK_HELLO; Create_Connections with 0)
     void Unknown_0063F9A0(int id, IPXAddressClass *address);   // 0x0063F9A0 (a player's new address; ADDRESSCHANGE)
     void Unknown_0063FE20(int id);                          // 0x0063FE20 (a removed player; REMOVEPLAYER)
     unsigned short Unknown_0063FAF0(char *name);            // 0x0063FAF0 (the id of a named connection)                // 0x0063FC90 (MPCooperative slot 37, when the flagged connection exists)
