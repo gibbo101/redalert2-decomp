@@ -1013,7 +1013,7 @@ int __fastcall Audio_DS_Channel_Is_Playing(AudioChannel *channel);              
 int __fastcall Audio_DS_Channel_Apply_Settings(AudioChannel *channel);                      // 0x0040A5F0
 // ... and the primary buffer.
 void __fastcall Audio_DS_Set_Primary_Format(int rate, int bits, int channels);              // 0x0040A6E0
-void Audio_DS_Apply_Primary_Format();                                                       // 0x0040A770
+void __fastcall Audio_DS_Apply_Primary_Format();                                            // 0x0040A770
 long __fastcall Audio_DS_Volume_Attenuation(int volume);                                    // 0x0040A820
 void Audio_DS_Stop_Primary();                                                               // 0x0040A860
 void Audio_DS_Restart_Primary();                                                            // 0x0040A870
