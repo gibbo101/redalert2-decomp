@@ -4,8 +4,8 @@
     "id": "population-3027",
     "inventory_sha256": "18294f9042ab437ec8f8ecf7326ae14ae728590584517da3920a467993dd6a01",
     "gaps_sha256": "1fed1a328232975333d708b4ba81bf5acfa68efbf78259f437838d8f7da2d588",
-    "historical_population_sha256": "33f1decc1778654c210da944160a3e4884a2ef1a3b5d904737d664fe3c596897",
-    "historical_acceptance_sha256": "93ca4d18ff05e2600659c5245a5a8c9954d6a8917478a153491d227212a8f6a3"
+    "historical_population_sha256": "6b46be3a49c51e5e9f5448747e615e11ee926a0e13306d53a9dc393b60c808b1",
+    "historical_acceptance_sha256": "d1329f576886640a13512567a077f52f6feb0f0961caf0447a18e9e09f6f7ad3"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -5031,7 +5031,7 @@
     "?unknown_add_node@UnknownNodeList_006003d0@@QAEXH@Z": 6292432,
     "?unknown_get_list_item_wide_text@@YIJPAUHWND__@@IAAVWideString@@@Z": 6295312,
     "?Find@UnknownChunkList_602cd0@@QAEPAUUnknownChunk_602cd0@@PBD@Z": 6302928,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Coord@BounceClass@@QBE?AUCoordStruct@@XZ": 4419456,
     "?unknown_slot53@TechnoClass@@UAE_NPBUCoordStruct@@H@Z": 7095824,
     "?unknown_slot52@TechnoClass@@UAE_NXZ": 7095424,

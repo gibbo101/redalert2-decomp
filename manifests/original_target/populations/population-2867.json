@@ -4,8 +4,8 @@
     "id": "population-2867",
     "inventory_sha256": "4e24e5f96a2ad39bec0a3bcf1e9d7b02df7f90b48ff246fedc6f23ef670338ab",
     "gaps_sha256": "131c5912b639e72c58ad36cf046e1c10cb44136826d8ccbf271467ab9b1399d2",
-    "historical_population_sha256": "ec2bedf729ce717486342076e74a7dc9e9345d258b3cbd5b1cfc171736d4198e",
-    "historical_acceptance_sha256": "b5f91533a4d6da057a69f644b4fe4e51becb6ffaf88984d43ea3d631e8cba3fb"
+    "historical_population_sha256": "7b9ff3a8a30297ea4612c7a4ccb4e39495fb1e02e3fd7c4c6bd3ff7fae4d7be7",
+    "historical_acceptance_sha256": "50fb5c950f1f073e7b4126f09db650e2a0d719dc0ed89e05954c36be12f5f731"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5614,7 +5614,7 @@
     "?Get_Type@@YIPAVBuildingTypeClass@@AAVCCINIClass@@PBD1PAV1@@Z": 6635616,
     "?Get_Type@@YIPAVTerrainTypeClass@@AAVCCINIClass@@PBD1PAV1@@Z": 6635776,
     "?Get_Type@@YIPAVWarheadTypeClass@@AAVCCINIClass@@PBD1PAV1@@Z": 6634912,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Set_Text@StaticButtonClass@@UAEXPBG_N@Z": 6916256,
     "?Open@RAMFileClass@@UAEHH@Z": 6521872,
     "?Read@RAMFileClass@@UAEJPAXJ@Z": 6521952,

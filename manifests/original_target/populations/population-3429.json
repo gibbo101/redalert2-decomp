@@ -4,8 +4,8 @@
     "id": "population-3429",
     "inventory_sha256": "7776fc2ba0fe62d448952fc4bd56f2eb923d0a5874f15d5ba2656051319ca50b",
     "gaps_sha256": "ba49c6970058011b491258066429042c68486b2ef7b3840dafb3e040e7ba353e",
-    "historical_population_sha256": "c3f7db6d95007c1c6f35dceeeffbf30c3345448e702e91716e4a90a245ebcb46",
-    "historical_acceptance_sha256": "b54eaf3816b5ecf2baf9b3f330a7e3586ba8a4ceccc3781ced397dc1fb63f864"
+    "historical_population_sha256": "c0e135a418a7568daffce1622e00a2d12281b6dc27e1bca0b4d33f820948a806",
+    "historical_acceptance_sha256": "801ce67a0583dfe0fa0dd36cf32fd2d4d925de31606c5175833dd919280949e8"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -7144,7 +7144,7 @@
     "??1ColorScheme@@QAE@XZ": 6699952,
     "?unknown_slot41@MultiplayerGameMode@@UAEXPAV?$DynamicVectorClass@PAVMultiplayerTeam@@@@@Z": 5994272,
     "?unknown_slot41@MultiplayerSiege@@UAEXPAV?$DynamicVectorClass@PAVMultiplayerTeam@@@@@Z": 5945712,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "??0StaticButtonClass@@QAE@IPBGHHHHH@Z": 6915936,
     "??_7StaticButtonClass@@6B@": 8044752,
     "?Set_Text@StaticButtonClass@@UAEXPBG_N@Z": 6916256,

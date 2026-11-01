@@ -4,8 +4,8 @@
     "id": "population-3107",
     "inventory_sha256": "b565b146a0d3289abdeccea9a27893202d93d72e0b9775577fe9fc3305acf60f",
     "gaps_sha256": "0c81906ca7334b224f409e6f761fa09ad55f4cf4896799e76f3fceead24bf27d",
-    "historical_population_sha256": "f947eb98164c9e5e8b61a2ba39839db769af1fb05e8c66dc43e00ad31a8d9815",
-    "historical_acceptance_sha256": "7600452613ae064d305f7725fc5ca0c8fb89b7e8cb1f836e5bc619ab10212690"
+    "historical_population_sha256": "58edcd642cc06ac0799a3aaafefe458808862fc0d2d2483f7e3130eaedd8a72b",
+    "historical_acceptance_sha256": "3496f44b56c1436bd20d662f0daeb967be3031d347bbc9342740a169643624e0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3180,7 +3180,7 @@
     "?Init@AircraftTypeClass@@SAXXZ": 4308656,
     "?Init@AnimTypeClass@@SIXH@Z": 4346416,
     "?Init@AudioLevel@@QAIXH@Z": 4223024,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Init@AudioSourceInfo@@QAIXPAXH@Z": 4228352,
     "?Init@BuildingClass@@UAEXXZ": 4454464,
     "?Init@BuildingTypeClass@@SIXH@Z": 4556288,

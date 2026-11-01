@@ -4,8 +4,8 @@
     "id": "population-2447",
     "inventory_sha256": "ec7e8ea3d17ace71647cb5d5d5ceac56b1a6726a60ef98848b623663cc33e73f",
     "gaps_sha256": "0d313d1890d7467efc0212aa92f45f44e3fc10bda60dcebb5d955e84e6318c90",
-    "historical_population_sha256": "0f6026bc48b126c9c1f1b1405d769a6b411db8742a015be597e9b5787c1cb2d8",
-    "historical_acceptance_sha256": "12f0fd6accad68ca2f84b2163dd6877c3b5219856abda90ab8bdc61e7bf523a8"
+    "historical_population_sha256": "f516d6c06830e8eac8f6e0355ded7c68b3fd67c3ff0801a3c382f3cdd7c68787",
+    "historical_acceptance_sha256": "c89c95c5a5de5be6d1d54ebe8e4d8904cade563664cc4db90e2bc8147b2937fc"
   },
   "references": {
     "??_7?$rc_ptr@VPlayerProfile@@@@6B@": 8058188,
@@ -3798,7 +3798,7 @@
     "?unknown_slot4@MultiplayerSiege@@UAE_NXZ": 5944816,
     "?unknown_slot5@MultiplayerSiege@@UAE_NPAVWideString@@@Z": 5944896,
     "?unknown_slot6@MultiplayerSiege@@UAE_NXZ": 5945152,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Draw_Me@StaticButtonClass@@UAEHH@Z": 6916192,
     "?Read_Scenario_INI@AITriggerTypeClass@@SIXAAVCCINIClass@@H@Z": 4314432,
     "?Write_Scenario_INI@AITriggerTypeClass@@SIXAAVCCINIClass@@H@Z": 4314864,

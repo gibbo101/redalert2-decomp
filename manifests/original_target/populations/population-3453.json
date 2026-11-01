@@ -4,8 +4,8 @@
     "id": "population-3453",
     "inventory_sha256": "011a42fa2dd4906cdf53bde73e3307fad2a9a5ec83b313b53f2191ddafd0129c",
     "gaps_sha256": "c2586a236b61f73de493a8008b5d3702620a296183f6186e1752fce1eb0cc4bf",
-    "historical_population_sha256": "3cf8dee28d167b5c7a1fbfaf8c16e709c06e063b3d0eda2335f40d5b0ee2cef2",
-    "historical_acceptance_sha256": "4c57cb3b24d72202cfad77dbb8511fc4d5aa78028eccd04a6b242085e31eecc0"
+    "historical_population_sha256": "23443662e97e33a78f689ad6b9c6cc3b4bc807de9da83701b65da169eaf1db1f",
+    "historical_acceptance_sha256": "2e6afbc5dffb68c5b9ee97909ae41065ea836f6ac0fb7080c0f56fbe7c21c964"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -7944,7 +7944,7 @@
     "?Set_Server_00739920@PlayerProfile@@QAEXABVWstring@@@Z": 7575840,
     "?unknown_add_node@UnknownNodeList_006003d0@@QAEXH@Z": 6292432,
     "?Find@UnknownChunkList_602cd0@@QAEPAUUnknownChunk_602cd0@@PBD@Z": 6302928,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?unknown_slot53@TechnoClass@@UAE_NPBUCoordStruct@@H@Z": 7095824,
     "?unknown_slot52@TechnoClass@@UAE_NXZ": 7095424,
     "?Stop@Voices@WorldDominationTour@@QAEXXZ": 7547376,

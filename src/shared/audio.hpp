@@ -186,7 +186,7 @@ struct AudioLevel {
 // +0x10 and the result at +0xD8; the eight sets at 0x0083144C-0x00831468
 // are global.
 struct AudioLevelSet {
-    void Init();                                        // 0x00401000
+    void __fastcall Init();                             // 0x00401000
     void Update();                                      // 0x00401080
     int Changed();                                      // 0x004010A0
     void __fastcall Combine(AudioLevelSet *other);      // 0x004010C0

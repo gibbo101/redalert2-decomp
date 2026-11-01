@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "09e3d7035eb0ddabdc5d54e8cc8ebff97c73764f5516de0c5edb1ec9a6def924",
-    "historical_acceptance_sha256": "82cf914fc9a60556dba8f94cd9a201db987e3b894fd66905045653e55ea41191"
+    "historical_population_sha256": "586fb82cc2ab303c6497b05e8a552652a5e5b38885a1407eaad04d13020e43af",
+    "historical_acceptance_sha256": "c8bae3c4c7326a45067d4f85f6a5291d3f5a3b653e14e43d06a4c33426b0b0f6"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -14308,7 +14308,7 @@
     "__imp__QueryPerformanceFrequency@4": 7971276,
     "?Audio_System_Clock@@YA_JXZ": 4231952,
     "?Audio_Channel_Finished@@YIHPAUAudioChannel@@@Z": 4203504,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Audio_Channel_Next_Piece@@YIHPAUAudioChannel@@@Z": 4203200,
     "?Audio_Channel_Release@@YIXPAUAudioChannel@@H@Z": 4203584,
     "?Audio_Channel_Source_Ended@@YIHPAUAudioChannel@@@Z": 4203312,

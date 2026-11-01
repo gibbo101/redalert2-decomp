@@ -4,8 +4,8 @@
     "id": "population-2930",
     "inventory_sha256": "7dfe89dbb948e0c622af0adbb588c03f76fecf8bd0a3e42a6b29941ab396c24d",
     "gaps_sha256": "91c631d866f95b939d8d24bf48f884c386ee7ab760d6ff390b942a5688445205",
-    "historical_population_sha256": "343d4979fc7b3fd0ca8005ee58c123fef0c07eb2561cc5e4c99f4375a8159a30",
-    "historical_acceptance_sha256": "2341a74e8b26c6ff288a2b5612d57eccc8388d811ff1975468eb514647260df1"
+    "historical_population_sha256": "e93dff98c9c2ed5f9de8d875715322f6d3d1224616ae9abb98229747c5c7a915",
+    "historical_acceptance_sha256": "dc5c534ad9282481823ed227bfc047ea6603950ee6e4a9db425b1f27e639a423"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2238,7 +2238,7 @@
     "?unknown_slot26@MultiplayerSiege@@UAE_NXZ": 5945184,
     "?unknown_slot1@MultiplayerSiegeDefenderTeam@@UAE_NH@Z": 5946912,
     "__alldiv": 7873744,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Set@AudioTimeSpan@@QAEX_J@Z": 4208752,
     "__allmul": 7872704,
     "?Set@WideString@@QAEFPBG@Z": 7801072,

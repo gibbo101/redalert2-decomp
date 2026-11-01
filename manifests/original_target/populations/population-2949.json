@@ -4,8 +4,8 @@
     "id": "population-2949",
     "inventory_sha256": "fb3b78171b8758e677af40d73b3fcd17ec2fd3cfbabd3ff1d0582e42575d0b52",
     "gaps_sha256": "8fa1c563c22c87fcd9cc9dd81de0b122c7b6e3f61f011c5f7674fa13887dfb63",
-    "historical_population_sha256": "7f6de7865164c81c037f44533bb3932362b5e3f2f4c037628721d6b29ac7e980",
-    "historical_acceptance_sha256": "0ca61f78769fd5da0ada31def2bb15cf2bbe848b11025b3243792f04deb709ea"
+    "historical_population_sha256": "ef164b9852156934f980a1f584e98d4c09acaa38bd6ac6a780189bfe5ac624fa",
+    "historical_acceptance_sha256": "ca288883e15173a6b67a198894155fb34307a3529f275b6f7c510e1e0525466e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3160,7 +3160,7 @@
     "__imp__QueryPerformanceCounter@4": 7971272,
     "__imp__DeleteCriticalSection@4": 7971288,
     "__imp__QueryPerformanceFrequency@4": 7971276,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Read_Scenario_INI@AITriggerTypeClass@@SIXAAVCCINIClass@@H@Z": 4314432,
     "?Write_Scenario_INI@AITriggerTypeClass@@SIXAAVCCINIClass@@H@Z": 4314864,
     "??1TeamTypeClass@@UAE@XZ": 7072688,

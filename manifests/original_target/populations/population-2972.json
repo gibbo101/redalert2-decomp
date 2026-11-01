@@ -4,8 +4,8 @@
     "id": "population-2972",
     "inventory_sha256": "de062ff1455780536e952ecc23bf020e3932d9acba1f10c29cb3ade8f16fa9b8",
     "gaps_sha256": "e2436c29b114102efa4db5e2a742c675a4c05537f532d7e191ca94b99427cf3c",
-    "historical_population_sha256": "3f4126b89920f1f87d5fd5056d46e0a9a91e0fa26caceacff82da130ad3dab4f",
-    "historical_acceptance_sha256": "b62f87633290eece5767e70bad92ac3e23b9dd889799a7f08598d531f0a12a3b"
+    "historical_population_sha256": "a864ea70ff7ae48ee84ba222d63c04eca050869f8a7778392af9f463e7c356f0",
+    "historical_acceptance_sha256": "b74bf4474a7b65b6efa22cde81e3e342d887da45fac0a4743a2443799ea78ba2"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -241,7 +241,7 @@
     "?unknown_slot6@MultiplayerSiege@@UAE_NXZ": 5945152,
     "?unknown_slot26@MultiplayerSiege@@UAE_NXZ": 5945184,
     "__alldiv": 7873744,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "__allmul": 7872704,
     "?Draw_Me@StaticButtonClass@@UAEHH@Z": 6916192,
     "__real@4@3fff8000000000000000": 7976952,

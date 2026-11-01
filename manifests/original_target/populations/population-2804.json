@@ -4,8 +4,8 @@
     "id": "population-2804",
     "inventory_sha256": "e5282bf2c831073c0c4bd9724068076d0a8c094299ab15c9cac43d8d94dc2c64",
     "gaps_sha256": "1080f45ddeb65f9675feeff2aaced6582ddfcafd39fec1adafcabc34aa7fd204",
-    "historical_population_sha256": "cbc5d634cb5bf291dfbe676e3aa14a9de3598a71f33a293e21f0e125a6f3510f",
-    "historical_acceptance_sha256": "3c00c31a246b4115dfeb4a18bab30577b51e7e6237138faf701e87644a6a2ff8"
+    "historical_population_sha256": "8846c7cccb80e0ebda25dd66b496064aa6c9c5fe6da550d25c75fd45788aba67",
+    "historical_acceptance_sha256": "a2b42ea2350d5c15c83ef00e522c19e14ae3d742fe7ee3b7ba281c1ad72767be"
   },
   "references": {
     "?Unknown_006A8C80@Tactical@@QAE_NPAUPoint2D@@@Z": 6982784,
@@ -3013,7 +3013,7 @@
     "__alldiv": 7873744,
     "__imp__DeleteCriticalSection@4": 7971288,
     "__imp__QueryPerformanceFrequency@4": 7971276,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Set@AudioTimeSpan@@QAEX_J@Z": 4208752,
     "__allmul": 7872704,
     "?Read@RAMFileClass@@UAEJPAXJ@Z": 6521952,

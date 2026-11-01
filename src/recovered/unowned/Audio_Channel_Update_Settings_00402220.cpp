@@ -5,7 +5,7 @@
 // +0x98 and +0x9C, and the device's levels and optional +0xE8 set.
 // @ref ?Clear_Changed@AudioLevelSet@@QAEXXZ=00401170
 // @ref ?Combine@AudioLevelSet@@QAIXPAU1@@Z=004010c0
-// @ref ?Init@AudioLevelSet@@QAEXXZ=00401000
+// @ref ?Init@AudioLevelSet@@QAIXXZ=00401000
 #include "shared/audio.hpp"
 
 void __fastcall Audio_Channel_Update_Settings(AudioChannel *channel)

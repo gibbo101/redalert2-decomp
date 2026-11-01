@@ -4,8 +4,8 @@
     "id": "population-3476",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "a6614d929c150c3c7ee5f910884c0f0253e6a62cee653f9b3d285b01202b0cbd",
-    "historical_acceptance_sha256": "adf63c06235c2ca098907d0df60424b3645e3e01857ef91d5d35404742204343"
+    "historical_population_sha256": "1c7234eb07a153b6521e25e30139b448afa7388536f04d433d045121afb06f04",
+    "historical_acceptance_sha256": "c38b9d2e225a83be92cf1b47ae8955cb7a818234198fe08f7bab6d5d9cb8c75e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3152,7 +3152,7 @@
     "?Init@BuildingClass@@UAEXXZ": 4454464,
     "?Init@UnitClass@@UAEXXZ": 7380496,
     "?Init@NullModemConnClass@@UAEXXZ": 6085824,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Init@BuildingTypeClass@@SIXH@Z": 4556288,
     "?AI@FootClass@@UAEXXZ": 5017584,
     "?AI@TechnoClass@@UAEXXZ": 7107776,

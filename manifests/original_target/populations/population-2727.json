@@ -4,8 +4,8 @@
     "id": "population-2727",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "aa3fc04cb922500fa1458c238305f765819a10be018014afa121cf09d41e01c1",
-    "historical_acceptance_sha256": "4fb943439702a827f8d3749e4eb784a2dab44ff445aaad95eb1bdb81df46536e",
+    "historical_population_sha256": "afdb0a77a634aee062fc5fab3412092406d1b8b0a1dbafeeb83cc517bab3abdb",
+    "historical_acceptance_sha256": "8387dbf1cf9a202c07bc44f4516b6bc9529c9c221d1ef520877e0485f0139396",
     "separate_units": true
   },
   "references": {
@@ -3857,7 +3857,7 @@
     "?unknown_select_color@@YIXH@Z": 7292320,
     "??0TeamClass@@QAE@PAVTeamTypeClass@@PAVHouseClass@@H@Z": 7042096,
     "_?modes@?1??unknown_modes_5b6c30@MultiplayerGameMode@@SAAAV?$DynamicVectorClass@PAVMultiplayerGameMode@@@@XZ@4V3@A": 10951184,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Set@AudioTimeSpan@@QAEX_J@Z": 4208752,
     "?Draw_Me@StaticButtonClass@@UAEHH@Z": 6916192,
     "?Open@RAMFileClass@@UAEHH@Z": 6521872,

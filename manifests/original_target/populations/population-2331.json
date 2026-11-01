@@ -4,8 +4,8 @@
     "id": "population-2331",
     "inventory_sha256": "30aaca6ce5d6c2dcf7f07671841e1fd8b14cc562d183957f9a609f1dfb48ac05",
     "gaps_sha256": "640459b5d6fcc79d78771a65e5936f588e188f7a050a7d5302b5267b602843db",
-    "historical_population_sha256": "913fe8f30e2847b6abc19fb1ab0af9afdf92d82ba73a0ed16a77af5a4f659109",
-    "historical_acceptance_sha256": "c19bf4a25ec7bbda970501ed4c6b1a6feb33e882872dcba924ea6708af02c201"
+    "historical_population_sha256": "91c4dac9456f63885fea5a49f910fc891d38fd32477374b482bdfbc2b3abff52",
+    "historical_acceptance_sha256": "61023da63abf3febaf2f0f69cb9ba6cf68f4dbf7e417d82fee144cffa9890e04"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2733,7 +2733,7 @@
     "__imp__QueryPerformanceCounter@4": 7971272,
     "__imp__DeleteCriticalSection@4": 7971288,
     "__imp__QueryPerformanceFrequency@4": 7971276,
-    "?Init@AudioLevelSet@@QAEXXZ": 4198400,
+    "?Init@AudioLevelSet@@QAIXXZ": 4198400,
     "?Set@AudioTimeSpan@@QAEX_J@Z": 4208752,
     "??0StaticButtonClass@@QAE@IPBGHHHHH@Z": 6915936,
     "??_7StaticButtonClass@@6B@": 8044752,
