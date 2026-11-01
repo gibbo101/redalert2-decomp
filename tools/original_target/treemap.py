@@ -481,8 +481,11 @@ def main():
     assert bottom <= args.height + 0.5, 'layout overflows the canvas: %.1f > %d' % (bottom, args.height)
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    render_png(groups, functions, out, args.width, args.height, commit, top)
     render_svg(groups, functions, out.with_suffix('.svg'), args.width, args.height, commit, top)
+    try:
+        render_png(groups, functions, out, args.width, args.height, commit, top)
+    except ImportError:
+        print('Pillow is not installed: wrote the SVG only (use the system python3 for the PNG)')
     if args.json:
         Path(args.json).write_text(json.dumps([{k: v for k, v in f.items()} for f in functions], indent=0))
     c, b = summary(functions)

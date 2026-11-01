@@ -427,6 +427,8 @@ $RA2_PYTHON -B tools/original_target/class_inventory.py --write-docs
 $RA2_PYTHON -B tools/original_target/organize_by_class.py
 # Regenerate the numeric block in docs/STATUS.md
 $RA2_PYTHON -B tools/original_target/status.py --write
+# Recovery treemap (build/treemap.png/.svg, ignored; needs Pillow, so system python3; ~2 s, no compiler)
+python3 tools/original_target/treemap.py [--threshold 16000] [--out path]
 ```
 
 `diff_candidate.py` binds relocations from in-source `// @ref NAME=ADDRESS`
