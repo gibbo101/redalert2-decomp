@@ -40,6 +40,17 @@ class TeamTypeClass;
 // An object at 0x00839EA0 told when a unit leaves a cell (FootClass slot 52;
 // hypothesis).
 struct UnknownTracker839EA0 {
+    // Known spatial-vector prefix:400 bins at stride18h, then a query working list.
+    // Original base-vector RTTI79A7FC is VectorClass<TechnoClass *>; owner full size/name remain hypotheses.
+    DynamicVectorClass<TechnoClass *> Bins[400];
+    DynamicVectorClass<TechnoClass *> Working; // +2580; ActiveCount+2590
+    void Append_Bin_00412720(int index);
+    long Load_00413400(IStream *stream);
+    TechnoClass *Fetch_Next_004134e0();
+    void Clear_00413540();
+    long Save_00413590(IStream *stream);
+
+
     void Unknown_00413310(FootClass *foot);    // 0x00413310
     void Unknown_004131E0(FootClass *foot);    // 0x004131E0 (a unit arrives; FootClass slot 53)
     bool Unknown_004132E0(FootClass *foot);    // 0x004132E0
