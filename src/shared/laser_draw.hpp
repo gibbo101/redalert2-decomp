@@ -26,6 +26,11 @@ public:
     void Update();                             // 0x00533330
     // Updates every laser, last first.
     static void Update_All();                  // 0x005333F0
+    // Draws the laser (nothing once its duration is not positive; the
+    // house-colour lasers through Draw_House_Color).
+    void Draw_It();                            // 0x005334F0
+    // Draws every laser, last first.
+    static void Draw_All();                    // 0x005334D0
 
     StageClass Progress;                       // +0x00 (stage 0, rate 1)
     int unknown_18;                            // +0x18 (1; 0x4468DD stores 3)
