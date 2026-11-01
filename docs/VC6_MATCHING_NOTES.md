@@ -854,3 +854,13 @@ Two functions our headers labelled handwritten assembly, LCW_Uncomp 0x534B50 and
 are Westwood C that compiled exact almost at once from the TibSun/Westwood source (`__fastcall` LCW decoder; TibSun
 animfile.cpp). Before parking a row as assembly, compile the TibSun/Westwood C; only genuine inline-asm bodies
 (LCW_Comp 0x534D40, XSurface::Fill_Rect 0x7743C0, BlitForward 0x4861C0/0x487080) stay out.
+
+## Boolean conditional forms and bitfield order (Cell450, 2026-11-01)
+
+- `flag = (x == 0) ? true : false;` and `flag = (x == 0);` are not the same to VC6. The plain comparison kept `x`
+  live in a register and shifted every spill slot (Set_Under_Bridge 0x4732D0: 76.95 against exact with the
+  conditional form).
+- Consecutive bitfield assignments hoist their shift/mask temporaries in statement order: match the original's
+  store order first.
+- A member defined later in the same file still inlines into earlier callers (CellClass::Adjacent_Cell 0x476AC0
+  into the bridge functions); do not move definitions to force or prevent it.

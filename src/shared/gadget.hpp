@@ -152,6 +152,15 @@ public:
     int ToggleType;         // +0x30
 };
 
+// CheckBoxClass (unit 0x0047D150, after Cell.CPP; TibSun checkbox.cpp): a toggle
+// drawn as a sunken box, filled when on. Its vtable is not in the executable
+// (no constructor is linked); the two members are unreferenced.
+class CheckBoxClass : public ToggleClass {
+public:
+    virtual int Draw_Me(int forced = false);                        // 0x0047D150
+    virtual int Action(unsigned flags, unsigned &key);              // 0x0047D270
+};
+
 #ifndef _WCHAR_T_DEFINED
 typedef unsigned short wchar_t;
 #define _WCHAR_T_DEFINED
