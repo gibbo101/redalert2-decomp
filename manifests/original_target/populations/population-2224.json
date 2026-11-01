@@ -146,32 +146,6 @@
       "source_order": 81281
     },
     {
-      "entry": 7239488,
-      "method": "006e7740",
-      "symbol": "??0UnknownRecord_006e7740@@QAE@XZ",
-      "symbol_prefix": "??0UnknownRecord_006e7740@@QAE@XZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 61,
-      "body_sha256": "a5f783d18b54d2cafbf4a4060f7c068a841935fd2dcd9e064da2b2d9fb6e28b6",
-      "padding_bytes": 3,
-      "full_extent_bytes": 64,
-      "full_extent_sha256": "e5962f810be1b74e7cf463b6478783677e9dc7efd534008d0d52c614e2b29ac6",
-      "relocations": [],
-      "source_sha256": "56277823f63032dafd2e265553027d91eab615ee560d74b174b5f28a39be4a00",
-      "source": "src/recovered/unowned/UnknownRecord_constructor_006e7740.cpp",
-      "population": "population-2224",
-      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "UnknownRecord_constructor_006e7740",
-      "source_order": 81283
-    },
-    {
       "entry": 7432048,
       "method": "00716770",
       "symbol": "?unknown_select@UnknownOwner_00716770@@QAEPAXXZ",

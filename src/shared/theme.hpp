@@ -12,12 +12,37 @@
 
 #include "shared/vector_class_decl.hpp"
 
+// The full theme record is declared only where THEME_CONTROL_RECORD is defined
+// before this header (the theme unit, 0x006E7740-0x006E8510): a new layout here
+// renumbers the labels of Refresh_Wonline_Players 0x0073FEE0.
+#ifdef THEME_CONTROL_RECORD
+class CCINIClass;
+
+// A theme record (0x290 bytes: operator new in 0x006E7890; reset by
+// 0x006E7740, read from the INI by 0x006E7780).
+struct ThemeControl {
+    ThemeControl();                         // 0x006E7740
+    // Reads the record's section (named Name) of ini; false when absent (0x006E7780).
+    bool Fill_In(CCINIClass const &ini);
+
+    char Name[0x100];           // +0x000 INI section name (From_Name compares it)
+    char Sound[0x100];          // +0x100 file base name ("Sound")
+    unsigned short FullName[0x40];  // +0x200 display name ("Name", wide)
+    int Scenario;               // +0x280
+    float Duration;             // +0x284 length (0x006E7AF0 measures it)
+    bool unknown_288;           // +0x288 (TS Normal; 0x006E7780 reads the wide name only when set)
+    bool unknown_289;           // +0x289 (TS Repeat; Pick_Next_Song skips repeating a theme with it set)
+    bool Available;             // +0x28A the sound file exists (0x006E7AF0)
+    int Owner;                  // +0x28C side (-1: any)
+};
+#else
 // A theme record (0x290 bytes?); only the flags the player tests.
 struct ThemeControl {
     char unknown_000[0x288];
     bool unknown_288;
     bool unknown_289;           // +0x289 (Pick_Next_Song skips repeating a theme with it set)
 };
+#endif
 
 typedef int ThemeType;
 #define THEME_NONE (-1)
