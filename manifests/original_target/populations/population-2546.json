@@ -1469,65 +1469,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "Window_Rect_In_Main_Client_00735690",
       "source_order": 97305
-    },
-    {
-      "entry": 7560016,
-      "method": "00735b50",
-      "symbol": "?Dialog_Template_Size@@YIHHP6GHPAUHWND__@@IIJ@ZHPAJ@Z",
-      "symbol_prefix": "?Dialog_Template_Size@@YIHHP6GHPAUHWND__@@IIJ@ZHPAJ@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 78,
-      "body_sha256": "4fe77ae8c9bf336199534e22155c8228145c18df3ec4e534bc2efc144c9f8799",
-      "padding_bytes": 2,
-      "full_extent_bytes": 80,
-      "full_extent_sha256": "dba7df04ba1faa4d62fae012945c86f4e93a28cb7b059f4c8093d9b9d4760aad",
-      "relocations": [
-        {
-          "offset": 1,
-          "kind": 6,
-          "symbol": "?ProgramInstance@@3PAXA",
-          "target": 11690368,
-          "addend": 0,
-          "resolved": 11690368
-        },
-        {
-          "offset": 24,
-          "kind": 6,
-          "symbol": "__imp__CreateDialogParamA@20",
-          "target": 7971844,
-          "addend": 0,
-          "resolved": 7971844
-        },
-        {
-          "offset": 38,
-          "kind": 6,
-          "symbol": "__imp__GetClientRect@8",
-          "target": 7972024,
-          "addend": 0,
-          "resolved": 7972024
-        },
-        {
-          "offset": 45,
-          "kind": 6,
-          "symbol": "__imp__DestroyWindow@4",
-          "target": 7971796,
-          "addend": 0,
-          "resolved": 7971796
-        }
-      ],
-      "source_sha256": "e1091a66cdd4603d19731afe8a3f3b56074c4ad42055437704a6ecdf62777051",
-      "source": "src/recovered/unowned/Dialog_Template_Size_00735b50.cpp",
-      "population": "population-2546",
-      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "Dialog_Template_Size_00735b50",
-      "source_order": 97306
     }
   ]
 }

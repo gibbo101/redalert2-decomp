@@ -15,6 +15,10 @@ class WindowsVersionInfo {
 public:
     WindowsVersionInfo();                   // 0x00736EB0
     ~WindowsVersionInfo() {}
+    // "Windows 95 ", "Windows 98 ", "Windows NT 5 " or "Windows NT 4 " followed by the service-pack
+    // text, in a static buffer (0x00B25DF0); the NT 4 test does not check the version, so NT 5
+    // reads as NT 4 too (0x00736F40).
+    char *Version_Name();
 
     int MajorVersion;                       // +0x00
     int MinorVersion;                       // +0x04
@@ -25,5 +29,6 @@ public:
 };
 
 extern WindowsVersionInfo WinVersion;       // 0x00839BC0
+extern char unknown_version_name_b25df0[];  // 0x00B25DF0
 
 #endif
