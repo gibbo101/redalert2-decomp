@@ -2,9 +2,9 @@
 // The occupation list: every cell of the image's grid that has a tile, then
 // the 0x7FFF end marker (a function-local static list, not initialized).
 #include "shared/isometric_tile_type.hpp"
-// @ref _?$S40@?1??unknown_slot36@IsometricTileTypeClass@@UBEPBVCell@@H@Z@4EA=00a52e88
+// @ref _?$S57@?1??unknown_slot36@IsometricTileTypeClass@@UBEPBVCell@@H@Z@4EA=00a52e88
 // @ref _?list@?1??unknown_slot36@IsometricTileTypeClass@@UBEPBVCell@@H@Z@4PAUUnknownStaticCell@@A=00a52c84
-// @ref _$E41=00529510
+// @ref _$E58=00529510
 // @ref _atexit=0078298a
 
 Cell const *IsometricTileTypeClass::unknown_slot36(int arg1) const

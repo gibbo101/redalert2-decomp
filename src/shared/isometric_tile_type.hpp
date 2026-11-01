@@ -23,17 +23,12 @@
 
 extern "C" GUID const CLSID_IsometricTileTypeClass;
 
-// The colour table list's constructor expands in place while its base
-// constructor stays a call (0x0052ED90) in this unit.
-template <>
-VectorClass<unsigned short *>::VectorClass(unsigned size, unsigned short * const *array);
-template <>
-inline DynamicVectorClass<unsigned short *>::DynamicVectorClass(unsigned size, unsigned short * const *array)
-    : VectorClass<unsigned short *>(size, array)
-{
-    GrowthStep = 10;
-    ActiveCount = 0;
-}
+class IsometricTileTypeClass;
+// The tile art's palette (0x00A6DD10; defined with its initializer in this class's unit).
+extern PaletteClass IsoTilePalette;
+
+// Every isometric tile type (0x00A40CD0; also shared/isometric_tile.hpp).
+extern DynamicVectorClass<IsometricTileTypeClass *> IsoTileTypes;
 
 // The image of an isometric tile type (a TMP file): a 16-byte header, then
 // one offset per cell of the grid, 0 where the cell has no tile (slot 36).
@@ -42,9 +37,13 @@ struct IsoTileImageStruct {
     int Tiles[1];                                       // +0x10 per-cell tile offsets
 };
 
-// One cell's tile in the image (the Tiles entries point at it; hypothesis).
+// One cell's tile in the image (the Tiles entries point at it; TibSun IsoTileRecord: names
+// from +0x24 on are its hypotheses).
 struct IsoTileCellStruct {
-    char unknown_00[0x28];
+    char unknown_00[0x24];
+    unsigned IsHasExtraData : 1;                        // +0x24 bit 0
+    unsigned IsHasZData : 1;                            // +0x24 bit 1
+    unsigned IsRandomized : 1;                          // +0x24 bit 2 (0x0052B730)
     char unknown_28;                                    // +0x28 height (IsometricTileClass slot 71)
     char unknown_29;
     char unknown_2a;                                    // +0x2A (0x0052B6F0)
@@ -52,9 +51,24 @@ struct IsoTileCellStruct {
 
 class IsometricTileTypeClass : public ObjectTypeClass {
 public:
-    class TileInsertType;
+    // A tile set that grew since the map's tile numbering: the first index it moves and by how
+    // much (RTTI: a struct; TibSun TileInsertType field names are hypotheses).
+    struct TileInsertType {
+        int Count;                                      // +0x0
+        int Offset;                                     // +0x4
+    };
+#ifdef ISOMETRIC_TILE_TYPE_DECLARE_STATICS
+    // Static data members (declared only for the class's own unit: each one renumbers the
+    // _$E initializers of every unit that sees it).
+    static DynamicVectorClass<TileInsertType *> TileInsertTypes;    // 0x00A52EC8
+    // The first tile of each cliff set that casts shadows (0x00A52E74; TibSun ShadowCasterTiles).
+    static int ShadowCasterTiles[5];
+#endif
 
-    IsometricTileTypeClass(NoInitClass const &noinit) : ObjectTypeClass(noinit) {}
+    // A tile type at IsoTileTypes index `type` (0x00528EE0; the two small arguments are kept
+    // as Unused1/Unused2; registration in IsoTileTypes is skipped on request).
+    IsometricTileTypeClass(int type, int unknown1, unsigned char unknown2, char const *ini_name, bool skip_registration);
+    IsometricTileTypeClass(NoInitClass const &noinit);                  // 0x00529120
     virtual ~IsometricTileTypeClass();                                  // 0x00529190
 
     virtual HRESULT __stdcall GetClassID(GUID *clsid);                  // 0x0052E2D0 slot 3
@@ -71,32 +85,73 @@ public:
     virtual Cell const *unknown_slot36(int arg1) const;           // 0x00529450
     virtual void *unknown_slot39() const;                               // 0x005293D0
 
-    void unknown_func_52b560();                                         // 0x0052B560 (loads the image)
+    // Whether the image holds sub tile `tile`, loading it first when asked (0x00529340; TibSun
+    // Is_Tile_Index_Valid).
+    bool Is_Tile_Index_Valid(int tile, bool load);
+    // Loads a demand-loaded image that is not resident yet (0x005293A0; TibSun Load_Tile_Image).
+    bool Load_Tile_Image();
+    // The IsoTileTypes index of the type with this INI name, 0xFFFF if none (0x00529400; TibSun From_Name).
+    static int __fastcall From_Name(char const *name);
+    // Variation `index` of the type's chain through unknown_28c, wrapping (0x00529520; TibSun
+    // Next_Tile_From_Set).
+    IsometricTileTypeClass *Next_Tile_From_Set(int index);
+    // A tile type index recorded before TileInsertTypes grew the sets, brought up to date
+    // (0x00529550; TibSun Fixup_Tile_Type; 0xFFFF is no tile).
+    static int __fastcall Fixup_Tile_Type(int type);
+    // Whether sub tile `tile` (wrapping) is one of the type's random variants (0x0052B730; TibSun
+    // Is_Randomized).
+    bool Is_Randomized(int tile) const;
+    // Draws the shadow a slope or cliff tile casts on cell part `index` (0x0052B770; TibSun
+    // Draw_Shadow_Caster; slopes from ShadowCasterSlopeInfo, cliffs from ShadowCasterCliffInfo).
+    void Draw_Shadow_Caster(int index, Surface *surface, Point2D point, Rect cliprect, int offset);
+    int unknown_func_52b560();                                          // 0x0052B560 (loads the image; TibSun Load_Tile_Data: returns its size)
     void unknown_func_52e3d0();                                         // 0x0052E3D0 (rebuilds unknown_274)
     char unknown_func_52b6f0(int index);                               // 0x0052B6F0 (a cell's +0x2A byte of the image; hypothesis)
-    unsigned short unknown_func_52e360(int index, int value, bool second) const;    // 0x0052E360
+    unsigned short unknown_func_52e360(int index, int value, bool second) const;
+    // The preview colour pair of sub tile `tile` at light level `level`, loading the image first
+    // (0x0052E390; TibSun Preview_Tile).
+    unsigned short *Preview_Tile(int tile, int level);    // 0x0052E360
     // Draws one cell of the tile image (0x0052C230; arguments are hypotheses: a light converter,
     // a cell index, the surface, the screen point, the clip rectangle, a height and a level).
     // The light converter with these tints, made when there is none yet (0x00529590; Westwood's
     // Find_Or_Make_Drawer; 0 without a palette).
     static LightConvertClass *__fastcall Find_Or_Make_Drawer(int red, int green, int blue);
+    // Frees every light converter and makes the normal-light one again; every cell picks its
+    // drawer anew (0x00529720; TibSun Init_Drawers).
+    static void Init_Drawers();
+    // Counts every map cell's tile variation as used, then loads the used images and frees the
+    // rest (all of them when skipping the count; random maps keep the RMG ones) (0x0052B2E0;
+    // TibSun Load_Tiles).
+    static void __fastcall Load_Tiles(bool skip_iteration, bool is_random);
     void unknown_func_52c230(LightConvertClass *drawer, int arg2, Surface *surface, int x, int y, Rect rect,
         int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, int arg13, int arg14);
 
-    int ArrayIndex;                                     // +0x264
-    char unknown_268[0x274 - 0x268];                    // +0x268
-    DynamicVectorClass<unsigned short *> unknown_274;   // +0x274
-    AbstractClass *unknown_28c;                         // +0x28C
-    char unknown_290[0x298 - 0x290];                    // +0x290
+    int ArrayIndex;                                     // +0x264 (TibSun HeapID)
+    int MarbleMadness;                                  // +0x268 0xFFFF: none (TibSun names from here; hypotheses)
+    int NonMarbleMadness;                               // +0x26C 0xFFFF: none
+    int TileSetBaseID;                                  // +0x270
+    DynamicVectorClass<unsigned short *> unknown_274;   // +0x274 the preview colour tables (TibSun PreviewTiles)
+    AbstractClass *unknown_28c;                         // +0x28C next variation (TibSun NextTileTypeInSet)
+    int ToSnowTheater;                                  // +0x290 -1: none
+    int ToTemperateTheater;                             // +0x294 -1: none
     int unknown_298;                                    // +0x298 AnimTypes index (-1: none)
-    char unknown_29c[0x2B0 - 0x29C];                    // +0x29C
-    bool unknown_2b0;                                   // +0x2B0 (smudges allowed; map_cell_view.hpp)
-    char unknown_2b1[0x2B4 - 0x2B1];                    // +0x2B1
+    Point2D Offset;                                     // +0x29C the animation's offset
+    int AttachesTo;                                     // +0x2A4 -1: none
+    int ZAdjust;                                        // +0x2A8
+    int Unused1;                                        // +0x2AC the constructor's second argument
+    bool unknown_2b0;                                   // +0x2B0 (smudges allowed; map_cell_view.hpp; TibSun IsMorphable)
+    bool IsShadowCaster;                                // +0x2B1
+    bool IsAllowToPlace;                                // +0x2B2
+    bool IsRequiredForRMG;                              // +0x2B3
     int unknown_2b4;                                    // +0x2B4 cells across (the image's tile grid; slot 36)
     int unknown_2b8;                                    // +0x2B8 cells down
-    char unknown_2bc[0x2C4 - 0x2BC];                    // +0x2BC
-    bool unknown_2c4;                                   // +0x2C4 (image loads on demand; hypothesis)
-    char unknown_2c5[0x2DC - 0x2C5];                    // +0x2C5
+    int Unused2;                                        // +0x2BC the constructor's third argument
+    int NumTileTypesInSet;                              // +0x2C0 the unknown_28c chain's length
+    bool unknown_2c4;                                   // +0x2C4 image loads on demand (TibSun IsFileLoaded)
+    char Filename[16];                                  // +0x2C5 the image file's name
+    bool unknown_2d5;                                   // +0x2D5 (map_cell_view.hpp; TibSun IsAllowBurrowing)
+    bool unknown_2d6;                                   // +0x2D6 (map_cell_view.hpp: tiberium may grow; TibSun IsAllowTiberium)
+    int UseCount;                                       // +0x2D8
 };
 
 #endif

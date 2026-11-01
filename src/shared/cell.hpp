@@ -237,6 +237,12 @@ public:
     // Westwood's Init_Drawer: takes the drawer given, or finds or makes one for the cell's light (+0x34), and keeps the light values.
     // arg1 is the drawer (a LightConvertClass *; retyping it is a rename of the accepted callers' binding).
     void Init_Drawer(LightConvertClass *drawer, int intensity, int ambient, int brightness, int tile_brightness, int alt_brightness);   // 0x004790F0 (TerrainClass slots 67/68, DisplayClass 0x0049E570 pass no drawer)
+#ifdef CELL_DECLARE_CLEAR_ICON
+    // A variation index for a tile set of `count` variations, picked from the cell's position
+    // (0x004767A0; TibSun Clear_Icon; declared only for IsometricTileTypeClass::Load_Tiles,
+    // as this header is in Refresh_Wonline_Players 0x0073FEE0's closure).
+    int Clear_Icon(int type, int count) const;
+#endif
     class BuildingClass *Get_Gate() const;   // Westwood's Get_Gate: the gate building in the cell, or 0 (inline in the Cell unit)
     CoordStruct Closest_Free_Spot(CoordStruct const &coord, bool any = false, bool alt = false) const;   // 0x004764B0 (the free sub-cell spot nearest coord, alt on the bridge; any: the nearest spot even if taken)
     void unknown_478f40();                      // 0x00478F40 (Westwood's Recalc_Passability: sets unknown_4c from the overlay, land and occupiers)
