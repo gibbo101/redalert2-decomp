@@ -1,3 +1,4 @@
+#define VECTOR_IMPLEMENT_ALL
 // Header-static dynamic initializers of the unit at 0x004123E0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x004123E0-0x004125C6); the other
