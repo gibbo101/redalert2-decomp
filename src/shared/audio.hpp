@@ -138,6 +138,7 @@ struct AudioTimeSpan {
     void Set_08(__int64 value);     // 0x004038A0
     void Set_20(__int64 value);     // 0x004038C0
     void Tick(__int64 now);         // 0x00403920
+    int Is_Due(__int64 now);        // 0x004038E0 now - LastTime has reached the period (unsigned)
 
     __int64 volatile unknown_00;             // +0x00 period
     __int64 volatile LateLimit;              // +0x08
