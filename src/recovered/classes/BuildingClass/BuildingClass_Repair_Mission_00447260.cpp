@@ -192,7 +192,7 @@ int BuildingClass::unknown_slot141()
                                 mover->unknown_3f8 = 0;
                                 return 1;
                             }
-                            Cell exit = *(Cell *)unknown_slot280((int)&Cell(), (int)Contact(0));
+                            Cell exit = unknown_slot280(Contact(0));
                             if (unknown_1b0) exit = Building_Repair_Archive_Cell_00447260(*unknown_1b0);
                             if (exit != *(Cell const *)&unknown_84ed10) {
                                 mover->unknown_slot116(2, false);
@@ -252,7 +252,7 @@ int BuildingClass::unknown_slot141()
                                 mover->unknown_3f8 = 0;
                                 unknown_slot149(3);
                             } else {
-                                Cell exit = *(Cell *)unknown_slot280((int)&Cell(), (int)Contact(0));
+                                Cell exit = unknown_slot280(Contact(0));
                                 if (unknown_1b0) exit = Building_Repair_Archive_Cell_00447260(*unknown_1b0);
                                 if (exit != *(Cell const *)&unknown_84ed10) {
                                     mover->unknown_slot116(2, false);

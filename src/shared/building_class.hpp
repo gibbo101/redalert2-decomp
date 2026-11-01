@@ -237,7 +237,7 @@ public:
     virtual void unknown_slot266();                                   // slot 266 0x004518C0
 
     // New virtuals (slots 280-292); parameters from ret N, placeholders.
-    virtual int unknown_slot280(int arg1, int arg2);                  // slot 280 0x0044A400
+    virtual Cell unknown_slot280(TechnoClass *object);                  // slot 280 0x0044A400
     virtual int unknown_slot281(ObjectClass *object);                 // slot 281 0x004442B0 (distance)
     virtual int unknown_slot282(bool arg1);                           // slot 282 0x004426D0 (ret 4)
     virtual void unknown_slot283();                                    // slot 283 0x00441EB0
