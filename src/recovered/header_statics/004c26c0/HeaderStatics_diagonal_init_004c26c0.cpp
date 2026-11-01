@@ -1,3 +1,5 @@
+#define RA2_COORD_FROM_CELL_INLINE
+#define RA2_COORD_AS_CELL
 // Header-static dynamic initializers of the unit at 0x004C26C0 and the
 // unit's FootClass list; the other drafts of this plan are emitted by this file.
 #include "shared/unknown_geometry.hpp"
@@ -72,3 +74,5 @@ DynamicVectorClass<FootClass *> unknown_FootClass_list_00865f38;
 // @ref _unknown_geometry_l=00865f20
 // @ref _unknown_geometry_sixty=007a11f0
 // @ref _unknown_static_rect=00865ef0
+
+#include "shared/cell.hpp"

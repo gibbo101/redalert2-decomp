@@ -16,11 +16,16 @@ enum FacingType {
     FACING_COUNT
 };
 
+enum Dir256 { DIR_MIN=0, DIR_MAX=255 };
+
 class DirType {
 public:
     DirType() {}
     DirType(int dir) { Facing = dir; }
     DirType(FacingType dir) { From_Facing(dir); }
+    DirType(Dir256 dir) { From_Dir256(dir); }
+    void From_Dir256(Dir256 dir) { Facing=0; Facing|=(dir<<8); }
+    DirType const &Snap_To_256() { Facing &= 0xFF00; return *this; }
 
     void From_Facing(FacingType dir)
     {
