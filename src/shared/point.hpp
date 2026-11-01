@@ -15,6 +15,10 @@ public:
     TPoint2D() {}
     TPoint2D(T x, T y) : X(x), Y(y) {}
 
+    // Member-wise addition in place, reference point arithmetic.
+#ifdef RA2_POINT_ADD_IN_PLACE
+    TPoint2D<T> const &operator+=(TPoint2D<T> const &rvalue) { X += rvalue.X; Y += rvalue.Y; return *this; }
+#endif
     TPoint2D<T> const &operator-=(TPoint2D<T> const &rvalue) { X -= rvalue.X; Y -= rvalue.Y; return *this; }
     // Member-wise difference and sum (TPoint2D<short>: out-of-line copies
     // 0x0056AA40 in Map.CPP and 0x0042ADD0).
