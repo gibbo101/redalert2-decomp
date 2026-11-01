@@ -4805,32 +4805,6 @@
       "source_order": 144987
     },
     {
-      "entry": 5942800,
-      "method": "005aae10",
-      "symbol": "?unknown_compare_descending_60_005aae10@@YAHPBX0@Z",
-      "symbol_prefix": "?unknown_compare_descending_60_005aae10@@YAHPBX0@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 40,
-      "body_sha256": "27bd237874190473444f9aba173bc8543fbe35c7680f2d891b9d35a895a948d2",
-      "padding_bytes": 8,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "d82b65889d24c6e49280a79d0a37721835e2374024e17dee64149d6c44ffe1b3",
-      "relocations": [],
-      "source_sha256": "63843929e6fdfa482f8b8a3e9ee389a6ad4c68f73752d5530a8e4aed11563568",
-      "source": "src/recovered/unowned/unknown_compare_descending_60_005aae10.cpp",
-      "population": "population-3348",
-      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_compare_descending_60_005aae10",
-      "source_order": 144990
-    },
-    {
       "entry": 5431200,
       "method": "0052dfa0",
       "symbol": "?unknown_frame_extent_0052dfa0@UnknownImageOwner_0052dfa0@@QAEHH@Z",
@@ -5129,81 +5103,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "unknown_text_buffer_append_005cfd70",
       "source_order": 144993
-    },
-    {
-      "entry": 5942736,
-      "method": "005aadd0",
-      "symbol": "?Unknown_005AADD0@@YAXXZ",
-      "symbol_prefix": "?Unknown_005AADD0@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 62,
-      "body_sha256": "85cc211d42bf173932edaa0d6b43f3eeeae342e8892a92901813487b5be06e71",
-      "padding_bytes": 2,
-      "full_extent_bytes": 64,
-      "full_extent_sha256": "ab23817ab73e30fa8f1677d291493b2e93128bebc0b172eab927a90825a80c67",
-      "relocations": [
-        {
-          "offset": 3,
-          "kind": 6,
-          "symbol": "?unknown_session_a3d298@@3UUnknownSessionState@@A",
-          "target": 10736280,
-          "addend": 8952,
-          "resolved": 10745232
-        },
-        {
-          "offset": 12,
-          "kind": 6,
-          "symbol": "?unknown_sorted_scores_a715f0@@3PAPAVMPlayerScoreType@@A",
-          "target": 10950128,
-          "addend": 0,
-          "resolved": 10950128
-        },
-        {
-          "offset": 17,
-          "kind": 6,
-          "symbol": "?unknown_session_a3d298@@3UUnknownSessionState@@A",
-          "target": 10736280,
-          "addend": 8052,
-          "resolved": 10744332
-        },
-        {
-          "offset": 40,
-          "kind": 6,
-          "symbol": "?unknown_compare_descending_60_005aae10@@YAHPBX0@Z",
-          "target": 5942800,
-          "addend": 0,
-          "resolved": 5942800
-        },
-        {
-          "offset": 48,
-          "kind": 6,
-          "symbol": "?unknown_sorted_scores_a715f0@@3PAPAVMPlayerScoreType@@A",
-          "target": 10950128,
-          "addend": 0,
-          "resolved": 10950128
-        },
-        {
-          "offset": 53,
-          "kind": 20,
-          "symbol": "_qsort",
-          "target": 7871814,
-          "addend": 0,
-          "resolved": 1929021
-        }
-      ],
-      "source_sha256": "98fcfa3012444c91920e2d8108e517f54bbf00b3e63b90179edd2e3c5b0fb6df",
-      "source": "src/recovered/unowned/Unknown_Sort_Scores_005aadd0.cpp",
-      "population": "population-3348",
-      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "Unknown_Sort_Scores_005aadd0",
-      "source_order": 144989
     }
   ]
 }
