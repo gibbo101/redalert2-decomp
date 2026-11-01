@@ -4,8 +4,8 @@
     "id": "population-3390",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "6ad530e02fbb3a716e7354ca92577f126383749f7813c41369b156f766fe8b5f",
-    "historical_acceptance_sha256": "dfa7fabb9137acf48f272e56f1e447239949227e8949d50531e3a547ce4c3ca9"
+    "historical_population_sha256": "521bb17f990f3d28a6139bea938f59511b735d2d1ab5cc5fa316b64ddd9069df",
+    "historical_acceptance_sha256": "51420d14d04c4a8982895b7ef423412c5d8ebac7b50d13ddafec4e154a6160b0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1527,7 +1527,7 @@
     "??_EMSPrintAnim@@UAEPAXI@Z": 5963392,
     "?unknown_object_84e8d0@@3VUnknown84E8D0@@A": 8710352,
     "_$E41": 4381072,
-    "?Print_Box@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
+    "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?unknown_beacon_cycle_84e93c@@3HA": 8710460,
     "?unknown_flag_a3dc89@@3_NA": 10738825,
     "_wcsrchr": 7878085,
@@ -10638,7 +10638,14 @@
     "??_E?$VectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEPAXI@Z": 5040784,
     "??_E?$VectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524048,
     "?Unknown_0063B5B0@@YI_NHVCell@@@Z": 6534576,
-    "??1RadarEventClass@@QAE@XZ": 6535232
+    "??1RadarEventClass@@QAE@XZ": 6535232,
+    "?Unknown_0042DDF0@UnknownBeacon@@QAEXPBG@Z": 4382192,
+    "?Reset@Benchmark@@QAEXXZ": 4387056,
+    "?Value@Benchmark@@QBEKXZ": 4387296,
+    "?Unknown_0042E080@UnknownBeacon@@QAE_NXZ": 4382848,
+    "?Unknown_0042E740@Unknown84E8D0@@QAE_NHHH@Z": 4384576,
+    "?Unknown_0042E990@Unknown84E8D0@@QAEXHH@Z": 4385168,
+    "?Load@GraphicMenu@@SIPAV1@AAVINIClass@@ABVWstring@@@Z": 5104512
   },
   "regions": [
     {
@@ -11865,13 +11872,13 @@
         {
           "offset": 792,
           "kind": 20,
-          "symbol": "?Print_Box@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z",
+          "symbol": "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z",
           "target": 4400272,
           "addend": 0,
           "resolved": 18260
         }
       ],
-      "source_sha256": "018180081ec91401d12648e332d39ce3677cf8deddf129a5ce9c81862001350c",
+      "source_sha256": "9a4a978d2f26af7a6cce9da835921baa2b4da6d3b1622951751754f6504a8a29",
       "source": "src/recovered/classes/UnknownBeacon/UnknownBeacon_Unknown_0042DA20_0042da20.cpp",
       "population": "population-3390",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",

@@ -4,8 +4,8 @@
     "id": "population-2399",
     "inventory_sha256": "d875040c54e284097fe975bbb31633b2928c4a6cf2fd46670801ac0ea7cc6cf4",
     "gaps_sha256": "cb291927af64fb1bc58861d53c62c9786babc19a5f5cee06a224cd4ccc736fc0",
-    "historical_population_sha256": "5c9bcd24bd1fd1303ee058fd20f1c4ac4d1bd48178dc8ccdb7d8b3ab71b62070",
-    "historical_acceptance_sha256": "7a04053a605b75c44083c88d3dc380a55fe374d6eaba1911150752dcb60bafbe"
+    "historical_population_sha256": "2d61b502f668c94719da03d0a514962f8531978925d3e5af17a8d586614b715c",
+    "historical_acceptance_sha256": "af7e7de0facf44e1a584aa1aadbbc31568baebf48c4817fd42157f7fe6f30778"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -4953,7 +4953,7 @@
     "?unknown_flag_a3f121@@3_NA": 10744097,
     "?Unknown_Play_Taunt_00715fb0@@YIXD@Z": 7430064,
     "?Grow@?$UnknownGrowArray@UUnknownGrowElement8@@@@QAE_NH@Z": 5213280,
-    "?Print_Box@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
+    "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?CreateInstance@TiberianSunClassFactory@@UAGJPAUIUnknown@@ABUGUID@@PAPAX@Z": 4352880,
     "?Find@VocClass@@SIPAV1@PBD@Z": 7424400,
     "?Find@VoxClass@@SIPAV1@PBD@Z": 7431872,

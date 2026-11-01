@@ -4,8 +4,8 @@
     "id": "population-3302",
     "inventory_sha256": "111ba296ed22f1b1965deb4c51e2541af634f53142e34275cdf35273fb93e3ee",
     "gaps_sha256": "4f2b7ebfae29d8586f2628979d9aacc07335b7214ee1c702d49fafea49aa785c",
-    "historical_population_sha256": "4022740e8026c572f8828b30588c12d22e1b1519e9b62f6a74d76119b60fceaa",
-    "historical_acceptance_sha256": "06ac56d52914e4f338c2454bce3a86e32424b92db48c81a002843de68a884e2e"
+    "historical_population_sha256": "aa54e6c2e820cbc3634f8a58c1027130e41e8c7b1dc6d41e43f1340868a87597",
+    "historical_acceptance_sha256": "a9f7b77dc65e1ac236f5628a007906a89299daa04919aead52051f7ae2680996"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8641,7 +8641,7 @@
     "??NIPXAddressClass@@QAE_NAAV0@@Z": 5388304,
     "?Get_Node@BaseClass@@QAEPAVBaseNodeClass@@PAVBuildingClass@@@Z": 4375216,
     "?unknown_session_a3d340@@3HA": 10736448,
-    "?Print_Box@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
+    "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
     "?Unknown_0042EFD0@Unknown84E8D0@@QAE_NXZ": 4386768,
@@ -20349,7 +20349,7 @@
         {
           "offset": 307,
           "kind": 20,
-          "symbol": "?Print_Box@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z",
+          "symbol": "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z",
           "target": 4400272,
           "addend": 0,
           "resolved": 4292543001

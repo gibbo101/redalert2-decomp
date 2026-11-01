@@ -6,7 +6,7 @@
 #include "shared/palette.hpp"
 #include "shared/cd_timer.hpp"
 #include "shared/keyboard.hpp"
-// @ref ?Print_Box@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z=00432490
+// @ref ?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z=00432490
 // @ref ?unknown_beacon_cycle_84e93c@@3HA=0084e93c
 // @ref ?unknown_flag_a3dc89@@3_NA=00a3dc89
 // @ref _wcsrchr=007835c5
