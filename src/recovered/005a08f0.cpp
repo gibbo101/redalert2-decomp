@@ -1,27 +1,16 @@
-// 0x005a08f0: function not yet identified
-//
-// Body: 36 bytes (frozen inventory bound).
-// Referenced from 2 sites (data).
-// Ghidra prototype: void __fastcall FUN_005a08f0(int param_1)
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
+// void __fastcall Unknown_Movie_Message_005a08f0(int movie) (0x005A08F0)
+// The subtitle callback of the radar's queued movies: shows the subtitle's text in the session's message
+// list for its display duration (the argument is the SubTitle the movie's companion reached).
+#include "shared/movie_queue.hpp"
+#include "shared/subtitle.hpp"
+#include "shared/session_state.hpp"
+// @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
+// @ref ?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z=005b4da0
 
-namespace seed_005a08f0 {
-
-struct Callee_005b4da0 { undefined4 FUN_005b4da0(int, int, int, int, int, int, int); };
-extern "C" undefined4 DAT_00a3dc70;
-
-void __fastcall FUN_005a08f0(int param_1)
+void __fastcall Unknown_Movie_Message_005a08f0(int movie)
 {
-    if (param_1 != 0) {
-        ((Callee_005b4da0*)(&DAT_00a3dc70))->FUN_005b4da0((int)(0), (int)(0), (int)(*(undefined4 *)(param_1 + 0x14)), (int)(0), (int)(0x4046), (int)(*(undefined4 *)(param_1 + 4)), (int)(0));
+    SubTitle *subtitle = (SubTitle *)movie;
+    if (subtitle != 0) {
+        unknown_session_a3d298.Messages.Add_Message(0, 0, subtitle->Get_Text(), 0, 0x4046, subtitle->Get_Display_Duration(), false);
     }
-    return;
 }
-
-}  // namespace seed_005a08f0
