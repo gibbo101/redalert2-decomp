@@ -892,3 +892,21 @@ copies exactly.
 - (Egos466) An inline helper's body form changes the caller's branch layout when inlined, even if both forms are
   exact out of line: TibSun's `Y -= amount; if (Y < -20) return true; else return false;` for EgoClass::Advance
   0x4B3670 fixed the Egos scroll loop where a bool-local form did not.
+
+## Named results move stores (NearMiss469, 2026-11-01)
+
+- `int length = Get_String(...); if (length == 0)` lets the two inlined CRC temporaries share a frame slot (0x5014);
+  `if (Get_String(...) == 0)` keeps them apart (0x5028) (INIClass::Get_Unicode 0x50EDF0).
+- An inline helper that names its returned value (`Cell adjacent = ...; return Map[adjacent];`) moves the copy's store
+  after the push and `this` setup at every inlined caller: a change to one helper body re-scores all its inliners.
+- RA2 Direction-style code subtracts in ints and negates: `int dy = to.Y - from.Y; atan2((double)-dy, (double)dx)`
+  gives the original's `sub; neg`.
+
+## Switch cases do not share temporaries (Loco468, 2026-11-01)
+
+Lab-confirmed (build/class-work/Loco468/lab/t1-t3.cpp): unnamed temporaries in different `case`s of one `switch` never
+share a stack slot, while the same code as plain `if`s does, and temporaries inside inlined helpers share even within
+a switch. In a big state-machine Process (Rocket 0x63DE90), routing each `LinkedTo->Center_Coord()`-style temporary
+through a file-static helper (Ground_Distance, Direction_To, Distance_To) cut the frame from 0x9C-0xAC to the
+original 0x84. A real arithmetic helper (`static inline int Square(int)`) adds inline sites and can push a later
+constructor out of line, as the original did (CoordStruct ctor 0x41B630 in 0x63DE10's inlined copies).
