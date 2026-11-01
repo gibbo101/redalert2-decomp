@@ -823,3 +823,9 @@ Is_Low_Bridge test out (`CellClass *cellptr = &Map[tmp]; overlay = cellptr->Over
 && overlay <= 0x65)`) instead of calling the bridge predicate. A hand-written `tmp + AdjacentCell[f]` costs ~16-20 IL
 more than an Adjacent_Cell call; by-value vs reference, enum vs int, `!= 0` and early declarations cost nothing.
 (macOS `seq 0 -1` prints "0 -1": guard k=0 in probe scripts.)
+
+## Function-local statics in a shared .rdata (Iso416, 2026-11-01)
+VC6 puts a function-local `static float const` into the unit's .rdata together with the header-static constants, so
+one data section holds symbols the original placed apart. The audit verifies such a section per symbol (each bound by
+@ref, tiling the section, bytes equal at its own original address) since 53f108001; bind every symbol, including the
+local static's decorated `_?_name@?M@??func@Class@@...` name.
