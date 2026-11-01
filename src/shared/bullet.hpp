@@ -72,19 +72,19 @@ public:
 // copied whole into a BulletVelocity's X and Y (BulletClass 0x00462110 and
 // 0x00463C50; hypothesis: a two-dimensional vector type).
 struct BulletVelocityXY {
+    BulletVelocityXY() {}
     BulletVelocityXY(double x, double y) : X(x), Y(y) {}
     double X;
     double Y;
 };
 
 // A velocity vector of three doubles.
-struct BulletVelocity {
+struct BulletVelocity : public BulletVelocityXY {
     BulletVelocity &operator+=(BulletVelocity const &other); // 0x004642A0
     // The X and Y members as one horizontal vector.
-    BulletVelocityXY &XY() { return *(BulletVelocityXY *)this; }
+    BulletVelocityXY &XY() { return *this; }
 
-    double X;       // +0x00
-    double Y;       // +0x08
+    // X/Y are the planar base at +0/+8; Z remains at +0x10.
     double Z;       // +0x10
 };
 
