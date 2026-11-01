@@ -1,4 +1,9 @@
 // SavegameInformation::SavegameInformation() (0x00659240)
+// The first function of the SavegameInformation unit (TibSun savever.cpp, a separate file from
+// saveload.cpp: SaveLoad's Save_Game/Load_Game call its accessors out of line). The unit's smart
+// pointers release through comip's _Release, expanded inline (shared/com_ptr.hpp).
+#define COM_PTR_IMPLEMENT_RELEASE
+#define COM_PTR_RELEASE_IN_DESTRUCTOR
 #include "shared/savegame_info.hpp"
 
 SavegameInformation::SavegameInformation()

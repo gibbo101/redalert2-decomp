@@ -1,18 +1,5 @@
-// void UnknownComHolder_00658060::unknown_release() -- 0x00658060
-// Purpose: releases the COM interface held at +0x00 when there is one (the
-// pointer is not cleared).
-// Assumptions: owner unidentified; the interface is any IUnknown (the
-// same code as 0x00765B00 in another unit).
-#include "shared/com_api.hpp"
-
-struct UnknownComHolder_00658060 {
-    IUnknown *Interface;                    // +0x00
-    void unknown_release();
-};
-
-void UnknownComHolder_00658060::unknown_release()
-{
-    if (Interface != 0) {
-        Interface->Release();
-    }
-}
+// void UnknownComPtr<ILinkStream>::Release_Held() (0x00658060)
+// comip's _Release, emitted out of line by the link pointers' CreateInstance in Save_Game
+// 0x006554A0 and Load_Game 0x00656890 (shared/com_ptr.hpp).
+#include "shared/saveload_game.hpp"
+#include "shared/com_ptr.hpp"

@@ -40,7 +40,13 @@ public:
     UnknownComPtr(Other const &other) : Pointer(0)
     {
         if (other) {
+#ifdef COM_PTR_RELEASE_IN_DESTRUCTOR
+            // comip's _QueryInterface from another smart pointer (out of line in
+            // SaveLoad.cpp: 0x006591C0).
+            HRESULT result = Query_From(other);
+#else
             HRESULT result = Query(other);
+#endif
             if (FAILED(result) && result != E_NOINTERFACE) {
                 _com_issue_error(result);
             }
@@ -106,9 +112,14 @@ public:
     HRESULT CreateInstance(GUID const &clsid, IUnknown *outer, DWORD context)
     {
         HRESULT result;
+#ifdef COM_PTR_RELEASE_IN_DESTRUCTOR
+        // comip's _Release (SaveLoad.cpp keeps it out of line here: 0x00658060 for ILinkStream).
+        Release_Held();
+#else
         if (Pointer != 0) {
             Pointer->Release();
         }
+#endif
         if (context & (CLSCTX_LOCAL_SERVER | 0x10)) {
             IUnknown *unknown;
             result = CoCreateInstance(clsid, outer, context, unknown_uuid_IUnknown_7ce610, (void **)&unknown);
@@ -170,6 +181,17 @@ public:
         }
         return result;
     }
+#ifdef COM_PTR_RELEASE_IN_DESTRUCTOR
+    // comip's Release(): releases what is held (E_POINTER when empty) and empties it.
+    void Release()
+    {
+        if (Pointer == 0) {
+            _com_issue_error(E_POINTER);
+        }
+        Pointer->Release();
+        Pointer = 0;
+    }
+#endif
     // Gives up the held pointer without releasing it.
     Interface *Detach()
     {
@@ -179,28 +201,23 @@ public:
     }
     // A query from another smart pointer (comip.h _QueryInterface; out of
     // line in SaveLoad.cpp: 0x006591C0).
-    template <class OtherInterface, GUID const *other_iid>
-    HRESULT Query_From(UnknownComPtr<OtherInterface, other_iid> const &other)
+    template <class Other>
+    HRESULT Query_From(Other const &other)
     {
         HRESULT result;
-        if (other.Pointer != 0) {
+        if (other) {
             Interface *pointer;
-            result = other.Pointer->QueryInterface(*iid, (void **)&pointer);
+            result = other->QueryInterface(*iid, (void **)&pointer);
             if (FAILED(result)) {
-                Release_Held();
-                Pointer = 0;
+                Attach(0);
                 return result;
             }
-            Release_Held();
-            Pointer = pointer;
-            return result;
+            Attach(pointer);
+        } else {
+            operator=((Interface *)0);
+            result = E_NOINTERFACE;
         }
-        Interface *old = Pointer;
-        if (old != 0) {
-            Pointer = 0;
-            old->Release();
-        }
-        return E_NOINTERFACE;
+        return result;
     }
     // The address of the pointer, for an out parameter (releases what is held).
     Interface **operator&()

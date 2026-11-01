@@ -5404,32 +5404,6 @@
       "source_order": 145787
     },
     {
-      "entry": 6651984,
-      "method": "00658050",
-      "symbol": "?unknown_release@UnknownComHolder_00658050@@QAEXXZ",
-      "symbol_prefix": "?unknown_release@UnknownComHolder_00658050@@QAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 13,
-      "body_sha256": "75d77bd0a3a4afb5d4a2bf6084d52171f3e5b72dcc4a78108c73cb70fde0c354",
-      "padding_bytes": 3,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "2d8680bfffcf74534c3ad8b2508de5c0eaf9cd2fbe557725e7d4d6e4d2abbbf1",
-      "relocations": [],
-      "source_sha256": "d1a605f0c2e3543119e3a1c0922cebef11a66c987afe32238a8290aad2b4526e",
-      "source": "src/recovered/unowned/unknown_release_member_00658050.cpp",
-      "population": "population-3353",
-      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_release_member_00658050",
-      "source_order": 145788
-    },
-    {
       "entry": 6700192,
       "method": "00663ca0",
       "symbol": "?unknown_find_or_make_palette@@YIHPBDHHHH@Z",
