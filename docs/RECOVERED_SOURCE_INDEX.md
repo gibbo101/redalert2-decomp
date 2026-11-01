@@ -6,13 +6,13 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 1092 | 222,451 | 1092 | 0x004011C0–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 1093 | 222,457 | 1093 | 0x004011C0–0x0078FB6B |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 164 | 66,431 | 164 | 0x0049ED10–0x0056A9D0 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 47 | 62,278 | 47 | 0x00640460–0x00654100 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 178 | 59,242 | 178 | 0x00438A60–0x004D3450 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 210 | 52,933 | 207 | 0x0041B370–0x006D9750 |
-| (discovery: address-named) | 1437 | 43,587 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1436 | 43,581 | 17 | 0x004010A0–0x00797198 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 110 | 37,716 | 110 | 0x005DE880–0x00601F70 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 117 | 37,481 | 113 | 0x0041B470–0x004CDE10 |

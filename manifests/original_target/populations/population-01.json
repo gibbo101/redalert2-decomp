@@ -4,8 +4,8 @@
     "id": "population-01",
     "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
     "gaps_sha256": "fc491a93adcd49a62ae199caad76cf7fff9e4553116a461478335a50bacdd82b",
-    "historical_population_sha256": "ead5a74e5f226cac51c18fc8a3df9bd4849b0e77ee54aeabf14c00b323249efe",
-    "historical_acceptance_sha256": "b6bb5962c6178a5dc067c6f85195bba8caaf544f5ba655d736d6bff5f6c31195"
+    "historical_population_sha256": "4c5dfe08111953347a98676d3c01d162da2a0ae9bebd857bb631788e131ce343",
+    "historical_acceptance_sha256": "9adbf7d2a1c24b570d371f1aa5379a399f8766ac3756a6cf028fdf1d68b083a7"
   },
   "references": {
     "?cleanup@Leaf_40e2e0@@": 5290192,
@@ -1756,7 +1756,7 @@
     "?get@Leaf_735b20@@QAEIXZ": 7559968,
     "?get@Leaf_735b40@@QAEIIIII@Z": 7560000,
     "?get@Leaf_736210@@QAEXXZ": 7561744,
-    "?get@Leaf_737af0@@QAEIXZ": 7568112,
+    "?Channel_Version_00737af0@@YIHXZ": 7568112,
     "?get@Leaf_7380b0@@QAEIXZ": 7569584,
     "?get@Leaf_738100@@QAEXXZ": 7569664,
     "?get@Leaf_7395b0@@QAEIXZ": 7574960,
@@ -6022,7 +6022,9 @@
     "??_7VeinholeMonsterClass@@6B@": 8054688,
     "??_EVeinholeMonsterClass@@UAEPAXI@Z": 7415600,
     "??_EMSShapeAnim@@UAEPAXI@Z": 5962944,
-    "??_EMSPrintAnim@@UAEPAXI@Z": 5963392
+    "??_EMSPrintAnim@@UAEPAXI@Z": 5963392,
+    "?game_version_007d8900@@3HA": 8227072,
+    "__real@8@4004d800000000000000": 8045168
   },
   "regions": [
     {
@@ -11952,8 +11954,8 @@
     {
       "entry": 7568112,
       "method": "737af0",
-      "symbol": "?get@Leaf_737af0@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_737af0@@",
+      "symbol": "?Channel_Version_00737af0@@YIHXZ",
+      "symbol_prefix": "?Channel_Version_00737af0@@",
       "options": [
         "/O2",
         "/Ob2",
@@ -11965,9 +11967,18 @@
       "padding_bytes": 10,
       "full_extent_bytes": 16,
       "full_extent_sha256": "e5a552ea7a906c0be9c1778566891f82c856b80750d3e83c7a34bd937acd4ee1",
-      "relocations": [],
-      "source": "src/recovered/00737af0.cpp",
-      "source_sha256": "7cff003f96eb21924a23f53157da28b600362b6b1f1075b0179844ad60272210",
+      "relocations": [
+        {
+          "offset": 1,
+          "kind": 6,
+          "symbol": "?game_version_007d8900@@3HA",
+          "target": 8227072,
+          "addend": 0,
+          "resolved": 8227072
+        }
+      ],
+      "source": "src/recovered/unowned/Channel_Version_00737af0.cpp",
+      "source_sha256": "1c25bcd9e005542df97c2d25f68f35ab75f9ceda1f492c7528e437e3312b2e86",
       "source_order": 6551,
       "population": "population-01",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
