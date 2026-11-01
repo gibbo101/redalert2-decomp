@@ -11,9 +11,41 @@
 
 #include "shared/light_source.hpp"
 
+#include "shared/map.hpp"
+#include "shared/map_view.hpp"
+#include "shared/cell_class.hpp"
+#include "shared/options.hpp"
+
+// The millisecond timer (0x00837448; TibSun's MillisecondTimer): its time in milliseconds (0x005935E0).
+class UnknownMillisecondTimer {
+public:
+    operator double();
+};
+extern UnknownMillisecondTimer unknown_ms_timer_837448;
+
+// A cell waiting to be relit (TibSun LightSourceClass::PendingCellClass): the drawer and values picked
+// for it, applied together when every pending cell has them (0x14 bytes).
 class LightSourceClass::PendingCellClass {
 public:
+    PendingCellClass(Cell cell) :
+        Converter(0),
+        Intensity(0x10000),
+        Ambient(0),
+        Brightness(1000),
+        TileBrightness(1000),
+        AltBrightness(1000),
+        CellID(cell)
+    {
+    }
     static DynamicVectorClass<PendingCellClass *> Array;   // 0x00A6E848
+
+    LightConvertClass *Converter;   // +0x00
+    int Intensity;                  // +0x04
+    unsigned short Ambient;                // +0x08
+    unsigned short Brightness;             // +0x0A
+    unsigned short TileBrightness;         // +0x0C
+    unsigned short AltBrightness;          // +0x0E
+    Cell CellID;                    // +0x10
 };
 
 // The unit's list of LightSourceClass (0x00A6E818; name is a hypothesis).
@@ -53,9 +85,9 @@ DynamicVectorClass<LightSourceClass::PendingCellClass *> LightSourceClass::Pendi
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410
-// @ref _$E42=00537160
-// @ref _$E47=005371e0
-// @ref _$S48=00a6e7c8
+// @ref _$E47=00537160
+// @ref _$E52=005371e0
+// @ref _$S53=00a6e7c8
 // @ref __CIpow=007821b0
 // @ref __ftol=0077f110
 // @ref __real@8@3ff78000000000000000=0079a730
