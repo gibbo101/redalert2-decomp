@@ -264,7 +264,7 @@ struct AudioBank;
 
 struct AudioBankEntry : AudioListNode {
     AudioSource *__fastcall Get_Source();      // 0x00402030
-    int unknown_0c;                 // +0x0C nonzero while in use
+    int volatile unknown_0c;        // +0x0C nonzero while in use
     int unknown_10;
     int Id;                         // +0x14
     void *Data;                     // +0x18
@@ -593,24 +593,11 @@ struct AudioDevice : AudioListNode {
     AudioListNode ChannelList;                      // +0xF8
     int volatile unknown_busy_104;                  // +0x104
     char unknown_108[0x10c - 0x108];
-    void (__fastcall *unknown_update_10c)(AudioDevice *device);     // +0x10C 0x00402F60 until the device is run
+    int (__fastcall *unknown_update_10c)(AudioDevice *device);      // +0x10C 0x00402F60 until the device is run
     void Run_Update();                              // 0x00403810 (jumps through +0x10C)
-    __int64 volatile unknown_110;                            // +0x110 33 (ms)
-    __int64 volatile unknown_118;                            // +0x118 33, then 165
-    __int64 volatile unknown_120;
-    __int64 volatile unknown_128;
-    __int64 volatile unknown_130;                            // +0x130 ten times +0x110, then 165
-    __int64 volatile unknown_138;
-    __int64 volatile unknown_140;
-    __int64 volatile unknown_148;
-    int unknown_150;                                // +0x150 5000
-    int unknown_154;
-    int unknown_158;
-    int unknown_15c;
-    int unknown_160;
-    int unknown_164;
+    AudioTimeSpan LevelSpan;                        // +0x110 the level update timing ("level:" in the dump)
     char unknown_168[0x170 - 0x168];
-    AudioTimeSpan Span;                             // +0x170
+    AudioTimeSpan Span;                             // +0x170 the mixer timing ("mixer:" in the dump)
     char unknown_1c8[0x1d0 - 0x1c8];
     AudioChannelDriver const *ChannelDriver;        // +0x1D0 the channel functions (0x007CCDF0 for DirectSound)
     char unknown_1d4[0x1d8 - 0x1d4];
@@ -947,6 +934,7 @@ void Audio_Events_Pause();                                                      
 void Audio_Events_Resume();                                                                 // 0x00405020
 
 AudioDevice *__fastcall Audio_Create_Device(int driver_index, AudioFormat const *format);       // 0x00402C70
+int __fastcall Audio_Device_Update(AudioDevice *device);                                    // 0x00402F60 the device's first update function (+0x10C)
 AudioChannel *__fastcall Audio_Device_New_Channel(AudioDevice *device);                     // 0x004034B0
 int __fastcall Audio_Device_New_Channels(AudioDevice *device, int count);                   // 0x00403530
 AudioChannel *__fastcall Audio_Device_Find_Channel(AudioDevice *device, int id);              // 0x004035F0
