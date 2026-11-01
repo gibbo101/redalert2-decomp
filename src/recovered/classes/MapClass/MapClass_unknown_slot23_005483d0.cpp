@@ -3,7 +3,7 @@
 // makes sure the cell vector holds 512 x 512 empty slots.
 #include "shared/map.hpp"
 #include "shared/map_cell.hpp"
-// @ref ?Unknown_00529710@@YIXH_N@Z=00529710
+// @ref ?Unknown_00529710@@YI_NH_N@Z=00529710
 
 void MapClass::unknown_slot23()
 {

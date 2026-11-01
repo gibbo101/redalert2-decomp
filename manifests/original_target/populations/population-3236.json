@@ -4,8 +4,8 @@
     "id": "population-3236",
     "inventory_sha256": "60ce7f43fa193eeabbcafd305b913c01a068161f08eab8b5b287c292dfed2e7e",
     "gaps_sha256": "2a9cf13a60373cc49abbc6b637b6f343c09ee824d501db57b8eeb5ef6e7a6c05",
-    "historical_population_sha256": "bc38a26108895d190757acf6e09d23d2f7505d1a8718557283bc2bc081e6c4e1",
-    "historical_acceptance_sha256": "859467dcf725db12ffaee27ac8f744d64a4ea36e63ec8273f4d7a013bd13b114"
+    "historical_population_sha256": "210db562c2226f7c2097565f23a62904acbcb6f34347bc41587792441639223d",
+    "historical_acceptance_sha256": "b7c2e7161bb82310673009914fa37581e641a09eb5f7533ff2f92d7097baca9b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10407,7 +10407,7 @@
     "?Unknown_00637C10@RadSiteClass@@QAEXXZ": 6519824,
     "?Unknown_00637640@RadSiteClass@@QAEXXZ": 6518336,
     "?Unknown_00637DC0@RadSiteClass@@QAEXXZ": 6520256,
-    "?Change@LightSourceClass@@QAEXHHHHH@Z": 5469568,
+    "?Change@LightSourceClass@@QAEXHHHH_N@Z": 5469568,
     "?Update_Light@RadSiteClass@@QAEXXZ": 6520656,
     "??_7LightSourceClass@@6B@": 8017248,
     "?Is_Piggybacking@DriveLocomotionClass@@UAG_NXZ": 4869248,
@@ -10627,10 +10627,10 @@
     "??_7LightSourceClass@@6BINoticeSink@@@": 8017212,
     "??_7LightSourceClass@@6BINoticeSource@@@": 8017204,
     "??1LightSourceClass@@UAE@XZ": 5469168,
-    "?Unknown_005375D0@LightSourceClass@@QAEXH@Z": 5469648,
+    "?Unknown_005375D0@LightSourceClass@@QAEX_N@Z": 5469648,
     "?unknown_flag_7df630@@3_NA": 8255024,
-    "?Activate@LightSourceClass@@QAEXH@Z": 5469504,
-    "?Deactivate@LightSourceClass@@QAEXH@Z": 5469536,
+    "?Activate@LightSourceClass@@QAEX_N@Z": 5469504,
+    "?Deactivate@LightSourceClass@@QAEX_N@Z": 5469536,
     "??_GLightSourceClass@@UAEPAXI@Z": 5471280,
     "??_ELightSourceClass@@UAEPAXI@Z": 5471280,
     "?Unknown_00718D60@@YIPAVMatrix3D@@PAV1@H@Z": 7441760,

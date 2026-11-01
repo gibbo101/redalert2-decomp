@@ -8,8 +8,8 @@
 extern double const unknown_double_7a6020;  // 0x007A6020 (2000.0)
 // @ref ?unknown_double_7a6020@@3NB=007a6020
 // @ref ?Unknown_00637A80@RadSiteClass@@QAEXXZ=00637a80
-// @ref ?Activate@LightSourceClass@@QAEXH@Z=00537540
-// @ref ?Change@LightSourceClass@@QAEXHHHHH@Z=00537580
+// @ref ?Activate@LightSourceClass@@QAEX_N@Z=00537540
+// @ref ?Change@LightSourceClass@@QAEXHHHH_N@Z=00537580
 // @ref ??0LightSourceClass@@QAE@UCoordStruct@@HHHHH@Z=00537240
 
 void RadSiteClass::Unknown_00637640()

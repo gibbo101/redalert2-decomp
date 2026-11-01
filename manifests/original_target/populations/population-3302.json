@@ -4,8 +4,8 @@
     "id": "population-3302",
     "inventory_sha256": "111ba296ed22f1b1965deb4c51e2541af634f53142e34275cdf35273fb93e3ee",
     "gaps_sha256": "4f2b7ebfae29d8586f2628979d9aacc07335b7214ee1c702d49fafea49aa785c",
-    "historical_population_sha256": "b9d39d60dd0c8dbe0cc1c974dc82dae0559c1f237a8e87acef3a9ee7c6a7100c",
-    "historical_acceptance_sha256": "4d3abdc9cce00c89bd46e234748ac1750a953ac6ce371af596866a9dceef585c"
+    "historical_population_sha256": "62f40e29d27fa3f4039ad3e911bd355bb4dfb0194b72981757cc78f9380cadf3",
+    "historical_acceptance_sha256": "547ad7d01910792f0f4b58ccf017586c8de137b8f1a1130a5e7fb76e06d50f03"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3438,7 +3438,7 @@
     "?Unknown_006EA130@@YAXXZ": 7250224,
     "??_ESubzoneTrackingStruct@@QAEPAXI@Z": 4239264,
     "?Unknown_Hash_0054F240@@YIIABI@Z": 5567040,
-    "?Unknown_00529710@@YIXH_N@Z": 5412624,
+    "?Unknown_00529710@@YI_NH_N@Z": 5412624,
     "?unknown_slot29@BulletClass@@UBEHXZ": 4594672,
     "?Release@BulletClass@@UAGKXZ": 4602160,
     "?AddRef@BulletClass@@W3AGKXZ": 4604624,
@@ -7877,8 +7877,8 @@
     "?Read_Basic@UnknownIDSource@@QAE_NAAVCCINIClass@@@Z": 6691200,
     "?Loading_Progress_00672160@UnknownSessionState@@QAEXH@Z": 6758752,
     "?Assign_Houses_0065fbb0@@YIXXZ": 6683568,
-    "?Activate@LightSourceClass@@QAEXH@Z": 5469504,
-    "?Deactivate@LightSourceClass@@QAEXH@Z": 5469536,
+    "?Activate@LightSourceClass@@QAEX_N@Z": 5469504,
+    "?Deactivate@LightSourceClass@@QAEX_N@Z": 5469536,
     "?Load@LightSourceClass@@UAGJPAUIStream@@@Z": 5471136,
     "??_GTActionClass@@UAEPAXI@Z": 7024848,
     "?Read_Scenario_INI@@YI_NAAVCCINIClass@@_N@Z": 6679360,

@@ -1,7 +1,7 @@
 // ?Update_Light@RadSiteClass@@QAEXXZ (0x00637F50)
 // Scales the light colour by the remaining time and applies it.
 #include "shared/radsite.hpp"
-// @ref ?Change@LightSourceClass@@QAEXHHHHH@Z=00537580
+// @ref ?Change@LightSourceClass@@QAEXHHHH_N@Z=00537580
 
 void RadSiteClass::Update_Light()
 {

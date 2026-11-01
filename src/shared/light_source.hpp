@@ -35,11 +35,15 @@ public:
 
     // Deletes every light and every pending cell (0x00537480).
     static void Clear_All();
-    void Activate(int arg);                                     // 0x00537540 (turns it on, then Unknown_005375D0)
-    void Deactivate(int arg);                                   // 0x00537560
+    void Activate(bool defer);                                  // 0x00537540 (turns it on, then Unknown_005375D0)
+    void Deactivate(bool defer);                                // 0x00537560
     // Takes a new intensity and colour; relights the cells when active.
-    void Change(int intensity, int red, int green, int blue, int arg);   // 0x00537580
-    void Unknown_005375D0(int arg);                             // 0x005375D0 (relights the cells around it; not recovered)
+    void Change(int intensity, int red, int green, int blue, bool defer);   // 0x00537580
+    // Relights the cells within Visibility when lighting is on and the detail level allows; defer queues
+    // them as pending cells instead (TibSun Recalculate_Affected_Cells, 0x005375D0).
+    void Unknown_005375D0(bool defer);
+    // Works through the pending cells (TibSun Process_Lighting, 0x00537830).
+    static void __fastcall Unknown_00537830(int time, bool force);
 
     virtual HRESULT __stdcall GetClassID(GUID *clsid);          // 0x00537B60 slot 3
     virtual HRESULT __stdcall Load(IStream *stream);            // 0x00537BA0 slot 5

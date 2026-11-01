@@ -4,8 +4,8 @@
     "id": "population-3063",
     "inventory_sha256": "26bc731e2aa3a8a702c64eaec58519e758d1a4cc891896697604cdd309c3c448",
     "gaps_sha256": "16df03ceb020759ceabbf73d38fb2b43953036ef48754f843c18c81d084c4e9b",
-    "historical_population_sha256": "3d2d09d3c9b478373e512931c91f57712f03d4203b6b661e6d4637ab2387ad6f",
-    "historical_acceptance_sha256": "57ded754e050f1bee0abfff37ffe99de9d404f5cb50927ee7697e637783c11de"
+    "historical_population_sha256": "e3b06b42afbff1359d5f7483d77cbe327155dfe63fe67c0a6ba655c143d3fc88",
+    "historical_acceptance_sha256": "727867d66cc219a9f202b5e6df729a101643d6ff2d6419f178e8e74814da828e"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6440,7 +6440,7 @@
     "?Get_Current_Level@RadSiteClass@@QBEHXZ": 6518224,
     "?Unknown_00637C10@RadSiteClass@@QAEXXZ": 6519824,
     "?Unknown_00637DC0@RadSiteClass@@QAEXXZ": 6520256,
-    "?Change@LightSourceClass@@QAEXHHHHH@Z": 5469568,
+    "?Change@LightSourceClass@@QAEXHHHH_N@Z": 5469568,
     "?Update_Light@RadSiteClass@@QAEXXZ": 6520656,
     "??_7LightSourceClass@@6B@": 8017248,
     "?Sight_From@UnknownMap8324E0@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z": 5546256,
@@ -8736,10 +8736,10 @@
     "??_7LightSourceClass@@6BINoticeSink@@@": 8017212,
     "??_7LightSourceClass@@6BINoticeSource@@@": 8017204,
     "??1LightSourceClass@@UAE@XZ": 5469168,
-    "?Unknown_005375D0@LightSourceClass@@QAEXH@Z": 5469648,
+    "?Unknown_005375D0@LightSourceClass@@QAEX_N@Z": 5469648,
     "?unknown_flag_7df630@@3_NA": 8255024,
-    "?Activate@LightSourceClass@@QAEXH@Z": 5469504,
-    "?Deactivate@LightSourceClass@@QAEXH@Z": 5469536,
+    "?Activate@LightSourceClass@@QAEX_N@Z": 5469504,
+    "?Deactivate@LightSourceClass@@QAEX_N@Z": 5469536,
     "??_GLightSourceClass@@UAEPAXI@Z": 5471280,
     "??_ELightSourceClass@@UAEPAXI@Z": 5471280,
     "?Force_New_Slope@LocomotionClass@@UAGXH@Z": 5494240,

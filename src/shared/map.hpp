@@ -94,7 +94,7 @@ void Unknown_00711C70();
 void Unknown_006E9670();
 void __fastcall Unknown_006EA130();  // tail-called by 0x00562EA0 (pop; jmp): __fastcall
 // Called by MapClass slot 23 with (0, true) (0x00529710).
-void __fastcall Unknown_00529710(int unknown1, bool unknown2);
+bool __fastcall Unknown_00529710(int unknown1, bool unknown2);   // TibSun IsometricTileTypeClass::Free_Unused_Drawers (LightSourceClass 0x00537830 uses the result)
 
 // Used by MapClass::Init_Clear (owners unknown).
 #include "shared/debug_printf.hpp"

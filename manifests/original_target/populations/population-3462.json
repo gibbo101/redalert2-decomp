@@ -4,8 +4,8 @@
     "id": "population-3462",
     "inventory_sha256": "1a8a5c08382c873bc1d222ba46d760dd231c7cc2dd6dc4dcc1bb1ac9bee257c4",
     "gaps_sha256": "7dbebfbb6dffb514664c58159e79ba4739aed38b6b9dd614449e97c68445e81f",
-    "historical_population_sha256": "4ab6c3ab236adc0b428a16025c81045d2edf6045b96b283e84fd9b687cc4e7c8",
-    "historical_acceptance_sha256": "8266053277d2213c945ebe181c64e3ad564785db4a06c53f10cb579223d77592"
+    "historical_population_sha256": "18fde521250702328e4f5a847ebad71596685acc47f54be6e761c6223144500a",
+    "historical_acceptance_sha256": "6a26f2a73cf47ce4cc4e57589b472c929af08d8bede627727ca8ac8e3dc052b8"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8720,7 +8720,7 @@
     "?unknown_47b960@CellClass@@QBE_NXZ": 4700512,
     "?Construct@BulletClass@@QAEXPAVBulletTypeClass@@PAVAbstractClass@@PAVTechnoClass@@HPAVWarheadTypeClass@@H_N@Z": 4584688,
     "?unknown_453900@BuildingClass@@QAEAAVMatrix3D@@AAV2@@Z": 4536576,
-    "?Change@LightSourceClass@@QAEXHHHHH@Z": 5469568,
+    "?Change@LightSourceClass@@QAEXHHHH_N@Z": 5469568,
     "?Factory_Exit_Message@@3QBDB": 8190364,
     "?Factory_Bib_Message@@3QBDB": 8190320,
     "?unknown_slot260@AircraftClass@@UAEXPAVAbstractClass@@H@Z": 4301248,
@@ -12349,7 +12349,7 @@
     "?Unknown_006E9670@@YAXXZ": 7247472,
     "?Unknown_006EA130@@YIXXZ": 7250224,
     "?Unknown_Hash_0054F240@@YIIABI@Z": 5567040,
-    "?Unknown_00529710@@YIXH_N@Z": 5412624,
+    "?Unknown_00529710@@YI_NH_N@Z": 5412624,
     "?Unknown_0061C5B0@PowerClass@@QAEXXZ": 6407600,
     "?Unknown_0061C690@PowerClass@@QAEHXZ": 6407824,
     "?Unknown_0061C5F0@PowerClass@@QAEHXZ": 6407664,
@@ -12550,10 +12550,10 @@
     "??_7LightSourceClass@@6BINoticeSink@@@": 8017212,
     "??_7LightSourceClass@@6BINoticeSource@@@": 8017204,
     "??1LightSourceClass@@UAE@XZ": 5469168,
-    "?Unknown_005375D0@LightSourceClass@@QAEXH@Z": 5469648,
+    "?Unknown_005375D0@LightSourceClass@@QAEX_N@Z": 5469648,
     "?unknown_flag_7df630@@3_NA": 8255024,
-    "?Activate@LightSourceClass@@QAEXH@Z": 5469504,
-    "?Deactivate@LightSourceClass@@QAEXH@Z": 5469536,
+    "?Activate@LightSourceClass@@QAEX_N@Z": 5469504,
+    "?Deactivate@LightSourceClass@@QAEX_N@Z": 5469536,
     "??_GLightSourceClass@@UAEPAXI@Z": 5471280,
     "?unknown_rect_8336e8@@3VRect@@A": 8599272,
     "?Unknown_0067F800@StripClass@SidebarClass@@QAEX_N@Z": 6813696,
@@ -14531,7 +14531,7 @@
         {
           "offset": 88,
           "kind": 20,
-          "symbol": "?Deactivate@LightSourceClass@@QAEXH@Z",
+          "symbol": "?Deactivate@LightSourceClass@@QAEX_N@Z",
           "target": 5469536,
           "addend": 0,
           "resolved": 1041092
@@ -19439,7 +19439,7 @@
         {
           "offset": 107,
           "kind": 20,
-          "symbol": "?Deactivate@LightSourceClass@@QAEXH@Z",
+          "symbol": "?Deactivate@LightSourceClass@@QAEX_N@Z",
           "target": 5469536,
           "addend": 0,
           "resolved": 958001
@@ -21481,7 +21481,7 @@
         {
           "offset": 181,
           "kind": 20,
-          "symbol": "?Activate@LightSourceClass@@QAEXH@Z",
+          "symbol": "?Activate@LightSourceClass@@QAEX_N@Z",
           "target": 5469504,
           "addend": 0,
           "resolved": 958631
@@ -21579,7 +21579,7 @@
         {
           "offset": 107,
           "kind": 20,
-          "symbol": "?Activate@LightSourceClass@@QAEXH@Z",
+          "symbol": "?Activate@LightSourceClass@@QAEX_N@Z",
           "target": 5469504,
           "addend": 0,
           "resolved": 958161
@@ -32494,7 +32494,7 @@
         {
           "offset": 1942,
           "kind": 20,
-          "symbol": "?Activate@LightSourceClass@@QAEXH@Z",
+          "symbol": "?Activate@LightSourceClass@@QAEX_N@Z",
           "target": 5469504,
           "addend": 0,
           "resolved": 1001174

@@ -3,7 +3,7 @@
 #include "shared/light_source.hpp"
 #include "shared/radsite.hpp"
 // @ref ?Detach_This_From_All@@YIXPAVAbstractClass@@_N@Z=006ecb90
-// @ref ?Unknown_005375D0@LightSourceClass@@QAEXH@Z=005375d0
+// @ref ?Unknown_005375D0@LightSourceClass@@QAEX_N@Z=005375d0
 
 LightSourceClass::~LightSourceClass()
 {

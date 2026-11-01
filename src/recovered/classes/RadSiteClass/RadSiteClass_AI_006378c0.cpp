@@ -5,7 +5,7 @@
 #include "shared/radsite.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Unknown_00637DC0@RadSiteClass@@QAEXXZ=00637dc0
-// @ref ?Change@LightSourceClass@@QAEXHHHHH@Z=00537580
+// @ref ?Change@LightSourceClass@@QAEXHHHH_N@Z=00537580
 // @ref ?Frame@@3HA=00a40d2c
 
 void RadSiteClass::AI()
