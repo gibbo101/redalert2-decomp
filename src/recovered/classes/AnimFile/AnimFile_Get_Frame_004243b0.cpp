@@ -3,7 +3,7 @@
 // going back restarts from a cleared surface unless the file loops through
 // its last delta back to frame 0; past the last record it wraps to 0.
 #include "shared/anim_file.hpp"
-// @ref ?Decode_Frame@AnimFile@@QAEXPAEH0I@Z=004249f0
+// @ref ?Decode_Frame@AnimFile@@QAE_NPAXH0H@Z=004249f0
 
 void *AnimFile::Get_Frame(int frame)
 {

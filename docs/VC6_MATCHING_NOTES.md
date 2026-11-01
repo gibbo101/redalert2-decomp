@@ -848,3 +848,9 @@ At a join, VC6 reloads spilled values in the order the variables were *defined*,
 0x639970 matched when `bool atwaypoint = false;` was defined before `bool drop_pod` and assigned later
 (`atwaypoint = wp != -1;`); moving only the declaration changed nothing. Also: `while (true)` stays unrotated where
 `for (;;)` gets rotated; a BN_CLICKED test written `(unsigned short)(wparam >> 16) == 0` gives `shr reg,16; jne`.
+
+## "Handwritten assembly" claims need re-checking (Scout444, 2026-11-01)
+Two functions our headers labelled handwritten assembly, LCW_Uncomp 0x534B50 and AnimFile::Decode_Frame 0x4249F0,
+are Westwood C that compiled exact almost at once from the TibSun/Westwood source (`__fastcall` LCW decoder; TibSun
+animfile.cpp). Before parking a row as assembly, compile the TibSun/Westwood C; only genuine inline-asm bodies
+(LCW_Comp 0x534D40, XSurface::Fill_Rect 0x7743C0, BlitForward 0x4861C0/0x487080) stay out.

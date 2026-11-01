@@ -4,8 +4,8 @@
     "id": "population-3451",
     "inventory_sha256": "1d3a65e3133a8d7111c412645638e8acda7402606e5a9690d369370cfe763549",
     "gaps_sha256": "c9a912e73a304dcf8dc3bd783c93430b9e124b8075a58201b17f33c3ab85a1c3",
-    "historical_population_sha256": "4cc05949653ac87bf7a488ff487aa929d0b6bd241efb3629f42118903308180c",
-    "historical_acceptance_sha256": "a4cfbb8f6d627e9626376a5aa42e0b9fa698dc552f45a022b9c4cc2c16594f8c"
+    "historical_population_sha256": "879275824cfc6d95f3a3d8cce18f3fe0dd65e0ba67574d54e0bee4fa19835032",
+    "historical_acceptance_sha256": "b0e9c30a0e3b5279f92abf250e2b43769bf822db4d7f0dddf1cda68d90104bfd"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -21821,7 +21821,7 @@
     "?unknown_42cad0@BaseClass@@QAEXPAVBuildingClass@@@Z": 4377296,
     "?unknown_42cb70@BaseClass@@QAEHPAVBaseNodeClass@@@Z": 4377456,
     "?Get_Frame@AnimFile@@UAEPAXH@Z": 4342704,
-    "?Decode_Frame@AnimFile@@QAEXPAEH0I@Z": 4344304,
+    "?Decode_Frame@AnimFile@@QAE_NPAXH0H@Z": 4344304,
     "?Frame_Data@AnimFile@@QAEPAXH@Z": 4343792,
     "?Get_Rad_Level_At@RadSiteClass@@QAENABVCell@@@Z": 6519216,
     "?Unknown_0047CEC0@RadSiteCell@@QAEXN@Z": 4705984,
