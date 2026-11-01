@@ -71,7 +71,7 @@ public:
     void unknown_func_721cc0();                                        // 0x00721CC0 (neighbour offsets from the surface stride)
     void Damage_Cell_00721eb0(CoordStruct const &coord);                // 0x00721EB0
     void unknown_func_7238b0(CoordStruct const &start, CoordStruct const &end); // 0x007238B0
-    void unknown_func_723360(); // 00723360 rebuilds occupied cells
+    void Wave_Recalc_Affected_Cells();                                  // 0x00723360
     void Update_Wave_00724200();                                        // 0x00724200
     void unknown_func_7225b0(int arg1, int arg2);                      // 0x007225B0 (draws type 0)
     void unknown_func_722cb0(int arg1, int arg2);                      // 0x00722CB0 (draws types 1 and 2)
@@ -89,7 +89,10 @@ public:
     Point2D unknown_d0; // +0x0D0 projectedpoint
     Point2D unknown_d8; // +0xD8 projected outline corner
     Point2D unknown_e0; // +0xE0 projected outline corner
-    char unknown_e8[0x118 - 0xE8];
+    CoordStruct WaveEndLeftCoord;               // +0x0E8 (TibSun names)
+    CoordStruct WaveEndRightCoord;              // +0x0F4
+    CoordStruct WaveStartLeftCoord;             // +0x100
+    CoordStruct WaveStartRightCoord;            // +0x10C
     bool unknown_118; // +0x118 constructortrue
     bool unknown_119; // +0x119 constructorfalse
     char unknown_11a[2];

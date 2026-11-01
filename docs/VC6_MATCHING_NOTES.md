@@ -829,3 +829,10 @@ VC6 puts a function-local `static float const` into the unit's .rdata together w
 one data section holds symbols the original placed apart. The audit verifies such a section per symbol (each bound by
 @ref, tiling the section, bytes equal at its own original address) since 53f108001; bind every symbol, including the
 local static's decorated `_?_name@?M@??func@Class@@...` name.
+
+## Frame order in very large frames (Iso420, 2026-11-01)
+The size-ascending slot order does not hold near esp: the most-referenced objects go first (in the disp8 range)
+whatever their size (`ini`, 80 bytes / 93 refs, sits among the scalars in Read_Control_File 0x529870). Beyond that,
+ties among equal-weight spills are unstable: independent of declaration order and names, but sensitive to which
+temporaries are in the sort (removing one CDTimerClass temporary moves the other). Tools: Iso420 t2/fas.py, fcmp.py,
+fref.py compare every frame variable's offset against the original.

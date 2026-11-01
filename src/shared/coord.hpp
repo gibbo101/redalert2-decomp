@@ -9,6 +9,9 @@
 
 struct INIPoint3D;
 
+#ifdef RA2_COORD_AS_CELL
+class Cell;
+#endif
 struct CoordStruct {
     CoordStruct() {}
     CoordStruct(int x, int y, int z) : X(x), Y(y), Z(z) {}
@@ -68,6 +71,9 @@ struct CoordStruct {
     CoordStruct &Set_00434820(int x, int y, int z);  // 0x00434820
     // XY-only comparison; name/const spelling are source hypotheses for004BFB60.
     int Equal_XY_004bfb60(CoordStruct const &other) const;
+#ifdef RA2_COORD_AS_CELL
+    Cell As_Cell() const;  // 0x00413770 out-of-line copy (TibSun Coord::As_Cell)
+#endif
     int X;
     int Y;
     int Z;
@@ -135,8 +141,20 @@ public:
     // A TPoint2D<short> result (a sum or difference) taken as a cell.
     Cell(BASECLASS const &pt) : BASECLASS(pt) {}
     Cell &Set(short x, short y) { X = x; Y = y; return *this; }
+#ifdef RA2_COORD_AS_CELL
+    // TibSun TPoint2D comparisons (0x0058DB50 is the out-of-line operator!=).
+    bool operator==(Cell const &rvalue) const { return X == rvalue.X && Y == rvalue.Y; }
+    bool operator!=(Cell const &rvalue) const { return X != rvalue.X || Y != rvalue.Y; }
+#endif
     bool Unknown_00493C80();   // 0x00493C80 (removes the cell's crate overlay and redraws it; CrateClass)
 };
+
+#ifdef RA2_COORD_AS_CELL
+inline Cell CoordStruct::As_Cell() const
+{
+    return Cell((int)X / 256, (int)Y / 256);
+}
+#endif
 
 // The coordinate X, Y, Z (Westwood's XYZ_Coord; hypothesis). Its arguments are a
 // call's, evaluated right to left, so Z is computed before Y and X (the TAction
@@ -177,7 +195,7 @@ inline CoordStruct Coord_Snap(CoordStruct const &coord)
 
 // Member-wise cell equality (VectorClass<Cell> ID lookups; formerly
 // duplicated in shared/map.hpp and shared/house.hpp).
-#ifndef RA2_CELLSTRUCT_COMPARE
+#if !defined(RA2_CELLSTRUCT_COMPARE) && !defined(RA2_COORD_AS_CELL)
 #define RA2_CELLSTRUCT_COMPARE
 inline bool operator==(Cell const &a, Cell const &b) { return a.X == b.X && a.Y == b.Y; }
 inline bool operator!=(Cell const &a, Cell const &b) { return !(a == b); }

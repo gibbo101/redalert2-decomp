@@ -1,3 +1,4 @@
+#define RA2_COORD_AS_CELL  // the unit expands CoordStruct::As_Cell and the Cell comparisons (shared/coord.hpp)
 // Header-static dynamic initializers of the unit at 0x007211B0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x007211B0-0x00721396); the other

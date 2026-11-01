@@ -7,7 +7,6 @@
 #include "shared/unknown_geometry.hpp"
 extern float const Wave_Advance_Step_007aec88;
 // @ref ?Wave_Advance_Step_007aec88@@3MB=007aec88
-// @ref ?unknown_func_723360@WaveClass@@QAEXXZ=00723360
 inline Point2D Interpolate_Wave_Pixel(Point2D const &a, Point2D const &b, float amount)
 {
     return Point2D((int)(a.X * amount + b.X * (1.0 - amount)), (int)(a.Y * amount + b.Y * (1.0 - amount)));
@@ -45,5 +44,5 @@ update_geometry:
         Polygon_130.Points[4] = Interpolate_Wave_Pixel(unknown_c0, unknown_b8, unknown_128);
         Polygon_130.Points[5] = Interpolate_Wave_Pixel(unknown_c8, unknown_d8, unknown_128);
     }
-    unknown_func_723360();
+    Wave_Recalc_Affected_Cells();
 }
