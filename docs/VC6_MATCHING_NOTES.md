@@ -889,3 +889,6 @@ copies exactly.
 - Named locals fix frame layout in long locomotor bodies: `CoordStruct target = center + offset;` before a member
   store, `Cell where = Coord_Cell(...); CellClass *cell = &Map[where];`, separately scoped pointer locals per block.
 - The FootClass flag idiom `bool foot; if (o) foot = o->flag; ...` reproduces the byte spill `mov [esp+N], al`.
+- (Egos466) An inline helper's body form changes the caller's branch layout when inlined, even if both forms are
+  exact out of line: TibSun's `Y -= amount; if (Y < -20) return true; else return false;` for EgoClass::Advance
+  0x4B3670 fixed the Egos scroll loop where a bool-local form did not.
