@@ -44,6 +44,9 @@ struct ShapeFileStruct {
     }
 #endif
     // Frame rectangle; the out-of-line copy the linker kept is 0x0045ED50.
+#ifdef RA2_SHAPE_RECT_SOURCE
+    Rect Get_Frame_Rect(int frame) const;
+#else
     Rect Get_Frame_Rect(int frame) const
     {
         ShapeFileFrameStruct const *header = Get_Frame(frame);
@@ -52,6 +55,7 @@ struct ShapeFileStruct {
         }
         return SHAPE_FILE_EMPTY_RECT;
     }
+#endif
     // Frame pixels (Width * Height bytes), or null.
     void const *Get_Frame_Data(int frame) const
     {
