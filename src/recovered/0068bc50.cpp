@@ -1,3 +1,8 @@
-
-class Leaf_68bc50 { public: void get(); };
-void Leaf_68bc50::get() { unsigned int ecx = (unsigned int)this; unsigned int eax; unsigned int edx; eax = 0; *(unsigned int*)(0xabd0d0) = eax; *(unsigned int*)(0xabd0d4) = eax; *(unsigned int*)(0xabd0d8) = eax; *(unsigned int*)(0xabd0dc) = eax; }
+// The PCX image cache unit (0x0068BC50-0x0068D94F; TibSun has no counterpart): the dictionary of loaded
+// .pcx images by name (unknown_bitmap_writer_a76378), their loading, drawing and writing.
+// Its first line: the dynamic initializer of shared/unknown_static_rect.hpp's file-local constant (0x0068BC50).
+#define PCX_CACHE_DECLARE_LOADS
+#define PCX_CACHE_DECLARE_IMAGES
+#define WOL_DICTIONARY_DECLARE_GET_VALUE
+#include "shared/unknown_static_rect.hpp"
+// @ref _unknown_static_rect=00abd0d0

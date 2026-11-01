@@ -11562,32 +11562,6 @@
       "source_order": 148147
     },
     {
-      "entry": 6867744,
-      "method": "0068cb20",
-      "symbol": "?unknown_empty_68cb20@@YAXXZ",
-      "symbol_prefix": "?unknown_empty_68cb20@@YAXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 1,
-      "body_sha256": "ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e",
-      "padding_bytes": 15,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "499f1f307c1cb989f968a6b7fcaec591e1828877223d0b0e7e8e8b76cde8c9ca",
-      "relocations": [],
-      "source_sha256": "0e8031887b06e2194a08c78bf6af434289537495e4e4bf2bbe8fedd8c70ca956",
-      "source": "src/recovered/unowned/unknown_empty_0068cb20.cpp",
-      "population": "population-3377",
-      "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_empty_0068cb20",
-      "source_order": 148153
-    },
-    {
       "entry": 5502064,
       "method": "0053f470",
       "symbol": "?Set_Main_Loop_Flag_0053f470@@YAXXZ",

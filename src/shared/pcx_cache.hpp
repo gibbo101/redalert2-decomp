@@ -7,6 +7,19 @@
 
 class Surface;
 
+#ifdef PCX_CACHE_DECLARE_IMAGES
+#include "shared/wol_dictionary.hpp"
+
+// Declared only in units that define PCX_CACHE_DECLARE_IMAGES (the cache's own unit, 0x0068BC50-0x0068D94F):
+// a new declaration here renumbers the compiler labels of the fragile Refresh_Wonline_Players 0x0073FEE0.
+// One cached image: the surface read from the file and the palette read with it (dictionary value, 0x304 bytes).
+struct UnknownBitmapEntry {
+    UnknownBitmapEntry() : Image(0) {}
+    Surface *Image;
+    unsigned char Palette[768];
+};
+#endif
+
 class UnknownBitmapWriter {
 public:
     UnknownBitmapWriter();                  // 0x0068BD50
@@ -29,6 +42,11 @@ public:
     // source_x of the image (0x0068CF90; the other arguments are 0 in every caller seen).
     void Draw_0068cf90(Rect const &rect, Surface *destination, Surface *image, Surface *alpha, unsigned char *palette,
                        int arg6, int source_x, int arg8);
+
+#ifdef PCX_CACHE_DECLARE_IMAGES
+    // The loaded images by file name (Hash_Name rotating hash; sizeof 0x38).
+    WolDictionary<Wstring, UnknownBitmapEntry> Images;      // +0x00
+#endif
 };
 extern UnknownBitmapWriter unknown_bitmap_writer_a76378;
 // Brightens a 768-byte RGB palette: red and green by 1.5, clamped to 255 (0x0068BCE0; hypothesis).

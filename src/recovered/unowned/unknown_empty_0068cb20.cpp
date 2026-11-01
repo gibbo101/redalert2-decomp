@@ -1,5 +1,2 @@
-// 0x0068CB20: an empty function (a bare ret); no reference to it was found in
-// the image, so its caller or purpose is unknown.
-void __cdecl unknown_empty_68cb20()
-{
-}
+// 0x0068CB20: the atexit destructor of Get_Image_0068ca40's function-local static entry (_$E5; the
+// UnknownBitmapEntry destructor is empty), emitted by the Get_Image_0068ca40 draft.
