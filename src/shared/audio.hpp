@@ -165,7 +165,7 @@ struct AudioLevel {
     void __fastcall Init(int value);                    // 0x00407030 value, 1000 ms, then Update
     void __fastcall Set(int value);                     // 0x00407080 jump to value
     void __fastcall Set_Target(int value);              // 0x004070A0 ramp to value
-    void __fastcall Set_Rate(int step, __int64 period); // 0x004070D0 step per period (ms)
+    void __fastcall Set_Rate(__int64 period, int step); // 0x004070D0 step per period (ms)
     int __fastcall Update();                            // 0x004070F0 1 when the level changed
     int __fastcall Get_Target();                        // 0x004071E0 the target, whole part
 
@@ -405,7 +405,7 @@ char *__fastcall Audio_Stream_Name(AudioStreamPlayer *stream);                  
 int __fastcall Audio_Stream_Is_Fading(AudioStreamPlayer *stream);                           // 0x00407FF0
 void __fastcall Audio_Stream_Wait(AudioStreamPlayer *stream);                               // 0x00408010
 __int64 __fastcall Audio_Stream_Stop_Time(AudioStreamPlayer *stream);                       // 0x00408060
-void Audio_Streams_Stop_Filling();                                                          // 0x00408070
+void __fastcall Audio_Streams_Stop_Filling();                                                        // 0x00408070
 void Audio_Streams_Stop();                                                                  // 0x004080C0
 void Audio_Streams_Hold();                                                                  // 0x00408120
 void Audio_Streams_Release();                                                               // 0x00408150

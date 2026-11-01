@@ -6,8 +6,8 @@
 void __fastcall Audio_Event_Stop(AudioEvent *event)
 {
     if (!(event->Flags & AUDIO_EVENT_STOPPED)) {
-        AUDIO_EVENT_DETACH_INLINE(event)
-        AUDIO_EVENT_RELEASE_SAMPLES_INLINE(event)
+        Audio_Event_Detach(event);
+        Audio_Event_Release_Samples(event);
         AUDIO_EVENT_MARK_STOPPED(event)
     }
 }
