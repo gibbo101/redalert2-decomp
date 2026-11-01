@@ -4,8 +4,8 @@
     "id": "population-3492",
     "inventory_sha256": "75f37c09c5152853b983bfb4d0a960bda6a301955cb0ebe3bdeea029d0276df3",
     "gaps_sha256": "1ff519f1940af0793a8ed0a79d2e86d8f566c60ebb5b5695839e62bbc5df53f5",
-    "historical_population_sha256": "b5d9fcfd0579f5f692c3fd0f0a7636e8c8db5c5551dcb978ea27d2beff2bd5c1",
-    "historical_acceptance_sha256": "0a30d9b7a99cce0c66414f085d80c44a254f4aae339c5e5f684b109ad51b651c"
+    "historical_population_sha256": "8968b8ab6864b43d381051b98e4063773b00c3fd493c2daa652eefadee3c02de",
+    "historical_acceptance_sha256": "8b48a7a0e355c6b37e9c3652d868f4cc6fdcb9fedb413a852f8ecba12e15721f"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -249,7 +249,7 @@
     "?Flag_To_Redraw@GScreenClass@@UAEXH@Z": 5114272,
     "?Options@@3VOptionsClass@@A": 10750744,
     "?unknown_surface_839958@@3PAVSurface@@A": 8624472,
-    "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2HH@Z": 5902352,
+    "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2H_N@Z": 5902352,
     "?Unknown_0071D300@VQAClass@@QAEHXZ": 7459584,
     "?Unknown_0071D310@VQAClass@@QAEHXZ": 7459600,
     "?VQA_Movie_Close@@YIXPAVVQAMovie@@@Z": 5903472,
@@ -11050,7 +11050,10 @@
     "??_7MouseClass@@6B@": 7973204,
     "??_7ScrollClass@@6B@": 8033348,
     "??_EScrollClass@@UAEPAXI@Z": 6728800,
-    "?unknown_name_index_482e60@@YIHPBD@Z": 4730464
+    "?unknown_name_index_482e60@@YIHPBD@Z": 4730464,
+    "?Unknown_0049CD20@DisplayClass@@QAEXXZ": 4836640,
+    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Remove@LogicClass@@QAEXPAVObjectClass@@@Z": 5497712
   },
   "regions": [
     {
@@ -12906,7 +12909,7 @@
         {
           "offset": 535,
           "kind": 20,
-          "symbol": "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2HH@Z",
+          "symbol": "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2H_N@Z",
           "target": 5902352,
           "addend": 0,
           "resolved": 2853
@@ -13336,7 +13339,7 @@
           "resolved": 4294517490
         }
       ],
-      "source_sha256": "c38f23a6eedd507adfd55653fc8c5ef86ef9698fb6a95d03c9385990598c0a4a",
+      "source_sha256": "2ebd9b36637772d572de45dd5c6e3a265b468a90f978699e7422d119414d69a0",
       "source": "src/recovered/Movie/Movie_Play_Movie_005a02d0.cpp",
       "population": "population-3492",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",

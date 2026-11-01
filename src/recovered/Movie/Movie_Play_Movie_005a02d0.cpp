@@ -49,7 +49,7 @@
 // @ref __real@8@4006ff00000000000000=007a2f50
 // @ref __ftol=0077f110
 // @ref ?unknown_surface_839958@@3PAVSurface@@A=00839958
-// @ref ?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2HH@Z=005a1010
+// @ref ?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2H_N@Z=005a1010
 // @ref ?Unknown_0071D300@VQAClass@@QAEHXZ=0071d300
 // @ref ?Unknown_0071D310@VQAClass@@QAEHXZ=0071d310
 // @ref ?VQA_Movie_Close@@YIXPAVVQAMovie@@@Z=005a1470

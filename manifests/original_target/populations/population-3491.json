@@ -4,8 +4,8 @@
     "id": "population-3491",
     "inventory_sha256": "8caec503c45df10da79fe187f70149a6f0d4f9685f7ecdfeab55a7b577251c16",
     "gaps_sha256": "8e1ca5d697ee31578f7f1069b147b3938504911ca1d954a64efcbc9977575d53",
-    "historical_population_sha256": "e5439e1016f7b5fe80f2aa35fb85e3c74ed93d300c66e02b697db07f1b8eccb7",
-    "historical_acceptance_sha256": "bbd479e12e4bf9663f3413ee4dedad21ad729e8ea63dffe82dc0cab8661bc7df"
+    "historical_population_sha256": "f30431ca3e1c80d3d7a9c3d5da3ed1965583e853d13e77effaaf1aa29ef83f42",
+    "historical_acceptance_sha256": "94e31d1d8b3580d9b64c0b0eb264f65e9f97e59dc3ae6f40552d6251adcc6e95"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -3851,7 +3851,7 @@
     "??_C@_04LMEE@?4bik?$AA@": 8270492,
     "??_C@_0BH@CNON@Play_Movie?$CI?$CJ?5as?5Bink?$CB?6?$AA@": 8270468,
     "_strrchr": 7872496,
-    "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2HH@Z": 5902352,
+    "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2H_N@Z": 5902352,
     "?Peek_Buffer@Wstring@@QBEPBDXZ": 7792432,
     "?Delete@?$DynamicVectorClass@PAVObjectClass@@@@QAE_NH@Z": 4541216,
     "?Write@WinModemClass@@QAEXPAXH@Z": 7556208,
@@ -4184,7 +4184,11 @@
     "_socket@12": 7871394,
     "?Unknown_005DA360@OptionsClass@@QAE_NXZ": 6136672,
     "?Main_Options_Dialog@@YIXXZ": 5514336,
-    "__imp__socket": 7972208
+    "__imp__socket": 7972208,
+    "?Play_Movie@@YIXPBDH_N11@Z": 5898928,
+    "?Play_Movie@@YIXPBDH_N111@Z": 5898960,
+    "?Play_Movie@@YIXHH_N00@Z": 5900272,
+    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104
   },
   "regions": [
     {
@@ -5987,7 +5991,7 @@
         {
           "offset": 302,
           "kind": 20,
-          "symbol": "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2HH@Z",
+          "symbol": "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2H_N@Z",
           "target": 5902352,
           "addend": 0,
           "resolved": 4294963630
@@ -6025,7 +6029,7 @@
           "resolved": 1553527
         }
       ],
-      "source_sha256": "1c32159649fb83670f8cda7cb422b98c4f778cb88e379dec79604f8ca4dd2b38",
+      "source_sha256": "c561f775f834bee40ded595f794d98cb28e4482e6b9ed8337fc84d9635adc468",
       "source": "src/recovered/Movie/Movie_Create_Movie_Handle_005a1d30.cpp",
       "population": "population-3491",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",

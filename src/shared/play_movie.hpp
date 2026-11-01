@@ -13,7 +13,7 @@ void __fastcall Audio_Pause();
 void Audio_Resume();
 // Opens a VQA movie (0x005A1010; also declared by shared/ms_anim.hpp and Create_Movie_Handle).
 VQAMovie *__fastcall VQA_Unknown_005A1010(char const *filename, Surface *surface, Rect unknown1, Rect area,
-                                          int unknown2, int unknown3);
+                                          int unknown2, bool unknown3);
 extern "C" char *__cdecl strrchr(char const *string, int character);
 
 // Completes the symmetric 256 x 256 interpolation table from its stored triangle (0x005A0250).

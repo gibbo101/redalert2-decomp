@@ -4,8 +4,8 @@
     "id": "population-3398",
     "inventory_sha256": "ebe3c1927d59c0847659c78032e12567afc42f458e8be89b664a8f4669865db9",
     "gaps_sha256": "a9de65ee283fcf68a19e51e916790a17d5d1d3f4be1773eafedf52b34180a27a",
-    "historical_population_sha256": "42a99ca51162b55893dc86a3d7e1fb69afb9d5321c137e21f414d5e18e0d35a0",
-    "historical_acceptance_sha256": "6c3a3eb2ccf1af8d7b733cfedb4ed5f1c07cb7a8577cfd9e1ec7668d4f4a8255"
+    "historical_population_sha256": "9a723336806bf999fddf584fd982e1c6e3d5924cfcd8b1218a238e8aca66496a",
+    "historical_acceptance_sha256": "f89f60e47543d50ca92712f994779fbbb8f1f8f9289ca7f9be7045cbd795ba4c"
   },
   "references": {
     "_unknown_empty_rect": 10751528,
@@ -2736,7 +2736,7 @@
     "?Create_Movie_Handle@@YIPAVMovieHandle@@PBDPAVSurface@@PBVRect@@@Z": 5905712,
     "?Find_Movie_File@@YI_NPBDPADH@Z": 5905328,
     "??0BinkClass@@QAE@PBDPAVSurface@@@Z": 4390560,
-    "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2HH@Z": 5902352,
+    "?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2H_N@Z": 5902352,
     "?Movie_Handle_Blit@@YIXXZ": 5906160,
     "??_GVQMovieHandle@@UAEPAXI@Z": 5906176,
     "??_GBinkMovieHandle@@UAEPAXI@Z": 5906304,

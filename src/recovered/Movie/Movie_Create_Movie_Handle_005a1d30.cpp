@@ -7,7 +7,7 @@
 // @ref _strrchr=00781ff0
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
 // @ref ??0BinkClass@@QAE@PBDPAVSurface@@@Z=0042fea0
-// @ref ?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2HH@Z=005a1010
+// @ref ?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2H_N@Z=005a1010
 #include "shared/movie.hpp"
 #include "shared/crt_string.hpp"
 #include "shared/debug_printf.hpp"
@@ -15,7 +15,7 @@
 extern "C" char *__cdecl strrchr(char const *string, int character);
 extern "C" int __cdecl _stricmp(char const *string1, char const *string2);
 VQAMovie *__fastcall VQA_Unknown_005A1010(char const *filename, Surface *surface, Rect unknown1, Rect area,
-                                          int unknown2, int unknown3);   // 0x005A1010
+                                          int unknown2, bool unknown3);   // 0x005A1010
 
 MovieHandle *__fastcall Create_Movie_Handle(char const *name, Surface *surface, Rect const *area)
 {

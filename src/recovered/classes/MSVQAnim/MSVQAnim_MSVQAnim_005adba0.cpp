@@ -5,7 +5,7 @@
 #include "shared/wstring.hpp"
 #include "shared/cc_file_class.hpp"
 // @ref ??_7MSVQAnim@@6B@=007a6e04
-// @ref ?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2HH@Z=005a1010
+// @ref ?VQA_Unknown_005A1010@@YIPAVVQAMovie@@PBDPAVSurface@@VRect@@2H_N@Z=005a1010
 // @ref ?unknown_8523e0@@3HA=008523e0
 // @ref ?unknown_8523e4@@3HA=008523e4
 // @ref ?unknown_volume_a40b44@@3MA=00a40b44

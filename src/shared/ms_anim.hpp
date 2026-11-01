@@ -269,7 +269,7 @@ public:
 
 // Opens a VQA movie (0x005A1010, as declared in Movie_Create_Movie_Handle).
 VQAMovie *__fastcall VQA_Unknown_005A1010(char const *filename, Surface *surface, Rect unknown1, Rect area,
-                                          int unknown2, int unknown3);
+                                          int unknown2, bool unknown3);
 
 // Loads a palette file into 0x00838710 (6-bit components scaled by 4) and
 // returns a new drawer for it, or null (0x005AC560, __fastcall; name is a
