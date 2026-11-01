@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "cf7145df1c695692cc802e2b316ddf741777003217d4fe77bed61ccee2fe7ede",
-    "historical_acceptance_sha256": "e7596efb4ac3be0a864c42ba687b2da75e254d04e74ffae24147b30778d75bdf"
+    "historical_population_sha256": "074b70688a883400a561cb42ed47c9f1ac0cfcd6001b42f1ab9988d1d0a5991f",
+    "historical_acceptance_sha256": "cdbd5fbe314b89372745e9af633ef2bf7ee87663f8d8b0891b8bee02b98e1d72"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -20894,7 +20894,7 @@
     "?Unknown_006A65A0@Tactical@@QAEXABVRect@@@Z": 6972832,
     "?Unknown_006A2BF0@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6958064,
     "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABUCoordStruct@@@Z": 6956960,
-    "?unknown_6e06b0@TeleportLocomotionClass@@QAEXABUCoordStruct@@@Z": 7210672,
+    "?unknown_6e06b0@TeleportLocomotionClass@@QAE_NABUCoordStruct@@@Z": 7210672,
     "?Unknown_006A8C80@Tactical@@QAE_NPAUPoint2D@@@Z": 6982784,
     "?Unknown_006A9170@Tactical@@QAEXXZ": 6984048,
     "?unknown_rect_abe560@@3VRect@@A": 11265376,

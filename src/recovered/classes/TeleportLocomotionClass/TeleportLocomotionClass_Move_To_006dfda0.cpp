@@ -6,7 +6,7 @@
 #include "shared/teleport_locomotion.hpp"
 #include "shared/cell.hpp"
 // @ref ?unknown_coord_ac0280@@3UCoordStruct@@A=00ac0280
-// @ref ?unknown_6e06b0@TeleportLocomotionClass@@QAEXABUCoordStruct@@@Z=006e06b0
+// @ref ?unknown_6e06b0@TeleportLocomotionClass@@QAE_NABUCoordStruct@@@Z=006e06b0
 // @ref ?unknown_476920@CellClass@@QAEXPBX_N11@Z=00476920
 
 void __stdcall TeleportLocomotionClass::Move_To(CoordStruct to)
