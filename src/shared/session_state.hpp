@@ -224,7 +224,7 @@ struct UnknownSessionState {
     int unknown_29bc[128];                  // +0x29BC (the network reset 0x00514EE0 clears it)
     int unknown_2bbc[128];                  // +0x2BBC (the network reset sets each to -1)
     int unknown_2dbc;                       // +0x2DBC
-    int unknown_2dc0[4];                    // +0x2DC0
+    unsigned short unknown_2dc0[8];                    // +0x2DC0
     char unknown_2dd0[0x2EF0 - 0x2DD0];
     bool SendDelay;                         // +0x2EF0 [MultiPlayer] SendDelay
     char unknown_2ef1[3];
