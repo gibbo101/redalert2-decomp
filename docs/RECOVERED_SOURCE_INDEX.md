@@ -12,7 +12,7 @@
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 178 | 59,242 | 178 | 0x00438A60–0x004D3450 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 210 | 52,933 | 207 | 0x0041B370–0x006D9750 |
-| (discovery: address-named) | 1431 | 43,462 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1430 | 43,420 | 17 | 0x004010A0–0x00797198 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 110 | 37,716 | 110 | 0x005DE880–0x00601F70 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 117 | 37,481 | 113 | 0x0041B470–0x004CDE10 |
@@ -981,6 +981,7 @@
 | [classes/IndexClass_int_CommandClass_ptr](../src/recovered/classes/IndexClass_int_CommandClass_ptr/) | 3 | 282 | 3 | 0x0051E760–0x00541EE0 |
 | [classes/RLEBlitTransZRemapXlatZRead_unsigned_char](../src/recovered/classes/RLEBlitTransZRemapXlatZRead_unsigned_char/) | 2 | 278 | 2 | 0x004867E0–0x0048C930 |
 | [classes/MSSfxEntry](../src/recovered/classes/MSSfxEntry/) | 3 | 277 | 3 | 0x005B15B0–0x005B16D0 |
+| [classes/FirewallSettings](../src/recovered/classes/FirewallSettings/) | 3 | 276 | 3 | 0x005B9E80–0x005BAF20 |
 | [classes/Base64Straw](../src/recovered/classes/Base64Straw/) | 2 | 275 | 2 | 0x0042B850–0x00510B00 |
 | [classes/BinkMovieHandle](../src/recovered/classes/BinkMovieHandle/) | 13 | 274 | 13 | 0x005A1A80–0x005A1F80 |
 | [classes/BlitTransXlatAlpha_unsigned_short](../src/recovered/classes/BlitTransXlatAlpha_unsigned_short/) | 3 | 271 | 1 | 0x00487EC0–0x0048CD30 |
@@ -1007,7 +1008,6 @@
 | [classes/VectorClass_EMPulseClass_ptr](../src/recovered/classes/VectorClass_EMPulseClass_ptr/) | 2 | 236 | 2 | 0x004B5510–0x004B5550 |
 | [classes/DynamicVectorClass_TRect_int](../src/recovered/classes/DynamicVectorClass_TRect_int/) | 1 | 235 | 1 | 0x0058E740–0x0058E740 |
 | [classes/RLEBlitTransDarkenZRead_unsigned_short](../src/recovered/classes/RLEBlitTransDarkenZRead_unsigned_short/) | 2 | 235 | 2 | 0x00489D90–0x0048D350 |
-| [classes/FirewallSettings](../src/recovered/classes/FirewallSettings/) | 2 | 234 | 2 | 0x005B9E80–0x005BA210 |
 | [classes/RLEBlitTransRemapDestZRead_unsigned_char](../src/recovered/classes/RLEBlitTransRemapDestZRead_unsigned_char/) | 2 | 234 | 2 | 0x004868E0–0x0048C950 |
 | [classes/MSAnimEntry](../src/recovered/classes/MSAnimEntry/) | 1 | 232 | 1 | 0x005B14C0–0x005B14C0 |
 | [classes/Planning](../src/recovered/classes/Planning/) | 2 | 231 | 2 | 0x00610980–0x00612570 |

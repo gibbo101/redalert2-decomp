@@ -11,6 +11,8 @@ public:
     void Load_005ba280();                           // 0x005BA280 (Read_MultiPlayer_Settings calls it once)
     int Detect_005ba2c0(bool *found);               // 0x005BA2C0 (thiscall, one stack argument)
 
+    int Connection_Step_005baf20(int flags); // connection rank from flag bits, 0x005BAF20
+
     int unknown_00;                                 // +0x00 detected type; [MultiPlayer] FirewallSettings
     int unknown_04;                                 // +0x04 loaded by 0x005BA280
     int unknown_08;                                 // +0x08 [MultiPlayer] FirewallDelta
