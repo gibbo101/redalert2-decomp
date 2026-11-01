@@ -38,6 +38,11 @@ public:
     void unknown_4fef70(int ratio, RGBClass const &target);
 
     int Difference(RGBClass const &other) const; // 0x0063CFB0 weighted absolute difference
+#ifdef RGB_DECLARE_TO_HSV
+    // The colour as hue, saturation and value (0x0063D000; TibSun RGBClass::operator HSVClass;
+    // guarded: this header is in Refresh_Wonline_Players 0x0073FEE0's closure).
+    operator HSVClass() const;
+#endif
 
     // Sets the three channels (an out-of-line copy at 0x004F6BC0, after House.cpp).
 #ifdef RGB_DECLARE_BRIGHTEN
