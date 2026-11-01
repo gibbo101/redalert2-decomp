@@ -39,6 +39,7 @@ class TeamTypeClass;
 
 // An object at 0x00839EA0 told when a unit leaves a cell (FootClass slot 52;
 // hypothesis).
+struct Point2D;
 struct UnknownTracker839EA0 {
     ~UnknownTracker839EA0();
     // Known spatial-vector prefix:400 bins at stride18h, then a query working list.
@@ -46,6 +47,7 @@ struct UnknownTracker839EA0 {
     DynamicVectorClass<TechnoClass *> Bins[400];
     DynamicVectorClass<TechnoClass *> Working; // +2580; ActiveCount+2590
     void Append_Bin_00412720(int index);
+    int Shift_Bin_004127a0(int index, Point2D offset);
     int Region_Index_00412820(Cell cell); // native128-byte unreferenced out-of-line copy
     long Load_00413400(IStream *stream);
     TechnoClass *Fetch_Next_004134e0();
