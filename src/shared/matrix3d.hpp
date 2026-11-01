@@ -11,11 +11,21 @@
 #include "shared/fast_math.hpp"
 #include "shared/vector3.hpp"
 
+#ifdef RA2_MATRIX3D_INLINE_COPY
+struct Matrix3D_Data { float Data[12]; };
+#endif
+
 class Matrix3D {
 public:
     Matrix3D() {}
     Matrix3D(float const *matrix);                                      // 0x0058FDE0
+#ifdef RA2_MATRIX3D_INLINE_COPY
+    // The copy constructor is an inline member-wise copy (0x0058FE10 is its
+    // out-of-line copy; BounceClass 0x00436FC0 expands it).
+    Matrix3D(Matrix3D const &matrix) { *(Matrix3D_Data *)Row = *(Matrix3D_Data const *)matrix.Row; }
+#else
     Matrix3D(Matrix3D const &matrix);                                   // 0x0058FE10
+#endif
     Matrix3D(float m11, float m12, float m13, float m14,
              float m21, float m22, float m23, float m24,
              float m31, float m32, float m33, float m34);                // 0x0058FE30

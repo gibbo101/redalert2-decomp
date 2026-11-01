@@ -12,6 +12,9 @@ struct Vector3 {
     Vector3 &Set_00437690(float x, float y, float z);
     Vector3 &Scale_004376b0(float factor);
     Vector3 &Add_004376e0(Vector3 const &other);
+#ifdef RA2_VECTOR3_DECLARE_LENGTH
+    float Length() const;                   // 0x00437710 (Westwood's (float)sqrt(Length2()); BounceClass::AI)
+#endif
 
     static Vector3 Cross_Product(Vector3 const &a, Vector3 const &b)
     {

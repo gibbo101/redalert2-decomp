@@ -43,6 +43,24 @@ struct UnknownBounce {
     CoordStruct Unknown_00436F80() const;   // 0x00436F80 the current position
 };
 
+#ifdef RA2_BOUNCE_DECLARE_MEMBERS
+#include "shared/quaternion.hpp"
+
+// What one BounceClass::AI step did (TibSun bounce.h).
+enum BounceResultType {
+    BOUNCE_MOVING,
+    BOUNCE_IMPACT,
+    BOUNCE_SETTLED
+};
+
+double __cdecl unknown_sin_4ba480(double angle);    // 0x004BA480
+double __cdecl unknown_cos_4ba4d0(double angle);    // 0x004BA4D0
+// The slope matrix of a ramp (0x00718D60) and the matrix that bounces toward
+// a facing (0x00719010): both fill and return matrix.
+Matrix3D * __fastcall Unknown_00718D60(Matrix3D *matrix, int ramp);
+Matrix3D * __fastcall Unknown_00719010(Matrix3D *matrix, int index);
+#endif
+
 class BounceClass {
 public:
     BounceClass() : unknown_30(0, 0, 0, 1.0f), unknown_40(0, 0, 0, 1.0f) {}
@@ -50,6 +68,22 @@ public:
 
     CoordStruct Coord() const;              // 0x00436F80 (the position, truncated)
     Matrix3D unknown_matrix_436fc0() const; // 0x00436FC0 (the rotation at +0x30 as a matrix)
+
+#ifdef RA2_BOUNCE_DECLARE_MEMBERS
+    // The BounceClass unit (TibSun bounce.cpp, 0x00436C70-0x0043768F). The
+    // layout is TibSun's: Elasticity +0x00, Gravity +0x08, MaxVelocity +0x10
+    // (unknown_00's three doubles), MyCoord +0x18 (unknown_00.Position),
+    // Velocity +0x24 (a Vector3 over unknown_24/unknown_2c), Rotation +0x30
+    // and AngularVelocity +0x40 (Quaternions).
+    // Launches in a random direction at a speed from [min_speed, max_speed] (0x00436C70; no callers).
+    void Init(CoordStruct const &coord, double elasticity, double, double min_speed, double max_speed);
+    // Launches with the given velocity and a random tumble axis (0x00436DC0; AnimClass, VoxelAnimClass).
+    void Init(CoordStruct const &coord, double elasticity, double gravity, double max_velocity,
+              Vector3 const &velocity, double rotation);
+    double Get_Remaining_Motion() const;    // 0x00436FF0
+    BounceResultType AI();                  // 0x004370E0 (BOUNCE_IMPACT 1, BOUNCE_SETTLED 2)
+
+#endif
 
     UnknownBounce unknown_00;               // +0x00
     UnknownQuaternion unknown_30;           // +0x30

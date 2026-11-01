@@ -58,6 +58,17 @@ struct TPoint3D {
     TPoint3D(T x, T y, T z) : X(x), Y(y), Z(z) {}
     bool operator==(TPoint3D<T> const &point) const { return X == point.X && Y == point.Y && Z == point.Z; }
     bool operator!=(TPoint3D<T> const &point) const { return !(*this == point); }
+#ifdef RA2_TPOINT3D_LENGTH
+    // TibSun point.h's Length (BounceClass::Get_Remaining_Motion 0x00436FF0 expands it; the
+    // components are read Y, X, Z, the order the original loads them).
+    T Length() const
+    {
+        double y = Y;
+        double x = X;
+        double z = Z;
+        return T(unknown_sqrt_4ba410(x * x + y * y + z * z));
+    }
+#endif
     T X;
     T Y;
     T Z;
