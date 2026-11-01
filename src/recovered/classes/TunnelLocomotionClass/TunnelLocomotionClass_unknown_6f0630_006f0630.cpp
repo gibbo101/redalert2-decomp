@@ -5,7 +5,7 @@
 
 void TunnelLocomotionClass::unknown_6f0630()
 {
-    if (Timer_Ratio() == 1.0) {
+    if (unknown_28.Ratio() == 1.0) {
         unknown_18 = 0;
         LinkedTo->unknown_4cd9b0();
     }

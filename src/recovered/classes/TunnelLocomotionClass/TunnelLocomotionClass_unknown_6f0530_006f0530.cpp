@@ -8,7 +8,7 @@
 
 void TunnelLocomotionClass::unknown_6f0530()
 {
-    if (Timer_Ratio() == 1.0) {
+    if (unknown_28.Ratio() == 1.0) {
         LinkedTo->unknown_slot306(1.0);
         unknown_18 = 3;
         Voc_Play_At(Rules->unknown_16c, CoordStruct(LinkedTo->Coord), 0);

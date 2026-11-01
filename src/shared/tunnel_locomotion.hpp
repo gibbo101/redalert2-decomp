@@ -19,6 +19,15 @@ extern CoordStruct unknown_coord_ac0f30;            // 0x00AC0F30
 struct UnknownTunnelTimer {
     UnknownTunnelTimer() : Total(0) {}
     UnknownTunnelTimer(int duration) : Timer(duration), Total(duration) {}
+    // How far the timer has run (1.0 with no duration; hypothesis).
+    double Ratio()
+    {
+        if (Total == 0) {
+            return 1.0;
+        }
+        return (double)(Total - Timer.Value()) / (double)Total;
+    }
+
     CDTimerClass<FrameTimerClass> Timer;    // +0x00
     int Total;                              // +0x0C
 };
@@ -60,15 +69,6 @@ public:
     void unknown_6f0aa0();                      // 0x006F0AA0 (state 5)
     void unknown_6f0c50();                      // 0x006F0C50 (state 6)
     void unknown_6f0630();                      // 0x006F0630 (state 7)
-
-    // How far the state's timer has run (1.0 with no duration; hypothesis).
-    double Timer_Ratio()
-    {
-        if (unknown_28.Total == 0) {
-            return 1.0;
-        }
-        return (double)(unknown_28.Total - unknown_28.Timer.Value()) / (double)unknown_28.Total;
-    }
 
     int unknown_18;                             // +0x18 state
     CoordStruct unknown_1c;                     // +0x1C

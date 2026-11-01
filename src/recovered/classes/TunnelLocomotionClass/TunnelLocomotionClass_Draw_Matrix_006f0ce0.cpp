@@ -55,19 +55,19 @@ Matrix3D * __stdcall TunnelLocomotionClass::Draw_Matrix(Matrix3D *matrix, int *k
         if (key != 0) {
             *key = -1;
         }
-        angle = Timer_Ratio() * 1.5707963267948966;
+        angle = unknown_28.Ratio() * 1.5707963267948966;
         break;
     case 6:
         if (key != 0) {
             *key = -1;
         }
-        angle = (1.0 - Timer_Ratio()) * -1.5707963267948966;
+        angle = (1.0 - unknown_28.Ratio()) * -1.5707963267948966;
         break;
     case 7:
         if (key != 0) {
             *key = -1;
         }
-        angle = (1.0 - Timer_Ratio()) * 1.5707963267948966;
+        angle = (1.0 - unknown_28.Ratio()) * 1.5707963267948966;
         break;
     default:
         angle = 0;

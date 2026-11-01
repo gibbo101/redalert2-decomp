@@ -5,7 +5,7 @@
 
 void TunnelLocomotionClass::unknown_6f0c50()
 {
-    if (Timer_Ratio() == 1.0) {
+    if (unknown_28.Ratio() == 1.0) {
         LinkedTo->unknown_slot93(2);
         if (LinkedTo->unknown_7d && !LinkedTo->unknown_76 && !LinkedTo->unknown_7a) {
             Stop_Moving();

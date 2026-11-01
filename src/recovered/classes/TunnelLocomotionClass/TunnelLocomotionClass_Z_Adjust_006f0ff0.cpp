@@ -20,7 +20,7 @@ int __stdcall TunnelLocomotionClass::Z_Adjust()
     Point2D to;
     unknown_tactical_83996c->Coord_To_Pixel(coord, to);
     int height = from.Y - to.Y;
-    double ratio = Timer_Ratio();
+    double ratio = unknown_28.Ratio();
     int facing = Dir_To_256(LinkedTo->unknown_2e0.Current());
     switch (unknown_18) {
     case 4:
