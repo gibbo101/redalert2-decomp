@@ -29,6 +29,7 @@ public:
     virtual int Size_Of() const;                                // slot 12 0x0041F010 (0x40)
     virtual void Compute_CRC(WWCRCEngine &crc) const;           // slot 13 0x0041F020
 
+    static void Update_All();                                   // 0x0041F110
     static void Init_Alpha_Table();                             // 0x0041F950
 
     ObjectClass *Owner;         // +0x24
