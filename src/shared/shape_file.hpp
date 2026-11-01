@@ -35,10 +35,14 @@ static Rect const unknown_empty_rect(0, 0, 0, 0);
 // A shape file: header followed by FrameCount frame headers.
 struct ShapeFileStruct {
     // Header of frame, or null past the last frame (unsigned comparison).
+#ifdef RA2_SHAPE_FRAME_SOURCE
+    ShapeFileFrameStruct const *Get_Frame(unsigned frame) const;
+#else
     ShapeFileFrameStruct const *Get_Frame(unsigned frame) const
     {
         return frame < (unsigned)FrameCount ? &Frames[frame] : 0;
     }
+#endif
     // Frame rectangle; the out-of-line copy the linker kept is 0x0045ED50.
     Rect Get_Frame_Rect(int frame) const
     {
