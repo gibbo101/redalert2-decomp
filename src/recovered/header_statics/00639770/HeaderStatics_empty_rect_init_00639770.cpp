@@ -1,3 +1,5 @@
+#define RA2_COORD_FROM_CELL  // the unit calls CoordStruct(Cell const &, int) 0x0061EA80 (shared/coord.hpp)
+#define RA2_TECHNO_PAIR_ROOKIE  // UnknownTechnoPair 0x007134E0 for _Create_Group (shared/techno.hpp)
 // Header-static dynamic initializers of the unit at 0x00639770: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x00639770-0x00639951); the other
 // drafts of this plan are emitted by these includes.

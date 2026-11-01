@@ -70,6 +70,9 @@ public:
     bool unknown_713420() const;        // 0x00713420
     void Unknown_00713360(int cost, int points);   // 0x00713360 (gains experience; TechnoClass slot 55)
     void unknown_713520(bool value);    // 0x00713520 (UnitClass constructor: veteran owners)
+#ifdef RA2_TECHNO_PAIR_ROOKIE
+    void Unknown_007134E0(bool flag);   // 0x007134E0 (VeteranLevel 0 reinforcements, reinf.cpp; TS Set_Dumbass)
+#endif
     bool unknown_7133a0() const;        // 0x007133A0 (veteran; hypothesis)
     bool unknown_713400() const;        // 0x00713400 (a third rank; TechnoClass slot 250 draws frame 18)
     int unknown_00;

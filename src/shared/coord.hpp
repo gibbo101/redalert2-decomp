@@ -9,12 +9,16 @@
 
 struct INIPoint3D;
 
-#ifdef RA2_COORD_AS_CELL
+#if defined(RA2_COORD_AS_CELL) || defined(RA2_COORD_FROM_CELL)
 class Cell;
 #endif
 struct CoordStruct {
     CoordStruct() {}
     CoordStruct(int x, int y, int z) : X(x), Y(y), Z(z) {}
+#ifdef RA2_COORD_FROM_CELL
+    // The centre of a cell at height z (out of line 0x0061EA80; reinf.cpp's paradrop plane).
+    CoordStruct(Cell const &cell, int z);
+#endif
     // From the point an INI reader returns (defined in shared/ini_class.hpp).
     CoordStruct(INIPoint3D const &point);
     // Member-wise difference (0x004348F0 is the out-of-line copy the BuildingLight unit keeps).
