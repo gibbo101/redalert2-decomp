@@ -68,6 +68,15 @@ public:
     void Unknown_006E7A70();                // 0x006E7A70 (frees every theme record; Prog_End)
     void Set_Volume(int volume);            // 0x006E8590 (at most 255)
     bool Still_Playing() const;             // 0x006E82D0 (name after Red Alert's ThemeClass)
+#ifdef THEME_SOUND_CONTROLS
+    // The sound controls dialog's track list (SoundDlg.cpp, 0x00688DA0): the theme's wide display
+    // name (+0x200 of its record, 0 out of range; 0x006E7CB0), its length in seconds (0x006E8150),
+    // the number of themes and the theme that is (or will be) playing.
+    unsigned short const *Full_Name(unsigned theme) const;
+    int unknown_theme_length(unsigned theme) const;
+    int Max_Themes() const { return Themes.Count(); }
+    ThemeType What_Is_Playing() const { return Score != THEME_NONE ? Score : Pending; }
+#endif
 #ifdef THEME_CONTROL_RECORD
     // The theme's file name, made in a static buffer ("" out of range; 0x006E8110).
     char const *Theme_File_Name(ThemeType theme);
