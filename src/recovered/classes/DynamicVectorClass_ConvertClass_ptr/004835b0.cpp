@@ -1,11 +1,21 @@
-extern "C" unsigned char opaque_code_address_4835b0_4835f0[];
-extern "C" unsigned int g4_4835b0_851154;
-extern "C" unsigned int g4_4835b0_851158;
-extern "C" unsigned char g1_4835b0_85115c;
-extern "C" unsigned char g1_4835b0_85115d;
-extern "C" unsigned char address_4835b0_79df30[];
-extern "C" unsigned int g4_4835b0_851150;
-extern "C" unsigned int g4_4835b0_851164;
-extern "C" unsigned int g4_4835b0_851160;
-extern "C" unsigned int __cdecl call_4835b0_0(unsigned int p0);
-extern "C" void __cdecl recover_4835b0() { g4_4835b0_851154 = 0; g4_4835b0_851158 = 0; g1_4835b0_85115c = 1; g1_4835b0_85115d = (unsigned char)(0); g4_4835b0_851150 = (unsigned int)address_4835b0_79df30; g4_4835b0_851164 = 0xa; g4_4835b0_851160 = 0; unsigned int result0 = call_4835b0_0((unsigned int)((unsigned int)opaque_code_address_4835b0_4835f0)); }
+// ConvertClass::Drawers (0x00851150): its initializer (0x004835B0) and guarded
+// atexit destructor (0x004835F0) are emitted by this definition.
+DynamicVectorClass<ConvertClass *> ConvertClass::Drawers;
+// @ref ?Drawers@ConvertClass@@2V?$DynamicVectorClass@PAVConvertClass@@@@A=00851150
+// @ref ??_7ConvertClass@@6B@=0079df70
+// @ref ??8?$VectorClass@PAVConvertClass@@@@UBE_NABV0@@Z=0048d970
+// @ref ??_7?$DynamicVectorClass@PAVConvertClass@@@@6B@=0079df30
+// @ref ??_7?$VectorClass@PAVConvertClass@@@@6B@=0079df50
+// @ref ??_G?$DynamicVectorClass@PAVConvertClass@@@@UAEPAXI@Z=0048dc20
+// @ref ??_G?$VectorClass@PAVConvertClass@@@@UAEPAXI@Z=0048dbd0
+// @ref ?Clear@?$DynamicVectorClass@PAVConvertClass@@@@UAEXXZ=00486240
+// @ref ?Clear@?$VectorClass@PAVConvertClass@@@@UAEXXZ=0048da60
+// @ref ?Fetch@?$VectorClass@PAVConvertClass@@@@UBEPAVConvertClass@@H@Z=00486290
+// @ref ?ID@?$DynamicVectorClass@PAVConvertClass@@@@UAEHABQAVConvertClass@@@Z=0048dba0
+// @ref ?ID@?$DynamicVectorClass@PAVConvertClass@@@@UAEHPBQAVConvertClass@@@Z=00486270
+// @ref ?ID@?$VectorClass@PAVConvertClass@@@@UAEHABQAVConvertClass@@@Z=0048da90
+// @ref ?ID@?$VectorClass@PAVConvertClass@@@@UAEHPBQAVConvertClass@@@Z=0048dad0
+// @ref ?Resize@?$DynamicVectorClass@PAVConvertClass@@@@UAE_NHPBQAVConvertClass@@@Z=0048daf0
+// @ref ?Resize@?$VectorClass@PAVConvertClass@@@@UAE_NHPBQAVConvertClass@@@Z=0048d9b0
+// @ref _$S7=00851168
+// @ref _$E6=004835f0

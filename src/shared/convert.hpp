@@ -11,6 +11,9 @@
 class Surface;
 class Blitter;
 class RLEBlitter;
+#ifdef CONVERT_DECLARE_DRAWERS
+template <class T> class DynamicVectorClass;
+#endif
 
 class PaletteClass {
 public:
@@ -52,6 +55,14 @@ public:
     RLEBlitter const *RLEBlitter_From_Flags_00485d60(unsigned flags) const;
     void Delete_Blitters_004853A0();                                 // 0x004853A0
 
+#ifdef CONVERT_DECLARE_DRAWERS
+    // Every converter, so a display format change can rebuild them (0x00851150;
+    // TibSun ConvertClass::Drawers; the constructor adds, the destructor deletes).
+    // Guarded: the declaration shifts the _$E numbering of units that include
+    // this header (populations 2498, 2967, 3302, 3462); convert.cpp defines the guard.
+    static DynamicVectorClass<ConvertClass *> Drawers;
+#endif
+
     int BytesPerPixel;              // +0x004
     Blitter *Blitters[50];          // +0x008 through +0x0CC
     RLEBlitter *RLEBlitters[39];     // +0x0D0 through +0x168
@@ -60,10 +71,8 @@ public:
     void *Table;                    // +0x174 index -> surface value table
     unsigned char const *Remap;     // +0x178
     unsigned char const *ActiveRemap; // +0x17C
-    unsigned short HalfMask;        // +0x180
-    unsigned short unknown_182;     // +0x182
-    unsigned short QuarterMask;     // +0x184
-    unsigned short unknown_186;     // +0x186
+    unsigned int HalfMask;          // +0x180 (dword stores in the constructor)
+    unsigned int QuarterMask;       // +0x184
 };
 
 #endif
