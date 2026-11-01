@@ -88,6 +88,7 @@ public:
     // Callers ignore these helpers' return values; bool follows the reference hypothesis.
     bool Process_Take_Off_004bddf0();
     bool Process_Landing_004bdfb0();
+    void Take_Off_004bf0d0();
     void unknown_4bdd10();                                                      // 0x004BDD10 (TibSun Rotation_AI)
     int unknown_4be720(bool stage, CoordStruct coord);                          // 0x004BE720 (TibSun Nearing_Target)
 
