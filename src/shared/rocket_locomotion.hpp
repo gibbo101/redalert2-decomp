@@ -10,6 +10,7 @@
 
 #include "shared/locomotion.hpp"
 
+struct RocketStruct;
 extern CoordStruct unknown_coord_ab6888;            // 0x00AB6888
 extern "C" GUID const CLSID_RocketLocomotionClass;  // 0x007A2010
 
@@ -33,9 +34,13 @@ public:
     virtual int __stdcall Layer();                                              // 0x0063EBF0
     virtual bool __stdcall Is_Moving_Now();                                     // 0x0063DB90
 
+    CoordStruct unknown_63dbe0(int distance);                                    // 0x0063DBE0 (the point distance ahead along the facing and the pitch)
+    bool unknown_63dcf0(RocketStruct const *rocket);                             // 0x0063DCF0 (the rocket's nose is down at the destination's height (or the bridge deck above it): explodes)
+    double unknown_63de10();
+    void unknown_63e7d0();                                                       // 0x0063E7D0 (detonates)                                                    // 0x0063DE10 (the pitch toward the destination: atan of the height over the ground distance)
+
     CoordStruct unknown_18;                     // +0x18
-    CDTimerClass<FrameTimerClass> unknown_24;   // +0x24
-    int unknown_30;                             // +0x30
+    UnknownSlopeTimer unknown_24;               // +0x24 (a frame timer and, +0x30, the duration it was set to; Move_To assigns a fresh one)
     CDTimerClass<FrameTimerClass> unknown_34;   // +0x34
     int unknown_40;                             // +0x40 (state)
     int unknown_44;                             // +0x44

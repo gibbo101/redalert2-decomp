@@ -7,7 +7,6 @@
 
 RocketLocomotionClass::RocketLocomotionClass() :
     unknown_18(unknown_coord_ab6888),
-    unknown_30(0),
     unknown_40(0),
     unknown_48(0),
     unknown_50(0),
