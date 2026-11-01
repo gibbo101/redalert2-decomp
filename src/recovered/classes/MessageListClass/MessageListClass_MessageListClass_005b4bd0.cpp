@@ -1,5 +1,13 @@
 // MessageListClass::MessageListClass() -- 0x005B4BD0
 // Clears the list, the geometry and the selection range; the seven trailing words become 0x10001.
+// The DynamicVectorClass members this unit's lists expand, defined before any other header includes the
+// vector header (the unit's first source; shared/vector_class.hpp).
+#define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_ADD
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_OBJECT
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_INDEX
+#include "shared/vector_class.hpp"
 #include "shared/message_list.hpp"
 
 MessageListClass::MessageListClass()
