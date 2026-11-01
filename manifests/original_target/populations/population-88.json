@@ -1413,56 +1413,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 4387056,
-      "method": "0042f0f0",
-      "symbol": "?FUN_0042f0f0@seed_0042f0f0@@YIXH@Z",
-      "symbol_prefix": "?FUN_0042f0f0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 12,
-      "body_sha256": "359c79c3910973d7a86cbc70db199921bc8bae5f9286a8fc86d83b12794d2527",
-      "padding_bytes": 4,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "4f4628ceb97526fd5270f5290241e28f2a55b3c9abb74c41e34f03b8df4f28b4",
-      "relocations": [],
-      "source_sha256": "b064634cb2ff954080168c427d4b413a8e9edbbdb6984d5e3b0527e6df8ec327",
-      "source": "src/recovered/0042f0f0.cpp",
-      "source_order": 10062,
-      "population": "population-88",
-      "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
-      "entry": 4387296,
-      "method": "0042f1e0",
-      "symbol": "?FUN_0042f1e0@seed_0042f1e0@@YIIH@Z",
-      "symbol_prefix": "?FUN_0042f1e0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 21,
-      "body_sha256": "90fc55c451dcfb63fd69cf3df4beaadcff4dee6e36b8644d88308e6dc94e7c7d",
-      "padding_bytes": 11,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "a18693a15faabd268debefffe68805612d8327cdcc22a84b8f4739d3f87d9d6f",
-      "relocations": [],
-      "source_sha256": "2f77e05a9d3b0c7ab995482e09f383d91fd846e61628e8d339a2d7cd67e05b47",
-      "source": "src/recovered/0042f1e0.cpp",
-      "source_order": 10063,
-      "population": "population-88",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 4393888,
       "method": "00430ba0",
       "symbol": "?FUN_00430ba0@seed_00430ba0@@YIHH@Z",
