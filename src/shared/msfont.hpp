@@ -31,6 +31,9 @@ public:
     virtual void Print(Surface *surface, unsigned short const *text, int x, int y, int style);      // slot 3 (+0x0C) 0x005B44F0
     virtual void Print_Char(Surface *surface, unsigned short ch, int x, int y, int style, int unknown6);  // slot 4 (+0x10) 0x005B43D0
 
+    // Real inline height accessor (reference msfont.h); ordered read at callers.
+    int Get_Font_Height() { return Height; }
+
     bool Load(bool sidebar);                                            // 0x005B3FD0
     void Text_Rect(unsigned short const *text, Rect &rect);             // 0x005B41F0
 

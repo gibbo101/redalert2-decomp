@@ -183,6 +183,8 @@ public:
     // The width of a line up to its end or newline (inline: slot 4 and Draw
     // expand it; name hypothesis).
     int Line_Width(WideString const &line);
+    // Redraws only characters preceding LineStart; nonvirtual original body.
+    void Draw_Completed_005af4f0(Surface *surface, Rect const *clip);
 
     WideString Text;            // +0x1C
     unsigned LineStart;         // +0x20 first character of the line shown at the top
@@ -199,17 +201,6 @@ public:
     int unknown_50;             // +0x50 y of the line being shown
     Rect unknown_54;            // +0x54 area of the previous step
 };
-
-inline int MSPrintAnim::Line_Width(WideString const &line)
-{
-    int i = 0;
-    int width = 0;
-    while (line.Get_Char(i) != 0 && line.Get_Char(i) != '\n') {
-        width += Font->Char_Width(line.Get_Char(i));
-        i++;
-    }
-    return width;
-}
 
 // Breaks text into lines no wider than width less one glyph: each line ends
 // at its last space (the space becomes '\n'), or, when the line has none,
