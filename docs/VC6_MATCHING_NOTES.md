@@ -864,3 +864,11 @@ animfile.cpp). Before parking a row as assembly, compile the TibSun/Westwood C; 
   store order first.
 - A member defined later in the same file still inlines into earlier callers (CellClass::Adjacent_Cell 0x476AC0
   into the bridge functions); do not move definitions to force or prevent it.
+
+## if/else nesting changes stack packing (Mech459, 2026-11-01)
+
+Early returns and the equivalent nested `if/else` blocks do not give the same frame. In Mech Movement_AI 0x5919A0,
+wrapping TibSun's "no destination" case and the head-to-set path in `else` blocks cut VC6's locals from 0x6c to the
+original 0x5c (+4.7 points). Keep the reference source's nesting before trying declaration-order changes. Also:
+TibSun inline.h Direction written as `int x1 = coord1.X; int x2 = coord2.X;` reproduces the original's X-only stack
+copies exactly.

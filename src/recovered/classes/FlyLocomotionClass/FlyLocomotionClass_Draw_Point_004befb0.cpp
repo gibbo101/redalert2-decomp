@@ -9,7 +9,6 @@
 // @ref ?Fast_Sin@@YAMN@Z=004ba480
 // @ref ?Release_Held@?$UnknownComPtr@UUnknownFlyInterface@@$1?unknown_uuid_7d80a8@@3UGUID@@B@@QAEXXZ=004bfbc0
 // @ref __real@8@3ffda0d97bb4e7870000=007a1100
-// @ref __real@8@3fff8000000000000000=0079d568
 // @ref __real@8@3ffe8000000000000000=0079a728
 // @ref _unknown_uuid_7d80a8=007d80a8
 

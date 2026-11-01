@@ -85,6 +85,9 @@ public:
     bool unknown_4bcc60();                                                      // 0x004BCC60 (landed carrier unloads its passengers)
     bool unknown_4bca00();                                                      // 0x004BCA00 (TibSun Landing_Takeoff_AI)
     void unknown_4bcd50();                                                      // 0x004BCD50 (TibSun Movement_AI)
+    // Callers ignore these helpers' return values; bool follows the reference hypothesis.
+    bool Process_Take_Off_004bddf0();
+    bool Process_Landing_004bdfb0();
     void unknown_4bdd10();                                                      // 0x004BDD10 (TibSun Rotation_AI)
     int unknown_4be720(bool stage, CoordStruct coord);                          // 0x004BE720 (TibSun Nearing_Target)
 

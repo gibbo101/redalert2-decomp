@@ -36,8 +36,8 @@ public:
 
     CoordStruct unknown_63dbe0(int distance);                                    // 0x0063DBE0 (the point distance ahead along the facing and the pitch)
     bool unknown_63dcf0(RocketStruct const *rocket);                             // 0x0063DCF0 (the rocket's nose is down at the destination's height (or the bridge deck above it): explodes)
-    double unknown_63de10();
-    void unknown_63e7d0();                                                       // 0x0063E7D0 (detonates)                                                    // 0x0063DE10 (the pitch toward the destination: atan of the height over the ground distance)
+    double unknown_63de10();                                                         // 0x0063DE10 (the pitch toward the destination: atan of the height over the ground distance)
+    void unknown_63e7d0();                                                       // 0x0063E7D0 (detonates)
 
     CoordStruct unknown_18;                     // +0x18
     UnknownSlopeTimer unknown_24;               // +0x24 (a frame timer and, +0x30, the duration it was set to; Move_To assigns a fresh one)
