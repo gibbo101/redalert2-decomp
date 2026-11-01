@@ -16,6 +16,9 @@ public:
     IPXAddressClass(NetNumType net, NetNodeType node, unsigned short socket); // 0x00523440
     void Get_Address(NetNumType net, NetNodeType node, unsigned short *socket); // 0x005234c0
     IPXAddressClass();                                              // 0x00523410
+#ifdef IPX_ADDRESS_DESTRUCTOR
+    ~IPXAddressClass() {}                                          // (empty; the function-local static in 0x0063FA00 registers it, 0x0063FAE0)
+#endif
     void Get_Address(NetNumType net, NetNodeType node);             // 0x00523500
     void Set_Address(NetNumType net, NetNodeType node, unsigned short socket);   // 0x00523480
     int Is_Broadcast();                                             // 0x00523560
