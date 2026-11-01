@@ -14,6 +14,7 @@ public:
     bool Is_Rectangle_Clear_00575910(Rect const &area,int allowedRegion);
     static void Destroy_Cell_Regions();
     static UnknownMapGenerationCell &Get_Cell_Data(int index);
+    static UnknownMapGenerationCell &Get_Cell_Data(Cell const &position);
     static void Make_Ice_Regions_005704c0();
     bool Split_Region_0056ef20();
     void Place_Neutral_Tech_Building_00576cd0();
@@ -61,6 +62,7 @@ public:
 };
 // A separate0x50-byte map-generation grid record; formal original name unknown.
 struct UnknownMapGenerationCell {
+    static int Get_Region(Cell const &position);
     UnknownMapGenerationCell(); //0056D6C0; nominal source identity remains unknown
     ::Cell Position;
     unsigned char unknown_04[4];
@@ -92,5 +94,15 @@ void __fastcall Set_Cell_Region_Index_0056e970(Cell const &position, int index);
 inline UnknownMapGenerationCell &MapRegionClass::Get_Cell_Data(int index)
 {
     return unknown_map_cells_a70a24[index];
+}
+inline UnknownMapGenerationCell &MapRegionClass::Get_Cell_Data(Cell const &position)
+{
+    int index=(int)((unsigned)(int)position.Y*(unsigned)unknown_map_cell_side_84e804+(unsigned)(int)position.X);
+    return unknown_map_cells_a70a24[index];
+}
+inline int UnknownMapGenerationCell::Get_Region(Cell const &position)
+{
+    if(!unknown_map_cells_a70a24)return -1;
+    return MapRegionClass::Get_Cell_Data(position).RegionIndex;
 }
 #endif

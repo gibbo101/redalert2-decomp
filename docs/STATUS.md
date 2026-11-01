@@ -10,10 +10,10 @@ original code is still scaffold. Per-batch evidence through A15 is in
 
 | Measure | Value |
 | --- | ---: |
-| Accepted regions | 16,376 |
-| Matched C/C++ body bytes | 2,129,094 (56.48% of .text) |
-| Frozen padding bytes | 130,924 |
-| Original .text scaffold bytes | 1,509,787 |
+| Accepted regions | 16,377 |
+| Matched C/C++ body bytes | 2,129,359 (56.48% of .text) |
+| Frozen padding bytes | 130,931 |
+| Original .text scaffold bytes | 1,509,515 |
 | Logical .text bytes | 3,769,805 |
 | Compiler populations | 652 |
 
@@ -1061,6 +1061,7 @@ Manifest history (body bytes added per commit, and per hour since the previous c
 | `455137596` | 2026-10-31 17:53 -0500 | 16,363 | 2,125,036 | +1,471 | 50,434 |
 | `9af71ea70` | 2026-10-31 18:02 -0500 | 16,364 | 2,126,346 | +1,310 | 8,274 |
 | `ab1745c12` | 2026-10-31 18:29 -0500 | 16,375 | 2,128,198 | +1,852 | 4,167 |
+| `cefda30fd` | 2026-10-31 18:55 -0500 | 16,376 | 2,129,094 | +896 | 2,117 |
 
 <!-- /generated:status -->
 
