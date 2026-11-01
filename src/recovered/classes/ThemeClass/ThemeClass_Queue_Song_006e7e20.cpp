@@ -1,6 +1,8 @@
 // void ThemeClass::Queue_Song(ThemeType theme) -- 0x006E7E20
 // Purpose: remembers the theme to play next (+0x08); a real theme other than the current one is logged and,
 // while a sample is attached, fades it out (a fade that has ended is stopped first).
+// Shape: the fade test is Tiberian Sun's `Still_Playing() == true` (expanded inline), which lets /Ob2
+// expand Queue_Song in Play_Song 0x006E7EB0 and Load 0x006E8340.
 #include "shared/theme.hpp"
 #include "shared/debug_printf.hpp"
 #include "shared/sound_available.hpp"
@@ -28,14 +30,7 @@ void ThemeClass::Queue_Song(ThemeType theme)
         Pending = theme;
         if (theme != -1 && theme != -2 && theme != Score) {
             Debug_Printf("Theme::QueueSong(%d)\n", theme);
-            bool ready = false;
-            if (Sample != 0) {
-                if (unknown_11 && !unknown_sample_407ff0(Sample)) {
-                    unknown_stop_sample_407e60(Sample);
-                }
-                ready = unknown_sample_407f90(Sample);
-            }
-            if (ready == true) {
+            if (Still_Playing() == true) {
                 if (Sample != 0) {
                     unknown_sample_407fe0(Sample);
                 }

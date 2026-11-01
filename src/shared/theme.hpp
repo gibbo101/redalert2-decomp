@@ -68,6 +68,12 @@ public:
     void Unknown_006E7A70();                // 0x006E7A70 (frees every theme record; Prog_End)
     void Set_Volume(int volume);            // 0x006E8590 (at most 255)
     bool Still_Playing() const;             // 0x006E82D0 (name after Red Alert's ThemeClass)
+#ifdef THEME_CONTROL_RECORD
+    // The theme's file name, made in a static buffer ("" out of range; 0x006E8110).
+    char const *Theme_File_Name(ThemeType theme);
+    // Reads the playing and queued themes from a save stream and restarts them (0x006E8340).
+    long Load(struct IStream *stream);
+#endif
 
     ThemeType Current;      // +0x00 playing theme
     ThemeType Score;        // +0x04 theme that should be playing

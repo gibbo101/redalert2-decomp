@@ -2,6 +2,8 @@
 // Purpose: stops the playing theme: with `fade` and a sample attached the sample is faded out when that is
 // possible (logged "- Fading"), otherwise it is stopped at once; the current, playing and queued themes
 // are forgotten.
+// Shape: Tiberian Sun's `fade && Still_Playing() == true` and one chained store keep the body small
+// enough for /Ob2 to expand Stop() in Play_Song 0x006E7EB0.
 #include "shared/theme.hpp"
 #include "shared/debug_printf.hpp"
 #include "shared/sound_available.hpp"
@@ -26,29 +28,19 @@ int __fastcall unknown_sample_407ff0(void *sample);
 
 void ThemeClass::Stop(bool fade)
 {
-    if (!unknown_sound_enabled_a40c18 || !unknown_check_406f30() || unknown_flag_a40d0c || Current == -1) {
-        return;
-    }
-    bool ready = false;
-    if (fade && Sample != 0) {
-        if (unknown_11 && !unknown_sample_407ff0(Sample)) {
-            unknown_stop_sample_407e60(Sample);
+    if (unknown_sound_enabled_a40c18 && unknown_check_406f30() && !unknown_flag_a40d0c && Current != -1) {
+        if (fade && Still_Playing() == true) {
+            Debug_Printf("Theme::Stop(%d) - Fading\n", Score);
+            if (Sample != 0) {
+                unknown_sample_407fe0(Sample);
+            }
+            unknown_11 = true;
+        } else {
+            Debug_Printf("Theme::Stop(%d)\n", Score);
+            if (Sample != 0) {
+                unknown_stop_sample_407e60(Sample);
+            }
         }
-        ready = unknown_sample_407f90(Sample);
+        Pending = Score = Current = -1;
     }
-    if (ready == true) {
-        Debug_Printf("Theme::Stop(%d) - Fading\n", Score);
-        if (Sample != 0) {
-            unknown_sample_407fe0(Sample);
-        }
-        unknown_11 = true;
-    } else {
-        Debug_Printf("Theme::Stop(%d)\n", Score);
-        if (Sample != 0) {
-            unknown_stop_sample_407e60(Sample);
-        }
-    }
-    Current = -1;
-    Score = -1;
-    Pending = -1;
 }
