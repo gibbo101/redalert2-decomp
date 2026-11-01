@@ -1,26 +1,9 @@
-// 0x005a0e20: function not yet identified
-//
-// Body: 13 bytes (frozen inventory bound).
-// Referenced from 0 sites.
-// Ghidra prototype: void FUN_005a0e20(void)
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
+// void Movie_Unlock_Surface() (0x005A0E20)
+// The VQA player's unlock callback (TibSun Movie_Unlock_Surface): unlocks the current movie's frame surface.
+#include "shared/movie.hpp"
+// @ref ?CurrentVQAMovie@@3PAVVQAMovie@@A=00a710ac
 
-namespace seed_005a0e20 {
-
-extern "C" undefined4 DAT_00a710ac;
-
-void  FUN_005a0e20(void)
+void Movie_Unlock_Surface()
 {
-                                        /* WARNING: Could not recover jumptable at 0x005a0e2a. Too many branches */
-                                        /* WARNING: Treating indirect jump as call */
-    (**(code **)(**(int **)(DAT_00a710ac + 8) + 0x60))();
-    return;
+    CurrentVQAMovie->FrameSurface->Unlock();
 }
-
-}  // namespace seed_005a0e20
