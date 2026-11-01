@@ -7,7 +7,7 @@
 #include "shared/dsurface.hpp"
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??2@YAPAXI@Z=00782017
-// @ref ?Unknown_00630B70@RadarClass@@QAE?AVRect@@ABV2@0_N@Z=00630b70
+// @ref ?Unknown_00630B70@RadarClass@@QAE?AVRect@@ABV2@AAV2@_N@Z=00630b70
 // @ref ??0DSurface@@QAE@HH_N@Z=004aa4a0
 // @ref ?Unknown_00632700@RadarClass@@QAEXXZ=00632700
 

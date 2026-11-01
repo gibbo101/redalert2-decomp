@@ -231,7 +231,7 @@ public:
     void Unknown_00631ED0();                            // 0x00631ED0 builds the radar's table and surfaces (load path)
     void Unknown_00631D40();                            // 0x00631D40 rebuilds the tracking table and refits the radar
     void Unknown_00630A00();                            // 0x00630A00 rebuilds the radar surfaces
-    Rect Unknown_00630B70(Rect const &area, Rect const &clip, bool flag);   // 0x00630B70 builds the radar image (+0x121C)
+    Rect Unknown_00630B70(Rect const &area, Rect &clip, bool flag);   // 0x00630B70 builds the radar image (+0x121C)
     // Fills the background colours (+0x1238) of the cells inside an area of the
     // radar's cell grid (0x00631250; TibSun's Fill_In_Background).
     void Unknown_00631250(Rect const &cell_rect, Rect const &update_rect);
