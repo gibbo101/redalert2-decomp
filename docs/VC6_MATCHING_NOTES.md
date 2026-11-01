@@ -881,3 +881,11 @@ copies exactly.
   tables as extra instructions, so judge such functions by their code lines. diff_candidate's default length is the
   inventory row: pass `--length` with the true extent before calling a function a miss (Loco276's "Ratio member breaks
   0x6F0530 (76.19)" was only a short bound; with --length 255 it is exact).
+
+## Locomotor shapes (Teleport464, 2026-11-01)
+
+- Two vtable calls in an if/else (`if (x != zero) slot59(x); else slot59(Object_Coord(LinkedTo));`) get the
+  original's tail-merged `push; call [vtbl]`; a ternary argument does not.
+- Named locals fix frame layout in long locomotor bodies: `CoordStruct target = center + offset;` before a member
+  store, `Cell where = Coord_Cell(...); CellClass *cell = &Map[where];`, separately scoped pointer locals per block.
+- The FootClass flag idiom `bool foot; if (o) foot = o->flag; ...` reproduces the byte spill `mov [esp+N], al`.
