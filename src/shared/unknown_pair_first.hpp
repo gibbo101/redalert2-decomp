@@ -55,6 +55,23 @@ struct UnknownVoxelDrawState {
     Vector3 unknown_28[8];              // +0x28 transformed box corners
 };
 
+class Surface;
+class UnknownPairFirst;
+
+// A voxel shadow record (0x48 bytes; the 64 at 0x00AF3408, constructed by
+// 0x00716F10): the library, section and frame, four transformed shadow
+// corners, an optional surface whose pixels mask the shadow and its offset
+// (fields from 0x00719C10; names are hypotheses).
+struct UnknownVoxelRecord48 {
+    UnknownPairFirst *unknown_00;       // +0x00 the library (hypothesis)
+    int unknown_04;                     // +0x04 section
+    int unknown_08;                     // +0x08 frame
+    Vector3 Points[4];                  // +0x0C shadow corners
+    Surface *unknown_3c;                // +0x3C mask surface (0 = none)
+    int unknown_40;                     // +0x40 mask left
+    int unknown_44;                     // +0x44 mask top
+};
+
 class UnknownPairFirst {
 public:
     UnknownPairFirst();                                     // 0x00719060
@@ -67,6 +84,7 @@ public:
     Vector3 unknown_719890(int section, int arg2);          // 0x00719890 (bounds center)
     int unknown_719920();                                   // 0x00719920 (memory size)
     void unknown_719940(UnknownVoxelDrawState *state, Vector3 const *origin);  // 0x00719940 (draws a section)
+    void unknown_719c10(UnknownVoxelRecord48 *record, Vector3 const *origin);  // 0x00719C10 (draws a shadow)
     void unknown_719f60();                                  // 0x00719F60 (sets the box corners)
 
     bool unknown_00;                    // +0x00 load failed (hypothesis)
