@@ -13,7 +13,7 @@ bool CellClass::unknown_47a670() const
     if (unknown_11c <= 4 && unknown_ec != 2 && unknown_ec != 3 && unknown_ec != 8 && unknown_ec != 6
         && (OverlayIndex == -1 || OverlayTypes[OverlayIndex]->IsVeins)) {
         for (int facing = 0; facing < 8; facing += 2) {
-            CellClass const &cell = Adjacent_Cell(facing);
+            CellClass const &cell = ((CellClass *)this)->Adjacent_Cell(facing);
             if ((cell.unknown_11c > 4 && unknown_11c == 0 && (cell.OverlayIndex == -1 || !OverlayTypes[cell.OverlayIndex]->IsVeins))
                 || cell.unknown_ec == 2 || cell.unknown_ec == 3 || cell.unknown_ec == 8 || cell.unknown_ec == 6
                 || (cell.OverlayIndex != -1 && !OverlayTypes[cell.OverlayIndex]->IsVeins)) {

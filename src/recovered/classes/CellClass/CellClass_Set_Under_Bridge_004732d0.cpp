@@ -63,7 +63,7 @@ void CellClass::Set_Under_Bridge(unsigned facing, bool state)
     CellClass *across3 = &across2->Adjacent_Cell(facing);
     across3->IsBridgeSurface = state;
 
-    CellClass *back = &Adjacent_Cell((facing - 4) & 7);
+    CellClass *back = (CellClass *)&((CellClass const *)this)->Adjacent_Cell((facing - 4) & 7);
     back->unknown_2c = state ? this : 0;
     back->IsUnderBridge = state;
     back->IsBridgeTraversable = state;

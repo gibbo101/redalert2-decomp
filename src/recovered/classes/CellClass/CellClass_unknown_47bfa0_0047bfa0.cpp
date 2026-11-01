@@ -11,8 +11,7 @@ int CellClass::unknown_47bfa0(int house)
     }
     int bits = 0;
     for (int facing = 0; facing < 8; facing++) {
-        CellClass &cell = Adjacent_Cell(facing);
-        if (cell.unknown_dc & bit) {
+        if (Adjacent_Cell(facing).unknown_dc & bit) {
             bits |= 1 << facing;
         }
     }

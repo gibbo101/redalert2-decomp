@@ -8,6 +8,6 @@ CellClass &CellClass::Adjacent_Cell(unsigned facing)
     if (facing >= 8) {
         return *this;
     }
-    Cell cell = MapCoords;
-    return Map[Adjacent_Cell(cell, facing)];
+    Cell newcell = Adjacent_Cell(Fetch_CellID(), facing);
+    return Map[newcell];
 }
