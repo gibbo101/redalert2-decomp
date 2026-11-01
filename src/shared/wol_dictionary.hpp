@@ -68,9 +68,7 @@ public:
         *value = &node->Value;
         return true;
     }
-#ifdef WOL_DICTIONARY_DECLARE_GET_VALUE
-    // Declared only where WOL_DICTIONARY_DECLARE_GET_VALUE is defined (the PCX image cache): a new member
-    // here renumbers the compiler labels of the fragile Refresh_Wonline_Players 0x0073FEE0.
+    // Copies the value for PCX cache and Wonline buddy-status callers.
     // wlib Dictionary::getValue(key, value): copies the value out when the key is present.
     bool Get_Value(K const &key, V &value) const
     {
@@ -79,7 +77,7 @@ public:
         if (found && pointer) value = *pointer;
         return found;
     }
-#endif
+
     // wlib Dictionary::remove(key, value) (inline; WolChannelNameSet's out-of-line copy is
     // Remove_007675e0).
     bool Remove_Entry(K const &key, V *old_value)
