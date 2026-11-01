@@ -92,7 +92,7 @@ public:
     // A new system of type at coord for owner, aimed at target or
     // target_coord (argument names hypotheses; AircraftClass slot 86).
     ParticleSystemClass(ParticleSystemTypeClass *type, CoordStruct const &coord, AbstractClass *target,
-                        TechnoClass *owner, CoordStruct const &target_coord);   // 0x0060AA70
+                        ObjectClass *owner, CoordStruct const &target_coord);   // 0x0060AA70
     ParticleSystemClass();                                              // 0x0060AD30
     ParticleSystemClass(NoInitClass const &noinit) : ObjectClass(noinit) {}   // inline (Load)
     virtual ~ParticleSystemClass();                                     // 0x0060AE80

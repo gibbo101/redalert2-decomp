@@ -4,8 +4,8 @@
     "id": "population-1659",
     "inventory_sha256": "0e347aa084b49cbd9c4c51d5ffd0f8e51a85856605687be820fbb86f133dd3f1",
     "gaps_sha256": "37b33e9230f88e1bdafca3941c5789a5c1379eb27a4167a27e49c8a4ccc2e5ee",
-    "historical_population_sha256": "1c137a6d09c2a56817153eded9dcabe4762ab7e075ec3b0f3ad1b0da9d5bb17e",
-    "historical_acceptance_sha256": "4f100a6705c263171cc71374354acb993fa434371924f1dc47e3355e18cd26e6"
+    "historical_population_sha256": "5be2e6c9c87e5e7dbe4fe660c03685abd2767391a98d768b3bc6a6fb27abf5f6",
+    "historical_acceptance_sha256": "4c73f2ea78c571f7f6a20ce028844f7381888f98b291c2999623d7570d8d3d09"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3386,7 +3386,7 @@
     "?QueryInterface@?$CComObject@VCDownloadEventSink@@@ATL@@UAGJABUGUID@@PAPAX@Z": 7760672,
     "?Create@WDTState@@SI?AV?$rc_ptr@VWDTState@@@@PAE@Z": 7519920,
     "?Is_Valid@WDTState@@QBE_NXZ": 7521168,
-    "??0ParticleSystemClass@@QAE@PAVParticleSystemTypeClass@@ABUCoordStruct@@PAVAbstractClass@@PAVTechnoClass@@1@Z": 6335088,
+    "??0ParticleSystemClass@@QAE@PAVParticleSystemTypeClass@@ABUCoordStruct@@PAVAbstractClass@@PAVObjectClass@@1@Z": 6335088,
     "?AI@WaveClass@@UAEXXZ": 7483936,
     "?AI@ObjectClass@@UAEXXZ": 6105072,
     "?Write_INI@InfantryClass@@SIXAAVCCINIClass@@@Z": 5270896,

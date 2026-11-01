@@ -4,8 +4,8 @@
     "id": "population-2446",
     "inventory_sha256": "e57061db39fdf3ff62757f47efef43d1269e5633cf3f92421266ea1be1aa941f",
     "gaps_sha256": "70fc2ae6328505a45f7031ef04c70d5a722dd707fff85a35784f2f9ecb8a809a",
-    "historical_population_sha256": "514420927f20783dc2f22064a6a4533cab81d55bdc9358b52c9dd7d637cfd89e",
-    "historical_acceptance_sha256": "d70186239470ccce4deef1da1c168194e468d7e0b40a6db9d33c647c5553f3de"
+    "historical_population_sha256": "1db8bd0b12a6de62244dc3702190a69af6d2464500766630edebff9f9223a26d",
+    "historical_acceptance_sha256": "2b427ee2957cfe69454fdba7574d58f9a349b7abe769a71cbb5c669663cbe46a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4292,7 +4292,7 @@
     "?QueryInterface@?$CComObject@VCNetUtilEventSink@@@ATL@@UAGJABUGUID@@PAPAX@Z": 7757056,
     "?QueryInterface@?$CComObject@VCDownloadEventSink@@@ATL@@UAGJABUGUID@@PAPAX@Z": 7760672,
     "?Create@WDTState@@SI?AV?$rc_ptr@VWDTState@@@@PAE@Z": 7519920,
-    "??0ParticleSystemClass@@QAE@PAVParticleSystemTypeClass@@ABUCoordStruct@@PAVAbstractClass@@PAVTechnoClass@@1@Z": 6335088,
+    "??0ParticleSystemClass@@QAE@PAVParticleSystemTypeClass@@ABUCoordStruct@@PAVAbstractClass@@PAVObjectClass@@1@Z": 6335088,
     "?unknown_slot53@WaveClass@@UAE_NPBUCoordStruct@@H@Z": 7480336,
     "?unknown_slot67@WaveClass@@UAEXHH@Z": 7480624,
     "?AI@WaveClass@@UAEXXZ": 7483936,

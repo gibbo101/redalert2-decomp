@@ -1,6 +1,6 @@
-// ParticleSystemClass::ParticleSystemClass(ParticleSystemTypeClass *type, CoordStruct const &coord, AbstractClass *target, TechnoClass *owner, CoordStruct const &target_coord) (0x0060AA70)
+// ParticleSystemClass::ParticleSystemClass(ParticleSystemTypeClass *type, CoordStruct const &coord, AbstractClass *target, ObjectClass *owner, CoordStruct const &target_coord) (0x0060AA70)
 // A new system of a type at a coordinate, aimed at a target object (or a
-// plain coordinate), optionally owned by a techno; registered in the system
+// plain coordinate), optionally owned by an object; registered in the system
 // list and the 0x00AC0D60 object list.
 #include "shared/particle_system.hpp"
 #include "shared/map_cell_view.hpp"
@@ -20,7 +20,7 @@
 // @ref ??_7ParticleSystemClass@@6BINoticeSource@@@=007a7f60
 
 ParticleSystemClass::ParticleSystemClass(ParticleSystemTypeClass *type, CoordStruct const &coord, AbstractClass *target,
-                                         TechnoClass *owner, CoordStruct const &target_coord) :
+                                         ObjectClass *owner, CoordStruct const &target_coord) :
     Class(type),
     unknown_9c(0, 0, 0),
     TargetCoord(unknown_geometry_l),

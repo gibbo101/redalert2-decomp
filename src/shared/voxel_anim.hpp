@@ -7,11 +7,11 @@
 // 0x0070CE40, Load 0x0070DDB0 and Compute_CRC 0x0070DE70; names are
 // hypotheses):
 //   +0x000  ObjectClass (0x98)
-//   +0x098  BounceClass Bounce (0x50)
+//   +0x098  BounceClass base (0x50; original RTTI)
 //   +0x0E8  int unknown_e8 (-1)
 //   +0x0EC  VoxelAnimTypeClass *Class (swizzled; Class_Of returns it)
 //   +0x0F0  ObjectClass *unknown_f0 (swizzled; ended by the destructor)
-//   +0x0F4  ObjectClass *unknown_f4 (swizzled; the constructor's third argument)
+//   +0x0F4  HouseClass *unknown_f4 (swizzled; the constructor's third argument)
 //   +0x0F8  bool unknown_f8
 //   +0x0FC, +0x110  UnknownAudioController
 //   +0x124  bool unknown_124, +0x128 int unknown_128 (the type's +0x26C),
@@ -33,11 +33,12 @@ extern "C" GUID const CLSID_VoxelAnimClass;   // 0x007A1BC0
 // A flag (0x00A40958; also shared/ms_message_box.hpp): only while it is set
 // does the destructor take the object off the map (slot 52).
 
-class VoxelAnimClass : public ObjectClass {
+class VoxelAnimClass : public ObjectClass, public BounceClass {
 public:
+    using ObjectClass::Coord;
     VoxelAnimClass();                                                   // 0x0070CD20
     VoxelAnimClass(VoxelAnimTypeClass *type, CoordStruct const &coord, HouseClass *house);   // 0x0070C800
-    VoxelAnimClass(NoInitClass const &noinit) : ObjectClass(noinit), Bounce(noinit) {}   // inline (Load)
+    VoxelAnimClass(NoInitClass const &noinit) : ObjectClass(noinit), BounceClass(noinit) {}   // inline (Load)
     virtual ~VoxelAnimClass();                                          // 0x0070CE40
 
     virtual HRESULT __stdcall GetClassID(GUID *clsid)                   // 0x0070DF10 slot 3 (inline)
@@ -60,11 +61,10 @@ public:
     virtual void AI();                                                  // 0x0070D380 slot 23
     static void __cdecl Clear_All();                                    // 0x0070D350 (deletes every voxel animation; name hypothesis)
 
-    BounceClass Bounce;                         // +0x098
     int unknown_e8;                             // +0x0E8
     VoxelAnimTypeClass *Class;                  // +0x0EC
     ObjectClass *unknown_f0;                    // +0x0F0
-    ObjectClass *unknown_f4;                    // +0x0F4
+    HouseClass *unknown_f4;                    // +0x0F4
     bool unknown_f8;                            // +0x0F8
     UnknownAudioController unknown_fc;          // +0x0FC
     UnknownAudioController unknown_110;         // +0x110
