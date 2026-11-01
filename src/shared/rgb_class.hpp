@@ -40,6 +40,11 @@ public:
     int Difference(RGBClass const &other) const; // 0x0063CFB0 weighted absolute difference
 
     // Sets the three channels (an out-of-line copy at 0x004F6BC0, after House.cpp).
+#ifdef RGB_DECLARE_BRIGHTEN
+    // This colour as `color` brightened by `factor` (0x0063CDF0; TibSun RGBClass::Set(color, factor);
+    // guarded: this header is in Refresh_Wonline_Players 0x0073FEE0's closure).
+    void Set(RGBClass const &color, float factor);
+#endif
     void Set(unsigned char red, unsigned char green, unsigned char blue)
     {
         Red = red;

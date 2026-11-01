@@ -47,6 +47,12 @@ struct IsoTileCellStruct {
     char unknown_28;                                    // +0x28 height (IsometricTileClass slot 71)
     char unknown_29;
     char unknown_2a;                                    // +0x2A (0x0052B6F0)
+    unsigned char LowRed;                               // +0x2B the preview colours (TibSun LowColor/HighColor)
+    unsigned char LowGreen;
+    unsigned char LowBlue;
+    unsigned char HighRed;                              // +0x2E
+    unsigned char HighGreen;
+    unsigned char HighBlue;
 };
 
 class IsometricTileTypeClass : public ObjectTypeClass {

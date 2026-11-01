@@ -569,7 +569,10 @@ class Audit:
         references = self.merged_references(candidates)
         bases = {references.get(name, -1) - value for value, name in defined}
         if len(bases) != 1:
-            return False
+            # The unit's constants come from different original places (a
+            # function-local static beside header constants in one .rdata):
+            # verify each bound symbol at its own address instead.
+            return self.relocated_data_duplicate(coff, index, section, candidates)
         address = bases.pop()
         if address < self.base:
             return False

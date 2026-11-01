@@ -1,6 +1,7 @@
 #define ISOMETRIC_TILE_TYPE_DECLARE_STATICS
 // CellClass::Clear_Icon for Load_Tiles (0x0052B2E0; guarded in shared/cell.hpp).
 #define CELL_DECLARE_CLEAR_ICON
+#define RGB_DECLARE_BRIGHTEN
 // The unit implements the vector accessors (its Load 0x0052E1C0 and slot 39 use them): the
 // first source of the unit that includes vector_class.hpp defines them.
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
