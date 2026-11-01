@@ -66,6 +66,10 @@ public:
     void Add_Spread_Cell(Cell const &cell);                     // 0x006E9DD0
     void Add_Growth_Cell(Cell const &cell);                     // 0x006EA880
     static void __fastcall Clear_Spread_Cell(Cell const &cell); // 0x006E9D90 (in every type)
+    // Drop this type's queue and tables (TibSun Clear_Spread/Clear_Growth; no out-of-line copy:
+    // expanded by Load 0x006E9160 and the all-type loops 0x006E9670/0x006EA130).
+    inline void Clear_Spread();
+    inline void Clear_Growth();
 
     // Fields merged with build/class-work/Cell/shared/tiberium.hpp's view
     // (ArrayIndex, Value, Image, NumFrames, NumImages; names hypotheses).
@@ -94,5 +98,41 @@ public:
     UnknownVeinNode *GrowthData;                    // +0x118
     CDTimerClass<FrameTimerClass> GrowthTimer;      // +0x11C
 };
+
+inline void TiberiumClass::Clear_Spread()
+{
+    if (SpreadQueue != 0) {
+        SpreadQueue->Clear();
+        delete SpreadQueue;
+        SpreadQueue = 0;
+    }
+    if (SpreadData != 0) {
+        delete[] SpreadData;
+        SpreadData = 0;
+    }
+    if (SpreadMap != 0) {
+        delete[] SpreadMap;
+        SpreadMap = 0;
+    }
+    SpreadCount = 0;
+}
+
+inline void TiberiumClass::Clear_Growth()
+{
+    if (GrowthQueue != 0) {
+        GrowthQueue->Clear();
+        delete GrowthQueue;
+        GrowthQueue = 0;
+    }
+    if (GrowthData != 0) {
+        delete[] GrowthData;
+        GrowthData = 0;
+    }
+    if (GrowthMap != 0) {
+        delete[] GrowthMap;
+        GrowthMap = 0;
+    }
+    GrowthCount = 0;
+}
 
 #endif

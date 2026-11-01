@@ -91,6 +91,7 @@ public:
         }
     }
     float Key_At(int index) const { return Array[index]->Key; }
+    int Active_Count() const { return Count; }
     // Takes the node at the item's cell out of the heap (inlined by
     // 0x00712300).
     // Each repair is followed by a check that faults when a slot points
