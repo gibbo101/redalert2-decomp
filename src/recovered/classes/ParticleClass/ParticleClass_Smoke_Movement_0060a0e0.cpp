@@ -14,8 +14,8 @@ void ParticleClass::unknown_func_60a0e0()
         next.X += offset.X; next.Y += offset.Y;
     }
     if (frame & 1) {
-        next.X = (int)(next.X + unknown_bc);
-        next.Y = (int)(next.Y + unknown_c0);
+        next.X = (int)(next.X + GasVelocity.X);
+        next.Y = (int)(next.Y + GasVelocity.Y);
         int height = Map.Unknown_0055A280(next);
         if (next.Z > height + 5) {
             next.Z -= MIN(2, next.Z - height - 5);

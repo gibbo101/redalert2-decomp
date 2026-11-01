@@ -8,9 +8,9 @@
 //   +0x098  ParticleTypeClass *Class (swizzled; Class_Of returns it)
 //   +0x09C  RGBClass Color (from the type's colour, or a random blend)
 //   +0x0A0  ParticleColorState (16 bytes: index, unknown word, double fraction)
-//   +0x0B0..+0x0C0  movement components
-//   +0x0C4  float unknown_c4 (-1)
-//   +0x0C8, +0x0CC, +0x0D0  int (0)
+//   +0x0B0  CoordStruct step per move
+//   +0x0BC  Vector3 GasVelocity (0,0,-1)
+//   +0x0C8  CoordStruct UnusedCoord1 (0,0,0)
 //   +0x0D4  float Velocity (the type's +0x2CC; hypothesis)
 //   +0x0D8  CoordStruct unknown_d8   the constructor's second coordinate
 //   +0x0E4  CoordStruct unknown_e4   the first coordinate
@@ -157,12 +157,8 @@ public:
     RGBClass Color;                         // +0x09C
     ParticleColorState ColorState;           // +0x0A0
     CoordStruct unknown_b0;                 // +0x0B0 step per move (behaviours 0 and 1)
-    float unknown_bc;                       // +0x0BC X drift (behaviour 0, every other frame)
-    float unknown_c0;                       // +0x0C0 Y drift
-    float unknown_c4;                       // +0x0C4
-    int unknown_c8;                         // +0x0C8
-    int unknown_cc;                         // +0x0CC
-    int unknown_d0;                         // +0x0D0
+    Vector3 GasVelocity;                   // +0x0BC velocity, fields from608440/608980
+    CoordStruct UnusedCoord1;               // +0x0C8 coordinate, reference-supported name
     float Velocity;                         // +0x0D4
     CoordStruct unknown_d8;                 // +0x0D8
     CoordStruct unknown_e4;                 // +0x0E4
