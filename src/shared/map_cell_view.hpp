@@ -20,6 +20,7 @@ inline CellClass &Map_Cell(Cell const &cell)
 // The isometric tile types (a view of shared/isometric_tile_type.hpp, which
 // these units cannot include beside it); only the flags at +0x2B0, +0x2D5
 // and +0x2D6 are known.
+#ifndef RA2_SHARED_ISOMETRIC_TILE_TYPE_HPP
 class IsometricTileTypeClass {
 public:
     char unknown_000[0x2B0];
@@ -35,6 +36,7 @@ public:
     void unknown_func_52c230(LightConvertClass *drawer, int arg2, Surface *surface, int x, int y, Rect rect,
         int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, int arg13, int arg14);
 };
+#endif
 extern DynamicVectorClass<IsometricTileTypeClass *> IsoTileTypes;
 
 // A game flag the destructors test before ObjectClass slot 52 (0x00A40958;
