@@ -10,6 +10,17 @@
 class FootClass;
 class ObjectClass;
 
+// A node of the subzone search (16 bytes; the +0x64 pool holds 10000; Tiberian Sun's
+// AStarHierarchicalNode).
+struct UnknownPathHierNode {
+    int ParentIndex;                        // +0x00 (the pool index of the parent, -1 at the start)
+    int SubzoneID;                          // +0x04
+    float Score;                            // +0x08
+    int Depth;                              // +0x0C
+
+    float Get_Score() const { return Score; }
+};
+
 // A 0x14-byte block that owns an array at +0x08 (freed first); the
 // constructor 0x00427FB0 builds two (+0x14 with 0x10000 entries, +0x68 with 0x2710).
 struct UnknownPathEstimatorBlock {
@@ -36,6 +47,66 @@ struct UnknownPathEstimatorBlock {
             ((int *)unknown_08)[index] = 0;
         }
         unknown_00 = 0;
+    }
+    // The +0x68 block is the subzone search's priority queue (Tiberian Sun's PriorityQueueClass:
+    // unknown_00 the count, unknown_04 the size, unknown_08 the heap from slot 1, unknown_0c/unknown_10
+    // the highest and lowest node addresses queued).
+    UnknownPathHierNode **Hier_Heap() const { return (UnknownPathHierNode **)unknown_08; }
+    bool Insert(UnknownPathHierNode &node)
+    {
+        unsigned index = unknown_00 + 1;
+        unsigned parent = index >> 1;
+        float score = node.Score;
+        if (index >= (unsigned)unknown_04) {
+            return false;
+        }
+        while (index > 1) {
+            if (Hier_Heap()[parent]->Score <= score) {
+                break;
+            }
+            Hier_Heap()[index] = Hier_Heap()[parent];
+            index = parent;
+            parent = index >> 1;
+        }
+        Hier_Heap()[index] = &node;
+        unknown_00++;
+        if ((unsigned)&node > (unsigned)unknown_0c) {
+            unknown_0c = (int)&node;
+        }
+        if ((unsigned)&node < (unsigned)unknown_10) {
+            unknown_10 = (int)&node;
+        }
+        return true;
+    }
+    UnknownPathHierNode *Extract_Min()
+    {
+        if (unknown_00 == 0) {
+            return 0;
+        }
+        UnknownPathHierNode *min = Hier_Heap()[1];
+        Hier_Heap()[1] = Hier_Heap()[unknown_00];
+        Hier_Heap()[unknown_00] = 0;
+        unknown_00--;
+        Heapify(1);
+        return min;
+    }
+    // Out-of-line copy 0x0042B560.
+    void Heapify(int index)
+    {
+        int left = index << 1;
+        int right = (index << 1) + 1;
+        int smallest = left <= unknown_00 && Hier_Heap()[left]->Get_Score() < Hier_Heap()[index]->Get_Score() ? left : index;
+        smallest = right <= unknown_00 && Hier_Heap()[right]->Get_Score() < Hier_Heap()[smallest]->Get_Score() ? right : smallest;
+        while (smallest != index) {
+            UnknownPathHierNode *temp = Hier_Heap()[index];
+            Hier_Heap()[index] = Hier_Heap()[smallest];
+            Hier_Heap()[smallest] = temp;
+            index = smallest;
+            left = index << 1;
+            right = (index << 1) + 1;
+            smallest = left <= unknown_00 && Hier_Heap()[left]->Get_Score() < Hier_Heap()[index]->Get_Score() ? left : index;
+            smallest = right <= unknown_00 && Hier_Heap()[right]->Get_Score() < Hier_Heap()[smallest]->Get_Score() ? right : smallest;
+        }
     }
 };
 

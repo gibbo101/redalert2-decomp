@@ -1,4 +1,6 @@
 #define COM_PTR_IMPLEMENT_RELEASE
+// Unknown_00429B60 calls MapClass::Unknown_00567D20 (shared/map_view.hpp).
+#define MAP_VIEW_DECLARE_REGION_THREAT
 // Header-static dynamic initializers of the unit at 0x00426E70: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x00426E70-0x00427051); the other
 // drafts of this plan are emitted by these includes.

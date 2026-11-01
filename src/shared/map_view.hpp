@@ -133,6 +133,12 @@ public:
     int Unknown_0054FAB0(Cell const &cell);                               // 0x0054FAB0 (shared/map.hpp)
     // Lists the layer subzones around the cell's (hypothesis); true sends the caller to 0x0042A840 (0x00565EB0).
     bool Unknown_00565EB0(CellClass &cell, int layer, DynamicVectorClass<unsigned short> *list, int arg4);
+#ifdef MAP_VIEW_DECLARE_REGION_THREAT
+    // The threat between two subzones of a layer for a house (0x00567D20; TS Region_Threat). Behind a
+    // guard (the path estimator unit 0x00426E70 defines it): a new declaration here renumbers
+    // Refresh_Wonline_Players 0x0073FEE0's $L labels.
+    int Unknown_00567D20(HouseClass *house, int layer, int from, int to);
+#endif
 
     // The map's data the other units read, at its shared/map.hpp offsets
     // (the light class has no other members, so the gap is padding).
