@@ -6,6 +6,7 @@
 // redraw, and grows the redraw rectangle +0x1208 by the radar buttons that
 // need drawing.
 #include "shared/radar.hpp"
+#include "shared/techno.hpp"
 #include "shared/sidebar.hpp"
 #include "shared/palette.hpp"
 // @ref ?unknown_buffer_ac0ff0@@3PAXA=00ac0ff0
