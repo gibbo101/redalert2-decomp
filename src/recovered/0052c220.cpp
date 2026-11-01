@@ -1,21 +1,5 @@
-// 0x0052c220: function not yet identified
-//
-// Body: 1 bytes (frozen inventory bound).
-// Referenced from 1 site (data).
-// Ghidra prototype: void FUN_0052c220(void)
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
-
-namespace seed_0052c220 {
-
-void  FUN_0052c220(void)
-{
-    return;
-}
-
-}  // namespace seed_0052c220
+// IsometricTileTypeClass::Shadow_Caster_List static exit thunk (0x0052C220)
+// Compiler-emitted atexit destructor of the function-local list in
+// IsometricTileTypeClass_Shadow_Caster_List_0052b8b0.cpp; no source of its own.
+#include "shared/isometric_tile_type.hpp"
+// @symbol _$E70

@@ -129,6 +129,9 @@ public:
     // rest (all of them when skipping the count; random maps keep the RMG ones) (0x0052B2E0;
     // TibSun Load_Tiles).
     static void __fastcall Load_Tiles(bool skip_iteration, bool is_random);
+    // The cells this cliff tile's shadow darkens, relative to the tile and ending in the
+    // 0x7FFF end marker, or 0 for a tile that casts none (0x0052B8B0; TibSun Shadow_Caster_List).
+    Cell const *Shadow_Caster_List() const;
     void unknown_func_52c230(LightConvertClass *drawer, int arg2, Surface *surface, int x, int y, Rect rect,
         int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, int arg13, int arg14);
 
