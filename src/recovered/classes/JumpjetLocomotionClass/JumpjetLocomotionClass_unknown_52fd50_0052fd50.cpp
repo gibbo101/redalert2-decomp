@@ -18,7 +18,7 @@ extern double const unknown_facing_origin_79b630;
 // @ref ?unknown_facing_origin_79b630@@3NB=0079b630
 // @ref ?Fast_Atan2@@YAMNN@Z=004ba600
 // @ref ?Unknown_004132E0@UnknownTracker839EA0@@QAE_NPAVFootClass@@@Z=004132e0
-// @ref ?Unknown_00413600@UnknownTracker839EA0@@QAEXPAVFootClass@@VCell@@1@Z=00413600
+// @ref ?Unknown_00413600@UnknownTracker839EA0@@QAEXPAVTechnoClass@@VCell@@1@Z=00413600
 // @ref ?unknown_tracker_839ea0@@3UUnknownTracker839EA0@@A=00839ea0
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 

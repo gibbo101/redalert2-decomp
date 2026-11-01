@@ -4,8 +4,8 @@
     "id": "population-3422",
     "inventory_sha256": "1ac37f2cb3f1e346f235680f545b4a56dfa6fe0ab7327c33b28a632a19b4e40a",
     "gaps_sha256": "fa8d43857411b445b6dd34f398b1471846eb6afa56ce4d0a2b5ea32bcdf1a501",
-    "historical_population_sha256": "f8fde5dd6db9e62a5e62c0b43a61fe1623a986d9a4b1615b2d15c98dfa865a37",
-    "historical_acceptance_sha256": "91d3ed979232ed2270475cf64798d4d83dd8fbd450933112029ce9c8a3e58ae9"
+    "historical_population_sha256": "1e64fa725a8c3007e8ffca302c0f7cb468c6830917190cd9a09c2681be630639",
+    "historical_acceptance_sha256": "ffc96ed9fc1bae022c44c987270c121eebac34b40d8e099fe3024a28f0e13180"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4356,7 +4356,7 @@
     "?Unknown_00406070@UnknownList14BC@@QAEXXZ": 4218992,
     "?Unknown_00412390@@YIJPBD@Z": 4268944,
     "?Unknown_004131E0@UnknownTracker839EA0@@QAEXPAVFootClass@@@Z": 4272608,
-    "?Unknown_00413310@UnknownTracker839EA0@@QAEXPAVFootClass@@@Z": 4272912,
+    "?Unknown_00413310@UnknownTracker839EA0@@QAEXPAVTechnoClass@@@Z": 4272912,
     "?Unknown_00426C60@@YGXPAPAUIUnknown@@ABUGUID@@PAPAX@Z": 4353120,
     "?Unknown_0042AA30@UnknownPathEstimator@@QAEHABVCell@@0PAVFootClass@@_N2H@Z": 4368944,
     "?Unknown_00435FB0@BombClass@@QAEXXZ": 4415408,
@@ -9639,7 +9639,7 @@
     "?Get_PKey@INIClass@@QBE?AVPKey@@_N@Z": 5309296,
     "?Process@JumpjetLocomotionClass@@UAG_NXZ": 5436352,
     "?Stop_Moving@JumpjetLocomotionClass@@UAGXXZ": 5437792,
-    "?Unknown_00413600@UnknownTracker839EA0@@QAEXPAVFootClass@@VCell@@1@Z": 4273664,
+    "?Unknown_00413600@UnknownTracker839EA0@@QAEXPAVTechnoClass@@VCell@@1@Z": 4273664,
     "?Unknown_004132E0@UnknownTracker839EA0@@QAE_NPAVFootClass@@@Z": 4272864,
     "?Mark_All_Occupation_Bits@JumpjetLocomotionClass@@UAGXH@Z": 5444176,
     "?Head_To_Coord@JumpjetLocomotionClass@@UAG?AUCoordStruct@@XZ": 5444304,

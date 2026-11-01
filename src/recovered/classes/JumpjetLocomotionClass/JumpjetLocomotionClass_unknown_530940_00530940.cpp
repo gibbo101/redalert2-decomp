@@ -6,7 +6,7 @@
 // object notified (0x117C).
 #include "shared/jumpjet_locomotion.hpp"
 #include "shared/cell.hpp"
-// @ref ?Unknown_00413310@UnknownTracker839EA0@@QAEXPAVFootClass@@@Z=00413310
+// @ref ?Unknown_00413310@UnknownTracker839EA0@@QAEXPAVTechnoClass@@@Z=00413310
 // @ref ?unknown_tracker_839ea0@@3UUnknownTracker839EA0@@A=00839ea0
 
 void JumpjetLocomotionClass::unknown_530940()

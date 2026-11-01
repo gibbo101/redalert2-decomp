@@ -17,7 +17,7 @@
 // @ref ?unknown_a40774@@3HA=00a40774
 // @ref ?Unknown_00405FE0@UnknownAudioController@@QAEXXZ=00405fe0
 // @ref ?unknown_tracker_839ea0@@3UUnknownTracker839EA0@@A=00839ea0
-// @ref ?Unknown_00413310@UnknownTracker839EA0@@QAEXPAVFootClass@@@Z=00413310
+// @ref ?Unknown_00413310@UnknownTracker839EA0@@QAEXPAVTechnoClass@@@Z=00413310
 // @ref ?unknown_slot52@TechnoClass@@UAE_NXZ=006c4480
 
 bool FootClass::unknown_slot52()

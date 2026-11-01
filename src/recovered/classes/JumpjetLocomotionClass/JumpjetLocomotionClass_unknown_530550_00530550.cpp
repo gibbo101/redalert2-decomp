@@ -15,7 +15,7 @@
 #include "shared/infantry.hpp"
 // @ref ?unknown_coord_a6e3e0@@3UCoordStruct@@A=00a6e3e0
 // @ref ?Unknown_004132E0@UnknownTracker839EA0@@QAE_NPAVFootClass@@@Z=004132e0
-// @ref ?Unknown_00413310@UnknownTracker839EA0@@QAEXPAVFootClass@@@Z=00413310
+// @ref ?Unknown_00413310@UnknownTracker839EA0@@QAEXPAVTechnoClass@@@Z=00413310
 // @ref ?unknown_tracker_839ea0@@3UUnknownTracker839EA0@@A=00839ea0
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ?Unknown_004763D0@@YIHABUCoordStruct@@@Z=004763d0
