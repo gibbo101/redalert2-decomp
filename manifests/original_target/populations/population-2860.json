@@ -4,8 +4,8 @@
     "id": "population-2860",
     "inventory_sha256": "2289f6c23f0dde0c2a35fbdd09bf851c1a00708947d2d9ff1c0e0282eda5c41f",
     "gaps_sha256": "b6494d49f171d9f3c608796af150501528e5d7bbc362e16a8beee1565cfd5569",
-    "historical_population_sha256": "50ca7a3be573076f9136ce85e25d71d8f4304d5a16f3c8d11515108da2a3fa35",
-    "historical_acceptance_sha256": "15a14acfaf76737d431eab0eebfef64e80029e52079e5024b6839569a29bf314",
+    "historical_population_sha256": "8a7eb63443c057f877eeb60b5609cdbf5f62205b08061046216a9bd21d3ace16",
+    "historical_acceptance_sha256": "728749bdcb93ef6ad37cea2e327ead67665ae99600289394242225f12c00f7e8",
     "separate_units": true
   },
   "references": {
@@ -3103,7 +3103,7 @@
     "?Commit@CStreamClass@@UAGJK@Z": 4804288,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Next@AudioListIterator@@QAEPAUAudioListNode@@XZ": 4208080,
     "?Load@VoxelAnimClass@@UAGJPAUIStream@@@Z": 7396784,

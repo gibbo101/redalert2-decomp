@@ -98,7 +98,7 @@ extern DynamicVectorClass<TechnoClass *> unknown_list_a40c20;
 class AnimTypeClass;
 class AnimClass : public ObjectClass {
 public:
-    AnimClass(AnimTypeClass *type, CoordStruct const &coord, int loop_delay, int loops, int flags, int zadjust);   // 0x00420110 (as shared/anim.hpp)
+    AnimClass(AnimTypeClass const *type, CoordStruct const &coord, int loop_delay, int loops, int flags, int zadjust);   // 0x00420110 (as shared/anim.hpp)
     virtual HRESULT __stdcall GetClassID(GUID *classid);
     virtual HRESULT __stdcall Load(IStream *stream);
     virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);

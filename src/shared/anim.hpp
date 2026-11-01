@@ -67,7 +67,7 @@ extern "C" GUID const CLSID_AnimClass;      // 0x007A1BE0
 
 class AnimClass : public ObjectClass, public StageClass {
 public:
-    AnimClass(AnimTypeClass *type, CoordStruct const &coord, int loop_delay, int loops, int flags, int zadjust);   // 0x00420110
+    AnimClass(AnimTypeClass const *type, CoordStruct const &coord, int loop_delay, int loops, int flags, int zadjust);   // 0x00420110
     AnimClass();                                                        // 0x004208E0
     AnimClass(NoInitClass const &noinit) :                              // inline (Load)
         ObjectClass(noinit), StageClass(noinit), unknown_108(noinit), unknown_138(noinit), unknown_148(noinit) {}

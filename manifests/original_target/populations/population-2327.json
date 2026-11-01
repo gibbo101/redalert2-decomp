@@ -4,8 +4,8 @@
     "id": "population-2327",
     "inventory_sha256": "e9898513284e4d50b05b1d8549bf092f80e613ca1fb75f7b71cf52f24d07c666",
     "gaps_sha256": "dbe3e4c41009a8a2070a2e9adf74813d438f1078d478562657bc683c7f72cdb1",
-    "historical_population_sha256": "ce1a923cb0024c0813b762953d24255b4f431f1d79deef82a10ae13fb0d7e7bd",
-    "historical_acceptance_sha256": "d030b5112acbecbd13395e98dc0cbfd4db24872c92db367c1def37c993d7d894"
+    "historical_population_sha256": "51eb55f814b5b5f465c5363937ea256ad357bac008077aad8e3e9dc886b9a122",
+    "historical_acceptance_sha256": "c5dc504158f162efdc7ba3eff1204067486b9ad3ee718e556961fb681c2613da"
   },
   "references": {
     "_unknown_empty_rect": 10751544,
@@ -2979,7 +2979,7 @@
     "?Read_INI@HouseTypeClass@@UAE_NAAVCCINIClass@@@Z": 5215568,
     "?Read_INI@TagTypeClass@@UAE_NAAVCCINIClass@@@Z": 7031440,
     "?Read_INI@VoxelAnimTypeClass@@UAE_NAAVCCINIClass@@@Z": 7398512,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "?Read_INI@SpecialClass@@QAEXAAVINIClass@@@Z": 6862240,
     "??0AnimClass@@QAE@XZ": 4327648,
     "??_7AnimClass@@6BIPersistStream@@@": 7979140,

@@ -4,8 +4,8 @@
     "id": "population-2710",
     "inventory_sha256": "f8ef961bf7b0693179d081767111dfa06d47b5f94189e7adac7bfe08391131e4",
     "gaps_sha256": "60c1bb11ecba31ce915a4ed1a6e0a4767c21e03d17d6c218d20464bfe63e241e",
-    "historical_population_sha256": "4396be6fc291cb031a963231cf43470aba83601f6f797abea0431e2127c3fae3",
-    "historical_acceptance_sha256": "c4aa40ccb4fda573a011461b768c2a255ada13e106dc0036ee5f2f5a75b5dd49"
+    "historical_population_sha256": "d12d122782ec7e113d161bdeb339d2c982c049a711f6246d34a982eb22c821d5",
+    "historical_acceptance_sha256": "a1301e82b1867874a43d5b69122b22980cc220751a2b5be29f1b4a770915c92c"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2138,7 +2138,7 @@
     "?QueryInterface@ApplicationClass@@UAGJABUGUID@@PAPAX@Z": 4353120,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Load@VoxelAnimClass@@UAGJPAUIStream@@@Z": 7396784,
     "?Load@BuildingLightClass@@UAGJPAUIStream@@@Z": 4407520,

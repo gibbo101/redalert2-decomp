@@ -122,7 +122,7 @@ public:
     bool Objects(CCINIClass &ini);           // 0x00652270 each type and mission reads its own section
     void Save(IStream *stream);              // 0x0064DE70 the object, then each list
     void Load(IStream *stream);              // 0x0064E6B0
-    void Detach(AbstractClass *target, bool all);   // 0x00651290
+    void Detach(AbstractClass const *target, bool all);   // 0x00651290 (TibSun signature)
     int                      DetailMinFrameRateNormal;   // +0x0 DetailMinFrameRateNormal; (radar: made current, 0x0053D820, after a restore)
     int                      DetailMinFrameRateMovie;   // +0x4 DetailMinFrameRateMovie; (radar mode-4 update)
     int                      DetailBufferZoneWidth;   // +0x8
@@ -757,7 +757,7 @@ public:
     bool                     NodAIBuildsWalls;   // +0x1435
     bool                     AIBuildsWalls;   // +0x1436
     bool                     unknown_1437;   // +0x1437 UseMinDefenseRule; AI triggers wait for the minimum (AITriggerType 0x0041C990; hypothesis)
-    AnimTypeClass *          unknown_1438;   // +0x1438 EMPulseSparkles; EMPulse animation, observed 004B4E30
+    AnimTypeClass const *    unknown_1438;   // +0x1438 EMPulseSparkles; EMPulse animation, observed 004B4E30
     float                    unknown_143c;   // +0x143C EngineerCaptureLevel; an Engineer captures a building above this health ratio (InfantryClass slot 28)
     float                    EngineerCaptureLevel;   // +0x1440
     unsigned int             TalkBubbleTime;   // +0x1444
@@ -785,7 +785,7 @@ public:
     RGBClass                 ChronoBeamColor;   // +0x14AE
     char unknown_14b1[0x14B4 - 0x14B1];
     int                      OreTwinkleChance;   // +0x14B4
-    AnimTypeClass *          OreTwinkle;   // +0x14B8
+    AnimTypeClass const *    OreTwinkle;   // +0x14B8
     char unknown_14bc[0x14C0 - 0x14BC];
 };
 

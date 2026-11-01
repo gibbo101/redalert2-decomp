@@ -4,8 +4,8 @@
     "id": "population-3275",
     "inventory_sha256": "6a3455f3bbb56a0fd421cd82e9e9d78ddc66fb7b6e2caa0a2910c057e89a0946",
     "gaps_sha256": "b339ae55e116f1e46578bb01d21d8b37823e07dcce7c3346abe612e683d542f2",
-    "historical_population_sha256": "ad30a0b3443f9df7b89087c158d1aee7e1ba323eedcd713433cd8c6882433d66",
-    "historical_acceptance_sha256": "86de88f2163048ccae70c502cd0c92073c52221dd6983ce4e84f0fc54b6979c8"
+    "historical_population_sha256": "6e16f9ccd7e3b602f7a353a3f81bfee5f2e7d1ee8d5fe82e4ab4fe3d144709cf",
+    "historical_acceptance_sha256": "84125a52aa4553d2b899631b8eca0e922aa96e6802849a74db876e03a41186b7"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1137,7 +1137,7 @@
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "??0VeinholeMonsterClass@@QAE@ABVNoInitClass@@@Z": 7403552,
@@ -6526,7 +6526,7 @@
     "?Load@RulesClass@@QAEXPAUIStream@@@Z": 6612656,
     "?Add@?$DynamicVectorClass@PAVSmudgeTypeClass@@@@QAE_NABQAVSmudgeTypeClass@@@Z": 6633536,
     "?Add@?$DynamicVectorClass@PAVTerrainTypeClass@@@@QAE_NABQAVTerrainTypeClass@@@Z": 6634320,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?Read_INI@MissionControlClass@@QAE_NAAVCCINIClass@@@Z": 5852720,
     "?unknown_slot27@MapClass@@UAEXXZ": 5563136,
     "?Unknown_0054E370@MapClass@@QAEHABVCell@@@Z": 5563248,
@@ -8438,7 +8438,28 @@
     "?Unknown_00567D20@MapClass@@QAEHPAVHouseClass@@HHH@Z": 5668128,
     "__real@4@3ffecccccd0000000000": 8055372,
     "??_EConvertClass@@UAEPAXI@Z": 4743456,
-    "??_ECacheStraw@@UAEPAXI@Z": 5311184
+    "??_ECacheStraw@@UAEPAXI@Z": 5311184,
+    "??AQuaternion@@QAEAAMH@Z": 6431280,
+    "??AQuaternion@@QBEMH@Z": 6431296,
+    "?Inverse@?$Int@$0EA@@@QBE?AV1@ABV1@@Z": 6354944,
+    "??0Quaternion@@QAE@MMMM@Z": 6431072,
+    "?Normalize@Quaternion@@QAEXXZ": 6431136,
+    "??4Quaternion@@QAE?AV0@ABV0@@Z": 6431312,
+    "?Conjugate@@YI?AVQuaternion@@ABV1@@Z": 6432240,
+    "?Inverse@@YI?AVQuaternion@@ABV1@@Z": 6432320,
+    "?unknown_sin_4ba480@@YANN@Z": 4957312,
+    "?unknown_cos_4ba4d0@@YANN@Z": 4957392,
+    "?Unknown_00718D60@@YIPAVMatrix3D@@PAV1@H@Z": 7441760,
+    "?Slerp@@YI?AVQuaternion@@ABV1@0M@Z": 6433472,
+    "?Build_Matrix3D@@YI?AVMatrix3D@@ABVQuaternion@@@Z": 6434480,
+    "?Unknown_00719010@@YIPAVMatrix3D@@PAV1@H@Z": 7442448,
+    "?Axis_To_Quat@@YI?AVQuaternion@@ABUVector3@@M@Z": 6433200,
+    "?Build_Quaternion@@YI?AVQuaternion@@ABVMatrix3D@@@Z": 6433888,
+    "?unknown_matrix_436fc0@BounceClass@@QBE?AVMatrix3D@@XZ": 4419520,
+    "?Get_Remaining_Motion@BounceClass@@QBENXZ": 4419568,
+    "?unknown_719c10@UnknownPairFirst@@QAEXPAUUnknownVoxelRecord48@@PBUVector3@@@Z": 7445520,
+    "?Draw_It@LaserDrawClass@@QAEXXZ": 5453040,
+    "?Read_INI@WarheadTypeClass@@UAE_NAAVCCINIClass@@@Z": 7472352
   },
   "regions": [
     {
@@ -10573,7 +10594,7 @@
         {
           "offset": 182,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4292068038
@@ -10587,7 +10608,7 @@
           "resolved": 4292077288
         }
       ],
-      "source_sha256": "9781ee3e4366d3b7eae0af3d1babd6e18dd0789d1c8388f356b2285338401e26",
+      "source_sha256": "6baf4b40e91c2dc294bd280743958276cdf8f63ee88a3d13c8393f9f35486dc7",
       "source": "src/recovered/classes/TerrainClass/TerrainClass_unknown_slot88_006e3d90.cpp",
       "population": "population-3275",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -11988,7 +12009,7 @@
         {
           "offset": 350,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4292070974

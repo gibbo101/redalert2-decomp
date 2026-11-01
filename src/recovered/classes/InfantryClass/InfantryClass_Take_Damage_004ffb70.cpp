@@ -8,7 +8,7 @@
 #include "shared/house.hpp"
 #include "shared/rules.hpp"
 #include "shared/unknown_geometry.hpp"
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ?unknown_slot86@FootClass@@=004c6000
 // @ref ?unknown_6d3040@TechnoClass@@=006d3040

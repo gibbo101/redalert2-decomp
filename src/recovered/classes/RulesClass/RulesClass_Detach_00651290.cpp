@@ -154,7 +154,7 @@
 #include "shared/smudge_type.hpp"
 #include "shared/overlay_type.hpp"
 #include "shared/particle_system.hpp"
-void RulesClass::Detach(AbstractClass *target, bool all)
+void RulesClass::Detach(AbstractClass const *target, bool all)
 {
     if (target == LargeVisceroid) {
         LargeVisceroid = 0;

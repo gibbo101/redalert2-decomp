@@ -22,7 +22,7 @@
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 // @ref ??RRandom2Class@@QAEHHH@Z=006388a0
 // @ref ??AMapClass@@QAEAAVCellClass@@ABUCoordStruct@@@Z=00548000
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ?unknown_4717b0@CellClass@@QBEPAVObjectClass@@XZ=004717b0
 // @ref ?unknown_475d60@CellClass@@QBE?AUCoordStruct@@XZ=00475d60

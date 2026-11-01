@@ -4,8 +4,8 @@
     "id": "population-3121",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "d1cee0963fee3786e2c80e32ed3a217a8c9b1f5285578de883c7b2a6dc870cb2",
-    "historical_acceptance_sha256": "63ca88deb9dfdfc7f0dc40f1a5a8711a78ab6dc1afe981e52abc22ed14baa2ee"
+    "historical_population_sha256": "1f5b7ef458ee9d9a1f7dd3b40cd9566fd9ce3c64bbf7507d6ecb3377fe5394fc",
+    "historical_acceptance_sha256": "a1f95c24da48120f09325fa61738697d9ca369e1db01be3d4861394248621e26"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2143,7 +2143,7 @@
     "?Clear@?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEXXZ": 5040064,
     "?Add@?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@QAE_NABV?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@Z": 5040464,
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "?Delete@?$DynamicVectorClass@PAVTechnoClass@@@@QAE_NH@Z": 6405568,
     "?Delete@?$DynamicVectorClass@PAVPlanningNodeClass@@@@QAE_NH@Z": 6402896,
@@ -4034,7 +4034,7 @@
     "?Colors@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6585952,
     "?Difficulty@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6609680,
     "?AI@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6603440,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?unknown_slot27@MapClass@@UAEXXZ": 5563136,
     "?unknown_flag_a3d2c1@@3_NA": 10736321,
     "?unknown_ini_005b7840@UnknownSessionA3D29C@@QAEPAVCCINIClass@@XZ": 5994560,

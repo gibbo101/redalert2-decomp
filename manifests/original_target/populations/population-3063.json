@@ -4,8 +4,8 @@
     "id": "population-3063",
     "inventory_sha256": "26bc731e2aa3a8a702c64eaec58519e758d1a4cc891896697604cdd309c3c448",
     "gaps_sha256": "16df03ceb020759ceabbf73d38fb2b43953036ef48754f843c18c81d084c4e9b",
-    "historical_population_sha256": "fb5614fb55a03d234a79eb3d48056fbb95b29921906951831eebd98bdcfc2cc0",
-    "historical_acceptance_sha256": "3dea22d0af513957e8a5488bacf573aca846982e268b04eb4295178887c10993"
+    "historical_population_sha256": "ce4d9a846806a9d4b17ec2107e92071640cb2c8f2a7b7591ca3f407c41d59e00",
+    "historical_acceptance_sha256": "8b999d8020d5e66961a1272a27851d5315f466c704eed6e7e7051c86ced41ad8"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4077,7 +4077,7 @@
     "__imp__WideCharToMultiByte@32": 7971388,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Next@AudioListIterator@@QAEPAUAudioListNode@@XZ": 4208080,
     "?Audio_Event_Stop@@YIXPAUAudioEvent@@@Z": 4215552,
@@ -4784,7 +4784,7 @@
     "?Load@RulesClass@@QAEXPAUIStream@@@Z": 6612656,
     "?Add@?$DynamicVectorClass@PAVSmudgeTypeClass@@@@QAE_NABQAVSmudgeTypeClass@@@Z": 6633536,
     "?Add@?$DynamicVectorClass@PAVTerrainTypeClass@@@@QAE_NABQAVTerrainTypeClass@@@Z": 6634320,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?Read_INI@MissionControlClass@@QAE_NAAVCCINIClass@@@Z": 5852720,
     "?unknown_slot27@MapClass@@UAEXXZ": 5563136,
     "?unknown_flag_a3d2c1@@3_NA": 10736321,
@@ -13665,7 +13665,7 @@
         {
           "offset": 1663,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4294695293
@@ -13913,7 +13913,7 @@
         {
           "offset": 2866,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4294694090

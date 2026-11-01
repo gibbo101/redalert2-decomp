@@ -9,7 +9,7 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ??RRandom2Class@@QAEHXZ=00638840
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ?Set_Current@FacingClass@@QAEXABUUnknownFacingDir@@@Z=004b8b10
 // @ref ?_com_issue_error@@YGXJ@Z=00795940

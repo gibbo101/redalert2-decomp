@@ -4,8 +4,8 @@
     "id": "population-3506",
     "inventory_sha256": "62f46b7b2150a7e2b5a458189255565390456b4667c9b3918f38a9cdf80d7718",
     "gaps_sha256": "c6f457d130d834ab2d61586ee10a67e79aed78a5e46837fe8f6be4df2304b027",
-    "historical_population_sha256": "ba344e52e95ee58f71c30668d08c7389e86a5735f4bdb20d223a55bc3debb0ec",
-    "historical_acceptance_sha256": "22e1298e52562cddebddc767a1c3568a74162de60326b6aa0b6e50e76f5104b8"
+    "historical_population_sha256": "5fdc5356211f111acd59b4d7c7c61eea7f10d8b7bc5b8a26280754beeeec3fa4",
+    "historical_acceptance_sha256": "80d8c833c0339e4ae6e94bad8fc91c79736fc75c1f0979f15040ae3c2574ff8d"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1129,7 +1129,7 @@
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "??0VeinholeMonsterClass@@QAE@ABVNoInitClass@@@Z": 7403552,
@@ -7784,7 +7784,7 @@
     "?unknown_slot184@TechnoClass@@UAEPAVInfantryTypeClass@@XZ": 7155888,
     "?unknown_slot184@BuildingClass@@UAEPAVInfantryTypeClass@@XZ": 4497328,
     "?unknown_slot184@UnitClass@@UAEPAVInfantryTypeClass@@XZ": 7359232,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?AircraftTypes@@3V?$DynamicVectorClass@PAVAircraftTypeClass@@@@A": 10736248,
     "?ParticleSystems@@3V?$DynamicVectorClass@PAVParticleSystemClass@@@@A": 10691200,
     "?Smudges@@3V?$DynamicVectorClass@PAVSmudgeClass@@@@A": 10736192,

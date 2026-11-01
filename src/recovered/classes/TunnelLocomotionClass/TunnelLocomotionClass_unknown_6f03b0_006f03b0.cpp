@@ -3,7 +3,7 @@
 #include "shared/fast_math.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref ?Is_Rotating@FacingClass@@QBE_NXZ=004b8c90
 // @ref ?Current@FacingClass@@QBE?AUUnknownFacingDir@@XZ=004b8be0
 // @ref ?Fast_Atan2@@YAMNN@Z=004ba600

@@ -4,8 +4,8 @@
     "id": "population-3376",
     "inventory_sha256": "0a4a1a7e457003c9b35cc85f724bcb78b39b51f62969d79a43f20e411810df61",
     "gaps_sha256": "e5e6af3b376390b4ccbeb19931911b5edfada068879a6be571962e56a816ccb7",
-    "historical_population_sha256": "7ce4004735148475a7162e255e8b4c374fe6c19522efc08d5866ae90a539f1ce",
-    "historical_acceptance_sha256": "bb918928a0ccf65764908d2d9a05786189a5304eeb2a2c7a31a2c49b4e1df495"
+    "historical_population_sha256": "99b6fa0cb5f2317fdff00d47c293682b60eb450adc836f4986d665bfb312f487",
+    "historical_acceptance_sha256": "fa3c0e8c4a5a04129d72d71fdecf13f43dfe84078fe9ca1664c179ccef66364d"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1138,7 +1138,7 @@
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "??0VeinholeMonsterClass@@QAE@ABVNoInitClass@@@Z": 7403552,
@@ -3910,7 +3910,7 @@
     "?Load@RulesClass@@QAEXPAUIStream@@@Z": 6612656,
     "?Add@?$DynamicVectorClass@PAVSmudgeTypeClass@@@@QAE_NABQAVSmudgeTypeClass@@@Z": 6633536,
     "?Add@?$DynamicVectorClass@PAVTerrainTypeClass@@@@QAE_NABQAVTerrainTypeClass@@@Z": 6634320,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?Save@RulesClass@@QAEXPAUIStream@@@Z": 6610544,
     "?Save@?$TypeList@PAVVoxelAnimTypeClass@@@@QAEXPAUIStream@@@Z": 6630048,
     "?Save@?$TypeList@PAVSmudgeTypeClass@@@@QAEXPAUIStream@@@Z": 6630528,
@@ -32432,7 +32432,7 @@
         {
           "offset": 608,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4293691404
@@ -32755,7 +32755,7 @@
         {
           "offset": 610,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4293690602
@@ -33078,7 +33078,7 @@
         {
           "offset": 619,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4293689793
@@ -33401,7 +33401,7 @@
         {
           "offset": 621,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4293688975

@@ -2,7 +2,7 @@
 #include "shared/building.hpp"
 #include "shared/anim.hpp"
 #include "shared/rules.hpp"
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 bool BuildingClass::unknown_450cb0(ObjectClass *object, bool damage)
 {
     if(object && object->Strength > 0) {

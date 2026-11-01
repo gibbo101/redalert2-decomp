@@ -4,8 +4,8 @@
     "id": "population-3461",
     "inventory_sha256": "a5635a65db934028132d4b9e4ccc951121790c93a6d57b6ce2f2bd1629801f80",
     "gaps_sha256": "fa8d43857411b445b6dd34f398b1471846eb6afa56ce4d0a2b5ea32bcdf1a501",
-    "historical_population_sha256": "758189f0099c8dd40941840b785dded435ce14d5f4364682cbf95d90ba308362",
-    "historical_acceptance_sha256": "757edde114b9d9c22a5deb91dad6ad55ef7a2b9f6e85df2edcf7e524fa003aa0"
+    "historical_population_sha256": "70a5b8785386564d09d3f96e27c8a01dabfa5b4d0cd6a525aca85f2d9d53c19f",
+    "historical_acceptance_sha256": "54103f6bcbeff75ec6aec2d994548c7f616d472bf1db34e405c2608b4504cc31"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1129,7 +1129,7 @@
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "??0VeinholeMonsterClass@@QAE@ABVNoInitClass@@@Z": 7403552,
@@ -7983,7 +7983,7 @@
     "?Load@RulesClass@@QAEXPAUIStream@@@Z": 6612656,
     "?Add@?$DynamicVectorClass@PAVSmudgeTypeClass@@@@QAE_NABQAVSmudgeTypeClass@@@Z": 6633536,
     "?Add@?$DynamicVectorClass@PAVTerrainTypeClass@@@@QAE_NABQAVTerrainTypeClass@@@Z": 6634320,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?Read_INI@MissionControlClass@@QAE_NAAVCCINIClass@@@Z": 5852720,
     "?unknown_slot27@MapClass@@UAEXXZ": 5563136,
     "?Save@RulesClass@@QAEXPAUIStream@@@Z": 6610544,
@@ -10420,7 +10420,12 @@
     "?Heapify@UnknownPathEstimatorBlock@@QAEXH@Z": 4371808,
     "?Unknown_00567D20@MapClass@@QAEHPAVHouseClass@@HHH@Z": 5668128,
     "__real@4@3ffecccccd0000000000": 8055372,
-    "??_ECacheStraw@@UAEPAXI@Z": 5311184
+    "??_ECacheStraw@@UAEPAXI@Z": 5311184,
+    "?Render_Shroud@Tactical@@QAEXABVRect@@00_N@Z": 6962928,
+    "?Draw_Shroud@Tactical@@QAEXABVRect@@@Z": 6977568,
+    "?unknown_719c10@UnknownPairFirst@@QAEXPAUUnknownVoxelRecord48@@PBUVector3@@@Z": 7445520,
+    "?Draw_It@LaserDrawClass@@QAEXXZ": 5453040,
+    "?Read_INI@WarheadTypeClass@@UAE_NAAVCCINIClass@@@Z": 7472352
   },
   "regions": [
     {
@@ -15912,7 +15917,7 @@
         {
           "offset": 181,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 47207
@@ -16000,7 +16005,7 @@
         {
           "offset": 773,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 46615
@@ -16024,7 +16029,7 @@
         {
           "offset": 890,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 46498
@@ -16120,7 +16125,7 @@
         {
           "offset": 1285,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 46103
@@ -16267,13 +16272,13 @@
         {
           "offset": 326,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 41302
         }
       ],
-      "source_sha256": "c812cc88815854c909bac74682777531a834e6863e6596c14879462dc436630a",
+      "source_sha256": "52dbb1c21880fe55d5a9c7e354aace78b7cf4c837c49951f227478f4ca033ae8",
       "source": "src/recovered/classes/AircraftClass/AircraftClass_Damage_Response_00415e70.cpp",
       "population": "population-3461",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",

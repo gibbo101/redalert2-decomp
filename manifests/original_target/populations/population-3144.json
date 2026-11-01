@@ -4,8 +4,8 @@
     "id": "population-3144",
     "inventory_sha256": "9b49da8deac1889074759c7ee91af2afb1aa59acf9de23ba7b00e1bd2f083f24",
     "gaps_sha256": "35d91b8470ebaf7df57b7aa21678d3713f8f563003b0c5601e088c8ee34d42bf",
-    "historical_population_sha256": "ebad98fdb87b705c8fe42fb3424faf0a5dde89ee4cb9cbf5f0d1441467aec68b",
-    "historical_acceptance_sha256": "fdc3d6bf0f0e32096f93ef16ce17df67b2fa42d32c9c4b4906736e47c8a40c05"
+    "historical_population_sha256": "a58c9284591dde7f70158f56f9603cf19ecc1906114626eadc9fce6836ee6a6c",
+    "historical_acceptance_sha256": "53ef6ab13f7746188e1367f8cc1a95a4b2f62c6d6ef594fdc38ef8b50739a278"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1119,7 +1119,7 @@
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "??0VeinholeMonsterClass@@QAE@ABVNoInitClass@@@Z": 7403552,
@@ -4518,7 +4518,7 @@
     "?Load@RulesClass@@QAEXPAUIStream@@@Z": 6612656,
     "?Add@?$DynamicVectorClass@PAVSmudgeTypeClass@@@@QAE_NABQAVSmudgeTypeClass@@@Z": 6633536,
     "?Add@?$DynamicVectorClass@PAVTerrainTypeClass@@@@QAE_NABQAVTerrainTypeClass@@@Z": 6634320,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?Read_INI@MissionControlClass@@QAE_NAAVCCINIClass@@@Z": 5852720,
     "?Save@RulesClass@@QAEXPAUIStream@@@Z": 6610544,
     "?Save@?$TypeList@PAVVoxelAnimTypeClass@@@@QAEXPAUIStream@@@Z": 6630048,
@@ -30899,7 +30899,7 @@
         {
           "offset": 1199,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4292619917

@@ -13,7 +13,7 @@
 // @ref ?Unknown_006A2970@@YIHH@Z=006a2970
 // @ref ??2@YAPAXI@Z=00782017
 // @ref __ftol=0077f110
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 
 int AnimClass::unknown_slot116()
 {

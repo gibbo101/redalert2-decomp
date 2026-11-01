@@ -4,8 +4,8 @@
     "id": "population-2402",
     "inventory_sha256": "aef7ca6583c41dadf90d4b1f5e1d4ce78166247df6f39ceab7fa4ae0327caf4d",
     "gaps_sha256": "0fe267fb97dc4f0b1e9693ad78f025ac298f7be696d2133349ca661239cf7b47",
-    "historical_population_sha256": "43cbb9d0550ca691798ec397682143358e0f286547742a45dace4d35e9d2c8aa",
-    "historical_acceptance_sha256": "3119e7f636f5173a9419193a19ea76afc010c8d9bdf958e5d99b81bef6fbe283",
+    "historical_population_sha256": "1cb90afc0a6ea8d6b3e40f0a1cb6396af18468a5eabf4043f7094ef08913592e",
+    "historical_acceptance_sha256": "a7f2169aa80aeee707b5ed78164c1f11be67196ff0b88201f22a902171b0bedb",
     "separate_units": true
   },
   "references": {
@@ -2162,7 +2162,7 @@
     "?Clear@?$VectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEXXZ": 5039712,
     "?Clear@?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEXXZ": 5040064,
     "?Add@?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@QAE_NABV?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@Z": 5040464,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "??_7BuildingLightClass@@6BIPersistStream@@@": 7981024,
     "??_7BuildingLightClass@@6BIRTTITypeInfo@@@": 7980996,
     "??_7BuildingLightClass@@6BINoticeSink@@@": 7980988,
@@ -3253,7 +3253,7 @@
     "?Load@RulesClass@@QAEXPAUIStream@@@Z": 6612656,
     "?Add@?$DynamicVectorClass@PAVSmudgeTypeClass@@@@QAE_NABQAVSmudgeTypeClass@@@Z": 6633536,
     "?Add@?$DynamicVectorClass@PAVTerrainTypeClass@@@@QAE_NABQAVTerrainTypeClass@@@Z": 6634320,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?Read_INI@MissionControlClass@@QAE_NAAVCCINIClass@@@Z": 5852720,
     "?Save@RulesClass@@QAEXPAUIStream@@@Z": 6610544,
     "?Save@?$TypeList@PAVVoxelAnimTypeClass@@@@QAEXPAUIStream@@@Z": 6630048,

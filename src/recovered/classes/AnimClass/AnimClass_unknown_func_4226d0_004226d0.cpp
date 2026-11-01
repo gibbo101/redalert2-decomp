@@ -21,7 +21,7 @@
 // @ref ??RRandom2Class@@QAEHHH@Z=006388a0
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ??2@YAPAXI@Z=00782017
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 
 void AnimClass::unknown_func_4226d0()
 {

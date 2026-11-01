@@ -4,8 +4,8 @@
     "id": "population-3440",
     "inventory_sha256": "e5f830322f4a098a1bb8de23ca8190b9cdc889e7c7c4d360c871629debc28f97",
     "gaps_sha256": "99b3da6e21b555f3b6a4844a4fd41085edb08a4bb61fbc3b054886ab3fa15a33",
-    "historical_population_sha256": "866e69190a4fe7d95ae648f64f02b580fd6f57db1c5c9110b3a751bf910d0340",
-    "historical_acceptance_sha256": "347eb746c51f7bd67c58ad1652feaac054b0a8639890788a19569b8cc179dcbf"
+    "historical_population_sha256": "7eb311fd5590970b2591f8060439c1122c6e892c1ed1bbd255be9e6298527e51",
+    "historical_acceptance_sha256": "733cf8f7400fe65c529c8be9879c868066a51c358a71435322f21db413918c6c"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -1221,7 +1221,7 @@
     "__real@8@3fff96cbe3f9990e9000": 8032632,
     "__real@8@3ffdc90fdaa22168c000": 8019416,
     "__real@4@3ff98888890000000000": 8032628,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "__itoa": 7920423,
     "__real@8@4008fa00000000000000": 7983840,
     "__real@8@40068000000000000000": 7976472,
@@ -3651,7 +3651,7 @@
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "?Seek@CStreamClass@@UAGJTLARGE_INTEGER@@KPATULARGE_INTEGER@@@Z": 4804064,
     "_bsearch": 7872549,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "?Load@VoxelAnimClass@@UAGJPAUIStream@@@Z": 7396784,
     "?Load@BuildingLightClass@@UAGJPAUIStream@@@Z": 4407520,
     "??0VeinholeMonsterClass@@QAE@ABVNoInitClass@@@Z": 7403552,

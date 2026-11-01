@@ -4,8 +4,8 @@
     "id": "population-2187",
     "inventory_sha256": "5216fb99804e375d0070b29208687a2378263fdbf466a4c95f37044fc1114f03",
     "gaps_sha256": "f7bf53817f02e69b45ae9a258416028f0ba47d2a5e2a2a9b1f048f9f37106f71",
-    "historical_population_sha256": "64ebf54dffa19f4dd0632e5db4c0d03094a470383b1b05ada789919d7716be21",
-    "historical_acceptance_sha256": "a29b247ab179b93c1a44627ebdb91fec9c47b4d843199c24eddfe707e655f555",
+    "historical_population_sha256": "b2a4baf15599372e4b277dd34dd8659e23ed5ea0da57d37de282441f59a10a86",
+    "historical_acceptance_sha256": "b32c87aa1886790790968b31dfacfc015e351a974787da104e0c81ee81b45549",
     "separate_units": true
   },
   "references": {
@@ -1895,7 +1895,7 @@
     "?Coord@PlanningBranchClass@@QBE?AUCoordStruct@@XZ": 6359376,
     "?Coord@PlanningNodeClass@@QBE?AUCoordStruct@@XZ": 6361472,
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "?Clip_Line@@YI_NAAUPoint2D@@0ABVRect@@@Z": 7820832,
     "??0AnimClass@@QAE@XZ": 4327648,
     "??_7AnimClass@@6BIPersistStream@@@": 7979140,

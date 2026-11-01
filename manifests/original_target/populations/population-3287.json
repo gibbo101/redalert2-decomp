@@ -4,8 +4,8 @@
     "id": "population-3287",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "eba444574a8814227df5d94ba0374e413e86dec470e4cbacaa2a64b0e94dad0d",
-    "historical_acceptance_sha256": "9c6db1586bc49b16c4486a2f73af615a3e8dcda9915badbde67ade37310330d1"
+    "historical_population_sha256": "4ff66f54a19821ba1ddf24a1b73ce2c5371ead5689f9355bb2c83aed5ad5ba34",
+    "historical_acceptance_sha256": "12ff58c57b74e521a6769aecebb21f6a3ce3ee603d236ea64173dac81d1459fc"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -1594,7 +1594,7 @@
     "?Add@?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@QAE_NABV?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@Z": 5040464,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "?Delete@?$DynamicVectorClass@PAVTechnoClass@@@@QAE_NH@Z": 6405568,

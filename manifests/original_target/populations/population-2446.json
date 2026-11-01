@@ -4,8 +4,8 @@
     "id": "population-2446",
     "inventory_sha256": "e57061db39fdf3ff62757f47efef43d1269e5633cf3f92421266ea1be1aa941f",
     "gaps_sha256": "70fc2ae6328505a45f7031ef04c70d5a722dd707fff85a35784f2f9ecb8a809a",
-    "historical_population_sha256": "c3d7ee66b3bb9ae24fef8e2894c17b2ce7f0e351f6abab95f88df13bb9cef264",
-    "historical_acceptance_sha256": "b4d463d2b7a149650800a8817447546584ae26c7a8c38743f3ea1c1bd12a06fd"
+    "historical_population_sha256": "bcff09d3cc9aa6cddf948637073c9f97aa8c67778243ebc148978c4e9d77de9a",
+    "historical_acceptance_sha256": "941a1bdf5879bb8a8252eef88e59b527f0ccaef3988091deb5dbc58ad2bcfe19"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -749,7 +749,7 @@
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Clip_Line@@YI_NAAUPoint2D@@0ABVRect@@@Z": 7820832,
     "??0AnimClass@@QAE@XZ": 4327648,
@@ -4978,7 +4978,7 @@
     "?Load@RulesClass@@QAEXPAUIStream@@@Z": 6612656,
     "?Add@?$DynamicVectorClass@PAVSmudgeTypeClass@@@@QAE_NABQAVSmudgeTypeClass@@@Z": 6633536,
     "?Add@?$DynamicVectorClass@PAVTerrainTypeClass@@@@QAE_NABQAVTerrainTypeClass@@@Z": 6634320,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?Read_INI@MissionControlClass@@QAE_NAAVCCINIClass@@@Z": 5852720,
     "?unknown_slot27@MapClass@@UAEXXZ": 5563136,
     "?Save@RulesClass@@QAEXPAUIStream@@@Z": 6610544,

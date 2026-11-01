@@ -10,7 +10,7 @@
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref ?Attach_To@AnimClass@@QAEXPAVObjectClass@@@Z=00422540
 
 bool TerrainClass::unknown_slot88()

@@ -5,7 +5,7 @@
 #include "shared/rules.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Frame@@3HA=00a40d2c
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ?AI@FootClass@@UAEXXZ=004c8ff0
 // @ref ?unknown_5025c0@InfantryClass@@QAEXXZ=005025c0

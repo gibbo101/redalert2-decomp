@@ -4,8 +4,8 @@
     "id": "population-3472",
     "inventory_sha256": "5c214e77f25df97a5644fbbc99a08c938cff48c70cd46cdf2a8d27e52e331f3d",
     "gaps_sha256": "3559c3125b49c01bf376ba92128b2bc71cf2b80a8d0d2e9617aca0bab0c67169",
-    "historical_population_sha256": "0c83987771908974708e751103f71527348743d68bdee7ced057f54953ccced2",
-    "historical_acceptance_sha256": "acf6755a2bf32ff7fa9a9f17dd07a0f6b0e79a009642e4cedaf0eb3ba6e7fcfe"
+    "historical_population_sha256": "399d118f39369630123c0e5a90c45ab57b7ccea337ee51db9a07f0f9ffa25c78",
+    "historical_acceptance_sha256": "16e150e1bd4f521dedcfb1aac367c32fbc90d38a681f89fd59b2c5833ca43373"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1148,7 +1148,7 @@
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "??0VeinholeMonsterClass@@QAE@ABVNoInitClass@@@Z": 7403552,
@@ -3281,7 +3281,7 @@
     "?Colors@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6585952,
     "?Difficulty@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6609680,
     "?AI@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6603440,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?unknown_slot27@MapClass@@UAEXXZ": 5563136,
     "?unknown_flag_a3d2c1@@3_NA": 10736321,
     "?unknown_ini_005b7840@UnknownSessionA3D29C@@QAEPAVCCINIClass@@XZ": 5994560,

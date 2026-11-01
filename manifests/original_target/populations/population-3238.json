@@ -4,8 +4,8 @@
     "id": "population-3238",
     "inventory_sha256": "67d86adf94eb225efc7377f8d563fae77a8f43e4a82680be337df0996fee23ee",
     "gaps_sha256": "dc9576559ebc3eee15dcb288d4807e89abbffe9ce2bbb029ce10afefde9f65b4",
-    "historical_population_sha256": "42add825825bbecb0c60648187d3423bd71347d054d56487513b7269540ab226",
-    "historical_acceptance_sha256": "93d487c9c1d1dd659b293aff543326665e033987afe098c38e402fc2bdfb97c1"
+    "historical_population_sha256": "2eb1c24876a04c367765df16cd0b1c1ce5a25bed6ab2289e6e5af42e02e136ee",
+    "historical_acceptance_sha256": "48fdc92a0c5db1d65601f9c6fd2cf40aaba926041f7eb881f2170a5a55485a1e"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -436,7 +436,7 @@
     "??0AircraftClass@@QAE@PAVAircraftTypeClass@@PAVHouseClass@@@Z": 4274752,
     "??0AircraftTypeClass@@QAE@ABVNoInitClass@@@Z": 4308400,
     "??0AircraftTypeClass@@QAE@PBD@Z": 4308112,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "??0AnimClass@@QAE@XZ": 4327648,
     "??0AnimTypeClass@@QAE@ABVNoInitClass@@@Z": 4346176,
     "??0AnimTypeClass@@QAE@PBD@Z": 4345392,
@@ -7607,7 +7607,7 @@
     "?Load@RulesClass@@QAEXPAUIStream@@@Z": 6612656,
     "?Add@?$DynamicVectorClass@PAVSmudgeTypeClass@@@@QAE_NABQAVSmudgeTypeClass@@@Z": 6633536,
     "?Add@?$DynamicVectorClass@PAVTerrainTypeClass@@@@QAE_NABQAVTerrainTypeClass@@@Z": 6634320,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?Read_INI@MissionControlClass@@QAE_NAAVCCINIClass@@@Z": 5852720,
     "?unknown_slot27@MapClass@@UAEXXZ": 5563136,
     "?Save@RulesClass@@QAEXPAUIStream@@@Z": 6610544,
@@ -13796,7 +13796,7 @@
         {
           "offset": 123,
           "kind": 20,
-          "symbol": "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
+          "symbol": "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z",
           "target": 4325648,
           "addend": 0,
           "resolved": 4292224737

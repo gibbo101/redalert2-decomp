@@ -4,8 +4,8 @@
     "id": "population-3496",
     "inventory_sha256": "9b8eb02ecb80b6423ced77282142d072c50191403a46461a36c785c05d162440",
     "gaps_sha256": "c3018d206b8641e5fc154e9d77bd1e09f064ed44933cc1360dbb679091634db5",
-    "historical_population_sha256": "b2989dba86d125dc1b5e3461894f94c94e47626ba0aea33861b07b4e37335107",
-    "historical_acceptance_sha256": "f0fd1f6000b753522960df5786784b653530f2d969a68b838214ff88b9db94fa"
+    "historical_population_sha256": "7d0a2abd0d41fe4d1fc66782f58b839a55db402a91d36c83be87bd6dbfc5bf74",
+    "historical_acceptance_sha256": "8496748c875f9ddc1564bbeeb8dfda3023f054f39138b7eee92b3886f8b7bb3f"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2178,7 +2178,7 @@
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "__wcsupr": 7958262,
     "__real@8@40058000000000000000": 8051872,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "__real@8@3ffdccccccccccccd000": 7979624,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "??0VeinholeMonsterClass@@QAE@ABVNoInitClass@@@Z": 7403552,
@@ -3992,7 +3992,7 @@
     "?Draw_Line_Depth_Masked@DSurface@@UAE_NABUPoint2D@@0H_N@Z": 4918576,
     "?Create@MapSizeGameOption@WorldDominationTour@@SI?AV?$rc_ptr@VMapSizeGameOption@WorldDominationTour@@@@H@Z": 7506528,
     "?AI@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6603440,
-    "?Detach@RulesClass@@QAEXPAVAbstractClass@@_N@Z": 6623888,
+    "?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z": 6623888,
     "?unknown_slot27@MapClass@@UAEXXZ": 5563136,
     "?unknown_flag_a3d2c1@@3_NA": 10736321,
     "?unknown_ini_005b7840@UnknownSessionA3D29C@@QAEPAVCCINIClass@@XZ": 5994560,

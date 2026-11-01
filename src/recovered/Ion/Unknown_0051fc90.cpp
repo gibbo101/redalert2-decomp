@@ -24,7 +24,7 @@
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 // @ref ??AMapClass@@QAEAAVCellClass@@ABVCell@@@Z=00548070
 // @ref ?Unknown_006A29B0@@YIHH@Z=006a29b0
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref ??2@YAPAXI@Z=00782017
 
 void __stdcall Unknown_0051FC90(Cell cell)

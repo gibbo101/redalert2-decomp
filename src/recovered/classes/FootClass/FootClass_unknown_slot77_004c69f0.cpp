@@ -18,7 +18,7 @@
 // @ref ?unknown_4cca40@FootClass@@QAE?AVCell@@ABV2@_N@Z=004cca40
 // @ref ?Unknown_00710160@@YIPAUUnknownCellObject710160@@ABVCell@@@Z=00710160
 // @ref ?Unknown_0047A130@UnknownCellClass@@QAEPAUUnknownTube47A130@@XZ=0047a130
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ?AdjacentCell@@3QBVCell@@B=00851a70
 // @ref _unknown_geometry_k=00865f00

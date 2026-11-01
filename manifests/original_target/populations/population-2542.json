@@ -4,8 +4,8 @@
     "id": "population-2542",
     "inventory_sha256": "3a110f46e7c4e8a521b486a67268cb55d470a5cb0fd6f23b6a7ded159f95a68f",
     "gaps_sha256": "c381c9f852b00800992661f62d4fe556baed9a444597fb1a043482d69fbd0c46",
-    "historical_population_sha256": "5380c4766743aaa7499ec4b43360b2012b934ae1133f9373150bad8e36771973",
-    "historical_acceptance_sha256": "f527870b6ed65c9bcfbffc5e2e00d2b0faf06b63996707567af5b435a1ff55ec"
+    "historical_population_sha256": "882d575f599facbba1752667af3fc8007a15064cfb3a076e5c6047366f7f23da",
+    "historical_acceptance_sha256": "c61e40d64b6bce93984b9cd8071562dfbc03fc6ed7b62af86ac006e1d76d787f"
   },
   "references": {
     "??0LoadOptionsClass@@": 5484768,
@@ -2718,7 +2718,7 @@
     "?Release@CStreamClass@@UAGKXZ": 4802864,
     "?Seek@CStreamClass@@UAGJTLARGE_INTEGER@@KPATULARGE_INTEGER@@@Z": 4804064,
     "?Commit@CStreamClass@@UAGJK@Z": 4804288,
-    "??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
+    "??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z": 4325648,
     "?Next@AudioListIterator@@QAEPAUAudioListNode@@XZ": 4208080,
     "?Set@AudioLevel@@QAIXH@Z": 4223104,
     "?Read_INI@SpecialClass@@QAEXAAVINIClass@@@Z": 6862240,

@@ -3,7 +3,7 @@
 #include "shared/map_view.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Voc_Play_At@@YIPAUAudioEvent@@HABUCoordStruct@@PAUAudioEventHandle@@@Z=00713e60
-// @ref ??0AnimClass@@QAE@PAVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
+// @ref ??0AnimClass@@QAE@PBVAnimTypeClass@@ABUCoordStruct@@HHHH@Z=00420110
 // @ref __ftol=0077f110
 // @ref __real@8@40058000000000000000=007adca0
 
