@@ -25,6 +25,14 @@ public:
 
     TPoint2D<T> const operator-() const { return TPoint2D<T>(T(-X), T(-Y)); }
 
+#ifdef RA2_POINT_LENGTH
+    // TibSun point.h's length through the fast square root and the distance
+    // built on it (RadarEvent.cpp's suppression test, 0x0063B5B0). Guarded:
+    // shared/fast_math.hpp must be included first.
+    T Length() const { return T(Fast_Sqrt((double)X * (double)X + (double)Y * (double)Y)); }
+    T Distance_To(TPoint2D<T> const &point) const { return (*this - point).Length(); }
+#endif
+
     T X;
     T Y;
 };

@@ -2256,65 +2256,6 @@
   },
   "regions": [
     {
-      "entry": 6538944,
-      "method": "0063c6c0",
-      "symbol": "?RadarEventClass_unknown_remember_cell@@YIXABVCell@@@Z",
-      "symbol_prefix": "?RadarEventClass_unknown_remember_cell@@YIXABVCell@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 38,
-      "body_sha256": "e313af88a549ffb8c1dfa98a4e4f28fc87f349503aab2221bb1e0369141bd849",
-      "padding_bytes": 10,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "324cdf064d836859577398e9c844469874207de7534f9daffd2646513b281e62",
-      "relocations": [
-        {
-          "offset": 1,
-          "kind": 6,
-          "symbol": "?unknown_event_last_ab67c8@@3HA",
-          "target": 11233224,
-          "addend": 0,
-          "resolved": 11233224
-        },
-        {
-          "offset": 19,
-          "kind": 6,
-          "symbol": "?unknown_event_last_ab67c8@@3HA",
-          "target": 11233224,
-          "addend": 0,
-          "resolved": 11233224
-        },
-        {
-          "offset": 28,
-          "kind": 6,
-          "symbol": "?unknown_event_cells_ab6788@@3PAVCell@@A",
-          "target": 11233160,
-          "addend": 0,
-          "resolved": 11233160
-        },
-        {
-          "offset": 33,
-          "kind": 6,
-          "symbol": "?unknown_event_current_ab6818@@3HA",
-          "target": 11233304,
-          "addend": 0,
-          "resolved": 11233304
-        }
-      ],
-      "source_sha256": "c58263a78db96951d557734e7c44d8220561d6b0b049bd8a4f94b706cbf50baf",
-      "source": "src/recovered/classes/RadarEventClass/RadarEventClass_unknown_remember_cell_0063c6c0.cpp",
-      "population": "population-3357",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "RadarEventClass_unknown_remember_cell_0063c6c0",
-      "source_order": 145857
-    },
-    {
       "entry": 6700336,
       "method": "00663d30",
       "symbol": "?unknown_color_scheme_663d30@@YIPAVColorScheme@@PBDH@Z",

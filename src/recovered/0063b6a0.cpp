@@ -1,25 +1,13 @@
-// 0x0063b6a0: function not yet identified
-//
-// Body: 12 bytes (frozen inventory bound).
-// Referenced from 1 site (data).
-// Ghidra prototype: void __fastcall FUN_0063b6a0(undefined4 param_1)
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
+// void __fastcall Plot_Radar_Event_Point(Point2D const &point) -- 0x0063B6A0 (TS revent.cpp)
+// The plotter RadarEventClass::Plot passes to Plot_Line: marks one radar pixel (RadarClass 0x00632620,
+// TS Radar_Pixel).
+#include "shared/radar.hpp"
+#include "shared/map_view.hpp"
+#include "shared/radar_event_class.hpp"
+// @ref ?Map@@3VMouseClass@@A=008324e0
+// @ref ?Unknown_00632620@RadarClass@@QAEXABUPoint2D@@@Z=00632620
 
-namespace seed_0063b6a0 {
-
-struct Callee_00632620 { void FUN_00632620(int *param_2); };
-extern "C" undefined4 DAT_008324e0;
-
-void __fastcall FUN_0063b6a0(undefined4 param_1)
+void __fastcall Plot_Radar_Event_Point(Point2D const &point)
 {
-    ((Callee_00632620*)(&DAT_008324e0))->FUN_00632620((int *)(param_1));
-    return;
+    Map.Unknown_00632620(point);
 }
-
-}  // namespace seed_0063b6a0

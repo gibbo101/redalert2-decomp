@@ -26,9 +26,17 @@ struct RectPoint2D {
     RectPoint2D(int x, int y) : X(x), Y(y) {}
 
     // Not inlined by the original (out-of-line copy 0x00435540, Blit.cpp).
+#ifdef RA2_RECT_POINT_INLINE
+    RectPoint2D operator+(RectPoint2D const &point) const { return RectPoint2D(X + point.X, Y + point.Y); }
+#else
     RectPoint2D operator+(RectPoint2D const &point) const;
+#endif
     // Member-wise difference (out of line, 0x0047D040 in Cell.cpp; MapClass calls it).
+#ifdef RA2_RECT_POINT_INLINE
+    RectPoint2D operator-(RectPoint2D const &point) const { return RectPoint2D(X - point.X, Y - point.Y); }
+#else
     RectPoint2D operator-(RectPoint2D const &point) const;
+#endif
 
     int X;          // +0x00
     int Y;          // +0x04
@@ -64,7 +72,11 @@ class Rect {
 public:
     Rect() {}
     Rect(int x, int y, int width, int height) : X(x), Y(y), Width(width), Height(height) {}
+#ifdef RA2_RECT_POINT_INLINE
+    Rect(RectPoint2D const &point, int width, int height) : X(point.X), Y(point.Y), Width(width), Height(height) {}
+#else
     Rect(RectPoint2D const &point, int width, int height);
+#endif
 
     bool Is_Valid() const { return Width > 0 && Height > 0; }
     // The area in pixels (TibSun TRect::Size; Tactical::Register_Dirty_Area 0x006A3020).
@@ -88,7 +100,13 @@ public:
     bool operator!=(Rect const &rect) const { return !(*this == rect); }
 
     // Not inlined by the original (out-of-line copy 0x00435560, Blit.cpp).
+#ifdef RA2_RECT_POINT_INLINE
+    // Inline where the original expands them (RadarEventClass 0x0063B6C0); elsewhere the out-of-line
+    // copies 0x00435560 and 0x0047D040 are called.
+    RectPoint2D Top_Left() const { return RectPoint2D(X, Y); }
+#else
     RectPoint2D Top_Left() const;
+#endif
 
     // The rectangle moved back by point (out of line, 0x0047D000 in Cell.cpp).
     Rect operator-(RectPoint2D const &point) const;
@@ -102,6 +120,11 @@ public:
     }
     // The rectangle moved by a point (TibSun TRect::operator+, here member-wise inline).
     Rect operator+(Point2D const &point) const { return Rect(X + point.X, Y + point.Y, Width, Height); }
+#ifdef RA2_RECT_POINT_INLINE
+    // TibSun rect.h's form: the corner moved by a point (RadarEventClass::Draw 0x0063BB90 calls its
+    // RectPoint2D sum 0x00435540 and the corner constructor 0x00453E40 out of line).
+    Rect operator+(RectPoint2D const &point) const { return Rect(Top_Left() + point, Width, Height); }
+#endif
 
     // Overlap with another rectangle (the free Intersect below).
     Rect Intersect(Rect const &rect, int *x = 0, int *y = 0) const;
