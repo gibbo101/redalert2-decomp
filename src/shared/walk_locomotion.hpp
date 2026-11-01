@@ -51,6 +51,7 @@ public:
     virtual bool __stdcall Is_Piggybacking();                                   // 0x0071FE00
 
     void unknown_71e220(bool arg);                                              // 0x0071E220 (Process's step)
+    bool Mark_Head_To(CoordStruct const &coord);                                 // 0x0071F590 (TibSun walk.cpp Mark_Head_To: claims the free spot nearest coord; true when one was taken)
 
     CoordStruct unknown_1c;             // +0x1C destination
     CoordStruct unknown_28;             // +0x28 head-to coordinate
