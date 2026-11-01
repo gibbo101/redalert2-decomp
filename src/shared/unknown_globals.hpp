@@ -349,6 +349,10 @@ public:
     // Sets the edited beacon's text (none: the edit was cancelled; done: the text is final; 0x0042EC20).
     void Unknown_0042EC20(unsigned short const *text, int x, int y, bool done);
 #endif
+#ifdef UNKNOWN_BEACONS_DECLARE_MEMBERS
+    // Removes the beacon in the house's slot (house and slot -1: the edited one; 0x0042E990).
+    void Unknown_0042E990(int house, int slot);
+#endif
     // +0x00 three owned blocks per house (8 houses): the static initializer 0x0042D960
     // clears the 0x18 words, its atexit 0x0042D990 deletes each non-null one.
     UnknownBeacon *unknown_00[8][3];

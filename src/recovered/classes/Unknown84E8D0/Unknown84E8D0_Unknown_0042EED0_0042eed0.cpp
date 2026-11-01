@@ -3,7 +3,7 @@
 #include "shared/beacon.hpp"
 #include "shared/house.hpp"
 #include "shared/cd_timer.hpp"
-// @ref ?Unknown_0042DE20@UnknownBeacon@@QAEXPAVSurface@@VRect@@H@Z=0042de20
+// @ref ?Unknown_0042DE20@UnknownBeacon@@QAEXPAVSurface@@VRect@@_N@Z=0042de20
 // @ref ?unknown_beacon_phase_84e948@@3HA=0084e948
 
 void Unknown84E8D0::Unknown_0042EED0(Surface *surface, Rect rect)
@@ -15,7 +15,7 @@ void Unknown84E8D0::Unknown_0042EED0(Surface *surface, Rect rect)
                 if (beacon && (beacon->unknown_flags & 1) && unknown_player_a35db4->Is_Ally(beacon->unknown_house)
                     && Houses[beacon->unknown_house]->Is_Ally(unknown_player_a35db4)
                     && !Houses[beacon->unknown_house]->unknown_13d) {
-                    beacon->Unknown_0042DE20(surface, rect, 0);
+                    beacon->Unknown_0042DE20(surface, rect, false);
                 }
             }
         }
