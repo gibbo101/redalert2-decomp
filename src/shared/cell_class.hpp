@@ -213,6 +213,7 @@ public:
     Rect unknown_4752b0() const;                // 0x004752B0 (a screen rectangle of the cell's contents; hypothesis)
     Rect unknown_474eb0() const;                // 0x00474EB0 (another; hypothesis)
     Rect unknown_475100() const;                // 0x00475100 (another; hypothesis)
+    bool unknown_4788d0() const;                // 0x004788D0 (the under-bridge flag, bit 8 of +0x140; TeleportLocomotionClass 0x006DFF00 reads its address, not its value)
     bool unknown_4788e0() const;                // 0x004788E0 (the ore may grow here: scenario +0x222A, ore below its last stage; hypothesis)
     bool unknown_478950() const;                // 0x00478950 (the ore may spread from here; hypothesis)
     bool unknown_4789d0();                      // 0x004789D0 (grows the ore through unknown_47c3a0; hypothesis)

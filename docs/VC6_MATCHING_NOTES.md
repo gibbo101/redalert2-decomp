@@ -872,3 +872,12 @@ wrapping TibSun's "no destination" case and the head-to-set path in `else` block
 original 0x5c (+4.7 points). Keep the reference source's nesting before trying declaration-order changes. Also:
 TibSun inline.h Direction written as `int x1 = coord1.X; int x2 = coord2.X;` reproduces the original's X-only stack
 copies exactly.
+
+## Float-returning helpers, switch-table bounds (Mix462, 2026-11-01)
+
+- An inlined helper's return type moves FP-store scheduling even when no float store appears: Percent_Value 0x7200C0
+  returns float (TibSun _Parse_Percentage), and only that gives WarheadTypeClass::Read_INI's fstp-after-pushes order.
+- New rows that end in switch tables need `body_bytes` in the plan item; diff_candidate's score counts the candidate's
+  tables as extra instructions, so judge such functions by their code lines. diff_candidate's default length is the
+  inventory row: pass `--length` with the true extent before calling a function a miss (Loco276's "Ratio member breaks
+  0x6F0530 (76.19)" was only a short bound; with --length 255 it is exact).
