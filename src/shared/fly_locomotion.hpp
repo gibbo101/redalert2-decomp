@@ -92,6 +92,8 @@ public:
     void unknown_4bdd10();                                                      // 0x004BDD10 (TibSun Rotation_AI)
     int unknown_4be720(bool stage, CoordStruct coord);                          // 0x004BE720 (TibSun Nearing_Target)
 
+    int Physics_004bdc20(CoordStruct &coord,UnknownFacingDir facing);
+
     bool unknown_18;                    // +0x18
     CoordStruct unknown_1c;             // +0x1C
     CoordStruct unknown_28;             // +0x28
