@@ -22,7 +22,7 @@
 // A 16-byte member at TabClass +0x4EEC (constructor 0x00494510 clears it).
 struct UnknownTab4EEC {
     UnknownTab4EEC();
-    void Unknown_00494650(int arg);    // 0x00494650 (TabClass::AI, every frame)
+    void Unknown_00494650(bool forced);    // 0x00494650 (TabClass::AI, every frame; TibSun CreditClass::AI)
     void Unknown_00494530(bool arg);   // 0x00494530 (TabClass::Draw_It, after the background)
     UnknownTab4EEC(NoInitClass const &noinit) {}
     int unknown_00;
@@ -87,7 +87,7 @@ public:
     void Unknown_006A17B0();                // 0x006A17B0 (sets +0x4F15 and flags a redraw)
     // Draws the bar's background shape (0x00AC10F8) at the sidebar surface's
     // origin (0x006A1710).
-    static void Unknown_006A1710();
+    void Unknown_006A1710();
     // Sets up the two side buttons (ids 0xF0 and 0xF1); inlined into Init_IO, whose copy of the
     // code this is (0x006A19E0, no callers).
     static void Unknown_006A19E0();
