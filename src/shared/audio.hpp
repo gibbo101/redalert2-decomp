@@ -576,7 +576,7 @@ struct AudioSystem {
 // into the system's device list.
 struct AudioDevice : AudioListNode {
     unsigned int Flags;                             // +0x0C bit 2: skipped by 0x00402900
-    int RefCount;                                   // +0x10 users of the device
+    int volatile RefCount;                          // +0x10 users of the device
     int unknown_14;
     AudioDriver *Driver;                            // +0x18
     int DriverIndex;                                // +0x1C slot in Driver->Devices
@@ -777,6 +777,7 @@ AudioChannel *__fastcall Audio_Channel_Create(AudioDevice *device);             
 void __fastcall Audio_Channel_Reuse(AudioChannel *channel);                                 // 0x004024A0
 void __fastcall Audio_Device_Destroy(AudioDevice *device);                                  // 0x00402EF0
 void __fastcall Audio_Device_Remove(AudioDevice *device);                                   // 0x004033C0
+void __fastcall Audio_Device_Release(AudioDevice *device);                                  // 0x00403310 the last user removes and destroys the device
 // The sound events (0x00403EB0-0x00406880): a sound that was asked for, from
 // the moment it is queued to the moment it has finished. Events are
 // taken from a pool (or, flagged 0x80, allocated) and kept in a global
