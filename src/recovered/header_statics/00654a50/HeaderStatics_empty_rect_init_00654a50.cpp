@@ -1,3 +1,7 @@
+// The save/load unit's guarded declarations (shared/map_view.hpp, shared/object.hpp) are
+// enabled before the unit first includes those headers.
+#define MAP_VIEW_DECLARE_SAVELOAD
+#define BOMB_LIST_DECLARE_LOAD
 // Header-static dynamic initializers of the unit at 0x00654A50: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x00654A50-0x00654C31); the other
 // drafts of this plan are emitted by these includes.

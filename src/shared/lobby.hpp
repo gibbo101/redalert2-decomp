@@ -36,6 +36,12 @@ extern wchar_t unknown_slot_names_a72734[];
 class UnknownLobbyState {
 public:
     void Unknown_00672810();                    // 0x00672810
+#ifdef LOBBY_STATE_SAVELOAD
+    // Writes / reads the block (0x00672830 / 0x00672880; the save/load unit's skirmish
+    // Session.Options; guarded: a new member here renumbers 0x0073FEE0's labels).
+    bool Save(struct IStream *stream);
+    bool Load(struct IStream *stream);
+#endif
 };
 extern UnknownLobbyState unknown_lobby_state_a3d2b0;
 // Three per-slot setting tables, -1 when a slot is cleared (0x00A3D2DC, 0x00A3D2FC,

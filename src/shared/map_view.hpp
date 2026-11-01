@@ -332,6 +332,17 @@ public:
     virtual void Revert_Mouse_Shape();                          // slot 20 0x0059F080
     virtual void Mouse_Small(bool wsmall);                      // slot 21 0x0059F090
     virtual int unknown_slot40();                               // slot 40 0x0040D150
+#ifdef MAP_VIEW_DECLARE_SAVELOAD
+    // The save/load unit's (0x00654A50) direct calls on Map; guarded because a new member
+    // hides DisplayClass::unknown_slot42 elsewhere and shifts type-count victims (0x00428370).
+    // Slot 31 (0x0059FC80, virtual in shared/mouse_class.hpp): the map's save, which
+    // Put_All 0x006558B0 calls directly on Map.
+    long unknown_slot31(struct IStream *stream);
+    // Slot 30 (0x0059F530): the map's load (Get_All 0x00656B80).
+    long unknown_slot30(struct IStream *stream);
+    // DisplayClass slot 42 (0x00498C80): sets the tactical view rectangle (TS Set_View_Dimensions).
+    void unknown_slot42(Rect const &rect);
+#endif
 };
 #endif
 

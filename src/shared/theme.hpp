@@ -71,8 +71,15 @@ public:
 #ifdef THEME_CONTROL_RECORD
     // The theme's file name, made in a static buffer ("" out of range; 0x006E8110).
     char const *Theme_File_Name(ThemeType theme);
+#endif
+#if defined(THEME_CONTROL_RECORD) || defined(THEME_SAVELOAD)
     // Reads the playing and queued themes from a save stream and restarts them (0x006E8340).
     long Load(struct IStream *stream);
+#endif
+#ifdef THEME_SAVELOAD
+    // Writes the theme that should be playing and the queued one (0x006E8310); Put_All
+    // returns its result. THEME_SAVELOAD: the save/load unit (0x00654A50).
+    long Save(struct IStream *stream);
 #endif
 
     ThemeType Current;      // +0x00 playing theme

@@ -117,6 +117,9 @@ public:
     void Clear();                                               // 0x00436710 (both lists emptied at their size; +0x30 = 45)
     void Detach(AbstractClass *target);                         // 0x00436750 (drops the bomb, or the owner from every bomb)
     HRESULT Save(IStream *stream);                              // 0x004367C0 (both lists as a count and pointers)
+#ifdef BOMB_LIST_DECLARE_LOAD
+    HRESULT Load(IStream *stream);                              // 0x00436860 (reads what Save writes)
+#endif
 
     DynamicVectorClass<BombClass *> Bombs;                      // +0x00
     DynamicVectorClass<TechnoClass *> unknown_18;               // +0x18 (BombSight units)

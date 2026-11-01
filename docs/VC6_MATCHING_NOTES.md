@@ -842,3 +842,9 @@ When a header expresses a helper as a macro, check whether the original was a fu
 code (0x403EB0-0x4068F0) is ordinary /Ob2 C calling Audio_Events_Clear / Audio_Event_Stop / Free_Stopped, which match
 byte-exact as calls; the audio_event.hpp macros are not the original shape and their expansion is too big to inline
 where the original does (Handle_Stop_Loop needs Stop written as Detach + Release_Samples calls).
+
+## Join reload order follows definition order (Reinf437, 2026-11-01)
+At a join, VC6 reloads spilled values in the order the variables were *defined*, latest first: Do_Reinforcements
+0x639970 matched when `bool atwaypoint = false;` was defined before `bool drop_pod` and assigned later
+(`atwaypoint = wp != -1;`); moving only the declaration changed nothing. Also: `while (true)` stays unrotated where
+`for (;;)` gets rotated; a BN_CLICKED test written `(unsigned short)(wparam >> 16) == 0` gives `shr reg,16; jne`.
