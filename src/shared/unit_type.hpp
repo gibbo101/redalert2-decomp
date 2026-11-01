@@ -72,6 +72,8 @@ public:
     virtual bool unknown_slot40() const;                                // 0x0070A8E0 (TechnoType's)
     virtual bool unknown_slot41() const;                                // 0x0070A8F0 (TechnoType's)
     virtual int Repair_Step() const;                                    // 0x0070B390
+    // The turret offset for a facing (Westwood Turret_Adjust; the base returns xy unchanged, no callers).
+    Point2D Turret_Adjust(int dir, Point2D const &xy) const;            // 0x0070AB20
 
     static int __fastcall From_Name(char const *name);                  // 0x0070A890
     static UnitTypeClass *__fastcall Find_Or_Make(char const *name);    // 0x0070B540
