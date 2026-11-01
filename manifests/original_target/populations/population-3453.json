@@ -4,8 +4,8 @@
     "id": "population-3453",
     "inventory_sha256": "011a42fa2dd4906cdf53bde73e3307fad2a9a5ec83b313b53f2191ddafd0129c",
     "gaps_sha256": "c2586a236b61f73de493a8008b5d3702620a296183f6186e1752fce1eb0cc4bf",
-    "historical_population_sha256": "bc00d64f773c4dcb41697d3b42201210ef1c8efefa1babcc0415898ef1835141",
-    "historical_acceptance_sha256": "6c7c6e7222672ff84e761d5bb9dba6e6c44cd06dcd3f8b1efd2611d961cf45cf"
+    "historical_population_sha256": "899ab62976cda0a2ba8c6cd8b5f2f61d4a63fa8540d14a8f8fa6661566a2b86d",
+    "historical_acceptance_sha256": "d0ad96ee489bb11d1680831ade6713bf5e150f06dc2aa638c66e460858d135cc"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -5876,7 +5876,7 @@
     "?wol_channel_full_label_7ffb34@@3PADA": 8387380,
     "?wol_observers_label_7e6cdc@@3PADA": 8285404,
     "?wol_wrong_version_label_7e21ac@@3PADA": 8266156,
-    "?Can_Join_Selected_Buddy_00755ef0@@YA_NXZ": 7692016,
+    "?Can_Join_Selected_Buddy_00755ef0@@YI_NXZ": 7692016,
     "?wol_profile_label_7fd2d8@@3PADA": 8377048,
     "?wol_profile_unranked_7fd2c4@@3PADA": 8377028,
     "?wol_invalid_name_chars_7fea20@@3PADA": 8383008,
@@ -11563,7 +11563,9 @@
     "?Theme_File_Name@ThemeClass@@QAEPBDH@Z": 7242000,
     "?Compute_CRC@IsometricTileTypeClass@@UBEXAAVWWCRCEngine@@@Z": 5431472,
     "?Read_Line@@YI_NAAVStraw@@PAGH@Z": 6930688,
-    "?Connect_Player_Pairs_0074ef80@@YI_NXZ": 7663488
+    "?Connect_Player_Pairs_0074ef80@@YI_NXZ": 7663488,
+    "?Selected_Buddy_Unavailable_00756140@@YA_NXZ": 7692608,
+    "?Update_Buddy_Buttons_007561c0@@YIXPAUHWND__@@@Z": 7692736
   },
   "regions": [
     {
@@ -68673,7 +68675,7 @@
         {
           "offset": 50,
           "kind": 20,
-          "symbol": "?Can_Join_Selected_Buddy_00755ef0@@YA_NXZ",
+          "symbol": "?Can_Join_Selected_Buddy_00755ef0@@YI_NXZ",
           "target": 7692016,
           "addend": 0,
           "resolved": 4294966522
@@ -68751,7 +68753,7 @@
           "resolved": 96281
         }
       ],
-      "source_sha256": "3eae8c250df686069747e0ff0258a4304f391b414b580d876aa96e21db6221ab",
+      "source_sha256": "1700f2f88d0f5ff96f944f1ff7b1e9db195d09c7641b18c61152f495048b2692",
       "source": "src/recovered/unowned/Update_Buddy_Buttons_007561c0.cpp",
       "population": "population-3453",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
