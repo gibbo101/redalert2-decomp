@@ -43,7 +43,7 @@ public:
 #ifdef RGB_DECLARE_BRIGHTEN
     // This colour as `color` brightened by `factor` (0x0063CDF0; TibSun RGBClass::Set(color, factor);
     // guarded: this header is in Refresh_Wonline_Players 0x0073FEE0's closure).
-    void Set(RGBClass const &color, float factor);
+    RGBClass &Set(RGBClass const &color, float factor);
 #endif
     void Set(unsigned char red, unsigned char green, unsigned char blue)
     {

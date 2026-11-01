@@ -4,8 +4,8 @@
     "id": "population-3434",
     "inventory_sha256": "26f8fd815dfcc06695a5e85cd1fa71413b1236fc8964948ec349092dabc028ba",
     "gaps_sha256": "55af9a18bbdae399928797d5d2f19476e6a68e810c283686ac9dab6399cd3b14",
-    "historical_population_sha256": "1b79cff73a3f687ee45c75b2520f571ec2eb287fbaa29faa883db88fa82bc3fa",
-    "historical_acceptance_sha256": "9d24c2c50a813a11078af5307215eb8c358cc624deb560948fa41c231bd5a359"
+    "historical_population_sha256": "3fd6e0bf0c04910acfd3f9a0a7617e52db4dcc3715dbb47b248a8840ee282f47",
+    "historical_acceptance_sha256": "2030b940eba483d71e2fef0e1ba2d75c54e4581a8f63c4c855c4a1992206e04a"
   },
   "references": {
     "?Audio_Adpcm_Index@@3QBHB": 8179680,
@@ -1466,7 +1466,7 @@
     "?Step@Benchmark@@QAEKXZ": 4387232,
     "__real@4@400e8000000000000000": 7980928,
     "??HCoordStruct@@QBE?AU0@ABU0@@Z": 6941936,
-    "?Set@RGBClass@@QAEXABV1@M@Z": 6540784,
+    "?Set@RGBClass@@QAEAAV1@ABV1@M@Z": 6540784,
     "__real@8@3ffbaaaaaaaaaaaaa800": 8016520,
     "_?entry@?1??Get_Image_0068ca40@UnknownBitmapWriter@@QAEPAVSurface@@PBDH@Z@4UUnknownBitmapEntry@@A": 11260136,
     "__real@8@3fe2c0000000c0000000": 8019920,

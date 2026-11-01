@@ -3,7 +3,7 @@
 #include "shared/isometric_tile_type.hpp"
 #include "shared/hicolor.hpp"
 // @ref ??0RGBClass@@QAE@ABV0@0M@Z=0063cc80
-// @ref ?Set@RGBClass@@QAEXABV1@M@Z=0063cdf0
+// @ref ?Set@RGBClass@@QAEAAV1@ABV1@M@Z=0063cdf0
 
 void IsometricTileTypeClass::unknown_func_52e3d0()
 {

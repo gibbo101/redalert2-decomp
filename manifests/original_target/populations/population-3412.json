@@ -4,8 +4,8 @@
     "id": "population-3412",
     "inventory_sha256": "d5259d307a70834f5853e75a6da98a5a3833a62f4f688d0f5bb653baf09390df",
     "gaps_sha256": "b72a3456592c2ce898c2c099367ffa0842cb9b80c764dfbaea77528af81854e3",
-    "historical_population_sha256": "36b6d9c840ae5db986005190e4c8bf3869ef938ec9cb6c981a2064a36249cb5a",
-    "historical_acceptance_sha256": "592fa3f114a79f00119396fda017a61c6630549b1eb43bb1f748bdd9d61d6e58"
+    "historical_population_sha256": "4439bb8d6b36531b56855965f63878c2f3eac50c3c740d4b847c8eb69a499517",
+    "historical_acceptance_sha256": "113b6598c18a9c0c7000af3691a2d0c4bb08328828aabf0cc0c4652c62e645e9"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -341,7 +341,7 @@
     "_CLSID_IsometricTileTypeClass": 8002400,
     "?AnimTypes@@3V?$TypeList@PAVAnimTypeClass@@@@A": 8806880,
     "??0RGBClass@@QAE@ABV0@0M@Z": 6540416,
-    "?Set@RGBClass@@QAEXABV1@M@Z": 6540784,
+    "?Set@RGBClass@@QAEAAV1@ABV1@M@Z": 6540784,
     "_?_brightness_factor@?M@??unknown_func_52e3d0@IsometricTileTypeClass@@QAEXXZ@4MB": 8016180,
     "_$E2": 5407616,
     "_$E5": 5407648,
@@ -10443,7 +10443,32 @@
     "?Draw_Shadow_Caster@IsometricTileTypeClass@@QAEXHPAVSurface@@UPoint2D@@VRect@@H@Z": 5420912,
     "?Is_Tile_Water@CellClass@@QBE_NXZ": 4694640,
     "_?_list@?7??Set_Cursor_Shape@DisplayClass@@QAEXPBVCell@@@Z@4PAV3@A": 8725680,
-    "_?_list@?7??Unknown_00498F10@DisplayClass@@QAEXPBVCell@@@Z@4PAV3@A": 8726068
+    "_?_list@?7??Unknown_00498F10@DisplayClass@@QAEXPBVCell@@@Z@4PAV3@A": 8726068,
+    "?As_Cell@TargetClass@@QBEPAVCellClass@@XZ": 7038480,
+    "?Shadow_Caster_List@IsometricTileTypeClass@@QBEPBVCell@@XZ": 5421232,
+    "?Add@?$DynamicVectorClass@PAVCellClass@@@@QAE_NABQAVCellClass@@@Z": 7489328,
+    "??9Cell@@QBE_NABV0@@Z": 5823312,
+    "?As_Cell@CoordStruct@@QBE?AVCell@@XZ": 4274032,
+    "_?entry@?1??Get_Image_0068ca40@UnknownBitmapWriter@@QAEPAVSurface@@PBDH@Z@4UUnknownBitmapEntry@@A": 11260136,
+    "??0AlphaShapeClass@@QAE@XZ": 4320624,
+    "?Update_All@AlphaShapeClass@@SAXXZ": 4321552,
+    "__real@8@3fe2c0000000c0000000": 8019920,
+    "_?name@?1??Theme_File_Name@ThemeClass@@QAEPBDH@Z@4PADA": 11274328,
+    "?Load@ThemeClass@@QAEJPAUIStream@@@Z": 7242560,
+    "?x@?1???AToolTipIndex@@QBEABQAVToolTip@@ABI@Z@4PAV2@A": 11712032,
+    "?Find@ToolTipManager@@QAE_NIPAVToolTip@@@Z": 7256992,
+    "?Find@ToolTipManager@@QAEPAVToolTip@@PBUPOINT@@@Z": 7257360,
+    "__real@4@4006c800000000000000": 8028512,
+    "__real@4@4000c000000000000000": 8028508,
+    "?Reset@AudioTimeSpan@@QAEXXZ": 4208672,
+    "?Read_Line@@YI_NAAVStraw@@PAGH@Z": 6930688,
+    "_?address@?1??Unknown_0063FA00@OwnerTalkClass@@QAEPAVIPXAddressClass@@PAD@Z@4V3@A": 11234568,
+    "?Dialog@PhoneEdit@@QAE_NXZ": 6347120,
+    "?Add@PhoneEdit@@QAEXXZ": 6349152,
+    "?Dialog@PhoneEntryEdit@@QAE_NPAVPhoneEntryClass@@@Z": 6350016,
+    "?Delete@PhoneEdit@@QAEXXZ": 6349856,
+    "?Init@PhoneEntryEdit@@QAEXXZ": 6351104,
+    "?Save@PhoneEntryEdit@@QAEXXZ": 6350752
   },
   "regions": [
     {
@@ -16002,7 +16027,7 @@
         {
           "offset": 250,
           "kind": 20,
-          "symbol": "?Set@RGBClass@@QAEXABV1@M@Z",
+          "symbol": "?Set@RGBClass@@QAEAAV1@ABV1@M@Z",
           "target": 6540784,
           "addend": 0,
           "resolved": 1108258
@@ -16018,7 +16043,7 @@
         {
           "offset": 271,
           "kind": 20,
-          "symbol": "?Set@RGBClass@@QAEXABV1@M@Z",
+          "symbol": "?Set@RGBClass@@QAEAAV1@ABV1@M@Z",
           "target": 6540784,
           "addend": 0,
           "resolved": 1108237
@@ -16144,7 +16169,7 @@
           "resolved": 8728504
         }
       ],
-      "source_sha256": "31015bb8631c38375a1c5efcbbd31090926bcc87d424d144f4fd5d6e7a83a8b7",
+      "source_sha256": "4fa0a2defaabfe0d50ac45ea2b1bb2c1ba8e7d18d58404013d0c8bfe0f79041b",
       "source": "src/recovered/classes/IsometricTileTypeClass/IsometricTileTypeClass_Build_Preview_Tiles_0052e3d0.cpp",
       "population": "population-3412",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",

@@ -4,8 +4,8 @@
     "id": "population-3417",
     "inventory_sha256": "f8e791c98ff58386e99c7939c382f47fe05a434648217858e79f38fa17823038",
     "gaps_sha256": "2065172265532754676ad1fa7214b0fda33ccb735ac88fcc91ff22c384f2f187",
-    "historical_population_sha256": "fdc313f6ae5c53cfe7bcb3a96a95462da21d45212997b47b37221cf7168df5a2",
-    "historical_acceptance_sha256": "4acbdd68819ec6f99d1ba0955c793b6f159fe8f5484a80e81dba69c7c28fb50e"
+    "historical_population_sha256": "00dd5e45aaea7382a0e492badd67a1057f3ad447a67789c8e2a0ef6aa9628a01",
+    "historical_acceptance_sha256": "84c65eb10c784f1acba0cabf514ffcbc9c89318b489894752f70f65364cd1b60"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -8021,7 +8021,7 @@
     "??0IsometricTileTypeClass@@QAE@ABVNoInitClass@@@Z": 5411104,
     "?From_Name@IsometricTileTypeClass@@SIHPBD@Z": 5411840,
     "?Compute_CRC@IsometricTileTypeClass@@UBEXAAVWWCRCEngine@@@Z": 5431472,
-    "?Set@RGBClass@@QAEXABV1@M@Z": 6540784,
+    "?Set@RGBClass@@QAEAAV1@ABV1@M@Z": 6540784,
     "?Add@?$DynamicVectorClass@PAVCellClass@@@@QAE_NABQAVCellClass@@@Z": 7489328,
     "??9Cell@@QBE_NABV0@@Z": 5823312,
     "?As_Cell@CoordStruct@@QBE?AVCell@@XZ": 4274032,
