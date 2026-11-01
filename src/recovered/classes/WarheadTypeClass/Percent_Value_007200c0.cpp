@@ -1,4 +1,4 @@
-// double __fastcall Percent_Value(char const *text) (0x007200C0)
+// float __fastcall Percent_Value(char const *text) (0x007200C0)
 #include "shared/warhead_type.hpp"
 
 // The abstract list every warhead type joins; declared here because
@@ -8,7 +8,7 @@
 extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0cb0;
 
 
-double __fastcall Percent_Value(char const *text)
+float __fastcall Percent_Value(char const *text)
 {
     if (strchr(text, '%')) {
         return atoi(text) * 0.01;

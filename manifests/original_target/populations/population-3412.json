@@ -4,8 +4,8 @@
     "id": "population-3412",
     "inventory_sha256": "d5259d307a70834f5853e75a6da98a5a3833a62f4f688d0f5bb653baf09390df",
     "gaps_sha256": "b72a3456592c2ce898c2c099367ffa0842cb9b80c764dfbaea77528af81854e3",
-    "historical_population_sha256": "f754ed1798c063547e0c38d2abfcca39be5e760ccb1530a7595eb477b62c3019",
-    "historical_acceptance_sha256": "0adf38d4cee7f5504ecbc47a0403c1cc6c1a317d6a539c568524a965affcf1d9"
+    "historical_population_sha256": "20de9b5b2a362102e7f5f9741a484cbe8e84834da77f5359d4801412be0c08ef",
+    "historical_acceptance_sha256": "9319a72ac0a2f24b7ddafffb045ad81d886017b7df6a53e065e79751329160d5"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -4365,7 +4365,7 @@
     "?Name_From@AnimTypeClass@@SIPBDH@Z": 4347424,
     "?Find_Or_Make_Type@@YIPAVAnimTypeClass@@PBDAAV?$TypeList@PAVAnimTypeClass@@@@@Z": 4352144,
     "?Find_Or_Make_Type@@YIPAVVoxelAnimTypeClass@@PBDAAV?$DynamicVectorClass@PAVVoxelAnimTypeClass@@@@@Z": 7401280,
-    "?Percent_Value@@YINPBD@Z": 7471296,
+    "?Percent_Value@@YIMPBD@Z": 7471296,
     "?ArtINI@@3VCCINIClass@@A": 8624112,
     "?Find_Or_Make_AnimType_004264a0@@YIPAVAnimTypeClass@@PBD@Z": 4351136,
     "?Layer@TunnelLocomotionClass@@UAGHXZ": 7279424,

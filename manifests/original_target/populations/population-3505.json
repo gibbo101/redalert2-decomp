@@ -4,8 +4,8 @@
     "id": "population-3505",
     "inventory_sha256": "852d1949a80192542a94ca0c2993d5f28732494bbb571a1aa291ad197bb49158",
     "gaps_sha256": "b023cdcfbaf64eda1ef995639d4de89e78193e3d20dc4929fc8531a0739a88b7",
-    "historical_population_sha256": "0a625508c92c2e134bb93078dfdecd198382b51aa8a68d70f8b66d052086ce71",
-    "historical_acceptance_sha256": "ea832f06126491a96f1b1980dfffc42e31bc52c1a4e9f2b0bbb5b43f12aff8f6"
+    "historical_population_sha256": "3102d7fddc33121410202cb3a5dbe846d046b12f27e6fa86e57232fb4c9a4069",
+    "historical_acceptance_sha256": "ef4864d2392893526a9bbc5620bccc0ee834c79ce4656dac71201505dac52e96"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8476,7 +8476,7 @@
     "?ArmorNames@@3PAPBDA": 7986728,
     "?Armor_From_Name@@YI?AW4ArmorType@@PBD@Z": 7551520,
     "?Find_Or_Make_Type@@YIPAVVoxelAnimTypeClass@@PBDAAV?$DynamicVectorClass@PAVVoxelAnimTypeClass@@@@@Z": 7401280,
-    "?Percent_Value@@YINPBD@Z": 7471296,
+    "?Percent_Value@@YIMPBD@Z": 7471296,
     "?Find_Or_Make_AnimType_004264a0@@YIPAVAnimTypeClass@@PBD@Z": 4351136,
     "?Index_Or_Make@BulletTypeClass@@SIHPBD@Z": 4607312,
     "?unknown_func_7339c0@WeaponTypeClass@@QAEXXZ": 7551424,

@@ -33,9 +33,10 @@ class ParticleSystemTypeClass;
 
 extern "C" GUID const CLSID_WarheadTypeClass;   // 0x007A1DB0
 
-// A percentage or plain number ("50%" -> 0.5; hypothesis: Westwood's
-// fixed-point/percent INI value parser).
-double __fastcall Percent_Value(char const *text);                     // 0x007200C0
+// A percentage or plain number ("50%" -> 0.5). Returns float (TibSun
+// warhead.cpp _Parse_Percentage): Read_INI 0x007204E0 inlines it and only the
+// float return reproduces its store scheduling.
+float __fastcall Percent_Value(char const *text);                     // 0x007200C0
 extern "C" char *__cdecl strchr(char const *string, int character);
 extern "C" int __cdecl atoi(char const *string);
 extern "C" double __cdecl atof(char const *string);

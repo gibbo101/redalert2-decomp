@@ -4,8 +4,8 @@
     "id": "population-2609",
     "inventory_sha256": "3ca4721c488e6cff82722e3078e6c616ca398bdd8bac525334c84ccfd789194d",
     "gaps_sha256": "1a3e9b538f664ed5c8b2a3ef5880eaa96898f911a76fe2db5a55956cb7b7f511",
-    "historical_population_sha256": "70404e9561dbbd99f6188be4eeacd4f9cc50ae0882db2dd3c93f714e910f9e9a",
-    "historical_acceptance_sha256": "713b69cfe1cd6a62c83717ac35ecf7864f9411ef24d695678165b1247da2f4b2"
+    "historical_population_sha256": "f89a2d1641bc38e5eb678fc812684a323fe6c95ce9d83b362a6146d504141a1b",
+    "historical_acceptance_sha256": "601007e1cc55b7283aa8773c09d47129cd74c91df140f0b87ef409fac271bf38"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3608,7 +3608,7 @@
     "?Peer_To_Peer@GadgetClass@@UAEXIAAIAAVControlClass@@@Z": 4732256,
     "?Peer_To_Peer@ListClass@@UAEXIAAIAAVControlClass@@@Z": 5481680,
     "?Peer_To_Peer@SliderClass@@UAEXIAAIAAVControlClass@@@Z": 6835472,
-    "?Percent_Value@@YINPBD@Z": 7471296,
+    "?Percent_Value@@YIMPBD@Z": 7471296,
     "?PersistenceNames@@3PAPBDA": 8357312,
     "?Persistence_From_Name@TriggerTypeClass@@SIHPBD@Z": 7267264,
     "?Pixel_To_Value@GaugeClass@@UAEHH@Z": 5046720,

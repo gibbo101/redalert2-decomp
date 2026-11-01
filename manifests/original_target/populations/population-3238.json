@@ -4,8 +4,8 @@
     "id": "population-3238",
     "inventory_sha256": "67d86adf94eb225efc7377f8d563fae77a8f43e4a82680be337df0996fee23ee",
     "gaps_sha256": "dc9576559ebc3eee15dcb288d4807e89abbffe9ce2bbb029ce10afefde9f65b4",
-    "historical_population_sha256": "8f61b70805f9c73af99826e3046d75976b085c2a48b6fe1d23f3c68ea95abfb4",
-    "historical_acceptance_sha256": "142fbb1b13a81da36cc097f39f9e29350d403a26590beb31db81d6f44c35b675"
+    "historical_population_sha256": "42add825825bbecb0c60648187d3423bd71347d054d56487513b7269540ab226",
+    "historical_acceptance_sha256": "93d487c9c1d1dd659b293aff543326665e033987afe098c38e402fc2bdfb97c1"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3293,7 +3293,7 @@
     "?Owner@TechnoClass@@UBEHXZ": 7107616,
     "?Owning_House@AbstractClass@@UBEPAVHouseClass@@XZ": 4260416,
     "?Owning_House@TechnoClass@@UBEPAVHouseClass@@XZ": 7107632,
-    "?Percent_Value@@YINPBD@Z": 7471296,
+    "?Percent_Value@@YIMPBD@Z": 7471296,
     "?PersistenceNames@@3PAPBDA": 8357312,
     "?Persistence_From_Name@TriggerTypeClass@@SIHPBD@Z": 7267264,
     "?Place_Tiberium@HouseClass@@QAEXHH@Z": 5132784,

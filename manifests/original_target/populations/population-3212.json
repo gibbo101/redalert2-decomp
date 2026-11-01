@@ -4,8 +4,8 @@
     "id": "population-3212",
     "inventory_sha256": "c04ec5cb0749398d3cbd9154df70898aa89cf727659cd3ab4dcb312aa8b2e6f1",
     "gaps_sha256": "a9cc2eeab68926d3e9302e55a56994407cd788fc8a1f962aa512d97d2e977dac",
-    "historical_population_sha256": "bb74c7b855a58186868c6f746791bf6793b7d1c9df55252bc00768971f7baa05",
-    "historical_acceptance_sha256": "bb3a8a7769c8c7393bbb2e43f33d98f2438918cac739aa4f96fc3edff11ffdcb"
+    "historical_population_sha256": "0e9034f3a99397a1e8bafe9b8948feaab85125d3d1b9f767e4f557be05ababfa",
+    "historical_acceptance_sha256": "60d8183a8f4ac97e4f3c49ce290888a295f2461f7030b0ab9e95565738ef3bf7"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5675,7 +5675,7 @@
     "?Find_Index@VoxClass@@SIHPBD@Z": 7431744,
     "?Find_Index@HouseClass@@SIHPBD@Z": 5200704,
     "?Find_Or_Make_Type@@YIPAVVoxelAnimTypeClass@@PBDAAV?$DynamicVectorClass@PAVVoxelAnimTypeClass@@@@@Z": 7401280,
-    "?Percent_Value@@YINPBD@Z": 7471296,
+    "?Percent_Value@@YIMPBD@Z": 7471296,
     "?ArtINI@@3VCCINIClass@@A": 8624112,
     "?Find_Or_Make_AnimType_004264a0@@YIPAVAnimTypeClass@@PBD@Z": 4351136,
     "??0InfantryTypeClass@@QAE@ABVNoInitClass@@@Z": 5283168,

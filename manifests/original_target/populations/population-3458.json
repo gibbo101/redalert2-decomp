@@ -4,8 +4,8 @@
     "id": "population-3458",
     "inventory_sha256": "121ea863829c3621b7658fd07f62b27f9fb35755e998ef15dd5c3dfe0dd8ef7a",
     "gaps_sha256": "9b408bcde1aeaeee2b2ab449cd96fafd0c15be857db866ff6d1236a9aee939ab",
-    "historical_population_sha256": "b0325c56e1ffdad0d29dc1ab19a78fd4581243ad0fcc6e1e7ea351ab44224a96",
-    "historical_acceptance_sha256": "890939674afafec5f2793523d762cb7cead46ffc595e6b4323d85c67d55bb31b"
+    "historical_population_sha256": "f8afb45582c987eb709057d8caa738d87547d199df8267381bc0eab3a04c43b0",
+    "historical_acceptance_sha256": "c722242e4bfe0924d46f28bbb41f9afbc115d4747f39b6be4bd612ff9da1c5ad"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5094,7 +5094,7 @@
     "__imp__GetCapture@0": 7971820,
     "__imp__ReleaseCapture@0": 7971816,
     "?One_Time@MouseClass@@UAEXXZ": 5895408,
-    "?Percent_Value@@YINPBD@Z": 7471296,
+    "?Percent_Value@@YIMPBD@Z": 7471296,
     "??_7WarheadTypeClass@@6BIPersistStream@@@": 8055816,
     "??_7WarheadTypeClass@@6BIRTTITypeInfo@@@": 8055788,
     "??_7WarheadTypeClass@@6BINoticeSink@@@": 8055780,

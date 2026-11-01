@@ -4,8 +4,8 @@
     "id": "population-2666",
     "inventory_sha256": "457c223bbe3017670b62056b16b03ea6fdb4b79228becdd97c39b3a0a46ed65e",
     "gaps_sha256": "505127c4cdd739d9f6d1f1e87fd84ffa851f605ec57e351578df12c163260985",
-    "historical_population_sha256": "b6a9854a218760c3db22664d38b465e86c46981e80203451ccca6fcfbe2f015d",
-    "historical_acceptance_sha256": "45e82f514e769b912960147c486eaf9c20482f749fce746b0e0ad129fd7fa925"
+    "historical_population_sha256": "b23cc997bc7d4a36663615c6e6e4a1263743786fe22b615855dc9ce006a2a3e9",
+    "historical_acceptance_sha256": "bcfd76860b531d5446b68d17b74b2d0603af2edf05645bf16fa2882709d43aa3"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6612,7 +6612,7 @@
     "?unknown_slot64@ParticleClass@@UAEPBVCell@@H@Z": 6333776,
     "?From_Name@VoxelAnimTypeClass@@SIHPBD@Z": 7400032,
     "?Find_Or_Make_Type@@YIPAVVoxelAnimTypeClass@@PBDAAV?$DynamicVectorClass@PAVVoxelAnimTypeClass@@@@@Z": 7401280,
-    "?Percent_Value@@YINPBD@Z": 7471296,
+    "?Percent_Value@@YIMPBD@Z": 7471296,
     "??_7WarheadTypeClass@@6BIPersistStream@@@": 8055816,
     "??_7WarheadTypeClass@@6BIRTTITypeInfo@@@": 8055788,
     "??_7WarheadTypeClass@@6BINoticeSink@@@": 8055780,
