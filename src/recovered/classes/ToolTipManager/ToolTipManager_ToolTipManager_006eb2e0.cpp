@@ -20,6 +20,7 @@
 // @ref ?Refresh@ToolTipManager@@UAEX_N@Z=006ebe60
 // @ref ?Debug_Print@ToolTipManager@@UAEXPAUToolTipRecord@@@Z=006ebe90
 // @ref ?Get_Text@ToolTipManager@@UAEPBGH@Z=006ebeb0
+#define TOOL_TIP_UNIT
 #define VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS

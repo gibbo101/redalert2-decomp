@@ -26,6 +26,9 @@
 #include "shared/string_table.hpp"
 #include "shared/tag_rect.hpp"
 
+// TOOL_TIP_UNIT (defined by the ToolTip.cpp unit before this header) declares the unit's own
+// out-of-line members; other users keep the original declarations unchanged.
+
 
 
 
@@ -36,6 +39,10 @@ class ToolTip;
 // original keeps after their callers; the binary search is 0x006EC350.
 struct ToolTipIndexNode {
     ToolTipIndexNode();                     // 0x006EC270 (empty; out of line)
+#ifdef TOOL_TIP_UNIT
+    bool operator==(ToolTipIndexNode const &other) const { return ID == other.ID; }
+    bool operator<(ToolTipIndexNode const &other) const { return ID < other.ID; }
+#endif
     unsigned int ID;
     ToolTip *Data;
 };
@@ -59,8 +66,7 @@ public:
             ToolTipIndexNode *table = new ToolTipIndexNode[IndexSize + amount];
             if (table != 0) {
                 for (int index = 0; index < IndexCount; index++) {
-                    table[index].ID = IndexTable[index].ID;
-                    table[index].Data = IndexTable[index].Data;
+                    table[index] = IndexTable[index];
                 }
                 delete[] IndexTable;
                 IndexTable = table;
@@ -107,6 +113,31 @@ public:
         }
         return x;
     }
+#ifdef TOOL_TIP_UNIT
+    // Drops the node of id, moving the later nodes down (inline in
+    // ToolTipManager::Remove 0x006EBA10; Tiberian Sun's IndexClass::Remove_Index).
+    bool Remove_Index(unsigned int const &id)
+    {
+        ToolTipIndexNode const *node = Search_For_Node(id);
+        if (node == 0) {
+            return false;
+        }
+        int found = node - IndexTable;
+        if (found != -1) {
+            for (int index = found + 1; index < IndexCount; index++) {
+                IndexTable[index - 1] = IndexTable[index];
+            }
+            IndexCount--;
+            ToolTipIndexNode fake;
+            fake.ID = 0;
+            fake.Data = 0;
+            IndexTable[IndexCount] = fake;
+            Archive = 0;
+            return true;
+        }
+        return false;
+    }
+#endif
     bool Is_Archive_Same(unsigned int const &id) const;                         // 0x006EC280
     ToolTipIndexNode const *Search_For_Node(unsigned int const &id) const;      // 0x006EC2A0
     static int __cdecl search_compfunc(void const *left, void const *right);    // 0x006EC320
@@ -132,8 +163,15 @@ public:
         unknown_18 = false;
         Label = 0;
     }
+#ifdef TOOL_TIP_UNIT
+    ~ToolTip() {}                   // Tiberian Sun's empty destructor (Add's inline budget)
+#endif
     ToolTip(ToolTip const &other) : ID(other.ID), Region(other.Region), Label(other.Label), unknown_18(other.unknown_18) {}
+#ifdef TOOL_TIP_UNIT
+    unsigned int ID;                // +0x00 (unsigned as Tiberian Sun's ToolTip)
+#else
     int ID;                         // +0x00
+#endif
     Rect Region;                    // +0x04 screen area
     char const *Label;              // +0x14 string table label; 0 asks Get_Text(ID)
     bool unknown_18;                // +0x18
@@ -171,6 +209,14 @@ public:
     bool Add(ToolTip const &tip);                                       // 0x006EB860
     void Remove(unsigned int id);                                             // 0x006EBA10
     bool Update();                                                      // 0x006EBDB0
+#ifdef TOOL_TIP_UNIT
+    // The registered tip whose area contains the point, or 0 (0x006EBD10;
+    // expanded in Process_Message).
+    ToolTip *Find(POINT const *point);
+    // The tip registered under id, copied to tooltip when that is not 0
+    // (0x006EBBA0; expanded in Add; Tiberian Sun's Find).
+    bool Find(unsigned int id, ToolTip *tooltip);
+#else
     // The registered tip whose area contains the point, or 0 (an inline
     // member: expanded in Process_Message, out-of-line copy 0x006EBD10).
     ToolTip *Find(POINT const *point)
@@ -184,6 +230,7 @@ public:
         }
         return 0;
     }
+#endif
     void Hide_Current();                                                // 0x006EBEC0
     bool Is_Active() const;                                             // 0x006EBEE0
 
