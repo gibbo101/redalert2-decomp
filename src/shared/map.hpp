@@ -303,6 +303,12 @@ public:
     void Damage_Low_Bridge_Piece_NS_005601F0(Cell const &cell);
     void Damage_Low_Bridge2_Piece_NS_00560C10(Cell const &cell);
 #endif
+#ifdef RA2_MAP_BOMB_BRIDGE
+    // Bridge destruction around a cell (BombClass::Unknown_00435D30 on a bridge repair hut): 0x00557090 when a
+    // cell within two holds a bridge tile or overlay, else 0x00556520 (names hypotheses; twins).
+    void Unknown_00556520(Cell const &cell);                      // 0x00556520
+    void Unknown_00557090(Cell const &cell);                      // 0x00557090
+#endif
     void Repair_Low_Bridge_EW(Cell const &cell);                // 0x005615A0
     void Repair_Low_Bridge_NS(Cell const &cell);                // 0x00561A80
     void Repair_Low_Bridge2_EW(Cell const &cell);               // 0x00561F60

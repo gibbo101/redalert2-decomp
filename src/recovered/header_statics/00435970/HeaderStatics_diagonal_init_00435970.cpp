@@ -1,3 +1,5 @@
+// The Bomb unit calls MapClass 0x00556520/0x00557090 (BombClass::Unknown_00435D30).
+#define RA2_MAP_BOMB_BRIDGE
 #define BOMB_LIST_DECLARE_LOAD
 // Header-static dynamic initializers of the unit at 0x00435970 and the
 // unit's BombClass list; the other drafts of this plan are emitted by this file.

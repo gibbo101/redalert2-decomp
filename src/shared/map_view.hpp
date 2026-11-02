@@ -72,6 +72,12 @@ public:
     CoordStruct Unknown_00569FB0(CoordStruct const &from, CoordStruct const &to, HouseClass *house); // owner0200Z, observed hidden-result thiscall
     CellClass &operator[](CoordStruct const &coord);                            // 0x00548000
     CellClass &operator[](Cell const &cell);                              // 0x00548070
+#ifdef RA2_MAP_BOMB_BRIDGE
+    // Bridge destruction around a cell (BombClass::Unknown_00435D30 on a bridge repair hut): 0x00557090 when a
+    // cell within two holds a bridge tile or overlay, else 0x00556520 (names hypotheses; twins).
+    void Unknown_00556520(Cell const &cell);                      // 0x00556520
+    void Unknown_00557090(Cell const &cell);                      // 0x00557090
+#endif
     void Sight_From(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, bool arg6, bool arg7, bool arg8);   // 0x0054A110
     void Unknown_0054A720(CoordStruct const &coord, int radius);           // 0x0054A720 (TActionClass 0x006B1050: the rules RevealTriggerRadius around a waypoint)
     void Unknown_0055A300();                                              // 0x0055A300
