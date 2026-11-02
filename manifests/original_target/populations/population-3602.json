@@ -8395,31 +8395,6 @@
       "source_order": 158495
     },
     {
-      "entry": 5116208,
-      "method": "004e1130",
-      "symbol": "?get@Leaf_4e1130@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_4e1130@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "643a9b227f3b8bc93142e908d080e8b01a97ebcffea9da65e5062be083708e0e",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "b4688e2d86fea3d27884e9fc1dc230303971bd98fe28f30663aba518734f72fc",
-      "relocations": [],
-      "source_sha256": "4f1aa71d9996683b4e7595ae5cbaa4fc8aee640e8ebdc4c4588c74ddc951ca30",
-      "source": "src/recovered/004e1130.cpp",
-      "population": "population-3602",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 158496
-    },
-    {
       "entry": 5123632,
       "method": "004e2e30",
       "symbol": "?get@Leaf_4e2e30@@QAEXXZ",

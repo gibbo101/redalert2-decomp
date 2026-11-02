@@ -15,6 +15,14 @@ public:
     HashString();                                       // 0x004E1130
     HashString(HashString const &other);                // 0x004E1180
     HashString &operator=(HashString const &other);     // 0x004E11C0
+#ifdef RA2_HASH_STRING_UNIT
+    // Declared only in the HashString unit 0x004E1130 (member comparisons next to the free ones
+    // would make other includers' comparisons ambiguous).
+    HashString(char const *text);                       // 0x004E1140 (copied, then upper-cased)
+    bool Is_Empty() const;                              // 0x004E11B0
+    bool operator==(HashString const &other) const;     // 0x004E11F0
+    bool operator!=(HashString const &other) const;     // 0x004E1240
+#endif
     char Text[0x100];
 };
 bool __fastcall operator==(HashString const &a, HashString const &b);   // 0x004E1290
