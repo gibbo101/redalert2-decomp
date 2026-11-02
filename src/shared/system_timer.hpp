@@ -6,6 +6,7 @@
 
 class SystemTimerClass {
 public:
+    long operator()() const;               // 0x0069A430, callable clock used by BasicTimerClass
     operator long() const;                  // 0x0069A430
 };
 
