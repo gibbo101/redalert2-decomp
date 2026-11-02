@@ -1,6 +1,6 @@
 // The CPU-clock benchmark (unit 0x0042F0A0-0x0042F1F7, Westwood's Bench.cpp as in the Red Alert and
 // Tiberian Sun sources): a running total of clock/16 intervals. RA2 keeps its constructor, Reset,
-// Begin, Step and Value (End is not linked).
+// Begin, End (0x0042F140, unreferenced), Step and Value.
 #ifndef RA2_SHARED_BENCH_HPP
 #define RA2_SHARED_BENCH_HPP
 
@@ -42,6 +42,7 @@ public:
     Benchmark();                                    // 0x0042F0C0
     void Begin(bool reset = false);                 // 0x0042F100
     void Reset();                                   // 0x0042F0F0
+    void End();                                     // 0x0042F140 (adds the interval since Begin; a full average decays)
     unsigned long Value() const;                    // 0x0042F1E0 (the average interval)
     unsigned long Step();                           // 0x0042F1A0 (adds the interval since Begin; the event count)
 
