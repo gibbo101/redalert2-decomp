@@ -18,8 +18,7 @@ void RadBeam::Draw_Line(CoordStruct const &start, CoordStruct const &end, short 
     if (Clip_Line(first_pixel, second_pixel, clip)) {
         int first_z = Depth - Unknown_006A2970(start.Z) - 2;
         int second_z = 0 - Unknown_006A2970(end.Z) - 2;
-        // The shared Surface slot13 still exposes raw 32-bit arguments.
-        unknown_surface_83995c->Unknown_Slot13((int)&unknown_rect_839630, (int)&first_pixel, (int)&second_pixel,
-                                              color, first_z, second_z, 0);
+        unknown_surface_83995c->Draw_Depth_Shaded_Line(unknown_rect_839630, first_pixel, second_pixel,
+                                                       color, first_z, second_z);
     }
 }

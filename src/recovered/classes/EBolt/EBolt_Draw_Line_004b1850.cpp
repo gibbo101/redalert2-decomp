@@ -20,7 +20,6 @@ void EBolt::Draw_Line_004B1850(CoordStruct start,CoordStruct end,int color,int f
     int first_z=first_depth-Unknown_006A2970(start.Z)-2;
     int second_z=second_depth-Unknown_006A2970(end.Z)-2;
     int pixel=unknown_drawer_8323c4->Convert(color);
-    // The shared Surface slot13 still exposes raw 32-bit arguments.
-    unknown_surface_839964->Unknown_Slot13((int)&unknown_rect_839630,(int)&first_pixel,(int)&second_pixel,
-        pixel,first_z,second_z,0);
+    unknown_surface_839964->Draw_Depth_Shaded_Line(unknown_rect_839630,first_pixel,second_pixel,
+        pixel,first_z,second_z);
 }

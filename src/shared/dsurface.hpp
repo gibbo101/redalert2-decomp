@@ -45,10 +45,14 @@ public:
     virtual bool Fill_Rect(Rect const &fillrect, int color);               // slot 5, 0x004AB4F0
     virtual bool Fill_Rect(Rect const &cliprect, Rect const &fillrect, int color);   // slot 4, 0x004AB520
     virtual bool Fill_Rect_Trans(Rect const &rect, RGBClass const &color, unsigned int percent);  // slot 7, 0x004AB730
-    virtual bool Unknown_Slot13(int, int, int, int, int, int, int);        // slot 13, 0x004AFC30
+    virtual bool Draw_Depth_Shaded_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
+                                       unsigned color, int start_depth, int end_depth, bool write_depth = false);  // slot 13, 0x004AFC30
     virtual bool Unknown_Slot14(int, int, int, int, int, int, int);        // slot 14, 0x004ABBA0
-    virtual bool Unknown_Slot15(int, int, int, int, int, int, int, int, int, int, int);  // slot 15, 0x004AC650
-    virtual bool Unknown_Slot16(int, int, int, int, int, int, int);        // slot 16, 0x004ADE00
+    virtual bool Draw_Depth_Antialiased_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
+                                       RGBClass const &color, int start_depth, int end_depth, bool write_depth,
+                                       bool blend_red, bool blend_green, bool blend_blue, float intensity);  // slot 15, 0x004AC650
+    virtual bool Unknown_Slot16(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
+                                       RGBClass const &color, float intensity, int start_depth, int end_depth);  // slot 16, 0x004ADE00
     virtual int Draw_Dashed_Line_Depth_Masked(Point2D const &startpoint, Point2D const &endpoint, int color,
                                               bool const *pattern, int phase, bool empty_only);  // slot 19, 0x004B0650
     virtual bool Draw_Line_Depth_Masked(Point2D const &startpoint, Point2D const &endpoint, int color,

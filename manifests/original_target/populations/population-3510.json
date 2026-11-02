@@ -4,8 +4,8 @@
     "id": "population-3510",
     "inventory_sha256": "55ef75a98b9ec8db5596703ef3ebd36753bb5c71dd39f6fd0e9c6af397c68b30",
     "gaps_sha256": "697fe140034dfdd248503c5dcbd107ee02373b7bd246baaa0d4c6b7698f575a3",
-    "historical_population_sha256": "6706f9c3f92d419a71aa7cf129322a809fe79bd818775abc8e45ebc2605f83fb",
-    "historical_acceptance_sha256": "8b1c833a65e48a72e05676661b4ebf44dd023f63bbb7e726860c30c902169a62"
+    "historical_population_sha256": "c62ec48bc610ad168c271f811c458df972fa036f2752380a84d8485091bd9c3f",
+    "historical_acceptance_sha256": "502e5f8a555b3adeca6ee9dc5b90b630abf4b5571c940d437dfbbfb14555ad16"
   },
   "references": {
     "_unknown_empty_rect": 11505560,
@@ -1889,10 +1889,10 @@
     "__imp__WaitForSingleObject@8": 7971280,
     "__imp__ReleaseMutex@4": 7971216,
     "?Draw_Line_Depth_Masked@XSurface@@UAE_NABUPoint2D@@0H_N@Z": 7814832,
-    "?Unknown_Slot13@XSurface@@UAE_NHHHHHHH@Z": 7814848,
+    "?Draw_Depth_Shaded_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1IHH_N@Z": 7814848,
     "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z": 7814864,
-    "?Unknown_Slot15@XSurface@@UAE_NHHHHHHHHHHH@Z": 7814880,
-    "?Unknown_Slot16@XSurface@@UAE_NHHHHHHH@Z": 7814896,
+    "?Draw_Depth_Antialiased_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@HH_N333M@Z": 7814880,
+    "?Unknown_Slot16@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@MHH@Z": 7814896,
     "?Fill_Rect_Trans@XSurface@@UAE_NABVRect@@ABVRGBClass@@I@Z": 7816880,
     "?UnVQ_Nop@@YAXPAE00KKK@Z": 7832624,
     "?PageFlip_Nop@@YIJPAUVQAHandle@@@Z": 7832640,
