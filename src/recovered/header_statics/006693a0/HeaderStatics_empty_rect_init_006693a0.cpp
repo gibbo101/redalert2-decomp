@@ -1,3 +1,5 @@
+#define RA2_COORD_FROM_CELL_INLINE
+#define RA2_TACTICAL_PICK_OBJECT
 // Header-static dynamic initializers of the unit at 0x006693A0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x006693A0-0x00669581); the other
 // drafts of this plan are emitted by these includes.
