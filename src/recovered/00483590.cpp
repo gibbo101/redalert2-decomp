@@ -1,3 +1,4 @@
+#define CONVERT_NAMED_BLITTERS
 // convert.cpp unit (0x00483590-0x004861BF; TibSun convert.cpp): the empty
 // rectangle of shared/shape_file.hpp (0x00851140) is this unit's first
 // header-static initializer (0x00483590); ConvertClass::Drawers follows.
