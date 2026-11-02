@@ -4,8 +4,8 @@
     "id": "population-3440",
     "inventory_sha256": "e5f830322f4a098a1bb8de23ca8190b9cdc889e7c7c4d360c871629debc28f97",
     "gaps_sha256": "99b3da6e21b555f3b6a4844a4fd41085edb08a4bb61fbc3b054886ab3fa15a33",
-    "historical_population_sha256": "5c8c2a54dbce888ad20756cccf173225cc8bea5db70ce9125c339020f87a50ac",
-    "historical_acceptance_sha256": "9d89c0baa43b20dc51cf9f3eee2bebc0517f94febda26631a0017953f9451a58"
+    "historical_population_sha256": "930e95158aa6c67ab3fb48d364f609b4c2b35b6af20347e7c616fb46593b796f",
+    "historical_acceptance_sha256": "4b8585969d38ceb78959b29df5e07ff358c2535c140821476338157189251ac8"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -1324,7 +1324,7 @@
     "?Audio_Static_Sound_Count@@3HA": 11339848,
     "__real@8@3ffda0d97bb4e7870000": 7999744,
     "?Audio_Events_Shutdown@@YAXXZ": 4210560,
-    "?Audio_System_Shutdown@@YIHXZ": 4204944,
+    "?Audio_System_Shutdown@@YIXXZ": 4204944,
     "?Focus_Restore@@YAXXZ": 7566336,
     "?Unknown_00406F70@@YAXXZ": 4222832,
     "__imp__SetActiveWindow@4": 7971872,
@@ -4279,7 +4279,7 @@
     "??_EPlayerProfile@@UAEPAXI@Z": 7577744,
     "?Speech_Shutdown@@YAXXZ": 7427968,
     "?unknown_00715f80@@YAXXZ": 7430016,
-    "?Audio_Shutdown@@YAHXZ": 4222080,
+    "?Audio_Shutdown@@YAXXZ": 4222080,
     "?Audio_Open_Main_Device@@YAHXZ": 4222240,
     "?Audio_Close_Main_Device@@YAXXZ": 4222368,
     "?Audio_Pause@@YIXXZ": 4222432,

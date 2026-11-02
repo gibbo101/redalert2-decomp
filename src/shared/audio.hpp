@@ -969,7 +969,7 @@ void __fastcall Audio_Device_Add_Channel(AudioDevice *device, AudioChannel *chan
 void __fastcall Audio_Channel_Detach(AudioChannel *channel);                        // 0x004028B0
 void Audio_Update_Devices();                                                                // 0x00402900
 HRESULT Audio_System_Init();                                                                // 0x00402940
-int __fastcall Audio_System_Shutdown();                                                                // 0x00402990
+void __fastcall Audio_System_Shutdown();                                                               // 0x00402990
 AudioDriver *__fastcall Audio_Create_Driver(AudioDriverInfo *info);                         // 0x00402AF0
 void __fastcall Audio_Destroy_Driver(AudioDriver *driver);                                  // 0x00402B80
 void Audio_Destroy_Drivers();                                                               // 0x00402BB0

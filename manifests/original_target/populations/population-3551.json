@@ -4,8 +4,8 @@
     "id": "population-3551",
     "inventory_sha256": "464c72f32da4234110f113b853c8d810b6f27d4d4b8897aadce99cece4f4584d",
     "gaps_sha256": "6501d8854bd7a35138e6a47ea5108ed98492aafedb791fd626bb614e7e8a959f",
-    "historical_population_sha256": "2a08a585cfd85e17dc23592967f605571173f1a076d30b5fd651421d9b599fba",
-    "historical_acceptance_sha256": "aa853c4e35fbdf72c7f53fa2e3794cf88cf6582f29cc9c8757359cdcbf232790"
+    "historical_population_sha256": "89fa13d1f52f6898da6ab3c5ff42456cf45c506df423d0c3f575decb0429920a",
+    "historical_acceptance_sha256": "86d0b10edcf5a39b4f5279d877e3f779d66a8304df695b9501c2dad11b6ad54b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -11219,7 +11219,7 @@
     "?Audio_Static_Sound_Maximum@@3HA": 11339852,
     "?Audio_Static_Sound_Count@@3HA": 11339848,
     "?Audio_Events_Shutdown@@YAXXZ": 4210560,
-    "?Audio_System_Shutdown@@YIHXZ": 4204944,
+    "?Audio_System_Shutdown@@YIXXZ": 4204944,
     "?Get_Source@AudioBankEntry@@QAIPAUAudioSource@@XZ": 4202544,
     "?Audio_Event_Start_Pass@@YIPAUAudioSource@@PAUAudioEvent@@@Z": 4212448,
     "?Resume@VocStaticSound@@QAEXXZ": 7423104,

@@ -127,7 +127,7 @@ void __fastcall Delete_All_Objects_00519960();
 void RadarEventClass_unknown_delete_all_63b890();
 void __fastcall Unknown_Free_All_Art_006F1D20();
 void Speech_Free_All();
-int Audio_Shutdown();
+void Audio_Shutdown();
 void Unknown_006F9D90();
 void __cdecl CopyProtection_Shutdown_00491b00();
 

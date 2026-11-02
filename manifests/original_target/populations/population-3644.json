@@ -4,8 +4,8 @@
     "id": "population-3644",
     "inventory_sha256": "0b2694896679b3f2a843087224d2b2cfd10ad4ffbf7540f2b4210b0ab69b2e80",
     "gaps_sha256": "355294bde2a0af5c3ec1b0039991a0241db090b1af18c0496e2080fdcd608b92",
-    "historical_population_sha256": "afce5114c4c57911be8433bd9aac3ab6105e3a192e39c88b295fc45d0dae227b",
-    "historical_acceptance_sha256": "9629332c105bc91409a26d266aa2be1101e91a907862e3ea05a2f710720e62ac"
+    "historical_population_sha256": "1ee16335bb185472dd47730578f352410474d08caae7debb92d8895efc05aa2a",
+    "historical_acceptance_sha256": "90f3f19e7904b17d87162bddea38a4e9deac47f3523cbb48a35c78cd012e19ab"
   },
   "references": {
     "?Audio_List_Remove@@YIXPAUAudioListNode@@@Z": 4223872,
@@ -1324,7 +1324,7 @@
     "?Audio_Static_Sound_Count@@3HA": 11339848,
     "__real@8@3ffda0d97bb4e7870000": 7999744,
     "?Audio_Events_Shutdown@@YAXXZ": 4210560,
-    "?Audio_System_Shutdown@@YIHXZ": 4204944,
+    "?Audio_System_Shutdown@@YIXXZ": 4204944,
     "?Focus_Restore@@YAXXZ": 7566336,
     "?Unknown_00406F70@@YAXXZ": 4222832,
     "__imp__SetActiveWindow@4": 7971872,
