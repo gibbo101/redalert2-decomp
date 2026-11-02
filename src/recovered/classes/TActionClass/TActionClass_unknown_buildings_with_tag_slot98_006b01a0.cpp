@@ -20,3 +20,5 @@ bool TActionClass::unknown_buildings_with_tag_slot98(HouseClass *house, ObjectCl
     }
     return handled;
 }
+
+

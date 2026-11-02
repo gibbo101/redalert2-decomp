@@ -12,10 +12,13 @@ bool TActionClass::unknown_hunt_technos_with_tag(HouseClass *house, ObjectClass 
     for (int index = 0; index < Technos.Count(); index++) {
         TechnoClass *techno = Technos[index];
         if (techno->Kind_Of() != 6 && techno->unknown_7d && techno->unknown_74 && techno->unknown_34 != 0
-            && techno->unknown_34->Is_Trigger_Attached(trigger)
-            && (techno->unknown_slot91() == 0 || techno->unknown_slot91() == 0x17)) {
-            techno->unknown_slot116(5, false);
+            && techno->unknown_34->Is_Trigger_Attached(trigger)) {
+            if (techno->unknown_slot91() == 0 || techno->unknown_slot91() == 0x17) {
+                techno->unknown_slot116(5, false);
+            }
         }
     }
     return true;
 }
+
+

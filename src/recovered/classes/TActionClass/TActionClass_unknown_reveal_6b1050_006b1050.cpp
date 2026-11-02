@@ -1,6 +1,6 @@
 // bool TActionClass::unknown_reveal_6b1050(...) (0x006B1050)
 // TibSun TAction_REVEAL_SOME shape: unless the player sees everything, Map 0x0054A720 reveals the rules
-// RevealTriggerRadius around waypoint Data (raised by half the cell height, bridges +4), then 0x0055A300; always true.
+// RevealTriggerRadius around waypoint Data.Value (raised by half the cell height, bridges +4), then 0x0055A300; always true.
 #include "shared/taction.hpp"
 #include "shared/house.hpp"
 #include "shared/id_source.hpp"
@@ -17,7 +17,7 @@
 bool TActionClass::unknown_reveal_6b1050(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
     if (!unknown_player_a35db4->unknown_188) {
-        Cell waypoint = unknown_id_source_a3d290->Get_Waypoint_Location(Data);
+        Cell waypoint = unknown_id_source_a3d290->Get_Waypoint_Location(Data.Value);
         int extra;
         if ((Map[waypoint].unknown_140 & 0x100) || (Map[waypoint].unknown_140 & 0x400)) {
             extra = 4;
@@ -31,3 +31,5 @@ bool TActionClass::unknown_reveal_6b1050(HouseClass *house, ObjectClass *object,
     }
     return true;
 }
+
+

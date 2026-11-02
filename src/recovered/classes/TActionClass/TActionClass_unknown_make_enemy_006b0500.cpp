@@ -1,5 +1,5 @@
 // bool TActionClass::unknown_make_enemy(...) (0x006B0500)
-// Makes the action's house and the house of type Data enemies of each other (both directions, silent); always true.
+// Makes the action's house and the house of type Data.Value enemies of each other (both directions, silent); always true.
 #include "shared/taction.hpp"
 #include "shared/house.hpp"
 // @ref ?As_Pointer@HouseClass@@SIPAV1@H@Z=004ed760
@@ -7,10 +7,12 @@
 
 bool TActionClass::unknown_make_enemy(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
-    if (Data != -1) {
-        HouseClass *other = HouseClass::As_Pointer(Data);
+    if (Data.Value != -1) {
+        HouseClass *other = HouseClass::As_Pointer(Data.Value);
         house->Make_Enemy(other, false);
         other->Make_Enemy(house, false);
     }
     return true;
 }
+
+

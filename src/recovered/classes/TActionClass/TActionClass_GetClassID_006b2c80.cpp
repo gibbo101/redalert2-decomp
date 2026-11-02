@@ -9,3 +9,5 @@ HRESULT __stdcall TActionClass::GetClassID(GUID *clsid)
     *clsid = CLSID_TActionClass;
     return S_OK;
 }
+
+

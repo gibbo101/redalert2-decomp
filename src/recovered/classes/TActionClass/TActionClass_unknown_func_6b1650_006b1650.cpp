@@ -27,3 +27,5 @@ bool TActionClass::unknown_func_6b1650(HouseClass *house, ObjectClass *object, T
     Speech_Play_Name("EVA_NewTerrainDiscovered", -1, -1);
     return true;
 }
+
+

@@ -8,3 +8,5 @@ bool TActionClass::unknown_player_4e7ee0(HouseClass *house, ObjectClass *object,
     unknown_player_a35db4->Flag_To_Win(true);
     return true;
 }
+
+

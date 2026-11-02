@@ -9,3 +9,5 @@ bool TActionClass::unknown_toggle_session_flag_2229(HouseClass *house, ObjectCla
     unknown_id_source_a3d290->unknown_2229 = !unknown_id_source_a3d290->unknown_2229;
     return true;
 }
+
+

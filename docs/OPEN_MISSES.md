@@ -1087,3 +1087,13 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Add_Compressed_Events 0x627B60: 95.72, exact shape. The esi/edi pair is nearly tied in priority; two variants flip it, but each also changes the code.
 - Queue 0x6279D0: 84.96 -> 90.15 with an `i < 8 &&` guard that keeps the second `if (save)` test. The guard is steering, so this is a resume point only.
 - codex1 (19:05Z): Map.CPP second half closed (all 27 left are capped). New assignment: retry them with today's mechanisms, then the truncated ownrdraw.cpp window procedures.
+
+## Scout538 / Scout539 (2026-11-02, closed; 454 B landed: Copy_Nodes_To 0x613550)
+- Get_Obstacle 0x4BBAF0: 97.38. The original's register pair appears only when H(last) is a compiler temporary evaluated first (`H(last) + 4 <= H(again)` gives the pair but `add ebx,4`, 96.25).
+- Find_First_Obstacle 0x4BB890: 98.89 (the Z running sum is added into from.Z instead of into the sum register). Select_Game 0x5135F0: 92.40 joined (the +0xAE6 pair is the only real diff).
+- PaletteName::Load 0x603380: 89.62 -> 98.23 (Scout539 hv/c2, t1 or h9). Two push/mov pairs are scheduled in the wrong order inside Add_Node; landing it also needs the 0x605D80 ctor row.
+- Build_Schemes 0x604540: 94.43 (in the /FAs maps hsv always shares the RGB temp's slot). IonBlast One_Time: 94.19.
+
+## Scout540 (2026-11-02, closed; 0 B)
+- Add_Compressed_Events 0x627B60: 95.72. GScreen Get_Input 0x4E09D0: 82.81 (register ties decided by use counts; see VC6 notes). 0x603750: 69.19.
+- MapSizeGameOption::Describe 0x728AB0: 75.68, after adding the missing MapSize_Labels @ref. A named joined temporary probe reaches 78.26 (Scout540 w/ms).

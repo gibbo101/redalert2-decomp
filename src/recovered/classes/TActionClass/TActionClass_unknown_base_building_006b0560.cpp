@@ -9,12 +9,12 @@
 
 bool TActionClass::unknown_base_building(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
-    if (DataBool) {
+    if (Data.Boolean) {
         house->unknown_13b = true;
         if (house->unknown_50.Count() > 0) {
             CoordStruct coord = house->unknown_50[0]->Coord;
-            Cell center = Coord_Cell(coord);
-            house->BaseCenter = Cell_Center(center);
+            Cell center = coord.As_Cell();
+            house->BaseCenter = CoordStruct(center);
             house->unknown_55f0.unknown_50 = center;
         }
         if (house->unknown_55f0.Nodes.Count() == 0) {
@@ -25,3 +25,5 @@ bool TActionClass::unknown_base_building(HouseClass *house, ObjectClass *object,
     }
     return true;
 }
+
+

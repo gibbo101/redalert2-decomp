@@ -20,3 +20,5 @@ bool TActionClass::unknown_infantry_with_tag_slot294(HouseClass *house, ObjectCl
     }
     return handled;
 }
+
+

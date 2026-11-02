@@ -1,5 +1,5 @@
 // bool TActionClass::unknown_func_6b1a80(...) (0x006B1A80)
-// Unless Unknown_0051FC50 holds (then false), calls 0x0051F930 with Data,
+// Unless Unknown_0051FC50 holds (then false), calls 0x0051F930 with Data.Value,
 // the rules value at +0x13E8 and the zero cell (as TeamClass 0x006BC460);
 // true.
 #include "shared/taction.hpp"
@@ -14,6 +14,8 @@ bool TActionClass::unknown_func_6b1a80(HouseClass *house, ObjectClass *object, T
     if (Unknown_0051FC50()) {
         return false;
     }
-    Unknown_0051F930(Data, Rules->unknown_13e8, unknown_geometry_k, 0);
+    Unknown_0051F930(Data.Value, Rules->unknown_13e8, unknown_geometry_k, 0);
     return true;
 }
+
+

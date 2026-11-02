@@ -28,3 +28,5 @@ ObjectClass *__fastcall Building_Or_Terrain_At_006B0E40(CoordStruct const &coord
     }
     return found;
 }
+
+

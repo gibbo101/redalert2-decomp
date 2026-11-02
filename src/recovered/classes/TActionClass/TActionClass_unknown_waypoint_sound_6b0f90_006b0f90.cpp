@@ -23,3 +23,5 @@ bool TActionClass::unknown_waypoint_sound_6b0f90(HouseClass *house, ObjectClass 
     }
     return true;
 }
+
+

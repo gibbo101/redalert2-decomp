@@ -10,8 +10,10 @@
 bool TActionClass::unknown_ion_blast_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
     Cell waypoint = unknown_id_source_a3d290->Get_Waypoint_Location(unknown_44);
-    CoordStruct coord = Cell_Center(waypoint);
+    CoordStruct coord = CoordStruct(waypoint);
     coord.Z = Map.Unknown_0055A280(coord);
     new IonBlastClass(coord);
     return true;
 }
+
+

@@ -16,3 +16,5 @@ bool TActionClass::unknown_hunt_idle_feet_not_of_house(HouseClass *house, Object
     }
     return true;
 }
+
+

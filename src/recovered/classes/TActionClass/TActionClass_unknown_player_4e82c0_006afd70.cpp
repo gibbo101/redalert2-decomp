@@ -8,3 +8,5 @@ bool TActionClass::unknown_player_4e82c0(HouseClass *house, ObjectClass *object,
     unknown_player_a35db4->unknown_func_4e82c0();
     return true;
 }
+
+

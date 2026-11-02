@@ -1,5 +1,5 @@
 // bool TActionClass::unknown_reveal_around_waypoint(...) (0x006B0670)
-// Unless the player's house flag +0x188 is set: Sight_From the player twice (last argument 0, then 1) around waypoint Data, moved back by half its cell's +0x11B level (plus 4 on a bridge), raised by that level, with the rules RevealTriggerRadius (Red Alert's TACTION_REVEAL_SOME); always true.
+// Unless the player's house flag +0x188 is set: Sight_From the player twice (last argument 0, then 1) around waypoint Data.Value, moved back by half its cell's +0x11B level (plus 4 on a bridge), raised by that level, with the rules RevealTriggerRadius (Red Alert's TACTION_REVEAL_SOME); always true.
 #include "shared/taction.hpp"
 #include "shared/house.hpp"
 #include "shared/id_source.hpp"
@@ -17,7 +17,7 @@
 bool TActionClass::unknown_reveal_around_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
     if (!unknown_player_a35db4->unknown_188) {
-        Cell waypoint = unknown_id_source_a3d290->Get_Waypoint_Location(Data);
+        Cell waypoint = unknown_id_source_a3d290->Get_Waypoint_Location(Data.Value);
         int extra;
         if ((Map[waypoint].unknown_140 & 0x100) || (Map[waypoint].unknown_140 & 0x400)) {
             extra = 4;
@@ -32,3 +32,5 @@ bool TActionClass::unknown_reveal_around_waypoint(HouseClass *house, ObjectClass
     }
     return true;
 }
+
+

@@ -24,5 +24,7 @@ TActionClass::TActionClass() :
     unknown_objects_ac0cb0.Add((ObjectClass *)this);
     unknown_AbstractClass_list_00ac0c98.Add(this);
     Text[0] = 0;
-    Data = 0;
+    Data.Value = 0;
 }
+
+

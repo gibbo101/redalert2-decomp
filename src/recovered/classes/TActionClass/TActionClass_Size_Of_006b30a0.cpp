@@ -5,3 +5,5 @@ int TActionClass::Size_Of() const
 {
     return sizeof(TActionClass);
 }
+
+

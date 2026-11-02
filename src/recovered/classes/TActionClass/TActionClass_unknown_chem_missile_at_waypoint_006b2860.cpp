@@ -20,7 +20,7 @@
 bool TActionClass::unknown_chem_missile_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
     Cell waypoint = unknown_id_source_a3d290->Get_Waypoint_Location(unknown_44);
-    CoordStruct coord = Cell_Center(waypoint);
+    CoordStruct coord = CoordStruct(waypoint);
     coord.Z = Map.Unknown_0055A280(coord);
     if (Map[waypoint].unknown_140 & 0x100) {
         coord.Z += unknown_geometry_j;
@@ -42,3 +42,5 @@ bool TActionClass::unknown_chem_missile_at_waypoint(HouseClass *house, ObjectCla
     }
     return false;
 }
+
+

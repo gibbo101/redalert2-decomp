@@ -14,3 +14,5 @@ bool TActionClass::unknown_stop_mission_timer(HouseClass *house, ObjectClass *ob
     }
     return true;
 }
+
+

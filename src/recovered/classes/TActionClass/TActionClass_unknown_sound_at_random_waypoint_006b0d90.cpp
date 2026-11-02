@@ -1,5 +1,5 @@
 // bool TActionClass::unknown_sound_at_random_waypoint(...) (0x006B0D90)
-// Plays the static sound Data at a random one of the set waypoints 0..100 (the cell list stops at sizeof(list) entries, as the original); always true.
+// Plays the static sound Data.Value at a random one of the set waypoints 0..100 (the cell list stops at sizeof(list) entries, as the original); always true.
 #include "shared/taction.hpp"
 #include "shared/id_source.hpp"
 #include "shared/sound_play.hpp"
@@ -17,8 +17,8 @@ bool TActionClass::unknown_sound_at_random_waypoint(HouseClass *house, ObjectCla
             }
         }
     }
-    Cell &picked = cells[Random_Pick(0, count - 1)];
-    CoordStruct coord(picked.X * 256 + 128, picked.Y * 256 + 128, 0);
-    Voc_Static_Add(Data, coord, 0);
+    Voc_Static_Add(Data.Value, CoordStruct(cells[Random_Pick(0, count - 1)]), 0);
     return true;
 }
+
+

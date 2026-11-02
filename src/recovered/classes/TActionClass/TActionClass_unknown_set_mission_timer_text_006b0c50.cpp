@@ -18,8 +18,11 @@ bool TActionClass::unknown_set_mission_timer_text(HouseClass *house, ObjectClass
         unknown_id_source_a3d290->MissionTimerLabel = label;
     } else {
         unknown_id_source_a3d290->MissionTimerText = unknown_empty_wide_839d4c;
-        unknown_id_source_a3d290->MissionTimerLabel = FixedString<32>(unknown_string_83c55c);
+        FixedString<32> empty_label(unknown_string_83c55c);
+        unknown_id_source_a3d290->MissionTimerLabel = empty_label;
     }
     Map.Unknown_006A17B0();
     return true;
 }
+
+

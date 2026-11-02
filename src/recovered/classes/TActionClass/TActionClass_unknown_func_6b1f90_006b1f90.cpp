@@ -16,3 +16,5 @@ bool TActionClass::unknown_func_6b1f90(HouseClass *house, ObjectClass *object, T
     }
     return true;
 }
+
+

@@ -24,3 +24,5 @@ bool TActionClass::unknown_reveal_whole_map(HouseClass *house, ObjectClass *obje
     }
     return true;
 }
+
+

@@ -16,3 +16,5 @@ void TActionClass::Detach(AbstractClass *target, bool all)
         unknown_4c = 0;
     }
 }
+
+

@@ -16,3 +16,5 @@ bool TActionClass::unknown_create_team(HouseClass *house, ObjectClass *object, T
     unknown_team_creating_a40774--;
     return true;
 }
+
+

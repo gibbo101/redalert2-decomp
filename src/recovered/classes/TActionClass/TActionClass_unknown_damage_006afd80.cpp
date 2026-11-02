@@ -19,8 +19,9 @@ bool TActionClass::unknown_damage_006afd80(HouseClass *house, ObjectClass *objec
     Unknown_0047E2C0(unknown_6b2e80() + CoordStruct(85, -85, 0), damage, 0, Rules->unknown_c74, 1);
     damage = 100;
     Unknown_0047E2C0(unknown_6b2e80() + CoordStruct(-85, -85, 0), damage, 0, Rules->unknown_c74, 1);
-    if (unknown_id_source_a3d290->Unknown_00663240(Data)) {
-        Cell spot = unknown_id_source_a3d290->Get_Waypoint_Location(Data);
+    bool valid_waypoint = unknown_id_source_a3d290->Unknown_00663240(Data.Value);
+    if (valid_waypoint) {
+        Cell spot = unknown_id_source_a3d290->Get_Waypoint_Location(Data.Value);
         int tries = 3;
         while (!Map.Unknown_00569090(&spot) && tries-- > 0) {}
         Point2D point;
@@ -32,3 +33,5 @@ bool TActionClass::unknown_damage_006afd80(HouseClass *house, ObjectClass *objec
     }
     return true;
 }
+
+

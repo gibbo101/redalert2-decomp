@@ -15,15 +15,17 @@
 bool TActionClass::unknown_func_6b25e0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
     Cell waypoint = unknown_id_source_a3d290->Get_Waypoint_Location(unknown_44);
-    CoordStruct coord = Cell_Center(waypoint);
+    CoordStruct coord = CoordStruct(waypoint);
     coord.Z = Map.Unknown_0055A280(coord);
     if (Map[waypoint].unknown_140 & 0x100) {
         coord.Z += unknown_geometry_j;
     }
-    Cell target = Coord_Cell(coord);
+    Cell target = coord.As_Cell();
     if (!Unknown_0051FC50()) {
         Unknown_0051F930(Rules->LightningStormDuration, Rules->unknown_13e8, target, (int)house);
         return true;
     }
     return false;
 }
+
+

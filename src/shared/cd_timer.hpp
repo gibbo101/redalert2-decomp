@@ -17,7 +17,16 @@ template <class T>
 class CDTimerClass {
 public:
     CDTimerClass() : Started(Timer), DelayTime(0) {}
+#ifdef RA2_CDTIMER_NAMED_DURATION
+    CDTimerClass(long set) {
+        long started = Timer;
+        long duration = set;
+        Started = started;
+        DelayTime = duration;
+    }
+#else
     CDTimerClass(long set) : Started(Timer), DelayTime(set) {}
+#endif
     CDTimerClass(NoInitClass const &noinit) {}
     // Empty but user-declared (TS's TTimerClass has ~TTimerClass() {}): the
     // static timers of Scroll.cpp (0x00AB7048) and Mouse.cpp (0x00A70F70)

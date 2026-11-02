@@ -16,3 +16,5 @@ bool TActionClass::unknown_hunt_feet_mission_23_of_house(HouseClass *house, Obje
     }
     return true;
 }
+
+

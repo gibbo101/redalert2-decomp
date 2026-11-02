@@ -151,9 +151,25 @@ public:
     bool unknown_chem_missile_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2860 (a ChemLauncher bullet at waypoint +0x44; false when it cannot be created)
     bool unknown_select_sidebar_tab(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B3010 (selects sidebar tab Data when its strip has buildables)
     bool unknown_sidebar_6822b0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B3060 (Map.Unknown_006822B0 with techno type Data and +0x48)
+#ifdef RA2_TACTION_EXECUTE_CONTEXT
+    bool unknown_action_006af930(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006AF930
+    bool unknown_action_006af940(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006AF940
+    bool unknown_action_006b0540(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006B0540
+    bool unknown_action_006b1640(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006B1640
+    bool unknown_action_006b1ac0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006B1AC0
+    bool unknown_action_006b1ae0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006B1AE0
+    bool unknown_action_006b1af0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006B1AF0
+    bool unknown_action_006b22f0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006B22F0
+    bool unknown_action_006b2310(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006B2310
+    bool unknown_action_006b2330(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006B2330
+    bool unknown_action_006b2350(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell); // 0x006B2350
+#endif
 #ifdef RA2_TACTION_DECLARE_DAMAGE
     // Five waypoint blasts and bridge redraw, native006AFD80.
     bool unknown_damage_006afd80(HouseClass *, ObjectClass *, TriggerClass *, Cell *);
+#endif
+#ifdef RA2_TACTION_EXECUTE_CONTEXT
+    bool Set_Type_Tech_Level_006b27e0(HouseClass *, ObjectClass *, TriggerClass *, Cell *);
 #endif
     static int __fastcall Action_Flags(int type);                       // 0x006B2DF0 (hypothesis)
     // What the value of an action type names (0x006B2AB0; 0x2B, 0x28, 0x0C, 0x22, 0x0B,
@@ -173,6 +189,13 @@ public:
     AbstractClass *unknown_4c;              // +0x4C
     AbstractClass *unknown_50;              // +0x50
     char Text[32];                          // +0x54
+#ifdef RA2_TACTION_TYPED_DATA
+    union ActionData {
+        long Value;
+        bool Boolean;
+        float Float;
+    } Data; // +0x74, the action argument's evidenced int/byte/float views
+#else
     union {
         int Data;                           // +0x74
         // The same word read as a flag: the session flag actions 0x006AFB40,
@@ -181,6 +204,7 @@ public:
         // The ambient rate actions (0x006B2220, 0x006B2240) read it as a float.
         float DataFloat;                    // +0x74
     };
+#endif
 };
 
 // The object in the cell of a coordinate: its building, else its terrain object; none for the unset

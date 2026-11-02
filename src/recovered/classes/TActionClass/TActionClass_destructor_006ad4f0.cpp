@@ -12,3 +12,5 @@ TActionClass::~TActionClass()
     unknown_TActionClass_list_00abfd88.Delete(this);
     Text[0] = 0;
 }
+
+

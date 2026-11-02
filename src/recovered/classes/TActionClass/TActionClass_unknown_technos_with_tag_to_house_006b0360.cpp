@@ -1,5 +1,5 @@
 // bool TActionClass::unknown_technos_with_tag_to_house(...) (0x006B0360)
-// Passes the house of type Data to TechnoClass slot 222 of every living, active techno whose tag has the action's trigger attached; true when any was handled.
+// Passes the house of type Data.Value to TechnoClass slot 222 of every living, active techno whose tag has the action's trigger attached; true when any was handled.
 #include "shared/taction.hpp"
 #include "shared/techno.hpp"
 #include "shared/house.hpp"
@@ -15,9 +15,11 @@ bool TActionClass::unknown_technos_with_tag_to_house(HouseClass *house, ObjectCl
         TechnoClass *techno = Technos[index];
         if (techno->unknown_7d && techno->unknown_74 && !techno->unknown_76 && techno->unknown_34 != 0
             && techno->unknown_34->Is_Trigger_Attached(trigger)) {
-            techno->unknown_slot222(HouseClass::As_Pointer(Data), 0);
+            techno->unknown_slot222(HouseClass::As_Pointer(Data.Value), 0);
             handled = true;
         }
     }
     return handled;
 }
+
+

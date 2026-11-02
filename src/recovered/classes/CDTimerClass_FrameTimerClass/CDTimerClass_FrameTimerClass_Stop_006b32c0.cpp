@@ -7,3 +7,4 @@ template<> void CDTimerClass<FrameTimerClass>::Stop()
         Started = -1;
     }
 }
+

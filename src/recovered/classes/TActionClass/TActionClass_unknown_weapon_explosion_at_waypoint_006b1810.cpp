@@ -1,5 +1,5 @@
 // bool TActionClass::unknown_weapon_explosion_at_waypoint(...) (0x006B1810)
-// The explosion of weapon type Data at waypoint +0x44 (ground height, raised on a bridge): its warhead's damage animation, Unknown_0047F600 and Unknown_0047E2C0 with the weapon's +0xA4 damage; always true.
+// The explosion of weapon type Data.Value at waypoint +0x44 (ground height, raised on a bridge): its warhead's damage animation, Unknown_0047F600 and Unknown_0047E2C0 with the weapon's +0xA4 damage; always true.
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #include "shared/vector_class.hpp"
@@ -20,12 +20,12 @@
 bool TActionClass::unknown_weapon_explosion_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
     Cell waypoint = unknown_id_source_a3d290->Get_Waypoint_Location(unknown_44);
-    CoordStruct coord = Cell_Center(waypoint);
+    CoordStruct coord = CoordStruct(waypoint);
     coord.Z = Map.Unknown_0055A280(coord);
     if ((Map[waypoint].unknown_140 & 0x100) || (Map[waypoint].unknown_140 & 0x400)) {
         coord.Z += unknown_geometry_j;
     }
-    int index = Data;
+    int index = Data.Value;
     WeaponTypeClass *weapon = unknown_WeaponTypeClass_list_00839b90[index];
     int damage = weapon->unknown_a4;
     int land = Map[coord].unknown_ec;
@@ -37,3 +37,5 @@ bool TActionClass::unknown_weapon_explosion_at_waypoint(HouseClass *house, Objec
     Unknown_0047E2C0(coord, damage, 0, unknown_WeaponTypeClass_list_00839b90[index]->Warhead, 1);
     return true;
 }
+
+

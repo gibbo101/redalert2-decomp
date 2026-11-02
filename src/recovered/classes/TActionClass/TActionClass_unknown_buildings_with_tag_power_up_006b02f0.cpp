@@ -21,3 +21,5 @@ bool TActionClass::unknown_buildings_with_tag_power_up(HouseClass *house, Object
     }
     return handled;
 }
+
+

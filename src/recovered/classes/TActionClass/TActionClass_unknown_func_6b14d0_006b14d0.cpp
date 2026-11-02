@@ -45,3 +45,5 @@ bool TActionClass::unknown_func_6b14d0(HouseClass *house, ObjectClass *object, T
     }
     return killed;
 }
+
+

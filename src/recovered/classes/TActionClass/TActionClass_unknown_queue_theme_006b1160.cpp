@@ -1,5 +1,5 @@
 // bool TActionClass::unknown_queue_theme(...) (0x006B1160)
-// Queues theme Data on the music player; always true.
+// Queues theme Data.Value on the music player; always true.
 #include "shared/taction.hpp"
 #include "shared/theme.hpp"
 // @ref ?Queue_Song@ThemeClass@@QAEXH@Z=006e7e20
@@ -7,6 +7,8 @@
 
 bool TActionClass::unknown_queue_theme(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
-    Theme.Queue_Song(Data);
+    Theme.Queue_Song(Data.Value);
     return true;
 }
+
+

@@ -5,3 +5,5 @@ char const *TActionClass::Get_Text() const
 {
     return Text[0] ? Text : 0;
 }
+
+

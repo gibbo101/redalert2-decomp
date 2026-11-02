@@ -12,3 +12,5 @@ bool TActionClass::unknown_destroy_teams(HouseClass *house, ObjectClass *object,
     }
     return true;
 }
+
+

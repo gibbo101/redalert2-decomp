@@ -11,3 +11,5 @@ bool TActionClass::unknown_func_6af950(HouseClass *house, ObjectClass *object, T
     Unknown_0051FC90(unknown_id_source_a3d290->Get_Waypoint_Location(unknown_44));
     return true;
 }
+
+

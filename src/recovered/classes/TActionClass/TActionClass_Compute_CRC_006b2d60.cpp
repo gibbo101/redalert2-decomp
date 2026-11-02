@@ -17,5 +17,7 @@ void TActionClass::Compute_CRC(WWCRCEngine &crc) const
     if (unknown_50 != 0) {
         crc(unknown_50->Fetch_ID());
     }
-    crc((long)Data);
+    crc((long)Data.Value);
 }
+
+

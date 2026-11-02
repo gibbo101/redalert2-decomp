@@ -36,6 +36,9 @@
 #include "shared/progress_timer.hpp"
 #include "shared/light_source.hpp"
 
+#ifdef RA2_BUILDING_TYPED_SPOTLIGHT
+class BuildingLightClass;
+#endif
 class InfantryClass;
 class Matrix3D;
 class INIClass;
@@ -352,7 +355,11 @@ public:
     TechnoTypeClass *unknown_4c0[3];        // +0x4C0 (swizzled; unknown_5c6 of them are used)
     int unknown_4cc;                        // +0x4CC (-1)
     int unknown_4d0;                        // +0x4D0 (-1)
+#ifdef RA2_BUILDING_TYPED_SPOTLIGHT
+    BuildingLightClass *unknown_4d4;         // +0x4D4 native spotlight behavior00434370
+#else
     AbstractClass *unknown_4d4;             // +0x4D4 (swizzled)
+#endif
     ProgressTimerClass<FrameTimerClass> GateTimer; // +0x4D8, total duration +0x4E4
     LightSourceClass *unknown_4e8;        // +0x4E8 (owned)
     int unknown_4ec;                        // +0x4EC

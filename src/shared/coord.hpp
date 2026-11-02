@@ -220,7 +220,11 @@ public:
 #endif
 #ifdef RA2_COORD_AS_CELL
     // TibSun TPoint2D comparisons (0x0058DB50 is the out-of-line operator!=).
+#ifdef RA2_CELL_EQ_RETURNS_INT
+    int operator==(Cell const &rvalue) const { return X == rvalue.X && Y == rvalue.Y; }
+#else
     bool operator==(Cell const &rvalue) const { return X == rvalue.X && Y == rvalue.Y; }
+#endif
     bool operator!=(Cell const &rvalue) const { return X != rvalue.X || Y != rvalue.Y; }
 #endif
     bool Unknown_00493C80();   // 0x00493C80 (removes the cell's crate overlay and redraws it; CrateClass)
@@ -228,6 +232,10 @@ public:
 
 #ifdef RA2_COORD_FROM_CELL_INLINE
 #ifdef RA2_COORD_TPOINT3D
+#ifdef RA2_COORD_CELL_BASE_INIT
+inline CoordStruct::CoordStruct(Cell const &cell, int z)
+    : BASECLASS(cell.X * 256 + 128, cell.Y * 256 + 128, z) {}
+#else
 inline CoordStruct::CoordStruct(Cell const &cell, int z) {
     int x = cell.X * 256 + 128;
     int y = cell.Y * 256 + 128;
@@ -235,6 +243,7 @@ inline CoordStruct::CoordStruct(Cell const &cell, int z) {
     Y = y;
     Z = z;
 }
+#endif
 #else
 inline CoordStruct::CoordStruct(Cell const &cell, int z) : X(cell.X * 256 + 128), Y(cell.Y * 256 + 128), Z(z) {}
 #endif
@@ -244,7 +253,11 @@ inline UnknownCoord434820::UnknownCoord434820(Cell const &cell, int z) : CoordSt
 #ifdef RA2_COORD_AS_CELL
 inline Cell CoordStruct::As_Cell() const
 {
+#ifdef RA2_COORD_AS_CELL_NO_CASTS
+    return Cell(X / 256, Y / 256);
+#else
     return Cell((int)X / 256, (int)Y / 256);
+#endif
 }
 #endif
 

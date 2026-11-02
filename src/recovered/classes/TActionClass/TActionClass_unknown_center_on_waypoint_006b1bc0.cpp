@@ -13,7 +13,7 @@
 bool TActionClass::unknown_center_on_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {
     Cell waypoint = unknown_id_source_a3d290->Get_Waypoint_Location(unknown_44);
-    CoordStruct coord = Cell_Center(waypoint);
+    CoordStruct coord = CoordStruct(waypoint);
     coord.Z = Map.Unknown_0055A280(coord);
     if ((Map[waypoint].unknown_140 & 0x100) || (Map[waypoint].unknown_140 & 0x400)) {
         coord.Z += unknown_geometry_j;
@@ -21,3 +21,5 @@ bool TActionClass::unknown_center_on_waypoint(HouseClass *house, ObjectClass *ob
     unknown_tactical_83996c->Unknown_006A66B0(coord);
     return true;
 }
+
+

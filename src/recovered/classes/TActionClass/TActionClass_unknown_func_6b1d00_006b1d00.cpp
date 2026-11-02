@@ -18,3 +18,5 @@ bool TActionClass::unknown_func_6b1d00(HouseClass *house, ObjectClass *object, T
     Map.Render();
     return true;
 }
+
+

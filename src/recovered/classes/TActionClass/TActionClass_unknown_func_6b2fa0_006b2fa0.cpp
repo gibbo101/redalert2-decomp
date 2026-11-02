@@ -22,3 +22,5 @@ bool TActionClass::unknown_func_6b2fa0(HouseClass *house, ObjectClass *object, T
     }
     return handled;
 }
+
+

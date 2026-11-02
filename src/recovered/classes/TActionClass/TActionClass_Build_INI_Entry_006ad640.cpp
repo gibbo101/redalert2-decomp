@@ -26,7 +26,7 @@
 void TActionClass::Build_INI_Entry(char *buffer) const
 {
     int value_kind = Value_Kind(Type);
-    int value = Data;
+    int value = Data.Value;
     int number = 0;
     int last = 0;
     int kind = 0;
@@ -61,20 +61,20 @@ void TActionClass::Build_INI_Entry(char *buffer) const
         }
     } else if (value_kind == 4) {
         kind = 6;
-        name = VoxClass::Name_From(Data);
+        name = VoxClass::Name_From(Data.Value);
     } else if (value_kind == 3 || value_kind == 0x26) {
         kind = 7;
-        name = Voc_Name(Data);
+        name = Voc_Name(Data.Value);
     } else if (value_kind == 1) {
         kind = 8;
-        name = Theme.Name(Data);
+        name = Theme.Name(Data.Value);
     }
 
     buffer += strlen(buffer);
     if (kind == 9) {
         sprintf(buffer, "%d,%d,%d,%d,%d,%d,%d,%d", Type, kind, number, unknown_34, unknown_38, unknown_3c, unknown_40, last);
     } else if (kind == 5) {
-        sprintf(buffer, "%d,%d,%s,%d,%d,%d,%d,%d", Type, kind, name, unknown_34, unknown_38, unknown_3c, unknown_40, Data);
+        sprintf(buffer, "%d,%d,%s,%d,%d,%d,%d,%d", Type, kind, name, unknown_34, unknown_38, unknown_3c, unknown_40, Data.Value);
     } else if (kind != 0) {
         sprintf(buffer, "%d,%d,%s,%d,%d,%d,%d,%s", Type, kind, name, unknown_34, unknown_38, unknown_3c, unknown_40,
                 Waypoint_As_String(unknown_44));
@@ -83,3 +83,5 @@ void TActionClass::Build_INI_Entry(char *buffer) const
                 Waypoint_As_String(unknown_44));
     }
 }
+
+

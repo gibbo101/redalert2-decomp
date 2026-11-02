@@ -9,3 +9,5 @@ bool TActionClass::unknown_map_49cc20(HouseClass *house, ObjectClass *object, Tr
     Map.Unknown_0049CC20();
     return true;
 }
+
+

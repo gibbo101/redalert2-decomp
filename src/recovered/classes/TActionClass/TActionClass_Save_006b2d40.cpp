@@ -9,3 +9,5 @@ HRESULT __stdcall TActionClass::Save(IStream *stream, BOOL clear_dirty)
     }
     return result;
 }
+
+

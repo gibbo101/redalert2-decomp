@@ -15,3 +15,5 @@ bool TActionClass::unknown_start_mission_timer(HouseClass *house, ObjectClass *o
     }
     return true;
 }
+
+

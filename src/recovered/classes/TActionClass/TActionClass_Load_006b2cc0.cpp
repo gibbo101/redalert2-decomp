@@ -14,3 +14,5 @@ HRESULT __stdcall TActionClass::Load(IStream *stream)
     SwizzleManager.Swizzle((void **)&unknown_50);
     return S_OK;
 }
+
+

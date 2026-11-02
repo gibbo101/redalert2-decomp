@@ -22,3 +22,5 @@ bool TActionClass::unknown_func_6b1c80(HouseClass *house, ObjectClass *object, T
     Sleep(1000);
     return true;
 }
+
+

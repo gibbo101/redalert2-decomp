@@ -19,3 +19,5 @@ int __fastcall TActionClass::Action_Flags(int type)
     }
     return flags;
 }
+
+

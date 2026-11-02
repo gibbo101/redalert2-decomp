@@ -6,3 +6,5 @@ template<> FixedString<32> FixedString<32>::operator=(FixedString<32> const &oth
     if (&other != this) memcpy(Buffer, other.Buffer, 32);
     return *this;
 }
+
+

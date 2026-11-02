@@ -9,3 +9,5 @@ bool TActionClass::unknown_player_4e80d0(HouseClass *house, ObjectClass *object,
     unknown_player_a35db4->Flag_To_Lose(true);
     return true;
 }
+
+

@@ -18,7 +18,7 @@
 
 void TActionClass::Read_INI()
 {
-    Data = 0;
+    Data.Value = 0;
     Type = atoi(strtok(0, ","));
     int kind = atoi(strtok(0, ","));
     char *token = strtok(0, ",");
@@ -26,7 +26,7 @@ void TActionClass::Read_INI()
     switch (kind) {
         case 0:
         case 9:
-            Data = value;
+            Data.Value = value;
             break;
 
         case 1:
@@ -69,15 +69,15 @@ void TActionClass::Read_INI()
             break;
 
         case 6:
-            Data = VoxClass::Find_Index(token);
+            Data.Value = VoxClass::Find_Index(token);
             break;
 
         case 7:
-            Data = VocClass::From_Name(token);
+            Data.Value = VocClass::From_Name(token);
             break;
 
         case 8:
-            Data = Theme.From_Name(token);
+            Data.Value = Theme.From_Name(token);
             break;
     }
 
@@ -88,7 +88,7 @@ void TActionClass::Read_INI()
     token = strtok(0, ",");
     if (token != 0) {
         if (kind == 5) {
-            Data = atoi(token);
+            Data.Value = atoi(token);
         } else if (kind == 9) {
             unknown_48 = atoi(token);
         } else {
@@ -96,3 +96,5 @@ void TActionClass::Read_INI()
         }
     }
 }
+
+
