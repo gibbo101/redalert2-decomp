@@ -4,8 +4,8 @@
     "id": "population-3495",
     "inventory_sha256": "c30f6dce70e326f1dfaa1b77cf914b6b8a7f0644c4e198821a0d713e5e8e2f08",
     "gaps_sha256": "187a12c775ffc571ca802c6e7598f2fb671a943ca269c0627fddf837e17c6ae3",
-    "historical_population_sha256": "fcbc487b273f13225bcfebeb29853b1204248a68cbaa48b00dd61338bd469685",
-    "historical_acceptance_sha256": "81074d750d0f754277c93a2bb6f03f60eed5b93fc25d1768d718639121843a21"
+    "historical_population_sha256": "752471cbfaeb7f59279a1b27a2fb9e412233af028a0755e73ce8cc317598ddf9",
+    "historical_acceptance_sha256": "9b139c286c032a7e929ae5d2b3ff5c8e3d5ad659259de8829c9306c3526038df"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -470,7 +470,7 @@
     "?get@Leaf_46dac0@@QAEPAXI@Z": 4643520,
     "?get@Leaf_46db10@@QAEPAXI@Z": 4643600,
     "?get@Storage_46dbd0@@QAEPAXIPAI@Z": 4643792,
-    "?get@Leaf_46fd60@@QAEII@Z": 4652384,
+    "??0CDFileClass@@QAE@ABVWstring@@@Z": 4652384,
     "?Open@CDFileClass@@UAEHH@Z": 4652560,
     "?get@Leaf_47a450@@QAEXI@Z": 4695120,
     "?get@Leaf_47c360@@QAEXI@Z": 4703072,

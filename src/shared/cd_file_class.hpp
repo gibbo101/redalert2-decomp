@@ -19,9 +19,15 @@ struct CDSearchDrive {
     char const *Path;           // +0x04 directory prefix, including the separator
 };
 
+#ifdef CD_FILE_DECLARE_WSTRING_CTOR
+class Wstring;
+#endif
 class CDFileClass : public BufferIOFileClass {
 public:
     CDFileClass(char const *filename);
+#ifdef CD_FILE_DECLARE_WSTRING_CTOR
+    CDFileClass(Wstring const &filename); // 0x0046FD60
+#endif
     CDFileClass();
     virtual ~CDFileClass() {}
     virtual char const *Set_Name(char const *filename);
