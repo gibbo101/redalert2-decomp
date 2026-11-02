@@ -3,7 +3,7 @@
 // unknown_839aa8 from unknown_839aa4 (name and meaning hypotheses).
 #include "shared/object_type.hpp"
 // @ref ??3@YAXPAX@Z=00781d3b
-// @ref ?ObjectTypes@@3V?$DynamicVectorClass@PAVObjectTypeClass@@@@A=00a72f90
+// @ref ?ObjectTypes@ObjectTypeClass@@2V?$DynamicVectorClass@PAVObjectTypeClass@@@@A=00a72f90
 // @ref ?unknown_839aa4@@3HA=00839aa4
 // @ref ?unknown_839aa8@@3HA=00839aa8
 

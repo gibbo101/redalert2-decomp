@@ -2,6 +2,8 @@
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x005D5560-0x005D5746); the other
 // drafts of this plan are emitted by these includes.
+// The unit declares ObjectTypeClass::ObjectTypes (shared/object_type.hpp).
+#define OBJECT_TYPE_DECLARE_OBJECT_TYPES
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

@@ -5,7 +5,7 @@
 // 0x005D7EE2.)
 #include "shared/object_type.hpp"
 // @ref __stricmp=00781f20
-// @ref ?ObjectTypes@@3V?$DynamicVectorClass@PAVObjectTypeClass@@@@A=00a72f90
+// @ref ?ObjectTypes@ObjectTypeClass@@2V?$DynamicVectorClass@PAVObjectTypeClass@@@@A=00a72f90
 
 extern "C" int __cdecl _stricmp(char const *string1, char const *string2);
 

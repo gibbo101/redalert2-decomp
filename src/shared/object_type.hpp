@@ -167,6 +167,14 @@ public:
     static ObjectTypeClass *__fastcall Find_From_Name(char const *name);   // 0x005D7EA0
     static void __fastcall Generic_Naming_Convention(char *buffer);
 
+#ifdef OBJECT_TYPE_DECLARE_OBJECT_TYPES
+    // Every type, in creation order (0x00A72F90). A class static member: its atexit destructor
+    // 0x005D5790 is guarded (bit 0 of 0x00A72FD9), as VC6 emits for static data members
+    // (TibSun objtype.h ObjectTypeClass::ObjectTypes). Guarded: only ObjType.cpp uses it, and the
+    // declaration renumbers the _$E initializers of every other unit that includes this header.
+    static DynamicVectorClass<ObjectTypeClass *> ObjectTypes;
+#endif
+
     RGBClass RadialColor;                   // +0x098 (RadialColor=)
     int unknown_9c;                         // +0x09C
     int MaxStrength;                         // +0x0A0
@@ -209,6 +217,11 @@ public:
     UnknownBuffer unknown_250;              // +0x250
 };
 
-extern DynamicVectorClass<ObjectTypeClass *> ObjectTypes;   // 0x00A72F90
+#ifndef OBJECT_TYPE_DECLARE_OBJECT_TYPES
+// The pre-recovery global spelling of ObjectTypeClass::ObjectTypes, still seen by the other units
+// that include this header: dropping it changes BaseClass::Read_INI 0x0042C460 (type-count
+// sensitivity), so it stays until those units are re-checked. No object has this name.
+extern DynamicVectorClass<ObjectTypeClass *> ObjectTypes;
+#endif
 
 #endif

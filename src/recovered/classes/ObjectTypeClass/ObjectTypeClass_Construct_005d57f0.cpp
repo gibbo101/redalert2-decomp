@@ -2,7 +2,7 @@
 #include "shared/object_type.hpp"
 // @ref ??0AbstractTypeClass@@QAE@PBD@Z=00410580
 // @ref ?unknown_string_83c55c@@3PADA=0083c55c
-// @ref ?ObjectTypes@@3V?$DynamicVectorClass@PAVObjectTypeClass@@@@A=00a72f90
+// @ref ?ObjectTypes@ObjectTypeClass@@2V?$DynamicVectorClass@PAVObjectTypeClass@@@@A=00a72f90
 // Per-unit form of the real container append: observed growth operand order.
 // No new layout or alias; same existing template member and protected fields.
 template <> inline bool DynamicVectorClass<ObjectTypeClass *>::Add(ObjectTypeClass *const &object)
