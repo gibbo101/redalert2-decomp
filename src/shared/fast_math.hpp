@@ -7,6 +7,8 @@
 #ifndef RA2_SHARED_FAST_MATH_HPP
 #define RA2_SHARED_FAST_MATH_HPP
 
+// The float square root itself (TibSun fastmath::sqrtf; __stdcall, see its source).
+float __stdcall Fast_Sqrt_Float_004BA830(float value); // 0x004BA830
 float __cdecl Fast_Sqrt(double value);              // 0x004BA410
 float __cdecl Fast_Sin(double angle);               // 0x004BA480
 float __cdecl Fast_Cos(double angle);               // 0x004BA4D0
