@@ -15,7 +15,7 @@ original code is still scaffold. Per-batch evidence through A15 is in
 | Frozen padding bytes | 137,501 |
 | Original .text scaffold bytes | 1,169,361 |
 | Logical .text bytes | 3,769,805 |
-| Compiler populations | 689 |
+| Compiler populations | 690 |
 
 Manifest history (body bytes added per commit, and per hour since the previous commit):
 
@@ -1471,6 +1471,7 @@ Manifest history (body bytes added per commit, and per hour since the previous c
 | `93ba244b4` | 2026-11-02 09:11 -0600 | 17,281 | 2,461,570 | +111 | 914 |
 | `06e4c037d` | 2026-11-02 09:21 -0600 | 17,282 | 2,461,593 | +23 | 137 |
 | `2c897d8ec` | 2026-11-02 09:24 -0600 | 17,283 | 2,462,897 | +1,304 | 30,682 |
+| `4f96efcd4` | 2026-11-02 09:26 -0600 | 17,284 | 2,462,943 | +46 | 1,465 |
 
 <!-- /generated:status -->
 
