@@ -317,6 +317,8 @@ public:
 #ifdef RA2_MAP_BRIDGE_PIECES
     void Damage_Low_Bridge_Piece_EW_0055FCC0(Cell const &cell);
     void Damage_Low_Bridge2_Piece_EW_005606D0(Cell const &cell);
+    void Damage_Low_Bridge_Piece_NS_005601F0(Cell const &cell);
+    void Damage_Low_Bridge2_Piece_NS_00560C10(Cell const &cell);
 #endif
     void Repair_Low_Bridge_EW(Cell const &cell);                // 0x005615A0
     void Repair_Low_Bridge_NS(Cell const &cell);                // 0x00561A80
