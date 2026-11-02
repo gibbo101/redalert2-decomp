@@ -1,3 +1,5 @@
+#define PARASITE_GRAPPLE_COUNTERS
+#define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #define RA2_FACING_LEFT90
 // Header-static dynamic initializers of the unit at 0x00605F30 and the
 // unit's ParasiteClass list; the other drafts of this plan are emitted by this file.
