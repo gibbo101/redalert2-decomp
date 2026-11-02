@@ -51,7 +51,7 @@
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ??3@YAXPAX@Z=00781d3b
-// @ref ?Unknown_Hash_0054F240@@YIIABI@Z=0054f240
+// @ref ?Unknown_Hash_0054F240@@YIHABI@Z=0054f240
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref __imp__OleLoadFromStream@12=0079a5ec
 // @ref _IID_IUnknown_7afce0=007afce0
@@ -68,7 +68,7 @@
 // The zone cell table: 256 buckets, growth step 20 (as MapClass::One_Time builds it).
 static HashTableClass<unsigned int, unsigned int> *New_Cell_Table()
 {
-    return new HashTableClass<unsigned int, unsigned int>(Unknown_Hash_0054F240, 256, 20);
+    return new HashTableClass<unsigned int, unsigned int>(20, 256, Unknown_Hash_0054F240);
 }
 
 HRESULT MouseClass::unknown_slot30(IStream *stream)
@@ -141,7 +141,7 @@ HRESULT MouseClass::unknown_slot30(IStream *stream)
         SubzoneTracking[tier].Clear();
         int cells = MapSize.Height * MapSize.Width * 4;
         SubzoneTracking[tier].Set_Growth_Step(cells / (factor * factor));
-        unknown_7c[tier] = new HashTableClass<unsigned int, SubzoneConnectionStruct>(Unknown_Hash_0054F240, 256, 20);
+        unknown_7c[tier] = new HashTableClass<unsigned int, SubzoneConnectionStruct>(20, 256, Unknown_Hash_0054F240);
     }
     result = stream->Read(unknown_64, unknown_68 * 4, 0);
     if (result < 0) {

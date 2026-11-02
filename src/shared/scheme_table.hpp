@@ -8,57 +8,9 @@
 
 #include "shared/hash_string.hpp"
 #include "shared/color_scheme.hpp"
+#include "shared/hash_table.hpp"
 
 class SchemeNode;
-
-// Westwood's chained hash table (Tiberian Sun hashtable.h order of the constructor's arguments; shared/map.hpp
-// declares the map's instances with the same layout).
-template <class K, class V>
-class HashTableClass {
-public:
-    HashTableClass(int growth, int count, int (__fastcall *hash)(K const &key));   // 0x00605020 for <HashString, SchemeNode *>
-
-    // The value filed under key, or null (the last match in its bucket; 0x006050C0 out of line).
-    V *Find(K const &key)
-    {
-        DynamicVectorClass<HashObject<K, V> > &bucket = Buckets[Hash(key) % BucketCount];
-        for (int index = bucket.Count() - 1; index >= 0; index--) {
-            HashObject<K, V> &object = bucket[index];
-            if (object.Key.operator==(key)) {
-                return &object.Value;
-            }
-        }
-        return 0;
-    }
-
-    // The next non-empty key after the iterator's position, or null once past the last bucket (0x00605120
-    // out of line).
-    K *Next(UnknownSchemeListIterator &it)
-    {
-        if (it.Done) {
-            return 0;
-        }
-        while (it.Bucket < BucketCount) {
-            DynamicVectorClass<HashObject<K, V> > &bucket = Buckets[it.Bucket];
-            while (it.Index < bucket.Count()) {
-                HashObject<K, V> &object = bucket[it.Index];
-                it.Index++;
-                if (!object.Key.Is_Empty()) {
-                    return &object.Key;
-                }
-            }
-            it.Index = 0;
-            it.Bucket++;
-        }
-        it.Done = true;
-        return 0;
-    }
-
-    DynamicVectorClass<HashObject<K, V> > *Buckets;    // +0x00 BucketCount vectors
-    int (__fastcall *Hash)(K const &key);               // +0x04
-    int BucketCount;                                    // +0x08
-    int GrowthStep;                                     // +0x0C
-};
 
 class SchemeTable {
 public:

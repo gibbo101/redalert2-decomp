@@ -4,8 +4,8 @@
     "id": "population-3246",
     "inventory_sha256": "e40c783bc09f6d5eba5f36cb6cd5a013c6a087c8b5eaad809918255a60a7b022",
     "gaps_sha256": "5fa89f0401f7477fa5984aaefcd14a1315e6a9c0ecade75d95bf4beadba3404d",
-    "historical_population_sha256": "0e37585c900f95e52bb6644e0350ff8e4ff26e615529b3cd6fc5921cf22b2647",
-    "historical_acceptance_sha256": "4bb390d533366a7f13287aa2f0a9d736404959c46af61b5fd4d44fc2162bddda"
+    "historical_population_sha256": "d86518d733de450f0b553dd50bfe690db9b5113a8e6adb7f0b9dc5736556aff1",
+    "historical_acceptance_sha256": "17c8164635af8bae3bfb8ff4f0ff322ddcf7b98aab34a2b18c74c7f8dd340de5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -14738,7 +14738,7 @@
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABU2@_N@Z": 6495136,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABUCoordStruct@@_N@Z": 6495136,
     "?Unknown_00631C40@@YIIABUPoint2D@@@Z": 6495296,
-    "?Unknown_00631C60@@YIIABURadarTrackingStruct@@@Z": 6495328,
+    "?Unknown_00631C60@@YIHABURadarTrackingStruct@@@Z": 6495328,
     "?Unknown_00631C80@RadarClass@@QAEXXZ": 6495360,
     "?Unknown_00631D40@RadarClass@@QAEXXZ": 6495552,
     "?Unknown_00631E40@RadarClass@@QAEXXZ": 6495808,
@@ -15221,7 +15221,7 @@
     "?Unknown_Get_Art_6f2b40@@YAPAXXZ": 7285568,
     "?Unknown_Get_Art_6f2dd0@@YAPAXXZ": 7286224,
     "?Unknown_Get_Art_6f2de0@@YAPAXXZ": 7286240,
-    "?Unknown_Hash_0054F240@@YIIABI@Z": 5567040,
+    "?Unknown_Hash_0054F240@@YIHABI@Z": 5567040,
     "?Unknown_Health_Message_006F7E40@@YIPBGH@Z": 7306816,
     "?Unknown_Is_Color_Taken_005c95d0@@YI_NH@Z": 6067664,
     "?Unknown_Is_Lobby_Name_005cd2f0@@YI_NABVWstring@@@Z": 6083312,

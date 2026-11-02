@@ -4,8 +4,8 @@
     "id": "population-3390",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "73edfa33a1286e37770e8b39841a405b7c43f42d55082f5aff63eddb64506558",
-    "historical_acceptance_sha256": "ee60a58e9ef79afb151d51b2434496cf08813230a2e14a6eb336cd306079cc74"
+    "historical_population_sha256": "1a1ff61eba4345976bef80d4d638c32867ee026c00827206b1992018fe5edb77",
+    "historical_acceptance_sha256": "cd6a174542d75ebe31e118b7556cd72ca148f1ac8c444f638df006a5dcd13cbd"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9426,7 +9426,7 @@
     "?Set_Owner@PlanningMemberClass@@QAEXPAVTechnoClass@@@Z": 6359040,
     "?Unknown_0062F150@RadarClass@@QAEXXZ": 6484304,
     "?Unknown_00631C40@@YIIABUPoint2D@@@Z": 6495296,
-    "?Unknown_00631C60@@YIIABURadarTrackingStruct@@@Z": 6495328,
+    "?Unknown_00631C60@@YIHABURadarTrackingStruct@@@Z": 6495328,
     "?Deactivate@RadBeam@@QAEXXZ": 6510560,
     "?Unknown_0067E640@SidebarClass@@SIHH@Z": 6809152,
     "?unknown_abcd68@@3HA": 11259240,
@@ -9609,7 +9609,7 @@
     "??_7?$VectorClass@USubzoneTrackingStruct@@@@6B@": 8018488,
     "??_ESubzoneTrackingStruct@@QAEPAXI@Z": 4239264,
     "??_7?$VectorClass@UZoneConnectionClass@@@@6B@": 8018456,
-    "?Unknown_Hash_0054F240@@YIIABI@Z": 5567040,
+    "?Unknown_Hash_0054F240@@YIHABI@Z": 5567040,
     "??0?$VectorClass@U?$HashObject@II@@@@QAE@IPBU?$HashObject@II@@@Z": 5688784,
     "??0?$VectorClass@U?$HashObject@IUSubzoneConnectionStruct@@@@@@QAE@IPBU?$HashObject@IUSubzoneConnectionStruct@@@@@Z": 5688912,
     "?Unknown_00529710@@YI_NH_N@Z": 5412624,

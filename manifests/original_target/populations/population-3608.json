@@ -4,8 +4,8 @@
     "id": "population-3608",
     "inventory_sha256": "ccbbebe10360bf2d255548f60e4bd94a4203888f277c0c908dab05562bacde25",
     "gaps_sha256": "c4ac89e142618510b04ff241bf6036e58580c8675ece1fc8b1f8cf8a67f24196",
-    "historical_population_sha256": "fd7258180c5058c3f92f0a5a401522d26b37eef1f69cbefb666f006f2e07f0c4",
-    "historical_acceptance_sha256": "70ed3aa31145a73fe92099356db19d1d0a4bb08521911fc132679d7a04c1f524"
+    "historical_population_sha256": "30fb38cb1bd3477b6f1bc86193d1bb7a0a6f7f8d9795d8644bf2a11c0bc44ea4",
+    "historical_acceptance_sha256": "92f1addfd31cab1731012d89835f4678ef5e700495fe20808eb40381bcebd5d2"
   },
   "references": {
     "?Map@@3VMouseClass@@A": 8594656,
@@ -3486,7 +3486,7 @@
     "?unknown_slot32@ParticleTypeClass@@UBE_NABVCell@@PAVHouseClass@@@Z": 6430304,
     "?Unknown_0062F150@RadarClass@@QAEXXZ": 6484304,
     "?Unknown_00631C40@@YIIABUPoint2D@@@Z": 6495296,
-    "?Unknown_00631C60@@YIIABURadarTrackingStruct@@@Z": 6495328,
+    "?Unknown_00631C60@@YIHABURadarTrackingStruct@@@Z": 6495328,
     "?Is_Active@RadBeam@@QBE_NXZ": 6510576,
     "?Save@ScriptClass@@UAGJPAUIStream@@H@Z": 6720000,
     "?Save@ScriptTypeClass@@UAGJPAUIStream@@H@Z": 6721872,
@@ -3963,7 +3963,7 @@
     "?Unknown_006E9670@@YAXXZ": 7247472,
     "?Unknown_006EA130@@YIXXZ": 7250224,
     "??_ESubzoneTrackingStruct@@QAEPAXI@Z": 4239264,
-    "?Unknown_Hash_0054F240@@YIIABI@Z": 5567040,
+    "?Unknown_Hash_0054F240@@YIHABI@Z": 5567040,
     "?unknown_slot22@MapClass@@UAEXXZ": 5538672,
     "?unknown_slot23@MapClass@@UAEXXZ": 5538768,
     "?Unknown_00529710@@YI_NH_N@Z": 5412624,

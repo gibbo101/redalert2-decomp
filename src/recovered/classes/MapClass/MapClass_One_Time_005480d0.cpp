@@ -3,7 +3,7 @@
 // the hash tables (256 buckets, growth step 20) the zone code uses.
 #include "shared/map.hpp"
 // @ref ?One_Time@GScreenClass@@UAEXXZ=004e0950
-// @ref ?Unknown_Hash_0054F240@@YIIABI@Z=0054f240
+// @ref ?Unknown_Hash_0054F240@@YIHABI@Z=0054f240
 // @ref ??2@YAPAXI@Z=00782017
 
 void MapClass::One_Time()
@@ -14,11 +14,11 @@ void MapClass::One_Time()
     MapCellTotal = 0x40000;
     unknown_slot22();
     if (unknown_14 == 0) {
-        unknown_14 = new HashTableClass<unsigned int, unsigned int>(Unknown_Hash_0054F240, 256, 20);
+        unknown_14 = new HashTableClass<unsigned int, unsigned int>(20, 256, Unknown_Hash_0054F240);
     }
     for (int index = 0; index < 3; index++) {
         SubzoneTracking[index].Clear();
-        unknown_7c[index] = new HashTableClass<unsigned int, SubzoneConnectionStruct>(Unknown_Hash_0054F240, 256, 20);
+        unknown_7c[index] = new HashTableClass<unsigned int, SubzoneConnectionStruct>(20, 256, Unknown_Hash_0054F240);
     }
     for (int clear = 0; clear < 12; clear++) {
         unknown_18[clear] = 0;

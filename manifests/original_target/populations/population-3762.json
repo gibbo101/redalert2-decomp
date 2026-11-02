@@ -4,8 +4,8 @@
     "id": "population-3762",
     "inventory_sha256": "84341c235eef325a4f288a0a7c81de6b9e5b968b3b6b57fc6fd13acb98c6287a",
     "gaps_sha256": "4863d8b0e17258e6336d29b8cfee45a1c3950a1e9eb89e5909007e332a5936c8",
-    "historical_population_sha256": "875eeb8d2177ccbae6822247adc1b4dd1f1e739241f4e4546edeab97737ae1ed",
-    "historical_acceptance_sha256": "3cadf6e8cc81e6b78671f3820dee78c8dc3f51fdfd33c26f62aff0f6045ea36b"
+    "historical_population_sha256": "6342247b4f04e437190909ddec705e4819c263a8289b9793944fb1f4ed893009",
+    "historical_acceptance_sha256": "7a11954b5db1c88f9ac51ce71f0a07b772c37a4f1b3712674018503a7cfc2a56"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1877,7 +1877,7 @@
     "??_7?$VectorClass@USubzoneTrackingStruct@@@@6B@": 8018488,
     "??_7?$VectorClass@UZoneConnectionClass@@@@6B@": 8018456,
     "?One_Time@GScreenClass@@UAEXXZ": 5114192,
-    "?Unknown_Hash_0054F240@@YIIABI@Z": 5567040,
+    "?Unknown_Hash_0054F240@@YIHABI@Z": 5567040,
     "??0?$VectorClass@U?$HashObject@II@@@@QAE@IPBU?$HashObject@II@@@Z": 5688784,
     "??0?$VectorClass@U?$HashObject@IUSubzoneConnectionStruct@@@@@@QAE@IPBU?$HashObject@IUSubzoneConnectionStruct@@@@@Z": 5688912,
     "??_7?$DynamicVectorClass@U?$HashObject@II@@@@6B@": 8018552,
@@ -9261,7 +9261,13 @@
     "?Unknown_006D7C80@@YIXPAVAbstractClass@@@Z": 7175296,
     "?From_Name@OverlayTypeClass@@SIHPBD@Z": 6145968,
     "?From_Name@TerrainTypeClass@@SIHPBD@Z": 7230736,
-    "?From_Name@IsometricTileTypeClass@@SIHPBD@Z": 5411840
+    "?From_Name@IsometricTileTypeClass@@SIHPBD@Z": 5411840,
+    "?Is_Empty@HashString@@QBE_NXZ": 5116336,
+    "?Find@Unknown42C350Table@@QBEPAUUnknown42C350Record@@ABVCell@@@Z": 4375376,
+    "?Find@VocClass@@SIPAV1@PBD@Z": 7424400,
+    "?Find@VoxClass@@SIPAV1@PBD@Z": 7431872,
+    "?Find@ToolTipManager@@QAE_NIPAVToolTip@@@Z": 7256992,
+    "?Find@ToolTipManager@@QAEPAVToolTip@@PBUPOINT@@@Z": 7257360
   },
   "regions": [
     {
@@ -10993,7 +10999,7 @@
         {
           "offset": 97,
           "kind": 6,
-          "symbol": "?Unknown_Hash_0054F240@@YIIABI@Z",
+          "symbol": "?Unknown_Hash_0054F240@@YIHABI@Z",
           "target": 5567040,
           "addend": 0,
           "resolved": 5567040
@@ -11033,7 +11039,7 @@
         {
           "offset": 303,
           "kind": 6,
-          "symbol": "?Unknown_Hash_0054F240@@YIIABI@Z",
+          "symbol": "?Unknown_Hash_0054F240@@YIHABI@Z",
           "target": 5567040,
           "addend": 0,
           "resolved": 5567040
@@ -11063,7 +11069,7 @@
           "resolved": 8018520
         }
       ],
-      "source_sha256": "ad3cc76a0d821c81f5e7a4cb6950f34fd13416527849d0cdcda906866f256091",
+      "source_sha256": "168837b9d09b1b9d5f916d53e394a91a7f1ab3bf79d6239def807dd81683dada",
       "source": "src/recovered/classes/MapClass/MapClass_One_Time_005480d0.cpp",
       "population": "population-3762",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",

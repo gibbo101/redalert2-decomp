@@ -5,13 +5,13 @@
 #include "shared/radar.hpp"
 // @ref ??0DisplayClass@@QAE@XZ=00498a50
 // @ref ?unknown_rect_ab6320@RadarClass@@2VRect@@A=00ab6320
-// @ref ?Unknown_00631C60@@YIIABURadarTrackingStruct@@@Z=00631c60
+// @ref ?Unknown_00631C60@@YIHABURadarTrackingStruct@@@Z=00631c60
 // @ref ?Unknown_00405BF0@UnknownList14BC@@QAEXXZ=00405bf0
 // @ref ??2@YAPAXI@Z=00782017
 
 static inline HashTableClass<RadarTrackingStruct, TechnoClass *> *Make_Table(int count, int growth)
 {
-    return new HashTableClass<RadarTrackingStruct, TechnoClass *>(Unknown_00631C60, count, growth);
+    return new HashTableClass<RadarTrackingStruct, TechnoClass *>(growth, count, Unknown_00631C60);
 }
 
 RadarClass::RadarClass()

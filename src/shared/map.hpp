@@ -50,30 +50,10 @@ extern CellClass unknown_dummy_cell_a6f9f8;
 #include "shared/map_elements.hpp"
 #include "shared/subzone_tracking.hpp"
 
-// A hash table of HashObject buckets (16 bytes; built by MapClass::One_Time
-// with 256 buckets, hash function 0x0054F240 and growth step 20; the
-// destructor inlined into MapClass's frees the bucket array).
-template <class K, class V>
-class HashTableClass {
-public:
-    HashTableClass(unsigned (__fastcall *hash)(K const &key), int count, int growth)
-        : Hash(hash), BucketCount(count), GrowthStep(growth)
-    {
-        Buckets = new DynamicVectorClass<HashObject<K, V> >[BucketCount];
-        for (int index = 0; index < BucketCount; index++) {
-            Buckets[index].Set_Growth_Step(growth);
-        }
-    }
-    ~HashTableClass() { delete[] Buckets; }
-
-#ifdef RA2_MAP_HASH_ADD_SOURCE
-    bool Add_Object(int bucket_index, HashObject<K, V> const &object); // original0056BC00
-#endif
-    DynamicVectorClass<HashObject<K, V> > *Buckets;    // +0x00 BucketCount vectors
-    unsigned (__fastcall *Hash)(K const &key);          // +0x04
-    int BucketCount;                                    // +0x08
-    int GrowthStep;                                     // +0x0C
-};
+// The map's hash tables (HashTableClass, shared/hash_table.hpp): built by MapClass::One_Time with 256
+// buckets, hash function 0x0054F240 and growth step 20; the destructor inlined into MapClass's frees the
+// bucket array.
+#include "shared/hash_table.hpp"
 
 // One of the 256 entries at +0x154 (16 bytes): a frame countdown and a cell.
 // The constructors only clear the cell, so the timer is built uninitialized
@@ -90,7 +70,7 @@ struct UnknownMapEntry154 {
 };
 
 // Hash of a cell key for the map's hash tables (0x0054F240).
-unsigned __fastcall Unknown_Hash_0054F240(unsigned const &key);
+int __fastcall Unknown_Hash_0054F240(unsigned const &key);
 
 // Called first by the destructor (no arguments; owners unknown).
 void Unknown_00710B50();

@@ -5,7 +5,7 @@
 #include "shared/radar.hpp"
 #include "shared/map_view.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
-// @ref ?Unknown_00631C60@@YIIABURadarTrackingStruct@@@Z=00631c60
+// @ref ?Unknown_00631C60@@YIHABURadarTrackingStruct@@@Z=00631c60
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ?Unknown_00630A00@RadarClass@@QAEXXZ=00630a00

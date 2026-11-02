@@ -71,7 +71,7 @@ inline bool operator==(HashObject<RadarTrackingStruct, TechnoClass *> const &a, 
 // Hash of a radar point (0x00631C40) and of a tracking key, by its point
 // (0x00631C60): x + y * 251.
 unsigned __fastcall Unknown_00631C40(Point2D const &point);
-unsigned __fastcall Unknown_00631C60(RadarTrackingStruct const &key);
+int __fastcall Unknown_00631C60(RadarTrackingStruct const &key);
 
 // The radar's background art (0x00AC0FF0; a shell art buffer, as the art
 // loaders name it), drawn by Draw_It at the radar origin.
@@ -154,7 +154,7 @@ extern DynamicVectorClass<UnknownRadarObject37B *> unknown_vector_a40c20;    // 
 // helper, which keeps the bucket vector constructor 0x00635110 out of line).
 inline HashTableClass<RadarTrackingStruct, TechnoClass *> *New_Tracking_Table(int count, int growth)
 {
-    HashTableClass<RadarTrackingStruct, TechnoClass *> *table = new HashTableClass<RadarTrackingStruct, TechnoClass *>(Unknown_00631C60, count, growth);
+    HashTableClass<RadarTrackingStruct, TechnoClass *> *table = new HashTableClass<RadarTrackingStruct, TechnoClass *>(growth, count, Unknown_00631C60);
     return table;
 }
 
