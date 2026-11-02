@@ -4,8 +4,8 @@
     "id": "population-3431",
     "inventory_sha256": "7d02d0b527e6c0e97444df8c8d92e399737bfb12f871c53a03717dbe2fc08d25",
     "gaps_sha256": "d0e5cbd9ade4007230d3f9c696ed0982cb12bfdc498a7d83e5e6635c7b0acf66",
-    "historical_population_sha256": "f48de55462573761ea201388ce098cb3dbebfb593d408ff3cd4eb7c035cdb6a4",
-    "historical_acceptance_sha256": "65196543ac2da213a1056436c72b47562d8afb9f74872bc22b01ab0ecef8ae8f"
+    "historical_population_sha256": "07e3325e016e275cade8cb760bbc097cb262043ffedafd7f02f6859ace5c48d2",
+    "historical_acceptance_sha256": "ca1cdb5124774ee30fe07792159181beb45f58b3f14261de218bff3c814f7808"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -856,7 +856,7 @@
     "?Audio_DS_Volume_Attenuation@@YIJH@Z": 4237344,
     "?Audio_Device_Add_Channel@@YIXPAUAudioDevice@@PAUAudioChannel@@@Z": 4204640,
     "?Audio_List_Cursor_Next@@YIPAUAudioListNode@@PAUAudioListCursor@@@Z": 4205600,
-    "?Audio_Now@@YA_JXZ": 4231888,
+    "?Audio_Now@@YI_JXZ": 4231888,
     "?Audio_Clock@@3P6A_JXZA": 8590680,
     "?Audio_Queue_Flush@@YIJPAUAudioQueue@@@Z": 4231696,
     "?Audio_Ready_Driver_Count@@YAHXZ": 4205632,
@@ -2137,7 +2137,7 @@
         {
           "offset": 38,
           "kind": 20,
-          "symbol": "?Audio_Now@@YA_JXZ",
+          "symbol": "?Audio_Now@@YI_JXZ",
           "target": 4231888,
           "addend": 0,
           "resolved": 7414
@@ -2709,7 +2709,7 @@
         {
           "offset": 14,
           "kind": 20,
-          "symbol": "?Audio_Now@@YA_JXZ",
+          "symbol": "?Audio_Now@@YI_JXZ",
           "target": 4231888,
           "addend": 0,
           "resolved": 6494
@@ -2744,7 +2744,7 @@
         {
           "offset": 14,
           "kind": 20,
-          "symbol": "?Audio_Now@@YA_JXZ",
+          "symbol": "?Audio_Now@@YI_JXZ",
           "target": 4231888,
           "addend": 0,
           "resolved": 6446
@@ -3233,7 +3233,7 @@
         {
           "offset": 6,
           "kind": 20,
-          "symbol": "?Audio_Now@@YA_JXZ",
+          "symbol": "?Audio_Now@@YI_JXZ",
           "target": 4231888,
           "addend": 0,
           "resolved": 4790
@@ -3241,7 +3241,7 @@
         {
           "offset": 43,
           "kind": 20,
-          "symbol": "?Audio_Now@@YA_JXZ",
+          "symbol": "?Audio_Now@@YI_JXZ",
           "target": 4231888,
           "addend": 0,
           "resolved": 4753
@@ -4599,7 +4599,7 @@
         {
           "offset": 916,
           "kind": 20,
-          "symbol": "?Audio_Now@@YA_JXZ",
+          "symbol": "?Audio_Now@@YI_JXZ",
           "target": 4231888,
           "addend": 0,
           "resolved": 5288

@@ -4,8 +4,8 @@
     "id": "population-3451",
     "inventory_sha256": "1d3a65e3133a8d7111c412645638e8acda7402606e5a9690d369370cfe763549",
     "gaps_sha256": "c9a912e73a304dcf8dc3bd783c93430b9e124b8075a58201b17f33c3ab85a1c3",
-    "historical_population_sha256": "7aa97fcade5673a458d972ad6866edec7b29fdb32b40f4834f69b924834b2773",
-    "historical_acceptance_sha256": "0719a3ca7ccbe4aa9325ac0363423ba4d2ba6edea10de769cfa6a7315ea8c64f"
+    "historical_population_sha256": "69d7c77e9d47405e5df1a41c4ef982a460e68d2acf1427c0b2e7ff7d52f57c69",
+    "historical_acceptance_sha256": "8b3a77d4fbb0be382fedf0ceb46a3502d11ace2db0c55918f820396db97ed3e5"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -16469,7 +16469,7 @@
     "?Audio_DS_Volume_Attenuation@@YIJH@Z": 4237344,
     "?Audio_Device_Add_Channel@@YIXPAUAudioDevice@@PAUAudioChannel@@@Z": 4204640,
     "?Audio_List_Cursor_Next@@YIPAUAudioListNode@@PAUAudioListCursor@@@Z": 4205600,
-    "?Audio_Now@@YA_JXZ": 4231888,
+    "?Audio_Now@@YI_JXZ": 4231888,
     "?Audio_Clock@@3P6A_JXZA": 8590680,
     "?Audio_Queue_Flush@@YIJPAUAudioQueue@@@Z": 4231696,
     "?Audio_Ready_Driver_Count@@YAHXZ": 4205632,

@@ -8,7 +8,7 @@
 #include "shared/crt_string.hpp"
 // @ref ?unknown_flag_a40d0c@@3DA=00a40d0c
 // @ref ?unknown_check_406f30@@YAHXZ=00406f30
-// @ref ?Audio_Now@@YA_JXZ=004092d0
+// @ref ?Audio_Now@@YI_JXZ=004092d0
 // @ref ?unknown_vox_type_ad0858@@3HA=00ad0858
 // @ref ?unknown_vox_list_ad0868@@3UAudioListNode@@A=00ad0868
 // @ref ?unknown_vox_priority_ad0880@@3HA=00ad0880

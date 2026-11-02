@@ -988,7 +988,7 @@ int __fastcall Audio_DS_Fill(AudioChannelBuffer *record, int bytes);            
 
 // The millisecond clock.
 void Audio_Timer_Init();                                                                    // 0x00409280
-__int64 Audio_Now();                                                                        // 0x004092D0
+__int64 __fastcall Audio_Now();                                                                        // 0x004092D0
 
 // The DirectSound driver: device functions (ECX is the device) ...
 HRESULT __fastcall Audio_DS_Init(AudioDriver *driver);                                      // 0x00409390

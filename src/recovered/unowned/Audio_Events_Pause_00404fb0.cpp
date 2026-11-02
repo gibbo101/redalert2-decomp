@@ -4,7 +4,7 @@
 // time.
 // @ref ?Audio_Event_List@@3UAudioListNode@@A=00830ea0
 // @ref ?Audio_Events_Ready@@3HA=00830fb8
-// @ref ?Audio_Now@@YA_JXZ=004092d0
+// @ref ?Audio_Now@@YI_JXZ=004092d0
 #include "shared/audio_event.hpp"
 
 void Audio_Events_Pause()

@@ -9,7 +9,7 @@
 // decoder. Returns 1 when everything was written, 0 on a lock, restore,
 // buffer-management or decoder failure (each but the last reported).
 // @ref ?Audio_DS_Setup_Decoder@@YIXPAUAudioChannelBuffer@@@Z=00409b60
-// @ref ?Audio_Now@@YA_JXZ=004092d0
+// @ref ?Audio_Now@@YI_JXZ=004092d0
 // @ref ??_C@_0BB@OLEN@Restored?5buffer?6?$AA@=007cd230
 // @ref ??_C@_0BH@FAOO@Failed?5to?5lock?5buffer?6?$AA@=007cd1fc
 // @ref ??_C@_0BK@EALD@Failed?5to?5restore?5buffer?6?$AA@=007cd214
