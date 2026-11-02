@@ -2,6 +2,8 @@
 // Clears the list, the geometry and the selection range; the seven trailing words become 0x10001.
 // The DynamicVectorClass members this unit's lists expand, defined before any other header includes the
 // vector header (the unit's first source; shared/vector_class.hpp).
+// MsgList.cpp members declared for this unit only (shared/message_list.hpp).
+#define RA2_MESSAGE_LIST_UNIT
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ADD

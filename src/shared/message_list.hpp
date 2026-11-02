@@ -30,6 +30,11 @@ public:
     TextLabelClass *Get_Label(int identifier);
     // Gives the edit line the focus when one is open (0x005B53E0).
     void Set_Edit_Focus();
+#ifdef RA2_MESSAGE_LIST_UNIT
+    // Whether the open edit line has the focus (0x005B53F0, unreferenced; Westwood's Has_Edit_Focus; declared for
+    // MsgList.cpp only: message_list.hpp is in Refresh_Wonline_Players 0x0073FEE0's closure).
+    bool Has_Edit_Focus();
+#endif
     // Opens the edit line with the text (none: empty) and the cursor character; with AdjustEdit it takes the last
     // row of the list (dropping the oldest message when the list is full). A width of 0 or less is TextWidth (0x005B5410).
     TextLabelClass *Add_Edit(int color, unsigned style, unsigned short const *text, char cursor, int width);
