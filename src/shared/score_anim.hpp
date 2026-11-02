@@ -30,6 +30,7 @@ public:
 
 class ScoreTimeClass : public ScoreAnimClass {
 public:
+    ScoreTimeClass(int x, int y, void const *data, int maxStage, int delay, ConvertClass *drawer); // 0x00667F40
     virtual ~ScoreTimeClass() {}                                // deleting 0x00668390
     virtual bool Update(int unknown);                           // slot 3 0x00667F90
 
