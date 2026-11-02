@@ -24,16 +24,17 @@ public:
     }
 };
 
-// A timer counting T's ticks since it was set (Westwood's BasicTimerClass; RA2 keeps Started first).
+// A timer counting T's ticks since it was set (Westwood's BasicTimerClass; RA2 keeps Started first;
+// int Started and an int setting as in Westwood's TIMER.H).
 template<class T>
 class BasicTimerClass {
 public:
-    BasicTimerClass(unsigned long set = 0) : Started(Timer() - set) {}
+    BasicTimerClass(int set = 0) : Started(Timer() - set) {}
     unsigned long Value() const { return Timer() - Started; }
     operator unsigned long() const { return Timer() - Started; }
 
 protected:
-    unsigned long Started;  // +0x00
+    int Started;            // +0x00 (int as in Westwood TIMER.H; unsigned stores the Pentium value last)
     T Timer;                // +0x04
 };
 
