@@ -1097,3 +1097,11 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout540 (2026-11-02, closed; 0 B)
 - Add_Compressed_Events 0x627B60: 95.72. GScreen Get_Input 0x4E09D0: 82.81 (register ties decided by use counts; see VC6 notes). 0x603750: 69.19.
 - MapSizeGameOption::Describe 0x728AB0: 75.68, after adding the missing MapSize_Labels @ref. A named joined temporary probe reaches 78.26 (Scout540 w/ms).
+
+## Scout543 (2026-11-02, closed; 32 B landed: 0x56EA00)
+- early.py pad-start scan below 0x5B0000: only 0x56EA00 (landed) and 0x451BF0 are real; 0x54BE80 is in codex2's hold and 0x475960 is Adj472's miss.
+- Draw_Radial_Indicator 0x451BF0 (1,136 B): 97.22, shape 100 (Scout543 w/rad_best.cpp). One register tie is left in the spoke loop. Assigned to Scout544.
+
+## Scout542 (2026-11-02, closed; 0 B)
+- LineTrail::Draw 0x5395C0: 65.64 -> 96.94 (Scout542 w/lt/zb.cpp). Three instructions are left; assigned to Scout545.
+- Planning_Same_Selection_Path 0x615DE0: 85.86 (w3.cpp is a layout lead). Fill_Port 0x66D5A0: 87.92. Find_First_Obstacle 0x4BB890: 98.89 loose.
