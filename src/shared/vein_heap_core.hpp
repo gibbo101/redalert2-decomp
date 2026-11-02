@@ -33,6 +33,9 @@ public:
             Array[index] = 0;
         }
     }
+#ifdef RA2_VEIN_HEAP_CLEAR_SOURCE
+    void Clear();                           // own out-of-line provider0x00712A10
+#else
     void Clear()                            // out-of-line copy 0x00712A10
     {
         for (int index = 0; index <= Count; index++) {
@@ -40,6 +43,7 @@ public:
         }
         Count = 0;
     }
+#endif
     // Sifts the node up to its place by Key (inlined by 0x00711AA0).
     void Insert(UnknownVeinNode *node)
     {
