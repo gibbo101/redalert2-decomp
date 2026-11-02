@@ -141,6 +141,8 @@ class RGBClass;
 int __fastcall Planning_Adjusted_Pixel(RGBClass const &color, RGBClass const &target, int ratio);
 // Lowers a house's counter, never below 0 (0x00616D20).
 void __fastcall Planning_Uncount(int house);
+// Takes a techno out of the planning list, lowering its house's counter (0x00614550).
+void __fastcall Planning_Unlist_Techno(TechnoClass *techno);
 extern int unknown_counts_a76684[8];            // 0x00A76684
 extern bool unknown_flag_a767a5;                // 0x00A767A5 (the planning lists are being torn down)
 extern bool unknown_flag_a767a4;                // 0x00A767A4
@@ -252,7 +254,7 @@ Rect __fastcall Planning_Centered_Rect(int size, Point2D center);
 CoordStruct __fastcall Planning_Event_Coord(EventClass const &event);
 
 // A planned waypoint (0xB8 bytes, constructor 0x00610A80, destructor
-// 0x00610AF0).
+// 0x00610AF0, scalar deleting destructor 0x0061A750).
 //   +0x00 DynamicVectorClass<PlanningMemberClass *> Members
 //   +0x18 int (the event's +0x03 when made from an event)
 //   +0x1C bool IsQueued (in unknown_list_00a76758)
@@ -263,8 +265,6 @@ class PlanningNodeClass {
 public:
     PlanningNodeClass(int unknown_18);                        // 0x00610A80
     ~PlanningNodeClass();                                     // 0x00610AF0
-    PlanningNodeClass *Release(unsigned int flags);           // 0x0061A750
-    void operator delete(void *pointer) { ::operator delete(pointer); }
 
     int Index_For(TechnoClass *techno);                       // 0x00610C30
     PlanningNodeClass *Previous(TechnoClass *techno);         // 0x00610C60
@@ -422,6 +422,10 @@ inline PlanningTokenClass *Planning_Token(TechnoClass *techno)
 extern PlanningNodeClass *unknown_node_a7678c;
 extern PlanningNodeClass *unknown_node_a766f8;
 extern PlanningNodeClass *unknown_node_a766b0;
+// Planning state Unknown_00613E50 clears (names are hypotheses).
+extern int unknown_a766fc;                      // 0x00A766FC
+extern bool unknown_flag_a76790;                // 0x00A76790
+extern int unknown_a76750;                      // 0x00A76750 (-1)
 
 // Adds every member of from to node, each with a copy of the event aimed at
 // that member's techno (0x006167F0; PlanningNodeClass::Add_Member's body).

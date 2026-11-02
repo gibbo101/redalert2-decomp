@@ -1165,3 +1165,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
   - The Execute_DoList signature becomes (int, int, ConnManClass *, CDTimerClass<FrameTimerClass> *, UnknownFrameTiming *) __fastcall.
   - The new globals 0xA3D23C/0xA3D258/0xA402E0-E8/0xA40D1C and Unknown_00629290(int, int) __fastcall are allowed.
 - Remaining unaccepted Queue.CPP rows: Queue_AI 0x623770, Queue_AI_Multiplayer 0x623B00, Wait_For_Players 0x624C10, Process_Receive_Packet 0x6265C0, 0x626CB0, 0x6279D0, 0x629290, Print_CRCs 0x62A360, plus the templates 0x62EA00/0x62EA40. IPX Service 0x525F60 is untouched.
+
+## Scout579 (2026-11-02/03; 2,454 B landed: Execute_DoList 0x628880)
+- Process_Receive_Packet 0x6265C0: 49.40 at HEAD -> 87.18 (Scout579 misses/). It needs c3.cpp, a byte-exact rewrite of 0x62E5C0 that refuses auto-inlining, in the same plan, plus the event.hpp POD union overlay.
+- 0x626CB0: 52.58. Extract_Compressed_Events 0x6282D0: 56.53, parked after two attempts.
