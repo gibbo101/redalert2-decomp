@@ -49,6 +49,7 @@ public:
     // Starts a drift of 20..30 either way (Power_Off and Shove expand it;
     // name hypothesis).
     bool Reduce_Path_Length_004fdfd0();
+    void Motion_AI_004fdaf0();
     void Gravity_AI_004fb9d0();
     bool unknown_4fdfc0();                                                      // 0x004FDFC0 (moving; never called out of line)
     void Start_Drift();                                                         // 0x004FEC30
