@@ -7357,56 +7357,6 @@
       "source_order": 158457
     },
     {
-      "entry": 4268912,
-      "method": "00412370",
-      "symbol": "?get@Leaf_412370@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_412370@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "2db31f4e09597946e56e859813bfdad7046d457c32332c3a882654d1e3ffdf67",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "5a9bd1333a736806794087fa4c01765e17a6ad5adb9bf4b29fe6565e591b0e6f",
-      "relocations": [],
-      "source_sha256": "9dc6ebc16f74548eaedaeb05884410855bac18d06ec0e367c51cad2968ae4bc6",
-      "source": "src/recovered/00412370.cpp",
-      "population": "population-3602",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 158458
-    },
-    {
-      "entry": 4268928,
-      "method": "00412380",
-      "symbol": "?get@Leaf_412380@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_412380@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "2db31f4e09597946e56e859813bfdad7046d457c32332c3a882654d1e3ffdf67",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "5a9bd1333a736806794087fa4c01765e17a6ad5adb9bf4b29fe6565e591b0e6f",
-      "relocations": [],
-      "source_sha256": "1ec4b70a1c9fec71d0d38bff862f83a002efd2078b2fa4bc66dac0e4027b3ed8",
-      "source": "src/recovered/00412380.cpp",
-      "population": "population-3602",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 158459
-    },
-    {
       "entry": 4272592,
       "method": "004131d0",
       "symbol": "?get@Leaf_4131d0@@QAEXI@Z",
