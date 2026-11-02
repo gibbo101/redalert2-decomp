@@ -114,6 +114,15 @@ unsigned char Event_Sequence();
 template <class T, int size>
 class QueueClass {
 public:
+    // Empty queue (Red Alert's QUEUE.H: the constructor calls Init); the globals unit at
+    // 0x004D2BA0 builds OutList, DoList and the 256-entry queue 0x00A35F30 this way.
+    QueueClass() { Init(); }
+    void Init()
+    {
+        Count = 0;
+        Head = 0;
+        Tail = 0;
+    }
     bool Add(T const &q)
     {
         if (Count < size) {
@@ -153,5 +162,7 @@ bool __stdcall Unknown_0062E670(EventClass event);
 // (Clean_DoList 0x00629E80 and Queue_Record 0x00629ED0 wrap the head with
 // 0x3FFF; the array starts at 0x0086627C).
 extern QueueClass<EventClass, 0x4000> DoList;
+// A third event queue of 256 entries (0x00A35F30; the array starts at 0x00A35F3C; use not recovered).
+extern QueueClass<EventClass, 256> unknown_event_queue_a35f30;
 
 #endif

@@ -23,7 +23,6 @@ class ObjectClass;
 // @ref ?Resize@?$VectorClass@PAVObjectClass@@@@UAE_NHPBQAVObjectClass@@@Z=0040cc00
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref _atexit=0078298a
-// @ref _$E2=004d45b0
 // @ref ?unknown_objects_a40c60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A=00a40c60
 
 DynamicVectorClass<ObjectClass *> unknown_objects_a40c60;

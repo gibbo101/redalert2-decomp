@@ -18,6 +18,5 @@
 // @ref ?Fetch@?$VectorClass@PAUThemeControl@@@@UBEPAUThemeControl@@H@Z=004d4c40
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref _atexit=0078298a
-// @ref _$E2=004d4680
 
 ThemeClass Theme;

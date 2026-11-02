@@ -469,7 +469,13 @@ extern int unknown_a71ea0;
 extern int unknown_a71ea4;
 int Unknown_00737af0();
 // The version object (0x00A40C88; its two values go into a join request, 0x007131B0/0x007131C0).
+// Polymorphic: its vtable 0x007A2ABC (RTTI .?AVVersionClass@@) has one slot, the scalar deleting
+// destructor 0x004D4980 of the inline virtual destructor, which the globals unit at 0x004D2BA0
+// emits with the object's atexit destructor 0x004D4610. Layout from the constructor 0x00712B20
+// (Tiberian Sun's VersionClass).
 struct UnknownVersionObject {
+    UnknownVersionObject();                 // 0x00712B20
+    virtual ~UnknownVersionObject() {}
     // Resets the version clipping range (0x00713160; Red Alert's Init_Clipping).
     void Init_Clipping_00713160();
     // The version both sides can play for a peer's range: 0 when the peer is too old, -1
@@ -481,6 +487,18 @@ struct UnknownVersionObject {
     unsigned long Unknown_007131c0();       // 0x007131C0 the maximum version (0x20000)
     // The internal version text (0x00712ED0; the sync logs print it).
     char const *Internal_Version_Name_00712ed0();
+
+    unsigned long Version;                  // +0x04
+    unsigned short MajorVer;                // +0x08
+    unsigned short MinorVer;                // +0x0A
+    char VersionName[30];                   // +0x0C
+    char VersionText[16];                   // +0x2A
+    unsigned long MinClipVer;               // +0x3C
+    unsigned long MaxClipVer;               // +0x40
+    // +0x44 flag bits 0-3 (the constructor clears them; Tiberian Sun's VersionInit, MajorInit,
+    // MinorInit and TextInit). A word, not 1-bit members: declaring the bit-fields here changes
+    // the code of Pick_Lobby 0x00744090 and Refresh_Wonline_Players 0x0073FEE0 (type-count rule).
+    unsigned long Flags;
 };
 extern UnknownVersionObject version_object_00a40c88;
 // The version text (0x007131D0; the sync logs print it).

@@ -23,7 +23,6 @@ class TagClass;
 // @ref ?ID@?$DynamicVectorClass@PAVTagClass@@@@UAEHABQAVTagClass@@@Z=004d5b40
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref _atexit=0078298a
-// @ref _$E2=004d4820
 // @ref ?unknown_tags_866160@@3V?$DynamicVectorClass@PAVTagClass@@@@A=00866160
 
 DynamicVectorClass<TagClass *> unknown_tags_866160;

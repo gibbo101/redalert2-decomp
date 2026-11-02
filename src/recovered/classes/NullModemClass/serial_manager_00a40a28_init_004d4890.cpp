@@ -8,6 +8,5 @@
 // @ref ??1NullModemClass@@UAE@XZ=005d0050
 // @ref ?serial_manager_00a40a28@@3VNullModemClass@@A=00a40a28
 // @ref _atexit=0078298a
-// @ref _$E3=004d48c0
 
 NullModemClass serial_manager_00a40a28(16, 16, 0xEC, 0x1234);

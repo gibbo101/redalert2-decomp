@@ -9,6 +9,5 @@
 // @ref ??1UnknownSessionState@@QAE@XZ=0066eb20
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
 // @ref _atexit=0078298a
-// @ref _$E7=004d4880
 
 UnknownSessionState unknown_session_a3d298;

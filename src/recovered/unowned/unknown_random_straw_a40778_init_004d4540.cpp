@@ -8,6 +8,5 @@
 // @ref ??1RandomStraw@@UAE@XZ=0063d320
 // @ref _atexit=0078298a
 // @ref ?unknown_random_straw_a40778@@3VRandomStraw@@A=00a40778
-// @ref _$E4=004d4560
 
 RandomStraw unknown_random_straw_a40778;
