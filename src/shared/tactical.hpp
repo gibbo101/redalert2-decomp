@@ -108,6 +108,9 @@ public:
     // the View commands store the cell under it).
     Point2D Unknown_006A67D0();
     // Moves the view to a point (0x006A66B0; radar slot 52).
+#ifdef RA2_TACTICAL_PICK_OBJECT
+    ObjectClass *Get_Selectable_Object_006aa990(Point2D const &point); // original thiscall/RET4, pointer result
+#endif
     void Unknown_006A66B0(Point2D const &point);
     void Unknown_006A66B0(CoordStruct const &coord);    // the same entry, given a coordinate
     // The coordinate under a screen point (0x006A2B10) and the cell under it
