@@ -64,6 +64,7 @@ public:
     void unknown_func_70c4d0(int count);    // 0x0070C4D0 (sized by a type count)
     void Unknown_0070C490(int index);       // 0x0070C490 (counts one of a type; TechnoClass slot 55)
     ~UnknownHouseTracker();                 // 0x0070C480
+    int Get_All_Totals_Sum();               // 0x0070C510 (shared/unit_tracker.hpp's UnitTrackerClass)
     char unknown_000[0x808];
 };
 class UnknownHouseCounter {

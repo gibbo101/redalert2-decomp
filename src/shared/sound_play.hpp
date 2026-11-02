@@ -31,6 +31,11 @@ public:
     void Unknown_00405D50();            // 0x00405D50
     void Unknown_00405FE0();            // 0x00405FE0
     void Unknown_00406070();            // 0x00406070 (VoxelAnimClass destructor, before Unknown_00405C10)
+#ifdef SOUND_PLAY_DECLARE_KEEP_EVENT
+    // Keeps a playing event and its type (0x00406100; as UnknownList14BC::Unknown_00406100;
+    // guarded: this header is in the closure of the fragile row 0x0073FEE0).
+    void __fastcall Unknown_00406100(AudioEvent *event, AudioEventType *type);
+#endif
 
     int unknown_10;
 };
