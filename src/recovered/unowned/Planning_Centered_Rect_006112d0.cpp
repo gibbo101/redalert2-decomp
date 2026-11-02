@@ -8,5 +8,6 @@ Rect __fastcall Planning_Centered_Rect(int size, Point2D center)
     Point2D corner = center;
     corner.X += half;
     corner.Y += half;
-    return Rect(corner.X, corner.Y, size, size);
+    Rect rect(corner.X, corner.Y, size, size);
+    return rect;
 }

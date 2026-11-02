@@ -220,6 +220,8 @@ void __fastcall Planning_Draw_Midpoint(int color, int unused, Point2D start, Poi
 // Draws the planning mode (0x00617EF0); its drawing helpers (0x00619870, 0x00618C00).
 void Planning_Draw_All();
 void __fastcall Planning_Draw_Techno(TechnoClass *techno);
+void __fastcall Planning_Draw_Node_619870(PlanningNodeClass *node);       // 0x00619870
+void __fastcall Planning_Draw_Techno_618c00(TechnoClass *techno);       // 0x00618C00
 extern DynamicVectorClass<TechnoClass *> unknown_list_a40c20;      // 0x00A40C20
 int __fastcall Planning_Techno_Color(TechnoClass *techno);                     // 0x00619E80
 Point2D __fastcall Planning_Event_Pixel(EventClass const *event, AbstractClass *object);   // 0x00619FA0
