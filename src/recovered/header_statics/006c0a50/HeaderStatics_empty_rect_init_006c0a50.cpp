@@ -1,4 +1,6 @@
 #define RA2_COORD_DIVIDE_SOURCE
+#define RA2_TECHNO_STATIC_TIMERS
+// (Declares TechnoClass::ActionLineTimer / TalkBubbleTimer only in this unit: see shared/techno.hpp.)
 // (Declares CoordStruct::operator/ only in this unit: its out-of-line copy 0x006D9770 has its own source.)
 // Header-static dynamic initializers of the unit at 0x006C0A50: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x006C0A50-0x006C0C31); the other

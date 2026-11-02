@@ -558,6 +558,17 @@ public:
     SurfaceRegion Render_Voxel_Shadow_006d2810(UnknownObjectPair const &voxel, Matrix3D const &transform, Point2D const &point, Rect const &cliprect, int layer, unsigned flags, bool cached, unsigned unknown_1, unsigned unknown_2, unsigned unknown_3);
     void Blit_Voxel_006d29d0(void const *entry, Point2D const &point, Rect const &cliprect, unsigned flags, int brightness);
     static void unknown_6d7990();                               // 0x006D7990 (restarts unknown_timer_ac0178 at 25)
+    // TibSun TechnoClass::ActionLineTimer / TalkBubbleTimer: Techno.CPP defines them
+    // (initializers 0x006C0C40 / 0x006C0C80, guarded atexit destructors 0x006C0C60 /
+    // 0x006C0CB0, guard byte 0x00AC0128). Other units still reach them through the
+    // unknown_timer_ac0178 / unknown_timer_ac0168 globals until a rename merges the names.
+    // Guarded: each static data member declaration of this type shifts VC6's _$E/_$S
+    // numbering in every unit that includes this header (Object.CPP, Foot.CPP, ...), so
+    // only Techno.CPP (HeaderStatics_empty_rect_init_006c0a50.cpp) defines the macro.
+#ifdef RA2_TECHNO_STATIC_TIMERS
+    static CDTimerClass<FrameTimerClass> ActionLineTimer;       // 0x00AC0178
+    static CDTimerClass<SystemTimerClass> TalkBubbleTimer;      // 0x00AC0168
+#endif
     static void __fastcall unknown_6d8fd0(TechnoClass *techno, int value);   // 0x006D8FD0 (sets the talk-bubble techno and restarts its timer)
     void unknown_6145e0();                                      // 0x006145E0 (out of this unit)
     bool Unknown_006D8640(WeaponStruct *weapon);                // 0x006D8640 (InfantryClass slot 137)
