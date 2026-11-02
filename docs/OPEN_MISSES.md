@@ -1042,3 +1042,15 @@ Resume notes are in build/class-work/Scout525/NOTES.md.
   - HeaderStatics 0x536F30 and LightSource 0x537830 use shared/milsectmr.hpp.
   - voxel_cache's StaticBufferClass field names follow ctor 0x69A1A0.
   - The MouseClass Map global 0x40D060/0x40D080/0x40D160 waits for the Sidebar destructor chain (codex4 area, parked).
+
+## Scout527 (2026-11-02, closed; 3,638 B landed in r1-r2, plus ren1 and ren2)
+Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
+- Build_Schemes 0x604540: 94.43, shape 99.30. Only the second loop's stack slots are ordered differently. It is the only function that instantiates DynamicVectorClass<ColorScheme *>, so the tail 0x604CD0-0x604FF0 and 0x6055A0/F0 follow once it is exact.
+- PaletteName::Load 0x603380: 89.62. The original keeps the HashObject(key, value) ctor 0x605D80 out of line at depth 3; ours inlines it.
+- 0x603D50: 72.73 (the original keeps a constant 0 in ebx). 0x603750: 69.19 (an ebp/edi swap; it would also bring in 0x605120 and 0x6050C0).
+- Findings:
+  - VC6 inlines members whose definitions come later in the unit.
+  - 0x603240 is ~SchemeNode.
+  - DynamicVectorClass<char *> copies resolve to the 0x491xxx rows through catalog references, with no suppression needed.
+  - 0x605DA0 stays in pop-35 and is bound by @ref.
+- OWNER DECISIONS (16:10Z): the int hash return type of ren1 is confirmed. The ColorScheme ctor's 4th parameter becomes PaletteClass * (assigned to Scout530 as a rename).
