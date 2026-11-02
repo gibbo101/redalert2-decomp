@@ -129,7 +129,11 @@ public:
 };
 
 // Every warhead type (0x00839B00; defined in the unit at 0x0040F0A0).
+// The defining unit sets RA2_WARHEAD_LIST_DEFINED: a later extern declaration of
+// a class object in the same unit makes VC6 emit a second dynamic initializer.
+#ifndef RA2_WARHEAD_LIST_DEFINED
 extern DynamicVectorClass<WarheadTypeClass *> unknown_WarheadTypeClass_list_00839b00;
+#endif
 
 // The damage a warhead does to an armor type at a distance (0x0047E1C0;
 // fastcall: damage, warhead, then armor and distance on the stack;

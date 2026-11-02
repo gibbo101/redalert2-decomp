@@ -10,6 +10,7 @@ class WarheadTypeClass;
 
 // The unit's list of WarheadTypeClass objects (0x00839B00; name is a hypothesis).
 DynamicVectorClass<WarheadTypeClass *> unknown_WarheadTypeClass_list_00839b00;
+#define RA2_WARHEAD_LIST_DEFINED
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??8?$VectorClass@PAVWarheadTypeClass@@@@UBE_NABV0@@Z=0040f420
 // @ref ??_7?$DynamicVectorClass@PAVWarheadTypeClass@@@@6B@=0079ad0c
