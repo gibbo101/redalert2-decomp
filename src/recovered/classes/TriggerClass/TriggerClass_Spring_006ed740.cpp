@@ -7,7 +7,6 @@
 #include "shared/house.hpp"
 // @ref ?unknown_func_6e6050@TEventClass@@QAE_NHPAVHouseClass@@PAVObjectClass@@PAV?$CDTimerClass@VFrameTimerClass@@@@PA_NH@Z=006e6050
 // @ref ?unknown_func_6e6cf0@TEventClass@@QBE_NXZ=006e6cf0
-// @ref ?Reset@TriggerClass@@QAEXXZ=006ed680
 
 bool TriggerClass::Spring(int event, ObjectClass *object, bool forced, bool persistent, int source)
 {
