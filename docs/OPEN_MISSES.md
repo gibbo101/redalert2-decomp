@@ -1138,3 +1138,12 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout550-552 (2026-11-02, closed; 2,177 B landed: Wall_Update 1,015 B, Wide_Area_Damage 459 B, Fill_Port 703 B)
 - OWNER NOTE (20:55Z): Wall_Update uses an identity inline Wall_Rect wrapper to get the call order, and Fill_Port uses a file-local Send_Message wrapper. Both are real C++ that a Westwood source could contain, so they are accepted. They are marked as hypotheses: replace them with TibSun-shaped source if evidence turns up.
 - IonBlast AI 0x521340: 81.29 (Scout552 w/ia_best.cpp; about 8 B of frame left: a height slot and the Cell argument copy). LineTrail::Draw 0x5395C0: 96.94 (VC6 reuses one &current->Value for the test and the Draw argument).
+
+## Scout553-556 (2026-11-02; 2,337 B landed: tracker 0x4128A0)
+- Tracker 0x4128A0 is exact: a named `side` local for the side bins in diagonal blocks 1-3. Append_Bin 0x412720 and As_Cell 0x413770 are bound by @ref (see the HANDOFF rehead lesson).
+- Inline-wrapper lever passes (Scout554/556) left these unchanged; each needs a different source shape:
+  - Get_Obstacle 97.38 and Find_First_Obstacle 98.89;
+  - LineTrail::Draw 96.94;
+  - the Matrix3D trio 99.01/97.67/96.59 (one integer op is placed among the FP ops differently);
+  - PaletteName::Load 98.23 (the 0x605D80 ctor now binds byte-exact through hv/c2; pair 1 comes from Load's context);
+  - Preview_Tile 81.25.
