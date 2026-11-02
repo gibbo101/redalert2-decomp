@@ -1112,3 +1112,11 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
   - The inventory bounds are short: the true bodies are 148 B and 369 B.
   - The Shrink_Table specialization 0x6027E0 must be emitted by its real caller, registry Remove 0x601C50 (Scout541 got 23.17).
   - Assigned to Scout547.
+
+## Scout547 (2026-11-02, closed; 517 B landed: control registry 0x5DED60 + 0x5DEE00)
+- CAUTION: the 0x6027E0 explicit specialization now only forwards to a guarded inline Shrink_Buckets() (RA2_WOL_DICTIONARY_SHRINK_ACCESSORS). When registry Remove 0x601C50 lands, drop both the specialization and Shrink_Buckets.
+- 0x601C50 registry Remove: 28.63 (Scout547 w/rm1.cpp). Landing it needs operator= inlined (it calls inline setter 0x600510) and take-overs of 0x600510/0x600350/0x600460. 0x6027E0 is also called from the unrecovered window procs near 0x5EC360 and 0x5F8740 (codex1's ownrdraw assignment).
+
+## Scout545 (2026-11-02, closed; 0 B)
+- LineTrail::Draw 0x5395C0: 96.94. VC6 adds the extra &current->Value register whenever the entry block both assigns current and reads Value. The 83.67 family (Value read through next at the loop bottom) avoids it but leaves current in ebx; resume from Scout545 w/lt/mA1.
+- Planning_Same_Selection_Path 0x615DE0: 85.23. It needs `@ref ??_C@_0BK@INKB@MSG?3PlanningModeHeteroSel?$AA@=007ebdc0`.
