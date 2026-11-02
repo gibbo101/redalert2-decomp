@@ -154,18 +154,8 @@ ToolTipIndexNode *__fastcall Binary_Search(ToolTipIndexNode *table, int count, T
 // A registered help-text region (0x1C bytes).
 class ToolTip {
 public:
-    ToolTip()
-    {
-        Region.X = 0;
-        Region.Y = 0;
-        Region.Width = 0;
-        Region.Height = 0;
-        unknown_18 = false;
-        Label = 0;
-    }
-#ifdef TOOL_TIP_UNIT
-    ~ToolTip() {}                   // Tiberian Sun's empty destructor (Add's inline budget)
-#endif
+    ToolTip() : ID(0), Region(0, 0, 0, 0), Label(0), unknown_18(false) {}
+    ~ToolTip() {}
     ToolTip(ToolTip const &other) : ID(other.ID), Region(other.Region), Label(other.Label), unknown_18(other.unknown_18) {}
 #ifdef TOOL_TIP_UNIT
     unsigned int ID;                // +0x00 (unsigned as Tiberian Sun's ToolTip)

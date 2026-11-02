@@ -19,6 +19,7 @@ void PowerClass::unknown_slot34()
     RadarClass::unknown_slot34();
     if (ToolTips != 0) {
         ToolTip tip;
+        tip.Label = 0;
         tip.ID = 999;
         int shift;
         if (unknown_id_source_a3d290->unknown_2239) {
