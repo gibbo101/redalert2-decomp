@@ -5,6 +5,10 @@
 #ifndef RA2_SHARED_VECTOR3_HPP
 #define RA2_SHARED_VECTOR3_HPP
 
+#ifdef VECTOR3_DECLARE_WWMATH
+#include "shared/fast_math.hpp"
+#endif
+
 struct Vector3 {
     Vector3() {}
     Vector3(float x, float y, float z) : X(x), Y(y), Z(z) {}
@@ -16,6 +20,11 @@ struct Vector3 {
     float Length() const;                   // 0x00437710 (Westwood's (float)sqrt(Length2()); BounceClass::AI)
 #endif
 
+#ifdef VECTOR3_DECLARE_WWMATH
+    // Westwood vector length helpers, inline in quat.cpp (Axis_To_Quat).
+    float Length2() const { return X * X + Y * Y + Z * Z; }
+    float Length() const { return Fast_Sqrt(Length2()); }
+#endif
     static Vector3 Cross_Product(Vector3 const &a, Vector3 const &b)
     {
         return Vector3(a.Y * b.Z - a.Z * b.Y, a.Z * b.X - a.X * b.Z, a.X * b.Y - a.Y * b.X);
@@ -32,6 +41,15 @@ struct Vector3 {
     float Y;    // +0x04
     float Z;    // +0x08
 };
+
+#ifdef VECTOR3_DECLARE_WWMATH
+// The divisor is double: retaining that width consumes the final x87 length
+// operand in Axis_To_Quat's third division (0x006229B0).
+inline Vector3 operator/(Vector3 const &vector, double divisor)
+{
+    return Vector3(vector.X / divisor, vector.Y / divisor, vector.Z / divisor);
+}
+#endif
 
 inline Vector3 operator+(Vector3 const &a, Vector3 const &b)
 {
