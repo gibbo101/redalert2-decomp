@@ -1,5 +1,6 @@
 // Tactical::Tactical(NoInitClass const &) (0x006A26C0): Load's placement
-// constructor. Only the AbstractClass base and the timer at +0xDA4 (it has no
+// constructor. Only the AbstractClass base, the flag pair at +0xAC (its NoInitClass
+// constructor does nothing) and the timer at +0xDA4 (it has no
 // NoInitClass constructor of its own) are constructed; then the vptrs. The
 // unit emits the vtables; their slots are bound below.
 #include "shared/tactical.hpp"
@@ -20,6 +21,7 @@
 // @ref ?unknown_slot24@Tactical@@UAE_NABUCoordStruct@@0HH@Z=006ac160
 
 Tactical::Tactical(NoInitClass const &noinit)
-    : AbstractClass(noinit)
+    : AbstractClass(noinit),
+      unknown_ac(noinit)
 {
 }

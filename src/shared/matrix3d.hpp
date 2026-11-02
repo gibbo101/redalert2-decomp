@@ -32,6 +32,15 @@ public:
     Matrix3D(Vector3 const &x, Vector3 const &y, Vector3 const &z, Vector3 const &position);   // 0x0058FE90
     Matrix3D(float unknown1, float unknown2);                           // 0x0058FEF0
     Matrix3D(Vector3 const &axis, float angle);                         // 0x0058FF50
+    // All twelve elements, row by row (WW3D's inline Matrix3D::Set; Tactical's constructor 0x006A24B0).
+    void Set(float m11, float m12, float m13, float m14,
+             float m21, float m22, float m23, float m24,
+             float m31, float m32, float m33, float m34)
+    {
+        Row[0][0] = m11; Row[0][1] = m12; Row[0][2] = m13; Row[0][3] = m14;
+        Row[1][0] = m21; Row[1][1] = m22; Row[1][2] = m23; Row[1][3] = m24;
+        Row[2][0] = m31; Row[2][1] = m32; Row[2][2] = m33; Row[2][3] = m34;
+    }
 
     void Make_Identity();                                               // 0x00590060
     void Translate(float x, float y, float z);                          // 0x00590090

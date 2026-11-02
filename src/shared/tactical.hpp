@@ -188,8 +188,15 @@ public:
     char unknown_26[0xA4 - 0x26];
     int unknown_a4;                 // +0xA4 -1 after construction
     int unknown_a8;                 // +0xA8 the frame of the last update (-1 after construction)
-    bool unknown_ac;                // +0xAC
-    bool unknown_ad;                // +0xAD
+    // +0xAC/+0xAD: two flags nothing reads (TibSun field_58/field_59, "unused"). Hypothesis: one 2-byte member
+    // whose inline constructor clears both (the constructor's zoom low-dword store stays below it: store order)
+    // and whose NoInitClass constructor does nothing (Tactical(NoInitClass const &) 0x006A26C0 leaves them).
+    struct UnknownFlags {
+        UnknownFlags() : unknown_0(false), unknown_1(false) {}
+        UnknownFlags(NoInitClass const &) {}
+        bool unknown_0;
+        bool unknown_1;
+    } unknown_ac;                   // +0xAC
     // The pixel offset of the view's upper left corner on the map, now and at the last render (TibSun
     // TacPixelX/TacPixelY/LastTacPixelX/LastTacPixelY; four ints: the constructor's store order).
     int TacPixelX;                  // +0xB0 (BuildingClass slot 73 caches the pair)
