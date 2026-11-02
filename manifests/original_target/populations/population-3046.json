@@ -4,8 +4,8 @@
     "id": "population-3046",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "78aa0be76ee91cca965b17ad4447ec5d9ea74c466e58bc62ae34c5b1689315f1",
-    "historical_acceptance_sha256": "53b2a1b905b4ada3a06d24bfede9245d0e9d1a5e16b2c42eea48792140bd5bbb"
+    "historical_population_sha256": "24abb8109ad269dc0a8706b0d73233748df11863a208407eb50a32b8007405ee",
+    "historical_acceptance_sha256": "976b731f23dafa23f469c2ec224712263ddfc2cd9ab52253f7f7c50294b06c9d"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -160,7 +160,7 @@
     "??4Wstring@@QAEAAV0@ABV0@@Z": 7789616,
     "?Voc_Name@@YIPBDH@Z": 7424512,
     "?Clear@UnknownTable_70c540@@QAEXXZ": 7390528,
-    "?unknown_close_all_dialogs@@YAXXZ": 7683920,
+    "?unknown_close_all_dialogs@@YIXXZ": 7683920,
     "?Unknown_00735940@@YIPAXH@Z": 7559488,
     "?unknown_free_buttons@@YAXXZ": 6952992,
     "?Has_Free_Slot@UnknownList_636ea0@@QBE_NXZ": 6516384,
@@ -2592,7 +2592,36 @@
     "__imp__MapVirtualKeyA": 7971800,
     "__imp__SetCursorPos": 7971908,
     "__imp__GetKeyNameTextA": 7971916,
-    "__imp__CallWindowProcA": 7972032
+    "__imp__CallWindowProcA": 7972032,
+    "__real@8@4004c800000000000000": 7986024,
+    "__real@4@3ff9c90e560000000000": 8055348,
+    "__real@8@4004d800000000000000": 8045168,
+    "__real@4@400e8000000000000000": 7980928,
+    "__real@8@3ffbaaaaaaaaaaaaa800": 8016520,
+    "__real@8@3fe2c0000000c0000000": 8019920,
+    "_?name@?1??Theme_File_Name@ThemeClass@@QAEPBDH@Z@4PADA": 11274328,
+    "?x@?1???AToolTipIndex@@QBEABQAVToolTip@@ABI@Z@4PAV2@A": 11712032,
+    "__real@4@4006c800000000000000": 8028512,
+    "__real@4@4000c000000000000000": 8028508,
+    "_?address@?1??Unknown_0063FA00@OwnerTalkClass@@QAEPAVIPXAddressClass@@PAD@Z@4V3@A": 11234568,
+    "?Dialog@PhoneEdit@@QAE_NXZ": 6347120,
+    "?Dialog@PhoneEntryEdit@@QAE_NPAVPhoneEntryClass@@@Z": 6350016,
+    "__real@8@3ffeb504f333f9de6000": 8031920,
+    "__real@8@3fffc90fdaa221688800": 8029792,
+    "__real@4@3fef8000800000000000": 7981712,
+    "__real@4@4004fc00000000000000": 7986596,
+    "__real@8@3fff9999999999999800": 7986600,
+    "__real@8@3ffef333333333333000": 7986032,
+    "__real@4@3ffecccccd0000000000": 8055372,
+    "__real@8@40078cccccccccccd000": 8001480,
+    "__real@8@4006b333333333333000": 8001472,
+    "__real@8@4006ccccccccccccd000": 8001464,
+    "__real@8@3fff8cccccccccccd000": 8008416,
+    "__real@4@4004f000000000000000": 8030276,
+    "__real@8@3ffba6ce934058661000": 8032840,
+    "__real@8@3ffdb2b8c2573a243800": 8032832,
+    "__real@8@3ffabea2f16e1be26000": 8032824,
+    "__real@8@3ffedf66f2ed08ad4800": 8032816
   },
   "regions": [
     {
@@ -2691,8 +2720,8 @@
     {
       "entry": 7683920,
       "method": "00753f50",
-      "symbol": "?unknown_close_all_dialogs@@YAXXZ",
-      "symbol_prefix": "?unknown_close_all_dialogs@@YAXXZ",
+      "symbol": "?unknown_close_all_dialogs@@YIXXZ",
+      "symbol_prefix": "?unknown_close_all_dialogs@@YIXXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -2730,7 +2759,7 @@
           "resolved": 4294843305
         }
       ],
-      "source_sha256": "607be88bba7a2ca624ea4250568b5e2d53772407ee3af8ee43801f35bd26fe00",
+      "source_sha256": "290cc30b726c75832c546da546d90a1fea31d91c09864d143344f3add77e3332",
       "source": "src/recovered/unowned/unknown_close_all_dialogs_00753f50.cpp",
       "population": "population-3046",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",

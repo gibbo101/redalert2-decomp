@@ -1,4 +1,4 @@
-// void unknown_close_all_dialogs() -- 0x00753F50
+// void __fastcall unknown_close_all_dialogs() -- 0x00753F50
 // Purpose: while there is a current dialog (0x00735B10), closes it
 // (0x007357E0 with 0).
 // Assumptions: the dialog helpers are unidentified; names follow
@@ -10,7 +10,7 @@
 void __fastcall Unknown_007357E0(void *window, int arg2);
 HWND __fastcall Unknown_00735B10();
 
-void unknown_close_all_dialogs()
+void __fastcall unknown_close_all_dialogs()
 {
     HWND dialog;
     while ((dialog = Unknown_00735B10()) != 0) {
