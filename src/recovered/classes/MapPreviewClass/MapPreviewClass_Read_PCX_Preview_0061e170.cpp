@@ -31,4 +31,4 @@ bool UnknownPreview_0061D430::Load_0061E170(char const *filename)
 // @ref ??_7CCFileClass@@6B@=0079a6a0
 // @ref ??_7CDFileClass@@6B@=0079a658
 // @ref ?Is_Available@CCFileClass@@UAE_NH@Z=004691a0
-// @ref ?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z=0060d110
+// @ref ?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z=0060d110

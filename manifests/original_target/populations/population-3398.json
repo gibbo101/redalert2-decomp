@@ -4,8 +4,8 @@
     "id": "population-3398",
     "inventory_sha256": "ebe3c1927d59c0847659c78032e12567afc42f458e8be89b664a8f4669865db9",
     "gaps_sha256": "a9de65ee283fcf68a19e51e916790a17d5d1d3f4be1773eafedf52b34180a27a",
-    "historical_population_sha256": "b921aa20282b9fd473dc76e7781b0a452ba3c2b56bb2af4074274bdc43bd7c79",
-    "historical_acceptance_sha256": "a0b28fc5b1f55c2314d64b827374e5534fdeec92ef65d76103be786293e2406c"
+    "historical_population_sha256": "3c02cab168ca762dbcd3011ef96ef4ebad94e4cadc1801fa79af96eca9a635ce",
+    "historical_acceptance_sha256": "5a7d7f0b76e8942d0b6201bc90cab64b0fea476240df77ad057bbd6e6d223cac"
   },
   "references": {
     "_unknown_empty_rect": 10751528,
@@ -2843,7 +2843,7 @@
     "??0MSVQAnim@@QAE@ABVWstring@@PAVSurface@@PAV?$DynamicVectorClass@PAVMSAnim@@@@ABVRect@@_N@Z": 5954464,
     "??_7MSVQAnim@@6B@": 8023556,
     "?unknown_volume_a40b44@@3MA": 10750788,
-    "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z": 6344976,
+    "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z": 6344976,
     "??0MSVQAnim@@QAE@ABVWstring@@PAVSurface@@PAV?$DynamicVectorClass@PAVMSAnim@@@@_N@Z": 5954960,
     "??1MSVQAnim@@UAE@XZ": 5955472,
     "?Unknown_Slot4@MSVQAnim@@UAE_NPAVSurface@@PAVRect@@@Z": 5955552,

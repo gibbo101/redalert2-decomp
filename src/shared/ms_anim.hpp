@@ -298,7 +298,7 @@ public:
 
 // Reads a PCX file into a new surface (0x0060D110, __fastcall; the other
 // arguments are 0 at the only caller here).
-Surface *__fastcall unknown_load_pcx_60d110(FileClass *file, int unknown2, int unknown3, int unknown4);
+Surface *__fastcall unknown_load_pcx_60d110(FileClass *file, PaletteClass *palette, int unknown3, int unknown4);
 
 // Shape draw flags for the fade levels 0..3 (0x007E57F0: 0x406, 0x404,
 // 0x402, 0x400; translucency bits over 0x400 as in MSShapeAnim::Draw).

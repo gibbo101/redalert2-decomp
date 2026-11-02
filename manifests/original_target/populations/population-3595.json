@@ -4,8 +4,8 @@
     "id": "population-3595",
     "inventory_sha256": "52b738f935747298be3c1947829e4971d8777d799b0e5d1318d0b546473e6b7c",
     "gaps_sha256": "1801de4a64892115a246b4046ee4447ef6de69fcd3c50f221ddfcd70fac685cb",
-    "historical_population_sha256": "18bdbc47c2e20b4b6efe95d420b9734c0fbd9155c0c722c927bed7a4270d583b",
-    "historical_acceptance_sha256": "8493f37bdc1c26249dc25894f02e871c9f6a611a655f8597ae43ad1c39e5edea"
+    "historical_population_sha256": "db1053fc77474d6fd8ea234e27043bcf119f5f1069d4dacccc6222af3dd34c77",
+    "historical_acceptance_sha256": "18e83cdb280179d5eb4f73685f4517aae18a155202d309bc59e6307343809f2f"
   },
   "references": {
     "_unknown_empty_rect": 10751560,
@@ -2410,7 +2410,7 @@
     "?unknown_volume_a40b44@@3MA": 10750788,
     "?unknown_8523e4@@3HA": 8725476,
     "?unknown_8523e0@@3HA": 8725472,
-    "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z": 6344976,
+    "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z": 6344976,
     "??0MSVQAnim@@QAE@ABVWstring@@PAVSurface@@PAV?$DynamicVectorClass@PAVMSAnim@@@@_N@Z": 5954960,
     "??1MSVQAnim@@UAE@XZ": 5955472,
     "?Unknown_Slot4@MSVQAnim@@UAE_NPAVSurface@@PAVRect@@@Z": 5955552,

@@ -4,8 +4,8 @@
     "id": "population-3554",
     "inventory_sha256": "fe150b7acbc222ccf7f78c72ef0ba962b967743f3c8e1725e9e3e79c8d25c69a",
     "gaps_sha256": "98fb0641f265cd6b47df6736832a29c8f5634caa0523b2430f803a87fd703a1b",
-    "historical_population_sha256": "c5d4672553fba57c2c9e2458bbf97c82e0ca369c68d5c21c85fbcd41569175f1",
-    "historical_acceptance_sha256": "1677606143d378ccb43abfae94046f805e3a6942283806a08ac12dfc41b25133"
+    "historical_population_sha256": "b1290a1d0414c71d7988a673e96817706eb5d4f84925862d18d3add82692216b",
+    "historical_acceptance_sha256": "869b26d62091abd49a16aa07eb46b454df1d60a88da79e4299a8436d6a5d3c8b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3466,7 +3466,7 @@
     "?unknown_volume_a40b44@@3MA": 10750788,
     "?unknown_8523e4@@3HA": 8725476,
     "?unknown_8523e0@@3HA": 8725472,
-    "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z": 6344976,
+    "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z": 6344976,
     "??0MSVQAnim@@QAE@ABVWstring@@PAVSurface@@PAV?$DynamicVectorClass@PAVMSAnim@@@@_N@Z": 5954960,
     "??1MSVQAnim@@UAE@XZ": 5955472,
     "?Unknown_Slot4@MSVQAnim@@UAE_NPAVSurface@@PAVRect@@@Z": 5955552,
@@ -11835,7 +11835,7 @@
         {
           "offset": 75,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 4293542993
@@ -11891,7 +11891,7 @@
         {
           "offset": 154,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 4293542914
@@ -11931,7 +11931,7 @@
         {
           "offset": 220,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 4293542848
@@ -12810,7 +12810,7 @@
         {
           "offset": 55,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 4293540165
@@ -12866,7 +12866,7 @@
         {
           "offset": 128,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 4293540092
@@ -12922,7 +12922,7 @@
         {
           "offset": 201,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 4293540019

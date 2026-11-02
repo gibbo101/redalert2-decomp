@@ -4,8 +4,8 @@
     "id": "population-3811",
     "inventory_sha256": "9b82cd2caaca73cd32fe88ec97da4b494b9129a49d304e21ebcfa7058e2daa4f",
     "gaps_sha256": "ddc6eea8e28cf0df2b8d65b49b1a5ae1d93341b43c00233fa2d79ac579b888bd",
-    "historical_population_sha256": "7f26f750d3cb855f42f9e685a327de7abea739b68f76cdbae733c649d79d7e45",
-    "historical_acceptance_sha256": "ddb4a05d9bde2f83ebc525b89a9299b159e211168f09cf0c42c75071436eba00"
+    "historical_population_sha256": "93744a987301f651d4ef335d8555a51408db8b8ec9a32a8a4d831a88c4bb8e3a",
+    "historical_acceptance_sha256": "f1e0a53976a6a849d65ea31b46a94d86c759ae2c9a6bcabb0477b53815b8544e"
   },
   "references": {
     "_unknown_empty_rect": 10950664,
@@ -2324,7 +2324,7 @@
     "??_7MSVQAnim@@6B@": 8023556,
     "?unknown_volume_a40b44@@3MA": 10750788,
     "__real@8@4006ff00000000000000": 8007504,
-    "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z": 6344976,
+    "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z": 6344976,
     "??0MSVQAnim@@QAE@ABVWstring@@PAVSurface@@PAV?$DynamicVectorClass@PAVMSAnim@@@@_N@Z": 5954960,
     "??1MSVQAnim@@UAE@XZ": 5955472,
     "?Unknown_Slot4@MSVQAnim@@UAE_NPAVSurface@@PAVRect@@@Z": 5955552,
@@ -5552,7 +5552,13 @@
     "?Audio_DS_Open@@YIJPAUAudioDevice@@@Z": 4235184,
     "??0RandomClass@@QAE@I@Z": 6522608,
     "?CreateInstance@?$TClassFactory@VCampaignClass@@@@UAGJPAUIUnknown@@ABUGUID@@PAPAX@Z": 6891824,
-    "?CreateInstance@?$TClassFactory@VAlphaShapeClass@@@@UAGJPAUIUnknown@@ABUGUID@@PAPAX@Z": 6914864
+    "?CreateInstance@?$TClassFactory@VAlphaShapeClass@@@@UAGJPAUIUnknown@@ABUGUID@@PAPAX@Z": 6914864,
+    "?Remove@UnknownControlIndex@OwnerDraw@@QAE_NABIAAUUnknownControlRecord@2@@Z": 6298704,
+    "?Load@CellClass@@UAGJPAUIStream@@@Z": 4689072,
+    "__real@8@3ffca2f9836e4e441800": 7983464,
+    "__real@8@400196cbe3f9990e9000": 7983456,
+    "??_GWideString@@QAEPAXI@Z": 6296624,
+    "??_EWideString@@QAEPAXI@Z": 6296624
   },
   "regions": [
     {
@@ -7422,7 +7428,7 @@
         {
           "offset": 412,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 390096
@@ -7641,7 +7647,7 @@
         {
           "offset": 433,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 389579
@@ -8090,7 +8096,7 @@
         {
           "offset": 209,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 383147
@@ -8136,7 +8142,7 @@
           "resolved": 1827072
         }
       ],
-      "source_sha256": "a88b2c65e6fe0df28dbae6104b64608b3bcad25dae48e922ec9810f8050c7cb9",
+      "source_sha256": "aa1535366779e849d481378ebdd35922b1ced166b839cd16ed4dc2ef0ff4b508",
       "source": "src/recovered/classes/MSPCXAnim/MSPCXAnim_MSPCXAnim_005af790.cpp",
       "population": "population-3811",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
@@ -9898,7 +9904,7 @@
         {
           "offset": 216,
           "kind": 20,
-          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z",
+          "symbol": "?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z",
           "target": 6344976,
           "addend": 0,
           "resolved": 383556
@@ -9944,7 +9950,7 @@
           "resolved": 1827438
         }
       ],
-      "source_sha256": "986eefb8cdff25adedbf5894809e930dadc011172e9ac82ee3e39e5889a03c93",
+      "source_sha256": "44db82b8c8e2d0cd55b7b54342b91227f28bbb6ff087d1897ea2d3bfe32d2781",
       "source": "src/recovered/classes/MSPCXAnim/MSPCXAnim_MSPCXAnim_005af5f0.cpp",
       "population": "population-3811",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",

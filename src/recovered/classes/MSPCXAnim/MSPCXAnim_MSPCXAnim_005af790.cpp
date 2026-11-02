@@ -8,7 +8,7 @@
 // @ref ??_7MSPCXAnim@@6B@=007a6e80
 // @ref ??_C@_01PJCK@?4?$AA@=007dbe44
 // @ref ??_C@_04DCKM@?4PCX?$AA@=007d9d84
-// @ref ?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@HHH@Z=0060d110
+// @ref ?unknown_load_pcx_60d110@@YIPAVSurface@@PAVFileClass@@PAVPaletteClass@@HH@Z=0060d110
 // @ref ??0CCFileClass@@QAE@ABVWstring@@@Z=00468f90
 // @ref ??_7CCFileClass@@6B@=0079a6a0
 // @ref ??_7CDFileClass@@6B@=0079a658
