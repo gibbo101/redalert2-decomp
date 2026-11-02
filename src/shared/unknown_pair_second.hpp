@@ -10,6 +10,9 @@ class Matrix3D;
 
 class UnknownPairSecond {
 public:
+#ifdef RA2_UNKNOWN_PAIR_SECOND_UNIT
+    UnknownPairSecond();                // 0x0059EB60 (empty library; unreferenced; declared for its unit only)
+#endif
     UnknownPairSecond(FileClass *file);  // 0x0059EB70 (a .HVA motion library; hypothesis)
     ~UnknownPairSecond();               // 0x0059EBA0
     int unknown_59ebc0(FileClass *file);    // 0x0059EBC0 (reads the library; 0 on success)
