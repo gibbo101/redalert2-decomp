@@ -284,6 +284,9 @@ public:
     bool Build_All_Cliffs(int unused, int region_id);           // 0x0055B060
     bool Expand_High_Ground(CellClass *cellptr, int region_id); // 0x0055B210
     bool Place_Cliff(CellClass *cellptr, int region_id);        // 0x0055B820
+    // Places the pending tile type at the cursor cell over tiles first..last (TibSun
+    // Pick_Random_Tile_Variant; RA2 adds set_region: claim the cells for region 0).
+    bool Pick_Random_Tile_Variant(int first, int last, int height, int region_id, bool &result, bool set_region); // 0x0055D640
     void Mark_Fill_Area(Cell const &cell, bool mark);           // 0x00567710
     bool Rebuild_Shores_At(Cell const &origin);                  // 0x00567490 (TibSun Rebuild_Shores_At)
     Cell Pick_Random_Location() const;                          // 0x00559EB0 (TibSun Pick_Random_Location: a random cell of the map rectangle)
