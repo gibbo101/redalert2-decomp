@@ -1,15 +1,2 @@
-// VectorClass<HashObject<HashString, SchemeNode *>>::ID_object (0x00605A20).
-// Layout and behaviour: shared/vector_class.hpp.
-// @ref ??_H@YGXPAXIHP6EX0@Z@Z=0040aed0
-// @ref ??_I@YGXPAXIHP6EX0@Z@Z=0040af00
-// @ref ??0HashString@@QAE@ABV0@@Z=004e1180
-// @ref ??8@YI_NABVHashString@@0@Z=004e1290
-// @ref ??9@YI_NABVHashString@@0@Z=004e12a0
-// @ref ??0HashString@@QAE@XZ=004e1130
-// @ref ??4HashString@@QAEAAV0@ABV0@@Z=004e11c0
-#define VECTOR_IMPLEMENT_VECTOR_ID_OBJECT
-#include "shared/vector_class.hpp"
-#include "shared/hash_string.hpp"
-
-
-template class VectorClass<HashObject<HashString, SchemeNode *> >;
+// ?ID@?$VectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHABU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z (0x605A20): template instance emitted by the colour-scheme table unit from its shared headers
+// (vector_class.hpp, hash_table.hpp, hash_object.hpp).

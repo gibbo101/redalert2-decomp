@@ -9,6 +9,8 @@ struct HashObject {
     HashObject() {}
     // Member-wise (VectorClass<HashObject<unsigned int, unsigned int> >::Fetch 0x0056AD90).
     HashObject(HashObject const &other) : Key(other.Key), Value(other.Value) {}
+    // The element HashTableClass::Add files (0x00605D80 for <HashString, SchemeNode *>).
+    HashObject(K const &key, V const &value) : Key(key), Value(value) {}
     K Key;
     V Value;
 };

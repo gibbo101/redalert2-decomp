@@ -2070,41 +2070,6 @@
       "source_order": 54855
     },
     {
-      "entry": 6311216,
-      "method": "00604d30",
-      "symbol": "?Clear@?$DynamicVectorClass@UHSVClass@@@@UAEXXZ",
-      "symbol_prefix": "?Clear@?$DynamicVectorClass@UHSVClass@@@@UAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 42,
-      "body_sha256": "5f9c9078127e6fa31270e40b44b5caa363b17e0672365673f9b4f89499653c8f",
-      "padding_bytes": 6,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "05cb3c09cd7a90748f5458927f5daf822f94bcedcdfc50a5fcf84e6ade6f962b",
-      "relocations": [
-        {
-          "offset": 23,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 1560560
-        }
-      ],
-      "source_sha256": "d34c5907cc99d1ce0a5a92e93be6f08add51225f1b787c84504a81d4f91625a2",
-      "source": "src/recovered/classes/DynamicVectorClass_HSVClass/DynamicVectorClass_HSVClass_Clear_00604d30.cpp",
-      "population": "population-1622",
-      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "DynamicVectorClass_HSVClass_Clear_00604d30",
-      "source_order": 54856
-    },
-    {
       "entry": 6311360,
       "method": "00604dc0",
       "symbol": "??8?$VectorClass@PAVColorScheme@@@@UBE_NABV0@@Z",
@@ -2216,111 +2181,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "DynamicVectorClass_ColorScheme_ptr_ID_object_00604ff0",
       "source_order": 54865
-    },
-    {
-      "entry": 6312848,
-      "method": "00605390",
-      "symbol": "?Clear@?$VectorClass@UHSVClass@@@@UAEXXZ",
-      "symbol_prefix": "?Clear@?$VectorClass@UHSVClass@@@@UAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 39,
-      "body_sha256": "20c0dbf4ab23c90072f617a76ec28b105ea4e04db5084a08d8af47dc1d6cee7d",
-      "padding_bytes": 9,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "751216b9810b8022b662803dab510e489d67b14f7ecb7a87588ad7ce3dc5a935",
-      "relocations": [
-        {
-          "offset": 20,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 1558931
-        }
-      ],
-      "source_sha256": "da70c20afd89a9a10697c14430c7555b1f164dc37f6196725c5564d2d9f6c0e6",
-      "source": "src/recovered/classes/VectorClass_HSVClass/VectorClass_HSVClass_Clear_00605390.cpp",
-      "population": "population-1622",
-      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "VectorClass_HSVClass_Clear_00605390",
-      "source_order": 54866
-    },
-    {
-      "entry": 6313904,
-      "method": "006057b0",
-      "symbol": "?Clear@?$DynamicVectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEXXZ",
-      "symbol_prefix": "?Clear@?$DynamicVectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 42,
-      "body_sha256": "86314083320e86f0320f4d8a296162ae6b86116604e348887d22dd275c5824dd",
-      "padding_bytes": 6,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "79603520abc99a6ee0e07714145f297d05d09a0e92a15ee75cbccfd9a1e4998e",
-      "relocations": [
-        {
-          "offset": 23,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 1557872
-        }
-      ],
-      "source_sha256": "ce25a510be75e1ab6e5112377a2bcfe595c88cf6c5c37d07ffe5155f7c861ab3",
-      "source": "src/recovered/classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr_Clear_006057b0.cpp",
-      "population": "population-1622",
-      "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "DynamicVectorClass_HashObject_HashString_SchemeNode_ptr_Clear_006057b0",
-      "source_order": 54868
-    },
-    {
-      "entry": 6314480,
-      "method": "006059f0",
-      "symbol": "?Clear@?$VectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEXXZ",
-      "symbol_prefix": "?Clear@?$VectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 39,
-      "body_sha256": "7692d49aaf1068371cc9a9a2e38f5395271342932e2597e590fda8c436edd417",
-      "padding_bytes": 9,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "5eace585849a40ebfe4da6aff77f9982f89659d23efd25af3520dba43b059ae8",
-      "relocations": [
-        {
-          "offset": 20,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 1557299
-        }
-      ],
-      "source_sha256": "62d09d460e3d455914dba8515318a50aa70bf8f2930c7d0a7dae5435a0badb71",
-      "source": "src/recovered/classes/VectorClass_HashObject_HashString_SchemeNode_ptr/VectorClass_HashObject_HashString_SchemeNode_ptr_Clear_006059f0.cpp",
-      "population": "population-1622",
-      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "VectorClass_HashObject_HashString_SchemeNode_ptr_Clear_006059f0",
-      "source_order": 54870
     },
     {
       "entry": 6323952,
@@ -9782,84 +9642,6 @@
       "source_order": 55229
     },
     {
-      "entry": 6311264,
-      "method": "00604d60",
-      "symbol": "?ID@?$DynamicVectorClass@UHSVClass@@@@UAEHPBUHSVClass@@@Z",
-      "symbol_prefix": "?ID@?$DynamicVectorClass@UHSVClass@@@@UAEHPBUHSVClass@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 35,
-      "body_sha256": "d9496d98ee42fe9906a9000c0744c4317f9c4f91ff945188a7878246f1cc3812",
-      "padding_bytes": 13,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "fc01596fbde7f18158625261022e8eb24b5d1283abf1a3a332e4bbcc7b3a165e",
-      "relocations": [],
-      "source_sha256": "6c6bc84da11015778b50f3272a5c45b44a507a25ee12da2937c1a7516cef5b8a",
-      "source": "src/recovered/classes/DynamicVectorClass_HSVClass/DynamicVectorClass_HSVClass_ID_pointer_00604d60.cpp",
-      "population": "population-1622",
-      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "DynamicVectorClass_HSVClass_ID_pointer_00604d60",
-      "source_order": 54857
-    },
-    {
-      "entry": 6313952,
-      "method": "006057e0",
-      "symbol": "?ID@?$DynamicVectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z",
-      "symbol_prefix": "?ID@?$DynamicVectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 36,
-      "body_sha256": "64b2a9b49d51d6b163b7b829714e9b547ba59d9f278bf325a00ffeca646e2e19",
-      "padding_bytes": 12,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "59bbceaf0cc85fe427476145abee5c58faae6833ecfd94772ac753320d927267",
-      "relocations": [],
-      "source_sha256": "3df9c6521ec05e39ecd0339309155bdf7d24f9e6165b2d95d322ca74d0d4c54e",
-      "source": "src/recovered/classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr_ID_pointer_006057e0.cpp",
-      "population": "population-1622",
-      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "DynamicVectorClass_HashObject_HashString_SchemeNode_ptr_ID_pointer_006057e0",
-      "source_order": 54869
-    },
-    {
-      "entry": 6314624,
-      "method": "00605a80",
-      "symbol": "?ID@?$VectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z",
-      "symbol_prefix": "?ID@?$VectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 36,
-      "body_sha256": "64b2a9b49d51d6b163b7b829714e9b547ba59d9f278bf325a00ffeca646e2e19",
-      "padding_bytes": 12,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "59bbceaf0cc85fe427476145abee5c58faae6833ecfd94772ac753320d927267",
-      "relocations": [],
-      "source_sha256": "b2dedfbdb9ced17b09617314708e901b8f68b15b092a159fbc8ecf3137c70fcc",
-      "source": "src/recovered/classes/VectorClass_HashObject_HashString_SchemeNode_ptr/VectorClass_HashObject_HashString_SchemeNode_ptr_ID_pointer_00605a80.cpp",
-      "population": "population-1622",
-      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "VectorClass_HashObject_HashString_SchemeNode_ptr_ID_pointer_00605a80",
-      "source_order": 54871
-    },
-    {
       "entry": 6844272,
       "method": "00686f70",
       "symbol": "?ID@?$DynamicVectorClass@UUndoInfoStruct@@@@UAEHPBUUndoInfoStruct@@@Z",
@@ -10042,32 +9824,6 @@
       "source_order": 54863
     },
     {
-      "entry": 6312992,
-      "method": "00605420",
-      "symbol": "?ID@?$VectorClass@UHSVClass@@@@UAEHPBUHSVClass@@@Z",
-      "symbol_prefix": "?ID@?$VectorClass@UHSVClass@@@@UAEHPBUHSVClass@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 35,
-      "body_sha256": "d9496d98ee42fe9906a9000c0744c4317f9c4f91ff945188a7878246f1cc3812",
-      "padding_bytes": 13,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "fc01596fbde7f18158625261022e8eb24b5d1283abf1a3a332e4bbcc7b3a165e",
-      "relocations": [],
-      "source_sha256": "1c3cbb40db4e4a95c9454198ad6d594841a1e21ba4e4408b6a7f97f424b9cd09",
-      "source": "src/recovered/classes/VectorClass_HSVClass/VectorClass_HSVClass_ID_pointer_00605420.cpp",
-      "population": "population-1622",
-      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "VectorClass_HSVClass_ID_pointer_00605420",
-      "source_order": 54867
-    },
-    {
       "entry": 6401904,
       "method": "0061af70",
       "symbol": "?ID@?$VectorClass@PAVPlanningBranchClass@@@@UAEHPBQAVPlanningBranchClass@@@Z",
@@ -10248,32 +10004,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "DynamicVectorClass_SpotLightClass_ptr_Resize_005de4e0",
       "source_order": 54851
-    },
-    {
-      "entry": 6311312,
-      "method": "00604d90",
-      "symbol": "?Fetch@?$VectorClass@UHSVClass@@@@UBE?AUHSVClass@@H@Z",
-      "symbol_prefix": "?Fetch@?$VectorClass@UHSVClass@@@@UBE?AUHSVClass@@H@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 37,
-      "body_sha256": "fd8180c0835f3f08950ce006ea982d7959d0d85041a7ff0e44ec72b25aaeb236",
-      "padding_bytes": 11,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "8457cc53a8240392ac82c5f6efd8e5763a541523bfcf620277dd364830ca43d0",
-      "relocations": [],
-      "source_sha256": "4ea527654f298ef5c8b364d3a003d34bed46f8bc6b85435e0bdd95a01859fc50",
-      "source": "src/recovered/classes/VectorClass_HSVClass/VectorClass_HSVClass_Fetch_00604d90.cpp",
-      "population": "population-1622",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "VectorClass_HSVClass_Fetch_00604d90",
-      "source_order": 54858
     },
     {
       "entry": 6311424,

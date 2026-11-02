@@ -4137,40 +4137,6 @@
       "source_order": 111468
     },
     {
-      "entry": 6313712,
-      "method": "006056f0",
-      "symbol": "?FUN_006056f0@seed_006056f0@@YIXPAI@Z",
-      "symbol_prefix": "?FUN_006056f0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 32,
-      "body_sha256": "b41a52d93324dffa2748ff639d8379d121047470a93aa91895b269c996934de5",
-      "padding_bytes": 0,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "b41a52d93324dffa2748ff639d8379d121047470a93aa91895b269c996934de5",
-      "relocations": [
-        {
-          "offset": 17,
-          "kind": 6,
-          "symbol": "_PTR_FUN_007a7b78",
-          "target": 8027000,
-          "addend": 0,
-          "resolved": 8027000
-        }
-      ],
-      "source_sha256": "88e7b1b6de2f403858efd9e79e9648d13e79836fb7f89e4ce2eb3206abf25497",
-      "source": "src/recovered/classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr/006056f0.cpp",
-      "population": "population-2913",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 111469
-    },
-    {
       "entry": 6430928,
       "method": "006220d0",
       "symbol": "?FUN_006220d0@seed_006220d0@@YIPAEH@Z",

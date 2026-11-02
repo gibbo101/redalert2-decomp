@@ -71,8 +71,8 @@ public:
                     return &object.Key;
                 }
             }
-            it.Index = 0;
             it.Bucket++;
+            it.Index = 0;
         }
         it.Done = true;
         return 0;

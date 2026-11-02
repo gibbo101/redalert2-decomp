@@ -1,15 +1,2 @@
-// DynamicVectorClass<HashObject<HashString, SchemeNode *>>::Resize (0x00605B60).
-// Layout and behaviour: shared/vector_class.hpp.
-// @ref ??_H@YGXPAXIHP6EX0@Z@Z=0040aed0
-// @ref ??_I@YGXPAXIHP6EX0@Z@Z=0040af00
-// @ref ??0HashString@@QAE@ABV0@@Z=004e1180
-// @ref ??8@YI_NABVHashString@@0@Z=004e1290
-// @ref ??9@YI_NABVHashString@@0@Z=004e12a0
-// @ref ??0HashString@@QAE@XZ=004e1130
-// @ref ??4HashString@@QAEAAV0@ABV0@@Z=004e11c0
-#define VECTOR_IMPLEMENT_DYNAMIC_RESIZE
-#include "shared/vector_class.hpp"
-#include "shared/hash_string.hpp"
-
-
-template class DynamicVectorClass<HashObject<HashString, SchemeNode *> >;
+// ?Resize@?$DynamicVectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAE_NHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z (0x605B60): template instance emitted by the colour-scheme table unit from its shared headers
+// (vector_class.hpp, hash_table.hpp, hash_object.hpp).

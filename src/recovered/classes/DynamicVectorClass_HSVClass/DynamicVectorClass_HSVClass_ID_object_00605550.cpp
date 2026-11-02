@@ -1,12 +1,2 @@
-// DynamicVectorClass<HSVClass>::ID_object (0x00605550).
-// Layout and behaviour: shared/vector_class.hpp.
-// @ref ??_H@YGXPAXIHP6EX0@Z@Z=0040aed0
-// @ref ??_I@YGXPAXIHP6EX0@Z@Z=0040af00
-// @ref ??9HSVClass@@QBE_NABV0@@Z=004ff1a0
-// @ref ??8@YI_NABVHSVClass@@0@Z=004ff1e0
-#define VECTOR_IMPLEMENT_DYNAMIC_ID_OBJECT
-#include "shared/vector_class.hpp"
-#include "shared/hsv_class.hpp"
-
-
-template class DynamicVectorClass<HSVClass >;
+// ?ID@?$DynamicVectorClass@VHSVClass@@@@UAEHABVHSVClass@@@Z (0x605550): template instance emitted by the colour-scheme table unit from its shared headers
+// (vector_class.hpp, hash_table.hpp, hash_object.hpp).

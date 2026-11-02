@@ -1,3 +1,2 @@
-extern "C" unsigned char vtable_605e30[]; extern "C" void __cdecl release_buffer_605e30(void*); extern "C" void __cdecl release_object_605e30(void*);
-class Leaf_605e30 { public: void* get(unsigned int flags); };
-void* Leaf_605e30::get(unsigned int flags) { unsigned int pointer = *(unsigned int*)((char*)this + 4); *(unsigned int*)this=(unsigned int)vtable_605e30; if(pointer && *(unsigned char*)((char*)this + 13)){ release_buffer_605e30((void*)pointer); *(unsigned int*)((char*)this + 4)=0; } *(unsigned char*)((char*)this + 13)=0; *(unsigned int*)((char*)this + 8)=0; if(flags & 1) release_object_605e30(this); return this; }
+// ??_G?$VectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEPAXI@Z (0x605E30): template instance emitted by the colour-scheme table unit from its shared headers
+// (vector_class.hpp, hash_table.hpp, hash_object.hpp).

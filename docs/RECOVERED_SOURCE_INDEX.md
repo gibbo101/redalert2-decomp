@@ -6,14 +6,14 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 1236 | 271,594 | 1236 | 0x00401000–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 1241 | 272,973 | 1241 | 0x00401000–0x0078FB6B |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 179 | 84,946 | 179 | 0x0049ED10–0x0056A9D0 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 51 | 74,018 | 51 | 0x00640460–0x00654100 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 181 | 64,989 | 181 | 0x00438A60–0x004D3450 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 211 | 56,754 | 208 | 0x0041B370–0x006D9750 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 122 | 42,592 | 118 | 0x0041B470–0x004CDE10 |
-| (discovery: address-named) | 1365 | 41,774 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1364 | 41,734 | 17 | 0x004010A0–0x00797198 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 110 | 37,716 | 110 | 0x005DE880–0x00601F70 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 82 | 30,791 | 82 | 0x004D3510–0x0070A330 |
@@ -261,6 +261,7 @@
 | [classes/MSAnim](../src/recovered/classes/MSAnim/) | 10 | 1,278 | 10 | 0x005AC540–0x005AFCA0 |
 | [classes/PacketClass](../src/recovered/classes/PacketClass/) | 12 | 1,268 | 12 | 0x00602A60–0x00602F60 |
 | [classes/EnumConnectionsClass](../src/recovered/classes/EnumConnectionsClass/) | 10 | 1,265 | 7 | 0x00492180–0x00492650 |
+| [classes/SchemeTable](../src/recovered/classes/SchemeTable/) | 4 | 1,264 | 4 | 0x006044A0–0x00604AD0 |
 | [classes/WolChannelDictionary](../src/recovered/classes/WolChannelDictionary/) | 4 | 1,244 | 4 | 0x00766400–0x00768010 |
 | [classes/SideClass](../src/recovered/classes/SideClass/) | 12 | 1,238 | 12 | 0x004D3810–0x0067B1F0 |
 | [classes/AbstractTypeClass](../src/recovered/classes/AbstractTypeClass/) | 11 | 1,237 | 11 | 0x00410580–0x004D4450 |
@@ -301,6 +302,7 @@
 | [classes/LCWPipe](../src/recovered/classes/LCWPipe/) | 5 | 978 | 5 | 0x00534EE0–0x00535280 |
 | [goptions](../src/recovered/goptions/) | 3 | 970 | 3 | 0x004DD7D0–0x004DDF90 |
 | [classes/VectorClass_WaypointClass](../src/recovered/classes/VectorClass_WaypointClass/) | 10 | 964 | 10 | 0x00725340–0x00725B40 |
+| [classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr](../src/recovered/classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr/) | 8 | 961 | 7 | 0x00605640–0x00605D30 |
 | [classes/VectorClass_VoxelAnimTypeClass_ptr](../src/recovered/classes/VectorClass_VoxelAnimTypeClass_ptr/) | 14 | 960 | 11 | 0x004D5720–0x00654960 |
 | [classes/VectorClass_RGBClass](../src/recovered/classes/VectorClass_RGBClass/) | 9 | 937 | 7 | 0x0046CDA0–0x0046DD20 |
 | [classes/PacketField_004BAD50](../src/recovered/classes/PacketField_004BAD50/) | 11 | 933 | 11 | 0x004BAD50–0x004BB0F0 |
@@ -338,7 +340,6 @@
 | [classes/VectorClass_AnimClass_ptr](../src/recovered/classes/VectorClass_AnimClass_ptr/) | 13 | 805 | 12 | 0x004D50C0–0x00520F00 |
 | [classes/VectorClass_unsigned_short_ptr](../src/recovered/classes/VectorClass_unsigned_short_ptr/) | 13 | 805 | 12 | 0x0052E720–0x0053AE60 |
 | [classes/LineTrail](../src/recovered/classes/LineTrail/) | 9 | 802 | 9 | 0x00539360–0x005397B0 |
-| [classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr](../src/recovered/classes/DynamicVectorClass_HashObject_HashString_SchemeNode_ptr/) | 7 | 798 | 6 | 0x006056F0–0x00605D30 |
 | [classes/VectorClass_rc_ptr_WorldDominationTour__Conflict](../src/recovered/classes/VectorClass_rc_ptr_WorldDominationTour__Conflict/) | 8 | 784 | 8 | 0x00726A80–0x00727040 |
 | [classes/VectorClass_rc_ptr_WorldDominationTour__Territory](../src/recovered/classes/VectorClass_rc_ptr_WorldDominationTour__Territory/) | 8 | 784 | 8 | 0x0072AFD0–0x0072BB10 |
 | [classes/DynamicVectorClass_BuildingTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_BuildingTypeClass_ptr/) | 11 | 782 | 10 | 0x004D5490–0x006DF8B0 |
@@ -1195,12 +1196,12 @@
 | [classes/DynamicVectorClass_HashObject_uint_uint](../src/recovered/classes/DynamicVectorClass_HashObject_uint_uint/) | 1 | 163 | 1 | 0x0056C410–0x0056C410 |
 | [classes/NextObjectCommandClass](../src/recovered/classes/NextObjectCommandClass/) | 2 | 161 | 2 | 0x0051B8B0–0x0051DEE0 |
 | [classes/PrevObjectCommandClass](../src/recovered/classes/PrevObjectCommandClass/) | 2 | 161 | 2 | 0x0051BD20–0x0051DEC0 |
-| [classes/SchemeTable](../src/recovered/classes/SchemeTable/) | 1 | 160 | 1 | 0x006044A0–0x006044A0 |
 | [classes/RLEBlitTransXlat_unsigned_char](../src/recovered/classes/RLEBlitTransXlat_unsigned_char/) | 2 | 158 | 2 | 0x004864F0–0x0048C870 |
 | [classes/View1CommandClass](../src/recovered/classes/View1CommandClass/) | 2 | 158 | 2 | 0x0051CE00–0x0051DAA0 |
 | [classes/View2CommandClass](../src/recovered/classes/View2CommandClass/) | 2 | 158 | 2 | 0x0051CEF0–0x0051DAC0 |
 | [classes/View3CommandClass](../src/recovered/classes/View3CommandClass/) | 2 | 158 | 2 | 0x0051CFE0–0x0051DAE0 |
 | [classes/View4CommandClass](../src/recovered/classes/View4CommandClass/) | 2 | 158 | 2 | 0x0051D0D0–0x0051DB00 |
+| [classes/HashTableClass_HashString_SchemeNode_ptr](../src/recovered/classes/HashTableClass_HashString_SchemeNode_ptr/) | 1 | 157 | 1 | 0x00605020–0x00605020 |
 | [classes/BlitTransXlatZReadWrite_unsigned_short](../src/recovered/classes/BlitTransXlatZReadWrite_unsigned_short/) | 2 | 153 | 2 | 0x00487970–0x0048CC30 |
 | [classes/RLEBlitTransDarken_unsigned_short](../src/recovered/classes/RLEBlitTransDarken_unsigned_short/) | 2 | 153 | 2 | 0x00489940–0x0048D290 |
 | [classes/HouseClass_BuildChoiceClass](../src/recovered/classes/HouseClass_BuildChoiceClass/) | 2 | 149 | 2 | 0x004E15E0–0x004E1620 |
@@ -1415,7 +1416,7 @@
 | [classes/exception](../src/recovered/classes/exception/) | 1 | 13 | 0 | 0x0078B1E7–0x0078B1E7 |
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 
-1408 directories, 17290 regions. Generated by `tools/original_target/source_index.py`.
+1409 directories, 17299 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
