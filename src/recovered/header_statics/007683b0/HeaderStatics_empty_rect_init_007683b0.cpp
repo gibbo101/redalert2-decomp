@@ -1,6 +1,8 @@
 // Header-static dynamic initializers of the unit at 0x007683B0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x007683B0-0x00768591); the other
-// drafts of this plan are emitted by these includes.
+// drafts of this plan are emitted by these includes. The unit sees the inline VectorClass accessors
+// (Get_WDT_Territory_00769690 expands operator[]).
+#define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #include "shared/shape_file.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
