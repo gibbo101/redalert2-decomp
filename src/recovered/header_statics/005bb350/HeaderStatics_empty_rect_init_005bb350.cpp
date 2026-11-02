@@ -1,6 +1,12 @@
 // Header-static dynamic initializers of the unit at 0x005BB350: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x005BB350-0x005BB531); the other
 // drafts of this plan are emitted by these includes.
+// The unit expands the vector accessors and DynamicVectorClass::Delete inline
+// (Destroy_Connection 0x005BB5D0).
+#define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_OBJECT
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_INDEX
 #include "shared/shape_file.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

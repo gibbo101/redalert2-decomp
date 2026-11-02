@@ -277,6 +277,9 @@ struct UnknownSessionState {
     // Whether the house (null: the player's) is the game master: by MasterPlayerID,
     // else by name, in game mode 4 (0x0066F150; YR's Am_I_Master, hypothesis).
     bool Am_I_Master(HouseClass *house);
+    // Removes entry index of unknown_3022 (eight words), moving the later ones down
+    // (0x00672F20; accepted as the seed Owner_00672f20::FUN_00672f20; Destroy_Connection).
+    void Unknown_00672F20(int index);
     // Saves the player and serial settings, the init strings and the phone book to
     // RA2.INI (0x00670380; Red Alert's Write_MultiPlayer_Settings; after the skirmish
     // dialog and WOL games).
