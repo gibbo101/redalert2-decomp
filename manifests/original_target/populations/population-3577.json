@@ -4,8 +4,8 @@
     "id": "population-3577",
     "inventory_sha256": "606df97200bf34d3b9580cc70065530a9ba23119327ab419b962cdf8099f86b7",
     "gaps_sha256": "dc9576559ebc3eee15dcb288d4807e89abbffe9ce2bbb029ce10afefde9f65b4",
-    "historical_population_sha256": "01e69ed6011fd57ba64672b54ccc387a77e0a9af8f51fa11ff82b17f8f385dae",
-    "historical_acceptance_sha256": "df833118a220a636c7ea130e989730cb59ba902f96c0e94ff896d5a2be53cba2"
+    "historical_population_sha256": "d54bd1e64c69fa6f7c4740a9236ddadc0a8cd248064eca077071c5e54a173730",
+    "historical_acceptance_sha256": "b352d69dc342b36ef33666c5d6fac4f4840ee7d881f01677fb49521f85aa53ee"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -7040,8 +7040,8 @@
     "?unknown_slot287@BuildingClass@@UAE_NXZ": 4474240,
     "?unknown_slot285@BuildingClass@@UAE?AUUnknownFacingDir@@PAVAbstractClass@@@Z": 4438992,
     "?unknown_471660@CellClass@@QBEPAVObjectClass@@ABUPoint2D@@_NPAV2@@Z": 4658784,
-    "?unknown_479cf0@CellClass@@QBE_NXZ": 4693232,
-    "?unknown_479f70@CellClass@@QBE_NXZ": 4693872,
+    "?Is_Near_Tunnel_NW@CellClass@@QAE_NXZ": 4693232,
+    "?Is_Near_Tunnel_ES@CellClass@@QAE_NXZ": 4693872,
     "?unknown_475fe0@CellClass@@QAEHH@Z": 4677600,
     "?unknown_47bb10@CellClass@@QBE_NXZ": 4700944,
     "??0FoggedObjectClass@@QAE@ABVNoInitClass@@@Z": 4980688,

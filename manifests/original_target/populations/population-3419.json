@@ -4,8 +4,8 @@
     "id": "population-3419",
     "inventory_sha256": "9509749e1c9ab8747df654de479eaa243f3cc2d360cb76f93306711a2dff6ce7",
     "gaps_sha256": "2b79f7e79d021b7acf4a0092fc16bb96b135d78d25b704641d6738cea5530b6b",
-    "historical_population_sha256": "f799382dea1c56ffa4b92fd71a9a48577fa25a29394d399a3ac6755aa0980659",
-    "historical_acceptance_sha256": "8059d4154cdb1862aaadc47b74e470d69063b75603f2dab30e32a12a586f8b79"
+    "historical_population_sha256": "ac8f6d1acf55dd1e3dd9b3625066656e6aa78d5b2392bcf8be32d90c80ed0546",
+    "historical_acceptance_sha256": "47150ff9a87bbf45f1d5714cfe92bacb24e30066417b4a1c7a55f8b03b3fd826"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6729,8 +6729,8 @@
     "_strstr": 7878320,
     "?unknown_slot48@BuildingTypeClass@@UAEPAXXZ": 4581264,
     "?unknown_slot27@InfantryClass@@UAEHPBVCell@@_N1@Z": 5269072,
-    "?unknown_479cf0@CellClass@@QBE_NXZ": 4693232,
-    "?unknown_479f70@CellClass@@QBE_NXZ": 4693872,
+    "?Is_Near_Tunnel_NW@CellClass@@QAE_NXZ": 4693232,
+    "?Is_Near_Tunnel_ES@CellClass@@QAE_NXZ": 4693872,
     "?unknown_475fe0@CellClass@@QAEHH@Z": 4677600,
     "?unknown_47bb10@CellClass@@QBE_NXZ": 4700944,
     "?unknown_slot33@BuildingTypeClass@@UBEHH@Z": 4557424,

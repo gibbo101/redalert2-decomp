@@ -4,8 +4,8 @@
     "id": "population-2570",
     "inventory_sha256": "f01b3a5496ee5f460cc0f89bafa96df8f84788e8b44a1fdd5caab8e8cfdb63f0",
     "gaps_sha256": "09b456ada54df906b3c5bbb591a3292a177884544773afa6d500bced6cb90eba",
-    "historical_population_sha256": "83735481361579ec27cae577e88ecc6f576511a7241442b23b6b01adb4e5c002",
-    "historical_acceptance_sha256": "72b699522354a276ab65d0ddb6be7e9b481b401fe5c44e8e5f6aa478be01cc7b"
+    "historical_population_sha256": "b3de193538d408746ba80a3b42e86a57adddd68f5860ef87c46f59f33a1fab30",
+    "historical_acceptance_sha256": "510970927cb7758628939b7a5fa9330a4fb12c5a6354486bbfdf4f85dd7b2f8d"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7543,8 +7543,8 @@
     "?Unknown_0054AB00@MapClass@@QAE_NABUCoordStruct@@@Z": 5548800,
     "?Unknown_00569320@MapClass@@QAE_NABVCell@@@Z": 5673760,
     "?unknown_471660@CellClass@@QBEPAVObjectClass@@ABUPoint2D@@_NPAV2@@Z": 4658784,
-    "?unknown_479cf0@CellClass@@QBE_NXZ": 4693232,
-    "?unknown_479f70@CellClass@@QBE_NXZ": 4693872,
+    "?Is_Near_Tunnel_NW@CellClass@@QAE_NXZ": 4693232,
+    "?Is_Near_Tunnel_ES@CellClass@@QAE_NXZ": 4693872,
     "?unknown_475fe0@CellClass@@QAEHH@Z": 4677600,
     "?unknown_47bb10@CellClass@@QBE_NXZ": 4700944,
     "?Unknown_00562F50@MapClass@@QAEXPAVCellClass@@@Z": 5648208,

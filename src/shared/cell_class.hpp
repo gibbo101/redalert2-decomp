@@ -186,8 +186,10 @@ public:
     bool unknown_47c2e0(int house) const;       // 0x0047C2E0 (overlay)
     void unknown_476920(void const *arg1, bool arg2, bool arg3, bool alt);  // 0x00476920 (scatters the occupants; alt picks AltOccupierPtr; UnitClass slot 302)
     bool unknown_479cc0() const;                // 0x00479CC0 (Westwood's Has_Tunnel: a valid tube index and LAND_TUNNEL; UnitClass slot 27)
-    bool unknown_479cf0() const;                // 0x00479CF0 (Westwood's Is_Near_Tunnel_NW)
-    bool unknown_479f70() const;                // 0x00479F70 (Westwood's Is_Near_Tunnel_ES)
+    // TibSun names. Not const in RA2: they reach Adjacent_Cell 0x00476AC0 directly, not
+    // through the const wrapper (Is_Near_Tunnel_ES's inline expansions show the depth).
+    bool Is_Near_Tunnel_NW();                   // 0x00479CF0
+    bool Is_Near_Tunnel_ES();                   // 0x00479F70
     bool unknown_47a120(TechnoClass *techno) const;   // 0x0047A120 (UnitClass slot 27)
     void Set_House_Bit(int house);              // 0x0047C320
     void Clear_House_Bit(int house);            // 0x0047C340

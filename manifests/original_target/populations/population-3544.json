@@ -4,8 +4,8 @@
     "id": "population-3544",
     "inventory_sha256": "03717b57a0baf1265fcba5eb7fd7abd7756695a7d39354109948dcbacebe0f72",
     "gaps_sha256": "0f28478b3547e46d98f38c63fff2aecae741d1a8a79f8b261d71c686abe82f9d",
-    "historical_population_sha256": "4d3f8b227ed0f2cabfb6d0c76fb1afbb64e146db310690e339dab2721aaf2645",
-    "historical_acceptance_sha256": "4d2bacb322f38b0868e7fec9a72d7863c6b33ebdfa1433917711be5220799c1f"
+    "historical_population_sha256": "710c7aeecb50ec38ed5d99afa77acedbd9bdf350580f30bcc50f6d2712c89109",
+    "historical_acceptance_sha256": "2f0c4daf215e8f27e1e5ff8790acb022ba2585e8aa053a7efdd3fba2eeca9d43"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3957,8 +3957,8 @@
     "?Clear@ABuffer@@QAEXG@Z": 7823712,
     "?Difference@RGBClass@@QBEHABV1@@Z": 6541232,
     "_strstr": 7878320,
-    "?unknown_479cf0@CellClass@@QBE_NXZ": 4693232,
-    "?unknown_479f70@CellClass@@QBE_NXZ": 4693872,
+    "?Is_Near_Tunnel_NW@CellClass@@QAE_NXZ": 4693232,
+    "?Is_Near_Tunnel_ES@CellClass@@QAE_NXZ": 4693872,
     "?unknown_47bb10@CellClass@@QBE_NXZ": 4700944,
     "?Fetch@?$VectorClass@UDrawRecord@FoggedObjectClass@@@@UBE?AUDrawRecord@FoggedObjectClass@@H@Z": 4989168,
     "?AI@UnitClass@@UAEXXZ": 7319808,

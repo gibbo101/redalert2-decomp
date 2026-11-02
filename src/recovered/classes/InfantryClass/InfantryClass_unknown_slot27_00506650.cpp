@@ -7,8 +7,8 @@
 // @ref ?Unknown_004F52B0@HouseClass@@QAE_NXZ=004f52b0
 // @ref ?unknown_slot27@FootClass@@UAEHPBVCell@@_N1@Z=004cc650
 // @ref ?unknown_6c16f0@TechnoClass@@QAEHH@Z=006c16f0
-// @ref ?unknown_479cf0@CellClass@@QBE_NXZ=00479cf0
-// @ref ?unknown_479f70@CellClass@@QBE_NXZ=00479f70
+// @ref ?Is_Near_Tunnel_NW@CellClass@@QAE_NXZ=00479cf0
+// @ref ?Is_Near_Tunnel_ES@CellClass@@QAE_NXZ=00479f70
 // @ref ?unknown_479cc0@CellClass@@QBE_NXZ=00479cc0
 // @ref ?unknown_47a120@CellClass@@QBE_NPAVTechnoClass@@@Z=0047a120
 // @ref ?Unknown_00569320@MapClass@@QAE_NABVCell@@@Z=00569320
@@ -27,7 +27,7 @@ int InfantryClass::unknown_slot27(Cell const *cell, bool arg2, bool arg3)
         result = 26;
     }
     if (Type->JumpJet && (result == 1 || result == 2)) {
-        if (Map[*cell].unknown_479cf0() || Map[*cell].unknown_479f70()) {
+        if (Map[*cell].Is_Near_Tunnel_NW() || Map[*cell].Is_Near_Tunnel_ES()) {
             result = 0;
         }
     }

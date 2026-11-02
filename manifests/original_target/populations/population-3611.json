@@ -4,8 +4,8 @@
     "id": "population-3611",
     "inventory_sha256": "0c0f4a19427059a2e4417db23e830926e95694f21524feb40331e3edd87f9c26",
     "gaps_sha256": "a5c7b670f7159a1d42c77de840de90612bae9a81d077b9ab72d801bdac619471",
-    "historical_population_sha256": "d33caea1f3f9e49ab955fa8fea2278f3d73815f9055112fc82b760721cef2d71",
-    "historical_acceptance_sha256": "6a4b08040d874d08152b163473c04b3432c6c91dc369d4648163a53a9bd37a43"
+    "historical_population_sha256": "a90e3367a24fb18781873daece8f86fb0ea991633eff5a3458362c993b2d93f0",
+    "historical_acceptance_sha256": "61a74d356ada36adf200976321ea19debeb000de9b6b344693c98469e52eb392"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9847,8 +9847,8 @@
     "?Scale_004376b0@Vector3@@QAEAAU1@M@Z": 4421296,
     "?Add_004376e0@Vector3@@QAEAAU1@ABU1@@Z": 4421344,
     "?Matrix3D_Rigid_Inverse_00591420@@YI?AVMatrix3D@@ABV1@@Z": 5837856,
-    "?unknown_479cf0@CellClass@@QBE_NXZ": 4693232,
-    "?unknown_479f70@CellClass@@QBE_NXZ": 4693872,
+    "?Is_Near_Tunnel_NW@CellClass@@QAE_NXZ": 4693232,
+    "?Is_Near_Tunnel_ES@CellClass@@QAE_NXZ": 4693872,
     "??0WaveClass@@QAE@ABUCoordStruct@@0PAVTechnoClass@@HPAVObjectClass@@@Z": 7476128,
     "?Wave_Tables_Initialized_00b25554@@3_NA": 11687252,
     "?Wave_Distance_Table_00af9620@@3PAY0BCM@GA": 11507232,
