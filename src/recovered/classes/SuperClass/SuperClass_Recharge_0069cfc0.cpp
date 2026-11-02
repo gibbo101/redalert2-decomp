@@ -4,7 +4,7 @@
 bool SuperClass::Recharge(bool player)
 {
     unknown_69ca70();
-    if (Is_Present() && !unknown_0x57 && !unknown_0x58) {
+    if (unknown_0x55 && !unknown_0x57 && !unknown_0x58) {
         unknown_0x5C = -1;
         RechargeTimer.Start();
         RechargeTimer = Type->RechargeTime;
