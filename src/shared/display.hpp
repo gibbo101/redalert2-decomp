@@ -111,6 +111,9 @@ public:
     void Unknown_0049CC20();
     void Unknown_0049E110(bool skip_buildings, bool arg2);   // 0x0049E110 (slot 70 over the technos of layer 2)
     void Unknown_0049E000(bool skip_buildings, bool arg2);    // 0x0049E000 (slots 263/236 over every techno)
+#ifdef RA2_DISPLAY_START_POS
+    void Unknown_0049C670(); // original start position; matches the existing light interface
+#endif
     void Unknown_0049DE00(bool skip_buildings, bool arg2);    // 0x0049DE00 (over every techno; MapClass 0x00559F10)
     void Constrained_Look(CoordStruct const &center, int distance);   // 0x0049E1D0 (TibSun Constrained_Look)
     // Whether a building type may be placed for the player at a cell: false
