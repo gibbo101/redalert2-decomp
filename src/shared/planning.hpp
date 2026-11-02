@@ -186,7 +186,7 @@ void __fastcall Planning_Refuse_Event(EventClass const *event);
 // The remembered node when the screen point is inside its grown marker (0x00615D30).
 PlanningNodeClass *__stdcall Planning_Node_At(int x, int y);
 // Whether the selected technos without a path still fit the planning limit (0x00615ED0).
-bool Planning_Can_Add();
+bool __fastcall Planning_Can_Add();
 // The node at a coordinate with a given id and house (-1: any) (0x00615FB0).
 PlanningNodeClass *__fastcall Planning_Find_Node(int house, int id, CoordStruct coord);
 // The drawn node at a coordinate (0x00616210).
