@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 1242 | 272,989 | 1242 | 0x00401000–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 1241 | 272,939 | 1241 | 0x00401000–0x0078FB6B |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 179 | 84,946 | 179 | 0x0049ED10–0x0056A9D0 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 51 | 74,018 | 51 | 0x00640460–0x00654100 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 181 | 64,989 | 181 | 0x00438A60–0x004D3450 |
@@ -256,10 +256,10 @@
 | [classes/WolChannelNameSet](../src/recovered/classes/WolChannelNameSet/) | 6 | 1,397 | 6 | 0x00766070–0x007679A0 |
 | [classes/EBolt](../src/recovered/classes/EBolt/) | 10 | 1,396 | 10 | 0x004B1770–0x004B2580 |
 | [classes/LocomotionClass](../src/recovered/classes/LocomotionClass/) | 55 | 1,394 | 54 | 0x004A4BF0–0x0053D610 |
+| [classes/PacketClass](../src/recovered/classes/PacketClass/) | 13 | 1,318 | 13 | 0x00602A60–0x00602F60 |
 | [classes/MSOverlayAnim](../src/recovered/classes/MSOverlayAnim/) | 6 | 1,303 | 5 | 0x005AD370–0x005AFD60 |
 | [classes/PhoneEntryEdit](../src/recovered/classes/PhoneEntryEdit/) | 4 | 1,297 | 4 | 0x0060E4C0–0x0060E900 |
 | [classes/MSAnim](../src/recovered/classes/MSAnim/) | 10 | 1,278 | 10 | 0x005AC540–0x005AFCA0 |
-| [classes/PacketClass](../src/recovered/classes/PacketClass/) | 12 | 1,268 | 12 | 0x00602A60–0x00602F60 |
 | [classes/EnumConnectionsClass](../src/recovered/classes/EnumConnectionsClass/) | 10 | 1,265 | 7 | 0x00492180–0x00492650 |
 | [classes/SchemeTable](../src/recovered/classes/SchemeTable/) | 4 | 1,264 | 4 | 0x006044A0–0x00604AD0 |
 | [classes/WolChannelDictionary](../src/recovered/classes/WolChannelDictionary/) | 4 | 1,244 | 4 | 0x00766400–0x00768010 |

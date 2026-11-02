@@ -4,8 +4,8 @@
     "id": "population-3745",
     "inventory_sha256": "dc62176afe5c7e1fca8ff2a394bdf0f73d8c3fd19a4465012ed6d6b75b11e3cb",
     "gaps_sha256": "6bbbb1f5ff45e5beb274c1d562b6634b986cc91a326aaccd6995c6a6af088f7f",
-    "historical_population_sha256": "7610caefee581f9161917f3ff4ab3a7d3ce2cd978b32167177637eec2999ad49",
-    "historical_acceptance_sha256": "12336a0ab88ae9b2cf4eb4a6d1eb394c2af130f4f334562d2f7ca01d9d786675"
+    "historical_population_sha256": "77958321c89f1fd4369926622ef248c075615b0f834cc5940585e2b68e32c5b1",
+    "historical_acceptance_sha256": "32a17b852c68089a44b869930ebd9172613bb397724b4cbc086491dd79db3abd"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -8184,7 +8184,19 @@
     "?Wait_For_Mangler_Reply@FirewallSettings@@QAEGHH@Z": 6004944,
     "?unknown_decoder_time@@YIHPAUUnknownDecoderState_77cb70@@@Z": 7850864,
     "?Find@ToolTipManager@@QAE_NIPAVToolTip@@@Z": 7256992,
-    "?Find@ToolTipManager@@QAEPAVToolTip@@PBUPOINT@@@Z": 7257360
+    "?Find@ToolTipManager@@QAEPAVToolTip@@PBUPOINT@@@Z": 7257360,
+    "?Clear@?$DynamicVectorClass@VHSVClass@@@@UAEXXZ": 6311216,
+    "?Clear@?$VectorClass@VHSVClass@@@@UAEXXZ": 6312848,
+    "?ID@?$DynamicVectorClass@VHSVClass@@@@UAEHPBVHSVClass@@@Z": 6311264,
+    "?ID@?$VectorClass@VHSVClass@@@@UAEHPBVHSVClass@@@Z": 6312992,
+    "?Fetch@?$VectorClass@VHSVClass@@@@UBE?AVHSVClass@@H@Z": 6311312,
+    "??_GMixFileClass@@UAEPAXI@Z": 5856352,
+    "??_7MixFileClass@@6B@": 8021104,
+    "??1MixFileClass@@UAE@XZ": 5854752,
+    "?unknown_slot1@ReferenceCounted@@UAE_NH@Z": 6526784,
+    "??0MixFileClass@@QAE@PBDPBVPKey@@@Z": 5853936,
+    "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABVRect@@HH@Z": 6923008,
+    "??_EMixFileClass@@UAEPAXI@Z": 5856352
   },
   "regions": [
     {
@@ -8318,12 +8330,12 @@
         }
       ],
       "source_sha256": "664d0e1f4cf1fd4039ec29d9257e4e5a46ece19d5a1f0c25b5bee7854f5d237a",
-      "source": "src/recovered/unowned/unknown_find_chunk_00602cd0.cpp",
+      "source": "src/recovered/classes/PacketClass/PacketClass_Find_Field_00602cd0.cpp",
       "population": "population-3745",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "unknown_find_chunk_00602cd0",
+      "semantic_name": "PacketClass_Find_Field_00602cd0",
       "source_order": 165876
     },
     {
