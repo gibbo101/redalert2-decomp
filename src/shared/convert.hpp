@@ -26,6 +26,18 @@ public:
     RGBClass &operator[](int index) { return Palette[index % 256]; }
     RGBClass const &operator[](int index) const { return Palette[index % 256]; }
     PaletteClass &operator=(PaletteClass const &palette);   // 0x00603080
+#ifdef PALETTE_DECLARE_MEMBERS
+    // The rest of Westwood's palette.cpp (unit 0x00602FD0-0x006031F2; guarded: convert.hpp is in
+    // fragile closures and new declarations renumber their $L labels).
+    PaletteClass(RGBClass const &rgb);                      // 0x00602FD0 every entry rgb
+    PaletteClass(unsigned char *binary_palette);            // 0x00603020 from 768 raw bytes
+    bool operator==(PaletteClass const &palette) const;     // 0x00603050
+    // Moves every entry toward black (or toward palette's entry) by ratio/256 (0x006030A0, 0x006030D0).
+    void Adjust(int ratio);
+    void Adjust(int ratio, PaletteClass const &palette);
+    // Moves the entries whose lookup flag is set toward black by ratio/256 (0x00603120).
+    void Partial_Adjust(int ratio, char *lookup);
+#endif
 
     // Makes this the current palette (0x00496120; a copy into 0x00851CC8
     // when it is not that palette already; name is a hypothesis).

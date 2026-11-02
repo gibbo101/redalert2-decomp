@@ -2070,41 +2070,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "BitFontClass_Set_Clipping_00431450",
       "source_order": 55688
-    },
-    {
-      "entry": 6304096,
-      "method": "00603160",
-      "symbol": "?Partial_Adjust@PaletteClass@@QAEXHABV1@PA_N@Z",
-      "symbol_prefix": "?Partial_Adjust@PaletteClass@@QAEXHABV1@PA_N@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 75,
-      "body_sha256": "f710c734aad280be0ea3846cd7405cab0e9a6d00e25fada6c581bdb89d56302e",
-      "padding_bytes": 5,
-      "full_extent_bytes": 80,
-      "full_extent_sha256": "ed454284f41bdbf7ac0db2b8bb4d9394482852af804a5fbbc588f32f056ba649",
-      "relocations": [
-        {
-          "offset": 52,
-          "kind": 20,
-          "symbol": "?Adjust@RGBClass@@QAEXHABV1@@Z",
-          "target": 6541088,
-          "addend": 0,
-          "resolved": 236936
-        }
-      ],
-      "source_sha256": "e55d7aaeca2c9a03d027bf4b4dee1a53c6f049d2c7f2ec1ba0eb5c7cbdd468d3",
-      "source": "src/recovered/classes/PaletteClass/PaletteClass_Partial_Adjust_00603160.cpp",
-      "population": "population-1651",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "PaletteClass_Partial_Adjust_00603160",
-      "source_order": 55689
     }
   ]
 }
