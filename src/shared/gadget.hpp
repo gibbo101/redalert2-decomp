@@ -93,6 +93,10 @@ public:
     virtual int Action(unsigned flags, unsigned &key);            // slot 31 0x004CF220
     virtual int Clicked_On(unsigned &key, unsigned flags, int x, int y);   // slot 32 0x004CF0E0
 
+#ifdef RA2_GADGET_SET_FLAGS
+    // Westwood GadgetClass flag setter (TibSun gadget.h); layout is unchanged.
+    void Set_Flags(unsigned flags) { Flags = flags; }
+#endif
     bool Is_Enabled();                                              // 0x004CF160 !IsDisabled (Sidebar copy; name hypothesis)
     GadgetClass *Extract_At(int x, int y);                          // 0x004CF290 (smallest enabled gadget at x, y; name hypothesis; near miss)
 
