@@ -1,6 +1,8 @@
 // Header-static dynamic initializers of the unit at 0x004BB6A0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x004BB6A0-0x004BB881); the other
 // drafts of this plan are emitted by these includes.
+// Find_First_Obstacle_004bb890 in this unit uses the scaled-coordinate operator* (shared/coord.hpp).
+#define RA2_COORD_TIMES
 #include "shared/shape_file.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

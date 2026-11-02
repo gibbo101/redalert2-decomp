@@ -111,6 +111,12 @@ struct CoordStruct {
     // Techno unit emits for its non-inlined calls in 0x006C2C40, which is not recovered yet: until
     // it is, that unit defines RA2_COORD_DIVIDE_SOURCE (first line of its first draft) and the
     // row's own source supplies the copy; then the define and that definition go.
+#ifdef RA2_COORD_TIMES
+    CoordStruct const operator*(int value) const
+    {
+        return CoordStruct(X * value, Y * value, Z * value);
+    }
+#endif
 #ifdef RA2_COORD_DIVIDE_SOURCE
     CoordStruct operator/(int divisor) const;
 #else
