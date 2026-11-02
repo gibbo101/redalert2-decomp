@@ -1,6 +1,12 @@
 // Header-static dynamic initializers of the unit at 0x00728FD0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x00728FD0-0x007291B1); the other
 // drafts of this plan are emitted by these includes.
+// The unit's vector members: Map's constructor expands the DynamicVectorClass constructors, its
+// destructor the vector destructors, Get_Drawer Add (defined before the unit's first vector_class.hpp).
+#define VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
+#define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
+#define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #include "shared/shape_file.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

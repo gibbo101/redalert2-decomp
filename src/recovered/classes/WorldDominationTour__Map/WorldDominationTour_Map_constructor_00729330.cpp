@@ -24,7 +24,6 @@
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??_H@YGXPAXIHP6EX0@Z@Z=0040aed0
 // @ref ??_I@YGXPAXIHP6EX0@Z@Z=0040af00
-#define VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
 #include "shared/wdt_map.hpp"
 
 namespace WorldDominationTour {

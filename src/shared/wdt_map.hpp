@@ -3,7 +3,9 @@
 // size 0xD4; created by 0x007292E0). Only the members the constructor (0x00729330) and
 // destructor (0x007293F0) touch are named; the types of the unknown members are hypotheses.
 //   +0x08 int unknown_08, +0x0C int unknown_0c, +0x10 int unknown_10  (the constructor arguments)
-//   +0x14 and +0x24 pointers to objects the destructor deletes, +0x78 another
+//   +0x14 and +0x78 drawers made by unknown_load_drawer_5ac560, +0x24 the territory index surface
+//         (unknown_load_pcx_60d110), all deleted by the destructor; +0x18/+0x1C animations
+//         (built in the loader 0x00729510, used by unknown_72a620)
 //   +0x28 Wstring (":" when built)
 //   +0x2C DynamicVectorClass<rc_ptr<Territory>> Territories
 //   +0x44, +0x64, +0x6C three small member objects, each zeroed by its own inline
@@ -18,6 +20,23 @@
 #define RA2_SHARED_WDT_MAP_HPP
 
 #include "shared/world_domination_tour.hpp"
+#include "shared/convert.hpp"
+
+// Shown while the World Domination Tour map (0x00839958 background) is up: slot 4 and
+// slot 5 redraw the interface frame (0x006F3650) while the flags 0x007FBD04 / 0x007FBD05
+// are set (RTTI vtable 0x007AF1BC; no members of its own; names are hypotheses).
+class MSFrameAnim : public MSAnim {
+public:
+    MSFrameAnim();                                                  // 0x007291C0
+    virtual ~MSFrameAnim();                                         // 0x007291F0 (deleting 0x0072AF00)
+    virtual bool Unknown_Slot4(Surface *surface, Rect *dirty);      // 0x00729200
+    virtual void Draw(Surface *surface, Rect const *clip);          // 0x00729220
+    virtual Rect Get_Rect();                                        // 0x007292B0 (the 640x480 screen)
+};
+
+extern bool unknown_flag_7fbd05;  // 0x007FBD05 (MSFrameAnim::Draw draws while set)
+// Draws the interface frame clipped to window (0x006F3650, unowned/Unknown_Draw_Interface_006f3650.cpp).
+void __fastcall Unknown_006F3650(Surface *surface, Rect const &window, bool arg3);
 
 namespace WorldDominationTour {
 
@@ -29,13 +48,25 @@ rc_ptr<Territory> __fastcall Find_Territory(DynamicVectorClass<rc_ptr<Territory>
 
 class Map : public ReferenceCounted {
 public:
-    class AnimationPalette;
+    // A named drawer of the map's palette list (0x0072A510 makes them; inline constructor
+    // and destructor, out-of-line copies 0x0072A5E0 and 0x0072A600).
+    class AnimationPalette {
+    public:
+        AnimationPalette(Wstring const &name, ConvertClass *drawer) : Name(name), Drawer(drawer) {}
+        ~AnimationPalette();                                        // 0x0072A600
+
+        Wstring Name;                                               // +0x00
+        ConvertClass *Drawer;                                       // +0x04
+    };
 
     Map(int unknown_08, int unknown_0c, int unknown_10);          // 0x00729330
     virtual ~Map();                                                 // 0x0072AF30 (slot 0, calls 0x007293F0)
 
     static rc_ptr<Map> __fastcall Create(int unknown_08, int unknown_0c, int unknown_10);   // 0x007292E0
     void unknown_72a620(MSEngine *engine, Voices *voices);         // 0x0072A620
+    // The drawer of the palette file `name`, loaded and kept in Palettes on first use (0 when
+    // it cannot be loaded; name hypothesis).
+    ConvertClass *Get_Drawer(Wstring const &name);                  // 0x0072A510
     int Territory_At(Point2D const &point) const;                   // 0x0072A660 (-1 for none)
     void Set_Unknown_74(MSEngine *engine, bool value);              // 0x0072A6D0
     void Set_Unknown_68(MSEngine *engine, bool value);              // 0x0072A720
@@ -46,11 +77,11 @@ public:
     int unknown_08;                                                 // +0x08
     int unknown_0c;                                                 // +0x0C
     int unknown_10;                                                 // +0x10
-    void *unknown_14;                                               // +0x14
-    int unknown_18;                                                 // +0x18
-    int unknown_1c;                                                 // +0x1C
+    ConvertClass *unknown_14;                                       // +0x14
+    MSAnim *unknown_18;                                             // +0x18
+    MSAnim *unknown_1c;                                             // +0x1C
     int unknown_20;                                                 // +0x20
-    void *unknown_24;                                               // +0x24
+    Surface *unknown_24;                                            // +0x24 (each pixel a territory index: Territory_At)
     Wstring unknown_28;                                             // +0x28
     DynamicVectorClass<rc_ptr<Territory> > Territories;             // +0x2C
     struct Unknown44 {
@@ -70,7 +101,7 @@ public:
         int unknown_4;
         char unknown_8;
     } unknown_6c;                                                   // +0x6C
-    void *unknown_78;                                               // +0x78
+    ConvertClass *unknown_78;                                       // +0x78
     Rect DescriptionRect;                                           // +0x7C (Selection's description text)
     Rect TooltipRect;                                               // +0x8C (Selection's tool tip text)
     Rect PlayRect;                                                  // +0x9C (GUI:PlayWDT)
