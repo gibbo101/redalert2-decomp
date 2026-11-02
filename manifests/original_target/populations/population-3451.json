@@ -4,8 +4,8 @@
     "id": "population-3451",
     "inventory_sha256": "1d3a65e3133a8d7111c412645638e8acda7402606e5a9690d369370cfe763549",
     "gaps_sha256": "c9a912e73a304dcf8dc3bd783c93430b9e124b8075a58201b17f33c3ab85a1c3",
-    "historical_population_sha256": "613d8c3e8c33f8cc068769e3913557679f5f5fd2a9d8ba4394811a7fb2f1261a",
-    "historical_acceptance_sha256": "85e6a96e04b2e77e955ac7d0111d905a05fdb6a7d07f6116e5b0adb717d529b7"
+    "historical_population_sha256": "2364ce60c8660b9e6afe17fa3482ae321342801aff46ed46e8d1d1f737c377c3",
+    "historical_acceptance_sha256": "2fc7fad606a201342db34e999126487c31fcd0724d28e37d25bec437751daee0"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -21317,8 +21317,8 @@
     "?unknown_476cc0@CellClass@@QAE_NPAVObjectClass@@@Z": 4680896,
     "?unknown_4fda80@HoverLocomotionClass@@QAEXXZ": 5233280,
     "?unknown_4fed20@HoverLocomotionClass@@QAEXXZ": 5238048,
-    "?unknown_4fe0f0@HoverLocomotionClass@@QAEX_N@Z": 5234928,
-    "?unknown_4fcbc0@HoverLocomotionClass@@QAEX_N@Z": 5229504,
+    "?Start_Of_Move_004fe0f0@HoverLocomotionClass@@QAEXH@Z": 5234928,
+    "?While_Moving_004fcbc0@HoverLocomotionClass@@QAEH_N@Z": 5229504,
     "?unknown_592f70@MechLocomotionClass@@QAE_NABUCoordStruct@@@Z": 5844848,
     "?Slope_Ratio@ShipLocomotionClass@@QAENXZ": 6773584,
     "?Set_Slope@ShipLocomotionClass@@QAEXH@Z": 6773680,

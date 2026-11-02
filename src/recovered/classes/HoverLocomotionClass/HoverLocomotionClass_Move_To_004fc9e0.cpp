@@ -2,8 +2,8 @@
 // @ref ?Map@@3VMouseClass@@A=008324e0
 // @ref ?Unknown_0051FC80@HouseClass@@QAE_NXZ=0051fc80
 // @ref ?Unknown_0055A280@MapClass@@QAEHABUCoordStruct@@@Z=0055a280
-// @ref ?unknown_4fcbc0@HoverLocomotionClass@@QAEX_N@Z=004fcbc0
-// @ref ?unknown_4fe0f0@HoverLocomotionClass@@QAEX_N@Z=004fe0f0
+// @ref ?While_Moving_004fcbc0@HoverLocomotionClass@@QAEH_N@Z=004fcbc0
+// @ref ?Start_Of_Move_004fe0f0@HoverLocomotionClass@@QAEXH@Z=004fe0f0
 // @ref ?unknown_coord_a41080@@3UCoordStruct@@A=00a41080
 // @ref _unknown_geometry_j=00a410a8
 #include "shared/hover_locomotion.hpp"
@@ -18,8 +18,8 @@ void __stdcall HoverLocomotionClass::Move_To(CoordStruct to)
     if (to!=unknown_coord_a41080 && Is_Powered()) {
         if (!Is_Moving_Now()) {
             LinkedTo->unknown_slot306(1.0);
-            unknown_4fe0f0(false);
-            unknown_4fcbc0(true);
+            Start_Of_Move_004fe0f0(0);
+            While_Moving_004fcbc0(true);
         } else if (unknown_24==unknown_coord_a41080) {
             unknown_4fed20();
         }

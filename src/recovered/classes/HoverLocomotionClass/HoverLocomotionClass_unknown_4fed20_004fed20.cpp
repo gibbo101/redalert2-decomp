@@ -4,8 +4,8 @@
 // Expanded where it is used; this out-of-line copy is never called.
 #include "shared/hover_locomotion.hpp"
 // @ref ?unknown_coord_a41080@@3UCoordStruct@@A=00a41080
-// @ref ?unknown_4fe0f0@HoverLocomotionClass@@QAEX_N@Z=004fe0f0
-// @ref ?unknown_4fcbc0@HoverLocomotionClass@@QAEX_N@Z=004fcbc0
+// @ref ?Start_Of_Move_004fe0f0@HoverLocomotionClass@@QAEXH@Z=004fe0f0
+// @ref ?While_Moving_004fcbc0@HoverLocomotionClass@@QAEH_N@Z=004fcbc0
 
 void HoverLocomotionClass::unknown_4fed20()
 {
@@ -17,8 +17,8 @@ void HoverLocomotionClass::unknown_4fed20()
     }
     unknown_48 = 1.0;
     LinkedTo->unknown_slot306(1.0);
-    unknown_4fe0f0(false);
+    Start_Of_Move_004fe0f0(0);
     if (arrived) {
-        unknown_4fcbc0(true);
+        While_Moving_004fcbc0(true);
     }
 }

@@ -6,8 +6,8 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Set_Current@FacingClass@@QAE_NABUUnknownFacingDir@@@Z=004b8b10
 // @ref ?Set_Desired@FacingClass@@QAE_NABUUnknownFacingDir@@@Z=004b8a30
-// @ref ?unknown_4fcbc0@HoverLocomotionClass@@QAEX_N@Z=004fcbc0
-// @ref ?unknown_4fe0f0@HoverLocomotionClass@@QAEX_N@Z=004fe0f0
+// @ref ?While_Moving_004fcbc0@HoverLocomotionClass@@QAEH_N@Z=004fcbc0
+// @ref ?Start_Of_Move_004fe0f0@HoverLocomotionClass@@QAEXH@Z=004fe0f0
 // @ref ?unknown_coord_a41080@@3UCoordStruct@@A=00a41080
 // @ref ?unknown_facing_offsets_851ac0@@3QBUUnknownFacingOffset@@B=00851ac0
 // @ref ?unknown_facing_origin_79b630@@3NB=0079b630
@@ -90,8 +90,8 @@ void HoverLocomotionClass::Motion_AI_004fdaf0()
     }
     if (Is_Moving() && unknown_24==unknown_coord_a41080) {
         LinkedTo->unknown_slot306(1.0);
-        unknown_4fe0f0(false);
-        unknown_4fcbc0(true);
+        Start_Of_Move_004fe0f0(0);
+        While_Moving_004fcbc0(true);
     }
 }
 #undef Hover_Min_004fdaf0

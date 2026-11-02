@@ -53,8 +53,8 @@ public:
     void Gravity_AI_004fb9d0();
     bool unknown_4fdfc0();                                                      // 0x004FDFC0 (moving; never called out of line)
     void Start_Drift();                                                         // 0x004FEC30
-    void unknown_4fcbc0(bool arg);                                              // 0x004FCBC0 (Process's step; not yet recovered)
-    void unknown_4fe0f0(bool arg);                                              // 0x004FE0F0 (Process's step; not yet recovered)
+    int While_Moving_004fcbc0(bool first_pass);                                              // 0x004FCBC0 (Process's step; not yet recovered)
+    void Start_Of_Move_004fe0f0(int num);                                              // 0x004FE0F0 (Process's step; not yet recovered)
     void unknown_4fda80();                                                      // 0x004FDA80 (stops: no speed, clears the head-to coordinate and its mark; never called out of line)
     void unknown_4fed20();                                                      // 0x004FED20 (full speed; steps on unless already in the head-to cell; never called out of line)
 
