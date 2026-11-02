@@ -243,9 +243,11 @@ public:
 };
 
 extern "C" unsigned int __cdecl wcslen(unsigned short const *string);   // 0x00783605 (as msfont.hpp)
-// The colour scheme of the gadgets (non-member in Gadget.cpp, 0x004CEFC0;
-// name hypothesis).
+// The colour scheme index the gadgets draw with: the scheme named by Gadget_Scheme_Name
+// ("Grey"), 0 when unknown (0x004CEFC0; Westwood's GadgetClass::Get_Color_Scheme and
+// CurrentColorScheme, non-members here; names hypotheses).
 int __cdecl Gadget_Color_Scheme();      // 0x004CEFC0
+extern char const *Gadget_Scheme_Name;  // 0x007D83B4
 
 // EditClass (unit 0x004B2950-0x004B2F45): a single-line text entry field.
 //   +0x2C  unsigned TextFlags     the style without KEYBOARD (0x100)
