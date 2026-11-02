@@ -4,8 +4,8 @@
     "id": "population-3741",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "8229d25eff42c3a5dedc03191711e5a7319cdc2d79f89fbed9698b457de7faaf",
-    "historical_acceptance_sha256": "23d435fe368950a929e7bf5d1e044c1066ed7fd1e39d25d71450b93a0db3eb31"
+    "historical_population_sha256": "b1d420dc715a8fb9bc43fc1c9c30415ed9ea61d477734a4edc9215db2d49652c",
+    "historical_acceptance_sha256": "3c9633e07633fdb07ca8f251d5831ceaf884aa879772a518a19b55897597a1b3"
   },
   "references": {
     "?unknown_buffer_ae3408@@3PAEA": 11416584,
@@ -4188,7 +4188,10 @@
     "??_EAnimTypeClass@@UAEPAXI@Z": 4351936,
     "??_EInfantryTypeClass@@UAEPAXI@Z": 5287824,
     "??_ETActionClass@@UAEPAXI@Z": 7024848,
-    "??_EConvertClass@@UAEPAXI@Z": 4743456
+    "??_EConvertClass@@UAEPAXI@Z": 4743456,
+    "?ID@?$DynamicVectorClass@VHSVClass@@@@UAEHPBVHSVClass@@@Z": 6311264,
+    "?ID@?$VectorClass@VHSVClass@@@@UAEHPBVHSVClass@@@Z": 6312992,
+    "__real@8@c0058000000000000000": 8027384
   },
   "regions": [
     {
@@ -4217,7 +4220,7 @@
           "resolved": 11416584
         }
       ],
-      "source_sha256": "5a29a468e646eff953d2958bd53250a64e57a014fd125d8b0c8baa095c17a171",
+      "source_sha256": "82fa67414dc6e51ef48a1bfb51dda28e57fb805c3b2fc567aeeaff8230bf08e0",
       "source": "src/recovered/classes/VoxelDrawSystem/VoxelDrawSystem_Get_Surface_Buffer_00717030.cpp",
       "population": "population-3741",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",

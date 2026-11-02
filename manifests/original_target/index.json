@@ -2213,6 +2213,10 @@
       {
         "path": "src/shared/ahtoi.hpp",
         "sha256": "30947123c892f2aa12621649e7a73ddad1b7ec169f39e8bffa23218ed4088f4a"
+      },
+      {
+        "path": "src/shared/voxel_render_record.hpp",
+        "sha256": "c3ff5aebe0a390a659bb3865d05ae676d89912c6ea11f9152a567fb0cd38df5b"
       }
     ],
     "source_quality_checkpoint": {
@@ -12860,7 +12864,7 @@
     "population-3513": "c62e43a764ff95aa61bd6fda69b79eb6c0f70f39ff8ee0f87bf242b6a6b608d2",
     "population-3514": "1fa0d91453b87bb7ec6167878fbfbec80b2753b09727c3d0aaa53e1c68f2a700",
     "population-3515": "bffcfb054ebcdd8154071c2d6eb6ab9505d82739bdeeb3238fa2431738d97851",
-    "population-3516": "6f23973798ef0b683a01c41f25938833b917689bef27c6649eb7d4f1ceb7481e",
+    "population-3516": "d6b0c479dab1dc0e96eb60a7b286cfafcdfbbafbb68010b89970894d85fe9f80",
     "population-3517": "0ce03149d8e89f4a2578c98ab439a1d549d5cb7a04fa4b3b256389e0a3d487a6",
     "population-3518": "976f7af45f151d2863595d35a93606642aeb6c39bb9d3848aa6feff0d872d3e3",
     "population-3519": "c86e126122f29f736599f96b42669bdcc84e1c49cc8db2cda48332c3f8a6e12d",
@@ -13110,7 +13114,7 @@
     "population-3739": "e06dd7d25faca1abd7bfdb69833a40c3b94e9f06100f53b589c9638d64e882b5",
     "population-374": "b110f461fc478d0fb46286dfac24b30a7e1089383984593cd32c5946d060a5b5",
     "population-3740": "d5b5ccb99cedca87bfef921216edf75a90ece2b992d94377bf8af15a44d1ec46",
-    "population-3741": "51b40d24657c90069c43a9cb91fd7e7ed88fae93f123570b93451fbd8b1896a0",
+    "population-3741": "61678d4b0d761f48a7d14b1eace08d290984a936054a3175eedbbde5c0eef96a",
     "population-3742": "f7c94cb83c4e2d259b877fe940e378e21a9114993d49172a8f3ba29277cf10c2",
     "population-3743": "6dfad9bcb115dd5ab1c5217a83c9ed8d7be707f5bc302ea6b176ecac55e665f4",
     "population-3744": "5553383bbdd553e08cafcc23510ee42e2c73bf94ffafef69f0eb6db1f421af17",

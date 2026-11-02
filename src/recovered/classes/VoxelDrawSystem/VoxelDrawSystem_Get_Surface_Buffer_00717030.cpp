@@ -33,20 +33,10 @@
 #include "shared/unknown_pair_first.hpp"
 #include "shared/crt_memory.hpp"
 #include "shared/voxel_draw_system.hpp"
+#include "shared/voxel_render_record.hpp"
 
 class Surface;
 
-// A voxel object record (0x88 bytes; the 64 at 0x00AE0DE8; TibSun VoxelRenderStruct): the library, section and
-// frame, the corner nearest the viewer, the transformed bounds and the eight transformed box corners.
-struct UnknownVoxelRecord88 {
-    UnknownPairFirst *Library;          // +0x00
-    int Section;                        // +0x04
-    int Frame;                          // +0x08
-    int AnchorCorner;                   // +0x0C
-    Vector3 MinBounds;                  // +0x10
-    Vector3 MaxBounds;                  // +0x1C
-    Vector3 Points[8];                  // +0x28
-};
 
 // The draw result of the second Render (0x18 bytes; TibSun SurfaceRegion): where to put the buffer's rectangle.
 struct SurfaceRegion {
@@ -60,7 +50,6 @@ extern int unknown_af6610;                                  // 0x00AF6610 depth 
 extern Vector3 unknown_bounds_min_ae0a70;                   // 0x00AE0A70
 extern Vector3 unknown_bounds_max_ae0dd8;                   // 0x00AE0DD8
 extern Rect unknown_rect_ae2ff0;                            // 0x00AE2FF0 the last rendered rectangle
-extern UnknownVoxelRecord88 unknown_records_ae0de8[64];     // 0x00AE0DE8
 extern UnknownVoxelRecord48 unknown_records_af3408[64];     // 0x00AF3408
 extern RGBClass unknown_voxel_colors_ae3008[256];           // 0x00AE3008 the voxel palette
 extern unsigned short unknown_voxel16_colors_ae0a7c[256];   // 0x00AE0A7C the palette in screen format
