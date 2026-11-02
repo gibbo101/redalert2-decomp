@@ -1,3 +1,5 @@
+// TerrainClass Render (0x006E4430) expands TibSun's Rect + Top_Left() inline (rect.hpp RA2_RECT_POINT_INLINE).
+#define RA2_RECT_POINT_INLINE
 // Header-static dynamic initializers of the unit at 0x006E2E10:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x006E2E10-0x006E2FF6); the other

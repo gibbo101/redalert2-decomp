@@ -992,5 +992,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
   colour helper; with the 62-unit operator== (also exact at 0x61A8B0) the whole call sequence matches. The planning
   population stays 168/168 with RA2_COORD_TPOINT3D and that operator==.
 - Tools: InlineLab518 x/meas.py (callee size by a charged Spend flip), x/model.py + run.py (simulate a call tree and
+- Applying the rule (Ob2Apply519): the IL size of an out-of-line callee is itself a lever. A byte-identical rewrite of 0x54FAB0 (its result held in a local through an if/else-if/else chain, +13 to 18 units over the two-return forms) moved where Collapse_Cliff 0x562F50's nested decisions flip.
+- A delete of a class with an inline empty destructor adds IL but no code, in the nested-if form only; the && form emits a ??_G call (Free_Buildup 0x45E920). Measure a missing spend with Ob2Apply519/prb.py (remaining-budget probe for a joined function).
   compare with the compiler), x/inplace.py (many variants of one function in one unit compile), x/probe.py (the
   remaining budget at any source line of a real function).

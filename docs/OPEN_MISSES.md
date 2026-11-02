@@ -980,3 +980,10 @@ Resume notes are in build/class-work/Scout520/NOTES.md.
 - 0x4D4520, 0x4D4620/0x4D4640 and 0x4D46C0: each is exact alone but must join pop-2660. An `extern` after the definition makes VC6 emit a duplicate _$E initializer/atexit pair. OWNER RULING (10:25Z): guard those externs the way RA2_WARHEAD_LIST_DEFINED does. Assigned to Scout522.
 - Blocked on identity or layout: 0x40CAB0 (needs LogicClass's vtable and Submit; currently accepted under the UnknownList832470 alias), 0x40F090 (the StaticBufferClass layout contradicts its constructor at 0x69A1A0), and 0x4D45F0 (the version object is polymorphic).
 - 0x4B550D is a .data switch-table entry, not code.
+
+## Ob2Apply519 (2026-11-02, closed; 0 B landed)
+Resume notes are in build/class-work/Ob2Apply519/NOTES.md.
+- Collapse_Cliff 0x562F50: 86.66 -> 91.02 (shape 98.76). Every call now inlines or stays out of line as in the original, using the cc/f/v10.cpp form of 0x54FAB0, which is still exact. What remains is register allocation in the three half-2 loops. Not yet checked: 0x54FAB0's other callers 0x5688A0, 0x54FB20, 0x54FA60 and 0x54FC60 with v10.
+- BuildingType Get_Draw_Rect 0x45E290 joined: 83.07 -> 98.65, equal to its standalone score. Free_Buildup uses the TibSun nested-if delete shape (bt/p/q1.cpp) with a lab stand-in class, which still needs evidence for a real RA2 shape class with an inline destructor. What remains is the Types349 Union register swap.
+- Planning 0x617AF0: 90.00, unchanged. The original spends roughly 90 to 156 more IL units at depth 1 before the `int listed` loop. No natural shape found.
+- Not attempted: Grant 0x69CCF0, WDTMap 0x72A880, Draw_Tiles 0x6A7BA0, LdPrgMgr 0x535BF0, Campaign ctor 0x725F40, Draw_Node 0x619870.
