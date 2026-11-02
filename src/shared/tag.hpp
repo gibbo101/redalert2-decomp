@@ -53,6 +53,12 @@ public:
     bool Spring(int event, ObjectClass *object, Cell cell, bool forced = false, int source = 0);
     void Set_Cell(Cell cell);                                     // 0x006B3F90
     void unknown_func_6b3fd0(int value);                                // 0x006B3FD0
+#ifdef RA2_TAG_UNIT_MEMBERS
+    // Tag.cpp members declared for that unit only (tag.hpp is in object.hpp's closure).
+    void unknown_func_6b3fe0(int value);                                // 0x006B3FE0 (the 0x006ED650 reset of the chain)
+    void Link(TriggerClass *trigger);                                   // 0x006B3FF0 (TibSun Link: chain head)
+    bool Unlink(TriggerClass *trigger);                                 // 0x006B4000 (TibSun Unlink)
+#endif
     bool unknown_func_6b41f0() const;                                   // 0x006B41F0
     bool unknown_func_6b4280() const;                                   // 0x006B4280 (no other tag of this type)
 

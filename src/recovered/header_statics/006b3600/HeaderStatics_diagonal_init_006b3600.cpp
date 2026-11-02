@@ -1,5 +1,7 @@
 // Header-static dynamic initializers of the unit at 0x006B3600 and the
 // unit's TagClass list; the other drafts of this plan are emitted by this file.
+// Unit-wide (Tag.cpp 0x006B3600): tag.hpp's guarded Tag.cpp members.
+#define RA2_TAG_UNIT_MEMBERS
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
 #ifndef VECTOR_IMPLEMENT_ALL
