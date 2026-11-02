@@ -1075,3 +1075,9 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Find_First_Obstacle 0x4BB890: 98.89. Copy_Nodes_To 0x613550: 94.34.
 - Get_Obstacle 0x4BBAF0: 91.96 -> 97.38 (Scout535 w/best_4bbaf0_97.38.cpp). Named temporaries give the right call order but swapped edi/ebx; without them the registers are right and the call order is wrong.
 - UnknownBeacon Set 0x42DD60: 88.46, but only with an (int x, int y, int z, int house) signature, which would need a rename spec. Preview_Tile 0x52E390: 81.25.
+
+## Scout534 / Scout537 (2026-11-02, closed; 3,318 B landed: 0x5EDB20 518 B, Multiplayer_Debug_Print 2,208 B, 0x6025A0+0x601780 452 B, LineTrail::AI 140 B)
+- Fill_Port 0x66D5A0: 87.92 (registers only). Planning_Same_Selection_Path 0x615DE0: 84.09 (resume from Scout534 w/pl/h10.cpp).
+- Select_Game 0x5135F0: 92.40 joined (93.08 standalone). Only the +0xAE6 back-edge restore order is left: edi=-1 and esi=1 come back in the reverse of the original's order. Landing it needs the cheat-code and campaign-choice declarations moved out of the 0x516F00 and 0x5147A0 sources.
+- GScreen Get_Input 0x4E09D0: 82.81. LineTrail::Draw 0x5395C0: 65.64 (variant c2 gets the right registers but scores 57.14).
+- OWNER DECISION (18:50Z): 0xA780C0 keeps two type views for now: Scout523's local BasicTimerClass in the IPX debug unit and queue.hpp's UnknownElapsedTimer. Neither shared type matches the debug print, so unify them later when a single type fits both.
