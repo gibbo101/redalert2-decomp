@@ -221,6 +221,8 @@ public:
     int Get_Buildings(char const *section, char const *entry, int defvalue) const;
     // 0x0046BE60 (TibSun ccini.cpp)
     bool Put_House_List(char const *section, char const *entry, TypeList<int> value);
+    // 0x00469E70 (TibSun Put_PipScaleType)
+    bool Put_PipScale(char const *section, char const *entry, int scale);
 #endif
     // 0x0046AFB0
     bool Put_Buildings(char const *section, char const *entry, int buildings);
