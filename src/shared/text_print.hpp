@@ -94,6 +94,8 @@ public:
     int Draw_Char(wchar_t character, int x, int y, int arg4);                       // 0x004318E0
     int Draw_String(wchar_t const *text, int x, int y, int arg4, int arg5);         // 0x00431CC0
     unsigned short Set_Color(unsigned short color);                                 // 0x00431430 (returns the old one)
+    // Stores value at +0x26 and returns the text colour (0x00431440; unreferenced).
+    unsigned short Unknown_00431440(unsigned short value);
     unsigned char Set_Clipping(unsigned char clip);                                 // 0x00431450 (returns the old one)
     void Set_Clip_Box(tagRECT const *box);                                          // 0x00431460
     bool Get_Text_Area(wchar_t const *text, int *width, int *height, int max_width);   // 0x004314B0 (false without font or text; name hypothesis)
