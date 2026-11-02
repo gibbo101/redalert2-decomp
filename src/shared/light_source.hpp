@@ -30,7 +30,7 @@ public:
 
     LightSourceClass(CoordStruct coord, int visibility, int intensity, int red, int green, int blue);   // 0x00537240
     LightSourceClass();                                         // 0x00537310
-    LightSourceClass(NoInitClass const &noinit) : AbstractClass(noinit) {}  // 0x005373C0 (out-of-line copy)
+    LightSourceClass(NoInitClass const &noinit);               // 0x005373C0 (Load 0x00537BA0 expands it)
     virtual ~LightSourceClass();                                // 0x005373F0
 
     // Deletes every light and every pending cell (0x00537480).
