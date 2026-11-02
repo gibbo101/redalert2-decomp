@@ -46,7 +46,7 @@ extern "C" GUID const unknown_clsid_unit_type_7a1b00;
 // The height factor slot 31 doubles (0x00AD0600).
 extern int unknown_ad0600;
 
-// Shape file retrieval by name: MixFileClass<CCFileClass>::Retrieve, shared/mix_file_class.hpp.
+// Shape file retrieval by name: MixFileClass::Retrieve, shared/mix_file_class.hpp.
 // The CRT's _makepath (0x007831F0).
 extern "C" void __cdecl _makepath(char *path, char const *drive, char const *dir, char const *fname, char const *ext);
 

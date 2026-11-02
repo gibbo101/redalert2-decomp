@@ -42,7 +42,7 @@ void InfantryClass::unknown_slot67(int point_arg,int window_arg)
         GUID class_id;
         persist.Checked()->GetClassID(&class_id);
         if (unknown_slot108()>0 && memcmp(&class_id,&CLSID_BallisticLocomotionClass,sizeof(GUID))==0) {
-            ShapeFileStruct const *shape=static_cast<ShapeFileStruct const *>(MixFileClass<CCFileClass>::Retrieve("POD.SHP"));
+            ShapeFileStruct const *shape=static_cast<ShapeFileStruct const *>(MixFileClass::Retrieve("POD.SHP"));
             // COM returns a separate two-int point layout. The existing interface
             // spells that result Point2D; this storage view preserves its ABI and
             // applies the evidenced converting constructor without retyping it.
@@ -77,7 +77,7 @@ void InfantryClass::unknown_slot67(int point_arg,int window_arg)
                     (!(current_cell->unknown_140&0x800) && (current_cell->Adjacent_Cell(6).unknown_140&0x100))) height-=unknown_bridge_height_a41120;
             }
             if (height>0 && (unknown_infantry_shadow_00a41134 ||
-                (unknown_infantry_shadow_00a41134=static_cast<ShapeFileStruct const *>(MixFileClass<CCFileClass>::Retrieve("INFSHDW.SHP"))))) {
+                (unknown_infantry_shadow_00a41134=static_cast<ShapeFileStruct const *>(MixFileClass::Retrieve("INFSHDW.SHP"))))) {
                 CC_Draw_Shape(unknown_surface_83995c,unknown_infantry_drawer_008323c4,unknown_infantry_shadow_00a41134,
                     1,point+Point2D(0,-*reinterpret_cast<signed char const *>(&unknown_59e))+Point2D(0,Unknown_006A2970(height)),window,0x2601,0,-5-Unknown_006A2970(Position_Coord_004f3f40().Z-height),0,1000,0,0,Point2D(0,0));
             }

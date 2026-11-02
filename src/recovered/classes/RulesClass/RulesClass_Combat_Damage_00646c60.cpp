@@ -117,7 +117,7 @@ bool RulesClass::Combat_Damage(CCINIClass &ini)
         IvanDamage = ivan_damage;
         int ivan_timed_delay = ini.Get_Int(RulesSection_CombatDamage, "IvanTimedDelay", IvanTimedDelay);
         IvanTimedDelay = ivan_timed_delay;
-        BombCursorShape = MixFileClass<CCFileClass>::Retrieve("BOMBCURS.SHP");
+        BombCursorShape = MixFileClass::Retrieve("BOMBCURS.SHP");
         int ivan_icon_flicker_rate = ini.Get_Int(RulesSection_CombatDamage, "IvanIconFlickerRate", IvanIconFlickerRate);
         IvanIconFlickerRate = ivan_icon_flicker_rate;
         int iron_curtain_duration = ini.Get_Int(RulesSection_CombatDamage, "IronCurtainDuration", IronCurtainDuration);

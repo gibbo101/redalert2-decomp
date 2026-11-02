@@ -30,7 +30,7 @@
 // @ref ?unknown_string_83c55c@@3PADA=0083c55c
 // @ref ?unknown_func_5d7630@ObjectTypeClass@@QAEXXZ=005d7630
 // @ref __makepath=007831f0
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref ??_C@_04BOIE@?4SHP?$AA@=007ced14
 // @ref ??_C@_0BB@LLC@IgnoresFirestorm?$AA@=007e8154
 // @ref ??_C@_0BD@COFP@HasRadialIndicator?$AA@=007e8174
@@ -112,7 +112,7 @@ bool ObjectTypeClass::Read_INI(CCINIClass &ini)
         if (unknown_1e3[0] != 0) {
             char filename[260];
             _makepath(filename, 0, 0, unknown_1e3, ".SHP");
-            unknown_ac = (int)MixFileClass<CCFileClass>::Retrieve(filename);
+            unknown_ac = (int)MixFileClass::Retrieve(filename);
         }
         return true;
     }

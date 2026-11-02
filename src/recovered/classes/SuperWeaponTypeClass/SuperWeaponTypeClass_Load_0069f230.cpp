@@ -14,9 +14,9 @@ HRESULT __stdcall SuperWeaponTypeClass::Load(IStream *stream)
     SwizzleManager.Swizzle((void **)&AuxBuilding);
     char fullname[512];
     _makepath(fullname, 0, 0, SidebarImage, ".SHP");
-    SidebarIcon = MixFileClass<CCFileClass>::Retrieve(fullname);
+    SidebarIcon = MixFileClass::Retrieve(fullname);
     if (SidebarIcon == 0) {
-        SidebarIcon = MixFileClass<CCFileClass>::Retrieve("XXICON.SHP");
+        SidebarIcon = MixFileClass::Retrieve("XXICON.SHP");
     }
     return S_OK;
 }

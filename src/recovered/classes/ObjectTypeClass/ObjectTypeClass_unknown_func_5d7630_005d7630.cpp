@@ -18,7 +18,7 @@
 // @ref _strncpy=007823d0
 // @ref __makepath=007831f0
 // @ref ??3@YAXPAX@Z=00781d3b
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref ??_C@_03HJGP@?$CFsA?$AA@=007e8110
 // @ref ??_C@_04BOIE@?4SHP?$AA@=007ced14
 
@@ -50,7 +50,7 @@ void ObjectTypeClass::unknown_func_5d7630()
     }
     unknown_a4 = 0;
     unknown_a8 = false;
-    unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+    unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
     if (unknown_a4 != 0) {
         ShapeFileStruct const *shape = (ShapeFileStruct const *)unknown_a4;
         int size;

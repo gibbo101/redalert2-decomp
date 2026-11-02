@@ -8,10 +8,10 @@
 #include "shared/win32_find.hpp"
 #include "shared/cd.hpp"
 #include "shared/mix_file_class.hpp"
-// @ref ??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z=005952f0
-// @ref ?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z=00595810
+// @ref ??0MixFileClass@@QAE@PBDPBVPKey@@@Z=005952f0
+// @ref ?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z=00595810
 // @ref ?FastKey@@3VPKey@@A=00839010
-// @ref ?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A=00837450
+// @ref ?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A=00837450
 // @ref ??_C@_0M@DOBJ@ECACHE?$CK?4MIX?$AA@=007dbecc
 // @ref ??_C@_0M@BCCM@ELOCAL?$CK?4MIX?$AA@=007dbec0
 
@@ -22,7 +22,7 @@ bool __cdecl Init_Expansion_Files()
     if (handle != INVALID_HANDLE_VALUE) {
         do {
             if ((data.dwFileAttributes & 0x116) == 0) {
-                MixFileClass<CCFileClass> *mix = new MixFileClass<CCFileClass>(data.cFileName, &FastKey);
+                MixFileClass *mix = new MixFileClass(data.cFileName, &FastKey);
                 if (mix != 0) {
                     unknown_expansion_mixes_837450.Add(mix);
                     mix->Cache();
@@ -35,7 +35,7 @@ bool __cdecl Init_Expansion_Files()
     if (handle != INVALID_HANDLE_VALUE) {
         do {
             if ((data.dwFileAttributes & 0x116) == 0) {
-                MixFileClass<CCFileClass> *mix = new MixFileClass<CCFileClass>(data.cFileName, &FastKey);
+                MixFileClass *mix = new MixFileClass(data.cFileName, &FastKey);
                 if (mix != 0) {
                     unknown_expansion_mixes_837450.Add(mix);
                 }

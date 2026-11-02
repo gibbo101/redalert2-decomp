@@ -4,8 +4,8 @@
     "id": "population-3418",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "84ad8b8083b138a5407ba8ec4022c3a303e63f7a6ab81799e2c78eed8dfba7ae",
-    "historical_acceptance_sha256": "6fa45932325d0690e3b4a5bf96d22ff45d205cc12ef4527ce2ab57e1867b764e"
+    "historical_population_sha256": "ac3404e1620b571c53526b077fcd59469900d23cd089c5c50e0e1fc0f7d03756",
+    "historical_acceptance_sha256": "58f00ddc18a0c8360276209578cf3ae36a0993444594321c24d32ec7ed67cc11"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2724,7 +2724,7 @@
     "?Next@?$VectorCursor@V?$rc_ptr@VGameOption@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VGameOption@WorldDominationTour@@@@@@@@UAEAAV1@XZ": 7504688,
     "?Prev@?$VectorCursor@V?$rc_ptr@VGameOption@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VGameOption@WorldDominationTour@@@@@@@@UAEAAV1@XZ": 7504704,
     "??0WideString@@QAE@XZ": 7797168,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "?Release@?$TClassFactory@VCStreamClass@@@@UAGKXZ": 6886784,
     "__imp__InterlockedDecrement@4": 7971264,
     "?Release@?$TClassFactory@VWaveClass@@@@UAGKXZ": 6887168,

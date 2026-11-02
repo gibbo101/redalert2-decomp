@@ -4,8 +4,8 @@
     "id": "population-3725",
     "inventory_sha256": "c811ce072dbc8245d90a94cd3c139caf6e55600fe11d4733e16c783711705580",
     "gaps_sha256": "4f8e19e434745bd1f553c71b6f45480381488eb22bd5f0f5bccfb504b55e1a15",
-    "historical_population_sha256": "959d665cea139f8b853d1b0948ddd04eba34e0dcfe0cef02a66f9574858c1070",
-    "historical_acceptance_sha256": "3ee5f0112ee1b95c89f49069d4817385898b4e8287a68c65a6b080cc4ce29ac1"
+    "historical_population_sha256": "e740dec930e5acf81eb24438c4535f492bdaf62a10f899a56f1389f931ab3351",
+    "historical_acceptance_sha256": "bdd201873fcdba846284bcf6aec9cc4ae5ab3e31d8de6613161a3a9edc2da85b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2077,15 +2077,15 @@
     "?Unknown_006F3A20@@YIXPAVSurface@@ABVRect@@_N@Z": 7289376,
     "?unknown_palette_838710@@3VPaletteClass@@A": 8619792,
     "?Unknown_00738190@@YIXPBDPAVSurface@@PAVPaletteClass@@@Z": 7569808,
-    "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z": 5853936,
-    "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z": 5855248,
+    "??0MixFileClass@@QAE@PBDPBVPKey@@@Z": 5853936,
+    "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z": 5855248,
     "?FastKey@@3VPKey@@A": 8622096,
-    "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8614992,
+    "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8614992,
     "??_C@_0M@DOBJ@ECACHE?$CK?4MIX?$AA@": 8240844,
     "??_C@_0M@BCCM@ELOCAL?$CK?4MIX?$AA@": 8240832,
-    "?unknown_ra2_mix_8374b8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615096,
-    "?unknown_cache_mix_8374e8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615144,
-    "?unknown_local_mix_8374ec@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615148,
+    "?unknown_ra2_mix_8374b8@@3PAVMixFileClass@@A": 8615096,
+    "?unknown_cache_mix_8374e8@@3PAVMixFileClass@@A": 8615144,
+    "?unknown_local_mix_8374ec@@3PAVMixFileClass@@A": 8615148,
     "?Unknown_00496460@@YAXPBDZZ": 4809824,
     "??_C@_0P@DEGN@EXPAND?$CF02d?4MIX?$AA@": 8240916,
     "??_C@_03HKGO@?5?$CFs?$AA@": 8240912,
@@ -2094,10 +2094,10 @@
     "??_C@_09KMFM@CACHE?4MIX?$AA@": 8240880,
     "??_C@_09JJNI@LOCAL?4MIX?$AA@": 8240868,
     "??_C@_0L@GBJB@?5LOCAL?4MIX?$AA@": 8240856,
-    "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615136,
-    "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615140,
-    "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615016,
-    "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615072,
+    "?ConquerMix@@3PAVMixFileClass@@A": 8615136,
+    "?CameoMix@@3PAVMixFileClass@@A": 8615140,
+    "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8615016,
+    "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8615072,
     "?Find_Next_File@CDFileClass@@SI_NPAD@Z": 4654080,
     "?Find_Close@CDFileClass@@SAXXZ": 4654192,
     "?unknown_sound_enabled_a40c18@@3DA": 10751000,
@@ -2259,13 +2259,13 @@
     "??_C@_0L@ENDN@ISOGEN?4MIX?$AA@": 8247488,
     "??_C@_0L@MBCJ@UNIT?$CFs?4PAL?$AA@": 8247468,
     "??_C@_0M@LBHJ@GENERIC?4MIX?$AA@": 8247500,
-    "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615152,
+    "?unknown_mix_8374f0@@3PAVMixFileClass@@A": 8615152,
     "??_C@_0BD@MGDA@?5?5?5?5?5Releasing?5?$CFs?6?$AA@": 8200712,
     "??_C@_0BD@PMEL@LOADED?5NEUTRAL?4MIX?$AA@": 8247540,
     "??_C@_0M@HJIF@NEUTRAL?4MIX?$AA@": 8247560,
-    "?unknown_mix_8374f8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615160,
-    "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615168,
-    "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615172,
+    "?unknown_mix_8374f8@@3PAVMixFileClass@@A": 8615160,
+    "?unknown_side_mix_837500@@3PAVMixFileClass@@A": 8615168,
+    "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A": 8615172,
     "?Unknown_007168C0@@YIXH@Z": 7432384,
     "?Unknown_006F44D0@@YAXXZ": 7292112,
     "?unknown_select_color@@YIXH@Z": 7292320,
@@ -5628,7 +5628,7 @@
     "?unknown_slot19@MultiplayerGameMode@@UAE_NHHPAVMPlayerScoreType@@@Z": 5907472,
     "?GetSizeMax@ObjectTypeClass@@UAGJPATULARGE_INTEGER@@@Z": 6127232,
     "?GetSizeMax@AbstractClass@@UAGJPATULARGE_INTEGER@@@Z": 4260224,
-    "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z": 5854912,
+    "?Retrieve@MixFileClass@@SIPBXPBD@Z": 5854912,
     "_wcscpy": 7878281,
     "?Set_Owner@PlanningMemberClass@@QAEXPAVTechnoClass@@@Z": 6359040,
     "?unknown_slot32@ParticleSystemTypeClass@@UBE_NABVCell@@PAVHouseClass@@@Z": 6426272,
@@ -7466,7 +7466,7 @@
     "?Release@SwizzleManagerClass@@UAGKXZ": 6946208,
     "?Next@?$VectorCursor@V?$rc_ptr@VGameOption@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VGameOption@WorldDominationTour@@@@@@@@UAEAAV1@XZ": 7504688,
     "?Prev@?$VectorCursor@V?$rc_ptr@VGameOption@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VGameOption@WorldDominationTour@@@@@@@@UAEAAV1@XZ": 7504704,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "?Save@AlphaShapeClass@@UAGJPAUIStream@@H@Z": 4321472,
     "?Save@NeuronClass@@UAGJPAUIStream@@H@Z": 4422512,
     "__imp__SendDlgItemMessageA@20": 7971972,
@@ -8547,8 +8547,8 @@
     "?unknown_slot78@ObjectClass@@UAE_NHH_N@Z": 6106272,
     "?unknown_slot77@ObjectClass@@UAE_NHHH_N@Z": 6106288,
     "?unknown_slot84@ObjectClass@@UAE_NABUCoordStruct@@H@Z": 6106320,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
     "?Is_Dead@LineTrail@@QBEHXZ": 5478112,
     "?Scale@Matrix3D@@QAEXMMM@Z": 5833328,
     "?Shear_X@Matrix3D@@QAEXMM@Z": 5833552,
@@ -11291,7 +11291,7 @@
     "??1BufferIOFileClass@@UAE@XZ": 4387664,
     "??_GBufferIOFileClass@@UAEPAXI@Z": 4390384,
     "??_GCDFileClass@@UAEPAXI@Z": 4200784,
-    "?Cache@?$MixFileClass@VCCFileClass@@@@SI_NPBDPBVBuffer@@@Z": 5855088,
+    "?Cache@MixFileClass@@SI_NPBDPBVBuffer@@@Z": 5855088,
     "?VQA_Movie_Is_Playing@@YI_NXZ": 5903904,
     "?Unknown_0071CBA0@VQAClass@@QAEHXZ": 7457696,
     "?Unknown_0071D320@VQAClass@@QAEHXZ": 7459616,
@@ -11539,12 +11539,12 @@
     "??_G?$DynamicVectorClass@PAVWaypointPathClass@@@@UAEPAXI@Z": 7494384,
     "??_7?$DynamicVectorClass@V?$rc_ptr@VGameOption@WorldDominationTour@@@@@@6B@": 8056972,
     "??0?$DynamicVectorClass@PAVParticleSystemTypeClass@@@@QAE@IPBQAVParticleSystemTypeClass@@@Z": 7207216,
-    "??_G?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z": 5856352,
-    "??_7?$MixFileClass@VCCFileClass@@@@6B@": 8021104,
-    "?Compare_Blocks@?$MixFileClass@VCCFileClass@@@@SAHPBX0@Z": 5853904,
-    "?MixList@?$MixFileClass@VCCFileClass@@@@2V?$List@PAV?$MixFileClass@VCCFileClass@@@@@@A": 10947776,
-    "??1?$MixFileClass@VCCFileClass@@@@UAE@XZ": 5854752,
-    "?Finder@?$MixFileClass@VCCFileClass@@@@SIPAV1@PBD@Z": 5854944,
+    "??_GMixFileClass@@UAEPAXI@Z": 5856352,
+    "??_7MixFileClass@@6B@": 8021104,
+    "?Compare_Blocks@MixFileClass@@SAHPBX0@Z": 5853904,
+    "?MixList@MixFileClass@@2V?$List@PAVMixFileClass@@@@A": 10947776,
+    "??1MixFileClass@@UAE@XZ": 5854752,
+    "?Finder@MixFileClass@@SIPAV1@PBD@Z": 5854944,
     "__imp__FindClose@4": 7971576,
     "??0PKey@@QAE@PBX0@Z": 6352192,
     "__imp__FindFirstFileA@8": 7971324,
@@ -11555,11 +11555,11 @@
     "?Force_Available@CD@@UAE_NH@Z": 4646128,
     "?Unknown_004985C0@CD@@QAE_NH@Z": 4818368,
     "?Swap_Disk@CD@@UAE_NH@Z": 4646736,
-    "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615124,
-    "?ThemeMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8590408,
-    "?MultiMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615064,
-    "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615156,
-    "?MainMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615132,
+    "?MoviesMix@@3PAVMixFileClass@@A": 8615124,
+    "?ThemeMix@@3PAVMixFileClass@@A": 8590408,
+    "?MultiMix@@3PAVMixFileClass@@A": 8615064,
+    "?MapsMix@@3PAVMixFileClass@@A": 8615156,
+    "?MainMix@@3PAVMixFileClass@@A": 8615132,
     "?VolumeCheck@@YA_NXZ": 7426192,
     "?Scan@ThemeClass@@QAEXXZ": 7240432,
     "??_7?$DynamicVectorClass@PAVMapStage@@@@6B@": 8023784,
@@ -11601,7 +11601,7 @@
     "??_7?$DynamicVectorClass@PAVPlanningBranchClass@@@@6B@": 8028828,
     "_bsearch": 7872549,
     "__imp__FindNextFileA@8": 7971328,
-    "?AudioMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8590404,
+    "?AudioMix@@3PAVMixFileClass@@A": 8590404,
     "??_7?$DynamicVectorClass@PAVToolTip@@@@6B@": 8051024,
     "??_7?$DynamicVectorClass@UtagCONNECTDATA@@@@6B@": 7988764,
     "??_7?$DynamicVectorClass@PAVCellClass@@@@6B@": 8019708,
@@ -11649,7 +11649,7 @@
     "__imp__FindFirstFileA": 7971324,
     "__imp__FindNextFileA": 7971328,
     "__imp__FindClose": 7971576,
-    "??_E?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z": 5856352,
+    "??_EMixFileClass@@UAEPAXI@Z": 5856352,
     "??_E?$DynamicVectorClass@PBVCommandClass@@@@UAEPAXI@Z": 4243568,
     "??_E?$DynamicVectorClass@PAVLightConvertClass@@@@UAEPAXI@Z": 4244560,
     "??_E?$DynamicVectorClass@UtagCONNECTDATA@@@@UAEPAXI@Z": 4796432,
@@ -12656,15 +12656,15 @@
     "__imp__RevokeActiveObject": 7971668,
     "__imp__LoadTypeLib": 7971672,
     "??_7?$VectorClass@PAVFileEntryClass@@@@6B@": 8018020,
-    "?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615104,
-    "?unknown_theater_mix_8374c4@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615108,
-    "?unknown_theater_mix_8374c8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615112,
-    "?unknown_theater_mix_8374cc@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615116,
-    "?unknown_theater_mix_8374d0@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615120,
-    "?unknown_mix_8374d8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615128,
-    "?unknown_mix_8374fc@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615164,
-    "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615040,
-    "?unknown_language_mix_8374bc@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615100,
+    "?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A": 8615104,
+    "?unknown_theater_mix_8374c4@@3PAVMixFileClass@@A": 8615108,
+    "?unknown_theater_mix_8374c8@@3PAVMixFileClass@@A": 8615112,
+    "?unknown_theater_mix_8374cc@@3PAVMixFileClass@@A": 8615116,
+    "?unknown_theater_mix_8374d0@@3PAVMixFileClass@@A": 8615120,
+    "?unknown_mix_8374d8@@3PAVMixFileClass@@A": 8615128,
+    "?unknown_mix_8374fc@@3PAVMixFileClass@@A": 8615164,
+    "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8615040,
+    "?unknown_language_mix_8374bc@@3PAVMixFileClass@@A": 8615100,
     "?Unknown_006E7A70@ThemeClass@@QAEXXZ": 7240304,
     "??_7?$DynamicVectorClass@PAVFileEntryClass@@@@6B@": 8017988,
     "?unknown_cancel_dialog_proc_600260@@YGHPAUHWND__@@IIJ@Z": 6292064,
@@ -15247,7 +15247,28 @@
     "__imp__ImageList_DragEnter": 7970868,
     "__imp__ImageList_BeginDrag": 7970872,
     "__imp__ImageList_Destroy": 7970876,
-    "__imp__ImageList_EndDrag": 7970880
+    "__imp__ImageList_EndDrag": 7970880,
+    "??_7?$DynamicVectorClass@PAVMixFileClass@@@@6B@": 7973428,
+    "?End@Benchmark@@QAEXXZ": 4387136,
+    "?Link@TagClass@@QAEXPAVTriggerClass@@@Z": 7028720,
+    "?Unlink@TagClass@@QAE_NPAVTriggerClass@@@Z": 7028736,
+    "?Read_Line@@YIHAAVFileClass@@PADHAA_N@Z": 6526400,
+    "?Stop@?$CDTimerClass@VFrameTimerClass@@@@QAEXXZ": 7025344,
+    "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABVRect@@HH@Z": 6923008,
+    "??1SideClass@@UAE@XZ": 6794960,
+    "?unknown_slot1@ReferenceCounted@@UAE_NH@Z": 6526784,
+    "??0RandomClass@@QAE@I@Z": 6522608,
+    "?Has_Edit_Focus@MessageListClass@@QAE_NXZ": 5985264,
+    "?Play_Sfx@MSEngine@@QAEXPBDH@Z": 5978000,
+    "?Play@MSSfx@@QAEXH@Z": 5990896,
+    "?Damage_Low_Bridge_Piece_EW_0055FCC0@MapClass@@QAEXABVCell@@@Z": 5635264,
+    "?Damage_Low_Bridge2_Piece_EW_005606D0@MapClass@@QAEXABVCell@@@Z": 5637840,
+    "?Damage_Low_Bridge_Piece_NS_005601F0@MapClass@@QAEXABVCell@@@Z": 5636592,
+    "?Damage_Low_Bridge2_Piece_NS_00560C10@MapClass@@QAEXABVCell@@@Z": 5639184,
+    "??_7?$VectorClass@PAVMixFileClass@@@@6B@": 7973460,
+    "?BombList@@3VBombListClass@@A": 8594144,
+    "?unknown_func_6b3fe0@TagClass@@QAEXH@Z": 7028704,
+    "??0UnknownPairSecond@@QAE@XZ": 5892960
   },
   "regions": [
     {
@@ -19325,7 +19346,7 @@
         {
           "offset": 86,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 522150
@@ -19333,7 +19354,7 @@
         {
           "offset": 97,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 8,
           "resolved": 8615000
@@ -19341,7 +19362,7 @@
         {
           "offset": 103,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -19349,7 +19370,7 @@
         {
           "offset": 113,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 13,
           "resolved": 8615005
@@ -19357,7 +19378,7 @@
         {
           "offset": 127,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 20,
           "resolved": 8615012
@@ -19365,7 +19386,7 @@
         {
           "offset": 137,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 0,
           "resolved": 8614992
@@ -19373,7 +19394,7 @@
         {
           "offset": 147,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 0,
           "resolved": 8614992
@@ -19381,7 +19402,7 @@
         {
           "offset": 160,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -19389,7 +19410,7 @@
         {
           "offset": 169,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -19397,7 +19418,7 @@
         {
           "offset": 175,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 4,
           "resolved": 8614996
@@ -19405,7 +19426,7 @@
         {
           "offset": 187,
           "kind": 20,
-          "symbol": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+          "symbol": "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z",
           "target": 5855248,
           "addend": 0,
           "resolved": 523361
@@ -19445,7 +19466,7 @@
         {
           "offset": 274,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 521962
@@ -19453,7 +19474,7 @@
         {
           "offset": 285,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 8,
           "resolved": 8615000
@@ -19461,7 +19482,7 @@
         {
           "offset": 291,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -19469,7 +19490,7 @@
         {
           "offset": 301,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 13,
           "resolved": 8615005
@@ -19477,7 +19498,7 @@
         {
           "offset": 315,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 20,
           "resolved": 8615012
@@ -19485,7 +19506,7 @@
         {
           "offset": 325,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 0,
           "resolved": 8614992
@@ -19493,7 +19514,7 @@
         {
           "offset": 335,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 0,
           "resolved": 8614992
@@ -19501,7 +19522,7 @@
         {
           "offset": 348,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -19509,7 +19530,7 @@
         {
           "offset": 357,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -19517,7 +19538,7 @@
         {
           "offset": 363,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 4,
           "resolved": 8614996
@@ -19531,7 +19552,7 @@
           "resolved": 7971576
         }
       ],
-      "source_sha256": "6e147c35ff7e5ce83cad2561de4dde8b697484613d4204fd5ad82eb8e09b1e33",
+      "source_sha256": "0a241db521c4e3a7979ff39a9babc423698b793387f3f083491972c269cca007",
       "source": "src/recovered/unowned/Init_Expansion_Files_00515af0.cpp",
       "population": "population-3725",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -19793,7 +19814,7 @@
         {
           "offset": 1,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
@@ -19817,7 +19838,7 @@
         {
           "offset": 25,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
@@ -19825,13 +19846,13 @@
         {
           "offset": 44,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
         }
       ],
-      "source_sha256": "c1694745d46dc6df4e61245eb11c15c10b34100b8458f173ab21190495b629f2",
+      "source_sha256": "f4c4941336cf170fe5df96d811fce5977b2e8cc6f8f037687482829763c669f1",
       "source": "src/recovered/unowned/Unknown_0051A270_0051a270.cpp",
       "population": "population-3725",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
@@ -19860,7 +19881,7 @@
         {
           "offset": 1,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
@@ -19884,7 +19905,7 @@
         {
           "offset": 25,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
@@ -19892,7 +19913,7 @@
         {
           "offset": 44,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
@@ -19924,7 +19945,7 @@
         {
           "offset": 79,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 503789
@@ -19932,7 +19953,7 @@
         {
           "offset": 86,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
@@ -19940,7 +19961,7 @@
         {
           "offset": 97,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
@@ -19962,7 +19983,7 @@
           "resolved": 4294426938
         }
       ],
-      "source_sha256": "1e27f621315e6a4d0afb362fec2c9779173029d70ea617281807dac3b56714f6",
+      "source_sha256": "6ed99afb68d0bdf8505ef40742811a91bfed5d007f8adacfaa8438d907c27ae1",
       "source": "src/recovered/unowned/Unknown_0051A2B0_0051a2b0.cpp",
       "population": "population-3725",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
@@ -22930,7 +22951,7 @@
         {
           "offset": 118,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 521702
@@ -22938,7 +22959,7 @@
         {
           "offset": 129,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 8,
           "resolved": 8615000
@@ -22946,7 +22967,7 @@
         {
           "offset": 135,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -22954,7 +22975,7 @@
         {
           "offset": 145,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 13,
           "resolved": 8615005
@@ -22962,7 +22983,7 @@
         {
           "offset": 159,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 20,
           "resolved": 8615012
@@ -22970,7 +22991,7 @@
         {
           "offset": 169,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 0,
           "resolved": 8614992
@@ -22978,7 +22999,7 @@
         {
           "offset": 179,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 0,
           "resolved": 8614992
@@ -22986,7 +23007,7 @@
         {
           "offset": 192,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -22994,7 +23015,7 @@
         {
           "offset": 201,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -23002,7 +23023,7 @@
         {
           "offset": 207,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 4,
           "resolved": 8614996
@@ -23050,7 +23071,7 @@
         {
           "offset": 269,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 521551
@@ -23058,7 +23079,7 @@
         {
           "offset": 276,
           "kind": 6,
-          "symbol": "?unknown_ra2_mix_8374b8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_ra2_mix_8374b8@@3PAVMixFileClass@@A",
           "target": 8615096,
           "addend": 0,
           "resolved": 8615096
@@ -23106,7 +23127,7 @@
         {
           "offset": 319,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 521501
@@ -23114,7 +23135,7 @@
         {
           "offset": 324,
           "kind": 6,
-          "symbol": "?unknown_cache_mix_8374e8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_cache_mix_8374e8@@3PAVMixFileClass@@A",
           "target": 8615144,
           "addend": 0,
           "resolved": 8615144
@@ -23122,7 +23143,7 @@
         {
           "offset": 332,
           "kind": 6,
-          "symbol": "?unknown_ra2_mix_8374b8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_ra2_mix_8374b8@@3PAVMixFileClass@@A",
           "target": 8615096,
           "addend": 0,
           "resolved": 8615096
@@ -23130,7 +23151,7 @@
         {
           "offset": 348,
           "kind": 6,
-          "symbol": "?unknown_cache_mix_8374e8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_cache_mix_8374e8@@3PAVMixFileClass@@A",
           "target": 8615144,
           "addend": 0,
           "resolved": 8615144
@@ -23146,7 +23167,7 @@
         {
           "offset": 374,
           "kind": 20,
-          "symbol": "?Cache@?$MixFileClass@VCCFileClass@@@@SI_NPBDPBVBuffer@@@Z",
+          "symbol": "?Cache@MixFileClass@@SI_NPBDPBVBuffer@@@Z",
           "target": 5855088,
           "addend": 0,
           "resolved": 522598
@@ -23194,7 +23215,7 @@
         {
           "offset": 419,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 521401
@@ -23202,7 +23223,7 @@
         {
           "offset": 426,
           "kind": 6,
-          "symbol": "?unknown_local_mix_8374ec@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_local_mix_8374ec@@3PAVMixFileClass@@A",
           "target": 8615148,
           "addend": 0,
           "resolved": 8615148
@@ -23234,13 +23255,13 @@
         {
           "offset": 462,
           "kind": 6,
-          "symbol": "?unknown_local_mix_8374ec@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_local_mix_8374ec@@3PAVMixFileClass@@A",
           "target": 8615148,
           "addend": 0,
           "resolved": 8615148
         }
       ],
-      "source_sha256": "126be1f4e1d8f8a071583797d2588f091d5b343be1aaa4ccdfe0977b238fa840",
+      "source_sha256": "4e2e5dee61b4d123d9c27ac9b17fcf198667724043fa3e6f81ac11069bab460b",
       "source": "src/recovered/unowned/Init_Bootstrap_Mixfiles_00515c90.cpp",
       "population": "population-3725",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
@@ -23728,7 +23749,7 @@
         {
           "offset": 88,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f8@@3PAVMixFileClass@@A",
           "target": 8615160,
           "addend": 0,
           "resolved": 8615160
@@ -23752,7 +23773,7 @@
         {
           "offset": 115,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f8@@3PAVMixFileClass@@A",
           "target": 8615160,
           "addend": 0,
           "resolved": 8615160
@@ -23760,7 +23781,7 @@
         {
           "offset": 134,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f8@@3PAVMixFileClass@@A",
           "target": 8615160,
           "addend": 0,
           "resolved": 8615160
@@ -23768,7 +23789,7 @@
         {
           "offset": 139,
           "kind": 6,
-          "symbol": "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_mix_837500@@3PAVMixFileClass@@A",
           "target": 8615168,
           "addend": 0,
           "resolved": 8615168
@@ -23792,7 +23813,7 @@
         {
           "offset": 163,
           "kind": 6,
-          "symbol": "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_mix_837500@@3PAVMixFileClass@@A",
           "target": 8615168,
           "addend": 0,
           "resolved": 8615168
@@ -23800,7 +23821,7 @@
         {
           "offset": 182,
           "kind": 6,
-          "symbol": "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_mix_837500@@3PAVMixFileClass@@A",
           "target": 8615168,
           "addend": 0,
           "resolved": 8615168
@@ -23808,7 +23829,7 @@
         {
           "offset": 187,
           "kind": 6,
-          "symbol": "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A",
           "target": 8615172,
           "addend": 0,
           "resolved": 8615172
@@ -23832,7 +23853,7 @@
         {
           "offset": 211,
           "kind": 6,
-          "symbol": "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A",
           "target": 8615172,
           "addend": 0,
           "resolved": 8615172
@@ -23840,7 +23861,7 @@
         {
           "offset": 230,
           "kind": 6,
-          "symbol": "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A",
           "target": 8615172,
           "addend": 0,
           "resolved": 8615172
@@ -23944,7 +23965,7 @@
         {
           "offset": 389,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 503351
@@ -23952,7 +23973,7 @@
         {
           "offset": 394,
           "kind": 6,
-          "symbol": "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_mix_837500@@3PAVMixFileClass@@A",
           "target": 8615168,
           "addend": 0,
           "resolved": 8615168
@@ -23968,7 +23989,7 @@
         {
           "offset": 407,
           "kind": 6,
-          "symbol": "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_mix_837500@@3PAVMixFileClass@@A",
           "target": 8615168,
           "addend": 0,
           "resolved": 8615168
@@ -23984,7 +24005,7 @@
         {
           "offset": 433,
           "kind": 6,
-          "symbol": "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_mix_837500@@3PAVMixFileClass@@A",
           "target": 8615168,
           "addend": 0,
           "resolved": 8615168
@@ -24008,7 +24029,7 @@
         {
           "offset": 471,
           "kind": 20,
-          "symbol": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+          "symbol": "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z",
           "target": 5855248,
           "addend": 0,
           "resolved": 504581
@@ -24104,7 +24125,7 @@
         {
           "offset": 621,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 503119
@@ -24112,7 +24133,7 @@
         {
           "offset": 626,
           "kind": 6,
-          "symbol": "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A",
           "target": 8615172,
           "addend": 0,
           "resolved": 8615172
@@ -24120,7 +24141,7 @@
         {
           "offset": 634,
           "kind": 6,
-          "symbol": "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A",
           "target": 8615172,
           "addend": 0,
           "resolved": 8615172
@@ -24286,7 +24307,7 @@
           "resolved": 4294003927
         }
       ],
-      "source_sha256": "51909d22b30a02ab15af9eafe6821b006af964b6b7413f7e0682840f0427bd36",
+      "source_sha256": "bfb3e8090b139f6f7952a76b6450a4d111cdda586bce08a5889a493947969e79",
       "source": "src/recovered/unowned/Unknown_0051a330_0051a330.cpp",
       "population": "population-3725",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -24660,7 +24681,7 @@
         {
           "offset": 107,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 521233
@@ -24668,7 +24689,7 @@
         {
           "offset": 112,
           "kind": 6,
-          "symbol": "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?ConquerMix@@3PAVMixFileClass@@A",
           "target": 8615136,
           "addend": 0,
           "resolved": 8615136
@@ -24676,7 +24697,7 @@
         {
           "offset": 120,
           "kind": 6,
-          "symbol": "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?ConquerMix@@3PAVMixFileClass@@A",
           "target": 8615136,
           "addend": 0,
           "resolved": 8615136
@@ -24700,7 +24721,7 @@
         {
           "offset": 135,
           "kind": 6,
-          "symbol": "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?ConquerMix@@3PAVMixFileClass@@A",
           "target": 8615136,
           "addend": 0,
           "resolved": 8615136
@@ -24764,7 +24785,7 @@
         {
           "offset": 244,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 521096
@@ -24772,7 +24793,7 @@
         {
           "offset": 249,
           "kind": 6,
-          "symbol": "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?CameoMix@@3PAVMixFileClass@@A",
           "target": 8615140,
           "addend": 0,
           "resolved": 8615140
@@ -24780,7 +24801,7 @@
         {
           "offset": 257,
           "kind": 6,
-          "symbol": "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?CameoMix@@3PAVMixFileClass@@A",
           "target": 8615140,
           "addend": 0,
           "resolved": 8615140
@@ -24804,7 +24825,7 @@
         {
           "offset": 272,
           "kind": 6,
-          "symbol": "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?CameoMix@@3PAVMixFileClass@@A",
           "target": 8615140,
           "addend": 0,
           "resolved": 8615140
@@ -24876,7 +24897,7 @@
         {
           "offset": 435,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 520905
@@ -24884,7 +24905,7 @@
         {
           "offset": 440,
           "kind": 6,
-          "symbol": "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MapsMix@@3PAVMixFileClass@@A",
           "target": 8615156,
           "addend": 0,
           "resolved": 8615156
@@ -24892,7 +24913,7 @@
         {
           "offset": 448,
           "kind": 6,
-          "symbol": "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MapsMix@@3PAVMixFileClass@@A",
           "target": 8615156,
           "addend": 0,
           "resolved": 8615156
@@ -24940,7 +24961,7 @@
         {
           "offset": 520,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 520820
@@ -24948,7 +24969,7 @@
         {
           "offset": 531,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 8,
           "resolved": 8615024
@@ -24956,7 +24977,7 @@
         {
           "offset": 537,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 16,
           "resolved": 8615032
@@ -24964,7 +24985,7 @@
         {
           "offset": 547,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 13,
           "resolved": 8615029
@@ -24972,7 +24993,7 @@
         {
           "offset": 561,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 20,
           "resolved": 8615036
@@ -24980,7 +25001,7 @@
         {
           "offset": 571,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 0,
           "resolved": 8615016
@@ -24988,7 +25009,7 @@
         {
           "offset": 580,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 0,
           "resolved": 8615016
@@ -24996,7 +25017,7 @@
         {
           "offset": 593,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 16,
           "resolved": 8615032
@@ -25004,7 +25025,7 @@
         {
           "offset": 602,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 16,
           "resolved": 8615032
@@ -25012,7 +25033,7 @@
         {
           "offset": 608,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 4,
           "resolved": 8615020
@@ -25052,7 +25073,7 @@
         {
           "offset": 652,
           "kind": 6,
-          "symbol": "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MapsMix@@3PAVMixFileClass@@A",
           "target": 8615156,
           "addend": 0,
           "resolved": 8615156
@@ -25116,7 +25137,7 @@
         {
           "offset": 788,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 520552
@@ -25124,7 +25145,7 @@
         {
           "offset": 793,
           "kind": 6,
-          "symbol": "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MapsMix@@3PAVMixFileClass@@A",
           "target": 8615156,
           "addend": 0,
           "resolved": 8615156
@@ -25132,7 +25153,7 @@
         {
           "offset": 801,
           "kind": 6,
-          "symbol": "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MapsMix@@3PAVMixFileClass@@A",
           "target": 8615156,
           "addend": 0,
           "resolved": 8615156
@@ -25212,7 +25233,7 @@
         {
           "offset": 916,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 520424
@@ -25220,7 +25241,7 @@
         {
           "offset": 921,
           "kind": 6,
-          "symbol": "?MultiMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MultiMix@@3PAVMixFileClass@@A",
           "target": 8615064,
           "addend": 0,
           "resolved": 8615064
@@ -25228,7 +25249,7 @@
         {
           "offset": 929,
           "kind": 6,
-          "symbol": "?MultiMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MultiMix@@3PAVMixFileClass@@A",
           "target": 8615064,
           "addend": 0,
           "resolved": 8615064
@@ -25252,7 +25273,7 @@
         {
           "offset": 944,
           "kind": 6,
-          "symbol": "?MultiMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MultiMix@@3PAVMixFileClass@@A",
           "target": 8615064,
           "addend": 0,
           "resolved": 8615064
@@ -25316,7 +25337,7 @@
         {
           "offset": 1053,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 520287
@@ -25324,7 +25345,7 @@
         {
           "offset": 1058,
           "kind": 6,
-          "symbol": "?ThemeMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?ThemeMix@@3PAVMixFileClass@@A",
           "target": 8590408,
           "addend": 0,
           "resolved": 8590408
@@ -25332,7 +25353,7 @@
         {
           "offset": 1066,
           "kind": 6,
-          "symbol": "?ThemeMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?ThemeMix@@3PAVMixFileClass@@A",
           "target": 8590408,
           "addend": 0,
           "resolved": 8590408
@@ -25500,7 +25521,7 @@
         {
           "offset": 1378,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 519962
@@ -25508,7 +25529,7 @@
         {
           "offset": 1383,
           "kind": 6,
-          "symbol": "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MoviesMix@@3PAVMixFileClass@@A",
           "target": 8615124,
           "addend": 0,
           "resolved": 8615124
@@ -25516,7 +25537,7 @@
         {
           "offset": 1391,
           "kind": 6,
-          "symbol": "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MoviesMix@@3PAVMixFileClass@@A",
           "target": 8615124,
           "addend": 0,
           "resolved": 8615124
@@ -25564,7 +25585,7 @@
         {
           "offset": 1463,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 519877
@@ -25572,7 +25593,7 @@
         {
           "offset": 1474,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 8,
           "resolved": 8615080
@@ -25580,7 +25601,7 @@
         {
           "offset": 1480,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 16,
           "resolved": 8615088
@@ -25588,7 +25609,7 @@
         {
           "offset": 1490,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 13,
           "resolved": 8615085
@@ -25596,7 +25617,7 @@
         {
           "offset": 1504,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 20,
           "resolved": 8615092
@@ -25604,7 +25625,7 @@
         {
           "offset": 1514,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 0,
           "resolved": 8615072
@@ -25612,7 +25633,7 @@
         {
           "offset": 1523,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 0,
           "resolved": 8615072
@@ -25620,7 +25641,7 @@
         {
           "offset": 1536,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 16,
           "resolved": 8615088
@@ -25628,7 +25649,7 @@
         {
           "offset": 1545,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 16,
           "resolved": 8615088
@@ -25636,7 +25657,7 @@
         {
           "offset": 1551,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 4,
           "resolved": 8615076
@@ -25716,7 +25737,7 @@
         {
           "offset": 1705,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 519635
@@ -25724,7 +25745,7 @@
         {
           "offset": 1710,
           "kind": 6,
-          "symbol": "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MoviesMix@@3PAVMixFileClass@@A",
           "target": 8615124,
           "addend": 0,
           "resolved": 8615124
@@ -25732,7 +25753,7 @@
         {
           "offset": 1718,
           "kind": 6,
-          "symbol": "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MoviesMix@@3PAVMixFileClass@@A",
           "target": 8615124,
           "addend": 0,
           "resolved": 8615124
@@ -25756,13 +25777,13 @@
         {
           "offset": 1744,
           "kind": 6,
-          "symbol": "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MoviesMix@@3PAVMixFileClass@@A",
           "target": 8615124,
           "addend": 0,
           "resolved": 8615124
         }
       ],
-      "source_sha256": "a7c93a63df08360ded52ee69c73f761ff32dd93c569241e662cf284269e5aa2d",
+      "source_sha256": "5da880dd6fc888b6245239b486d9fc0461ed2d11d78b2d912680d6fd491d0724",
       "source": "src/recovered/unowned/Init_Secondary_Mixfiles_00515e70.cpp",
       "population": "population-3725",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
@@ -28333,7 +28354,7 @@
         {
           "offset": 2,
           "kind": 6,
-          "symbol": "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?ConquerMix@@3PAVMixFileClass@@A",
           "target": 8615136,
           "addend": 0,
           "resolved": 8615136
@@ -28341,7 +28362,7 @@
         {
           "offset": 25,
           "kind": 20,
-          "symbol": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+          "symbol": "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z",
           "target": 5855248,
           "addend": 0,
           "resolved": 519923
@@ -28349,7 +28370,7 @@
         {
           "offset": 39,
           "kind": 6,
-          "symbol": "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?CameoMix@@3PAVMixFileClass@@A",
           "target": 8615140,
           "addend": 0,
           "resolved": 8615140
@@ -28357,7 +28378,7 @@
         {
           "offset": 53,
           "kind": 20,
-          "symbol": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+          "symbol": "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z",
           "target": 5855248,
           "addend": 0,
           "resolved": 519895
@@ -29261,7 +29282,7 @@
         {
           "offset": 387,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 540313
@@ -29325,7 +29346,7 @@
         {
           "offset": 499,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 540201
@@ -29469,7 +29490,7 @@
         {
           "offset": 665,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 540035
@@ -29749,7 +29770,7 @@
         {
           "offset": 1031,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 539669
@@ -29829,7 +29850,7 @@
         {
           "offset": 1214,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 539486
@@ -29909,7 +29930,7 @@
         {
           "offset": 1392,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 539308
@@ -29989,7 +30010,7 @@
         {
           "offset": 1570,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 539130
@@ -30069,7 +30090,7 @@
         {
           "offset": 1748,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 538952
@@ -32235,7 +32256,7 @@
           "resolved": 34121
         }
       ],
-      "source_sha256": "cb055540395f78faef2b5f5c3a8eb2ff363fbeb04a970e3505eabb0637485fbf",
+      "source_sha256": "d01d3f3cb44839d0a7899763e61af39ff6367c4ed4f874e79b9a0055be418479",
       "source": "src/recovered/unowned/Init_Game_005116a0.cpp",
       "population": "population-3725",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
@@ -34599,7 +34620,7 @@
         {
           "offset": 164,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c8@@3PAVMixFileClass@@A",
           "target": 8615112,
           "addend": 0,
           "resolved": 8615112
@@ -34631,7 +34652,7 @@
         {
           "offset": 205,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 504751
@@ -34639,7 +34660,7 @@
         {
           "offset": 218,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c8@@3PAVMixFileClass@@A",
           "target": 8615112,
           "addend": 0,
           "resolved": 8615112
@@ -34647,7 +34668,7 @@
         {
           "offset": 223,
           "kind": 20,
-          "symbol": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+          "symbol": "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z",
           "target": 5855248,
           "addend": 0,
           "resolved": 506045
@@ -34671,7 +34692,7 @@
         {
           "offset": 252,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A",
           "target": 8615104,
           "addend": 0,
           "resolved": 8615104
@@ -34695,7 +34716,7 @@
         {
           "offset": 295,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 504661
@@ -34703,7 +34724,7 @@
         {
           "offset": 300,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A",
           "target": 8615104,
           "addend": 0,
           "resolved": 8615104
@@ -34711,7 +34732,7 @@
         {
           "offset": 308,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A",
           "target": 8615104,
           "addend": 0,
           "resolved": 8615104
@@ -34719,7 +34740,7 @@
         {
           "offset": 314,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c4@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c4@@3PAVMixFileClass@@A",
           "target": 8615108,
           "addend": 0,
           "resolved": 8615108
@@ -34743,7 +34764,7 @@
         {
           "offset": 355,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 504601
@@ -34751,7 +34772,7 @@
         {
           "offset": 367,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c4@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c4@@3PAVMixFileClass@@A",
           "target": 8615108,
           "addend": 0,
           "resolved": 8615108
@@ -34759,7 +34780,7 @@
         {
           "offset": 372,
           "kind": 20,
-          "symbol": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+          "symbol": "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z",
           "target": 5855248,
           "addend": 0,
           "resolved": 505896
@@ -34767,7 +34788,7 @@
         {
           "offset": 378,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A",
           "target": 8615104,
           "addend": 0,
           "resolved": 8615104
@@ -34775,7 +34796,7 @@
         {
           "offset": 384,
           "kind": 20,
-          "symbol": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+          "symbol": "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z",
           "target": 5855248,
           "addend": 0,
           "resolved": 505884
@@ -34799,7 +34820,7 @@
         {
           "offset": 402,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374cc@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374cc@@3PAVMixFileClass@@A",
           "target": 8615116,
           "addend": 0,
           "resolved": 8615116
@@ -34823,7 +34844,7 @@
         {
           "offset": 443,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 504513
@@ -34831,7 +34852,7 @@
         {
           "offset": 448,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374cc@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374cc@@3PAVMixFileClass@@A",
           "target": 8615116,
           "addend": 0,
           "resolved": 8615116
@@ -34839,7 +34860,7 @@
         {
           "offset": 456,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374cc@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374cc@@3PAVMixFileClass@@A",
           "target": 8615116,
           "addend": 0,
           "resolved": 8615116
@@ -34847,7 +34868,7 @@
         {
           "offset": 462,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374d0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374d0@@3PAVMixFileClass@@A",
           "target": 8615120,
           "addend": 0,
           "resolved": 8615120
@@ -34879,7 +34900,7 @@
         {
           "offset": 503,
           "kind": 20,
-          "symbol": "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z",
+          "symbol": "??0MixFileClass@@QAE@PBDPBVPKey@@@Z",
           "target": 5853936,
           "addend": 0,
           "resolved": 504453
@@ -34887,7 +34908,7 @@
         {
           "offset": 508,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374d0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374d0@@3PAVMixFileClass@@A",
           "target": 8615120,
           "addend": 0,
           "resolved": 8615120
@@ -34895,7 +34916,7 @@
         {
           "offset": 516,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374d0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374d0@@3PAVMixFileClass@@A",
           "target": 8615120,
           "addend": 0,
           "resolved": 8615120
@@ -34927,7 +34948,7 @@
         {
           "offset": 553,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 505379
@@ -34983,7 +35004,7 @@
         {
           "offset": 740,
           "kind": 20,
-          "symbol": "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z",
+          "symbol": "?Retrieve@MixFileClass@@SIPBXPBD@Z",
           "target": 5854912,
           "addend": 0,
           "resolved": 505192
@@ -35149,7 +35170,7 @@
           "resolved": 1408772
         }
       ],
-      "source_sha256": "658b5dbea4da932a55d74bd3c1d2590679628ae7ce9f46c2682aa247c2ecdfc2",
+      "source_sha256": "6da2c847e3d2460b30dc4905b541c812aef5d95cb64f5f26dd994e0ffc753b19",
       "source": "src/recovered/unowned/Init_Theater_00519e70.cpp",
       "population": "population-3725",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",

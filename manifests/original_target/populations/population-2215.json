@@ -4,8 +4,8 @@
     "id": "population-2215",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "c7d6d603491228382d486d0ea331f13ebcc2c6368e353f57b9267dc65e309fe0",
-    "historical_acceptance_sha256": "18cc3c4c432102ed385573d48f09c46b1e73e5cd422edfcaf8275318ef9be045",
+    "historical_population_sha256": "2cea84896e5768368a353e587d55eaa3fb271ea436f6f58ed07405164f6c6952",
+    "historical_acceptance_sha256": "746e6e1bd8cace4588b5d13f31d31ed2aefba7a843c62da7b675f8079463903b",
     "separate_units": true
   },
   "references": {
@@ -1816,7 +1816,7 @@
     "?ID@?$VectorClass@UWaypointClass@@@@UAEHABUWaypointClass@@@Z": 7493184,
     "?ID@?$DynamicVectorClass@UWaypointClass@@@@UAEHABUWaypointClass@@@Z": 7493632,
     "?unknown_18@CampaignProperties@WorldDominationTour@@QBEHXZ": 7525008,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "__imp__InterlockedDecrement@4": 7971264,
     "__imp__InterlockedIncrement@4": 7971260,
     "__imp__SendDlgItemMessageA@20": 7971972,

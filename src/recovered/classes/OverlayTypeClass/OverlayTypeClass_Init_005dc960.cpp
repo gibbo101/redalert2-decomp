@@ -8,7 +8,7 @@
 #include "shared/mix_file_class.hpp"
 #include "shared/anim_type.hpp"
 // @ref ?Theaters@@3PAUTheaterTypeStruct@@A=0079ab68
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref ?Theater_Naming_Convention@ObjectTypeClass@@SIXPADH@Z=005d7bd0
 // @ref ?Generic_Naming_Convention@ObjectTypeClass@@SIXPAD@Z=005d7c20
 // @ref __makepath=007831f0
@@ -22,18 +22,18 @@ void __fastcall OverlayTypeClass::Init(int theater)
             char fullname[512];
             if (overlay->unknown_1fc) {
                 _makepath(fullname, 0, 0, overlay->unknown_1c8, Theaters[theater].Suffix);
-                overlay->unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                overlay->unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
                 if (overlay->unknown_a4 == 0) {
                     Generic_Naming_Convention(fullname);
-                    overlay->unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                    overlay->unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
                 }
             } else if (overlay->unknown_207) {
                 _makepath(fullname, 0, 0, overlay->unknown_1c8, ".SHP");
                 Theater_Naming_Convention(fullname, theater);
-                overlay->unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                overlay->unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
                 if (overlay->unknown_a4 == 0) {
                     Generic_Naming_Convention(fullname);
-                    overlay->unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                    overlay->unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
                 }
             }
         } else if ((overlay->unknown_1fc || overlay->unknown_207) && overlay->unknown_a4 != 0 && overlay->unknown_a8) {

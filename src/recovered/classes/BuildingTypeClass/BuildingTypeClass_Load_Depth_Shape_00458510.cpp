@@ -6,7 +6,7 @@
 #define SHAPE_FILE_EMPTY_RECT unknown_static_rect
 #include "shared/shape_file.hpp"
 // @ref ?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A=0085029c
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 extern "C" char const unknown_building_depth_filename_007cfdb0[];
 // @ref _unknown_building_depth_filename_007cfdb0=007cfdb0
 extern ShapeFileStruct *unknown_building_depth_shape_85029c;
@@ -18,7 +18,7 @@ void BuildingTypeClass::unknown_func_458510()
     }
     int size=CCFileClass(unknown_building_depth_filename_007cfdb0).Size();
     unknown_building_depth_shape_85029c=(ShapeFileStruct *)operator new(size);
-    memcpy(unknown_building_depth_shape_85029c,MixFileClass<CCFileClass>::Retrieve(unknown_building_depth_filename_007cfdb0),size);
+    memcpy(unknown_building_depth_shape_85029c,MixFileClass::Retrieve(unknown_building_depth_filename_007cfdb0),size);
     unsigned char *pixels=(unsigned char *)unknown_building_depth_shape_85029c->Get_Frame_Data(0);
     int width=unknown_building_depth_shape_85029c->Get_Width();
     int height=unknown_building_depth_shape_85029c->Get_Height();

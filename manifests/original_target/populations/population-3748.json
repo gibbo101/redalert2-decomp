@@ -4,8 +4,8 @@
     "id": "population-3748",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "ad7a11e34577ba599bef03ec63e1a8d8309fd3dfa2052d83ae61cbae415db8b2",
-    "historical_acceptance_sha256": "2d004a47ffc00e5d3b6d7f41cb1cfda5e58627f560f672d21f76234878485268"
+    "historical_population_sha256": "0f3d8eb4542c4150cd9c29f84b70b15ab951187848ab65c214856c4a65bab9c6",
+    "historical_acceptance_sha256": "d4abc48294bdd69c4b09b0bebf408433ca0473b20e3d56334bf161634e17aa22"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -131,7 +131,7 @@
     "__real@8@3ff99da7b584ce88b000": 8054264,
     "__real@4@40058000000000000000": 8023672,
     "__real@4@c004f000000000000000": 8029820,
-    "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8614992,
+    "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8614992,
     "__wcsdup": 7958579,
     "__real@8@4005c7e6666666666800": 8033952,
     "__real@8@c005c800000000000000": 8019912,
@@ -219,23 +219,23 @@
     "?MillisecondTimer@@3VMillisecondTimerClass@@A": 8614984,
     "??0MillisecondTimerClass@@QAE@XZ": 5846320,
     "??1MillisecondTimerClass@@QAE@XZ": 5846464,
-    "??_7?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@": 7973428,
-    "??_7?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@": 7973460,
-    "??_E?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAEPAXI@Z": 4249376,
-    "??8?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UBE_NABV0@@Z": 4248688,
-    "?Resize@?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAE_NHPBQAV?$MixFileClass@VCCFileClass@@@@@Z": 4249072,
-    "?Clear@?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAEXXZ": 4248592,
-    "?ID@?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAEHABQAV?$MixFileClass@VCCFileClass@@@@@Z": 4249248,
-    "?ID@?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAEHPBQAV?$MixFileClass@VCCFileClass@@@@@Z": 4248640,
-    "?Fetch@?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UBEPAV?$MixFileClass@VCCFileClass@@@@H@Z": 4248672,
-    "??_E?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAEPAXI@Z": 4249296,
-    "?Resize@?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAE_NHPBQAV?$MixFileClass@VCCFileClass@@@@@Z": 4248752,
-    "?Clear@?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAEXXZ": 4248928,
-    "?ID@?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAEHABQAV?$MixFileClass@VCCFileClass@@@@@Z": 4248976,
-    "?ID@?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@UAEHPBQAV?$MixFileClass@VCCFileClass@@@@@Z": 4249040,
-    "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615040,
-    "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615016,
-    "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615072,
+    "??_7?$DynamicVectorClass@PAVMixFileClass@@@@6B@": 7973428,
+    "??_7?$VectorClass@PAVMixFileClass@@@@6B@": 7973460,
+    "??_E?$DynamicVectorClass@PAVMixFileClass@@@@UAEPAXI@Z": 4249376,
+    "??8?$VectorClass@PAVMixFileClass@@@@UBE_NABV0@@Z": 4248688,
+    "?Resize@?$DynamicVectorClass@PAVMixFileClass@@@@UAE_NHPBQAVMixFileClass@@@Z": 4249072,
+    "?Clear@?$DynamicVectorClass@PAVMixFileClass@@@@UAEXXZ": 4248592,
+    "?ID@?$DynamicVectorClass@PAVMixFileClass@@@@UAEHABQAVMixFileClass@@@Z": 4249248,
+    "?ID@?$DynamicVectorClass@PAVMixFileClass@@@@UAEHPBQAVMixFileClass@@@Z": 4248640,
+    "?Fetch@?$VectorClass@PAVMixFileClass@@@@UBEPAVMixFileClass@@H@Z": 4248672,
+    "??_E?$VectorClass@PAVMixFileClass@@@@UAEPAXI@Z": 4249296,
+    "?Resize@?$VectorClass@PAVMixFileClass@@@@UAE_NHPBQAVMixFileClass@@@Z": 4248752,
+    "?Clear@?$VectorClass@PAVMixFileClass@@@@UAEXXZ": 4248928,
+    "?ID@?$VectorClass@PAVMixFileClass@@@@UAEHABQAVMixFileClass@@@Z": 4248976,
+    "?ID@?$VectorClass@PAVMixFileClass@@@@UAEHPBQAVMixFileClass@@@Z": 4249040,
+    "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8615040,
+    "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8615016,
+    "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8615072,
     "_$E6": 4247760,
     "_$E4": 4247792,
     "_$E11": 4248032,
@@ -913,13 +913,6 @@
     "?ID@?$VectorClass@PAVObjectClass@@@@UAEHABQAVObjectClass@@@Z": 4246752,
     "?ID@?$VectorClass@PAVObjectClass@@@@UAEHPBQAVObjectClass@@@Z": 4246816,
     "?ID@?$DynamicVectorClass@PAVObjectClass@@@@UAEHABQAVObjectClass@@@Z": 4247024,
-    "?Clear@?$DynamicVectorClass@PAVMixFileClass@@@@UAEXXZ": 4248592,
-    "?ID@?$DynamicVectorClass@PAVMixFileClass@@@@UAEHPBQAVMixFileClass@@@Z": 4248640,
-    "?Fetch@?$VectorClass@PAVMixFileClass@@@@UBEPAVMixFileClass@@H@Z": 4248672,
-    "?Clear@?$VectorClass@PAVMixFileClass@@@@UAEXXZ": 4248928,
-    "?ID@?$VectorClass@PAVMixFileClass@@@@UAEHABQAVMixFileClass@@@Z": 4248976,
-    "?ID@?$VectorClass@PAVMixFileClass@@@@UAEHPBQAVMixFileClass@@@Z": 4249040,
-    "?ID@?$DynamicVectorClass@PAVMixFileClass@@@@UAEHABQAVMixFileClass@@@Z": 4249248,
     "?Clear@?$DynamicVectorClass@PAVScriptClass@@@@UAEXXZ": 4253200,
     "?ID@?$DynamicVectorClass@PAVScriptClass@@@@UAEHPBQAVScriptClass@@@Z": 4253248,
     "?Fetch@?$VectorClass@PAVScriptClass@@@@UBEPAVScriptClass@@H@Z": 4253280,
@@ -1938,8 +1931,6 @@
     "?Resize@?$DynamicVectorClass@PAVIsometricTileClass@@@@UAE_NHPBQAVIsometricTileClass@@@Z": 4245744,
     "?Resize@?$VectorClass@PAVObjectClass@@@@UAE_NHPBQAVObjectClass@@@Z": 4246528,
     "?Resize@?$DynamicVectorClass@PAVObjectClass@@@@UAE_NHPBQAVObjectClass@@@Z": 4246848,
-    "?Resize@?$VectorClass@PAVMixFileClass@@@@UAE_NHPBQAVMixFileClass@@@Z": 4248752,
-    "?Resize@?$DynamicVectorClass@PAVMixFileClass@@@@UAE_NHPBQAVMixFileClass@@@Z": 4249072,
     "?Resize@?$VectorClass@PAVScriptClass@@@@UAE_NHPBQAVScriptClass@@@Z": 4253360,
     "?Resize@?$DynamicVectorClass@PAVScriptClass@@@@UAE_NHPBQAVScriptClass@@@Z": 4253680,
     "?Resize@?$VectorClass@PAVVoxelAnimClass@@@@UAE_NHPBQAVVoxelAnimClass@@@Z": 4255072,
@@ -3023,7 +3014,6 @@
     "??_7?$DynamicVectorClass@PAVIsometricTileClass@@@@6B@": 7973036,
     "??8?$VectorClass@PAVIsometricTileClass@@@@UBE_NABV0@@Z": 4245360,
     "??8?$VectorClass@PAVObjectClass@@@@UBE_NABV0@@Z": 4246464,
-    "??8?$VectorClass@PAVMixFileClass@@@@UBE_NABV0@@Z": 4248688,
     "?FastKey@@3VPKey@@A": 8622096,
     "??_7?$DynamicVectorClass@PAVScriptClass@@@@6B@": 7973652,
     "??8?$VectorClass@PAVScriptClass@@@@UBE_NABV0@@Z": 4253296,
@@ -3487,9 +3477,9 @@
     "??8?$VectorClass@_N@@UBE_NABV0@@Z": 5209664,
     "??8?$VectorClass@N@@UBE_NABV0@@Z": 5826912,
     "??8?$VectorClass@E@@UBE_NABV0@@Z": 7402512,
-    "??_G?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z": 5856352,
-    "??_7?$MixFileClass@VCCFileClass@@@@6B@": 8021104,
-    "??1?$MixFileClass@VCCFileClass@@@@UAE@XZ": 5854752,
+    "??_GMixFileClass@@UAEPAXI@Z": 5856352,
+    "??_7MixFileClass@@6B@": 8021104,
+    "??1MixFileClass@@UAE@XZ": 5854752,
     "??8BaseNodeClass@@QAE_NABV0@@Z": 4374240,
     "??OBaseNodeClass@@QAE_NABV0@@Z": 4374368,
     "_swprintf": 7878500,
@@ -3610,13 +3600,13 @@
     "?Unknown_004985C0@CD@@QAE_NH@Z": 4818368,
     "?Swap_Disk@CD@@UAE_NH@Z": 4646736,
     "?Stop@ThemeClass@@QAEX_N@Z": 7242144,
-    "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615124,
-    "?ThemeMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8590408,
-    "?MultiMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615064,
-    "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615156,
-    "?MainMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615132,
+    "?MoviesMix@@3PAVMixFileClass@@A": 8615124,
+    "?ThemeMix@@3PAVMixFileClass@@A": 8590408,
+    "?MultiMix@@3PAVMixFileClass@@A": 8615064,
+    "?MapsMix@@3PAVMixFileClass@@A": 8615156,
+    "?MainMix@@3PAVMixFileClass@@A": 8615132,
     "?VolumeCheck@@YA_NXZ": 7426192,
-    "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z": 5853936,
+    "??0MixFileClass@@QAE@PBDPBVPKey@@@Z": 5853936,
     "?Scan@ThemeClass@@QAEXXZ": 7240432,
     "?Error@CCFileClass@@UAEXHHPBD@Z": 4624384,
     "??_7CD@@6B@": 7985256,
@@ -3987,7 +3977,7 @@
     "??_7?$VectorClass@PAVPlanningBranchClass@@@@6B@": 8028924,
     "??_7?$VectorClass@PAVPlanningMemberClass@@@@6B@": 8028892,
     "?Load@AnimClass@@UAGJPAUIStream@@@Z": 4336688,
-    "?AudioMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8590404,
+    "?AudioMix@@3PAVMixFileClass@@A": 8590404,
     "??_7?$DynamicVectorClass@PAVToolTip@@@@6B@": 8051024,
     "??_7?$VectorClass@PAVToolTip@@@@6B@": 8051056,
     "??_E?$DynamicVectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UAEPAXI@Z": 6508432,
@@ -4309,20 +4299,20 @@
     "??_G?$DynamicVectorClass@V?$rc_ptr@VTerritory@WorldDominationTour@@@@@@UAEPAXI@Z": 7518640,
     "??_7?$VectorClass@PBVTeamTypeClass@@@@6B@": 8007396,
     "?Init_Expansion_Files@@YA_NXZ": 5331696,
-    "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615152,
+    "?unknown_mix_8374f0@@3PAVMixFileClass@@A": 8615152,
     "?Unknown_0051A2B0@@YA_NXZ": 5350064,
     "?Unknown_00496460@@YAXPBDZZ": 4809824,
     "?One_Time@UnknownSessionState@@QAEXXZ": 6745520,
     "?Init_Bootstrap_Mixfiles@@YI_NXZ": 5332112,
-    "?unknown_ra2_mix_8374b8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615096,
-    "?unknown_cache_mix_8374e8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615144,
-    "?unknown_local_mix_8374ec@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615148,
-    "?unknown_mix_8374f8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615160,
-    "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615168,
-    "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615172,
+    "?unknown_ra2_mix_8374b8@@3PAVMixFileClass@@A": 8615096,
+    "?unknown_cache_mix_8374e8@@3PAVMixFileClass@@A": 8615144,
+    "?unknown_local_mix_8374ec@@3PAVMixFileClass@@A": 8615148,
+    "?unknown_mix_8374f8@@3PAVMixFileClass@@A": 8615160,
+    "?unknown_side_mix_837500@@3PAVMixFileClass@@A": 8615168,
+    "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A": 8615172,
     "?Init_Secondary_Mixfiles@@YI_NXZ": 5332592,
-    "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615136,
-    "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615140,
+    "?ConquerMix@@3PAVMixFileClass@@A": 8615136,
+    "?CameoMix@@3PAVMixFileClass@@A": 8615140,
     "?Delete@?$DynamicVectorClass@PAUNodeNameType@@@@QAE_NH@Z": 6039920,
     "??_7?$VectorClass@VWstring@@@@6B@": 8033860,
     "??_7?$VectorClass@W4DiskID@@@@6B@": 8033828,
@@ -4342,14 +4332,14 @@
     "_?as@?1??Faction_Code@@YIABVWstring@@H@Z@4V2@A": 11709748,
     "_?unknown@?3??Faction_Code@@YIABVWstring@@H@Z@4V2@A": 11709652,
     "?Prog_End@@YAXXZ": 6883808,
-    "?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615104,
-    "?unknown_theater_mix_8374c4@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615108,
-    "?unknown_theater_mix_8374c8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615112,
-    "?unknown_theater_mix_8374cc@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615116,
-    "?unknown_theater_mix_8374d0@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615120,
-    "?unknown_mix_8374d8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615128,
-    "?unknown_mix_8374fc@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615164,
-    "?unknown_language_mix_8374bc@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615100,
+    "?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A": 8615104,
+    "?unknown_theater_mix_8374c4@@3PAVMixFileClass@@A": 8615108,
+    "?unknown_theater_mix_8374c8@@3PAVMixFileClass@@A": 8615112,
+    "?unknown_theater_mix_8374cc@@3PAVMixFileClass@@A": 8615116,
+    "?unknown_theater_mix_8374d0@@3PAVMixFileClass@@A": 8615120,
+    "?unknown_mix_8374d8@@3PAVMixFileClass@@A": 8615128,
+    "?unknown_mix_8374fc@@3PAVMixFileClass@@A": 8615164,
+    "?unknown_language_mix_8374bc@@3PAVMixFileClass@@A": 8615100,
     "__imp__CoRevokeClassObject@4": 7972288,
     "__imp__RevokeActiveObject@8": 7971668,
     "?Unknown_006E7A70@ThemeClass@@QAEXXZ": 7240304,
@@ -4491,7 +4481,7 @@
     "__imp__OleRun": 7972340,
     "__imp__RevokeActiveObject": 7971668,
     "__imp__LoadTypeLib": 7971672,
-    "??_E?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z": 5856352,
+    "??_EMixFileClass@@UAEPAXI@Z": 5856352,
     "??_7InfantryTypeClass@@6B@": 8010360,
     "??_E?$VectorClass@PBVCommandClass@@@@UAEPAXI@Z": 4243488,
     "??_E?$DynamicVectorClass@PBVCommandClass@@@@UAEPAXI@Z": 4243568,
@@ -4549,7 +4539,10 @@
     "??_E?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEPAXI@Z": 5040944,
     "??_E?$VectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524048,
     "??_E?$DynamicVectorClass@V?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@@UAEPAXI@Z": 7080144,
-    "??_E?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128
+    "??_E?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128,
+    "??BMillisecondTimerClass@@QBENXZ": 5846496,
+    "?Stop@?$CDTimerClass@VFrameTimerClass@@@@QAEXXZ": 7025344,
+    "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABVRect@@HH@Z": 6923008
   },
   "regions": [
     {
@@ -4580,7 +4573,7 @@
         {
           "offset": 8,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 4,
           "resolved": 8614996
@@ -4588,7 +4581,7 @@
         {
           "offset": 13,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 8,
           "resolved": 8615000
@@ -4596,7 +4589,7 @@
         {
           "offset": 19,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 12,
           "resolved": 8615004
@@ -4604,7 +4597,7 @@
         {
           "offset": 25,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 13,
           "resolved": 8615005
@@ -4612,7 +4605,7 @@
         {
           "offset": 31,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 0,
           "resolved": 8614992
@@ -4620,7 +4613,7 @@
         {
           "offset": 35,
           "kind": 6,
-          "symbol": "??_7?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@",
+          "symbol": "??_7?$DynamicVectorClass@PAVMixFileClass@@@@6B@",
           "target": 7973428,
           "addend": 0,
           "resolved": 7973428
@@ -4628,7 +4621,7 @@
         {
           "offset": 41,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 20,
           "resolved": 8615012
@@ -4636,7 +4629,7 @@
         {
           "offset": 50,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -4687,7 +4680,7 @@
         {
           "offset": 8,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 4,
           "resolved": 8615044
@@ -4695,7 +4688,7 @@
         {
           "offset": 13,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 8,
           "resolved": 8615048
@@ -4703,7 +4696,7 @@
         {
           "offset": 19,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 12,
           "resolved": 8615052
@@ -4711,7 +4704,7 @@
         {
           "offset": 25,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 13,
           "resolved": 8615053
@@ -4719,7 +4712,7 @@
         {
           "offset": 31,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 0,
           "resolved": 8615040
@@ -4727,7 +4720,7 @@
         {
           "offset": 35,
           "kind": 6,
-          "symbol": "??_7?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@",
+          "symbol": "??_7?$DynamicVectorClass@PAVMixFileClass@@@@6B@",
           "target": 7973428,
           "addend": 0,
           "resolved": 7973428
@@ -4735,7 +4728,7 @@
         {
           "offset": 41,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 20,
           "resolved": 8615060
@@ -4743,7 +4736,7 @@
         {
           "offset": 50,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 16,
           "resolved": 8615056
@@ -4794,7 +4787,7 @@
         {
           "offset": 8,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 4,
           "resolved": 8615020
@@ -4802,7 +4795,7 @@
         {
           "offset": 13,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 8,
           "resolved": 8615024
@@ -4810,7 +4803,7 @@
         {
           "offset": 19,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 12,
           "resolved": 8615028
@@ -4818,7 +4811,7 @@
         {
           "offset": 25,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 13,
           "resolved": 8615029
@@ -4826,7 +4819,7 @@
         {
           "offset": 31,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 0,
           "resolved": 8615016
@@ -4834,7 +4827,7 @@
         {
           "offset": 35,
           "kind": 6,
-          "symbol": "??_7?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@",
+          "symbol": "??_7?$DynamicVectorClass@PAVMixFileClass@@@@6B@",
           "target": 7973428,
           "addend": 0,
           "resolved": 7973428
@@ -4842,7 +4835,7 @@
         {
           "offset": 41,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 20,
           "resolved": 8615036
@@ -4850,7 +4843,7 @@
         {
           "offset": 50,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 16,
           "resolved": 8615032
@@ -4901,7 +4894,7 @@
         {
           "offset": 8,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 4,
           "resolved": 8615076
@@ -4909,7 +4902,7 @@
         {
           "offset": 13,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 8,
           "resolved": 8615080
@@ -4917,7 +4910,7 @@
         {
           "offset": 19,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 12,
           "resolved": 8615084
@@ -4925,7 +4918,7 @@
         {
           "offset": 25,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 13,
           "resolved": 8615085
@@ -4933,7 +4926,7 @@
         {
           "offset": 31,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 0,
           "resolved": 8615072
@@ -4941,7 +4934,7 @@
         {
           "offset": 35,
           "kind": 6,
-          "symbol": "??_7?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@",
+          "symbol": "??_7?$DynamicVectorClass@PAVMixFileClass@@@@6B@",
           "target": 7973428,
           "addend": 0,
           "resolved": 7973428
@@ -4949,7 +4942,7 @@
         {
           "offset": 41,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 20,
           "resolved": 8615092
@@ -4957,7 +4950,7 @@
         {
           "offset": 50,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 16,
           "resolved": 8615088
@@ -5022,7 +5015,7 @@
           "resolved": 3627174
         }
       ],
-      "source_sha256": "7b53fac73b72726cfe49c01db407fc93fd21f9bc460c947dc5de1845bd8c1776",
+      "source_sha256": "d2d05569ef9b427fd2acf11a4ae39de2a153a549c9e761852ea82fd1186fc32e",
       "source": "src/recovered/globals/unknown_com_pointer_8324b0_init_0040d0d0.cpp",
       "population": "population-3748",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -5188,7 +5181,7 @@
         {
           "offset": 1,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 4,
           "resolved": 8614996
@@ -5196,7 +5189,7 @@
         {
           "offset": 10,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 0,
           "resolved": 8614992
@@ -5204,7 +5197,7 @@
         {
           "offset": 14,
           "kind": 6,
-          "symbol": "??_7?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@",
+          "symbol": "??_7?$VectorClass@PAVMixFileClass@@@@6B@",
           "target": 7973460,
           "addend": 0,
           "resolved": 7973460
@@ -5212,7 +5205,7 @@
         {
           "offset": 24,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 13,
           "resolved": 8615005
@@ -5228,7 +5221,7 @@
         {
           "offset": 41,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 4,
           "resolved": 8614996
@@ -5236,7 +5229,7 @@
         {
           "offset": 47,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 13,
           "resolved": 8615005
@@ -5244,7 +5237,7 @@
         {
           "offset": 53,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 8,
           "resolved": 8615000
@@ -5279,7 +5272,7 @@
         {
           "offset": 1,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 4,
           "resolved": 8615044
@@ -5287,7 +5280,7 @@
         {
           "offset": 10,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 0,
           "resolved": 8615040
@@ -5295,7 +5288,7 @@
         {
           "offset": 14,
           "kind": 6,
-          "symbol": "??_7?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@",
+          "symbol": "??_7?$VectorClass@PAVMixFileClass@@@@6B@",
           "target": 7973460,
           "addend": 0,
           "resolved": 7973460
@@ -5303,7 +5296,7 @@
         {
           "offset": 24,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 13,
           "resolved": 8615053
@@ -5319,7 +5312,7 @@
         {
           "offset": 41,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 4,
           "resolved": 8615044
@@ -5327,7 +5320,7 @@
         {
           "offset": 47,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 13,
           "resolved": 8615053
@@ -5335,7 +5328,7 @@
         {
           "offset": 53,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 8,
           "resolved": 8615048
@@ -5370,7 +5363,7 @@
         {
           "offset": 1,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 4,
           "resolved": 8615020
@@ -5378,7 +5371,7 @@
         {
           "offset": 10,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 0,
           "resolved": 8615016
@@ -5386,7 +5379,7 @@
         {
           "offset": 14,
           "kind": 6,
-          "symbol": "??_7?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@",
+          "symbol": "??_7?$VectorClass@PAVMixFileClass@@@@6B@",
           "target": 7973460,
           "addend": 0,
           "resolved": 7973460
@@ -5394,7 +5387,7 @@
         {
           "offset": 24,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 13,
           "resolved": 8615029
@@ -5410,7 +5403,7 @@
         {
           "offset": 41,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 4,
           "resolved": 8615020
@@ -5418,7 +5411,7 @@
         {
           "offset": 47,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 13,
           "resolved": 8615029
@@ -5426,7 +5419,7 @@
         {
           "offset": 53,
           "kind": 6,
-          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615016,
           "addend": 8,
           "resolved": 8615024
@@ -5461,7 +5454,7 @@
         {
           "offset": 1,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 4,
           "resolved": 8615076
@@ -5469,7 +5462,7 @@
         {
           "offset": 10,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 0,
           "resolved": 8615072
@@ -5477,7 +5470,7 @@
         {
           "offset": 14,
           "kind": 6,
-          "symbol": "??_7?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@",
+          "symbol": "??_7?$VectorClass@PAVMixFileClass@@@@6B@",
           "target": 7973460,
           "addend": 0,
           "resolved": 7973460
@@ -5485,7 +5478,7 @@
         {
           "offset": 24,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 13,
           "resolved": 8615085
@@ -5501,7 +5494,7 @@
         {
           "offset": 41,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 4,
           "resolved": 8615076
@@ -5509,7 +5502,7 @@
         {
           "offset": 47,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 13,
           "resolved": 8615085
@@ -5517,7 +5510,7 @@
         {
           "offset": 53,
           "kind": 6,
-          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615072,
           "addend": 8,
           "resolved": 8615080

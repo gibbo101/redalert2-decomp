@@ -31,7 +31,7 @@ HRESULT __stdcall AnimTypeClass::Load(IStream *stream)
         if (unknown_1fc) {
             char fullname[512];
             _makepath(fullname, 0, 0, ID, Theaters[unknown_id_source_a3d290->Theater].Suffix);
-            unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
             return S_OK;
         }
         if (unknown_207) {

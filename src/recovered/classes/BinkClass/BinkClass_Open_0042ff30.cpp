@@ -33,8 +33,8 @@ bool BinkClass::Open(char const *filename)
         Handle = BinkOpen(filename, 0);
     } else {
         long offset = 0;
-        MixFileClass<CCFileClass> *mixfile = 0;
-        if (MixFileClass<CCFileClass>::Offset(filename, 0, &mixfile, &offset, 0) == true) {
+        MixFileClass *mixfile = 0;
+        if (MixFileClass::Offset(filename, 0, &mixfile, &offset, 0) == true) {
             File = CreateFileA(mixfile->Filename, 0x80000000, 3, 0, 3, 0x8000080, 0);
             if (File != INVALID_HANDLE_VALUE) {
                 SetFilePointer(File, offset, 0, 0);

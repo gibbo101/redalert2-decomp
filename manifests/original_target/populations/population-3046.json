@@ -4,8 +4,8 @@
     "id": "population-3046",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "24abb8109ad269dc0a8706b0d73233748df11863a208407eb50a32b8007405ee",
-    "historical_acceptance_sha256": "976b731f23dafa23f469c2ec224712263ddfc2cd9ab52253f7f7c50294b06c9d"
+    "historical_population_sha256": "7c31c3ecbd0888c003e92257a208b0c8e97d5ee7a5dcd0a86bbf106016a4289a",
+    "historical_acceptance_sha256": "65608a95407e10a6d9cb868b5f1e9db74cd7f3613991647d6f15050cb4d8c1d8"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2255,7 +2255,7 @@
     "??_E?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5686160,
     "??_E?$DynamicVectorClass@V?$rc_ptr@VTerritory@WorldDominationTour@@@@@@UAEPAXI@Z": 7518640,
     "??_E?$DynamicVectorClass@VWstring@@@@UAEPAXI@Z": 6768720,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "__imp__InterlockedDecrement@4": 7971264,
     "__imp__InterlockedIncrement@4": 7971260,
     "__imp__SendDlgItemMessageA@20": 7971972,

@@ -4,8 +4,8 @@
     "id": "population-2573",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "3e5ae9b2d2f7de0cd3b09e8b14fca456531ff03209720d2be23012086dfd8f67",
-    "historical_acceptance_sha256": "c4cb447d0824cfcd89c7d4a49c7f881c900e93528ebd105f1a53a820b3bc9352"
+    "historical_population_sha256": "4153df0cecef7bd7023e4e45e28ae2a2e386820bcfeead40841194540dec549c",
+    "historical_acceptance_sha256": "fa968bb95d067a9c1874ae3996ad0f099a0b26b9e066cb658ae5ab034c4bbd22"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2840,8 +2840,8 @@
     "?Force_Immediate_Destination@MechLocomotionClass@@UAGXUCoordStruct@@@Z": 5839232,
     "?Force_New_Slope@DriveLocomotionClass@@UAGXH@Z": 4848688,
     "?Force_New_Slope@ShipLocomotionClass@@UAGXH@Z": 6773744,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
     "?Free@BufferIOFileClass@@QAEXXZ": 4388192,
     "?From_Name@AircraftTypeClass@@SIHPBD@Z": 4308576,
     "?From_Name@AnimTypeClass@@SIHPBD@Z": 4347456,
@@ -7649,7 +7649,7 @@
     "?FUN_006f8a00@seed_006f8a00@@YIXH@Z": 7309824,
     "?FUN_006f8a20@seed_006f8a20@@YIXH@Z": 7309856,
     "?ID@?$DynamicVectorClass@UWaypointClass@@@@UAEHABUWaypointClass@@@Z": 7493632,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "?Save@AlphaShapeClass@@UAGJPAUIStream@@H@Z": 4321472,
     "?Save@NeuronClass@@UAGJPAUIStream@@H@Z": 4422512,
     "__imp__SendDlgItemMessageA@20": 7971972,

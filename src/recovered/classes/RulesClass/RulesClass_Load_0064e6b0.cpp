@@ -141,7 +141,7 @@
 // @ref ?Resize@?$VectorClass@PAVSmudgeTypeClass@@@@UAE_NHPBQAVSmudgeTypeClass@@@Z=006535f0
 // @ref ?Resize@?$VectorClass@PAVUnitTypeClass@@@@UAE_NHPBQAVUnitTypeClass@@@Z=004fad20
 // @ref ?Resize@?$VectorClass@PAVVoxelAnimTypeClass@@@@UAE_NHPBQAVVoxelAnimTypeClass@@@Z=00653200
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // Empties the lists, reads the object, rebuilds it in place (the lists and colours),
 // reads each list, then asks for every pointer to be fixed up.
 #include "shared/ccini_class.hpp"
@@ -418,7 +418,7 @@ void RulesClass::Load(IStream *stream)
     Swizzle_Pointer(unknown_f0);
     Swizzle_Pointer(unknown_f4);
     Swizzle_Pointer(unknown_f8);
-    BombCursorShape = MixFileClass<CCFileClass>::Retrieve("BOMBCURS.SHP");
+    BombCursorShape = MixFileClass::Retrieve("BOMBCURS.SHP");
     for (index = 0; index < BarrelDebris.Count(); index++) {
         Swizzle_Pointer(BarrelDebris[index]);
     }

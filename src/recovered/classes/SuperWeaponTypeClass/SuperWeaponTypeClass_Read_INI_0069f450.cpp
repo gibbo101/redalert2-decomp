@@ -64,9 +64,9 @@ bool SuperWeaponTypeClass::Read_INI(CCINIClass &ini)
     SidebarImage = image;
     char fullname[512];
     _makepath(fullname, 0, 0, SidebarImage, ".SHP");
-    SidebarIcon = MixFileClass<CCFileClass>::Retrieve(fullname);
+    SidebarIcon = MixFileClass::Retrieve(fullname);
     if (SidebarIcon == 0) {
-        SidebarIcon = MixFileClass<CCFileClass>::Retrieve("XXICON.SHP");
+        SidebarIcon = MixFileClass::Retrieve("XXICON.SHP");
     }
     return true;
     }

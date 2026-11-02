@@ -4,8 +4,8 @@
     "id": "population-3669",
     "inventory_sha256": "0716184020f8da3a0d4788d2684a29e56405707caad81b5908566919c9631c84",
     "gaps_sha256": "71556148ad33fcac9e0376bb86676715f632bdca0f504ff0cfd8f5e41b873178",
-    "historical_population_sha256": "6d9b1045f5cf44184aeaf7b7fd82d56a915cc84bf182da32ee04f9a0609006f6",
-    "historical_acceptance_sha256": "aedc7cb30fbd4b9814da2a76dc08fbfbf679fc4bf777b3261cb5ef5e8366e494"
+    "historical_population_sha256": "2ddef9bc26dce7dfe0ae8492e362b6fa827cd00fa7fdb3fc80fbb0bdf0ed6366",
+    "historical_acceptance_sha256": "b708a58b7537b83fdb0faff87cea22ab77b1602cc94b619ae6dcd29ba1d93160"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -45,7 +45,7 @@
     "__imp__SetFileTime@16": 7971104,
     "__imp__SetFilePointer@16": 7971252,
     "__imp__WriteFile@20": 7971116,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "__imp__InterlockedDecrement@4": 7971264,
     "__imp__InterlockedIncrement@4": 7971260,
     "__imp__SendDlgItemMessageA@20": 7971972,

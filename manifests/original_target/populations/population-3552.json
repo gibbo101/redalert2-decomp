@@ -4,8 +4,8 @@
     "id": "population-3552",
     "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
     "gaps_sha256": "04d36338335bdd7e43e23bfbef070ac0785ff73d83cba2e18e0315fd2eb8d76f",
-    "historical_population_sha256": "ee2d8ee97e9ee3057d8de7374bdf7e502b5f5b8ca8e310b82d3893b5599cd6d9",
-    "historical_acceptance_sha256": "52cdffa6e6bc075bae9c71c69d7cdd68baf5145b6438fac91052e4152cb17961"
+    "historical_population_sha256": "f64c8c454dd7f55e7a92d2dc84be23511c55d8e64b13c51537ee20aa9193c461",
+    "historical_acceptance_sha256": "b16a5679fe72362077f0370a5e45df5f1a42a19551c058c0bb60adbe9b08cd0f"
   },
   "references": {
     "??_7Tactical@@6BIPersistStream@@@": 8045936,
@@ -2274,7 +2274,7 @@
     "?Read@CCFileClass@@UAEJPAXJ@Z": 4624480,
     "?Seek@CCFileClass@@UAEJJH@Z": 4624624,
     "?Size@CCFileClass@@UAEJXZ": 4624720,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "??1ObjectClass@@UAE@XZ": 6104368,
     "??_GMSAnim@@UAEPAXI@Z": 5962912,
     "??_GMSShapeAnim@@UAEPAXI@Z": 5962944,

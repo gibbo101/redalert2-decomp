@@ -29,7 +29,7 @@
 // @ref ?Find_Or_Make@AnimTypeClass@@SIPAV1@PBD@Z=004264a0
 // @ref ?unknown_string_83c55c@@3PADA=0083c55c
 // @ref ?ArtINI@@3VCCINIClass@@A=008397f0
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref __makepath=007831f0
 
 // An animation type named by the entry, else the default (Westwood's
@@ -68,7 +68,7 @@ bool OverlayTypeClass::Read_INI(CCINIClass &ini)
         if (!unknown_1fc && !DemandLoad) {
             char fullname[512];
             _makepath(fullname, 0, 0, image, ".SHP");
-            unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
         }
         NoUseTileLandType = ini.Get_Bool(section, "NoUseTileLandType", NoUseTileLandType);
         IsVeinholeMonster = ini.Get_Bool(section, "IsVeinholeMonster", IsVeinholeMonster);

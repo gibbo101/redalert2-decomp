@@ -25,6 +25,6 @@ void UnitTypeClass::One_Time()
     if (unknown_drawer_ad0608 == 0) {
         unknown_drawer_ad0608 = new ConvertClass(unknown_palette_837e10, unknown_palette_837e10, unknown_surface_ad0604, 1, false);
     }
-    VisceroidSmallShape = MixFileClass<CCFileClass>::Retrieve("VISC_SML.SHP");
-    VisceroidLargeShape = MixFileClass<CCFileClass>::Retrieve("VISC_LRG.SHP");
+    VisceroidSmallShape = MixFileClass::Retrieve("VISC_SML.SHP");
+    VisceroidLargeShape = MixFileClass::Retrieve("VISC_LRG.SHP");
 }

@@ -4,8 +4,8 @@
     "id": "population-3506",
     "inventory_sha256": "62f46b7b2150a7e2b5a458189255565390456b4667c9b3918f38a9cdf80d7718",
     "gaps_sha256": "c6f457d130d834ab2d61586ee10a67e79aed78a5e46837fe8f6be4df2304b027",
-    "historical_population_sha256": "f603535addebd73db5d9b3e94e6cfe1ae290ec8f1edbd946e6cfaf94f27e2c00",
-    "historical_acceptance_sha256": "beaf81ee930053d2e92fe6a5a6949d0e9c56a7c2d5882458026759efa1d0e08b"
+    "historical_population_sha256": "80f1bff3063eae6922748c7e91727cf259bff64f3124c163c65c26436856c290",
+    "historical_acceptance_sha256": "3409c835abf67d8f9158adcf2003227e353adf05e37ee2e0ec51de83970e892c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8263,7 +8263,7 @@
     "_wcsncpy": 7878178,
     "?FUN_006f8a00@seed_006f8a00@@YIXH@Z": 7309824,
     "?FUN_006f8a20@seed_006f8a20@@YIXH@Z": 7309856,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "??1MultiplayerGameMode@@UAE@XZ": 5991968,
     "?Save@AlphaShapeClass@@UAGJPAUIStream@@H@Z": 4321472,
     "?Save@NeuronClass@@UAGJPAUIStream@@H@Z": 4422512,

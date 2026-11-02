@@ -26,7 +26,6 @@
 #include "shared/abstract_type.hpp"
 #include "shared/weapon_type.hpp"
 #include "shared/cc_file_class.hpp"
-#include "shared/mix_file_class.hpp"
 
 class WeaponTypeClass;
 class BuildingTypeClass;

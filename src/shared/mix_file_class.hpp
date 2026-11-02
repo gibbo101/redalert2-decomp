@@ -1,15 +1,15 @@
-// MixFileClass<T>: mixfile archives (packed game files), read through file
+// MixFileClass: mixfile archives (packed game files), read through file
 // class T (CCFileClass in RA2).
 //
 // Every constructed archive links itself into the static list MixList
-// (0x00A70CC0, a List of MixFileClass<T> *). A mixfile starts with a header
+// (0x00A70CC0, a List of MixFileClass *). A mixfile starts with a header
 // of Count SubBlock records sorted by the CRC of the upper-cased member name;
 // Offset() binary-searches each registered archive in list order. An archive
 // may be cached: Data then holds its body (owned when IsAllocated), and
 // member pointers come straight from memory.
 //
 // Layout (0x28 bytes, offsets observed in the code at 0x005952F0-0x00595AA0):
-//   +0x00 Node<MixFileClass<T> *>  vtable 0x007A6470, NextNode, PrevNode
+//   +0x00 Node<MixFileClass *>  vtable 0x007A6470, NextNode, PrevNode
 //   +0x0C char const *Filename     archive file name (_strdup, freed with free)
 //   +0x10 bool IsDigest            header is followed by a SHA digest
 //   +0x11 bool IsEncrypted         header is Blowfish encrypted
@@ -38,8 +38,7 @@ extern "C" void __cdecl _makepath(char *path, char const *drive, char const *dir
 extern "C" int __cdecl _stricmp(char const *left, char const *right);
 extern "C" char *__cdecl _strupr(char *string);
 
-template <class T>
-class MixFileClass : public Node<MixFileClass<T> *> {
+class MixFileClass : public Node<MixFileClass *> {
 public:
     // One index record: member name CRC (named ID for Binary_Search), member
     // offset from DataStart and member size.
@@ -82,7 +81,10 @@ public:
     SubBlock *HeaderBuffer;     // +0x20
     void *Data;                 // +0x24
 
-    static List<MixFileClass<T> *> MixList;                 // 0x00A70CC0
+    // The declaration of this class-type static member takes one of VC6's generated-name numbers
+    // in every unit that includes this header (renumbering later _$E initializers), so only units
+    // that use mixfiles include it.
+    static List<MixFileClass *> MixList;                 // 0x00A70CC0
 };
 
 #endif

@@ -13,7 +13,7 @@
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
 // @ref ?Theaters@@3PAUTheaterTypeStruct@@A=0079ab68
 // @ref ?Theater_Naming_Convention@ObjectTypeClass@@SIXPADH@Z=005d7bd0
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref __makepath=007831f0
 
 HRESULT __stdcall OverlayTypeClass::Load(IStream *stream)
@@ -32,7 +32,7 @@ HRESULT __stdcall OverlayTypeClass::Load(IStream *stream)
                 _makepath(fullname, 0, 0, unknown_1c8, ".SHP");
                 Theater_Naming_Convention(fullname, unknown_id_source_a3d290->Theater);
             }
-            unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
         }
         result = S_OK;
     }

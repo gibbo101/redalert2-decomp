@@ -1,13 +1,12 @@
-// bool __fastcall MixFileClass<T>::Offset(char const *filename, void **realptr, MixFileClass **mixfile, (0x00595AA0)
+// bool __fastcall MixFileClass::Offset(char const *filename, void **realptr, MixFileClass **mixfile, (0x00595AA0)
 // Locates a member by the CRC of its upper-cased name in every registered archive.
 // @ref __strupr=007961e4
-// @ref ?MixList@?$MixFileClass@VCCFileClass@@@@2V?$List@PAV?$MixFileClass@VCCFileClass@@@@@@A=00a70cc0
+// @ref ?MixList@MixFileClass@@2V?$List@PAVMixFileClass@@@@A=00a70cc0
 #include "shared/mix_file_class.hpp"
 
 class CCFileClass;
 
-template <class T>
-bool __fastcall MixFileClass<T>::Offset(char const *filename, void **realptr, MixFileClass **mixfile,
+bool __fastcall MixFileClass::Offset(char const *filename, void **realptr, MixFileClass **mixfile,
                                         long *offset, long *size)
 {
     if (filename == 0) {
@@ -18,7 +17,7 @@ bool __fastcall MixFileClass<T>::Offset(char const *filename, void **realptr, Mi
     SubBlock key;
     key.ID = CRCEngine()(_strupr((char *)filename), strlen(filename));
 
-    MixFileClass<T> *ptr = MixList.First();
+    MixFileClass *ptr = MixList.First();
     while (ptr->Is_Valid()) {
         SubBlock *block = Binary_Search(ptr->HeaderBuffer, ptr->Count, key);
         if (block != 0) {
@@ -47,4 +46,3 @@ bool __fastcall MixFileClass<T>::Offset(char const *filename, void **realptr, Mi
     return false;
 }
 
-template class MixFileClass<CCFileClass>;

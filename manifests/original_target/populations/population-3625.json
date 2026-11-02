@@ -4,8 +4,8 @@
     "id": "population-3625",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "3fa738a96f67b22c92be801c4c3933ebe58b26babc77c0a4f4becaef9863d259",
-    "historical_acceptance_sha256": "24a53ab37e866d67ce2920acec776aaec567dbb73f48cc3efa3532a5950f79c3"
+    "historical_population_sha256": "fa23b81e187ee7cd6204420561bf3672b8dc9258a3d5cfd31a43683cec88a8e9",
+    "historical_acceptance_sha256": "2242f0c9a2d9f1d9717c268e5a551b2157aa2bbba67f00c32967eb3ba9816568"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4267,7 +4267,7 @@
     "?unknown_slot78@ObjectClass@@UAE_NHH_N@Z": 6106272,
     "?unknown_slot77@ObjectClass@@UAE_NHHH_N@Z": 6106288,
     "?unknown_slot84@ObjectClass@@UAE_NABUCoordStruct@@H@Z": 6106320,
-    "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z": 5854912,
+    "?Retrieve@MixFileClass@@SIPBXPBD@Z": 5854912,
     "?Name_From@BulletTypeClass@@SIPBDH@Z": 4607456,
     "_wcscpy": 7878281,
     "?unknown_slot32@ParticleSystemTypeClass@@UBE_NABVCell@@PAVHouseClass@@@Z": 6426272,
@@ -5772,7 +5772,7 @@
     "_wcstol": 7883704,
     "?unknown_slot24@MultiplayerGameMode@@UAEHXZ": 5993680,
     "_wcsncpy": 7878178,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "??_GMSAnim@@UAEPAXI@Z": 5962912,
     "??_GTerrainClass@@UAEPAXI@Z": 7228240,
     "??1TerrainClass@@UAE@XZ": 7221248,

@@ -12,7 +12,7 @@
 // @ref ??0CCFileClass@@QAE@XZ=00468fd0
 // @ref ?Close@CCFileClass@@UAEXXZ=004691f0
 // @ref ?Load_Alloc_Data@@YIPAXAAVFileClass@@@Z=00495230
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
 // @ref ??1Buffer@@QAE@XZ=00438410
 // @ref ??1BufferIOFileClass@@UAE@XZ=0042f350
@@ -30,7 +30,7 @@ void ScoreFontClass::Load_Sounds()
     if (unknown_check_406f30()) {
         CCFileClass ccfile;
         FileClass &file = ccfile;
-        unknown_score_sounds_ab6fa8[0].Data = MixFileClass<CCFileClass>::Retrieve("TEXT1.AUD");
+        unknown_score_sounds_ab6fa8[0].Data = MixFileClass::Retrieve("TEXT1.AUD");
         if (unknown_score_sounds_ab6fa8[0].Data == 0) {
             file.Set_Name("TEXT1.AUD");
             file.Open(1);
@@ -39,7 +39,7 @@ void ScoreFontClass::Load_Sounds()
             ccfile.Close();
             Debug_Printf("ScoreScreen: Loaded TEXT1.AUD\n");
         }
-        unknown_score_sounds_ab6fa8[1].Data = MixFileClass<CCFileClass>::Retrieve("TEXT2.AUD");
+        unknown_score_sounds_ab6fa8[1].Data = MixFileClass::Retrieve("TEXT2.AUD");
         if (unknown_score_sounds_ab6fa8[1].Data == 0) {
             file.Set_Name("TEXT2.AUD");
             file.Open(1);
@@ -48,7 +48,7 @@ void ScoreFontClass::Load_Sounds()
             ccfile.Close();
             Debug_Printf("ScoreScreen: Loaded TEXT2.AUD\n");
         }
-        unknown_score_sounds_ab6fa8[2].Data = MixFileClass<CCFileClass>::Retrieve("TEXT3.AUD");
+        unknown_score_sounds_ab6fa8[2].Data = MixFileClass::Retrieve("TEXT3.AUD");
         if (unknown_score_sounds_ab6fa8[2].Data == 0) {
             file.Set_Name("TEXT3.AUD");
             file.Open(1);

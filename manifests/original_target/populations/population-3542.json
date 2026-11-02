@@ -4,8 +4,8 @@
     "id": "population-3542",
     "inventory_sha256": "9d27bfeaf39b73ebf24e93ec9ce3c691f9e873f57856befc5b3147d839230783",
     "gaps_sha256": "6b58d5b5c03845b0678e5ef0ce479b365cea3e4a1d631447677c250f9e0105dc",
-    "historical_population_sha256": "b227f0cdff37ec39b851d5bdbeda1ee3dc65b519cbd5e0b06f8e9caa40298427",
-    "historical_acceptance_sha256": "1bada9e69ed41218bb8e5356296c1f6680563af35accf58f55b6dd9d8e8fbf3f"
+    "historical_population_sha256": "1de23773785c8c7dcc014b0d28d530ad3ecadb260e6f24db4d32b7bb63afc501",
+    "historical_acceptance_sha256": "adc07dae6a6686f00c10d1cf447d04df060ce4744e2687ed862a7a2954b85414"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3016,7 +3016,7 @@
     "??_EFactoryClass@@UAEPAXI@Z": 4955968,
     "??_ETActionClass@@UAEPAXI@Z": 7024848,
     "??_EOverlayTypeClass@@UAEPAXI@Z": 6148752,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "__imp__SendDlgItemMessageA@20": 7971972,
     "__imp__DefWindowProcA@16": 7971720,
     "__imp__GetCommModemStatus@8": 7971188,

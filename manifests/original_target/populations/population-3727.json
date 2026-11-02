@@ -4,8 +4,8 @@
     "id": "population-3727",
     "inventory_sha256": "41b4fcc5acce3ace0cc3c727ce8aa906f632b8848e7d15f76849b46ed791a28e",
     "gaps_sha256": "d1c5ca0a497b70dcb5a33e91ce7845f94aeee2b73d9f92956460813ddc8aadb9",
-    "historical_population_sha256": "105fd7a5b2ce5f65738e943f2aeffae01c71f07864b9ab39cb999e3f47e53be0",
-    "historical_acceptance_sha256": "79474bec532ac6e7dbee512c9f4abc9e9438c4d5c7f236062813581681190857"
+    "historical_population_sha256": "102c9f54e6c1570ee517839c5a0c3ce85b77213dee3b89c5e02416bbd80449b2",
+    "historical_acceptance_sha256": "64918549d05c743eb1b09854a8023d1ffa3e750e9190524419dd45ad0262e324"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4336,7 +4336,7 @@
     "?unknown_application_84c7dc@@3PAUIUnknown@@A": 8701916,
     "?Get_Save_Size@SwizzleManagerClass@@UAGJPAH@Z": 6946032,
     "?Fetch_Swizzle_ID@SwizzleManagerClass@@UAGJPAXPAJ@Z": 6946160,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "??_GMSAnim@@UAEPAXI@Z": 5962912,
     "?Release@?$TClassFactory@VCStreamClass@@@@UAGKXZ": 6886784,
     "__imp__InterlockedDecrement@4": 7971264,

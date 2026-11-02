@@ -1,17 +1,16 @@
-// MixFileClass<T> *__fastcall MixFileClass<T>::Finder(char const *filename) (0x005956E0)
+// MixFileClass *__fastcall MixFileClass::Finder(char const *filename) (0x005956E0)
 // First registered archive whose name and extension equal filename (case-insensitive).
 // @ref __splitpath=00784873
 // @ref __makepath=007831f0
 // @ref __stricmp=00781f20
-// @ref ?MixList@?$MixFileClass@VCCFileClass@@@@2V?$List@PAV?$MixFileClass@VCCFileClass@@@@@@A=00a70cc0
+// @ref ?MixList@MixFileClass@@2V?$List@PAVMixFileClass@@@@A=00a70cc0
 #include "shared/mix_file_class.hpp"
 
 class CCFileClass;
 
-template <class T>
-MixFileClass<T> *__fastcall MixFileClass<T>::Finder(char const *filename)
+MixFileClass *__fastcall MixFileClass::Finder(char const *filename)
 {
-    MixFileClass<T> *ptr = MixList.First();
+    MixFileClass *ptr = MixList.First();
     while (ptr->Is_Valid()) {
         char path[260];
         char name[256];

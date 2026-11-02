@@ -13,10 +13,10 @@
 #include "shared/debug_printf.hpp"
 #include "shared/theme.hpp"
 
-// @ref ?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374e0
-// @ref ?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374e4
-// @ref ?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A=00837468
-// @ref ?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A=008374a0
+// @ref ?ConquerMix@@3PAVMixFileClass@@A=008374e0
+// @ref ?CameoMix@@3PAVMixFileClass@@A=008374e4
+// @ref ?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A=00837468
+// @ref ?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A=008374a0
 // @ref ?Find_Next_File@CDFileClass@@SI_NPAD@Z=00470400
 // @ref ?Find_Close@CDFileClass@@SAXXZ=00470470
 // @ref ?unknown_sound_enabled_a40c18@@3DA=00a40c18
@@ -45,7 +45,7 @@
 bool __fastcall Init_Secondary_Mixfiles()
 {
     if (CCFileClass("CONQUER.MIX").Is_Available()) {
-        ConquerMix = new MixFileClass<CCFileClass>("CONQUER.MIX", &FastKey);
+        ConquerMix = new MixFileClass("CONQUER.MIX", &FastKey);
     }
     Unknown_00496460(" CONQUER.MIX");
     if (ConquerMix == 0) {
@@ -53,7 +53,7 @@ bool __fastcall Init_Secondary_Mixfiles()
     }
 
     if (CCFileClass("CAMEO.MIX").Is_Available()) {
-        CameoMix = new MixFileClass<CCFileClass>("CAMEO.MIX", &FastKey);
+        CameoMix = new MixFileClass("CAMEO.MIX", &FastKey);
     }
     Unknown_00496460(" CAMEO.MIX");
     if (CameoMix == 0) {
@@ -66,12 +66,12 @@ bool __fastcall Init_Secondary_Mixfiles()
         strcpy(name, "MAPS*.MIX");
         if (CDFileClass::Find_File(name) == true) {
             Unknown_00496460(" %s", name);
-            MapsMix = new MixFileClass<CCFileClass>(name, &FastKey);
+            MapsMix = new MixFileClass(name, &FastKey);
             while (CDFileClass::Find_Next_File(name) == true) {
                 Unknown_00496460(" %s", name);
-                MixFileClass<CCFileClass> *mix = new MixFileClass<CCFileClass>(name, &FastKey);
+                MixFileClass *mix = new MixFileClass(name, &FastKey);
                 if (mix != 0) {
-                    MixFileClass<CCFileClass> *added = mix;
+                    MixFileClass *added = mix;
                     unknown_maps_mixes_837468.Add(added);
                 }
             }
@@ -80,7 +80,7 @@ bool __fastcall Init_Secondary_Mixfiles()
     } else {
         sprintf(name, "MAPS%02d.MIX", cd);
         if (CCFileClass(name).Is_Available()) {
-            MapsMix = new MixFileClass<CCFileClass>(name, &FastKey);
+            MapsMix = new MixFileClass(name, &FastKey);
         }
         Unknown_00496460(" %s", name);
     }
@@ -89,7 +89,7 @@ bool __fastcall Init_Secondary_Mixfiles()
     }
 
     if (CCFileClass("MULTI.MIX").Is_Available()) {
-        MultiMix = new MixFileClass<CCFileClass>("MULTI.MIX", &FastKey);
+        MultiMix = new MixFileClass("MULTI.MIX", &FastKey);
     }
     Unknown_00496460(" MULTI.MIX");
     if (MultiMix == 0) {
@@ -97,7 +97,7 @@ bool __fastcall Init_Secondary_Mixfiles()
     }
 
     if (CCFileClass("THEME.MIX").Is_Available()) {
-        ThemeMix = new MixFileClass<CCFileClass>("THEME.MIX", &FastKey);
+        ThemeMix = new MixFileClass("THEME.MIX", &FastKey);
     }
     Unknown_00496460(" THEME.MIX");
     unknown_sound_enabled_a40c18 = true;
@@ -113,12 +113,12 @@ bool __fastcall Init_Secondary_Mixfiles()
         }
         if (CDFileClass::Find_File(name) == true) {
             Unknown_00496460(" %s", name);
-            MoviesMix = new MixFileClass<CCFileClass>(name, &FastKey);
+            MoviesMix = new MixFileClass(name, &FastKey);
             while (CDFileClass::Find_Next_File(name) == true) {
                 Unknown_00496460(" %s", name);
-                MixFileClass<CCFileClass> *mix = new MixFileClass<CCFileClass>(name, &FastKey);
+                MixFileClass *mix = new MixFileClass(name, &FastKey);
                 if (mix != 0) {
-                    MixFileClass<CCFileClass> *added = mix;
+                    MixFileClass *added = mix;
                     unknown_movies_mixes_8374a0.Add(added);
                 }
             }
@@ -127,7 +127,7 @@ bool __fastcall Init_Secondary_Mixfiles()
     } else {
         sprintf(name, "MOVIES%02d.MIX", cd);
         if (CCFileClass(name).Is_Available()) {
-            MoviesMix = new MixFileClass<CCFileClass>(name, &FastKey);
+            MoviesMix = new MixFileClass(name, &FastKey);
         }
         Unknown_00496460(" %s", name);
     }

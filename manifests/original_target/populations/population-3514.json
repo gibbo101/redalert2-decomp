@@ -4,8 +4,8 @@
     "id": "population-3514",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "4c89bd86828a83091a0e55794b2a4aaa1a3cdbc694bd0fa5b3b8fd5ea1972aa5",
-    "historical_acceptance_sha256": "eeeebfa0740be79fe388fdca95a15e02f896403c64e58d4e93df7ae440b5e4ac"
+    "historical_population_sha256": "97e59e2810231fe92e2ecef19a7bde0c6051cbeb7ab72af72f290afd61696187",
+    "historical_acceptance_sha256": "f9d22a43d11712093591f717e81161f60ae780793cb5fdbff1265f43d455f444"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3083,8 +3083,8 @@
     "?Force_New_Slope@LocomotionClass@@UAGXH@Z": 5494240,
     "?Force_New_Slope@ShipLocomotionClass@@UAGXH@Z": 6773744,
     "?Force_Track@LocomotionClass@@UAGXHUCoordStruct@@@Z": 5494032,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
     "?Free@BufferIOFileClass@@QAEXXZ": 4388192,
     "?From_Name@AircraftTypeClass@@SIHPBD@Z": 4308576,
     "?From_Name@AnimTypeClass@@SIHPBD@Z": 4347456,
@@ -7690,7 +7690,7 @@
     "?Get_Save_Size@SwizzleManagerClass@@UAGJPAH@Z": 6946032,
     "?Fetch_Swizzle_ID@SwizzleManagerClass@@UAGJPAXPAJ@Z": 6946160,
     "??_GCCFileClass@@UAEPAXI@Z": 4200864,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "?Save@AlphaShapeClass@@UAGJPAUIStream@@H@Z": 4321472,
     "?Save@NeuronClass@@UAGJPAUIStream@@H@Z": 4422512,
     "__imp__SendDlgItemMessageA@20": 7971972,

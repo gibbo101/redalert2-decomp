@@ -9,9 +9,9 @@
 #include "shared/crt_string.hpp"
 #include "shared/debug_printf.hpp"
 
-// @ref ?unknown_ra2_mix_8374b8@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374b8
-// @ref ?unknown_cache_mix_8374e8@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374e8
-// @ref ?unknown_local_mix_8374ec@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374ec
+// @ref ?unknown_ra2_mix_8374b8@@3PAVMixFileClass@@A=008374b8
+// @ref ?unknown_cache_mix_8374e8@@3PAVMixFileClass@@A=008374e8
+// @ref ?unknown_local_mix_8374ec@@3PAVMixFileClass@@A=008374ec
 // @ref ?Unknown_00496460@@YAXPBDZZ=00496460
 // @ref ??_C@_0P@DEGN@EXPAND?$CF02d?4MIX?$AA@=007dbf14
 // @ref ??_C@_03HKGO@?5?$CFs?$AA@=007dbf10
@@ -31,7 +31,7 @@ bool __fastcall Init_Bootstrap_Mixfiles()
         char name[64];
         sprintf(name, "EXPAND%02d.MIX", index);
         if (RawFileClass(name).Is_Available()) {
-            MixFileClass<CCFileClass> *mix = new MixFileClass<CCFileClass>(name, &FastKey);
+            MixFileClass *mix = new MixFileClass(name, &FastKey);
             if (mix != 0) {
                 unknown_expansion_mixes_837450.Add(mix);
                 Unknown_00496460(" %s", name);
@@ -39,19 +39,19 @@ bool __fastcall Init_Bootstrap_Mixfiles()
         }
     }
 
-    unknown_ra2_mix_8374b8 = new MixFileClass<CCFileClass>("RA2.MIX", &FastKey);
+    unknown_ra2_mix_8374b8 = new MixFileClass("RA2.MIX", &FastKey);
     if (unknown_ra2_mix_8374b8 == 0) {
         return false;
     }
     Unknown_00496460(" CACHE.MIX");
 
-    unknown_cache_mix_8374e8 = new MixFileClass<CCFileClass>("CACHE.MIX", &FastKey);
-    if (unknown_cache_mix_8374e8 == 0 || !MixFileClass<CCFileClass>::Cache("CACHE.MIX")) {
+    unknown_cache_mix_8374e8 = new MixFileClass("CACHE.MIX", &FastKey);
+    if (unknown_cache_mix_8374e8 == 0 || !MixFileClass::Cache("CACHE.MIX")) {
         return false;
     }
     Unknown_00496460(" CACHE.MIX");
 
-    unknown_local_mix_8374ec = new MixFileClass<CCFileClass>("LOCAL.MIX", &FastKey);
+    unknown_local_mix_8374ec = new MixFileClass("LOCAL.MIX", &FastKey);
     if (unknown_local_mix_8374ec == 0) {
         return false;
     }

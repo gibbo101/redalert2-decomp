@@ -4,8 +4,8 @@
     "id": "population-3387",
     "inventory_sha256": "08bc4cc91654167e97eee777366a235711ae7026c95052ad12d74764314197e3",
     "gaps_sha256": "0bdbb75dde2f04a3cb725e06f75a55a10308a33d88bac772d446963424a2ffca",
-    "historical_population_sha256": "4e3264873027adeac78f7347dda6dae9825ca5232eda4aa70af144ad79de4b3e",
-    "historical_acceptance_sha256": "b4a144024fab0854df3ddcf247326d686a60dc867f6678757acf2dc225a31499"
+    "historical_population_sha256": "78869c5923f60fa0ba6f1ed1f56ade729ebda86156e780a7f6e822597984b3ac",
+    "historical_acceptance_sha256": "43300ad464ae40d0458f33e67c9b0ee921a49b3a40e450b1b697649a23ea4413"
   },
   "references": {
     "_stricmp": 7872288,
@@ -4240,7 +4240,7 @@
     "??_GLinkClass@@UAEPAXI@Z": 5043984,
     "?Reset@Buffer@@QAEXXZ": 4424768,
     "??_GCCFileClass@@UAEPAXI@Z": 4200864,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "?Open@CCFileClass@@UAEHH@Z": 4624928,
     "??_GIPXManagerClass@@UAEPAXI@Z": 5404752,
     "??1IPXManagerClass@@UAE@XZ": 5394736,
@@ -6455,8 +6455,8 @@
     "??_7MSShapeAnim@@6B@": 8023396,
     "?Put@Pipe@@UAEHPBXH@Z": 6351600,
     "?Put@FilePipe@@UAEHPBXH@Z": 7813104,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
     "?Is_Char_Key@WWKeyboardClass@@CIHG@Z": 5448384,
     "?Is_Valid@Conflict@WorldDominationTour@@QBE_NXZ": 7500768,
     "?Is_Valid@History@WorldDominationTour@@QBEHI@Z": 7507744,

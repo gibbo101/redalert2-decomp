@@ -9,7 +9,7 @@
 // @ref ?unknown_a40d13@@3_NA=00a40d13
 // @ref ?unknown_loaded_theater_7d88dc@@3HA=007d88dc
 // @ref ?Theaters@@3PAUTheaterTypeStruct@@A=0079ab68
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref __makepath=007831f0
 // @ref ??3@YAXPAX@Z=00781d3b
 
@@ -26,7 +26,7 @@ void __fastcall TerrainTypeClass::Init(int theater)
                 }
                 terrain->unknown_a4 = 0;
                 terrain->unknown_a8 = false;
-                terrain->unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                terrain->unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
             }
         }
     }

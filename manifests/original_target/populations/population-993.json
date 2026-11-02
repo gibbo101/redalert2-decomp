@@ -4,8 +4,8 @@
     "id": "population-993",
     "inventory_sha256": "5e268cb9023a652bd2bab79d76db13adc5ccbdc0451648acf3dee95cf0a22c38",
     "gaps_sha256": "0903d39a4baa4aba6136553eae56df66ebe4c0e134af93a406b0ad073397aea4",
-    "historical_population_sha256": "d7bef6fd7166b14d354fb1775f2c76e02ec9b53793c4d09b7447c7417088fdb0",
-    "historical_acceptance_sha256": "c18e2a2894944b6a0dd01ec857c8c0257887c225fbda3ae4af6b602f4f8f29a0"
+    "historical_population_sha256": "a0d98c14ab53ee7be03f1ab8c4e2f263a8c9b4fe468e45b255de92d0e3ea54d0",
+    "historical_acceptance_sha256": "96a051cd25079f88432e9463f9454e83bb6d1872453566416dced31179615911"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -370,10 +370,10 @@
     "?x@?1???A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z@4PAU23@A": 11712044,
     "?x@?1???A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z@4PAU23@A": 11712048,
     "__real@8@3ff8a3d70a3d70a3d800": 7980312,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
     "__splitpath": 7882867,
     "__makepath": 7877104,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
     "__strupr": 7954916,
     "?Length@Wstring@@QBEIXZ": 7792544,
     "__imp__WaitForSingleObject@8": 7971280,

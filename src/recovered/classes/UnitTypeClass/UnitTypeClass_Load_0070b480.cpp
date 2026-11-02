@@ -13,7 +13,7 @@
 // @ref ?unknown_func_5d7630@ObjectTypeClass@@QAEXXZ=005d7630
 // @ref ??_C@_04BOIE@?4SHP?$AA@=007ced14
 // @ref __makepath=007831f0
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 
 HRESULT __stdcall UnitTypeClass::Load(IStream *stream)
 {
@@ -27,7 +27,7 @@ HRESULT __stdcall UnitTypeClass::Load(IStream *stream)
     if (AltImage) {
         char filename[260];
         _makepath(filename, 0, 0, AltImageFile, ".SHP");
-        AltImage = MixFileClass<CCFileClass>::Retrieve(filename);
+        AltImage = MixFileClass::Retrieve(filename);
     }
     return S_OK;
 }

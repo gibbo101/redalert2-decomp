@@ -4,8 +4,8 @@
     "id": "population-3423",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "674bda453c4cf6b01d00a6b17d626f0529749303c20c488b5995c162d8c27ea1",
-    "historical_acceptance_sha256": "d5867836d3e5dc7f33791a69a9eace49721fe86bf62fb1da19c032b3bb579222"
+    "historical_population_sha256": "9e3e04223ac64d31f1cc269d78b7de00974ab0da6401755b5c1c0b4044613de3",
+    "historical_acceptance_sha256": "43735f63dbe81721001b45a726239cdbd061b6acc0cb88344e925dc86fe6f6f5"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4215,7 +4215,7 @@
     "?Write@CCFileClass@@UAEJPBXJ@Z": 4624432,
     "?Read@CCFileClass@@UAEJPAXJ@Z": 4624480,
     "?Seek@CCFileClass@@UAEJJH@Z": 4624624,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "??_GMSAnim@@UAEPAXI@Z": 5962912,
     "??_GPowerClass@@UAEPAXI@Z": 6410784,
     "?Release@?$TClassFactory@VCStreamClass@@@@UAGKXZ": 6886784,

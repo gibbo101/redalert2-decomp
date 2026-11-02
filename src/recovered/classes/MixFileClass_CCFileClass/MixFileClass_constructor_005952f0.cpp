@@ -1,4 +1,4 @@
-// MixFileClass<T>::MixFileClass(char const *filename, PKey const *key) (0x005952F0)
+// MixFileClass::MixFileClass(char const *filename, PKey const *key) (0x005952F0)
 // TibSun mixfile.cpp: makes sure a disk is present, opens the archive, reads the (optionally
 // Blowfish/PK encrypted) header and index, notes where the member data starts and links the
 // archive at the tail of MixList.
@@ -24,8 +24,7 @@ struct MixFileAlternate {
 };
 #pragma pack()
 
-template <class T>
-MixFileClass<T>::MixFileClass(char const *filename, PKey const *key) :
+MixFileClass::MixFileClass(char const *filename, PKey const *key) :
     Filename(0),
     IsDigest(false),
     IsEncrypted(false),
@@ -41,7 +40,7 @@ MixFileClass<T>::MixFileClass(char const *filename, PKey const *key) :
         Emergency_Exit(1);
     }
 
-    T file(filename);
+    CCFileClass file(filename);
     Filename = _strdup(file.File_Name());
     FileStraw fstraw(file);
     PKStraw pstraw(PKStraw::DECRYPT, CryptRandom);
@@ -92,7 +91,7 @@ MixFileClass<T>::MixFileClass(char const *filename, PKey const *key) :
 // @ref ??1Straw@@UAE@XZ=0069b010
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ??3@YAXPAX@Z=00781d3b
-// @ref ??_7?$MixFileClass@VCCFileClass@@@@6B@=007a6470
+// @ref ??_7MixFileClass@@6B@=007a6470
 // @ref ??_7BlowStraw@@6B@=007a6460
 // @ref ??_7CCFileClass@@6B@=0079a6a0
 // @ref ??_7CD@@6B@=0079d868
@@ -103,7 +102,7 @@ MixFileClass<T>::MixFileClass(char const *filename, PKey const *key) :
 // @ref ?Get_From@PKStraw@@UAEXPAVStraw@@@Z=0060fea0
 // @ref ?Is_Available@CCFileClass@@UAE_NH@Z=004691a0
 // @ref ?Key@PKStraw@@QAEXPBVPKey@@@Z=0060fef0
-// @ref ?MixList@?$MixFileClass@VCCFileClass@@@@2V?$List@PAV?$MixFileClass@VCCFileClass@@@@@@A=00a70cc0
+// @ref ?MixList@MixFileClass@@2V?$List@PAVMixFileClass@@@@A=00a70cc0
 // @ref ?RequiredCD@CD@@2HA=007d20e0
 // @ref ?Seek@CCFileClass@@UAEJJH@Z=004690f0
 // @ref ?Unknown_00691320@@YAXXZ=00691320

@@ -11,8 +11,8 @@ int VQAClass::Unknown_0071D4B0(int request, int unknown2, int unknown3)
     switch (request) {
     case 3: {
         long offset = 0;
-        MixFileClass<CCFileClass> *mixfile = 0;
-        if (MixFileClass<CCFileClass>::Offset(Filename, 0, &mixfile, &offset, 0)) {
+        MixFileClass *mixfile = 0;
+        if (MixFileClass::Offset(Filename, 0, &mixfile, &offset, 0)) {
             FileOpen = File.Open(mixfile->Filename, 1) != 0;
             return File.Seek(offset, 1) == 0;
         }

@@ -996,3 +996,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A delete of a class with an inline empty destructor adds IL but no code, in the nested-if form only; the && form emits a ??_G call (Free_Buildup 0x45E920). Measure a missing spend with Ob2Apply519/prb.py (remaining-budget probe for a joined function).
   compare with the compiler), x/inplace.py (many variants of one function in one unit compile), x/probe.py (the
   remaining budget at any source line of a real function).
+
+## Loop tails and known-value threading (Scout526, 2026-11-02)
+- **Separate loop exit (`jne top` plus its own return copy).** Write one shared `return x;` as the last statement of the loop body, reached by positive nesting. Example, from Get_Next_Port 0x5B9F10: `if (transport && mode == 4) { if (!Open) continue; Close; } return port;`. The exhausted path is a return after the `while (tries--)` loop. If the body has two separate early returns, VC6 tail-merges the exit into `je exit; jmp top`. The same loop is inlined in Get_Mangled_Port 0x5BAF50 and Detect 0x5BA2C0.
+- **Known-value threading.** VC6 threads a failed `x == 1` sub-test straight past a following `x == 2` test. Where the original still makes the second comparison, assign `x` again between the two ifs (Get_Allocation_Delta 0x5BAC50).

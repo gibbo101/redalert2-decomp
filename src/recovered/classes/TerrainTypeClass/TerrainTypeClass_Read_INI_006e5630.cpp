@@ -24,7 +24,7 @@
 // @ref ?ArtINI@@3VCCINIClass@@A=008397f0
 // @ref ?Get_Foundation@CCINIClass@@QBEHPBD0H@Z=0046a260
 // @ref ?unknown_foundation_lists_ac0430@@3PAY09VCell@@A=00ac0430
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref __makepath=007831f0
 
 // The colour stored in a shape frame header (+0x0C; hypothesis: the radar
@@ -59,7 +59,7 @@ bool TerrainTypeClass::Read_INI(CCINIClass &ini)
         if (!unknown_1fc) {
             char fullname[512];
             _makepath(fullname, 0, 0, unknown_1c8, ".SHP");
-            unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
         }
         ShapeFileStruct const *shape = (ShapeFileStruct const *)unknown_slot39();
         if (shape != 0) {

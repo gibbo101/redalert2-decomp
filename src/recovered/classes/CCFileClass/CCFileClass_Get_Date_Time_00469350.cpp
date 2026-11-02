@@ -5,10 +5,10 @@
 
 unsigned long CCFileClass::Get_Date_Time()
 {
-    MixFileClass<CCFileClass> *mixfile = 0;
+    MixFileClass *mixfile = 0;
     unsigned long datetime = CDFileClass::Get_Date_Time();
     if (datetime == 0) {
-        if (MixFileClass<CCFileClass>::Offset(File_Name(), 0, &mixfile, 0, 0)) {
+        if (MixFileClass::Offset(File_Name(), 0, &mixfile, 0, 0)) {
             return CCFileClass(mixfile->Filename).Get_Date_Time();
         }
     }

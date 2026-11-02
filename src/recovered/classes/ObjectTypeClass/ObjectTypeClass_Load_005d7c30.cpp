@@ -11,7 +11,7 @@
 // @ref ?unknown_func_5d66a0@ObjectTypeClass@@QAEXXZ=005d66a0
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref __makepath=007831f0
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref ??_C@_04BOIE@?4SHP?$AA@=007ced14
 
 extern "C" void __cdecl _makepath(char *path, char const *drive, char const *dir, char const *fname, char const *ext);
@@ -71,7 +71,7 @@ HRESULT __stdcall ObjectTypeClass::Load(IStream *stream)
     if (unknown_1e3.Buffer[0] != 0) {
         char filename[260];
         _makepath(filename, 0, 0, unknown_1e3.Buffer, ".SHP");
-        unknown_ac = (int)MixFileClass<CCFileClass>::Retrieve(filename);
+        unknown_ac = (int)MixFileClass::Retrieve(filename);
     }
     return S_OK;
 }

@@ -11,7 +11,7 @@ long CCFileClass::Size()
     }
     if (!CDFileClass::Is_Available()) {
         long length = 0;
-        MixFileClass<CCFileClass>::Offset(File_Name(), 0, 0, 0, &length);
+        MixFileClass::Offset(File_Name(), 0, 0, 0, &length);
         return length;
     }
     return CDFileClass::Size();

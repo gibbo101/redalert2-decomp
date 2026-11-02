@@ -4,8 +4,8 @@
     "id": "population-2883",
     "inventory_sha256": "d5b846529b346243801d177e8b2a7d5476d11c8ada0674a07457cc863df08218",
     "gaps_sha256": "1c212d2747bfd15fce251b4f0e9220c8183faccb330a8873d86d552727d96c01",
-    "historical_population_sha256": "ba54bfcc8ca114399f8a0c7fdb58990d8590c133ad296106f4dacd686c7bf4d6",
-    "historical_acceptance_sha256": "0406c0fadd5da84a63974b8c9dc85f4bff1b856fe0b5a4d1fcb4871e45394f35"
+    "historical_population_sha256": "e6e4d6d783a9a321630d53bf141c1f71bc5986a8126aafb55f4651bf13021128",
+    "historical_acceptance_sha256": "438f787d68c365db602f77587983c20abff8a44ea5736293a1303b2e213b287d"
   },
   "references": {
     "__imp__GetDriveTypeA@4": 7971404,
@@ -51,7 +51,7 @@
     "__imp__SetFileTime@16": 7971104,
     "__imp__SetFilePointer@16": 7971252,
     "__imp__WriteFile@20": 7971116,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "__imp__InterlockedDecrement@4": 7971264,
     "__imp__InterlockedIncrement@4": 7971260,
     "__imp__SendDlgItemMessageA@20": 7971972,

@@ -1022,3 +1022,10 @@ Resume notes are in build/class-work/Scout524/NOTES.md.
   - Rename UnknownVersionObject to VersionClass (RTTI .?AVVersionClass@@, COL 0x7BA090), 0x4FEF70 to HSVClass::Adjust, and unify the two declarations of 0xA71B18 on FirewallSettings. All three are assigned to Scout525 as one rename round.
   - The lobby.hpp +0x44 TibSun bit-fields appear only under the version unit's macro; everywhere else the field stays `unsigned long Flags`, because of the Pick_Lobby parity rule. Accepted.
   - Unit 0x40CE70 is still blocked by the Map global 0x40D060/0x40D080, which needs the MouseClass ctor out of line; r8's population should be folded into the whole unit later.
+
+## Scout526 (2026-11-02, closed; about 6,070 B landed in r1, r2 and r4-r11)
+Resume notes are in build/class-work/Scout526/NOTES.md.
+- Detect 0x5BA2C0: 83.54, shape 98.86 (w/det/h0.cpp plus head.cpp). In the mangler loop the original keeps the found-count in memory and the x4 index in ebx; ours swaps them and needs 4 bytes more frame.
+- 0x4E1350: 62.92 (w/px/a.cpp; Scout525's range). 0x753F10: 54.05 (codex4's range).
+- The scheme-table unit 0x603380-0x604CC0 (~5 KB) is assigned to Scout527: draft the whole unit, take over about 40 template instances, and keep DynamicVectorClass<char *> out of the unit.
+- OWNER DECISIONS (14:50Z): the r11 static_buffer.hpp layout (Capacity +0, Buffer +4) and the new surface_region.hpp are accepted (landed). Merge the duplicate HashTableClass declarations (scheme_table.hpp and map.hpp) on the TibSun argument order (growth, count, hash); assigned to Scout527. Rename the PacketClass::Find_Field source file later.

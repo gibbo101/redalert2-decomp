@@ -459,7 +459,7 @@
   {
    "address": "00595aa0",
    "name": "MixFileClass<CCFileClass>::Offset",
-   "mangled_prefix": "?Offset@?$MixFileClass@VCCFileClass@@@@",
+   "mangled_prefix": "?Offset@MixFileClass@@",
    "kind": "method",
    "evidence": "static fastcall mixfile member lookup used by CCFileClass"
   },
@@ -822,8 +822,8 @@
   },
   {
    "address": "007a6470",
-   "name": "??_7?$MixFileClass@VCCFileClass@@@@6B@",
-   "mangled_prefix": "??_7?$MixFileClass@VCCFileClass@@@@6B@",
+   "name": "??_7MixFileClass@@6B@",
+   "mangled_prefix": "??_7MixFileClass@@6B@",
    "kind": "reference",
    "evidence": "binding used by an exact INIClass/MixFileClass unit"
   },
@@ -1039,8 +1039,8 @@
   },
   {
    "address": "00595c60",
-   "name": "??_G?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z",
-   "mangled_prefix": "??_G?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z",
+   "name": "??_GMixFileClass@@UAEPAXI@Z",
+   "mangled_prefix": "??_GMixFileClass@@UAEPAXI@Z",
    "kind": "reference",
    "evidence": "binding used by an exact INIClass/MixFileClass unit"
   },
@@ -1074,8 +1074,8 @@
   },
   {
    "address": "00595810",
-   "name": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
-   "mangled_prefix": "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z",
+   "name": "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z",
+   "mangled_prefix": "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z",
    "kind": "reference",
    "evidence": "binding used by an exact INIClass/MixFileClass unit"
   },
@@ -1193,15 +1193,15 @@
   },
   {
    "address": "00a70cc0",
-   "name": "?MixList@?$MixFileClass@VCCFileClass@@@@2V?$List@PAV?$MixFileClass@VCCFileClass@@@@@@A",
-   "mangled_prefix": "?MixList@?$MixFileClass@VCCFileClass@@@@2V?$List@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+   "name": "?MixList@MixFileClass@@2V?$List@PAVMixFileClass@@@@A",
+   "mangled_prefix": "?MixList@MixFileClass@@2V?$List@PAVMixFileClass@@@@A",
    "kind": "reference",
    "evidence": "binding used by an exact INIClass/MixFileClass unit"
   },
   {
    "address": "00595aa0",
-   "name": "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z",
-   "mangled_prefix": "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z",
+   "name": "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z",
+   "mangled_prefix": "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z",
    "kind": "reference",
    "evidence": "binding used by an exact INIClass/MixFileClass unit"
   },

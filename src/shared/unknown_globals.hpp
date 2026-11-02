@@ -420,7 +420,7 @@ void Unknown_006ecf10();                                    // 0x006ECF10 (walks
 // surface (0x00535BF0 makes it).
 struct Point2D;
 class CCFileClass;
-template <class T> class MixFileClass;
+class MixFileClass;
 class Rect;
 struct Unknown535910 {
     Unknown535910();                        // 0x005359A0
@@ -433,7 +433,7 @@ struct Unknown535910 {
     void Unknown_00536E00(Surface *surface);    // 0x00536E00 (copies its surface onto another)
     void Unknown_00536E20();                // 0x00536E20 (frees its buffers and surfaces)
 
-    MixFileClass<CCFileClass> *LoadMix;     // +0x04 LOAD.MIX
+    MixFileClass *LoadMix;     // +0x04 LOAD.MIX
     int unknown_08[4];                      // +0x08 (x, y, width, height; 0x005359E0)
     int unknown_18[4];                      // +0x18 (x, y, width, height; 0x005359E0)
     int unknown_28[4];                      // +0x28 (x, y, width, height; 0x005359E0)

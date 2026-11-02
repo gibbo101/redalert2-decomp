@@ -6,9 +6,9 @@
 #include "shared/mix_file_class.hpp"
 #include "shared/debug_printf.hpp"
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
-// @ref ?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374f0
+// @ref ?unknown_mix_8374f0@@3PAVMixFileClass@@A=008374f0
 // @ref ??_C@_0BD@MGDA@?5?5?5?5?5Releasing?5?$CFs?6?$AA@=007d2208
-// @ref ??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z=005952f0
+// @ref ??0MixFileClass@@QAE@PBDPBVPKey@@@Z=005952f0
 // @ref ?FastKey@@3VPKey@@A=00839010
 // @ref ?Unknown_00496460@@YAXPBDZZ=00496460
 // @ref ??_C@_0BD@PMEL@LOADED?5NEUTRAL?4MIX?$AA@=007dd8f4
@@ -22,7 +22,7 @@ bool __cdecl Unknown_0051A2B0()
         delete unknown_mix_8374f0;
         unknown_mix_8374f0 = 0;
     }
-    unknown_mix_8374f0 = new MixFileClass<CCFileClass>("NEUTRAL.MIX", &FastKey);
+    unknown_mix_8374f0 = new MixFileClass("NEUTRAL.MIX", &FastKey);
     if (unknown_mix_8374f0 == 0) {
         return false;
     }

@@ -52,7 +52,7 @@ public:
 };
 #endif
 
-// Shape file retrieval by name: MixFileClass<CCFileClass>::Retrieve, shared/mix_file_class.hpp.
+// Shape file retrieval by name: MixFileClass::Retrieve, shared/mix_file_class.hpp.
 
 // The class ID GetClassID reports (0x007A1B20).
 extern "C" GUID const unknown_clsid_aircraft_type_7a1b20;

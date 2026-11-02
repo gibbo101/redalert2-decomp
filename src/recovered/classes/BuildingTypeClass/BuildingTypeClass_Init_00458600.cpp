@@ -13,7 +13,7 @@
 #include "shared/mix_file_class.hpp"
 #include "shared/cc_file_class.hpp"
 // @ref ?unknown_func_458510@BuildingTypeClass@@SAXXZ=00458510
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref ?unknown_poweroff_shape_8502a4@@3PBXB=008502a4
 // @ref ?unknown_wrench_shape_8502a8@@3PBXB=008502a8
 // @ref ?BuildingTypes@@3V?$DynamicVectorClass@PAVBuildingTypeClass@@@@A=00a35cd8
@@ -39,8 +39,8 @@ struct UnknownBuildupShape {
 void __fastcall BuildingTypeClass::Init(int theater)
 {
     unknown_func_458510();
-    unknown_poweroff_shape_8502a4 = MixFileClass<CCFileClass>::Retrieve("POWEROFF.SHP");
-    unknown_wrench_shape_8502a8 = MixFileClass<CCFileClass>::Retrieve("WRENCH.SHP");
+    unknown_poweroff_shape_8502a4 = MixFileClass::Retrieve("POWEROFF.SHP");
+    unknown_wrench_shape_8502a8 = MixFileClass::Retrieve("WRENCH.SHP");
     int radius = 0;
     for (int index = 0; index < BuildingTypes.Count(); index++) {
         BuildingTypeClass *type = BuildingTypes[index];
@@ -51,7 +51,7 @@ void __fastcall BuildingTypeClass::Init(int theater)
             char fullname[512];
             if (!type->DemandLoad) {
                 _makepath(fullname, 0, 0, type->unknown_1c8, Theaters[theater].Suffix);
-                type->unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                type->unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
             } else if (type->unknown_a4 != 0) {
                 operator delete(type->unknown_a4);
                 type->unknown_a4 = 0;
@@ -59,7 +59,7 @@ void __fastcall BuildingTypeClass::Init(int theater)
             }
             if (!type->DemandLoadBuildup) {
                 _makepath(fullname, 0, 0, type->BuildupFile, Theaters[theater].Suffix);
-                type->BuildupData = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                type->BuildupData = (void *)MixFileClass::Retrieve(fullname);
             } else if (type->BuildupData != 0) {
                 operator delete(type->BuildupData);
                 type->BuildupData = 0;

@@ -9,7 +9,7 @@
 // @ref ??0RawFileClass@@QAE@PBD@Z=00638b40
 // @ref ??1RawFileClass@@UAE@XZ=00638ac0
 // @ref ?Load_Alloc_Data@@YIPAXAAVFileClass@@@Z=00495230
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref ??_C@_0L@LBLF@PIPBRD?4SHP?$AA@=007e80d0
 // @ref ??_C@_08LBPN@PIPS?4SHP?$AA@=007e80c4
 // @ref ??_C@_09CMJO@PIPS2?4SHP?$AA@=007e80b8
@@ -39,7 +39,7 @@ void ObjectTypeClass::One_Time()
         unknown_pipbrd_shapes_a72fe0 = Load_Alloc_Data(file);
         unknown_pipbrd_owned_a72ff0 = unknown_pipbrd_shapes_a72fe0 != 0;
         if (unknown_pipbrd_shapes_a72fe0 == 0) {
-            unknown_pipbrd_shapes_a72fe0 = MixFileClass<CCFileClass>::Retrieve("PIPBRD.SHP");
+            unknown_pipbrd_shapes_a72fe0 = MixFileClass::Retrieve("PIPBRD.SHP");
         }
     }
     if (unknown_pips_shapes_a72fe4 == 0) {
@@ -47,7 +47,7 @@ void ObjectTypeClass::One_Time()
         unknown_pips_shapes_a72fe4 = Load_Alloc_Data(file);
         unknown_pips_owned_a72ff1 = unknown_pips_shapes_a72fe4 != 0;
         if (unknown_pips_shapes_a72fe4 == 0) {
-            unknown_pips_shapes_a72fe4 = MixFileClass<CCFileClass>::Retrieve("PIPS.SHP");
+            unknown_pips_shapes_a72fe4 = MixFileClass::Retrieve("PIPS.SHP");
         }
     }
     if (unknown_pips2_shapes_a72fe8 == 0) {
@@ -55,7 +55,7 @@ void ObjectTypeClass::One_Time()
         unknown_pips2_shapes_a72fe8 = Load_Alloc_Data(file);
         unknown_pips2_owned_a72ff2 = unknown_pips2_shapes_a72fe8 != 0;
         if (unknown_pips2_shapes_a72fe8 == 0) {
-            unknown_pips2_shapes_a72fe8 = MixFileClass<CCFileClass>::Retrieve("PIPS2.SHP");
+            unknown_pips2_shapes_a72fe8 = MixFileClass::Retrieve("PIPS2.SHP");
         }
     }
     if (unknown_talkbubl_shapes_a72fec == 0) {
@@ -63,7 +63,7 @@ void ObjectTypeClass::One_Time()
         unknown_talkbubl_shapes_a72fec = Load_Alloc_Data(file);
         unknown_talkbubl_owned_a72ff3 = unknown_talkbubl_shapes_a72fec != 0;
         if (unknown_talkbubl_shapes_a72fec == 0) {
-            unknown_talkbubl_shapes_a72fec = MixFileClass<CCFileClass>::Retrieve("TALKBUBL.SHP");
+            unknown_talkbubl_shapes_a72fec = MixFileClass::Retrieve("TALKBUBL.SHP");
         }
     }
 }

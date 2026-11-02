@@ -12,7 +12,7 @@
 // @ref ?Read_INI@ObjectTypeClass@@UAE_NAAVCCINIClass@@@Z=005d7810
 // @ref ?Theaters@@3PAUTheaterTypeStruct@@A=0079ab68
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref __makepath=007831f0
 
 bool SmudgeTypeClass::Read_INI(CCINIClass &ini)
@@ -29,7 +29,7 @@ bool SmudgeTypeClass::Read_INI(CCINIClass &ini)
         } else {
             _makepath(fullname, 0, 0, unknown_1c8, Theaters[unknown_id_source_a3d290->Theater].Suffix);
         }
-        unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+        unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
         return true;
     }
     return false;

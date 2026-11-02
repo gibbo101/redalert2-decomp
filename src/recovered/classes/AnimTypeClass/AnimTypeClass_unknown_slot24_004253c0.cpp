@@ -17,7 +17,7 @@ void AnimTypeClass::unknown_slot24(int theater)
         unknown_a4 = 0;
         char fullname[512];
         _makepath(fullname, 0, 0, ID, Theaters[theater].Suffix);
-        unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+        unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
         return;
     }
     if (unknown_207) {

@@ -4,8 +4,8 @@
     "id": "population-1329",
     "inventory_sha256": "49d1b94a6af7100dc3b6172988bde49feb61079e5601883779908eef48ef1ada",
     "gaps_sha256": "6fb700a607b66ded0937cc9ccc5f85b8f1c4c0841370f4a4e136db6a780847ee",
-    "historical_population_sha256": "f01cbfecfd549dd139f6073bed23e1ee01c1a33d491ab8508e0395dc68a6bce8",
-    "historical_acceptance_sha256": "f25a3cc8f681e8212bef3ab86bf8a50b1f308ab63fe337d17b360c96ba2f56af"
+    "historical_population_sha256": "42e612d43148cfbebee5ba43ab965b05f922a845636b88d17ae34b39e70ac7c0",
+    "historical_acceptance_sha256": "156f3f7ac2acadf1cf2e6c91e1b53d9e15ac0ae9bf9b2b853da5cce009ab753c"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -377,7 +377,7 @@
     "?Write@CCFileClass@@UAEJPBXJ@Z": 4624432,
     "?Read@CCFileClass@@UAEJPAXJ@Z": 4624480,
     "?Size@CCFileClass@@UAEJXZ": 4624720,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "?Close@CCFileClass@@UAEXXZ": 4624880,
     "?Open@CCFileClass@@UAEHH@Z": 4624928,
     "?Release@Wstring@@QAEXXZ": 7792176,
@@ -388,10 +388,10 @@
     "?x@?1???A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z@4PAU23@A": 11712044,
     "?x@?1???A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z@4PAU23@A": 11712048,
     "__real@8@3ff8a3d70a3d70a3d800": 7980312,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
     "__splitpath": 7882867,
     "__makepath": 7877104,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
     "__strupr": 7954916,
     "?Length@Wstring@@QBEIXZ": 7792544,
     "?Audio_List_Move_All@@YIXPAUAudioListNode@@0@Z": 4223664,

@@ -1,4 +1,4 @@
-// @ref ??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z=005952f0
+// @ref ??0MixFileClass@@QAE@PBDPBVPKey@@@Z=005952f0
 // @ref ??_GINIClass@@UAEPAXI@Z=004deef0
 // @ref ??_7?$List@PAUINISection@INIClass@@@@6B@=0079aaec
 // @ref ??_G?$List@PAUINISection@INIClass@@@@UAEPAXI@Z=0040e300
@@ -48,7 +48,7 @@ int __fastcall Pick_Lobby_00744090(bool require_room)
         memset(territory,0,32);
         memset(entry,0,sizeof(entry));
         memset(fallback,0,sizeof(fallback));
-        MixFileClass<CCFileClass> *archive=new MixFileClass<CCFileClass>(wdt_mix_007fe6dc,&lobby_fast_key_00839010);
+        MixFileClass *archive=new MixFileClass(wdt_mix_007fe6dc,&lobby_fast_key_00839010);
         INIClass ini;
         CCFileClass file(wdt_map_ini_007fc34c);
         ini.Load(file,false);

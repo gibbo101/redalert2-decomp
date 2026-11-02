@@ -39,7 +39,7 @@ int __fastcall unknown_cells_428ac0();    // __fastcall: Load_All 0x00711E60 cop
 // The veinhole buffers: a shared per-cell table (0x00AD07A0).
 extern unsigned char *unknown_veinhole_buffer_ad07a0;
 
-// Shape file retrieval by name: MixFileClass<CCFileClass>::Retrieve, shared/mix_file_class.hpp.
+// Shape file retrieval by name: MixFileClass::Retrieve, shared/mix_file_class.hpp.
 
 // The veinhole shape file (0x00AD079C), loaded for the theater.
 extern void const *unknown_veinhole_shape_ad079c;

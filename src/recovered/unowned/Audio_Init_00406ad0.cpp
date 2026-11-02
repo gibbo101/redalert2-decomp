@@ -43,7 +43,7 @@ int __fastcall Audio_Init(int enable)
         Audio_Main_Device = Audio_Create_Device(-1, &format);
         if (Audio_Main_Device != 0 && Audio_Device_New_Channels(Audio_Main_Device, 16) == 16) {
             Audio_Global_Levels[0] = &Audio_Main_Device->Levels;
-            AudioMix = new MixFileClass<CCFileClass>("AUDIO.MIX", &FastKey);
+            AudioMix = new MixFileClass("AUDIO.MIX", &FastKey);
             Audio_Main_Bag = Audio_Bag_Create("audio", 0);
             if (Audio_Main_Bag == 0) {
                 enable = 0;

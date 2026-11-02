@@ -4,8 +4,8 @@
     "id": "population-3700",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "ac00f8f1ed19393d80daabc602886e4ddfe15eb49d85cee08a176415afd61c97",
-    "historical_acceptance_sha256": "86dfb12c7789651bf2b2c3175a46d539f6e0acddd85c264730fdba9e0f57fc1e"
+    "historical_population_sha256": "b0c4d8d0b4c4dd60f6ea1a3c28c410b9d5badd92a8a872b0196ed8776ed39467",
+    "historical_acceptance_sha256": "e1e2babd70decd764450b3855f71bf29773c7c07190a45295c24e8208b31fc38"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -46,7 +46,7 @@
     "__imp__SetFileTime@16": 7971104,
     "__imp__SetFilePointer@16": 7971252,
     "__imp__WriteFile@20": 7971116,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "__imp__InterlockedDecrement@4": 7971264,
     "__imp__InterlockedIncrement@4": 7971260,
     "__imp__SendDlgItemMessageA@20": 7971972,
@@ -1041,8 +1041,8 @@
     "?Fetch@?$VectorClass@E@@UBEEH@Z": 7402416,
     "?Fetch@?$VectorClass@UWaypointClass@@@@UBE?AUWaypointClass@@H@Z": 7492416,
     "?Fetch@?$VectorClass@UCentroid@WorldDominationTour@@@@UBE?AUCentroid@WorldDominationTour@@H@Z": 7516256,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
     "?Length@Wstring@@QBEIXZ": 7792544,
     "?unknown_a40774@@3HA": 10749812,
     "?Is_Char_Key@WWKeyboardClass@@CIHG@Z": 5448384,

@@ -54,7 +54,7 @@ void __fastcall Init_Theater_00519e70(int theater)
         if (unknown_theater_mix_8374c8 != 0) {
             delete unknown_theater_mix_8374c8;
         }
-        unknown_theater_mix_8374c8 = new MixFileClass<CCFileClass>("GENERIC.MIX", &FastKey);
+        unknown_theater_mix_8374c8 = new MixFileClass("GENERIC.MIX", &FastKey);
         unknown_theater_mix_8374c8->Cache();
     }
 
@@ -62,12 +62,12 @@ void __fastcall Init_Theater_00519e70(int theater)
         if (unknown_theater_mix_8374c0 != 0) {
             delete unknown_theater_mix_8374c0;
         }
-        unknown_theater_mix_8374c0 = new MixFileClass<CCFileClass>(fullname, &FastKey);
+        unknown_theater_mix_8374c0 = new MixFileClass(fullname, &FastKey);
 
         if (unknown_theater_mix_8374c4 != 0) {
             delete unknown_theater_mix_8374c4;
         }
-        unknown_theater_mix_8374c4 = new MixFileClass<CCFileClass>(shortname, &FastKey);
+        unknown_theater_mix_8374c4 = new MixFileClass(shortname, &FastKey);
         unknown_theater_mix_8374c4->Cache();
         unknown_theater_mix_8374c0->Cache();
         unknown_session_a3d298.Loading_Progress_00672160(6);
@@ -75,16 +75,16 @@ void __fastcall Init_Theater_00519e70(int theater)
         if (unknown_theater_mix_8374cc != 0) {
             delete unknown_theater_mix_8374cc;
         }
-        unknown_theater_mix_8374cc = new MixFileClass<CCFileClass>(isofullname, &FastKey);
+        unknown_theater_mix_8374cc = new MixFileClass(isofullname, &FastKey);
 
         if (unknown_theater_mix_8374d0 != 0) {
             delete unknown_theater_mix_8374d0;
         }
-        unknown_theater_mix_8374d0 = new MixFileClass<CCFileClass>("ISOGEN.MIX", &FastKey);
+        unknown_theater_mix_8374d0 = new MixFileClass("ISOGEN.MIX", &FastKey);
         unknown_session_a3d298.Loading_Progress_00672160(12);
 
         wsprintfA(fullname, "%s.PAL", Theaters[theater].Root);
-        unsigned char const *ptr = (unsigned char const *)MixFileClass<CCFileClass>::Retrieve(fullname);
+        unsigned char const *ptr = (unsigned char const *)MixFileClass::Retrieve(fullname);
         if (ptr != 0) {
             for (int color = 0; color < 256; color++) {
                 unsigned char r = (unsigned char)((*ptr++) << 2);
@@ -100,7 +100,7 @@ void __fastcall Init_Theater_00519e70(int theater)
         unknown_palette_838110 = unknown_palette_837e10;
 
         wsprintfA(fullname, "UNIT%s.PAL", Theaters[theater].Suffix);
-        PaletteClass const *unitpal = (PaletteClass const *)MixFileClass<CCFileClass>::Retrieve(fullname);
+        PaletteClass const *unitpal = (PaletteClass const *)MixFileClass::Retrieve(fullname);
         unknown_481fb0();
         if (unitpal != 0) {
             unknown_palette_838a10 = *unitpal;

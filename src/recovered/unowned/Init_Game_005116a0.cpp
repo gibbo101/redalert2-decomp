@@ -395,7 +395,7 @@ static bool Bootstrap()
     Draw_Loading_Screen();
     WWKeyboard->Clear();
 
-    memmove(&unknown_palette_838a10[0], MixFileClass<CCFileClass>::Retrieve("UNITSNO.PAL"), sizeof(unknown_palette_838a10));
+    memmove(&unknown_palette_838a10[0], MixFileClass::Retrieve("UNITSNO.PAL"), sizeof(unknown_palette_838a10));
     for (index = 0; index < 256; index++) {
         unknown_palette_838a10[index] = RGBClass(
             (unsigned char)(unknown_palette_838a10[index].Red << 2),
@@ -403,7 +403,7 @@ static bool Bootstrap()
             (unsigned char)(unknown_palette_838a10[index].Blue << 2));
     }
 
-    memmove(&unknown_palette_837e10[0], MixFileClass<CCFileClass>::Retrieve("TEMPERAT.PAL"), sizeof(unknown_palette_837e10));
+    memmove(&unknown_palette_837e10[0], MixFileClass::Retrieve("TEMPERAT.PAL"), sizeof(unknown_palette_837e10));
     for (index = 0; index < 256; index++) {
         unknown_palette_837e10[index] = RGBClass(
             (unsigned char)(unknown_palette_837e10[index].Red << 2),
@@ -414,7 +414,7 @@ static bool Bootstrap()
     unknown_palette_838710 = unknown_palette_837e10;
     unknown_palette_838410[0] = unknown_palette_837510[0];
 
-    memmove(&unknown_palette_837810[0], MixFileClass<CCFileClass>::Retrieve("WAYPOINT.PAL"), sizeof(unknown_palette_837810));
+    memmove(&unknown_palette_837810[0], MixFileClass::Retrieve("WAYPOINT.PAL"), sizeof(unknown_palette_837810));
     for (index = 0; index < 256; index++) {
         unknown_palette_837810[index] = RGBClass(
             (unsigned char)(unknown_palette_837810[index].Red << 2),
@@ -438,35 +438,35 @@ static bool Bootstrap()
     unknown_drawer_8323b8 = new ConvertClass(unknown_palette_837e10, unknown_palette_837e10, unknown_surface_839950, 0x35, false);
 
     PaletteClass pal;
-    memmove(&pal[0], MixFileClass<CCFileClass>::Retrieve("ANIM.PAL"), sizeof(pal));
+    memmove(&pal[0], MixFileClass::Retrieve("ANIM.PAL"), sizeof(pal));
     for (index = 0; index < 256; index++) {
         pal[index] = RGBClass((unsigned char)(pal[index].Red << 2), (unsigned char)(pal[index].Green << 2),
             (unsigned char)(pal[index].Blue << 2));
     }
     Unit_Draw_Convert_008323C0 = new ConvertClass(pal, unknown_palette_837e10, unknown_surface_839950, 0x35, false);
 
-    memmove(&pal[0], MixFileClass<CCFileClass>::Retrieve("PALETTE.PAL"), sizeof(pal));
+    memmove(&pal[0], MixFileClass::Retrieve("PALETTE.PAL"), sizeof(pal));
     for (index = 0; index < 256; index++) {
         pal[index] = RGBClass((unsigned char)(pal[index].Red << 2), (unsigned char)(pal[index].Green << 2),
             (unsigned char)(pal[index].Blue << 2));
     }
     unknown_drawer_8323c4 = new ConvertClass(pal, unknown_palette_837e10, unknown_surface_839950, 0x35, false);
 
-    memmove(&pal[0], MixFileClass<CCFileClass>::Retrieve("UNITSNO.PAL"), sizeof(pal));
+    memmove(&pal[0], MixFileClass::Retrieve("UNITSNO.PAL"), sizeof(pal));
     for (index = 0; index < 256; index++) {
         pal[index] = RGBClass((unsigned char)(pal[index].Red << 2), (unsigned char)(pal[index].Green << 2),
             (unsigned char)(pal[index].Blue << 2));
     }
     unknown_drawer_8323b4 = new ConvertClass(pal, unknown_palette_837e10, unknown_surface_839950, 0x35, false);
 
-    memmove(&pal[0], MixFileClass<CCFileClass>::Retrieve("CAMEO.PAL"), sizeof(pal));
+    memmove(&pal[0], MixFileClass::Retrieve("CAMEO.PAL"), sizeof(pal));
     for (index = 0; index < 256; index++) {
         pal[index] = RGBClass((unsigned char)(pal[index].Red << 2), (unsigned char)(pal[index].Green << 2),
             (unsigned char)(pal[index].Blue << 2));
     }
     unknown_drawer_8323b0 = new ConvertClass(pal, unknown_palette_837e10, unknown_surface_839950, 0x35, false);
 
-    memmove(&pal[0], MixFileClass<CCFileClass>::Retrieve("MOUSEPAL.PAL"), sizeof(pal));
+    memmove(&pal[0], MixFileClass::Retrieve("MOUSEPAL.PAL"), sizeof(pal));
     for (index = 0; index < 256; index++) {
         pal[index] = RGBClass((unsigned char)(pal[index].Red << 2), (unsigned char)(pal[index].Green << 2),
             (unsigned char)(pal[index].Blue << 2));

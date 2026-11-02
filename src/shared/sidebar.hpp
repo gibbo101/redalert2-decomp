@@ -19,7 +19,7 @@
 #include "shared/power.hpp"
 #include "shared/abstract.hpp"
 
-// Shape file retrieval by name: MixFileClass<CCFileClass>::Retrieve, shared/mix_file_class.hpp.
+// Shape file retrieval by name: MixFileClass::Retrieve, shared/mix_file_class.hpp.
 // Unidentified input flag (0x00A40D44; shared/keyboard.hpp, shared/scroll.hpp).
 
 // More of the sidebar geometry (0x00839628/0x0083962C: width and height;

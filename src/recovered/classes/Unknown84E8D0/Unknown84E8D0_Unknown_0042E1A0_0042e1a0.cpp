@@ -20,7 +20,7 @@ void Unknown84E8D0::Unknown_0042E1A0()
     RawFileClass beacon_file("PBEACON.SHP");
     unknown_beacon_shape_84e98c = (ShapeFileStruct const *)Load_Alloc_Data(beacon_file);
     if (unknown_beacon_shape_84e98c == 0) {
-        unknown_beacon_shape_84e98c = (ShapeFileStruct const *)MixFileClass<CCFileClass>::Retrieve("PBEACON.SHP");
+        unknown_beacon_shape_84e98c = (ShapeFileStruct const *)MixFileClass::Retrieve("PBEACON.SHP");
     }
     if (unknown_beacon_shape_84e98c != 0) {
         unknown_64 = unknown_beacon_shape_84e98c->Width;
@@ -32,7 +32,7 @@ void Unknown84E8D0::Unknown_0042E1A0()
     RawFileClass radar_file("RDRBEACN.SHP");
     unknown_radar_beacon_shape_84e990 = (ShapeFileStruct const *)Load_Alloc_Data(radar_file);
     if (unknown_radar_beacon_shape_84e990 == 0) {
-        unknown_radar_beacon_shape_84e990 = (ShapeFileStruct const *)MixFileClass<CCFileClass>::Retrieve("RDRBEACN.SHP");
+        unknown_radar_beacon_shape_84e990 = (ShapeFileStruct const *)MixFileClass::Retrieve("RDRBEACN.SHP");
     }
     if (unknown_radar_beacon_shape_84e990 != 0) {
         unknown_70 = unknown_radar_beacon_shape_84e990->Width;

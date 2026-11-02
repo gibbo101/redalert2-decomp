@@ -600,7 +600,7 @@ bool TechnoTypeClass::Read_INI(CCINIClass &ini)
             unknown_a4 = 0;
             unknown_a8 = false;
         }
-        unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+        unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
 
         ArtINI.Get_String(unknown_1c8, "Palette", "", PaletteFile.Buffer, sizeof(PaletteFile.Buffer));
         Load_Palette();
@@ -622,18 +622,18 @@ bool TechnoTypeClass::Read_INI(CCINIClass &ini)
             strcpy(CameoFile.Buffer, cameo);
             _makepath(fullname, 0, 0, CameoFile, ".SHP");
             if (CameoData == 0) {
-                CameoData = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                CameoData = (void *)MixFileClass::Retrieve(fullname);
             }
         }
         if (CameoData == 0) {
-            CameoData = (void *)MixFileClass<CCFileClass>::Retrieve("XXICON.SHP");
+            CameoData = (void *)MixFileClass::Retrieve("XXICON.SHP");
         }
         ArtINI.Get_String(unknown_1c8, "AltCameo", "", cameo, sizeof(AltCameoFile));
         if (strlen(cameo) != 0) {
             strcpy(AltCameoFile.Buffer, cameo);
             _makepath(fullname, 0, 0, AltCameoFile, ".SHP");
             if (AltCameoData == 0) {
-                AltCameoData = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                AltCameoData = (void *)MixFileClass::Retrieve(fullname);
             }
         }
 

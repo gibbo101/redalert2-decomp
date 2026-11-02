@@ -12,11 +12,11 @@ int CCFileClass::Open(int rights)
     if ((rights & FILE_RIGHTS_WRITE) || CDFileClass::Is_Available()) {
         return CDFileClass::Open(rights);
     }
-    MixFileClass<CCFileClass> *mixfile = 0;
+    MixFileClass *mixfile = 0;
     void *pointer = 0;
     long length = 0;
     long start = 0;
-    if (MixFileClass<CCFileClass>::Offset(File_Name(), &pointer, &mixfile, &start, &length)) {
+    if (MixFileClass::Offset(File_Name(), &pointer, &mixfile, &start, &length)) {
         if (pointer == 0 && mixfile != 0) {
             char *name = _strdup(File_Name());
             Open(mixfile->Filename, FILE_RIGHTS_READ);

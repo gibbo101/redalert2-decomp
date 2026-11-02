@@ -23,7 +23,7 @@ void const *__fastcall Unknown_Load_Shape_00495270(char const *name,bool &alloca
 // @ref __makepath=007831f0
 // @ref __ftol=0077f110
 // @ref ?ArtINI@@3VCCINIClass@@A=008397f0
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref ?Unknown_Load_Shape_00495270@@YIPBXPBDAA_N@Z=00495270
 // @ref ??_C@_04BOIE@?4SHP?$AA@=007ced14
 void BuildingTypeClass::unknown_func_458ea0(int theater)
@@ -34,7 +34,7 @@ void BuildingTypeClass::unknown_func_458ea0(int theater)
     if(!DemandLoadBuildup && strlen(BuildupFile)!=0) {
         _makepath(fullname,0,0,BuildupFile,".SHP");
         Theater_Naming_Convention(fullname,theater);
-        void *shape=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+        void *shape=(void *)MixFileClass::Retrieve(fullname);
         if(shape==0) {
             Generic_Naming_Convention(fullname);
             CCFileClass file(fullname);
@@ -80,10 +80,10 @@ void BuildingTypeClass::unknown_func_458ea0(int theater)
     if(strlen(name)!=0) {
         _makepath(fullname,0,0,name,".SHP");
         Theater_Naming_Convention(fullname,theater);
-        DoorAnimData_11c0=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+        DoorAnimData_11c0=(void *)MixFileClass::Retrieve(fullname);
         if(DoorAnimData_11c0==0) {
             Generic_Naming_Convention(fullname);
-            DoorAnimData_11c0=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            DoorAnimData_11c0=(void *)MixFileClass::Retrieve(fullname);
         }
     }
     ArtINI.Get_String(unknown_1c8,"UnderDoorAnim",unknown_string_83c55c,name,64);
@@ -95,7 +95,7 @@ void BuildingTypeClass::unknown_func_458ea0(int theater)
         if(unknown_11a8==0) {
             Generic_Naming_Convention(fullname);
             Free_unknown_11a8();
-            unknown_11a8=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            unknown_11a8=(void *)MixFileClass::Retrieve(fullname);
         }
     }
     ArtINI.Get_String(unknown_1c8,"UnderRoofDoorAnim",unknown_string_83c55c,name,64);
@@ -107,17 +107,17 @@ void BuildingTypeClass::unknown_func_458ea0(int theater)
         if(unknown_11b8==0) {
             Generic_Naming_Convention(fullname);
             Free_unknown_11b8();
-            unknown_11b8=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            unknown_11b8=(void *)MixFileClass::Retrieve(fullname);
         }
     }
     ArtINI.Get_String(unknown_1c8,"SpecialZOverlay",unknown_string_83c55c,name,64);
     if(strlen(name)!=0) {
         _makepath(fullname,0,0,name,".SHP");
         Theater_Naming_Convention(fullname,theater);
-        SpecialZOverlayData_11c4=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+        SpecialZOverlayData_11c4=(void *)MixFileClass::Retrieve(fullname);
         if(SpecialZOverlayData_11c4==0) {
             Generic_Naming_Convention(fullname);
-            SpecialZOverlayData_11c4=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            SpecialZOverlayData_11c4=(void *)MixFileClass::Retrieve(fullname);
         }
     }
     ArtINI.Get_String(unknown_1c8,"BibShape",unknown_string_83c55c,name,64);
@@ -129,7 +129,7 @@ void BuildingTypeClass::unknown_func_458ea0(int theater)
         if(unknown_11cc==0) {
             Generic_Naming_Convention(fullname);
             Free_unknown_11cc();
-            unknown_11cc=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            unknown_11cc=(void *)MixFileClass::Retrieve(fullname);
         }
     }
     ArtINI.Get_String(unknown_1c8,"Image",unknown_string_83c55c,name,64);
@@ -140,11 +140,11 @@ void BuildingTypeClass::unknown_func_458ea0(int theater)
     Theater_Naming_Convention(fullname,theater);
     strncpy(unknown_13eb,fullname,19);
     if(!DemandLoad) {
-        unknown_a4=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+        unknown_a4=(void *)MixFileClass::Retrieve(fullname);
         if(unknown_a4==0) {
             Generic_Naming_Convention(fullname);
             strncpy(unknown_13eb,fullname,19);
-            unknown_a4=(void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            unknown_a4=(void *)MixFileClass::Retrieve(fullname);
         }
     }
     unknown_func_459640();

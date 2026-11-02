@@ -23,7 +23,7 @@ void CellClass::Draw_Fog_Shape(Point2D const &point, Rect const &clip, int frame
 
     if (!shapes_loaded) {
         shapes_loaded = true;
-        shapes = (ShapeFileStruct const *)MixFileClass<CCFileClass>::Retrieve("FOG.SHP");
+        shapes = (ShapeFileStruct const *)MixFileClass::Retrieve("FOG.SHP");
     }
 
     Rect shaperect = shapes->Get_Frame_Rect(frame);

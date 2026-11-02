@@ -9,7 +9,7 @@
 // @ref ?unknown_a40d13@@3_NA=00a40d13
 // @ref ?unknown_loaded_theater_7d88dc@@3HA=007d88dc
 // @ref ?Theaters@@3PAUTheaterTypeStruct@@A=0079ab68
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref __makepath=007831f0
 
 void __fastcall SmudgeTypeClass::Init(int theater)
@@ -20,7 +20,7 @@ void __fastcall SmudgeTypeClass::Init(int theater)
             if (smudge->unknown_1fc) {
                 char fullname[512];
                 _makepath(fullname, 0, 0, smudge->ID, Theaters[theater].Suffix);
-                smudge->unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                smudge->unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
             }
         }
     }

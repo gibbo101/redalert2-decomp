@@ -8,7 +8,7 @@ bool CCFileClass::Is_Available(int)
     if (Is_Open()) {
         return true;
     }
-    if (MixFileClass<CCFileClass>::Offset(File_Name())) {
+    if (MixFileClass::Offset(File_Name())) {
         return true;
     }
     return CDFileClass::Is_Available();

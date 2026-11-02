@@ -4,8 +4,8 @@
     "id": "population-3659",
     "inventory_sha256": "eb37a402c589b1feb8b8c69da9878dccb02456c5f53dc92b9cd1d6fb1af681f1",
     "gaps_sha256": "129efb8d8e0b6c491692c9fa0a0b38f438b46256157b893b2c51b50e716aa5c3",
-    "historical_population_sha256": "ec55a06e5332822dabbe202d0aba9b8060ecc8675bf683eaeacdda33d624ef77",
-    "historical_acceptance_sha256": "f8cc5f7517d3d77bea7fe55a374182700e9d8e714dd09febd1751b58ebde2189"
+    "historical_population_sha256": "6ab18df1ad6cc8b083684811517f324d3930da6e8d0ee70760e83361a4d984b5",
+    "historical_acceptance_sha256": "f3b6578e7364dac162d5df6fac325da0b87b14860ec8cfad630418cff250c256"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5726,8 +5726,8 @@
     "?Is_To_Have_Shadow@LocomotionClass@@UAG_NXZ": 5493984,
     "?Process@LocomotionClass@@UAG_NXZ": 5494112,
     "?Is_Moving@LocomotionClass@@UAG_NXZ": 5494224,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
     "?Z_Gradient@TunnelLocomotionClass@@UAGHXZ": 7279040,
     "?Is_Surfacing@TunnelLocomotionClass@@UAG_NXZ": 7279488,
     "?Unlock@XSurface@@UAE_NXZ": 4264688,
@@ -7145,7 +7145,7 @@
     "??_GBitFontClass@@UAEPAXI@Z": 4399616,
     "??_7BitFontClass@@6B@": 7980936,
     "??_GCCFileClass@@UAEPAXI@Z": 4200864,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "??1MultiplayerGameMode@@UAE@XZ": 5991968,
     "??_GMSAnim@@UAEPAXI@Z": 5962912,
     "?Save@AlphaShapeClass@@UAGJPAUIStream@@H@Z": 4321472,

@@ -72,7 +72,7 @@ bool __fastcall Set_Display_Mode(int width, int height)
             unknown_surface_839950 = DSurface::Create_Primary(0);
             Debug_Printf("Restoring mouse handler\n");
             WWMouse = new WWMouseClass(unknown_surface_839950, MainWindow);
-            void const *shape = MixFileClass<CCFileClass>::Retrieve("MOUSE.SHP");
+            void const *shape = MixFileClass::Retrieve("MOUSE.SHP");
             if (shape) {
                 Point2D hotspot = Point2D(0, 0);
                 WWMouse->Set_Cursor(hotspot, (ShapeFileStruct const *)shape, 0);
@@ -135,7 +135,7 @@ bool __fastcall Set_Display_Mode(int width, int height)
     Unknown_00486010(red_right, red_left, green_right, green_left, blue_right, blue_left);
     if (WWMouse == 0) {
         WWMouse = new WWMouseClass(unknown_surface_839950, MainWindow);
-        void const *shape = MixFileClass<CCFileClass>::Retrieve("MOUSE.SHP");
+        void const *shape = MixFileClass::Retrieve("MOUSE.SHP");
         if (shape) {
             Point2D hotspot = Point2D(0, 0);
             WWMouse->Set_Cursor(hotspot, (ShapeFileStruct const *)shape, 0);

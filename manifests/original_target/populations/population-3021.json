@@ -4,8 +4,8 @@
     "id": "population-3021",
     "inventory_sha256": "c4bab5dd10b39188fe23ac8e5f651c2921a0fce52ce6b4d6cf18bb2ab1c1e4ab",
     "gaps_sha256": "e1c040e0b5439ba91fadc63526d0d321b3019c2dc26c88c16d690f4e1cfde86c",
-    "historical_population_sha256": "90db56ea91ed78c7ca4cdb5d00c9b898047dd5b957c859e70a0d195127752c4b",
-    "historical_acceptance_sha256": "3e9442d2632a9aef640ab4c2df752b5fe9f536f3f5aeff2c2a4d25ed3c772b7c"
+    "historical_population_sha256": "1e6567ef45e4f44da5c3d049112c804f8e711ed14e9ef74bad01618f5605428f",
+    "historical_acceptance_sha256": "9c38bb0c6d58379f42f114f02a8082557911d5632ed6e13e9a6b9d6555c8ec2d"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -3174,16 +3174,16 @@
     "?unknown_grfxtxt_shape_a41674@@3PAXA": 10753652,
     "?unknown_handle_abd47c@@3PAXA": 11261052,
     "?unknown_handle_abd480@@3PAXA": 11261056,
-    "?unknown_language_mix_8374bc@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615100,
-    "?unknown_mix_8374d8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615128,
-    "?unknown_mix_8374fc@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615164,
-    "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615040,
+    "?unknown_language_mix_8374bc@@3PAVMixFileClass@@A": 8615100,
+    "?unknown_mix_8374d8@@3PAVMixFileClass@@A": 8615128,
+    "?unknown_mix_8374fc@@3PAVMixFileClass@@A": 8615164,
+    "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8615040,
     "?unknown_surface_839968@@3PAVSurface@@A": 8624488,
-    "?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615104,
-    "?unknown_theater_mix_8374c4@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615108,
-    "?unknown_theater_mix_8374c8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615112,
-    "?unknown_theater_mix_8374cc@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615116,
-    "?unknown_theater_mix_8374d0@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615120,
+    "?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A": 8615104,
+    "?unknown_theater_mix_8374c4@@3PAVMixFileClass@@A": 8615108,
+    "?unknown_theater_mix_8374c8@@3PAVMixFileClass@@A": 8615112,
+    "?unknown_theater_mix_8374cc@@3PAVMixFileClass@@A": 8615116,
+    "?unknown_theater_mix_8374d0@@3PAVMixFileClass@@A": 8615120,
     "?Kill_Mouse_Thread@@YIXXZ": 7805344,
     "?Fetch@?$VectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UBE?AU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@H@Z": 6507536,
     "??_G?$VectorClass@H@@UAEPAXI@Z": 4643440,
@@ -3349,7 +3349,7 @@
     "__imp__RegCreateKeyExA@36": 7970840,
     "__imp__RegCreateKeyExA": 7970840,
     "__imp__timeGetTime": 7972132,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "__imp__SendDlgItemMessageA@20": 7971972,
     "__imp__DefWindowProcA@16": 7971720,
     "__imp__GetCommModemStatus@8": 7971188,
@@ -3611,7 +3611,7 @@
     "??_GAircraftClass@@UAEPAXI@Z": 4306448,
     "??1AircraftClass@@UAE@XZ": 4275616,
     "?Init@AircraftTypeClass@@SAXXZ": 4308656,
-    "?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z": 5854912,
+    "?Retrieve@MixFileClass@@SIPBXPBD@Z": 5854912,
     "?unknown_slot40@AircraftTypeClass@@UBE_NXZ": 4308736,
     "?unknown_slot41@AircraftTypeClass@@UBE_NXZ": 4308752,
     "?GetClassID@AircraftTypeClass@@UAGJPAUGUID@@@Z": 4309520,
@@ -5826,16 +5826,16 @@
     "?Locate_Line_Comment@INIClass@@SIPADPADAAH11@Z": 5310128,
     "?Strip_Comments@INIClass@@SIXPAD@Z": 5310304,
     "?Is_Section_Header@INIClass@@SI_NPBD@Z": 5310352,
-    "??_G?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z": 5856352,
-    "??_7?$MixFileClass@VCCFileClass@@@@6B@": 8021104,
-    "?Compare_Blocks@?$MixFileClass@VCCFileClass@@@@SAHPBX0@Z": 5853904,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
-    "?MixList@?$MixFileClass@VCCFileClass@@@@2V?$List@PAV?$MixFileClass@VCCFileClass@@@@@@A": 10947776,
-    "??1?$MixFileClass@VCCFileClass@@@@UAE@XZ": 5854752,
-    "?Finder@?$MixFileClass@VCCFileClass@@@@SIPAV1@PBD@Z": 5854944,
-    "?Cache@?$MixFileClass@VCCFileClass@@@@SI_NPBDPBVBuffer@@@Z": 5855088,
-    "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z": 5855248,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
+    "??_GMixFileClass@@UAEPAXI@Z": 5856352,
+    "??_7MixFileClass@@6B@": 8021104,
+    "?Compare_Blocks@MixFileClass@@SAHPBX0@Z": 5853904,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
+    "?MixList@MixFileClass@@2V?$List@PAVMixFileClass@@@@A": 10947776,
+    "??1MixFileClass@@UAE@XZ": 5854752,
+    "?Finder@MixFileClass@@SIPAV1@PBD@Z": 5854944,
+    "?Cache@MixFileClass@@SI_NPBDPBVBuffer@@@Z": 5855088,
+    "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z": 5855248,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
     "??0Wstring@@QAE@ABV0@@Z": 7788928,
     "??8Wstring@@QBE_NPBD@Z": 7789056,
     "??8Wstring@@QBE_NABV0@@Z": 7789168,
@@ -6123,14 +6123,14 @@
     "?Unknown_004985C0@CD@@QAE_NH@Z": 4818368,
     "?Swap_Disk@CD@@UAE_NH@Z": 4646736,
     "?Stop@ThemeClass@@QAEX_N@Z": 7242144,
-    "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615124,
-    "?ThemeMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8590408,
-    "?MultiMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615064,
-    "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615156,
-    "?MainMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615132,
+    "?MoviesMix@@3PAVMixFileClass@@A": 8615124,
+    "?ThemeMix@@3PAVMixFileClass@@A": 8590408,
+    "?MultiMix@@3PAVMixFileClass@@A": 8615064,
+    "?MapsMix@@3PAVMixFileClass@@A": 8615156,
+    "?MainMix@@3PAVMixFileClass@@A": 8615132,
     "?VolumeCheck@@YA_NXZ": 7426192,
     "?FastKey@@3VPKey@@A": 8622096,
-    "??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z": 5853936,
+    "??0MixFileClass@@QAE@PBDPBVPKey@@@Z": 5853936,
     "?Scan@ThemeClass@@QAEXXZ": 7240432,
     "?Error@CCFileClass@@UAEXHHPBD@Z": 4624384,
     "??_7CD@@6B@": 7985256,
@@ -7817,7 +7817,7 @@
     "?Audio_Event_Type_Set_Volume@@YIXPAUAudioEventType@@H@Z": 4220256,
     "?Audio_Event_Type_Set_Flags@@YIXPAUAudioEventType@@I@Z": 4220288,
     "?Audio_Event_Type_Set_Percent@@YIXPAUAudioEventType@@H@Z": 4220464,
-    "?AudioMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8590404,
+    "?AudioMix@@3PAVMixFileClass@@A": 8590404,
     "??9WideString@@QBE_NPBG@Z": 7797488,
     "??9WideString@@QBE_NABV0@@Z": 7797552,
     "?Concatenate@WideString@@QAE_NPBG@Z": 7797856,
@@ -9191,8 +9191,8 @@
     "?unknown_set_mission_timer_text@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7015504,
     "?unknown_stop_mission_timer@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7015008,
     "?Init_Expansion_Files@@YA_NXZ": 5331696,
-    "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8614992,
-    "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615152,
+    "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8614992,
+    "?unknown_mix_8374f0@@3PAVMixFileClass@@A": 8615152,
     "?Unknown_0051A2B0@@YA_NXZ": 5350064,
     "?Unknown_00496460@@YAXPBDZZ": 4809824,
     "?Execute@SetStructureTabCommandClass@@UBEXH@Z": 5353520,
@@ -9228,13 +9228,13 @@
     "?CustomSeed@@3IA": 10751296,
     "?Seed@@3IA": 10751292,
     "?Init_Bootstrap_Mixfiles@@YI_NXZ": 5332112,
-    "?unknown_ra2_mix_8374b8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615096,
-    "?unknown_cache_mix_8374e8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615144,
-    "?unknown_local_mix_8374ec@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615148,
+    "?unknown_ra2_mix_8374b8@@3PAVMixFileClass@@A": 8615096,
+    "?unknown_cache_mix_8374e8@@3PAVMixFileClass@@A": 8615144,
+    "?unknown_local_mix_8374ec@@3PAVMixFileClass@@A": 8615148,
     "?Increase_Table_Size@?$IndexClass@HPAVCommandClass@@@@QAE_NH@Z": 5367648,
-    "?unknown_mix_8374f8@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615160,
-    "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615168,
-    "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615172,
+    "?unknown_mix_8374f8@@3PAVMixFileClass@@A": 8615160,
+    "?unknown_side_mix_837500@@3PAVMixFileClass@@A": 8615168,
+    "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A": 8615172,
     "?Unknown_007168C0@@YIXH@Z": 7432384,
     "?Unknown_006F44D0@@YAXXZ": 7292112,
     "?Set_Player_Map_State_005c3f00@@YIXPBDH@Z": 6045440,
@@ -9290,12 +9290,12 @@
     "?Unknown_005cd3f0@@YIXPAUHWND__@@@Z": 6083568,
     "?Unknown_005cd540@@YIXPAUHWND__@@@Z": 6083904,
     "?Init_Secondary_Mixfiles@@YI_NXZ": 5332592,
-    "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615136,
-    "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A": 8615140,
+    "?ConquerMix@@3PAVMixFileClass@@A": 8615136,
+    "?CameoMix@@3PAVMixFileClass@@A": 8615140,
     "?Find_Next_File@CDFileClass@@SI_NPAD@Z": 4654080,
-    "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615016,
+    "?unknown_maps_mixes_837468@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8615016,
     "?Find_Close@CDFileClass@@SAXXZ": 4654192,
-    "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A": 8615072,
+    "?unknown_movies_mixes_8374a0@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A": 8615072,
     "?unknown_profile_cpu_text_a411fc@@3PADA": 10752508,
     "?unknown_profile_ram_text_a41388@@3PADA": 10752904,
     "?unknown_profile_vram_text_a41308@@3PADA": 10752776,
@@ -9472,7 +9472,7 @@
     "?File_Name@RawFileClass@@": 4200768,
     "?End@Pipe@@": 4639616,
     "??_7CacheStraw@@6B@": 8010684,
-    "??_E?$MixFileClass@VCCFileClass@@@@UAEPAXI@Z": 5856352,
+    "??_EMixFileClass@@UAEPAXI@Z": 5856352,
     "??_GGenericNode@@UAEPAXI@Z": 4252112,
     "??_EGenericNode@@UAEPAXI@Z": 4252112,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAUINIEntry@INIClass@@@@PAU12@HABU12@@Z": 5313328,
@@ -10937,7 +10937,247 @@
     "??_EConvertClass@@UAEPAXI@Z": 4743456,
     "??_ECacheStraw@@UAEPAXI@Z": 5311184,
     "??_E?$DynamicVectorClass@V?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@@UAEPAXI@Z": 7080144,
-    "??_E?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128
+    "??_E?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128,
+    "??_7?$DynamicVectorClass@PAVMixFileClass@@@@6B@": 7973428,
+    "?AddRef@TiberianSunClassFactory@@UAGKXZ": 5065040,
+    "?Release@TiberianSunClassFactory@@UAGKXZ": 5065056,
+    "??_7?$DynamicVectorClass@PAVIonBlastClass@@@@6B@": 8013268,
+    "?Put@SHAPipe@@UAEHPBXH@Z": 6771584,
+    "??0TaskForceClass@@QAE@PBD@Z": 7039056,
+    "??_GVersionClass@@UAEPAXI@Z": 5065088,
+    "??_7VersionClass@@6B@": 8006332,
+    "??_GCommandClass@@UAEPAXI@Z": 5353376,
+    "??_GMultiplayerDebugCommandClass@@UAEPAXI@Z": 5364288,
+    "??8BaseNodeClass@@QAE_NABV0@@Z": 4374240,
+    "??OBaseNodeClass@@QAE_NABV0@@Z": 4374368,
+    "?Difference@HSVClass@@QBEHABV1@@Z": 5238784,
+    "??8HSVClass@@QBE_NABV0@@Z": 5239152,
+    "?unknown_slot1@ReferenceCounted@@UAE_NH@Z": 6526784,
+    "??_7TaskForceClass@@6BIPersistStream@@@": 8046752,
+    "??_7TaskForceClass@@6BIRTTITypeInfo@@@": 8046724,
+    "??_7TaskForceClass@@6BINoticeSink@@@": 8046716,
+    "??_7TaskForceClass@@6BINoticeSource@@@": 8046708,
+    "??0TaskForceClass@@QAE@ABVNoInitClass@@@Z": 7039264,
+    "??1TaskForceClass@@UAE@XZ": 7039312,
+    "??4TaskForceClass@@QAE?AV0@ABV0@@Z": 7039680,
+    "??0TaskForceClass@@QAE@ABV0@@Z": 7039440,
+    "??_GTaskForceClass@@UAEPAXI@Z": 7041456,
+    "?Fast_Sqrt_Float_004BA830@@YGMM@Z": 4958256,
+    "_$E69": 5622720,
+    "?Axis_To_Quat@@YI?AVQuaternion@@ABUVector3@@M@Z": 6433200,
+    "?BombList@@3VBombListClass@@A": 8594144,
+    "?QueryInterface@TiberianSunClassFactory@@UAGJABUGUID@@PAPAX@Z": 4352784,
+    "?Adjacent_Coord_With_Height@@YI?AUCoordStruct@@ABU1@H@Z": 4790400,
+    "?Region_Threat@MapClass@@QAEHPAVHouseClass@@HHH@Z": 5668128,
+    "?Remove_Action@TriggerTypeClass@@QAE_NPAVTActionClass@@@Z": 7269376,
+    "?Get@SHAStraw@@UAEHPAXH@Z": 6771648,
+    "?Save@WaypointPathClass@@UAGJPAUIStream@@H@Z": 7491952,
+    "?unknown_show_text@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7013440,
+    "??9BaseNodeClass@@QAE_NABV0@@Z": 4374288,
+    "??0UnknownSessionState@@QAE@XZ": 6742912,
+    "?unknown_slot63@TerrainClass@@UAE_NPAVRect@@_N1@Z": 7226416,
+    "?Get_Buildings@CCINIClass@@QBEHPBD0H@Z": 4632224,
+    "?Put_House_List@CCINIClass@@QAE_NPBD0V?$TypeList@H@@@Z": 4636256,
+    "?unknown_flag_b2af68@@3_NA": 11710312,
+    "??_7?$VectorClass@PAVIonBlastClass@@@@6B@": 8013300,
+    "?Update_All@IonBlastClass@@SAXXZ": 5380720,
+    "?AI@IonBlastClass@@QAEXXZ": 5378880,
+    "?Clear_All@IonBlastClass@@SAXXZ": 5381296,
+    "?Draw_All@IonBlastClass@@SAXXZ": 5382064,
+    "?Draw_It@IonBlastClass@@QAEXXZ": 5381344,
+    "?unknown_init_commands_5173c0@@YAXXZ": 5338048,
+    "??_7MultiplayerSyncCommandClass@@6B@": 8012700,
+    "??_7FollowCommandClass@@6B@": 8012660,
+    "??_7View1CommandClass@@6B@": 8012620,
+    "??_7View2CommandClass@@6B@": 8012580,
+    "??_7View3CommandClass@@6B@": 8012540,
+    "??_7View4CommandClass@@6B@": 8012500,
+    "??_7SetView1CommandClass@@6B@": 8012460,
+    "??_7SetView2CommandClass@@6B@": 8012420,
+    "??_7SetView3CommandClass@@6B@": 8012380,
+    "??_7SetView4CommandClass@@6B@": 8012340,
+    "??_7OptionsCommandClass@@6B@": 8012300,
+    "??_7SidebarUpCommandClass@@6B@": 8012260,
+    "??_7LSidebarUpCommandClass@@6B@": 8012220,
+    "??_7RSidebarUpCommandClass@@6B@": 8012180,
+    "??_7SidebarDownCommandClass@@6B@": 8012140,
+    "??_7LSidebarDownCommandClass@@6B@": 8012100,
+    "??_7RSidebarDownCommandClass@@6B@": 8012060,
+    "??_7SidebarPageUpCommandClass@@6B@": 8012020,
+    "??_7LSidebarPageUpCommandClass@@6B@": 8011980,
+    "??_7RSidebarPageUpCommandClass@@6B@": 8011940,
+    "??_7SidebarPageDownCommandClass@@6B@": 8011900,
+    "??_7LSidebarPageDownCommandClass@@6B@": 8011860,
+    "??_7RSidebarPageDownCommandClass@@6B@": 8011820,
+    "??_7CenterREventCommandClass@@6B@": 8011780,
+    "??_7BeaconPlacementCommandClass@@6B@": 8011740,
+    "??_7ToggleSellCommandClass@@6B@": 8011700,
+    "??_7ToggleRepairCommandClass@@6B@": 8011660,
+    "??_7AllianceCommandClass@@6B@": 8011620,
+    "??_7CenterBaseCommandClass@@6B@": 8011580,
+    "??_7CenterViewCommandClass@@6B@": 8011540,
+    "??_7ScatterCommandClass@@6B@": 8011500,
+    "??_7GuardCommandClass@@6B@": 8011460,
+    "??_7StopCommandClass@@6B@": 8011420,
+    "??_7AllToCheerCommandClass@@6B@": 8011380,
+    "??_7DeployCommandClass@@6B@": 8011340,
+    "??_7PrevObjectCommandClass@@6B@": 8011300,
+    "??_7NextObjectCommandClass@@6B@": 8011260,
+    "??_7PlanningModeCommandClass@@6B@": 8011220,
+    "??_7CombatantSelectCommandClass@@6B@": 8011180,
+    "??_7TypeSelectCommandClass@@6B@": 8011140,
+    "??_7HealthNavCommandClass@@6B@": 8011100,
+    "??_7VeterancyNavCommandClass@@6B@": 8011060,
+    "??_7SetStructureTabCommandClass@@6B@": 8011020,
+    "??_7SetDefenseTabCommandClass@@6B@": 8010980,
+    "??_7SetUnitTabCommandClass@@6B@": 8010940,
+    "??_7SetInfantryTabCommandClass@@6B@": 8010900,
+    "?Add@?$DynamicVectorClass@PBVCommandClass@@@@QAE_NABQBVCommandClass@@@Z": 5366624,
+    "??_7ScreenCaptureCommandClass@@6B@": 8010820,
+    "?Is_Present@?$IndexClass@HPAVCommandClass@@@@QBE_NABH@Z": 5367136,
+    "?Remove_Index@?$IndexClass@HPAVCommandClass@@@@QAE_NABH@Z": 5366912,
+    "?Add_Index@?$IndexClass@HPAVCommandClass@@@@QAE_NABHABQAVCommandClass@@@Z": 5366704,
+    "??0VersionClass@@QAE@XZ": 7416608,
+    "?Repair_All_High_Bridges_0054c7a0@MapClass@@QAEXXZ": 5556128,
+    "?Repair_High_Bridge_Span_0054b560@MapClass@@QAEXPAVCellClass@@W4FacingType@@PAVRect@@@Z": 5551456,
+    "?Version_Number@VersionClass@@QAEKXZ": 7416656,
+    "?Major_Version@VersionClass@@QAEGXZ": 7417168,
+    "?Minor_Version@VersionClass@@QAEGXZ": 7417360,
+    "?Read_Text_String@VersionClass@@QAEXXZ": 7418000,
+    "_?empty@?1??Version_Name_007131d0@@YIPBDXZ@4_NA": 8362264,
+    "_?buffer@?1??Version_Name_007131d0@@YIPBDXZ@4PADA": 8361752,
+    "?Repair_High_Bridge_From_Cell_0054cbe0@MapClass@@QAEXABVCell@@@Z": 5557216,
+    "?Repair_Train_Bridge_From_Cell_0054d0a0@MapClass@@QAEXABVCell@@@Z": 5558432,
+    "?Repair_Train_Bridge_Span_0054be80@MapClass@@QAEXPAVCellClass@@W4FacingType@@PAVRect@@@Z": 5553792,
+    "__iob": 8580240,
+    "__real@8@bff8a3d70a3d70a3d800": 8055152,
+    "?BlackColor@HSVClass@@2V1@B": 10752188,
+    "??0PaletteClass@@QAE@ABVRGBClass@@@Z": 6303696,
+    "??0PaletteClass@@QAE@PAE@Z": 6303776,
+    "??8PaletteClass@@QBE_NABV0@@Z": 6303824,
+    "?Adjust@PaletteClass@@QAEXH@Z": 6303904,
+    "?Adjust@PaletteClass@@QAEXHABV1@@Z": 6303952,
+    "?Partial_Adjust@PaletteClass@@QAEXHPAD@Z": 6304032,
+    "??4AbstractClass@@QAEAAV0@ABV0@@Z": 5679600,
+    "?Add_Object@?$HashTableClass@IUSubzoneConnectionStruct@@@@QAE_NHABU?$HashObject@IUSubzoneConnectionStruct@@@@@Z": 5684224,
+    "??4SubzoneTrackingStruct@@QAEAAU0@ABU0@@Z": 5685984,
+    "??_GMultiplayerSyncCommandClass@@UAEPAXI@Z": 5364320,
+    "??_GFollowCommandClass@@UAEPAXI@Z": 5364352,
+    "??_GView1CommandClass@@UAEPAXI@Z": 5364384,
+    "??_GView2CommandClass@@UAEPAXI@Z": 5364416,
+    "??_GView3CommandClass@@UAEPAXI@Z": 5364448,
+    "??_GView4CommandClass@@UAEPAXI@Z": 5364480,
+    "??_GSetView1CommandClass@@UAEPAXI@Z": 5364512,
+    "??_GSetView2CommandClass@@UAEPAXI@Z": 5364544,
+    "??_GSetView3CommandClass@@UAEPAXI@Z": 5364576,
+    "??_GSetView4CommandClass@@UAEPAXI@Z": 5364608,
+    "??_GOptionsCommandClass@@UAEPAXI@Z": 5364640,
+    "??_GSidebarUpCommandClass@@UAEPAXI@Z": 5364672,
+    "??_GLSidebarUpCommandClass@@UAEPAXI@Z": 5364704,
+    "??_GRSidebarUpCommandClass@@UAEPAXI@Z": 5364736,
+    "??_GSidebarDownCommandClass@@UAEPAXI@Z": 5364768,
+    "??_GLSidebarDownCommandClass@@UAEPAXI@Z": 5364800,
+    "??_GRSidebarDownCommandClass@@UAEPAXI@Z": 5364832,
+    "??_GSidebarPageUpCommandClass@@UAEPAXI@Z": 5364864,
+    "??_GLSidebarPageUpCommandClass@@UAEPAXI@Z": 5364896,
+    "??_GRSidebarPageUpCommandClass@@UAEPAXI@Z": 5364928,
+    "??_GSidebarPageDownCommandClass@@UAEPAXI@Z": 5364960,
+    "??_GLSidebarPageDownCommandClass@@UAEPAXI@Z": 5364992,
+    "??_GRSidebarPageDownCommandClass@@UAEPAXI@Z": 5365024,
+    "??_GCenterREventCommandClass@@UAEPAXI@Z": 5365056,
+    "??_GBeaconPlacementCommandClass@@UAEPAXI@Z": 5365088,
+    "??_GToggleSellCommandClass@@UAEPAXI@Z": 5365120,
+    "??_GToggleRepairCommandClass@@UAEPAXI@Z": 5365152,
+    "??_GAllianceCommandClass@@UAEPAXI@Z": 5365184,
+    "??_GCenterBaseCommandClass@@UAEPAXI@Z": 5365216,
+    "??_GCenterViewCommandClass@@UAEPAXI@Z": 5365248,
+    "??_GScatterCommandClass@@UAEPAXI@Z": 5365280,
+    "??_GGuardCommandClass@@UAEPAXI@Z": 5365312,
+    "??_GStopCommandClass@@UAEPAXI@Z": 5365344,
+    "??_GAllToCheerCommandClass@@UAEPAXI@Z": 5365376,
+    "??_GDeployCommandClass@@UAEPAXI@Z": 5365408,
+    "??_GPrevObjectCommandClass@@UAEPAXI@Z": 5365440,
+    "??_GNextObjectCommandClass@@UAEPAXI@Z": 5365472,
+    "??_GPlanningModeCommandClass@@UAEPAXI@Z": 5365504,
+    "??_GCombatantSelectCommandClass@@UAEPAXI@Z": 5365536,
+    "??_GTypeSelectCommandClass@@UAEPAXI@Z": 5365568,
+    "??_GHealthNavCommandClass@@UAEPAXI@Z": 5365600,
+    "??_GVeterancyNavCommandClass@@UAEPAXI@Z": 5365632,
+    "??_GSetStructureTabCommandClass@@UAEPAXI@Z": 5365664,
+    "??_GSetDefenseTabCommandClass@@UAEPAXI@Z": 5365696,
+    "??_GSetUnitTabCommandClass@@UAEPAXI@Z": 5365728,
+    "??_GSetInfantryTabCommandClass@@UAEPAXI@Z": 5365760,
+    "??_GScreenCaptureCommandClass@@UAEPAXI@Z": 5365792,
+    "?unknown_slot5@PlanningModeCommandClass@@UBE_NH@Z": 5355952,
+    "?Put_PipScale@CCINIClass@@QAE_NPBD0H@Z": 4628080,
+    "??1SideClass@@UAE@XZ": 6794960,
+    "?End@Benchmark@@QAEXXZ": 4387136,
+    "?unknown_func_6b3fe0@TagClass@@QAEXH@Z": 7028704,
+    "?Link@TagClass@@QAEXPAVTriggerClass@@@Z": 7028720,
+    "?Unlink@TagClass@@QAE_NPAVTriggerClass@@@Z": 7028736,
+    "?Has_Edit_Focus@MessageListClass@@QAE_NXZ": 5985264,
+    "??0UnknownPairSecond@@QAE@XZ": 5892960,
+    "?Play@MSSfx@@QAEXH@Z": 5990896,
+    "?Damage_Low_Bridge_Piece_EW_0055FCC0@MapClass@@QAEXABVCell@@@Z": 5635264,
+    "?Damage_Low_Bridge2_Piece_EW_005606D0@MapClass@@QAEXABVCell@@@Z": 5637840,
+    "?Damage_Low_Bridge_Piece_NS_005601F0@MapClass@@QAEXABVCell@@@Z": 5636592,
+    "?Damage_Low_Bridge2_Piece_NS_00560C10@MapClass@@QAEXABVCell@@@Z": 5639184,
+    "??_7?$VectorClass@PAVMixFileClass@@@@6B@": 7973460,
+    "?Read_Line@@YIHAAVFileClass@@PADHAA_N@Z": 6526400,
+    "?Stop@?$CDTimerClass@VFrameTimerClass@@@@QAEXXZ": 7025344,
+    "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABVRect@@HH@Z": 6923008,
+    "??_7TaskForceClass@@6B@": 8046752,
+    "??_EVersionClass@@UAEPAXI@Z": 5065088,
+    "??_ECommandClass@@UAEPAXI@Z": 5353376,
+    "??_EMultiplayerDebugCommandClass@@UAEPAXI@Z": 5364288,
+    "??_ETaskForceClass@@UAEPAXI@Z": 7041456,
+    "??_EMultiplayerSyncCommandClass@@UAEPAXI@Z": 5364320,
+    "??_EFollowCommandClass@@UAEPAXI@Z": 5364352,
+    "??_EView1CommandClass@@UAEPAXI@Z": 5364384,
+    "??_EView2CommandClass@@UAEPAXI@Z": 5364416,
+    "??_EView3CommandClass@@UAEPAXI@Z": 5364448,
+    "??_EView4CommandClass@@UAEPAXI@Z": 5364480,
+    "??_ESetView1CommandClass@@UAEPAXI@Z": 5364512,
+    "??_ESetView2CommandClass@@UAEPAXI@Z": 5364544,
+    "??_ESetView3CommandClass@@UAEPAXI@Z": 5364576,
+    "??_ESetView4CommandClass@@UAEPAXI@Z": 5364608,
+    "??_EOptionsCommandClass@@UAEPAXI@Z": 5364640,
+    "??_ESidebarUpCommandClass@@UAEPAXI@Z": 5364672,
+    "??_ELSidebarUpCommandClass@@UAEPAXI@Z": 5364704,
+    "??_ERSidebarUpCommandClass@@UAEPAXI@Z": 5364736,
+    "??_ESidebarDownCommandClass@@UAEPAXI@Z": 5364768,
+    "??_ELSidebarDownCommandClass@@UAEPAXI@Z": 5364800,
+    "??_ERSidebarDownCommandClass@@UAEPAXI@Z": 5364832,
+    "??_ESidebarPageUpCommandClass@@UAEPAXI@Z": 5364864,
+    "??_ELSidebarPageUpCommandClass@@UAEPAXI@Z": 5364896,
+    "??_ERSidebarPageUpCommandClass@@UAEPAXI@Z": 5364928,
+    "??_ESidebarPageDownCommandClass@@UAEPAXI@Z": 5364960,
+    "??_ELSidebarPageDownCommandClass@@UAEPAXI@Z": 5364992,
+    "??_ERSidebarPageDownCommandClass@@UAEPAXI@Z": 5365024,
+    "??_ECenterREventCommandClass@@UAEPAXI@Z": 5365056,
+    "??_EBeaconPlacementCommandClass@@UAEPAXI@Z": 5365088,
+    "??_EToggleSellCommandClass@@UAEPAXI@Z": 5365120,
+    "??_EToggleRepairCommandClass@@UAEPAXI@Z": 5365152,
+    "??_EAllianceCommandClass@@UAEPAXI@Z": 5365184,
+    "??_ECenterBaseCommandClass@@UAEPAXI@Z": 5365216,
+    "??_ECenterViewCommandClass@@UAEPAXI@Z": 5365248,
+    "??_EScatterCommandClass@@UAEPAXI@Z": 5365280,
+    "??_EGuardCommandClass@@UAEPAXI@Z": 5365312,
+    "??_EStopCommandClass@@UAEPAXI@Z": 5365344,
+    "??_EAllToCheerCommandClass@@UAEPAXI@Z": 5365376,
+    "??_EDeployCommandClass@@UAEPAXI@Z": 5365408,
+    "??_EPrevObjectCommandClass@@UAEPAXI@Z": 5365440,
+    "??_ENextObjectCommandClass@@UAEPAXI@Z": 5365472,
+    "??_EPlanningModeCommandClass@@UAEPAXI@Z": 5365504,
+    "??_ECombatantSelectCommandClass@@UAEPAXI@Z": 5365536,
+    "??_ETypeSelectCommandClass@@UAEPAXI@Z": 5365568,
+    "??_EHealthNavCommandClass@@UAEPAXI@Z": 5365600,
+    "??_EVeterancyNavCommandClass@@UAEPAXI@Z": 5365632,
+    "??_ESetStructureTabCommandClass@@UAEPAXI@Z": 5365664,
+    "??_ESetDefenseTabCommandClass@@UAEPAXI@Z": 5365696,
+    "??_ESetUnitTabCommandClass@@UAEPAXI@Z": 5365728,
+    "??_ESetInfantryTabCommandClass@@UAEPAXI@Z": 5365760,
+    "??_EScreenCaptureCommandClass@@UAEPAXI@Z": 5365792
   },
   "regions": [
     {
@@ -12888,7 +13128,7 @@
         {
           "offset": 975,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A",
           "target": 8615104,
           "addend": 0,
           "resolved": 8615104
@@ -12912,7 +13152,7 @@
         {
           "offset": 1003,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A",
           "target": 8615104,
           "addend": 0,
           "resolved": 8615104
@@ -12920,7 +13160,7 @@
         {
           "offset": 1009,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c4@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c4@@3PAVMixFileClass@@A",
           "target": 8615108,
           "addend": 0,
           "resolved": 8615108
@@ -12928,7 +13168,7 @@
         {
           "offset": 1025,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c4@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c4@@3PAVMixFileClass@@A",
           "target": 8615108,
           "addend": 0,
           "resolved": 8615108
@@ -12936,7 +13176,7 @@
         {
           "offset": 1031,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c8@@3PAVMixFileClass@@A",
           "target": 8615112,
           "addend": 0,
           "resolved": 8615112
@@ -12944,7 +13184,7 @@
         {
           "offset": 1047,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374c8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374c8@@3PAVMixFileClass@@A",
           "target": 8615112,
           "addend": 0,
           "resolved": 8615112
@@ -12952,7 +13192,7 @@
         {
           "offset": 1053,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374cc@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374cc@@3PAVMixFileClass@@A",
           "target": 8615116,
           "addend": 0,
           "resolved": 8615116
@@ -12960,7 +13200,7 @@
         {
           "offset": 1069,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374cc@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374cc@@3PAVMixFileClass@@A",
           "target": 8615116,
           "addend": 0,
           "resolved": 8615116
@@ -12968,7 +13208,7 @@
         {
           "offset": 1075,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374d0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374d0@@3PAVMixFileClass@@A",
           "target": 8615120,
           "addend": 0,
           "resolved": 8615120
@@ -12976,7 +13216,7 @@
         {
           "offset": 1091,
           "kind": 6,
-          "symbol": "?unknown_theater_mix_8374d0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_theater_mix_8374d0@@3PAVMixFileClass@@A",
           "target": 8615120,
           "addend": 0,
           "resolved": 8615120
@@ -13120,7 +13360,7 @@
         {
           "offset": 1239,
           "kind": 6,
-          "symbol": "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MoviesMix@@3PAVMixFileClass@@A",
           "target": 8615124,
           "addend": 0,
           "resolved": 8615124
@@ -13128,7 +13368,7 @@
         {
           "offset": 1255,
           "kind": 6,
-          "symbol": "?MoviesMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MoviesMix@@3PAVMixFileClass@@A",
           "target": 8615124,
           "addend": 0,
           "resolved": 8615124
@@ -13136,7 +13376,7 @@
         {
           "offset": 1261,
           "kind": 6,
-          "symbol": "?unknown_mix_8374d8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374d8@@3PAVMixFileClass@@A",
           "target": 8615128,
           "addend": 0,
           "resolved": 8615128
@@ -13144,7 +13384,7 @@
         {
           "offset": 1277,
           "kind": 6,
-          "symbol": "?unknown_mix_8374d8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374d8@@3PAVMixFileClass@@A",
           "target": 8615128,
           "addend": 0,
           "resolved": 8615128
@@ -13152,7 +13392,7 @@
         {
           "offset": 1283,
           "kind": 6,
-          "symbol": "?MainMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MainMix@@3PAVMixFileClass@@A",
           "target": 8615132,
           "addend": 0,
           "resolved": 8615132
@@ -13160,7 +13400,7 @@
         {
           "offset": 1299,
           "kind": 6,
-          "symbol": "?MainMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MainMix@@3PAVMixFileClass@@A",
           "target": 8615132,
           "addend": 0,
           "resolved": 8615132
@@ -13168,7 +13408,7 @@
         {
           "offset": 1305,
           "kind": 6,
-          "symbol": "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?ConquerMix@@3PAVMixFileClass@@A",
           "target": 8615136,
           "addend": 0,
           "resolved": 8615136
@@ -13176,7 +13416,7 @@
         {
           "offset": 1321,
           "kind": 6,
-          "symbol": "?ConquerMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?ConquerMix@@3PAVMixFileClass@@A",
           "target": 8615136,
           "addend": 0,
           "resolved": 8615136
@@ -13184,7 +13424,7 @@
         {
           "offset": 1327,
           "kind": 6,
-          "symbol": "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?CameoMix@@3PAVMixFileClass@@A",
           "target": 8615140,
           "addend": 0,
           "resolved": 8615140
@@ -13192,7 +13432,7 @@
         {
           "offset": 1343,
           "kind": 6,
-          "symbol": "?CameoMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?CameoMix@@3PAVMixFileClass@@A",
           "target": 8615140,
           "addend": 0,
           "resolved": 8615140
@@ -13200,7 +13440,7 @@
         {
           "offset": 1349,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -13208,7 +13448,7 @@
         {
           "offset": 1359,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 4,
           "resolved": 8614996
@@ -13216,7 +13456,7 @@
         {
           "offset": 1377,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 4,
           "resolved": 8614996
@@ -13224,7 +13464,7 @@
         {
           "offset": 1383,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -13232,7 +13472,7 @@
         {
           "offset": 1398,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -13240,7 +13480,7 @@
         {
           "offset": 1413,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 16,
           "resolved": 8615008
@@ -13248,7 +13488,7 @@
         {
           "offset": 1419,
           "kind": 6,
-          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_expansion_mixes_837450@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8614992,
           "addend": 4,
           "resolved": 8614996
@@ -13256,7 +13496,7 @@
         {
           "offset": 1434,
           "kind": 6,
-          "symbol": "?unknown_cache_mix_8374e8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_cache_mix_8374e8@@3PAVMixFileClass@@A",
           "target": 8615144,
           "addend": 0,
           "resolved": 8615144
@@ -13264,7 +13504,7 @@
         {
           "offset": 1450,
           "kind": 6,
-          "symbol": "?unknown_cache_mix_8374e8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_cache_mix_8374e8@@3PAVMixFileClass@@A",
           "target": 8615144,
           "addend": 0,
           "resolved": 8615144
@@ -13272,7 +13512,7 @@
         {
           "offset": 1456,
           "kind": 6,
-          "symbol": "?unknown_local_mix_8374ec@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_local_mix_8374ec@@3PAVMixFileClass@@A",
           "target": 8615148,
           "addend": 0,
           "resolved": 8615148
@@ -13280,7 +13520,7 @@
         {
           "offset": 1472,
           "kind": 6,
-          "symbol": "?unknown_local_mix_8374ec@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_local_mix_8374ec@@3PAVMixFileClass@@A",
           "target": 8615148,
           "addend": 0,
           "resolved": 8615148
@@ -13288,7 +13528,7 @@
         {
           "offset": 1478,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
@@ -13296,7 +13536,7 @@
         {
           "offset": 1494,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f0@@3PAVMixFileClass@@A",
           "target": 8615152,
           "addend": 0,
           "resolved": 8615152
@@ -13304,7 +13544,7 @@
         {
           "offset": 1500,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f8@@3PAVMixFileClass@@A",
           "target": 8615160,
           "addend": 0,
           "resolved": 8615160
@@ -13312,7 +13552,7 @@
         {
           "offset": 1516,
           "kind": 6,
-          "symbol": "?unknown_mix_8374f8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374f8@@3PAVMixFileClass@@A",
           "target": 8615160,
           "addend": 0,
           "resolved": 8615160
@@ -13320,7 +13560,7 @@
         {
           "offset": 1522,
           "kind": 6,
-          "symbol": "?unknown_mix_8374fc@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374fc@@3PAVMixFileClass@@A",
           "target": 8615164,
           "addend": 0,
           "resolved": 8615164
@@ -13328,7 +13568,7 @@
         {
           "offset": 1538,
           "kind": 6,
-          "symbol": "?unknown_mix_8374fc@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_mix_8374fc@@3PAVMixFileClass@@A",
           "target": 8615164,
           "addend": 0,
           "resolved": 8615164
@@ -13336,7 +13576,7 @@
         {
           "offset": 1544,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 16,
           "resolved": 8615056
@@ -13344,7 +13584,7 @@
         {
           "offset": 1554,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 4,
           "resolved": 8615044
@@ -13352,7 +13592,7 @@
         {
           "offset": 1572,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 4,
           "resolved": 8615044
@@ -13360,7 +13600,7 @@
         {
           "offset": 1578,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 16,
           "resolved": 8615056
@@ -13368,7 +13608,7 @@
         {
           "offset": 1593,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 16,
           "resolved": 8615056
@@ -13376,7 +13616,7 @@
         {
           "offset": 1608,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 16,
           "resolved": 8615056
@@ -13384,7 +13624,7 @@
         {
           "offset": 1614,
           "kind": 6,
-          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A",
+          "symbol": "?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A",
           "target": 8615040,
           "addend": 4,
           "resolved": 8615044
@@ -13392,7 +13632,7 @@
         {
           "offset": 1629,
           "kind": 6,
-          "symbol": "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MapsMix@@3PAVMixFileClass@@A",
           "target": 8615156,
           "addend": 0,
           "resolved": 8615156
@@ -13400,7 +13640,7 @@
         {
           "offset": 1645,
           "kind": 6,
-          "symbol": "?MapsMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MapsMix@@3PAVMixFileClass@@A",
           "target": 8615156,
           "addend": 0,
           "resolved": 8615156
@@ -13408,7 +13648,7 @@
         {
           "offset": 1651,
           "kind": 6,
-          "symbol": "?MultiMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MultiMix@@3PAVMixFileClass@@A",
           "target": 8615064,
           "addend": 0,
           "resolved": 8615064
@@ -13416,7 +13656,7 @@
         {
           "offset": 1667,
           "kind": 6,
-          "symbol": "?MultiMix@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?MultiMix@@3PAVMixFileClass@@A",
           "target": 8615064,
           "addend": 0,
           "resolved": 8615064
@@ -13424,7 +13664,7 @@
         {
           "offset": 1673,
           "kind": 6,
-          "symbol": "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_mix_837500@@3PAVMixFileClass@@A",
           "target": 8615168,
           "addend": 0,
           "resolved": 8615168
@@ -13432,7 +13672,7 @@
         {
           "offset": 1689,
           "kind": 6,
-          "symbol": "?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_mix_837500@@3PAVMixFileClass@@A",
           "target": 8615168,
           "addend": 0,
           "resolved": 8615168
@@ -13440,7 +13680,7 @@
         {
           "offset": 1695,
           "kind": 6,
-          "symbol": "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A",
           "target": 8615172,
           "addend": 0,
           "resolved": 8615172
@@ -13448,7 +13688,7 @@
         {
           "offset": 1711,
           "kind": 6,
-          "symbol": "?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A",
           "target": 8615172,
           "addend": 0,
           "resolved": 8615172
@@ -13456,7 +13696,7 @@
         {
           "offset": 1717,
           "kind": 6,
-          "symbol": "?unknown_ra2_mix_8374b8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_ra2_mix_8374b8@@3PAVMixFileClass@@A",
           "target": 8615096,
           "addend": 0,
           "resolved": 8615096
@@ -13464,7 +13704,7 @@
         {
           "offset": 1733,
           "kind": 6,
-          "symbol": "?unknown_ra2_mix_8374b8@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_ra2_mix_8374b8@@3PAVMixFileClass@@A",
           "target": 8615096,
           "addend": 0,
           "resolved": 8615096
@@ -13472,7 +13712,7 @@
         {
           "offset": 1739,
           "kind": 6,
-          "symbol": "?unknown_language_mix_8374bc@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_language_mix_8374bc@@3PAVMixFileClass@@A",
           "target": 8615100,
           "addend": 0,
           "resolved": 8615100
@@ -13480,7 +13720,7 @@
         {
           "offset": 1755,
           "kind": 6,
-          "symbol": "?unknown_language_mix_8374bc@@3PAV?$MixFileClass@VCCFileClass@@@@A",
+          "symbol": "?unknown_language_mix_8374bc@@3PAVMixFileClass@@A",
           "target": 8615100,
           "addend": 0,
           "resolved": 8615100
@@ -14006,7 +14246,7 @@
           "resolved": 919191
         }
       ],
-      "source_sha256": "630627d4ed0987e5983ee2f46003e930b87b247188b7348bff75f43e976fc6b7",
+      "source_sha256": "78fa9c0d28c42d06101bd963a242786cdb91404892db2798db7204771bc1806c",
       "source": "src/recovered/startup/Prog_End_006909e0.cpp",
       "population": "population-3021",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",

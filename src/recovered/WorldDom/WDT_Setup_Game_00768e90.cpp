@@ -26,7 +26,7 @@
 // @ref ??_7?$rc_ptr@VCampaign@WorldDominationTour@@@@6B@=007aefdc
 // @ref ??_G?$rc_ptr@VCampaign@WorldDominationTour@@@@UAEPAXI@Z=00726b40
 // @ref ??_E?$rc_ptr@VCampaign@WorldDominationTour@@@@UAEPAXI@Z=00726b40
-// @ref ??0?$MixFileClass@VCCFileClass@@@@QAE@PBDPBVPKey@@@Z=005952f0
+// @ref ??0MixFileClass@@QAE@PBDPBVPKey@@@Z=005952f0
 // @ref ??0FactionSelectDialogControl@WorldDominationTour@@QAE@XZ=00769790
 // @ref ?Request_WDT_Cycle_00751df0@@YI_NXZ=00751df0
 // @ref ?Unknown_00759e20@@YIHXZ=00759e20
@@ -62,18 +62,18 @@ int __fastcall WDT_Setup_Game_00768e90(bool first_time)
         Options.Save_Settings();
     }
 
-    MixFileClass<CCFileClass> *wdtmix = 0;
-    MixFileClass<CCFileClass> *wdtvoxmix = 0;
-    MixFileClass<CCFileClass> *localmix = 0;
+    MixFileClass *wdtmix = 0;
+    MixFileClass *wdtvoxmix = 0;
+    MixFileClass *localmix = 0;
 
     if (CCFileClass("WDT.MIX").Is_Available()) {
-        wdtmix = new MixFileClass<CCFileClass>("WDT.MIX", &FastKey);
+        wdtmix = new MixFileClass("WDT.MIX", &FastKey);
     }
     if (CCFileClass("WDTVOX.MIX").Is_Available()) {
-        wdtvoxmix = new MixFileClass<CCFileClass>("WDTVOX.MIX", &FastKey);
+        wdtvoxmix = new MixFileClass("WDTVOX.MIX", &FastKey);
     }
     if (CCFileClass("Local.MIX").Is_Available()) {
-        localmix = new MixFileClass<CCFileClass>("Local.MIX", &FastKey);
+        localmix = new MixFileClass("Local.MIX", &FastKey);
     }
 
     if (wdtmix != 0 && localmix != 0) {

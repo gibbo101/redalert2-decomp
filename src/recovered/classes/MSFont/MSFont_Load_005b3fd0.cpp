@@ -27,7 +27,7 @@ bool MSFont::Load(bool sidebar)
 
     if (unknown_font_count_a71858 == 0) {
         OwnsShape = false;
-        Shape = (ShapeFileStruct *)MixFileClass<CCFileClass>::Retrieve("FULLFNT3.SHP");
+        Shape = (ShapeFileStruct *)MixFileClass::Retrieve("FULLFNT3.SHP");
         if (Shape == 0) {
             file.Set_Name("FULLFNT3.SHP");
             Shape = (ShapeFileStruct *)Load_Alloc_Data(file);

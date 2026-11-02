@@ -4,8 +4,8 @@
     "id": "population-3419",
     "inventory_sha256": "9509749e1c9ab8747df654de479eaa243f3cc2d360cb76f93306711a2dff6ce7",
     "gaps_sha256": "2b79f7e79d021b7acf4a0092fc16bb96b135d78d25b704641d6738cea5530b6b",
-    "historical_population_sha256": "593ad975bf6ab0f9e17d3566b3ef7af7272475532d542121a420dfda1de295df",
-    "historical_acceptance_sha256": "82c42914a237ae01339c7a5bb7a8f95b6f92b05cd5d95bd2f8b39e83a08c5498"
+    "historical_population_sha256": "056362108cc6d79acbf8e7f06b137aefa96ded67f8c04e75bff8425a08a6a6e6",
+    "historical_acceptance_sha256": "e95f38928023291ba2110d5d89dba5b42fe577dc80f8e0a55d77e4664e4736c7"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4880,7 +4880,7 @@
     "?Write@CCFileClass@@UAEJPBXJ@Z": 4624432,
     "?Read@CCFileClass@@UAEJPAXJ@Z": 4624480,
     "?Seek@CCFileClass@@UAEJJH@Z": 4624624,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "?Is_Available@CCFileClass@@UAE_NH@Z": 4624800,
     "?Is_Open@CCFileClass@@UBE_NXZ": 4624864,
     "?Close@CCFileClass@@UAEXXZ": 4624880,

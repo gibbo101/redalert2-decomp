@@ -69,16 +69,16 @@
 // @ref ?unknown_grfxtxt_shape_a41674@@3PAXA=00a41674
 // @ref ?unknown_handle_abd47c@@3PAXA=00abd47c
 // @ref ?unknown_handle_abd480@@3PAXA=00abd480
-// @ref ?unknown_language_mix_8374bc@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374bc
-// @ref ?unknown_mix_8374d8@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374d8
-// @ref ?unknown_mix_8374fc@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374fc
-// @ref ?unknown_mixes_837480@@3V?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@A=00837480
+// @ref ?unknown_language_mix_8374bc@@3PAVMixFileClass@@A=008374bc
+// @ref ?unknown_mix_8374d8@@3PAVMixFileClass@@A=008374d8
+// @ref ?unknown_mix_8374fc@@3PAVMixFileClass@@A=008374fc
+// @ref ?unknown_mixes_837480@@3V?$DynamicVectorClass@PAVMixFileClass@@@@A=00837480
 // @ref ?unknown_surface_839968@@3PAVSurface@@A=00839968
-// @ref ?unknown_theater_mix_8374c0@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374c0
-// @ref ?unknown_theater_mix_8374c4@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374c4
-// @ref ?unknown_theater_mix_8374c8@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374c8
-// @ref ?unknown_theater_mix_8374cc@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374cc
-// @ref ?unknown_theater_mix_8374d0@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374d0
+// @ref ?unknown_theater_mix_8374c0@@3PAVMixFileClass@@A=008374c0
+// @ref ?unknown_theater_mix_8374c4@@3PAVMixFileClass@@A=008374c4
+// @ref ?unknown_theater_mix_8374c8@@3PAVMixFileClass@@A=008374c8
+// @ref ?unknown_theater_mix_8374cc@@3PAVMixFileClass@@A=008374cc
+// @ref ?unknown_theater_mix_8374d0@@3PAVMixFileClass@@A=008374d0
 // @ref __imp__RevokeActiveObject@8=0079a354
 // @ref ?Kill_Mouse_Thread@@YIXXZ=007719a0
 // Template copies the unit emits (UnknownIDSource's lists; radar.hpp's and map.hpp's list members),

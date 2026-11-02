@@ -4,7 +4,7 @@
 #include "shared/mix_file_class.hpp"
 #include "shared/debug_printf.hpp"
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
-// @ref ?unknown_mix_8374f0@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374f0
+// @ref ?unknown_mix_8374f0@@3PAVMixFileClass@@A=008374f0
 // @ref ??_C@_0BD@MGDA@?5?5?5?5?5Releasing?5?$CFs?6?$AA@=007d2208
 
 bool __cdecl Unknown_0051A270()

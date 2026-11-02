@@ -4,14 +4,14 @@
 #include "shared/cc_file_class.hpp"
 #include "shared/mix_file_class.hpp"
 // @ref ?One_Time@MapClass@@UAEXXZ=005480d0
-// @ref ?Retrieve@?$MixFileClass@VCCFileClass@@@@SIPBXPBD@Z=005956c0
+// @ref ?Retrieve@MixFileClass@@SIPBXPBD@Z=005956c0
 // @ref ?Unknown_006F1F30@@YI?AVRect@@XZ=006f1f30
 
 void DisplayClass::One_Time()
 {
     MapClass::One_Time();
-    TransIconset = MixFileClass<CCFileClass>::Retrieve("PLACE.SHP");
-    ShadowShapes = MixFileClass<CCFileClass>::Retrieve("SHADOW.SHP");
+    TransIconset = MixFileClass::Retrieve("PLACE.SHP");
+    ShadowShapes = MixFileClass::Retrieve("SHADOW.SHP");
     Rect rect = Unknown_006F1F30();
     unknown_slot42(rect);
 }

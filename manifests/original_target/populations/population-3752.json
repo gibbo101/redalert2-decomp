@@ -4,8 +4,8 @@
     "id": "population-3752",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "9380a8577e39a04db6e73fbd18ee6dd099f34aebf75b634cbae3bd1b6ff033e6",
-    "historical_acceptance_sha256": "b6ba302c387e0437e65275a59fdc8e2d04427cf4b4193a5b4d71907ebbd5bfdc"
+    "historical_population_sha256": "027bccd3350e47134c03cdae1505f04c690d0b62892b0fdcb3e3ec17cf86158d",
+    "historical_acceptance_sha256": "51a11d55133efb5dfdae54326e24b292a91fcf770b304bee7d0440e068c0a344"
   },
   "references": {
     "?BombList@@3VBombListClass@@A": 8594144,
@@ -118,7 +118,7 @@
     "?ID@?$VectorClass@PAVObjectClass@@@@UAEHABQAVObjectClass@@@Z": 4246752,
     "?ID@?$VectorClass@PAVObjectClass@@@@UAEHPBQAVObjectClass@@@Z": 4246816,
     "?ID@?$DynamicVectorClass@PAVObjectClass@@@@UAEHABQAVObjectClass@@@Z": 4247024,
-    "??_7?$DynamicVectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@": 7973428,
+    "??_7?$DynamicVectorClass@PAVMixFileClass@@@@6B@": 7973428,
     "?Clear@?$DynamicVectorClass@PAVMixFileClass@@@@UAEXXZ": 4248592,
     "?ID@?$DynamicVectorClass@PAVMixFileClass@@@@UAEHPBQAVMixFileClass@@@Z": 4248640,
     "?Fetch@?$VectorClass@PAVMixFileClass@@@@UBEPAVMixFileClass@@H@Z": 4248672,
@@ -2364,7 +2364,7 @@
     "?Read@CCFileClass@@UAEJPAXJ@Z": 4624480,
     "?Seek@CCFileClass@@UAEJJH@Z": 4624624,
     "?Size@CCFileClass@@UAEJXZ": 4624720,
-    "?Offset@?$MixFileClass@VCCFileClass@@@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
+    "?Offset@MixFileClass@@SI_NPBDPAPAXPAPAV1@PAJ3@Z": 5855904,
     "?Is_Available@CCFileClass@@UAE_NH@Z": 4624800,
     "?Is_Open@CCFileClass@@UBE_NXZ": 4624864,
     "?Close@CCFileClass@@UAEXXZ": 4624880,
@@ -6745,7 +6745,7 @@
     "?unknown_func_6b3fe0@TagClass@@QAEXH@Z": 7028704,
     "?Link@TagClass@@QAEXPAVTriggerClass@@@Z": 7028720,
     "?Unlink@TagClass@@QAE_NPAVTriggerClass@@@Z": 7028736,
-    "??_7?$VectorClass@PAV?$MixFileClass@VCCFileClass@@@@@@6B@": 7973460,
+    "??_7?$VectorClass@PAVMixFileClass@@@@6B@": 7973460,
     "?Read_Line@@YIHAAVFileClass@@PADHAA_N@Z": 6526400,
     "__imp__GetTickCount": 7971020,
     "__imp__GetSystemTime": 7971024,

@@ -5,10 +5,10 @@
 
 bool CCFileClass::Set_Date_Time(unsigned long datetime)
 {
-    MixFileClass<CCFileClass> *mixfile = 0;
+    MixFileClass *mixfile = 0;
     bool result = CDFileClass::Set_Date_Time(datetime);
     if (!result) {
-        if (MixFileClass<CCFileClass>::Offset(File_Name(), 0, &mixfile, 0, 0)) {
+        if (MixFileClass::Offset(File_Name(), 0, &mixfile, 0, 0)) {
             return CCFileClass(mixfile->Filename).Set_Date_Time(datetime);
         }
     }

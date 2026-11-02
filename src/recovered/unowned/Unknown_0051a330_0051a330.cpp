@@ -9,9 +9,9 @@
 #include "shared/debug_printf.hpp"
 
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
-// @ref ?unknown_mix_8374f8@@3PAV?$MixFileClass@VCCFileClass@@@@A=008374f8
-// @ref ?unknown_side_mix_837500@@3PAV?$MixFileClass@VCCFileClass@@@@A=00837500
-// @ref ?unknown_side_nc_mix_837504@@3PAV?$MixFileClass@VCCFileClass@@@@A=00837504
+// @ref ?unknown_mix_8374f8@@3PAVMixFileClass@@A=008374f8
+// @ref ?unknown_side_mix_837500@@3PAVMixFileClass@@A=00837500
+// @ref ?unknown_side_nc_mix_837504@@3PAVMixFileClass@@A=00837504
 // @ref ??_C@_0BD@MGDA@?5?5?5?5?5Releasing?5?$CFs?6?$AA@=007d2208
 // @ref ?Unknown_007168C0@@YIXH@Z=007168c0
 // @ref ?Unknown_006F44D0@@YAXXZ=006f44d0
@@ -62,7 +62,7 @@ bool __fastcall Unknown_0051a330(int side)
     sprintf(filename, "SIDEC%02d.MIX", number);
     Debug_Printf("     Initilizing %s\n", filename);
     if (CCFileClass(filename).Is_Available()) {
-        unknown_side_mix_837500 = new MixFileClass<CCFileClass>(filename, &FastKey);
+        unknown_side_mix_837500 = new MixFileClass(filename, &FastKey);
     }
     if (unknown_side_mix_837500 == 0) {
         Debug_Printf("     FAILED!\n");
@@ -73,7 +73,7 @@ bool __fastcall Unknown_0051a330(int side)
     sprintf(filename, "SIDENC%02d.MIX", number);
     Debug_Printf("     Initilizing %s\n", filename);
     if (CCFileClass(filename).Is_Available()) {
-        unknown_side_nc_mix_837504 = new MixFileClass<CCFileClass>(filename, &FastKey);
+        unknown_side_nc_mix_837504 = new MixFileClass(filename, &FastKey);
     }
 
     Unknown_006F44D0();

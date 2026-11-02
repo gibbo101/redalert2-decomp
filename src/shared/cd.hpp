@@ -19,7 +19,7 @@
 
 class CCFileClass;
 class PKey;
-template <class T> class MixFileClass;
+class MixFileClass;
 
 class CD {
 public:
@@ -43,44 +43,44 @@ public:
 
 // The per-disk mixfiles Swap_Disk recreates (names hypotheses from the
 // archive names it opens).
-extern MixFileClass<CCFileClass> *AudioMix;    // 0x00831444 AUDIO.MIX (the audio library's archive)
-extern MixFileClass<CCFileClass> *MoviesMix;   // 0x008374D4 MOVIES%02d.MIX
-extern MixFileClass<CCFileClass> *ThemeMix;    // 0x00831448 THEME.MIX
-extern MixFileClass<CCFileClass> *MultiMix;    // 0x00837498 MULTI.MIX
-extern MixFileClass<CCFileClass> *MapsMix;     // 0x008374F4 MAPS%02d.MIX
-extern MixFileClass<CCFileClass> *MainMix;     // 0x008374DC MAIN.MIX
-extern MixFileClass<CCFileClass> *ConquerMix;  // 0x008374E0 CONQUER.MIX
-extern MixFileClass<CCFileClass> *CameoMix;    // 0x008374E4 CAMEO.MIX
+extern MixFileClass *AudioMix;    // 0x00831444 AUDIO.MIX (the audio library's archive)
+extern MixFileClass *MoviesMix;   // 0x008374D4 MOVIES%02d.MIX
+extern MixFileClass *ThemeMix;    // 0x00831448 THEME.MIX
+extern MixFileClass *MultiMix;    // 0x00837498 MULTI.MIX
+extern MixFileClass *MapsMix;     // 0x008374F4 MAPS%02d.MIX
+extern MixFileClass *MainMix;     // 0x008374DC MAIN.MIX
+extern MixFileClass *ConquerMix;  // 0x008374E0 CONQUER.MIX
+extern MixFileClass *CameoMix;    // 0x008374E4 CAMEO.MIX
 // The side's archives Unknown_0051a330 releases and opens: one released only (0x008374F8),
 // SIDEC%02d.MIX (0x00837500) and SIDENC%02d.MIX (0x00837504).
 // The archives Init_Bootstrap_Mixfiles opens: RA2.MIX (0x008374B8), CACHE.MIX (0x008374E8)
 // and LOCAL.MIX (0x008374EC).
-extern MixFileClass<CCFileClass> *unknown_ra2_mix_8374b8;
-extern MixFileClass<CCFileClass> *unknown_cache_mix_8374e8;
-extern MixFileClass<CCFileClass> *unknown_local_mix_8374ec;
-extern MixFileClass<CCFileClass> *unknown_mix_8374f8;
-extern MixFileClass<CCFileClass> *unknown_side_mix_837500;
-extern MixFileClass<CCFileClass> *unknown_side_nc_mix_837504;
-extern MixFileClass<CCFileClass> *unknown_mix_8374f0;   // 0x008374F0 (released by 0x0051A270, reopened by 0x0051A2B0)
+extern MixFileClass *unknown_ra2_mix_8374b8;
+extern MixFileClass *unknown_cache_mix_8374e8;
+extern MixFileClass *unknown_local_mix_8374ec;
+extern MixFileClass *unknown_mix_8374f8;
+extern MixFileClass *unknown_side_mix_837500;
+extern MixFileClass *unknown_side_nc_mix_837504;
+extern MixFileClass *unknown_mix_8374f0;   // 0x008374F0 (released by 0x0051A270, reopened by 0x0051A2B0)
 // The expansion mixfiles Init_Expansion_Files opens (0x00837450).
-extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_expansion_mixes_837450;
+extern DynamicVectorClass<MixFileClass *> unknown_expansion_mixes_837450;
 // A second mixfile list Prog_End empties the same way (0x00837480).
-extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_mixes_837480;
+extern DynamicVectorClass<MixFileClass *> unknown_mixes_837480;
 // LANGUAGE.MIX (0x008374BC, opened by WinMain), the theater archives (0x008374C0-0x008374D0,
 // reopened by 0x00519F50 when the theater changes) and two archives only Prog_End is seen to
 // release (0x008374D8, 0x008374FC).
-extern MixFileClass<CCFileClass> *unknown_language_mix_8374bc;
-extern MixFileClass<CCFileClass> *unknown_theater_mix_8374c0;
-extern MixFileClass<CCFileClass> *unknown_theater_mix_8374c4;
-extern MixFileClass<CCFileClass> *unknown_theater_mix_8374c8;
-extern MixFileClass<CCFileClass> *unknown_theater_mix_8374cc;
-extern MixFileClass<CCFileClass> *unknown_theater_mix_8374d0;
-extern MixFileClass<CCFileClass> *unknown_mix_8374d8;
-extern MixFileClass<CCFileClass> *unknown_mix_8374fc;
+extern MixFileClass *unknown_language_mix_8374bc;
+extern MixFileClass *unknown_theater_mix_8374c0;
+extern MixFileClass *unknown_theater_mix_8374c4;
+extern MixFileClass *unknown_theater_mix_8374c8;
+extern MixFileClass *unknown_theater_mix_8374cc;
+extern MixFileClass *unknown_theater_mix_8374d0;
+extern MixFileClass *unknown_mix_8374d8;
+extern MixFileClass *unknown_mix_8374fc;
 // The further MAPS*.MIX and MOVIES*.MIX Init_Secondary_Mixfiles finds on a local install
 // (0x00837468 and 0x008374A0; the first of each is MapsMix and MoviesMix).
-extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_maps_mixes_837468;
-extern DynamicVectorClass<MixFileClass<CCFileClass> *> unknown_movies_mixes_8374a0;
+extern DynamicVectorClass<MixFileClass *> unknown_maps_mixes_837468;
+extern DynamicVectorClass<MixFileClass *> unknown_movies_mixes_8374a0;
 extern PKey FastKey;                           // 0x00839010 key the mixfiles are opened with
 
 // Checks the volume of the game disk (its debug strings name it

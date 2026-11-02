@@ -23,10 +23,10 @@ void AnimTypeClass::unknown_slot40(int theater)
             char fullname[512];
             _makepath(fullname, 0, 0, unknown_1c8[0] != '\0' ? (char const *)unknown_1c8 : ID, ".SHP");
             Theater_Naming_Convention(fullname, theater);
-            unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+            unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
             if (unknown_a4 == 0) {
                 Generic_Naming_Convention(fullname);
-                unknown_a4 = (void *)MixFileClass<CCFileClass>::Retrieve(fullname);
+                unknown_a4 = (void *)MixFileClass::Retrieve(fullname);
             }
         }
     }

@@ -4,8 +4,8 @@
     "id": "population-1677",
     "inventory_sha256": "23629ff48dc4c87a379a364138c8cde16c0e89a4fc5ab770dd2407cde76e62ad",
     "gaps_sha256": "960eb9dc80b288880abe71bb02d6ae2671026e7f3d4f254df3c5cfb77948d07e",
-    "historical_population_sha256": "da6e66223f92d5e45a8eed1d3df91251def86b4b4f62175ac57552d2c1511ac9",
-    "historical_acceptance_sha256": "f5487cdcbc9bc3249471c09c689079a1dc06a09761104d4d1031767f48ffa442"
+    "historical_population_sha256": "68a33e0a56561bd0280054e1105e73a27818ceba668796a3882547831dcec785",
+    "historical_acceptance_sha256": "6d656bd4879297f387d8561a2bdb14578e5f8841cc8e173b55f61b62cef8875b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2161,10 +2161,10 @@
     "?Locate_Line_Comment@INIClass@@SIPADPADAAH11@Z": 5310128,
     "?Strip_Comments@INIClass@@SIXPAD@Z": 5310304,
     "?Is_Section_Header@INIClass@@SI_NPBD@Z": 5310352,
-    "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
-    "?Cache@?$MixFileClass@VCCFileClass@@@@SI_NPBDPBVBuffer@@@Z": 5855088,
-    "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z": 5855248,
-    "?Free@?$MixFileClass@VCCFileClass@@@@QAEXXZ": 5855856,
+    "?Free@MixFileClass@@SI_NPBD@Z": 5854560,
+    "?Cache@MixFileClass@@SI_NPBDPBVBuffer@@@Z": 5855088,
+    "?Cache@MixFileClass@@QAE_NPBVBuffer@@@Z": 5855248,
+    "?Free@MixFileClass@@QAEXXZ": 5855856,
     "??0Wstring@@QAE@ABV0@@Z": 7788928,
     "??8Wstring@@QBE_NPBD@Z": 7789056,
     "??8Wstring@@QBE_NABV0@@Z": 7789168,
