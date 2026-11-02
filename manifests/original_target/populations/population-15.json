@@ -1099,55 +1099,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 4246288,
-      "method": "40cb10",
-      "symbol": "?get@Leaf_40cb10@@QAEPAXI@Z",
-      "symbol_prefix": "?get@Leaf_40cb10@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 73,
-      "body_sha256": "e66d845b1e869614c4e4cc7d44ba0b74ef9c10d0dc50ca52ba116c8ad861ac3c",
-      "padding_bytes": 7,
-      "full_extent_bytes": 80,
-      "full_extent_sha256": "e88d707f14af8e0f089a3d2032f684e748c3797518975f5dbb99baaad3db2056",
-      "relocations": [
-        {
-          "offset": 8,
-          "kind": 6,
-          "symbol": "_vtable_40cb10",
-          "target": 7973148,
-          "addend": 0,
-          "resolved": 7973148
-        },
-        {
-          "offset": 25,
-          "kind": 20,
-          "symbol": "_release_buffer_40cb10",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 3625486
-        },
-        {
-          "offset": 60,
-          "kind": 20,
-          "symbol": "_release_object_40cb10",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 3625451
-        }
-      ],
-      "source": "src/recovered/classes/LogicClass/0040cb10.cpp",
-      "source_sha256": "4c08ef3a7349f2525d04888f468d52bb4ab198d04c3294e98270c80bb0c08913",
-      "source_order": 158,
-      "population": "population-15",
-      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 4249296,
       "method": "40d6d0",
       "symbol": "?get@Leaf_40d6d0@@QAEPAXI@Z",

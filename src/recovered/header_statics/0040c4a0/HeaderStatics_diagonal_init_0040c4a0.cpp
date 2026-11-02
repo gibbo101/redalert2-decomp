@@ -6,6 +6,27 @@
 #define VECTOR_IMPLEMENT_ALL
 #endif
 #include "shared/vector_class.hpp"
+#define LOGIC_DECLARE_VIRTUALS
+#include "shared/logic.hpp"
+// @ref ??_7LogicClass@@6B@=0079a8ec
+// @ref ??_GLogicClass@@UAEPAXI@Z=0040cb10
+// @ref ??8?$VectorClass@PAVObjectClass@@@@UBE_NABV0@@Z=0040cbc0
+// @ref ?Resize@?$DynamicVectorClass@PAVObjectClass@@@@UAE_NHPBQAVObjectClass@@@Z=0040cd40
+// @ref ?Clear@?$DynamicVectorClass@PAVObjectClass@@@@UAEXXZ=0040cb60
+// @ref ?ID@?$DynamicVectorClass@PAVObjectClass@@@@UAEHABQAVObjectClass@@@Z=0040cdf0
+// @ref ?ID@?$DynamicVectorClass@PAVObjectClass@@@@UAEHPBQAVObjectClass@@@Z=0040cb90
+// @ref ?Fetch@?$VectorClass@PAVObjectClass@@@@UBEPAVObjectClass@@H@Z=0040cbb0
+// @ref ?Submit@LogicClass@@UAE_NPAVObjectClass@@_N@Z=0053e330
+// @ref ?unknown_slot8@LayerClass@@UAEXXZ=0040caf0
+// @ref ?unknown_slot9@LayerClass@@UAEXXZ=0040cb00
+// @ref ?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z=0053e110
+// @ref ??_7?$VectorClass@PAVObjectClass@@@@6B@=0079a91c
+// @ref ??_G?$VectorClass@PAVObjectClass@@@@UAEPAXI@Z=0040ce20
+// @ref ?Resize@?$VectorClass@PAVObjectClass@@@@UAE_NHPBQAVObjectClass@@@Z=0040cc00
+// @ref ?Clear@?$VectorClass@PAVObjectClass@@@@UAEXXZ=0040ccb0
+// @ref ?ID@?$VectorClass@PAVObjectClass@@@@UAEHABQAVObjectClass@@@Z=0040cce0
+// @ref ?ID@?$VectorClass@PAVObjectClass@@@@UAEHPBQAVObjectClass@@@Z=0040cd20
+// @ref ?Logic@@3VLogicClass@@A=00832470
 
 class IsometricTileClass;
 
@@ -57,3 +78,7 @@ DynamicVectorClass<IsometricTileClass *> unknown_IsometricTileClass_list_0083244
 // @ref _unknown_geometry_l=00832410
 // @ref _unknown_geometry_sixty=0079a898
 // @ref _unknown_static_rect=008323e0
+
+// The logic layer: every object that runs its AI each frame (0x00832470; Westwood's Logic). Its
+// definition emits the initializer 0x0040CA70 and the atexit destructor 0x0040CAB0.
+LogicClass Logic;
