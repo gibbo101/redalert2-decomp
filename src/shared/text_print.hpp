@@ -191,6 +191,13 @@ Point2D __fastcall unknown_scheme_text_print_498050(wchar_t const *text, Surface
                                                     Point2D *xy, unsigned fore, unsigned back, unsigned flags,
                                                     int scheme, int unknown8);   // 0x00498050
 unsigned char *__fastcall unknown_fill_buffer_498160(int value);              // 0x00498160
+// Prints edit text in font at rect of surface (0x00600830; defined in the owner-draw unit, OwnRDraw):
+// scrolled by *scroll so the caret stays visible, with the open IME composition when ime is set.
+namespace OwnerDraw {
+void __fastcall unknown_draw_edit_text_600830(Surface *surface, Rect &rect, wchar_t const *text, int caret,
+                                              BitFontClass *font, unsigned int color, int *scroll, int ime,
+                                              int password, int frame, int unknown9);
+}
 
 // Simple_Text_Print in the base colour of a colour scheme: the inline form
 // Fancy_Text_Printf (0x00497B40) and the indexed printers (0x00497F40,
