@@ -134,6 +134,21 @@ public:
         }
         return false;
     }
+#ifdef RA2_QUEUE_STATICS
+    // Appends q with a given time stamp (Add_Compressed_Events 0x00627B60 moves an OutList event
+    // into DoList with its OutList stamp). Declared only for Queue.CPP (RA2_QUEUE_STATICS).
+    bool Add(T const &q, int timing)
+    {
+        if (Count < size) {
+            Array[Tail] = q;
+            Timings[Tail] = timing;
+            Tail = (Tail + 1) & (size - 1);
+            Count++;
+            return true;
+        }
+        return false;
+    }
+#endif
     // Drops the head entry (Red Alert's QueueClass::Next).
     int Next()
     {

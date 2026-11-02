@@ -5,10 +5,13 @@
 // @ref ?unknown_event_queue_a35f30@@3V?$QueueClass@VEventClass@@$0BAA@@@A=00a35f30
 
 // Kind first, then ID (an inline helper: the original hoists the Kind byte load first).
+#ifndef RA2_QUEUE_SAME_TARGET
+#define RA2_QUEUE_SAME_TARGET
 inline bool Same_Target(TargetClass const &a, TargetClass const &b)
 {
     return a.Kind == b.Kind && a.ID == b.ID;
 }
+#endif
 
 void __fastcall Unknown_00629220(int start, int count, TargetClass whom, TargetClass const &target)
 {
