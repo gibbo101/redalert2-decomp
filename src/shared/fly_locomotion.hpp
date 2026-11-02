@@ -94,6 +94,8 @@ public:
 
     int Physics_004bdc20(CoordStruct &coord,UnknownFacingDir facing);
 
+    bool Is_Locked_To_Straight_Flight_004bfa10();
+
     bool unknown_18;                    // +0x18
     CoordStruct unknown_1c;             // +0x1C
     CoordStruct unknown_28;             // +0x28
