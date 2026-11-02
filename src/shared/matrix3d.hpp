@@ -9,15 +9,27 @@
 #define RA2_SHARED_MATRIX3D_HPP
 
 #include "shared/fast_math.hpp"
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+#include "shared/crt_memory.hpp"
+#endif
 #include "shared/vector3.hpp"
 
 #ifdef RA2_MATRIX3D_INLINE_COPY
 struct Matrix3D_Data { float Data[12]; };
 #endif
 
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+// Plain COM matrix; 12 floats, independent of the C++ matrix class.
+struct COMMatrix3DStruct { float Data[12]; };
+#endif
+
 class Matrix3D {
 public:
     Matrix3D() {}
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+    Matrix3D(COMMatrix3DStruct const &matrix); // 0x0058FE10 physical conversion ABI
+    Matrix3D &operator=(Matrix3D const &other) { memcpy(this, &other, sizeof(*this)); return *this; }
+#endif
     Matrix3D(float const *matrix);                                      // 0x0058FDE0
 #ifdef RA2_MATRIX3D_INLINE_COPY
     // The copy constructor is an inline member-wise copy (0x0058FE10 is its

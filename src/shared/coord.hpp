@@ -8,6 +8,10 @@
 #include "shared/point.hpp"
 
 struct INIPoint3D;
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+// Plain COM coordinate returned by ILocomotion; three ordered signed DWORDs.
+struct COMCoordStruct { int X, Y, Z; };
+#endif
 #ifdef RA2_COORD_PLUS_POINT2D
 struct Point2D;
 #endif
@@ -38,6 +42,9 @@ struct CoordStruct : public TPoint3D<int> {
 struct CoordStruct {
 #endif
     CoordStruct() {}
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+    CoordStruct(COMCoordStruct const &coord) { X = coord.X; Y = coord.Y; Z = coord.Z; }
+#endif
 #ifdef RA2_COORD_TPOINT3D
     CoordStruct(int x, int y, int z) : BASECLASS(x, y, z) {}
 #else

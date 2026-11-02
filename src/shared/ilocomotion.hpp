@@ -10,6 +10,9 @@
 #include "shared/rect.hpp"
 
 class Matrix3D;
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+struct COMMatrix3DStruct;
+#endif
 
 extern "C" GUID const IID_ILocomotion;          // 0x007A5890
 
@@ -18,13 +21,38 @@ struct __declspec(novtable) ILocomotion : public IUnknown {
     virtual HRESULT __stdcall Link_To_Object(void *object) = 0;                  // 3
     virtual bool __stdcall Is_Moving() = 0;                                      // 4
     virtual CoordStruct __stdcall Destination() = 0;                             // 5
-    virtual CoordStruct __stdcall Head_To_Coord() = 0;                           // 6
+    
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+    virtual COMCoordStruct __stdcall Head_To_Coord() = 0;
+#else
+    virtual CoordStruct __stdcall Head_To_Coord() = 0;
+#endif                           // 6
     virtual int __stdcall Can_Enter_Cell(Cell cell) = 0;                   // 7
     virtual bool __stdcall Is_To_Have_Shadow() = 0;                              // 8
-    virtual Matrix3D * __stdcall Draw_Matrix(Matrix3D *matrix, int *key) = 0;                        // 9
-    virtual Matrix3D * __stdcall Shadow_Matrix(Matrix3D *matrix, int *key) = 0;                      // 10
-    virtual Point2D __stdcall Draw_Point() = 0;                                  // 11
-    virtual Point2D __stdcall Shadow_Point() = 0;                                // 12
+    
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+    virtual COMMatrix3DStruct __stdcall Draw_Matrix(int *key) = 0;
+#else
+    virtual Matrix3D * __stdcall Draw_Matrix(Matrix3D *matrix, int *key) = 0;
+#endif                        // 9
+    
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+    virtual COMMatrix3DStruct __stdcall Shadow_Matrix(int *key) = 0;
+#else
+    virtual Matrix3D * __stdcall Shadow_Matrix(Matrix3D *matrix, int *key) = 0;
+#endif                      // 10
+    
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+    virtual COMPoint2DStruct __stdcall Draw_Point() = 0;
+#else
+    virtual Point2D __stdcall Draw_Point() = 0;
+#endif                                  // 11
+    
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+    virtual COMPoint2DStruct __stdcall Shadow_Point() = 0;
+#else
+    virtual Point2D __stdcall Shadow_Point() = 0;
+#endif                                // 12
     virtual int __stdcall Visual_Character(bool raw) = 0;                        // 13
     virtual int __stdcall Z_Adjust() = 0;                                        // 14
     virtual int __stdcall Z_Gradient() = 0;                                      // 15

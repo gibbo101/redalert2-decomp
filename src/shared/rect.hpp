@@ -42,8 +42,16 @@ struct RectPoint2D {
     int Y;          // +0x04
 };
 
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+// Plain COM point; converts into the arithmetic point class.
+struct COMPoint2DStruct { int X, Y; };
+#endif
+
 struct Point2D {
     Point2D() {}
+#ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
+    Point2D(COMPoint2DStruct const &point) : X(point.X), Y(point.Y) {}
+#endif
     Point2D(int x, int y) : X(x), Y(y) {}
     // From the point an INI reader returns (defined in shared/ini_class.hpp).
     Point2D(INIPoint2D const &point);
