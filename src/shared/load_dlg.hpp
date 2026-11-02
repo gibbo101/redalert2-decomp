@@ -12,12 +12,16 @@
 #include "shared/map_seed.hpp"
 #include "shared/win32_find.hpp"
 #include "shared/savegame_info.hpp"
+#include "shared/dialog_default_proc.hpp"
 
 // The dialog helpers of shared/ms_message_box.hpp, repeated here because that header pulls in wwmouse.hpp's
 // static empty rect (population-20 units compile separately and must not emit a header initializer).
 HWND __fastcall unknown_cancel_dialog_6001e0(unsigned short const *text, unsigned short const *button, bool *cancelled);
 void __fastcall unknown_dialog_5ff7c0(HWND window);
 void __fastcall unknown_dialog_5ff6e0(HWND window);
+void __fastcall unknown_dialog_5e5f20(HWND window);                                       // 0x005E5F20 (WM_PAINT)
+class Rect;
+bool __fastcall Unknown_Clamp_Rect_To_Screen_00736D80(void *window, unsigned int wparam, Rect *rect);   // WM_MOVING
 
 extern int unknown_savegame_version_7f1b18;   // 0x007F1B18 (a saved game with another first value is flagged)
 extern bool unknown_flag_a40380;  // 0x00A40380

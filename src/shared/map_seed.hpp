@@ -30,13 +30,22 @@ public:
     char Save_Dialog_0053b1b0(wchar_t *description);
     char Delete_Dialog_0053b1e0();
     void Fill_List_0053c040(HWND list); // physical ECX/one HWND/RET4; operation/void intent hypotheses
+    void Pick_Filename(char *name);      // 0x0053BF90: an unused SAVEnnnn name for the extension
+    void Clear_List();                   // 0x0053C010
+    static void __fastcall Load_Dialog_On_WM_COMMAND(HWND window, int id, HWND control, int code);   // 0x0053B200
+    static void __fastcall Save_Dialog_On_WM_COMMAND(HWND window, int id, HWND control, int code);   // 0x0053B280
+    static void __fastcall Delete_Dialog_On_WM_COMMAND(HWND window, int id, HWND control, int code); // 0x0053B390
+    static LRESULT __stdcall Load_Dialog_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);   // 0x0053B3D0
+    static LRESULT __stdcall Save_Dialog_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam);   // 0x0053B530
+    static LRESULT __stdcall Delete_Dialog_Proc(HWND window, UINT message, WPARAM wparam, LPARAM lparam); // 0x0053B650
     bool Has_Saved_Games_0053c5c0();     // whether any save file other than SAVEGAME.NET exists for the extension (0x0053C5C0)
     int unknown_04;
     char const *Extension; // +08: SAV in base, SED in MapSeed
     wchar_t *Description; // +0C: points into MapSeed's inline buffer
     int unknown_10;
     int unknown_14;
-    unsigned char unknown_18[8]; // unidentified base storage before the evidenced vector
+    int State; // +18: dialog result set by the command handlers (0x0053B200-0x0053B390)
+    int unknown_1c;
     DynamicVectorClass<FileEntryClass *> Files; // +20, size18; RTTI confirms element type
 };
 class MapSeedClass : public LoadOptionsClass {
