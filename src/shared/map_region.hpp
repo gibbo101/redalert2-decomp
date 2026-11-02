@@ -26,6 +26,7 @@ public:
     void Generate_Starting_Points_00576170(int firstWaypoint); //ECXowner/RET4
     void Count_Grid_Cells_0056dbd0();
     Cell Pick_Random_Region_Cell_0056dc20();
+    Cell Pick_Random_Marked_Cell_0056dda0();
     static void __fastcall Set_Unassigned_Regions_0056e910(bool flag);
     static void Make_Remaining_Regions_0056e890();
     void Reassign_Cells_0056ea20(int region, int value);
@@ -38,6 +39,14 @@ public:
 
     void Mark_Rectangle_00575bf0(Rect const &area);
     unsigned Build_Neighbor_Region_Mask_005728d0(Cell const &position,bool &valid,int unknown,float density); // RET16; name/reference hypotheses
+#ifdef RA2_MAP_REGION_LIST
+    // Every region (0x00A6FD28; initializer 0x0056D530, atexit destructor 0x0056D570). A static data member
+    // (class hypothesis): its atexit destructor tests and sets the guard bit 0x00A6FD40, as VC6 does for class
+    // statics. Declared only for the region-generation unit (RA2_MAP_REGION_LIST, set by its header-statics
+    // source): a class static of a type with a constructor takes _$E numbers in every unit that sees it. Other
+    // sources name the same object unknown_map_regions_a6fd28.
+    static DynamicVectorClass<MapRegionClass *> Regions;
+#endif
     ~MapRegionClass(); // original0056D970 nondeleting destruction; nominal source ownership hypothesis
     bool Grow_Border_00570040(int steps); // physical AL0/1, RET4; name/bool intent hypotheses
     DynamicVectorClass<Cell> *Select_Separated_Cells_00576810(DynamicVectorClass<Cell> const &candidates); //operation/reference/constness hypotheses; EAXptr/RET4
