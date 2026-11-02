@@ -30,6 +30,7 @@ public:
     char Save_Dialog_0053b1b0(wchar_t *description);
     char Delete_Dialog_0053b1e0();
     void Fill_List_0053c040(HWND list); // physical ECX/one HWND/RET4; operation/void intent hypotheses
+    bool Dialog();                       // 0x0053B770: runs the load, save or delete dialog (Style unknown_04 1/2/3)
     void Pick_Filename(char *name);      // 0x0053BF90: an unused SAVEnnnn name for the extension
     void Clear_List();                   // 0x0053C010
     static void __fastcall Load_Dialog_On_WM_COMMAND(HWND window, int id, HWND control, int code);   // 0x0053B200

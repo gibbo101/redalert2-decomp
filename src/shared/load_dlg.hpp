@@ -20,7 +20,13 @@ HWND __fastcall unknown_cancel_dialog_6001e0(unsigned short const *text, unsigne
 void __fastcall unknown_dialog_5ff7c0(HWND window);
 void __fastcall unknown_dialog_5ff6e0(HWND window);
 void __fastcall unknown_dialog_5e5f20(HWND window);                                       // 0x005E5F20 (WM_PAINT)
+wchar_t *__fastcall wcstrim(wchar_t *buffer);                                            // 0x006EEF80 (also trigger_type.hpp)
 class Rect;
+namespace OwnerDraw {
+void __fastcall unknown_5e46c0(HWND control, bool value);                                  // 0x005E46C0
+void __fastcall unknown_5e6330(HWND control);                                              // 0x005E6330
+void __fastcall unknown_5e62d0(HWND control);                                              // 0x005E62D0
+}
 bool __fastcall Unknown_Clamp_Rect_To_Screen_00736D80(void *window, unsigned int wparam, Rect *rect);   // WM_MOVING
 
 extern int unknown_savegame_version_7f1b18;   // 0x007F1B18 (a saved game with another first value is flagged)
