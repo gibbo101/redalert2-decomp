@@ -4,8 +4,8 @@
     "id": "population-3619",
     "inventory_sha256": "444eb6a5142ba29a3192042af048616aa87768604b381268127c2135073262a8",
     "gaps_sha256": "12f2c02ea775eecfe7bf3597ff79796cd5098a4439a2ccae9a392b0a257e175c",
-    "historical_population_sha256": "6bc92a7657e60484478fae7da8a97a89e61bc05e1bfee406a0feb9d0e95c114a",
-    "historical_acceptance_sha256": "19cb14fadfab206b881a43aae6031ee250ff9fe7d680a8855844a51ac03f708d"
+    "historical_population_sha256": "6b28abd6f73ca7466e7acf28f851afc2f3b4eb2283f2306301782956ade9a6fa",
+    "historical_acceptance_sha256": "53f465707359fe659ad75fa80a2e1942fdfc41ab20b7509c50cf7c0ea84eee21"
   },
   "references": {
     "_unknown_empty_rect": 10950728,
@@ -2641,7 +2641,7 @@
     "?AI@UnitClass@@UAEXXZ": 7319808,
     "?AI@AircraftClass@@UAEXXZ": 4278256,
     "__real@8@bffcc90fdaa22168c000": 7983248,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "??KCoordStruct@@QBE?AU0@H@Z": 7182192,
     "?Read_INI@OverlayClass@@SIXAAVCCINIClass@@@Z": 6141552,
@@ -3084,7 +3084,7 @@
     "?Unknown_Play_Taunt_00715fb0@@YIXD@Z": 7430064,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?unknown_session_a3d2c3@@3EA": 10736323,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,

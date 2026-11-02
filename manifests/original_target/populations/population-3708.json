@@ -4,8 +4,8 @@
     "id": "population-3708",
     "inventory_sha256": "47736dfaa586f55f4297a1f6623feb25639f4beeb74443df9b2e7e0f99aacab1",
     "gaps_sha256": "dc33680887897a9bdd793b6e2306894356787791eac454410a698a823137b7ea",
-    "historical_population_sha256": "b85c8543e8ab8c87a9b318672f7d4982316bb2ad8bc7e6a0399dd91556713e70",
-    "historical_acceptance_sha256": "fb0cb9070359f6741b11e1bca36140cad35c7f0606dc0234726bc5336bdb102c"
+    "historical_population_sha256": "a8cc0f4d46cc2b5f284bd39a1e045363a6cb81f3bc3ea030a7ed094319adb091",
+    "historical_acceptance_sha256": "85670766b5dc42a5351a3591fd421a7ac0f00ea66dd15c2f48df8d4d37721b5f"
   },
   "references": {
     "_DAT_007ddc6c": 8248428,
@@ -3506,7 +3506,7 @@
     "?Fill_Rect@XSurface@@UAE_NABVRect@@0H@Z": 7816128,
     "?Copy_From@XSurface@@UAE_NABVRect@@AAVSurface@@0_N2@Z": 7819008,
     "?Clip_Blit_Rects@@YI_NAAVRect@@ABV1@01@Z": 7819664,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??1CDFileClass@@UAE@XZ": 5352720,
     "??1MovieHandle@@UAE@XZ": 5905312,
     "??_7MovieHandle@@6B@": 8021588,

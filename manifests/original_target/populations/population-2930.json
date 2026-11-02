@@ -4,8 +4,8 @@
     "id": "population-2930",
     "inventory_sha256": "7dfe89dbb948e0c622af0adbb588c03f76fecf8bd0a3e42a6b29941ab396c24d",
     "gaps_sha256": "91c631d866f95b939d8d24bf48f884c386ee7ab760d6ff390b942a5688445205",
-    "historical_population_sha256": "1cef90dd08cc75bae94daf80ea3585d32d29500bd715f5c428e0bd019c20511f",
-    "historical_acceptance_sha256": "7ec026f43ce71d11ae92d85ef7ea25768107e4af8ca24d34f5f31f3b65ae0811"
+    "historical_population_sha256": "089f09e8cfbb74d9ca299cc73403c72848f8a8c009690c06b677e9c45c357d1e",
+    "historical_acceptance_sha256": "a3baa3ff3d80d8d24e03ef0108b088edf3e2d6d95f20ad2a342bba32f04d0ee2"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3881,7 +3881,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A": 10746520,
@@ -4595,7 +4595,7 @@
     "__imp__RegCloseKey@4": 7970820,
     "?Draw@EgoClass@@QAEX_N@Z": 4929168,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Create@MapSizeGameOption@WorldDominationTour@@SI?AV?$rc_ptr@VMapSizeGameOption@WorldDominationTour@@@@H@Z": 7506528,
     "?Draw_Me@ShapeButtonClass@@UAEHH@Z": 6771168,
     "_?maximum@?1??Building_Find_Nearby_Radio_Acceptor_00450f90@@YIPAVBuildingClass@@PAVHouseClass@@PAVTechnoClass@@@Z@4HA": 8711404,

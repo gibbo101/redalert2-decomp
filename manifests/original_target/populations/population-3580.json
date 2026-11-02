@@ -4,8 +4,8 @@
     "id": "population-3580",
     "inventory_sha256": "5b10a04d599659b80e017162522f9f3045733086d3e5c3f692c66ec7372b2861",
     "gaps_sha256": "135372da54bd6629b46c8184a5e25bb2bb73b72ca863e62d2747f73bf731093f",
-    "historical_population_sha256": "3d0262d268cd2c061f181923c513425f508e3bf2d281f21eec2ae52f62a3bb16",
-    "historical_acceptance_sha256": "1e2070d582934d49cdde4c1711211a1a2c92e39d1f6551ede7f9fc560e571fe8"
+    "historical_population_sha256": "46c90d1dad766432f7d67378d71c5d1cf15fb151aaacb78e5055c2e86c3e67e6",
+    "historical_acceptance_sha256": "a2dd3df73e45678d284eeed3f30306f2bca7390f2acdc5c9336619f215657c5a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3217,7 +3217,7 @@
     "?AI@AircraftClass@@UAEXXZ": 4278256,
     "?Save@FactoryClass@@UAGJPAUIStream@@H@Z": 4955024,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??0XSurface@@QAE@HH@Z": 4846640,
     "?Load@OverlayClass@@UAGJPAUIStream@@@Z": 6143104,
     "?AI@MissionClass@@UAEXXZ": 5851024,
@@ -6096,7 +6096,7 @@
     "?As_Techno@TargetClass@@QBEPAVTechnoClass@@XZ": 7035152,
     "?Execute@TauntCommandClass@@UBEXH@Z": 5354992,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "??_7PlayerProfile@@6B@": 8058196,
     "?CreateInstance@TiberianSunClassFactory@@UAGJPAUIUnknown@@ABUGUID@@PAPAX@Z": 4352880,

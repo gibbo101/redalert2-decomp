@@ -4,8 +4,8 @@
     "id": "population-3676",
     "inventory_sha256": "2c1ac47b4653f6954c56127e4af00eb0d619cb0c3bcb55f023d7a323a48cfa10",
     "gaps_sha256": "8758afeafd0aa8e6b916033384540e515695306024c1303da3ac08956cc53d7a",
-    "historical_population_sha256": "3d917a81f01992a6a6a21e65bae94edc04e356a61cf60f23b29270727d9788cb",
-    "historical_acceptance_sha256": "ce3f0e8eaadf1a6c3f90f2555e4bd94f73b4d46b94c5bee4f7f23bb3eeda58a0"
+    "historical_population_sha256": "dcf3fe05aa0b379c447722dbb97cc4a6f11b391371731f5bc6d7b84c138bbb52",
+    "historical_acceptance_sha256": "77df5fcb7055e281a0ebc19701607557b5d9b4d1ac15abef19ea6c9b7018a4f4"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4974,7 +4974,7 @@
     "?Put@BufferPipe@@UAEHPBXH@Z": 7812912,
     "?Get@BufferStraw@@UAEHPAXH@Z": 7813184,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "??KCoordStruct@@QBE?AU0@H@Z": 7182192,
     "?Read_INI@OverlayClass@@SIXAAVCCINIClass@@@Z": 6141552,
@@ -5927,7 +5927,7 @@
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_session_a3d2c3@@3EA": 10736323,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
@@ -7868,7 +7868,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A": 10746520,

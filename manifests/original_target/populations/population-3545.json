@@ -4,8 +4,8 @@
     "id": "population-3545",
     "inventory_sha256": "29149e71e447c1595d599d7c7d1143a9c5209e6001e605e85e3c531e8af1a2cb",
     "gaps_sha256": "0cc5a0b391778154d942b3b866cc67b4e58d34789133fdf47c84a7c296ac07f5",
-    "historical_population_sha256": "5d3dd862c29b213531904ff7e536b8d690487b1eb601dbc5409c3bebd4261352",
-    "historical_acceptance_sha256": "fd4941b8c294e9fe103438f7375020e9e667c85c73cccdaae41a193014ee23e3"
+    "historical_population_sha256": "07f2e10ea10ad636c9ba1e2a97cf9fb635fee77803d0fa871ba8835a31395563",
+    "historical_acceptance_sha256": "b45ca02515d8c238efbbddd55748f86630eac5e6079757a38de77bdf264a5a04"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4168,7 +4168,7 @@
     "?Get_Message@NullModemClass@@QAEHPAXPAH@Z": 6096432,
     "__imp__EndDialog@8": 7971772,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Colors@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6585952,
     "?Draw_Me@ShapeButtonClass@@UAEHH@Z": 6771168,
     "??0LineTrail@@QAE@XZ": 5477344,
@@ -5518,7 +5518,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5cd380@@QAEIXZ": 6083456,

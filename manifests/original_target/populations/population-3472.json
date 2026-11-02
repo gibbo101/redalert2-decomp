@@ -4,8 +4,8 @@
     "id": "population-3472",
     "inventory_sha256": "5c214e77f25df97a5644fbbc99a08c938cff48c70cd46cdf2a8d27e52e331f3d",
     "gaps_sha256": "3559c3125b49c01bf376ba92128b2bc71cf2b80a8d0d2e9617aca0bab0c67169",
-    "historical_population_sha256": "e8bb76935a4c334ccf09b266610d1955cb784a7714763fd791a5a19a58b649b7",
-    "historical_acceptance_sha256": "b0c13f93eeaf4fcb0e208bb778ff97aa69df0c0542afe0b6c5f10895cef73e88"
+    "historical_population_sha256": "a8a1db04c7157e2384ff27ed16d2d736d54a7351bbdc534e16a472b8c6992d99",
+    "historical_acceptance_sha256": "e1e57fee3695abc778ad04fd87a69a7b7dcc9c8ecfa5e812f3dff32b55d5d307"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2476,7 +2476,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -4546,7 +4546,7 @@
     "__imp__RegOpenKeyExA@20": 7970828,
     "__imp__RegCloseKey@4": 7970820,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Init@TerrainTypeClass@@SIXH@Z": 7230560,
     "?Init@OverlayTypeClass@@SIXH@Z": 6146400,
     "?Init@SmudgeTypeClass@@SIXH@Z": 6848432,
@@ -8131,7 +8131,7 @@
     "?unknown_475100@CellClass@@QBE?AVRect@@XZ": 4673792,
     "?unknown_474eb0@CellClass@@QBE?AVRect@@XZ": 4673200,
     "?Execute@TauntCommandClass@@UBEXH@Z": 5354992,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_006A8C80@Tactical@@QAE_NPAUPoint2D@@@Z": 6982784,

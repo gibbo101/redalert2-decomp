@@ -1,4 +1,4 @@
-#define WOL_IDENTIFIER_DECLARE_CLEAR
+#define FIREWALL_SETTINGS_DECLARE_CLEAR
 // Network card, socket, destination-network and firewall options dialog.
 #include "shared/main_opt.hpp"
 #include "shared/ipx_interface.hpp"
@@ -10,7 +10,7 @@
 #include "shared/debug_printf.hpp"
 #include "shared/main_opt_ipx.hpp"
 // @ref ?unknown_card_selected_7dfdb8@@3HA=007dfdb8
-// @ref ?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ=005b9e70
+// @ref ?Clear_005b9e70@FirewallSettings@@QAEXXZ=005b9e70
 
 int __stdcall Main_Options_Proc2(HWND window, UINT message, WPARAM wparam, LPARAM lparam)
 {
@@ -139,7 +139,7 @@ int __stdcall Main_Options_Proc2(HWND window, UINT message, WPARAM wparam, LPARA
                                 StringTable::Load_String("TXT_OK",0,"D:\\Ra2\\MainOpt.cpp",1070),0,0,false);
                 }
                 unknown_session_a3d298.PortNumberOverride = port;
-                unknown_identifier_a71b18.Clear_005b9e70();
+                unknown_firewall_a71b18.Clear_005b9e70();
                 RawFileClass settings("RA2.INI");
                 unknown_ini_839740.Put_Bool("MultiPlayer", "SendDelay", unknown_session_a3d298.SendDelay);
                 unknown_ini_839740.Put_Int("MultiPlayer", "PortNumberOverride", unknown_session_a3d298.PortNumberOverride, 0);

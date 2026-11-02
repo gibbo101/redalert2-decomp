@@ -4,8 +4,8 @@
     "id": "population-3682",
     "inventory_sha256": "8cb4df9a281b2ff0c08d0f2b6e55e6152eef9b48ca4b0a93cb102e6a28360ece",
     "gaps_sha256": "f25fd326354cd73f3c0c9b62b337b98b365e136d4b9c3fff17229c6503c455ed",
-    "historical_population_sha256": "24dbdf29c5641b179fd8ba2cc096a9f62edbddd66ade669f4e3113654b387251",
-    "historical_acceptance_sha256": "307bf6e065f53aeac1649f19da0bed0f323f05331e00ea361dabe8eb6b487812"
+    "historical_population_sha256": "6de802044f465b6ab03c1e8c9ce0eac8fe81f9e6f6c5e4ad62cb3e95815bc023",
+    "historical_acceptance_sha256": "d72a42f75b2b01ca6a38319615bd72c550b9b2a93e9bf2063b43fa5ebd402669"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1662,7 +1662,7 @@
     "?As_Cell@TargetClass@@QBEPAVCellClass@@XZ": 7038480,
     "?Unknown_00493C80@Cell@@QAE_NXZ": 4799616,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "__real@8@3ffda0d97bb4e7870000": 7999744,
     "??0FoggedObjectClass@@QAE@XZ": 4980768,
     "??1FoggedObjectClass@@UAE@XZ": 4984272,
@@ -6765,7 +6765,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -8058,7 +8058,7 @@
     "?Set_00437690@Vector3@@QAEAAU1@MMM@Z": 4421264,
     "?Scale_004376b0@Vector3@@QAEAAU1@M@Z": 4421296,
     "?Add_004376e0@Vector3@@QAEAAU1@ABU1@@Z": 4421344,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?unknown_452f50@BuildingClass@@QAEXH@Z": 4534096,
     "?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A": 8716956,
     "?Find_Index@CampaignClass@@SIHPBD@Z": 4609408,

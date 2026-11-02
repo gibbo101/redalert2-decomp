@@ -4,8 +4,8 @@
     "id": "population-3564",
     "inventory_sha256": "b90ee43e46128f1cb9f13df1d29dd575e2b28fc150d4ab6d0c6f20aa36250e28",
     "gaps_sha256": "07224572ce5bffdd4a403ef49c782a96ae293ae6d3533c3188ee709c5b28c095",
-    "historical_population_sha256": "a7586c0832e0678b9dfa0df451977ef1f4ec49ee677cb146983a6e8a799fe349",
-    "historical_acceptance_sha256": "3dc9eef9e0d44aa259f4c633233dfe39ed4024637a5008b287b8f4d54d59bad6"
+    "historical_population_sha256": "36fc7d5fad3061fe5055ebe21ef25eacb9eb5ffeb0995df733805c4133fb4ceb",
+    "historical_acceptance_sha256": "594e63b2f1dbd77c5c49583ecb77d4af69a0916123b7ff0767c53ec39c66a8fd"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6910,7 +6910,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -8813,7 +8813,7 @@
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_session_a3d340@@3HA": 10736448,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
@@ -9165,7 +9165,7 @@
     "__imp__EndDialog@8": 7971772,
     "__imp__DialogBoxParamA@20": 7971780,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Unknown_006A1EC0@TabClass@@QAEXXZ": 6954688,
     "?Unknown_006A1F10@TabClass@@QAEXXZ": 6954768,
     "?Unknown_0049CB70@DisplayClass@@QAE?AUCoordStruct@@ABU2@_N@Z": 4836208,

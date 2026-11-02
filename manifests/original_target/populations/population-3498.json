@@ -4,8 +4,8 @@
     "id": "population-3498",
     "inventory_sha256": "9266722f42bc754b77154ee0ca9ef1acf45ed0ee62834b8ff91b9c696bd2129c",
     "gaps_sha256": "c57f6655ae00322bcdd92bc54aa90d6a689db7f9d4ceed68d0e09de7ac7111f7",
-    "historical_population_sha256": "679ae5a2f5101a098af3cc9f174397f32858d4af219fd5a5b5e27d485cc5ace2",
-    "historical_acceptance_sha256": "1dd6014288bc8a004f1074cbdb134eab50e48cb64f418f2c14f7fb335360ba0f"
+    "historical_population_sha256": "40d37aeddd67bdfaef6123fc8d1249a112bed08b56cefc9719ac536a55b5a0ea",
+    "historical_acceptance_sha256": "d533576e7835f3117661c3b064f75e58e08603e2b3ba073b5c7b891cd5766e18"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2417,7 +2417,7 @@
     "?Put@BufferPipe@@UAEHPBXH@Z": 7812912,
     "?Get@BufferStraw@@UAEHPAXH@Z": 7813184,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "??KCoordStruct@@QBE?AU0@H@Z": 7182192,
     "?AI@MissionClass@@UAEXXZ": 5851024,

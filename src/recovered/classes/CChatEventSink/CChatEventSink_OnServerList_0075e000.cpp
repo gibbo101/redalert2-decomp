@@ -109,7 +109,7 @@ HRESULT __stdcall CChatEventSink::OnServerList(HRESULT result, WOL::Server *serv
     wchar_t const *status = StringTable::Load_String("TXT_DETECTING_FIREWALL_SETTINGS", 0, "D:\\Ra2\\wonline.cpp", 0x10af);
     HWND dialog = (HWND)Unknown_00735940(0xc4);
     if (dialog) SendDlgItemMessageA(dialog, 0x5b2, 0x4b2, 0, (LPARAM)status);
-    unknown_identifier_a71b18.Initialize_005b9e80();
+    unknown_firewall_a71b18.Detect_And_Save_005b9e80();
     SetEvent(unknown_server_list_event_b264fc);
     return S_OK;
 }
@@ -135,8 +135,8 @@ HRESULT __stdcall CChatEventSink::OnServerList(HRESULT result, WOL::Server *serv
 // @ref ?unknown_server_error_event_b264f8=00b264f8
 // @ref ?unknown_server_list_event_b264fc=00b264fc
 // @ref ?unknown_server_error_b2a8ec=00b2a8ec
-// @ref ?Initialize_005b9e80@WolUnknownIdentifier@@=005b9e80
-// @ref ?unknown_identifier_a71b18=00a71b18
+// @ref ?Detect_And_Save_005b9e80@FirewallSettings@@=005b9e80
+// @ref ?unknown_firewall_a71b18=00a71b18
 // @ref ?unknown_wstring_b26cb8=00b26cb8
 // @ref ?unknown_password_b2a63c=00b2a63c
 // @ref _atol=00782d72

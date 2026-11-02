@@ -4,8 +4,8 @@
     "id": "population-3536",
     "inventory_sha256": "95d7c9e5d6feaf9a325660e9853d1c49a47c455ed737f8ba4457dcaf1c52a9e0",
     "gaps_sha256": "efa2ccc6a15fb75e408875cb5c0feb1a1209cf6a17dc080067614cf25f805723",
-    "historical_population_sha256": "e0e4c386d95a4f21e2ce6a520d3d067d7f7cc6e71d36a7c58e9db68043b8fbf3",
-    "historical_acceptance_sha256": "fc98745f87bfcef72621e8e43a085a9ec5b7050471c2c34abbcfaeb9ba06ee1d"
+    "historical_population_sha256": "c80223564a75e1a3c55d6ceb68eefa2b3d81c6db737d17f65ecd20a26099dfad",
+    "historical_acceptance_sha256": "c3f2600d4f6f407219d963d0774411ef305c24b71d3a3987bd99c0cdd39c62ef"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -8028,7 +8028,7 @@
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "??0WideString@@QAE@ABV0@@Z": 7797264,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5cd380@@QAEIXZ": 6083456,
@@ -8516,7 +8516,7 @@
     "?Set_00437690@Vector3@@QAEAAU1@MMM@Z": 4421264,
     "?Scale_004376b0@Vector3@@QAEAAU1@M@Z": 4421296,
     "?Add_004376e0@Vector3@@QAEAAU1@ABU1@@Z": 4421344,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?unknown_452f50@BuildingClass@@QAEXH@Z": 4534096,
     "?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A": 8716956,
     "?Get_Wide_String@CampaignINI@@QBEHPBD0PAGH@Z": 5304336,
@@ -8601,7 +8601,7 @@
     "??_GTubeClass@@UAEPAXI@Z": 7272720,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,

@@ -23,6 +23,10 @@ class FirewallSettings {
 public:
     FirewallSettings();                             // 0x005B9E60 (all zero; the global's initializer 0x005B9E40 expands it)
     void Detect_And_Save_005b9e80();                // 0x005B9E80 (when type is still 0)
+#ifdef FIREWALL_SETTINGS_DECLARE_CLEAR
+    // Clears the detected type (0x005B9E70); MainOpt calls it after changing network settings.
+    void Clear_005b9e70();
+#endif
     void Save_005ba210();                           // 0x005BA210
     void Load_005ba280();                           // 0x005BA280 (Read_MultiPlayer_Settings calls it once)
     int Detect_005ba2c0(bool *found);               // 0x005BA2C0 (thiscall, one stack argument)

@@ -4,8 +4,8 @@
     "id": "population-3662",
     "inventory_sha256": "d237a2b7cb6bb44ec37a3aa5a5d7a4511e60307227b4c69e89f0ed9081fbf088",
     "gaps_sha256": "360167f661b8f1a2ec2428f9980dd62f44905c466670210b7067155d7df4400d",
-    "historical_population_sha256": "67625a608c128601444435ae93a037103986a535b827d5061ffd0c164e3da28b",
-    "historical_acceptance_sha256": "4fce24ecb442f9103c3c7b1228dccb80bca13d2413cf74cbd7dd3c299822dab0"
+    "historical_population_sha256": "d7da709a2dabd52550ca675521de3b5f9ef1c101b93d5c25ae456b3edf97b3ce",
+    "historical_acceptance_sha256": "d5f808eb9e65d99119bc4378f639a68b20ed580d2b188125800043fd2354a56c"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -7314,7 +7314,7 @@
     "?Put@BufferPipe@@UAEHPBXH@Z": 7812912,
     "?Get@BufferStraw@@UAEHPAXH@Z": 7813184,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Fast_Sin_4096@@YAMN@Z": 4957472,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "?unknown_slot212@TechnoClass@@UAE_NPAVAbstractClass@@H@Z": 7098528,
@@ -8500,7 +8500,7 @@
     "??_GTubeClass@@UAEPAXI@Z": 7272720,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
@@ -9940,7 +9940,7 @@
     "?IPXProtocol@@3HA": 8248432,
     "?get@Storage_52ed90@@QAEPAXIPAI@Z": 5434768,
     "?get@Storage_53e3d0@@QAEPAXIPAI@Z": 5497808,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A": 10746520,
     "?Add_Field@PacketClass@@QAEXPAVPacketField_004BAD50@@@Z": 6302352,
     "?get@Leaf_61d430@@QAEIXZ": 6411312,

@@ -4,8 +4,8 @@
     "id": "population-3523",
     "inventory_sha256": "87d10c985cb88a3a3a85efd2b7c8ff08d2f9ff24710901c74cb483f4ea76ce11",
     "gaps_sha256": "8b1bf65ff6c857e10b73481db364645274d1756d77a33acf54a1d3dc27a45cf0",
-    "historical_population_sha256": "7f690a4d8929efe70eb1deba02c427ef29a22557e7f0a95b333f8bbbe873e538",
-    "historical_acceptance_sha256": "c3d0f214f9b9e35d536cb3668f3920a89f6df62bd4dd91bf75215ccfa4da52ba"
+    "historical_population_sha256": "2b77a74faacdb5b2cdc5857ae88f4cedfb6fcbdcfa5113addeee5e0d8abe2109",
+    "historical_acceptance_sha256": "23c1e42f642ccd3bf37ede33cc72a0872a31e31d10bedaa2fe1f38058cb68a6e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5342,7 +5342,7 @@
     "?get@Leaf_5b97a0@@QAEPAXI@Z": 6002592,
     "?get@Leaf_5b97f0@@QAEPAXI@Z": 6002672,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -8935,7 +8935,7 @@
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_session_a3d340@@3HA": 10736448,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
@@ -9188,7 +9188,7 @@
     "?unknown_instance_00851ca8@@3PAXA": 8723624,
     "__imp__EndDialog@8": 7971772,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Unknown_0049CB70@DisplayClass@@QAE?AUCoordStruct@@ABU2@_N@Z": 4836208,
     "?Unknown_0054E3A0@MapClass@@QAEHABVCell@@PAVHouseClass@@@Z": 5563296,
     "?Unknown_005688A0@MapClass@@QAEXAAV?$DynamicVectorClass@VCell@@@@@Z": 5671072,

@@ -4,8 +4,8 @@
     "id": "population-3540",
     "inventory_sha256": "d6ef25f93b104d139e5d0d3137a9a8b3debe76da5f224b5a547e4cf3c5d34bf7",
     "gaps_sha256": "9763b50ba88a135513a7768b645a4f8d0c63e100ab554a446624001a8b6c1bf6",
-    "historical_population_sha256": "086456dc6662ac3f01e3275493d570bf67081e26cab8ed2b9f5469ada32ff9f5",
-    "historical_acceptance_sha256": "b5e0664c727396ced166be8dc9ffbf1e70cf89de9c25ef1e05125732eac7c1da"
+    "historical_population_sha256": "5a815e848231cf4b26a8d3a3f4c4bbc63a9d622c09373bb5291410ae23780fc8",
+    "historical_acceptance_sha256": "989a90b2b05ab9378b3089cc534c989d43c55f340507fa1601c0ef1ec48fd736"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -7363,7 +7363,7 @@
     "?unknown_func_6b1c80@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7019648,
     "?Execute@TauntCommandClass@@UBEXH@Z": 5354992,
     "?unknown_session_a3d2c3@@3EA": 10736323,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "??_EDSurface@@UAEPAXI@Z": 4920560,
     "??_7AlphaShapeClass@@6B@": 7978964,
     "??_7IsometricTileTypeClass@@6B@": 8016296,
@@ -8319,7 +8319,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -9901,7 +9901,7 @@
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
     "?unknown_475db0@CellClass@@QAEHH@Z": 4677040,
     "?unknown_47b960@CellClass@@QBE_NXZ": 4700512,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Unknown_006A1EC0@TabClass@@QAEXXZ": 6954688,
     "?Unknown_006A1F10@TabClass@@QAEXXZ": 6954768,
     "?Unknown_0049CB70@DisplayClass@@QAE?AUCoordStruct@@ABU2@_N@Z": 4836208,

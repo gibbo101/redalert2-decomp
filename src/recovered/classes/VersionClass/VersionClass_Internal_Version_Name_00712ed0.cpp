@@ -1,7 +1,7 @@
 // The version as text, "major.minor" with the minor's trailing zero digits trimmed
 // (0x00712ED0; Tiberian Sun's VersionClass::Version_Name).
 // @ref ??_C@_08JHOJ@?$CFd?4?$CF3?43d?$AA@=007f9928
-char const *UnknownVersionObject::Internal_Version_Name_00712ed0()
+char const *VersionClass::Internal_Version_Name_00712ed0()
 {
     unsigned short adjusted_minor;
     int i;

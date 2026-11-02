@@ -1,5 +1,5 @@
 // The version number: the major version in the high word, the minor in the low (0x00712B50).
-unsigned long UnknownVersionObject::Version_Number()
+unsigned long VersionClass::Version_Number()
 {
     if (!TextInit) {
         Read_Text_String();

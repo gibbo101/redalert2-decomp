@@ -4,8 +4,8 @@
     "id": "population-3560",
     "inventory_sha256": "79abd7d65a9f573e0f540cc2e111b8dfae7106228eaffce9321b4c146dbdc8b8",
     "gaps_sha256": "d551f48cc2d73474105325a369ee561c0e6da231055dd4c8178202666aed3466",
-    "historical_population_sha256": "75718a243094f3efcd853aa2c0a6269d368a74e06b868ebda9898408c4edc798",
-    "historical_acceptance_sha256": "13cc9e0ef0462631c14f03fa3fb5e0936c145e88be590136de829501e8dabb35"
+    "historical_population_sha256": "cbc9025753045928f32ea590fb7d9e989d49e24f67a053e7994986ebe88e581e",
+    "historical_acceptance_sha256": "06853cb3b961568e1fa1dcd01127f3879585f240760f82c551cff51e2a1c5110"
   },
   "references": {
     "??8?$VectorClass@PAVColorScheme@@@@UBE_NABV0@@Z": 6311360,
@@ -2653,7 +2653,7 @@
     "??0?$VectorClass@I@@QAE@IPBI@Z": 4371728,
     "??_7?$VectorClass@PAVAlphaLightingRemapClass@@@@6B@": 7976992,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Insert_After@?$DynamicVectorClass@VBaseNodeClass@@@@QAE_NABVBaseNodeClass@@H@Z": 5206640,
     "??_7?$VectorClass@V?$rc_ptr@VWDTTerritory@@@@@@6B@": 8057576,
     "__real@8@3ffda0d97bb4e7870000": 7999744,
@@ -4352,7 +4352,7 @@
     "?unknown_protocol_7fd370@@3IA": 8377200,
     "?unknown_instance_00851ca8@@3PAXA": 8723624,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A": 8716956,
     "??0Tactical@@QAE@XZ": 6956208,
     "?unknown_slot40@OverlayTypeClass@@UAEXPBUPoint2D@@PBVRect@@H@Z": 6146272,

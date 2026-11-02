@@ -7,13 +7,13 @@
 // @ref ??_C@_0BA@NANB@D?3?2Ra2?2Init?4CPP?$AA@=007db8e4
 // @ref ??_C@_1M@EOJM@?$AA?$CF?$AAs?$AA?5?$AA?$CF?$AAs?$AA?$AA@=007dc0d0
 // @ref ??_C@_0M@FDGB@GUI?3Version?$AA@=007dc0dc
-// @ref ?version_object_00a40c88@@3UUnknownVersionObject@@A=00a40c88
-// @ref ?unknown_internal_version_text_712ed0@@YIPBDPAUUnknownVersionObject@@@Z=00712ed0
+// @ref ?version_object_00a40c88@@3VVersionClass@@A=00a40c88
+// @ref ?unknown_internal_version_text_712ed0@@YIPBDPAVVersionClass@@@Z=00712ed0
 // @ref ?Unknown_006FA180@@YIPAGPBD@Z=006fa180
 
-struct UnknownVersionObject;
-extern UnknownVersionObject version_object_00a40c88;
-char const *__fastcall unknown_internal_version_text_712ed0(UnknownVersionObject *object);    // 0x00712ED0
+class VersionClass;
+extern VersionClass version_object_00a40c88;
+char const *__fastcall unknown_internal_version_text_712ed0(VersionClass *object);    // 0x00712ED0
 
 // The main menu dialog's procedure (pointer only, 0x00516F00's dialog 0xE2): the common handler
 // first; WM_PAINT sends 0x4F0 to item 0x71A; 0x497 shows the version in item 0x71D; the

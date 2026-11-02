@@ -4,8 +4,8 @@
     "id": "population-3651",
     "inventory_sha256": "54884d2d3b2729043f8bf32b4bffdf9c6c7cd6de1492dfa9bc3f427fc97d9cc9",
     "gaps_sha256": "1cf5876247802d8507cbc7d988aa8f81fafb59e5f1811622f5e605e3eaa4559f",
-    "historical_population_sha256": "0f622058ede94d52cf83639b6f6c49989392b83314bf6a7fa5c34b66dcfb72ab",
-    "historical_acceptance_sha256": "e9c3f40078a6fb3b2747eb4c8e7d0601edc18e5680e1a2620c81129a3e216268"
+    "historical_population_sha256": "564054cd1da014aede8b9b3b25b736bb67702714abd08495ec56118929f63872",
+    "historical_acceptance_sha256": "baceb6cf2c63bc7c8dab6d7538ceb0e66d6dbf29714d052cf1c57578ec4e2a58"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3215,7 +3215,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?target@Call_5ba280_0@@QAEIIII@Z": 5298160,
     "?target@Call_5ba280_1@@QAEIIII@Z": 5298160,
@@ -8049,7 +8049,7 @@
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_session_a3d340@@3HA": 10736448,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
@@ -8368,7 +8368,7 @@
     "__imp__EndDialog@8": 7971772,
     "__imp__DialogBoxParamA@20": 7971780,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??0WaypointPathClass@@QAE@XZ": 7490320,
     "?View@MonoClass@@QAEXXZ": 5890800,
     "??1WaypointPathClass@@UAE@XZ": 7490720,

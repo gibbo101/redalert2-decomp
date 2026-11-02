@@ -15,9 +15,9 @@
 // @ref ??_C@_03PEHN@Yes?$AA@=007d7ba4
 // @ref ??_C@_02JOHD@No?$AA@=007d7ba0
 // @ref ??_C@_0BD@JKIO@MMX?5?$CFs?0?5Vendor?3?5?$CFs?$AA@=007dc07c
-// @ref ?version_object_00a40c88@@3UUnknownVersionObject@@A=00a40c88
+// @ref ?version_object_00a40c88@@3VVersionClass@@A=00a40c88
 // @ref ?unknown_version_text_7131d0@@YAPBDXZ=007131d0
-// @ref ?unknown_internal_version_text_712ed0@@YIPBDPAUUnknownVersionObject@@@Z=00712ed0
+// @ref ?unknown_internal_version_text_712ed0@@YIPBDPAVVersionClass@@@Z=00712ed0
 // @ref ?unknown_build_machine_text_737ad0@@YIPADPADH@Z=00737ad0
 // @ref ?unknown_build_user_text_737b00@@YIPADPADH@Z=00737b00
 // @ref ?unknown_clear_text_4955a0@@YIXPAD@Z=004955a0
@@ -28,10 +28,10 @@
 // @ref ?unknown_profile_blit_text_a41408@@3PADA=00a41408
 // @ref ?unknown_profile_text_a4127c@@3PADA=00a4127c
 
-struct UnknownVersionObject;
-extern UnknownVersionObject version_object_00a40c88;
+class VersionClass;
+extern VersionClass version_object_00a40c88;
 char const *unknown_version_text_7131d0();                                                    // 0x007131D0
-char const *__fastcall unknown_internal_version_text_712ed0(UnknownVersionObject *object);    // 0x00712ED0
+char const *__fastcall unknown_internal_version_text_712ed0(VersionClass *object);    // 0x00712ED0
 char *__fastcall unknown_build_machine_text_737ad0(char *buffer, int size);                   // 0x00737AD0
 char *__fastcall unknown_build_user_text_737b00(char *buffer, int size);                      // 0x00737B00
 void __fastcall unknown_clear_text_4955a0(char *text);                                        // 0x004955A0

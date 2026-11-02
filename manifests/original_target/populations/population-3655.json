@@ -4,8 +4,8 @@
     "id": "population-3655",
     "inventory_sha256": "8123e43e975adfdec36fcb2f277ae221d3b2dd8ea22dcc7da0a71d661dfe4696",
     "gaps_sha256": "9772e28b0629154cf368f017f6b3eec17bdff5a99c1871e5fe89bb358c7e751a",
-    "historical_population_sha256": "573075b15e241ec2a93312a78cf3e1beb76a1b8d341680204f5bb89f22350e35",
-    "historical_acceptance_sha256": "6d6f6309a7da408add5d4f05ad6c0509f3be4a894ba241f83ebc132be37b0551"
+    "historical_population_sha256": "9116d75706f8344977757b632be9b893f0972c0f58157fe634dfea9f7700756c",
+    "historical_acceptance_sha256": "f0f3a5ce58a3a947e5b0000568442bc8c4e56847225526465d62adfe308c77d8"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3698,7 +3698,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -5197,7 +5197,7 @@
     "?As_String_00523840@IPXAddressClass@@QAEPADPBV1@@Z": 5388352,
     "__imp__EndDialog@8": 7971772,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Colors@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6585952,
     "?Draw_Me@ShapeButtonClass@@UAEHH@Z": 6771168,
     "??0LineTrail@@QAE@XZ": 5477344,

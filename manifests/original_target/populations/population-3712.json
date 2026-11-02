@@ -4,8 +4,8 @@
     "id": "population-3712",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "91310c037af232cb047ce1776ad5a70e2fc074e41357beb708e8e4144f5ae1a4",
-    "historical_acceptance_sha256": "1ffef0b1ce5fb1b96135f11e200775ecb1c4c887b3f5f011391cf60aef6e6bbd"
+    "historical_population_sha256": "7cbb9e7f47b2820be19ea0e07359f2ae74dd807981d75fd64c7a2bb1ccca85c7",
+    "historical_acceptance_sha256": "7cc21fe5aaa75c2b8e83c00874f42ca7a9b2cde6208ddaa382d62f0bcc99bc30"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3030,7 +3030,7 @@
     "?Load@SpawnManagerClass@@UAGJPAUIStream@@@Z": 6858704,
     "?Load@KamikazeTrackerClass@@QAEJPAUIStream@@@Z": 5446304,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Load@FoggedObjectClass@@UAGJPAUIStream@@@Z": 4988032,
     "?Load@Tactical@@UAGJPAUIStream@@@Z": 6996768,
     "?Load@BaseClass@@UAGJPAUIStream@@@Z": 4376224,

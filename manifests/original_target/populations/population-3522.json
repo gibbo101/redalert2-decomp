@@ -4,8 +4,8 @@
     "id": "population-3522",
     "inventory_sha256": "235b89370e0a8b57d56824d72a1bdd78f71dddadb75cc6ffa37899e80d12f357",
     "gaps_sha256": "529c93980b988508e0eac7bd786a52b04cc66a703d4293a2124a020c2cac3302",
-    "historical_population_sha256": "8bb584f51fa0301c5f96bbbf8861393041bb414696bf7df79aad55b3c420d884",
-    "historical_acceptance_sha256": "444fbbda2a1bab0d5aeb6af09cbbf579eb91af6fc18278ff6d00fa75e78fdd9f"
+    "historical_population_sha256": "2c4f5e8578dd60cc1774a0145dae94d49c85add48cf9f75fe1f5f19bb3422b68",
+    "historical_acceptance_sha256": "fb473732ecb2df950d7c7d660a1e37586ca06e2f07dff1e832eb1b4e7b0dd773"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4965,7 +4965,7 @@
     "?Put@BufferPipe@@UAEHPBXH@Z": 7812912,
     "?Get@BufferStraw@@UAEHPAXH@Z": 7813184,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "??KCoordStruct@@QBE?AU0@H@Z": 7182192,
     "?Read_INI@OverlayClass@@SIXAAVCCINIClass@@@Z": 6141552,
@@ -5916,7 +5916,7 @@
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_session_a3d2c3@@3EA": 10736323,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
@@ -7853,7 +7853,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5cd380@@QAEIXZ": 6083456,

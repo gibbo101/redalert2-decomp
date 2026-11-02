@@ -4,8 +4,8 @@
     "id": "population-3302",
     "inventory_sha256": "111ba296ed22f1b1965deb4c51e2541af634f53142e34275cdf35273fb93e3ee",
     "gaps_sha256": "4f2b7ebfae29d8586f2628979d9aacc07335b7214ee1c702d49fafea49aa785c",
-    "historical_population_sha256": "88a4bd39cd346642b65a3a392e9d11a14134074b56790272eee563b67e912dcd",
-    "historical_acceptance_sha256": "6e727b5b482715baeca6e1a67806969f959c50ce150064d83fe8e7cfba43c537"
+    "historical_population_sha256": "a65a0b8fcac8e53078deb8af6e1af673f31e734d7d4f20cbc26fd262b34319a0",
+    "historical_acceptance_sha256": "2ad1357c5a56cef78157577cb487fe92751c39c067a66900d6b316be07f29681"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5224,7 +5224,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -8426,7 +8426,7 @@
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_session_a3d2c3@@3EA": 10736323,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "__imp__FileTimeToSystemTime": 7971044,
     "__imp__DefWindowProcA": 7971720,
     "__imp__SetFocus": 7971724,
@@ -8834,7 +8834,7 @@
     "__imp__EndDialog@8": 7971772,
     "__imp__DialogBoxParamA@20": 7971780,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??0WaypointPathClass@@QAE@XZ": 7490320,
     "?View@MonoClass@@QAEXXZ": 5890800,
     "??1WaypointPathClass@@UAE@XZ": 7490720,

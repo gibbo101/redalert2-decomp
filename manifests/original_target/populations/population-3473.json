@@ -4,8 +4,8 @@
     "id": "population-3473",
     "inventory_sha256": "ebd09de941bcf923e9db3d99832c53a0261abcb0dd3e5c80b242e36b132830cc",
     "gaps_sha256": "6b436b692e5eea2ab62521761942e306a0b565520fa7fb8856f10ee15c834d00",
-    "historical_population_sha256": "3783046716288deacf0edbc42b8b9b15e273529ea4b94f27f39b982e9bc7e365",
-    "historical_acceptance_sha256": "7abc3fb3b3fa949b57070c6466fde78969b4eb5b3039b47ca8ef31265a007ee7"
+    "historical_population_sha256": "3f8b73dc778474434f2bc0c26eed4fafc3beef98f5e19475eb58607ea190c1a0",
+    "historical_acceptance_sha256": "210d3f4043f07b5fbb2cf0c1ece853c0bc1fe0643c9cf16a1a6d24d894fdfb64"
   },
   "references": {
     "?unknown_value_8523e0@@3HA": 8725472,
@@ -1655,7 +1655,7 @@
     "?Load@KamikazeTrackerClass@@QAEJPAUIStream@@@Z": 5446304,
     "?Delete_Blitters_004853A0@ConvertClass@@QAEXXZ": 4740000,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Closest_Color@UnknownVoxelPalette@@QAEEMMM@Z": 7455168,
     "?Load@FoggedObjectClass@@UAGJPAUIStream@@@Z": 4988032,
     "?Load@Tactical@@UAGJPAUIStream@@@Z": 6996768,

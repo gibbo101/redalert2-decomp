@@ -4,8 +4,8 @@
     "id": "population-2949",
     "inventory_sha256": "fb3b78171b8758e677af40d73b3fcd17ec2fd3cfbabd3ff1d0582e42575d0b52",
     "gaps_sha256": "8fa1c563c22c87fcd9cc9dd81de0b122c7b6e3f61f011c5f7674fa13887dfb63",
-    "historical_population_sha256": "5ab23dad13dd99f5e71517c6d184d5fde3744254d93c60883393aa73dc29340f",
-    "historical_acceptance_sha256": "00b5c7f78c32f56c484158bb2ea12bac7a03652ef9d6bf184e0cef2fa36c38c0"
+    "historical_population_sha256": "0ba8390d6ef6a2844b530e7c72146bfa81d4d4c8f8c8c2b2c7048c927a5b5836",
+    "historical_acceptance_sha256": "cee70021bd53e562e432b61de82896bcc594a775d9c960b631fceaa8758376e6"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6357,7 +6357,7 @@
     "?Insert@WideString@@QAE_NGI@Z": 7800288,
     "??0TargetClass@@QAE@ABVCell@@@Z": 7034128,
     "??0TargetClass@@QAE@ABUCoordStruct@@@Z": 7034208,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "??_7PlayerProfile@@6B@": 8058196,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAVFoggedObjectClass@@@@PAU12@HABU12@@Z": 4990576,
@@ -7123,7 +7123,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A": 10746520,
@@ -7545,7 +7545,7 @@
     "?Unknown_0051A2B0@@YIXXZ": 5350064,
     "?unknown_chat_a72cfc@@3PAUIChat@WOL@@A": 10956028,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?unknown_lobby_a3fa94@@3HA": 10746516,
     "?Unknown_Slot_Names_005c8cf0@@YIXPAG@Z": 6065392,
     "??0CampaignScoreClass@@QAE@XZ": 4611056,

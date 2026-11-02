@@ -4,8 +4,8 @@
     "id": "population-3691",
     "inventory_sha256": "06bf30b00f349c3d977ae0471b4db961f4aa929afb41b451f9f357327f8a195b",
     "gaps_sha256": "b339ae55e116f1e46578bb01d21d8b37823e07dcce7c3346abe612e683d542f2",
-    "historical_population_sha256": "1067e2911a0c0a0e819b26285749c8b7e7511c09042bd53f8cefe6b38a5ce39d",
-    "historical_acceptance_sha256": "449e0795a70bfd69228eb16a4035a539b65dd4834937367af6be765d395bf600"
+    "historical_population_sha256": "4936357b9bc17ad6878e5b3702a94a4a9a68143e70767d33cecdc264f7843012",
+    "historical_acceptance_sha256": "c37de1ef2b6ef1712a3bbf0393504ccf88b7beb17e22f91be233662e617b8754"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5253,7 +5253,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -7622,7 +7622,7 @@
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_session_a3d340@@3HA": 10736448,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
@@ -7920,7 +7920,7 @@
     "?unknown_instance_00851ca8@@3PAXA": 8723624,
     "__imp__EndDialog@8": 7971772,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Unknown_0049CB70@DisplayClass@@QAE?AUCoordStruct@@ABU2@_N@Z": 4836208,
     "?View@MonoClass@@QAEXXZ": 5890800,
     "?Unknown_0054E3A0@MapClass@@QAEHABVCell@@PAVHouseClass@@@Z": 5563296,

@@ -4,8 +4,8 @@
     "id": "population-3586",
     "inventory_sha256": "b6593b36063352f951348e3f0d3a8a16a03bb45566606cf50e1b6578ac76f23c",
     "gaps_sha256": "6386c8f430a5e23e59da46f85a30b3fb4b28ac59e537b1ea8c03b75399c82973",
-    "historical_population_sha256": "3a3e53c19863b0ee001d46f82bc59541d321d18a4c4b1a1c8ab2f1d64237f4e5",
-    "historical_acceptance_sha256": "9d413a00e64c1c5bee25666cc395d4a289656e14c4df397a4de118688057e0a2"
+    "historical_population_sha256": "b382685f7c25705fa3fd06da2871b255f4bdff2a16cb805c604b796f57122417",
+    "historical_acceptance_sha256": "0c72919d89ac61eb5e7567d0da74255a29e4215ebe12c6aa5f021a6351e9312b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6904,7 +6904,7 @@
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_session_a3d2c3@@3EA": 10736323,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
     "?Unknown_0042EFD0@Unknown84E8D0@@QAE_NXZ": 4386768,
@@ -8033,7 +8033,7 @@
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "??0WideString@@QAE@ABV0@@Z": 7797264,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5cd380@@QAEIXZ": 6083456,
@@ -8489,7 +8489,7 @@
     "?Set_00437690@Vector3@@QAEAAU1@MMM@Z": 4421264,
     "?Scale_004376b0@Vector3@@QAEAAU1@M@Z": 4421296,
     "?Add_004376e0@Vector3@@QAEAAU1@ABU1@@Z": 4421344,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A": 8716956,
     "?Get_Wide_String@CampaignINI@@QBEHPBD0PAGH@Z": 5304336,
     "?unknown_5159b0@@YIXH_N@Z": 5331376,

@@ -11,8 +11,8 @@
 // @ref ??_C@_0BF@GBEB@TXT_MUST_SELECT_GAME?$AA@=007e6ca0
 // @ref ??_C@_0BJ@MAAJ@ERROR?3NameIsReservedWord?$AA@=007e6c60
 // @ref ??_C@_0P@FAEG@TXT_NAME_ERROR?$AA@=007e6c90
-// @ref ?Unknown_007131b0@UnknownVersionObject@@QAEKXZ=007131b0
-// @ref ?Unknown_007131c0@UnknownVersionObject@@QAEKXZ=007131c0
+// @ref ?Unknown_007131b0@VersionClass@@QAEKXZ=007131b0
+// @ref ?Unknown_007131c0@VersionClass@@QAEKXZ=007131c0
 // @ref ?Unknown_00737af0@@YAHXZ=00737af0
 // @ref ?Value_011c_00672a10@UnknownSessionState@@QAEHXZ=00672a10
 // @ref ?Value_0124_006729f0@UnknownSessionState@@QAEHXZ=006729f0

@@ -4,8 +4,8 @@
     "id": "population-3497",
     "inventory_sha256": "776450bd7b3e17487144eca5c9e3c23e0ba16f27b03a383f908add2dedf855d1",
     "gaps_sha256": "9ab0402cbf021f9f7ea440c05fac9113f78e6b7057fa38def1b5adefcc5e82e2",
-    "historical_population_sha256": "e4d6330a107b6c4a94b53e42bbb307858e92453f42db2ba8a7fc9b2eafd05439",
-    "historical_acceptance_sha256": "0aa72cbed6a4bf1f6b3253a6e87e6663f28587fbaedda242d2bdd0aadc568ed4"
+    "historical_population_sha256": "18e8532277d69dbe2cb2b67851eec1f9b7b2c6d52fac7640df6bb9871ed6c54e",
+    "historical_acceptance_sha256": "163c4e0134a85449c50c8945387cff3c82a1c4dee682fbedc8f41dedc877f694"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3337,7 +3337,7 @@
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "??0WideString@@QAE@ABV0@@Z": 7797264,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?target@Call_5ba280_0@@QAEIIII@Z": 5298160,
     "?target@Call_5ba280_1@@QAEIIII@Z": 5298160,
@@ -7994,7 +7994,7 @@
     "?Put@BufferPipe@@UAEHPBXH@Z": 7812912,
     "?Get@BufferStraw@@UAEHPAXH@Z": 7813184,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Fast_Sin_4096@@YAMN@Z": 4957472,
     "?unknown_slot212@TechnoClass@@UAE_NPAVAbstractClass@@H@Z": 7098528,
     "?unknown_6c4bb0@TechnoClass@@QAE_NPBUCoordStruct@@PAVAbstractClass@@PAVWeaponTypeClass@@@Z": 7097264,
@@ -9190,7 +9190,7 @@
     "??_GTubeClass@@UAEPAXI@Z": 7272720,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?unknown_flag_a3dc89@@3_NA": 10738825,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,

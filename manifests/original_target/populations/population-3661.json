@@ -4,8 +4,8 @@
     "id": "population-3661",
     "inventory_sha256": "8d10881ab879567ae7fb70c5798a1f9864f41f6a2754c56d6aa87fc6aa87acdc",
     "gaps_sha256": "77a7ad72046be1995d51daa874b5eced65b2024dcc66f9387ab8c14cdb26e15c",
-    "historical_population_sha256": "987bbaa1210bf117053f95c951d7426b9b4fc2023309c7d01f1dd11f1a2a0cff",
-    "historical_acceptance_sha256": "1c467033ce61e34e08162a3a96383333315ca124ac42386e231d6b612c2dd7ad"
+    "historical_population_sha256": "20699fc178cbf1aa3871645bad192b874cca852a3ff600a0f4deb223144b5d56",
+    "historical_acceptance_sha256": "947b90155ae1ed38d58877fcc59f0f64dadd590295cc0b3162d7600717499eea"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4525,7 +4525,7 @@
     "??0VoxelAnimClass@@QAE@PAVVoxelAnimTypeClass@@ABUCoordStruct@@PAVHouseClass@@@Z": 7391232,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Insert_After@?$DynamicVectorClass@VBaseNodeClass@@@@QAE_NABVBaseNodeClass@@H@Z": 5206640,
     "?AI@Tactical@@UAEXXZ": 6958544,

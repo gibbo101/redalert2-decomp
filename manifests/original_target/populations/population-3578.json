@@ -4,8 +4,8 @@
     "id": "population-3578",
     "inventory_sha256": "273a8095b7a8a7537da4feb487dc4c9dd58c940dda2542a8511df3092672d02c",
     "gaps_sha256": "f84b325e5a1bc647aa241fa0eb365c9e0288a6ab2ad1737126fdec57350b96d8",
-    "historical_population_sha256": "e86a2b4564d67e3a6433fcbada9bfbb5d715ec53dd11b3d15e0f44a2bde3e500",
-    "historical_acceptance_sha256": "35c6e2b0d3d497e6c035ee891266df284bcd14e3b29f046b169601c4478115d1"
+    "historical_population_sha256": "3d16e74f0bb655ee7fedf87bcb2ff84d7012c8916c48daa809c9a539ae0b23d6",
+    "historical_acceptance_sha256": "32c7d44786e253ed7c6b5b304232f3ca8340c359064a8c72e3835ff8abd06775"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2606,7 +2606,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A": 10746520,
@@ -5020,7 +5020,7 @@
     "?AI@AircraftClass@@UAEXXZ": 4278256,
     "?Save@FactoryClass@@UAGJPAUIStream@@H@Z": 4955024,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??KCoordStruct@@QBE?AU0@H@Z": 7182192,
     "?Load@OverlayClass@@UAGJPAUIStream@@@Z": 6143104,
     "?AI@MissionClass@@UAEXXZ": 5851024,
@@ -8255,7 +8255,7 @@
     "?Execute@TauntCommandClass@@UBEXH@Z": 5354992,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "??_7PlayerProfile@@6B@": 8058196,
     "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAVFoggedObjectClass@@@@PAU12@HABU12@@Z": 4990576,

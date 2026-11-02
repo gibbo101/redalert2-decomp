@@ -4,8 +4,8 @@
     "id": "population-3566",
     "inventory_sha256": "60290c8a0dd9bedf8f10e864903604545822b4b2c8975eea36798d1072b1fedf",
     "gaps_sha256": "72ffaab8972d02aea8696e953ab57226380040a9172e95757a9b6c622632ee10",
-    "historical_population_sha256": "d221d322ccd468979fc6978ee35a0e33691cc8c196b5179ad364400c164ea3c9",
-    "historical_acceptance_sha256": "8b0ed58a0970c419f0f6d101f2ea73e71534b3c209f16ac957d9f39b9eab2a22"
+    "historical_population_sha256": "67fb9537b20061b375df28ed8c685e58282190ddd06b7dd6a9d62cc421543f03",
+    "historical_acceptance_sha256": "b045660db8091ed1e704deeaea0baf8f521bf4ae0fece2fb5705aee3f2f034c4"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6044,7 +6044,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -9031,7 +9031,7 @@
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_session_a3d340@@3HA": 10736448,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
     "?Unknown_0042EFD0@Unknown84E8D0@@QAE_NXZ": 4386768,
@@ -9163,7 +9163,7 @@
     "?unknown_chat_a72cfc@@3PAUIChat@WOL@@A": 10956028,
     "?unknown_instance_00851ca8@@3PAXA": 8723624,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A": 8716956,
     "?unknown_slot40@OverlayTypeClass@@UAEXPBUPoint2D@@PBVRect@@H@Z": 6146272,
     "?unknown_slot39@OverlayTypeClass@@UBEPAXXZ": 6148432,

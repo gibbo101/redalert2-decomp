@@ -4,8 +4,8 @@
     "id": "population-3005",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "95bc975f23d4d6df4685bb7bc8cc1eeed3f9407db891bbd2c5d50be8aa9d372d",
-    "historical_acceptance_sha256": "7372c498a4fbd9c71492e672f8465e7b51f8aae7a3b76827f4b568844c7fc4b9"
+    "historical_population_sha256": "cfb15a7a42f2d65b1eed52ee0f05b0f71cd4ec713306b191075df74d68ad02ea",
+    "historical_acceptance_sha256": "60bc6f100b85edea0bcaf22654958255d520080138bbf0c4a8f5caed72f73d74"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4520,7 +4520,7 @@
     "?unknown_int_a40d48@@3HA": 10751304,
     "?unknown_protocol_7fd370@@3IA": 8377200,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??0LineTrail@@QAE@XZ": 5477344,
     "?Add@?$DynamicVectorClass@V?$rc_ptr@VGameOption@WorldDominationTour@@@@@@QAE_NABV?$rc_ptr@VGameOption@WorldDominationTour@@@@@Z": 7504496,
     "?unknown_5159b0@@YIXH_N@Z": 5331376,
@@ -5035,7 +5035,7 @@
     "?Print_Bold@BitTextClass@@QAEHPAVBitFontClass@@PAVSurface@@PBGHHH@Z": 4400048,
     "?Print_Char@MSFont@@UAEXPAVSurface@@GHHHH@Z": 5981136,
     "?Delete_Blitters_004853A0@ConvertClass@@QAEXXZ": 4740000,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Closest_Color@UnknownPalette_0071c1c0@@QAEEMMM@Z": 7455168,
     "??0ColorScheme@@QAE@PBDABVHSVClass@@PAXHH_N@Z": 6699504,

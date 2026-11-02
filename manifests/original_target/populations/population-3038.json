@@ -4,8 +4,8 @@
     "id": "population-3038",
     "inventory_sha256": "d6209d459f8c06c392057b180d5f166eee838fbbe2387de43840935207e19d5c",
     "gaps_sha256": "9465b5ec007ed94cc1d6b82ead3158ece18bfc4f54b373032e6f56a0710fa80b",
-    "historical_population_sha256": "df0d7f98364b0a2ef2e036f61005c1b07b2afa0e10a04196fd32cea1b6303915",
-    "historical_acceptance_sha256": "d8f552b9e725a06ca09cac0434535703d53dca86b7463cfe630d7f7e7e7374fe"
+    "historical_population_sha256": "62324d0f7667a1954573f904fadb72dea8f22a21253d3a9a9c67e5ab8fdc0348",
+    "historical_acceptance_sha256": "28b3689eae79da9d9ed770d72f174fefd3c5b67462d8c5b1857879d419579b2e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5273,7 +5273,7 @@
     "?GetClassID@TubeClass@@UAGJPAUGUID@@@Z": 7272656,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?CDControl@@3VCDControlClass@@A": 8718384,
     "??0CDControlClass@@QAE@XZ": 4647536,
     "??1CDControlClass@@QAE@XZ": 4647568,
@@ -6434,7 +6434,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5cd380@@QAEIXZ": 6083456,
@@ -6954,7 +6954,7 @@
     "__imp__EndDialog@8": 7971772,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
     "?Draw@EgoClass@@QAEX_N@Z": 4929168,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Draw_Me@ShapeButtonClass@@UAEHH@Z": 6771168,
     "_?maximum@?1??Building_Find_Nearby_Radio_Acceptor_00450f90@@YIPAVBuildingClass@@PAVHouseClass@@PAVTechnoClass@@@Z@4HA": 8711404,
     "?unknown_5159b0@@YIXH_N@Z": 5331376,

@@ -4,8 +4,8 @@
     "id": "population-3596",
     "inventory_sha256": "fa6360d3c063d0db5bf1a979ca7caa1ab799c13b61ed6bcfbf9eb2e6e5bf54cd",
     "gaps_sha256": "73865ab148abd4a8018cea96df2870b599c0fd4329ec8c614e1579acf3248994",
-    "historical_population_sha256": "6f8fd8306af481a67ab219a1f19f7df46b7f8856f9dfb0dd3970151b7246d5fd",
-    "historical_acceptance_sha256": "8e09505eac492011391d7e9bf5d555e35d900195b41a0c6ada48f36ea7610fb7"
+    "historical_population_sha256": "82fb9e7a6d58ab7c8105f1dd6630238ac3f55cd80252351d16947bac2a73bebe",
+    "historical_acceptance_sha256": "b870d8399fe64024e5e72c65b1b6463f7caae26ba53ff2597a131cd30e7e3eaf"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4499,7 +4499,7 @@
     "??0VoxelAnimClass@@QAE@PAVVoxelAnimTypeClass@@ABUCoordStruct@@PAVHouseClass@@@Z": 7391232,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Insert_After@?$DynamicVectorClass@VBaseNodeClass@@@@QAE_NABVBaseNodeClass@@H@Z": 5206640,
     "?AI@Tactical@@UAEXXZ": 6958544,
@@ -5807,7 +5807,7 @@
     "_?white@?7??unknown_slot74@BuildingClass@@UAEXH@Z@4VRGBClass@@A": 8711416,
     "?Saved_Map_Is_Undefined_0048fe70@CoopCampaignClass@@QAE_NPAD@Z": 4783728,
     "?Get_Player_Scores_0048e710@CoopCampaignClass@@QAE_NAAV?$DynamicVectorClass@PAVMPlayerScoreType@@@@PAH@Z": 4777744,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??8?$VectorClass@V?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@@@UBE_NABV0@@Z": 5210272,
     "??8?$VectorClass@UAngerStruct@@@@UBE_NABV0@@Z": 5206816,
     "??8?$VectorClass@UScoutStruct@@@@UBE_NABV0@@Z": 5207632,

@@ -4,8 +4,8 @@
     "id": "population-3597",
     "inventory_sha256": "ce549d19ea90471987c9084e5fa601bf23df31ff6566f5335ca595f1f8fad21e",
     "gaps_sha256": "d90f6014bee214dca0aeafb2ed6d1c5bc2a7a421f6b784f381d65580cf936702",
-    "historical_population_sha256": "41b5657984fd54c4f5fd6614a5b77b1ac3c960509bdd3b30a956e31cb1a4de4c",
-    "historical_acceptance_sha256": "71e606e5b2537c0c1c96d096bd548e0d953c3b0a50c86144e37be2307db6409b"
+    "historical_population_sha256": "b48fd88dcec2503f00f040eef66f202322efd810ec00b6e9bb1a458903d148a5",
+    "historical_acceptance_sha256": "494cb7817030b7dfff38d86a038ea7fb5b831e0efe2c85cdb0aa2d424f76f791"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7012,7 +7012,7 @@
     "??_GTubeClass@@UAEPAXI@Z": 7272720,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
     "?Unknown_0042EFD0@Unknown84E8D0@@QAE_NXZ": 4386768,
@@ -7940,7 +7940,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A": 10746520,
@@ -8423,7 +8423,7 @@
     "?Get_Message@NullModemClass@@QAEHPAXPAH@Z": 6096432,
     "__imp__EndDialog@8": 7971772,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Draw_Me@ShapeButtonClass@@UAEHH@Z": 6771168,
     "_?maximum@?1??Building_Find_Nearby_Radio_Acceptor_00450f90@@YIPAVBuildingClass@@PAVHouseClass@@PAVTechnoClass@@@Z@4HA": 8711404,
     "?unknown_5159b0@@YIXH_N@Z": 5331376,

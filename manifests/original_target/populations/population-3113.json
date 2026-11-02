@@ -4,8 +4,8 @@
     "id": "population-3113",
     "inventory_sha256": "445e7dca74fcf499dd727c2735270a9ef9765c476da22687d28957e66d5688cb",
     "gaps_sha256": "cd6c8e39f428aa4a3a56598b7c33710e0cbd5a00d63c37ad907b851527b40cb2",
-    "historical_population_sha256": "2d7f6783b3c9d61b70d90f268b0a27a283eb1471291ab3b66fa4c14f5cda7ab8",
-    "historical_acceptance_sha256": "9a7ffd40ecc6c85dc7605e051667a1baff4a0f9d00d58d39c3c0575abe008110"
+    "historical_population_sha256": "5281dda697034f36b4d13d3ff93e9300b6a5204db6f81e298e7ac7e953ee38aa",
+    "historical_acceptance_sha256": "f511f20b7837efbbf40c86f2a939ac29ce2458fd64154f3965213e4ae6c25d9a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2160,7 +2160,7 @@
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "??0WideString@@QAE@ABV0@@Z": 7797264,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?target@Call_5ba280_0@@QAEIIII@Z": 5298160,
     "?target@Call_5ba280_1@@QAEIIII@Z": 5298160,
@@ -7686,7 +7686,7 @@
     "?Set_Turret_Animation_Frame_0043bd40@BuildingClass@@QAEXH@Z": 4439360,
     "?unknown_44ed60@BuildingClass@@QAE?AUCoordStruct@@H_N@Z": 4517216,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Fast_Sin_4096@@YAMN@Z": 4957472,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "?unknown_slot212@TechnoClass@@UAE_NPAVAbstractClass@@H@Z": 7098528,
@@ -9089,7 +9089,7 @@
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_session_a3d340@@3HA": 10736448,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?unknown_flag_a3dc89@@3_NA": 10738825,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,

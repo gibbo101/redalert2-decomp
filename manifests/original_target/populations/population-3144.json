@@ -4,8 +4,8 @@
     "id": "population-3144",
     "inventory_sha256": "9b49da8deac1889074759c7ee91af2afb1aa59acf9de23ba7b00e1bd2f083f24",
     "gaps_sha256": "35d91b8470ebaf7df57b7aa21678d3713f8f563003b0c5601e088c8ee34d42bf",
-    "historical_population_sha256": "ac0cc8135e29e15a0f12daecc64597210d46d572807a7af4e012e82a09be3bf7",
-    "historical_acceptance_sha256": "68085a38dcd08c72967e650c935e8ab28a800a4ababce456c02cfb8a21f34b59"
+    "historical_population_sha256": "8a1205dc98ecfc480754499453bd524a7d3ffa91176d7e2e903a97076335c8f3",
+    "historical_acceptance_sha256": "467d0c3dfcd1747c8fe4adcfe75a58fae5cf518ae3e0d69ecd29aa31d327ace7"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6096,7 +6096,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -10497,7 +10497,7 @@
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
@@ -10969,7 +10969,7 @@
     "??0EventClass@@QAE@HVSpecialClass@@@Z": 4939440,
     "??0EventClass@@QAE@HVTargetClass@@E000@Z": 4940144,
     "??0EventClass@@QAE@HHJABVCell@@@Z": 4940528,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??0EventClass@@QAE@HHHHABVCell@@@Z": 4940656,
     "??0EventClass@@QAE@HHHHHABVCell@@@Z": 4940784,
     "??0EventClass@@QAE@HHK@Z": 4939824,

@@ -4,8 +4,8 @@
     "id": "population-3695",
     "inventory_sha256": "b0e54e44ebeba0f03d3c68afaa2819dbfe4754e525eb7a4f42c0cea888561437",
     "gaps_sha256": "039f6f96f34b95f7d6710ed3cfbd909127f1b041742229cbe967c6fd023ad6a1",
-    "historical_population_sha256": "eb555ff159aa97bdfcae3481d8aeda6dbb89ea0131cf0f37b2047995a157cb7f",
-    "historical_acceptance_sha256": "77880639ede78ffc4b2503875e1d5a219ed0a8c9cb0c562e33f83ec48676548a"
+    "historical_population_sha256": "b5178d6bde09226f84c3cd6f55056f40769b9270a0e5ec4ac77d10fa62392eaa",
+    "historical_acceptance_sha256": "29b4f5743d03864e3587b759d64c517bd78aba97805f013917394039c3bba169"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6878,7 +6878,7 @@
     "?Set_Turret_Animation_Frame_0043bd40@BuildingClass@@QAEXH@Z": 4439360,
     "?unknown_44ed60@BuildingClass@@QAE?AUCoordStruct@@H_N@Z": 4517216,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Fast_Sin_4096@@YAMN@Z": 4957472,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "?unknown_slot212@TechnoClass@@UAE_NPAVAbstractClass@@H@Z": 7098528,
@@ -8071,7 +8071,7 @@
     "??_GTubeClass@@UAEPAXI@Z": 7272720,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
@@ -9555,7 +9555,7 @@
     "?get@Leaf_51f100@@QAEXXZ": 5370112,
     "?get@Storage_52ed90@@QAEPAXIPAI@Z": 5434768,
     "?get@Storage_53e3d0@@QAEPAXIPAI@Z": 5497808,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?Add_Field@PacketClass@@QAEXPAVPacketField_004BAD50@@@Z": 6302352,
     "?get@Leaf_61d430@@QAEIXZ": 6411312,
     "?get@Append_658070@@QAEEPBI@Z": 6652016,

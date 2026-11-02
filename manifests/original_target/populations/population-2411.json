@@ -4,8 +4,8 @@
     "id": "population-2411",
     "inventory_sha256": "03cf95c9e66a31d4e68989e23496678c60eecde1aaa578e80131ed9e241698aa",
     "gaps_sha256": "0a9fbf83ac1b6ccaf26861877b194c6e5db82d823c80c2c04f61c405eaa5b565",
-    "historical_population_sha256": "7a93c3b5489fdcda24cd3f03c2c5197ef2945c024608c2055b897ae6966abc96",
-    "historical_acceptance_sha256": "8f90a242614c153643f2e42a58ae727728b5f13b4ae10e16295ef656e32ddb02"
+    "historical_population_sha256": "5a7e6e6873507a2b640c89a9438202927ec925d56c494ef1580036b812487414",
+    "historical_acceptance_sha256": "ee2e2fe550c3e7528e40a242671c45c4a04694c3ec177e8a00507ca70a69c687"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2610,8 +2610,8 @@
     "?unknown_mangler_count_b2ac34@@3HA": 11709492,
     "?unknown_mangler_ports_b291a4@@3PAHA": 11702692,
     "?unknown_mangler_index_b2ac38@@3HA": 11709496,
-    "?unknown_identifier_a71b18@@3UWolUnknownIdentifier@@A": 10951448,
-    "?Initialize_005b9e80@WolUnknownIdentifier@@QAEXXZ": 6004352,
+    "?unknown_firewall_a71b18@@3VFirewallSettings@@A": 10951448,
+    "?Detect_And_Save_005b9e80@FirewallSettings@@QAEXXZ": 6004352,
     "?unknown_server_list_event_b264fc@@3PAXA": 11691260,
     "?OnChannelList@CChatEventSink@@UAGJJPAUChannel@WOL@@@Z": 7748736,
     "?unknown_channel_requests_b29390@@3VWolIntArray@@A": 11703184,

@@ -4,8 +4,8 @@
     "id": "population-3705",
     "inventory_sha256": "2c4f678c172584a8f5e14031ac2ff95ac55d37f2f79253d1d5acb1e4f227428a",
     "gaps_sha256": "989c432a32114f4054f31fbf0eeaac09781ad0cf2f5d242c002140d2715fd0b2",
-    "historical_population_sha256": "da6f39a3d5fd91e99f527dd8eb375b184229a6a5938bc72f4df834bbc3c44f75",
-    "historical_acceptance_sha256": "fef4766039824469be8d781dde95f55a4c0a1b6006e0e0711ae220dfb28f6300"
+    "historical_population_sha256": "633ed890d60e5289de379eb51e59f1f1b3ce183c9613fa6f75b4f165ae1398bb",
+    "historical_acceptance_sha256": "9cd84bd210425d3f63c4b0263e78e3b53d0f6c616eb5f798b40e76f6a72483c5"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -30,8 +30,8 @@
     "___amsg_exit": 7887784,
     "__DAT_0084ed10": 8711440,
     "__strdup": 7919638,
-    "??_GUnknownVersionObject@@UAEPAXI@Z": 5065088,
-    "??_7UnknownVersionObject@@6B@": 8006332,
+    "??_GVersionClass@@UAEPAXI@Z": 5065088,
+    "??_7VersionClass@@6B@": 8006332,
     "__real@8@3ff8a3d70a3d70a3d800": 7980312,
     "__splitpath": 7882867,
     "__makepath": 7877104,
@@ -134,9 +134,9 @@
     "__real@4@40058000000000000000": 8023672,
     "__real@4@c004f000000000000000": 8029820,
     "__wcsdup": 7958579,
-    "?Unknown_007131b0@UnknownVersionObject@@QAEKXZ": 7418288,
-    "?Unknown_007131c0@UnknownVersionObject@@QAEKXZ": 7418304,
-    "?Init_Clipping_00713160@UnknownVersionObject@@QAEXXZ": 7418208,
+    "?Unknown_007131b0@VersionClass@@QAEKXZ": 7418288,
+    "?Unknown_007131c0@VersionClass@@QAEKXZ": 7418304,
+    "?Init_Clipping_00713160@VersionClass@@QAEXXZ": 7418208,
     "__real@8@4005c7e6666666666800": 8033952,
     "__real@8@c005c800000000000000": 8019912,
     "__real@8@3fe08000000080000000": 8019432,
@@ -216,15 +216,15 @@
     "__real@8@3ffea2f9836e4e441800": 7983256,
     "__real@4@3ffdaaaaab0000000000": 8019624,
     "___RTtypeid": 7879685,
-    "??0UnknownVersionObject@@QAE@XZ": 7416608,
+    "??0VersionClass@@QAE@XZ": 7416608,
     "__purecall": 4950368,
-    "??_EUnknownVersionObject@@UAEPAXI@Z": 5065088,
+    "??_EVersionClass@@UAEPAXI@Z": 5065088,
     "??0RawFileClass@@QAE@PBD@Z": 6523712,
     "?Is_Available@RawFileClass@@UAE_NH@Z": 6524064,
     "?Read@RawFileClass@@UAEJPAXJ@Z": 6524304,
     "??1RawFileClass@@UAE@XZ": 6523584,
     "??_C@_0M@CNNK@VERSION?4TXT?$AA@": 8362268,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??_C@_08JHOJ@?$CFd?4?$CF3?43d?$AA@": 8362280,
     "_VersionProtocol": 8361728,
     "__imp__GetModuleFileNameA@12": 7971224,
@@ -237,13 +237,13 @@
     "_?empty@?1??Version_Name_007131d0@@YIPBDXZ@4_NA": 8362264,
     "??_C@_0BJ@KCFH@?2VarFileInfo?2Translation?$AA@": 8362332,
     "??_C@_0CI@PPOP@?2StringFileInfo?2?$CF04d?$CF04d?2Product@": 8362292,
-    "?Version_Number@UnknownVersionObject@@QAEKXZ": 7416656,
-    "?Major_Version@UnknownVersionObject@@QAEGXZ": 7417168,
-    "?Minor_Version@UnknownVersionObject@@QAEGXZ": 7417360,
-    "?Internal_Version_Name_00712ed0@UnknownVersionObject@@QAEPBDXZ": 7417552,
-    "?Read_Text_String@UnknownVersionObject@@QAEXXZ": 7418000,
-    "?Version_Protocol_00713130@UnknownVersionObject@@QAEHH@Z": 7418160,
-    "?Clip_Version_00713170@UnknownVersionObject@@QAEHKK@Z": 7418224,
+    "?Version_Number@VersionClass@@QAEKXZ": 7416656,
+    "?Major_Version@VersionClass@@QAEGXZ": 7417168,
+    "?Minor_Version@VersionClass@@QAEGXZ": 7417360,
+    "?Internal_Version_Name_00712ed0@VersionClass@@QAEPBDXZ": 7417552,
+    "?Read_Text_String@VersionClass@@QAEXXZ": 7418000,
+    "?Version_Protocol_00713130@VersionClass@@QAEHH@Z": 7418160,
+    "?Clip_Version_00713170@VersionClass@@QAEHKK@Z": 7418224,
     "?Version_Name_007131d0@@YIPBDXZ": 7418320,
     "?get@Leaf_401170@@QAEXXZ": 4198768,
     "?get@Leaf_401940@@QAEIXZ": 4200768,
@@ -905,7 +905,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5cd380@@QAEIXZ": 6083456,
@@ -1351,7 +1351,7 @@
     "?get@Leaf_5a62b0@@": 5923504,
     "?get@Leaf_5ad810@@": 5953552,
     "?get@Leaf_5b55e0@@": 5985760,
-    "?Clear_005b9e70@WolUnknownIdentifier@@": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@": 6004336,
     "?get@Leaf_5c8cc0@@": 6065344,
     "?get@Leaf_5d7c20@@": 6126624,
     "?get@Leaf_5eac10@@": 6204432,
@@ -6751,8 +6751,8 @@
     "?unknown_slot59@InfantryClass@@UAEXABUCoordStruct@@@Z": 5276832,
     "?unknown_slot58@BuildingClass@@UAEXABUCoordStruct@@@Z": 4517584,
     "?unknown_slot59@BuildingClass@@UAEXABUCoordStruct@@@Z": 4517680,
-    "?unknown_identifier_a71b18@@3UWolUnknownIdentifier@@A": 10951448,
-    "?Initialize_005b9e80@WolUnknownIdentifier@@QAEXXZ": 6004352,
+    "?unknown_firewall_a71b18@@3VFirewallSettings@@A": 10951448,
+    "?Detect_And_Save_005b9e80@FirewallSettings@@QAEXXZ": 6004352,
     "?unknown_slot48@BuildingTypeClass@@UAEPAXXZ": 4581264,
     "?unknown_slot53@AircraftClass@@UAE_NPBUCoordStruct@@H@Z": 4276256,
     "?unknown_slot63@BuildingClass@@UAE_NPAVRect@@_N1@Z": 4432384,
@@ -7627,14 +7627,21 @@
     "__imp__GetFileVersionInfoSizeA@8": 7972112,
     "__imp__GetFileVersionInfoSizeA": 7972112,
     "__imp__GetFileVersionInfoA@16": 7972116,
-    "__imp__GetFileVersionInfoA": 7972116
+    "__imp__GetFileVersionInfoA": 7972116,
+    "__iob": 8580240,
+    "__real@8@bff8a3d70a3d70a3d800": 8055152,
+    "??0PaletteClass@@QAE@ABVRGBClass@@@Z": 6303696,
+    "??0PaletteClass@@QAE@PAE@Z": 6303776,
+    "??8PaletteClass@@QBE_NABV0@@Z": 6303824,
+    "??4AbstractClass@@QAEAAV0@ABV0@@Z": 5679600,
+    "?unknown_slot5@PlanningModeCommandClass@@UBE_NH@Z": 5355952
   },
   "regions": [
     {
       "entry": 7418208,
       "method": "00713160",
-      "symbol": "?Init_Clipping_00713160@UnknownVersionObject@@QAEXXZ",
-      "symbol_prefix": "?Init_Clipping_00713160@UnknownVersionObject@@QAEXXZ",
+      "symbol": "?Init_Clipping_00713160@VersionClass@@QAEXXZ",
+      "symbol_prefix": "?Init_Clipping_00713160@VersionClass@@QAEXXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -7647,20 +7654,20 @@
       "full_extent_bytes": 16,
       "full_extent_sha256": "44494958a0da33ebbf594fe60a79cfcd95b7410924b40cdf716eaf761d594f51",
       "relocations": [],
-      "source_sha256": "7bee9ac40370ad4b2032a8271268cbbf1fa35a3d63549c2d86672841606eb7a9",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Init_Clipping_00713160.cpp",
+      "source_sha256": "61595034d3cbbc06e0ebefa06fd45ad9d064c491e5945741797d315b398400ec",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Init_Clipping_00713160.cpp",
       "population": "population-3705",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Init_Clipping_00713160",
+      "semantic_name": "VersionClass_Init_Clipping_00713160",
       "source_order": 163968
     },
     {
       "entry": 7418288,
       "method": "007131b0",
-      "symbol": "?Unknown_007131b0@UnknownVersionObject@@QAEKXZ",
-      "symbol_prefix": "?Unknown_007131b0@UnknownVersionObject@@QAEKXZ",
+      "symbol": "?Unknown_007131b0@VersionClass@@QAEKXZ",
+      "symbol_prefix": "?Unknown_007131b0@VersionClass@@QAEKXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -7673,20 +7680,20 @@
       "full_extent_bytes": 16,
       "full_extent_sha256": "0fb12494d8caa7daac788fb6fcff897e615b575a3e94a83c3b3a22181feee03a",
       "relocations": [],
-      "source_sha256": "139bb9712bb180746be768291c9c880c94178af4f2c98cf13bccaca0c31a3045",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Min_Version_007131b0.cpp",
+      "source_sha256": "83e55a2b2d683415e3f7dfe1b93ff619da200bc1a053666078a7e882d6751b2d",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Min_Version_007131b0.cpp",
       "population": "population-3705",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Min_Version_007131b0",
+      "semantic_name": "VersionClass_Min_Version_007131b0",
       "source_order": 163970
     },
     {
       "entry": 7418304,
       "method": "007131c0",
-      "symbol": "?Unknown_007131c0@UnknownVersionObject@@QAEKXZ",
-      "symbol_prefix": "?Unknown_007131c0@UnknownVersionObject@@QAEKXZ",
+      "symbol": "?Unknown_007131c0@VersionClass@@QAEKXZ",
+      "symbol_prefix": "?Unknown_007131c0@VersionClass@@QAEKXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -7699,20 +7706,20 @@
       "full_extent_bytes": 16,
       "full_extent_sha256": "0fb12494d8caa7daac788fb6fcff897e615b575a3e94a83c3b3a22181feee03a",
       "relocations": [],
-      "source_sha256": "47ac7fc209ca8c87af4e6809d611355a13258c7df7291cdf8f424c7f6ba77632",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Max_Version_007131c0.cpp",
+      "source_sha256": "9f77bb3d97a43e2e15fa41eab981135811785fde038c868982c4405d3b613b1d",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Max_Version_007131c0.cpp",
       "population": "population-3705",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Max_Version_007131c0",
+      "semantic_name": "VersionClass_Max_Version_007131c0",
       "source_order": 163971
     },
     {
       "entry": 7418224,
       "method": "00713170",
-      "symbol": "?Clip_Version_00713170@UnknownVersionObject@@QAEHKK@Z",
-      "symbol_prefix": "?Clip_Version_00713170@UnknownVersionObject@@QAEHKK@Z",
+      "symbol": "?Clip_Version_00713170@VersionClass@@QAEHKK@Z",
+      "symbol_prefix": "?Clip_Version_00713170@VersionClass@@QAEHKK@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -7725,20 +7732,20 @@
       "full_extent_bytes": 64,
       "full_extent_sha256": "8cfcc25a005943d5e1f960bcb212c1c3dfcacbf6eec8030cdd6d9906900dd8e6",
       "relocations": [],
-      "source_sha256": "7eb2c04ac98843eef52913ea64c25b8fb2529c2c5c5b8c9ca0f7de748e893df7",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Clip_Version_00713170.cpp",
+      "source_sha256": "2abed2e01687e62f0676c9df201adf0ccedf425f9db8d05e97b6a2eff4d2144e",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Clip_Version_00713170.cpp",
       "population": "population-3705",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Clip_Version_00713170",
+      "semantic_name": "VersionClass_Clip_Version_00713170",
       "source_order": 163969
     },
     {
       "entry": 7416608,
       "method": "00712b20",
-      "symbol": "??0UnknownVersionObject@@QAE@XZ",
-      "symbol_prefix": "??0UnknownVersionObject@@QAE@XZ",
+      "symbol": "??0VersionClass@@QAE@XZ",
+      "symbol_prefix": "??0VersionClass@@QAE@XZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -7754,26 +7761,26 @@
         {
           "offset": 32,
           "kind": 6,
-          "symbol": "??_7UnknownVersionObject@@6B@",
+          "symbol": "??_7VersionClass@@6B@",
           "target": 8006332,
           "addend": 0,
           "resolved": 8006332
         }
       ],
-      "source_sha256": "288a74b988457f0ad122282eb99e922f760ed67a66d61fa39529db9be3b1c9b5",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_ctor_00712b20.cpp",
+      "source_sha256": "bc9308e3c1ddd28b588dbce6d07ea49dcb9e0da001bcabbd6823eb8ce9eff529",
+      "source": "src/recovered/classes/VersionClass/VersionClass_ctor_00712b20.cpp",
       "population": "population-3705",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_ctor_00712b20",
+      "semantic_name": "VersionClass_ctor_00712b20",
       "source_order": 163961
     },
     {
       "entry": 7416656,
       "method": "00712b50",
-      "symbol": "?Version_Number@UnknownVersionObject@@QAEKXZ",
-      "symbol_prefix": "?Version_Number@UnknownVersionObject@@QAEKXZ",
+      "symbol": "?Version_Number@VersionClass@@QAEKXZ",
+      "symbol_prefix": "?Version_Number@VersionClass@@QAEKXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -7907,20 +7914,20 @@
           "resolved": 4294073791
         }
       ],
-      "source_sha256": "fbb2e0865c744191a9390ce46eff9e42118f63aedd911be3fb2e0dc1241a395a",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Version_Number_00712b50.cpp",
+      "source_sha256": "2ad14955ed8fa94a9f45e51fc9e5bf77883f4e85da4f049042cc7ece93102b0e",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Version_Number_00712b50.cpp",
       "population": "population-3705",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Version_Number_00712b50",
+      "semantic_name": "VersionClass_Version_Number_00712b50",
       "source_order": 163962
     },
     {
       "entry": 7417168,
       "method": "00712d50",
-      "symbol": "?Major_Version@UnknownVersionObject@@QAEGXZ",
-      "symbol_prefix": "?Major_Version@UnknownVersionObject@@QAEGXZ",
+      "symbol": "?Major_Version@VersionClass@@QAEGXZ",
+      "symbol_prefix": "?Major_Version@VersionClass@@QAEGXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -7974,20 +7981,20 @@
           "resolved": 4294073579
         }
       ],
-      "source_sha256": "40be8fa9834f41041762f009dee856050f4bea901ad3d8c20926baec62a6454c",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Major_Version_00712d50.cpp",
+      "source_sha256": "ddba45863dfbbb493c30d0fc903d04d488364b001c0b25ef85adc866a2c504c6",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Major_Version_00712d50.cpp",
       "population": "population-3705",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Major_Version_00712d50",
+      "semantic_name": "VersionClass_Major_Version_00712d50",
       "source_order": 163963
     },
     {
       "entry": 7417360,
       "method": "00712e10",
-      "symbol": "?Minor_Version@UnknownVersionObject@@QAEGXZ",
-      "symbol_prefix": "?Minor_Version@UnknownVersionObject@@QAEGXZ",
+      "symbol": "?Minor_Version@VersionClass@@QAEGXZ",
+      "symbol_prefix": "?Minor_Version@VersionClass@@QAEGXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -8041,20 +8048,20 @@
           "resolved": 4294073387
         }
       ],
-      "source_sha256": "47db518c68aa0a4c1cc030fbd63e72591760eb36c9915f4f91d17893d5dd3989",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Minor_Version_00712e10.cpp",
+      "source_sha256": "cd1364e5f3996d72a491649bbe6a3f9762d7735666f132c06ecfd97c1a249f78",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Minor_Version_00712e10.cpp",
       "population": "population-3705",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Minor_Version_00712e10",
+      "semantic_name": "VersionClass_Minor_Version_00712e10",
       "source_order": 163964
     },
     {
       "entry": 7417552,
       "method": "00712ed0",
-      "symbol": "?Internal_Version_Name_00712ed0@UnknownVersionObject@@QAEPBDXZ",
-      "symbol_prefix": "?Internal_Version_Name_00712ed0@UnknownVersionObject@@QAEPBDXZ",
+      "symbol": "?Internal_Version_Name_00712ed0@VersionClass@@QAEPBDXZ",
+      "symbol_prefix": "?Internal_Version_Name_00712ed0@VersionClass@@QAEPBDXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -8110,7 +8117,7 @@
         {
           "offset": 198,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 68,
           "resolved": 10751180
@@ -8142,7 +8149,7 @@
         {
           "offset": 240,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 42,
           "resolved": 10751154
@@ -8158,7 +8165,7 @@
         {
           "offset": 254,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 42,
           "resolved": 10751154
@@ -8166,7 +8173,7 @@
         {
           "offset": 265,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 57,
           "resolved": 10751169
@@ -8174,7 +8181,7 @@
         {
           "offset": 276,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 41,
           "resolved": 10751153
@@ -8182,7 +8189,7 @@
         {
           "offset": 284,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 42,
           "resolved": 10751154
@@ -8190,7 +8197,7 @@
         {
           "offset": 298,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 42,
           "resolved": 10751154
@@ -8198,7 +8205,7 @@
         {
           "offset": 304,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 40,
           "resolved": 10751152
@@ -8206,7 +8213,7 @@
         {
           "offset": 318,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 41,
           "resolved": 10751153
@@ -8214,7 +8221,7 @@
         {
           "offset": 329,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 42,
           "resolved": 10751154
@@ -8230,7 +8237,7 @@
         {
           "offset": 343,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 68,
           "resolved": 10751180
@@ -8238,7 +8245,7 @@
         {
           "offset": 350,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 68,
           "resolved": 10751180
@@ -8246,7 +8253,7 @@
         {
           "offset": 355,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 68,
           "resolved": 10751180
@@ -8254,7 +8261,7 @@
         {
           "offset": 369,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 8,
           "resolved": 10751120
@@ -8262,7 +8269,7 @@
         {
           "offset": 377,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 68,
           "resolved": 10751180
@@ -8270,7 +8277,7 @@
         {
           "offset": 390,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 8,
           "resolved": 10751120
@@ -8278,7 +8285,7 @@
         {
           "offset": 396,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 68,
           "resolved": 10751180
@@ -8300,20 +8307,20 @@
           "resolved": 454773
         }
       ],
-      "source_sha256": "31e5ce0d10411c155fc30a5114ad24b05210e741f2ff0890f2e4f9d5bb1f0013",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Internal_Version_Name_00712ed0.cpp",
+      "source_sha256": "7af9bf8546eff5e142ac3581c08a7f9b991312543cbc34300997644abe700df7",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Internal_Version_Name_00712ed0.cpp",
       "population": "population-3705",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Internal_Version_Name_00712ed0",
+      "semantic_name": "VersionClass_Internal_Version_Name_00712ed0",
       "source_order": 163965
     },
     {
       "entry": 7418000,
       "method": "00713090",
-      "symbol": "?Read_Text_String@UnknownVersionObject@@QAEXXZ",
-      "symbol_prefix": "?Read_Text_String@UnknownVersionObject@@QAEXXZ",
+      "symbol": "?Read_Text_String@VersionClass@@QAEXXZ",
+      "symbol_prefix": "?Read_Text_String@VersionClass@@QAEXXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -8375,20 +8382,20 @@
           "resolved": 4294072742
         }
       ],
-      "source_sha256": "29a886d429ba2e55dd5d88198a5dea5236a1ba952d375c46ae9de69d6e2197a6",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Read_Text_String_00713090.cpp",
+      "source_sha256": "6a2b893599c13d48597cc1a4c375991068bc7ac22716980a57bc7a9d296e2ae7",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Read_Text_String_00713090.cpp",
       "population": "population-3705",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Read_Text_String_00713090",
+      "semantic_name": "VersionClass_Read_Text_String_00713090",
       "source_order": 163966
     },
     {
       "entry": 7418160,
       "method": "00713130",
-      "symbol": "?Version_Protocol_00713130@UnknownVersionObject@@QAEHH@Z",
-      "symbol_prefix": "?Version_Protocol_00713130@UnknownVersionObject@@QAEHH@Z",
+      "symbol": "?Version_Protocol_00713130@VersionClass@@QAEHH@Z",
+      "symbol_prefix": "?Version_Protocol_00713130@VersionClass@@QAEHH@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -8434,13 +8441,13 @@
           "resolved": 8361732
         }
       ],
-      "source_sha256": "d13e6211e97fb3dd6d77a82e7258a955c3996905df71218f881ed9acb38ba19b",
-      "source": "src/recovered/classes/UnknownVersionObject/UnknownVersionObject_Version_Protocol_00713130.cpp",
+      "source_sha256": "b23373f5f266c9d17073b5397bc149c032034d9ee6a281afcc9c99faf3ad71f7",
+      "source": "src/recovered/classes/VersionClass/VersionClass_Version_Protocol_00713130.cpp",
       "population": "population-3705",
       "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "UnknownVersionObject_Version_Protocol_00713130",
+      "semantic_name": "VersionClass_Version_Protocol_00713130",
       "source_order": 163967
     },
     {
@@ -8590,7 +8597,7 @@
         }
       ],
       "source_sha256": "6cd22a2cf89b901110e378efac43ef7f6f31a63946310649bd6f2c9461c5efad",
-      "source": "src/recovered/classes/UnknownVersionObject/Version_Name_007131d0.cpp",
+      "source": "src/recovered/classes/VersionClass/Version_Name_007131d0.cpp",
       "population": "population-3705",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",

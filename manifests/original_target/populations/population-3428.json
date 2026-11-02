@@ -4,8 +4,8 @@
     "id": "population-3428",
     "inventory_sha256": "a41c8a9e87338f6cce37c8391076f601377e24dee9d9c3a58237005456086593",
     "gaps_sha256": "17021bf07aa5d67ce4aa5d5ee9cfb5a7e705029805e3e0f68a0b6f85c078bc77",
-    "historical_population_sha256": "92f88263e0639ecdde0dcf7ef70c8f2515981cbed9c8b774bf4f13b060e73b16",
-    "historical_acceptance_sha256": "de8fd48bbf0de8b9a336281b429fbb272cde68b6b83c9ab2794ebeb7dfdb10cc"
+    "historical_population_sha256": "e4168a8d8d26f7e04e5427adf65fb8503450f8664536150b27e6f3257a5d480f",
+    "historical_acceptance_sha256": "c998d57cb3b9b2d2a61ffd3b62751c79c2e823923991578ca44af8c44d6c9d4d"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2955,7 +2955,7 @@
     "?unknown_protocol_7fd370@@3IA": 8377200,
     "?unknown_instance_00851ca8@@3PAXA": 8723624,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A": 8716956,
     "??0Tactical@@QAE@XZ": 6956208,
     "?unknown_slot40@OverlayTypeClass@@UAEXPBUPoint2D@@PBVRect@@H@Z": 6146272,
@@ -4709,7 +4709,7 @@
     "??0TargetClass@@QAE@ABUCoordStruct@@@Z": 7034208,
     "??0VoxelAnimClass@@QAE@PAVVoxelAnimTypeClass@@ABUCoordStruct@@PAVHouseClass@@@Z": 7391232,
     "__imp__SetWindowLongA@12": 7971976,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "__imp__SetActiveWindow@4": 7971872,
     "??_7PlayerProfile@@6B@": 8058196,

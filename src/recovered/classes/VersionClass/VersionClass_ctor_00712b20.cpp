@@ -7,17 +7,17 @@
 #include "shared/crt_string.hpp"
 #include "shared/win32_api.hpp"
 #include "shared/win32_window.hpp"
-// @ref ??_7UnknownVersionObject@@6B@=007a2abc
-// @ref ??_GUnknownVersionObject@@UAEPAXI@Z=004d4980
-// @ref ??_EUnknownVersionObject@@UAEPAXI@Z=004d4980
+// @ref ??_7VersionClass@@6B@=007a2abc
+// @ref ??_GVersionClass@@UAEPAXI@Z=004d4980
+// @ref ??_EVersionClass@@UAEPAXI@Z=004d4980
 // @ref ??0RawFileClass@@QAE@PBD@Z=00638b40
 // @ref ?Is_Available@RawFileClass@@UAE_NH@Z=00638ca0
 // @ref ?Read@RawFileClass@@UAEJPAXJ@Z=00638d90
 // @ref ??1RawFileClass@@UAE@XZ=00638ac0
 // @ref ??_C@_0M@CNNK@VERSION?4TXT?$AA@=007f991c
-// @ref ?version_object_00a40c88@@3UUnknownVersionObject@@A=00a40c88
+// @ref ?version_object_00a40c88@@3VVersionClass@@A=00a40c88
 
-UnknownVersionObject::UnknownVersionObject() :
+VersionClass::VersionClass() :
     Version(0),
     MajorVer(0),
     MinorVer(0),

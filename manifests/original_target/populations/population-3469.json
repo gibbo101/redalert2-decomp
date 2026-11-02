@@ -4,8 +4,8 @@
     "id": "population-3469",
     "inventory_sha256": "1a51853dfd82682b6af93b90293ccba5210b8a951412b468bfb1f1ed14fbc3ab",
     "gaps_sha256": "ee33637ef51c177eeeaef3469ca47f18d9415d26999b1c82ae40077c7c6a6e6c",
-    "historical_population_sha256": "dec80e7a7ff20d459e80583ce4ccb88012dd0aae8971cad38362b9f68da168bd",
-    "historical_acceptance_sha256": "ec91fbae4981e2f8b3586230bd485e708cdaf01738613b8130f0a98ad2bd357d"
+    "historical_population_sha256": "7ddeaa298b5b3d62f1ca9ddb2e8e405722742e35d2ca878b225787089156cc8c",
+    "historical_acceptance_sha256": "407c3256d3cf7e6371b2f4e7e0e589654f1c1e3d1cb5618cc7f43249dfeb5e60"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3925,7 +3925,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A": 10746520,
@@ -4922,7 +4922,7 @@
     "?Fetch@?$VectorClass@UDrawRecord@FoggedObjectClass@@@@UBE?AUDrawRecord@FoggedObjectClass@@H@Z": 4989168,
     "?AI@UnitClass@@UAEXXZ": 7319808,
     "?AI@AircraftClass@@UAEXXZ": 4278256,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?AI@MissionClass@@UAEXXZ": 5851024,
     "?Fetch@?$VectorClass@V?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@@@UBE?AV?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@H@Z": 5205696,
     "?Add@?$DynamicVectorClass@V?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@@@QAE_NABV?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@@Z": 5211120,
@@ -7520,7 +7520,7 @@
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "??_7PlayerProfile@@6B@": 8058196,
     "?Pick_Next_Song@ThemeClass@@QAEHH@Z": 7241088,

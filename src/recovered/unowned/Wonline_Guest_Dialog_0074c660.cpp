@@ -241,7 +241,7 @@ int __stdcall Wonline_Guest_Dialog_0074c660(HWND window,UINT message,WPARAM wpar
             unsigned short socket;
             unknown_address_a3fbc8.Get_Address(network,node,&socket);
             char options[128];
-            sprintf(options,guest_label_7fec84,requested_side,requested_color,*(unsigned int *)node,unknown_identifier_a71b18.unknown_00&0xffff,unknown_a40230);
+            sprintf(options,guest_label_7fec84,requested_side,requested_color,*(unsigned int *)node,unknown_firewall_a71b18.unknown_00&0xffff,unknown_a40230);
             Debug_Printf(guest_label_7fdea0,options);
             Wstring host=Narrow_Copy_00771280(unknown_host_name_a3f618);
             Unknown_005c3d90(host.Get(),options);

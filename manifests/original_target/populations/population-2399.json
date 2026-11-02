@@ -4,8 +4,8 @@
     "id": "population-2399",
     "inventory_sha256": "d875040c54e284097fe975bbb31633b2928c4a6cf2fd46670801ac0ea7cc6cf4",
     "gaps_sha256": "cb291927af64fb1bc58861d53c62c9786babc19a5f5cee06a224cd4ccc736fc0",
-    "historical_population_sha256": "e78e4fcf2c2a5cf70c9e053290e7472c8041e21a9a12b6b4a38b23da52524789",
-    "historical_acceptance_sha256": "8761cf62469a238a81ca7feb3a20248ccf14004ae24ec4549d528e8c9a330982"
+    "historical_population_sha256": "97f6df7ef223644cc943119136a4b9df3ff6f0d9ff78ff89ee223a4a2e1294cd",
+    "historical_acceptance_sha256": "86fb50c860d5220b9cbe5ce6ce6b5227da91efbd2ad883585f9123b8d1c00922"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2610,8 +2610,8 @@
     "?unknown_mangler_count_b2ac34@@3HA": 11709492,
     "?unknown_mangler_ports_b291a4@@3PAHA": 11702692,
     "?unknown_mangler_index_b2ac38@@3HA": 11709496,
-    "?unknown_identifier_a71b18@@3UWolUnknownIdentifier@@A": 10951448,
-    "?Initialize_005b9e80@WolUnknownIdentifier@@QAEXXZ": 6004352,
+    "?unknown_firewall_a71b18@@3VFirewallSettings@@A": 10951448,
+    "?Detect_And_Save_005b9e80@FirewallSettings@@QAEXXZ": 6004352,
     "?unknown_server_list_event_b264fc@@3PAXA": 11691260,
     "?OnChannelList@CChatEventSink@@UAGJJPAUChannel@WOL@@@Z": 7748736,
     "?unknown_channel_requests_b29390@@3VWolIntArray@@A": 11703184,
@@ -4920,7 +4920,7 @@
     "?unknown_slot48@BuildingTypeClass@@UAEPAXXZ": 4581264,
     "?unknown_slot53@AircraftClass@@UAE_NPBUCoordStruct@@H@Z": 4276256,
     "?unknown_slot63@BuildingClass@@UAE_NPAVRect@@_N1@Z": 4432384,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Init@TerrainTypeClass@@SIXH@Z": 7230560,
     "?Init@OverlayTypeClass@@SIXH@Z": 6146400,
     "?Init@SmudgeTypeClass@@SIXH@Z": 6848432,

@@ -4,8 +4,8 @@
     "id": "population-3510",
     "inventory_sha256": "55ef75a98b9ec8db5596703ef3ebd36753bb5c71dd39f6fd0e9c6af397c68b30",
     "gaps_sha256": "697fe140034dfdd248503c5dcbd107ee02373b7bd246baaa0d4c6b7698f575a3",
-    "historical_population_sha256": "445bcc723ab32f1916a918bd83188ea326d8368a477804906079c8b42ad021ee",
-    "historical_acceptance_sha256": "e00616097cab20f8f12d54cb387d7a0eaf5b3508d65718439223719fe953e04e"
+    "historical_population_sha256": "05f947d3f8639f0dddd4d265baf88d3849bd87c374c69cb109b3aef6577b9524",
+    "historical_acceptance_sha256": "abc89c9cbf42e1fca22fe25fd9e5b9a398ec0149a1c63894c2d3829ed7d6d5e8"
   },
   "references": {
     "_unknown_empty_rect": 11505560,
@@ -2751,7 +2751,7 @@
     "?AI@AircraftClass@@UAEXXZ": 4278256,
     "__real@8@bffcc90fdaa22168c000": 7983248,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "__real@8@4008a2f9836e4e441800": 7999360,
     "??KCoordStruct@@QBE?AU0@H@Z": 7182192,
     "??0XSurface@@QAE@HH@Z": 4846640,
@@ -4927,7 +4927,7 @@
     "?Load@KamikazeTrackerClass@@QAEJPAUIStream@@@Z": 5446304,
     "?Delete_Blitters_004853A0@ConvertClass@@QAEXXZ": 4740000,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Closest_Color@UnknownPalette_0071c1c0@@QAEEMMM@Z": 7455168,
     "?Load@FoggedObjectClass@@UAGJPAUIStream@@@Z": 4988032,
     "?Load@Tactical@@UAGJPAUIStream@@@Z": 6996768,

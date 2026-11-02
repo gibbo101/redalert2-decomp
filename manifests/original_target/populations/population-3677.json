@@ -4,8 +4,8 @@
     "id": "population-3677",
     "inventory_sha256": "8535431e2c9b37c4adf37b4dcfcb1eb5d0f5a0ebfdc71311641cf304291e7e94",
     "gaps_sha256": "b0a1e5f40995e97d2243b8d9440b83858472ecc0c30f595ece2cb1dd37590608",
-    "historical_population_sha256": "0de9601ed24e00c372494fe687fbe428a9e484a440ef2611fc7264c64c7fe7a8",
-    "historical_acceptance_sha256": "1fc3b403a3e0208d6d6e699a98b21b0a45bf8644eb980261c480d8ad54fdc287"
+    "historical_population_sha256": "d329ce30d5b98bb56ae22f1af7f06b13c4ff033dcab6ac374035a39a30dd150d",
+    "historical_acceptance_sha256": "1dbbc784bc0c5a05975a6b61610a5e0159db79135c8ff2867957227b82a6efaf"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1609,8 +1609,8 @@
     "??_C@_0BL@ENPP@ModemHost?4Dialog?$CIexit?5?$CFs?$CJ?6?$AA@": 8266772,
     "?Select_Multi_Map_0059b090@ModemHost@@QAEXXZ": 5877904,
     "??_GUnknownPreview_0061D430@@QAEPAXI@Z": 5884800,
-    "?Clip_Version_00713170@UnknownVersionObject@@QAEHKK@Z": 7418224,
-    "?Version_Protocol_00713130@UnknownVersionObject@@QAEHH@Z": 7418160,
+    "?Clip_Version_00713170@VersionClass@@QAEHKK@Z": 7418224,
+    "?Version_Protocol_00713130@VersionClass@@QAEHH@Z": 7418160,
     "??_C@_13ECNF@?$AA?5?$AA?$AA@": 8217844,
     "??_C@_06DN@TXT_OK?$AA@": 8239348,
     "??_C@_0BB@BKJO@Received?5packet?6?$AA@": 8265924,
@@ -1636,7 +1636,7 @@
     "?serial_local_player_00a3fb38@@3HA": 10746680,
     "?serial_manager_00a40a28@@3VNullModemClass@@A": 10750504,
     "?unknown_session_a3d2ac@@3HA": 10736300,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "__imp__GetDlgItem@8": 7971996,
     "__imp__SendMessageA@16": 7972000,
     "__imp__SendDlgItemMessageA@20": 7971972,
@@ -1706,7 +1706,7 @@
     "??_C@_0L@NJNM@TXT_PURPLE?$AA@": 8265664,
     "??_C@_0N@GNAA@TXT_SKY_BLUE?$AA@": 8265676,
     "?Find_Combo_Item_Data_00736e10@@YIHPAUHWND__@@HH@Z": 7564816,
-    "?Init_Clipping_00713160@UnknownVersionObject@@QAEXXZ": 7418208,
+    "?Init_Clipping_00713160@VersionClass@@QAEXXZ": 7418208,
     "__imp__PostMessageA@16": 7971952,
     "??_C@_0BC@FOEB@Received?5message?6?$AA@": 8267380,
     "??_C@_0BF@BAJ@Received?5GO?5message?6?$AA@": 8267356,
@@ -1738,8 +1738,8 @@
     "?unknown_host_shown_7e6dc0@@3_NA": 8285632,
     "??_C@_0CC@HJGN@ModemHost?4SelectRandomMap?$CIenter?$CJ@": 8267080,
     "??_C@_0BN@CALA@Sending?5game?5options?5packet?6?$AA@": 8267196,
-    "?Unknown_007131b0@UnknownVersionObject@@QAEKXZ": 7418288,
-    "?Unknown_007131c0@UnknownVersionObject@@QAEKXZ": 7418304,
+    "?Unknown_007131b0@VersionClass@@QAEKXZ": 7418288,
+    "?Unknown_007131c0@VersionClass@@QAEKXZ": 7418304,
     "?Unknown_00737af0@@YAHXZ": 7568112,
     "?unknown_multi_missions_a3d8d8@@3V?$DynamicVectorClass@PAVMultiMission@@@@A": 10737880,
     "?unknown_special_a40920@@3VSpecialClass@@A": 10750240,
@@ -4908,7 +4908,7 @@
     "??0WideString@@QAE@ABV0@@Z": 7797264,
     "??_7MultiplayerTeam@@6B@": 8024852,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?target@Call_5ba280_0@@QAEIIII@Z": 5298160,
     "?target@Call_5ba280_1@@QAEIIII@Z": 5298160,
@@ -7917,7 +7917,7 @@
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?unknown_flag_a3dc89@@3_NA": 10738825,
     "??_7?$VectorClass@V?$rc_ptr@VWDTTerritory@@@@@@6B@": 8057576,
@@ -8997,7 +8997,7 @@
     "?unknown_sync_states_a780d8@@3PAUUnknownSyncState@@A": 10977496,
     "?Unknown_0062DBA0@@YIXHPAVEventClass@@@Z": 6478752,
     "?Version_Name_007131d0@@YIPBDXZ": 7418320,
-    "?Internal_Version_Name_00712ed0@UnknownVersionObject@@QAEPBDXZ": 7417552,
+    "?Internal_Version_Name_00712ed0@VersionClass@@QAEPBDXZ": 7417552,
     "?CRC@@3PAKA": 11230940,
     "__imp__IsWindowVisible@4": 7972056,
     "__imp__GetClassNameA@12": 7972064,
@@ -9759,7 +9759,56 @@
     "??_G?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128,
     "??_E?$DynamicVectorClass@V?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@@UAEPAXI@Z": 7080144,
     "??_E?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128,
-    "??_EUnknownPreview_0061D430@@QAEPAXI@Z": 5884800
+    "??_EUnknownPreview_0061D430@@QAEPAXI@Z": 5884800,
+    "?AddRef@TiberianSunClassFactory@@UAGKXZ": 5065040,
+    "?Release@TiberianSunClassFactory@@UAGKXZ": 5065056,
+    "?unknown_event_queue_a35f30@@3V?$QueueClass@VEventClass@@$0BAA@@@A": 10706736,
+    "??_GVersionClass@@UAEPAXI@Z": 5065088,
+    "??_7VersionClass@@6B@": 8006332,
+    "??8BaseNodeClass@@QAE_NABV0@@Z": 4374240,
+    "??OBaseNodeClass@@QAE_NABV0@@Z": 4374368,
+    "?Difference@HSVClass@@QBEHABV1@@Z": 5238784,
+    "??8HSVClass@@QBE_NABV0@@Z": 5239152,
+    "?unknown_timer_a780c0@@3UUnknownElapsedTimer@@A": 10977472,
+    "??9BaseNodeClass@@QAE_NABV0@@Z": 4374288,
+    "??0UnknownSessionState@@QAE@XZ": 6742912,
+    "?Get_Buildings@CCINIClass@@QBEHPBD0H@Z": 4632224,
+    "?Put_House_List@CCINIClass@@QAE_NPBD0V?$TypeList@H@@@Z": 4636256,
+    "?unknown_flag_b2af68@@3_NA": 11710312,
+    "??_7?$VectorClass@PAVIonBlastClass@@@@6B@": 8013300,
+    "?AI@IonBlastClass@@QAEXXZ": 5378880,
+    "?Draw_It@IonBlastClass@@QAEXXZ": 5381344,
+    "?Add@?$DynamicVectorClass@PBVCommandClass@@@@QAE_NABQBVCommandClass@@@Z": 5366624,
+    "?Is_Present@?$IndexClass@HPAVCommandClass@@@@QBE_NABH@Z": 5367136,
+    "?Remove_Index@?$IndexClass@HPAVCommandClass@@@@QAE_NABH@Z": 5366912,
+    "?Add_Index@?$IndexClass@HPAVCommandClass@@@@QAE_NABHABQAVCommandClass@@@Z": 5366704,
+    "??0VersionClass@@QAE@XZ": 7416608,
+    "??0UnknownFrameTiming@@QAE@XZ": 6435344,
+    "?unknown_timing_aabcf0@@3PAUUnknownFrameTiming@@A": 11189488,
+    "?Version_Number@VersionClass@@QAEKXZ": 7416656,
+    "?Major_Version@VersionClass@@QAEGXZ": 7417168,
+    "?Minor_Version@VersionClass@@QAEGXZ": 7417360,
+    "?Read_Text_String@VersionClass@@QAEXXZ": 7418000,
+    "_?empty@?1??Version_Name_007131d0@@YIPBDXZ@4_NA": 8362264,
+    "_?buffer@?1??Version_Name_007131d0@@YIPBDXZ@4PADA": 8361752,
+    "__iob": 8580240,
+    "__real@8@bff8a3d70a3d70a3d800": 8055152,
+    "??0PaletteClass@@QAE@ABVRGBClass@@@Z": 6303696,
+    "??0PaletteClass@@QAE@PAE@Z": 6303776,
+    "??8PaletteClass@@QBE_NABV0@@Z": 6303824,
+    "?Adjust@PaletteClass@@QAEXH@Z": 6303904,
+    "?Adjust@PaletteClass@@QAEXHABV1@@Z": 6303952,
+    "??4AbstractClass@@QAEAAV0@ABV0@@Z": 5679600,
+    "?unknown_slot5@PlanningModeCommandClass@@UBE_NH@Z": 5355952,
+    "?Is_Node@BaseClass@@QAE_NPAVBuildingClass@@@Z": 4375056,
+    "?Put_PipScale@CCINIClass@@QAE_NPBD0H@Z": 4628080,
+    "??1SideClass@@UAE@XZ": 6794960,
+    "?End@Benchmark@@QAEXXZ": 4387136,
+    "?Link@TagClass@@QAEXPAVTriggerClass@@@Z": 7028720,
+    "?Unlink@TagClass@@QAE_NPAVTriggerClass@@@Z": 7028736,
+    "??_EVersionClass@@UAEPAXI@Z": 5065088,
+    "?Has_Edit_Focus@MessageListClass@@QAE_NXZ": 5985264,
+    "??_7?$DynamicVectorClass@PAVIonBlastClass@@@@6B@": 8013268
   },
   "regions": [
     {
@@ -14420,7 +14469,7 @@
         {
           "offset": 537,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 0,
           "resolved": 10751112
@@ -14428,7 +14477,7 @@
         {
           "offset": 544,
           "kind": 20,
-          "symbol": "?Clip_Version_00713170@UnknownVersionObject@@QAEHKK@Z",
+          "symbol": "?Clip_Version_00713170@VersionClass@@QAEHKK@Z",
           "target": 7418224,
           "addend": 0,
           "resolved": 1538236
@@ -14652,7 +14701,7 @@
         {
           "offset": 913,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 0,
           "resolved": 10751112
@@ -14660,7 +14709,7 @@
         {
           "offset": 918,
           "kind": 20,
-          "symbol": "?Version_Protocol_00713130@UnknownVersionObject@@QAEHH@Z",
+          "symbol": "?Version_Protocol_00713130@VersionClass@@QAEHH@Z",
           "target": 7418160,
           "addend": 0,
           "resolved": 1537798
@@ -15090,7 +15139,7 @@
           "resolved": 5880881
         }
       ],
-      "source_sha256": "7f573cf24c2bf889a640593ad580b61e6c66867bac8c10fe0c22614cdfd02f6b",
+      "source_sha256": "24f4dcfa9f8b1660429e52ae8e3d334e7cd4313e5d506c16ac374d2e6dc277dc",
       "switch_data_bytes": 51,
       "source": "src/recovered/classes/ModemHost/ModemHost_Process_Messages_0059b690.cpp",
       "population": "population-3677",
@@ -16755,7 +16804,7 @@
         {
           "offset": 2016,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 0,
           "resolved": 10751112
@@ -16763,7 +16812,7 @@
         {
           "offset": 2021,
           "kind": 20,
-          "symbol": "?Init_Clipping_00713160@UnknownVersionObject@@QAEXXZ",
+          "symbol": "?Init_Clipping_00713160@VersionClass@@QAEXXZ",
           "target": 7418208,
           "addend": 0,
           "resolved": 1544279
@@ -17161,7 +17210,7 @@
           "resolved": 4293314032
         }
       ],
-      "source_sha256": "1517c9cfc6d7ece5dede9bfc29184ef7aa21d70d0cc2c07ccf968cab44673a0a",
+      "source_sha256": "6a75d7bc207502bb7f40b66fb3fee865c74fa764dc852d29d2efaa733322155d",
       "source": "src/recovered/classes/ModemHost/ModemHost_Init_Dialog_00599920.cpp",
       "population": "population-3677",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
@@ -20184,7 +20233,7 @@
         {
           "offset": 102,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 0,
           "resolved": 10751112
@@ -20192,7 +20241,7 @@
         {
           "offset": 114,
           "kind": 20,
-          "symbol": "?Unknown_007131b0@UnknownVersionObject@@QAEKXZ",
+          "symbol": "?Unknown_007131b0@VersionClass@@QAEKXZ",
           "target": 7418288,
           "addend": 0,
           "resolved": 1537194
@@ -20200,7 +20249,7 @@
         {
           "offset": 119,
           "kind": 6,
-          "symbol": "?version_object_00a40c88@@3UUnknownVersionObject@@A",
+          "symbol": "?version_object_00a40c88@@3VVersionClass@@A",
           "target": 10751112,
           "addend": 0,
           "resolved": 10751112
@@ -20208,7 +20257,7 @@
         {
           "offset": 128,
           "kind": 20,
-          "symbol": "?Unknown_007131c0@UnknownVersionObject@@QAEKXZ",
+          "symbol": "?Unknown_007131c0@VersionClass@@QAEKXZ",
           "target": 7418304,
           "addend": 0,
           "resolved": 1537196
@@ -20558,7 +20607,7 @@
           "resolved": 4293473221
         }
       ],
-      "source_sha256": "5e728e01fb200cedeeef29afc099f7bc8e174a152ce3701c5dd813dfda9f62cc",
+      "source_sha256": "7aa92cbdbf1455fb2e42a55a76814f04212baff31e3c52a9681025be402db31e",
       "source": "src/recovered/classes/ModemHost/ModemHost_Send_Options_0059bc90.cpp",
       "population": "population-3677",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
@@ -21265,7 +21314,7 @@
           "resolved": 5871603
         }
       ],
-      "source_sha256": "8d8eee33cab9a46bb5375f7ef2876f7e6d0a4503ca2cfb6f7dfd45f3a4188d33",
+      "source_sha256": "ff965dc0d3cc85dfaf3cb340bfaea1860211600bc77f14cbf09a35e58695be7a",
       "switch_data_bytes": 280,
       "source": "src/recovered/classes/ModemHost/ModemHost_Dialog_Proc_00598fa0.cpp",
       "population": "population-3677",

@@ -4,8 +4,8 @@
     "id": "population-3539",
     "inventory_sha256": "581cd964f0a860551ff371b65340107678e0fc690ced4e3b7b370f9423b1f441",
     "gaps_sha256": "4d30f006364241db658b5163bb493ee6bfc6537c3bb7d645d837cd3e5be029dd",
-    "historical_population_sha256": "d0de787a66a6f0b9db9ace63c9a44de73c9adc53ba7a2a47d48c3ffaca91392a",
-    "historical_acceptance_sha256": "d8241ff9706b61d9c90e9cbce98adc525aebe3409c2155eb0bd403dff84bd879"
+    "historical_population_sha256": "d8ce7570716c1e801c2c3a5fbf337521cf1856cfca83afc32a6e9ad8a6ddc9e1",
+    "historical_acceptance_sha256": "0f02b2801dcd80e6e9242b4aeca25d90f9bf0e966dfda2d9d62a46ce21e0ebdb"
   },
   "references": {
     "_unknown_empty_rect": 11259808,
@@ -2710,7 +2710,7 @@
     "?AI@UnitClass@@UAEXXZ": 7319808,
     "?AI@AircraftClass@@UAEXXZ": 4278256,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??KCoordStruct@@QBE?AU0@H@Z": 7182192,
     "??0XSurface@@QAE@HH@Z": 4846640,
     "?AI@MissionClass@@UAEXXZ": 5851024,

@@ -13,7 +13,7 @@ static VersionProtocolType VersionProtocol[] = {
 
 // The protocol of a version: the last table entry not newer than it, else the newest
 // protocol (0x00713130).
-int UnknownVersionObject::Version_Protocol_00713130(int version)
+int VersionClass::Version_Protocol_00713130(int version)
 {
     int i, j;
 

@@ -1,6 +1,6 @@
 // Reads the version label from VERSION.TXT (empty without the file), dropping trailing
 // carriage returns (0x00713090).
-void UnknownVersionObject::Read_Text_String()
+void VersionClass::Read_Text_String()
 {
     RawFileClass file("VERSION.TXT");
 

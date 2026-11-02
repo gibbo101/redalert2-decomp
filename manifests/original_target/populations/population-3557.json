@@ -4,8 +4,8 @@
     "id": "population-3557",
     "inventory_sha256": "752a261389b056dfed654cc4a4fac90a3d2b678f8a512208296e3e146cb786d6",
     "gaps_sha256": "e92f0c6628efceee9aafa03e62dcf9e684cecbc02fa332ae065e6348040e27d1",
-    "historical_population_sha256": "5152d2d0f2b7c2f67407c4bb8c882eff6ae301f307b5c93497fa7d1f057ff092",
-    "historical_acceptance_sha256": "ca96b343a5971c9189f4ca19cd79a33d5811d7cff881a67faf40553f02eb639a"
+    "historical_population_sha256": "e6c716d67feb6757fc0b4fd918b4b52f8ed7d2158ebdd8f90de62b585b411d49",
+    "historical_acceptance_sha256": "9797d1b9691e1da2d601f217c4bc59024aef31851dbb110f79101120fc59ee3d"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7326,7 +7326,7 @@
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_session_a3d340@@3HA": 10736448,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,
@@ -8238,7 +8238,7 @@
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "??0WideString@@QAE@ABV0@@Z": 7797264,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5cd380@@QAEIXZ": 6083456,
@@ -8721,7 +8721,7 @@
     "?Set_00437690@Vector3@@QAEAAU1@MMM@Z": 4421264,
     "?Scale_004376b0@Vector3@@QAEAAU1@M@Z": 4421296,
     "?Add_004376e0@Vector3@@QAEAAU1@ABU1@@Z": 4421344,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A": 8716956,
     "?Get_Wide_String@CampaignINI@@QBEHPBD0PAGH@Z": 5304336,
     "??0EventClass@@QAE@HHHHABVCell@@@Z": 4940656,

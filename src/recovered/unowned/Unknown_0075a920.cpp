@@ -152,7 +152,7 @@ bool __fastcall Unknown_0075a920()
     options+=request_match_address_option_007ffee4;
     options+=Wstring_From_Integer(address);
     options+=request_match_nat_option_007ffedc;
-    options+=Wstring_From_Integer(unknown_identifier_a71b18.unknown_00&0xffff);
+    options+=Wstring_From_Integer(unknown_firewall_a71b18.unknown_00&0xffff);
     options+=request_match_port_option_007ffed4;
     options+=Wstring_From_Integer(unknown_a40230);
     options+=side;

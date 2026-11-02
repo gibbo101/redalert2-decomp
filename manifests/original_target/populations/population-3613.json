@@ -4,8 +4,8 @@
     "id": "population-3613",
     "inventory_sha256": "6f4ec039279b0782840137d3bd3603dce22905291e2441eca3631c63f1706928",
     "gaps_sha256": "2c5dcc36ed56fd577483b240269aab3987844922c3057fff09e8c2c1a734749a",
-    "historical_population_sha256": "b434f8ac924c5a9620c7cc28ed91ad2d4ea797cba31d9e5db5fbd41ad69dbbb2",
-    "historical_acceptance_sha256": "626f9f22dbf4feb4a1abda5b34ef9df6a3b08ac20d267ec1271725bdf2eb59d3"
+    "historical_population_sha256": "5da76aeaf2d6888987663168db62b42e1abf000edecab1330ca9756a5d90c975",
+    "historical_acceptance_sha256": "0a327f924c85cb94b56a1fe667b72b975d9e100c6712a6d58d15ff3e11db5ad2"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8599,7 +8599,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -9401,7 +9401,7 @@
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_session_a3d340@@3HA": 10736448,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
@@ -9665,7 +9665,7 @@
     "?unknown_instance_00851ca8@@3PAXA": 8723624,
     "__imp__EndDialog@8": 7971772,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?View@MonoClass@@QAEXXZ": 5890800,
     "?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A": 8716956,
     "?unknown_5159b0@@YIXH_N@Z": 5331376,

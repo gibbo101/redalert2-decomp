@@ -4,8 +4,8 @@
     "id": "population-3555",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "d386f5e876306ddb46088c37176f7845eb8f1f99207897329b503c1c791b41dd",
-    "historical_acceptance_sha256": "d3e55453d66b82e77086815e7fb1c902dafbf0134896adf6efdb4e86da33d641"
+    "historical_population_sha256": "2f100e3cdfd77adf1ec5acaf9cb93e7ddf01f48f57f055247731a6357f531b55",
+    "historical_acceptance_sha256": "e00252d28ff6de3742b762aae135ee8024391a41b42f5592cd7b3fa04a9ccb15"
   },
   "references": {
     "_unknown_empty_rect": 11709872,
@@ -1723,7 +1723,7 @@
     "?Run@GameControlsDialog@@QAEXXZ": 5044512,
     "__imp__SetWindowLongA@12": 7971976,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "__imp__SetActiveWindow@4": 7971872,
     "?Load@FoggedObjectClass@@UAGJPAUIStream@@@Z": 4988032,
     "?Load@Tactical@@UAGJPAUIStream@@@Z": 6996768,

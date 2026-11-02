@@ -4,8 +4,8 @@
     "id": "population-3697",
     "inventory_sha256": "37ad25e4858814c7a99ff0d8ed52086ed817573f25b532b3bc02d6ddef60138a",
     "gaps_sha256": "e924fe482295338d8636ff6df85b1be84dffe5401e3049291dd036f26b3565cc",
-    "historical_population_sha256": "7f3cb24c535a6096c892af698c3cea2582c328b525f8d78e3ed4233ecffe5184",
-    "historical_acceptance_sha256": "a7dee0e1992be8202b11fecade963e38b77e2578ee85a0e5db91e30f3fdcd771"
+    "historical_population_sha256": "e2586e2ae0e5f9f6312822e53d5a1a1411c6a9f651bff42b3c817d9280307b56",
+    "historical_acceptance_sha256": "385a2e929de4776b5a02819b846113667abf80fe1dfa0839e52c9fcef9496974"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5313,7 +5313,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?unknown_player_slots_a3fa98@@3PAPAUNodeNameType@@A": 10746520,
@@ -7098,7 +7098,7 @@
     "_?white@?7??unknown_slot74@BuildingClass@@UAEXH@Z@4VRGBClass@@A": 8711416,
     "?Put@BufferPipe@@UAEHPBXH@Z": 7812912,
     "?Get@BufferStraw@@UAEHPAXH@Z": 7813184,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Read_INI@OverlayClass@@SIXAAVCCINIClass@@@Z": 6141552,
     "?unknown_func_4f30d0@HouseClass@@QAEHXZ": 5189840,
     "??0WaypointPathClass@@QAE@XZ": 7490320,
@@ -7479,7 +7479,7 @@
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_session_a3d340@@3HA": 10736448,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,
     "?Unknown_0042EED0@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4386512,

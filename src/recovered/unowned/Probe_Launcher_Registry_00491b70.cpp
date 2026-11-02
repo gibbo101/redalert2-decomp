@@ -1,8 +1,8 @@
 #include "shared/launcher_validation.hpp"
 WIN32_IMPORT LONG WINAPI RegQueryValueExA(HKEY key,LPCSTR name,DWORD *reserved,DWORD *type,unsigned char *data,DWORD *size);
-struct UnknownVersionObject;
-extern UnknownVersionObject version_object_00a40c88;
-unsigned int __fastcall Unknown_Version_ID_00712b50(UnknownVersionObject *object);
+class VersionClass;
+extern VersionClass version_object_00a40c88;
+unsigned int __fastcall Unknown_Version_ID_00712b50(VersionClass *object);
 // @ref __imp__RegQueryValueExA@24=0079a008
 // @ref ?version_object_00a40c88@@=00a40c88
 // @ref ?Unknown_Version_ID_00712b50@@=00712b50

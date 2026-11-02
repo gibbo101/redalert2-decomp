@@ -4,8 +4,8 @@
     "id": "population-3646",
     "inventory_sha256": "8fbd6b6b6d48f42d5cf8ada2112251cec47f7f5c72d065717cc880ba73326d57",
     "gaps_sha256": "06c1f97d31425f19abded937bf826fa596b72bae227dadb8b45642bcd6b44aca",
-    "historical_population_sha256": "98c1095a6ec5b3ba23e7770080d1b521eb4fd80876530349491daf809b0fc585",
-    "historical_acceptance_sha256": "a646f0a5acce4c08ad42b1272b56a20af6846d1d1b8e8c299a80dc3ad66523b9"
+    "historical_population_sha256": "bd47a913477759159d8eda89b0d79dc31296d7bf27fae5a0ad5e7c725176a66d",
+    "historical_acceptance_sha256": "dd4ed77e18809e369cd30a3cb45f1f4bb957da61a85f5ff65a652e338f655501"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -8526,7 +8526,7 @@
     "?Put@BufferPipe@@UAEHPBXH@Z": 7812912,
     "?Get@BufferStraw@@UAEHPAXH@Z": 7813184,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Fast_Sin_4096@@YAMN@Z": 4957472,
     "?unknown_slot212@TechnoClass@@UAE_NPAVAbstractClass@@H@Z": 7098528,
     "?unknown_6c4bb0@TechnoClass@@QAE_NPBUCoordStruct@@PAVAbstractClass@@PAVWeaponTypeClass@@@Z": 7097264,
@@ -9424,7 +9424,7 @@
     "??_GTubeClass@@UAEPAXI@Z": 7272720,
     "?unknown_session_a3d2c3@@3EA": 10736323,
     "?unknown_func_4ef600@HouseClass@@QAEPAVBuildingTypeClass@@ABV?$DynamicVectorClass@PAVBuildingTypeClass@@@@@Z": 5174784,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Print_Box@BitTextClass@@QAE_NPAVBitFontClass@@PAVSurface@@PBGHHHHHHH@Z": 4400272,
     "?Unknown_0042E290@Unknown84E8D0@@QAEXPAVSurface@@VRect@@@Z": 4383376,

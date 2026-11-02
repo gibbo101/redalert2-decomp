@@ -20,6 +20,8 @@ public:
     // Declared only in the HSV unit 0x004FEF50 (Tiberian Sun's hsv.cpp): a member operator== next to
     // the free one would make every other includer's comparisons ambiguous.
     bool operator==(HSVClass const &other) const;       // 0x004FF170
+    // Moves the colour toward hsv by (ratio & 0xFF)/256, value first (0x004FEF70).
+    void Adjust(int ratio, HSVClass const &hsv);
     int Difference(HSVClass const &hsv) const;          // 0x004FF000 (squared distance)
     static HSVClass const BlackColor;                   // 0x00A410BC
 #endif

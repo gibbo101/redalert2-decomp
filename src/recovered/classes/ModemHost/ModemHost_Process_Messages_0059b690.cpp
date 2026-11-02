@@ -16,8 +16,8 @@
 #include "shared/options_dialog.hpp"
 #include "shared/ww_message_box.hpp"
 #include "shared/id_source.hpp"
-// @ref ?Clip_Version_00713170@UnknownVersionObject@@QAEHKK@Z=00713170
-// @ref ?Version_Protocol_00713130@UnknownVersionObject@@QAEHH@Z=00713130
+// @ref ?Clip_Version_00713170@VersionClass@@QAEHKK@Z=00713170
+// @ref ?Version_Protocol_00713130@VersionClass@@QAEHH@Z=00713130
 // @ref ??_C@_13ECNF@?$AA?5?$AA?$AA@=007d64f4
 // @ref ??_C@_06DN@TXT_OK?$AA@=007db8f4
 // @ref ??_C@_0BB@BKJO@Received?5packet?6?$AA@=007e20c4
@@ -46,7 +46,7 @@
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
 // @ref ?unknown_session_a3d2ac@@3HA=00a3d2ac
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410
-// @ref ?version_object_00a40c88@@3UUnknownVersionObject@@A=00a40c88
+// @ref ?version_object_00a40c88@@3VVersionClass@@A=00a40c88
 // @ref? ??_C@_13ECNF@?$AA?5?$AA?$AA@ hits 007a0190 007a01f0 007a0250 007a02b0 007a0310
 
 bool ModemHost::Process_Messages_0059b690(bool quiet)

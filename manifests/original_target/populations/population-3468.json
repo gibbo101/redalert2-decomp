@@ -4,8 +4,8 @@
     "id": "population-3468",
     "inventory_sha256": "274206aa26a0261fdd68fab9cc8ab1affda57116ae4abb38333172717d3325fb",
     "gaps_sha256": "73db301866c29cb829dae8269217a46ac2be8edf7f16f93ae9485fc5ff612b0c",
-    "historical_population_sha256": "6d4b3c3dcf169d8a3409e9cc965f0904f877cdc8e05cdf7c42b95ff71a3bf9e7",
-    "historical_acceptance_sha256": "06918bb410cf761c85c7fd586037f5fd469f6f2af944718ef13b51245817fc3d"
+    "historical_population_sha256": "fe0b542fbf00a786ef465c744fd8c7504c50e876c09e8aad6064cd8b24902d49",
+    "historical_acceptance_sha256": "147c69850359851c2549985383188367dc866ed54193694e41873e88bbf35830"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2887,7 +2887,7 @@
     "??0?$VectorClass@I@@QAE@IPBI@Z": 4371728,
     "??_7?$VectorClass@PAVAlphaLightingRemapClass@@@@6B@": 7976992,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Insert_After@?$DynamicVectorClass@VBaseNodeClass@@@@QAE_NABVBaseNodeClass@@H@Z": 5206640,
     "??_7?$VectorClass@V?$rc_ptr@VWDTTerritory@@@@@@6B@": 8057576,
     "__real@8@3ffda0d97bb4e7870000": 7999744,
@@ -4064,7 +4064,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -7285,7 +7285,7 @@
     "?Scale_004376b0@Vector3@@QAEAAU1@M@Z": 4421296,
     "?Add_004376e0@Vector3@@QAEAAU1@ABU1@@Z": 4421344,
     "?Matrix3D_Rigid_Inverse_00591420@@YI?AVMatrix3D@@ABV1@@Z": 5837856,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?Fast_Sin_4096@@YAMN@Z": 4957472,
     "?View@MonoClass@@QAEXXZ": 5890800,
     "?Scroll@MonoClass@@QAEXH@Z": 5891088,

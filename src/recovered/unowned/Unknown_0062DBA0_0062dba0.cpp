@@ -64,7 +64,7 @@
 // @ref ??_C@_0N@PCCD@?6Version?5?$CFs?6?$AA@=007ede80
 // @ref ??_C@_0O@ODMA@?$CFs?7?$CIType?3?$CFd?$CJ?5?$AA@=007edb84
 // @ref ??_C@_0P@ICAG@Object?5?$CFd?3?5?$CFx?5?$AA@=007edba8
-// @ref ?Internal_Version_Name_00712ed0@UnknownVersionObject@@QAEPBDXZ=00712ed0
+// @ref ?Internal_Version_Name_00712ed0@VersionClass@@QAEPBDXZ=00712ed0
 // @ref ?Unknown_00737ad0@@YIPADPADH@Z=00737ad0
 // @ref ?Unknown_00737b00@@YIPADPADH@Z=00737b00
 // @ref ?Version_Name_007131d0@@YIPBDXZ=007131d0

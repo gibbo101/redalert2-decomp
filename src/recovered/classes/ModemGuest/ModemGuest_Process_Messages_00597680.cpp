@@ -17,10 +17,10 @@
 #include "shared/ww_message_box.hpp"
 #include "shared/id_source.hpp"
 #include "shared/session_state.hpp"
-// @ref ?Clip_Version_00713170@UnknownVersionObject@@QAEHKK@Z=00713170
-// @ref ?Version_Protocol_00713130@UnknownVersionObject@@QAEHH@Z=00713130
+// @ref ?Clip_Version_00713170@VersionClass@@QAEHKK@Z=00713170
+// @ref ?Version_Protocol_00713130@VersionClass@@QAEHH@Z=00713130
 // @ref ?unknown_a3fba4@@3HA=00a3fba4
-// @ref ?version_object_00a40c88@@3UUnknownVersionObject@@A=00a40c88
+// @ref ?version_object_00a40c88@@3VVersionClass@@A=00a40c88
 // @ref ??_C@_06DN@TXT_OK?$AA@=007db8f4
 // @ref ??_C@_0BB@BKJO@Received?5packet?6?$AA@=007e20c4
 // @ref ??_C@_0BC@PPII@Received?5SignOff?6?$AA@=007e2218

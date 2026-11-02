@@ -34,8 +34,6 @@ public:
     // RGBClass::Adjust; accepted as RgbTriplet::BlendRgbTowardTarget_0063cf20).
     void Adjust(int ratio, RGBClass const &target);
 
-    // A second out-of-line Adjust that works blue first (0x004FEF70).
-    void unknown_4fef70(int ratio, RGBClass const &target);
 
     int Difference(RGBClass const &other) const; // 0x0063CFB0 weighted absolute difference
 #ifdef RGB_DECLARE_ACCESSORS

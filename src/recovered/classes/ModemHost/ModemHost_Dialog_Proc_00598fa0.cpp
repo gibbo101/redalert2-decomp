@@ -52,8 +52,8 @@
 // @ref ??_C@_05NAGO@false?$AA@=007d24d0
 // @ref ??_C@_0BJ@HKPJ@ModemHost?4Dialog?$CIenter?$CJ?6?$AA@=007e2430
 // @ref ??_C@_0BL@ENPP@ModemHost?4Dialog?$CIexit?5?$CFs?$CJ?6?$AA@=007e2414
-// @ref ?Clip_Version_00713170@UnknownVersionObject@@QAEHKK@Z=00713170
-// @ref ?Version_Protocol_00713130@UnknownVersionObject@@QAEHH@Z=00713130
+// @ref ?Clip_Version_00713170@VersionClass@@QAEHKK@Z=00713170
+// @ref ?Version_Protocol_00713130@VersionClass@@QAEHH@Z=00713130
 // @ref ??_C@_13ECNF@?$AA?5?$AA?$AA@=007d64f4
 // @ref ??_C@_06DN@TXT_OK?$AA@=007db8f4
 // @ref ??_C@_0BB@BKJO@Received?5packet?6?$AA@=007e20c4
@@ -82,7 +82,7 @@
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
 // @ref ?unknown_session_a3d2ac@@3HA=00a3d2ac
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410
-// @ref ?version_object_00a40c88@@3UUnknownVersionObject@@A=00a40c88
+// @ref ?version_object_00a40c88@@3VVersionClass@@A=00a40c88
 // @ref? ??_C@_13ECNF@?$AA?5?$AA?$AA@ hits 007a0190 007a01f0 007a0250 007a02b0 007a0310
 // Read_AI_Difficulty_0059ad80 (0x0059AD80)
 // @ref __imp__GetDlgItem@8=0079a49c
@@ -180,7 +180,7 @@ extern "C" int __cdecl rand();
 // @ref ??_C@_0L@NJNM@TXT_PURPLE?$AA@=007e1fc0
 // @ref ??_C@_0N@GNAA@TXT_SKY_BLUE?$AA@=007e1fcc
 // @ref ?Find_Combo_Item_Data_00736e10@@YIHPAUHWND__@@HH@Z=00736e10
-// @ref ?Init_Clipping_00713160@UnknownVersionObject@@QAEXXZ=00713160
+// @ref ?Init_Clipping_00713160@VersionClass@@QAEXXZ=00713160
 // @ref __imp__PostMessageA@16=0079a470
 // @ref ??_C@_0BC@FOEB@Received?5message?6?$AA@=007e2674
 // @ref ??_C@_0BF@BAJ@Received?5GO?5message?6?$AA@=007e265c

@@ -4,8 +4,8 @@
     "id": "population-3684",
     "inventory_sha256": "01840c65f8bce4c5b4efeb13803c0e9d0290fae7a1f21b224533a8849485a81c",
     "gaps_sha256": "704438c36a8f2137542cab1d67167799809d28a865c062c655dbf314314effaf",
-    "historical_population_sha256": "15f0e6327ba8f4bd920461ba668b044d4cc967db702bebc7c5f51b55ee1e2bf1",
-    "historical_acceptance_sha256": "13dc811224120c4840c8dbfb8760d342dff12196c342f13b7a595d03d5e5694e"
+    "historical_population_sha256": "de18e52e54d60eaab322e87135cacf0d7ff3a36344cc632eb30cfdb7c6fae7e0",
+    "historical_acceptance_sha256": "3843be3bcbdd300168406b9594d07d5cc1e347d405c07db5f82016500e672de0"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4060,7 +4060,7 @@
     "?Put@BufferPipe@@UAEHPBXH@Z": 7812912,
     "?Get@BufferStraw@@UAEHPAXH@Z": 7813184,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?AI@MissionClass@@UAEXXZ": 5851024,
     "?unknown_slot30@MouseClass@@UAEJPAUIStream@@@Z": 5895472,
     "?unknown_slot30@SidebarClass@@UAEJPAUIStream@@@Z": 6824592,

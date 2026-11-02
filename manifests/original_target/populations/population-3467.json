@@ -4,8 +4,8 @@
     "id": "population-3467",
     "inventory_sha256": "ef2a3deae0c1d3fd8ee0cf239b5b528d18a577b0a336e7cc6f0d6385b622e6c1",
     "gaps_sha256": "888d283afd1547153ecfcef98e5a6551161b9cb02072385970089e7d0fdf6db3",
-    "historical_population_sha256": "1a150d18856033ee5dba8b4477dad2c594ef48daa7eb992545fd72c86687d2d1",
-    "historical_acceptance_sha256": "eade89933eb6f6de66773d28e52f329d27fa8c9654edcbb27e6c5164fdcb4b98"
+    "historical_population_sha256": "5053196a6b8b73da157daac51ba588a04e272f520d5e37d0ed4184d7c60e7655",
+    "historical_acceptance_sha256": "6a73ed33961abefa6f32cabddf48a2cfb5f63f0393e56f36d65fbc6e0b86374f"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4776,7 +4776,7 @@
     "??_7?$VectorClass@PAVAlphaLightingRemapClass@@@@6B@": 7976992,
     "?Load@TubeClass@@UAGJPAUIStream@@@Z": 7271328,
     "?Compute_CRC@TubeClass@@UBEXAAVWWCRCEngine@@@Z": 7272496,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Increase_Table_Size@?$IndexClass@HPAVFoggedObjectClass@@@@QAE_NH@Z": 4990384,
     "?Insert_After@?$DynamicVectorClass@VBaseNodeClass@@@@QAE_NABVBaseNodeClass@@H@Z": 5206640,
     "??_7?$VectorClass@V?$rc_ptr@VWDTTerritory@@@@@@6B@": 8057576,
@@ -7542,7 +7542,7 @@
     "?get@Storage_5b9890@@QAEPAXIPAI@Z": 6002832,
     "?get@Storage_5b98e0@@QAEPAXIPAI@Z": 6002912,
     "?get@Leaf_5b9e40@@QAEXXZ": 6004288,
-    "?Clear_005b9e70@WolUnknownIdentifier@@QAEXXZ": 6004336,
+    "?Clear_005b9e70@FirewallSettings@@QAEXXZ": 6004336,
     "?get@Leaf_5ba280@@QAEIXZ": 6005376,
     "?get@Leaf_5c8cc0@@QAIXI@Z": 6065344,
     "?get@Leaf_5ca3b0@@QAEIXZ": 6071216,
@@ -8216,7 +8216,7 @@
     "?unknown_protocol_7fd370@@3IA": 8377200,
     "?unknown_instance_00851ca8@@3PAXA": 8723624,
     "?unknown_surface_839944@@3PAVSurface@@A": 8624452,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "?unknown_452f50@BuildingClass@@QAEXH@Z": 4534096,
     "?unknown_building_depth_shape_85029c@@3PAUShapeFileStruct@@A": 8716956,
     "??0LaserDrawClass@@QAE@UCoordStruct@@0H_NVRGBClass@@22H11MM@Z": 5452048,

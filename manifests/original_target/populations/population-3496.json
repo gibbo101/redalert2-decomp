@@ -4,8 +4,8 @@
     "id": "population-3496",
     "inventory_sha256": "9b8eb02ecb80b6423ced77282142d072c50191403a46461a36c785c05d162440",
     "gaps_sha256": "c3018d206b8641e5fc154e9d77bd1e09f064ed44933cc1360dbb679091634db5",
-    "historical_population_sha256": "2d94d036fa4e6819e5ec0e148dc4bdebc3cf3a0a9f312eb78f2cad8c754c6afe",
-    "historical_acceptance_sha256": "e3ba80e6a9cc5d17c38d31224281faf93dce1dfab07a1a23079c68721b9df95f"
+    "historical_population_sha256": "150225f84c509a319559f8930e086a7c6a9ef58dd3cc60981562f40bacb17bcd",
+    "historical_acceptance_sha256": "935f5c25677a2f9c045c08b97e522ea20349da499870e31fe8f1bb13f1254da7"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -3971,7 +3971,7 @@
     "?AI@UnitClass@@UAEXXZ": 7319808,
     "?AI@AircraftClass@@UAEXXZ": 4278256,
     "__imp__RegQueryValueExA@24": 7970824,
-    "?version_object_00a40c88@@3UUnknownVersionObject@@A": 10751112,
+    "?version_object_00a40c88@@3VVersionClass@@A": 10751112,
     "??0XSurface@@QAE@HH@Z": 4846640,
     "?AI@MissionClass@@UAEXXZ": 5851024,
     "?unknown_slot30@MouseClass@@UAEJPAUIStream@@@Z": 5895472,
@@ -6056,7 +6056,7 @@
     "?Read_INI@OverlayTypeClass@@UAE_NAAVCCINIClass@@@Z": 6146720,
     "?Read_INI@SmudgeTypeClass@@UAE_NAAVCCINIClass@@@Z": 6848944,
     "?Read_INI@TerrainTypeClass@@UAE_NAAVCCINIClass@@@Z": 7231024,
-    "?unknown_4fef70@RGBClass@@QAEXHABV1@@Z": 5238640,
+    "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Read_INI@VocClass@@QAE_NAAVCCINIClass@@@Z": 7420112,
     "?Read_INI@VoxClass@@QAE_NAAVCCINIClass@@@Z": 7430624,
     "?Read_INI@UnknownPreview_0061D430@@QAE_NABVCCINIClass@@@Z": 6414032,

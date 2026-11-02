@@ -43,7 +43,7 @@ extern "C" int __cdecl rand();
 // @ref ??_C@_0L@NJNM@TXT_PURPLE?$AA@=007e1fc0
 // @ref ??_C@_0N@GNAA@TXT_SKY_BLUE?$AA@=007e1fcc
 // @ref ?Find_Combo_Item_Data_00736e10@@YIHPAUHWND__@@HH@Z=00736e10
-// @ref ?Init_Clipping_00713160@UnknownVersionObject@@QAEXXZ=00713160
+// @ref ?Init_Clipping_00713160@VersionClass@@QAEXXZ=00713160
 // @ref __imp__PostMessageA@16=0079a470
 extern unsigned short const unknown_empty_wide_839d4c[];
 

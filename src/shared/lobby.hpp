@@ -473,9 +473,10 @@ int Unknown_00737af0();
 // destructor 0x004D4980 of the inline virtual destructor, which the globals unit at 0x004D2BA0
 // emits with the object's atexit destructor 0x004D4610. Layout from the constructor 0x00712B20
 // (Tiberian Sun's VersionClass).
-struct UnknownVersionObject {
-    UnknownVersionObject();                 // 0x00712B20
-    virtual ~UnknownVersionObject() {}
+class VersionClass {
+public:
+    VersionClass();                 // 0x00712B20
+    virtual ~VersionClass() {}
     // Resets the version clipping range (0x00713160; Red Alert's Init_Clipping).
     void Init_Clipping_00713160();
     // The version both sides can play for a peer's range: 0 when the peer is too old, -1
@@ -515,7 +516,7 @@ struct UnknownVersionObject {
     unsigned long Flags;
 #endif
 };
-extern UnknownVersionObject version_object_00a40c88;
+extern VersionClass version_object_00a40c88;
 // The version text (0x007131D0; the sync logs print it).
 char const *__fastcall Version_Name_007131d0();
 // Asks the host of a game to let the player join (NET_QUERY_JOIN); refused with a chat message and the
