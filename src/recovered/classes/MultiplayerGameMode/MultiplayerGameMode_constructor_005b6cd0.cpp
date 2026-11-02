@@ -1,14 +1,13 @@
 // MultiplayerGameMode::MultiplayerGameMode(...) (0x005B6CD0)
 // A mode with its name and description, its INI file (read into a new
 // CCINIClass when present) and id; [MultiplayerDialogSettings]
-// WonlineTournamentAllowed of that INI sets unknown_3c (default 1).
+// WonlineTournamentAllowed of that INI sets unknown_3c (default 1). The INI comes from the
+// accessor 0x005B7840, expanded here (its null test folds against the cleared member).
 #include "shared/multiplayer_game_mode.hpp"
 #include "shared/ccini_class.hpp"
 #include "shared/cc_file_class.hpp"
 // @ref _unknown_section_7a7170=007a7170
 // @ref ??_C@_0BK@IOIK@MultiplayerDialogSettings?$AA@=007e5f04
-// @ref ??0?$List@PAUINISection@INIClass@@@@QAE@XZ=00490ff0
-// @ref ??0?$IndexClass@HPAUINISection@INIClass@@@@QAE@XZ=004910c0
 // @ref ??_7?$DynamicVectorClass@PAVMultiplayerTeam@@@@6B@=007a7270
 // @ref ??_C@_0BJ@NIJN@WonlineTournamentAllowed?$AA@=007e6008
 // @ref ??_7CCINIClass@@6B@=0079aae4
@@ -35,13 +34,7 @@ MultiplayerGameMode::MultiplayerGameMode(WideString const &name, WideString cons
 {
     unknown_04 = false;
     unknown_3c = 1;
-    unknown_ini_38 = new CCINIClass;
-    {
-        CCFileClass file(unknown_2c);
-        if (file.Is_Available()) {
-            unknown_ini_38->Load(file, false);
-        }
-    }
+    unknown_ini_5b7840();
     if (unknown_ini_38 != 0 && unknown_ini_38->Is_Present(unknown_section_7a7170)) {
         unknown_3c = unknown_ini_38->Get_Int(unknown_section_7a7170, "WonlineTournamentAllowed", unknown_3c);
     }

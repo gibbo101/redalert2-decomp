@@ -123,6 +123,7 @@ public:
     MultiplayerTeam *unknown_find_team_5b76b0(int number);   // 0x005B76B0
     void unknown_clear_teams_5b77e0();                       // 0x005B77E0
     int unknown_team_of_5b8430(int id);                      // 0x005B8430
+    CCINIClass *unknown_ini_5b7840();                        // 0x005B7840: the mode's INI, read on first use
     // Whether this mode can play the multiplayer map (0x005B7470).
     bool unknown_5b7470(MultiMission *map);
     // The registered game modes (a function-local static, 0x005B6C30).
