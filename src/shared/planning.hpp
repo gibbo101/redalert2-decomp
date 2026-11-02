@@ -82,6 +82,7 @@ public:
     int Get_Count() const;                                    // 0x00610930
     int Get_unknown_74() const;                               // 0x00610940
     CoordStruct Coord() const;                                // 0x00610950
+    Point2D Pixel() const;                                    // 0x00610A20
 
     EventClass Event;                                         // +0x00
     char unknown_6f;
@@ -215,7 +216,7 @@ void __fastcall Planning_Refuse_Command(int kind);   // 0x00617250
 int __fastcall Planning_Event_Result(PlanningTokenClass *token, PlanningEventTargets const *event);
 double __cdecl unknown_sqrt_4ba410(double value);   // 0x004BA410 (shared/building.hpp)
 // Outlines a square on the midpoint of two far-apart screen points (0x0061A2F0).
-void __fastcall Planning_Draw_Midpoint(int color, int unused, int x1, int y1, int x2, int y2);
+void __fastcall Planning_Draw_Midpoint(int color, int unused, Point2D start, Point2D end);
 // Draws the planning mode (0x00617EF0); its drawing helpers (0x00619870, 0x00618C00).
 void Planning_Draw_All();
 void __fastcall Planning_Draw_Techno(TechnoClass *techno);
