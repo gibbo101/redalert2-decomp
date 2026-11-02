@@ -1,3 +1,4 @@
+#define RA2_GADGET_SET_FLAGS
 // Header-static dynamic initializers of the unit at 0x006A0270: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x006A0270-0x006A0451); the other
 // drafts of this plan are emitted by these includes.
