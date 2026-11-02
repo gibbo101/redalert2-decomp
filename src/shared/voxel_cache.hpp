@@ -5,22 +5,7 @@
 #include "shared/voxel_draw_system.hpp"
 // SurfaceRegion fields follow native six-word return/copy observations.
 struct SurfaceRegion { Point2D Point; Rect Bounds; };
-class StaticBufferClass {
-public:
-    // Cached image header: signed screen offsets, unsigned dimensions, RLE data.
-    struct Entry {
-        short X;
-        short Y;
-        unsigned short Width;
-        unsigned short Height;
-        unsigned char *Data;
-    };
-    Entry *Add(Surface &surface, SurfaceRegion const &region);
-    unsigned char *Buffer;
-    int Capacity;
-    unsigned char *Current;
-};
-extern StaticBufferClass unknown_voxel_static_buffer_839aa0;
+#include "shared/static_buffer.hpp"
 extern void *unknown_cache_empty_b2b624;
 #include "shared/ini_class.hpp"
 // The reference cache node comparisons supply this existing algorithm's

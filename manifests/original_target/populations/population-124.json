@@ -173,64 +173,6 @@
   },
   "regions": [
     {
-      "entry": 4255856,
-      "method": "0040f070",
-      "symbol": "?FUN_0040f070@seed_0040f070@@YAXXZ",
-      "symbol_prefix": "?FUN_0040f070@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 27,
-      "body_sha256": "79127c5e7717eefc6de13c42da3ef48e058ee00cec184e919bfbc8d55857712b",
-      "padding_bytes": 5,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "6879f0b6b01820a14cf6d0e2de51b5adc0364a17ab2d59dd4b499279b43f45b4",
-      "relocations": [
-        {
-          "offset": 6,
-          "kind": 6,
-          "symbol": "_DAT_00839aa0",
-          "target": 8624800,
-          "addend": 0,
-          "resolved": 8624800
-        },
-        {
-          "offset": 11,
-          "kind": 20,
-          "symbol": "?FUN_0069a1a0@Callee_0069a1a0@seed_0040f070@@QAEXI@Z",
-          "target": 6922656,
-          "addend": 0,
-          "resolved": 2666785
-        },
-        {
-          "offset": 16,
-          "kind": 6,
-          "symbol": "?FUN_0040f090@seed_0040f070@@YAXXZ",
-          "target": 4255888,
-          "addend": 0,
-          "resolved": 4255888
-        },
-        {
-          "offset": 21,
-          "kind": 20,
-          "symbol": "?FUN_0078298a@seed_0040f070@@YAII@Z",
-          "target": 7874954,
-          "addend": 0,
-          "resolved": 3619073
-        }
-      ],
-      "source_sha256": "544638b3e3bfdaa1b786fce9e3968042230bd0d5a15a139b470a5fc2139e9b37",
-      "source": "src/recovered/0040f070.cpp",
-      "source_order": 11066,
-      "population": "population-124",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 4385760,
       "method": "0042ebe0",
       "symbol": "?FUN_0042ebe0@Owner_0042ebe0@seed_0042ebe0@@QAEXH@Z",
