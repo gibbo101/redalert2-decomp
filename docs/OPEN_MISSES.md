@@ -1029,3 +1029,16 @@ Resume notes are in build/class-work/Scout526/NOTES.md.
 - 0x4E1350: 62.92 (w/px/a.cpp; Scout525's range). 0x753F10: 54.05 (codex4's range).
 - The scheme-table unit 0x603380-0x604CC0 (~5 KB) is assigned to Scout527: draft the whole unit, take over about 40 template instances, and keep DynamicVectorClass<char *> out of the unit.
 - OWNER DECISIONS (14:50Z): the r11 static_buffer.hpp layout (Capacity +0, Buffer +4) and the new surface_region.hpp are accepted (landed). Merge the duplicate HashTableClass declarations (scheme_table.hpp and map.hpp) on the TibSun argument order (growth, count, hash); assigned to Scout527. Rename the PacketClass::Find_Field source file later.
+
+## Scout525 (2026-11-02, closed; about 11.6 KB landed in 38 rounds plus ren1 and ren2)
+Resume notes are in build/class-work/Scout525/NOTES.md.
+- The gap space below 0x5B0000 is exhausted outside held units (aligned ret-preceded starts, rows straddling function starts, atexit and XCU references all scanned).
+- Misses: UnknownTracker839EA0 0x4128A0 76.98 (2,337 B; also needs Append_Bin moved from pop-3461 and the 0x413770 As_Cell take-over); IPXConnClass::Start_Listening 79.37; Preview_Tile 0x52E390 81.25; EventClass MEGAMISSION_F ctor 97.67; Wide_Area_Damage 75.89; UnknownBeacon Set 88.46; Pause_All / Resume_All 94.12 / 90.00; Audio_Event_Channel_Done 70.59; voxel Render 98.30 / 83.24; Convert_Voxel_Colors 97.37; Wave Set_Laser_Pixel 95.83, Build_Wave_Shape 88.44, Load 79.67.
+- MixFileClass is a plain class (ren2). That moved Cache under VC6's auto-inline cap and fixed the Combat446 0x595770 blocker.
+- OWNER DECISIONS (16:15Z), assigned to Scout529:
+  - LogicClass::Detach becomes virtual and the Submit override is declared everywhere, so the LOGIC_DECLARE_VIRTUALS guard can go.
+  - 0x412390 is renamed to ahtoi.
+  - UnknownVoxelRecord88 moves into one header.
+  - HeaderStatics 0x536F30 and LightSource 0x537830 use shared/milsectmr.hpp.
+  - voxel_cache's StaticBufferClass field names follow ctor 0x69A1A0.
+  - The MouseClass Map global 0x40D060/0x40D080/0x40D160 waits for the Sidebar destructor chain (codex4 area, parked).
