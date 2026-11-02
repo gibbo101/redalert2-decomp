@@ -246,7 +246,14 @@ extern bool unknown_flag_8373c2;        // 0x008373C2
 
 class CCToolTip : public ToolTipManager {
 public:
+#ifdef TOOL_TIP_DECLARE_CREATE
+    CCToolTip(HWND window) : ToolTipManager(window), unknown_264(7) {}
+#endif
+#ifdef TOOL_TIP_DECLARE_CREATE
+    virtual ~CCToolTip() {}
+#else
     virtual ~CCToolTip();                                               // scalar deleting 0x00738420
+#endif
     virtual bool Show(ToolTipRecord *record);                           // slot 1 (0x0046DFC0; places the tip)
     virtual void Hide(ToolTipRecord *record);                           // slot 2 (0x0046E1D0)
     virtual void Refresh(bool update);                                  // slot 3 (0x0046E230; sets +0x260)
@@ -254,6 +261,9 @@ public:
     virtual wchar_t const *Get_Text(int id);                            // slot 5 (0x0046E470)
 
     bool unknown_260;                       // +0x260 (set by Refresh: the tip follows the sidebar)
+#ifdef TOOL_TIP_DECLARE_CREATE
+    int unknown_264;                        // +0x264 (constructor sets 7)
+#endif
 };
 
 #endif

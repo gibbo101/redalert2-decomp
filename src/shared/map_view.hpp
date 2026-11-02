@@ -286,6 +286,9 @@ int __fastcall Unknown_006818D0(int type, int id, int arg3);
 
 class SidebarClass : public PowerClass {
 public:
+#ifdef MAP_VIEW_DECLARE_WINDOW_PROC
+    void Unknown_0067D420(bool sidebar);
+#endif
     void Unknown_0067C150(ObjectClass *object);                                 // 0x0067C150 (as shared/sidebar.hpp)
     virtual void unknown_slot34();                                              // slot 34 0x006819A0
 #ifdef RA2_HOUSE_SCREEN_AI
@@ -335,6 +338,9 @@ public:
 #ifndef RA2_SHARED_SCROLL_HPP
 class ScrollClass : public TabClass {
 public:
+#ifdef MAP_VIEW_DECLARE_WINDOW_PROC
+    void Unknown_0066A400(struct HWND__ *window, unsigned int &message, unsigned int &wparam, long &lparam);
+#endif
     virtual void unknown_slot35();                              // slot 35 0x0066AC20 (aborts a drag select)
     bool Unknown_00669650(Point2D const &xy, Cell &cell, CoordStruct &coord, ObjectClass *&object, bool &arg5, bool &arg6);   // 0x00669650
 };

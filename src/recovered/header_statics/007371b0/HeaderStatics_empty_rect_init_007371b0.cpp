@@ -1,3 +1,5 @@
+#define MAP_VIEW_DECLARE_WINDOW_PROC
+#define TOOL_TIP_DECLARE_CREATE
 // Header-static dynamic initializers of the unit at 0x007371B0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x007371B0-0x00737391); the other
 // drafts of this plan are emitted by these includes.
