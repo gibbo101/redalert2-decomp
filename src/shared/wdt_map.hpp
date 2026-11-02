@@ -71,6 +71,9 @@ public:
     void Set_Unknown_74(MSEngine *engine, bool value);              // 0x0072A6D0
     void Set_Unknown_68(MSEngine *engine, bool value);              // 0x0072A720
     bool Is_Inside(Point2D const &point) const;                     // 0x0072A770 (inside the +0x54 rectangle)
+    // A shape animation from the INI entry "file,x,y[,rate[,palette]]" (x, y relative to unknown_44;
+    // rate 5 and palette `drawer` by default); 0 when the entry, the file or a drawer is missing.
+    MSAnim *Load_Anim(INIClass &ini, Wstring const &section, Wstring const &entry, ConvertClass *drawer);   // 0x0072A280
     // The territory of that index (inline; out-of-line copy 0x007302B0 in WDTSel.cpp).
     rc_ptr<Territory> Get_Territory(int index) { return Find_Territory(Territories, index); }
 

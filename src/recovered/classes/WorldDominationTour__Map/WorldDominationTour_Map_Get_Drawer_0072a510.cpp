@@ -4,10 +4,12 @@
 // @ref ??0Wstring@@QAE@ABV0@@Z=0076d980
 // @ref ?unknown_load_drawer_5ac560@@YIPAVConvertClass@@ABVWstring@@@Z=005ac560
 // @ref ??2@YAPAXI@Z=00782017
+// Out of line at both of its call sites in the unit (Load_Anim 0x0072A280 and the loader 0x00729510).
 #include "shared/wdt_map.hpp"
 
 namespace WorldDominationTour {
 
+#pragma auto_inline(off)
 ConvertClass *Map::Get_Drawer(Wstring const &name)
 {
     for (int i = 0; i < Palettes.Count(); i++) {
@@ -21,5 +23,6 @@ ConvertClass *Map::Get_Drawer(Wstring const &name)
     }
     return drawer;
 }
+#pragma auto_inline(on)
 
 }
