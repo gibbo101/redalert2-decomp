@@ -4,6 +4,21 @@
 #ifndef RA2_SHARED_FIREWALL_SETTINGS_HPP
 #define RA2_SHARED_FIREWALL_SETTINGS_HPP
 
+class IPXAddressClass;
+
+#pragma pack(push, 1)
+// The port mangler query and reply (0x38 bytes; 0x005B9F90 sends one, 0x005BA0D0 waits for the
+// reply; both use a 456-byte buffer; names are hypotheses).
+struct ManglerPacket {
+    int Type;                           // +0x00 0x2B query, 0x2C reply
+    char Name[0x2B];                    // +0x04 "WW"
+    unsigned short SeenPort;            // +0x2F the port the mangler saw the query come from
+    unsigned long SeenAddress;          // +0x31
+    unsigned short Port;                // +0x35 the port the query was sent from
+    bool unknown_37;                    // +0x37
+};
+#pragma pack(pop)
+
 class FirewallSettings {
 public:
     FirewallSettings();                             // 0x005B9E60 (all zero; the global's initializer 0x005B9E40 expands it)
@@ -12,6 +27,10 @@ public:
     void Load_005ba280();                           // 0x005BA280 (Read_MultiPlayer_Settings calls it once)
     int Detect_005ba2c0(bool *found);               // 0x005BA2C0 (thiscall, one stack argument)
 
+    // Sends a mangler query from port to address and waits up to 180 ticks for it to leave (0x005B9F90).
+    bool Send_Mangler_Query(IPXAddressClass *address, unsigned short port, int packet_id, bool flag);
+    // Waits (60 ticks, or time) for the mangler's reply to packet_id; the port it saw, or 0 (0x005BA0D0).
+    unsigned short Wait_For_Mangler_Reply(int packet_id, int time);
     int Connection_Step_005baf20(int flags); // connection rank from flag bits, 0x005BAF20
     int Connection_Weight_005baee0(unsigned char flags);   // 0x005BAEE0 the weighted sum of the flag bits
 
