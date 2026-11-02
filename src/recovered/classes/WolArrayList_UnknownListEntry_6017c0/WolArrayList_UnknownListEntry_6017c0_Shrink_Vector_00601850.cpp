@@ -4,7 +4,7 @@
 // Grow_Vector/Shrink_Vector). Element types are hypotheses.
 #include "shared/wol_array_list.hpp"
 
-// UnknownListEntry_6017c0: defined beside 0x006017C0 in this unit.
+// UnknownListEntry_6017c0: defined beside 0x00601490 in this unit.
 
 template<> bool WolArrayList<UnknownListEntry_6017c0>::Shrink_Vector()
 {

@@ -31,6 +31,8 @@ public:
     // lists 0x00602360, 0x00602940, 0x006029D0 and 0x006023F0, 0x00602480).
     bool Grow_Vector();
     bool Shrink_Vector();
+    // wlib clear() kept out of line (explicit specializations; ownrdraw.cpp's 0x00601490).
+    void Clear_Vector();
     bool Grow() {
         if (Count < Capacity) return false;
         int capacity = Count * 2;
