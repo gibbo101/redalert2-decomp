@@ -974,6 +974,8 @@ AudioDriver *__fastcall Audio_Create_Driver(AudioDriverInfo *info);             
 void __fastcall Audio_Destroy_Driver(AudioDriver *driver);                                  // 0x00402B80
 void Audio_Destroy_Drivers();                                                               // 0x00402BB0
 AudioListNode *__fastcall Audio_List_Cursor_Next(AudioListCursor *cursor);                  // 0x00402C20
+AudioListNode *__fastcall Audio_Cursor_Advance(AudioListCursor *cursor);                    // 0x004031F0
+void __fastcall Audio_First_Device(AudioListCursor *cursor);                                // 0x004031D0 Node = the first device
 int Audio_Ready_Driver_Count();                                                                 // 0x00402C40
 
 // The audio stream queue functions (ECX is the queue).

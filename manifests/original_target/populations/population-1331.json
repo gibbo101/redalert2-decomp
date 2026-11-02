@@ -1373,41 +1373,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "Audio_Device_Resume_Channels_004037c0",
       "source_order": 43656
-    },
-    {
-      "entry": 4207088,
-      "method": "004031f0",
-      "symbol": "?Audio_Cursor_Advance@@YIPAUAudioListNode@@PAUAudioListCursor@@@Z",
-      "symbol_prefix": "?Audio_Cursor_Advance@@YIPAUAudioListNode@@PAUAudioListCursor@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 20,
-      "body_sha256": "fd16f69ad14c656077e04d8f093d476c8d06ea69eb7fdcaf9549d7d9e93c9adf",
-      "padding_bytes": 12,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "46835707d7fa01804deaaf8e1a5a48ddcb686898c8d7262b1458e556285d7bc3",
-      "relocations": [
-        {
-          "offset": 10,
-          "kind": 20,
-          "symbol": "?Audio_List_Next@@YIPAUAudioListNode@@PAU1@@Z",
-          "target": 4223760,
-          "addend": 0,
-          "resolved": 16658
-        }
-      ],
-      "source_sha256": "d2398df80e860658bbe46901cabf1958fe8dc9ce77abd48100aad5c9fba3f581",
-      "source": "src/recovered/unowned/Audio_Cursor_Advance_004031f0.cpp",
-      "population": "population-1331",
-      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "Audio_Cursor_Advance_004031f0",
-      "source_order": 43647
     }
   ]
 }

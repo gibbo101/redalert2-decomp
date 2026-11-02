@@ -389,49 +389,6 @@
       "source_order": 31881
     },
     {
-      "entry": 4207056,
-      "method": "004031d0",
-      "symbol": "?unknown_global_c_value_004031d0@@YIXPAH@Z",
-      "symbol_prefix": "?unknown_global_c_value_004031d0@@YIXPAH@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 20,
-      "body_sha256": "78dc0d2d0132bbbf64afb3e1d18d41a3df2a5354a60aa31f3648e1cafc10b304",
-      "padding_bytes": 12,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "d179b48d839f105a16b46feb5a8fb23b6aa8bd9cdbd5ef71986fbbe383444398",
-      "relocations": [
-        {
-          "offset": 1,
-          "kind": 6,
-          "symbol": "?unknown_object_7cc968@@3PAUUnknownValueOwner_004031d0@@A",
-          "target": 8178024,
-          "addend": 0,
-          "resolved": 8178024
-        },
-        {
-          "offset": 12,
-          "kind": 20,
-          "symbol": "?unknown_value_4072f0@UnknownValueMember_004031d0@@QAEHXZ",
-          "target": 4223728,
-          "addend": 0,
-          "resolved": 16656
-        }
-      ],
-      "source_sha256": "7e11351aaeefbfd76a85f1d43eee7b369016dd7314a21f4fbf47d69af55c9dad",
-      "source": "src/recovered/unowned/unknown_global_c_value_004031d0.cpp",
-      "population": "population-953",
-      "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_global_c_value_004031d0",
-      "source_order": 31883
-    },
-    {
       "entry": 5740752,
       "method": "005798d0",
       "symbol": "?unknown_gaussian_value_005798d0@@YGNNN@Z",
