@@ -185,6 +185,10 @@ public:
     void Unknown_0049C980(int control);                                         // 0x0049C980
     void Unknown_0049CA20(int control);                                         // 0x0049CA20
     void Unknown_0049CAC0(int control);                                         // 0x0049CAC0
+#ifdef RA2_UICMNDS_GROUP_SELECT
+    // Behind a guard (the group-select functions 0x006F5F00/0x006F60D0 define it): see slot 41 below.
+    void Unknown_0049E3B0();                                                    // 0x0049E3B0
+#endif
     void Unknown_0049CC20();                                                    // 0x0049CC20
     void Unknown_0049CD20();                                                    // 0x0049CD20
     void Unknown_0049E110(bool skip_buildings, bool arg2);                      // 0x0049E110

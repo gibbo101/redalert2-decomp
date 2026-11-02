@@ -1,6 +1,8 @@
 // Header-static dynamic initializers of the unit at 0x006F55F0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x006F55F0-0x006F57D1); the other
 // drafts of this plan are emitted by these includes.
+// The group-select functions (0x006F5F00/0x006F60D0) need DisplayClass::Unknown_0049E3B0 from map_view.hpp.
+#define RA2_UICMNDS_GROUP_SELECT
 #include "shared/shape_file.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
