@@ -1134,3 +1134,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout549 (2026-11-02, closed; 61 B landed: Made_A_Kill 0x713360)
 - Tracker 0x4128A0 (2,337 B): 76.98 -> 97.61 standalone (Scout549 best_4128a0_97.61.cpp). An ebx/edi swap is left in the three diagonal blocks. Assigned to Scout553.
 - SpotLight shapes 0x5DD760: 55.83, but shape 86.12 with the original 0x54 frame (copy-init source rect only). The constant-register roles are left.
+
+## Scout550-552 (2026-11-02, closed; 2,177 B landed: Wall_Update 1,015 B, Wide_Area_Damage 459 B, Fill_Port 703 B)
+- OWNER NOTE (20:55Z): Wall_Update uses an identity inline Wall_Rect wrapper to get the call order, and Fill_Port uses a file-local Send_Message wrapper. Both are real C++ that a Westwood source could contain, so they are accepted. They are marked as hypotheses: replace them with TibSun-shaped source if evidence turns up.
+- IonBlast AI 0x521340: 81.29 (Scout552 w/ia_best.cpp; about 8 B of frame left: a height slot and the Cell argument copy). LineTrail::Draw 0x5395C0: 96.94 (VC6 reuses one &current->Value for the test and the Draw argument).

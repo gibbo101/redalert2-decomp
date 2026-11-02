@@ -117,6 +117,10 @@ public:
 
     // wlib Dictionary::remove(key, value) (inline; WolChannelNameSet's out-of-line copy is
     // Remove_007675e0).
+#ifdef RA2_WOL_DICTIONARY_REMOVE_SPECIALIZATION
+    // ownrdraw's explicit removal instance needs an out-of-class definition.
+    bool Remove_Entry(K const &key, V *old_value);
+#else
     bool Remove_Entry(K const &key, V *old_value)
     {
         if (Count == 0) return false;
@@ -153,6 +157,7 @@ public:
         if (load <= ShrinkLimit) Shrink_Table();
         return removed;
     }
+#endif
     // wlib Dictionary::remove(key).
     bool Remove(K const &key)
     {
@@ -274,5 +279,44 @@ template<class K, class V> void WolDictionary<K, V>::Shrink_Table()
         delete [] old_buckets;
     }
 }
+
+#ifdef RA2_WOL_DICTIONARY_REMOVE_SPECIALIZATION
+template<class K, class V> bool WolDictionary<K, V>::Remove_Entry(K const &key, V *old_value)
+{
+        if (Count == 0) return false;
+        float load = (float)(Count - 1);
+        load /= (float)BucketCount;
+        unsigned int bucket = Key_Hash(key);
+        Node *head = Buckets[bucket];
+        Node *previous = head;
+        if (!head) return false;
+        if (head->Key == key) {
+            *old_value = head->Value;
+            Node *removed = Buckets[bucket];
+            Node *next = removed->Next;
+            delete removed;
+            Buckets[bucket] = next;
+            --Count;
+            if (load <= ShrinkLimit) Shrink_Table();
+            return true;
+        }
+        Node *node = head->Next;
+        bool removed = false;
+        while (node) {
+            if (node->Key == key) {
+                *old_value = node->Value;
+                previous->Next = node->Next;
+                --Count;
+                delete node;
+                removed = true;
+                break;
+            }
+            previous = node;
+            node = node->Next;
+        }
+        if (load <= ShrinkLimit) Shrink_Table();
+        return removed;
+    }
+#endif
 
 #endif
