@@ -27,6 +27,10 @@ public:
         return Remove(index);
     }
     bool Grow_00768320();
+    // wlib growVector/shrinkVector kept out of line for other element types (explicit specializations; ownrdraw.cpp's
+    // lists 0x00602360, 0x00602940, 0x006029D0 and 0x006023F0, 0x00602480).
+    bool Grow_Vector();
+    bool Shrink_Vector();
     bool Grow() {
         if (Count < Capacity) return false;
         int capacity = Count * 2;

@@ -1043,9 +1043,12 @@
 | [classes/DynamicVectorClass_WaypointPathClass_ptr](../src/recovered/classes/DynamicVectorClass_WaypointPathClass_ptr/) | 4 | 283 | 4 | 0x00725370–0x00725A70 |
 | [classes/RLEBlitTransZRemapXlatZRead_unsigned_char](../src/recovered/classes/RLEBlitTransZRemapXlatZRead_unsigned_char/) | 2 | 278 | 2 | 0x004867E0–0x0048C930 |
 | [classes/MSSfxEntry](../src/recovered/classes/MSSfxEntry/) | 3 | 277 | 3 | 0x005B15B0–0x005B16D0 |
+| [classes/WolArrayList_int](../src/recovered/classes/WolArrayList_int/) | 2 | 277 | 2 | 0x00602360–0x006023F0 |
 | [classes/Base64Straw](../src/recovered/classes/Base64Straw/) | 2 | 275 | 2 | 0x0042B850–0x00510B00 |
 | [classes/BinkMovieHandle](../src/recovered/classes/BinkMovieHandle/) | 13 | 274 | 13 | 0x005A1A80–0x005A1F80 |
 | [classes/BlitTransXlatAlpha_unsigned_short](../src/recovered/classes/BlitTransXlatAlpha_unsigned_short/) | 3 | 271 | 1 | 0x00487EC0–0x0048CD30 |
+| [classes/WolArrayList_UnknownListEntry_6017c0](../src/recovered/classes/WolArrayList_UnknownListEntry_6017c0/) | 2 | 271 | 2 | 0x006017C0–0x00601850 |
+| [classes/WolArrayList_UnknownListEntry_602480](../src/recovered/classes/WolArrayList_UnknownListEntry_602480/) | 2 | 271 | 2 | 0x00602480–0x006029D0 |
 | [classes/ControlClass](../src/recovered/classes/ControlClass/) | 7 | 265 | 7 | 0x00483430–0x00483570 |
 | [classes/MSFrameAnim](../src/recovered/classes/MSFrameAnim/) | 5 | 265 | 3 | 0x007291C0–0x0072AF00 |
 | [classes/RLEBlitTransRemapXlatZRead_unsigned_char](../src/recovered/classes/RLEBlitTransRemapXlatZRead_unsigned_char/) | 2 | 265 | 2 | 0x004869B0–0x0048C970 |
@@ -1181,6 +1184,7 @@
 | [classes/BlitTransXlatWriteAlpha_unsigned_short](../src/recovered/classes/BlitTransXlatWriteAlpha_unsigned_short/) | 3 | 175 | 1 | 0x00488380–0x0048CE70 |
 | [classes/BlitTransLucent25ZRead_unsigned_short](../src/recovered/classes/BlitTransLucent25ZRead_unsigned_short/) | 2 | 174 | 2 | 0x004875A0–0x0048CB90 |
 | [classes/BlitTransLucent75ZRead_unsigned_short](../src/recovered/classes/BlitTransLucent75ZRead_unsigned_short/) | 2 | 174 | 2 | 0x00487420–0x0048CB50 |
+| [classes/WolDictionary_unsigned_int_UnknownControlRecord](../src/recovered/classes/WolDictionary_unsigned_int_UnknownControlRecord/) | 1 | 174 | 1 | 0x006027E0–0x006027E0 |
 | [classes/BlitTransZRemapXlatZReadWrite_unsigned_short](../src/recovered/classes/BlitTransZRemapXlatZReadWrite_unsigned_short/) | 2 | 173 | 2 | 0x00487A20–0x0048CC50 |
 | [classes/ScoreAnimClass](../src/recovered/classes/ScoreAnimClass/) | 4 | 173 | 4 | 0x006682C0–0x00668370 |
 | [classes/BlitTransZRemapXlatZRead_unsigned_short](../src/recovered/classes/BlitTransZRemapXlatZRead_unsigned_short/) | 2 | 172 | 2 | 0x004872D0–0x0048CB10 |
@@ -1189,6 +1193,7 @@
 | [classes/rc_ptr_WorldDominationTour__GameOption](../src/recovered/classes/rc_ptr_WorldDominationTour__GameOption/) | 4 | 170 | 4 | 0x00727C80–0x00728460 |
 | [classes/RLEBlitTransZRemapXlat_unsigned_char](../src/recovered/classes/RLEBlitTransZRemapXlat_unsigned_char/) | 2 | 169 | 2 | 0x00486570–0x0048C8B0 |
 | [classes/RLEBlitTransRemapXlat_unsigned_char](../src/recovered/classes/RLEBlitTransRemapXlat_unsigned_char/) | 2 | 168 | 2 | 0x00486680–0x0048C8F0 |
+| [classes/WolDictionary_UnknownPairKey_int](../src/recovered/classes/WolDictionary_UnknownPairKey_int/) | 1 | 168 | 1 | 0x00602890–0x00602890 |
 | [classes/RLEBlitTransXlat_unsigned_short](../src/recovered/classes/RLEBlitTransXlat_unsigned_short/) | 2 | 165 | 1 | 0x00489810–0x0048D250 |
 | [classes/BlitTranslucent50NonzeroAlpha_unsigned_short](../src/recovered/classes/BlitTranslucent50NonzeroAlpha_unsigned_short/) | 2 | 163 | 2 | 0x004886F0–0x0048CED0 |
 | [classes/BlitTranslucent50ZeroAlpha_unsigned_short](../src/recovered/classes/BlitTranslucent50ZeroAlpha_unsigned_short/) | 2 | 163 | 2 | 0x004887B0–0x0048CEF0 |
@@ -1212,6 +1217,7 @@
 | [classes/VectorClass_SubzoneConnectionHash](../src/recovered/classes/VectorClass_SubzoneConnectionHash/) | 3 | 148 | 2 | 0x0056C7D0–0x0056C960 |
 | [classes/BaseNodeClass](../src/recovered/classes/BaseNodeClass/) | 4 | 145 | 4 | 0x0042BEE0–0x004F6BE0 |
 | [classes/BlitPlainXlatZReadWrite_unsigned_short](../src/recovered/classes/BlitPlainXlatZReadWrite_unsigned_short/) | 2 | 143 | 2 | 0x004878D0–0x0048CC10 |
+| [classes/WolArrayList_HWND](../src/recovered/classes/WolArrayList_HWND/) | 1 | 143 | 1 | 0x00602940–0x00602940 |
 | [classes/WolServerArray](../src/recovered/classes/WolServerArray/) | 1 | 142 | 1 | 0x00768110–0x00768110 |
 | [classes/WolUserArray](../src/recovered/classes/WolUserArray/) | 1 | 142 | 1 | 0x00766F00–0x00766F00 |
 | [classes/rc_ptr_WorldDominationTour__Conflict](../src/recovered/classes/rc_ptr_WorldDominationTour__Conflict/) | 2 | 142 | 2 | 0x00726F60–0x00727CC0 |
@@ -1417,7 +1423,7 @@
 | [classes/exception](../src/recovered/classes/exception/) | 1 | 13 | 0 | 0x0078B1E7–0x0078B1E7 |
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 
-1410 directories, 17332 regions. Generated by `tools/original_target/source_index.py`.
+1416 directories, 17341 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
