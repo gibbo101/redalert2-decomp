@@ -961,41 +961,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "Unknown435FB0Owner_unknown_435fb0_00435fb0",
       "source_order": 56483
-    },
-    {
-      "entry": 5497648,
-      "method": "0053e330",
-      "symbol": "?unknown_53e330@Unknown53E330Owner@@QAE_NPAUUnknown53E330Object@@D@Z",
-      "symbol_prefix": "?unknown_53e330@Unknown53E330Owner@@QAE_NPAUUnknown53E330Object@@D@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 54,
-      "body_sha256": "159ee4eb29c28cb6c6dbe573aee5ce814c26c78cdbcbc4fa508217f7b09c041e",
-      "padding_bytes": 10,
-      "full_extent_bytes": 64,
-      "full_extent_sha256": "e942a41c6ca2942a808b415e8fd88867f0d8fe5c8542cf29a6745d12db76b517",
-      "relocations": [
-        {
-          "offset": 28,
-          "kind": 20,
-          "symbol": "?unknown_5348a0@@YG_NPAUUnknown53E330Object@@D@Z",
-          "target": 5458080,
-          "addend": 0,
-          "resolved": 4294927696
-        }
-      ],
-      "source_sha256": "fb24b42a1304df67e20f28c82abf135ecc4b7d212a33a8656d96ecff362ed0a1",
-      "source": "src/recovered/unowned/Unknown53E330Owner_unknown_53e330_0053e330.cpp",
-      "population": "population-1691",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "Unknown53E330Owner_unknown_53e330_0053e330",
-      "source_order": 56485
     }
   ]
 }

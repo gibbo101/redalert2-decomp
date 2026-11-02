@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 1242 | 273,043 | 1242 | 0x00401000–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 1241 | 272,989 | 1241 | 0x00401000–0x0078FB6B |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 179 | 84,946 | 179 | 0x0049ED10–0x0056A9D0 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 51 | 74,018 | 51 | 0x00640460–0x00654100 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 181 | 64,989 | 181 | 0x00438A60–0x004D3450 |
@@ -156,9 +156,9 @@
 | [classes/Unknown84E8D0](../src/recovered/classes/Unknown84E8D0/) | 14 | 2,951 | 14 | 0x0042D960–0x0042EFD0 |
 | [classes/DropPodLocomotionClass](../src/recovered/classes/DropPodLocomotionClass/) | 28 | 2,922 | 28 | 0x004A5A40–0x004A6710 |
 | [classes/TemporalClass](../src/recovered/classes/TemporalClass/) | 22 | 2,914 | 22 | 0x006E1E70–0x006E2A20 |
+| [classes/LogicClass](../src/recovered/classes/LogicClass/) | 7 | 2,911 | 7 | 0x0053D840–0x0053E370 |
 | [classes/MonoClass](../src/recovered/classes/MonoClass/) | 18 | 2,896 | 18 | 0x0059D780–0x0059EA90 |
 | [classes/BaseClass](../src/recovered/classes/BaseClass/) | 16 | 2,877 | 16 | 0x0042BF70–0x0042CB70 |
-| [classes/LogicClass](../src/recovered/classes/LogicClass/) | 6 | 2,857 | 6 | 0x0053D840–0x0053E370 |
 | [classes/PowerClass](../src/recovered/classes/PowerClass/) | 16 | 2,801 | 16 | 0x0061C450–0x0061D220 |
 | [classes/MSPrintAnim](../src/recovered/classes/MSPrintAnim/) | 10 | 2,800 | 10 | 0x005AE6C0–0x005AFE80 |
 | [classes/FirewallSettings](../src/recovered/classes/FirewallSettings/) | 12 | 2,771 | 12 | 0x005B9E40–0x005BAF50 |
