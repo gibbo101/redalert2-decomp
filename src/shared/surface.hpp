@@ -79,7 +79,7 @@ public:
     virtual bool Unlock() = 0;                                                 // slot 24 (+0x60)
     // Whether the surface can be locked now (DSurface tries a lock).
     virtual bool Can_Lock(int x = 0, int y = 0) { return true; }              // slot 25 (+0x64)
-    virtual bool Unknown_Slot26(int unknown1, int unknown2) { return true; }   // slot 26 (+0x68)
+    virtual bool Unknown_Slot26(Point2D point = Point2D(0, 0)) { return true; }   // slot 26 (+0x68; a point by value: WWMouseClass::Process_Mouse pushes two zeroed registers)
     virtual bool Is_Locked() = 0;                                              // slot 27 (+0x6C)
     virtual int Bytes_Per_Pixel() = 0;                                         // slot 28 (+0x70)
     virtual int Stride() = 0;                                                  // slot 29 (+0x74)

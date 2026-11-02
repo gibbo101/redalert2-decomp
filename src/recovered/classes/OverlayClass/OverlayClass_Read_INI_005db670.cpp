@@ -11,7 +11,7 @@
 // @ref ??_GStraw@@UAEPAXI@Z=0049ed40
 // @ref ??_GBufferStraw@@UAEPAXI@Z=0049ed60
 // @ref ?Can_Lock@Surface@@UAE_NHH@Z=00411270
-// @ref ?Unknown_Slot26@Surface@@UAE_NHH@Z=00411280
+// @ref ?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z=00411280
 // @ref ?Get_Rect@Surface@@UAE?AVRect@@XZ=00411290
 // @ref ?Get_Width@Surface@@UAEHXZ=004112c0
 // @ref ?Get_Height@Surface@@UAEHXZ=004112d0

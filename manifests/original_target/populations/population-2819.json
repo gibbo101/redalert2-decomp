@@ -4,8 +4,8 @@
     "id": "population-2819",
     "inventory_sha256": "6165e5be5ba255fb5f909aae870d3cc0e56deb3364aea8d4ac7fc07fed878b2c",
     "gaps_sha256": "039c7eacdbb9212c1b3c79c8e42e83b331d071f0a179627c7b71b140b012e273",
-    "historical_population_sha256": "24b18333e0d69c21ab1bbe6fabf6c15a823b5e65f05918722d98998b1e4ab13d",
-    "historical_acceptance_sha256": "5ae4350ff113ca1c468c5f5bf94ad2056611a9e0a0c7c41ef1e5227776eb7f17"
+    "historical_population_sha256": "7dd6d6790c75a1b5795f4988e7674657bdb59ca7f19101b3b53289d908c4a9fa",
+    "historical_acceptance_sha256": "a278100acbaba3dd4c1ae683087f55eec60a9f5222d0f4bba42bee3582bdb21e"
   },
   "references": {
     "_unknown_empty_rect": 10751592,
@@ -1752,7 +1752,7 @@
     "??_7Mouse@@6B@": 8059960,
     "??_7Blitter@@6B@": 7988524,
     "?Can_Lock@Surface@@UAE_NHH@Z": 4264560,
-    "?Unknown_Slot26@Surface@@UAE_NHH@Z": 4264576,
+    "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,
     "?unknown_slot32@AircraftTypeClass@@UBE_NABVCell@@PAVHouseClass@@@Z": 4308880,
     "?Save@AircraftTypeClass@@UAGJPAUIStream@@H@Z": 4309488,
     "?Save@TechnoTypeClass@@UAGJPAUIStream@@H@Z": 7203856,

@@ -4,8 +4,8 @@
     "id": "population-3480",
     "inventory_sha256": "db69761cbc5e3942e1a20d6c601046c3833b9260f7b66f73e94c975ff508e775",
     "gaps_sha256": "5d1314467c1038e62015c115744e4b608d922bd75b15928b6cf7a653ee5dabc7",
-    "historical_population_sha256": "9c2843e454a5a7387a4fda61b4a3a3065c1980238cbfb55184c0cd528e6fba27",
-    "historical_acceptance_sha256": "bc1c7b56f404fa066bf130a36dea9f927e56cc34396714ff1abbb8953a038eac"
+    "historical_population_sha256": "e1c523c2d293e227f54d10430a7afb4213681bb579549f5c2dbd1669e540998c",
+    "historical_acceptance_sha256": "b57b9f2a2113fbcadd2b7316f788f2791528bd07764812fd6d240ab6362a00fe"
   },
   "references": {
     "_unknown_empty_rect": 8719464,
@@ -1617,7 +1617,7 @@
     "?Clear@?$VectorClass@PAVGlobalPacketType@@@@UAEXXZ": 6767552,
     "??_GTextButtonClass@@UAEPAXI@Z": 7238960,
     "?Can_Lock@Surface@@UAE_NHH@Z": 4264560,
-    "?Unknown_Slot26@Surface@@UAE_NHH@Z": 4264576,
+    "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,
     "?Set_Red_Limit@TriColorGaugeClass@@UAEHH@Z": 5048016,
     "?Set_Yellow_Limit@TriColorGaugeClass@@UAEHH@Z": 5048064,
     "?Clear@INIClass@@QAE_NPBD0@Z": 5290400,

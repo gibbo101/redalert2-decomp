@@ -4,8 +4,8 @@
     "id": "population-3464",
     "inventory_sha256": "3a0cbffa5f4a0e79ca5f06b00860f121ff2a989390e5199f6645b22526c710d9",
     "gaps_sha256": "16147c2d716f3455ecdbb1797cd50069c8c595d301c818c6b7c2f07d406f22f0",
-    "historical_population_sha256": "2bded4021bea475581062482a1e14e66586ce6fd4f6f5db1f790f8dce22981fc",
-    "historical_acceptance_sha256": "e0a2d81368138a8d2af9f75b630699466221cdeb89c2b726288590fa0cef04f0"
+    "historical_population_sha256": "cf9cccb2a3d16a081d6afa03dd0052cc9309fffa9aac22bf97aff898e0a96fa0",
+    "historical_acceptance_sha256": "15b95cb3f60937526ddfe7f63a0209877c0c1148c4ece0d5092a57fbdde51478"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -12651,7 +12651,7 @@
     "?Set_Cursor@MonoClass@@QAEXHH@Z": 5890624,
     "??_GXSurface@@UAEPAXI@Z": 4264736,
     "?Can_Lock@Surface@@UAE_NHH@Z": 4264560,
-    "?Unknown_Slot26@Surface@@UAE_NHH@Z": 4264576,
+    "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,
     "__imp__timeEndPeriod@4": 7972128,
     "__imp__timeBeginPeriod@4": 7972140,
     "?Is_Char_Key@WWKeyboardClass@@CIHG@Z": 5448384,

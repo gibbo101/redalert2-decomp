@@ -4,8 +4,8 @@
     "id": "population-2634",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "09a85f81c08175948af696a903a48bced753631d7e3f38c06cb852be90e97753",
-    "historical_acceptance_sha256": "c74adda0763cec8a4a44b1ac90132e232888dff18cad61f541a766f8d190f31f"
+    "historical_population_sha256": "e23d9b5bff5918b08124dc188ffe36e3b1b8b128e6f0f0c5efed13e97d939bba",
+    "historical_acceptance_sha256": "69e6b51e0291a8e5a5f6aa2e7bb0f3f56eb2935eb7e1c0d5921d554145109e7b"
   },
   "references": {
     "_unknown_static_rect": 11710320,
@@ -350,7 +350,7 @@
     "?Reset@Buffer@@QAEXXZ": 4424768,
     "?Size@CCFileClass@@UAEJXZ": 4624720,
     "?Can_Lock@Surface@@UAE_NHH@Z": 4264560,
-    "?Unknown_Slot26@Surface@@UAE_NHH@Z": 4264576,
+    "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,
     "?Reset@RandomStraw@@QAEXXZ": 6542160,
     "?Unlock@XSurface@@UAE_NXZ": 4264688,
     "?Stride@BSurface@@UAEHXZ": 4264896,

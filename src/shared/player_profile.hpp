@@ -31,8 +31,8 @@ public:
     void Set_Server_00739920(Wstring const &server);
     unsigned int Set_Country_007399b0(unsigned int country);
     unsigned int Set_Color_007399d0(unsigned int color);
-    // Writes the profile for a nickname into the registry (0x007395D0; name hypothesis).
     void Set_Ladder_007399f0(WOL::Ladder *entry);
+    // Writes the profile for a nickname into wolinfo.ini (0x007395D0; name hypothesis).
     void Save_007395d0(Wstring const &name);
     // size 0x38 (operator new in Load_Default 0x00738670)
 };

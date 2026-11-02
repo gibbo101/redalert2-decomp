@@ -987,3 +987,12 @@ Resume notes are in build/class-work/Ob2Apply519/NOTES.md.
 - BuildingType Get_Draw_Rect 0x45E290 joined: 83.07 -> 98.65, equal to its standalone score. Free_Buildup uses the TibSun nested-if delete shape (bt/p/q1.cpp) with a lab stand-in class, which still needs evidence for a real RA2 shape class with an inline destructor. What remains is the Types349 Union register swap.
 - Planning 0x617AF0: 90.00, unchanged. The original spends roughly 90 to 156 more IL units at depth 1 before the `int listed` loop. No natural shape found.
 - Not attempted: Grant 0x69CCF0, WDTMap 0x72A880, Draw_Tiles 0x6A7BA0, LdPrgMgr 0x535BF0, Campaign ctor 0x725F40, Draw_Node 0x619870.
+
+## Scout522 (2026-11-02, closed; 1,700 B landed in r1-r4)
+Resume notes are in build/class-work/Scout522/NOTES.md.
+- Populate_Dialog 0x739B70: 85.55 (w/Populate_Dialog_00739b70_best2.cpp). At each stats site the original calls GetDlgItem before taking the text and keeps the ?: pointer in ebp; ours takes the text first and caches GetDlgItem in ebp.
+- Fill_Port 0x66D5A0: 87.92, parked. For short temporaries the original picks ecx/edx where ours picks eax/ecx.
+- The pop-2660 .CRT$XCU run 0x7CA01C-0x7CA14C is one contiguous unit, so 0x4D4620/0x4D46C0 can only join after every earlier entry. The blocker is the version object 0x4D45F0.
+- OWNER DECISION (11:00Z): the version object (ctor 0x712B20, vptr 0x7A2ABC, atexit 0x4D4610) is a polymorphic class with an inline virtual destructor whose scalar deleting destructor is 0x4D4980. This is a hypothesis from the one-slot vtable; the class name stays unknown_ until RTTI or strings show it. The full join of the 0x4D4540-0x4D48D0 entries into pop-2660 goes ahead on that layout.
+- OWNER DECISION (11:00Z): unit-wide macros defined at the top of a unit's first source (RA2_RECT_POINT_INLINE, RA2_CCINI_UNIT_MEMBERS, the *_DEFINED list guards) are the standing pattern for unit-specific inline or declaration choices.
+- Fixed: the player_profile.hpp comment for Save 0x7395D0 now sits on Save and says wolinfo.ini.

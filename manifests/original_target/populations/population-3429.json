@@ -4,8 +4,8 @@
     "id": "population-3429",
     "inventory_sha256": "7776fc2ba0fe62d448952fc4bd56f2eb923d0a5874f15d5ba2656051319ca50b",
     "gaps_sha256": "ba49c6970058011b491258066429042c68486b2ef7b3840dafb3e040e7ba353e",
-    "historical_population_sha256": "e20a38e4df09368723f0a5cdac649f546a8ba30801fd64c904b49bb2edea5787",
-    "historical_acceptance_sha256": "10ec63cf558af575552c82e172a8a5afeb22cb5ec22d5e09c963d7c172599312"
+    "historical_population_sha256": "16db973eefacae5c9095fcadad43a930d5388682297d2d3fc626bbf6bf3b2ba1",
+    "historical_acceptance_sha256": "4866f80fc6de2188bec33c447bc85c50d8df00b6ff8bdadc9c35b687919f00b9"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -6546,7 +6546,7 @@
     "??_7Blitter@@6B@": 7988524,
     "?INoticeSink_Unknown@AbstractClass@@UAE_NHH@Z": 4260640,
     "?Can_Lock@Surface@@UAE_NHH@Z": 4264560,
-    "?Unknown_Slot26@Surface@@UAE_NHH@Z": 4264576,
+    "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,
     "?AddRef@BulletClass@@UAGKXZ": 4602128,
     "?AddRef@EnumConnectionsClass@@UAGKXZ": 4792816,
     "?AddRef@ConnectionPointClass@@UAGKXZ": 4794144,

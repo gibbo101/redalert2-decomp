@@ -4,8 +4,8 @@
     "id": "population-3451",
     "inventory_sha256": "1d3a65e3133a8d7111c412645638e8acda7402606e5a9690d369370cfe763549",
     "gaps_sha256": "c9a912e73a304dcf8dc3bd783c93430b9e124b8075a58201b17f33c3ab85a1c3",
-    "historical_population_sha256": "d3460ebea991662749f6cfb30e53e622c266d31099e9be690bcc0496f4707e9a",
-    "historical_acceptance_sha256": "1f4e4c3f4eaa937971e038663e9870035a68fa0985b6003c5508c2910e116884"
+    "historical_population_sha256": "cc1e62b362db6e7b5ebeeb911490af1c9c3bd1bd834ac88ed06550b5acc01cd4",
+    "historical_acceptance_sha256": "9b8fc0ad17ef02fc7064771b76e074fc1fc359aa7abed3b859c444b2687ed861"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -3486,7 +3486,7 @@
     "??_7Blitter@@6B@": 7988524,
     "?INoticeSink_Unknown@AbstractClass@@UAE_NHH@Z": 4260640,
     "?Can_Lock@Surface@@UAE_NHH@Z": 4264560,
-    "?Unknown_Slot26@Surface@@UAE_NHH@Z": 4264576,
+    "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,
     "?unknown_slot32@AircraftTypeClass@@UBE_NABVCell@@PAVHouseClass@@@Z": 4308880,
     "?Save@AircraftTypeClass@@UAGJPAUIStream@@H@Z": 4309488,
     "?Save@TechnoTypeClass@@UAGJPAUIStream@@H@Z": 7203856,

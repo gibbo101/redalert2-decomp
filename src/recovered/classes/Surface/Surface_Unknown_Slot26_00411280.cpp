@@ -1,4 +1,4 @@
-// bool Surface::Unknown_Slot26(int, int) (0x00411280)
+// bool Surface::Unknown_Slot26(Point2D) (0x00411280)
 // Default returns true; purpose unknown (no override recovered).
 // Inline member of shared/surface.hpp, emitted as a COMDAT wherever the
 // vtable is needed; the linker kept the copy from the first object file

@@ -4,8 +4,8 @@
     "id": "population-3492",
     "inventory_sha256": "75f37c09c5152853b983bfb4d0a960bda6a301955cb0ebe3bdeea029d0276df3",
     "gaps_sha256": "1ff519f1940af0793a8ed0a79d2e86d8f566c60ebb5b5695839e62bbc5df53f5",
-    "historical_population_sha256": "e2328f494046d6c93eb2eec5089a1dd8e4a851f84fa733257c5a11608c085609",
-    "historical_acceptance_sha256": "e5adcb44845f4a667777e34eed3e95089050572fbae92a7df88ca8d02431d36f"
+    "historical_population_sha256": "9a6ca35379894c65a0647152488aef255960e5378cce7b743c111e5735a5170e",
+    "historical_acceptance_sha256": "bb9d1557dd3172feea18b081fd4a706949750a5d583a267998acf213750c82c1"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3767,7 +3767,7 @@
     "?Get_Date_Time@CCFileClass@@UAEKXZ": 4625232,
     "?Set_Date_Time@CCFileClass@@UAE_NK@Z": 4625408,
     "?Can_Lock@Surface@@UAE_NHH@Z": 4264560,
-    "?Unknown_Slot26@Surface@@UAE_NHH@Z": 4264576,
+    "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,
     "?Free@?$MixFileClass@VCCFileClass@@@@SI_NPBD@Z": 5854560,
     "?Cache@?$MixFileClass@VCCFileClass@@@@SI_NPBDPBVBuffer@@@Z": 5855088,
     "?Cache@?$MixFileClass@VCCFileClass@@@@QAE_NPBVBuffer@@@Z": 5855248,

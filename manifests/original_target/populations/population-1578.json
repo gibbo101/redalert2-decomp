@@ -4,8 +4,8 @@
     "id": "population-1578",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "20c7aba08e576ac1a220bf101bc5782e67fc17b7d707b6b605621a64ff573b95",
-    "historical_acceptance_sha256": "3745982ec9d057dad1e55eda79b9a9d94da588e320752da39009f87653f8a87b"
+    "historical_population_sha256": "e046a83266894f7b65fa0c3b1e96a07cdec596bf7218265ac052896c3ed2a03a",
+    "historical_acceptance_sha256": "9ce5dfbbf7762848566eaf7630918caf0b336ecc3436cc3f90a0d9430d3f7fda"
   },
   "references": {
     "?ZBufferPtr@@3PAVZBuffer@@A": 8590772,
@@ -243,7 +243,7 @@
     "??_7MSShapeAnim@@6B@": 8023396,
     "??_7Blitter@@6B@": 7988524,
     "?Can_Lock@Surface@@UAE_NHH@Z": 4264560,
-    "?Unknown_Slot26@Surface@@UAE_NHH@Z": 4264576,
+    "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,
     "?x@?1???A?$IndexClass@HPAUINISection@INIClass@@@@QBEABQAUINISection@INIClass@@ABH@Z@4PAU23@A": 11712044,
     "?x@?1???A?$IndexClass@HPAUINIEntry@INIClass@@@@QBEABQAUINIEntry@INIClass@@ABH@Z@4PAU23@A": 11712048,
     "__real@8@3ff8a3d70a3d70a3d800": 7980312,

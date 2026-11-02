@@ -4,8 +4,8 @@
     "id": "population-3595",
     "inventory_sha256": "52b738f935747298be3c1947829e4971d8777d799b0e5d1318d0b546473e6b7c",
     "gaps_sha256": "1801de4a64892115a246b4046ee4447ef6de69fcd3c50f221ddfcd70fac685cb",
-    "historical_population_sha256": "e207b9eab18da528937376adb90af67c2f768fc25ce9f6d4c0c1d25ac8461b85",
-    "historical_acceptance_sha256": "29338d9fb0e31b82d7ee07fd96438ed71b5fa1c7a90e0dff4ad01e949deffc95"
+    "historical_population_sha256": "aab2feae4a6ee4f0598cd2de1856974be7fab6d0b708f43cbb4846fe1bc48b21",
+    "historical_acceptance_sha256": "d970f0bb1c16787098a000b2259fc1c76a20380ac2c716cc389ab237449650f6"
   },
   "references": {
     "_unknown_empty_rect": 10751560,
@@ -1727,7 +1727,7 @@
     "?Release@Wstring@@QAEXXZ": 7792176,
     "_strncpy": 7873488,
     "?Can_Lock@Surface@@UAE_NHH@Z": 4264560,
-    "?Unknown_Slot26@Surface@@UAE_NHH@Z": 4264576,
+    "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,
     "?Save@AircraftTypeClass@@UAGJPAUIStream@@H@Z": 4309488,
     "?Save@TechnoTypeClass@@UAGJPAUIStream@@H@Z": 7203856,
     "?Save@AITriggerTypeClass@@UAGJPAUIStream@@H@Z": 4311088,
