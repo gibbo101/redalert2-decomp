@@ -127,6 +127,13 @@ struct __declspec(novtable) IChat : public IUnknown {
 };
 }
 
-struct WolUnknownIdentifier { unsigned int unknown_00; void Initialize_005b9e80(); };
+struct WolUnknownIdentifier {
+    unsigned int unknown_00;
+    void Initialize_005b9e80();
+#ifdef WOL_IDENTIFIER_DECLARE_CLEAR
+    // Clears the shared identifier (0x005B9E70); MainOpt calls it after changing network settings.
+    void Clear_005b9e70();
+#endif
+};
 extern WolUnknownIdentifier unknown_identifier_a71b18;
 #endif
