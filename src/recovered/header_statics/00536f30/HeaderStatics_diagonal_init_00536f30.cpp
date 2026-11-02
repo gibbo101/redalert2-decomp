@@ -16,12 +16,7 @@
 #include "shared/cell_class.hpp"
 #include "shared/options.hpp"
 
-// The millisecond timer (0x00837448; TibSun's MillisecondTimer): its time in milliseconds (0x005935E0).
-class UnknownMillisecondTimer {
-public:
-    operator double();
-};
-extern UnknownMillisecondTimer unknown_ms_timer_837448;
+#include "shared/milsectmr.hpp"
 
 // A cell waiting to be relit (TibSun LightSourceClass::PendingCellClass): the drawer and values picked
 // for it, applied together when every pending cell has them (0x14 bytes).
