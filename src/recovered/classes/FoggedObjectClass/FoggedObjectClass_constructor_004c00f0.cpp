@@ -23,8 +23,8 @@ FoggedObjectClass::FoggedObjectClass(CoordStruct const &coord, int arg24, int ar
 {
     CellClass &cell = Map[coord];
     unknown_40 = Union(cell.unknown_474eb0(), cell.unknown_475100());
-    unknown_40.X += unknown_tactical_83996c->unknown_b0.X;
-    unknown_40.Y += unknown_tactical_83996c->unknown_b0.Y;
+    unknown_40.X += unknown_tactical_83996c->TacPixelX;
+    unknown_40.Y += unknown_tactical_83996c->TacPixelY;
     unknown_40 -= Point2D(unknown_int_839630, unknown_int_839634);
     Array.Add(this);
     Index.Add_Index(unknown_index_key(unknown_coord_cell(Coord), unknown_30), this);

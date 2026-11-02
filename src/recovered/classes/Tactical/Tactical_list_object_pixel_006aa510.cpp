@@ -11,7 +11,7 @@ bool Tactical::Unknown_006AA510(ObjectClass *object, int x, int y)
 {
     if (unknown_db0 != 500 && x >= -32 && x <= unknown_rect_839630.Width + 32 && y >= -32 && y <= unknown_rect_839630.Height + 32) {
         unknown_tactical_pixels_abe5f8[unknown_db0].Object = object;
-        Point2D view = unknown_b0;
+        Point2D view(TacPixelX, TacPixelY);
         unknown_tactical_pixels_abe5f8[unknown_db0].Pixel = Point2D(x + view.X, y + view.Y);
         unknown_db0++;
         return true;

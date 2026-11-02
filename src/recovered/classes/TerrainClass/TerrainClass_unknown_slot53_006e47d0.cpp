@@ -21,7 +21,7 @@ bool TerrainClass::unknown_slot53(CoordStruct const *coord, int dir)
         }
         Point2D &pixel = (Point2D &)unknown_b8.Width;
         unknown_tactical_83996c->Coord_To_Pixel(unknown_slot42(), pixel);
-        Point2D offset = unknown_tactical_83996c->unknown_b0;
+        Point2D offset(unknown_tactical_83996c->TacPixelX, unknown_tactical_83996c->TacPixelY);
         pixel.X += offset.X;
         pixel.Y += offset.Y;
         if (Class->SpawnsTiberium) {

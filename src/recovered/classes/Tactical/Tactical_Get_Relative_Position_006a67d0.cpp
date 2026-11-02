@@ -4,6 +4,6 @@
 
 Point2D Tactical::Unknown_006A67D0()
 {
-    Point2D offset = unknown_b0;
+    Point2D offset(TacPixelX, TacPixelY);
     return unknown_d64 - offset;
 }

@@ -21,7 +21,7 @@ void Tactical::Unknown_006AABC0(Rect const *rect, void (__fastcall *callback)(Ob
             TacticalObjectPixel &entry = unknown_tactical_pixels_abe5f8[index];
             if (entry.Object != 0 && entry.Object->unknown_7d) {
                 ObjectClass *object = entry.Object;
-                Point2D view = unknown_b0;
+                Point2D view(TacPixelX, TacPixelY);
                 Point2D point(entry.Pixel.X - view.X, entry.Pixel.Y - view.Y);
                 if (rect->Is_Point_Within(point)) {
                     if (Unknown_006F76B0()) {

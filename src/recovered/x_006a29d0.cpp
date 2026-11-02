@@ -6,7 +6,7 @@
 bool Tactical::Coord_To_Pixel(CoordStruct const &coord, Point2D &pixel)
 {
     pixel = Coord_To_Pixel_Absolute(coord);
-    pixel -= Point2D(unknown_b0.X, unknown_b0.Y);
+    pixel -= Point2D(TacPixelX, TacPixelY);
 
     if (pixel.X < -360) {
         return false;

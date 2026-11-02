@@ -4,8 +4,8 @@
     "id": "population-3505",
     "inventory_sha256": "852d1949a80192542a94ca0c2993d5f28732494bbb571a1aa291ad197bb49158",
     "gaps_sha256": "b023cdcfbaf64eda1ef995639d4de89e78193e3d20dc4929fc8531a0739a88b7",
-    "historical_population_sha256": "d9e6451d486017a334a5541795df58a075dbf80a3a6a15b78c9468427b03da92",
-    "historical_acceptance_sha256": "319fc900b89f51bdefabf04fdde61ebfd191addcf226aa927aa193d098c0d68b"
+    "historical_population_sha256": "d2e9a45d2269affc4b35c58a58cf265a22bba99f9ee17dbd1d3b86c0ebee728a",
+    "historical_acceptance_sha256": "9a48bd56ce35926230fd2f9453a86636f2caabc0ff0849f6106974abae321e7e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -12096,7 +12096,30 @@
     "_CLSID_AlphaShapeClass": 8003296,
     "?unknown_alpha_table_ready_84c684@@3_NA": 8701572,
     "?unknown_alpha_table_83c670@@3PAEA": 8636016,
-    "?Init_Alpha_Table@AlphaShapeClass@@SAXXZ": 4323664
+    "?Init_Alpha_Table@AlphaShapeClass@@SAXXZ": 4323664,
+    "?Render_Shroud@Tactical@@QAEXABVRect@@00_N@Z": 6962928,
+    "__real@4@3ffecccccd0000000000": 8055372,
+    "?Draw_It@LaserDrawClass@@QAEXXZ": 5453040,
+    "__real@8@40078cccccccccccd000": 8001480,
+    "__real@8@4006b333333333333000": 8001472,
+    "__real@8@4006ccccccccccccd000": 8001464,
+    "?AI@TemporalClass@@UAEXXZ": 7217712,
+    "?Action@SliderClass@@UAEHIAAI@Z": 6834960,
+    "?unknown_slot16@UDPInterfaceClass@@UAEHHHHH@Z": 7785792,
+    "__real@8@3fff8cccccccccccd000": 8008416,
+    "?Length@CoordStruct@@QBEHXZ": 4306816,
+    "?Draw_All@LaserDrawClass@@SAXXZ": 5453008,
+    "?Read_INI@WarheadTypeClass@@UAE_NAAVCCINIClass@@@Z": 7472352,
+    "?Remove_It@CrateClass@@QAE_NXZ": 4798768,
+    "?Create_Crate@CrateClass@@QAE_NABVCell@@@Z": 4798880,
+    "?Unknown_00568ED0@MapClass@@QAE?AVCell@@ABV2@0@Z": 5672656,
+    "?Get_Type@@YIPAVAnimTypeClass@@AAVCCINIClass@@PBD1PAV1@@Z": 6634992,
+    "?Get_Type@@YIPBVAnimTypeClass@@AAVCCINIClass@@PBD1PBV1@@Z": 6635072,
+    "?Process@TunnelLocomotionClass@@UAG_NXZ": 7274496,
+    "?Process@TeleportLocomotionClass@@UAG_NXZ": 7212560,
+    "?Process@RocketLocomotionClass@@UAG_NXZ": 6545040,
+    "?unknown_719c10@UnknownPairFirst@@QAEXPAUUnknownVoxelRecord48@@PBUVector3@@@Z": 7445520,
+    "?Unknown_006E27B0@TemporalClass@@QAEXPAVTechnoClass@@@Z": 7219120
   },
   "regions": [
     {
@@ -13421,7 +13444,7 @@
           "resolved": 11265388
         }
       ],
-      "source_sha256": "0cac8fa014bd48a76f6ded0a39ea66394befa54ef2bef2009a501eb5e5f66067",
+      "source_sha256": "4b7c7d8e0d0a719233cda84e5a400910f96f2e6636f271146396e8deb0558af1",
       "source": "src/recovered/classes/Tactical/Tactical_unknown_6a9170_006a9170.cpp",
       "population": "population-3505",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
@@ -13838,7 +13861,7 @@
           "resolved": 11265536
         }
       ],
-      "source_sha256": "0d64fc5695c0f318a2ea55aef84a4a514a6d963e3fee59bb3cfaae1a32a1ca68",
+      "source_sha256": "bc312bb0edeb8e307231dd530da261de6ea7e614f9ea27d4cf581f587b459db5",
       "source": "src/recovered/classes/Tactical/Tactical_list_object_pixel_006aa510.cpp",
       "population": "population-3505",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
@@ -13873,7 +13896,7 @@
           "resolved": 11265528
         }
       ],
-      "source_sha256": "cfe44215047c1488303a64b2e64abb161e8b9e536f70fc841ac9a676a7af20a2",
+      "source_sha256": "03fb3484baa048616a0a9a994351a99548a2e58c048659fc5fb29fed41122426",
       "source": "src/recovered/classes/Tactical/Tactical_band_has_object_006aa6a0.cpp",
       "population": "population-3505",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
@@ -13964,7 +13987,7 @@
           "resolved": 8227030
         }
       ],
-      "source_sha256": "5463b9bb28920236c7015a373e361cb3b62f2d10ddc9fe9551ebb0f5d28822b9",
+      "source_sha256": "e8a7add74136e97656a805b7f584251d43c8f0b14afc2a799bb4eebbc5c9d69b",
       "source": "src/recovered/classes/Tactical/Tactical_band_apply_006aabc0.cpp",
       "population": "population-3505",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
@@ -14063,7 +14086,7 @@
           "resolved": 11265352
         }
       ],
-      "source_sha256": "efb8cbe6d1dcec89c0b36b44d4c06d1d746671d896dddb93c17fcc8ff2326a96",
+      "source_sha256": "cf1249683fb4a58b7d7f1572d58e73fda0aeeb348a8950a5bfd889136262fb8c",
       "source": "src/recovered/classes/Tactical/Tactical_point_to_coord_006a2b10.cpp",
       "population": "population-3505",
       "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
@@ -14528,7 +14551,7 @@
       "full_extent_bytes": 48,
       "full_extent_sha256": "8f0d64c999acb8839a3c79528977373d0c26ab1b4c18c546ca9fccc098f94a17",
       "relocations": [],
-      "source_sha256": "41d3bc73d56d58e64e3af156f5b74dfcd68f2fcd00a2565b37b93dfc90f8dd5b",
+      "source_sha256": "649a754d1cb9bcfe7841c7ac881002ea0e55aeb628d61cbbb942a6162e66aa49",
       "source": "src/recovered/classes/Tactical/Tactical_Get_Relative_Position_006a67d0.cpp",
       "population": "population-3505",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
@@ -17328,7 +17351,7 @@
           "resolved": 11265388
         }
       ],
-      "source_sha256": "0d32266b4fc8189019ff80d7392547fe5d527e684e3cd9adc2a4fee495f0ad1c",
+      "source_sha256": "9ed87aaf4faa520535546e11e7b199fee59f70abc096808252a546e38056bc7a",
       "source": "src/recovered/x_006a29d0.cpp",
       "population": "population-3505",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -17386,7 +17409,7 @@
           "resolved": 902029
         }
       ],
-      "source_sha256": "447b06366b296002ed69624ff13ae57c35325063e12bb4eed6c0159630dbc7ff",
+      "source_sha256": "2e3282abc03b338c27963e77a2f0a418934487943b3f71d2e4c59450c1cac19f",
       "source": "src/recovered/x_006a2cb0.cpp",
       "population": "population-3505",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",

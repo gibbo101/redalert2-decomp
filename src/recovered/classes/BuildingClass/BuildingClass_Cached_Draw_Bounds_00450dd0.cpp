@@ -8,7 +8,7 @@ inline Rect Offset_Draw_Bounds(Rect const &bounds,Point2D const &pixel) { Point2
 Rect BuildingClass::unknown_slot73()
 {
     CoordStruct position=unknown_slot42();
-    Point2D view=unknown_tactical_83996c->unknown_b0;
+    Point2D view(unknown_tactical_83996c->TacPixelX, unknown_tactical_83996c->TacPixelY);
     Rect result;
     if(position==unknown_51c && view==unknown_528) {
         result=unknown_50c;

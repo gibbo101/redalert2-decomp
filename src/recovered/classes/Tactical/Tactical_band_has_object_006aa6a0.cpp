@@ -26,7 +26,7 @@ int Tactical::Unknown_006AA6A0()
         for (int index = 0; index < unknown_db0; index++) {
             TacticalObjectPixel &entry = unknown_tactical_pixels_abe5f8[index];
             if (entry.Object != 0 && entry.Object->unknown_7d) {
-                Point2D view = unknown_b0;
+                Point2D view(TacPixelX, TacPixelY);
                 Point2D point(entry.Pixel.X - view.X, entry.Pixel.Y - view.Y);
                 if (rect.Is_Point_Within(point)) {
                     return 1;

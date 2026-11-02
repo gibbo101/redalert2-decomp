@@ -13,7 +13,7 @@
 
 Rect TerrainClass::unknown_slot73()
 {
-    Point2D origin = unknown_tactical_83996c->unknown_b0;
+    Point2D origin(unknown_tactical_83996c->TacPixelX, unknown_tactical_83996c->TacPixelY);
     Point2D offset(unknown_b8.Width - origin.X, unknown_b8.Height - origin.Y);
     ShapeFileStruct const *shape = (ShapeFileStruct const *)ObjectClass::unknown_slot26();
     if (shape == 0) {

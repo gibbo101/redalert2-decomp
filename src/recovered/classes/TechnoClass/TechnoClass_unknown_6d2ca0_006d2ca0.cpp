@@ -8,7 +8,7 @@
 
 void TechnoClass::unknown_6d2ca0(int x, int y)
 {
-    unknown_322 = unknown_tactical_83996c->unknown_b0.Y + x + y - 10;
+    unknown_322 = unknown_tactical_83996c->TacPixelY + x + y - 10;
     int dir = Dir_To_8(unknown_2e0.Current());
     if (dir == 0 || dir == 6) {
         unknown_322 -= 8;

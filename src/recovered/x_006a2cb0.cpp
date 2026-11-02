@@ -14,8 +14,8 @@ void Tactical::Setup_Trigger_Scroll(CoordStruct const &coord, int speed)
 
     Point2D to;
     Coord_To_Pixel(coord, to);
-    to.X += unknown_b0.X;
-    to.Y += unknown_b0.Y;
+    to.X += TacPixelX;
+    to.Y += TacPixelY;
     unknown_d0 = to;
     unknown_c8 = unknown_d64;
 }

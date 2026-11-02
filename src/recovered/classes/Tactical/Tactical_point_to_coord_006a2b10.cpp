@@ -10,7 +10,7 @@
 CoordStruct Tactical::Unknown_006A2B10(Point2D const &point)
 {
     if (point.X < unknown_rect_abe560.Width && point.Y < unknown_rect_abe560.Height + unknown_rect_abe560.Y) {
-        Point2D view = unknown_b0;
+        Point2D view(TacPixelX, TacPixelY);
         Point2D pixel(point.X + view.X, point.Y + view.Y);
         Vector3 position;
         position.X = (float)pixel.X;

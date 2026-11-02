@@ -46,9 +46,9 @@ SurfaceRegion TechnoClass::Render_Voxel_Object_006d24e0(UnknownObjectPair const 
     Rect cliprect=xcliprect;
     if (unknown_surface_83995c!=unknown_surface_ad0604) {
         if (unknown_322>0) {
-            cliprect=Intersect(cliprect,Rect(0,0,unknown_int_839638,unknown_322-unknown_tactical_83996c->unknown_b0.Y));
+            cliprect=Intersect(cliprect,Rect(0,0,unknown_int_839638,unknown_322-unknown_tactical_83996c->TacPixelY));
         } else if (unknown_325) {
-            unknown_322=(short)(unknown_tactical_83996c->unknown_b0.Y+point.Y+region.Bounds.Height+region.Point.Y);
+            unknown_322=(short)(unknown_tactical_83996c->TacPixelY+point.Y+region.Bounds.Height+region.Point.Y);
         }
     }
     flags&=~0x10U;

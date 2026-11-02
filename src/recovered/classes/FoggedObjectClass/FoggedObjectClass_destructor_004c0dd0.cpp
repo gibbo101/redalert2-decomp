@@ -15,12 +15,6 @@
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ?Array@FoggedObjectClass@@2V?$DynamicVectorClass@PAVFoggedObjectClass@@@@A=00865e90
 // @ref ?Index@FoggedObjectClass@@=00865e40
-static inline Rect Offset_Rect(Rect rect, Point2D point)
-{
-    rect.X -= point.X;
-    rect.Y -= point.Y;
-    return rect;
-}
 
 FoggedObjectClass::~FoggedObjectClass()
 {
@@ -40,6 +34,8 @@ FoggedObjectClass::~FoggedObjectClass()
         }
     }
     if (unknown_tactical_83996c != 0) {
-        unknown_tactical_83996c->Register_Dirty_Area(Offset_Rect(unknown_40, unknown_tactical_83996c->unknown_b0), 0);
+        Rect rect = unknown_40;
+        rect -= Point2D(unknown_tactical_83996c->TacPixelX, unknown_tactical_83996c->TacPixelY);
+        unknown_tactical_83996c->Register_Dirty_Area(rect, 0);
     }
 }

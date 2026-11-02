@@ -918,3 +918,11 @@ constructor out of line, as the original did (CoordStruct ctor 0x41B630 in 0x63D
 - VC6 never moves a store above an inlined member constructor: Point2D members act as a barrier for the zoom double's
   low-dword store in the Tactical ctor 0x6A24B0, while plain ints/bools let it rise to the top. Member types can be
   read off store order.
+
+## Shared tails and hoisted loads (Rocket473, 2026-11-01)
+
+- In a switch, two cases with identical endings get merged; the merge can pull post-switch code up behind the
+  earlier case. Writing a test as `exploded = f(x); if (!exploded) {...}` instead of `if (f(x)) { exploded = true;
+  break; }` kept the case-5 block apart (Rocket Process 0x63DE90).
+- When an object pointer is chosen by if/else, VC6 loads a member first and then hoists the load both paths share; a
+  single-use local in each branch restores the hoist, one local for every use spills it (labs Rocket473 lab/t6-t7n).

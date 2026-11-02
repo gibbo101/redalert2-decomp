@@ -27,8 +27,8 @@ FoggedObjectClass::FoggedObjectClass(CoordStruct const &coord, int arg54, unsign
     unknown_tactical_83996c->Coord_To_Pixel(position, pixel);
     pixel -= Point2D(30, 15);
     unknown_40 = Rect(pixel.X, pixel.Y, 60, 30);
-    unknown_40.X += unknown_tactical_83996c->unknown_b0.X;
-    unknown_40.Y += unknown_tactical_83996c->unknown_b0.Y;
+    unknown_40.X += unknown_tactical_83996c->TacPixelX;
+    unknown_40.Y += unknown_tactical_83996c->TacPixelY;
     Array.Add(this);
     Index.Add_Index(unknown_index_key(XY_Cell(at.X / 256, at.Y / 256), unknown_30), this);
 }

@@ -37,6 +37,6 @@ FoggedObjectClass::FoggedObjectClass(BuildingClass *building,bool fade)
         }
     }
     unknown_tactical_83996c->Register_Dirty_Area(unknown_40,false);
-    unknown_40.X+=unknown_tactical_83996c->unknown_b0.X;
-    unknown_40.Y+=unknown_tactical_83996c->unknown_b0.Y;
+    unknown_40.X+=unknown_tactical_83996c->TacPixelX;
+    unknown_40.Y+=unknown_tactical_83996c->TacPixelY;
 }

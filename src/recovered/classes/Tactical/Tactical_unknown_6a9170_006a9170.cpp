@@ -15,11 +15,11 @@ void Tactical::Unknown_006A9170()
     position.Z = 0.0f;
     int x = unknown_d64.X;
     int y = unknown_d64.Y;
-    unknown_b0.X = x;
-    unknown_b0.Y = y;
-    unknown_b0.X = x - unknown_rect_abe560.Width / 2;
-    unknown_b0.Y = y - unknown_rect_abe560.Height / 2;
-    Point2D offset(unknown_b0.X - 60, unknown_b0.Y - 30);
+    TacPixelX = x;
+    TacPixelY = y;
+    TacPixelX = x - unknown_rect_abe560.Width / 2;
+    TacPixelY = y - unknown_rect_abe560.Height / 2;
+    Point2D offset(TacPixelX - 60, TacPixelY - 30);
     position.X = (float)offset.X;
     position.Y = (float)offset.Y;
     position = unknown_de4 * position;

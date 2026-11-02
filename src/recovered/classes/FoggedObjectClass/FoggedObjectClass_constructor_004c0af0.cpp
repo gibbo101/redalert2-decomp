@@ -21,8 +21,8 @@ FoggedObjectClass::FoggedObjectClass(AnimClass *anim)
       unknown_50(Map[CoordStruct(anim->Coord)].unknown_11b), unknown_54(-1), unknown_58(0), unknown_74(true)
 {
     unknown_40 = anim->unknown_slot73();
-    unknown_40.X += unknown_tactical_83996c->unknown_b0.X;
-    unknown_40.Y += unknown_tactical_83996c->unknown_b0.Y;
+    unknown_40.X += unknown_tactical_83996c->TacPixelX;
+    unknown_40.Y += unknown_tactical_83996c->TacPixelY;
     Array.Add(this);
     DrawRecord record;
     record.Type = anim->Class;

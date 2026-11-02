@@ -52,7 +52,7 @@ bool ObjectClass::unknown_slot53(CoordStruct const *coord, int direction)
                     CoordStruct location = Center_Coord();
                     Point2D pixel;
                     unknown_tactical_83996c->Coord_To_Pixel(location, pixel);
-                    Object_Placement_Add_Point(pixel, unknown_tactical_83996c->unknown_b0);
+                    Object_Placement_Add_Point(pixel, Point2D(unknown_tactical_83996c->TacPixelX, unknown_tactical_83996c->TacPixelY));
                     ShapeFileStruct *shape = reinterpret_cast<ShapeFileStruct *>(Class_Of()->unknown_ac);
                     Point2D half;
                     half.X = shape->Width / 2;
@@ -62,8 +62,8 @@ bool ObjectClass::unknown_slot53(CoordStruct const *coord, int direction)
                     new AlphaShapeClass(this, pixel.X, pixel.Y);
                     if (!unknown_a40774) {
                         unknown_tactical_83996c->Register_Dirty_Area(Rect(
-                            (int)((unsigned int)pixel.X - (unsigned int)unknown_tactical_83996c->unknown_b0.X),
-                            (int)((unsigned int)pixel.Y - (unsigned int)unknown_tactical_83996c->unknown_b0.Y),
+                            (int)((unsigned int)pixel.X - (unsigned int)unknown_tactical_83996c->TacPixelX),
+                            (int)((unsigned int)pixel.Y - (unsigned int)unknown_tactical_83996c->TacPixelY),
                             shape->Width, shape->Height), 1);
                     }
                 }

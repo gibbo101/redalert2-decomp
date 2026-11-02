@@ -4,8 +4,8 @@
     "id": "population-3462",
     "inventory_sha256": "1a8a5c08382c873bc1d222ba46d760dd231c7cc2dd6dc4dcc1bb1ac9bee257c4",
     "gaps_sha256": "7dbebfbb6dffb514664c58159e79ba4739aed38b6b9dd614449e97c68445e81f",
-    "historical_population_sha256": "ec2aa5eae2ed0e5cf2ece5f28d91b92bee8f87d3954407f6f616349ef90bf894",
-    "historical_acceptance_sha256": "2748c051ba15abae6783909e3835edb30d611df4643a5b2a2d1f82fc65e0b855"
+    "historical_population_sha256": "4007c47d858b460a64dcc9d66a029c239759833e9848d70b571ffa2edbd6a07c",
+    "historical_acceptance_sha256": "cbe0dbf8d1acb078a78af0be37ab24f3f183157424b284078267f8c593298cf1"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -12738,7 +12738,21 @@
     "??_ECacheStraw@@UAEPAXI@Z": 5311184,
     "?unknown_719c10@UnknownPairFirst@@QAEXPAUUnknownVoxelRecord48@@PBUVector3@@@Z": 7445520,
     "?Draw_It@LaserDrawClass@@QAEXXZ": 5453040,
-    "?Read_INI@WarheadTypeClass@@UAE_NAAVCCINIClass@@@Z": 7472352
+    "?Read_INI@WarheadTypeClass@@UAE_NAAVCCINIClass@@@Z": 7472352,
+    "?Get_Type@@YIPAVAnimTypeClass@@AAVCCINIClass@@PBD1PAV1@@Z": 6634992,
+    "?Get_Type@@YIPBVAnimTypeClass@@AAVCCINIClass@@PBD1PBV1@@Z": 6635072,
+    "?Process@TunnelLocomotionClass@@UAG_NXZ": 7274496,
+    "?Process@TeleportLocomotionClass@@UAG_NXZ": 7212560,
+    "__real@8@40078cccccccccccd000": 8001480,
+    "__real@8@4006b333333333333000": 8001472,
+    "__real@8@4006ccccccccccccd000": 8001464,
+    "?AI@TemporalClass@@UAEXXZ": 7217712,
+    "?Unknown_006E27B0@TemporalClass@@QAEXPAVTechnoClass@@@Z": 7219120,
+    "?Action@SliderClass@@UAEHIAAI@Z": 6834960,
+    "?unknown_slot16@UDPInterfaceClass@@UAEHHHHH@Z": 7785792,
+    "__real@8@3fff8cccccccccccd000": 8008416,
+    "?Process@RocketLocomotionClass@@UAG_NXZ": 6545040,
+    "?Length@CoordStruct@@QBEHXZ": 4306816
   },
   "regions": [
     {
@@ -20432,7 +20446,7 @@
           "resolved": 54297
         }
       ],
-      "source_sha256": "ee956675523de920e86bc36b4af6e72e50408ae60598dcfdce166463f3bb6320",
+      "source_sha256": "cc26a32b6a602827a498a25f4ae5fbbf41eeff43212746332432e2510ebba354",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Cached_Draw_Bounds_00450dd0.cpp",
       "population": "population-3462",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",

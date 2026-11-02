@@ -4,8 +4,8 @@
     "id": "population-3540",
     "inventory_sha256": "d6ef25f93b104d139e5d0d3137a9a8b3debe76da5f224b5a547e4cf3c5d34bf7",
     "gaps_sha256": "9763b50ba88a135513a7768b645a4f8d0c63e100ab554a446624001a8b6c1bf6",
-    "historical_population_sha256": "0de925818c5fe7370058e84a85bf24082a4153019958526c62382361bcd5bcfa",
-    "historical_acceptance_sha256": "6295445e096fe096607f8150bc7abba96b87b79eaf9b0a478538ba0887179cce"
+    "historical_population_sha256": "25ad6e42761cca321469dd6f4f8d3748d8e0e69db216d19117a3d7d336ac0b05",
+    "historical_acceptance_sha256": "f9cf30696a2b0f6bee5ddcb6a31e604600f2d112940635f2dd82480073e1f07a"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -10470,7 +10470,11 @@
     "?Draw_Shroud@Tactical@@QAEXABVRect@@@Z": 6977568,
     "?Unknown_006E27B0@TemporalClass@@QAEXPAVTechnoClass@@@Z": 7219120,
     "??_7LightSourceClass@@6B@": 8017248,
-    "??_ELightSourceClass@@UAEPAXI@Z": 5471280
+    "??_ELightSourceClass@@UAEPAXI@Z": 5471280,
+    "?unknown_slot16@UDPInterfaceClass@@UAEHHHHH@Z": 7785792,
+    "__real@8@3fff8cccccccccccd000": 8008416,
+    "?Process@RocketLocomotionClass@@UAG_NXZ": 6545040,
+    "?Length@CoordStruct@@QBEHXZ": 4306816
   },
   "regions": [
     {
@@ -12566,7 +12570,7 @@
           "resolved": 4294242195
         }
       ],
-      "source_sha256": "7bddf06c2429b053e5bb29337b465bdf718d1b93b9d04078667a1cb86c007341",
+      "source_sha256": "280a455dd5fa8cfd2475230fd96d4cf4d01f417b709f778e876fac8a5df4247f",
       "source": "src/recovered/classes/FoggedObjectClass/FoggedObjectClass_destructor_004c0dd0.cpp",
       "population": "population-3540",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -13225,7 +13229,7 @@
           "resolved": 8805956
         }
       ],
-      "source_sha256": "a2da85582072203cdc2732bffc4f3644ea9d2054a45160a9c07595fbb0abe264",
+      "source_sha256": "f4e02b400cc1fa83a05789e10815fc7abc756b10b11d417470d37ff4c38aef00",
       "source": "src/recovered/classes/FoggedObjectClass/FoggedObjectClass_constructor_004c00f0.cpp",
       "population": "population-3540",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -13604,7 +13608,7 @@
           "resolved": 8805956
         }
       ],
-      "source_sha256": "fe19a303ac529628b31ac90cf212f0dc0d849e691bbe78099cbfdd7f7c8b02a5",
+      "source_sha256": "2c6e1e84a97611b9fdedb05bd3ce0e7b04964ac3c1f3c055bb213b8a575cc0cd",
       "source": "src/recovered/classes/FoggedObjectClass/FoggedObjectClass_constructor_004c03b0.cpp",
       "population": "population-3540",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -13943,7 +13947,7 @@
           "resolved": 8805956
         }
       ],
-      "source_sha256": "284cd14a5a1cacd117b63dc12095fc43dfb012690d0f3ff5840f0fa3d1abc173",
+      "source_sha256": "66c06723e52cd02d08ddd3506d53b500749ea69e2f0e92c9402a56b3db44bfc9",
       "source": "src/recovered/classes/FoggedObjectClass/FoggedObjectClass_constructor_004c0af0.cpp",
       "population": "population-3540",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -14242,7 +14246,7 @@
           "resolved": 8624492
         }
       ],
-      "source_sha256": "364e8257224439cdcf34a7694934285a523687548f861c2244bda261d4ddc8a8",
+      "source_sha256": "86785415b55df4289864aeb5b52c4ef15834e5650824ecdb27d96ab8627ab05b",
       "source": "src/recovered/classes/FoggedObjectClass/FoggedObject_building_004c0670.cpp",
       "population": "population-3540",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

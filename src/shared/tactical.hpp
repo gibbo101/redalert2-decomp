@@ -190,8 +190,12 @@ public:
     int unknown_a8;                 // +0xA8 the frame of the last update (-1 after construction)
     bool unknown_ac;                // +0xAC
     bool unknown_ad;                // +0xAD
-    Point2D unknown_b0;             // +0xB0 the view position (BuildingClass slot 73 caches it)
-    Point2D unknown_b8;             // +0xB8
+    // The pixel offset of the view's upper left corner on the map, now and at the last render (TibSun
+    // TacPixelX/TacPixelY/LastTacPixelX/LastTacPixelY; four ints: the constructor's store order).
+    int TacPixelX;                  // +0xB0 (BuildingClass slot 73 caches the pair)
+    int TacPixelY;                  // +0xB4
+    int LastTacPixelX;              // +0xB8
+    int LastTacPixelY;              // +0xBC
     double unknown_c0;              // +0xC0 zoom factor (Blit_Display divides by it; 1.0 = none)
     Point2D unknown_c8;             // +0xC8 the scroll start (AI 0x006A2DD0 interpolates it to unknown_d0)
     Point2D unknown_d0;             // +0xD0 the scroll target
