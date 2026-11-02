@@ -73,6 +73,10 @@ public:
 };
 
 // Every trigger (0x00A40AA0; defined in the globals unit).
+// The globals unit (0x004D2BA0) defines this list and sets RA2_GLOBAL_LISTS_DEFINED: a later
+// extern declaration there makes VC6 emit a second dynamic initializer and atexit pair.
+#ifndef RA2_GLOBAL_LISTS_DEFINED
 extern DynamicVectorClass<TriggerClass *> unknown_TriggerClass_list_00a40aa0;
+#endif
 
 #endif

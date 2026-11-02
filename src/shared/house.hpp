@@ -649,7 +649,11 @@ struct __declspec(novtable) IUnknownHouseSink : public IUnknown {
 extern Cell unknown_cell_a40f10;
 
 // Every house (0x00A32298; defined in the globals unit).
+// The globals unit (0x004D2BA0) defines this list and sets RA2_GLOBAL_LISTS_DEFINED: a later
+// extern declaration there makes VC6 emit a second dynamic initializer and atexit pair.
+#ifndef RA2_GLOBAL_LISTS_DEFINED
 extern DynamicVectorClass<HouseClass *> Houses;   // (the globals unit defines it as unknown_HouseClass_list_00a32298)
+#endif
 
 // The player's house (0x00A35DB4).
 

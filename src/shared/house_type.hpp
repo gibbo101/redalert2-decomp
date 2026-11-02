@@ -109,7 +109,11 @@ public:
     int unknown_0x1AC;                              // +0x1AC (size 0x1B0) not written here
 };
 
+// The globals unit (0x004D2BA0) defines this list and sets RA2_GLOBAL_LISTS_DEFINED: a later
+// extern declaration there makes VC6 emit a second dynamic initializer and atexit pair.
+#ifndef RA2_GLOBAL_LISTS_DEFINED
 extern DynamicVectorClass<HouseTypeClass *> HouseTypes;         // 0x00A35D08
+#endif
 
 // Index in HouseTypes of the country with this name or ID; -2 for "<random>", -1 when unknown (0x004904A0).
 int __fastcall Find_Country_Index_004904A0(char const *name);

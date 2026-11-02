@@ -102,7 +102,11 @@ public:
     int ColorSchemeIndex;               // +0x15F40 (as shared/house.hpp)
 };
 
+// The globals unit (0x004D2BA0) defines this list and sets RA2_GLOBAL_LISTS_DEFINED: a later
+// extern declaration there makes VC6 emit a second dynamic initializer and atexit pair.
+#ifndef RA2_GLOBAL_LISTS_DEFINED
 extern DynamicVectorClass<HouseClass *> Houses;             // 0x00A32298
+#endif
 
 // The player's house (0x00A35DB4).
 

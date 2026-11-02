@@ -53,6 +53,10 @@ public:
     FixedString<49> Name;           // +0x64
 };
 
+// The globals unit (0x004D2BA0) defines this list and sets RA2_GLOBAL_LISTS_DEFINED: a later
+// extern declaration there makes VC6 emit a second dynamic initializer and atexit pair.
+#ifndef RA2_GLOBAL_LISTS_DEFINED
 extern DynamicVectorClass<AbstractTypeClass *> AbstractTypes;   // 0x00A40928
+#endif
 
 #endif

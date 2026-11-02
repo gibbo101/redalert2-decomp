@@ -9,7 +9,11 @@ class AbstractClass;
 class ObjectClass;
 class TechnoClass;
 
+// The globals unit (0x004D2BA0) defines this list and sets RA2_GLOBAL_LISTS_DEFINED: a later
+// extern declaration there makes VC6 emit a second dynamic initializer and atexit pair.
+#ifndef RA2_GLOBAL_LISTS_DEFINED
 extern DynamicVectorClass<ObjectClass *> unknown_objects_a40368;   // 0x00A40368
+#endif
 // Defined in 0x006EC3A0's unit; AbstractClass * by their vtables (0x007A177C). Skipped there
 // (RA2_TRACKER_LISTS_DEFINED): VC6 emits a second dynamic initializer for an extern
 // redeclaration that follows the definition.

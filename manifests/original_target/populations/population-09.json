@@ -2265,30 +2265,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 5063952,
-      "method": "4d4510",
-      "symbol": "?get@Leaf_4d4510@@QAEXXZ",
-      "symbol_prefix": "?get@Leaf_4d4510@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 11,
-      "body_sha256": "f2fcb2628c7b53aa14f9445c8937a368a534f74d76f7ab37b1bc3615d3cd581d",
-      "padding_bytes": 5,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "ce7a93098bec7c76fd6d7e0ef21ecabc9839e8a071009e4ce87104eef7f2687b",
-      "relocations": [],
-      "source": "src/recovered/classes/TiberianSunClassFactory/004d4510.cpp",
-      "source_sha256": "9f03ec88b117f3f9a52fd439561585fd37745744548a4e7f0999511f3a521956",
-      "source_order": 1856,
-      "population": "population-09",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 5065040,
       "method": "4d4950",
       "symbol": "?get@Leaf_4d4950@@QAEII@Z",

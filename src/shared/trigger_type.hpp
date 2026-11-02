@@ -85,7 +85,11 @@ extern char const *unknown_actions_section_7ada54;
 extern char const *unknown_events_section_7ada58;
 
 // Every trigger type (0x00866208; defined in the globals unit).
+// The globals unit (0x004D2BA0) defines this list and sets RA2_GLOBAL_LISTS_DEFINED: a later
+// extern declaration there makes VC6 emit a second dynamic initializer and atexit pair.
+#ifndef RA2_GLOBAL_LISTS_DEFINED
 extern DynamicVectorClass<TriggerTypeClass *> TriggerTypes;
+#endif
 extern "C" GUID const CLSID_TriggerTypeClass;   // 0x007A1D60
 
 #endif

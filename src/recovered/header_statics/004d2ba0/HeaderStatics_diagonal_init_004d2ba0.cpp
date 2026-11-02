@@ -147,6 +147,8 @@ DynamicVectorClass<ObjectClass *> unknown_objects_a40368;
 DynamicVectorClass<AbstractTypeClass *> AbstractTypes;
 // The unit's list of AnimClass (0x00A35E60; name is a hypothesis).
 DynamicVectorClass<AnimClass *> unknown_AnimClass_list_00a35e60;
+// Later sources of this unit include headers that declare these lists extern (see RA2_GLOBAL_LISTS_DEFINED).
+#define RA2_GLOBAL_LISTS_DEFINED
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??8?$VectorClass@PAVAITriggerTypeClass@@@@UBE_NABV0@@Z=004d6030
 // @ref ??8?$VectorClass@PAVAbstractTypeClass@@@@UBE_NABV0@@Z=004db990
