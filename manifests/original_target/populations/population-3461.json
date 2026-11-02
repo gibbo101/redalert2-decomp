@@ -4,8 +4,8 @@
     "id": "population-3461",
     "inventory_sha256": "a5635a65db934028132d4b9e4ccc951121790c93a6d57b6ce2f2bd1629801f80",
     "gaps_sha256": "fa8d43857411b445b6dd34f398b1471846eb6afa56ce4d0a2b5ea32bcdf1a501",
-    "historical_population_sha256": "66cfb6e82957c7c19f11e4aeba2c300315e394c216ce152950135d8418d7b8de",
-    "historical_acceptance_sha256": "27e9cb4af40d5fed4bd9bd4fefe9df01a25685d0b37b8899bf30e69a97754bd8"
+    "historical_population_sha256": "736894f10fda1082b027a0603208ea39fdc20440b9db719047fd079d4f1d9616",
+    "historical_acceptance_sha256": "780178a9d6a2a442fbc2f322ed876164137b4c4167f8716ded4f42bf40d48568"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4232,7 +4232,7 @@
     "?Shadow_Point@FlyLocomotionClass@@UAG?AUPoint2D@@XZ": 4976832,
     "?Shove@HoverLocomotionClass@@UAG_NUUnknownFacingDir@@@Z": 5237712,
     "?Shove@LocomotionClass@@UAG_NUUnknownFacingDir@@@Z": 5493888,
-    "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z": 5546256,
+    "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z": 5546256,
     "?Sight_From@UnknownMap8324E0@@QAEXABUCoordStruct@@HPAVHouseClass@@HHH_NH@Z": 5546256,
     "?Sight_From@UnknownMap8324E0@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z": 5546256,
     "?Silo_Redraw_Check@HouseClass@@QAEXHH@Z": 5133408,
@@ -13448,7 +13448,7 @@
         {
           "offset": 111,
           "kind": 20,
-          "symbol": "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z",
+          "symbol": "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z",
           "target": 5546256,
           "addend": 0,
           "resolved": 1244013
@@ -13464,7 +13464,7 @@
         {
           "offset": 166,
           "kind": 20,
-          "symbol": "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z",
+          "symbol": "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z",
           "target": 5546256,
           "addend": 0,
           "resolved": 1243958
@@ -13504,7 +13504,7 @@
         {
           "offset": 299,
           "kind": 20,
-          "symbol": "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z",
+          "symbol": "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z",
           "target": 5546256,
           "addend": 0,
           "resolved": 1243825
@@ -13528,7 +13528,7 @@
         {
           "offset": 385,
           "kind": 20,
-          "symbol": "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z",
+          "symbol": "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z",
           "target": 5546256,
           "addend": 0,
           "resolved": 1243739

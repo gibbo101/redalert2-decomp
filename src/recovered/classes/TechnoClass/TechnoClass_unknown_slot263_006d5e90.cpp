@@ -7,7 +7,7 @@
 #include "shared/gscreen.hpp"
 #include "shared/techno_map.hpp"
 // @ref ?Map@@3VMapClass@@A=008324e0
-// @ref ?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z=0054a110
+// @ref ?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z=0054a110
 
 void TechnoClass::unknown_slot263(bool arg1, bool arg2, bool arg3, HouseClass *house)
 {

@@ -12,7 +12,7 @@
 // @ref ?Unknown_0055A300@MapClass@@QAEXXZ=0055a300
 // @ref _unknown_geometry_g=00abfe08
 
-// @ref ?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z=0054a110
+// @ref ?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z=0054a110
 
 bool TActionClass::unknown_reveal_around_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell)
 {

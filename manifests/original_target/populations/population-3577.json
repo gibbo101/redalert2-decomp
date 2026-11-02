@@ -4,8 +4,8 @@
     "id": "population-3577",
     "inventory_sha256": "606df97200bf34d3b9580cc70065530a9ba23119327ab419b962cdf8099f86b7",
     "gaps_sha256": "dc9576559ebc3eee15dcb288d4807e89abbffe9ce2bbb029ce10afefde9f65b4",
-    "historical_population_sha256": "fb76525ac5c9666cebe3ed5a2688ac59d6289cd99d3fd2cb9470daee2501b5cd",
-    "historical_acceptance_sha256": "fe27705a0872f59a105237aefbd2327a24e8b4c8bd32fb2be5db5293e384d8cb"
+    "historical_population_sha256": "47c4ac76c08e7ff5cd5210e9d93ef949f98da8e311282fce958ac86f0fbe6eb5",
+    "historical_acceptance_sha256": "41232c9cfc4a6c5943837de1be1d02ab4fb4f3d4a433096a2e938688ed3dcc81"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3972,7 +3972,7 @@
     "?Shear_Z@Matrix3D@@QAEXMM@Z": 5833632,
     "?Shove@HoverLocomotionClass@@UAG_NUUnknownFacingDir@@@Z": 5237712,
     "?Shove@LocomotionClass@@UAG_NUUnknownFacingDir@@@Z": 5493888,
-    "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z": 5546256,
+    "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z": 5546256,
     "?Sight_From@UnknownMap8324E0@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z": 5546256,
     "?Silo_Redraw_Check@HouseClass@@QAEXHH@Z": 5133408,
     "?Size@BufferIOFileClass@@UAEJXZ": 4390272,

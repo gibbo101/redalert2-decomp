@@ -185,7 +185,7 @@ public:
     // Reveals the map around coord for house (0x0054A110; hypothesis:
     // Westwood's Sight_From; the meaning of the last five arguments is
     // unknown).
-    void Sight_From(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, int arg6, bool arg7, int arg8);
+    void Sight_From(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, bool arg6, bool arg7, bool arg8);
     void Unknown_00549C50(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, bool arg6, bool arg7, bool arg8);   // 0x00549C50 (reveals around coord; TechnoClass slot 70)
     // 0x00549C50 with its last argument true; the first two arguments are not read (0x00549C20; no callers).
     void Unknown_00549C20(int arg1, int arg2, CoordStruct const &coord, int sight, HouseClass *house, bool arg6, bool arg7, bool arg8, bool arg9);

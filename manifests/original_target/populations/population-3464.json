@@ -4,8 +4,8 @@
     "id": "population-3464",
     "inventory_sha256": "3a0cbffa5f4a0e79ca5f06b00860f121ff2a989390e5199f6645b22526c710d9",
     "gaps_sha256": "16147c2d716f3455ecdbb1797cd50069c8c595d301c818c6b7c2f07d406f22f0",
-    "historical_population_sha256": "f4a4a274098b21ad904b1f86f016812a368822f591fd4554f876f4f2f7d1306b",
-    "historical_acceptance_sha256": "44e325714ed470c9cf5d5d2eabdb67413b1f91f3fc165520d1cf794ada2001af"
+    "historical_population_sha256": "c1f8de9ca3bf0f85a37d78d26b10ef27a3705a14c5c1e0b6700ef3a82b4eac3b",
+    "historical_acceptance_sha256": "cda164bcaf203534e11af3a286133b85778c2f2ad2f5aa8aa0fbb64a51376fd6"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -7466,7 +7466,7 @@
     "?Direction_To@ObjectClass@@QBE?AUUnknownFacingDir@@PBVAbstractClass@@@Z": 6104880,
     "?unknown_slot29@AircraftClass@@UBEHXZ": 4302080,
     "?unknown_slot70@AircraftClass@@UAEX_N0@Z": 4302128,
-    "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z": 5546256,
+    "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z": 5546256,
     "?unknown_slot122@AircraftClass@@UAE_NXZ": 4304176,
     "?Compute_CRC@AircraftClass@@UBEXAAVWWCRCEngine@@@Z": 4304224,
     "?Compute_CRC@FootClass@@UBEXAAVWWCRCEngine@@@Z": 5022672,

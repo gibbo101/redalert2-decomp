@@ -13,7 +13,7 @@
 #include "shared/techno_map.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Map@@3VMapClass@@A=008324e0
-// @ref ?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z=0054a110
+// @ref ?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z=0054a110
 // @ref __real@8@3ff8a3d70a3d70a3d800=0079c518
 // @ref __real@8@3fff8000000000000000=0079a708
 // @ref __real@8@00000000000000000000=0079b610

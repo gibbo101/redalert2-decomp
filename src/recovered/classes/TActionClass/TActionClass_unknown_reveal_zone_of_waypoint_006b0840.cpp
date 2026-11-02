@@ -15,7 +15,7 @@
 // @ref ?Zone@MapClass@@QAEHABVCell@@H_N@Z=0054f8f0
 // @ref ?Unknown_0055AA50@MapClass@@QAEXXZ=0055aa50
 // @ref ?Unknown_0055A910@MapClass@@QAEPAVCellClass@@XZ=0055a910
-// @ref ?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z=0054a110
+// @ref ?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z=0054a110
 // @ref _unknown_geometry_g=00abfe08
 
 

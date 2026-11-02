@@ -4,8 +4,8 @@
     "id": "population-2332",
     "inventory_sha256": "76cc31bf2121336622675c652515b2450ff2311f3d67e038eecacdf30bb105dc",
     "gaps_sha256": "7073f14aea03992e6b55d6f6168945149e7932a55137855bd291b5e4fd7f09c5",
-    "historical_population_sha256": "bcd4028db280c74fd77dcbb7ea2b2b697936d2d887624434a1b571fd2e540175",
-    "historical_acceptance_sha256": "c08a194aeb5e6dda0a62dd84e89b886c29a8486ea28fc98e011c61b08f55dcdb",
+    "historical_population_sha256": "fd82ffbf7a39db68c29289722da3c5d406640b433dcc77cbae10fee8f39e4782",
+    "historical_acceptance_sha256": "726a722ec940df5a4de32b010f7dac20ba4c83912920564024dab00a3b46c66a",
     "separate_units": true
   },
   "references": {
@@ -2104,7 +2104,7 @@
     "?unknown_10@CampaignProperties@WorldDominationTour@@QBE?AVWstring@@XZ": 7525088,
     "?Next@PlanningNodeClass@@QAEPAV1@PAVTechnoClass@@@Z": 6360288,
     "?Next@AudioListIterator@@QAEPAUAudioListNode@@XZ": 4208080,
-    "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2H2H@Z": 5546256,
+    "?Sight_From@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z": 5546256,
     "?AddRef@EnumConnectionsClass@@UAGKXZ": 4792816,
     "?AddRef@ConnectionPointClass@@UAGKXZ": 4794144,
     "?AddRef@EnumConnectionPointsClass@@UAGKXZ": 4795280,
