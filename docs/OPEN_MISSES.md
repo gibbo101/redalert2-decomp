@@ -1054,3 +1054,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
   - DynamicVectorClass<char *> copies resolve to the 0x491xxx rows through catalog references, with no suppression needed.
   - 0x605DA0 stays in pop-35 and is bound by @ref.
 - OWNER DECISIONS (16:10Z): the int hash return type of ren1 is confirmed. The ColorScheme ctor's 4th parameter becomes PaletteClass * (assigned to Scout530 as a rename).
+
+## Scout531 (2026-11-02, closed; 620 B landed: Render() 0x7178E0 and Convert_Voxel_Colors 0x716FC0)
+- Detect 0x5BA2C0: 83.54 -> 99.24, shape 100 (w/dj/best_99_24.cpp; two register choices left). Assigned to Scout532 as a 75-minute pass.
+- Build_Schemes 0x604540: still 94.43. hsv's lifetime would have to overlap the first loop. OWNER DECISION (17:30Z): no non-zeroing HSVClass construction, because the zeroing ctor is evidenced by 0x605DA0. Parked.
