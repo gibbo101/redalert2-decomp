@@ -46,6 +46,9 @@ public:
     virtual bool Read_INI(CCINIClass &ini);                             // 0x006EE470 slot 25
     virtual bool Write_INI(CCINIClass &ini) const;                      // 0x006EE8C0 slot 26
 
+#ifdef RA2_TRIGGER_TYPE_REMOVE_ACTION
+    bool Remove_Action(TActionClass *action);                           // 0x006EEC00 (deletes it)
+#endif
     bool Remove_Event(TEventClass *event);                              // 0x006EEC60 (deletes it)
     static TriggerTypeClass *__fastcall From_Name(char const *name);    // 0x006EE350 (by ID or name)
     static int __fastcall Persistence_From_Name(char const *name);      // 0x006EE3C0

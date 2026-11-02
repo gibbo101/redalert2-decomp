@@ -5,7 +5,7 @@
 #include "shared/buffer.hpp"
 #pragma pack(push, 1)
 struct CompressedFileHeader {
-    unsigned char Type;
+    char Type;                      // +0x00 compression method (0 copy, 3 none, 4 LCW)
     unsigned char unknown_01;
     unsigned long DecodedBytes;
     short ExtraBytes;

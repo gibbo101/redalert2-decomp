@@ -6,13 +6,13 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 1185 | 256,622 | 1185 | 0x00401000–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 1188 | 256,772 | 1188 | 0x00401000–0x0078FB6B |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 51 | 74,018 | 51 | 0x00640460–0x00654100 |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 170 | 71,443 | 170 | 0x0049ED10–0x0056A9D0 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 181 | 64,989 | 181 | 0x00438A60–0x004D3450 |
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 210 | 52,933 | 207 | 0x0041B370–0x006D9750 |
-| (discovery: address-named) | 1420 | 43,225 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1417 | 43,155 | 17 | 0x004010A0–0x00797198 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 122 | 42,592 | 118 | 0x0041B470–0x004CDE10 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 110 | 37,716 | 110 | 0x005DE880–0x00601F70 |
@@ -107,10 +107,10 @@
 | [persistence](../src/recovered/persistence/) | 34 | 4,318 | 34 | 0x006580C0–0x00659140 |
 | [classes/RocketLocomotionClass](../src/recovered/classes/RocketLocomotionClass/) | 16 | 4,306 | 16 | 0x0063DAC0–0x0063ED40 |
 | [classes/WarheadTypeClass](../src/recovered/classes/WarheadTypeClass/) | 17 | 4,300 | 17 | 0x0040F270–0x00721090 |
+| [classes/TriggerTypeClass](../src/recovered/classes/TriggerTypeClass/) | 32 | 4,236 | 32 | 0x004D2E10–0x006EEF80 |
 | [classes/CDControlClass](../src/recovered/classes/CDControlClass/) | 24 | 4,213 | 24 | 0x0046EA40–0x0046FC80 |
 | [classes/ParticleClass](../src/recovered/classes/ParticleClass/) | 25 | 4,208 | 25 | 0x004D3210–0x0060A7E0 |
 | [classes/RadarEventClass](../src/recovered/classes/RadarEventClass/) | 27 | 4,184 | 27 | 0x0063B4F0–0x0063C790 |
-| [classes/TriggerTypeClass](../src/recovered/classes/TriggerTypeClass/) | 31 | 4,148 | 31 | 0x004D2E10–0x006EEF80 |
 | [classes/TEventClass](../src/recovered/classes/TEventClass/) | 19 | 4,142 | 19 | 0x006E5D60–0x006E6DA0 |
 | [classes/MapPreviewClass](../src/recovered/classes/MapPreviewClass/) | 9 | 4,081 | 9 | 0x0061D440–0x0061E930 |
 | [classes/VQAClass](../src/recovered/classes/VQAClass/) | 33 | 3,918 | 33 | 0x0071C5F0–0x0071D7B0 |
@@ -1247,6 +1247,7 @@
 | [classes/Surface](../src/recovered/classes/Surface/) | 7 | 89 | 7 | 0x00411270–0x00411350 |
 | [classes/UnknownMapGenerationCell](../src/recovered/classes/UnknownMapGenerationCell/) | 1 | 86 | 1 | 0x0056D6C0–0x0056D6C0 |
 | [classes/Rect](../src/recovered/classes/Rect/) | 2 | 84 | 2 | 0x0042BCD0–0x0047D000 |
+| [classes/SHAPipe](../src/recovered/classes/SHAPipe/) | 3 | 84 | 3 | 0x0046CB90–0x006753B0 |
 | [classes/WonlineStringDialogControl](../src/recovered/classes/WonlineStringDialogControl/) | 2 | 84 | 1 | 0x00765A60–0x00765AA0 |
 | [classes/BlitTransDarken_unsigned_short](../src/recovered/classes/BlitTransDarken_unsigned_short/) | 2 | 83 | 2 | 0x00486F80–0x0048CA50 |
 | [classes/MultiplayerDebugCommandClass](../src/recovered/classes/MultiplayerDebugCommandClass/) | 6 | 83 | 1 | 0x0051D780–0x0051DA40 |
@@ -1254,6 +1255,7 @@
 | [classes/BlitTransRemapDest_unsigned_char](../src/recovered/classes/BlitTransRemapDest_unsigned_char/) | 2 | 82 | 2 | 0x00486400–0x0048C830 |
 | [classes/TPoint2D](../src/recovered/classes/TPoint2D/) | 2 | 82 | 2 | 0x0042ADD0–0x0056AA40 |
 | [classes/DynamicVectorClass_ScoreAnimClass_ptr](../src/recovered/classes/DynamicVectorClass_ScoreAnimClass_ptr/) | 1 | 80 | 1 | 0x006684F0–0x006684F0 |
+| [classes/SHAStraw](../src/recovered/classes/SHAStraw/) | 2 | 79 | 2 | 0x006753C0–0x00675400 |
 | [classes/DynamicVectorClass_SubzoneConnectionHash](../src/recovered/classes/DynamicVectorClass_SubzoneConnectionHash/) | 2 | 78 | 2 | 0x0056ADB0–0x0056ADE0 |
 | [classes/BlitTransXlat_unsigned_short](../src/recovered/classes/BlitTransXlat_unsigned_short/) | 2 | 77 | 0 | 0x00486210–0x0048C790 |
 | [classes/PlanningEventTargets](../src/recovered/classes/PlanningEventTargets/) | 2 | 76 | 2 | 0x00617DF0–0x0061A2D0 |
@@ -1318,7 +1320,6 @@
 | [classes/Mouse](../src/recovered/classes/Mouse/) | 1 | 32 | 1 | 0x00773670–0x00773670 |
 | [classes/RLEBlitter](../src/recovered/classes/RLEBlitter/) | 1 | 32 | 0 | 0x0048C890–0x0048C890 |
 | [classes/RadarClass__RTacticalClass](../src/recovered/classes/RadarClass__RTacticalClass/) | 1 | 30 | 1 | 0x00634AB0–0x00634AB0 |
-| [classes/SHAPipe](../src/recovered/classes/SHAPipe/) | 1 | 30 | 1 | 0x0046CB90–0x0046CB90 |
 | [classes/SidebarClass__StripClass__SelectClass](../src/recovered/classes/SidebarClass__StripClass__SelectClass/) | 1 | 30 | 1 | 0x00682440–0x00682440 |
 | [classes/ZoneConnectionClass](../src/recovered/classes/ZoneConnectionClass/) | 1 | 30 | 1 | 0x0056B460–0x0056B460 |
 | [classes/SetInfantryTabCommandClass](../src/recovered/classes/SetInfantryTabCommandClass/) | 1 | 29 | 1 | 0x0051B1B0–0x0051B1B0 |
@@ -1369,7 +1370,7 @@
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 | [classes/WolUnknownIdentifier](../src/recovered/classes/WolUnknownIdentifier/) | 1 | 7 | 1 | 0x005B9E70–0x005B9E70 |
 
-1362 directories, 17015 regions. Generated by `tools/original_target/source_index.py`.
+1363 directories, 17020 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 

@@ -1,23 +1,24 @@
-// SHAPipe: a Pipe that feeds everything put to it into an SHAEngine (and
-// passes it on). Vtable 0x0079D994 (no RTTI locator). Layout from the inline
-// constructor in CCINIClass::Calculate_Message_Digest (0x0046C260):
-//   +0x00 Pipe (vtable, ChainTo, ChainFrom)
-//   +0x0C SHAEngine SHA
-// The destructor is implicit (only Pipe::~Pipe 0x0060EA60 is called).
-#ifndef SHARED_SHA_PIPE_HPP
-#define SHARED_SHA_PIPE_HPP
+// SHAPipe: a pipe that computes the SHA-1 digest of the data put through it
+// (Westwood's SHAPIPE.H).
+//
+// Base Pipe; slot 4 SHAPipe::Put 0x00675380 (vtable entry 0x007D9DA4).
+// Result 0x006753B0 (CCINIClass digests, 0x0046979A).
+#ifndef RA2_SHARED_SHA_PIPE_HPP
+#define RA2_SHARED_SHA_PIPE_HPP
 
 #include "shared/pipe.hpp"
 #include "shared/sha.hpp"
 
 class SHAPipe : public Pipe {
 public:
-    virtual int Put(void const *source, int length);
-    // Writes the 20-byte digest of everything put so far (0x006753B0).
-    int Result(void *result) const;
+    SHAPipe() {}
+    virtual int Put(void const *source, int slen); // 0x00675380
+
+    // Writes the digest of the data put so far; returns its size.
+    int Result(void *result) const;                // 0x006753B0
 
 protected:
-    SHAEngine SHA;      // +0x0C
+    SHAEngine SHA;          // +0x0C
 };
 
 #endif

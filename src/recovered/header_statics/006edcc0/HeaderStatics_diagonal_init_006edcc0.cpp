@@ -2,6 +2,9 @@
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x006EDCC0-0x006EDEA6); the other
 // drafts of this plan are emitted by these includes.
+// TriggerTypeClass::Remove_Action is declared for this unit only (other units
+// that include trigger_type.hpp are sensitive to the extra member).
+#define RA2_TRIGGER_TYPE_REMOVE_ACTION
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
