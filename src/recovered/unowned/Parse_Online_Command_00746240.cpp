@@ -15,7 +15,7 @@ extern char online_last_name_00b29cd8[];
 // @ref ?wol_source_file_007fd62c@@3PADA=007fd62c
 // @ref ?online_last_name_00b29cd8@@3PADA=00b29cd8
 // @ref ?unknown_scheme_index_4cefc0@@YAHXZ=004cefc0
-// @ref ?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z=005b4da0
+// @ref ?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z=005b4da0
 int __fastcall Parse_Online_Command_00746240(wchar_t const *text)
 {
     int handled=0;

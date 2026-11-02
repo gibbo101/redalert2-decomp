@@ -5,7 +5,7 @@
 #include "shared/string_table.hpp"
 #include "shared/session_state.hpp"
 // @ref ?Load_String@StringTable@@SIPBGPBDPAD0H@Z=006f9ec0
-// @ref ?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z=005b4da0
+// @ref ?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z=005b4da0
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
 // @ref ?unknown_player_a35db4@@3PAVHouseClass@@A=00a35db4
 // @ref ??_C@_0BJ@IHNF@Msg?3LightningStormActive?$AA@=007ddbe4

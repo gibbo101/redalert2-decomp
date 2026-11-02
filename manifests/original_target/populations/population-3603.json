@@ -4,8 +4,8 @@
     "id": "population-3603",
     "inventory_sha256": "7cbf9a2e086da7f206e4db1077d99ee0b157eb71a5c997e478e3961766ee6d0f",
     "gaps_sha256": "2c1da77a67bb6299ff4f92b99b3b842bb18e9c4030b545abafd226f173a768a1",
-    "historical_population_sha256": "e454a9c703307c7fe54c967bde3bc4e4ff964c575e181c404edd2a0d07e2bc26",
-    "historical_acceptance_sha256": "afe1b5af846361bb41d2ffcdf77099cf4b7f9399b50a5921cd6bf10b5e8d3e6e"
+    "historical_population_sha256": "1b86f5e2f4fa92f0bfe2c3e63528eacf4f0864a3fba2383a7015900a5268fcfb",
+    "historical_acceptance_sha256": "e9e1ecd01d5a6fb691447c47542794f1d78fdd0474f5edc02aabdeec6b17557f"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -142,7 +142,7 @@
     "__strnicmp": 7878672,
     "?Remove@UnknownList832470@@QAEXPAVObjectClass@@@Z": 5497712,
     "??BSystemTimerClass@@QBEJXZ": 6923312,
-    "?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z": 5983648,
+    "?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z": 5983648,
     "__DAT_00ab6ea8": 11234984,
     "__DAT_00ab6eb0": 11234992,
     "__DAT_00ac0168": 11272552,
@@ -369,9 +369,9 @@
     "__real@4@400c8000000000000000": 8055240,
     "?unknown_slot5@FreeForAll@@UAE_NPAVWideString@@@Z": 5927104,
     "?Get_Message@MessageListClass@@QAEPAGH@Z": 5984608,
-    "?Get_Label@MessageListClass@@QAEPAVUnknownMessageNode@@H@Z": 5984656,
+    "?Get_Label@MessageListClass@@QAEPAVTextLabelClass@@H@Z": 5984656,
     "?Set_Edit_Focus@MessageListClass@@QAEXXZ": 5985248,
-    "?Add_Edit@MessageListClass@@QAEPAVUnknownMessageNode@@HIPBGDH@Z": 5985296,
+    "?Add_Edit@MessageListClass@@QAEPAVTextLabelClass@@HIPBGDH@Z": 5985296,
     "?Remove_Edit@MessageListClass@@QAEXXZ": 5985664,
     "?Unknown_00738100@@YAXXZ": 7569664,
     "?Num_Messages@MessageListClass@@QAEHXZ": 5987376,
@@ -9525,7 +9525,12 @@
     "?AI@ParasiteClass@@UAEXXZ": 6319952,
     "?Print@MSFont@@UAEXPAVSurface@@PBGHHH@Z": 5981424,
     "??_ETextLabelClass@@": 7280624,
-    "??_GTextLabelClass@@": 7280624
+    "??_GTextLabelClass@@": 7280624,
+    "?Set_Text@TextLabelClass@@UAEXPBG@Z": 7280608,
+    "??_GTextLabelClass@@UAEPAXI@Z": 7280624,
+    "?unknown_draw_edit_text_600830@OwnerDraw@@YIXPAVSurface@@AAVRect@@PBGHPAVBitFontClass@@IPAHHHHH@Z": 6293552,
+    "?Draw_Me@TextLabelClass@@UAEHH@Z": 7280160,
+    "??_ETextLabelClass@@UAEPAXI@Z": 7280624
   },
   "regions": [
     {
@@ -9623,7 +9628,7 @@
           "resolved": 4293205107
         }
       ],
-      "source_sha256": "d53db02f4f1823a7df883e21761e935f1fb85c1c14a55b70b5387ee0999862a2",
+      "source_sha256": "aeef32b4625215366f683a63ce2868a64a2df3d0a4ffd031a753b82f1fa89c40",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Init_005b4c60.cpp",
       "population": "population-3603",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -9797,7 +9802,7 @@
           "resolved": 8624512
         }
       ],
-      "source_sha256": "abb5f1a99ebeb4065401363de07b44892c6a26d6304adf43d99cc71ce285e479",
+      "source_sha256": "aba052e75774499de71aefcea0effca28a6098a6ba598e9051c707eae5d52ff1",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Update_Messages_005b5610.cpp",
       "population": "population-3603",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
@@ -9823,7 +9828,7 @@
       "full_extent_bytes": 48,
       "full_extent_sha256": "f5dff20a2f42bc3da4ec3e61a8407d540e51fae3ad731c1de385a5eb17dbeda3",
       "relocations": [],
-      "source_sha256": "7e3feddad3ec7168e6446af8539be58e94cd17d86722d71103558b7ea4b754da",
+      "source_sha256": "e4053f0913d6a93bda28d42a2a3002d7ba859250b53aa534d8d7ce0a460bd2de",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Get_Message_005b5160.cpp",
       "population": "population-3603",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
@@ -9835,8 +9840,8 @@
     {
       "entry": 5984656,
       "method": "005b5190",
-      "symbol": "?Get_Label@MessageListClass@@QAEPAVUnknownMessageNode@@H@Z",
-      "symbol_prefix": "?Get_Label@MessageListClass@@QAEPAVUnknownMessageNode@@H@Z",
+      "symbol": "?Get_Label@MessageListClass@@QAEPAVTextLabelClass@@H@Z",
+      "symbol_prefix": "?Get_Label@MessageListClass@@QAEPAVTextLabelClass@@H@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -9849,7 +9854,7 @@
       "full_extent_bytes": 48,
       "full_extent_sha256": "3d21238acc0ca6d50d0eec776044c9b5dac76fc505b24e2a20bb5b7f477ba248",
       "relocations": [],
-      "source_sha256": "c8bec3df33da85c020b9fa9bb3cb5d8fe1de320003f9e1b7e8b772f3dc5aa43c",
+      "source_sha256": "f76eb3f53ace3ed3ead8483e84cad765ad8451747c4105ab2fe55b7ceee13677",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Get_Label_005b5190.cpp",
       "population": "population-3603",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
@@ -9875,7 +9880,7 @@
       "full_extent_bytes": 16,
       "full_extent_sha256": "e21b2e73580aaa3870ce10e59b70a7734940c1764e8b33ecffd85c48f42e76fb",
       "relocations": [],
-      "source_sha256": "218920137834e4198e870b86441e5ad2ef0010b4a9d1321bfa48edda5c71493f",
+      "source_sha256": "806531b355441ca1c993ccc820d810a1e3c1ded64299722b20ffc048b379adbf",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Set_Edit_Focus_005b53e0.cpp",
       "population": "population-3603",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -9887,8 +9892,8 @@
     {
       "entry": 5985296,
       "method": "005b5410",
-      "symbol": "?Add_Edit@MessageListClass@@QAEPAVUnknownMessageNode@@HIPBGDH@Z",
-      "symbol_prefix": "?Add_Edit@MessageListClass@@QAEPAVUnknownMessageNode@@HIPBGDH@Z",
+      "symbol": "?Add_Edit@MessageListClass@@QAEPAVTextLabelClass@@HIPBGDH@Z",
+      "symbol_prefix": "?Add_Edit@MessageListClass@@QAEPAVTextLabelClass@@HIPBGDH@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -9942,7 +9947,7 @@
           "resolved": 1294512
         }
       ],
-      "source_sha256": "ff94f219580351bbe06ce281660ff5e1d46a0c2980f52ceec1560fda38cba73d",
+      "source_sha256": "23eb6a24637d2fe5846174d94a7c4f637ce5a4e7dec0f4f47923143a9c1c8de6",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Add_Edit_005b5410.cpp",
       "population": "population-3603",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
@@ -9977,7 +9982,7 @@
           "resolved": 1583968
         }
       ],
-      "source_sha256": "d7cf2fc350a4edf1e6e73f5e42bd88c066cfaa03a10046b440599cb15029dd43",
+      "source_sha256": "e40e5fa83f1a95fdd6edb5d970c1f7cf7de9255fb5ec44ab2d5dc585597591a1",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Remove_Edit_005b5580.cpp",
       "population": "population-3603",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
@@ -10003,7 +10008,7 @@
       "full_extent_bytes": 48,
       "full_extent_sha256": "91b18a89abaa86cd0b98a82347fe1537bfba24f11b822451be229c43900f0af1",
       "relocations": [],
-      "source_sha256": "cf5806322f0768b8edc3f59d4356efffdcbbba7c1d32e2117cfafcd050f1e7a2",
+      "source_sha256": "a08c7d56a3a5c2c126f8b7948e3919ff211550ffc6750ef578a560a7d5977a32",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Num_Messages_005b5c30.cpp",
       "population": "population-3603",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
@@ -10046,7 +10051,7 @@
           "resolved": 4293201012
         }
       ],
-      "source_sha256": "da9bc6d31c8091a0dc497157d7d467623b7eac3672a20ead1a3b5bf0089d6285",
+      "source_sha256": "55f86e3ae72152027cd6b43703abfa4255ff68f11410f4f664abcca900959505",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Set_Width_005b5c60.cpp",
       "population": "population-3603",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -10180,7 +10185,7 @@
           "resolved": 8625256
         }
       ],
-      "source_sha256": "8742de3ec07210dcc415e2d9a8142f228628b88c59e0ba60a89d83da66071594",
+      "source_sha256": "c444ec52a3f488111ced7a412fe628458f58612e30323fed79492ae87c7c09a8",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Draw_005b5b30.cpp",
       "population": "population-3603",
       "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
@@ -10279,7 +10284,7 @@
           "resolved": 1582674
         }
       ],
-      "source_sha256": "605215242862466526cff13970a17a1ee86a4742e484a073df4f54f8b8b62b6f",
+      "source_sha256": "328faadcad8d36b5f501e54388a6df2f07a8afa67aa3fb34036035a6c52d639d",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Input_005b56f0.cpp",
       "population": "population-3603",
       "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
@@ -16015,7 +16020,7 @@
           "resolved": 8624512
         }
       ],
-      "source_sha256": "18d80881a0ee59cfd60019251f0510246599c307dcdf6d152feeebef0d896950",
+      "source_sha256": "537779e461a608a08cdad81c5e3740d10b340ba3b2b58c16cb18c7b39ecd1360",
       "source": "src/recovered/classes/MessageListClass/MessageListClass_Concat_Message_005b51c0.cpp",
       "population": "population-3603",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",

@@ -2,6 +2,7 @@
 //     bool unknown_flag, int first, int last, int width) -- 0x005B4C60
 // Deletes the messages, resets the list and stores the geometry (message and character limits clamped to 14
 // and 112), the second position (or the first when either is -1) and the selection range.
+#include "shared/text_label.hpp"
 #include "shared/message_list.hpp"
 // @ref ??_C@_0CD@CKH@MessageListClass?3?3Init?$CIWidth?3?5?$CFd@=007e5de8
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
@@ -11,9 +12,9 @@ void MessageListClass::Init(int x, int y, int max_messages, int max_chars, int u
 {
     TextWidth = width - 8;
     Debug_Printf("MessageListClass::Init(Width: %d)\n", width - 8);
-    UnknownMessageNode *node = First;
+    TextLabelClass *node = First;
     while (node) {
-        First = node->Remove();
+        First = (TextLabelClass *)node->Remove();
         if (node) {
             delete node;
         }

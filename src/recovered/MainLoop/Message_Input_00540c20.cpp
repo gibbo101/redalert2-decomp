@@ -15,6 +15,7 @@
 #include "shared/house_type.hpp"
 #include "shared/rules.hpp"
 #include "shared/gadget.hpp"
+#include "shared/text_label.hpp"
 #include "shared/ipx_manager.hpp"
 #include "shared/owner_talk.hpp"
 #include "shared/null_modem.hpp"
@@ -100,10 +101,10 @@ void __fastcall Message_Input(int &input)
             }
             input = 0;
             int color = unknown_session_a3d298.Unknown_006715D0(unknown_a3d3b4);
-            UnknownMessageNode *label = unknown_session_a3d298.Messages.Add_Edit(color, 0x4046, txt, 0, beacon ? 10000 : -1);
+            TextLabelClass *label = unknown_session_a3d298.Messages.Add_Edit(color, 0x4046, txt, 0, beacon ? 10000 : -1);
             if (beacon) {
                 if (label) {
-                    label->unknown_40 = true;
+                    label->IsHidden = true;
                 }
                 unknown_session_a3d298.Messages.unknown_18 = false;
                 wcscpy(name, Unknown_006FA180("_"));

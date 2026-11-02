@@ -8,6 +8,7 @@
 // @ref ?Font_For_Style@@YIPAVBitFontClass@@H@Z=00497a50
 // @ref ?String_Pixel_Width@BitFontClass@@QBEHPB_WH@Z=00431690
 // @ref ?Unknown_00738100@@YAXXZ=00738100
+#include "shared/text_label.hpp"
 #include "shared/message_list.hpp"
 #include "shared/text_print.hpp"
 #include "shared/keyboard.hpp"

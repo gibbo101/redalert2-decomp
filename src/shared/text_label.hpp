@@ -21,7 +21,7 @@ public:
     virtual int Draw_Me(int forced = false);                        // slot 27 0x006F1620
     virtual void Set_Text(wchar_t const *text) { Text = text; }     // slot 33 (kept copy 0x006F17E0)
 
-    unsigned UserData1;     // +0x24
+    int UserData1;          // +0x24 (signed: MessageListClass::Update_Messages 0x005B5610 compares it with jg)
     unsigned UserData2;     // +0x28
     unsigned Style;         // +0x2C
     wchar_t const *Text;    // +0x30

@@ -23,7 +23,7 @@
 // @ref ?Delete_Connection@NullModemClass@@QAEHXZ=005d0360
 // @ref ?unknown_session_a3d55c@@3HA=00a3d55c
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
-// @ref ?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z=005b4da0
+// @ref ?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z=005b4da0
 // @ref ?Flag_To_Redraw@GScreenClass@@UAEXH@Z=004e09a0
 // @ref ?unknown_func_4f4070@HouseClass@@QAEXXZ=004f4070
 // @ref ?Load_String@StringTable@@SIPBGPBDPAD0H@Z=006f9ec0

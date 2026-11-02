@@ -4,6 +4,7 @@
 // @ref ?Font_For_Style@@YIPAVBitFontClass@@H@Z=00497a50
 // @ref ?String_Pixel_Width@BitFontClass@@QBEHPB_WH@Z=00431690
 // @ref ?Fancy_Text_Printf@@YA?AVPoint2D@@PB_WPAVSurface@@PBVRect@@PAV1@PAVColorScheme@@IIZZ=00497b40
+#include "shared/text_label.hpp"
 #include "shared/message_list.hpp"
 #include "shared/text_print.hpp"
 #include "shared/color_scheme.hpp"
@@ -19,7 +20,7 @@ void MessageListClass::Draw()
         WWMouse->Hide_Mouse();
         EditLabel->Draw_Me(true);
         BitFontClass *font = Font_For_Style(EditLabel->Style);
-        int width = font->String_Pixel_Width((wchar_t const *)EditLabel->Text, 0);
+        int width = font->String_Pixel_Width(EditLabel->Text, 0);
         if (EditCursor != 0 && EditCurPos - EditInitPos < MaxChars - 1 && EditLabel->Has_Focus()) {
             cursor[0] = EditCursor;
             Point2D at(EditLabel->X + width, EditLabel->Y);

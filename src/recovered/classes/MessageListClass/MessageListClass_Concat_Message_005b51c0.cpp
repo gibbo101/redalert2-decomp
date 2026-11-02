@@ -8,6 +8,7 @@
 // @ref _wcscat=0078365f
 // @ref ?Trim_Message@MessageListClass@@QAEHPAG0HHH@Z=005b5cb0
 // @ref ?TickCount@@3V?$TTimerClass@VSystemTimerClass@@@@A=00839980
+#include "shared/text_label.hpp"
 #include "shared/message_list.hpp"
 #include "shared/message_gadget_layout.hpp"
 #include "shared/text_print.hpp"
@@ -21,25 +22,25 @@ extern "C" unsigned short *__cdecl wcscat(unsigned short *dest, unsigned short c
 int MessageListClass::Concat_Message(unsigned short const *prefix, int identifier, unsigned short const *text, int delay)
 {
     if (prefix == 0 || text == 0 || !unknown_18) return 0;
-    UnknownMessageNode *node = 0;
+    TextLabelClass *node = 0;
     int found = 0;
     if (First) {
         node = First;
         while (node) {
-            if (node->Identifier == identifier && memcmp(node->Text, prefix, wcslen(prefix) * 2) == 0) {
+            if (node->UserData2 == identifier && memcmp(node->Text, prefix, wcslen(prefix) * 2) == 0) {
                 found = 1;
                 break;
             }
-            node = node->Next();
+            node = (TextLabelClass *)node->Get_Next();
         }
     }
     if (!found) return 0;
-    unsigned short *tail = node->Text + wcslen(prefix) + 1;
+    unsigned short *tail = (unsigned short *)node->Text + wcslen(prefix) + 1;
     unsigned int max = MaxChars;
     if (wcslen(tail) + wcslen(text) < max) {
         unsigned short *buffer = (unsigned short *)operator new(max * 2 + 2);
         BitFontClass *font = Font_For_Style(node->Style);
-        int extra = font->String_Pixel_Width((wchar_t const *)node->Text, 0) - font->String_Pixel_Width((wchar_t const *)tail, 0);
+        int extra = font->String_Pixel_Width(node->Text, 0) - font->String_Pixel_Width((wchar_t const *)tail, 0);
         wcscpy(buffer, tail);
         wcscat(buffer, text);
         while (font->String_Pixel_Width((wchar_t const *)buffer, 0) + extra >= TextWidth) {
@@ -63,9 +64,9 @@ int MessageListClass::Concat_Message(unsigned short const *prefix, int identifie
         wcscat(tail, text);
     }
     if (delay == -1) {
-        node->Expires = 0;
+        node->UserData1 = 0;
         return 1;
     }
-    node->Expires = TickCount.Time() + delay;
+    node->UserData1 = TickCount.Time() + delay;
     return 1;
 }

@@ -5,7 +5,7 @@
 #include "shared/subtitle.hpp"
 #include "shared/session_state.hpp"
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
-// @ref ?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z=005b4da0
+// @ref ?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z=005b4da0
 
 void __fastcall Unknown_Movie_Message_005a08f0(int movie)
 {

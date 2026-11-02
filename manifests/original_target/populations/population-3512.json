@@ -4,8 +4,8 @@
     "id": "population-3512",
     "inventory_sha256": "e9c00235705f9e2a7fb6dd1c39aa4da5cdf29f212674c1358c4460dc8d795426",
     "gaps_sha256": "5b41f040fa1dd8e08b15bb52d3752f2d77d2fd360eb4942204fe2e070790c285",
-    "historical_population_sha256": "d6101b5d865c40ad4c0a585ebfc42d43a3335e1bbc87312995deccfd201de734",
-    "historical_acceptance_sha256": "6bc15278cf9a3d8bdb15e8897608d8db67d04c0230c97414c492bfcd9f5e7e8b"
+    "historical_population_sha256": "01e7bc638f4d0ab39ad57829689303b03cf00bef6712051db005c6fb916dbf15",
+    "historical_acceptance_sha256": "61b4a7cca4cae831bf1d0f6abe25357bf7a03bcfff804ccc499b4779eec30077"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5798,9 +5798,9 @@
     "?unknown_slot5@FreeForAll@@UAE_NPAVWideString@@@Z": 5927104,
     "?unknown_slot27@MultiplayerSiege@@UAE_N_N@Z": 5945200,
     "?Get_Message@MessageListClass@@QAEPAGH@Z": 5984608,
-    "?Get_Label@MessageListClass@@QAEPAVUnknownMessageNode@@H@Z": 5984656,
+    "?Get_Label@MessageListClass@@QAEPAVTextLabelClass@@H@Z": 5984656,
     "?Set_Edit_Focus@MessageListClass@@QAEXXZ": 5985248,
-    "?Add_Edit@MessageListClass@@QAEPAVUnknownMessageNode@@HIPBGDH@Z": 5985296,
+    "?Add_Edit@MessageListClass@@QAEPAVTextLabelClass@@HIPBGDH@Z": 5985296,
     "?Remove_Edit@MessageListClass@@QAEXXZ": 5985664,
     "?Unknown_00738100@@YAXXZ": 7569664,
     "?Num_Messages@MessageListClass@@QAEHXZ": 5987376,
@@ -5831,7 +5831,7 @@
     "?unknown_a72c68@@3HA": 10955880,
     "?Get_Input@GScreenClass@@UAEXAAH00@Z": 5114320,
     "?Concat_Message@MessageListClass@@QAEHPBGH0H@Z": 5984704,
-    "?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z": 5983648,
+    "?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z": 5983648,
     "?unknown_last_message_a3f122@@3PAGA": 10744098,
     "?Propose_Kick_Player@@YIXPAUHWND__@@H@Z": 6451168,
     "?Unknown_00627190@@YIXPAUUnknownGlobalPacket@@PAVIPXAddressClass@@@Z": 6451600,

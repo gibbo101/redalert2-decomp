@@ -4,8 +4,8 @@
     "id": "population-3311",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "f2d55d4a6175c4638ad68d0871e83d42057b91a3b5ad1a3c3882b2c252021bc8",
-    "historical_acceptance_sha256": "6912751c4430d89e8576d1f1108bfe40f794ba5b898e0d04753fc51c5c82f3ef"
+    "historical_population_sha256": "b97d41f608e198d1e1740355361766defef851c21f870abf44980c6ad180e11b",
+    "historical_acceptance_sha256": "38e536571bb59cb72c8b893888969d8c6320f3458fc01e604a3b8eaa711dd879"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5841,9 +5841,9 @@
     "??0?$VectorClass@PAVCoopCampaignClass@@@@QAE@IPBQAVCoopCampaignClass@@@Z": 5926432,
     "??_7?$DynamicVectorClass@PAVCoopCampaignClass@@@@6B@": 8022084,
     "?Get_Message@MessageListClass@@QAEPAGH@Z": 5984608,
-    "?Get_Label@MessageListClass@@QAEPAVUnknownMessageNode@@H@Z": 5984656,
+    "?Get_Label@MessageListClass@@QAEPAVTextLabelClass@@H@Z": 5984656,
     "?Set_Edit_Focus@MessageListClass@@QAEXXZ": 5985248,
-    "?Add_Edit@MessageListClass@@QAEPAVUnknownMessageNode@@HIPBGDH@Z": 5985296,
+    "?Add_Edit@MessageListClass@@QAEPAVTextLabelClass@@HIPBGDH@Z": 5985296,
     "?Remove_Edit@MessageListClass@@QAEXXZ": 5985664,
     "?Unknown_00738100@@YAXXZ": 7569664,
     "?Num_Messages@MessageListClass@@QAEHXZ": 5987376,
@@ -5880,7 +5880,7 @@
     "?Unknown_0063FA00@OwnerTalkClass@@QAEPAVIPXAddressClass@@PAD@Z": 6552064,
     "?Unknown_0063FAF0@OwnerTalkClass@@QAEGPAD@Z": 6552304,
     "?Concat_Message@MessageListClass@@QAEHPBGH0H@Z": 5984704,
-    "?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z": 5983648,
+    "?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z": 5983648,
     "?Unknown_0066EAA0@UnknownSessionState@@QAEXXZ": 6744736,
     "?Read_Scenario_Descriptions@UnknownSessionState@@QAEXXZ": 6753360,
     "?Read@UnknownGameOptions@@QAEXAAVCCINIClass@@PBDHH@Z": 6746608,

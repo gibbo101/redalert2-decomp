@@ -23,7 +23,7 @@ extern wchar_t wol_reply_space_007d64f4[];
 // @ref __wcsicmp=00796318
 // @ref ?unknown_scheme_index_4cefc0@@YAHXZ=004cefc0
 // @ref __real@8@4008e100000000000000=0079b608
-// @ref ?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z=005b4da0
+// @ref ?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z=005b4da0
 int __fastcall Reply_To_Last_Pager_007466c0(wchar_t const *text)
 {
     int result=0;

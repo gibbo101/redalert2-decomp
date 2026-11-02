@@ -39,7 +39,7 @@ extern bool unknown_a402d8;
 // @ref ??_C@_0O@JGPN@TXT_LEFT_GAME?$AA@=007e6930
 // @ref ??_C@_0BC@LAEF@D?3?2Ra2?2NetDlg?4CPP?$AA@=007e6940
 // @ref ??_C@_0CK@MIFM@Destroying?5connection?5for?5house?5@=007e6968
-// @ref ?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z=005b4da0
+// @ref ?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z=005b4da0
 // @ref ?Flag_To_Redraw@GScreenClass@@UAEXH@Z=004e09a0
 // @ref ?Load_String@StringTable@@SIPBGPBDPAD0H@Z=006f9ec0
 // @ref _swprintf=00783764

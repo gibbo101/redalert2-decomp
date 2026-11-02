@@ -43,7 +43,7 @@
 // @ref _unknown_geometry_k=00a518a8
 // @ref ?Flag_To_Redraw@GScreenClass@@UAEXH@Z=004e09a0
 // @ref ?Load_String@StringTable@@SIPBGPBDPAD0H@Z=006f9ec0
-// @ref ?Add_Message@MessageListClass@@QAEPAVUnknownMessageNode@@PBGH0HIH_N@Z=005b4da0
+// @ref ?Add_Message@MessageListClass@@QAEPAVTextLabelClass@@PBGH0HIH_N@Z=005b4da0
 // @ref ?unknown_session_a3d298@@3UUnknownSessionState@@A=00a3d298
 // @ref ?unknown_player_a35db4@@3PAVHouseClass@@A=00a35db4
 // @ref ??_C@_0P@CMOA@D?3?2Ra2?2Ion?4cpp?$AA@=007ddb84
