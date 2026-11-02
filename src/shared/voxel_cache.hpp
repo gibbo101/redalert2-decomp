@@ -3,8 +3,7 @@
 #define RA2_SHARED_VOXEL_CACHE_HPP
 #include "shared/foot.hpp"
 #include "shared/voxel_draw_system.hpp"
-// SurfaceRegion fields follow native six-word return/copy observations.
-struct SurfaceRegion { Point2D Point; Rect Bounds; };
+#include "shared/surface_region.hpp"
 #include "shared/static_buffer.hpp"
 extern void *unknown_cache_empty_b2b624;
 #include "shared/ini_class.hpp"

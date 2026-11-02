@@ -1,28 +1,13 @@
-// 0x0069a1c0: function not yet identified
-//
-// Body: 15 bytes (frozen inventory bound).
-// Referenced from 1 site (unconditional call).
-// Ghidra prototype: void __fastcall FUN_0069a1c0(int param_1)
-// Callees with accepted source:
-//   FUN_00781d3b -> src/recovered/00781d3b.cpp
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
+// StaticBufferClass::~StaticBufferClass() (0x0069A1C0): frees the storage.
+#define STATIC_BUFFER_DECLARE_LIFETIME
+#include "shared/rect.hpp"
+#include "shared/surface_region.hpp"
+#include "shared/static_buffer.hpp"
+#include "shared/crt_memory.hpp"
 
-namespace seed_0069a1c0 {
-
-extern void  FUN_00781d3b(undefined4 param_1);
-
-void __fastcall FUN_0069a1c0(int param_1)
+StaticBufferClass::~StaticBufferClass()
 {
-    if (*(int *)(param_1 + 4) != 0) {
-        FUN_00781d3b((undefined4)(*(int *)(param_1 + 4)));
+    if (Buffer != 0) {
+        delete [] Buffer;
     }
-    return;
 }
-
-}  // namespace seed_0069a1c0

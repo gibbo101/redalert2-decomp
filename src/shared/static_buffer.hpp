@@ -5,6 +5,7 @@
 
 class Surface;
 struct SurfaceRegion;
+class Rect;
 
 class StaticBufferClass {
 public:
@@ -22,10 +23,26 @@ public:
     StaticBufferClass(int size);            // 0x0069A1A0
     ~StaticBufferClass();                   // 0x0069A1C0
 #endif
+    // Appends the region's pixels RLE-compressed line by line behind an Entry header; null when the
+    // buffer is full (0x0069A1D0).
     Entry *Add(Surface &surface, SurfaceRegion const &region);
-    unsigned char *Buffer;
-    int Capacity;
-    unsigned char *Current;
+#ifdef STATIC_BUFFER_DECLARE_LIFETIME
+    // The same for a rectangle drawn at point (0x0069A300).
+    Entry *Add(Surface &surface, Rect const &rect, int x, int y);
+    // Reserves size bytes at Current (null when they do not fit).
+    unsigned char *Reserve(int size)
+    {
+        if (Current + size > Buffer + Capacity) {
+            return 0;
+        }
+        unsigned char *pointer = Current;
+        Current += size;
+        return pointer;
+    }
+#endif
+    int Capacity;               // +0x00 (the constructor stores the size first)
+    unsigned char *Buffer;      // +0x04
+    unsigned char *Current;     // +0x08
 };
 extern StaticBufferClass unknown_voxel_static_buffer_839aa0;
 

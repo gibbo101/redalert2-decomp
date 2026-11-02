@@ -251,41 +251,6 @@
       "source_order": 32035
     },
     {
-      "entry": 6922656,
-      "method": "0069a1a0",
-      "symbol": "??0UnknownBuffer_0069a1a0@@QAE@H@Z",
-      "symbol_prefix": "??0UnknownBuffer_0069a1a0@@QAE@H@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 30,
-      "body_sha256": "3d7991a92c05b1e8d7fd433fb35e8b1e404b43f1e3baba4eeb9e003b3e734115",
-      "padding_bytes": 2,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "4709530cc268028b598ae8a84202a31a36b91c31a1818e6ad75fd85f9c70c395",
-      "relocations": [
-        {
-          "offset": 11,
-          "kind": 20,
-          "symbol": "??2@YAPAXI@Z",
-          "target": 7872535,
-          "addend": 0,
-          "resolved": 949864
-        }
-      ],
-      "source_sha256": "6b5c01bd652bb82f4d9d4989a0e943b6bcf3ad613ae34901c15fbe9131ea2324",
-      "source": "src/recovered/unowned/unknown_create_buffer_0069a1a0.cpp",
-      "population": "population-974",
-      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_create_buffer_0069a1a0",
-      "source_order": 32036
-    },
-    {
       "entry": 7285088,
       "method": "006f2960",
       "symbol": "?unknown_load_art_7f8708@@YIXH@Z",

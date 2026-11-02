@@ -1,3 +1,4 @@
-
-class Leaf_69a180 { public: void get(); };
-void Leaf_69a180::get() { unsigned int ecx = (unsigned int)this; unsigned int eax; unsigned int edx; eax = 0; *(unsigned int*)(0xabd538) = eax; *(unsigned int*)(0xabd53c) = eax; *(unsigned int*)(0xabd540) = eax; *(unsigned int*)(0xabd544) = eax; }
+// Header-static dynamic initializer of the StaticBufferClass unit 0x0069A180-0x0069A42F: the shape_file.hpp
+// empty rect (0x00ABD538).
+#include "shared/shape_file.hpp"
+// @ref _unknown_empty_rect=00abd538

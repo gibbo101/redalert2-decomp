@@ -1045,40 +1045,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 6922688,
-      "method": "0069a1c0",
-      "symbol": "?FUN_0069a1c0@seed_0069a1c0@@YIXH@Z",
-      "symbol_prefix": "?FUN_0069a1c0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 15,
-      "body_sha256": "5cd4e1179781609736bdcff183003b457353acca214c7664257ba28602d2e4f6",
-      "padding_bytes": 1,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "52ac2a0f13d97de319dd6e9afe55406710fea6e9e6c3b8bb5d20c6ccf21fe578",
-      "relocations": [
-        {
-          "offset": 9,
-          "kind": 20,
-          "symbol": "?FUN_00781d3b@seed_0069a1c0@@YAXI@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 949102
-        }
-      ],
-      "source_sha256": "cbd33dbb5e76037eee843d253a349df1a76689dd71fcc8b904d687172544a600",
-      "source": "src/recovered/0069a1c0.cpp",
-      "source_order": 7906,
-      "population": "population-66",
-      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 6926576,
       "method": "0069b0f0",
       "symbol": "?FUN_0069b0f0@seed_0069b0f0@@YIXH@Z",

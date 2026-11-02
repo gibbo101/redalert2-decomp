@@ -1,20 +1,15 @@
-// UnknownBuffer_0069A1A0::UnknownBuffer_0069A1A0(int size) -- 0x0069A1A0
-// Purpose: a buffer of `size` bytes: records the size and starts both the
-// read and the write position at the new storage.
-// Assumptions: owner and field names are hypotheses.
-// @ref ??2@YAPAXI@Z=00782017
+// StaticBufferClass::StaticBufferClass(int size) (0x0069A1A0; was UnknownBuffer_0069a1a0): size bytes of storage,
+// Buffer and Current at their start.
+#define STATIC_BUFFER_DECLARE_LIFETIME
+#include "shared/rect.hpp"
+#include "shared/surface_region.hpp"
+#include "shared/static_buffer.hpp"
+#include "shared/crt_memory.hpp"
 
-struct UnknownBuffer_0069a1a0 {
-    UnknownBuffer_0069a1a0(int size);
-    int Size;                               // +0x00
-    char *Head;                             // +0x04
-    char *Tail;                             // +0x08
-};
-
-UnknownBuffer_0069a1a0::UnknownBuffer_0069a1a0(int size)
+StaticBufferClass::StaticBufferClass(int size)
 {
-    Size = size;
-    char *data = new char[size];
-    Head = data;
-    Tail = data;
+    Capacity = size;
+    unsigned char *data = new unsigned char[size];
+    Buffer = data;
+    Current = data;
 }
