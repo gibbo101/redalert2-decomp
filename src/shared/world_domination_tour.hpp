@@ -60,6 +60,10 @@ public:
     bool operator==(Conflict const &other) const;                   // 0x007273A0
     bool Is_Valid() const;                                          // 0x007273E0
     int unknown_7273f0() const;                                     // 0x007273F0 (the territory's +0x08, 0 without one)
+#ifdef WDT_CONFLICT_DECLARE_IS_TERRITORY
+    // Inline comparison used by Selection at 0x0072ED80; name hypothesis.
+    bool Is_Territory(int index) const { return unknown_7273f0() == index; }
+#endif
     static void __fastcall Init_Options();                          // 0x00727480
     static void Clear_Options();                                    // 0x00727920
     WideString Describe_Options() const;                            // 0x00727960
