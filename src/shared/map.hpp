@@ -235,6 +235,9 @@ public:
     CellClass *Get_Local_Grid_Cell(Cell const &cell, int spacing, bool unbiased);   // 0x0055AA80 (TibSun name)
     // The index of a cell's 4 x 4 block in a 130 x 130 grid with a one-block
     // border, the layout of HouseClass +0x56D0 (0x0054E370; FootClass slot 93).
+    #ifdef RA2_MAP_REGION_THREAT
+    int Region_Threat(HouseClass *house, int level, int from_subzone, int to_subzone);
+    #endif
     int Unknown_0054E370(Cell const &cell);
     // A reachable cell near `cell` for a speed type and zone (0x005502E0;
     // hypothesis: Westwood's Nearby_Location; FootClass 0x004CCA40). `size` is
