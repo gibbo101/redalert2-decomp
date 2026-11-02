@@ -487,6 +487,14 @@ struct UnknownVersionObject {
     unsigned long Unknown_007131c0();       // 0x007131C0 the maximum version (0x20000)
     // The internal version text (0x00712ED0; the sync logs print it).
     char const *Internal_Version_Name_00712ed0();
+#ifdef RA2_VERSION_CLASS_MEMBERS
+    // The version unit's own members (Tiberian Sun's version.cpp; declared only there, set by the
+    // unit's first source: new lobby.hpp declarations renumber 0x0073FEE0's labels).
+    unsigned long Version_Number();         // 0x00712B50 (Major << 16 | Minor)
+    unsigned short Major_Version();         // 0x00712D50 (1)
+    unsigned short Minor_Version();         // 0x00712E10 (6)
+    void Read_Text_String();                // 0x00713090 (VERSION.TXT into VersionText)
+#endif
 
     unsigned long Version;                  // +0x04
     unsigned short MajorVer;                // +0x08
@@ -495,10 +503,17 @@ struct UnknownVersionObject {
     char VersionText[16];                   // +0x2A
     unsigned long MinClipVer;               // +0x3C
     unsigned long MaxClipVer;               // +0x40
-    // +0x44 flag bits 0-3 (the constructor clears them; Tiberian Sun's VersionInit, MajorInit,
-    // MinorInit and TextInit). A word, not 1-bit members: declaring the bit-fields here changes
-    // the code of Pick_Lobby 0x00744090 and Refresh_Wonline_Players 0x0073FEE0 (type-count rule).
+#ifdef RA2_VERSION_CLASS_MEMBERS
+    unsigned VersionInit : 1;               // +0x44 bit 0
+    unsigned MajorInit : 1;                 // bit 1
+    unsigned MinorInit : 1;                 // bit 2
+    unsigned TextInit : 1;                  // bit 3
+#else
+    // +0x44 flag bits 0-3 (Tiberian Sun's VersionInit, MajorInit, MinorInit and TextInit; the
+    // version unit declares them as bit-fields). A word elsewhere: the bit-fields change the code
+    // of Pick_Lobby 0x00744090 and Refresh_Wonline_Players 0x0073FEE0 (label renumbering).
     unsigned long Flags;
+#endif
 };
 extern UnknownVersionObject version_object_00a40c88;
 // The version text (0x007131D0; the sync logs print it).

@@ -3355,31 +3355,6 @@
       "source_quality_family": "ghidra-seed-adjusted"
     },
     {
-      "entry": 7418224,
-      "method": "00713170",
-      "symbol": "?FUN_00713170@Owner_00713170@seed_00713170@@QAEIII@Z",
-      "symbol_prefix": "?FUN_00713170@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 61,
-      "body_sha256": "efcfed9d7b5251a370004d6052ee423b50b74f1d146ea1d52b16841af10be674",
-      "padding_bytes": 3,
-      "full_extent_bytes": 64,
-      "full_extent_sha256": "8cfcc25a005943d5e1f960bcb212c1c3dfcacbf6eec8030cdd6d9906900dd8e6",
-      "relocations": [],
-      "source_sha256": "bb60cea965ca2d0982edec443f9a7a8793f3343e2a6149c77df3dfa1a23fd417",
-      "source": "src/recovered/00713170.cpp",
-      "source_order": 11059,
-      "population": "population-123",
-      "padding_sha256": "e65ca7c06ae3e9bacd16f6d87026d2fd51447f87f8771676568af93c6313d707",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-adjusted"
-    },
-    {
       "entry": 7431824,
       "method": "00716690",
       "symbol": "?FUN_00716690@seed_00716690@@YI_NH@Z",
