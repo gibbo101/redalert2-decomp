@@ -17,6 +17,7 @@
 // Unrecovered members stay unknown_.
 #ifndef RA2_SHARED_MAP_HPP
 #define RA2_SHARED_MAP_HPP
+#include "shared/dir_type.hpp"
 #include "shared/zone_table.hpp"
 #include "shared/unknown_globals.hpp"
 #ifdef RA2_SHARED_MAP_VIEW_HPP
@@ -160,6 +161,8 @@ public:
     void Unknown_0056A480(Cell const &cell, HouseClass *house, BuildingTypeClass *type);
     void Unknown_0056A660(Cell const &cell, HouseClass *house, BuildingTypeClass *type);
 
+    void Repair_All_High_Bridges_0054c7a0(); // original complete1081-byte body
+    void Repair_High_Bridge_Span_0054b560(CellClass *cell, FacingType direction, Rect *dirty); // original thiscall RET12
     MapClass();                                                                 // 0x00547960
     MapClass(NoInitClass const &noinit);                                        // 0x00547A60
     // A cell test with a flag (0x0055A660; radar 0x00630340 passes true).
