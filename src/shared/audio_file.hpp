@@ -4,6 +4,7 @@
 #define RA2_SHARED_AUDIO_FILE_HPP
 
 #include "shared/audio.hpp"
+#include "shared/win32_api.hpp"
 
 extern CRITICAL_SECTION unknown_audio_file_lock_a52280;     // 0x00A52280
 extern "C" int DAT_00a522ac;                    // 0x00A522AC the file's mode (1: read at close, 2: opened to read)
@@ -41,6 +42,28 @@ extern "C" int volatile DAT_00a521e4;           // 0x00A521E4
 extern "C" __int64 volatile DAT_00a521f0;       // 0x00A521F0
 extern "C" int volatile DAT_00a521f8;           // 0x00A521F8
 extern "C" AudioTimeSpan DAT_00a52200;          // 0x00A52200
+// The recording's records (Westwood's message recorder): a header, then a cursor position (Type 1) or a
+// window message whose hwnd is an index into the id block (Type 0). Names are hypotheses.
+struct AudioFileRecordHeader {
+    int Frame;                      // +0x00 the game frame it was recorded at
+    unsigned int Count;             // +0x04 the message count (0x00A52298) it was recorded at
+    int Type;                       // +0x08 0 a message, 1 a cursor position
+};
+struct AudioFileCursorRecord {
+    AudioFileRecordHeader Header;
+    int X;                          // +0x0C
+    int Y;                          // +0x10
+};
+struct AudioFileMessageRecord {
+    AudioFileRecordHeader Header;
+    MSG Message;                    // +0x0C
+};
+extern "C" AudioFileRecordHeader DAT_00a521d0;  // 0x00A521D0 the next played-back header
+extern "C" int DAT_00a522e0;                    // 0x00A522E0 that header has been read
+extern "C" int DAT_00a5229c;                    // 0x00A5229C cursor X
+extern "C" int DAT_00a522a0;                    // 0x00A522A0 cursor Y
+extern "C" int DAT_00a522a4;                    // 0x00A522A4 the last recorded cursor X
+extern "C" int DAT_00a522a8;                    // 0x00A522A8 the last recorded cursor Y
 // Sets the layer up: the locks, the block of count ids (0x00A522B4, the main window entered), the file
 // thread, the ring and its two queues of at least 0x2800 bytes; on failure shuts it down (0x00522560).
 int __fastcall Audio_File_Init(int count, int size);
