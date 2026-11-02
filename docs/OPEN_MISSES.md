@@ -1105,3 +1105,10 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout542 (2026-11-02, closed; 0 B)
 - LineTrail::Draw 0x5395C0: 65.64 -> 96.94 (Scout542 w/lt/zb.cpp). Three instructions are left; assigned to Scout545.
 - Planning_Same_Selection_Path 0x615DE0: 85.86 (w3.cpp is a layout lead). Fill_Port 0x66D5A0: 87.92. Find_First_Obstacle 0x4BB890: 98.89 loose.
+
+## Scout541 (2026-11-02, closed; 0 B)
+- PaletteName::Load 0x603380: 98.23. Get_Obstacle 0x4BBAF0: 97.38.
+- Control registry 0x5DED60/0x5DEE00: the atexit is byte-exact joined (Scout541 x/jod.cpp), but cannot land yet:
+  - The inventory bounds are short: the true bodies are 148 B and 369 B.
+  - The Shrink_Table specialization 0x6027E0 must be emitted by its real caller, registry Remove 0x601C50 (Scout541 got 23.17).
+  - Assigned to Scout547.

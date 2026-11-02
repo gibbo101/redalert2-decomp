@@ -17,19 +17,7 @@ void __fastcall Unknown_Remove_Modeless_Dialog_00522b80(HWND__ *dialog);
 
 namespace OwnerDraw {
 
-inline UnknownControlRecord::~UnknownControlRecord()
-{
-    if (text_28) {
-        operator delete(text_28);
-        text_28 = 0;
-    }
-    while (list_34) {
-        ((UnknownNodeList_006003d0 *)this)->unknown_remove_node(list_34);
-    }
-    if (unknown_3c) {
-        delete unknown_3c;
-    }
-}
+// ~UnknownControlRecord: inline, defined beside the control registry's definition (0x005DED60's source).
 
 // The GWL_USERDATA block of a subclassed window (layout unknown). Hypothesis: a class with an inline empty
 // destructor; that `delete` is a later /Ob2 inline site, so the 0xA73400 remove calls Shrink_Table 0x602730.

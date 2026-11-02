@@ -49,10 +49,47 @@ public:
             Buckets[index] = 0;
         }
         Count = 0;
+#ifdef RA2_WOL_DICTIONARY_SHRINK_ACCESSORS
+        // wlib clear()'s shrink loop through the size accessors (two more /Ob2 sites after the node
+        // deletes: the ownrdraw registry's atexit destructor 0x005DEE00 then calls ??_GWideString 0x00601430).
+        while (Get_Size() > Get_Minimum_Size() && Can_Resize()) Shrink_Buckets();
+#else
         while (Get_Size() > MinimumBuckets && !ResizeLocked) Shrink_Table();
+#endif
         delete [] Buckets;
     }
     unsigned int Get_Size() const { return BucketCount; }
+#ifdef RA2_WOL_DICTIONARY_SHRINK_ACCESSORS
+    unsigned int Get_Minimum_Size() const { return MinimumBuckets; }
+    bool Can_Resize() const { return !ResizeLocked; }
+    // wlib shrink()'s body as the inline member the destructor expands (the out-of-line instance of this
+    // population, 0x006027E0, is an explicit specialization of Shrink_Table that forwards here; its real
+    // out-of-line users, 0x00601C50 and two unrecovered window procedures, are not in the unit yet).
+    void Shrink_Buckets()
+    {
+        if (BucketCount > MinimumBuckets && ResizeLocked != true) {
+            int old_count = BucketCount;
+            Node **old_buckets = Buckets;
+            BucketCount >>= 1;
+            --Bits;
+            Buckets = new Node *[BucketCount];
+            memset(Buckets, 0, BucketCount * sizeof(Node *));
+            for (int index = 0; index < old_count; ++index) {
+                Node *node = old_buckets[index];
+                while (node) {
+                    unsigned int hash = Hash(node->Key);
+                    unsigned int bucket = ((1u << Bits) - 1) & hash;
+                    Node *head = Buckets[bucket];
+                    Buckets[bucket] = node;
+                    Node *next = node->Next;
+                    node->Next = head;
+                    node = next;
+                }
+            }
+            delete [] old_buckets;
+        }
+    }
+#endif
     unsigned int Key_Hash(K const &key) const
     {
         unsigned int hash = Hash(key);
