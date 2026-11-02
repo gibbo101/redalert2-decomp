@@ -4,6 +4,7 @@
 // @ref ??_7?$rc_ptr@VWDTTerritory@@@@6B@=007a452c
 // @ref ??_E?$rc_ptr@VWDTTerritory@@@@UAEPAXI@Z=0051e600
 // @ref ??_G?$rc_ptr@VWDTTerritory@@@@UAEPAXI@Z=0051e600
+#define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #define VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
 #define VECTOR_IMPLEMENT_DYNAMIC_CLEAR
 #define VECTOR_IMPLEMENT_VECTOR_CLEAR
