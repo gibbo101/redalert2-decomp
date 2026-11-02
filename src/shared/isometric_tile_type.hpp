@@ -40,7 +40,15 @@ struct IsoTileImageStruct {
 // One cell's tile in the image (the Tiles entries point at it; TibSun IsoTileRecord: names
 // from +0x24 on are its hypotheses).
 struct IsoTileCellStruct {
-    char unknown_00[0x24];
+    int X;                                              // +0x00 the cell's pixel position in the set
+    int Y;                                              // +0x04
+    int ExtraOffset;                                    // +0x08 from the record to the extra (cliff) image
+    int ZDataOffset;                                    // +0x0C
+    int ExtraZOffset;                                   // +0x10
+    int ExtraX;                                         // +0x14 the extra image's bounds
+    int ExtraY;                                         // +0x18
+    int ExtraWidth;                                     // +0x1C
+    int ExtraHeight;                                    // +0x20
     unsigned IsHasExtraData : 1;                        // +0x24 bit 0
     unsigned IsHasZData : 1;                            // +0x24 bit 1
     unsigned IsRandomized : 1;                          // +0x24 bit 2 (0x0052B730)
@@ -107,6 +115,15 @@ public:
     // Whether sub tile `tile` (wrapping) is one of the type's random variants (0x0052B730; TibSun
     // Is_Randomized).
     bool Is_Randomized(int tile) const;
+    // Zeroes UseCount of every tile type and its variations (0x0052B650; TibSun Clear_Use_Counts).
+    static void Clear_Use_Counts();
+    // The pixel size of sub tile `tile` (wrapping), taller by its extra image; false without an
+    // image (0x0052B690; TibSun Get_Tile_Pixel_Dimensions).
+    bool Get_Tile_Pixel_Dimensions(int tile, int &width, int &height);
+    // Unpacks sub tile `tile` (wrapping) into a cleared width x height byte image through the
+    // diamond mask, then its extra image; false when it does not fit (0x0052DD70; TibSun
+    // Get_Tile_Image).
+    bool Get_Tile_Image(int tile, unsigned char **buffer, int width, int height);
     // Draws the shadow a slope or cliff tile casts on cell part `index` (0x0052B770; TibSun
     // Draw_Shadow_Caster; slopes from ShadowCasterSlopeInfo, cliffs from ShadowCasterCliffInfo).
     void Draw_Shadow_Caster(int index, Surface *surface, Point2D point, Rect cliprect, int offset);
