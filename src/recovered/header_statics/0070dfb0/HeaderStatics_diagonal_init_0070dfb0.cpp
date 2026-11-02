@@ -1,3 +1,4 @@
+#define VOXEL_ANIM_TYPE_DECLARE_NAME_FROM
 // Header-static dynamic initializers of the unit at 0x0070DFB0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x0070DFB0-0x0070E196); the other

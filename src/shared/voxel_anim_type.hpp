@@ -41,6 +41,10 @@ public:
     VoxelAnimTypeClass(NoInitClass const &noinit) : ObjectTypeClass(noinit) {}   // inline (Load)
     virtual ~VoxelAnimTypeClass();                                      // 0x0070E390
 
+#ifdef VOXEL_ANIM_TYPE_DECLARE_NAME_FROM
+    // 0070EA40: the ID at an unsigned index; original rejects only index > Count.
+    static char const *__fastcall Name_From(unsigned index);
+#endif
     static int __fastcall From_Name(char const *name);                  // 0x0070EA60
     static VoxelAnimTypeClass *__fastcall Find_Or_Make(char const *name);   // 0x0070ED80
 
