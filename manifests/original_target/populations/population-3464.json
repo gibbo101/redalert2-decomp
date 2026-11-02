@@ -4,8 +4,8 @@
     "id": "population-3464",
     "inventory_sha256": "3a0cbffa5f4a0e79ca5f06b00860f121ff2a989390e5199f6645b22526c710d9",
     "gaps_sha256": "16147c2d716f3455ecdbb1797cd50069c8c595d301c818c6b7c2f07d406f22f0",
-    "historical_population_sha256": "0b1d87a66e387e3c8f94b785fef2a215b9cd4f19b60e18c0c4f9cae1445dc771",
-    "historical_acceptance_sha256": "c32bdeb6cd54efccc8b434aa68b8575d85ddf10447e23e0f12c6b7fc3905625e"
+    "historical_population_sha256": "69156961d6b2232d9e6188fe1caa6312dd0c9285185ed6d1c2d6c26dd33a9f8b",
+    "historical_acceptance_sha256": "91bd7dcb6abf9f4dca081fd521c58b89e7c01bcb8bc54d9492188b14abfae7de"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -5258,7 +5258,7 @@
     "?get@Leaf_601780@@QAEII@Z": 6297472,
     "?target@Call_601780_0@@QAEII@Z": 7797264,
     "?target@Call_601780_1@@QAEII@Z": 7797264,
-    "?get@Leaf_602a90@@QAEXI@Z": 6302352,
+    "?Add_Field@PacketClass@@QAEXPAVPacketField_004BAD50@@@Z": 6302352,
     "?Clear@?$DynamicVectorClass@PAVColorScheme@@@@UAEXXZ": 6311120,
     "?Fetch@?$VectorClass@PAVColorScheme@@@@UBEPAVColorScheme@@H@Z": 6311200,
     "?Clear@?$DynamicVectorClass@UHSVClass@@@@UAEXXZ": 6311216,
@@ -10358,7 +10358,7 @@
     "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z": 6866432,
     "?Load_Image_0068ca20@UnknownBitmapWriter@@QAEXPBD@Z": 6867488,
     "?unknown_dialog_background_7e8d1c@@3PBDB": 8293660,
-    "??1UnknownNode_00602a60@@QAE@XZ": 4960352,
+    "??1PacketField_004BAD50@@QAE@XZ": 4960352,
     "?unknown_list_a76648@@3V?$DynamicVectorClass@PAUUnknownItem_006142f0@@@@A": 10970696,
     "?unknown_cleanup_62e6e0@UnknownItem_006142f0@@QAEXXZ": 6481632,
     "?unknown_radar_events_ab67e8@@3V?$DynamicVectorClass@PAVRadarEventClass@@@@A": 11233256,
@@ -10400,7 +10400,7 @@
     "?unknown_a3d2a4@@3HA": 10736292,
     "?Unknown_00735940@@YIPAXH@Z": 7559488,
     "?Load_Dialog_Images_5fc8a0@OwnerDraw@@YIXXZ": 6277280,
-    "?unknown_delete_all@UnknownList_00602a60@@QAEXXZ": 6302304,
+    "??1PacketClass@@QAE@XZ": 6302304,
     "?unknown_owner_color@@YIHPAUUnknownTechno_00610770@@@Z": 6358896,
     "?unknown_delete_all_a76648@@YAXXZ": 6374128,
     "?RadarEventClass_unknown_delete_all_63b890@@YAXXZ": 6535312,

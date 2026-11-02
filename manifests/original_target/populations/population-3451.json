@@ -4,8 +4,8 @@
     "id": "population-3451",
     "inventory_sha256": "1d3a65e3133a8d7111c412645638e8acda7402606e5a9690d369370cfe763549",
     "gaps_sha256": "c9a912e73a304dcf8dc3bd783c93430b9e124b8075a58201b17f33c3ab85a1c3",
-    "historical_population_sha256": "69d7c77e9d47405e5df1a41c4ef982a460e68d2acf1427c0b2e7ff7d52f57c69",
-    "historical_acceptance_sha256": "8b3a77d4fbb0be382fedf0ceb46a3502d11ace2db0c55918f820396db97ed3e5"
+    "historical_population_sha256": "6f3d6a7832007ff2b508744538de6bea801b887141f89910f8fc39382c31a879",
+    "historical_acceptance_sha256": "9b9d851885f7bfa2c3b1bb1a5a48910031cd1f44469fdb0c42432d2bf69f984c"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -2189,7 +2189,7 @@
     "?get@Leaf_601780@@QAEII@Z": 6297472,
     "?target@Call_601780_0@@QAEII@Z": 7797264,
     "?target@Call_601780_1@@QAEII@Z": 7797264,
-    "?get@Leaf_602a90@@QAEXI@Z": 6302352,
+    "?Add_Field@PacketClass@@QAEXPAVPacketField_004BAD50@@@Z": 6302352,
     "?Clear@?$DynamicVectorClass@PAVColorScheme@@@@UAEXXZ": 6311120,
     "?ID@?$DynamicVectorClass@PAVColorScheme@@@@UAEHPBQAVColorScheme@@@Z": 6311168,
     "?Fetch@?$VectorClass@PAVColorScheme@@@@UBEPAVColorScheme@@H@Z": 6311200,
@@ -16069,8 +16069,8 @@
     "?unknown_wstring_b297bc@@3VWstring@@A": 11704252,
     "?unknown_wstring_b2a63c@@3VWstring@@A": 11707964,
     "?unknown_get_window_item_text@@YIJPAUHWND__@@IAAVWstring@@@Z": 6295216,
-    "?unknown_delete_all@UnknownList_00602a60@@QAEXXZ": 6302304,
-    "??1UnknownNode_00602a60@@QAE@XZ": 4960352,
+    "??1PacketClass@@QAE@XZ": 6302304,
+    "??1PacketField_004BAD50@@QAE@XZ": 4960352,
     "?unknown_owner_color@@YIHPAUUnknownTechno_00610770@@@Z": 6358896,
     "?Unknown_004F52B0@UnknownHouse_00610770@@QAE_NXZ": 5198512,
     "?unknown_delete_all_a76648@@YAXXZ": 6374128,
@@ -18303,7 +18303,6 @@
     "??0PacketField_004BAD50@@QAE@PBDI@Z": 4960048,
     "??0PacketField_004BAD50@@QAE@PBD0@Z": 4960144,
     "??0PacketField_004BAD50@@QAE@PBDPBXG@Z": 4960256,
-    "??1PacketField_004BAD50@@QAE@XZ": 4960352,
     "?Host_To_Network_004BB080@PacketField_004BAD50@@QAEXXZ": 4960384,
     "_htons@4": 7871340,
     "_htonl@4": 7871334,

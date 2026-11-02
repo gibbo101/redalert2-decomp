@@ -4,8 +4,8 @@
     "id": "population-3558",
     "inventory_sha256": "bcd83cb9d5dafdc822a3242b49b298e078061a3079c1a808ff3fcc7feee9dddf",
     "gaps_sha256": "c25d9d00be2a126b3ade741e658572510bf4dae4273585c8349e69666e9a8523",
-    "historical_population_sha256": "9bc43f2e87d161636e3388d70b460b41133995fa2cefdae9092519dc084ed276",
-    "historical_acceptance_sha256": "0a3e7e0ce1806bf4fde1c19b82475a1bef649b9641038f5e455d4fed4b23893e"
+    "historical_population_sha256": "e8761f105eb186819829f524b52e14a855555ac0192149881367560695a880dd",
+    "historical_acceptance_sha256": "40eb535f45355dbfd4c009b31cbc68aeb2aebe5f1f8340c3f1e8bf170746dc89"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5556,7 +5556,7 @@
     "?Load_Image_0068c600@UnknownBitmapWriter@@QAE_NPBDHH@Z": 6866432,
     "?Load_Image_0068ca20@UnknownBitmapWriter@@QAEXPBD@Z": 6867488,
     "?unknown_dialog_background_7e8d1c@@3PBDB": 8293660,
-    "??1UnknownNode_00602a60@@QAE@XZ": 4960352,
+    "??1PacketField_004BAD50@@QAE@XZ": 4960352,
     "?Unknown_004F52B0@UnknownHouse_00610770@@QAE_NXZ": 5198512,
     "?unknown_list_a76648@@3V?$DynamicVectorClass@PAUUnknownItem_006142f0@@@@A": 10970696,
     "?unknown_cleanup_62e6e0@UnknownItem_006142f0@@QAEXXZ": 6481632,
@@ -5602,7 +5602,7 @@
     "?unknown_a3d2a4@@3HA": 10736292,
     "?Unknown_00735940@@YIPAXH@Z": 7559488,
     "?Load_Dialog_Images_5fc8a0@OwnerDraw@@YIXXZ": 6277280,
-    "?unknown_delete_all@UnknownList_00602a60@@QAEXXZ": 6302304,
+    "??1PacketClass@@QAE@XZ": 6302304,
     "?unknown_owner_color@@YIHPAUUnknownTechno_00610770@@@Z": 6358896,
     "?unknown_delete_all_a76648@@YAXXZ": 6374128,
     "?RadarEventClass_unknown_delete_all_63b890@@YAXXZ": 6535312,
@@ -7505,7 +7505,7 @@
     "?get@Leaf_5eac20@@QAEXXZ": 6204448,
     "?get@Leaf_601410@@QAEIXZ": 6296592,
     "?get@Leaf_601780@@QAEII@Z": 6297472,
-    "?get@Leaf_602a90@@QAEXI@Z": 6302352,
+    "?Add_Field@PacketClass@@QAEXPAVPacketField_004BAD50@@@Z": 6302352,
     "?get@Leaf_6055a0@@QAEPAXI@Z": 6313376,
     "?get@Leaf_6055f0@@QAEPAXI@Z": 6313456,
     "?get@Leaf_605710@@QAEPAXI@Z": 6313744,

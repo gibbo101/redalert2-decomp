@@ -4,8 +4,8 @@
     "id": "population-3268",
     "inventory_sha256": "ed08e45e8cf16b9c942093f904e6ac927531784a5f45e634c04b9d141170306d",
     "gaps_sha256": "2ce9a441e989baeff838d682ff6a161ce85221b9f0ead49629637cf8bda88792",
-    "historical_population_sha256": "cf5579176dc813dd0ec7d8761649c8527ef95550cea38eadc2cd4f4f251cc07f",
-    "historical_acceptance_sha256": "88d7600a0fbd882ac82275842959d60b37db5ad2b51154802278d2011ed2f78c"
+    "historical_population_sha256": "b2b83648ff0520649f9cd31650e891ac673e371e928fd3b23935817457d02267",
+    "historical_acceptance_sha256": "3315f5281d5dc081fe02204885203ee92c131281357e94a28decbfb49c703e71"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5745,7 +5745,7 @@
     "?get@Leaf_601190@@QAE_NXZ": 6295952,
     "?get@Leaf_601410@@QAEIXZ": 6296592,
     "?get@Leaf_601780@@QAEII@Z": 6297472,
-    "?get@Leaf_602a90@@QAEXI@Z": 6302352,
+    "?Add_Field@PacketClass@@QAEXPAVPacketField_004BAD50@@@Z": 6302352,
     "?get@Leaf_6055a0@@QAEPAXI@Z": 6313376,
     "?get@Leaf_6055f0@@QAEPAXI@Z": 6313456,
     "?get@Leaf_605710@@QAEPAXI@Z": 6313744,
