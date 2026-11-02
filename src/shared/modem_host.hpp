@@ -9,6 +9,15 @@
 #include "shared/unknown_globals.hpp"
 #include "shared/gdlg_supp.hpp"
 
+// SendDlgItemMessage as an inline GetDlgItem + SendMessageA (the TibSun ModemHst.cpp calls
+// SendDlgItemMessage where RA2 has both calls; the inlined form gives SelectMultiMap 0x0059B090
+// and SelectRandomMap 0x0059B2C0 their registers).
+inline LRESULT Send_Dlg_Item_Message(HWND dialog, int id, UINT message, WPARAM wparam, LPARAM lparam)
+{
+    HWND control = GetDlgItem(dialog, id);
+    return SendMessageA(control, message, wparam, lparam);
+}
+
 // The colour shown for a player colour outside 0..7 (0x007A737C, 0x0040FFFF).
 extern int unknown_color_7a737c;
 
@@ -60,6 +69,14 @@ public:
     void Read_Name_0059aaf0(bool keep);
     // Shows the guest's name, colour and country (0x668) when they change (0x0059AB80).
     void Set_Guest_0059ab80(unsigned short const *name, int color, int house);
+
+    // The map button (0x5AA): the lobby's map selection (0x0059B090; ModemHost.SelectMultiMap).
+    // A cancelled selection (2) restores the previous map; a random map shows RandMap.img.
+    void Select_Multi_Map_0059b090();
+
+    // The random map button: runs the random map dialog (0x00577490) and, after OK, saves RandMap.Sed,
+    // adds or updates the session's random map entry and selects it (0x0059B2C0; ModemHost.SelectRandomMap).
+    void Select_Random_Map_0059b2c0();
 
     // Sends a chat text to the guest and shows it in the chat list (0x0059BFA0).
     void Send_Chat_0059bfa0(unsigned short const *text);

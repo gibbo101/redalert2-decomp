@@ -932,3 +932,5 @@ constructor out of line, as the original did (CoordStruct ctor 0x41B630 in 0x63D
 - VC6 lays out switch cases by value, not source order; source order still changes the inline budget.
 - `HWND h = GetDlgItem(...)` as a named temporary, not a nested argument, fixes GetDlgItem call order and registers.
 - Of two duplicate error blocks, VC6 keeps as the shared tail the one whose branch has an explicit `return`.
+- (Near481) VC6 reorders ungrouped FP sums; only explicit grouping fixes product order: Closest_Object 0x5D5090
+  matched with double locals y, z, x and `x * x + (y * y + z * z)`; none of 36 ungrouped orders did.
