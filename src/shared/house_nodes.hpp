@@ -39,10 +39,19 @@ public:                      // (layout hypothesis)
     ::Cell Cell;
     bool unknown_08;
     int unknown_0c;              // not compared
+#ifdef RA2_BASE_NODE_MEMBER_OPERATORS
+    // base.cpp defines the members (0x0042BEE0 ==, 0x0042BF10 !=, 0x0042BF60 >; no callers); the
+    // unit that defines RA2_BASE_NODE_MEMBER_OPERATORS sees them instead of the inline free forms.
+    bool operator==(BaseNodeClass const &node);
+    bool operator!=(BaseNodeClass const &node);
+    bool operator>(BaseNodeClass const &node);
+#endif
 };
+#ifndef RA2_BASE_NODE_MEMBER_OPERATORS
 // Compares the type and the cell only (VectorClass<BaseNodeClass>::operator== 0x0042CC80).
 inline bool operator==(BaseNodeClass const &a, BaseNodeClass const &b) { return a.Type == b.Type && a.Cell == b.Cell; }
 inline bool operator!=(BaseNodeClass const &a, BaseNodeClass const &b) { return !(a == b); }
+#endif
 inline bool operator==(AngerStruct const &a, AngerStruct const &b) { return a.House == b.House && a.Value == b.Value; }
 inline bool operator!=(AngerStruct const &a, AngerStruct const &b) { return !(a == b); }
 inline bool operator==(ScoutStruct const &a, ScoutStruct const &b) { return a.House == b.House && a.IsPreferred == b.IsPreferred; }

@@ -11,6 +11,9 @@ template <class T>
 class TTimerClass {
 public:
     TTimerClass(long set = 0) : Started(Timer), Accumulated(set) {}
+    // Empty but user-declared (TibSun timer.h ~TTimerClass): TickCount (0x00839980) registers an
+    // atexit destructor that only returns (0x0040EA20).
+    ~TTimerClass() {}
     long Time() const
     {
         long value = Accumulated;

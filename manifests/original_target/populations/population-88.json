@@ -3501,56 +3501,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 4374240,
-      "method": "0042bee0",
-      "symbol": "?FUN_0042bee0@Owner_0042bee0@seed_0042bee0@@QAEIPAH@Z",
-      "symbol_prefix": "?FUN_0042bee0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 47,
-      "body_sha256": "f1930bb199a43ed67e4aad3a24ba8564d5d6c1dcf00c04bf103c4dc2abde9cfa",
-      "padding_bytes": 1,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "26e43413e6eb6c6621e7ebcc240309b02d60a67d4829d1056a2218d9177e7aaf",
-      "relocations": [],
-      "source_sha256": "7024df6aed989935e8893461068e2d754d27612afd5c21f4a3400dc5de5cc30c",
-      "source": "src/recovered/0042bee0.cpp",
-      "source_order": 10054,
-      "population": "population-88",
-      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
-      "entry": 4374368,
-      "method": "0042bf60",
-      "symbol": "?FUN_0042bf60@seed_0042bf60@@YGEH@Z",
-      "symbol_prefix": "?FUN_0042bf60@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 5,
-      "body_sha256": "f4c6d7ae520f88aecb3ea65952e885437fa4a6ce4b5c3439a161d1c5d8e42863",
-      "padding_bytes": 11,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "379d09f1f223152c4910467bafdec001cd9a948b0d5d8362212da7a5dccd9ce1",
-      "relocations": [],
-      "source_sha256": "8c803d6bea7b8e3d3b438bad20e25ee00ee8747fa99584412891fb7ed47d299b",
-      "source": "src/recovered/0042bf60.cpp",
-      "source_order": 10055,
-      "population": "population-88",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 4382032,
       "method": "0042dd50",
       "symbol": "?FUN_0042dd50@seed_0042dd50@@YGXHHHHHHH@Z",

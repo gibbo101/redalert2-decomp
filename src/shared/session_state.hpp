@@ -45,6 +45,10 @@ struct UnknownGameOptions {
     int Slots[8][3];                        // +0x1C (Slot01..Slot07 entries; slot 0 is not saved)
 };
 struct UnknownSessionState {
+#ifdef RA2_SESSION_STATE_DEFINED
+    // Only the defining unit constructs the object (unknown_session_a3d298's initializer 0x004D4860).
+    UnknownSessionState();                  // 0x0066E380
+#endif
     ~UnknownSessionState();                 // 0x0066EB20
     int Value_0124_006729f0();
     // netdlg2's scenario download test for an official map (0x00672140; meaning not recovered).
