@@ -10,6 +10,9 @@
 // inlined into VectorClass<SubzoneTrackingStruct>::VectorClass 0x0056CC40,
 // vector deleting destructor 0x0040AFA0).
 struct SubzoneTrackingStruct {
+#ifdef RA2_MAP_SUBZONE_ASSIGN_SOURCE
+    SubzoneTrackingStruct &operator=(SubzoneTrackingStruct const &other); // original0056C2E0
+#endif
     SubzoneTrackingStruct()
     {
         Connections.Clear();

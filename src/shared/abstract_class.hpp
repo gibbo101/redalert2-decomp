@@ -26,6 +26,9 @@ extern "C" GUID const IID_IRTTITypeInfo;       // 0x007A2020
 
 class AbstractClass : public IPersistStream, public IRTTITypeInfo, public INoticeSink, public INoticeSource {
 public:
+#ifdef RA2_ABSTRACT_ASSIGN_SOURCE
+    AbstractClass &operator=(AbstractClass const &other); // original0056A9F0
+#endif
     // IUnknown
     virtual HRESULT __stdcall QueryInterface(GUID const &iid, void **object);   // 0x00410000
     virtual unsigned long __stdcall AddRef();                                    // 0x004100A0

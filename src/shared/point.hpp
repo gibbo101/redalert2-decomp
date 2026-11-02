@@ -16,7 +16,9 @@ public:
     TPoint2D(T x, T y) : X(x), Y(y) {}
 
     // Member-wise addition in place, reference point arithmetic.
-#ifdef RA2_POINT_ADD_IN_PLACE
+#ifdef RA2_POINT_ADD_IN_PLACE_SOURCE
+    TPoint2D<T> const &operator+=(TPoint2D<T> const &rvalue);
+#elif defined(RA2_POINT_ADD_IN_PLACE)
     TPoint2D<T> const &operator+=(TPoint2D<T> const &rvalue) { X += rvalue.X; Y += rvalue.Y; return *this; }
 #endif
     TPoint2D<T> const &operator-=(TPoint2D<T> const &rvalue) { X -= rvalue.X; Y -= rvalue.Y; return *this; }

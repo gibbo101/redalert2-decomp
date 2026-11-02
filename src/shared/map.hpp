@@ -66,6 +66,9 @@ public:
     }
     ~HashTableClass() { delete[] Buckets; }
 
+#ifdef RA2_MAP_HASH_ADD_SOURCE
+    bool Add_Object(int bucket_index, HashObject<K, V> const &object); // original0056BC00
+#endif
     DynamicVectorClass<HashObject<K, V> > *Buckets;    // +0x00 BucketCount vectors
     unsigned (__fastcall *Hash)(K const &key);          // +0x04
     int BucketCount;                                    // +0x08
