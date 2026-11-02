@@ -10,11 +10,22 @@
 
 // One frame header of a shape file (24 bytes).
 struct ShapeFileFrameStruct {
+#ifdef RA2_DRAW_SHAPE_OPERATIONS
+    // Draw_Shape0049EEA0 reads Flags' low byte, then promotes for the shift.
+    bool Is_RLE_Compressed() const { return (Flags & 2) != 0; }
+#endif
     short X;                // +0x00 placement of the frame's pixels in the shape
     short Y;                // +0x02
     short Width;            // +0x04
     short Height;           // +0x06
+#ifdef RA2_DRAW_SHAPE_OPERATIONS
+    union {
+        int unknown_08;     // preserve the existing raw-word interface
+        struct { short Flags; short unknown_0A; };
+    };                     // +0x08 (Flags width remains a reference-backed hypothesis)
+#else
     int unknown_08;         // +0x08
+#endif
     int unknown_0C;         // +0x0C
     int unknown_10;         // +0x10
     int DataOffset;         // +0x14 offset of the frame's pixels from the shape header (0: none)
@@ -34,13 +45,22 @@ static Rect const unknown_empty_rect(0, 0, 0, 0);
 
 // A shape file: header followed by FrameCount frame headers.
 struct ShapeFileStruct {
+#ifdef RA2_DRAW_SHAPE_OPERATIONS
+    // Original unsigned range test, factored as in the Westwood shape API.
+    bool Is_Shape_Index_Valid(int index) const { return (unsigned)index < (unsigned)FrameCount; }
+#endif
     // Header of frame, or null past the last frame (unsigned comparison).
 #ifdef RA2_SHAPE_FRAME_SOURCE
     ShapeFileFrameStruct const *Get_Frame(unsigned frame) const;
 #else
     ShapeFileFrameStruct const *Get_Frame(unsigned frame) const
     {
+#ifdef RA2_DRAW_SHAPE_OPERATIONS
+        if (Is_Shape_Index_Valid(frame)) return &Frames[frame];
+        return 0;
+#else
         return frame < (unsigned)FrameCount ? &Frames[frame] : 0;
+#endif
     }
 #endif
     // Frame rectangle; the out-of-line copy the linker kept is 0x0045ED50.
@@ -65,6 +85,13 @@ struct ShapeFileStruct {
         }
         return 0;
     }
+#ifdef RA2_DRAW_SHAPE_OPERATIONS
+    bool Is_RLE_Compressed(int frame) const {
+        ShapeFileFrameStruct const *header = Get_Frame(frame);
+        if (header) return header->Is_RLE_Compressed();
+        return false;
+    }
+#endif
     // Accessors (WWMouseClass sizes its save-under surfaces with them; the
     // field reads must happen before the Bytes_Per_Pixel call there).
     int Get_Width() const { return Width; }

@@ -59,6 +59,13 @@ struct Point2D {
     // Member-wise difference by value (VeinholeMonsterClass 0x00711AA0: the Y
     // difference is computed first, as a constructor argument).
     Point2D operator-(Point2D const &point) const { return Point2D(X - point.X, Y - point.Y); }
+#ifdef RA2_DRAW_SHAPE_OPERATIONS
+    // Draw.cpp's depth offset uses Westwood point division (zero gives origin).
+    Point2D const operator/(int divisor) const {
+        if (divisor == 0) return Point2D(0, 0);
+        return Point2D(X / divisor, Y / divisor);
+    }
+#endif
     int Length() const; // 0047D060, integer table-sqrt vector length
     // Member-wise comparison (the Point2D vectors of MSChoice.cpp,
     // 0x005B1930/0x005B1A90).
