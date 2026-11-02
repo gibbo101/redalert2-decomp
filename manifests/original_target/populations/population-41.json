@@ -209,31 +209,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 7419104,
-      "method": "007134e0",
-      "symbol": "?FUN_007134e0@Owner_007134e0@seed_007134e0@@QAEXD@Z",
-      "symbol_prefix": "?FUN_007134e0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 34,
-      "body_sha256": "db84649ba8fcac1f2f4aabf4f0606e6b68d4cfcd6d0643ee6454756645014593",
-      "padding_bytes": 14,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "8affe197fc40fcf27c059e87d034ac4474388ee77be5317a89b6af1e84152228",
-      "relocations": [],
-      "source_sha256": "b78c6df58c0b420d30e252854abfb41eefbd15ad0d847a5d9ea2006730a36be6",
-      "source": "src/recovered/007134e0.cpp",
-      "source_order": 6872,
-      "population": "population-41",
-      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 7883494,
       "method": "00784ae6",
       "symbol": "?FUN_00784ae6@seed_00784ae6@@YAXI@Z",

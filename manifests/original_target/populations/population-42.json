@@ -6577,56 +6577,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 7419168,
-      "method": "00713520",
-      "symbol": "?FUN_00713520@Owner_00713520@seed_00713520@@QAEXD@Z",
-      "symbol_prefix": "?FUN_00713520@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 34,
-      "body_sha256": "de70bb1de1ee807ddfcc8530a37e107d50e0a9d920a355f0b09a317366355651",
-      "padding_bytes": 14,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "432eea6a24133633f278d8c5670dc757156c45be24f5629f7d6fdb6cd424eceb",
-      "relocations": [],
-      "source_sha256": "6c6b10bb31f55760f0ce194500a5bbc704eac4a0aa1f6b04ba7ed058dfdcb31f",
-      "source": "src/recovered/00713520.cpp",
-      "source_order": 7102,
-      "population": "population-42",
-      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
-      "entry": 7419216,
-      "method": "00713550",
-      "symbol": "?FUN_00713550@Owner_00713550@seed_00713550@@QAEXD@Z",
-      "symbol_prefix": "?FUN_00713550@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 34,
-      "body_sha256": "97601275c8a16ebf1a3de4c4d0f156050bee877e3c3c74ba6ea90375f5eb59c8",
-      "padding_bytes": 14,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "43acd4d73a341b0f6f7ba10068b31c99013c90c81455f264cd8872e668d38933",
-      "relocations": [],
-      "source_sha256": "dc93de35501b6f1bb023072ce8b46ddb55417a2b6fe1b9d57258fe470db2f157",
-      "source": "src/recovered/00713550.cpp",
-      "source_order": 7103,
-      "population": "population-42",
-      "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 7498416,
       "method": "00726ab0",
       "symbol": "?FUN_00726ab0@seed_00726ab0@@YI_NH@Z",
