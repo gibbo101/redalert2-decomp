@@ -1081,3 +1081,9 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Select_Game 0x5135F0: 92.40 joined (93.08 standalone). Only the +0xAE6 back-edge restore order is left: edi=-1 and esi=1 come back in the reverse of the original's order. Landing it needs the cheat-code and campaign-choice declarations moved out of the 0x516F00 and 0x5147A0 sources.
 - GScreen Get_Input 0x4E09D0: 82.81. LineTrail::Draw 0x5395C0: 65.64 (variant c2 gets the right registers but scores 57.14).
 - OWNER DECISION (18:50Z): 0xA780C0 keeps two type views for now: Scout523's local BasicTimerClass in the IPX debug unit and queue.hpp's UnknownElapsedTimer. Neither shared type matches the debug print, so unify them later when a single type fits both.
+
+## Scout536 (2026-11-02, closed; 0 B)
+- IonBlast One_Time 0x521A90: 94.19. With the mirror-pointer form the shape is exact but it scores 89.61: two coupled scratch-register swaps.
+- Add_Compressed_Events 0x627B60: 95.72, exact shape. The esi/edi pair is nearly tied in priority; two variants flip it, but each also changes the code.
+- Queue 0x6279D0: 84.96 -> 90.15 with an `i < 8 &&` guard that keeps the second `if (save)` test. The guard is steering, so this is a resume point only.
+- codex1 (19:05Z): Map.CPP second half closed (all 27 left are capped). New assignment: retry them with today's mechanisms, then the truncated ownrdraw.cpp window procedures.
