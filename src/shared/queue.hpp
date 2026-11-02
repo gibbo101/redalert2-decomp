@@ -289,10 +289,11 @@ void __fastcall Queue_AI();
 // The multiplayer queue processing (0x00623B00; Red Alert's Queue_AI_Multiplayer).
 void __fastcall Queue_AI_Multiplayer();
 // Executes the DoList events of this frame for max_houses houses from base_house;
-// 0 on a fatal error (0x00628880; Red Alert's Execute_DoList; the last three
-// arguments are a hypothesis: Queue_AI_Multiplayer passes the connection manager,
-// 0x00AABEB8 and 0x00AABDD0).
-int __fastcall Execute_DoList(int max_houses, int base_house, ConnManClass *net, long *their_frame, void *timing);
+// 0 on a fatal error (0x00628880; Red Alert's Execute_DoList, TibSun's argument list:
+// the connection manager, the CRC skip timer and the peers' frame timing;
+// Queue_AI_Multiplayer passes 0x00AABEB8 and 0x00AABDD0).
+int __fastcall Execute_DoList(int max_houses, int base_house, ConnManClass *net,
+    CDTimerClass<FrameTimerClass> *skip_crc, UnknownFrameTiming *their);
 // Adds the game state to GameCRC (0x00629FA0; Red Alert's Compute_Game_CRC).
 void __fastcall Compute_Game_CRC();
 // Saves the frame's game state into sync state slot index (the frame mod 256), after the game CRC; without

@@ -1156,3 +1156,12 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout566/569 (2026-11-02 final passes)
 - IonBlast AI 0x521340: 97.86 (Scout566 best_521340_97.86.cpp). One integer allocation decision is left: the blast-coord copy order and the second slot32 load register.
 - Add_Compressed_Events: 95.72. The esi/edi choice comes from a register preference at the 0x1F arm's storedsize definition, not from use counts (Scout569 t13).
+
+## Scout578 (2026-11-02, closed; 0 B)
+- Extract_Compressed_Events 0x6282D0: 43.24 -> 56.53 (Scout578 misses/, overlay misses/event.hpp.overlay). The +0x07 dword stays in ebp only as a real POD union member.
+- Execute_DoList 0x628880: fresh draft at 71.71 (j-loop allocation and a 4-byte frame left).
+- OWNER DECISIONS (22:55Z):
+  - The EventClass payload union may gain a POD target member (RA2Whom {long ID; unsigned char Kind;}) and a Variable {void *Pointer; int Size;} member at +0x07. This is a hypothesis evidenced by the ebp-held dword; guard it under a unit macro if other users change.
+  - The Execute_DoList signature becomes (int, int, ConnManClass *, CDTimerClass<FrameTimerClass> *, UnknownFrameTiming *) __fastcall.
+  - The new globals 0xA3D23C/0xA3D258/0xA402E0-E8/0xA40D1C and Unknown_00629290(int, int) __fastcall are allowed.
+- Remaining unaccepted Queue.CPP rows: Queue_AI 0x623770, Queue_AI_Multiplayer 0x623B00, Wait_For_Players 0x624C10, Process_Receive_Packet 0x6265C0, 0x626CB0, 0x6279D0, 0x629290, Print_CRCs 0x62A360, plus the templates 0x62EA00/0x62EA40. IPX Service 0x525F60 is untouched.
