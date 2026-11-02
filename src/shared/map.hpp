@@ -163,6 +163,9 @@ public:
 
     void Repair_All_High_Bridges_0054c7a0(); // original complete1081-byte body
     void Repair_High_Bridge_Span_0054b560(CellClass *cell, FacingType direction, Rect *dirty); // original thiscall RET12
+    void Repair_High_Bridge_From_Cell_0054cbe0(Cell const &cell);
+    void Repair_Train_Bridge_From_Cell_0054d0a0(Cell const &cell);
+    void Repair_Train_Bridge_Span_0054be80(CellClass *cell, FacingType direction, Rect *dirty); // original thiscall RET12
     MapClass();                                                                 // 0x00547960
     MapClass(NoInitClass const &noinit);                                        // 0x00547A60
     // A cell test with a flag (0x0055A660; radar 0x00630340 passes true).
