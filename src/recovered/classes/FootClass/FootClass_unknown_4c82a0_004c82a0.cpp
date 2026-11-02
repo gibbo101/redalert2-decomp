@@ -21,7 +21,7 @@ int FootClass::unknown_4c82a0(AbstractClass *target)
     if (unknown_228 == target) {
         return -unknown_slot168();
     }
-    if (unknown_228 != 0 && unknown_228->unknown_14_bit0 && ((TechnoClass *)unknown_228)->unknown_slot163()) {
+    if (unknown_228 != 0 && unknown_228->AbstractFlags.IsTechno && ((TechnoClass *)unknown_228)->unknown_slot163()) {
         return 0;
     }
     bool defense = (Team != 0 && Team->Class->IsBaseDefense) ? true : false;

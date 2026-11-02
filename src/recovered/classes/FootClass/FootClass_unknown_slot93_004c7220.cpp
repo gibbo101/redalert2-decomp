@@ -76,7 +76,7 @@ void FootClass::unknown_slot93(int why)
 
         int primary = unknown_slot174(unknown_228);
         bool inrange = false;
-        if (unknown_228 != 0 && unknown_228->unknown_14_bit2) {
+        if (unknown_228 != 0 && unknown_228->AbstractFlags.IsFoot) {
             inrange = unknown_slot84(((FootClass *)unknown_228)->unknown_slot287(), primary);
         }
 

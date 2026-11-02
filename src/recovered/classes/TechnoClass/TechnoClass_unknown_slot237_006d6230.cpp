@@ -73,7 +73,7 @@ void TechnoClass::unknown_slot237()
         unknown_284 = roll;
         float limit = 0.7853982f;
         bool foot;
-        if (this != 0) foot = unknown_14_bit2;
+        if (this != 0) foot = AbstractFlags.IsFoot;
         if (this != 0 && foot && ((FootClass *)this)->unknown_59f) {
             limit = 0.31415927f;
         }

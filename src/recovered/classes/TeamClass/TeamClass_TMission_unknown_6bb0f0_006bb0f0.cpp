@@ -40,7 +40,7 @@ void TeamClass::TMission_unknown_6bb0f0(ScriptMissionClass const &mission, bool 
             }
         }
     }
-    if (unknown_40 != 0 && unknown_40->unknown_14_bit1) {
+    if (unknown_40 != 0 && unknown_40->AbstractFlags.IsObject) {
         unknown_func_6b9bb0();
     } else {
         unknown_func_6ba1a0();

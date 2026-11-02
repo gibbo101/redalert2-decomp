@@ -32,7 +32,7 @@ bool Unknown_Can_Force_Order_006F6670()
         ObjectClass *object = unknown_objects_a40c60[index];
         bool flag;
         if (object != 0) {
-            flag = object->unknown_14_bit0;
+            flag = object->AbstractFlags.IsTechno;
         }
         if (object != 0 && flag) {
             if (!((TechnoClass *)object)->unknown_slot275()) {

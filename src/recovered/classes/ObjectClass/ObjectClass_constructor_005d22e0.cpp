@@ -41,5 +41,5 @@ ObjectClass::ObjectClass() :
     unknown_AbstractClass_list_00ac0d60.Add(this);
     unknown_objects_ac0cb0.Add(this);
     unknown_objects_ac0c58.Add(this);
-    unknown_14_bit1 = 1;
+    AbstractFlags.IsObject = 1;
 }

@@ -12,7 +12,7 @@ int __fastcall Planning_Selection_Node_State(PlanningNodeClass *node)
         ObjectClass *object = unknown_objects_a40c60[i];
         bool techno;
         if (object != 0) {
-            techno = object->unknown_14_bit0;
+            techno = object->AbstractFlags.IsTechno;
         }
         if (object != 0 && techno) {
             PlanningTokenClass *token = Planning_Token((TechnoClass *)object);

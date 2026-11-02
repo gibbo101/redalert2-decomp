@@ -9,7 +9,7 @@
 inline bool Cargo_Is_Foot(ObjectClass const *object)
 {
     bool is_foot;
-    if (object != 0) is_foot = object->unknown_14_bit2;
+    if (object != 0) is_foot = object->AbstractFlags.IsFoot;
     return object != 0 && is_foot;
 }
 

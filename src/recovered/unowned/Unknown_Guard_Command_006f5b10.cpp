@@ -20,7 +20,7 @@ void __fastcall Unknown_006F5B10()
         int count = unknown_objects_a40c60.Count();
         for (int index = 0; index < count; index++) {
             ObjectClass *object = unknown_objects_a40c60[index];
-            if (object != 0 && object->unknown_14_bit0 && object->unknown_slot39() && object->unknown_slot38()) {
+            if (object != 0 && object->AbstractFlags.IsTechno && object->unknown_slot39() && object->unknown_slot38()) {
                 agreed = ((TechnoClass *)object)->unknown_slot200(0x0B, (AbstractClass *)object->unknown_slot107(), 0, 0);
                 if (!agreed) {
                     return;

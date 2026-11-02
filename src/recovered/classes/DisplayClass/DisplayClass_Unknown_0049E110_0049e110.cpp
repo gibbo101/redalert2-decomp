@@ -16,7 +16,7 @@ void DisplayClass::Unknown_0049E110(bool skip_buildings, bool arg2)
 {
     for (int index = 0; index < Layer[2].Count(); index++) {
         TechnoClass *techno = (TechnoClass *)Layer[2][index];
-        if (techno == 0 || !techno->unknown_14_bit0) {
+        if (techno == 0 || !techno->AbstractFlags.IsTechno) {
             continue;
         }
         if (techno->Kind_Of() == 6 && skip_buildings) {

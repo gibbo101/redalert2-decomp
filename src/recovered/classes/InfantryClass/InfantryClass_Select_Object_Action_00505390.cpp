@@ -174,7 +174,7 @@ check_action_31:
             else {
                 FootClass *foot = static_cast<FootClass *>(object);
                 bool transport_ready;
-                if (object) transport_ready = object->unknown_14_bit2;
+                if (object) transport_ready = object->AbstractFlags.IsFoot != 0;
                 if (object && transport_ready &&
                     ((!foot->Team || foot->Team->Class->Loadable) ? foot->Locomotor.Checked()->Is_Moving() : true)) action = 0x1f;
                 else {

@@ -34,7 +34,7 @@ void TechnoClass::unknown_slot267(bool arg1)
     if (kind != 0 && visible) {
         bool foot;
         if (this != 0) {
-            foot = unknown_14_bit2;
+            foot = AbstractFlags.IsFoot;
         }
         if (this == 0 || !foot || ((FootClass *)this)->unknown_574 < 0) {
             Unknown_0063B5B0(5, Coord_Cell(CoordStruct(Coord)));

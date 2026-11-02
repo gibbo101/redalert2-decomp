@@ -29,7 +29,7 @@ EBolt *TechnoClass::unknown_6ca020(AbstractClass *target, WeaponTypeClass *weapo
         }
     }
     CoordStruct coord;
-    if (target != 0 && target->unknown_14_bit1) {
+    if (target != 0 && target->AbstractFlags.IsObject) {
         coord = ((ObjectClass *)target)->unknown_slot40();
     } else {
         coord = target->unknown_slot22();

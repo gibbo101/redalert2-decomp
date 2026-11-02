@@ -66,7 +66,7 @@ void EMPulseClass::Apply_004B4E30(TechnoClass *source)
                         } else {
                             bool active=false;
                             ObjectClass *object=mapCell->unknown_471660(Point2D(0,0),false,0);
-                            if (object && (object->Kind_Of()==1 || object->Kind_Of()==2)) active=object->unknown_14_bit2;
+                            if (object && (object->Kind_Of()==1 || object->Kind_Of()==2)) active=object->AbstractFlags.IsFoot;
                             if (active) {
                                 FootClass *foot=(FootClass *)object;
                                 if (foot->Locomotor && ((foot->Kind_Of()!=1 || !((UnitClass *)foot)->Type->LargeVisceroid)

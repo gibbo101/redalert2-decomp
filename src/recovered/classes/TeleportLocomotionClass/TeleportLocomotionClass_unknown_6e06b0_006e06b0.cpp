@@ -58,7 +58,7 @@ bool TeleportLocomotionClass::unknown_6e06b0(CoordStruct const &to)
             Map[old].Center_Coord();    // (the result is unused)
             if (unknown_28 == unknown_coord_ac0280) {
                 AbstractClass *target = LinkedTo->unknown_494;
-                if (target != 0 && target->unknown_14_bit1) {
+                if (target != 0 && target->AbstractFlags.IsObject) {
                     int zone = LinkedTo->unknown_slot32()->MovementZone;
                     Cell target_cell = Coord_Cell(target->unknown_slot19(0));
                     CellClass *cell = &Map[LinkedTo->unknown_slot19(0)];

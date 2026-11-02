@@ -62,6 +62,6 @@ FootClass::FootClass(HouseClass *house) :
     unknown_4d0 = -1;
     unknown_43c.Init();
     unknown_FootClass_list_00865f38.Add(this);
-    unknown_14_bit2 = 1;
+    AbstractFlags.IsFoot = 1;
     unknown_list_ac0c18.Add(this);
 }

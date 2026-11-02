@@ -27,11 +27,11 @@ void TechnoClass::unknown_slot220(AbstractClass *target)
     } else {
         if (target == this) {
             target = (AbstractClass *)Map_Cell(CoordStruct(Coord));
-        } else if (target->unknown_14_bit1) {
+        } else if (target->AbstractFlags.IsObject) {
             if (!((ObjectClass *)target)->unknown_7d || ((ObjectClass *)target)->Strength == 0) {
                 target = 0;
             } else {
-                bool active = target->unknown_14_bit2;
+                bool active = target->AbstractFlags.IsFoot;
                 TechnoClass *techno;
                 if (active && (techno = (TechnoClass *)target)->unknown_325) {
                     target = 0;

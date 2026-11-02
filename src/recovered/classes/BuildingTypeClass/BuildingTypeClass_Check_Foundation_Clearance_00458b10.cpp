@@ -14,7 +14,7 @@
 inline FootClass *Mobile_Occupant_00458B10(TechnoClass *techno)
 {
  bool mobile;
- if(techno)mobile=techno->unknown_14_bit2;
+ if(techno)mobile=techno->AbstractFlags.IsFoot;
  if(!techno || !mobile)return 0;
  return static_cast<FootClass *>(techno);
 }
@@ -46,7 +46,7 @@ int BuildingTypeClass::unknown_458b10(Cell const &origin,HouseClass *house) cons
   ObjectClass *object=map_cell.OccupierPtr;
   if(!object)continue;
   if(object->Kind_Of()==0x24)return 2;
-  if(!object->unknown_14_bit0)continue;
+  if(!object->AbstractFlags.IsTechno)continue;
   if(object->Kind_Of()==6) {
    if(!static_cast<BuildingClass *>(object)->unknown_44d900(const_cast<BuildingTypeClass *>(this),house))return 2;
    continue;

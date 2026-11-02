@@ -14,7 +14,7 @@ AbstractClass::AbstractClass() :
     RefCount(0),
     Dirty(false)
 {
-    unknown_14_bit0 = 0;
-    unknown_14_bit1 = 0;
-    unknown_14_bit2 = 0;
+    AbstractFlags.IsTechno = 0;
+    AbstractFlags.IsObject = 0;
+    AbstractFlags.IsFoot = 0;
 }

@@ -9,7 +9,7 @@
 
 int TechnoClass::unknown_slot175(ObjectClass *target)
 {
-    bool active = target != 0 && target->unknown_14_bit0;
+    bool active = target != 0 && target->AbstractFlags.IsTechno;
     if (!active) {
         return -1;
     }

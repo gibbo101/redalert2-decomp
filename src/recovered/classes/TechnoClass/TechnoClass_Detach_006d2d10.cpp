@@ -41,7 +41,7 @@ void TechnoClass::Detach(AbstractClass *target, bool all)
     }
     bool object;
     if (!all && target != 0) {
-        object = target->unknown_14_bit0;
+        object = target->AbstractFlags.IsTechno;
     }
     if (!all && target != 0 && object) {
         if (Map_Cell(target->Center_Coord())->unknown_47c2e0(House->ArrayIndex)) {

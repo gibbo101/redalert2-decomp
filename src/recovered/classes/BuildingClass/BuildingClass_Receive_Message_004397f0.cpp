@@ -22,7 +22,7 @@ inline int Building_Radio_Object_Distance_004397f0(ObjectClass const &origin,Abs
 inline FootClass *Building_Radio_Foot_004397f0(RadioClass *sender)
 {
     if (!sender) return 0;
-    return sender->unknown_14_bit2?static_cast<FootClass *>(sender):0;
+    return sender->AbstractFlags.IsFoot?static_cast<FootClass *>(sender):0;
 }
 inline TechnoClass *Building_Radio_Infantry_004397f0(RadioClass *sender)
 {

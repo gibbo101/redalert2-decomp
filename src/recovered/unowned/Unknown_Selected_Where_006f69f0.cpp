@@ -14,7 +14,7 @@ DynamicVectorClass<TechnoClass *> *__fastcall Unknown_006F69F0(UnknownTest test,
         ObjectClass *object = unknown_selected_83996c->Get(index);
         bool flag;
         if (object != 0) {
-            flag = object->unknown_14_bit0;
+            flag = object->AbstractFlags.IsTechno;
         }
         if (object != 0 && flag) {
             TechnoClass *techno = (TechnoClass *)object;

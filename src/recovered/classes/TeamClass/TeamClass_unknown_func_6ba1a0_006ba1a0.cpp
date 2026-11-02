@@ -80,7 +80,7 @@ void TeamClass::unknown_func_6ba1a0()
                         }
                     }
                     bool arrived = unit->Kind_Of() == 2 && unit->unknown_494 == unit->unknown_slot105();
-                    bool hovering = unit->unknown_14_bit0 && unit->unknown_slot32()->BalloonHover && distance < stray;
+                    bool hovering = unit->AbstractFlags.IsTechno && unit->unknown_slot32()->BalloonHover && distance < stray;
                     if (unit->unknown_494 != 0 && !arrived && !hovering) {
                         finished = false;
                     }

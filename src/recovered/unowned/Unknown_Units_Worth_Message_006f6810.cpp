@@ -39,7 +39,7 @@ void __fastcall Unknown_006F6810(wchar_t *buffer, wchar_t const *name)
         ObjectClass *object = unknown_objects_a40c60[index];
         bool flag;
         if (object != 0) {
-            flag = object->unknown_14_bit0;
+            flag = object->AbstractFlags.IsTechno;
         }
         if (object != 0 && flag) {
             TechnoClass *techno = (TechnoClass *)object;

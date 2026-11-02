@@ -47,7 +47,7 @@ int AircraftClass::unknown_slot28(ObjectClass *object, bool arg2)
             if (House->Is_Ally((TechnoClass *)object)) {
                 bool active;
                 if (object != 0) {
-                    active = object->unknown_14_bit0;
+                    active = object->AbstractFlags.IsTechno;
                 }
                 if (object == 0 || !active || object->Owning_House()->Is_Ally(this)) {
                     if (Cargo.Object == 0 && object->Kind_Of() == 1) {

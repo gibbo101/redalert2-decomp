@@ -9,7 +9,7 @@ bool __fastcall Planning_Idle_Mover(TechnoClass *techno)
     if (techno->unknown_slot91() == 0x0B) {
         bool flagged;
         if (techno) {
-            flagged = techno->unknown_14_bit2;
+            flagged = techno->AbstractFlags.IsFoot;
         }
         if (techno && flagged) {
             if (((FootClass *)techno)->unknown_494 || techno->unknown_228) {

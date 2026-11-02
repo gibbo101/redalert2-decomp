@@ -73,7 +73,7 @@ int FootClass::unknown_slot130()
     AbstractClass *archive = unknown_1b0;
     bool foot;
     if (archive != 0) {
-        foot = archive->unknown_14_bit2;
+        foot = archive->AbstractFlags.IsFoot;
     }
     if (archive != 0 && foot) {
         maxrange = Rules->GuardModeStray;

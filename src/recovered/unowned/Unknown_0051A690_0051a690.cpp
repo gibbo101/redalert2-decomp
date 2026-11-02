@@ -11,7 +11,7 @@
 #include "shared/coord_distance.hpp"
 
 // The selected object that best answers an order at the cell (or, without one, at the object): the
-// highest priority wins, ties go to the nearest. Priority: 0 an object without unknown_14_bit0, 1 a
+// highest priority wins, ties go to the nearest. Priority: 0 an object without AbstractFlags.IsTechno, 1 a
 // techno with unknown_slot201, 2 the other flagged technos, 3 with unknown_slot163, 4 that and not a
 // building (Kind_Of 6), 5 that and unknown_6c16f0(-1) > 0. The separate Count() > 0 guard is the
 // original's (the count is tested twice before the loop).
@@ -26,7 +26,7 @@ ObjectClass *__fastcall Unknown_0051A690(Cell const *cell, ObjectClass *object)
             int priority = 0;
             bool flagged = false;
             if (candidate != 0) {
-                flagged = candidate->unknown_14_bit0;
+                flagged = candidate->AbstractFlags.IsTechno;
             }
             if (flagged) {
                 TechnoClass *techno = (TechnoClass *)candidate;

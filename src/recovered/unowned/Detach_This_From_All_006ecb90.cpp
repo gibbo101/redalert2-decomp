@@ -72,7 +72,7 @@ void __fastcall Detach_This_From_All(AbstractClass *target, bool all)
 
     bool is_object;
     if (target != 0) {
-        is_object = target->unknown_14_bit1;
+        is_object = target->AbstractFlags.IsObject;
     }
     if (target != 0 && is_object) {
         for (index = 0; index < unknown_AbstractClass_list_00ac0d60.Count(); index++) {

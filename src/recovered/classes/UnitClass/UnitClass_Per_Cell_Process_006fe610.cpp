@@ -94,7 +94,7 @@ void UnitClass::unknown_slot93(int reason)
                     if (response==23) {
                         if (unknown_494 && unknown_494!=unknown_slot105()) {
                             AbstractClass *destination=unknown_494;
-                            if (destination && destination->unknown_14_bit0) unknown_slot150(14,(TechnoClass *)destination);
+                            if (destination && destination->AbstractFlags.IsTechno) unknown_slot150(14,(TechnoClass *)destination);
                         } else {
                             BuildingClass *building;
                             if (!contact) building=0;

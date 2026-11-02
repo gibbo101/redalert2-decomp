@@ -17,7 +17,7 @@ struct UnknownFootView : public TechnoClass {
 // AbstractClass flag bit 2: a FootClass (hypothesis).
 inline bool Is_Foot_4ec420(AbstractClass const *object)
 {
-    return object->unknown_14_bit2;
+    return object->AbstractFlags.IsFoot;
 }
 
 HRESULT __stdcall HouseClass::All_To_Hunt()

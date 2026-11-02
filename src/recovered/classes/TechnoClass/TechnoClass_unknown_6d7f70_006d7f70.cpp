@@ -14,7 +14,7 @@ bool TechnoClass::unknown_6d7f70()
     }
     if (((ObjectClass *)unknown_3f8)->unknown_7d) {
         AbstractClass *contact = unknown_3f8;
-        if (contact != 0 && contact->unknown_14_bit0) {
+        if (contact != 0 && contact->AbstractFlags.IsTechno) {
             TechnoClass *techno = (TechnoClass *)contact;
             if (unknown_slot150(2, techno) == 1) {
                 if (unknown_slot150(15, techno) == 1) {

@@ -4,8 +4,8 @@
     "id": "population-3646",
     "inventory_sha256": "8fbd6b6b6d48f42d5cf8ada2112251cec47f7f5c72d065717cc880ba73326d57",
     "gaps_sha256": "06c1f97d31425f19abded937bf826fa596b72bae227dadb8b45642bcd6b44aca",
-    "historical_population_sha256": "010eaf95c8627bb715ad1b32da1351fe5ac9998f3547a61d9d92558c28f18143",
-    "historical_acceptance_sha256": "3fc0475055d198a8152fe3e985c0eb996cc64b684bde13b37140dc4352e04b39"
+    "historical_population_sha256": "48f4f1287e0d1c373724459f39361caabde2a7b6761711f09daf17134975b333",
+    "historical_acceptance_sha256": "c34fd6298a4127db8e10f462349666b47d5346f4e01f86cf031361cb280dd738"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -10492,7 +10492,23 @@
     "??_EPlayerProfile@@UAEPAXI@Z": 7577744,
     "??_EParasiteClass@@UAEPAXI@Z": 6323696,
     "??_EConvertClass@@UAEPAXI@Z": 4743456,
-    "??_ECacheStraw@@UAEPAXI@Z": 5311184
+    "??_ECacheStraw@@UAEPAXI@Z": 5311184,
+    "??0TaskForceClass@@QAE@PBD@Z": 7039056,
+    "??_7TaskForceClass@@6BIPersistStream@@@": 8046752,
+    "??_7TaskForceClass@@6BIRTTITypeInfo@@@": 8046724,
+    "??_7TaskForceClass@@6BINoticeSink@@@": 8046716,
+    "??_7TaskForceClass@@6BINoticeSource@@@": 8046708,
+    "??0TaskForceClass@@QAE@ABVNoInitClass@@@Z": 7039264,
+    "??1TaskForceClass@@UAE@XZ": 7039312,
+    "??4TaskForceClass@@QAE?AV0@ABV0@@Z": 7039680,
+    "??0TaskForceClass@@QAE@ABV0@@Z": 7039440,
+    "??_GTaskForceClass@@UAEPAXI@Z": 7041456,
+    "?Pixel@PlanningBranchClass@@QBE?AUPoint2D@@XZ": 6359584,
+    "?QueryInterface@TiberianSunClassFactory@@UAGJABUGUID@@PAPAX@Z": 4352784,
+    "?Adjacent_Coord_With_Height@@YI?AUCoordStruct@@ABU1@H@Z": 4790400,
+    "?Region_Threat@MapClass@@QAEHPAVHouseClass@@HHH@Z": 5668128,
+    "??_7TaskForceClass@@6B@": 8046752,
+    "??_ETaskForceClass@@UAEPAXI@Z": 7041456
   },
   "regions": [
     {
@@ -14216,7 +14232,7 @@
           "resolved": 7261867
         }
       ],
-      "source_sha256": "51bb9db5fa2245d01f038787c32262dfad903c0cf2e36c2b3a537f9c96a2176b",
+      "source_sha256": "a0bcac59dfd5200870a99d31c825d4b9c9b7008f44c12bb010d89f7d47d37534",
       "switch_data_bytes": 81,
       "source": "src/recovered/unowned/Detach_This_From_All_006ecb90.cpp",
       "population": "population-3646",

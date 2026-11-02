@@ -21,7 +21,7 @@ void UnitClass::unknown_6fbc90()
     case 5:
         if (unknown_6c16f0(weapon) < 0) {
             AbstractClass *target = unknown_228;
-            if (target && target->unknown_14_bit1 && target->Kind_Of() == 1) {
+            if (target && target->AbstractFlags.IsObject && target->Kind_Of() == 1) {
                 if (((ObjectClass *)target)->Health_Ratio() >= Rules->unknown_1360) {
                     unknown_slot220(0);
                     return;

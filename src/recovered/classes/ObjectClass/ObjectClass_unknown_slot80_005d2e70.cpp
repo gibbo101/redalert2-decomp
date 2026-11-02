@@ -42,7 +42,7 @@ bool ObjectClass::unknown_slot80()
     }
     bool techno_flag;
     if (this) {
-        techno_flag = unknown_14_bit0;
+        techno_flag = AbstractFlags.IsTechno;
     }
     if (this && techno_flag && static_cast<TechnoTypeClass *>(Class_Of())->unknown_aa8) {
         unknown_objects_a40c60.Add_Head(this);

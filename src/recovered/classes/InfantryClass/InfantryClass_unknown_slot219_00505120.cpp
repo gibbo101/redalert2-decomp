@@ -35,7 +35,7 @@ AbstractClass *InfantryClass::unknown_slot219(int threat, CoordStruct const *coo
         AbstractClass *thief_target = unknown_494;
         bool active;
         if (thief_target != 0) {
-            active = thief_target->unknown_14_bit0;
+            active = thief_target->AbstractFlags.IsTechno;
         }
         if (thief_target != 0 && active && ((TechnoClass *)unknown_494)->unknown_slot31()
         && !((TechnoClass *)unknown_494)->unknown_slot32()->IsTrain && Distance_To(unknown_494) < 0xF00) {

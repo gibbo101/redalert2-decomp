@@ -4,8 +4,8 @@
     "id": "population-3495",
     "inventory_sha256": "c30f6dce70e326f1dfaa1b77cf914b6b8a7f0644c4e198821a0d713e5e8e2f08",
     "gaps_sha256": "187a12c775ffc571ca802c6e7598f2fb671a943ca269c0627fddf837e17c6ae3",
-    "historical_population_sha256": "1f08c21b0220eb0309288f082c6120e881eeb3d99068a94fa87b40ae09eb0f33",
-    "historical_acceptance_sha256": "69d840eb7de332e4c8578b5e80d0dcbfbd45cf258367e555d54997b46fdc51dd"
+    "historical_population_sha256": "f149f13126df4ed2a0c30153532402b3e451e5f32fba53a706ab6e8163d32454",
+    "historical_acceptance_sha256": "8e2bfb67fa5bc7cac0181f5382deac834be34a911a6daa8646e541d46caeee79"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -11689,7 +11689,32 @@
     "__real@4@3ffdaaaaab0000000000": 8019624,
     "?AI@ParasiteClass@@UAEXXZ": 6319952,
     "??_7?$VectorClass@PAVObjectTypeClass@@@@6B@": 8025772,
-    "??_ETextLabelClass@@UAEPAXI@Z": 7280624
+    "??_ETextLabelClass@@UAEPAXI@Z": 7280624,
+    "??0TaskForceClass@@QAE@PBD@Z": 7039056,
+    "??_7TaskForceClass@@6BIPersistStream@@@": 8046752,
+    "??_7TaskForceClass@@6BIRTTITypeInfo@@@": 8046724,
+    "??_7TaskForceClass@@6BINoticeSink@@@": 8046716,
+    "??_7TaskForceClass@@6BINoticeSource@@@": 8046708,
+    "??0TaskForceClass@@QAE@ABVNoInitClass@@@Z": 7039264,
+    "??1TaskForceClass@@UAE@XZ": 7039312,
+    "??4TaskForceClass@@QAE?AV0@ABV0@@Z": 7039680,
+    "??0TaskForceClass@@QAE@ABV0@@Z": 7039440,
+    "??_GTaskForceClass@@UAEPAXI@Z": 7041456,
+    "?Get_Type@@YIPAVAnimTypeClass@@AAVCCINIClass@@PBD1PAV1@@Z": 6634992,
+    "?Get_Type@@YIPBVAnimTypeClass@@AAVCCINIClass@@PBD1PBV1@@Z": 6635072,
+    "?Unknown_00406100@UnknownList14BC@@QAIXPAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
+    "??_GCacheStraw@@UAEPAXI@Z": 5311184,
+    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAVCommandClass@@@@PAU12@HABU12@@Z": 6137232,
+    "?Unknown_00406100@UnknownAudioController@@QAIXPAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
+    "??YCentroid@WorldDominationTour@@QAEAAU01@ABUPoint2D@@@Z": 7514048,
+    "?Average@Centroid@WorldDominationTour@@QBE?AUPoint2D@@XZ": 7514096,
+    "?Detach@MapClass@@QAEXPAVAbstractClass@@_N@Z": 5610880,
+    "___RTtypeid": 7879685,
+    "?QueryInterface@TiberianSunClassFactory@@UAGJABUGUID@@PAPAX@Z": 4352784,
+    "?Adjacent_Coord_With_Height@@YI?AUCoordStruct@@ABU1@H@Z": 4790400,
+    "??_7TaskForceClass@@6B@": 8046752,
+    "??_ETaskForceClass@@UAEPAXI@Z": 7041456,
+    "??_ECacheStraw@@UAEPAXI@Z": 5311184
   },
   "regions": [
     {
@@ -64215,7 +64240,7 @@
           "resolved": 7605587
         }
       ],
-      "source_sha256": "62bccc2f47139e3486a973aa6455a4edb4892dbe190a75b8bf610ff1f6522fe5",
+      "source_sha256": "5eb4dadce1d073bc1f72d36af90f94ec83569eea8759f2989871028897b592ff",
       "switch_data_bytes": 36,
       "source": "src/recovered/unowned/Refresh_Wonline_Players_0073fee0.cpp",
       "population": "population-3495",

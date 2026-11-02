@@ -41,7 +41,7 @@ void FootClass::Detach(AbstractClass *target, bool all)
         bool forget = true;
         bool object;
         if (!all && target != 0) {
-            object = target->unknown_14_bit0;
+            object = target->AbstractFlags.IsTechno;
         }
         if (!all && target != 0 && object) {
             UnknownCellClass *cell = (UnknownCellClass *)&Map[target->Center_Coord()];
@@ -50,7 +50,7 @@ void FootClass::Detach(AbstractClass *target, bool all)
             }
         }
         if (unknown_slot91() == 8 && Kind_Of() == 15 && ((InfantryClass *)this)->Type->Occupier && unknown_494 != 0
-            && unknown_494->unknown_14_bit1 && ((ObjectClass *)unknown_494)->unknown_7d && ((ObjectClass *)unknown_494)->Strength > 0) {
+            && unknown_494->AbstractFlags.IsObject && ((ObjectClass *)unknown_494)->unknown_7d && ((ObjectClass *)unknown_494)->Strength > 0) {
         } else if (forget) {
             unknown_490 = 0;
             unknown_494 = 0;

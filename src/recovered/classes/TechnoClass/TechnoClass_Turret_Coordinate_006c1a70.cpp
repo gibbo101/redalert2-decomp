@@ -9,7 +9,7 @@ CoordStruct TechnoClass::unknown_slot181(int which)
     TechnoTypeClass *type=unknown_slot32();
     Matrix3D matrix;
     double angle;
-    FootClass *foot=this && unknown_14_bit2 ? static_cast<FootClass *>(this) : 0;
+    FootClass *foot=this && AbstractFlags.IsFoot ? static_cast<FootClass *>(this) : 0;
     if (foot && foot->Locomotor) {
         Matrix3D drawn;
         Matrix3D locomotor_matrix(*foot->Locomotor.Checked()->Draw_Matrix(&drawn,0));

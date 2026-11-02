@@ -4,8 +4,8 @@
     "id": "population-3236",
     "inventory_sha256": "60ce7f43fa193eeabbcafd305b913c01a068161f08eab8b5b287c292dfed2e7e",
     "gaps_sha256": "2a9cf13a60373cc49abbc6b637b6f343c09ee824d501db57b8eeb5ef6e7a6c05",
-    "historical_population_sha256": "d0449a652a8b095d75f91eb6c31bcee033f7c1bedee7dcf8b1a72f91d1b47685",
-    "historical_acceptance_sha256": "967f7878348e6421b620794a15df8ec9296cd698ab683b748f4800abac695ace"
+    "historical_population_sha256": "5ceb83e8fdee1ad615ee55473eb39c7591cfaf0b9d9918c6a1f099f33531d6e9",
+    "historical_acceptance_sha256": "c60147afed10d50eb6baf1621e366ec3579214949bea9c0ddf35061e8f9d7d11"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -13380,7 +13380,7 @@
           "resolved": 2694502
         }
       ],
-      "source_sha256": "788b06dbaddbad0f1557257dc87e86571de1f4bb7248bad48710ed2dc147f8e6",
+      "source_sha256": "5a08eb35d299ab3a71781b4e1be7847736dd1332519b0e0d343888504df92e65",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_unknown_slot218_00503a60.cpp",
       "population": "population-3236",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -13846,7 +13846,7 @@
           "resolved": 4294717599
         }
       ],
-      "source_sha256": "cde01c01314592c3c0cab7c8615ccc1524124bf00f381fd132c633429f4eefd8",
+      "source_sha256": "2f7c152f6224e4f015d2954f1d7a06a0106dfc411df79b93e060154ea77013db",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_unknown_slot219_00505120.cpp",
       "population": "population-3236",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
@@ -16830,7 +16830,7 @@
           "resolved": 4294373518
         }
       ],
-      "source_sha256": "443f0c882db4250a471d32095b06e39838e1cc73652d717bee77f99c848d6bd6",
+      "source_sha256": "8a1b7a09027fba650a39bc97b9cdc96d18d92f4f58592489d81d40fa3729e38f",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_Update_Fire_00507530.cpp",
       "population": "population-3236",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -18118,7 +18118,7 @@
           "resolved": 10706356
         }
       ],
-      "source_sha256": "ac16a524c2ea44b1188d38f7183e910d47af48aca80ab7cd1dd656742397788a",
+      "source_sha256": "c872fb41df6d1d499d55fb2c80399dacba8658e2fdbd5a206906f3b9e4ee41a5",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_Select_Object_Action_00505390.cpp",
       "population": "population-3236",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",

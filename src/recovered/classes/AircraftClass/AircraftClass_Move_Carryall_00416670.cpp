@@ -61,7 +61,7 @@ int AircraftClass::Move_Carryall_00416670()
         TechnoClass *target = unknown_494->As_Techno();
         if (target && !Cargo.Object && House->Is_Ally(target)) {
             // Models the original byte temporary; source type/spelling remain nonunique.
-            bool const &target_is_techno = target->unknown_14_bit0;
+            bool const &target_is_techno = target->AbstractFlags.IsTechno;
             if (target_is_techno && !target->Owning_House()->Is_Ally(this)) goto select_destination;
             if (target->Kind_Of() == 1) {
                 Debug_Printf(unknown_aircraft_move_log_7ce8f0);

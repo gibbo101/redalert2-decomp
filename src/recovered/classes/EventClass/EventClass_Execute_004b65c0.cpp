@@ -231,7 +231,7 @@ void EventClass::Execute()
             }
             if (ByteAt(0x0C) == 7 && techno->Mission == 7) {
                 if (techno) {
-                    foot = techno->unknown_14_bit2;
+                    foot = techno->AbstractFlags.IsFoot;
                 }
                 if (techno && foot) {
                     AbstractClass *dest = TargetAt(0x13).As_Abstract();
@@ -253,7 +253,7 @@ void EventClass::Execute()
                 techno->unknown_3f8 = 0;
             }
             if (techno) {
-                foot = techno->unknown_14_bit2;
+                foot = techno->AbstractFlags.IsFoot;
             }
             if (techno && foot && ((FootClass *)techno)->Team && ByteAt(0x0C) != 0x10) {
                 ((FootClass *)techno)->Team->Unknown_006B8FB0((FootClass *)techno, -1, true);
@@ -264,7 +264,7 @@ void EventClass::Execute()
             int mission = techno->unknown_slot268((UnknownSlot268Arg const *)this);
             techno->unknown_slot116(mission, false);
             FootClass *footp;
-            if (techno->unknown_14_bit2) {
+            if (techno->AbstractFlags.IsFoot) {
                 footp = (FootClass *)techno;
             } else {
                 footp = 0;
@@ -275,7 +275,7 @@ void EventClass::Execute()
             techno->unknown_22c = 0;
             if (ByteAt(0x0C) == 0x0B) {
                 if (techno) {
-                    foot = techno->unknown_14_bit2;
+                    foot = techno->AbstractFlags.IsFoot;
                 }
                 if (techno && foot) {
                     techno->unknown_slot220(0);
@@ -307,7 +307,7 @@ void EventClass::Execute()
                 }
             }
             if (techno) {
-                foot = techno->unknown_14_bit2;
+                foot = techno->AbstractFlags.IsFoot;
             }
             if (techno && foot) {
                 ((FootClass *)techno)->unknown_49c.Clear();
@@ -367,7 +367,7 @@ void EventClass::Execute()
         techno = TargetAt(0x07).As_Techno();
         Planning_Techno_00615480(techno, 0);
         if (techno) {
-            foot = techno->unknown_14_bit2;
+            foot = techno->AbstractFlags.IsFoot;
         }
         if (techno && foot && techno->unknown_7d && !techno->unknown_76 && !techno->unknown_370) {
             ((FootClass *)techno)->unknown_59c = true;

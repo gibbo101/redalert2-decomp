@@ -59,7 +59,7 @@ wchar_t const *DisplayClass::unknown_slot33(int id)
     if (object == 0) {
         return 0;
     }
-    TechnoClass *techno = object != 0 && object->unknown_14_bit0 ? (TechnoClass *)object : 0;
+    TechnoClass *techno = object != 0 && object->AbstractFlags.IsTechno ? (TechnoClass *)object : 0;
     if (techno != 0) {
         if (!techno->unknown_372) {
             if (techno->unknown_1b8 == 2 && !Map[techno->Center_Coord()].unknown_47c2e0(unknown_player_a35db4->ArrayIndex)) {

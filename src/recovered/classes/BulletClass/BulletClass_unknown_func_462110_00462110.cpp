@@ -63,7 +63,7 @@ template<class T> inline T Random2_Pick(T a, T b)
 inline TechnoClass *Bullet_Target_Techno(AbstractClass *target)
 {
     if (target == 0) return 0;
-    return target->unknown_14_bit0 ? static_cast<TechnoClass *>(target) : 0;
+    return target->AbstractFlags.IsTechno ? static_cast<TechnoClass *>(target) : 0;
 }
 
 void BulletClass::unknown_func_462110(CoordStruct const &position)
@@ -83,8 +83,8 @@ void BulletClass::unknown_func_462110(CoordStruct const &position)
     if (WH->MindControl) {
         if (Owner != 0 && Owner->unknown_230 != 0) {
             ObjectClass *object = Target == 0 ? 0 :
-                (Target->unknown_14_bit1 ? static_cast<ObjectClass *>(Target) : 0);
-            bool target_house = Target != 0 && Target->unknown_14_bit0 &&
+                (Target->AbstractFlags.IsObject ? static_cast<ObjectClass *>(Target) : 0);
+            bool target_house = Target != 0 && Target->AbstractFlags.IsTechno &&
                 static_cast<TechnoClass *>(Target)->House->Unknown_004F52B0();
             if (object != 0 && object->unknown_7d && object->unknown_34 != 0) {
                 object->unknown_34->Spring(6, object, unknown_geometry_k, false, (int)Owner);
@@ -98,7 +98,7 @@ void BulletClass::unknown_func_462110(CoordStruct const &position)
         }
     } else if (WH->IvanBomb) {
         TechnoClass *target = Target == 0 ? 0 :
-            (Target->unknown_14_bit0 ? static_cast<TechnoClass *>(Target) : 0);
+            (Target->AbstractFlags.IsTechno ? static_cast<TechnoClass *>(Target) : 0);
         unknown_list_8322e0.Add_Bomb(Owner, target);
     } else if (WH->ElectricAssault) {
         if (Target != 0 && Target->Kind_Of() == 6 && Owner != 0 && Owner->Kind_Of() == 15)
@@ -106,7 +106,7 @@ void BulletClass::unknown_func_462110(CoordStruct const &position)
     } else if (WH->Parasite) {
         if (Owner != 0) {
             FootClass *target = Target == 0 ? 0 :
-                (Target->unknown_14_bit2 ? static_cast<FootClass *>(Target) : 0);
+                (Target->AbstractFlags.IsFoot ? static_cast<FootClass *>(Target) : 0);
             static_cast<FootClass *>(Owner)->unknown_588->Unknown_00607980(target);
         }
     } else if (WH->Temporal) {
@@ -115,7 +115,7 @@ void BulletClass::unknown_func_462110(CoordStruct const &position)
             Owner->unknown_208->Unknown_006E27B0(target);
         }
     } else if (WH->BombDisarm) {
-        if (Target != 0 && Target->unknown_14_bit1) {
+        if (Target != 0 && Target->AbstractFlags.IsObject) {
             ObjectClass *object = static_cast<ObjectClass *>(Target);
             if (object->unknown_38 != 0) object->unknown_38->Unknown_00435FB0();
         }

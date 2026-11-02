@@ -70,9 +70,23 @@ public:
     virtual void AI();                                                           // 0x00410310 slot 23
 
     long UniqueID;                  // +0x10
-    unsigned char unknown_14_bit0 : 1;  // +0x14
-    unsigned char unknown_14_bit1 : 1;
-    unsigned char unknown_14_bit2 : 1;
+#ifndef RA2_ABSTRACT_FLAGS_UNNAMED
+    // A named member: the implicit copy constructor 0x006B69D0 (TaskForceClass)
+    // copies the flag byte whole, which it does not for direct bitfields.
+    struct {
+        unsigned char IsTechno : 1;     // set by TechnoClass's constructor
+        unsigned char IsObject : 1;     // set by ObjectClass's constructor
+        unsigned char IsFoot : 1;       // set by FootClass's constructor
+    } AbstractFlags;                    // +0x14
+#else
+    // The same bits without the struct type, for a unit that never reads the
+    // flags and holds a row whose register tie follows the count of struct
+    // types declared before it (Pick_Lobby 0x00744090, through the wonline
+    // unit's house_type.hpp; VC6_MATCHING_NOTES "Type-count sensitivity").
+    unsigned char IsTechno : 1;         // +0x14
+    unsigned char IsObject : 1;
+    unsigned char IsFoot : 1;
+#endif
     int unknown_18;                 // +0x18
     long RefCount;                  // +0x1C
     bool Dirty;                     // +0x20

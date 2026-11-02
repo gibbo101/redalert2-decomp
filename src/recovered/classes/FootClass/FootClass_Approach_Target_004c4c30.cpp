@@ -154,7 +154,7 @@ void FootClass::unknown_slot304()
     if (unknown_228->Kind_Of()==11) target_bridge=(((CellClass *)unknown_228)->unknown_140&0x100)!=0;
     else {
         AbstractClass *target=unknown_228;
-        if (target && target->unknown_14_bit1) target_bridge=((ObjectClass *)target)->unknown_79;
+        if (target && target->AbstractFlags.IsObject) target_bridge=((ObjectClass *)target)->unknown_79;
     }
     int movement_zone=unknown_slot32()->MovementZone;
     bool found=false;

@@ -53,7 +53,7 @@ void InfantryClass::Update_Fire_00507530()
 
             if (unknown_6c16f0(weapon) < 0) {
                 AbstractClass *target = unknown_228;
-                if (target != 0 && target->unknown_14_bit1 && target->Kind_Of() == 15) {
+                if (target != 0 && target->AbstractFlags.IsObject && target->Kind_Of() == 15) {
                     if (((ObjectClass *)target)->Health_Ratio() >= Rules->unknown_1360) {
                         unknown_slot220(0);
                     }

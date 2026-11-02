@@ -18,7 +18,7 @@ bool TechnoClass::unknown_6c6130(int method,int mask,Cell const *cell,int range,
         if(tentative!=this) {
             if(!tentative) tech=0;
             else {
-                if(tentative->unknown_14_bit0) tech=static_cast<TechnoClass *>(tentative);
+                if(tentative->AbstractFlags.IsTechno) tech=static_cast<TechnoClass *>(tentative);
                 else tech=0;
             }
             if(tech) {

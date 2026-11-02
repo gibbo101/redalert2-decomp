@@ -15,7 +15,7 @@ void LogicClass::Environment_AI()
     for (int index = 0; index < Count(); index++) {
         FootClass *foot = (FootClass *)(*this)[index];
         bool is_foot;
-        if (foot != 0) is_foot = foot->unknown_14_bit2;
+        if (foot != 0) is_foot = foot->AbstractFlags.IsFoot;
         if (foot != 0 && is_foot && foot->Locomotor != 0 && !foot->unknown_325) {
             foot->Locomotor.Checked()->Process();
         }

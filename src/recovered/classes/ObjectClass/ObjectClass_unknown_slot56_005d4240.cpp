@@ -31,7 +31,7 @@ bool ObjectClass::unknown_slot56(CoordStruct const &coord)
         if (cell != 0 && (!(cell->Flags & 0x100) || (unknown_79 = true, (cell->Flags & 0x200) != 0))) {
             bool techno;
             if (this != 0) {
-                techno = unknown_14_bit0;
+                techno = AbstractFlags.IsTechno;
             }
             bool clear = true;
             if (this != 0 && techno) {

@@ -40,7 +40,7 @@ int UnitClass::unknown_slot95(RadioClass *radio, int message, long &param)
         if (Type->Passengers != 0 && radio && House->Is_Ally(sender)) {
             if (unknown_slot111()) return 0;
             if (!sender->unknown_234 &&
-                (!radio->unknown_14_bit2 || !((FootClass *)radio)->unknown_580)) {
+                (!radio->AbstractFlags.IsFoot || !((FootClass *)radio)->unknown_580)) {
                 if (sender->unknown_230 &&
                     *(int const *)((char const *)sender->unknown_230 + 0x24) != 0) return 0;
                 int capacity = Type->Passengers;
@@ -87,7 +87,7 @@ int UnitClass::unknown_slot95(RadioClass *radio, int message, long &param)
             CellClass &tile = Map[cell];
             int own_zone = Map.Zone(unknown_454, sender->unknown_slot32()->MovementZone, false);
             int sender_zone = -1;
-            if (radio && radio->unknown_14_bit2)
+            if (radio && radio->AbstractFlags.IsFoot)
                 sender_zone = Map.Zone(((FootClass *)radio)->unknown_454,
                                        sender->unknown_slot32()->MovementZone, false);
             if (own_zone != sender_zone) {

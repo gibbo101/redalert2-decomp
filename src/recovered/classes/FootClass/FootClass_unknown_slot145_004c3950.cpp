@@ -49,7 +49,7 @@ int FootClass::unknown_slot145()
     case 0: {
         CoordStruct coord = Coord;
         AbstractClass *target = unknown_slot219(2, &coord, false);
-        ObjectClass *optr = target == 0 ? 0 : (target->unknown_14_bit1 ? (ObjectClass *)target : 0);
+        ObjectClass *optr = target == 0 ? 0 : (target->AbstractFlags.IsObject ? (ObjectClass *)target : 0);
         int primary = unknown_slot174(optr);
 
         if (optr != 0 && (unknown_slot212(optr, primary) || unknown_path_estimator_8315c8.Unknown_0042AA30(Coord_Cell(unknown_slot19(0)), Coord_Cell(optr->unknown_slot19(0)), this, unknown_slot46(0), optr->unknown_slot46(0), -1) < dist)) {
@@ -87,7 +87,7 @@ int FootClass::unknown_slot145()
     }
 
     case 1: {
-        ObjectClass *optr = unknown_228 == 0 ? 0 : (unknown_228->unknown_14_bit1 ? (ObjectClass *)unknown_228 : 0);
+        ObjectClass *optr = unknown_228 == 0 ? 0 : (unknown_228->AbstractFlags.IsObject ? (ObjectClass *)unknown_228 : 0);
         int primary = unknown_slot174(optr);
 
         if (unknown_slot193() && optr != 0 && optr->Kind_Of() == 6 && House->Is_Ally(((TechnoClass *)optr)->House) && optr->Health_Ratio() > Rules->unknown_1370) {
@@ -106,7 +106,7 @@ int FootClass::unknown_slot145()
 
         if (unknown_228 == 0) {
             AbstractClass *target = unknown_slot219(2, &unknown_4cc->Center_Coord(), false);
-            ObjectClass *scan = target == 0 ? 0 : (target->unknown_14_bit1 ? (ObjectClass *)target : 0);
+            ObjectClass *scan = target == 0 ? 0 : (target->AbstractFlags.IsObject ? (ObjectClass *)target : 0);
             int weapon = unknown_slot174(scan);
             if (scan != 0 && (unknown_slot212(scan, weapon) || unknown_path_estimator_8315c8.Unknown_0042AA30(((UnknownCellClass *)unknown_4cc)->unknown_24, Coord_Cell(scan->unknown_slot19(0)), this, ((UnknownCellClass *)unknown_4cc)->Flags >> 8 & 1, scan->unknown_slot46(0), -1) < dist)) {
                 unknown_slot220(target);
@@ -137,7 +137,7 @@ int FootClass::unknown_slot145()
 
     case 2: {
         AbstractClass *target = unknown_slot219(2, &unknown_4cc->Center_Coord(), false);
-        ObjectClass *optr = target == 0 ? 0 : (target->unknown_14_bit1 ? (ObjectClass *)target : 0);
+        ObjectClass *optr = target == 0 ? 0 : (target->AbstractFlags.IsObject ? (ObjectClass *)target : 0);
         int primary = unknown_slot174(optr);
 
         if (optr != 0 && (unknown_slot212(optr, primary) || unknown_path_estimator_8315c8.Unknown_0042AA30(((UnknownCellClass *)unknown_4cc)->unknown_24, Coord_Cell(optr->unknown_slot19(0)), this, ((UnknownCellClass *)unknown_4cc)->Flags >> 8 & 1, optr->unknown_slot46(0), -1) < dist)) {

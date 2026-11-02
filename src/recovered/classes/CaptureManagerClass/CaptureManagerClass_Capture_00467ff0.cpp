@@ -17,7 +17,7 @@ bool CaptureManagerClass::Capture(TechnoClass *target)
         unknown_24 = 0;
         unknown_28 = 0;
     }
-    bool capture = target != 0 && target->unknown_14_bit0 && Can_Capture(target);
+    bool capture = target != 0 && target->AbstractFlags.IsTechno && Can_Capture(target);
     if (!capture) {
         return false;
     }
@@ -28,7 +28,7 @@ bool CaptureManagerClass::Capture(TechnoClass *target)
     }
     unknown_24 = target;
     target->unknown_234 = Owner;
-    if (unknown_24 != 0 && unknown_24->unknown_14_bit2 && ((FootClass *)unknown_24)->Team != 0) {
+    if (unknown_24 != 0 && unknown_24->AbstractFlags.IsFoot && ((FootClass *)unknown_24)->Team != 0) {
         ((FootClass *)unknown_24)->Team->Unknown_006B8FB0((FootClass *)unknown_24, -1, 0);
     }
     unknown_24->unknown_slot260(0, true);

@@ -37,7 +37,7 @@ void AircraftClass::AI()
     if (unknown_228) {
         if (((ObjectClass *)unknown_228)->unknown_slot21()) unknown_slot220(0);
         else if (unknown_228) {
-            unsigned char const &target_is_techno = unknown_228->unknown_14_bit0;
+            unsigned char const &target_is_techno = unknown_228->AbstractFlags.IsTechno;
             if (target_is_techno && !House->Is_Ally((ObjectClass *)unknown_228) &&
                 ((TechnoClass *)unknown_228)->unknown_1b8 == 2 &&
                 !((TechnoClass *)unknown_228)->unknown_slot192(House)) unknown_slot220(0);

@@ -11,7 +11,7 @@
 bool TechnoClass::unknown_6d8080()
 {
     if (unknown_3f8 != 0) {
-        if (unknown_3f8->unknown_14_bit0 && ((ObjectClass *)unknown_3f8)->unknown_7d) {
+        if (unknown_3f8->AbstractFlags.IsTechno && ((ObjectClass *)unknown_3f8)->unknown_7d) {
             Cell cell = unknown_6cf130(unknown_3f8);
             if (cell.X != unknown_geometry_k.X || cell.Y != unknown_geometry_k.Y) {
                 unknown_slot260((AbstractClass *)&Map[cell], 1);

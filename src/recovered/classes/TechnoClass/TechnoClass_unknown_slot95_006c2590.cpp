@@ -108,7 +108,7 @@ int TechnoClass::unknown_slot95(RadioClass *from, int message, long &param)
                 unknown_70 += step;
                 bool foot;
                 if (this != 0) {
-                    foot = unknown_14_bit2;
+                    foot = AbstractFlags.IsFoot;
                 }
                 if (this != 0 && foot && ((FootClass *)this)->unknown_580 != 0) {
                     ((FootClass *)this)->unknown_580->unknown_588->unknown_2c = 50;

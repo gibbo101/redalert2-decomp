@@ -16,7 +16,7 @@ ObjectClass *UnknownPathEstimator::Unknown_00428950(Cell const &cell,int level)
             FootClass *object=(FootClass*)(alternate?neighbor.AltOccupierPtr:neighbor.OccupierPtr);
             while(object) {
                 bool isFoot;
-                if(object!=0)isFoot=object->unknown_14_bit2;
+                if(object!=0)isFoot=object->AbstractFlags.IsFoot;
                 if(object!=0 && isFoot) {
                     if(object->Locomotor.Checked()->Is_Moving_Here(destination))return object;
                 }

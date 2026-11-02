@@ -27,7 +27,7 @@ int RadioClass::unknown_slot95(RadioClass *radio, int message, long &param)
         if (!((TechnoClass *)radio)->House->Is_Ally((TechnoClass *)this)) {
             return 0xA;
         }
-        if (this != 0 && unknown_14_bit0 && !((TechnoClass *)this)->House->Is_Ally((TechnoClass *)radio)) {
+        if (this != 0 && AbstractFlags.IsTechno && !((TechnoClass *)this)->House->Is_Ally((TechnoClass *)radio)) {
             return 0xA;
         }
         if (radio != 0 && Unknown_00636E70((TechnoClass *)radio) != -1) {

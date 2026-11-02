@@ -26,7 +26,7 @@
 inline FootClass *Foot_Of_6dff00(ObjectClass *object)
 {
     bool foot;
-    if (object) foot = object->unknown_14_bit2;
+    if (object) foot = object->AbstractFlags.IsFoot;
     if (!object || !foot) return 0;
     return static_cast<FootClass *>(object);
 }

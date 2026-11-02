@@ -4,8 +4,8 @@
     "id": "population-3611",
     "inventory_sha256": "0c0f4a19427059a2e4417db23e830926e95694f21524feb40331e3edd87f9c26",
     "gaps_sha256": "a5c7b670f7159a1d42c77de840de90612bae9a81d077b9ab72d801bdac619471",
-    "historical_population_sha256": "12c1491f4cfe3d046dd8c42c3ea708478840830d7261cfbbdaf5efacf6cab1a9",
-    "historical_acceptance_sha256": "937f0762755d15947c1be355cae123855e6d87be3147d54a1aa6deed3530782a"
+    "historical_population_sha256": "1469ab0306fde11b7468b1c7ed5740820682836268a9ef089d211795980e8a65",
+    "historical_acceptance_sha256": "5e5c3545222aa0588f8e74fe9fcfb57803cf8d6594c4f3160c5565a4597d8b85"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -14798,7 +14798,30 @@
     "?FUN_00672f20@Owner_00672f20@seed_00672f20@@QAEXH@Z": 6762272,
     "?Unknown_00672F20@UnknownSessionState@@QAEXH@Z": 6762272,
     "?unknown_ini_5b7840@MultiplayerGameMode@@QAEPAVCCINIClass@@XZ": 5994560,
-    "??0WDTTerritory@@QAE@XZ": 7519744
+    "??0WDTTerritory@@QAE@XZ": 7519744,
+    "?ObjectTypes@ObjectTypeClass@@2V?$DynamicVectorClass@PAVObjectTypeClass@@@@A": 10956688,
+    "??0TaskForceClass@@QAE@PBD@Z": 7039056,
+    "?Set_Text@TextLabelClass@@UAEXPBG@Z": 7280608,
+    "??_7TaskForceClass@@6BIPersistStream@@@": 8046752,
+    "??_7TaskForceClass@@6BIRTTITypeInfo@@@": 8046724,
+    "??_7TaskForceClass@@6BINoticeSink@@@": 8046716,
+    "??_7TaskForceClass@@6BINoticeSource@@@": 8046708,
+    "??0TaskForceClass@@QAE@ABVNoInitClass@@@Z": 7039264,
+    "??1TaskForceClass@@UAE@XZ": 7039312,
+    "??4TaskForceClass@@QAE?AV0@ABV0@@Z": 7039680,
+    "??0TaskForceClass@@QAE@ABV0@@Z": 7039440,
+    "??_GTaskForceClass@@UAEPAXI@Z": 7041456,
+    "?Dial@PhoneEdit@@QAE_NXZ": 6347904,
+    "?AI@ParasiteClass@@UAEXXZ": 6319952,
+    "??YCentroid@WorldDominationTour@@QAEAAU01@ABUPoint2D@@@Z": 7514048,
+    "?Average@Centroid@WorldDominationTour@@QBE?AUPoint2D@@XZ": 7514096,
+    "?Place@SuperClass@@QAEXABVCell@@_N@Z": 6936656,
+    "?Detach@MapClass@@QAEXPAVAbstractClass@@_N@Z": 5610880,
+    "___RTtypeid": 7879685,
+    "?QueryInterface@TiberianSunClassFactory@@UAGJABUGUID@@PAPAX@Z": 4352784,
+    "?Adjacent_Coord_With_Height@@YI?AUCoordStruct@@ABU1@H@Z": 4790400,
+    "??_7TaskForceClass@@6B@": 8046752,
+    "??_ETaskForceClass@@UAEPAXI@Z": 7041456
   },
   "regions": [
     {
@@ -28319,7 +28342,7 @@
           "resolved": 10751088
         }
       ],
-      "source_sha256": "db61a394cdefcce86a56b6e91717b1b2609463d4005ca37d17aed15afea6d168",
+      "source_sha256": "c30615f380238189a3e8c0ae6a8d7135c64c42fabb657a161493d54917aa28a0",
       "source": "src/recovered/unowned/Unknown_0051A690_0051a690.cpp",
       "population": "population-3611",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",

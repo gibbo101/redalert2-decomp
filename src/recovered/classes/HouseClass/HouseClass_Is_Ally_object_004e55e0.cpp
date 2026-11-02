@@ -3,7 +3,7 @@
 
 bool HouseClass::Is_Ally(ObjectClass const *object) const
 {
-    if (object != 0 && object->unknown_14_bit1) {
+    if (object != 0 && object->AbstractFlags.IsObject) {
         HouseClass *house = object->Owning_House();
         if (house != 0) {
             if (house == this) {

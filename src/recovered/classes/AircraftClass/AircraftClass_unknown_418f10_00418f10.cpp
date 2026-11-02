@@ -50,7 +50,7 @@ AbstractClass *AircraftClass::unknown_418f10(AbstractClass *desired)
         int best_distance = -1;
         int previous_record_distance = -1;
         CoordStruct destination = unknown_geometry_l;
-        if (desired->unknown_14_bit2) {
+        if (desired->AbstractFlags.IsFoot) {
             AbstractClass *next = static_cast<FootClass *>(desired)->unknown_494;
             if (next) destination = next->Center_Coord();
         }

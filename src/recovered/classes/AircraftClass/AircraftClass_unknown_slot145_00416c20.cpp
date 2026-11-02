@@ -54,7 +54,7 @@ int AircraftClass::unknown_slot145()
         if (unknown_254 != 0) {
             position = Coord;
             AbstractClass *threat = unknown_slot219(2, &position, false);
-            if (threat && threat->unknown_14_bit1) {
+            if (threat && threat->AbstractFlags.IsObject) {
                 unknown_slot119(1, (int)threat, 0);
                 unknown_a8 = 0;
                 return 1;

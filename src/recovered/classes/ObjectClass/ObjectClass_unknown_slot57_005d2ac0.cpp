@@ -19,7 +19,7 @@ void ObjectClass::unknown_slot57()
     unknown_slot71(1);
     bool foot;
     if (this != 0) {
-        foot = unknown_14_bit2;
+        foot = AbstractFlags.IsFoot;
     }
     if (this != 0 && foot) {
         if (!((FootClass *)this)->Locomotor.Checked()->Is_Moving()) {

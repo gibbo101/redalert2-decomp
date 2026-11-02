@@ -53,7 +53,7 @@ extern char const house_cpp_path_007da270[];
 // Primary Abstract/Object base adjustment is zero; this performs the actual type test.
 static inline FootClass *House_Foot_View(AbstractClass *object)
 {
-    if (object && object->unknown_14_bit2) return reinterpret_cast<FootClass *>(object);
+    if (object && object->AbstractFlags.IsFoot) return reinterpret_cast<FootClass *>(object);
     return 0;
 }
 

@@ -23,7 +23,7 @@ bool TechnoClass::unknown_6d4180()
     bool foot;
     bool foot2;
     if (unknown_228 == 0 && !House->Unknown_004F52F0() && this != 0) {
-        if (this != 0) foot = unknown_14_bit2;
+        if (this != 0) foot = AbstractFlags.IsFoot;
         if (foot && ((FootClass *)this)->Team != 0) {
             TeamTypeClass *team_type = ((FootClass *)this)->Team->Class;
             if (!team_type->Suicide && team_type->Aggressive && Mission == 2) {
@@ -36,7 +36,7 @@ bool TechnoClass::unknown_6d4180()
     }
     if (Mission == 2 && unknown_slot32()->BalloonHover) {
         foot2 = false;
-        if (this != 0) foot2 = unknown_14_bit2;
+        if (this != 0) foot2 = AbstractFlags.IsFoot;
         if (!foot2) {
             return false;
         }

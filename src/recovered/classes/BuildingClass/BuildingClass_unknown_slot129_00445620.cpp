@@ -72,7 +72,7 @@ check_occupants:
                 TechnoClass *techno = Contact(index);
                 bool active;
                 if (techno != 0) {
-                    active = techno->unknown_14_bit0;
+                    active = techno->AbstractFlags.IsTechno;
                 }
                 if (techno != 0 && active) {
                     if (techno->unknown_slot91() == 7) {

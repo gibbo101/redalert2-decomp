@@ -18,7 +18,7 @@ ObjectClass *CellClass::unknown_471660(Point2D const &spot, bool alt, ObjectClas
         while (object != 0) {
             bool techno;
             if (object != 0) {
-                techno = object->unknown_14_bit0;
+                techno = object->AbstractFlags.IsTechno;
             }
             if (object != 0 && techno && object != except) {
                 CoordStruct coord = object->Center_Coord();

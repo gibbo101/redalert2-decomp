@@ -38,7 +38,7 @@ TechnoClass::TechnoClass(HouseClass *house) :
     unknown_3d8.Init();
     Technos.Add(this);
     unknown_abstracts_ac0d08.Add(this);
-    unknown_14_bit0=true;
+    AbstractFlags.IsTechno=true;
     for (int i=0;i<8;++i) unknown_25c[i]=0;
     unknown_320=short(unknown_id_source_a3d290->Random()());
 }

@@ -79,7 +79,7 @@ bool TechnoClass::unknown_6d3b60(TechnoClass *source, int arg2)
     }
     bool foot;
     if (this != 0) {
-        foot = unknown_14_bit2;
+        foot = AbstractFlags.IsFoot;
     }
     if (this != 0 && foot && ((FootClass *)this)->Team != 0 && ((FootClass *)this)->Team->Class->Suicide) {
         return false;
@@ -88,7 +88,7 @@ bool TechnoClass::unknown_6d3b60(TechnoClass *source, int arg2)
         AbstractClass *target = unknown_228;
         bool techno;
         if (target != 0) {
-            techno = target->unknown_14_bit1;
+            techno = target->AbstractFlags.IsObject;
         }
         if (target != 0 && techno
             && unknown_6d7550((ObjectClass *)target, unknown_geometry_l) > unknown_6d7550((ObjectClass *)source, unknown_geometry_l)) {
@@ -97,7 +97,7 @@ bool TechnoClass::unknown_6d3b60(TechnoClass *source, int arg2)
     }
     bool foot2;
     if (this != 0) {
-        foot2 = unknown_14_bit2;
+        foot2 = AbstractFlags.IsFoot;
     }
     if (this != 0 && foot2 && source == ((FootClass *)this)->unknown_580) {
         return false;

@@ -12,7 +12,7 @@
 // The target as an object (an inline cast helper; hypothesis).
 static inline ObjectClass *As_Object(AbstractClass *target)
 {
-    return !target ? 0 : (target->unknown_14_bit0 ? (ObjectClass *)target : 0);
+    return !target ? 0 : (target->AbstractFlags.IsTechno ? (ObjectClass *)target : 0);
 }
 
 void UnitClass::unknown_slot304()

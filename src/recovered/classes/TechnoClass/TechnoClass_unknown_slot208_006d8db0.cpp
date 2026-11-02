@@ -26,7 +26,7 @@ bool TechnoClass::unknown_slot208(ObjectClass *target)
         && unknown_overlay_types_a35de8[((UnknownTechnoCellView *)target)->Overlay]->unknown_285) {
         return true;
     }
-    if (target != 0 && target->unknown_14_bit1 && target->unknown_slot48() && target->unknown_slot51(true) == 0) {
+    if (target != 0 && target->AbstractFlags.IsObject && target->unknown_slot48() && target->unknown_slot51(true) == 0) {
         return true;
     }
     return false;

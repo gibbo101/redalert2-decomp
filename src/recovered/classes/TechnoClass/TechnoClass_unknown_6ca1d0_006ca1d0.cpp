@@ -31,7 +31,7 @@ void TechnoClass::unknown_6ca1d0(AbstractClass *target, int chrono)
         depth = from.Y - to.Y;
     }
     CoordStruct coord;
-    bool object = target != 0 && target->unknown_14_bit1;
+    bool object = target != 0 && target->AbstractFlags.IsObject;
     if (!object) {
         coord = target->unknown_slot22();
     } else {

@@ -51,7 +51,7 @@ bool TechnoClass::unknown_slot209(CoordStruct const *coord, int arg2)
             int weapon = unknown_slot174(unknown_228);
             TechnoClass *techno = (TechnoClass *)target;
             if (techno != 0) {
-                techno = techno->unknown_14_bit0 ? techno : 0;
+                techno = techno->AbstractFlags.IsTechno ? techno : 0;
             }
             WeaponTypeClass *type = unknown_slot231(weapon)->WeaponType;
             if (techno != 0 && type != 0 && !type->Projectile->Inaccurate) {

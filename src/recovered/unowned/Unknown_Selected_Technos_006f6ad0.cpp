@@ -11,7 +11,7 @@ DynamicVectorClass<TechnoClass *> *Unknown_006F6AD0()
         ObjectClass *object = unknown_objects_a40c60[index];
         bool flag;
         if (object != 0) {
-            flag = object->unknown_14_bit0;
+            flag = object->AbstractFlags.IsTechno;
         }
         if (object != 0 && flag) {
             list->Add((TechnoClass *)object);

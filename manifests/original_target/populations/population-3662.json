@@ -4,8 +4,8 @@
     "id": "population-3662",
     "inventory_sha256": "d237a2b7cb6bb44ec37a3aa5a5d7a4511e60307227b4c69e89f0ed9081fbf088",
     "gaps_sha256": "360167f661b8f1a2ec2428f9980dd62f44905c466670210b7067155d7df4400d",
-    "historical_population_sha256": "bb6c35b6f0363d91eb7be846d812a094a1ad5eeb1a6be3b21ac4e20dc0ac6325",
-    "historical_acceptance_sha256": "c06187eeb22263d2bb769fd779a7cc036225e777b6370dfdca76366e9290473c"
+    "historical_population_sha256": "40808b96e51426a484c6c2618d8a984f8d2fd7c4ae1514330cb92a22382bb08a",
+    "historical_acceptance_sha256": "008c0b0bddf2528a9c6b914a160d1636ce503f9e9ab1582c536c4e3522ae3219"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -10914,7 +10914,19 @@
     "??_ETeleportLocomotionClass@@UAEPAXI@Z": 7216112,
     "?unknown_6ef740@TubeClass@@QBE_NABVCell@@@Z": 7272256,
     "?Add_Direction@TubeClass@@QAEXH@Z": 7272400,
-    "?Unknown_004131D0@UnknownTracker839EA0@@QAEXPAVAbstractClass@@@Z": 4272592
+    "?Unknown_004131D0@UnknownTracker839EA0@@QAEXPAVAbstractClass@@@Z": 4272592,
+    "??0TaskForceClass@@QAE@PBD@Z": 7039056,
+    "??_7TaskForceClass@@6BIPersistStream@@@": 8046752,
+    "??_7TaskForceClass@@6BIRTTITypeInfo@@@": 8046724,
+    "??_7TaskForceClass@@6BINoticeSink@@@": 8046716,
+    "??_7TaskForceClass@@6BINoticeSource@@@": 8046708,
+    "??0TaskForceClass@@QAE@ABVNoInitClass@@@Z": 7039264,
+    "??1TaskForceClass@@UAE@XZ": 7039312,
+    "??4TaskForceClass@@QAE?AV0@ABV0@@Z": 7039680,
+    "??0TaskForceClass@@QAE@ABV0@@Z": 7039440,
+    "??_GTaskForceClass@@UAEPAXI@Z": 7041456,
+    "??_7TaskForceClass@@6B@": 8046752,
+    "??_ETaskForceClass@@UAEPAXI@Z": 7041456
   },
   "regions": [
     {
@@ -18309,7 +18321,7 @@
       "full_extent_bytes": 80,
       "full_extent_sha256": "c79265ee0472645ee0cec1c7a8ca4a75156ca7f09264b97f5fe353f188d8d8f4",
       "relocations": [],
-      "source_sha256": "8e66410749d181b19d360239a54fc954f982e69ebc867ede5904b7420ec08739",
+      "source_sha256": "4418ca6d9439af5887d828010e05795680baf8dba27a0c36f1d840cb0f20428c",
       "source": "src/recovered/unowned/Planning_Idle_Mover_00618bb0.cpp",
       "population": "population-3662",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -20392,7 +20404,7 @@
           "resolved": 760298
         }
       ],
-      "source_sha256": "73beedfe90455731df63fec74ca404725340300fcd8b10f773c8d232d1ea2133",
+      "source_sha256": "8dc64a2d93fdabe4bca37c3e0998a73b2153c86cc6fa339d40f196b6af91291a",
       "source": "src/recovered/unowned/Planning_Selection_Node_State_00617a10.cpp",
       "population": "population-3662",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -20649,7 +20661,7 @@
           "resolved": 1039889
         }
       ],
-      "source_sha256": "967805826a810119d000f0784e27157c09db5c6cce0e7aa76393c1742bcd3014",
+      "source_sha256": "92b4fe0642ed2b6f28526a408515473d903655c0878e519e44978a7accdbb462",
       "source": "src/recovered/unowned/Planning_Can_Add_00615ed0.cpp",
       "population": "population-3662",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",

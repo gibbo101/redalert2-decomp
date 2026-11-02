@@ -29,7 +29,7 @@ void TechnoClass::unknown_6d3400(TechnoClass *attacker)
     if (attacker->Kind_Of()!=15 && attacker->Kind_Of()!=1) return;
     if (unknown_slot32()->unknown_202) return;
     bool is_foot;
-    if (attacker) is_foot=attacker->unknown_14_bit2;
+    if (attacker) is_foot=attacker->AbstractFlags.IsFoot;
     if (attacker && is_foot && static_cast<FootClass *>(attacker)->unknown_540!=0) return;
     TeamClass::unknown_func_6ba8e0(Rules->SuspendPriority,House);
     for (int index=0;index<Infantry.Count();++index) {
@@ -119,7 +119,7 @@ void TechnoClass::unknown_6d3400(TechnoClass *attacker)
         }
     }
     if (recruited>required) {
-        if (attacker) is_foot=attacker->unknown_14_bit2;
+        if (attacker) is_foot=attacker->AbstractFlags.IsFoot;
         if (attacker && is_foot) static_cast<FootClass *>(attacker)->unknown_540=(int)(Rules->BaseDefenseDelay*900.0);
     }
 }

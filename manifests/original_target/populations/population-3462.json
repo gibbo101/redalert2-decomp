@@ -4,8 +4,8 @@
     "id": "population-3462",
     "inventory_sha256": "1a8a5c08382c873bc1d222ba46d760dd231c7cc2dd6dc4dcc1bb1ac9bee257c4",
     "gaps_sha256": "7dbebfbb6dffb514664c58159e79ba4739aed38b6b9dd614449e97c68445e81f",
-    "historical_population_sha256": "fd00bb106d2daf5d418bf47d1805a9fd5b76a3d84a36eaca91620098716aaf8b",
-    "historical_acceptance_sha256": "356da57a2ed3f6629bf821c876d5e4016f117960e97e3c01dcfde2154bf1f640"
+    "historical_population_sha256": "f4ea76b0af82b1633feec482a10835256a9dbc419752e9fc22947e7379a686a2",
+    "historical_acceptance_sha256": "6fcc63112afbb46e6acabd268167677efdf0ec1cdaa5e6d493b029323a2ee009"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -12813,7 +12813,51 @@
     "?Average@Centroid@WorldDominationTour@@QBE?AUPoint2D@@XZ": 7514096,
     "??_ETeleportLocomotionClass@@UAEPAXI@Z": 7216112,
     "??_E?$DynamicVectorClass@V?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@@UAEPAXI@Z": 7080144,
-    "??_E?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128
+    "??_E?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128,
+    "?ObjectTypes@ObjectTypeClass@@2V?$DynamicVectorClass@PAVObjectTypeClass@@@@A": 10956688,
+    "??_7?$DynamicVectorClass@PAVObjectTypeClass@@@@6B@": 8025740,
+    "??0TaskForceClass@@QAE@PBD@Z": 7039056,
+    "?Set_Text@TextLabelClass@@UAEXPBG@Z": 7280608,
+    "??_7TaskForceClass@@6BIPersistStream@@@": 8046752,
+    "??_7TaskForceClass@@6BIRTTITypeInfo@@@": 8046724,
+    "??_7TaskForceClass@@6BINoticeSink@@@": 8046716,
+    "??_7TaskForceClass@@6BINoticeSource@@@": 8046708,
+    "??0TaskForceClass@@QAE@ABVNoInitClass@@@Z": 7039264,
+    "??1TaskForceClass@@UAE@XZ": 7039312,
+    "??4TaskForceClass@@QAE?AV0@ABV0@@Z": 7039680,
+    "??0TaskForceClass@@QAE@ABV0@@Z": 7039440,
+    "??_GTaskForceClass@@UAEPAXI@Z": 7041456,
+    "?Dial@PhoneEdit@@QAE_NXZ": 6347904,
+    "?unknown_place_anim_69cb30@SuperClass@@QAEXUCoordStruct@@@Z": 6933296,
+    "?Discharged@SuperClass@@QAE_N_NABVCell@@@Z": 6934672,
+    "?Place@SuperClass@@QAEXABVCell@@_N@Z": 6936656,
+    "?Detach@MapClass@@QAEXPAVAbstractClass@@_N@Z": 5610880,
+    "___RTtypeid": 7879685,
+    "?QueryInterface@TiberianSunClassFactory@@UAGJABUGUID@@PAPAX@Z": 4352784,
+    "?Adjacent_Coord_With_Height@@YI?AUCoordStruct@@ABU1@H@Z": 4790400,
+    "??_7TaskForceClass@@6B@": 8046752,
+    "??_ETaskForceClass@@UAEPAXI@Z": 7041456,
+    "?Release_Held@?$UnknownComPtr@UIStorage@@$1?unknown_uuid_IStorage@@3UGUID@@B@@QAEXXZ": 6651984,
+    "?Release_Held@?$UnknownComPtr@UILinkStream@@$1?unknown_uuid_ILinkStream_7f1b50@@3UGUID@@B@@QAEXXZ": 6652000,
+    "?Query_From@?$UnknownComPtr@UIStream@@$1?unknown_uuid_IStream_7d5988@@3UGUID@@B@@QAEJABV?$UnknownComPtr@UILinkStream@@$1?unknown_uuid_ILinkStream_7f1b50@@3UGUID@@B@@@Z": 6656448,
+    "?Heapify@UnknownPathEstimatorBlock@@QAEXH@Z": 4371808,
+    "?Checked@?$UnknownComPtr@UILocomotion@@$1?unknown_uuid_ILocomotion_7ce600@@3UGUID@@B@@QBEPAUILocomotion@@XZ": 5037712,
+    "?Is_Ion_Sensitive@HoverLocomotionClass@@UAG_NXZ": 5236912,
+    "?Mark_All_Occupation_Bits@HoverLocomotionClass@@UAGXH@Z": 5238224,
+    "?Move_To@HoverLocomotionClass@@UAGXUCoordStruct@@@Z": 5229024,
+    "?Push@HoverLocomotionClass@@UAG_NUUnknownFacingDir@@@Z": 5237280,
+    "?unknown_4c3000@FootClass@@QAE_NVCell@@HH@Z": 4993024,
+    "?Will_Jump_Tracks@ShipLocomotionClass@@UAG_NXZ": 6793744,
+    "?Will_Jump_Tracks@DriveLocomotionClass@@UAG_NXZ": 4868800,
+    "?unknown_6ef740@TubeClass@@QBE_NABVCell@@@Z": 7272256,
+    "?Add_Direction@TubeClass@@QAEXH@Z": 7272400,
+    "?Unknown_004131D0@UnknownTracker839EA0@@QAEXPAVAbstractClass@@@Z": 4272592,
+    "?Region_Threat@MapClass@@QAEHPAVHouseClass@@HHH@Z": 5668128,
+    "?unknown_draw_edit_text_600830@OwnerDraw@@YIXPAVSurface@@AAVRect@@PBGHPAVBitFontClass@@IPAHHHHH@Z": 6293552,
+    "?Get_Selectable_Object_006aa990@Tactical@@QAEPAVObjectClass@@ABUPoint2D@@@Z": 6990224,
+    "?Print@MSFont@@UAEXPAVSurface@@PBGHHH@Z": 5981424,
+    "?Draw_Me@TextLabelClass@@UAEHH@Z": 7280160,
+    "?Pixel@PlanningBranchClass@@QBE?AUPoint2D@@XZ": 6359584
   },
   "regions": [
     {
@@ -18309,7 +18353,7 @@
           "resolved": 2043769
         }
       ],
-      "source_sha256": "07d8f3e94bef724e7653668693aaa5f7b2e21f24ab8bfba0e58bf69a0d6b567c",
+      "source_sha256": "6504f65ec907fe5166acc3d937ca563069739e740859120404a47626a8c4a101",
       "source": "src/recovered/classes/BuildingClass/BuildingClass_unknown_slot129_00445620.cpp",
       "population": "population-3462",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",
@@ -28719,7 +28763,7 @@
           "resolved": 8624200
         }
       ],
-      "source_sha256": "39f6c71521f0afc7f728738c5f19673073831701f1298da3b0dd78f1607d3092",
+      "source_sha256": "a1b2f685762a44b62854506815b2cffe831e648d2603013e65e2ba197dbfdd0f",
       "source": "src/recovered/classes/BuildingClass/Update_Firestorm_Wall_00450950.cpp",
       "population": "population-3462",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
@@ -29590,7 +29634,7 @@
           "resolved": 4432289
         }
       ],
-      "source_sha256": "3700bc375e941901cb0827316d9edbac0314b6bc92ca8f83ad725ee997f725b6",
+      "source_sha256": "8e795f46d7bec0960d5fc134600f7555a535ac28a0ad1e4f7525054ce879d455",
       "switch_data_bytes": 59,
       "source": "src/recovered/classes/BuildingClass/BuildingClass_Receive_Message_004397f0.cpp",
       "population": "population-3462",

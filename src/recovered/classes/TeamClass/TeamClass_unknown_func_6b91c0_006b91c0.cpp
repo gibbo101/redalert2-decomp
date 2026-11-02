@@ -102,7 +102,7 @@ int TeamClass::unknown_func_6b91c0(int slot)
                 while (passenger != 0) {
                     unknown_func_6b8cc0(passenger);
                     ObjectClass *next = passenger->unknown_30;
-                    passenger = next != 0 && next->unknown_14_bit2 ? (FootClass *)next : 0;
+                    passenger = next != 0 && next->AbstractFlags.IsFoot ? (FootClass *)next : 0;
                 }
             }
             break;

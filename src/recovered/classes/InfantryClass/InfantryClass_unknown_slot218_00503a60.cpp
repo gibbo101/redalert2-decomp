@@ -41,7 +41,7 @@ int InfantryClass::unknown_slot218(AbstractClass *target, int weapon, int arg3)
                 return 5;
             }
             WarheadTypeClass *warhead = weapon_type->Warhead;
-            if (warhead != 0 && warhead->IvanBomb && target != 0 && ((ObjectClass *)target)->unknown_14_bit1
+            if (warhead != 0 && warhead->IvanBomb && target != 0 && ((ObjectClass *)target)->AbstractFlags.IsObject
                 && ((ObjectClass *)target)->unknown_38 != 0) {
                 return 5;
             }

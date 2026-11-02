@@ -96,7 +96,7 @@ void __fastcall Unknown_0062CF40(int index)
         target = infp->unknown_494;
         id = 0;
         if (target) {
-            is_object = target->unknown_14_bit0;
+            is_object = target->AbstractFlags.IsTechno;
         }
         if (target) {
             if (is_object) {
@@ -115,7 +115,7 @@ void __fastcall Unknown_0062CF40(int index)
         target = infp->unknown_228;
         id = 0;
         if (target) {
-            is_object = target->unknown_14_bit0;
+            is_object = target->AbstractFlags.IsTechno;
         }
         if (target) {
             if (is_object) {
@@ -152,7 +152,7 @@ void __fastcall Unknown_0062CF40(int index)
         target = unitp->unknown_494;
         id = 0;
         if (target) {
-            is_object = target->unknown_14_bit0;
+            is_object = target->AbstractFlags.IsTechno;
         }
         if (target) {
             if (is_object) {
@@ -171,7 +171,7 @@ void __fastcall Unknown_0062CF40(int index)
         target = unitp->unknown_228;
         id = 0;
         if (target) {
-            is_object = target->unknown_14_bit0;
+            is_object = target->AbstractFlags.IsTechno;
         }
         if (target) {
             if (is_object) {
@@ -205,7 +205,7 @@ void __fastcall Unknown_0062CF40(int index)
         target = aircraftp->unknown_494;
         id = 0;
         if (target) {
-            is_object = target->unknown_14_bit0;
+            is_object = target->AbstractFlags.IsTechno;
         }
         if (target) {
             if (is_object) {
@@ -224,7 +224,7 @@ void __fastcall Unknown_0062CF40(int index)
         target = aircraftp->unknown_228;
         id = 0;
         if (target) {
-            is_object = target->unknown_14_bit0;
+            is_object = target->AbstractFlags.IsTechno;
         }
         if (target) {
             if (is_object) {
@@ -259,7 +259,7 @@ void __fastcall Unknown_0062CF40(int index)
         target = bldgp->unknown_228;
         id = 0;
         if (target) {
-            is_object = target->unknown_14_bit0;
+            is_object = target->AbstractFlags.IsTechno;
         }
         if (target) {
             if (is_object) {

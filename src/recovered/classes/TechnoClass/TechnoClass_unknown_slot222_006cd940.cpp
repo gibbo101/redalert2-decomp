@@ -53,7 +53,7 @@ bool TechnoClass::unknown_slot222(HouseClass *house, int arg2)
         if (!unknown_76) {
             bool foot;
             if (this != 0) {
-                foot = unknown_14_bit2;
+                foot = AbstractFlags.IsFoot;
             }
             bool moving = this != 0 && foot;
             if (!moving) {

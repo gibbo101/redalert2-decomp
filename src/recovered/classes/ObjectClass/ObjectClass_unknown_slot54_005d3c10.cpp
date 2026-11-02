@@ -22,7 +22,7 @@ void ObjectClass::unknown_slot54(bool arg1)
     if (!arg1) {
         bool techno;
         if (this != 0) {
-            techno = unknown_14_bit0;
+            techno = AbstractFlags.IsTechno;
         }
         if (this != 0 && techno && ((TechnoClass *)this)->unknown_slot191()) {
             keep = true;

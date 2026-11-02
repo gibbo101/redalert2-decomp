@@ -97,8 +97,8 @@ attack:
         if (object->unknown_slot30()) {
             WeaponTypeClass *weapon_type = unknown_slot231(weapon)->WeaponType;
             bool disguised = Rules->AttackCursorOnDisguise
-                || (object->unknown_14_bit0 && (object->unknown_slot32()->PermaDisguise
-                    || (object->unknown_14_bit0 && ((TechnoClass *)object)->unknown_184.Value() != 0)));
+                || (object->AbstractFlags.IsTechno && (object->unknown_slot32()->PermaDisguise
+                    || (object->AbstractFlags.IsTechno && ((TechnoClass *)object)->unknown_184.Value() != 0)));
             bool owned = object->unknown_slot49(House) && !disguised;
             bool capture = owned && object->unknown_slot51(true) == 0;
             bool can208 = unknown_slot208(object);
@@ -107,7 +107,7 @@ attack:
                 && object->unknown_slot32()->Passengers > 0;
             bool foot = false;
             if (weapon_type != 0 && weapon_type->Warhead->Sonic) {
-                foot = object->unknown_14_bit2;
+                foot = object->AbstractFlags.IsFoot;
             }
             bool sonic = foot && ((FootClass *)object)->unknown_580 != 0;
             bool friendly = unknown_slot32()->AttackFriendlies || (unknown_slot32()->AttackCursorOnFriendlies && !ivan) || sonic;

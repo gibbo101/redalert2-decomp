@@ -16,7 +16,7 @@ void CellClass::unknown_47bb30()
             if (object->unknown_slot108() <= 5) {
                 bool is_techno;
                 if (object != 0) {
-                    is_techno = object->unknown_14_bit0;
+                    is_techno = object->AbstractFlags.IsTechno;
                 }
                 TechnoClass *techno = (object != 0 && is_techno) ? (TechnoClass *)object : 0;
                 if (techno != 0 && !techno->unknown_slot32()->ImmuneToVeins && !techno->unknown_6d7910(8)) {

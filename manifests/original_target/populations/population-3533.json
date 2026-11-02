@@ -4,8 +4,8 @@
     "id": "population-3533",
     "inventory_sha256": "a947bb7d50117e264f7bce8dae88d6a78b5a58e31a39dad112aa211c7ff81872",
     "gaps_sha256": "ef726fa32fef57074fb033a40e10b26da6c1a3d19675814c79e01f2466d8b4d5",
-    "historical_population_sha256": "cb468c52023f36620e56d72f1c818e7427c9b52e03ec39e1f9bd4dffcf5e4e36",
-    "historical_acceptance_sha256": "20505deadcd710926dfcf2741575c7a2b673788826980a4698c1d93fd0950c5c"
+    "historical_population_sha256": "075d4d86087b757af3b49f130cecf3702f58d4a4a7b6f5765aef22548e2589c7",
+    "historical_acceptance_sha256": "292dfb3b6676114877940f093322e64e1bc3db3b6c5a18d6123ccfb79654deff"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -10919,7 +10919,72 @@
     "?Decode@TargetClass@@QAE?AV1@H@Z": 5512848,
     "?Resume@MSAnim@@UAEXXZ": 5962848,
     "?Resume@ScoreAnimClass@@UAEXXZ": 6718288,
-    "?Resume@VocStaticSound@@QAEXXZ": 7423104
+    "?Resume@VocStaticSound@@QAEXXZ": 7423104,
+    "?ObjectTypes@ObjectTypeClass@@2V?$DynamicVectorClass@PAVObjectTypeClass@@@@A": 10956688,
+    "?Set_Text@TextLabelClass@@UAEXPBG@Z": 7280608,
+    "??1UnitTrackerClass@@QAE@XZ": 7390336,
+    "?Draw@Anim@Voices@WorldDominationTour@@UAEXPAVSurface@@PBVRect@@@Z": 7547856,
+    "??1Anim@Voices@WorldDominationTour@@UAE@XZ": 7547616,
+    "?Get_All_Totals_Sum@UnitTrackerClass@@QAEHXZ": 7390480,
+    "?Unknown_00406100@UnknownList14BC@@QAIXPAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
+    "??0UnitTrackerClass@@QAE@XZ": 7390272,
+    "?Dial@PhoneEdit@@QAE_NXZ": 6347904,
+    "?AI@TemporalClass@@UAEXXZ": 7217712,
+    "?Unknown_006E27B0@TemporalClass@@QAEXPAVTechnoClass@@@Z": 7219120,
+    "?Action@SliderClass@@UAEHIAAI@Z": 6834960,
+    "?unknown_slot16@UDPInterfaceClass@@UAEHHHHH@Z": 7785792,
+    "__real@8@3fff8cccccccccccd000": 8008416,
+    "?Is_Ion_Sensitive@HoverLocomotionClass@@UAG_NXZ": 5236912,
+    "?Mark_All_Occupation_Bits@HoverLocomotionClass@@UAGXH@Z": 5238224,
+    "?Process@RocketLocomotionClass@@UAG_NXZ": 6545040,
+    "?Length@CoordStruct@@QBEHXZ": 4306816,
+    "??RSystemTimerClass@@QBEJXZ": 6923312,
+    "__real@4@4004f000000000000000": 8030276,
+    "?Move_To@HoverLocomotionClass@@UAGXUCoordStruct@@@Z": 5229024,
+    "?Push@HoverLocomotionClass@@UAG_NUUnknownFacingDir@@@Z": 5237280,
+    "?Binary_Search@@YIPAUNodeElement@?$IndexClass@HPAVCommandClass@@@@PAU12@HABU12@@Z": 6137232,
+    "??0Anim@Voices@WorldDominationTour@@QAE@PAV12@@Z": 7547552,
+    "?Get_Rect@Anim@Voices@WorldDominationTour@@UAE?AVRect@@XZ": 7547872,
+    "__real@8@3ffba6ce934058661000": 8032840,
+    "__real@8@3ffdb2b8c2573a243800": 8032832,
+    "__real@8@3ffabea2f16e1be26000": 8032824,
+    "__real@8@3ffedf66f2ed08ad4800": 8032816,
+    "?Draw_Matrix@HoverLocomotionClass@@UAGPAVMatrix3D@@PAV2@PAH@Z": 5225456,
+    "?unknown_4c3000@FootClass@@QAE_NVCell@@HH@Z": 4993024,
+    "?Set_Frame@MSOverlayAnim@@QAEXI@Z": 5953568,
+    "?Dialog@LoadOptionsClass@@QAE_NXZ": 5486448,
+    "?Get_All_Totals_Sum@UnknownHouseTracker@@QAEHXZ": 7390480,
+    "?Unknown_00406100@UnknownAudioController@@QAIXPAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
+    "?Will_Jump_Tracks@ShipLocomotionClass@@UAG_NXZ": 6793744,
+    "?Will_Jump_Tracks@DriveLocomotionClass@@UAG_NXZ": 4868800,
+    "?Release@UnknownAlphaTableCache_008315B8@@QAEXPAY0BAA@$$CBG@Z": 4318480,
+    "?Clear@UnknownVeinHeap@@QAEXXZ": 7416336,
+    "?Draw@MSFrameAnim@@UAEXPAVSurface@@PBVRect@@@Z": 7508512,
+    "?Get_Rect@MSFrameAnim@@UAE?AVRect@@XZ": 7508656,
+    "?Create@Map@WorldDominationTour@@SI?AV?$rc_ptr@VMap@WorldDominationTour@@@@HHH@Z": 7508704,
+    "??1Map@WorldDominationTour@@UAE@XZ": 7508976,
+    "?Create@WDTTerritory@@SI?AV?$rc_ptr@VWDTTerritory@@@@XZ": 7519680,
+    "__strrev": 7958640,
+    "__real@8@3ffec90fdaa22168c000": 7981696,
+    "__real@8@3ffea2f9836e4e441800": 7983256,
+    "__real@4@3ffdaaaaab0000000000": 8019624,
+    "?AI@ParasiteClass@@UAEXXZ": 6319952,
+    "??YCentroid@WorldDominationTour@@QAEAAU01@ABUPoint2D@@@Z": 7514048,
+    "?Average@Centroid@WorldDominationTour@@QBE?AUPoint2D@@XZ": 7514096,
+    "?Place@SuperClass@@QAEXABVCell@@_N@Z": 6936656,
+    "?unknown_6ef740@TubeClass@@QBE_NABVCell@@@Z": 7272256,
+    "?Add_Direction@TubeClass@@QAEXH@Z": 7272400,
+    "?Unknown_004131D0@UnknownTracker839EA0@@QAEXPAVAbstractClass@@@Z": 4272592,
+    "?Detach@MapClass@@QAEXPAVAbstractClass@@_N@Z": 5610880,
+    "___RTtypeid": 7879685,
+    "?QueryInterface@TiberianSunClassFactory@@UAGJABUGUID@@PAPAX@Z": 4352784,
+    "?Adjacent_Coord_With_Height@@YI?AUCoordStruct@@ABU1@H@Z": 4790400,
+    "?Key_To_Hotkey@@YIGG@Z": 6129664,
+    "?Hotkey_To_Key@@YIHH@Z": 6129616,
+    "?Unknown_00606780@ParasiteClass@@QAEXXZ": 6317952,
+    "?Region_Threat@MapClass@@QAEHPAVHouseClass@@HHH@Z": 5668128,
+    "?Process_Spread@TiberiumClass@@QAEXXZ": 7247648,
+    "?unknown_4718b0@CellClass@@QAE_NHPBVBuildingTypeClass@@PAVHouseClass@@@Z": 4659376
   },
   "regions": [
     {
@@ -14567,7 +14632,7 @@
           "resolved": 1099976
         }
       ],
-      "source_sha256": "babc071991475a808ea56dc3274ad4224746d812da548b171b1014aa2165a8ad",
+      "source_sha256": "bb7be264d7382d2a3e58cece0e79238fe7b5380b1bb350a8eb48206f4b448179",
       "source": "src/recovered/classes/FootClass/FootClass_unknown_4c82a0_004c82a0.cpp",
       "population": "population-3533",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -14658,7 +14723,7 @@
           "resolved": 522851
         }
       ],
-      "source_sha256": "ca1afe75ba7ad7ada1a301ddef0122a95f41219d22c86588fa74b5b35c228b56",
+      "source_sha256": "609a3e55c5bcf79516f41d3a81d59742af093a9054dbeeacf62b302291a91c11",
       "source": "src/recovered/classes/FootClass/FootClass_Detach_004c8460.cpp",
       "population": "population-3533",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
@@ -19605,7 +19670,7 @@
           "resolved": 11275292
         }
       ],
-      "source_sha256": "c37c2d32982d05c0ea22edfc173f492539e22b2e4a227058bccd0ee360175ec2",
+      "source_sha256": "65ac97d285a67e56299b9fd930fa0bb4c951b0961e104fe1fd90ffee9bc38883",
       "source": "src/recovered/classes/FootClass/FootClass_constructor_004c2930.cpp",
       "population": "population-3533",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -21595,7 +21660,7 @@
           "resolved": 2076822
         }
       ],
-      "source_sha256": "67accb4fb7ef54884fd010c5455f2e124b1840cad000e50913cbf1a1acc8d045",
+      "source_sha256": "d541476d50d2122ba31bbe8fec3fd05bf5dc39577033bd5a342f3acea16f953c",
       "source": "src/recovered/classes/FootClass/FootClass_unknown_slot93_004c7220.cpp",
       "population": "population-3533",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -22241,7 +22306,7 @@
           "resolved": 4995476
         }
       ],
-      "source_sha256": "7f24020db36f45cc02c58a10089938dec22c606b60b8e9ecc6f2efa110f5ace8",
+      "source_sha256": "4c7223b302703bf7a58e2bf0b57e358634c4b1534a2d52b6720aee27d0543b13",
       "switch_data_bytes": 16,
       "source": "src/recovered/classes/FootClass/FootClass_unknown_slot145_004c3950.cpp",
       "population": "population-3533",
@@ -23430,7 +23495,7 @@
           "resolved": 1518187
         }
       ],
-      "source_sha256": "98ca7406db086e5f43bd198eef5879d94b023f17fe6c48943ac7cad9b030d1d3",
+      "source_sha256": "84bc947e16f5accc53b7b299b28a9837ea3dce9c279d3d59edb2394530b56f81",
       "source": "src/recovered/classes/FootClass/FootClass_unknown_slot130_004c5900.cpp",
       "population": "population-3533",
       "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
@@ -24097,7 +24162,7 @@
           "resolved": 534454
         }
       ],
-      "source_sha256": "13b365a2acc5233a01522e70e783095843411d720b3231350ee2ece010cd5bd3",
+      "source_sha256": "6dbddcf1aee9f159c2edd1fed41750dfc7f5d94a239337017d9bc9cfea5a4782",
       "source": "src/recovered/classes/FootClass/FootClass_Approach_Target_004c4c30.cpp",
       "population": "population-3533",
       "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",

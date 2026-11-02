@@ -24,7 +24,7 @@ int AircraftClass::unknown_slot101(CellClass *arg1, int arg2, int arg3, int arg4
     TechnoClass *occupier = cell->Occupier;
     bool active;
     if (occupier != 0) {
-        active = occupier->unknown_14_bit0;
+        active = occupier->AbstractFlags.IsTechno;
     }
     if ((occupier == 0 || !active || occupier->House->Is_Ally(House)
          || (occupier->unknown_1b8 != 2 && unknown_a40774 == 0

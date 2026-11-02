@@ -37,7 +37,7 @@ bool TechnoClass::unknown_slot52()
         House->Unknown_004ED440(this, false);
         if (unknown_slot168() > 0) {
             UnknownCellClass *cell;
-            if (this != 0 && unknown_14_bit2) {
+            if (this != 0 && AbstractFlags.IsFoot) {
                 cell = (UnknownCellClass *)&Map[((FootClass *)this)->unknown_454];
                 if (cell != 0) {
                     cell->unknown_476b20(Owner(), -unknown_400);
