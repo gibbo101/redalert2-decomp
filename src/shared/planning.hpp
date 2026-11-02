@@ -312,6 +312,8 @@ public:
     void unknown_612090();                                    // 0x00612090
     void unknown_6120c0();                                    // 0x006120C0
     void Draw_Marker(int color);                              // 0x006120F0
+    // Outlines the grown marker three times, shrinking it by a pixel each time.
+    void Draw_Outer_Outline(int color);                       // 0x00612300
     void Fill_Marker(int color);                              // 0x00612230
     void Draw_Marker_Outline(int color);                      // 0x00612420
     ::Rect Outer_Rect() const;                                // 0x00612B90
