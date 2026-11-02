@@ -1,3 +1,4 @@
+#define RA2_COORD_PLUS_POINT2D
 // Header-static dynamic initializers of the unit at 0x00491430:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x00491430-0x00491616); the other

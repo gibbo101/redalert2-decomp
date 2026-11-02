@@ -8,6 +8,9 @@
 #include "shared/point.hpp"
 
 struct INIPoint3D;
+#ifdef RA2_COORD_PLUS_POINT2D
+struct Point2D;
+#endif
 
 #if defined(RA2_COORD_AS_CELL) || defined(RA2_COORD_FROM_CELL) || defined(RA2_COORD_FROM_CELL_INLINE)
 class Cell;
@@ -57,6 +60,11 @@ struct CoordStruct {
     {
         return CoordStruct(X - coord.X, Y - coord.Y, Z - coord.Z);
     }
+#endif
+#ifdef RA2_COORD_PLUS_POINT2D
+    // TibSun TPoint3D + TPoint2D: X and Y summed, Z kept (Adjacent_Coord_With_Height 0x00491880).
+    // Guarded: the coord.cpp unit (0x00491430) defines RA2_COORD_PLUS_POINT2D before its first include.
+    CoordStruct const operator+(Point2D const &point) const;
 #endif
     // Member-wise sum (AnimClass::Center_Coord, 0x00420D90).
     // Member-wise difference in place (Tactical::Coord_To_Cell 0x006A6A50 steps back with it; its Z store stays).
@@ -115,6 +123,14 @@ struct CoordStruct {
     int Z;
 #endif
 };
+
+#ifdef RA2_COORD_PLUS_POINT2D
+#include "shared/rect.hpp"
+inline CoordStruct const CoordStruct::operator+(Point2D const &point) const
+{
+    return CoordStruct(X + point.X, Y + point.Y, Z);
+}
+#endif
 
 // Member-wise coordinate comparison, the free inline form every unit uses
 // (formerly defined separately in shared/locomotion.hpp and
