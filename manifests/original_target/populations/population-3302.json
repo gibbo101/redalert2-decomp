@@ -4,8 +4,8 @@
     "id": "population-3302",
     "inventory_sha256": "111ba296ed22f1b1965deb4c51e2541af634f53142e34275cdf35273fb93e3ee",
     "gaps_sha256": "4f2b7ebfae29d8586f2628979d9aacc07335b7214ee1c702d49fafea49aa785c",
-    "historical_population_sha256": "2811e6a7880c975828c041f6d9b8a89eed19c8933736111dd523dee7461e0593",
-    "historical_acceptance_sha256": "78c62e531c55ecdb45c06279e26f45f7092a1b15d4029500595218be8cbedb46"
+    "historical_population_sha256": "6133ed675a497dc6d33499ab562fd39c874bcc68b6eb5293bcf8731f21ab48b2",
+    "historical_acceptance_sha256": "c7971c41594a92431360d540565f32b3ce68c5f58058564abc2caa5fe2de050a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8540,7 +8540,7 @@
     "??_ETEventClass@@UAEPAXI@Z": 7237024,
     "??_EAlphaShapeClass@@UAEPAXI@Z": 4323776,
     "??_E?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5686160,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "?As_Building@TargetClass@@QBEPAVBuildingClass@@XZ": 7038064,
     "?Set_Protocol@IPXAddressClass@@SIXH@Z": 5388624,
@@ -9430,7 +9430,7 @@
     "?Unknown_00565610@MapClass@@QAE?AVCell@@ABV2@HI@Z": 5658128,
     "?Unknown_0054A720@MapClass@@QAEXABUCoordStruct@@H@Z": 5547808,
     "?Unknown_0051A690@@YIPAVObjectClass@@PBVCell@@PAV1@@Z": 5351056,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "?Show@Selection@WorldDominationTour@@SIXABV?$rc_ptr@VCampaign@WorldDominationTour@@@@H@Z": 7536512,
     "?Update@ProgressBarClass@@QAE_NN@Z": 4372944,
     "?unknown_session_a40d04@@3_NA": 10751236,

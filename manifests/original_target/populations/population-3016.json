@@ -4,8 +4,8 @@
     "id": "population-3016",
     "inventory_sha256": "23a52eb6764d8868d111a67515f2d42d33b5da2296ea224604e38a157af572d2",
     "gaps_sha256": "c4ce819ed455db3a0b79d089da56e8668c908eddf2765bcc432205a385c17360",
-    "historical_population_sha256": "bbbf76eb6295f82af7a802e83305598ca7977f8b788b3533d7423429fd928d2a",
-    "historical_acceptance_sha256": "18ef1563e6559b10ec26238fc82147ad569e9f4aae7963cede3ab9e5e1d80e35"
+    "historical_population_sha256": "2dbeee729ece18a2b30d9a02875dd917acb78d96e171544c89fdfcb2bd5af95f",
+    "historical_acceptance_sha256": "e1d2b4eb5958f871443460c25cb6e3b8cc3fe45d9054bdd3339d7e1d9882cc9f"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6443,7 +6443,7 @@
     "?unknown_slot39@DisplayClass@@UAE_NABVCell@@PAVHouseClass@@@Z": 4825968,
     "??0UnknownBitmapWriter@@QAE@XZ": 6864208,
     "??1UnknownBitmapWriter@@QAE@XZ": 6864432,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "?unknown_ping_images_7f86dc@@3PAPBDA": 8357596,
     "?Get_Image_0068ca40@UnknownBitmapWriter@@QAEPAVSurface@@PBDH@Z": 6867520,
@@ -6459,7 +6459,7 @@
     "?unknown_slot43@UnholyAlliance@@UAE_NPAVHouseClass@@PAH@Z": 5948368,
     "?unknown_slot44@MultiplayerGameMode@@UAE_NPAVHouseClass@@PAH@Z": 5996640,
     "?unknown_char_770400@WideString@@QBEGI@Z": 7799808,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "__imp__SetEvent": 7971380,
     "__imp__ntohl": 7972152,
     "??_EReferenceCounted@@": 6526800,

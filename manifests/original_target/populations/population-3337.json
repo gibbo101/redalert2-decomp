@@ -4,8 +4,8 @@
     "id": "population-3337",
     "inventory_sha256": "9cd62d3c485e9db9e2c5c26a8defdc189a130b185db81399c523ba567639e803",
     "gaps_sha256": "6b7dfdb96ab9ba21ffe6a463c94ea9bff8855583e545b3bcfe97984c3fb54352",
-    "historical_population_sha256": "3550e715793e2145b5fc907892b3b507a26180a987d3830e2f4377c4b2c9722a",
-    "historical_acceptance_sha256": "f78c4fa25b1b3d1cf68f9b09a4b723d0a7cf0a836a11ba719575ab565e43a414"
+    "historical_population_sha256": "6e0d67c210cc319e0da6462e890ee2f1a125f64d933225a0cb217400431ffc3b",
+    "historical_acceptance_sha256": "157c22eaa95a25c23d1f8db8d531c86d183ebda5dd92f17a58d1ecccea15ebd0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7423,7 +7423,7 @@
     "??0?$VectorClass@PAVMultiplayerGameMode@@@@QAE@IPBQAVMultiplayerGameMode@@@Z": 6002912,
     "??_7?$VectorClass@PAVColorScheme@@@@6B@": 8027064,
     "??0?$VectorClass@USwizzlePointerClass@@@@QAE@IPBUSwizzlePointerClass@@@Z": 6947280,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "??0?$VectorClass@PAVKamikazeControl@@@@QAE@IPBQAVKamikazeControl@@@Z": 5447392,
     "??_7?$VectorClass@PAVKamikazeControl@@@@6B@": 8016852,
@@ -7450,7 +7450,7 @@
     "?unknown_slot43@MultiplayerSiege@@UAE_NPAVHouseClass@@PAH@Z": 5945984,
     "?unknown_slot43@UnholyAlliance@@UAE_NPAVHouseClass@@PAH@Z": 5948368,
     "?unknown_slot44@MultiplayerGameMode@@UAE_NPAVHouseClass@@PAH@Z": 5996640,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "??0?$VectorClass@VBaseNodeClass@@@@QAE@IPBVBaseNodeClass@@@Z": 4379696,
     "??0?$VectorClass@V?$rc_ptr@VTerritory@WorldDominationTour@@@@@@QAE@IPBV?$rc_ptr@VTerritory@WorldDominationTour@@@@@Z": 7518992,
     "??_G?$VectorClass@V?$rc_ptr@VTerritory@WorldDominationTour@@@@@@UAEPAXI@Z": 7518448,

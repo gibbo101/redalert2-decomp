@@ -35,8 +35,8 @@ void ScoreClass::Input_Name(char *name, int x, int y)
             if (key == 8 && xpos >= x + 84) {
                 if (name[index] && name[index] != ' ') {
                     Rect rect(xpos, y + 1, Font->Char_Pixel_Width(name[index]) + 1, 16);
-                    unknown_surface_839954->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
-                    unknown_surface_839958->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
+                    unknown_surface_839954->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
+                    unknown_surface_839958->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
                     key = ' ';
                 }
             }
@@ -46,8 +46,8 @@ void ScoreClass::Input_Name(char *name, int x, int y)
                     int width = Font->Char_Pixel_Width(letter) + 1;
                     xpos -= width;
                     Rect rect(xpos, y + 1, width, 16);
-                    unknown_surface_839954->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
-                    unknown_surface_839958->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
+                    unknown_surface_839954->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
+                    unknown_surface_839958->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
                     name[index] = 0;
                     Play_Sound("Back", 192);
                 }
@@ -56,8 +56,8 @@ void ScoreClass::Input_Name(char *name, int x, int y)
                 if (xpos + Font->Width <= x + 90) {
                     if (xpos + width >= x + 84) {
                         Rect rect(xpos, y + 1, Font->Char_Pixel_Width(name[index]) + 1, 16);
-                        unknown_surface_839954->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
-                        unknown_surface_839958->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
+                        unknown_surface_839954->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
+                        unknown_surface_839958->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
                     }
                     name[index] = key;
                     name[index + 1] = 0;

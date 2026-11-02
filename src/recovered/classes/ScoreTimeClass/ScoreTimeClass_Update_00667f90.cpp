@@ -1,4 +1,4 @@
-// bool ScoreTimeClass::Update(int unknown) (0x00667F90, slot 3)
+// bool ScoreTimeClass::Update(Surface *surface) (0x00667F90, slot 3)
 // Each time the timer runs out: restart it, advance the frame (wrapping at
 // MaxStage) and draw it on both score surfaces (Westwood's SCORE.CPP).
 // The unit's shape helpers fall back on Score.cpp's empty rectangle.
@@ -15,7 +15,7 @@
 
 
 
-bool ScoreTimeClass::Update(int unknown)
+bool ScoreTimeClass::Update(Surface *surface)
 {
     if (!Timer) {
         Timer = DelayFrames;

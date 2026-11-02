@@ -1,4 +1,4 @@
-// bool ScorePrintClass::Update(int unknown) (0x006680F0, slot 3)
+// bool ScorePrintClass::Update(Surface *surface) (0x006680F0, slot 3)
 // Types the string one more character each time the two-tick timer runs
 // out: the characters typed so far are drawn, the newest two at the
 // earlier fade frames, and each is also drawn into the background surface
@@ -11,7 +11,7 @@
 #include "shared/msfont.hpp"
 // @ref ?unknown_score_print_ab6f9c@@3_NA=00ab6f9c
 
-bool ScorePrintClass::Update(int unknown)
+bool ScorePrintClass::Update(Surface *surface)
 {
     unknown_score_print_ab6f9c = true;
     if (!Timer) {

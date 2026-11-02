@@ -4,8 +4,8 @@
     "id": "population-3485",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "7f456a291cad4cefdf9054ba636c333c3ae05765ba8e31bd6ee5ea9ac1bb2a17",
-    "historical_acceptance_sha256": "acf5d1d7cea6a862a0a86c874ce437cddd215f38068cb21ce593fe60f28fec9a"
+    "historical_population_sha256": "c49169c4d8d7a41d31e5238190ac375b782f983a777c5407c5ee149e1941b932",
+    "historical_acceptance_sha256": "37a54b7b2b7a281e445fa8898243648ee5245c75b82723ce1cc2c20e6bab846d"
   },
   "references": {
     "?Update@AudioLevel@@QAIHXZ": 4223216,
@@ -1310,7 +1310,7 @@
     "_ImmGetCompositionStringA@16": 7871538,
     "__mbsnbcnt": 7884173,
     "__imp__GetDlgCtrlID@4": 7971828,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "__real@8@3ffd9999999999999800": 7986512,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "__imp__ValidateRect@8": 7971832,
@@ -1342,7 +1342,7 @@
     "?Input@MessageListClass@@QAEHAAHG@Z": 5986032,
     "?Detach@MapClass@@UAEXPAVAbstractClass@@_N@Z": 5610880,
     "?Detach@ParasiteClass@@UAEXPAVAbstractClass@@_N@Z": 6320640,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "__real@8@3fe2a0000000a0000000": 8019752,
     "__real@8@3fe6f2000000f2000000": 8019744,
     "__real@8@3fe6c9000000c9000000": 8019736,

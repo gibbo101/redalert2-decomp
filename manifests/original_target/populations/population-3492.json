@@ -4,8 +4,8 @@
     "id": "population-3492",
     "inventory_sha256": "75f37c09c5152853b983bfb4d0a960bda6a301955cb0ebe3bdeea029d0276df3",
     "gaps_sha256": "1ff519f1940af0793a8ed0a79d2e86d8f566c60ebb5b5695839e62bbc5df53f5",
-    "historical_population_sha256": "2d714f7cfa043b0af7fa2de9a71b0a8873b2429bd2f3361a4702ee9496ffbfe4",
-    "historical_acceptance_sha256": "918309d278382c070445bc867aca4f03e6c09464c931dcdb9ffcde77029a35dc"
+    "historical_population_sha256": "ccfd3d55fc4e12bce3e6188e53334035280b28a111fafad68b33a4237a310aa4",
+    "historical_acceptance_sha256": "0576acb44916ebd1ac8b8584c83b8e30050737851a33e586607d0b6934222ad9"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -8382,7 +8382,7 @@
     "?Player_Side_Combo_ID_4d1350@@YIHH@Z": 5051216,
     "?Select_Color_Combo_4d2480@@YIXPAUHWND__@@HH@Z": 5055616,
     "?Select_Side_Combo_4d1a90@@YIXPAUHWND__@@HH@Z": 5053072,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "?Side_Combo_Player_4d13b0@@YIHH@Z": 5051312,
     "?Color_Combo_Player_4d1d10@@YIHH@Z": 5053712,
@@ -8432,7 +8432,7 @@
     "?unknown_slot43@MultiplayerSiege@@UAE_NPAVHouseClass@@PAH@Z": 5945984,
     "?unknown_slot43@UnholyAlliance@@UAE_NPAVHouseClass@@PAH@Z": 5948368,
     "?unknown_slot44@MultiplayerGameMode@@UAE_NPAVHouseClass@@PAH@Z": 5996640,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "?unknown_score_time_850508@@3HA": 8717576,
     "?unknown_score_difficulty_7d1480@@3HA": 8197248,
     "?unknown_format_time_465c20@@YIXPAGH@Z": 4611104,

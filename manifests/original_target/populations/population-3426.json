@@ -4,8 +4,8 @@
     "id": "population-3426",
     "inventory_sha256": "6cde89bea531f503e86a0c785f67aebc8c5f451f75803494d6f72d99d2734055",
     "gaps_sha256": "3862e46e6c2c0a574679c32c236664863e1da80729bbe8c4fae41829df55a54d",
-    "historical_population_sha256": "295df4067c274a82e12f29264827e45c95e285b04b8e9ff805e14a6b30a2f2cf",
-    "historical_acceptance_sha256": "d00ba5b57dd897a34a10478a068b2bc29a403f86c04e96218c449ec13c30be07"
+    "historical_population_sha256": "28a671bb1f5628d00e670bc8dd744106ee7189bf9dc60166a7eae6e6f4bebfb2",
+    "historical_acceptance_sha256": "b9b4ddfbf2da408f7c65d0042effaaf13bf9d0c057cf5cb2466ab96ed3bc4f3f"
   },
   "references": {
     "_unknown_static_rect": 11260112,
@@ -8864,7 +8864,7 @@
     "?Unknown_00672440@UnknownSessionState@@QAEXXZ": 6759488,
     "?Unknown_00675320@ShapeButtonClass@@QAE_NXZ": 6771488,
     "?Draw_Me@SliderClass@@UAEHH@Z": 6835360,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "?Print_Char@MSFont@@UAEXPAVSurface@@GHHHH@Z": 5981136,
     "?Draw_Line@RadBeam@@QAEXABUCoordStruct@@0F@Z": 6510608,
@@ -8904,7 +8904,7 @@
     "?Set_Width@MessageListClass@@QAEXH@Z": 5987424,
     "?Trim_Message@MessageListClass@@QAEHPAG0HHH@Z": 5987504,
     "?Draw@MessageListClass@@QAEXXZ": 5987120,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "?Draw@MSPrintAnim@@UAEXPAVSurface@@PBVRect@@@Z": 5959728,
     "?Unknown_Slot7@MSPrintAnim@@UAE_NXZ": 5960784,
     "?Draw@MSBitPrintAnim@@UAEXPAVSurface@@PBVRect@@@Z": 5957152,

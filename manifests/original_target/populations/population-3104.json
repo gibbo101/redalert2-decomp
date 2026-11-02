@@ -4,8 +4,8 @@
     "id": "population-3104",
     "inventory_sha256": "66a71da64852e6b615aa85f59c1accf66b7dc98141414f787963eeb77ccea1cb",
     "gaps_sha256": "8758afeafd0aa8e6b916033384540e515695306024c1303da3ac08956cc53d7a",
-    "historical_population_sha256": "45e58f904d8051b2188053f4cbd605d9ef6af4bca1beacb66f0c6c28a2b6efc5",
-    "historical_acceptance_sha256": "93380479188141db941537e7468a7ba9db4147140f9ebe46a74931b9babe31cd"
+    "historical_population_sha256": "0ad08fdc6f215f1e97d72317a31698e1f08d8a7fbb926b06eba4c7129814d2ef",
+    "historical_acceptance_sha256": "0a2efcba31e45235b7c83bacef2c89742ec436e9e5c3320056e89244e9b8639d"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -10470,7 +10470,7 @@
     "?Pan@MonoClass@@QAEXH@Z": 5891472,
     "?Set_Target@RadBeam@@QAEXABUCoordStruct@@@Z": 6510432,
     "?Get_Target@AudioLevel@@QAIHXZ": 4223456,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "?Pause@ScoreAnimClass@@UAEXXZ": 6718208,
     "?Apply_Settings@GameControlsDialog@@QAEXXZ": 5044736,
@@ -10489,7 +10489,7 @@
     "?Voc_Static_Resume@@YAXXZ": 7423216,
     "?Audio_Get_Device@@YAPAUAudioDevice@@XZ": 4222784,
     "?Audio_Stream_Open@@YIHPAUAudioStreamPlayer@@PBDH@Z": 4225680,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "?Pause@MSAnim@@UAEXXZ": 5962768,
     "_CLSID_BuildingLightClass": 8002720,
     "??_GLayerClass@@UAEPAXI@Z": 4844672,

@@ -4,8 +4,8 @@
     "id": "population-3445",
     "inventory_sha256": "4396b412cd87f98a94124ced8fa5c9e9e3fa09dd0473821d635f04dfda32fb60",
     "gaps_sha256": "c4ac89e142618510b04ff241bf6036e58580c8675ece1fc8b1f8cf8a67f24196",
-    "historical_population_sha256": "a7b55dd2cc33cf39647b01d496e22d08a33da87326e4bad89de9a7652c098d4c",
-    "historical_acceptance_sha256": "dfd4577e4c91d675d64394c21757cc97806af56cdd90e56f927aa094eaef7882"
+    "historical_population_sha256": "e9b977b24f771471f93e43abbea33d5bd3e99ca5a3b89642d56cc7ac6c0a64cc",
+    "historical_acceptance_sha256": "12d49d3ddf439b32b95c40130e355148efdb7c5fe7563a4f673c6ff54e103e89"
   },
   "references": {
     "?Map@@3VMouseClass@@A": 8594656,
@@ -7697,7 +7697,7 @@
     "_?maximum@?1??Building_Find_Nearby_Radio_Acceptor_00450f90@@YIPAVBuildingClass@@PAVHouseClass@@PAVTechnoClass@@@Z@4HA": 8711404,
     "?Set_Target@RadBeam@@QAEXABUCoordStruct@@@Z": 6510432,
     "?Get_Target@AudioLevel@@QAIHXZ": 4223456,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "?Pause@ScoreAnimClass@@UAEXXZ": 6718208,
     "?Apply_Settings@GameControlsDialog@@QAEXXZ": 5044736,

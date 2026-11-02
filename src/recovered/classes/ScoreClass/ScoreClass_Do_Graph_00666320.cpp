@@ -35,17 +35,17 @@ void ScoreClass::Do_Graph(int first, int second, int xpos)
     }
     Rect rect;
     rect.Set(xpos, bottom - firstheight, 4, firstheight);
-    ((Surface *)unknown_08)->Fill_Rect_Trans(rect, RGBClass(0xFD, 0xB5, 0x1C), 25);
+    ((Surface *)SurfacePtr)->Fill_Rect_Trans(rect, RGBClass(0xFD, 0xB5, 0x1C), 25);
     rect.Set(xpos + 4, bottom - firstheight, 7, firstheight);
-    ((Surface *)unknown_08)->Fill_Rect_Trans(rect, RGBClass(0xFD, 0xB5, 0x1C), 50);
+    ((Surface *)SurfacePtr)->Fill_Rect_Trans(rect, RGBClass(0xFD, 0xB5, 0x1C), 50);
     rect.Set(xpos + 11, bottom - firstheight, 4, firstheight);
-    ((Surface *)unknown_08)->Fill_Rect_Trans(rect, RGBClass(0xFD, 0xB5, 0x1C), 25);
+    ((Surface *)SurfacePtr)->Fill_Rect_Trans(rect, RGBClass(0xFD, 0xB5, 0x1C), 25);
     rect.Set(xpos + 132, bottom - secondheight, 4, secondheight);
-    ((Surface *)unknown_08)->Fill_Rect_Trans(rect, RGBClass(0xFA, 0x1C, 0x1C), 25);
+    ((Surface *)SurfacePtr)->Fill_Rect_Trans(rect, RGBClass(0xFA, 0x1C, 0x1C), 25);
     rect.Set(xpos + 132 + 4, bottom - secondheight, 7, secondheight);
-    ((Surface *)unknown_08)->Fill_Rect_Trans(rect, RGBClass(0xFA, 0x1C, 0x1C), 50);
+    ((Surface *)SurfacePtr)->Fill_Rect_Trans(rect, RGBClass(0xFA, 0x1C, 0x1C), 50);
     rect.Set(xpos + 132 + 11, bottom - secondheight, 4, secondheight);
-    ((Surface *)unknown_08)->Fill_Rect_Trans(rect, RGBClass(0xFA, 0x1C, 0x1C), 25);
+    ((Surface *)SurfacePtr)->Fill_Rect_Trans(rect, RGBClass(0xFA, 0x1C, 0x1C), 25);
 
     int firstheightcount = 1;
     int secondheightcount = 1;
@@ -59,7 +59,7 @@ void ScoreClass::Do_Graph(int first, int second, int xpos)
         }
         if (firstheightcount <= firstheight) {
             rect.Set(xpos, y, 15, firstheightcount);
-            unknown_surface_839954->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
+            unknown_surface_839954->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
             firstrect = Count_Up_Print(unknown_surface_839954, L"%d", firstcount / max, first, xpos, y);
         } else {
             firstrect = Count_Up_Print(unknown_surface_839954, L"%d", first, first, xpos, bottom - firstheight);
@@ -69,7 +69,7 @@ void ScoreClass::Do_Graph(int first, int second, int xpos)
         }
         if (secondheightcount <= secondheight) {
             rect.Set(xpos + 132, y, 15, secondheightcount);
-            unknown_surface_839954->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
+            unknown_surface_839954->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
             secondrect = Count_Up_Print(unknown_surface_839954, L"%d", secondcount / max, second, xpos + 132, y);
         } else {
             secondrect = Count_Up_Print(unknown_surface_839954, L"%d", second, second, xpos + 132, bottom - secondheight);
@@ -87,14 +87,14 @@ void ScoreClass::Do_Graph(int first, int second, int xpos)
         unknown_surface_839954->Copy_From(firstrect, *unknown_surface_839958, firstrect, false, true);
     }
     rect.Set(xpos, bottom - firstheight, 15, firstheight);
-    unknown_surface_839958->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
+    unknown_surface_839958->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
     Count_Up_Print(unknown_surface_839954, L"%d", first, first, xpos, bottom - firstheight);
     Count_Up_Print(unknown_surface_839958, L"%d", first, first, xpos, bottom - firstheight);
     if (secondrect.Is_Valid()) {
         unknown_surface_839954->Copy_From(secondrect, *unknown_surface_839958, secondrect, false, true);
     }
     rect.Set(xpos + 132, bottom - secondheight, 15, secondheight);
-    unknown_surface_839958->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
+    unknown_surface_839958->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
     Count_Up_Print(unknown_surface_839954, L"%d", second, second, xpos + 132, bottom - secondheight);
     Count_Up_Print(unknown_surface_839958, L"%d", second, second, xpos + 132, bottom - secondheight);
     ScoreDelay(20);

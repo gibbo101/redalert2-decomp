@@ -13,6 +13,7 @@
 struct ShapeFileStruct;
 class ConvertClass;
 class ScoreFontClass;
+class Surface;
 
 class ScoreAnimClass {
 public:
@@ -20,7 +21,7 @@ public:
     virtual ~ScoreAnimClass() {}                                // deleting 0x00668370
     virtual void Pause();                                       // slot 1 0x00668300 (stops the timer)
     virtual void Resume();                                      // slot 2 0x00668350 (starts it)
-    virtual bool Update(int unknown) = 0;                       // slot 3
+    virtual bool Update(Surface *surface) = 0;                       // slot 3
 
     int XPos;                                       // +0x04
     int YPos;                                       // +0x08
@@ -32,7 +33,7 @@ class ScoreTimeClass : public ScoreAnimClass {
 public:
     ScoreTimeClass(int x, int y, void const *data, int maxStage, int delay, ConvertClass *drawer); // 0x00667F40
     virtual ~ScoreTimeClass() {}                                // deleting 0x00668390
-    virtual bool Update(int unknown);                           // slot 3 0x00667F90
+    virtual bool Update(Surface *surface);                           // slot 3 0x00667F90
 
     int Stage;                                      // +0x1C current frame
     int MaxStage;                                   // +0x20
@@ -44,7 +45,7 @@ class ScorePrintClass : public ScoreAnimClass {
 public:
     ScorePrintClass(void const *string, int x, int y, ScoreFontClass *font, bool background);  // 0x006680A0
     virtual ~ScorePrintClass() {}                               // deleting 0x006683B0
-    virtual bool Update(int unknown);                           // slot 3 0x006680F0
+    virtual bool Update(Surface *surface);                           // slot 3 0x006680F0
 
     int Stage;                                      // +0x1C characters typed
     int unknown_20;                                 // +0x20

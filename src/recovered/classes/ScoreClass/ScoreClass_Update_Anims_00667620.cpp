@@ -13,7 +13,7 @@ void ScoreClass::Update_Anims()
         unknown_surface_839954->Copy_From(*unknown_surface_839958, false, true);
     }
     for (int index = 0; index < Anims.Count(); index++) {
-        if (Anims[index]->Update(unknown_08) == true) {
+        if (Anims[index]->Update(SurfacePtr) == true) {
             delete Anims[index];
             Anims.Delete(index);
         }

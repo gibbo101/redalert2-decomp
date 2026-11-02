@@ -4,8 +4,8 @@
     "id": "population-3309",
     "inventory_sha256": "070dd2109464ed1d41abb1fb543f7ecf0a7c93a01098a5ed71daaf9fd20e01f0",
     "gaps_sha256": "09317acd081d2966385adaac22f32470e6510b95fbf8fca220823fa2a3c5c8fa",
-    "historical_population_sha256": "69c402fa176afc9054ca79c7f00001c8fc0dcc4d7c98538f5f71924375170176",
-    "historical_acceptance_sha256": "da3b5ac35fb09883025ddd741f7e557a5614dde9716dc47a61278211851586f0"
+    "historical_population_sha256": "1f92d10c5ac6864a9ea224d9c1ec4d420618f63e298ded2ae52bc2f825e60e2f",
+    "historical_acceptance_sha256": "bf95be2a71ef86912f2e48eb00e0ee496718517ae313e3df02cceeff595db48f"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4861,7 +4861,7 @@
     "?Draw_Me@SliderClass@@UAEHH@Z": 6835360,
     "?One_Time@UnitTypeClass@@SAXXZ": 7383296,
     "?Insert@WideString@@QAE_NGI@Z": 7800288,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "?Print_Char@MSFont@@UAEXPAVSurface@@GHHHH@Z": 5981136,
     "__imp__ValidateRect@8": 7971832,
@@ -5003,7 +5003,7 @@
     "?Detach@ParasiteClass@@UAEXPAVAbstractClass@@_N@Z": 6320640,
     "?Unknown_Slot4@MSPrintAnim@@UAE_NPAVSurface@@PAVRect@@@Z": 5959072,
     "?unknown_char_770400@WideString@@QBEGI@Z": 7799808,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "?Load@BaseClass@@UAGJPAUIStream@@@Z": 4376224,
     "?Increase_Table_Size@?$IndexClass@HPAVMapRegionClass@@@@QAE_NH@Z": 5828944,
     "??1LightConvertClass@@UAE@XZ": 5476128,

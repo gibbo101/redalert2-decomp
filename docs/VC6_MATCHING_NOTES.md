@@ -934,3 +934,10 @@ constructor out of line, as the original did (CoordStruct ctor 0x41B630 in 0x63D
 - Of two duplicate error blocks, VC6 keeps as the shared tail the one whose branch has an explicit `return`.
 - (Near481) VC6 reorders ungrouped FP sums; only explicit grouping fixes product order: Closest_Object 0x5D5090
   matched with double locals y, z, x and `x * x + (y * y + z * z)`; none of 36 ungrouped orders did.
+
+## Callee conventions and TibSun helpers (Wol483, 2026-11-02)
+
+- A parameterless callee's calling convention moves the caller's epilogue scheduling: Wonline_Main 0x73A300's
+  `xor eax,eax` lands before the pops only when unknown_close_all_dialogs 0x753F50 is declared __fastcall.
+- Where TibSun calls SendDlgItemMessage and RA2 compiles GetDlgItem + SendMessageA, the original used an inlined
+  helper (Send_Dlg_Item_Message); TibSun's inline accessors (MultiMission::Get_Official) fix load order.

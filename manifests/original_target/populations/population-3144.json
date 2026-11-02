@@ -4,8 +4,8 @@
     "id": "population-3144",
     "inventory_sha256": "9b49da8deac1889074759c7ee91af2afb1aa59acf9de23ba7b00e1bd2f083f24",
     "gaps_sha256": "35d91b8470ebaf7df57b7aa21678d3713f8f563003b0c5601e088c8ee34d42bf",
-    "historical_population_sha256": "a22bf9ae48bd7fed5fd1376a830bd1e851831d01e974d9f9d00647850008f8df",
-    "historical_acceptance_sha256": "a8d01d5ad4b101fa48cc15faa98cc0e2e01fac7c91546e9b0f3b92569d22a74c"
+    "historical_population_sha256": "a2a6efb70c7165d1eecc6a659c4fe5875aa3e3d5eb5730cc5129d9828afe2c27",
+    "historical_acceptance_sha256": "2f0a034a34e1695fc8a47c9e0da02b07c8a1244662e256fd3499cdb84ae34b73"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10560,7 +10560,7 @@
     "?unknown_protocol_7fd370@@3IA": 8377200,
     "_?maximum@?1??Building_Find_Nearby_Radio_Acceptor_00450f90@@YIPAVBuildingClass@@PAVHouseClass@@PAVTechnoClass@@@Z@4HA": 8711404,
     "?Draw_Me@SliderClass@@UAEHH@Z": 6835360,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "?Print_Char@MSFont@@UAEXPAVSurface@@GHHHH@Z": 5981136,
     "?Draw_Line@RadBeam@@QAEXABUCoordStruct@@0F@Z": 6510608,
@@ -10724,7 +10724,7 @@
     "?unknown_slot29@MapClass@@UAEXABVRect@@@Z": 5544672,
     "?Detach@MapClass@@UAEXPAVAbstractClass@@_N@Z": 5610880,
     "?Detach@ParasiteClass@@UAEXPAVAbstractClass@@_N@Z": 6320640,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "?Send_To@IPXGlobalConnClass@@UAEHPADHPAVIPXAddressClass@@PAE_NG@Z": 5393232,
     "?unknown_forward_address_a3fbac@@3VIPXAddressClass@@A": 10746796,
     "?unknown_port_7f60dc@@3HA": 8347868,

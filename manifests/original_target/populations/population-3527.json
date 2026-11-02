@@ -4,8 +4,8 @@
     "id": "population-3527",
     "inventory_sha256": "54640f0785ba3127022e56e90fea2037d576bbbf2cbfeb33773528cba7ce382b",
     "gaps_sha256": "2c5dcc36ed56fd577483b240269aab3987844922c3057fff09e8c2c1a734749a",
-    "historical_population_sha256": "3c9f727bf56c55aa2cbd0aed7f92042ed22f5569719a5f2367eaaacaf12d7748",
-    "historical_acceptance_sha256": "659f75d62eccef234565e120ecd5725039f68ef30cace1bc39ad9dc2c411df1f"
+    "historical_population_sha256": "da9c46438708afecc66abf02df331b96769ef89623ced2f9fd0cd62cb707fe12",
+    "historical_acceptance_sha256": "7172bd6f3864b016d1160765fecb5155e03a618fe9068772c421dce577cbc178"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10055,7 +10055,7 @@
     "??9WideString@@QBE_NABV0@@Z": 7797552,
     "??HWideString@@QAE?AV0@ABV0@@Z": 7798688,
     "?Get_Wide_String@CampaignINI@@QBEHPBD0PAGH@Z": 5304336,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Update@LaserDrawClass@@QAEXXZ": 5452592,
     "?Create@?$Initializer@VMultiplayerBattle@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000736,
     "?Create@?$Initializer@VMultiplayerManBattle@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000800,
@@ -10063,7 +10063,7 @@
     "?Create@?$Initializer@VUnholyAlliance@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000928,
     "?Create@?$Initializer@VFreeForAll@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6000992,
     "?Create@?$Initializer@VMPCooperative@@@MultiplayerGameMode@@UAEPAV2@ABVWideString@@0ABVWstring@@1_NH@Z": 6001056,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "?Increase_Table_Size@?$IndexClass@HPAVMapRegionClass@@@@QAE_NH@Z": 5828944,
     "?Increase_Table_Size@?$IndexClass@HPAVCommandClass@@@@QAE_NH@Z": 5367648,
     "?Trim_Trailing@WideString@@QAEXABV1@@Z": 7799344,

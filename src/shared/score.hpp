@@ -20,6 +20,8 @@ class HouseClass;
 // A score screen sound (12 bytes, TibSun's SfxEntry; Presentation lists "Back",
 // "Type", "Wipe" in ScoreClass::Sounds). Only the name is kept when sound is available.
 struct ScoreSoundClass {
+    ScoreSoundClass(char const *name, char const *filename); // 0x00668280; release build ignores filename
+    ~ScoreSoundClass();                                     // 0x006682B0
     char *Name;                     // +0x00 _strdup of the name
     int unknown_04;                 // +0x04
     bool unknown_08;                // +0x08
@@ -50,9 +52,9 @@ public:
 
     int XOffset;                                    // +0x00 (screen width - 640) / 2
     int YOffset;                                    // +0x04 (screen height - 400) / 2
-    int unknown_08;                                 // +0x08 passed to every ScoreAnimClass::Update
+    Surface *SurfacePtr;                            // +0x08 owned score surface, created as DSurface in Presentation
     ScoreFontClass *Font;                           // +0x0C
-    ScoreFontClass *unknown_font_10;                // +0x10 the time font
+    ScoreFontClass *unknown_font_10;                // +0x10 the large font
     ConvertClass *Drawer;                           // +0x14
     int Color;                                      // +0x18
     DynamicVectorClass<ScoreAnimClass *> Anims;     // +0x1C

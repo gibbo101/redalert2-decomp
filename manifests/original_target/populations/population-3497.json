@@ -4,8 +4,8 @@
     "id": "population-3497",
     "inventory_sha256": "776450bd7b3e17487144eca5c9e3c23e0ba16f27b03a383f908add2dedf855d1",
     "gaps_sha256": "9ab0402cbf021f9f7ea440c05fac9113f78e6b7057fa38def1b5adefcc5e82e2",
-    "historical_population_sha256": "a7d455ec4b3934eae604f9ccaa868351fca1b2adb610713f4f1d9c3aef9872a7",
-    "historical_acceptance_sha256": "9fd61cc216c9e1d02a9e682552c5e29f0ed982356baca3d5af979663ecf4f289"
+    "historical_population_sha256": "cc94485880357436892e0e502abdcc0144ca34b38f3ead52e72deece4120e327",
+    "historical_acceptance_sha256": "40168d8c10ebb01c29b5a77a8049613523aeffafe6395814ec58c282dfddf445"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10945,7 +10945,7 @@
     "??0SpotLightClass@@QAE@UCoordStruct@@H@Z": 6149520,
     "?unknown_func_5ddb90@SpotLightClass@@QAEXXZ": 6151056,
     "??1SpotLightClass@@QAE@XZ": 6149648,
-    "?Update@ScoreTimeClass@@UAE_NH@Z": 6717328,
+    "?Update@ScoreTimeClass@@UAE_NPAVSurface@@@Z": 6717328,
     "?Process_Spread@TiberiumClass@@QAEXXZ": 7247648,
     "?Init_Spread@TiberiumClass@@SAXXZ": 7247136,
     "?Rebuild_Spread@TiberiumClass@@QAEXXZ": 7248784,
@@ -10968,7 +10968,7 @@
     "?Unknown_00637A80@RadSiteClass@@QAEXXZ": 6519424,
     "?Speech_Load@@YIJPAUIStream@@@Z": 7432144,
     "?Voc_Static_Load@@YIJPAUIStream@@@Z": 7424896,
-    "?Update@ScorePrintClass@@UAE_NH@Z": 6717680,
+    "?Update@ScorePrintClass@@UAE_NPAVSurface@@@Z": 6717680,
     "?Remove_Min@UnknownVeinHeap@@QAEPAUUnknownVeinNode@@XZ": 5824976,
     "?Update@ProgressBarClass@@QAE_NN@Z": 4372944,
     "?Save_All@VeinholeMonsterClass@@SI_NPAUIStream@@@Z": 7414096,

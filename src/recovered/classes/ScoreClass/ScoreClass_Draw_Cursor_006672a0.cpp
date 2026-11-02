@@ -29,7 +29,7 @@ void ScoreClass::Draw_Cursor(int x, int y)
         unknown_surface_839954->Draw_Line(Point2D(x, y), Point2D(x + 10, y), Color);
     } else {
         rect.Set(x, y, 11, 1);
-        unknown_surface_839954->Copy_From(rect, *(Surface *)unknown_08, rect, false, true);
+        unknown_surface_839954->Copy_From(rect, *(Surface *)SurfacePtr, rect, false, true);
     }
     if (!timer) {
         blink ^= 1;
