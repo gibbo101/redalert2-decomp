@@ -973,3 +973,10 @@ Resume points and tried variants are in build/class-work/Scout516/NOTES.md, with
 - Not started: TerrainClass Render 0x6E4430 (needs an override declaration; check the vtable emission first), the CCINI overlapping rows 0x46AEA0/0x46BEFE, and the header-static initializer seeds 0x40ACB0-0x40F0A0.
 - OWNER DECISION (10:15Z): BaseNodeClass operator== / != / > are out-of-line members guarded by RA2_BASE_NODE_MEMBER_OPERATORS, which only the unit's source defines. Every other includer keeps the free inline operators, so accepted rows are unchanged. Landed as Scout520 r1 (bd6b5dee4).
 - Lessons: guard even a plain non-virtual member added to a widely included header; a caller of a double wrapper keeps the value on the FP stack; plans that take over rows from hand-written seed populations (pop-88, pop-129) need "allow_split": true.
+
+## Scout520 (2026-11-02, closed; 444 B landed in r1-r2)
+Resume notes are in build/class-work/Scout520/NOTES.md.
+- PlayerProfile::Populate_Dialog 0x739B70: 74.72 (1,309 B). The only gap is one extra 4-byte stack slot. From the second statistic site on, VC6 keeps GetDlgItem in ebp, where the original calls it directly at every site and keeps the conditional result in ebp.
+- 0x4D4520, 0x4D4620/0x4D4640 and 0x4D46C0: each is exact alone but must join pop-2660. An `extern` after the definition makes VC6 emit a duplicate _$E initializer/atexit pair. OWNER RULING (10:25Z): guard those externs the way RA2_WARHEAD_LIST_DEFINED does. Assigned to Scout522.
+- Blocked on identity or layout: 0x40CAB0 (needs LogicClass's vtable and Submit; currently accepted under the UnknownList832470 alias), 0x40F090 (the StaticBufferClass layout contradicts its constructor at 0x69A1A0), and 0x4D45F0 (the version object is polymorphic).
+- 0x4B550D is a .data switch-table entry, not code.

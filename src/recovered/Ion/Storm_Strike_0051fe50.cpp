@@ -14,7 +14,7 @@
 #include "shared/rules.hpp"
 #include "shared/sound_play.hpp"
 #include "shared/unknown_geometry.hpp"
-// @ref ?StormBoltsPresent@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a518c8
+// @ref ?BoltsPresent@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a518c8
 // @ref _unknown_geometry_g=00a51930
 // @ref _unknown_geometry_j=00a51920
 // @ref _unknown_geometry_l=00a518e0
@@ -39,7 +39,7 @@ void __fastcall Storm_Strike_0051FE50(CoordStruct coord)
     int pick = unknown_id_source_a3d290->Random()();
     AnimTypeClass *type = Rules->WeatherConBolts[(unsigned)pick % Rules->WeatherConBolts.Count()];
     AnimClass *bolt = new AnimClass(type, center, 0, 1, 0x600, 0);
-    StormBoltsPresent.Add(bolt);
+    IonStormClass::BoltsPresent.Add(bolt);
 
     Cell cell = cellptr.MapCoords;
     int level = cellptr.unknown_11b;

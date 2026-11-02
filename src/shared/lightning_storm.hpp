@@ -17,10 +17,21 @@ struct IStream;
 // copies unknown_geometry_k).
 extern Cell StormCoords;
 // Clouds drawn over the storm (0x00A51880), bolts striking (0x00A518C8) and
-// clouds that strike once half played (0x00A51908).
-extern DynamicVectorClass<AnimClass *> StormCloudsPresent;
-extern DynamicVectorClass<AnimClass *> StormBoltsPresent;
-extern DynamicVectorClass<AnimClass *> StormCloudsManifesting;
+// clouds that strike once half played (0x00A51908). Static data members: their
+// atexit destructors 0x0051F150/0x0051F1F0/0x0051F290 test and set a guard bit,
+// as VC6 does for class statics (class name a hypothesis: TibSun ion.h's
+// IonStormClass, the same Ion.cpp; the storm functions stay free functions).
+// Declared only for Ion.cpp (RA2_ION_STORM_LISTS, set by its first source): a
+// class static of a type with a constructor takes dynamic-initializer numbers
+// (_$E) in every unit that sees the declaration.
+#ifdef RA2_ION_STORM_LISTS
+class IonStormClass {
+public:
+    static DynamicVectorClass<AnimClass *> CloudsManifesting;
+    static DynamicVectorClass<AnimClass *> CloudsPresent;
+    static DynamicVectorClass<AnimClass *> BoltsPresent;
+};
+#endif
 extern bool StormActive;                    // 0x00A51934
 extern int StormDeferment;                  // 0x00A51938 frames before a deferred storm starts
 extern int unknown_dominator_state_a5193c;  // 0x00A5193C (1 dominator lighting, 2 returning)

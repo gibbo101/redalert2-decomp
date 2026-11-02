@@ -15,9 +15,9 @@
 // @ref ?unknown_dominator_start_7ddb18@@3HA=007ddb18
 // @ref ?unknown_dominator_delay_7ddb1c@@3HA=007ddb1c
 // @ref ?unknown_dominator_state_a5193c@@3HA=00a5193c
-// @ref ?StormCloudsPresent@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51880
-// @ref ?StormBoltsPresent@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a518c8
-// @ref ?StormCloudsManifesting@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51908
+// @ref ?CloudsPresent@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51880
+// @ref ?BoltsPresent@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a518c8
+// @ref ?CloudsManifesting@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51908
 
 HRESULT __fastcall Save_Storm_0051F3F0(IStream *stream)
 {
@@ -62,37 +62,37 @@ HRESULT __fastcall Save_Storm_0051F3F0(IStream *stream)
         return result;
     }
     int count;
-    count = StormCloudsManifesting.Count();
+    count = IonStormClass::CloudsManifesting.Count();
     result = stream->Write(&count, sizeof(count), 0);
     if (FAILED(result)) {
         return result;
     }
     for (int i = 0; i < count; i++) {
-        AnimClass *anim = StormCloudsManifesting[i];
+        AnimClass *anim = IonStormClass::CloudsManifesting[i];
         result = stream->Write(&anim, sizeof(anim), 0);
         if (FAILED(result)) {
             return result;
         }
     }
-    count = StormCloudsPresent.Count();
+    count = IonStormClass::CloudsPresent.Count();
     result = stream->Write(&count, sizeof(count), 0);
     if (FAILED(result)) {
         return result;
     }
     for (int j = 0; j < count; j++) {
-        AnimClass *anim = StormCloudsPresent[j];
+        AnimClass *anim = IonStormClass::CloudsPresent[j];
         result = stream->Write(&anim, sizeof(anim), 0);
         if (FAILED(result)) {
             return result;
         }
     }
-    count = StormBoltsPresent.Count();
+    count = IonStormClass::BoltsPresent.Count();
     result = stream->Write(&count, sizeof(count), 0);
     if (FAILED(result)) {
         return result;
     }
     for (int k = 0; k < count; k++) {
-        AnimClass *anim = StormBoltsPresent[k];
+        AnimClass *anim = IonStormClass::BoltsPresent[k];
         result = stream->Write(&anim, sizeof(anim), 0);
         if (FAILED(result)) {
             return result;

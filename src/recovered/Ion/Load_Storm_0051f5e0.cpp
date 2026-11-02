@@ -17,9 +17,9 @@
 // @ref ?unknown_dominator_start_7ddb18@@3HA=007ddb18
 // @ref ?unknown_dominator_delay_7ddb1c@@3HA=007ddb1c
 // @ref ?unknown_dominator_state_a5193c@@3HA=00a5193c
-// @ref ?StormCloudsPresent@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51880
-// @ref ?StormBoltsPresent@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a518c8
-// @ref ?StormCloudsManifesting@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51908
+// @ref ?CloudsPresent@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51880
+// @ref ?BoltsPresent@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a518c8
+// @ref ?CloudsManifesting@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51908
 
 HRESULT __fastcall Load_Storm_0051F5E0(IStream *stream)
 {
@@ -75,10 +75,10 @@ HRESULT __fastcall Load_Storm_0051F5E0(IStream *stream)
         if (FAILED(result)) {
             return result;
         }
-        StormCloudsManifesting.Add(anim);
+        IonStormClass::CloudsManifesting.Add(anim);
     }
     for (i = 0; i < count; i++) {
-        SwizzleManager.Swizzle((void **)&StormCloudsManifesting[i]);
+        SwizzleManager.Swizzle((void **)&IonStormClass::CloudsManifesting[i]);
     }
     result = stream->Read(&count, sizeof(count), 0);
     if (FAILED(result)) {
@@ -90,10 +90,10 @@ HRESULT __fastcall Load_Storm_0051F5E0(IStream *stream)
         if (FAILED(result)) {
             return result;
         }
-        StormCloudsPresent.Add(anim);
+        IonStormClass::CloudsPresent.Add(anim);
     }
     for (j = 0; j < count; j++) {
-        SwizzleManager.Swizzle((void **)&StormCloudsPresent[j]);
+        SwizzleManager.Swizzle((void **)&IonStormClass::CloudsPresent[j]);
     }
     result = stream->Read(&count, sizeof(count), 0);
     if (FAILED(result)) {
@@ -105,10 +105,10 @@ HRESULT __fastcall Load_Storm_0051F5E0(IStream *stream)
         if (FAILED(result)) {
             return result;
         }
-        StormBoltsPresent.Add(anim);
+        IonStormClass::BoltsPresent.Add(anim);
     }
     for (k = 0; k < count; k++) {
-        SwizzleManager.Swizzle((void **)&StormBoltsPresent[k]);
+        SwizzleManager.Swizzle((void **)&IonStormClass::BoltsPresent[k]);
     }
     return result;
 }

@@ -33,9 +33,9 @@
 // @ref ?unknown_dominator_start_7ddb18@@3HA=007ddb18
 // @ref ?unknown_dominator_delay_7ddb1c@@3HA=007ddb1c
 // @ref ?unknown_dominator_state_a5193c@@3HA=00a5193c
-// @ref ?StormCloudsPresent@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51880
-// @ref ?StormBoltsPresent@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a518c8
-// @ref ?StormCloudsManifesting@@3V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51908
+// @ref ?CloudsPresent@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51880
+// @ref ?BoltsPresent@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a518c8
+// @ref ?CloudsManifesting@IonStormClass@@2V?$DynamicVectorClass@PAVAnimClass@@@@A=00a51908
 // @ref ?Set_Lighting_00520B00@@YIXHHH_N@Z=00520b00
 // @ref ?Storm_Strike_0051FE50@@YIXUCoordStruct@@@Z=0051fe50
 // @ref ?Unknown_0051FC90@@YGXVCell@@@Z=0051fc90
@@ -66,29 +66,29 @@ void __fastcall Update_Storm_00520200()
         }
     }
 
-    if (StormBoltsPresent.Count() > 0) {
-        for (int index = StormBoltsPresent.Count() - 1; index >= 0; index--) {
-            AnimClass *bolt = StormBoltsPresent[index];
+    if (IonStormClass::BoltsPresent.Count() > 0) {
+        for (int index = IonStormClass::BoltsPresent.Count() - 1; index >= 0; index--) {
+            AnimClass *bolt = IonStormClass::BoltsPresent[index];
             int stage = bolt->Stage;
             if (stage >= ((ShapeFileStruct *)bolt->Class_Of()->unknown_slot39())->FrameCount / 2) {
-                StormBoltsPresent.Delete(index);
+                IonStormClass::BoltsPresent.Delete(index);
             }
         }
     }
-    for (int index = StormCloudsManifesting.Count() - 1; index >= 0; index--) {
-        AnimClass *cloud = StormCloudsManifesting[index];
+    for (int index = IonStormClass::CloudsManifesting.Count() - 1; index >= 0; index--) {
+        AnimClass *cloud = IonStormClass::CloudsManifesting[index];
         int stage = cloud->Stage;
         if (stage > ((ShapeFileStruct *)cloud->Class_Of()->unknown_slot39())->FrameCount / 2) {
             Storm_Strike_0051FE50(cloud->Center_Coord());
-            StormCloudsManifesting.Delete(index);
+            IonStormClass::CloudsManifesting.Delete(index);
         }
     }
-    if (StormCloudsPresent.Count() > 0) {
-        for (int index = StormCloudsPresent.Count() - 1; index >= 0; index--) {
-            AnimClass *cloud = StormCloudsPresent[index];
+    if (IonStormClass::CloudsPresent.Count() > 0) {
+        for (int index = IonStormClass::CloudsPresent.Count() - 1; index >= 0; index--) {
+            AnimClass *cloud = IonStormClass::CloudsPresent[index];
             int stage = cloud->Stage;
             if (stage >= ((ShapeFileStruct *)cloud->Class_Of()->unknown_slot39())->FrameCount - 1) {
-                StormCloudsPresent.Delete(index);
+                IonStormClass::CloudsPresent.Delete(index);
             }
         }
     } else if (StormTimeToEnd) {
@@ -113,8 +113,8 @@ void __fastcall Update_Storm_00520200()
                 cell.X += Random_Pick(-range, range);
                 cell.Y += Random_Pick(-range, range);
                 bool crowded = false;
-                for (int index = 0; index < StormCloudsPresent.Count(); index++) {
-                    Cell other = Coord_Cell(StormCloudsPresent[index]->Center_Coord());
+                for (int index = 0; index < IonStormClass::CloudsPresent.Count(); index++) {
+                    Cell other = Coord_Cell(IonStormClass::CloudsPresent[index]->Center_Coord());
                     int dx = cell.X - other.X;
                     if (dx < 0) {
                         dx = -dx;
