@@ -4,8 +4,8 @@
     "id": "population-3236",
     "inventory_sha256": "60ce7f43fa193eeabbcafd305b913c01a068161f08eab8b5b287c292dfed2e7e",
     "gaps_sha256": "2a9cf13a60373cc49abbc6b637b6f343c09ee824d501db57b8eeb5ef6e7a6c05",
-    "historical_population_sha256": "2c980d75064b1d1cc477525346a055ea039e80e7af60841c8c79dbc342235b82",
-    "historical_acceptance_sha256": "b7bc978d8bf96c85f86627fab1648d750bc75f5ced7189c5fde044047d6a1c88"
+    "historical_population_sha256": "f1ac395bbda947abac7a2024879bc171bd07353596230ea0eabb9cc6eb400889",
+    "historical_acceptance_sha256": "db610b379a832d488bee1ac8ccb245d933862c5dbd03f59784b04e81c5c14132"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8687,7 +8687,7 @@
     "?Unknown_0055A280@MapClass@@QAEHABUCoordStruct@@@Z": 5612160,
     "?unknown_bridge_height_a41120@@3HA": 10752288,
     "?Unknown_00569320@MapClass@@QAE_NABVCell@@@Z": 5673760,
-    "?Infantry_As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVObjectClass@@@Z": 4250576,
+    "?As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVAbstractClass@@@Z": 4250576,
     "?Infantry_Action_Allowed_00614b50@@YIEH@Z": 6376272,
     "?KeyForceFire1@@3HA": 10750892,
     "?KeyForceFire2@@3HA": 10750896,
@@ -11290,7 +11290,34 @@
     "?AI@ParasiteClass@@UAEXXZ": 6319952,
     "??YCentroid@WorldDominationTour@@QAEAAU01@ABUPoint2D@@@Z": 7514048,
     "?Average@Centroid@WorldDominationTour@@QBE?AUPoint2D@@XZ": 7514096,
-    "??_ETeleportLocomotionClass@@UAEPAXI@Z": 7216112
+    "??_ETeleportLocomotionClass@@UAEPAXI@Z": 7216112,
+    "?ObjectTypes@ObjectTypeClass@@2V?$DynamicVectorClass@PAVObjectTypeClass@@@@A": 10956688,
+    "?Set_Text@TextLabelClass@@UAEXPBG@Z": 7280608,
+    "?Suspend@ThemeClass@@QAEXXZ": 7242352,
+    "_?pattern@?1??unknown_6cc020@TechnoClass@@QAEXXZ@4PA_NA": 8352020,
+    "?Unknown_0069D820@SuperClass@@QAE_NXZ": 6936608,
+    "?Draw_Selection_Overlay_0043b660@BuildingClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4437600,
+    "?Reserve_Base_Area_004510d0@BuildingClass@@QAEX_N@Z": 4526288,
+    "?Suspend@SuperClass@@QAE_N_N@Z": 6933600,
+    "?Recharge@SuperClass@@QAE_N_N@Z": 6934464,
+    "?unknown_pending_super_833694@@3HA": 8599188,
+    "?Anim_Stage@SuperClass@@QBEHXZ": 6935904,
+    "?Forced_Charge@SuperClass@@QAEX_N@Z": 6936208,
+    "?State_String@SuperClass@@QBEPBGXZ": 6936432,
+    "?unknown_69e990@SuperClass@@QBE_NXZ": 6941072,
+    "?Dial@PhoneEdit@@QAE_NXZ": 6347904,
+    "?Unknown_00537830@LightSourceClass@@SIXH_N@Z": 5470256,
+    "?unknown_place_anim_69cb30@SuperClass@@QAEXUCoordStruct@@@Z": 6933296,
+    "?Discharged@SuperClass@@QAE_N_NABVCell@@@Z": 6934672,
+    "?Place@SuperClass@@QAEXABVCell@@_N@Z": 6936656,
+    "?unknown_6ef740@TubeClass@@QBE_NABVCell@@@Z": 7272256,
+    "?Add_Direction@TubeClass@@QAEXH@Z": 7272400,
+    "?Unknown_004131D0@UnknownTracker839EA0@@QAEXPAVAbstractClass@@@Z": 4272592,
+    "?Detach@MapClass@@QAEXPAVAbstractClass@@_N@Z": 5610880,
+    "___RTtypeid": 7879685,
+    "?QueryInterface@TiberianSunClassFactory@@UAGJABUGUID@@PAPAX@Z": 4352784,
+    "?Adjacent_Coord_With_Height@@YI?AUCoordStruct@@ABU1@H@Z": 4790400,
+    "?Region_Threat@MapClass@@QAEHPAVHouseClass@@HHH@Z": 5668128
   },
   "regions": [
     {
@@ -17821,7 +17848,7 @@
         {
           "offset": 892,
           "kind": 20,
-          "symbol": "?Infantry_As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVObjectClass@@@Z",
+          "symbol": "?As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVAbstractClass@@@Z",
           "target": 4250576,
           "addend": 0,
           "resolved": 4293952704
@@ -17973,7 +18000,7 @@
         {
           "offset": 2182,
           "kind": 20,
-          "symbol": "?Infantry_As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVObjectClass@@@Z",
+          "symbol": "?As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVAbstractClass@@@Z",
           "target": 4250576,
           "addend": 0,
           "resolved": 4293951414
@@ -18091,7 +18118,7 @@
           "resolved": 10706356
         }
       ],
-      "source_sha256": "1cd79fbe2e7cc74f8488fd09c50f8a16ba9f7ec92f50d5ca1fbe01abeb231780",
+      "source_sha256": "ac16a524c2ea44b1188d38f7183e910d47af48aca80ab7cd1dd656742397788a",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_Select_Object_Action_00505390.cpp",
       "population": "population-3236",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",

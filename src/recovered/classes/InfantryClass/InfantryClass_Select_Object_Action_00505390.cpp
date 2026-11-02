@@ -9,10 +9,10 @@
 #include "shared/rules.hpp"
 #include "shared/map_view.hpp"
 // Original RTTI-kind checked conversion: kinds 1, 2, 6 and 15, all TechnoClass descendants.
-TechnoClass *__fastcall Infantry_As_Techno_0040dbd0(ObjectClass *object);
+TechnoClass *__fastcall As_Techno_0040dbd0(AbstractClass *object);
 unsigned char __fastcall Infantry_Action_Allowed_00614b50(int action);
 // @ref ?Unknown_00569320@MapClass@@QAE_NABVCell@@@Z=00569320
-// @ref ?Infantry_As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVObjectClass@@@Z=0040dbd0
+// @ref ?As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVAbstractClass@@@Z=0040dbd0
 // @ref ?Infantry_Action_Allowed_00614b50@@YIEH@Z=00614b50
 // @ref ?KeyForceFire1@@3HA=00a40bac
 // @ref ?KeyForceFire2@@3HA=00a40bb0
@@ -82,7 +82,7 @@ return_capture_action:
                         if (object->Health_Ratio() < Rules->unknown_1360) return 0x1b;
                     } else return 0x1a;
                 }
-                TechnoClass *transport = Infantry_As_Techno_0040dbd0(object);
+                TechnoClass *transport = As_Techno_0040dbd0(object);
                 if (!transport || transport->unknown_slot32()->Passengers == 0) {
                     if (action == 0x1a || action == 1) goto return_selected_action;
                     return 7;
@@ -168,7 +168,7 @@ check_action_31:
             if (action == 0x1f) goto infiltration;
         }
         TechnoTypeClass *transport_type;
-        if (House->Is_Ally(target) && House->Unknown_004F52B0() && Infantry_As_Techno_0040dbd0(object) &&
+        if (House->Is_Ally(target) && House->Unknown_004F52B0() && As_Techno_0040dbd0(object) &&
             action != 5 && action != 0x1a && (transport_type = target->unknown_slot32()) != 0 && transport_type->Passengers > 0) {
             if (Type->BalloonHover) action = 0x1f;
             else {

@@ -953,3 +953,13 @@ swap in the inlined ID after an inlined Add" plateaus: PhoneEdit Dial/Add, the H
 RulesClass::Sides all went exact once ID called Count(). The 144 explicit-instance units still compile `ActiveCount`
 under `#ifndef VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS`, so they emit no Count COMDAT. Rescore any miss with an inlined
 ID/Add register swap.
+
+## How /Ob2 refuses an inline site (Plan512, 2026-11-02)
+
+Lab-confirmed (build/class-work/Plan512/lab/L1-L9): each call site is decided on its own. A callee expands when its
+own source body fits the caller's remaining allowance, and that allowance shrinks with every expansion already made.
+Sites are processed in reverse source order: an inline call placed after a site, even an empty one, pushes that
+site's inner callees out of line; the same call placed before it does nothing. The callee's body size is what counts
+(named int locals and struct copies count: four named ints flipped Planning_Centered_Rect, two did not); padding the
+caller or parent helpers does nothing. To refuse a helper where the original calls it, give that helper a larger,
+still-exact body (named locals), then rescore every accepted row that uses it (Plan512 x/fam.py).

@@ -24,7 +24,7 @@ inline bool Scroll_Key_Down(int key)
 // @ref ?unknown_player_a35db4@@3PAVHouseClass@@A=00a35db4
 // @ref ?unknown_objects_a40c60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A=00a40c60
 // @ref ?Unknown_0051A690@@YIPAVObjectClass@@PBVCell@@PAV1@@Z=0051a690
-// @ref ?Infantry_As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVObjectClass@@@Z=0040dbd0
+// @ref ?As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVAbstractClass@@@Z=0040dbd0
 // @ref ?unknown_47c2e0@CellClass@@QBE_NH@Z=0047c2e0
 // @ref ?Unknown_0042E860@Unknown84E8D0@@QAEPAVUnknownBeacon@@UCoordStruct@@@Z=0042e860
 // @ref ?unknown_object_84e8d0@@3VUnknown84E8D0@@A=0084e8d0
@@ -50,7 +50,7 @@ int ScrollClass::Unknown_00669960(Cell const &cell, ObjectClass *object, bool ar
         }
     } else {
         bool visible = true;
-        TechnoClass *techno = Infantry_As_Techno_0040dbd0(object);
+        TechnoClass *techno = As_Techno_0040dbd0(object);
         if (techno != 0 && !techno->unknown_372) {
             if ((techno->unknown_1b8 == 2 && !Map[techno->Center_Coord()].unknown_47c2e0(unknown_player_a35db4->ArrayIndex))
                     || techno->unknown_slot32()->Invisible) {

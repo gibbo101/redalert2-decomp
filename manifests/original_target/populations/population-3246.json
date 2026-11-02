@@ -4,8 +4,8 @@
     "id": "population-3246",
     "inventory_sha256": "e40c783bc09f6d5eba5f36cb6cd5a013c6a087c8b5eaad809918255a60a7b022",
     "gaps_sha256": "5fa89f0401f7477fa5984aaefcd14a1315e6a9c0ecade75d95bf4beadba3404d",
-    "historical_population_sha256": "d247a0ebda5e96f9dd59c66e1ee6bac0b1c2cd0eb03a9b9317d7e53d319564a9",
-    "historical_acceptance_sha256": "b87dda494ecb8f222b8ea05d9b4000199e6291ac4d15889505fa34b8567c3adc"
+    "historical_population_sha256": "ba93d5b118eef2ea17abac1cd9ca0c1121cf1446ab41bc2ad0dc913cb9330487",
+    "historical_acceptance_sha256": "1855084ac615b5bd45f646b08b0a08367492a90bd6f538f410b3b39d0db28d5d"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -11844,7 +11844,7 @@
     "?Infantry@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6601296,
     "?InfantryTypes@@3V?$DynamicVectorClass@PAVInfantryTypeClass@@@@A": 10748752,
     "?Infantry_Action_Allowed_00614b50@@YIEH@Z": 6376272,
-    "?Infantry_As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVObjectClass@@@Z": 4250576,
+    "?As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVAbstractClass@@@Z": 4250576,
     "?Info@AudioSource@@QAEPAUAudioSourceInfo@@XZ": 4228160,
     "?Init@AbstractClass@@UAEXXZ": 4260368,
     "?Init@AircraftClass@@UAEXXZ": 4275360,

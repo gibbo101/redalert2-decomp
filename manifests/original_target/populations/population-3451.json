@@ -4,8 +4,8 @@
     "id": "population-3451",
     "inventory_sha256": "1d3a65e3133a8d7111c412645638e8acda7402606e5a9690d369370cfe763549",
     "gaps_sha256": "c9a912e73a304dcf8dc3bd783c93430b9e124b8075a58201b17f33c3ab85a1c3",
-    "historical_population_sha256": "c730853124565b75b0a8c8fc188c97d8f2087c82e32de05cc2f80bc862295521",
-    "historical_acceptance_sha256": "502ffe224ad9a2b201d5718ad03c5c07ba2b25046c045bbbf81d3dfcce2e813b"
+    "historical_population_sha256": "1f23a139aa0b760bfda996e16e3454a925a9afbce5bf263fb775fee99765823c",
+    "historical_acceptance_sha256": "f9fbfb18d34de9e9f25d5425f30c150c08c4a267119a5c08bb410a2cf476d89d"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -18813,7 +18813,7 @@
     "?KeyForceMove2@@3HA": 10750904,
     "?KeyForceFire1@@3HA": 10750892,
     "?KeyForceFire2@@3HA": 10750896,
-    "?Infantry_As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVObjectClass@@@Z": 4250576,
+    "?As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVAbstractClass@@@Z": 4250576,
     "?Infantry_Action_Allowed_00614b50@@YIEH@Z": 6376272,
     "?unknown_slot137@InfantryClass@@UAEHXZ": 5268784,
     "?Unknown_006D8640@TechnoClass@@QAE_NPAUWeaponStruct@@@Z": 7177792,
