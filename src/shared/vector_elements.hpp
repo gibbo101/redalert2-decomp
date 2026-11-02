@@ -72,6 +72,14 @@ inline bool operator!=(DirtyAreaStruct const &a, DirtyAreaStruct const &b) { ret
 namespace WorldDominationTour {
 struct Centroid {
     Centroid() : unknown_00(0), unknown_04(0), unknown_08(0) {}
+#ifdef CENTROID_DECLARE_MEMBERS
+    // Guarded (defined by WDTMap.cpp only): new declarations here flip Pick_Lobby 0x00744090's
+    // instruction order (type-count sensitivity, VC6_MATCHING_NOTES).
+    // Adds a point to the sums (WDTMap.cpp 0x0072A7C0; inlined into the WDTMap.ini builder 0x0072A880).
+    Centroid &operator+=(Point2D const &point);
+    // The mean of the added points ((0, 0) when there are none; WDTMap.cpp 0x0072A7F0).
+    Point2D Average() const;
+#endif
     int unknown_00;
     int unknown_04;
     int unknown_08;

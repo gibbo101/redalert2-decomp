@@ -7,6 +7,8 @@
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ADD
+// The unit defines WorldDominationTour::Centroid's members (0x0072A7C0, 0x0072A7F0).
+#define CENTROID_DECLARE_MEMBERS
 #include "shared/shape_file.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
