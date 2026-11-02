@@ -192,7 +192,6 @@ struct AudioLevelSet {
     void __fastcall Init();                             // 0x00401000
     void Update();                                      // 0x00401080
     int Changed();                                      // 0x004010A0
-    void __fastcall Combine(AudioLevelSet *other);      // 0x004010C0
     void Clear_Changed();                               // 0x00401170
     int __fastcall Scale_Frequency(int value);          // 0x00401190 value * frequency / 100
 
@@ -200,6 +199,9 @@ struct AudioLevelSet {
     AudioLevel Frequency;           // +0x28 percent
     AudioLevel Pan;                 // +0x50 0..0x4000, 0x2000 centre
 };
+
+// 0x004010C0 is a free __fastcall function: as a member, VC6 orders the multiply operands differently.
+void __fastcall Audio_Level_Set_Combine(AudioLevelSet *set, AudioLevelSet *other);  // 0x004010C0
 
 // What a channel plays from (0x20 bytes; 0x00408380 makes one with its
 // own data buffer): a data pointer and total size, a list of pieces

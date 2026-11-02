@@ -4,8 +4,8 @@
     "id": "population-995",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "4f8d9a8b6e9ebd1051117476842993c71d38208c5ef3c8ec57fab7e2fe3fe006",
-    "historical_acceptance_sha256": "a5d9e9b57dcadb8b5910740d811bd81d5200528f0aa605d25c2bce98a894e32b",
+    "historical_population_sha256": "a0fafda7582e6a6d5c40a8bce164e043d500716fc77b5173a1406c5c4c99610f",
+    "historical_acceptance_sha256": "c5ba35dc0e526931aeaa4ccce101d7db773c63ddcf044577e6c487d53a049391",
     "separate_units": true
   },
   "references": {
@@ -650,7 +650,7 @@
     "?Audio_Channel_Next_Piece@@YIHPAUAudioChannel@@@Z": 4203200,
     "?Audio_Channel_Source_Ended@@YIHPAUAudioChannel@@@Z": 4203312,
     "?Audio_Master_Levels@@3PAUAudioLevelSet@@A": 8588112,
-    "?Combine@AudioLevelSet@@QAIXPAU1@@Z": 4198592,
+    "?Audio_Level_Set_Combine@@YIXPAUAudioLevelSet@@0@Z": 4198592,
     "?Audio_Initialized@@3HA": 8588108,
     "?Audio_Channel_Release@@YIXPAUAudioChannel@@H@Z": 4203584,
     "?Audio_Channel_Reset@@YIXPAUAudioChannel@@@Z": 4203680,
@@ -1703,7 +1703,41 @@
     "??_ERadarClass@@UAEPAXI@Z": 6507216,
     "??_EState@WorldDominationTour@@UAEPAXI@Z": 7539024,
     "??_ETabClass@@UAEPAXI@Z": 5898128,
-    "??_ENode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776
+    "??_ENode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
+    "?Resume@Anim@Voices@WorldDominationTour@@UAEXXZ": 7547808,
+    "?Unknown_00406100@UnknownList14BC@@QAIXPAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
+    "?Audio_Bank_Load@@YIPAUAudioBankEntry@@PAUAudioBank@@H@Z": 4201472,
+    "?Audio_Bag_Open@@YIHPAUAudioBag@@H@Z": 4200176,
+    "?Audio_Bag_Read@@YIHPAUAudioBag@@PAXH@Z": 4200640,
+    "?Audio_Device_Update@@YIHPAUAudioDevice@@@Z": 4206432,
+    "?Changed@AudioLevelSet@@QAEHXZ": 4198560,
+    "?Audio_Device_Release@@YIXPAUAudioDevice@@@Z": 4207376,
+    "__real@4@4004fc00000000000000": 7986596,
+    "__real@8@3fff9999999999999800": 7986600,
+    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "__real@8@3ffef333333333333000": 7986032,
+    "__real@4@3ffecccccd0000000000": 8055372,
+    "__real@8@40078cccccccccccd000": 8001480,
+    "__real@8@4006b333333333333000": 8001472,
+    "__real@8@4006ccccccccccccd000": 8001464,
+    "__real@8@3fff8cccccccccccd000": 8008416,
+    "?Length@CoordStruct@@QBEHXZ": 4306816,
+    "__real@4@4004f000000000000000": 8030276,
+    "?Pause@Anim@Voices@WorldDominationTour@@UAEXXZ": 7547728,
+    "__real@8@3ffba6ce934058661000": 8032840,
+    "__real@8@3ffdb2b8c2573a243800": 8032832,
+    "__real@8@3ffabea2f16e1be26000": 8032824,
+    "__real@8@3ffedf66f2ed08ad4800": 8032816,
+    "?Restart@MSOverlayAnim@@QAEXXZ": 5953552,
+    "?Dialog@LoadOptionsClass@@QAE_NXZ": 5486448,
+    "?Unknown_00406100@UnknownAudioController@@QAIXPAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
+    "?Release@UnknownAlphaTableCache_008315B8@@QAEXPAY0BAA@$$CBG@Z": 4318480,
+    "?Format@AudioTimeSpan@@QAIXPAD@Z": 4209088,
+    "__strrev": 7958640,
+    "__real@8@3ffec90fdaa22168c000": 7981696,
+    "__real@8@3ffea2f9836e4e441800": 7983256,
+    "__real@4@3ffdaaaaab0000000000": 8019624,
+    "?Audio_Device_First_Channel@@YIPAUAudioListNode@@PAUAudioDevice@@PAUAudioListIterator@@@Z": 4208048
   },
   "regions": [
     {
@@ -1865,7 +1899,7 @@
         {
           "offset": 33,
           "kind": 20,
-          "symbol": "?Combine@AudioLevelSet@@QAIXPAU1@@Z",
+          "symbol": "?Audio_Level_Set_Combine@@YIXPAUAudioLevelSet@@0@Z",
           "target": 4198592,
           "addend": 0,
           "resolved": 4294962811
@@ -1881,7 +1915,7 @@
         {
           "offset": 57,
           "kind": 20,
-          "symbol": "?Combine@AudioLevelSet@@QAIXPAU1@@Z",
+          "symbol": "?Audio_Level_Set_Combine@@YIXPAUAudioLevelSet@@0@Z",
           "target": 4198592,
           "addend": 0,
           "resolved": 4294962787
@@ -1897,7 +1931,7 @@
         {
           "offset": 85,
           "kind": 20,
-          "symbol": "?Combine@AudioLevelSet@@QAIXPAU1@@Z",
+          "symbol": "?Audio_Level_Set_Combine@@YIXPAUAudioLevelSet@@0@Z",
           "target": 4198592,
           "addend": 0,
           "resolved": 4294962759
@@ -1905,7 +1939,7 @@
         {
           "offset": 102,
           "kind": 20,
-          "symbol": "?Combine@AudioLevelSet@@QAIXPAU1@@Z",
+          "symbol": "?Audio_Level_Set_Combine@@YIXPAUAudioLevelSet@@0@Z",
           "target": 4198592,
           "addend": 0,
           "resolved": 4294962742
@@ -1913,7 +1947,7 @@
         {
           "offset": 119,
           "kind": 20,
-          "symbol": "?Combine@AudioLevelSet@@QAIXPAU1@@Z",
+          "symbol": "?Audio_Level_Set_Combine@@YIXPAUAudioLevelSet@@0@Z",
           "target": 4198592,
           "addend": 0,
           "resolved": 4294962725
@@ -1921,7 +1955,7 @@
         {
           "offset": 129,
           "kind": 20,
-          "symbol": "?Combine@AudioLevelSet@@QAIXPAU1@@Z",
+          "symbol": "?Audio_Level_Set_Combine@@YIXPAUAudioLevelSet@@0@Z",
           "target": 4198592,
           "addend": 0,
           "resolved": 4294962715
@@ -1929,13 +1963,13 @@
         {
           "offset": 146,
           "kind": 20,
-          "symbol": "?Combine@AudioLevelSet@@QAIXPAU1@@Z",
+          "symbol": "?Audio_Level_Set_Combine@@YIXPAUAudioLevelSet@@0@Z",
           "target": 4198592,
           "addend": 0,
           "resolved": 4294962698
         }
       ],
-      "source_sha256": "c81a1adc1369b96bfc93103c73515563be3ce345f78a1ed1044d9698dd546fd3",
+      "source_sha256": "9b1637ad546d529a6d8a6b1524c249dde11f3a774e1bf8eecddb5ed9089f89c3",
       "source": "src/recovered/unowned/Audio_Channel_Update_Settings_00402220.cpp",
       "population": "population-995",
       "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",

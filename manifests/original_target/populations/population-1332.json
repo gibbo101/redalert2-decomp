@@ -4,8 +4,8 @@
     "id": "population-1332",
     "inventory_sha256": "ea925975ccdb8ea9981ff9b3be4adfd89f9e9650f8d0cfcadc5fa49f1c06843a",
     "gaps_sha256": "55028e289a0aa540109496b3e6564fd429182ca7f0dea08897c6b1035b7c2293",
-    "historical_population_sha256": "08b18b01dedb68def42f97393c94641b4786a5d51c53e3a14d0a8e7997bfecac",
-    "historical_acceptance_sha256": "d37f2e7f7ab31223c4ba73e8b360751b7ca3f93a1d972a3853bd3d9956c2260f"
+    "historical_population_sha256": "58b486605f0008c9cdcb53d6e0a15047251315567bd943d3ac1ecd6670e56187",
+    "historical_acceptance_sha256": "b6289ac4222612a872940410c3731bef6a574ee18c16509dac56418a34907900"
   },
   "references": {
     "?Audio_Master_Levels@@3PAUAudioLevelSet@@A": 8588112,
@@ -667,7 +667,7 @@
     "?Audio_Channel_Next_Piece@@YIHPAUAudioChannel@@@Z": 4203200,
     "?Audio_Channel_Release@@YIXPAUAudioChannel@@H@Z": 4203584,
     "?Audio_Channel_Source_Ended@@YIHPAUAudioChannel@@@Z": 4203312,
-    "?Combine@AudioLevelSet@@QAIXPAU1@@Z": 4198592,
+    "?Audio_Level_Set_Combine@@YIXPAUAudioLevelSet@@0@Z": 4198592,
     "?Audio_Update_Devices@@YAXXZ": 4204800,
     "?Audio_Initialized@@3HA": 8588108,
     "?Audio_Destroy_Driver@@YIXPAUAudioDriver@@@Z": 4205440,
