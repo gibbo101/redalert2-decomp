@@ -10,7 +10,7 @@
 // @ref ?unknown_b2abe0@@3IA=00b2abe0
 // @ref ?Unknown_00735940@@YIPAXH@Z=00735940
 // @ref ?Unknown_007357E0@@YIXPAXH@Z=007357e0
-// @ref ?Unknown_0073c120@@YAXXZ=0073c120
+// @ref ?Unknown_0073c120@@YA_NXZ=0073c120
 // @ref ?unknown_download_a72d04@@3PAUIDownload@WOL@@A=00a72d04
 // @ref ?unknown_b26518@@3PAXA=00b26518
 // @ref ?unknown_b264f8@@3PAXA=00b264f8

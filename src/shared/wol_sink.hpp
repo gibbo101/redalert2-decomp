@@ -337,8 +337,8 @@ int __fastcall Save_Nickname_00745320(char const *nick, char const *password, bo
 extern Wstring unknown_password_b2a63c;
 extern int unknown_newnick_result_b2ac08;
 extern bool unknown_7fd374;
-extern void Unknown_0073c120();
-int __fastcall Popup_005c3230(wchar_t const *text, int unknown, void (*callback)(), int flags);
+extern bool Unknown_0073c120();
+int __fastcall Popup_005c3230(wchar_t const *text, int unknown, bool (*callback)(), int flags);
 extern "C" char *__cdecl ctime(long const *timer);     // 0x007858AF
 
 #include "shared/random.hpp"

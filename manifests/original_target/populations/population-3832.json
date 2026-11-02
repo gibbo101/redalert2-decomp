@@ -4,8 +4,8 @@
     "id": "population-3832",
     "inventory_sha256": "3537da1df73ce943947d14836123a9ac1f208da17e5908250cf30bcc01f4b455",
     "gaps_sha256": "9f01934c806e17f6979c933d90c53f6736562d04c631baaee6d7d5126f25a43c",
-    "historical_population_sha256": "37c7644f63a25a4609a8f3a2f379fc893f9e2f7f6298c77b52f0d75fd5b0f407",
-    "historical_acceptance_sha256": "e8e9cd034992425647d4eda9d117dc4a592c0c4038933c6d109a745886feae72"
+    "historical_population_sha256": "c44d296398fea7f2fd7c635cfc41566203c5efecfbd567df86c9be94eecbf967",
+    "historical_acceptance_sha256": "e430533dd7cb6b15a5ccc541e887bf8b080ef4020e02b3e66c37c5a64e554fb1"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -6273,7 +6273,7 @@
     "??_G?$rc_ptr@VPlayerProfile@@@@UAEPAXI@Z": 7577792,
     "?unknown_login_state_00b2abe4@@3HA": 11709412,
     "?unknown_b2abe0@@3IA": 11709408,
-    "?Unknown_0073c120@@YAXXZ": 7586080,
+    "?Unknown_0073c120@@YA_NXZ": 7586080,
     "?unknown_download_a72d04@@3PAUIDownload@WOL@@A": 10956036,
     "?unknown_b26518@@3PAXA": 11691288,
     "?unknown_b264f8@@3PAXA": 11691256,
@@ -7644,7 +7644,7 @@
     "?unknown_password_b2a63c@@3VWstring@@A": 11707964,
     "?unknown_7fd374@@3_NA": 8377204,
     "?Populate_Dialog_00739b70@PlayerProfile@@QAEXPAUHWND__@@ABVWstring@@_N@Z": 7576432,
-    "?Popup_005c3230@@YIHPBGHP6AXXZH@Z": 6042160,
+    "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z": 6042160,
     "?QueryInterface@CStreamClass@@UAGJABUGUID@@PAPAX@Z": 4802928,
     "?Read@CStreamClass@@UAGJPAXKPAK@Z": 4803392,
     "?Write@CStreamClass@@UAGJPBXKPAK@Z": 4803760,
@@ -16909,7 +16909,7 @@
         {
           "offset": 292,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -16941,7 +16941,7 @@
         {
           "offset": 323,
           "kind": 20,
-          "symbol": "?Popup_005c3230@@YIHPBGHP6AXXZH@Z",
+          "symbol": "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z",
           "target": 6042160,
           "addend": 0,
           "resolved": 4293260809
@@ -17358,7 +17358,7 @@
         {
           "offset": 88,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -17366,7 +17366,7 @@
         {
           "offset": 93,
           "kind": 20,
-          "symbol": "?Popup_005c3230@@YIHPBGHP6AXXZH@Z",
+          "symbol": "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z",
           "target": 6042160,
           "addend": 0,
           "resolved": 4293257999
@@ -21055,7 +21055,7 @@
         {
           "offset": 389,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -21071,7 +21071,7 @@
         {
           "offset": 407,
           "kind": 20,
-          "symbol": "?Popup_005c3230@@YIHPBGHP6AXXZH@Z",
+          "symbol": "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z",
           "target": 6042160,
           "addend": 0,
           "resolved": 4293256597
@@ -21767,7 +21767,7 @@
     {
       "entry": 7586080,
       "method": "0073c120",
-      "symbol": "?Unknown_0073c120@@YAXXZ",
+      "symbol": "?Unknown_0073c120@@YA_NXZ",
       "symbol_prefix": "?Unknown_0073c120@@",
       "options": [
         "/O2",
@@ -21790,7 +21790,7 @@
           "resolved": 8155
         }
       ],
-      "source_sha256": "7968844d9ba9bbed010c94690bdbf67dcf23cd4268b4117c2ab5e13087ea8d5f",
+      "source_sha256": "7c0fb20b408746aee44cf2f1606957f5281c4ad16f7704e159b2b4d513b06d21",
       "source": "src/recovered/wonline/Unknown_0073c120_0073c120.cpp",
       "population": "population-3832",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -22339,7 +22339,7 @@
         {
           "offset": 134,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -22371,7 +22371,7 @@
         {
           "offset": 168,
           "kind": 20,
-          "symbol": "?Popup_005c3230@@YIHPBGHP6AXXZH@Z",
+          "symbol": "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z",
           "target": 6042160,
           "addend": 0,
           "resolved": 4293281588
@@ -22539,7 +22539,7 @@
         {
           "offset": 460,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -22579,7 +22579,7 @@
         {
           "offset": 515,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -22611,7 +22611,7 @@
         {
           "offset": 546,
           "kind": 20,
-          "symbol": "?Popup_005c3230@@YIHPBGHP6AXXZH@Z",
+          "symbol": "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z",
           "target": 6042160,
           "addend": 0,
           "resolved": 4293281210
@@ -22705,7 +22705,7 @@
           "resolved": 7971380
         }
       ],
-      "source_sha256": "27789394d992aae0aced2d3e6fd32c9c22282b5b9f8a87d32879df4b05480a84",
+      "source_sha256": "b99f5ad446a2ad9c9c66b99d3d1f05eb12050510c1df7875a31b65293cb21748",
       "source": "src/recovered/classes/CChatEventSink/CChatEventSink_OnUpdateList_0075ea50.cpp",
       "population": "population-3832",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
@@ -38806,7 +38806,7 @@
         {
           "offset": 158,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -38838,7 +38838,7 @@
         {
           "offset": 192,
           "kind": 20,
-          "symbol": "?Popup_005c3230@@YIHPBGHP6AXXZH@Z",
+          "symbol": "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z",
           "target": 6042160,
           "addend": 0,
           "resolved": 4293422060
@@ -39038,7 +39038,7 @@
         {
           "offset": 523,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -39070,7 +39070,7 @@
         {
           "offset": 554,
           "kind": 20,
-          "symbol": "?Popup_005c3230@@YIHPBGHP6AXXZH@Z",
+          "symbol": "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z",
           "target": 6042160,
           "addend": 0,
           "resolved": 4293421698
@@ -44305,7 +44305,7 @@
         {
           "offset": 348,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080

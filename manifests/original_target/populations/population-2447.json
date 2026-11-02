@@ -4,8 +4,8 @@
     "id": "population-2447",
     "inventory_sha256": "ec7e8ea3d17ace71647cb5d5d5ceac56b1a6726a60ef98848b623663cc33e73f",
     "gaps_sha256": "0d313d1890d7467efc0212aa92f45f44e3fc10bda60dcebb5d955e84e6318c90",
-    "historical_population_sha256": "e141d66c5ecd79808e9c7821d78ae51d8507ba5b144a2e1a9a664ffdc603ff41",
-    "historical_acceptance_sha256": "7b88722ab16ceadf79946d49f852a4278108b0afb0a33ebe33be38ebd455f5cd"
+    "historical_population_sha256": "acb973345038de6595412a42980703bf10a99a47993415b303d261620e90d774",
+    "historical_acceptance_sha256": "ee1f26e337ad7e63c4eb63185e7c1d7f4f8dafd132efee669ca07178d35a1d8e"
   },
   "references": {
     "??_7?$rc_ptr@VPlayerProfile@@@@6B@": 8058188,
@@ -2581,8 +2581,8 @@
     "?unknown_password_b2a63c@@3VWstring@@A": 11707964,
     "?unknown_7fd374@@3_NA": 8377204,
     "?Populate_Dialog_00739b70@PlayerProfile@@QAEXPAUHWND__@@ABVWstring@@_N@Z": 7576432,
-    "?Unknown_0073c120@@YAXXZ": 7586080,
-    "?Popup_005c3230@@YIHPBGHP6AXXZH@Z": 6042160,
+    "?Unknown_0073c120@@YA_NXZ": 7586080,
+    "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z": 6042160,
     "__real@8@4000c000000000000000": 7981704,
     "?Load@InfantryClass@@UAGJPAUIStream@@@Z": 5277040,
     "?Load@EMPulseClass@@UAGJPAUIStream@@@Z": 4936576,
@@ -6289,7 +6289,7 @@
         {
           "offset": 621,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -6297,7 +6297,7 @@
         {
           "offset": 636,
           "kind": 6,
-          "symbol": "?Unknown_0073c120@@YAXXZ",
+          "symbol": "?Unknown_0073c120@@YA_NXZ",
           "target": 7586080,
           "addend": 0,
           "resolved": 7586080
@@ -6313,7 +6313,7 @@
         {
           "offset": 648,
           "kind": 20,
-          "symbol": "?Popup_005c3230@@YIHPBGHP6AXXZH@Z",
+          "symbol": "?Popup_005c3230@@YIHPBGHP6A_NXZH@Z",
           "target": 6042160,
           "addend": 0,
           "resolved": 4293284820
