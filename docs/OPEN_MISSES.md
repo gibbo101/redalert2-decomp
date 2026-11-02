@@ -1130,3 +1130,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout548 (2026-11-02, closed; 0 B)
 - Get_Obstacle 0x4BBAF0: 97.38. Diagnostics show VC6 always gives a read-only call-result temporary edi here; only a sub/add destination gets ebx. No source form found that puts the original's read-only temporary in ebx; probably unreachable from source as tried. Park.
 - Fill_Port 0x66D5A0: 88.15 joined (`ModemCount++ + 5`, Scout548 w/fp_z4.cpp). The scratch-register rotation is now in step after 0x13E; the original's `add ecx,5 ... inc dword ptr` pair and the eax/ecx swap at 0xCD-0xE2 are left.
+
+## Scout549 (2026-11-02, closed; 61 B landed: Made_A_Kill 0x713360)
+- Tracker 0x4128A0 (2,337 B): 76.98 -> 97.61 standalone (Scout549 best_4128a0_97.61.cpp). An ebx/edi swap is left in the three diagonal blocks. Assigned to Scout553.
+- SpotLight shapes 0x5DD760: 55.83, but shape 86.12 with the original 0x54 frame (copy-init source rect only). The constant-register roles are left.
