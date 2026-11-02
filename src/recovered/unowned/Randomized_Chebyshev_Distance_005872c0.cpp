@@ -1,6 +1,6 @@
 #include "shared/coord.hpp"
 #include "shared/random2.hpp"
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 // @ref ?unknown_map_random_a705c0@@=00a705c0
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 #include "shared/crt_memory.hpp"

@@ -5,7 +5,7 @@
 #include "shared/tileset_index.hpp"
 #include "shared/vector_class.hpp"
 #include "shared/random2.hpp"
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 // @ref ?unknown_map_random_a705c0@@=00a705c0
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 // @ref ?unknown_tileset_a52c60@@=00a52c60

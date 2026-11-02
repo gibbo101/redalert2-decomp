@@ -10,7 +10,7 @@
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 // @ref ?unknown_weight_random_7a5be0@@3NB=007a5be0
 // @ref ?unknown_weight_distance_7a5be8@@3NB=007a5be8
 // @ref ?unknown_weight_angle_7a5bf0@@3NB=007a5bf0

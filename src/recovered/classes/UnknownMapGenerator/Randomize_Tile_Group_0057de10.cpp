@@ -3,7 +3,7 @@
 // @ref __real@8@3fe6f2000000f2000000=007a5f20
 // @ref __real@8@3fe6c9000000c9000000=007a5f18
 #include "shared/random.hpp"
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 // @ref ?unknown_map_random_a705c0@@3VRandom2Class@@A=00a705c0
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 // @ref __real@8@3fdf8000000080000000=007a5dd0

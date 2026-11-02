@@ -2,7 +2,7 @@
 #include "shared/rect.hpp"
 #include "shared/tileset_index.hpp"
 #include "shared/random2.hpp"
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 // @ref ?Can_Place_Misc_Pavement_00589320@@=00589320
 // @ref __real@8@3fe1c0000000c0000000=007a5f80
 unsigned __fastcall Map_Random_Range_005797a0(unsigned minimum,unsigned maximum);

@@ -2,7 +2,7 @@
 #include "shared/fast_math.hpp"
 #include "shared/random2.hpp"
 #include "shared/crt_math.hpp"
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 extern double const angle_half_pi_79b630,angle_pi_79d158,angle_turn_79c9b8;
 extern double const angle_weight_7a5cd0,jitter_weight_7a5cc8,random_unit_7a5dd0;
 // @ref ?angle_half_pi_79b630@@=0079b630

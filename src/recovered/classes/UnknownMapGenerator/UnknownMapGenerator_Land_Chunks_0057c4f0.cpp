@@ -15,7 +15,7 @@
 #include "shared/map_view.hpp"
 #include "shared/cell.hpp"
 #include "shared/random2.hpp"
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 
 extern double const unknown_random_scale_7a5dd0,unknown_chunk_floor_7a5ed0;
 // @ref ?unknown_chunk_scale_7a10f8@@=007a10f8

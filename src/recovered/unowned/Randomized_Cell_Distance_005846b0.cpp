@@ -1,7 +1,7 @@
 #include "shared/coord.hpp"
 #include "shared/random2.hpp"
 #include "shared/unknown_geometry.hpp"
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 // @ref ?unknown_map_random_a705c0@@=00a705c0
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 extern double const unknown_random_scale_7a5dd0;

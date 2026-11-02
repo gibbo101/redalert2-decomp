@@ -8,7 +8,7 @@
 #include "shared/random2.hpp"
 // @ref ?Zone@MapClass@@QAEHABVCell@@H_N@Z=0054f8f0
 // @ref ?unknown_47b590@CellClass@@QBE_NXZ=0047b590
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 
 Cell __fastcall MapRegionClass::Pick_Random_Zone_Cell_0056dea0(int zone, int region)
 {

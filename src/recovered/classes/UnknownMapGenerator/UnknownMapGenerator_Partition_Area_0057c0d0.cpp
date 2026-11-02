@@ -14,7 +14,7 @@
 // @ref ?ID@?$DynamicVectorClass@H@@UAEHPBH@Z=0046ccb0
 #include "shared/unknown_map_generator.hpp"
 #include "shared/random2.hpp"
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 double __cdecl unknown_sqrt_4ba410(double value);
 unsigned int __fastcall Map_Random_Range_005797a0(unsigned int minimum,unsigned int maximum);
 // @ref ??0?$VectorClass@H@@=0046d020

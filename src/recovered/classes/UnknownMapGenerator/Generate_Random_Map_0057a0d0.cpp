@@ -14,7 +14,7 @@
 #include "shared/debug_printf.hpp"
 #include "shared/win32_api.hpp"
 extern void (__cdecl *unknown_map_generation_callback_7e09c4)();
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 extern DynamicVectorClass<MapRegionClass *> unknown_map_regions_a6fd28;
 extern int unknown_a3d2a4;
 bool __cdecl Generate_Starting_Points_00576420();

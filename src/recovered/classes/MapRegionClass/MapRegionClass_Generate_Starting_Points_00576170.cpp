@@ -3,7 +3,7 @@
 #include "shared/map_view.hpp"
 #include "shared/cell.hpp"
 #include "shared/id_source.hpp"
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 bool __fastcall Can_Place_Paved_Road_00588a30(Rect const &area,bool allowFirst,bool allowSecond);
 // @ref ??0?$VectorClass@VCell@@@@=0042d4a0
 // @ref ??_7?$DynamicVectorClass@VCell@@@@6B@=0079c5a0

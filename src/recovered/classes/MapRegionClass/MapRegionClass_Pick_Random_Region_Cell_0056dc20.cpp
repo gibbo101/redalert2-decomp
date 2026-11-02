@@ -8,7 +8,7 @@
 // @ref ?unknown_map_random_a705c0@@3VRandom2Class@@A=00a705c0
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 // @ref __ftol=0077f110
-extern Random2Class unknown_map_random_a705c0;
+#include "shared/map_random.hpp"
 
 Cell MapRegionClass::Pick_Random_Region_Cell_0056dc20()
 {
