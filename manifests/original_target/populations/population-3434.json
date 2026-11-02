@@ -4,8 +4,8 @@
     "id": "population-3434",
     "inventory_sha256": "26f8fd815dfcc06695a5e85cd1fa71413b1236fc8964948ec349092dabc028ba",
     "gaps_sha256": "55af9a18bbdae399928797d5d2f19476e6a68e810c283686ac9dab6399cd3b14",
-    "historical_population_sha256": "57286e7a0e73763ac29013654d42b4063334aa49d9a23d536c5a981c41e6f712",
-    "historical_acceptance_sha256": "043b6ec3bafb79a92a2473486969e508ef3b83b582d21b2609b788a98f54b641"
+    "historical_population_sha256": "aa7ebb444c43d02523a9e853ed154ea8a89b0fc34253386ed091a5c0a5636153",
+    "historical_acceptance_sha256": "d3f8dc7d01b88feb82672ed0f0937b780418b79f804893a990d3f70776469238"
   },
   "references": {
     "?Audio_Adpcm_Index@@3QBHB": 8179680,
@@ -835,7 +835,7 @@
     "?Audio_DS_Channel_Pause@@YIHPAUAudioChannel@@@Z": 4236656,
     "?Audio_DS_Channel_Resume@@YIJPAUAudioChannel@@@Z": 4236688,
     "?Audio_DS_Channel_Stop@@YIHPAUAudioChannel@@@Z": 4236592,
-    "?Audio_DS_Close@@YAXXZ": 4235568,
+    "?Audio_DS_Close@@YIXXZ": 4235568,
     "?Audio_Lock@@3UCRITICAL_SECTION@@A": 8590736,
     "?Audio_Thread@@3UAudioThreadBlock@@A": 8590688,
     "?Audio_Primary_Buffer@@3PAUIDirectSoundBuffer@@A": 8590768,
@@ -1742,7 +1742,10 @@
     "?Unknown_00406100@UnknownAudioController@@QAIXPAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,
     "?Release@UnknownAlphaTableCache_008315B8@@QAEXPAY0BAA@$$CBG@Z": 4318480,
     "?Format@AudioTimeSpan@@QAIXPAD@Z": 4209088,
-    "__strrev": 7958640
+    "__strrev": 7958640,
+    "__real@8@3ffec90fdaa22168c000": 7981696,
+    "__real@8@3ffea2f9836e4e441800": 7983256,
+    "__real@4@3ffdaaaaab0000000000": 8019624
   },
   "regions": [
     {
@@ -2367,8 +2370,8 @@
     {
       "entry": 4235568,
       "method": "0040a130",
-      "symbol": "?Audio_DS_Close@@YAXXZ",
-      "symbol_prefix": "?Audio_DS_Close@@YAXXZ",
+      "symbol": "?Audio_DS_Close@@YIXXZ",
+      "symbol_prefix": "?Audio_DS_Close@@YIXXZ",
       "options": [
         "/O2",
         "/Ob2",
@@ -2446,7 +2449,7 @@
           "resolved": 8590768
         }
       ],
-      "source_sha256": "5102c844c2ca16c946d0f8f58f1550e9f901e95e791231e82338155dd5baf0a9",
+      "source_sha256": "19812c76a2abe0d6b10fbac43ae7a932482408ae5fbc104c8a5d33063fc507e6",
       "source": "src/recovered/unowned/Audio_DS_Close_0040a130.cpp",
       "population": "population-3434",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",

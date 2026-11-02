@@ -4,8 +4,8 @@
     "id": "population-995",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "f834e2091a88f7b11f3d3023e70a29ffb1df5de1751f99aeefdd059acec12df3",
-    "historical_acceptance_sha256": "3b3d93a212c769fd261dfd2b49e90a3ced30921f68ea594662b4b577846a72a7",
+    "historical_population_sha256": "4f8d9a8b6e9ebd1051117476842993c71d38208c5ef3c8ec57fab7e2fe3fe006",
+    "historical_acceptance_sha256": "a5d9e9b57dcadb8b5910740d811bd81d5200528f0aa605d25c2bce98a894e32b",
     "separate_units": true
   },
   "references": {
@@ -572,7 +572,7 @@
     "?Audio_DS_Channel_Pause@@YIHPAUAudioChannel@@@Z": 4236656,
     "?Audio_DS_Channel_Resume@@YIJPAUAudioChannel@@@Z": 4236688,
     "?Audio_DS_Channel_Stop@@YIHPAUAudioChannel@@@Z": 4236592,
-    "?Audio_DS_Close@@YAXXZ": 4235568,
+    "?Audio_DS_Close@@YIXXZ": 4235568,
     "?Audio_Lock@@3UCRITICAL_SECTION@@A": 8590736,
     "?Audio_Thread@@3UAudioThreadBlock@@A": 8590688,
     "?Audio_Primary_Buffer@@3PAUIDirectSoundBuffer@@A": 8590768,

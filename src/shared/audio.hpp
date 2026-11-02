@@ -994,7 +994,7 @@ __int64 __fastcall Audio_Now();                                                 
 HRESULT __fastcall Audio_DS_Init(AudioDriver *driver);                                      // 0x00409390
 void Audio_DS_Release();                                                                    // 0x00409F10
 HRESULT __fastcall Audio_DS_Open(AudioDevice *device);                                      // 0x00409FB0
-void Audio_DS_Close();                                                                      // 0x0040A130
+void __fastcall Audio_DS_Close();                                                                // 0x0040A130
 // ... channel functions (the AudioChannelDriver entries) ...
 int __fastcall Audio_DS_Channel_Open(AudioChannel *channel);                                // 0x0040A180
 int __fastcall Audio_DS_Channel_Close(AudioChannel *channel);                               // 0x0040A1F0
