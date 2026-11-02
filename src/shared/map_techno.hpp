@@ -14,9 +14,17 @@
 
 class HouseClass;
 class CellClass;
-// ObjectClass as the Map unit sees it: only the virtual destructor (slot 8,
-// AbstractClass), which deletes the display's pending object (0x0055B060).
+// ObjectClass as the Map unit sees it: the virtual destructor (slot 8,
+// AbstractClass), which deletes the display's pending object (0x0055B060),
+// and slot 53 (wall placement 0x0056A660); slots 24-52 are placeholders.
 class ObjectClass : public AbstractClass {
+public:
+    virtual void unknown_slot24(); virtual void unknown_slot25(); virtual void unknown_slot26(); virtual void unknown_slot27(); virtual void unknown_slot28(); virtual void unknown_slot29();
+    virtual void unknown_slot30(); virtual void unknown_slot31(); virtual void unknown_slot32(); virtual void unknown_slot33(); virtual void unknown_slot34(); virtual void unknown_slot35();
+    virtual void unknown_slot36(); virtual void unknown_slot37(); virtual void unknown_slot38(); virtual void unknown_slot39(); virtual void unknown_slot40(); virtual void unknown_slot41();
+    virtual void unknown_slot42(); virtual void unknown_slot43(); virtual void unknown_slot44(); virtual void unknown_slot45(); virtual void unknown_slot46(); virtual void unknown_slot47();
+    virtual void unknown_slot48(); virtual void unknown_slot49(); virtual void unknown_slot50(); virtual void unknown_slot51(); virtual void unknown_slot52();
+    virtual bool unknown_slot53(CoordStruct const &coord, int dir);   // slot 53 (+0xD4; shared/object.hpp passes a pointer; TibSun Unlimbo)
 };
 
 class TechnoClass : public AbstractClass {
@@ -58,13 +66,32 @@ public:
     bool unknown_32d;                       // +0x32D (as shared/techno.hpp)
 };
 
-// A building type as MapClass 0x0055ACD0 sees it (stand-in; shared/building_type_class.hpp).
-class BuildingTypeClass {
+// A building type as MapClass 0x0055ACD0 and the wall placement 0x0056A660 see it
+// (stand-in; shared/building_type_class.hpp; slots 24-34 are placeholders).
+class OverlayTypeClass;
+class BuildingTypeClass : public AbstractClass {
 public:
-    char unknown_000[0x1351];
+    virtual void unknown_slot24(); virtual void unknown_slot25(); virtual void unknown_slot26(); virtual void unknown_slot27(); virtual void unknown_slot28(); virtual void unknown_slot29();
+    virtual void unknown_slot30(); virtual void unknown_slot31(); virtual void unknown_slot32(); virtual void unknown_slot33(); virtual void unknown_slot34();
+    virtual ObjectClass *unknown_slot35(HouseClass *house) const;   // slot 35 (+0x8C) a new building (as shared/building_type_class.hpp)
+
+    char unknown_024[0x504 - 0x24];
+    int ThreatRange;                        // +0x504 (leptons; TibSun Place_Wall reach)
+    char unknown_508[0x5A4 - 0x508];
+    int Speed;                              // +0x5A4 the speed type (TibSun Is_Clear_To_Build argument)
+    char unknown_5a8[0xBEC - 0x5A8];
+    OverlayTypeClass *ToOverlay;            // +0xBEC the wall overlay type
+    char unknown_bf0[0x1351 - 0xBF0];
     bool Gate;                              // +0x1351
     char unknown_1352[0x135A - 0x1352];
     bool FirestormWall;                     // +0x135A (TibSun IsFirestormWall; Map 0x00569FB0)
+};
+
+// An overlay type as the wall placement 0x0056A660 sees it (stand-in).
+class OverlayTypeClass {
+public:
+    char unknown_000[0x264];
+    int unknown_264;                        // +0x264 compared with a cell's overlay index (TibSun HeapID)
 };
 
 // A building as MapClass 0x00567380 and 0x0055ACD0 see it (stand-in).

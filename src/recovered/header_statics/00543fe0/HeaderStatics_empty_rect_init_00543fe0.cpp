@@ -1,3 +1,6 @@
+// The Map unit takes shared/coord.hpp's inline Cell-to-coordinate constructor
+// (Place_Firestorm_Wall 0x0056A480 unlimbos at a cell through it).
+#define RA2_COORD_FROM_CELL_INLINE
 // Header-static dynamic initializers of the unit at 0x00543FE0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x00543FE0-0x005441C1); the other
 // drafts of this plan are emitted by these includes.

@@ -80,6 +80,9 @@ public:
     void unknown_4724a0();          // 0x004724A0 (a wall overlay: its owner; TibSun Set_Wall_Owner; as shared/cell.hpp)
     int unknown_476ba0(bool pregame);   // 0x00476BA0 (TibSun Tiberium_Adjust; as shared/cell.hpp)
     void unknown_473000();          // 0x00473000 (drops the cell's bridge; TibSun Destroy_Bridge)
+    // Whether a building of the type may be placed in the cell for the house (0x004718B0;
+    // TibSun Is_Clear_To_Build; elsewhere declared with a TechnoTypeClass const *).
+    bool unknown_4718b0(int speed, class BuildingTypeClass const *type, class HouseClass *house);
     void Set_Under_Bridge(unsigned facing, bool state);   // 0x004732D0 (a high bridge piece; as shared/cell.hpp)
     void Set_Under_Rail_Bridge(unsigned facing, bool state);   // 0x00473700 (the other bridge piece; as shared/cell.hpp)
     bool unknown_47b960() const;    // 0x0047B960 (a bridge tile; as shared/cell.hpp)
