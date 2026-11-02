@@ -6,17 +6,22 @@
 
 class FirewallSettings {
 public:
+    FirewallSettings();                             // 0x005B9E60 (all zero; the global's initializer 0x005B9E40 expands it)
     void Detect_And_Save_005b9e80();                // 0x005B9E80 (when type is still 0)
     void Save_005ba210();                           // 0x005BA210
     void Load_005ba280();                           // 0x005BA280 (Read_MultiPlayer_Settings calls it once)
     int Detect_005ba2c0(bool *found);               // 0x005BA2C0 (thiscall, one stack argument)
 
     int Connection_Step_005baf20(int flags); // connection rank from flag bits, 0x005BAF20
+    int Connection_Weight_005baee0(unsigned char flags);   // 0x005BAEE0 the weighted sum of the flag bits
 
     int unknown_00;                                 // +0x00 detected type; [MultiPlayer] FirewallSettings
     int unknown_04;                                 // +0x04 loaded by 0x005BA280
     int unknown_08;                                 // +0x08 [MultiPlayer] FirewallDelta
     int unknown_0c;                                 // +0x0C loaded by 0x005BA280
 };
+
+// The game's firewall settings (0x00A71B18; dynamic initializer 0x005B9E40).
+extern FirewallSettings unknown_firewall_a71b18;
 
 #endif
