@@ -10,7 +10,9 @@ void ModemHost::Read_Bases_0059adf0()
 {
     HWND control = GetDlgItem(Window, 0x66A);
     if (control) {
-        unknown_session_a3d298.unknown_bases_20 = SendMessageA(control, 0xF0, 0, 0) == 1;
+        int state = SendMessageA(control, 0xF0, 0, 0);
+        bool checked = state == 1;
+        unknown_session_a3d298.unknown_bases_20 = checked;
         if (!unknown_session_a3d298.unknown_bases_20) {
             if (GetDlgItem(Window, 0x54E)) {
                 unknown_session_a3d298.unknown_2a = false;

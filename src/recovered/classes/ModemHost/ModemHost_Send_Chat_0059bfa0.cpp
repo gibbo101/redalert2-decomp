@@ -14,6 +14,7 @@
 extern "C" unsigned short *__cdecl wcscpy(unsigned short *dest, unsigned short const *source);
 extern "C" int __cdecl swprintf(unsigned short *buffer, unsigned short const *format, ...);
 
+
 void ModemHost::Send_Chat_0059bfa0(unsigned short const *text)
 {
     if (text) {
@@ -26,13 +27,6 @@ void ModemHost::Send_Chat_0059bfa0(unsigned short const *text)
         serial_manager_00a40a28.Send_Message(&packet, sizeof(packet), 1);
         serial_manager_00a40a28.Service();
         unsigned short *name = Unknown_006FA180(unknown_name_a3d3a0);
-        int color = unknown_a3d3b4;
-        HWND list = GetDlgItem(Window, 0x53F);
-        if (list) {
-            int rgb = Player_Color_RGB(color);
-            unsigned short line[256];
-            swprintf(line, L"[%s] %s", name, text);
-            Unknown_005C2DA0(rgb, line, list);
-        }
+        Show_Chat_0059c0b0(name, unknown_a3d3b4, text);
     }
 }

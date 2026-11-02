@@ -9,7 +9,9 @@ void ModemHost::Read_Crap_Engineers_0059b050()
 {
     HWND control = GetDlgItem(Window, 0x551);
     if (control) {
-        unknown_session_a3d298.unknown_34 = SendMessageA(control, 0xF0, 0, 0) == 1;
+        int state = SendMessageA(control, 0xF0, 0, 0);
+        bool checked = state == 1;
+        unknown_session_a3d298.unknown_34 = checked;
         OptionsChanged = true;
     }
 }

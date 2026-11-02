@@ -9,7 +9,9 @@ void ModemHost::Read_Crates_0059ae60()
 {
     HWND control = GetDlgItem(Window, 0x54C);
     if (control) {
-        unknown_session_a3d298.unknown_crates_29 = SendMessageA(control, 0xF0, 0, 0) == 1;
+        int state = SendMessageA(control, 0xF0, 0, 0);
+        bool checked = state == 1;
+        unknown_session_a3d298.unknown_crates_29 = checked;
         OptionsChanged = true;
     }
 }

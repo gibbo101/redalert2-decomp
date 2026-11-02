@@ -9,7 +9,9 @@ void ModemHost::Read_MCV_Redeploy_0059adb0()
 {
     HWND control = GetDlgItem(Window, 0x66B);
     if (control) {
-        unknown_session_a3d298.unknown_a8 = SendMessageA(control, 0xF0, 0, 0) == 1;
+        int state = SendMessageA(control, 0xF0, 0, 0);
+        bool checked = state == 1;
+        unknown_session_a3d298.unknown_a8 = checked;
         OptionsChanged = true;
     }
 }

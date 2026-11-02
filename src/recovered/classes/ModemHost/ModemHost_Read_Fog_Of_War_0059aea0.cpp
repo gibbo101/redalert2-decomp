@@ -9,7 +9,9 @@ void ModemHost::Read_Fog_Of_War_0059aea0()
 {
     HWND control = GetDlgItem(Window, 0x54D);
     if (control) {
-        unknown_session_a3d298.unknown_fog_a7 = SendMessageA(control, 0xF0, 0, 0) == 1;
+        int state = SendMessageA(control, 0xF0, 0, 0);
+        bool checked = state == 1;
+        unknown_session_a3d298.unknown_fog_a7 = checked;
         OptionsChanged = true;
     }
 }

@@ -9,7 +9,9 @@ void ModemHost::Read_Bridge_Destroy_0059aee0()
 {
     HWND control = GetDlgItem(Window, 0x624);
     if (control) {
-        unknown_session_a3d298.unknown_28 = SendMessageA(control, 0xF0, 0, 0) == 1;
+        int state = SendMessageA(control, 0xF0, 0, 0);
+        bool checked = state == 1;
+        unknown_session_a3d298.unknown_28 = checked;
         OptionsChanged = true;
     }
 }

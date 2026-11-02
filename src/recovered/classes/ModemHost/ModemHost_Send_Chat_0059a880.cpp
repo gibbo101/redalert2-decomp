@@ -21,6 +21,7 @@ extern "C" unsigned short *__cdecl wcscpy(unsigned short *dest, unsigned short c
 extern "C" int __cdecl swprintf(unsigned short *buffer, unsigned short const *format, ...);
 extern unsigned short const unknown_empty_wide_839d4c[];
 
+
 void ModemHost::Send_Chat_0059a880()
 {
     unsigned short text[256];
@@ -31,25 +32,7 @@ void ModemHost::Send_Chat_0059a880()
         SendMessageA(control, 0x4B2, 0, (LPARAM)unknown_empty_wide_839d4c);
         if (wcslen(text) && text[0] != 0x0D) {
             wcstrim(text);
-            if (text) {
-                UnknownSerialPacket packet;
-                memset(&packet, 0, sizeof(packet));
-                packet.Command = 0x68;
-                strcpy(packet.Name, unknown_name_a3d3a0);
-                packet.ID = unknown_a3d3b4;
-                wcscpy(packet.Message, text);
-                serial_manager_00a40a28.Send_Message(&packet, sizeof(packet), 1);
-                serial_manager_00a40a28.Service();
-                unsigned short *name = Unknown_006FA180(unknown_name_a3d3a0);
-                int color = unknown_a3d3b4;
-                HWND list = GetDlgItem(Window, 0x53F);
-                if (list) {
-                    int rgb = Player_Color_RGB(color);
-                    unsigned short line[256];
-                    swprintf(line, L"[%s] %s", name, text);
-                    Unknown_005C2DA0(rgb, line, list);
-                }
-            }
+            Send_Chat_0059bfa0(text);
         }
     }
 }

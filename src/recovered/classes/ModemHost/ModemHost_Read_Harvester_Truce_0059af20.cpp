@@ -9,7 +9,9 @@ void ModemHost::Read_Harvester_Truce_0059af20()
 {
     HWND control = GetDlgItem(Window, 0x596);
     if (control) {
-        unknown_session_a3d298.unknown_a5 = SendMessageA(control, 0xF0, 0, 0) == 1;
+        int state = SendMessageA(control, 0xF0, 0, 0);
+        bool checked = state == 1;
+        unknown_session_a3d298.unknown_a5 = checked;
         OptionsChanged = true;
     }
 }
