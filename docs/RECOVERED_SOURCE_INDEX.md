@@ -13,7 +13,7 @@
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 198 | 60,199 | 198 | 0x004D3590–0x004F8EF0 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 211 | 56,754 | 208 | 0x0041B370–0x006D9750 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 122 | 42,592 | 118 | 0x0041B470–0x004CDE10 |
-| (discovery: address-named) | 1364 | 41,734 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1363 | 41,725 | 17 | 0x004010A0–0x00797198 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 110 | 37,716 | 110 | 0x005DE880–0x00601F70 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 82 | 30,791 | 82 | 0x004D3510–0x0070A330 |
@@ -128,7 +128,7 @@
 | [classes/ParticleTypeClass](../src/recovered/classes/ParticleTypeClass/) | 20 | 3,655 | 20 | 0x004D4010–0x00621E80 |
 | [classes/BinkClass](../src/recovered/classes/BinkClass/) | 22 | 3,628 | 22 | 0x0042FE50–0x00430BB0 |
 | [classes/ListClass](../src/recovered/classes/ListClass/) | 29 | 3,612 | 28 | 0x00539BF0–0x0053AA20 |
-| [classes/ParasiteClass](../src/recovered/classes/ParasiteClass/) | 20 | 3,599 | 20 | 0x00606120–0x00607DF0 |
+| [classes/ParasiteClass](../src/recovered/classes/ParasiteClass/) | 21 | 3,608 | 21 | 0x00606120–0x00607DF0 |
 | [classes/VoxelAnimTypeClass](../src/recovered/classes/VoxelAnimTypeClass/) | 18 | 3,560 | 18 | 0x004D3F10–0x0070EF40 |
 | [classes/TextPrint](../src/recovered/classes/TextPrint/) | 13 | 3,549 | 13 | 0x00497360–0x00498160 |
 | [classes/TerrainTypeClass](../src/recovered/classes/TerrainTypeClass/) | 23 | 3,542 | 23 | 0x004D3B90–0x006E5AE0 |

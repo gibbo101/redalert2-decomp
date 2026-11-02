@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "be80cdae57f2f8764d25097d7d159e6d84f0ccd26ddf07066fc0a6a3c9f5faa7",
-    "historical_acceptance_sha256": "4533ec0711ab929aeff41cd8045d624fc354bb8f16ee275112bb562b5d2cf14c"
+    "historical_population_sha256": "b9d77fe936df531ce5adda5721ab3fb099947c1e851bb70e329e4d680eb4624b",
+    "historical_acceptance_sha256": "d07a60fda7fb9f747fe53d4d5f07823de31d42330d92033fc5a7ce31969f3211"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -9409,7 +9409,7 @@
     "?FUN_005de970@seed_005de970@@YIIPAI@Z": 6154608,
     "?FUN_005e1fd0@seed_005e1fd0@@YIXPAXI@Z": 6168528,
     "?FUN_00603610@seed_00603610@@YIHPAD@Z": 6305296,
-    "?FUN_006066a0@seed_006066a0@@YIXH@Z": 6317728,
+    "?Reset_Grapple_Counters_006066a0@ParasiteClass@@QAEXXZ": 6317728,
     "?Set_Offset@PixelFXClass@@QAEXHH@Z": 6352112,
     "?Set_Owner@PlanningMemberClass@@QAEXPAVTechnoClass@@@Z": 6359040,
     "?Set_Event@PlanningMemberClass@@QAEXPAVEventClass@@@Z": 6359056,
@@ -21058,7 +21058,7 @@
     "?FUN_005de970@": 6154608,
     "?FUN_005e1fd0@": 6168528,
     "?FUN_00603610@": 6305296,
-    "?FUN_006066a0@": 6317728,
+    "?Reset_Grapple_Counters_006066a0@ParasiteClass@@": 6317728,
     "?FUN_00610c10@": 6360080,
     "?FUN_00610c20@": 6360096,
     "?FUN_00612eb0@": 6368944,

@@ -7,7 +7,12 @@
 #ifndef RA2_SHARED_PARASITE_HPP
 #define RA2_SHARED_PARASITE_HPP
 
+#ifdef PARASITE_DECLARATIONS_ONLY
+// Standalone members need the class declaration without per-unit geometry statics.
+#include "shared/abstract_class.hpp"
+#else
 #include "shared/abstract.hpp"
+#endif
 #include "shared/cd_timer.hpp"
 #include "shared/vector_class.hpp"
 
@@ -80,6 +85,9 @@ public:
     virtual void AI();                                          // 0x00606F50
     void Unknown_006064C0();                                    // 0x006064C0 (the destructor's release steps)
     CoordStruct Unknown_00607C30();                             // 0x00607C30
+#ifdef PARASITE_GRAPPLE_COUNTERS
+    void Reset_Grapple_Counters_006066a0(); // original6066A0, clears the two grapple counters
+#endif
     void Unknown_00606780();                                    // 0x00606780
     void Unknown_00607980(FootClass *target);                  // 0x00607980 (a Parasite warhead hits target, or 0; BulletClass 0x00462110)
     void Unknown_00607440();                                    // 0x00607440 (FootClass slot 82 after restarting the +0x2C timer)
