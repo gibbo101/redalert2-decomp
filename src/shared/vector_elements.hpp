@@ -71,7 +71,11 @@ inline bool operator!=(DirtyAreaStruct const &a, DirtyAreaStruct const &b) { ret
 // VectorClass<...>::operator== 0x0072B6C0 compares all three words).
 namespace WorldDominationTour {
 struct Centroid {
+#ifdef CENTROID_DECLARE_CONSTRUCTOR
+    Centroid(); // 0072A7B0; standalone definition supplied by WDTMap.cpp.
+#else
     Centroid() : unknown_00(0), unknown_04(0), unknown_08(0) {}
+#endif
 #ifdef CENTROID_DECLARE_MEMBERS
     // Guarded (defined by WDTMap.cpp only): new declarations here flip Pick_Lobby 0x00744090's
     // instruction order (type-count sensitivity, VC6_MATCHING_NOTES).

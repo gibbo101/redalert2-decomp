@@ -3,6 +3,9 @@
 #define VECTOR_IMPLEMENT_ALL
 #endif
 #include "shared/wdt_selection.hpp"
+template<> VectorCursor<MSSfxEntry *, DynamicVectorClass<MSSfxEntry *> >::VectorCursor(
+    DynamicVectorClass<MSSfxEntry *> &vector, unsigned index);
+
 #include "shared/text_print.hpp"
 namespace WorldDominationTour {
 Selection::~Selection()

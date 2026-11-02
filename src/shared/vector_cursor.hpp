@@ -26,7 +26,11 @@ public:
     VectorCursor(V &vector, int index);
     VectorCursor &operator=(VectorCursor const &other);
 #else
+#ifdef VECTOR_CURSOR_OUT_OF_CLASS_CONSTRUCTOR
+    VectorCursor(V &vector, unsigned index = 0);
+#else
     VectorCursor(V &vector, unsigned index = 0) : Vector(&vector), Index(index) {}
+#endif
 #endif
     virtual ~VectorCursor() {}
     virtual bool Valid() const {
@@ -74,6 +78,11 @@ VectorCursor<T,V> &VectorCursor<T,V>::operator=(VectorCursor const &other)
     Index = copy.Index;
     return *this;
 }
+#endif
+
+#if defined(VECTOR_CURSOR_OUT_OF_CLASS_CONSTRUCTOR) && !defined(VECTOR_CURSOR_REFERENCE_FORM)
+template<class T, class V>
+VectorCursor<T,V>::VectorCursor(V &vector, unsigned index) : Vector(&vector), Index(index) {}
 #endif
 
 #endif
