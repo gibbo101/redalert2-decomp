@@ -420,13 +420,21 @@ int DynamicVectorClass<T>::ID(T const *ptr)
 #ifdef VECTOR_IMPLEMENT_DYNAMIC_ID_OBJECT
 // Slot 4: first index among the active elements equal to `object`, or -1.
 // Unlike the base lookup it does not consult IsValid.
-// Elements are read through operator[] (Westwood DYNAVEC.CPP / wwlib vector.h); the
-// direct `Vector[index]` read moves operand tie-breaks in inlining callers
-// (InfantryTypeClass ctor 0x00509B20 together with Add below).
+// Elements are read through operator[] and the loop is bounded by Count() (Westwood
+// DYNAVEC.CPP / wwlib vector.h); the direct `Vector[index]` read moves operand
+// tie-breaks in inlining callers (InfantryTypeClass ctor 0x00509B20 together with
+// Add below), and an ActiveCount bound swaps the count/vector registers after an
+// inlined Add (PhoneEdit::Dial 0x0060DC80, PhoneEdit::Add 0x0060E160). The
+// explicit instances (one guard, no accessor copies) read ActiveCount, which
+// compiles the same out of line.
 template <class T>
 int DynamicVectorClass<T>::ID(T const &object)
 {
+#ifdef VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
+    for (int index = 0; index < Count(); index++) {
+#else
     for (int index = 0; index < ActiveCount; index++) {
+#endif
         if ((*this)[index] == object) {
             return index;
         }
