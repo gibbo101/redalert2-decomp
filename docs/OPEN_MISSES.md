@@ -996,3 +996,14 @@ Resume notes are in build/class-work/Scout522/NOTES.md.
 - OWNER DECISION (11:00Z): the version object (ctor 0x712B20, vptr 0x7A2ABC, atexit 0x4D4610) is a polymorphic class with an inline virtual destructor whose scalar deleting destructor is 0x4D4980. This is a hypothesis from the one-slot vtable; the class name stays unknown_ until RTTI or strings show it. The full join of the 0x4D4540-0x4D48D0 entries into pop-2660 goes ahead on that layout.
 - OWNER DECISION (11:00Z): unit-wide macros defined at the top of a unit's first source (RA2_RECT_POINT_INLINE, RA2_CCINI_UNIT_MEMBERS, the *_DEFINED list guards) are the standing pattern for unit-specific inline or declaration choices.
 - Fixed: the player_profile.hpp comment for Save 0x7395D0 now sits on Save and says wolinfo.ini.
+
+## Scout521 (2026-11-02, closed; 815 B landed in ren1, r1 and r2)
+Resume notes are in build/class-work/Scout521/NOTES.md, with drafts in w/.
+- GScreenClass::Get_Input 0x4E09D0: 82.81. Only `this` and `input` are swapped between esi and edi.
+- LineTrail: ctor 0x5393E0 94.55 (operand order of the inlined Add's growth sum); AI 0x539530 66.06 (the original rereads ActiveSlot from memory); Draw 0x5395C0 65.64 (needs a guarded DSurface::Draw_Trail_Line_4AE9C0 declaration, drafted in hdrl/).
+- OverlayClass::Mark 0x5DA970: 82.62 under the CellModel400 TPoint2D<short> model, against 98.61 under the old model. The inner fixup sum uses one register where the original uses two.
+- MapPreview Create_Preview 0x61D660: 62.63. Adding TibSun's originy makes it worse.
+- MPSiegeTeam 0x5ABF60/0x5ABF70 use rdtsc in an ebp frame: original inline assembly, a ledger category, not C.
+- Dropship 0x4A6B90/0x4A9450 are fragments of one ~10.8 KB function.
+- RTTI: vtables 0x7A4554 and 0x7A4574 are DynamicVectorClass<AnimClass const *> and VectorClass<AnimClass const *>; 0x7A2464 is the AnimClass * instantiation. The storm lists and pop-1597 rows 0x520C40-0x520F50 need a retyping rename batch. The bytes are identical, so this is a naming fix only.
+- Tool: Scout521/t/check_ren_then_plans.py checks a rename spec plus its dependent plans in one throwaway worktree.

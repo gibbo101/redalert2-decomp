@@ -1,4 +1,4 @@
-// void Audio_File_Shutdown() -- 0x00522930
+// void __fastcall Audio_File_Shutdown() -- 0x00522930
 // Flushes the stream file into its queue while it is being read, closes it (Audio_File_Close_Stream's body),
 // frees the block 0x00A522B4, stops the file thread (waits up to five seconds), releases the two queues and the
 // ring, and deletes the locks. Placeholders: the globals are named by address until the layer is recovered.
@@ -20,7 +20,7 @@
 extern int FUN_0078439c(void *file);
 extern int FUN_0078395b(void *file);
 
-void Audio_File_Shutdown()
+void __fastcall Audio_File_Shutdown()
 {
     if (DAT_00a522b0 != 0) {
         EnterCriticalSection(&unknown_audio_file_lock_a52280);
