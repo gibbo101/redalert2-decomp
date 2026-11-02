@@ -151,10 +151,10 @@ struct AudioTimeSpan {
     __int64 volatile LastTime;               // +0x28
     __int64 volatile Maximum;                // +0x30
     __int64 unknown_38;             // +0x38
-    __int64 unknown_40;             // +0x40 (5000 after Reset)
+    __int64 volatile unknown_40;    // +0x40 (5000 after Reset)
     int volatile TickCount;         // +0x48
     int volatile LateCount;         // +0x4C
-    int unknown_50;
+    int volatile unknown_50;
     int unknown_54;
 };
 
