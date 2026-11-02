@@ -37,11 +37,25 @@ public:
     unsigned short Wait_For_Mangler_Reply(int packet_id, int time);
     int Connection_Step_005baf20(int flags); // connection rank from flag bits, 0x005BAF20
     int Connection_Weight_005baee0(unsigned char flags);   // 0x005BAEE0 the weighted sum of the flag bits
+#ifdef RA2_FIREWALL_SETTINGS_UNIT
+    // The next source port from the pool: steps PortPool (wrapping past 0xFFFF to 0x800) until the
+    // UDP transport can open a spare socket on it, 256 tries at most (0x005B9F10; expanded in 0x005BAF50
+    // and twice in 0x005BA2C0).
+    unsigned short Get_Next_Port(int step);
+    // The port a NAT maps port to, predicted from a mangler query (0x005BAF50; called from 0x0074E87B).
+    unsigned short Get_Mangled_Port(unsigned short port);
+#endif
 
     int unknown_00;                                 // +0x00 detected type; [MultiPlayer] FirewallSettings
     int unknown_04;                                 // +0x04 loaded by 0x005BA280
     int unknown_08;                                 // +0x08 [MultiPlayer] FirewallDelta
     int unknown_0c;                                 // +0x0C loaded by 0x005BA280
+#ifdef RA2_FIREWALL_SETTINGS_UNIT
+    // Declared only for the firewall unit 0x005B9C50 (RA2_FIREWALL_SETTINGS_UNIT, set by its first source);
+    // the object is 0x14 bytes.
+    int PortPool;                                   // +0x10 the last source port handed out (0x00A71B28;
+                                                    // Read_MultiPlayer_Settings: unknown_port_pool_a71b28)
+#endif
 };
 
 // The game's firewall settings (0x00A71B18; dynamic initializer 0x005B9E40).

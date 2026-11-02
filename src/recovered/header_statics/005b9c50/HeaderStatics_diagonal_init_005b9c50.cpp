@@ -2,6 +2,8 @@
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x005B9C50-0x005B9E36); the other
 // drafts of this plan are emitted by these includes.
+// FirewallSettings PortPool (+0x10) and the port members are declared only for this unit.
+#define RA2_FIREWALL_SETTINGS_UNIT
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
 #include "shared/firewall_settings.hpp"
