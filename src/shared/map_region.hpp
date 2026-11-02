@@ -25,6 +25,13 @@ public:
     MapRegionClass(Cell origin); //0056D870 by-value packed Cell, nominal constructor hypothesis
     void Generate_Starting_Points_00576170(int firstWaypoint); //ECXowner/RET4
     void Count_Grid_Cells_0056dbd0();
+    Cell Pick_Random_Region_Cell_0056dc20();
+    static void __fastcall Set_Unassigned_Regions_0056e910(bool flag);
+    static void Make_Remaining_Regions_0056e890();
+    void Reassign_Cells_0056ea20(int region, int value);
+    Cell Pick_Random_Clear_Region_Cell_0056dcb0();
+    static void Clear_Cell_Marks_0056dfc0();
+    static Cell __fastcall Pick_Random_Zone_Cell_0056dea0(int zone, int region);
     void Make_Region_Connections_00571ed0();
     bool Connect_Regions_With_Bridge_00570bc0(MapRegionClass *first,MapRegionClass *second); // ECXowner/RET8; result hypothesis
     bool Connect_Regions_With_Ramp_00572270(Cell const &cell,int region,float density); // ECXowner/RET12/AL

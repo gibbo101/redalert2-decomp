@@ -90,24 +90,8 @@ void __stdcall Report_Generation_Progress_0057be50(int progress)
     }
 }
 
-// These two real region operations are evidenced by the reference and both original inline sites.
-// No independently located standalone copies are claimed or bound.
-inline void MapRegionClass::Destroy_Cell_Regions()
-{
-    int index;
-    if(unknown_map_cells_a70a24) {
-        int size=(int)((unsigned)unknown_map_cell_side_84e804*(unsigned)unknown_map_cell_side_84e804);
-        for(index=0;index<size;++index) {
-            unknown_map_cells_a70a24[index].RegionIndex=-1;
-            unknown_map_cells_a70a24[index].unknown_3c=-1;
-        }
-    }
-    for(index=(int)((unsigned)unknown_map_regions_a6fd28.Count()-1u);index>=0;--index) {
-        MapRegionClass *region=unknown_map_regions_a6fd28[index];
-        if(region)delete region;
-    }
-    unknown_map_region_next_index_a70a28=0;
- }
+// Init_Regions is evidenced by its original inline site (MapRegionClass::Destroy_Cell_Regions is defined out of
+// line at 0x0056E790 and expanded inline here and in the generator destructor 0x005771B0).
 inline void UnknownMapGenerator::Init_Regions()
 {
     int index;
