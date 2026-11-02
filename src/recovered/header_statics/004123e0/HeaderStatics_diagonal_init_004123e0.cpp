@@ -1,3 +1,5 @@
+// TibSun Coord::As_Cell for the tracker unit: Unknown_004128A0 calls the out-of-line 0x00413770 copy.
+#define RA2_COORD_AS_CELL
 #define VECTOR_IMPLEMENT_ALL
 // Header-static dynamic initializers of the unit at 0x004123E0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
