@@ -1,6 +1,11 @@
 // Header-static dynamic initializers of the unit at 0x005DC3B0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x005DC3B0-0x005DC591); the other
 // drafts of this plan are emitted by these includes.
+// The unit expands ShapeFileStruct::Get_Color with its Is_Shape_Index_Valid test and the
+// RGBClass channel accessors (OverlayTypeClass 0x005DD000).
+#define RA2_SHAPE_FRAME_COLOR
+#define RGB_DECLARE_ACCESSORS
+#define RA2_DRAW_SHAPE_OPERATIONS
 #include "shared/shape_file.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

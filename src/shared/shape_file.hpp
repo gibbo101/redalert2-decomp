@@ -7,6 +7,9 @@
 #define RA2_SHARED_SHAPE_FILE_HPP
 
 #include "shared/rect.hpp"
+#ifdef RA2_SHAPE_FRAME_COLOR
+#include "shared/rgb_class.hpp"
+#endif
 
 // One frame header of a shape file (24 bytes).
 struct ShapeFileFrameStruct {
@@ -26,7 +29,14 @@ struct ShapeFileFrameStruct {
 #else
     int unknown_08;         // +0x08
 #endif
+#ifdef RA2_SHAPE_FRAME_COLOR
+    union {
+        int unknown_0C;
+        unsigned char Color[4];     // the frame's radar colour (TibSun ShapeRecord::Color)
+    };                      // +0x0C
+#else
     int unknown_0C;         // +0x0C
+#endif
     int unknown_10;         // +0x10
     int DataOffset;         // +0x14 offset of the frame's pixels from the shape header (0: none)
 };
@@ -61,6 +71,18 @@ struct ShapeFileStruct {
 #else
         return frame < (unsigned)FrameCount ? &Frames[frame] : 0;
 #endif
+    }
+#endif
+#ifdef RA2_SHAPE_FRAME_COLOR
+    // Colour of a frame, black past the last frame (TibSun ShapeSet::Get_Color;
+    // OverlayTypeClass 0x005DD000 expands it).
+    RGBClass Get_Color(int frame) const
+    {
+        ShapeFileFrameStruct const *record = Get_Frame(frame);
+        if (record != 0) {
+            return RGBClass(record->Color[0], record->Color[1], record->Color[2]);
+        }
+        return RGBClass(0, 0, 0);
     }
 #endif
     // Frame rectangle; the out-of-line copy the linker kept is 0x0045ED50.
