@@ -1,3 +1,4 @@
+#define THEME_SOUND_CONTROLS
 // CD.CPP dynamic initializer (0x0046E4A0)
 // Constructs the unit's 16-byte static at 0x00850818 (four zeroed words).
 // Its address sits in the C++ initializer table next to cdctrl.cpp's
