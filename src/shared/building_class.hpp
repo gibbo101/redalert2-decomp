@@ -290,7 +290,7 @@ public:
     bool unknown_445ab0();                                            // 0x00445AB0 (an undeploying type: true for a sensor, tick tank, ICBM or artillery type, or per the game mode and the owner)
     void unknown_44a000(UnknownBuildingFactory *factory);             // 0x0044A000 (abandons the factory's production when no building can build it)
     void unknown_44c920(int index, bool damaged, bool garrisoned, int arg4);   // 0x0044C920 (starts the animation of an Anims index in the chosen state)
-    bool unknown_44d900(BuildingTypeClass *upgrade, HouseClass *house);        // 0x0044D900 (whether the upgrade type may power up this building; PowersUpToLevel)
+    bool unknown_44d900(BuildingTypeClass const *upgrade, HouseClass *house);        // 0x0044D900 (whether the upgrade type may power up this building; PowersUpToLevel)
     static void __fastcall Read_INI(CCINIClass &ini);                 // 0x0044AB80 ([Structures] entries)
     static void __fastcall unknown_44df40();
     void Update_Animations_0044BD40(); // owned Building animation-update hypothesis                                     // 0x0044DF40 (unknown_44dbe0's work for every laser fence post)

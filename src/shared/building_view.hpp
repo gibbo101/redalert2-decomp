@@ -22,7 +22,7 @@ public:
     virtual int Kind_Of() const;
     virtual int Size_Of() const;
 
-    bool unknown_44d900(BuildingTypeClass *upgrade,HouseClass *house); // identified0044D900
+    bool unknown_44d900(BuildingTypeClass const *upgrade,HouseClass *house); // identified0044D900
 
     char unknown_098[0x418 - 0x98];
     BuildingTypeClass *Type; // existing full-class member +418

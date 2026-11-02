@@ -4,8 +4,8 @@
     "id": "population-3464",
     "inventory_sha256": "3a0cbffa5f4a0e79ca5f06b00860f121ff2a989390e5199f6645b22526c710d9",
     "gaps_sha256": "16147c2d716f3455ecdbb1797cd50069c8c595d301c818c6b7c2f07d406f22f0",
-    "historical_population_sha256": "cf9cccb2a3d16a081d6afa03dd0052cc9309fffa9aac22bf97aff898e0a96fa0",
-    "historical_acceptance_sha256": "15b95cb3f60937526ddfe7f63a0209877c0c1148c4ece0d5092a57fbdde51478"
+    "historical_population_sha256": "e958289240af2d4c12834c7e4b8373ab4f1f563a5c439af4f3a21eca6594a049",
+    "historical_acceptance_sha256": "f3e15f3469c6217b40270efd2ccae3a2e7961f1133294abd4708bfef8005dbd9"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -8540,7 +8540,7 @@
     "?unknown_44c920@BuildingClass@@QAEXH_N0H@Z": 4507936,
     "?unknown_44d070@BuildingClass@@QAEX_N@Z": 4509808,
     "?unknown_44d2d0@BuildingClass@@QAEXH@Z": 4510416,
-    "?unknown_44d900@BuildingClass@@QAE_NPAVBuildingTypeClass@@PAVHouseClass@@@Z": 4512000,
+    "?unknown_44d900@BuildingClass@@QAE_NPBVBuildingTypeClass@@PAVHouseClass@@@Z": 4512000,
     "?unknown_44dbe0@BuildingClass@@QAEXXZ": 4512736,
     "?unknown_44dfc0@BuildingClass@@QAEXH@Z": 4513728,
     "?unknown_44e5a0@BuildingClass@@QAEXH@Z": 4515232,

@@ -1,4 +1,4 @@
-// bool BuildingClass::unknown_44d900(BuildingTypeClass *upgrade, HouseClass *house) (0x0044D900)
+// bool BuildingClass::unknown_44d900(BuildingTypeClass const *upgrade, HouseClass *house) (0x0044D900)
 // Whether the upgrade type (named in its PowersUpBuilding at +0xC20) may
 // power up this building for the house: the house must own it, the name
 // must be the building's, and PowersUpToLevel allows another upgrade
@@ -7,7 +7,7 @@
 #include "shared/house.hpp"
 // @ref __stricmp=00781f20
 
-bool BuildingClass::unknown_44d900(BuildingTypeClass *upgrade, HouseClass *house)
+bool BuildingClass::unknown_44d900(BuildingTypeClass const *upgrade, HouseClass *house)
 {
     if (house == House && _stricmp(upgrade->PowersUpBuilding, Type->ID) == 0) {
         int level = upgrade->PowersUpToLevel;

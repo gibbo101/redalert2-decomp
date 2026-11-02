@@ -18,6 +18,7 @@
 #include "shared/string_table.hpp"
 
 class ObjectClass;
+class ObjectTypeClass;
 class BuildingTypeClass;
 
 // A display layer (LayerClass): shared/layer.hpp.
@@ -28,12 +29,6 @@ class BuildingTypeClass;
 #include "shared/unknown_vector3.hpp"
 // The selected objects (0x00A40C60) are unknown_objects_a40c60 (shared/object.hpp).
 
-// The object a display action is pending for (+0x11A0): only the flag at
-// +0x14 bit 0 is read (view).
-struct UnknownPendingObjectView {
-    char unknown_00[0x14];
-    unsigned char unknown_14;
-};
 // The small-cursor flag passed to Set_Default_Mouse (0x0083740C).
 
 // The layer orders Next_Object (0x007D5CDC: 2, 3, 4) and Prev_Object
@@ -150,6 +145,7 @@ public:
     // over layers 2, 3 and 4; the first one found when there is none.
     ObjectClass *Next_Object(ObjectClass *object);
     Cell Unknown_0049A700(int edge, Cell const &cell1, Cell const &cell2, int arg4, int arg5, int arg6);   // 0x0049A700 (a cell on map edge `edge` near two cells; AircraftClass slot 134 passes 4, 1, 0)
+    bool Passes_Proximity_Check_004991D0(ObjectTypeClass const *, int, Cell const *, Cell const &) const;
     ObjectClass *Unknown_0049EC40();                    // 0x0049EC40
     void Unknown_0049EC60(ObjectClass *object);         // 0x0049EC60
     // Moves the cursor cell (+0x1170) to a cell and returns the old one (0x004994D0).
@@ -181,6 +177,7 @@ public:
     // Slot 42 (0x00498C80): One_Time passes it the tactical view rectangle.
     virtual void unknown_slot42(Rect const &rect);
     virtual void unknown_slot43();                                    // slot 43 0x0040D120
+    void Active_Click_0049E870(ObjectClass *, Cell, int);
     virtual void unknown_slot44(Point2D const &point);               // slot 44 0x0049AF80
     virtual void unknown_slot45(Point2D const &xy);                   // slot 45 0x0049C490 (the left button went down at xy: anchors a selection band)
     // Slot 46 (0x0049B0F0): the left button released over a cell (Westwood's
@@ -219,8 +216,8 @@ public:
     int unknown_1194;               // +0x1194 -1
     bool unknown_1198;              // +0x1198
     void *unknown_119c;             // +0x119C (a pointer: the load swizzles it)
-    UnknownPendingObjectView *unknown_11a0;   // +0x11A0 an object waiting for placement (cancelled by slot 49)
-    void *unknown_11a4;             // +0x11A4 (a pointer: the load swizzles it)
+    ObjectClass *unknown_11a0;   // +0x11A0 an object waiting for placement (cancelled by slot 49)
+    ObjectTypeClass const *unknown_11a4;             // +0x11A4 (a pointer: the load swizzles it)
     int unknown_11a8;               // +0x11A8 -1
     bool unknown_11ac;              // +0x11AC
     bool unknown_11ad;              // +0x11AD

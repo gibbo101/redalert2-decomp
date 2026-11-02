@@ -13,10 +13,10 @@ void Unknown_00482BC0();
 
 void DisplayClass::unknown_slot49(Point2D const &xy)
 {
-    UnknownPendingObjectView *pending = unknown_11a0;
+    ObjectClass *pending = unknown_11a0;
     bool techno;
     if (pending != 0) {
-        techno = (pending->unknown_14 & 1) != 0;
+        techno = pending->AbstractFlags.IsTechno;
     }
     if (pending != 0 && techno) {
         unknown_11a0 = 0;

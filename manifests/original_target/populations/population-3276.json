@@ -4,8 +4,8 @@
     "id": "population-3276",
     "inventory_sha256": "380dc5275b3b8ac018e3ef4883c098ec83e4133e3d2cb90a5de42c89e292d616",
     "gaps_sha256": "f0074da2a6fac60a04ae9401224523000f9b5c2c0d6d47c1ddc5d6f3d71cc9f6",
-    "historical_population_sha256": "126cf9093d151c52f504dc302a1f7ff469651343ea480ecc0295deebeba63d1a",
-    "historical_acceptance_sha256": "83939686db0b28c2f728c1bf3a83b2b25a93b3d34724a1bf8815606cd9a5f4a9"
+    "historical_population_sha256": "f7f2ecd4d7fdb74b4bcc31ebf62c66edfa3af3cf4284b3eeb81f10f5f9bdb264",
+    "historical_acceptance_sha256": "ea3ea9d10f0296ee768b937c7d31e61c5eb605191ebd4f4534b7cb2543c39bd8"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8581,7 +8581,7 @@
     "??1IsometricTileClass@@UAE@XZ": 5406672,
     "??_GIsometricTileClass@@UAEPAXI@Z": 5407328,
     "?unknown_449dd0@BuildingClass@@QAEHXZ": 4496848,
-    "?unknown_44d900@BuildingClass@@QAE_NPAVBuildingTypeClass@@PAVHouseClass@@@Z": 4512000,
+    "?unknown_44d900@BuildingClass@@QAE_NPBVBuildingTypeClass@@PAVHouseClass@@@Z": 4512000,
     "?Set_00437690@Vector3@@QAEAAU1@MMM@Z": 4421264,
     "?Scale_004376b0@Vector3@@QAEAAU1@M@Z": 4421296,
     "?Add_004376e0@Vector3@@QAEAAU1@ABU1@@Z": 4421344,

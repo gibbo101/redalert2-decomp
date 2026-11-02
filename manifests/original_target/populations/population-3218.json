@@ -4,8 +4,8 @@
     "id": "population-3218",
     "inventory_sha256": "4657cbaa9ab07818fdad7dc36e92e505e31ee74492eb99c73f462cc0aeb6b800",
     "gaps_sha256": "6e20d521352999efd6668e8d0bea00157ae4ceedefa12cb1262a1e7e0847413d",
-    "historical_population_sha256": "d4e243a86d7df52118d12e7cf787ce01490ec83f6c5d202b40be656af55df1c0",
-    "historical_acceptance_sha256": "36c7ff0e28f9304b714c6a670dfdbee3d00555f8f5a27ea64147b04ef1cf2dd4"
+    "historical_population_sha256": "7d4a829609659f3294d2ce79310c773f84e1b3c60688ade7e5dfbb553d2688fe",
+    "historical_acceptance_sha256": "1c43cef9a635b5fda775c5ecba27ab092a40fd8ac604a81388d6a15b7c473f50"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -11224,7 +11224,7 @@
     "?Unknown_006A66B0@Tactical@@QAEXABUCoordStruct@@@Z": 6973104,
     "?Unknown_006A67D0@Tactical@@QAE?AUPoint2D@@XZ": 6973392,
     "?Get_Rad_Level_At@RadSiteClass@@QAENABVCell@@@Z": 6519216,
-    "?unknown_44d900@BuildingClass@@QAE_NPAVBuildingTypeClass@@PAVHouseClass@@@Z": 4512000,
+    "?unknown_44d900@BuildingClass@@QAE_NPBVBuildingTypeClass@@PAVHouseClass@@@Z": 4512000,
     "?Find_Next_File@CDFileClass@@SI_NPAD@Z": 4654080,
     "?Find_Close@CDFileClass@@SAXXZ": 4654192,
     "?Unknown_00681740@SidebarClass@@QAE_NHHPAVUnknownFactory@@@Z": 6821696,
@@ -28237,7 +28237,7 @@
         {
           "offset": 159,
           "kind": 20,
-          "symbol": "?unknown_44d900@BuildingClass@@QAE_NPAVBuildingTypeClass@@PAVHouseClass@@@Z",
+          "symbol": "?unknown_44d900@BuildingClass@@QAE_NPBVBuildingTypeClass@@PAVHouseClass@@@Z",
           "target": 4512000,
           "addend": 0,
           "resolved": 4294298157
