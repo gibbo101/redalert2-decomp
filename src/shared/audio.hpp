@@ -465,7 +465,7 @@ struct AudioChannelBuffer {
     AudioFormat Format;             // +0x44 the buffer's format
     IDirectSoundBuffer *Buffer;     // +0x64
     int BufferBytes;                // +0x68
-    int volatile FrameBytes;        // +0x6C
+    int FrameBytes;                 // +0x6C (not volatile: 0x004094D0 folds it into imul)
     AudioDecodeFunction Decode;     // +0x70
     int DecodeState;                // +0x74 AUDIO_DECODE_* (0x00409D00)
     int NextDecodeState;            // +0x78
@@ -620,7 +620,7 @@ struct AudioThreadBlock {
     __int64 volatile Interval;      // +0x10 milliseconds to sleep between passes (33 at start)
     int volatile Started;           // +0x18 set by the thread
     HANDLE Handle;                  // +0x1C
-    AudioDevice *volatile Device;   // +0x20 the device being mixed
+    AudioDevice *Device;            // +0x20 the device being mixed (read once per pass by 0x004094D0)
     DWORD ThreadId;                 // +0x24
 };
 
