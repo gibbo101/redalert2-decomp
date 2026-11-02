@@ -13,6 +13,6 @@
 void CellClass::unknown_47c080()
 {
     Rect rect = Union(Union(unknown_4752b0(), unknown_474eb0()), unknown_475100());
-    unknown_tactical_83996c->Register_Dirty_Area(rect - RectPoint2D(unknown_rect_839630.X, unknown_rect_839630.Y), 0);
+    unknown_tactical_83996c->Register_Dirty_Area(rect - unknown_rect_839630.Top_Left(), 0);
     Map.Unknown_00631570(MapCoords);
 }

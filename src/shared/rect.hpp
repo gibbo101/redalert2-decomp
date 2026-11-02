@@ -87,7 +87,7 @@ class Rect {
 public:
     Rect() {}
     Rect(int x, int y, int width, int height) : X(x), Y(y), Width(width), Height(height) {}
-#ifdef RA2_RECT_POINT_INLINE
+#if defined(RA2_RECT_POINT_INLINE) || defined(RA2_RECT_CORNER_INLINE)
     Rect(RectPoint2D const &point, int width, int height) : X(point.X), Y(point.Y), Width(width), Height(height) {}
 #else
     Rect(RectPoint2D const &point, int width, int height);
@@ -115,9 +115,11 @@ public:
     bool operator!=(Rect const &rect) const { return !(*this == rect); }
 
     // Not inlined by the original (out-of-line copy 0x00435560, Blit.cpp).
-#ifdef RA2_RECT_POINT_INLINE
+#if defined(RA2_RECT_POINT_INLINE) || defined(RA2_RECT_CORNER_INLINE)
     // Inline where the original expands them (RadarEventClass 0x0063B6C0); elsewhere the out-of-line
-    // copies 0x00435560 and 0x0047D040 are called.
+    // copies 0x00435560 and 0x0047D040 are called. RA2_RECT_CORNER_INLINE makes only Top_Left and the
+    // corner constructor inline (the Cell.cpp unit: Rect::operator- 0x0047D000 expands both, while its
+    // RectPoint2D difference stays the unit's out-of-line 0x0047D040).
     RectPoint2D Top_Left() const { return RectPoint2D(X, Y); }
 #else
     RectPoint2D Top_Left() const;
