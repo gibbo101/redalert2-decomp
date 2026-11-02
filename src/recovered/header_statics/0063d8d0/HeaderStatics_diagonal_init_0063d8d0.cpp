@@ -2,6 +2,9 @@
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x0063D8D0-0x0063DAB6); the other
 // drafts of this plan are emitted by these includes.
+// RocketLocomotionClass::Process (0x0063DE90) calls CoordStruct::Length:
+// the guard has to be set before this unit first includes shared/coord.hpp.
+#define RA2_COORD_LENGTH
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

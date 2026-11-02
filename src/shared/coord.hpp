@@ -15,6 +15,13 @@ class Cell;
 struct CoordStruct {
     CoordStruct() {}
     CoordStruct(int x, int y, int z) : X(x), Y(y), Z(z) {}
+#ifdef RA2_COORD_LENGTH
+    // Euclidean length, out of line at 0x0041B780 (accepted as
+    // UnknownVector3::Length: UnknownVector3 is this struct under a
+    // placeholder name). Guarded: the unit defines RA2_COORD_LENGTH before
+    // its first include of this header.
+    int Length() const;
+#endif
 #ifdef RA2_COORD_FROM_CELL_INLINE
     // The centre of a cell at height z (out of line 0x0061EA80; inline in Building.cpp).
     CoordStruct(Cell const &cell, int z = 0);
