@@ -44,6 +44,9 @@ public:
     unsigned short Get_Next_Port(int step);
     // The port a NAT maps port to, predicted from a mangler query (0x005BAF50; called from 0x0074E87B).
     unsigned short Get_Mangled_Port(unsigned short port);
+    // The NAT's port allocation delta from four queried ports and their mangled ports (sorted together):
+    // relative (deltas of mangled - original) or absolute, and whether it is sequential (0x005BAC50; Detect).
+    int Get_Allocation_Delta(int count, unsigned short *original_ports, unsigned short *ports, bool *relative, bool *sequential);
 #endif
 
     int unknown_00;                                 // +0x00 detected type; [MultiPlayer] FirewallSettings
