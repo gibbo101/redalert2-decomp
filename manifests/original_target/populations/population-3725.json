@@ -4,8 +4,8 @@
     "id": "population-3725",
     "inventory_sha256": "c811ce072dbc8245d90a94cd3c139caf6e55600fe11d4733e16c783711705580",
     "gaps_sha256": "4f8e19e434745bd1f553c71b6f45480381488eb22bd5f0f5bccfb504b55e1a15",
-    "historical_population_sha256": "c8d3dfb3099e4cb0b8c418aebfc403455f60ae5895234dac891e4831d9a20930",
-    "historical_acceptance_sha256": "54d5249aa8ad0d6bff2d5e94c943fd8121702ec5d286cdfb9c24b8bdea6224ea"
+    "historical_population_sha256": "95f9be5ed00ad3b6104f3623dbf38508db0adc8c8c7e55d4e4352b9395192109",
+    "historical_acceptance_sha256": "5a661fec82f077579691da61fb5e9c5fbb46228ccd77b00fa85be943a215a5f0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2374,7 +2374,7 @@
     "?Save_Recording_Values@@YI_NAAVCCFileClass@@@Z": 5335808,
     "?Load_Recording_Values@@YI_NAAVCCFileClass@@@Z": 5335968,
     "?Unknown_00516E70@@YIXXZ": 5336688,
-    "?Unknown_00516F00@@YIHXZ": 5336832,
+    "?Unknown_00516F00@@YIHH@Z": 5336832,
     "?Unknown_00517370@@YIX_N@Z": 5337968,
     "?unknown_init_commands_5173c0@@": 5338048,
     "?Load_Keyboard_Hotkeys@@YI_NXZ": 5345856,
@@ -15268,7 +15268,32 @@
     "??_7?$VectorClass@PAVMixFileClass@@@@6B@": 7973460,
     "?BombList@@3VBombListClass@@A": 8594144,
     "?unknown_func_6b3fe0@TagClass@@QAEXH@Z": 7028704,
-    "??0UnknownPairSecond@@QAE@XZ": 5892960
+    "??0UnknownPairSecond@@QAE@XZ": 5892960,
+    "?Clear@?$DynamicVectorClass@VHSVClass@@@@UAEXXZ": 6311216,
+    "?Clear@?$VectorClass@VHSVClass@@@@UAEXXZ": 6312848,
+    "?ID@?$DynamicVectorClass@VHSVClass@@@@UAEHPBVHSVClass@@@Z": 6311264,
+    "?ID@?$VectorClass@VHSVClass@@@@UAEHPBVHSVClass@@@Z": 6312992,
+    "?Fetch@?$VectorClass@VHSVClass@@@@UBE?AVHSVClass@@H@Z": 6311312,
+    "?Insert_Disk@CD@@UAE_NH@Z": 4646176,
+    "?Unknown_00600C80@@YI_NPBG@Z": 6294656,
+    "?Unknown_00431440@BitFontClass@@QAEGG@Z": 4396096,
+    "?Gadget_Scheme_Name@@3PBDB": 8225716,
+    "__real@8@c0058000000000000000": 8027384,
+    "?Render@VoxelDrawSystem@@YIXAAVRect@@AAH1@Z": 7435968,
+    "?CreateInstance@?$TClassFactory@VCampaignClass@@@@UAGJPAUIUnknown@@ABUGUID@@PAPAX@Z": 6891824,
+    "?CreateInstance@?$TClassFactory@VAlphaShapeClass@@@@UAGJPAUIUnknown@@ABUGUID@@PAPAX@Z": 6914864,
+    "?GetClassID@TagClass@@UAGJPAUGUID@@@Z": 7028944,
+    "?Size_Of@TiberiumClass@@UBEHXZ": 7252416,
+    "?Pre_Rotate_X@Matrix3D@@QAEXM@Z": 5833792,
+    "?Pre_Rotate_Z@Matrix3D@@QAEXM@Z": 5834320,
+    "?Obj_Look_At@Matrix3D@@QAEXABUVector3@@0M@Z": 5836560,
+    "??0Matrix3D@@QAE@ABUCOMMatrix3DStruct@@@Z": 5832208,
+    "?Remove@UnknownControlIndex@OwnerDraw@@QAE_NABIAAUUnknownControlRecord@2@@Z": 6298704,
+    "?Load@CellClass@@UAGJPAUIStream@@@Z": 4689072,
+    "__imp__ChildWindowFromPoint@12": 7971888,
+    "__real@8@3ffca2f9836e4e441800": 7983464,
+    "__real@8@400196cbe3f9990e9000": 7983456,
+    "?Message_Handler@WWKeyboardClass@@QAEHPAUHWND__@@IIJ@Z": 5450336
   },
   "regions": [
     {
@@ -43930,8 +43955,8 @@
     {
       "entry": 5336832,
       "method": "00516f00",
-      "symbol": "?Unknown_00516F00@@YIHXZ",
-      "symbol_prefix": "?Unknown_00516F00@@YIHXZ",
+      "symbol": "?Unknown_00516F00@@YIHH@Z",
+      "symbol_prefix": "?Unknown_00516F00@@YIHH@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -44385,7 +44410,7 @@
           "resolved": 7971724
         }
       ],
-      "source_sha256": "5d1a4b52043eb08266da4b190fc46da64ffc8632165217b9cb2e4f03bbd24ece",
+      "source_sha256": "dd5bd042af4aedca0c558bbeed83c25ff1f47f02021315b73dee318763f7b24a",
       "source": "src/recovered/unowned/Unknown_00516F00_00516f00.cpp",
       "population": "population-3725",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",

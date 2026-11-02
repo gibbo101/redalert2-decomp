@@ -1,4 +1,4 @@
-// int __fastcall Unknown_00516F00() -- 0x00516F00
+// int __fastcall Unknown_00516F00(int unknown_timeout) -- 0x00516F00
 #include "shared/win32_api.hpp"
 #include "shared/win32_window.hpp"
 #include "shared/ms_message_box.hpp"
@@ -82,7 +82,9 @@ static bool Cheat_Key_Process(char chr)
 
 // Runs the main menu dialog 0xE2 (procedure 0x005171D0) until a button sets the choice; letters
 // typed meanwhile toggle the flags of the codes they spell. 7 when the disk or dialog fails.
-int __fastcall Unknown_00516F00()
+// Select_Game005135F0 loads ECX=3600 at005138E4 and calls00516F00 at005138E9.
+// This implementation ignores the argument; its timeout meaning is a hypothesis.
+int __fastcall Unknown_00516F00(int unknown_timeout)
 {
     int choice = 0x12;
     CD::Set_Required_CD(-1);
