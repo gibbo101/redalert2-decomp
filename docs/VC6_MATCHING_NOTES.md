@@ -944,3 +944,12 @@ constructor out of line, as the original did (CoordStruct ctor 0x41B630 in 0x63D
 - (Abuf490) Tail merging depends on the unit: identical masked/opaque case tails never merge in a one-function file
   but do merge after the unit's earlier functions in the joined population (unvq.cpp 0xA000 case). Standalone
   "tail-merge plateaus" can be scoring artefacts: always rescore joined (HALF 87.5 and 4x2 TRANS 88.2 became exact).
+
+## DynamicVectorClass::ID loops on Count() (Port500, 2026-11-02)
+
+Westwood's DYNAVEC.CPP and TibSun vector.h write `for (index = 0; index < Count(); index++)` in
+DynamicVectorClass<T>::ID. HEAD had used `index < ActiveCount`, and that caused the long-standing "count/vector ecx/edx
+swap in the inlined ID after an inlined Add" plateaus: PhoneEdit Dial/Add, the HouseTypeClass ctor and
+RulesClass::Sides all went exact once ID called Count(). The 144 explicit-instance units still compile `ActiveCount`
+under `#ifndef VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS`, so they emit no Count COMDAT. Rescore any miss with an inlined
+ID/Add register swap.

@@ -6,7 +6,7 @@
 
 #include "shared/debug_printf.hpp"
 
-// A message node (a MessageNode_006f15c0 of shared/message_gadget_layout.hpp; the list is linked through the
+// A message node (a TextLabelClass of shared/text_label.hpp; the list is linked through the
 // LinkClass-style slots: slot 1 is the next node, slot 4 appends to a list, slot 9 removes the node and returns the next one;
 // slots 11 and 20-27 are GadgetClass's: Draw_All, Set_Focus, Clear_Focus, Has_Focus, Draw_Me).
 class UnknownMessageNode {

@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "f82e4b077103a464e126df909aeb8c4933c3f0d2768d916645fe1627b0cd0444",
-    "historical_acceptance_sha256": "aa2e88d60757ac41a9c67a92bd0750bf37642f1567c0b610246529bef622b6f1"
+    "historical_population_sha256": "f44a3bf49d3242ad17c1d3ae32f00c6cd4706290f3bbd0bbf887e245a94320ab",
+    "historical_acceptance_sha256": "e922d709582718e49e05074e2b70ed755e8a0c7fac024468ba245447320c6340"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -7258,9 +7258,9 @@
     "?Has_Focus@GadgetClass@@UAE_NXZ": 5043760,
     "?Focused@GadgetClass@@2PAV1@A": 8806392,
     "??_7GadgetClass@@6B@": 8001580,
-    "??0MessageNode_006f15c0@@QAE@PBGHHHI@Z": 7280064,
+    "??0TextLabelClass@@QAE@PBGHHHI@Z": 7280064,
     "??0GadgetState_004cefe0@@QAE@HHHHIE@Z": 5042144,
-    "_message_node_dispatch_006f15c0": 8051916,
+    "??_7TextLabelClass@@6B@": 8051916,
     "?Set_Color@BitFontClass@@QAEGG@Z": 4396080,
     "?Set_Clipping@BitFontClass@@QAEEE@Z": 4396112,
     "?Adjust@RGBClass@@QAEXHABV1@@Z": 6541088,
@@ -19100,7 +19100,6 @@
     "??_7TriggerTypeClass@@6B@": 8051340,
     "??_7TubeClass@@6B@": 8051512,
     "??_7TunnelLocomotionClass@@6B@": 8051828,
-    "??_7TextLabelClass@@6B@": 8051916,
     "??_ETextLabelClass@@": 7280624,
     "??_GTextLabelClass@@": 7280624,
     "??_7UnitClass@@6B@": 8052216,

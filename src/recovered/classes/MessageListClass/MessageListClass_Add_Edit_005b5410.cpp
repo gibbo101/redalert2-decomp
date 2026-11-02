@@ -2,12 +2,12 @@
 // Opens the edit line (an open one only takes the focus again). With AdjustEdit the edit line is the
 // last row: the oldest message goes when the list is full, the messages move down a row and the list
 // holds one message less.
-// @ref ??0MessageNode_006f15c0@@QAE@PBGHHHI@Z=006f15c0
+// @ref ??0TextLabelClass@@QAE@PBGHHHI@Z=006f15c0
 // @ref _wcslen=00783605
 // @ref _wcscpy=00783689
 // @ref ?unknown_empty_wide_839d4c@@3QBGB=00839d4c
 #include "shared/message_list.hpp"
-#include "shared/message_gadget_layout.hpp"
+#include "shared/text_label.hpp"
 #include "shared/crt_memory.hpp"
 extern "C" unsigned int __cdecl wcslen(unsigned short const *string);
 extern "C" unsigned short *__cdecl wcscpy(unsigned short *dest, unsigned short const *source);
@@ -46,7 +46,7 @@ UnknownMessageNode *MessageListClass::Add_Edit(int color, unsigned style, unsign
     wcscpy(EditBuf, text);
     OverflowBuf[0] = 0;
     EditCurPos = EditInitPos = wcslen(text);
-    EditLabel = (UnknownMessageNode *)new MessageNode_006f15c0(EditBuf, EditX, EditY, color, style | 0x8000);
+    EditLabel = (UnknownMessageNode *)new TextLabelClass(EditBuf, EditX, EditY, color, style | 0x8000);
     if (width > 0) {
         EditLabel->MaximumWidth = width;
     } else {

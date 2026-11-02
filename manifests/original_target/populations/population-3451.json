@@ -4,8 +4,8 @@
     "id": "population-3451",
     "inventory_sha256": "1d3a65e3133a8d7111c412645638e8acda7402606e5a9690d369370cfe763549",
     "gaps_sha256": "c9a912e73a304dcf8dc3bd783c93430b9e124b8075a58201b17f33c3ab85a1c3",
-    "historical_population_sha256": "bdec50492e50321c12ea27c52fa44a34ee66fad261fcd26e5895ffdf953cb554",
-    "historical_acceptance_sha256": "cbf0605cabc870e319e0eaa88617367d4971a284b5a51eb08d98cf84b9489325"
+    "historical_population_sha256": "4ae6def2703b89e25761f4184963bdd3bd919383570b5acb0d6fa1f42e336cff",
+    "historical_acceptance_sha256": "b0c08fb9c6dd601afea325871e8349946278c562c8b59915dd6f55d3aa687684"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -11479,9 +11479,9 @@
     "_derived_dispatch_006548d0": 8008120,
     "??0?$TypeList@PAVParticleSystemTypeClass@@@@QAE@ABV0@@Z": 7207392,
     "??_7?$TypeList@PAVParticleSystemTypeClass@@@@6B@": 8048964,
-    "??0MessageNode_006f15c0@@QAE@PBGHHHI@Z": 7280064,
+    "??0TextLabelClass@@QAE@PBGHHHI@Z": 7280064,
     "??0GadgetState_004cefe0@@QAE@HHHHIE@Z": 5042144,
-    "_message_node_dispatch_006f15c0": 8051916,
+    "??_7TextLabelClass@@6B@": 8051916,
     "??0ElementStorage_0042d4a0@@QAE@HPAUElement_0042d4a0@@@Z": 4379808,
     "_array_storage_dispatch_0042d4a0": 7980512,
     "??_U@YAPAXI@Z": 7872535,
@@ -24345,7 +24345,6 @@
     "??_7TriggerTypeClass@@6B@": 8051340,
     "??_7TubeClass@@6B@": 8051512,
     "??_7TunnelLocomotionClass@@6B@": 8051828,
-    "??_7TextLabelClass@@6B@": 8051916,
     "??_ETextLabelClass@@": 7280624,
     "??_GTextLabelClass@@": 7280624,
     "??_7VoxelAnimTypeClass@@6B@": 8054336,
