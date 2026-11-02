@@ -87,7 +87,14 @@ public:
     virtual int Kind_Of() const { return 4; }                           // 0x00423EC0 slot 11 (inline)
     virtual int Size_Of() const { return sizeof(AnimClass); }           // 0x00423E70 slot 12 (inline)
     virtual void Compute_CRC(WWCRCEngine &crc) const;                   // 0x00422DB0 slot 13
-    virtual CoordStruct Center_Coord() const;                           // 0x00420D90 slot 18
+#ifdef RA2_ANIM_INLINE_CENTER
+    virtual CoordStruct Center_Coord() const {
+        if (unknown_b4 != 0) return unknown_b4->Center_Coord() + ObjectClass::Center_Coord();
+        return ObjectClass::Center_Coord();
+    }
+#else
+    virtual CoordStruct Center_Coord() const;
+#endif                           // 0x00420D90 slot 18
     virtual void AI();                                                  // 0x00421710 slot 23
     virtual int unknown_slot29() const;                                 // 0x004226A0 (layer)
     virtual ObjectTypeClass *Class_Of() const;                          // 0x00422EC0 slot 33

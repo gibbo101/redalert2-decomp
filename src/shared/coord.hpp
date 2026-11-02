@@ -12,9 +12,29 @@ struct INIPoint3D;
 #if defined(RA2_COORD_AS_CELL) || defined(RA2_COORD_FROM_CELL) || defined(RA2_COORD_FROM_CELL_INLINE)
 class Cell;
 #endif
+#ifdef RA2_COORD_TPOINT3D
+// Coord's point base (layout and sum hypothesis evidenced by AnimClass 00420110).
+template<class T> class TPoint3D : public TPoint2D<T> {
+public:
+    TPoint3D() {}
+    TPoint3D(T x, T y, T z) : TPoint2D<T>(x, y), Z(z) {}
+    TPoint3D<T> const operator+(TPoint3D<T> const &point) const {
+        return TPoint3D<T>(this->X + point.X, this->Y + point.Y, Z + point.Z);
+    }
+    T Z;
+};
+struct CoordStruct : public TPoint3D<int> {
+    typedef TPoint3D<int> BASECLASS;
+    CoordStruct(BASECLASS const &point) : BASECLASS(point) {}
+#else
 struct CoordStruct {
+#endif
     CoordStruct() {}
+#ifdef RA2_COORD_TPOINT3D
+    CoordStruct(int x, int y, int z) : BASECLASS(x, y, z) {}
+#else
     CoordStruct(int x, int y, int z) : X(x), Y(y), Z(z) {}
+#endif
 #ifdef RA2_COORD_LENGTH
     // Euclidean length, out of line at 0x0041B780 (accepted as
     // UnknownVector3::Length: UnknownVector3 is this struct under a
@@ -48,10 +68,14 @@ struct CoordStruct {
 #ifdef RA2_COORD_PLUS_SOURCE
     CoordStruct operator+(CoordStruct const &coord) const;
 #else
+#ifdef RA2_COORD_TPOINT3D
+    using BASECLASS::operator+;
+#else
     CoordStruct operator+(CoordStruct const &coord) const
     {
         return CoordStruct(X + coord.X, Y + coord.Y, Z + coord.Z);
     }
+#endif
 #endif
 #ifdef RA2_COORD_EQUAL_MEMBER
     // Member-wise comparison (0x0061A8B0): the original has a real out-of-line
@@ -85,9 +109,11 @@ struct CoordStruct {
 #ifdef RA2_COORD_AS_CELL
     Cell As_Cell() const;  // 0x00413770 out-of-line copy (TibSun Coord::As_Cell)
 #endif
+#ifndef RA2_COORD_TPOINT3D
     int X;
     int Y;
     int Z;
+#endif
 };
 
 // Member-wise coordinate comparison, the free inline form every unit uses

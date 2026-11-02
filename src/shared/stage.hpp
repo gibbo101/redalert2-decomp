@@ -58,6 +58,7 @@ public:
 #ifdef RA2_STAGE_SETTERS
     void Set_Stage(int frame) { Stage = frame; }
     void Set_Step(int increment) { Step = increment; }
+    int Fetch_Step() const { return Step; }
 #endif
 
     void Set_Rate(int rate)

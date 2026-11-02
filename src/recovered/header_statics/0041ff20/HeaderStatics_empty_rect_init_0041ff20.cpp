@@ -1,3 +1,7 @@
+#define RA2_COORD_TPOINT3D
+#define RA2_ANIM_INLINE_CENTER
+#define RA2_BOUNCE_DECLARE_MEMBERS
+#define RA2_STAGE_SETTERS
 // Header-static dynamic initializers of the unit at 0x0041FF20: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x0041FF20-0x00420101); the other
 // drafts of this plan are emitted by these includes.

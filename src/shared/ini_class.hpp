@@ -471,7 +471,11 @@ struct INIPoint3D {
     int Z;          // +0x08
 };
 
+#ifdef RA2_COORD_TPOINT3D
+inline CoordStruct::CoordStruct(INIPoint3D const &point) : BASECLASS(point.X, point.Y, point.Z) {}
+#else
 inline CoordStruct::CoordStruct(INIPoint3D const &point) : X(point.X), Y(point.Y), Z(point.Z) {}
+#endif
 
 // Value initialization and serialized-state restoration of the particle-system direction.
 class NoInitClass;
