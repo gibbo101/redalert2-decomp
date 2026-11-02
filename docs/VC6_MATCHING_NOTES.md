@@ -941,3 +941,6 @@ constructor out of line, as the original did (CoordStruct ctor 0x41B630 in 0x63D
   `xor eax,eax` lands before the pops only when unknown_close_all_dialogs 0x753F50 is declared __fastcall.
 - Where TibSun calls SendDlgItemMessage and RA2 compiles GetDlgItem + SendMessageA, the original used an inlined
   helper (Send_Dlg_Item_Message); TibSun's inline accessors (MultiMission::Get_Official) fix load order.
+- (Abuf490) Tail merging depends on the unit: identical masked/opaque case tails never merge in a one-function file
+  but do merge after the unit's earlier functions in the joined population (unvq.cpp 0xA000 case). Standalone
+  "tail-merge plateaus" can be scoring artefacts: always rescore joined (HALF 87.5 and 4x2 TRANS 88.2 became exact).
