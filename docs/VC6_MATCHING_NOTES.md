@@ -1035,3 +1035,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - **A dead 3D temporary keeps its 12-byte frame slot** even when its Z stores are removed (Wide_Area_Damage 0x47F6E0, TibSun 3D-coordinate Distance, Scout552). An inline argument temporary bound to a const reference keeps its memory home and its stores, while a named struct local loses both (IonBlast AI).
 - **Discarded results keep inline bodies.** `Union(a, b) - origin;` with the result discarded keeps the partial inlined Union body and supplies cheap inline sites that push other callees out of line (Wall_Update).
 - **Rebuilt temporaries reorder struct stores** (UnknownBeacon 0x42DD60, Scout555). `dst = CoordStruct(src.X, src.Y, src.Z);` is not a no-op: it reorders the member webs, which moved Z to esi and Y to edx as in the original. The inline-wrapper lever was neutral there.
+- **Guarded atexit means a class static** (Scout557, Scout559). An atexit that tests and sets a guard bit, or a thunk that only sets a guard bit, is the destructor callback for a class static data member whose type has a user-declared destructor (empty in Scout559's case). A plain global of the same type gets a bare `ret`. Declare such statics under a unit macro: unguarded, they renumber `_$E`/`_$S` in every includer. A guarded declaration takes one `_$E` number from the whole unit.
+- **Small late levers** (Scout557, Scout560).
+  - `Cell const &offset = table[i]; cell + offset` gives the cell.X-first add.
+  - A bool local read before an unrelated store keeps identical stores in two branches from merging.
+  - A static inline helper in an argument list is expanded before the argument pushes.
+  - A rebuilt temporary used as an operator operand moves member-load choices across statements, not only within its own statement.
