@@ -78,6 +78,11 @@ public:
     void unknown_slot27();                                                // slot 27 0x0054E300 (virtual in shared/map.hpp; Logic calls it directly)
     Cell Unknown_005689D0(Cell const &cell, int arg2);                    // 0x005689D0 (TActionClass 0x006B2860 launches from the cell it returns)
     void Unknown_0055AA50();                                                    // 0x0055AA50 (starts the walk of 0x0055A910)
+#ifdef MAP_VIEW_DECLARE_DETACH
+    // Slot 10 (0x00559D80, virtual in shared/map.hpp): Detach_This_From_All 0x006ECB90 calls it
+    // directly on Map; guarded (this header is in the closure of 0x0073FEE0).
+    void Detach(AbstractClass *target, bool all);
+#endif
     CellClass *Unknown_0055A910();                                              // 0x0055A910 (the next cell of the local-map walk, or null)
     void Unknown_00549C50(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, bool arg6, bool arg7, bool arg8);   // 0x00549C50 (reveals around coord; TechnoClass slot 70)
     unsigned int Unknown_0055BD70(CellClass *cell); // physical full-EAX mask/RET4; Map receiver/source intent hypotheses

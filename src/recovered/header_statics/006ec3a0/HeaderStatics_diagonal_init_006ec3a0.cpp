@@ -25,6 +25,9 @@ DynamicVectorClass<AbstractClass *> unknown_list_ac0c18; // 0x00AC0C18 (foot obj
 DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0d08; // 0x00AC0D08 (technos, supers)
 DynamicVectorClass<AbstractClass *> unknown_objects_ac0d30; // 0x00AC0D30
 DynamicVectorClass<AbstractClass *> unknown_objects_ac0cd8; // 0x00AC0CD8
+// The later drafts of this unit include headers that declare these lists (shared/object.hpp,
+// shared/object_lists.hpp): they skip the declarations here.
+#define RA2_TRACKER_LISTS_DEFINED
 // @ref ??3@YAXPAX@Z=00781d3b
 // @ref ??8?$VectorClass@PAVAbstractClass@@@@UBE_NABV0@@Z=004cdfe0
 // @ref ??_7?$DynamicVectorClass@PAVAbstractClass@@@@6B@=007a177c

@@ -10,7 +10,10 @@ class ObjectClass;
 class TechnoClass;
 
 extern DynamicVectorClass<ObjectClass *> unknown_objects_a40368;   // 0x00A40368
-// Defined in 0x006EC3A0's unit; AbstractClass * by their vtables (0x007A177C).
+// Defined in 0x006EC3A0's unit; AbstractClass * by their vtables (0x007A177C). Skipped there
+// (RA2_TRACKER_LISTS_DEFINED): VC6 emits a second dynamic initializer for an extern
+// redeclaration that follows the definition.
+#ifndef RA2_TRACKER_LISTS_DEFINED
 extern DynamicVectorClass<AbstractClass *> unknown_AbstractClass_list_00ac0d60; // 0x00AC0D60
 extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0c30; // 0x00AC0C30
 extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0cb0; // 0x00AC0CB0 (objects and types; defined as AbstractClass * at 0x006EC3A0's unit)
@@ -20,5 +23,6 @@ extern DynamicVectorClass<AbstractClass *> unknown_AbstractClass_list_00ac0c98;
 extern DynamicVectorClass<AbstractClass *> unknown_list_ac0c18;
 // Buildings and houses (0x00AC0C80; vtable 0x007A177C).
 extern DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0c80;
+#endif
 
 #endif

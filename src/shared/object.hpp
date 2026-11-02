@@ -342,10 +342,14 @@ public:
 
 // Global object lists: shared/object_lists.hpp.
 #include "shared/object_lists.hpp"
+// Skipped in their defining unit (0x006EC3A0): VC6 emits a second dynamic initializer for an
+// extern redeclaration that follows the definition.
+#ifndef RA2_TRACKER_LISTS_DEFINED
 extern DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0bf8;   // 0x00AC0BF8 (TechnoClass +0x108 holders, bullets)
 extern DynamicVectorClass<AbstractClass *> unknown_abstracts_ac0d08;   // 0x00AC0D08 (technos, supers)
 extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0c58; // 0x00AC0C58 (AbstractClass * by its vtable 0x007A177C)
 extern DynamicVectorClass<AbstractClass *> unknown_objects_ac0cd8; // 0x00AC0CD8 (AbstractClass * by its vtable 0x007A177C)
+#endif
 extern DynamicVectorClass<ObjectClass *> unknown_objects_a40c60;   // 0x00A40C60 (objects with unknown_77 set)
 
 

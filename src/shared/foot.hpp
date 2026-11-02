@@ -56,6 +56,8 @@ struct UnknownTracker839EA0 {
 
 
     void Unknown_00413310(TechnoClass *foot);    // 0x00413310
+    // Drops a detached infantry, unit or aircraft (0x004131D0; Detach_This_From_All).
+    void Unknown_004131D0(AbstractClass *target);
     void Unknown_004131E0(FootClass *foot);    // 0x004131E0 (a unit arrives; FootClass slot 53)
     bool Unknown_004132E0(FootClass *foot);    // 0x004132E0
     void Unknown_00413600(TechnoClass *foot, Cell from, Cell to);    // 0x00413600 (a unit moves from one cell to another)
