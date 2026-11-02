@@ -65,6 +65,7 @@ public:
     bool unknown_map_49cc20(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0620
     bool unknown_set_local_variable(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0630
     bool unknown_clear_local_variable(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0650
+    bool unknown_show_text(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0440 (shows the action's text in the message list)
     bool unknown_make_ally(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B04C0
     bool unknown_make_enemy(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B0500
     bool unknown_set_house_198(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B13E0

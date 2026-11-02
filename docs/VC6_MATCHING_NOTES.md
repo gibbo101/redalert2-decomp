@@ -958,8 +958,39 @@ ID/Add register swap.
 
 Lab-confirmed (build/class-work/Plan512/lab/L1-L9): each call site is decided on its own. A callee expands when its
 own source body fits the caller's remaining allowance, and that allowance shrinks with every expansion already made.
-Sites are processed in reverse source order: an inline call placed after a site, even an empty one, pushes that
+Sites are processed in forward order (see "Nested inline sites" below for the exact rule): an inline call placed after a site, even an empty one, pushes that
 site's inner callees out of line; the same call placed before it does nothing. The callee's body size is what counts
 (named int locals and struct copies count: four named ints flipped Planning_Centered_Rect, two did not); padding the
 caller or parent helpers does nothing. To refuse a helper where the original calls it, give that helper a larger,
 still-exact body (named locals), then rescore every accepted row that uses it (Plan512 x/fam.py).
+
+## Nested inline sites: the full /Ob2 rule, validated (InlineLab518, 2026-11-02)
+
+Inline248's C2.DLL rule is complete; it also explains Plan512 ("reverse source order") and Plan515 ("~145 units,
+nested formula open"). 88 fresh predicted lab cases, all exact at their flip points (build/class-work/InlineLab518
+lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Node 0x619870 predicted to the unit.
+- Sizes: s(f) is f's own unexpanded IL; callee bodies never add to it. Root budget B = max(1000, 2*S(F)).
+- Sites of a body = calls to functions with IL (inline, in-class, non-inline functions of the unit under the ~175
+  auto-inline cap), in evaluation order (an argument before the call it feeds), a loop body once. Over-cap,
+  declared-only and virtual calls are not sites and count nowhere.
+- For site i with N_i = sites from i to the end of the same body (i included): refuse iff s > 40 and s > R (costs
+  nothing, its body is never examined); else charge s if s > 40 (s <= 40 is free), then decide the callee's body
+  with (R after the charge) // N_i and subtract whatever that consumed.
+- So a depth-1 site depends only on earlier accepted depth-1 charges. A nested site depends on later sites of every
+  enclosing body (they raise N) and on its parent's own size (charged before the division). An inline call placed
+  after a parent starves the parent's callees; the same call placed before only lowers R if it is charged.
+- Unit costs (2-unit resolution): empty body 12; constant store to a global array element 6, scalar global 4;
+  parameter store 8; extra parameter 2; `f();` 4, `ext(1);` 6; `return k;` 2; named local `int a = k; use a` +6
+  over the direct form; `if (g) store` 14; struct copy through a local 12, direct 6. operator== as
+  `if (...) return 1; return 0;` 72, `return a && b && c;` 62 (int) / 60 (bool).
+- Reading a plateau: if the original refuses a charged callee and then accepts later charged callees at the same
+  depth whose sum exceeds that callee's size, the refused one is one level deeper in the original (a free wrapper,
+  an inline accessor or a constructor chain), never a different statement order. Draw_Node: the out-of-line
+  0x41B630 at both CoordStruct(-1,-1,-1) sites needs TibSun's `Coord(int x, int y, int z) : BASECLASS(x, y, z) {}`
+  over TPoint3D<int> (RA2_COORD_TPOINT3D: wrapper 44, TPoint3D ctor 48 refused at depth 2, call bound with
+  `@ref ??0?$TPoint3D@H@@QAE@HHH@Z=0041b630`), and Member_Owner/Planning_Techno_Color (refused at R = 828) need a
+  colour helper; with the 62-unit operator== (also exact at 0x61A8B0) the whole call sequence matches. The planning
+  population stays 168/168 with RA2_COORD_TPOINT3D and that operator==.
+- Tools: InlineLab518 x/meas.py (callee size by a charged Spend flip), x/model.py + run.py (simulate a call tree and
+  compare with the compiler), x/inplace.py (many variants of one function in one unit compile), x/probe.py (the
+  remaining budget at any source line of a real function).
