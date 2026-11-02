@@ -37,6 +37,9 @@ extern bool unknown_mono_requested_a70f09;        // 0x00A70F09 asked for before
 extern TEXTMETRICA unknown_mono_metrics_a70ea0;     // 0x00A70EA0 (tmHeight, tmExternalLeading, tmMaxCharWidth
                                                   // are read as unknown_mono_height/leading/width)
 BOOL __stdcall Mono_Dialog_Proc_0059dce0(HWND__ *dialog, unsigned int message, unsigned int wparam, long lparam);
+// Keeps the dialog's instance, the game window and whether the window may show, builds the
+// eight pages and shows the window if it was asked for before (0x0059D780; name hypothesis).
+void __fastcall Mono_Window_Init(void *instance, HWND__ *parent, bool allowed);
 void Mono_Window_Shutdown();                      // 0x0059D900
 void Mono_Window_Show_Requested();                // 0x0059D970
 void Mono_Window_Show();                          // 0x0059D9C0
