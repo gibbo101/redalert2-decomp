@@ -314,6 +314,10 @@ public:
     // hypothesis): the span end next to the cell, then the EW (0x005615A0) or NS (0x00561A80) repair.
     void Repair_Low_Bridge_Span(Cell const &cell);              // 0x00561100
     void Repair_Low_Bridge2_Span(Cell const &cell);             // 0x00561340 (the same for the second low bridge set)
+#ifdef RA2_MAP_BRIDGE_PIECES
+    void Damage_Low_Bridge_Piece_EW_0055FCC0(Cell const &cell);
+    void Damage_Low_Bridge2_Piece_EW_005606D0(Cell const &cell);
+#endif
     void Repair_Low_Bridge_EW(Cell const &cell);                // 0x005615A0
     void Repair_Low_Bridge_NS(Cell const &cell);                // 0x00561A80
     void Repair_Low_Bridge2_EW(Cell const &cell);               // 0x00561F60

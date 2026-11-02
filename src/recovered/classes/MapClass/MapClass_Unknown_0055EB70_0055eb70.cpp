@@ -11,8 +11,8 @@
 
 int __fastcall Unknown_0055EB70(Cell const &cell)
 {
-    int left = Map[Cell(cell.X - 1, cell.Y)].OverlayIndex;
-    int right = Map[Cell(cell.X + 1, cell.Y)].OverlayIndex;
+    int left = Map[cell + Cell(-1, 0)].OverlayIndex;
+    int right = Map[cell + Cell(1, 0)].OverlayIndex;
     int flags = 0;
     switch (right) {
     case 0xD1:

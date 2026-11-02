@@ -10,8 +10,8 @@
 
 int __fastcall Unknown_0055ECA0(Cell const &cell)
 {
-    int up = Map[Cell(cell.X, cell.Y - 1)].OverlayIndex;
-    int down = Map[Cell(cell.X, cell.Y + 1)].OverlayIndex;
+    int up = Map[cell + Cell(0, -1)].OverlayIndex;
+    int down = Map[cell + Cell(0, 1)].OverlayIndex;
     int flags = 0;
     switch (up) {
     case 0xDA:

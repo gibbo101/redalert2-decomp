@@ -89,6 +89,9 @@ public:
     void unknown_47c930();          // 0x0047C930 (a cell of a collapsed bridge; TibSun On_Bridge_Collapse)
     void unknown_47c900();          // 0x0047C900 (maps the cell for the player; MapClass 0x00549C50)
     bool unknown_47b980() const;    // 0x0047B980 (a train bridge tile; as shared/cell.hpp)
+#ifdef RA2_MAP_BRIDGE_PIECES
+    void Unknown_0047CC10();
+#endif
     void Unknown_00472540(int value);   // 0x00472540 (as shared/cell.hpp)
     int unknown_475db0(int amount);     // 0x00475DB0 (takes up to amount of tiberium; as shared/cell.hpp)
     void unknown_47bc80();          // 0x0047BC80 (DisplayClass 0x0049CDB0, for a cell that was mapped)
