@@ -2,6 +2,8 @@
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x0042BCF0-0x0042BED6); the other
 // drafts of this plan are emitted by these includes.
+// Unit-wide (BaseClass unit 0x0042BCF0): base.hpp's guarded Is_Node declaration.
+#define BASE_DECLARE_IS_NODE
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

@@ -29,6 +29,11 @@ public:
     bool Is_Built(int index) const;                         // 0x0042C000
     bool unknown_42c080(int index) const;                   // 0x0042C080 (the node's +0x08 flag)
     BuildingClass *Get_Building(int index) const;           // 0x0042C0A0
+#ifdef BASE_DECLARE_IS_NODE
+    // Whether the building stands on one of this base's nodes (0x0042C210; TibSun Is_Node; guarded:
+    // base.hpp is in house.hpp's closure, so only the base unit sees it).
+    bool Is_Node(BuildingClass *building);
+#endif
     BaseNodeClass *Get_Node(BuildingClass *building);       // 0x0042C2B0
     BaseNodeClass *Next_Buildable(int type = -1);           // 0x0042C3A0
     int Next_Buildable_Index(int type = -1);                // 0x0042C3D0
