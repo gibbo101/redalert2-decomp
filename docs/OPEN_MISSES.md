@@ -1007,3 +1007,18 @@ Resume notes are in build/class-work/Scout521/NOTES.md, with drafts in w/.
 - Dropship 0x4A6B90/0x4A9450 are fragments of one ~10.8 KB function.
 - RTTI: vtables 0x7A4554 and 0x7A4574 are DynamicVectorClass<AnimClass const *> and VectorClass<AnimClass const *>; 0x7A2464 is the AnimClass * instantiation. The storm lists and pop-1597 rows 0x520C40-0x520F50 need a retyping rename batch. The bytes are identical, so this is a naming fix only.
 - Tool: Scout521/t/check_ren_then_plans.py checks a rename spec plus its dependent plans in one throwaway worktree.
+
+## Scout523 (2026-11-02, closed; 4,103 B landed in r1-r8)
+Resume notes are in build/class-work/Scout523/NOTES.md.
+- Get_Mangled_Port 0x5BAF50: 99.37. Multiplayer_Debug_Print 0x526D90: 99.25 (99.55 with an explicit loop guard, rejected as steering). Get_Allocation_Delta 0x5BAC50: 99.20 (jump threading drops a comparison). Add_Compressed_Events 0x627B60: 95.72 (esi/edi swapped, even with the guarded QueueClass Add overload). Get_Next_Port 0x5B9F10: 82.61. Set_Item_Visible 0x4DE960: 66.67; its true extent is 115 B, not the inventory's 64.
+- The "loop tail" blocker: the original ends Get_Next_Port's loop with `jne top` plus a separate return copy; VC6 gives us a shared `je exit; jmp top`. The same loop is inlined in Get_Mangled_Port and twice in Detect 0x5BA2C0 (2,447 B). Assigned to Scout526 as a 75-minute study.
+- FirewallSettings is 0x14 bytes: the field at +0x10 is the port pool 0xA71B28.
+
+## Scout524 (2026-11-02, closed; about 5.0 KB landed in r1-r8, r10 and r11)
+Resume notes are in build/class-work/Scout524/NOTES.md.
+- Select_Game 0x5135F0: 93.08, the jump-table scoring ceiling. The back-edge constant restores at +0xAE6 come out in the wrong order. SpotLight shapes 0x5DD760: 55.83. Made_A_Kill 0x713360: 63.16 (the original keeps VeteranCap as an FP rvalue).
+- Hidden units: translation units without .CRT$XCU initializers merge into the previous XCU span in Scout516's ranking (Interpal inside "Init.CPP", version/veteran inside "[VeinholeMonsterClass]"). Look for unaccepted gaps between accepted rows.
+- OWNER DECISIONS (12:45Z):
+  - Rename UnknownVersionObject to VersionClass (RTTI .?AVVersionClass@@, COL 0x7BA090), 0x4FEF70 to HSVClass::Adjust, and unify the two declarations of 0xA71B18 on FirewallSettings. All three are assigned to Scout525 as one rename round.
+  - The lobby.hpp +0x44 TibSun bit-fields appear only under the version unit's macro; everywhere else the field stays `unsigned long Flags`, because of the Pick_Lobby parity rule. Accepted.
+  - Unit 0x40CE70 is still blocked by the Map global 0x40D060/0x40D080, which needs the MouseClass ctor out of line; r8's population should be folded into the whole unit later.
