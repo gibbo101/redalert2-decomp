@@ -1006,3 +1006,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Unused stack bytes can be the home slot of a struct whose other members stay in registers. In Render() 0x7178E0, a named `Rect rect` filled member-wise keeps X, Width and Height in registers and spills Y into the Rect's own slot. That reproduced the original's 0x34 frame.
 - Loop strength reduction keeps a signed compare (`jl`) for every index form: int, unsigned, size_t, an unsigned bound, `!=` and `<=`. Only a pointer compare in the source gives `jb` (Convert_Voxel_Colors 0x716FC0: walk a pointer to each entry's middle byte, with the output pointer declared first).
 - Stack-slot sharing: a shared slot can grow to at most twice its size. Making one 4-byte local a 6-byte struct let a 12-byte object share its slot, which gave Detect 0x5BA2C0's 0x188 frame. To diagnose slot problems, compile the joined unit with /FAs and read the frame map (Scout531 t/fa.sh, t/fab.sh).
+
+## Late-day mechanisms (Scout528/530/532, 2026-11-02)
+- **Coupled register choices (Detect 0x5BA2C0).** Two distant register diffs can be one effect. Writing `result |= relative ? 0x20 : 0x10;` as `int kind; if (relative) kind = 0x20; else kind = 0x10; result |= kind;` gives the same neg/sbb code but a different temporary order, and that fixed both diffs.
+- **FP operand order.** VC6 re-sorts flat `+` chains, but parenthesising one product changes the order it picks (Matrix3D rows, Scout530; +4 to +20 points).
+- **Extern re-emission.** VC6 emits a global's dynamic initializer again after every later `extern` redeclaration in the same file. Put such externs in a header the unit includes before the definition. Avoid widely shared headers: random2.hpp changed Pick_Lobby 0x744090.
+- **Joined scoring.** A by-value return whose copy constructor is defined earlier in the population auto-inlines. operator*(Matrix3D, Matrix3D) scored 64 standalone and was exact joined, so always score such rows joined.
+- **Jump thunks** compile from a one-line forwarding function. Rows that start inside the alignment pad before the true entry hide real functions (Scout528 t/early.py).

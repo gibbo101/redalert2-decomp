@@ -1058,3 +1058,14 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout531 (2026-11-02, closed; 620 B landed: Render() 0x7178E0 and Convert_Voxel_Colors 0x716FC0)
 - Detect 0x5BA2C0: 83.54 -> 99.24, shape 100 (w/dj/best_99_24.cpp; two register choices left). Assigned to Scout532 as a 75-minute pass.
 - Build_Schemes 0x604540: still 94.43. hsv's lifetime would have to overlap the first loop. OWNER DECISION (17:30Z): no non-zeroing HSVClass construction, because the zeroing ctor is evidenced by 0x605DA0. Parked.
+
+## Scout528 (2026-11-02, closed; 3,810 B landed in r1-r12; r13 duplicated Scout530 r8 and was not landed)
+- The 0x5B0000-0x700000 gap range is exhausted (pad-start rows, thunks and out-of-line wlib instances are done).
+- Misses: Copy_Nodes_To (3-arg) 0x613550 94.34; UnknownListState copy ctor 0x6025A0 90.04; Planning selection 0x615DE0 84.09; control registry dictionary 0x5DED60 81.78; window un-subclass 0x5EDB20 69.04; Remove_Member 0x610E70 42.50.
+- Later cleanups: ownrdraw has two type views of 0xA73688/0xA73640 (UnknownWindowProcIndex/UnknownControlIndex vs WolDictionary). The r10/r11 explicit specializations stand in for implicit instances and must move when their callers land.
+## Scout530 (2026-11-02, closed; about 2,146 B landed in r1-r8 plus ren1)
+- Misses: Find_First_Obstacle 0x4BB890 98.89 (with a guarded coord.hpp operator*, now allowed under RA2_COORD_TIMES); Get_Obstacle 0x4BBAF0 91.96; Matrix3D axis-angle ctor 0x58FF50 99.01; operator*(Matrix3D, Vector3) 0x591380 97.67; Pre_Rotate_Y 0x590550 96.59. BombClass 0x435D30 is undrafted and needs map.hpp declarations.
+- r6 OwnerDraw 0x601050 is unreferenced. Its __stdcall ABI is a hypothesis.
+## Scout532 (2026-11-02, closed; 4,135 B landed: Detect 2,447 B, MapRegionClass helpers 1,561 B, region statics 70 B, 0x56D5F0 37 B)
+- Not taken: region list statics 0x56D530/0x56D570 (a guard flag at 0xA6FD40 and extra initializers); the extents of 0x56EAC0 and the 0x56DDA0 split are wrong.
+- 0x56DFF0's .rdata weights at 0x7A5BE0-0x7A5BF0 are bound as extern const double; their names and types are a hypothesis.
