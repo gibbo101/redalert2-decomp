@@ -1,34 +1,17 @@
-// void UnknownRefHolder_00639530::Set(UnknownRefCounted_00639530 *object) -- 0x00639530
-// Purpose: a reference-counting pointer holder (pointer at +0x04): holds a
-// new object (its count at +0x04 goes up) and lets go of the old one
-// (cleared first, then its virtual slot 2 runs).
-// Assumptions: the classes are unidentified; slot 2 is taken to release a
-// reference.
+// void rc_ptr_base::Set(ReferenceCounted *pointer) (0x00639530; was UnknownRefHolder_00639530::Set): takes a reference to pointer, releases the old one.
+#include "shared/reference_counted.hpp"
 
-struct UnknownRefCounted_00639530 {
-    virtual void unknown_slot0();
-    virtual void unknown_slot1();
-    virtual void Release();                 // slot 2
-    int RefCount;                           // +0x04
-};
-
-struct UnknownRefHolder_00639530 {
-    int unknown_00;
-    UnknownRefCounted_00639530 *Object;     // +0x04
-    void Set(UnknownRefCounted_00639530 *object);
-};
-
-void UnknownRefHolder_00639530::Set(UnknownRefCounted_00639530 *object)
+void rc_ptr_base::Set(ReferenceCounted *pointer)
 {
-    if (object != Object) {
-        if (object != 0) {
-            object->RefCount++;
+    if (pointer != Pointer) {
+        if (pointer != 0) {
+            pointer->RefCount++;
         }
-        if (Object != 0) {
-            UnknownRefCounted_00639530 *old = Object;
-            Object = 0;
+        if (Pointer != 0) {
+            ReferenceCounted *old = Pointer;
+            Pointer = 0;
             old->Release();
         }
-        Object = object;
+        Pointer = pointer;
     }
 }

@@ -1,3 +1,6 @@
+// ReferenceCounted::~ReferenceCounted() (0x00639710; empty: only the vtable store remains).
+#include "shared/reference_counted.hpp"
 
-class Leaf_639710 { public: void get(); };
-void Leaf_639710::get() { *(unsigned int*)((char*)this + 0) = 0x7a8d14; }
+ReferenceCounted::~ReferenceCounted()
+{
+}

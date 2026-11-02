@@ -9345,56 +9345,6 @@
       "source_order": 158531
     },
     {
-      "entry": 6526176,
-      "method": "006394e0",
-      "symbol": "?get@Leaf_6394e0@@QAEIXZ",
-      "symbol_prefix": "?get@Leaf_6394e0@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 16,
-      "body_sha256": "f01686eff11baf5aa3e51758f7f3155e4f631a3d2aa43ffd41d533ab4b4df476",
-      "padding_bytes": 0,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "f01686eff11baf5aa3e51758f7f3155e4f631a3d2aa43ffd41d533ab4b4df476",
-      "relocations": [],
-      "source_sha256": "8536793f38962330440acb231751b3a538d7f708febffe989610eb070da6c82b",
-      "source": "src/recovered/006394e0.cpp",
-      "population": "population-3602",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 158532
-    },
-    {
-      "entry": 6526736,
-      "method": "00639710",
-      "symbol": "?get@Leaf_639710@@QAEXXZ",
-      "symbol_prefix": "?get@Leaf_639710@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 7,
-      "body_sha256": "314ce81b2d1d068aa2ba7e939aa149418765726b2a8572202d019eecf80a3b84",
-      "padding_bytes": 9,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "5a1c1d12d7e8554a53a52260e73612c0a75f30ce82c1673aea105e04b75199ce",
-      "relocations": [],
-      "source_sha256": "9fe165d97f33550976981ff25bcca23502c2943e9279d9fcb18574c1001e93fd",
-      "source": "src/recovered/classes/ReferenceCounted/00639710.cpp",
-      "population": "population-3602",
-      "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 158533
-    },
-    {
       "entry": 6697984,
       "method": "00663400",
       "symbol": "?get@Leaf_663400@@QAEXII@Z",

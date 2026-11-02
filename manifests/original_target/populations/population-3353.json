@@ -6687,32 +6687,6 @@
       "source_order": 145774
     },
     {
-      "entry": 6526256,
-      "method": "00639530",
-      "symbol": "?Set@UnknownRefHolder_00639530@@QAEXPAUUnknownRefCounted_00639530@@@Z",
-      "symbol_prefix": "?Set@UnknownRefHolder_00639530@@QAEXPAUUnknownRefCounted_00639530@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 47,
-      "body_sha256": "e5361838c1f166effbead59d7da6a849002b093f5679202f0cf4570073485914",
-      "padding_bytes": 1,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "8d9c61bdc693ffd77fd08aa34d6e8200d29563f6bbe7131bc2651455afd5f93d",
-      "relocations": [],
-      "source_sha256": "6a64f76f86f3437117d2b47cb4f528fc64bc9a1a4fa0b4f526fccf63a68c744a",
-      "source": "src/recovered/unowned/unknown_ref_holder_set_00639530.cpp",
-      "population": "population-3353",
-      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_ref_holder_set_00639530",
-      "source_order": 145775
-    },
-    {
       "entry": 6535312,
       "method": "0063b890",
       "symbol": "?RadarEventClass_unknown_delete_all_63b890@@YAXXZ",

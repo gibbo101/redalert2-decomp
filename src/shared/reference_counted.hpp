@@ -34,6 +34,9 @@ class rc_ptr_base {
 public:
     rc_ptr_base();                                  // 0x006394E0
     rc_ptr_base(ReferenceCounted *pointer);         // 0x006394F0
+#ifdef RA2_RC_PTR_UNIT
+    rc_ptr_base(rc_ptr_base const &other);         // 0x00639560 (taking a reference)
+#endif
     virtual ~rc_ptr_base();                         // 0x00639510
     void Set(ReferenceCounted *pointer);            // 0x00639530
 
