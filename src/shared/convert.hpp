@@ -17,6 +17,12 @@ template <class T> class DynamicVectorClass;
 
 class PaletteClass {
 public:
+#ifdef RA2_PALETTE_CONSTRUCTORS
+    // Declared only in the palette globals unit 0x0040D770 (a user-declared constructor here would
+    // change every includer's implicit one).
+    PaletteClass() {}
+    PaletteClass(RGBClass const &rgb);                       // 0x00602FD0 (every entry rgb)
+#endif
     RGBClass &operator[](int index) { return Palette[index % 256]; }
     RGBClass const &operator[](int index) const { return Palette[index % 256]; }
     PaletteClass &operator=(PaletteClass const &palette);   // 0x00603080
