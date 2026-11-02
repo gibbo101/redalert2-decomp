@@ -185,6 +185,9 @@ public:
     int Unknown_0054FA60(Cell const &cell);
     int Unknown_0054FAB0(Cell const &cell);
     int Unknown_0054FAF0(Cell const &cell);
+#ifdef RA2_MAP_COLLAPSE_CLIFF
+    short &Fine_Subzone(Cell const &cell) { return *(short *)(unknown_6c + Unknown_0054FAB0(cell) * 10); }
+#endif
     // The house's +0x56D0 value for the 4 x 4 block of a cell (0x0054E3A0;
     // the block index is 0x0054E370's).
     int Unknown_0054E3A0(Cell const &cell, HouseClass *house);

@@ -4,8 +4,8 @@
     "id": "population-3746",
     "inventory_sha256": "0b5309c17ef9e8d69883973a43b0a9211c9797ded03b7976d175effa600399f3",
     "gaps_sha256": "4863d8b0e17258e6336d29b8cfee45a1c3950a1e9eb89e5909007e332a5936c8",
-    "historical_population_sha256": "f021abccb2e536a03e71be977536bb4292571aa2f4c7d3476e75ef7e2611ddaa",
-    "historical_acceptance_sha256": "7551833dd9625e2863aa52baa11b70545d9d7a6957005776812e10ec74a7f89c"
+    "historical_population_sha256": "4e8219c025355682222c8ed31f6c05c1777f365350c5fd036fd4ad3ca84c5d21",
+    "historical_acceptance_sha256": "22ef75f03352c7adb7f35b738c410b71e068097180f698855b140cd922927849"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9225,7 +9225,11 @@
     "?End@Benchmark@@QAEXXZ": 4387136,
     "??Y?$TPoint2D@F@@QAEABV0@ABV0@@Z": 5679648,
     "?Damage_Low_Bridge_Piece_EW_0055FCC0@MapClass@@QAEXABVCell@@@Z": 5635264,
-    "?Damage_Low_Bridge2_Piece_EW_005606D0@MapClass@@QAEXABVCell@@@Z": 5637840
+    "?Damage_Low_Bridge2_Piece_EW_005606D0@MapClass@@QAEXABVCell@@@Z": 5637840,
+    "?unknown_slot1@ReferenceCounted@@UAE_NH@Z": 6526784,
+    "?Damage_Low_Bridge_Piece_NS_005601F0@MapClass@@QAEXABVCell@@@Z": 5636592,
+    "?Damage_Low_Bridge2_Piece_NS_00560C10@MapClass@@QAEXABVCell@@@Z": 5639184,
+    "?Stop@?$CDTimerClass@VFrameTimerClass@@@@QAEXXZ": 7025344
   },
   "regions": [
     {
@@ -10072,7 +10076,7 @@
       "full_extent_bytes": 64,
       "full_extent_sha256": "62dfcb703f63a6dd0159bbda3a3116008fe05fea201385b79ba06b5f84c95311",
       "relocations": [],
-      "source_sha256": "6ab087f7cf6b9deba3eea0b428c0ab03bd8e98a9b25537f156ae7a90d48983d5",
+      "source_sha256": "3ef6062b5512d9102212f13b5e8729cd69e78b2e953cc4cd8332e8fe2cd8e3c1",
       "source": "src/recovered/classes/MapClass/MapClass_Unknown_0054FAB0_0054fab0.cpp",
       "population": "population-3746",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
@@ -21902,7 +21906,7 @@
       "full_extent_bytes": 32,
       "full_extent_sha256": "27b895e53ff7badfc99c94644cd114056c8a00bea9e4395a34651463f3f76307",
       "relocations": [],
-      "source_sha256": "66efc054cf42520be3863aa2551a36f3f4c0496af4d3b1237ca9bc01380dcf76",
+      "source_sha256": "fa9b1821b3bcf1d5bd8bba9f2d3e501ce6157cc3870e5f0c066c19b47dade491",
       "source": "src/recovered/classes/Cell/Cell_constructor_short_short_0042ad30.cpp",
       "population": "population-3746",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",

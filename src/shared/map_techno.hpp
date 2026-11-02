@@ -25,6 +25,24 @@ public:
     virtual void unknown_slot42(); virtual void unknown_slot43(); virtual void unknown_slot44(); virtual void unknown_slot45(); virtual void unknown_slot46(); virtual void unknown_slot47();
     virtual void unknown_slot48(); virtual void unknown_slot49(); virtual void unknown_slot50(); virtual void unknown_slot51(); virtual void unknown_slot52();
     virtual bool unknown_slot53(CoordStruct const &coord, int dir);   // slot 53 (+0xD4; shared/object.hpp passes a pointer; TibSun Unlimbo)
+#ifdef RA2_MAP_COLLAPSE_CLIFF
+    virtual void unknown_slot54(); virtual void unknown_slot55(); virtual void unknown_slot56(); virtual void unknown_slot57(); virtual void unknown_slot58(); virtual void unknown_slot59();
+    virtual void unknown_slot60(); virtual void unknown_slot61(); virtual void unknown_slot62(); virtual void unknown_slot63(); virtual void unknown_slot64(); virtual void unknown_slot65();
+    virtual void unknown_slot66(); virtual void unknown_slot67(); virtual void unknown_slot68(); virtual void unknown_slot69(); virtual void unknown_slot70();
+    virtual bool unknown_slot71(int arg1);                            // slot 71 (+0x11C; as shared/object.hpp)
+    virtual void unknown_slot72(); virtual void unknown_slot73(); virtual void unknown_slot74(); virtual void unknown_slot75(); virtual void unknown_slot76();
+    virtual void unknown_slot77(); virtual void unknown_slot78(); virtual void unknown_slot79(); virtual void unknown_slot80(); virtual void unknown_slot81(); virtual void unknown_slot82();
+    virtual void unknown_slot83(); virtual void unknown_slot84(); virtual void unknown_slot85(); virtual void unknown_slot86(); virtual void unknown_slot87(); virtual void unknown_slot88();
+    virtual void unknown_slot89(); virtual void unknown_slot90(); virtual void unknown_slot91(); virtual void unknown_slot92(); virtual void unknown_slot93(); virtual void unknown_slot94();
+    virtual void unknown_slot95(); virtual void unknown_slot96(); virtual void unknown_slot97(); virtual void unknown_slot98(); virtual void unknown_slot99(); virtual void unknown_slot100();
+    virtual void unknown_slot101(); virtual void unknown_slot102();
+    virtual void unknown_slot103(CoordStruct const &coord);           // slot 103 (+0x19C; as shared/object.hpp)
+
+    char unknown_24[0x74 - 0x24];
+    bool unknown_74;                        // +0x74 (as shared/object.hpp)
+    char unknown_75;
+    bool unknown_76;                        // +0x76 (as shared/object.hpp)
+#endif
 };
 
 class TechnoClass : public AbstractClass {
@@ -122,7 +140,18 @@ extern DynamicVectorClass<TechnoClass *> unknown_list_a40c20;
 // AnimClass as the Map unit sees it (stand-in; shared/anim.hpp brings headers whose types
 // the stand-ins above redefine): the constructor and the size operator new allocates
 // (MapClass 0x005576A0 and its three twins place bridge explosions with it).
+#ifdef RA2_MAP_COLLAPSE_CLIFF
+class AnimTypeClass {
+public:
+    static int __fastcall From_Name(char const *name);     // 0x00425640 (as shared/anim_type.hpp)
+};
+// Every animation type (0x008661E0; a TypeList in shared/anim_type.hpp).
+extern DynamicVectorClass<AnimTypeClass *> AnimTypes;
+// Every techno and team drops the target (0x006D7C80; shared/techno.hpp takes an AbstractClass *).
+void __fastcall Unknown_006D7C80(CellClass *target);
+#else
 class AnimTypeClass;
+#endif
 class AnimClass : public ObjectClass {
 public:
     AnimClass(AnimTypeClass const *type, CoordStruct const &coord, int loop_delay, int loops, int flags, int zadjust);   // 0x00420110 (as shared/anim.hpp)
@@ -131,7 +160,11 @@ public:
     virtual HRESULT __stdcall Save(IStream *stream, BOOL clear_dirty);
     virtual int Kind_Of() const;
     virtual int Size_Of() const;
+#ifdef RA2_MAP_COLLAPSE_CLIFF
+    char unknown_78[0x177 - sizeof(ObjectClass)];
+#else
     char unknown_24[0x177 - sizeof(AbstractClass)];
+#endif
     bool unknown_177;                       // +0x177 deleted by the map's Overpass (0x0054B2E0)
     char unknown_178[0x1A8 - 0x178];        // sizeof(AnimClass) 0x1A8 (as shared/anim.hpp)
 };

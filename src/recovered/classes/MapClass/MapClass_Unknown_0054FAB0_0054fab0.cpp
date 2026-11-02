@@ -1,16 +1,15 @@
-// int MapClass::Unknown_0054FAB0(Cell const &cell) (0x0054FAB0)
-// The cell's index in the +0x64 array: Y * (width + height + 1) + X,
-// clamped to 0 .. +0x68 - 1.
 #include "shared/map.hpp"
 
 int MapClass::Unknown_0054FAB0(Cell const &cell)
 {
-    int index = (MapSize.Height + 1 + MapSize.Width) * cell.Y + cell.X;
+    int index = Unknown_0054FAF0(cell);
+    int result;
     if (index < 0) {
-        return 0;
+        result = 0;
+    } else if (index >= unknown_68) {
+        result = unknown_68 - 1;
+    } else {
+        result = index;
     }
-    if (index >= unknown_68) {
-        index = unknown_68 - 1;
-    }
-    return index;
+    return result;
 }
