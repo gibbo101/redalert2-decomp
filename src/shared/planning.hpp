@@ -282,7 +282,7 @@ public:
     int Is_At_Pixel(Point2D point) const;                      // 0x00611230
     int Is_At(CoordStruct coord) const;                        // 0x00611310
     ::Rect Rect() const;                                      // 0x00611360
-    int Is_In_Loop();                                        // 0x006113F0
+    bool Is_In_Loop();                                       // 0x006113F0
     void unknown_611440();                                    // 0x00611440
     PlanningMemberClass *Member_For(TechnoClass *techno) const;   // 0x00611470
     int Branch_Count() const;                                 // 0x006114C0
@@ -368,6 +368,11 @@ public:
     void unknown_612ec0();                                    // 0x00612EC0
     void Add_Node(PlanningNodeClass *node);                   // 0x00613BA0
     EventClass unknown_613330();                              // 0x00613330
+    // Adds the nodes start..start+count-1 of this path to techno's path,
+    // each with a copy of this owner's order aimed at techno (no-op without a token).
+    void Copy_Nodes_To(TechnoClass *techno, int start, int count);   // 0x00613550
+    // The same from start to the end of the path.
+    void Copy_Nodes_To(TechnoClass *techno, int start);              // 0x00613720
     void unknown_613a80();                                    // 0x00613A80
     bool Has_Node(PlanningNodeClass *node);                   // 0x00613C60
     void unknown_613c80(PlanningNodeClass *node);             // 0x00613C80
