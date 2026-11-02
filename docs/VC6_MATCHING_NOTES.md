@@ -926,3 +926,9 @@ constructor out of line, as the original did (CoordStruct ctor 0x41B630 in 0x63D
   break; }` kept the case-5 block apart (Rocket Process 0x63DE90).
 - When an object pointer is chosen by if/else, VC6 loads a member first and then hoists the load both paths share; a
   single-use local in each branch restores the hoist, one local for every use spills it (labs Rocket473 lab/t6-t7n).
+
+## Dialog procs (Opts476, 2026-11-02)
+
+- VC6 lays out switch cases by value, not source order; source order still changes the inline budget.
+- `HWND h = GetDlgItem(...)` as a named temporary, not a nested argument, fixes GetDlgItem call order and registers.
+- Of two duplicate error blocks, VC6 keeps as the shared tail the one whose branch has an explicit `return`.
