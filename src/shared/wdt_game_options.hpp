@@ -78,6 +78,27 @@ public:
     Wstring Name;                                                   // +0x14
 };
 
+// An option whose territory value falls into one of five ranges (TibSun
+// RangedGameOption). Never constructed in RA2: no vtable or RTTI, only its
+// out-of-line members 0x00728690-0x007287C6 (unreferenced); layout from them.
+//   +0x10 Wstring Label (CSF label stem; the range index is appended),
+//   +0x14..+0x20 unsigned Range0..Range3
+class RangedGameOption : public GameOption {
+public:
+    virtual int Get_Value(rc_ptr<WDTTerritory> const &territory) const;                         // 0x007287B0 (2 in the middle range)
+    virtual WideString Describe(rc_ptr<WDTTerritory> const &territory, WideString const &prefix) const;   // 0x00728690
+    virtual int Get_Range(rc_ptr<WDTTerritory> const &territory) const = 0;                     // slot 5
+    // 0 at most Range0, 1 at most Range1, 3 from Range3, 2 from Range2, else 4 (the middle).
+    int In_Range_Of(unsigned value) const;                          // 0x00728770
+
+    int unknown_0c;                                                 // +0x0C
+    Wstring Label;                                                  // +0x10
+    unsigned Range0;                                                // +0x14
+    unsigned Range1;                                                // +0x18
+    unsigned Range2;                                                // +0x1C
+    unsigned Range3;                                                // +0x20
+};
+
 // RTTI vtable 0x007AF154 (WDTGameOptions.cpp): an on/off option from Flag's
 // bit in the territory's OptionFlags.
 //   +0x0C int OffValue, +0x10 int OnValue, +0x14 Wstring OnLabel,
@@ -102,6 +123,14 @@ public:
     int OnValue;                                                    // +0x10
     Wstring OnLabel;                                                // +0x14
     Wstring OffLabel;                                               // +0x18
+};
+
+// The two-or-four player option (name hypothesis; like RangedGameOption never
+// constructed: no vtable or RTTI). Its label follows the territory's PlayerCount.
+class PlayerCountGameOption : public GameOption {
+public:
+    virtual int Get_Value(rc_ptr<WDTTerritory> const &territory) const;                         // 0x00728970 (0)
+    virtual WideString Describe(rc_ptr<WDTTerritory> const &territory, WideString const &prefix) const;   // 0x00728980
 };
 
 // RTTI vtable 0x007AF16C (WDTGameOptions.cpp): the map size option, from
