@@ -4,8 +4,8 @@
     "id": "population-3130",
     "inventory_sha256": "fb11c3317c27dbbc1fba1d17b56e596ea1fa104761bc76db703c9f2d5a4afee8",
     "gaps_sha256": "691fb62ad9ab9d3ed6d30a07782de9eb77afb6f4808ed99e7f95bd30034695cc",
-    "historical_population_sha256": "ace779f3c715f0dd9a7bf9966c6a028029c42f38c529a22404d932124810225d",
-    "historical_acceptance_sha256": "d8db7be128c22b7af83e8951e7fa398df4bc91e62651e9d33e0b1d977c5788cb"
+    "historical_population_sha256": "5fac49ae7aa4e0047f3ddcfbd583dcf5cfb44b372a8049ea1d020c2614aa3e79",
+    "historical_acceptance_sha256": "0ffd9901f68f17acdcb0b2cd9347673b71a90f0f5e6813e315a5c176b8185429"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8759,7 +8759,7 @@
     "?Audio_System_Shutdown@@YIXXZ": 4204944,
     "?Get_Source@AudioBankEntry@@QAIPAUAudioSource@@XZ": 4202544,
     "?Audio_Event_Start_Pass@@YIPAUAudioSource@@PAUAudioEvent@@@Z": 4212448,
-    "??0ColorScheme@@QAE@PBDABVHSVClass@@PAXHH_N@Z": 6699504,
+    "??0ColorScheme@@QAE@PBDABVHSVClass@@PAXPAVPaletteClass@@H_N@Z": 6699504,
     "?DoList@@3V?$QueueClass@VEventClass@@$0EAAA@@@A": 8807024,
     "?Resume@VocStaticSound@@QAEXXZ": 7423104,
     "?Audio_Get_Device@@YAPAUAudioDevice@@XZ": 4222784,

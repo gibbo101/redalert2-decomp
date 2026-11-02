@@ -4,8 +4,8 @@
     "id": "population-3780",
     "inventory_sha256": "2834e52f497ccebd74aba25786fd1e162041e96dcfa792a4ceb82ecd01a0d1e3",
     "gaps_sha256": "51c66d103cca75f731b531d911a42260f06eefdf897c5514437df1ec0ee75de8",
-    "historical_population_sha256": "34df945af0b02c27a71a9a54c6c6501ecf2da2344b60799debb6f963bc1bdd41",
-    "historical_acceptance_sha256": "cd6a33c177b0d6c3b3392bc9d7993551dbae593f61033ebdfb6ce5cc1d903c28"
+    "historical_population_sha256": "3c7acbd6c9cf64a4638c36411d545626a864d434250d3c76c8fd8d6046165caf",
+    "historical_acceptance_sha256": "c50ed14210933b888b42d0e0456e1bbbfef8929f60ad1ecf1c252b70a990a576"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2203,7 +2203,7 @@
     "?Adjust@HSVClass@@QAEXHABV1@@Z": 5238640,
     "?Insert_After@?$DynamicVectorClass@VBaseNodeClass@@@@QAE_NABVBaseNodeClass@@H@Z": 5206640,
     "?Load@FoggedObjectClass@@UAGJPAUIStream@@@Z": 4988032,
-    "??0ColorScheme@@QAE@PBDABVHSVClass@@PAXHH_N@Z": 6699504,
+    "??0ColorScheme@@QAE@PBDABVHSVClass@@PAXPAVPaletteClass@@H_N@Z": 6699504,
     "?unknown_table_7f264c@@3QBDB": 8332876,
     "?Unknown_00663690@@YIPAVConvertClass@@PBVHSVClass@@PAXHPAVRGBClass@@PAVSurface@@HHHHPBX@Z": 6698640,
     "?Load@Tactical@@UAGJPAUIStream@@@Z": 6996768,

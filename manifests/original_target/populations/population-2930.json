@@ -4,8 +4,8 @@
     "id": "population-2930",
     "inventory_sha256": "7dfe89dbb948e0c622af0adbb588c03f76fecf8bd0a3e42a6b29941ab396c24d",
     "gaps_sha256": "91c631d866f95b939d8d24bf48f884c386ee7ab760d6ff390b942a5688445205",
-    "historical_population_sha256": "8d15cc8cf085b86fc6bb4e92688c1da63630ae887295ed37bd445ff5cf27eb88",
-    "historical_acceptance_sha256": "5f6eab0e0c4abf167da0660d3e06f9c5b4552cde94460b5b2079fbb89407a604"
+    "historical_population_sha256": "b8e9ac989e17b4046fa3e76750b2d7801a0524b3a51db5fbe68a9f655bd2c73c",
+    "historical_acceptance_sha256": "1b5ad3d56030066d44942e01f00eccef39774fb7f617bc27fd134b5cc8fe08ad"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3057,7 +3057,7 @@
     "?Load@FoggedObjectClass@@UAGJPAUIStream@@@Z": 4988032,
     "?unknown_slot36@MPCooperative@@UAE_NXZ": 5919568,
     "?unknown_slot35@MPCooperative@@UAEX_N@Z": 5920112,
-    "??0ColorScheme@@QAE@PBDABVHSVClass@@PAXHH_N@Z": 6699504,
+    "??0ColorScheme@@QAE@PBDABVHSVClass@@PAXPAVPaletteClass@@H_N@Z": 6699504,
     "?Load@Tactical@@UAGJPAUIStream@@@Z": 6996768,
     "??0Tactical@@QAE@ABVNoInitClass@@@Z": 6956736,
     "?unknown_slot8@MPCooperative@@UAEXXZ": 5910256,

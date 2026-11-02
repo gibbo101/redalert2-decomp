@@ -12,7 +12,7 @@
 // @ref ?unknown_surface_839950@@3PAVSurface@@A=00839950
 extern "C" char *__cdecl strdup(char const *string);
 
-ColorScheme::ColorScheme(char const *name, HSVClass const &base, void *unknown_a, int unknown_b, int unknown_c, bool add) :
+ColorScheme::ColorScheme(char const *name, HSVClass const &base, void *unknown_a, PaletteClass *palette, int unknown_c, bool add) :
     Name(strdup(name)),
     BaseColor(base)
 {
@@ -28,7 +28,7 @@ ColorScheme::ColorScheme(char const *name, HSVClass const &base, void *unknown_a
     unknown_color_0x330 = 0x10;
     unknown_0x334 = 0x10;
     unknown_0x338 = 0x15;
-    Converter = Unknown_00663690(&BaseColor, unknown_a, unknown_b, Palette, unknown_surface_839950, unknown_c, 1000, 1000, 1000, unknown_table_7f264c);
+    Converter = Unknown_00663690(&BaseColor, unknown_a, (int)palette, Palette, unknown_surface_839950, unknown_c, 1000, 1000, 1000, unknown_table_7f264c);
     if (add) {
         ColorSchemes.Add(this);
         Index = ColorSchemes.Count();

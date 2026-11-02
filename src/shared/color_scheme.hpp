@@ -19,7 +19,7 @@ class Surface;
 class ColorScheme {
 public:
     ColorScheme();                          // 0x00663930 (unnamed, no converter; joins ColorSchemes)
-    ColorScheme(char const *name, HSVClass const &base, void *unknown_a, int unknown_b, int unknown_c, bool add);   // 0x006639F0
+    ColorScheme(char const *name, HSVClass const &base, void *unknown_a, PaletteClass *palette, int unknown_c, bool add);   // 0x006639F0
     ~ColorScheme();                         // 0x00663BB0 (frees the name and converter, leaves ColorSchemes)
     // Rebuilds Converter from the palettes (0x00663B40; Tiberian Sun's Build_Light_Converters with scales).
     void Unknown_00663B40(PaletteClass *unknown_a, PaletteClass *palette, int rscale, int gscale, int bscale);

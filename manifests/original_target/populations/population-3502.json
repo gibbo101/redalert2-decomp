@@ -4,8 +4,8 @@
     "id": "population-3502",
     "inventory_sha256": "e320cb956d2834f06abd7e6ed98535c8e7da8724e8f45dc1e57d4363fc127bea",
     "gaps_sha256": "f90a2d1fa222872a11c84d540096bc5c3f1555ffc2f8701e4fa7a43ea2a62382",
-    "historical_population_sha256": "f1f207070096541fb6f83060b8670295c5c18cb3c84bf51d6f6bf784a8ac64a2",
-    "historical_acceptance_sha256": "a72d9c1dcc79a92236cfc54e0bfab93f27d7c99499e5dee45963e525174ec192"
+    "historical_population_sha256": "63c076ea64212562397e2af8c5da3ef69a818ca9a427d61e2de8186eb1d3ad87",
+    "historical_acceptance_sha256": "43476a1b861bd46aaf45189e6f1cbaba7b3271eaff918bca8f4dc338f5d69c68"
   },
   "references": {
     "?Draw_Box@@YIXABVRect@@H_N@Z": 4813776,
@@ -3429,7 +3429,7 @@
     "?Load@FoggedObjectClass@@UAGJPAUIStream@@@Z": 4988032,
     "?unknown_slot36@MPCooperative@@UAE_NXZ": 5919568,
     "?unknown_slot35@MPCooperative@@UAEX_N@Z": 5920112,
-    "??0ColorScheme@@QAE@PBDABVHSVClass@@PAXHH_N@Z": 6699504,
+    "??0ColorScheme@@QAE@PBDABVHSVClass@@PAXPAVPaletteClass@@H_N@Z": 6699504,
     "?unknown_table_7f264c@@3QBDB": 8332876,
     "?Unknown_00663690@@YIPAVConvertClass@@PBVHSVClass@@PAXHPAVRGBClass@@PAVSurface@@HHHHPBX@Z": 6698640,
     "?Load@Tactical@@UAGJPAUIStream@@@Z": 6996768,
