@@ -11,7 +11,9 @@ Cell RadarClass::Unknown_00631500(Point2D const &point)
     float x = point.X / unknown_1484 - unknown_148c;
     float y = point.Y / unknown_1484 + unknown_1494;
     Cell cell;
-    cell.X = (short)((y + x) * 0.5f + 0.5);
+    float sum = y;
+    sum += x;
+    cell.X = (short)(sum * 0.5f + 0.5);
     cell.Y = (short)((y - x) * 0.5f + 0.5);
     return cell;
 }
