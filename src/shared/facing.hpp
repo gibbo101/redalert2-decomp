@@ -14,10 +14,19 @@ struct UnknownFacingDir {
     double As_Radian() const; // original signed16 angle observation
     UnknownFacingDir() {}
     UnknownFacingDir(unsigned short raw) : Raw(raw) {}
+// The native Parasite AI observes a signed low-word angle, then rotates left by a quarter turn.
+#ifdef RA2_FACING_LEFT90
+    UnknownFacingDir(int facing) : Facing((short)facing) {}
+    UnknownFacingDir Left_90() const { return UnknownFacingDir((int)Facing - 0x3fff); }
+#endif
     UnknownFacingDir(CoordStruct const &from, CoordStruct const &to);   // 0x00423EF0 (the direction from one coordinate to another)
     // Private source hypothesis for original signed-angle magnitude comparison.
     bool Magnitude_At_Least_004bfb30(UnknownFacingDir const &other) const;
+#ifdef RA2_FACING_LEFT90
+    union { unsigned short Raw; short Facing; };
+#else
     unsigned short Raw;
+#endif
     unsigned short Padding;
 };
 
