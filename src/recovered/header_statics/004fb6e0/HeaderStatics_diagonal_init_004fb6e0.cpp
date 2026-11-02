@@ -1,3 +1,5 @@
+#include "shared/building_class.hpp"
+#include "shared/building_type_class.hpp"
 // Header-static dynamic initializers of the unit at 0x004FB6E0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x004FB6E0-0x004FB8C6); the other

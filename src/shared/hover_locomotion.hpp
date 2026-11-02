@@ -48,6 +48,7 @@ public:
 
     // Starts a drift of 20..30 either way (Power_Off and Shove expand it;
     // name hypothesis).
+    void Gravity_AI_004fb9d0();
     bool unknown_4fdfc0();                                                      // 0x004FDFC0 (moving; never called out of line)
     void Start_Drift();                                                         // 0x004FEC30
     void unknown_4fcbc0(bool arg);                                              // 0x004FCBC0 (Process's step; not yet recovered)

@@ -910,3 +910,11 @@ a switch. In a big state-machine Process (Rocket 0x63DE90), routing each `Linked
 through a file-static helper (Ground_Distance, Direction_To, Distance_To) cut the frame from 0x9C-0xAC to the
 original 0x84. A real arithmetic helper (`static inline int Square(int)`) adds inline sites and can push a later
 constructor out of line, as the original did (CoordStruct ctor 0x41B630 in 0x63DE10's inlined copies).
+
+## Merged calls and member-ctor store barriers (NearMiss474, 2026-11-01)
+
+- Two `htons` calls in an if/else get merged by VC6 into one call, and that merge is what reads an int global as a
+  16-bit word; a single call on an unsigned short local always loads a dword (UDPInterfaceClass 0x76CD40).
+- VC6 never moves a store above an inlined member constructor: Point2D members act as a barrier for the zoom double's
+  low-dword store in the Tactical ctor 0x6A24B0, while plain ints/bools let it rise to the top. Member types can be
+  read off store order.
