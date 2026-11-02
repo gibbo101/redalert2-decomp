@@ -26,7 +26,7 @@ class SideClass : public AbstractTypeClass {
 public:
     SideClass(char const *ini_name);                            // 0x0067AE10
     SideClass(NoInitClass const &noinit) : AbstractTypeClass(noinit), Houses() {}
-    // Inline: only the scalar deleting destructor (0x0067B1F0) holds it.
+    // 0x0067AED0 (defined in Side.cpp; the scalar deleting destructor 0x0067B1F0 expands it).
     virtual ~SideClass();
 
     // Index in Sides of the side whose ID equals the name (case-insensitive), or -1.
@@ -44,10 +44,14 @@ public:
 
 extern DynamicVectorClass<SideClass *> Sides;                   // 0x008661B0
 
+// Side.cpp defines the destructor out of line (0x0067AED0; RA2_SIDE_UNIT in that unit's first source);
+// other units keep this inline copy.
+#ifndef RA2_SIDE_UNIT
 inline SideClass::~SideClass()
 {
     Unknown_006ECB90(this, true);
     Sides.Delete(this);
 }
+#endif
 
 #endif

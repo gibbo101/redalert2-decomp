@@ -1,6 +1,8 @@
 // Header-static dynamic initializers of the unit at 0x0067AC40:  the
 // shared/unknown_geometry.hpp constants (0x0067AC40-0x0067AE01); the other
 // drafts of this plan are emitted by these includes.
+// Unit-wide (Side.cpp 0x0067AC40): side.hpp leaves ~SideClass out of line here.
+#define RA2_SIDE_UNIT
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
