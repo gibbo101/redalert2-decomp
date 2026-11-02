@@ -29,6 +29,8 @@ public:
     // Draws the laser (nothing once its duration is not positive; the
     // house-colour lasers through Draw_House_Color).
     void Draw_It();                            // 0x005334F0
+    // Draws a house-colour laser (Draw_It's IsHouseColor case; name hypothesis).
+    void Draw_House_Color();                   // 0x00533C80
     // Draws every laser, last first.
     static void Draw_All();                    // 0x005334D0
 
