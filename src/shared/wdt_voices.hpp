@@ -36,6 +36,10 @@ public:
         void Load(INIClass &ini, Wstring const &section, int faction, int kind, Wstring const &key);   // 0x00732300
         bool Pick(int faction, int kind, Wstring &name) const;                                  // 0x00732160
         bool Pick_Emphasis(int faction, int kind, Wstring &name) const;                         // 0x00732230
+#ifdef WDT_VOICES_DECLARE_SET_NAME
+        // Inline in the Voices constructor (0x007314C0), which names the groups.
+        void Set_Name(Wstring const &name) { Name = name; }
+#endif
 
         Wstring Name;                                               // +0x00
         // The line numbers per result (Win, Lose, Draw): plain at
@@ -43,34 +47,22 @@ public:
         DynamicVectorClass<unsigned> Lines[6];                      // +0x04
     };
 
-    // Plays the queue as the engine draws it (RTTI vtable 0x007AF40C).
+    // Plays the queue as the engine draws it (RTTI vtable 0x007AF40C). The
+    // members are defined in the Voices unit after Create_Anim, which
+    // expands the constructor.
     //   +0x1C Voices *Owner   size 0x20
     class Anim : public MSAnim {
     public:
-        Anim(Voices *owner) : Owner(owner) {}                       // 0x00732AA0
-        virtual ~Anim() {}                                          // 0x00732AE0
-        virtual void Set_Unknown_0C(bool value)                     // 0x00732AF0
-        {
-            unknown_0C = value;
-            if (!value) {
-                Owner->Stop();
-            }
-        }
-        virtual void Pause() { Timer.Stop(); }                      // 0x00732B50
-        virtual void Resume() { Timer.Start(); }                    // 0x00732BA0
-        virtual bool Unknown_Slot4(Surface *surface, Rect *dirty)  // 0x00732BC0
-        {
-            Owner->Update();
-            return false;
-        }
-        virtual void Draw(Surface *surface, Rect const *clip) { Owner->Update(); }   // 0x00732BD0
-        virtual Rect Get_Rect()                                     // 0x00732BE0 (an unset rectangle)
-        {
-            Rect rect;
-            return rect;
-        }
-        virtual bool Unknown_Slot7() { return !Speech_Is_Playing(); }   // 0x00732C10
-        virtual void Unknown_Slot8(int unknown1) { Owner->Update(); }    // 0x00732C20
+        Anim(Voices *owner);                                        // 0x00732AA0
+        virtual ~Anim();                                            // 0x00732AE0
+        virtual void Set_Unknown_0C(bool value);                    // 0x00732AF0 (false stops the voices)
+        virtual void Pause();                                       // 0x00732B50
+        virtual void Resume();                                      // 0x00732BA0
+        virtual bool Unknown_Slot4(Surface *surface, Rect *dirty);  // 0x00732BC0
+        virtual void Draw(Surface *surface, Rect const *clip);      // 0x00732BD0
+        virtual Rect Get_Rect();                                    // 0x00732BE0 (an unset rectangle)
+        virtual bool Unknown_Slot7();                               // 0x00732C10 (true once nothing is said)
+        virtual void Unknown_Slot8(int unknown1);                   // 0x00732C20
 
         Voices *Owner;                                              // +0x1C
     };

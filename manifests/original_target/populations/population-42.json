@@ -6901,40 +6901,6 @@
       "source_quality_family": "ghidra-seed-sweep"
     },
     {
-      "entry": 7547920,
-      "method": "00732c10",
-      "symbol": "?FUN_00732c10@seed_00732c10@@YA_NXZ",
-      "symbol_prefix": "?FUN_00732c10@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 11,
-      "body_sha256": "102f5d628e10255c62a1d20c13db848d464b519ee482703e92f4df6efc78acff",
-      "padding_bytes": 5,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "d204c7a08646de847ee647d86208c3ae4cca68156fb222bcfdb46ba6ae6194a5",
-      "relocations": [
-        {
-          "offset": 1,
-          "kind": 20,
-          "symbol": "?FUN_00715e20@seed_00732c10@@YAIXZ",
-          "target": 7429664,
-          "addend": 0,
-          "resolved": 4294849035
-        }
-      ],
-      "source_sha256": "5a903e01930388bd1a4d2994ca7a16b64638ddf89b621067e147656cf6ae4497",
-      "source": "src/recovered/classes/WorldDominationTour__Voices__Anim/00732c10.cpp",
-      "source_order": 7119,
-      "population": "population-42",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "ghidra-seed-sweep"
-    },
-    {
       "entry": 7568128,
       "method": "00737b00",
       "symbol": "?FUN_00737b00@seed_00737b00@@YIPADPAD@Z",

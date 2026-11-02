@@ -4971,48 +4971,6 @@
       "source_order": 111477
     },
     {
-      "entry": 7547616,
-      "method": "00732ae0",
-      "symbol": "?FUN_00732ae0@seed_00732ae0@@YIXPAI@Z",
-      "symbol_prefix": "?FUN_00732ae0@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 11,
-      "body_sha256": "2124bdabe5ce4f171c06e3af6a6efa687b6dc5a1ac24f6b0130572847870f149",
-      "padding_bytes": 5,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "787610eb7090840b2a94079a9c94e524bd82604206dc30f02a4e90b5cff28c6f",
-      "relocations": [
-        {
-          "offset": 2,
-          "kind": 6,
-          "symbol": "_PTR_FUN_007af40c",
-          "target": 8057868,
-          "addend": 0,
-          "resolved": 8057868
-        },
-        {
-          "offset": 7,
-          "kind": 20,
-          "symbol": "?FUN_005ac690@seed_00732ae0@@YIXXZ",
-          "target": 5949072,
-          "addend": 0,
-          "resolved": 4293368741
-        }
-      ],
-      "source_sha256": "444d0c57c15cc53a283e8427b17133286e59a59ba350ce0c4a79a3305e1ddfa0",
-      "source": "src/recovered/classes/WorldDominationTour__Voices__Anim/00732ae0.cpp",
-      "population": "population-2913",
-      "padding_sha256": "18e800921eac4b6ea289ffc28abb7e2d58e7521d3568dcacd9e3aa55096f35de",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 111478
-    },
-    {
       "entry": 7547952,
       "method": "00732c30",
       "symbol": "?FUN_00732c30@seed_00732c30@@YIXPAI@Z",
