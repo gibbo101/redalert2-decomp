@@ -99,4 +99,10 @@ extern OptionsClass Options;                // 0x00A40B18
 // [Video] AllowModeToggle (0x00A40D0B; not an OptionsClass member).
 extern bool unknown_allow_mode_toggle_a40d0b;
 
+// Hot key control values (virtual key, HOTKEYF_SHIFT/CONTROL/ALT/EXT in the high byte) and key
+// numbers (KN_SHIFT_BIT/CTRL/ALT 0x100/0x200/0x400, 0x1000 extended) (Options.CPP; nothing calls the
+// out-of-line copies, the keyboard dialog 0x005D97A0 expands both).
+int __fastcall Hotkey_To_Key(int hotkey);                       // 0x005D87D0 (an extended key gives 0)
+unsigned short __fastcall Key_To_Hotkey(unsigned short key);    // 0x005D8800
+
 #endif

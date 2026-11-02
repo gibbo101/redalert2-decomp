@@ -256,6 +256,10 @@ public:
         }
         return IndexTable[position].Data;
     }
+#ifdef INDEX_DECLARE_FETCH_ID_BY_POSITION
+    // The ID of the record at a position of the table (no re-sort: callers fetch the record first).
+    INDEX Fetch_ID_By_Position(int position) const { return IndexTable[position].ID; }
+#endif
     void Clear()
     {
         delete[] IndexTable;
