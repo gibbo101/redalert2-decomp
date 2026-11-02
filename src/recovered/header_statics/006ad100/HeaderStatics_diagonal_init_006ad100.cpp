@@ -1,3 +1,4 @@
+#define RA2_CDTIMER_STOP_SOURCE
 // Header-static dynamic initializers of the unit at 0x006AD100 and the
 // unit's TActionClass list; the other drafts of this plan are emitted by this file.
 #include "shared/unknown_geometry.hpp"

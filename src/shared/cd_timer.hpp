@@ -48,6 +48,10 @@ public:
     }
 #endif
     bool Is_Active() const { return Started != -1; }
+#ifdef RA2_CDTIMER_STOP_SOURCE
+    // The owning unit supplies the original out-of-line specialization.
+    void Stop();
+#else
     void Stop()
     {
         if (Started != -1) {
@@ -55,6 +59,7 @@ public:
             Started = -1;
         }
     }
+#endif
     void Start()
     {
         if (Started == -1) {
