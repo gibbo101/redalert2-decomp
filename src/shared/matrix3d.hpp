@@ -73,6 +73,7 @@ public:
     float Get_Z_Rotation() const;                                       // 0x00590C70
     Vector3 Rotate_Vector(Vector3 const &vector) const;                 // 0x00590CD0
     void Look_At(Vector3 const &position, Vector3 const &target, float roll);   // 0x00590D50
+    void Obj_Look_At(Vector3 const &position, Vector3 const &target, float roll);   // 0x00590F10
 
     float Row[3][4];    // +0x00
 };
