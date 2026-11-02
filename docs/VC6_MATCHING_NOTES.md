@@ -1041,3 +1041,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
   - A bool local read before an unrelated store keeps identical stores in two branches from merging.
   - A static inline helper in an argument list is expanded before the argument pushes.
   - A rebuilt temporary used as an operator operand moves member-load choices across statements, not only within its own statement.
+- **Final-pass levers** (Scout561-563).
+  - A static inline bounds helper adds an /Ob2 site after a `new`, which pushes a nested VectorClass ctor out of line (Collect_Boundary_Cells 0x56ED10).
+  - A member-wise difference stored Y, X, Z, from a copy-initialised rebuilt `from`, splits the loop-sum fix from the subtraction load order (Find_First_Obstacle 0x4BB890).
+  - A lone float stored at frame offset 0 of a 12-byte slot is the X member of a 3D local; `Vector3 facing; facing.X = cos(...)` gave IonBlast AI the original 0xB8 frame (84.41 -> 96.30).

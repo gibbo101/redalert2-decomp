@@ -1147,3 +1147,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
   - the Matrix3D trio 99.01/97.67/96.59 (one integer op is placed among the FP ops differently);
   - PaletteName::Load 98.23 (the 0x605D80 ctor now binds byte-exact through hv/c2; pair 1 comes from Load's context);
   - Preview_Tile 81.25.
+
+## Scout557-564 (2026-11-02, late passes; landed: region unit 985 B, BombClass 640 B, Techno timers 42 B, Matrix3D copy 18 B, UnknownBeacon 78 B, Collect_Boundary_Cells 394 B, Find_First_Obstacle 526 B)
+- IonBlast AI 0x521340: 96.30 with the original frame (Scout563 best_521340_96.30.cpp). The to_blast copy order, one slot32 register and the fabs operand order are left.
+- 0x613E50 Planning.cpp (446 B) needs ~PlanningTokenClass 0x612D20 first (Scout561 w/seed). PaletteName::Load 98.23: pair 1 comes from Load's register context. Get_Input 82.81: it matches TibSun statement for statement. Add_Compressed_Events 95.72, One_Time 94.19, SpotLight 0x5DD760 54.48, and Matrix3D 99.01/97.67/96.59 are unchanged.
+- Follow-up rename: fold unknown_timer_ac0178/ac0168 into TechnoClass::ActionLineTimer/TalkBubbleTimer.

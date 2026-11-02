@@ -90,11 +90,15 @@ public:
         }
     }
 #endif
+#ifdef RA2_WOL_DICTIONARY_KEY_SPECIALIZATIONS
+    unsigned int Key_Hash(K const &key) const;
+#else
     unsigned int Key_Hash(K const &key) const
     {
         unsigned int hash = Hash(key);
         return ((1u << Bits) - 1) & hash;
     }
+#endif
     bool Get_Pointer(K const &key, V **value) const
     {
         if (Count == 0) return false;
@@ -316,6 +320,14 @@ template<class K, class V> bool WolDictionary<K, V>::Remove_Entry(K const &key, 
         }
         if (load <= ShrinkLimit) Shrink_Table();
         return removed;
+    }
+#endif
+
+#ifdef RA2_WOL_DICTIONARY_KEY_SPECIALIZATIONS
+template<class K, class V> unsigned int WolDictionary<K, V>::Key_Hash(K const &key) const
+{
+        unsigned int hash = Hash(key);
+        return ((1u << Bits) - 1) & hash;
     }
 #endif
 
