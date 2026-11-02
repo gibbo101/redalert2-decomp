@@ -9220,31 +9220,6 @@
       "source_order": 158525
     },
     {
-      "entry": 6302352,
-      "method": "00602a90",
-      "symbol": "?Add_Field@PacketClass@@QAEXPAVPacketField_004BAD50@@@Z",
-      "symbol_prefix": "?Add_Field@PacketClass@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 16,
-      "body_sha256": "20625a1ceec25a001919476c56d766f4c75957d9467fac3f5dbe950a0acb0aad",
-      "padding_bytes": 0,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "20625a1ceec25a001919476c56d766f4c75957d9467fac3f5dbe950a0acb0aad",
-      "relocations": [],
-      "source_sha256": "6d0ff85144a7c54521f32d5f1d8375aff6d0b411ffdfd8d8846f86525faac355",
-      "source": "src/recovered/classes/PacketClass/PacketClass_Add_Field_00602a90.cpp",
-      "population": "population-3602",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 158526
-    },
-    {
       "entry": 6372192,
       "method": "00613b60",
       "symbol": "?get@Leaf_613b60@@QAEIXZ",

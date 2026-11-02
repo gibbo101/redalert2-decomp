@@ -6553,49 +6553,6 @@
       "source_order": 145771
     },
     {
-      "entry": 6302304,
-      "method": "00602a60",
-      "symbol": "??1PacketClass@@QAE@XZ",
-      "symbol_prefix": "??1PacketClass@@QAE@XZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 41,
-      "body_sha256": "1e9b89b5c6b9da1b660ae3f18e207d49829c4bf0c86ca14e81f42c0cb7daf682",
-      "padding_bytes": 7,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "c01f77cab7f960d9fd3c12c2d1d2d824688860c9a4df9459ddda1cea0fafdc54",
-      "relocations": [
-        {
-          "offset": 19,
-          "kind": 20,
-          "symbol": "??1PacketField_004BAD50@@QAE@XZ",
-          "target": 4960352,
-          "addend": 0,
-          "resolved": 4293625321
-        },
-        {
-          "offset": 25,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 1569470
-        }
-      ],
-      "source_sha256": "cd843d1b7ccd203db5992400e3b923eb024ee1a082b733f0903ee8fc9d4f5977",
-      "source": "src/recovered/classes/PacketClass/PacketClass_destructor_00602a60.cpp",
-      "population": "population-3353",
-      "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "PacketClass_destructor_00602a60",
-      "source_order": 145772
-    },
-    {
       "entry": 6358896,
       "method": "00610770",
       "symbol": "?unknown_owner_color@@YIHPAUUnknownTechno_00610770@@@Z",
