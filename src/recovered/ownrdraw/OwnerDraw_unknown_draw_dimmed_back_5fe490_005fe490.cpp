@@ -19,7 +19,7 @@ namespace OwnerDraw {
 
 // Draws area of the background surface from window's cached copy of what lies under it, dimmed by alpha;
 // the copy is taken (from the parent's cached copy or the screen) and dimmed on first use.
-void __fastcall unknown_draw_dimmed_back_5fe490(Rect const &area, HWND window, unsigned char alpha)
+void __fastcall unknown_draw_dimmed_back_5fe490(Rect const &area, HWND window, int alpha)
 {
     UnknownControlRecord *record = 0;
     UnknownControlRecord *parent_record = 0;
