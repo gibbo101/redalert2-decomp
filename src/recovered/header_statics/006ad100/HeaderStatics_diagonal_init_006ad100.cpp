@@ -1,3 +1,4 @@
+#define RA2_FIXEDSTRING_COPY_ASSIGN_SOURCE
 #define RA2_FIXEDSTRING_ASSIGN_VALUE
 #define RA2_CDTIMER_STOP_SOURCE
 // Header-static dynamic initializers of the unit at 0x006AD100 and the
