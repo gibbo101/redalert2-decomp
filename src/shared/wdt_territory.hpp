@@ -11,6 +11,9 @@
 // settings from it.
 class WDTTerritory : public ReferenceCounted {
 public:
+    WDTTerritory();                                 // 0x0072BE00 (the default settings)
+    static rc_ptr<WDTTerritory> __fastcall Create();   // 0x0072BDC0
+
     int unknown_08;                                 // +0x08 (Conflict 0x007273F0)
     char unknown_0c[0x0E - 0x0C];
     unsigned char UnitCount;                        // +0x0E (WDT:UnitCount)
