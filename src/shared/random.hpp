@@ -44,7 +44,12 @@ int Pick_Random_Number(T &generator, int minval, int maxval)
 
 class RandomClass {
 public:
+#ifdef RA2_RANDOM_UNIT
+    // Out of line in Random.cpp (0x006386F0, unreferenced); other units keep the inline copy.
+    RandomClass(unsigned seed = 0);
+#else
     RandomClass(unsigned seed = 0) : Seed(seed) {}
+#endif
 
     operator int() { return operator()(); }
     int operator()();                               // 0x00638700
