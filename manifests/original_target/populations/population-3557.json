@@ -4,8 +4,8 @@
     "id": "population-3557",
     "inventory_sha256": "752a261389b056dfed654cc4a4fac90a3d2b678f8a512208296e3e146cb786d6",
     "gaps_sha256": "e92f0c6628efceee9aafa03e62dcf9e684cecbc02fa332ae065e6348040e27d1",
-    "historical_population_sha256": "77bebbdf67858130bfadaf8d0931fce5df5f9104358d1b8bd160a98912e3496f",
-    "historical_acceptance_sha256": "9598597adca88e7bf618bb7b95c4cbc62002b75950b14a95222618d2f6c0c309"
+    "historical_population_sha256": "e8eeab3f4c0a568bccca0372453919c64a01826d76ef091e67a62d272e9bdfc0",
+    "historical_acceptance_sha256": "e9fe6fb85f05d11a7805c0ca1639dd681b944a27c3238b176bcfc15d0780f110"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10341,7 +10341,7 @@
     "?Changed@AudioLevelSet@@QAEHXZ": 4198560,
     "?Audio_Device_Release@@YIXPAUAudioDevice@@@Z": 4207376,
     "?Unlink@GenericNode@@QAEXXZ": 5856192,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?Remove@LogicClass@@QAEXPAVObjectClass@@@Z": 5497712,
     "?AI@LogicClass@@QAEXXZ": 5494928,
     "?Unknown_004361F0@BombListClass@@QAEXXZ": 4415984,

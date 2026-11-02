@@ -4,8 +4,8 @@
     "id": "population-3737",
     "inventory_sha256": "7ce51e26acb4a5391b05931f830042946dc7ff89c62075673332d99a69ed3010",
     "gaps_sha256": "d9df488936671f065b15e1e31c90f99f0b650f49a15462b2b0fa74d28271b014",
-    "historical_population_sha256": "af35bbd7065b93430b4ea8d21ffaed3a10b4be0d587aa1653cd1418a4ab9499a",
-    "historical_acceptance_sha256": "000267cd59dfba45813b35e635fb61feeecc246d3489e13e93198536a572055c"
+    "historical_population_sha256": "077b4424217cedbbaa55fb8fc5e1a4696363a106186e38e4759e4c77a98cc6cc",
+    "historical_acceptance_sha256": "d5f010b49df6dcbd64537835761508c9fd67786c55929e0c90a913560dfb6802"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -8655,7 +8655,7 @@
     "?Read_INI@UnknownPreview_0061D430@@QAE_NABVCCINIClass@@@Z": 6414032,
     "?Init@BounceClass@@QAEXABUCoordStruct@@NNNABUVector3@@N@Z": 4419008,
     "?Unlink@GenericNode@@QAEXXZ": 5856192,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?Remove@LogicClass@@QAEXPAVObjectClass@@@Z": 5497712,
     "?Unknown_004361F0@BombListClass@@QAEXXZ": 4415984,
     "?unknown_slot27@MapClass@@QAEXXZ": 5563136,

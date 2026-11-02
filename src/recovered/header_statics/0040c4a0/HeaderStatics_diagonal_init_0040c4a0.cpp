@@ -6,7 +6,6 @@
 #define VECTOR_IMPLEMENT_ALL
 #endif
 #include "shared/vector_class.hpp"
-#define LOGIC_DECLARE_VIRTUALS
 #include "shared/logic.hpp"
 // @ref ??_7LogicClass@@6B@=0079a8ec
 // @ref ??_GLogicClass@@UAEPAXI@Z=0040cb10

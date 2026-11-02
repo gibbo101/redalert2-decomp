@@ -4,8 +4,8 @@
     "id": "population-3764",
     "inventory_sha256": "f66ef8e4263bbce205b542714ca12a13b0595141a6cf755ef4b070d414aa2fe2",
     "gaps_sha256": "151403203975d53897ba428e4c24609ae9411f399586bbe8ebf7793e1b66a86c",
-    "historical_population_sha256": "53bd896cac457b51247c445efa0406bb50db971b30e8bb5d693693b2cea3c4f5",
-    "historical_acceptance_sha256": "ec50c85c5c939b02a280309eb65b93fb208889993bd306453f0a3ecd5d410fa5"
+    "historical_population_sha256": "9abb8ab132137ef11d3171924855c354d5553d9a198467be45f6cde81b03574e",
+    "historical_acceptance_sha256": "570494c908e87d82010cb88d770d69591a9892f075919bc72b5493ab02c2e185"
   },
   "references": {
     "??1Straw@@UAE@XZ": 6926352,
@@ -7573,7 +7573,7 @@
     "?Set_Rate@AudioLevel@@QAIX_JH@Z": 4223184,
     "?Init@PhoneEntryEdit@@QAEXXZ": 6351104,
     "?Init@BounceClass@@QAEXABUCoordStruct@@NNNABUVector3@@N@Z": 4419008,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?unknown_slot16@UDPInterfaceClass@@UAEHHHHH@Z": 7785792,
     "??RSystemTimerClass@@QBEJXZ": 6923312,
     "?unknown_slot40@AircraftTypeClass@@UBE_NXZ": 4308736,

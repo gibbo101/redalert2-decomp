@@ -4,8 +4,8 @@
     "id": "population-3005",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "94f1ecd745dced45d11c8dcf61c804e338e6aeda8fa74204879df6d58b9e4d98",
-    "historical_acceptance_sha256": "5f6ad5db92fc2b94e42a1aa32e1ac9e339e96ba6ba8c036d11c0f310ff051de4"
+    "historical_population_sha256": "545203108984c4b79bbc3225158c1826be5941bbd638d9a8ed6466985aa07c9c",
+    "historical_acceptance_sha256": "8ad88bb5fb92efcf8dfa2a0e816234144dcc3ef6f6ed18d316484f1e344d2f69"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5517,7 +5517,7 @@
     "__real@4@4004fc00000000000000": 7986596,
     "__real@8@3fff9999999999999800": 7986600,
     "?Unlink@GenericNode@@QAEXXZ": 5856192,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?Remove@LogicClass@@QAEXPAVObjectClass@@@Z": 5497712,
     "?AI@LogicClass@@QAEXXZ": 5494928,
     "?AI@KamikazeTrackerClass@@QAEXXZ": 5445568,

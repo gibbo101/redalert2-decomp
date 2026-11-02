@@ -4,8 +4,8 @@
     "id": "population-3640",
     "inventory_sha256": "b4f4c2350aa5ed52ee94624f4b27c8d989691e7d3acb8e99e97cc2a8748be7fe",
     "gaps_sha256": "f4a5305718e51741ea7a3dbdd4bf1a6eb33e075cdd673f6c9fe7b8e4d7377014",
-    "historical_population_sha256": "d7bc3d6178285c6b7d13c1042e66a1fc33086d5b1264f14a62a2f996630cf3d8",
-    "historical_acceptance_sha256": "eebf9478edc532313141d185d45ecc2d87a12b89c76dd87034184e7a50aa1e00"
+    "historical_population_sha256": "7e366ac0b01f5564aa5cba2a7bfc9a22c406f4d3f2396a623a93afd241a503aa",
+    "historical_acceptance_sha256": "7f317190281338b2954a8b2bbf4f780d9b909b6de4175feb0412d1014e06bf8d"
   },
   "references": {
     "?unknown_cpu_probe_77f14d@@YAEXZ": 7860557,
@@ -7438,7 +7438,7 @@
     "?unknown_slot30@MouseClass@@QAEJPAUIStream@@@Z": 5895472,
     "??_7ConvertClass@@6B@": 7987056,
     "??_GConvertClass@@UAEPAXI@Z": 4743456,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?unknown_slot27@MapClass@@QAEXXZ": 5563136,
     "?unknown_slot16@UDPInterfaceClass@@UAEHHHHH@Z": 7785792,
     "??_F?$DynamicVectorClass@I@@QAEXXZ": 7547952,

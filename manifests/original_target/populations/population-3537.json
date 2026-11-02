@@ -4,8 +4,8 @@
     "id": "population-3537",
     "inventory_sha256": "80e37858c5aef0d0528a85d4ef6b8f0d855605f3a47af94d7672ac5a41673025",
     "gaps_sha256": "931a4ad7d2af1e9806dcd1b51edd52bc979d1d6cd2fda65924492f3ed6ad0941",
-    "historical_population_sha256": "0853f6122664270b7e8e97aa98c7327188268bbfe3cc6213380a2a3a6052ffbc",
-    "historical_acceptance_sha256": "d47521fdc958f4719c8e8d07be097c30200c03086d714811c9f4e9550163a022"
+    "historical_population_sha256": "bdb36e40025b0968a2480dcc76cafd36f6582835ae9d3fbed19670930b5516aa",
+    "historical_acceptance_sha256": "42fc74e0b24fcfecbc864ebbc33e66977895c456edaf85c1d87c35ccf90b9e1d"
   },
   "references": {
     "_unknown_empty_rect": 11259392,
@@ -3898,7 +3898,7 @@
     "?Load@TiberiumClass@@UAGJPAUIStream@@@Z": 7246176,
     "?Read_INI@UnknownPreview_0061D430@@QAE_NABVCCINIClass@@@Z": 6414032,
     "?Draw_Entry@ColorListClass@@UAEXHHHHH@Z": 4708832,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?Remove@LogicClass@@QAEXPAVObjectClass@@@Z": 5497712,
     "?AI@LogicClass@@QAEXXZ": 5494928,
     "?AI@KamikazeTrackerClass@@QAEXXZ": 5445568,

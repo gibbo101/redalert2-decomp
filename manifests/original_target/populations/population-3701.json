@@ -4,8 +4,8 @@
     "id": "population-3701",
     "inventory_sha256": "d1c807fab9a78362b422c6ddb86d8f893b4d837fab7b00ae971a702769a86120",
     "gaps_sha256": "268bb79ce2f9021902d21e3b6f42af2c7dc5ed11e6dbb390d94a5b3edf913b3c",
-    "historical_population_sha256": "3dbf3fd426eac517f8730bf852f6c3f04793803b61e7fbca9120721c8e3fb90c",
-    "historical_acceptance_sha256": "8c11dcc4c0c3f6bd82b4fe842b6c59348640c47d55181f5497ec23cb55f41a46"
+    "historical_population_sha256": "50711be8bae20832ec1730becd47f02780f03d0b54d93cfe479526954096bb45",
+    "historical_acceptance_sha256": "1c6d90cf016c42b94f0a24fb876798142831dc57215700f102e601fbad513cac"
   },
   "references": {
     "_unknown_static_rect": 10754000,
@@ -3908,7 +3908,7 @@
     "??_7ConvertClass@@6B@": 7987056,
     "??_GConvertClass@@UAEPAXI@Z": 4743456,
     "?Load@TiberiumClass@@UAGJPAUIStream@@@Z": 7246176,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?AI@LogicClass@@QAEXXZ": 5494928,
     "?AI@KamikazeTrackerClass@@QAEXXZ": 5445568,
     "?unknown_slot27@MapClass@@QAEXXZ": 5563136,

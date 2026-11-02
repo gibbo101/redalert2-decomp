@@ -4,8 +4,8 @@
     "id": "population-3497",
     "inventory_sha256": "776450bd7b3e17487144eca5c9e3c23e0ba16f27b03a383f908add2dedf855d1",
     "gaps_sha256": "9ab0402cbf021f9f7ea440c05fac9113f78e6b7057fa38def1b5adefcc5e82e2",
-    "historical_population_sha256": "f8d6197ec5f3bdbf8df5b0dc599f150f60c33659fdc13707df1e1d84c24a1506",
-    "historical_acceptance_sha256": "bc89c5356111c84d3ce675bccccab5be60c4b60edbfe0b87f7ed0cd5cda55156"
+    "historical_population_sha256": "aeb70f54e8f1327b79c0f3d2ed40a34803b74528a4d125360c9d528abc4bd9ab",
+    "historical_acceptance_sha256": "50c3fc2a971f0a3b925a1992202efcf2550fb40935dddf3006615ce33ebff738"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1636,7 +1636,7 @@
     "?Unknown_0053D840@@YAIXZ": 5494848,
     "?AI@LogicClass@@QAEXXZ": 5494928,
     "?Environment_AI@LogicClass@@QAEXXZ": 5496752,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?AI_Submitted_Objects@@YAXXZ": 5497216,
     "?Remove@LogicClass@@QAEXPAVObjectClass@@@Z": 5497712,
     "__DAT_00a523b0": 10822576,
@@ -12052,8 +12052,8 @@
     {
       "entry": 5497104,
       "method": "0053e110",
-      "symbol": "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z",
-      "symbol_prefix": "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z",
+      "symbol": "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z",
+      "symbol_prefix": "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z",
       "options": [
         "/O2",
         "/Ob2",

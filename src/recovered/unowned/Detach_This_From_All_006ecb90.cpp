@@ -18,7 +18,7 @@
 // @ref ?Unknown_00498F10@DisplayClass@@QAEXPBVCell@@@Z=00498f10
 // @ref ?unknown_gas_cloud_system_a40d20@@3PAVParticleSystemClass@@A=00a40d20
 // @ref ?Logic@@3VLogicClass@@A=00832470
-// @ref ?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z=0053e110
+// @ref ?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z=0053e110
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?Detach@RulesClass@@QAEXPBVAbstractClass@@_N@Z=00651290
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c

@@ -4,8 +4,8 @@
     "id": "population-3681",
     "inventory_sha256": "72f1e4aa573bfc43036ef4b8a24e4fd4dfc529b146b1c61fb2b8852aabc8663e",
     "gaps_sha256": "544a84c492d4e835996b5afda07419a8eb9796d57e185db3ed6370dc877bffbe",
-    "historical_population_sha256": "3861575f1155ee05641c1c6495f53504fe779bea9d881ef64247939a9d84ee8e",
-    "historical_acceptance_sha256": "b049c2d5c0974b9d1b4d73f7a5f0f27d11bb60db6e9203b90b7bc6377bded178"
+    "historical_population_sha256": "13ddfa73c1c6ea4dd6c95b706c2dafe315064f31eaab7eb5120bc0569c624650",
+    "historical_acceptance_sha256": "1e245c1d167d5358fd5d79d78b1301e0bc35d52f1825f3816e6ac0d435681000"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7690,7 +7690,7 @@
     "?Load@TiberiumClass@@UAGJPAUIStream@@@Z": 7246176,
     "?Init@BounceClass@@QAEXABUCoordStruct@@NNNABUVector3@@N@Z": 4419008,
     "?Changed@AudioLevelSet@@QAEHXZ": 4198560,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?Remove@LogicClass@@QAEXPAVObjectClass@@@Z": 5497712,
     "?AI@LogicClass@@QAEXXZ": 5494928,
     "?AI@KamikazeTrackerClass@@QAEXXZ": 5445568,

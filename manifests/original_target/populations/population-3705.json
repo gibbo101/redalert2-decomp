@@ -4,8 +4,8 @@
     "id": "population-3705",
     "inventory_sha256": "2c4f678c172584a8f5e14031ac2ff95ac55d37f2f79253d1d5acb1e4f227428a",
     "gaps_sha256": "989c432a32114f4054f31fbf0eeaac09781ad0cf2f5d242c002140d2715fd0b2",
-    "historical_population_sha256": "59c297fcd7488074df5dc5111c4b629658677b5c7334e32fd66683b104fa539b",
-    "historical_acceptance_sha256": "37b29f620c4c0b431030fb131f8a3c9959c3e7e2a4d00dbf671d3cacaf8cd675"
+    "historical_population_sha256": "776782f2debcf71d79bf53779d07b3ad0b30f118893f8830251c564aa705e7b2",
+    "historical_acceptance_sha256": "c10d5293c86f62003ad4234f1180226334ff99021570e6a74c1efd7aced58142"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -6409,7 +6409,7 @@
     "?Load@TiberiumClass@@UAGJPAUIStream@@@Z": 7246176,
     "?Init@BounceClass@@QAEXABUCoordStruct@@NNNABUVector3@@N@Z": 4419008,
     "?Length@Vector3@@QBEMXZ": 4421392,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?AI@LogicClass@@QAEXXZ": 5494928,
     "?AI@KamikazeTrackerClass@@QAEXXZ": 5445568,
     "?AI@TemporalClass@@UAEXXZ": 7217712,

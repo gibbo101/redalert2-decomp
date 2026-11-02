@@ -4,8 +4,8 @@
     "id": "population-3779",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "1ff20cf35b810fb37f91d7bd990614a160f1627c79888ec6f9e26da858564122",
-    "historical_acceptance_sha256": "7a2533dda886019033dc50a996335bc0b360472c4b9b6cdb8df33a934f221ec5"
+    "historical_population_sha256": "65520f54e57ca871e69d486680a0565f44772284c4f80ac691a405587fb04077",
+    "historical_acceptance_sha256": "546eca6270fd93575be53969bf444070b886d7c2b05bb0a6a960811a6650aa99"
   },
   "references": {
     "??_7LogicClass@@6B@": 7973100,
@@ -3906,7 +3906,6 @@
     "__real@4@4004fc00000000000000": 7986596,
     "__real@8@3fff9999999999999800": 7986600,
     "?Environment_AI@LogicClass@@QAEXXZ": 5496752,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
     "?AI_Submitted_Objects@@YAXXZ": 5497216,
     "?Remove@LogicClass@@QAEXPAVObjectClass@@@Z": 5497712,
     "?AI@LogicClass@@QAEXXZ": 5494928,
@@ -5686,7 +5685,7 @@
           "resolved": 8594424
         }
       ],
-      "source_sha256": "a4cc0680b408b58f62126e5bbf92c28191495da5b846ad615add4ff44bdeabb3",
+      "source_sha256": "6bef21f663820c1365f837aa763f6765aafe6a41e414841335edfcc64546cfe6",
       "source": "src/recovered/header_statics/0040c4a0/HeaderStatics_diagonal_init_0040c4a0.cpp",
       "population": "population-3779",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",

@@ -11,15 +11,8 @@ class LogicClass : public LayerClass {
 public:
     void AI();                                              // 0x0053D890
     void Environment_AI();                                  // 0x0053DFB0
-#ifdef LOGIC_DECLARE_VIRTUALS
-    // The vtable 0x0079A8EC as the unit defining Logic (0x0040C4A0) emits it: Submit is overridden (slot 7,
-    // 0x0053E330) and Detach is virtual (slot 10; Westwood LOGIC.H). Declared this way only there: the
-    // other includers keep the direct member names their accepted sources were bound with.
-    virtual bool Submit(ObjectClass *object, bool sort = false);   // 0x0053E330
-    virtual void Detach(AbstractClass const *target, bool all);    // 0x0053E110
-#else
-    void Detach(AbstractClass const *target, bool all);    // 0x0053E110
-#endif
+    virtual bool Submit(ObjectClass *object, bool sort = false);   // slot 7, 0x0053E330
+    virtual void Detach(AbstractClass const *target, bool all);    // slot 10, 0x0053E110 (Westwood LOGIC.H)
     void Remove(ObjectClass *object);                       // 0x0053E370
 };
 extern LogicClass Logic;                                    // 0x00832470

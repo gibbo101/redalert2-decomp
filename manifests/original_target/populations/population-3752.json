@@ -4,8 +4,8 @@
     "id": "population-3752",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "027bccd3350e47134c03cdae1505f04c690d0b62892b0fdcb3e3ec17cf86158d",
-    "historical_acceptance_sha256": "51a11d55133efb5dfdae54326e24b292a91fcf770b304bee7d0440e068c0a344"
+    "historical_population_sha256": "baa0004610c073a432704508eb87e33f35737936165db5c2b0627301322f7d10",
+    "historical_acceptance_sha256": "3121ccfd0beee29f3eb83c454fa6f1596cecf5df72efd05b19f55fce803a1be8"
   },
   "references": {
     "?BombList@@3VBombListClass@@A": 8594144,
@@ -6644,7 +6644,7 @@
     "__real@8@3fff9999999999999800": 7986600,
     "?Unlink@GenericNode@@QAEXXZ": 5856192,
     "?Environment_AI@LogicClass@@QAEXXZ": 5496752,
-    "?Detach@LogicClass@@QAEXPBVAbstractClass@@_N@Z": 5497104,
+    "?Detach@LogicClass@@UAEXPBVAbstractClass@@_N@Z": 5497104,
     "?AI_Submitted_Objects@@YAXXZ": 5497216,
     "?Remove@LogicClass@@QAEXPAVObjectClass@@@Z": 5497712,
     "?AI@LogicClass@@QAEXXZ": 5494928,
