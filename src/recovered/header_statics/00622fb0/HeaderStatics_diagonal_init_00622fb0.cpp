@@ -4,6 +4,9 @@
 // drafts of this plan are emitted by these includes.
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
+// Queue.CPP's file statics (0x00623210-0x00623370 drafts) are declared with
+// their constructors and destructors only for this unit.
+#define RA2_QUEUE_STATICS
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410

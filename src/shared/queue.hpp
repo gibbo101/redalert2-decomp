@@ -205,11 +205,20 @@ int __fastcall Add_Compressed_Events(void *buf, int bufsize, int frame_delay, in
 // A count-up timer: the time since Started (Process_Receive_Packet 0x006265C0 reads it).
 struct UnknownElapsedTimer {
     UnknownElapsedTimer() : Started(Timer) {}
+#ifdef RA2_QUEUE_STATICS
+    // Empty but user-declared: Queue.CPP's static timer 0x00A780C0 registers the
+    // atexit destructor 0x006232C0 (a bare ret). Declared only for Queue.CPP.
+    ~UnknownElapsedTimer() {}
+#endif
     long Started;                       // +0x00
     SystemTimerClass Timer;             // +0x04
 };
+// Frame-sync records (0x00AABCF0; 7, built by 0x00623230).
+extern UnknownFrameTiming unknown_timing_aabcf0[7];
 // The other players' frame-sync records (0x00AABDD0; 7, built by 0x006232D0).
 extern UnknownFrameTiming unknown_their_timing_aabdd0[7];
+// A count-up timer started at startup (0x00A780C0, built by 0x006232A0).
+extern UnknownElapsedTimer unknown_timer_a780c0;
 // The commands sent so far (0x00AABE78; Red Alert's Queue_AI_Multiplayer static my_sent).
 extern unsigned short unknown_my_sent_aabe78;
 // The session's meta packet buffer and its size (0x00A3F81A, 0x00A3FA48: session +0x2582,
@@ -390,6 +399,30 @@ struct UnknownSyncState {
     UnknownSyncLayerObject *Logic;      // +0x330
     char *Buffer;                       // +0x334 the records (allocated on first use)
     unsigned int BufferSize;            // +0x338 (grown in 64K steps)
+#ifdef RA2_QUEUE_STATICS
+    // Out of line at 0x006231A0 and 0x006231F0 (accepted elsewhere); Queue.CPP's
+    // initializer 0x00623320 and atexit destructor 0x00623370 expand them.
+    // Declared only for Queue.CPP (RA2_QUEUE_STATICS, set by its first source).
+    UnknownSyncState()
+    {
+        Objects = 0;
+        ObjectCount = 0;
+        for (int index = 0; index < 5; index++) {
+            Layers[index] = 0;
+            LayerCounts[index] = 0;
+        }
+        Logic = 0;
+        LogicCount = 0;
+        BufferSize = 0x20000;
+        Buffer = 0;
+    }
+    ~UnknownSyncState()
+    {
+        if (Buffer != 0) {
+            operator delete(Buffer);
+        }
+    }
+#endif
 };
 #pragma pack(pop)
 extern UnknownSyncState unknown_sync_states_a780d8[256];
