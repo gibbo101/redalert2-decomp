@@ -35,6 +35,11 @@ public:
 struct UnknownControlRecord {
     // Zeroes the record: kind 0xB at +0x68, the game font at +0x64, a new WideString at +0x3C, -1 at +0x90 (0x006002F0).
     UnknownControlRecord();
+#ifdef RA2_OWNERDRAW_RECORD_DTOR
+    // Frees the owned text, the node list and the WideString (inline, defined beside its first user in ownrdraw.cpp;
+    // guarded: only the ownrdraw.cpp population, whose header-statics source defines the macro, declares it).
+    ~UnknownControlRecord();
+#endif
     // Frees list_34 and replaces it with copies of source's nodes (0x00600460; inline below).
     void Copy_List_600460(UnknownNode_006003d0 const *source);
     // Copies other except the owned pointers: text_28 and list_34 are deep copies, unknown_3c stays (0x006005C0).
@@ -115,6 +120,10 @@ public:
     bool Get(unsigned int const &key, UnknownControlRecord *&value) const;
     // Doubles the bucket count and rehashes every node (0x00601F70).
     void Resize();
+#ifdef RA2_OWNERDRAW_RECORD_DTOR
+    // Removes key, passing its record back in value; true when it was there (0x00601C50, not yet recovered).
+    bool Remove(unsigned int const &key, UnknownControlRecord &value);
+#endif
 };
 extern UnknownControlIndex unknown_registry_a73640;
 // A control's registry record through the out-of-line Get, or null (0x005FC020).
