@@ -163,6 +163,9 @@ public:
                                                Wstring const &shape_prefix, Wstring const &name_prefix);   // 0x00730B80
     void Create_Owner_Anim(MSEngine *engine, ConvertClass *drawer, Point2D const &offset);      // 0x00730E00 (name hypothesis)
     void Create_Highlight_Anim(MSEngine *engine, ConvertClass *drawer, Point2D const &offset);  // 0x00730EC0 (name hypothesis)
+    // Shows the owner overlay frame for state (1-3; anything else hides it),
+    // redraws the old and new overlay area and runs the engine one frame.
+    void Set_Owner_State(int state, MSEngine *engine, bool wait);  // 0x00730FB0 (TibSun name)
     void Show_Highlight(bool arg, MSEngine *engine);                // 0x00731120 (name hypothesis)
     void Set_unknown_2c(int value);                                 // 0x00731190
     int Take_unknown_2c();                                          // 0x007311A0 (returns and clears)
@@ -172,7 +175,7 @@ public:
     TerritoryPoint Target;                                          // +0x10
     TerritoryPoint Origin;                                          // +0x18
     Wstring ShapeName;                                              // +0x20
-    MSAnim *OwnerAnim;                                              // +0x24
+    MSOverlayAnim *OwnerAnim;                                       // +0x24
     MSAnim *HighlightAnim;                                          // +0x28
     int unknown_2c;                                                 // +0x2C
 };

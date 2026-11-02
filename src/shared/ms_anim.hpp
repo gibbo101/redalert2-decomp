@@ -117,6 +117,11 @@ public:
     virtual bool Unknown_Slot7();                               // 0x005AD8C0
     virtual void Unknown_Slot8(int unknown1);                   // 0x005AD840
 
+    // Restart the fade at a new frame / at the current one (TibSun names;
+    // both clear unknown_40; accepted as seeds Leaf_5ad820/Leaf_5ad810).
+    void Set_Frame(unsigned frame);                             // 0x005AD820
+    void Restart();                                             // 0x005AD810
+
     bool unknown_48;            // +0x48
 };
 
