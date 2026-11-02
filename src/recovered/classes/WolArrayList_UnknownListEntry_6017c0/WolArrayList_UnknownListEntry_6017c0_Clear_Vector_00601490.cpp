@@ -13,6 +13,8 @@ struct UnknownListEntry_6017c0 {
     int unknown_10;
     int unknown_14;
     UnknownListEntry_6017c0() { unknown_00 = 0; unknown_0c = -1; unknown_10 = 0; unknown_14 = -1; }
+    // Member-wise copy, out of line (0x00601780).
+    UnknownListEntry_6017c0(UnknownListEntry_6017c0 const &other);
 };
 
 template<> void WolArrayList<UnknownListEntry_6017c0>::Clear_Vector()

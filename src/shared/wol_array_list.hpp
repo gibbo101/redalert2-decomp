@@ -33,6 +33,30 @@ public:
     bool Shrink_Vector();
     // wlib clear() kept out of line (explicit specializations; ownrdraw.cpp's 0x00601490).
     void Clear_Vector();
+#ifdef RA2_WOL_ARRAY_LIST_ASSIGN
+    // wlib ArrayList(ArrayList &other) and operator= (ownrdraw.cpp's 0x006025A0 expands both; guarded: only the
+    // ownrdraw.cpp population, whose header-statics source defines the macro, declares them).
+    // wlib ArrayList::add(item, index) with the out-of-line growVector.
+    char Add_Vector(T const &item, int index) {
+        if (index > Count) index = Count;
+        if (index >= Capacity) Grow_Vector();
+        if (Count >= Capacity) Grow_Vector();
+        if (index < Count) memmove(Items + index + 1, Items + index, (Count - index) * sizeof(T));
+        new (Items + index) T(item);
+        ++Count;
+        return 1;
+    }
+    WolArrayList(WolArrayList const &other) : Count(0), Capacity(0), Items(0) { *this = other; }
+    WolArrayList &operator=(WolArrayList const &other) {
+        T node;
+        Clear();
+        for (int i = 0; i < other.Count; ++i) {
+            if (i >= 0 && i < other.Count) node = other.Items[i];
+            Add_Vector(node, Count);
+        }
+        return *this;
+    }
+#endif
     bool Grow() {
         if (Count < Capacity) return false;
         int capacity = Count * 2;

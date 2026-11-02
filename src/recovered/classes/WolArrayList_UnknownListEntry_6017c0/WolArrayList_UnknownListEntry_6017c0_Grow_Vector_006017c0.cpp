@@ -9,5 +9,14 @@
 
 template<> bool WolArrayList<UnknownListEntry_6017c0>::Grow_Vector()
 {
-    return Grow();
+    if (Count < Capacity) return false;
+    int capacity = Count * 2;
+    if (capacity < 10) capacity = 10;
+    UnknownListEntry_6017c0 *items = (UnknownListEntry_6017c0 *)operator new(capacity * sizeof(UnknownListEntry_6017c0));
+    memset(items, 0, capacity * sizeof(UnknownListEntry_6017c0));
+    if (Items) memcpy(items, Items, Count * sizeof(UnknownListEntry_6017c0));
+    operator delete(Items);
+    Items = items;
+    Capacity = capacity;
+    return true;
 }
