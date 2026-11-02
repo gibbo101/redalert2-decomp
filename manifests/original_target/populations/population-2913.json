@@ -5181,40 +5181,6 @@
       "source_order": 111483
     },
     {
-      "entry": 7771776,
-      "method": "00769680",
-      "symbol": "?FUN_00769680@seed_00769680@@YAPAEXZ",
-      "symbol_prefix": "?FUN_00769680@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "e375e69083b31c802ff480f280d33cd5c242e1e1f73a68353eb83ca22e2fa97a",
-      "padding_bytes": 10,
-      "full_extent_bytes": 16,
-      "full_extent_sha256": "3bfd93a4412b942848206bafcd75d906a47088be868b94509895b2c7f0fb3f7d",
-      "relocations": [
-        {
-          "offset": 1,
-          "kind": 6,
-          "symbol": "_DAT_00b2ad88",
-          "target": 11709832,
-          "addend": 0,
-          "resolved": 11709832
-        }
-      ],
-      "source_sha256": "70ebe25606cb6a6aa94d0b58a668f4a06f4c8af4a792307d36fe3f2399ca082a",
-      "source": "src/recovered/00769680.cpp",
-      "population": "population-2913",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 111484
-    },
-    {
       "entry": 7874972,
       "method": "0078299c",
       "symbol": "?FUN_0078299c@seed_0078299c@@YAXXZ",

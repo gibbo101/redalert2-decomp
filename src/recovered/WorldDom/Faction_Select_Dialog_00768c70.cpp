@@ -15,13 +15,11 @@ int __fastcall Run_Control_Dialog_006011a0(int id, DLGPROC procedure, OwnerDraw:
 
 namespace WorldDominationTour {
 
-// Loads one image file unless the image is already set.
+// Loads one image file into image (the constructor skips images already set).
 static void Load_Image(Surface *&image, char const *filename)
 {
-    if (image == 0) {
-        CCFileClass file(filename);
-        image = unknown_load_pcx_60d110(&file, 0, 0, 0);
-    }
+    CCFileClass file(filename);
+    image = unknown_load_pcx_60d110(&file, 0, 0, 0);
 }
 
 inline FactionSelectDialogControl::FactionSelectDialogControl() :
@@ -30,9 +28,15 @@ inline FactionSelectDialogControl::FactionSelectDialogControl() :
     AlliedImage(0),
     SovietImage(0)
 {
-    Load_Image(NoneImage, "WDTFSBSm.pcx");
-    Load_Image(AlliedImage, "WDTFSAsm.pcx");
-    Load_Image(SovietImage, "WDTFSSsm.pcx");
+    if (NoneImage == 0) {
+        Load_Image(NoneImage, "WDTFSBSm.pcx");
+    }
+    if (AlliedImage == 0) {
+        Load_Image(AlliedImage, "WDTFSAsm.pcx");
+    }
+    if (SovietImage == 0) {
+        Load_Image(SovietImage, "WDTFSSsm.pcx");
+    }
     Current = NoneImage;
 }
 

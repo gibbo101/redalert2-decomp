@@ -12125,39 +12125,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 7771760,
-      "method": "769670",
-      "symbol": "?Current_WDT_Campaign_00769670@@YIABV?$rc_ptr@VCampaign@WorldDominationTour@@@@XZ",
-      "symbol_prefix": "?Current_WDT_Campaign_00769670@@",
-      "options": [
-        "/O1",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 6,
-      "body_sha256": "0b1250c2a291c574d579cc8add72d375f4b7eeb18699b505972c53be1a8059f4",
-      "padding_bytes": 0,
-      "full_extent_bytes": 6,
-      "full_extent_sha256": "0b1250c2a291c574d579cc8add72d375f4b7eeb18699b505972c53be1a8059f4",
-      "relocations": [
-        {
-          "offset": 1,
-          "kind": 6,
-          "symbol": "?current_campaign_00b2ad78@@3V?$rc_ptr@VCampaign@WorldDominationTour@@@@A",
-          "target": 11709816,
-          "addend": 0,
-          "resolved": 11709816
-        }
-      ],
-      "source": "src/recovered/unowned/Current_WDT_Campaign_00769670.cpp",
-      "source_sha256": "67b15aa3998fd8bc9c88871f0d84d9622a8883a5da2c03bd449471537a199d2c",
-      "source_order": 6656,
-      "population": "population-01",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 7799856,
       "method": "770430",
       "symbol": "?get@Leaf_770430@@QAEIXZ",
