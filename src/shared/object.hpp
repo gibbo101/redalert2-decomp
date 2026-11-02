@@ -109,6 +109,11 @@ extern DynamicVectorClass<BombClass *> unknown_BombClass_list_0084eb78;
 // 0x008322E0; TechnoClass slots 52 and 53 leave and join the second list).
 class BombListClass {
 public:
+#ifdef BOMB_LIST_DECLARE_LIFETIME
+    // Only BombList's definition (0x0040B450 / 0x0040B4D0) builds or destroys a list.
+    BombListClass() : unknown_30(100) {}
+    ~BombListClass() { Clear(); }
+#endif
     void Unknown_004361F0();                                    // 0x004361F0 (the per-frame update; not recovered)
     void Add_Bomb(TechnoClass *owner, ObjectClass *target);     // 0x00436470 (an infantry plants a timed bomb on target)
     void Unknown_00436630(BombClass *bomb);                     // 0x00436630 (Bombs.Add)
