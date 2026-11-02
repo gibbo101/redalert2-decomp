@@ -29,7 +29,10 @@ public:
 
     // Numbers the tubes whose entry cell can be entered and deletes the rest (0x006EF400).
     static void Update_All_Indexes();
+    // TibSun Not_In_Tube: false when the cell lies on the path after the entry cell (0x006EF740).
     bool unknown_6ef740(Cell const &cell) const;      // 0x006EF740
+    // Appends a facing to the path (at most 99) and moves the exit cell (0x006EF7D0).
+    void Add_Direction(int facing);
     // Writes the tunnels (0x006EF480; "%d,%d,%d,%d,%d" entries; Write_Scenario_INI).
     static void __fastcall Write_INI(CCINIClass &ini);
     // Reads the [Tubes] entries (0x006EF5C0; "enter x,y,facing,exit x,y,directions").
