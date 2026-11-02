@@ -1120,3 +1120,13 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout545 (2026-11-02, closed; 0 B)
 - LineTrail::Draw 0x5395C0: 96.94. VC6 adds the extra &current->Value register whenever the entry block both assigns current and reads Value. The 83.67 family (Value read through next at the loop bottom) avoids it but leaves current in ebx; resume from Scout545 w/lt/mA1.
 - Planning_Same_Selection_Path 0x615DE0: 85.23. It needs `@ref ??_C@_0BK@INKB@MSG?3PlanningModeHeteroSel?$AA@=007ebdc0`.
+
+## Scout546 (2026-11-02, closed; 0 B)
+- Wall_Update 0x475960: 61.27 -> 69.97 (Scout546 w/wx1.cpp; a member-wise Union result and pointer loops). The 73.08 probe (wy3) shows the original loop body has about three more cheap inline calls, probably TibSun-style accessors. The Union arguments are still called in the wrong order. Assigned to Scout550.
+- IonBlast AI 0x521340: 79.38 (the vector3 double-divisor operator/ needs VECTOR3_DECLARE_WWMATH; the dead float stores are not reproduced; frame 0xA8 vs 0xB8).
+- Wide_Area_Damage 0x47F6E0: 75.89. The original uses all 0x44 frame bytes where ours has 4 bytes of padding; a double probably needs a real stack home in the loop.
+- Tool caution: diff_candidate runs share build/diff/<entry>, so run them serially.
+
+## Scout548 (2026-11-02, closed; 0 B)
+- Get_Obstacle 0x4BBAF0: 97.38. Diagnostics show VC6 always gives a read-only call-result temporary edi here; only a sub/add destination gets ebx. No source form found that puts the original's read-only temporary in ebx; probably unreachable from source as tried. Park.
+- Fill_Port 0x66D5A0: 88.15 joined (`ModemCount++ + 5`, Scout548 w/fp_z4.cpp). The scratch-register rotation is now in step after 0x13E; the original's `add ecx,5 ... inc dword ptr` pair and the eax/ecx swap at 0xCD-0xE2 are left.
