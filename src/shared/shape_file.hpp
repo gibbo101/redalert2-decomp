@@ -69,7 +69,14 @@ struct ShapeFileStruct {
         if (Is_Shape_Index_Valid(frame)) return &Frames[frame];
         return 0;
 #else
+#ifdef RA2_SHAPE_FRAME_RESULT
+        ShapeFileFrameStruct const *record;
+        if (frame < (unsigned)FrameCount) record = &Frames[frame];
+        else record = 0;
+        return record;
+#else
         return frame < (unsigned)FrameCount ? &Frames[frame] : 0;
+#endif
 #endif
     }
 #endif
