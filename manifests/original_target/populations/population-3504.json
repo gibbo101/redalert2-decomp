@@ -4,8 +4,8 @@
     "id": "population-3504",
     "inventory_sha256": "616419058893e8531776b75b9dc6bdcaff78f9fa97a77b496afb2ef4682addd5",
     "gaps_sha256": "ddc6eea8e28cf0df2b8d65b49b1a5ae1d93341b43c00233fa2d79ac579b888bd",
-    "historical_population_sha256": "e80b0ca99f4b07697b5debae95e6dde77dc244d1b8322c6560bfd99d6b960c6e",
-    "historical_acceptance_sha256": "23a148ea9ded9b3e34ce378b63afde921788286ad20a7cf724cd213460f4696e"
+    "historical_population_sha256": "b09fcee83243aa09a2dce559ff9ebe2c2a27c85b3fd3ed769ef6fa6ff55f32ed",
+    "historical_acceptance_sha256": "f2464b9463e5dd806033118ef31b4e4ac14ca16f1b2b8990cb229c1333e62cbf"
   },
   "references": {
     "_unknown_empty_rect": 10950664,
@@ -4141,7 +4141,7 @@
     "__real@8@4004d800000000000000": 8045168,
     "??0UnknownBeacon@@QAE@XZ": 4381152,
     "??1Unknown84E8D0@@QAE@XZ": 4382976,
-    "?Unknown_0042E740@Unknown84E8D0@@QAE_NHHH@Z": 4384576,
+    "?Unknown_0042E740@Unknown84E8D0@@QAE_NUCoordStruct@@@Z": 4384576,
     "?Unknown_0042E990@Unknown84E8D0@@QAEXHH@Z": 4385168,
     "?Load@GraphicMenu@@SIPAV1@AAVINIClass@@ABVWstring@@@Z": 5104512,
     "__imp__BinkGetError@0": 7972236,

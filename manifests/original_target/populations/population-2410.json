@@ -4,8 +4,8 @@
     "id": "population-2410",
     "inventory_sha256": "10af80db1a6d38c4414efdf5250c525bf160cf73e2cb01c0f70b3c480e5fcbfd",
     "gaps_sha256": "e8c2996cdb98f3060894f657a56560081bc5b590cafd16f914ae0b29f4a590e1",
-    "historical_population_sha256": "c56d21c22089471e31c7b65b2767023686c0f60bc97df89ee8f645f1360720e2",
-    "historical_acceptance_sha256": "6463d2e9b35358faebdf9f22634b58af3f29396fb0f9c2f8af8a92fcd497ad95"
+    "historical_population_sha256": "6e7f631f69ece22ffa8af748e807048a1b0da4a2e010996425c9f93b939f0aab",
+    "historical_acceptance_sha256": "e2b3d7a80de33b4da7b229b6f06386a7f29883000b23ce2c06803a9829c4375d"
   },
   "references": {
     "??_7CNetUtilEventSink@@6B@": 8058944,
@@ -5666,7 +5666,7 @@
     "__real@8@4004d800000000000000": 8045168,
     "??0UnknownBeacon@@QAE@XZ": 4381152,
     "??1Unknown84E8D0@@QAE@XZ": 4382976,
-    "?Unknown_0042E740@Unknown84E8D0@@QAE_NHHH@Z": 4384576,
+    "?Unknown_0042E740@Unknown84E8D0@@QAE_NUCoordStruct@@@Z": 4384576,
     "?Unknown_0042E990@Unknown84E8D0@@QAEXHH@Z": 4385168,
     "?Load@GraphicMenu@@SIPAV1@AAVINIClass@@ABVWstring@@@Z": 5104512,
     "??_7?$VectorClass@PAVGraphicMenuItem@@@@6B@": 8006500,

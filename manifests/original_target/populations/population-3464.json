@@ -4,8 +4,8 @@
     "id": "population-3464",
     "inventory_sha256": "3a0cbffa5f4a0e79ca5f06b00860f121ff2a989390e5199f6645b22526c710d9",
     "gaps_sha256": "16147c2d716f3455ecdbb1797cd50069c8c595d301c818c6b7c2f07d406f22f0",
-    "historical_population_sha256": "c1f8de9ca3bf0f85a37d78d26b10ef27a3705a14c5c1e0b6700ef3a82b4eac3b",
-    "historical_acceptance_sha256": "cda164bcaf203534e11af3a286133b85778c2f2ad2f5aa8aa0fbb64a51376fd6"
+    "historical_population_sha256": "2bded4021bea475581062482a1e14e66586ce6fd4f6f5db1f790f8dce22981fc",
+    "historical_acceptance_sha256": "e0a2d81368138a8d2af9f75b630699466221cdeb89c2b726288590fa0cef04f0"
   },
   "references": {
     "?Open@CCFileClass@@UAEHPBDH@Z": 4200832,
@@ -11711,7 +11711,7 @@
     "?Apply_Path_Collision_Avoidance_004285d0@UnknownPathEstimator@@QAEXPAVFootClass@@@Z": 4359632,
     "??0UnknownBeacon@@QAE@XZ": 4381152,
     "??1Unknown84E8D0@@QAE@XZ": 4382976,
-    "?Unknown_0042E740@Unknown84E8D0@@QAE_NHHH@Z": 4384576,
+    "?Unknown_0042E740@Unknown84E8D0@@QAE_NUCoordStruct@@@Z": 4384576,
     "?Unknown_0042E990@Unknown84E8D0@@QAEXHH@Z": 4385168,
     "?Step@Benchmark@@QAEKXZ": 4387232,
     "?From_Name@IsometricTileTypeClass@@SIHPBD@Z": 5411840,

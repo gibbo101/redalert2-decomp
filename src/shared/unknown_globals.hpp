@@ -332,10 +332,10 @@ class UnknownBeacon;
 class Unknown84E8D0 {
 public:
     UnknownBeacon *Unknown_0042E860(CoordStruct coord);  // 0x0042E860 (the beacon within 128 of the point)
-    bool Unknown_0042E740(int x, int y, int z);            // 0x0042E740 (selects the beacon within 128 of the point)
+    bool Unknown_0042E740(CoordStruct coord);            // 0x0042E740 (selects the beacon within 128 of the point)
     Unknown84E8D0();                                        // 0x0042D960 (the static initializer; inline)
     ~Unknown84E8D0();                                       // 0x0042D990 (the atexit destructor; inline)
-    void Unknown_0042E370(int house, int x, int y, int z, int slot);   // 0x0042E370 (places a beacon; slot -1: the first free one)
+    void Unknown_0042E370(int house, CoordStruct coord, int slot);   // 0x0042E370 (places a beacon; slot -1: the first free one)
     void Unknown_0042E290(Surface *surface, Rect rect);     // 0x0042E290 (draws the allied beacons)
     void Unknown_0042EED0(Surface *surface, Rect rect);     // 0x0042EED0 (draws the allied beacons during the blink phase)
     bool Unknown_0042EFD0();                               // 0x0042EFD0 (an allied beacon is shown and the blink phase is on)

@@ -3,9 +3,9 @@
 #include "shared/beacon.hpp"
 #include "shared/main_loop.hpp"
 
-bool Unknown84E8D0::Unknown_0042E740(int x, int y, int z)
+bool Unknown84E8D0::Unknown_0042E740(CoordStruct coord)
 {
-    UnknownBeacon *beacon = Unknown_0042E860(CoordStruct(x, y, z));
+    UnknownBeacon *beacon = Unknown_0042E860(coord);
     if (beacon) {
         Unknown_00482BC0();
         beacon->unknown_flags |= 2;
