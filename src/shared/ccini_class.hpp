@@ -216,6 +216,12 @@ public:
     bool Put_ThemeType(char const *section, char const *entry, int theme);
     // 0x0046AE10
     bool Put_SourceType(char const *section, char const *entry, SourceType source);
+#ifdef RA2_CCINI_UNIT_MEMBERS
+    // CCINI.CPP members declared for that unit only (a new member elsewhere can move fragile rows). 0x0046AEA0 (TibSun ccini.cpp)
+    int Get_Buildings(char const *section, char const *entry, int defvalue) const;
+    // 0x0046BE60 (TibSun ccini.cpp)
+    bool Put_House_List(char const *section, char const *entry, TypeList<int> value);
+#endif
     // 0x0046AFB0
     bool Put_Buildings(char const *section, char const *entry, int buildings);
     // 0x0046B0B0

@@ -1,3 +1,5 @@
+// CCINI.CPP declares CCINIClass::Get_Buildings 0x0046AEA0 and Put_House_List 0x0046BE60 (shared/ccini_class.hpp).
+#define RA2_CCINI_UNIT_MEMBERS
 // Header-static dynamic initializers of the unit at 0x004694C0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x004694C0-0x004696A6); the other
