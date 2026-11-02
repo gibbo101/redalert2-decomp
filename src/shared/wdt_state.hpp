@@ -11,6 +11,8 @@ public:
     // 0x0073FEE0, whose $L labels renumber with any new declaration (VC6_MATCHING_NOTES).
     WDTState();                                     // 0x0072BEF0 (empty state)
     WDTState(unsigned char *data);                  // 0x0072BFA0 (from the WOL state block)
+    bool unknown_72c3b0(void *data, int length);    // 0x0072C3B0 (the HSVC field)
+    bool unknown_72c490(void *data, int length);    // 0x0072C490 (the MPVC field)
 #endif
     virtual ~WDTState();    // 0x0072C2D0
     static rc_ptr<WDTState> __fastcall Create(unsigned char *data); // 0x0072BEB0
@@ -21,11 +23,11 @@ public:
     char *LongLabel;                          // +0x0C
     char *unknown_10;                         // +0x10
     unsigned char unknown_14;                       // +0x14
-    int unknown_18;                                 // +0x18
-    char unknown_1c[0x20 - 0x1C];
+    unsigned unknown_18;                            // +0x18 (CYID)
+    unsigned unknown_1c;                            // +0x1C (TOTK/CYLN, plus one)
     unsigned unknown_20;                            // +0x20
     unsigned ConflictCount;                         // +0x24
-    long unknown_28; // +0x28, added to time(0) by OnWDTState
+    unsigned unknown_28; // +0x28 (TICC), added to time(0) by OnWDTState
     DynamicVectorClass<rc_ptr<WDTTerritory> > Territories;  // +0x2C
     void **unknown_44;                              // +0x44
 #ifdef WDT_STATE_DECLARE_CONSTRUCTORS
