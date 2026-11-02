@@ -13,11 +13,29 @@
 template <class T, class V>
 class VectorCursor {
 public:
+#ifdef VECTOR_CURSOR_REFERENCE_FORM
+    struct CountHelper {
+        static unsigned Count(VectorClass<T> const &vector) { return vector.Length(); }
+        static unsigned Count(DynamicVectorClass<T> const &vector) { return vector.Count(); }
+    };
+#endif
     // The index argument shows where the constructor goes out of line: the copies
     // 0x00730340/0x00730370 (WDTSel.cpp) store it and the callers push 0.
+#ifdef VECTOR_CURSOR_REFERENCE_FORM
+    VectorCursor(V &vector);
+    VectorCursor(V &vector, int index);
+    VectorCursor &operator=(VectorCursor const &other);
+#else
     VectorCursor(V &vector, unsigned index = 0) : Vector(&vector), Index(index) {}
+#endif
     virtual ~VectorCursor() {}
-    virtual bool Valid() const { return Index < (unsigned)Vector->Count(); }
+    virtual bool Valid() const {
+#ifdef VECTOR_CURSOR_REFERENCE_FORM
+        return Index < CountHelper::Count(*Vector);
+#else
+        return Index < (unsigned)Vector->Count();
+#endif
+    }
     virtual VectorCursor<T, V> &Next()
     {
         Index++;
@@ -41,5 +59,21 @@ public:
     V *Vector;          // +0x04
     unsigned Index;     // +0x08
 };
+
+
+#ifdef VECTOR_CURSOR_REFERENCE_FORM
+template<class T, class V>
+VectorCursor<T,V>::VectorCursor(V &vector) : Vector(&vector), Index(0) {}
+template<class T, class V>
+VectorCursor<T,V>::VectorCursor(V &vector, int index) : Vector(&vector), Index(index) {}
+template<class T, class V>
+VectorCursor<T,V> &VectorCursor<T,V>::operator=(VectorCursor const &other)
+{
+    VectorCursor copy(*other.Vector, other.Index);
+    Vector = copy.Vector;
+    Index = copy.Index;
+    return *this;
+}
+#endif
 
 #endif

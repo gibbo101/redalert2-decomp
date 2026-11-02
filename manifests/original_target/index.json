@@ -824,7 +824,7 @@
       },
       {
         "path": "src/shared/vector_cursor.hpp",
-        "sha256": "266b195460a412d8d0fc110a2d80937fdac088935e0f4432d936c23ad5863429"
+        "sha256": "7a42086814605f61670f6cc0efe3c0f32b0b10ac0847b7de1a23cbf1fc59241d"
       },
       {
         "path": "src/shared/wdt_campaign.hpp",
@@ -2201,6 +2201,10 @@
       {
         "path": "src/shared/hash_table.hpp",
         "sha256": "0307972c5acebbc8472d6a96ec1563212c89792225e9091acfb8ec750437ef5b"
+      },
+      {
+        "path": "src/shared/trect.hpp",
+        "sha256": "48eac65fe9e94cb6b370c86b821d27ac07c7b8e16e94ff65bd2afac5d1d88a07"
       }
     ],
     "source_quality_checkpoint": {
@@ -5984,7 +5988,8 @@
     "population-3770",
     "population-3771",
     "population-3772",
-    "population-3773"
+    "population-3773",
+    "population-3774"
   ],
   "region_runs": [
     ["population-3602", 2],
@@ -10015,7 +10020,8 @@
     ["population-3770", 1],
     ["population-3771", 1],
     ["population-3772", 1],
-    ["population-3773", 1]
+    ["population-3773", 1],
+    ["population-3774", 2]
   ],
   "shards": {
     "population-01": "60b9b6e7046feacde8c43e390a8f6c88f7c7ee66f8cfbdb1ca96a159d90d2e57",
@@ -13107,6 +13113,7 @@
     "population-3771": "561001f047fa413d35a7c9c19912eb55c616c9d682018ba38c32e6ceea71e45d",
     "population-3772": "45c45cae673d8ec9e876779e0c3c1db18b88c2fb118d4987fe74a0a29e8e0928",
     "population-3773": "12eb58487ebb8e3c2d30731340d98460bddb6f1514f422610707b45d33351ddf",
+    "population-3774": "c272132a1be1a1dd5a728095d296a7fee12f24f0f17efce0379f1507bc9e3ea5",
     "population-378": "6611f54c8b1dc784a9f6bc166e6334d49376425fdc19543407b42ff465e1651f",
     "population-379": "4f175723cd410d4a70d5d41af51fa613731f22f700f40eee2e3284c1c49faeaf",
     "population-38": "01ea83ef143de3a1e03ebf27d6b0d79146d2c779162f7fe6d41c4755165e0120",
