@@ -41,6 +41,8 @@ class TeamTypeClass;
 // hypothesis).
 struct Point2D;
 struct UnknownTracker839EA0 {
+    void Unknown_004128A0(CellClass *cell, int radius); // original4128A0, thiscall/RET8
+
     ~UnknownTracker839EA0();
     // Known spatial-vector prefix:400 bins at stride18h, then a query working list.
     // Original base-vector RTTI79A7FC is VectorClass<TechnoClass *>; the 0x2598-byte global ends at83C438. Owner name remains a hypothesis.
