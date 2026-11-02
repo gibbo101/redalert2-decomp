@@ -23,6 +23,21 @@ public:
             Buffer[N - 1] = 0;
         }
     }
+#ifdef RA2_FIXEDSTRING_ASSIGN_VALUE
+#ifdef RA2_FIXEDSTRING_COPY_ASSIGN_SOURCE
+    // The owning unit supplies its original by-value copy-assignment body.
+    FixedString operator=(FixedString const &other);
+#else
+    FixedString operator=(FixedString const &other)
+    {
+        if (&other != this) {
+            memcpy(Buffer, other.Buffer, N);
+        }
+        return *this;
+    }
+#endif
+    FixedString &operator=(char const *string) { *this = FixedString(string); return *this; }
+#else
     FixedString &operator=(FixedString const &other)
     {
         if (&other != this) {
@@ -31,6 +46,7 @@ public:
         return *this;
     }
     FixedString &operator=(char const *string) { return *this = FixedString(string); }
+#endif
     operator char const *() const { return Buffer; }
 
     char Buffer[N];

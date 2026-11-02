@@ -4,8 +4,8 @@
     "id": "population-3755",
     "inventory_sha256": "607d9abfe0e98d4bcdb2c472f13a66113cef3499fc6dd07e2b8250d79a142b3a",
     "gaps_sha256": "2ee18abfd02e9407e5fa73c6b211ece538388f4ac326c937dd97d4ade6854e82",
-    "historical_population_sha256": "db11b7661ec4f4372b90c2087903eac619cd00d474501b1282918a041b784f8e",
-    "historical_acceptance_sha256": "54672a84e30fd7b5662fabc6bace5534b97424582fc8c08356395b461c364405"
+    "historical_population_sha256": "87cbac102b55a057c781d30feec55f3d2c46a4e38b0c09e3473ae4a0042d4b64",
+    "historical_acceptance_sha256": "b3634357f4beb4be9e4f0e3df0f7a5eaf130ab4fd804fb768d275be1b3e414d9"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -11344,7 +11344,14 @@
     "??1IonBlastClass@@QAE@XZ": 5378800,
     "?Draw_All@IonBlastClass@@SAXXZ": 5382064,
     "?unknown_event_queue_a35f30@@3V?$QueueClass@VEventClass@@$0BAA@@@A": 10706736,
-    "?Has_Edit_Focus@MessageListClass@@QAE_NXZ": 5985264
+    "?Has_Edit_Focus@MessageListClass@@QAE_NXZ": 5985264,
+    "??_GMixFileClass@@UAEPAXI@Z": 5856352,
+    "??_7MixFileClass@@6B@": 8021104,
+    "??1MixFileClass@@UAE@XZ": 5854752,
+    "??0MixFileClass@@QAE@PBDPBVPKey@@@Z": 5853936,
+    "?Stop@?$CDTimerClass@VFrameTimerClass@@@@QAEXXZ": 7025344,
+    "?Add@StaticBufferClass@@QAEPAUEntry@1@AAVSurface@@ABVRect@@HH@Z": 6923008,
+    "??_EMixFileClass@@UAEPAXI@Z": 5856352
   },
   "regions": [
     {
@@ -11405,7 +11412,7 @@
           "resolved": 11271608
         }
       ],
-      "source_sha256": "e29d3dfe405ccfe610e37ea49f2215221ad9b8d09ba98e6f2995442e4ac551e6",
+      "source_sha256": "974e1ffda887edfdfca0e11b82ff70b4fdd31a064c6a6a4f71d413ac66be1de2",
       "source": "src/recovered/header_statics/006ad100/HeaderStatics_diagonal_init_006ad100.cpp",
       "population": "population-3755",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
