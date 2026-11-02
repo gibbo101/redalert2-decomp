@@ -4,8 +4,8 @@
     "id": "population-3419",
     "inventory_sha256": "9509749e1c9ab8747df654de479eaa243f3cc2d360cb76f93306711a2dff6ce7",
     "gaps_sha256": "2b79f7e79d021b7acf4a0092fc16bb96b135d78d25b704641d6738cea5530b6b",
-    "historical_population_sha256": "d81ee677955381d7e7154eebced340456ef76d4634cdbe1c8d5008f08b7b7422",
-    "historical_acceptance_sha256": "98afa2d3361adff5adfc730b498006a916ca5342d8cb80665fb9b0cc0783c2bc"
+    "historical_population_sha256": "f799382dea1c56ffa4b92fd71a9a48577fa25a29394d399a3ac6755aa0980659",
+    "historical_acceptance_sha256": "8059d4154cdb1862aaadc47b74e470d69063b75603f2dab30e32a12a586f8b79"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -7143,7 +7143,7 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?Read_Scenario_INI@@YI_NAAVCCINIClass@@_N@Z": 6679360,
     "?Clear_Scenario_0065d370@@YAXXZ": 6673264,
@@ -7357,7 +7357,7 @@
     "?unknown_drawer_8323bc@@3PAVConvertClass@@A": 8594364,
     "?unknown_flag_7d88d5@@3_NA": 8227029,
     "?AI@TerrainClass@@UAEXXZ": 7225104,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?unknown_radar_surface_8336f8@@3PAVSurface@@A": 8599288,
     "_bind@12": 7871388,
     "?unknown_slot15@UDPInterfaceClass@@UAE_NH@Z": 7784176,
@@ -7632,7 +7632,7 @@
     "?Release@ReferenceCounted@@UAEXXZ": 6526752,
     "?AI@VoxelAnimClass@@UAEXXZ": 7394176,
     "?Unknown_0047F600@@YIXUCoordStruct@@HPAVWarheadTypeClass@@HH@Z": 4716032,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "??1BuildingLightClass@@UAE@XZ": 4403952,
     "?unknown_slot87@UnitClass@@UAEXABUCoordStruct@@_N1@Z": 7369424,
     "?Add_Bomb@UnknownList8322E0@@QAEXPAVTechnoClass@@PAVObjectClass@@@Z": 4416624,

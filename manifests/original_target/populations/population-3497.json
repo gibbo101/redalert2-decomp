@@ -4,8 +4,8 @@
     "id": "population-3497",
     "inventory_sha256": "776450bd7b3e17487144eca5c9e3c23e0ba16f27b03a383f908add2dedf855d1",
     "gaps_sha256": "9ab0402cbf021f9f7ea440c05fac9113f78e6b7057fa38def1b5adefcc5e82e2",
-    "historical_population_sha256": "4c6e07db71ae17391d51e112afb6de03f6b481101c9d097859b34d42feb9d1f9",
-    "historical_acceptance_sha256": "33a0aec59ff4c0a9ce35efcecd2cee2e3986858f3c9efeb777b5e54e50186f60"
+    "historical_population_sha256": "caf3c74218d4f488fe39f4954f95293ebbde150b3b5f0cc4609b82a046c0621a",
+    "historical_acceptance_sha256": "8f389f460c536dd2733c05333b2d373fb2784ff894661a87380bb1719fa38299"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8629,7 +8629,7 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?Read_Scenario_INI@@YI_NAAVCCINIClass@@_N@Z": 6679360,
     "?Clear_Scenario_0065d370@@YAXXZ": 6673264,
@@ -8900,7 +8900,7 @@
     "?unknown_drawer_8323bc@@3PAVConvertClass@@A": 8594364,
     "?unknown_flag_7d88d5@@3_NA": 8227029,
     "?AI@TerrainClass@@UAEXXZ": 7225104,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?unknown_6d3b60@TechnoClass@@QAE_NPAV1@H@Z": 7158624,
     "?unknown_6d7550@TechnoClass@@QAENPAVObjectClass@@ABUCoordStruct@@@Z": 7173456,
     "?unknown_slot267@TechnoClass@@UAEX_N@Z": 7176480,
@@ -9366,7 +9366,7 @@
     "?Release@ReferenceCounted@@UAEXXZ": 6526752,
     "?AI@VoxelAnimClass@@UAEXXZ": 7394176,
     "?Unknown_0047F600@@YIXUCoordStruct@@HPAVWarheadTypeClass@@HH@Z": 4716032,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "?unknown_slot147@AircraftClass@@UAEHXZ": 4280848,
     "??1BuildingLightClass@@UAE@XZ": 4403952,
     "?unknown_slot87@UnitClass@@UAEXABUCoordStruct@@_N1@Z": 7369424,

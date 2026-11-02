@@ -4,8 +4,8 @@
     "id": "population-3246",
     "inventory_sha256": "e40c783bc09f6d5eba5f36cb6cd5a013c6a087c8b5eaad809918255a60a7b022",
     "gaps_sha256": "5fa89f0401f7477fa5984aaefcd14a1315e6a9c0ecade75d95bf4beadba3404d",
-    "historical_population_sha256": "9fdd8c2404ff50702e49c53f6426ad11deb9f759d98f60c015635b24b349d8ba",
-    "historical_acceptance_sha256": "b73852fe24a5e3779551eaeddf78093ee808db5f0842692c062710ba36c762f3"
+    "historical_population_sha256": "4c1304e17e6537fea1bc6a385ff21d15b0c76350c54b53a292667ea2ee315e5b",
+    "historical_acceptance_sha256": "e2140af32fb5c8650d859bba765e82f69de3e6bb331f8608437521a122fd8c4a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -17161,8 +17161,8 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "?unknown_479cc0@CellClass@@QBE_NXZ": 4693184,
     "?unknown_479cf0@CellClass@@QBE_NXZ": 4693232,
     "?unknown_479f70@CellClass@@QBE_NXZ": 4693872,
@@ -17203,7 +17203,7 @@
     "?unknown_47c2e0@UnknownCellClass@@QAE_NH@Z": 4702944,
     "?unknown_47c300@CellClass@@QBE_NH@Z": 4702976,
     "?unknown_47c300@UnknownCellClass@@QAE_NH@Z": 4702976,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47c840@CellClass@@QAEXXZ": 4704320,
     "?unknown_47c8a0@CellClass@@QAEXXZ": 4704416,
     "?unknown_47cb50@CellClass@@QAE_NXZ": 4705104,

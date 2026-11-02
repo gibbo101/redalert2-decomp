@@ -115,7 +115,7 @@ void BuildingClass::unknown_slot286(TechnoClass *last_contact,TechnoClass *sourc
         unknown_294.Remove_Amount(1.0f,type);
         House->Tiberium.Remove_Amount(1.0f,type);
         CoordStruct coord=Coord_Scatter(Position_Coord_00450950(*this),Random_Pick(256,768),true);
-        Map[coord].unknown_47c3a0(type,true);
+        Map[coord].unknown_47c3a0(type, 1);
     }
     int shakes=Type->unknown_slot33((int)House)/Rules->unknown_4e8;
     if (shakes>0) ((Leaf_482e00 *)shakes)->get();

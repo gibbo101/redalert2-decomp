@@ -4,8 +4,8 @@
     "id": "population-2916",
     "inventory_sha256": "5e1706a71ef1b32879c8c0f823293ebc8b820233dd92cd197f816a9ff126c88d",
     "gaps_sha256": "94448a733216a0de018aeef22b15419e51d81ca73c7a0d556d48cd062164e752",
-    "historical_population_sha256": "caaecf19371bca5b3c13c5b78612204f1817e0a8f4d0e73eb8688527e2f9be5f",
-    "historical_acceptance_sha256": "cb2692143b1bbcb81929b8990d8f8f53913d72508bf8a04af1792cc268ac18b1"
+    "historical_population_sha256": "36e993b9cd29e7545aa694c0f50bfbe2a16e7c74dcaa13c725e3c7f7185e8511",
+    "historical_acceptance_sha256": "3527aa1237eb3b6864ffb851466e57f888d96719d98060221546e23253fcc683"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8113,14 +8113,14 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?Read_INI_0049CFD0@DisplayClass@@QAEXAAVCCINIClass@@@Z": 4837328,
     "?unknown_47c080@CellClass@@QAEXXZ": 4702336,
     "?unknown_476cc0@CellClass@@QAE_NPAVObjectClass@@@Z": 4680896,
     "?Unknown_0049C670@DisplayClass@@QAEXXZ": 4834928,
     "?Write_INI_0049D910@DisplayClass@@QAEXAAVCCINIClass@@@Z": 4839696,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABUCoordStruct@@_N@Z": 6495136,
     "?Unknown_0055A1F0@MapClass@@QAEXXZ": 5612016,
     "?Unknown_00633130@RadarClass@@QAE_NXZ": 6500656,
@@ -8138,7 +8138,7 @@
     "?unknown_tileset_a52ee8@@3HA": 10825448,
     "?unknown_tileset_a52eec@@3HA": 10825452,
     "?unknown_471d10@CellClass@@QAEXXZ": 4660496,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "??_7MechLocomotionClass@@6B@": 8020340,
     "??_EMechLocomotionClass@@UAEPAXI@Z": 5845776
   },

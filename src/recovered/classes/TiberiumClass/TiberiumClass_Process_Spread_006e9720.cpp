@@ -35,12 +35,12 @@ void TiberiumClass::Process_Spread()
             int possible = 0;
             for (FacingType facing = FACING_N; facing < FACING_COUNT; facing++) {
                 CellClass &adjacent = cellptr->Adjacent_Cell(facing);
-                if (adjacent.unknown_478ba0(false)) {
+                if (adjacent.Can_Tiberium_Germinate(0)) {
                     possible++;
                 }
             }
             if (possible != 0) {
-                cellptr->unknown_478a40(0);
+                cellptr->Spread_Tiberium(false);
                 index++;
                 if (possible > 1) {
                     SpreadData[SpreadCount].Position = cellptr->MapCoords;

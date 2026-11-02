@@ -4,8 +4,8 @@
     "id": "population-3471",
     "inventory_sha256": "b02c69ec12fdd949e911a407155c8ab8aea54122101819b1b98647deaef4f09e",
     "gaps_sha256": "9395e3e29d155879b315c06c8ded5aed2935aa88b4b4382b8121d736deca660a",
-    "historical_population_sha256": "343c6bb64f6652963a7553425b8f6287427719c9f318757e887f1c07700f46cb",
-    "historical_acceptance_sha256": "15a678b4114f836a68f372213c1449da5fdb2c2e225b925334ef4475a066dc69"
+    "historical_population_sha256": "e089098001432d6a294086f78fb973ae11444a4bcb602a4dbb4f4b9e6992109d",
+    "historical_acceptance_sha256": "20ba454b4852f7510ad98645ab45a09f390c224719a1fb1598299e11fbb87e38"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6333,7 +6333,7 @@
     "__real@8@3feea7c5ac471b478800": 7980320,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?Read_Scenario_INI@@YI_NAAVCCINIClass@@_N@Z": 6679360,
     "?Clear_Scenario_0065d370@@YAXXZ": 6673264,
@@ -6528,7 +6528,7 @@
     "?unknown_drawer_8323bc@@3PAVConvertClass@@A": 8594364,
     "?unknown_flag_7d88d5@@3_NA": 8227029,
     "?AI@TerrainClass@@UAEXXZ": 7225104,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?Fill_Rect_Trans@DSurface@@UAE_NABVRect@@ABVRGBClass@@I@Z": 4896560,
     "__real@8@400fc350000000000000": 8048696,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABUCoordStruct@@_N@Z": 6495136,
@@ -6894,7 +6894,7 @@
     "??1ConvertClass@@UAE@XZ": 4739856,
     "?Release@ReferenceCounted@@UAEXXZ": 6526752,
     "?AI@VoxelAnimClass@@UAEXXZ": 7394176,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "__real@8@3ff99da7b584ce88b000": 8054264,
     "?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@11110H@Z": 5571296,
     "_?offsets@?BN@??unknown_6fd930@UnitClass@@QAE_NXZ@4PAVCell@@A": 11338984,

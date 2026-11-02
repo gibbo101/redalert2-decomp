@@ -1,6 +1,6 @@
-// bool CellClass::unknown_478ba0(bool arg1) (0x00478BA0)
-// Westwood's CellClass::Can_Tiberium_Germinate (arg1 unused; the spread
-// 0x00478A40 really passes a TiberiumClass *, other callers 0): the map accepts the cell
+// bool CellClass::Can_Tiberium_Germinate(TiberiumClass *tiberium) (0x00478BA0)
+// TibSun name (tiberium unused; Spread_Tiberium 0x00478A40 passes its type,
+// other callers 0): the map accepts the cell
 // (Map.Unknown_0055A660), it is not flagged 0x500, holds no living visible
 // building and no tiberium-spawning terrain object, its land allows building,
 // it has no overlay, +0x11C is clear and its tile type allows it (+0x2D6; any
@@ -13,7 +13,7 @@
 #include "shared/terrain_type.hpp"
 // @ref ?unknown_flag_a40958@@3_NA=00a40958
 
-bool CellClass::unknown_478ba0(bool arg1)
+bool CellClass::Can_Tiberium_Germinate(TiberiumClass *tiberium)
 {
     if (Map.Unknown_0055A660(MapCoords, true) && (unknown_140 & 0x500) == 0) {
         BuildingClass *building = (BuildingClass *)unknown_4717b0();

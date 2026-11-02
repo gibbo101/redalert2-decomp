@@ -27,7 +27,7 @@ public:
     bool unknown_2b0;                       // +0x2B0 (smudges allowed; hypothesis)
     char unknown_2b1[0x2D5 - 0x2B1];
     bool unknown_2d5;                       // +0x2D5 (CellClass::unknown_47c200: false refuses the cell)
-    bool unknown_2d6;                       // +0x2D6 (CellClass::unknown_478ba0: tiberium may grow on the tile)
+    bool unknown_2d6;                       // +0x2D6 (CellClass::Can_Tiberium_Germinate: tiberium may grow on the tile)
 
     // 0x0052C230 (shared/isometric_tile_type.hpp; CellClass::unknown_4754b0).
     // The light converter with these tints, made when there is none yet (0x00529590; Westwood's

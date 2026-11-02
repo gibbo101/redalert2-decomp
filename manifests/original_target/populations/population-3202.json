@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "339e07b0ed240115ea5c226072ee18a18b613ceeb425698639d2926684b3e562",
-    "historical_acceptance_sha256": "00421d376eed018d2b8bb81bd6662cb96328377224f8db3981e599b304d4d672"
+    "historical_population_sha256": "93f52449891c9ab7d0c3c39685d1a1a065fde06c81fd9f94fe3bef45eb5ca731",
+    "historical_acceptance_sha256": "fb093a53d4346914d0e73f044afe39ac3797c27880edc59af182dca9a83ce210"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -20355,7 +20355,7 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?unknown_47c080@CellClass@@QAEXXZ": 4702336,
     "?unknown_476cc0@CellClass@@QAE_NPAVObjectClass@@@Z": 4680896,
@@ -20380,7 +20380,7 @@
     "?unknown_drawer_8323bc@@3PAVConvertClass@@A": 8594364,
     "?unknown_flag_7d88d5@@3_NA": 8227029,
     "?AI@TerrainClass@@UAEXXZ": 7225104,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?Clear@?$DynamicVectorClass@PBD@@UAEXXZ": 5906368,
     "?ID@?$DynamicVectorClass@PBD@@UAEHPBQBD@Z": 5906416,
     "?Fetch@?$VectorClass@PBD@@UBEPBDH@Z": 5906448,
@@ -20883,7 +20883,7 @@
     "?unknown_tileset_a52ee8@@3HA": 10825448,
     "?unknown_tileset_a52eec@@3HA": 10825452,
     "?unknown_471d10@CellClass@@QAEXXZ": 4660496,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "?unknown_4c1ae0@FoggedObjectClass@@SAXXZ": 4987616,
     "?As_Object@TargetClass@@QBEPAVObjectClass@@XZ": 7035360,
     "?Unknown_00406F50@@YAXXZ": 4222800,

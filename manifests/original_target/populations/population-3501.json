@@ -4,8 +4,8 @@
     "id": "population-3501",
     "inventory_sha256": "12991a2275e76cd33c8ac6ed52a5bf5be403594ca0d2aec5b9230724539f3959",
     "gaps_sha256": "67c1d4119ab03b4e5c106915b75d46689dacd94b40cda5e7348fad19dc2b0dd1",
-    "historical_population_sha256": "2a9d222b43637c393c7aec3957faaa1b4346d903a336477fa3c23b0fa535c23c",
-    "historical_acceptance_sha256": "c8cf44b5047f9355e4ac9f88acd1a5eb82d388cf7f40510406c575604dc44e8f"
+    "historical_population_sha256": "74f2434704c1f9164ff73ae1f3d611c34e5f546bfca0f5984857212fded7ece6",
+    "historical_acceptance_sha256": "e8e65b41767096904f84cf3eea3f3962b5f1b6621a7761b6f74c081bf57fee53"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7856,7 +7856,7 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?Read_INI_0049CFD0@DisplayClass@@QAEXAAVCCINIClass@@@Z": 4837328,
     "?unknown_47c080@CellClass@@QAEXXZ": 4702336,
@@ -9137,7 +9137,7 @@
     "?unknown_476cc0@CellClass@@QAE_NPAVObjectClass@@@Z": 4680896,
     "?Unknown_0049C670@DisplayClass@@QAEXXZ": 4834928,
     "?Write_INI_0049D910@DisplayClass@@QAEXAAVCCINIClass@@@Z": 4839696,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?Unknown_00631BA0@RadarClass@@QAE?AUPoint2D@@ABUCoordStruct@@_N@Z": 6495136,
     "?Unknown_0055A1F0@MapClass@@QAEXXZ": 5612016,
     "?Init_IO@ScrollClass@@UAEXXZ": 4247872,
@@ -9159,7 +9159,7 @@
     "?unknown_tileset_a52ee8@@3HA": 10825448,
     "?unknown_tileset_a52eec@@3HA": 10825452,
     "?unknown_471d10@CellClass@@QAEXXZ": 4660496,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "?Unknown_005502E0@MapClass@@QAE?AVCell@@ABV2@HHH_NUPoint2D@@11110H@Z": 5571296,
     "?unknown_475960@CellClass@@QAEX_N@Z": 4675936,
     "?Unknown_00681740@SidebarClass@@QAE_NHHPAVFactoryClass@@@Z": 6821696,

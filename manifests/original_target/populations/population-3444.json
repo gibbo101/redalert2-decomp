@@ -4,8 +4,8 @@
     "id": "population-3444",
     "inventory_sha256": "a5bcb9cda1cf28bd4302e524d42adf317d302fa254d17da194611c9b6ee6e948",
     "gaps_sha256": "ad7b74e622f5269fe5b61679c12245f0564fbc06d1b988a0714f518cdab48a80",
-    "historical_population_sha256": "86f0dce21b328937c8bb4745c55c27ca799769e16f3d1c1b90c0b533af50d4e5",
-    "historical_acceptance_sha256": "0e8532f9adf87ed95caefeb700e9298bd3a62e1ccf2cd4be64b415f68e6c937c"
+    "historical_population_sha256": "c5b918905bfd407052ac8d6c1a8fd73c3c8f3ec8131e5b725124417fbf523a3e",
+    "historical_acceptance_sha256": "f5f238146cf1d798a6fe09d5fe4e21df8d069be31cacbc288839c9981773f228"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8959,11 +8959,11 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?unknown_47c080@CellClass@@QAEXXZ": 4702336,
     "?unknown_476cc0@CellClass@@QAE_NPAVObjectClass@@@Z": 4680896,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?Draw_Shroud_And_Fog@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674848,
     "?Draw_Shroud_Or_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670048,
     "?Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670736,
@@ -8974,7 +8974,7 @@
     "?unknown_tileset_a52ee8@@3HA": 10825448,
     "?unknown_tileset_a52eec@@3HA": 10825452,
     "?unknown_471d10@CellClass@@QAEXXZ": 4660496,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "?unknown_475960@CellClass@@QAEX_N@Z": 4675936,
     "?unknown_47a290@CellClass@@QBEHXZ": 4694672,
     "?unknown_4754b0@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674736,

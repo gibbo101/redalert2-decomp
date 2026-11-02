@@ -4,8 +4,8 @@
     "id": "population-3584",
     "inventory_sha256": "ea6be90f1c8e3e61c82ed1fd4817a69fabdb9f81513a8a11ac1f41656df6ae41",
     "gaps_sha256": "aceb2d863e7698f11c48c4223cc8ae4f625898360bada15ef0c6a920ea49c814",
-    "historical_population_sha256": "52cc4f9691698f57746f7de160440518ad9871baa403b00e9be466ec26480341",
-    "historical_acceptance_sha256": "93ce06d76b53e119cced69469f2ad4b5c998f203b61619d7184a10cfd8f540de"
+    "historical_population_sha256": "305b53fff3f968ce41cc59b47f8e63b7548e0df8e7dcf7d9d41b5864086b3488",
+    "historical_acceptance_sha256": "5fe6e2415136983c284b972f69e9357928c0abe89e0dd8921776da689834a41a"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7894,7 +7894,7 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?unknown_47c080@CellClass@@QAEXXZ": 4702336,
     "??_7MechLocomotionClass@@6B@": 8020340,
@@ -9050,7 +9050,7 @@
     "??_ENode@?$WolDictionary@VWstring@@H@@QAEPAXI@Z": 7759776,
     "?IsoTileTypes@@3V?$DynamicVectorClass@PAVIsometricTileTypeClass@@@@A": 10751184,
     "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?Draw_Shroud_And_Fog@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674848,
     "?Draw_Shroud_Or_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670048,
     "?Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670736,
@@ -9061,7 +9061,7 @@
     "?unknown_tileset_a52ee8@@3HA": 10825448,
     "?unknown_tileset_a52eec@@3HA": 10825452,
     "?unknown_471d10@CellClass@@QAEXXZ": 4660496,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "?unknown_475960@CellClass@@QAEX_N@Z": 4675936,
     "?unknown_47a290@CellClass@@QBEHXZ": 4694672,
     "?unknown_4754b0@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674736,

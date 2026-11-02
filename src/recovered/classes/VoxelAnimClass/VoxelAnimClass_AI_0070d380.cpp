@@ -20,7 +20,7 @@
 #include "shared/unknown_geometry.hpp"
 
 // @ref ?Unknown_0047F600@@YIXUCoordStruct@@HPAVWarheadTypeClass@@HH@Z=0047f600
-// @ref ?unknown_478ba0@CellClass@@QAE_N_N@Z=00478ba0
+// @ref ?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z=00478ba0
 // @ref __real@8@3ff99da7b584ce88b000=007ae5f8
 
 void VoxelAnimClass::AI()
@@ -65,7 +65,7 @@ void VoxelAnimClass::AI()
                 if (Class->IsTiberium && !bridge) {
                     for (int facing = 0; facing < 8; facing++) {
                         CellClass &cell = Map[Adjacent_Cell(Coord_Cell(center), facing)];
-                        if (cell.unknown_478ba0(false)) {
+                        if (cell.Can_Tiberium_Germinate(0)) {
                             TiberiumClass *tiberium = unknown_TiberiumClass_list_00ac0b30[OverlayClass::To_Tiberium(0x7F)];
                             if (cell.unknown_11c != 0) {
                                 new OverlayClass(OverlayTypes[tiberium->Image->ArrayIndex + cell.unknown_11c * 2 + tiberium->NumFrames + Random_Pick(0, 1) - 2], Cell(cell.MapCoords), -1);
@@ -84,7 +84,7 @@ void VoxelAnimClass::AI()
                 }
             } else if (Class->IsTiberium && !bridge) {
                 CellClass &cell = Map[BounceClass::Coord()];
-                if (cell.unknown_478ba0(false)) {
+                if (cell.Can_Tiberium_Germinate(0)) {
                     TiberiumClass *tiberium = unknown_TiberiumClass_list_00ac0b30[OverlayClass::To_Tiberium(0x7F)];
                     if (cell.unknown_11c != 0) {
                         new OverlayClass(OverlayTypes[tiberium->Image->ArrayIndex + cell.unknown_11c * 2 + tiberium->NumFrames + Random_Pick(0, 1) - 2], Cell(cell.MapCoords), -1);

@@ -4,8 +4,8 @@
     "id": "population-2980",
     "inventory_sha256": "7df7fe6248389f6020b56ab4556d8e32ac9f1419e7c584b2cf1b00f8489654e1",
     "gaps_sha256": "596ac0a2fc79d72efd93e79ccf7c9424851bbb97223b6f21208bb9b8bed44808",
-    "historical_population_sha256": "76887d45d3dacd6baa199edaeb258c366284a53c9663df2ba78e6235afe12ee5",
-    "historical_acceptance_sha256": "e37f77d44b895d7c27e8d5445b9f90faae59f16cf02002c246284fa65a9a6cf3"
+    "historical_population_sha256": "7f6bd973308eb24f196b9d1e50f0b91c099a7db9f8785fc5cee7ad299e5e9717",
+    "historical_acceptance_sha256": "20cf4c66fb720058cd5d59e6e7ed884481d2c66b41899e38ec725736539a3bc4"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7873,7 +7873,7 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?Place@SmudgeTypeClass@@QBEXABVCell@@@Z": 6851392,
     "?unknown_47c080@CellClass@@QAEXXZ": 4702336,
@@ -7910,7 +7910,7 @@
     "?unknown_slot49@TechnoClass@@UAE_NPAVHouseClass@@@Z": 4305952,
     "?unknown_slot73@TerrainClass@@UAE?AVRect@@XZ": 7227664,
     "?unknown_slot68@TerrainClass@@UAEXHH@Z": 7224128,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "??_GTEventClass@@UAEPAXI@Z": 7237024,
     "??1TriggerClass@@UAE@XZ": 7263168,
     "??0AlphaShapeClass@@QAE@ABVNoInitClass@@@Z": 4320976,
@@ -7979,7 +7979,7 @@
     "?unknown_tileset_a52ee8@@3HA": 10825448,
     "?unknown_tileset_a52eec@@3HA": 10825452,
     "?unknown_471d10@CellClass@@QAEXXZ": 4660496,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "?unknown_slot87@UnitClass@@UAEXABUCoordStruct@@_N1@Z": 7369424,
     "?Add_Bomb@UnknownList8322E0@@QAEXPAVTechnoClass@@PAVObjectClass@@@Z": 4416624,
     "?Unknown_0047E2C0@@YIHABUCoordStruct@@HPAVTechnoClass@@PAVWarheadTypeClass@@_N@Z": 4711104,

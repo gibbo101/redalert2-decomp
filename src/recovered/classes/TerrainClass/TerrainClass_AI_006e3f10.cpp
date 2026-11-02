@@ -19,7 +19,7 @@
 // @ref ?Frame@@3HA=00a40d2c
 // @ref ?unknown_map_8324e0@@3VUnknownMap8324E0@@A=008324e0
 // @ref ?Unknown_00548000@UnknownMap8324E0@@QAEHABUCoordStruct@@@Z=00548000
-// @ref ?unknown_478a40@CellClass@@QAEXH@Z=00478a40
+// @ref ?Spread_Tiberium@CellClass@@QAE_N_N@Z=00478a40
 // @ref __real@8@3feb8637bd05af6c6800=007a7d20
 
 void TerrainClass::AI()
@@ -44,7 +44,7 @@ void TerrainClass::AI()
                 Animation.Set_Stage(0);
                 Animation.Set_Rate(0);
                 CoordStruct coord = Coord;
-                Map[coord].unknown_478a40(1);
+                Map[coord].Spread_Tiberium(true);
             }
         }
     }

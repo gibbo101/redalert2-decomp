@@ -73,6 +73,7 @@ class TechnoClass;
 class TagClass;
 class FoggedObjectClass;
 class LightConvertClass;
+class TiberiumClass;
 
 extern "C" GUID const CLSID_CellClass;          // 0x007A1E70
 
@@ -208,7 +209,7 @@ public:
     void unknown_47a4e0();                      // 0x0047A4E0 (redraws the cell's 60x30 screen area; BuildingClass 0x0043C1F0)
     int unknown_47a5a0();                       // 0x0047A5A0 (bit per cardinal neighbour holding veins: an IsVeins overlay, or overlay 0x7E with data from 48)
     bool unknown_475840(int overlay, int facing) const;   // 0x00475840 (whether a wall of overlay type joins this cell toward facing: the same wall, or a gate or wall tower; hypothesis)
-    bool unknown_478ba0(bool arg1);             // 0x00478BA0 (Westwood's Can_Tiberium_Germinate; arg1 unused. Hypothesis to fix: the spread 0x00478A40 passes a TiberiumClass *, other callers 0)
+    bool Can_Tiberium_Germinate(TiberiumClass *tiberium);   // 0x00478BA0 (TibSun name; tiberium unused: Spread_Tiberium 0x00478A40 passes its type, other callers 0; constness unknown)
     void unknown_473d20(ObjectClass *object, bool alt);   // 0x00473D20 (unlinks object from the occupier list; MapClass 0x0054B04D)
     Rect unknown_4752b0() const;                // 0x004752B0 (a screen rectangle of the cell's contents; hypothesis)
     Rect unknown_474eb0() const;                // 0x00474EB0 (another; hypothesis)
@@ -217,7 +218,7 @@ public:
     bool unknown_4788e0() const;                // 0x004788E0 (the ore may grow here: scenario +0x222A, ore below its last stage; hypothesis)
     bool unknown_478950() const;                // 0x00478950 (the ore may spread from here; hypothesis)
     bool unknown_4789d0();                      // 0x004789D0 (grows the ore through unknown_47c3a0; hypothesis)
-    bool unknown_47c3a0(int tiberium, bool arg2);   // 0x0047C3A0 (not recovered; hypothesis to fix: arg2 is an int, the spread 0x00478A40 passes 3)
+    bool unknown_47c3a0(int tiberium, int data);    // 0x0047C3A0 (not recovered; TibSun Place_Tiberium(tib, data): Spread_Tiberium 0x00478A40 passes 3)
     int unknown_47ce70() const;                 // 0x0047CE70 (+0xF0 limited to Rules RadLevelMax, as an int)
     bool unknown_47c200();                      // 0x0047C200 (the map allows the cell, its tile type does not refuse it, it is not blocked and holds no building or terrain object)
     void unknown_47bc80();                      // 0x0047BC80 (Westwood's Fog_Cell: fogs the diagonal cells, keeping fogged copies of their buildings)
@@ -288,7 +289,7 @@ public:
     void unknown_47c080();                      // 0x0047C080 (after the smudge changes; redraw hypothesis)
     bool unknown_47a670() const;                // 0x0047A670 (Overlay.cpp wall pass; hypothesis)
     void unknown_47ad00();                      // 0x0047AD00
-    void unknown_478a40(int arg1);              // 0x00478A40 (TerrainClass::AI: spreads tiberium; hypothesis)
+    bool Spread_Tiberium(bool forced);          // 0x00478A40 (TibSun name; TerrainClass::AI forces it, TiberiumClass::Process_Spread does not)
     void Set_Under_Bridge(unsigned facing, bool state);                  // 0x004732D0 (TibSun name: marks the cells one high-bridge deck piece covers; OverlayClass slot 71)
     void Set_Under_Rail_Bridge(unsigned facing, bool state);             // 0x00473700 (TibSun name: the train bridge counterpart; OverlayClass slot 71)
     void Destroy_Bridge();                                               // 0x00473000 (TibSun name hypothesis: called when a bridge flag is cleared)

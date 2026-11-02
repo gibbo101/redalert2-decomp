@@ -4,8 +4,8 @@
     "id": "population-3451",
     "inventory_sha256": "1d3a65e3133a8d7111c412645638e8acda7402606e5a9690d369370cfe763549",
     "gaps_sha256": "c9a912e73a304dcf8dc3bd783c93430b9e124b8075a58201b17f33c3ab85a1c3",
-    "historical_population_sha256": "6f3d6a7832007ff2b508744538de6bea801b887141f89910f8fc39382c31a879",
-    "historical_acceptance_sha256": "9b9d851885f7bfa2c3b1bb1a5a48910031cd1f44469fdb0c42432d2bf69f984c"
+    "historical_population_sha256": "5809898775eb3ef8c3b2e097d30b5205d4e7b1271db4efd8201ca3006e384d51",
+    "historical_acceptance_sha256": "0fbfc4814fb03f0e82818cf6889cafd1f1f794236a1a3282b58fdb11e442090d"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -21135,7 +21135,7 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "??_C@_0BH@KFKP@Clearing?5old?5scenario?6?$AA@": 8331752,
     "?Clear_Scenario_0065d370@@YAXXZ": 6673264,
@@ -21468,7 +21468,7 @@
     "??_C@_0BD@LCDB@Send?5to?5modem?3?5?$CFs?6?$AA@": 8375612,
     "?unknown_slot73@TerrainClass@@UAE?AVRect@@XZ": 7227664,
     "?unknown_slot68@TerrainClass@@UAEXHH@Z": 7224128,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?unknown_6d3b60@TechnoClass@@QAE_NPAV1@H@Z": 7158624,
     "?unknown_6d7550@TechnoClass@@QAENPAVObjectClass@@ABUCoordStruct@@@Z": 7173456,
     "?unknown_slot267@TechnoClass@@UAEX_N@Z": 7176480,
@@ -22473,7 +22473,7 @@
     "?unknown_score_time_850508@@3HA": 8717576,
     "?unknown_score_difficulty_7d1480@@3HA": 8197248,
     "?Unknown_0047F600@@YIXUCoordStruct@@HPAVWarheadTypeClass@@HH@Z": 4716032,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "?unknown_slot147@AircraftClass@@UAEHXZ": 4280848,
     "??1BuildingLightClass@@UAE@XZ": 4403952,
     "?unknown_slot87@UnitClass@@UAEXABUCoordStruct@@_N1@Z": 7369424,

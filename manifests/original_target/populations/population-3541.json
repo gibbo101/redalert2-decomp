@@ -4,8 +4,8 @@
     "id": "population-3541",
     "inventory_sha256": "d181ce7912ed6f28b63767da0be8606fd0de305ea73572b1a1354fff4c381db7",
     "gaps_sha256": "78fa81f343c9c1b425ebcd7773e63804a8dbc6192b5cb218eb0079c57cdf2f58",
-    "historical_population_sha256": "c1d13990fe0c415541454fcb2995bf892099389b299472bfe463350039fea031",
-    "historical_acceptance_sha256": "24371b802b45459966a5ea2330c2cc3abf06a206a25d560badbbd5e587c74214"
+    "historical_population_sha256": "2a4b4be757f0daf699afa120d98b3b587ba9f8387c31d430da8954d60e6e1fbb",
+    "historical_acceptance_sha256": "1020e4cc0cd6d52a4787a6b7dc298e35a41d12870c2ca599fec9dc1919a039f5"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7916,7 +7916,7 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?unknown_47c080@CellClass@@QAEXXZ": 4702336,
     "?FUN_006f8a00@seed_006f8a00@@YIXH@Z": 7309824,
@@ -8463,7 +8463,7 @@
     "??_EMultiplayerGameMode@@UAEPAXI@Z": 6000144,
     "??_ETubeClass@@UAEPAXI@Z": 7272720,
     "?Init_Drawer@CellClass@@QAEXPAVLightConvertClass@@HHHHH@Z": 4690160,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?Draw_Shroud_And_Fog@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674848,
     "?Draw_Shroud_Or_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670048,
     "?Draw_Fog_Shape@CellClass@@QAEXABUPoint2D@@ABVRect@@H@Z": 4670736,
@@ -8741,7 +8741,7 @@
     "?Release@ReferenceCounted@@UAEXXZ": 6526752,
     "?AI@VoxelAnimClass@@UAEXXZ": 7394176,
     "?Unknown_0047F600@@YIXUCoordStruct@@HPAVWarheadTypeClass@@HH@Z": 4716032,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "?unknown_slot147@AircraftClass@@UAEHXZ": 4280848,
     "??1BuildingLightClass@@UAE@XZ": 4403952,
     "?unknown_slot87@UnitClass@@UAEXABUCoordStruct@@_N1@Z": 7369424,

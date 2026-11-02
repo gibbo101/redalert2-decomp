@@ -4,8 +4,8 @@
     "id": "population-2573",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "b79c1a5af3e1a9487565454c7b34c9096c116dcfd664ff88c94a61791c8aeedd",
-    "historical_acceptance_sha256": "719553b1a1c74cf86d7052cc7be7815cb14858eaa9647780e581d89cd1c58cc1"
+    "historical_population_sha256": "2e9aec95511baf585d8dda88b85e89cd20abae8cf3346c0250d0866363b6d7ac",
+    "historical_acceptance_sha256": "28a25ff6b807837d5cfcd629526b87ae1ed4f530c08c30e4801735232a0eebaf"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7612,7 +7612,7 @@
     "?unknown_4788e0@CellClass@@QBE_NXZ": 4688096,
     "?unknown_478950@CellClass@@QBE_NXZ": 4688208,
     "?unknown_4789d0@CellClass@@QAE_NXZ": 4688336,
-    "?unknown_47c3a0@CellClass@@QAE_NH_N@Z": 4703136,
+    "?unknown_47c3a0@CellClass@@QAE_NHH@Z": 4703136,
     "?unknown_47ce70@CellClass@@QBEHXZ": 4705904,
     "?unknown_47c080@CellClass@@QAEXXZ": 4702336,
     "??_7FoggedObjectClass@@6B@": 7999816,
@@ -8245,7 +8245,7 @@
     "??0EventClass@@QAE@HHHHHABVCell@@@Z": 4940784,
     "?unknown_476cc0@CellClass@@QAE_NPAVObjectClass@@@Z": 4680896,
     "?unknown_5159b0@@YIXH_N@Z": 5331376,
-    "?unknown_478a40@CellClass@@QAEXH@Z": 4688448,
+    "?Spread_Tiberium@CellClass@@QAE_N_N@Z": 4688448,
     "?Get_Node@IPXAddressClass@@QAEXQAE@Z": 5387552,
     "?Init_IO@ScrollClass@@UAEXXZ": 4247872,
     "?Shutdown@NullModemClass@@QAEXXZ": 6096240,
@@ -8532,7 +8532,7 @@
     "?Release@ReferenceCounted@@UAEXXZ": 6526752,
     "?AI@VoxelAnimClass@@UAEXXZ": 7394176,
     "?Unknown_0047F600@@YIXUCoordStruct@@HPAVWarheadTypeClass@@HH@Z": 4716032,
-    "?unknown_478ba0@CellClass@@QAE_N_N@Z": 4688800,
+    "?Can_Tiberium_Germinate@CellClass@@QAE_NPAVTiberiumClass@@@Z": 4688800,
     "__real@8@3ff99da7b584ce88b000": 8054264,
     "?unknown_slot147@AircraftClass@@UAEHXZ": 4280848,
     "??1BuildingLightClass@@UAE@XZ": 4403952,
