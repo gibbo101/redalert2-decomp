@@ -466,7 +466,13 @@ bool DynamicVectorClass<T>::Add(T const &object)
 {
     if (ActiveCount >= Length()) {
         if ((IsAllocated || !VectorMax) && GrowthStep > 0) {
+#ifdef VECTOR_ADD_NAMED_LENGTH
+            int new_length = Length();
+            new_length += GrowthStep;
+            if (!Resize(new_length)) {
+#else
             if (!Resize(Length() + GrowthStep)) {
+#endif
                 return false;
             }
         } else {
