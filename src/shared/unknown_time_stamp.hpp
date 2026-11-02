@@ -12,4 +12,7 @@ struct UnknownTimeStamp_004d0040 {
 
 extern UnknownTimeStamp_004d0040 unknown_time_stamp_866074;   // 0x00866074
 
+// Milliseconds since the startup time stamp 0x00866074 (0x004D0070; unreferenced).
+int unknown_milliseconds_004d0070();
+
 #endif
