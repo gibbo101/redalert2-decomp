@@ -6,7 +6,7 @@
 
 | Directory under `src/recovered/` | Regions | Body bytes | Descriptive names | Address range |
 | --- | ---: | ---: | ---: | --- |
-| [unowned](../src/recovered/unowned/) | 1246 | 273,452 | 1246 | 0x00401000–0x0078FB6B |
+| [unowned](../src/recovered/unowned/) | 1250 | 273,692 | 1250 | 0x00401000–0x0078FB6B |
 | [classes/MapClass](../src/recovered/classes/MapClass/) | 181 | 86,619 | 181 | 0x0049ED10–0x0056A9D0 |
 | [classes/RulesClass](../src/recovered/classes/RulesClass/) | 51 | 74,018 | 51 | 0x00640460–0x00654100 |
 | [classes/BuildingClass](../src/recovered/classes/BuildingClass/) | 181 | 64,989 | 181 | 0x00438A60–0x004D3450 |
@@ -466,7 +466,6 @@
 | [classes/VectorClass_unsigned_char_ptr](../src/recovered/classes/VectorClass_unsigned_char_ptr/) | 8 | 512 | 6 | 0x0076D600–0x0076D8C0 |
 | [classes/VectorClass_unsigned_short](../src/recovered/classes/VectorClass_unsigned_short/) | 8 | 510 | 6 | 0x0042AEB0–0x0042B4C0 |
 | [classes/DynamicVectorClass_AITriggerTypeDistribution](../src/recovered/classes/DynamicVectorClass_AITriggerTypeDistribution/) | 4 | 509 | 4 | 0x006C0360–0x006C08D0 |
-| [classes/DynamicVectorClass_AcceleratorTracker](../src/recovered/classes/DynamicVectorClass_AcceleratorTracker/) | 6 | 507 | 3 | 0x005B5E60–0x005B6960 |
 | [classes/VectorClass_tagCONNECTDATA](../src/recovered/classes/VectorClass_tagCONNECTDATA/) | 7 | 505 | 5 | 0x00493100–0x004936A0 |
 | [classes/RLEBlitTransLucent25AlphaZRead_unsigned_short](../src/recovered/classes/RLEBlitTransLucent25AlphaZRead_unsigned_short/) | 2 | 502 | 1 | 0x0048B760–0x0048D730 |
 | [classes/RLEBlitTransLucent75AlphaZRead_unsigned_short](../src/recovered/classes/RLEBlitTransLucent75AlphaZRead_unsigned_short/) | 2 | 502 | 1 | 0x0048B3F0–0x0048D6B0 |
@@ -503,6 +502,7 @@
 | [classes/DynamicVectorClass_PlanningBranchClass_ptr](../src/recovered/classes/DynamicVectorClass_PlanningBranchClass_ptr/) | 6 | 449 | 4 | 0x0061A980–0x0061BB00 |
 | [classes/Cell](../src/recovered/classes/Cell/) | 4 | 447 | 4 | 0x0042AD30–0x0058DB50 |
 | [classes/IonStormClass](../src/recovered/classes/IonStormClass/) | 6 | 447 | 6 | 0x0051F110–0x0051F290 |
+| [classes/DynamicVectorClass_AcceleratorTracker](../src/recovered/classes/DynamicVectorClass_AcceleratorTracker/) | 5 | 446 | 3 | 0x005B6270–0x005B6960 |
 | [classes/DynamicVectorClass_AngerStruct](../src/recovered/classes/DynamicVectorClass_AngerStruct/) | 5 | 446 | 3 | 0x004F6C60–0x004F8580 |
 | [classes/DynamicVectorClass_ScoutStruct](../src/recovered/classes/DynamicVectorClass_ScoutStruct/) | 5 | 446 | 3 | 0x004F6CD0–0x004F8620 |
 | [classes/ApplicationClass](../src/recovered/classes/ApplicationClass/) | 12 | 444 | 10 | 0x00426B00–0x00426E50 |
@@ -599,7 +599,6 @@
 | [classes/Blitter](../src/recovered/classes/Blitter/) | 12 | 417 | 11 | 0x0048C7B0–0x00775B30 |
 | [classes/DynamicVectorClass_ConvertClass_ptr](../src/recovered/classes/DynamicVectorClass_ConvertClass_ptr/) | 6 | 417 | 4 | 0x004835B0–0x0048DC20 |
 | [classes/DynamicVectorClass_EgoClass_ptr](../src/recovered/classes/DynamicVectorClass_EgoClass_ptr/) | 6 | 417 | 4 | 0x004B35A0–0x004B4640 |
-| [classes/DynamicVectorClass_HWND___ptr](../src/recovered/classes/DynamicVectorClass_HWND___ptr/) | 6 | 417 | 4 | 0x005B5DE0–0x005B68C0 |
 | [classes/DynamicVectorClass_IsometricTileTypeClass__TileInsertType_ptr](../src/recovered/classes/DynamicVectorClass_IsometricTileTypeClass__TileInsertType_ptr/) | 6 | 417 | 4 | 0x00528590–0x0052ED40 |
 | [classes/VectorClass_PlanningMemberClass_ptr](../src/recovered/classes/VectorClass_PlanningMemberClass_ptr/) | 6 | 412 | 4 | 0x0061A970–0x0061BA10 |
 | [classes/BlowPipe](../src/recovered/classes/BlowPipe/) | 3 | 408 | 3 | 0x00435690–0x00435800 |
@@ -671,6 +670,7 @@
 | [classes/DynamicVectorClass_FileEntryClass_ptr](../src/recovered/classes/DynamicVectorClass_FileEntryClass_ptr/) | 5 | 356 | 4 | 0x0053CA70–0x0053CD80 |
 | [classes/DynamicVectorClass_FoggedObjectClass_ptr](../src/recovered/classes/DynamicVectorClass_FoggedObjectClass_ptr/) | 5 | 356 | 4 | 0x00453D80–0x00454850 |
 | [classes/DynamicVectorClass_GraphicMenuItem_ptr](../src/recovered/classes/DynamicVectorClass_GraphicMenuItem_ptr/) | 5 | 356 | 4 | 0x004DEF30–0x004DF290 |
+| [classes/DynamicVectorClass_HWND___ptr](../src/recovered/classes/DynamicVectorClass_HWND___ptr/) | 5 | 356 | 4 | 0x005B6210–0x005B68C0 |
 | [classes/DynamicVectorClass_HouseClass__BuildChoiceClass_ptr](../src/recovered/classes/DynamicVectorClass_HouseClass__BuildChoiceClass_ptr/) | 5 | 356 | 4 | 0x004F6D40–0x004F86C0 |
 | [classes/DynamicVectorClass_HouseTypeClass_ptr](../src/recovered/classes/DynamicVectorClass_HouseTypeClass_ptr/) | 5 | 356 | 4 | 0x004D51F0–0x004DCA50 |
 | [classes/DynamicVectorClass_IConnectionPoint_ptr](../src/recovered/classes/DynamicVectorClass_IConnectionPoint_ptr/) | 5 | 356 | 4 | 0x00493060–0x00493670 |
@@ -1423,7 +1423,7 @@
 | [classes/exception](../src/recovered/classes/exception/) | 1 | 13 | 0 | 0x0078B1E7–0x0078B1E7 |
 | [classes/MovieHandle](../src/recovered/classes/MovieHandle/) | 1 | 7 | 1 | 0x005A1BA0–0x005A1BA0 |
 
-1416 directories, 17351 regions. Generated by `tools/original_target/source_index.py`.
+1416 directories, 17353 regions. Generated by `tools/original_target/source_index.py`.
 
 <!-- /generated:units -->
 
