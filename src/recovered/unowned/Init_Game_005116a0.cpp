@@ -262,7 +262,8 @@ int __fastcall Init_Game()
         return -1;
     }
 
-    unknown_surface_83995c = unknown_surface_839954;
+    Surface *hidden = unknown_surface_839954;
+    unknown_surface_83995c = hidden;
 
     Debug_Printf("Reading SOUND.INI\n");
     CCFileClass voc_file("SOUND.INI");

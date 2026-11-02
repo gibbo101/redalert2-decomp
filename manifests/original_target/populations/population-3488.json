@@ -4,8 +4,8 @@
     "id": "population-3488",
     "inventory_sha256": "8e698384afa4268acb80de1365ffefaec222ff2adaa54c93ff6ef8e0c576c4a2",
     "gaps_sha256": "e2436c29b114102efa4db5e2a742c675a4c05537f532d7e191ca94b99427cf3c",
-    "historical_population_sha256": "15a5fbc2b9175b895fd0adf72b1c31bc89091593b64c666afb26d384758eb976",
-    "historical_acceptance_sha256": "2214591cbc33bf5b3b51f618c3a20907038f94f79f6e26fd37b6c32b8fa69b75"
+    "historical_population_sha256": "6d210665bfaf223f1a115a4403b8b59ace7e3b41e263cf722aaae71741982973",
+    "historical_acceptance_sha256": "2103fd723d90bfca3a0c3220c5a1c5b6778d687c093b4391a2eef6b565f8bbd4"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2312,7 +2312,7 @@
     "?Release@?$TClassFactory@VCampaignClass@@@@UAGKXZ": 6891776,
     "?Release@?$TClassFactory@VAlphaShapeClass@@@@UAGKXZ": 6914816,
     "??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z": 4732496,
-    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
     "?Get_Rect@MSShapeAnim@@UAE?AVRect@@XZ": 5950720,
     "??_7TacticalClass@DisplayClass@@6B@": 7989396,
     "??0MSEngine@@QAE@XZ": 5975008,

@@ -4,8 +4,8 @@
     "id": "population-3005",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "add22f5f565f8f5b6e15e93d395f0e5854514efad9e81af959d7141ca786570c",
-    "historical_acceptance_sha256": "b12968afba5c3e77c694f12e13826c6e6c6d8a5c5bab611de8e3ba274e529cda"
+    "historical_population_sha256": "409cf426d844d353f9b525c43ac6dac6d1d7c3fc53c243d272c2841d96063cd8",
+    "historical_acceptance_sha256": "9a63f9535c2f83fc41b8d479bda4200f075f6c76e5f0d5c82cc8e6c607ac4517"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3963,7 +3963,7 @@
     "?unknown_surface_839958@@3PAVSurface@@A": 8624472,
     "?unknown_surface_839950@@3PAVSurface@@A": 8624464,
     "??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z": 4732496,
-    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
     "?To_Lower@Wstring@@QAEXXZ": 7794208,
     "?Get_Token@WideString@@QBEHHPBGAAV1@@Z": 7802192,
     "?Get_Token@Wstring@@QBEHHPBDAAV1@@Z": 7795200,
@@ -6716,7 +6716,7 @@
         {
           "offset": 17,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468

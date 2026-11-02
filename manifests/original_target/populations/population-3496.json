@@ -4,8 +4,8 @@
     "id": "population-3496",
     "inventory_sha256": "9b8eb02ecb80b6423ced77282142d072c50191403a46461a36c785c05d162440",
     "gaps_sha256": "c3018d206b8641e5fc154e9d77bd1e09f064ed44933cc1360dbb679091634db5",
-    "historical_population_sha256": "559f2eb2b1ebb17710b0053a5c712b430421bffc3377fb019246fb0cd2e3fb9e",
-    "historical_acceptance_sha256": "321f3a605a89aafc256fa119ff70f34c812541a1008cf3539be44a0d6e1849b5"
+    "historical_population_sha256": "24b6f0e2efdb6dfc1b53a9b0553ef52a5706831ee69282d41f44bf36186a7f48",
+    "historical_acceptance_sha256": "c0c93f03c708c873fde366ead2fe853f8fba68c73c86b95436cc5ba3f7685fd1"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2943,7 +2943,7 @@
     "__imp__GetClientRect@8": 7972024,
     "__imp__ClientToScreen@8": 7972012,
     "?unknown_surface_839950@@3PAVSurface@@A": 8624464,
-    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
     "??0CCFileClass@@QAE@PBD@Z": 4624208,
     "??1Buffer@@QAE@XZ": 4424720,
     "??1BufferIOFileClass@@UAE@XZ": 4387664,
@@ -6062,7 +6062,30 @@
     "?Read_INI@UnknownPreview_0061D430@@QAE_NABVCCINIClass@@@Z": 6414032,
     "??_7ParticleClass@@6B@": 8027484,
     "??_EMSAnim@@UAEPAXI@Z": 5962912,
-    "??_EParticleClass@@UAEPAXI@Z": 6334432
+    "??_EParticleClass@@UAEPAXI@Z": 6334432,
+    "?Draw@Anim@Voices@WorldDominationTour@@UAEXPAVSurface@@PBVRect@@@Z": 7547856,
+    "?Unknown_Slot8@Anim@Voices@WorldDominationTour@@UAEXH@Z": 7547936,
+    "?Unknown_Slot7@Anim@Voices@WorldDominationTour@@UAE_NXZ": 7547920,
+    "??0LaserDrawClass@@QAE@UCoordStruct@@0H_NVRGBClass@@22H11MM@Z": 5452048,
+    "??1LaserDrawClass@@QAE@XZ": 5452384,
+    "?AI@LogicClass@@QAEXXZ": 5494928,
+    "?AI@KamikazeTrackerClass@@QAEXXZ": 5445568,
+    "?unknown_slot27@MapClass@@QAEXXZ": 5563136,
+    "__real@8@3ffef333333333333000": 7986032,
+    "?Action@CheckBoxClass@@UAEHIAAI@Z": 4706928,
+    "__real@4@3ffecccccd0000000000": 8055372,
+    "?Draw_It@LaserDrawClass@@QAEXXZ": 5453040,
+    "__real@8@40078cccccccccccd000": 8001480,
+    "__real@8@4006b333333333333000": 8001472,
+    "__real@8@4006ccccccccccccd000": 8001464,
+    "?AI@TemporalClass@@UAEXXZ": 7217712,
+    "?Action@SliderClass@@UAEHIAAI@Z": 6834960,
+    "?unknown_slot16@UDPInterfaceClass@@UAEHHHHH@Z": 7785792,
+    "__real@8@3fff8cccccccccccd000": 8008416,
+    "?Length@CoordStruct@@QBEHXZ": 4306816,
+    "__real@4@4004f000000000000000": 8030276,
+    "?Pause@Anim@Voices@WorldDominationTour@@UAEXXZ": 7547728,
+    "?Get_Rect@Anim@Voices@WorldDominationTour@@UAE?AVRect@@XZ": 7547872
   },
   "regions": [
     {
@@ -9242,7 +9265,7 @@
         {
           "offset": 29,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468
@@ -9258,7 +9281,7 @@
         {
           "offset": 117,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468
@@ -9266,7 +9289,7 @@
         {
           "offset": 139,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468
@@ -9274,7 +9297,7 @@
         {
           "offset": 186,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468
@@ -9322,7 +9345,7 @@
         {
           "offset": 283,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468
@@ -9336,7 +9359,7 @@
           "resolved": 8624464
         }
       ],
-      "source_sha256": "a899ad71da6b44341b9a0c3767c3e04f1118f1c9f24565b91f763e489b6ba8a6",
+      "source_sha256": "1e48020c777a354073e85e4d9963a7d8e7f67397a578b277bcb72ae29961813a",
       "source": "src/recovered/Movie/Movie_Blit_To_Screen_Hidden_005a0ec0.cpp",
       "population": "population-3496",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",

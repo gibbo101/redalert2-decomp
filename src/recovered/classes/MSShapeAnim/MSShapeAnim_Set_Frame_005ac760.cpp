@@ -3,7 +3,7 @@
 // differs, and clamps to the last frame.
 #include "shared/ms_anim.hpp"
 #include "shared/dsurface.hpp"
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?unknown_surface_839958@@3PAVSurface@@A=00839958
 
 void MSShapeAnim::Set_Frame(int frame)

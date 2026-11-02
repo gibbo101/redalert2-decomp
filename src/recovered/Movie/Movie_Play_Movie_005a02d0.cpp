@@ -24,7 +24,7 @@
 // @ref ??_C@_0BH@CNON@Play_Movie?$CI?$CJ?5as?5Bink?$CB?6?$AA@=007e3284
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
 // @ref ?WWMouse@@3PAVMouse@@A=00839c68
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?Blit@GScreenClass@@SIX_NPAVSurface@@PBVRect@@@Z=004e0c90
 // @ref ??0BinkClass@@QAE@PBD@Z=0042fe70
 // @ref ??1BinkClass@@QAE@XZ=0042fee0

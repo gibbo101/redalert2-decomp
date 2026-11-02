@@ -4,8 +4,8 @@
     "id": "population-3469",
     "inventory_sha256": "1a51853dfd82682b6af93b90293ccba5210b8a951412b468bfb1f1ed14fbc3ab",
     "gaps_sha256": "ee33637ef51c177eeeaef3469ca47f18d9415d26999b1c82ae40077c7c6a6e6c",
-    "historical_population_sha256": "459bfb32d0946fb19669bb7743dc4270d950083089724f03dd1e0685e4377555",
-    "historical_acceptance_sha256": "27e6e5412e4e788fa9d82249d911a232ec12e9e5ac65811c728fff5222e13d7b"
+    "historical_population_sha256": "c29aa59c208fa2c0ec437253584bb78a29bfff95a0155a175f9b1685d59a2445",
+    "historical_acceptance_sha256": "7fd4a2e2d87fd3fac163265f80103eb2c556eaf1a306895cf9973e5b9e8e4ecc"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1571,7 +1571,7 @@
     "?unknown_8523e4@@3HA": 8725476,
     "?unknown_dialog_box_5eab60@@YIHHP6GHPAUHWND__@@IIJ@Z_N@Z": 6204256,
     "?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A": 10736272,
-    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
     "?MP_Score_Dialog_Proc_005AAE40@@YGHPAUHWND__@@IIJ@Z": 5942848,
     "??_C@_0BD@OOCG@D?3?2Ra2?2MPScore?4cpp?$AA@": 8279480,
     "??_C@_0BG@MFEO@TXT_TIME_FORMAT_HOURS?$AA@": 8197484,
@@ -8115,7 +8115,17 @@
     "??_E?$DynamicVectorClass@USubzoneTrackingStruct@@@@UAEPAXI@Z": 5686160,
     "??_E?$DynamicVectorClass@V?$rc_ptr@VTerritory@WorldDominationTour@@@@@@UAEPAXI@Z": 7518640,
     "??_E?$DynamicVectorClass@VWstring@@@@UAEPAXI@Z": 6768720,
-    "??_E?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEPAXI@Z": 5040944
+    "??_E?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEPAXI@Z": 5040944,
+    "__real@4@3fef8000800000000000": 7981712,
+    "__real@4@4004fc00000000000000": 7986596,
+    "__real@8@3fff9999999999999800": 7986600,
+    "__real@8@3ffef333333333333000": 7986032,
+    "__real@4@3ffecccccd0000000000": 8055372,
+    "__real@8@40078cccccccccccd000": 8001480,
+    "__real@8@4006b333333333333000": 8001472,
+    "__real@8@4006ccccccccccccd000": 8001464,
+    "__real@8@3fff8cccccccccccd000": 8008416,
+    "__real@4@4004f000000000000000": 8030276
   },
   "regions": [
     {
@@ -9115,7 +9125,7 @@
         {
           "offset": 44,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468
@@ -9131,7 +9141,7 @@
         {
           "offset": 79,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468
@@ -9163,7 +9173,7 @@
         {
           "offset": 111,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468
@@ -9179,7 +9189,7 @@
         {
           "offset": 126,
           "kind": 6,
-          "symbol": "?unknown_surface_839954@@3PAVDSurface@@A",
+          "symbol": "?unknown_surface_839954@@3PAVSurface@@A",
           "target": 8624468,
           "addend": 0,
           "resolved": 8624468
@@ -9201,7 +9211,7 @@
           "resolved": 1343456
         }
       ],
-      "source_sha256": "bfbe03372f3ef901d6cef52c4e719f53d20945650e17e93327e8e21314f1ddcc",
+      "source_sha256": "e7a4e2be505681f58f0f8af58a63e581dc32b2c2db6b7db8529cac22c27568b7",
       "source": "src/recovered/MPScore/UnknownScore_005AAA20_Presentation_005aaa40.cpp",
       "population": "population-3469",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",

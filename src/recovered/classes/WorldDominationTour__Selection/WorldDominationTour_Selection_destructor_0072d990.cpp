@@ -34,7 +34,7 @@ Selection::~Selection()
 // @ref ??_7?$rc_ptr@VMap@WorldDominationTour@@@@6B@=007af1e4
 // @ref ?Queue_Song@ThemeClass@@QAEXH@Z=006e7e20
 // @ref ?Theme@@3VThemeClass@@A=00a35d78
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?unknown_surface_839958@@3PAVSurface@@A=00839958
 // @ref ?BitFont@@3PAVBitFontClass@@A=0084e9e8
 // @ref ?Set_Color@BitFontClass@@QAEGG@Z=00431430

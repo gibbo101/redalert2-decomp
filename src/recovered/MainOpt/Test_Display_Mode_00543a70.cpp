@@ -11,7 +11,7 @@
 // @ref __imp__SetWindowLongA@12=0079a488
 // @ref __imp__PostMessageA@16=0079a470
 // @ref ?WWMouse@@3PAVMouse@@A=00839c68
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?unknown_surface_83995c@@3PAVSurface@@A=0083995c
 // @ref ?Options@@3VOptionsClass@@A=00a40b18
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0

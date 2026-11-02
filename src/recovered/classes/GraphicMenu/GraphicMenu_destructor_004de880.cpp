@@ -17,7 +17,7 @@
 // @ref ??_GGraphicMenu@@UAEPAXI@Z=004def10
 // @ref ??_7?$VectorClass@PAVGraphicMenuItem@@@@6B@=007a2b64
 // @ref ?unknown_surface_839950@@3PAVSurface@@A=00839950
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?unknown_surface_839958@@3PAVSurface@@A=00839958
 typedef VectorCursor<GraphicMenuItem *, DynamicVectorClass<GraphicMenuItem *> > GraphicMenuCursor;
 

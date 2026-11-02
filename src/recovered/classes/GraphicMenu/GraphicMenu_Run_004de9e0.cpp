@@ -14,7 +14,7 @@
 // @ref ?Play_Song@ThemeClass@@QAEHH@Z=006e7eb0
 // @ref ?Queue_Song@ThemeClass@@QAEXH@Z=006e7e20
 // @ref ?unknown_surface_839950@@3PAVSurface@@A=00839950
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?unknown_surface_839958@@3PAVSurface@@A=00839958
 // @ref ?WWKeyboard@@3PAVWWKeyboardClass@@A=00832468
 // @ref ?Clear@WWKeyboardClass@@QAEXXZ=005329f0

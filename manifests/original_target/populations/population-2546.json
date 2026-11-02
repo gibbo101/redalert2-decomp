@@ -4,8 +4,8 @@
     "id": "population-2546",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "74c24db42d1e6c75b06f0858cdedf37f14d34d776c46b355da8d47c0df9508fe",
-    "historical_acceptance_sha256": "a53e5ddf651e1732d05e6c1761deee2eafd63129acacd0395bdcbf956bfad124",
+    "historical_population_sha256": "fb5b20b5ad19d127728c408d4cac08d75a87e83f28631648631eaff279a1f2e5",
+    "historical_acceptance_sha256": "4e6f19612be1bd196425317cafb6f2be5101daa00f3aa81c753e24c468bd018b",
     "separate_units": true
   },
   "references": {
@@ -799,7 +799,7 @@
     "??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z": 4732496,
     "??0MSShapeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@H_NH@Z": 5949088,
     "?Set_Frame@MSShapeAnim@@QAEXH@Z": 5949280,
-    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
     "?Get_Rect@MSShapeAnim@@UAE?AVRect@@XZ": 5950720,
     "?Clear@MapSelectData@@QAEXXZ": 5965616,
     "?Length@WideString@@QBEIXZ": 7799968,

@@ -4,8 +4,8 @@
     "id": "population-3486",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "84b20ef64348fc14ff94bd1906c1fd230e4b00096c69e24c89f2632fc326919e",
-    "historical_acceptance_sha256": "45476c9317616cbcb02badc03fc2ee7fb5d74e356c9ae12015122345ec8a1480"
+    "historical_population_sha256": "dc17aa5ec9f4233eafb100c76fdf51789a093d4064c96f62fb470188981edd35",
+    "historical_acceptance_sha256": "f7e146169c4960958188f39268e786d9fb1fcc3ad53e3d863c4541b19a957bf3"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3413,7 +3413,7 @@
     "?Load@MSFont@@QAE_N_N@Z": 5980112,
     "?Load_Alloc_Data@@YIPAXAAVFileClass@@@Z": 4805168,
     "??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z": 4732496,
-    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
     "??0MSEngine@@QAE@XZ": 5975008,
     "??_7MSEngine@@6B@": 8024104,
     "?Replace_Anim@MSEngine@@QAEXPAVMSAnim@@0@Z": 5975504,

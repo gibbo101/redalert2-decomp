@@ -4,8 +4,8 @@
     "id": "population-2819",
     "inventory_sha256": "6165e5be5ba255fb5f909aae870d3cc0e56deb3364aea8d4ac7fc07fed878b2c",
     "gaps_sha256": "039c7eacdbb9212c1b3c79c8e42e83b331d071f0a179627c7b71b140b012e273",
-    "historical_population_sha256": "de53745c393ebb1d6dc445f761cb59a285fa56330937dc004145dacc67c88ccd",
-    "historical_acceptance_sha256": "92691c6617f6257b1e03715728211272491337039c1ce7a75db3a4b02e29ff7e"
+    "historical_population_sha256": "24b18333e0d69c21ab1bbe6fabf6c15a823b5e65f05918722d98998b1e4ab13d",
+    "historical_acceptance_sha256": "5ae4350ff113ca1c468c5f5bf94ad2056611a9e0a0c7c41ef1e5227776eb7f17"
   },
   "references": {
     "_unknown_empty_rect": 10751592,
@@ -2462,7 +2462,7 @@
     "??0MSShapeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@H_NH@Z": 5949088,
     "?unknown_load_shape_495310@@YIPAUShapeFileStruct@@ABVWstring@@PA_N@Z": 4805392,
     "?Set_Frame@MSShapeAnim@@QAEXH@Z": 5949280,
-    "?unknown_surface_839954@@3PAVDSurface@@A": 8624468,
+    "?unknown_surface_839954@@3PAVSurface@@A": 8624468,
     "?Get_Rect@MSShapeAnim@@UAE?AVRect@@XZ": 5950720,
     "??0MSFadeAnim@@QAE@ABVWstring@@HHPAVConvertClass@@HHPAV?$DynamicVectorClass@PAVMSAnim@@@@@Z": 5950896,
     "??_7MSFadeAnim@@6B@": 8023436,

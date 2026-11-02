@@ -11,7 +11,7 @@
 // @ref __imp__GetClientRect@8=0079a4b8
 // @ref __imp__ClientToScreen@8=0079a4ac
 // @ref ?unknown_surface_839950@@3PAVSurface@@A=00839950
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 
 void Movie_Blit_To_Screen_Hidden()
 {

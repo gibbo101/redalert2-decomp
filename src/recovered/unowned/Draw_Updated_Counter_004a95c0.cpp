@@ -12,7 +12,7 @@ void __fastcall unknown_blit_49f3a0(Surface &dest,void *convert,Surface &source,
 // @ref ?counter_previous_text_00852ab8@@3PAGA=00852ab8
 // @ref ?counter_text_format_007d61ec@@3QBGB=007d61ec
 // @ref ?counter_scheme_007d61e4@@3QBDB=007d61e4
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref _swprintf=00783764
 // @ref ?Font_For_Style@@YIPAVBitFontClass@@H@Z=00497a50
 // @ref ?String_Pixel_Width@BitFontClass@@QBEHPBGH@Z=00431690

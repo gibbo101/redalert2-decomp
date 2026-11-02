@@ -10,7 +10,7 @@
 // @ref ?unknown_volume_84e9a8@@3MA=0084e9a8
 // @ref ?unknown_create_companion_69b190@@YIPAVVQAMovieCompanion@@PBD@Z=0069b190
 // @ref ?unknown_surface_839950@@3PAVSurface@@A=00839950
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?MainWindow@@3PAUHWND__@@A=00b263d8
 // @ref ?Debug_Printf@@YAXPBDZZ=004068f0
 // @ref __real@4@400e8000000000000000=0079c780

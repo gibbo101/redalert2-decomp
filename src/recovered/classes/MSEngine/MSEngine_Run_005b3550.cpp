@@ -6,7 +6,7 @@
 // @ref ?unknown_4961d0@@YAXXZ=004961d0
 // @ref ?unknown_5b5ee0@@YAXXZ=005b5ee0
 // @ref ?unknown_flag_a40d28@@3_NA=00a40d28
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref __imp__Sleep@4=0079a1e4
 // Advance the animation engine for the requested number of ticks (005B3550).
 #include "shared/ms_engine.hpp"

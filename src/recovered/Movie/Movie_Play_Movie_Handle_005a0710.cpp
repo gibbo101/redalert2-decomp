@@ -36,5 +36,5 @@ void __fastcall Play_Movie_Handle(char const *name)
 // @ref ?Speech_Hold@@YAXXZ=00716980
 // @ref ?WWKeyboard@@3PAVWWKeyboardClass@@A=00832468
 // @ref ?unknown_audio_paused_a7101c@@3_NA=00a7101c
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?unknown_tick_sound@@YAXXZ=007169f0

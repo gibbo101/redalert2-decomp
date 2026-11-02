@@ -18,7 +18,7 @@
 // @ref ?unknown_surface_839944@@3PAVSurface@@A=00839944
 // @ref ?unknown_surface_839948@@3PAVSurface@@A=00839948
 // @ref ?unknown_surface_839950@@3PAVSurface@@A=00839950
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?unknown_surface_839958@@3PAVSurface@@A=00839958
 // @ref ?unknown_surface_839964@@3PAVSurface@@A=00839964
 // @ref ?unknown_window_839640@@3VRect@@A=00839640
@@ -56,7 +56,7 @@ void Focus_Restore()
             ((DSurface *)unknown_surface_839958)->Restore_Check();
         }
         if (unknown_surface_839954 != 0) {
-            unknown_surface_839954->Restore_Check();
+            static_cast<DSurface *>(unknown_surface_839954)->Restore_Check();
         }
         if (unknown_surface_839964 != 0) {
             if (((DSurface *)unknown_surface_839964)->Restore_Check() && (!unknown_flag_a40d04 || Frame > 0x10)) {

@@ -4,7 +4,7 @@
 #include "shared/wstring.hpp"
 #include "shared/cc_file_class.hpp"
 #include "shared/dsurface.hpp"
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 
 MSVQAnim::MSVQAnim(Wstring const &name, Surface *surface, DynamicVectorClass<MSAnim *> *anims, bool unknown_2c) :
     Movie(0),

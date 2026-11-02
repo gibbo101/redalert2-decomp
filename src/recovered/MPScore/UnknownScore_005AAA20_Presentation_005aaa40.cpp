@@ -20,5 +20,5 @@ void UnknownScore_005AAA20::Presentation_005AAA40()
 // @ref ?unknown_8523e4@@3HA=008523e4
 // @ref ?unknown_dialog_box_5eab60@@YIHHP6GHPAUHWND__@@IIJ@Z_N@Z=005eab60
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
-// @ref ?unknown_surface_839954@@3PAVDSurface@@A=00839954
+// @ref ?unknown_surface_839954@@3PAVSurface@@A=00839954
 // @ref ?MP_Score_Dialog_Proc_005AAE40@@YGHPAUHWND__@@IIJ@Z=005aae40
