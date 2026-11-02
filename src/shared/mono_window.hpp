@@ -45,7 +45,7 @@ void Mono_Window_Show_Requested();                // 0x0059D970
 void Mono_Window_Show();                          // 0x0059D9C0
 void Mono_Window_Hide();                          // 0x0059DA00
 void Mono_Clear_All_Pages();                      // 0x0059DAD0
-void Mono_Window_Create();                        // 0x0059DB30
+void __fastcall Mono_Window_Create();                        // 0x0059DB30
 
 // Modeless dialog registry of the audio file unit (0x00522B20 add, 0x00522B80 remove).
 void __fastcall Unknown_Add_Modeless_Dialog_00522b20(HWND__ *dialog);

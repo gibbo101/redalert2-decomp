@@ -7,7 +7,7 @@
 // @ref ?unknown_mono_requested_a70f09@@3_NA=00a70f09
 // @ref ?unknown_mono_enabled_a70f0a@@3_NA=00a70f0a
 // @ref ?unknown_mono_window_a70f10@@3PAUHWND__@@A=00a70f10
-// @ref ?Mono_Window_Create@@YAXXZ=0059db30
+// @ref ?Mono_Window_Create@@YIXXZ=0059db30
 // @ref __imp__ShowWindow@8=0079a498
 // @ref __imp__SetFocus@4=0079a38c
 
