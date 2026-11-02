@@ -5,6 +5,9 @@
 #ifndef RA2_SHARED_MODEM_HOST_HPP
 #define RA2_SHARED_MODEM_HOST_HPP
 
+// ModemHst.cpp uses MultiMission's inline accessors (shared/multi_mission.hpp); include this header first.
+#define MULTI_MISSION_ACCESSORS
+
 #include "shared/win32_api.hpp"
 #include "shared/unknown_globals.hpp"
 #include "shared/gdlg_supp.hpp"

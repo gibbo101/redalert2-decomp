@@ -32,6 +32,14 @@ public:
     int Unknown_00671F90();
     // Whether the text at +0x58 is a fixed string (0x006720C0).
     bool Unknown_006720C0();
+#ifdef MULTI_MISSION_ACCESSORS
+    // TibSun's inline accessors (session.h MultiMission), only where shared/modem_host.hpp asks for them (the
+    // WOnline.cpp unit's register ties move when MultiMission gains members). Get_Official gives
+    // Send_Options 0x0059BC90 its vector-before-index load.
+    char const *Get_Filename() const { return unknown_58; }
+    char const *Get_Digest() const { return unknown_15c; }
+    bool Get_Official() { return unknown_17c; }
+#endif
     // Copies a description (at most 43 characters; null: MSG:NoDescription) into Description (0x00671FA0;
     // accepted as UnknownDescribed_00671FA0::unknown_set_description, bound by @ref; Make_Random_Map 0x005C84E0).
     void Set_Description_00671FA0(unsigned short const *text);
