@@ -4,8 +4,8 @@
     "id": "population-3739",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "8a291e0ddfc38e9764aa7aabcf5fd28532535ec3ddceb63950869e6b2916ea5c",
-    "historical_acceptance_sha256": "559979075874ee3c7af7d9ba9489c5f8029e5474815bcf7c419a2f07b3c92b50"
+    "historical_population_sha256": "cf6529aba9ecb0793d768ea99fffbf1c1ab22ef60c12dfc18c1f4085684a5575",
+    "historical_acceptance_sha256": "a5a49af9dad0a26a415903362f292fffa951af4f75179aaa1aa34a73f6e80bbc"
   },
   "references": {
     "_isxdigit": 7875508,
@@ -216,14 +216,27 @@
     "__iob": 8580240,
     "__real@8@bff8a3d70a3d70a3d800": 8055152,
     "__purecall": 4950368,
-    "?unknown_hex_value_412390@@YIHPBD@Z": 4268944
+    "?ahtoi@@YIHPBD@Z": 4268944,
+    "??8AbstractTypeClass@@QBE_NPBD@Z": 4261824,
+    "??0AbstractTypeClass@@QAE@ABVNoInitClass@@@Z": 4261600,
+    "??_7AbstractTypeClass@@6BIPersistStream@@@": 7974536,
+    "??_7AbstractTypeClass@@6BIRTTITypeInfo@@@": 7974508,
+    "??_7AbstractTypeClass@@6BINoticeSink@@@": 7974500,
+    "??_7AbstractTypeClass@@6BINoticeSource@@@": 7974492,
+    "??1AbstractTypeClass@@UAE@XZ": 4261696,
+    "??_GAbstractTypeClass@@UAEPAXI@Z": 4262320,
+    "??0AbstractTypeClass@@QAE@PBD@Z": 4261248,
+    "_?entry@?1??Get_Image_0068ca40@UnknownBitmapWriter@@QAEPAVSurface@@PBDH@Z@4UUnknownBitmapEntry@@A": 11260136,
+    "__real@8@c0058000000000000000": 8027384,
+    "??_7AbstractTypeClass@@6B@": 7974536,
+    "??_EAbstractTypeClass@@UAEPAXI@Z": 4262320
   },
   "regions": [
     {
       "entry": 4268944,
       "method": "00412390",
-      "symbol": "?unknown_hex_value_412390@@YIHPBD@Z",
-      "symbol_prefix": "?unknown_hex_value_412390@@YIHPBD@Z",
+      "symbol": "?ahtoi@@YIHPBD@Z",
+      "symbol_prefix": "?ahtoi@@YIHPBD@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -253,13 +266,13 @@
           "resolved": 3606025
         }
       ],
-      "source_sha256": "44cff1e26aa617b14cd1aaa15b77f4f688a081c6969d39f7418273357fe3b6f7",
-      "source": "src/recovered/unowned/unknown_hex_value_412390_00412390.cpp",
+      "source_sha256": "516ebf8d236792909dff8da64c7db899099e7da99b2b8053840d1d5404d8a92b",
+      "source": "src/recovered/unowned/ahtoi_00412390.cpp",
       "population": "population-3739",
       "padding_sha256": "ff35ffe14925642da6f3a258b35811e08101c03f8b5db346e5afcca448677564",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "unknown_hex_value_412390_00412390",
+      "semantic_name": "ahtoi_00412390",
       "source_order": 165602
     }
   ]

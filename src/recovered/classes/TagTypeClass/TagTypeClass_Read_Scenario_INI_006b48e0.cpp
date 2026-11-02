@@ -11,7 +11,7 @@ void __fastcall TagTypeClass::Read_Scenario_INI(CCINIClass &ini)
         char buffer[24];
         if (ini.Get_String(unknown_tags_section_7ac770, entry, unknown_string_83c55c, buffer, sizeof(buffer)) > 0) {
             TagTypeClass *type = Find_Or_Make(entry);
-            SwizzleManager.Here_I_Am(Unknown_00412390(entry), type);
+            SwizzleManager.Here_I_Am(ahtoi(entry), type);
             type->Read_INI(ini);
         }
     }

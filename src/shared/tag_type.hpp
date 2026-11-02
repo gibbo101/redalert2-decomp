@@ -21,8 +21,7 @@ extern "C" GUID const CLSID_TagTypeClass;       // 0x007A1D40
 // The scenario INI section of the tags ("Tags"; a pointer at 0x007AC770).
 extern char const *const unknown_tags_section_7ac770;
 extern "C" __declspec(dllimport) int __cdecl wsprintfA(char *buffer, char const *format, ...);
-// A hexadecimal number written as text (the [Tags] entry names; 0x00412390).
-long __fastcall Unknown_00412390(char const *text);
+#include "shared/ahtoi.hpp"
 // The empty string INI readers default to (0x0083C55C).
 extern char unknown_string_83c55c[];
 extern "C" int __cdecl atoi(char const *string);

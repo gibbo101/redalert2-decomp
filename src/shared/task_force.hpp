@@ -26,9 +26,7 @@ class ObjectClass;
 // Shared with object.hpp (same declaration): releases references to the
 // object being destroyed (name unknown).
 
-// Parses a hexadecimal ID as written by AbstractTypeClass's "%08X" names
-// (name hypothesis).
-long __fastcall unknown_hex_to_long_412390(char const *string);      // 0x00412390
+#include "shared/ahtoi.hpp"
 
 
 extern "C" GUID const CLSID_TaskForceClass;                           // 0x007A1CE0

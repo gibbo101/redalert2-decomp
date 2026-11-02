@@ -8,7 +8,7 @@
 // @ref ??_C@_0L@DFCE@TaskForces?$AA@=007f6da0
 // @ref ?Here_I_Am@SwizzleManagerClass@@UAGJJPAX@Z=0069fba0
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
-// @ref ?unknown_hex_to_long_412390@@YIJPBD@Z=00412390
+// @ref ?ahtoi@@YIHPBD@Z=00412390
 
 void __fastcall TaskForceClass::Read_Scenario_INI(CCINIClass &ini, int is_global)
 {
@@ -19,7 +19,7 @@ void __fastcall TaskForceClass::Read_Scenario_INI(CCINIClass &ini, int is_global
         char const *entry = ini.Get_Entry("TaskForces", index);
         if (ini.Get_String("TaskForces", entry, "", buffer, sizeof(buffer)) > 0) {
             TaskForceClass *taskforce = Find_Or_Make(buffer);
-            SwizzleManager.Here_I_Am(unknown_hex_to_long_412390(buffer), taskforce);
+            SwizzleManager.Here_I_Am(ahtoi(buffer), taskforce);
             taskforce->Read_INI(ini);
             taskforce->IsGlobal = is_global;
         }
