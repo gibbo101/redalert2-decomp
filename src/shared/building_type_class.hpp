@@ -52,6 +52,7 @@ BuildCat __fastcall BuildCat_From_Name(char const *name);       // 0x00457A80
 
 // A 3D point (Westwood's TPoint3D<T>; RTTI names VectorClass<TPoint3D<int>>,
 // vtable 0x0079D2C0).
+#ifndef RA2_COORD_TPOINT3D
 template <class T>
 struct TPoint3D {
     TPoint3D() {}
@@ -73,6 +74,7 @@ struct TPoint3D {
     T Y;
     T Z;
 };
+#endif
 
 // A 16-byte animation name, cleared with memset by the constructor body.
 struct BuildingAnimName {

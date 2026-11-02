@@ -22,7 +22,12 @@ public:
     TPoint3D() {}
     TPoint3D(T x, T y, T z) : TPoint2D<T>(x, y), Z(z) {}
     TPoint3D<T> const operator+(TPoint3D<T> const &point) const {
+#ifdef RA2_TPOINT3D_SUM_X_LOCAL
+        T x = this->X;
+        return TPoint3D<T>(x + point.X, this->Y + point.Y, Z + point.Z);
+#else
         return TPoint3D<T>(this->X + point.X, this->Y + point.Y, Z + point.Z);
+#endif
     }
     T Z;
 };
@@ -215,7 +220,17 @@ public:
 };
 
 #ifdef RA2_COORD_FROM_CELL_INLINE
+#ifdef RA2_COORD_TPOINT3D
+inline CoordStruct::CoordStruct(Cell const &cell, int z) {
+    int x = cell.X * 256 + 128;
+    int y = cell.Y * 256 + 128;
+    X = x;
+    Y = y;
+    Z = z;
+}
+#else
 inline CoordStruct::CoordStruct(Cell const &cell, int z) : X(cell.X * 256 + 128), Y(cell.Y * 256 + 128), Z(z) {}
+#endif
 inline UnknownCoord434820::UnknownCoord434820(Cell const &cell, int z) : CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, z) {}
 #endif
 

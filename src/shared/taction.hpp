@@ -151,6 +151,10 @@ public:
     bool unknown_chem_missile_at_waypoint(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B2860 (a ChemLauncher bullet at waypoint +0x44; false when it cannot be created)
     bool unknown_select_sidebar_tab(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B3010 (selects sidebar tab Data when its strip has buildables)
     bool unknown_sidebar_6822b0(HouseClass *house, ObjectClass *object, TriggerClass *trigger, Cell *cell);   // 0x006B3060 (Map.Unknown_006822B0 with techno type Data and +0x48)
+#ifdef RA2_TACTION_DECLARE_DAMAGE
+    // Five waypoint blasts and bridge redraw, native006AFD80.
+    bool unknown_damage_006afd80(HouseClass *, ObjectClass *, TriggerClass *, Cell *);
+#endif
     static int __fastcall Action_Flags(int type);                       // 0x006B2DF0 (hypothesis)
     // What the value of an action type names (0x006B2AB0; 0x2B, 0x28, 0x0C, 0x22, 0x0B,
     // 0x1A, 0x27, 4, 3, 0x26, 1 are the kinds Build_INI_Entry writes; name hypothesis).
