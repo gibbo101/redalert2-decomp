@@ -59,6 +59,9 @@ class AnimClass;
 class UnknownBulletData {
 public:
     void Initialize_004cee20(CoordStruct const &from, CoordStruct const &to, int arm, int max); // original this+A4, four stack arguments
+    // 0 while the +0x0C timer runs or the target is still closing in; 1 within 32 leptons (half distance) of
+    // unknown_18; 2 when moving away inside 256; otherwise records the half distance (0x004CEEE0).
+    int Proximity_004ceee0(CoordStruct const &coord);
     UnknownBulletData();                                // 0x004CEDF0
     UnknownBulletData(NoInitClass const &noinit) : unknown_00(0), unknown_0c(0) {}
 
