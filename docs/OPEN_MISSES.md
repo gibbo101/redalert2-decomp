@@ -1069,3 +1069,9 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout532 (2026-11-02, closed; 4,135 B landed: Detect 2,447 B, MapRegionClass helpers 1,561 B, region statics 70 B, 0x56D5F0 37 B)
 - Not taken: region list statics 0x56D530/0x56D570 (a guard flag at 0xA6FD40 and extra initializers); the extents of 0x56EAC0 and the 0x56DDA0 split are wrong.
 - 0x56DFF0's .rdata weights at 0x7A5BE0-0x7A5BF0 are bound as extern const double; their names and types are a hypothesis.
+
+## Scout533 / Scout535 (2026-11-02, closed; 0 B)
+- Matrix3D axis-angle ctor 0x58FF50 99.01, operator*(Matrix3D, Vector3) 0x591380 97.67, Pre_Rotate_Y 0x590550 96.59: in each, the original schedules one integer op one or two FP ops later than ours. About 120 variants tried.
+- Find_First_Obstacle 0x4BB890: 98.89. Copy_Nodes_To 0x613550: 94.34.
+- Get_Obstacle 0x4BBAF0: 91.96 -> 97.38 (Scout535 w/best_4bbaf0_97.38.cpp). Named temporaries give the right call order but swapped edi/ebx; without them the registers are right and the call order is wrong.
+- UnknownBeacon Set 0x42DD60: 88.46, but only with an (int x, int y, int z, int house) signature, which would need a rename spec. Preview_Tile 0x52E390: 81.25.

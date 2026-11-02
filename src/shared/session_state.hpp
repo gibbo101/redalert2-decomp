@@ -217,7 +217,7 @@ struct UnknownSessionState {
     DynamicVectorClass<char *> InitStrings;            // +0x28BC
     // The modem call-waiting strings (wide; 0x0066EAA0 adds the four TXT_CWAIT_* texts).
     DynamicVectorClass<unsigned short const *> CallWaitStrings;   // +0x28D4
-    char unknown_28ec[0x290C - 0x28EC];
+    int unknown_frames_behind_28ec[8];       // +0x28EC frames behind per player (also unknown_a3fb84)
     int unknown_290c;                       // +0x290C the ping class (1: below 1000 ms, 2: above)
     bool ViaPacketRouter;                   // +0x2910 (also unknown_flag_a3fba8)
     char unknown_2911[0x292C - 0x2911];
