@@ -451,6 +451,7 @@ public:
     void Unknown_00562EA0();                // 0x00562EA0 (frees the twelve unknown_18 blocks; Prog_End)
     Cell Unknown_00547E90(Cell const &cell);
     Cell Unknown_00547EE0(Cell const &cell);
+    Cell Unknown_00565610(Cell const &cell, int layer, unsigned int subzone); // original00565610; same signature as lightmap view
     Cell Unknown_00547F30(Cell const &cell);
 
     bool unknown_10;                                            // +0x10
