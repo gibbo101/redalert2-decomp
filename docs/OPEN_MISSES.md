@@ -1457,3 +1457,9 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout640 (2026-11-03, closed; 6,897 B landed: Place_Down 0x54AB70, Pick_Up 0x54AF70, Repair_High_Bridge_Span 0x54B560, Repair_Train_Bridge 0x552570)
 - New shared headers: map_overlay.hpp (OverlayClass stand-in), map_cell.hpp +0x140 flags union and TibSun Get_Bridge_Deck_Cell, map_adjacent.hpp Facing_Add/Facing_Sub.
 - Repair_Bridge 0x555A60: 63.60 (one tail merge; frame 0x54 vs 0x48). Damage_Train_Bridge 0x5539B0: codex2 66.45. Likely quick: Repair_Train_Bridge_Span 0x54BE80 (codex2 86.94, the train twin of 0x54B560) and 0x553570 (needs Get_Bridge_Deck_Cell, which now exists). Scout643 continues.
+
+## Scout642 / Scout643 (2026-11-03; landed the BaseNodeClass ctor rename, House wall planner 0x4F5D30 1,399 B, Repair_Train_Bridge_Span 0x54BE80 2,328 B)
+- OWNER DECISION (reversible): 0x4F6BE0 is `BaseNodeClass(int, Cell const &)`, declared only in the House unit (RA2_BASE_NODE_FULL_ARGUMENTS). TibSun's member operator> 0x42BF60 is declared outside its guard so the declaration counter keeps Print_CRCs exact (only offsets -2..0 around HEAD are good). Option: Make_Base_Nodes 0x4EF890 stays exact with the 2-arg ctor, so the hypothetical 4-arg ctor could be retired.
+- House 0x4F2350: 68.39. AI takeover 0x4F4070: 70.90 (not a plain budget shortfall; look for an inline wrapper at the second 0x4F52F0 site). 0x4F03C0 Where_To_Place_Building: codex2 60.23.
+- Bridge walk-loop rows: 0x553570 61.84, 0x555A60 63.60, 0x5539B0 66.07 share one residue (the original hoists only &AdjacentCell[step&7]). Scout645 is studying it. 0x553000 (codex2 78.63) not started.
+- IL sizes measured (Scout642): Cell(int,int) 42, operator+ 66, body-assignment ctor 64, init-list ctor 54, Insert_After 200.

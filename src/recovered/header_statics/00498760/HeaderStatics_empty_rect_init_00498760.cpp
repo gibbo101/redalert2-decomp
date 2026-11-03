@@ -1,3 +1,4 @@
+#define RA2_CELL_AS_COORD
 #define RA2_DISPLAY_START_POS
 #define RA2_DISPLAY_READ_INI
 // Header-static dynamic initializers of the unit at 0x00498760: the shape_file.hpp empty rect and the
