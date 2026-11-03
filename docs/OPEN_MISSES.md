@@ -1320,3 +1320,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - RadarClass Compute_Background 0x630B70 (1,746 B, TibSun radar.cpp): 99.29 (w/rb_best_99.29.cpp). Left: `lea ebp,[eax+1]` vs ours `inc eax; mov ebp,eax` at surf_bottom.
 - Read_PCX_File 0x60D110: the true body is 1,635 B (ends `ret 8` at 0x60D770; the inventory row says 360 B). 89.68 (TibSun pcx.cpp).
 - SpotLightClass::One_Time 0x5DD760 (983 B): 37.01, shape 90.75. It needs a spot_light.hpp overlay and the exact Clear_All 0x5DDB40 rewrite w/ct1.cpp in the same plan.
+
+## Scout610 (2026-11-03, closed; 825 B: Update_Laser_Fence_Connections 0x44DC40 landed, Docking_Coord 0x4440E0 landing; BuildingClass is now population-3894)
+- OWNER DECISION: Docking_Coord keeps its file-local `operator+(CoordStruct const &, TPoint3D<int> const &)`, because DockingOffsets are TPoint3D<int>. It is a hypothesis helper; move it to coord.hpp when a second unit needs it.
+- Mission_Missile 0x448400: 84.70 (w/mm8a.cpp, file-local Velocity class from TibSun velocity.h). It needs a `case 4:` to keep the 5-entry table; the dead-block form used now is not natural. Parked at its time box. Connect_Laser_Fence 0x44DFC0: 66.67. Barrel_Pitch 0x43B7E0: 72.32 (frame 0x3C vs 0x44). 0x4444B0: 34.78.
