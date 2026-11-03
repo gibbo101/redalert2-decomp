@@ -155,6 +155,27 @@ def code_view(text):
     return re.sub(pattern, lambda m: ''.join('\n' if c == '\n' else ' ' for c in m[0]), text)
 
 
+def scalar_partials(body):
+    """Lower supported scalar slices; never guess a different access width.
+
+    Ghidra also emits three-, five-, six- and seven-byte slices. They have no
+    corresponding primitive lvalue here. Refuse those exports rather than
+    silently reading or writing four bytes; a later, evidenced repair can
+    handle their complete expressions. Comments and literals are not slices.
+    """
+    edits = []
+    for match in PARTIAL.finditer(code_view(body)):
+        kind = PARTIAL_TYPES.get(match[3])
+        if kind is None:
+            raise ValueError('Unsupported Ghidra scalar slice width %s: %s' %
+                             (match[3], match[0]))
+        edits.append((match.start(), match.end(),
+                      '(*(%s*)((char*)&%s + %s))' % (kind, match[1], match[2])))
+    for start, end, replacement in reversed(edits):
+        body = body[:start] + replacement + body[end:]
+    return body
+
+
 def scalar_declarations(view):
     """Find simple statement/parameter declarations, including nested scopes.
 
@@ -2593,8 +2614,7 @@ def seed(entry, inventory, accepted, _import_aliases=True, _typed=True):
     body = LABEL.sub(lambda m: m.group(1) + re.sub(r'\W', '_', m.group(2)) + m.group(3), body)
     body = RAM.sub(lambda m: '(*(%s *)0x%s)' % (RAM_TYPES.get(m.group(1), 'int'), m.group(2)), body)
     body = input_record_byte_partials(body, params, ret)
-    body = PARTIAL.sub(lambda m: '(*(%s*)((char*)&%s + %s))' % (PARTIAL_TYPES.get(m.group(3), 'uint'),
-                                                               m.group(1), m.group(2)), body)
+    body = scalar_partials(body)
     body = array_byte_partials(body, params)
     body, scalar_view_notes = scalar_address_views(body, params)
     body, rtti_notes = rtti_address_labels(body)
