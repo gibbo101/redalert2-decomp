@@ -54,7 +54,7 @@ public:
     virtual int unknown_slot14(int index, void *buf, int *buflen, IPXAddressClass *address, unsigned short *product_id, unsigned long *packet_id);   // slot 14 0x00524700 (reads a packet without marking it)
     virtual void unknown_slot15(int index);                             // slot 15 0x00524790 (marks a receive entry read)
     virtual int unknown_slot16(IPXAddressClass *address, unsigned short id);   // slot 16 0x00524AA0 (drops unacknowledged sends to an address)
-    virtual int unknown_slot17(int arg1);                               // slot 17 0x00524870
+    virtual void unknown_slot17(unsigned long age);                     // slot 17 0x00524870 (strips received entries older than age ticks)
 
     void Set_Bridge(NetNumType bridge);                                 // 0x00524A10 (Red Alert's Set_Bridge: clears IsBridge once configured)
 
