@@ -39,6 +39,17 @@ public:
         if ((char *)pointer >= BufferTail) pointer = (unsigned short *)((char *)pointer - BufferSize);
         return pointer;
     }
+    // TibSun zbuffer.h/abuffer.h: ring folds on raw addresses and the
+    // scroll bias (+0x24) less a row.
+    unsigned int Wrap_Overflow(unsigned int position) const {
+        if (position >= (unsigned int)BufferTail) position -= BufferSize;
+        return position;
+    }
+    unsigned int Wrap_Underflow(unsigned int position) const {
+        if (position < (unsigned int)BufferHead) position += BufferSize;
+        return position;
+    }
+    int Get_Scroll_Delta(int position) const { return MaxValue - position; }
     // Advance a scanline pointer by count values and keep it inside the ring,
     // wrapping at the end when direction is positive, at the start otherwise.
     void Advance_Pointer(unsigned short *&pointer, int count, int direction) const {
@@ -81,6 +92,17 @@ public:
         if ((char *)pointer >= BufferTail) pointer = (unsigned short *)((char *)pointer - BufferSize);
         return pointer;
     }
+    // TibSun zbuffer.h/abuffer.h: ring folds on raw addresses and the
+    // scroll bias (+0x24) less a row.
+    unsigned int Wrap_Overflow(unsigned int position) const {
+        if (position >= (unsigned int)BufferTail) position -= BufferSize;
+        return position;
+    }
+    unsigned int Wrap_Underflow(unsigned int position) const {
+        if (position < (unsigned int)BufferHead) position += BufferSize;
+        return position;
+    }
+    int Get_Scroll_Delta(int position) const { return MaxValue - position; }
     unsigned short *Get_Buffer_Ptr(Point2D point);       // 0x00776340, by-value point hypothesis
     Rect Area;                  // +0x00
     int BufferOffset;           // +0x10

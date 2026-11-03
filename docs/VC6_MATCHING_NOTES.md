@@ -1074,3 +1074,6 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Classes whose RTTI mangling is PAV must be declared `class`, not `struct` (ButtonFadeEffect, CrossDissolveEffect).
 - A function-local static with a destructor makes the unit emit its `$E` atexit thunk. Acceptance refuses an @ref binding of that thunk, so the thunk's row must be taken into the plan (0x5C01D0).
 - A static inline accessor used as a sprintf argument is evaluated before the other pushes and moves that load into a callee-saved register (0x5BC940).
+- Refused first inline site (Scout596, Skirmish_Command 0x6829F0, 78.89 -> exact): when the original calls a helper at one site and expands it at the others, and no IL probe at depth 1 refuses it, move that case into a static helper (depth 2) followed by enough free root sites (here code-free Get_Item wrappers) for the budget to refuse it. `#pragma auto_inline(off)` also refuses it, but breaks the other sites.
+- A value read into a local before a constructor call (`mode = Session.Mode;` before `WideString message;`) is held in a callee-saved register across the call, which also fixes later frame-slot order.
+- Nested call arguments: when the original pushes a constant after an inner call, make the inner call's result a temporary.

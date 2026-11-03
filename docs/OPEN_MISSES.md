@@ -1265,3 +1265,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - OWNER DECISION: the plan took the three one-byte atexit thunk rows 0x5C05C0/0x5C05D0/0x5C05E0 from pop-67 (as Iso418 did with 0x52C220). An @ref binding is refused because the function-local CDTimerClass statics emit the thunks in the unit.
 - Build_Game_Options 0x5BC940: 89.37 (w/e1.cpp). 0x5BCCF0: 88.44. 0x5C2DA0 (TibSun _DrawMessage): 79.41. Host_Dialog_Proc 0x5BEFE0: 95.68 (a global message/lparam ebx/edi priority swap). 0x5CCA30: 73.63. 0x5CAE00: 46.15. 0x5CB170: not attempted.
 - 2026-11-03 04:45Z reassignments: codex2 parks House.CPP (no landing since r2829 at 00:10Z) and takes ShipLocomotionClass. codex3 gets the Dropship unit (Mac drafts in coordination owner-reference/2026-11-03-*). OWNER DECISION on codex3 r277: take the 0x61ECC0 _$E41 seed row from pop-135 into the plan, as with the Scout597 thunks.
+
+## Scout596 (2026-11-03, closed; 3,264 B landed: Skirmish_Command 0x6829F0; resume in build/class-work/Scout596/NOTES.md, CANDIDATES.md)
+- The landed extent is the 3,255 B pass-7 body plus 9 bytes of 0x90 fill that VC6 keeps inside the function's own section after its switch tables.
+- dllimport check: every hand-declared USER32/KERNEL32/WINMM/GDI32 import is already dllimport. The plain WSOCK32/IMM32/VERSION prototypes match the original's thunks.
+- Unchanged: Radar 0x634670 97.35 (all 256 Get_Item subsets tried), Diplomacy 0x6340F0 80.56, Main_Options_Proc 0x542590 85.62, Video_Mode_Proc 0x543CF0 73.96. Unlock_Media 0x46F750: 89.92 (the two failure tails are laid out in the other order). Read_Scenario_Descriptions 0x670C50: 94.54 (a constant fold).
