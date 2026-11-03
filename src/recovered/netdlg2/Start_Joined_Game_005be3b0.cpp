@@ -1,4 +1,4 @@
-// bool __fastcall Start_Joined_Game_005be3b0() (0x005BE3B0)
+// bool __fastcall Start_Joined_Game_005be3b0(int unknown) (0x005BE3B0; the argument is unused: Net_Join_Dialog 0x005BD070 passes 0 for join state 3 and 1 for state 4 and declares it)
 #include "shared/lobby.hpp"
 #include "shared/ipx_manager.hpp"
 #include "shared/string_table.hpp"
@@ -22,7 +22,7 @@
 // @ref ??_C@_06DN@TXT_OK?$AA@=007db8f4
 // @ref ??_C@_13ECNF@?$AA?5?$AA?$AA@=007d64f4
 
-bool __fastcall Start_Joined_Game_005be3b0()
+bool __fastcall Start_Joined_Game_005be3b0(int unknown)
 {
     unknown_ipx_manager_a40978.Set_Timing(unknown_ipx_manager_a40978.unknown_526c30() + 2 > 30 ? unknown_ipx_manager_a40978.unknown_526c30() + 2 : 30,
         -1, 1000, true);

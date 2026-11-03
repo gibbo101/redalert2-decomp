@@ -1223,3 +1223,15 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Spark particle AI 0x609540: 64.60, parked. The original calls the out-of-line ctors 0x434820 (two early coordinates) and 0x41B630 (the last one), and an inline ctor always expands at those sites. OWNER DECISION (reversible): add these to coord.hpp as declarations guarded per unit (an out-of-line UnknownCoord434820(int,int,int) and the TPoint3D ctor 0x41B630), carried in the shared/ overlay of the round that first lands one. The draft's file-local stand-in types must not land.
 - Spark system AI 0x60B670: 86.56, parked (a 3-register rotation). Smoke system AI 0x60BB70: 37.95. The original calls DVC Add 0x60D050 out of line in the two inlined Spawn_Held_Particle sites and expands it at the last one; measure the /Ob2 budget at the first Add.
 - check_plans refuses RA2_INVENTORY_PASSES inside its worktree, relative or absolute ("not in the subpath"). For pass-7 rows, state body_bytes and bound_evidence in the plan.
+
+## Scout589 (2026-11-03, closed; 1,956 B landed: CampaignScoreClass::Presentation 0x466A50 with the Get_Item wrapper)
+- Radar row 0x634670: 97.35 (w/best_634670_c1_97.35.cpp; Get_Item on the 0x7EE0AC GetDlgItem only). A scratch rotation is left in the two 0x7EE0CC id loads. Wrapping those two sites rotates the callee-saved registers instead (81.42).
+- Diplomacy dialog 0x6340F0: 80.56 (w/best_6340f0_r7P_80.56.cpp; Get_Item everywhere plus Show_Window after the loop). ebx holds EnableWindow in the loop; the original keeps ShowWindow there.
+- Video_Mode_Proc 0x543CF0, Main_Options_Proc 0x542590 and Select_Serial_Dialog 0x5CDF00: wrappers neutral or worse (loop-index ties or the /Ob2 budget). Parked. The 0x5CDF00 draft needs shared/session_state.hpp.
+
+## Scout590 (2026-11-03, closed; 0 B; resume points in build/class-work/Scout590/NOTES.md)
+- ShipLocomotionClass unaccepted rows: Draw_Matrix 0x676010, Process 0x6765B0 (77.65, w/pr_best_77.65.cpp), While_Moving 0x676F60 and Start_Of_Move 0x6785C0.
+- While_Moving 0x676F60 (5,720 B; pass-7 bounds confirmed: prologue at 0x676F60, 7-entry jump table 0x67859C-0x6785B7) is TibSun's DriveLocomotionClass::While_Moving(bool). It scores 69.94, shape 97.19 (w/wm_best_69.94.cpp with HDR=Scout590/hdr), and the frame matches at 0xE4. Left: the -1 constant web in edi, then frame slot order.
+- Start_Of_Move 0x6785C0 (8,373 B, ends `ret 0xc`) is TibSun drive.cpp 1402-2040. Not drafted.
+- DriveLocomotionClass has the same While_Moving code at 0x4A1000, unbounded in every pass. Owner item when the Ship row lands.
+- Header overlay (Scout590/hdr/shared/): ship_locomotion.hpp declares While_Moving/Start_Of_Move. foot.hpp: UnitTypeClass +0xBA4 `bool Passive` and UnitClass +0x5B9 `bool unknown_5b9`; both replace char padding (owner: accepted as proposed when a row lands).

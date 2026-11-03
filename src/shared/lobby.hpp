@@ -354,7 +354,7 @@ extern "C" int __cdecl vswprintf(wchar_t *buffer, wchar_t const *format, char *a
 // Sends every other player a global packet 0x28 with the local nick name (0x005C3AE0); game mode 3 does
 // that and game mode 4 runs 0x0075C960 (0x005C3B70).
 void Unknown_005c3ae0();
-void Unknown_005c3b70();
+void __fastcall Unknown_005c3b70();
 void Unknown_0075c960();
 // A plain lobby message dialog's procedure (0x005C33A0).
 long __stdcall Unknown_Dialog_Proc_005c33a0(HWND window, unsigned message, unsigned wparam, long lparam);
@@ -459,10 +459,6 @@ bool __fastcall Receive_Remote_File_0066b520(char *file_name, unsigned int file_
 // Sends a file to the clients: the file info to every other player (to_players) or to the session's
 // scenario requests, then the file in 192-byte chunks (0x0066BB20; Red Alert's Send_Remote_File).
 bool __fastcall Send_Remote_File_0066bb20(char const *file_name, int gametype, bool to_players, bool progress);
-// A joiner's start of the game: the scenario is found or fetched (NET_READY_TO_GO 0x13 to the host),
-// the IPX timing is set from the response time; otherwise TXT_UNABLE_PLAY_WAAUGH and a sign-off
-// (0x005BE3B0; from Red Alert's Net_Join_Dialog).
-bool __fastcall Start_Joined_Game_005be3b0();
 // Three join request values (0x00A71E9C, 0x00A71EA0, 0x00A71EA4) and 0x00737AF0's (meanings not recovered).
 extern int unknown_a71e9c;
 extern int unknown_a71ea0;
