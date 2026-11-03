@@ -25,7 +25,40 @@ UnknownControlRecord &UnknownControlRecord::operator=(UnknownControlRecord const
         text_28 = (wchar_t *)operator new(wcslen(source) * 2 + 2);
         wcscpy(text_28, source);
     }
-    Copy_List_600460(other.list_34);
+    {
+        UnknownNode_006003d0 const *source_list=other.list_34;
+    while (list_34) {
+        UnknownNode_006003d0 *node = list_34;
+        UnknownNode_006003d0 *previous = 0;
+        UnknownNode_006003d0 *current;
+        for (current = list_34; current; current = current->Next) {
+            if (node == current) {
+                break;
+            }
+            previous = current;
+        }
+        if (current) {
+            if (previous) {
+                previous->Next = current->Next;
+            } else {
+                list_34 = current->Next;
+            }
+            operator delete(current);
+        }
+    }
+    for (; source_list; source_list = source_list->Next) {
+        UnknownNode_006003d0 *node = (UnknownNode_006003d0 *)operator new(wcslen(source_list->Data) * 2 + 0x12);
+        if (node) {
+            node->Data = node->Text;
+            node->Next = list_34;
+            node->unknown_04 = 0;
+            list_34 = node;
+        }
+        node->unknown_0c = source_list->unknown_0c;
+        node->unknown_04 = source_list->unknown_04;
+        wcscpy(node->Data, source_list->Data);
+    }
+    }
     return *this;
 }
 

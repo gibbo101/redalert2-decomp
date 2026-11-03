@@ -223,6 +223,7 @@ LRESULT __stdcall unknown_hotkey_proc_5fc330(HWND window, UINT message, WPARAM w
 // The window procedure of the msctls_progress32 controls (0x005FAFF0).
 LRESULT __stdcall unknown_progress_proc_5faff0(HWND window, UINT message, WPARAM wparam, LPARAM lparam);
 // 0x00600460 when not inlined (0x006005C0 inlines it).
+#ifndef RA2_OWNERDRAW_COPY_LIST_SOURCE
 inline void UnknownControlRecord::Copy_List_600460(UnknownNode_006003d0 const *source)
 {
     while (list_34) {
@@ -257,6 +258,7 @@ inline void UnknownControlRecord::Copy_List_600460(UnknownNode_006003d0 const *s
         wcscpy(node->Data, source->Data);
     }
 }
+#endif
 // The two-word key of the hash table at 0x00A73398 (compared by 0x005DE990 in 0x005EFCB0's removal).
 struct UnknownPairKey {
     int unknown_00;
