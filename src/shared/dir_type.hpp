@@ -25,6 +25,17 @@ public:
     DirType(FacingType dir) { From_Facing(dir); }
     DirType(Dir256 dir) { From_Dir256(dir); }
     void From_Dir256(Dir256 dir) { Facing=0; Facing|=(dir<<8); }
+#ifdef RA2_DIR_MISSILE_MEMBERS
+    // Missile.cpp's direction operations; signed 16-bit wrap, 4-byte object representation.
+    DirType operator+(DirType const &other) const;
+    DirType operator-(DirType const &other) const;
+    DirType operator/(int divisor) const;
+    DirType const &operator+=(DirType const &other) { Facing += other.Facing; return *this; }
+    DirType const &operator-=(DirType const &other) { Facing -= other.Facing; return *this; }
+    bool Is_Complete_Turn(DirType const &towards, DirType const &by);
+    bool Turn(DirType const &towards, DirType const &by);
+#endif
+
     DirType const &Snap_To_256() { Facing &= 0xFF00; return *this; }
 
     void From_Facing(FacingType dir)
