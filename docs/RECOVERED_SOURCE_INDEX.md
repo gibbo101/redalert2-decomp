@@ -13,7 +13,7 @@
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 202 | 63,959 | 202 | 0x004D3590–0x004F8EF0 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 215 | 56,865 | 212 | 0x0041B370–0x006D9750 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 122 | 42,592 | 118 | 0x0041B470–0x004CDE10 |
-| (discovery: address-named) | 1358 | 41,564 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1357 | 41,556 | 17 | 0x004010A0–0x00797198 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 118 | 40,017 | 118 | 0x005DE880–0x006025A0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 82 | 30,791 | 82 | 0x004D3510–0x0070A330 |
@@ -161,7 +161,7 @@
 | [classes/DropPodLocomotionClass](../src/recovered/classes/DropPodLocomotionClass/) | 28 | 2,922 | 28 | 0x004A5A40–0x004A6710 |
 | [classes/TemporalClass](../src/recovered/classes/TemporalClass/) | 22 | 2,914 | 22 | 0x006E1E70–0x006E2A20 |
 | [classes/LogicClass](../src/recovered/classes/LogicClass/) | 7 | 2,911 | 7 | 0x0053D840–0x0053E370 |
-| [classes/MonoClass](../src/recovered/classes/MonoClass/) | 18 | 2,896 | 18 | 0x0059D780–0x0059EA90 |
+| [classes/MonoClass](../src/recovered/classes/MonoClass/) | 19 | 2,904 | 19 | 0x0059D780–0x0059EA90 |
 | [classes/BaseClass](../src/recovered/classes/BaseClass/) | 16 | 2,877 | 16 | 0x0042BF70–0x0042CB70 |
 | [classes/PowerClass](../src/recovered/classes/PowerClass/) | 16 | 2,801 | 16 | 0x0061C450–0x0061D220 |
 | [classes/MSPrintAnim](../src/recovered/classes/MSPrintAnim/) | 10 | 2,800 | 10 | 0x005AE6C0–0x005AFE80 |
