@@ -1463,3 +1463,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - House 0x4F2350: 68.39. AI takeover 0x4F4070: 70.90 (not a plain budget shortfall; look for an inline wrapper at the second 0x4F52F0 site). 0x4F03C0 Where_To_Place_Building: codex2 60.23.
 - Bridge walk-loop rows: 0x553570 61.84, 0x555A60 63.60, 0x5539B0 66.07 share one residue (the original hoists only &AdjacentCell[step&7]). Scout645 is studying it. 0x553000 (codex2 78.63) not started.
 - IL sizes measured (Scout642): Cell(int,int) 42, operator+ 66, body-assignment ctor 64, init-list ctor 54, Insert_After 200.
+
+## Scout644 / Scout645 (2026-11-03; landed TechnoClass slot 174 0x6C1380 592 B and Destroy_Train_Bridge_Connections 0x553570 1,088 B)
+- Techno slot 186 0x6CD340: 80.18. Tunnel depth 0x6CFB60: 49.84. DistributedFire 0x6D4400: not drafted (four DVC vtables). Scout646 continues them. Tactical 0x6AB360 and PlanMgr 0x617340 wait on the TacticalProjection and Rect-family /Ob2 models; don't assign them yet.
+- Repair_Bridge 0x555A60: 99.75 (one Y-sum operand order). OWNER DECISION: the redundant `if (X >= n) { while (X >= n) ... }` guard is accepted. Destroy_Train_Bridge_Span 0x553000: signature to settle first (Map405 76.36). Damage_Train_Bridge 0x5539B0: 66.07. Scout647 continues them.
