@@ -41,6 +41,15 @@ inline RGBClass Unpack_Hicolor_Pixel(unsigned short pixel)
     return color;
 }
 
+// TibSun DSurface::Deconstruct_Hicolor_Pixel: a screen pixel back to 8-bit
+// channels through the three-channel constructor.
+inline RGBClass Deconstruct_Hicolor_Pixel(unsigned short color)
+{
+    return RGBClass(color >> unknown_shift_852fb8 << unknown_shift_852fbc,
+                    color >> unknown_shift_852fc8 << unknown_shift_852fcc,
+                    color >> unknown_shift_852fc0 << unknown_shift_852fc4);
+}
+
 // Fills count consecutive 256-entry pixel tables with palette scaled from
 // black (first table) to double brightness (last table) (0x004ABA00).
 void __fastcall Build_Brightness_Tables(unsigned short *table, int count, PaletteClass const &palette);

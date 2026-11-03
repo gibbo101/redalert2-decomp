@@ -50,6 +50,7 @@ public:
         return position;
     }
     int Get_Scroll_Delta(int position) const { return MaxValue - position; }
+    unsigned short Get_Scroll() const { return (unsigned short)MaxValue; }
     // Advance a scanline pointer by count values and keep it inside the ring,
     // wrapping at the end when direction is positive, at the start otherwise.
     void Advance_Pointer(unsigned short *&pointer, int count, int direction) const {
@@ -103,6 +104,7 @@ public:
         return position;
     }
     int Get_Scroll_Delta(int position) const { return MaxValue - position; }
+    unsigned short Get_Scroll() const { return (unsigned short)MaxValue; }
     unsigned short *Get_Buffer_Ptr(Point2D point);       // 0x00776340, by-value point hypothesis
     Rect Area;                  // +0x00
     int BufferOffset;           // +0x10
