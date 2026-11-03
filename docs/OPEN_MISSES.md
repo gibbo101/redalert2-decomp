@@ -1240,3 +1240,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Get_Join_Responses 0x5C08A0 (6,798 B): not drafted (seed Scout591/w/s5c08a0, TibSun netdlg2.cpp 2411-3304). Net_Join_Dialog declares it locally as __fastcall by @ref; reconcile when it lands. Scout593 holds it.
 - Lobby refresh 0x5BBDD0: 82.76, unchanged; Get_Item had no effect.
 - Net_Join_Dialog_005bd070.cpp has file-local @ref declarations to move to shared headers when their rows land: Host_Dialog_Proc 0x5BEFE0, Seat_First_Player 0x5C8CD0, 0x5EAC30, Version 0x712B50, session +0x63C, 0xA3F808/0xA3F818.
+
+## Scout592 (2026-11-03, closed; 0 B; ShipLocomotionClass PARKED after two zero-byte lanes; resume in build/class-work/Scout592/NOTES.md)
+- Draw_Matrix 0x676010 (1,189 B): 97.08, shape 100, call sequence exact (w/dm_best_97.08.cpp with EXTRA 0x675A60/0x675B50 rewrites). Ten frame-slot lines are left. The original has a per-branch tilt and temp, which needs about 170 more root IL units. The 0x675A60/0x675B50 rewrites (TibSun shape, no blend/ramp Matrix3D locals, CDTimer Value bound to 0x4A4D20) would land in the same plan, and every Ship row that inlines them would need rescoring.
+- Start_Of_Move 0x6785C0 (8,373 B): first draft 57.48, shape 93.74 (w/som_best_57.48.cpp, HDR=hdr). The TPoint3D ctor 0x41B630 and Length 0x41B780 are out of line at early sites and inline at later ones (budget). Use RA2_COORD_TPOINT3D + RA2_COORD_LENGTH for the unit. The original merges 12 `return false` and 2 `return true` epilogues.
+- Process 0x6765B0: 77.65 (more /Ob2 sites after Set_Slope in the original). While_Moving 0x676F60: 69.94.

@@ -30,8 +30,8 @@
 
 void __fastcall unknown_5eac30();
 // @ref ?unknown_5eac30@@YIXXZ=005eac30
+// The join dialog's packet pump (0x005C08A0), defined later in this unit.
 void __fastcall Get_Join_Responses_005c08a0();
-// @ref ?Get_Join_Responses_005c08a0@@YIXXZ=005c08a0
 long __stdcall Host_Dialog_Proc_005befe0(HWND window, unsigned message, unsigned wparam, long lparam);
 // @ref ?Host_Dialog_Proc_005befe0@@YGJPAUHWND__@@IIJ@Z=005befe0
 // A joiner's start of the game: the scenario is found or fetched (NET_READY_TO_GO 0x13 to the host),
