@@ -7,6 +7,7 @@ public:
     FlasherClass() { FlashCount=0; IsBlushing=false; }
     FlasherClass(NoInitClass const &) {}
     ~FlasherClass() {}
+    bool Process();                     // 0x004BBF00 (counts FlashCount down; IsBlushing on odd counts)
     unsigned FlashCount;
     bool IsBlushing;
 };

@@ -722,7 +722,7 @@ public:
     bool unknown_373;                       // +0x373
     bool unknown_374;                       // +0x374
     bool unknown_375;                       // +0x375
-    bool unknown_376;                       // +0x376
+    unsigned char unknown_376;              // +0x376 (a countdown; slot 23 decrements it)
     bool unknown_377;                       // +0x377
     char unknown_378;                       // +0x378 (signed: the height level last revealed from; TechnoClass slot 70)
     bool unknown_379;                       // +0x379 (true)
