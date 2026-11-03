@@ -18,6 +18,9 @@ class WWCRCEngine;
 
 class BaseClass {
 public:
+#ifdef RA2_BASE_INIT
+    void Init() { Nodes.Clear(); }
+#endif
     BaseClass();                            // 0x0042BF70
     BaseClass(NoInitClass const &noinit);   // 0x0042CA50
     virtual HRESULT __stdcall Load(IStream *stream);  // slot 0 0x0042C6A0

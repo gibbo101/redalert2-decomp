@@ -5,6 +5,10 @@
 #include "shared/house_views.hpp"
 // @ref ?unknown_func_69d090@UnknownSuperView@@QAEX_NPBVCell@@@Z=0069d090
 
+// Original House retains all nine calls out of line. The sole direct
+// launch69D090 call is within4E68D0; no inline copy occurs in this unit.
+// Original-never-inlined pragma is permitted by WORKER source rules.
+#pragma auto_inline(off)
 bool HouseClass::unknown_func_4e68d0(int index, Cell const &cell)
 {
     UnknownSuperView *super = (UnknownSuperView *)Supers[index];
@@ -22,3 +26,4 @@ bool HouseClass::unknown_func_4e68d0(int index, Cell const &cell)
     }
     return true;
 }
+#pragma auto_inline(on)

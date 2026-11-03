@@ -30,6 +30,9 @@ public:                      // (layout hypothesis)
     // Original004F6BE0 node reset; constructor identity remains unproven.
     BaseNodeClass *unknown_4f6be0(int type, ::Cell const &cell);
     BaseNodeClass(int type, ::Cell cell) : Type(type), Cell(cell) {}
+#ifdef RA2_BASE_NODE_FULL_ARGUMENTS
+    BaseNodeClass(int type, ::Cell cell, bool built, int counter) : Type(type), Cell(cell), unknown_08(built), unknown_0c(counter) {}
+#endif
     // User copy constructor, member-wise (VectorClass<BaseNodeClass>::Fetch 0x0042CBE0 copies the byte separately).
     BaseNodeClass(BaseNodeClass const &other)
         : Type(other.Type), Cell(other.Cell), unknown_08(other.unknown_08), unknown_0c(other.unknown_0c)

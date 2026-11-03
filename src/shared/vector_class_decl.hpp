@@ -21,8 +21,14 @@ public:
     VectorClass(VectorClass<T> const &vector);
     virtual ~VectorClass();
 
+#ifdef RA2_VECTOR_SIGNED_INDEX
+    // Signed indexing profile: Westwood vector.h; full House004EF890 byte proof.
+    T &operator[](int index);
+    T const &operator[](int index) const;
+#else
     T &operator[](unsigned index);
     T const &operator[](unsigned index) const;
+#endif
     int Length() const;
 
     // Not virtual in RA2: the vtables have no assignment slot.

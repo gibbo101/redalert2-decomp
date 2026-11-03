@@ -143,13 +143,21 @@ public:
 
 #ifdef VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 template <class T>
+#ifdef RA2_VECTOR_SIGNED_INDEX
+inline T &VectorClass<T>::operator[](int index)
+#else
 inline T &VectorClass<T>::operator[](unsigned index)
+#endif
 {
     return Vector[index];
 }
 
 template <class T>
+#ifdef RA2_VECTOR_SIGNED_INDEX
+inline T const &VectorClass<T>::operator[](int index) const
+#else
 inline T const &VectorClass<T>::operator[](unsigned index) const
+#endif
 {
     return Vector[index];
 }
