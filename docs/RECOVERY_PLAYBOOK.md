@@ -160,3 +160,21 @@ second target, transfer the identical bodies mechanically through the same
 audit, re-derive the layouts that grew, then recover the remainder. YRpp and
 Phobos document that exact binary and are a richer hypothesis source than RA2
 ever had. Expect about a third of the RA2 effort.
+
+## 11. Host limits (added 2026-11-03)
+
+- A 16 GiB host runs one full build at a time. Lanes and the landing runner
+  take the same lock before any whole-file build; the lock carries the owner's
+  pid so a reboot or a killed lane cannot leave it stale. Two concurrent builds
+  (four Wine sessions each) exhausted memory and forced a reboot on 2026-11-03.
+- Disk is a build input. Lane scratch, hill-climb output and fetched worker
+  packets filled the main drive in hours and wedged Wine. Alert below 30 GiB
+  free, start no lanes below 20 GiB, prune at every hand-back, move landed
+  packets to cold storage, and keep Spotlight off the build and private trees.
+- A wedged Wine (compiles idle, ps hanging) is checked in this order: disk,
+  then memory, then the per-prefix wineserver. The project uses several Wine
+  prefixes, so a reset must name each one.
+- Paid workers never block. A worker whose unit is exhausted takes the next
+  item from a standing fallback queue; if that is empty it polls every 15
+  minutes and keeps its status file current. Questions go into status and
+  never stop work. Only capacity errors need a human to resume a thread.

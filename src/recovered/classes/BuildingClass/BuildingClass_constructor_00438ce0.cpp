@@ -86,7 +86,7 @@ BuildingClass::BuildingClass(BuildingTypeClass *type, HouseClass *house) :
     for (int i = 0; i < 3; i++) {
         unknown_4c0[i] = 0;
     }
-    unknown_5cc = CoordStruct(0, 0, 0);
+    unknown_5cc = TPoint3D<int>(0, 0, 0);
     if (Type) {
         unknown_2c8.Set_Desired(UnknownFacingDir(Type->BarrelStartPitch << 8));
     }

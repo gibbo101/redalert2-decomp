@@ -9,4 +9,14 @@
 #include "shared/building_type.hpp"
 #include "shared/building_class.hpp"
 
+#ifdef RA2_BUILDING_DELAY_POINT
+// Convert the pending three-field value into a coordinate at the call boundary.
+inline CoordStruct::CoordStruct(TPoint3D<int> const &point)
+{
+    X = point.X;
+    Y = point.Y;
+    Z = point.Z;
+}
+#endif
+
 #endif

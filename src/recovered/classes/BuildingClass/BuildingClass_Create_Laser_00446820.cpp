@@ -22,6 +22,7 @@ void BuildingClass::unknown_446820(CoordStruct destination)
         laser->IsHouseColor = true;
         laser->unknown_18 = 3;
     }
-    unknown_244 = CDTimerClass<FrameTimerClass>(Rules->PrismSupportDelay);
+    int delay = Rules->PrismSupportDelay;
+    unknown_244 = CDTimerClass<FrameTimerClass>(delay);
     unknown_534 = 0;
 }
