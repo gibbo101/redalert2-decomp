@@ -4,8 +4,8 @@
     "id": "population-3131",
     "inventory_sha256": "dcae65f86b47705e93450509c6060d40166c364b27329fd4f6ec0df665c34497",
     "gaps_sha256": "64f2d20582546adfc37681f307ee35a3bce5aa477fa903a8a96615eb195543a1",
-    "historical_population_sha256": "5f69a1f2172eabca5b8b42e031457b9bd4429b30eeedaa9107dfe231a28985d8",
-    "historical_acceptance_sha256": "9bff6bd5c3a1a97d1feef09e69655b2c06799ee7a190bbb02f23398592d0abc1"
+    "historical_population_sha256": "b14007eacf6451ab089dbd3390a8c4bd73bc584dde34e2aae0a82b916feb1e97",
+    "historical_acceptance_sha256": "8ff263572dcfb6042afe44b9e6ef9a62d0e0ecf11375c81683fb892c1121c30d"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -4028,7 +4028,7 @@
     "?Unknown_0055A660@MapClass@@QAE_NABVCell@@_N@Z": 5613152,
     "?Unknown_00631570@RadarClass@@QAEXABVCell@@@Z": 6493552,
     "?Unknown_006331E0@RadarClass@@QAEX_N@Z": 6500832,
-    "?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0HHH@Z": 4826880,
+    "?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0H_NH@Z": 4826880,
     "?Unknown_0054AAB0@MapClass@@QAE_NABVCell@@@Z": 5548720,
     "?Unknown_0055A740@MapClass@@QAE_NPAVCellClass@@_N@Z": 5613376,
     "?Unknown_00568140@MapClass@@QAE_NABUCoordStruct@@@Z": 5669184,

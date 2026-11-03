@@ -4,8 +4,8 @@
     "id": "population-3458",
     "inventory_sha256": "121ea863829c3621b7658fd07f62b27f9fb35755e998ef15dd5c3dfe0dd8ef7a",
     "gaps_sha256": "9b408bcde1aeaeee2b2ab449cd96fafd0c15be857db866ff6d1236a9aee939ab",
-    "historical_population_sha256": "2b142aab0f68ebb7596b2fe174662051205189a6f9509d7b83ebbab38f4c67b7",
-    "historical_acceptance_sha256": "312e0b891c6055db7aa402aaa779ca1bfa642ecb004c57631e37855c4186c9bc"
+    "historical_population_sha256": "4f4e017f3aa99efac3f93f2fe87da7c966e993ac9f9cdb8a2e7bd10bb233f155",
+    "historical_acceptance_sha256": "4da1185bf92f4a8835ea80228a0e3d4a07798c2e03e9fa520faf5a75bc062e18"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8839,7 +8839,7 @@
     "?Unknown_00634030@RadarClass@@QAEXXZ": 6504496,
     "?Unknown_00634970@RadarClass@@QAEXH@Z": 6506864,
     "_IID_IFlyControl": 8003712,
-    "?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0HHH@Z": 4826880,
+    "?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0H_NH@Z": 4826880,
     "?unknown_facings_7ce4a8@@3QBHB": 8185000,
     "?AdjacentCell@@3QBVCell@@B": 8723056,
     "?unknown_facings_7ce4c8@@3QBHB": 8185032,
@@ -10185,7 +10185,7 @@
         {
           "offset": 146,
           "kind": 20,
-          "symbol": "?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0HHH@Z",
+          "symbol": "?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0H_NH@Z",
           "target": 4826880,
           "addend": 0,
           "resolved": 4293263322
@@ -10516,7 +10516,7 @@
         {
           "offset": 878,
           "kind": 20,
-          "symbol": "?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0HHH@Z",
+          "symbol": "?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0H_NH@Z",
           "target": 4826880,
           "addend": 0,
           "resolved": 4293265950

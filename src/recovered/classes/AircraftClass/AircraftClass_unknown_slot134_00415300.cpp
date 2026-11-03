@@ -5,7 +5,7 @@
 #include "shared/aircraft.hpp"
 #include "shared/map_view.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
-// @ref ?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0HHH@Z=0049a700
+// @ref ?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0H_NH@Z=0049a700
 // @ref _unknown_geometry_k=0083c478
 
 int AircraftClass::unknown_slot134()

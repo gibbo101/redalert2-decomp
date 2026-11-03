@@ -9,7 +9,7 @@
 #include "shared/techno_type.hpp"
 #include "shared/map_view.hpp"
 // @ref ?Map@@3VMouseClass@@A=008324e0
-// @ref ?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0HHH@Z=0049a700
+// @ref ?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0H_NH@Z=0049a700
 // @ref ?Unknown_006BFA90@TeamTypeClass@@QBE?AVCell@@XZ=006bfa90
 // @ref ?Control@MissionClass@@QBEPAVMissionControlClass@@XZ=005950d0
 // @ref __real@8@4008e100000000000000=0079b608

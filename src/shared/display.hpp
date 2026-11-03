@@ -144,7 +144,7 @@ public:
     // The selectable object after (0x0049A5D0) or before (0x0049A670) one,
     // over layers 2, 3 and 4; the first one found when there is none.
     ObjectClass *Next_Object(ObjectClass *object);
-    Cell Unknown_0049A700(int edge, Cell const &cell1, Cell const &cell2, int arg4, int arg5, int arg6);   // 0x0049A700 (a cell on map edge `edge` near two cells; AircraftClass slot 134 passes 4, 1, 0)
+    Cell Unknown_0049A700(int edge, Cell const &cell1, Cell const &cell2, int arg4, bool zonecheck, int arg6);   // 0x0049A700 (a cell on map edge `edge` near two cells; AircraftClass slot 134 passes 4, 1, 0)
     bool Passes_Proximity_Check_004991D0(ObjectTypeClass const *, int, Cell const *, Cell const &) const;
     ObjectClass *Unknown_0049EC40();                    // 0x0049EC40
     void Unknown_0049EC60(ObjectClass *object);         // 0x0049EC60

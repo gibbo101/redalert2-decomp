@@ -1369,3 +1369,9 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout620 (2026-11-03, closed; 438 B landed: Passes_Proximity_Check 0x4991D0; DisplayClass is now population-3901)
 - Set_Cursor_Pos 0x4994D0: 72.04 (needs a non-virtual RadarClass `Cell unknown_slot51(Point2D const &)` in map_view.hpp, overlay hdr/shared). Calculated_Cell 0x49A700: 80.23 (needs an R spec: arg5 becomes bool in display.hpp and map_view.hpp, plus RA2_POINT_LENGTH for the unit). Read_INI 0x49CFD0 (2,358 B): not attempted (about 40 callees, Straw/Pipe COMDAT takeovers, slot 32 rename).
+
+## Host limits (2026-11-03, after two reboots)
+- 05:12 and 08:52 local: the drive filled, then memory ran out (three overlapping full builds on the 16 GiB Mac).
+- One full build at a time: private/tools/fullbuild_lock.sh, taken by runq.sh around every landing and by the lane wrapper build/owner-watch/fullbuild.sh. The lock is pid-checked and cleared when its holder is gone.
+- Lanes score one compile at a time and stop under 20 GiB free disk or over 1.5 GB swap (LANE_BRIEF "Host limits"). Wine reset: private/tools/wine_reset.sh. The monitor heartbeat is in build/owner-watch/last.txt.
+- Windows workers never block their goals (WORKER.md 5a, assignments/fallback.md).
