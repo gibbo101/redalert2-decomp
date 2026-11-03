@@ -204,7 +204,11 @@ public:
     virtual int __stdcall Z_Adjust();                                           // 0x0053D4A0
     virtual int __stdcall Z_Gradient();                                         // 0x0053D4B0
     virtual bool __stdcall Process();                                           // 0x0053D560
+#ifdef RA2_SHIP_MOVE_TO_VALUE
+    virtual void __stdcall Move_To(COMCoordStruct to);                             // 0x0053D550
+#else
     virtual void __stdcall Move_To(CoordStruct to);                             // 0x0053D550
+#endif
     virtual void __stdcall Stop_Moving();                                       // 0x0053D540
     virtual void __stdcall Do_Turn(UnknownFacingDir dir);                       // 0x0053D530
     virtual void __stdcall Unlimbo();                                           // 0x0053D520

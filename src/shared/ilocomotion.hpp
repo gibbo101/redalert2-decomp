@@ -57,7 +57,11 @@ struct __declspec(novtable) ILocomotion : public IUnknown {
     virtual int __stdcall Z_Adjust() = 0;                                        // 14
     virtual int __stdcall Z_Gradient() = 0;                                      // 15
     virtual bool __stdcall Process() = 0;                                        // 16
+#ifdef RA2_SHIP_MOVE_TO_VALUE
+    virtual void __stdcall Move_To(COMCoordStruct to) = 0;                          // 17
+#else
     virtual void __stdcall Move_To(CoordStruct to) = 0;                          // 17
+#endif
     virtual void __stdcall Stop_Moving() = 0;                                    // 18
     virtual void __stdcall Do_Turn(UnknownFacingDir dir) = 0;                    // 19
     virtual void __stdcall Unlimbo() = 0;                                        // 20

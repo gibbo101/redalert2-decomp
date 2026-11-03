@@ -132,7 +132,13 @@ struct UnknownCell68 {
 
 class CellClass : public AbstractClass {
 public:
+#ifdef RA2_SHIP_CELL_ACCESSORS
+    // Native ShipProcess retains the address of MapCoords through the comparison.
+    Cell const &Fetch_CellID() const { return MapCoords; }
+    int Land_Type() const { return unknown_ec; }
+#else
     Cell Fetch_CellID() const { return MapCoords; }
+#endif
 
     int unknown_475fe0(int damage); // 00475FE0: wall mutation, full EAX/RET4; hypothesis
     CellClass();                                                        // 0x00470F10

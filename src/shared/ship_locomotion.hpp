@@ -44,7 +44,11 @@ public:
     virtual int __stdcall Z_Adjust();                                           // 0x0067A780
     virtual int __stdcall Z_Gradient();                                         // 0x0067A790
     virtual bool __stdcall Process();                                           // 0x006765B0
+#ifdef RA2_SHIP_MOVE_TO_VALUE
+    virtual void __stdcall Move_To(COMCoordStruct to);                             // 0x00675DF0
+#else
     virtual void __stdcall Move_To(CoordStruct to);                             // 0x00675DF0
+#endif
     virtual void __stdcall Stop_Moving();                                       // 0x00675EB0
     virtual void __stdcall Do_Turn(UnknownFacingDir dir);                       // 0x00676F30
     virtual void __stdcall Unlimbo();                                           // 0x00676580
@@ -78,6 +82,9 @@ public:
     Point2D Smooth_Turn(Point2D const &offset, int &facing);                    // 0x0067A690 (a track point and facing mirrored by the track's flags, from the head-to coordinate)
     bool unknown_67a710(Cell cell);                                             // 0x0067A710 (whether the unit may enter a cell, 0x0055ACD0; unreferenced)
     bool unknown_67a7a0();                                                      // 0x0067A7A0 (with no queued 0x478 entries slot 260(0, 1) and false, else 0x004CD9B0 and slot 261(false, true); unreferenced)
+
+    bool While_Moving(bool just_started); // original00676F60, independently bounded5720bytes
+    bool Start_Of_Move(bool &stop_processing, bool retry, bool force_straight); // original006785C0
 
     int unknown_1c;                     // +0x1C ramp
     int unknown_20;                     // +0x20 ramp

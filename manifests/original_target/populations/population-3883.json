@@ -4,8 +4,8 @@
     "id": "population-3883",
     "inventory_sha256": "e09b48d7e6b69a5df50945139895ef41bf4a719ba1e7ef61a34e494bd620713f",
     "gaps_sha256": "8915fa051905d292ae9a2087b5107b70e226b531133c11bc4b649a083ede8c03",
-    "historical_population_sha256": "824a43928cf5a2f7de3ba4193e6db78a692dc867ddae2092d40b78d7fe0fbbc1",
-    "historical_acceptance_sha256": "2fd48a77a0b346525af4fe7a5d5be46bd902ed33ff644784377be39aba829d6c"
+    "historical_population_sha256": "759c16f7bca3748ac01edbb80ee735928a87eea42e93307c7569ddbcfd9f62d4",
+    "historical_acceptance_sha256": "a0416182edab8e6dc7abccc72600f91895987e5aa7bf69836d70c3d7d20c4592"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9231,7 +9231,7 @@
     "?Move_To@WalkLocomotionClass@@UAGXUCoordStruct@@@Z": 7462944,
     "?Move_To@TunnelLocomotionClass@@UAGXUCoordStruct@@@Z": 7273680,
     "?Move_To@DriveLocomotionClass@@UAGXUCoordStruct@@@Z": 4849200,
-    "?Move_To@ShipLocomotionClass@@UAGXUCoordStruct@@@Z": 6774256,
+    "?Move_To@ShipLocomotionClass@@UAGXUCOMCoordStruct@@@Z": 6774256,
     "?Move_To@TeleportLocomotionClass@@UAGXUCoordStruct@@@Z": 7208352,
     "?Move_To@DropPodLocomotionClass@@UAGXUCoordStruct@@@Z": 4874176,
     "?Move_To@HoverLocomotionClass@@UAGXUCoordStruct@@@Z": 5229024

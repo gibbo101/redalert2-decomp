@@ -4,8 +4,8 @@
     "id": "population-3080",
     "inventory_sha256": "8bb9cb19b8d91c4cc347f313545582b1bcecc3b794a64f39c110b974fc41408d",
     "gaps_sha256": "58667a1d65a6054e28efea4cf9a8d99045b5b76cd6cb4f6bc45988085117bf7f",
-    "historical_population_sha256": "bf816c36672c3d5803c649e500a3ed219d186a9cdd31823a898c86db2292db6b",
-    "historical_acceptance_sha256": "4b5f13b2bea1e4bfe8eb9e3831022ec6ef7896a1df7afed481c1b781e487dfc7"
+    "historical_population_sha256": "85f034bccb53ccdfcfbc55a745e28e7b3b3c317c022876a36b1f048d227061e5",
+    "historical_acceptance_sha256": "90c419feb8dc8c509d98d1c7b7611a0db487c0cd61c5be56b097f01c130b7501"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8652,7 +8652,7 @@
     "?Is_Moving@ShipLocomotionClass@@UAG_NXZ": 6773808,
     "?Is_Moving_Now@ShipLocomotionClass@@UAG_NXZ": 6773968,
     "?Head_To_Coord@ShipLocomotionClass@@UAG?AUCoordStruct@@XZ": 6774128,
-    "?Move_To@ShipLocomotionClass@@UAGXUCoordStruct@@@Z": 6774256,
+    "?Move_To@ShipLocomotionClass@@UAGXUCOMCoordStruct@@@Z": 6774256,
     "?Move_To@TeleportLocomotionClass@@UAGXUCoordStruct@@@Z": 7208352,
     "?Is_Moving_Now@WalkLocomotionClass@@UAG_NXZ": 7462576,
     "?Force_Immediate_Destination@WalkLocomotionClass@@UAGXUCoordStruct@@@Z": 7463328,

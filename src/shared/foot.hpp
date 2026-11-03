@@ -394,7 +394,9 @@ class EBolt;
 class UnitTypeClass : public TechnoTypeClass {
 public:
     int ArrayIndex;                             // +0xB90 index in UnitTypes (TechnoClass slot 55)
-    char unknown_b94[0xBA6 - 0xB94];
+    char unknown_b94[0xBA4 - 0xB94];
+    bool Passive; // +0xBA4, owner-approved UnitType field
+    char unknown_ba5;
     bool Harvester;                             // +0xBA6 (as shared/unit_type.hpp)
     char unknown_ba7[0xBAA - 0xBA7];
     bool DeployToFire;                          // +0xBAA
@@ -412,7 +414,8 @@ public:
     FootClass *unknown_5b0;                     // +0x5B0 the next unit of a convoy (FootClass 0x004C3000; hypothesis)
     int unknown_5b4;                            // +0x5B4 (-1; FootClass slot 303 halves the speed when set)
     bool unknown_5b8;                           // +0x5B8 (FootClass 0x004C3000: the convoy does not follow)
-    char unknown_5b9[0x5BB - 0x5B9];
+    bool unknown_5b9; // +0x5B9, owner-approved restart flag
+    char unknown_5ba;
     bool unknown_5bb;                           // +0x5BB (composite surface; matches full UnitClass, TechnoClass 0x006D1510)
     char unknown_5bc[0x5C4 - 0x5BC];
     EBolt *unknown_5c4;                         // +0x5C4 the unit's electric bolt (TechnoClass 0x006CA130)
