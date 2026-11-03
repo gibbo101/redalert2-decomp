@@ -4,8 +4,8 @@
     "id": "population-3398",
     "inventory_sha256": "ebe3c1927d59c0847659c78032e12567afc42f458e8be89b664a8f4669865db9",
     "gaps_sha256": "a9de65ee283fcf68a19e51e916790a17d5d1d3f4be1773eafedf52b34180a27a",
-    "historical_population_sha256": "3c02cab168ca762dbcd3011ef96ef4ebad94e4cadc1801fa79af96eca9a635ce",
-    "historical_acceptance_sha256": "5a7d7f0b76e8942d0b6201bc90cab64b0fea476240df77ad057bbd6e6d223cac"
+    "historical_population_sha256": "b89d552ac87ee175154ca20253263b921408b326ad9a43251ca140a93f3bca80",
+    "historical_acceptance_sha256": "6a53e961934551663dc85bcbb21115b46139e231ef31e88fada1d3d5ac0d02e7"
   },
   "references": {
     "_unknown_empty_rect": 10751528,
@@ -2533,7 +2533,7 @@
     "__imp__ReleaseMutex@4": 7971216,
     "?Draw_Line_Depth_Masked@XSurface@@UAE_NABUPoint2D@@0H_N@Z": 7814832,
     "?Draw_Depth_Shaded_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1IHH_N@Z": 7814848,
-    "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z": 7814864,
+    "?Draw_Depth_Glow_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1HHH_N@Z": 7814864,
     "?Draw_Depth_Antialiased_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@HH_N333M@Z": 7814880,
     "?Unknown_Slot16@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@MHH@Z": 7814896,
     "?Fill_Rect_Trans@XSurface@@UAE_NABVRect@@ABVRGBClass@@I@Z": 7816880,

@@ -4,8 +4,8 @@
     "id": "population-3492",
     "inventory_sha256": "75f37c09c5152853b983bfb4d0a960bda6a301955cb0ebe3bdeea029d0276df3",
     "gaps_sha256": "1ff519f1940af0793a8ed0a79d2e86d8f566c60ebb5b5695839e62bbc5df53f5",
-    "historical_population_sha256": "5882e0e04e883aaf0a62d2ba065c75834361e8f28210a7294ef69efc409fc650",
-    "historical_acceptance_sha256": "7c18e5102ef7b2d46cc9f22c48ad4fd03c9835eb1fda3f0ca9ad5c1d4cdec98e"
+    "historical_population_sha256": "28dd548cda08d6efd9d9ffde52aabf5e134d9781d6beefa08c7aaa35bde2bf66",
+    "historical_acceptance_sha256": "ac95e2adf53fb4b21b897f8b848d8af71b1e30122d846bf672e3ff90f0ac973a"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3785,7 +3785,7 @@
     "?Is_Valid@History@WorldDominationTour@@QBEHI@Z": 7507744,
     "?Draw_Line_Depth_Masked@XSurface@@UAE_NABUPoint2D@@0H_N@Z": 7814832,
     "?Draw_Depth_Shaded_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1IHH_N@Z": 7814848,
-    "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z": 7814864,
+    "?Draw_Depth_Glow_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1HHH_N@Z": 7814864,
     "?Draw_Depth_Antialiased_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@HH_N333M@Z": 7814880,
     "?Unknown_Slot16@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@MHH@Z": 7814896,
     "?Fill_Rect_Trans@XSurface@@UAE_NABVRect@@ABVRGBClass@@I@Z": 7816880,

@@ -4,8 +4,8 @@
     "id": "population-3882",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "02edd336e244fb3abbb5b1a17583120f80efeb2da388483a71bd202f97b75bf4",
-    "historical_acceptance_sha256": "c784644c1ce95a0aa8b28829c385f2bf3b05cdc1be6e7f9ae655b829169ee8f6"
+    "historical_population_sha256": "bc234e0d5ef5e22e311aaa97c91757a78120f87fce75c97eb67db2e134555b58",
+    "historical_acceptance_sha256": "b757a65c09dc698fff8f70a8e89d79fc9e6e6fb8ad0c2db7f0cf1bd1f6e18180"
   },
   "references": {
     "_unknown_static_rect": 11710320,
@@ -479,7 +479,7 @@
     "?Draw_Dashed_Line_Depth_Masked@XSurface@@UAEHABUPoint2D@@0HPB_NH_N@Z": 7814816,
     "?Draw_Line_Depth_Masked@XSurface@@UAE_NABUPoint2D@@0H_N@Z": 7814832,
     "?Draw_Depth_Shaded_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1IHH_N@Z": 7814848,
-    "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z": 7814864,
+    "?Draw_Depth_Glow_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1HHH_N@Z": 7814864,
     "?Draw_Depth_Antialiased_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@HH_N333M@Z": 7814880,
     "?Unknown_Slot16@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@MHH@Z": 7814896,
     "?Draw_Rect@XSurface@@UAE_NABVRect@@H@Z": 7815424,
@@ -904,7 +904,9 @@
     "??_EWWMouseClass@@UAEPAXI@Z": 7812880,
     "_rand": 7882410,
     "_malloc": 7874096,
-    "_?path@?1??Unknown_00428370@UnknownPathEstimator@@QAEPAUUnknownPathType@@PAUUnknownPathNode@@PAH@Z@4U3@A": 8701968
+    "_?path@?1??Unknown_00428370@UnknownPathEstimator@@QAEPAUUnknownPathType@@PAUUnknownPathNode@@PAH@Z@4U3@A": 8701968,
+    "?Fill_Circle@XSurface@@QAEXUPoint2D@@HVRect@@H@Z": 7818384,
+    "?Unknown_Slot16@DSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@MHH@Z": 4906496
   },
   "regions": [
     {
@@ -1341,8 +1343,8 @@
     {
       "entry": 7814864,
       "method": "00773ed0",
-      "symbol": "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z",
-      "symbol_prefix": "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z",
+      "symbol": "?Draw_Depth_Glow_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1HHH_N@Z",
+      "symbol_prefix": "?Draw_Depth_Glow_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1HHH_N@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -1355,13 +1357,13 @@
       "full_extent_bytes": 16,
       "full_extent_sha256": "8fd6620a8e10c8abab9e47663a9b1bdb550351d09dc45eed7b1430c8e7c71be1",
       "relocations": [],
-      "source_sha256": "47e7709f2e17f2fe3874577e11284ba26cf361818bd2132eefd976e3bafa5c81",
-      "source": "src/recovered/classes/XSurface/XSurface_Unknown_Slot14_00773ed0.cpp",
+      "source_sha256": "38d6062fd46762d1a0528e48dd7ab7457445939acf5e869a25cf8e3ab97fbf66",
+      "source": "src/recovered/classes/XSurface/XSurface_Draw_Depth_Glow_Line_00773ed0.cpp",
       "population": "population-3882",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "XSurface_Unknown_Slot14_00773ed0",
+      "semantic_name": "XSurface_Draw_Depth_Glow_Line_00773ed0",
       "source_order": 176227
     },
     {

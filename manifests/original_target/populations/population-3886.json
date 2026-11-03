@@ -4,8 +4,8 @@
     "id": "population-3886",
     "inventory_sha256": "5b93f57cdd85c32d28ddb232c77b04d688691a9d342fb31db09fe92dcd0c3dda",
     "gaps_sha256": "584e40feaad81bb45a441e180239886349757d85e790f74894185646ae7add03",
-    "historical_population_sha256": "b207ea08a8b95d62e9f4abdb7b0943d5e64e97be7a4a2c84571c086f48748e55",
-    "historical_acceptance_sha256": "676a3bb365833705d6454bdb6574ab614205e3733ac05d46f79f560278abe848"
+    "historical_population_sha256": "c32b1136a96a0d1e49b26d7d964f7a1df1b8883f78de844e9a0e3150e48e5eaa",
+    "historical_acceptance_sha256": "f807286c87265dded64ccb1cc9e025b480cb3ddeaf6b6bbe7c14e89884defc2e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2483,7 +2483,7 @@
     "?SuperWeaponTypes@@3V?$DynamicVectorClass@PAVSuperWeaponTypeClass@@@@A": 10748728,
     "?Unknown_006ECB90@@YIXPAVAbstractClass@@_N@Z": 7261072,
     "?Draw_Depth_Shaded_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1IHH_N@Z": 7814848,
-    "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z": 7814864,
+    "?Draw_Depth_Glow_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1HHH_N@Z": 7814864,
     "?Draw_Depth_Antialiased_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@HH_N333M@Z": 7814880,
     "?Unknown_Slot16@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@MHH@Z": 7814896,
     "?Draw_Dashed_Line_Depth_Masked@XSurface@@UAEHABUPoint2D@@0HPB_NH_N@Z": 7814816,

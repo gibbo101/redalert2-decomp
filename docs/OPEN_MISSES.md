@@ -1274,3 +1274,6 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout598 (2026-11-03, closed; 4,734 B landed: DSurface slots 13/19 and XSurface::Fill_Circle from TibSun dsurface.cpp/xsurface.cpp)
 - TibSun's dsurface.cpp/xsurface.cpp are the RA2 shapes (TibSun DepthBuffer = RA2 ABufferPtr 0x839C6C, AlphaBuffer = ZBufferPtr 0x8315B4; rename table in Scout598/TRIAGE.md). All remaining DSurface members are compiler output. XSurface::Fill_Rect 0x7743C0 stays inline asm.
 - Slot 14 0x4ABBA0 Draw_Depth_Glow_Line: 87.57 (needs an R spec for the TibSun signature, plus the h3 overlay). Slot 15 0x4AC650: 16.23 (frame 0xD4 vs 0xC4). Trail line 0x4AE9C0: 66.04. Plot_Line 0x773F00: 99.44 (exhausted). Draw_Ellipse 0x7746C0: 22.71. Scout600 continues the unit.
+
+## Scout599 (2026-11-03, closed; 3,689 B landed: BuildingLight ctor 0x432FC0, IPXGlobalConn slot 17 0x524870, TechnoTypeClass::Load 0x6DE260)
+- Resume list: Scout599/LIST.md. Scout601 continues it. Anim Next_Flaming_Guy_Coord 0x4237B0: 96.95. Foot Can_Reach 0x4C8730: 98.31 (TibSun bitfield bridge tests, header change untried). IPXGlobalConn Receive_Packet 0x5243D0: 80.65 (deferred pushes). BuildingLight AI 0x433970: 78.68. Overlay Mark 0x5DA970: 80.07.

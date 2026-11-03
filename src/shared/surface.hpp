@@ -53,7 +53,9 @@ public:
     // 0x005334F0 calls slots 13 and 15 where TibSun laser.cpp calls these two).
     virtual bool Draw_Depth_Shaded_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
                                        unsigned color, int start_depth, int end_depth, bool write_depth = false) = 0;  // slot 13 (+0x34)
-    virtual bool Unknown_Slot14(int, int, int, int, int, int, int) = 0;        // slot 14 (+0x38)
+    // TibSun Draw_Depth_Glow_Line: brightens the background by glow_strength/256 where the line is in front.
+    virtual bool Draw_Depth_Glow_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
+                                      int glow_strength, int start_depth, int end_depth, bool write_depth = false) = 0;  // slot 14 (+0x38)
     virtual bool Draw_Depth_Antialiased_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
                                        RGBClass const &color, int start_depth, int end_depth, bool write_depth,
                                        bool blend_red, bool blend_green, bool blend_blue, float intensity) = 0;  // slot 15 (+0x3C)
@@ -116,7 +118,8 @@ public:
     virtual bool Draw_Line(Point2D const &startpoint, Point2D const &endpoint, int color);
     virtual bool Draw_Depth_Shaded_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
                                        unsigned color, int start_depth, int end_depth, bool write_depth = false);
-    virtual bool Unknown_Slot14(int, int, int, int, int, int, int);
+    virtual bool Draw_Depth_Glow_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
+                                      int glow_strength, int start_depth, int end_depth, bool write_depth = false);
     virtual bool Draw_Depth_Antialiased_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
                                        RGBClass const &color, int start_depth, int end_depth, bool write_depth,
                                        bool blend_red, bool blend_green, bool blend_blue, float intensity);

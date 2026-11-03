@@ -4,8 +4,8 @@
     "id": "population-3871",
     "inventory_sha256": "bdbd3e400a977f13929367cd9ef0997340de203137fa2188ffb3ffda5b7638fe",
     "gaps_sha256": "62889a264fdbb33313c42a346e9e3e2a2ce86c1e4792e42f37d5dcf9a42c776e",
-    "historical_population_sha256": "ea49396f840e5295bb9693ea53e727404e447a81b305678cfcf6f4aca9c64d1b",
-    "historical_acceptance_sha256": "9d33d0bb265854bd965dfb4be7e0578d95a4938df8be34f84887fa2669e00832"
+    "historical_population_sha256": "a8b6a768875627fd169497e925e1f34e3f43dd84f8fd959d3b77300d55fde7d5",
+    "historical_acceptance_sha256": "9f7f598a5dcb07bc5b6d76debf1c9140704bc0ff60a450acfee2275d59d7cd94"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6355,7 +6355,7 @@
     "?Unknown_Pregame_Setup_005c74f0@@YAXXZ": 6059248,
     "?Unknown_Reset_Slots_005c8a90@@YAXXZ": 6064784,
     "?Draw_Depth_Shaded_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1IHH_N@Z": 7814848,
-    "?Unknown_Slot14@XSurface@@UAE_NHHHHHHH@Z": 7814864,
+    "?Draw_Depth_Glow_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1HHH_N@Z": 7814864,
     "?Draw_Depth_Antialiased_Line@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@HH_N333M@Z": 7814880,
     "?Unknown_Slot16@XSurface@@UAE_NABVRect@@ABUPoint2D@@1ABVRGBClass@@MHH@Z": 7814896,
     "?Unknown_Slot26@Surface@@UAE_NUPoint2D@@@Z": 4264576,

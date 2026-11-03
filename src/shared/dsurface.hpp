@@ -47,7 +47,8 @@ public:
     virtual bool Fill_Rect_Trans(Rect const &rect, RGBClass const &color, unsigned int percent);  // slot 7, 0x004AB730
     virtual bool Draw_Depth_Shaded_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
                                        unsigned color, int start_depth, int end_depth, bool write_depth = false);  // slot 13, 0x004AFC30
-    virtual bool Unknown_Slot14(int, int, int, int, int, int, int);        // slot 14, 0x004ABBA0
+    virtual bool Draw_Depth_Glow_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
+                                      int glow_strength, int start_depth, int end_depth, bool write_depth = false);  // slot 14, 0x004ABBA0
     virtual bool Draw_Depth_Antialiased_Line(Rect const &cliprect, Point2D const &startpoint, Point2D const &endpoint,
                                        RGBClass const &color, int start_depth, int end_depth, bool write_depth,
                                        bool blend_red, bool blend_green, bool blend_blue, float intensity);  // slot 15, 0x004AC650
