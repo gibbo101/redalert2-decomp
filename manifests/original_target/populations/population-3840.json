@@ -4,8 +4,8 @@
     "id": "population-3840",
     "inventory_sha256": "82514ed22d2cd64727bd1c9a72c712d53321b4acec66a2ae8e5f096402b979c0",
     "gaps_sha256": "882e574af2e946384edab9d8d567b76150cdb5eeae0b5f61325507719d10db10",
-    "historical_population_sha256": "69786e8b88c028c205eade0fbf9d9fc211fd143e2074a93f12361d129724fcbc",
-    "historical_acceptance_sha256": "c34d9a3c04b1710f163cad2754cc66b14175ddcf16c2bc552dc2f2beb34e5b37"
+    "historical_population_sha256": "ab2bdc84505aeec237f523504e7fe64f6581d3cfbf12674fffa5f92cd3a0b731",
+    "historical_acceptance_sha256": "28776db350e59ae0729d3df515686de340f2d8f8ff95be59d271d91dccd17fa6"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -11671,7 +11671,7 @@
     "?FUN_007646b0@": 7751344,
     "?Reset@VoxelDrawSystem@@YAXXZ": 7434704,
     "?RLEBlitter_From_Flags_00485d60@ConvertClass@@QBEPBVRLEBlitter@@I@Z": 4742496,
-    "?Join_Selected_Lobby_00744930@@YIHXZ": 7620912,
+    "?Join_Selected_Lobby_00744930@@YIH_N@Z": 7620912,
     "?unknown_slot41@DisplayClass@@QAE_NHPAH_N@Z": 4823904,
     "?Trap_Object_006715c0@UnknownSessionState@@QAEXXZ": 6755776,
     "?Get_Edit_Buf@MessageListClass@@QAEPAGXZ": 5985760,
@@ -11982,7 +11982,21 @@
     "??_EMapSeedClass@@": 5823056,
     "??_GMapSeedClass@@": 5823056,
     "??_EState@WorldDominationTour@@UAEPAXI@Z": 7539024,
-    "??_ELoadOptionsClass@@UAEPAXI@Z": 5491184
+    "??_ELoadOptionsClass@@UAEPAXI@Z": 5491184,
+    "??_7?$VectorClass@PAVMapRegionClass@@@@6B@": 8019376,
+    "?Key_Hash@?$WolDictionary@PAUHWND__@@P6GJPAU1@IIJ@Z@@QBEIABQAUHWND__@@@Z": 6298672,
+    "?Key_Hash@?$WolDictionary@UUnknownPairKey@OwnerDraw@@_N@@QBEIABUUnknownPairKey@OwnerDraw@@@Z": 6300480,
+    "__real@8@3ff2d1b71758e2196800": 8013344,
+    "__real@8@40049800000000000000": 8013336,
+    "__real@8@4000e000000000000000": 8013328,
+    "?Add@?$DynamicVectorClass@PAVPlanningNodeClass@@@@QAE_NABQAVPlanningNodeClass@@@Z": 6402816,
+    "?Clear@?$VectorClass@PAVPlanningMemberClass@@@@UAEXXZ": 6401008,
+    "?unknown_progress_proc_5faff0@OwnerDraw@@YGJPAUHWND__@@IIJ@Z": 6270960,
+    "??0?$VectorClass@_N@@QAE@IPB_N@Z": 5213472,
+    "??_7?$VectorClass@_N@@6B@": 8007524,
+    "?Add@?$QueueClass@VEventClass@@$0IA@@@QAE_NABVEventClass@@@Z": 5104000,
+    "?unknown_5eac30@@YIXXZ": 6204464,
+    "?Draw_0068cce0@UnknownBitmapWriter@@QAE_NABVRect@@PAVSurface@@1HH@Z": 6868192
   },
   "regions": [
     {
@@ -67402,7 +67416,7 @@
     {
       "entry": 7620912,
       "method": "00744930",
-      "symbol": "?Join_Selected_Lobby_00744930@@YIHXZ",
+      "symbol": "?Join_Selected_Lobby_00744930@@YIH_N@Z",
       "symbol_prefix": "?Join_Selected_Lobby_00744930@@",
       "options": [
         "/O2",
@@ -67545,7 +67559,7 @@
           "resolved": 4294946557
         }
       ],
-      "source_sha256": "3fd227759ee1ad36da2ea5b26f4263988ca79f43651d5d654d43b103dd4a6f30",
+      "source_sha256": "cfca2588556d1b8a68f8191d0a863728e1ea7dc8263962c5998dc5cf0829924f",
       "source": "src/recovered/unowned/Join_Selected_Lobby_00744930.cpp",
       "population": "population-3840",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

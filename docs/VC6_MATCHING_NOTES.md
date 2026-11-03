@@ -1065,3 +1065,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Session members vs aliases (Scout591): reaching a member through the session object (`unknown_session_a3d298.Players`) or through its global alias changes alias reloads and the register choice in an inlined DVC Add. Try both.
 - A branch that ends in `break` to a shared tail and a branch that repeats the tail and returns leave different blocks after VC6's tail merging (Net_Join_Dialog 0x5BD070: the guest path repeats the tail).
 - A new parameter in a widely included prototype can change unrelated functions (lobby.hpp: Pick_Lobby 0x744090 and Print_CRCs 0x62A360 by 4 bytes each). Moving a prototype into its only caller is neutral.
+- Command dispatch (Scout593, Get_Join_Responses 0x5C08A0, 83.7 -> exact): one if/else-if chain over the command lets VC6 keep the compared constants in callee-saved registers across the loop. Separate `if (cmd == X) { ...; continue; }` blocks give the same block shape but different constant registers.
+- A dead counting loop (`if (!strcmp(...)) dups++;`, TibSun) keeps the loop and its dead stack store. `x = strcmp(...)` or an empty if removes the loop.
+- Reading a bitfield once through the global alias and once through the session member gives the original's separate dword and byte loads.
+- diff_candidate does not flag an unbound string literal; acceptance refuses it. Add @ref for every literal the original references (`","` 0x7CE9C0).

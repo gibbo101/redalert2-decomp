@@ -1,3 +1,5 @@
+// Original callers pass a zero low-byte register argument. Its boolean source type
+// is a hypothesis: this body never reads the argument, so signedness is unobservable.
 // @ref ??_C@_0M@CHOE@TXT_JOINLOB?$AA@=007fe688
 #include "shared/wol_sink.hpp"
 int Unknown_00744090();
@@ -6,7 +8,7 @@ int __fastcall Unknown_00744700(WOL::Channel const &channel, Wstring const &pass
 // @ref ?Unknown_00744090@@YAHXZ=00744090
 // @ref ?Unknown_00744700@@YIHABUChannel@WOL@@ABVWstring@@VWideString@@@Z=00744700
 // @ref ??_C@_08EIMP@zotclot9?$AA@=007fe738
-int __fastcall Join_Selected_Lobby_00744930()
+int __fastcall Join_Selected_Lobby_00744930(bool unknown)
 {
     int choice=Unknown_00744090();
     if(choice!=-1) {
