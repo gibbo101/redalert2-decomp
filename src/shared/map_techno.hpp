@@ -14,20 +14,28 @@
 
 class HouseClass;
 class CellClass;
+// ObjectTypeClass as the Map unit sees it (stand-in; shared/object_type.hpp).
+class ObjectTypeClass {
+public:
+    char unknown_000[0x205];
+    bool unknown_205;                       // +0x205 (as shared/object_type.hpp; TibSun IsFootprint)
+};
 // ObjectClass as the Map unit sees it: the virtual destructor (slot 8,
 // AbstractClass), which deletes the display's pending object (0x0055B060),
 // and slot 53 (wall placement 0x0056A660); slots 24-52 are placeholders.
 class ObjectClass : public AbstractClass {
 public:
-    virtual void unknown_slot24(); virtual void unknown_slot25(); virtual void unknown_slot26(); virtual void unknown_slot27(); virtual void unknown_slot28(); virtual void unknown_slot29();
-    virtual void unknown_slot30(); virtual void unknown_slot31(); virtual void unknown_slot32(); virtual void unknown_slot33(); virtual void unknown_slot34(); virtual void unknown_slot35();
+    virtual void unknown_slot24(); virtual void unknown_slot25(); virtual void unknown_slot26(); virtual void unknown_slot27(); virtual void unknown_slot28(); virtual int unknown_slot29() const;   // slot 29 (+0x74; as shared/object.hpp; TibSun In_Which_Layer)
+    virtual void unknown_slot30(); virtual void unknown_slot31(); virtual void unknown_slot32(); virtual ObjectTypeClass *Class_Of() const;   // slot 33 (+0x84; as shared/object.hpp)
+    virtual void unknown_slot34(); virtual void unknown_slot35();
     virtual void unknown_slot36(); virtual void unknown_slot37(); virtual void unknown_slot38(); virtual void unknown_slot39(); virtual void unknown_slot40(); virtual void unknown_slot41();
     virtual void unknown_slot42(); virtual void unknown_slot43(); virtual void unknown_slot44(); virtual void unknown_slot45(); virtual void unknown_slot46(); virtual void unknown_slot47();
     virtual void unknown_slot48(); virtual void unknown_slot49(); virtual void unknown_slot50(); virtual void unknown_slot51(); virtual void unknown_slot52();
     virtual bool unknown_slot53(CoordStruct const &coord, int dir);   // slot 53 (+0xD4; shared/object.hpp passes a pointer; TibSun Unlimbo)
 #ifdef RA2_MAP_COLLAPSE_CLIFF
     virtual void unknown_slot54(); virtual void unknown_slot55(); virtual void unknown_slot56(); virtual void unknown_slot57(); virtual void unknown_slot58(); virtual void unknown_slot59();
-    virtual void unknown_slot60(); virtual void unknown_slot61(); virtual void unknown_slot62(); virtual void unknown_slot63(); virtual void unknown_slot64(); virtual void unknown_slot65();
+    virtual void unknown_slot60(); virtual void unknown_slot61(); virtual void unknown_slot62(); virtual void unknown_slot63(); virtual Cell const *unknown_slot64(int arg1);   // slot 64 (+0x100; as shared/object.hpp; TibSun Occupy_List)
+    virtual void unknown_slot65();
     virtual void unknown_slot66(); virtual void unknown_slot67(); virtual void unknown_slot68(); virtual void unknown_slot69(); virtual void unknown_slot70();
     virtual bool unknown_slot71(int arg1);                            // slot 71 (+0x11C; as shared/object.hpp)
     virtual void unknown_slot72(); virtual void unknown_slot73(); virtual void unknown_slot74(); virtual void unknown_slot75(); virtual void unknown_slot76();
@@ -42,6 +50,8 @@ public:
     bool unknown_74;                        // +0x74 (as shared/object.hpp)
     char unknown_75;
     bool unknown_76;                        // +0x76 (as shared/object.hpp)
+    char unknown_77[0x79 - 0x77];
+    bool unknown_79;                        // +0x79 (as shared/object.hpp; TibSun IsOnBridge)
 #endif
 };
 
@@ -99,11 +109,23 @@ public:
     int Speed;                              // +0x5A4 the speed type (TibSun Is_Clear_To_Build argument)
     char unknown_5a8[0xBEC - 0x5A8];
     OverlayTypeClass *ToOverlay;            // +0xBEC the wall overlay type
-    char unknown_bf0[0x1351 - 0xBF0];
+    char unknown_bf0[0xC80 - 0xBF0];
+    int OccupyHeight;                       // +0xC80 (as shared/building_type_class.hpp)
+    char unknown_c84[0x12C4 - 0xC84];
+    Point2D AddOccupy[8];                   // +0x12C4 (as shared/building_type_class.hpp)
+    Point2D RemoveOccupy[8];                // +0x1304
+    char unknown_1344[0x1351 - 0x1344];
     bool Gate;                              // +0x1351
     char unknown_1352[0x135A - 0x1352];
     bool FirestormWall;                     // +0x135A (TibSun IsFirestormWall; Map 0x00569FB0)
+    char unknown_135b[0x13E6 - 0x135B];
+    bool CanHideThings;                     // +0x13E6 (as shared/building_type_class.hpp)
 };
+
+// Whether an AddOccupy / RemoveOccupy entry is set (unset entries are 0xFFFF, 0xFFFF;
+// MapClass 0x0054AB70 / 0x0054AF70; hypothesis: an inline helper, its address order
+// matches the original's).
+inline bool Is_Occupy_Offset(Point2D const &offset) { return offset.X != 0xFFFF || offset.Y != 0xFFFF; }
 
 // An overlay type as the wall placement 0x0056A660 sees it (stand-in).
 class OverlayTypeClass {

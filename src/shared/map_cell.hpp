@@ -46,7 +46,9 @@ public:
     class ObjectClass *OccupierPtr; // +0xE4 (as shared/cell.hpp)
     char unknown_e8[0xEC - 0xE8];
     int unknown_ec;                 // +0xEC the land type (as shared/cell.hpp)
-    char unknown_f0[0x116 - 0xF0];
+    char unknown_f0[0x100 - 0xF0];
+    int unknown_100;                // +0x100 counted up by the buildings that hide the cell (as shared/cell_class.hpp)
+    char unknown_104[0x116 - 0x104];
     short unknown_116;              // +0x116 the index of the tube that enters here, -1 for none (as shared/cell.hpp)
     char unknown_118;               // +0x118
     char unknown_119;               // +0x119
@@ -93,6 +95,8 @@ public:
     void Unknown_0047CC10();
 #endif
     void Unknown_00472540(int value);   // 0x00472540 (as shared/cell.hpp)
+    void unknown_473b30(class ObjectClass *object, bool alt);   // 0x00473B30 (links object into the occupier list; TibSun Occupy_Down)
+    void unknown_473d20(class ObjectClass *object, bool alt);   // 0x00473D20 (as shared/cell_class.hpp; TibSun Occupy_Up)
     int unknown_475db0(int amount);     // 0x00475DB0 (takes up to amount of tiberium; as shared/cell.hpp)
     void unknown_47bc80();          // 0x0047BC80 (DisplayClass 0x0049CDB0, for a cell that was mapped)
     void unknown_47be00();          // 0x0047BE00 (as shared/cell.hpp)
