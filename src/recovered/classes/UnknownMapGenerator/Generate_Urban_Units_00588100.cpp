@@ -1,7 +1,7 @@
 // @ref __real@8@3fe1e0000000e0000000=007a6038
 // @ref __real@8@3fe28000000080000000=007a6048
 #include "shared/unknown_map_generator.hpp"
-#include "shared/building_view.hpp"
+#include "shared/building.hpp"
 #include "shared/unit.hpp"
 #include "shared/infantry.hpp"
 #include "shared/infantry_type.hpp"

@@ -2,7 +2,7 @@
 #include "shared/map_region.hpp"
 #include "shared/cell.hpp"
 #include "shared/map_view.hpp"
-#include "shared/building_view.hpp"
+#include "shared/building.hpp"
 #include "shared/house.hpp"
 // @ref ?Place_Neutral_Building_00571db0@MapRegionClass@@=00571db0
 // @ref ??0BuildingClass@@=00438ce0

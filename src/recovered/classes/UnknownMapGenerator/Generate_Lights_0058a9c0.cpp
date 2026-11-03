@@ -3,7 +3,7 @@
 #include "shared/unknown_map_generator.hpp"
 #include "shared/facing.hpp"
 #include "shared/map_view.hpp"
-#include "shared/building_view.hpp"
+#include "shared/building.hpp"
 #include "shared/house.hpp"
 #include "shared/house_type.hpp"
 #include "shared/building_type_list.hpp"

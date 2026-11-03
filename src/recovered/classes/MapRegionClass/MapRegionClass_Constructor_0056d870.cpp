@@ -1,4 +1,7 @@
 #include "shared/map_region.hpp"
+#include "shared/house.hpp"
+#include "shared/mouse_class.hpp"
+#include "shared/isometric_tile_type.hpp"
 #include "shared/map_view.hpp"
 #include "shared/cell.hpp"
 extern DynamicVectorClass<MapRegionClass *> unknown_map_regions_a6fd28;

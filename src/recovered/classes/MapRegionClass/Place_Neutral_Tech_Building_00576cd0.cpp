@@ -1,7 +1,7 @@
 #include "shared/map_region.hpp"
 #include "shared/cell.hpp"
 #include "shared/map_view.hpp"
-#include "shared/building_view.hpp"
+#include "shared/building.hpp"
 #include "shared/house.hpp"
 #include "shared/house_type.hpp"
 #include "shared/rules.hpp"
