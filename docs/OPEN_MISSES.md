@@ -1180,3 +1180,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Templates 0x62EA00 and 0x62EA40 land with their only callers, Wait_For_Players and 0x629290.
 - OWNER RULING (00:20Z): the Queue.CPP unit-local declarations are allowed: the timeout table 0x7EC438, unknown_precalc_max_ahead_a3d57c, unknown_sync_counts_a76b74[8][8], Mono_Page_0059da50, the __fastcall Wait_For_Players, Westwood MAX/MIN, and the function statics bound by @ref.
 - Queue.CPP pauses after three lanes (2,454 B in total). The next lanes take the inventory pass-7 rows.
+
+## Scout581 (2026-11-03, closed; 2,477 B landed in r1-r3)
+- The PlanMgr Rect family (Node_At 0x615D30, Pick_Node 0x616070; 0x616140/0x617900/0x615C00 depend on them) reaches 96.67/96.05 only with two probe inline sites after Planning_Inflate, so the natural source of those sites is still missing. Planning_Order_Kind 0x615A80 needs 9 or more extra sites.
+- Planning_Techno_00615480: 83.93 (loose 98.21); keep that symbol, because EventClass::Execute binds it. 0x611BD0: 51.40 (ours expands operator== 0x61A8B0, the original calls it). Loop_Color 0x6129B0 92.95 and Branch_Color 0x6127E0 95.34 have one register diff each. 0x6130B0 and 0x616B40 were not attempted.

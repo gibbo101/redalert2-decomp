@@ -56,7 +56,12 @@ struct UnknownControlRecord {
     int unknown_38;
     WideString *unknown_3c;     // +0x3C created by the constructor 0x006002F0, kept by operator=
     int unknown_40;
+#ifdef RA2_OWNERDRAW_EDIT_FIELDS
+    int unknown_44; // edit scroll position (0x005F1900, 0x005F22A0)
+    char unknown_48[0x5c - 0x48];
+#else
     char unknown_44[0x5c - 0x44];
+#endif
     int unknown_5c;
     int unknown_60;
     BitFontClass *font_64;      // +0x64 the game font (BitFont) by default
@@ -91,7 +96,13 @@ struct UnknownControlRecord {
     int unknown_e8;
     int unknown_ec;     // +0xEC a progress bar's range maximum (0x005FAFF0)
     int unknown_f0;     // +0xF0 a progress bar's position (0x005FAFF0)
+#ifdef RA2_OWNERDRAW_EDIT_FIELDS
+    int unknown_f4; // edit focus enabled (0x005F1900)
+    int unknown_f8; // edit previously had WS_TABSTOP (0x005F1900)
+    char unknown_fc[0x200 - 0xfc];
+#else
     char unknown_f4[0x200 - 0xf4];
+#endif
 };
 class UnknownControlIndex {
 public:
