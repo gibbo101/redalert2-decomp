@@ -16,9 +16,14 @@ int __fastcall unknown_5fda40(unsigned long color)
     if (color == 0xffffffff) {
         return -1;
     }
-    return ((int)(color & 0xff) >> unknown_shift_852fbc << unknown_shift_852fb8)
-         | ((color >> 8 & 0xff) >> unknown_shift_852fcc << unknown_shift_852fc8)
-         | ((color >> 16 & 0xff) >> unknown_shift_852fc4 << unknown_shift_852fc0);
+    // Keep the green channel as an unsigned bitfield, matching the constant-color
+    // progress-bar caller without materializing the high byte in other callers.
+    union ColorChannels {
+        struct { unsigned int red : 8; unsigned int green : 8; unsigned int blue : 8; unsigned int alpha : 8; } channels;
+        int value;
+    } packed;
+    packed.value = color;
+    return Build_Hicolor_Pixel(color & 0xff, packed.channels.green, (color >> 16) & 0xff);
 }
 
 }
