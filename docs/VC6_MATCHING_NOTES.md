@@ -1054,3 +1054,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - **Late joins change earlier drafts.** A helper accepted later and now joined into a row's unit can start auto-inlining into rows drafted before it; for example 0x62E5C0 now inlines into Process_Receive_Packet. Rescore old drafts against HEAD, and refuse the helper's inlining with an exact, larger rewrite landed in the same plan. Also: diff_candidate does not flag missing string @refs, so run the strict audit.
 - **Single-member explicit instantiation emits nothing** under /O2, without a warning; `template class` emits every member. A template member therefore lands with its real caller (Scout580).
 - **Byte-identical rewrites that add IL are a budget lever** (Options_Menu_Proc 0x4DD8A0, Scout582). Measure the missing /Ob2 budget with probe pads, then close the gap with natural forms that compile to the same bytes but carry more IL: TibSun store-then-override, nested ifs, named pointers, explicit `!= 0`. Never land the probe pads.
+
+## Float chains and MAX macros (Scout585, 2026-11-03)
+- VC6 sorts a flat floating-point `+` chain and reuses repeated subexpressions across it, so neither the term order nor an inline helper stops the reuse. A miss where the original recomputes a squared term (railgun 0x60C050) needs a different evidenced shape, not reordering.
+- An expanded TibSun-style MAX macro (`a > b ? a : b` written out at the site) gives `add reg,-N` for a constant clamp, where a helper call gives cmp/branch forms.
+- A local `Random2Class &rng` reference held across several random calls changes the register assignment (spark 0x60B670 62 -> 78.8).

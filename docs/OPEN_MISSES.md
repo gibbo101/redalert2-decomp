@@ -1195,3 +1195,18 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Rect family (Node_At 0x615D30, Pick_Node 0x616070): an inline IPW(Rect const &, int x, int y) helper fixes the add-order register diff; the inline split needs the Rect() subtree budget at about 166-181 units against the natural 250. 0x616070's true extent is 207 B (to 0x61613F), and the 0x616132 row is bogus.
 - 0x6130B0: 78.61 (Scout583 w/rl1, hi2, ut3, h4). 0x613330: 50.13 on its first attempt (w/ts2). 0x616B40: 98.51. Branch_Color/Loop_Color: unchanged.
 - Diplomacy dialog 0x6340F0: 65.66, shape 98.27 (Scout584 w/r40f0j1.cpp); a callee-saved register permutation is left. 0x5BBDD0 (netdlg2) was surveyed only; it needs 0x5C5FF0 first.
+
+## Scout586 (2026-11-03, closed; 0 B; resume points in build/class-work/Scout586/NOTES.md)
+- LdPrgMgr draw 0x535BF0 (3,978 B): 63.42 (Small467 had 57.39), w/best_535bf0_i2_63.42.cpp with the 0x536D30 rewrite w/d30.cpp (its byte identity is unchecked). The call sequence is exact through an inline Scheme_Pixel helper, which spends IL before the RGBClass ctor site. The frame is 0x1180 against 0x1184.
+- LAN lobby refresh 0x5BBDD0 (1,552 B): 82.76, shape 95.44, frame exact. An inline Find_Lobby_Dialog(HWND &) places the tail. From 0x5BC11A the scratch registers are rotated by one. It needs declarations for 0x5C8680 and the globals 0xA71DE8/0xA71E18/0xA71E28.
+- Save_List_Selection 0x5C5FF0 (793 B): 94.38; the name and index frame slots are swapped. OWNER ITEM: the accepted 0x5CDA50 Grow_Table (codex3 r259) is an explicit specialization, which makes the original's inlined Grow at site 2 a call (the row drops to 76.60). Landing 0x5C5FF0 needs Grow_Table back as an instantiation of the template. Reconcile the names Unknown_005c5ff0 (0x73FEE0) and Save_List_Selection_005c5ff0.
+- Motion_Capture 0x53F490 97.63 and Skirmish_Message_497 0x683FC0 97.43: no change; parked (VC6 normalises every slot-pointer form).
+
+## Scout585 (2026-11-03, closed; 0 B; resume points in build/class-work/Scout585/NOTES.md)
+- Spark AI 0x60B670 (1,277 B): 86.56 (w/spark_best_86.56.cpp with EXTRA 0x60B190=w/b190t.cpp). A register rotation and one store/load order after the first Random call are left.
+- Railgun AI 0x60C050 (1,904 B): 67.39. The original does not reuse the squared terms between its two Fast_Sqrt calls; ours does.
+- ParticleClass ctor 0x608440: 94.69, unchanged (two 12-byte locals swapped).
+- Spawn_Particle 0x60B190 in TibSun's early-return form is exact on its own (w/b190t.cpp) and gives the original's layout at both inline sites. Land it in the same plan as the first exact system AI.
+- Still open in the family: 0x608BB0 (1,601 B), 0x609540 (1,069 B, TibSun Spark_Behavior_AI particle.cpp:441, with RA2_MATRIX3D_INLINE_COPY) and 0x609D10 (964 B). 0x620FDB (24 B) is a bogus row in header-statics padding.
+- fast_math.hpp may have Fast_Acos and Fast_Asin (0x4BA550/0x4BA580) swapped; check before anyone relies on them.
+- OWNER DECISION (coord.hpp, reversible): the inline CoordStruct ctor stays the default. Units that see the out-of-line ctors (0x434820, 0x41B630; Particle 0x609540 calls both) bind them per unit through RA2_COORD_TPOINT3D / UnknownCoord434820. Fire_AI 0x60C7C0 (codex4 r42, memcpy helper) moves to that form when next touched. This no longer blocks Particle.
