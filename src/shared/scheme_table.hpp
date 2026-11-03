@@ -27,6 +27,58 @@ inline bool operator!=(HashObject<HashString, SchemeNode *> const &a, HashObject
 }
 #endif
 
+// Explicit specialization preserves the original typed layout and out-of-line lookup copies.
+#ifdef RA2_HASH_STRING_UNIT
+template <>
+class HashTableClass<HashString, SchemeNode *> {
+public:
+    HashTableClass(int growth, int count, int (__fastcall *hash)(HashString const &key))
+        : Hash(hash), BucketCount(count), GrowthStep(growth)
+    {
+        Buckets = new DynamicVectorClass<HashObject<HashString, SchemeNode *> >[count];
+        for (int index = 0; index < BucketCount; index++) {
+            Buckets[index].Set_Growth_Step(growth);
+        }
+    }
+    ~HashTableClass() { delete[] Buckets; }
+
+#ifdef RA2_MAP_HASH_ADD_SOURCE
+    bool Add_Object(int bucket_index, HashObject<HashString, SchemeNode *> const &object); // original0056BC00
+#endif
+
+    // Files value under key unless the key's bucket already holds it.
+    bool Add(HashString const &key, SchemeNode * const &value)
+    {
+        DynamicVectorClass<HashObject<HashString, SchemeNode *> > &bucket = Buckets[Hash(key) % BucketCount];
+        for (int index = bucket.Count() - 1; index >= 0; index--) {
+            if (bucket[index].Key.operator==(key)) {
+                return false;
+            }
+        }
+        return bucket.Add(HashObject<HashString, SchemeNode *>(key, value));
+    }
+
+    // The value filed under key, or null (the last match in its bucket).
+    SchemeNode * *Find(HashString const &key);
+
+    // The next non-empty key after the iterator's position, or null once past the last bucket.
+    HashString *Next(UnknownSchemeListIterator &it);
+
+    // Empties every bucket.
+    void Clear()
+    {
+        for (int index = 0; index < BucketCount; index++) {
+            Buckets[index].Clear();
+        }
+    }
+
+    DynamicVectorClass<HashObject<HashString, SchemeNode *> > *Buckets;    // +0x00 BucketCount vectors
+    int (__fastcall *Hash)(HashString const &key);               // +0x04
+    int BucketCount;                                    // +0x08
+    int GrowthStep;                                     // +0x0C
+};
+#endif
+
 // The table's string hash (0x00603610): (c + hash * 26) % 31 over the text.
 int __fastcall Unknown_Hash_00603610(HashString const &key);
 
