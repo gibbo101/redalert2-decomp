@@ -1,3 +1,5 @@
+#include "shared/fast_math.hpp"
+#define RA2_POINT_LENGTH
 #include "shared/building_class.hpp"
 // Header-static dynamic initializers of the unit at 0x0052EF70:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
