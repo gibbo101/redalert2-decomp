@@ -1481,3 +1481,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Scatter 0x504120: 94.14 (w/s1.cpp; one spot left, `mov eax,[0xA41130]; imul eax,edi` vs ours `imul edi,[mem]`; the accepted UnitClass twin 0x7072D0 gets the original form). Per_Cell_Process 0x500AA0: 93.45 unchanged after 227 compiled mutations; only side-effect-breaking reorders flip the allocation (w/t1.cpp 99.24, not landable).
 - Correction: diff_candidate.py has no remote path; only full builds (check_plans --build, landings) compile remotely. Scoring stays in local Wine, one compile at a time.
 - Date correction: entries above dated 2026-11-04 happened on 2026-11-03 around 22:00Z.
+
+## Scout648 (2026-11-03, closed; Destroy_High_Bridge_Connections 0x558BD0 1,066 B landed; table in build/class-work/Scout648/LIST.md)
+- Near misses: Destroy_Low_Bridge2_Span 0x557090 and twin 0x556520 99.54 (one end-walk X sum), Repair_Bridge 0x555A60 99.75, 0x566C30 98.96, Damage_Low_Bridge family (4 rows, 5,220 B) 98.73, Place_Wall 0x56A660 96.62.
+- Finding: which operand of a 16-bit Cell sum loads first does not follow source order. Dead locals shift it with period 8 (position irrelevant); extern declarations before the function have no effect; a `(Cell)` cast counts as one symbol. Scout651 studies it.
