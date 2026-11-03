@@ -13,7 +13,7 @@
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 203 | 65,358 | 203 | 0x004D3590–0x004F8EF0 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 219 | 62,127 | 216 | 0x0041B370–0x006D9750 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 122 | 42,592 | 118 | 0x0041B470–0x004CDE10 |
-| (discovery: address-named) | 1351 | 41,459 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1350 | 41,425 | 17 | 0x004010A0–0x00797198 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 118 | 40,017 | 118 | 0x005DE880–0x006025A0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 82 | 30,791 | 82 | 0x004D3510–0x0070A330 |
@@ -52,7 +52,7 @@
 | [MPMath](../src/recovered/MPMath/) | 50 | 9,241 | 50 | 0x005A7530–0x005AA1A0 |
 | [classes/BulletClass](../src/recovered/classes/BulletClass/) | 38 | 9,222 | 38 | 0x0045F310–0x004D3150 |
 | [classes/CoopCampaignClass](../src/recovered/classes/CoopCampaignClass/) | 15 | 8,861 | 15 | 0x0048E040–0x00490150 |
-| [classes/FlyLocomotionClass](../src/recovered/classes/FlyLocomotionClass/) | 39 | 8,160 | 39 | 0x004BC110–0x004BFCC0 |
+| [classes/FlyLocomotionClass](../src/recovered/classes/FlyLocomotionClass/) | 40 | 8,194 | 40 | 0x004BC110–0x004BFCC0 |
 | [classes/NullModemClass](../src/recovered/classes/NullModemClass/) | 45 | 8,115 | 45 | 0x004D4890–0x005D2050 |
 | [classes/Wstring](../src/recovered/classes/Wstring/) | 53 | 8,035 | 53 | 0x0040AF40–0x0076F960 |
 | [classes/WorldDominationTour__Selection](../src/recovered/classes/WorldDominationTour__Selection/) | 28 | 8,018 | 27 | 0x0072D990–0x00730290 |

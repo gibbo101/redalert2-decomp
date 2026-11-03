@@ -49,51 +49,27 @@ struct UnknownFlyPtr : UnknownFlyPtrBase {
 };
 
 
-// Fly.cpp's IFlyControl instance. Query_From has the native FootClass reference ABI.
-// Other interface instances continue to use the generic shared COM pointer.
+// The instance declaration is light enough for the separate null-comparison unit.
 #include "shared/cell.hpp"
 #include "shared/aircraft.hpp"
-template<> class UnknownComPtr<IFlyControl,&unknown_uuid_7d80a8> {
-public:
-    UnknownComPtr() : Pointer(0) {}
-    UnknownComPtr(UnknownComPtr const &other) : Pointer(other.Pointer) { if (Pointer) Pointer->AddRef(); }
-    ~UnknownComPtr() { if (Pointer) Pointer->Release(); }
-    operator IFlyControl *() const { return Pointer; }
-    IFlyControl *operator->() const { return Pointer; }
-    IFlyControl *Checked() const {
-        if (!Pointer) _com_issue_error(E_POINTER);
-        return Pointer;
-    }
-    void Release_Held();
-    template<class Other> HRESULT Query_Held(Other other) {
-        IFlyControl *pointer;
-        HRESULT result=other->QueryInterface(unknown_uuid_7d80a8,(void**)&pointer);
-        if (FAILED(result)) {
-            Release_Held();
-            Pointer=0;
-        } else {
-            IFlyControl *attached=pointer;
-            Release_Held();
-            Pointer=attached;
-        }
-        return result;
-    }
-    void Attach(IFlyControl *pointer) {
-        if (Pointer) Pointer->Release();
+#include "shared/fly_control_ptr.hpp"
+inline UnknownComPtr<IFlyControl,&unknown_uuid_7d80a8>::UnknownComPtr(UnknownComPtr const &other)
+    : Pointer(other.Pointer) { if (Pointer) Pointer->AddRef(); }
+inline UnknownComPtr<IFlyControl,&unknown_uuid_7d80a8>::~UnknownComPtr()
+{ if (Pointer) Pointer->Release(); }
+inline void UnknownComPtr<IFlyControl,&unknown_uuid_7d80a8>::Attach(IFlyControl *pointer)
+{ if (Pointer) Pointer->Release(); Pointer=pointer; }
+inline UnknownComPtr<IFlyControl,&unknown_uuid_7d80a8> &
+UnknownComPtr<IFlyControl,&unknown_uuid_7d80a8>::operator=(IFlyControl *pointer)
+{
+    if (Pointer!=pointer) {
+        IFlyControl *old=Pointer;
         Pointer=pointer;
+        if (Pointer) Pointer->AddRef();
+        if (old) old->Release();
     }
-    UnknownComPtr &operator=(IFlyControl *pointer) {
-        if (Pointer!=pointer) {
-            IFlyControl *old=Pointer;
-            Pointer=pointer;
-            if (Pointer) Pointer->AddRef();
-            if (old) old->Release();
-        }
-        return *this;
-    }
-    HRESULT Query_From(FootClass * const &other);
-    IFlyControl *Pointer;
-};
+    return *this;
+}
 class FlyLocomotionClass : public LocomotionClass {
 public:
     FlyLocomotionClass();                                                       // 0x004BC110
