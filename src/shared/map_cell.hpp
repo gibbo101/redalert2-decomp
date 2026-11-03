@@ -66,8 +66,27 @@ public:
     int unknown_134;                // +0x134 (0 after MapClass 0x00559F10)
     bool unknown_138;               // +0x138 (as shared/cell.hpp)
     int unknown_13c;                // +0x13C (as shared/cell.hpp; positive: MapClass 0x00568280)
-    unsigned int unknown_140;       // +0x140 flags (bit 1: mapped, bit 0 set when layer 1 is fully shrouded)
+    union {                         // +0x140 flags (bit 1: mapped, bit 0 set when layer 1 is fully shrouded)
+        unsigned int unknown_140;
+        struct {                    // TibSun names (as shared/cell_class.hpp)
+            unsigned :7;
+            unsigned IsBridgeDeck:1;            // bit 7
+            unsigned IsUnderBridge:1;           // bit 8
+            unsigned IsBridgeTraversable:1;     // bit 9
+            unsigned WasUnderBridge:1;          // bit 10
+            unsigned IsBridgeEastWest:1;        // bit 11
+        };
+    };
     Cell Fetch_CellID() const { return MapCoords; }    // the cell's own coordinates as a value (inline; TibSun name)
+    // The cell of the bridge deck piece over this cell (TibSun Get_Bridge_Deck_Cell).
+    Cell Get_Bridge_Deck_Cell() const
+    {
+        if (IsBridgeDeck) {
+            return Fetch_CellID();
+        } else {
+            return unknown_2c->Fetch_CellID();
+        }
+    }
     void unknown_47a340(class AbstractClass *target);  // 0x0047A340 forgets a target (as shared/cell.hpp)
     unsigned short const *unknown_47a200() const;   // 0x0047A200 the tiberium's UI name (as shared/cell.hpp; wchar_t is not declared here)
     bool unknown_47c2e0(int house) const;       // 0x0047C2E0 (unknown_7c[house] > 0; TibSun Is_Sensed; DisplayClass slot 33)

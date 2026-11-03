@@ -7,6 +7,7 @@
 
 #include "shared/coord.hpp"
 #include "shared/adjacent_cell.hpp"
+#include "shared/dir_type.hpp"
 
 // The cell next to `cell` toward an 8-way facing (TibSun Adjacent_Cell: the cell
 // is the left operand of TPoint2D<short>::operator+; the train bridge twins
@@ -18,6 +19,10 @@ inline Cell Adjacent_Cell(Cell const &cell, int facing)
     return cell + AdjacentCell[facing & 7];
 }
 #endif
+
+// Eight-facing arithmetic (TibSun Facing_Add / Facing_Sub: the sum or difference wrapped to 0..7).
+inline FacingType Facing_Add(int first, int second) { return FacingType((first + second) & 7); }
+inline FacingType Facing_Sub(int first, int second) { return FacingType((first - second) & 7); }
 
 // The same step as int sums (XY_Cell): the low bridge span walks 0x0055E930,
 // 0x0055EA50, 0x0055FA60 and 0x0055FB90 compile to these 32-bit adds where
