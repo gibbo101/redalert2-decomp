@@ -1433,3 +1433,12 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout635 (2026-11-03, closed; Set/Get_Cell_Data_Spread 0x5818E0/0x581910 81 B landing)
 - Grow_Water_Region 0x5820B0: 81.86 natural (keep/grow_water_5820b0_8186.cpp, overlay keep/hW3). operator+ 0x42ADD0 is a nested site inside Adjacent_Cell, refused only when root sites follow the call. Exact call sequence with one probe after Adjacent_Cell (84.97). It needs 0x5798D0 from pop-953 (allow_split, as approved for 0x5798F0). TibSun mapgen.cpp:7216.
 - NE corner 0x574930: 99.26 (the only exact form computes both sums twice: steering, not delivered). Urban 0x587CF0: 90.41, parked (`cells` reload position). Set/Get_Cell_Data_Region 0x581870/0x5818A0 are exact in TibSun form but already accepted seeds of hand-written pop-45 (0 bytes, would need allow_split).
+
+## Scout637 (2026-11-03, closed; landed IsUnderBridge accessor rename and Preview_Cell_Color 0x4710D0 plus accessor 0x4788D0, 502 B; survey in build/class-work/Scout637/TARGETS.md)
+- TARGETS.md: about 23 fresh rows over 400 B with TibSun counterparts. Scout639 works it.
+- Cell rows must be scored in the whole unit (Scout637 join.py). Find_Object 0x471760 inlines at every depth-1 site; the original reaches it through the unit's inline wrappers (Cell_Building 0x4717B0, Cell_Terrain 0x4717E0), which put it at depth 2.
+- Cell_Color 0x4712C0 (924 B): 60.93 (w/keep/). Theaters[].unknown_50/54 are TibSun's radar brightness tables.
+
+## Scout638 (2026-11-03, closed; 0 B; map generator PARKED, three /Ob2 budget plateaus; resume in build/class-work/Scout638/NOTES.md)
+- Grow_Water_Region 0x5820B0: 84.09 (keep/gw_m3_8409.cpp; member Get_Cell_Data helpers put operator+ and ??_G out of line; the frontier's nested Get_Cell_Data is still refused). Place_Tile_Patch 0x586340: 51.10 (overlay keep/hI, TibSun bool Insert). Generate_Rural_Roads 0x58A1B0: 50.51 (needs pop-2900's two Link ctors 0x58B140/0x58B160 via allow_split, OWNER: approved if a round goes exact; the event.hpp QueueClass ctor overlay needs a fragile probe).
+- Next for this unit: measure the IL sizes of the shared helpers (UnknownVeinHeap Insert, Get_Cell_Data, the Link ctors) with Scout626 mu.py before drafting more shapes.

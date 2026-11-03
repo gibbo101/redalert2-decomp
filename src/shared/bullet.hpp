@@ -72,6 +72,7 @@ public:
     int unknown_24;                             // +0x24
 };
 
+#ifndef RA2_BULLET_MISSILE_VELOCITY
 double __cdecl unknown_math_4ba600(double y, double x);  // 0x004BA600 (atan2-like; hypothesis)
 // Fast_Sin / Fast_Cos (shared/fast_math.hpp) declared returning double, as
 // shared/unknown_geometry.hpp declares their neighbours (BulletClass 0x00463C50).
@@ -165,6 +166,9 @@ struct BulletVelocity : public BulletVelocityXY {
     double Z;       // +0x10
 };
 
+#else
+#include "shared/bullet_velocity.hpp"
+#endif
 // Members of other classes that Bullet.cpp reads, as minimal views until
 // their headers exist (offsets from this unit; names are hypotheses).
 struct UnknownBulletTypeView {

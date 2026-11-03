@@ -36,6 +36,11 @@ public:
     bool Turn(DirType const &towards, DirType const &by);
 #endif
 
+#ifdef RA2_DIR_MISSILE_ANGLES
+    DirType(double radians) { From_Radian(radians); }
+    void From_Radian(double radians) { Facing = short((radians - 1.5707963267948966) * -10430.060040584269); }
+    double As_Radian() const { return double((Facing - 16383) * -9.5876725168303271e-05); }
+#endif
     DirType const &Snap_To_256() { Facing &= 0xFF00; return *this; }
 
     void From_Facing(FacingType dir)
