@@ -1366,3 +1366,6 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Plan_Route 0x707F60: 88.26 (w/pj.cpp, overlay hq). w/pk.cpp reuses `last` (as TibSun reuses tospot) and gets all 30 Unknown_005502E0 result slots right (loose 97.11, main 85.97); left is which duplicated legs.Add tails VC6 merges.
 - Draw_Shape slot 311 0x7005B0 (2,236 B): 89.36 (w/sg.cpp; one-expression Rotate_Z fixes the 0x118 frame; w/sl.cpp 89.29 uses the 0x79D090 extern). Six small differences left. Mission_Unload slot 137 0x701580: 79.88 (overlay ov1). Can_Enter_Cell 0x703040: not started.
 - Wine note: a 180 s diff_candidate timeout can be a slow compile, not a hang (one took 155 s while the host was loaded).
+
+## Scout620 (2026-11-03, closed; 438 B landed: Passes_Proximity_Check 0x4991D0; DisplayClass is now population-3901)
+- Set_Cursor_Pos 0x4994D0: 72.04 (needs a non-virtual RadarClass `Cell unknown_slot51(Point2D const &)` in map_view.hpp, overlay hdr/shared). Calculated_Cell 0x49A700: 80.23 (needs an R spec: arg5 becomes bool in display.hpp and map_view.hpp, plus RA2_POINT_LENGTH for the unit). Read_INI 0x49CFD0 (2,358 B): not attempted (about 40 callees, Straw/Pipe COMDAT takeovers, slot 32 rename).
