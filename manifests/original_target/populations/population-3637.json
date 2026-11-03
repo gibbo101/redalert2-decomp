@@ -4,8 +4,8 @@
     "id": "population-3637",
     "inventory_sha256": "10158dd3983eb59e9228094afdf0511cb6a6532e897b9cda32873022501aaeee",
     "gaps_sha256": "a34d9ea89ac2bb364eb495bb31f1d4e95de6e2287d0d4729a43588d62fbc6aa2",
-    "historical_population_sha256": "b2554bcb7fcfd37e1e3514bee12a808f2aafde382991fe8071cce3d6f9940342",
-    "historical_acceptance_sha256": "fd0568e67e647f947a3e11e4f778a26e640516e9d0ff36271d3a71dcb436f542"
+    "historical_population_sha256": "fd8a6a4875d99ff3024b7a8859401202d92f23b0f271e03757561faf0c875ce7",
+    "historical_acceptance_sha256": "81d092100d912ba7e073fdd36b410f304debf590b6af1d10b33208e6acc36534"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1852,7 +1852,7 @@
     "?get@Leaf_402c00@@QAEIXZ": 4205568,
     "?target@Call_402c00_0@@QAEIXZ": 4223728,
     "?get@Leaf_403820@@QAEXXZ": 4208672,
-    "?get@Leaf_405bf0@@QAEXXZ": 4217840,
+    "?Init@AudioEventHandle@@QAEXXZ": 4217840,
     "?get@Leaf_406320@@QAEIXZ": 4219680,
     "?get@Leaf_406530@@QAIXI@Z": 4220208,
     "?get@Leaf_406540@@QAIXI@Z": 4220224,

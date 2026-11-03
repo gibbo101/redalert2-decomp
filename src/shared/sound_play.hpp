@@ -15,6 +15,9 @@ struct CoordStruct;
 // event bag variable as proof it came from this system. A handle only works
 // while all of that still matches (initialized by 0x00405BF0).
 struct AudioEventHandle {
+#ifdef SOUND_PLAY_DECLARE_HANDLE_INIT
+    void Init(); // 00405BF0: initializes this sixteen-byte handle.
+#endif
     AudioEvent *Event;              // +0x00
     int Serial;                     // +0x04
     AudioEventType *Type;           // +0x08

@@ -1169,3 +1169,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout579 (2026-11-02/03; 2,454 B landed: Execute_DoList 0x628880)
 - Process_Receive_Packet 0x6265C0: 49.40 at HEAD -> 87.18 (Scout579 misses/). It needs c3.cpp, a byte-exact rewrite of 0x62E5C0 that refuses auto-inlining, in the same plan, plus the event.hpp POD union overlay.
 - 0x626CB0: 52.58. Extract_Compressed_Events 0x6282D0: 56.53, parked after two attempts.
+
+## Scout577 (2026-11-02/03, closed; 2,165 B landed: planning-token teardown 2,074 B and Planning_Event_Result 91 B)
+- The in-class PlanningNodeClass::operator delete was an extra /Ob2 site inside ??_G; planning.hpp now drops it. 0x613E50's two list Clears are one file-local inline helper; this is a budget-count hypothesis.
+- 0x6130B0: 77 (needs pop-3353 taken over whole, including 0x6142F0). Planning_Selection_Kind 0x616B40: 98.51 (Scout577 sk2's logic differs from the original). 0x616A50 77.83, 0x61A6A0 88.57, 0x61A6F0 95.35, 0x619BD0 96.92. Assigned to Scout581 together with the rest of the PlanMgr.cpp rows.
