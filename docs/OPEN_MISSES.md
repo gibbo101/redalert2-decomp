@@ -1235,3 +1235,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Start_Of_Move 0x6785C0 (8,373 B, ends `ret 0xc`) is TibSun drive.cpp 1402-2040. Not drafted.
 - DriveLocomotionClass has the same While_Moving code at 0x4A1000, unbounded in every pass. Owner item when the Ship row lands.
 - Header overlay (Scout590/hdr/shared/): ship_locomotion.hpp declares While_Moving/Start_Of_Move. foot.hpp: UnitTypeClass +0xBA4 `bool Passive` and UnitClass +0x5B9 `bool unknown_5b9`; both replace char padding (owner: accepted as proposed when a row lands).
+
+## Scout591 (2026-11-03, closed; 4,915 B landed: Net_Join_Dialog 0x5BD070 with the Start_Joined_Game / 0x5C3B70 rename)
+- Get_Join_Responses 0x5C08A0 (6,798 B): not drafted (seed Scout591/w/s5c08a0, TibSun netdlg2.cpp 2411-3304). Net_Join_Dialog declares it locally as __fastcall by @ref; reconcile when it lands. Scout593 holds it.
+- Lobby refresh 0x5BBDD0: 82.76, unchanged; Get_Item had no effect.
+- Net_Join_Dialog_005bd070.cpp has file-local @ref declarations to move to shared headers when their rows land: Host_Dialog_Proc 0x5BEFE0, Seat_First_Player 0x5C8CD0, 0x5EAC30, Version 0x712B50, session +0x63C, 0xA3F808/0xA3F818.
