@@ -949,12 +949,5 @@ int __fastcall Unknown_0073d3f0(Wstring const &name);
 // Connects to a WOL server (0x007424C0; hypothesis).
 bool __fastcall Unknown_007424c0(WOL::Server *server);
 
-// RTTI0x007AF934; actual constructor/destructor establish one owned Wstring at+C.
-#include "shared/wonline_dialog_control.hpp"
-class WonlineStringDialogControl : public SimpleWonlineDialogControl {
-public:
-    WonlineStringDialogControl() {}
-    virtual ~WonlineStringDialogControl() {}
-    Wstring Text;
-};
+#include "shared/wonline_string_dialog_control.hpp"
 #endif

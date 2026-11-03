@@ -4,8 +4,8 @@
     "id": "population-2956",
     "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
     "gaps_sha256": "04d36338335bdd7e43e23bfbef070ac0785ff73d83cba2e18e0315fd2eb8d76f",
-    "historical_population_sha256": "73e6efdfed223dbe22512e9da55bbcadcc563c011185cdac2d56d22789ba1151",
-    "historical_acceptance_sha256": "8edded0c871d04e2e16577cf06645aaed90af564c928abc1a3b0d75819f48381"
+    "historical_population_sha256": "757a8e996964dd1041c6efb2e6452f257a186cd392ecfe123577b7887447d1f7",
+    "historical_acceptance_sha256": "2bcf600ec957f23caf50cebbc6734ee4ce99c2b96e3cd5ff075c92da4314f369"
   },
   "references": {
     "?Wstring_To_Wide@@YI?AVWideString@@ABVWstring@@@Z": 7803328,
@@ -2471,7 +2471,7 @@
     "?get@Leaf_765930@@QAEIIII@Z": 7756080,
     "?get@Leaf_765940@@QAEIIII@Z": 7756096,
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
-    "?get@Leaf_765aa0@@QAEIXZ": 7756448,
+    "??0WonlineStringDialogControl@@QAE@XZ": 7756448,
     "?get@Cleanup_765e00@@QAEXXZ": 7757312,
     "?Fetch@?$VectorClass@PAVtConnInfoStruct@@@@UBEPAVtConnInfoStruct@@H@Z": 7757392,
     "?get@Leaf_766060@@QAEXXZ": 7757920,

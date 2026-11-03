@@ -7,7 +7,11 @@
 
 class SimpleWonlineDialogControl : public OwnerDraw::SimpleDialogControl {
 public:
+#ifdef RA2_SIMPLE_WONLINE_CTOR_INLINE
+    SimpleWonlineDialogControl() {}
+#else
     SimpleWonlineDialogControl();               // 0x0073C000
+#endif
     virtual ~SimpleWonlineDialogControl();      // 0x0073C020 (scalar deleting destructor 0x0075D0A0)
     virtual bool unknown_slot4();               // 0x0073C030
 };

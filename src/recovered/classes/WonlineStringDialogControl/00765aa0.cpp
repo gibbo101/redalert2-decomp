@@ -1,6 +1,9 @@
-class Call_765aa0_0 {public: unsigned int target();};
-extern "C" unsigned char data_765aa0_7af6f4[];
-class Call_765aa0_1 {public: unsigned int target();};
-extern "C" unsigned char data_765aa0_7af934[];
-class Leaf_765aa0 { public: unsigned int get(); };
-unsigned int Leaf_765aa0::get() { unsigned int r0 = ((Call_765aa0_0*)((unsigned int)this))->target(); *(unsigned int*)(((unsigned int)this)) = (unsigned int)data_765aa0_7af6f4; unsigned int r1 = ((Call_765aa0_1*)(((unsigned int)this) + 0xc))->target(); *(unsigned int*)(((unsigned int)this)) = (unsigned int)data_765aa0_7af934; return (unsigned int)this; }
+// WonlineStringDialogControl constructor 0x00765AA0, complete32-byte original body.
+#define RA2_WONLINE_STRING_CTOR_SOURCE
+#define RA2_SIMPLE_WONLINE_CTOR_INLINE
+#include "shared/wonline_string_dialog_control.hpp"
+// @ref ??0SimpleDialogControl@OwnerDraw@@QAE@XZ=006010c0
+// @ref ??0Wstring@@QAE@XZ=0076d910
+// @ref ??_7SimpleWonlineDialogControl@@6B@=007af6f4
+// @ref ??_7WonlineStringDialogControl@@6B@=007af934
+WonlineStringDialogControl::WonlineStringDialogControl() {}

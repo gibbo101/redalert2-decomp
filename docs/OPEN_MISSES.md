@@ -1402,3 +1402,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - The PCX_CACHE_DECLARE_LOADS guard now protects Print_CRCs, not 0x73FEE0. Removing it breaks Print_CRCs at +0x9A9, and 12 natural re-rolls failed. RA2_ABSTRACT_FLAGS_UNNAMED is no longer defined anywhere; the `#else` branch in abstract_class.hpp can go.
 - Accepted UnknownPathEstimator 0x428370 scores 99.06 in diff_candidate. Generate_Rural/Urban_Buildings 0x589AC0/0x587CF0 are no longer accepted rows (check).
 - 2026-11-03: Time Machine local snapshots keep deleted build output on disk, so freed space doesn't return. Ask the user to thin snapshots and exclude build/ (and optionally private/).
+
+## Scout629 / Scout631 (2026-11-03; landed the shared TibSun BulletVelocity model a4fea42dc, 0 B; Shrapnel and Fire_At PARKED)
+- OWNER DECISION: bullet.hpp uses the TibSun velocity names (Set_Yaw, Set_Pitch, Set_Speed, Speed, Horizontal_Speed, Nonzero_Check, Get_Pitch). 0x41B6E0 stays unaccepted (the out-of-line copy of the inline Get_Pitch member). Some bullet.hpp variants flip Print_CRCs; probe before changing it.
+- Shrapnel 0x462C50: 88.69 (Scout631 w/shrapnel_best_88.69.cpp). The original shares one slot for the first loop's Cell temporary and Create_Bullet's inlined `bullet` spill; ours keeps two (frame 0xB0 vs 0xA8). The FP term orders follow VC6's sort, not the source. Fire_At 0x415790: 99.81 (the angle low-dword reload after fstp: a store/load aliasing order).
+- 2026-11-03 17:00-17:30Z: codex1 r932 was refused on Print_CRCs (+0x639) after a4fea42dc; codex1 is redoing it with a guard. Two retries left 31 GB of build/original-target-* outputs (disk fell to 16 GiB). land.sh now prunes on failure too.
