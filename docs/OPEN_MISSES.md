@@ -1310,3 +1310,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout606 (2026-11-03, closed; 0 B; DSurface trail line PARKED; resume in build/class-work/Scout606/NOTES.md)
 - Draw_Trail_Line 0x4AE9C0: 89.22 (fragile; any extra live local flips it to 81). The block-2 slot fix (w/b1.cpp) swaps the green/blue slots and the Build_Hicolor_Pixel argument order (79-82). w/b8.cpp scores 87.61. The original must hold both states at once, so another source difference is left, most likely in the dz loop. feat.py counts mismatches per region. LineTrail::Draw 0x5395C0 still waits on it; LineTrail ctor/AI are already accepted.
 - Slot 15 0x4AC650: 28.79 (frame 0xD4 vs 0xC4: 16 extra bytes).
+
+## Scout608 (2026-11-03, closed; 1,649 B landed: BuildingClass::Read_INI 0x44AB80; BuildingClass is now population-3892)
+- Unlimbo slot 53 0x43D3A0 (3,777 B): 88.71, shape 98.1 (w/ul5.cpp, EXTRA from E2.txt). It needs exact rewrites of 0x452BE0 Should_Fog (member TPoint2D<short>::operator+) and 0x442060 slot 52 (drop the file-local RA2_CELLSTRUCT_PLUS operator+) in the same plan. Left: Should_Fog's operator+ goes out of line in the original (about 60-70 free sites short); Sell_Wall's tail merge direction; particle-system argument order.
+- Mission_Missile 0x448400: seeded only (w/seedmm). Mission_Attack 0x446920: 79.45. Delayed_Fire 0x44B770: 60.27.
