@@ -1416,3 +1416,12 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout632 (2026-11-03, closed; 0 B; TechnoClass population-3899; resume in build/class-work/Scout632/NOTES.md)
 - New Coord model (overlay hA/shared/selection_coord.hpp): `class Coord : public CoordStruct` with `Coord(int,int,int)` and `Coord(CoordStruct const &)`, and 0x41B630 bound as `??0CoordStruct@@QAE@HHH@Z`. Evidence: the original's inlined brackets call CoordStruct::operator+ 0x69ECF0 and operator/ 0x6D9770 out of line. Draw_Double_Selection_Bracket 0x6C3950 stays exact under it. The fragile probe has not been run yet.
 - Draw_Pre_Render slot 65 0x6C3B30: 95.68 with the Coord model (call pattern exact; one color/dim register tie left). Draw_Post_Render slot 66 0x6C2C40: 42.79 natural, 74.93 with two probe sites (needs the single bracket inline before it plus an emitted 0x6C3A90 row). NoInit ctor 0x6C1F10: 67.89, parked (needs charged IL between the StageClass base and the DVC members, not extra sites).
+
+## Scout633 (2026-11-03, closed; landed Rural 0x589AC0 1,081 B and Seed_Lake 0x57E100 2,839 B)
+- OWNER DECISION (reversible): Seed_Lake took over Map_Clamped_Gaussian 0x5798F0 from hand-written population-2543 with allow_split. None of the four rows left in 2543 uses it, and the full build passes.
+- The shared fragile probe is now build/class-work/Scout633/fragile_probe.py, with 0x589AC0 added; LANE_BRIEF points to it.
+- NE corner 0x574930: 99.26 (keep/ne_574930_9926.cpp; one X-sum operand order). Grow_Water_Region 0x5820B0: 67.01 (the original calls operator+ 0x42ADD0 and ??_GUnknownVeinHeap 0x58DB20 out of line; it needs 0x5798D0 taken from population-953). Not attempted: 0x58A1B0, 0x586340, SE 0x5743F0, Urban 0x587CF0.
+
+## Scout634 (2026-11-03, closed; 0 B; Coord-model rows PARKED after Scout632/634)
+- Verdict: Coord (`class Coord : public CoordStruct` with base-copy conversions) belongs in opt-in selection_coord.hpp (overlay Scout632 hA). Appending it to coord.hpp flips Print_CRCs (+0x638, +0x9A8) and Pick_Lobby (+0x2AA) through the declaration counter. coord.hpp's UnknownCoord434820 (20 users) is the same class with a member-wise conversion; merging them needs a full build.
+- Draw_Pre_Render 0x6C3B30: 95.68 (w/u3.cpp with `CoordStruct const &lepton = ...; ::Coord dim = lepton;` is one natural late free site short; u3i 95.55). BuildingLight Draw_It 65.85 and Hover Process 62.05: the model gives no sites there (derived-to-base is not a site). Fire_At 99.81 with ::Coord replacing the file-local OffsetCoord.
