@@ -1190,3 +1190,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - 0x685AC0 is ambiguous in pass 7 (the sweep could not decode it), so it is not a pass-7 row; leave 0x68633A until 0x685AC0 is bounded.
 - Misses: UICmnds 0x6F81B0 99.60; Motion_Capture 0x53F490 97.63; ParticleClass ctor 0x608440 94.69 (shape 100, two frame slots swapped); Skirmish_Message_497 0x683FC0 97.43; Skirmish_Command 0x6829F0 78.89; Audio_Destroy_Devices 0x403210 61.11 (parked).
 - Tool note: check_plans honours RA2_INVENTORY_PASSES only as an absolute path under the check worktree. Plans that state body_bytes don't need it.
+
+## Scout583 / Scout584 (2026-11-03, closed at the account switch; 0 B)
+- Rect family (Node_At 0x615D30, Pick_Node 0x616070): an inline IPW(Rect const &, int x, int y) helper fixes the add-order register diff; the inline split needs the Rect() subtree budget at about 166-181 units against the natural 250. 0x616070's true extent is 207 B (to 0x61613F), and the 0x616132 row is bogus.
+- 0x6130B0: 78.61 (Scout583 w/rl1, hi2, ut3, h4). 0x613330: 50.13 on its first attempt (w/ts2). 0x616B40: 98.51. Branch_Color/Loop_Color: unchanged.
+- Diplomacy dialog 0x6340F0: 65.66, shape 98.27 (Scout584 w/r40f0j1.cpp); a callee-saved register permutation is left. 0x5BBDD0 (netdlg2) was surveyed only; it needs 0x5C5FF0 first.

@@ -49,7 +49,13 @@ struct UnknownControlRecord {
     char unknown_00[0x10];
     Surface *surface_10; // +0x10 a BSurface (0x005FE490 creates it; 0x005FF380 deletes it)
     Surface *image_14;  // +0x14 image set by 0x005E1F30
+#ifdef RA2_OWNERDRAW_CHECK_FIELDS
+    char unknown_18[0x20 - 0x18];
+    int unknown_20; // skips checkbox painting when nonzero (0x005F3CF0)
+    char unknown_24[0x28 - 0x24];
+#else
     char unknown_18[0x28 - 0x18];
+#endif
     wchar_t *text_28;   // +0x28 owned wide text (0x006005C0 copies it, 0x00600560 sets it from a char string)
     char unknown_2c[0x34 - 0x2c];
     UnknownNode_006003d0 *list_34;  // +0x34 owned node list (shared/unknown_node_list.hpp; 0x00600460 copies one)
@@ -87,7 +93,13 @@ struct UnknownControlRecord {
     bool unknown_d6;
     bool unknown_d7;
     bool unknown_d8;
+#ifdef RA2_OWNERDRAW_CHECK_FIELDS
+    bool unknown_d9; // checkbox alternate art enabled
+    bool unknown_da; // checkbox alternate art selection
+    char unknown_db;
+#else
     char unknown_d9[0xdc - 0xd9];
+#endif
     int unknown_dc;     // +0xDC 0x25 or 0xE by the dialog's kind and the control ID (0x005E8720)
     int unknown_e0;
     int unknown_e4;
