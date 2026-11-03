@@ -4,8 +4,8 @@
     "id": "population-3912",
     "inventory_sha256": "b133b7bc21c40e68639bbf3eb7337c3e26940b9abb9372b2c6eced6192e4ef0a",
     "gaps_sha256": "6bc5f2a03685e0d641dba16a99cd2649255bb2a12498d6d55e0565adb0418f62",
-    "historical_population_sha256": "d6c80f477633adf7872c7916f6ba05120f11ef25b965d4e63d79de6c05870a42",
-    "historical_acceptance_sha256": "b178a4b891495a9c3e2936bf03ba651e260b313ed1999bc1c563fb71bd53c05d"
+    "historical_population_sha256": "c529602d0d919b0699498bdac949a786d1721f7219fe21adf8d15c1d255dc320",
+    "historical_acceptance_sha256": "dc1cf881c2dad3c60822c0f61bc2b8d6d7932ad8f592d12cfe1382e5fb218d1d"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -11736,7 +11736,7 @@
     "_DAT_00b2a8a4": 11708580,
     "_DAT_00b2ab88": 11709320,
     "_DAT_00b2ac2c": 11709484,
-    "?FUN_00759df0@": 7708144,
+    "?Set_Matchmaking_State_00759df0@@": 7708144,
     "?FUN_0078387f@": 7878783,
     "?FUN_007646b0@": 7751344,
     "?RLEBlitter_From_Flags_00485d60@ConvertClass@@QBEPBVRLEBlitter@@I@Z": 4742496,

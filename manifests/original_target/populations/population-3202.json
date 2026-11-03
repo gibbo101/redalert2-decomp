@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "55b565b6b7c238b727d6aeb3dd97ea9dfc1fc2204fe8a7d6c23db7a627ac3a49",
-    "historical_acceptance_sha256": "5a28c784b7a30cc76908174ef57c7e793550f49f121770c7fe63b3450ffc9745"
+    "historical_population_sha256": "92d8e813f3a046a32461d71dba9dd4a4e2fca43d9b37d7b5d3af80644f6b7107",
+    "historical_acceptance_sha256": "6f77898d907fefec6ccdfe338487e50d3d9ddd49759564479cf1a4b72236eea7"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -10956,7 +10956,7 @@
     "?FUN_007303a0@seed_007303a0@@YI_NH@Z": 7537568,
     "?GetClassID@WeaponTypeClass@@UAGJPAUGUID@@@Z": 7552080,
     "_CLSID_WeaponTypeClass": 8002976,
-    "?FUN_00759df0@seed_00759df0@@YIXIII@Z": 7708144,
+    "?Set_Matchmaking_State_00759df0@@YIXHHH@Z": 7708144,
     "_DAT_00b2ac2c": 11709484,
     "_DAT_00b26898": 11692184,
     "_DAT_00b2ab88": 11709320,

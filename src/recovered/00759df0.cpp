@@ -1,31 +1,20 @@
-// 0x00759df0: function not yet identified
-//
-// Body: 39 bytes (frozen inventory bound).
-// Referenced from 0 sites.
-// Ghidra prototype: void __fastcall FUN_00759df0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
-
-namespace seed_00759df0 {
-
-extern undefined4  FUN_0078387f(undefined4 *param_1);
-extern "C" undefined4 DAT_00b26898;
-extern "C" undefined4 DAT_00b2a8a4;
-extern "C" undefined4 DAT_00b2ab88;
-extern "C" undefined4 DAT_00b2ac2c;
-
-void __fastcall FUN_00759df0(undefined4 param_1, undefined4 param_2, undefined4 param_3)
+// WOL matchmaking state transition, 0x00759DF0 (39 bytes plus nine frozen NOPs).
+// State/result and timeout are separate 32-bit words; entering a state refreshes its timestamp.
+#include "shared/crt_time.hpp"
+extern int unknown_b2ac2c;
+extern int unknown_b26898;
+extern int unknown_b2ab88;
+extern long unknown_b2a8a4;
+// @ref ?unknown_b2ac2c@@3HA=00b2ac2c
+// @ref ?unknown_b26898@@3HA=00b26898
+// @ref ?unknown_b2ab88@@3HA=00b2ab88
+// @ref ?unknown_b2a8a4@@3JA=00b2a8a4
+// @ref _time=0078387f
+void __fastcall Set_Matchmaking_State_00759df0(int state,int timeout,int result)
 {
-    DAT_00b2ac2c = param_3;
-    DAT_00b26898 = param_1;
-    DAT_00b2ab88 = param_2;
-    DAT_00b2a8a4 = FUN_0078387f((undefined4 *)(0));
+    unknown_b2ac2c=result;
+    unknown_b26898=state;
+    unknown_b2ab88=timeout;
+    unknown_b2a8a4=time(0);
     return;
 }
-
-}  // namespace seed_00759df0

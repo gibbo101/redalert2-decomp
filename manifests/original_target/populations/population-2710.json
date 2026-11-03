@@ -4,8 +4,8 @@
     "id": "population-2710",
     "inventory_sha256": "f8ef961bf7b0693179d081767111dfa06d47b5f94189e7adac7bfe08391131e4",
     "gaps_sha256": "60c1bb11ecba31ce915a4ed1a6e0a4767c21e03d17d6c218d20464bfe63e241e",
-    "historical_population_sha256": "59b7a33dd5cd8e7532bbf9a14594db091f596f1a7de8a87bd3f3553f0930ee6a",
-    "historical_acceptance_sha256": "f75ef4f075b8a4facfe2d1e3b5d4cf8b6d172380dd32a194bfa562d36c9a51a5"
+    "historical_population_sha256": "5aab635f737acc575abf8a0f9f205098ac47b07ecf7fa85eee0b23093948b461",
+    "historical_acceptance_sha256": "3f942bae77501ad779bef222921b6bf7ba47710d46eb81af2dd360ab03ecb7b4"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2950,7 +2950,7 @@
     "_DAT_00b2a8a4": 11708580,
     "_DAT_00b2ab88": 11709320,
     "_DAT_00b2ac2c": 11709484,
-    "?FUN_00759df0@": 7708144,
+    "?Set_Matchmaking_State_00759df0@@": 7708144,
     "?FUN_0078387f@": 7878783,
     "?FUN_007646b0@": 7751344,
     "?OnInsiderStatus@CChatEventSink@@": 7756128,
