@@ -162,6 +162,11 @@ public:
     virtual HRESULT unknown_slot31(IStream *stream);                  // slot 31
     // The map's sections of a scenario INI (0x0049D910; TibSun Write_INI).
     void Write_INI_0049D910(CCINIClass &ini);
+#ifdef RA2_DISPLAY_READ_INI
+    // Slot 32 (unknown_slot32 below) as map_view.hpp's direct-call alias; only the Display unit declares it
+    // here (a new DisplayClass declaration moves one load in Print_CRCs 0x0062A360).
+    void Read_INI_0049CFD0(CCINIClass &ini);                // 0x0049CFD0
+#endif
     virtual void unknown_slot32();                                    // slot 32
     // Help text of a button id (RadarClass 0x00634AA0, PowerClass 0x0061D1C0 for id 999).
     virtual wchar_t const *unknown_slot33(int id);                   // slot 33

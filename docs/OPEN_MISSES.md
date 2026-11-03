@@ -1375,3 +1375,13 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - One full build at a time: private/tools/fullbuild_lock.sh, taken by runq.sh around every landing and by the lane wrapper build/owner-watch/fullbuild.sh. The lock is pid-checked and cleared when its holder is gone.
 - Lanes score one compile at a time and stop under 20 GiB free disk or over 1.5 GB swap (LANE_BRIEF "Host limits"). Wine reset: private/tools/wine_reset.sh. The monitor heartbeat is in build/owner-watch/last.txt.
 - Windows workers never block their goals (WORKER.md 5a, assignments/fallback.md).
+
+## Scout622 / Scout623 (2026-11-03; landed ObjectClass Get_Render_Rect 0x5D31C0 796 B and the Calculated_Cell bool rename)
+- Get_Render_Rect gets the two /Ob2 sites the original has after the first Get_Frame_Rect: a file-local Object_Is_Building at the bib test, and a `Point2D position(x, y)` the Rect is built from. 0x5D3060 defines RA2_DRAW_SHAPE_OPERATIONS.
+- Aircraft Fire_At 0x415790: 95.79 with no probes. A TibSun `Coord(int,int,int=0)` wrapper on each shroud-probe offset (file-local OffsetCoord) supplies the sites. Frame 0x64 vs 0x6c is left. Scout625 continues.
+- DisplayClass Calculated_Cell 0x49A700 81.06 and Set_Cursor_Pos 0x4994D0 78.48: parked. Read_INI 0x49CFD0: Scout625.
+- Fallback queue item 1 (DisplayClass mouse rows) is still open. Get_Pitch 0x41B6E0 97.14, Techno slot 65 83.54 and Foot Can_Reach 98.31: one attempt each, parked.
+
+## Scout624 (2026-11-03, closed; 0 B; Sidebar.CPP population-3302; resume in build/class-work/Scout624/NOTES.md, LIST.md)
+- Add 0x67C530 (788 B) and the emptied-tab handler 0x67CA50 (884 B) are one /Ob2 puzzle. With probes both are exact in-unit (recipe in NOTES: ca50_5's branch order, exactly two free sites in Select_Tab between F730 and Activate_Tab, 0x6820F0 over 40 IL, C850 comparing a free inline that computes Unknown_006820A0()*2). AI 0x67DC90 (1,315 B) and Recalc 0x6802D0 (1,732 B) hang on the same tree, about 4.7 KB in all. No natural source found yet. Next: measure real IL sizes (InlineLab518 x/meas.py, x/model.py).
+- StripClass::Draw_It 0x67F800: 90.46. SelectClass::Action 0x6809F0: 66.98 (call sequence identical). Slots 54 0x67E210 and 34 0x6819A0 were skipped (listed for codex3 on BOARD).

@@ -250,6 +250,11 @@ class RadarClass : public DisplayClass {
 public:
     virtual bool unknown_slot36(Cell const &cell, HouseClass *house);              // slot 36 0x0062FC80
     virtual void unknown_slot52(CoordStruct const &coord);                       // slot 52 0x00630320 (centres the tactical view on a coordinate)
+#ifdef RA2_DISPLAY_READ_INI
+    // Slot 29 (0x00630840, virtual in shared/radar.hpp) as the direct call on Map in DisplayClass's
+    // Read_INI; guarded like display.hpp's alias (Print_CRCs 0x0062A360).
+    void Unknown_00630840(Rect const &rect);                                    // 0x00630840
+#endif
     // Slot 37 (0x0062FCA0, virtual in shared/radar.hpp), declared non-virtual as slot 38 above.
     bool unknown_slot37(Cell const &cell, HouseClass *house, bool arg3);
     void Unknown_00631570(Cell const &cell);                              // 0x00631570
