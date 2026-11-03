@@ -1485,3 +1485,6 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout648 (2026-11-03, closed; Destroy_High_Bridge_Connections 0x558BD0 1,066 B landed; table in build/class-work/Scout648/LIST.md)
 - Near misses: Destroy_Low_Bridge2_Span 0x557090 and twin 0x556520 99.54 (one end-walk X sum), Repair_Bridge 0x555A60 99.75, 0x566C30 98.96, Damage_Low_Bridge family (4 rows, 5,220 B) 98.73, Place_Wall 0x56A660 96.62.
 - Finding: which operand of a 16-bit Cell sum loads first does not follow source order. Dead locals shift it with period 8 (position irrelevant); extern declarations before the function have no effect; a `(Cell)` cast counts as one symbol. Scout651 studies it.
+
+## Scout650 (2026-11-03, closed; 0 B; resume in build/class-work/Scout650/NOTES.md, drafts w/keep/)
+- Overlay Mark 0x5DA970 (3,251 B): 99.30, shape 100 (one place-loop Y operand order). IPXManager Service 0x525F60 (2,704 B): 97.99 (0 cached in ebp shared with the final loop index). Hover While_Moving 0x4FCBC0 (3,696 B + 32 B table): 86.93 first draft.

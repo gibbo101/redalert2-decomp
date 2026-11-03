@@ -20,6 +20,12 @@ inline Cell Adjacent_Cell(Cell const &cell, int facing)
 }
 #endif
 
+// The same step with the offset as the left operand (the low bridge span walks 0x00556520 and 0x00557090).
+inline Cell Adjacent_Cell_L(Cell const &cell, int facing)
+{
+    return AdjacentCell[facing & 7] + cell;
+}
+
 // Eight-facing arithmetic (TibSun Facing_Add / Facing_Sub: the sum or difference wrapped to 0..7).
 inline FacingType Facing_Add(int first, int second) { return FacingType((first + second) & 7); }
 inline FacingType Facing_Sub(int first, int second) { return FacingType((first - second) & 7); }

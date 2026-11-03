@@ -309,7 +309,7 @@ public:
     bool Destroy_High_Bridge_Span_00558660(Cell const &cell, FacingType direction, Rect *dirty);
     void Destroy_High_Bridge_Connections_00558BD0(Cell const &cell);
 #endif
-#ifdef RA2_MAP_BOMB_BRIDGE
+#if defined(RA2_MAP_BOMB_BRIDGE) || defined(RA2_MAP_BRIDGE_PIECES)
     // Bridge destruction around a cell (BombClass::Unknown_00435D30 on a bridge repair hut): 0x00557090 when a
     // cell within two holds a bridge tile or overlay, else 0x00556520 (names hypotheses; twins).
     void Unknown_00556520(Cell const &cell);                      // 0x00556520
