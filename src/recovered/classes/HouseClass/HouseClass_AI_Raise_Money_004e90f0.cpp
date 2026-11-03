@@ -59,8 +59,7 @@ bool HouseClass::AI_Raise_Money_004e90f0(int urgency)
                         if (unknown_55f0.Nodes.Length()<2) goto GO_HUNT;
                         next=1;
                     }
-                    BaseNodeClass node;
-                    node.unknown_4f6be0(unknown_func_4ef600(Rules->BuildRefinery)->ArrayIndex,Cell(0,0));
+                    BaseNodeClass node(unknown_func_4ef600(Rules->BuildRefinery)->ArrayIndex,Cell(0,0));
                     unknown_55f0.Nodes.Insert_After(node,next-1);
                     for (int j=unknown_55f0.Nodes.Count()-1;j>next;--j) {
                         if (unknown_55f0.Nodes[j].Type==unknown_func_4ef600(Rules->BuildRefinery)->ArrayIndex)

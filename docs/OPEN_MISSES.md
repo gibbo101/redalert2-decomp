@@ -1453,3 +1453,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Zone_Reset 0x54EBD0: 84.41 (w/keep/zone_reset_8441.cpp, EXTRA 54fab0=fab0a.cpp, overlay hZR, RA2_MAP_ZONE_RESET; body_bytes 1646). Left: register and slot choices coupled to the block layout of the inlined 0x54FAB0 clamp.
 - House 0x4F5D30 (wall planning around ProtectWithWall buildings): 93.18 fresh. About 90 IL units short at the 6th insert (0x4F6BE0 may be a BaseNodeClass(int, Cell const &) ctor). Hover 0x4FCBC0 is TibSun's While_Moving (3.7 KB): not drafted.
 - OWNER DECISION: codex4 r106 retires the bogus one-byte row 0x75272B inside its complete atexit cleanup 0x752710. Bogus rows wholly inside an independently bounded body may be retired in the plan.
+
+## Scout640 (2026-11-03, closed; 6,897 B landed: Place_Down 0x54AB70, Pick_Up 0x54AF70, Repair_High_Bridge_Span 0x54B560, Repair_Train_Bridge 0x552570)
+- New shared headers: map_overlay.hpp (OverlayClass stand-in), map_cell.hpp +0x140 flags union and TibSun Get_Bridge_Deck_Cell, map_adjacent.hpp Facing_Add/Facing_Sub.
+- Repair_Bridge 0x555A60: 63.60 (one tail merge; frame 0x54 vs 0x48). Damage_Train_Bridge 0x5539B0: codex2 66.45. Likely quick: Repair_Train_Bridge_Span 0x54BE80 (codex2 86.94, the train twin of 0x54B560) and 0x553570 (needs Get_Bridge_Deck_Cell, which now exists). Scout643 continues.

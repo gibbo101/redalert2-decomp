@@ -4,8 +4,8 @@
     "id": "population-3863",
     "inventory_sha256": "c091ec80bc7c1c5be86f9dc8dd0d58f157b384ccf646a3caf6d89bf3461c4e13",
     "gaps_sha256": "5be47b7bafdfaba4e8ffc88fdf4eeac0c6ce6396b89be0f6a8c52a2916998a9a",
-    "historical_population_sha256": "672281b98a83fe8d22b685675c2c1074cc1a46651c3613a468b5219ae76571f8",
-    "historical_acceptance_sha256": "dbac87de554439393090cfb194f8d9e2060aa9104a7a6d2de5b1a8dcf99b905f"
+    "historical_population_sha256": "1fab656f0da57d6f601cc0d2ffb11d5d0b7a0b307b6218f827af7c7c4b94cdb5",
+    "historical_acceptance_sha256": "58dbac0d74100c3a93dedb5e4d9ce4fb8a31562df62f53f4bc32aa25355a1c87"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6054,7 +6054,7 @@
     "?Spend_Money_004e5280@HouseClass@@QAEXH@Z": 5132928,
     "?Get_Amount@StorageClass@@QBEMH@Z": 6925888,
     "?Check_Raise_Money_004e8d80@HouseClass@@QAEHXZ": 5148032,
-    "?unknown_4f6be0@BaseNodeClass@@QAEPAV1@HABVCell@@@Z": 5204960,
+    "??0BaseNodeClass@@QAE@HABVCell@@@Z": 5204960,
     "?unknown_slot38@DisplayClass@@QAE_NABVCell@@PAVHouseClass@@@Z": 4825328,
     "?unknown_slot37@RadarClass@@QAE_NABVCell@@PAVHouseClass@@_N@Z": 6487200,
     "?AI_Raise_Money_004e90f0@HouseClass@@QAE_NH@Z": 5148912,
@@ -6998,7 +6998,7 @@
     "?Kind_Of@HouseClass@@": 5204864,
     "?unknown_slot16@HouseClass@@": 5204880,
     "?Set@RGBClass@@": 5204928,
-    "?unknown_4f6be0@BaseNodeClass@@": 5204960,
+    "??0BaseNodeClass@@QAE@HABVCell@@": 5204960,
     "??_G?$VectorClass@V?$DistributionObject@PAVBuildingTypeClass@@": 5212160,
     "??_E?$DistributionObject@PAVBuildingTypeClass@@": 5212256,
     "?Grow@?$UnknownGrowArray@UUnknownGrowElement8@@@@QAE_NH@Z": 5213280,
@@ -13134,7 +13134,34 @@
     "?unknown_a766fc@@3HA": 10970876,
     "?unknown_a76750@@3HA": 10970960,
     "?Planning_Event_Result@@YIHPAVPlanningTokenClass@@PBUPlanningEventTargets@@@Z": 6386144,
-    "??_EPlanningNodeClass@@QAEPAXI@Z": 6399824
+    "??_EPlanningNodeClass@@QAEPAXI@Z": 6399824,
+    "__real@8@40039000000000000000": 7979656,
+    "__real@8@3ffe9999999999999800": 7979632,
+    "__real@8@40059600000000000000": 8019760,
+    "?Move_To@DriveLocomotionClass@@UAGXUCOMCoordStruct@@@Z": 4849200,
+    "?Add@?$QueueClass@VEventClass@@$0IA@@@QAE_NABVEventClass@@@Z": 5104000,
+    "?unknown_slot67@ParticleClass@@UAEXHH@Z": 6331664,
+    "??0BuildingLightClass@@QAE@PAVTechnoClass@@@Z": 4403136,
+    "?unknown_slot17@IPXGlobalConnClass@@UAEXK@Z": 5392496,
+    "?Process@ShipLocomotionClass@@UAG_NXZ": 6776240,
+    "?Flaming_Guy_AI@AnimClass@@QAEXXZ": 4337952,
+    "?unknown_func_4237b0@AnimClass@@QAE?AUCoordStruct@@XZ": 4339632,
+    "?Direction@UnknownFacingDir@@QAEAAU1@ABUCoordStruct@@0@Z": 4341488,
+    "?unknown_slot67@AnimClass@@UAEXHH@Z": 4329040,
+    "?unknown_slot41@BuildingClass@@UBE?AUCoordStruct@@H@Z": 4473056,
+    "?Process@FlasherClass@@QAE_NXZ": 4964096,
+    "?Damage_Smoke_Offset@TechnoTypeClass@@QBE?AUCoordStruct@@XZ": 7206592,
+    "?unknown_slot73@ObjectClass@@UAE?AVRect@@XZ": 6107584,
+    "?unknown_44b770@BuildingClass@@QAEXXZ": 4503408,
+    "?unknown_iron_curtain_at_waypoint@TActionClass@@QAE_NPAVHouseClass@@PAVObjectClass@@PAVTriggerClass@@PAVCell@@@Z": 7022288,
+    "?unknown_slot28@RadarClass@@UAEXPBVRect@@_N11@Z": 6488832,
+    "??HDirType@@QBE?AV0@ABV0@@Z": 5849264,
+    "??GDirType@@QBE?AV0@ABV0@@Z": 5849296,
+    "??KDirType@@QBE?AV0@H@Z": 5849328,
+    "?Find@?$HashTableClass@VHashString@@PAVSchemeNode@@@@QAEPAPAVSchemeNode@@ABVHashString@@@Z": 6312128,
+    "?Next@?$HashTableClass@VHashString@@PAVSchemeNode@@@@QAEPAVHashString@@AAUUnknownSchemeListIterator@@@Z": 6312224,
+    "?Process@DriveLocomotionClass@@UAG_NXZ": 4851184,
+    "_?sounds@?4??Initialize_WDT_Sounds_00752210@@YIXXZ@4PAVWstring@@A": 11704272
   },
   "regions": [
     {
@@ -33077,8 +33104,8 @@
     {
       "entry": 5204960,
       "method": "004f6be0",
-      "symbol": "?unknown_4f6be0@BaseNodeClass@@QAEPAV1@HABVCell@@@Z",
-      "symbol_prefix": "?unknown_4f6be0@BaseNodeClass@@",
+      "symbol": "??0BaseNodeClass@@QAE@HABVCell@@@Z",
+      "symbol_prefix": "??0BaseNodeClass@@QAE@HABVCell@@",
       "options": [
         "/O2",
         "/Ob2",
@@ -33091,13 +33118,13 @@
       "full_extent_bytes": 32,
       "full_extent_sha256": "d699fa7bb41481debae81f55d681dba21fd710fbe705940c931ab9e43907afd4",
       "relocations": [],
-      "source_sha256": "a0e5af19c758405ca45f890ff7e39e5cb6089af9c3f2e1fbdfbdfaedb0d8609d",
-      "source": "src/recovered/classes/BaseNodeClass/BaseNodeClass_unknown_4f6be0_004f6be0.cpp",
+      "source_sha256": "2ec28ba787b1cee966afb4bbcfdd11df35f364e16ec44c5b10258b477069edc6",
+      "source": "src/recovered/classes/BaseNodeClass/BaseNodeClass_constructor_004f6be0.cpp",
       "population": "population-3863",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "BaseNodeClass_unknown_4f6be0_004f6be0",
+      "semantic_name": "BaseNodeClass_constructor_004f6be0",
       "source_order": 174800
     },
     {
@@ -33382,7 +33409,7 @@
           "resolved": 39
         }
       ],
-      "source_sha256": "969a0b14702fb1d13873f55cc1e16071db86b6d67c46f37fd2d27fd3ab03f9b9",
+      "source_sha256": "f84b4c94201e1b16036e921cd4fd7f74027c9672b2249f24a3e3a72301cc8122",
       "source": "src/recovered/classes/HouseClass/HouseClass_AI_Raise_Money_004e90f0.cpp",
       "population": "population-3863",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",

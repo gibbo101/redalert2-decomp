@@ -27,11 +27,14 @@ struct ScoutStruct {
 class BaseNodeClass {
 public:                      // (layout hypothesis)
     BaseNodeClass() {}
-    // Original004F6BE0 node reset; constructor identity remains unproven.
-    BaseNodeClass *unknown_4f6be0(int type, ::Cell const &cell);
-    BaseNodeClass(int type, ::Cell cell) : Type(type), Cell(cell) {}
 #ifdef RA2_BASE_NODE_FULL_ARGUMENTS
+    // A new node at `cell`, not built and not tried yet (0x004F6BE0, the House unit's copy). Body
+    // assignments (64 /Ob2 units, defined in its own source): the base planner 0x004F5D30 inlines it
+    // until the budget runs out and calls it for its last three wall corners.
+    BaseNodeClass(int type, ::Cell const &cell);
     BaseNodeClass(int type, ::Cell cell, bool built, int counter) : Type(type), Cell(cell), unknown_08(built), unknown_0c(counter) {}
+#else
+    BaseNodeClass(int type, ::Cell cell) : Type(type), Cell(cell) {}   // BaseClass::Read_INI 0x0042C460 (other fields unset)
 #endif
     // User copy constructor, member-wise (VectorClass<BaseNodeClass>::Fetch 0x0042CBE0 copies the byte separately).
     BaseNodeClass(BaseNodeClass const &other)
@@ -47,8 +50,9 @@ public:                      // (layout hypothesis)
     // unit that defines RA2_BASE_NODE_MEMBER_OPERATORS sees them instead of the inline free forms.
     bool operator==(BaseNodeClass const &node);
     bool operator!=(BaseNodeClass const &node);
-    bool operator>(BaseNodeClass const &node);
 #endif
+    // TibSun's member operator> (0x0042BF60, defined in the BaseClass unit; no callers).
+    bool operator>(BaseNodeClass const &node);
 };
 #ifndef RA2_BASE_NODE_MEMBER_OPERATORS
 // Compares the type and the cell only (VectorClass<BaseNodeClass>::operator== 0x0042CC80).

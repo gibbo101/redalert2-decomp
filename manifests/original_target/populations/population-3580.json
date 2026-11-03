@@ -4,8 +4,8 @@
     "id": "population-3580",
     "inventory_sha256": "5b10a04d599659b80e017162522f9f3045733086d3e5c3f692c66ec7372b2861",
     "gaps_sha256": "135372da54bd6629b46c8184a5e25bb2bb73b72ca863e62d2747f73bf731093f",
-    "historical_population_sha256": "9f143ae82ed8cb3e0b4f0f94c94864ab3cca43b9010bcbcebc81a6375bdbf7f1",
-    "historical_acceptance_sha256": "1f887dd635bcee9a0731543d5e6febacbe5e510d3677d56c4766c2716deefbfa"
+    "historical_population_sha256": "3cf3b1ed537001237ffb54c5ebf916b90c7d1e5cd5cfb4fa8e63b9ca9aef7bed",
+    "historical_acceptance_sha256": "225efce32c1aecb874a85b4c58b122c39b70513b7707c83754c28d113dd68c97"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6271,7 +6271,7 @@
     "?Spend_Money_004e5280@HouseClass@@QAEXH@Z": 5132928,
     "?Get_Amount@StorageClass@@QBEMH@Z": 6925888,
     "?Check_Raise_Money_004e8d80@HouseClass@@QAEHXZ": 5148032,
-    "?unknown_4f6be0@BaseNodeClass@@QAEPAV1@HABVCell@@@Z": 5204960,
+    "??0BaseNodeClass@@QAE@HABVCell@@@Z": 5204960,
     "?AI_Raise_Money_004e90f0@HouseClass@@QAE_NH@Z": 5148912,
     "?AI_Building@HouseClass@@QAEHXZ": 5150304,
     "?Recalc_Power_004f2cc0@HouseClass@@QAEXXZ": 5188800,
