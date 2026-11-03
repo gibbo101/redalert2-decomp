@@ -1,6 +1,11 @@
 // The Cell.cpp unit expands Rect::operator- 0x0047D000 in TibSun form (Rect(Top_Left() - point, ...)) with
 // Top_Left and the corner constructor inline (rect.hpp RA2_RECT_CORNER_INLINE); 0x0047D040 stays out of line.
 #define RA2_RECT_CORNER_INLINE
+// CellClass::Preview_Cell_Color 0x004710D0 and the tile variation helper Clear_Icon 0x004767A0 it calls,
+// with the RGBClass channel accessors.
+#define CELL_DECLARE_PREVIEW_CELL_COLOR
+#define CELL_DECLARE_CLEAR_ICON
+#define RGB_DECLARE_ACCESSORS
 // Header-static dynamic initializers of the unit at 0x00470490:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x00470490-0x00470676); the other
