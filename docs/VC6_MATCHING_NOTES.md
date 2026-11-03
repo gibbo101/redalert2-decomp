@@ -1095,3 +1095,6 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - TibSun's `Coord(int x, int y, int z = 0) : BASECLASS(x, y, z)` wrapper, built in place for offsets, adds one free /Ob2 site per use and fixes add operand order (Aircraft Fire_At 0x415790). A DVC-style example of Scout614's user-ctor site family.
 - Read_INI 0x49CFD0: the surface size is `Get_Width() * Get_Height() * Bytes_Per_Pixel()`, and a CoordStruct built member by member (`homecoord.X = ...`) fixed a later loop's register choice. Including building_type.hpp instead of building_type_class.hpp pulled in an extra dynamic initializer that acceptance refuses.
 - Dead frame bytes can be an unused member of a by-value temporary: Fire_At's 8 bytes are the Z of a 24-byte BulletVelocity built through TibSun's copy ctor.
+- Braces are IL (Scout626): removing the braces from four one-statement ifs took Sidebar C850 from 168 to 162 /Ob2 units with identical code; an early return gave 158. Write braces as TibSun does when a budget is tight.
+- A call refused inside an inlined copy in another function names the callee the source really calls: Recalc 0x6802D0's inlined C850 calls 0x6820F0, which reveals C850's own source.
+- Free callees (40 IL units or less) are never refused, even at allowance 0, so a callee the original refuses somewhere is over 40.
