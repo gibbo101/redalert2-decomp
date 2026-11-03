@@ -8,6 +8,7 @@
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ACCESSORS
 #define VECTOR_IMPLEMENT_DYNAMIC_ADD
+#include "shared/frame_rate.hpp"
 #include "shared/vector_class.hpp"
 #include "shared/event.hpp"
 #include "shared/unknown_globals.hpp"
@@ -317,7 +318,7 @@ extern bool unknown_flag_a3d8d1;        // 0x00A3D8D1 (the same, unless another 
 extern int unknown_a3fb84[];            // 0x00A3FB84 (session +0x28EC: frames behind per player)
 extern int unknown_a3d568;              // 0x00A3D568 (session +0x2D0)
 extern unsigned int unknown_a402dc;     // 0x00A402DC (session +0x3044)
-extern unsigned int unknown_a6eb1c;     // 0x00A6EB1C
+// unknown_a6eb1c (0x00A6EB1C): shared/frame_rate.hpp.
 // unknown_a3d8c8 (0x00A3D8C8): shared/unknown_globals.hpp.
 extern int unknown_a3d8cc;              // 0x00A3D8CC
 extern int unknown_ab62dc;              // 0x00AB62DC

@@ -4,6 +4,7 @@
 #define RA2_SHARED_LOGIC_HPP
 
 #include "shared/layer.hpp"
+#include "shared/frame_rate.hpp"
 
 class AbstractClass;
 

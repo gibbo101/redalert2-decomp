@@ -1210,3 +1210,10 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Still open in the family: 0x608BB0 (1,601 B), 0x609540 (1,069 B, TibSun Spark_Behavior_AI particle.cpp:441, with RA2_MATRIX3D_INLINE_COPY) and 0x609D10 (964 B). 0x620FDB (24 B) is a bogus row in header-statics padding.
 - fast_math.hpp may have Fast_Acos and Fast_Asin (0x4BA550/0x4BA580) swapped; check before anyone relies on them.
 - OWNER DECISION (coord.hpp, reversible): the inline CoordStruct ctor stays the default. Units that see the out-of-line ctors (0x434820, 0x41B630; Particle 0x609540 calls both) bind them per unit through RA2_COORD_TPOINT3D / UnknownCoord434820. Fire_AI 0x60C7C0 (codex4 r42, memcpy helper) moves to that form when next touched. This no longer blocks Particle.
+
+## Scout587 (2026-11-03, closed; 2,058 B landed: ModemGuest Init_Dialog 0x596540 with the Send_Message wrapper)
+- Radar per-house row 0x634670: 92.92, shape 100 (w/best_634670_r12_92.92.cpp). Its second Is_Ally call is `house->Is_Ally(player)`. Only a scratch-register rotation is left.
+- Video_Mode_Proc 0x543CF0: 73.96. The list, SendMessageA and loop-index registers are rotated.
+- Parked after two zero-byte attempts: Main_Options_Proc 0x542590 85.62, IonBlast One_Time 0x521A90 94.19 and Audio_Remove_Devices 0x403210 88.51 (merged pop-3592 + pop-3648; rotated loop forms lose the cached zero in ebp).
+- Blocked: 0x68CF90 needs a bool rename whose caller 0x5FED10 is codex1's (pcx_cache.hpp). 0x5C69E0 (63.75) and 0x5CBF20 (43.42) need 0x5C7160 moved to another population and a slot-3 rename.
+- Correction: Scout582 RANK rows marked fresh mostly have older drafts (Mix488, Small467 and others). Check jobs/NOTES before calling a row fresh.
