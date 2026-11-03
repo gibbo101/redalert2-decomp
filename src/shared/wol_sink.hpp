@@ -812,7 +812,22 @@ public:
     WOL::User *Items;
     bool Insert_00765e90(WOL::User const &user, int index);
     bool Grow_00766e60();
+#ifdef RA2_WOL_USER_INLINE_SHRINK
+    bool Shrink_00766f00() {
+    if (Count * 3 > Capacity) return false;
+    int capacity = Capacity / 2;
+    if (capacity < 10) capacity = 10;
+    if (capacity >= Capacity) return false;
+    WOL::User *items = (WOL::User *)operator new(capacity * sizeof(WOL::User));
+    if (Items) memcpy(items, Items, Count * sizeof(WOL::User));
+    operator delete(Items);
+    Items = items;
+    Capacity = capacity;
+    return true;
+}
+#else
     bool Shrink_00766f00();
+#endif
     bool Get(WOL::User &user, int index) const; // 0x00766020
     bool Get(WOL::User *&user, int index) const {
         if (index >= 0 && index < Count) { user = Items + index; return true; }

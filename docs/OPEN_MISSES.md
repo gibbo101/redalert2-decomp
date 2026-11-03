@@ -1248,3 +1248,15 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout593 (2026-11-03, closed; 6,798 B landed: Get_Join_Responses 0x5C08A0, __fastcall confirmed)
 - Lobby refresh 0x5BBDD0: 82.76, unchanged after about 20 variants (import wrappers, MAKELONG, alias convention probes, orders). The residue is a one-step scratch rotation at the 0x4A8 column sends, then ebp/edi in the LobbyNameSet cleanup. Untried: the `game_index == 0` else-branch first, a helper for the 0x4A8 sends, the cell/LobbyNameSet layout.
+
+## Scout594 (2026-11-03, closed; 0 B; resume in build/class-work/Scout594/NOTES.md)
+- Dropship_Screen 0x4A6B90 (pass 7: one function, 10,797 B, 0x4A6B90..0x4A95BC plus 3 NOP; the old 0x4A9450 row is a fragment of it). It is TibSun dropship.cpp 281-1070. Draft 80.86, shape 99.44, 2962/2967 instructions, frame 0x660 exact (w/ds_best_80.86.cpp, no overlay; the caller's name Unknown_004A6B90 is kept). About 2 h of its 4 h box is left.
+- Left: frame slot order (about 270 offset lines; IL-level weights, the slot table is in NOTES); `input` in edi where the original has esi; the out-of-line Surface ctor 0x49ED90 at the old_surface site (budget); register choices in the cross-dissolve and green-shape loops.
+- Every other row of population-2427 is accepted.
+
+## Scout595 (2026-11-03, closed; 0 B; resume in build/class-work/Scout595/NOTES.md)
+- The brief was stale: 0x5C71F0, 0x5C7570, 0x5CA6C0 and 0x5C67C0 landed in Netshare390 r1 (7f2661471). netdlg2 is now population-3876.
+- Open netshare gaps: 0x5C2DA0 (384 B), 0x5C3FF0, 0x5C5FF0, 0x5C69E0, 0x5C7EF0, 0x5CAE00 (450 B), 0x5CB170 (400 B), 0x5CBF20, 0x5CCA30 (1,297 B). Open netdlg2 gaps: 0x5BBDD0, 0x5BC940 (640 B), 0x5BCCF0 (416 B), 0x5BEFE0, 0x5C01D0 (1,006 B, 98.94). The pass-7 functions.jsonl holds only its 97 re-bounded rows, so find gaps from the catalog.
+- Host_Dialog_Proc 0x5BEFE0 (2,507 B): 95.68 (w/best_5befe0_95.68.cpp with EXTRA 5bbd20=w/ssn.cpp). Send_Slot_Names 0x5BBD20, rewritten to copy from unknown_session_a3d298.Handle, is exact on its own and fixes 0x5BEFE0's AICount store; land both in the same plan. Only the WM_NCHITTEST tool tip is left: the order of the x/y subtractions decides the message/lparam ebx/edi assignment.
+- Save_List_Selection 0x5C5FF0: 94.38. The inlined Grow's bucket-pointer temporary shares i's slot and pushes it to the bottom of the frame.
+- 0x5C7EF0: 75.82 as __fastcall (the member form scores 73.37); it uses unknown_firewall_a71b18. Receive_Game_Options 0x5C3FF0: 64.86 (the if/else-if chain compiles identically because every section returns). 0x5BBDD0: 82.76.

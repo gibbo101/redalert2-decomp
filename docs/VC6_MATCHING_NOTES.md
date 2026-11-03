@@ -1069,3 +1069,6 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A dead counting loop (`if (!strcmp(...)) dups++;`, TibSun) keeps the loop and its dead stack store. `x = strcmp(...)` or an empty if removes the loop.
 - Reading a bitfield once through the global alias and once through the session member gives the original's separate dword and byte loads.
 - diff_candidate does not flag an unbound string literal; acceptance refuses it. Add @ref for every literal the original references (`","` 0x7CE9C0).
+- Declaring an import `__declspec(dllimport)` (timeGetTime in Dropship_Screen 0x4A6B90) gives the original's `call [imp]` and register caching of the import pointer: +21 points. A plain prototype calls a thunk.
+- Aggregate initialisers instead of memset for local arrays gave the original's stores (+3.3, 0x4A6B90).
+- Classes whose RTTI mangling is PAV must be declared `class`, not `struct` (ButtonFadeEffect, CrossDissolveEffect).
