@@ -19,7 +19,7 @@
 #include "shared/overlay_view.hpp"
 // @ref ?unknown_overlay_types_a35de8@@3V?$DynamicVectorClass@PAVUnknownOverlayType@@@@A=00a35de8
 // @ref _unknown_geometry_j=00ac02a8
-// @ref ?unknown_4788d0@CellClass@@QBE_NXZ=004788d0
+// @ref ?unknown_4788d0@CellClass@@QBEIXZ=004788d0
 // @ref ?unknown_coord_ac0280@@3UCoordStruct@@A=00ac0280
 
 // The object as a FootClass, or null (the cast idiom of BuildingTypeClass 0x00458B10).

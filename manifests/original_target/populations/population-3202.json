@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "92d8e813f3a046a32461d71dba9dd4a4e2fca43d9b37d7b5d3af80644f6b7107",
-    "historical_acceptance_sha256": "6f77898d907fefec6ccdfe338487e50d3d9ddd49759564479cf1a4b72236eea7"
+    "historical_population_sha256": "dc1d31d86b18ffe66442e457783ff1f82f77aed60998028743727bbb373b9cf0",
+    "historical_acceptance_sha256": "424f2d37c6fa15402f891fb01debc00bd8798e269d24f4909fe8660173c66ecf"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -22267,7 +22267,7 @@
     "?Get_All@@YI_NPAUIStream@@_N@Z": 6646656,
     "?Destroy_Bridge@CellClass@@QAEXXZ": 4665344,
     "?Unknown_00567D20@MapClass@@QAEHPAVHouseClass@@HHH@Z": 5668128,
-    "?unknown_4788d0@CellClass@@QBE_NXZ": 4688080,
+    "?unknown_4788d0@CellClass@@QBEIXZ": 4688080,
     "?Unknown_00568ED0@MapClass@@QAE?AVCell@@ABV2@0@Z": 5672656,
     "?unknown_4718b0@CellClass@@QAE_NHPBVBuildingTypeClass@@PAVHouseClass@@@Z": 4659376,
     "?Region_Threat@MapClass@@QAEHPAVHouseClass@@HHH@Z": 5668128,
