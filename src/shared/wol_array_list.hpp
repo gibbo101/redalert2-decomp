@@ -108,6 +108,9 @@ public:
         if (index >= 0 && index < Count) { text = Items[index]; return true; }
         return false;
     }
+#ifdef RA2_WOL_ARRAY_LIST_HEAD_INSERT
+    char Add_Head(T &text) { return Add_At(text,0); }
+#endif
     bool Insert(T const &text, int index); // original complete method 0x007679c0
     bool Get_007662c0(T &text, int index); // out of line in wonline.cpp (accepted unowned 0x007662C0)
     void Add(T const &text) {

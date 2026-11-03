@@ -1447,3 +1447,9 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - The Drive unit now uses Ship's COM Move_To (RA2_SHIP_MOVE_TO_VALUE, RA2_SHIP_CELL_ACCESSORS). Drive Move_To 0x49FE30 takes COMCoordStruct and stays exact.
 - MapClass Zone_Reset 0x54EBD0: 81.49, shape 99.18 (w/keep/zone_reset_8149.cpp). The real body is 1,646 B (pass 5's 737 B is truncated). It returns bestzone, so it needs an R spec `...QAEXXZ` -> `...QAEHXZ` first. Register and slot pairing are left.
 - Drive Draw_Matrix 0x4A0050: 83.48 (Ship twin plateau). Fly Nearing_Target 0x4BE720: not drafted (IFlyControl held pointer, out-of-line query 0x4BFC20). 0x473F20 is RA2-only.
+- Owner tooling item (2026-11-03): codex1 r945 (DynamicVectorClass<HSVClass> ctor 0x6051F0 typed-identity rename, 0 B) is blocked because apply_rename does not regenerate population-36's closed compiler-output policies (rows 0x59FFE0, 0x6051F0, 0x621FA0, 0x682580). Deferred. It only unblocks PaletteName::Load 0x603380 (88.45).
+
+## Scout641 (2026-11-03, closed; Zone_Reset int-return rename landed e3675bec6)
+- Zone_Reset 0x54EBD0: 84.41 (w/keep/zone_reset_8441.cpp, EXTRA 54fab0=fab0a.cpp, overlay hZR, RA2_MAP_ZONE_RESET; body_bytes 1646). Left: register and slot choices coupled to the block layout of the inlined 0x54FAB0 clamp.
+- House 0x4F5D30 (wall planning around ProtectWithWall buildings): 93.18 fresh. About 90 IL units short at the 6th insert (0x4F6BE0 may be a BaseNodeClass(int, Cell const &) ctor). Hover 0x4FCBC0 is TibSun's While_Moving (3.7 KB): not drafted.
+- OWNER DECISION: codex4 r106 retires the bogus one-byte row 0x75272B inside its complete atexit cleanup 0x752710. Bogus rows wholly inside an independently bounded body may be retired in the plan.

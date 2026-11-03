@@ -1,3 +1,4 @@
+#define RA2_WOL_ARRAY_LIST_HEAD_INSERT
 // @ref ?OnServerTime@CChatEventSink@@UAGJJJ@Z=00765950
 // @ref ?OnInsiderStatus@CChatEventSink@@UAGJJPAUUser@WOL@@@Z=00765960
 // @ref ?OnSetLocalIP@CChatEventSink@@UAGJJPBD@Z=00765970
