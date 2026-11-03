@@ -65,7 +65,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot03() = 0;
     // IChat slot4, original744AF4: SDK RequestServerList; no prior callers of the placeholder.
     virtual HRESULT __stdcall Request_Server_List(unsigned long sku,unsigned long version,char const *login,char const *password,int timeout) = 0;
-    virtual void __stdcall unknown_slot05() = 0;
+    virtual HRESULT __stdcall RequestConnection(Server *server,int timeout,int mangle) = 0;
     virtual HRESULT __stdcall unknown_slot06(int channel_type,int autoping) = 0;
     virtual void __stdcall unknown_slot07() = 0;
     virtual HRESULT __stdcall unknown_slot08(Channel *channel) = 0;
@@ -106,14 +106,14 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot43() = 0;
     virtual HRESULT __stdcall unknown_slot44(unsigned int value) = 0;
     virtual void __stdcall unknown_slot45() = 0;
-    virtual void __stdcall unknown_slot46() = 0;
-    virtual void __stdcall unknown_slot47() = 0;
+    virtual HRESULT __stdcall RequestSetLocale(int locale) = 0;
+    virtual HRESULT __stdcall RequestUserLocale(User *users) = 0;
     virtual void __stdcall unknown_slot48() = 0;
     virtual void __stdcall unknown_slot49() = 0;
     virtual HRESULT __stdcall unknown_slot50(int index,int locale) = 0;
     virtual void __stdcall unknown_slot51() = 0;
     virtual HRESULT __stdcall unknown_slot52(int *count) = 0;
-    virtual void __stdcall unknown_slot53() = 0;
+    virtual HRESULT __stdcall SetClientVersion(unsigned long version) = 0;
     virtual void __stdcall unknown_slot54() = 0;
     virtual void __stdcall unknown_slot55() = 0;
     virtual HRESULT __stdcall unknown_slot56(User *user) = 0;

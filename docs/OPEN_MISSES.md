@@ -1324,3 +1324,15 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout610 (2026-11-03, closed; 825 B: Update_Laser_Fence_Connections 0x44DC40 landed, Docking_Coord 0x4440E0 landing; BuildingClass is now population-3894)
 - OWNER DECISION: Docking_Coord keeps its file-local `operator+(CoordStruct const &, TPoint3D<int> const &)`, because DockingOffsets are TPoint3D<int>. It is a hypothesis helper; move it to coord.hpp when a second unit needs it.
 - Mission_Missile 0x448400: 84.70 (w/mm8a.cpp, file-local Velocity class from TibSun velocity.h). It needs a `case 4:` to keep the 5-entry table; the dead-block form used now is not natural. Parked at its time box. Connect_Laser_Fence 0x44DFC0: 66.67. Barrel_Pitch 0x43B7E0: 72.32 (frame 0x3C vs 0x44). 0x4444B0: 34.78.
+
+## Scout611 (2026-11-03, closed; 0 B; all three PARKED after two lanes each; resume in build/class-work/Scout611/NOTES.md)
+- Radar Compute_Background 0x630B70: 99.29 (about 100 variants). Ours puts the min argument in ftol's eax (`inc eax`); the original merges it into ebp (`lea ebp,[eax+1]`). The lever is probably a use count or an earlier variable's lifetime.
+- Read_PCX_File 0x60D110: 89.68. In branch 3 the original keeps width*height in edi and reloads file into esi at each loop top.
+- SpotLight One_Time 0x5DD760: 37.01. The original never keeps 1 in a register for the whole function; the cause lies before the constant.
+
+## Scout612 (2026-11-03, closed; 0 B; InfantryClass population-3236; resume in build/class-work/Scout612/LIST.md, NOTES.md)
+- Five rows (about 10.6 KB) left, all at plateaus; codex3's drafts already follow TibSun (on the Windows mount codex3/infantryclass/<row>/). Per_Cell_Process 0x500AA0 (4,617 B): 93.45 (w/pd3.cpp); the capture test is left (find a building use the original has). Scatter 0x504120 (1,563 B; the inventory's 544 B is wrong): 91.44. Assign_Destination 0x501CE0: 84.93. JumpJet_To_Walk 0x508AB0: 69.52 (comip model). Tunnel_AI 0x5025C0: 56.50 (Coord-type model).
+- Cross-cutting blockers now: the comip / COM-pointer model (JumpJet_To_Walk, Assign_Destination, SuperClass::Place, ComPtr297/299) and the Coord-type model (Scout605). Scout614 studies comip.
+
+## Scout613 (2026-11-03, closed; 0 B; TechnoClass population-3893; resume in build/class-work/Scout613/LIST.md, NOTES.md)
+- Five rows left: Draw_Pre_Render slot 65 0x6C3B30 82.90 (/Ob2: about 30 root IL units short, 0x41B630 call pattern 4/4/4/4/3 vs 4/4/4/3/3). Take_Damage slot 86 0x6CDC40 88.72 (w/td5.cpp, natural control flow, byte-identical to codex3's best; two `result` reloads and two late register choices left). AI slot 23 0x6C74C0 (codex3 66.05; frame 0x68 vs 0x44, try TibSun's named locals). Draw_Post_Render slot 66 0x6C2C40 (36.14). NoInit ctor 0x6C1F10 (409 B, not attempted). codex3's drafts: /Volumes/mike-gaming/ra2/w/codex3/build/class-work/codex3/techno-*/.
