@@ -1184,3 +1184,9 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout581 (2026-11-03, closed; 2,477 B landed in r1-r3)
 - The PlanMgr Rect family (Node_At 0x615D30, Pick_Node 0x616070; 0x616140/0x617900/0x615C00 depend on them) reaches 96.67/96.05 only with two probe inline sites after Planning_Inflate, so the natural source of those sites is still missing. Planning_Order_Kind 0x615A80 needs 9 or more extra sites.
 - Planning_Techno_00615480: 83.93 (loose 98.21); keep that symbol, because EventClass::Execute binds it. 0x611BD0: 51.40 (ours expands operator== 0x61A8B0, the original calls it). Loop_Color 0x6129B0 92.95 and Branch_Color 0x6127E0 95.34 have one register diff each. 0x6130B0 and 0x616B40 were not attempted.
+
+## Scout582 (2026-11-03, closed; 1,336 B landed: Options_Menu_Proc 0x4DD8A0)
+- Pass-7 rank (Scout582 RANK.md): 46 workable rows (133,689 B) after holds; 51 rows are held (codex1 ownrdraw 18, codex4 31, House 1, PlanMgr 1).
+- 0x685AC0 is ambiguous in pass 7 (the sweep could not decode it), so it is not a pass-7 row; leave 0x68633A until 0x685AC0 is bounded.
+- Misses: UICmnds 0x6F81B0 99.60; Motion_Capture 0x53F490 97.63; ParticleClass ctor 0x608440 94.69 (shape 100, two frame slots swapped); Skirmish_Message_497 0x683FC0 97.43; Skirmish_Command 0x6829F0 78.89; Audio_Destroy_Devices 0x403210 61.11 (parked).
+- Tool note: check_plans honours RA2_INVENTORY_PASSES only as an absolute path under the check worktree. Plans that state body_bytes don't need it.
