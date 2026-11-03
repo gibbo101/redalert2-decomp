@@ -1336,3 +1336,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout613 (2026-11-03, closed; 0 B; TechnoClass population-3893; resume in build/class-work/Scout613/LIST.md, NOTES.md)
 - Five rows left: Draw_Pre_Render slot 65 0x6C3B30 82.90 (/Ob2: about 30 root IL units short, 0x41B630 call pattern 4/4/4/4/3 vs 4/4/4/3/3). Take_Damage slot 86 0x6CDC40 88.72 (w/td5.cpp, natural control flow, byte-identical to codex3's best; two `result` reloads and two late register choices left). AI slot 23 0x6C74C0 (codex3 66.05; frame 0x68 vs 0x44, try TibSun's named locals). Draw_Post_Render slot 66 0x6C2C40 (36.14). NoInit ctor 0x6C1F10 (409 B, not attempted). codex3's drafts: /Volumes/mike-gaming/ra2/w/codex3/build/class-work/codex3/techno-*/.
+
+## Scout614 (2026-11-03, study lane; 0 B; VC6_MATCHING_NOTES "What counts as an /Ob2 site")
+- Under the ComPtr299 comip model, Aircraft 0x416420 is exact via the position accessor (w/a1.cpp, HDR=build/class-work/ComPtr299/model). Comip regressions left: FootClass::Load 0x4C9D10 and Is_JumpJet 0x508D00 (true body 194 B, 78.57). Once both are exact the model can land and unblock JumpJet_To_Walk, Assign_Destination and SuperClass::Place. Scout616 holds it.
+- Hover Process k1/k2/k3 (accessor and Contact wrapper candidates) are unscored; the k1 compile hung while the disk was full.
+- 2026-11-03 ~05:00Z: the Mac main drive filled and wedged Wine; the host was rebooted. r99 was re-landed from a clean tree after a stale runner lock was cleared. The monitor now alerts below 30 GiB free.

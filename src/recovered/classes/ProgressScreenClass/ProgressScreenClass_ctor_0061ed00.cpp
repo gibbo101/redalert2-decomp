@@ -17,7 +17,8 @@ ProgressScreenClass::ProgressScreenClass() :
     unknown_7c(0),
     Side(-1)
 {
+    double *progress = Progress;
     for (int index = 0; index < 8; index++) {
-        Progress[index] = 0;
+        progress[index] = 0;
     }
 }
