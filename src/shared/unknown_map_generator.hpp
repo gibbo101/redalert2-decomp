@@ -52,6 +52,10 @@ public:
     int Get_Cell_Data_Region_005818a0(Cell const &cell);
     // Sets the region of a cell's generator record (TibSun Set_Cell_Data_Region; RET8).
     void Set_Cell_Data_Region_00581870(Cell const &cell, int region_id);
+    // Marks a cell's generator record as reached by a spread (TibSun Set_Cell_Data_Spread; RET8).
+    void Set_Cell_Data_Spread_005818e0(Cell const &cell, int patch_id);
+    // The spread that last reached a cell's generator record (TibSun Get_Cell_Data_Spread; RET4).
+    int Get_Cell_Data_Spread_00581910(Cell const &cell);
     ~UnknownMapGenerator();
     UnknownMapGenerator(); //00577010 remains parked, no body promoted
     // Proposed rename-only owner correction; same int,int/ECX/RET8 physical ABI.

@@ -1429,3 +1429,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout636 (2026-11-03, closed; Wave Set_Laser_Pixel 0x721B00 240 B landing)
 - Stale entries: Init_Theater 0x519E70 and 0x516E70 were accepted in NearMiss392 r1 (a9c348882), Terrain slot 63 0x6E4430 in Scout522 r3 (697365b19). Ignore their older miss lines.
 - Allocate_Surfaces 0x519500: 71.67, parked. The DSurface ctor 0x4AA4A0's third parameter is really bool (compared as a byte), so don't build the int rename. Wave Load 0x7221D0: 79.67 (TibSun layout; about 3 natural sites short after the NoInit ctor). Brighten_Pixel's file-local min can't share a unit with always.hpp, so the Wave unit uses a guarded MIN macro.
+
+## Scout635 (2026-11-03, closed; Set/Get_Cell_Data_Spread 0x5818E0/0x581910 81 B landing)
+- Grow_Water_Region 0x5820B0: 81.86 natural (keep/grow_water_5820b0_8186.cpp, overlay keep/hW3). operator+ 0x42ADD0 is a nested site inside Adjacent_Cell, refused only when root sites follow the call. Exact call sequence with one probe after Adjacent_Cell (84.97). It needs 0x5798D0 from pop-953 (allow_split, as approved for 0x5798F0). TibSun mapgen.cpp:7216.
+- NE corner 0x574930: 99.26 (the only exact form computes both sums twice: steering, not delivered). Urban 0x587CF0: 90.41, parked (`cells` reload position). Set/Get_Cell_Data_Region 0x581870/0x5818A0 are exact in TibSun form but already accepted seeds of hand-written pop-45 (0 bytes, would need allow_split).

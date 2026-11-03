@@ -13,7 +13,7 @@
 | [classes/HouseClass](../src/recovered/classes/HouseClass/) | 202 | 63,959 | 202 | 0x004D3590–0x004F8EF0 |
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 217 | 60,862 | 214 | 0x0041B370–0x006D9750 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 122 | 42,592 | 118 | 0x0041B470–0x004CDE10 |
-| (discovery: address-named) | 1355 | 41,554 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1353 | 41,473 | 17 | 0x004010A0–0x00797198 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 118 | 40,017 | 118 | 0x005DE880–0x006025A0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 82 | 30,791 | 82 | 0x004D3510–0x0070A330 |
@@ -21,7 +21,7 @@
 | [classes/UnknownIDSource](../src/recovered/classes/UnknownIDSource/) | 51 | 29,041 | 51 | 0x0065B4F0–0x00663440 |
 | [classes/AircraftClass](../src/recovered/classes/AircraftClass/) | 86 | 28,859 | 86 | 0x004139F0–0x004D34D0 |
 | [classes/TeamClass](../src/recovered/classes/TeamClass/) | 93 | 27,479 | 92 | 0x004D3690–0x006BE740 |
-| [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 33 | 27,171 | 33 | 0x0056D4C0–0x0058A9C0 |
+| [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 35 | 27,252 | 35 | 0x0056D4C0–0x0058A9C0 |
 | [VQA32](../src/recovered/VQA32/) | 75 | 23,987 | 75 | 0x00776380–0x0077E5B0 |
 | [classes/TechnoTypeClass](../src/recovered/classes/TechnoTypeClass/) | 32 | 23,349 | 32 | 0x004D4310–0x006DF7A0 |
 | [classes/CellClass](../src/recovered/classes/CellClass/) | 111 | 23,094 | 107 | 0x00470680–0x0047CFC0 |
