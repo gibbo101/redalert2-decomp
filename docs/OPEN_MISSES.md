@@ -1467,3 +1467,12 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout644 / Scout645 (2026-11-03; landed TechnoClass slot 174 0x6C1380 592 B and Destroy_Train_Bridge_Connections 0x553570 1,088 B)
 - Techno slot 186 0x6CD340: 80.18. Tunnel depth 0x6CFB60: 49.84. DistributedFire 0x6D4400: not drafted (four DVC vtables). Scout646 continues them. Tactical 0x6AB360 and PlanMgr 0x617340 wait on the TacticalProjection and Rect-family /Ob2 models; don't assign them yet.
 - Repair_Bridge 0x555A60: 99.75 (one Y-sum operand order). OWNER DECISION: the redundant `if (X >= n) { while (X >= n) ... }` guard is accepted. Destroy_Train_Bridge_Span 0x553000: signature to settle first (Map405 76.36). Damage_Train_Bridge 0x5539B0: 66.07. Scout647 continues them.
+
+## Scout646 / Scout647 (2026-11-03; landed TechnoClass DistributedFire 0x6D4400 673 B; bridge rows below 0x556000 PARKED)
+- Repair_Bridge 0x555A60: 99.75. Its Y sum is origin-first; every accepted hoisted-address loop is table-first, and the only other origin-first case is 0x55730D in Destroy_Low_Bridge2_Span 0x557090. Copy that shape when 0x557090 goes exact. Destroy_Train_Bridge_Span 0x553000: 78.79 (signature stays `(Cell const &, FacingType, Rect *)`). Damage_Train_Bridge 0x5539B0: 66.07.
+- Scout647 w/scan_all.txt lists 73 original loops with a hoisted AdjacentCell address.
+- 2026-11-03 ~01:00Z (Nov 4): Map.CPP 0x556000-0x56CEF0 moves from codex1 (now on FlyLocomotionClass) to the Mac lanes.
+
+## Scout646 (2026-11-04, closed; TechnoClass DistributedFire 0x6D4400 673 B landed)
+- Slot 186 0x6CD340: 80.18, parked after two lanes. Its overlay (w/h1: foot.hpp UnitTypeClass `bool IsSimpleDeployer` at +0xBAB, building_type_class.hpp `bool unknown_45ec40() const`) is probe-clean and accepted.
+- Tunnel depth 0x6CFB60: 80.77 (w/x1.cpp; `Map[Adjacent_Cell(cell, facing)]` for all six sums plus named MapCoords copies before each sum). Left: the first step's X-into-position store order and one esi/edi swap.
