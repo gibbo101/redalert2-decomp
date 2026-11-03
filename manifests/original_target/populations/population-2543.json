@@ -354,57 +354,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "Map_Gaussian_Next_00579830",
       "source_order": 97123
-    },
-    {
-      "entry": 5740784,
-      "method": "005798f0",
-      "symbol": "?Map_Clamped_Gaussian_005798f0@@YGNNNNN@Z",
-      "symbol_prefix": "?Map_Clamped_Gaussian_005798f0@@",
-      "options": [
-        "/O2",
-        "/Ob1",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 111,
-      "body_sha256": "cba6b27acc61db052483afbca295302d8fa2fd4237dd515f80214eee8fe1e06c",
-      "padding_bytes": 1,
-      "full_extent_bytes": 112,
-      "full_extent_sha256": "f5a6348cc6d97d463cf0eb45a8d5a579b5fb1c626a7f0c9e62c50669e1f1eae4",
-      "relocations": [
-        {
-          "offset": 48,
-          "kind": 6,
-          "symbol": "__real@8@3ffe8000000000000000",
-          "target": 7972648,
-          "addend": 0,
-          "resolved": 7972648
-        },
-        {
-          "offset": 69,
-          "kind": 6,
-          "symbol": "?unknown_map_gaussian_a6fd50@@3VMapGaussianClass@@A",
-          "target": 10943824,
-          "addend": 0,
-          "resolved": 10943824
-        },
-        {
-          "offset": 74,
-          "kind": 20,
-          "symbol": "?Next@MapGaussianClass@@QAENXZ",
-          "target": 5740592,
-          "addend": 0,
-          "resolved": 4294967026
-        }
-      ],
-      "source_sha256": "025237c3dd777fd8c6e0666ad4ad6e5359f0d20f690d3ae9016aba2832859e98",
-      "source": "src/recovered/unowned/Map_Clamped_Gaussian_005798f0.cpp",
-      "population": "population-2543",
-      "padding_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "Map_Clamped_Gaussian_005798f0",
-      "source_order": 97124
     }
   ]
 }
