@@ -1270,3 +1270,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - The landed extent is the 3,255 B pass-7 body plus 9 bytes of 0x90 fill that VC6 keeps inside the function's own section after its switch tables.
 - dllimport check: every hand-declared USER32/KERNEL32/WINMM/GDI32 import is already dllimport. The plain WSOCK32/IMM32/VERSION prototypes match the original's thunks.
 - Unchanged: Radar 0x634670 97.35 (all 256 Get_Item subsets tried), Diplomacy 0x6340F0 80.56, Main_Options_Proc 0x542590 85.62, Video_Mode_Proc 0x543CF0 73.96. Unlock_Media 0x46F750: 89.92 (the two failure tails are laid out in the other order). Read_Scenario_Descriptions 0x670C50: 94.54 (a constant fold).
+
+## Scout598 (2026-11-03, closed; 4,734 B landed: DSurface slots 13/19 and XSurface::Fill_Circle from TibSun dsurface.cpp/xsurface.cpp)
+- TibSun's dsurface.cpp/xsurface.cpp are the RA2 shapes (TibSun DepthBuffer = RA2 ABufferPtr 0x839C6C, AlphaBuffer = ZBufferPtr 0x8315B4; rename table in Scout598/TRIAGE.md). All remaining DSurface members are compiler output. XSurface::Fill_Rect 0x7743C0 stays inline asm.
+- Slot 14 0x4ABBA0 Draw_Depth_Glow_Line: 87.57 (needs an R spec for the TibSun signature, plus the h3 overlay). Slot 15 0x4AC650: 16.23 (frame 0xD4 vs 0xC4). Trail line 0x4AE9C0: 66.04. Plot_Line 0x773F00: 99.44 (exhausted). Draw_Ellipse 0x7746C0: 22.71. Scout600 continues the unit.

@@ -12,7 +12,13 @@ static inline CoordStruct Coord_Along_Facing(UnknownFacingDir facing, int distan
 {
     double angle = ((short)facing.Raw - 0x3fff) * unknown_facing_radians_79b620;
     double y = coord.Y;
-    return CoordStruct((int)(unknown_cos_4ba4d0(angle) * distance + coord.X), (int)(y - unknown_sin_4ba480(angle) * distance), coord.Z);
+    return UnknownCoord434820((int)(unknown_cos_4ba4d0(angle) * distance + coord.X), (int)(y - unknown_sin_4ba480(angle) * distance), coord.Z);
+}
+
+// Moves LIGHT to COORD (virtual slot 103).
+static inline void Move_To(BuildingLightClass *light, CoordStruct const &coord)
+{
+    light->unknown_slot103(coord);
 }
 
 // Places the light's two points in front of and behind OBJECT (Rules
@@ -21,6 +27,6 @@ void BuildingLightClass::unknown_func_4341d0(TechnoClass *object)
 {
     CoordStruct near_point = Coord_Along_Facing(object->unknown_2e0.Current(), Rules->unknown_6b4, object->Coord);
     unknown_ac = near_point;
-    unknown_a0 = Coord_Along_Facing(object->unknown_2e0.Current(), -Rules->unknown_6b0, object->Coord);
-    unknown_slot103(near_point);
+    unknown_a0 = Coord_Along_Facing(object->unknown_2e0.Current(), -Rules->unknown_6b0, object->Position_Coord_004f3f40());
+    Move_To(this, near_point);
 }
