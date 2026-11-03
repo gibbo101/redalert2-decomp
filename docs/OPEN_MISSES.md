@@ -1393,3 +1393,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout626 (2026-11-03, closed; 0 B; Sidebar /Ob2 puzzle PARKED after two zero-byte lanes; resume in build/class-work/Scout626/NOTES.md)
 - Natural pieces found: C850 without braces (w/c8w_nb.cpp, 168 -> 162 IL, byte-exact) and CA50 searching the strips itself (w/ca50_h2.cpp, removes the 70-unit 0x681980 site). The original's Recalc shows C850 calls 0x6820F0, which must be 42-46 IL units (`return Unknown_006820A0() * 2` in a natural form).
 - With probes, CA50 and Add are both exact (`CA=ca50_h2 ./g.sh ps2x c8w_nb f0n/dg2`). Still open: two free sites (or one plus a larger Deactivate) in Select_Tab between F730 and Activate_Tab, and a natural 42-46 unit F0. IL sizes are in the NOTES table (cap about 175). sim.py predicts every compile tried.
+
+## Scout628 (2026-11-03, closed; 461 B landed: Tactical Get_Selectable_Object 0x6AA990)
+- Tactical Pixel_To_Cell 0x6A6BD0: 42.06. Our 0x6A27A0 is a free callee (40 IL units or less) that the original calls out of line twice, so the original 27A0 is larger or not an /Ob2 site. Next: measure with Scout626 mu.py. Draw_Wall_Placement 0x6A6290: 78.49 (0x6A2740 is a Point2D-by-value ctor; it needs Point2D::operator-= 0x6AC850 in the plan). Draw_Fence_Placement 0x6A5D70: 48.79.
+- BulletClass Shrapnel 0x462C50 needs a merged BulletVelocity API at HEAD (10 accepted users); Scout629 is building it.

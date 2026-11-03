@@ -1098,3 +1098,4 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Braces are IL (Scout626): removing the braces from four one-statement ifs took Sidebar C850 from 168 to 162 /Ob2 units with identical code; an early return gave 158. Write braces as TibSun does when a budget is tight.
 - A call refused inside an inlined copy in another function names the callee the source really calls: Recalc 0x6802D0's inlined C850 calls 0x6820F0, which reveals C850's own source.
 - Free callees (40 IL units or less) are never refused, even at allowance 0, so a callee the original refuses somewhere is over 40.
+- A local's scope decides whether it takes a dead parameter's stack slot: a Cell declared inside `if (best == 0) { ... }` reuses the dead `point` parameter slot, while one at function scope gets its own (Tactical 0x6AA990). Splitting a Point2D into two ints gives the original's scalar slots.

@@ -1,6 +1,11 @@
 // @ref ?OnServerTime@CChatEventSink@@UAGJJJ@Z=00765950
 // @ref ?OnInsiderStatus@CChatEventSink@@UAGJJPAUUser@WOL@@@Z=00765960
 // @ref ?OnSetLocalIP@CChatEventSink@@UAGJJPBD@Z=00765970
+// The INI and file classes come first: Pick_Lobby 0x00744090 (later in this unit) depends on how
+// INIClass and CCFileClass are declared relative to each other, and declaring both before lobby.hpp
+// keeps it independent of declarations added to the wonline headers (VC6_MATCHING_NOTES "Fragile rows").
+#include "shared/ini_class.hpp"
+#include "shared/cc_file_class.hpp"
 // Wonline requires full lobby container implementations before their first inclusion.
 #include "shared/lobby.hpp"
 // Header-static dynamic initializers of the unit at 0x0073A6F0:  the

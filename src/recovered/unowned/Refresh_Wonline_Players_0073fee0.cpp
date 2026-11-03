@@ -1,7 +1,4 @@
 // 0073FEE0: complete Wonline player-list refresh, independent original bounds5132+4NOP.
-// Keeps AbstractClass +0x14 as direct bits in this unit (no struct type):
-// Pick_Lobby 0x00744090 later in the unit follows the struct-type count.
-#define RA2_ABSTRACT_FLAGS_UNNAMED
 #include "shared/wol_sink.hpp"
 #include "shared/lobby.hpp"
 #include "shared/lobby_name_set.hpp"
