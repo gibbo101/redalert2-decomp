@@ -1173,3 +1173,10 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout577 (2026-11-02/03, closed; 2,165 B landed: planning-token teardown 2,074 B and Planning_Event_Result 91 B)
 - The in-class PlanningNodeClass::operator delete was an extra /Ob2 site inside ??_G; planning.hpp now drops it. 0x613E50's two list Clears are one file-local inline helper; this is a budget-count hypothesis.
 - 0x6130B0: 77 (needs pop-3353 taken over whole, including 0x6142F0). Planning_Selection_Kind 0x616B40: 98.51 (Scout577 sk2's logic differs from the original). 0x616A50 77.83, 0x61A6A0 88.57, 0x61A6F0 95.35, 0x619BD0 96.92. Assigned to Scout581 together with the rest of the PlanMgr.cpp rows.
+
+## Scout580 (2026-11-03, closed; 0 B)
+- Process_Receive_Packet 0x6265C0: 87.67, parked. VC6 biases the index-form mega pointer to a non-zero field offset; the original's pointer is unbiased.
+- Queue_AI 0x623770 is exact joined, but it lands only with Queue_AI_Multiplayer 0x623B00, which is at 84.67 (Scout580 misses/, queue.hpp overlay).
+- Templates 0x62EA00 and 0x62EA40 land with their only callers, Wait_For_Players and 0x629290.
+- OWNER RULING (00:20Z): the Queue.CPP unit-local declarations are allowed: the timeout table 0x7EC438, unknown_precalc_max_ahead_a3d57c, unknown_sync_counts_a76b74[8][8], Mono_Page_0059da50, the __fastcall Wait_For_Players, Westwood MAX/MIN, and the function statics bound by @ref.
+- Queue.CPP pauses after three lanes (2,454 B in total). The next lanes take the inventory pass-7 rows.

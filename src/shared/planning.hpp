@@ -366,6 +366,7 @@ public:
     void unknown_6144f0();                                    // 0x006144F0
     bool Reached(int slot) const;                             // 0x00613B40
     void unknown_612ec0();                                    // 0x00612EC0
+    void unknown_6138f0(int index);                           // 0x006138F0
     void Add_Node(PlanningNodeClass *node);                   // 0x00613BA0
     EventClass unknown_613330();                              // 0x00613330
     // Adds the nodes start..start+count-1 of this path to techno's path,
