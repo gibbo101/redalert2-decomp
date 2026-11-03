@@ -1072,3 +1072,5 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Declaring an import `__declspec(dllimport)` (timeGetTime in Dropship_Screen 0x4A6B90) gives the original's `call [imp]` and register caching of the import pointer: +21 points. A plain prototype calls a thunk.
 - Aggregate initialisers instead of memset for local arrays gave the original's stores (+3.3, 0x4A6B90).
 - Classes whose RTTI mangling is PAV must be declared `class`, not `struct` (ButtonFadeEffect, CrossDissolveEffect).
+- A function-local static with a destructor makes the unit emit its `$E` atexit thunk. Acceptance refuses an @ref binding of that thunk, so the thunk's row must be taken into the plan (0x5C01D0).
+- A static inline accessor used as a sprintf argument is evaluated before the other pushes and moves that load into a callee-saved register (0x5BC940).

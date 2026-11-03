@@ -8,7 +8,6 @@
 #include "shared/owner_draw_dialog_control.hpp"
 #include "shared/string_table.hpp"
 // @ref ?unknown_dialog_proc_5ffb00@@YIHPAUHWND__@@IIJ@Z=005ffb00
-// @ref ?Skirmish_Command@@YIXPAUHWND__@@H0H@Z=006829f0
 // @ref ?Skirmish_Message_497@@YIHPAUHWND__@@IJ@Z=00683fc0
 // @ref ?unknown_5e4720@OwnerDraw@@YI_NPAUHWND__@@@Z=005e4720
 // @ref ?Draw_0061D460@UnknownPreview_0061D430@@QAEXPAUHWND__@@@Z=0061d460

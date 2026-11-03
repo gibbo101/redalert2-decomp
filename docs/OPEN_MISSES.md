@@ -1260,3 +1260,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Host_Dialog_Proc 0x5BEFE0 (2,507 B): 95.68 (w/best_5befe0_95.68.cpp with EXTRA 5bbd20=w/ssn.cpp). Send_Slot_Names 0x5BBD20, rewritten to copy from unknown_session_a3d298.Handle, is exact on its own and fixes 0x5BEFE0's AICount store; land both in the same plan. Only the WM_NCHITTEST tool tip is left: the order of the x/y subtractions decides the message/lparam ebx/edi assignment.
 - Save_List_Selection 0x5C5FF0: 94.38. The inlined Grow's bucket-pointer temporary shares i's slot and pushes it to the bottom of the frame.
 - 0x5C7EF0: 75.82 as __fastcall (the member form scores 73.37); it uses unknown_firewall_a71b18. Receive_Game_Options 0x5C3FF0: 64.86 (the if/else-if chain compiles identically because every section returns). 0x5BBDD0: 82.76.
+
+## Scout597 (2026-11-03, closed; 1,006 B landed: Send_Join_Queries 0x5C01D0 via the session Handle/Games members)
+- OWNER DECISION: the plan took the three one-byte atexit thunk rows 0x5C05C0/0x5C05D0/0x5C05E0 from pop-67 (as Iso418 did with 0x52C220). An @ref binding is refused because the function-local CDTimerClass statics emit the thunks in the unit.
+- Build_Game_Options 0x5BC940: 89.37 (w/e1.cpp). 0x5BCCF0: 88.44. 0x5C2DA0 (TibSun _DrawMessage): 79.41. Host_Dialog_Proc 0x5BEFE0: 95.68 (a global message/lparam ebx/edi priority swap). 0x5CCA30: 73.63. 0x5CAE00: 46.15. 0x5CB170: not attempted.
+- 2026-11-03 04:45Z reassignments: codex2 parks House.CPP (no landing since r2829 at 00:10Z) and takes ShipLocomotionClass. codex3 gets the Dropship unit (Mac drafts in coordination owner-reference/2026-11-03-*). OWNER DECISION on codex3 r277: take the 0x61ECC0 _$E41 seed row from pop-135 into the plan, as with the Scout597 thunks.
