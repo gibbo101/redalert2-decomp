@@ -13,7 +13,7 @@
 // @ref ?Unknown_004284E0@UnknownPathEstimator@@QAEXABVRect@@@Z=004284e0
 // @ref ?Unknown_0054B2E0@MapClass@@QAEHXZ=0054b2e0
 // @ref ?Unknown_0054FDA0@MapClass@@QAEXXZ=0054fda0
-// @ref ?Unknown_0054EBD0@MapClass@@QAEXXZ=0054ebd0
+// @ref ?Unknown_0054EBD0@MapClass@@QAEHXZ=0054ebd0
 
 void MapClass::Unknown_005499C0()
 {

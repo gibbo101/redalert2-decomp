@@ -4,8 +4,8 @@
     "id": "population-3697",
     "inventory_sha256": "37ad25e4858814c7a99ff0d8ed52086ed817573f25b532b3bc02d6ddef60138a",
     "gaps_sha256": "e924fe482295338d8636ff6df85b1be84dffe5401e3049291dd036f26b3565cc",
-    "historical_population_sha256": "b827351d7a12bb80f4594a001861b75e324079bb0bade98bd1840061debc6e9e",
-    "historical_acceptance_sha256": "73e5731fc9bd730264ae42199869f9f4b12d37249aa3ed489f49355c3d35e733"
+    "historical_population_sha256": "748d31c2127078702e6fb994486080e2a05e65fd9ad473e936da0c2e1b519fb7",
+    "historical_acceptance_sha256": "bfbb4ae68f5fff4235eec9e15eb99e5ad040a075556b19d7be949489bcb0e61b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7198,7 +7198,7 @@
     "?Read_INI@BuildingTypeClass@@UAE_NAAVCCINIClass@@@Z": 4561408,
     "?Get_Point@INIClass@@QBE?AUINIPoint2D@@PBD0ABUPoint2D@@@Z": 5305968,
     "?Unknown_0054B2E0@MapClass@@QAEHXZ": 5550816,
-    "?Unknown_0054EBD0@MapClass@@QAEXXZ": 5565392,
+    "?Unknown_0054EBD0@MapClass@@QAEHXZ": 5565392,
     "?Unknown_00549C50@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z": 5545040,
     "?Create_Anim_Item@@YIPAVGraphicMenuItem@@ABVWstring@@AAVINIClass@@PAXPBUPoint2D@@@Z": 5108560,
     "?Get_Point@INIClass@@QBE?AUINIPoint2D@@ABVWstring@@0ABUPoint2D@@@Z": 5306368,

@@ -4,8 +4,8 @@
     "id": "population-3531",
     "inventory_sha256": "23c55e027ed87fc2fc5d448706008171e1d6f4e2d9d0bfa73f6554c8bda6967a",
     "gaps_sha256": "76ec07f490532bcaf285d503abc3c3dabd0560424f3f39e148a6edbe5fb5b131",
-    "historical_population_sha256": "019979f2eeccd2e538d1fa2984cf6b94f55ed367e96810db209bd398369696cb",
-    "historical_acceptance_sha256": "0d01f2944a69a0103f9ead20962cbe2819d7e5eb561f01023bc8239780ccd3b0"
+    "historical_population_sha256": "727492db94d778218299e64b7b1e2c7e42016c24132dc59bd8a1992da0ccba5e",
+    "historical_acceptance_sha256": "709493d8af9dc2d862a12565dcdc77c49ca3d8ff56c701a9b67ae5b53e506900"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -6147,7 +6147,7 @@
     "?Get_Point@INIClass@@QBE?AUINIPoint2D@@PBD0ABUPoint2D@@@Z": 5305968,
     "?Load@GraphicMenu@@SIPAV1@ABVWstring@@0@Z": 5104224,
     "?Unknown_0054B2E0@MapClass@@QAEHXZ": 5550816,
-    "?Unknown_0054EBD0@MapClass@@QAEXXZ": 5565392,
+    "?Unknown_0054EBD0@MapClass@@QAEHXZ": 5565392,
     "?unknown_slot70@TechnoClass@@UAEX_N0@Z": 7166624,
     "?Unknown_00549C50@MapClass@@QAEXABUCoordStruct@@HPAVHouseClass@@_N2222@Z": 5545040,
     "?Create_Anim_Item@@YIPAVGraphicMenuItem@@ABVWstring@@AAVINIClass@@PAXPBUPoint2D@@@Z": 5108560,

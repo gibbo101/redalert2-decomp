@@ -14,7 +14,7 @@
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c
 // @ref ?unknown_rect_839630@@3VRect@@A=00839630
 // @ref ?Unknown_00631570@RadarClass@@QAEXABVCell@@@Z=00631570
-// @ref ?Unknown_0054EBD0@MapClass@@QAEXXZ=0054ebd0
+// @ref ?Unknown_0054EBD0@MapClass@@QAEHXZ=0054ebd0
 // @ref ?Unknown_005687B0@MapClass@@QAEXABVRect@@@Z=005687b0
 
 extern Rect unknown_rect_839630;

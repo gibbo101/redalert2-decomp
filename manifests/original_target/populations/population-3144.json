@@ -4,8 +4,8 @@
     "id": "population-3144",
     "inventory_sha256": "9b49da8deac1889074759c7ee91af2afb1aa59acf9de23ba7b00e1bd2f083f24",
     "gaps_sha256": "35d91b8470ebaf7df57b7aa21678d3713f8f563003b0c5601e088c8ee34d42bf",
-    "historical_population_sha256": "a61a53441b17d11295cca0c1e3bf06ea7a63c9583fb9c80b757865c2afd114f0",
-    "historical_acceptance_sha256": "8406a587a9ea176fd61c17513087ec92dc38a22a2beee811cb5a545a55170fbd"
+    "historical_population_sha256": "9f95e25ba85e266b6121871c60afbadee10f88048f3a61c1116351ae0f139c96",
+    "historical_acceptance_sha256": "32278bf4edd451addb290540b8cb3f2041c32a49d831689caf60eb4cfc3f3af6"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10425,7 +10425,7 @@
     "?Draw@EgoClass@@QAEX_N@Z": 4929168,
     "?Unknown_0055A120@MapClass@@QAEXXZ": 5611808,
     "?Unknown_00563D40@MapClass@@QAEXXZ": 5651776,
-    "?Unknown_0054EBD0@MapClass@@QAEXXZ": 5565392,
+    "?Unknown_0054EBD0@MapClass@@QAEHXZ": 5565392,
     "??_7SpawnManagerClass@@6BIPersistStream@@@": 8042696,
     "??_7SpawnManagerClass@@6BIRTTITypeInfo@@@": 8042668,
     "??_7SpawnManagerClass@@6BINoticeSink@@@": 8042660,
@@ -30699,7 +30699,7 @@
         {
           "offset": 930,
           "kind": 20,
-          "symbol": "?Unknown_0054EBD0@MapClass@@QAEXXZ",
+          "symbol": "?Unknown_0054EBD0@MapClass@@QAEHXZ",
           "target": 5565392,
           "addend": 0,
           "resolved": 4293859930

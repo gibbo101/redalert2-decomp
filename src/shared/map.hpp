@@ -412,7 +412,7 @@ public:
     // +0x118/+0x11C that passes 0x0055A660, or null at its end (0x0055A910).
     CellClass *Unknown_0055A910();
     int Unknown_0054B2E0();                                     // 0x0054B2E0 (TibSun Overpass: answers the summed tiberium adjustment)
-    void Unknown_0054EBD0();                                    // 0x0054EBD0
+    int Unknown_0054EBD0();                                     // 0x0054EBD0
     virtual ~MapClass();                                                        // 0x00547B90 (??_G 0x0056A9D0)
 
     virtual long __stdcall Is_Visible(Cell cell);                         // slot 3 0x00547FA0

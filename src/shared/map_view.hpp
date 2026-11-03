@@ -112,7 +112,7 @@ public:
     void Unknown_005685F0();                                                    // 0x005685F0
     bool Unknown_00569090(Cell *cell);                                          // 0x00569090
     void Unknown_00563D40();                                                    // 0x00563D40
-    void Unknown_0054EBD0();                                                    // 0x0054EBD0
+    int Unknown_0054EBD0();                                                     // 0x0054EBD0
     void Unknown_005688A0(DynamicVectorClass<Cell> &cells);                    // 0x005688A0 (as shared/map.hpp)
     void Unknown_0055A550();                                                    // 0x0055A550
     void Unknown_0054FDA0();                                                    // 0x0054FDA0 (shared/map.hpp)

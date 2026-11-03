@@ -4,8 +4,8 @@
     "id": "population-3863",
     "inventory_sha256": "c091ec80bc7c1c5be86f9dc8dd0d58f157b384ccf646a3caf6d89bf3461c4e13",
     "gaps_sha256": "5be47b7bafdfaba4e8ffc88fdf4eeac0c6ce6396b89be0f6a8c52a2916998a9a",
-    "historical_population_sha256": "2afd7a4d9f5ed97ddbf5a1021b54b573428d9743db01fe95b218b608426e4751",
-    "historical_acceptance_sha256": "110b875a20a5df3718cbefa191d7bbbe38f334bef574a862488621ec4785584b"
+    "historical_population_sha256": "672281b98a83fe8d22b685675c2c1074cc1a46651c3613a468b5219ae76571f8",
+    "historical_acceptance_sha256": "dbac87de554439393090cfb194f8d9e2060aa9104a7a6d2de5b1a8dcf99b905f"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -11379,7 +11379,7 @@
     "??_ETubeClass@@UAEPAXI@Z": 7272720,
     "?Unknown_00631D40@RadarClass@@QAEXXZ": 6495552,
     "?Unknown_00563D40@MapClass@@QAEXXZ": 5651776,
-    "?Unknown_0054EBD0@MapClass@@QAEXXZ": 5565392,
+    "?Unknown_0054EBD0@MapClass@@QAEHXZ": 5565392,
     "?Unknown_00569090@MapClass@@QAE_NPAVCell@@@Z": 5673104,
     "_CLSID_TubeClass": 8002752,
     "?Update_All_Indexes@TubeClass@@SAXXZ": 7271424,
@@ -27195,7 +27195,7 @@
         {
           "offset": 271,
           "kind": 20,
-          "symbol": "?Unknown_0054EBD0@MapClass@@QAEXXZ",
+          "symbol": "?Unknown_0054EBD0@MapClass@@QAEHXZ",
           "target": 5565392,
           "addend": 0,
           "resolved": 393677
@@ -27310,7 +27310,7 @@
         {
           "offset": 271,
           "kind": 20,
-          "symbol": "?Unknown_0054EBD0@MapClass@@QAEXXZ",
+          "symbol": "?Unknown_0054EBD0@MapClass@@QAEHXZ",
           "target": 5565392,
           "addend": 0,
           "resolved": 393341
