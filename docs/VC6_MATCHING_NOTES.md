@@ -1059,3 +1059,5 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - VC6 sorts a flat floating-point `+` chain and reuses repeated subexpressions across it, so neither the term order nor an inline helper stops the reuse. A miss where the original recomputes a squared term (railgun 0x60C050) needs a different evidenced shape, not reordering.
 - An expanded TibSun-style MAX macro (`a > b ? a : b` written out at the site) gives `add reg,-N` for a constant clamp, where a helper call gives cmp/branch forms.
 - A local `Random2Class &rng` reference held across several random calls changes the register assignment (spark 0x60B670 62 -> 78.8).
+- Matrix temporaries (Scout588): VC6 keeps the two Rotate_Vector temporaries separate when the Slope_Vector result is assigned, and shares the matrix temporaries when the slope matrix is assigned in its own statement.
+- Including a header that defines VECTOR_IMPLEMENT_* renumbers a unit's guarded-static labels ($S42 -> $S64), and acceptance refuses the result as unbound .bss. Move a global the unit needs into a small header of its own instead (frame_rate.hpp for unknown_a6eb1c, ParticleClass 0x609D10).

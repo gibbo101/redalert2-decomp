@@ -2,6 +2,9 @@
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x00465A00-0x00465BE6); the other
 // drafts of this plan are emitted by these includes.
+// The unit expands DynamicVectorClass::Delete inline (Presentation 0x00466A50).
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_OBJECT
+#define VECTOR_IMPLEMENT_DYNAMIC_DELETE_INDEX
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

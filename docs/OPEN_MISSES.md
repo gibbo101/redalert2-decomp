@@ -1217,3 +1217,9 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Parked after two zero-byte attempts: Main_Options_Proc 0x542590 85.62, IonBlast One_Time 0x521A90 94.19 and Audio_Remove_Devices 0x403210 88.51 (merged pop-3592 + pop-3648; rotated loop forms lose the cached zero in ebp).
 - Blocked: 0x68CF90 needs a bool rename whose caller 0x5FED10 is codex1's (pcx_cache.hpp). 0x5C69E0 (63.75) and 0x5CBF20 (43.42) need 0x5C7160 moved to another population and a slot-3 rename.
 - Correction: Scout582 RANK rows marked fresh mostly have older drafts (Mix488, Small467 and others). Check jobs/NOTES before calling a row fresh.
+
+## Scout588 (2026-11-03, closed; 964 B landed: ParticleClass slot 67 Draw_It 0x609D10, with frame_rate.hpp)
+- Smoke particle AI 0x608BB0: 89.89 (w/sbb0_best_89.89.cpp, EXTRA 0x608250=w/hs250.cpp and 0x6093A0=w/p6093a0.cpp). In both diffs the original uses the left operand as the destination: `fld; fild; fsubp` for `velocity.Z -= Gravity`, and `add eax,ecx` for `height_gl + j`.
+- Spark particle AI 0x609540: 64.60, parked. The original calls the out-of-line ctors 0x434820 (two early coordinates) and 0x41B630 (the last one), and an inline ctor always expands at those sites. OWNER DECISION (reversible): add these to coord.hpp as declarations guarded per unit (an out-of-line UnknownCoord434820(int,int,int) and the TPoint3D ctor 0x41B630), carried in the shared/ overlay of the round that first lands one. The draft's file-local stand-in types must not land.
+- Spark system AI 0x60B670: 86.56, parked (a 3-register rotation). Smoke system AI 0x60BB70: 37.95. The original calls DVC Add 0x60D050 out of line in the two inlined Spawn_Held_Particle sites and expands it at the last one; measure the /Ob2 budget at the first Add.
+- check_plans refuses RA2_INVENTORY_PASSES inside its worktree, relative or absolute ("not in the subpath"). For pass-7 rows, state body_bytes and bound_evidence in the plan.
