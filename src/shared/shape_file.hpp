@@ -55,6 +55,8 @@ static Rect const unknown_empty_rect(0, 0, 0, 0);
 
 // A shape file: header followed by FrameCount frame headers.
 struct ShapeFileStruct {
+    // TibSun ShapeSet::Get_Count: the frame count (AnimClass::Draw_It 0x00420E50 needs the call form).
+    int Get_Count() const { return FrameCount; }
 #ifdef RA2_DRAW_SHAPE_OPERATIONS
     // Original unsigned range test, factored as in the Westwood shape API.
     bool Is_Shape_Index_Valid(int index) const { return (unsigned)index < (unsigned)FrameCount; }

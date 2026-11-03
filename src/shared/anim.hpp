@@ -140,7 +140,7 @@ public:
     UnknownBounce unknown_108;              // +0x108
     UnknownQuaternion unknown_138;          // +0x138
     UnknownQuaternion unknown_148;          // +0x148
-    bool unknown_158;                       // +0x158
+    signed char unknown_158;                // +0x158 (TibSun TranslucencyLevel: signed compares in Draw_It 0x00420E50)
     bool unknown_159;                       // +0x159
     AbstractClass *unknown_15c;             // +0x15C
     int unknown_160;                        // +0x160
