@@ -1314,3 +1314,9 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout608 (2026-11-03, closed; 1,649 B landed: BuildingClass::Read_INI 0x44AB80; BuildingClass is now population-3892)
 - Unlimbo slot 53 0x43D3A0 (3,777 B): 88.71, shape 98.1 (w/ul5.cpp, EXTRA from E2.txt). It needs exact rewrites of 0x452BE0 Should_Fog (member TPoint2D<short>::operator+) and 0x442060 slot 52 (drop the file-local RA2_CELLSTRUCT_PLUS operator+) in the same plan. Left: Should_Fog's operator+ goes out of line in the original (about 60-70 free sites short); Sell_Wall's tail merge direction; particle-system argument order.
 - Mission_Missile 0x448400: seeded only (w/seedmm). Mission_Attack 0x446920: 79.45. Delayed_Fire 0x44B770: 60.27.
+
+## Scout609 (2026-11-03, closed; 25 B landed: Surface(int,int) 0x49ED90; triage in build/class-work/Scout609/TRIAGE.md)
+- XSurface/BSurface member residue is only Plot_Line 99.44, Fill_Rect (inline asm) and Draw_Ellipse 22.71. The rest of the classes.md count is other units' functions that build a BSurface inline.
+- RadarClass Compute_Background 0x630B70 (1,746 B, TibSun radar.cpp): 99.29 (w/rb_best_99.29.cpp). Left: `lea ebp,[eax+1]` vs ours `inc eax; mov ebp,eax` at surf_bottom.
+- Read_PCX_File 0x60D110: the true body is 1,635 B (ends `ret 8` at 0x60D770; the inventory row says 360 B). 89.68 (TibSun pcx.cpp).
+- SpotLightClass::One_Time 0x5DD760 (983 B): 37.01, shape 90.75. It needs a spot_light.hpp overlay and the exact Clear_All 0x5DDB40 rewrite w/ct1.cpp in the same plan.
