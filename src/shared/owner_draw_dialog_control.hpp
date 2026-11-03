@@ -14,6 +14,9 @@ class BitFontClass;
 namespace OwnerDraw {
 class DialogControl {
 public:
+#ifdef RA2_OWNERDRAW_CHECK_FIELDS
+    DialogControl(); // 0x00601030, defined in the OwnerDraw unit
+#endif
     virtual ~DialogControl();
     virtual void Set_Window_006010f0(unsigned int key, HWND window) = 0;
     virtual bool unknown_slot2() = 0;
@@ -44,6 +47,10 @@ struct UnknownControlRecord {
     void Copy_List_600460(UnknownNode_006003d0 const *source);
     // Copies other except the owned pointers: text_28 and list_34 are deep copies, unknown_3c stays (0x006005C0).
     UnknownControlRecord &operator=(UnknownControlRecord const &other);
+#ifdef RA2_OWNERDRAW_CHECK_FIELDS
+    // Copies without the assignment operator self-test (0x006006E0).
+    UnknownControlRecord &unknown_copy_6006e0(UnknownControlRecord const &other);
+#endif
     // Replaces text_28 with a wide copy of text (none for a null or empty string) (0x00600560).
     void Set_Text_600560(char const *text);
     char unknown_00[0x10];
