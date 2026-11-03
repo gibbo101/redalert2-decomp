@@ -15,6 +15,7 @@
 #endif
 
 #include "shared/map.hpp"
+#include "shared/rgb_class.hpp"
 #include "shared/string_table.hpp"
 
 class ObjectClass;
@@ -73,7 +74,7 @@ public:
     DisplayClass();                                                             // 0x00498A50
     // Restore-in-place form (the copy the linker kept is 0x006824F0, Sidebar.CPP).
     DisplayClass(NoInitClass const &noinit)
-        : MapClass(noinit), unknown_11c8(false), unknown_11c9(false), unknown_11ca(false)
+        : MapClass(noinit), WaypointColor(0, 0, 0)
     {
     }
 
@@ -234,9 +235,7 @@ public:
     int unknown_11bc;               // +0x11BC
     int unknown_11c0;               // +0x11C0
     int unknown_11c4;               // +0x11C4
-    bool unknown_11c8;              // +0x11C8
-    bool unknown_11c9;              // +0x11C9
-    bool unknown_11ca;              // +0x11CA
+    RGBClass WaypointColor;        // +0x11C8 original three-byte mouse waypoint color
     bool unknown_11cb;              // +0x11CB
     bool unknown_11cc;              // +0x11CC
     bool unknown_11cd;              // +0x11CD

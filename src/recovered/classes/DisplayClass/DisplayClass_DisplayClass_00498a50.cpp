@@ -16,8 +16,7 @@ DisplayClass::DisplayClass()
       unknown_118c(0), unknown_1190(0), unknown_1194(-1), unknown_1198(false), unknown_119c(0),
       unknown_11a0(0), unknown_11a4(0), unknown_11a8(-1), unknown_11ac(false), unknown_11ad(false),
       unknown_11ae(false), unknown_11af(false), unknown_11b0(false), unknown_11b4(-1), unknown_11b8(0),
-      unknown_11bc(0), unknown_11c0(0), unknown_11c4(0), unknown_11c8(false), unknown_11c9(false),
-      unknown_11ca(false), unknown_11cb(false), unknown_11cc(false), unknown_11cd(false), unknown_11d0(0, 0),
+      unknown_11bc(0), unknown_11c0(0), unknown_11c4(0), WaypointColor(0, 0, 0), unknown_11cb(false), unknown_11cc(false), unknown_11cd(false), unknown_11d0(0, 0),
       unknown_11d8(0, 0)
 {
     ShadowShapes = 0;
