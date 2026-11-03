@@ -12,7 +12,7 @@ void __fastcall Draw_Radial_Indicator_00451BF0(unsigned int radius,unsigned char
 // @ref __real@8@3ffe8000000000000000=0079a728
 // @ref __real@8@4004f000000000000000=0079a718
 // @ref ?unknown_sqrt_4ba410@@YANN@Z=004ba410
-// @ref _?$S80@?7??unknown_slot74@BuildingClass@@UAEXH@Z@4EA=0084ece8
+// @ref _?$S81@?7??unknown_slot74@BuildingClass@@UAEXH@Z@4EA=0084ece8
 // @ref _?white@?7??unknown_slot74@BuildingClass@@UAEXH@Z@4VRGBClass@@A=0084ecf8
 // @ref _$E81=00451be0
 void BuildingClass::unknown_slot74(int arg1)
