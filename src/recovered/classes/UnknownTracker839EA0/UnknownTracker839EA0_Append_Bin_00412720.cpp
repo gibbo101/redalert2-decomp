@@ -1,3 +1,4 @@
+#define RA2_AIRCRAFT_OWNER_FIRE
 #define RA2_LOCOMOTION_COM_VALUE_TYPES
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"

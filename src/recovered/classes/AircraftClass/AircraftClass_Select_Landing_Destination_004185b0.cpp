@@ -9,17 +9,15 @@
 // @ref ?Unknown_006BA990@TeamClass@@QAE_NXZ=006ba990
 // @ref ?unknown_sin_4ba480@@YANN@Z=004ba480
 // @ref ?unknown_cos_4ba4d0@@YANN@Z=004ba4d0
-// @ref ?unknown_angle_scale_79b620@@3NB=0079b620
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?unknown_a40774@@3HA=00a40774
 // @ref ?unknown_id_source_a3d290@@3PAVUnknownIDSource@@A=00a3d290
-extern double const unknown_angle_scale_79b620;
 double __cdecl unknown_sin_4ba480(double angle);
 double __cdecl unknown_cos_4ba4d0(double angle);
 // The direction in radians (Westwood's DirType::As_Radian).
 inline double UnknownFacingDir::As_Radian() const
 {
-    return ((int)(short)Raw - 16383) * unknown_angle_scale_79b620;
+    return ((int)(short)Raw - 16383) * -9.587672516830327e-05;
 }
 
 // The cell a distance away in a direction (Westwood's Move_Cell).

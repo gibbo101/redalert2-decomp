@@ -10,10 +10,10 @@ original code is still scaffold. Per-batch evidence through A15 is in
 
 | Measure | Value |
 | --- | ---: |
-| Accepted regions | 17,525 |
-| Matched C/C++ body bytes | 2,647,183 (70.22% of .text) |
-| Frozen padding bytes | 139,336 |
-| Original .text scaffold bytes | 983,286 |
+| Accepted regions | 17,526 |
+| Matched C/C++ body bytes | 2,648,940 (70.27% of .text) |
+| Frozen padding bytes | 139,339 |
+| Original .text scaffold bytes | 981,526 |
 | Logical .text bytes | 3,769,805 |
 | Compiler populations | 690 |
 

@@ -125,10 +125,14 @@ struct BulletVelocity : public BulletVelocityXY {
     // A zero vector becomes 100 along X (kept copy 0x0041B7F0).
     void Nonzero_Check() { if (X == unknown_double_79b610 && Y == unknown_double_79b610 && Z == unknown_double_79b610) X = 100.0; }
     // The pitch: the angle above the horizontal plane (kept copy 0x0041B6E0).
+#ifdef RA2_AIRCRAFT_OWNER_FIRE
+    UnknownFacingDir Get_Pitch() const; // independently defined at0041B6E0, called at both native sites
+#else
     UnknownFacingDir Get_Pitch() const
     {
         return UnknownFacingDir((unsigned short)((unknown_math_4ba600(Z, XY().Speed()) - 1.5707963267948966) * -10430.060040584269));
     }
+#endif
     // Turns the horizontal part to a heading, keeping its speed.
     void Set_Yaw(UnknownFacingDir yaw)
     {

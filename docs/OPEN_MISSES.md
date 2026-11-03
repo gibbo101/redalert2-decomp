@@ -1476,3 +1476,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout646 (2026-11-04, closed; TechnoClass DistributedFire 0x6D4400 673 B landed)
 - Slot 186 0x6CD340: 80.18, parked after two lanes. Its overlay (w/h1: foot.hpp UnitTypeClass `bool IsSimpleDeployer` at +0xBAB, building_type_class.hpp `bool unknown_45ec40() const`) is probe-clean and accepted.
 - Tunnel depth 0x6CFB60: 80.77 (w/x1.cpp; `Map[Adjacent_Cell(cell, facing)]` for all six sums plus named MapCoords copies before each sum). Left: the first step's X-into-position store order and one esi/edi swap.
+
+## Scout649 (2026-11-03, closed; 0 B; InfantryClass PARKED)
+- Scatter 0x504120: 94.14 (w/s1.cpp; one spot left, `mov eax,[0xA41130]; imul eax,edi` vs ours `imul edi,[mem]`; the accepted UnitClass twin 0x7072D0 gets the original form). Per_Cell_Process 0x500AA0: 93.45 unchanged after 227 compiled mutations; only side-effect-breaking reorders flip the allocation (w/t1.cpp 99.24, not landable).
+- Correction: diff_candidate.py has no remote path; only full builds (check_plans --build, landings) compile remotely. Scoring stays in local Wine, one compile at a time.
+- Date correction: entries above dated 2026-11-04 happened on 2026-11-03 around 22:00Z.
