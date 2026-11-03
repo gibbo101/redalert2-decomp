@@ -87,6 +87,10 @@ class Rect {
 public:
     Rect() {}
     Rect(int x, int y, int width, int height) : X(x), Y(y), Width(width), Height(height) {}
+#ifdef RA2_WDT_MAP_LOAD_LAYOUT
+    Rect(Point2D const &point, int width, int height) : X(point.X), Y(point.Y), Width(width), Height(height) {}
+    Rect &operator+=(Point2D const &point) { X += point.X; Y += point.Y; return *this; }
+#endif
 #if defined(RA2_RECT_POINT_INLINE) || defined(RA2_RECT_CORNER_INLINE)
     Rect(RectPoint2D const &point, int width, int height) : X(point.X), Y(point.Y), Width(width), Height(height) {}
 #else

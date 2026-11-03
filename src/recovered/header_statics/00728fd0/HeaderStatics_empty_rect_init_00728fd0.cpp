@@ -1,3 +1,5 @@
+#define RA2_WDT_MAP_LOAD_LAYOUT
+#define RA2_RECT_POINT_INLINE
 #define CENTROID_DECLARE_CONSTRUCTOR
 // Header-static dynamic initializers of the unit at 0x00728FD0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x00728FD0-0x007291B1); the other

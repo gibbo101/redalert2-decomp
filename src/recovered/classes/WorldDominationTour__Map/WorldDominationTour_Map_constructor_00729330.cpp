@@ -39,6 +39,7 @@ Map::Map(int unknown_08, int unknown_0c, int unknown_10) :
     unknown_24(0),
     unknown_28(unknown_string_83c55c),
     Territories(0, 0),
+    unknown_44(0, 0),
     unknown_78(0),
     Palettes(0, 0)
 {

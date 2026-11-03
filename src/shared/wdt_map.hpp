@@ -59,6 +59,9 @@ public:
         ConvertClass *Drawer;                                       // +0x04
     };
 
+#ifdef RA2_WDT_MAP_LOAD_LAYOUT
+    void Load(INIClass &ini, MSEngine *engine, int unknown3);
+#endif
     Map(int unknown_08, int unknown_0c, int unknown_10);          // 0x00729330
     virtual ~Map();                                                 // 0x0072AF30 (slot 0, calls 0x007293F0)
 
@@ -83,19 +86,34 @@ public:
     ConvertClass *unknown_14;                                       // +0x14
     MSAnim *unknown_18;                                             // +0x18
     MSAnim *unknown_1c;                                             // +0x1C
-    int unknown_20;                                                 // +0x20
+#ifdef RA2_WDT_MAP_LOAD_LAYOUT
+    MSAnim *unknown_20;
+#else
+    int unknown_20;
+#endif
+    //                                                 // +0x20
     Surface *unknown_24;                                            // +0x24 (each pixel a territory index: Territory_At)
     Wstring unknown_28;                                             // +0x28
     DynamicVectorClass<rc_ptr<Territory> > Territories;             // +0x2C
+#ifdef RA2_WDT_MAP_LOAD_LAYOUT
+    Point2D unknown_44;  // +0x44 map origin
+    Point2D unknown_4c;  // +0x4C help-bar origin
+    Rect unknown_54;     // +0x54 back-button rectangle
+#else
     struct Unknown44 {
         Unknown44() : unknown_0(0), unknown_4(0) {}
         int unknown_0;
         int unknown_4;
     } unknown_44;                                                   // +0x44
     char unknown_4c[0x64 - 0x4C];
+#endif
     struct Unknown64 {
         Unknown64() : unknown_0(0), unknown_4(0) {}
+#ifdef RA2_WDT_MAP_LOAD_LAYOUT
+        MSOverlayAnim *unknown_0;
+#else
         int unknown_0;
+#endif
         char unknown_4;
     } unknown_64;                                                   // +0x64
     struct Unknown6C {

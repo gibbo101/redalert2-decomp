@@ -8,8 +8,8 @@ namespace WorldDominationTour {
 int Map::Territory_At(Point2D const &point) const
 {
     Point2D local = point;
-    local.X -= unknown_44.unknown_0;
-    local.Y -= unknown_44.unknown_4;
+    local.X -= unknown_44.X;
+    local.Y -= unknown_44.Y;
     if (local.X >= 0 && local.X < unknown_24->Get_Width() && local.Y >= 0 && local.Y < unknown_24->Get_Height()) {
         return unknown_24->Get_Pixel(local);
     }

@@ -25,8 +25,8 @@ MSAnim *Map::Load_Anim(INIClass &ini, Wstring const &section, Wstring const &ent
         position = value.Get_Token(position, ",", rate);
         value.Get_Token(position, ",", palette);
         if (y != 0) {
-            int xpos = x.As_Integer() + unknown_44.unknown_0;
-            int ypos = y.As_Integer() + unknown_44.unknown_4;
+            int xpos = x.As_Integer() + unknown_44.X;
+            int ypos = y.As_Integer() + unknown_44.Y;
             int frame_rate = 5;
             if (rate != 0 && rate.Length() > 0) {
                 frame_rate = rate.As_Integer();
