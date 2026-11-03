@@ -50,11 +50,19 @@ struct UnknownControlRecord {
     Surface *surface_10; // +0x10 a BSurface (0x005FE490 creates it; 0x005FF380 deletes it)
     Surface *image_14;  // +0x14 image set by 0x005E1F30
 #ifdef RA2_OWNERDRAW_CHECK_FIELDS
+#ifdef RA2_OWNERDRAW_BUTTON_FIELDS
+    union { char unknown_18[0x20 - 0x18]; Surface *alternate_image_18; };
+#else
     char unknown_18[0x20 - 0x18];
+#endif
     int unknown_20; // skips checkbox painting when nonzero (0x005F3CF0)
     char unknown_24[0x28 - 0x24];
 #else
+#ifdef RA2_OWNERDRAW_BUTTON_FIELDS
+    union { char unknown_18[0x28 - 0x18]; Surface *alternate_image_18; };
+#else
     char unknown_18[0x28 - 0x18];
+#endif
 #endif
     wchar_t *text_28;   // +0x28 owned wide text (0x006005C0 copies it, 0x00600560 sets it from a char string)
     char unknown_2c[0x34 - 0x2c];

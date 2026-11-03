@@ -25,6 +25,10 @@ public:
     UnknownBitmapWriter();                  // 0x0068BD50
     ~UnknownBitmapWriter();                 // 0x0068BE30
     void Write_0068c040(char const *file, void *bitmap, void *palette, int format);
+#ifdef PCX_CACHE_DECLARE_DRAWS
+    // Tiles 16-bit image pixels over destination rect, with source x/y offsets (0x0068CCE0).
+    bool Draw_0068cce0(Rect const &rect, Surface *destination, Surface *image, int source_x, int source_y);
+#endif
     // Copies image into rect of destination, skipping the transparent pixel
     // (0x0068CE80; false when the image cannot be locked).
     bool Draw_0068ce80(Rect const &rect, Surface *destination, Surface *image, int transparent);
