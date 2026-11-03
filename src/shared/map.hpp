@@ -302,6 +302,9 @@ public:
     void Damage_Low_Bridge2_Piece_EW_005606D0(Cell const &cell);
     void Damage_Low_Bridge_Piece_NS_005601F0(Cell const &cell);
     void Damage_Low_Bridge2_Piece_NS_00560C10(Cell const &cell);
+    // TibSun Destroy_Train_Bridge_Span: drops the train-bridge span through a cell (0x00553000; true when dropped).
+    bool Destroy_Train_Bridge_Span_00553000(Cell const &cell, FacingType direction, Rect *dirty);
+    void Destroy_Train_Bridge_Connections_00553570(Cell const &cell);   // TibSun Destroy_Train_Bridge_Connections
 #endif
 #ifdef RA2_MAP_BOMB_BRIDGE
     // Bridge destruction around a cell (BombClass::Unknown_00435D30 on a bridge repair hut): 0x00557090 when a
