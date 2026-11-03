@@ -3,6 +3,9 @@
 #include "shared/tactical.hpp"
 #include "shared/unknown_static_rect.hpp"
 #define SHAPE_FILE_EMPTY_RECT unknown_static_rect
+// The unit's shape frames go through the range-checked Is_Shape_Index_Valid form (Get_Render_Rect 0x005D31C0
+// keeps its first Get_Frame_Rect's Rect constructor out of line only with it); this is the unit's first include.
+#define RA2_DRAW_SHAPE_OPERATIONS
 #include "shared/shape_file.hpp"
 extern Rect unknown_rect_839630;
 // @ref ?unknown_rect_839630@@3VRect@@A=00839630
