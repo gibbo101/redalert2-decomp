@@ -1,3 +1,5 @@
+#define RA2_SHIP_MOVE_TO_VALUE
+#define RA2_SHIP_CELL_ACCESSORS
 // Header-static dynamic initializers of the unit at 0x0049F450:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x0049F450-0x0049F636); the other

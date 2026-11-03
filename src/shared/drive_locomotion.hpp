@@ -44,7 +44,11 @@ public:
     virtual int __stdcall Z_Adjust();                                           // 0x004A4830
     virtual int __stdcall Z_Gradient();                                         // 0x004A4840
     virtual bool __stdcall Process();                                           // 0x004A05F0
+#ifdef RA2_SHIP_MOVE_TO_VALUE
+    virtual void __stdcall Move_To(COMCoordStruct to);                          // 0x0049FE30
+#else
     virtual void __stdcall Move_To(CoordStruct to);                             // 0x0049FE30
+#endif
     virtual void __stdcall Stop_Moving();                                       // 0x0049FEF0
     virtual void __stdcall Do_Turn(UnknownFacingDir dir);                       // 0x004A0FD0
     virtual void __stdcall Unlimbo();                                           // 0x004A05C0
@@ -78,6 +82,8 @@ public:
     Point2D Smooth_Turn(Point2D const &offset, int &facing);                    // 0x004A4740 (a track point and facing mirrored by the track's flags, from the head-to coordinate)
     bool unknown_4a47c0(Cell cell);                                             // 0x004A47C0 (whether the unit may enter a cell, 0x0055ACD0; unreferenced)
     bool unknown_4a4850();                                                      // 0x004A4850 (with no queued 0x478 entries slot 260(0, 1) and false, else 0x004CD9B0 and slot 261(false, true); unreferenced)
+    bool While_Moving(bool just_started);                                       // 0x004A1000 (TibSun While_Moving; Ship 0x00676F60 is its twin)
+    bool Start_Of_Move(bool &stop_processing, bool retry, bool force_straight);  // 0x004A2670 (TibSun Start_Of_Move; ret 0xC)
 
     int unknown_1c;                     // +0x1C ramp
     int unknown_20;                     // +0x20 ramp

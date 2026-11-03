@@ -1442,3 +1442,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout638 (2026-11-03, closed; 0 B; map generator PARKED, three /Ob2 budget plateaus; resume in build/class-work/Scout638/NOTES.md)
 - Grow_Water_Region 0x5820B0: 84.09 (keep/gw_m3_8409.cpp; member Get_Cell_Data helpers put operator+ and ??_G out of line; the frontier's nested Get_Cell_Data is still refused). Place_Tile_Patch 0x586340: 51.10 (overlay keep/hI, TibSun bool Insert). Generate_Rural_Roads 0x58A1B0: 50.51 (needs pop-2900's two Link ctors 0x58B140/0x58B160 via allow_split, OWNER: approved if a round goes exact; the event.hpp QueueClass ctor overlay needs a fragile probe).
 - Next for this unit: measure the IL sizes of the shared helpers (UnknownVeinHeap Insert, Get_Cell_Data, the Link ctors) with Scout626 mu.py before drafting more shapes.
+
+## Scout639 (2026-11-03, closed; DriveLocomotionClass::Process 0x4A05F0 1,483 B landing)
+- The Drive unit now uses Ship's COM Move_To (RA2_SHIP_MOVE_TO_VALUE, RA2_SHIP_CELL_ACCESSORS). Drive Move_To 0x49FE30 takes COMCoordStruct and stays exact.
+- MapClass Zone_Reset 0x54EBD0: 81.49, shape 99.18 (w/keep/zone_reset_8149.cpp). The real body is 1,646 B (pass 5's 737 B is truncated). It returns bestzone, so it needs an R spec `...QAEXXZ` -> `...QAEHXZ` first. Register and slot pairing are left.
+- Drive Draw_Matrix 0x4A0050: 83.48 (Ship twin plateau). Fly Nearing_Target 0x4BE720: not drafted (IFlyControl held pointer, out-of-line query 0x4BFC20). 0x473F20 is RA2-only.
