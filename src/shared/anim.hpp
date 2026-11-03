@@ -112,6 +112,7 @@ public:
     void Attach_To(ObjectClass *object);                                // 0x00422540 (name hypothesis)
     void unknown_func_4226d0();                                         // 0x004226D0 (start)
     CoordStruct unknown_func_4237b0();                                  // 0x004237B0 (a place to come down)
+    void Flaming_Guy_AI();                                              // 0x00423120 (TibSun anim.cpp Flaming_Guy_AI)
     bool unknown_func_423b90(Cell const &cell);                   // 0x00423B90 (can it land in cell?)
     void unknown_func_4228f0();                                         // 0x004228F0 (scorch / crater)
     void unknown_func_422f50();                                         // 0x00422F50 (vein damage)
