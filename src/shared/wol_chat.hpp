@@ -78,7 +78,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall unknown_slot15(char const *text) = 0;
     virtual void __stdcall unknown_slot16() = 0;
     virtual void __stdcall unknown_slot17() = 0;
-    virtual void __stdcall unknown_slot18() = 0;
+    virtual HRESULT __stdcall RequestGameStart(User *users) = 0; // SDK IChat slot18; original73D39F
     virtual void __stdcall unknown_slot19() = 0;
     virtual void __stdcall unknown_slot20() = 0;
     virtual HRESULT __stdcall unknown_slot21(User *user) = 0;
