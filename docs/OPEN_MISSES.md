@@ -1361,3 +1361,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout619 (2026-11-03, closed; 0 B; UnitClass; resume in build/class-work/Scout619/NOTES.md)
 - Read_INI 0x706AE0: parked at 99.72 (every health-local form gives the same fild/fimul order; Class_Of and Techno_Type_Class are virtual in RA2). Draw_It 0x700E70: parked at 87.96 (frame map confirms the radians-slot reuse). Plan_Route 0x707F60: 88.17 (w/pd.cpp, overlay hq/shared; the parameter is the reassigned destination). Mission_Harvest needs the comip model.
 - 2026-11-03 ~13:00Z: Wine compiles hung again (CL.EXE idle in state S; disk fine). A plain `wineserver -k` does not reach them: the project uses its own prefixes (private/tools/wine-prefix, -interactive, -w3; set in private/original-target.*.json). The fix is `WINEPREFIX=<prefix> wineserver -k` for each. Lanes cannot kill processes (auto-mode denies it), so the user runs it.
+
+## Scout621 (2026-11-03, closed; 0 B; UnitClass PARKED after three zero-byte lanes; resume in build/class-work/Scout621/NOTES.md)
+- Plan_Route 0x707F60: 88.26 (w/pj.cpp, overlay hq). w/pk.cpp reuses `last` (as TibSun reuses tospot) and gets all 30 Unknown_005502E0 result slots right (loose 97.11, main 85.97); left is which duplicated legs.Add tails VC6 merges.
+- Draw_Shape slot 311 0x7005B0 (2,236 B): 89.36 (w/sg.cpp; one-expression Rotate_Z fixes the 0x118 frame; w/sl.cpp 89.29 uses the 0x79D090 extern). Six small differences left. Mission_Unload slot 137 0x701580: 79.88 (overlay ov1). Can_Enter_Cell 0x703040: not started.
+- Wine note: a 180 s diff_candidate timeout can be a slow compile, not a hang (one took 155 s while the host was loaded).
