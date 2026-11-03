@@ -475,6 +475,9 @@ public:
     virtual ~VersionClass() {}
     // Resets the version clipping range (0x00713160; Red Alert's Init_Clipping).
     void Init_Clipping_00713160();
+#ifndef RA2_VERSION_CLASS_MEMBERS
+    unsigned long Version_Number(); // Existing original 00712B50; used by host initialization.
+#endif
     // The version both sides can play for a peer's range: 0 when the peer is too old, -1
     // when this game is (0x00713170; Red Alert's VersionClass::Clip_Version).
     int Clip_Version_00713170(unsigned long min, unsigned long max);

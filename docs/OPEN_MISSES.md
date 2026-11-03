@@ -1354,3 +1354,10 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout617 (2026-11-03, closed; 0 B; UnitClass population-3202; resume in build/class-work/Scout617/LIST.md, NOTES.md)
 - Read_INI 0x706AE0 (1,147 B): 99.72 (w/ri5.cpp). Its local DVC<int> is ctor plus an inlined TibSun Clear(); TibSun's `CoordStruct coord;` site has to go to keep the VectorClass ctor 0x46D020 out of line. One instruction is left: the unit->Type load comes before `fild strength`.
 - Draw_It slot 67 0x700E70: 87.96 (frame 0x48 vs 0x40). What_Action slot 28 0x703BD0: 63.42. Desired_Load_Dir 0x704730: 77.48. Plan_Route 0x707F60 (6,185 B): 87.44 with a small hp/shared overlay. Not attempted: Mission_Harvest 0x7025A0 (80.08), Draw_Shape 0x7005B0, Mission_Unload 0x701580, Can_Enter_Cell 0x703040, Draw_Voxel 0x6FF690, Tunnel_AI 0x6FAA30. Assign_Destination 0x7053F0 needs the comip model.
+
+## Scout618 (2026-11-03, closed; 907 B landed: DisplayClass Active_Click 0x49E870, Passes_Shroud_Check 0x499390; population-3612)
+- Passes_Proximity_Check 0x4991D0: 69.14 (a loop register tie). Mouse_Left_Release 0x49BB20: 79.53. Not started: Set_Cursor_Pos 0x4994D0, Calculated_Cell 0x49A700, Mouse_Left_Up 0x49B0F0, Read_INI 0x49CFD0. 0x49DC80 is a bogus row inside 0x49DB60. Scout620 continues.
+
+## Scout619 (2026-11-03, closed; 0 B; UnitClass; resume in build/class-work/Scout619/NOTES.md)
+- Read_INI 0x706AE0: parked at 99.72 (every health-local form gives the same fild/fimul order; Class_Of and Techno_Type_Class are virtual in RA2). Draw_It 0x700E70: parked at 87.96 (frame map confirms the radians-slot reuse). Plan_Route 0x707F60: 88.17 (w/pd.cpp, overlay hq/shared; the parameter is the reassigned destination). Mission_Harvest needs the comip model.
+- 2026-11-03 ~13:00Z: Wine compiles hung again (CL.EXE idle in state S; disk fine). A plain `wineserver -k` does not reach them: the project uses its own prefixes (private/tools/wine-prefix, -interactive, -w3; set in private/original-target.*.json). The fix is `WINEPREFIX=<prefix> wineserver -k` for each. Lanes cannot kill processes (auto-mode denies it), so the user runs it.
