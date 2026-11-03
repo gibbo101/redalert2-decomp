@@ -9,9 +9,11 @@
 // @ref ?Wave_Sine_Table_00af91e4@@3PAFA=00af91e4
 // @ref ?Wave_Intensity_Table_00af95d8@@3PAHA=00af95d8
 
-// Red Alert's JSHELL.H min (a template, unlike the MIN macro; the green
-// clamp needs its by-value temporary).
-template <class T> inline T min(T a, T b) { return (a < b) ? a : b; }
+// Westwood's always.h MIN (TibSun uses it for both clamps).
+#ifndef MIN
+#define MIN(a, b) (((a) < (b)) ? (a) : (b))
+#endif
+
 void WaveClass::Brighten_Pixel_007219c0(int x, int offset, int row, unsigned short *pixel)
 {
     int radius = Wave_Distance_Table_00af9620[row][abs(x - unknown_b8.X - offset)];
@@ -19,12 +21,12 @@ void WaveClass::Brighten_Pixel_007219c0(int x, int offset, int row, unsigned sho
     unsigned short color = pixel[PixelOffsets_1d0[amplitude]];
     int mult = Wave_Intensity_Table_00af95d8[amplitude];
 
-    RGBClass rgb = Unpack_Hicolor_Pixel(color);
+    RGBClass rgb = Deconstruct_Hicolor_Pixel(color);
     int red = rgb.Red;
     int green = rgb.Green;
     int blue = rgb.Blue;
     green += ((green * mult) >> 8);
     blue += ((blue * mult) >> 8);
 
-    *pixel = Build_Hicolor_Pixel(red, min(255, green), min(255, blue));
+    *pixel = Build_Hicolor_Pixel(red, MIN(255, green), MIN(255, blue));
 }

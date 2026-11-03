@@ -67,6 +67,7 @@ public:
     virtual bool unknown_slot52();                                  // 0x007224D0
     virtual bool unknown_slot53(CoordStruct const *coord, int dir);              // 0x00722410
     void Brighten_Pixel_007219c0(int x, int offset, int row, unsigned short *pixel); // 0x007219C0
+    void Set_Laser_Pixel_00721b00(unsigned short *pixel, int mult) const; // 0x00721B00 (TibSun Set_Laser_Pixel; inlined into 0x00722CB0)
     void unknown_func_722040(Cell const &cell);                         // 0x00722040 (adds a cell to Cells once)
     void unknown_func_721cc0();                                        // 0x00721CC0 (neighbour offsets from the surface stride)
     void Damage_Cell_00721eb0(CoordStruct const &coord);                // 0x00721EB0

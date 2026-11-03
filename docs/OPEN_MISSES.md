@@ -1425,3 +1425,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout634 (2026-11-03, closed; 0 B; Coord-model rows PARKED after Scout632/634)
 - Verdict: Coord (`class Coord : public CoordStruct` with base-copy conversions) belongs in opt-in selection_coord.hpp (overlay Scout632 hA). Appending it to coord.hpp flips Print_CRCs (+0x638, +0x9A8) and Pick_Lobby (+0x2AA) through the declaration counter. coord.hpp's UnknownCoord434820 (20 users) is the same class with a member-wise conversion; merging them needs a full build.
 - Draw_Pre_Render 0x6C3B30: 95.68 (w/u3.cpp with `CoordStruct const &lepton = ...; ::Coord dim = lepton;` is one natural late free site short; u3i 95.55). BuildingLight Draw_It 65.85 and Hover Process 62.05: the model gives no sites there (derived-to-base is not a site). Fire_At 99.81 with ::Coord replacing the file-local OffsetCoord.
+
+## Scout636 (2026-11-03, closed; Wave Set_Laser_Pixel 0x721B00 240 B landing)
+- Stale entries: Init_Theater 0x519E70 and 0x516E70 were accepted in NearMiss392 r1 (a9c348882), Terrain slot 63 0x6E4430 in Scout522 r3 (697365b19). Ignore their older miss lines.
+- Allocate_Surfaces 0x519500: 71.67, parked. The DSurface ctor 0x4AA4A0's third parameter is really bool (compared as a byte), so don't build the int rename. Wave Load 0x7221D0: 79.67 (TibSun layout; about 3 natural sites short after the NoInit ctor). Brighten_Pixel's file-local min can't share a unit with always.hpp, so the Wave unit uses a guarded MIN macro.
