@@ -1341,3 +1341,16 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Under the ComPtr299 comip model, Aircraft 0x416420 is exact via the position accessor (w/a1.cpp, HDR=build/class-work/ComPtr299/model). Comip regressions left: FootClass::Load 0x4C9D10 and Is_JumpJet 0x508D00 (true body 194 B, 78.57). Once both are exact the model can land and unblock JumpJet_To_Walk, Assign_Destination and SuperClass::Place. Scout616 holds it.
 - Hover Process k1/k2/k3 (accessor and Contact wrapper candidates) are unscored; the k1 compile hung while the disk was full.
 - 2026-11-03 ~05:00Z: the Mac main drive filled and wedged Wine; the host was rebooted. r99 was re-landed from a clean tree after a stale runner lock was cleared. The monitor now alerts below 30 GiB free.
+
+## Scout615 (2026-11-03, closed; 3,526 B landed: TechnoClass::AI 0x6C74C0 from TibSun techno.cpp)
+- TechnoClass::AI needed: techno.hpp unknown_376 as unsigned char; FlasherClass::Process 0x4BBF00 declared and bound; @refs for every vtable slot of a local DynamicVectorClass<ParticleSystemTypeClass const *> and its base (otherwise "Unsupported allocatable data section .rdata"); a file-local Is_Foot helper at two of the three sites.
+- NoInit ctor 0x6C1F10: 67.89 (w/ni2.cpp). The original calls the three VectorClass base ctors out of line; about 3-4 natural sites after the DVC members are missing. Draw_Post_Render 0x6C2C40: not attempted (codex3 36.14).
+
+## Scout616 (2026-11-03, closed; 0 B; comip model PARKED after three zero-byte lanes; resume in build/class-work/Scout616/NOTES.md)
+- Model v1 rebased on HEAD (model/shared: com_ptr.hpp with the core renamed Query_From, the accepted 0x6591C0 name; locomotion.hpp checked operator->; UnknownFlyPtr a typedef; overlays in unit/). com_ptr.hpp now reaches 53 populations; 47 are object-identical under the model.
+- Six still differ: FootClass::Load 0x4C9D10 85.41 (3 sites), Is_JumpJet 0x508D00 78.57 (1-3), UnitClass Per_Cell_Process 0x6FE610 85.65 (exactly 2 after the persist ctor), BuildingClass slot 141 0x447260 81.63 (budget already lower before the ctor), Fly Process_Landing 0x4BDFB0 64.78 (needs more budget), Print_CRCs 0x62A360 (one load; type-count sensitivity).
+- When the model lands, 0x454BF0 and 0x454C70 (out-of-line Query_From) become new rows. Resume order: Per_Cell_Process, 0x508D00, Foot Load, Building slot 141, Fly; then popcmp.sh and check_plans over the 13 changed populations.
+
+## Scout617 (2026-11-03, closed; 0 B; UnitClass population-3202; resume in build/class-work/Scout617/LIST.md, NOTES.md)
+- Read_INI 0x706AE0 (1,147 B): 99.72 (w/ri5.cpp). Its local DVC<int> is ctor plus an inlined TibSun Clear(); TibSun's `CoordStruct coord;` site has to go to keep the VectorClass ctor 0x46D020 out of line. One instruction is left: the unit->Type load comes before `fild strength`.
+- Draw_It slot 67 0x700E70: 87.96 (frame 0x48 vs 0x40). What_Action slot 28 0x703BD0: 63.42. Desired_Load_Dir 0x704730: 77.48. Plan_Route 0x707F60 (6,185 B): 87.44 with a small hp/shared overlay. Not attempted: Mission_Harvest 0x7025A0 (80.08), Draw_Shape 0x7005B0, Mission_Unload 0x701580, Can_Enter_Cell 0x703040, Draw_Voxel 0x6FF690, Tunnel_AI 0x6FAA30. Assign_Destination 0x7053F0 needs the comip model.
