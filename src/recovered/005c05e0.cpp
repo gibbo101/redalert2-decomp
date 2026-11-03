@@ -1,21 +1,4 @@
-// 0x005c05e0: function not yet identified
-//
-// Body: 1 bytes (frozen inventory bound).
-// Referenced from 1 site (data).
-// Ghidra prototype: void FUN_005c05e0(void)
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
-
-namespace seed_005c05e0 {
-
-void  FUN_005c05e0(void)
-{
-    return;
-}
-
-}  // namespace seed_005c05e0
+// Send_Join_Queries game_timer exit thunk (0x005C05E0)
+// Compiler-emitted atexit destructor of the function-local CDTimerClass<SystemTimerClass> game_timer in
+// netdlg2/Unknown_005c01d0.cpp; no source of its own.
+// @symbol _$E29

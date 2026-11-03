@@ -6,7 +6,6 @@
 // @ref ??_C@_0BC@CGNO@TXT_THATGUYS_GAME?$AA@=007e6a14
 // @ref ??_C@_0BD@ELLL@D?3?2Ra2?2netdlg2?4cpp?$AA@=007e69c8
 // @ref ??_C@_0BK@HKKP@TXT_THATGUYS_GAME_BRACKET?$AA@=007e69f8
-// @ref ?Unknown_005c01d0@@YIXHHHH@Z=005c01d0
 // @ref ?unknown_game_index_a71e90@@3HA=00a71e90
 // @ref ?unknown_games_a3fa64@@3V?$DynamicVectorClass@PAUNodeNameType@@@@A=00a3fa64
 
