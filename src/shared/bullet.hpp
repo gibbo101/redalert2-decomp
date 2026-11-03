@@ -35,6 +35,7 @@
 #include "shared/object.hpp"
 #include "shared/cd_timer.hpp"
 #include "shared/win32_api.hpp"
+#include "shared/facing.hpp"
 
 class BulletTypeClass;
 class CellClass;
@@ -71,21 +72,94 @@ public:
     int unknown_24;                             // +0x24
 };
 
+double __cdecl unknown_math_4ba600(double y, double x);  // 0x004BA600 (atan2-like; hypothesis)
+// Fast_Sin / Fast_Cos (shared/fast_math.hpp) declared returning double, as
+// shared/unknown_geometry.hpp declares their neighbours (BulletClass 0x00463C50).
+double __cdecl unknown_sin_4ba480(double angle);    // 0x004BA480
+double __cdecl unknown_cos_4ba4d0(double angle);    // 0x004BA4D0 (two names with fast_math.hpp's float Fast_Cos: carried)
+double __cdecl unknown_sqrt_4ba410(double value);   // 0x004BA410 (as shared/unknown_geometry.hpp)
+extern double const unknown_double_79b610;          // 0x0079B610 (0.0; as shared/techno.hpp)
+
 // The horizontal part of a velocity: built first (Y evaluated before X) and
 // copied whole into a BulletVelocity's X and Y (BulletClass 0x00462110 and
 // 0x00463C50; hypothesis: a two-dimensional vector type).
+// Westwood's TVelocity2D<double> (TibSun velocity.h): names and members follow it.
 struct BulletVelocityXY {
     BulletVelocityXY() {}
     BulletVelocityXY(double x, double y) : X(x), Y(y) {}
+    // The speed (kept copy 0x0041B750).
+    double Speed() const
+    {
+        double y = Y;
+        double x = X;
+        return unknown_sqrt_4ba410(x * x + y * y);
+    }
+    // A zero vector becomes 100 along X, so it has a direction (kept copy 0x0041B860).
+    void Nonzero_Check() { if (X == unknown_double_79b610 && Y == unknown_double_79b610) X = 100.0; }
     double X;
     double Y;
 };
 
-// A velocity vector of three doubles.
+// A velocity vector of three doubles (Westwood's TVelocity3D<double>).
 struct BulletVelocity : public BulletVelocityXY {
+    BulletVelocity() {}
+    BulletVelocity(BulletVelocity const &velocity) : BulletVelocityXY(velocity), Z(velocity.Z) {}
+    BulletVelocity(double x, double y, double z) : BulletVelocityXY(x, y), Z(z) {}
     BulletVelocity &operator+=(BulletVelocity const &other); // 0x004642A0
     // The X and Y members as one horizontal vector.
     BulletVelocityXY &XY() { return *this; }
+    BulletVelocityXY const &XY() const { return *this; }
+
+    // The horizontal speed (kept copy 0x0041B830) and the speed (kept copy 0x0041B7C0).
+    double Horizontal_Speed() const
+    {
+        double y = Y;
+        double x = X;
+        return unknown_sqrt_4ba410(x * x + y * y);
+    }
+    double Speed() const
+    {
+        return unknown_sqrt_4ba410(X * X + Y * Y + Z * Z);
+    }
+    // A zero vector becomes 100 along X (kept copy 0x0041B7F0).
+    void Nonzero_Check() { if (X == unknown_double_79b610 && Y == unknown_double_79b610 && Z == unknown_double_79b610) X = 100.0; }
+    // The pitch: the angle above the horizontal plane (kept copy 0x0041B6E0).
+    UnknownFacingDir Get_Pitch() const
+    {
+        return UnknownFacingDir((unsigned short)((unknown_math_4ba600(Z, XY().Speed()) - 1.5707963267948966) * -10430.060040584269));
+    }
+    // Turns the horizontal part to a heading, keeping its speed.
+    void Set_Yaw(UnknownFacingDir yaw)
+    {
+        BulletVelocityXY::Nonzero_Check();
+        double speed = Horizontal_Speed();
+        double angle = ((short)yaw.Raw - 0x3FFF) * -9.587672516830327e-05;
+        X = unknown_cos_4ba4d0(angle) * speed;
+        Y = -(unknown_sin_4ba480(angle) * speed);
+    }
+    // Tilts the vector to a pitch, keeping its speed and heading.
+    void Set_Pitch(UnknownFacingDir pitch)
+    {
+        double current = ((short)Get_Pitch().Raw - 0x3FFF) * -9.587672516830327e-05;
+        double speed = Speed();
+        if (current != unknown_double_79b610) {
+            X /= unknown_cos_4ba4d0(current);
+            Y /= unknown_cos_4ba4d0(current);
+        }
+        double angle = ((short)pitch.Raw - 0x3FFF) * -9.587672516830327e-05;
+        X = unknown_cos_4ba4d0(angle) * X;
+        Y = unknown_cos_4ba4d0(angle) * Y;
+        Z = unknown_sin_4ba480(angle) * speed;
+    }
+    // Scales the vector to a speed, keeping its direction.
+    void Set_Speed(double speed)
+    {
+        Nonzero_Check();
+        double ratio = speed / Speed();
+        X *= ratio;
+        Y *= ratio;
+        Z *= ratio;
+    }
 
     // X/Y are the planar base at +0/+8; Z remains at +0x10.
     double Z;       // +0x10
@@ -131,11 +205,6 @@ inline Cell Coord_Cell_Of(CoordStruct const &coord)
     return Cell(coord.X / 256, coord.Y / 256);
 }
 
-double __cdecl unknown_math_4ba600(double y, double x);  // 0x004BA600 (atan2-like; hypothesis)
-// Fast_Sin / Fast_Cos (shared/fast_math.hpp) declared returning double, as
-// shared/unknown_geometry.hpp declares their neighbours (BulletClass 0x00463C50).
-double __cdecl unknown_sin_4ba480(double angle);    // 0x004BA480
-double __cdecl unknown_cos_4ba4d0(double angle);    // 0x004BA4D0 (two names with fast_math.hpp's float Fast_Cos: carried)
 // A 16-bit direction in a 4-byte value (hypothesis: Westwood's DirStruct).
 struct UnknownDirStruct {
     UnknownDirStruct(unsigned short raw) : Raw(raw) {}

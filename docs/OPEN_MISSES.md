@@ -1397,3 +1397,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout628 (2026-11-03, closed; 461 B landed: Tactical Get_Selectable_Object 0x6AA990)
 - Tactical Pixel_To_Cell 0x6A6BD0: 42.06. Our 0x6A27A0 is a free callee (40 IL units or less) that the original calls out of line twice, so the original 27A0 is larger or not an /Ob2 site. Next: measure with Scout626 mu.py. Draw_Wall_Placement 0x6A6290: 78.49 (0x6A2740 is a Point2D-by-value ctor; it needs Point2D::operator-= 0x6AC850 in the plan). Draw_Fence_Placement 0x6A5D70: 48.79.
 - BulletClass Shrapnel 0x462C50 needs a merged BulletVelocity API at HEAD (10 accepted users); Scout629 is building it.
+
+## Scout627 (2026-11-03, study; landed Pick_Lobby hardening 9c4945b18, 0 B)
+- The PCX_CACHE_DECLARE_LOADS guard now protects Print_CRCs, not 0x73FEE0. Removing it breaks Print_CRCs at +0x9A9, and 12 natural re-rolls failed. RA2_ABSTRACT_FLAGS_UNNAMED is no longer defined anywhere; the `#else` branch in abstract_class.hpp can go.
+- Accepted UnknownPathEstimator 0x428370 scores 99.06 in diff_candidate. Generate_Rural/Urban_Buildings 0x589AC0/0x587CF0 are no longer accepted rows (check).
+- 2026-11-03: Time Machine local snapshots keep deleted build output on disk, so freed space doesn't return. Ask the user to thin snapshots and exclude build/ (and optionally private/).
