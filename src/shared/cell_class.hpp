@@ -264,6 +264,13 @@ public:
     // as this header is in Refresh_Wonline_Players 0x0073FEE0's closure).
     int Clear_Icon(int type, int count) const;
 #endif
+#ifdef CELL_DECLARE_DRAW_IT
+    // The cell's tile and smudge at the screen point, unless `objects` (0x00475680; TibSun Draw_It).
+    void Draw_It(Point2D const &point, Rect const &clip, bool objects);
+    // The cell tile's cast shadow (0x004755D0; TibSun Draw_Shadow_Cast).
+    void Draw_Shadow_Cast(Point2D const &point, Rect const &clip);
+    inline void Fetch_Icon(class IsometricTileTypeClass *&ittype, int &subtile, int *icon, bool doicon) const;
+#endif
 #ifdef CELL_DECLARE_CELL_COLOR
     // The cell's low and high radar colours (0x004712C0; TibSun Cell_Color; guarded: this header is
     // in Refresh_Wonline_Players 0x0073FEE0's closure).
