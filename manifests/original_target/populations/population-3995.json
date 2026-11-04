@@ -4,8 +4,8 @@
     "id": "population-3995",
     "inventory_sha256": "1b60064efe080571b00118dbef27ca34ce77184735958c8f48420051c61efb19",
     "gaps_sha256": "66a71b29e31b397415807c6072a36493d67fb5eee10e5db1ede87b92da76a0ba",
-    "historical_population_sha256": "c5eeca0cb6c47fc3213516dfe58c23b5efa294ccf2dfa81a8b4f1973d040e5c9",
-    "historical_acceptance_sha256": "3ef47823b94705907bf728d0adc0fca8aa43ce1ac54f563cf682ab34012d1830"
+    "historical_population_sha256": "2f4322738088b037a2147cf9da5d1b851fe0d9dbee0f4032dce37262444dffd7",
+    "historical_acceptance_sha256": "86cf32baf10f78bed74d219d5d9433657f93f0a39db3ef22cb96cfebfe4d3791"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -7042,7 +7042,7 @@
     "__real@8@3ff7a3d70ac000000000": 8048656,
     "__real@4@3ffda0d97c0000000000": 8048652,
     "?Set_Cursor_Shape@DisplayClass@@QAEXPBVCell@@@Z": 4821104,
-    "?Unknown_0055C2C0@MapClass@@QAEEHH@Z": 5620416,
+    "?Unknown_0055C2C0@MapClass@@QAE_NHH@Z": 5620416,
     "??0UnknownMapGenerationCell@@QAE@XZ": 5691072,
     "??0MapRegionClass@@QAE@VCell@@@Z": 5691504,
     "?Count_Grid_Cells_0056dbd0@MapRegionClass@@QAEXXZ": 5692368,
@@ -50987,7 +50987,7 @@
         {
           "offset": 2403,
           "kind": 20,
-          "symbol": "?Unknown_0055C2C0@MapClass@@QAEEHH@Z",
+          "symbol": "?Unknown_0055C2C0@MapClass@@QAE_NHH@Z",
           "target": 5620416,
           "addend": 0,
           "resolved": 4294826073
@@ -58754,7 +58754,7 @@
         {
           "offset": 2278,
           "kind": 20,
-          "symbol": "?Place_Waterfall_0057ff20@UnknownMapGenerator@@QAEXHABVCell@@0HAA_NAAN2@Z",
+          "symbol": "?Place_Waterfall_0057ff20@UnknownMapGenerator@@QAE_NHABVCell@@0HAA_NAAN2@Z",
           "target": 5766944,
           "addend": 0,
           "resolved": 2374
@@ -59050,7 +59050,7 @@
         {
           "offset": 3409,
           "kind": 20,
-          "symbol": "?Unknown_0055C2C0@MapClass@@QAEEHH@Z",
+          "symbol": "?Unknown_0055C2C0@MapClass@@QAE_NHH@Z",
           "target": 5620416,
           "addend": 0,
           "resolved": 4294822011

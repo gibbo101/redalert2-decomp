@@ -4,8 +4,8 @@
     "id": "population-3417",
     "inventory_sha256": "f8e791c98ff58386e99c7939c382f47fe05a434648217858e79f38fa17823038",
     "gaps_sha256": "2065172265532754676ad1fa7214b0fda33ccb735ac88fcc91ff22c384f2f187",
-    "historical_population_sha256": "4c4ddda1fb7bb3ad5ae423aa09a7fd673e2880b23f0cd03f921b995938127928",
-    "historical_acceptance_sha256": "725116cc1215afa103295c89df733cdb32f18181caa2bbe8a862de15f2e06554"
+    "historical_population_sha256": "b901cd53ab3c1f505636950ca6b1d265c4035445de61a3d5bbe83698c76a05f8",
+    "historical_acceptance_sha256": "5bc6989478b47f6aecfcffbbdc1569fffe79573848fe88c23f07e3b39739f1fc"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -7949,7 +7949,7 @@
     "?Unknown_005689D0@MapClass@@QAE?AVCell@@ABV2@H@Z": 5671376,
     "?Unknown_0055BD70@MapClass@@QAEIPAVCellClass@@@Z": 5619056,
     "?Set_Cursor_Shape@DisplayClass@@QAEXPBVCell@@@Z": 4821104,
-    "?Unknown_0055C2C0@MapClass@@QAEEHH@Z": 5620416,
+    "?Unknown_0055C2C0@MapClass@@QAE_NHH@Z": 5620416,
     "?Unknown_0055ACD0@MapClass@@QAE_NPAVObjectClass@@ABVCell@@@Z": 5614800,
     "?Unknown_00565EB0@MapClass@@QAE_NAAVCellClass@@HPAV?$DynamicVectorClass@G@@H@Z": 5660336,
     "?Unknown_00564F70@MapClass@@QAE?AVCell@@PAVCellClass@@_N@Z": 5656432,

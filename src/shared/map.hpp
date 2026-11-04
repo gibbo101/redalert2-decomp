@@ -182,7 +182,7 @@ public:
     // 0x00549C50 with its last argument true; the first two arguments are not read (0x00549C20; no callers).
     void Unknown_00549C20(int arg1, int arg2, CoordStruct const &coord, int sight, HouseClass *house, bool arg6, bool arg7, bool arg8, bool arg9);
     unsigned int Unknown_0055BD70(CellClass *cell); // physical full-EAX mask/RET4; Map receiver/source intent hypotheses
-    unsigned char Unknown_0055C2C0(int first, int second); // physical AL-only/RET8; signedness/source intent hypotheses
+    bool Unknown_0055C2C0(int first, int second); // physical AL-only/RET8; signedness/source intent hypotheses
     void Unknown_00559F10();                                              // 0x00559F10
     void Unknown_0054AB70(Cell const &cell, ObjectClass *object);   // 0x0054AB70 (FootClass slot 71, cases 1 and 3; hypothesis: occupation)
     void Unknown_0054AF70(Cell const &cell, ObjectClass *object);   // 0x0054AF70 (FootClass slot 71, case 0)

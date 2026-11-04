@@ -73,7 +73,7 @@ public:
     bool unknown_0057ecf0(Cell const &point,double value,bool flag); //actualcallee, sourceintentqualified
     bool unknown_0057e100(Cell const &point); //actualcallee, sourceintentqualified
     bool Grow_Water_Region_005820b0(int region,float spread,Rect const &bounds,Cell const &seed,bool flag);
-    void Place_Waterfall_0057ff20(int region,Cell const &first,Cell const &second,int type,bool &placed,double &x,double &y);
+    bool Place_Waterfall_0057ff20(int region,Cell const &first,Cell const &second,int type,bool &placed,double &x,double &y);
     int Compute_Water_Cell_Count_0057ec20() const; //name/constness hypotheses
     void Remap_Region_Tiles_0057e060(int source_index,int target_index,int level,int tile);
     MapSeedClass SeedOptions;

@@ -95,7 +95,7 @@ public:
     CellClass *Unknown_0055A910();                                              // 0x0055A910 (the next cell of the local-map walk, or null)
     void Unknown_00549C50(CoordStruct const &coord, int sight, HouseClass *house, bool arg4, bool arg5, bool arg6, bool arg7, bool arg8);   // 0x00549C50 (reveals around coord; TechnoClass slot 70)
     unsigned int Unknown_0055BD70(CellClass *cell); // physical full-EAX mask/RET4; Map receiver/source intent hypotheses
-    unsigned char Unknown_0055C2C0(int first, int second); // physical AL-only/RET8; signedness/source intent hypotheses
+    bool Unknown_0055C2C0(int first, int second); // physical AL-only/RET8; signedness/source intent hypotheses
     void Unknown_00559F10();                                              // 0x00559F10
     void Unknown_0055A120();                                              // 0x0055A120 (shared/map.hpp)
     void Unknown_0055A1F0();                                              // 0x0055A1F0 (shared/map.hpp)

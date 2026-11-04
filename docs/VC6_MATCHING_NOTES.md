@@ -1259,3 +1259,16 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - diff_candidate scores unbound string literals as fine but acceptance refuses their .data: rows with strings need the @ref, and /FAs gives the mangled name.
 - Constant-facing tie: the first two distinct facings give `add dx,[global]`, the rest `add dx,[esp]`; with three distinct the set decides, and sets containing 0 or 7 stay all global.
 - `T result(rect1)` is not the same as `T result = rect1`. A false epilog copy whose next statement is adjacent is removed; one whose next statement is far away stays.
+
+## Case order and spills (Scout675)
+- Switch source order follows TibSun (E, W, S, N on Waterfall), not numeric case order: reordering alone took a draft from 22.55 to 50.47.
+- `mov byte [eax],0` beside a zero cached in ebp is forced, because ebp has no byte form; it is not a separate statement.
+- A spilled pseudo shows as defs `lea ebx; mov [m],ebx` and reads `mov eax,[m]; add edi,eax`. If the original spills a pseudo ours keeps in registers, look for a statement diff first: Seed_River's equivalent came right only after its statements did.
+- Arms must start with a differing statement, or identical X/Y stores hoist above the `if`. `for (int side = 2; side != 0; side--)` gives the `jmp` over the loop-top `xor`.
+
+## Dead slots and statics (Scout676)
+- `Cell x = Cell(0,0)`, unlike `Cell x(0,0)`, leaves a dead temp slot, which made the 0x4F03C0 frame size exact.
+- Early Adjacent_Cell sites refuse op+ through R//N while late sites inline it, so in-function site order alone explains mixed call and inline sites.
+- A function-local Cell table with an empty atexit thunk implies an element type with an empty dtor, built from Cell temps; the frame carries one temp per element.
+- An inline helper taking double parameters fixes int-to-double evaluation order that an int-parameter helper gets wrong. A reused byte slot can be one bool reassigned.
+- Gap: frame order follows sharing groups, not single-variable reference counts. The Study42 sort rule did not predict the 0x4F03C0 layout.
