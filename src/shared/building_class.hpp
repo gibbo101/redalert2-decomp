@@ -273,7 +273,11 @@ public:
     void unknown_4397c0();                                            // 0x004397C0 (slot 60 on each of unknown_49c, then clears them)
     void unknown_440140(Cell const *cell, bool arg2);           // 0x00440140 (slot 77, action 1)
     CoordStruct unknown_44ed60(int weapon, bool arg2);                // 0x0044ED60 (the voxel barrel's fire coordinate; slot 43)
+#ifdef RA2_BUILDING_BARREL_MATRIX_VALUE
+    Matrix3D unknown_453900(); // 00453900, hidden result, RET4
+#else
     Matrix3D &unknown_453900(Matrix3D &result); // 00453900: writes/returns48-byte transform output, ABI hypothesis
+#endif
     void Draw_Selection_Overlay_0043b660(Point2D const &point, Rect const &bounds); // 0043B660, observed ret8
     int unknown_43be20();                                             // 0x0043BE20 selects SHP frame from stage/state, health and occupants
     bool unknown_4454b0();                                            // 0x004454B0 (weapons factory guard step; slot 129)

@@ -20,12 +20,11 @@ CoordStruct BuildingClass::unknown_44ed60(int weapon, bool previous)
     else if(burst==1) lateral=-Type->VoxelBarrelOffsetToBarrelEnd.Y;
     else lateral=0;
     Vector3 offset((float)Type->VoxelBarrelOffsetToBarrelEnd.X,(float)lateral,(float)Type->VoxelBarrelOffsetToBarrelEnd.Z);
-    Matrix3D matrix;
-    Vector3 point=unknown_453900(matrix)*offset;
-    CoordStruct delta;
-    delta.X=(int)point.X;
-    delta.Y=(int)-point.Y;
-    delta.Z=(int)point.Z;
+    Vector3 point=unknown_453900()*offset;
+    int x=(int)point.X;
+    int y=(int)-point.Y;
+    int z=(int)point.Z;
+    CoordStruct delta(x,y,z);
     CoordStruct result=unknown_slot42()+delta;
     Point2D pixel(Type->Anims[9].Offset.X,Type->Anims[9].Offset.Y);
     return Add_Pixel_Offset(result,unknown_tactical_83996c->Unknown_006A2900(pixel));

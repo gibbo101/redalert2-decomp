@@ -18,7 +18,7 @@ inline double Barrel_Direction_Angle_00453900(UnknownFacingDir const &direction)
     index-=8;
     return (double)(index*-0.19634954084936207);
 }
-Matrix3D &BuildingClass::unknown_453900(Matrix3D &result)
+Matrix3D BuildingClass::unknown_453900()
 {
     Matrix3D transform;
     transform.Make_Identity();
@@ -37,5 +37,5 @@ Matrix3D &BuildingClass::unknown_453900(Matrix3D &result)
     transform.Scale_X(scale);
     transform.Scale_Y(scale);
     transform.Scale_Z(scale);
-    return result=transform;
+    return transform;
 }

@@ -12,6 +12,9 @@
 struct Vector3 {
     Vector3() {}
     Vector3(float x, float y, float z) : X(x), Y(y), Z(z) {}
+#ifdef RA2_BUILDING_VECTOR_NEGATE
+    Vector3 operator-() const { return Vector3(-X, -Y, -Z); }
+#endif
 
     Vector3 &Set_00437690(float x, float y, float z);
     Vector3 &Scale_004376b0(float factor);

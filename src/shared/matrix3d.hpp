@@ -77,6 +77,9 @@ public:
     void Rotate_Y(float s, float c);                                    // 0x00590920
     void Rotate_Z(float theta);                                         // 0x005909A0
     void Rotate_Z(float s, float c);                                    // 0x00590A40
+#ifdef RA2_BUILDING_TRANSLATION_VALUES
+    Vector3 Get_Translation() const { return Vector3(Row[0][3], Row[1][3], Row[2][3]); }
+#endif
     float Get_X_Translation() const;                                    // 0x00590AC0
     float Get_Y_Translation() const;                                    // 0x00590B10
     float Get_Z_Translation() const;                                    // 0x00590B60
