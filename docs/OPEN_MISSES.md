@@ -1548,3 +1548,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout664 (2026-11-04, closed; 0 B; Map.CPP continuation PARKED after two zero-byte lanes; build/class-work/Scout664/NOTES.md lists what was ruled out)
 - 0x569320 99.49: about 60 variants, plateau. Only a real source-level idea reopens it (a join block that survives tail merge and emits nothing; rotated loops give [14] but the head copies never merge). 0x566340 64.37, shape 98.45 (c_6437.cpp; register-clean, frame slots left; `Cell_Passability` still to move). 0x564290 42.47, 0x563D80 76.89 unchanged.
+
+## Scout665 (2026-11-04, closed; 4,523 B: Build_East_Ramp 0x573040, Build_West_Ramp 0x573D40, Plan_Paved_Road_Junction 0x588560, Plan_Paved_Road 0x588850; drafts build/class-work/Scout665/w/keep/, LIST.md; Scout667 continues)
+- OWNER DECISION: `RA2_POINT_ADD_IN_PLACE`, `Adjacent_Road_Cell` in Junction, and `Rect const &area = rect` in both Plan rows stay: real semantics, no TibSun evidence for the alias. Reopen them when Generate_Urban_Roads shows the caller. Both Plan rows are free `__stdcall` for now, as ECX is not read; the member form stays open until then.
+- South ramp 0x5729F0 97.01 and North ramp 0x573680 97.14, shape 99.90 (one hunk: original `sub ax,[span]; sub ax,[edi]`, ours goes through esi; only rows reading the X field at offset 0). Find_Dirt_Road_Tile 0x58A6E0 96.60 parked (19 more forms flat; 0x5798F0 re-roll unchecked).
+- Untouched: Create_Resources 0x583B80, Seed_Hill_Heights 0x584730, Generate_Vegetation 0x5852C0, Generate_Urban_Roads 0x587330, Connect_Regions_With_Bridge 0x570BC0. 0x58AD90 has no TibSun source. Inventory rows 0x581EE0, 0x579960, 0x585DC0, 0x586B40, 0x57D3A0 are truncated bounds, not real sizes.

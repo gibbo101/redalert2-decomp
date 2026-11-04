@@ -1193,3 +1193,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 ## Cross-jump and callee-saved swaps (Scout664)
 - Reading both coordinates of a const& into named ints before the arithmetic keeps Y in a callee-saved register and can flip a whole-function callee-saved swap (0x566340).
 - In a cross-jump the first copy in layout stays unless a later one falls into the join. Scheduling runs after tail merge. A rotated loop, or a second call at the bottom, adds one frame ref (the copy's lea) without changing the tail. Loop-bottom tests known true fold before tail merge, so the join block stays empty.
+
+## In-place Cell arithmetic (Scout665)
+- `tail += Cell(a, b)` and `bias -= Cell(...)` in place of TibSun's field assigns fix eax/edx choices, the literal `mov word [m],0` and the zero CSE; the unused `Y += 0` keeps the temp live.
+- `short offset = down ? forward : -forward` replaces TibSun's `backward` local. Recomputing `second.Y - first.Y` instead of naming height keeps abs in eax and gives `lea eax,[ecx+1]`.
+- TibSun's int margins are needed on the Plan rows: Rect margins reach shape 100 with the wrong frame order, and int margins also flip the operand tie.
+- Correction to the k-probe note: a referenced local (`Rect const &area = rect`) flipped a `[rect+8]/[rect]` load tie that k probes did not.
