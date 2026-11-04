@@ -1,3 +1,4 @@
+#define RA2_SCENARIO_CLEAR_MAP23
 // Header-static dynamic initializers of the unit at 0x0065B2C0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x0065B2C0-0x0065B4A6); the other

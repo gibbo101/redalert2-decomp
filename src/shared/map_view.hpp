@@ -68,6 +68,9 @@ public:
 #ifndef RA2_SHARED_MAP_HPP
 class MapClass : public GScreenClass {
 public:
+#ifdef RA2_SCENARIO_CLEAR_MAP23
+    virtual void unknown_slot23(); // Existing shared/map.hpp slot23, 005483D0; qualified direct call.
+#endif
     virtual long __stdcall Is_Visible(Cell cell);                         // slot 3 0x00547FA0
     CoordStruct Unknown_00569FB0(CoordStruct const &from, CoordStruct const &to, HouseClass *house); // owner0200Z, observed hidden-result thiscall
     CellClass &operator[](CoordStruct const &coord);                            // 0x00548000
@@ -360,6 +363,9 @@ public:
 #ifndef RA2_SHARED_MOUSE_CLASS_HPP
 class MouseClass : public ScrollClass {
 public:
+#ifdef RA2_SCENARIO_CLEAR_MAP23
+    virtual void Init_Clear(); // Existing shared/mouse_class.hpp slot7, 0059F510.
+#endif
     // The overrides of the pure virtuals above (Map is a complete object).
     virtual void Set_Default_Mouse(int mouse, bool wsmall = false);      // slot 18 0x0059F060
     virtual bool Override_Mouse_Shape(int mouse, bool wsmall = false);   // slot 19 0x0059F250
