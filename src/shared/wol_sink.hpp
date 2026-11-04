@@ -440,6 +440,10 @@ public:
 };
 class WolIntArray {
 public:
+#ifdef RA2_WOL_INT_ARRAY_SET_EMPTY
+    void Set_Empty(); // existing out-of-line00766060
+#endif
+
     WolIntArray() : Count(0), Capacity(0), Items(0) {}
     ~WolIntArray() { Count = 0; operator delete(Items); }
     int Count;

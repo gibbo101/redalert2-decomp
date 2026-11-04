@@ -4,8 +4,8 @@
     "id": "population-3472",
     "inventory_sha256": "5c214e77f25df97a5644fbbc99a08c938cff48c70cd46cdf2a8d27e52e331f3d",
     "gaps_sha256": "3559c3125b49c01bf376ba92128b2bc71cf2b80a8d0d2e9617aca0bab0c67169",
-    "historical_population_sha256": "d4be9fa470ee4da1e234f8882ae1fda1c6fa0acae508320c218170a59c2f5dfb",
-    "historical_acceptance_sha256": "e4a8eb0a49781599c7ae04f8872d7542b03a3c7db03e64bd263b011372a53d4c"
+    "historical_population_sha256": "16def745feb3500762f26c8d6700d33e5df5c6543d9aac654281d04db290affa",
+    "historical_acceptance_sha256": "a0675c337fed992ab152cb2178b9fec8e2f2a350af69e2fa583d0de522647122"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2883,7 +2883,7 @@
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
     "??0WonlineStringDialogControl@@QAE@XZ": 7756448,
     "?get@Cleanup_765e00@@QAEXXZ": 7757312,
-    "?get@Leaf_766060@@QAEXXZ": 7757920,
+    "?Set_Empty@WolIntArray@@QAEXXZ": 7757920,
     "?get@Leaf_766780@@QAEPAXI@Z": 7759744,
     "?get@Leaf_7667a0@@QAEPAXI@Z": 7759776,
     "?get@Leaf_7667c0@@QAEPAXI@Z": 7759808,

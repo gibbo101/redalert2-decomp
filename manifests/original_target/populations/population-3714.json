@@ -4,8 +4,8 @@
     "id": "population-3714",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "cb9c385f1b8a815c5bd939337818b5023b7d69cfa67c24c2110de91df7b778b7",
-    "historical_acceptance_sha256": "899e327620e4440c0b972c62d06acb471e6bb4721774353d9a6d4b4ffd6fd38c"
+    "historical_population_sha256": "e80655b3b1e9ea2dd660dba61a2d00629336f7383c2e7397e65f58042ad52d54",
+    "historical_acceptance_sha256": "63dce6d6258638db6d5c8056ece98f4acfc0b521672004c685a1e2e65582d0db"
   },
   "references": {
     "__strupr": 7954916,
@@ -2038,7 +2038,7 @@
     "?get@Leaf_765940@@QAEIIII@Z": 7756096,
     "??0WonlineStringDialogControl@@QAE@XZ": 7756448,
     "?get@Cleanup_765e00@@QAEXXZ": 7757312,
-    "?get@Leaf_766060@@QAEXXZ": 7757920,
+    "?Set_Empty@WolIntArray@@QAEXXZ": 7757920,
     "?get@Leaf_766780@@QAEPAXI@Z": 7759744,
     "?get@Leaf_7667a0@@QAEPAXI@Z": 7759776,
     "?get@Leaf_7667c0@@QAEPAXI@Z": 7759808,
@@ -2309,7 +2309,7 @@
     "?get@Leaf_738100@@": 7569664,
     "?Set_Country_007399b0@PlayerProfile@@": 7575984,
     "?Set_Color_007399d0@PlayerProfile@@": 7576016,
-    "?get@Leaf_766060@@": 7757920,
+    "?Set_Empty@WolIntArray@@": 7757920,
     "?get@Leaf_766780@@": 7759744,
     "?get@Leaf_7667a0@@": 7759776,
     "?get@Leaf_7667c0@@": 7759808,

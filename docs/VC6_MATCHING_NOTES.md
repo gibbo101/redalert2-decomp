@@ -1325,3 +1325,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Frame objects are placed in descending last-ref order, newest compatible slot first. One named `Cell gate = c.As_Cell();` made a temp share a slot and fixed the frame size.
 - An address-taken local's store sits ahead of later reads, forcing a copy: `Cell a0 = ...; Cell b0 = ...; Cell newcell = ...; if (a0 != b0)` keeps the reads first.
 - T phase depends only on the total count, not where a local sits, and the distance between two sites matters, not just the total. Identifier renames change nothing.
+
+## Tactical forms (Scout685)
+- TibSun's `LONG x, y` with `(int &)` casts raises S just enough for one more inline site, which merged a whole block. `-1 - 15*h` puts the product in a fresh register: name both products before the second call.
+- The field choice decides which operand `add` writes. A CSE reload on an edge means an operand-order tie made a word load available from a known dword; fixing the tie brings in the reload and the rotation together.
+- A named pointer with an unnamed `ptr->Type` CSE fixed an arm-by-arm rotation; a named `type` did not. Slot sharing across sections exposed one reused pair (`start`, `dims`): 65 to 93.
+- Nested expressions in an argument can refuse where a named `Cell cell = ...` expands.
+- `bool inrange` set in both arms keeps `setle; test; je`, and the tails cross-jump. `bool clear = f() == 0; return clear;` gives `test; sete`; plain `return f() == 0` gives neg/sbb/inc.
+- Right-associated `X*X + (Y*Y + Z*Z)` reaches the x87 order; named doubles and left-associated forms do not. Promoted double locals keep the same order under any spelling.
