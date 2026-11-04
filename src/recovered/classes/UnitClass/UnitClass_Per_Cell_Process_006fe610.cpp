@@ -169,6 +169,6 @@ void UnitClass::unknown_slot93(int reason)
             unknown_28c+=0.019999999552965164f;
         }
     }
-    unknown_slot302(&unknown_slot104(),false);
+    Overrun_Square(unknown_slot104(),false);
     if (unknown_7d) FootClass::unknown_slot93(reason);
 }

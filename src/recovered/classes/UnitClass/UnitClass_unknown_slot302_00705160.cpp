@@ -1,5 +1,5 @@
-// void UnitClass::unknown_slot302(Cell const *where, bool arg2) (0x00705160, slot 302)
-// Crushing (hypothesis): where is the cell entered, arg2 asks only to
+// void UnitClass::Overrun_Square(Cell const &where, bool threaten) (0x00705160, slot 302)
+// Crushing (hypothesis): where is the cell entered, threaten asks only to
 // scatter. Picks the bridge level (+0x79, or this cell's level 4 below the
 // unit's). Only for crushers (or ability 17). With arg2, scatters the
 // level's occupants (0x00476920). Otherwise every crushable occupant within
@@ -28,9 +28,9 @@ struct UnknownUnitInfantryView2 : TechnoClass {
     InfantryTypeClass *Type;                // +0x5A8
 };
 
-void UnitClass::unknown_slot302(Cell const *where, bool arg2)
+void UnitClass::Overrun_Square(Cell const &where, bool threaten)
 {
-    CellClass *cell = &Map[*where];
+    CellClass *cell = &Map[where];
     bool upper = false;
     if (cell->unknown_140 & 0x100) {
         if (unknown_79) {
@@ -45,7 +45,7 @@ void UnitClass::unknown_slot302(Cell const *where, bool arg2)
     if (!Type->Crusher && !unknown_6d7910(17)) {
         return;
     }
-    if (arg2) {
+    if (threaten) {
         if (upper) {
             if (cell->unknown_128 & 0x1F) {
                 cell->unknown_476920(&unknown_ad04c0, true, false, true);

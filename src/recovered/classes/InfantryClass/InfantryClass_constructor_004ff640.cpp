@@ -57,5 +57,5 @@ InfantryClass::InfantryClass(InfantryTypeClass *type, HouseClass *house) :
 // @ref ?unknown_slot201@TechnoClass@@UAE_NXZ=006d8e80
 // @ref ?unknown_slot206@TechnoClass@@UAEHXZ=006d8e90
 // @ref ?unknown_slot284@FootClass@@UAE_NXZ=0041b460
-// @ref ?unknown_slot302@FootClass@@UAEXPBVCell@@_N@Z=0041b530
+// @ref ?Overrun_Square@FootClass@@UAEXABVCell@@_N@Z=0041b530
 // @ref ?unknown_slot305@FootClass@@UAEXH@Z=0041b540

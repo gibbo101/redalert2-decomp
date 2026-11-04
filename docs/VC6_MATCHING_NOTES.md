@@ -1344,3 +1344,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Y operand order can follow control flow, not T: `if (range <= 0) continue;` plus a `for` gives scan-first; dropping the guard so the `for`'s rotated guard does the `jle` gives adj-first. T-only probes never reach Y.
 - `Point2D point = Point2D(a, b)` keeps the point in the frame; `Point2D point(a, b)` promotes it.
 - A named `CoordStruct coord = bptr->Coord;` made 0x6AA300 exact.
+
+## Hoisted loads and early returns (Scout688, Start_Of_Move)
+- A member load used in an expression with a call hoists over the call, and that web can take the register the original gives another value. A named reference (`CellClass const &here = Map[...]; here.x + (...)`) fixes it: 62 to 77.
+- Inline sites go monotonically with N: one form at seven sites gives refused (ctor, Length), then refused (ctor), then none.
+- A pure temporary shares a dead slot and can fix the frame; a named Cell never does.
+- `if (!(a != b)) return false;` lays the block far and cross-jumps. `A || B` return goes far; `A && B` stays inline. `if (!ok && !same) { Y; return false; } T; return true;` gives one block order.
+- Scout688's seg.py is a call-aligned segment diff that ignores frame offsets; difflib under-reports on misaligned rows.

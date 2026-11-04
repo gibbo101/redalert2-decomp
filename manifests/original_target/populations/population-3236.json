@@ -4,8 +4,8 @@
     "id": "population-3236",
     "inventory_sha256": "60ce7f43fa193eeabbcafd305b913c01a068161f08eab8b5b287c292dfed2e7e",
     "gaps_sha256": "2a9cf13a60373cc49abbc6b637b6f343c09ee824d501db57b8eeb5ef6e7a6c05",
-    "historical_population_sha256": "17898d7b37840613b81e028f5c7cbcd954478b6f51191f80ff2695ad578b3583",
-    "historical_acceptance_sha256": "be29f343c947acc58b42eb4337b05acce3dbf636f850b7ae4c873d8b01840925"
+    "historical_population_sha256": "f88aed028598aea3456b387d02f258bf109973d73e647ecdaa10932a9bb37c54",
+    "historical_acceptance_sha256": "11d4ae600d078c1bfc322465c545f282af1abe15fcc4dacdfd831e030f815873"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8647,7 +8647,7 @@
     "?unknown_slot201@TechnoClass@@UAE_NXZ": 7179904,
     "?unknown_slot206@TechnoClass@@UAEHXZ": 7179920,
     "?unknown_slot284@FootClass@@UAE_NXZ": 4306016,
-    "?unknown_slot302@FootClass@@UAEXPBVCell@@_N@Z": 4306224,
+    "?Overrun_Square@FootClass@@UAEXABVCell@@_N@Z": 4306224,
     "?unknown_slot305@FootClass@@UAEXH@Z": 4306240,
     "?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z": 7049136,
     "?unknown_slot86@FootClass@@": 5005312,
@@ -10167,7 +10167,7 @@
     "?unknown_slot299@FootClass@@UAEPAVTechnoClass@@PBV?$DynamicVectorClass@PAVTechnoTypeClass@@@@HH@Z": 5036320,
     "?unknown_slot300@FootClass@@UAEPAVTechnoClass@@PAVTechnoTypeClass@@HHPAH@Z": 5035872,
     "?unknown_slot301@FootClass@@UAEPAVTechnoClass@@PAVTechnoTypeClass@@HH@Z": 5035824,
-    "?unknown_slot302@UnitClass@@UAEXPBVCell@@_N@Z": 7360864,
+    "?Overrun_Square@UnitClass@@UAEXABVCell@@_N@Z": 7360864,
     "?unknown_slot303@InfantryClass@@UAEHXZ": 5278080,
     "?unknown_slot304@FootClass@@UAEXXZ": 5000240,
     "?unknown_slot304@InfantryClass@@UAEXXZ": 5279536,
@@ -11520,7 +11520,30 @@
     "??_E?$DynamicVectorClass@VHSVClass@@@@UAEPAXI@Z": 6313824,
     "??_E?$DynamicVectorClass@V?$DistributionObject@PAVCellClass@@@?$DiscreteDistributionClass@VCellClass@@@@@@UAEPAXI@Z": 5040944,
     "??_E?$DynamicVectorClass@V?$DistributionObject@PAVAITriggerTypeClass@@@?$DiscreteDistributionClass@VAITriggerTypeClass@@@@@@UAEPAXI@Z": 7080144,
-    "??_E?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128
+    "??_E?$DynamicVectorClass@V?$rc_ptr@VWDTTerritory@@@@@@UAEPAXI@Z": 7524128,
+    "?Print_CRCs@@YIXPAVEventClass@@@Z": 6464352,
+    "__real@8@bffe8000000000000000": 7981488,
+    "__real@8@4001afeddf4ddd3ba800": 8019824,
+    "__real@8@3ffe860a91c16b9b2800": 8019816,
+    "__real@8@3ffb8f5c28f5c28f6000": 8019808,
+    "__real@8@3fe5b6000000b6000000": 8019800,
+    "__real@8@4000a78d3631c681f800": 8019784,
+    "__real@8@bffda0d97bb4e7870000": 8019776,
+    "?AI_Build_Wall@HouseClass@@QAEXXZ": 5186384,
+    "?Load@WaveClass@@UAGJPAUIStream@@@Z": 7479760,
+    "??0?$DynamicVectorClass@PAVCellClass@@@@QAE@IPBQAVCellClass@@@Z": 7489232,
+    "?Where_To_Place_Building@HouseClass@@QAE?AVCell@@PAVBuildingTypeClass@@P6IHPAV1@ABV2@HH@ZH@Z": 5178304,
+    "?Increase_Table_Size@?$IndexClass@HVCell@@@@QAE_NH@Z": 5213280,
+    "?search_compfunc@?$IndexClass@HVCell@@@@CAHPBX0@Z": 5213424,
+    "?Railgun_Beam_Damage@TechnoClass@@QAE?AUCoordStruct@@ABU2@PAVAbstractClass@@PAVWeaponTypeClass@@@Z": 7171792,
+    "__real@4@3ff9a72f050000000000": 8048688,
+    "??ZPoint2D@@QAEAAU0@ABU0@@Z": 6998096,
+    "__deaccel": 8033976,
+    "__sinking_scale": 8033992,
+    "__sinking": 8033984,
+    "__real@8@3ffbba2e8ba2e8ba3000": 7996880,
+    "__real@8@4001e000000000000000": 7996872,
+    "__real@8@3ffc9249249249249000": 7996864
   },
   "regions": [
     {
@@ -13040,7 +13063,7 @@
           "resolved": 11272028
         }
       ],
-      "source_sha256": "363573bbd50f174cfea42241ed410b2f019e39b64946b6fccce05229e367def4",
+      "source_sha256": "6d3ec141f86b0251f663f70a65a675b6d2e27f007ecd991ccc454173586afd7e",
       "source": "src/recovered/classes/InfantryClass/InfantryClass_constructor_004ff640.cpp",
       "population": "population-3236",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",

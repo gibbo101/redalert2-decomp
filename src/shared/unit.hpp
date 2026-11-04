@@ -145,7 +145,7 @@ public:
     virtual void unknown_slot280(int arg1);                           // slot 280 0x00709A20
     virtual void unknown_slot281(int arg1);                           // slot 281 0x00709AE0
     virtual bool unknown_slot284();                                   // slot 284 0x006FBBF0
-    virtual void unknown_slot302(Cell const *cell, bool arg2);  // slot 302 0x00705160
+    virtual void Overrun_Square(Cell const &cell, bool threaten);  // slot 302 0x00705160
     virtual void unknown_slot304();                                   // slot 304 0x00705070
     virtual bool INoticeSink_Unknown(int code, int arg);              // INoticeSink (+8) slot 0 0x00709890 (vtable 0x007ADDD4)
 

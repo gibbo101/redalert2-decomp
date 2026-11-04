@@ -266,7 +266,7 @@ public:
     virtual TechnoClass *unknown_slot299(DynamicVectorClass<TechnoTypeClass *> const *types, int arg2, int arg3);  // (hypothesis: the nearest dock of any of the types)   // slot 299 (AircraftClass 0x0041B1E0: ret 0xC, returns +0x5B4)
     virtual TechnoClass *unknown_slot300(TechnoTypeClass *type, int arg2, int arg3, int *score);   // slot 300 0x004CD760
     virtual TechnoClass *unknown_slot301(TechnoTypeClass *type, int arg2, int arg3);  // slot 301 0x004CD730
-    virtual void unknown_slot302(Cell const *cell, bool arg2) {}  // slot 302 (kept copy 0x0041B530)
+    virtual void Overrun_Square(Cell const &cell, bool threaten) {}  // slot 302 (kept copy 0x0041B530)
     virtual int unknown_slot303();                              // slot 303 0x004C9B10 (a speed; LocomotionClass::Apparent_Speed)
     virtual void unknown_slot304();
     virtual void unknown_slot305(int arg1) {}                   // slot 305 (kept copy 0x0041B540)
