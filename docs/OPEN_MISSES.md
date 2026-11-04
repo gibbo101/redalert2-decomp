@@ -1569,3 +1569,12 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Area_Modify 0x6C5270 96.38, parked (site 4 `ADD y,[ptr].Y` reversed; source operand order does not reach it).
 - Draw_Pips 0x6D4920 55.09, shape 91.09 (dp_5509.cpp; frame 0x7C vs 0x64, X/Y induction swapped). Can_Build 0x4E3660 and IsometricTileTypeClass::Init 0x52A790 not started.
 - Tool idea: Scout668 t/check_both.py lifts the rename-plus-plans refusal in check_plans, so a lane can check a post-rename plan before the rename lands.
+
+## Scout670 (2026-11-04, closed; Can_Build 0x4E3660 2,608 B with the rename; build/class-work/Scout670/NOTES.md; Scout671 continues)
+- OWNER DECISION: file-local `House_Owner_Bit` stays as landed. It exists mainly to supply two root inline sites, and as a house_type.hpp member it broke Print_CRCs and Generate_Rural_Buildings.
+- Row 0x52A790 is bogus: the true function is 0x529870, 6,762 B (pass-7 bound), fastcall (int theater, bool from_ccfile), TibSun Read_Control_File, 40.3, shape 96.8 (keep/ii_tmpl.cpp + gen_ii.py; ii_4006_nop5.cpp has probes and must not land). Also bound as Read_Tile_Control_00529870 in Init_Map 0x57AE00: unify when it lands.
+
+## Scout669 (2026-11-04, closed; 8,305 B: South 0x5729F0, North 0x573680, Connect_Regions_With_Bridge 0x570BC0, Generate_Neutral_Tech_Buildings 0x58AD90; drafts build/class-work/Scout669/w/keep/; Scout672 continues)
+- OWNER DECISION: `Pick_Region_Cell`, `Region_Size`, `Cell_Is_Free`, `Is_List_End` and `Cell_Height` stay as landed. The member Plan rows keep waiting for Urban.
+- Generate_Urban_Roads 0x587330 99.06, shape 99.84 (urban_roads_9906.cpp, overlay h1 fragile-clean, no check_plans yet, junction_member.cpp, plan_member.cpp, scorer eu.sh). Residue: the horizontal width test, original `movsx ecx,cx; movsx edx,ax; sub edx,ecx; cmp edx,6`. `end.X>=start.X+6` gets the registers but emits `add ecx,6; cmp edx,ecx`; `end.X-start.X>=6` scores 87.22. Source must follow 0x570BC0 in plan order (Place_Tile_Footprint defaults).
+- Find_Dirt_Road_Tile 96.60 and Urban Buildings 0x587CF0 90.73 unchanged. A landing can tear the catalog mid-read (ValueError "torn"); wait and rerun.

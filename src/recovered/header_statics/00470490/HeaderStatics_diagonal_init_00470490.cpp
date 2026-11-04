@@ -6,6 +6,11 @@
 #define CELL_DECLARE_PREVIEW_CELL_COLOR
 #define CELL_DECLARE_CLEAR_ICON
 #define RGB_DECLARE_ACCESSORS
+#define CELL_DECLARE_CELL_COLOR
+#define RGB_DECLARE_BRIGHTEN
+#define RA2_SHAPE_FRAME_COLOR
+#define RA2_DRAW_SHAPE_OPERATIONS
+#define SHAPE_FILE_EMPTY_RECT unknown_static_rect
 // Header-static dynamic initializers of the unit at 0x00470490:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x00470490-0x00470676); the other

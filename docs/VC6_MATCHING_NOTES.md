@@ -1218,3 +1218,17 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Tail merge runs after register allocation, so a cross-jumped copy still advances the rotation. If an if arm ends in `jmp` and the register sequence after it is shifted by one, a statement is duplicated in both arms. That took Can_Fire from 82.58 to 96.77 with the land test in each arm.
 - Which arm uses `return 5` and which `goto ILLEGAL` picks the surviving copy. Nesting the rest in `if (weapon != 0) { ... return 0; } CANT: return 6; ILLEGAL: return 5;` keeps CANT last with no folded goto.
 - A memory `test byte [m],imm8` of a parameter changes the register piece of its later refs.
+
+## Threading, tails and constant registers (Scout670)
+- `int limit = f; if (f <= 0) {...} if (limit <= 0)` keeps both tests; two tests on `limit` thread away.
+- An inlined real row shows up as one shared cross-jump tail. All four case tails merged only once a combined `||` return was split into two ifs.
+- `while (true) { ...; k++; if (k >= 3) break; }` gives `jge out; jmp top`. A plain named temporary (`int id = over[i];`) moves the scratch rotation by one.
+- 46 repeated `X = -1` stores put -1 in a register, and later uses go through it, including inline strlen; pushes alone do not.
+- Dropping named locals lowers S and can stand in for one more inline site.
+
+## Region and ramp forms (Scout669)
+- `(second-Cell(span,0)).X-first.X-5` through operator- keeps the word subtracts on X-field rows; North also needs `bias.X =` rather than `bias +=`.
+- `Rect rect2 = rect1` gives register copies. `for (; tries < 200; tries++) { if (result) break;` keeps a head test that do-while rotates away. A single flat do-while with `||` restores frame and index CSE.
+- `if (fail) x = false; if (x && y) {...}` as two statements stops a cross-jump. Repeating `Is_Valid()` in both arms keeps a second test that nesting threads away.
+- The block scope of one Cell can decide constant caching across a whole function, so test scope before constant probes: `Cell end` declared in each loop body took 0x587330 from 78.56 to 99.06.
+- Unused file-local inlines are not budget sites. Count with Nop probes, then replace them with real helpers.

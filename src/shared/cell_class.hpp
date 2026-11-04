@@ -264,6 +264,11 @@ public:
     // as this header is in Refresh_Wonline_Players 0x0073FEE0's closure).
     int Clear_Icon(int type, int count) const;
 #endif
+#ifdef CELL_DECLARE_CELL_COLOR
+    // The cell's low and high radar colours (0x004712C0; TibSun Cell_Color; guarded: this header is
+    // in Refresh_Wonline_Players 0x0073FEE0's closure).
+    void Cell_Color(class RGBClass &lowcolor, class RGBClass &highcolor) const;
+#endif
     class BuildingClass *Get_Gate() const;   // Westwood's Get_Gate: the gate building in the cell, or 0 (inline in the Cell unit)
     CoordStruct Closest_Free_Spot(CoordStruct const &coord, bool any = false, bool alt = false) const;   // 0x004764B0 (the free sub-cell spot nearest coord, alt on the bridge; any: the nearest spot even if taken)
     void unknown_478f40();                      // 0x00478F40 (Westwood's Recalc_Passability: sets unknown_4c from the overlay, land and occupiers)
