@@ -1199,3 +1199,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `short offset = down ? forward : -forward` replaces TibSun's `backward` local. Recomputing `second.Y - first.Y` instead of naming height keeps abs in eax and gives `lea eax,[ecx+1]`.
 - TibSun's int margins are needed on the Plan rows: Rect margins reach shape 100 with the wrong frame order, and int margins also flip the operand tie.
 - Correction to the k-probe note: a referenced local (`Rect const &area = rect`) flipped a `[rect+8]/[rect]` load tie that k probes did not.
+
+## Labels, duplicated tests and RMW (Scout666)
+- A label's return block moves to just after its last `goto`, even one that folds. Gotos before the last site share one block; plain `return`s after it get inline epilogs.
+- Source can duplicate a test: giving each distance arm its own `if (range > 0 && dist > range) return false;` took 0x6C5570 from 80 to 91 and fixed frame slots and ebp.
+- 3D `fild` order depends on the key: `double y = c.Y` first, or any extra referenced local, gives Y,Z,X.
+- `*x += y` uses three instructions when a scratch register is free and `add [m],r` when none is, so an RMW mismatch means a register web difference, not a statement form. High-byte tests always load a register, so a lone read can look like a CSE web.
