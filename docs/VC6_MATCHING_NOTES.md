@@ -1298,3 +1298,18 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `dec` after a loop guard means a hoisted value: write `for (j = rows - 1; ...)` inside the outer loop, not a precomputed count.
 - Commutative imul order can flip on an unrelated temp elsewhere in the function; source operand order does not reach it.
 - diff_candidate shows nothing for what acceptance refuses unless bound: the `""` literal (.bss COMDAT), every string, vtables, ??_G, GenericNode and ??1INIClass COMDATs, and `_$E`/`$S` shifts in later rows. Scout679/cs.py lists code sections with no ref.
+
+## Hidden results and budget sites (Scout681)
+- `lea ecx,tmp; push y; push x; call` with no result pointer pushed is `__fastcall` with the hidden result in ecx and a by-value struct on the stack; it looks like a thiscall ctor.
+- `bool techno; if (p != 0) { techno = p->IsTechno; } if (p != 0 && techno)` explains a dead byte store.
+- Double locals inside an inline Length hoist ahead of the rest of the expression and give dot-before-sqrt order. An inline Percent_Chance reads the Rules value before calling Random.
+- Coord_To_Pixel with its result ignored expands with the compares dead; a site's depth decides which nested callees stay out of line.
+- Point2D-local sums (`Point2D offset(0,2); a += offset; b += offset;`) supply pending inline sites and emit nothing extra. Find the count with Nop probes, then use real statements.
+- The Print_CRCs counter depends on which real declarations land with a header change: over one header, k=2, 4, 5, 7 extra decls were good and 1, 3, 6, 8 bad.
+
+## Constant webs by threshold (Scout682, Ship 0x676F60)
+- Constant webs compete by use count, not by a pseudo at the peak (this corrects Scout655): one more zero use at the tail makes `xor edi,edi` win, which flips the head immediate and the edge defs. A literal 0 one inline level down counts; nesting it through a helper leaves a local `xor edx,edx`.
+- A named `CoordStruct partial(0,0,0)` is block-live, and that alone fixed three slot groups.
+- `double x, y, z` in that order with `x*x + (y*y + z*z)` gives X,Y,Z fild order.
+- `Point2D offset = ptr[..].Offset` direct-init reads X first; assignment reads Y first. The right operand of != is evaluated first, so `Cell here = pos.As_Cell(); if (here != head.As_Cell())` gives left-first order.
+- Scout682's om.py maps each frame object to its original slot, with push depth corrected. scan.py runs a source toggle across all 8 T phases.

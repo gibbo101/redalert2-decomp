@@ -373,6 +373,11 @@ public:
     virtual void Revert_Mouse_Shape();                          // slot 20 0x0059F080
     virtual void Mouse_Small(bool wsmall);                      // slot 21 0x0059F090
     virtual int unknown_slot40();                               // slot 40 0x0040D150
+#ifdef RA2_MOUSE_FRAME_QUERIES
+    // Unit-scoped: unguarded they move a declaration tie in Do_Reinforcements 0x639970.
+    int Get_Mouse_Start(int mouse) const;                       // 0x0059FF20
+    int Get_Mouse_Count(int mouse) const;                       // 0x0059FF40
+#endif
 #ifdef MAP_VIEW_DECLARE_SAVELOAD
     // The save/load unit's (0x00654A50) direct calls on Map; guarded because a new member
     // hides DisplayClass::unknown_slot42 elsewhere and shifts type-count victims (0x00428370).
