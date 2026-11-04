@@ -1333,3 +1333,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Nested expressions in an argument can refuse where a named `Cell cell = ...` expands.
 - `bool inrange` set in both arms keeps `setle; test; je`, and the tails cross-jump. `bool clear = f() == 0; return clear;` gives `test; sete`; plain `return f() == 0` gives neg/sbb/inc.
 - Right-associated `X*X + (Y*Y + Z*Z)` reaches the x87 order; named doubles and left-associated forms do not. Promoted double locals keep the same order under any spelling.
+
+## Address-exposed joins and copy order (Scout686, Ship and Drive to exact)
+- Y and Z reads hoist over an X store only when coordinates come through a local pointer; a repeated member gives the original order, as its CSE temp keeps the struct copy in order. A copy from a CSE temp also survives copy-prop (`lea eax; mov ecx,eax`).
+- `mov esi,eax; test esi,esi` needs the join variable address-exposed: `T *object = cond ? a : b; T *&ref = object; T *occupier = ref;`. `T *&`, `T * const &`, `T **p = &o` all work; inline reference parameters fold away. `mov R,eax; test R,R` is the default only after calls.
+- A `do` head with a same-condition bottom threads away before copy-prop. T phase is exactly mod 8.
+- Scout686's mini.py with mi.sh compiles a small standalone file with /FAs in about 3 s; it reproduced both residues outside the 5.7 KB function. Reduce to a small test when a residue survives many variants.
