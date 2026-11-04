@@ -378,10 +378,14 @@ public:
         new (Items + index) WOL::Server(server);
         ++Count;
     }
+#ifdef RA2_WOL_SERVER_ARRAY_GET_SOURCE
+    bool Get(WOL::Server *&server, int index);
+#else
     bool Get(WOL::Server *&server, int index) {
         if (index >= 0 && index < Count) { server = Items + index; return true; }
         return false;
     }
+#endif
 };
 extern WolServerArray unknown_servers_b2a700;
 extern WOL::Server unknown_game_server_b28cd0;

@@ -1,23 +1,13 @@
-// bool UnknownTable_00765E60::unknown_get_entry(UnknownEntry_00765e60 **entry, int index) -- 0x00765E60
-// Purpose: the address of entry `index` (0xF8-byte entries at +0x08,
-// count at +0x00); false when the index is out of range.
-// Assumptions: owner and entry classes are unidentified (network area).
-
-struct UnknownEntry_00765e60 {
-    char unknown_00[0xF8];
-};
-struct UnknownTable_00765e60 {
-    int Count;                              // +0x00
-    int unknown_04;
-    UnknownEntry_00765e60 *Entries;         // +0x08
-    bool unknown_get_entry(UnknownEntry_00765e60 **entry, int index);
-};
-
-bool UnknownTable_00765e60::unknown_get_entry(UnknownEntry_00765e60 **entry, int index)
+// Server-array lookup -- 0x00765E60; complete existing41-byte body +7NOP.
+// Callers742FD0 use globalB2A700: count+0, items+8, stride248 equalsWOL::Server.
+#define RA2_WOL_SERVER_ARRAY_GET_SOURCE
+#include "shared/wol_sink.hpp"
+bool WolServerArray::Get(WOL::Server *&server, int index)
 {
     if (index >= 0 && index < Count) {
-        *entry = &Entries[index];
+        server = Items + index;
         return true;
     }
     return false;
 }
+// @ref ??_E?$rc_ptr@VWDTTerritory@@@@UAEPAXI@Z=0051e600

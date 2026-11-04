@@ -4,8 +4,8 @@
     "id": "population-3512",
     "inventory_sha256": "e9c00235705f9e2a7fb6dd1c39aa4da5cdf29f212674c1358c4460dc8d795426",
     "gaps_sha256": "5b41f040fa1dd8e08b15bb52d3752f2d77d2fd360eb4942204fe2e070790c285",
-    "historical_population_sha256": "c428b3900d52e53c12a6a44e90f9e36958ce252270f6c43b06ccb04b9d34b388",
-    "historical_acceptance_sha256": "75d20a36e24d490d270bc9bd810fd8567daba207cd69248e582df793bda909e4"
+    "historical_population_sha256": "3c21beab1cd5bc88e6b6fdc33ffa34b718c2b98f1417c06a7a8d00451b6700f9",
+    "historical_acceptance_sha256": "e85c5527bcaa8166ac7c5092814e095435ad0099c3b92efe0c20e7c88934c6df"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1822,7 +1822,7 @@
     "?Set_Server_00739920@PlayerProfile@@QAEXABVWstring@@@Z": 7575840,
     "?unknown_open_dialog_300@@YAXXZ": 7658256,
     "?unknown_dialog_c2_call@@YI_NH_N0@Z": 7719472,
-    "?unknown_get_entry@UnknownTable_00765e60@@QAE_NPAPAUUnknownEntry_00765e60@@H@Z": 7757408,
+    "?Get@WolServerArray@@QAE_NAAPAUServer@WOL@@H@Z": 7757408,
     "?unknown_decoder_reset_6d0@@YIHPAUUnknownDecoderState_77870@@@Z": 7829616,
     "?target@Call_41f020_0@@QAEII@Z": 4260272,
     "?target@Call_41f020_1@@QAEII@Z": 4800304,

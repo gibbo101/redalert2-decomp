@@ -1,3 +1,4 @@
+#define RA2_WOL_SERVER_ARRAY_GET_SOURCE
 // int __fastcall unknown_quarry_from_name(char const *name) -- 0x00622090
 // Purpose: the index of name (case-insensitive) in the 12 quarry (target category)
 // names at 0x007A8620 ("N/A", ...); 0 when it is not listed.

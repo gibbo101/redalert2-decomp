@@ -4,8 +4,8 @@
     "id": "population-3202",
     "inventory_sha256": "0fb5c462d1c21f9bc37626ed6e4de68e40026cf624226e3faa94b45b3d9d7c12",
     "gaps_sha256": "d23c2fa2fd640b5dd89e034536efe23219bc0820cbe914c11eb56e0248257dfe",
-    "historical_population_sha256": "5eafd9a68cc6f24cf36a0df9c09aede2a251b1dfb3583e3633c9f2083b0a53c7",
-    "historical_acceptance_sha256": "4fe4590bfcf4cc32cd15f7b570356d88789ac0b4c075983bb938beb90e90e1b5"
+    "historical_population_sha256": "88d3ead0ee5cc1b11af8541f60890ed0fdb57e7d3b818e035fc8da3c4be9414c",
+    "historical_acceptance_sha256": "3e5b98abef56113ea145ed8c5532c91c9ed71cd176825a3392ca32c8fd478702"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -13998,7 +13998,7 @@
     "?unknown_show_dialog_5ff7e0@@YIXPAXH@Z": 6289376,
     "?unknown_dialog_c2_call@@YI_NH_N0@Z": 7719472,
     "?Unknown_005cbdb0@@YI_NPAUHWND__@@H_N1@Z": 6077872,
-    "?unknown_get_entry@UnknownTable_00765e60@@QAE_NPAPAUUnknownEntry_00765e60@@H@Z": 7757408,
+    "?Get@WolServerArray@@QAE_NAAPAUServer@WOL@@H@Z": 7757408,
     "?Set_Char@WideString@@QAE_NGI@Z": 7801168,
     "?Is_Narrow@WideString@@QBE_NXZ": 7803008,
     "?unknown_decoder_reset_6d0@@YIHPAUUnknownDecoderState_77870@@@Z": 7829616,
