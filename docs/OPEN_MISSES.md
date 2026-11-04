@@ -1695,3 +1695,6 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout699 (2026-11-04, closed; IonBlastClass Draw_It 0x521CE0 711+9 B, undrafted TibSun twin; drafts build/class-work/Scout699/w/keep/; Scout700 continues)
 - OWNER DECISION: `short *pixel = dptr;` stays as landed (a code-free local that splits web weight). 0x43DC50 is not a row: it is interior to Unlimbo 0x43D3A0.
 - Barrel 0x43B7E0 99.13 (bar_9913.cpp, overlay hb/ with signed Facing union, no probe or check yet; file-local XY_0043b7e0 needs a ruling). One_Time 0x521A90 93.29 (ot3.cpp shape 99.36). Captured 0x444660 78.23 (cap.cpp; `#pragma auto_inline(off)` must go). Mission_Attack 0x446920 81.79 (blocked on FP spills). Mark 0x43BFC0 72.36. Take_Damage 0x43EE70 81.11.
+
+## Scout698 (2026-11-04, closed; 0 B; drafts build/class-work/Scout698/w/keep/, NOTES.md; Scout701 has one more attempt)
+- Dropship 0x4A6B90 99.83 (ds_n10_9990_probes.cpp 99.90 with dead locals, not landable). The three sum sites move only with statements that produce a CSE or IV temp, like a hidden counter. peer 99.85, OnUserList 99.73, Session ctor 99.72 unchanged.
