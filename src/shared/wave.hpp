@@ -36,7 +36,13 @@ struct WavePolygonInput {
     WavePolygonInput(NoInitClass const &) : Points(0) {}
     int Count;
     Point2D *Points;
-    Point2D InlinePoints[6];
+    // Six independently constructed geometry points; their observed contiguous layout is unchanged.
+    Point2D InlinePoint0;
+    Point2D InlinePoint1;
+    Point2D InlinePoint2;
+    Point2D InlinePoint3;
+    Point2D InlinePoint4;
+    Point2D InlinePoint5;
 };
 struct WaveScanlineBuffer {
     WaveScanlineBuffer() : Count(0), FirstY(0), Spans(0) {}
