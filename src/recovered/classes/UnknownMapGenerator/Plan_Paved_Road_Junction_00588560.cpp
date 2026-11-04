@@ -1,4 +1,4 @@
-// TibSun Plan_Paved_Road_Junction: first paved tile along dir, then the first spot a junction fits, walked back a random distance. Plain stdcall: ECX is not read.
+// TibSun Plan_Paved_Road_Junction: first paved tile along dir, then the first spot a junction fits, walked back a random distance. Member: ECX is the generator.
 #include "shared/coord.hpp"
 #include "shared/rect.hpp"
 #include "shared/adjacent_cell.hpp"
@@ -14,7 +14,7 @@ inline Cell Adjacent_Road_Cell(Cell const &cell,int facing)
 {
     return cell+AdjacentCell[facing&7];
 }
-Cell __stdcall Plan_Paved_Road_Junction_00588560(Cell const &cell,Rect const &rect,int dir)
+Cell UnknownMapGenerator::Plan_Paved_Road_Junction_00588560(Cell const &cell,Rect const &rect,int dir)
 {
     Cell wcell=cell;
     Rect const &area=rect;

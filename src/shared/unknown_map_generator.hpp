@@ -30,6 +30,8 @@ public:
     void Generate_Urban_Areas_00586800();
     DynamicVectorClass<Cell> *Create_Urban_Area_00586b40(Cell const &position,int count);
     void Generate_Urban_Roads_00587330(DynamicVectorClass<Cell> &cells);
+    Cell Plan_Paved_Road_Junction_00588560(Cell const &cell,Rect const &rect,int dir);
+    Cell Plan_Paved_Road_00588850(Cell const &cell,Rect const &rect,int dir);
     void Generate_Urban_Buildings_00587cf0(DynamicVectorClass<Cell> &cells);
     void Generate_Urban_Units_00588100(DynamicVectorClass<Cell> &cells);
     void Generate_Rural_Areas_00589890();
