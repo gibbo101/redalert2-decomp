@@ -39,6 +39,10 @@ public:
     // its colour.
     void unknown_636130();                          // 0x00636130
     // One frame of a type 2 beam; true once the period is over.
+#ifdef RA2_RAD_BEAM_TYPE1_UNIT
+    bool unknown_6358d0();
+    void unknown_635c30();
+#endif
     bool unknown_635e00();                          // 0x00635E00
     // Draws one segment on the current surface (inlined by unknown_635e00).
     void Draw_Line(CoordStruct const &start, CoordStruct const &end, short color);   // 0x00635810
