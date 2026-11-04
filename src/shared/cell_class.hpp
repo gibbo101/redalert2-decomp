@@ -265,6 +265,8 @@ public:
     int Clear_Icon(int type, int count) const;
 #endif
 #ifdef CELL_DECLARE_DRAW_IT
+    void unknown_47c930();                      // 0x0047C930 (TibSun On_Bridge_Collapse)
+    void unknown_47cc10();                      // 0x0047CC10 (TibSun Kill_Illegal_Occupiers)
     // The cell's tile and smudge at the screen point, unless `objects` (0x00475680; TibSun Draw_It).
     void unknown_473b30(ObjectClass *object, bool alt);   // 0x00473B30 (TibSun Occupy_Down: links object into the occupier list)
     void Draw_It(Point2D const &point, Rect const &clip, bool objects);
@@ -341,7 +343,7 @@ public:
     int unknown_5c;                             // +0x05C
     int unknown_60;                             // +0x060
     int unknown_64;                             // +0x064
-    UnknownCell68 unknown_68;                   // +0x068
+    Rect unknown_68;                            // +0x068 (Westwood's LastBridgeDrawRect)
     unsigned int unknown_78;                    // +0x078
     short unknown_7c[24];                       // +0x07C
     int unknown_ac[12];                         // +0x0AC

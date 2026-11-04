@@ -23,7 +23,7 @@ CellClass::CellClass() :
     unknown_5c(-1),
     unknown_60(-1),
     unknown_64(-1),
-    unknown_68(UnknownCell68()),
+    unknown_68(Rect(0, 0, 0, 0)),
     unknown_78(0),
     unknown_dc(0),
     unknown_e0(0),

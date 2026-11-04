@@ -14,7 +14,6 @@
 CellClass::CellClass(NoInitClass const &noinit) :
     AbstractClass(noinit),
     unknown_34(0),
-    unknown_4c(0),
-    unknown_68(noinit)
+    unknown_4c(0)
 {
 }

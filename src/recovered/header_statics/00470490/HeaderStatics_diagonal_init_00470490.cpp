@@ -1,3 +1,6 @@
+#define RA2_CELL_AS_COORD
+#define RA2_SHIP_MOVE_TO_VALUE
+#define RA2_IS_MOVING_HERE_VALUE
 // The Cell.cpp unit expands Rect::operator- 0x0047D000 in TibSun form (Rect(Top_Left() - point, ...)) with
 // Top_Left and the corner constructor inline (rect.hpp RA2_RECT_CORNER_INLINE); 0x0047D040 stays out of line.
 #define RA2_RECT_CORNER_INLINE

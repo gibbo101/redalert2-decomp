@@ -1702,3 +1702,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout700 (2026-11-04, closed; 1,483 B: Cell_Render_Rect 0x4752B0, Draw_Shadow_Cast 0x4755D0, Draw_It 0x475680, Occupy_Down 0x473B30; drafts build/class-work/Scout700/w/keep/, LIST.md 511 rows; Scout702 continues)
 - OWNER DECISION: the guarded CELL_DECLARE_DRAW_IT block and Fetch_Icon's `count` locals stay as landed. 0x474260 Draw_Shroud_Or_Fog_Shape looks like original inline asm (ebp frame, hand loops comparing a global dword; inferred): treat it as a handwritten-ledger candidate, do not draft it.
 - 0x6A89B0 is the tail of 0x6A88A0. 0x6C9DF0 and 0x6A88A0 have pass-5 sizes far too small. Clear_Icon 0x4767A0 79.05. Laser_Zap 0x6C9DF0 71.54. Grant 0x69CCF0 89.32. Reduce_Tiberium 0x475DB0 76.24. 0x6A88A0 55.76.
+
+## Scout702 (2026-11-04, closed; 1,796 B: On_Bridge_Collapse 0x47C930, Draw_Overlay 0x4749C0; drafts build/class-work/Scout702/w/; Scout703 continues)
+- OWNER DECISION: RA2_IS_MOVING_HERE_VALUE, RA2_SHIP_MOVE_TO_VALUE across the Cell population, CellClass +0x68 as a real `Rect unknown_68` (TibSun LastBridgeDrawRect), the file-local externs in 0x4749C0, and `is_foot`, `flat` stay. Reconcile 0xA52EB0 with unknown_globals.hpp later.
+- Kill_Illegal_Occupiers 0x47CC10 84.64. Redraw_Veins 0x47A7A0 83.60. Spread_Tiberium 0x478A40 85.84 (one X-sum tie). Techno 0x6D65B0 87.83, shape 100 (frame 8 B short). Laser_Zap 71.54. Draw_Placement_Cursor 67.85. Make_Closest 0x622290 53.96. Not reached: Radar 0x634310, Team 0x6BE010, 0x5689D0, 0x6D0DC0.

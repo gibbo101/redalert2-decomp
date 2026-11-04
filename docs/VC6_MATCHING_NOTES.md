@@ -1420,3 +1420,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `Point2D p; p.X = q.X; p.Y = q.Y - v;` gives lea/sub and the original registers; `p = q; p.Y -= v` gives shl/neg; `p -= Point2D(0, v)` keeps lea but loses the registers.
 - An ebp frame in an /O2 row plus a dword-compared global in a tight loop points to original inline asm: stop drafting.
 - Low seed scores can be stale; redraft before parking.
+
+## COM coordinates and prior rows (Scout702)
+- Is_Moving_Here takes a plain CoordStruct: the conversion operator hoists X,Y,Z into three registers ahead of the test (39 to 85); `MapCoords.As_Coord()` made it exact.
+- A named `bool flat = otype->DrawFlat` flipped three register webs. `Point2D point = offset() + xpoint` with `point -= clip.Top_Left()` gives the original register order.
+- With /Ob2 a row in the same unit inlines at its call sites, so a missing out-of-line ctor at a site can point to an earlier row's form: one row can be exact in five forms that differ only at the inlined site. TU position does not decide this.
+- `Rect rect = Rect(0,0,0,0)` versus direct init changes which temp shares a slot and splits the zero web.

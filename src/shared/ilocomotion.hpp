@@ -88,7 +88,11 @@ struct __declspec(novtable) ILocomotion : public IUnknown {
     virtual void __stdcall Acquire_Hunter_Seeker_Target() = 0;                   // 37
     virtual bool __stdcall Is_Surfacing() = 0;                                   // 38
     virtual void __stdcall Mark_All_Occupation_Bits(int mark) = 0;               // 39
+#ifdef RA2_IS_MOVING_HERE_VALUE
+    virtual bool __stdcall Is_Moving_Here(COMCoordStruct to) = 0;                // 40
+#else
     virtual bool __stdcall Is_Moving_Here(CoordStruct to) = 0;                   // 40
+#endif
     virtual bool __stdcall Will_Jump_Tracks() = 0;                               // 41
     virtual bool __stdcall Is_Really_Moving_Now() = 0;                           // 42
     virtual void __stdcall Stop_Movement_Animation() = 0;                        // 43
