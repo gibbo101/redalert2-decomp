@@ -1,3 +1,4 @@
+#define RA2_MATRIX3D_INLINE_COPY
 #define VECTOR3_DECLARE_WWMATH
 // ??0Quaternion@@QAE@MMMM@Z (0x00622160)
 // Quaternion(x, y, z, w).
