@@ -1313,3 +1313,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `double x, y, z` in that order with `x*x + (y*y + z*z)` gives X,Y,Z fild order.
 - `Point2D offset = ptr[..].Offset` direct-init reads X first; assignment reads Y first. The right operand of != is evaluated first, so `Cell here = pos.As_Cell(); if (here != head.As_Cell())` gives left-first order.
 - Scout682's om.py maps each frame object to its original slot, with push depth corrected. scan.py runs a source toggle across all 8 T phases.
+
+## Label locals and inlined members (Scout683)
+- A 4-byte local sorted into the 8-byte group is a Point2D with a constant field (`Point2D offset(0, rect.Y + 1)`), and `pixel - offset` supplies sites.
+- A separately named pointer plus a repeated expression gives a CSE temp, so the pointer spills at once.
+- A charge of about 54 to 130 before a site splits depth-3 sites; it must sit where it does not disturb argument evaluation (a wrapper on Fancy_Text_Print is exact, one on CC_Draw_Shape is not).
+- A member with "no callers" may be inlined: WM_CHAR is really `if (flag) Put_Char(wparam)`, which alone explains a last-site call. Check such members before adding pending sites.
+- A duplicated case tail can be fall-through. Mixed `jl top; jmp tail` is a for-loop with a guard, not `while (true)`. TibSun's `-30 + pixel.X + 30` is really `pixel.X -= 30; point.X = pixel.X + 30`.

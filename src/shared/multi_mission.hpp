@@ -40,6 +40,11 @@ public:
     char const *Get_Digest() const { return unknown_15c; }
     bool Get_Official() { return unknown_17c; }
 #endif
+#ifdef RA2_SESSION_MAP_PLAYER_ACCESSORS
+    // Session's five player-range reads, inlined in the description reader.
+    int Get_Min_Players() const { return unknown_180; }
+    int Get_Max_Players() const { return unknown_184; }
+#endif
     // Copies a description (at most 43 characters; null: MSG:NoDescription) into Description (0x00671FA0;
     // accepted as UnknownDescribed_00671FA0::unknown_set_description, bound by @ref; Make_Random_Map 0x005C84E0).
     void Set_Description_00671FA0(unsigned short const *text);

@@ -1,3 +1,4 @@
+#define RA2_SESSION_MAP_PLAYER_ACCESSORS
 // Header-static dynamic initializers of the unit at 0x0066E0A0: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x0066E0A0-0x0066E281); the other
 // drafts of this plan are emitted by these includes.
