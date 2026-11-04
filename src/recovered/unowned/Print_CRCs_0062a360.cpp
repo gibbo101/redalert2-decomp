@@ -183,8 +183,6 @@ void __fastcall Print_CRCs(EventClass *event)
     unsigned char has_mmx;
     int i, j;
     int house;
-    ObjectClass *objp;
-    HouseClass *owner;
 
     sprintf(filename, "SYNC%01d.TXT", unknown_player_a35db4->ArrayIndex);
     Debug_Printf("Writing sync data to file %s\n", filename);

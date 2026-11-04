@@ -1,21 +1,4 @@
-// 0x00624840: function not yet identified
-//
-// Body: 1 bytes (frozen inventory bound).
-// Referenced from 1 site (data).
-// Ghidra prototype: void FUN_00624840(void)
-//
-// Types and names are Ghidra placeholders (see shared/ghidra_types.hpp);
-// rename and retype as the purpose becomes known.
-//
-// seed-generated: tools/original_target/regenerate_seeds.py may rewrite this file;
-// delete this line when editing it by hand.
-#include "shared/ghidra_types.hpp"
-
-namespace seed_00624840 {
-
-void  FUN_00624840(void)
-{
-    return;
-}
-
-}  // namespace seed_00624840
+// Queue.CPP CRC skip timer atexit destructor, original00624840 (RET+15NOP).
+// The compiler emits this real function from Queue_AI_Multiplayer's static
+// CDTimerClass<FrameTimerClass>. Its selector is _$E79 in this complete unit.
+// No handwritten stand-in body; source/semantic identity and1+15 extent stay fixed.

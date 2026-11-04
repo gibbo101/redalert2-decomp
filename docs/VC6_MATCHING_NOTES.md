@@ -1391,3 +1391,14 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `fstp` then `fld Y, Z, X` then `fld st(n); fmul` comes from double locals declared y, z, x with `x*x + z*z + y*y`.
 - A later row can inline only when its callee is one call deep. A false block follows the memory-last goto. Compare-chain switches lay out default, then cases descending.
 - Scout694's crt.py lists $E/$S and init relocs that a local score does not show.
+
+## Array sizes and timers (Scout696)
+- A frame slot with no references can be an array's declared size inside its rounding: check accepted siblings first (`char options[132]` in 0x755180).
+- Timer residues with a `mov ecx,esi; test ecx` shape come from a Value form that rereads DelayTime on the idle path; named, reference and inline-parameter result copies all fold.
+- In a label group at function end, source order of the blocks does not change layout. Some sum ties are not T or offs ties: real statements added at the top did not move them.
+
+## Selector locals and helper temps (Scout697)
+- A named selector local can hold a frame slot: replacing it with `if ((a && A) || (!a && B)) { shape = a ? A : B; ... }` flipped two slots. That order ignored ref counts, last-ref, first-def, alignment and aggregate class.
+- Moving two tests into an inline helper fixed frame groups; the density sort moved when one ref left a temp group. Temps in a helper appear block-lived (inferred).
+- `xy + Point2D(o.X, o.Y)` reads the offset first; a copy-form `Point2D(o)` does not. Removing a named reference can save enough budget to keep sites inline.
+- VC6 mangles a free `operator*` as `??D@YI...`; an @ref to it scores 100 locally but is refused at acceptance as unbound. rl2.py lists unbound relocations plan-wide.
