@@ -34,15 +34,6 @@ inline int Tube_Height_Step(CoordStruct const &exit, TubeClass const *tube, int 
     return (Map.Unknown_0055A280(exit) - current_height) / count;
 }
 
-// The out-of-line row 0x004FDA50 lands next (its entry evidence needs this row's table end).
-inline void HoverLocomotionClass::Stop()
-{
-    LinkedTo->unknown_slot260(0, 1);
-    unknown_50 = 0;
-    unknown_48 = 0;
-    LinkedTo->unknown_slot306(0);
-}
-
 int HoverLocomotionClass::While_Moving_004fcbc0(bool first_pass)
 {
     if (unknown_24 != unknown_coord_a41080) {
