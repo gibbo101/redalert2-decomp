@@ -1153,3 +1153,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - To break FP product CSE, use casts in the first sum and fresh double locals in the second; casts or locals in both sums CSE the squares. `double angle = a; angle *= b; angle *= c;` keeps operand order and stops the `fst` forward.
 - `dir += x` then `Normalize(particle->fc)`, not `Normalize(dir)`, gives fstp plus reload. `fld st0; fld mem; fcompp` needs a float-typed value and the limit read through an inline returning double.
 - T-phase interaction: naming a local can fix a sum order and move a later tie; dropping another referenced local restores it (0x60C050).
+
+## Loops and charge (Scout658)
+- TibSun pointer walks can be VC6 strength reduction, so write the real index loop. A vector used in the loop is read before the guard; one used only in the guard sinks.
+- A non-inline callee near the 175 cap gives a narrow IL window: more charge per site, and two more locals stop it expanding at all.
+- A local helper taking the record and a const& gives a charge without a global operator= changing other rows. Naming values in a helper raises its size, so a later ctor site can be refused (0x565E20).
+- `rowx += count; x = rowx` rotated three long webs in 0x563D80.
