@@ -1488,3 +1488,6 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout650 (2026-11-03, closed; 0 B; resume in build/class-work/Scout650/NOTES.md, drafts w/keep/)
 - Overlay Mark 0x5DA970 (3,251 B): 99.30, shape 100 (one place-loop Y operand order). IPXManager Service 0x525F60 (2,704 B): 97.99 (0 cached in ebp shared with the final loop index). Hover While_Moving 0x4FCBC0 (3,696 B + 32 B table): 86.93 first draft.
+
+## Scout651 (2026-11-03, closed; 4,466 B: bridge span twins 0x556520/0x557090, Place_Wall 0x56A660, Unregister_Subzone_Connection 0x566C30)
+- Repair_Bridge 0x555A60: 88.86 at HEAD headers (the 99.75 no longer reproduces; w/keep/rb1.cpp; one spot at +0x371). Damage_Low_Bridge family (5.2 KB): 98.73 (w/keep/de2.cpp, fcc.cpp); landing it means re-landing the four Spring/0x55FA60/0x55FB90 sources.

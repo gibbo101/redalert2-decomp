@@ -28,6 +28,11 @@ struct ZoneConnectionClass {
 // 0x0056AAA0 divides by 8); contents unknown.
 struct SubzoneConnectionStruct {
     SubzoneConnectionStruct() : unknown_00(0), unknown_04(false) {}
+#ifdef RA2_MAP_BRIDGE_PIECES
+    // The Unregister_Subzone_Connection 0x00566C30 arguments (built in place, not stored field by field).
+    // Guarded: another declaration here re-rolls Print_CRCs through the per-unit counter.
+    SubzoneConnectionStruct(int id, bool flag) : unknown_00(id), unknown_04(flag) {}
+#endif
     // Member-wise: VectorClass<SubzoneConnectionStruct>::Fetch (0x0040B050) copies the byte alone.
     SubzoneConnectionStruct(SubzoneConnectionStruct const &other)
         : unknown_00(other.unknown_00), unknown_04(other.unknown_04)
