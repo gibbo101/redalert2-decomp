@@ -1,3 +1,11 @@
+#define RA2_COORD_POINT_Z
+#define RA2_TPOINT3D_DIFFERENCE
+#define RA2_COORD_TPOINT3D
+#define RA2_COORD_CELL_BASE_INIT
+#define RA2_COORD_AS_CELL
+#define RA2_CELL_AS_COORD
+#define RA2_COORD_FROM_CELL_INLINE
+#define RA2_TRACK_POINT_STRUCT
 #define RA2_SHIP_MOVE_TO_VALUE
 #define RA2_SHIP_CELL_ACCESSORS
 // Header-static dynamic initializers of the unit at 0x00675410:  the

@@ -22,6 +22,9 @@ struct Point2D;
 #if defined(RA2_COORD_AS_CELL) || defined(RA2_COORD_FROM_CELL) || defined(RA2_COORD_FROM_CELL_INLINE)
 class Cell;
 #endif
+#ifdef RA2_TPOINT3D_DIFFERENCE
+double __cdecl unknown_sqrt_4ba410(double value);     // 0x004BA410
+#endif
 #ifdef RA2_COORD_TPOINT3D
 // Coord's point base (layout and sum hypothesis evidenced by AnimClass 00420110).
 template<class T> class TPoint3D : public TPoint2D<T> {
@@ -36,6 +39,12 @@ public:
         return TPoint3D<T>(this->X + point.X, this->Y + point.Y, Z + point.Z);
 #endif
     }
+#ifdef RA2_TPOINT3D_DIFFERENCE
+    // TibSun point.h: the member-wise difference and the length through the fast square root.
+    TPoint3D<T> const operator-(TPoint3D<T> const &point) const { return TPoint3D<T>(this->X - point.X, this->Y - point.Y, Z - point.Z); }
+    // Separate from the out-of-line 0x0041B780 (owner ruling): x, y, z through the fast square root.
+    T Length() const { double x = this->X; double y = this->Y; double z = Z; return T(unknown_sqrt_4ba410(x * x + (y * y + z * z))); }
+#endif
     T Z;
 };
 struct CoordStruct : public TPoint3D<int> {
@@ -66,6 +75,10 @@ struct CoordStruct {
     // its first include of this header.
     int Length() const;
 #endif
+#ifdef RA2_COORD_POINT_Z
+    // TibSun Coord(TPoint2D, z): a point at a height.
+    inline CoordStruct(struct Point2D const &point, int z);
+#endif
 #ifdef RA2_COORD_FROM_CELL_INLINE
     // The centre of a cell at height z (out of line 0x0061EA80; inline in Building.cpp).
     CoordStruct(Cell const &cell, int z = 0);
@@ -73,7 +86,9 @@ struct CoordStruct {
     // From the point an INI reader returns (defined in shared/ini_class.hpp).
     CoordStruct(INIPoint3D const &point);
     // Member-wise difference (0x004348F0 is the out-of-line copy the BuildingLight unit keeps).
-#ifdef RA2_COORD_MINUS_SOURCE
+#ifdef RA2_TPOINT3D_DIFFERENCE
+    using BASECLASS::operator-;
+#elif defined(RA2_COORD_MINUS_SOURCE)
     // The member's own source supplies the independently bounded out-of-line copy.
     CoordStruct operator-(CoordStruct const &coord) const;
 #else

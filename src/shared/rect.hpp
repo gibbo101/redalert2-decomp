@@ -47,8 +47,16 @@ struct RectPoint2D {
 struct COMPoint2DStruct { int X, Y; };
 #endif
 
+#ifdef RA2_TRACK_POINT_STRUCT
+// The plain point of a track table (TibSun Point2DStruct, comtypes.h).
+struct Point2DStruct { int X, Y; };
+#endif
 struct Point2D {
     Point2D() {}
+#ifdef RA2_TRACK_POINT_STRUCT
+    void Set_Point(int x, int y) { X = x; Y = y; }
+    Point2D(Point2DStruct const &point) { Set_Point(point.X, point.Y); }
+#endif
 #ifdef RA2_LOCOMOTION_COM_VALUE_TYPES
     Point2D(COMPoint2DStruct const &point) : X(point.X), Y(point.Y) {}
 #endif

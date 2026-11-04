@@ -160,7 +160,11 @@ struct TrackControlStruct {
 // track at (-1 none), the entry point, and the point whose cell is marked
 // ahead (-1 none). Drive.cpp and Ship.cpp each have a table.
 struct TrackType {
+#ifdef RA2_TRACK_POINT_STRUCT
+    Point2DStruct Offset;               // +0x00
+#else
     Point2D Offset;                     // +0x00
+#endif
     int Facing;                         // +0x08
 };
 struct RawTrackStruct {
