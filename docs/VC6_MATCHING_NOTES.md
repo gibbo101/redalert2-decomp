@@ -1232,3 +1232,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `if (fail) x = false; if (x && y) {...}` as two statements stops a cross-jump. Repeating `Is_Valid()` in both arms keeps a second test that nesting threads away.
 - The block scope of one Cell can decide constant caching across a whole function, so test scope before constant probes: `Cell end` declared in each loop body took 0x587330 from 78.56 to 99.06.
 - Unused file-local inlines are not budget sites. Count with Nop probes, then replace them with real helpers.
+
+## Forward substitution and threaded flags (Scout672)
+- Tree forward substitution is block-local and runs before threading. A local defined in the block before a known-result flag test stays a web, even though threading later merges the blocks: `bool valid = false; int first; if (a && b) { first = start.X; valid = true; } if (valid && end.X - first >= 6)` gives a right-operand-first `sub`. Helpers, casts and negations all normalize to one tree.
+- Rotation model: pure eax/ecx/edx rotation where a register still live as a later operand's source is skipped.
+- Twin arms need not share a form: each read order is what the rotation at that arm needs (0x582FD0).
+- A read through inline `Get_Cell_Data(cell->MapCoords)` keeps the second Y read uncached and the cell pointer in ecx.
