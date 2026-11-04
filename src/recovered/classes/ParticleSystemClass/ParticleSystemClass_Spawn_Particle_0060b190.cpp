@@ -7,12 +7,13 @@
 
 ParticleClass *ParticleSystemClass::Spawn_Particle(CoordStruct const &coord, CoordStruct const &target)
 {
-    if (Class->HoldsWhat != -1) {
-        ParticleClass *particle = new ParticleClass(ParticleTypes[Class->HoldsWhat], coord, target, this);
-        if (particle != 0) {
-            Particles.Add(particle);
-            return particle;
-        }
+    if (Class->HoldsWhat == -1) {
+        return 0;
+    }
+    ParticleClass *particle = new ParticleClass(ParticleTypes[Class->HoldsWhat], coord, target, this);
+    if (particle != 0) {
+        Particles.Add(particle);
+        return particle;
     }
     return 0;
 }
