@@ -1,9 +1,17 @@
 // Quaternion rotation about a normalized axis.
 #include "shared/quaternion.hpp"
+// Vector3::Length, one call deep: Trackball inlines this row.
+inline float Quat_Vector_Length(Vector3 const &vector)
+{
+    return Fast_Sqrt(vector.X * vector.X + vector.Y * vector.Y + vector.Z * vector.Z);
+}
 inline Vector3 Normalize(Vector3 const &vector)
 {
-    float length = vector.Length();
-    if (length != 0.0) return vector / length;
+    float length = Quat_Vector_Length(vector);
+    if (length != 0.0) {
+        double divisor = length;
+        return Vector3((float)(vector.X / divisor), (float)(vector.Y / divisor), (float)(vector.Z / divisor));
+    }
     return vector;
 }
 Quaternion __fastcall Axis_To_Quat(Vector3 const &axis, float angle)
