@@ -1541,3 +1541,10 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout662 (2026-11-04, closed; 0 B; drafts build/class-work/Scout662/w/keep/, overlay w/h2; Scout664 continues)
 - OWNER DECISION: `switch (found) { case false: S; break; default: F; }` on a bool is acceptable source: it is semantically plain and the normal iteration the process allows. `Is_Span_EW(overlay, base)` stays as a file-local helper if 0x569320 lands; its name is a hypothesis.
 - 0x569320 99.49, shape 100 (d_9949.cpp; `search` lands in [2c], the original has [14]; needs a join that survives until tail merge without adding refs to `search`). 0x566340 51.41, shape 97.61, calls equal (c_5141.cpp; ebx/edi swap plus spill order; `Cell_Passability` must become a MapClass inline under RA2_MAP_BRIDGE_PIECES before landing). 0x564290 42.47 and 0x563D80 76.89 unchanged.
+
+## Scout663 (2026-11-04, closed; 3,975 B: corner ramps SE 0x5743F0, NE 0x574930 with SW re-rolled; Generate_Rural_Roads 0x58A1B0; drafts build/class-work/Scout663/w/keep/)
+- OWNER DECISION: `Road_Tile_Set`, a file-local one-line `tile!=0xffff` helper in Rural_Roads, stays as landed: real semantics, name unevidenced, it supplies two free /Ob2 sites. The named `top` plus written-out Rect height is ordinary iteration.
+- Find_Dirt_Road_Tile 0x58A6E0 (736 B): 96.60, shape 99.51 (find_58a6e0_9660.cpp + Map_Clamped_g1.cpp; loop count and walker eax/ecx swapped; needs 0x5798F0 re-rolled to `mean-deviation>maximum`, not fully checked). Urban 0x587CF0 90.73, Radar 0x634670 97.35 (7 init-order forms flat), Save_List_Selection 0x5C5FF0 94.38 (slot order follows surviving references) stay parked.
+
+## Scout664 (2026-11-04, closed; 0 B; Map.CPP continuation PARKED after two zero-byte lanes; build/class-work/Scout664/NOTES.md lists what was ruled out)
+- 0x569320 99.49: about 60 variants, plateau. Only a real source-level idea reopens it (a join block that survives tail merge and emits nothing; rotated loops give [14] but the head copies never merge). 0x566340 64.37, shape 98.45 (c_6437.cpp; register-clean, frame slots left; `Cell_Passability` still to move). 0x564290 42.47, 0x563D80 76.89 unchanged.

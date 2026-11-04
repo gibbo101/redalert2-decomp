@@ -1182,3 +1182,14 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `for (;;)` and `do ... while (true)` rotate the loop, `while (true)` does not; an inlined `if` in the head stops the rotation.
 - Reading a field twice keeps a one-use pointer local alive while CSE still gives one load.
 - One extra inline depth moves a nested refusal: an accessor at the same level as 0x54FA60 took 0x566340 to 18 of 18 calls.
+
+## Threading and slot weight (Scout663)
+- `if (placed && success)` with a named bool keeps `success` in memory, because threading would have to cross the placed test; it also fixes block layout.
+- `while (queue.Count != 0) { if (queue.Count >= 1020) break; ... }`, then the drain loop, then `if (processed > 1) return true; return false;` gives the shared false tail through threading.
+- A rotated top-register tie unmoved by k probes was init order: `int attempt = 0` after the random offset.
+- Rows accepted in another population can expand through file-local `inline` definitions in the draft, with no allow_split.
+- Stack slot order is weighted by references that survive to final code; code-free references do nothing.
+
+## Cross-jump and callee-saved swaps (Scout664)
+- Reading both coordinates of a const& into named ints before the arithmetic keeps Y in a callee-saved register and can flip a whole-function callee-saved swap (0x566340).
+- In a cross-jump the first copy in layout stays unless a later one falls into the join. Scheduling runs after tail merge. A rotated loop, or a second call at the bottom, adds one frame ref (the copy's lea) without changing the tail. Loop-bottom tests known true fold before tail merge, so the join block stays empty.

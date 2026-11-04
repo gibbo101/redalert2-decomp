@@ -2,7 +2,7 @@
 // Explicit specialization owns this original out-of-line copy; semantics match the shared template.
 #include "shared/lobby_name_set.hpp"
 
-template <> void WolDictionary<WideString, bool>::Grow_Table()
+template <> inline void WolDictionary<WideString, bool>::Grow_Table()
 {
     if (ResizeLocked != true) {
         int old_count = BucketCount;
