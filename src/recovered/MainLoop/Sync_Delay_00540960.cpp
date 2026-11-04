@@ -13,7 +13,7 @@
 // @ref ?unknown_frames_this_second_a6eb18@@3IA=00a6eb18
 // @ref ?Wait_For_Surface_Blit_004961d0@@YAJXZ=004961d0
 // @ref _atexit=0078298a
-// @ref _?$S72@?BJ@??Sync_Delay@@YIXXZ@4EA=00a6eb81
+// @ref _?$S73@?BJ@??Sync_Delay@@YIXXZ@4EA=00a6eb81
 // @ref _?fps_timer@?BJ@??Sync_Delay@@YIXXZ@4V?$CDTimerClass@VSystemTimerClass@@@@A=00a6eb60
 
 void __fastcall Sync_Delay()
