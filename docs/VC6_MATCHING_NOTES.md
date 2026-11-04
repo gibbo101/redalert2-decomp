@@ -1466,3 +1466,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A named `float length = (float)sqrt(sum); return length;` inside an inline Length sinks the fstp past the next load.
 - A member-style inline for a field read stops CSE across a virtual call (83 to 94).
 - Per-arm `faceto = Dir_To_256(...)` keeps the `and eax,0xff` that a single assignment folds into movsx. `int facing = 0` before the first test gives a shared zero web.
+
+## Reassignment and zero webs (Scout710)
+- Reassigning one variable (`here = Map.f(here, ...)`) gives a `mov ax,dx` X copy and a shared slot; a new named Cell does not.
+- Wrapping distance in inline helpers keeps Center temps block-lived; three distance sites in one `||` statement otherwise each hold their own temps (frame 0x80 to 0x54).
+- `default: break;` on a switch can give the zero constant a register web across the whole function.
+- Tail merging and a far earlier vptr register can flip on a local changed much later: treat these as the hidden-counter class.

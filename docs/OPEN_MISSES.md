@@ -1734,3 +1734,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout708 (2026-11-04, closed; Unit What_Action 0x703BD0 1,559 B; drafts build/class-work/Scout708/w/keep/; Scout710 continues)
 - OWNER DECISION: `Land_Type_00703bd0` and `UnknownBuildingView_00703bd0` stay as landed.
 - Fire_At 0x6CA890 83.80, shape 99.83, 8 hunks (g5_8380_h8.cpp); best raw 87.06 (g2_8706_h15.cpp). Building and bolt arms evict `weapon` alternately. @refs unaudited. Desired_Load_Dir 0x704730 78.93. Tunnel 0x6FAA30 45.37. Mission_Attack: the float Length mechanism does not explain its spills (80.68 at most; temps, not a struct). Undrafted: 0x6FF690, 0x701580 (4,128 B), 0x7025A0 (2,496 B).
+
+## Scout710 (2026-11-04, closed; 0 B; drafts build/class-work/Scout710/w/keep/, NOTES.md)
+- Unit Draw_It slot 67 0x700E70 (1,328 B) 92.87, shape 100 (u67_a_9287.cpp; frame 0x48 vs 0x40, radians and Move_Coord result share one slot). Do_MISSION_HARVEST slot 131 0x7025A0 (2,496 B) 91.66 (h1c_9166.cpp, overlay h/; 5 hunks; `FootClass::unknown_4cb830` takes bool arg2 if it lands; recheck slot 87 0x7072D0 too). Desired_Load_Dir 78.93. Tunnel 45.37, Fire_At 87.06 parked. 0x707F60 to 0x709790 look like one function of about 6 KB with a broken bound.
+- Owner tool note: accept.sh now stops on any `"error"` in the accept log. Before this, a composite pass could succeed while a later pass refused a new row (codex1 r1077, commits 71c082a8e and e5841bccd landed no bytes).
