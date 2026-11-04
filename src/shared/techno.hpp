@@ -777,6 +777,8 @@ public:
     virtual int Size_Of() const;                                      // slot 12 0x00453BF0
     virtual void unknown_slot216(int arg1);                           // slot 216 0x00449170
     int unknown_4532f0();               // 0x004532F0
+    bool unknown_44d880();              // 0x0044D880 (as shared/building_class.hpp)
+    bool Cell_Is_Impassable_Row_00453af0(CellClass const *cell);    // 0x00453AF0 (as shared/building_class.hpp)
     bool unknown_44d900(BuildingTypeClass const *upgrade, HouseClass *house);   // 0x0044D900 (as shared/building_class.hpp: the upgrade may power up this building)
     void unknown_450950();              // 0x00450950 (a firestorm wall building switches its state; HouseClass 0x004EE8F0/0x004EEA40)
     bool Unknown_00452EB0(TechnoClass *techno);     // 0x00452EB0 (whether techno may enter; InfantryClass slot 132)

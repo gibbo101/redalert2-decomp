@@ -1710,3 +1710,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout703 (2026-11-04, closed; Spread_Tiberium 0x478A40 352 B; drafts build/class-work/Scout703/w/keep/; Scout704 continues)
 - OWNER DECISION: the four plain named locals in 0x478A40 (`overlay`, `count`, `facing`, `amount`) stay: used locals, T phase demands the count.
 - Can_Enter_Cell 0x703040 (2,952 B) 94.91, shape 99.32 (sy3.cpp, overlay h/shared/techno.hpp; a vptr reload at 0x9EF; named index flips this/cell). RTacticalClass::Action 0x62FE30 (1,225+7 B with a byte table) 96.92 (rg5.cpp). Render_Radar 0x633210 43.42. Radar 0x634310 is not a row (inside 0x6340F0). Techno 0x6D0DC0 has no twin; its body runs across false row 0x6D10BD. Undrafted: Fire_At 0x6CA890 (6,019 B), Unit slot 310 0x6FF690, Tunnel 0x6FAA30.
+
+## Scout701 (2026-11-04, closed; UnVQ2_C0_4x4_TRANS 0x77D940 1,101 B from codex1's r1039 draft, as a new one-row population; Dropship PARKED)
+- OWNER DECISION: the one-row population stands; moving 0x77E1A0/0x77E5B0 into that unit is a later step if the TU split is confirmed.
+- Dropship 0x4A6B90 parked at 99.83 (Scout701 w/d3.cpp, w/s2.cpp; 99.90 only with dead constants). Resume: explain why the original caches screen_origin.Y in edi and zero in ebx at 0x2096. TibSun does have dropship.cpp. `Read_Dropship_Clock` has no natural reason. Session 99.72, Locale 98.20, Get_Obstacle 97.38, Build_Schemes 95.82, ServerWait 96.21 parked.

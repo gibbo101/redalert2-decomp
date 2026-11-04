@@ -1432,3 +1432,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A vptr reload after a nested virtual argument means a separate statement: within one expression tree VC6 CSEs `*this`.
 - `mov eax,K; jmp` into `cmp [r],eax` is a join on a named value.
 - Scout703's sh.py is a structural diff with registers and frame offsets normalised: the fastest first read of a new draft. tp.py + ts.sh run a T phase scan.
+
+## First function of a TU (Scout701)
+- VC6 does not tail-merge two identical tails in the first function of a TU; any function before it, even a trivial one, turns the merge on. Blank lines before it or functions after it change nothing. Check this for rows that differ only by a merged tail.
+- Local constants count as locals for T: plain `const int` locals act like probes, `static const int` do not.
