@@ -1,3 +1,4 @@
+#define RA2_COORD_FROM_CELL_INLINE
 // Header-static dynamic initializers of the unit at 0x006EF9F0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x006EF9F0-0x006EFBD6); the other

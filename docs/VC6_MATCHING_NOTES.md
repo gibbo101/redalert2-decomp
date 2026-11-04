@@ -1365,3 +1365,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A two-arm `if (train) cando = 0; else if (crusher...) cando = 0;` fixed a join reload and cleared several rotation residues at once.
 - `FootClass *unit = LinkedTo;` before a test explains a load ahead of the test. A scoped block around a named `CoordStruct center` fixes evaluation order and frame slot.
 - A fild order of Y, Z, X comes from a rotated Length with declarations y, z, x. An inline chain's symbol depth counts toward T: a rotated helper needs the same depth as the plain one. Removing named locals is not always the inverse of adding probes.
+
+## By-value parameters and Matrix3D (Scout692)
+- A by-value parameter that is never exposed keeps fields in registers (`to.X` and `to.Y` in esi/edi): write `x = CoordStruct(to.X, to.Y, to.Z);` and `Map[CoordStruct(to)]`. Field-written copies give frame misses (Jumpjet Move_To 35 to 94).
+- `f(CoordStruct(cell))` evaluates in place; `f(Cell_Coord(cell))` hoists before the pushes.
+- Draw_Matrix: `Matrix3D transform` at function scope, `transform = transform * Get_Slope_Matrix() * basemtx * rotation;` keeps slope temps in the multiply statement. An empty `~Matrix3D() {}` stops the by-value slope helper from inlining.
+- Frame order follows final-code refs: code-free references and dead objects never move it, a real extra ref does.

@@ -1660,3 +1660,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout690 (2026-11-04, closed; 16,746 B: Ship Start_Of_Move 0x6785C0, Drive Start_Of_Move 0x4A2670, with the slot 302 Overrun_Square rename; build/class-work/Scout690/NOTES.md; Scout692 continues with Draw_Matrix)
 - OWNER DECISION: `here`, `next`, `unit`, `found` with `bool &result = found`, the scoped `center`, phase locals `overlay`, `ttype`, `dist`, `Adjacent_Coord_SOM` with free operator+(CoordStruct, Point2D), `Length_YZX`/`Distance_YZX` and the `(CellClass const *)` cast stay as landed. All live source; no natural reason known for the YZX forms.
 - Draw_Matrix 0x676010 (97.08) and Drive 0x4A0050 (83.48) not reached.
+
+## Scout692 (2026-11-04, closed; 0 B; drafts build/class-work/Scout692/w/keep/, NOTES.md; Scout693 continues)
+- Ship Draw_Matrix 0x676010 95.91, shape 100, zero non-frame lines (f3.cpp, srE.cpp, hs.cpp, overlay ov_f3/; frame groups B0/E0, 110/170, 1D0/200 swapped). Scout592's 97.08 needed unlanded helper rewrites. It would need a Matrix3D unit guard with no user copy ctor, a rename to by-value Get_Slope_Matrix, and Slope_Ratio's unevidenced srE form. Drive 0x4A0050 not ported.
+- Jumpjet Move_To 0x52F600 94.10, loose 99.43 (j10.cpp + jdef.cpp; X reload order). Tunnel 0x6F0730 96.31. Rocket Move_To 0x63EA80 60.00 (202 B body). Mech 0x5919A0 76.73. Not reached: Rocket 0x63DE10, Tunnel Stop_Moving 0x6EFDE0, Walk 0x71E220. Ship and Drive have no other gaps; Hover has none.
