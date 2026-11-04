@@ -1320,3 +1320,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A charge of about 54 to 130 before a site splits depth-3 sites; it must sit where it does not disturb argument evaluation (a wrapper on Fancy_Text_Print is exact, one on CC_Draw_Shape is not).
 - A member with "no callers" may be inlined: WM_CHAR is really `if (flag) Put_Char(wparam)`, which alone explains a last-site call. Check such members before adding pending sites.
 - A duplicated case tail can be fall-through. Mixed `jl top; jmp tail` is a for-loop with a guard, not `while (true)`. TibSun's `-30 + pixel.X + 30` is really `pixel.X -= 30; point.X = pixel.X + 30`.
+
+## Frame placement and address-taken order (Scout684, Ship 0x676F60 from 86 to 99)
+- Frame objects are placed in descending last-ref order, newest compatible slot first. One named `Cell gate = c.As_Cell();` made a temp share a slot and fixed the frame size.
+- An address-taken local's store sits ahead of later reads, forcing a copy: `Cell a0 = ...; Cell b0 = ...; Cell newcell = ...; if (a0 != b0)` keeps the reads first.
+- T phase depends only on the total count, not where a local sits, and the distance between two sites matters, not just the total. Identifier renames change nothing.
