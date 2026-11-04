@@ -1,6 +1,6 @@
 // @ref ?unknown_bitmap_writer_a76378@@3VUnknownBitmapWriter@@A=00a76378
 // @ref ?Get_Image_0068ca40@UnknownBitmapWriter@@QAEPAVSurface@@PBDH@Z=0068ca40
-// @ref ?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z=0068cf90
+// @ref ?Draw_0068cf90@UnknownBitmapWriter@@QAE_NABVRect@@PAVSurface@@11PAEHHH@Z=0068cf90
 // @ref ?unknown_brighten_palette_68bce0@@YIXPAE@Z=0068bce0
 // @ref ??_C@_0L@HADO@bits_a?4pcx?$AA@=007eb570
 // @ref ??_C@_0L@HBBE@bits_i?4pcx?$AA@=007eb57c

@@ -4,8 +4,8 @@
     "id": "population-3826",
     "inventory_sha256": "ba981aaaeede8e981ebb305658cc9170ff773a85ea21d59d2760a5108e0219af",
     "gaps_sha256": "55b397fb3ddad3605dc383a3183b602bea2e04cbf32c493dec4c0dfc2a84c07a",
-    "historical_population_sha256": "9c2402dbd97251f2bc9e7e1668b62d0c46051c306d3f72c229692025ec27a45b",
-    "historical_acceptance_sha256": "b8171a970d80e9ff29d66dac11bf49284fbf6c06942a8e8a0051b6f68f396bd7"
+    "historical_population_sha256": "dd3c66b235ea167c5d67e41897c3da363f27ea62ff91dd1694a84cb3aa9a1b87",
+    "historical_acceptance_sha256": "d150f4b4d9353908b86aba0bf7f8d8868cf37fa82ec0a077614eaec0b20f2f48"
   },
   "references": {
     "_stricmp": 7872288,
@@ -7861,7 +7861,7 @@
     "?unknown_5e4780@OwnerDraw@@YGHPAUHWND__@@J@Z": 6178688,
     "?unknown_show_dialog_5e61b0@OwnerDraw@@YI_NPAUHWND__@@@Z": 6185392,
     "?unknown_brighten_palette_68bce0@@YIXPAE@Z": 6864096,
-    "?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
+    "?Draw_0068cf90@UnknownBitmapWriter@@QAE_NABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
     "??0UnknownControlRecord@OwnerDraw@@QAE@XZ": 6292208,
     "?Set_Text_600560@UnknownControlRecord@OwnerDraw@@QAEXPBD@Z": 6292832,
     "??4UnknownControlRecord@OwnerDraw@@QAEAAU01@ABU01@@Z": 6292928,

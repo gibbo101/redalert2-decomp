@@ -4,8 +4,8 @@
     "id": "population-3426",
     "inventory_sha256": "6cde89bea531f503e86a0c785f67aebc8c5f451f75803494d6f72d99d2734055",
     "gaps_sha256": "3862e46e6c2c0a574679c32c236664863e1da80729bbe8c4fae41829df55a54d",
-    "historical_population_sha256": "564fa75ecf41997c9cd3c8305a437ef37c33a1a66554d6f158c6611a63b562a0",
-    "historical_acceptance_sha256": "acf70eb57d6d4ca6fa7a2111e6396c7d6771cc452e716cbb71a73f215e4f4bbd"
+    "historical_population_sha256": "e4203f034bd5358960a2f17460e44c879a6c7e45f17085d24e56efe057006f26",
+    "historical_acceptance_sha256": "0be7f217c547b741cb4e9ac14bd1b0e404a432229d3fbffdb3691148890cb7d0"
   },
   "references": {
     "_unknown_static_rect": 11260112,
@@ -10794,7 +10794,7 @@
     "?Shrink_Table@?$WolDictionary@VWstring@@H@@QAEXXZ": 7764048,
     "?Grow_Table@?$WolDictionary@VWstring@@H@@QAEXXZ": 7764224,
     "?unknown_brighten_palette_68bce0@@YIXPAE@Z": 6864096,
-    "?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
+    "?Draw_0068cf90@UnknownBitmapWriter@@QAE_NABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
     "?Shrink_Table@?$WolDictionary@VWideString@@_N@@QAEXXZ": 6085024,
     "?Load_Image_0068ca20@UnknownBitmapWriter@@QAEXPBD@Z": 6867488,
     "??_GWstring@@QAEPAXI@Z": 7759808,

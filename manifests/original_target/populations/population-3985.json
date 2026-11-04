@@ -4,8 +4,8 @@
     "id": "population-3985",
     "inventory_sha256": "3bcb19c8d496158951f7ad73e4c1180e16bc1d2ffd8dcf6794e40f265ebf7ba9",
     "gaps_sha256": "904433461410aa5adf6809d23d1e30d937684796b9fb34b55f3ad671cd81ab94",
-    "historical_population_sha256": "d0ef352a4535e31739017d1addd8c392f481de93b4296ae29c6091f4c76d0ccb",
-    "historical_acceptance_sha256": "6df1fa5b239df86183d01212296264c717282f927354ff656a90508ecfe2d0ea"
+    "historical_population_sha256": "2320f183b43abc5ccbd47302ea9f7bff1199d5b781915cd34bcbd07baca94c75",
+    "historical_acceptance_sha256": "0f47bb1959ce09c841cf9bd90ca6a586bd6146876d7683d488398581acede3e5"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -8780,7 +8780,7 @@
     "?unknown_5e4780@OwnerDraw@@YGHPAUHWND__@@J@Z": 6178688,
     "?unknown_show_dialog_5e61b0@OwnerDraw@@YI_NPAUHWND__@@@Z": 6185392,
     "?unknown_brighten_palette_68bce0@@YIXPAE@Z": 6864096,
-    "?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
+    "?Draw_0068cf90@UnknownBitmapWriter@@QAE_NABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
     "??0UnknownControlRecord@OwnerDraw@@QAE@XZ": 6292208,
     "?Set_Text_600560@UnknownControlRecord@OwnerDraw@@QAEXPBD@Z": 6292832,
     "??4UnknownControlRecord@OwnerDraw@@QAEAAU01@ABU01@@Z": 6292928,

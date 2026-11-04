@@ -4,8 +4,8 @@
     "id": "population-3936",
     "inventory_sha256": "bdef047fdff6c28afcb5cb6c52886d3227a5dd64bb3da7a2251470237257d744",
     "gaps_sha256": "057dacce9200424d674309101d89b5f526aa74722bd26fb95fd50b9dd71977de",
-    "historical_population_sha256": "851b22b2f52b0c2aa3c6f5ce6362a44137d5c2b28602573845402c1950ef6470",
-    "historical_acceptance_sha256": "2096286fa50e8743dfe3aa7c423a1d5e542054dace688862304e162259889a72"
+    "historical_population_sha256": "a293b36e4ba58ca4795da483258045db339e6242f7c470c04c7bdd479b465f2c",
+    "historical_acceptance_sha256": "c4be3d59f541b4192fdf1515689e577b7095fc87e81622d9b77cc8e055a55832"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2338,7 +2338,7 @@
     "??_C@_0P@BHGD@guparrow?$CFc?4pcx?$AA@": 8303968,
     "??_C@_0P@INFD@gdnarrow?$CFc?4pcx?$AA@": 8303952,
     "?Get_Image_0068ca40@UnknownBitmapWriter@@QAEPAVSurface@@PBDH@Z": 6867520,
-    "?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
+    "?Draw_0068cf90@UnknownBitmapWriter@@QAE_NABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
     "?unknown_brighten_palette_68bce0@@YIXPAE@Z": 6864096,
     "??_C@_0L@HADO@bits_a?4pcx?$AA@": 8303984,
     "??_C@_0L@HBBE@bits_i?4pcx?$AA@": 8303996,
@@ -10730,7 +10730,34 @@
     "?Add_At@?$WolArrayList@VWstring@@@@QAEDAAVWstring@@H@Z": 7764416,
     "?Grow@?$WolArrayList@VWstring@@@@QAE_NXZ": 7766816,
     "_?sounds@?4??Initialize_WDT_Sounds_00752210@@YIXXZ@4PAVWstring@@A": 11704272,
-    "?unknown_func_4f5d30@HouseClass@@QAE_NH@Z": 5201200
+    "?unknown_func_4f5d30@HouseClass@@QAE_NH@Z": 5201200,
+    "?Get@WolServerArray@@QAE_NAAPAUServer@WOL@@H@Z": 7757408,
+    "??8Cell@@QBE_NABV0@@Z": 5238560,
+    "__real@4@400c9c3c000000000000": 8027432,
+    "?Add@?$DynamicVectorClass@PAVParticleClass@@@@QAE_NABQAVParticleClass@@@Z": 6344784,
+    "?Add@?$DynamicVectorClass@VCell@@@@QAE_NABVCell@@@Z": 5683760,
+    "__real@8@3fe2b0000000b0000000": 8020072,
+    "__real@8@3fe3a8000000a8000000": 8019984,
+    "__real@8@4005a000000000000000": 8019976,
+    "__real@8@3ff1d1b71758e2196800": 8019944,
+    "__real@8@3ff6a3d70a3d70a3d800": 8019936,
+    "_?scale@?1??Seed_Hill_Heights_00584730@UnknownMapGenerator@@QAEXXZ@4NB": 8019200,
+    "__real@8@c0008000000000000000": 8019928,
+    "__real@8@bffe8000000000000000": 7981488,
+    "__real@8@4001afeddf4ddd3ba800": 8019824,
+    "__real@8@3ffe860a91c16b9b2800": 8019816,
+    "__real@8@3ffb8f5c28f5c28f6000": 8019808,
+    "__real@8@3fe5b6000000b6000000": 8019800,
+    "__real@8@4000a78d3631c681f800": 8019784,
+    "__real@8@bffda0d97bb4e7870000": 8019776,
+    "__real@4@3ff9a72f050000000000": 8048688,
+    "??ZPoint2D@@QAEAAU0@ABU0@@Z": 6998096,
+    "__deaccel": 8033976,
+    "__sinking_scale": 8033992,
+    "__sinking": 8033984,
+    "__real@8@3ffbba2e8ba2e8ba3000": 7996880,
+    "__real@8@4001e000000000000000": 7996872,
+    "__real@8@3ffc9249249249249000": 7996864
   },
   "regions": [
     {
@@ -20906,7 +20933,7 @@
         {
           "offset": 198,
           "kind": 20,
-          "symbol": "?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z",
+          "symbol": "?Draw_0068cf90@UnknownBitmapWriter@@QAE_NABVRect@@PAVSurface@@11PAEHHH@Z",
           "target": 6868880,
           "addend": 0,
           "resolved": 582070
@@ -20930,13 +20957,13 @@
         {
           "offset": 294,
           "kind": 20,
-          "symbol": "?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z",
+          "symbol": "?Draw_0068cf90@UnknownBitmapWriter@@QAE_NABVRect@@PAVSurface@@11PAEHHH@Z",
           "target": 6868880,
           "addend": 0,
           "resolved": 581974
         }
       ],
-      "source_sha256": "7df36e022625401798e416cbd8f3f49329cec0cd3705255b3b2dca6b53e8a9e5",
+      "source_sha256": "b01f3fde6a6b8bdd97099409bd7f71fb56d4fc4b3d23a1f239e812745c851c1c",
       "source": "src/recovered/ownrdraw/OwnerDraw_unknown_draw_bits_5fed10_005fed10.cpp",
       "population": "population-3936",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",

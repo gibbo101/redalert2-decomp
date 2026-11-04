@@ -4,8 +4,8 @@
     "id": "population-3751",
     "inventory_sha256": "4cf028dc0cfa5984694c1a708edc47f5598e0c9b2fe4f446af475467e17f15ff",
     "gaps_sha256": "a6baab4335b570045d6f9e8c4fa8338bdb41f2cbf4f1dae35d9c9e4b1e17fb46",
-    "historical_population_sha256": "8eadae2685c40c326866e373097c61127e47931a2befb65d8d3212f293191bd9",
-    "historical_acceptance_sha256": "f8bdf2565b8f961f8bc2abed999b661fbe7de77c35166f71d209a361e3cae5d6"
+    "historical_population_sha256": "5e080c7d538e7047c1c67bc339c381782e2c80090fbd1fdf09a231be546c4021",
+    "historical_acceptance_sha256": "1b505dd5f604994938368993e9cfb9f002ad70e0575ee7e204827c2c2672570e"
   },
   "references": {
     "??_7rc_ptr_base@@6B@": 8031500,
@@ -7921,7 +7921,7 @@
     "?Get_Image_0068ca40@UnknownBitmapWriter@@QAEPAVSurface@@PBDH@Z": 6867520,
     "?unknown_flag_images_7f86b0@@3PAPBDA": 8357552,
     "?unknown_brighten_palette_68bce0@@YIXPAE@Z": 6864096,
-    "?Draw_0068cf90@UnknownBitmapWriter@@QAEXABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
+    "?Draw_0068cf90@UnknownBitmapWriter@@QAE_NABVRect@@PAVSurface@@11PAEHHH@Z": 6868880,
     "?Get_Value@GaugeClass@@UBEHXZ": 5049472,
     "?Get_Value@FlagGameOption@WorldDominationTour@@UBEHABV?$rc_ptr@VWDTTerritory@@@@@Z": 7506000,
     "?Contains@GraphicMenuItem@@UAE_NABUPoint2D@@@Z": 5112256,

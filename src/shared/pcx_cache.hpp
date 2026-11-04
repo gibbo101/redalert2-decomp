@@ -46,7 +46,7 @@ public:
 #endif
     // Draws image through its alpha image into rect of destination with the palette, from x offset
     // source_x of the image (0x0068CF90; the other arguments are 0 in every caller seen).
-    void Draw_0068cf90(Rect const &rect, Surface *destination, Surface *image, Surface *alpha, unsigned char *palette,
+    bool Draw_0068cf90(Rect const &rect, Surface *destination, Surface *image, Surface *alpha, unsigned char *palette,
                        int arg6, int source_x, int arg8);
 
 #ifdef PCX_CACHE_DECLARE_IMAGES
