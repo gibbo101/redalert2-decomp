@@ -1205,3 +1205,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Source can duplicate a test: giving each distance arm its own `if (range > 0 && dist > range) return false;` took 0x6C5570 from 80 to 91 and fixed frame slots and ebp.
 - 3D `fild` order depends on the key: `double y = c.Y` first, or any extra referenced local, gives Y,Z,X.
 - `*x += y` uses three instructions when a scratch register is free and `add [m],r` when none is, so an RMW mismatch means a register web difference, not a statement form. High-byte tests always load a register, so a lone read can look like a CSE web.
+
+## Refusals by counting, constants and self-copies (Scout667)
+- To refuse a ctor, count the inline sites after it: survey with throwaway `Nop()` sites, then replace them with real one-line helpers, or move IL into helpers to lower the root budget. Real rows defined later in the unit still inline (Map_Clamped_Gaussian).
+- `double const &h = data.f; data.f = h;` keeps a self-copy as integer moves; a plain self-assign vanishes.
+- One shared `tries` int gives the shared frame slot. A named `position` before `Map[]` fixes an eax/edx tie.
+- An implicit `DynamicVectorClass<double>` needs an @ref for each emitted COMDAT.
+- A small `differing_bytes` can be a wrong constant binding the score does not show: 15.0 exists at both 0x7a5398 and 0x7a5ce8; cmp.py plus report.json find it.

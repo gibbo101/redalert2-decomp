@@ -403,7 +403,8 @@ public:
     char unknown_bab[0xBB0 - 0xBAB];
     bool SmallVisceroid;                        // +0xBB0 (as full UnitTypeClass)
     bool LargeVisceroid;                        // +0xBB1 (as full UnitTypeClass)
-    char unknown_bb2[0xBE0 - 0xBB2];
+    char unknown_bb2[0xBD8 - 0xBB2];
+    int FiringSyncFrame[2];                     // +0xBD8 (as full UnitTypeClass)
     int BurstDelay[4];                          // +0xBE0 (TechnoClass slot 187)
 };
 #endif
