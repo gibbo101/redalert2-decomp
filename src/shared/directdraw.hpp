@@ -152,7 +152,11 @@ struct IDirectDraw {
     virtual void __stdcall Unknown_Slot10() = 0;                                 // +0x28; never called here
     virtual HRESULT __stdcall GetCaps(DDCAPS *driver, DDCAPS *emulation) = 0;       // +0x2C
 
+#ifdef DIRECTDRAW_DECLARE_MODE_METHODS
+    virtual HRESULT __stdcall GetDisplayMode(DDSURFACEDESC *description) = 0; // +0x30
+#else
     virtual void __stdcall Unknown_Slot12() = 0; // +0x30; unproved declaration, never called in this packet
+#endif
     virtual void __stdcall Unknown_Slot13() = 0; // +0x34; unproved, never called here
     virtual void __stdcall Unknown_Slot14() = 0; // +0x38; unproved, never called here
     virtual void __stdcall Unknown_Slot15() = 0; // +0x3C; unproved, never called here
@@ -160,8 +164,13 @@ struct IDirectDraw {
     virtual void __stdcall Unknown_Slot17() = 0; // +0x44; unproved, never called here
     virtual void __stdcall Unknown_Slot18() = 0; // +0x48; unproved, never called here
     virtual HRESULT __stdcall RestoreDisplayMode() = 0; // +0x4C
+#ifdef DIRECTDRAW_DECLARE_MODE_METHODS
+    virtual HRESULT __stdcall SetCooperativeLevel(struct HWND__ *window, DWORD flags) = 0; // +0x50
+    virtual HRESULT __stdcall SetDisplayMode(DWORD width, DWORD height, DWORD depth) = 0; // +0x54
+#else
     virtual void __stdcall Unknown_Slot20() = 0; // +0x50; unproved declaration, never called in this packet
     virtual void __stdcall Unknown_Slot21() = 0; // +0x54; unproved declaration, never called in this packet
+#endif
     virtual HRESULT __stdcall WaitForVerticalBlank(DWORD flags,void *event) = 0; // +0x58
 
 };

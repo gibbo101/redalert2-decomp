@@ -29,7 +29,9 @@ public:
 #ifdef PALETTE_DECLARE_MEMBERS
     // The rest of Westwood's palette.cpp (unit 0x00602FD0-0x006031F2; guarded: convert.hpp is in
     // fragile closures and new declarations renumber their $L labels).
+#ifndef RA2_PALETTE_CONSTRUCTORS
     PaletteClass(RGBClass const &rgb);                      // 0x00602FD0 every entry rgb
+#endif
     PaletteClass(unsigned char *binary_palette);            // 0x00603020 from 768 raw bytes
     bool operator==(PaletteClass const &palette) const;     // 0x00603050
     // Moves every entry toward black (or toward palette's entry) by ratio/256 (0x006030A0, 0x006030D0).
