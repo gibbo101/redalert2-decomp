@@ -1402,3 +1402,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Moving two tests into an inline helper fixed frame groups; the density sort moved when one ref left a temp group. Temps in a helper appear block-lived (inferred).
 - `xy + Point2D(o.X, o.Y)` reads the offset first; a copy-form `Point2D(o)` does not. Removing a named reference can save enough budget to keep sites inline.
 - VC6 mangles a free `operator*` as `??D@YI...`; an @ref to it scores 100 locally but is refused at acceptance as unbound. rl2.py lists unbound relocations plan-wide.
+
+## Web weight, narrowing and islands (Scout699)
+- A copy local in one branch halves a web's weight and flips esi/edi without emitting code.
+- Stepwise `x = a; x -= b; x -= 3` on an unsigned short keeps the 16-bit op on the first operand; `a - b - 3` narrows the wrong operand and hoists a push.
+- A 12 B coord written only X,Y through a by-const-ref inline drops the Z store.
+- VC6 moves an island ending in `jmp next` past the next barrier when a threaded xor reaches ELSE. A named struct of doubles with an inline member Length spills only the last value; scalars never spill.

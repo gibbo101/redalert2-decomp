@@ -1691,3 +1691,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - OWNER DECISION: zero-credit takeover of the 1-byte row 0x624840 from population-3817 as the compiler's `_$E79` is approved, the same class as Scout679's and Scout680's atexit moves.
 - Queue_AI 0x623770 can land next: it was waiting on this row.
 - OWNER DECISION (r290): zero-credit takeover of Next 0x62E9E0 from population-42 as QueueClass<EventClass,128>::Next, and QAM file-static under RA2_QUEUE_STATICS, are approved; same ABI and mangling, all accepted Queue rows exact, full build exact.
+
+## Scout699 (2026-11-04, closed; IonBlastClass Draw_It 0x521CE0 711+9 B, undrafted TibSun twin; drafts build/class-work/Scout699/w/keep/; Scout700 continues)
+- OWNER DECISION: `short *pixel = dptr;` stays as landed (a code-free local that splits web weight). 0x43DC50 is not a row: it is interior to Unlimbo 0x43D3A0.
+- Barrel 0x43B7E0 99.13 (bar_9913.cpp, overlay hb/ with signed Facing union, no probe or check yet; file-local XY_0043b7e0 needs a ruling). One_Time 0x521A90 93.29 (ot3.cpp shape 99.36). Captured 0x444660 78.23 (cap.cpp; `#pragma auto_inline(off)` must go). Mission_Attack 0x446920 81.79 (blocked on FP spills). Mark 0x43BFC0 72.36. Take_Damage 0x43EE70 81.11.
