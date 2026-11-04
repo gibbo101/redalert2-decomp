@@ -1698,3 +1698,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout698 (2026-11-04, closed; 0 B; drafts build/class-work/Scout698/w/keep/, NOTES.md; Scout701 has one more attempt)
 - Dropship 0x4A6B90 99.83 (ds_n10_9990_probes.cpp 99.90 with dead locals, not landable). The three sum sites move only with statements that produce a CSE or IV temp, like a hidden counter. peer 99.85, OnUserList 99.73, Session ctor 99.72 unchanged.
+
+## Scout700 (2026-11-04, closed; 1,483 B: Cell_Render_Rect 0x4752B0, Draw_Shadow_Cast 0x4755D0, Draw_It 0x475680, Occupy_Down 0x473B30; drafts build/class-work/Scout700/w/keep/, LIST.md 511 rows; Scout702 continues)
+- OWNER DECISION: the guarded CELL_DECLARE_DRAW_IT block and Fetch_Icon's `count` locals stay as landed. 0x474260 Draw_Shroud_Or_Fog_Shape looks like original inline asm (ebp frame, hand loops comparing a global dword; inferred): treat it as a handwritten-ledger candidate, do not draft it.
+- 0x6A89B0 is the tail of 0x6A88A0. 0x6C9DF0 and 0x6A88A0 have pass-5 sizes far too small. Clear_Icon 0x4767A0 79.05. Laser_Zap 0x6C9DF0 71.54. Grant 0x69CCF0 89.32. Reduce_Tiberium 0x475DB0 76.24. 0x6A88A0 55.76.

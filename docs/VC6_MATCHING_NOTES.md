@@ -1413,3 +1413,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - ebp is never a base without a disp, so `[Data+ebp]` carries no order information.
 - Some sum ties ignore T, self-assigns, plain calls and plain loads, and move only with statements that make a CSE or IV temp, even after the site: they behave like a hidden counter.
 - Dead local count sets regimes almost regardless of position (0-9, 10-11, 12-20, 21+ on Dropship); probes inside one arm do not act like probes at the top.
+
+## MIN spelled out and Point2D forms (Scout700)
+- TibSun's MIN/MAX macro spelled out with the repeated expression differs from a named `last` (94 to exact).
+- A zero constant takes the register of the web defined just after it unless the source assigns that web first.
+- `Point2D p; p.X = q.X; p.Y = q.Y - v;` gives lea/sub and the original registers; `p = q; p.Y -= v` gives shl/neg; `p -= Point2D(0, v)` keeps lea but loses the registers.
+- An ebp frame in an /O2 row plus a dword-compared global in a tight loop points to original inline asm: stop drafting.
+- Low seed scores can be stale; redraft before parking.

@@ -266,6 +266,7 @@ public:
 #endif
 #ifdef CELL_DECLARE_DRAW_IT
     // The cell's tile and smudge at the screen point, unless `objects` (0x00475680; TibSun Draw_It).
+    void unknown_473b30(ObjectClass *object, bool alt);   // 0x00473B30 (TibSun Occupy_Down: links object into the occupier list)
     void Draw_It(Point2D const &point, Rect const &clip, bool objects);
     // The cell tile's cast shadow (0x004755D0; TibSun Draw_Shadow_Cast).
     void Draw_Shadow_Cast(Point2D const &point, Rect const &clip);
