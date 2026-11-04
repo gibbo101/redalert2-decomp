@@ -113,8 +113,7 @@ inline UnknownMapGenerationCell &MapRegionClass::Get_Cell_Data(int index)
 }
 inline UnknownMapGenerationCell &MapRegionClass::Get_Cell_Data(Cell const &position)
 {
-    int index=(int)((unsigned)(int)position.Y*(unsigned)unknown_map_cell_side_84e804+(unsigned)(int)position.X);
-    return unknown_map_cells_a70a24[index];
+    return unknown_map_cells_a70a24[position.X+position.Y*unknown_map_cell_side_84e804];
 }
 inline int UnknownMapGenerationCell::Get_Region(Cell const &position)
 {
