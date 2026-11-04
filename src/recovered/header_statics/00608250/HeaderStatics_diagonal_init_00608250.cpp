@@ -1,3 +1,4 @@
+#define RA2_MATRIX3D_INLINE_COPY
 // Header-static dynamic initializers of the unit at 0x00608250:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x00608250-0x00608436); the other

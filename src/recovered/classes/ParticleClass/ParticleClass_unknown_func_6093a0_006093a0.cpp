@@ -8,16 +8,7 @@
 // @ref ??RRandom2Class@@QAEHXZ=00638840
 // @ref __real@8@4000c000000000000000=0079ca88
 
-// Keeps a value within [low, high].
-static inline void Limit(int &value, int low, int high)
-{
-    if (value < low) {
-        value = low;
-    } else if (value > high) {
-        value = high;
-    }
-}
-
+// Limit: defined by the 0x00608BB0 source earlier in the unit.
 void ParticleClass::unknown_func_6093a0()
 {
     if (Frame & 1) {
