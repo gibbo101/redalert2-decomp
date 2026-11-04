@@ -3,7 +3,7 @@
 #define RA2_SHARED_FACING_HPP
 #include "shared/coord.hpp"
 #include "shared/cd_timer.hpp"
-#ifdef RA2_FACING_DIR256
+#if defined(RA2_FACING_DIR256) || defined(RA2_SHIP_SOM)
 #include "shared/dir_type.hpp"
 #endif
 // A 16-bit direction in a 4-byte value (hypothesis: Westwood's DirStruct;
@@ -17,6 +17,13 @@ struct UnknownFacingDir {
     double As_Radian() const; // original signed16 angle observation
     UnknownFacingDir() {}
     UnknownFacingDir(unsigned short raw) : Raw(raw) {}
+#ifdef RA2_SHIP_SOM
+    UnknownFacingDir(Dir256 dir) { From_Dir256(dir); }
+    void From_Dir256(Dir256 dir) { Raw=0; Raw|=(dir<<8); }
+    void From_Facing(int facing) { Raw=0; Raw |= facing << 13; }
+    UnknownFacingDir(FacingType facing) { From_Facing(facing); }
+    UnknownFacingDir operator-(UnknownFacingDir const &other) const { return UnknownFacingDir((unsigned short)((short)Raw-(short)other.Raw)); }
+#endif
 #ifdef RA2_FACING_DIR256
     UnknownFacingDir(Dir256 dir) { From_Dir256(dir); }
     void From_Dir256(Dir256 dir) { Raw=0; Raw|=(dir<<8); }
@@ -45,6 +52,9 @@ inline bool operator==(UnknownFacingDir const &left,UnknownFacingDir const &righ
 inline bool operator!=(UnknownFacingDir const &left,UnknownFacingDir const &right) { return left.Raw!=right.Raw; }
 #endif
 
+#ifdef RA2_SHIP_SOM
+inline bool operator<(UnknownFacingDir const &left, UnknownFacingDir const &right) { return abs((short)left.Raw) < abs((short)right.Raw); }
+#endif
 // One of eight directions (the top bits of a direction, rounded; read as
 // 32 bits).
 inline int Dir_To_8(UnknownFacingDir const &dir)

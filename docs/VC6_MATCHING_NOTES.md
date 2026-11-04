@@ -1351,3 +1351,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A pure temporary shares a dead slot and can fix the frame; a named Cell never does.
 - `if (!(a != b)) return false;` lays the block far and cross-jumps. `A || B` return goes far; `A && B` stays inline. `if (!ok && !same) { Y; return false; } T; return true;` gives one block order.
 - Scout688's seg.py is a call-aligned segment diff that ignores frame offsets; difflib under-reports on misaligned rows.
+
+## Depth budgets and traps (Scout689)
+- TibSun's explicit Absolute plus minus can be a Coord_To_Pixel statement with Absolute refused at depth 2; a copy keeps the pixel out of memory.
+- For "A in, B out" at depth, with m = b - s_parent, it needs m - s_B < s_A <= m/2. A bigger S can raise B above 1000; charging spend and adding N are not interchangeable.
+- `extern Rect x;` after `Rect x(0,0,0,0);` in one TU re-emits a dynamic initializer (stray `_$E85`, refused as .CRT$XCU #2).
+- Identical repeated global stores are removed as dead, so zero-use probes must write distinct array elements.
+- 0x6A2900 is exact as TibSun's `Vector3 position(point.X, point.Y, 0.0)`, which explains a Z-first store.

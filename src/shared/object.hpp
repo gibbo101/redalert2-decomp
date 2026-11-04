@@ -194,6 +194,10 @@ public:
     UnknownFacingDir Direction_To(AbstractClass const *target) const;
     // The distance from this object to target (0x005D4CE0; hypothesis).
     int Planar_Distance(AbstractClass const *target) const; // 005D4CE0: ignores Z, adjusts building radius
+#ifdef RA2_SHIP_SOM
+    int Distance(CoordStruct const &coord) const { return Center_Coord().Distance_To(coord); }
+    int Distance_YZX(CoordStruct const &coord) const { return Center_Coord().Distance_YZX(coord); }
+#endif
 #ifdef RA2_BUILDING_SPATIAL_DISTANCE
     int Distance(CoordStruct const &coord) const;
     int Distance_To(AbstractClass const *target) const;

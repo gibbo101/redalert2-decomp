@@ -44,6 +44,11 @@ public:
     TPoint3D<T> const operator-(TPoint3D<T> const &point) const { return TPoint3D<T>(this->X - point.X, this->Y - point.Y, Z - point.Z); }
     // Separate from the out-of-line 0x0041B780 (owner ruling): x, y, z through the fast square root.
     T Length() const { double x = this->X; double y = this->Y; double z = Z; return T(unknown_sqrt_4ba410(x * x + (y * y + z * z))); }
+#ifdef RA2_SHIP_SOM
+    T Distance_To(TPoint3D<T> const &point) const { return (*this - point).Length(); }
+    T Length_YZX() const { double y = this->Y; double z = Z; double x = this->X; return T(unknown_sqrt_4ba410(y * y + (z * z + x * x))); }
+    T Distance_YZX(TPoint3D<T> const &point) const { return (*this - point).Length_YZX(); }
+#endif
 #endif
     T Z;
 };
