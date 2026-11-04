@@ -1358,3 +1358,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `extern Rect x;` after `Rect x(0,0,0,0);` in one TU re-emits a dynamic initializer (stray `_$E85`, refused as .CRT$XCU #2).
 - Identical repeated global stores are removed as dead, so zero-use probes must write distinct array elements.
 - 0x6A2900 is exact as TibSun's `Vector3 position(point.X, point.Y, 0.0)`, which explains a Z-first store.
+
+## Threaded else and exposed tests (Scout690, Start_Of_Move twins)
+- Dropping `else nextface = facing` lets threading produce a far `jle`.
+- A stop copy without `xor` needs an address-exposed test: `bool found = ...; bool &result = found; if (!result) {... return found;}`. Plain `if (!found)` folds to a constant and merges with the other site.
+- A two-arm `if (train) cando = 0; else if (crusher...) cando = 0;` fixed a join reload and cleared several rotation residues at once.
+- `FootClass *unit = LinkedTo;` before a test explains a load ahead of the test. A scoped block around a named `CoordStruct center` fixes evaluation order and frame slot.
+- A fild order of Y, Z, X comes from a rotated Length with declarations y, z, x. An inline chain's symbol depth counts toward T: a rotated helper needs the same depth as the plain one. Removing named locals is not always the inverse of adding probes.
