@@ -1,3 +1,7 @@
+#define RA2_BOUNCE_DECLARE_MEMBERS
+#define RA2_VECTOR3_DECLARE_LENGTH
+#define RA2_TPOINT3D_LENGTH
+#define RA2_MATRIX3D_INLINE_COPY
 // Header-static dynamic initializers of the unit at 0x00436A80: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x00436A80-0x00436C61); the other
 // drafts of this plan are emitted by these includes.
