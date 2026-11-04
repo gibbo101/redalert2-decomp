@@ -310,6 +310,7 @@ public:
     void Destroy_High_Bridge_Connections_00558BD0(Cell const &cell);
     Cell Unknown_00564F70(CellClass *cptr, bool isbridge);        // TibSun Get_Bridge_Zone_Connection_Cell
     Cell Unknown_005689D0(Cell const &cell, bool inset);          // TibSun Closest_Edge_Cell
+    bool Unknown_00565EB0(CellClass *cptr, int layer, DynamicVectorClass<unsigned short> const &connections, ObjectClass const *foot);   // TibSun Build_Reachable_Subzones
     void Unknown_00565A50(Cell const &origin, int radius_limit, int count_limit, int zone_type, int zone, DynamicVectorClass<Cell> &cells, int width, int height);   // clear-area ring collector
 #endif
 #if defined(RA2_MAP_BOMB_BRIDGE) || defined(RA2_MAP_BRIDGE_PIECES)

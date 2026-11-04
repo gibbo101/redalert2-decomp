@@ -23,10 +23,17 @@ public:
 // ObjectClass as the Map unit sees it: the virtual destructor (slot 8,
 // AbstractClass), which deletes the display's pending object (0x0055B060),
 // and slot 53 (wall placement 0x0056A660); slots 24-52 are placeholders.
+// The techno type as MapClass 0x00565EB0 reads it: +0x500 is the movement zone (TibSun MZone).
+class UnknownMapTechnoType {
+    char unknown_000[0x500];
+public:
+    int unknown_500;                // +0x500 (row of unknown_table_7e00c4)
+};
+
 class ObjectClass : public AbstractClass {
 public:
     virtual void unknown_slot24(); virtual void unknown_slot25(); virtual void unknown_slot26(); virtual void unknown_slot27(); virtual void unknown_slot28(); virtual int unknown_slot29() const;   // slot 29 (+0x74; as shared/object.hpp; TibSun In_Which_Layer)
-    virtual void unknown_slot30(); virtual void unknown_slot31(); virtual void unknown_slot32(); virtual ObjectTypeClass *Class_Of() const;   // slot 33 (+0x84; as shared/object.hpp)
+    virtual void unknown_slot30(); virtual void unknown_slot31(); virtual UnknownMapTechnoType *unknown_slot32() const; virtual ObjectTypeClass *Class_Of() const;   // slot 33 (+0x84; as shared/object.hpp)
     virtual void unknown_slot34(); virtual void unknown_slot35();
     virtual void unknown_slot36(); virtual void unknown_slot37(); virtual void unknown_slot38(); virtual void unknown_slot39(); virtual void unknown_slot40(); virtual void unknown_slot41();
     virtual void unknown_slot42(); virtual void unknown_slot43(); virtual void unknown_slot44(); virtual void unknown_slot45(); virtual void unknown_slot46(); virtual void unknown_slot47();
@@ -43,7 +50,8 @@ public:
     virtual void unknown_slot83(); virtual void unknown_slot84(); virtual void unknown_slot85(); virtual void unknown_slot86(); virtual void unknown_slot87(); virtual void unknown_slot88();
     virtual void unknown_slot89(); virtual void unknown_slot90(); virtual void unknown_slot91(); virtual void unknown_slot92(); virtual void unknown_slot93(); virtual void unknown_slot94();
     virtual void unknown_slot95(); virtual void unknown_slot96(); virtual void unknown_slot97(); virtual void unknown_slot98(); virtual void unknown_slot99(); virtual void unknown_slot100();
-    virtual void unknown_slot101(); virtual void unknown_slot102();
+    virtual int unknown_slot101(CellClass *cell, int facing, int level, CellClass *alt, bool flag) const;   // slot 101 (+0x194; TibSun Can_Enter_Cell)
+    virtual void unknown_slot102();
     virtual void unknown_slot103(CoordStruct const &coord);           // slot 103 (+0x19C; as shared/object.hpp)
 
     char unknown_24[0x74 - 0x24];
