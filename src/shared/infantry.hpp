@@ -137,7 +137,7 @@ public:
     virtual bool unknown_slot193();   // slot 193 0x00509090 ret 0
     virtual bool unknown_slot204();   // slot 204 0x00509670 ret 0
     virtual void unknown_slot205();   // slot 205 0x005096B0 ret 0
-    virtual int unknown_slot218(AbstractClass *target, int weapon, int arg3);   // slot 218 0x00503A60 ret 0xc
+    virtual int unknown_slot218(AbstractClass *target, int weapon, bool check_range);   // slot 218 0x00503A60 ret 0xc
     virtual AbstractClass *unknown_slot219(int arg1, CoordStruct const *coord, bool arg3);   // slot 219 0x00505120 ret 0xc
     virtual void unknown_slot220(AbstractClass *target);   // slot 220 0x00502470 ret 4
     virtual BulletClass *unknown_slot221(AbstractClass *target, int arg2);   // slot 221 0x00504F50 ret 8

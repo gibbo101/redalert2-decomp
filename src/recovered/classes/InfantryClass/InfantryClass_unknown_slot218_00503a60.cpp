@@ -1,4 +1,4 @@
-// int InfantryClass::unknown_slot218(AbstractClass *target, int weapon, int arg3) (0x00503A60, slot 218)
+// int InfantryClass::unknown_slot218(AbstractClass *target, int weapon, bool check_range) (0x00503A60, slot 218)
 // Fire check: 6 during sequences 11-15, 20, 21 and 34-36; when 0x006C16F0
 // (-1) is negative only infantry targets below the rules health ratio at
 // +0x1360 are allowed (else 5). Then TechnoClass's answer; when that allows
@@ -10,12 +10,12 @@
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
 // @ref ?unknown_6c16f0@TechnoClass@@QAEHH@Z=006c16f0
 // @ref ?Health_Ratio@ObjectClass@@QBENXZ=005d4540
-// @ref ?unknown_slot218@TechnoClass@@UAEHPAVAbstractClass@@HH@Z=006c9260
+// @ref ?unknown_slot218@TechnoClass@@UAEHPAVAbstractClass@@H_N@Z=006c9260
 // @ref ?unknown_do_controls_7a3474@@3PAUDoStruct@@A=007a3474
 // @ref ?_com_issue_error@@YGXJ@Z=00795940
 // @ref __real@8@3ffbccccccccccccd000=0079c570
 
-int InfantryClass::unknown_slot218(AbstractClass *target, int weapon, int arg3)
+int InfantryClass::unknown_slot218(AbstractClass *target, int weapon, bool check_range)
 {
     if (Is_Busy_Sequence(Sequence)) {
         return 6;
@@ -26,7 +26,7 @@ int InfantryClass::unknown_slot218(AbstractClass *target, int weapon, int arg3)
             return 5;
         }
     }
-    int result = TechnoClass::unknown_slot218(target, weapon, arg3);
+    int result = TechnoClass::unknown_slot218(target, weapon, check_range);
     if (result == 0) {
         if (unknown_468 > 0.1
             || (unknown_494 != 0 && Sequence != -1 && !unknown_do_controls_7a3474[Sequence].Interrupt)) {

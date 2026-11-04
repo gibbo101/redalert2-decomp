@@ -4,8 +4,8 @@
     "id": "population-2714",
     "inventory_sha256": "e9427ee195f4b7818d59f75e3baeaafd0d3e5bb288d7ac6337a4da82c4139595",
     "gaps_sha256": "8a402390be28360d1c36face73aa8a2a8c584ba0743c9287cdca6e48aa330dbe",
-    "historical_population_sha256": "b122ecc3756aed7faebb2f62a105be5f3b94b76c49bdfea6292e2100de6254a9",
-    "historical_acceptance_sha256": "a01271de7e67c1f15619324b194158488f5915a710ff9d7fbe34ff345c7b2bcb"
+    "historical_population_sha256": "d91c2abcdfc9bff9a2ab9b98ce5a4809c54f430c357eebc6bf9ec4aa11683a59",
+    "historical_acceptance_sha256": "ada66ecb8b52f7d44560cdd06824e9c3b06aedb02a2252964ee978a9d05968fb"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6845,8 +6845,8 @@
     "?unknown_slot130@AircraftClass@@UAEHXZ": 4300928,
     "?In_Radio_Contact@RadioClass@@QBE_NXZ": 6516496,
     "?unknown_slot130@FootClass@@UAEHXZ": 5003520,
-    "?unknown_slot218@AircraftClass@@UAEHPAVAbstractClass@@HH@Z": 4301088,
-    "?unknown_slot218@TechnoClass@@UAEHPAVAbstractClass@@HH@Z": 7115360,
+    "?unknown_slot218@AircraftClass@@UAEHPAVAbstractClass@@H_N@Z": 4301088,
+    "?unknown_slot218@TechnoClass@@UAEHPAVAbstractClass@@H_N@Z": 7115360,
     "?unknown_slot122@AircraftClass@@UAE_NXZ": 4304176,
     "?Landing_Altitude@AircraftClass@@UAGHXZ": 4304368,
     "?Contact_With_Whom@RadioClass@@QBEPAVTechnoClass@@H@Z": 6516256,
@@ -7220,7 +7220,7 @@
     "?unknown_func_4eb360@HouseClass@@QAEPAVAbstractClass@@ABUCoordStruct@@@Z": 5157728,
     "?unknown_slot220@InfantryClass@@UAEXPAVAbstractClass@@@Z": 5252208,
     "?unknown_slot220@TechnoClass@@UAEXPAVAbstractClass@@@Z": 7117552,
-    "?unknown_slot218@InfantryClass@@UAEHPAVAbstractClass@@HH@Z": 5257824,
+    "?unknown_slot218@InfantryClass@@UAEHPAVAbstractClass@@H_N@Z": 5257824,
     "?unknown_slot261@InfantryClass@@UAE_N_N0@Z": 5258240,
     "?unknown_slot261@FootClass@@UAE_N_N0@Z": 5009168,
     "?unknown_slot291@InfantryClass@@UAE_NXZ": 5262048,

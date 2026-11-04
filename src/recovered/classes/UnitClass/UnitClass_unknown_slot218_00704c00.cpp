@@ -1,4 +1,4 @@
-// int UnitClass::unknown_slot218(AbstractClass *target, int weapon, int action)
+// int UnitClass::unknown_slot218(AbstractClass *target, int weapon, bool check_range)
 // (0x00704C00, slot 218; TibSun UnitClass::Can_Fire): the techno answer refined
 // for deploy-to-fire, tethering, healing weapons, firing while moving, turret
 // rotation and the turret's angle to the target, then the locomotor's answer.
@@ -11,7 +11,7 @@
 // The target as a techno (0x0040DBD0; null for other kinds).
 TechnoClass *__fastcall As_Techno_0040dbd0(AbstractClass *target);
 // @ref ?As_Techno_0040dbd0@@YIPAVTechnoClass@@PAVAbstractClass@@@Z=0040dbd0
-// @ref ?unknown_slot218@TechnoClass@@UAEHPAVAbstractClass@@HH@Z=006c9260
+// @ref ?unknown_slot218@TechnoClass@@UAEHPAVAbstractClass@@H_N@Z=006c9260
 // @ref ?Contact_With_Whom@RadioClass@@QBEPAVTechnoClass@@H@Z=00636e20
 // @ref ?unknown_6c16f0@TechnoClass@@QAEHH@Z=006c16f0
 // @ref ?unknown_47cdd0@CellClass@@QBE_NXZ=0047cdd0
@@ -23,10 +23,10 @@ inline bool operator<(UnknownFacingDir left, UnknownFacingDir right)
     return abs((short)left.Raw) < abs((short)right.Raw);
 }
 
-int UnitClass::unknown_slot218(AbstractClass *target, int weapon, int action)
+int UnitClass::unknown_slot218(AbstractClass *target, int weapon, bool check_range)
 {
     if (SpawnManager && SpawnManager->Launching_Count()) return 10;
-    action = TechnoClass::unknown_slot218(target, weapon, action);
+    int action = TechnoClass::unknown_slot218(target, weapon, check_range);
     if (action == 0 || action == 2) {
         CoordStruct position = Coord;
         bool usable_land = Map[position].unknown_47cdd0();

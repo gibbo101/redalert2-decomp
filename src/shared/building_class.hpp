@@ -226,7 +226,7 @@ public:
     virtual bool unknown_slot190(int *out_kind);                            // slot 190 0x00452220
     virtual bool unknown_slot195();                                   // slot 195 0x00450360
     virtual void unknown_slot216(int arg1);                            // slot 216 0x00449170
-    virtual int unknown_slot218(AbstractClass *target, int weapon, int arg3);        // slot 218 0x004443B0
+    virtual int unknown_slot218(AbstractClass *target, int weapon, bool check_range);        // slot 218 0x004443B0
     virtual AbstractClass *unknown_slot219(int arg1, CoordStruct const *coord, bool arg3); // slot 219 0x00442650
     virtual void unknown_slot220(AbstractClass *target);               // slot 220 0x00440450
     virtual bool unknown_slot222(HouseClass *house, int arg2);                  // slot 222 0x00444660

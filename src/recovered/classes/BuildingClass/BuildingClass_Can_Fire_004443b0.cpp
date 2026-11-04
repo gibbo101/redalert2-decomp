@@ -13,13 +13,13 @@ inline bool Direction_Less_004443b0(UnknownFacingDir const &left, UnknownFacingD
     return abs((short)left.Raw) < abs((short)right.Raw);
 }
 
-int BuildingClass::unknown_slot218(AbstractClass *target, int weapon, int arg3)
+int BuildingClass::unknown_slot218(AbstractClass *target, int weapon, bool check_range)
 {
     if (Type->CanBeOccupied && unknown_554.Count() == 0) return 5;
     if (Type->EMPulseCannon) return 6;
     if (!unknown_slot195()) return 6;
     if (unknown_5d8 != 0) return 3;
-    int can_fire = TechnoClass::unknown_slot218(target, weapon, arg3);
+    int can_fire = TechnoClass::unknown_slot218(target, weapon, check_range);
     if (can_fire == 0 && unknown_slot232()) {
         UnknownFacingDir toward = unknown_slot285(target);
         int tolerance = Type->TurretAnimIsVoxel ? 0 : 8;
