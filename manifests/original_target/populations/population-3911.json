@@ -4,8 +4,8 @@
     "id": "population-3911",
     "inventory_sha256": "34c73437a02f6be33cb4f06335fef46fb0d814c70bcf4cd5006b02a6a43c6fbd",
     "gaps_sha256": "8c2eac9ba669d0a6a8e1dc2c596ca7be745fb94bf71ec2096359311cd2b75dd0",
-    "historical_population_sha256": "b0aef5342290072f3a1d01be69f74bd82f1b21c9721bb86ab1bf5ca5a6aa41e7",
-    "historical_acceptance_sha256": "5bd99a0be05998fa13ceff697fabcdd4c8254ac3ccaaaa70aba233c73b4e4749"
+    "historical_population_sha256": "cf24fefbaee4a6a12f64dac43acfcd486c1faed27059a69f3c8ac1a59283c7fa",
+    "historical_acceptance_sha256": "86d4150875d6c13552a70756aaea4e092b2616934d4dcf4f6e9500618a9a2667"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1684,7 +1684,7 @@
     "_$E58": 6955936,
     "_$E61": 6956096,
     "_$E64": 6956160,
-    "??0TacticalProjection@@QAE@HH@Z": 6956864,
+    "?Rectangular_To_Isometric@@YI?AUPoint2D@@U1@@Z": 6956864,
     "?Coord_To_Pixel_Absolute@Tactical@@QAE?AUPoint2D@@ABU2@@Z": 6957168,
     "?Unknown_006A2900@Tactical@@": 6957312,
     "?Unknown_006A2970@@": 6957424,
@@ -12418,7 +12418,28 @@
     "?Audio_Device_First_Channel@@YIPAUAudioListNode@@PAUAudioDevice@@PAUAudioListIterator@@@Z": 4208048,
     "?Audio_DS_Open@@YIJPAUAudioDevice@@@Z": 4235184,
     "?Play@MSSfx@@QAEXH@Z": 5990896,
-    "?Get_Count@PlanningBranchClass@@QBEHXZ": 6359344
+    "?Get_Count@PlanningBranchClass@@QBEHXZ": 6359344,
+    "__real@8@40059600000000000000": 8019760,
+    "?Load@Map@WorldDominationTour@@QAEXAAVINIClass@@PAVMSEngine@@H@Z": 7509264,
+    "?Stop@HoverLocomotionClass@@QAEXXZ": 5233232,
+    "??8Cell@@QBE_NABV0@@Z": 5238560,
+    "__real@4@400c9c3c000000000000": 8027432,
+    "__real@8@3fe2b0000000b0000000": 8020072,
+    "__real@8@3fe3a8000000a8000000": 8019984,
+    "__real@8@4005a000000000000000": 8019976,
+    "__real@8@3ff1d1b71758e2196800": 8019944,
+    "__real@8@3ff6a3d70a3d70a3d800": 8019936,
+    "_?scale@?1??Seed_Hill_Heights_00584730@UnknownMapGenerator@@QAEXXZ@4NB": 8019200,
+    "__real@8@c0008000000000000000": 8019928,
+    "__real@8@bffe8000000000000000": 7981488,
+    "__real@8@4001afeddf4ddd3ba800": 8019824,
+    "__real@8@3ffe860a91c16b9b2800": 8019816,
+    "__real@8@3ffb8f5c28f5c28f6000": 8019808,
+    "__real@8@3fe5b6000000b6000000": 8019800,
+    "__real@8@4000a78d3631c681f800": 8019784,
+    "__real@8@bffda0d97bb4e7870000": 8019776,
+    "?Load@WaveClass@@UAGJPAUIStream@@@Z": 7479760,
+    "__real@4@3ff9a72f050000000000": 8048688
   },
   "regions": [
     {
@@ -14079,8 +14100,8 @@
     {
       "entry": 6956864,
       "method": "006a2740",
-      "symbol": "??0TacticalProjection@@QAE@HH@Z",
-      "symbol_prefix": "??0TacticalProjection@@QAE@HH@Z",
+      "symbol": "?Rectangular_To_Isometric@@YI?AUPoint2D@@U1@@Z",
+      "symbol_prefix": "?Rectangular_To_Isometric@@YI?AUPoint2D@@U1@@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -14093,13 +14114,13 @@
       "full_extent_bytes": 96,
       "full_extent_sha256": "0b444dbcbdc8f3c470d5592bca60bc9fec8e7234ca489f79876e81649347d56d",
       "relocations": [],
-      "source_sha256": "b6545b2da1320fe43901d33bdb482dbdb3b0cebf2e545da21fa0cd14059cd9b4",
-      "source": "src/recovered/classes/Tactical/TacticalProjection_constructor_006a2740.cpp",
+      "source_sha256": "4cc43ea870e0f7a5f38bac6e64d46686bd932361eef14e1622fbae94fa7e14ea",
+      "source": "src/recovered/classes/Tactical/Tactical_Rectangular_To_Isometric_006a2740.cpp",
       "population": "population-3911",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "TacticalProjection_constructor_006a2740",
+      "semantic_name": "Tactical_Rectangular_To_Isometric_006a2740",
       "source_order": 179557
     },
     {

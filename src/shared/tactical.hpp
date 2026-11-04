@@ -37,22 +37,10 @@ int __fastcall Unknown_006A29B0(int pixel);
 // by its users; hypothesis).
 void __fastcall Unknown_006A6800(int x, int y, int *pixel_x, int *pixel_y);
 
-// A rectangular point rotated onto the isometric axes, in the units it came in (TibSun
-// Tactical::Rectangular_To_Isometric(Point2D); built on 0x006A6800 and always expanded).
-inline Point2D Rectangular_To_Isometric(Point2D point)
-{
-    Point2D iso;
-    Unknown_006A6800(point.X, point.Y, &iso.X, &iso.Y);
-    return iso;
-}
-
-// The screen offset of a lepton offset, built through 0x006A6800 (0x006A2740;
-// the Tactical slot-24 line drawer 0x006AC160 builds two; name hypothesis).
-struct TacticalProjection {
-    TacticalProjection(int x, int y);               // 0x006A2740
-    int X;
-    int Y;
-};
+// A rectangular point rotated onto the isometric axes, in the units it came in (0x006A2740; TibSun
+// Tactical::Rectangular_To_Isometric(Point2D); built on 0x006A6800). The callers in Tactical.cpp expand it
+// where the budget allows; Draw_Rally_Points and Draw_Waypoints call it.
+Point2D __fastcall Rectangular_To_Isometric(Point2D point);
 
 
 // The tactical view (0x0083996C; RTTI class Tactical, an AbstractClass:
@@ -135,6 +123,8 @@ public:
     // (0x006A8D40; TibSun Tactical::Cell_Shadow; the flag is read as a byte).
     int Cell_Shadow(Cell const &cell, bool fog);
     void Unknown_006AADD0(CellClass *cell);        // 0x006AADD0 (DisplayClass slot 37: a cell to redraw; hypothesis)
+    void Draw_Rally_Points(bool inshroud);         // 0x006AAFD0 (TibSun name)
+    void Draw_Waypoints(bool inshroud);            // 0x006AB360 (TibSun name)
     void Unknown_006AA5A0(Point2D const &point);   // 0x006AA5A0 starts a selection band at a point (DisplayClass slot 47; hypothesis)
     void Unknown_006AA5E0(Point2D const &point);   // 0x006AA5E0 drags the band to a point (DisplayClass slot 47; hypothesis)
     void Unknown_006AA770();                       // 0x006AA770 (DisplayClass slot 35: ends the band selection; hypothesis)
