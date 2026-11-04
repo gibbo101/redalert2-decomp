@@ -1477,3 +1477,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - An add destination can come right when a call result is a dying local inside an inline: `static inline int Bridge_Height(coord, int &ground) { int height = call; ground = height; return height + j; }` gives `add eax,ecx`; direct forms stay flat.
 - `double gravity = Rules->x; velocity.Z -= gravity;` gives `fld; fild; fsubp` on a Vector3 (89 to 99).
 - An inline's return slot adds frame bytes and moves temps: the assigned form and the return-ignored form differ by the return slot.
+
+## Real helpers and arm order (Scout711)
+- The real Process_DD_Result with its early returns, called before `result == DD_OK`, lets threading produce far arms; hand expansion does not (76 to exact).
+- `Rect area(r.left, r.top, r.right - r.left, r.bottom - r.top)` keeps a width read ahead of a flag test; a plain int forward-substitutes into the arm.
+- Statement order inside an arm decides the `and` destination register. `if (flag) {arm} else {...}` lays the flag arm after the ret; `if (!flag)` does not.
+- A loop written `if (cb) cb(); while (...) { if (cb) cb(); }` supplies the fourth zero use that hoists zero into a register (58 to exact).
+- A spelled-out MAX with `shift = MAX(a); shift -= MAX(b);` closed a register swap. Writing `box.Y =` into a Rect local fixed a `push; sub` tie.

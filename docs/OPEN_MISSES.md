@@ -1742,3 +1742,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout709 (2026-11-04, closed; Particle Smoke AI 0x608BB0 1,601 B; drafts build/class-work/Scout709/w/keep/; Scout712 continues)
 - OWNER DECISION: `Bridge_Height` and `double gravity` stay as landed. If Bounce lands, move Slope_Vector and Bridge_Height to a shared header rather than duplicating them.
 - Bounce AI 0x4370E0 99.55, shape 100 (ba3_9955.cpp; one line `fld [esi+0x2c]` vs `fld [ebx+8]`). Spark particle 0x609540 66.45. Spark system AI 0x60B670 86.56. SpotLight Draw 0x5DDB90 60.23 (ld1.cpp).
+
+## Scout711 (2026-11-04, closed; 2,882 B over four rounds: DirectDraw setup and fade 0x4955D0-0x495C90, OwnerDraw sidebar placement rows; drafts build/class-work/Scout711/w/keep/; Scout713 continues)
+- OWNER DECISION: DIRECTDRAW_DECLARE_MODE_METHODS, RA2_PALETTE_CONSTRUCTORS, shared/ddraw_result.hpp, shared/owner_draw_sidebar.hpp, `area2`, `int left`, `box` and the fade's `PaletteClass original; memcpy` stay as landed. Names Fade_Palette_To, Get_Video_Memory and Sidebar_* are hypotheses.
+- Preferred Type classes have no undrafted rows of 200 B or more. 0x5E8C50 74.32. RadSite 0x637A80 96.85, shape 100 (u637a80.cpp; frame slots). 0x5CB170 29.96. Next: EnumChild callback 0x5E9BB0 (real body 845 B, needs body_bytes and bound_evidence; calls 0x5E9410, 1,938 B). False rows: 0x68FEE0, 0x5E9C9C; 0x5ECF40 and 0x663FE0 look like mid-body pieces.
