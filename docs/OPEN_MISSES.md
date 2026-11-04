@@ -1718,3 +1718,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout704 (2026-11-04, closed; Can_Enter_Cell 0x703040 2,952 B; drafts build/class-work/Scout704/w/keep/; Scout706 continues)
 - OWNER DECISION: `(otype = occupant->Class_Of())->unknown_1fd`, `int &tech = techface` and `contact` stay as landed: live source, each needed for exactness.
 - RTactical Action 0x62FE30 97.18 (ra1_9718.cpp). Techno Fire_At 0x6CA890 (6,019 B) 70.37, frame 0xA4 (fb3_7037_frame.cpp). Unit slot 310 0x6FF690, Tunnel 0x6FAA30, slot 28 0x703BD0 undrafted.
+
+## Scout705 (2026-11-04, closed; Update_Present_Super_Weapons 0x4F4B20 646 B; drafts build/class-work/Scout705/w/keep/; Scout707 continues)
+- OWNER DECISION: the `on` and `alive` locals stay as landed (used, emit no extra code, not in TibSun). Rename unknown_func_4f4b20 pending.
+- AI_Build_Defense 0x4F1190 (3,264 B to 0x4F1E50, TibSun house.cpp:7840) undrafted; listing w/keep/abd.dis. Team GatherAtEnemy 0x6BDAA0 98.70, shape 100 (gx1.cpp; three frame lines). Expert_AI 0x4E8990 77.89 (expert_7789.cpp; constant webs). Random_Cell_In_Zone 0x4ECA50 52.70, jump table unbound. GScreen Get_Input 0x4E09D0 82.81. AI_Building 99.42, Mech 79.76 unchanged.
+- 0x4EEE10 and 0x4EF303 are interior to 0x4EECB0 (2,276 B, RA2-only, no twin). Team, Script, Trigger, Tag and TaskForce have no other unrecovered rows in the ranges checked, apart from Team 0x6BE010.

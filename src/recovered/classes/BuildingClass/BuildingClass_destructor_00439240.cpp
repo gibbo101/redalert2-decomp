@@ -19,7 +19,7 @@
 // @ref ?Free_Buildup@BuildingTypeClass@@QAEXXZ=0045e920
 // @ref ?unknown_slot234@BuildingClass@@UAEXH@Z=0044fb50
 // @ref ?unknown_func_491d10@UnknownHouseCounter@@QAEHH@Z=00491d10
-// @ref ?unknown_func_4f4b20@HouseClass@@QAEXXZ=004f4b20
+// @ref ?Update_Present_Super_Weapons@HouseClass@@QAEXXZ=004f4b20
 // @ref ?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z=004ea800
 // @ref ?unknown_flag_a40958@@3_NA=00a40958
 // @ref ?Supers@@3V?$DynamicVectorClass@PAVSuperClass@@@@A=00a35d28
@@ -73,7 +73,7 @@ BuildingClass::~BuildingClass()
         unknown_slot234(1);
     }
     if (unknown_452800() != -1 || unknown_452860() != -1) {
-        House->unknown_func_4f4b20();
+        House->Update_Present_Super_Weapons();
     }
     if (unknown_flag_a40958) {
         if (Strength != unknown_43c) {

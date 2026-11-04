@@ -1,4 +1,4 @@
-// void HouseClass::unknown_func_4f4b20() (0x004F4B20)
+// void HouseClass::Update_Present_Super_Weapons() (0x004F4B20)
 // TibSun Update_Present_Super_Weapons: for each super weapon present that needs a building (or
 // when the house is defeated), find a building or upgrade that grants it, drop it when power is
 // short, suspend or resume it, or remove it when nothing grants it any more. A change clears
@@ -7,7 +7,7 @@
 // second test stays; the second named negation sets the compare order of the Fetch_ID pair.
 #include "shared/building_class.hpp"
 #include "shared/map_view.hpp"
-void HouseClass::unknown_func_4f4b20()
+void HouseClass::Update_Present_Super_Weapons()
 {
     if (!unknown_flag_a40958) return;
     bool is_player = unknown_player_a35db4 == this;

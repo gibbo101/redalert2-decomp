@@ -4,8 +4,8 @@
     "id": "population-3659",
     "inventory_sha256": "eb37a402c589b1feb8b8c69da9878dccb02456c5f53dc92b9cd1d6fb1af681f1",
     "gaps_sha256": "129efb8d8e0b6c491692c9fa0a0b38f438b46256157b893b2c51b50e716aa5c3",
-    "historical_population_sha256": "11876cda36af164fb59c7701159eb01ced37dd62330bc4421b3ae1d0269c8e55",
-    "historical_acceptance_sha256": "4b77c5321fd2a3117aabca7511b2eb8cb4638834f372475b70bb07a81a98fa5f"
+    "historical_population_sha256": "f107cf5fd580d652da4ee2d1c55f3ebf7bfbbdbf420248e219bfd1309dd01d53",
+    "historical_acceptance_sha256": "ae08c9f321d09d8feb62b71432ec669a122c3baeb5d619fe5c6c3b6571ff91bc"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4200,7 +4200,7 @@
     "?unknown_slot52@BuildingClass@@UAE_NXZ": 4464736,
     "?Delete@?$DynamicVectorClass@PAVBuildingClass@@@@QAE_NH@Z": 4541280,
     "?unknown_slot234@BuildingClass@@UAEXH@Z": 4520784,
-    "?unknown_func_4f4b20@HouseClass@@QAEXXZ": 5196576,
+    "?Update_Present_Super_Weapons@HouseClass@@QAEXXZ": 5196576,
     "?Search_For_Node@?$IndexClass@JPAVAbstractClass@@@@ABEPBUNodeElement@1@ABJ@Z": 4307344,
     "?unknown_slot162@BuildingClass@@UAE?AUUnknownFacingDir@@XZ": 4466080,
     "?unknown_slot219@BuildingClass@@UAEPAVAbstractClass@@HPBUCoordStruct@@_N@Z": 4466256,

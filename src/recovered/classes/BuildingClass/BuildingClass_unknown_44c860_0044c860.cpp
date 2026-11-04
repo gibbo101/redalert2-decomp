@@ -5,7 +5,7 @@
 #include "shared/building.hpp"
 #include "shared/house.hpp"
 // @ref ?unknown_44cfd0@BuildingClass@@QAEXH@Z=0044cfd0
-// @ref ?unknown_func_4f4b20@HouseClass@@QAEXXZ=004f4b20
+// @ref ?Update_Present_Super_Weapons@HouseClass@@QAEXXZ=004f4b20
 
 bool BuildingClass::unknown_44c860()
 {
@@ -22,7 +22,7 @@ bool BuildingClass::unknown_44c860()
         unknown_5c6 = 0;
         unknown_4d0 = -1;
         if (super_weapon) {
-            House->unknown_func_4f4b20();
+            House->Update_Present_Super_Weapons();
         }
         return true;
     }
@@ -30,7 +30,7 @@ bool BuildingClass::unknown_44c860()
     unknown_5c6--;
     unknown_4c0[unknown_5c6] = 0;
     if (super_weapon) {
-        House->unknown_func_4f4b20();
+        House->Update_Present_Super_Weapons();
     }
     return true;
 }

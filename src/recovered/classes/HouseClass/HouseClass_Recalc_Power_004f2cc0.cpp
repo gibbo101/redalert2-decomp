@@ -22,6 +22,6 @@ void HouseClass::Recalc_Power_004f2cc0()
     if (unknown_1ec.Value() != 0) Power = 0;
     Building_Refresh_House_Buildings_0044fa40(this);
     FactoryClass::Update_Rates(this);
-    if (was_low != (Power_Fraction() < 1.0)) unknown_func_4f4b20();
+    if (was_low != (Power_Fraction() < 1.0)) Update_Present_Super_Weapons();
     unknown_5669 = true;
 }

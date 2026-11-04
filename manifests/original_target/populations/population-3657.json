@@ -4,8 +4,8 @@
     "id": "population-3657",
     "inventory_sha256": "55b28a6f9ecf10d023e86598667faad65447ef89d5810aa16380f042fc84b3e6",
     "gaps_sha256": "a87ff0cdc7d25640885129fcddf627d7fabdbe7b5177f8cb9322de0c58958297",
-    "historical_population_sha256": "f7bc55f615c006ba4b93618e099f64944c11dd99f093b0b0418607386a0c81c0",
-    "historical_acceptance_sha256": "b75995118117dd07cc3bc6f97596aa99d400b947c939fc7b0c2cbb7aa58d6b9d"
+    "historical_population_sha256": "db989f41912a8f0a6b3178ceafcd5409ef7be38ffba7ba13c0904475e441348b",
+    "historical_acceptance_sha256": "b7d07db6fd8ffcf20875dbf9b3063975b5ab3f27e2e9b308b8d0f6350c242c70"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5813,7 +5813,7 @@
     "?FindConnectionPoint@HouseClass@@UAGJABUGUID@@PAPAUIConnectionPoint@@@Z": 5165984,
     "?Make_Waypoint_Path@HouseClass@@QAEXH@Z": 5171360,
     "?unknown_func_4eeba0@HouseClass@@QAEXHPAV1@@Z": 5172128,
-    "?unknown_func_4f4b20@HouseClass@@QAEXXZ": 5196576,
+    "?Update_Present_Super_Weapons@HouseClass@@QAEXXZ": 5196576,
     "?unknown_func_4ed200@HouseClass@@QAEPAVWaypointClass@@ABVCell@@@Z": 5165568,
     "?unknown_func_4eab10@HouseClass@@QAEPAHH_N@Z": 5155600,
     "?unknown_func_4eb6d0@HouseClass@@QAEXH_NH@Z": 5158608,

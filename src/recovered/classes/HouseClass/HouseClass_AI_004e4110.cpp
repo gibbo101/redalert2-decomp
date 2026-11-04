@@ -258,7 +258,7 @@ LAB_004e4b72:;
             Map.Unknown_0067E1C0();
             }
 LAB_004e4e75:;
-            unknown_func_4f4b20();
+            Update_Present_Super_Weapons();
             Enable_Available_Super_Weapons_004f4db0();
         }
     }

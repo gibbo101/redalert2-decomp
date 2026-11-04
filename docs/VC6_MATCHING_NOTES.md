@@ -1443,3 +1443,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `else { if (!pressed) call }` gives a threaded jump past the call while keeping setne/test.
 - X+Y is canonical in VC6: Y+X, split sums and named copies give the same code; the add dest flips only when an operand stays live past the add.
 - A float length temp folded into its one use lifted Fire_At from 62 to 71.
+
+## Pointer reads and negation pairs (Scout705)
+- `CoordStruct base = house->BaseCenter; Coord_Distance(base, center)` gives `lea r,[member]; mov edx,r` pointer reads; the same copy written directly folds (62 to 78).
+- `bool const &on = e; bool off = !on;` keeps a second flag test after a failed chain.
+- The order of a virtual-call `==` pair flips once two `bool x = !y` values exist anywhere in the function; ints, compares and copies do not count.
+- `double dy = -delta.Y;` fixed fstp order and a tail push order. A constant used inside an inlined body in a loop joins and hoists the web of the same constant in the outer function.

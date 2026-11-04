@@ -4,8 +4,8 @@
     "id": "population-4050",
     "inventory_sha256": "80c9130788281815ff57d6e18da0b50d0af3aeb4e343fbe95ce5033ba3ea14fc",
     "gaps_sha256": "160dab40a57d5e8077b3e2932e3eac4354bda48395a92ff7d93faf6a43d5dac9",
-    "historical_population_sha256": "958ba25c08e9b193e07ffefa25bee2e508cd0d06035a8cc05a36842aa8f79852",
-    "historical_acceptance_sha256": "3cc3ea6450a201c9e687280e172fa578504d5cbe2761539d470e2a16a62b114b"
+    "historical_population_sha256": "5a48da0de225d35a97a08077d82030fc312945d387b190f7dd28d41689ea05c2",
+    "historical_acceptance_sha256": "e6864b1dd87ab9497b648d8a7d43cdfb037b8c16008e0b8d77f4979cad7055ea"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4022,7 +4022,7 @@
     "??0TechnoClass@@QAE@PAVHouseClass@@@Z": 7081168,
     "?Init@BuildingClass@@UAEXXZ": 4454464,
     "?Delete@?$DynamicVectorClass@PAVBuildingClass@@@@QAE_NH@Z": 4541280,
-    "?unknown_func_4f4b20@HouseClass@@QAEXXZ": 5196576,
+    "?Update_Present_Super_Weapons@HouseClass@@QAEXXZ": 5196576,
     "?Search_For_Node@?$IndexClass@JPAVAbstractClass@@@@ABEPBUNodeElement@1@ABJ@Z": 4307344,
     "?Center_Coord@BuildingClass@@UBE?AUCoordStruct@@XZ": 4472960,
     "?unknown_slot19@BuildingClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4473664,
@@ -7066,7 +7066,7 @@
     "?unknown_func_4f3d70@HouseClass@@": 5193072,
     "?unknown_func_4f3f40@HouseClass@@": 5193536,
     "?unknown_func_4f4070@HouseClass@": 5193840,
-    "?unknown_func_4f4b20@HouseClass@@": 5196576,
+    "?Update_Present_Super_Weapons@HouseClass@@": 5196576,
     "?unknown_func_4f5320@HouseClass@@": 5198624,
     "?Update_Color@HouseClass@@": 5198848,
     "?Normalize_Color@@": 5198992,
@@ -33782,13 +33782,13 @@
         {
           "offset": 376,
           "kind": 20,
-          "symbol": "?unknown_func_4f4b20@HouseClass@@QAEXXZ",
+          "symbol": "?Update_Present_Super_Weapons@HouseClass@@QAEXXZ",
           "target": 5196576,
           "addend": 0,
           "resolved": 7396
         }
       ],
-      "source_sha256": "73fc13d65873ad50466eb36341c4e17e789b37229f0c90b2dd4a05d1650bf903",
+      "source_sha256": "7e3623489e46d59666ae8a41cd62de8fffef37a3296044f41b56b7311f61ab8b",
       "source": "src/recovered/classes/HouseClass/HouseClass_Recalc_Power_004f2cc0.cpp",
       "population": "population-4050",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",
@@ -38034,7 +38034,7 @@
         {
           "offset": 3432,
           "kind": 20,
-          "symbol": "?unknown_func_4f4b20@HouseClass@@QAEXXZ",
+          "symbol": "?Update_Present_Super_Weapons@HouseClass@@QAEXXZ",
           "target": 5196576,
           "addend": 0,
           "resolved": 64676
@@ -38080,7 +38080,7 @@
           "resolved": 4294676256
         }
       ],
-      "source_sha256": "e7e187805b6434f6ae33d42af250426792dd73cb449425adad6771fdabfd0727",
+      "source_sha256": "c4341d04f5c8339381cd64c5d1dc7ad0e7712566cedfe348e368e931daa180f0",
       "source": "src/recovered/classes/HouseClass/HouseClass_AI_004e4110.cpp",
       "population": "population-4050",
       "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
@@ -41312,8 +41312,8 @@
     {
       "entry": 5196576,
       "method": "004f4b20",
-      "symbol": "?unknown_func_4f4b20@HouseClass@@QAEXXZ",
-      "symbol_prefix": "?unknown_func_4f4b20@HouseClass@@",
+      "symbol": "?Update_Present_Super_Weapons@HouseClass@@QAEXXZ",
+      "symbol_prefix": "?Update_Present_Super_Weapons@HouseClass@@",
       "options": [
         "/O2",
         "/Ob2",
@@ -41479,13 +41479,13 @@
           "resolved": 1602892
         }
       ],
-      "source_sha256": "9b0102d203655f8925a532833f24e5414b446b35e9992fbd5aad8e07dcfa9fb3",
-      "source": "src/recovered/classes/HouseClass/HouseClass_unknown_func_4f4b20_004f4b20.cpp",
+      "source_sha256": "93055e71d8ada769f1f1134d7fb4b329144258a3c4033a0e78838dff6e07bce0",
+      "source": "src/recovered/classes/HouseClass/HouseClass_Update_Present_Super_Weapons_004f4b20.cpp",
       "population": "population-4050",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
-      "semantic_name": "HouseClass_unknown_func_4f4b20_004f4b20",
+      "semantic_name": "HouseClass_Update_Present_Super_Weapons_004f4b20",
       "source_order": 196849
     }
   ]

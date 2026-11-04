@@ -4,8 +4,8 @@
     "id": "population-4011",
     "inventory_sha256": "a44c8a74efaf4fd5f65a9e76e8e1726d733aa5ae3017978ce88e6ef1c3918b63",
     "gaps_sha256": "622831373ad5b4cdbf5fd7c097de70c215c2b617693c8f32b2165d1d63388023",
-    "historical_population_sha256": "a053a6f8e69fedf845eb43c1522ab2edcf44a101b1e1b42dc9d8048145f7fff0",
-    "historical_acceptance_sha256": "03e7a451066be59eabb06076cd0798e74e61cfc0b3e8f069bb498ddf83b66855"
+    "historical_population_sha256": "4bff972c172ca52d9ef9b9424a89c35193adac59c3846aedd8edc1524e59d556",
+    "historical_acceptance_sha256": "57fcd32af567fbc82a66706872303d0f9943e1f95514a59b1c2d5aea8bf57228"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -5079,7 +5079,7 @@
     "??0TechnoClass@@QAE@PAVHouseClass@@@Z": 7081168,
     "?Init@BuildingClass@@UAEXXZ": 4454464,
     "?Delete@?$DynamicVectorClass@PAVBuildingClass@@@@QAE_NH@Z": 4541280,
-    "?unknown_func_4f4b20@HouseClass@@QAEXXZ": 5196576,
+    "?Update_Present_Super_Weapons@HouseClass@@QAEXXZ": 5196576,
     "?Search_For_Node@?$IndexClass@JPAVAbstractClass@@@@ABEPBUNodeElement@1@ABJ@Z": 4307344,
     "?unknown_slot19@BuildingClass@@UBE?AUCoordStruct@@PAVTechnoClass@@@Z": 4473664,
     "?unknown_slot37@BuildingClass@@UAE_NXZ": 4478000,
