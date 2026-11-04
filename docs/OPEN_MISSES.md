@@ -1714,3 +1714,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout701 (2026-11-04, closed; UnVQ2_C0_4x4_TRANS 0x77D940 1,101 B from codex1's r1039 draft, as a new one-row population; Dropship PARKED)
 - OWNER DECISION: the one-row population stands; moving 0x77E1A0/0x77E5B0 into that unit is a later step if the TU split is confirmed.
 - Dropship 0x4A6B90 parked at 99.83 (Scout701 w/d3.cpp, w/s2.cpp; 99.90 only with dead constants). Resume: explain why the original caches screen_origin.Y in edi and zero in ebx at 0x2096. TibSun does have dropship.cpp. `Read_Dropship_Clock` has no natural reason. Session 99.72, Locale 98.20, Get_Obstacle 97.38, Build_Schemes 95.82, ServerWait 96.21 parked.
+
+## Scout704 (2026-11-04, closed; Can_Enter_Cell 0x703040 2,952 B; drafts build/class-work/Scout704/w/keep/; Scout706 continues)
+- OWNER DECISION: `(otype = occupant->Class_Of())->unknown_1fd`, `int &tech = techface` and `contact` stay as landed: live source, each needed for exactness.
+- RTactical Action 0x62FE30 97.18 (ra1_9718.cpp). Techno Fire_At 0x6CA890 (6,019 B) 70.37, frame 0xA4 (fb3_7037_frame.cpp). Unit slot 310 0x6FF690, Tunnel 0x6FAA30, slot 28 0x703BD0 undrafted.

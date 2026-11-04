@@ -1436,3 +1436,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 ## First function of a TU (Scout701)
 - VC6 does not tail-merge two identical tails in the first function of a TU; any function before it, even a trivial one, turns the merge on. Blank lines before it or functions after it change nothing. Check this for rows that differ only by a merged tail.
 - Local constants count as locals for T: plain `const int` locals act like probes, `static const int` do not.
+
+## Case joins and add destinations (Scout704)
+- `mov eax,K` plus a backward `jmp` from a case body means source copies merged after register allocation, such as per-case `if (result < 5)` with one case falling into default; a join on one local cannot produce that layout.
+- A statement adding `this` refs can flip this/cell in ebx/ebp, and any non-`this` IL in the loop flips it back, so the weight looks like refs over span.
+- `else { if (!pressed) call }` gives a threaded jump past the call while keeping setne/test.
+- X+Y is canonical in VC6: Y+X, split sums and named copies give the same code; the add dest flips only when an operand stays live past the add.
+- A float length temp folded into its one use lifted Fire_At from 62 to 71.
