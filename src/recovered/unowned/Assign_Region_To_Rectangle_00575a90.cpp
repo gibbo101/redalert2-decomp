@@ -35,8 +35,9 @@ bool __fastcall Generation_Cell_In_Bounds_0058da10(Cell const &cell)
 {
     int x=cell.X;
     int y=cell.Y;
-    return (x+y>unknown_map_min_a70a1c && x-y<unknown_map_min_a70a1c &&
+    bool inside=(x+y>unknown_map_min_a70a1c && x-y<unknown_map_min_a70a1c &&
            y-x<unknown_map_min_a70a1c && x+y<=unknown_map_max_a70a20) ? true : false;
+    return inside;
 }
 
 #define VECTOR_IMPLEMENT_VECTOR_ACCESSORS

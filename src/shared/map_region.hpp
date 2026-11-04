@@ -61,6 +61,7 @@ public:
     bool unknown_00573680(Cell const &,Cell const &,int);
     bool unknown_00573d40(Cell const &,Cell const &,int);
     bool unknown_00574930(Cell const &,Cell const &,int);
+    bool unknown_005743f0(Cell const &,Cell const &,int);
     bool unknown_00574e50(Cell const &,Cell const &,int);
     bool unknown_005753f0(Cell const &,Cell const &,int);
     void *unknown_00;

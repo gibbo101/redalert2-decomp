@@ -17,15 +17,16 @@ bool MapRegionClass::unknown_005753f0(Cell const &first,Cell const &second,int r
     if(dx>=3) {
         int dy=second.Y-first.Y;
         if(dy>=3) {
-            Rect area(first.X-7,first.Y-4,dx+10,dy+10);
+            int top=first.Y-4;
+            Rect area(first.X-7,top,dx+10,second.Y-first.Y+10);
             if(Is_Rectangle_Clear_00575910(area,region)) {
                 Assign_Region_To_Rectangle_00575a90(Rect(area.X,area.Y,7,area.Height),region);
                 Assign_Region_To_Rectangle_00575a90(Rect(area.X,second.Y+1,area.Width,7),region);
                 Mark_Rectangle_00575bf0(Rect(first.X,first.Y,2,1));
                 Mark_Rectangle_00575bf0(Rect(second.X,second.Y-1,1,2));
                 Mark_Rectangle_00575bf0(Rect(first.X+1,first.Y+1,second.X-first.X-1,second.Y-first.Y-1));
-                Place_Tile_Footprint_005883f0(unknown_tileset_a6e038+7,XY_Cell(first.X-3,first.Y),region,unknown_10);
-                Place_Tile_Footprint_005883f0(unknown_tileset_a6e038+1,XY_Cell(second.X-2,second.Y),region,unknown_10);
+                Place_Tile_Footprint_005883f0(unknown_tileset_a6e038+7,first-Cell(3,0),region,unknown_10);
+                Place_Tile_Footprint_005883f0(unknown_tileset_a6e038+1,second-Cell(2,0),region,unknown_10);
                 for(int corner=0;corner<4;++corner) {
                     CellClass &cell=Map[Cell(first.X-corner,second.Y+corner)];
                     cell.unknown_11b=(char)(unknown_10-(char)corner-1);

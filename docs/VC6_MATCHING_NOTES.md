@@ -1170,3 +1170,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Y sum parity ignores k probes. A named pop slot (`CellClass **slot = &stack[count]; cur = *slot;`) plus `visited[..]++` flips it, `= 1` does not; known-zero threading keeps the `++` store a plain `mov 1`.
 - A register plus a write-through home can be two variables (zoneptr/zonerow, like TibSun's x/rowx). A pointer assigned before `1 << n` lands in edx because ecx holds the count. `Rect bounds(0, 0, w, w)` after the other inits delays `xor ebp`. `walk -= Cell(1, 0)` gives `dec word` plus a rewrite of the other coordinate. Writing Cell arithmetic through the real operator- raises the /Ob2 charge at the natural place.
 - Rewriting a low draft to TibSun flow or correcting it against the disassembly pays more than variants (0x564290 +24, 0x569320 +35).
+
+## Free sites and helper size (Scout661)
+- TibSun's one-line `Get_Cell_Data` is IL <= 40, so it is a free /Ob2 site; a long cast form was charged at every use, and that alone flipped a loop Insert inline (0x586340). Inline decisions are monotone in the helper's size.
+- `float &first_key = nodes[0].Key;` fixes store order, as in Create_Resource_Patch.
+- An inlined copy can differ from the out-of-line row: Grow_Water's score copies use TibSun's RMG_RANDOM_DOUBLE2 order, while 0x582970 keeps `weight*heading+rand*jitter*unit`. A separate inline helper fixes the fxch family.

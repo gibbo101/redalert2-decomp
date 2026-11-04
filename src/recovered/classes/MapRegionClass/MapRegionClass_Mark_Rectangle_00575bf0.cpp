@@ -25,12 +25,8 @@ void MapRegionClass::Mark_Rectangle_00575bf0(Rect const &area)
 // @ref ?unknown_map_cells_a70a24@@3PAUUnknownMapGenerationCell@@A=00a70a24
 void __fastcall Set_Cell_Region_Index_0056e970(Cell const &position, int index)
 {
-    UnknownMapGenerationCell *cells = unknown_map_cells_a70a24;
-    if (cells) {
-        unsigned int row = position.Y;
-        row *= unknown_map_cell_side_84e804;
-        unsigned int slot = position.X;
-        slot = row + slot;
-        cells[slot].RegionIndex = index;
+    if (unknown_map_cells_a70a24) {
+        UnknownMapGenerationCell &data = MapRegionClass::Get_Cell_Data(position);
+        data.RegionIndex = index;
     }
 }
