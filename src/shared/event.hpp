@@ -43,6 +43,14 @@ public:
     union {
         unsigned char Bytes[0x6F - 0x07];
         struct {
+            xTargetClass Whom;       // +0x07
+            unsigned char Mission;        // +0x0C
+            xTargetClass Target;     // +0x0D
+            xTargetClass Destination;// +0x12
+            long Speed;                   // +0x17
+            long MaxSpeed;                // +0x1B
+        } MegaMissionF;
+        struct {
             long Long1;             // +0x07
             long Long2;             // +0x0B
             long Long3;             // +0x0F

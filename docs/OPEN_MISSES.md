@@ -1491,3 +1491,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout651 (2026-11-03, closed; 4,466 B: bridge span twins 0x556520/0x557090, Place_Wall 0x56A660, Unregister_Subzone_Connection 0x566C30)
 - Repair_Bridge 0x555A60: 88.86 at HEAD headers (the 99.75 no longer reproduces; w/keep/rb1.cpp; one spot at +0x371). Damage_Low_Bridge family (5.2 KB): 98.73 (w/keep/de2.cpp, fcc.cpp); landing it means re-landing the four Spring/0x55FA60/0x55FB90 sources.
+
+## Scout652 (2026-11-03, closed; OverlayClass Mark 0x5DA970 3,251 B landed with atexit thunks 0x5DB630-0x5DB660)
+- OWNER DECISION: Mark keeps `TPoint2D<short> next = Adjacent_Cell(work_cell, direction); work_cell = next;`. It is a used local, which the process treats as ordinary iteration, not steering, though TibSun has no twin for it.
+- Hover While_Moving 0x4FCBC0: 92.56, shape 98.90 (w/keep/hover_while_moving_9256.cpp, w/keep/hs2.cpp; the whole Hover unit is 45/45 under RA2_COORD_AS_CELL, RA2_SHIP_CELL_ACCESSORS, RA2_CELL_AS_COORD, RA2_COORD_FROM_CELL_INLINE). Real code left only at 0x2FF-0x344. The clean fix types tube EnterCell/ExitCell as TPoint2D<short> in tube.hpp (fragile probe first). IPX Service 0x525F60: 97.99, parked (why T skips edi is unexplained).

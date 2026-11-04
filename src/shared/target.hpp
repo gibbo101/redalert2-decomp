@@ -34,9 +34,15 @@ struct CoordStruct;
 // object index (ID = Fetch_ID; shared/object_index.hpp). Five bytes,
 // byte-packed: copies move a dword and a byte. Names are hypotheses.
 #pragma pack(push, 1)
-class TargetClass {
+// The POD part used by packed event union members (TibSun target.h hypothesis).
+class xTargetClass {
 public:
-    TargetClass() : Kind(0) {}
+    long ID;
+    unsigned char Kind;
+};
+class TargetClass : public xTargetClass {
+public:
+    TargetClass() { Kind=0; }
     TargetClass(AbstractClass *object);                     // 0x006B54A0
     TargetClass(Cell const &cell);                          // 0x006B5510
     TargetClass(CoordStruct const &coord);                  // 0x006B5560
@@ -95,8 +101,6 @@ public:
     // The packed form: kind in the top byte, the low 24 bits of the ID.
     int As_Target() const { return (Kind << 24) | (ID & 0x00FFFFFF); }
 
-    long ID;                // +0x00
-    unsigned char Kind;     // +0x04
 };
 #pragma pack(pop)
 
