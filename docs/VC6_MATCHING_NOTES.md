@@ -1145,3 +1145,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - An inline member-wise operator= makes a struct assignment a charged site with no code change. Static helpers are free sites that only raise N.
 - The first nested accept can have zero margin: one added site anywhere later flips it, even a spend probe, so the charge must come from existing sites or helper sizes.
 - One shared int across disjoint loops gives a shared frame slot; block-scoped locals do not. Naming a count before a call lets `add ebp,0x30` coalesce with the dying pointer. Two side steps written the same way (`facing - 4`) CSE as in the original.
+
+## Frames, FP and statics (Scout657)
+- Frame order follows object size: an 8-byte Point2D sorts before 12-byte objects, and a `CoordStruct delta` with Z dead ties with them (0x608440). An inline value helper such as TibSun's `Random_Double(a, b)` moves a `fild` temp into the first-dead argument home; a named int does not.
+- Register setups before pushes in a free function mean `__fastcall`, even with no callers (0x53F490).
+- Inserting a function with local statics renumbers later `$S` and `_$E` symbols, which shows up as "Unsupported .bss" and "Unaccounted code". Newly emitted inline slots need @refs too.
+- To break FP product CSE, use casts in the first sum and fresh double locals in the second; casts or locals in both sums CSE the squares. `double angle = a; angle *= b; angle *= c;` keeps operand order and stops the `fst` forward.
+- `dir += x` then `Normalize(particle->fc)`, not `Normalize(dir)`, gives fstp plus reload. `fld st0; fld mem; fcompp` needs a float-typed value and the limit read through an inline returning double.
+- T-phase interaction: naming a local can fix a sum order and move a later tie; dropping another referenced local restores it (0x60C050).

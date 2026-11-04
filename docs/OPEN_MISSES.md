@@ -1514,3 +1514,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout656 (2026-11-04, closed; 2,146 B: Spring_Bridge_Destruction_Triggers 0x558340, Get_High_Ground_Mask 0x55BD70; drafts in build/class-work/Scout656/w/keep/, Scout658 continues)
 - 0x564B60 98.20 (zc_9820.cpp, overlay zc_h; registers only at +0x1B6..0x1D6). 0x565EB0 93.83 (br_9383.cpp; two ties). 0x565A50 87.74 (ra_8774.cpp; Cell ctor at site 4 must be refused). 0x5689D0 60.00 (ce_6000.cpp; frame 0x10 vs 0xC). Damage_High_Bridge 0x559000 51.10 (dh_5110.cpp; the original holds ebx=cell, ebp=this throughout, ours spills them).
 - Not attempted: 0x563D80, 0x564290, 0x566340, 0x569320 (7,858 B).
+
+## Scout657 (2026-11-04, closed; 3,988 B: ParticleClass ctor 0x608440, Motion_Capture 0x53F490, Railgun AI 0x60C050 with Spawn_Particle 0x60B190; drafts build/class-work/Scout657/w/keep/)
+- OWNER DECISION: `Velocity_Limit` (file-local one-line inline, the only form that gives `fld st0; fld mem; fcompp`) stays as landed; make it a ParticleSystemTypeClass member when that class is typed. The file-local `operator+=(Vector3 &, Vector3 const &)` moves to vector3.hpp when that header is next opened.
+- Spark AI 0x60B670 86.56 (s0.cpp + b190t.cpp; register rotation, 64 toggles flat). One_Time 0x521A90 94.19 (ot0.cpp; ot3.cpp has the shape, `mirror` outranks `row` for ecx). Audio_Remove_Devices 0x403210 88.51 (rdv9.cpp). Video_Mode_Proc 0x543CF0 73.96 (vm0.cpp) and Main_Options_Proc 0x542590 85.62 (mo0.cpp): one family, original keeps the index in a register and spills the other value. LdPrgMgr draw 0x535BF0 63.42 (ld0.cpp + d30.cpp; not iterated, frame slots dominate).
+- Rows parked before Scout651 are worth one retry with the T probe and the fcompp and CSE forms.

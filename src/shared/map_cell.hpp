@@ -112,6 +112,7 @@ public:
     bool unknown_47b980() const;    // 0x0047B980 (a train bridge tile; as shared/cell.hpp)
 #ifdef RA2_MAP_BRIDGE_PIECES
     void Unknown_0047CC10();
+    class TubeClass *Unknown_0047A130();   // 0x0047A130 (the cell's tube; TibSun Get_Tunnel)
     bool unknown_47b5e0() const;    // 0x0047B5E0 (as shared/cell_class.hpp; Westwood's Is_Tile_Cliff)
 #endif
     void Unknown_00472540(int value);   // 0x00472540 (as shared/cell.hpp)
