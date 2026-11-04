@@ -1272,3 +1272,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A function-local Cell table with an empty atexit thunk implies an element type with an empty dtor, built from Cell temps; the frame carries one temp per element.
 - An inline helper taking double parameters fixes int-to-double evaluation order that an int-parameter helper gets wrong. A reused byte slot can be one bool reassigned.
 - Gap: frame order follows sharing groups, not single-variable reference counts. The Study42 sort rule did not predict the 0x4F03C0 layout.
+
+## Promoted temporaries and CSE rank (Scout677, 0x57FF20 from 58 to exact)
+- `Rect pre(0,0,0,0)` then `pre = Rect(...)` in each arm makes a promoted temporary, which decides which field pseudo spills; field assigns do not.
+- Repeating an expression instead of naming it makes a CSE temp that ranks differently from a named local, and that decides which pseudo wins the register. `x_offsets[direction / 2]` twice with no index local gives the `shl eax,2` CSE.
+- `Rect a = src; a.X += 1; a.Width -= 2;` gives `inc` and `sub r,2`; ctor arguments give `add r,-2`. `center = Point2D(a, b)` fixes read order. `base + Cell(-1, 0)` and `base - Cell(1, 0)` differ.
+- Rows ending in switch tables need table-inclusive body_bytes.
