@@ -1245,3 +1245,17 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `lowcolor = X` in each arm plus one `highcolor = lowcolor` after the if/else gives the shared tail; `highcolor = lowcolor = X` does not.
 - In a function-local static table, leading constants stay in .data and everything from the first non-constant element on is stored by code.
 - shape_file.hpp in a unit without an empty rect row needs SHAPE_FILE_EMPTY_RECT, or the unit gets an extra initializer and acceptance refuses .CRT$XCU.
+
+## Statements first, doubles and literals (Scout673, 0x57ECF0)
+- Fix statements first: Seed_River's frame and `this`/zero registers came right on their own, and slot packing followed reference counts.
+- A hand-written copy of an inline shows as left-to-right evaluation and a plain variable pushed as ints.
+- A second named double keeps a value on the x87 stack (`fst m; fld st(0)`). `fst dev; fadd lo` versus `fstp dev; fld lo; fadd dev` follows declaration order of dev relative to lo.
+- A constant left of a compare after folding needs the row written `mean-deviation > maximum`. The same double at two addresses is an extern const double. A dword load before a byte store needs a named int.
+- A 1 ulp wrong literal scores 100 but fails acceptance with "Unsupported allocatable data section"; check literals with Scout673's rd.py.
+
+## Second-site inlining and facing ties (Scout674, 0x4F4070)
+- A wrapper one level down moves a callee out of line at that site only; it was the only form that did (Scout642 had ruled out charged units there).
+- `int n = 0` placed next to a loop init coalesces the zero with the index, which put the index in memory as in the original (73 to 96.57). Reusing locals across blocks fixes frame slots. A live named local holds a register across an arm, so dropping it matters.
+- diff_candidate scores unbound string literals as fine but acceptance refuses their .data: rows with strings need the @ref, and /FAs gives the mangled name.
+- Constant-facing tie: the first two distinct facings give `add dx,[global]`, the rest `add dx,[esp]`; with three distinct the set decides, and sets containing 0 or 7 stay all global.
+- `T result(rect1)` is not the same as `T result = rect1`. A false epilog copy whose next statement is adjacent is removed; one whose next statement is far away stays.

@@ -1586,3 +1586,11 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout671 (2026-11-04, closed; 2,903 B: Cell_Color 0x4712C0, Get_Height 0x4706C0; drafts build/class-work/Scout671/w/keep/; Scout674 continues)
 - Place_Tiberium 0x47C3A0 98.91, shape 100 (one eax/ebx pair at +0x3CC). Fixup_LAT 0x471D10 97.74 with 6 Nop probes, clean 69.63 (needs a rename to bool Fixup_LAT() and 6 real root sites). Is_Clear_To_Build 0x4718B0 71.99 (needs 0x471830 rewritten so it auto-inlines). Optional rename: unknown_4706c0 to Get_Height.
+
+## Scout673 (2026-11-04, closed; Seed_River 0x57ECF0 4,386 B, the largest open map generator row; drafts build/class-work/Scout673/w/keep/, overlay h2 with bool Place_Waterfall; Scout675 continues)
+- OWNER DECISION: `Clear_River_Region(int region, int const &height_source)`, the written-out Gaussians, `unsigned char success` and `unknown_lake_chance_7a5cb0` stay as landed. Retyping Unknown_0055C2C0 to bool is a later rename.
+- Place_Waterfall 0x57FF20 (6,413 B) 33.08, shape 59.54; resume from waterfall_57ff20_rect_ctor.cpp (22.55, closer register pattern); the four inner cases 0x1000-0x2400 are most of the diff; return type bool. 0x57C780 70.06 (land_mass_57c780_7006.cpp; while form 66.29 has correct jumps). 0x57C9E0 53.92, shape 94.04 (arm 2's `Width` needs ebx; frame 0xb0 vs 0xb8). 0x576420 not attempted (stack IndexClass with qsort; no TibSun twin). Grow_Water 84.24 unchanged.
+
+## Scout674 (2026-11-04, closed; AI takeover 0x4F4070 2,731 B; drafts build/class-work/Scout674/w/keep/; Scout676 continues on House)
+- OWNER DECISION: file-local `Is_Network_Computer` in 0x4F4070 stays until the real member is identified. The swapped `power+=`/`drain-=` order and reused power locals are plain source order.
+- Place_Tiberium 98.91, Fixup_LAT 69.63 clean (97.74 with Nop probes, not landable), Is_Clear_To_Build 71.99 (7 false-epilog copies vs our 10): boxes spent, parked. Place_Veins 0x47AD00 78.39, shape 98.66 (place_veins_7839.cpp + vein_frame_47a5a0.cpp; TibSun twin; ebx/ebp swap, draft carries `Is_Solid_Vein`, a site-supplying helper to review before landing; the 0x47A5A0 rewrite is unproven in the population). House perimeter 0x4F2350 68.39, shape 95.93 (wall1.cpp; mostly frame slots). 0x4F03C0 60.23 not reached. 0x4EEE10's decompile is garbage from an entry overlap: check its bound first.
