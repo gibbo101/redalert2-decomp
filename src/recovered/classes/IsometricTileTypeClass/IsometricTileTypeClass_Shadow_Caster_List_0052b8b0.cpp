@@ -5,9 +5,9 @@
 // Shadow_Caster_List; the cells redraw with the cliff).
 #include "shared/isometric_tile_type.hpp"
 #include "shared/unknown_geometry.hpp"
-// @ref _?$S69@?4??Shadow_Caster_List@IsometricTileTypeClass@@QBEPBVCell@@XZ@4EA=00a6e100
+// @ref _?$S70@?4??Shadow_Caster_List@IsometricTileTypeClass@@QBEPBVCell@@XZ@4EA=00a6e100
 // @ref _?_list@?4??Shadow_Caster_List@IsometricTileTypeClass@@QBEPBVCell@@XZ@4QAY05$$CBUUnknownStaticCell@@A=00a6cb80
-// @ref _$E70=0052c220
+// @ref _$E71=0052c220
 // @ref _atexit=0078298a
 
 Cell const *IsometricTileTypeClass::Shadow_Caster_List() const
