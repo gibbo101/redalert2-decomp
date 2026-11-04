@@ -200,6 +200,7 @@ class TagClass {
 public:
     bool unknown_func_6b3d90() const;       // 0x006B3D90 (as shared/tag.hpp; TibSun Is_Cross_Vertical)
     bool unknown_func_6b3da0() const;       // 0x006B3DA0 (as shared/tag.hpp; TibSun Is_Cross_Horizontal)
+    bool Spring(int event, ObjectClass *object, Cell cell, bool forced = false, int source = 0);   // 0x006B3DF0 (as shared/tag.hpp)
 };
 
 #endif

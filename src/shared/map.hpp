@@ -309,6 +309,8 @@ public:
     bool Destroy_High_Bridge_Span_00558660(Cell const &cell, FacingType direction, Rect *dirty);
     void Destroy_High_Bridge_Connections_00558BD0(Cell const &cell);
     Cell Unknown_00564F70(CellClass *cptr, bool isbridge);        // TibSun Get_Bridge_Zone_Connection_Cell
+    Cell Unknown_005689D0(Cell const &cell, bool inset);          // TibSun Closest_Edge_Cell
+    void Unknown_00565A50(Cell const &origin, int radius_limit, int count_limit, int zone_type, int zone, DynamicVectorClass<Cell> &cells, int width, int height);   // clear-area ring collector
 #endif
 #if defined(RA2_MAP_BOMB_BRIDGE) || defined(RA2_MAP_BRIDGE_PIECES)
     // Bridge destruction around a cell (BombClass::Unknown_00435D30 on a bridge repair hut): 0x00557090 when a
