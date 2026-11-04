@@ -1671,3 +1671,11 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout693 (2026-11-04, closed; Jumpjet Move_To 0x52F600 852 B; drafts build/class-work/Scout693/w/keep/)
 - Mech 0x5919A0 79.76, shape 98.35 (e1.cpp + mdef5.cpp; 14 of 138 bad; not a T problem). Walk 0x71E220 55.78 (ours `and esp,-8` over frame 0x6C, original `sub esp,0x38`). Rocket Move_To 0x63EA80 59.32, Rocket 0x63DE10 88.89 (removing `inline` from the Process row drops Process to 98.47), Tunnel Stop_Moving 0x6EFDE0 83.47 at body_bytes 544. Drafts carry `T *&type`, `Adjacent_Tube`, `Flat`, `Distance2`: none landed.
+
+## Scout694 (2026-11-04, closed; 3,021 B from the promotion queue: UnitClass Draw_Shape 0x7005B0 from codex3's 99.70, Trackball 0x622690 from codex3's 91.55; drafts build/class-work/Scout694/w/keep/; Scout696 continues the queue)
+- OWNER DECISION: `Unit_Negated_Vector_007005b0`, the SHAPE_FILE_EMPTY_RECT define, `Trackball_Length_00622690`, `Quat_Vector_Length` and the file-local operator- stay as landed. The `@ref ??0Vector3@@QAE@MMM@Z=00437690` binding stays; it was a caller hypothesis of codex3's. Landing messages used `codex3 r288 draft` as a credit label though r288 is a separate round.
+- Take_Damage 0x6CDC40 93.44 parked (about 50 variants; the case-1 reload at 0xB2F is unique in the exe). Slot 186 0x6CD340 81.96 parked. Unlimbo 0x43D3A0 97.61 (ul_c2_9764.cpp root). Health bar 0x6C3F00 and NoInit 0x6C1F10 not attempted.
+
+## Scout695 (2026-11-04, closed; BuildingClass AI 0x43C930 2,661 B from codex2's 99.60 draft; drafts build/class-work/Scout695/w/keep/; Scout697 continues; real Building state is in codex2's building/NOTES.md and RESUME.md on the PC)
+- OWNER DECISION: RA2_COORD_TPOINT3D for the Building population is allowed only if every accepted row, Docking and Deconstruction included, proves exact at a full check; try it as its own step.
+- Missile 0x448400 97.75 (codex2 proof 99.77; mm.cpp; two ties). Draw_It 0x43A5E0 97.70, shape 100 (di.cpp; `cell`/`shape` slots swapped, a counterexample to reference-count ordering). Cloak 0x44FB50 98.30 (needs h3/ and a rebuilt Do_Destruction). Editor_Draw_It 0x43A380 96.30. Draw_Extras 0x43ABD0 87.48. Take_Damage 0x43EE70 81.73. Not attempted: Mark 0x43BFC0, Captured 0x444660, Mission_Attack 0x446920, Barrel 0x43B7E0, 0x43DC50.

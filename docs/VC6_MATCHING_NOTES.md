@@ -1385,3 +1385,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A named copy of a returned struct adds a register copy and rotates following code; `a + (Map[c].f() - b)` removes it.
 - A default-first pointer (`p = &A; if (...) p = &B;`) keeps the source live, so `p` cannot coalesce and gives a register compare.
 - `Distance(Point2D(a), Point2D(b))` reads the right argument's coordinates before a virtual call on the left.
+
+## FP past rep movs and layout (Scout694)
+- A `float const &` parameter on only the first argument of an inline ctor helper exposes that temp, so its fstp stays after `rep movsd` while fld/fchs hoist.
+- `fstp` then `fld Y, Z, X` then `fld st(n); fmul` comes from double locals declared y, z, x with `x*x + z*z + y*y`.
+- A later row can inline only when its callee is one call deep. A false block follows the memory-last goto. Compare-chain switches lay out default, then cases descending.
+- Scout694's crt.py lists $E/$S and init relocs that a local score does not show.
