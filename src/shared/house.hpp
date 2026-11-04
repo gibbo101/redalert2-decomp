@@ -297,6 +297,8 @@ public:
     void unknown_func_4ecfb0(CoordStruct const &coord);    // 0x004ECFB0
     void unknown_func_4eeba0(int amount, HouseClass *house);   // 0x004EEBA0 (anger)
     bool unknown_func_4f5320(BuildingTypeClass *type, Cell const &cell);   // 0x004F5320 (the widened foundation touches a cell with this house's bit)
+    // Where the AI puts a structure: ranks the base cells by `score` (context passed through), then scans outward (0x004F03C0, TibSun name).
+    Cell Where_To_Place_Building(BuildingTypeClass *type, int (__fastcall *score)(HouseClass *, Cell const &, int, int), int context);
     void Just_Built(TechnoClass *techno);                  // 0x004E6F10 (TS name; the factory finished an object)
     void Attacked(TechnoClass *source);                    // 0x004E4F60 (TS name; an object of the house was attacked)
     void unknown_func_4f3420();                            // 0x004F3420 (rebuilds the threat map +0x56D0; after an alliance changes)
