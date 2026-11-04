@@ -32,7 +32,11 @@ public:
     virtual CoordStruct __stdcall Head_To_Coord();                              // 0x004FC960
     virtual Matrix3D * __stdcall Draw_Matrix(Matrix3D *matrix, int *key);                           // 0x004FBBF0
     virtual Matrix3D * __stdcall Shadow_Matrix(Matrix3D *matrix, int *key);                         // 0x004FBF50
+#ifdef RA2_PROCESS_COM_BOOLEAN
+    virtual unsigned char __stdcall Process();                                           // 0x004FBFC0  // TibSun's COM `boolean`: 0x004FBFC0 returns 7
+#else
     virtual bool __stdcall Process();                                           // 0x004FBFC0
+#endif
     virtual void __stdcall Move_To(CoordStruct to);                             // 0x004FC9E0
     virtual void __stdcall Stop_Moving();                                       // 0x004FDF40
     virtual void __stdcall Do_Turn(UnknownFacingDir dir);                       // 0x004FDF90

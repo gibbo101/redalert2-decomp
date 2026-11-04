@@ -56,7 +56,11 @@ struct __declspec(novtable) ILocomotion : public IUnknown {
     virtual int __stdcall Visual_Character(bool raw) = 0;                        // 13
     virtual int __stdcall Z_Adjust() = 0;                                        // 14
     virtual int __stdcall Z_Gradient() = 0;                                      // 15
+#ifdef RA2_PROCESS_COM_BOOLEAN
+    virtual unsigned char __stdcall Process() = 0;                                        // 16  // TibSun's COM `boolean`: 0x004FBFC0 returns 7
+#else
     virtual bool __stdcall Process() = 0;                                        // 16
+#endif
 #ifdef RA2_SHIP_MOVE_TO_VALUE
     virtual void __stdcall Move_To(COMCoordStruct to) = 0;                          // 17
 #else

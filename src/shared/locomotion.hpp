@@ -203,7 +203,11 @@ public:
     virtual int __stdcall Visual_Character(bool raw);                           // 0x0053D4C0
     virtual int __stdcall Z_Adjust();                                           // 0x0053D4A0
     virtual int __stdcall Z_Gradient();                                         // 0x0053D4B0
+#ifdef RA2_PROCESS_COM_BOOLEAN
+    virtual unsigned char __stdcall Process();                                           // 0x0053D560  // TibSun's COM `boolean`: 0x004FBFC0 returns 7
+#else
     virtual bool __stdcall Process();                                           // 0x0053D560
+#endif
 #ifdef RA2_SHIP_MOVE_TO_VALUE
     virtual void __stdcall Move_To(COMCoordStruct to);                             // 0x0053D550
 #else

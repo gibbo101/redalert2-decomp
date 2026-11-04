@@ -9,12 +9,7 @@
 
 void HoverLocomotionClass::unknown_4fed20()
 {
-    bool arrived;
-    if (unknown_24 != unknown_coord_a41080) {
-        arrived = LinkedTo->unknown_slot104() == Coord_Cell(unknown_24);
-    } else {
-        arrived = true;
-    }
+    bool arrived = unknown_24 == unknown_coord_a41080 || LinkedTo->unknown_slot104() == unknown_24.As_Cell();
     unknown_48 = 1.0;
     LinkedTo->unknown_slot306(1.0);
     Start_Of_Move_004fe0f0(0);
