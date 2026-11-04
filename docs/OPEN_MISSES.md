@@ -1537,3 +1537,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - PCX Draw 0x68CF90 99.55 (one tied pair of vtable temps, about 40 variants flat; bool rename not applied). Urban 0x587CF0 90.73 (Scout635 keep; original reloads ebx in the latch). Grow_Water 0x5820B0 84.24 natural, 85.67 with probes (not landable; budget 480 too high at the end). Rural_Roads 0x58A1B0 50.51 (rr0.cpp, overlay h_rr; not iterated).
 - OWNER DECISION: the double `unknown_00574930` call in Connect_Regions_With_Ramp stays as landed.
 - Lane traps: pass-7 rows need `body_bytes` and `bound_evidence` on the plan row, and RA2_INVENTORY_PASSES must not be set for check_plans. Populations renumber at every landing, and a stale id joins an empty unit and gives garbage scores with no error.
+
+## Scout662 (2026-11-04, closed; 0 B; drafts build/class-work/Scout662/w/keep/, overlay w/h2; Scout664 continues)
+- OWNER DECISION: `switch (found) { case false: S; break; default: F; }` on a bool is acceptable source: it is semantically plain and the normal iteration the process allows. `Is_Span_EW(overlay, base)` stays as a file-local helper if 0x569320 lands; its name is a hypothesis.
+- 0x569320 99.49, shape 100 (d_9949.cpp; `search` lands in [2c], the original has [14]; needs a join that survives until tail merge without adding refs to `search`). 0x566340 51.41, shape 97.61, calls equal (c_5141.cpp; ebx/edi swap plus spill order; `Cell_Passability` must become a MapClass inline under RA2_MAP_BRIDGE_PIECES before landing). 0x564290 42.47 and 0x563D80 76.89 unchanged.

@@ -1175,3 +1175,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - TibSun's one-line `Get_Cell_Data` is IL <= 40, so it is a free /Ob2 site; a long cast form was charged at every use, and that alone flipped a loop Insert inline (0x586340). Inline decisions are monotone in the helper's size.
 - `float &first_key = nodes[0].Key;` fixes store order, as in Create_Resource_Patch.
 - An inlined copy can differ from the out-of-line row: Grow_Water's score copies use TibSun's RMG_RANDOM_DOUBLE2 order, while 0x582970 keeps `weight*heading+rand*jitter*unit`. A separate inline helper fixes the fxch family.
+
+## Layout, loops and refusals (Scout662; tool Scout662/t/fa.sh + fm.py prints a frame map with reference counts)
+- Frame slot order follows reference counts. A join statement sinks arm tails but drops the variable's frame refs by one.
+- `switch (found) { case false: S; break; default: F; }` lays F first with S earlier in source; plain if/else and goto do not.
+- `for (;;)` and `do ... while (true)` rotate the loop, `while (true)` does not; an inlined `if` in the head stops the rotation.
+- Reading a field twice keeps a one-use pointer local alive while CSE still gives one load.
+- One extra inline depth moves a nested refusal: an accessor at the same level as 0x54FA60 took 0x566340 to 18 of 18 calls.
