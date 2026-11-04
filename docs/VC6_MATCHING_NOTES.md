@@ -1290,3 +1290,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Slot sharing groups reveal source objects. `Point2D delta` with field assigns replaced two ints and explained `neg; neg`: X stays in memory, Y is forward-substituted. Wrapping a body in `else { }` lets a local share a temp and changes a static's mangled scope. Function-block address-taken objects overlap everything in the block.
 - Tied temp slots came out right once one temp's ref count was right. `Map[Adjacent_Cell(...)]` without a named cell fixed registers.
 - A member rename must use mangling_rewrite: a plain `renames` entry leaves symbol_prefix stale.
+
+## Second frame sort, ternaries and hoists (Scout679, 0x529870 and 0x6D4920)
+- Above about 0x80 local bytes a second sort orders slots by density (summed refs of the sharing vars / size). All-tie behaviour: for each lo, mid = lo + (hi - lo) / 2, swap A[lo] and A[mid]; lab/sim5.py reproduces N=35, 36, 37 and 46. Its input is the first-phase order (size, refs, last ref), so a char array's declared size inside its 4-byte rounding changes key order with no code change (`suffix[10]` vs `[12]`: 95.09 to 99.75). Test frame ties that ignore declaration order with array sizes.
+- A function-scope buffer overlaps a pre-loop temp, so two loop temps share a slot instead.
+- A ternary of named int locals (`i < n ? full : empty`) stays a real conditional until const-prop, so the setcc runs before the arg temps; constant arms fold in place at the push (60 to 91).
+- `dec` after a loop guard means a hoisted value: write `for (j = rows - 1; ...)` inside the outer loop, not a precomputed count.
+- Commutative imul order can flip on an unrelated temp elsewhere in the function; source operand order does not reach it.
+- diff_candidate shows nothing for what acceptance refuses unless bound: the `""` literal (.bss COMDAT), every string, vtables, ??_G, GenericNode and ??1INIClass COMDATs, and `_$E`/`$S` shifts in later rows. Scout679/cs.py lists code sections with no ref.

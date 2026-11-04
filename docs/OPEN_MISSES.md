@@ -1614,3 +1614,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout680 (2026-11-04, closed; Where_To_Place_Building 0x4F03C0 2,629 B with atexit thunks and the AI_Build_Wall rename; drafts build/class-work/Scout680/w/keep/, LIST.md has twins for 44 rows; Scout681 continues)
 - `Facing_Offset`, `Coord_Span` and `Coord_Span2` stay provisional file-locals; Coord_Span2 is probably the inlined second site of one Length. 0x4F8C60 is really IndexClass<int,Cell>::Increase_Table_Size, bound by @ref, renaming touches many populations, so left.
 - Redraw_Veins 0x47A7A0 77.77, shape 98.06. Place_Veins 78.39 parked (`Is_Solid_Vein` unjustified, without it 68.91). Random_Cell_In_Zone 0x4ECA50 53.51. Expert_AI 0x4E8990 62.21.
+
+## Scout679 (2026-11-04, closed; 9,604 B: Draw_Pips 0x6D4920, Read_Control_File 0x529870; build/class-work/Scout679/NOTES.md; Scout682 continues on Ship and Drive)
+- OWNER DECISION: all stay as landed: `int full = 1; int empty = 0;` pairs, `Expanded_Intersect`, `Point2D::operator*` under RA2_POINT2D_SCALE_OPERATOR (unguarded it breaks Print_CRCs and Pick_Lobby), `CDTimerClass<SystemTimerClass> fresh(4); callback_timer = fresh;`, and `char suffix[10]` at function scope. All are live source; none has TibSun evidence beyond the match.
+- Later rename: unify ?Unknown_00529870@@YIXH_N@Z and Read_Tile_Control_00529870 in Init_Map 0x57AE00 as Read_Control_File.
