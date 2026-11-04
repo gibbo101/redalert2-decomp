@@ -1510,3 +1510,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Ship While_Moving 0x676F60: 74.75, shape 97.71 (w/keep/sw_x4.cpp, cleaner sw_u2.cpp 72.90; both need overlay ov/shared/{rect,locomotion,coord}.hpp, which has no fragile probe or full build yet). About 150 real diff lines stay even with the -1 web out of the way (probe sw_g4_headprobe.cpp 75.75, not landable). Resume: one real pseudo at the peak 0x104-0x135 that compiles to nothing. Also open: frame order, occupier join 0x978-0x995, Adjacent_Cell phase 0x46B, `partial` temp slots, zero web from 0xF97.
 - Drive 0x4A1000 still 68.94: re-port once Ship goes exact. Start_Of_Move 0x4A2670 / 0x6785C0 still not attempted.
 - OWNER DECISION: RA2_COORD_TPOINT3D and RA2_TRACK_POINT_STRUCT are not adopted for the Ship and Drive units yet, because both change every accepted row there. Decide when a row needs them for exact.
+
+## Scout656 (2026-11-04, closed; 2,146 B: Spring_Bridge_Destruction_Triggers 0x558340, Get_High_Ground_Mask 0x55BD70; drafts in build/class-work/Scout656/w/keep/, Scout658 continues)
+- 0x564B60 98.20 (zc_9820.cpp, overlay zc_h; registers only at +0x1B6..0x1D6). 0x565EB0 93.83 (br_9383.cpp; two ties). 0x565A50 87.74 (ra_8774.cpp; Cell ctor at site 4 must be refused). 0x5689D0 60.00 (ce_6000.cpp; frame 0x10 vs 0xC). Damage_High_Bridge 0x559000 51.10 (dh_5110.cpp; the original holds ebx=cell, ebp=this throughout, ours spills them).
+- Not attempted: 0x563D80, 0x564290, 0x566340, 0x569320 (7,858 B).

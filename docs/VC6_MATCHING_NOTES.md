@@ -1139,3 +1139,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `(Object_Coord(LinkedTo) - dest_coord)` gives `mov esi,edx`; `movement + Object_Coord(LinkedTo)` gives `mov ebx,edx`. An unexplained register copy around a Coord difference is usually one more inline level.
 - A cached constant (-1 in edi) is a conflict rule, not a type rule: compare types do not detach it, but a real pseudo at the difference peak or live across a call evicts it. Constants compete: a second zero use at the head caches zero in edi and moves -1 to ebx.
 - TibSun's Point2DStruct: `Point2D(Point2DStruct const &)` built through a nested call reads Y first. `(double)X*(double)X...` Length gives the original FP order.
+
+## Inline budget levers (Scout656)
+- `Cell temp(first);` in a small local swap helper is a charged site; `Cell temp = first` is smaller and misses the window. `current.X++` instead of `+= Cell(1,0)` removes sites, lowering N so a larger early charge fits.
+- An inline member-wise operator= makes a struct assignment a charged site with no code change. Static helpers are free sites that only raise N.
+- The first nested accept can have zero margin: one added site anywhere later flips it, even a spend probe, so the charge must come from existing sites or helper sizes.
+- One shared int across disjoint loops gives a shared frame slot; block-scoped locals do not. Naming a count before a call lets `add ebp,0x30` coalesce with the dying pointer. Two side steps written the same way (`facing - 4`) CSE as in the original.

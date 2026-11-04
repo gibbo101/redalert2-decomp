@@ -1,6 +1,6 @@
 # Handoff — original-target decompilation
 
-Current state only (2026-11-04 01:30Z). Numbers: [STATUS.md](STATUS.md). Workflow:
+Current state only (2026-11-04 02:40Z). Numbers: [STATUS.md](STATUS.md). Workflow:
 [process](ORIGINAL_TARGET_PROCESS.md). Commands: [build](ORIGINAL_TARGET_BUILD.md). Matching rules:
 [VC6 notes](VC6_MATCHING_NOTES.md). Open misses and debt: [OPEN_MISSES.md](OPEN_MISSES.md).
 Earlier owner periods are in [history/](history/).
@@ -9,7 +9,7 @@ Earlier owner periods are in [history/](history/).
 
 - **Numbers.** 70.69% matched .text at 7dbe26924, up from 67.38% at the account switch below. The queue is empty; [STATUS.md](STATUS.md) has current figures.
 - **Host rules learned 2026-11-03.** `RA2_REMOTE_COMPILE` must be set (runq.sh and build/owner-watch/fullbuild.sh default it on); scoring stays in local Wine, one compile at a time. Full builds are serialized by private/tools/fullbuild_lock.sh. Keep two Mac lanes; memory stop rule is `memory_pressure` free under 15%, disk alert 25 GiB. A refused round must leave the queue head before any rerun.
-- **Mac lanes.** Scout656 (Map.CPP rest of the Scout648 list) and Scout657 (pass-7 rows). Next lane number is Scout658. Their misses go in OPEN_MISSES.
+- **Mac lanes.** Scout658 (Map.CPP continuation) and Scout657 (pass-7 rows). Next lane number is Scout659. Their misses go in OPEN_MISSES.
 - **Windows workers.** Rule 5a in WORKER.md: goals are never ended or blocked, fallback items come from assignments/fallback.md, only capacity errors need the user. codex1 Fly then Dropship; codex2 BuildingClass; codex3 UnitClass near misses and Shrapnel; codex4 pass-7 rows at 0x700000 and up plus fallback.
 - **Deferred owner items.** r945 closed-policy migration; Make_Base_Nodes 2-arg ctor option; merge UnknownCoord434820 with Coord; drop the `#else` of RA2_ABSTRACT_FLAGS_UNNAMED in abstract_class.hpp; main_loop.hpp `min` to always.hpp; bogus row 0x68633A; 0x7053F0; retype Process to boolean across overrides (RA2_PROCESS_COM_BOOLEAN, 12 rows).
 
