@@ -1,3 +1,4 @@
+#define RA2_VOXEL_DRAW_UNIT
 // Header-static dynamic initializers of the unit at 0x0070C610:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x0070C610-0x0070C7F6); the other
