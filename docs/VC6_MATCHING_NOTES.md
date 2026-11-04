@@ -1426,3 +1426,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A named `bool flat = otype->DrawFlat` flipped three register webs. `Point2D point = offset() + xpoint` with `point -= clip.Top_Left()` gives the original register order.
 - With /Ob2 a row in the same unit inlines at its call sites, so a missing out-of-line ctor at a site can point to an earlier row's form: one row can be exact in five forms that differ only at the inlined site. TU position does not decide this.
 - `Rect rect = Rect(0,0,0,0)` versus direct init changes which temp shares a slot and splits the zero web.
+
+## Named bools and joins (Scout703)
+- `A && B` tests hoisted into named bools from named locals stop threading from dropping a useless compare. A `jne` from one chain into another chain's assign blocks is `if (Count() || p == 0 || p == 1 ...) { same chain }`, not two chains.
+- A vptr reload after a nested virtual argument means a separate statement: within one expression tree VC6 CSEs `*this`.
+- `mov eax,K; jmp` into `cmp [r],eax` is a join on a named value.
+- Scout703's sh.py is a structural diff with registers and frame offsets normalised: the fastest first read of a new draft. tp.py + ts.sh run a T phase scan.

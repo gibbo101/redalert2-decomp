@@ -28,5 +28,8 @@ bool CellClass::unknown_478950() const
     if (unknown_TiberiumClass_list_00ac0b30[tiberium]->unknown_a0 < 0.00001) {
         return false;
     }
-    return OccupierPtr == 0 ? true : false;
+    if (OccupierPtr != 0) {
+        return false;
+    }
+    return true;
 }

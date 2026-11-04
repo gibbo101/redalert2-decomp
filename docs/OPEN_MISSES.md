@@ -1706,3 +1706,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout702 (2026-11-04, closed; 1,796 B: On_Bridge_Collapse 0x47C930, Draw_Overlay 0x4749C0; drafts build/class-work/Scout702/w/; Scout703 continues)
 - OWNER DECISION: RA2_IS_MOVING_HERE_VALUE, RA2_SHIP_MOVE_TO_VALUE across the Cell population, CellClass +0x68 as a real `Rect unknown_68` (TibSun LastBridgeDrawRect), the file-local externs in 0x4749C0, and `is_foot`, `flat` stay. Reconcile 0xA52EB0 with unknown_globals.hpp later.
 - Kill_Illegal_Occupiers 0x47CC10 84.64. Redraw_Veins 0x47A7A0 83.60. Spread_Tiberium 0x478A40 85.84 (one X-sum tie). Techno 0x6D65B0 87.83, shape 100 (frame 8 B short). Laser_Zap 71.54. Draw_Placement_Cursor 67.85. Make_Closest 0x622290 53.96. Not reached: Radar 0x634310, Team 0x6BE010, 0x5689D0, 0x6D0DC0.
+
+## Scout703 (2026-11-04, closed; Spread_Tiberium 0x478A40 352 B; drafts build/class-work/Scout703/w/keep/; Scout704 continues)
+- OWNER DECISION: the four plain named locals in 0x478A40 (`overlay`, `count`, `facing`, `amount`) stay: used locals, T phase demands the count.
+- Can_Enter_Cell 0x703040 (2,952 B) 94.91, shape 99.32 (sy3.cpp, overlay h/shared/techno.hpp; a vptr reload at 0x9EF; named index flips this/cell). RTacticalClass::Action 0x62FE30 (1,225+7 B with a byte table) 96.92 (rg5.cpp). Render_Radar 0x633210 43.42. Radar 0x634310 is not a row (inside 0x6340F0). Techno 0x6D0DC0 has no twin; its body runs across false row 0x6D10BD. Undrafted: Fire_At 0x6CA890 (6,019 B), Unit slot 310 0x6FF690, Tunnel 0x6FAA30.
