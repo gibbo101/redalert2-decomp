@@ -3,7 +3,7 @@
 // @ref ?unknown_map_gaussian_a6fd50@@3VMapGaussianClass@@A=00a6fd50
 double __stdcall Map_Clamped_Gaussian_005798f0(double mean,double deviation,double minimum,double maximum)
 {
-    if(maximum<mean-deviation || mean+deviation<minimum) {
+    if(mean-deviation>maximum || mean+deviation<minimum) {
         deviation=(maximum-minimum)*0.5;
         mean=deviation+minimum;
     }

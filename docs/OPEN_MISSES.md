@@ -1583,3 +1583,6 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - OWNER DECISION: `bool valid` / `int first` in Urban Roads stays as landed: the flag is live and semantically plain, the same class as `if (placed && success)`.
 - Seed_River 0x57ECF0 (4,386 B) 42.25, shape 91.14 (seed_river_57ecf0_4225.cpp, overlay h2 with no probe yet, rv.sh, nd.py; mostly frame offsets, needs 8 more frame bytes and `this` in memory with zero in edi). 0x57C780 68.93 (land_mass_57c780_6893.cpp; original keeps zero in esi, `this` in edi, maximum in memory). Find_Dirt_Road_Tile 96.60 and Urban Buildings 90.73 unchanged.
 - Not attempted: 0x57C9E0 (1,231 B), 0x576420 (925 B), Place_Waterfall 0x57FF20 (6,413 B), 0x58B420 (58 B static init), Grow_Water 84.24. Drop from lists: 0x5824D0 (Grow_Water tail), 0x579D30 (Read_Settings tail); 0x576000 and 0x5760F4 look like bad bounds.
+
+## Scout671 (2026-11-04, closed; 2,903 B: Cell_Color 0x4712C0, Get_Height 0x4706C0; drafts build/class-work/Scout671/w/keep/; Scout674 continues)
+- Place_Tiberium 0x47C3A0 98.91, shape 100 (one eax/ebx pair at +0x3CC). Fixup_LAT 0x471D10 97.74 with 6 Nop probes, clean 69.63 (needs a rename to bool Fixup_LAT() and 6 real root sites). Is_Clear_To_Build 0x4718B0 71.99 (needs 0x471830 rewritten so it auto-inlines). Optional rename: unknown_4706c0 to Get_Height.

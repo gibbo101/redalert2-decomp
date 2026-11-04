@@ -1238,3 +1238,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Rotation model: pure eax/ecx/edx rotation where a register still live as a later operand's source is skipped.
 - Twin arms need not share a form: each read order is what the rotation at that arm needs (0x582FD0).
 - A read through inline `Get_Cell_Data(cell->MapCoords)` keeps the second Y read uncached and the cell pointer in ecx.
+
+## Argument hoists, tails and local statics (Scout671)
+- A call inside a ctor argument hoists the whole argument before the pushes; an inline wrapper hoists only the call (0x47C3A0 went 83.85 to 98.91).
+- A row written out with loops can exceed the auto-inline cap; its form with helper calls inlines into later rows.
+- `lowcolor = X` in each arm plus one `highcolor = lowcolor` after the if/else gives the shared tail; `highcolor = lowcolor = X` does not.
+- In a function-local static table, leading constants stay in .data and everything from the first non-constant element on is stored by code.
+- shape_file.hpp in a unit without an empty rect row needs SHAPE_FILE_EMPTY_RECT, or the unit gets an extra initializer and acceptance refuses .CRT$XCU.
