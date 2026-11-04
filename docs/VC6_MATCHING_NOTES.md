@@ -1371,3 +1371,17 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `f(CoordStruct(cell))` evaluates in place; `f(Cell_Coord(cell))` hoists before the pushes.
 - Draw_Matrix: `Matrix3D transform` at function scope, `transform = transform * Get_Slope_Matrix() * basemtx * rotation;` keeps slope temps in the multiply statement. An empty `~Matrix3D() {}` stops the by-value slope helper from inlining.
 - Frame order follows final-code refs: code-free references and dead objects never move it, a real extra ref does.
+
+## Pointer copies, halving and missing defs (Scout691)
+- A named `CoordStruct const &x = f(); Coord y = x;` is the only form that gives the pointer copy `mov edx,eax`; no inline parameter form does.
+- Y/2 at dim+4 with Z at dim+8 means halving in place: `int x = dim.X / 2; dim.Y /= 2; int y = dim.Y;`.
+- IL costs: `{}` adds none, a pointer double cast a little, a real call +4, a named local +6; a window can be 2 units wide.
+- A reload on a single-predecessor edge means a missing def: `result = 5;` falling into `if (result == 5) return 5;` gives both the reload and `mov eax,5` through threading.
+- `CoordStruct half = dim / 2` with an inline operator/ refuses only the second nested ctor, because the zero-divisor ctor folds.
+
+## Declare-then-assign and slot lifetime (Scout693)
+- `T r; r = f();` in an inlined helper fixes reload order across arms, and the out-of-line copy stays exact.
+- Temporaries and distinct named Cells share one slot by linear lifetime. A repeated store to one slot means separate objects.
+- A named copy of a returned struct adds a register copy and rotates following code; `a + (Map[c].f() - b)` removes it.
+- A default-first pointer (`p = &A; if (...) p = &B;`) keeps the source live, so `p` cannot coalesce and gives a register compare.
+- `Distance(Point2D(a), Point2D(b))` reads the right argument's coordinates before a virtual call on the left.
