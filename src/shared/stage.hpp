@@ -61,6 +61,9 @@ public:
     int Fetch_Step() const { return Step; }
 #endif
 
+#ifdef RA2_VEIN_STAGE_ACCESSORS
+    int Fetch_Stage() const { return Stage; }
+#endif
     void Set_Rate(int rate)
     {
         CDTimerClass<FrameTimerClass> reset(rate);
@@ -83,8 +86,12 @@ public:
     {
         if (Ready_For_Advance()) {
             Stage = (int)((unsigned int)Stage + (unsigned int)Step);
+#ifdef RA2_VEIN_STAGE_GRAPHIC_ASSIGN
+            StageTimer=Rate;
+#else
             CDTimerClass<FrameTimerClass> reset(Rate);
             static_cast<CDTimerClass<FrameTimerClass> &>(StageTimer) = reset;
+#endif
             return true;
         }
         return false;

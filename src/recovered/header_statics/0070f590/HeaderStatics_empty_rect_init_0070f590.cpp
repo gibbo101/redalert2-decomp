@@ -1,3 +1,10 @@
+#define RA2_VEIN_STAGE_ACCESSORS
+#define RA2_VEIN_STAGE_GRAPHIC_ASSIGN
+#define RA2_COORD_FROM_CELL_INLINE
+#define RA2_CDTIMER_CONVERSION_BODY
+#define RA2_STAGE_SETTERS
+#define RA2_CELL_AS_COORD
+#define RA2_VEIN_MAP_PREDICATE
 // Header-static dynamic initializers of the unit at 0x0070F590 and its
 // list globals (VeinholeMonsterClass); the other drafts of this plan are emitted by this file.
 // A list whose atexit thunk tests and sets a guard bit is a static data

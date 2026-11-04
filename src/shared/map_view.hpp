@@ -68,6 +68,10 @@ public:
 #ifndef RA2_SHARED_MAP_HPP
 class MapClass : public GScreenClass {
 public:
+#ifdef RA2_VEIN_MAP_PREDICATE
+    // Mirrors the existing full MapClass declaration; no layout or ABI change.
+    bool Unknown_005680A0(Cell const &cell, int radius);
+#endif
 #ifdef RA2_SCENARIO_CLEAR_MAP23
     virtual void unknown_slot23(); // Existing shared/map.hpp slot23, 005483D0; qualified direct call.
 #endif
