@@ -126,6 +126,7 @@ public:
     void Draw_Rally_Points(bool inshroud);         // 0x006AAFD0 (TibSun name)
     void Draw_Waypoints(bool inshroud);            // 0x006AB360 (TibSun name)
 #ifdef RA2_TACTICAL_PLACEMENT
+    void Draw_Placement(bool drawtrans);                            // 0x006A5670
     void Draw_Fence_Placement(bool drawtrans, Cell cell);           // 0x006A5D70
     void Draw_Firestorm_Wall_Placement(bool drawtrans, Cell cell);  // 0x006A6010
     void Draw_Wall_Placement(bool drawtrans, Cell cell);            // 0x006A6290

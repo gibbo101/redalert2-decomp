@@ -307,6 +307,9 @@ public:
     void Set_Under_Rail_Bridge(unsigned facing, bool state);             // 0x00473700 (TibSun name: the train bridge counterpart; OverlayClass slot 71)
     void Destroy_Bridge();                                               // 0x00473000 (TibSun name hypothesis: called when a bridge flag is cleared)
     bool unknown_4718b0(int arg1, int arg2, int arg3);                   // 0x004718B0 (whether a wall may be placed; hypothesis)
+#ifdef RA2_TACTICAL_PLACEMENT
+    bool Draw_Placement_Cursor(Point2D const &pixel, Rect const &rect, bool drawtrans);   // 0x00473F20 (TibSun name)
+#endif
     void unknown_475960(bool arg1);                                      // 0x00475960
     int unknown_476ba0(bool pregame);                                    // 0x00476BA0 (Westwood's Tiberium_Adjust: the ore stage from its neighbours; answers the value)
     void unknown_471d10();                      // 0x00471D10 (IsometricTileClass slot 71: after the tile changes; hypothesis)
