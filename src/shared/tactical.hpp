@@ -132,6 +132,7 @@ public:
     void Draw_Fence_Placement(bool drawtrans, Cell cell);           // 0x006A5D70
     void Draw_Firestorm_Wall_Placement(bool drawtrans, Cell cell);  // 0x006A6010
     void Draw_Wall_Placement(bool drawtrans, Cell cell);            // 0x006A6290
+    static void __fastcall Draw_Render_Hooks(ObjectClass *object, Rect const &cliprect);  // 0x006A92A0
 #endif
     void Unknown_006AA5A0(Point2D const &point);   // 0x006AA5A0 starts a selection band at a point (DisplayClass slot 47; hypothesis)
     void Unknown_006AA5E0(Point2D const &point);   // 0x006AA5E0 drags the band to a point (DisplayClass slot 47; hypothesis)
