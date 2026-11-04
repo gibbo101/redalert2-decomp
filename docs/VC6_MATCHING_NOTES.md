@@ -1339,3 +1339,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `mov esi,eax; test esi,esi` needs the join variable address-exposed: `T *object = cond ? a : b; T *&ref = object; T *occupier = ref;`. `T *&`, `T * const &`, `T **p = &o` all work; inline reference parameters fold away. `mov R,eax; test R,R` is the default only after calls.
 - A `do` head with a same-condition bottom threads away before copy-prop. T phase is exactly mod 8.
 - Scout686's mini.py with mi.sh compiles a small standalone file with /FAs in about 3 s; it reproduced both residues outside the 5.7 KB function. Reduce to a small test when a residue survives many variants.
+
+## Y order and control flow (Scout687)
+- Y operand order can follow control flow, not T: `if (range <= 0) continue;` plus a `for` gives scan-first; dropping the guard so the `for`'s rotated guard does the `jle` gives adj-first. T-only probes never reach Y.
+- `Point2D point = Point2D(a, b)` keeps the point in the frame; `Point2D point(a, b)` promotes it.
+- A named `CoordStruct coord = bptr->Coord;` made 0x6AA300 exact.

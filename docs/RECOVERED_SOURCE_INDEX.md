@@ -14,7 +14,7 @@
 | [classes/TechnoClass](../src/recovered/classes/TechnoClass/) | 223 | 69,498 | 220 | 0x0041B370–0x006D9750 |
 | [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 47 | 49,999 | 47 | 0x0056D4C0–0x0058AD90 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 123 | 44,838 | 119 | 0x0041B470–0x004CDE10 |
-| (discovery: address-named) | 1349 | 41,424 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1348 | 41,118 | 16 | 0x004010A0–0x00797198 |
 | [ownrdraw](../src/recovered/ownrdraw/) | 118 | 40,017 | 118 | 0x005DE880–0x006025A0 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 82 | 30,791 | 82 | 0x004D3510–0x0070A330 |
@@ -29,7 +29,7 @@
 | [classes/INIClass](../src/recovered/classes/INIClass/) | 91 | 22,606 | 91 | 0x0050B8D0–0x0051AD50 |
 | [netdlg2](../src/recovered/netdlg2/) | 22 | 22,184 | 22 | 0x005BBD20–0x005C28E0 |
 | [netshare](../src/recovered/netshare/) | 80 | 21,975 | 80 | 0x005C2BA0–0x005CD540 |
-| [classes/Tactical](../src/recovered/classes/Tactical/) | 79 | 21,610 | 72 | 0x006A22D0–0x006AC800 |
+| [classes/Tactical](../src/recovered/classes/Tactical/) | 80 | 21,916 | 73 | 0x006A22D0–0x006AC800 |
 | [classes/CChatEventSink](../src/recovered/classes/CChatEventSink/) | 39 | 19,549 | 38 | 0x0075DFE0–0x00765B90 |
 | [classes/DSurface](../src/recovered/classes/DSurface/) | 41 | 19,535 | 41 | 0x004AA4A0–0x004B14F0 |
 | [classes/DisplayClass](../src/recovered/classes/DisplayClass/) | 69 | 19,338 | 63 | 0x0040D120–0x006824F0 |
