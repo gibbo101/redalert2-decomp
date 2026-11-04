@@ -125,6 +125,11 @@ public:
     void Unknown_006AADD0(CellClass *cell);        // 0x006AADD0 (DisplayClass slot 37: a cell to redraw; hypothesis)
     void Draw_Rally_Points(bool inshroud);         // 0x006AAFD0 (TibSun name)
     void Draw_Waypoints(bool inshroud);            // 0x006AB360 (TibSun name)
+#ifdef RA2_TACTICAL_PLACEMENT
+    void Draw_Fence_Placement(bool drawtrans, Cell cell);           // 0x006A5D70
+    void Draw_Firestorm_Wall_Placement(bool drawtrans, Cell cell);  // 0x006A6010
+    void Draw_Wall_Placement(bool drawtrans, Cell cell);            // 0x006A6290
+#endif
     void Unknown_006AA5A0(Point2D const &point);   // 0x006AA5A0 starts a selection band at a point (DisplayClass slot 47; hypothesis)
     void Unknown_006AA5E0(Point2D const &point);   // 0x006AA5E0 drags the band to a point (DisplayClass slot 47; hypothesis)
     void Unknown_006AA770();                       // 0x006AA770 (DisplayClass slot 35: ends the band selection; hypothesis)

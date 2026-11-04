@@ -1,4 +1,5 @@
 #define RA2_MOUSE_FRAME_QUERIES
+#define RA2_TACTICAL_PLACEMENT
 #define RA2_TACTICAL_PICK_OBJECT
 // Header-static dynamic initializers of the unit at 0x006A20E0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
