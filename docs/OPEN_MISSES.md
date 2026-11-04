@@ -1686,3 +1686,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout697 (2026-11-04, closed; 4,198 B: Draw_It 0x43A5E0, Draw_Extras 0x43ABD0, both codex2 drafts; drafts build/class-work/Scout697/w/keep/; Scout699 continues)
 - OWNER DECISION: `Barrel_Side_0043abd0` and `unknown_453900` returning Matrix3D under RA2_BUILDING_BARREL_MATRIX_VALUE stay as landed. RA2_COORD_TPOINT3D stays out of the Building population: check_plans gave 206/208 (Deconstruction 99.79, one local away; Docking 97.53, X-sum tie at 0x131 and 0x177, not T phase).
 - Barrel 0x43B7E0 97.97. Editor_Draw_It 96.10. Missile 0x448400 full 99.77. Take_Damage 0x43EE70 81.11. Cloak 98.31 blocked on Docking. Not reached: Mission_Attack 0x446920, Captured 0x444660, Mark 0x43BFC0.
+
+## codex3 r289-v3 (2026-11-04; Queue_AI_Multiplayer 0x623B00 3,388 B)
+- OWNER DECISION: zero-credit takeover of the 1-byte row 0x624840 from population-3817 as the compiler's `_$E79` is approved, the same class as Scout679's and Scout680's atexit moves.
+- Queue_AI 0x623770 can land next: it was waiting on this row.
+- OWNER DECISION (r290): zero-credit takeover of Next 0x62E9E0 from population-42 as QueueClass<EventClass,128>::Next, and QAM file-static under RA2_QUEUE_STATICS, are approved; same ABI and mangling, all accepted Queue rows exact, full build exact.

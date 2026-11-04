@@ -160,7 +160,7 @@ static int __fastcall Process_Send_Period_00623b00(ConnManClass *net)
     return 1;
 }
 
-void __fastcall Queue_AI_Multiplayer()
+static void __fastcall Queue_AI_Multiplayer()
 {
     if (unknown_game_mode_a3d298 == 5) return;
     ConnManClass *net;

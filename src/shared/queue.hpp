@@ -288,7 +288,11 @@ void __fastcall Unknown_005B6060(HWND dialog);
 // The queue processing of a frame: playback, single player or multiplayer (0x00623770).
 void __fastcall Queue_AI();
 // The multiplayer queue processing (0x00623B00; Red Alert's Queue_AI_Multiplayer).
+#ifdef RA2_QUEUE_STATICS
+static void __fastcall Queue_AI_Multiplayer();
+#else
 void __fastcall Queue_AI_Multiplayer();
+#endif
 // Executes the DoList events of this frame for max_houses houses from base_house;
 // 0 on a fatal error (0x00628880; Red Alert's Execute_DoList, TibSun's argument list:
 // the connection manager, the CRC skip timer and the peers' frame timing;
