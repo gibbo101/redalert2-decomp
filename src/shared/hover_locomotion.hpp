@@ -52,6 +52,7 @@ public:
     void Motion_AI_004fdaf0();
     void Gravity_AI_004fb9d0();
     bool unknown_4fdfc0();                                                      // 0x004FDFC0 (moving; never called out of line)
+    void Stop();                                                                // 0x004FDA50 (expanded where used)
     void Start_Drift();                                                         // 0x004FEC30
     int While_Moving_004fcbc0(bool first_pass);                                              // 0x004FCBC0 (Process's step; not yet recovered)
     void Start_Of_Move_004fe0f0(int num);                                              // 0x004FE0F0 (Process's step; not yet recovered)

@@ -1,3 +1,7 @@
+#define RA2_COORD_AS_CELL
+#define RA2_SHIP_CELL_ACCESSORS
+#define RA2_CELL_AS_COORD
+#define RA2_COORD_FROM_CELL_INLINE
 #include "shared/building_class.hpp"
 #include "shared/building_type_class.hpp"
 // Header-static dynamic initializers of the unit at 0x004FB6E0:  the
@@ -34,3 +38,4 @@
 // @ref _unknown_geometry_l=00a41080
 // @ref _unknown_geometry_sixty=007a31d8
 // @ref _unknown_static_rect=00a41050
+
