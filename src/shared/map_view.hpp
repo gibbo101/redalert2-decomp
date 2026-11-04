@@ -108,6 +108,7 @@ public:
     int Zone(Cell const &cell, int zone_type, bool alt);                  // 0x0054F8F0
     void Unknown_0054FB20(Cell const &cell);                              // 0x0054FB20
     int Unknown_0055A280(CoordStruct const &coord);                             // 0x0055A280
+    void Collapse_Cliff(CellClass *cell);    // 0x00562F50 (TibSun name)
     CellClass *Unknown_0055A490();
     bool Unknown_0054E580(Cell cell, int arg2);                             // 0x0054E580
     void Unknown_00559FD0();                                              // 0x00559FD0                                              // 0x0055A490

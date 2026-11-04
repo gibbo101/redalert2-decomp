@@ -1284,3 +1284,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A store through a reference blocks later loads from scheduling above it; a direct this-member store does not.
 - Aliasing is flow-insensitive: an address-taken local keeps store order against pointer loads even when the address is taken later.
 - The threader sees through named bools, copies, inline helpers, joins and De Morgan forms; only a path with the flag unknown keeps a test.
+
+## Frame maps and slot sharing (Scout680, 0x4F03C0 from 63 to exact)
+- Scout680's fa.py (a /FAs frame variable map with ref counts and first references) and rm.py (raw original-to-ours slot map) replace blind frame hunting.
+- Slot sharing groups reveal source objects. `Point2D delta` with field assigns replaced two ints and explained `neg; neg`: X stays in memory, Y is forward-substituted. Wrapping a body in `else { }` lets a local share a temp and changes a static's mangled scope. Function-block address-taken objects overlap everything in the block.
+- Tied temp slots came out right once one temp's ref count was right. `Map[Adjacent_Cell(...)]` without a named cell fixed registers.
+- A member rename must use mangling_rewrite: a plain `renames` entry leaves symbol_prefix stale.

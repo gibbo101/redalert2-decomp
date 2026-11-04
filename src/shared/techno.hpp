@@ -348,6 +348,7 @@ class InfantryTypeClass;
 class TechnoClass : public RadioClass, public FlasherClass, public StageClass {
 public:
     int Unknown_006C22A0(); // 0x006C22A0 (production time used by factories; hypothesis)
+    CoordStruct Railgun_Beam_Damage(CoordStruct const &coord, AbstractClass *abstract, WeaponTypeClass *weapon); // 0x006D6ED0
 
     TechnoClass(HouseClass *house);                             // 0x006C0CD0
     TechnoClass(NoInitClass const &noinit);                     // 0x006C1F10
