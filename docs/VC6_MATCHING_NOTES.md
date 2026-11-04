@@ -1472,3 +1472,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Wrapping distance in inline helpers keeps Center temps block-lived; three distance sites in one `||` statement otherwise each hold their own temps (frame 0x80 to 0x54).
 - `default: break;` on a switch can give the zero constant a register web across the whole function.
 - Tail merging and a far earlier vptr register can flip on a local changed much later: treat these as the hidden-counter class.
+
+## Dying locals and FP operands (Scout709)
+- An add destination can come right when a call result is a dying local inside an inline: `static inline int Bridge_Height(coord, int &ground) { int height = call; ground = height; return height + j; }` gives `add eax,ecx`; direct forms stay flat.
+- `double gravity = Rules->x; velocity.Z -= gravity;` gives `fld; fild; fsubp` on a Vector3 (89 to 99).
+- An inline's return slot adds frame bytes and moves temps: the assigned form and the return-ignored form differ by the return slot.

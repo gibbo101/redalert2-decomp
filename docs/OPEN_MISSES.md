@@ -1738,3 +1738,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout710 (2026-11-04, closed; 0 B; drafts build/class-work/Scout710/w/keep/, NOTES.md)
 - Unit Draw_It slot 67 0x700E70 (1,328 B) 92.87, shape 100 (u67_a_9287.cpp; frame 0x48 vs 0x40, radians and Move_Coord result share one slot). Do_MISSION_HARVEST slot 131 0x7025A0 (2,496 B) 91.66 (h1c_9166.cpp, overlay h/; 5 hunks; `FootClass::unknown_4cb830` takes bool arg2 if it lands; recheck slot 87 0x7072D0 too). Desired_Load_Dir 78.93. Tunnel 45.37, Fire_At 87.06 parked. 0x707F60 to 0x709790 look like one function of about 6 KB with a broken bound.
 - Owner tool note: accept.sh now stops on any `"error"` in the accept log. Before this, a composite pass could succeed while a later pass refused a new row (codex1 r1077, commits 71c082a8e and e5841bccd landed no bytes).
+
+## Scout709 (2026-11-04, closed; Particle Smoke AI 0x608BB0 1,601 B; drafts build/class-work/Scout709/w/keep/; Scout712 continues)
+- OWNER DECISION: `Bridge_Height` and `double gravity` stay as landed. If Bounce lands, move Slope_Vector and Bridge_Height to a shared header rather than duplicating them.
+- Bounce AI 0x4370E0 99.55, shape 100 (ba3_9955.cpp; one line `fld [esi+0x2c]` vs `fld [ebx+8]`). Spark particle 0x609540 66.45. Spark system AI 0x60B670 86.56. SpotLight Draw 0x5DDB90 60.23 (ld1.cpp).
