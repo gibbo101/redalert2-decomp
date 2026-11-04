@@ -1,3 +1,4 @@
+#define RA2_COORD_FROM_CELL_INLINE
 #include "shared/fast_math.hpp"
 #define RA2_POINT_LENGTH
 #include "shared/building_class.hpp"

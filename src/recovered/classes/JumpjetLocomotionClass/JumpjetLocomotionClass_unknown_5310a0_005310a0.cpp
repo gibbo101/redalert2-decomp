@@ -9,7 +9,8 @@
 
 CoordStruct JumpjetLocomotionClass::unknown_5310a0(CoordStruct const &coord)
 {
-    CoordStruct result = Map.Unknown_0049CB70(coord, false);
+    CoordStruct result;
+    result = Map.Unknown_0049CB70(coord, false);
     if (result != unknown_coord_a6e3e0) {
         result.Z = Map.Unknown_0055A280(result);
         if (Map[result].unknown_140 & 0x100) {
