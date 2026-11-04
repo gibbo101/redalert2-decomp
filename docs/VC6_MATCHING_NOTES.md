@@ -1453,3 +1453,16 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 ## Float lengths and evictions (Scout706)
 - TibSun `TPoint3D<float>::Length` with `(double)X*(double)X` casts spills X and Y to the struct and keeps Z on the x87 stack. Sum order z,x,y comes from `double s = Z2; s += X2 + Y2;`. Unnamed int Length casts give the X2 and whole-sum FP CSEs on their own.
 - A long pseudo is evicted around cold arms and reloaded later; reloads seem to add weight, so one eviction can cancel the next (inferred). TypeList::Pick turns off the count CSE, as its inline `this` hides the member read until after CSE.
+
+## Reload order and first fit (Scout707)
+- Loop-region reload order is the reverse of the symbols' first occurrence in the IL, not declaration order. A code-free reference placed before the other's definition flips it.
+- `Point2D delta; delta.X = offset.X; delta.Y = offset.Y; int dy = -delta.Y;` took a row from 64 to 99.9.
+- A temp's slot follows first fit: a block-lived named or `$S` result conflicts with the earlier temp and pulls an 8 B double into its 12 B slot.
+- In /FAs listings a pointer load hoisted above a guard can mark an unmerged return path.
+
+## Temps, call order and arm folds (Scout708)
+- `CoordStruct x; if (a) x = f(); else x = g();` shares one return temp across arms; a ternary keeps two.
+- `Random_Pick(0, X)` computes the Random `this` after the pushes; `Random()(0, X)` before.
+- A named `float length = (float)sqrt(sum); return length;` inside an inline Length sinks the fstp past the next load.
+- A member-style inline for a field read stops CSE across a virtual call (83 to 94).
+- Per-arm `faceto = Dir_To_256(...)` keeps the `and eax,0xff` that a single assignment folds into movsx. `int facing = 0` before the first test gives a shared zero web.

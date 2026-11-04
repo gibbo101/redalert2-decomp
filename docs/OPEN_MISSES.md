@@ -1726,3 +1726,11 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout706 (2026-11-04, closed; 0 B; drafts build/class-work/Scout706/w/keep/, NOTES.md; Scout708 continues)
 - Techno Fire_At 0x6CA890 86.42, frame right, 18 hunks (gk_a_best_score.cpp; no overlay; ga_a_probe_9127.cpp is a probe). Left: sound site `TypeList::Pick` ebx contest, scheduling ties at 0x231, 0x41e, 0x5cf, 0x6ab, 0x11ea, CDTimer temp [a4] vs [30]. The bullet.hpp Set_Yaw/Set_Pitch variant is not clean, so the file-local helpers stay and are flagged. Action 0x62FE30 97.18 unchanged.
+
+## Scout707 (2026-11-04, closed; AI_Build_Defense 0x4F1190 3,264 B and the Update_Present_Super_Weapons rename; drafts build/class-work/Scout707/w/keep/; Scout709 continues)
+- OWNER DECISION: `int const &lowest = best_value` and both `dy` locals stay as landed. `Dir_To_4` is TibSun's As_Dir4 and can move to facing.hpp. Row 0x4F2330 is a seed FUN_ that could be taken over at zero credit.
+- Team 0x6BDAA0 98.70. Expert_AI 78.95. Get_Input 82.81. Bounce AI 0x4370E0 93.05 (ba_9305.cpp; frame 4 B short, one add destination). Next unclaimed: Particle 0x608BB0, 0x609540.
+
+## Scout708 (2026-11-04, closed; Unit What_Action 0x703BD0 1,559 B; drafts build/class-work/Scout708/w/keep/; Scout710 continues)
+- OWNER DECISION: `Land_Type_00703bd0` and `UnknownBuildingView_00703bd0` stay as landed.
+- Fire_At 0x6CA890 83.80, shape 99.83, 8 hunks (g5_8380_h8.cpp); best raw 87.06 (g2_8706_h15.cpp). Building and bolt arms evict `weapon` alternately. @refs unaudited. Desired_Load_Dir 0x704730 78.93. Tunnel 0x6FAA30 45.37. Mission_Attack: the float Length mechanism does not explain its spills (80.68 at most; temps, not a struct). Undrafted: 0x6FF690, 0x701580 (4,128 B), 0x7025A0 (2,496 B).
