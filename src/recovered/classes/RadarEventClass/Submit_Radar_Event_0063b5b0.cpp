@@ -1,3 +1,4 @@
+#define RA2_RADAR_ADD_THREADED
 // bool __fastcall Submit_Radar_Event(RadarEventType event, Cell cell) -- 0x0063B5B0 (TS revent.cpp)
 // Starts a radar event at a cell unless the type is suppressible and an event of the same type is
 // already closer than its suppression distance.

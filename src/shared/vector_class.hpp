@@ -472,6 +472,28 @@ DynamicVectorClass<T> &DynamicVectorClass<T>::operator=(DynamicVectorClass<T> co
 template <class T>
 bool DynamicVectorClass<T>::Add(T const &object)
 {
+#ifdef RA2_RADAR_ADD_THREADED
+
+    if (ActiveCount >= Length()) {
+        bool eligible = false;
+        int length;
+        int growth;
+        if ((IsAllocated || !VectorMax)) {
+            length = Length();
+            growth = GrowthStep;
+            eligible = true;
+        }
+        if (eligible && growth > 0) {
+            if (!Resize(length + growth)) return false;
+        } else {
+            return false;
+        }
+    }
+    (*this)[ActiveCount++] = object;
+    return true;
+
+#else
+
     if (ActiveCount >= Length()) {
         if ((IsAllocated || !VectorMax) && GrowthStep > 0) {
 #ifdef VECTOR_ADD_NAMED_LENGTH
@@ -489,6 +511,8 @@ bool DynamicVectorClass<T>::Add(T const &object)
     }
     (*this)[ActiveCount++] = object;
     return true;
+
+#endif
 }
 #endif
 
