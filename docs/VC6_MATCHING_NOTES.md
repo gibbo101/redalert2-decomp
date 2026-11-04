@@ -1212,3 +1212,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - One shared `tries` int gives the shared frame slot. A named `position` before `Map[]` fixes an eax/edx tie.
 - An implicit `DynamicVectorClass<double>` needs an @ref for each emitted COMDAT.
 - A small `differing_bytes` can be a wrong constant binding the score does not show: 15.0 exists at both 0x7a5398 and 0x7a5ce8; cmp.py plus report.json find it.
+
+## Scratch rotation and duplicated statements (Scout668, 0x6C9260)
+- Scratch registers advance round robin through eax, ecx, edx; ecx is skipped when reserved for `this`, and al byte loads do not advance it. This confirms Scout659's hypothesis.
+- Tail merge runs after register allocation, so a cross-jumped copy still advances the rotation. If an if arm ends in `jmp` and the register sequence after it is shifted by one, a statement is duplicated in both arms. That took Can_Fire from 82.58 to 96.77 with the land test in each arm.
+- Which arm uses `return 5` and which `goto ILLEGAL` picks the surviving copy. Nesting the rest in `if (weapon != 0) { ... return 0; } CANT: return 6; ILLEGAL: return 5;` keeps CANT last with no folded goto.
+- A memory `test byte [m],imm8` of a parameter changes the register piece of its later refs.
