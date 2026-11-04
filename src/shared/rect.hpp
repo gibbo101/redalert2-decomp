@@ -67,6 +67,11 @@ struct Point2D {
     // Member-wise difference by value (VeinholeMonsterClass 0x00711AA0: the Y
     // difference is computed first, as a constructor argument).
     Point2D operator-(Point2D const &point) const { return Point2D(X - point.X, Y - point.Y); }
+#ifdef RA2_POINT2D_SCALE_OPERATOR
+    // TibSun point.h: a point scaled by a whole number. Unit-scoped: a new member here moves the
+    // declaration counter of Print_CRCs and Pick_Lobby.
+    Point2D operator*(int scale) const { return Point2D(X * scale, Y * scale); }
+#endif
 #ifdef RA2_DRAW_SHAPE_OPERATIONS
     // Draw.cpp's depth offset uses Westwood point division (zero gives origin).
     Point2D const operator/(int divisor) const {
