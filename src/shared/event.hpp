@@ -124,7 +124,7 @@ class QueueClass {
 public:
     // Empty queue (Red Alert's QUEUE.H: the constructor calls Init); the globals unit at
     // 0x004D2BA0 builds OutList, DoList and the 256-entry queue 0x00A35F30 this way.
-    QueueClass() { Init(); }
+    QueueClass() : Count(0) { Init(); }
     void Init()
     {
         Count = 0;
