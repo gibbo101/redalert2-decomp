@@ -4,8 +4,8 @@
     "id": "population-3969",
     "inventory_sha256": "f56dc905046992167197177d796ff6b64181905adc97816ca9b068fd60a5fae7",
     "gaps_sha256": "ac1ad0a2cc171f569859bdcd15996d310803e545a6ff12038adec54db7275143",
-    "historical_population_sha256": "fe031ebfbe924c2f996561619bb5ba96e5a1d40214178df528c730f73d628991",
-    "historical_acceptance_sha256": "55ae03c0f6493f024236055567dacfb0aa1a5649777cd82d9e7d225064d0c289"
+    "historical_population_sha256": "045b697bfabb6bcc88ca49423f4583ecffdbc7c2fbf0440cdcca554d45b71b30",
+    "historical_acceptance_sha256": "e15ac42fb0e413de5071322cbfecc1d897a14163fd3c6f5bc29df1104bfc371e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -7345,7 +7345,7 @@
     "?unknown_4ccfc0@FootClass@@QAEPAV1@XZ": 5033920,
     "?unknown_4cd9b0@FootClass@@QAEXXZ": 5036464,
     "?unknown_4cdb60@FootClass@@QAEXXZ": 5036896,
-    "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z": 5125728,
+    "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z": 5125728,
     "?unknown_4e5240@UnknownBuildingHouse@@QAENXZ": 5132864,
     "?unknown_4e76a0@HouseClass@@QAE_NABVCell@@_N@Z": 5142176,
     "?unknown_4ea970@UnknownUnitHouse@@QAEXPAVUnitClass@@@Z": 5155184,
@@ -31940,7 +31940,7 @@
         {
           "offset": 134,
           "kind": 20,
-          "symbol": "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z",
+          "symbol": "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z",
           "target": 5125728,
           "addend": 0,
           "resolved": 661286
@@ -31996,7 +31996,7 @@
         {
           "offset": 203,
           "kind": 20,
-          "symbol": "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z",
+          "symbol": "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z",
           "target": 5125728,
           "addend": 0,
           "resolved": 661217
@@ -32052,7 +32052,7 @@
         {
           "offset": 268,
           "kind": 20,
-          "symbol": "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z",
+          "symbol": "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z",
           "target": 5125728,
           "addend": 0,
           "resolved": 661152
@@ -32108,7 +32108,7 @@
         {
           "offset": 332,
           "kind": 20,
-          "symbol": "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z",
+          "symbol": "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z",
           "target": 5125728,
           "addend": 0,
           "resolved": 661088
@@ -32178,7 +32178,7 @@
           "resolved": 4464667
         }
       ],
-      "source_sha256": "0d167cf5643dacc39d2976e4e5f6a65a0d5fd3bf08d4151d27475929cb0fa819",
+      "source_sha256": "1bf11e3ad4f75280fbf8b100ec59493ac8782a1bca79e6cde2421739390c81aa",
       "switch_data_bytes": 58,
       "source": "src/recovered/classes/BuildingClass/BuildingClass_unknown_slot283_00441eb0.cpp",
       "population": "population-3969",

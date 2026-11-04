@@ -4,8 +4,8 @@
     "id": "population-3906",
     "inventory_sha256": "a85ee7376823bfcbe433fb3dbb759b1e748e58d0d3616f7cb1043934cb2b9d1c",
     "gaps_sha256": "dc4f592883e7e44dff8eef686b939e2dd63d9e18d62a925ff80ce2c10dc5a047",
-    "historical_population_sha256": "99d092ab324bcb5ca6e3da21a98e02e616dd6101d5b8dc6fa7955c6d867b7316",
-    "historical_acceptance_sha256": "2f9c403a90328455c3ba6a4ab8ab1121e6023905a41d0d678d76b2f2c1fa16ab"
+    "historical_population_sha256": "a3bcecc3168337083eb1742797530a2e196e774a855cf10f00f365df1cc62e5d",
+    "historical_acceptance_sha256": "81d770d0ea9fedfb3aa36031dc69243cbb3554ddfb5f8ca890bc000c7d11c86e"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3899,7 +3899,7 @@
     "?Init@AircraftClass@@UAEXXZ": 4275360,
     "?Init@TechnoClass@@UAEXXZ": 7085136,
     "?unknown_4ea970@HouseClass@@QAEXPAVTechnoClass@@@Z": 5155184,
-    "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z": 5125728,
+    "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z": 5125728,
     "?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z": 5154816,
     "?QueryInterface@AircraftClass@@UAGJABUGUID@@PAPAX@Z": 4276128,
     "?Compute_CRC@AircraftClass@@UBEXAAVWWCRCEngine@@@Z": 4304224,

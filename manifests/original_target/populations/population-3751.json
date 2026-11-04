@@ -4,8 +4,8 @@
     "id": "population-3751",
     "inventory_sha256": "4cf028dc0cfa5984694c1a708edc47f5598e0c9b2fe4f446af475467e17f15ff",
     "gaps_sha256": "a6baab4335b570045d6f9e8c4fa8338bdb41f2cbf4f1dae35d9c9e4b1e17fb46",
-    "historical_population_sha256": "aab452a42115f6bc76675f38e088b0855cfbfff00b101a4098507d289cf07e2b",
-    "historical_acceptance_sha256": "830b09f71983d55dc4985346746d4a353f5ca92017bb559a0776d193dac4c75d"
+    "historical_population_sha256": "3fb08fdf2bac65692c03d6f25448b421c256789a0d9339b8fa0bdb4692274f44",
+    "historical_acceptance_sha256": "b48e1153852bac25eb8cded4604e46d82f1cebfeb1b8628be3b8f980cdb638f7"
   },
   "references": {
     "??_7rc_ptr_base@@6B@": 8031500,
@@ -6439,7 +6439,7 @@
     "?unknown_slot39@AnimTypeClass@@UBEPAXXZ": 4351312,
     "?unknown_slot40@InfantryTypeClass@@UBE_NXZ": 5286288,
     "?unknown_slot40@UnitTypeClass@@UBE_NXZ": 7383264,
-    "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z": 5125728,
+    "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z": 5125728,
     "?Available_Money@HouseClass@@UAGJXZ": 5122864,
     "?Which_Zone@HouseClass@@QBEHABUCoordStruct@@@Z": 5156160,
     "?Which_Zone@HouseClass@@QBEHPBVObjectClass@@@Z": 5156528,

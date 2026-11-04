@@ -42,7 +42,7 @@ public:
     static int __fastcall Find_Index(char const *name);
     float Cost_Multiplier(TechnoTypeClass const *type);    // 0x004F5960
     // Full House interface mirrors for Sidebar production queries.
-    int unknown_4e3660(TechnoTypeClass const *type, int arg2, int arg3); // 0x004E3660; low argument bytes observed, as full House interface
+    int Can_Build(TechnoTypeClass const *type, bool forced, bool include_in_progress); // 0x004E3660; low argument bytes observed, as full House interface
     FactoryClass *unknown_func_4eb580(int kind, bool naval, int arg3); // 0x004EB580
     bool Is_Build_Limited_004F4F30(TechnoTypeClass *type); // 0x004F4F30
     void unknown_func_4eb620(int kind, bool naval, int arg3); // 0x004EB620, as full House interface

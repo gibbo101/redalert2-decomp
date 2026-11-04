@@ -81,7 +81,7 @@ int HouseClass::AI_Unit()
     int bestearliest = 0x7FFFFFFF;
     for (int utype = 0; utype < UnitTypes.Count(); utype++) {
         int count = counter[utype];
-        if (count > 0 && unknown_4e3660(UnitTypes[utype], 0, 0)
+        if (count > 0 && Can_Build(UnitTypes[utype], 0, 0)
                 && UnitTypes[utype]->unknown_slot33((int)this) <= Available_Money()) {
             if (bestval == -1 || bestval < count) {
                 bestval = count;

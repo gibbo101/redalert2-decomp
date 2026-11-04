@@ -12,28 +12,28 @@ void BuildingClass::unknown_slot283()
         switch (Type->Factory) {
         case 7: {
             for (int index = 0; index < BuildingTypes.Count(); ++index) {
-                if (unknown_player_a35db4->unknown_4e3660(BuildingTypes[index], 0, 1))
+                if (unknown_player_a35db4->Can_Build(BuildingTypes[index], 0, 1))
                     Map.Unknown_0067C530(7, index);
             }
             break;
         }
         case 40: {
             for (int index = 0; index < UnitTypes.Count(); ++index) {
-                if (unknown_player_a35db4->unknown_4e3660(UnitTypes[index], 0, 1))
+                if (unknown_player_a35db4->Can_Build(UnitTypes[index], 0, 1))
                     Map.Unknown_0067C530(40, index);
             }
             break;
         }
         case 16: {
             for (int index = 0; index < InfantryTypes.Count(); ++index) {
-                if (unknown_player_a35db4->unknown_4e3660(InfantryTypes[index], 0, 1))
+                if (unknown_player_a35db4->Can_Build(InfantryTypes[index], 0, 1))
                     Map.Unknown_0067C530(16, index);
             }
             break;
         }
         case 3: {
             for (int index = 0; index < AircraftTypes.Count(); ++index) {
-                if (unknown_player_a35db4->unknown_4e3660(AircraftTypes[index], 0, 1))
+                if (unknown_player_a35db4->Can_Build(AircraftTypes[index], 0, 1))
                     Map.Unknown_0067C530(3, index);
             }
             break;

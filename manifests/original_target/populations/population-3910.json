@@ -4,8 +4,8 @@
     "id": "population-3910",
     "inventory_sha256": "7c97f4b75a0693ede89c8a53bedb296d52a3db29344448167324257d4f6711af",
     "gaps_sha256": "28cabf5d68908e141d9b5e9e9a9c0434f94463807c0dafa38386bb92e0b77b95",
-    "historical_population_sha256": "424660142cad6c69e9bc2db483bb50db11aa32f5fe8968fd804c1398d04d814f",
-    "historical_acceptance_sha256": "83fd27a15d4a15322281dfee5a9294f1bc3a9f2453295c80ce6626dfa57bb9d4"
+    "historical_population_sha256": "06434ca88c50f9ea923abb8260e273e02be135c6230ccae21e44271e4b85ab5a",
+    "historical_acceptance_sha256": "54757434fb8560ddaec78504dde1c009cfc500756f1a07d12b58cd8ce2a28b12"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -8745,7 +8745,7 @@
     "?Cost_Multiplier@HouseClass@@QAEMPBVTechnoTypeClass@@@Z": 5200224,
     "?Supers@@3V?$DynamicVectorClass@PAVSuperClass@@@@A": 10706216,
     "?unknown_4ea970@HouseClass@@QAEXPAVTechnoClass@@@Z": 5155184,
-    "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z": 5125728,
+    "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z": 5125728,
     "?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z": 5154816,
     "?Is_Ally@HouseClass@@QBE_NPBV1@@Z": 5133632,
     "?Is_Powered@HoverLocomotionClass@@UAG_NXZ": 5236864,

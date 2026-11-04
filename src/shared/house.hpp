@@ -234,7 +234,7 @@ public:
     float unknown_func_4f58a0(TechnoTypeClass *type);       // 0x004F58A0 (the owner type's armor multiplier against the type's kind; TechnoClass 0x006CA6C0)
     // Index in Houses of the house with this name, or -1 (0x004F5B40).
     static int __fastcall Find_Index(char const *name);
-    int unknown_4e3660(TechnoTypeClass const *type, int arg2, int arg3);// 0x004E3660 (-1: none left; hypothesis; AircraftClass destructor)
+    int Can_Build(TechnoTypeClass const *type, bool forced, bool include_in_progress);// 0x004E3660 (-1: none left; hypothesis; AircraftClass destructor)
     void AI_Supers_004f3910();
     bool Can_Make_Money_004e27e0();
     void Spend_Money_004e5280(int money);

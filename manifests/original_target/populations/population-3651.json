@@ -4,8 +4,8 @@
     "id": "population-3651",
     "inventory_sha256": "54884d2d3b2729043f8bf32b4bffdf9c6c7cd6de1492dfa9bc3f427fc97d9cc9",
     "gaps_sha256": "1cf5876247802d8507cbc7d988aa8f81fafb59e5f1811622f5e605e3eaa4559f",
-    "historical_population_sha256": "d1abe571e2a7120c98e5dc0ec57907c9dfac3dbffec7075e1196aee00aa37d14",
-    "historical_acceptance_sha256": "902e7b3c9ddd713a8ad027020d6a902aba9649aaf9f6247b16ba0fe7867ce432"
+    "historical_population_sha256": "6b37c8d5c3860f44d5b8f1f5a7f53d77f7b2caab7a5a6a585804f851aa07d8a8",
+    "historical_acceptance_sha256": "1ed89b7c38c2914283e3f11d9c724af50ba4d00325c6e421be4b3dc322056b1b"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8283,7 +8283,7 @@
     "?Write_INI@ScriptTypeClass@@UBE_NAAVCCINIClass@@@Z": 6720352,
     "?Write_INI@TagTypeClass@@UBE_NAAVCCINIClass@@@Z": 7031664,
     "?Unknown_006A66B0@Tactical@@QAEXABUCoordStruct@@@Z": 6973104,
-    "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z": 5125728,
+    "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z": 5125728,
     "??0DropPodLocomotionClass@@QAE@XZ": 4872768,
     "??_7DropPodLocomotionClass@@6BIPersistStream@@@": 7997784,
     "??_7DropPodLocomotionClass@@6BILocomotion@@@": 7997584,

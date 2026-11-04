@@ -4,8 +4,8 @@
     "id": "population-3866",
     "inventory_sha256": "55934f6df400867ec1694a4420f12f5c209a95dd6e5943c2f5b816530a203d84",
     "gaps_sha256": "82b88922d09b2afd05411615009093c17cfecc438c3e325b746bce6ab33ff310",
-    "historical_population_sha256": "6ac770fedd7a15255f2e1928d5f0f73317442b067f8512326614c4b25fa75573",
-    "historical_acceptance_sha256": "ddc89fd96ade025831be30499df3157003dcf74df2003ef06f2c80c7804b2b0d"
+    "historical_population_sha256": "929af9ca3d641a303e361918b5a09190f1bea48cba2c310127f38e8e229cd7a6",
+    "historical_acceptance_sha256": "a85b3297c64217c85bf0abcf1a5abdcf3abcb1e39584e563ffd2ec489074f5b9"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -5762,7 +5762,7 @@
     "?Current@FacingClass@@QBE?AUUnknownFacingDir@@XZ": 4951008,
     "?Set_Current@FacingClass@@QAE_NABUUnknownFacingDir@@@Z": 4950800,
     "?unknown_4ea970@HouseClass@@QAEXPAVTechnoClass@@@Z": 5155184,
-    "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z": 5125728,
+    "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z": 5125728,
     "?unknown_6d3040@TechnoClass@@QAEXPAV1@@Z": 7155776,
     "?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z": 5154816,
     "?unknown_slot52@FootClass@@UAE_NXZ": 5020624,

@@ -10,7 +10,7 @@
 #include "shared/techno.hpp"
 // @ref ?In_Radio_Contact@RadioClass@@QBE_NXZ=00636f10
 // @ref ?Unknown_00636EA0@RadioClass@@QBE_NXZ=00636ea0
-// @ref ?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z=004e3660
+// @ref ?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z=004e3660
 
 // BuildingClass members not in the shared stub (hypothesis names).
 struct UnknownBuildingView530 {
@@ -45,7 +45,7 @@ BuildingClass *ObjectTypeClass::Who_Can_Build_Me(bool in_theory, bool legal, boo
         if (building->unknown_slot91() == 0x13 || building->MissionQueue == 0x13) {
             continue;
         }
-        if (check_limit && building->House->unknown_4e3660((TechnoTypeClass const *)this, 1, 1) <= 0) {
+        if (check_limit && building->House->Can_Build((TechnoTypeClass const *)this, 1, 1) <= 0) {
             continue;
         }
         if ((((UnknownBuildingTypeView *)building->Type)->unknown_slot28() & ownable) == 0) {

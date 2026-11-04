@@ -4,8 +4,8 @@
     "id": "population-3834",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "c7f801d77180963386f7789a31d351691ae5ea2ea9c3ea47fa710528a411f856",
-    "historical_acceptance_sha256": "6fc092873a06e77488c1d9f82e4452cc4f137822b2d055596fbc9c4cf8498f37"
+    "historical_population_sha256": "9ad9427a5828bcf567747a3101846eae84fc7840d13021f95369a71f4dc846e7",
+    "historical_acceptance_sha256": "bf7534dcc74b5827845f2a8429032dd4eea169019f6df5053453e7990f366c3f"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8388,7 +8388,7 @@
     "?Current@FacingClass@@QBE?AUUnknownFacingDir@@XZ": 4951008,
     "?Set_Current@FacingClass@@QAE_NABUUnknownFacingDir@@@Z": 4950800,
     "?unknown_4ea970@HouseClass@@QAEXPAVTechnoClass@@@Z": 5155184,
-    "?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z": 5125728,
+    "?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z": 5125728,
     "?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z": 5154816,
     "?AdjacentCell@@3QBVCell@@B": 8723056,
     "?Is_Ally@HouseClass@@QBE_NPBV1@@Z": 5133632,

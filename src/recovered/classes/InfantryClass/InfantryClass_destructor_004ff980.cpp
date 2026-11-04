@@ -5,7 +5,7 @@
 // Always leaves the infantry list and the techno index.
 #include "shared/infantry.hpp"
 // @ref ?unknown_flag_a40958@@3_NA=00a40958
-// @ref ?unknown_4e3660@HouseClass@@QAEHPBVTechnoTypeClass@@HH@Z=004e3660
+// @ref ?Can_Build@HouseClass@@QAEHPBVTechnoTypeClass@@_N1@Z=004e3660
 // @ref ?Unknown_006B8FB0@TeamClass@@QAE_NPAVFootClass@@H_N@Z=006b8fb0
 // @ref ?unknown_4ea800@HouseClass@@QAEXPAVTechnoClass@@@Z=004ea800
 // @ref ?_com_issue_error@@YGXJ@Z=00795940
@@ -20,7 +20,7 @@
 InfantryClass::~InfantryClass()
 {
     if (unknown_flag_a40958 && Type != 0) {
-        if (House->unknown_4e3660(Type, 0, 0) == -1) {
+        if (House->Can_Build(Type, 0, 0) == -1) {
             House->unknown_144 = true;
         }
         if (Team != 0) {
