@@ -4,8 +4,8 @@
     "id": "population-3763",
     "inventory_sha256": "cebf21b427b8f76a600d4bab2daa39a11e06135d23d60417216b7f7498e162fd",
     "gaps_sha256": "a48afb4215602a23eea50bfb5c4b7d282f012aaf458c0125d3964305e07ad614",
-    "historical_population_sha256": "c8046944654fb974b829996edbe4c46eb5ae172ad2fcf5123e80fd465d28e1b1",
-    "historical_acceptance_sha256": "be71ebe15ee53f308dc11fee304024009a93ec108fb9c4b3b27f94cee7284ccc"
+    "historical_population_sha256": "250390c18bdec4cf03332d57abb360d958a40ce2d334eba28408cb06cc4217de",
+    "historical_acceptance_sha256": "408a03cc252c20f1f4c818dadf9db405b7fc33d46d852ca1996892300fed8c35"
   },
   "references": {
     "?unknown_static_850818@@3UUnknownStatic850818@@A": 8718360,
@@ -1501,7 +1501,7 @@
     "?MultiMix@@3PAVMixFileClass@@A": 8615064,
     "?MapsMix@@3PAVMixFileClass@@A": 8615156,
     "?MainMix@@3PAVMixFileClass@@A": 8615132,
-    "?VolumeCheck@@YA_NXZ": 7426192,
+    "?VolumeCheck@@YI_NXZ": 7426192,
     "??0MixFileClass@@QAE@PBDPBVPKey@@@Z": 5853936,
     "?Scan@ThemeClass@@QAEXXZ": 7240432,
     "?Error@CCFileClass@@UAEXHHPBD@Z": 4624384,
@@ -4639,7 +4639,38 @@
     "??_EOverlayTypeClass@@UAEPAXI@Z": 6148752,
     "??_EBitTextClass@@UAEPAXI@Z": 4402464,
     "??_EMultiplayerGameMode@@UAEPAXI@Z": 6000144,
-    "??_EConvertClass@@UAEPAXI@Z": 4743456
+    "??_EConvertClass@@UAEPAXI@Z": 4743456,
+    "?Clear@?$DynamicVectorClass@VHSVClass@@@@UAEXXZ": 6311216,
+    "?Clear@?$VectorClass@VHSVClass@@@@UAEXXZ": 6312848,
+    "?ID@?$DynamicVectorClass@VHSVClass@@@@UAEHPBVHSVClass@@@Z": 6311264,
+    "?ID@?$VectorClass@VHSVClass@@@@UAEHPBVHSVClass@@@Z": 6312992,
+    "?Fetch@?$VectorClass@VHSVClass@@@@UBE?AVHSVClass@@H@Z": 6311312,
+    "?Get@WolServerArray@@QAE_NAAPAUServer@WOL@@H@Z": 7757408,
+    "??0BaseNodeClass@@QAE@HABVCell@@@Z": 5204960,
+    "?Insert_Disk@CD@@UAE_NH@Z": 4646176,
+    "__real@8@c0058000000000000000": 8027384,
+    "?Remove@UnknownControlIndex@OwnerDraw@@QAE_NABIAAUUnknownControlRecord@2@@Z": 6298704,
+    "?Load@CellClass@@UAGJPAUIStream@@@Z": 4689072,
+    "__real@8@3ffca2f9836e4e441800": 7983464,
+    "__real@8@400196cbe3f9990e9000": 7983456,
+    "??_GWideString@@QAEPAXI@Z": 6296624,
+    "__real@8@3ff2d1b71758e2196800": 8013344,
+    "__real@8@40049800000000000000": 8013336,
+    "__real@8@4000e000000000000000": 8013328,
+    "?Add@?$DynamicVectorClass@PAVPlanningNodeClass@@@@QAE_NABQAVPlanningNodeClass@@@Z": 6402816,
+    "?Clear@?$VectorClass@PAVPlanningMemberClass@@@@UAEXXZ": 6401008,
+    "?Add@?$QueueClass@VEventClass@@$0IA@@@QAE_NABVEventClass@@@Z": 5104000,
+    "__real@8@40039000000000000000": 7979656,
+    "__real@8@3ffe9999999999999800": 7979632,
+    "__real@8@40028000000000000000": 7984472,
+    "__real@8@3fe2f0000000f0000000": 8020056,
+    "__real@8@40059600000000000000": 8019760,
+    "?Next@?$HashTableClass@VHashString@@PAVSchemeNode@@@@QAEPAVHashString@@AAUUnknownSchemeListIterator@@@Z": 6312224,
+    "?Load@Map@WorldDominationTour@@QAEXAAVINIClass@@PAVMSEngine@@H@Z": 7509264,
+    "?Stop@HoverLocomotionClass@@QAEXXZ": 5233232,
+    "??8Cell@@QBE_NABV0@@Z": 5238560,
+    "__real@4@400c9c3c000000000000": 8027432,
+    "??_EWideString@@QAEPAXI@Z": 6296624
   },
   "regions": [
     {
@@ -5106,7 +5137,7 @@
         {
           "offset": 305,
           "kind": 20,
-          "symbol": "?VolumeCheck@@YA_NXZ",
+          "symbol": "?VolumeCheck@@YI_NXZ",
           "target": 7426192,
           "addend": 0,
           "resolved": 2779147
@@ -5506,13 +5537,13 @@
         {
           "offset": 728,
           "kind": 20,
-          "symbol": "?VolumeCheck@@YA_NXZ",
+          "symbol": "?VolumeCheck@@YI_NXZ",
           "target": 7426192,
           "addend": 0,
           "resolved": 2778724
         }
       ],
-      "source_sha256": "5b6e73873e9d2cb423b6bf9600b51955ea43d69d627aadd8706d8c00cb45c775",
+      "source_sha256": "cfe87bf68dbf9d6589ef841944f122fd7bed12669c81accd801850964f7efc89",
       "source": "src/recovered/classes/CD/CD_Swap_Disk_0046e750.cpp",
       "population": "population-3763",
       "padding_sha256": "ab16a4264a14a2fd326c262e20ab7a8d0e67bc1658371fe45c446f311cdb6dbd",

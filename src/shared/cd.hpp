@@ -85,7 +85,7 @@ extern PKey FastKey;                           // 0x00839010 key the mixfiles ar
 
 // Checks the volume of the game disk (its debug strings name it
 // "VolumeCheck()"); true when the disk is present (hypothesis).
-bool VolumeCheck();                            // 0x00715090
+bool __fastcall VolumeCheck();                            // 0x00715090
 // Modal dialog with the text; false when the player cancels (hypothesis).
 bool __fastcall Unknown_00600C80(wchar_t const *text);   // 0x00600C80
 // Get_CD_Index for the current CD drive (hypothesis).

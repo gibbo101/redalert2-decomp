@@ -12,7 +12,7 @@
 // @ref ?Theme@@3VThemeClass@@A=00a35d78
 // @ref ?Stop@ThemeClass@@QAEX_N@Z=006e81a0
 // @ref ?Scan@ThemeClass@@QAEXXZ=006e7af0
-// @ref ?VolumeCheck@@YA_NXZ=00715090
+// @ref ?VolumeCheck@@YI_NXZ=00715090
 // @ref ??0MixFileClass@@QAE@PBDPBVPKey@@@Z=005952f0
 // @ref ?FastKey@@3VPKey@@A=00839010
 // @ref ?MoviesMix@@3PAVMixFileClass@@A=008374d4

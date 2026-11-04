@@ -4,8 +4,8 @@
     "id": "population-3725",
     "inventory_sha256": "c811ce072dbc8245d90a94cd3c139caf6e55600fe11d4733e16c783711705580",
     "gaps_sha256": "4f8e19e434745bd1f553c71b6f45480381488eb22bd5f0f5bccfb504b55e1a15",
-    "historical_population_sha256": "6b1e2ee6641aacfd8464e77187be854e1eca09d741e4cf351d04bd6bc01c2f88",
-    "historical_acceptance_sha256": "752a900029db4fde990ec6b93b3db5a2e043d28eaa3edbba75918b600b3b93ba"
+    "historical_population_sha256": "3c7e2bc5be3777bb7ab04c54cc809bae6219b0deeea64a5301fec98a5d1685d1",
+    "historical_acceptance_sha256": "ae011a5b97e14f36f031030585b61a4fbb00cb753b012344908137314eccc048"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -11560,7 +11560,7 @@
     "?MultiMix@@3PAVMixFileClass@@A": 8615064,
     "?MapsMix@@3PAVMixFileClass@@A": 8615156,
     "?MainMix@@3PAVMixFileClass@@A": 8615132,
-    "?VolumeCheck@@YA_NXZ": 7426192,
+    "?VolumeCheck@@YI_NXZ": 7426192,
     "?Scan@ThemeClass@@QAEXXZ": 7240432,
     "??_7?$DynamicVectorClass@PAVMapStage@@@@6B@": 8023784,
     "??_7?$DynamicVectorClass@PAVMSAnimEntry@@@@6B@": 8023752,
@@ -30643,7 +30643,7 @@
         {
           "offset": 2499,
           "kind": 20,
-          "symbol": "?VolumeCheck@@YA_NXZ",
+          "symbol": "?VolumeCheck@@YI_NXZ",
           "target": 7426192,
           "addend": 0,
           "resolved": 2109481
