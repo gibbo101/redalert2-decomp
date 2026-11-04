@@ -4,8 +4,8 @@
     "id": "population-3945",
     "inventory_sha256": "4976728bd62b9d19a9f3b22b673d0b7a2fe80911d4b5d3de74419734f3e94229",
     "gaps_sha256": "c0300466021b10e660dccd0a52924ffa29b6ba7619b82169f6c2166ac16a8453",
-    "historical_population_sha256": "b95e2a722fb224f55f0c597f0b14bb877639c43e303a35f95ffd96c0093d15d4",
-    "historical_acceptance_sha256": "73524e5cc63c689f64775a7d72f4030c827fa75ebba6fda8ce0f9e81ecdef627"
+    "historical_population_sha256": "7681c35c81885f36584aff1d7a7fc9cb64df60085a6a100dc9f6657153dcce74",
+    "historical_acceptance_sha256": "02836a0257cf6dfef0060bf164b6e3fcf71aaceb3a291dfa05b21e582defe82d"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -8904,7 +8904,7 @@
     "??0?$VectorClass@PAVSubTitle@@@@QAE@IPBQAVSubTitle@@@Z": 6931296,
     "??_7?$VectorClass@PAVSubTitle@@@@6B@": 8044980,
     "??0Unknown84E8D0@@QAE@XZ": 4382944,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?Coord@BounceClass@@QBE?AUCoordStruct@@XZ": 4419456,
     "?Fast_Sqrt@@YAMN@Z": 4957200,
     "?Coord@PlanningBranchClass@@QBE?AUCoordStruct@@XZ": 6359376,

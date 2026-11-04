@@ -8,7 +8,7 @@
 #include "shared/aircraft.hpp"
 #include "shared/map_view.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
-// @ref ?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z=005d4ce0
+// @ref ?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z=005d4ce0
 // @ref ?Unknown_0055A7F0@MapClass@@QAE_NABUCoordStruct@@@Z=0055a7f0
 // @ref ?unknown_415510@AircraftClass@@QAEHXZ=00415510
 
@@ -18,7 +18,7 @@ int AircraftClass::unknown_slot147()
     AbstractClass *target = unknown_228;
     unknown_5ba = true;
     if (target && Cargo.Object) {
-        if (Distance_To(target) > Rules->unknown_468) {
+        if (Planar_Distance(target) > Rules->unknown_468) {
             signed char queue_state = unknown_5bb;
             unknown_5ba = false;
             if (queue_state > 0) {

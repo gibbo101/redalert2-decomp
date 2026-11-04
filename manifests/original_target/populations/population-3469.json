@@ -4,8 +4,8 @@
     "id": "population-3469",
     "inventory_sha256": "1a51853dfd82682b6af93b90293ccba5210b8a951412b468bfb1f1ed14fbc3ab",
     "gaps_sha256": "ee33637ef51c177eeeaef3469ca47f18d9415d26999b1c82ae40077c7c6a6e6c",
-    "historical_population_sha256": "9529d349d5cdc8872b0bb8308362e06f4823db488d965d40f32518fb567dc431",
-    "historical_acceptance_sha256": "bfc84083386702984946fe11fba356894a3913a2d6c30d8926f848c402ea135a"
+    "historical_population_sha256": "38f9c21dcd434822e31c140bc9f4137ac92544ee2d8dac31097b0a8beccd7c78",
+    "historical_acceptance_sha256": "eb72f6606fd1afb24b0d44a473854e55d454ada5a38c3c4389e0c255d501b512"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1107,7 +1107,7 @@
     "?Resize@?$VectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UAE_NHPBU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@Z": 6507680,
     "?Resize@?$DynamicVectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UAE_NHPBU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@Z": 6508096,
     "__real@8@4008e100000000000000": 7976456,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "__real@4@4001a000000000000000": 8007424,
     "__real@8@40018000000000000000": 7981504,
     "?Center_Coord@BuildingClass@@UBE?AUCoordStruct@@XZ": 4472960,

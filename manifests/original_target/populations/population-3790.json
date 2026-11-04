@@ -4,8 +4,8 @@
     "id": "population-3790",
     "inventory_sha256": "1ee2af7ea9833afe759f4a0ef737054ece626ed960449a344b0e00fb1aadf5ba",
     "gaps_sha256": "127d116d9a790e6a709dbd0dc436e408108faee9625ba6a17e1883537f2821a3",
-    "historical_population_sha256": "dd044fa859950f03733d4ccb7a897b0e41065d357f441efd8bcca1572d38771f",
-    "historical_acceptance_sha256": "6c022e39467432e208db4301a23b1bc986c5de012b4fbbb2f067928b02e2c054"
+    "historical_population_sha256": "0aca2b39199eefdabe8704e50915c599bc3b6d76b861ea2a09e5d5bf925d47a3",
+    "historical_acceptance_sha256": "df64cb7a8ec3014aa7e5efcfb80270417f77521cc570c059fd053b87ece89b57"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -4035,7 +4035,7 @@
     "??1FootClass@@UAE@XZ": 4992176,
     "?QueryInterface@AircraftClass@@UAGJABUGUID@@PAPAX@Z": 4276128,
     "__real@8@4008e100000000000000": 7976456,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?unknown_slot62@AircraftClass@@UAEHPAVTechnoClass@@@Z": 4281280,
     "?unknown_slot78@AircraftClass@@UAE_NHH_N@Z": 4289712,
     "?unknown_slot78@FootClass@@UAE_NHH_N@Z": 5005728,

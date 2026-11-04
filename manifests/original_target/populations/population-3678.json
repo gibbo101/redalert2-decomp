@@ -4,8 +4,8 @@
     "id": "population-3678",
     "inventory_sha256": "18ded419f4613126bd119dc40ef1d386785e456dd5836f14c888eceba55e856d",
     "gaps_sha256": "c88ba09ac717ae2ecc9d33909fc5b1999ce2736427e1f89ccd13a04fbfe36255",
-    "historical_population_sha256": "c9d2c9915472104a685b6e3631290d104c0921c989fe5737c44fa9e1b9d806f9",
-    "historical_acceptance_sha256": "299d50f010289d84de4c3bd3e3c034660959aa0e24dc6d8572b716f437747367"
+    "historical_population_sha256": "a4e6513fb80be14938ad41b5fd05be6054ce0edf4b6fb0bc0a7c23894ea67b33",
+    "historical_acceptance_sha256": "36df2e32493d7b27e605cc3a029359a9c50fa789111a8b37f65c7b7cf7796efc"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2068,7 +2068,7 @@
     "?Resize@?$DynamicVectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UAE_NHPBU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@Z": 6508096,
     "?Add@ToolTipManager@@QAE_NABVToolTip@@@Z": 7256160,
     "__real@8@4008e100000000000000": 7976456,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?Delete@?$DynamicVectorClass@PAVFootClass@@@@QAE_NH@Z": 5041120,
     "??0?$VectorClass@PAVTagClass@@@@QAE@IPBQAVTagClass@@@Z": 5212736,
     "??0?$VectorClass@PAVBuildingClass@@@@QAE@IPBQAVBuildingClass@@@Z": 5212816,

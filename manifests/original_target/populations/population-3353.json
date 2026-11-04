@@ -4,8 +4,8 @@
     "id": "population-3353",
     "inventory_sha256": "53ebe2c7616532f7152f650f3d518a892bf4a883ba00b4166abeac9f94f0fbd6",
     "gaps_sha256": "4e582a9109c45a1716db32b83dc3092d2f0dc5ed80df02a4a97f53dbbfed92d0",
-    "historical_population_sha256": "3f2e579d5f487e0ee7a1a74665259e54c0ba91500126c39383610c2cd716f71a",
-    "historical_acceptance_sha256": "e46cdb058fbc604aeefd729d5975bfe3304e95b0b1b8e65676cd2e0fbddb17d2",
+    "historical_population_sha256": "8dc6a07ec35e3f936bb45ef8ba10c40bca9a3924b3958e28e016a9e4dd88f47c",
+    "historical_acceptance_sha256": "79fc5dfc039f2cfbcb3fc3d000c2eedff0889b25ecd8ba326a89c05ec0206403",
     "separate_units": true
   },
   "references": {
@@ -6246,7 +6246,7 @@
     "?Unknown_006A2B10@Tactical@@QAE?AUCoordStruct@@ABUPoint2D@@@Z": 6957840,
     "?Unknown_006A6BD0@Tactical@@QAE?AVCell@@ABUPoint2D@@@Z": 6974416,
     "?Unknown_006A66B0@Tactical@@QAEXABUCoordStruct@@@Z": 6973104,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?Compute_CRC@AircraftClass@@UBEXAAVWWCRCEngine@@@Z": 4304224,
     "?Compute_CRC@FootClass@@UBEXAAVWWCRCEngine@@@Z": 5022672,
     "?Detach@AircraftClass@@UAEXPAVAbstractClass@@_N@Z": 4304304,

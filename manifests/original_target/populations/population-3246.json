@@ -4,8 +4,8 @@
     "id": "population-3246",
     "inventory_sha256": "e40c783bc09f6d5eba5f36cb6cd5a013c6a087c8b5eaad809918255a60a7b022",
     "gaps_sha256": "5fa89f0401f7477fa5984aaefcd14a1315e6a9c0ecade75d95bf4beadba3404d",
-    "historical_population_sha256": "3abed4ad241e3ef337c8d8f4a14ed65858240925a55c96ee0488842358064b63",
-    "historical_acceptance_sha256": "b66f7fdab04c2f193815828c9657aa838f6c0c4396ced057717059d6134bcb51"
+    "historical_population_sha256": "48fbe36590c9db948d540a24536c288d5e85b00637bbd7f56642a08b4d265d7f",
+    "historical_acceptance_sha256": "cd8787b3181a53aa7b65d5751c518f5dc40b53428c09326f9f889856a5a0a4e0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -9400,7 +9400,7 @@
     "?Dismount_Volume@CDControlClass@@QAE_NPAX@Z": 4648464,
     "?Distance_Squared@ObjectClass@@QBEHABUCoordStruct@@@Z": 6114816,
     "?Distance_Squared@ObjectClass@@QBEHPBV1@@Z": 6114720,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?DoList@@3V?$QueueClass@VEventClass@@$0EAAA@@@A": 8807024,
     "?Do_Lose_0065dec0@@YIXXZ": 6676160,
     "?Do_Reinforcements@@YI_NPAVTeamTypeClass@@H@Z": 6527344,

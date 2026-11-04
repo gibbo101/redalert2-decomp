@@ -4,8 +4,8 @@
     "id": "population-3763",
     "inventory_sha256": "cebf21b427b8f76a600d4bab2daa39a11e06135d23d60417216b7f7498e162fd",
     "gaps_sha256": "a48afb4215602a23eea50bfb5c4b7d282f012aaf458c0125d3964305e07ad614",
-    "historical_population_sha256": "e2bfa4aecd703d620a1d494d6f4333983c2d314fcd9023e9aca4cef9d3751a80",
-    "historical_acceptance_sha256": "9726ef6ec8c720b022c2d20dd089987595f2b1b3a8c17076d25f8c62cd9c5019"
+    "historical_population_sha256": "c8046944654fb974b829996edbe4c46eb5ae172ad2fcf5123e80fd465d28e1b1",
+    "historical_acceptance_sha256": "be71ebe15ee53f308dc11fee304024009a93ec108fb9c4b3b27f94cee7284ccc"
   },
   "references": {
     "?unknown_static_850818@@3UUnknownStatic850818@@A": 8718360,
@@ -3168,7 +3168,7 @@
     "??0DisplayClass@@QAE@ABVNoInitClass@@@Z": 6825200,
     "??_7RadarClass@@6B@": 8029980,
     "??_GRadarClass@@UAEPAXI@Z": 6507216,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "__imp__MultiByteToWideChar@24": 7971256,
     "?Center_Coord@BuildingClass@@UBE?AUCoordStruct@@XZ": 4472960,
     "??0BuildingTypeClass@@QAE@ABVNoInitClass@@@Z": 4555104,

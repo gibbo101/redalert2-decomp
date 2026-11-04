@@ -193,7 +193,11 @@ public:
     // The direction from this object toward target (0x005D2730; hypothesis).
     UnknownFacingDir Direction_To(AbstractClass const *target) const;
     // The distance from this object to target (0x005D4CE0; hypothesis).
+    int Planar_Distance(AbstractClass const *target) const; // 005D4CE0: ignores Z, adjusts building radius
+#ifdef RA2_BUILDING_SPATIAL_DISTANCE
+    int Distance(CoordStruct const &coord) const;
     int Distance_To(AbstractClass const *target) const;
+#endif
 
     virtual HRESULT __stdcall Load(IStream *stream);                       // 0x005D4760
     virtual void Detach(AbstractClass *target, bool all = true);           // 0x005D3BD0

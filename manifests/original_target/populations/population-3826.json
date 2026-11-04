@@ -4,8 +4,8 @@
     "id": "population-3826",
     "inventory_sha256": "ba981aaaeede8e981ebb305658cc9170ff773a85ea21d59d2760a5108e0219af",
     "gaps_sha256": "55b397fb3ddad3605dc383a3183b602bea2e04cbf32c493dec4c0dfc2a84c07a",
-    "historical_population_sha256": "e6d596036e3b93a13c44c009e2c4a7dac856f88c557813b6495df3181330b1c7",
-    "historical_acceptance_sha256": "e9377f76232f0d70c5af79c4bfb8fd3596236374bb912f9851f6be05a954d1c1"
+    "historical_population_sha256": "4d78ba468b2211d9812c5454567b2f73032c4a29b52ccc9a3d1acc7f129699ab",
+    "historical_acceptance_sha256": "cf780f88eadaebc5f0c4a7c254661b8c1e9c27f2402f4a52e0bb364520d0d5c6"
   },
   "references": {
     "_stricmp": 7872288,
@@ -7294,7 +7294,7 @@
     "??1MixFileClass@@UAE@XZ": 5854752,
     "??0Unknown84E8D0@@QAE@XZ": 4382944,
     "??0MixFileClass@@QAE@PBDPBVPKey@@@Z": 5853936,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?Coord@BounceClass@@QBE?AUCoordStruct@@XZ": 4419456,
     "?Fast_Sqrt@@YAMN@Z": 4957200,
     "?Coord@PlanningBranchClass@@QBE?AUCoordStruct@@XZ": 6359376,

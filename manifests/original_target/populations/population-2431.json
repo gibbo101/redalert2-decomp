@@ -4,8 +4,8 @@
     "id": "population-2431",
     "inventory_sha256": "d8ef495f8e0b4904943a7487206fbc5cd73c11eb72f63390abe5993691254037",
     "gaps_sha256": "8d0779cbdd15b77550457e8c6cd23b99e40f0538459dfed2a8f1a43b81834bc6",
-    "historical_population_sha256": "c13cb156da57ed82fe5ce125c3dbc7662f1b2a0ab4309c8b202d4c85e398ba3e",
-    "historical_acceptance_sha256": "c6df231a729c31f5a9b408b09201490fc122f92f5abb85b6f92c3c8a72f30476"
+    "historical_population_sha256": "4da10a03b7c00c01043541657656cc3f573782ae586b380c2491cda977084d67",
+    "historical_acceptance_sha256": "0199dc4c2212195675bbb0ed957c2242da6aac8370cb51022fccf11209add31c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2368,7 +2368,7 @@
     "?Disable@TriggerClass@@QAEXXZ": 7265136,
     "?Distance_Squared@ObjectClass@@QBEHABUCoordStruct@@@Z": 6114816,
     "?Distance_Squared@ObjectClass@@QBEHPBV1@@Z": 6114720,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?Draw_All@GadgetClass@@UAEX_N@Z": 5042784,
     "?Draw_Background@EditClass@@UAEXXZ": 4926544,
     "?Draw_Background@StaticButtonClass@@UAEXXZ": 6916448,

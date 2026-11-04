@@ -8,7 +8,7 @@
 #include "shared/fast_math.hpp"
 // @ref ?Unknown_004F52F0@HouseClass@@QAE_NXZ=004f52f0
 // @ref ?Fast_Sqrt@@YAMN@Z=004ba410
-// @ref ?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z=005d4c00
+// @ref ?unknown_5d4c00@ObjectClass@@QAEHPAVAbstractClass@@@Z=005d4c00
 // @ref ?unknown_func_733a60@WeaponTypeClass@@QBEHXZ=00733a60
 // @ref ?unknown_6d7910@TechnoClass@@QAE_NH@Z=006d7910
 // @ref ?unknown_slot219@FootClass@@UAEPAVAbstractClass@@HPBUCoordStruct@@_N@Z=004c8420
@@ -38,7 +38,7 @@ AbstractClass *InfantryClass::unknown_slot219(int threat, CoordStruct const *coo
             active = thief_target->AbstractFlags.IsTechno;
         }
         if (thief_target != 0 && active && ((TechnoClass *)unknown_494)->unknown_slot31()
-        && !((TechnoClass *)unknown_494)->unknown_slot32()->IsTrain && Distance_To(unknown_494) < 0xF00) {
+        && !((TechnoClass *)unknown_494)->unknown_slot32()->IsTrain && unknown_5d4c00(unknown_494) < 0xF00) {
             return unknown_494;
         }
     }

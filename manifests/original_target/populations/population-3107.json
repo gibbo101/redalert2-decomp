@@ -4,8 +4,8 @@
     "id": "population-3107",
     "inventory_sha256": "b565b146a0d3289abdeccea9a27893202d93d72e0b9775577fe9fc3305acf60f",
     "gaps_sha256": "0c81906ca7334b224f409e6f761fa09ad55f4cf4896799e76f3fceead24bf27d",
-    "historical_population_sha256": "95a25c9a5651cd8e0559de4b2678f9e7cd12871c6a058ef765e95c1ce49538b7",
-    "historical_acceptance_sha256": "38847e3f46744d096852000c073a033974566299c84ee23aaf141cb730aa5a10"
+    "historical_population_sha256": "c0661a9c36e222843078d40ce2a50ff39f4b1c0381b792118de1612b64e569a4",
+    "historical_acceptance_sha256": "966c4f458daf9860bffeabad814bda1eb2171bd43b59fdde6d0dba98c1c9cd21"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2716,7 +2716,7 @@
     "?Disable@TriggerClass@@QAEXXZ": 7265136,
     "?Distance_Squared@ObjectClass@@QBEHABUCoordStruct@@@Z": 6114816,
     "?Distance_Squared@ObjectClass@@QBEHPBV1@@Z": 6114720,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?Do_Turn@DriveLocomotionClass@@UAGXUUnknownFacingDir@@@Z": 4853712,
     "?Do_Turn@FlyLocomotionClass@@UAGXUUnknownFacingDir@@@Z": 4977552,
     "?Do_Turn@HoverLocomotionClass@@UAGXUUnknownFacingDir@@@Z": 5234576,

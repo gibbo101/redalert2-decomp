@@ -3,6 +3,9 @@
 #define RA2_SHARED_FACING_HPP
 #include "shared/coord.hpp"
 #include "shared/cd_timer.hpp"
+#ifdef RA2_FACING_DIR256
+#include "shared/dir_type.hpp"
+#endif
 // A 16-bit direction in a 4-byte value (hypothesis: Westwood's DirStruct;
 // cf. UnknownDirStruct in shared/bullet.hpp).
 enum Dir32 {}; // The reference's wrapped 32-direction index type.
@@ -14,6 +17,10 @@ struct UnknownFacingDir {
     double As_Radian() const; // original signed16 angle observation
     UnknownFacingDir() {}
     UnknownFacingDir(unsigned short raw) : Raw(raw) {}
+#ifdef RA2_FACING_DIR256
+    UnknownFacingDir(Dir256 dir) { From_Dir256(dir); }
+    void From_Dir256(Dir256 dir) { Raw=0; Raw|=(dir<<8); }
+#endif
 // The native Parasite AI observes a signed low-word angle, then rotates left by a quarter turn.
 #ifdef RA2_FACING_LEFT90
     UnknownFacingDir(int facing) : Facing((short)facing) {}
@@ -33,6 +40,10 @@ struct UnknownFacingDir {
 #endif
     unsigned short Padding;
 };
+#ifdef RA2_FACING_DIR256
+inline bool operator==(UnknownFacingDir const &left,UnknownFacingDir const &right) { return left.Raw==right.Raw; }
+inline bool operator!=(UnknownFacingDir const &left,UnknownFacingDir const &right) { return left.Raw!=right.Raw; }
+#endif
 
 // One of eight directions (the top bits of a direction, rounded; read as
 // 32 bits).

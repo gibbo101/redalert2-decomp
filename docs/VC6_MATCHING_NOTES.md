@@ -1129,3 +1129,13 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A helper that takes the exit coordinate by reference and reads `count` inside, before its call, shares the register the way the original does; the same read in the caller does not.
 - An unreferenced row after a switch table needs its predecessor's extent on record, so it lands one round later, with its definition inline in the predecessor's draft for that round.
 - Natural free /Ob2 sites that make As_Cell and operator== refuse inside Start: Under_Bridge, Abs, Object_Coord accessors and TibSun's Is_Complete_Turn with its operator- and operator>=. No pads were needed.
+
+## Key probes, refined (Scout653)
+- A k probe moves only sites after it, which narrows the earlier "position does not matter" claim. `int q; q;` is a pure T probe with no IL; `int q = 0` also moves S and hits budget flips.
+- Copy-propagated locals add nothing to T; `(Cell)` casts do.
+- A site stable over every k is an initialisation-order problem, not a key problem: try moving each `= 0` first (0x5629D0 went 82.86 to exact with `int found = 0;` before `xx`).
+
+## Constant webs and Coord differences (Scout655, Ship 0x676F60)
+- `(Object_Coord(LinkedTo) - dest_coord)` gives `mov esi,edx`; `movement + Object_Coord(LinkedTo)` gives `mov ebx,edx`. An unexplained register copy around a Coord difference is usually one more inline level.
+- A cached constant (-1 in edi) is a conflict rule, not a type rule: compare types do not detach it, but a real pseudo at the difference peak or live across a call evicts it. Constants compete: a second zero use at the head caches zero in edi and moves -1 to ebx.
+- TibSun's Point2DStruct: `Point2D(Point2DStruct const &)` built through a nested call reads Y first. `(double)X*(double)X...` Length gives the original FP order.

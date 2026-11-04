@@ -18,7 +18,7 @@ static inline int Object_Geometry_Planar_Distance_005D4CE0(Point2D origin, Point
     double x = difference.X;
     return (int)unknown_sqrt_4ba410(x * x + y * y);
 }
-int ObjectClass::Distance_To(AbstractClass const *target) const
+int ObjectClass::Planar_Distance(AbstractClass const *target) const
 {
     if (!target) return 0;
     int distance = Object_Geometry_Planar_Distance_005D4CE0(Object_Geometry_Planar_Position_005D4CE0(Center_Coord()),

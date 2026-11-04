@@ -4,8 +4,8 @@
     "id": "population-2410",
     "inventory_sha256": "10af80db1a6d38c4414efdf5250c525bf160cf73e2cb01c0f70b3c480e5fcbfd",
     "gaps_sha256": "e8c2996cdb98f3060894f657a56560081bc5b590cafd16f914ae0b29f4a590e1",
-    "historical_population_sha256": "3ec2734216ae5c3729dbb1fb652891e44661eabc9fa0a951502084c1f12f1872",
-    "historical_acceptance_sha256": "d1e3eceb140d43b11be87401fa533e291cbf73311c2f0e96249875af5af28fef"
+    "historical_population_sha256": "ecab52a3e94177add17d7e98b34a70e9e71c6f332d3bfa75485f4419425c3fc4",
+    "historical_acceptance_sha256": "1d0369897e78f4b378c9317ff1bca5cb55503f52af97496f9cd36f787a8b436c"
   },
   "references": {
     "??_7CNetUtilEventSink@@6B@": 8058944,
@@ -5892,7 +5892,7 @@
     "?Connection_Step_005baf20@FirewallSettings@@QAEHH@Z": 6008608,
     "??8BaseNodeClass@@QAE_NABV0@@Z": 4374240,
     "??OBaseNodeClass@@QAE_NABV0@@Z": 4374368,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?Fast_Sqrt@@YAMN@Z": 4957200,
     "?Detect_005ba2c0@FirewallSettings@@QAEHPA_N@Z": 6005440,
     "?Save_005ba210@FirewallSettings@@QAEXXZ": 6005264,

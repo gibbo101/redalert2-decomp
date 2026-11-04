@@ -4,8 +4,8 @@
     "id": "population-3705",
     "inventory_sha256": "2c4f678c172584a8f5e14031ac2ff95ac55d37f2f79253d1d5acb1e4f227428a",
     "gaps_sha256": "989c432a32114f4054f31fbf0eeaac09781ad0cf2f5d242c002140d2715fd0b2",
-    "historical_population_sha256": "882c86b9a1a38707dc014e9f4741073f8eb2a49cc06531a6472f2f13920af908",
-    "historical_acceptance_sha256": "07513df794cc7745e03d69bc5fcb48134e95a7b2203bb4767f1dd22a8accf5c8"
+    "historical_population_sha256": "c7c90153c9abd118c9c63beca5c97d0667cbdaeed4a53803270d7241965f05f3",
+    "historical_acceptance_sha256": "595420725d43430d14436516bd8ea2db3fe7f9c168b57b09cd7ee403a09fe5b9"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -6351,7 +6351,7 @@
     "?Is_Active@ToolTipManager@@QBE_NXZ": 7257824,
     "?Value@Benchmark@@QBEKXZ": 4387296,
     "?Is_Active@RadBeam@@QBE_NXZ": 6510576,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?Coord@BounceClass@@QBE?AUCoordStruct@@XZ": 4419456,
     "?Fast_Sqrt@@YAMN@Z": 4957200,
     "?Coord@PlanningBranchClass@@QBE?AUCoordStruct@@XZ": 6359376,

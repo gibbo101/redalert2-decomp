@@ -59,7 +59,7 @@ int AircraftClass::unknown_slot126()
         unknown_5ba = false;
         if (unknown_228 != 0 && unknown_254 != 0) {
             if (Is_Strafe()) {
-                if (Distance_To(unknown_228) < unknown_slot231(0)->WeaponType->unknown_b4) {
+                if (Planar_Distance(unknown_228) < unknown_slot231(0)->WeaponType->unknown_b4) {
                     unknown_a8 = 4;
                     return 1;
                 }
@@ -74,7 +74,7 @@ int AircraftClass::unknown_slot126()
                 unknown_a8 = 1;
                 return 1;
             }
-            int distance = Distance_To(unknown_494);
+            int distance = Planar_Distance(unknown_494);
             if (distance < 0x200) {
                 unknown_2f8.Set_Desired(Direction_To(unknown_228));
                 if (distance < 0x10) {

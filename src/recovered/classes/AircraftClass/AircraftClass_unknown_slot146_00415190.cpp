@@ -4,7 +4,7 @@
 // use up one of +0x5BB. Always 3.
 #include "shared/aircraft.hpp"
 // @ref ?Rules@@3PAVRulesClass@@A=00839848
-// @ref ?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z=005d4ce0
+// @ref ?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z=005d4ce0
 
 int AircraftClass::unknown_slot146()
 {
@@ -17,7 +17,7 @@ int AircraftClass::unknown_slot146()
         unknown_slot260(unknown_228, 1);
         return 3;
     }
-    if (Distance_To(unknown_228) <= Rules->unknown_468) {
+    if (Planar_Distance(unknown_228) <= Rules->unknown_468) {
         unknown_slot116(27, false);
         unknown_5bb--;
     }

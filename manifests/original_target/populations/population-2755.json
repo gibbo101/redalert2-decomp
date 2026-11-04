@@ -4,8 +4,8 @@
     "id": "population-2755",
     "inventory_sha256": "b13e9f8a9c80267fb68c5bd415014405b9bc78678999b67b184f26e446fee49e",
     "gaps_sha256": "39a87731f2f2872c7e727c9bebe584eb081b3ddde2c518f5182d6bce3f128ad1",
-    "historical_population_sha256": "66504de4c8f56414210d19a847ba1517374ae65365f905711fc0107177be8fdb",
-    "historical_acceptance_sha256": "cd9c55451257dbe5dc02e97ce57ddc776ecf2bd9f821ca7748f04410ec009f78"
+    "historical_population_sha256": "fdb31ea52e8dec991b6b0f50e4a31b20c2d9415c362c8371d9af8be07a3ddbf3",
+    "historical_acceptance_sha256": "fcaf2474a21d3293cf82af3636d4e682e6b28f1e1ef9d03e7a6294cd9bb5d38d"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -6625,7 +6625,7 @@
     "_IID_IFlyControl": 8003712,
     "?unknown_slot132@AircraftClass@@UAEHXZ": 4277952,
     "?unknown_slot146@AircraftClass@@UAEHXZ": 4280720,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?unknown_slot134@AircraftClass@@UAEHXZ": 4281088,
     "?Unknown_0049A700@DisplayClass@@QAE?AVCell@@HABV2@0H_NH@Z": 4826880,
     "?unknown_slot62@AircraftClass@@UAEHPAVTechnoClass@@@Z": 4281280,

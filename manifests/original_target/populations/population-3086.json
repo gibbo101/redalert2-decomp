@@ -4,8 +4,8 @@
     "id": "population-3086",
     "inventory_sha256": "1b0f08704985a5c887d5a3123ae136b12c4132fef2da335fa4bc52ae9cd6ddf9",
     "gaps_sha256": "dd769c12d95f36cb69acf3ce86e15d5f183ffbc16f4cc157d2377276e2ae2484",
-    "historical_population_sha256": "256e176cdbdcd5b5e89273ed7a53c669caf81153952ccd767e8e39a1408fa04c",
-    "historical_acceptance_sha256": "1bcbe7e1b3c7a5e763ed37897ed93cb8c87a1be994a7deccb1c50e362a30e342"
+    "historical_population_sha256": "5077a412b10471060f93c5b53b2280b79d76c19aa5f2f14817d5b9b8bb7ebe57",
+    "historical_acceptance_sha256": "595fe5f1db34e74d76de3f0893d6d11d527ce75354856230ab0049793f36699a"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -5003,7 +5003,7 @@
     "?Difference@HSVClass@@QBEHABV1@@Z": 5238784,
     "??8HSVClass@@QBE_NABV0@@Z": 5239152,
     "??0MixFileClass@@QAE@PBDPBVPKey@@@Z": 5853936,
-    "?Distance_To@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
+    "?Planar_Distance@ObjectClass@@QBEHPBVAbstractClass@@@Z": 6114528,
     "?Coord@BounceClass@@QBE?AUCoordStruct@@XZ": 4419456,
     "?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z": 6959136,
     "?Fast_Sqrt@@YAMN@Z": 4957200,
