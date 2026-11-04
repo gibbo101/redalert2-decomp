@@ -1278,3 +1278,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Repeating an expression instead of naming it makes a CSE temp that ranks differently from a named local, and that decides which pseudo wins the register. `x_offsets[direction / 2]` twice with no index local gives the `shl eax,2` CSE.
 - `Rect a = src; a.X += 1; a.Width -= 2;` gives `inc` and `sub r,2`; ctor arguments give `add r,-2`. `center = Point2D(a, b)` fixes read order. `base + Cell(-1, 0)` and `base - Cell(1, 0)` differ.
 - Rows ending in switch tables need table-inclusive body_bytes.
+
+## Flag reuse and aliasing (Scout678, 0x4F2350 from 88 to exact)
+- `flag = !(a && b && ...); if (flag) {B} else A;` places B after the next unconditional jmp and lets A fall into the join; plain `if (!cond) B else A` normalizes and does not move it. Scout678's scan.py lists matched rows with out-of-line arms that jump back.
+- A store through a reference blocks later loads from scheduling above it; a direct this-member store does not.
+- Aliasing is flow-insensitive: an address-taken local keeps store order against pointer loads even when the address is taken later.
+- The threader sees through named bools, copies, inline helpers, joins and De Morgan forms; only a path with the flag unknown keeps a test.

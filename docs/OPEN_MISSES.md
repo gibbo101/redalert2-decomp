@@ -1606,3 +1606,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout677 (2026-11-04, closed; Place_Waterfall 0x57FF20 6,472 B with the bool rename; drafts build/class-work/Scout677/w/keep/)
 - OWNER DECISION: `int seg = 0; if (seg < H) { ... do ... }` stays: it is live source, slightly better than `if (H > 0)`.
 - 0x57C780 96.59, shape 100, zero normalized diffs (land_mass_57c780_9659.cpp; only `placed`/`attempts` slots swapped; 9602 has the right store order). 0x57C9E0 54.55 (two_rect_57c9e0_5455.cpp; frame 0xb0 vs 0xb8). 0x576420 45.80 (true extent 993 B, needs body_bytes; the original calls Destroy_Cell_Regions and Generation_Cell_In_Bounds out of line, so it may be a separate TU).
+
+## Scout678 (2026-11-04, closed; AI_Build_Wall 0x4F2350 2,405 B; drafts build/class-work/Scout678/w/keep/; Scout680 continues)
+- OWNER DECISION: `Rect &area` with the direct tail assign stays, the same class as the earlier reference alias. `house_adjacent.hpp` landed as a FacingType overload because the RA2_ADJACENT_CELL guard is already set in this population.
+- Rename unknown_func_4f2350 to AI_Build_Wall pending (Scout680). Update_Present_Super_Weapons 0x4F4B20 87.59 (super_c0_7939.cpp is structurally closest; the threader sees through flags, only a path with the flag unknown keeps the test). AI_Building 0x4E9660 99.42 (schedule is alias-driven: no legal form yet). Where_To_Place_Building 0x4F03C0 63.99 with @refs bound (wp_w0_6399.cpp; wp_y1_rectfields.cpp has the original statement order, frame 0xdc). Place_Veins 78.39 unworked.

@@ -26,7 +26,7 @@
 #include "shared/crt_memory.hpp"
 static FacingType const wall_step_facings[4] = {FACING_E,FACING_E,FACING_S,FACING_S};
 static FacingType const wall_adjacent_facings[4] = {FACING_N,FACING_S,FACING_W,FACING_E};
-void HouseClass::unknown_func_4f2350()
+void HouseClass::AI_Build_Wall()
 {
     Rect &area = unknown_55f0.unknown_54;
     Rect perimeter=area;

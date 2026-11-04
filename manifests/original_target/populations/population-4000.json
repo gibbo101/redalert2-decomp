@@ -4,8 +4,8 @@
     "id": "population-4000",
     "inventory_sha256": "f0d79c15b0eb4bdb43a278bf3e4dd5e8acdc8c99dd47ca75b81eabbb7d694e17",
     "gaps_sha256": "667487bd4144bcc19a5b094a5464af19d740ffafdfce47cd5aed0e636fbcb72a",
-    "historical_population_sha256": "48352e84c59baf9dd72df1b9a9f5163a06b5dfb845bb10045b52fce3ba24f903",
-    "historical_acceptance_sha256": "a2d1bff07ea9ac3b8746917c32909af635b7eff9d67bedad368d4277b2e70f98"
+    "historical_population_sha256": "7ef58da4f02675c9058f2b5e17a144c1ee4d3a5235946af2d9991e7cc5e503bb",
+    "historical_acceptance_sha256": "13aa20d1608b8eba221433a4bfad4239eecde67aeff0c764dfda4d056746dd05"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -7020,7 +7020,7 @@
     "?Get_Anti_Air_Defense_Buildings_004f1e50@HouseClass@@": 5185104,
     "?Get_Anti_Armor_Defense_Buildings_004f1ff0@HouseClass@@": 5185520,
     "?Get_Anti_Ground_Defense_Buildings_004f2190@HouseClass@@": 5185936,
-    "?unknown_func_4f2350@HouseClass@@": 5186384,
+    "?AI_Build_Wall@HouseClass@@": 5186384,
     "?unknown_func_4f2e50@HouseClass@@": 5189200,
     "?unknown_func_4f2fc0@HouseClass@@": 5189568,
     "?unknown_func_4f3170@HouseClass@@": 5190000,
@@ -13239,7 +13239,8 @@
     "?unknown_4718b0@CellClass@@QAE_NHHH@Z": 4659376,
     "?unknown_flag_a3f209@@3_NA": 10744329,
     "?unknown_flag_a3f208@@3_NA": 10744328,
-    "?Cell_Color@CellClass@@QBEXAAVRGBClass@@0@Z": 4657856
+    "?Cell_Color@CellClass@@QBEXAAVRGBClass@@0@Z": 4657856,
+    "?AI_Build_Wall@HouseClass@@QAEXXZ": 5186384
   },
   "regions": [
     {
@@ -40080,8 +40081,8 @@
     {
       "entry": 5186384,
       "method": "004f2350",
-      "symbol": "?unknown_func_4f2350@HouseClass@@QAEXXZ",
-      "symbol_prefix": "?unknown_func_4f2350@HouseClass@@",
+      "symbol": "?AI_Build_Wall@HouseClass@@QAEXXZ",
+      "symbol_prefix": "?AI_Build_Wall@HouseClass@@",
       "options": [
         "/O2",
         "/Ob2",
@@ -40431,7 +40432,7 @@
           "resolved": 2683024
         }
       ],
-      "source_sha256": "d63bd9fadc9a6c462244fa4255f4703afb5ac33e8bc916311a7788d365f1f0cd",
+      "source_sha256": "d8e64430b30e40646ef9bfbae7a54d942db0629e0d19db91cd09fd00f1c42add",
       "source": "src/recovered/classes/HouseClass/HouseClass_AI_Build_Wall_004f2350.cpp",
       "population": "population-4000",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
