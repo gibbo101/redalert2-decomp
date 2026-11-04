@@ -308,6 +308,7 @@ public:
     // TibSun Destroy_High_Bridge_Span / Destroy_High_Bridge_Connections: the high bridge twins of 0x00553000 / 0x00553570.
     bool Destroy_High_Bridge_Span_00558660(Cell const &cell, FacingType direction, Rect *dirty);
     void Destroy_High_Bridge_Connections_00558BD0(Cell const &cell);
+    Cell Unknown_00564F70(CellClass *cptr, bool isbridge);        // TibSun Get_Bridge_Zone_Connection_Cell
 #endif
 #if defined(RA2_MAP_BOMB_BRIDGE) || defined(RA2_MAP_BRIDGE_PIECES)
     // Bridge destruction around a cell (BombClass::Unknown_00435D30 on a bridge repair hut): 0x00557090 when a
