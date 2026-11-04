@@ -1723,3 +1723,6 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - OWNER DECISION: the `on` and `alive` locals stay as landed (used, emit no extra code, not in TibSun). Rename unknown_func_4f4b20 pending.
 - AI_Build_Defense 0x4F1190 (3,264 B to 0x4F1E50, TibSun house.cpp:7840) undrafted; listing w/keep/abd.dis. Team GatherAtEnemy 0x6BDAA0 98.70, shape 100 (gx1.cpp; three frame lines). Expert_AI 0x4E8990 77.89 (expert_7789.cpp; constant webs). Random_Cell_In_Zone 0x4ECA50 52.70, jump table unbound. GScreen Get_Input 0x4E09D0 82.81. AI_Building 99.42, Mech 79.76 unchanged.
 - 0x4EEE10 and 0x4EF303 are interior to 0x4EECB0 (2,276 B, RA2-only, no twin). Team, Script, Trigger, Tag and TaskForce have no other unrecovered rows in the ranges checked, apart from Team 0x6BE010.
+
+## Scout706 (2026-11-04, closed; 0 B; drafts build/class-work/Scout706/w/keep/, NOTES.md; Scout708 continues)
+- Techno Fire_At 0x6CA890 86.42, frame right, 18 hunks (gk_a_best_score.cpp; no overlay; ga_a_probe_9127.cpp is a probe). Left: sound site `TypeList::Pick` ebx contest, scheduling ties at 0x231, 0x41e, 0x5cf, 0x6ab, 0x11ea, CDTimer temp [a4] vs [30]. The bullet.hpp Set_Yaw/Set_Pitch variant is not clean, so the file-local helpers stay and are flagged. Action 0x62FE30 97.18 unchanged.

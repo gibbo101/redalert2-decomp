@@ -1449,3 +1449,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `bool const &on = e; bool off = !on;` keeps a second flag test after a failed chain.
 - The order of a virtual-call `==` pair flips once two `bool x = !y` values exist anywhere in the function; ints, compares and copies do not count.
 - `double dy = -delta.Y;` fixed fstp order and a tail push order. A constant used inside an inlined body in a loop joins and hoists the web of the same constant in the outer function.
+
+## Float lengths and evictions (Scout706)
+- TibSun `TPoint3D<float>::Length` with `(double)X*(double)X` casts spills X and Y to the struct and keeps Z on the x87 stack. Sum order z,x,y comes from `double s = Z2; s += X2 + Y2;`. Unnamed int Length casts give the X2 and whole-sum FP CSEs on their own.
+- A long pseudo is evicted around cold arms and reloaded later; reloads seem to add weight, so one eviction can cancel the next (inferred). TypeList::Pick turns off the count CSE, as its inline `this` hides the member read until after CSE.

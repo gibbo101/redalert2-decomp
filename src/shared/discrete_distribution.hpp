@@ -65,6 +65,7 @@ public:
                     return Objects[index].Object;
                 }
             }
+            return 0;
         }
         return 0;
     }

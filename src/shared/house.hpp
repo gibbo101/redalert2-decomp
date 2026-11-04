@@ -250,7 +250,9 @@ public:
     int AI_Building();                                     // 0x004E9660 (RA's AI_Building: picks unknown_553c from the base plan)
     void AI_Build_Wall();                            // 0x004F2350 (AI_Building: a base node of type -3)
     bool unknown_func_4f5d30(int node);                    // 0x004F5D30 (AI_Building: by base node index)
-    bool unknown_func_4f1190(int node, DynamicVectorClass<Cell> *cells);   // 0x004F1190 (AI_Building: places a base node)
+    // TibSun Calculate_Enemy_Predictions: RA2 leaves every prediction at 0.33 (out of line 0x004F2330).
+    void Calculate_Enemy_Predictions() { unknown_15f84 = 0.33f; unknown_15f80 = 0.33f; unknown_15f7c = 0.33f; }
+    bool AI_Build_Defense(int node, DynamicVectorClass<Cell> *cells);   // 0x004F1190 (AI_Building: places a base node)
     bool unknown_func_4ef740(BuildingTypeClass *type, DynamicVectorClass<BuildingTypeClass const *> &owned, int count);   // 0x004EF740 (whether owned holds the type's prerequisites)
     int AI_Infantry();                                     // 0x004EA1B0 (RA's AI_Infantry: picks unknown_5544 from the teams' needs)
     int AI_Aircraft();                                     // 0x004EA4D0 (RA's AI_Aircraft: picks unknown_5548)
