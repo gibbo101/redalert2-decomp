@@ -21,6 +21,10 @@ public:
     // Paralyzed=, Retaliate=, Scatter=, Rate=, AARate=).
     bool Read_INI(CCINIClass &ini);                             // 0x00594E30
 
+#ifdef RA2_BUILDING_MISSION_NORMAL_DELAY
+    int Normal_Delay() const { return int(900.0 * unknown_10); }
+#endif
+
     int Mission;                // +0x00 (-1)
     bool unknown_04;            // +0x04
     bool unknown_05;            // +0x05

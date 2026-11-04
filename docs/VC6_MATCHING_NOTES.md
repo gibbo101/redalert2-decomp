@@ -1159,3 +1159,14 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A non-inline callee near the 175 cap gives a narrow IL window: more charge per site, and two more locals stop it expanding at all.
 - A local helper taking the record and a const& gives a charge without a global operator= changing other rows. Naming values in a helper raises its size, so a later ctor site can be refused (0x565E20).
 - `rowx += count; x = rowx` rotated three long webs in 0x563D80.
+
+## Byte reads, blend loops, wparam (Scout659)
+- A bool at a 4-aligned struct offset read through the struct object gives `mov ecx,[x]; and ecx,0xff`; the extern bool alias gives `xor; mov cl`; offset +1 is a plain byte read.
+- Blend loops: compute `dest = &buffer[out]` inside the loop, write `int in = y*pitch + start_x` before the branch, and `out++; in++` at the bottom with `x` only as the counter. That puts the `lea` after the guard and gives the original induction order (0x68CF90 went 84 to 99.55).
+- `unsigned short code = wparam >> 16; if (code == 0)` gives `shr; jne`, not `test reg,0xffff0000`. `int value = (unsigned short)(wparam >> 16)` plus a second `(unsigned short)(wparam >> 16) == 1` keeps wparam intact.
+- Hypothesis: scratch registers rotate eax, ecx, edx and the rotation persists to the function end. Code-free temps did not move it, so adding a wrapper is not a reliable lever. Declaration order fixes store order but all six orders left frame slots unchanged on 0x6340F0.
+
+## Y-sum parity and small forms (Scout660)
+- Y sum parity ignores k probes. A named pop slot (`CellClass **slot = &stack[count]; cur = *slot;`) plus `visited[..]++` flips it, `= 1` does not; known-zero threading keeps the `++` store a plain `mov 1`.
+- A register plus a write-through home can be two variables (zoneptr/zonerow, like TibSun's x/rowx). A pointer assigned before `1 << n` lands in edx because ecx holds the count. `Rect bounds(0, 0, w, w)` after the other inits delays `xor ebp`. `walk -= Cell(1, 0)` gives `dec word` plus a rewrite of the other coordinate. Writing Cell arithmetic through the real operator- raises the /Ob2 charge at the natural place.
+- Rewriting a low draft to TibSun flow or correcting it against the disassembly pays more than variants (0x564290 +24, 0x569320 +35).

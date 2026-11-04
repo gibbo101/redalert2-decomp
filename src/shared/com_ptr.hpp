@@ -240,6 +240,10 @@ public:
         return result;
     }
 
+#ifdef RA2_BUILDING_LOCOMOTOR_ADDREF_DECL
+    // Held-interface reference increment; original00453EA0, const-this ABI hypothesis.
+    void _AddRef() const;
+#endif
     Interface *Pointer;
 };
 
