@@ -1,3 +1,4 @@
+#define RA2_LIGHT_SOURCE_FLAT_TINT
 // Header-static dynamic initializers of the unit at 0x00536F30 and its
 // list globals (LightSourceClass, LightSourceClass_PendingCellClass); the other drafts of this plan are emitted by this file.
 // A list whose atexit thunk tests and sets a guard bit is a static data

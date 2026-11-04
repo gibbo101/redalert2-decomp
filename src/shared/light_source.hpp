@@ -53,7 +53,14 @@ public:
     virtual void Compute_CRC(WWCRCEngine &crc) const;           // 0x00537B50 slot 13
 
     int Intensity;              // +0x24
+#ifdef RA2_LIGHT_SOURCE_FLAT_TINT
+    // Light.cpp uses the three original tint members directly (constructor 00537240).
+    int RedTint;               // +0x28
+    int GreenTint;             // +0x2c
+    int BlueTint;              // +0x30
+#else
     TintStruct Tint;            // +0x28
+#endif
     int DetailLevel;            // +0x34 (2 for a placed light)
     CoordStruct Location;       // +0x38
     int Visibility;             // +0x44 (the lit radius)

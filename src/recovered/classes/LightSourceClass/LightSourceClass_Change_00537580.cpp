@@ -7,11 +7,11 @@
 
 void LightSourceClass::Change(int intensity, int red, int green, int blue, bool defer)
 {
-    if (Intensity != intensity || Tint.Red != red || Tint.Red != blue) {
+    if (Intensity != intensity || RedTint != red || RedTint != blue) {
         Intensity = intensity;
-        Tint.Green = green;
-        Tint.Red = red;
-        Tint.Blue = blue;
+        GreenTint = green;
+        RedTint = red;
+        BlueTint = blue;
         if (Activated) {
             Unknown_005375D0(defer);
         }

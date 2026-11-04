@@ -15,7 +15,7 @@
 
 LightSourceClass::LightSourceClass() :
     Intensity(0),
-    Tint(0, 0, 0),
+    RedTint(0), GreenTint(0), BlueTint(0),
     Location(unknown_geometry_l),
     Visibility(0),
     Activated(false)
