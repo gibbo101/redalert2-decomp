@@ -40,6 +40,9 @@ SOURCE_REF = re.compile(r'@ref\s+([^\s=]+)=(?:0x)?([0-9a-fA-F]+)')
 GHIDRA_NAME = re.compile(r'(?:FUN|DAT|PTR|SUB|LAB|thunk_FUN|switchD)_([0-9a-fA-F]{8})')
 POINTER_NAME = re.compile(r'(?:^|[^A-Za-z0-9])_?PTR_(?:[A-Za-z0-9_]+_)?([0-9a-fA-F]{8})(?=$|@)')
 STRING_NAME = re.compile(r'(?:^|_)[su]_\w*_([0-9a-f]{8})$')
+# VC6 numbers these initializer/exit functions within each translation unit.
+# Their spelling is not a global identity, even when only one copy is accepted.
+COMPILER_LOCAL_NAME = re.compile(r'_\$E\d+')
 OWNED_NAME = re.compile(r'_(?:data|global|import|vtable|string)_[0-9a-f]+_([0-9a-f]{6,8})')
 
 
@@ -53,7 +56,7 @@ def address_from_name(name):
 
 
 def canonical_references(catalog):
-    """Map symbol name (or mangled prefix) -> address from accepted regions."""
+    """Global names from accepted bodies; compiler-local names need an explicit binding."""
     references = {}
     for region in catalog.get('regions', []):
         references.setdefault(region['symbol'], region['entry'])
@@ -61,7 +64,8 @@ def canonical_references(catalog):
         # the rest of a region's reference map was merely available to it.
         for binding in region.get('relocations', []):
             references.setdefault(binding['symbol'], binding['target'])
-    return references
+    return {name: value for name, value in references.items()
+            if not COMPILER_LOCAL_NAME.fullmatch(name)}
 
 
 def known_references(catalog):
@@ -100,7 +104,8 @@ def known_references(catalog):
                 if table['slots'] and not com:
                     references.setdefault('??_E%s@@' % mangled, int(table['slots'][0], 16))
                     references.setdefault('??_G%s@@' % mangled, int(table['slots'][0], 16))
-    return references
+    return {name: value for name, value in references.items()
+            if not COMPILER_LOCAL_NAME.fullmatch(name)}
 
 
 def lookup(name, references):

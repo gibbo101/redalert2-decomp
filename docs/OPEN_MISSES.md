@@ -1897,7 +1897,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - WOL 0x7469C0: code 0x7469C0-0x748491 (6,866 B), last `ret 0x10` at 0x74848F, tables from 0x748494 and 0x7484DC; table end unmeasured. Not drafted. 0x743720 read only; it calls Login_Wonline and repeats the Close_Wonline_Wait sequence.
 
 ## Scout746 (2026-11-05, closed; 1,857 B: Login_Wonline 0x742FD0; NOTES in build/class-work/Scout746/; Scout747 continues)
-- Join_WOL_Lobby 0x743720 (2,404 B): 91.88, loose 99.25, shape 99.25 (keep/j_9188_q4.cpp, overlay hQ, key w2). One instruction: T reloads `mov ebx,[ResetEvent]` at +0x460 before the second reset loop. Unverified: row 0x73D760 in the req1 form, Add_At @ref to 0x766f90. Request_Lobby_List and Wait_For_Event are budget-carrying helpers with natural bodies; judge them if the row completes.
+- Join_WOL_Lobby 0x743720 (2,404 B) landed by Scout747 r1.
 - 0x75F530, 0x75F9C1, 0x760853, 0x760B9F are one function, not four rows: CChatEventSink::OnChannelJoin, about 5,780 B, between OnChannelCreate and OnChannelLeave, with early `ret 0x10` at 0x75FA82 and 0x75FF8D; last ret still to measure. Earlier split entries are superseded.
 - 0x7469C0 extent: 0x7469C0-0x7485C4, 7,172 B, 12 NOP to 0x7485D0; Scout747 holds it.
 
@@ -1907,5 +1907,15 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - Planning_Pick_Drawn is inline in guarded planning.hpp and row 0x616140 is still a hole, as with Restart_House. The h overlay's MouseClass view needs row 0x61A3C0's local class removed. Whether 0x61A8E0 is Is_Point_Within's COMDAT is untested.
 
 ## Scout748 (2026-11-05, closed; 0 B; drafts and NOTES in build/class-work/Scout748/; Scout749 continues)
-- CChatEventSink::OnChannelJoin 0x75F530: extent to 0x760BC4, 5,780 B, last ret 0x760BC1, 12 NOP to 0x760BD0, no tables; retire 0x75F9C1, 0x760853, 0x760B9F. 94.21, loose 98.77, shape 99.74, 1753/1754 (keep/cj_9421.cpp key c4 overlay hL; keep/cj_2410_9415.cpp key cj overlay hJ is the natural home, population-2410). Left: `add ecx,eax` at three Add sites and `lea eax,[edx+ecx]` in the Insert memmove, which rotates registers to about 0x760507. Lab symbols +8 to +16 fix the Add sites, so the original names about 8 more data locations before them (or 24 fewer); see the location count note. OnUserFlags 0x7647B0 must be re-proved because the overlay changes Insert.
+- CChatEventSink::OnChannelJoin 0x75F530: extent to 0x760BC4, 5,780 B; see Scout749.
 - OnPrivateGameOptions 0x761C50 has no catalog row and no git history under that name: only its prerequisites landed. Unclaimed with no twin: 0x759370 2,687 B, 0x758750 2,935 B, EBolt 0x4B1900 2,159 B.
+
+## Scout747 (2026-11-05, closed; 9,760 B: Wonline_Main_Dialog 0x7469C0, Join_WOL_Lobby 0x743720, Apply_WOL_Settings 0x73C990; NOTES and lab23.py, lab24.py in build/class-work/Scout747/; Scout750 continues)
+- OWNER DECISION: the Apply row's `#include "shared/wol_main.hpp"` and own prototype stay. They are real declarations, added to move the declaration counter past 0x73FEE0's bad window; the alternative is a re-roll of 0x73FEE0. Helper levels Make_Room, Refresh_*_Channels, Update_*_Channels, Request_Channel_Lists, Refresh_Channel_Lists, On_Lobby_Timer, On_Refresh_Lists, Restart_Lobby_Music, Wait_For_Join_Event stay as hypotheses with inline depth as evidence. `case 0x18: return 0;` and `case 0x53e: return 0;` account for a jump table entry and a `je` at +0x100. Unit macros in the first row stay guarded.
+- Join symbol stays ?Unknown_00743720@@YIHPAUHWND__@@_N@Z. Queue-form Request_Chat/Game rows failed after Make_Room, so they stay full-body. Next in the unit: 0x7459A0, 0x749B50.
+
+## Scout749 (2026-11-05, closed; 0 B; drafts and NOTES in build/class-work/Scout749/; Scout751 continues on 0x759370, 0x758750)
+- OWNER DECISION: OnChannelJoin stays parked. A dead arm reaches 100.00 (keep/lab_c6_8_loc24.cpp) but accounts for no visible bytes, so it fails the rule and is not delivered.
+- OnChannelJoin 0x75F530: natural best 94.21, loose 98.77, shape 99.74 (keep/c6_twinshape.cpp, overlay hN; twin TibSun wonline.cpp:3220). Three ties with thresholds: Add sites need about 8 more distinct data keys; the memmove cluster follows function IL size (about 20 more units); `mov ebx`/`mov edi` at 0x11cd cycles with size. So the original carries source that folds away with no bytes. Ruled out: orphan strings, inline-marked definition, Get forms, Add_Sorted, g_UserInfo index loop, swapped Length()+GrowthStep, nested Session accessor. OnUserFlags 0x7647B0 not re-proved.
+- EBolt Draw_Bolt 0x4B1900 (2,159 B): 46.87, shape 82.23, 592/590 (keep/ebolt_e14.cpp, key eb, population-2432); mostly frame, size 0x3FC matches. `BoltFrame stack[8]` of CoordStruct arrays gives the vec-ctor loop; target slot map in NOTES.
+- Lane scratch w/ and x/ (22 MB) left after a refused removal.

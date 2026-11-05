@@ -1704,6 +1704,14 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - At some sites empty sites do nothing but a real extra expansion flips the refusal: spend, not sites.
 
 ## Data symbol count, second confirmation (Scout748)
-- Commutative `add a,b` and `lea [a+b]` operand order flips with the number of distinct data symbols first referenced in the function, period 32, as in Scout729's reload order. New extern stores or loads and distinct string literals move it; locals, inline locals, accessors, function symbols and unreferenced declarations do not. A late `lea` flip in a large function can come from data references earlier in it.
+- Commutative `add a,b` and `lea [a+b]` operand order flips with the number of distinct data keys in the function (Scout748 read period 32; Scout749 found thresholds, not a period, up to +80 in OnChannelJoin, and position in the function does not matter). Stores, reads, address-of and strings count; function symbols and repeated symbols do not. A separate cluster follows function IL size. Dead arms of an inline with a folded condition count and emit no bytes.
 - Stores before an inline memset keep their immediates: `x = 0; name[0] = 0; memset(...)` compiles with `rep stos` ahead of the stores; with the memset first the stores reuse eax/al (89 to 94, the twin's order).
 - A byte-order 3,2,1,0 12-byte copy was a real by-value helper inlined, named local plus return.
+
+## Inline depth limit and cross-jump tails (Scout747)
+- Hard inline depth limit: depth 8 expands, depth 9 refuses, even the trivial placement new. Budget refusal only hits sites before the pending spend, so later sites out of line with earlier ones inline points to depth, not budget. Moving a callee one level deeper makes site 1 inline and later sites call.
+- A plain function must be under the auto-inline size limit: a helper shrinks its IL and the row stays exact.
+- `break` versus `return 0` at case ends decides which block keeps a cross-jump tail, and the outer `break` after an inner switch counts too (92.95 to exact on 7 KB). If a tail merges at the wrong end, grid these first.
+- A lone reload that no flat form gives can be a real row inlined, with `result` from the row.
+- `setne/test` came from TibSun's three-way `if (music && ...) else if (music) ... else if (!music)` with a bool local.
+- `char *`-free point arrays copied as 12-byte structs have no ctor; a named double lands above the arrays at any scope (Scout749 EBolt).
