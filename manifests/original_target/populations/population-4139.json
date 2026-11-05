@@ -4,8 +4,8 @@
     "id": "population-4139",
     "inventory_sha256": "4a00c07ed9625be8e6414dc37458493493200d86bff5524e65eba532a514f741",
     "gaps_sha256": "a4d86fb3834b405220a137b7c234531b7af158f076de37b5fafae948b7fa994e",
-    "historical_population_sha256": "e0dff41ff5437b599c289523499d2d4ee6be21228138370674e63ab865a04067",
-    "historical_acceptance_sha256": "2051e85ace35087399f18f91a660d5e39905c7b84736bae8d2b55312fbd484f5"
+    "historical_population_sha256": "a0fa67d6b3f0ab7e965f0756e890276cce6bead4402c375c45b33be7a1404418",
+    "historical_acceptance_sha256": "5695b5e7e02390256290d97c4cd42dc02de27e8bfb08e9c7ed2f67186331ae3c"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -5945,7 +5945,7 @@
     "?Clear@?$VectorClass@PAVPlanningMemberClass@@@@UAEXXZ": 6401008,
     "??0?$VectorClass@_N@@QAE@IPB_N@Z": 5213472,
     "??_7?$VectorClass@_N@@6B@": 8007524,
-    "?Add@?$QueueClass@VEventClass@@$0IA@@@QAE_NABVEventClass@@@Z": 5104000,
+    "?Add@?$QueueClass@VEventClass@@$0IA@@@QAEHABVEventClass@@@Z": 5104000,
     "?unknown_slot17@IPXGlobalConnClass@@UAEXK@Z": 5392496,
     "__real@8@40039000000000000000": 7979656,
     "__real@8@3ffe9999999999999800": 7979632,

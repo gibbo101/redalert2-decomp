@@ -4,8 +4,8 @@
     "id": "population-3950",
     "inventory_sha256": "0a9b937259fd364926d90a78b4c16d2e134589af8102820f834706042320cd5d",
     "gaps_sha256": "09849b5592cbb4d154752fe487a82028a3ea4c5e491125b1c42a37e7d0561801",
-    "historical_population_sha256": "0c677fdd7b66086c04f164445ab05635d238b31524de4583af12d6f662abfd19",
-    "historical_acceptance_sha256": "91686af19ec44299f954e96cf7dde05fe11a6070e8115e39ec9c08b12e98b0d8"
+    "historical_population_sha256": "027eaac4d97cf024729a4ef63a61cee31adb1ca46ff06931b5710fc6a5986c07",
+    "historical_acceptance_sha256": "8fb68236927f78f295d9677195571fbf2a73242596933d28b06e36113d297577"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -10086,7 +10086,7 @@
     "?Print_CRCs@@YIXPAVEventClass@@@Z": 6464352,
     "?Add@?$DynamicVectorClass@PAVPlanningNodeClass@@@@QAE_NABQAVPlanningNodeClass@@@Z": 6402816,
     "?Clear@?$VectorClass@PAVPlanningMemberClass@@@@UAEXXZ": 6401008,
-    "?Add@?$QueueClass@VEventClass@@$0IA@@@QAE_NABVEventClass@@@Z": 5104000,
+    "?Add@?$QueueClass@VEventClass@@$0IA@@@QAEHABVEventClass@@@Z": 5104000,
     "?unknown_slot67@ParticleClass@@UAEXHH@Z": 6331664,
     "??0BuildingLightClass@@QAE@PAVTechnoClass@@@Z": 4403136,
     "?unknown_slot17@IPXGlobalConnClass@@UAEXK@Z": 5392496,

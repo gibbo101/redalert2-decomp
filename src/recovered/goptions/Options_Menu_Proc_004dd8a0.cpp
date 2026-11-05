@@ -45,7 +45,7 @@
 // @ref ?Latency_Labels@@3PAPBDA=007d9bb4
 // @ref _swprintf=00783764
 // @ref ??_C@_15DEDE@?$AA?$CF?$AAs?$AA?$AA@=007d9c94
-// @ref ?Add@?$QueueClass@VEventClass@@$0IA@@@QAE_NABVEventClass@@@Z=004de180
+// @ref ?Add@?$QueueClass@VEventClass@@$0IA@@@QAEHABVEventClass@@@Z=004de180
 // @ref ?Value@?$CDTimerClass@VSystemTimerClass@@@@QBEJXZ=004de200
 // @ref ??0?$CDTimerClass@VSystemTimerClass@@@@QAE@J@Z=004de1e0
 // @ref ??_C@_0BE@CLPH@D?3?2Ra2?2GOptions?4CPP?$AA@=007d9c9c

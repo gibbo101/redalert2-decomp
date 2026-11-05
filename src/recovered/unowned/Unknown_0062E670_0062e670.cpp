@@ -5,5 +5,6 @@
 bool __stdcall Unknown_0062E670(EventClass event)
 {
     event.Frame = ::Frame;
-    return OutList.Add(event);
+    if (OutList.Add(event)) return true;
+    return false;
 }

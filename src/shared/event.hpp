@@ -131,7 +131,7 @@ public:
         Head = 0;
         Tail = 0;
     }
-    bool Add(T const &q)
+    int Add(T const &q)
     {
         if (Count < size) {
             Array[Tail] = q;

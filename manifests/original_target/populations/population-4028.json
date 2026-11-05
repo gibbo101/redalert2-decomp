@@ -4,8 +4,8 @@
     "id": "population-4028",
     "inventory_sha256": "46bc959c8807dc2089f9b1111ef435cf2880a949ae4c8d0a8a71c2e3dc3a4768",
     "gaps_sha256": "31c56922f8ba131c38734d1d7f320364dbb09344fccdf56896631de54e2735d5",
-    "historical_population_sha256": "6862c55dc668b4dcf676a729762feb26d1374155fb993486918908423225aaf2",
-    "historical_acceptance_sha256": "e51a794415bafa858cec11b465a4c632ee37c177fe014311cad6207aa0f440ae"
+    "historical_population_sha256": "7143e1dbb3bc513119648b6bf242a044ae159075334b61db1a8b9e3308ae1f1e",
+    "historical_acceptance_sha256": "3b8bbcfe08f6a338873a03faefdd2a7e82f842b941f680d7ba0d25c3a2f5d9fc"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -8401,7 +8401,7 @@
     "?Print_CRCs@@YIXPAVEventClass@@@Z": 6464352,
     "?Add@?$DynamicVectorClass@PAVPlanningNodeClass@@@@QAE_NABQAVPlanningNodeClass@@@Z": 6402816,
     "?Clear@?$VectorClass@PAVPlanningMemberClass@@@@UAEXXZ": 6401008,
-    "?Add@?$QueueClass@VEventClass@@$0IA@@@QAE_NABVEventClass@@@Z": 5104000,
+    "?Add@?$QueueClass@VEventClass@@$0IA@@@QAEHABVEventClass@@@Z": 5104000,
     "?unknown_slot67@ParticleClass@@UAEXHH@Z": 6331664,
     "??0BuildingLightClass@@QAE@PAVTechnoClass@@@Z": 4403136,
     "?unknown_slot17@IPXGlobalConnClass@@UAEXK@Z": 5392496,
