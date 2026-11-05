@@ -4,5 +4,7 @@
 
 TechnoClass *PlanningNodeClass::Member_Owner(int index) const
 {
-    return Members[index]->Owner;
+    PlanningMemberClass *member = Members[index];
+    TechnoClass *owner = member->Owner;
+    return owner;
 }

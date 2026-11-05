@@ -4,6 +4,6 @@
 
 CoordStruct PlanningNodeClass::Own_Branch_Coord() const
 {
-    CoordStruct coord = Planning_Event_Coord(Branch.Event);
+    CoordStruct coord = Branch.Coord();
     return coord;
 }

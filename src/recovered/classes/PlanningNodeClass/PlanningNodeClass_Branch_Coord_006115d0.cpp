@@ -4,6 +4,7 @@
 
 CoordStruct PlanningNodeClass::Branch_Coord(int index) const
 {
-    CoordStruct coord = Planning_Event_Coord(Branches[index]->Event);
+    PlanningBranchClass *branch = Branches[index];
+    CoordStruct coord = branch->Coord();
     return coord;
 }
