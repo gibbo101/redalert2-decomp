@@ -66,6 +66,8 @@ public:
     bool unknown_005753f0(Cell const &,Cell const &,int);
 #ifdef RA2_MAP_REGION_SPLIT
     void Increase_Height_0056eea0(char height);  // 0x0056EEA0, TibSun Increase_Height
+    static void __fastcall Create_Zone_Region_00575d20(CellClass *cell_ptr, int zone_kind, int zone);  // 0x00575D20, RET4
+    static void __fastcall Create_Zone_Regions_00576000(int zone_kind, int zone);  // 0x00576000
     DynamicVectorClass< ::Cell > *Collect_Region_Boundary_0056fed0();  // 0x0056FED0, TibSun Build_Border_Cell_List2
 #endif
     void *unknown_00;
