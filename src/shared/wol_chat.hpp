@@ -124,7 +124,11 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot45() = 0;
     virtual HRESULT __stdcall RequestSetLocale(int locale) = 0;
     virtual HRESULT __stdcall RequestUserLocale(User *users) = 0;
+#ifdef RA2_WOL_WAIT_CALLBACK_SIGNATURES
+    virtual HRESULT __stdcall RequestUserTeam(User *users) = 0; // SDK IChat slot48; original73E3BB.
+#else
     virtual void __stdcall unknown_slot48() = 0;
+#endif
     virtual void __stdcall unknown_slot49() = 0;
     virtual HRESULT __stdcall unknown_slot50(int index,int locale) = 0;
     virtual void __stdcall unknown_slot51() = 0;

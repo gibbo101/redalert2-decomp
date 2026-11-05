@@ -50,6 +50,9 @@ struct __declspec(novtable) IDownload : public IUnknown {
     virtual HRESULT __stdcall DownloadFile(char const *server, char const *login, char const *password,
                                            char const *file, char const *local, char const *regkey) = 0;
     virtual HRESULT __stdcall Abort() = 0;
+#ifdef RA2_WOL_WAIT_CALLBACK_SIGNATURES
+    virtual HRESULT __stdcall PumpMessages() = 0; // SDK IDownload slot5; original73E6D9.
+#endif
 };
 
 struct __declspec(novtable) INetUtilEvent : public IUnknown {
