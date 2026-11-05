@@ -1740,3 +1740,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Second-chance join rule (inferred from probes): jump-table edges keep a spilled variable's register mapping; an extra forward jump from a block without the mapping drops it at the join and the use reloads into a fresh register at the head block; a fallthrough predecessor without the mapping gets the reload at its own end.
 - `T *target=attacker; if (attacker==0 && <global read>) target=0; if (target)...` leaves no bytes but keeps `target` a distinct web, so a later `attacker` use reads the home slot. The condition must be a global read: a member read folds early, and a parameter read maps that parameter into a register.
 - The order of compensating reloads rotates with distinct static keys; dead reads at head and tail give the same result, so it is key count, not budget.
+
+## Reference params and direct counts (Scout755)
+- A reference param that folds directly (`In_Bounds(cell->MapCoords)`) reads through the object; a reference local reads through its pointer. VC6 does not CSE X and Y between the two. A `lea` of the field ahead of direct reads with re-reads after means this split (75.63 to exact).
+- `cells.ActiveCount` versus Count(): direct member reads give `[base+count*4-4]` and `ActiveCount--` CSE'd with the index; Count() adds a copy web with `mov eax,edx` / `dec eax`.
+- A repeated loop can be an inlined generator row (4-arg Clear_Region_Cells). `Fetch_CellID()` twice in one expression gives one temp slot per path; a named by-value local does not.
+- `MAX(10, x)` as `10 > x ? 10 : x` gives `jge`; the reversed order gives `jg`.
+- Spend position does not matter up to the first refused site.

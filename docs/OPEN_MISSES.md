@@ -1938,3 +1938,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - OWNER DECISION: if Take_Damage goes exact, `if (attacker==0 && <global read>) target=0;` is acceptable as a flagged dead construct accounting for bytes at 0xF4B to 0xF9B, with the TS shape as evidence. Its operand is a placeholder (TS reads warhead->IsVeinhole, wrong here), and must be replaced if the real one is identified.
 - Take_Damage 0x6CDC40: 93.87, loose 99.49, shape 99.57 (td2_9387.cpp). One instruction left: reload `mov edi,[esp+0x20]` at 0xB2F; the rest of the raw score is the 4-byte shift. Ruled out: folded statements, dead back edges, label orders, twin bodies, a guard after the switch, conditional self-assigns, phantom copies of `result`.
 - Unlimbo 0x43D3A0 97.61 (ul0_9761.cpp, hs0.cpp, sf.cpp; row side effects unproven). Slot 186 0x6CD340 81.96 (s0_8196.cpp). Draw_Pre_Render 0x6C3B30 was already landed by Scout691. Super Place, Health bar not attempted.
+
+## Scout755 (2026-11-05, closed; 833 B: Increase_Height 0x56EEA0, Collect_Region_Boundary 0x56FED0, Create_Zone_Regions 0x576000; drafts in build/class-work/Scout755/keep/, NOTES.md; Scout756 continues)
+- OWNER DECISION: RA2_VECTOR_PUBLIC_COUNT and RA2_COORD_AS_CELL are acceptable under guards with whole-population proof.
+- Hole splits: 0x56EEA0-0x570040 holds 0x56EEA0, Split_Region 0x56EF20 (4,012 B, ends 0x56FECC), 0x56FED0. 0x575D20-0x576170 holds 0x575D20 (726 B), 0x576000.
+- Create_Zone_Region 0x575D20 99.35, 231/232 (one spread store order). Create_Region_From_Cell 0x56E100 (1,678 B) 87.91, shape 95.50, three refusals; a spend of about 300-320 gives the call list, natural source not found. Split_Region 54.07, shape 95.02, 58/59 calls, first pass. Unknown_Cell_Score_0056dff0 is really a thiscall member.
