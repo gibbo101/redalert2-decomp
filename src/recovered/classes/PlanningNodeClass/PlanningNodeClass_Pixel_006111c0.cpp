@@ -5,5 +5,6 @@
 Point2D PlanningNodeClass::Pixel() const
 {
     CoordStruct coord = Coord();
-    return Planning_Coord_Pixel(coord);
+    Point2D pixel = Planning_Coord_Pixel(coord);
+    return pixel;
 }
