@@ -29,30 +29,7 @@ extern unsigned short Wave_Distance_Table_00af9620[300][300];
 extern short Wave_Sine_Table_00af91e4[500];
 extern int Wave_Intensity_Table_00af95d8[13];
 
-// Two real embedded geometry states: 61BE40 receives ECX=input, EDX=scanlines.
-// Names are behavioral hypotheses; no RTTI for these nonvirtual objects.
-struct WavePolygonInput {
-    WavePolygonInput() : Count(0), Points(0) {}
-    WavePolygonInput(NoInitClass const &) : Points(0) {}
-    int Count;
-    Point2D *Points;
-    // Six independently constructed geometry points; their observed contiguous layout is unchanged.
-    Point2D InlinePoint0;
-    Point2D InlinePoint1;
-    Point2D InlinePoint2;
-    Point2D InlinePoint3;
-    Point2D InlinePoint4;
-    Point2D InlinePoint5;
-};
-struct WaveScanlineBuffer {
-    WaveScanlineBuffer() : Count(0), FirstY(0), Spans(0) {}
-    WaveScanlineBuffer(NoInitClass const &) : Spans(0) {}
-    int Count;
-    int FirstY;
-    Point2D *Spans;
-};
-typedef char WavePolygonInput_size[(sizeof(WavePolygonInput) == 0x38) ? 1 : -1];
-typedef char WaveScanlineBuffer_size[(sizeof(WaveScanlineBuffer) == 0x0C) ? 1 : -1];
+#include "shared/wave_geometry.hpp"
 
 class WaveClass : public ObjectClass {
 public:
