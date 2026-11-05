@@ -3798,63 +3798,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
     },
     {
-      "entry": 7756448,
-      "method": "765aa0",
-      "symbol": "??0WonlineStringDialogControl@@QAE@XZ",
-      "symbol_prefix": "??0WonlineStringDialogControl@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 32,
-      "body_sha256": "612c78a4c8cdefa25e585c6038f8ad573df87cb42bc718349070a35a8a932b0c",
-      "padding_bytes": 0,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "612c78a4c8cdefa25e585c6038f8ad573df87cb42bc718349070a35a8a932b0c",
-      "relocations": [
-        {
-          "offset": 4,
-          "kind": 20,
-          "symbol": "??0SimpleDialogControl@OwnerDraw@@QAE@XZ",
-          "target": 6295744,
-          "addend": 0,
-          "resolved": 4293506584
-        },
-        {
-          "offset": 13,
-          "kind": 6,
-          "symbol": "??_7SimpleWonlineDialogControl@@6B@",
-          "target": 8058612,
-          "addend": 0,
-          "resolved": 8058612
-        },
-        {
-          "offset": 18,
-          "kind": 20,
-          "symbol": "??0Wstring@@QAE@XZ",
-          "target": 7788816,
-          "addend": 0,
-          "resolved": 32346
-        },
-        {
-          "offset": 24,
-          "kind": 6,
-          "symbol": "??_7WonlineStringDialogControl@@6B@",
-          "target": 8059188,
-          "addend": 0,
-          "resolved": 8059188
-        }
-      ],
-      "source": "src/recovered/classes/WonlineStringDialogControl/00765aa0.cpp",
-      "source_sha256": "cccb28cd51ed37e98e7e914e990114b14ae4fbaa0639c5c719a028a805930195",
-      "source_order": 6624,
-      "population": "population-02",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function"
-    },
-    {
       "entry": 7799216,
       "method": "7701b0",
       "symbol": "?get@Leaf_7701b0@@QAEIXZ",

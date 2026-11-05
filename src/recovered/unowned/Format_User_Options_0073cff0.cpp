@@ -18,6 +18,9 @@ void __fastcall Format_User_Options_0073cff0(char *text)
         if(country==0) ++country_zero_count;
         else if(country==1) ++country_one_count;
     }
+    int free_sides=0;
+    if(country_one_count<(int)unknown_game_channel_b299c0.maxUsers/2) free_sides=2;
+    if(country_zero_count<(int)unknown_game_channel_b299c0.maxUsers/2) ++free_sides;
     unsigned int check=Unknown_0073cfd0();
     sprintf(text,user_options_format_7fd6c4,Channel_Version_00737af0(),check,seed_005c9400::FUN_005c9400(),Unknown_005c94b0(),!No_Observer_Slot_005c9490(),unknown_scenario_a3d8f0);
 }

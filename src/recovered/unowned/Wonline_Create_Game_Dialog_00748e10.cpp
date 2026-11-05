@@ -1,12 +1,6 @@
 #include "shared/wol_sink.hpp"
 #include "shared/unknown_globals.hpp"
-// RTTI COL0x007C6490 names CreateGameDialogControl; vtable0x007AF94C.
-// Constructor0x007459A0 and this dialog establish four flag bytes after Text.
-class CreateGameDialogControl : public WonlineStringDialogControl {
-public:
-    virtual ~CreateGameDialogControl();
-    bool unknown_10,unknown_11,unknown_12,unknown_13;
-};
+#include "shared/create_game_dialog_control.hpp"
 int __fastcall unknown_dialog_proc_5ffb00(HWND,UINT,WPARAM,LPARAM);
 void __fastcall unknown_dialog_5e5f20(HWND);
 LRESULT __fastcall unknown_get_window_text(HWND,Wstring &);

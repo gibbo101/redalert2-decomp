@@ -67,7 +67,7 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall Request_Server_List(unsigned long sku,unsigned long version,char const *login,char const *password,int timeout) = 0;
     virtual HRESULT __stdcall RequestConnection(Server *server,int timeout,int mangle) = 0;
     virtual HRESULT __stdcall unknown_slot06(int channel_type,int autoping) = 0;
-    virtual void __stdcall unknown_slot07() = 0;
+    virtual HRESULT __stdcall unknown_slot07(Channel *channel) = 0;
     virtual HRESULT __stdcall unknown_slot08(Channel *channel) = 0;
     virtual HRESULT __stdcall unknown_slot09() = 0;
     virtual void __stdcall unknown_slot10() = 0;
