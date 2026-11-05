@@ -1791,3 +1791,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Two distance forms can sit in one function: a by-value second parameter (`lea edi; mov edx,edi`, Z spilled) with out-of-line Length, and a const& difference with inline double-local Length.
 - `CoordStruct scoord = source->Coord` beside a by-value `tcoord` gives a hoisted `lea` plus `add edx,0x88`; a reference local does not.
 - A zero web can hinge on one zero use after a join; removing other zero uses leaves it. A coord tail web can flip on one reference near a threshold, and added references to the competing CSE do not move it.
+
+## Loop weight and wrapper asymmetry (Scout762)
+- Source loop nesting counts even when bytes do not change. `do { e = W(); if (e == K) P(); } while (e == K && !leave);` threads to the same code as a one-level `continue` form, but the extra depth raises W's weight, moving a zero web and a global's register far from the loop (90.64 to 95.75).
+- An import called only through an inline wrapper reloads after a directly called one at a pre-header. A jump landing mid pre-header on a reload points to this asymmetry first; weight, declaration order, first reference, data keys and named locals did not move it.
+- `mov [m],0` versus `xor edx,edx`: a by-value return helper forwards a temp field, an in-place temp keeps the immediate.
+- Register webs need refs that survive to allocation. Threaded or folded tests add none; only a real loop level adds weight.
+- diff_candidate can read 98.75 on an exact row when only switch table `$L` relocations differ: trust check_plans.

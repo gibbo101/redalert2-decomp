@@ -1958,7 +1958,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 
 ## Scout758 (2026-11-05, closed; 2,202 B: Start_Quick_Match 0x759E20; NOTES in build/class-work/Scout758/; Scout760 continues)
 - OWNER DECISION: Request_Chat_Channels() and Match_Message(label, line) stay as hypothesis wrappers around real statements; each is evidenced by a call that is out of line or refused at a visible site.
-- Buddy main loop 0x759370: 90.64, loose 97.88, shape 98.63, all calls match (keep/x2.cpp, X='744610=<Scout754>/keep/leave2.cpp'). Left: pre-header load order, extra edi reload at 0x50D, zero web start. 24 case orders, loop forms, data keys ruled out. When it lands, move the wrapper above it and drop Quick Match's copy.
+- Buddy main loop 0x759370 landed by Scout762 r1.
 - OnChannelJoin 0x75F530: 94.15 on HEAD (hC overlay). Address-taken locals and `if (x) delete x` add no data keys, and the function has no delete; stays parked.
 - 0x47E2C0 is Explosion_Damage, not a Cell row: twin TibSun combat.cpp:269, 4,611 B, `ret 0xc` at 0x47EB26, 0x47F491, 0x47F4C0.
 - The prefix test is `_strnicmp` at 0x7858D0; Scout750's `// @ref _strncmp=007858d0` rebound strncmp for four other rows until fixed.
@@ -1969,3 +1969,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout760 (2026-11-05, closed; 0 B; drafts and NOTES, tools in build/class-work/Scout760/; Scout762 continues)
 - Explosion_Damage 0x47E2C0 (4,611 B; rets 0x47EB26, 0x47F491, 0x47F4C0): 76.37, loose 89.67, shape 97.62 (keep/ed1.cpp, overlay keep/h). Returns 1 nothing hit, 0 hit, 2 blocked. Left: tail coord web from 0xCCB (removing any one coord reference flips to 80.79; lab only), Z=0 store at 0x11C with no zero web, ring cell add order from 0xD14. Landing needs 13 rows moved in with allow_split (vector vtables 0x47FCF0-0x480050) and guarded additions to map_cell, map_view, vector_class_decl, vector3; anim.hpp's old Unknown_0047E2C0 overload needs a rename.
 - Seed scan: nothing over 90 with a twin. Top: 0x78E854 67.04, 0x73E8D0 53.48, 0x519500 51.19, 0x5CCA30 43.87, 0x444660 38.62, 0x421710 32.53, 0x471D10 29.65, 0x673090 29.30. Class inventory leads: BuildingClass, DSurface 8,053, DisplayClass, BulletClass, SidebarClass, BSurface/XSurface 5,826, MapClass 5,519, InfantryClass (x/ci/classes.md).
+
+## Scout762 (2026-11-05, closed; 2,687 B: Buddy list main loop 0x759370; NOTES in build/class-work/Scout762/; Scout763 continues)
+- OWNER DECISION: `bool const &ok = Refresh_Game_List() ? Find(...) : false;` stays under the address-taken ruling. Wrappers Request_Chat_Channels, Reset_Wait_Event, Refresh_Game_List and Disconnected stay as hypotheses grouping real statements. Scout754's leave2 was not byte exact: the row tail is `Close_Wonline_Wait(0x40)`.
+- Explosion_Damage 0x47E2C0: 76.37 clean; keep/ed_lab_2refs.cpp 79.84 lab only. `Map.H(CoordStruct(x, y, 0))` is byte-right at 0xE6-0x127 once the zero web dies. A real extra coord pointer use flips the tail, position-dependent. Ruled out: dead reads, aliases, pointer locals, CSE'd duplicates, folded arms, threaded null tests, helper variants, object count mod 4.
