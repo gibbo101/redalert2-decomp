@@ -2014,3 +2014,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout771 (2026-11-05, closed; 2,415 B: Load_Lobby_Options 0x5CCA30, Allocate_Surfaces 0x519500; NOTES and keep/ in build/class-work/Scout771/; Scout773 continues)
 - OWNER DECISION: `static inline int Memory_Flag(bool system_memory)` stays, flagged: a small conversion helper reproducing `xor edx,edx; test bl,bl; setne dl`, the bl reload and a mid-function ebx save, with a guessed name. The DSurface ctor's third parameter as unsigned char is a hypothesis (char is equally exact); bool always converts.
 - SelectClass::Action 0x6809F0 (3,083 B): 71.53, shape 97.25, 836/836, frame right (keep/ax_f1.cpp, overlay hax/). index*0x30 needs ebx with id spilled. Super Place 0x69D850, Health bar 0x6C3F00 not attempted.
+
+## Scout773 (2026-11-05, closed; 3,083 B: SelectClass::Action 0x6809F0, 71.53 to exact; NOTES and keep/ in build/class-work/Scout773/; Scout774 continues)
+- Psi detector row 0x4386F0 (865 B, new): 82.58, shape 97.35 (keep/dt_p4_8258.cpp, key dt). Loop head scratch rotation at 0x30; `sete/test` at 0x1F4. Flag the hand-spelled inline sqrt if it lands. Super Place 0x69D850 78.46 (keep/place_vd_7846.cpp, overlay h1). Health bar not attempted.
+- Rescan holes of 500 B or more not named elsewhere: 0x741300 976 B WOL startup, 0x73CCB0 797 B, 0x614850 551 B Planning.

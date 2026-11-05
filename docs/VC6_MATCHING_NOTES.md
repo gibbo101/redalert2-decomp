@@ -1865,3 +1865,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - An int from an inline `if`/`return` at an argument position allocates differently from `x != 0` or `x ? 1 : 0`, which fold alike.
 - A byte-typed non-bool parameter takes an int with no conversion; bool never does.
 - diff_candidate shows truncated string names, and `@ref` with a truncated name scores 100 yet is refused at acceptance: read full names from the object's symbol table.
+
+## Hidden accepted rows (Scout773)
+- A parked row can hide an accepted row of the same unit behind hand-expanded code. Evidence: a pointer held in a callee-saved register across a call where the member would normally reload. This gave +16 points at once on a 3 KB row: sweep parked rows for it.
+- `money >= cost` versus `cost <= money` keeps call order and sets `cmp` operand order and `jl`/`jg`.
+- Declaration order of two spilled variables sets their reload order after `rep movs`, slots unchanged.
+- `setcc; test al,al; jne epilogue` with no `mov al,1` means `return hit`, not `return true`. `sete/test` survives only while the bool is live on the false edge.
+- Scout773 sbs.py: a difflib realign on register-normalised rows reads better than the aligned diff when blocks shift.
