@@ -1857,3 +1857,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A named by-value event, `EventClass join(...); f(join);`, reorders big frame slots and gives `lea esi` rather than `mov esi,eax` on the ctor result.
 - Repeated stores that cross-jump to one instruction still exist as blocks at colouring time: an else-if chain and a `||` test give identical bytes but different register ties.
 - diff_candidate can score 100.00 with a wrong binding; only check_plans shows it.
+
+## Colouring-time blocks and return counts (Scout771)
+- A `||` split into repeated arms produces no byte change but adds blocks before colouring, which can flip a tie. Probe with a lab `if (zz1) zz2 = 1;` in the span of one competing web. Scout769's one-reference probes may partly measure this.
+- A third `return` sends an early return far and pins saves in the entry block; with two returns the early return stays inline with its own epilogue and saves sink below it.
+- Mid-function `push ebx`/`pop ebx` is ordinary (244 accepted rows): treat it as an outcome.
+- An int from an inline `if`/`return` at an argument position allocates differently from `x != 0` or `x ? 1 : 0`, which fold alike.
+- A byte-typed non-bool parameter takes an int with no conversion; bool never does.
+- diff_candidate shows truncated string names, and `@ref` with a truncated name scores 100 yet is refused at acceptance: read full names from the object's symbol table.

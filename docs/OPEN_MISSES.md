@@ -2010,3 +2010,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 - OWNER DECISION: file-local Take_Event, Finish_Step and template Max stay as flagged hypotheses grouping real statements; the row needs `@ref ?Delete@?$DynamicVectorClass@PAVTechnoClass@@@@QAE_NH@Z=0061bdc0`.
 - 0x617AF0 97.10 (pu_pv4_9710.cpp): only tail Help(4) expands where target calls 0x616F50; needs a real spend after Member_Event at the same site count. 0x6130B0 77.68 (needs a rename). Team 0x6BDAA0 98.70: slots order 3,6,6, which the sort model forbids, so center's slot carries about 3 refs not surviving to the listing. Wait_Callback 96.51 (w_c1_9651.cpp is measuring only); slot map {i1,first2} {first1,i2} {name1,name2}.
 - Scout771 r1 Load_Lobby_Options 0x5CCA30 landed: `if (kind == 4) kind = 2; else if ...` cross-jumps to one store but the extra blocks flip the colouring tie.
+
+## Scout771 (2026-11-05, closed; 2,415 B: Load_Lobby_Options 0x5CCA30, Allocate_Surfaces 0x519500; NOTES and keep/ in build/class-work/Scout771/; Scout773 continues)
+- OWNER DECISION: `static inline int Memory_Flag(bool system_memory)` stays, flagged: a small conversion helper reproducing `xor edx,edx; test bl,bl; setne dl`, the bl reload and a mid-function ebx save, with a guessed name. The DSurface ctor's third parameter as unsigned char is a hypothesis (char is equally exact); bool always converts.
+- SelectClass::Action 0x6809F0 (3,083 B): 71.53, shape 97.25, 836/836, frame right (keep/ax_f1.cpp, overlay hax/). index*0x30 needs ebx with id spilled. Super Place 0x69D850, Health bar 0x6C3F00 not attempted.

@@ -68,6 +68,9 @@ public:
     void unknown_69ebb0();                                      // 0x0069EBB0
     // Whether the sidebar should flash its tab for it (ready; hypothesis).
     bool Unknown_0069D820();                                    // 0x0069D820
+#ifdef RA2_SELECT_ACTION_UNIT
+    void Unknown_0069D680();                                    // 0x0069D680 (the click while not ready; TS Impatient_Click)
+#endif
     // Grants it to its house (TS's Grant(one_time, announce, on_hold); hypothesis; true when granted).
     bool unknown_69d390(bool local_player); // original0069D390, AL result/RET4; meaning remains a hypothesis
     // Starts the chrono placement animation (Rules->ChronoPlacement) 5 leptons above coord (hypothesis).

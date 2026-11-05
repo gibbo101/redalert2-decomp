@@ -56,12 +56,24 @@ int __fastcall Unknown_004EB550(int type, int id);
 // types 0xF and 0x10, 3 for 1, 2, 3 and 0x28, 1 for 0x1F, 0x20 and 0x39, whether the kind is 5 for 6 and 7, else -1.
 int __fastcall Unknown_006818D0(int type, int id, int arg3);
 
+#ifdef RA2_SELECT_ACTION_UNIT
+class BuildingClass;
+#endif
 class TechnoClass;
 class TechnoTypeClass;
+#ifdef RA2_SELECT_ACTION_UNIT
+class FactoryClass;
+#endif
 // The player's house as the sidebar uses it (a view of HouseClass).
 class UnknownSidebarHouse {
 public:
     bool Unknown_004F4F30(TechnoTypeClass *type);       // 0x004F4F30 (can build the type; hypothesis)
+#ifdef RA2_SELECT_ACTION_UNIT
+    FactoryClass *Unknown_004EB580(int kind, bool naval, int arg3);  // 0x004EB580 the house's factory for a kind
+    void Unknown_004EB620(int kind, bool naval, int arg3);  // 0x004EB620 (SelectClass::Action: production started)
+    bool Unknown_004EB770(int kind, bool naval, int arg3);  // 0x004EB770 (SelectClass::Action)
+    bool Unknown_004E7070(TechnoClass *builder, BuildingClass *building);  // 0x004E7070 (TS Manual_Place)
+#endif
 };
 // A building's type flag at +0x1365 (views of BuildingClass +0x418 Type).
 struct UnknownSidebarBuildingType {
@@ -77,6 +89,21 @@ struct UnknownSidebarBuilding {
 extern void const *unknown_shapes_abcd20[8];
 extern bool unknown_shapes_allocated_abcd40[8];
 
+#ifdef RA2_SELECT_ACTION_UNIT
+// The house's scripting interface at HouseClass +0x24 (IHouse, shared/house.hpp;
+// slot 6 Available_Money), as the screen units reach it.
+struct __declspec(novtable) UnknownSidebarIHouse {
+    virtual long __stdcall unknown_slot0() = 0;
+    virtual long __stdcall unknown_slot1() = 0;
+    virtual long __stdcall unknown_slot2() = 0;
+    virtual long __stdcall unknown_slot3() = 0;
+    virtual long __stdcall unknown_slot4() = 0;
+    virtual long __stdcall unknown_slot5() = 0;
+    virtual long __stdcall Available_Money() = 0;       // slot 6
+};
+// Unselects every object (0x00482BC0; TS Unselect_All; hypothesis).
+void Unselect_All();
+#endif
 class ObjectTypeClass;
 // A buildable's type by kind and index (0x00482C00).
 ObjectTypeClass *__fastcall Unknown_00482C00(int kind, int id);
@@ -123,6 +150,10 @@ class UnknownFactory {
 public:
     void Unknown_004B97C0();                            // 0x004B97C0 (on removal from a strip)
     int Unknown_004B98F0();
+#ifdef RA2_SELECT_ACTION_UNIT
+    int Unknown_004B9940();                             // 0x004B9940 a special item, or -1
+    int Unknown_004B9780();                             // 0x004B9780 the production rate
+#endif
     bool Unknown_004B9420();                            // 0x004B9420
     bool Unknown_004B9430();                            // 0x004B9430 (just completed; hypothesis)
     bool Unknown_004B9900();                            // 0x004B9900 (completed; hypothesis)
@@ -131,6 +162,10 @@ public:
     char unknown_38[0x6C - 0x38];
     bool unknown_6c;                                    // +0x6C (on hold; hypothesis)
     ObjectClass *Get_Object();                          // 0x004B9930 the object being built (a TechnoClass)
+#ifdef RA2_SELECT_ACTION_UNIT
+    // Producing and not on hold (TS FactoryClass::Is_Building; hypothesis).
+    bool Is_Building() const { return unknown_34 != 0 && !unknown_6c; }
+#endif
 };
 // Unknown_006F8A20/Unknown_006F8A00 (building placement): shared/unknown_globals.hpp.
 // The placement cell the sidebar passes with a place event (0x00AB9698).
