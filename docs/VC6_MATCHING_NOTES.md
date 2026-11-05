@@ -1694,3 +1694,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A zero register web reaches across a join only with `if (event != 6) {...} else { break; }` nesting; flat `if (event == 6) break;` drops it.
 - Explicit `continue` right after a final `goto X` folds to `jne top` and pulls X adjacent.
 - ms_message_box.hpp pulls shape_file.hpp's static unknown_empty_rect in population-4122, adding a .CRT$XCU initializer and renumbering `_$E210`.
+
+## Real accessors as budget (Scout745)
+- "Free sites" a row seems to need are usually the unit's real one-line accessors, sitting in seed rows. Spelling them out (Event_At, Stop_Type, Mission/Target, Clear_1c) made rows exact with no lab sites.
+- `int planned = event != 0 ? (char)x : 0` gives `movsx; test eax,eax`; plain casts do not.
+- `if (n == 15) return 2; return -1;` gives the sbb form and threads in an inlining caller; a ternary does not thread.
+- `(object && techno) ? (TechnoClass *)object : 0` reproduces a direct jump past a Kind_Of ladder.
+- shared/wwmouse.hpp adds a static initializer that local scoring does not show; use shared/mouse.hpp.
+- At some sites empty sites do nothing but a real extra expansion flips the refusal: spend, not sites.
