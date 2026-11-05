@@ -1837,3 +1837,16 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Scratch registers rotate with hidden temporaries: one named pointer local before a call cleared a 15-row rotation.
 - A chain ending in `x == N ? a : 0` can be a threaded inline of a zero-caller row with one more arm.
 - 0x73FEE0's bad declaration window is about -15 to +17 around that row.
+
+## Named results and template direction (Scout768)
+- Naming a call result before the next call flipped a callee-saved tie on two strength-reduced cursors (85 to exact). An extra plain call or a live read also flips it; dead reads and a conditional call do not.
+- Calling one level down protects a head site from later spends; an alias helper for that call is not the same.
+- Template comparison direction is per site: `a > b ? a : b` versus `a < b ? b : a` chooses `setle`/`setl` and `jg`/`jge` independently; argument order can fix a site without a second template.
+- Slot grouping depends on the position of a variable's last ref: declaration order does not move it, but moving `++i` before a dtor does.
+
+## One-reference colour edges (Scout769)
+- A swap of two callee-saved colours can sit on a one-reference edge. Probe by replacing one reference with a global, site by site, or adding one read: this separated the fault from form changes in about 20 compiles.
+- Reference sensitivity is live-range based: removing a variable's last use flips colours where removing earlier uses does not. Too few refs spills the variable to memory.
+- Named copies after a threaded chain are coalesced; a copy between the chain and its test stops threading.
+- Inlined rows can hide behind hand-expanded tails: check the unit for rows with the same statements.
+- A wrong form can read high only because branch targets realigned: check loose and the row diffs.
