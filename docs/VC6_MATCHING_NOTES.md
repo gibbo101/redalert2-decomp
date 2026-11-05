@@ -1702,3 +1702,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `(object && techno) ? (TechnoClass *)object : 0` reproduces a direct jump past a Kind_Of ladder.
 - shared/wwmouse.hpp adds a static initializer that local scoring does not show; use shared/mouse.hpp.
 - At some sites empty sites do nothing but a real extra expansion flips the refusal: spend, not sites.
+
+## Data symbol count, second confirmation (Scout748)
+- Commutative `add a,b` and `lea [a+b]` operand order flips with the number of distinct data symbols first referenced in the function, period 32, as in Scout729's reload order. New extern stores or loads and distinct string literals move it; locals, inline locals, accessors, function symbols and unreferenced declarations do not. A late `lea` flip in a large function can come from data references earlier in it.
+- Stores before an inline memset keep their immediates: `x = 0; name[0] = 0; memset(...)` compiles with `rep stos` ahead of the stores; with the memset first the stores reuse eax/al (89 to 94, the twin's order).
+- A byte-order 3,2,1,0 12-byte copy was a real by-value helper inlined, named local plus return.

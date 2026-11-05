@@ -1,3 +1,4 @@
+#define RA2_SHAPE_RECORD_RECT
 // Header-static dynamic initializers of the unit at 0x00454CF0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x00454CF0-0x00454ED6); the other

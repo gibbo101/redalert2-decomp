@@ -13,6 +13,9 @@
 
 // One frame header of a shape file (24 bytes).
 struct ShapeFileFrameStruct {
+#ifdef RA2_SHAPE_RECORD_RECT
+    Rect Get_Rect() const { return Rect(X,Y,Width,Height); }
+#endif
 #ifdef RA2_DRAW_SHAPE_OPERATIONS
     // Draw_Shape0049EEA0 reads Flags' low byte, then promotes for the shift.
     bool Is_RLE_Compressed() const { return (Flags & 2) != 0; }
@@ -102,7 +105,12 @@ struct ShapeFileStruct {
     {
         ShapeFileFrameStruct const *header = Get_Frame(frame);
         if (header != 0) {
+#ifdef RA2_SHAPE_RECORD_RECT
+            Rect rect=header->Get_Rect();
+            return rect;
+#else
             return Rect(header->X, header->Y, header->Width, header->Height);
+#endif
         }
         return SHAPE_FILE_EMPTY_RECT;
     }
