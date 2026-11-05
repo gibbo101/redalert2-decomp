@@ -1520,3 +1520,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 ## Pending sites and op- (Scout719)
 - A nested argument does not divide the budget: in `f(a - b)` the op- gets all of it. One pending inline site after op- in the same body sends it out of line; wrapper depth with single-site bodies does nothing.
 - Temps inside an inline wrapper always go to shared locals. Case layout follows source order, which limits the earlier by-value note.
+
+## Unit rows as inline sites (Scout720)
+- Unit rows can hide as inline sites: 0x5E7230 and 0x5E7620 are tests expanded inside 0x5E7EB0, and in Get form they reproduce its mixed lookups.
+- `T *const &found = record; if (found)` stops known-zero threading past a record test. A root-level `unsigned int key` holds its slot, so later keys take a new one.
+- A missing first-lookup call can be pending sites: about 38 empty sites without a helper level, 5 to 8 with one. Row wordiness moves the charge at its inline sites.

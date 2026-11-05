@@ -1778,3 +1778,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout719 (2026-11-05, closed; 0 B; drafts build/class-work/Scout719/w/keep/; Super Place PARKED after two lanes)
 - Super Place 0x69D850 78.46. Comip levels did not help (77.09). Two 12-byte temps must stay unshared at depth 1 yet out of line, which budget does not explain; `Chrono_Place_Anim` looks suspect.
 - Infantry Tunnel_AI 0x5025C0 60.32 (tunnel_ai_t4_6032.cpp; twin infantry.cpp:1255; Move_Coord must leave row 0x504BC0; Tube_* helpers need a ruling). Tunnel Stop_Moving 0x6EFDE0 85.71, shape 95.80, frame only.
+
+## Scout720 (2026-11-05, closed; 3,749 B: EnumChild callback 0x5E4780, Draw_Dialog_Back 0x5FEE70; drafts build/class-work/Scout720/w/keep/; Scout722 continues)
+- OWNER DECISION: `Kind_Of`, `Is_Option_Kind`, `Is_Kind_103`, `Is_Kind_108`, `Is_Rail_ID`, `Is_Owner_Button`, `Is_Free_Record`, `Lookup` and the `found` reference stay as landed. Reconcile the 0x5E0DA0 binding later: Is_Listed_Kind_5e0da0 vs the seed symbol.
+- 0x5E7EB0 89.55, shape 100 (frame 8 vs 0xC). 0x5E8720 53.29. 0x5FEB60 55.56. 0x5E8130 31.24 at best (corrected imports: GetTickCount 0x79A0CC, SetTimer 0x79A4D4). 0x5E0DA0 is `bool __fastcall f(int kind)`; defined in the unit it inlines into 0x5E9410, which calls it.
