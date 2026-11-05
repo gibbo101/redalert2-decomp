@@ -1774,3 +1774,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout717 (2026-11-05, closed; 4,274 B: InitializeCtrl 0x5ED180, Add 0x6014E0, Remove 0x601C50, 0x5E1640; drafts build/class-work/Scout717/w/keep/; Scout720 continues)
 - UnknownControlIndex::Shrink duplicates WolDictionary::Shrink_Table over the same object, bound by @ref: reconcile later, with the 0x6027E0 forwarding specialization. Pending rename: 0x5ED180 to InitializeCtrl. `Is_Listed_Kind_5e8590` is a hypothesis.
 - Draw_Dialog_Back 0x5FEE70 84.63 (fee70_8463.cpp, overlay keep/h5; `Find_Record` is flagged). 0x5E8130 about 41 (e8130_m9.cpp). 0x5FE9B0 22.54. Not reached: 0x5FEB60, 0x5EB490, 0x5EBA80, 0x5E7EB0. Predicate 0x5E0DA0 looks like the same takeover for the Control_* rows.
+
+## Scout719 (2026-11-05, closed; 0 B; drafts build/class-work/Scout719/w/keep/; Super Place PARKED after two lanes)
+- Super Place 0x69D850 78.46. Comip levels did not help (77.09). Two 12-byte temps must stay unshared at depth 1 yet out of line, which budget does not explain; `Chrono_Place_Anim` looks suspect.
+- Infantry Tunnel_AI 0x5025C0 60.32 (tunnel_ai_t4_6032.cpp; twin infantry.cpp:1255; Move_Coord must leave row 0x504BC0; Tube_* helpers need a ruling). Tunnel Stop_Moving 0x6EFDE0 85.71, shape 95.80, frame only.

@@ -1516,3 +1516,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A row spelling out a long inlined list may hide a real predicate seed in the same unit: calling it shrinks callers' IL below the auto-inline cap. 0x5ED180's missing budget was a real call to the unit's mask builder.
 - A new row that other rows inline needs body_bytes in the plan, or the composite pass splits and those rows are missed.
 - A charged helper level over `if (Count) Get(...)` keeps a first lookup out of line; a by-value key fixes key stores.
+
+## Pending sites and op- (Scout719)
+- A nested argument does not divide the budget: in `f(a - b)` the op- gets all of it. One pending inline site after op- in the same body sends it out of line; wrapper depth with single-site bodies does nothing.
+- Temps inside an inline wrapper always go to shared locals. Case layout follows source order, which limits the earlier by-value note.
