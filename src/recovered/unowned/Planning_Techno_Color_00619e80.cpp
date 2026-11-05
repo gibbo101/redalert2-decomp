@@ -9,16 +9,13 @@
 
 int __fastcall Planning_Techno_Color(TechnoClass *techno)
 {
-    int result = Build_Hicolor_Pixel(unknown_rgb_ab6841.Red, unknown_rgb_ab6841.Green, unknown_rgb_ab6841.Blue);
-    if (techno) {
-        int lighter = Build_Hicolor_Pixel(unknown_rgb_ab6849.Red, unknown_rgb_ab6849.Green, unknown_rgb_ab6849.Blue);
-        if (unknown_node_a766b0) {
-            if (unknown_node_a766b0->Has_Member(techno)) {
-                result = lighter;
-            }
-        } else if (techno->unknown_77) {
-            result = lighter;
-        }
+    int plain = Planning_Pixel(&unknown_rgb_ab6841);
+    if (!techno) return plain;
+    int lighter = Planning_Pixel(&unknown_rgb_ab6849);
+    if (unknown_node_a766b0) {
+        if (unknown_node_a766b0->Member_Index(techno) == -1) return plain;
+        return lighter;
     }
-    return result;
+    if (!techno->unknown_77) return plain;
+    return lighter;
 }

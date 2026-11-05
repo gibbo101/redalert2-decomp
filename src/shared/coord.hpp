@@ -218,6 +218,9 @@ struct UnknownCoord434820 : CoordStruct {
     UnknownCoord434820() {}
 #ifdef RA2_TACTICAL_SHADOW_COORD_CTOR_DECL
     UnknownCoord434820(int x, int y, int z);
+#elif defined(RA2_COORD_EQUAL_MEMBER)
+    // Planning: three member stores, charged, so it stays out of line three levels down.
+    UnknownCoord434820(int x, int y, int z) { X = x; Y = y; Z = z; }
 #else
     UnknownCoord434820(int x, int y, int z) : CoordStruct(x, y, z) {}
 #endif

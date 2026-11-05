@@ -16,11 +16,11 @@ inline int Point2D::Length() const
 
 void __fastcall Planning_Draw_Midpoint(Point2D start, Point2D end, int color)
 {
-    if ((start - end).Length() >= 37) {
-        int x = (start.X + end.X) / 2 - 10;
-        int y = (start.Y + end.Y) / 2 - 10;
-        ::Rect view = Unknown_006F1F30();
-        ::Rect square(x, y, 21, 21);
-        unknown_surface_839964->Draw_Rect(view, square, color);
-    }
+    int length = (start - end).Length();
+    if (length < 37) return;
+    int x = (start.X + end.X) / 2 - 10;
+    int y = (start.Y + end.Y) / 2 - 10;
+    ::Rect view = Unknown_006F1F30();
+    ::Rect square(x, y, 21, 21);
+    unknown_surface_839964->Draw_Rect(view, square, color);
 }

@@ -6,7 +6,9 @@
 
 void __fastcall Planning_Draw_Dot(Point2D center, int color)
 {
-    ::Rect view = Unknown_006F1F30();
-    ::Rect square = Planning_Centered_Rect(center, 6);
+    ::Rect view;
+    view = Unknown_006F1F30();
+    ::Rect square;
+    square = Planning_Centered_Rect(center, 6);
     unknown_surface_839964->Draw_Rect(view, square, color);
 }
