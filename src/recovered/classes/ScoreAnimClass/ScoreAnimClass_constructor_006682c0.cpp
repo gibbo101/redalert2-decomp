@@ -7,6 +7,7 @@
 ScoreAnimClass::ScoreAnimClass(int x, int y, void const *data) :
     XPos(x),
     YPos(y),
+    Timer(0),
     DataPtr(data)
 {
 }

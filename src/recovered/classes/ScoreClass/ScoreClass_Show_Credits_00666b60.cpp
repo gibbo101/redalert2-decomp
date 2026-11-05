@@ -12,7 +12,7 @@ void ScoreClass::Show_Credits()
     int x = 590 - strlen(buffer) * 12;
     ScorePrintClass *anim = new ScorePrintClass(buffer, XOffset + x, YOffset + 214, Font, false);
     Anims.Add(anim);
-    while (Anims.ID(anim) != -1) {
+    while (!Is_Anim_Done(anim)) {
         ScoreDelay(1);
     }
 }

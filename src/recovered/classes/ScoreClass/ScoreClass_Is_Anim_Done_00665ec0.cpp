@@ -3,8 +3,6 @@
 #include "shared/score.hpp"
 bool ScoreClass::Is_Anim_Done(ScoreAnimClass *anim)
 {
-    if (Anims.ID(anim) == -1) {
-        return true;
-    }
-    return false;
+    bool done = Anims.ID(anim) == -1 ? true : false;
+    return done;
 }

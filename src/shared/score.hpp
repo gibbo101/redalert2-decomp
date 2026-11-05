@@ -34,6 +34,7 @@ public:
     bool Is_Anim_Done(ScoreAnimClass *anim);                            // 0x00665EC0 (no longer listed)
     Rect Count_Up_Print(Surface *surface, unsigned short const *format, int value, int max, int x, int y);    // 0x00666DD0
     void ScoreDelay(int ticks);                                         // 0x00667420
+    void Wait_For_Print(ScoreAnimClass *anim) { while (!Is_Anim_Done(anim)) { ScoreDelay(1); } } // SCORE.CPP (hypothesis: Wait_For_Print)
     void Update_Anims();                                                // 0x00667620
     void Blit_Score();                                                  // 0x006676C0
     void Cycle_Wait_Click(bool cycle);                                  // 0x00665EE0
