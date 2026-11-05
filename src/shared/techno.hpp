@@ -777,6 +777,8 @@ public:
     virtual int Size_Of() const;                                      // slot 12 0x00453BF0
     virtual void unknown_slot216(int arg1);                           // slot 216 0x00449170
     int unknown_4532f0();               // 0x004532F0
+    void unknown_44c920(int index, bool damaged, bool garrisoned, int arg4); // 0x0044C920 (as shared/building_class.hpp)
+    void unknown_44cfd0(int index);     // 0x0044CFD0 (as shared/building_class.hpp)
     bool unknown_44d880();              // 0x0044D880 (as shared/building_class.hpp)
     bool Cell_Is_Impassable_Row_00453af0(CellClass const *cell);    // 0x00453AF0 (as shared/building_class.hpp)
     bool unknown_44d900(BuildingTypeClass const *upgrade, HouseClass *house);   // 0x0044D900 (as shared/building_class.hpp: the upgrade may power up this building)
@@ -788,7 +790,9 @@ public:
     int unknown_449dd0();               // 0x00449DD0 (the power the building drains; as shared/building_class.hpp)
     char unknown_41c[0x434 - 0x41C];
     int unknown_434;                    // +0x434 (TechnoClass slot 55; the full class names it in shared/building.hpp)
-    char unknown_438[0x4C0 - 0x438];
+    char unknown_438[0x454 - 0x438];
+    AbstractClass *unknown_454[18];     // +0x454 (as shared/building_class.hpp)
+    char unknown_49c[0x4C0 - 0x49C];
     TechnoTypeClass *unknown_4c0[3];    // +0x4C0 the upgrades (as shared/building_class.hpp; BaseClass::Get_Building)
     char unknown_4cc[0x4EC - 0x4CC];
     int unknown_4ec;                    // +0x4EC (a laser fence's state; FootClass slot 93: below 8 it hurts)
