@@ -1758,3 +1758,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - OWNER DECISION: `current_dir`, `delay`, the early `attempt`, `CoordStruct &o`, and the duplicated `return Control()->Normal_Delay()...` stay as landed.
 - Plan_Route 0x707F60 (6,185+7 B) 90.43 with 6 dead phase probes (tk_6.cpp, not landable). Draw_Voxel 0x6FF690 has no local draft.
 - Host note: Wine wedged and the Mac hung on 2026-11-05 about 00:35Z; a reboot cleared it. accept.sh had been choosing local Wine for any plan containing the separate_units key, even when false: fixed.
+
+## Scout716 (2026-11-05, closed; 1,244 B: Subclass_Dialog 0x5ECC90, Set_Paint_Disabled 0x5ECF40; drafts build/class-work/Scout716/w/keep/; Scout717 continues)
+- OWNER DECISION: RA2_WOL_DICTIONARY_WLIB_STATEMENTS, `Set_Wide_Text_600510` and removing Get_Minimum_Size stay. campaign_score.hpp declares 0x5ECF40 void, the real return is BOOL: fix when next touched.
+- InitializeCtrl 0x5ED180 (2,462+2 B) 93.66 clean, shape 100 with probes (ed180_t1_probe100.cpp, overlay keep/h2/, OwnerDraw_unknown_5de880_true_order.cpp; about 8 dead locals' worth of budget before the third Add). 0x5E9410 99.79 spent. RadSite 0x637A80 97.25, 0x637DC0 96.90 (one slot tie). 0x6014E0 52 (needs inline operator=).

@@ -1496,3 +1496,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A repeated return in the one arm that would fall into the tail moves the whole case past the ret, and the copies cross-jump.
 - `(Cell)` casts cost frame slots. Declaring a loop counter before the value it is added to swaps which register the `add` writes.
 - `bool c12 = list; if (c12)` sets arm layout for long compare lists. `x != old_x || y != old_y` after up-front copies threads away compares on unchanged fields. One if/else-if chain with one trailing call tail-duplicates it into each arm; a per-arm call merges with a `jmp`.
+
+## Statement shapes and budget (Scout716)
+- An inline's statement shape sets its IL size and so the /Ob2 budget of its callers; put a per-population macro around it when other units need the old shape.
+- `if (p) delete p` where `delete p` was meant changes the tail register and the IL. `(style & (unsigned char)7) == (unsigned char)7` gives `and ecx; cmp cl`. `RGB()` folds before IL and adds no budget.
+- Slot and reload ties can depend on whether a double local is an FP-register candidate.
