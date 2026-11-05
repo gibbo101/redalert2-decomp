@@ -19,13 +19,7 @@ void __fastcall VeinholeMonsterClass::unknown_func_711280(bool rebuild)
     int cells = unknown_cells_428ac0();
     int index;
     if (rebuild) {
-        for (index = Array.Count() - 1; index >= 0; index--) {
-            Array[index]->unknown_func_711c90();
-        }
-        if (unknown_veinhole_buffer_ad07a0 != 0) {
-            delete [] unknown_veinhole_buffer_ad07a0;
-            unknown_veinhole_buffer_ad07a0 = 0;
-        }
+        Deinit_Vein_Growth_System();
         for (index = Array.Count() - 1; index >= 0; index--) {
             Array[index]->unknown_a0 = new UnknownVeinNode[Rules_Vein_Node_Count()];
             Array[index]->unknown_9c = new UnknownVeinHeap(Rules_Vein_Node_Count());

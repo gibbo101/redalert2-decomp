@@ -56,6 +56,10 @@ class VeinholeMonsterClass : public ObjectClass {
 public:
     VeinholeMonsterClass(::Cell const *cell);                       // 0x0070F9B0 (a monster at the cell when one may spawn there)
     VeinholeMonsterClass(NoInitClass const &noinit);                // 0x0070F820 (builds the heap and buffers; Load rebuilds objects with it)
+#ifdef RA2_VEIN_GROWTH_LIFECYCLE
+    static void __cdecl Clear_Global_Data();          // 00711C70
+    static void __cdecl Deinit_Vein_Growth_System();  // 007114F0
+#endif
     virtual ~VeinholeMonsterClass();                                // 0x0070FDF0
 
     static VeinholeMonsterClass *__fastcall Find_At(Cell const &cell);   // 0x00710160 (name hypothesis)
