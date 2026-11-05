@@ -1552,3 +1552,15 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `return Anims.ID(anim) == -1 ? true : false;` keeps Is_Anim_Done and Show_Credits exact where the plain comparison does not.
 - A shared-header overlay can change a fragile row's inlining: guard new declarations under a macro defined only by the new source (RA2_STATS_UNIT) and run fragile_probe.
 - Real functions hide behind short inventory rows; check accepted-coverage gaps (Scout726 gaps.py) and carry body_bytes plus bound_evidence.
+
+## Charged forms of exact rows (Scout728)
+- A free callee under the 40 IL limit becomes charged with one extra statement: `bool done = ...; return done;` gives identical row bytes but makes the inlined caller call it out of line. A call site missing from a caller of an already-exact row means looking for a wordier form of that row.
+- Pending-site budget shows up as a region, not a count: Presentation needed a<=3 and a+b>=5 (a sites at the end, b between two named sites). One free wrapper per string fetch met it, and only `Fetch_Text(label, file, line)` kept the register ties; `(label, line)` gave 93.99.
+- A block-scoped redeclaration of a local in the last else moved two frame slots. A `char *` local picked the original induction variable. `int id2 = Players[i]->ID` fixed a load order and about 50 diff rows.
+- Build_Hicolor_Pixel with constant args: the original evaluates shifts r|b|g, not header order.
+- Original bugs to keep: the fame test reads hallfame[i].score with i stale at 10.
+
+## Strength reduction and reused Rects (Scout727)
+- An uncollapsed `row - row_base` can be `for (int index = first; ...)` with `(index - first) * height` written twice: VC6 distributes and strength-reduces, one imul feeds two slots, no CSE of the subs. No row variable exists.
+- A Rect that looks new per row can be the frame Rect reused from case scope: `outer = dest_rect; outer.Width += w;` then `outer.X/.Y` in the loop. A real escape keeps X and Y in memory and gives a double Width store and a shared slot.
+- `int length = wcslen(text); text_28 = new((length + 1) * 2);` is the Set_Wide_Text form that holds in all its users.
