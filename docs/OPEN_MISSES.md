@@ -1809,7 +1809,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout728 (2026-11-05, closed; 7,782 B: ScoreClass::Presentation 0x663FE0; drafts build/class-work/Scout728/w/keep/; Scout729 continues)
 - OWNER DECISION: Wait_For_Print as a plain inline ScoreClass member (hypothesis; TibSun has __forceinline), file-local ScoreSoundClass ctor and dtor, Open_Named, Fetch_Text and macros PRINT, WAIT, LOAD, WIPE, FETCH stay as landed. Rows 0x668280 and 0x6682B0 stay in their population.
-- Wait_For_Players 0x624C10 (5,519 B): 88.74, loose 99.65, shape 99.79 (w/keep/wfp/wfp_8874.cpp, overlay hq/shared/queue.hpp, 0x62EA00 as COMDAT). One fault: the outer loop head. The original has one head block reloading ebp and edi that every back edge enters, `inc [loop_count]` at the tail; ours reloads on the preheader and a tail edge, +28 B. for(;;), do/while(true), while(1), goto, loop_count in the for header and a scoped timestamp loop change nothing. Not yet through check_plans or fragile_probe (Print_CRCs is in this population).
+- Wait_For_Players 0x624C10 (5,519 B) landed by Scout729 r1.
 
 ## Scout727 (2026-11-05, closed; 0 B; drafts build/class-work/Scout727/w/keep/; Scout730 continues)
 - OWNER DECISION: RA2_COMBO_DROP_UNIT is acceptable in row 0x5DE660 alongside the RA2_OWNERDRAW_* defines. All new header declarations sit under it because any added declaration moved Print_CRCs.
@@ -1818,3 +1818,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout730 (2026-11-05, closed; 7,636 B: ComboDrop 0x5EAD20, 86.77 to exact in 55 minutes; tools build/class-work/Scout730/fm.py, em.py, rz.py)
 - OWNER DECISION: function-scope `Rect fill;`, non-escaped `Rect row` with block-local `Rect outer` in the scrollbar arm, `if (master ? master->alternate_cd : false)` in the first fill arm only, `case 0xf` last in the source, text_rect order top, left, right, bottom, and invented names Get_Item_Text, UnknownScrollInfo, UnknownListItem stay as landed. The inline budget here is tight: two extra dead locals moved a Bucket_Index site.
 - Default_Dialog_Proc 0x5FFB00 scores 62.23 on top of r1 rows (ff.sh; below its recorded 66.88; inline-budget row). 0x5E5150 not reached.
+
+## Scout729 (2026-11-05, closed; 5,568 B: Wait_For_Players 0x624C10, Delete 0x62EA00; Scout732 continues)
+- OWNER DECISION: Wait_For_Players keeps its mixed names on the exit path (unknown_game_mode_a3d298 for Session.Type, unknown_session_a3d298.unknown_2ec[0x340] and [0x341]) and one-name enum MAX_EVENTS. No dead code. A rename that merges those names breaks the row; the natural cause is unknown, so any later real-type sweep must find an equivalent location count. Print_CRCs tolerates one more declaration, not two.
+- Fly Movement_AI 0x4BCD50: no draft; field map, RA2 differences and resume steps in build/class-work/Scout729/NOTES.md. Refrozen duplicate at build/class-work/Scout729/x/r1_refreeze_not_landed.
+- Reference table: 19 population files map __imp__PostMessageA@16 to 0x79A4A0, SendMessageA's slot; 281 others have the correct 0x79A470. Wait_For_Players overrides it with a local @ref. Deferred: correct the 19 rows and the source of the value, under a full build.

@@ -216,7 +216,11 @@ inline bool operator!=(CoordStruct const &left, CoordStruct const &right)
 // 0x0041B630 (Study72). WaypointClass (shared/waypoint_path.hpp) holds one.
 struct UnknownCoord434820 : CoordStruct {
     UnknownCoord434820() {}
+#ifdef RA2_TACTICAL_SHADOW_COORD_CTOR_DECL
+    UnknownCoord434820(int x, int y, int z);
+#else
     UnknownCoord434820(int x, int y, int z) : CoordStruct(x, y, z) {}
+#endif
     UnknownCoord434820(CoordStruct const &coord) { X=coord.X; Y=coord.Y; Z=coord.Z; }
 #if defined(RA2_COORD_FROM_CELL) || defined(RA2_COORD_FROM_CELL_INLINE)
     UnknownCoord434820(Cell const &cell, int z = 0);

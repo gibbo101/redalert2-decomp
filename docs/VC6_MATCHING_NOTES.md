@@ -1571,3 +1571,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A zero constant web needs a use inside its range, not one that survives to final code. `master ? master->alternate_cd : false` in one arm threads a literal 0 and flips X/Y from ebp to zero. Dead `= 0` initialisers and uses after the arm's join do not count.
 - A bare `return 0` cross-jumps to the epilogue of the last `return 0` written in the source, whatever the layout order, and case blocks stay in place when moved in the source. The block carrying the shared epilogue schedules separately. A single-site probe sweep (rz.py) found this where diff scores stalled at 99.91.
 - `Size = Size >> 1` versus `old_size >> 1` swaps which copy gets the load.
+
+## Reload order follows a location count (Scout729)
+- Spill reloads at a join have an order. When all predecessors end in the same reload it appears to sink into the head block and the remaining reload cross-jumps, giving one head block and a lone `inc [mem]` at the tail (inferred from output).
+- The flip follows a per-function count mod 32 of static memory locations named, read or written, dead reads included. Alias names for one address count separately: the key is symbol plus offset. Locals, copies, calls, new externs, folded constants, parameter reads and frame size do not count. Distinct immediates and strings move it irregularly. The commutative `|` order of Build_Hicolor_Pixel moved with the same probes.
+- So a stubborn head block or `|` order can be a location count fault, not a loop-form fault: for(;;), while(1), do/while and goto were all flat.
