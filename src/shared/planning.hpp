@@ -504,10 +504,27 @@ inline void __fastcall Planning_Set_a766f8(PlanningNodeClass *node) { unknown_no
 inline PlanningNodeClass *Planning_Get_a766f8() { return unknown_node_a766f8; }
 inline void __fastcall Planning_Set_a766b0(PlanningNodeClass *node) { unknown_node_a766b0 = node; }
 inline void Planning_Clear_a766b0() { unknown_node_a766b0 = 0; }
+// Where a node stands in the selected technos' paths (0x00617A10).
+int __fastcall Planning_Selection_Node_State(PlanningNodeClass *node);
 // Plans an order for a techno (0x00614EC0).
 bool __fastcall Planning_Add_Order(TechnoClass *techno, EventClass *event);
 // Carries out a planning event (0x00614BA0).
 void __fastcall Planning_Execute(EventClass *event);
+
+// The drawn node whose grown marker contains a screen point (0x00616140; only this
+// inline copy is source yet: the out-of-line row's budget is open).
+inline PlanningNodeClass *__stdcall Planning_Pick_Drawn(int x, int y)
+{
+    int count = PlanningNodeClass::unknown_list_00a766d8.Count();
+    for (int i = 0; i < count; i++) {
+        PlanningNodeClass *node = PlanningNodeClass::unknown_list_00a766d8[i];
+        Rect rect = node->Outer_Rect();
+        if (rect.Is_Point_Within(Point2D(x, y))) {
+            return node;
+        }
+    }
+    return 0;
+}
 
 // The index of a node in a token's path (expanded inline; name hypothesis).
 inline int Token_Node_Index(PlanningTokenClass *token, PlanningNodeClass *node)
