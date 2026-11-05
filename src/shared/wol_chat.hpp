@@ -80,7 +80,11 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot17() = 0;
     virtual HRESULT __stdcall RequestGameStart(User *users) = 0; // SDK IChat slot18; original73D39F
     virtual void __stdcall unknown_slot19() = 0;
+#ifdef RA2_WOL_CHAT_STARTUP_SIGNATURES
+    virtual HRESULT __stdcall GetVersion(unsigned long *version) = 0; // SDK slot20, original74156A.
+#else
     virtual void __stdcall unknown_slot20() = 0;
+#endif
     virtual HRESULT __stdcall unknown_slot21(User *user) = 0;
     virtual void __stdcall unknown_slot22() = 0;
     virtual HRESULT __stdcall Game_Icon(long id, long format, void **bitmap, void **palette, int *width, int *height) = 0;
@@ -109,7 +113,11 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual void __stdcall unknown_slot38() = 0;
     virtual HRESULT __stdcall unknown_slot39(char const *text) = 0;
     virtual void __stdcall unknown_slot40() = 0;
+#ifdef RA2_WOL_CHAT_STARTUP_SIGNATURES
+    virtual HRESULT __stdcall SetAttributeValue(char const *attribute,char const *value) = 0; // SDK slot41, original74159D.
+#else
     virtual void __stdcall unknown_slot41() = 0;
+#endif
     virtual HRESULT __stdcall unknown_slot42(char const *text) = 0;
     virtual void __stdcall unknown_slot43() = 0;
     virtual HRESULT __stdcall unknown_slot44(unsigned int value) = 0;

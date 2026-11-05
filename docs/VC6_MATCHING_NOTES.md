@@ -1530,3 +1530,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `Rect(-2,-2,3,3)+point` is an inline over the out-of-line sum and corner ctor. `rect.Intersect(x)` as a member supplies the 16 B result copy that a free call does not.
 - Vector3 Length with `double z, y, x` locals loads the FP stack as Z,Y,X. A `double dist2` with a `(float)dist2` final use flips which operand gets loaded.
 - `StageClass(noinit)` with a plain CDTimerClass member stays inline where a wrapper goes out of line.
+
+## Later rows and real calls (Scout722)
+- A row can inline a later-addressed row: 0x5EDB20 is really a callback enumeration plus a direct call of 0x5EDD30, and that depth division keeps a nested row a call.
+- An arm that looks spelled out can be calls of real unit rows. Pending inline sites decide which rows go out of line.

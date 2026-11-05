@@ -1786,3 +1786,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout721 (2026-11-05, closed; Techno line with end markers 0x6D0510 1,151 B; drafts build/class-work/Scout721/w/keep/, overlay keep/h; Scout723 continues)
 - OWNER DECISION: `Moved_Rect` and the spelled-out pixel stay as landed. Rename 0x6D0510 and 0x6D0990 and make arg8/arg9 bool when convenient (needs FootClass slot 243 too). Do not land the stage.hpp overlay until the Anim and Factory 0x423F60 sites are checked.
 - Draw_Action_Line 0x4CAB90 82.25, shape 100 (frame slots). Predict_Target_Coord 0x6D65B0 87.83, shape 100 (frame 8 B short). Rock slot 223 0x6D5F40 64.37, shape 99.77 (frame 8 short). 0x6D0990 46.96 with probes. NoInit 0x6C1F10 65.78 clean. Not reached: 0x6CA340 96.08, Scatter 0x504120 94.14, 0x6C89C0 90.31.
+
+## Scout722 (2026-11-05, closed; ODRemoveFromDict 0x5EDD30 548 B; drafts build/class-work/Scout722/w/keep/; Scout724 continues)
+- 0x5EB490 and 0x5EBA80 are not rows: both are interior to 0x5EAD20, a 7,648 B window procedure (likely ComboDropWinCtrlProc). 0x5FFB00 Default_Dialog_Proc (1,488 B, ownrdraw.cpp:6764) 66.88 clean (ffb00_ffc_6688.cpp with invented helpers). 0x5E7EB0 89.55. 0x5E8720 53.29.
+- 0x5EDD30 compiles only in the joined unit (uses declarations from row 0x5EDB20's file).
