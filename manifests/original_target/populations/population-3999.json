@@ -4,8 +4,8 @@
     "id": "population-3999",
     "inventory_sha256": "a4ad591b5725bd888e53afce446f8e17fdbcdab498a2d7a246b4031b9e8ee72b",
     "gaps_sha256": "45ae97899543bbf80d4e4c9329820324eb53ddeb602d9a7c19d0800cc8c8a7b9",
-    "historical_population_sha256": "000a1f9a1601a57cfc1585ac98c962997ae0bc7019f10815890fccc140fcb05a",
-    "historical_acceptance_sha256": "076f1dca9d207241a6aa4a2e01dc625b885e93e1e04185d825a5cb817846d54a"
+    "historical_population_sha256": "73a45e63ac779a2c16ef05b5ba5fb7f8346cace04354c54ef77d64d78e65a9bb",
+    "historical_acceptance_sha256": "1aab9ebe98b079bf4b94df0f92f4c29bf1ace7adeab34f44aade9715e7e0bc34"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -18150,12 +18150,12 @@
     "?Planning_Techno_Color@@YIHPAVTechnoClass@@@Z": 6397568,
     "?Planning_Event_Pixel@@YI?AUPoint2D@@PBVEventClass@@PAVAbstractClass@@@Z": 6397856,
     "?Highlight_Color@PlanningNodeClass@@QAEHXZ": 6398048,
-    "?Planning_Draw_Dot@@YIXHHHH@Z": 6398352,
-    "?Planning_Fill_Dot@@YIXHHHH@Z": 6398480,
+    "?Planning_Draw_Dot@@YIXUPoint2D@@H@Z": 6398352,
+    "?Planning_Fill_Dot@@YIXUPoint2D@@H@Z": 6398480,
     "?unknown_61a2d0@PlanningEventTargets@@QBEHXZ": 6398672,
     "?Unknown_006F6760@PlanningEventTargets@@QBEHXZ": 7300960,
     "?Unknown_006F6750@PlanningEventTargets@@QBEHXZ": 7300944,
-    "?Planning_Draw_Line@@YIXHHUPoint2D@@0_N@Z": 6399392,
+    "?Planning_Draw_Line@@YIXUPoint2D@@0HH_N@Z": 6399392,
     "?unknown_int_83963c@@3HA": 8623676,
     "?unknown_pattern_7eb9f8@@3PA_NA": 8305144,
     "?Planning_Pixel@@YIHPBVRGBClass@@@Z": 6400096,

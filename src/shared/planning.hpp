@@ -207,8 +207,8 @@ CoordStruct __fastcall Planning_Event_Or_Object_Coord(EventClass const &event, A
 int __fastcall Planning_Dim_Color(TechnoClass *techno);
 int __fastcall Planning_Bright_Color(TechnoClass *techno);
 // A square outline / fill centred on a screen point (0x0061A190, 0x0061A210).
-void __fastcall Planning_Draw_Dot(int color, int unused, int x, int y);
-void __fastcall Planning_Fill_Dot(int color, int unused, int x, int y);
+void __fastcall Planning_Draw_Dot(Point2D center, int color);
+void __fastcall Planning_Fill_Dot(Point2D center, int color);
 // The screen pixel of a palette colour (0x0061A860).
 int __fastcall Planning_Pixel(RGBClass const *color);
 // Shows the refusal for a selection planning mode cannot take (0x00617100).
@@ -218,7 +218,7 @@ void __fastcall Planning_Refuse_Command(int kind);   // 0x00617250
 int __fastcall Planning_Event_Result(PlanningTokenClass *token, PlanningEventTargets const *event);
 double __cdecl unknown_sqrt_4ba410(double value);   // 0x004BA410 (shared/building.hpp)
 // Outlines a square on the midpoint of two far-apart screen points (0x0061A2F0).
-void __fastcall Planning_Draw_Midpoint(int color, int unused, Point2D start, Point2D end);
+void __fastcall Planning_Draw_Midpoint(Point2D start, Point2D end, int color);
 // Draws the planning mode (0x00617EF0); its drawing helpers (0x00619870, 0x00618C00).
 void Planning_Draw_All();
 void __fastcall Planning_Draw_Techno(TechnoClass *techno);
@@ -228,9 +228,9 @@ extern DynamicVectorClass<TechnoClass *> unknown_list_a40c20;      // 0x00A40C20
 int __fastcall Planning_Techno_Color(TechnoClass *techno);                     // 0x00619E80
 Point2D __fastcall Planning_Event_Pixel(EventClass const *event, AbstractClass *object);   // 0x00619FA0
 // Draws a clipped line shifted sideways (0x0061A5A0).
-void __fastcall Planning_Draw_Line(int offset, int color, Point2D start, Point2D end, bool dashed);
-void __fastcall Planning_Draw_Thick_Line(int thickness, int color, Point2D start, Point2D end);          // 0x0061A6A0
-void __fastcall Planning_Draw_Dashed_Thick_Line(int thickness, int color, Point2D start, Point2D end);   // 0x0061A6F0
+void __fastcall Planning_Draw_Line(Point2D start, Point2D end, int offset, int color, bool dashed);
+void __fastcall Planning_Draw_Thick_Line(Point2D start, Point2D end, int thickness, int color);          // 0x0061A6A0
+void __fastcall Planning_Draw_Dashed_Thick_Line(Point2D start, Point2D end, int thickness, int color);   // 0x0061A6F0
 // Whether the techno's mission lets planning mode take over (0x00615A10).
 bool __fastcall Planning_Mission_Allows(TechnoClass *techno);
 // Whether a mission 11 order keeps the techno where it is (0x00615910).
