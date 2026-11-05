@@ -13,9 +13,9 @@ int __fastcall Planning_Techno_Color(TechnoClass *techno)
     if (!techno) return plain;
     int lighter = Planning_Pixel(&unknown_rgb_ab6849);
     if (unknown_node_a766b0) {
-        if (unknown_node_a766b0->Member_Index(techno) == -1) return plain;
-        return lighter;
+        if (unknown_node_a766b0->Member_Index(techno) != -1) return lighter;
+        return plain;
     }
-    if (!techno->unknown_77) return plain;
-    return lighter;
+    if (techno->unknown_77) return lighter;
+    return plain;
 }

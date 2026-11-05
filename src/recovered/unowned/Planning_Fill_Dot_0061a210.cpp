@@ -6,11 +6,12 @@
 
 void __fastcall Planning_Fill_Dot(Point2D center, int color)
 {
-    ::Rect view = Unknown_006F1F30();
-    ::Rect square = Planning_Centered_Rect(center, 6);
-    square.X += 1;
-    square.Y += 1;
-    square.Width -= 2;
-    square.Height -= 2;
-    unknown_surface_839964->Fill_Rect(view, square, color);
+    Point2D point = center;
+    ::Rect view;
+    view = Unknown_006F1F30();
+    ::Rect square;
+    square = Planning_Centered_Rect(point, 6);
+    Planning_Inflate(square, -1);
+    Surface *surface = unknown_surface_839964;
+    surface->Fill_Rect(view, square, color);
 }
