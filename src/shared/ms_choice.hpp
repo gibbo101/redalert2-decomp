@@ -38,6 +38,9 @@ public:
 class MSAnimEntry {
 public:
     MSAnimEntry(Wstring const &line);                   // 0x005B14C0
+#ifdef WDT_SELECTION_ACCESSORS
+    Wstring const &Get_Filename() const { return Name; }   // TibSun mschoice.h
+#endif
 
     Wstring Name;               // +0x00
     int unknown_04;             // +0x04

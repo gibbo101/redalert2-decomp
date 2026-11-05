@@ -9,7 +9,7 @@ bool Selection::Select_Territory(rc_ptr<Territory> const &territory)
     if (unknown_464.Get()) {
         if (unknown_50.Get()) unknown_50.Set(0);
         unknown_464->Show_Highlight(false, this);
-        MSShapeAnim *target = (MSShapeAnim *)unknown_464->unknown_2c;
+        MSShapeAnim *target = (MSShapeAnim *)unknown_464->Get_unknown_2c();
         if (target) {
             target->Set_End_Frame(TargetDividingFrame - 1);
             target->Set_Start_Frame(0);
@@ -25,7 +25,7 @@ bool Selection::Select_Territory(rc_ptr<Territory> const &territory)
     selected = false;
     WideString description;
     WideString options;
-    int index = unknown_464->Index;
+    int index = unknown_464->Get_Index();
     int owner = unknown_488->Owner_Of(index);
     int kind = 2;
     if (owner != 1 && owner != 0) kind = TheCampaign->Player_Faction() != owner;
@@ -42,16 +42,16 @@ bool Selection::Select_Territory(rc_ptr<Territory> const &territory)
         while (cursor) {
             rc_ptr<Conflict> const &conflict = *cursor;
             Conflict const *current = conflict.operator->();
-            int id = unknown_464->Index;
+            int id = unknown_464->Get_Index();
             if (current->Is_Territory(id)) break;
-            ++cursor;
+            cursor++;
         }
         if (cursor) {
             selected = true;
             unknown_50 = *cursor;
             description = (*cursor)->Describe_Options();
             options = description;
-            MSShapeAnim *target = (MSShapeAnim *)territory->unknown_2c;
+            MSShapeAnim *target = (MSShapeAnim *)territory->Get_unknown_2c();
             if (target) {
                 target->Set_End_Frame(-1);
                 target->Set_Start_Frame(TargetDividingFrame);
@@ -73,8 +73,8 @@ bool Selection::Select_Territory(rc_ptr<Territory> const &territory)
 // @ref ??_C@_0BM@MKJF@WDT?3TerritorySelDispToolTip?$AA@=007fc5bc
 // @ref ??H@YI?AVWideString@@PBGABV0@@Z=00771380
 // @ref ??_E?$VectorCursor@V?$rc_ptr@VConflict@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@@@UAEPAXI@Z=00726b20
-// @ref ?Valid@?$VectorCursor@V?$rc_ptr@VConflict@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@@@UBE_NXZ=00726ab0
-// @ref ?Next@?$VectorCursor@V?$rc_ptr@VConflict@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@@@UAEAAV1@XZ=00726ef0
-// @ref ?Prev@?$VectorCursor@V?$rc_ptr@VConflict@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@@@UAEAAV1@XZ=00726f00
+// @ref ??B?$VectorCursor@V?$rc_ptr@VConflict@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@@@UBE_NXZ=00726ab0
+// @ref ??E?$VectorCursor@V?$rc_ptr@VConflict@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@@@UAEAAV0@XZ=00726ef0
+// @ref ??F?$VectorCursor@V?$rc_ptr@VConflict@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@@@UAEAAV0@XZ=00726f00
 // @ref ??_7?$VectorCursor@V?$rc_ptr@VConflict@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@@@6B@=007af054
 // @ref ??_G?$VectorCursor@V?$rc_ptr@VConflict@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@@@UAEPAXI@Z=00726b20

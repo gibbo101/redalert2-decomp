@@ -173,6 +173,11 @@ public:
     void Show_Highlight(bool arg, MSEngine *engine);                // 0x00731120 (name hypothesis)
     void Set_unknown_2c(int value);                                 // 0x00731190
     int Take_unknown_2c();                                          // 0x007311A0 (returns and clears)
+#ifdef WDT_SELECTION_ACCESSORS
+    Point2D const &Get_Target() const { return Target; }
+    int Get_Index() const { return Index; }
+    int Get_unknown_2c() const { return unknown_2c; }
+#endif
 
     int Index;                                                      // +0x08
     WideString Name;                                                // +0x0C

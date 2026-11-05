@@ -61,6 +61,7 @@ public:
 
 #ifdef RA2_WDT_MAP_LOAD_LAYOUT
     void Load(INIClass &ini, MSEngine *engine, int unknown3);
+    Point2D const &Get_Origin() const { return unknown_44; }
 #endif
     Map(int unknown_08, int unknown_0c, int unknown_10);          // 0x00729330
     virtual ~Map();                                                 // 0x0072AF30 (slot 0, calls 0x007293F0)

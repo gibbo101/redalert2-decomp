@@ -1607,3 +1607,13 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A named block-scoped cursor leaves the ctor's eax return unused, where a temp feeds it to operator=.
 - A plain vtable bound from an inline class needs @refs for every slot under the emitted manglings; the audit names only the vtable.
 - Tools: Scout733 rp.py (remaining budget at a source line by binary search), cn.py (diff masking esp offsets and jump targets; raw score misleads when the frame shifts).
+
+## Temps, slots and switch signedness (Scout735)
+- `Setter(char const *)` through an implicit Wstring conversion gives each temp its own frame slot; a named Wstring shares one (90.30 to 98.25).
+- `char const *a, *b` declared in a loop body overlaps a later inline's locals; at case scope they do not.
+- A found path jumping past an assignment means `if (!remember) x = saved;`.
+- `switch ((unsigned short)wparam)` gives signed `jg`; `wparam & 0xffff` gives `ja`.
+- A temporary `(Point2D(a.X,a.Y) - Point2D(b.X,b.Y)).Length()` in an inline may overlap a caller slot; a named diff cannot (frame 0x34 to 0x2C).
+- TibSun `Is_Complete_Turn(towards, by)`: the `by` const-ref temp is built before `towards` is evaluated.
+- Nested `if (a) { if (b) ... }` produces a hoist that a combined `&&` does not.
+- Repeated triples with depth-2 calls out of line are usually an inlined row. Check existing rows before spelling the code out.
