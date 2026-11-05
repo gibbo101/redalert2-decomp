@@ -1715,3 +1715,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A lone reload that no flat form gives can be a real row inlined, with `result` from the row.
 - `setne/test` came from TibSun's three-way `if (music && ...) else if (music) ... else if (!music)` with a bool local.
 - `char *`-free point arrays copied as 12-byte structs have no ctor; a named double lands above the arrays at any scope (Scout749 EBolt).
+
+## Threading and the auto-inline limit (Scout751)
+- VC6 threads a bool test away when all its predecessors are constant, through inline levels and by-reference or by-value inline params. Ternary, `||`, do/while(0), goto and dead stores all still thread. Only an address-taken local stops it (`bool const &ok = H()`, `bool *p = &found`). So a surviving `xor al,al; test al,al` suggests an address-taken local that folds late.
+- A row just over the auto-inline limit can drop under it through a real helper: a tail of `Close_Wonline_Wait(flags)`, or `BucketCount` read directly rather than Get_Size().
+- `else` chain versus flat `if` on arms moves the cross-jump keeper and budget by a small unit.
+- `calls.py` (target and candidate call sequences side by side) finds refusal patterns faster than score diffs.
