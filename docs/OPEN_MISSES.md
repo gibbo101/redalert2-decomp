@@ -1782,3 +1782,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout720 (2026-11-05, closed; 3,749 B: EnumChild callback 0x5E4780, Draw_Dialog_Back 0x5FEE70; drafts build/class-work/Scout720/w/keep/; Scout722 continues)
 - OWNER DECISION: `Kind_Of`, `Is_Option_Kind`, `Is_Kind_103`, `Is_Kind_108`, `Is_Rail_ID`, `Is_Owner_Button`, `Is_Free_Record`, `Lookup` and the `found` reference stay as landed. Reconcile the 0x5E0DA0 binding later: Is_Listed_Kind_5e0da0 vs the seed symbol.
 - 0x5E7EB0 89.55, shape 100 (frame 8 vs 0xC). 0x5E8720 53.29. 0x5FEB60 55.56. 0x5E8130 31.24 at best (corrected imports: GetTickCount 0x79A0CC, SetTimer 0x79A4D4). 0x5E0DA0 is `bool __fastcall f(int kind)`; defined in the unit it inlines into 0x5E9410, which calls it.
+
+## Scout721 (2026-11-05, closed; Techno line with end markers 0x6D0510 1,151 B; drafts build/class-work/Scout721/w/keep/, overlay keep/h; Scout723 continues)
+- OWNER DECISION: `Moved_Rect` and the spelled-out pixel stay as landed. Rename 0x6D0510 and 0x6D0990 and make arg8/arg9 bool when convenient (needs FootClass slot 243 too). Do not land the stage.hpp overlay until the Anim and Factory 0x423F60 sites are checked.
+- Draw_Action_Line 0x4CAB90 82.25, shape 100 (frame slots). Predict_Target_Coord 0x6D65B0 87.83, shape 100 (frame 8 B short). Rock slot 223 0x6D5F40 64.37, shape 99.77 (frame 8 short). 0x6D0990 46.96 with probes. NoInit 0x6C1F10 65.78 clean. Not reached: 0x6CA340 96.08, Scatter 0x504120 94.14, 0x6C89C0 90.31.

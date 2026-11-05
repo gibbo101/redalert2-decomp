@@ -1525,3 +1525,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Unit rows can hide as inline sites: 0x5E7230 and 0x5E7620 are tests expanded inside 0x5E7EB0, and in Get form they reproduce its mixed lookups.
 - `T *const &found = record; if (found)` stops known-zero threading past a record test. A root-level `unsigned int key` holds its slot, so later keys take a new one.
 - A missing first-lookup call can be pending sites: about 38 empty sites without a helper level, 5 to 8 with one. Row wordiness moves the charge at its inline sites.
+
+## Rect members and FP order (Scout721)
+- `Rect(-2,-2,3,3)+point` is an inline over the out-of-line sum and corner ctor. `rect.Intersect(x)` as a member supplies the 16 B result copy that a free call does not.
+- Vector3 Length with `double z, y, x` locals loads the FP stack as Z,Y,X. A `double dist2` with a `(float)dist2` final use flips which operand gets loaded.
+- `StageClass(noinit)` with a plain CDTimerClass member stays inline where a wrapper goes out of line.
