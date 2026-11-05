@@ -1893,5 +1893,10 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout744 (2026-11-05, closed; 0 B; drafts and NOTES in build/class-work/Scout744/; Scout746 continues)
 - OWNER DECISION: wrappers that group real statements (Fetch_Server_List, Set_Login_Focus, Remember_Login) meet "wrappers with a purpose" even though the combination came from a scan (n7.py); they are level hypotheses, flagged. `~WolRegistryOptions() {}` stays out: its only evidence is budget.
-- Login_Wonline 0x742FD0 (__fastcall, ?Login_Wonline_00742fd0@@YIHXZ): 99.64, loose 100, shape 100 (keep/qFR_9964.cpp, HX=hP, rows keep/conn2.cpp 0x742D50, keep/find1.cpp 0x742E30). Two jump targets differ at +0x65B and +0x664. T jumps past the dialog block, but that form falls to 76.77 (qFRn.cpp); z2_9236_regime_right.cpp restores registers at 92.36 with one unmerged dtor copy. Overlay needs fragile_probe (Pick_Lobby, 0x73FEE0). This retracts Scout742's "spend does nothing": about 1,020 units at the head gives the pattern.
+- Login_Wonline 0x742FD0 (1,857 B) landed by Scout746 r1.
 - WOL 0x7469C0: code 0x7469C0-0x748491 (6,866 B), last `ret 0x10` at 0x74848F, tables from 0x748494 and 0x7484DC; table end unmeasured. Not drafted. 0x743720 read only; it calls Login_Wonline and repeats the Close_Wonline_Wait sequence.
+
+## Scout746 (2026-11-05, closed; 1,857 B: Login_Wonline 0x742FD0; NOTES in build/class-work/Scout746/; Scout747 continues)
+- Join_WOL_Lobby 0x743720 (2,404 B): 91.88, loose 99.25, shape 99.25 (keep/j_9188_q4.cpp, overlay hQ, key w2). One instruction: T reloads `mov ebx,[ResetEvent]` at +0x460 before the second reset loop. Unverified: row 0x73D760 in the req1 form, Add_At @ref to 0x766f90. Request_Lobby_List and Wait_For_Event are budget-carrying helpers with natural bodies; judge them if the row completes.
+- 0x75F530, 0x75F9C1, 0x760853, 0x760B9F are one function, not four rows: CChatEventSink::OnChannelJoin, about 5,780 B, between OnChannelCreate and OnChannelLeave, with early `ret 0x10` at 0x75FA82 and 0x75FF8D; last ret still to measure. Earlier split entries are superseded.
+- 0x7469C0 extent: 0x7469C0-0x7485C4, 7,172 B, 12 NOP to 0x7485D0; Scout747 holds it.

@@ -1684,3 +1684,13 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Weight of a constant web drops when its uses move into a conditional block; a plain block keeps it.
 - Reading a global directly in an inline, rather than through a local copy, allows threading of its range tests at the call site.
 - A virtual slot called directly from a local object cannot sit in a helper taking that object by reference: evidence for keeping the loop in the root.
+
+## Early returns and helper-owned locals (Scout746)
+- `if (!a || !b) return 1; ...; Dialog next; return 1;`: the early return carries extra dtor copies, so vptr uses keep their register weight, then the copies cross-jump away after allocation. This fixes the regime that the conditional-block form loses.
+- A refused inline whose result is never tested means the source discards the value: `add(x); return true;`, not `return add(x);`.
+- A named local inside a small helper dies at the helper's end; a temporary in the caller gets a different order and slot.
+- A WideString in the same block as an expanded inline's locals gets its own slot; `{ }` around it shares the slot.
+- By-value WolArrayList arguments expand wlib's copy ctor into operator= into clear; the scalar deleting dtor is refused at depth 4 by pending-site budget.
+- A zero register web reaches across a join only with `if (event != 6) {...} else { break; }` nesting; flat `if (event == 6) break;` drops it.
+- Explicit `continue` right after a final `goto X` folds to `jne top` and pulls X adjacent.
+- ms_message_box.hpp pulls shape_file.hpp's static unknown_empty_rect in population-4122, adding a .CRT$XCU initializer and renumbering `_$E210`.
