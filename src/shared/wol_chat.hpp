@@ -86,12 +86,20 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall Game_Icon(long id, long format, void **bitmap, void **palette, int *width, int *height) = 0;
     virtual HRESULT __stdcall unknown_slot24(User *user) = 0;   // OnBuddyList: a zeroed User with the name
     virtual void __stdcall unknown_slot25() = 0;
+#ifdef RA2_WOL_CHAT_SETTINGS_SIGNATURES
+    virtual HRESULT __stdcall SetFindPage(int find_on, int page_on) = 0; // SDK IChat slot26; original73C9BC.
+#else
     virtual void __stdcall unknown_slot26() = 0;
+#endif
     virtual void __stdcall unknown_slot27() = 0;
     virtual void __stdcall unknown_slot28() = 0;
     virtual void __stdcall unknown_slot29() = 0;
     virtual void __stdcall unknown_slot30() = 0;
+#ifdef RA2_WOL_CHAT_SETTINGS_SIGNATURES
+    virtual HRESULT __stdcall SetLangFilter(int on_off) = 0; // SDK IChat slot31; original73C9A3.
+#else
     virtual void __stdcall unknown_slot31() = 0;
+#endif
     virtual void __stdcall unknown_slot32() = 0;
     virtual HRESULT __stdcall Game_Types(char const **types) = 0;
     virtual void __stdcall unknown_slot34() = 0;
