@@ -1798,3 +1798,16 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `mov [m],0` versus `xor edx,edx`: a by-value return helper forwards a temp field, an in-place temp keeps the immediate.
 - Register webs need refs that survive to allocation. Threaded or folded tests add none; only a real loop level adds weight.
 - diff_candidate can read 98.75 on an exact row when only switch table `$L` relocations differ: trust check_plans.
+
+## Tail duplication and push depth (Scout761)
+- Check push depth before calling a store dead: `[esp+0x1c]` under a live push was a function-level variable.
+- One statement after an if/else can be tail-duplicated into each arm, each ending in `jmp`. A one-register rotation across arms points at this.
+- `int i, j` reuse across loops fixes frame slot grouping.
+- Object count is strictly mod 4 and position-independent; dead keys count per function only.
+
+## Named call results and known cases (Scout763)
+- Naming an int call result before a comparison (`int h = f(...); if (h < coord.Z)`) rather than calling inside the `if` kills a zero web and fixes temp slots and store order in the block.
+- `Cell const &center = f()` moves Cell X and Y add order together; under that form dead-arm data keys flip single add sites with a period of about 32. Mixed X/Y orders are key dependent.
+- Threaded outer loops do nothing: a loop level only counts with a real back edge at weighting time.
+- `break` jumps from known cases thread past a following `if (result != 4)`.
+- macOS: overlay folders hb and hB collide on this filesystem.
