@@ -1776,3 +1776,18 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `bool const &ok = A() ? B() : false;` keeps the surviving al test and puts B at depth 1.
 - A back edge reload can cross-jump into the last pre-header load, so a jump landing mid pre-header points to reload order.
 - A global `@ref _x=addr` in one row rebinds that symbol for every row in the unit and shows only as a single ~ call line elsewhere.
+
+## Stack-object count and reused cells (Scout759)
+- A stack-object count mod 4 flips late store forwarding and register webs far from the probe, up to 8 points on one row. A one-field struct temp counts 1; an int, a non-copy pointer or an unconstructed Cell counts 0.
+- A surviving dead store, or `add word [slot]` followed by a movsx reload, can mean an address-taken function-scope variable reused across cases. `mov ecx,[eax]; mov ax,cx` has the same cause.
+- A `Y - 0` from `Cell(1, 0)` keeps a temp's Y store where `Cell(x - 1, y)` copy-propagates it.
+- An inline in a call's argument list moves its temps and constants ahead of the pushes, into callee-saved registers; naming it first does not.
+- `if (a || b) X else Y` lays Y first and makes X last-written, so the tail keeper moves with source order while layout stays put.
+- A real template inline (Random_Pick) reverses the load order compared with `Random()(a, b)` written out.
+- A Cell whose last reference comes after y's takes y's slot. Temps inside one small inline share 12-byte slots; plain temps do not.
+
+## Distance forms and tail webs (Scout760)
+- A `bool const &` temp of a bitfield reproduces `and cl,1; mov [esp+N],cl`.
+- Two distance forms can sit in one function: a by-value second parameter (`lea edi; mov edx,edi`, Z spilled) with out-of-line Length, and a const& difference with inline double-local Length.
+- `CoordStruct scoord = source->Coord` beside a by-value `tcoord` gives a hoisted `lea` plus `add edx,0x88`; a reference local does not.
+- A zero web can hinge on one zero use after a join; removing other zero uses leaves it. A coord tail web can flip on one reference near a threshold, and added references to the competing CSE do not move it.

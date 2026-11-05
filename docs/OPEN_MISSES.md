@@ -1953,7 +1953,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 - Main loop 0x759370: 74.19, loose 86.94 (keep/z1r.cpp); site 0x24 Queue still expands, case order untried. Quick match 0x759E20 no gain (Scout750/keep/qn.cpp).
 
 ## Scout757 (2026-11-05, closed; 0 B; drafts and NOTES in build/class-work/Scout757/; Scout759 continues)
-- 0x440520 is one function: BuildingClass slot 62, TibSun Exit_Object, 14 `ret 4` epilogue copies, code to 0x441E88, jump table 0x441E8C (4 entries), byte index 0x441E9C to 0x441EAB, 5 NOP to 0x441EB0; body_bytes 6539 includes tables. 77.48, loose 86.64, shape 97.43, 1888/1891, frame 0x130 vs 0x12C (keep/exit_object_00440520_7748.cpp). Left: frame slots (about 9 points), aircraft edge spawn 0xB8-0x240, naval 0x6EA zero web, return tail keeper, exit-cell compare, register choice at 0xB62.
+- 0x440520 is one function: BuildingClass slot 62, TibSun Exit_Object, 14 `ret 4` epilogue copies, code to 0x441E88, jump table 0x441E8C (4 entries), byte index 0x441E9C to 0x441EAB, 5 NOP to 0x441EB0; body_bytes 6539 includes tables. See Scout759.
 - A fresh hid.py shows no other real-twin hole of 1 KB or more: only 0x5EE460, 0x5F0320, 0x73E100, 0x75BE10 (no twin) and Blit 0x434B40, 0x4350C0 (parked surface family).
 
 ## Scout758 (2026-11-05, closed; 2,202 B: Start_Quick_Match 0x759E20; NOTES in build/class-work/Scout758/; Scout760 continues)
@@ -1962,3 +1962,10 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 - OnChannelJoin 0x75F530: 94.15 on HEAD (hC overlay). Address-taken locals and `if (x) delete x` add no data keys, and the function has no delete; stays parked.
 - 0x47E2C0 is Explosion_Damage, not a Cell row: twin TibSun combat.cpp:269, 4,611 B, `ret 0xc` at 0x47EB26, 0x47F491, 0x47F4C0.
 - The prefix test is `_strnicmp` at 0x7858D0; Scout750's `// @ref _strncmp=007858d0` rebound strncmp for four other rows until fixed.
+
+## Scout759 (2026-11-05, closed; 0 B; drafts and NOTES, sl2.py in build/class-work/Scout759/; Scout761 continues)
+- Exit_Object 0x440520: 90.27, loose 97.36, shape 99.10, frame right, every slot group right, no probes (keep/eo_o6_9027_nodummies.cpp). Left, about 10 sites: stack-object count needs +3 or -1 mod 4; refinery 0x1124 dead store `mov [1c],eax`; 0x263 register rotation; 0x649 add order (eo_d2_target_local.cpp); 0xB62 needs 23 or more keys or IL. Slot 41 `(int)aircraft` still needs an R spec. Function-scope `Cell cellnum`, exitcell reuse and free inline Center_Cell are inferred from slots, not the twin. Split_Region not reached.
+
+## Scout760 (2026-11-05, closed; 0 B; drafts and NOTES, tools in build/class-work/Scout760/; Scout762 continues)
+- Explosion_Damage 0x47E2C0 (4,611 B; rets 0x47EB26, 0x47F491, 0x47F4C0): 76.37, loose 89.67, shape 97.62 (keep/ed1.cpp, overlay keep/h). Returns 1 nothing hit, 0 hit, 2 blocked. Left: tail coord web from 0xCCB (removing any one coord reference flips to 80.79; lab only), Z=0 store at 0x11C with no zero web, ring cell add order from 0xD14. Landing needs 13 rows moved in with allow_split (vector vtables 0x47FCF0-0x480050) and guarded additions to map_cell, map_view, vector_class_decl, vector3; anim.hpp's old Unknown_0047E2C0 overload needs a rename.
+- Seed scan: nothing over 90 with a twin. Top: 0x78E854 67.04, 0x73E8D0 53.48, 0x519500 51.19, 0x5CCA30 43.87, 0x444660 38.62, 0x421710 32.53, 0x471D10 29.65, 0x673090 29.30. Class inventory leads: BuildingClass, DSurface 8,053, DisplayClass, BulletClass, SidebarClass, BSurface/XSurface 5,826, MapClass 5,519, InfantryClass (x/ci/classes.md).
