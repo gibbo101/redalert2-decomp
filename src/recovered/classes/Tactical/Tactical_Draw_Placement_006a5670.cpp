@@ -37,7 +37,7 @@ void Tactical::Draw_Placement(bool drawtrans)
         for (int cx = start.X; cx < dims.X; cx++) {
             for (int cy = start.Y; cy < dims.Y; cy++) {
                 Cell cell = Cell(cx, cy) + Map.unknown_1170 + Map.unknown_1174;
-                CoordStruct coord = Coord_Snap(Cell_Center(cell));
+                CoordStruct coord = Coord_Snap(CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0));
                 Point2D pixel;
                 Coord_To_Pixel(coord, pixel);
                 pixel.X = pixel.X - 30;
@@ -52,7 +52,7 @@ void Tactical::Draw_Placement(bool drawtrans)
 
         if (unknown_flag_a40d13 && Map.unknown_11a0 != 0) {
             Cell cell = start + Map.unknown_1170 + Map.unknown_1174;
-            CoordStruct coord = Cell_Center(cell);
+            CoordStruct coord = CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0);
             if (rtti == 7) {
                 coord = Coord_Snap(coord);
             }
@@ -87,7 +87,7 @@ void Tactical::Draw_Placement(bool drawtrans)
         for (int cx = start.X; cx < dims.X; cx++) {
             for (int cy = start.Y; cy < dims.Y; cy++) {
                 Cell cell = Cell(cx, cy) + Map.unknown_117e + Map.unknown_1182;
-                CoordStruct coord = Coord_Snap(Cell_Center(cell));
+                CoordStruct coord = Coord_Snap(CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0));
                 Point2D pixel;
                 Coord_To_Pixel(coord, pixel);
                 pixel.X = pixel.X - 30;

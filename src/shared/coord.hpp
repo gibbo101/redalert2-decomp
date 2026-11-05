@@ -158,7 +158,11 @@ struct CoordStruct {
     }
 #endif
     // EAX=this/ret12; returned-reference source spelling is an ABI hypothesis.
+#ifdef RA2_TACTICAL_CELL_PROJECT_GEOMETRY
+    CoordStruct &Set_00434820(int x, int y, int z) { X=x; Y=y; Z=z; return *this; }
+#else
     CoordStruct &Set_00434820(int x, int y, int z);  // 0x00434820
+#endif
     // XY-only comparison; name/const spelling are source hypotheses for004BFB60.
     int Equal_XY_004bfb60(CoordStruct const &other) const;
 #ifdef RA2_COORD_AS_CELL
@@ -313,7 +317,13 @@ inline CoordStruct XYZ_Coord(int x, int y, int z)
 // the cell is taken by value).
 inline CoordStruct Cell_Center(Cell cell)
 {
+#ifdef RA2_TACTICAL_CELL_PROJECT_GEOMETRY
+    CoordStruct center;
+    center.Set_00434820(cell.X * 256 + 128, cell.Y * 256 + 128, 0);
+    return center;
+#else
     return CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0);
+#endif
 }
 // The same from a cell reference (InfantryClass; TeamClass 0x006B91C0 reads a returned cell in place).
 inline CoordStruct Cell_Coord(Cell const &cell)
@@ -335,7 +345,12 @@ inline Cell XY_Cell(int x, int y)
 // toward zero to a multiple of 256; CellClass 0x0047A4E0).
 inline CoordStruct Coord_Snap(CoordStruct const &coord)
 {
+#ifdef RA2_TACTICAL_CELL_PROJECT_GEOMETRY
+    CoordStruct snapped(coord.X / 256 * 256, coord.Y / 256 * 256, coord.Z);
+    return snapped;
+#else
     return UnknownCoord434820(coord.X / 256 * 256, coord.Y / 256 * 256, coord.Z);
+#endif
 }
 
 // Member-wise cell equality (VectorClass<Cell> ID lookups; formerly

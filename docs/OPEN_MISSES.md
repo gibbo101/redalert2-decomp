@@ -1813,4 +1813,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout727 (2026-11-05, closed; 0 B; drafts build/class-work/Scout727/w/keep/; Scout730 continues)
 - OWNER DECISION: RA2_COMBO_DROP_UNIT is acceptable in row 0x5DE660 alongside the RA2_OWNERDRAW_* defines. All new header declarations sit under it because any added declaration moved Print_CRCs.
-- ComboDrop 0x5EAD20: 86.77 clean, shape 99.12, frame 0x37C right, calls 165/165 (c2_8677.cpp, overlay h/, rows r601950s, r601c50i, rd35, r5ded60n, r5de660g). 88.17 with one store the target lacks (lb_store_8817.cpp). check_plans without --build at 248aa1e77: 187/188, only 0x5EAD20 missed (plan/s727-t.json; bound text written from memory, verify it). Left: width web loses a register to the CallWindowProc pointer in the row loop, frame order above 0xAC (nd.py hides esp offsets, so its diff understates this), arm 1 Shrink, case 0x7E8. Invented names: Get_Item_Text, UnknownScrollInfo, UnknownListItem.
+- ComboDrop 0x5EAD20 (7,636 B) landed by Scout730 r1.
+
+## Scout730 (2026-11-05, closed; 7,636 B: ComboDrop 0x5EAD20, 86.77 to exact in 55 minutes; tools build/class-work/Scout730/fm.py, em.py, rz.py)
+- OWNER DECISION: function-scope `Rect fill;`, non-escaped `Rect row` with block-local `Rect outer` in the scrollbar arm, `if (master ? master->alternate_cd : false)` in the first fill arm only, `case 0xf` last in the source, text_rect order top, left, right, bottom, and invented names Get_Item_Text, UnknownScrollInfo, UnknownListItem stay as landed. The inline budget here is tight: two extra dead locals moved a Bucket_Index site.
+- Default_Dialog_Proc 0x5FFB00 scores 62.23 on top of r1 rows (ff.sh; below its recorded 66.88; inline-budget row). 0x5E5150 not reached.

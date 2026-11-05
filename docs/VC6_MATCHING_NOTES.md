@@ -1562,5 +1562,12 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 
 ## Strength reduction and reused Rects (Scout727)
 - An uncollapsed `row - row_base` can be `for (int index = first; ...)` with `(index - first) * height` written twice: VC6 distributes and strength-reduces, one imul feeds two slots, no CSE of the subs. No row variable exists.
-- A Rect that looks new per row can be the frame Rect reused from case scope: `outer = dest_rect; outer.Width += w;` then `outer.X/.Y` in the loop. A real escape keeps X and Y in memory and gives a double Width store and a shared slot.
 - `int length = wcslen(text); text_28 = new((length + 1) * 2);` is the Set_Wide_Text form that holds in all its users.
+
+## Frame maps and web evidence (Scout730)
+- Map real target slots against our variables (Scout730 fm.py, em.py) before permuting declarations: it finds split variables directly. One variable's last three refs were a separate Rect in another slot group, and fixing that moved the density sort.
+- A function-scope Rect overlaps slots across switch cases, so a later 28-byte object skips it and takes the next-newest slot. Case scope gave no change; function scope gave the original's order.
+- Stack reads from a Rect home are not proof of an escape. A non-escaped Rect with spilled X and Y has the same loads, but the allocator sees different webs: escaped reads leave temporaries that keep a value out of esi and give `lea`; spilled webs give in-place `add` and `mov cl`/`test cl,cl`.
+- A zero constant web needs a use inside its range, not one that survives to final code. `master ? master->alternate_cd : false` in one arm threads a literal 0 and flips X/Y from ebp to zero. Dead `= 0` initialisers and uses after the arm's join do not count.
+- A bare `return 0` cross-jumps to the epilogue of the last `return 0` written in the source, whatever the layout order, and case blocks stay in place when moved in the source. The block carrying the shared epilogue schedules separately. A single-site probe sweep (rz.py) found this where diff scores stalled at 99.91.
+- `Size = Size >> 1` versus `old_size >> 1` swaps which copy gets the load.
