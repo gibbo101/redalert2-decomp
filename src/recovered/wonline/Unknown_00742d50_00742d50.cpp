@@ -6,10 +6,9 @@
 
 bool Unknown_00742d50()
 {
-    int index = unknown_irc_index_b292d8;
-    if (index >= 1 && index < unknown_servers_b2a700.Count) {
+    if (unknown_irc_index_b292d8 >= 1 && unknown_irc_index_b292d8 < unknown_servers_b2a700.length()) {
         WOL::Server *server = 0;
-        unknown_servers_b2a700.Get(server, index);
+        unknown_servers_b2a700.Get(server, unknown_irc_index_b292d8);
         return Unknown_007424c0(server);
     }
     return false;

@@ -359,6 +359,7 @@ public:
     int Capacity;
     WOL::Server *Items;
     bool Grow_00768110();
+    int length() const { return Count; }
     void Resize(int capacity) {
         WOL::Server *items = (WOL::Server *)operator new(capacity * sizeof(WOL::Server));
         memset(items, 0, capacity * sizeof(WOL::Server));
@@ -417,6 +418,7 @@ class WolChannelArray {
 public:
     WolChannelArray() : Count(0), Capacity(0), Items(0) {}
     ~WolChannelArray() { Count = 0; operator delete(Items); }
+    void setEmpty() { Count = 0; }
     int Count;
     int Capacity;
     WOL::Channel *Items;
@@ -824,6 +826,7 @@ class WolUserArray {
 public:
     WolUserArray() : Count(0), Capacity(0), Items(0) {}
     ~WolUserArray() { Count = 0; operator delete(Items); }
+    void setEmpty() { Count = 0; }
     int Count, Capacity;
     WOL::User *Items;
     bool Insert_00765e90(WOL::User const &user, int index);

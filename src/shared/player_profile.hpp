@@ -26,6 +26,7 @@ public:
     int Losses;                     // +0x30
     int Disconnects;                // +0x34
     int Unknown_Value_10() const { return unknown_10; }
+    Wstring const &Get_Server() const { return Server; }
     // Sets the locale (+0x10; source 2: from the server) (0x00739950; name hypothesis).
     void Set_Locale_00739950(int locale, int source);
     void Set_Server_00739920(Wstring const &server);
