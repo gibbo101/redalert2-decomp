@@ -1768,3 +1768,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A global read twice in one call (`Cell(Map.X, -Map.X)`) is CSE'd without field forwarding, so the temp's store and reload survive; a local copy forwards and loses them.
 - `short x1, x2` in a Direction(Cell, Cell) helper gives the 16-bit load with a late movsx.
 - A nested virtual call hoists the outer vptr read above the argument call; a named result moves it after the call.
+
+## Wrapper levels and pending-site sides (Scout758)
+- A depth-1 call can stay expanded however many sites are pending: an out-of-line first-site call means a wrapper level, and then pending sites flip it.
+- Sites after a helper divide its budget; sites before only affect earlier refusals. Probe them separately.
+- Moving a raw call into a helper shrinks root IL and so the budget: an empty probe and a real helper are not equivalent.
+- `bool const &ok = A() ? B() : false;` keeps the surviving al test and puts B at depth 1.
+- A back edge reload can cross-jump into the last pre-header load, so a jump landing mid pre-header points to reload order.
+- A global `@ref _x=addr` in one row rebinds that symbol for every row in the unit and shows only as a single ~ call line elsewhere.

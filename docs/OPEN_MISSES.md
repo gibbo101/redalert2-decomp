@@ -1955,3 +1955,10 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout757 (2026-11-05, closed; 0 B; drafts and NOTES in build/class-work/Scout757/; Scout759 continues)
 - 0x440520 is one function: BuildingClass slot 62, TibSun Exit_Object, 14 `ret 4` epilogue copies, code to 0x441E88, jump table 0x441E8C (4 entries), byte index 0x441E9C to 0x441EAB, 5 NOP to 0x441EB0; body_bytes 6539 includes tables. 77.48, loose 86.64, shape 97.43, 1888/1891, frame 0x130 vs 0x12C (keep/exit_object_00440520_7748.cpp). Left: frame slots (about 9 points), aircraft edge spawn 0xB8-0x240, naval 0x6EA zero web, return tail keeper, exit-cell compare, register choice at 0xB62.
 - A fresh hid.py shows no other real-twin hole of 1 KB or more: only 0x5EE460, 0x5F0320, 0x73E100, 0x75BE10 (no twin) and Blit 0x434B40, 0x4350C0 (parked surface family).
+
+## Scout758 (2026-11-05, closed; 2,202 B: Start_Quick_Match 0x759E20; NOTES in build/class-work/Scout758/; Scout760 continues)
+- OWNER DECISION: Request_Chat_Channels() and Match_Message(label, line) stay as hypothesis wrappers around real statements; each is evidenced by a call that is out of line or refused at a visible site.
+- Buddy main loop 0x759370: 90.64, loose 97.88, shape 98.63, all calls match (keep/x2.cpp, X='744610=<Scout754>/keep/leave2.cpp'). Left: pre-header load order, extra edi reload at 0x50D, zero web start. 24 case orders, loop forms, data keys ruled out. When it lands, move the wrapper above it and drop Quick Match's copy.
+- OnChannelJoin 0x75F530: 94.15 on HEAD (hC overlay). Address-taken locals and `if (x) delete x` add no data keys, and the function has no delete; stays parked.
+- 0x47E2C0 is Explosion_Damage, not a Cell row: twin TibSun combat.cpp:269, 4,611 B, `ret 0xc` at 0x47EB26, 0x47F491, 0x47F4C0.
+- The prefix test is `_strnicmp` at 0x7858D0; Scout750's `// @ref _strncmp=007858d0` rebound strncmp for four other rows until fixed.
