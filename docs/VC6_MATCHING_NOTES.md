@@ -1648,3 +1648,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A body of just `return Wrapper(...)` always expands, even through an inner inline. A reference local plus a named result charges the budget and keeps direct argument order.
 - Inline budgets look thiscall-sensitive: a member stayed out of line at the tail while a free helper with the same body inlined.
 - Spilled variables get second-chance registers at first use after a death, and register ties flip when the refusal pattern changes: fix calls before chasing registers.
+
+## Nested tests and row depth (Scout740)
+- `if (a) { if (!b) {...} }` versus `if (a && !b)` around an inlined row changes the inline budget: `&&` at the last two of four sites took 0x685600 from 81 to 99.44.
+- A byte-repeated bounds test with some calls to the same address is one inline at two depths: inline at depth 1, out of line one level down.
+- Fetch_CellID() temporaries in a row explain separate frame slots when that row is inlined in a caller.
+- `int ramp = ...; int base = ...; value = *table[ramp] + base;`: naming the right operand before the sum keeps the left operand's load order (75 to 98.49).
+- A statement first in the then-arm and alone in the else arm is hoisted above the test with no else block, but it changes register allocation; a dead one does not.

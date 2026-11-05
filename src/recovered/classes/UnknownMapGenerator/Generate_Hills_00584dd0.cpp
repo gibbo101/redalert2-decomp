@@ -6,10 +6,10 @@
 void Mark_Adjacent_Grid_Weights_00584bd0();
 // Original free deformation operations. Return/source names are qualified hypotheses.
 void Init_Deform_Grid_RMG_00685600();
-void Commit_Deform_Grid_RMG_006863e0();
+bool Commit_Deform_Grid_RMG_006863e0();
 int __fastcall Get_Deformed_Cell_Height_00686c90(CellClass *cell);
 int __fastcall Get_Deformable_Cell_Corners_00686dd0(CellClass *cell,int direction);
-bool __fastcall Deform_Cell_RMG_006869f0(Cell position,int direction,char flag,unsigned corners);
+bool __fastcall Deform_Cell_RMG_006869f0(Cell position,int direction,bool forced,unsigned corners);
 // @ref ?Mark_Adjacent_Grid_Weights_00584bd0@@=00584bd0
 // @ref ?Seed_Hill_Heights_00584730@UnknownMapGenerator@@=00584730
 // @ref ?Init_Deform_Grid_RMG_00685600@@=00685600
