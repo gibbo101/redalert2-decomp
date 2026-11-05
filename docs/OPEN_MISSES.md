@@ -1864,3 +1864,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - MapClass Zone_Span 0x54F250 (1,386 B, ret 0xC at 0x54F7B7, 6 nops): 33.54, shape 96.54 (w/z10.cpp, overlay hZ/), mostly register colour. Add_Object overload needs a shared-header round.
 - unknown_undo_commit 0x6863E0: 56.38, shape 90.21 (w/u13.cpp). Row 0x6850B0 must expand inline; `mov dl,..; test dl,dl` flag reads unexplained.
 - Split by decode, not started: Undo 0x686610 587 B, 0x686863 390 B, 0x6869F0 669 B, 0x685290, 0x685600 (model 0x686C90). WOL 0x742FD0 1,857 B, 0x743720 2,404 B, 0x75F530 1,165 B, 0x75F9C1 196 B, 0x760853 539 B, 0x760B9F 37 B. 0x7469C0 looks like one 7,172 B dialog proc.
+
+## Scout739 (2026-11-05, closed; 4,306 B: Planning_Draw_Techno 0x6182F0, twin 0x618C00; NOTES and tools in build/class-work/Scout739/; Scout741 continues)
+- OWNER DECISION: file-local Planning_Owner_House_Color, Planning_House_Pixel and Planning_Reached stay in 0x618C00; replace the two colour helpers through Adjusted_Pixel once PlanningNodeClass::Color 0x6125D0 is solved. `dot = dim;` (a real copy, removal drops to 59.51) and the bare scope block after `else if (!has_nodes) return;` stay.
+- PlanningNodeClass::unknown_619420 (1,104 B): 25.00, first shape (w/n1.cpp, key n4): Coord, Member_Owner, Techno_Color must stay out of line. 0x619870 not rescored. Every `int unused` hit in src is an exact row, so those are zero-byte renames (Find_Movie_File, Unknown_006D8F60, Unknown_Select_Art 0x6F2400/20, Dialog_Template_Size, FUN_00681940). Nine by-value fastcall signatures in byvalue_fastcall.txt, callers unchecked.
+- Scout737 s.py scored the ALL copy of a row, not the draft; row-key scores there are false, so Techno_Color tc5 was not row-exact.

@@ -1641,3 +1641,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A variable with a zero init and no re-init on its loop (`int i = 0; for (; i < n; i++)`) keeps zero in a register for neighbouring stores. `int y = 0` placed after a test rather than in the for gave a second zero web (75.3 to 80.25).
 - `new` size order: `h * w * sizeof` gives `imul` first, then the lea chain.
 - Copy loops by index give a biased pointer and a dec counter.
+
+## Frame density and forwarders (Scout739)
+- Frame slots sort by final refs divided by size, descending, 1-byte bools included, so bools interleave with 16-byte slots.
+- An address-taken local at function scope is live from the function's first call. Moving an inline's `if {...}` to an early return puts its locals at function scope, where they conflict with a temp: that fixed a caller's frame without touching the caller.
+- A body of just `return Wrapper(...)` always expands, even through an inner inline. A reference local plus a named result charges the budget and keeps direct argument order.
+- Inline budgets look thiscall-sensitive: a member stayed out of line at the tail while a free helper with the same body inlined.
+- Spilled variables get second-chance registers at first use after a death, and register ties flip when the refusal pattern changes: fix calls before chasing registers.
