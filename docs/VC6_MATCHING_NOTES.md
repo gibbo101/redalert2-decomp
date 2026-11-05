@@ -1599,3 +1599,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `for (int j = i + 1; ...)` plus `i++` coalesced j and i (91.52 to 99.75). `i < start + count` rather than a named `end`, and named int offsets, fixed schedule ties.
 - An inline ctor in a unit emits the vtable, so check_plans needs @refs for every slot; the failure reads "Unsupported allocatable data section".
 - A ternary in an argument tail-duplicates the call.
+
+## VectorCursor virtual operators (Scout733)
+- TibSun VectorCursor has virtual `operator bool`, `++` and `--`, not inline wrappers over Valid/Next. That removes 6 pending root sites per use, so List() inlines and its charge sends the cursor ctor and operator= out of line. Took 0x72A880 from 62.65 to exact. `.Valid()` on a local object devirtualises and inlines, so it does not remove the sites. VECTOR_CURSOR_VIRTUAL_OPERATORS guards the form.
+- `TRect::Set(0,0,0,0)` gives one zero web; a `TRect(0,0,0,0)` temp spreads zeros across registers (64.8 to 92.57).
+- A by-value inline parameter gives a bitwise struct copy with the temp's address pushed first.
+- A named block-scoped cursor leaves the ctor's eax return unused, where a temp feeds it to operator=.
+- A plain vtable bound from an inline class needs @refs for every slot under the emitted manglings; the audit names only the vtable.
+- Tools: Scout733 rp.py (remaining budget at a source line by binary search), cn.py (diff masking esp offsets and jump targets; raw score misleads when the frame shifts).

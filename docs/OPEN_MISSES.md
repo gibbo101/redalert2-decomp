@@ -1838,3 +1838,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - OWNER DECISION: the 6-entry named-constants enum and the row-local DynamicVectorClass ctor, both Clears and the VectorClass dtor stay. Enum sizes 4 to 7 keep Print_CRCs at 100, 3 fails; any later Queue row placed before Print_CRCs must re-measure.
 - WOL 0x7540A0 (3,948 B code + jump table and byte index to 0x755067 + 8 pad, 4,048 B extent): 89.83, loose 90.06, shape 98.65 (a8983.cpp; pop_wa.json, anchor 0x753370; no catalog row, plan needs body_bytes, bound_evidence, symbol). Left: frame slots (105 esp lines), byte store order at 0xC02; target slot map in NOTES.md.
 - Nearing_Target, Planning 0x6182F0, 0x618C00, Fogged 0x4C1010 not reached.
+
+## Scout733 (2026-11-05, closed; 1,652 B: WDTMap.ini builder 0x72A880; drafts and tools build/class-work/Scout733/; Scout736 continues)
+- OWNER DECISION: file-local To_Point(Point2D by value), block-scoped `reset` cursor and symbol unknown_write_wdtmap_ini_72a880 stay as landed. The VectorCursor virtual-operator form stays guarded until the WDTSel rows confirm it, then unify.
+- Read_PCX_File 0x60D110: still 89.68 (Scout611/w/pcx_best_89.68.cpp); a trailing `pic->Unlock()` after the chain tail-duplicates and gives the reload but costs pic its esi (pcx_p2_trailing_unlock.cpp 67.70). No path to 100 seen.
+- 0x5CDF00 not attempted (overlay far behind HEAD; needs 0x5CEA30 moved). WOL 0x7459A0 read only: fragile population-4058, new dialog class at vtable 0x7AF94C, about 40 calls. WOL 0x759E20: no twin for the quick-match part. Cell 0x47E2C0 not read; the span holds three rets.
