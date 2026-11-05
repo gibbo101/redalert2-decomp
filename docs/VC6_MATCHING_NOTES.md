@@ -1879,3 +1879,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A default-ctor site after a by-value local acts as a pending site: it refuses a depth-4 callee and keeps a later depth-3 one.
 - A charged site can flip a later site even when itself refused.
 - Row-local 100.00 can hide breakage in callers: score caller rows before freezing a header-level form.
+
+## This-key parity (Scout775)
+- `[reg+reg]` orientation of a strength-reduced index can follow a parity-like tie on this-based memory references before the operand's first read; it does not follow T, data keys or declarations. Candidate for Exit_Object's add sites, untested.
+- `int i = 0;` at the top joins the zero constant web with a loop index; `i = 0` after an inline memset splits them.
+- A dead zero-trip loop still counts as a this-key where a folded arm does not.
+- Inline expansion of a dtor at an early-return site can flip distant ties through its local reads: a confounder when reading orientation.
+- Scout775 hid.py TARGET LEN lists accepted rows under 200 B whose normalised stream sits inside a target.
