@@ -1617,3 +1617,12 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - TibSun `Is_Complete_Turn(towards, by)`: the `by` const-ref temp is built before `towards` is evaluated.
 - Nested `if (a) { if (b) ... }` produces a hoist that a combined `&&` does not.
 - Repeated triples with depth-2 calls out of line are usually an inlined row. Check existing rows before spelling the code out.
+
+## Cursor rows and pending sites (Scout736)
+- A ctor refused at a budget of about 1596 must sit one inline level down: depth-one refusal is impossible there. A free wrapper returning the object makes its ctor out of line while later cursors stay inline.
+- Postfix `cursor++` is a pending site; prefix is not. TibSun's postfix wrapper is a free site.
+- Sites can have a two-sided window: 3 to 14 pending sites before the main loop both refused one inline and allowed the first of two dtors.
+- Natural sites come from accessors: Get_Filename, Map::Get_Origin, Get_Play_Rect, Get_Back_Rect, INIClass::Load(file), Territory getters.
+- tp.py T-phase scans also move the budget, so give the base a wider margin first.
+- `(*cursor)->ID` compare followed by `T *item = *cursor;` gives the re-read of array and element (61.90 to exact).
+- A hole fully covered by one normal row is skipped by gaps.py: use gaps2.py.

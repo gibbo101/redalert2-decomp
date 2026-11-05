@@ -5,13 +5,22 @@
 #include "shared/planning.hpp"
 #include "shared/surface.hpp"
 
+// @ref ?Length@Point2D@@QBEHXZ=0047d060
+// @ref ??GPoint2D@@QBE?AU0@ABU0@@Z=0047d040
+inline int Point2D::Length() const
+{
+    int x = X;
+    int y = Y;
+    return (int)unknown_sqrt_4ba410((double)y * y + (double)x * x);
+}
+
 void __fastcall Planning_Draw_Midpoint(Point2D start, Point2D end, int color)
 {
-    Point2D delta = start - end;
-    int distance = (int)unknown_sqrt_4ba410((double)delta.Y * delta.Y + (double)delta.X * delta.X);
-    if (distance >= 37) {
+    if ((start - end).Length() >= 37) {
+        int x = (start.X + end.X) / 2 - 10;
+        int y = (start.Y + end.Y) / 2 - 10;
         ::Rect view = Unknown_006F1F30();
-        ::Rect square((start.X + end.X) / 2 - 10, (start.Y + end.Y) / 2 - 10, 21, 21);
+        ::Rect square(x, y, 21, 21);
         unknown_surface_839964->Draw_Rect(view, square, color);
     }
 }
