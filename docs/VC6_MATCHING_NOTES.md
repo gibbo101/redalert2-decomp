@@ -1534,3 +1534,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 ## Later rows and real calls (Scout722)
 - A row can inline a later-addressed row: 0x5EDB20 is really a callback enumeration plus a direct call of 0x5EDD30, and that depth division keeps a nested row a call.
 - An arm that looks spelled out can be calls of real unit rows. Pending inline sites decide which rows go out of line.
+
+## Double locals and by-value Rects (Scout723)
+- `double angle` plus `double scaled = distance` inside inline Move_Coord fixes the frame by 8 B: the double makes a Y spill and a call result share a slot.
+- An inline taking `Rect box` by value and intersecting inside gives crossed Rect slots with no named local.
+- `Cell offset(ox, oy)` and fieldwise stores each fix only one add destination; a ctor for X plus a separate Y update fixes both.
+- `test ah,N` where `test esi,imm` was expected means the test is on a masked value, not the raw one.

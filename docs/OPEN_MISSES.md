@@ -1790,3 +1790,10 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout722 (2026-11-05, closed; ODRemoveFromDict 0x5EDD30 548 B; drafts build/class-work/Scout722/w/keep/; Scout724 continues)
 - 0x5EB490 and 0x5EBA80 are not rows: both are interior to 0x5EAD20, a 7,648 B window procedure (likely ComboDropWinCtrlProc). 0x5FFB00 Default_Dialog_Proc (1,488 B, ownrdraw.cpp:6764) 66.88 clean (ffb00_ffc_6688.cpp with invented helpers). 0x5E7EB0 89.55. 0x5E8720 53.29.
 - 0x5EDD30 compiles only in the joined unit (uses declarations from row 0x5EDB20's file).
+
+## Scout724 (2026-11-05, closed; 0 B; drafts build/class-work/Scout724/w/keep/; Scout725 continues)
+- ComboDrop 0x5EAD20: body 7,636 B + 12 pad to 0x5ECAF4 (independent decode, no tables); twin TibSun ComboDropWinCtrlProc; bogus rows 0x5EB490, 0x5EBA80 retire through the plan. 64.02, shape 96.80 (ead20_e3_6402.cpp, overlay keep/h, keep/rd35.cpp). Frame 0x380 vs 0x37C, zero webs, blend loop registers. Its teardown is row 0x5EDD30 inlined, so 0x601950 and 0x601C50 must become inline, landing as one round with ComboDrop; rd35 is 89.02 and needs about one more statement of IL.
+
+## Scout723 (2026-11-05, closed; 906 B: aim point 0x6D65B0, rad beams 0x6CA340; drafts build/class-work/Scout723/w/keep/; Scout726 continues)
+- OWNER DECISION: file-local Move_Coord in 0x6D65B0 and `Cell offset(ox, spread); offset.Y *= y;` in 0x6CA340 stay as landed (flagged, no dead stores).
+- Draw_Action_Line 0x4CAB90 92.49, shape 100 (dal_j0_9249.cpp; one slot flip; `Clipped_Fill` would be new). Draw_Voxel 0x6FF690 52.54 (dv_h_5091_shape8537.cpp; cache lookup must inline at the first site). Rock 0x6D5F40 64.37. Area_Modify 96.38 flat.
