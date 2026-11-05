@@ -1506,3 +1506,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Apparent tail-merge copy differences can be add-destination ties on an inlined Add, with the merges following from them. Phase period can be 32 in local count, not 8, in a large function; a Point2D temp counts as 2K only for sites after it. Calls and labels do not move those fronts.
 - Rows out of line at the first case of a huge function, when budget is ample, mean an inline wrapper around the statement.
 - `bool const &x = obj->Bitfield;` gives a dead byte store. `CoordStruct(coord)` as a by-value argument hoists X, Y, Z ahead of `Checked()`. `jl` on a loop over a static table means an int index loop, not a pointer loop.
+
+## comip levels and budget probes (Scout718)
+- Real comip levels decide the inline budget: `_QueryInterface` with its else arm, GetIID, Attach and an inline `_Release`, with the dtor calling `_Release`. One inline source then gave expand-release, expand-ctor and call-both at three rows.
+- `clsid == CLSID` through the shared GUID operator== counts as a site. Hand-expanded blocks can hide real calls: calling the real row took another row out of line and fixed three rows.
+- Empty inline probes after a suspect site measure the budget shortfall in about three compiles (kp.py, thr.sh); never deliver them.

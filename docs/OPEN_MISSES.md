@@ -1766,3 +1766,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout715 (2026-11-05, closed; 0 B; drafts build/class-work/Scout715/w/keep/; Scout718 continues)
 - Plan_Route 0x707F60 parked: 99.90 with probes (best_9990_probes.cpp), clean about 91.8 (cl.cpp). The legs.Add and unknown_478.Add mix by site has no natural explanation; the Count-store order at 0x600 and 0x15FF never appeared in 400+ variants.
 - Super Place 0x69D850 (4,388 B) 78.46, shape 96.91 (place_vd_7846.cpp, overlay h5/; `Chrono_Place_Anim`, `Above_Five` are hypotheses; com_ptr.hpp Assign_Held unprobed).
+
+## Scout717 and Scout718 (2026-11-05; Scout717 InitializeCtrl 0x5ED180, WolDictionary Add 0x6014E0, Remove 0x601C50; Scout718 Infantry Assign_Destination 0x501CE0 from a codex3 draft)
+- OWNER DECISION: RA2_CELL_FROM_COORD_AS_CELL and RA2_INFANTRY_COMIP_PERSIST stay in row 0x4FF450. `As_Unit` and `is_jumpjet` stay. `operator&` in infantry_locomotion_ptr.hpp stays. Try the comip levels in shared com_ptr.hpp on Super Place next.
+- Techno Get_Z_Adjust 0x6CFEA0 80.37 (z1.cpp; twin techno.cpp:5687; three rock arms merge in ours). JumpJet_To_Walk 0x508AB0 69.35. 0x5025C0 not attempted.

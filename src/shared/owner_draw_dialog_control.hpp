@@ -196,6 +196,10 @@ public:
 #endif
 };
 extern UnknownControlIndex unknown_registry_a73640;
+#ifdef RA2_OWNERDRAW_RECORD_DTOR
+// Whether kind is one of the listed dialog kinds (0x005E8590).
+BOOL __fastcall Is_Listed_Kind_5e8590(int kind);
+#endif
 // A control's registry record through the out-of-line Get, or null (0x005FC020).
 inline UnknownControlRecord *Get_Record(HWND window)
 {
