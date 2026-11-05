@@ -1662,3 +1662,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Row-exact forms that refuse at depth 4: `Point2D pixel = f(coord); return pixel;`, `::Rect rect; rect = ...; return rect;`.
 - A named local in a depth-1 accessor can flip the register regime: `PlanningBranchClass *branch = Branches[index];` took a row from 90 to 97. Naming `owner` before an argument call moved `lea` CSE back into ebx.
 - Dead `int` probes and dead static reads moved inline budget here, not ties, so a jump in a tp.py scan may be a budget effect.
+
+## Same-unit twins and record shapes (Scout742)
+- Follow a same-unit TibSun source (smartdeform.cpp) closely before reasoning about registers. An apparent scalar-replacement fault was the record's real form: `Add(UndoInfoStruct(point, value))` with a Point2D member and assigning ctors keeps the point's home memory where the record inlines; plain X, Y, Value fields do not. Spread 58 to 99.49, Deform_RMG 65.88 to 99.52, and two Resize COMDATs came exact with it.
+- A direct `cell->MapCoords` read differs from by-value Fetch_CellID(): the temp keeps X in a register, turning `sub word [slot],bp` into a register sub.
+- `lat_rect - r.Top_Left()` with an inline Rect::operator- went 57 to exact; the out-of-line form spills the whole Rect and shifts the frame sort of unrelated slots.
+- If/else and a ternary colour differently, and each can win in a different function. `if (Login(s)) return true; return false` keeps constant webs that `return Login(s)` loses (71 to 88).
+- `if (c) SetFocus(GetDlgItem(w, a)); else SetFocus(GetDlgItem(w, b));` cross-jumps to `push a; jmp; push b`; a ternary argument does not.
+- Earlier sites out of line with later sites of the same callee inline is a pending-site effect, not budget: spend probes up to 2,000 changed nothing, 30 empty sites flipped it.

@@ -1,3 +1,4 @@
+#define RGB_DECLARE_ACCESSORS
 #define RA2_COORD_FROM_CELL_INLINE
 #define RA2_COORD_AS_CELL
 // Header-static dynamic initializers of the unit at 0x004C26C0 and the

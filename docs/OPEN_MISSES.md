@@ -1880,3 +1880,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 - The __fastcall list-order sweep is closed with zero gain outside Planning: every by-value signature already has the listed order, with accepted callers proving it.
 - Fogged 0x4C1010: 50.26, shape 89.77 (w/fo_5026.cpp, overlay hf). Frame 0x12C vs 0x144; ctor 0x41B630 in Coord_Whole must refuse, which took only about 75-80 extra sites. Independent bound still needed.
 - Branch_Color 0x6127E0 95.34, Loop_Color 0x6129B0 92.95, 0x616A50 77.83 (one `js` for `jl`), 0x617AF0 90.00, Node_At 0x615D30 28.80 (w/ keys bcl, lc, ua, pu, nd).
+
+## Scout742 (2026-11-05, closed; 5,045 B: all Undo rows, Commit_Deform_Grid 0x685AC0, UndoInfoStruct Resize 0x687030, 0x6871E0; NOTES in build/class-work/Scout742/; Scout744 continues)
+- OWNER DECISION: unit macros RA2_UNDO_INFO_POINT, RA2_RECT_MINUS_INLINE, RA2_RECT_POINT_INLINE, RA2_CELL_LAT_BOOL, RA2_MAP_VIEW_56A870 stay in HeaderStatics_diagonal_init_00684d50.cpp. 0x471D10 returns bool only inside this unit; a global rename touches 86 population manifests, so it stays guarded until that row lands. Names Ripple_Deform_Points and Commit_Deform_Grid are TibSun hypotheses.
+- Login_Wonline 0x742FD0 (1,857 B): 68.06 clean, shape 92.81 (keep/w742fd0_clean.cpp). Get 0x765E60 is out of line at the first three sites and inline at the last two: a pending-site effect flipping between 20 and 30 sites after the third Get. keep/w742fd0_probe30_DO_NOT_DELIVER.cpp reaches 92.74 with empty sites. 0x743720 (2,404 B) not drafted.
+- Bounds corrected: Ripple 587 B, Deform_Cell 393 B, Deform_Cell_RMG 669 B, 0x685AC0 2,327 B. New declarations in vector_elements.hpp broke Print_CRCs and 0x4F1190 AI_Build_Defense, added to fragile_probe.
