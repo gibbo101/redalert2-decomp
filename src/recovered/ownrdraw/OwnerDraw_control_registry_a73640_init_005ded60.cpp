@@ -9,6 +9,27 @@
 #include "shared/wol_dictionary.hpp"
 #include "shared/owner_draw_dialog_control.hpp"
 
+inline void UnknownNodeList_006003d0::unknown_remove_node(UnknownNode_006003d0 *node)
+{
+    UnknownNode_006003d0 *previous = 0;
+    UnknownNode_006003d0 *current = Head;
+    while (current != 0) {
+        if (node == current) {
+            break;
+        }
+        previous = current;
+        current = current->Next;
+    }
+    if (current != 0) {
+        if (previous != 0) {
+            previous->Next = current->Next;
+        } else {
+            Head = current->Next;
+        }
+        operator delete(current);
+    }
+}
+
 namespace OwnerDraw {
 
 inline UnknownControlRecord::~UnknownControlRecord()
