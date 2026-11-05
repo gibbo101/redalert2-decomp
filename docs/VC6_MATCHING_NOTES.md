@@ -1490,3 +1490,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `CoordStruct(Point2D(call), height)` evaluates the Point2D first, against right-to-left; a by-const-ref helper keeps height first.
 - A this/position ebx/ebp swap tracks final-code base refs only: dead reads, aliases and inline params do not count.
 - `R|G|B` reassociation does not follow source order; it looks register-need driven.
+
+## Phase scan first, long compare lists (Scout713, Scout714)
+- A first-read tie (`mov cx,[K+ecx*4]` vs `mov cx,[eax]; add cx,[edx]`) unmoved by about 60 helper forms was a T-phase tie: run tp.py before more form variants. Rows parked before Scout651 may hide the same tie.
+- A repeated return in the one arm that would fall into the tail moves the whole case past the ret, and the copies cross-jump.
+- `(Cell)` casts cost frame slots. Declaring a loop counter before the value it is added to swaps which register the `add` writes.
+- `bool c12 = list; if (c12)` sets arm layout for long compare lists. `x != old_x || y != old_y` after up-front copies threads away compares on unchanged fields. One if/else-if chain with one trailing call tail-duplicates it into each arm; a per-arm call merges with a `jmp`.

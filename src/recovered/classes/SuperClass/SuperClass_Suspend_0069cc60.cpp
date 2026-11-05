@@ -4,10 +4,10 @@
 bool SuperClass::Suspend(bool on)
 {
     if (unknown_0x55 && !unknown_0x56 && on != unknown_0x58 && unknown_0x48) {
-        if (!on && !Type->ManualControl) {
-            RechargeTimer.Start();
-        } else {
+        if (on || Type->ManualControl) {
             RechargeTimer.Stop();
+        } else {
+            RechargeTimer.Start();
         }
         unknown_0x58 = on;
         return true;

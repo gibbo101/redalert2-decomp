@@ -1749,3 +1749,12 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout712 (2026-11-04, closed; 0 B; drafts build/class-work/Scout712/w/keep/, gr.py greedy toggle search)
 - Barrel 0x43B7E0 99.42 (bar_9942_z.cpp; 2 lines at 0x1C3). Bounce 99.55. Team 0x6BDAA0 98.76. SpotLight 0x5DDB90 66.98, frame right. Spark rows, Missile, Unit Draw_It unchanged. These are spent register and slot ties; revisit only with a new mechanism.
+
+## Scout713 (2026-11-05, closed; 1,308 B: EnumChild callback 0x5E9BB0, 0x5E8C50; drafts build/class-work/Scout713/w/keep/; Scout716 continues)
+- OWNER DECISION: `Is_Placed_Control`, `Adjust_Control` and `Is_Lobby_Control` stay as landed. Bucket_Index binds by @ref to 0x602020, where the accepted row is named Key_Hash: reconcile later.
+- 0x5E9410 (1,938 B) 99.79, shape 100 (e9410_9979.cpp; one compare operand order at +0x765).
+
+## Scout714 (2026-11-05, closed; Do_MISSION_UNLOAD 0x701580 4,124 B; drafts build/class-work/Scout714/w/; Scout715 continues)
+- OWNER DECISION: `current_dir`, `delay`, the early `attempt`, `CoordStruct &o`, and the duplicated `return Control()->Normal_Delay()...` stay as landed.
+- Plan_Route 0x707F60 (6,185+7 B) 90.43 with 6 dead phase probes (tk_6.cpp, not landable). Draw_Voxel 0x6FF690 has no local draft.
+- Host note: Wine wedged and the Mac hung on 2026-11-05 about 00:35Z; a reboot cleared it. accept.sh had been choosing local Wine for any plan containing the separate_units key, even when false: fixed.
