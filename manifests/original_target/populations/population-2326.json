@@ -4,8 +4,8 @@
     "id": "population-2326",
     "inventory_sha256": "cfd3108458bd6cb80aa5537e1d10209e8eb1ba9a032a8f2641462d41fba6c655",
     "gaps_sha256": "5bbcfb84229b5ea898dec3b3fab89c812ed9b2502b602303506d8b2cdded6e46",
-    "historical_population_sha256": "23f0d7421e9bfaa9e9b248b32fbf576790380e4dbd10c290f063522ee34014ee",
-    "historical_acceptance_sha256": "084ec0fa8727c26096e9e1e989595f1158f676d5f1a763d0bb8facaca5fd74c0"
+    "historical_population_sha256": "4272e2aa0df8d39831cb96e843d0d669e0c74ab55dcd77414ce7ecfc6a1867c8",
+    "historical_acceptance_sha256": "b173a95a81a1affd9b7c12557999d3e430145afdf89bcd790d13f36c4c44ce9e"
   },
   "references": {
     "_unknown_empty_rect": 10751576,
@@ -2124,7 +2124,7 @@
     "??1MovieHandle@@UAE@XZ": 5905312,
     "??_7MovieHandle@@6B@": 8021588,
     "__imp__InitializeCriticalSection@4": 7971304,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "??1DSurface@@UAE@XZ": 4892064,
     "??0DSurface@@QAE@XZ": 4892176,
     "?Fill_Rect@DSurface@@UAE_NABVRect@@H@Z": 4895984,

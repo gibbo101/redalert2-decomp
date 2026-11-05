@@ -4,8 +4,8 @@
     "id": "population-1940",
     "inventory_sha256": "4d1a8cfd815c77764d988d43f29957cb0dac342a9e310e68e1665d8e41ab7f05",
     "gaps_sha256": "b27e317e88d6222aaecf5716bab4e8f8853b6002d25550ceea4206ce425ef266",
-    "historical_population_sha256": "d15df558198935bb5fa4aaea49430a3b49e749eb31fc0e039d95afce5ae76ce5",
-    "historical_acceptance_sha256": "9f3b29a07e7bac6e12d1f7cc02a4c128ec22fc40aaa47dbd72ca50a7c50af9f6"
+    "historical_population_sha256": "678e7f02586b0b833dba2d997ec21ee006a2cfa0643ba8c19c1e39552d806b48",
+    "historical_acceptance_sha256": "90c353baf3016c6bcaaa3a01a15c24e79c47fc7d8997b39abe393f9915dcf041"
   },
   "references": {
     "?target@Call_402190_0@@QAEIXZ": 4198400,
@@ -932,7 +932,7 @@
     "??0Buffer@@QAE@PAXJ@Z": 4424384,
     "??0Buffer@@QAE@PBXJ@Z": 4424512,
     "??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z": 4732496,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "??0DSurface@@QAE@PAUIDirectDrawSurface@@@Z": 4893536,
     "??0DSurface@@QAE@XZ": 4892176,
     "??0MSEngine@@QAE@XZ": 5975008,

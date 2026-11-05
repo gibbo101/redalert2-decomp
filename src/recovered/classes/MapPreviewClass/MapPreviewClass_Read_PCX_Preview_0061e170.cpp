@@ -24,7 +24,7 @@ bool UnknownPreview_0061D430::Load_0061E170(char const *filename)
 // @ref ??_GCDFileClass@@UAEPAXI@Z=00401950
 // @ref ??_GCCFileClass@@UAEPAXI@Z=004019a0
 // @ref ??0CCFileClass@@QAE@PBD@Z=00468f50
-// @ref ??0DSurface@@QAE@HH_N@Z=004aa4a0
+// @ref ??0DSurface@@QAE@HHE@Z=004aa4a0
 // @ref ??1Buffer@@QAE@XZ=00438410
 // @ref ??1BufferIOFileClass@@UAE@XZ=0042f350
 // @ref ??2@YAPAXI@Z=00782017

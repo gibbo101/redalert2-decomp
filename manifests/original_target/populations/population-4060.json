@@ -4,8 +4,8 @@
     "id": "population-4060",
     "inventory_sha256": "a6fa5040276c8a87835330773cb8289f8f76475425ac7110e76567ef15e35bb8",
     "gaps_sha256": "51c163e8aaad4ddd7f5198944ab5f4b03e4f654a7edbf704d1d86bb87aa9f56e",
-    "historical_population_sha256": "62c7104c11533f54762f0735874c3ce8e40368f0e23470bc4efdc97b9d76a4dc",
-    "historical_acceptance_sha256": "1a548107e07dd6dbadcc61439a9ba371a9aafa60c9278beb7e738a57e28eea43"
+    "historical_population_sha256": "80d449eacd7e276e1a903dd2fef97303f7e178e49f8c47c5efa6c7729005d8f1",
+    "historical_acceptance_sha256": "e7acee23b92f0175d74f0c0cb96e3702c248389af369e55a90865b91fe40f598"
   },
   "references": {
     "?target@Call_402190_0@@QAEIXZ": 4198400,
@@ -2481,7 +2481,7 @@
     "?overlap_passed_007d59fc@@": 8215036,
     "?Debug_Printf@@": 4221168,
     "?Video_Debug_Log_00496460@@": 4809824,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "??1DSurface@@UAE@XZ": 4892064,
     "?Fill@XSurface@@UAE_NH@Z": 7818784,
     "?Get_Pixel@XSurface@@UAEHABUPoint2D@@@Z": 7815632,
@@ -5184,7 +5184,20 @@
     "??_EParticleClass@@UAEPAXI@Z": 6334432,
     "__imp__DirectDrawCreate@12": 7970888,
     "__imp__DirectDrawCreate": 7970888,
-    "?Set_Video_Mode@@YI_NPAUHWND__@@HHH@Z": 4807824
+    "?Set_Video_Mode@@YI_NPAUHWND__@@HHH@Z": 4807824,
+    "?Infantry@@3V?$DynamicVectorClass@PAVInfantryClass@@@@A": 10706504,
+    "?Clear@?$WolArrayList@VWstring@@@@QAEXXZ": 7758272,
+    "?Infantry@RulesClass@@QAE_NAAVCCINIClass@@@Z": 6601296,
+    "?Add@?$WolDictionary@IUUnknownControlRecord@OwnerDraw@@@@QAE_NABIABUUnknownControlRecord@OwnerDraw@@@Z": 6296800,
+    "__real@8@400f8000000000000000": 8017344,
+    "?Delete@?$DynamicVectorClass@PAUUnknownGlobalPacket@@@@QAE_NH@Z": 6482432,
+    "?Clear@?$VectorClass@V?$TRect@H@@@@UAEXXZ": 5826192,
+    "??GPoint2D@@QBE?AU0@ABU0@@Z": 4706368,
+    "?Resize@?$VectorClass@UUndoInfoStruct@@@@UAE_NHPBUUndoInfoStruct@@@Z": 6844464,
+    "?Resize@?$DynamicVectorClass@UUndoInfoStruct@@@@UAE_NHPBUUndoInfoStruct@@@Z": 6844896,
+    "?Add@?$DynamicVectorClass@PAVPlanningTokenClass@@@@QAE_NABQAVPlanningTokenClass@@@Z": 6404416,
+    "?unknown_slot24@Tactical@@UAE_NABUCoordStruct@@0H_N@Z": 6996320,
+    "__real@8@4003f000000000000000": 8053472
   },
   "regions": [
     {
@@ -5961,7 +5974,7 @@
         {
           "offset": 17,
           "kind": 20,
-          "symbol": "??0DSurface@@QAE@HH_N@Z",
+          "symbol": "??0DSurface@@QAE@HHE@Z",
           "target": 4891808,
           "addend": 0,
           "resolved": 85163
@@ -6191,7 +6204,7 @@
           "resolved": 85060
         }
       ],
-      "source_sha256": "ef0434bd3e0dfe771d5a2b95b3b667045cbebd277cba8f9261654cfd5cd61050",
+      "source_sha256": "fa9f277b6c053f5a59e3cf3bb92dd2bf703982879d68ec1d3ce87df556968cc9",
       "source": "src/recovered/unowned/Probe_DirectDraw_Rendering_004957e0.cpp",
       "population": "population-4060",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",

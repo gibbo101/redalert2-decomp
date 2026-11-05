@@ -20,7 +20,7 @@ void __cdecl Video_Debug_Log_00496460(char const *format,...);
 // @ref ?overlap_passed_007d59fc@@=007d59fc
 // @ref ?Debug_Printf@@=004068f0
 // @ref ?Video_Debug_Log_00496460@@=00496460
-// @ref ??0DSurface@@QAE@HH_N@Z=004aa4a0
+// @ref ??0DSurface@@QAE@HHE@Z=004aa4a0
 // @ref ??1DSurface@@UAE@XZ=004aa5a0
 // @ref ?Fill@XSurface@@UAE_NH@Z=00774e20
 // @ref ?Get_Pixel@XSurface@@UAEHABUPoint2D@@@Z=007741d0

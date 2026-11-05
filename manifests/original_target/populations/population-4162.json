@@ -4,8 +4,8 @@
     "id": "population-4162",
     "inventory_sha256": "a35f445a8198d4ed3988a77d431b0fb0c84b918d03b1c34dcaca245bd01f1e5c",
     "gaps_sha256": "2c5dcc36ed56fd577483b240269aab3987844922c3057fff09e8c2c1a734749a",
-    "historical_population_sha256": "785d88da231cfefca791416c2e612670f99550c1f1421a5ceaba8a9f7806d1ab",
-    "historical_acceptance_sha256": "be3e6a2ee173956f3d1a43229aa002bd40bd06b4cf277033894bb72b21f661be"
+    "historical_population_sha256": "e70ad5fdd63433bb7fe311177560435f823ae55e29606ce4716d45c1988e215f",
+    "historical_acceptance_sha256": "c97238750fb6c1c75c8ef5c53750ce99b8884233fc1bac472b1c5d7348bc8054"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1985,7 +1985,7 @@
     "??_C@_0BE@NGLC@Tip?3DiplomacyButton?$AA@": 8315424,
     "??_C@_0BC@IPID@Tip?3OptionsButton?$AA@": 8315404,
     "?Unknown_00630B70@RadarClass@@QAE?AVRect@@ABV2@AAV2@_N@Z": 6490992,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "?Unknown_00632700@RadarClass@@QAEXXZ": 6498048,
     "?Unknown_004712c0@CellClass@@QAEXPAVRGBClass@@0@Z": 4657856,
     "?Unknown_00632620@RadarClass@@QAEXABUPoint2D@@@Z": 6497824,
@@ -11426,7 +11426,8 @@
     "??_G?$DynamicVectorClass@V?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@@@UAEPAXI@Z": 5212320,
     "??_E?$DynamicVectorClass@V?$DistributionObject@PAVBuildingTypeClass@@@?$DiscreteDistributionClass@VBuildingTypeClass@@@@@@UAEPAXI@Z": 5212320,
     "?unknown_slot68@BuildingClass@@UAEXHH@Z": 4432768,
-    "?unknown_471d10@CellClass@@QAE_NXZ": 4660496
+    "?unknown_471d10@CellClass@@QAE_NXZ": 4660496,
+    "__real@8@4003f000000000000000": 8053472
   },
   "regions": [
     {
@@ -15434,7 +15435,7 @@
         {
           "offset": 324,
           "kind": 20,
-          "symbol": "??0DSurface@@QAE@HH_N@Z",
+          "symbol": "??0DSurface@@QAE@HHE@Z",
           "target": 4891808,
           "addend": 0,
           "resolved": 4293368152
@@ -15448,7 +15449,7 @@
           "resolved": 7071
         }
       ],
-      "source_sha256": "cf0aed8f9c978ac41cb1a6eed202bf18d1d2bd50e56b6c9ab903e5568ad1692d",
+      "source_sha256": "dbf03443e5aea461c9b9915c4410fb9ffc6c3e44bccfb60e0328cbcd859a6be9",
       "source": "src/recovered/classes/RadarClass/RadarClass_Unknown_00630A00_00630a00.cpp",
       "population": "population-4162",
       "padding_sha256": "ca4b9a2ec05863e71b87c84feb71741348a30400daeddedd67bc4cdbca737252",

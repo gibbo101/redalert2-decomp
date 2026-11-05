@@ -29,7 +29,7 @@ class DSurface : public XSurface {
 public:
     static DSurface *__fastcall Create_Primary(DSurface **back_buffer); // 004AA660
     DSurface();                                                     // 0x004AA610
-    DSurface(int width, int height, bool system_memory);            // 0x004AA4A0
+    DSurface(int width, int height, unsigned char system_memory);            // 0x004AA4A0
     DSurface(IDirectDrawSurface *surface);                          // 0x004AAB60
     virtual ~DSurface();                                            // 0x004AA5A0
 

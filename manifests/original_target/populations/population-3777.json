@@ -4,8 +4,8 @@
     "id": "population-3777",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "0600448b3a84ae742a446a74ae0a47afc00ab20dbaafe4c4b9c3f16b51dceac7",
-    "historical_acceptance_sha256": "21eac734290121dfeb80740590045b89fcbf1189ae025aeb3ce46bac02b0c67b"
+    "historical_population_sha256": "6b11109ea9852cbdf5a209cbd8c4eb3963116cf127d2565097240e4aafd80666",
+    "historical_acceptance_sha256": "1d832bbf46d27c3e54635ca06cf0b4700a9c1618be8ecf60b0cac6616cd08da7"
   },
   "references": {
     "_unknown_empty_rect": 8806368,
@@ -2403,7 +2403,7 @@
     "?Copy_From@XSurface@@UAE_NABVRect@@AAVSurface@@0_N2@Z": 7819008,
     "?Clip_Blit_Rects@@YI_NAAVRect@@ABV1@01@Z": 7819664,
     "?Name@MissionControlClass@@QBEPBDXZ": 5852688,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "??1DSurface@@UAE@XZ": 4892064,
     "??0DSurface@@QAE@XZ": 4892176,
     "?Fill_Rect@DSurface@@UAE_NABVRect@@H@Z": 4895984,

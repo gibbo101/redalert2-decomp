@@ -4,8 +4,8 @@
     "id": "population-2819",
     "inventory_sha256": "6165e5be5ba255fb5f909aae870d3cc0e56deb3364aea8d4ac7fc07fed878b2c",
     "gaps_sha256": "039c7eacdbb9212c1b3c79c8e42e83b331d071f0a179627c7b71b140b012e273",
-    "historical_population_sha256": "75a6f2026d057c0e01d7bb14f79c078ca01ef8321c27a38c9276d263341fe74e",
-    "historical_acceptance_sha256": "5e42449586bdc6d6a81750e323369f000ece3af89ae1d8ab2592b39ad7897fbd"
+    "historical_population_sha256": "90ed9aee5eba8a5f288c087b8e5da32a851e466a25078f643566d820e0d98ad5",
+    "historical_acceptance_sha256": "1cd43ee3172bf9d717600aba07cfecf8708c07e74acaaaa8f9dc48dd688037a4"
   },
   "references": {
     "_unknown_empty_rect": 10751592,
@@ -2302,7 +2302,7 @@
     "__imp__UpdateWindow@4": 7971948,
     "__imp__InitializeCriticalSection@4": 7971304,
     "_wcslen": 7878149,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "?unknown_flag_852fd7@@3_NA": 8728535,
     "??1DSurface@@UAE@XZ": 4892064,
     "??0DSurface@@QAE@XZ": 4892176,

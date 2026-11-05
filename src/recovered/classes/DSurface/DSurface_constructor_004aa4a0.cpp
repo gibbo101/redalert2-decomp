@@ -1,4 +1,4 @@
-// DSurface::DSurface(int width, int height, bool system_memory) (0x004AA4A0)
+// DSurface::DSurface(int width, int height, unsigned char system_memory) (0x004AA4A0)
 // Creates an offscreen DirectDraw surface of the given size (system memory
 // when asked; a plain offscreen 3D-device surface when unknown_flag_852fd7
 // is set) and reads back its
@@ -10,7 +10,7 @@
 // @ref ?DirectDrawObject@@3PAUIDirectDraw@@A=008523cc
 // @ref ?unknown_flag_852fd7@@3_NA=00852fd7
 
-DSurface::DSurface(int width, int height, bool system_memory)
+DSurface::DSurface(int width, int height, unsigned char system_memory)
     : XSurface(width, height),
       BytesPerPixel(0),
       BufferPtr(0),

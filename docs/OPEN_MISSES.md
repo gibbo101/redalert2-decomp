@@ -2005,3 +2005,8 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout769 (2026-11-05, closed; 0 B; NOTES, lab scripts, keep/ in build/class-work/Scout769/; Scout771 continues)
 - Load_Lobby_Options 0x5CCA30: keep/lo_ssc_6594.cpp 65.94, shape 99.39, normal arm's tail is real row Set_Slot_Color_005c9ab0. The ebx/edi swap flips on one reference: one `dialog` argument replaced by a global gives 99.03, one extra side_id read in an arm, or removing color_id's last use. Need a no-byte form dropping one dialog ref or adding one side_id ref.
 - AnimClass::AI 0x421710: 85.74; 28+ dead data keys give 86.62, so the real row has more keys. Height's mapping not reproduced. Allocate_Ports 0x673090 87.47, five faults. 0x78E854 is CRT (shape of __get_lc_time): move to the library ledger. 0x519500, 0x6809F0 not reached.
+
+## Scout770 (2026-11-05, closed; 539 B: PlanningToken 0x613330; NOTES and keep/ in build/class-work/Scout770/; Scout772 continues)
+- OWNER DECISION: file-local Take_Event, Finish_Step and template Max stay as flagged hypotheses grouping real statements; the row needs `@ref ?Delete@?$DynamicVectorClass@PAVTechnoClass@@@@QAE_NH@Z=0061bdc0`.
+- 0x617AF0 97.10 (pu_pv4_9710.cpp): only tail Help(4) expands where target calls 0x616F50; needs a real spend after Member_Event at the same site count. 0x6130B0 77.68 (needs a rename). Team 0x6BDAA0 98.70: slots order 3,6,6, which the sort model forbids, so center's slot carries about 3 refs not surviving to the listing. Wait_Callback 96.51 (w_c1_9651.cpp is measuring only); slot map {i1,first2} {first1,i2} {name1,name2}.
+- Scout771 r1 Load_Lobby_Options 0x5CCA30 landed: `if (kind == 4) kind = 2; else if ...` cross-jumps to one store but the extra blocks flip the colouring tie.

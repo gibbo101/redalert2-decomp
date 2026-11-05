@@ -4,8 +4,8 @@
     "id": "population-1578",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "bf784aee53ed3b7411fa9da817b9bc2c92f3f9a625b5518a90855a049ef87e59",
-    "historical_acceptance_sha256": "02d066bc6dd82d13a7bf05c8bb45a51fb02e5e9423972ee9e8002a75b6bb3777"
+    "historical_population_sha256": "ba611e4718b59a7ffb9a53f6389a846b252c5b62cf25d10165fd670cb6c23555",
+    "historical_acceptance_sha256": "c375c9ef20744389ee519955bea1bec64bf0b4436ba3df2b412e865a067cab5f"
   },
   "references": {
     "?ZBufferPtr@@3PAVZBuffer@@A": 8590772,
@@ -289,7 +289,7 @@
     "__DAT_00a70cc4": 10947780,
     "__DAT_00a70cd0": 10947792,
     "__DAT_00a70cc0": 10947776,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "??1DSurface@@UAE@XZ": 4892064,
     "??0DSurface@@QAE@XZ": 4892176,
     "?Fill_Rect@DSurface@@UAE_NABVRect@@H@Z": 4895984,

@@ -4,8 +4,8 @@
     "id": "population-3581",
     "inventory_sha256": "6270f118a30bd26a865b752449c6c1428c7a9816c0e98c54baed8bfc49fa440b",
     "gaps_sha256": "87a19a8ec71032157311a991c59b91de2a1dcd918e792a5b4151bb72c698ee0d",
-    "historical_population_sha256": "7069f61349e93f72e77874fc0e97838138367dae7a058476a59c32f87197c935",
-    "historical_acceptance_sha256": "36f2dcc6b074058223540540c76b1e87003a4c3cf481875233f47c050be1b92e"
+    "historical_population_sha256": "affb2565d9aa16747a92d30239dcf1c8502947fa4bb6f67eef6de4458bbf61a5",
+    "historical_acceptance_sha256": "cc4787642114d2e65c4c1c4a41cce3c33c876f766bf154b49fce665497865251"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -2782,7 +2782,7 @@
     "??1GameOption@WorldDominationTour@@UAE@XZ": 7505520,
     "??_7GameOption@WorldDominationTour@@6B@": 8057112,
     "__imp__InitializeCriticalSection@4": 7971304,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "??1DSurface@@UAE@XZ": 4892064,
     "??0DSurface@@QAE@XZ": 4892176,
     "?Fill_Rect@DSurface@@UAE_NABVRect@@H@Z": 4895984,

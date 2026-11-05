@@ -47,7 +47,7 @@ bool UnknownPreview_0061D430::Read_INI(CCINIClass const &ini)
 // @ref ??_GStraw@@UAEPAXI@Z=0049ed40
 // @ref ??_GBufferStraw@@UAEPAXI@Z=0049ed60
 // @ref ??0Buffer@@QAE@PAXJ@Z=004382c0
-// @ref ??0DSurface@@QAE@HH_N@Z=004aa4a0
+// @ref ??0DSurface@@QAE@HHE@Z=004aa4a0
 // @ref ??0LZOStraw@@QAE@W4CompControl@0@H@Z=0053efb0
 // @ref ??1Buffer@@QAE@XZ=00438410
 // @ref ??1LZOStraw@@UAE@XZ=0053f010

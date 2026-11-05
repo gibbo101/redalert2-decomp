@@ -1850,3 +1850,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Named copies after a threaded chain are coalesced; a copy between the chain and its test stops threading.
 - Inlined rows can hide behind hand-expanded tails: check the unit for rows with the same statements.
 - A wrong form can read high only because branch targets realigned: check loose and the row diffs.
+
+## Tail refusal and blocks at colouring time (Scout770, Scout771)
+- A last site gets all remaining budget, so added root statements only grow it. Wrappers that move real statements out of the root flip it naturally; a 2^n grid of wrappers and accessors at about 2 s per compile finds the state.
+- Moving a wrapper boundary swaps two sites: refusing one frees the budget that expands another.
+- A named by-value event, `EventClass join(...); f(join);`, reorders big frame slots and gives `lea esi` rather than `mov esi,eax` on the ctor result.
+- Repeated stores that cross-jump to one instruction still exist as blocks at colouring time: an else-if chain and a `||` test give identical bytes but different register ties.
+- diff_candidate can score 100.00 with a wrong binding; only check_plans shows it.

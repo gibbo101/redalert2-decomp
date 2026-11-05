@@ -24,7 +24,7 @@ void UnknownPreview_0061D430::Unknown_0061E930(unsigned short const *image)
         }
     }
 }
-// @ref ??0DSurface@@QAE@HH_N@Z=004aa4a0
+// @ref ??0DSurface@@QAE@HHE@Z=004aa4a0
 // @ref ??2@YAPAXI@Z=00782017
 // @ref ?unknown_shift_852fb8@@3HA=00852fb8
 // @ref ?unknown_shift_852fbc@@3HA=00852fbc

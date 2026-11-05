@@ -4,8 +4,8 @@
     "id": "population-3960",
     "inventory_sha256": "c6d2bd62e1f0a08aefc5e1d8d087812d643d4fbc498cd8dffeda137f68b60500",
     "gaps_sha256": "e4b8fbd89f60886113ebf9005354a950ea7edfe2c9659b37417776f2ddff7238",
-    "historical_population_sha256": "e45078d8007213fd35a950f1bd06601afb3cc0287874bf99abe5f900c8cfb86e",
-    "historical_acceptance_sha256": "9b16ff5e0ab0f93d4f13edeb080fcf532168db1bbb6ee951e2ff4e94535ec716"
+    "historical_population_sha256": "db48ea0d5ebe74d8118e3aa5f754a7b322f50478da3bed8cb270a0d86d436ab5",
+    "historical_acceptance_sha256": "af38be6da7ecf401a6f8fbc10d0f56e2cb2aa63d938844e2c43ed11cdaf83dd2"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3876,7 +3876,7 @@
     "??_7DSurface@@6B@": 7998436,
     "?unknown_8523e4@@3HA": 8725476,
     "?unknown_8523e0@@3HA": 8725472,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "?unknown_flag_852fd7@@3_NA": 8728535,
     "??1DSurface@@UAE@XZ": 4892064,
     "??0DSurface@@QAE@XZ": 4892176,
@@ -19993,7 +19993,7 @@
         {
           "offset": 548,
           "kind": 20,
-          "symbol": "??0DSurface@@QAE@HH_N@Z",
+          "symbol": "??0DSurface@@QAE@HHE@Z",
           "target": 4891808,
           "addend": 0,
           "resolved": 4294356456

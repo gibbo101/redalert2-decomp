@@ -4,8 +4,8 @@
     "id": "population-4080",
     "inventory_sha256": "04863d0441a245ef338157b5e87c594625610e37e403d2cacb2807cf912a6957",
     "gaps_sha256": "b3e04975e22283621c163de880886a226f40ee115cfe9c3bb41e0fb26d7bb7a5",
-    "historical_population_sha256": "987f6dec857d87895a2c868a9072cb034adf9ab9ea6d6ef86bb015f1a8dfcc25",
-    "historical_acceptance_sha256": "c976ece1c63473c86e0c2b6be1535e185d200bc0f6a23af4c7a42a45de9dea32"
+    "historical_population_sha256": "b0fc57c4420acedb20308be626a054c78655a9500a30f7c7b47f4b30cf751ee0",
+    "historical_acceptance_sha256": "9082636a05dc74a8adf979167f250c21cf4ce4d8d8afd7a2289779cc5abb61cc"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -1772,7 +1772,7 @@
     "??0ControlClass@@QAE@ABV0@@Z": 4732032,
     "??0ControlClass@@QAE@IHHHHI_N@Z": 4731952,
     "??0ConvertClass@@QAE@ABVPaletteClass@@0PAVSurface@@H_N@Z": 4732496,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "??0DSurface@@QAE@PAUIDirectDrawSurface@@@Z": 4893536,
     "??0DSurface@@QAE@XZ": 4892176,
     "??0DropListClass@@QAE@HPAGHIHHHHPBX1@Z": 4869568,

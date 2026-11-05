@@ -4,8 +4,8 @@
     "id": "population-1573",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "8f515a654c42df71615c88004ae6385483b116fa1d0959024beaed88d20610ba",
-    "historical_acceptance_sha256": "333853411e71e467c4337c89ead1379d957dba9940b3bfc1a6cfb9e389bba778"
+    "historical_population_sha256": "143db418175c889227c9885f0f3942a26f396b31052e155027227cfb8f06a220",
+    "historical_acceptance_sha256": "a5433eeacf1516284b3896e71f1bfc682cc90a3897d8ef9e039aea18df6f4f68"
   },
   "references": {
     "?ZBufferPtr@@3PAVZBuffer@@A": 8590772,
@@ -290,7 +290,7 @@
     "__DAT_00a70cc4": 10947780,
     "__DAT_00a70cd0": 10947792,
     "__DAT_00a70cc0": 10947776,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "??1DSurface@@UAE@XZ": 4892064,
     "??0DSurface@@QAE@XZ": 4892176,
     "?Fill_Rect@DSurface@@UAE_NABVRect@@H@Z": 4895984,

@@ -4,8 +4,8 @@
     "id": "population-3012",
     "inventory_sha256": "b75de47a78a1b7009510842848846be7fd9df6814b0104185c802718316a5698",
     "gaps_sha256": "53b3fc469c75bade7aa14db532943ef43fa42b8620872aae500a8701a6da96cd",
-    "historical_population_sha256": "56792f9149a4cb0dde090b9b5d066678402216a4c07fa199b2281ece73ffca64",
-    "historical_acceptance_sha256": "182f1f6d3d0520c5a92ad3eead498f310e88d9fe07f891c8fab26995a75806d8"
+    "historical_population_sha256": "c95d26127cdc8b94e7b41df4ef1a4cfdd1b908bd717969240961bcb9e6968984",
+    "historical_acceptance_sha256": "055e3bbe2da8234096316fa923f4bb1d6c9fecca8a456479037aa4184b19f91c"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -4408,7 +4408,7 @@
     "__imp__UpdateWindow@4": 7971948,
     "__imp__InitializeCriticalSection@4": 7971304,
     "_wcslen": 7878149,
-    "??0DSurface@@QAE@HH_N@Z": 4891808,
+    "??0DSurface@@QAE@HHE@Z": 4891808,
     "?unknown_flag_852fd7@@3_NA": 8728535,
     "??1DSurface@@UAE@XZ": 4892064,
     "??0DSurface@@QAE@XZ": 4892176,
