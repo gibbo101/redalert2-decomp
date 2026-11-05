@@ -7,9 +7,9 @@ Earlier owner periods are in [history/](history/).
 
 ## Owner state (2026-11-04 01:30Z): start here
 
-- **Numbers.** 77.61% matched .text (see STATUS.md), up from 67.38% at the account switch below. The queue is empty; [STATUS.md](STATUS.md) has current figures.
+- **Numbers.** 77.63% matched .text (see STATUS.md), up from 67.38% at the account switch below. The queue is empty; [STATUS.md](STATUS.md) has current figures.
 - **Host rules learned 2026-11-03.** `RA2_REMOTE_COMPILE` must be set (runq.sh and build/owner-watch/fullbuild.sh default it on); scoring stays in local Wine, one compile at a time. Full builds are serialized by private/tools/fullbuild_lock.sh. Keep two Mac lanes; memory stop rule is `memory_pressure` free under 15%, disk alert 25 GiB. A refused round must leave the queue head before any rerun.
-- **Mac lanes.** Scout737 (Planning family after Thick_Line 0x61A6A0) and Scout738 (hidden holes: MapClass 0x5484E0, WOL 0x7469C0). Next lane number is Scout739. Their misses go in OPEN_MISSES.
+- **Mac lanes.** Scout738 (hidden holes: MapClass 0x5484E0, WOL 0x7469C0) and Scout739 (Planning 0x6182F0 frame, __fastcall list-order sweep). Next lane number is Scout740. Their misses go in OPEN_MISSES.
 - **Windows workers.** Rule 5a in WORKER.md: goals are never ended or blocked, fallback items come from assignments/fallback.md, only capacity errors need the user. codex1 Fly then Dropship; codex2 BuildingClass; codex3 UnitClass near misses and Shrapnel; codex4 pass-7 rows at 0x700000 and up plus fallback.
 - **Windows to Mac draft handoff (2026-11-04).** Workers record parked drafts at 90+ (or 80+ over 2 KB) with path, score, diff class and missing mechanism (WORKER.md); the owner copies them to OPEN_MISSES with the Mac mirror path. Mac lanes promote them under LANE_BRIEF's standing queue, one time-boxed attempt each, crediting the worker as `codexN rM draft`. Windows fallback.md item 6 runs the same list the other way; the first claim on BOARD.md takes the row.
 - **Deferred owner items.** r945 closed-policy migration; Make_Base_Nodes 2-arg ctor option; merge UnknownCoord434820 with Coord; drop the `#else` of RA2_ABSTRACT_FLAGS_UNNAMED in abstract_class.hpp; main_loop.hpp `min` to always.hpp; bogus row 0x68633A; 0x7053F0; retype Process to boolean across overrides (RA2_PROCESS_COM_BOOLEAN, 12 rows).

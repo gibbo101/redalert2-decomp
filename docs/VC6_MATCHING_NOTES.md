@@ -1626,3 +1626,12 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - tp.py T-phase scans also move the budget, so give the base a wider margin first.
 - `(*cursor)->ID` compare followed by `T *item = *cursor;` gives the re-read of array and element (61.90 to exact).
 - A hole fully covered by one normal row is skipped by gaps.py: use gaps2.py.
+
+## __fastcall argument list order (Scout737)
+- The first two dword arguments in list order take ecx/edx, and a by-value struct goes on the stack wherever it is listed. `(Point2D, Point2D, int, int, bool)` and `(int, int, Point2D, Point2D, bool)` share an ABI but differ in evaluation order. With register args listed after the structs they are set before the pushes, so struct dwords reload one at a time through eax. A call site that never loads edx means the same thing: every Planning `int unused` parameter was this.
+- A local can sit in the stack home of an enregistered parameter; a "point written into the start slot" is a local, not a write to the parameter.
+- Depth-2 refusals after several larger depth-1 expansions name an inlined row. A lab with extra sites at the end of the caller raises the budget rather than lowering it. Scout737 sb.py measures how many units of spend a refusal needs.
+- `return f(a->x, a->y, a->z)` is free; naming the three locals first makes it charged.
+- `bool f() { return a && b && c; }` emits `mov eax,1` / `xor eax,eax`, callers `test al,al`.
+- An inline Length with `int x = X; int y = Y;` keeps an FP load order that a direct `this->` read flips.
+- A function at the tail of a unit, such as Planning_Pixel, need not be an inline.
