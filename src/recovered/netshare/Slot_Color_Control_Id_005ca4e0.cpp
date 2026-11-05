@@ -24,5 +24,6 @@ int __fastcall Slot_Color_Control_Id_005ca4e0(int slot)
     if (slot == 6) {
         return 0x6d8;
     }
-    return slot == 7 ? 0x6d9 : -1;
+    if (slot == 7) { return 0x6d9; }
+    return -1;
 }

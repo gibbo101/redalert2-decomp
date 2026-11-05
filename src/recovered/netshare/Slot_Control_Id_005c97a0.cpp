@@ -24,5 +24,6 @@ int __fastcall Slot_Control_Id_005c97a0(int slot)
     if (slot == 6) {
         return 0x417;
     }
-    return slot == 7 ? 0x418 : -1;
+    if (slot == 7) { return 0x418; }
+    return -1;
 }
