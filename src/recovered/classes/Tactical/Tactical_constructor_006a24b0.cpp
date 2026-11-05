@@ -20,7 +20,7 @@
 // @ref ?Kind_Of@Tactical@@UBEHXZ=006ac7e0
 // @ref ?Size_Of@Tactical@@UBEHXZ=006ac7f0
 // @ref ?AI@Tactical@@UAEXXZ=006a2dd0
-// @ref ?unknown_slot24@Tactical@@UAE_NABUCoordStruct@@0HH@Z=006ac160
+// @ref ?unknown_slot24@Tactical@@UAE_NABUCoordStruct@@0H_N@Z=006ac160
 // @ref ?unknown_abe540@@3UPoint2D@@A=00abe540/00abe544
 // @ref __real@4@4004f000000000000000=007a8844
 // @ref ?unknown_tactical_83996c@@3PAVTactical@@A=0083996c

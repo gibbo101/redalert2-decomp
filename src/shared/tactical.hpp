@@ -86,7 +86,7 @@ public:
 
     // Draws a line between two coordinates in a color (0x006AC160, slot 24;
     // TechnoClass 0x006C3950/0x006C3A90; true when drawn; hypothesis).
-    virtual bool unknown_slot24(CoordStruct const &from, CoordStruct const &to, int color, int arg4);
+    virtual bool unknown_slot24(CoordStruct const &from, CoordStruct const &to, int color, bool write_depth);
 
     // Draws one pass (0, 1, 2) of the tactical view into surface (0x006A45A0).
     void Render(Surface *surface, bool redraw, int pass);

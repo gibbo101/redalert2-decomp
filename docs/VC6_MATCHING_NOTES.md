@@ -1747,3 +1747,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A repeated loop can be an inlined generator row (4-arg Clear_Region_Cells). `Fetch_CellID()` twice in one expression gives one temp slot per path; a named by-value local does not.
 - `MAX(10, x)` as `10 > x ? 10 : x` gives `jge`; the reversed order gives `jg`.
 - Spend position does not matter up to the first refused site.
+
+## Later rows inline, and charged windows (Scout756)
+- A same-unit row defined later still inlines, so many "local helper" copies can be real row calls.
+- Refusal at a late site follows R/N: natural tail sites flip a next-to-last call, only charge flips the last site. Scout756 need.py measures the gap.
+- A narrow window can come from one charged form: Get_Region with a named reference closed a 44-80 unit gap and refuses at depth 2 elsewhere.
+- Moving a real expression into a helper moves budget even when the helper's charge is small.
+- The real Range struct form of Map_Random_Range fixes fstp order when inlined.

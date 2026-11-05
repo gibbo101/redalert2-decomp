@@ -1942,4 +1942,8 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout755 (2026-11-05, closed; 833 B: Increase_Height 0x56EEA0, Collect_Region_Boundary 0x56FED0, Create_Zone_Regions 0x576000; drafts in build/class-work/Scout755/keep/, NOTES.md; Scout756 continues)
 - OWNER DECISION: RA2_VECTOR_PUBLIC_COUNT and RA2_COORD_AS_CELL are acceptable under guards with whole-population proof.
 - Hole splits: 0x56EEA0-0x570040 holds 0x56EEA0, Split_Region 0x56EF20 (4,012 B, ends 0x56FECC), 0x56FED0. 0x575D20-0x576170 holds 0x575D20 (726 B), 0x576000.
-- Create_Zone_Region 0x575D20 99.35, 231/232 (one spread store order). Create_Region_From_Cell 0x56E100 (1,678 B) 87.91, shape 95.50, three refusals; a spend of about 300-320 gives the call list, natural source not found. Split_Region 54.07, shape 95.02, 58/59 calls, first pass. Unknown_Cell_Score_0056dff0 is really a thiscall member.
+Unknown_Cell_Score_0056dff0 is really a thiscall member.
+
+## Scout756 (2026-11-05, closed; 1,678 B: Create_Region_From_Cell 0x56E100; drafts in build/class-work/Scout756/keep/, NOTES.md, need.py; Scout757 continues)
+- Create_Zone_Region 0x575D20 (726 B): 99.35, 231/232 (zone_region_00575d20_j0.cpp). Only the first spread store; X and ptr registers rotate while the same inline matches at the second site. No candidate fix remains.
+- Split_Region 0x56EF20 (4,012 B): 57.85, shape 96.70, 59/59 calls in order, 1250/1267 (split_region_0056ef20_5785.cpp, overlay keep/h3). Left: registers and block order. Landing needs row 0x56E9A0 moved from population-41 with allow_split and an R spec for Unknown_Cell_Score_0056dff0 (thiscall Get_Angle_Score). Is_Dry_Map is an unestablished wrapper: judge it if the row goes exact. Region_Of in 0x56E100 duplicates Get_Region until RA2_GET_REGION_NAMED_DATA lands (keep/create_region_named_get_region.cpp).
