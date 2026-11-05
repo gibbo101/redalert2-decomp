@@ -4,7 +4,7 @@
 #include "shared/techno_type.hpp"
 #include "shared/house.hpp"
 // @ref ?TechnoTypes@@3V?$DynamicVectorClass@PAVTechnoTypeClass@@@@A=00a40ab8
-// @ref ?Load@PaletteName@@QAEPAXXZ=00603380
+// @ref ?Load@PaletteName@@QAIPAXXZ=00603380
 
 void __fastcall TechnoTypeClass::Load_Palettes()
 {

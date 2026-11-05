@@ -2,7 +2,7 @@
 // Loads Palette= when named.
 #include "shared/techno_type.hpp"
 #include "shared/house.hpp"
-// @ref ?Load@PaletteName@@QAEPAXXZ=00603380
+// @ref ?Load@PaletteName@@QAIPAXXZ=00603380
 
 void TechnoTypeClass::Load_Palette()
 {

@@ -4,8 +4,8 @@
     "id": "population-3751",
     "inventory_sha256": "4cf028dc0cfa5984694c1a708edc47f5598e0c9b2fe4f446af475467e17f15ff",
     "gaps_sha256": "a6baab4335b570045d6f9e8c4fa8338bdb41f2cbf4f1dae35d9c9e4b1e17fb46",
-    "historical_population_sha256": "6a0a13b7f4c18c7b3cbce24345028b871851ef44b3236888bbc80ab64c3095fc",
-    "historical_acceptance_sha256": "5e50c009b6c2253391711f189072e6669da4429ff228d2b131d96d5abc158342"
+    "historical_population_sha256": "a44df8291e99a4e41377c161992c3d24f96559d7c81c90c0ab51ca6a20ded42c",
+    "historical_acceptance_sha256": "b32f6329b5fdc00937192949ade219621ac7d48e4b698f9c1a8e184ef1884ecc"
   },
   "references": {
     "??_7rc_ptr_base@@6B@": 8031500,
@@ -5561,7 +5561,7 @@
     "??RWWCRCEngine@@QAEXN@Z": 4800368,
     "??RWWCRCEngine@@QAEJPBXH@Z": 4800448,
     "??RWWCRCEngine@@QAEXD@Z": 4799984,
-    "?Load@PaletteName@@QAEPAXXZ": 6304640,
+    "?Load@PaletteName@@QAIPAXXZ": 6304640,
     "?Load@AnimTypeClass@@UAGJPAUIStream@@@Z": 4350272,
     "?Load@ObjectTypeClass@@UAGJPAUIStream@@@Z": 6126640,
     "?Compute_CRC@AnimTypeClass@@UBEXAAVWWCRCEngine@@@Z": 4350720,

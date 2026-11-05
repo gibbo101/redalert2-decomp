@@ -26,7 +26,7 @@
 // @ref ?Get_String@INIClass@@QBEHPBD00PADH@Z=0050e9a0
 // @ref ?unknown_art_ini_8397f0@@3VCCINIClass@@A=008397f0
 // @ref ?unknown_string_83c55c@@3PADA=0083c55c
-// @ref ?Load@PaletteName@@QAEPAXXZ=00603380
+// @ref ?Load@PaletteName@@QAIPAXXZ=00603380
 // @ref ??_C@_04BOIE@?4SHP?$AA@=007ced14
 // @ref ??_C@_05LKKC@Cameo?$AA@=007f732c
 // @ref ??_C@_06MNFJ@XXICON?$AA@=007f80e4

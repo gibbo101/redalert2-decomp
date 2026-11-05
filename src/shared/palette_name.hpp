@@ -7,7 +7,7 @@
 struct PaletteName {
     // The constructor clears Buffer[0] in its body (0x006DA565).
     PaletteName() {}
-    void *Load();                       // 0x00603380 (name hypothesis)
+    void *__fastcall Load();                       // 0x00603380 (name hypothesis)
     char Buffer[32];
 };
 

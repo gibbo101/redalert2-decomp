@@ -4,8 +4,8 @@
     "id": "population-3595",
     "inventory_sha256": "52b738f935747298be3c1947829e4971d8777d799b0e5d1318d0b546473e6b7c",
     "gaps_sha256": "1801de4a64892115a246b4046ee4447ef6de69fcd3c50f221ddfcd70fac685cb",
-    "historical_population_sha256": "ee057fb1a3cce2e913f838facbea90a867ba0d8870999a11a356a434a5cf5c84",
-    "historical_acceptance_sha256": "3b0898e74bba3837012ac4aefcd57549eb9348fd2638fbd98c49b1c4e475797d"
+    "historical_population_sha256": "3d501a674ac65fdaeb9970857f85f3c2d132783af771749d5f3c8eadd44f83ae",
+    "historical_acceptance_sha256": "1a954563a9b4e66299a143d1044f2bc48e59f7ac91e10f1b10f289f02aa52374"
   },
   "references": {
     "_unknown_empty_rect": 10751560,
@@ -2488,7 +2488,7 @@
     "?Save@?$TypeList@H@@QAEXPAUIStream@@@Z": 6630400,
     "?Save@?$TypeList@PAVAnimTypeClass@@@@QAEXPAUIStream@@@Z": 6630272,
     "?Save@?$TypeList@PAVParticleSystemTypeClass@@@@QAEXPAUIStream@@@Z": 7206896,
-    "?Load@PaletteName@@QAEPAXXZ": 6304640,
+    "?Load@PaletteName@@QAIPAXXZ": 6304640,
     "??_7AnimTypeClass@@6BIPersistStream@@@": 7979800,
     "??_7AnimTypeClass@@6BINoticeSink@@@": 7979792,
     "??_7AnimTypeClass@@6BINoticeSource@@@": 7979784,

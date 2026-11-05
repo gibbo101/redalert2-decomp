@@ -4,8 +4,8 @@
     "id": "population-2930",
     "inventory_sha256": "7dfe89dbb948e0c622af0adbb588c03f76fecf8bd0a3e42a6b29941ab396c24d",
     "gaps_sha256": "91c631d866f95b939d8d24bf48f884c386ee7ab760d6ff390b942a5688445205",
-    "historical_population_sha256": "0597d3730fc265120ea450f635a87b5ee83b020d3a21dad1b57c2c78a48a5992",
-    "historical_acceptance_sha256": "78899fd9179eebe6d678780febf10eb898baafafe9b1149cdda41f0590355c7e"
+    "historical_population_sha256": "7b292d31977126221c4660dd870baf4017668b77a274ef80ad3eb7f8bc89ff36",
+    "historical_acceptance_sha256": "cb34869d4342a2562739b27adf493b624ca176519548454b2603d7619dbbdb88"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -1867,7 +1867,7 @@
     "??RWWCRCEngine@@QAEXN@Z": 4800368,
     "??RWWCRCEngine@@QAEJPBXH@Z": 4800448,
     "??RWWCRCEngine@@QAEXD@Z": 4799984,
-    "?Load@PaletteName@@QAEPAXXZ": 6304640,
+    "?Load@PaletteName@@QAIPAXXZ": 6304640,
     "?Init@AnimTypeClass@@SIXH@Z": 4346416,
     "?unknown_a40d13@@3_NA": 10751251,
     "?unknown_slot24@AnimTypeClass@@UAEXH@Z": 4346816,

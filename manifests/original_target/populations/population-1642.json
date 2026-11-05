@@ -4,8 +4,8 @@
     "id": "population-1642",
     "inventory_sha256": "0933c53798ded41043a14dd9aa2477a34fdbd7609771c87cf964fccf825a2a42",
     "gaps_sha256": "d848eea4214bb28c137d691b8e4d40698e8f7107ae953e9f7c67c646814321ec",
-    "historical_population_sha256": "14e0206d0f13b7891e874650006f42737e2d26c24aba2bf14f5790fe70ff7111",
-    "historical_acceptance_sha256": "22bf1411d80cb06663deed1f8832b17ba1bb680561cd7e9f06c19277bac887e2",
+    "historical_population_sha256": "41cb3f56670705dc5bfd1c371262103d8d39f7cdc2244dd70f066d36fbcb9951",
+    "historical_acceptance_sha256": "0b82f11ae2e61f1b2d0057caf05a4886cccde6f1844815afb6c5736873704ce4",
     "separate_units": true
   },
   "references": {
@@ -3200,7 +3200,7 @@
     "?Save@?$TypeList@H@@QAEXPAUIStream@@@Z": 6630400,
     "?Save@?$TypeList@PAVAnimTypeClass@@@@QAEXPAUIStream@@@Z": 6630272,
     "?Save@?$TypeList@PAVParticleSystemTypeClass@@@@QAEXPAUIStream@@@Z": 7206896,
-    "?Load@PaletteName@@QAEPAXXZ": 6304640,
+    "?Load@PaletteName@@QAIPAXXZ": 6304640,
     "?Load@AnimTypeClass@@UAGJPAUIStream@@@Z": 4350272,
     "?Load@ObjectTypeClass@@UAGJPAUIStream@@@Z": 6126640,
     "?Save@AnimClass@@UAGJPAUIStream@@H@Z": 4336976,

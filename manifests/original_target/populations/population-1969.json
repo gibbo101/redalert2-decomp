@@ -4,8 +4,8 @@
     "id": "population-1969",
     "inventory_sha256": "2c505700623acac8df55837719cd2e066117883ee0436542007cb2f3cc636900",
     "gaps_sha256": "6ad91395152264b43a517008206f0ecf0c17d8e673e4d388c7f7779d8eae0c91",
-    "historical_population_sha256": "c996759303d7cc0ea43944f969b9ba29077109782a86b26ef0b9898adb004be1",
-    "historical_acceptance_sha256": "005b66f079b2748cae7ce9574bb7ace5ef29bd72ce258c39b3a897b885ed3ebb"
+    "historical_population_sha256": "0bb25f1fadc04829477785b0e90f209ed7f63bcdc8c1e795832cde6b77dd78b6",
+    "historical_acceptance_sha256": "94d4a18e933363e4d127d364d79588c5b2a5e997977193aed5cddb4845eee125"
   },
   "references": {
     "_unknown_empty_rect": 8727000,
@@ -1774,7 +1774,7 @@
     "?One_Time@MapClass@@UAEXXZ": 5538000,
     "?Load@TechnoClass@@UAGJPAUIStream@@@Z": 7170128,
     "?Load@RadioClass@@UAGJPAUIStream@@@Z": 6515808,
-    "?Load@PaletteName@@QAEPAXXZ": 6304640,
+    "?Load@PaletteName@@QAIPAXXZ": 6304640,
     "??_7AnimTypeClass@@6BIPersistStream@@@": 7979800,
     "??_7AnimTypeClass@@6BINoticeSink@@@": 7979792,
     "??_7AnimTypeClass@@6BINoticeSource@@@": 7979784,

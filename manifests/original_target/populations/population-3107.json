@@ -4,8 +4,8 @@
     "id": "population-3107",
     "inventory_sha256": "b565b146a0d3289abdeccea9a27893202d93d72e0b9775577fe9fc3305acf60f",
     "gaps_sha256": "0c81906ca7334b224f409e6f761fa09ad55f4cf4896799e76f3fceead24bf27d",
-    "historical_population_sha256": "dca487e0b36b35bfbdb44115ab6fbd6f5042629718eefb6247861239924460ca",
-    "historical_acceptance_sha256": "13ce468def5aebbe2ef606b6986f43bb50250bdf374705dafbba0a03f93e0f86"
+    "historical_population_sha256": "c1e74d82464b3c62defd4701e607b5ec0bd48c88ffccf1870c5c6d3bdd235b75",
+    "historical_acceptance_sha256": "e0a4ee8be8cbf4b2d757d05c9332c00c425f3a8d7f838dc39d3e323328193daf"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -3369,7 +3369,7 @@
     "?Load@MechLocomotionClass@@UAGJPAUIStream@@@Z": 5845344,
     "?Load@ObjectClass@@UAGJPAUIStream@@@Z": 6113120,
     "?Load@ObjectTypeClass@@UAGJPAUIStream@@@Z": 6126640,
-    "?Load@PaletteName@@QAEPAXXZ": 6304640,
+    "?Load@PaletteName@@QAIPAXXZ": 6304640,
     "?Load@ParasiteClass@@UAGJPAUIStream@@@Z": 6317376,
     "?Load@ParticleClass@@UAGJPAUIStream@@@Z": 6333920,
     "?Load@ParticleSystemClass@@UAGJPAUIStream@@@Z": 6343984,

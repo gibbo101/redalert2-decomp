@@ -7,7 +7,7 @@
 // @ref ?Load@ObjectClass@@UAGJPAUIStream@@@Z=005d4760
 // @ref ??0ObjectClass@@QAE@ABVNoInitClass@@@Z=005d2500
 // @ref ??0StageTimerClass@@QAE@ABVNoInitClass@@@Z=00423f60
-// @ref ?Load@PaletteName@@QAEPAXXZ=00603380
+// @ref ?Load@PaletteName@@QAIPAXXZ=00603380
 // @ref ?SwizzleManager@@3VSwizzleManagerClass@@A=00abd868
 // @ref ?Swizzle@SwizzleManagerClass@@UAGJPAPAX@Z=0069fb20
 
