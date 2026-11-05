@@ -1669,4 +1669,18 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `lat_rect - r.Top_Left()` with an inline Rect::operator- went 57 to exact; the out-of-line form spills the whole Rect and shifts the frame sort of unrelated slots.
 - If/else and a ternary colour differently, and each can win in a different function. `if (Login(s)) return true; return false` keeps constant webs that `return Login(s)` loses (71 to 88).
 - `if (c) SetFocus(GetDlgItem(w, a)); else SetFocus(GetDlgItem(w, b));` cross-jumps to `push a; jmp; push b`; a ternary argument does not.
-- Earlier sites out of line with later sites of the same callee inline is a pending-site effect, not budget: spend probes up to 2,000 changed nothing, 30 empty sites flipped it.
+
+## Refusal chains (Scout743)
+- A temp in the by-value argument of an inlined callee overlaps that callee's locals; naming `CoordStruct coord = obj->Coord();` first took a frame from 0x44 to 0x38.
+- A row refused at one site and expanded at another can be the same helper: a refused callee leaves its spend, so the next nested site expands.
+- Fewer depth-1 sites after a parent let nested sites expand.
+- `bool f() { return a == b; }` gives `mov eax,1` with callers on `test al,al`; `if (...) return true` gives `mov al,1`.
+- `const &` aliases count toward the inline size and emit nothing. Do not use them as padding.
+- A plan may replace a row in a seed population; a hand-written population needs allow_split.
+
+## Calling convention and scheduling (Scout744)
+- A function's own `__fastcall` changes /G5 scheduling across the body: `lea ecx; push eax` against `push eax; lea ecx`, `mov eax,1` before or after the pops. If only scheduling differs, probe the root's calling convention.
+- Root-to-helper moves supply budget: moving k units costs 2k of root budget, plus k if charged early. Earlier sites out of line with later ones inline can be budget after all.
+- Weight of a constant web drops when its uses move into a conditional block; a plain block keeps it.
+- Reading a global directly in an inline, rather than through a local copy, allows threading of its range tests at the call site.
+- A virtual slot called directly from a local object cannot sit in a helper taking that object by reference: evidence for keeping the loop in the root.

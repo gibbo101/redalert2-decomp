@@ -13,7 +13,7 @@
 // @ref ?unknown_b264f0@@3HA=00b264f0
 // @ref ?Unknown_00753F10@@YAXXZ=00753f10
 // @ref ?Unknown_0073C990@@YAXXZ=0073c990
-// @ref ?Unknown_00742FD0@@YAHXZ=00742fd0
+// @ref ?Login_Wonline_00742fd0@@YIHXZ=00742fd0
 // @ref ?Unknown_00759E20@@YAHXZ=00759e20
 // @ref ?Unknown_00743720@@YIHPAUHWND__@@_N@Z=00743720
 // @ref ?Unknown_00759370@@YIH_N@Z=00759370
@@ -52,7 +52,7 @@ int __fastcall Wonline_Main(bool first_time)
     for (;;) {
         int kind = unknown_session_kind();
         if (unknown_b264f0 == 0 && kind != 0) {
-            result = Unknown_00742FD0();
+            result = Login_Wonline_00742fd0();
             switch (result) {
             case 0:
                 if (unknown_a3d2a4 == 0) {

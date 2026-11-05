@@ -17,7 +17,7 @@ int __fastcall Wonline_Main(bool first_time);               // 0x0073A300
 
 void Unknown_00753F10();                                    // 0x00753F10
 void Unknown_0073C990();                                    // 0x0073C990
-int Unknown_00742FD0();                                     // 0x00742FD0 (log in: 1 done, 0 cancelled)
+int __fastcall Login_Wonline_00742fd0();                   // 0x00742FD0 (log in: 1 done, 0 cancelled)
 void __fastcall Logout_Wonline_00741ea0();                  // 0x00741EA0
 void Shutdown_Wonline_00742080();                           // 0x00742080
 int Open_Wonline_Selection_00753110();                      // 0x00753110
