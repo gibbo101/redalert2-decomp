@@ -30,7 +30,7 @@ void UnknownMapGenerator::Seed_Hill_Heights_00584730()
         for(i=0;i<grid_size;i++) {
             UnknownMapGenerationCell &data=MapRegionClass::Get_Cell_Data(i);
             Cell cell=data.Position;
-            if(cell!=Cell(0,0)) {
+            if(cell.X!=0||cell.Y!=0) {
                 data.unknown_10=0;
                 double up_height=0.0;
                 double height_trend=0.0;

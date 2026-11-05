@@ -72,7 +72,11 @@ public:
     bool Delete(T const &object);
     bool Delete(int index);
 
+#ifdef RA2_VECTOR_PUBLIC_COUNT
+public:
+#else
 protected:
+#endif
     int ActiveCount;
     int GrowthStep;
 };
