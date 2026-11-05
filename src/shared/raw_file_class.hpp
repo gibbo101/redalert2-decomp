@@ -67,6 +67,9 @@ public:
     {
     }
     RawFileClass(char const *filename);
+#ifdef RA2_STATS_UNIT
+    HANDLE Get_File_Handle() const { return Handle; } // Stats.CPP only: every other unit keeps its declaration count (Print_CRCs)
+#endif
     virtual ~RawFileClass();
     virtual char const *File_Name() const { return Filename; }
     virtual char const *Set_Name(char const *filename);

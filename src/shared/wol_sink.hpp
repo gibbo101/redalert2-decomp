@@ -711,7 +711,12 @@ public:
     }
 };
 struct __declspec(novtable) WolLadderClient : public IUnknown {
+#ifdef RA2_STATS_UNIT
+    // Sends a game results packet (WOLAPI INetUtil::RequestGameresSend; 0x00698D00).
+    virtual HRESULT __stdcall Request_Gameres_Send(char const *host, int port, unsigned char *data, int length) = 0;
+#else
     virtual void __stdcall unknown_slot03() = 0;
+#endif
     virtual void __stdcall unknown_slot04() = 0;
     virtual HRESULT __stdcall Request(char const *server, int port, char const *names, unsigned int game, int unknown1, int unknown2, int unknown3) = 0;
     // Pings an address with a timeout in milliseconds; the request's handle in *handle
