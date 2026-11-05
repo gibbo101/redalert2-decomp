@@ -125,6 +125,11 @@ void __fastcall Planning_Inflate(Rect &rect, int amount);
 extern RGBClass unknown_rgb_ab6841;
 extern RGBClass unknown_rgb_ab6849;
 
+#ifdef RA2_COORD_EQUAL_MEMBER
+// The house a techno plans for: its own, or the player's when its side is
+// human-controlled (0x00610770).
+int __fastcall Planning_House(TechnoClass *techno);
+#endif
 // The colour of the house a techno's planning is drawn for (the player's
 // house on a human-controlled side).
 inline RGBClass Planning_House_Color(TechnoClass *techno)
@@ -281,7 +286,7 @@ public:
     CoordStruct Coord() const;                                // 0x00611180
     Point2D Pixel() const;                                    // 0x006111C0
     int Is_At_Pixel(Point2D point) const;                      // 0x00611230
-    int Is_At(CoordStruct coord) const;                        // 0x00611310
+    bool Is_At(CoordStruct coord) const;                       // 0x00611310
     ::Rect Rect() const;                                      // 0x00611360
     bool Is_In_Loop();                                       // 0x006113F0
     void unknown_611440();                                    // 0x00611440
@@ -375,6 +380,9 @@ public:
     // The same from start to the end of the path.
     void Copy_Nodes_To(TechnoClass *techno, int start);              // 0x00613720
     void unknown_613a80();                                    // 0x00613A80
+#ifdef RA2_COORD_EQUAL_MEMBER
+    bool unknown_613310() const;                              // 0x00613310
+#endif
     bool Has_Node(PlanningNodeClass *node);                   // 0x00613C60
     void unknown_613c80(PlanningNodeClass *node);             // 0x00613C80
     EventClass Event_At(int index);                           // 0x00613CA0
@@ -431,5 +439,28 @@ extern int unknown_a76750;                      // 0x00A76750 (-1)
 // Adds every member of from to node, each with a copy of the event aimed at
 // that member's techno (0x006167F0; PlanningNodeClass::Add_Member's body).
 void __fastcall Planning_Copy_Members(PlanningNodeClass *node, PlanningNodeClass *from, EventClass event);
+
+// These declarations are the Planning unit's own: they stay out of the other
+// units that include this header (a new declaration renumbers those units'
+// per-unit declaration counter and moves AI_Build_Defense 0x4F1190).
+#ifdef RA2_COORD_EQUAL_MEMBER
+// Puts a node on a techno's path, closing the path into a loop when it holds
+// the node already (0x00616350; 0x006165A0 appends and follows the node's leader).
+void __fastcall Planning_Path_Add(TechnoClass *techno, PlanningNodeClass *node);
+void __fastcall Planning_Path_Append(TechnoClass *techno, PlanningNodeClass *node);
+// Takes a node out of the paths of its members (0x00616960).
+void __fastcall Planning_Remove_Node(PlanningNodeClass *node);
+// Plans an order for a techno (0x00614EC0).
+bool __fastcall Planning_Add_Order(TechnoClass *techno, EventClass *event);
+// Carries out a planning event (0x00614BA0).
+void __fastcall Planning_Execute(EventClass *event);
+
+// The index of a node in a token's path (expanded inline; name hypothesis).
+inline int Token_Node_Index(PlanningTokenClass *token, PlanningNodeClass *node)
+{
+    return token->Node_Index(node);
+}
+
+#endif
 
 #endif

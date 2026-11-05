@@ -6553,49 +6553,6 @@
       "source_order": 145771
     },
     {
-      "entry": 6358896,
-      "method": "00610770",
-      "symbol": "?unknown_owner_color@@YIHPAUUnknownTechno_00610770@@@Z",
-      "symbol_prefix": "?unknown_owner_color@@YIHPAUUnknownTechno_00610770@@@Z",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 37,
-      "body_sha256": "62f8868da3c8d740a93d84e1dc82e7d30ae03e8f548a4267e15ef1dc4562053d",
-      "padding_bytes": 11,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "b862c5b1d393e3aae910ce638423c62f6c8b72aabc60ffacb0c675c1f6e2f14e",
-      "relocations": [
-        {
-          "offset": 11,
-          "kind": 20,
-          "symbol": "?Unknown_004F52B0@UnknownHouse_00610770@@QAE_NXZ",
-          "target": 5198512,
-          "addend": 0,
-          "resolved": 4293806897
-        },
-        {
-          "offset": 20,
-          "kind": 6,
-          "symbol": "?unknown_player_a35db4@@3PAUUnknownHouse_00610770@@A",
-          "target": 10706356,
-          "addend": 0,
-          "resolved": 10706356
-        }
-      ],
-      "source_sha256": "61a0a6bd5ca17ee2944b020bc39c679d0779e73ca761d67bdc8f2ad26d61b334",
-      "source": "src/recovered/unowned/unknown_owner_color_00610770.cpp",
-      "population": "population-3353",
-      "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_owner_color_00610770",
-      "source_order": 145773
-    },
-    {
       "entry": 6374128,
       "method": "006142f0",
       "symbol": "?unknown_delete_all_a76648@@YAXXZ",

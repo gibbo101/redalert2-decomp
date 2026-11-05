@@ -9,14 +9,9 @@ PlanningNodeClass *__fastcall Planning_Find_Node(int house, int id, CoordStruct 
     int count = PlanningNodeClass::unknown_list_00a76628.Count();
     for (int i = 0; i < count; i++) {
         PlanningNodeClass *node = PlanningNodeClass::unknown_list_00a76628[i];
-        CoordStruct here = node->Coord();
-        if (here.X == coord.X && here.Y == coord.Y && here.Z == coord.Z && (id == -1 || id == node->unknown_18)) {
-            HouseClass *owner_side = node->Members[0]->Owner->House;
-            int owner_house = owner_side->ArrayIndex;
-            if (owner_side->Unknown_004F52B0() && unknown_player_a35db4) {
-                owner_house = unknown_player_a35db4->ArrayIndex;
-            }
-            if (house == -1 || house == owner_house) {
+        if (node->Is_At(coord) && (id == -1 || id == node->unknown_18)) {
+            int owner = Planning_House(node->Member_Owner(0));
+            if (house == -1 || house == owner) {
                 return node;
             }
         }
