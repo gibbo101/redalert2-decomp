@@ -219,10 +219,11 @@ int __fastcall Planning_Event_Result(PlanningTokenClass *token, PlanningEventTar
 double __cdecl unknown_sqrt_4ba410(double value);   // 0x004BA410 (shared/building.hpp)
 // Outlines a square on the midpoint of two far-apart screen points (0x0061A2F0).
 void __fastcall Planning_Draw_Midpoint(Point2D start, Point2D end, int color);
-// Draws the planning mode (0x00617EF0); its drawing helpers (0x00619870, 0x00618C00).
+// Draws the planning mode (0x00617EF0); its drawing helpers (0x00619870, 0x00619420, 0x00618C00).
 void Planning_Draw_All();
 void __fastcall Planning_Draw_Techno(TechnoClass *techno);
 void __fastcall Planning_Draw_Node_619870(PlanningNodeClass *node);       // 0x00619870
+void __fastcall Planning_Draw_Node_619420(PlanningNodeClass *node);       // 0x00619420
 void __fastcall Planning_Draw_Techno_618c00(TechnoClass *techno);       // 0x00618C00
 extern DynamicVectorClass<TechnoClass *> unknown_list_a40c20;      // 0x00A40C20
 int __fastcall Planning_Techno_Color(TechnoClass *techno);                     // 0x00619E80
@@ -319,7 +320,6 @@ public:
     ::Rect Outer_Rect() const;                                // 0x00612B90
     ::Rect Outer_Rect2() const;                               // 0x00612C30
     int Color();                                              // 0x006125D0
-    void unknown_619420();                                    // 0x00619420
     void unknown_619870();                                    // 0x00619870
     void Fill_Marker_Colored();                               // 0x00619BD0
     int Highlight_Color();                                    // 0x0061A060

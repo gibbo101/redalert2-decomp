@@ -4,8 +4,8 @@
     "id": "population-4123",
     "inventory_sha256": "8c0567e614ade6e7689fbb49ba48994a59fb4350bc801de0d6be16f7de412f55",
     "gaps_sha256": "5dbd9ccca168b820d21e5d0ee2aae87932c5ba35865c4e9d0e08befe0534ccdd",
-    "historical_population_sha256": "2d0fbd80f0ac667905f550800f27618326ef0a50d063ef6b9f5daa86fb12b04c",
-    "historical_acceptance_sha256": "f7761af611c0344d513677e87eec1065ca02a7155d5478ee6595837fb21bf13e"
+    "historical_population_sha256": "e72f46ac0f709a3622972144a602fd70dc928eded66435209c0236c1b17b09bb",
+    "historical_acceptance_sha256": "80a7ef0dd4da2c1903565e0d3978826b1c27d2773d39a77e548b4b43a496c92f"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -6834,7 +6834,7 @@
     "?Planning_Mouse_Up@@YGXHH@Z": 6387872,
     "?unknown_flag_a76770@@3_NA": 10970992,
     "?unknown_point_a76728@@3UPoint2D@@A": 10970920,
-    "?unknown_619420@PlanningNodeClass@@QAEXXZ": 6394912,
+    "?Planning_Draw_Node_619420@@YIXPAVPlanningNodeClass@@@Z": 6394912,
     "?unknown_list_a40c20@@3V?$DynamicVectorClass@PAVTechnoClass@@@@A": 10751008,
     "?Planning_Draw_Techno@@YIXPAVTechnoClass@@@Z": 6390512,
     "?Planning_Event_Or_Object_Coord@@YI?AUCoordStruct@@ABVEventClass@@PAVAbstractClass@@@Z": 6395920,
@@ -11251,7 +11251,8 @@
     "?Cell_Color@CellClass@@QBEXAAVRGBClass@@0@Z": 4657856,
     "?Draw_Placement_Cursor@CellClass@@QAE_NABUPoint2D@@ABVRect@@_N@Z": 4669216,
     "?Draw_Shadow_Cast@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4675024,
-    "?unknown_4749c0@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4671936
+    "?unknown_4749c0@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4671936,
+    "?Read_INI@UnitTypeClass@@UAE_NAAVCCINIClass@@@Z": 7383872
   },
   "regions": [
     {
@@ -18575,7 +18576,7 @@
         {
           "offset": 108,
           "kind": 20,
-          "symbol": "?unknown_619420@PlanningNodeClass@@QAEXXZ",
+          "symbol": "?Planning_Draw_Node_619420@@YIXPAVPlanningNodeClass@@@Z",
           "target": 6394912,
           "addend": 0,
           "resolved": 5488
@@ -18621,7 +18622,7 @@
           "resolved": 1034
         }
       ],
-      "source_sha256": "807b4b236baa736a51bbcf1ab9de10027716fdc55960b5bf96c9629e16a03b1e",
+      "source_sha256": "63f16cd033393d0835b8b5ea86908b22d8b87c1f5c8cc29d5823ada71f6491cd",
       "source": "src/recovered/unowned/Planning_Redraw_00617e40.cpp",
       "population": "population-4123",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

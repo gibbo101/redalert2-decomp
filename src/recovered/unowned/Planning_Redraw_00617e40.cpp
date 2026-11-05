@@ -4,7 +4,7 @@
 // planning techno that belongs to the player or an ally.
 #include "shared/planning.hpp"
 // @ref ?Planning_Draw_Techno@@YIXPAVTechnoClass@@@Z=006182f0
-// @ref ?unknown_619420@PlanningNodeClass@@QAEXXZ=00619420
+// @ref ?Planning_Draw_Node_619420@@YIXPAVPlanningNodeClass@@@Z=00619420
 // @ref ?unknown_list_a40c20@@3V?$DynamicVectorClass@PAVTechnoClass@@@@A=00a40c20
 
 void __fastcall Planning_Draw_Techno(TechnoClass *techno);
@@ -17,7 +17,7 @@ void Planning_Redraw()
     for (i = 0; i < count; i++) {
         PlanningNodeClass *node = PlanningNodeClass::unknown_list_00a76628[i];
         if (node->House()->Is_Ally(unknown_player_a35db4)) {
-            node->unknown_619420();
+            Planning_Draw_Node_619420(node);
         }
     }
     count = unknown_list_a40c20.Count();
