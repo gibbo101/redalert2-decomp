@@ -60,13 +60,24 @@ struct UnknownControlRecord {
             text_28 = 0;
         }
         if (text && *text) {
+#ifdef RA2_COMBO_DROP_UNIT
+            int length = wcslen(text);
+            text_28 = (wchar_t *)operator new((length + 1) * 2);
+#else
             text_28 = (wchar_t *)operator new(wcslen(text) * 2 + 2);
+#endif
             wcscpy(text_28, text);
         }
     }
 #ifdef RA2_OWNERDRAW_CHECK_FIELDS
     int unknown_00;     // +0x00 the lparam passed through Subclass_Dialog (0x005ED180)
+#ifdef RA2_COMBO_DROP_UNIT
+    int scroll_width_04; // +0x04 a combo drop list's scroll bar width (0x005EAD20)
+    HWND owner_08;      // +0x08 the window a drop list's scroll bar reports to (0x005EAD20)
+    HWND attached_0c;   // +0x0C a combo drop list's scroll bar window, 1 while it is being made (0x005EAD20)
+#else
     char unknown_04[0x10 - 0x04];
+#endif
 #else
     char unknown_00[0x10];
 #endif
@@ -129,7 +140,13 @@ struct UnknownControlRecord {
     int unknown_c0;
     int unknown_c4;
     int unknown_c8;     // +0xC8 0xC0 for edit, list and combo controls of the listed dialog kinds (0x005E1CA0, 0x005E8720)
+#ifdef RA2_COMBO_DROP_UNIT
+    bool item_fills_cc; // +0xCC a drop list fills its coloured rows (0x005EAD20)
+    bool alternate_cd;  // +0xCD a drop list uses the alternate colours (0x005EAD20)
+    char unknown_ce[0xd4 - 0xce];
+#else
     char unknown_cc[0xd4 - 0xcc];
+#endif
     bool unknown_d4;
     bool unknown_d5;
     bool unknown_d6;
@@ -153,7 +170,13 @@ struct UnknownControlRecord {
 #ifdef RA2_OWNERDRAW_EDIT_FIELDS
     int unknown_f4; // edit focus enabled (0x005F1900)
     int unknown_f8; // edit previously had WS_TABSTOP (0x005F1900)
+#ifdef RA2_COMBO_DROP_UNIT
+    char unknown_fc[0x110 - 0xfc];
+    int item_colors_110[50]; // +0x110 a combo box's item colours, negative for none (0x005EAD20)
+    char unknown_1d8[0x200 - 0x1d8];
+#else
     char unknown_fc[0x200 - 0xfc];
+#endif
 #else
     char unknown_f4[0x200 - 0xf4];
 #endif
@@ -188,6 +211,14 @@ public:
 #ifdef RA2_OWNERDRAW_RECORD_DTOR
     // Removes key, passing its record back in value; true when it was there (0x00601C50).
     bool Remove(unsigned int const &key, UnknownControlRecord &value);
+#ifdef RA2_COMBO_DROP_UNIT
+    // wlib Dictionary::remove(key).
+    bool Remove(unsigned int const &key)
+    {
+        UnknownControlRecord value;
+        return Remove(key, value);
+    }
+#endif
     void Shrink();
     char unknown_1c[0x20 - 0x1c];
     double Min_Load;    // +0x20 (0x00601C50)
@@ -244,6 +275,14 @@ public:
     void Shrink();
     // Removes key, passing its window procedure back in value; true when it was there (0x00601950).
     bool Remove(HWND const &key, WNDPROC &value);
+#ifdef RA2_COMBO_DROP_UNIT
+    // wlib Dictionary::remove(key).
+    bool Remove(HWND const &key)
+    {
+        WNDPROC value;
+        return Remove(key, value);
+    }
+#endif
 };
 extern UnknownWindowProcIndex unknown_window_procs_a73688;
 // The text of an edit control as wide text without line breaks (a trailing "\r\n" if it had any), and the

@@ -22,9 +22,11 @@ inline void UnknownNodeList_006003d0::unknown_remove_node(UnknownNode_006003d0 *
     }
     if (current != 0) {
         if (previous != 0) {
-            previous->Next = current->Next;
+            UnknownNode_006003d0 *next = current->Next;
+            previous->Next = next;
         } else {
-            Head = current->Next;
+            UnknownNode_006003d0 *next = current->Next;
+            Head = next;
         }
         operator delete(current);
     }

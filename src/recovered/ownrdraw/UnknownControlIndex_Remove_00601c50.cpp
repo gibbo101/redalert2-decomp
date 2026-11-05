@@ -10,7 +10,7 @@ inline void UnknownControlIndex::Shrink()
     if (Size > Min_Size && Fixed_Size != true) {
         unsigned int old_size = Size;
         Node **old_buckets = Buckets;
-        Size = old_size >> 1;
+        Size = Size >> 1;
         Bits--;
         Buckets = (Node **)operator new(Size * sizeof(Node *));
         memset(Buckets, 0, Size * sizeof(Node *));
@@ -30,7 +30,7 @@ inline void UnknownControlIndex::Shrink()
 }
 
 // Removes key, passing its record back in value; the table shrinks once its load falls to Min_Load (0x00601C50).
-bool UnknownControlIndex::Remove(unsigned int const &key, UnknownControlRecord &value)
+inline bool UnknownControlIndex::Remove(unsigned int const &key, UnknownControlRecord &value)
 {
     if (Count == 0) {
         return false;

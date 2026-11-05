@@ -8,7 +8,7 @@ inline void UnknownWindowProcIndex::Shrink()
 {
     unsigned int old_size = Size;
     Node **old_buckets = Buckets;
-    Size = old_size >> 1;
+    Size = Size >> 1;
     Bits--;
     Buckets = (Node **)operator new(Size * sizeof(Node *));
     memset(Buckets, 0, Size * sizeof(Node *));
@@ -28,7 +28,7 @@ inline void UnknownWindowProcIndex::Shrink()
 
 // Removes key, passing its window procedure back in value; the table shrinks once its load falls to
 // Min_Load (0x00601950).
-bool UnknownWindowProcIndex::Remove(HWND const &key, WNDPROC &value)
+inline bool UnknownWindowProcIndex::Remove(HWND const &key, WNDPROC &value)
 {
     if (Count == 0) {
         return false;

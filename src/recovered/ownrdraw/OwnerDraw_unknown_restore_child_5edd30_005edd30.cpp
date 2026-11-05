@@ -12,19 +12,12 @@ namespace OwnerDraw {
 // EnumChildWindows callback of 0x005EDB20 (TibSun ODRemoveFromDict): drops one window from the registries.
 BOOL __stdcall unknown_restore_child_5edd30(HWND window, LPARAM lparam)
 {
-    {
-        WNDPROC proc;
-        unknown_window_procs_a73688.Remove(window, proc);
-    }
-    {
-        UnknownControlRecord record;
-        unknown_registry_a73640.Remove((unsigned int const &)window, record);
-    }
-    WNDPROC old_proc;
-    unknown_window_table_a73400.Remove_Entry(window, &old_proc);
-    UnknownWindowData_5edb20 *data = (UnknownWindowData_5edb20 *)GetWindowLongA(window, -21);
+    unknown_window_procs_a73688.Remove(window);
+    unknown_registry_a73640.Remove((unsigned int const &)window);
+    unknown_window_table_a73400.Remove(window);
+    void *data = (void *)GetWindowLongA(window, -21);
     if (data != 0) {
-        delete data;
+        operator delete(data);
     }
     SetWindowLongA(window, -21, 0);
     Unknown_Remove_Modeless_Dialog_00522b80(window);
