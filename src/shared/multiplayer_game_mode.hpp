@@ -120,6 +120,10 @@ public:
     virtual bool unknown_slot43(HouseClass *house, int *money);    // 43 0x005B7F90 (the base unit at BaseCenter)
     virtual bool unknown_slot44(HouseClass *house, int *money);    // 44 0x005B8060
 
+#ifdef RA2_MPGAME_START_OBJECTS
+    bool Create_Starting_Objects_005b7ce0(); // 0x005B7CE0, existing no-argument thiscall entry
+#endif
+
     MultiplayerTeam *unknown_find_team_5b76b0(int number);   // 0x005B76B0
     void unknown_clear_teams_5b77e0();                       // 0x005B77E0
     int unknown_team_of_5b8430(int id);                      // 0x005B8430
