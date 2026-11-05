@@ -314,7 +314,7 @@ public:
     void unknown_611770();                                    // 0x00611770
     int unknown_611a80(TechnoClass *techno);                  // 0x00611A80
     void Dump() const;                                        // 0x006118E0
-    void unknown_611bd0(PlanningMemberClass *member);         // 0x00611BD0
+    int unknown_611bd0(PlanningMemberClass *member);         // 0x00611BD0
     void unknown_611e20(PlanningMemberClass *member);         // 0x00611E20
     void unknown_611ee0();                                    // 0x00611EE0
     bool Is_Loop_Start(TechnoClass *techno);                  // 0x00611F60
