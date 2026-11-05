@@ -185,6 +185,21 @@ public:
         return Remove_Entry(key, &old_value);
     }
     // wlib Dictionary::contains(key).
+#ifdef RA2_WOL_DICTIONARY_WLIB_STATEMENTS
+    bool Contains(K const &key) const
+    {
+        int offset;
+        Node *node;
+        offset = Key_Hash(key);
+        node = Buckets[offset];
+        if (node == 0) return false;
+        while (node != 0) {
+            if (node->Key == key) return true;
+            node = node->Next;
+        }
+        return false;
+    }
+#else
     bool Contains(K const &key) const
     {
         for (Node *node = Buckets[Key_Hash(key)]; node != 0; node = node->Next) {
@@ -192,6 +207,7 @@ public:
         }
         return false;
     }
+#endif
     // wlib Dictionary::removeAny(key, value): takes out the first entry of the first non-empty bucket.
     bool Remove_Any(K &key, V &value)
     {

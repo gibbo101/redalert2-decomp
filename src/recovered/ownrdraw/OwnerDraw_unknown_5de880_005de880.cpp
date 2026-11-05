@@ -25,15 +25,15 @@ namespace OwnerDraw {
 void unknown_5de880()
 {
     unknown_color_a73928 = 1;
-    unknown_color_a7613c = 0xff;
-    unknown_color_a76158 = 0xff;
     unknown_color_a733d0 = 0x7f;
     unknown_color_a733e4 = 0xffff;
     unknown_color_a737e8 = 0xeeeeee;
     unknown_color_a76150 = 0x9f9f;
     unknown_color_a7338c = 0xffffff;
     unknown_color_a7615c = 0x808080;
+    unknown_color_a7613c = 0xff;
     unknown_color_a763b0 = 0x626262;
+    unknown_color_a76158 = 0xff;
     unknown_color_a73910 = 0x929292;
     unknown_color_a737ec = 0x9f;
     unknown_color_a7363c = 0x8f8f8f;

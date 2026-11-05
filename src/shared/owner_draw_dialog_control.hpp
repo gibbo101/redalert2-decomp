@@ -64,7 +64,12 @@ struct UnknownControlRecord {
             wcscpy(text_28, text);
         }
     }
+#ifdef RA2_OWNERDRAW_CHECK_FIELDS
+    int unknown_00;     // +0x00 the lparam passed through Subclass_Dialog (0x005ED180)
+    char unknown_04[0x10 - 0x04];
+#else
     char unknown_00[0x10];
+#endif
     Surface *surface_10; // +0x10 a BSurface (0x005FE490 creates it; 0x005FF380 deletes it)
     Surface *image_14;  // +0x14 image set by 0x005E1F30
 #ifdef RA2_OWNERDRAW_CHECK_FIELDS
@@ -83,14 +88,25 @@ struct UnknownControlRecord {
 #endif
 #endif
     wchar_t *text_28;   // +0x28 owned wide text (0x006005C0 copies it, 0x00600560 sets it from a char string)
+#ifdef RA2_OWNERDRAW_CHECK_FIELDS
+    int unknown_2c;
+    char unknown_30[0x34 - 0x30];
+#else
     char unknown_2c[0x34 - 0x2c];
+#endif
     UnknownNode_006003d0 *list_34;  // +0x34 owned node list (shared/unknown_node_list.hpp; 0x00600460 copies one)
     int unknown_38;
     WideString *unknown_3c;     // +0x3C created by the constructor 0x006002F0, kept by operator=
     int unknown_40;
 #ifdef RA2_OWNERDRAW_EDIT_FIELDS
     int unknown_44; // edit scroll position (0x005F1900, 0x005F22A0)
+#ifdef RA2_OWNERDRAW_CHECK_FIELDS
+    char unknown_48[0x54 - 0x48];
+    int unknown_54;     // +0x54 the second word of the GWL_USERDATA block (0x005ED180)
+    char unknown_58[0x5c - 0x58];
+#else
     char unknown_48[0x5c - 0x48];
+#endif
 #else
     char unknown_44[0x5c - 0x44];
 #endif
