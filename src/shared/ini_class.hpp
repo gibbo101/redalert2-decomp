@@ -549,6 +549,9 @@ public:
     // yet; their return types are inferred from the FileClass wrappers.
     bool Clear(char const *section = 0, char const *entry = 0);
     int Load(FileClass &file, bool keep_comments);
+#ifdef WDT_SELECTION_ACCESSORS
+    int Load(FileClass &file) { return Load(file, false); }   // TibSun ini.Load(file)
+#endif
     int Load(Straw &file, bool keep_comments);
     int Save(FileClass &file) const;
     int Save(Pipe &pipe) const;

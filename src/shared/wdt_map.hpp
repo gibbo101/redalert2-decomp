@@ -60,7 +60,13 @@ public:
     };
 
 #ifdef RA2_WDT_MAP_LOAD_LAYOUT
+#ifdef WDT_SELECTION_ACCESSORS
+    void Load(INIClass &ini, MSEngine *engine, bool unknown3);
+    Rect const &Get_Play_Rect() const { return PlayRect; }
+    Rect const &Get_Back_Rect() const { return BackRect; }
+#else
     void Load(INIClass &ini, MSEngine *engine, int unknown3);
+#endif
     Point2D const &Get_Origin() const { return unknown_44; }
 #endif
     Map(int unknown_08, int unknown_0c, int unknown_10);          // 0x00729330
