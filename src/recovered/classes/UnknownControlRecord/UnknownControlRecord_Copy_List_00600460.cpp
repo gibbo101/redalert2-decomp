@@ -3,7 +3,7 @@
 #include "shared/owner_draw_dialog_control.hpp"
 
 namespace OwnerDraw {
-void UnknownControlRecord::Copy_List_600460(UnknownNode_006003d0 const *source)
+inline void UnknownControlRecord::Copy_List_600460(UnknownNode_006003d0 const *source)
 {
     while (list_34) {
         UnknownNode_006003d0 *node = list_34;
