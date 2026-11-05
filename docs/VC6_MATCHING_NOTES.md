@@ -1754,3 +1754,17 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A narrow window can come from one charged form: Get_Region with a named reference closed a 44-80 unit gap and refuses at depth 2 elsewhere.
 - Moving a real expression into a helper moves budget even when the helper's charge is small.
 - The real Range struct form of Map_Random_Range fixes fstp order when inlined.
+
+## Case source order and site division (Scout754)
+- Case source order is a first-class budget lever: layout stays by value for most orders, but moving one case last took a dialog from 78 to 88 in one step. Probe it before chasing IL.
+- Grouping a callee under a free wrapper saves its whole charge. Spend after a site's last user is free for that user; a new site instead divides its budget.
+- A small lab with a site through a free Mid behind a charged Lab measures any callee's IL to about 2 units.
+- `while (BucketCount > Min)` versus `Get_Size() > Min` is a /G5 load-order flip visible in a COMDAT.
+- A row emitted as a refused inline must carry its callee as an inline too.
+- Two-level Remove_Head into Remove(T&,int): the free outer level lets the inner Get be refused while the two-arg stays accepted.
+
+## By-value returns and global reads (Scout757)
+- `Cell const &exitcell = f()`, binding a reference to a by-value return, gave better reads (75.48 to 77.37).
+- A global read twice in one call (`Cell(Map.X, -Map.X)`) is CSE'd without field forwarding, so the temp's store and reload survive; a local copy forwards and loses them.
+- `short x1, x2` in a Direction(Cell, Cell) helper gives the 16-bit load with a late movsx.
+- A nested virtual call hoists the outer vptr read above the argument call; a named result moves it after the call.
