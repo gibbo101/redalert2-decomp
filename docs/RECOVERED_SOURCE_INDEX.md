@@ -16,7 +16,7 @@
 | [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 47 | 49,999 | 47 | 0x0056D4C0–0x0058AD90 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 124 | 45,357 | 120 | 0x0041B470–0x004CDE10 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 87 | 42,809 | 87 | 0x004D3510–0x0070A330 |
-| (discovery: address-named) | 1348 | 41,976 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1347 | 41,975 | 17 | 0x004010A0–0x00797198 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 61 | 39,088 | 61 | 0x00454EE0–0x004D3C50 |
 | [classes/InfantryClass](../src/recovered/classes/InfantryClass/) | 90 | 32,065 | 90 | 0x004D3390–0x00509810 |
 | [classes/AircraftClass](../src/recovered/classes/AircraftClass/) | 87 | 30,616 | 87 | 0x004139F0–0x004D34D0 |
@@ -62,6 +62,7 @@
 | [classes/JumpjetLocomotionClass](../src/recovered/classes/JumpjetLocomotionClass/) | 27 | 8,508 | 27 | 0x0052F160–0x00531330 |
 | [classes/ParticleClass](../src/recovered/classes/ParticleClass/) | 28 | 8,116 | 28 | 0x004D3210–0x0060A7E0 |
 | [classes/NullModemClass](../src/recovered/classes/NullModemClass/) | 45 | 8,115 | 45 | 0x004D4890–0x005D2050 |
+| [classes/UndoInfoStruct](../src/recovered/classes/UndoInfoStruct/) | 15 | 8,087 | 15 | 0x00684F40–0x00686DD0 |
 | [classes/Wstring](../src/recovered/classes/Wstring/) | 53 | 8,035 | 53 | 0x0040AF40–0x0076F960 |
 | [classes/PlanningNodeClass](../src/recovered/classes/PlanningNodeClass/) | 65 | 8,001 | 65 | 0x00610440–0x0061A750 |
 | [classes/TeleportLocomotionClass](../src/recovered/classes/TeleportLocomotionClass/) | 33 | 7,921 | 33 | 0x006DFCA0–0x006E1C70 |
@@ -85,7 +86,6 @@
 | [gdlg_supp](../src/recovered/gdlg_supp/) | 28 | 6,063 | 28 | 0x004D0EE0–0x004D2900 |
 | [skirmish](../src/recovered/skirmish/) | 10 | 6,031 | 10 | 0x006827F0–0x00683D10 |
 | [classes/LoadOptionsClass](../src/recovered/classes/LoadOptionsClass/) | 19 | 5,870 | 15 | 0x0053B0E0–0x0053C9F0 |
-| [classes/UndoInfoStruct](../src/recovered/classes/UndoInfoStruct/) | 14 | 5,760 | 14 | 0x00684F40–0x00686DD0 |
 | [classes/ProgressScreenClass](../src/recovered/classes/ProgressScreenClass/) | 33 | 5,684 | 33 | 0x0061ED00–0x006203F0 |
 | [classes/SuperClass](../src/recovered/classes/SuperClass/) | 32 | 5,674 | 32 | 0x004D4190–0x0069ECD0 |
 | [classes/SerialEdDialog](../src/recovered/classes/SerialEdDialog/) | 15 | 5,559 | 15 | 0x0066CA70–0x0066DFE0 |

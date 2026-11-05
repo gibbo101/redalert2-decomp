@@ -126,6 +126,9 @@ public:
     int Unknown_0054EBD0();                                                     // 0x0054EBD0
     void Unknown_005688A0(DynamicVectorClass<Cell> &cells);                    // 0x005688A0 (as shared/map.hpp)
     void Unknown_0055A550();                                                    // 0x0055A550
+#ifdef RA2_MAP_VIEW_56A870
+    void Unknown_0056A870(int value);                                           // 0x0056A870
+#endif
     void Unknown_0054FDA0();                                                    // 0x0054FDA0 (shared/map.hpp)
     void Unknown_00568B00();                                                    // 0x00568B00
     bool Unknown_0054E410();                                                    // 0x0054E410 (places a crate on a random cell)

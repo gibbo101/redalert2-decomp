@@ -1,4 +1,8 @@
 #define RA2_UNDO_INFO_POINT
+#define RA2_RECT_POINT_INLINE
+#define RA2_RECT_MINUS_INLINE
+#define RA2_CELL_LAT_BOOL
+#define RA2_MAP_VIEW_56A870
 // Header-static dynamic initializers of the unit at 0x00684D50 and its
 // list globals (UndoInfoStruct); the other drafts of this plan are emitted by this file.
 #include "shared/unknown_geometry.hpp"

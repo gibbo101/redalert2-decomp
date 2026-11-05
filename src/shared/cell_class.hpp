@@ -322,7 +322,12 @@ public:
 #endif
     void unknown_475960(bool arg1);                                      // 0x00475960
     int unknown_476ba0(bool pregame);                                    // 0x00476BA0 (Westwood's Tiberium_Adjust: the ore stage from its neighbours; answers the value)
+#ifdef RA2_CELL_LAT_BOOL
+    // TibSun Fixup_LAT: the original returns whether the tile changed (Commit_Deform_Grid tests it).
+    bool unknown_471d10();                      // 0x00471D10
+#else
     void unknown_471d10();                      // 0x00471D10 (IsometricTileClass slot 71: after the tile changes; hypothesis)
+#endif
     void Unknown_00472540(int value);           // 0x00472540 (clears an overlay with -1: AnimClass 0x004226D0, TerrainClass slot 52)
     int unknown_4706c0(Point2D const &point) const;       // 0x004706C0 (height at a lepton position in the cell; hypothesis)
 

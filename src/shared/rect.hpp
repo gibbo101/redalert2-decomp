@@ -143,7 +143,11 @@ public:
 #endif
 
     // The rectangle moved back by point (out of line, 0x0047D000 in Cell.cpp).
+#ifdef RA2_RECT_MINUS_INLINE
+    Rect operator-(RectPoint2D const &point) const { return Rect(Top_Left() - point, Width, Height); }
+#else
     Rect operator-(RectPoint2D const &point) const;
+#endif
     // Moves the origin back by a point (FoggedObjectClass 0x004C00F0).
     Rect &operator-=(Point2D const &point) { X -= point.X; Y -= point.Y; return *this; }
 
