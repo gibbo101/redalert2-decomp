@@ -1,3 +1,4 @@
+#define RA2_RADSITE_COORD_DISTANCE_DIFFERENCE
 // Header-static dynamic initializers of the unit at 0x00637030 and the
 // unit's RadSiteClass list; the other drafts of this plan are emitted by this file.
 #include "shared/unknown_geometry.hpp"

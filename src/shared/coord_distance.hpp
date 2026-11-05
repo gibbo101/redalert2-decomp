@@ -10,7 +10,11 @@
 double __cdecl unknown_sqrt_4ba410(double value);     // 0x004BA410 (shared/unknown_geometry.hpp)
 inline int Coord_Distance(CoordStruct const &a, CoordStruct const &b)
 {
+#ifdef RA2_RADSITE_COORD_DISTANCE_DIFFERENCE
+    CoordStruct d = a - b;
+#else
     CoordStruct d(a.X - b.X, a.Y - b.Y, a.Z - b.Z);
+#endif
     return (int)unknown_sqrt_4ba410((double)d.X * d.X + (double)d.Z * d.Z + (double)d.Y * d.Y);
 }
 
