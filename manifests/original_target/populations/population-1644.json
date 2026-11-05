@@ -4,8 +4,8 @@
     "id": "population-1644",
     "inventory_sha256": "58f8ec0f85c5b3287639287c65242d66b7ded92fa72cbaaf80ec9cee9c6de52d",
     "gaps_sha256": "3606e7214031fa0b7a4618e2f27cc1664b486114158536ab613ec2ea5f578aa4",
-    "historical_population_sha256": "54b7ba69514bd937e1db4dff9d9b8eafab4e8389e4af3fb8a4ddad9939edaa41",
-    "historical_acceptance_sha256": "0f1e5d56e976575e83bfbf9370671ba415a771c15dc543fb628a8857f56f1e42",
+    "historical_population_sha256": "b97f309dee1d40048794418c296a198def41d7ce467d11480f6d3795fd775c6b",
+    "historical_acceptance_sha256": "70b85039c054d58a07b18dfa87bdb61f1993b88b371a968b2fea2391fa488b22",
     "separate_units": true
   },
   "references": {
@@ -985,7 +985,7 @@
     "?ID@?$VectorClass@PAVWaypointPathClass@@@@UAEHABQAVWaypointPathClass@@@Z": 7493984,
     "?ID@?$VectorClass@PAVWaypointPathClass@@@@UAEHPBQAVWaypointPathClass@@@Z": 7494048,
     "?ID@?$DynamicVectorClass@PAVWaypointPathClass@@@@UAEHABQAVWaypointPathClass@@@Z": 7494256,
-    "?ID@?$DynamicVectorClass@U?$rc_ptr@VConflict@WorldDominationTour@@@@@@UAEHPBU?$rc_ptr@VConflict@WorldDominationTour@@@@@Z": 7498336,
+    "?ID@?$DynamicVectorClass@V?$rc_ptr@VConflict@WorldDominationTour@@@@@@UAEHPBV?$rc_ptr@VConflict@WorldDominationTour@@@@@Z": 7498336,
     "?ID@?$DynamicVectorClass@U?$rc_ptr@VGameOption@WorldDominationTour@@@@@@UAEHPBU?$rc_ptr@VGameOption@WorldDominationTour@@@@@Z": 7502784,
     "?ID@?$DynamicVectorClass@U?$rc_ptr@VTerritory@WorldDominationTour@@@@@@UAEHPBU?$rc_ptr@VTerritory@WorldDominationTour@@@@@Z": 7516080,
     "?Clear@?$DynamicVectorClass@PAVAnimationPalette@Map@WorldDominationTour@@@@UAEXXZ": 7516160,
