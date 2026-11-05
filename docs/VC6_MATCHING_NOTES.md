@@ -1824,3 +1824,16 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A by-value helper parameter moves a temp's address use out of the statement, so the temp can share a dead slot: a frame 8 B short went exact.
 - diff_candidate masks data: a wrong literal with an @ref can score 100.00 and only acceptance refuses it ("Unsupported allocatable data section"). Read bytes at the bound address.
 - check_plans refuses a rename spec and source plans in one run. fragile_probe must run under the project Python; system python3 reads `fail` on every line.
+
+## Frame sort model (Scout767 sim.py)
+- The second frame sort is K&R qsort on -sum/size. Its input is slots ordered by size descending, then the head variable's refs ascending, then last ref ascending. This reproduces 23 of 25 slots on Explosion_Damage; use it to compute which ref change a slot swap needs.
+- Length with z, y, x double locals reproduces the `fld st(0)` web with Z loaded first.
+- A second assignment to a float can be a separate variable when its slot is reused by a temp.
+- `lea eax; mov ecx,eax` appears with two read struct copies of one member.
+
+## Callee conventions and threaded zero-caller rows (Scout766)
+- A callee's own convention changes /G5 scheduling after the call: last stores stayed ahead of the epilogue pops only with a no-arg `__fastcall` callee. Probe callee conventions when an epilogue interleaves.
+- Tail cross-jumps stop when arms end differently in source order.
+- Scratch registers rotate with hidden temporaries: one named pointer local before a call cleared a 15-row rotation.
+- A chain ending in `x == N ? a : 0` can be a threaded inline of a zero-caller row with one more arm.
+- 0x73FEE0's bad declaration window is about -15 to +17 around that row.
