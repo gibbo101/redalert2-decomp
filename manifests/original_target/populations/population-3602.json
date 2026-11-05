@@ -13771,48 +13771,6 @@
       "source_order": 158672
     },
     {
-      "entry": 7759744,
-      "method": "00766780",
-      "symbol": "?get@Leaf_766780@@QAEPAXI@Z",
-      "symbol_prefix": "?get@Leaf_766780@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 30,
-      "body_sha256": "c4b0f871a8e9ddfad00cf9080f064bcbe2db1b4febc7eb1e75871e02726a6d09",
-      "padding_bytes": 2,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "ee8454b0514b42c527f5460b453f9817d36c42fd53c652518bd324faff7c4689",
-      "relocations": [
-        {
-          "offset": 4,
-          "kind": 20,
-          "symbol": "?cleanup@Leaf_766780@@QAEXXZ",
-          "target": 7789024,
-          "addend": 0,
-          "resolved": 29272
-        },
-        {
-          "offset": 17,
-          "kind": 20,
-          "symbol": "_release_766780",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 112038
-        }
-      ],
-      "source_sha256": "095cce2eeb5c6fbbfea22f2f8c9e27c0b09d7e9375bee5849d9593100f6618ab",
-      "source": "src/recovered/00766780.cpp",
-      "population": "population-3602",
-      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 158673
-    },
-    {
       "entry": 7759776,
       "method": "007667a0",
       "symbol": "?get@Leaf_7667a0@@QAEPAXI@Z",
@@ -13895,48 +13853,6 @@
       "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
       "source_quality_family": "hand-written",
       "source_order": 158675
-    },
-    {
-      "entry": 7759840,
-      "method": "007667e0",
-      "symbol": "?get@Leaf_7667e0@@QAEPAXI@Z",
-      "symbol_prefix": "?get@Leaf_7667e0@@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 30,
-      "body_sha256": "6503e51e13342631800df659ddc6538a67fb3f3afb9b990c56d50f6241c89726",
-      "padding_bytes": 2,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "53667c607ad53c8d825dc452ab3727e541e36d5613a34c155244d71d91a1aca7",
-      "relocations": [
-        {
-          "offset": 4,
-          "kind": 20,
-          "symbol": "?cleanup@Leaf_7667e0@@QAEXXZ",
-          "target": 7789024,
-          "addend": 0,
-          "resolved": 29176
-        },
-        {
-          "offset": 17,
-          "kind": 20,
-          "symbol": "_release_7667e0",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 111942
-        }
-      ],
-      "source_sha256": "cfd08228bec43ef2d53eb77d950174b7b603d3d2d088d347bf803c9cedf09c7c",
-      "source": "src/recovered/007667e0.cpp",
-      "population": "population-3602",
-      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 158676
     },
     {
       "entry": 7771408,
