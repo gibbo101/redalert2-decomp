@@ -186,8 +186,13 @@ public:
     // Doubles the bucket count and rehashes every node (0x00601F70).
     void Resize();
 #ifdef RA2_OWNERDRAW_RECORD_DTOR
-    // Removes key, passing its record back in value; true when it was there (0x00601C50, not yet recovered).
+    // Removes key, passing its record back in value; true when it was there (0x00601C50).
     bool Remove(unsigned int const &key, UnknownControlRecord &value);
+    void Shrink();
+    char unknown_1c[0x20 - 0x1c];
+    double Min_Load;    // +0x20 (0x00601C50)
+    double unknown_28;
+    unsigned int Min_Size;  // +0x30 (0x00601C50)
 #endif
 };
 extern UnknownControlIndex unknown_registry_a73640;
