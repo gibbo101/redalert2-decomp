@@ -1511,3 +1511,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Real comip levels decide the inline budget: `_QueryInterface` with its else arm, GetIID, Attach and an inline `_Release`, with the dtor calling `_Release`. One inline source then gave expand-release, expand-ctor and call-both at three rows.
 - `clsid == CLSID` through the shared GUID operator== counts as a site. Hand-expanded blocks can hide real calls: calling the real row took another row out of line and fixed three rows.
 - Empty inline probes after a suspect site measure the budget shortfall in about three compiles (kp.py, thr.sh); never deliver them.
+
+## Real helpers hiding in units (Scout717)
+- A row spelling out a long inlined list may hide a real predicate seed in the same unit: calling it shrinks callers' IL below the auto-inline cap. 0x5ED180's missing budget was a real call to the unit's mask builder.
+- A new row that other rows inline needs body_bytes in the plan, or the composite pass splits and those rows are missed.
+- A charged helper level over `if (Count) Get(...)` keeps a first lookup out of line; a by-value key fixes key stores.

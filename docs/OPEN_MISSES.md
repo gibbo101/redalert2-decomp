@@ -1770,3 +1770,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout717 and Scout718 (2026-11-05; Scout717 InitializeCtrl 0x5ED180, WolDictionary Add 0x6014E0, Remove 0x601C50; Scout718 Infantry Assign_Destination 0x501CE0 from a codex3 draft)
 - OWNER DECISION: RA2_CELL_FROM_COORD_AS_CELL and RA2_INFANTRY_COMIP_PERSIST stay in row 0x4FF450. `As_Unit` and `is_jumpjet` stay. `operator&` in infantry_locomotion_ptr.hpp stays. Try the comip levels in shared com_ptr.hpp on Super Place next.
 - Techno Get_Z_Adjust 0x6CFEA0 80.37 (z1.cpp; twin techno.cpp:5687; three rock arms merge in ours). JumpJet_To_Walk 0x508AB0 69.35. 0x5025C0 not attempted.
+
+## Scout717 (2026-11-05, closed; 4,274 B: InitializeCtrl 0x5ED180, Add 0x6014E0, Remove 0x601C50, 0x5E1640; drafts build/class-work/Scout717/w/keep/; Scout720 continues)
+- UnknownControlIndex::Shrink duplicates WolDictionary::Shrink_Table over the same object, bound by @ref: reconcile later, with the 0x6027E0 forwarding specialization. Pending rename: 0x5ED180 to InitializeCtrl. `Is_Listed_Kind_5e8590` is a hypothesis.
+- Draw_Dialog_Back 0x5FEE70 84.63 (fee70_8463.cpp, overlay keep/h5; `Find_Record` is flagged). 0x5E8130 about 41 (e8130_m9.cpp). 0x5FE9B0 22.54. Not reached: 0x5FEB60, 0x5EB490, 0x5EBA80, 0x5E7EB0. Predicate 0x5E0DA0 looks like the same takeover for the Control_* rows.
