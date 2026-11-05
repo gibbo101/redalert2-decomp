@@ -1,0 +1,49 @@
+#include "shared/wol_sink.hpp"
+// @ref ??_GWstring@@QAEPAXI@Z=007667c0
+void Refresh_Buddy_Status_007570e0();
+void Reset_Buddy_Name_List_00757530();
+inline void WolNameTable::Clear_007662f0()
+{
+    for (unsigned int index = 0; index < BucketCount; ++index) {
+        Node *node = Buckets[index];
+        while (node) {
+            Node *old = node;
+            node = node->Next;
+            delete old;
+        }
+        Buckets[index] = 0;
+    }
+    Count = 0;
+    while (Get_Size() > MinimumBuckets && !ResizeLocked) Shrink_00767c20();
+}
+
+inline void WolChannelDictionary::Clear_00766400()
+{
+    for (unsigned int index = 0; index < BucketCount; ++index) {
+        Node *node = Buckets[index];
+        while (node) {
+            Node *old = node;
+            node = node->Next;
+            delete old;
+        }
+        Buckets[index] = 0;
+    }
+    Count = 0;
+    while (Get_Size() > MinimumBuckets && !ResizeLocked) Shrink_00768010();
+}
+
+inline void Restart_Buddy_Requests()
+{
+    unknown_chat_a72cfc->unknown_slot55();
+    if (unknown_a3d2a4 != 2 && unknown_a3d2a4 != 1) Refresh_Buddy_Status_007570e0();
+    Reset_Buddy_Name_List_00757530();
+}
+
+void __fastcall Reset_Buddy_State_00757720()
+{
+    unknown_strings_b26920.Clear();
+    unknown_strings_b29838.Clear();
+    unknown_names_b29848.Clear_007662f0();
+    unknown_channels_b29478.Clear_00766400();
+    Restart_Buddy_Requests();
+}

@@ -26,6 +26,15 @@ public:
         if(found==0) return 0;
         return Remove(index);
     }
+#ifdef RA2_WOL_ARRAY_LIST_REMOVE_HEAD
+    // Copies and removes the first string (the published ArrayList operation; Service_Buddy_Find_Queue 0x00756610).
+    char Remove_Head(T &text) {
+        int index=0;
+        char found=Get(text,index);
+        if(found==0) return 0;
+        return Remove(index);
+    }
+#endif
     bool Grow_00768320();
     // wlib growVector/shrinkVector kept out of line for other element types (explicit specializations; ownrdraw.cpp's
     // lists 0x00602360, 0x00602940, 0x006029D0 and 0x006023F0, 0x00602480).

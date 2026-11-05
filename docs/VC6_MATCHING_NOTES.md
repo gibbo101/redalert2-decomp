@@ -1721,3 +1721,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A row just over the auto-inline limit can drop under it through a real helper: a tail of `Close_Wonline_Wait(flags)`, or `BucketCount` read directly rather than Get_Size().
 - `else` chain versus flat `if` on arms moves the cross-jump keeper and budget by a small unit.
 - `calls.py` (target and candidate call sequences side by side) finds refusal patterns faster than score diffs.
+
+## Compiled callees and web references (Scout750)
+- A row compiled earlier in the unit inlines with its callee already expanded, so the callee can't be refused inside it. A fresh `inline` copy of the same body can be refused, emitting the callee at its original address.
+- Flat early returns put a later local at function scope, stopping it sharing a slot with an inlined block's temp. A bare `{ }` does the reverse.
+- Dead twin statements can keep a row over the auto-inline limit with its bytes unchanged.
+- Whether a parameter or the zero web gets a register can come down to about two references.
+- Refused inlines belonging to another population need their row moved in with allow_split, or they fail as "Unaccounted emitted code section bytes".

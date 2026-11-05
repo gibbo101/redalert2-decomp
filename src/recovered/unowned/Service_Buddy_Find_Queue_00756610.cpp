@@ -9,10 +9,7 @@ void Service_Buddy_Find_Queue_00756610()
         unknown_wstring_b26944.Release();
     }
     if(unknown_strings_b29838.Count!=0) {
-        if(unknown_strings_b29838.Count>0) {
-            unknown_strings_b29838.Get(unknown_wstring_b26944,0);
-            unknown_strings_b29838.Remove(0);
-        }
+        unknown_strings_b29838.Remove_Head(unknown_wstring_b26944);
         unknown_b2a7f8=time(0);
         WOL::User user;
         memset(&user,0,sizeof(user));
