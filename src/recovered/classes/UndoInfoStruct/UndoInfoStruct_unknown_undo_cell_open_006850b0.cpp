@@ -12,7 +12,7 @@
 // @ref ?unknown_generation_cell_56dba0@@YIPAUUnknownMapGenerationCell@@ABVCell@@@Z=0056dba0
 UnknownMapGenerationCell *__fastcall unknown_generation_cell_56dba0(Cell const &cell);
 
-bool __fastcall unknown_undo_cell_open_6850b0(CellClass *cell)
+bool __fastcall unknown_undo_cell_open_6850b0(CellClass *cell, bool flag)
 {
     Cell coords = cell->MapCoords;
     if (coords.Y + coords.X > unknown_map_min_a70a1c

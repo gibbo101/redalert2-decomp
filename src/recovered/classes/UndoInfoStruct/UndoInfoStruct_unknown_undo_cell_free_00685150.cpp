@@ -16,7 +16,7 @@
 // @ref ?AdjacentCell@@3QBVCell@@B=00851a70
 // @ref ?IsoTileTypes@@3V?$DynamicVectorClass@PAVIsometricTileTypeClass@@@@A=00a40cd0
 
-bool __fastcall unknown_undo_cell_free_685150(CellClass *cell)
+bool __fastcall unknown_undo_cell_free_685150(CellClass *cell, bool flag)
 {
     for (ObjectClass *object = cell->OccupierPtr; object != 0; object = object->unknown_30) {
         if (object->unknown_7d && object->Kind_Of() != 0x0F && object->Kind_Of() != 1) {
