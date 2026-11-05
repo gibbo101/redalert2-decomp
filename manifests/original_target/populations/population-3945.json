@@ -4,8 +4,8 @@
     "id": "population-3945",
     "inventory_sha256": "4976728bd62b9d19a9f3b22b673d0b7a2fe80911d4b5d3de74419734f3e94229",
     "gaps_sha256": "c0300466021b10e660dccd0a52924ffa29b6ba7619b82169f6c2166ac16a8453",
-    "historical_population_sha256": "83a347de4c88a0fb1d3c52036b0dcbee5f5fe1afb421fc7261559eedc72a4fd1",
-    "historical_acceptance_sha256": "f928de2615fb7adc5902c7e6890a73294eab621b9d856ac2a065cd495069aba3"
+    "historical_population_sha256": "47bf3b2997bd20d2c603f3767a9bba430710f988faaca26cd0954630aa142616",
+    "historical_acceptance_sha256": "fed5ae535fef081d405474a57ebe8da8c8ad54dd5e2c04901dd83bf485772626"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -8231,7 +8231,7 @@
     "?Unknown_0073FEE0@@YIXH_N@Z": 7601888,
     "?Update@ToolTipManager@@QAE_NXZ": 7257520,
     "?unknown_art_ini_unique_id@@YAHXZ": 6629136,
-    "?unknown_ini_8397a0_unique_id@@YAHXZ": 6629152,
+    "?unknown_ini_8397a0_unique_id@@YIHXZ": 6629152,
     "?unknown_slot41@MultiplayerGameMode@@UAEXPAV?$DynamicVectorClass@PAVMultiplayerTeam@@@@@Z": 5994272,
     "?unknown_slot39@MultiplayerGameMode@@UAE_NV?$DynamicVectorClass@H@@PAH@Z": 5907664,
     "?unknown_slot41@MultiplayerSiege@@UAEXPAV?$DynamicVectorClass@PAVMultiplayerTeam@@@@@Z": 5945712,
@@ -16606,7 +16606,7 @@
         {
           "offset": 36,
           "kind": 20,
-          "symbol": "?unknown_ini_8397a0_unique_id@@YAHXZ",
+          "symbol": "?unknown_ini_8397a0_unique_id@@YIHXZ",
           "target": 6629152,
           "addend": 0,
           "resolved": 611976
@@ -24465,7 +24465,7 @@
         {
           "offset": 5546,
           "kind": 20,
-          "symbol": "?unknown_ini_8397a0_unique_id@@YAHXZ",
+          "symbol": "?unknown_ini_8397a0_unique_id@@YIHXZ",
           "target": 6629152,
           "addend": 0,
           "resolved": 592082

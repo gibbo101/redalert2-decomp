@@ -123,7 +123,7 @@ public:
 int __fastcall Unknown_006525F0();      // 0x006525F0
 void __fastcall Read_Art_INI();         // 0x00652730
 int unknown_art_ini_unique_id();        // 0x00652710
-int unknown_ini_8397a0_unique_id();     // 0x00652720
+int __fastcall unknown_ini_8397a0_unique_id();     // 0x00652720
 
 // True until the host dialog first fills the session from the rules (0x007E2410; ModemHost::Init_Dialog).
 extern bool unknown_modem_host_first_7e2410;
