@@ -1579,3 +1579,12 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 
 ## Dead conditional writes as evidence (Scout731)
 - Some conditional writes survive early dead-code removal and change register choice with no code left in the output. In 0x5E9410, exactly two `if (kind == C) { x = x; }` give 100; one does nothing, three or more drop to a 49 regime. The target must be a threaded variable with a non-constant right side, under a condition on it. Constant right sides, empty ifs, dead reads and unconditional writes fail. Never deliver these; read one as a sign that real source has two more conditional defs of that variable, and look for those.
+
+## Twin locals that do not exist (Scout732)
+- A `linked` local in a twin may not exist. `LinkedTo->...` twice in one expression tree gives the same load, which does not CSE with earlier reads; a named local was CSE'd upward.
+- `x = MIN(T, factor*T)` as the macro, with the member in every operand, kept a `fld`/`fstp` spill before the second call and a reload in the arms. An if/else or mixed ternary sinks the load past the call.
+- `(0, x)` in a comparison forces a load before a later call: a quick probe for this fault, never delivered.
+- A ctor out of line at one deep site while Cell conversions at that level stay inline is a level fault, not a size fault: the model (RA2_COORD_TPOINT3D plus coord.As_Cell()) had to change.
+- An argument evaluated ahead of an outer call inside `new X(...)` is an inline accessor call.
+- Inlined Query_From plus Attach gives the comip site with an explicit Release; a later site with the pointer known zero folds to `setl`/`dec`/`and` with no source change.
+- Dropping `else` after an early `return` gives a second Cell local its own slot rather than overlapping the sibling scope's.

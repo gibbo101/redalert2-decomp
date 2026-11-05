@@ -1,3 +1,4 @@
+#pragma auto_inline(off)
 UnknownVoxelPalette::UnknownVoxelPalette(unsigned char *palette, unsigned char *table)
 {
     if (palette == 0) {
@@ -15,3 +16,5 @@ UnknownVoxelPalette::UnknownVoxelPalette(unsigned char *palette, unsigned char *
         unknown_1c = 0;
     }
 }
+
+#pragma auto_inline(on)
