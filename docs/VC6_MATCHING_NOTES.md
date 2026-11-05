@@ -1655,3 +1655,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Fetch_CellID() temporaries in a row explain separate frame slots when that row is inlined in a caller.
 - `int ramp = ...; int base = ...; value = *table[ramp] + base;`: naming the right operand before the sum keeps the left operand's load order (75 to 98.49).
 - A statement first in the then-arm and alone in the else arm is hoisted above the test with no else block, but it changes register allocation; a dead one does not.
+
+## Free __fastcall and level helpers (Scout741)
+- A "member" body at a tie, with its register setups after the pushes, goes exact as free `__fastcall`. It took zero-argument node members from 97 to exact; probe it first for any Planning member.
+- A CoordStruct-derived type with a forwarding default ctor keeps ctor 0x41B630 out of line one level down, while == still reads the temp slot directly. An inline returning CoordStruct does not do this.
+- Row-exact forms that refuse at depth 4: `Point2D pixel = f(coord); return pixel;`, `::Rect rect; rect = ...; return rect;`.
+- A named local in a depth-1 accessor can flip the register regime: `PlanningBranchClass *branch = Branches[index];` took a row from 90 to 97. Naming `owner` before an argument call moved `lea` CSE back into ebx.
+- Dead `int` probes and dead static reads moved inline budget here, not ties, so a jump in a tp.py scan may be a budget effect.

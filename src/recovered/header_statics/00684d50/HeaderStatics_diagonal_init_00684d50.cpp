@@ -30,8 +30,6 @@ DynamicVectorClass<UndoInfoStruct> unknown_UndoInfoStruct_list_00abce18;
 // @ref ?ID@?$DynamicVectorClass@UUndoInfoStruct@@@@UAEHPBUUndoInfoStruct@@@Z=00686f70
 // @ref ?ID@?$VectorClass@UUndoInfoStruct@@@@UAEHABUUndoInfoStruct@@@Z=00687160
 // @ref ?ID@?$VectorClass@UUndoInfoStruct@@@@UAEHPBUUndoInfoStruct@@@Z=006871b0
-// @ref ?Resize@?$DynamicVectorClass@UUndoInfoStruct@@@@UAE_NHPBUUndoInfoStruct@@@Z=006871e0
-// @ref ?Resize@?$VectorClass@UUndoInfoStruct@@@@UAE_NHPBUUndoInfoStruct@@@Z=00687030
 // @ref ?unknown_UndoInfoStruct_list_00abce18@@3V?$DynamicVectorClass@UUndoInfoStruct@@@@A=00abce18
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520
 // @ref ?unknown_math_4ba5b0@@YANN@Z=004ba5b0
