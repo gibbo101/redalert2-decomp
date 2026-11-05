@@ -37,6 +37,29 @@ inline bool operator!=(SwizzlePointerClass const &a, SwizzlePointerClass const &
 // 12 bytes: a cell and the value recorded for it (the map-generation undo list
 // 0x00ABCE18: unknown_undo_record_684fc0 adds one, unknown_undo_restore_685030 writes the
 // values back; VectorClass<UndoInfoStruct>::operator== 0x00686FD0 compares all three words).
+#ifdef RA2_UNDO_INFO_POINT
+// The unit's own form (TibSun DeformUndoStruct): the Point2D member and the assigning ctor keep the
+// point in memory where the record inlines; a plain X, Y, Value lets 0x686610/0x6869F0
+// scalar-replace it. Unit-scoped: any new declaration here moves Print_CRCs and 0x4F1190.
+struct UndoInfoStruct {
+    UndoInfoStruct()
+    {
+        CellPoint = Point2D(0, 0);
+        Value = 0;
+    }
+    UndoInfoStruct(Point2D const &point, int value)
+    {
+        CellPoint = point;
+        Value = value;
+    }
+    Point2D CellPoint;  // +0x00
+    int Value;          // +0x08
+};
+inline bool operator==(UndoInfoStruct const &a, UndoInfoStruct const &b)
+{
+    return a.CellPoint == b.CellPoint && a.Value == b.Value;
+}
+#else
 struct UndoInfoStruct {
     UndoInfoStruct() : X(0), Y(0), Value(0) {}
     int X;              // +0x00
@@ -47,6 +70,7 @@ inline bool operator==(UndoInfoStruct const &a, UndoInfoStruct const &b)
 {
     return a.X == b.X && a.Y == b.Y && a.Value == b.Value;
 }
+#endif
 inline bool operator!=(UndoInfoStruct const &a, UndoInfoStruct const &b) { return !(a == b); }
 
 // 0x14 bytes: a rectangle and a flag (VectorClass<DirtyAreaStruct>::Fetch 0x006AC8D0 copies

@@ -7,9 +7,5 @@
 
 void __fastcall unknown_undo_record_684fc0(Point2D const &cell, int value)
 {
-    UndoInfoStruct info;
-    info.X = cell.X;
-    info.Y = cell.Y;
-    info.Value = value;
-    unknown_UndoInfoStruct_list_00abce18.Add(info);
+    unknown_UndoInfoStruct_list_00abce18.Add(UndoInfoStruct(cell, value));
 }
