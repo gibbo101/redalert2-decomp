@@ -231,7 +231,12 @@ public:
     void unknown_47e2b0(); // 0047E2B0 empty RET; nonconst/nonvirtual coordinate operation hypothesis
     Cell() {}
     // Original inline conversion, signed division toward zero; source name hypothesis.
+#ifdef RA2_CELL_FROM_COORD_AS_CELL
+    // TibSun Coord::As_Cell level: Infantry.cpp (Assign_Destination 0x00501CE0).
+    Cell(CoordStruct const &coord) { *this=coord.As_Cell(); }
+#else
     Cell(CoordStruct const &coord) { *this=Cell(coord.X/256,coord.Y/256); }
+#endif
     // TibSun's int constructor. 0x0042AD30 is the out-of-line copy (two word
     // stores, returns this). The int-to-short conversions make it 41-42 IL
     // units, just over the free line, so /Ob2 charges each expansion against

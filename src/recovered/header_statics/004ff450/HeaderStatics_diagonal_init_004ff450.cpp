@@ -2,6 +2,9 @@
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x004FF450-0x004FF636); the other
 // drafts of this plan are emitted by these includes.
+#define RA2_COORD_AS_CELL
+#define RA2_INFANTRY_COMIP_PERSIST  // comip levels of UnknownPersistPtr (shared/infantry.hpp)
+#define RA2_CELL_FROM_COORD_AS_CELL  // the unit converts through CoordStruct::As_Cell (shared/coord.hpp)
 #include "shared/unknown_geometry.hpp"
 #include "shared/unknown_static_rect.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

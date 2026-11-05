@@ -8,9 +8,6 @@
 void InfantryClass::unknown_slot288()
 {
     FootClass::unknown_slot288();
-    if (unknown_494 != 0 && unknown_5d4c00(unknown_494) < 1024 && Type->JumpJet) {
-        UnknownPersistPtr persist(Locomotor.Pointer);
-        GUID clsid;
-        persist->GetClassID(&clsid);
+    if (unknown_494 != 0 && unknown_5d4c00(unknown_494) < 1024 && unknown_508d00()) {
     }
 }

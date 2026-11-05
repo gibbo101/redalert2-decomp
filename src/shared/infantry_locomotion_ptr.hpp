@@ -119,7 +119,9 @@ public:
     // The address of the pointer, for an out parameter (releases what is held).
     Interface **operator&()
     {
-        Release_Held();
+        if (Pointer != 0) {
+            Pointer->Release();
+        }
         Pointer = 0;
         return &Pointer;
     }

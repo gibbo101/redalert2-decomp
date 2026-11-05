@@ -36,23 +36,14 @@ void InfantryClass::Update_Movement_00507b90()
     }
 select_sequence:
     if (Locomotor.Checked()->Is_Really_Moving_Now()) {
-        if (Type->JumpJet) {
-            bool is_jumpjet;
-            {
-                UnknownPersistPtr persist(Locomotor.Pointer);
-                GUID clsid;
-                persist->GetClassID(&clsid);
-                is_jumpjet = memcmp(&clsid, &CLSID_JumpjetLocomotionClass, sizeof(GUID)) == 0;
+        if (unknown_508d00()) {
+            if (unknown_57d) return;
+            if (unknown_468 > 0.8) {
+                unknown_slot311(24, false, false);
+            } else {
+                unknown_slot311(23, false, false);
             }
-            if (is_jumpjet) {
-                if (unknown_57d) return;
-                if (unknown_468 > 0.8) {
-                    unknown_slot311(24, false, false);
-                } else {
-                    unknown_slot311(23, false, false);
-                }
-                return;
-            }
+            return;
         }
         if (unknown_5c3) {
             unknown_slot311(6, false, false);

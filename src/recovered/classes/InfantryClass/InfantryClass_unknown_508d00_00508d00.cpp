@@ -20,8 +20,8 @@ bool InfantryClass::unknown_508d00()
     if (!Type->JumpJet) {
         return false;
     }
-    UnknownPersistPtr persist(Locomotor.Pointer);
+    UnknownPersistPtr persist(Locomotor);
     GUID clsid;
     persist->GetClassID(&clsid);
-    return memcmp(&clsid, &CLSID_JumpjetLocomotionClass, sizeof(GUID)) == 0;
+    return clsid == CLSID_JumpjetLocomotionClass;
 }

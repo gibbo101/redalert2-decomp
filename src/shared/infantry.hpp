@@ -29,6 +29,78 @@
 
 extern "C" GUID const CLSID_InfantryClass;      // 0x007A1BF0
 
+#ifdef RA2_INFANTRY_COMIP_PERSIST
+// The Infantry.cpp IPersist pointer: comip.h's _com_ptr_t<IPersist> built from
+// the held locomotor. The levels are comip's (_QueryInterface with its
+// operator= arm, GetIID, Attach, _Release), so each caller's /Ob2 budget decides
+// which levels expand: the out-of-line constructor 0x00509870 keeps _Release
+// inline, InfantryClass::unknown_508d00 0x00508D00 expands the constructor and
+// calls _Release 0x004A4D00, Assign_Destination 0x00501CE0 calls both.
+class UnknownPersistPtr {
+public:
+    UnknownPersistPtr(UnknownComPtr<ILocomotion, &unknown_uuid_ILocomotion_7ce600> const &other) : Pointer(0) // 0x00509870
+    {
+        if (other) {
+            HRESULT result = Query(other);
+            if (FAILED(result) && result != E_NOINTERFACE) {
+                _com_issue_error(result);
+            }
+        }
+    }
+    ~UnknownPersistPtr() { Release_Held(); }
+    HRESULT Query(UnknownComPtr<ILocomotion, &unknown_uuid_ILocomotion_7ce600> const &other)
+    {
+        HRESULT result;
+        if (other) {
+            IPersist *pointer;
+            result = other.Checked()->QueryInterface(GetIID(), (void **)&pointer);
+            if (FAILED(result)) {
+                Attach(0);
+                return result;
+            }
+            Attach(pointer);
+        } else {
+            operator=(static_cast<IPersist *>(0));
+            result = E_NOINTERFACE;
+        }
+        return result;
+    }
+    UnknownPersistPtr &operator=(IPersist *pointer)
+    {
+        if (Pointer != pointer) {
+            IPersist *old = Pointer;
+            Pointer = pointer;
+            if (Pointer != 0) {
+                Pointer->AddRef();
+            }
+            if (old != 0) {
+                old->Release();
+            }
+        }
+        return *this;
+    }
+    static GUID const &GetIID() { return unknown_uuid_IPersist_7cf208; }
+    void Attach(IPersist *pointer)
+    {
+        Release_Held();
+        Pointer = pointer;
+    }
+    void Release_Held()
+    {
+        if (Pointer != 0) {
+            Pointer->Release();
+        }
+    }
+    IPersist *operator->() const
+    {
+        if (Pointer == 0) {
+            _com_issue_error(E_POINTER);
+        }
+        return Pointer;
+    }
+    IPersist *Pointer;
+};
+#else
 // Shared IPersist conversion used by the Infantry.cpp locomotor checks.
 class UnknownPersistPtr {
 public:
@@ -77,6 +149,7 @@ public:
     }
     IPersist *Pointer;
 };
+#endif
 
 class CCINIClass;
 
