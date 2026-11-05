@@ -1872,3 +1872,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Declaration order of two spilled variables sets their reload order after `rep movs`, slots unchanged.
 - `setcc; test al,al; jne epilogue` with no `mov al,1` means `return hit`, not `return true`. `sete/test` survives only while the bool is live on the false edge.
 - Scout773 sbs.py: a difflib realign on register-normalised rows reads better than the aligned diff when blocks shift.
+
+## Alternate forms of accepted rows (Scout772, Scout774)
+- An accepted row can have a second exact form that matters only when inlined: a named `char *other = f(entry->Name);` kept 0x672F90 at 100 and took a caller from 89.14 to 94.42. When a row is inlined in a parked row, try alternate forms of the accepted row too.
+- Right-to-left argument order explains `x++` scheduling: a wrapper reading the entry before `names++` fixed it.
+- A default-ctor site after a by-value local acts as a pending site: it refuses a depth-4 callee and keeps a later depth-3 one.
+- A charged site can flip a later site even when itself refused.
+- Row-local 100.00 can hide breakage in callers: score caller rows before freezing a header-level form.

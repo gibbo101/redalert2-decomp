@@ -295,15 +295,61 @@ inline HRESULT InternalQueryInterface(void *object, InterfaceMapEntry const *ent
 
 template<class Base> class CComObject : public Base {
 public:
+#ifdef RA2_ATL_COM_OBJECT_CREATE
+    CComObject(void *outer = 0) { InterlockedIncrement(&unknown_module_locks_b2930c); }
+#else
     CComObject(void *outer = 0);
+#endif
     virtual HRESULT __stdcall QueryInterface(GUID const &, void **);
     virtual unsigned long __stdcall AddRef();
     virtual unsigned long __stdcall Release();
+#ifdef RA2_ATL_COM_OBJECT_CREATE
+    static HRESULT __stdcall CreateInstance(CComObject<Base> **object);
+    void SetVoid(void *) {}
+    void InternalFinalConstructAddRef() {}
+    void InternalFinalConstructRelease() {}
+    HRESULT FinalConstruct() { return S_OK; }
+    // BEGIN_COM_MAP's accessors: the sink's IUnknown is the first interface map entry.
+    static InterfaceMapEntry const *__stdcall _GetEntries();
+    IUnknown *_GetRawUnknown() { return (IUnknown *)((int)this + _GetEntries()->offset); }
+    IUnknown *GetUnknown() { return _GetRawUnknown(); }
+#endif
     ~CComObject() {
         m_dwRef = 1;
         InterlockedDecrement(&unknown_module_locks_b2930c);
     }
 };
+#ifdef RA2_ATL_COM_OBJECT_CREATE
+#ifndef E_OUTOFMEMORY
+#define E_OUTOFMEMORY ((HRESULT)0x8007000EL)
+#endif
+// ATL's CComObject<Base>::CreateInstance (atlcom.h). FinalConstruct cannot fail here, so only the
+// allocation and the store of the result reach the code.
+template<class Base> inline HRESULT __stdcall CComObject<Base>::CreateInstance(CComObject<Base> **object)
+{
+    HRESULT result = E_OUTOFMEMORY;
+    CComObject<Base> *created = 0;
+    created = new CComObject<Base>();
+    if (created != 0) {
+        created->SetVoid(0);
+        created->InternalFinalConstructAddRef();
+        result = created->FinalConstruct();
+        created->InternalFinalConstructRelease();
+        if (result != S_OK) {
+            delete created;
+            created = 0;
+        }
+    }
+    *object = created;
+    return result;
+}
+extern InterfaceMapEntry const CChatEventSinkInterfaceMap[];     // 0x007AF760
+extern InterfaceMapEntry const CNetUtilEventSinkInterfaceMap[];  // 0x007AF720
+extern InterfaceMapEntry const CDownloadEventSinkInterfaceMap[]; // 0x007AF708
+template<> inline InterfaceMapEntry const *__stdcall CComObject<CChatEventSink>::_GetEntries() { return CChatEventSinkInterfaceMap; }
+template<> inline InterfaceMapEntry const *__stdcall CComObject<CNetUtilEventSink>::_GetEntries() { return CNetUtilEventSinkInterfaceMap; }
+template<> inline InterfaceMapEntry const *__stdcall CComObject<CDownloadEventSink>::_GetEntries() { return CDownloadEventSinkInterfaceMap; }
+#endif
 }
 
 inline bool Is_Online_Session()

@@ -1,18 +1,2 @@
-// void UnknownComHolder_00765B10::unknown_release() -- 0x00765B10
-// Purpose: releases the COM interface held at +0x00 when there is one (the
-// pointer is not cleared).
-// Assumptions: owner unidentified; the interface is any IUnknown (the
-// same code as 0x00765B00 in another unit).
-#include "shared/com_api.hpp"
-
-struct UnknownComHolder_00765b10 {
-    IUnknown *Interface;                    // +0x00
-    void unknown_release();
-};
-
-void UnknownComHolder_00765b10::unknown_release()
-{
-    if (Interface != 0) {
-        Interface->Release();
-    }
-}
+// ATL::CComPtr<IConnectionPoint>::~CComPtr (0x00765B10), the template in shared/com_api.hpp.
+// Emitted by the refused destructor site in Startup_Chat_00741300's second AtlAdvise; no source of its own.

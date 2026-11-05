@@ -1,9 +1,2 @@
-#include "shared/wol_sink.hpp"
-// @ref ?unknown_module_locks_b2930c=00b2930c
-// @ref ??_7?$CComObject@VCDownloadEventSink@@@ATL@@6B@=007af9a4
-namespace ATL {
-template<> CComObject<CDownloadEventSink>::CComObject(void *outer)
-{
-    InterlockedIncrement(&unknown_module_locks_b2930c);
-}
-}
+// ATL::CComObject<CDownloadEventSink>::CComObject(void *) (0x007668A0), the inline constructor in
+// shared/wol_sink.hpp. Emitted by the refused new in Startup_Chat_00741300's CreateInstance; no source of its own.

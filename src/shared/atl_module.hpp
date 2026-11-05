@@ -52,5 +52,24 @@ inline _ATL_OBJMAP_ENTRY *_NextObjectMapEntry(_ATL_MODULE *pM, _ATL_OBJMAP_ENTRY
 }
 extern "C" HRESULT __stdcall AtlModuleInit(_ATL_MODULE *pM, _ATL_OBJMAP_ENTRY *p, HINSTANCE h);   // 0x0075D160
 extern "C" HRESULT __stdcall AtlModuleTerm(_ATL_MODULE *pM);    // 0x00765990
+#ifdef RA2_ATL_COM_OBJECT_CREATE
+extern "C" HRESULT __stdcall AtlAdvise(IUnknown *container, IUnknown *sink, GUID const &iid, unsigned long *cookie); // 0x0075D0D0
+// ATL's module object (atlbase.h). Init stores the ATL 3.0 version GUID and registers the module globally.
+class CComModule;
+extern CComModule *_pModule;        // 0x00B2ACC0
+extern GUID GUID_ATLVer30;          // 0x007FD528
+class CComModule : public _ATL_MODULE {
+public:
+    HRESULT Init(_ATL_OBJMAP_ENTRY *entries, HINSTANCE instance)
+    {
+        pguidVer = &GUID_ATLVer30;
+        _pModule = this;
+        cbSize = sizeof(_ATL_MODULE);
+        dwAtlBuildVer = 0x300;
+        return AtlModuleInit(this, entries, instance);
+    }
+};
+extern CComModule _Module;          // 0x00B292F8
+#endif
 
 #endif
