@@ -28,12 +28,8 @@ public:
     }
 #ifdef RA2_WOL_ARRAY_LIST_REMOVE_HEAD
     // Copies and removes the first string (the published ArrayList operation; Service_Buddy_Find_Queue 0x00756610).
-    char Remove_Head(T &text) {
-        int index=0;
-        char found=Get(text,index);
-        if(found==0) return 0;
-        return Remove(index);
-    }
+    char Remove(T &text,int index) { return Get(text,index)?Remove(index):0; }
+    char Remove_Head(T &text) { return Remove(text,0); }
 #endif
     bool Grow_00768320();
     // wlib growVector/shrinkVector kept out of line for other element types (explicit specializations; ownrdraw.cpp's
@@ -94,6 +90,19 @@ public:
     }
     bool Shrink_00767b20();
     bool Remove_007661f0(int index);
+#ifdef RA2_WOL_ARRAY_LIST_REMOVE_HEAD
+    bool Remove(int index) {
+        if(Count==0) { return false; }
+        if(index<0) { index=0; }
+        if(index>=Count) { index=Count-1; }
+        (Items+index)->~T();
+        memmove(Items+index,Items+index+1,(Count-index-1)*sizeof(T));
+        --Count;
+        if(Count*3<=Capacity) { Shrink(); }
+        return true;
+    }
+
+#else
     bool Remove(int index) {
         if(Count==0) return false;
         if(index<0) index=0;
@@ -105,6 +114,7 @@ public:
         return true;
     }
 
+#endif
     bool Remove_Inline(int index) {
         if(Count==0) return false;
         if(index<0) index=0;
@@ -128,8 +138,14 @@ public:
         return true;
     }
     bool Get(T &text, int index) {
+#ifdef RA2_WOL_ARRAY_LIST_REMOVE_HEAD
+        if (index < 0 || index >= Count) return false;
+        text = Items[index];
+        return true;
+#else
         if (index >= 0 && index < Count) { text = Items[index]; return true; }
         return false;
+#endif
     }
 #ifdef RA2_WOL_ARRAY_LIST_HEAD_INSERT
     char Add_Head(T &text) { return Add_At(text,0); }

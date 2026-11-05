@@ -7932,41 +7932,6 @@
       "source_order": 145812
     },
     {
-      "entry": 7758272,
-      "method": "007661c0",
-      "symbol": "?unknown_clear@UnknownStringList_007661c0@@QAEXXZ",
-      "symbol_prefix": "?unknown_clear@UnknownStringList_007661c0@@QAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 38,
-      "body_sha256": "2611e351d3e1215d2ee9772b07cbb1412881ab26b1511e60db6742b5f3a3ab2f",
-      "padding_bytes": 10,
-      "full_extent_bytes": 48,
-      "full_extent_sha256": "6202599537604f8e5db9ab1bc1337d9eb8852328b1757d38d0dbd202eae91f5f",
-      "relocations": [
-        {
-          "offset": 18,
-          "kind": 20,
-          "symbol": "??1Wstring@@QAE@XZ",
-          "target": 7789024,
-          "addend": 0,
-          "resolved": 30730
-        }
-      ],
-      "source_sha256": "ee22379b082541c10dba26ae26a2eed4b88d0b091925683c3c627f8ea4ae1c35",
-      "source": "src/recovered/unowned/unknown_clear_strings_007661c0.cpp",
-      "population": "population-3353",
-      "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "unknown_clear_strings_007661c0",
-      "source_order": 145813
-    },
-    {
       "entry": 6277280,
       "method": "005fc8a0",
       "symbol": "?Load_Dialog_Images_5fc8a0@OwnerDraw@@YIXXZ",

@@ -15,10 +15,14 @@ bool __fastcall Queue_Channel_List_Request_0073db20(int channel_type,unsigned ch
         if(!result) return result;
     }
     Reset_Wait_Events();
-    if(!Request_Channel_List_0073d760(channel_type,autoping)) {
+    bool requested=Request_Channel_List_0073d760(channel_type,autoping);
+    if(!requested) {
         SetEvent(wol_wait_events_b264f8[0]);
         return false;
     }
-    if(wait) return Get_Channel_List_0073d8f0();
+    if(wait) {
+        bool result=Get_Channel_List_0073d8f0();
+        return result;
+    }
     return true;
 }

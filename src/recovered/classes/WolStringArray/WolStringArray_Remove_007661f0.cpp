@@ -1,22 +1,3 @@
-#include "shared/wol_sink.hpp"
-template<> bool WolArrayList<Wstring>::Remove_007661f0(int index)
-{
-    if(Count==0) return false;
-    if(index<0) index=0;
-    if(index>=Count) index=Count-1;
-    (Items+index)->~Wstring();
-    memmove(Items+index,Items+index+1,sizeof(Wstring)*(Count-index-1));
-    --Count;
-    if(Count*3<=Capacity) {
-        int capacity=Capacity/2;
-        if(capacity<10) capacity=10;
-        if(capacity<Capacity) {
-            Wstring *items=(Wstring *)operator new(capacity*sizeof(Wstring));
-            if(Items) memcpy(items,Items,Count*sizeof(Wstring));
-            operator delete(Items);
-            Items=items;
-            Capacity=capacity;
-        }
-    }
-    return true;
-}
+// bool WolArrayList<Wstring>::Remove(int index) (0x007661F0): the inline in shared/wol_array_list.hpp;
+// Remove_Head inside the dialog proc 0x00758750 refuses it, which emits this body. Older rows call it by address.
+// @ref ?Remove_007661f0@?$WolArrayList@VWstring@@@@QAE_NH@Z=007661f0

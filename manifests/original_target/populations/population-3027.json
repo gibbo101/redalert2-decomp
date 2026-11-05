@@ -6087,49 +6087,6 @@
       "source_order": 118590
     },
     {
-      "entry": 7765024,
-      "method": "00767c20",
-      "symbol": "?Shrink_00767c20@WolNameTable@@QAEXXZ",
-      "symbol_prefix": "?Shrink_00767c20@WolNameTable@@QAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 168,
-      "body_sha256": "dc9b72889701b7b6c29ae061514a9f2c7962dfdd98a2c00dfbc9c9ca969e1233",
-      "padding_bytes": 8,
-      "full_extent_bytes": 176,
-      "full_extent_sha256": "8123148ced77d7315dc108400d2c9695f059fd93842458c83523b069a5da14e4",
-      "relocations": [
-        {
-          "offset": 56,
-          "kind": 20,
-          "symbol": "??2@YAPAXI@Z",
-          "target": 7872535,
-          "addend": 0,
-          "resolved": 107451
-        },
-        {
-          "offset": 155,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 106620
-        }
-      ],
-      "source_sha256": "e0d5fc9a172004ad2a793dcd499c9c5207eaeed32825eb086d0d7bea2a6d06a1",
-      "source": "src/recovered/classes/WolNameTable/WolNameTable_Shrink_00767c20.cpp",
-      "population": "population-3027",
-      "padding_sha256": "9e8376b4aa602de084708bf231f7ab5bd700e3d623bcf47a3851ce49cbe46f08",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "WolNameTable_Shrink_00767c20",
-      "source_order": 118591
-    },
-    {
       "entry": 7765200,
       "method": "00767cd0",
       "symbol": "?Key_Hash_00767cd0@WolNameTable@@QBEIABVWstring@@@Z",
@@ -6296,49 +6253,6 @@
       "source_quality_family": "hand-written",
       "semantic_name": "WolChannelDictionary_Remove_00767d60",
       "source_order": 118594
-    },
-    {
-      "entry": 7766032,
-      "method": "00768010",
-      "symbol": "?Shrink_00768010@WolChannelDictionary@@QAEXXZ",
-      "symbol_prefix": "?Shrink_00768010@WolChannelDictionary@@QAEXXZ",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 174,
-      "body_sha256": "6453170e440fb76eefb76325e9df5d54373ff79e6dbf92ed5f6e6d919f308222",
-      "padding_bytes": 2,
-      "full_extent_bytes": 176,
-      "full_extent_sha256": "0477839caa1d076254b3e6f7e5e85cbe2710e018d18dff0908b4cd6f30db6f73",
-      "relocations": [
-        {
-          "offset": 56,
-          "kind": 20,
-          "symbol": "??2@YAPAXI@Z",
-          "target": 7872535,
-          "addend": 0,
-          "resolved": 106443
-        },
-        {
-          "offset": 161,
-          "kind": 20,
-          "symbol": "??3@YAXPAX@Z",
-          "target": 7871803,
-          "addend": 0,
-          "resolved": 105606
-        }
-      ],
-      "source_sha256": "3dbb6ce489b18cc0c93c5a3f0e55c2eb8a4682250b5aa305527b0f1959384151",
-      "source": "src/recovered/classes/WolChannelDictionary/WolChannelDictionary_Shrink_00768010.cpp",
-      "population": "population-3027",
-      "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "semantic_name": "WolChannelDictionary_Shrink_00768010",
-      "source_order": 118595
     },
     {
       "entry": 7766288,
