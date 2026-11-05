@@ -1856,4 +1856,11 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 
 ## Scout737 (2026-11-05, closed; 626 B: Thick_Line 0x61A6A0, Dashed 0x61A6F0, Midpoint_Shape 0x61A3C0; NOTES in build/class-work/Scout737/; Scout739 continues)
 - OWNER DECISION: `Point2D point(left, top);` in 0x61A3C0 stays: a dead store accounting for two stores visible at 0x61A4FE and 0x61A502. Unit-local inline Point2D::Length in row 0x61A2F0 (`int x = X; int y = Y;`) stays; not reconciled with row 0x47D060.
-- Planning_Draw_Techno 0x6182F0: 69.65, shape 98.84, 687/697 (w/keep/pd8x.cpp, overlay ph/, rows.py ALL). Call list and registers equal; left is frame 0x178 vs 0x174 and slot order. Depends on unlanded row forms and renames (CoordStruct::operator== bool, PlanningEventTargets statics); Coord_Pixel c6 and Draw_Dot dv2 are budget-only, land only with 0x6182F0 exact. 0x618C00 undrafted, 0x619420 and 0x619870 not rescored. Fogged 0x4C1010 not reached.
+- Planning_Draw_Techno 0x6182F0 (2,230 B) landed by Scout739 r1. 0x618C00 undrafted, 0x619420 and 0x619870 not rescored, Fogged 0x4C1010 not reached.
+
+## Scout738 (2026-11-05, closed; 0 B; NOTES, drafts and sc.sh, nd.py, sm.py in build/class-work/Scout738/; Scout740 continues)
+- OWNER DECISION: Set_Map_Dimensions lands as a single-row unit with a guarded RA2_CELL_FULL_ASSIGN in cell_class.hpp, restating rows 0x548070, 0x54AAB0 and 0x55A550 as inline definitions, if check_plans accepts a one-row unit. Population-3967's rows read unknown_140 and unknown_12c as whole ints, which rules out its implicit op=. `unsigned :32` at +0x144 is a hypothesis; only the size is evidenced.
+- MapClass slot 28 Set_Map_Dimensions 0x5484E0 (5,322 B, ret 0x10 at 0x5499B4, 3 nops): 80.25, shape 98.84, 1420/1421 (w/t3.cpp, overlay hB/). Roots: new's result in ebp vs store-and-reload, i and y swapped edi/ebp, last Cell op- computes Y first.
+- MapClass Zone_Span 0x54F250 (1,386 B, ret 0xC at 0x54F7B7, 6 nops): 33.54, shape 96.54 (w/z10.cpp, overlay hZ/), mostly register colour. Add_Object overload needs a shared-header round.
+- unknown_undo_commit 0x6863E0: 56.38, shape 90.21 (w/u13.cpp). Row 0x6850B0 must expand inline; `mov dl,..; test dl,dl` flag reads unexplained.
+- Split by decode, not started: Undo 0x686610 587 B, 0x686863 390 B, 0x6869F0 669 B, 0x685290, 0x685600 (model 0x686C90). WOL 0x742FD0 1,857 B, 0x743720 2,404 B, 0x75F530 1,165 B, 0x75F9C1 196 B, 0x760853 539 B, 0x760B9F 37 B. 0x7469C0 looks like one 7,172 B dialog proc.

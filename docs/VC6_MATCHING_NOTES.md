@@ -1635,3 +1635,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `bool f() { return a && b && c; }` emits `mov eax,1` / `xor eax,eax`, callers `test al,al`.
 - An inline Length with `int x = X; int y = Y;` keeps an FP load order that a direct `this->` read flips.
 - A function at the tail of a unit, such as Planning_Pixel, need not be an inline.
+
+## Implicit operator= and zero webs (Scout738)
+- Implicit CellClass::operator= stays an out-of-line call in a small caller and expands inline only in a large one (a budget effect). It copies each named bitfield with an xor/and sequence, every alternative of a union, and a struct of bitfields as one dword. Unnamed bits are not copied.
+- A variable with a zero init and no re-init on its loop (`int i = 0; for (; i < n; i++)`) keeps zero in a register for neighbouring stores. `int y = 0` placed after a test rather than in the for gave a second zero web (75.3 to 80.25).
+- `new` size order: `h * w * sizeof` gives `imul` first, then the lea chain.
+- Copy loops by index give a biased pointer and a dec counter.
