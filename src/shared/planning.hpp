@@ -99,6 +99,11 @@ struct PlanningEventTargets {
     int unknown_61a2d0() const;                   // 0x0061A2D0
     static int Unknown_006F6750();                // 0x006F6750
     static int Unknown_006F6760();                // 0x006F6760
+#ifdef RA2_COORD_EQUAL_MEMBER
+    // The order's mission and first target.
+    int Mission() const { return (signed char)unknown_0c; }
+    TargetClass const &Target() const { return Target_0e; }
+#endif
     unsigned char Type;                 // +0x00
     char unknown_01;
     signed char House;                  // +0x02 the issuing house
@@ -200,8 +205,8 @@ PlanningNodeClass *__fastcall Planning_Find_Node(int house, int id, CoordStruct 
 // The drawn node at a coordinate (0x00616210).
 PlanningNodeClass *__stdcall Planning_Find_Drawn(CoordStruct coord);
 // The drawn / listed node whose grown marker contains a screen point (0x00616140, 0x00616070).
-PlanningNodeClass *__stdcall Planning_Pick_Drawn(int x, int y);
-PlanningNodeClass *__stdcall Planning_Pick_Node(int x, int y);
+PlanningNodeClass *__stdcall Planning_Pick_Drawn(Point2D point);
+PlanningNodeClass *__stdcall Planning_Pick_Node(Point2D point);
 // Classifies the selection for planning mode (0x00616B40).
 int Planning_Selection_Kind();
 // Marks a node queued and appends it to the queue list (0x00614650).
@@ -331,6 +336,13 @@ public:
     int Branch_Color(int index);                              // 0x006127E0
     int Loop_Color();                                         // 0x006129B0
     void unknown_612b50(bool all);                             // 0x00612B50
+#ifdef RA2_COORD_EQUAL_MEMBER
+    // Lists the node among the planned nodes (0x00615B60).
+    void Unknown_00615B60() { unknown_list_00a76628.Add(this); }
+    // The small accessors (0x00610C10, 0x00610C20).
+    int Get_18() const { return unknown_18; }
+    int Get_Member_Count() const { return Members.Count(); }
+#endif
     void unknown_614aa0();                                    // 0x00614AA0
 
     // Clears the loop marks: +0xB4 and every branch's +0x74 (expanded inline
@@ -382,6 +394,18 @@ public:
     void unknown_613a80();                                    // 0x00613A80
 #ifdef RA2_COORD_EQUAL_MEMBER
     bool unknown_613310() const;                              // 0x00613310
+    // The small accessors of the path (0x00612EB0, 0x00613B60, 0x00613B30, 0x006132C0-E0,
+    // 0x00613D60, 0x00613D70, 0x00613DA0, 0x00613DB0).
+    TechnoClass *Get_Owner() const { return Owner; }
+    int Get_Node_Count() const { return Nodes.Count(); }
+    int Get_8c() const { return unknown_8c; }
+    void Set_1c() { unknown_1c = true; }
+    void Clear_1c() { unknown_1c = false; }
+    bool Get_1c() const { return unknown_1c; }
+    int Get_LoopLength() const { return LoopLength; }
+    int Get_LoopStart() const { return LoopStart; }
+    bool Loop_Past_Start() const { return LoopStart > 0; }
+    bool Loop_At_Start() const { return LoopStart == 0; }
 #endif
     bool Has_Node(PlanningNodeClass *node);                   // 0x00613C60
     void unknown_613c80(PlanningNodeClass *node);             // 0x00613C80
@@ -450,6 +474,36 @@ void __fastcall Planning_Path_Add(TechnoClass *techno, PlanningNodeClass *node);
 void __fastcall Planning_Path_Append(TechnoClass *techno, PlanningNodeClass *node);
 // Takes a node out of the paths of its members (0x00616960).
 void __fastcall Planning_Remove_Node(PlanningNodeClass *node);
+// How an order relates to the techno's path: 0 refused outright, 1 and 2
+// past a terminating or a continual order, -1 taken (0x00615A80).
+int __fastcall Planning_Order_Kind(TechnoClass *techno, PlanningEventTargets const *event);
+void __fastcall Planning_Refuse_Order(EventClass const *event);   // 0x00617020
+// Order types planning mode never takes: deploy, stop, scatter (0x006158F0).
+inline bool __fastcall Planning_Stop_Type(char type) { return type == 9 || type == 6 || type == 7; }
+// Missions that end a path (0x006159C0).
+inline bool __fastcall Planning_Terminal_Mission(int mission) { return mission == 7 || mission == 8 || mission == 9; }
+// A move or attack whose target is a building, or for 11 nothing (0x006159E0).
+inline bool __fastcall Planning_Cell_Mission(int mission, TargetClass target)
+{
+    if (mission == 1 || mission == 11) {
+        if (target.Kind == 11) {
+            return true;
+        }
+        if (mission == 11 && !target.Kind) {
+            return true;
+        }
+    }
+    return false;
+}
+// Sets the pending-command state (0x00617240).
+inline void __fastcall Planning_Set_a76750(int value) { unknown_a76750 = value; }
+// The small accessors of the planning state (0x00614840, 0x00617AD0, 0x00617AE0,
+// 0x00617E20, 0x00617E30).
+inline bool Planning_Is_Active() { return unknown_flag_a767a4; }
+inline void __fastcall Planning_Set_a766f8(PlanningNodeClass *node) { unknown_node_a766f8 = node; }
+inline PlanningNodeClass *Planning_Get_a766f8() { return unknown_node_a766f8; }
+inline void __fastcall Planning_Set_a766b0(PlanningNodeClass *node) { unknown_node_a766b0 = node; }
+inline void Planning_Clear_a766b0() { unknown_node_a766b0 = 0; }
 // Plans an order for a techno (0x00614EC0).
 bool __fastcall Planning_Add_Order(TechnoClass *techno, EventClass *event);
 // Carries out a planning event (0x00614BA0).
