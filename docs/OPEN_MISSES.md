@@ -1797,3 +1797,12 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout723 (2026-11-05, closed; 906 B: aim point 0x6D65B0, rad beams 0x6CA340; drafts build/class-work/Scout723/w/keep/; Scout726 continues)
 - OWNER DECISION: file-local Move_Coord in 0x6D65B0 and `Cell offset(ox, spread); offset.Y *= y;` in 0x6CA340 stay as landed (flagged, no dead stores).
 - Draw_Action_Line 0x4CAB90 92.49, shape 100 (dal_j0_9249.cpp; one slot flip; `Clipped_Fill` would be new). Draw_Voxel 0x6FF690 52.54 (dv_h_5091_shape8537.cpp; cache lookup must inline at the first site). Rock 0x6D5F40 64.37. Area_Modify 96.38 flat.
+
+## Scout725 (2026-11-05, closed; 0 B; drafts build/class-work/Scout725/w/keep/; Scout727 continues)
+- ComboDrop 0x5EAD20 87.20, shape 99.12, frame right, calls 165/165 (e10_8743.cpp, overlay w/keep/h, rows r601950s, r601c50i, rd35, r5ded60n). Left: row loop 0x6EE-0x977 register roles, arm 1 Shrink, frame order above 0xAC, case 0x7E8. No check_plans yet; new Set_Wide_Text and remove_node forms unchecked in 0x5DEE00, 0x5ED180, 0x5ECC90, 0x5ECF40, 0x6005C0. `Get_Item_Text`, `UnknownScrollInfo`, `UnknownListItem` are invented names.
+- Send_Statistics_Packet 0x698D00 (5,136 B) landed by Scout726 r1.
+
+## Scout726 (2026-11-05, closed; 5,136 B: Send_Statistics_Packet 0x698D00; drafts build/class-work/Scout726/w/keep/; Scout728 continues)
+- OWNER DECISION: file-local TRACKER and UNIT_TOTALS macros, the UnitTrackerClass cast of HouseClass's UnknownHouseTracker members, `int count`, `char digit` and the RA2_STATS_UNIT guard stay as landed. Unknown_00698D00 keeps its symbol until a rename.
+- ScoreClass::Presentation 0x663FE0: real body 7,782 B + 10 pad behind a short inventory row, not the mid-body piece noted earlier. 87.42, shape 98.87, frame right, calls 279/279 (w/keep/presentation/presentation_p6_8742.cpp with credits.cpp, done.cpp, sa.cpp, overlay hp/; NOTES.md has resume steps). Left: inlined Show_Credits must call Is_Anim_Done out of line; two timer ctor sites must be calls; about 200 diff lines are one register swap after them.
+- build/class-work/Scout726/LIST.md covers 172 rows; gaps.py lists accepted-coverage gaps, which find real functions behind short rows. Undrafted: Fly 0x4BCD50 and 0x4BE720, Wait_For_Players 0x624C10, Queue 0x629290, Tactical 0x6A93F0, Cell 0x47E2C0, Fogged 0x4C1010, WOL 0x759E20, 0x7540A0, 0x7459A0, Planning 0x6182F0, 0x618C00.

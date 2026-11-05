@@ -72,7 +72,10 @@ bool __fastcall XMP_Is_Prime(digit const *number, int precision);               
 
 inline digit XMP_Bit_Mask(int bits)
 {
-    return bits ? (1L << ((bits - 1) % UNITSIZE)) : 0;
+    if (bits == 0) {
+        return 0;
+    }
+    return 1L << ((bits - 1) % UNITSIZE);
 }
 
 inline bool XMP_Test_Bit(digit const *number, unsigned bit)

@@ -1540,3 +1540,15 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - An inline taking `Rect box` by value and intersecting inside gives crossed Rect slots with no named local.
 - `Cell offset(ox, oy)` and fieldwise stores each fix only one add destination; a ctor for X plus a separate Y update fixes both.
 - `test ah,N` where `test esi,imm` was expected means the test is on a masked value, not the raw one.
+
+## Consumption before a dtor (Scout725)
+- Missing IL can be consumption before a ??_G site rather than a bigger dtor: `int size = (wcslen(text) + 1) * 2;` plus a per-arm `next` kept the delete out of line, where an `if (p) { delete p; p = 0; }` form stopped the dtor inlining elsewhere.
+- Rect ctor charges can be the root budget: which Rects are field-assigned reproduces the arm pattern. A `while (length && w > max) text[--length]` loop gives the hoisted pointer and rotation.
+
+## Repeated calls and short rows (Scout726)
+- A call repeated inside an inlined loop means the call was passed as an inline argument: `Get_Unit_Count(x.Get_All_Totals(), x.UnitCount)` re-evaluates per iteration. A row defined later in the file still inlines.
+- Reusing `i` for an outer loop, rather than a separate named counter, can fix frame slot order (97.12 to 98.14).
+- `Timer(0)` picks the out-of-line long ctor 0x4DE1E0 with no change to row 0x6682C0.
+- `return Anims.ID(anim) == -1 ? true : false;` keeps Is_Anim_Done and Show_Credits exact where the plain comparison does not.
+- A shared-header overlay can change a fragile row's inlining: guard new declarations under a macro defined only by the new source (RA2_STATS_UNIT) and run fragile_probe.
+- Real functions hide behind short inventory rows; check accepted-coverage gaps (Scout726 gaps.py) and carry body_bytes plus bound_evidence.
