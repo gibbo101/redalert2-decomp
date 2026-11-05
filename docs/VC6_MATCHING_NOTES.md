@@ -1588,3 +1588,14 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - An argument evaluated ahead of an outer call inside `new X(...)` is an inline accessor call.
 - Inlined Query_From plus Attach gives the comip site with an explicit Release; a later site with the pointer known zero folds to `setl`/`dec`/`and` with no source change.
 - Dropping `else` after an early `return` gives a second Cell local its own slot rather than overlapping the sibling scope's.
+
+## Late-removed compares and loop forms (Scout734)
+- A computed value stored and never used can be kept by a compare VC6 removes late. With one use `range` is forward-substituted and the store loses part of its expression; two uses keep the full value. Missing refs also shift frame slots.
+- `for (; tries < 6; tries++)` with `break`s gives a plain `jl head`; `for(;;)` and `do/while` copied the head up to the first test.
+- `flags & 0x100` tested twice stays a CSE temp and is not threaded; `int under = flags & 0x100` threads the second test away and spills.
+- Dividing a Vector3 by a double gives fdivr with a qword zero and matches Z = 0.
+- A by-value CoordStruct argument hoists X, Y, Z ahead of a virtual call evaluating the other operand.
+- `!found ? fallback : Cell(x, y)` gives `lea eax` / `mov eax,[eax]`; through an inline it adds a second temp slot.
+- `for (int j = i + 1; ...)` plus `i++` coalesced j and i (91.52 to 99.75). `i < start + count` rather than a named `end`, and named int offsets, fixed schedule ties.
+- An inline ctor in a unit emits the vtable, so check_plans needs @refs for every slot; the failure reads "Unsupported allocatable data section".
+- A ternary in an argument tail-duplicates the call.

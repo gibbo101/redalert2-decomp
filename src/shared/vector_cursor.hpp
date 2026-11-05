@@ -33,19 +33,31 @@ public:
 #endif
 #endif
     virtual ~VectorCursor() {}
+#ifdef VECTOR_CURSOR_VIRTUAL_OPERATORS
+    virtual operator bool() const {
+#else
     virtual bool Valid() const {
+#endif
 #ifdef VECTOR_CURSOR_REFERENCE_FORM
         return Index < CountHelper::Count(*Vector);
 #else
         return Index < (unsigned)Vector->Count();
 #endif
     }
+#ifdef VECTOR_CURSOR_VIRTUAL_OPERATORS
+    virtual VectorCursor<T, V> &operator++()
+#else
     virtual VectorCursor<T, V> &Next()
+#endif
     {
         Index++;
         return *this;
     }
+#ifdef VECTOR_CURSOR_VIRTUAL_OPERATORS
+    virtual VectorCursor<T, V> &operator--()
+#else
     virtual VectorCursor<T, V> &Prev()
+#endif
     {
         Index--;
         return *this;
@@ -55,9 +67,14 @@ public:
 
     // Iterator spelling; the slots stay virtual calls through these (Conflict::
     // Describe_Options 0x00727960 calls Valid/Next through the vtable).
+#ifdef VECTOR_CURSOR_VIRTUAL_OPERATORS
+    VectorCursor<T, V> &operator++(int) { return ++(*this); }
+    VectorCursor<T, V> &operator--(int) { return --(*this); }
+#else
     operator bool() const { return Valid(); }
     VectorCursor<T, V> &operator++() { return Next(); }
     VectorCursor<T, V> &operator--() { return Prev(); }
+#endif
     T &operator*() const { return Current(); }
 
     V *Vector;          // +0x04

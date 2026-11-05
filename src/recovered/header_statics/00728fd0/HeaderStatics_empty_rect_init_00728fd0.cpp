@@ -1,3 +1,13 @@
+// The WDTMap.ini builder 0x0072A880 expands VectorClass<TRect<int>>/<Centroid>::Resize inline, walks
+// TibSun's VectorCursor (virtual operator bool and ++, out-of-class constructors) and uses TRect's
+// Set and point members, GenericList's constructor 0x00490E80 and CDFileClass(Wstring const &).
+#define VECTOR_IMPLEMENT_VECTOR_RESIZE
+#define VECTOR_CURSOR_REFERENCE_FORM
+#define VECTOR_CURSOR_VIRTUAL_OPERATORS
+#define GENERIC_LIST_IMPLEMENT_CONSTRUCTOR
+#define INDEX_DECLARE_CONSTRUCTOR
+#define CD_FILE_DECLARE_WSTRING_CTOR
+#define RA2_TRECT_POINT_MEMBERS
 #define RA2_WDT_MAP_LOAD_LAYOUT
 #define RA2_RECT_POINT_INLINE
 #define CENTROID_DECLARE_CONSTRUCTOR
