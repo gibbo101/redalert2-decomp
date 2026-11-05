@@ -1984,3 +1984,8 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 
 ## Scout764 (2026-11-05, closed; 0 B; NOTES and keep/ in build/class-work/Scout764/)
 - Exit_Object 0x440520 stays 91.93, loose 99.02, now spent without a new mechanism. The diff is add orientation: 0xB62 needs L while the twin site 0xED9 and refinery 0x111B stay R, and about 500 lab states never gave that. Look for what makes the refinery stop flipping: AdjacentCell[4] keys, the dword read of [14], the 0x1108 Z store. Split_Region 69.22 unchanged: T keeps no register mapping for node or cell_index in the direction loop.
+
+## Scout765 (2026-11-05, closed; 3,818 B: Mission_Harvest 0x7025A0, UnitClass Draw_It 0x700E70; NOTES in build/class-work/Scout765/; Scout767 continues)
+- OWNER DECISION: Draw_It's one-call by-value wrapper Coord_Pixel_00700e70 stays. It explains visible frame layout (0x40) and has the same shape as Planning_Coord_Pixel; the twin calls Coord_To_Pixel directly. Mission_Harvest's threading `bool found` idiom stays, flagged.
+- Explosion_Damage 0x47E2C0: 97.92, shape 100, masked 0 (w/keep/ed6_9792.cpp, overlay h). Only frame slots 0x20 and 0x24 are swapped; both groups total 14 references. Removing one `i == 0` read in a lab makes it exact; about 40 natural forms flat.
+- Scatter 0x504120 94.14 (one imul site), Per_Cell_Process 0x500AA0 93.45 (natural 86.18), Draw_Action_Line landed by codex2. Class inventory: the unrecovered list over 500 B has no real undrafted function left; rows with no entry are mostly mid-function fragments or CRT.

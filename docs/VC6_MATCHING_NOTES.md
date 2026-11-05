@@ -1816,3 +1816,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A trailing `mov mapped,reg` can be a spilled variable's second-chance register at a join, when the add has the other orientation. Add orientation is chosen regardless of source order and varies site by site with key and object counts; stack objects move key thresholds non-monotonically.
 - Unequal forms of a repeated statement let one arm's register web move into the other arm.
 - Reloading a variable at a loop head is decided at the join: without the mapping a scratch register stays free, which keeps a CSE alive.
+
+## Twin inline templates and by-value helpers (Scout765)
+- Check the twin's inline templates first: `Random_Pick` instead of `Random()(a, b)` at four sites flipped a whole tail register web (84.94 to 96.28, masked 0). Not universal.
+- Separate block-scoped loop counters, as the twin writes them, fix slot grouping. Splitting `ittype` into `ittype1`, `ittype2` fixed ring add order.
+- A separate search loop with `bool found`, whose test threads away, leaves the same code but changes which `return` tails merge (91.66 to exact). `if (index == Count)` keeps a real compare.
+- A by-value helper parameter moves a temp's address use out of the statement, so the temp can share a dead slot: a frame 8 B short went exact.
+- diff_candidate masks data: a wrong literal with an @ref can score 100.00 and only acceptance refuses it ("Unsupported allocatable data section"). Read bytes at the bound address.
+- check_plans refuses a rename spec and source plans in one run. fragile_probe must run under the project Python; system python3 reads `fail` on every line.
