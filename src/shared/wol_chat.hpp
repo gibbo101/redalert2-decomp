@@ -121,7 +121,11 @@ struct __declspec(novtable) IChat : public IUnknown {
     virtual HRESULT __stdcall unknown_slot42(char const *text) = 0;
     virtual void __stdcall unknown_slot43() = 0;
     virtual HRESULT __stdcall unknown_slot44(unsigned int value) = 0;
+#ifdef RA2_WOL_CHAT_SETTINGS_SIGNATURES
+    virtual void __stdcall unknown_slot45(int team) = 0; // 0x00743720 passes the WDT team
+#else
     virtual void __stdcall unknown_slot45() = 0;
+#endif
     virtual HRESULT __stdcall RequestSetLocale(int locale) = 0;
     virtual HRESULT __stdcall RequestUserLocale(User *users) = 0;
 #ifdef RA2_WOL_WAIT_CALLBACK_SIGNATURES

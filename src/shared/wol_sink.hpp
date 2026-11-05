@@ -479,6 +479,22 @@ public:
         Capacity = capacity;
         return true;
     }
+#ifdef RA2_WOL_INT_ARRAY_MAKE_ROOM
+    // Grows until both the slot and the tail fit (wonline.cpp): one level under Add_At, so 0x007469C0's deepest
+    // sites keep the placement new inline where Grow refuses at inline depth 9 (the out-of-line 0x00768290).
+    void Make_Room(int index) {
+        if(index>=Capacity) Grow();
+        if(Count>=Capacity) Grow();
+    }
+    char Add_At(int &value,int index) {
+        if(index>Count) index=Count;
+        Make_Room(index);
+        if(index<Count) memmove(Items+index+1,Items+index,(Count-index)*sizeof(int));
+        new(Items+index) int(value);
+        ++Count;
+        return 1;
+    }
+#else
     char Add_At(int &value,int index) {
         if(index>Count) index=Count;
         if(index>=Capacity) Grow();
@@ -488,6 +504,7 @@ public:
         ++Count;
         return 1;
     }
+#endif
     int Length() const { return Count; }
     char Add_Tail(int &value) { return Add_At(value,Length()); }
     bool Grow_00768290();
@@ -516,6 +533,22 @@ public:
         Count=0;
         while(BucketCount>MinimumBuckets && !ResizeLocked) Shrink_00767850();
     }
+#ifdef RA2_WOL_NAME_SET_CLEAR_INLINE
+    // clear() with the shrink expanded (0x00743720; Clear keeps the out-of-line call).
+    void Clear_Inline() {
+        for(unsigned int index=0;index<BucketCount;++index) {
+            Node *node=Buckets[index];
+            while(node) {
+                Node *old=node;
+                node=node->Next;
+                delete old;
+            }
+            Buckets[index]=0;
+        }
+        Count=0;
+        while(BucketCount>MinimumBuckets && !ResizeLocked) Shrink_Table();
+    }
+#endif
     void Grow_00767900();
     unsigned int Key_Hash_007679a0(Wstring const &key) const;
     bool Add_00766070(Wstring const &key, int const &value);

@@ -77,6 +77,9 @@ public:
     int Max_Themes() const { return Themes.Count(); }
     ThemeType What_Is_Playing() const { return Score != THEME_NONE ? Score : Pending; }
 #endif
+#if defined(THEME_WHAT_IS_PLAYING) && !defined(THEME_SOUND_CONTROLS)
+    ThemeType What_Is_Playing() const { return Score != THEME_NONE ? Score : Pending; }  // wonline.cpp 0x0073C990
+#endif
 #ifdef THEME_CONTROL_RECORD
     // The theme's file name, made in a static buffer ("" out of range; 0x006E8110).
     char const *Theme_File_Name(ThemeType theme);

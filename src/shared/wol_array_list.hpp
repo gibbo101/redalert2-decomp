@@ -33,6 +33,20 @@ public:
     bool Shrink_Vector();
     // wlib clear() kept out of line (explicit specializations; ownrdraw.cpp's 0x00601490).
     void Clear_Vector();
+#ifdef RA2_WOL_ARRAY_LIST_COPY
+    // wlib ArrayList(ArrayList &other) and operator= with the out-of-line get and add (wonline.cpp's by-value sound lists,
+    // 0x00743720; guarded like RA2_WOL_ARRAY_LIST_ASSIGN).
+    WolArrayList(WolArrayList &other) : Count(0), Capacity(0), Items(0) { *this = other; }
+    WolArrayList &operator=(WolArrayList &other) {
+        T node;
+        Clear();
+        for (int i = 0; i < other.Count; ++i) {
+            other.Get_007662c0(node, i);
+            Insert(node, Count);
+        }
+        return *this;
+    }
+#endif
 #ifdef RA2_WOL_ARRAY_LIST_ASSIGN
     // wlib ArrayList(ArrayList &other) and operator= (ownrdraw.cpp's 0x006025A0 expands both; guarded: only the
     // ownrdraw.cpp population, whose header-statics source defines the macro, declares them).
