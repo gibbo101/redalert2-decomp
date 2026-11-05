@@ -5,9 +5,9 @@
 // @ref ??_7?$VectorCursor@PAVGraphicMenuItem@@V?$DynamicVectorClass@PAVGraphicMenuItem@@@@@@6B@=007a2b84
 // @ref ??_E?$VectorCursor@PAVGraphicMenuItem@@V?$DynamicVectorClass@PAVGraphicMenuItem@@@@@@UAEPAXI@Z=004defa0
 // @ref ??_G?$VectorCursor@PAVGraphicMenuItem@@V?$DynamicVectorClass@PAVGraphicMenuItem@@@@@@UAEPAXI@Z=004defa0
-// @ref ?Valid@?$VectorCursor@PAVGraphicMenuItem@@V?$DynamicVectorClass@PAVGraphicMenuItem@@@@@@UBE_NXZ=004def90
-// @ref ?Next@?$VectorCursor@PAVGraphicMenuItem@@V?$DynamicVectorClass@PAVGraphicMenuItem@@@@@@UAEAAV1@XZ=004df220
-// @ref ?Prev@?$VectorCursor@PAVGraphicMenuItem@@V?$DynamicVectorClass@PAVGraphicMenuItem@@@@@@UAEAAV1@XZ=004df230
+// @ref ??B?$VectorCursor@PAVGraphicMenuItem@@V?$DynamicVectorClass@PAVGraphicMenuItem@@@@@@UBE_NXZ=004def90
+// @ref ??E?$VectorCursor@PAVGraphicMenuItem@@V?$DynamicVectorClass@PAVGraphicMenuItem@@@@@@UAEAAV0@XZ=004df220
+// @ref ??F?$VectorCursor@PAVGraphicMenuItem@@V?$DynamicVectorClass@PAVGraphicMenuItem@@@@@@UAEAAV0@XZ=004df230
 #include "shared/dsurface.hpp"
 #include "shared/unknown_globals.hpp"
 // @ref ??1MSEngine@@UAE@XZ=005b2c70
@@ -24,10 +24,9 @@ typedef VectorCursor<GraphicMenuItem *, DynamicVectorClass<GraphicMenuItem *> > 
 GraphicMenu::~GraphicMenu()
 {
     GraphicMenuCursor cursor(Items);
-    GraphicMenuCursor *at = &cursor;
-    while (at->Valid()) {
-        delete at->Current();
-        at->Next();
+    while (cursor) {
+        delete *cursor;
+        cursor++;
     }
     unknown_surface_839958->Fill(0);
     unknown_surface_839954->Fill(0);
