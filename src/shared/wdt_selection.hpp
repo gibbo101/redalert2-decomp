@@ -46,6 +46,9 @@ public:
     void Uncancel();                                                // 0x0072F540
     bool Select_Territory(rc_ptr<Territory> const &territory);      // 0x0072ED80
     bool Hover(Point2D const &point);                               // 0x0072E650
+#ifdef WDT_SELECTION_ACCESSORS
+    bool Hover_At(Point2D const &point) { return Hover(point); }
+#endif
     void Hover_2(Point2D const &point);                             // 0x0072E720
     int Get_Result(int index, bool &mega);                          // 0x0072F6E0 (0 won, 1 lost, 2 neither)
     void Start_Theme();                                             // 0x00730160
