@@ -4,6 +4,7 @@
 #include "shared/owner_draw_dialog_control.hpp"
 template<> unsigned int WolDictionary<unsigned int,OwnerDraw::UnknownControlRecord>::Key_Hash(unsigned int const &key) const
 {
-    unsigned int hash=Hash(key);
-    return ((1u<<Bits)-1)&hash;
+    unsigned int hash = Hash(key);
+    unsigned int bucket = (1u << Bits) - 1;
+    return bucket & hash;
 }

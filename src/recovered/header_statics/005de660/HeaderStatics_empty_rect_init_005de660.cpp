@@ -8,6 +8,7 @@
 #define RA2_WOL_ARRAY_LIST_ASSIGN
 #define RA2_OWNERDRAW_RECORD_DTOR
 #define RA2_WOL_DICTIONARY_SHRINK_ACCESSORS
+#define RA2_WOL_DICTIONARY_WLIB_STATEMENTS
 // Header-static dynamic initializers of the unit at 0x005DE660: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x005DE660-0x005DE841); the other
 // drafts of this plan are emitted by these includes.

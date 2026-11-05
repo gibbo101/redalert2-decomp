@@ -50,9 +50,9 @@ public:
         }
         Count = 0;
 #ifdef RA2_WOL_DICTIONARY_SHRINK_ACCESSORS
-        // wlib clear()'s shrink loop through the size accessors (two more /Ob2 sites after the node
-        // deletes: the ownrdraw registry's atexit destructor 0x005DEE00 then calls ??_GWideString 0x00601430).
-        while (Get_Size() > Get_Minimum_Size() && Can_Resize()) Shrink_Buckets();
+        // wlib clear()'s shrink loop through the size accessors (more /Ob2 sites after the node deletes:
+        // the ownrdraw registry's atexit destructor 0x005DEE00 then calls ??_GWideString 0x00601430).
+        while (Get_Size() > MinimumBuckets && Can_Resize()) Shrink_Buckets();
 #else
         while (Get_Size() > MinimumBuckets && !ResizeLocked) Shrink_Table();
 #endif
@@ -60,7 +60,6 @@ public:
     }
     unsigned int Get_Size() const { return BucketCount; }
 #ifdef RA2_WOL_DICTIONARY_SHRINK_ACCESSORS
-    unsigned int Get_Minimum_Size() const { return MinimumBuckets; }
     bool Can_Resize() const { return !ResizeLocked; }
     // wlib shrink()'s body as the inline member the destructor expands (the out-of-line instance of this
     // population, 0x006027E0, is an explicit specialization of Shrink_Table that forwards here; its real
@@ -99,6 +98,22 @@ public:
         return ((1u << Bits) - 1) & hash;
     }
 #endif
+#ifdef RA2_WOL_DICTIONARY_WLIB_STATEMENTS
+    // wlib getPointer statement for statement (its IL size sets the /Ob2 budget of 0x005ECC90 and 0x005ECF40).
+    bool Get_Pointer(K const &key, V **value) const
+    {
+        int offset;
+        Node *node;
+        if (Count == 0) return false;
+        offset = Key_Hash(key);
+        node = Buckets[offset];
+        if (node == 0) return false;
+        while ((node != 0) && !(node->Key == key)) node = node->Next;
+        if (node == 0) return false;
+        *value = &node->Value;
+        return true;
+    }
+#else
     bool Get_Pointer(K const &key, V **value) const
     {
         if (Count == 0) return false;
@@ -109,6 +124,7 @@ public:
         *value = &node->Value;
         return true;
     }
+#endif
     // Copies the value for PCX cache and Wonline buddy-status callers.
     // wlib Dictionary::getValue(key, value): copies the value out when the key is present.
     bool Get_Value(K const &key, V &value) const
@@ -201,6 +217,35 @@ public:
         return true;
     }
     // wlib Dictionary::add without its replacing remove: a new entry at the head of its bucket.
+#ifdef RA2_WOL_DICTIONARY_WLIB_STATEMENTS
+    // By reference (0x006014E0 takes pointers), in wlib add's statements.
+    bool Add(K const &key, V const &value)
+    {
+        int offset;
+        Node *node;
+        Node *item;
+        Node *temp;
+        float percent;
+        item = new Node;
+        item->Key = key;
+        item->Value = value;
+        item->Next = 0;
+        offset = Key_Hash(key);
+        node = Buckets[offset];
+        if (node == 0) {
+            Buckets[offset] = item;
+        } else {
+            temp = Buckets[offset];
+            Buckets[offset] = item;
+            item->Next = temp;
+        }
+        ++Count;
+        percent = (float)Count;
+        percent /= (float)Get_Size();
+        if (percent >= GrowLimit) Grow_Table();
+        return true;
+    }
+#else
     bool Add(K const &key, V value)
     {
         Node *node = new Node;
@@ -217,6 +262,7 @@ public:
         if (load >= GrowLimit) Grow_Table();
         return true;
     }
+#endif
     void Grow_Table();
     void Shrink_Table();
     Node **Buckets;

@@ -53,6 +53,17 @@ struct UnknownControlRecord {
 #endif
     // Replaces text_28 with a wide copy of text (none for a null or empty string) (0x00600560).
     void Set_Text_600560(char const *text);
+    // Replaces text_28 with a copy of text (none for a null or empty string) (0x00600510).
+    void Set_Wide_Text_600510(wchar_t const *text) {
+        if (text_28) {
+            operator delete(text_28);
+            text_28 = 0;
+        }
+        if (text && *text) {
+            text_28 = (wchar_t *)operator new(wcslen(text) * 2 + 2);
+            wcscpy(text_28, text);
+        }
+    }
     char unknown_00[0x10];
     Surface *surface_10; // +0x10 a BSurface (0x005FE490 creates it; 0x005FF380 deletes it)
     Surface *image_14;  // +0x14 image set by 0x005E1F30

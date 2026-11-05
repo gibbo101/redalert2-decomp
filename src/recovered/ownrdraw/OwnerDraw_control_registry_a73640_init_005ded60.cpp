@@ -13,16 +13,11 @@ namespace OwnerDraw {
 
 inline UnknownControlRecord::~UnknownControlRecord()
 {
-    if (text_28) {
-        operator delete(text_28);
-        text_28 = 0;
-    }
+    Set_Wide_Text_600510(0);
     while (list_34) {
         ((UnknownNodeList_006003d0 *)this)->unknown_remove_node(list_34);
     }
-    if (unknown_3c) {
-        delete unknown_3c;
-    }
+    delete unknown_3c;
 }
 
 }
