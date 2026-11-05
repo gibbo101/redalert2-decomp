@@ -8,6 +8,7 @@ void __fastcall Open_Wait_Window_0074d4d0(unsigned int,WideString const &,bool);
 // @ref ?wol_source_file_007fd62c@@3PADA=007fd62c
 // @ref ?wol_leaving_label_7fe6e4@@3PADA=007fe6e4
 // @ref ?Open_Wait_Window_0074d4d0@@YIXIABVWideString@@_N@Z=0074d4d0
+inline void __fastcall Close_Wonline_Wait(unsigned int flags);
 bool __fastcall Leave_Current_Channel_00744610(unsigned int flags,bool show)
 {
     if(unknown_b2abe8) {
@@ -21,11 +22,7 @@ bool __fastcall Leave_Current_Channel_00744610(unsigned int flags,bool show)
             Sleep(100);
             Unknown_0073e100();
         }
-        void *wait=Unknown_00735940(0xc4);
-        if(wait && !(unknown_b2abe0&=~0x40)) Unknown_007357E0(wait,0);
-        HWND current=Unknown_00735B10();
-        HWND edit=GetDlgItem(current,0x540);
-        if(edit) SetFocus(edit);
+        Close_Wonline_Wait(0x40);
     }
     return unknown_b2abe8==0;
 }

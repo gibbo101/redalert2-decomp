@@ -55,11 +55,6 @@ inline void __fastcall Set_Matchmaking_State(int state,int timeout,int result)
     unknown_b2ab88=timeout;
     unknown_b2a8a4=time(0);
 }
-inline bool Request_Chat_Channels()
-{
-    return Queue_Channel_List_Request_0073db20(0, 0, true);
-}
-
 inline void Match_Message(char const *label,int line)
 {
     Message_Box_005c3230(StringTable::Load_String(label,0,wol_source_file_007fd62c,line),0,Unknown_0073c120,false);
