@@ -1484,3 +1484,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Statement order inside an arm decides the `and` destination register. `if (flag) {arm} else {...}` lays the flag arm after the ret; `if (!flag)` does not.
 - A loop written `if (cb) cb(); while (...) { if (cb) cb(); }` supplies the fourth zero use that hoists zero into a register (58 to exact).
 - A spelled-out MAX with `shift = MAX(a); shift -= MAX(b);` closed a register swap. Writing `box.Y =` into a Rect local fixed a `push; sub` tie.
+
+## Temps within one statement (Scout712)
+- Two temps inside one statement or one inline conflict even when the first is used up before the second is born. A coord whose Z store is dead vanishes from code but still takes a 12 B slot.
+- `CoordStruct(Point2D(call), height)` evaluates the Point2D first, against right-to-left; a by-const-ref helper keeps height first.
+- A this/position ebx/ebp swap tracks final-code base refs only: dead reads, aliases and inline params do not count.
+- `R|G|B` reassociation does not follow source order; it looks register-need driven.
