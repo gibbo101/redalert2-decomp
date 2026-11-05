@@ -1,4 +1,4 @@
-// Cell FootClass::unknown_4cb8f0(int radius, int arg2) (0x004CB8F0)
+// Cell FootClass::unknown_4cb8f0(int radius, bool arg2) (0x004CB8F0)
 // A cell to dock at: the unit's own cell when its land type is 5;
 // otherwise, ring by ring out to the radius, the best-scoring cell
 // (0x0047A230) that passes 0x004CB6D0 on the first ring with one (the zero
@@ -8,7 +8,7 @@
 // @ref ?Map@@3VMouseClass@@A=008324e0
 // @ref ?Unknown_0047A230@UnknownCellClass@@QAEHXZ=0047a230
 
-Cell FootClass::unknown_4cb8f0(int radius, int arg2)
+Cell FootClass::unknown_4cb8f0(int radius, bool arg2)
 {
     Cell found = unknown_geometry_k;
     Cell center = Center_Coord();

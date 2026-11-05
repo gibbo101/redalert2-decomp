@@ -1811,3 +1811,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Threaded outer loops do nothing: a loop level only counts with a real back edge at weighting time.
 - `break` jumps from known cases thread past a following `if (result != 4)`.
 - macOS: overlay folders hb and hB collide on this filesystem.
+
+## Add orientation (Scout764)
+- A trailing `mov mapped,reg` can be a spilled variable's second-chance register at a join, when the add has the other orientation. Add orientation is chosen regardless of source order and varies site by site with key and object counts; stack objects move key thresholds non-monotonically.
+- Unequal forms of a repeated statement let one arm's register web move into the other arm.
+- Reloading a variable at a loop head is decided at the join: without the mapping a scratch register stays free, which keeps a CSE alive.
