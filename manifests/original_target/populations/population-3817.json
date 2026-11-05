@@ -8971,48 +8971,6 @@
       "source_order": 170180
     },
     {
-      "entry": 7678256,
-      "method": "00752930",
-      "symbol": "?FUN_00752930@seed_00752930@@YAXXZ",
-      "symbol_prefix": "?FUN_00752930@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 32,
-      "body_sha256": "fb1461c6e8759519e3bf1f6f235a58965a1ea0d5c89ed14185a10ccb2b8747ec",
-      "padding_bytes": 0,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "fb1461c6e8759519e3bf1f6f235a58965a1ea0d5c89ed14185a10ccb2b8747ec",
-      "relocations": [
-        {
-          "offset": 4,
-          "kind": 6,
-          "symbol": "__imp__ResetEvent@4",
-          "target": 7971184,
-          "addend": 0,
-          "resolved": 7971184
-        },
-        {
-          "offset": 9,
-          "kind": 6,
-          "symbol": "_DAT_00b264f8",
-          "target": 11691256,
-          "addend": 0,
-          "resolved": 11691256
-        }
-      ],
-      "source_sha256": "3a90769fd4d86e5248bf2ff9d995b45e272484484e4b67e2a84eaf8f632b5599",
-      "source": "src/recovered/00752930.cpp",
-      "population": "population-3817",
-      "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 170181
-    },
-    {
       "entry": 7719424,
       "method": "0075ca00",
       "symbol": "?FUN_0075ca00@seed_0075ca00@@YAXXZ",
