@@ -64,6 +64,10 @@ public:
     bool unknown_005743f0(Cell const &,Cell const &,int);
     bool unknown_00574e50(Cell const &,Cell const &,int);
     bool unknown_005753f0(Cell const &,Cell const &,int);
+#ifdef RA2_MAP_REGION_SPLIT
+    void Increase_Height_0056eea0(char height);  // 0x0056EEA0, TibSun Increase_Height
+    DynamicVectorClass< ::Cell > *Collect_Region_Boundary_0056fed0();  // 0x0056FED0, TibSun Build_Border_Cell_List2
+#endif
     void *unknown_00;
     DynamicVectorClass<int> *NeighborRegionIndices; // +04, originalnew0x18/vptr79DA94 at5709E8
     int Index; // +08, assigned increasing ID by0056D870

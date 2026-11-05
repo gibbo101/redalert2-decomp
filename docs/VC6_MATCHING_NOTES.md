@@ -1728,3 +1728,15 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Dead twin statements can keep a row over the auto-inline limit with its bytes unchanged.
 - Whether a parameter or the zero web gets a register can come down to about two references.
 - Refused inlines belonging to another population need their row moved in with allow_split, or they fail as "Unaccounted emitted code section bytes".
+
+## Lifted helpers and hidden schedules (Scout752)
+- A repeated loop lifted into a real helper inside a callee lowers that callee's cost and adds a nested spend. It took a row from 96.55 to exact and changed refusals in other callers.
+- Free pending sites count, and wrapper sites weigh more than ctor and dtor sites. The budget tracks root size: 20 plain stores flip decisions.
+- An `unresolved` entry in diff_candidate can hide a /G5 schedule difference: byte-compare the object (Scout752 sdiff.py) before planning.
+- "Unaccounted emitted code section" names no symbol: Scout752 comdats.py lists emitted COMDATs to diff against a baseline.
+- A row with zero callers and an inventory gap can be the real inline behind a repeated pattern; check gaps before spelling a helper out.
+
+## Join reloads and vanishing compares (Scout753)
+- Second-chance join rule (inferred from probes): jump-table edges keep a spilled variable's register mapping; an extra forward jump from a block without the mapping drops it at the join and the use reloads into a fresh register at the head block; a fallthrough predecessor without the mapping gets the reload at its own end.
+- `T *target=attacker; if (attacker==0 && <global read>) target=0; if (target)...` leaves no bytes but keeps `target` a distinct web, so a later `attacker` use reads the home slot. The condition must be a global read: a member read folds early, and a parameter read maps that parameter into a register.
+- The order of compensating reloads rotates with distinct static keys; dead reads at head and tail give the same result, so it is key count, not budget.
