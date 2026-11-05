@@ -10,11 +10,13 @@ int CellClass::unknown_47a5a0()
 {
     int mask = 0;
     for (int index = 0; index < 4; index++) {
-        CellClass &cell = Adjacent_Cell(index << 1);
-        if (cell.OverlayIndex != -1 && (cell.unknown_11c <= 0 || OverlayTypes[cell.OverlayIndex]->IsVeins)
-            && ((cell.OverlayIndex != 0x7E && OverlayTypes[cell.OverlayIndex]->IsVeins) || (cell.OverlayIndex == 0x7E && cell.OverlayData >= 48))) {
-            mask |= 1 << index;
+        CellClass const &cell = ((CellClass const *)this)->Adjacent_Cell(index << 1);
+        bool connected=false;
+        if(cell.OverlayIndex!=-1 && (cell.unknown_11c<=0 || OverlayTypes[cell.OverlayIndex]->IsVeins)) {
+            connected=(cell.OverlayIndex!=126 && OverlayTypes[cell.OverlayIndex]->IsVeins)
+                || (cell.OverlayIndex==126 && cell.OverlayData>=48);
         }
+        if(connected) mask|=1<<index;
     }
     return mask;
 }
