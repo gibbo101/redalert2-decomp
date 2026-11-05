@@ -1,3 +1,5 @@
+// Existing RGB accessors are used by Radar Init_For_House in this unit.
+#define RGB_DECLARE_ACCESSORS
 // Header-static dynamic initializers of the unit at 0x0062EB00: the shape_file.hpp empty rect and the
 // shared/unknown_geometry.hpp constants (0x0062EB00-0x0062ECE1); the other
 // drafts of this plan are emitted by these includes.
