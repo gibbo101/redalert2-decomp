@@ -1762,3 +1762,7 @@ Resume notes are in build/class-work/Scout527/NOTES.md (lab w/u).
 ## Scout716 (2026-11-05, closed; 1,244 B: Subclass_Dialog 0x5ECC90, Set_Paint_Disabled 0x5ECF40; drafts build/class-work/Scout716/w/keep/; Scout717 continues)
 - OWNER DECISION: RA2_WOL_DICTIONARY_WLIB_STATEMENTS, `Set_Wide_Text_600510` and removing Get_Minimum_Size stay. campaign_score.hpp declares 0x5ECF40 void, the real return is BOOL: fix when next touched.
 - InitializeCtrl 0x5ED180 (2,462+2 B) 93.66 clean, shape 100 with probes (ed180_t1_probe100.cpp, overlay keep/h2/, OwnerDraw_unknown_5de880_true_order.cpp; about 8 dead locals' worth of budget before the third Add). 0x5E9410 99.79 spent. RadSite 0x637A80 97.25, 0x637DC0 96.90 (one slot tie). 0x6014E0 52 (needs inline operator=).
+
+## Scout715 (2026-11-05, closed; 0 B; drafts build/class-work/Scout715/w/keep/; Scout718 continues)
+- Plan_Route 0x707F60 parked: 99.90 with probes (best_9990_probes.cpp), clean about 91.8 (cl.cpp). The legs.Add and unknown_478.Add mix by site has no natural explanation; the Count-store order at 0x600 and 0x15FF never appeared in 400+ variants.
+- Super Place 0x69D850 (4,388 B) 78.46, shape 96.91 (place_vd_7846.cpp, overlay h5/; `Chrono_Place_Anim`, `Above_Five` are hypotheses; com_ptr.hpp Assign_Held unprobed).

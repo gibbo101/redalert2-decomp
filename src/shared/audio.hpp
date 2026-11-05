@@ -173,7 +173,7 @@ struct AudioLevel {
     int __fastcall Update();                            // 0x004070F0 1 when the level changed
     int __fastcall Get_Target();                        // 0x004071E0 the target, whole part
 
-    unsigned int volatile Flags;    // +0x00 AUDIO_LEVEL_*
+    unsigned int Flags;             // +0x00 AUDIO_LEVEL_*
     unsigned int Current;           // +0x04
     unsigned int Target;            // +0x08
     unsigned int Step;              // +0x0C per millisecond

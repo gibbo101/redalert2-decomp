@@ -1501,3 +1501,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - An inline's statement shape sets its IL size and so the /Ob2 budget of its callers; put a per-population macro around it when other units need the old shape.
 - `if (p) delete p` where `delete p` was meant changes the tail register and the IL. `(style & (unsigned char)7) == (unsigned char)7` gives `and ecx; cmp cl`. `RGB()` folds before IL and adds no budget.
 - Slot and reload ties can depend on whether a double local is an FP-register candidate.
+
+## Add destinations and depth (Scout715)
+- Apparent tail-merge copy differences can be add-destination ties on an inlined Add, with the merges following from them. Phase period can be 32 in local count, not 8, in a large function; a Point2D temp counts as 2K only for sites after it. Calls and labels do not move those fronts.
+- Rows out of line at the first case of a huge function, when budget is ample, mean an inline wrapper around the statement.
+- `bool const &x = obj->Bitfield;` gives a dead byte store. `CoordStruct(coord)` as a by-value argument hoists X, Y, Z ahead of `Checked()`. `jl` on a loop over a static table means an int index loop, not a pointer loop.
