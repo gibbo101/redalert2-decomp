@@ -4,8 +4,8 @@
     "id": "population-2447",
     "inventory_sha256": "ec7e8ea3d17ace71647cb5d5d5ceac56b1a6726a60ef98848b623663cc33e73f",
     "gaps_sha256": "0d313d1890d7467efc0212aa92f45f44e3fc10bda60dcebb5d955e84e6318c90",
-    "historical_population_sha256": "111d82ccbaa35153e88964d844f1f6fe045d851e6de77cfc5aedb66b2f8d3d92",
-    "historical_acceptance_sha256": "5c1517a1dde77338d40aee5bf745e177cb91bbe8cab8e041324506fd6355559f"
+    "historical_population_sha256": "cd8c5cef28d5d7c4ee7f272179ecb9ee051017768e72a76f5efccb3848030568",
+    "historical_acceptance_sha256": "8add62147d2fe86dbd912b4d794354f73a3b323feb96777d1cb81e19cd4c032b"
   },
   "references": {
     "??_7?$rc_ptr@VPlayerProfile@@@@6B@": 8058188,
@@ -3384,7 +3384,7 @@
     "?unknown_slot24@MultiplayerGameMode@@UAEHXZ": 5993680,
     "?Detach@ObjectClass@@UAEXPAVAbstractClass@@_N@Z": 6110160,
     "?unknown_slot2@SimpleDialogControl@OwnerDraw@@UAE_NXZ": 6295920,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "_wcsncpy": 7878178,
     "?Reset@ScriptClass@@QAE_NXZ": 6719744,
     "?Reset@TriggerClass@@QAEXXZ": 7263872,

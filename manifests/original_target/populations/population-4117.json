@@ -4,8 +4,8 @@
     "id": "population-4117",
     "inventory_sha256": "046f43991c5653b3195c9aba4317db025482a098225e13593efb3d383eacace6",
     "gaps_sha256": "f672108d3a56265f615d5eb5e6587cf1f65914aa9eec56133039f1827cc67ae1",
-    "historical_population_sha256": "a9bdcff9bcec7b80e9d99ac169a6997a52f429c73ae15252a9dc290c05005ba6",
-    "historical_acceptance_sha256": "00613656b60260e9cb7b4287accfc4cdc88ec51565c8413fb5a09c10011e71c6"
+    "historical_population_sha256": "e0a44b17fff77ea4a33d41df15bbbbce7e91fab7970faad9bc814f8ab97e3849",
+    "historical_acceptance_sha256": "012d1b1043a79e7c3e56d4392912006b22b219b243d66b45d1e87a9c33585154"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -3489,7 +3489,7 @@
     "?ID@?$DynamicVectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z": 6313952,
     "?ID@?$VectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z": 6314624,
     "?unknown_slot17@ParticleSystemClass@@UBE_NXZ": 6343792,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?Scale@Quaternion@@QAEXM@Z": 6431232,
     "?Next@?$QueueClass@VEventClass@@$0IA@@@QAEHXZ": 6482400,
     "?ID@?$VectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UAEHABU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@Z": 6507984,
@@ -6671,7 +6671,7 @@
     "?Has_Member@PlanningNodeClass@@QBE_NPAVTechnoClass@@@Z": 6361376,
     "?Coord@PlanningNodeClass@@QBE?AUCoordStruct@@XZ": 6361472,
     "?Pixel@PlanningNodeClass@@QBE?AUPoint2D@@XZ": 6361536,
-    "?Planning_Centered_Rect@@YI?AVRect@@HUPoint2D@@@Z": 6361808,
+    "?Planning_Centered_Rect@@YI?AVRect@@UPoint2D@@H@Z": 6361808,
     "?Is_At@PlanningNodeClass@@QBEHUCoordStruct@@@Z": 6361872,
     "?Rect@PlanningNodeClass@@QBE?AV0@XZ": 6361952,
     "?Member_For@PlanningNodeClass@@QBEPAVPlanningMemberClass@@PAVTechnoClass@@@Z": 6362224,
@@ -6846,8 +6846,8 @@
     "?Planning_Draw_Dot@@YIXUPoint2D@@H@Z": 6398352,
     "?Planning_Fill_Dot@@YIXUPoint2D@@H@Z": 6398480,
     "?unknown_61a2d0@PlanningEventTargets@@QBEHXZ": 6398672,
-    "?Unknown_006F6760@PlanningEventTargets@@QBEHXZ": 7300960,
-    "?Unknown_006F6750@PlanningEventTargets@@QBEHXZ": 7300944,
+    "?Unknown_006F6760@PlanningEventTargets@@SAHXZ": 7300960,
+    "?Unknown_006F6750@PlanningEventTargets@@SAHXZ": 7300944,
     "?Planning_Draw_Line@@YIXUPoint2D@@0HH_N@Z": 6399392,
     "?Clip_Line@@YI_NAAUPoint2D@@0ABVRect@@@Z": 7820832,
     "?Planning_Pixel@@YIHPBVRGBClass@@@Z": 6400096,
@@ -12636,8 +12636,8 @@
     {
       "entry": 6400176,
       "method": "0061a8b0",
-      "symbol": "??8CoordStruct@@QBEHABU0@@Z",
-      "symbol_prefix": "??8CoordStruct@@QBEHABU0@@Z",
+      "symbol": "??8CoordStruct@@QBE_NABU0@@Z",
+      "symbol_prefix": "??8CoordStruct@@QBE_NABU0@@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -12650,7 +12650,7 @@
       "full_extent_bytes": 48,
       "full_extent_sha256": "5ef490ed0c0012d11785f2202e2b13f5ac937ffa46caf446e43e9b2fb802f6f2",
       "relocations": [],
-      "source_sha256": "a9a14c9a85eaa4d019cbf8e10e1b658edd89b6d3b5f584d64a4bf5e889423ae1",
+      "source_sha256": "9bdd6d5f19293da4389c999acaaed305c8ddebfca1d258f72ca774de87e544e3",
       "source": "src/recovered/classes/CoordStruct/CoordStruct_operator_equal_0061a8b0.cpp",
       "population": "population-4117",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
@@ -15038,8 +15038,8 @@
     {
       "entry": 6361808,
       "method": "006112d0",
-      "symbol": "?Planning_Centered_Rect@@YI?AVRect@@HUPoint2D@@@Z",
-      "symbol_prefix": "?Planning_Centered_Rect@@YI?AVRect@@HUPoint2D@@@Z",
+      "symbol": "?Planning_Centered_Rect@@YI?AVRect@@UPoint2D@@H@Z",
+      "symbol_prefix": "?Planning_Centered_Rect@@YI?AVRect@@UPoint2D@@H@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -15052,7 +15052,7 @@
       "full_extent_bytes": 64,
       "full_extent_sha256": "a516915e877efb98ec472aa5f53c60c54405cea3b8d393b0a8580512f02d1693",
       "relocations": [],
-      "source_sha256": "8d5c568cce1082fae3ffe17f8367969528ed255dc9c1372e4c2dd6031dfae747",
+      "source_sha256": "f7cde54af17458386dc061fd7547a933e12dee6664767c76f5515e857221d8fc",
       "source": "src/recovered/unowned/Planning_Centered_Rect_006112d0.cpp",
       "population": "population-4117",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",
@@ -15153,7 +15153,7 @@
           "resolved": 8623668
         }
       ],
-      "source_sha256": "f204111d9c1bfe547b368741b82eb409cecc580e955b187f8cb06fd0df1711e9",
+      "source_sha256": "2aebca2fc7a83a84c7c7c52f2db1c78462cd391c60bd85dd35487a9ac631797b",
       "source": "src/recovered/classes/PlanningNodeClass/PlanningNodeClass_Rect_00611360.cpp",
       "population": "population-4117",
       "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
@@ -19338,7 +19338,7 @@
           "resolved": 8624484
         }
       ],
-      "source_sha256": "4ab9f7c982d23c41face2d50e3961af589d178512bdca8412956563f9c707e23",
+      "source_sha256": "131e0fc17c0c88b492d35888340db9f1d3a826bcc19f4aaa4257afb2ec7fb0a9",
       "source": "src/recovered/unowned/Planning_Draw_Dot_0061a190.cpp",
       "population": "population-4117",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",
@@ -19380,7 +19380,7 @@
           "resolved": 8624484
         }
       ],
-      "source_sha256": "c8305a87a06b579217b5defc3856592083719e73e3325f232735646c8eebc017",
+      "source_sha256": "533dc00e2fc5f8fc16faef209fdb83ca2c50a7f9b51fb865f8b390083555e176",
       "source": "src/recovered/unowned/Planning_Fill_Dot_0061a210.cpp",
       "population": "population-4117",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
@@ -19408,7 +19408,7 @@
         {
           "offset": 10,
           "kind": 20,
-          "symbol": "?Unknown_006F6760@PlanningEventTargets@@QBEHXZ",
+          "symbol": "?Unknown_006F6760@PlanningEventTargets@@SAHXZ",
           "target": 7300960,
           "addend": 0,
           "resolved": 902274
@@ -19416,13 +19416,13 @@
         {
           "offset": 20,
           "kind": 20,
-          "symbol": "?Unknown_006F6750@PlanningEventTargets@@QBEHXZ",
+          "symbol": "?Unknown_006F6750@PlanningEventTargets@@SAHXZ",
           "target": 7300944,
           "addend": 0,
           "resolved": 902248
         }
       ],
-      "source_sha256": "7f34effb49db770e4ec6e2759cd23f228c6a6a3af6926ab8b01c07632a682f93",
+      "source_sha256": "410fe625ec9a0558da26c7c9609add235ac642104818355468d4fa82c558e2a6",
       "source": "src/recovered/classes/PlanningEventTargets/PlanningEventTargets_unknown_61a2d0_0061a2d0.cpp",
       "population": "population-4117",
       "padding_sha256": "e61d6a793b42951d4e466a18683567c9011cd840b03559c0cc9e94c761995098",
@@ -21367,7 +21367,7 @@
         {
           "offset": 226,
           "kind": 20,
-          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@HUPoint2D@@@Z",
+          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@UPoint2D@@H@Z",
           "target": 6361808,
           "addend": 0,
           "resolved": 4294939386
@@ -21466,7 +21466,7 @@
         {
           "offset": 72,
           "kind": 20,
-          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@HUPoint2D@@@Z",
+          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@UPoint2D@@H@Z",
           "target": 6361808,
           "addend": 0,
           "resolved": 84
@@ -21525,7 +21525,7 @@
         {
           "offset": 112,
           "kind": 20,
-          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@HUPoint2D@@@Z",
+          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@UPoint2D@@H@Z",
           "target": 6361808,
           "addend": 0,
           "resolved": 4294963036
@@ -21592,7 +21592,7 @@
         {
           "offset": 107,
           "kind": 20,
-          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@HUPoint2D@@@Z",
+          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@UPoint2D@@H@Z",
           "target": 6361808,
           "addend": 0,
           "resolved": 4294962753
@@ -21659,7 +21659,7 @@
         {
           "offset": 73,
           "kind": 20,
-          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@HUPoint2D@@@Z",
+          "symbol": "?Planning_Centered_Rect@@YI?AVRect@@UPoint2D@@H@Z",
           "target": 6361808,
           "addend": 0,
           "resolved": 4294960723

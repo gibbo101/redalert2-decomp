@@ -4,8 +4,8 @@
     "id": "population-3121",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "1e15cb0cadc5a620f2d2485d9de007f6e7489a1bd7bc0eae94e22245e87e1ce0",
-    "historical_acceptance_sha256": "724e16ab4a2c1bb5d81dc8f400b55d800cc238989ee65bff6a3c0955f538d113"
+    "historical_population_sha256": "762416a763f12563a605bd500317f2bba9106712dbfd655f4d70405a10d28ecc",
+    "historical_acceptance_sha256": "37322ea7967202ee5cd94202fa225afd951dd1f7d7812202d212373531fe0017"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -1691,7 +1691,7 @@
     "?Set@RGBClass@@QAEXEEE@Z": 5204928,
     "?Set_Cell_Region_Index_0056e970@@YIXABVCell@@H@Z": 5695856,
     "?Fetch@?$VectorClass@N@@UBENH@Z": 5824176,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?Delete@RAMFileClass@@UAEHXZ": 6521792,
     "?Set@Quaternion@@QAEXMMMM@Z": 6431104,
     "_memmove": 7877264,

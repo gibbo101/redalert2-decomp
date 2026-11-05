@@ -4,8 +4,8 @@
     "id": "population-3537",
     "inventory_sha256": "80e37858c5aef0d0528a85d4ef6b8f0d855605f3a47af94d7672ac5a41673025",
     "gaps_sha256": "931a4ad7d2af1e9806dcd1b51edd52bc979d1d6cd2fda65924492f3ed6ad0941",
-    "historical_population_sha256": "0fc0fa79e8210ba5fd5a70f3642d0b7c2eebdcfee566cd6b18004e5e76b3bac8",
-    "historical_acceptance_sha256": "29d62c545b595747c8d7b56919941d628eda4cc0de16c8f603d3ab6edf592505"
+    "historical_population_sha256": "f5e5be5aaf9455de7402a0b1e62c3c0a68da4af86c53f980b24058cc93feebd0",
+    "historical_acceptance_sha256": "d458303699621d1041106769cdec84e60da0ccea41f9961ade92d3f7f620b8b5"
   },
   "references": {
     "_unknown_empty_rect": 11259392,
@@ -3508,7 +3508,7 @@
     "?Equal_004fef20@Cell@@QBEHABV1@@Z": 5238560,
     "?unknown_53f460@@YA_NXZ": 5502048,
     "?Not_Equal_0058db50@Cell@@QBEHABV1@@Z": 5823312,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "_strncpy": 7873488,
     "?unknown_18@CampaignProperties@WorldDominationTour@@QBEHXZ": 7525008,
     "??_GAbstractClass@@UAEPAXI@Z": 4260672,

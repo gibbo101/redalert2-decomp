@@ -4,8 +4,8 @@
     "id": "population-2212",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "0507225852400a9af568e13a5b5ca8f7ec25a19f178fabb258052692572c326c",
-    "historical_acceptance_sha256": "0b8dfa5bce19b19c09c783c4976bf80e9450aacf2d6967a8d9bb8552a63ba8af"
+    "historical_population_sha256": "23db71e9b6b80a74b9b3cc90d080d71f9efcf212fd5caab7f10d77520c3e75bb",
+    "historical_acceptance_sha256": "e70db1cb65028ea4e3ece20a993a7ceae00a8bbd098ba8deacd1b6d2ce9442b2"
   },
   "references": {
     "?Audio_DS_Setup_Decoder@@YIXPAUAudioChannelBuffer@@@Z": 4234080,
@@ -988,7 +988,7 @@
     "?Next@?$VectorCursor@V?$rc_ptr@VGameOption@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VGameOption@WorldDominationTour@@@@@@@@UAEAAV1@XZ": 7504688,
     "?Prev@?$VectorCursor@V?$rc_ptr@VGameOption@WorldDominationTour@@@@V?$DynamicVectorClass@V?$rc_ptr@VGameOption@WorldDominationTour@@@@@@@@UAEAAV1@XZ": 7504704,
     "?Set@RGBClass@@QAEXEEE@Z": 5204928,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?unknown_application_84c7dc@@3PAUIUnknown@@A": 8701916,
     "??1RadarClass@@UAE@XZ": 6484096,
     "?Release@?$TClassFactory@VCStreamClass@@@@UAGKXZ": 6886784,

@@ -4,8 +4,8 @@
     "id": "population-2956",
     "inventory_sha256": "82d76aac864d26e1a63b17341b43281aa316ce10c95f0d35474ebdba4d64c791",
     "gaps_sha256": "04d36338335bdd7e43e23bfbef070ac0785ff73d83cba2e18e0315fd2eb8d76f",
-    "historical_population_sha256": "14d0a3ef476eef6b89c00950ead6a97be753140725c01b73bcab8ab8a1b37590",
-    "historical_acceptance_sha256": "70cd4a9dbc0422785e79a4ab358723bee6f9e810d7113266dbd84a39185fe789"
+    "historical_population_sha256": "3c24c991d7122ba0d6fb21f773796af1b5641d8322763365e2889f23a9f73e2c",
+    "historical_acceptance_sha256": "8cf16823a108b55f0069e0604d686cec6344cb2def076249e8cf3b60650c8ec3"
   },
   "references": {
     "?Wstring_To_Wide@@YI?AVWideString@@ABVWstring@@@Z": 7803328,
@@ -2581,7 +2581,7 @@
     "?ID@?$DynamicVectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z": 6313952,
     "?ID@?$VectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z": 6314624,
     "?unknown_slot17@ParticleSystemClass@@UBE_NXZ": 6343792,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?ID@?$VectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UAEHABU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@Z": 6507984,
     "?ID@?$DynamicVectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UAEHABU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@Z": 6508368,
     "?Delete@RAMFileClass@@UAEHXZ": 6521792,

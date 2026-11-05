@@ -4,8 +4,8 @@
     "id": "population-2410",
     "inventory_sha256": "10af80db1a6d38c4414efdf5250c525bf160cf73e2cb01c0f70b3c480e5fcbfd",
     "gaps_sha256": "e8c2996cdb98f3060894f657a56560081bc5b590cafd16f914ae0b29f4a590e1",
-    "historical_population_sha256": "1dcdd5db25ced8eb31ade2c656b2e04a19d1f31dc80b3e33a275aa8c4e331f66",
-    "historical_acceptance_sha256": "f1a9a936ce11cf8a87003d3e6b12a4b3e08cfb818929d20248ba97b207f94823"
+    "historical_population_sha256": "08790c1546cec8e6d17f13a72fb02c2ce887757cb7164e6b0aa56ae396547b2e",
+    "historical_acceptance_sha256": "038a2c80c46a74aceca588b8462f457650f22f4787e039fbe23717b85c61df7f"
   },
   "references": {
     "??_7CNetUtilEventSink@@6B@": 8058944,
@@ -3879,7 +3879,7 @@
     "?unknown_slot24@MultiplayerGameMode@@UAEHXZ": 5993680,
     "?Detach@ObjectClass@@UAEXPAVAbstractClass@@_N@Z": 6110160,
     "?unknown_slot2@SimpleDialogControl@OwnerDraw@@UAE_NXZ": 6295920,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "_wcsncpy": 7878178,
     "?unknown_66e2d0@NodeNameType@@QAEXH@Z": 6742736,
     "?Is_Active@ToolTipManager@@QBE_NXZ": 7257824,

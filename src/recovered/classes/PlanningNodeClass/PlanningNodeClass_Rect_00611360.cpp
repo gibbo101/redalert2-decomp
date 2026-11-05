@@ -4,5 +4,5 @@
 
 Rect PlanningNodeClass::Rect() const
 {
-    return Planning_Centered_Rect(8, Pixel());
+    return Planning_Centered_Rect(Pixel(), 8);
 }

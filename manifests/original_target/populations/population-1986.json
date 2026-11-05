@@ -4,8 +4,8 @@
     "id": "population-1986",
     "inventory_sha256": "68fc442bc6c6c2d39016d9b404d6d4ace9d9e429353e019c4ab54e4bdeb7b4a2",
     "gaps_sha256": "9322ac9c9f9e87083fec44fa8d5f496ec77abdea24f84701148fb647bedffa1c",
-    "historical_population_sha256": "4f269fbc6282dff31b27e24cc31c5059b35d0ffa20deb6d092dabcf99dbdccdd",
-    "historical_acceptance_sha256": "8ce5e9240321fd46d507b72c4de4fe002b966af21f7edcd8de0470908c2deca6"
+    "historical_population_sha256": "86f8c1fd52df29b35f7f425bf2830f65d56ce8dc18779691536b230d210029af",
+    "historical_acceptance_sha256": "79a11cfb391fef007505b502628dd589468e2133cc7796204d74efbd0c3769a1"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -592,7 +592,7 @@
     "?ID@?$DynamicVectorClass@UHSVClass@@@@UAEHPBUHSVClass@@@Z": 6311264,
     "?ID@?$DynamicVectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z": 6313952,
     "?ID@?$VectorClass@U?$HashObject@VHashString@@PAVSchemeNode@@@@@@UAEHPBU?$HashObject@VHashString@@PAVSchemeNode@@@@@Z": 6314624,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?ID@?$VectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UAEHABU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@Z": 6507984,
     "?ID@?$DynamicVectorClass@U?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@@UAEHABU?$HashObject@URadarTrackingStruct@@PAVTechnoClass@@@@@Z": 6508368,
     "__strncpy": 7873488,

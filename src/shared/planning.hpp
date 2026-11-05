@@ -97,8 +97,8 @@ public:
 struct PlanningEventTargets {
     AbstractClass *First_Target_Object() const;   // 0x00617DF0
     int unknown_61a2d0() const;                   // 0x0061A2D0
-    int Unknown_006F6750() const;                 // 0x006F6750
-    int Unknown_006F6760() const;                 // 0x006F6760
+    static int Unknown_006F6750();                // 0x006F6750
+    static int Unknown_006F6760();                // 0x006F6760
     unsigned char Type;                 // +0x00
     char unknown_01;
     signed char House;                  // +0x02 the issuing house
@@ -248,7 +248,7 @@ void Planning_Process_Queue();
 // Clears the planning mode's flags and remembered nodes (0x00613E10).
 void Planning_Reset();
 // A size x size rectangle centred on (x, y) (0x006112D0).
-Rect __fastcall Planning_Centered_Rect(int size, Point2D center);
+Rect __fastcall Planning_Centered_Rect(Point2D center, int size);
 
 // The coordinate an event points at ((-1, -1, -1) without one; 0x00610980).
 CoordStruct __fastcall Planning_Event_Coord(EventClass const &event);

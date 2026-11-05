@@ -4,8 +4,8 @@
     "id": "population-4105",
     "inventory_sha256": "393a2fb7d716075ab6ec8e706b3d9cadcfd4b77141f153b0bc7d6ec22ca26a37",
     "gaps_sha256": "21065825b61fc51d4f655181781b6b5c6978c6d523359e7cc982058d092003ba",
-    "historical_population_sha256": "1eccb02938bfd43f71fc3c426b3793e52cff20563caccf06f28f4758a08860dd",
-    "historical_acceptance_sha256": "67152eb98865d5d6d730fcdaec6e6c0fc55419493dc3498f68122f15395b2a66"
+    "historical_population_sha256": "e1fc24ecb4a419fbc7a11246b2679d1cacab75d2a2a6296c6e357f4906b0cc0f",
+    "historical_acceptance_sha256": "63db6df4ae7b6b8ae73f84c0a7373c5ff0f6390675fbbe92ab66c59f0fbb7db1"
   },
   "references": {
     "_unknown_static_rect": 11504128,
@@ -4799,7 +4799,7 @@
     "?GetClassID@WaypointPathClass@@UAGJPAUGUID@@@Z": 7491600,
     "?Find_Or_Make@WeaponTypeClass@@SIPAV1@PBD@Z": 7552672,
     "?Equal_XY_004bfb60@CoordStruct@@QBEHABU1@@Z": 4979552,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?ID@?$VectorClass@UWaypointClass@@@@UAEHABUWaypointClass@@@Z": 7493184,
     "??1ObjectClass@@UAE@XZ": 6104368,
     "??_GObjectClass@@UAEPAXI@Z": 6116672,

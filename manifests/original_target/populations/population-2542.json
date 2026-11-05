@@ -4,8 +4,8 @@
     "id": "population-2542",
     "inventory_sha256": "3a110f46e7c4e8a521b486a67268cb55d470a5cb0fd6f23b6a7ded159f95a68f",
     "gaps_sha256": "c381c9f852b00800992661f62d4fe556baed9a444597fb1a043482d69fbd0c46",
-    "historical_population_sha256": "a2eef8cc6c02c37e44f5a791d6e82d0f81752af886852fada41b51b01d608d92",
-    "historical_acceptance_sha256": "85c199d1c9cba67a21a6ce5e3dc86ab98b4c73f9bf52329b63b536aaa0f170ff"
+    "historical_population_sha256": "864da4ac737a61f48d729dadcb5bdcb7ee802e74eeec5b6bad6f82c5d0d5f25f",
+    "historical_acceptance_sha256": "4a7a07c202537460faf785b8fb71e57c07581daf5f2ca835e480beeee473dbcf"
   },
   "references": {
     "??0LoadOptionsClass@@": 5484768,
@@ -2296,7 +2296,7 @@
     "?Size@RawFileClass@@UAEJXZ": 6525312,
     "?Equal_XY_004bfb60@CoordStruct@@QBEHABU1@@Z": 4979552,
     "?Set@RGBClass@@QAEXEEE@Z": 5204928,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?Create@RAMFileClass@@UAEHXZ": 6521760,
     "?Is_Open@RawFileClass@@UBE_NXZ": 6526160,
     "?Set@Quaternion@@QAEXMMMM@Z": 6431104,

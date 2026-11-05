@@ -128,12 +128,12 @@ struct CoordStruct {
 #endif
 #ifdef RA2_COORD_EQUAL_MEMBER
     // Member-wise comparison (0x0061A8B0): the original has a real out-of-line
-    // int-returning thiscall member that Planning.cpp calls, while the
+    // bool-returning thiscall member that Planning.cpp calls, while the
     // locomotors use an inline free bool comparison (shared/locomotion.hpp);
     // the two forms coexisted in different translation units. Only the
     // Planning unit defines RA2_COORD_EQUAL_MEMBER (first line of its first
     // draft), so no other unit sees this declaration.
-    int operator==(CoordStruct const &coord) const;
+    bool operator==(CoordStruct const &coord) const;
 #endif
     // Member-wise quotient; a zero divisor gives (0, 0, 0). Inline as in TibSun's TPoint3D
     // (DisplayClass::Center_Map 0x0049E3B0 expands it). 0x006D9770 is the out-of-line copy the

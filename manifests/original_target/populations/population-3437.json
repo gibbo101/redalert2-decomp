@@ -4,8 +4,8 @@
     "id": "population-3437",
     "inventory_sha256": "10439234c1b88792c512d3483dc152166d03d3da2aa85987f82c8d67e8c53c20",
     "gaps_sha256": "6bf604acd7ab622ff35b58fb45ec83a12a3dc1745a14dfa2d479dee1e4f65460",
-    "historical_population_sha256": "2ee95783ad5ca7f7b1db2926dfbb5e3812329c4a69439e0eb9dbf075ffc4836c",
-    "historical_acceptance_sha256": "3bbb3885d6396e2c68be4b0829bb342da688c07f91207fe67a7e1ad06dd242e8"
+    "historical_population_sha256": "99ac7f8f291388ffeee00775d2c5bd8e47688bf3c4193eef2c9458e9c250e0e9",
+    "historical_acceptance_sha256": "8eb71cfe66344725605b5c2019174d8b00a196f4d95651043a3ef8bd4c3e9c27"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3175,7 +3175,7 @@
     "?Set@RGBClass@@QAEXEEE@Z": 5204928,
     "?unknown_523960@IPXAddressClass@@QAEXG@Z": 5388640,
     "?Fetch@?$VectorClass@N@@UBENH@Z": 5824176,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?Delete@RAMFileClass@@UAEHXZ": 6521792,
     "_wcsncpy": 7878178,
     "?Set@Quaternion@@QAEXMMMM@Z": 6431104,

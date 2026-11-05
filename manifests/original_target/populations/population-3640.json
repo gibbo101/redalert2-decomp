@@ -4,8 +4,8 @@
     "id": "population-3640",
     "inventory_sha256": "b4f4c2350aa5ed52ee94624f4b27c8d989691e7d3acb8e99e97cc2a8748be7fe",
     "gaps_sha256": "f4a5305718e51741ea7a3dbdd4bf1a6eb33e075cdd673f6c9fe7b8e4d7377014",
-    "historical_population_sha256": "6d0a937be54e7a71112d892485c99fdadd07dddb509f932405edc8765fea7614",
-    "historical_acceptance_sha256": "dd6e1dbd301ee4a54e0ac27396ffc0bc77795715bf8d98a8e00f1e585b50b2de"
+    "historical_population_sha256": "e8f4607fcf0889f3fa35544f92fcfd63901effaac23191f9ad7d3bc5f743b979",
+    "historical_acceptance_sha256": "fac36e4896d3022b0d6fa603fb691092e935b48beab5eedaabdb453e2a82f14d"
   },
   "references": {
     "?unknown_cpu_probe_77f14d@@YAEXZ": 7860557,
@@ -3979,7 +3979,7 @@
     "_wcstol": 7883704,
     "?Equal_XY_004bfb60@CoordStruct@@QBEHABU1@@Z": 4979552,
     "?Set@RGBClass@@QAEXEEE@Z": 5204928,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?ID@?$VectorClass@UWaypointClass@@@@UAEHABUWaypointClass@@@Z": 7493184,
     "?IsDirty@AbstractClass@@UAGJXZ": 4260336,
     "?_com_issue_error@@YGXJ@Z": 7952704,

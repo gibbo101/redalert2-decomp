@@ -4,8 +4,8 @@
     "id": "population-2520",
     "inventory_sha256": "e9ec00becc985a64d4084fef519e54d77dc852498f2585c5f836db36b42a5d15",
     "gaps_sha256": "c75310bc41df56d2b58699935151f8887ad639f916f407fc977809f411cb8fd6",
-    "historical_population_sha256": "1d65480796e70fb84db14b2a80d6fe40a6180c50fd665f857f30920ebca5835b",
-    "historical_acceptance_sha256": "d02aa81410015a5942c9a582267ea88fca74da7b49e3bbda231aad78afe16bed"
+    "historical_population_sha256": "0cebd18b865ed776f1a07e02354b2496d52fc8217dcf556ce0427166243ddbcf",
+    "historical_acceptance_sha256": "a1f618cf2183f228e4d8c62a403339cd9c8a941d28fef8dc39df3981701f02c6"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3150,7 +3150,7 @@
     "?GetClassID@VeinholeMonsterClass@@UAGJPAUGUID@@@Z": 7415488,
     "?Kind_Of@VeinholeMonsterClass@@UBEHXZ": 7415552,
     "?Size_Of@VeinholeMonsterClass@@UBEHXZ": 7415568,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "?Count@ToolTipManager@@QBEHXZ": 7256144,
     "?search_compfunc@ToolTipIndex@@SAHPBX0@Z": 7258912,
     "?Remove@UnknownList832470@@QAEXPAVObjectClass@@@Z": 5497712,

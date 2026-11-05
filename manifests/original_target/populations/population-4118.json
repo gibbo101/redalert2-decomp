@@ -4,8 +4,8 @@
     "id": "population-4118",
     "inventory_sha256": "af2d3df4488440980622c4de5ef50f42801652c39da8530c87d9c4c74a59bc5f",
     "gaps_sha256": "b4eef7c9f7a16158903d01f36107437281bebad8b612acddc1bddf4df2677063",
-    "historical_population_sha256": "c42a9ff70031eeea0cc42fe40633cbd2cbc7e8ba722d8d82fc56ee734f7d822c",
-    "historical_acceptance_sha256": "86415dab8fe2516be8cdbb8ad6a35d30c4c553dbe7433b2d609a2b242461ad6c"
+    "historical_population_sha256": "8627f58174c6e7e67eb0c548269219fd603b3f897d33fef8eaef3673bc464205",
+    "historical_acceptance_sha256": "86767db50fa4603ccaa4214b4aca9102f01edceddd35a0aac0520f66f909a68f"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -3374,7 +3374,7 @@
     "?Find_Or_Make@WeaponTypeClass@@SIPAV1@PBD@Z": 7552672,
     "?Equal_XY_004bfb60@CoordStruct@@QBEHABU1@@Z": 4979552,
     "?Set@RGBClass@@QAEXEEE@Z": 5204928,
-    "??8CoordStruct@@QBEHABU0@@Z": 6400176,
+    "??8CoordStruct@@QBE_NABU0@@Z": 6400176,
     "??1ObjectClass@@UAE@XZ": 6104368,
     "??_GMSShapeAnim@@UAEPAXI@Z": 5962944,
     "??_7MSShapeAnim@@6B@": 8023396,
