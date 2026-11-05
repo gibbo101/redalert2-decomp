@@ -8,6 +8,8 @@
 #ifndef RA2_SHARED_FLY_LOCOMOTION_HPP
 #define RA2_SHARED_FLY_LOCOMOTION_HPP
 
+#define RA2_MAP_EDGE_CELL
+
 #include "shared/locomotion.hpp"
 #include "shared/com_ptr.hpp"
 
@@ -107,6 +109,7 @@ public:
     bool unknown_4bcc60();                                                      // 0x004BCC60 (landed carrier unloads its passengers)
     bool unknown_4bca00();                                                      // 0x004BCA00 (TibSun Landing_Takeoff_AI)
     void unknown_4bcd50();                                                      // 0x004BCD50 (TibSun Movement_AI)
+    bool unknown_4bf8f0();                                                      // 0x004BF8F0 (TibSun Needs_To_Land)
     // Callers ignore these helpers' return values; bool follows the reference hypothesis.
     bool Process_Take_Off_004bddf0();
     bool Process_Landing_004bdfb0();

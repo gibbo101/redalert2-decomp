@@ -1,3 +1,5 @@
+#define RA2_COORD_AS_CELL
+#define RA2_COORD_TPOINT3D
 // Header-static dynamic initializers of the unit at 0x004BBF20:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x004BBF20-0x004BC106); the other

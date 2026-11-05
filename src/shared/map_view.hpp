@@ -105,6 +105,9 @@ public:
     void Unknown_0055A1F0();                                              // 0x0055A1F0 (shared/map.hpp)
     int Unknown_0056A8A0();                                               // 0x0056A8A0 (the lowest cell level, +0x144; TechnoClass 0x006CD6F0)
     bool Unknown_0054AAB0(Cell const &cell);                              // 0x0054AAB0
+#ifdef RA2_MAP_EDGE_CELL
+    Cell Unknown_00547F30(Cell const &cell);                              // 0x00547F30 (TibSun Cell_To_LocalRect; Fly unit only)
+#endif
     bool Unknown_0054AB00(CoordStruct const &coord);                            // 0x0054AB00
     void Unknown_0054AB70(Cell const &cell, ObjectClass *object);         // 0x0054AB70
     void Unknown_0054AF70(Cell const &cell, ObjectClass *object);         // 0x0054AF70
