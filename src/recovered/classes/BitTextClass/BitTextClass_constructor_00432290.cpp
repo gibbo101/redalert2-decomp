@@ -1,3 +1,5 @@
+// RGB accessors for Print_Box 0x00432490.
+#define RGB_DECLARE_ACCESSORS
 // BitTextClass::BitTextClass() (0x00432290)
 // Loads the game font.
 #include "shared/text_print.hpp"
