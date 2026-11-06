@@ -4,8 +4,8 @@
     "id": "population-1692",
     "inventory_sha256": "03320f8083453f0f91a978c4d6bd8f20205e53945817c55f7ee80d337a0c2958",
     "gaps_sha256": "e81e46bea5317579631db27572d565304aea106bd720408d8da89acafb514546",
-    "historical_population_sha256": "47f963f4a1f83bdd90dda9599c1f5be97409807ef4ea1acb8b786171682ad527",
-    "historical_acceptance_sha256": "fdd95c544535b6a3e33268e2ec02a7949c417c8a9c8ecfa45abcac06a6468302",
+    "historical_population_sha256": "8dd70e85738ee14353df4621c9573179d2396d89cf198dfe779b1bb92880eb92",
+    "historical_acceptance_sha256": "2fc9cf284a083a2fd79b9157fe23d62ec4bae1ccda85b1fdf5d33aca9583ebbb",
     "separate_units": true
   },
   "references": {
@@ -949,7 +949,7 @@
     "??1MSShapeAnim@@UAE@XZ": 5949216,
     "?Get_Rect@Surface@@UAE?AVRect@@XZ": 4264592,
     "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "??0Rect@@QAE@HHHH@Z": 4373712,
     "?Blit@VQMovieHandle@@UAEXXZ": 5904704,

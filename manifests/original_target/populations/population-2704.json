@@ -4,8 +4,8 @@
     "id": "population-2704",
     "inventory_sha256": "f16c7c47dcbbacbc90ddca69d2ac7644c8c14a1a75c20182ac97aae659d03dc5",
     "gaps_sha256": "e035fb5d699b2bf6605336a9e1c33698dc5dd5a23622e7c60f887e9d50bdbc4d",
-    "historical_population_sha256": "2b41b61611b428626cf5512a07672b6b4c066f1eff45f3c4d6f92ac44acc5a2d",
-    "historical_acceptance_sha256": "a97ef09f3592f488861e4f6fbf9420f281882733e6052c0de95f2e0ba28a8702"
+    "historical_population_sha256": "4be628d6cde43512aad381558676a6710373d34d43606727d66d2396f9f375f5",
+    "historical_acceptance_sha256": "f08e7b551c3c5e6f75719e909c52959538e3445e746ab1b822a683eb420d710c"
   },
   "references": {
     "?unknown_hotkeys_832380@@3V?$IndexClass@HPAVCommandClass@@@@A": 8594304,
@@ -2332,7 +2332,7 @@
     "?Prep_For_Blit@@YI_NAAVSurface@@AAVRect@@01AA_NAAPAX3@Z": 7820128,
     "?Prep_For_Blit@@YI_NAAVSurface@@ABVRect@@AAV2@012AA_NAAPAX4@Z": 7820208,
     "?Lock@DSurface@@UAEPAXUPoint2D@@@Z": 4893824,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z": 4307472,
     "?search_compfunc@ToolTipIndex@@SAHPBX0@Z": 7258912,

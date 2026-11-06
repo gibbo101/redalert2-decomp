@@ -4,8 +4,8 @@
     "id": "population-3531",
     "inventory_sha256": "23c55e027ed87fc2fc5d448706008171e1d6f4e2d9d0bfa73f6554c8bda6967a",
     "gaps_sha256": "76ec07f490532bcaf285d503abc3c3dabd0560424f3f39e148a6edbe5fb5b131",
-    "historical_population_sha256": "b7574166521a4a7b88f65fd7ec20f4338ac0ca9a9ea79c8ab736d5d64b454bd1",
-    "historical_acceptance_sha256": "91265b6a8175dcd741a79b2eb49939c28660a835b8554594c96b2fa0a17cbc59"
+    "historical_population_sha256": "acc5a9947c2326aabb632e818d42375ef5094e650ee76bb493e07bfcddc34ac6",
+    "historical_acceptance_sha256": "0726c1640a6e703e638e661ab13fcc6287dd01a6c15ed6ae01ab484dd43459e9"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -285,7 +285,7 @@
     "??1MSShapeAnim@@UAE@XZ": 5949216,
     "?Get_Rect@Surface@@UAE?AVRect@@XZ": 4264592,
     "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "??0WWMouseClass@@QAE@PAVSurface@@PAUHWND__@@@Z": 7805472,
     "??_7WWMouseClass@@6B@": 8059884,

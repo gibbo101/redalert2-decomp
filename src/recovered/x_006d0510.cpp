@@ -10,7 +10,7 @@
 // @ref ?unknown_dash_7f7130@@3QB_NB=007f7130
 // @ref ??0Rect@@QAE@ABURectPoint2D@@HH@Z=00453e40
 // @ref ?Intersect@@YI?AVRect@@ABV1@0PAH1@Z=0041fdf0
-// @ref ??HRectPoint2D@@QBE?AU0@ABU0@@Z=00435540
+// @ref ??HRectPoint2D@@QBE?BU0@ABU0@@Z=00435540
 extern bool const unknown_dash_7f7130[];
 // TibSun's TRect::operator+ with a corner: the rectangle moved by a point.
 inline Rect Moved_Rect(Rect const &rect, Point2D const &point)

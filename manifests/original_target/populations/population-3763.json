@@ -4,8 +4,8 @@
     "id": "population-3763",
     "inventory_sha256": "cebf21b427b8f76a600d4bab2daa39a11e06135d23d60417216b7f7498e162fd",
     "gaps_sha256": "a48afb4215602a23eea50bfb5c4b7d282f012aaf458c0125d3964305e07ad614",
-    "historical_population_sha256": "86dadd7e2e4dc3c9e635dffa30de31b3438a69006b433a00c5ce45e69367b3fb",
-    "historical_acceptance_sha256": "0bbe07f5cf5834efa9603b0d484dd0dd559608bca69ca8b64b02b00274d30e47"
+    "historical_population_sha256": "4cf6c463a53545b0b9664642f5c9e8d2d42de35d08f190149097b30b980c9bd3",
+    "historical_acceptance_sha256": "18de600fe12877b0211b96311fcf18373edb3220ade7a320607e5d871af5aa25"
   },
   "references": {
     "?unknown_static_850818@@3UUnknownStatic850818@@A": 8718360,
@@ -2813,7 +2813,7 @@
     "?Reset@RandomStraw@@QAEXXZ": 6542160,
     "?Get@RandomStraw@@UAEHPAXH@Z": 6543408,
     "?Get_Rect@Surface@@UAE?AVRect@@XZ": 4264592,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?search_compfunc@?$IndexClass@JPAVAbstractClass@@@@CAHPBX0@Z": 4307472,
     "?Get_Rect@MSShapeAnim@@UAE?AVRect@@XZ": 5950720,
     "??0MapSelectData@@QAE@XZ": 5963536,

@@ -7,7 +7,7 @@ Earlier owner periods are in [history/](history/).
 
 ## Owner state (2026-11-04 01:30Z): start here
 
-- **Numbers.** 80.50% matched .text (see STATUS.md), up from 67.38% at the account switch below. The queue is empty; [STATUS.md](STATUS.md) has current figures.
+- **Numbers.** 80.68% matched .text (see STATUS.md), up from 67.38% at the account switch below. The queue is empty; [STATUS.md](STATUS.md) has current figures.
 - **Host rules learned 2026-11-03.** `RA2_REMOTE_COMPILE` must be set (runq.sh and build/owner-watch/fullbuild.sh default it on); scoring stays in local Wine, one compile at a time. Full builds are serialized by private/tools/fullbuild_lock.sh. Keep two Mac lanes; memory stop rule is `memory_pressure` free under 15%, disk alert 25 GiB. A refused round must leave the queue head before any rerun.
 - **Mac lanes.** None running: stopped at 96% of the week on 2026-11-06. Next lane number is Scout800; resume with ListBox from raw disassembly, Static, Draw_Trail. Their misses go in OPEN_MISSES.
 - **Windows workers.** Rule 5a in WORKER.md: goals are never ended or blocked, fallback items come from assignments/fallback.md, only capacity errors need the user. codex1 Fly then Dropship; codex2 BuildingClass; codex3 UnitClass near misses and Shrapnel; codex4 pass-7 rows at 0x700000 and up plus fallback.

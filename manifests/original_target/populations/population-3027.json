@@ -4,8 +4,8 @@
     "id": "population-3027",
     "inventory_sha256": "18294f9042ab437ec8f8ecf7326ae14ae728590584517da3920a467993dd6a01",
     "gaps_sha256": "1fed1a328232975333d708b4ba81bf5acfa68efbf78259f437838d8f7da2d588",
-    "historical_population_sha256": "7d2378204c767debeeb9ece10bae5e2074853e475f5646e9bc5aa571d767e275",
-    "historical_acceptance_sha256": "94f0809ad29b6c6ed37e7f529253e631e69e2aeb6cad2d0631338ca4eb660106"
+    "historical_population_sha256": "e48ee1c23ecb71da62364cb95e3f10066c4d2a8e3230049c0723c8b2544d5d3a",
+    "historical_acceptance_sha256": "888f28921f26a2e946b0e8f783df8defbd41d0e1f46271c96b5f86b5c20f4068"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -2341,7 +2341,7 @@
     "?Prep_For_Blit@@YI_NAAVSurface@@ABVRect@@AAV2@012AA_NAAPAX4@Z": 7820208,
     "?Lock@DSurface@@UAEPAXUPoint2D@@@Z": 4893824,
     "?unknown_flag_a40d28@@3_NA": 10751272,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "?Remove@UnknownList832470@@QAEXPAVObjectClass@@@Z": 5497712,
     "??0MultiplayerGameMode@@QAE@ABVWideString@@0ABVWstring@@1_NH@Z": 5991632,

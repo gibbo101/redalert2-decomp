@@ -27,9 +27,9 @@ struct RectPoint2D {
 
     // Not inlined by the original (out-of-line copy 0x00435540, Blit.cpp).
 #ifdef RA2_RECT_POINT_INLINE
-    RectPoint2D operator+(RectPoint2D const &point) const { return RectPoint2D(X + point.X, Y + point.Y); }
+    RectPoint2D const operator+(RectPoint2D const &point) const { return RectPoint2D(X + point.X, Y + point.Y); }
 #else
-    RectPoint2D operator+(RectPoint2D const &point) const;
+    RectPoint2D const operator+(RectPoint2D const &point) const;
 #endif
     // Member-wise difference (out of line, 0x0047D040 in Cell.cpp; MapClass calls it).
 #ifdef RA2_RECT_POINT_INLINE

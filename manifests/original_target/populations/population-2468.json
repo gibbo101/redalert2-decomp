@@ -4,8 +4,8 @@
     "id": "population-2468",
     "inventory_sha256": "273e733e31ed865c4c22c7ebf448df7c0d4959296e8c9a5def4cf4155b2a5cea",
     "gaps_sha256": "952ce24176678c22974726382e8b18bc1974192dadf2eec6c374d23473e4c52a",
-    "historical_population_sha256": "4761132f740d541816f994739f202a284672840d33116df7ad9a5bfd5f57289d",
-    "historical_acceptance_sha256": "f787ddd1089fc65cfee9e10f39536a3a36fe15ac989eee8ae5fe591c95f65ebb"
+    "historical_population_sha256": "eb2c87b6816ef274d6a376d7e8bcf9f4db5c259d8774f535352c744b4af7a97f",
+    "historical_acceptance_sha256": "e1d08b5918eed7d3702fd0c758badf81cdfca7c03d0dc3b1f8bf3dbdcf5e0146"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -692,7 +692,7 @@
     "__chkstk": 7878736,
     "__strnicmp": 7878672,
     "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "__DAT_00ab6ea8": 11234984,
     "__DAT_00ab6eb0": 11234992,

@@ -4,8 +4,8 @@
     "id": "population-1702",
     "inventory_sha256": "cbdba1c1e8822ab3763a1590eb233ef62d03db9efe8e7e7592d01c9738bb4f8f",
     "gaps_sha256": "aeb095a67bf3a5fc7a86f4287955710cdaf7b7538ee1f0a0fb6342f073e7b074",
-    "historical_population_sha256": "4b687e8031631704ffe77a09dc82f1317b2aeecedc21c97eaba7a790cd620f65",
-    "historical_acceptance_sha256": "241b4fc5dea7ec49b7da53d508171284647b7115d76cb6484e573750dd4a9830"
+    "historical_population_sha256": "fea3b8f1335eafaa972a060e92c5a6483fc1d560b0c2383ea3bc7c692aecce84",
+    "historical_acceptance_sha256": "e5a980e5ccc31169d08a57078e5461400892ec3e81c462d7388dd3ee017e39ca"
   },
   "references": {
     "_IID_IUnknown": 8060128,
@@ -2273,7 +2273,7 @@
     "__chkstk": 7878736,
     "__strnicmp": 7878672,
     "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "??BSystemTimerClass@@QBEJXZ": 6923312,
     "?Timer@MouseClass@@2V?$CDTimerClass@VSystemTimerClass@@@@A": 10948464,

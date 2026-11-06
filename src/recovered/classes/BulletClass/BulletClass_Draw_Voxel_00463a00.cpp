@@ -61,4 +61,4 @@ void BulletClass::Draw_Voxel_00463a00(UnknownObjectPair const &pair, Matrix3D co
 }
 
 // Genuine shared point-sum operation; complete emitted copy binds435540.
-RectPoint2D RectPoint2D::operator+(RectPoint2D const &point) const { return RectPoint2D(X + point.X, Y + point.Y); }
+RectPoint2D const RectPoint2D::operator+(RectPoint2D const &point) const { return RectPoint2D(X + point.X, Y + point.Y); }

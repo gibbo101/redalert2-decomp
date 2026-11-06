@@ -4,8 +4,8 @@
     "id": "population-1932",
     "inventory_sha256": "be54464b3c12413d9cf6486a4dca357b4c89a4316576bd8f622f8e810c38a531",
     "gaps_sha256": "845f9d5ca6da4fc78a9262f556e34006c889ec806cbc84241052ff381dc1364b",
-    "historical_population_sha256": "0c44b601f2b8bd84a4cd58e0a5335971c37fe440d0655fae9df09f04fc164187",
-    "historical_acceptance_sha256": "a327ff8a375e861c0544874e3a575e20baf3ab1583913903d57bac1bb5444387"
+    "historical_population_sha256": "84c680cee1c344cf2082c41171476006b09c3dfaadd08289c969e0d160e421cc",
+    "historical_acceptance_sha256": "ccf3d57ea931ef1772ec68e2fa1a18c0f3a55ba473a202100122447f70cb0b83"
   },
   "references": {
     "_unknown_empty_rect": 8739104,
@@ -64,7 +64,7 @@
     "__chkstk": 7878736,
     "__strnicmp": 7878672,
     "?Intersect@@YI?AVRect@@ABV1@0PAH1@Z": 4324848,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "__DAT_00ab6ea8": 11234984,
     "__DAT_00ab6eb0": 11234992,

@@ -4,8 +4,8 @@
     "id": "population-4166",
     "inventory_sha256": "dfcbaa7cd2a23d9715b4c5f67c132a0881924f9e8ba74e97a74fbc8b711ecc79",
     "gaps_sha256": "4b9dd7d97a121e1783d13a25ddba17449988926439eeae7259f11c429ebdc80c",
-    "historical_population_sha256": "ef97341a916fb071d66858044fcd1d3dbeac484620b696a60c84d1b55a72d08a",
-    "historical_acceptance_sha256": "7133521d495a9194f3bd13fea5297b927195f7781712ddc75d93dab229edca4f"
+    "historical_population_sha256": "03159cbb149b5454a6cfa39d5bb8cdaf081774e004ab99e61cf1d859e07bfa25",
+    "historical_acceptance_sha256": "672226fd618cfdcbb1ef935e49c1e853f61d61ecb1c6842d1d32aee4dd1cfba3"
   },
   "references": {
     "?target@Call_402190_0@@QAEIXZ": 4198400,
@@ -598,7 +598,7 @@
     "?Prep_For_Blit@@YI_NAAVSurface@@ABVRect@@AAV2@012AA_NAAPAX4@Z": 7820208,
     "?Lock@DSurface@@UAEPAXUPoint2D@@@Z": 4893824,
     "?Unlock@DSurface@@UAE_NXZ": 4894272,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "__DAT_00ab6ea8": 11234984,
     "__DAT_00ab6eb0": 11234992,
@@ -1461,7 +1461,10 @@
     "?Get@Base64Straw@@UAEHPAXH@Z": 4372560,
     "?Get@UnknownWindowProcIndex@OwnerDraw@@QBE_NABQAUHWND__@@AAPAP6GJPAU3@IIJ@Z@Z": 6297824,
     "?Release@UnknownAlphaTableCache_008315B8@@QAEXPAY0BAA@$$CBG@Z": 4318480,
-    "?Get@SHAStraw@@UAEHPAXH@Z": 6771648
+    "?Get@SHAStraw@@UAEHPAXH@Z": 6771648,
+    "__real@8@4003f000000000000000": 8053472,
+    "?Action@SelectClass@StripClass@SidebarClass@@UAEHIAAI@Z": 6818288,
+    "__real@4@4003f000000000000000": 8030272
   },
   "regions": [
     {
@@ -1689,8 +1692,8 @@
     {
       "entry": 4412736,
       "method": "00435540",
-      "symbol": "??HRectPoint2D@@QBE?AU0@ABU0@@Z",
-      "symbol_prefix": "??HRectPoint2D@@QBE?AU0@ABU0@@Z",
+      "symbol": "??HRectPoint2D@@QBE?BU0@ABU0@@Z",
+      "symbol_prefix": "??HRectPoint2D@@QBE?BU0@ABU0@@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -1703,7 +1706,7 @@
       "full_extent_bytes": 32,
       "full_extent_sha256": "9793d0b2d631283f5bb1839fc73da1deeb3ede4db11a513954bdc696e1cdd184",
       "relocations": [],
-      "source_sha256": "f793f8ed392351795302e50c6456fb3a85319696426df796abb65a431e5741fb",
+      "source_sha256": "9b7b729f3c9e17d8248e7785e5d821494a9bfc690ee711087592b82a62c46d93",
       "source": "src/recovered/classes/Blit/Blit_Point2D_operator_plus_00435540.cpp",
       "population": "population-4166",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1969,7 +1972,7 @@
         {
           "offset": 243,
           "kind": 20,
-          "symbol": "??HRectPoint2D@@QBE?AU0@ABU0@@Z",
+          "symbol": "??HRectPoint2D@@QBE?BU0@ABU0@@Z",
           "target": 4412736,
           "addend": 0,
           "resolved": 905

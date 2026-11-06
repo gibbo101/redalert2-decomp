@@ -4,8 +4,8 @@
     "id": "population-3811",
     "inventory_sha256": "9b82cd2caaca73cd32fe88ec97da4b494b9129a49d304e21ebcfa7058e2daa4f",
     "gaps_sha256": "ddc6eea8e28cf0df2b8d65b49b1a5ae1d93341b43c00233fa2d79ac579b888bd",
-    "historical_population_sha256": "c10f16428a46f12c425210f601241bca646385f400d3b43629745348e5b58282",
-    "historical_acceptance_sha256": "18eaa46d6a453c6774229d91829523ce154ce3e7c8d19842ae4d719d3c0dea9e"
+    "historical_population_sha256": "c2b2ca01a3f4a70711fb595062b08c7c329e7b35b369148afb9bf37a11ddd79e",
+    "historical_acceptance_sha256": "b2d31467e266fca866025c3605d5ddff5b239a96973dcc51c6f30517637059ec"
   },
   "references": {
     "_unknown_empty_rect": 10950664,
@@ -2159,7 +2159,7 @@
     "?Lock@DSurface@@UAEPAXUPoint2D@@@Z": 4893824,
     "?unknown_flag_a40d28@@3_NA": 10751272,
     "?Unlock@DSurface@@UAE_NXZ": 4894272,
-    "??HRectPoint2D@@QBE?AU0@ABU0@@Z": 4412736,
+    "??HRectPoint2D@@QBE?BU0@ABU0@@Z": 4412736,
     "?Top_Left@Rect@@QBE?AURectPoint2D@@XZ": 4412768,
     "?Set_Start_Frame@MSShapeAnim@@QAEXH@Z": 5949456,
     "?Set_End_Frame@MSShapeAnim@@QAEXH@Z": 5949488,
