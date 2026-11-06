@@ -6,6 +6,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import struct
 import time
 
@@ -13,6 +14,8 @@ import capstone
 import pefile
 from coff import Coff
 from compiler_output import classify
+
+COMPILER_STATIC_NAME = re.compile(r'_\$E\d+')
 
 TARGET_SHA256 = 'e6418111c2c36081a1795fb000e0927beea1630170b334c5013d12102602e70f'
 TARGET_BYTES = 4485392
@@ -451,8 +454,13 @@ class Audit:
             return False
         if flags & 0x80000000 and flags & 0x20:
             return False        # writable data is fine (VC6 string literals), writable code is not
+        # A compiler-generated static initializer or destructor (`_$E<n>`) is a
+        # static (storage 3) code COMDAT; it binds only through an explicit
+        # reference, since the name repeats in every unit.
         names = [s['name'] for s in coff.symbols.values()
-                 if s['section'] == index and s['storage'] == 2 and s['value'] == 0]
+                 if s['section'] == index and s['value'] == 0 and
+                 (s['storage'] == 2 or s['storage'] == 3 and flags & 0x20 and
+                  COMPILER_STATIC_NAME.fullmatch(s['name']))]
         # A /GR vtable starts with its locator pointer; its name is at offset 4.
         vtable = self.vtable_with_locator(coff, index, section)
         if vtable is not None:
@@ -469,7 +477,7 @@ class Audit:
             address = layout.get(names[0])
         else:
             address = references.get(names[0])
-            if address is None:
+            if address is None and not COMPILER_STATIC_NAME.fullmatch(names[0]):
                 address = longest_prefix_binding(references, names[0])
             if address is None:
                 # A vtable no source binds: its own original copy, by the

@@ -132,6 +132,22 @@ class InstanceBindingTest(unittest.TestCase):
         symbols[0]['name'] = '??_GUnknown@@UAEPAXI@Z'
         self.assertFalse(self.audit.kept_elsewhere(coff, 1, section, {'unit': {'references': {}}}))
 
+    def test_static_compiler_initializer_duplicates_its_bound_original(self):
+        # `_$E<n>` is a static (storage 3) code COMDAT; it binds only by an
+        # explicit reference to the exact name, and its bytes must equal the original.
+        body = b'\x55\x8b\xec\x5d\xc3'
+        self.image.put(0x403900, body)
+        symbols = {0: dict(name='_$E114', storage=3, section=1, value=0)}
+        section = dict(name='.text', flags=0x60501020, data=body, relocs=[])
+        coff = SimpleNamespace(sections=[section], symbols=symbols)
+        self.assertTrue(self.audit.original_duplicate(coff, 1, section, {'unit': {'references': {'_$E114': 0x403900}}}))
+        # No exact reference (a prefix of another _$E name does not bind), or other bytes: refused.
+        self.assertFalse(self.audit.original_duplicate(coff, 1, section, {'unit': {'references': {'_$E11': 0x403900}}}))
+        self.assertFalse(self.audit.original_duplicate(coff, 1, section, {'unit': {'references': {'_$E114': 0x403901}}}))
+        # Any other static symbol stays refused.
+        symbols[0]['name'] = '_local_helper'
+        self.assertFalse(self.audit.original_duplicate(coff, 1, section, {'unit': {'references': {'_local_helper': 0x403900}}}))
+
     def test_contradicting_reference_is_reported(self):
         stated = {DYNAMIC: '%08x' % self.image.vtables[VECTOR], CONST: '%08x' % self.image.vtables[CONST],
                   '??_7Invented@@6B@': '%08x' % self.image.vtables[VECTOR]}
