@@ -136,6 +136,11 @@ public:
     void Draw_Firestorm_Wall_Placement(bool drawtrans, Cell cell);  // 0x006A6010
     void Draw_Wall_Placement(bool drawtrans, Cell cell);            // 0x006A6290
     static void __fastcall Draw_Render_Hooks(ObjectClass *object, Rect const &cliprect);  // 0x006A92A0
+#ifdef RA2_TACTICAL_DRAW_OBJECTS
+    // Draws the objects of every display layer that lie in the view, then their post-render passes
+    // (0x006A93F0; TibSun/ra2-decomp Tactical::Draw_Objects).
+    void Draw_Objects(bool forced);
+#endif
 #endif
     void Unknown_006AA5A0(Point2D const &point);   // 0x006AA5A0 starts a selection band at a point (DisplayClass slot 47; hypothesis)
     void Unknown_006AA5E0(Point2D const &point);   // 0x006AA5E0 drags the band to a point (DisplayClass slot 47; hypothesis)

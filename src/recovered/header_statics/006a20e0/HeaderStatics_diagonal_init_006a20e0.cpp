@@ -9,6 +9,8 @@
 #define RA2_MOUSE_FRAME_QUERIES
 #define RA2_TACTICAL_PLACEMENT
 #define RA2_TACTICAL_PICK_OBJECT
+// Tactical::Draw_Objects 0x006A93F0 is declared for this unit.
+#define RA2_TACTICAL_DRAW_OBJECTS
 // Header-static dynamic initializers of the unit at 0x006A20E0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
 // (0x006A20E0-0x006A22C6); the other
