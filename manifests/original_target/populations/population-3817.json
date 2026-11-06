@@ -4244,31 +4244,6 @@
       "source_order": 170012
     },
     {
-      "entry": 4398928,
-      "method": "00431f50",
-      "symbol": "?FUN_00431f50@Owner_00431f50@seed_00431f50@@QAEIPAG@Z",
-      "symbol_prefix": "?FUN_00431f50@",
-      "options": [
-        "/O2",
-        "/Ob2",
-        "/G5",
-        "/Gy"
-      ],
-      "body_bytes": 19,
-      "body_sha256": "67c42f07df8e22c5967dd8b75265ab5bdb36f43190c15e7475d832e15ee113eb",
-      "padding_bytes": 13,
-      "full_extent_bytes": 32,
-      "full_extent_sha256": "debb38ea37dd13bca1451f5ce4b06722c7f169e8bc21460a9676ba4c28fc6c48",
-      "relocations": [],
-      "source_sha256": "70206e3e5ddf91d4b750099fdffd39e4e7a2a44d6152d6328ed0affa8b9524ff",
-      "source": "src/recovered/00431f50.cpp",
-      "population": "population-3817",
-      "padding_sha256": "aff312c80e826834eed3e424180d0b1150cd49ab4454e19d6d9cd884a2178915",
-      "boundary_confidence": "Frozen independent analysis hypothesis; exact compiler extent, not certified function",
-      "source_quality_family": "hand-written",
-      "source_order": 170013
-    },
-    {
       "entry": 4416608,
       "method": "00436460",
       "symbol": "?FUN_00436460@seed_00436460@@YAXXZ",

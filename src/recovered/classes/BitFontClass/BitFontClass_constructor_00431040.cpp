@@ -1,3 +1,5 @@
+// Missing_Glyph 0x00431F50 is declared for this unit (Draw_Char 0x004318E0 expands it).
+#define RA2_BITFONT_MISSING_GLYPH
 // BitFontClass::BitFontClass(char const *filename) (0x00431040)
 // Starts from the defaults, then takes the font file's glyph data and
 // metrics (the defaults again when it cannot be loaded).

@@ -84,6 +84,11 @@ public:
     void Reset();                                                                   // (inline in the constructor's unit)
     bool Load_Font(char const *filename);                                           // 0x004313F0
     unsigned char *Glyph_Data(wchar_t character) const;                             // 0x00431E80 (width byte, then the bitmap)
+#ifdef RA2_BITFONT_MISSING_GLYPH
+    // The glyph drawn for a character the font lacks (unknown_08), its colour flipped with 0x5555
+    // (0x00431F50; Draw_Char 0x004318E0 expands it).
+    void *Missing_Glyph(unsigned short *color);
+#endif
     void unknown_431ec0();                                                          // 0x00431EC0 (inverted copy of 'X' in unknown_08)
     void unknown_431f70();                                                          // 0x00431F70 (one pixel taller, space one wider)
     void unknown_431fa0();                                                          // 0x00431FA0 (one pixel taller, U+3000 twice the space)
