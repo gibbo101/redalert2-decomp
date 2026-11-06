@@ -2028,3 +2028,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Index-form entries bias the induction variable to the most-used field. `i = 0; if (i < count)` puts pointer inits after the guard and keeps the later count test, which `if (count > 0)` threads away.
 - A named local receiving `a - zero_ext(b)` evaluates b first; the same subtraction in a condition evaluates a first.
 - Direct struct members at distinct offsets let a store move past a load; pointer casts do not.
+
+## Semantics before colour (Scout798)
+- A higher-scoring draft can have wrong semantics: a variable reassigned in one arm was missed by five lanes. Read each arm's register writes against the target before trusting a score.
+- Frame differences can be pure reference-count swaps.
+- A position scan should cover 2+ use labs just after a call; a 1-use lab at the same spot differs.
