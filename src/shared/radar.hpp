@@ -313,7 +313,11 @@ public:
     bool unknown_14d5;                                  // +0x14D5
     bool unknown_14d6;                                  // +0x14D6
     Rect unknown_14d8;                                  // +0x14D8
+#ifdef RA2_RADAR_RENDER_VIEW
+    Rect unknown_14e8;                                  // +0x14E8 (the view rectangle last drawn; Render_Radar 0x00633210)
+#else
     int unknown_14e8[4];                                // +0x14E8
+#endif
     int unknown_14f8;                                   // +0x14F8
     CDTimerClass<SystemTimerClass> unknown_14fc;        // +0x14FC
 };

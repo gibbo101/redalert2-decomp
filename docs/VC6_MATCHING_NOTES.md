@@ -2004,3 +2004,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `if (n>0) { i=0; do ... }` gives a literal guard compare on the zero web and stops a for loop evicting a memory `result` into a register.
 - A zero store to a memory home right after `test eax,eax; jne` becomes `mov [m],eax` when no zero register is live.
 - `i=0` bounds a zero web: a later zero use starts a second one. A zero web can depend on a store inside a loop that no longer uses it in final code.
+
+## Neg forms and last-arm sites (Scout794)
+- `x = call() == 0` in both arms of an if/else, with the next statement after the join, gives a cross-jumped `mov r,eax; neg; sbb; inc` and raises that variable's rank. A shared variable with `== 0` after the join gives `xor; test; sete`.
+- `int v = f() != 1; g(v, 0)` gives `dec; push 0; neg; sbb; neg`.
+- A case arm last in source supplies pending sites to earlier arms: paint last did with 2-4 sites what paint first needed 22 Nops for.
+- `while (n) { if (w <= limit) break; ...; }` inside `if (n)` keeps a single bottom `test; jne`.
+- Colour flips can come from register-count or graph effects, not weights: 100 extra reads were flat, dropping one named local flipped.

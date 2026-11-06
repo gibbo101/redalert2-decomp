@@ -2092,3 +2092,6 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 
 ## Scout793 (2026-11-05, closed; 0 B; NOTES in build/class-work/Scout793/; Scout795 continues)
 - IPX Service 0x525F60 97.99, shape 99.94 (w/l1.cpp, overlay hi/, codex1 r1192 draft): zero web gets edi where target has ebp. Wave 0x7238B0 98.18, shape 99.05 (w/w3.cpp, codex4 draft): dead `fst dword` at 0x3D6, 0x62C. Cloaking not attempted: h3 needs rebasing, slot 234 int-to-void change with 0x6C89C0, setup in Scout697 NOTES.md. Draw_Trail, PlaceVeins not reached.
+
+## Scout794 (2026-11-05, closed; 0 B; NOTES and tools in build/class-work/Scout794/; Scout796 continues)
+- ComboBox 0x5F4BA0: 74.37, shape 95.16, 1803/1884, frame right, all direct calls in order (keep/fin_7437.cpp). 0x4BE import web, ??_G 0x601430 and the neg forms are closed. Open: global colours (target data=ebx, result=edi, zero web in edi at paint head, result evicted across paint, data reload into esi at 0x666) and window load eax vs ecx at 0xA55, 0xED1. If exact: Is_Add_Error is invented; UnknownComboItem duplicates UnknownNode_006003d0.
