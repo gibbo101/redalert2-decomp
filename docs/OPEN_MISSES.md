@@ -2073,3 +2073,22 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout788 (2026-11-05, closed; 0 B; NOTES and keep/ in build/class-work/Scout788/; Scout789 continues ComboBox)
 - ComboBox 0x5F4BA0: 56.53, loose 65.25, shape 85.77 (keep/cb6_5653.cpp, overlay keep/hc; cs.sh, m.sh, sb.py, ord.py). Open: switch tail after 0x14E, globals esi=message, edi=result, frame order, 0x600410 call in Remove's temp dtor. Needs @ref for 0x00A7343C, binding for 0x6FA0C0.
 - Static 86.15: the fault is the width/height pair: H=ecx, W=eax in every state, target wants H=eax, W=ecx; needs a new idea. ScrollBar 67.42: [0x8C]=ebp stores the zero web after GetParent. ListBox not reached.
+
+## Scout787 (2026-11-05, closed; 2,721 B: Planning update 0x614010 (codex4 draft), Scan_Place_Object 0x660B60 (codex3 draft), ParasiteClass 0x607980 (codex4 draft), Team 0x6BE010 (codex1 draft); NOTES and scan/ in build/class-work/Scout787/; Scout790 continues)
+- OWNER DECISION: file-local accessors Unknown_1f4_Of_00607980, Set_Parasite_00607980 and Complete_Step_006be010 stay as budget from accessors, flagged: those rows are their only users. r2's written-out cell test and twin `int skip` stay.
+- Windows scan: no other unaccepted row has a private exact draft; Urban 0x587CF0 was retired and is 90.73. Ranked open rows are in NOTES. Parked: Anim 0x421710 99.61 per Windows draft anim-ai421710-const-union300 (four Union registers, a tie), Ego 0x4B37C0 98.62, House 0x4E9660 99.42, Bullet Draw 99.27.
+
+## Scout790 (2026-11-05, closed; 0 B; NOTES and keep/ in build/class-work/Scout790/; Scout791 continues)
+- The survey does not apply to 0x616A50 (77.83, `test` label vs js peephole), AudioEvent Create 0x405170 (70.27, `type` must win ebx), Queue cache 0x6279D0 (86.47, keep/q5.cpp): all ties, not budget gaps. keep/q36.cpp 90.15 is a steering guard, not deliverable. src/shared/audio_event.hpp's comment says /Ob1, but population-4087 is /O2 /Ob2.
+
+## Scout789 (2026-11-05, closed; 0 B; NOTES and keep/ in build/class-work/Scout789/; Scout792 continues)
+- ComboBox 0x5F4BA0: 62.04, shape 90.74, 1714/1884, frame right (keep/k3_6204.cpp); resume from keep/s1_5983.cpp (59.83, entry code exact), overlay hc/, first row keep/first.cpp. Tail placement closed by the flag form (rename forward to call_default). Open: message in esi, paint eviction, 0x600410 in Remove's temp dtor. ListBox: Ghidra treats SendMessageA as noreturn, so the decompile stops at each call; a draft needs raw disassembly, about 3,900 instructions.
+
+## Scout791 (2026-11-05, closed; 0 B; NOTES, lab.py, lc.py, w/, f/ in build/class-work/Scout791/; Scout793 continues)
+- Session ctor 0x66E380 99.72 (w/se0.cpp): about 13,000 lab variants, no hit; `mov eax,15` hoists past one instruction, target past two. Create_Reinforcement 0x63A050 99.55 (w/cr0.cpp): needs loop 1 from probe k=1 with loop 2 from k=0: a real inline expansion between the loops. Sidebar slot 54 0x67E210 99.04 (w/sb0.cpp): 62c must load before the ternary diamond. 0x428CF0: no 98.72 draft found. IPX 0x525F60 draft in f/ipx/ unscored; Wave RESUME in f/wave/.
+
+## Scout792 (2026-11-05, closed; 0 B; NOTES, env.sh, keep/ in build/class-work/Scout792/; continues)
+- ComboBox 0x5F4BA0: 68.37, shape 94.04, 1777/1884, frame right (keep/d_6837.cpp, overlay hc/). Lab-only 72.20. Open: colours (ours data=edi, result=ebx; a real second def of proc in the 0x4BE arm is untested), ??_G 0x601430 at the Remove temp needs 6-8 natural pending sites after 0x14F, paint eviction. Static 86.15 unchanged. Place_Veins' draft is in Scout674.
+
+## Scout793 (2026-11-05, closed; 0 B; NOTES in build/class-work/Scout793/; Scout795 continues)
+- IPX Service 0x525F60 97.99, shape 99.94 (w/l1.cpp, overlay hi/, codex1 r1192 draft): zero web gets edi where target has ebp. Wave 0x7238B0 98.18, shape 99.05 (w/w3.cpp, codex4 draft): dead `fst dword` at 0x3D6, 0x62C. Cloaking not attempted: h3 needs rebasing, slot 234 int-to-void change with 0x6C89C0, setup in Scout697 NOTES.md. Draw_Trail, PlaceVeins not reached.

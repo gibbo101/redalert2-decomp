@@ -1967,3 +1967,40 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Moving a large case last can leave its layout position unchanged while moving inline decisions. The after-switch tail is pulled up with its loop and stays attached to one case.
 - A bool set true and only conditionally cleared gives the eviction reload `mov bl,[slot]`; a read-only copy folds.
 - Register choice in a short block can be two things: a scratch cursor for temporaries and separate colouring for named values. A lab statement rotates only the first.
+
+## Pending-site survey (Scout787)
+- On a row whose extra instructions sit inside one inlined callee, add lab Nop sites, read the window (3-8, 5-8), then fill it with natural accessors: 87.40 and 85.26 went straight to exact.
+- Inlined rows in a family supply budget a private draft had to fake.
+- Dropping one inline `operator==` site in a loop frees budget for a ctor at an earlier site (94.38 to exact).
+- `if (Y < -20) return true; return false;` keeps a row exact and flips `jns`/`jmp` to `js`/`jmp` in its inlined caller.
+
+## Threading order and hoisted constants (Scout790)
+- A kept `test r,r` after `add` means the block still had a label when the js peephole ran.
+- A second `if (save)` stops threading only when its condition differs at IL level (`== true`, `& 1`); casts, `!!`, `!= 0`, wrappers and named copies all thread.
+- Passing `&local` or a reference to an inline does not keep the local in memory once inlined.
+- A constant hoist such as `mov bl,0x80` needs ebx already in use.
+
+## Flag forms and regional colouring (Scout789)
+- `bool forward = true; ... result = K; forward = false; break; ... if (forward) {...} return result;`: threading removes the test everywhere except the case with a non-constant flag, and the after-switch tail lands right after that case. TibSun's `char call_default` is this.
+- `result = K; return result;` in one block folds to `xor eax,eax` or `or eax,-1`; in a later block it gives `mov eax,edi` tail copies.
+- An inline boundary stops threading: `T *data = Get_Record(window); if (!data)` keeps the zero init and test; plain `Get(key, data); if (!data)` threads past it.
+- Targets colour per region: a variable can hold a register only in one switch tree.
+
+## Batch labs and store order (Scout791)
+- Scout791 lab.py and lc.py compile hundreds of whole-body variants in one TU as vK functions and parse /FAs: 700+ variants of a 1.8 KB body in 34 s. Confirm hits with s.py.
+- VC6 reorders stores within a block, so source store order is not preserved. A one-call `mov r,imm` hoists past exactly one neighbour in every form tried.
+- Any `T &r` local inside a block moves a store ahead of memset setup, whichever store it aliases.
+- In a sum with a folded if/else or ternary, the operand tree is canonicalised before source grouping: named copies and order are neutral.
+
+## All-flag tails and cold import webs (Scout792)
+- `result = K; call_default = false; break;` at every site with one final `return result` gives unfolded tails; a direct `return result` after a def in the same block elides the def into eax. Const prop runs before tail duplication.
+- Replacing a by-value key `.Get((unsigned int)x, p)` with an inline Get_Record(x) removes a dedicated temp slot.
+- `LRESULT r = -1; if (p) {... r = Send(...);} return r;` gives `or eax,-1; test; je epilogue`.
+- `push K` in a branch before a shared call comes from two full call statements cross-jumped, not a ternary argument.
+- A two-use import CSE web in one cold arm can flip a global edi/ebx colouring; cold reference counts do not.
+- `if (node) return true; return false;` in a bool inline threads into `if (!Present(...))`; `return node != 0` keeps `setne`.
+
+## Guard loops and zero stores (Scout793)
+- `if (n>0) { i=0; do ... }` gives a literal guard compare on the zero web and stops a for loop evicting a memory `result` into a register.
+- A zero store to a memory home right after `test eax,eax; jne` becomes `mov [m],eax` when no zero register is live.
+- `i=0` bounds a zero web: a later zero use starts a second one. A zero web can depend on a store inside a loop that no longer uses it in final code.
