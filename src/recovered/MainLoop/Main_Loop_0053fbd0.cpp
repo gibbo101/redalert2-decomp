@@ -34,7 +34,7 @@
 // @ref ?Sync_Delay@@YIXXZ=00540960
 // @ref ?Trap_Object_006715c0@UnknownSessionState@@QAEXXZ=006715c0
 // @ref ?Unknown_0053D890@UnknownList832470@@QAEXXZ=0053d890
-// @ref ?Unknown_00614010@@YAXXZ=00614010
+// @ref ?Unknown_00614010@@YIXXZ=00614010
 // @ref ?Unknown_006A67B0@Tactical@@QAE?AUPoint2D@@XZ=006a67b0
 // @ref ?unknown_flag_a40b51@@3_NA=00a40b51
 // @ref ?unknown_frame_timer_839990@@3V?$CDTimerClass@VSystemTimerClass@@@@A=00839990

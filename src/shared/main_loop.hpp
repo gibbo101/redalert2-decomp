@@ -124,7 +124,7 @@ extern int unknown_int_8325d4;                       // 0x008325D4
 class LayerClass;
 extern LayerClass unknown_layers_852578[5];          // 0x00852578 (DisplayClass::Layer)
 void unknown_delete_all_a76648();                    // 0x006142F0
-void Unknown_00614010();                             // 0x00614010
+void __fastcall Unknown_00614010();                             // 0x00614010
 void Unknown_00482BC0();                             // 0x00482BC0 (Unselect_All, hypothesis)
 
 // The value Multiplayer_Debug_Print shows in seconds when set (0x007EC498; -1: none).
