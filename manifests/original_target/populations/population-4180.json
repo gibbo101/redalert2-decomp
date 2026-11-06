@@ -4,8 +4,8 @@
     "id": "population-4180",
     "inventory_sha256": "c6e65c87bc2e4b6ac80292812202ac2f273ff9e49a7dc86347c6ac1ba65a1a94",
     "gaps_sha256": "7f1de29d1924e89782497780ed9ea1047498ee43b7856de2496de04a4aa01da1",
-    "historical_population_sha256": "3317fef6fc1dda369490d2bfa7a11b190561cc222c61c7216a8dd1790add7efb",
-    "historical_acceptance_sha256": "da8da19d7c13458cf8e11d2175796b50d3b6329d09d52673adb9587bb15a0bc5"
+    "historical_population_sha256": "67d3a265db0b14a202c926a0b55ca232b7f8fbb6a60e7c4035d6e3b4cd99ef9a",
+    "historical_acceptance_sha256": "a0ca0bcdf928a22da77de8bf1a6e877be2c6a2ae6929c945bd6e5c5cfb0db656"
   },
   "references": {
     "?OnServerTime@CChatEventSink@@UAGJJJ@Z": 7756112,
@@ -6812,7 +6812,7 @@
     "?private_port_debug_007fef8c@@3PADA": 8384396,
     "?public_options_message_7e71f0@@3PADA": 8286704,
     "?unknown_retry_format_7fefac@@3QBDB": 8384428,
-    "?Unknown_00673090@@YIXPAUUnknownSessionState@@@Z": 6762640,
+    "?Allocate_Ports_00673090@UnknownSessionState@@QAEXXZ": 6762640,
     "?Unknown_0074e470@@YAXXZ": 7660656,
     "?Unknown_0074e5e0@@YI_NHHH@Z": 7661024,
     "?wol_firewall_a71b18@@3VFirewallSettings@@A": 10951448,
@@ -72093,7 +72093,7 @@
         {
           "offset": 85,
           "kind": 20,
-          "symbol": "?Unknown_00673090@@YIXPAUUnknownSessionState@@@Z",
+          "symbol": "?Allocate_Ports_00673090@UnknownSessionState@@QAEXXZ",
           "target": 6762640,
           "addend": 0,
           "resolved": 4294066359
@@ -72523,7 +72523,7 @@
           "resolved": 10747988
         }
       ],
-      "source_sha256": "6a9cb77d02305c9746d2ed4003fd7cbbc2a0be402c5594ca7d659dc66f4a44d2",
+      "source_sha256": "a3df8f626009e4fbf75259abcbf57c7211dcde0179ba3c3fec17e3ecf668bfde",
       "source": "src/recovered/unowned/Connect_Player_Pairs_0074ef80.cpp",
       "population": "population-4180",
       "padding_sha256": "bde559b24d3a5302d82a4e56eb6f4b12d39057d100fd0ca81b337f5c1aa80cba",

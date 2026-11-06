@@ -1890,3 +1890,11 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 ## Expression temp spills and byte arguments (Scout777)
 - `if (W(current) < W(next))` with named int copies of both arguments, loaded before either call, gives the temp spill `mov edx,eax ... mov [slot],edx ... mov edx,[slot]; cmp eax,edx` (85 to 99); a named weight local does not.
 - Passing a table int to an `unsigned char` param directly gives `mov dl,[table]`; a named int copy gives a dword load and `push eax`.
+
+## Library templates and scratch rotation (Scout776)
+- A hidden library template can be the missing spend: real ATL CComObject::CreateInstance and its folded FinalConstruct arm took a row from 73.93 to exact. Check for a real library wrapper before hunting labs.
+- Moving real reset stores into a root helper before the first site flips later refusals by changing root size.
+- A named read just before a call changes scratch rotation: allocation runs eax, ecx, edx, so a whole-function rotation can come from one hoisted read.
+- `cond ? f(x) : ""` initialising a Wstring gives a copy ctor plus temp-flag dtors; slot order wants the implicit WideString conversion.
+- Root sites move refusals monotonically: a deep site refused with a later shallower one accepted can't come from the root; the site lies between them.
+- Moving a local class view into a header can renumber `_$S`/`_$E`, shown only at acceptance as "Unsupported allocatable data section .CRT$XCU".

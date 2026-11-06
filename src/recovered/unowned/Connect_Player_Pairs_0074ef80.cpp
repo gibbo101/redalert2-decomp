@@ -2,7 +2,6 @@
 #include "shared/firewall_settings.hpp"
 #include "shared/session_state.hpp"
 #include "shared/crt_string.hpp"
-void __fastcall Unknown_00673090(UnknownSessionState *);
 void Unknown_0074e470();
 bool __fastcall Unknown_0074e5e0(int peer,int pair_slot,int step);
 extern FirewallSettings wol_firewall_a71b18;
@@ -10,7 +9,7 @@ extern int unknown_player_controls_7fd334[8];
 extern bool unknown_player_checked_b28dcc[8];
 extern char wol_pair_debug_007ff270[],wol_wait_pair_007ff24c[],wol_pair_done_007ff1ac[];
 extern char wol_wait_first_007ff218[],wol_wait_second_007ff1e4[],wol_wait_done_007ff1c8[];
-// @ref ?Unknown_00673090@@YIXPAUUnknownSessionState@@@Z=00673090
+// @ref ?Allocate_Ports_00673090@UnknownSessionState@@QAEXXZ=00673090
 // @ref ?Unknown_0074e470@@YAXXZ=0074e470
 // @ref ?Unknown_0074e5e0@@YI_NHHH@Z=0074e5e0
 // @ref ?wol_firewall_a71b18@@3VFirewallSettings@@A=00a71b18
@@ -28,7 +27,7 @@ bool __fastcall Connect_Player_Pairs_0074ef80()
     int pair_slot=-1;
     unknown_login_state_00b2abe4=0;
     if(unknown_session_a3d298.unknown_2dbc==0) return false;
-    Unknown_00673090(&unknown_session_a3d298);
+    unknown_session_a3d298.Allocate_Ports_00673090();
     if(unknown_players_a3fa7c.Count()>0) {
         HWND window=(HWND)Unknown_00735940(300);
         if(window) {
