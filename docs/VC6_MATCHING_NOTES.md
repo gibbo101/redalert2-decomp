@@ -1898,3 +1898,20 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `cond ? f(x) : ""` initialising a Wstring gives a copy ctor plus temp-flag dtors; slot order wants the implicit WideString conversion.
 - Root sites move refusals monotonically: a deep site refused with a later shallower one accepted can't come from the root; the site lies between them.
 - Moving a local class view into a header can renumber `_$S`/`_$E`, shown only at acceptance as "Unsupported allocatable data section .CRT$XCU".
+
+## Loop exit values and member-wise statements (Scout778)
+- When a pointer's exit value is computed in the inner guard (`add ebp,edx` before the loop), the source is `source[index]; index++`, not `*source++`.
+- A named `int offset = ...` before an inner loop, used as `target[offset + column]`, gives `[ecx-2]` cursor code with the base calculated before the guard; a named pointer does not.
+- `W/2, H/2, +X, +Y, +dx, +dy` order means member-wise Point2D statements.
+- `mov edi,[home]` just before an `if` at the tail means a new variable, not the parameter reused.
+- To load an array element before a virtual call, declare `int house = ...; int sum = ...` in that order.
+- `if (name == 0 || *best == 0)` threads the first test past the second.
+- Tool traps: `grep -v` on an @ref misses because `$` is an anchor, use -F; with two conflicting @ref lines the row-local score can read 100 while acceptance takes the first binding; a false inventory end shows as "expected_bytes 24".
+
+## Inlined early returns and by-value homes (Scout779)
+- `if (!g) return 0;` and `if (g) {...} return 0;` are byte-identical as a row; inlined, the first puts the failure path ahead of the arm (`jne far`), fixing a block layout that looked like a moved loop.
+- A struct by-value param keeps param homes out of the frame pool; with int params a memory local takes an enregistered param's dead home. A target frame 16 B larger with a local in its own slot points to Point2D by value.
+- `return a != 0 || b != 0;` at a tail gives `xor eax,eax` / `mov eax,1` next to `mov al,1` returns elsewhere.
+- A real wrapper over the last statements moves IL out of the root and can refuse several earlier sites at once (60 to 85).
+- `T *const &` on a wrapper param rereads the caller's memory local at each use with no copy register (87 to 97.82).
+- The kept return tail tracks the last return in source; a keeper mid-function stays unexplained.
