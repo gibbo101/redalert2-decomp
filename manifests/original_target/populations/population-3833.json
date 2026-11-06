@@ -4,8 +4,8 @@
     "id": "population-3833",
     "inventory_sha256": "de4479a3783846c8405ccb56f843d223d6017da66c6e4165af578702ab05bd61",
     "gaps_sha256": "5964d3b397a7ffce0efbaa61a8dfcc15a3e3b9ff47feb066f12eae36ab779aa3",
-    "historical_population_sha256": "8171e985e9966306bbcc27663351770b82edaa4ca5920da08434e7e7d04ca64c",
-    "historical_acceptance_sha256": "83024093a8abf0a455763877b0da3fc3a0dfb44608183e3a3551ebc336acec3d"
+    "historical_population_sha256": "e81ff5f26a6c0e1bd3e530719e3a85ab41ae2b6d9bdd9dd707fda410a5e1b93a",
+    "historical_acceptance_sha256": "76d6831b9cfcfbd11217fb50d1d4839f093ae6b31a2c89753b534b98092fe1a0"
   },
   "references": {
     "?Rules@@3PAVRulesClass@@A": 8624200,
@@ -3810,7 +3810,7 @@
     "?get@Leaf_47c390@@QAEXI@Z": 4703120,
     "?get@Leaf_47ce30@@QAEXI@Z": 4705840,
     "?get@Leaf_47ce40@@QAEIXZ": 4705856,
-    "?get@Leaf_47cf10@@QAEIXZ": 4706064,
+    "?Bridge_Adjusted_Height_0047CF10@CellClass@@QBEHXZ": 4706064,
     "?get@Leaf_47cf70@@QAEII@Z": 4706160,
     "?get@Leaf_47cf80@@QAEIXZ": 4706176,
     "?get@Leaf_47cf90@@QAEIXZ": 4706192,
@@ -4689,7 +4689,7 @@
     "?get@Leaf_47c390@@": 4703120,
     "?get@Leaf_47ce30@@": 4705840,
     "?get@Leaf_47ce40@@": 4705856,
-    "?get@Leaf_47cf10@@": 4706064,
+    "?Bridge_Adjusted_Height_0047CF10@CellClass@@": 4706064,
     "?get@Leaf_47cfa0@@": 4706208,
     "?get@Leaf_47e2b0@@": 4711088,
     "?get@Leaf_482e00@@": 4730368,

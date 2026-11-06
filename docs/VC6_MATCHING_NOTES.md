@@ -2017,3 +2017,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A nested Union's sum tie flips when the inner result is bound to `T const &`; a by-value local adds copies and loses.
 - An X-offset read through a named ref folds into the base web; a Y or Z read adds one web ref.
 - First-attempt rows can hide wrong operator shapes: 73.96 to exact in a few variants.
+
+## Position scans for colouring (Scout796)
+- A lab 2-use local inserted after every statement (233 positions, about 12 minutes, state signature) finds which arm controls a global colouring when weights are flat; it found a natural fix in one pass.
+- Named argument locals at a many-argument call can swap two global registers with no change in the arm's bytes; both locals were needed.

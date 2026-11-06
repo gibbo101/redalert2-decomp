@@ -16,9 +16,9 @@
 | [classes/UnknownMapGenerator](../src/recovered/classes/UnknownMapGenerator/) | 47 | 49,999 | 47 | 0x0056D4C0–0x0058AD90 |
 | [classes/UnitClass](../src/recovered/classes/UnitClass/) | 89 | 46,627 | 89 | 0x004D3510–0x0070A330 |
 | [classes/FootClass](../src/recovered/classes/FootClass/) | 125 | 46,400 | 121 | 0x0041B470–0x004CDE10 |
-| (discovery: address-named) | 1332 | 41,675 | 17 | 0x004010A0–0x00797198 |
+| (discovery: address-named) | 1331 | 41,652 | 17 | 0x004010A0–0x00797198 |
 | [classes/BuildingTypeClass](../src/recovered/classes/BuildingTypeClass/) | 62 | 40,277 | 62 | 0x00454EE0–0x004D3C50 |
-| [classes/CellClass](../src/recovered/classes/CellClass/) | 126 | 38,982 | 122 | 0x00470680–0x0047CFC0 |
+| [classes/CellClass](../src/recovered/classes/CellClass/) | 127 | 39,005 | 123 | 0x00470680–0x0047CFC0 |
 | [classes/MapRegionClass](../src/recovered/classes/MapRegionClass/) | 49 | 32,124 | 49 | 0x0056D530–0x0058DA70 |
 | [classes/InfantryClass](../src/recovered/classes/InfantryClass/) | 90 | 32,065 | 90 | 0x004D3390–0x00509810 |
 | [classes/AircraftClass](../src/recovered/classes/AircraftClass/) | 87 | 30,616 | 87 | 0x004139F0–0x004D34D0 |

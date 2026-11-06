@@ -143,6 +143,9 @@ template<class T> inline T operator ++(T & a, int) { T aa = a; a = (T)((int)a + 
 
 class CellClass : public AbstractClass {
 public:
+#ifdef RA2_CELL_DECLARE_BRIDGE_ADJUSTED_HEIGHT
+    int Bridge_Adjusted_Height_0047CF10() const; // signed +0x11B plus four for flag 0x80; original owner evidenced by Get_Obstacle.
+#endif
 #ifdef RA2_SHIP_CELL_ACCESSORS
     // Native ShipProcess retains the address of MapCoords through the comparison.
     Cell const &Fetch_CellID() const { return MapCoords; }

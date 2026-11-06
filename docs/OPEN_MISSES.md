@@ -2099,3 +2099,6 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout795 (2026-11-05, closed; 2,599 B: Render_Radar 0x633210 (codex3 draft); NOTES and w/ in build/class-work/Scout795/)
 - OWNER DECISION: `Rect const &inner = Union(old, unknown_1208);` stays, flagged: one reference to a returned const temporary, reproducing sum registers at +0x91F (by-value 91.71). Function name stays Unknown_00633210 until a rename.
 - Draw_Trail 0x4AE9C0 90.75, shape 99.38, 800/800 (w/t2.cpp, overlay ht/): only the DZ tail. PlaceVeins 0x47AD00 78.39, this/dir swap. Bounce 0x4370E0 99.55: needs one more `position` reference that shows no bytes. Place_Tiberium 98.91. Not reached: Compute_Background 0x630B70, Tactical 0x6A7350, Process_Receive 0x6265C0, Diplomacy 0x6340F0, Radar 0x634670.
+
+## Scout796 (2026-11-05, closed; 0 B; NOTES and tools in build/class-work/Scout796/; Scout798 continues)
+- ComboBox 0x5F4BA0: 77.14, shape 96.09, 1818/1884, frame right, global colours solved by TibSun's named `int x, y, w` before CreateWindowExA (keep/w6_7714.cpp). Lab 80.06. One open cause: T drops data from ebx at `if (!data->surface_10)` and reloads into eax at 0x405, esi at 0x4A4, 0x666, 0x7D7; ours keeps ebx with edge reloads. Untried: the paint tail as a real inline helper taking data by value, with returns replacing breaks.
