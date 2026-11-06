@@ -4,7 +4,7 @@
 #include "shared/map_cell.hpp"
 #include "shared/tactical.hpp"
 // @ref ?Map_Random_Range_005797a0@@YIII@Z=005797a0
-// @ref ??$Union@VRect@@@@YI?AVRect@@ABV0@0@Z=0045efe0
+// @ref ??$Union@VRect@@@@YI?BVRect@@ABV0@0@Z=0045efe0
 // @ref ??GRectPoint2D@@QBE?AU0@ABU0@@Z=0047d040
 // @ref ??0Rect@@QAE@ABURectPoint2D@@HH@Z=00453e40
 // @ref ?unknown_rect_839630@@3VRect@@A=00839630

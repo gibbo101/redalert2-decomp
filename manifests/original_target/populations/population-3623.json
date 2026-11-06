@@ -4,8 +4,8 @@
     "id": "population-3623",
     "inventory_sha256": "d6ca5ab95771be9a534411345884c2093b5ba3adf6b564269171d4d441db092b",
     "gaps_sha256": "aaa5533fbcb998ef264fc8e6db32c51a3f7a7e27127da5b3af9ba5b73daafaba",
-    "historical_population_sha256": "787e5e22be061dbc0090a7af6a30a353929dce487d6e915f4ef0d4be06470f81",
-    "historical_acceptance_sha256": "c1764026bbf04278676076c24129cf64e6be76080181403622764fa233c76a84"
+    "historical_population_sha256": "382db31e07ea1efa4e76cd345f980d270a349ecf339e82dd825965284f72085c",
+    "historical_acceptance_sha256": "2dd06c1c0d31f1e24418f3b277338d69afbe8343c048ce364b7f396465664dab"
   },
   "references": {
     "_unknown_empty_rect": 8720704,
@@ -1986,7 +1986,7 @@
     "?Is_Valid@WDTState@@QBE_NXZ": 7521168,
     "__real@8@4000c000000000000000": 7981704,
     "?Load@InfantryClass@@UAGJPAUIStream@@@Z": 5277040,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "?Load@EMPulseClass@@UAGJPAUIStream@@@Z": 4936576,
     "__real@4@3ff38000000000000000": 7999408,
     "?Draw_Dashed_Line@XSurface@@UAEHABUPoint2D@@0HPB_NH@Z": 7814192,

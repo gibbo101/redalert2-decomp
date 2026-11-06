@@ -4,8 +4,8 @@
     "id": "population-3428",
     "inventory_sha256": "a41c8a9e87338f6cce37c8391076f601377e24dee9d9c3a58237005456086593",
     "gaps_sha256": "17021bf07aa5d67ce4aa5d5ee9cfb5a7e705029805e3e0f68a0b6f85c078bc77",
-    "historical_population_sha256": "96c767345d1f2253db1f3c1c37ddda55a186a176edd1c671f902265d03fadc6f",
-    "historical_acceptance_sha256": "4b57378e6cb5ba41976429d3a1ad73dc694f0be3c1c9e1752bd3b4562ff7dcbe"
+    "historical_population_sha256": "8f3f0fcf021694fa5f2eac0b6657a7e700f6d8eea55e911944fdf99f9b54de85",
+    "historical_acceptance_sha256": "fc8254490f8f62fc3b8948fb7e94e537d3b514f8f0ca176cd37c9f569a51dee2"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -4402,7 +4402,7 @@
     "?Create@WDTState@@SI?AV?$rc_ptr@VWDTState@@@@PAE@Z": 7519920,
     "?Is_Valid@WDTState@@QBE_NXZ": 7521168,
     "?unknown_ini_8396d0@@3PAVCCINIClass@@A": 8623824,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "?Get@CacheStraw@@UAEHPAXH@Z": 4802400,
     "?QueryInterface@CStreamClass@@UAGJABUGUID@@PAPAX@Z": 4802928,
     "?Read@CStreamClass@@UAGJPAXKPAK@Z": 4803392,

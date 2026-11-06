@@ -4,8 +4,8 @@
     "id": "population-2841",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "df424ee6226e8fce7b0029b38a7faec5529c5a2da08ed53c92f140bf35648615",
-    "historical_acceptance_sha256": "489dff60dd21a8168189cd8979fdd05406e10e6366bdf8e97c8ca7a402af1179"
+    "historical_population_sha256": "317ec49561260a3f59cf22ce3065fd1511cfea5477df94d54cd16c03b0513daf",
+    "historical_acceptance_sha256": "176fb11a11f6bc31f415a640279040816c0428e878db49d84f3f6a0a33343b6b"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -4726,7 +4726,7 @@
     "?Load@InfantryClass@@UAGJPAUIStream@@@Z": 5277040,
     "?Unknown_005A07F0@@YIXHHHHH@Z": 5900272,
     "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "?Compute_CRC@HouseClass@@UBEXAAVWWCRCEngine@@@Z": 5166992,
     "?AI@RadarClass@@UAEXAAHABUPoint2D@@@Z": 6487232,
     "?AI@DisplayClass@@UAEXAAHABUPoint2D@@@Z": 4823584,

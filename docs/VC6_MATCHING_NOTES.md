@@ -1915,3 +1915,15 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A real wrapper over the last statements moves IL out of the root and can refuse several earlier sites at once (60 to 85).
 - `T *const &` on a wrapper param rereads the caller's memory local at each use with no copy register (87 to 97.82).
 - The kept return tail tracks the last return in source; a keeper mid-function stays unexplained.
+
+## comip bodies and temp contexts (Scout780)
+- Giving comip's `_AddRef` a body lets budget alone call a pair of rows in one block and inline them in another (68.83 to 78.05 with Length).
+- The generic `UnknownComPtr<IPiggyback>` gives the target's inline destructors with Release_Held; a specialization does not.
+- `(contact==0 || proceed==true)` keeps a bool's store and `cmp byte,1`, because threading crosses only the contact test.
+- Temps in `if` `&&` chains share a slot; temps in a value context or `?:` do not.
+
+## Tail copies and the scratch cursor (Scout781)
+- A single statement at a function end reached by fall-through is copied into every predecessor after allocation, so all copies share one register: the likely source of repeated final statements, including twin doubles (to 1664/1664).
+- Scratch registers roughly follow a cursor across blocks: a block's first register depends on the previous block in final layout order, not source order. `if (!x) { ...; return; }` first can fix a block head.
+- `else { Cell what ... }` lets a local share the first slot with earlier sibling arms.
+- In tube blocks the count is read after the coordinate is built, and `CoordStruct(exit, 0)` in place keeps the Z immediate.

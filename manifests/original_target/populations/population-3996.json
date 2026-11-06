@@ -4,8 +4,8 @@
     "id": "population-3996",
     "inventory_sha256": "9c2cc29d53bf5e0a74879e29a1570d5e22fd5b0dcdb6d3a5a78d79a133f9e22e",
     "gaps_sha256": "c4ac89e142618510b04ff241bf6036e58580c8675ece1fc8b1f8cf8a67f24196",
-    "historical_population_sha256": "9a9652b4f22e21d34885216816a9fcb1d687462d400dc81330f819bc8b72b8d0",
-    "historical_acceptance_sha256": "daa9ae14fd01e7c1a143f53b09b8ce0528da6f61ad032c2817ac53376e3cb54e"
+    "historical_population_sha256": "88fda845df29aade8871974214bbd4053cbb9657cc321cf8b2a177f566fec196",
+    "historical_acceptance_sha256": "7f03af969456830282f4370e50d6ee5bc264b7dbaafe482583daef416b5f440a"
   },
   "references": {
     "?Map@@3VMouseClass@@A": 8594656,
@@ -5070,7 +5070,7 @@
     "?Unknown_005A07F0@@YIXHHHHH@Z": 5900272,
     "?Unknown_0055D990@MapClass@@QAEXABVCell@@@Z": 5626256,
     "?Setup_Trigger_Scroll@Tactical@@QAEXABUCoordStruct@@H@Z": 6958256,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "?Compute_CRC@HouseClass@@UBEXAAVWWCRCEngine@@@Z": 5166992,
     "?AI@RadarClass@@UAEXAAHABUPoint2D@@@Z": 6487232,
     "?AI@DisplayClass@@UAEXAAHABUPoint2D@@@Z": 4823584,
@@ -9282,7 +9282,7 @@
         {
           "offset": 708,
           "kind": 20,
-          "symbol": "?Union@@YI?AVRect@@ABV1@0@Z",
+          "symbol": "?Union@@YI?BVRect@@ABV1@0@Z",
           "target": 4583392,
           "addend": 0,
           "resolved": 4293013896

@@ -4,4 +4,4 @@
 // invalid one yields the other. The cell and building code call it.
 #include "shared/building_type.hpp"
 
-template Rect __fastcall Union(Rect const &rect1, Rect const &rect2);
+template Rect const __fastcall Union(Rect const &rect1, Rect const &rect2);

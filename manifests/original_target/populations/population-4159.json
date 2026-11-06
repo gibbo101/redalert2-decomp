@@ -4,8 +4,8 @@
     "id": "population-4159",
     "inventory_sha256": "43c6266a9d66574a65b80d49ea8b8b67bd1853be28bbdbe0da1c91d06724d6a1",
     "gaps_sha256": "22f6351267210b6562708346df4274da4dbb9399a5dc08c834b55cada89b6eda",
-    "historical_population_sha256": "8e88fa6b0eddfbc2ece08df91b9aa3b3dc3424298aca279de8e9da87834e3852",
-    "historical_acceptance_sha256": "eb2ae8dea4b010b79ccfe02ff6a727495f210e4bff67acf29936666b053f2a61"
+    "historical_population_sha256": "eee43e008e8fb6d9cc292c6654b88031c79c12e01569f6503a7190d75114aba8",
+    "historical_acceptance_sha256": "dc02875c4b1317e796af24781c2d21819215367420f64d289c392111edbc66cf"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1151,7 +1151,7 @@
     "?Resize@?$DynamicVectorClass@PAUDDSURFACEDESC@@@@UAE_NHPBQAUDDSURFACEDESC@@@Z": 4810320,
     "?Is_Valid@WDTState@@QBE_NXZ": 7521168,
     "__real@8@4000c000000000000000": 7981704,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "__real@4@3ff38000000000000000": 7999408,
     "?Blit@?$RLEBlitTransZRemapXlat@G@@UBEXPAXPBXHHHHHHHH@Z": 4757664,
     "?Blit@?$RLEBlitTransDarken@G@@UBEXPAXPBXHHHHHHHH@Z": 4757824,
@@ -1665,7 +1665,7 @@
     "?unknown_abe490@@3NA": 11265168,
     "?unknown_abe520@@3NA": 11265312,
     "?unknown_scroll_speeds_7f6914@@3PAMA": 8349972,
-    "??$Union@VRect@@@@YI?AVRect@@ABV0@0@Z": 4583392,
+    "??$Union@VRect@@@@YI?BVRect@@ABV0@0@Z": 4583392,
     "?unknown_rect_839630@@3VRect@@A": 8623664,
     "?unknown_4754b0@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4674736,
     "?unknown_475d60@CellClass@@QBE?AUCoordStruct@@XZ": 4676960,
@@ -12858,7 +12858,13 @@
     "?Planning_Add_Order@@YI_NPAVTechnoClass@@PAVEventClass@@@Z": 6377152,
     "?Planning_Path_Add@@YIXPAVTechnoClass@@PAVPlanningNodeClass@@@Z": 6382416,
     "?Planning_Order_Kind@@YIHPAVTechnoClass@@PBUPlanningEventTargets@@@Z": 6380160,
-    "?Planning_Selection_Kind@@YAHXZ": 6384448
+    "?Planning_Selection_Kind@@YAHXZ": 6384448,
+    "__real@8@4003f000000000000000": 8053472,
+    "?Action@SelectClass@StripClass@SidebarClass@@UAEHIAAI@Z": 6818288,
+    "??0?$DynamicVectorClass@VHSVClass@@@@QAE@IPBVHSVClass@@@Z": 6312432,
+    "??0?$DynamicVectorClass@PAVPlanningMemberClass@@@@QAE@IPBQAVPlanningMemberClass@@@Z": 6401152,
+    "??0?$DynamicVectorClass@PAVPlanningBranchClass@@@@QAE@IPBQAVPlanningBranchClass@@@Z": 6401936,
+    "?Add@?$DynamicVectorClass@PBD@@QAE_NABQBD@Z": 7310144
   },
   "regions": [
     {
@@ -17934,7 +17940,7 @@
         {
           "offset": 882,
           "kind": 20,
-          "symbol": "?Union@@YI?AVRect@@ABV1@0@Z",
+          "symbol": "?Union@@YI?BVRect@@ABV1@0@Z",
           "target": 4583392,
           "addend": 0,
           "resolved": 4292590666
@@ -17948,7 +17954,7 @@
           "resolved": 11265460
         }
       ],
-      "source_sha256": "f90077a52335e844ae114f6ab1076e528f943f46f32d7e3583ed7632dd8fda30",
+      "source_sha256": "6313a6870e92066d5012b73ac9f6247d4639f528962128a8f5fa23e40ff33f02",
       "source": "src/recovered/classes/Tactical/Tactical_Register_Dirty_Area_006a3020.cpp",
       "population": "population-4159",
       "padding_sha256": "e2dac2a3e4166130a2801c775fbc9d722fbafd40c777e11c307e3e69c0feaffc",

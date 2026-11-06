@@ -10,7 +10,7 @@
 #include "shared/shape_file.hpp"
 // @ref ?Coord_To_Pixel@Tactical@@QAE_NABUCoordStruct@@AAUPoint2D@@@Z=006a29d0
 // @ref _unknown_static_rect=00a72ed0
-// @ref ?Union@@YI?AVRect@@ABV1@0@Z=0045efe0
+// @ref ?Union@@YI?BVRect@@ABV1@0@Z=0045efe0
 
 // Whether the object is a building (Kind_Of 6). The inline test at the bib, and the Point2D the result is
 // built from, are the two /Ob2 sites after the first frame rectangle that keep its Rect constructor out of line.

@@ -4,8 +4,8 @@
     "id": "population-3640",
     "inventory_sha256": "b4f4c2350aa5ed52ee94624f4b27c8d989691e7d3acb8e99e97cc2a8748be7fe",
     "gaps_sha256": "f4a5305718e51741ea7a3dbdd4bf1a6eb33e075cdd673f6c9fe7b8e4d7377014",
-    "historical_population_sha256": "32b864419bebed125369f6bc24da1de64d53b33f8e4d5b92709111134a8e49f6",
-    "historical_acceptance_sha256": "84cfd2326c8c7c02185b034c3e64787c67941d9da561de7b7970802a6c56750c"
+    "historical_population_sha256": "a85934d0d1fd373e3f5f8dd6e938e187a9070e784609eca7671eff9601796eb1",
+    "historical_acceptance_sha256": "77f72d86b9e106ab231496041f1f0a1e989f3a1d34d2a62c63f8b165d6a1c7d6"
   },
   "references": {
     "?unknown_cpu_probe_77f14d@@YAEXZ": 7860557,
@@ -4329,7 +4329,7 @@
     "?QueryInterface@?$CComObject@VCChatEventSink@@@ATL@@UAGJABUGUID@@PAPAX@Z": 7756688,
     "?QueryInterface@?$CComObject@VCNetUtilEventSink@@@ATL@@UAGJABUGUID@@PAPAX@Z": 7757056,
     "?QueryInterface@?$CComObject@VCDownloadEventSink@@@ATL@@UAGJABUGUID@@PAPAX@Z": 7760672,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "?QueryInterface@CStreamClass@@UAGJABUGUID@@PAPAX@Z": 4802928,
     "?QueryInterface@CStreamClass@@W3AGJABUGUID@@PAPAX@Z": 4805120,
     "?AddRef@CStreamClass@@W3AGKXZ": 4805136,

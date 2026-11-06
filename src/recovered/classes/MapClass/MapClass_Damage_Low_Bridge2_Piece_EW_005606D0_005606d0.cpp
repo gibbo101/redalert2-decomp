@@ -7,7 +7,7 @@
 // @ref ?unknown_475100@CellClass@@QBE?AVRect@@XZ=00475100
 // @ref ?Unknown_00472540@CellClass@@QAEXH@Z=00472540
 // @ref ?Unknown_0047CC10@CellClass@@QAEXXZ=0047cc10
-// @ref ??$Union@VRect@@@@YI?AVRect@@ABV0@0@Z=0045efe0
+// @ref ??$Union@VRect@@@@YI?BVRect@@ABV0@0@Z=0045efe0
 // @ref ??GRectPoint2D@@QBE?AU0@ABU0@@Z=0047d040
 // @ref ??0Rect@@QAE@ABURectPoint2D@@HH@Z=00453e40
 // @ref ?Register_Dirty_Area@Tactical@@QAEXVRect@@_N@Z=006a3020

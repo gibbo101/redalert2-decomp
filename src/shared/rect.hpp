@@ -216,7 +216,7 @@ inline Rect Rect::Intersect(Rect const &rect, int *x, int *y) const
 // 0x0062F580 expands it inline; the BuildingType unit's instance 0x0045EFE0
 // is the out-of-line copy the cell and building code call (__fastcall).
 template<class T>
-T __fastcall Union(T const &rect1, T const &rect2)
+T const __fastcall Union(T const &rect1, T const &rect2)
 {
     if (rect1.Is_Valid()) {
         if (rect2.Is_Valid()) {

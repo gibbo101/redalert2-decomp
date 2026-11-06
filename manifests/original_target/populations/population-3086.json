@@ -4,8 +4,8 @@
     "id": "population-3086",
     "inventory_sha256": "1b0f08704985a5c887d5a3123ae136b12c4132fef2da335fa4bc52ae9cd6ddf9",
     "gaps_sha256": "dd769c12d95f36cb69acf3ce86e15d5f183ffbc16f4cc157d2377276e2ae2484",
-    "historical_population_sha256": "34bb294e58e6ed381bd447f66fab993f3bed7ba7cad63a70986e3fe4a596a7ca",
-    "historical_acceptance_sha256": "876030f5c931b376a8bd0aae6dc9776665bbb82dfadec5400053dc6fb14ecd42"
+    "historical_population_sha256": "2ecd22d8c7805c708461005eaa5a77957b1dd3f1a9048d9004dbed08c782c7af",
+    "historical_acceptance_sha256": "c5ada9e62def404f131a3f8369125539c39fca39ad3d66dd4309d39f7dbbfd9e"
   },
   "references": {
     "??3@YAXPAX@Z": 7871803,
@@ -2873,7 +2873,7 @@
     "?Truncate@Wstring@@QAE_NI@Z": 7794784,
     "?Truncate_At@WideString@@QAE_NG@Z": 7801968,
     "?Truncate_At@Wstring@@QAE_ND@Z": 7794976,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "?Unknown_00406F50@@YAXXZ": 4222800,
     "?Unknown_Rect_Shrink_006F1B00@@YIXPAVRect@@H@Z": 7281408,
     "?Unlink@SpawnManagerClass@@QAEXPAVAbstractClass@@@Z": 6858080,

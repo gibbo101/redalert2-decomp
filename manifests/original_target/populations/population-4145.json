@@ -4,8 +4,8 @@
     "id": "population-4145",
     "inventory_sha256": "c0410d6e91c4ec57622fc78dbca6d2dbb7dbb7fb0558e394b55890cbe156ce8e",
     "gaps_sha256": "58667a1d65a6054e28efea4cf9a8d99045b5b76cd6cb4f6bc45988085117bf7f",
-    "historical_population_sha256": "91580a1692ed992c4994e5e150fb6ad24fe4ed3f93df399f4a12c3767484489a",
-    "historical_acceptance_sha256": "50bfc448f984ac3369b67b8fb7b1cc10564a17504f6c77cd7211e4debf1b5e4f"
+    "historical_population_sha256": "efeb338d6df3f0bbb3a2b8c39a61c14f2b6b6a577cc5ea89a8a92c0c85d92121",
+    "historical_acceptance_sha256": "e2896d996d32d134d801076c11c3d528e032a9f1549b5a2389485218aa9492d0"
   },
   "references": {
     "?unknown_math_4ba520@@YANN@Z": 4957472,
@@ -1151,7 +1151,7 @@
     "?Resize@?$DynamicVectorClass@PAUDDSURFACEDESC@@@@UAE_NHPBQAUDDSURFACEDESC@@@Z": 4810320,
     "?Is_Valid@WDTState@@QBE_NXZ": 7521168,
     "__real@8@4000c000000000000000": 7981704,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "__real@4@3ff38000000000000000": 7999408,
     "?Blit@?$RLEBlitTransZRemapXlat@G@@UBEXPAXPBXHHHHHHHH@Z": 4757664,
     "?Blit@?$RLEBlitTransDarken@G@@UBEXPAXPBXHHHHHHHH@Z": 4757824,
@@ -10958,7 +10958,20 @@
     "?Draw_Placement_Cursor@CellClass@@QAE_NABUPoint2D@@ABVRect@@_N@Z": 4669216,
     "?Draw_Shadow_Cast@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4675024,
     "?unknown_4749c0@CellClass@@QAEXABUPoint2D@@ABVRect@@@Z": 4671936,
-    "?unknown_471d10@CellClass@@QAE_NXZ": 4660496
+    "?unknown_471d10@CellClass@@QAE_NXZ": 4660496,
+    "??_GNode@?$WolDictionary@VWstring@@ULadder@WOL@@@@QAEPAXI@Z": 7759744,
+    "??_GNode@?$WolDictionary@VWstring@@UChannel@WOL@@@@QAEPAXI@Z": 7759840,
+    "?Clear@?$WolArrayList@VWstring@@@@QAEXXZ": 7758272,
+    "?Get@?$WolArrayList@VWstring@@@@QAE_NAAVWstring@@H@Z": 7758528,
+    "?Remove@?$WolArrayList@VWstring@@@@QAE_NH@Z": 7758320,
+    "?unknown_slot24@Tactical@@UAE_NABUCoordStruct@@0H_N@Z": 6996320,
+    "?unknown_slot68@BuildingClass@@UAEXHH@Z": 4432768,
+    "?unknown_slot67@UnitClass@@UAEXHH@Z": 7343728,
+    "__real@8@4003f000000000000000": 8053472,
+    "?Action@SelectClass@StripClass@SidebarClass@@UAEHIAAI@Z": 6818288,
+    "?Add@?$DynamicVectorClass@PBD@@QAE_NABQBD@Z": 7310144,
+    "??_ENode@?$WolDictionary@VWstring@@ULadder@WOL@@@@QAEPAXI@Z": 7759744,
+    "??_ENode@?$WolDictionary@VWstring@@UChannel@WOL@@@@QAEPAXI@Z": 7759840
   },
   "regions": [
     {
@@ -15081,8 +15094,8 @@
     {
       "entry": 4583392,
       "method": "0045efe0",
-      "symbol": "?Union@@YI?AVRect@@ABV1@0@Z",
-      "symbol_prefix": "?Union@@YI?AVRect@@ABV1@0@Z",
+      "symbol": "?Union@@YI?BVRect@@ABV1@0@Z",
+      "symbol_prefix": "?Union@@YI?BVRect@@ABV1@0@Z",
       "options": [
         "/O2",
         "/Ob2",
@@ -15095,7 +15108,7 @@
       "full_extent_bytes": 240,
       "full_extent_sha256": "66fc3e645d2078e910cb4e3f5b2bd38268bcc6af3258c546a3a5805575a9c3f3",
       "relocations": [],
-      "source_sha256": "eeda50aa43a79a8b875f2f2bda95c4015d00ad2ad676b2934094e86fc0444cae",
+      "source_sha256": "35274a6123d05e7d075cff65c04e7f3039970a3f54a721bbcace31fd90730a57",
       "source": "src/recovered/classes/BuildingTypeClass/BuildingTypeClass_Union_0045efe0.cpp",
       "population": "population-4145",
       "padding_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -29893,13 +29906,13 @@
         {
           "offset": 1081,
           "kind": 20,
-          "symbol": "?Union@@YI?AVRect@@ABV1@0@Z",
+          "symbol": "?Union@@YI?BVRect@@ABV1@0@Z",
           "target": 4583392,
           "addend": 0,
           "resolved": 2323
         }
       ],
-      "source_sha256": "685df42e613b1adb142cfed3a5f2a9c289c0e2d1c532cbd8bb66c9efe8380c44",
+      "source_sha256": "764d9f50a4d9b634bdcce06ebc434f9e36e077ae5827674d448bd763c0d9ed9c",
       "source": "src/recovered/classes/BuildingTypeClass/BuildingTypeClass_Image_Bounds_0045e290.cpp",
       "population": "population-4145",
       "padding_sha256": "19f3c2045194c5d2e45451e3dfe6a203b5e240aec5a2400a92cdb425c3331137",

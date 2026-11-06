@@ -3,7 +3,7 @@
 #include "shared/shape_file.hpp"
 
 template<>
-inline Rect __fastcall Union<Rect>(Rect const &rect1,Rect const &rect2)
+inline Rect const __fastcall Union<Rect>(Rect const &rect1,Rect const &rect2)
 {
     if (rect1.Is_Valid()) {
         if (rect2.Is_Valid()) {

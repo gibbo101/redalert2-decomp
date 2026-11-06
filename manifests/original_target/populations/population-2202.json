@@ -4,8 +4,8 @@
     "id": "population-2202",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "f3f57d2b01c1086a9b9f117eade1ea4d4a05e2be2054d5ad3a7ed1c72f49c924",
-    "historical_acceptance_sha256": "fe18645186e052aa16c64dde5b5bb43dff05b5728123d120ece1341325a71ee3",
+    "historical_population_sha256": "f9d6d0f42bab9443972d753f43ba46945ce367c733561254b4036bed452ee696",
+    "historical_acceptance_sha256": "dad9edfa0419834ad09479ce73287a333e9d38e7cec115e4fdae367099fab141",
     "separate_units": true
   },
   "references": {
@@ -3518,7 +3518,7 @@
     "?AI@WaveClass@@UAEXXZ": 7483936,
     "?AI@ObjectClass@@UAEXXZ": 6105072,
     "?unknown_ini_8396d0@@3PAVCCINIClass@@A": 8623824,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "?AI@RadarClass@@UAEXAAHABUPoint2D@@@Z": 6487232,
     "?AI@DisplayClass@@UAEXAAHABUPoint2D@@@Z": 4823584,
     "?Unknown_00406100@UnknownList14BC@@QAIXPAUAudioEvent@@PAUAudioEventType@@@Z": 4219136,

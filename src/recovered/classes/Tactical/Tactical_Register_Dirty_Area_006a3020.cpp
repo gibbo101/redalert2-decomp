@@ -6,7 +6,7 @@
 #include "shared/tactical.hpp"
 #include "shared/tactical_lists.hpp"
 // @ref ?DirtyAreas@TacticalLists@@2V?$DynamicVectorClass@UDirtyAreaStruct@@@@A=00abe5b0
-// @ref ??$Union@VRect@@@@YI?AVRect@@ABV0@0@Z=0045efe0
+// @ref ??$Union@VRect@@@@YI?BVRect@@ABV0@0@Z=0045efe0
 
 void Tactical::Register_Dirty_Area(Rect area, bool refresh_shroud)
 {

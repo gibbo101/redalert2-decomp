@@ -4,8 +4,8 @@
     "id": "population-3764",
     "inventory_sha256": "f66ef8e4263bbce205b542714ca12a13b0595141a6cf755ef4b070d414aa2fe2",
     "gaps_sha256": "151403203975d53897ba428e4c24609ae9411f399586bbe8ebf7793e1b66a86c",
-    "historical_population_sha256": "91bb863f6f5ea67ff3597778675b225fe029cf3a0a6d865cba7bf944e351d4ed",
-    "historical_acceptance_sha256": "2134bd174400b9b9890f01796f495320e7afd5d529199bd2bb81fed3ff124fe0"
+    "historical_population_sha256": "9189dcca0cf2549088e2d5dc600812d1429d4121d8158620ea18afc8ae2e78aa",
+    "historical_acceptance_sha256": "f549fe87821d877f1ca8a5554172c143fb61f6d0f7c821f77f05a1d0689ddb14"
   },
   "references": {
     "??1Straw@@UAE@XZ": 6926352,
@@ -2460,7 +2460,7 @@
     "?Create@WDTState@@SI?AV?$rc_ptr@VWDTState@@@@PAE@Z": 7519920,
     "?Is_Valid@WDTState@@QBE_NXZ": 7521168,
     "?Load@InfantryClass@@UAGJPAUIStream@@@Z": 5277040,
-    "?Union@@YI?AVRect@@ABV1@0@Z": 4583392,
+    "?Union@@YI?BVRect@@ABV1@0@Z": 4583392,
     "?Load@EMPulseClass@@UAGJPAUIStream@@@Z": 4936576,
     "?Get@CacheStraw@@UAEHPAXH@Z": 4802400,
     "?Read@CStreamClass@@UAGJPAXKPAK@Z": 4803392,
