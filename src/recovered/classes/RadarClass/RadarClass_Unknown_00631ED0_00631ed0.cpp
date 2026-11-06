@@ -19,7 +19,7 @@ void RadarClass::Unknown_00631ED0()
 {
     unknown_1218 = 0;
     unknown_121c = 0;
-    unknown_1238.unknown_00 = 0;
+    BackgroundColors = 0;
     unknown_1254 = 0;
     unknown_1270 = 0;
     unknown_1254 = New_Tracking_Table(256, 10);

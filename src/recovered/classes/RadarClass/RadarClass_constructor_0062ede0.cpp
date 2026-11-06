@@ -17,7 +17,7 @@ static inline HashTableClass<RadarTrackingStruct, TechnoClass *> *Make_Table(int
 RadarClass::RadarClass()
     : unknown_11e4(0), unknown_11e8(0), unknown_11ec(0), unknown_11f0(0), unknown_11f4(0), unknown_11f8(0),
       unknown_11fc(0), unknown_1200(0), unknown_1208(unknown_rect_ab6320), unknown_1218(0), unknown_121c(0),
-      unknown_1244(0, 0, 0, 0), unknown_1254(0), unknown_1270(0), unknown_1484(0), unknown_1488(1), unknown_148c(0), unknown_1490(0),
+      BackgroundColors(0), RadarCellWidth(0), RadarCellHeight(0), unknown_1244(0, 0, 0, 0), unknown_1254(0), unknown_1270(0), unknown_1484(0), unknown_1488(1), unknown_148c(0), unknown_1490(0),
       unknown_1494(0), unknown_1498(unknown_rect_ab6320), unknown_14a8(0), unknown_14ac(0), unknown_14b0(0),
       unknown_14b8(false), unknown_14b9(false), unknown_14d0(-1), unknown_14d4(false), unknown_14d5(false),
       unknown_14d6(false), unknown_14d8(unknown_rect_ab6320), unknown_14f8(0), unknown_14fc(0)

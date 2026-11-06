@@ -2,6 +2,8 @@
 #define RA2_RECT_POINT_INLINE
 #define RA2_RECT_MINUS_INLINE
 #define RA2_RADAR_RENDER_VIEW
+// RadarClass +0x1238 as three members (Compute_Background 0x00630B70).
+#define RA2_RADAR_BACKGROUND_MEMBERS
 // Existing RGB accessors are used by Radar Init_For_House in this unit.
 #define RGB_DECLARE_ACCESSORS
 // Header-static dynamic initializers of the unit at 0x0062EB00: the shape_file.hpp empty rect and the

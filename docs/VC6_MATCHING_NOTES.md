@@ -2051,3 +2051,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 
 ## Index loop versus pointer walk (Scout806)
 - `for (int i = 0; i < count; i++) p[i] = f(p[i])` is strength-reduced to a biased pointer and down-counter initialised after the `jle` guard, and leaves a callee-saved register free for a longer-lived variable. A pointer walk with its pointer set before `for (i = count; i > 0; i--)` keeps the init before the guard and spills it.
+
+## YR twin adoption (Scout803)
+- Reading a member through a nested struct member (`a.b[i]`) instead of a plain member reverses the add operand order (0x630B70).
+- A vector-constructor static array needs `@ref ??_H@YGXPAXIHP6EX0@Z@Z=0040aed0` plus a comment-only emission row for the element constructor (0x4B25E0); a function-local static with an empty destructor needs its `_$E` row (0x66A280).
+- ra2-decomp's YRpp property reads (PositionCoord) map to our inline accessors such as Position_Coord_004f3f40(), which produce the visible CoordStruct temp.

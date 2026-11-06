@@ -13,9 +13,9 @@ void RadarClass::Unknown_00631E40()
         delete unknown_121c;
         unknown_121c = 0;
     }
-    if (unknown_1238.unknown_00) {
-        delete[] unknown_1238.unknown_00;
-        unknown_1238.unknown_00 = 0;
+    if (BackgroundColors) {
+        delete[] BackgroundColors;
+        BackgroundColors = 0;
     }
     if (unknown_1254) {
         delete unknown_1254;

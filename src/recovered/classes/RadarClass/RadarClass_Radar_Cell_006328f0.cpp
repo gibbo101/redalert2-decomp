@@ -9,7 +9,7 @@ void RadarClass::Unknown_006328F0(Cell const &cell)
 {
     if (unknown_1218 != 0) {
         Rect r1 = Unknown_00631400(cell);
-        r1 = Intersect(r1, Rect(0, 0, unknown_1238.unknown_04, unknown_1238.unknown_08));
+        r1 = Intersect(r1, Rect(0, 0, RadarCellWidth, RadarCellHeight));
         int swidth = unknown_1218->Get_Width();
         int sheight = unknown_1218->Get_Height();
         if (r1.Is_Valid()) {

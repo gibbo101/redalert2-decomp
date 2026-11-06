@@ -27,12 +27,12 @@ void RadarClass::Unknown_00631250(Rect const &cell_rect, Rect const &update_rect
                 int idx = mrect.X + mrect.Y * cell_rect.Width;
                 iter->Unknown_004712c0(&low, &high);
                 if (origx == update_rect.X - 1) {
-                    unknown_1238.unknown_00[idx] = high;
+                    BackgroundColors[idx] = high;
                 } else if (origx == update_rect.Width + update_rect.X - 1) {
-                    unknown_1238.unknown_00[idx] = low;
+                    BackgroundColors[idx] = low;
                 } else {
-                    unknown_1238.unknown_00[idx] = low;
-                    unknown_1238.unknown_00[idx + 1] = high;
+                    BackgroundColors[idx] = low;
+                    BackgroundColors[idx + 1] = high;
                 }
             }
         }

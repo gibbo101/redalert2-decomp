@@ -179,7 +179,11 @@ public:
     RadarClass();                                       // 0x0062EDE0
     // Restore-in-place form: the display restored, the radar's lists rebuilt
     // empty (inlined into SidebarClass(NoInitClass const &) 0x0067B7B0).
+#ifdef RA2_RADAR_BACKGROUND_MEMBERS
+    RadarClass(NoInitClass const &noinit) : DisplayClass(noinit), unknown_14fc(0)
+#else
     RadarClass(NoInitClass const &noinit) : DisplayClass(noinit), unknown_1238(noinit), unknown_14fc(0)
+#endif
     {
         unknown_14bc.Unknown_00405BF0();
     }
@@ -288,7 +292,14 @@ public:
     DynamicVectorClass<Cell> unknown_1220;        // +0x1220
     // Forgets the cells waiting for a radar redraw (inline in Read_Scenario_INI).
     void Clear_Redraw_Cells() { unknown_1220.Clear(); }
+#ifdef RA2_RADAR_BACKGROUND_MEMBERS
+    // TibSun names; Compute_Background 0x00630B70 reads them as plain members.
+    RGBClass *BackgroundColors;                         // +0x1238 the background colours, two per cell (deleted by 0x00631E40)
+    int RadarCellWidth;                                 // +0x123C
+    int RadarCellHeight;                                // +0x1240
+#else
     UnknownRadar1238 unknown_1238;                      // +0x1238 (three values)
+#endif
     Rect unknown_1244;                                  // +0x1244 the radar cells the last background update changed (TibSun CellRedrawRect)
     HashTableClass<RadarTrackingStruct, TechnoClass *> *unknown_1254;  // +0x1254 tracking table
     DynamicVectorClass<Point2D> unknown_1258;           // +0x1258 (growth step 500)

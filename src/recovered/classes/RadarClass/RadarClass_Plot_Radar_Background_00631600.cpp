@@ -17,23 +17,23 @@ void RadarClass::Unknown_00631600()
         if (Unknown_0055A660(cell, true)) {
             Rect update_rect = Unknown_00631400(cell);
             int x = update_rect.X;
-            Rect cellgrid(0, 0, unknown_1238.unknown_04, unknown_1238.unknown_08);
+            Rect cellgrid(0, 0, RadarCellWidth, RadarCellHeight);
             update_rect = Intersect(update_rect, cellgrid);
             if (update_rect.Is_Valid()) {
                 RGBClass low(0, 0, 0);
                 RGBClass high(0, 0, 0);
                 CellClass *cptr = &Map[cell];
-                int idx = update_rect.X + update_rect.Y * unknown_1238.unknown_04;
+                int idx = update_rect.X + update_rect.Y * RadarCellWidth;
                 cptr->Unknown_004712c0(&low, &high);
                 if (x == 0 && update_rect.Width == 1) {
-                    unknown_1238.unknown_00[idx + 1] = high;
+                    BackgroundColors[idx + 1] = high;
                 } else if (update_rect.Width == 1) {
-                    unknown_1238.unknown_00[idx] = low;
+                    BackgroundColors[idx] = low;
                 } else {
-                    unknown_1238.unknown_00[idx] = low;
-                    unknown_1238.unknown_00[idx + 1] = high;
+                    BackgroundColors[idx] = low;
+                    BackgroundColors[idx + 1] = high;
                 }
-                Rect radarcellrect(0, 0, unknown_1238.unknown_04, unknown_1238.unknown_08);
+                Rect radarcellrect(0, 0, RadarCellWidth, RadarCellHeight);
                 Rect rr = Unknown_00630B70(radarcellrect, update_rect, false);
                 r = Union(r, rr);
             }
