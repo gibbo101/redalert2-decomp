@@ -33,8 +33,8 @@ void __fastcall Set_Player_Slot_005c8cc0(int slot, NodeNameType *player);
 void __fastcall Seat_First_Player_005c8cd0(int slot);
 // @ref ?Seat_First_Player_005c8cd0@@YIXH@Z=005c8cd0
 // Applies the host's public game options (TibSun DecodePubGameopt; 0x005C3FF0).
-void __fastcall Decode_Pub_Gameopt_005c3ff0(char const *options, char const *name);
-// @ref ?Decode_Pub_Gameopt_005c3ff0@@YIXPBD0@Z=005c3ff0
+bool __fastcall Decode_Pub_Gameopt_005c3ff0(char const *options, char const *name);
+// @ref ?Decode_Pub_Gameopt_005c3ff0@@YI_NPBD0@Z=005c3ff0
 // Enables the start control and clears the guests' ready flags (0x005C9700).
 void Unknown_Enable_Start_005c9700();
 // @ref ?Unknown_Enable_Start_005c9700@@YAXXZ=005c9700

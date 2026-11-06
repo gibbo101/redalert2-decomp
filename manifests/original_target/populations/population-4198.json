@@ -4,8 +4,8 @@
     "id": "population-4198",
     "inventory_sha256": "306e112bef3fac042712256d4d3afaed4243a54693993cae9c8f97f77228dd0b",
     "gaps_sha256": "811079cfdc960679047d708a2dbb17d3567141f9e2e3120d676e4cfdc0b71d8a",
-    "historical_population_sha256": "8fecfa40565c6e8effccbe358886d9911c0b90097c01431a438457450ee91928",
-    "historical_acceptance_sha256": "5ff264038cec82aab905b0219aa08c0622abda05e430b8e985036acdacb17a4a"
+    "historical_population_sha256": "616496d923541c5914598c87cbb5feaca5aecb3b2f179f233acbaecd5cd506d3",
+    "historical_acceptance_sha256": "9ff58814a3564bece8013d410a94ff90616bc032fcc2728ca58dd5673f5882a1"
   },
   "references": {
     "__real@8@40078000000000000000": 7972608,
@@ -503,7 +503,7 @@
     "?unknown_session_a3f616@@3_NA": 10745366,
     "?unknown_session_a40d04@@3_NA": 10751236,
     "?Set_Player_Slot_005c8cc0@@YIXHPAUNodeNameType@@@Z": 6065344,
-    "?Decode_Pub_Gameopt_005c3ff0@@YIXPBD0@Z": 6045680,
+    "?Decode_Pub_Gameopt_005c3ff0@@YI_NPBD0@Z": 6045680,
     "?Unknown_Enable_Start_005c9700@@YAXXZ": 6067968,
     "?Unknown_Release_Slot_005c91c0@@YIXAAVIPXAddressClass@@@Z": 6066624,
     "??_C@_0BC@NDCC@TXT_OBSERVER_FULL?$AA@": 8285404,
@@ -10093,7 +10093,15 @@
     "?Save_List_Selection_005c5ff0@@YIXPAUHWND__@@PAV?$WolDictionary@VWideString@@_N@@@Z": 6053872,
     "??0CoordStruct@@QAE@ABVCell@@H@Z": 6417024,
     "?Unload_Image_0068cb30@UnknownBitmapWriter@@QAEXPBD@Z": 6867760,
-    "?Wide_To_7_Bit@@YI?AVWstring@@ABVWideString@@@Z": 7804368
+    "?Wide_To_7_Bit@@YI?AVWstring@@ABVWideString@@@Z": 7804368,
+    "??0CoordStruct@@QAE@XZ": 4924896,
+    "__real@4@4003f000000000000000": 8030272,
+    "?unknown_a402d4@@3HA": 10748628,
+    "?unknown_a402cc@@3IA": 10748620,
+    "__real@4@40068c00000000000000": 8030200,
+    "__real@4@4005d800000000000000": 8030196,
+    "_?dir@?4??Edge_Scroll_00669EC0@ScrollClass@@QAEXABUPoint2D@@@Z@4UUnknownFacingDir@@A": 11235488,
+    "_?direction@?4??Edge_Scroll_00669EC0@ScrollClass@@QAEXABUPoint2D@@@Z@4HA": 11235436
   },
   "regions": [
     {
@@ -23004,7 +23012,7 @@
         {
           "offset": 3150,
           "kind": 20,
-          "symbol": "?Decode_Pub_Gameopt_005c3ff0@@YIXPBD0@Z",
+          "symbol": "?Decode_Pub_Gameopt_005c3ff0@@YI_NPBD0@Z",
           "target": 6045680,
           "addend": 0,
           "resolved": 11006
@@ -25338,7 +25346,7 @@
           "resolved": 4294943849
         }
       ],
-      "source_sha256": "9655ab295390d1135ef0e0f1f5f0a860e02cf39e7b3e981ca3be4729257f6129",
+      "source_sha256": "66a90008329d5da670096034f1632cc23f4af7000a0afc68768716d7c31e10a2",
       "source": "src/recovered/netdlg2/Get_Join_Responses_005c08a0.cpp",
       "population": "population-4198",
       "padding_sha256": "182003d5c37dc5253d84cc5156ca9f93aab75e72e395d157748de67cc20f4f76",
