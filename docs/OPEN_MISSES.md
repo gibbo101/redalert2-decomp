@@ -2069,3 +2069,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout786 (2026-11-05, closed; 0 B; NOTES, cj.py, bs.py, keep/ in build/class-work/Scout786/; Scout788 continues)
 - Static 0x5F2B50: 86.15, loose 96.36, shape 97.67 (keep/st_hto_8615.cpp, overlay keep/r5de660v.cpp). One block left, 0x233-0x2A4, 24 diff lines: target `mov eax,bottom; mov ecx,right; inc eax; inc ecx`, ours lea. Compare hole row 0x5F05AD inside 0x5F0320. Is_Listed_Kind_5e8590's guard needs a check; 0x497's dead proc lookup accounts for visible Find bytes, flagged.
 - ScrollBar 67.42: target 7 slots vs our 6; parent_record's register copy (`lea ebp,[edx+4]; mov [0x8C],ebp`, ebp live to 0x58F) looks like the missing piece. ComboBox and ListBox have no drafts.
+
+## Scout788 (2026-11-05, closed; 0 B; NOTES and keep/ in build/class-work/Scout788/; Scout789 continues ComboBox)
+- ComboBox 0x5F4BA0: 56.53, loose 65.25, shape 85.77 (keep/cb6_5653.cpp, overlay keep/hc; cs.sh, m.sh, sb.py, ord.py). Open: switch tail after 0x14E, globals esi=message, edi=result, frame order, 0x600410 call in Remove's temp dtor. Needs @ref for 0x00A7343C, binding for 0x6FA0C0.
+- Static 86.15: the fault is the width/height pair: H=ecx, W=eax in every state, target wants H=eax, W=ecx; needs a new idea. ScrollBar 67.42: [0x8C]=ebp stores the zero web after GetParent. ListBox not reached.

@@ -1961,3 +1961,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - After a `Rect at = screen` struct copy, a field read through `at.Height` enregisters and drops its store, while a never-referenced field keeps its store.
 - `at.Y += ...; at.Height = height;` keeps height live, so the at.Y load takes edx.
 - Removing an explicit `ValidateRect; break` from an arm lets the tail copy fix that block's scratch register.
+
+## Return registers and switch tails (Scout788)
+- `mov eax,edi; pop...` at every return means `result = x; return result;`: conditional returns jump to one final block (46 to 56).
+- Moving a large case last can leave its layout position unchanged while moving inline decisions. The after-switch tail is pulled up with its loop and stays attached to one case.
+- A bool set true and only conditionally cleared gives the eviction reload `mov bl,[slot]`; a read-only copy folds.
+- Register choice in a short block can be two things: a scratch cursor for temporaries and separate colouring for named values. A lab statement rotates only the first.
