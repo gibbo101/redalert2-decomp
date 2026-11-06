@@ -1,3 +1,6 @@
+#define RA2_COORD_TPOINT3D
+#define RA2_COORD_CELL_BASE_INIT
+#define RA2_COORD_FROM_CELL_INLINE
 #define RA2_SCENARIO_CLEAR_MAP23
 // Header-static dynamic initializers of the unit at 0x0065B2C0:  the
 // shared/unknown_geometry.hpp constants and unknown_static_rect.hpp
