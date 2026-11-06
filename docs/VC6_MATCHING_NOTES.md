@@ -2011,3 +2011,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A case arm last in source supplies pending sites to earlier arms: paint last did with 2-4 sites what paint first needed 22 Nops for.
 - `while (n) { if (w <= limit) break; ...; }` inside `if (n)` keeps a single bottom `test; jne`.
 - Colour flips can come from register-count or graph effects, not weights: 100 extra reads were flat, dropping one named local flipped.
+
+## Direct-member offsets and bound Unions (Scout795)
+- `Point2D(x, y) - Point2D(radar.X, radar.Y)` with direct members gives X through a CSE'd `lea` and Y through `[this+off]`; `pixel -= r.Top_Left()` routes Y through the base pointer.
+- A nested Union's sum tie flips when the inner result is bound to `T const &`; a by-value local adds copies and loses.
+- An X-offset read through a named ref folds into the base web; a Y or Z read adds one web ref.
+- First-attempt rows can hide wrong operator shapes: 73.96 to exact in a few variants.

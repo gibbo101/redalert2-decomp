@@ -2095,3 +2095,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 
 ## Scout794 (2026-11-05, closed; 0 B; NOTES and tools in build/class-work/Scout794/; Scout796 continues)
 - ComboBox 0x5F4BA0: 74.37, shape 95.16, 1803/1884, frame right, all direct calls in order (keep/fin_7437.cpp). 0x4BE import web, ??_G 0x601430 and the neg forms are closed. Open: global colours (target data=ebx, result=edi, zero web in edi at paint head, result evicted across paint, data reload into esi at 0x666) and window load eax vs ecx at 0xA55, 0xED1. If exact: Is_Add_Error is invented; UnknownComboItem duplicates UnknownNode_006003d0.
+
+## Scout795 (2026-11-05, closed; 2,599 B: Render_Radar 0x633210 (codex3 draft); NOTES and w/ in build/class-work/Scout795/)
+- OWNER DECISION: `Rect const &inner = Union(old, unknown_1208);` stays, flagged: one reference to a returned const temporary, reproducing sum registers at +0x91F (by-value 91.71). Function name stays Unknown_00633210 until a rename.
+- Draw_Trail 0x4AE9C0 90.75, shape 99.38, 800/800 (w/t2.cpp, overlay ht/): only the DZ tail. PlaceVeins 0x47AD00 78.39, this/dir swap. Bounce 0x4370E0 99.55: needs one more `position` reference that shows no bytes. Place_Tiberium 98.91. Not reached: Compute_Background 0x630B70, Tactical 0x6A7350, Process_Receive 0x6265C0, Diplomacy 0x6340F0, Radar 0x634670.
