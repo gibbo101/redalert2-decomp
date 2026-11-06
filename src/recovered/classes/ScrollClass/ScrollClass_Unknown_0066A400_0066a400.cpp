@@ -18,7 +18,7 @@
 // @ref __imp__SetCapture@4=0079a3f0
 // @ref __imp__ReleaseCapture@0=0079a3e8
 // @ref ?Planning_Left_Down_00617340@@YG_NHH@Z=00617340
-// @ref ?Planning_Left_Up_00617680@@YG_NHH@Z=00617680
+// @ref ?Planning_Left_Up_00617680@@YG_NUPoint2D@@@Z=00617680
 // @ref ?Planning_Mouse_Down@@YGXHH@Z=00617860
 // @ref ?Planning_Mouse_Up@@YGXHH@Z=006178a0
 // @ref ?Unknown_00669650@ScrollClass@@QAE_NABUPoint2D@@AAVCell@@AAUCoordStruct@@AAPAVObjectClass@@AA_N4@Z=00669650
@@ -74,7 +74,7 @@ void ScrollClass::Unknown_0066A400(HWND window, unsigned &message, unsigned &wpa
         long position = lparam;
         xy.X = ((short *)&position)[0] - unknown_rect_839630.X;
         xy.Y = ((short *)&position)[1] - unknown_rect_839630.Y;
-        if (Planning_Left_Up_00617680(xy.X, xy.Y)) {
+        if (Planning_Left_Up_00617680(xy)) {
             break;
         }
         if (!unknown_4f2a) {
