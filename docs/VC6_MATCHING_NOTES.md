@@ -1927,3 +1927,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Scratch registers roughly follow a cursor across blocks: a block's first register depends on the previous block in final layout order, not source order. `if (!x) { ...; return; }` first can fix a block head.
 - `else { Cell what ... }` lets a local share the first slot with earlier sibling arms.
 - In tube blocks the count is read after the coordinate is built, and `CoordStruct(exit, 0)` in place keeps the Z immediate.
+
+## Eviction forms and fild slots (Scout782)
+- A one-call inline wrapper over a whole body keeps a pending callee out of line at both sites of an inlined member (70.80 to exact).
+- Named `int` or `short` flags get the eviction form: a register at the arms and an edge reload. bool stays in memory in the same function.
+- `(green)|(blue)` in that order evaluates blue first; `(blue)|(green)` or `|=` spills differently.
+- A fild temp sits at +4 of an 8-byte double slot, explaining a one-dword frame hole next to it. A 12-byte temp can overlay 4-byte class-object slots.

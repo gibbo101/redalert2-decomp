@@ -396,7 +396,11 @@ public:
     int ArrayIndex;                             // +0xB90 index in UnitTypes (TechnoClass slot 55)
     char unknown_b94[0xBA4 - 0xB94];
     bool Passive; // +0xBA4, owner-approved UnitType field
+#ifdef RA2_CELL_GOODIE_CHECK
+    bool CrateGoodie;                           // +0xBA5 (as shared/unit_type.hpp)
+#else
     char unknown_ba5;
+#endif
     bool Harvester;                             // +0xBA6 (as shared/unit_type.hpp)
     char unknown_ba7[0xBAA - 0xBA7];
     bool DeployToFire;                          // +0xBAA
@@ -433,4 +437,7 @@ extern DynamicVectorClass<UnitClass *> Units;
 // Movement zones by MovementZone (0x007A1200; hypothesis).
 extern int unknown_zone_table_7a1200[];
 
+#ifdef RA2_CELL_GOODIE_CHECK
+extern DynamicVectorClass<UnitTypeClass *> UnitTypes;   // 0x00A35D48 (as shared/unit_type.hpp)
+#endif
 #endif

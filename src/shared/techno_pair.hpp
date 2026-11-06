@@ -24,6 +24,10 @@ public:
     void Unknown_007134E0(bool flag);   // 0x007134E0 (VeteranLevel 0 reinforcements, reinf.cpp; TS Set_Dumbass)
 #endif
     bool unknown_7133a0() const;        // 0x007133A0 (TS Is_Veteran: 1 <= Experience < 2)
+#ifdef RA2_CELL_GOODIE_CHECK
+    bool unknown_7133d0() const;        // 0x007133D0 (CellClass::Goodie_Check; hypothesis)
+    void unknown_713510(bool value);    // 0x00713510 (CellClass::Goodie_Check; hypothesis)
+#endif
     bool unknown_713400() const;        // 0x00713400 (TS Is_Dumbass: Experience < 0; TechnoClass slot 250 draws frame 18)
 #ifdef RA2_VETERANCY_UNIT
     // Declared only in the veteran unit (new declarations here reach most of the tree).

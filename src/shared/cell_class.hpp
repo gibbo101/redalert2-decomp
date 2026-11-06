@@ -130,6 +130,17 @@ struct UnknownCell68 {
     int unknown_0c;
 };
 
+#ifdef RA2_CELL_GOODIE_CHECK
+#include "shared/dir_type.hpp"
+class FootClass;
+// The coordinate of a cell's centre at height 0, built in place (CellClass::Ground_Coord).
+struct UnknownCellCoord : CoordStruct {
+    UnknownCellCoord(Cell cell) : CoordStruct(cell.X * 256 + 128, cell.Y * 256 + 128, 0) {}
+};
+// TibSun's post-increment for enums (Goodie_Check's gas loop).
+template<class T> inline T operator ++(T & a, int) { T aa = a; a = (T)((int)a + (int)1); return(aa); }
+#endif
+
 class CellClass : public AbstractClass {
 public:
 #ifdef RA2_SHIP_CELL_ACCESSORS
@@ -167,6 +178,10 @@ public:
 
     // Tile kinds (IsoTileIndex ranges).
     bool unknown_476cc0(ObjectClass *object);   // 0x00476CC0 (the object may stand here; MechLocomotionClass 0x00592F70)
+#ifdef RA2_CELL_GOODIE_CHECK
+    // Westwood's Cell_Coord: the centre at the height of its middle (inline; Goodie_Check).
+    CoordStruct Ground_Coord() const { UnknownCellCoord coord(Fetch_CellID()); coord.Z = unknown_4706c0(Point2D(128, 128)); return coord; }
+#endif
     bool unknown_47b590() const;                // 0x0047B590 (no tile: 0 or 0xFFFF)
     bool unknown_47b5b0() const;                // 0x0047B5B0
     bool unknown_47b5e0() const;                // 0x0047B5E0 (Westwood's Is_Tile_Cliff: a cliff, waterfall, ramp, cave or bridge tile)
@@ -295,6 +310,11 @@ public:
     bool Set_unknown_e0(void *value);           // 0x0047CF30
 
     static Cell __fastcall Adjacent_Cell(Cell const &cell, int facing);   // 0x0047CFC0
+#ifdef RA2_CELL_GOODIE_CHECK
+    // TibSun's FacingType form, over the const wrapper: the extra inline level
+    // is what leaves the static 0x0047CFC0 out of line in Goodie_Check.
+    CellClass const &Adjacent_Cell(FacingType facing) { return ((CellClass const *)this)->Adjacent_Cell((unsigned)facing); }
+#endif
     CellClass &Adjacent_Cell(unsigned facing);  // 0x00476AC0 (this cell for facings past 7)
     // The const form (as in Westwood's CELL.H: casts away const and calls the above).
     CellClass const &Adjacent_Cell(unsigned facing) const { return ((CellClass *)this)->Adjacent_Cell(facing); }

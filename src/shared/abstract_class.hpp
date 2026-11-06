@@ -81,6 +81,11 @@ public:
         unsigned char IsObject : 1;     // set by ObjectClass's constructor
         unsigned char IsFoot : 1;       // set by FootClass's constructor
     } AbstractFlags;                    // +0x14
+#ifdef RA2_CELL_GOODIE_CHECK
+    // TibSun's inline flag tests (CellClass::Goodie_Check 0x00476CC0).
+    bool Is_Techno() const { bool is_techno; if (this != 0) is_techno = AbstractFlags.IsTechno; return is_techno; }
+    bool Is_Foot() const { bool is_foot; if (this != 0) is_foot = AbstractFlags.IsFoot; return is_foot; }
+#endif
 #else
     // The same bits without the struct type, for a unit that never reads the
     // flags and holds a row whose register tie follows the count of struct

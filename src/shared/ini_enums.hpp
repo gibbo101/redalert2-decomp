@@ -35,7 +35,16 @@ CategoryType __fastcall Category_From_Name(char const *name);       // 0x00468EE
 // Crate powerups Money, Unit, HealBase, Cloak, ... Pod (names 0x0079DE54;
 // CCINIClass::Get_CrateType 0x0046AE30, RulesClass's [CrateRules]).
 enum CrateType {
+#ifdef RA2_CELL_GOODIE_CHECK
+    // The powerup order of CellClass::Goodie_Check 0x00476CC0 (CrateNames).
+    CRATE_MONEY,
+    CRATE_UNIT, CRATE_HEAL_BASE, CRATE_CLOAK, CRATE_EXPLOSION, CRATE_NAPALM, CRATE_SQUAD, CRATE_DARKNESS,
+    CRATE_REVEAL, CRATE_ARMOR, CRATE_SPEED, CRATE_FIREPOWER, CRATE_ICBM, CRATE_INVULN, CRATE_VETERAN,
+    CRATE_ION_STORM, CRATE_GAS, CRATE_TIBERIUM, CRATE_POD,
+    CRATE_COUNT, CRATE_FIRST = 0
+#else
     CRATE_MONEY
+#endif
 };
 extern char const *CrateNames[];                            // 0x0079DE54
 

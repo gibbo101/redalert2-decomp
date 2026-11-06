@@ -2049,3 +2049,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout781 (2026-11-05, closed; 0 B; NOTES and keep/ in build/class-work/Scout781/; Scout783 continues)
 - MechLocomotion 0x5919A0 (5,575 B): 88.10, loose 90.99, shape 99.52, 1664/1664 (keep/p1_8810.cpp, w/mdef5.cpp). Left: tail store of 0x57A, adjacent sites 0xE22, 0x11FA, 0x1539, frame low group 4 too low. Replace `goto done` with a structured form before delivery. Next: Walk 0x71E220 55.78 should get the same tail and tube changes.
 - Corrections: Bullet 0x45F710's 80.11 was an ms.py metric, diff_candidate 43.13; IsoTile's 81.25 is Preview_Tile 0x52E390, Draw_Tile 0x52C230 is 28.53. Both drafts need overlays rebased.
+
+## Scout782 (2026-11-05, closed; 423 B: Unload_Image 0x68CB30; NOTES and keep/ in build/class-work/Scout782/; Scout784 moves to OwnerDraw holes)
+- Assign_Destination 0x7053F0: 79.36, loose 89.09, shape 99.86 (keep/ad_w7n_7936.cpp, overlay keep/h_ad), box spent. Left: frame 0x84 vs 0x80 (keep/ad_w7u_lab8480.cpp reaches 0x80 at 84.80), `useplan` in al (int or short gives the form, bool stays in memory: sharpest lead), edi reload before Plan_Route. Still to replace: RA2_COM_PTR_CREATE_OUT, extern 0x832530. Slot 260 R spec unwritten. `bool const &ns=needsswap;` needs a ruling if it lands: its real cause is unknown.
+- Write 0x68C040 84.24 (keep/wr_8424.cpp). 0x5C3FF0 is Receive_Game_Options, 64.86, two zero-byte handbacks, stop rule applies.
