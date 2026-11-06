@@ -2048,3 +2048,6 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 
 ## Frame alignment switch (Scout802, lab)
 - A function that would get `and esp,-8` (double locals) drops to plain `sub esp` when one local aggregate with 4 or more scalar members (int[4], struct of four ints, short[4]) carries about 13 references. 13 references over only two members, two Point2D locals, a three-field CoordStruct (even at 19 references), four named scalars or address-taken scalars do not flip it; removing a call elsewhere can. When the target has no alignment, look for a real small array or 4-member struct local.
+
+## Index loop versus pointer walk (Scout806)
+- `for (int i = 0; i < count; i++) p[i] = f(p[i])` is strength-reduced to a biased pointer and down-counter initialised after the `jle` guard, and leaves a callee-saved register free for a longer-lived variable. A pointer walk with its pointer set before `for (i = count; i > 0; i--)` keeps the init before the guard and spills it.
