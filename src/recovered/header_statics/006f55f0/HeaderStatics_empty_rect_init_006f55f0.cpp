@@ -3,6 +3,8 @@
 // drafts of this plan are emitted by these includes.
 // The group-select functions (0x006F5F00/0x006F60D0) need DisplayClass::Unknown_0049E3B0 from map_view.hpp.
 #define RA2_UICMNDS_GROUP_SELECT
+// Unknown_006F85E0 (0x006F85E0) expands DynamicVectorClass<int> construction.
+#define VECTOR_IMPLEMENT_DYNAMIC_CONSTRUCTOR
 #include "shared/shape_file.hpp"
 #include "shared/unknown_geometry.hpp"
 // @ref ?unknown_math_4ba520@@YANN@Z=004ba520

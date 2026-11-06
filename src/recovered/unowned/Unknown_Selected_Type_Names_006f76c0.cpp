@@ -3,7 +3,6 @@
 // in order of first appearance, in a new list. The name search is the inline strcmp loop of
 // 0x006F6C90.
 // @ref ?unknown_objects_a40c60@@3V?$DynamicVectorClass@PAVObjectClass@@@@A=00a40c60
-// @ref ?Add@?$DynamicVectorClass@PBD@@QAE_NABQBD@Z=004137b0
 #include "shared/uicmnds.hpp"
 #include "shared/crt_string.hpp"
 #include "shared/object_type.hpp"
