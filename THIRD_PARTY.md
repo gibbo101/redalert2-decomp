@@ -91,7 +91,7 @@ inspection tools; VC6 and CrossOver are legitimate user-supplied local build too
   `src/` as candidates, adapted to our shared headers; an adopted file keeps the source's SPDX and copyright lines
   (including the EA line where present) and the commit subject says "from TibSun <file>". Acceptance is unchanged.
 
-- **ra2-decomp** (`gibbo101/ra2-decomp` commit `4453ab030c86d8586992bfa7425ef7f39e3fb8d4`, 2026-11-06): a matching
+- **ra2-decomp** (`gibbo101/ra2-decomp` commit `ca9b8ad80205255e483496ec3c85ab4886589a48`, 2026-11-06; first pinned at 4453ab030): a matching
   decompilation of Yuri's Revenge gamemd.exe 1.001 built with the same VC6 SP3. Game source in `src/` and `include/`
   GPL-3.0-or-later, Copyright 2026 ra2-decomp contributors, with Electronic Arts' section 7 terms on files carrying an
   EA copyright line (COPYING.md); tooling and data MIT. The maintainer gave the user explicit permission to reuse it.

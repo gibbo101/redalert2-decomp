@@ -4,8 +4,8 @@
     "id": "population-4210",
     "inventory_sha256": "f065a6aee65e6969c18b04404ae63bc07aa1b6268162666cbe8600b272379aab",
     "gaps_sha256": "cc65d95c5a0960f53629bd3b7d16f1c2cdb472ebac6f0d0e316da5906d204a7c",
-    "historical_population_sha256": "02db010b695b9bfaaa7992cb420b85891695ed3709b7fa2961eab281bd207bd5",
-    "historical_acceptance_sha256": "27c79f697fcca92312cf5a05d49c6c32e6caed40826552eb4d371edc8743643e"
+    "historical_population_sha256": "9b1214a9db7fba8d56eb33a059f9aa87d97aea176d7bbeb38251be5bb73eb6b3",
+    "historical_acceptance_sha256": "08163c8dbcee2e6c293524ed5fbb6c0481c865d4760123774c7dd88d8c066fae"
   },
   "references": {
     "??_E?$DynamicVectorClass@VCell@@@@UAEPAXI@Z": 4379616,
@@ -8428,7 +8428,7 @@
     "??0UnknownMapGenerationPath@@QAE@ABUUnknownMapGenerationPoint@@000@Z": 5813056,
     "??0UnknownMapGenerationPath@@QAE@XZ": 5813200,
     "??1UnknownMapGenerationPath@@QAE@XZ": 5813216,
-    "?FUN_0058b400@seed_0058b400@@YAXXZ": 5813248,
+    "_$E117": 5813248,
     "?Destroy_Map_Paths_0058d970@@": 5822832,
     "?Remove_Min@UnknownVeinHeap@@": 5824976,
     "?Sift_Down@UnknownVeinHeap@@QAEXH@Z": 5828752,
@@ -26783,7 +26783,12 @@
     "?Unknown_004E7070@UnknownSidebarHouse@@QAE_NPAVTechnoClass@@PAVBuildingClass@@@Z": 5140592,
     "?Unknown_004EB620@UnknownSidebarHouse@@QAEXH_NH@Z": 5158432,
     "?Unknown_004B9780@UnknownFactory@@QAEHXZ": 4953984,
-    "?Unknown_004EB770@UnknownSidebarHouse@@QAE_NH_NH@Z": 5158768
+    "?Unknown_004EB770@UnknownSidebarHouse@@QAE_NH_NH@Z": 5158768,
+    "_$E114": 5813280,
+    "_$E115": 5822832,
+    "??0CoordStruct@@QAE@XZ": 4924896,
+    "__real@4@40068c00000000000000": 8030200,
+    "__real@4@4005d800000000000000": 8030196
   },
   "regions": [
     {
@@ -27760,8 +27765,8 @@
     {
       "entry": 5813248,
       "method": "0058b400",
-      "symbol": "?FUN_0058b400@seed_0058b400@@YAXXZ",
-      "symbol_prefix": "?FUN_0058b400@seed_0058b400@@YAXXZ",
+      "symbol": "_$E117",
+      "symbol_prefix": "_$E117",
       "options": [
         "/O2",
         "/Ob2",
@@ -27777,7 +27782,7 @@
         {
           "offset": 1,
           "kind": 20,
-          "symbol": "?FUN_0058b420@seed_0058b400@@YAXXZ",
+          "symbol": "_$E114",
           "target": 5813280,
           "addend": 0,
           "resolved": 27
@@ -27785,7 +27790,7 @@
         {
           "offset": 6,
           "kind": 6,
-          "symbol": "?FUN_0058d970@seed_0058b400@@YAXXZ",
+          "symbol": "_$E115",
           "target": 5822832,
           "addend": 0,
           "resolved": 5822832
@@ -27793,13 +27798,13 @@
         {
           "offset": 11,
           "kind": 20,
-          "symbol": "?FUN_0078298a@seed_0058b400@@YAII@Z",
+          "symbol": "_atexit",
           "target": 7874954,
           "addend": 0,
           "resolved": 2061691
         }
       ],
-      "source_sha256": "825cda86cba231b0afbee82b08856174975a190e101e8662f2df74a0c1eb7305",
+      "source_sha256": "9518dfc02e41f4662072011f9499d5e55f6caaebfc26f7772e738bddffa4a868",
       "source": "src/recovered/0058b400.cpp",
       "population": "population-4210",
       "padding_sha256": "40f0d021fa824f3b40dc646f67479997734d273d9121690b6f042c512df3a838",
@@ -32476,7 +32481,7 @@
           "resolved": 2048947
         }
       ],
-      "source_sha256": "cdfa0148e4a10c90ae4dfa64a11e04bb5b0318b5dca3e6f9d34afefd4cd434a1",
+      "source_sha256": "fcc9baabc610520cc2e497efc7ec0e62b05658302088fc1ef66007f764fca1ff",
       "source": "src/recovered/unowned/Destroy_Map_Paths_0058d970.cpp",
       "population": "population-4210",
       "padding_sha256": "f56642978961c41b24911838d549a9957c25a0dee0914c9230b5f17a3567418b",
