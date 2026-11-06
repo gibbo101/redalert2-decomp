@@ -1933,3 +1933,18 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Named `int` or `short` flags get the eviction form: a register at the arms and an edge reload. bool stays in memory in the same function.
 - `(green)|(blue)` in that order evaluates blue first; `(blue)|(green)` or `|=` spills differently.
 - A fild temp sits at +4 of an 8-byte double slot, explaining a one-dword frame hole next to it. A 12-byte temp can overlay 4-byte class-object slots.
+
+## Depth refusals and slot maps (Scout783)
+- A function auto-inlined at depth 2 stays a call at depth 3: one real wrapper level kept a static out of line where root pressure never did.
+- fa.py with /FAs gives names per slot and vs.py gives variable to true slot with push depth removed: these found fixes on a 6.7 KB row. A top-level `coord` used by one arm plus a new local in the end block sets 12-B slot order; block-scoped `{ for (int i...) }` loops swap two 4-B slots.
+- `Point2D delta` plus `double x, y` in a 2D distance puts dx and dy into a 12-B slot.
+- `(b + a) / 2` versus `(a + b) / 2` flips one site's add orientation and register web.
+
+## Dialog proc forms (Scout784)
+- A whole-struct copy keeping a dead field store (`RECT area = client;`) can change who wins a register. Dead `Rect at = screen` fields appear as a surviving width store.
+- An inline helper taking (parent, control) evaluates right to left.
+- `(unsigned int const &)x` keys use x's own home; `(unsigned int)x` makes a temp slot.
+- A helper-returned ternary as a call argument gives two tail-duplicated calls.
+- `int result = -1; if (...) result = ...; return result;` gives the shared tail with eax set first.
+- HIWORD's `(unsigned long)` cast gives `shr` with no `and`.
+- A zero constant web ends where a variable initialised to 0 coalesces with it; declaring it earlier turns `cmp x,ebp` forms back into `test`.
