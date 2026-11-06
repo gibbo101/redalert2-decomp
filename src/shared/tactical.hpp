@@ -124,6 +124,9 @@ public:
     int Cell_Shadow(Cell const &cell, bool fog);
     void Unknown_006AADD0(CellClass *cell);        // 0x006AADD0 (DisplayClass slot 37: a cell to redraw; hypothesis)
     void Draw_Rally_Points(bool inshroud);         // 0x006AAFD0 (TibSun name)
+#ifdef RA2_TACTICAL_CELL_PROJECT_GEOMETRY
+    void Debug_Draw_Occupier_Links(); // original 0x006AB810, thiscall/plain RET
+#endif
     void Draw_Waypoints(bool inshroud);            // 0x006AB360 (TibSun name)
 #ifdef RA2_TACTICAL_PLACEMENT
     bool Contains_Selectable_Buildings(Rect rect);                  // 0x006AA180
