@@ -1,3 +1,4 @@
+#define RA2_PLANNING_PICK_ROWS
 #define RA2_COORD_EQUAL_MEMBER
 // Header-static dynamic initializers of the unit at 0x006101B0 and its
 // list globals (EventClass, PlanningNodeClass, PlanningTokenClass, TechnoClass); the other drafts of this plan are emitted by this file.

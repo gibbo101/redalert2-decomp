@@ -205,8 +205,13 @@ PlanningNodeClass *__fastcall Planning_Find_Node(int house, int id, CoordStruct 
 // The drawn node at a coordinate (0x00616210).
 PlanningNodeClass *__stdcall Planning_Find_Drawn(CoordStruct coord);
 // The drawn / listed node whose grown marker contains a screen point (0x00616140, 0x00616070).
+#ifdef RA2_PLANNING_PICK_ROWS
+PlanningNodeClass *__stdcall Planning_Pick_Drawn(int x, int y);  // 0x00616140
+PlanningNodeClass *__stdcall Planning_Pick_Node(int x, int y);   // 0x00616070
+#else
 PlanningNodeClass *__stdcall Planning_Pick_Drawn(Point2D point);
 PlanningNodeClass *__stdcall Planning_Pick_Node(Point2D point);
+#endif
 // Classifies the selection for planning mode (0x00616B40).
 int Planning_Selection_Kind();
 // Marks a node queued and appends it to the queue list (0x00614650).
@@ -329,6 +334,24 @@ public:
     void Draw_Marker_Outline(int color);                      // 0x00612420
     ::Rect Outer_Rect() const;                                // 0x00612B90
     ::Rect Outer_Rect2() const;                               // 0x00612C30
+#ifdef RA2_PLANNING_PICK_ROWS
+    // The grown marker as the hit tests build it: same value as Outer_Rect(), but the pixel is
+    // named first. Only the pick rows use it, so Coord and Coord_Pixel stay out of line there
+    // and Planning_Centered_Rect expands (hypothesis, see the round's README).
+    ::Rect Hit_Marker() const
+    {
+        Point2D pixel = Pixel();
+        ::Rect rect;
+        rect = Planning_Centered_Rect(pixel, 8);
+        return rect;
+    }
+    ::Rect Hit_Rect() const
+    {
+        ::Rect rect = Hit_Marker();
+        Planning_Inflate(rect, 4);
+        return rect;
+    }
+#endif
     int Color();                                              // 0x006125D0
     void unknown_619870();                                    // 0x00619870
     void Fill_Marker_Colored();                               // 0x00619BD0
@@ -511,6 +534,7 @@ bool __fastcall Planning_Add_Order(TechnoClass *techno, EventClass *event);
 // Carries out a planning event (0x00614BA0).
 void __fastcall Planning_Execute(EventClass *event);
 
+#ifndef RA2_PLANNING_PICK_ROWS
 // The drawn node whose grown marker contains a screen point (0x00616140; only this
 // inline copy is source yet: the out-of-line row's budget is open).
 inline PlanningNodeClass *__stdcall Planning_Pick_Drawn(int x, int y)
@@ -525,6 +549,8 @@ inline PlanningNodeClass *__stdcall Planning_Pick_Drawn(int x, int y)
     }
     return 0;
 }
+
+#endif
 
 // The index of a node in a token's path (expanded inline; name hypothesis).
 inline int Token_Node_Index(PlanningTokenClass *token, PlanningNodeClass *node)

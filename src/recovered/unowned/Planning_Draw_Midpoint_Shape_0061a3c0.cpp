@@ -9,16 +9,6 @@
 
 class ConvertClass;
 struct ShapeFileStruct;
-struct MouseShapeHeader {
-    short unknown_00;
-    short Width;
-    short Height;
-    short FrameCount;
-};
-class MouseClass {
-public:
-    static MouseShapeHeader const *MouseShapes;
-};
 extern ConvertClass *unknown_drawer_8323c8;
 void __fastcall CC_Draw_Shape(Surface *surface, ConvertClass *drawer, ShapeFileStruct const *shape, int frame,
                               Point2D const &point, Rect const &window, int flags, int unknown8,

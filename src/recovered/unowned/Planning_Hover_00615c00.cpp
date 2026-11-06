@@ -5,6 +5,8 @@
 #include "shared/planning.hpp"
 #include "shared/mouse.hpp"
 
+inline void Planning_Set_a7678c(PlanningNodeClass *node) { unknown_node_a7678c = node; }
+
 void __fastcall Planning_Hover()
 {
     if (unknown_flag_a76770) {
@@ -23,7 +25,7 @@ void __fastcall Planning_Hover()
                 node = 0;
             }
         }
-        unknown_node_a7678c = node;
+        Planning_Set_a7678c(node);
         if (node != 0) {
             node->Dump();
         }

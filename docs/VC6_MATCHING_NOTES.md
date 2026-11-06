@@ -1886,3 +1886,7 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A dead zero-trip loop still counts as a this-key where a folded arm does not.
 - Inline expansion of a dtor at an early-return site can flip distant ties through its local reads: a confounder when reading orientation.
 - Scout775 hid.py TARGET LEN lists accepted rows under 200 B whose normalised stream sits inside a target.
+
+## Expression temp spills and byte arguments (Scout777)
+- `if (W(current) < W(next))` with named int copies of both arguments, loaded before either call, gives the temp spill `mov edx,eax ... mov [slot],edx ... mov edx,[slot]; cmp eax,edx` (85 to 99); a named weight local does not.
+- Passing a table int to an `unsigned char` param directly gives `mov dl,[table]`; a named int copy gives a dword load and `push eax`.
