@@ -195,6 +195,11 @@ struct UnknownPathEstimator {
     void Unknown_0042A590(int arg);
     // (0x0042A840).
     void Unknown_0042A840(unsigned subzone, int layer);
+#ifdef RA2_PATH_OPTIMIZE_MOVES
+    // Replaces wandering runs of a found path by straight lines where foot can walk them, then packs out
+    // the emptied moves (0x004290C0; TS Optimize_Moves).
+    void Unknown_004290C0(UnknownPathType *path, FootClass *foot);
+#endif
     // Straightens the path's corners where the diagonal is clear (0x00428AE0).
     void Unknown_00428AE0(UnknownPathType *path, FootClass *foot);
     // Replaces a corner of two legs from facings by a diagonal when it can; the facings consumed

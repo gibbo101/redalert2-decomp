@@ -1,3 +1,5 @@
+// Optimize_Moves 0x004290C0 is declared for this unit.
+#define RA2_PATH_OPTIMIZE_MOVES
 #define COM_PTR_IMPLEMENT_RELEASE
 // Unknown_00429B60 calls MapClass::Unknown_00567D20 (shared/map_view.hpp).
 #define MAP_VIEW_DECLARE_REGION_THREAT
