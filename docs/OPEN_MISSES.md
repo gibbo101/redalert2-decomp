@@ -2109,3 +2109,6 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 
 ## Scout798 (2026-11-06, closed; 0 B; NOTES, smap.py, dr.py, s20.py in build/class-work/Scout798/)
 - ComboBox 0x5F4BA0: resume from keep/m4_eq1820_tc.cpp (75.93, shape 96.25, 1820/1884), not Scout796's w6_7714, which has wrong semantics: T reassigns text_color in the fill arm (`text_color = data->item_colors_110[selected];`). Six lanes so far; parked. Open: T's data leaves ebx wherever a local wants the register and never returns on that path, with no edge reloads; ours reloads. Lab p275 79.37: a 2-use local after Window_Rect_In_Main_Client gives all of T's paint registers. By-value paint helper is closed (58-66).
+
+## Scout799 (2026-11-06, closed; 1,232 B: Draw_Overlays 0x6A7350; NOTES and w/ in build/class-work/Scout799/; delete pop_*.json before resuming)
+- Compute_Background 0x630B70 99.29: result web should outrank the `a` web. Radar 0x634670 97.35: house must rise above name_id/score_id. Draw_Trail 90.75: slot pack ydelta > offset > xdelta. Draw_Tiles(Rect) 0x6A7BA0 55.91. Draw_Pixel_Effects 86.26. Power Draw_It 0x61C8C0 89.69, read only. Still open: 0x669EC0 82.07, Draw_Radial_Indicators 0x6AC420 about 78.

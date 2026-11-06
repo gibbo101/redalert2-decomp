@@ -2033,3 +2033,8 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - A higher-scoring draft can have wrong semantics: a variable reassigned in one arm was missed by five lanes. Read each arm's register writes against the target before trusting a score.
 - Frame differences can be pure reference-count swaps.
 - A position scan should cover 2+ use labs just after a call; a 1-use lab at the same spot differs.
+
+## Member forms as spend (Scout799)
+- Member `a.Intersect(b)` versus free `Intersect(a,b)` is a natural budget spend: one or two sites flip a later site's inline to a call, all three overshoot.
+- Cell_Center (by-value Cell) under Coord_Snap has no ctor temp; Cell_Coord (const &) adds one plus frame and calls.
+- An unused bool result of an inlined Coord_To_Pixel lets its nested pure inline vanish, so identical sites expand differently.
