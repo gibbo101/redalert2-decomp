@@ -50,11 +50,15 @@ public:
     bool Add(HashString const &key, SchemeNode * const &value)
     {
         DynamicVectorClass<HashObject<HashString, SchemeNode *> > &bucket = Buckets[Hash(key) % BucketCount];
+        bool found = false;
         for (int index = bucket.Count() - 1; index >= 0; index--) {
             if (bucket[index].Key.operator==(key)) {
-                return false;
+                found = true;
+                break;
             }
         }
+        if (found)
+            return false;
         return bucket.Add(HashObject<HashString, SchemeNode *>(key, value));
     }
 
