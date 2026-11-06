@@ -13,6 +13,11 @@ void __fastcall Unknown_0062E5C0(UnknownFrameTiming *their, int index)
 {
     long frame;
     unsigned int delay;
+    unsigned int half_latency;
+    unsigned int half_response;
+    int frame_delay;
+    int behind;
+    int now;
 
     if (unknown_game_mode_a3d298 != 4) {
         unknown_a3fb84[index] = 0;
@@ -20,10 +25,19 @@ void __fastcall Unknown_0062E5C0(UnknownFrameTiming *their, int index)
     }
     frame = their[index].Frame;
     if (unknown_flag_a3fba8) {
-        delay = (unsigned int)their[index].unknown_10 / 2 - (int)(-60.0f / (float)((double)unknown_a3d568 / unknown_frame_send_rate_a3d564)) / 2 + unknown_a402dc / 2;
+        half_latency = unknown_a402dc / 2;
+        half_response = (unsigned int)their[index].unknown_10 / 2;
+        double ratio = (double)unknown_a3d568 / unknown_frame_send_rate_a3d564;
+        float rate = (float)ratio;
+        int frames = (int)(-60.0f / rate);
+        frame_delay = frames / 2;
+        delay = half_response - frame_delay + half_latency;
     } else {
         delay = unknown_ipx_manager_a40978.unknown_slot22(index) / 2;
     }
-    unknown_a3fb84[index] = ::Frame - delay * unknown_a6eb1c / 60 - frame;
-
+    now = ::Frame;
+    unsigned int scaled = delay * unknown_a6eb1c;
+    unsigned int ticks = scaled / 60;
+    behind = now - ticks - frame;
+    unknown_a3fb84[index] = behind;
 }

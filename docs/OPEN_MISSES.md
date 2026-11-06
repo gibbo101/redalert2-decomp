@@ -2102,3 +2102,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 
 ## Scout796 (2026-11-05, closed; 0 B; NOTES and tools in build/class-work/Scout796/; Scout798 continues)
 - ComboBox 0x5F4BA0: 77.14, shape 96.09, 1818/1884, frame right, global colours solved by TibSun's named `int x, y, w` before CreateWindowExA (keep/w6_7714.cpp). Lab 80.06. One open cause: T drops data from ebx at `if (!data->surface_10)` and reloads into eax at 0x405, esi at 0x4A4, 0x666, 0x7D7; ours keeps ebx with edge reloads. Untried: the paint tail as a real inline helper taking data by value, with returns replacing breaks.
+
+## Scout797 (2026-11-06, closed; 2,772 B: Diplomacy 0x6340F0, Process_Receive_Packet 0x6265C0; NOTES in build/class-work/Scout797/)
+- OWNER DECISION: Process_Receive's `i = 0; if (i < count) { ...; for (; i < count; ...` stays: a live guard visible in the bytes, not a steering guard. 0x62E5C0's named steps stay: ordinary arithmetic, no dead stores. Long1/Long2 are misnamed for Variable events; an event.hpp member moved Print_CRCs, so re-measure on any rename.
+- Compute_Background 0x630B70 99.29 (w/c0.cpp). Radar 0x634670 97.35 (w/z0.cpp). Tactical 0x6A7350: Scout689's 94.41 draft scores 46.22 on HEAD, needs a rebuild.

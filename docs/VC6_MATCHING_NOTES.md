@@ -2021,3 +2021,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 ## Position scans for colouring (Scout796)
 - A lab 2-use local inserted after every statement (233 positions, about 12 minutes, state signature) finds which arm controls a global colouring when weights are flat; it found a natural fix in one pass.
 - Named argument locals at a many-argument call can swap two global registers with no change in the arm's bytes; both locals were needed.
+
+## Cross-jumped arms and induction bias (Scout797)
+- A duplicated reachable else arm that gets cross-jumped still counts: it won a loop-hoisted register (82.63 to 98.70).
+- Zero-store order for flags follows reference counts; a `flag = true` after an inner if/else counts once and VC6 duplicates it into both arms.
+- Index-form entries bias the induction variable to the most-used field. `i = 0; if (i < count)` puts pointer inits after the guard and keeps the later count test, which `if (count > 0)` threads away.
+- A named local receiving `a - zero_ext(b)` evaluates b first; the same subtraction in a condition evaluates a first.
+- Direct struct members at distinct offsets let a store move past a load; pointer casts do not.
