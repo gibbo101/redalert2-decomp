@@ -1,3 +1,4 @@
+#define RA2_PLANNING_COMMIT_PLANS
 #define RA2_PLANNING_PICK_ROWS
 #define RA2_COORD_EQUAL_MEMBER
 // Header-static dynamic initializers of the unit at 0x006101B0 and its

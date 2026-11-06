@@ -14,9 +14,10 @@
 // @ref ?Planning_Add_Order@@YI_NPAVTechnoClass@@PAVEventClass@@@Z=00614ec0
 
 // For every planning techno of a house: clears its path's loop marks, and when
-// its path was not under way but its mission allows it, starts the path again
-// (0x00614850; only this inline copy is source yet: the out-of-line row needs
-// one more /Ob2 site after its loop, see the lane notes).
+// its path was not under way but its mission allows it, starts the path again.
+// The same steps as Commit_Plans (0x00614850), written without its
+// Commit_Unit_Orders helper: this arm expands Planning_Token, Planning_House
+// and the token test inline but calls the four steps.
 inline void __fastcall Planning_Restart_House(int house)
 {
     int count = unknown_list_a40c20.Count();

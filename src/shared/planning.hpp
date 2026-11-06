@@ -415,6 +415,10 @@ public:
     // The same from start to the end of the path.
     void Copy_Nodes_To(TechnoClass *techno, int start);              // 0x00613720
     void unknown_613a80();                                    // 0x00613A80
+#ifdef RA2_PLANNING_COMMIT_PLANS
+    // The node the path loops back to, or 0 without a loop.
+    PlanningNodeClass *Loop_Node();                           // 0x00613D20
+#endif
 #ifdef RA2_COORD_EQUAL_MEMBER
     bool unknown_613310() const;                              // 0x00613310
     // The small accessors of the path (0x00612EB0, 0x00613B60, 0x00613B30, 0x006132C0-E0,
