@@ -6,11 +6,12 @@
 
 PlanningNodeClass *__stdcall Planning_Node_At(int x, int y)
 {
-    if (unknown_node_a7678c) {
-        Point2D point(x, y);
-        if (unknown_node_a7678c->Hit_Rect().Is_Point_Within(point)) {
-            return unknown_node_a7678c;
-        }
+    if (!unknown_node_a7678c) {
+        return 0;
+    }
+    Point2D point(x, y);
+    if (unknown_node_a7678c->Hit_Rect().Is_Point_Within(point)) {
+        return unknown_node_a7678c;
     }
     return 0;
 }
