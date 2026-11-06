@@ -1,10 +1,10 @@
 #ifndef RA2_SHARED_EMPULSE_CLASS_HPP
 #define RA2_SHARED_EMPULSE_CLASS_HPP
-#include "shared/unknown_globals.hpp"
-#include "shared/vector_class.hpp"
-#include "shared/abstract.hpp"
+#include "shared/vector_class_decl.hpp"
+#include "shared/abstract_class.hpp"
 #include "shared/coord.hpp"
 #include "shared/cd_timer.hpp"
+class TechnoClass;
 // Original RTTI EMPulseClass, primary vtable 0x7A0DB8.
 // Constructor 0x4B4C00 and CRC 0x4B52F0 establish the four fields.
 class EMPulseClass : public AbstractClass {

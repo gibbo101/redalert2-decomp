@@ -10,6 +10,9 @@
 #include "shared/vector_class.hpp"
 
 // Complete evidenced class layout for this sweep.
+#include "shared/unknown_globals.hpp"
+#include "shared/vector_class.hpp"
+#include "shared/abstract.hpp"
 #include "shared/empulse_class.hpp"
 
 DynamicVectorClass<EMPulseClass *> EMPulseClass::Array;

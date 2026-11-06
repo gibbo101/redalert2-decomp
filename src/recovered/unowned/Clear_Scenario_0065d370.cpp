@@ -25,6 +25,9 @@
 #include "shared/isometric_tile.hpp"
 
 #include "shared/light_source.hpp"
+#include "shared/unknown_globals.hpp"
+#include "shared/vector_class.hpp"
+#include "shared/abstract.hpp"
 #include "shared/empulse_class.hpp"
 #include "shared/veinhole.hpp"
 #include "shared/tactical.hpp"

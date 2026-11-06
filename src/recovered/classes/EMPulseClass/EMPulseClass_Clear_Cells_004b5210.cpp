@@ -1,3 +1,6 @@
+#include "shared/unknown_globals.hpp"
+#include "shared/vector_class.hpp"
+#include "shared/abstract.hpp"
 #include "shared/empulse_class.hpp"
 #include "shared/map.hpp"
 #include "shared/map_view.hpp"

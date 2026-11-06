@@ -1,0 +1,33 @@
+// TClassFactory<CaptureManagerClass> COM creation, original 006930b0.
+// Light CaptureManagerClass interface: allocation size 48 and QI/deleting destructor slots
+// are independently present in the accepted original factory body.
+#include "shared/class_factory.hpp"
+// @ref ??0CaptureManagerClass@@QAE@XZ=00467e40
+
+class CaptureManagerClass {
+public:
+    CaptureManagerClass();
+    virtual HRESULT __stdcall QueryInterface(GUID const &iid, void **object);
+    virtual unsigned long __stdcall AddRef();
+    virtual unsigned long __stdcall Release();
+    virtual void unknown_slot3();
+    virtual void unknown_slot4();
+    virtual void unknown_slot5();
+    virtual void unknown_slot6();
+    virtual void unknown_slot7();
+    virtual ~CaptureManagerClass();
+    unsigned char unknown_04[0x30 - 4];
+};
+
+template <>
+HRESULT __stdcall TClassFactory<CaptureManagerClass>::CreateInstance(IUnknown *outer, GUID const &iid, void **object)
+{
+    if (object == 0) return E_INVALIDARG;
+    *object = 0;
+    if (outer != 0) return CLASS_E_NOAGGREGATION;
+    CaptureManagerClass *instance = new CaptureManagerClass();
+    if (instance == 0) return E_OUTOFMEMORY;
+    HRESULT result = instance->QueryInterface(iid, object);
+    if (FAILED(result)) delete instance;
+    return result;
+}

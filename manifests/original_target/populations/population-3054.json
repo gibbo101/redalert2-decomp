@@ -4,8 +4,8 @@
     "id": "population-3054",
     "inventory_sha256": "f6150dab555d7f27ae4e8c333f10271885f5fc28062053b092e96b863174e243",
     "gaps_sha256": "aa711cc35b13d2ea6f58112850d12f825aa9a4739ed90c1b25475c240129fbd6",
-    "historical_population_sha256": "e43d9bd3b6097acaa36112045d430de33b0aaf267e505f72943736cffe19ea5e",
-    "historical_acceptance_sha256": "93c81cbf6638bba46b4ea1077e863b86b8a1858ab9519620c5892e1608765575"
+    "historical_population_sha256": "95df15ae1d1908ed7311d4f93f7a693db25affeca41de7e69cfa47ac2781d1ea",
+    "historical_acceptance_sha256": "85e9555ae66f6ff2f4edecdcecf3fb81bba6a07bbad589604b176b8a628dd269"
   },
   "references": {
     "?CategoryNames@@3PAUCategoryNameStruct@@A": 8198112,
@@ -570,7 +570,7 @@
     "?FUN_00482fc0@": 4730816,
     "?FUN_00495770@": 4806512,
     "?FUN_0049e7d0@": 4843472,
-    "?FUN_004b4cc0@": 4934848,
+    "??0EMPulseClass@@": 4934848,
     "?FUN_004b5f60@": 4939616,
     "?FUN_004b5fd0@": 4939728,
     "?FUN_004b6030@": 4939824,
@@ -866,7 +866,7 @@
     "??0DisplayClass@@QAE@ABVNoInitClass@@@Z": 6825200,
     "__imp__CloseWindow": 7971932,
     "??_EDisplayClass@@UAEPAXI@Z": 4844832,
-    "?FUN_004b4cc0@seed_004b4cc0@@YIPAIPAI@Z": 4934848,
+    "??0EMPulseClass@@QAE@XZ": 4934848,
     "?FUN_0040ff10@seed_004b4cc0@@YIXXZ": 4259600,
     "??0EMPulseClass@@QAE@VCell@@HHPAVTechnoClass@@@Z": 4934656,
     "??_7EMPulseClass@@6BIPersistStream@@@": 7998904,

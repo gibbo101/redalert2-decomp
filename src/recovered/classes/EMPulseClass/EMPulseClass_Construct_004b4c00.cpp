@@ -3,6 +3,9 @@
 #define VECTOR_IMPLEMENT_DYNAMIC_ADD
 #define VECTOR_IMPLEMENT_DYNAMIC_DELETE_OBJECT
 #define VECTOR_IMPLEMENT_DYNAMIC_DELETE_INDEX
+#include "shared/unknown_globals.hpp"
+#include "shared/vector_class.hpp"
+#include "shared/abstract.hpp"
 #include "shared/empulse_class.hpp"
 // @ref ??_7EMPulseClass@@6BIPersistStream@@@=007a0db8
 // @ref ??_7EMPulseClass@@6BIRTTITypeInfo@@@=007a0d9c

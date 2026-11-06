@@ -28,6 +28,7 @@ struct __declspec(novtable) IClassFactory : public IUnknown {
 template <class T>
 class TClassFactory : public IClassFactory {
 public:
+    TClassFactory();
     virtual HRESULT __stdcall QueryInterface(GUID const &iid, void **object);
     virtual unsigned long __stdcall AddRef();
     virtual unsigned long __stdcall Release();

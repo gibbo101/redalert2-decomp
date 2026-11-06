@@ -56,6 +56,9 @@
 #include "shared/tube.hpp"
 #include "shared/side.hpp"
 #include "shared/tiberium.hpp"
+#include "shared/unknown_globals.hpp"
+#include "shared/vector_class.hpp"
+#include "shared/abstract.hpp"
 #include "shared/empulse_class.hpp"
 // @ref ??_C@_04COF@None?$AA@=007ec49c
 // @ref ??_C@_0BA@GEND@?$CFs?5Infantry?3?$CFx?6?$AA@=007edd50

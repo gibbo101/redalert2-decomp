@@ -72,6 +72,14 @@ extern "C" __declspec(dllimport) HRESULT __stdcall LoadTypeLib(wchar_t const *fi
 struct IUnknownPtr {
     IUnknown *Interface;    // +0x00
 
+#ifdef RA2_IUNKNOWN_PTR_LIFETIME
+    // Startup uses the real local smart-pointer lifetime; other units need
+    // only the existing CreateInstance/_Release contract. Layout is unchanged.
+    IUnknownPtr();
+    ~IUnknownPtr(); // 006983e0
+    void Release();
+#endif
+
     void _Release();
     HRESULT CreateInstance(GUID const &clsid, IUnknown *outer, unsigned long context);    // 0x00691450
 };
