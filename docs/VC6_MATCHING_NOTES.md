@@ -1954,3 +1954,10 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - diff_candidate reads 91 or 95 on an exact row with a large table: score the code length only.
 - "Unaccounted emitted code section bytes" can mean an out-of-line inline with no binding; Scout785 cov.py OBJ PLAN lists such sections.
 - On aligned frames an unaccessed low dword is not a 0-ref variable, since 0-ref slots sort high. pm.py compares slot partitions independent of frame shift.
+
+## Cross-jump exemplars (Scout786)
+- Scout786 cj.py lists accepted rows with `cmp; jmp` landing on a jcc, which finds real source shapes for cross-jumps.
+- Nested fall-through running to one `break` keeps this copy and the later copy jumps back; an explicit `break` keeps the later copy. `return 0` on only one of two copies blocks the merge; on both it merges to the later keeper.
+- After a `Rect at = screen` struct copy, a field read through `at.Height` enregisters and drops its store, while a never-referenced field keeps its store.
+- `at.Y += ...; at.Height = height;` keeps height live, so the at.Y load takes edx.
+- Removing an explicit `ValidateRect; break` from an arm lets the tail copy fix that block's scratch register.

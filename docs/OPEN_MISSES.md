@@ -2065,3 +2065,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout785 (2026-11-05, closed; 7,950 B: TAction Execute 0x6ADAE0 (codex2 r2827 private checkpoint), waypoint sound 0x6B0EC0; NOTES in build/class-work/Scout785/; Scout787 continues)
 - Windows workers' private checkpoints can hold exact rows that delivery notes call "closure pending": Execute sat exact there, blocked by a tie on 0x6B0EC0. Scout787 scans for more.
 - Mech 88.22 (66 of 216 frame accesses outside the best slot map). Walk 57.08 (trigger needs Direction's FP and Move_Coord together). Bullet Draw 0x4610D0 99.27 (keep/draw_9927.cpp). Bullet AI 43.13, overlay stale. Draw_Tile 28.53 (keep/draw_tile_2853.cpp, overlay hi0).
+
+## Scout786 (2026-11-05, closed; 0 B; NOTES, cj.py, bs.py, keep/ in build/class-work/Scout786/; Scout788 continues)
+- Static 0x5F2B50: 86.15, loose 96.36, shape 97.67 (keep/st_hto_8615.cpp, overlay keep/r5de660v.cpp). One block left, 0x233-0x2A4, 24 diff lines: target `mov eax,bottom; mov ecx,right; inc eax; inc ecx`, ours lea. Compare hole row 0x5F05AD inside 0x5F0320. Is_Listed_Kind_5e8590's guard needs a check; 0x497's dead proc lookup accounts for visible Find bytes, flagged.
+- ScrollBar 67.42: target 7 slots vs our 6; parent_record's register copy (`lea ebp,[edx+4]; mov [0x8C],ebp`, ebp live to 0x58F) looks like the missing piece. ComboBox and ListBox have no drafts.
