@@ -8,16 +8,16 @@
 
 int __fastcall Planning_Event_Result(PlanningTokenClass *token, PlanningEventTargets const *event)
 {
-    int mission = (signed char)event->unknown_0c;
-    TargetClass const &target_ref = event->Target_0e;
-    bool terminating = mission == 7 || mission == 8 || mission == 9;
-    if (terminating) {
+    int mission = event->Mission();
+    TargetClass const &target = event->Target();
+    if (Planning_Terminal_Mission(mission)) {
         return 0;
     }
-    TargetClass target = target_ref;
-    bool cell = (mission == 1 || mission == 11) && (target.Kind == 11 || (mission == 11 && !target.Kind));
-    if (cell) {
+    if (Planning_Cell_Mission(mission, target)) {
         return 0;
     }
-    return token->Nodes.Count() == 15 ? 2 : -1;
+    if (token->Get_Node_Count() == 15) {
+        return 2;
+    }
+    return -1;
 }
