@@ -2153,3 +2153,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 - Near twins: 111 rows, 77,347 B; 21 layout twins (same length, boundaries and opcodes, only immediates or displacements differ; 12,952 B) and 90 fuzzy rows. Top: Plan_Route 0x707F60, ScrollBarHandler 0x5F9FB0 (0.970), TrackBarHandler 0x5FB270 (layout), Recalc_Attributes 0x472540 (0.965), IPX_Call_Back 0x482110, Read_Game_Modes 0x5B8490 (0.960).
 - Short Ghidra bounds where our bytes equal a longer YR body: 0x586B40 Create_Urban_Area (29 vs 1,913), 0x77D0C0, 0x77D5B0, 0x575D20 Create_Zone_Region (19 vs 726), 0x6A88A0 Draw_Tile_Shadows (270 vs 619), 0x77EDD0, 0x781130, 0x535530 _LCW_Uncompress, 0x5C2DA0 _DrawMessage (65 vs 384), 0x408760; each needs an independent bound.
 - False twins (YR adds code): 0x504120 Scatter, 0x54E8D0 Close_Object, 0x581EE0, 0x585DC0, 0x6F7020, 0x6F71E0.
+
+## Scout810 (2026-11-06, closed after the twin-lane stop; 3,489 B delivered: TrackBarHandler 0x5FB270 from ra2-decomp 0x0061D950; NOTES in build/class-work/Scout810/)
+- Flag: trackbar state at record +0xE8..+0x108 read through a row-local view struct (owner_draw_dialog_control.hpp is fragile for 0x73FEE0); twin's `int maximum` kept; MAKEWPARAM written out.
+- Next on near misses whose only diffs are slot or register swaps: a declaration-order permutation of real locals (TrackBarHandler went 98.62 to 100 that way). Untried there: Place_Tiberium 0x47C3A0 98.91, Try_Diagonal_Shortcut 0x428CF0 98.01. Read_Game_Modes 0x5B8490 twin-shaped draft w/rg0.cpp not compiled (best existing LoadDlg485 71.06).
