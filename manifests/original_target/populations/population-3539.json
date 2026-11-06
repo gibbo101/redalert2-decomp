@@ -4,8 +4,8 @@
     "id": "population-3539",
     "inventory_sha256": "581cd964f0a860551ff371b65340107678e0fc690ced4e3b7b370f9423b1f441",
     "gaps_sha256": "4d30f006364241db658b5163bb493ee6bfc6537c3bb7d645d837cd3e5be029dd",
-    "historical_population_sha256": "ae2ce3c9b0c96bfa2453adf55e75b28d1a025e6fd252ef800bbe2d6a52c4049e",
-    "historical_acceptance_sha256": "24b7d1eb7f94fd9296558d145a045f3c28472284b0c03da49e7b7fc57cf54551"
+    "historical_population_sha256": "4625a5dee3f8a69a4924532de877637e9257aade7e395f3c299bdb62bd1cf405",
+    "historical_acceptance_sha256": "2c3f50dae20d0d96ae8eed7548d056d6fd13a65873aaaf0c2812964990b908e7"
   },
   "references": {
     "_unknown_empty_rect": 11259808,
@@ -1832,7 +1832,7 @@
     "?unknown_slot32@BulletTypeClass@@UBE_NABVCell@@PAVHouseClass@@@Z": 4608384,
     "?unknown_slot1@GraphicMenuItem@@UAE_NH@Z": 5112272,
     "?Process@LocomotionClass@@UAG_NXZ": 5494112,
-    "?unknown_slot3@MultiplayerGameMode@@UAE_NH@Z": 5907360,
+    "?unknown_slot3@MultiplayerGameMode@@UAE_NPAVWideString@@@Z": 5907360,
     "?unknown_slot19@MultiplayerGameMode@@UAE_NHHPAVMPlayerScoreType@@@Z": 5907472,
     "?unknown_slot5@MultiplayerGameMode@@UAE_NPAVWideString@@@Z": 5993376,
     "?unknown_slot7@MultiplayerGameMode@@UAE_NH@Z": 5994544,

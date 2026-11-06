@@ -73,7 +73,8 @@ public:
     virtual ~MultiplayerGameMode();                           // 0x005B6E20 (scalar deleting 0x005B8E10)
     virtual bool unknown_slot1() { return false; }               // 1 0x005A2380
     virtual bool unknown_slot2() { return false; }               // 2 0x005A2390
-    virtual bool unknown_slot3(int unknown) { return true; }     // 3 0x005A23A0
+    // Lobby 0x005C6CAC passes its constructed WideString address; pointer spelling is a hypothesis.
+    virtual bool unknown_slot3(WideString *message) { return true; } // 3 0x005A23A0
     virtual bool unknown_slot4();                                  // 4 0x005B7350
     virtual bool unknown_slot5(WideString *message);                                // 5 0x005B73A0
     virtual bool unknown_slot6();                                  // 6 0x005B73D0

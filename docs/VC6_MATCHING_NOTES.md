@@ -1948,3 +1948,9 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - `int result = -1; if (...) result = ...; return result;` gives the shared tail with eax set first.
 - HIWORD's `(unsigned long)` cast gives `shr` with no `and`.
 - A zero constant web ends where a variable initialised to 0 coalesces with it; declaring it earlier turns `cmp x,ebp` forms back into `test`.
+
+## Written-out helpers and table scores (Scout785)
+- A row's file-local inline helper can be written out with no byte change in that row, yet flip an esi/edi tie in callers that inline it (85.07 to exact).
+- diff_candidate reads 91 or 95 on an exact row with a large table: score the code length only.
+- "Unaccounted emitted code section bytes" can mean an out-of-line inline with no binding; Scout785 cov.py OBJ PLAN lists such sections.
+- On aligned frames an unaccessed low dword is not a 0-ref variable, since 0-ref slots sort high. pm.py compares slot partitions independent of frame shift.

@@ -2061,3 +2061,7 @@ Unknown_Cell_Score_0056dff0 is really a thiscall member.
 ## Scout784 (2026-11-05, closed; 0 B; NOTES and keep/ in build/class-work/Scout784/; Scout786 continues)
 - Hole 0x5F4BA0 (25,680 B) is three functions: ComboBox 0x5F4BA0 (ComboBoxCtrlProc), code to 0x5F6504, tables to 0x5F6690; ListBox 0x5F6690 (ListBoxCtrlProc), code to 0x5F9E19, tables to 0x5F9FB0; ScrollBar 0x5F9FB0 (ScrollBarCtrlProc), code to 0x5FAEF5, tables to 0x5FAFF0. 0x5F5450, 0x5F645C, 0x5F7170 and rows through 0x5F990C are interior.
 - Static 0x5F2B50 (4,512 B): 85.74, shape 95.82, frame right (keep/st_t9_8574.cpp, overlay row keep/r5de660v.cpp). ScrollBar 67.42, shape 97.87, frame 0xF0 vs 0xF4 (keep/sb_s11_6742.cpp), only slot sharing left. ComboBox, ListBox, 0x5F22A0, Default_Dialog_Proc, 0x5E5150 not reached. Rule before landing: ScrollBar's found_record/record view alias; Static's dead Owner_And_ID result at 0x497.
+
+## Scout785 (2026-11-05, closed; 7,950 B: TAction Execute 0x6ADAE0 (codex2 r2827 private checkpoint), waypoint sound 0x6B0EC0; NOTES in build/class-work/Scout785/; Scout787 continues)
+- Windows workers' private checkpoints can hold exact rows that delivery notes call "closure pending": Execute sat exact there, blocked by a tie on 0x6B0EC0. Scout787 scans for more.
+- Mech 88.22 (66 of 216 frame accesses outside the best slot map). Walk 57.08 (trigger needs Direction's FP and Move_Coord together). Bullet Draw 0x4610D0 99.27 (keep/draw_9927.cpp). Bullet AI 43.13, overlay stale. Draw_Tile 28.53 (keep/draw_tile_2853.cpp, overlay hi0).
