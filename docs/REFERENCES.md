@@ -41,3 +41,12 @@ are cloned read-only under `private/reference/`: see
 licence terms and a recovered-header to reference-file lookup table. They are
 shape references under the same rule as everything else here: hypotheses only,
 verified on the exact target, nothing copied.
+
+The Yuri's Revenge matching decompilation at
+[github.com/gibbo101/ra2-decomp](https://github.com/gibbo101/ra2-decomp)
+(gamemd.exe 1.001, same VC6 SP3; source GPL-3.0-or-later with EA section 7
+terms, tools MIT) has matched many functions whose RA2 body is byte-identical
+apart from relocations. Since the user's decision of 2026-11-06 its source, and the TibSun archive's,
+may be adopted into `src/` with attribution (see `THIRD_PARTY.md`); acceptance
+is unchanged. Cloned read-only at `private/reference/ra2-decomp`. The owner
+keeps the twin map in the ignored `build/ra2decomp/twins.json`.

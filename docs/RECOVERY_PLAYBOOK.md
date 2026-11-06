@@ -161,6 +161,22 @@ audit, re-derive the layouts that grew, then recover the remainder. YRpp and
 Phobos document that exact binary and are a richer hypothesis source than RA2
 ever had. Expect about a third of the RA2 effort.
 
+User decisions, 2026-11-06. The YR matching decompilation gibbo101/ra2-decomp
+(same VC6 SP3) now exists and runs the other way too:
+1. Its source and the TibSun archive's may be adopted into `src/` as candidates,
+   adapted to our shared headers, keeping their SPDX and copyright lines (and the
+   EA line where present), with a THIRD_PARTY.md entry at the pinned commit and
+   "from ra2-decomp <YR address>" / "from TibSun <file>" in the commit subject.
+   Acceptance is unchanged: strict audit, exact whole-file build, no masks.
+2. The 97 unaccepted RA2 functions with byte-identical matched YR twins
+   (build/ra2decomp/twins-unaccepted.md) are adopted directly.
+3. Tier 0: compile the TibSun archive unchanged with our compiler and options,
+   search each emitted body in our .text with address-sized operands masked, and
+   measure exact finds among unaccepted functions before accepting any (YR got
+   1,321 functions / 173 KB that way).
+The 171 functions we hold that YR lacks (build/ra2decomp/reciprocity.md) are
+offered back by the user.
+
 ## 11. Host limits (added 2026-11-03)
 
 - A 16 GiB host runs one full build at a time. Lanes and the landing runner

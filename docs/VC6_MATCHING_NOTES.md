@@ -2038,3 +2038,13 @@ lab/h1.py, r1.py random 4-level trees, v2.cpp), plus in-place probes of Draw_Nod
 - Member `a.Intersect(b)` versus free `Intersect(a,b)` is a natural budget spend: one or two sites flip a later site's inline to a call, all three overshoot.
 - Cell_Center (by-value Cell) under Coord_Snap has no ctor temp; Cell_Coord (const &) adds one plus frame and calls.
 - An unused bool result of an inlined Coord_To_Pixel lets its nested pure inline vanish, so identical sites expand differently.
+
+## Kept fst (Scout801)
+- A block-scoped float stays unrounded on the FPU stack; inline helpers taking float, double or const&, and members of a local float struct (split into scalars), do not produce a kept `fst [m]` followed by stack reuse. A float read in a later block gives `fstp` then `fmul [m]`. `(float)` casts in a population row do not change it.
+
+## Case-scoped buffers and dictionary members (Scout800)
+- A large buffer declared inside one case block shares its slot with an inline temporary in the post-switch code; at function scope the frame grows by its size.
+- Calling an inline WolDictionary member (Get_Value, Get_Pointer) leaves Key_Hash out of line as in the target; a hand-written Find inlines the hash.
+
+## Frame alignment switch (Scout802, lab)
+- A function that would get `and esp,-8` (double locals) drops to plain `sub esp` when one local aggregate with 4 or more scalar members (int[4], struct of four ints, short[4]) carries about 13 references. 13 references over only two members, two Point2D locals, a three-field CoordStruct (even at 19 references), four named scalars or address-taken scalars do not flip it; removing a call elsewhere can. When the target has no alignment, look for a real small array or 4-member struct local.

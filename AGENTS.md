@@ -31,7 +31,9 @@ external material. `docs/history/` holds per-batch records: consult, don't reloa
   installations and `outpost2-native` are read-only. Tracked: accepted source in
   `src/`, authored tools/tests, byte-free manifests, docs.
 - **External references:** public/recomp/YRpp material supplies hypotheses only;
-  verify on the exact target and check licenses (`THIRD_PARTY.md`). Do not adopt
+  verify on the exact target and check licenses (`THIRD_PARTY.md`). Exception
+  (user, 2026-11-06): text from ra2-decomp and the TibSun archive may be adopted
+  with attribution (`THIRD_PARTY.md`); acceptance is unchanged. Do not adopt
   a lifted runtime or OpenRA gameplay.
 - **Native phase is later:** no native/SDL/arm64/gameplay check per recovery
   batch. Preserve `historical/native-reconstruction/`. The shipped game will be

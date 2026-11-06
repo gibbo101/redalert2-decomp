@@ -87,8 +87,18 @@ inspection tools; VC6 and CrossOver are legitimate user-supplied local build too
 - **TibSun reconstruction** (`OpenTS-Developers/TibSun` commit `dbfbfbfaac40364ce7e1cd8fad7bcade5c6fb0d4`,
   `code/` only; read-only shape reference, see [docs/WESTWOOD_SOURCES.md](docs/WESTWOOD_SOURCES.md)): a community
   source reconstruction of Tiberian Sun GAME.EXE 2.03, not Westwood text. GPL-3.0-or-later plus EA's section 7 terms
-  for the parts derived from the Red Alert release. Cloned under the ignored `private/reference/TibSun`. Nothing is
-  incorporated; it supplies naming, member-order and statement-shape hypotheses verified on the base executable.
+  for the parts derived from the Red Alert release. Cloned under the ignored `private/reference/TibSun`. Since 2026-11-06 (user decision) its text may be adopted into
+  `src/` as candidates, adapted to our shared headers; an adopted file keeps the source's SPDX and copyright lines
+  (including the EA line where present) and the commit subject says "from TibSun <file>". Acceptance is unchanged.
+
+- **ra2-decomp** (`gibbo101/ra2-decomp` commit `4453ab030c86d8586992bfa7425ef7f39e3fb8d4`, 2026-11-06): a matching
+  decompilation of Yuri's Revenge gamemd.exe 1.001 built with the same VC6 SP3. Game source in `src/` and `include/`
+  GPL-3.0-or-later, Copyright 2026 ra2-decomp contributors, with Electronic Arts' section 7 terms on files carrying an
+  EA copyright line (COPYING.md); tooling and data MIT. The maintainer gave the user explicit permission to reuse it.
+  Cloned read-only under the ignored `private/reference/ra2-decomp`. Since 2026-11-06 (user decision) functions whose
+  RA2 body matches a YR twin may be adopted into `src/` adapted to our headers (their names follow YRpp and must be
+  mapped to ours); an adopted file keeps their SPDX and copyright lines and the commit subject says
+  "from ra2-decomp <YR address>". Acceptance is unchanged: strict audit and exact whole-file build.
 
 ## Native linked libraries (tested development versions)
 
